@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PNotifyStyling extends js.Object {
+trait PNotifyStyling extends StylingOptions {
   // reference
   var athing: js.UndefOr[java.lang.String] = js.undefined
   // confirm

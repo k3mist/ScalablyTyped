@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A server push subscription criteria
   */
-trait Subscription extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Subscription extends DomainResource {
   /**
     * Contains extended information for property 'criteria'.
     */

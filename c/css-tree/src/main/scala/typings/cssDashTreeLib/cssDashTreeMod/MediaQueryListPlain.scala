@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MediaQueryListPlain extends CssNodeCommon {
+trait MediaQueryListPlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var children: js.Array[CssNodePlain]
   @JSName("type")
   var type_MediaQueryListPlain: cssDashTreeLib.cssDashTreeLibStrings.MediaQueryList

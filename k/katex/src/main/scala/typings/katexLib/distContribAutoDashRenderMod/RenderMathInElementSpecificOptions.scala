@@ -37,7 +37,7 @@ trait RenderMathInElementSpecificOptions extends js.Object {
     */
   var ignoredTags: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
     ]
   ] = js.undefined
 }

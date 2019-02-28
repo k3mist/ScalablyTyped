@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PreAuthTx extends js.Object {
+trait PreAuthTx
+  extends stellarDashBaseLib.stellarDashBaseMod.Signer {
   var preAuthTx: nodeLib.Buffer
   var weight: js.UndefOr[scala.Double]
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateAction extends js.Object {
+trait UpdateAction extends Action {
   var fields: js.Object
   var `type`: ActionTypes
 }

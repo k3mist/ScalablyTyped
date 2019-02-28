@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LexDialogActionConfirmIntent extends LexDialogActionBase {
+trait LexDialogActionConfirmIntent
+  extends LexDialogActionBase
+     with LexDialogAction {
   var intentName: java.lang.String
   var slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
   @JSName("type")

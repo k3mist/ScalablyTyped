@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXAttribute extends Node {
+trait JSXAttribute
+  extends Node
+     with Immutable
+     with JSX {
   var name: JSXIdentifier | JSXNamespacedName
   @JSName("type")
   var type_JSXAttribute: babelDashTypesLib.babelDashTypesLibStrings.JSXAttribute

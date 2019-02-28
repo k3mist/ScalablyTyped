@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RANGE_DELETE extends js.Object {
+trait RANGE_DELETE extends RelayMutationConfig {
   var connectionKeys: js.UndefOr[js.Array[relayDashRuntimeLib.Anon_FiltersKey]] = js.undefined
   var connectionName: js.UndefOr[java.lang.String] = js.undefined
   var deletedIDFieldName: java.lang.String | js.Array[java.lang.String]

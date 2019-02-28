@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InputStreamOption extends js.Object {
+trait InputStreamOption extends _StreamOptions {
   var input: nodeLib.NodeJSNs.ReadStream
 }
 

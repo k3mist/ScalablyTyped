@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Document extends js.Object {
+trait Document extends Node {
   var definitions: js.Array[Definition]
   var kind: java.lang.String
   var loc: js.UndefOr[Location] = js.undefined

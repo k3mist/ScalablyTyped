@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SwitchCase extends BaseNode {
+trait SwitchCase
+  extends BaseNode
+     with _Node {
   var consequent: js.Array[Statement]
   var test: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
   @JSName("type")

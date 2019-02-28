@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Expression, 'type'> ]: ast-types.ast-types/gen/nodes.Expression[P]} */ trait ClassExpression extends js.Object {
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Expression, 'type'> ]: ast-types.ast-types/gen/nodes.Expression[P]} */ trait ClassExpression
+  extends ASTNode
+     with astDashTypesLib.genKindsMod.ExpressionKind
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PatternKind
+     with astDashTypesLib.genKindsMod.PrintableKind {
   var body: astDashTypesLib.genKindsMod.ClassBodyKind
   var id: astDashTypesLib.genKindsMod.IdentifierKind | scala.Null
   var implements: js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind]

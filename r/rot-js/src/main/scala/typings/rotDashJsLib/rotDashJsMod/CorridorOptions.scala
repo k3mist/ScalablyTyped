@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CorridorOptions extends js.Object {
+trait CorridorOptions extends FeatureOptions {
   var corridorLength: js.Tuple2[scala.Double, scala.Double]
 }
 

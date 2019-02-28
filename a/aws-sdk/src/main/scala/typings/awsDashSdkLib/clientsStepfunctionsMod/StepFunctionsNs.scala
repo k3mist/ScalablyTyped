@@ -101,10 +101,6 @@ object StepFunctionsNs extends js.Object {
       * The name of the activity to create. This name must be unique for your AWS account and region for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
       */
     var name: Name
-    /**
-      * The list of tags to add to a resource.
-      */
-    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateActivityOutput extends js.Object {
@@ -131,10 +127,6 @@ object StepFunctionsNs extends js.Object {
       * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
       */
     var roleArn: Arn
-    /**
-      * Tags to be added when creating a state machine.
-      */
-    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateStateMachineOutput extends js.Object {
@@ -387,7 +379,7 @@ object StepFunctionsNs extends js.Object {
     /**
       * The string that contains the JSON input data for the task.
       */
-    var input: js.UndefOr[SensitiveDataJobInput] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
       * A token that identifies the scheduled task. This token must be copied and included in subsequent calls to SendTaskHeartbeat, SendTaskSuccess or SendTaskFailure in order to report the progress or completion of the task.
       */
@@ -461,37 +453,13 @@ object StepFunctionsNs extends js.Object {
     var previousEventId: js.UndefOr[EventId] = js.undefined
     var stateEnteredEventDetails: js.UndefOr[StateEnteredEventDetails] = js.undefined
     var stateExitedEventDetails: js.UndefOr[StateExitedEventDetails] = js.undefined
-    /**
-      * Contains details about the failure of a task.
-      */
     var taskFailedEventDetails: js.UndefOr[TaskFailedEventDetails] = js.undefined
-    /**
-      * Contains details about a task that was scheduled.
-      */
     var taskScheduledEventDetails: js.UndefOr[TaskScheduledEventDetails] = js.undefined
-    /**
-      * Contains details about a task that failed to start.
-      */
     var taskStartFailedEventDetails: js.UndefOr[TaskStartFailedEventDetails] = js.undefined
-    /**
-      * Contains details about a task that was started.
-      */
     var taskStartedEventDetails: js.UndefOr[TaskStartedEventDetails] = js.undefined
-    /**
-      * Contains details about a task that where the submit failed.
-      */
     var taskSubmitFailedEventDetails: js.UndefOr[TaskSubmitFailedEventDetails] = js.undefined
-    /**
-      * Contains details about a submitted task.
-      */
     var taskSubmittedEventDetails: js.UndefOr[TaskSubmittedEventDetails] = js.undefined
-    /**
-      * Contains details about a task that succeeded.
-      */
     var taskSucceededEventDetails: js.UndefOr[TaskSucceededEventDetails] = js.undefined
-    /**
-      * Contains details about a task that timed out.
-      */
     var taskTimedOutEventDetails: js.UndefOr[TaskTimedOutEventDetails] = js.undefined
     /**
       * The date and time the event occurred.
@@ -699,7 +667,7 @@ object StepFunctionsNs extends js.Object {
       */
     var input: js.UndefOr[SensitiveData] = js.undefined
     /**
-      * The name of the execution. This name must be unique for your AWS account, region, and state machine for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+      * The name of the execution. This name must be unique for your AWS account and region for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
       */
     var name: js.UndefOr[Name] = js.undefined
     /**
@@ -948,7 +916,7 @@ object StepFunctionsNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+      * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
       */
     def createActivity(): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createActivity(
@@ -959,7 +927,7 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+      * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
       */
     def createActivity(params: CreateActivityInput): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createActivity(
@@ -971,7 +939,7 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+      * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.
       */
     def createStateMachine(): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createStateMachine(
@@ -982,7 +950,7 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+      * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.
       */
     def createStateMachine(params: CreateStateMachineInput): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createStateMachine(
@@ -1490,6 +1458,14 @@ object StepFunctionsNs extends js.Object {
     var updateDate: Timestamp
   }
   
+  trait _ExecutionStatus extends js.Object
+  
+  trait _HistoryEventType extends js.Object
+  
+  trait _StateMachineStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivityList = js.Array[ActivityListItem]
   type Arn = java.lang.String
@@ -1498,9 +1474,9 @@ object StepFunctionsNs extends js.Object {
   type Definition = java.lang.String
   type EventId = scala.Double
   type ExecutionList = js.Array[ExecutionListItem]
-  type ExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.ABORTED | java.lang.String
+  type ExecutionStatus = _ExecutionStatus | java.lang.String
   type HistoryEventList = js.Array[HistoryEvent]
-  type HistoryEventType = awsDashSdkLib.awsDashSdkLibStrings.ActivityFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduled | awsDashSdkLib.awsDashSdkLibStrings.ActivityStarted | awsDashSdkLib.awsDashSdkLibStrings.ActivitySucceeded | awsDashSdkLib.awsDashSdkLibStrings.ActivityTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskScheduled | awsDashSdkLib.awsDashSdkLibStrings.TaskStartFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskStarted | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitted | awsDashSdkLib.awsDashSdkLibStrings.TaskSucceeded | awsDashSdkLib.awsDashSdkLibStrings.TaskTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ExecutionFailed | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStarted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.ExecutionAborted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.FailStateEntered | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduled | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStartFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStarted | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateEntered | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskStateAborted | awsDashSdkLib.awsDashSdkLibStrings.TaskStateEntered | awsDashSdkLib.awsDashSdkLibStrings.TaskStateExited | awsDashSdkLib.awsDashSdkLibStrings.PassStateEntered | awsDashSdkLib.awsDashSdkLibStrings.PassStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateAborted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateFailed | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateStarted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateSucceeded | awsDashSdkLib.awsDashSdkLibStrings.WaitStateAborted | awsDashSdkLib.awsDashSdkLibStrings.WaitStateEntered | awsDashSdkLib.awsDashSdkLibStrings.WaitStateExited | java.lang.String
+  type HistoryEventType = _HistoryEventType | java.lang.String
   type Identity = java.lang.String
   type Name = java.lang.String
   type PageSize = scala.Double
@@ -1508,10 +1484,9 @@ object StepFunctionsNs extends js.Object {
   type ReverseOrder = scala.Boolean
   type SensitiveCause = java.lang.String
   type SensitiveData = java.lang.String
-  type SensitiveDataJobInput = java.lang.String
   type SensitiveError = java.lang.String
   type StateMachineList = js.Array[StateMachineListItem]
-  type StateMachineStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type StateMachineStatus = _StateMachineStatus | java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
@@ -1519,6 +1494,6 @@ object StepFunctionsNs extends js.Object {
   type TaskToken = java.lang.String
   type TimeoutInSeconds = scala.Double
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-11-23` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

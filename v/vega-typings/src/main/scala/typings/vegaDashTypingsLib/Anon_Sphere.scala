@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Sphere extends js.Object {
+trait Anon_Sphere
+  extends vegaDashTypingsLib.typesSpecMarkMod._Clip {
   var sphere: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
 }
 

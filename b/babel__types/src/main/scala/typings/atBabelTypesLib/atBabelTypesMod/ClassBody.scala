@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassBody extends BaseNode {
+trait ClassBody
+  extends BaseNode
+     with _Node {
   var body: js.Array[
     ClassMethod | ClassPrivateMethod | ClassProperty | ClassPrivateProperty | TSDeclareMethod | TSIndexSignature
   ]

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SelectQuery extends BaseQuery {
+trait SelectQuery
+  extends Query
+     with BaseQuery
+     with Pattern {
   var distinct: js.UndefOr[scala.Boolean] = js.undefined
   var from: js.UndefOr[sparqljsLib.Anon_Default] = js.undefined
   var group: js.UndefOr[js.Array[Grouping]] = js.undefined

@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGroupValues
-  extends /* name */ org.scalablytyped.runtime.StringDictionary[GroupSort]
+  extends Grouping[js.Any]
+     with /* name */ org.scalablytyped.runtime.StringDictionary[GroupSort]
 

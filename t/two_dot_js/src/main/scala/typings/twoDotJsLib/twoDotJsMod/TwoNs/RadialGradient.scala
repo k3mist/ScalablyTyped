@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RadialGradient extends js.Object {
+trait RadialGradient extends _Color {
   var center: Vector
   var focal: Vector
   var radius: scala.Double

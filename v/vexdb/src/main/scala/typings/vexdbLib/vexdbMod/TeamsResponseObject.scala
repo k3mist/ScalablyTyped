@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TeamsResponseObject extends js.Object {
+trait TeamsResponseObject extends ResponseObject {
   var city: java.lang.String
   var country: java.lang.String
   var grade: java.lang.String

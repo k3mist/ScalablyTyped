@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait FunctionTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowType {
   var params: js.Array[FunctionTypeParam]
   var rest: FunctionTypeParam | scala.Null
   var returnType: FlowType

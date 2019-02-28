@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "aurelia-templating"
-version := "1.10.1-451b4e"
+version := "1.10.1-9074a4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aurelia-binding" % "2.2.0-e83e45",
-  "org.scalablytyped" %%% "aurelia-dependency-injection" % "1.4.2-0ca32b",
-  "org.scalablytyped" %%% "aurelia-loader" % "1.0.1-97f0b5",
-  "org.scalablytyped" %%% "aurelia-logging" % "1.5.1-85400f",
-  "org.scalablytyped" %%% "aurelia-metadata" % "1.0.5-1d0978",
-  "org.scalablytyped" %%% "aurelia-pal" % "1.8.1-e402c1",
-  "org.scalablytyped" %%% "aurelia-path" % "1.1.2-acabaf",
-  "org.scalablytyped" %%% "aurelia-task-queue" % "1.3.2-b73df8",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "aurelia-binding" % "2.2.0-8260bd",
+  "org.scalablytyped" %%% "aurelia-dependency-injection" % "1.4.2-64d25d",
+  "org.scalablytyped" %%% "aurelia-loader" % "1.0.1-408712",
+  "org.scalablytyped" %%% "aurelia-logging" % "1.5.1-00bbda",
+  "org.scalablytyped" %%% "aurelia-metadata" % "1.0.5-5a10e0",
+  "org.scalablytyped" %%% "aurelia-pal" % "1.8.1-2c0451",
+  "org.scalablytyped" %%% "aurelia-path" % "1.1.2-350649",
+  "org.scalablytyped" %%% "aurelia-task-queue" % "1.3.2-3b5274",
+  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

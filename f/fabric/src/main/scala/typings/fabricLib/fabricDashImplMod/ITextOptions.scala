@@ -5,64 +5,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITextOptions extends IObjectOptions {
+trait ITextOptions extends TextOptions {
   /**
-    * Character spacing
-    */
-  var charSpacing: js.UndefOr[scala.Double] = js.undefined
-  /**
-  	 * Font family
+  	 * Indicates whether internal text char widths can be cached
+  	 * @type Boolean
   	 */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
+  var caching: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  	 * Font size (in pixels)
+  	 * For functionalities on keyDown + ctrl || cmd
   	 */
-  var fontSize: js.UndefOr[scala.Double] = js.undefined
+  var ctrlKeysMapDown: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Font style . Possible values?: "", "normal", "italic" or "oblique".
+  	 * For functionalities on keyUp + ctrl || cmd
   	 */
-  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
+  var ctrlKeysMapUp: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Font weight (e.g. bold, normal, 400, 600, 800)
+  	 * Color of default cursor (when not overwritten by character style)
+  	 * @type String
   	 */
-  var fontWeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var cursorColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Line height
+  	 * Delay between cursor blink (in ms)
+  	 * @type Number
   	 */
-  var lineHeight: js.UndefOr[scala.Double] = js.undefined
+  var cursorDelay: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Text decoration linethrough.
-    * @type Boolean
-    * @default
-    */
-  var linethrough: js.UndefOr[scala.Boolean] = js.undefined
+  	 * Duration of cursor fadein (in ms)
+  	 * @type Number
+  	 */
+  var cursorDuration: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Text decoration overline.
-    * @type Boolean
-    * @default
-    */
-  var overline: js.UndefOr[scala.Boolean] = js.undefined
+  	 * Width of cursor (in px)
+  	 * @type Number
+  	 */
+  var cursorWidth: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Indicates whether a text can be edited
+  	 * @type Boolean
+  	 */
+  var editable: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Border color of text object while it's in editing mode
+  	 * @type String
+  	 */
+  var editingBorderColor: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Helps determining when the text is in composition, so that the cursor
+  	 * rendering is altered.
+  	 */
+  var inCompositionMode: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Indicates whether text is in editing mode
+  	 * @type Boolean
+  	 */
+  var isEditing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * For functionalities on keyDown
+  	 * Map a special key to a function of the instance/prototype
+  	 * If you need different behaviour for ESC or TAB or arrows, you have to change
+  	 * this map setting the name of a function that you build on the fabric.Itext or
+  	 * your prototype.
+  	 * the map change will affect all Instances unless you need for only some text Instances
+  	 * in that case you have to clone this object and assign your Instance.
+  	 * this.keysMap = fabric.util.object.clone(this.keysMap);
+  	 * The function must be in fabric.Itext.prototype.myFunction And will receive event as args[0]
+  	 */
+  var keysMap: js.UndefOr[js.Any] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
-  var text: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Text alignment. Possible values?: "left", "center", or "right".
+  	 * Color of text selection
+  	 * @type String
   	 */
-  var textAlign: js.UndefOr[java.lang.String] = js.undefined
+  var selectionColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Background color of text lines
+  	 * Index where text selection ends
+  	 * @type Number
   	 */
-  var textBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var selectionEnd: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * Text decoration Possible values?: "", "underline", "overline" or "line-through".
-    * Feels like this has been deprecated in favor of underline, overline, linethrough props
+  	 * Index where text selection starts (or where cursor is when there is no selection)
+  	 * @type Number
   	 */
-  var textDecoration: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Text decoration underline.
-    * @type Boolean
-    * @default
-    */
-  var underline: js.UndefOr[scala.Boolean] = js.undefined
+  var selectionStart: js.UndefOr[scala.Double] = js.undefined
   var useNative: js.UndefOr[scala.Boolean] = js.undefined
 }
 

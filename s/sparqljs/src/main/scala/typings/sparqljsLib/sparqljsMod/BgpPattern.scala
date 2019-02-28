@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BgpPattern extends js.Object {
+trait BgpPattern
+  extends Pattern
+     with Quads
+     with _Expression {
   var triples: js.Array[Triple]
   var `type`: sparqljsLib.sparqljsLibStrings.bgp
 }

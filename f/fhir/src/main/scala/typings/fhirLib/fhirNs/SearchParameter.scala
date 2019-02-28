@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Search Parameter for a resource
   */
-trait SearchParameter extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait SearchParameter extends DomainResource {
   /**
     * Contains extended information for property 'base'.
     */

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationDefinitionNode extends js.Object {
+trait OperationDefinitionNode
+  extends ExecutableDefinitionNode
+     with ASTNode
+     with graphqlLib.validationValidationContextMod.NodeWithSelectionSet {
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined
   val kind: graphqlLib.graphqlLibStrings.OperationDefinition
   val loc: js.UndefOr[Location] = js.undefined

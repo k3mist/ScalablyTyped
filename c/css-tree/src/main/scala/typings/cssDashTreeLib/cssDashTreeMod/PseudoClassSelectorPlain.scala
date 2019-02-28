@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PseudoClassSelectorPlain extends CssNodeCommon {
+trait PseudoClassSelectorPlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var children: js.Array[CssNodePlain] | scala.Null
   var name: java.lang.String
   @JSName("type")

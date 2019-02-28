@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FileSystemPermission extends js.Object {
+trait FileSystemPermission extends ChromeOSOnlyPermissions {
   /**
     * @enum {string}
     * @requires(CrOS) 'requestFileSystem' is only for ChromeOS

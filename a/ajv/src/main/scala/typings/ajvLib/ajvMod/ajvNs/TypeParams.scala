@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeParams extends js.Object {
+trait TypeParams extends ErrorParameters {
   var `type`: java.lang.String
 }
 

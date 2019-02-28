@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StringFormatDefinition extends js.Object {
+trait StringFormatDefinition extends FormatDefinition {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   var compare: js.UndefOr[
     js.Function2[/* data1 */ java.lang.String, /* data2 */ java.lang.String, scala.Double]

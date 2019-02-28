@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Compartment Definition for a resource
   */
-trait CompartmentDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CompartmentDefinition extends DomainResource {
   /**
     * Contains extended information for property 'code'.
     */

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Strong extends Parent {
+trait Strong
+  extends Parent
+     with StaticPhrasingContent {
   @JSName("children")
   var children_Strong: js.Array[PhrasingContent]
   @JSName("type")

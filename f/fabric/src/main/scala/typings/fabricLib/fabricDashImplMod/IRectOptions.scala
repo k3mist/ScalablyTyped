@@ -14,7 +14,5 @@ trait IRectOptions extends IObjectOptions {
   	 * Vertical border radius
   	 */
   var ry: js.UndefOr[scala.Double] = js.undefined
-  var x: js.UndefOr[scala.Double] = js.undefined
-  var y: js.UndefOr[scala.Double] = js.undefined
 }
 

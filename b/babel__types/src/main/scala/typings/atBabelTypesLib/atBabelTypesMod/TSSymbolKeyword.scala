@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSSymbolKeyword extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSSymbolKeyword
+  extends TSType
+     with BaseNode {
   @JSName("type")
   var type_TSSymbolKeyword: atBabelTypesLib.atBabelTypesLibStrings.TSSymbolKeyword
 }

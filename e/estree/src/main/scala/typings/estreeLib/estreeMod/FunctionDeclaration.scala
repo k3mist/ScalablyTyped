@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionDeclaration extends BaseFunction {
+trait FunctionDeclaration
+  extends BaseFunction
+     with Declaration
+     with Function {
   @JSName("body")
   var body_FunctionDeclaration: BlockStatement
   /** It is null when a function declaration is a part of the `export default function` statement */

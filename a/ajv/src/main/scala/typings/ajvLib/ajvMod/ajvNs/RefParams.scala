@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RefParams extends js.Object {
+trait RefParams extends ErrorParameters {
   var ref: java.lang.String
 }
 

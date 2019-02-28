@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("url", "URL")
 @js.native
-class URL protected () extends js.Object {
+class URL protected ()
+  extends nodeLib.fsMod._PathLike {
   def this(input: java.lang.String) = this()
   def this(input: java.lang.String, base: java.lang.String) = this()
   def this(input: java.lang.String, base: URL) = this()

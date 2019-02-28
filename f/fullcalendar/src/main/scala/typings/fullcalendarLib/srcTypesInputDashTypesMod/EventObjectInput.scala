@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventObjectInput
-  extends EventOptionsBase
-     with RangeInput
+  extends RangeInput
+     with EventOptionsBase
      with /* customField */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var _id: js.UndefOr[java.lang.String] = js.undefined
   var allDay: js.UndefOr[scala.Boolean] = js.undefined

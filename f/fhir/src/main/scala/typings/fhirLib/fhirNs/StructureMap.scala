@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A Map of relationships between 2 structures that can be used to transform data
   */
-trait StructureMap extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait StructureMap extends DomainResource {
   /**
     * Contains extended information for property 'copyright'.
     */

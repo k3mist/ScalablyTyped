@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXElement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait JSXElement
+  extends Expression
+     with BaseNode
+     with Immutable
+     with JSX {
   var children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]
   var closingElement: JSXClosingElement | scala.Null
   var openingElement: JSXOpeningElement

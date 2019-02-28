@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Event record kept for security purposes
   */
-trait AuditEvent extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait AuditEvent extends DomainResource {
   /**
     * Contains extended information for property 'action'.
     */

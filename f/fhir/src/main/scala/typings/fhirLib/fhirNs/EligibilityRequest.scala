@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Determine insurance validity and scope of coverage
   */
-trait EligibilityRequest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait EligibilityRequest extends DomainResource {
   /**
     * Contains extended information for property 'businessArrangement'.
     */

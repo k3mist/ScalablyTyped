@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RegExpLiteral extends Node {
+trait RegExpLiteral
+  extends Node
+     with Expression
+     with Literal {
   var flags: js.UndefOr[java.lang.String] = js.undefined
   var pattern: java.lang.String
   @JSName("type")

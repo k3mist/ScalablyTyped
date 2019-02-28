@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Set[TElement] extends js.Object {
+trait Anon_Set[TElement]
+  extends jqueryLib.JQueryNs._PropHook[TElement] {
   /**
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
     * @since 1.8

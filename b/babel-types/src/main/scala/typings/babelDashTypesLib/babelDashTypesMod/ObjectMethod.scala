@@ -5,7 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectMethod extends Node {
+trait ObjectMethod
+  extends Node
+     with BlockParent
+     with Function
+     with FunctionParent
+     with Method
+     with ObjectMember
+     with Scopable
+     with UserWhitespacable {
   var async: scala.Boolean
   var body: BlockStatement
   var computed: scala.Boolean

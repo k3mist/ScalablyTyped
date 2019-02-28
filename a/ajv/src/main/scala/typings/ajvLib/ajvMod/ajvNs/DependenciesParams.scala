@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DependenciesParams extends js.Object {
+trait DependenciesParams extends ErrorParameters {
   var deps: java.lang.String
   var depsCount: scala.Double
   var missingProperty: java.lang.String

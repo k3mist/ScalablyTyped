@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_AccessToken extends js.Object {
+trait Anon_AccessToken
+  extends expoLib.expoMod.GoogleNs.LogInResult {
   var accessToken: java.lang.String
   var idToken: js.UndefOr[java.lang.String] = js.undefined
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined

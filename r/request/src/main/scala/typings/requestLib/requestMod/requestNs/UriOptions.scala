@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UriOptions extends js.Object {
+trait UriOptions extends RequiredUriUrl {
   var uri: java.lang.String | nodeLib.urlMod.Url
 }
 

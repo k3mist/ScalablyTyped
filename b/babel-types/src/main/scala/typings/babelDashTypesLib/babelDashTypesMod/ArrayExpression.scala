@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayExpression extends Node {
+trait ArrayExpression
+  extends Node
+     with Expression {
   var elements: js.Array[scala.Null | Expression | SpreadElement]
   @JSName("type")
   var type_ArrayExpression: babelDashTypesLib.babelDashTypesLibStrings.ArrayExpression

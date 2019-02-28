@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSTypeAliasDeclaration extends Node {
+trait TSTypeAliasDeclaration
+  extends Node
+     with Declaration
+     with Statement {
   var declare: scala.Boolean | scala.Null
   var id: Identifier
   var typeAnnotation: TSType

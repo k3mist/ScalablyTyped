@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Language extends js.Object {
+trait Anon_Language
+  extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.DocumentFilter {
   /** A language id, like `typescript`. */
   var language: java.lang.String
   /** A glob pattern, like `*.{ts,js}`. */

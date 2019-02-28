@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DatePickerAndroidDateSetAction extends js.Object {
+trait DatePickerAndroidDateSetAction extends DatePickerAndroidOpenReturn {
   var action: reactDashNativeLib.reactDashNativeLibStrings.dateSetAction
   var day: scala.Double
   var month: scala.Double

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait KnownProviderOptions
   extends RequiredProviderOptions
-     with OptionalOptions {
+     with OptionalOptions
+     with BellOptions {
   var provider: Provider
 }
 

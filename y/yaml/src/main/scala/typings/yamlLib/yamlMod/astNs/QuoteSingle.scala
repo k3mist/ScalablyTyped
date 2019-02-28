@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait QuoteSingle extends Scalar {
+trait QuoteSingle
+  extends Scalar
+     with ScalarNode {
   @JSName("cstNode")
   var cstNode_QuoteSingle: js.UndefOr[yamlLib.yamlMod.cstNs.QuoteSingle] = js.undefined
   @JSName("type")

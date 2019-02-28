@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclareModuleExports extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DeclareModuleExports
+  extends Declaration
+     with BaseNode
+     with Flow
+     with FlowDeclaration
+     with Statement {
   var typeAnnotation: TypeAnnotation
   @JSName("type")
   var type_DeclareModuleExports: atBabelTypesLib.atBabelTypesLibStrings.DeclareModuleExports

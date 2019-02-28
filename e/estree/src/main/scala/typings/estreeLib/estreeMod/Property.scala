@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Property extends BaseNode {
+trait Property
+  extends BaseNode
+     with _Node {
   var computed: scala.Boolean
   var key: estreeLib.Expression
    // Could be an AssignmentProperty

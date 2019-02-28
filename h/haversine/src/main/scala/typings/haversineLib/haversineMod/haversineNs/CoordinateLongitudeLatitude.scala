@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CoordinateLongitudeLatitude extends js.Object {
+trait CoordinateLongitudeLatitude extends _Coordinate {
   var latitude: scala.Double
   var longitude: scala.Double
 }

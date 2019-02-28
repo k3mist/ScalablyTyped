@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A list that defines a set of documents
   */
-trait DocumentManifest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DocumentManifest extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */

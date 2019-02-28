@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PresetLayoutOptions
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait PresetLayoutOptions
   extends BaseLayoutOptions
      with AnimatedLayoutOptions {
   // whether to fit to viewport

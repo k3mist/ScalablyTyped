@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TcpSocketConnectOpts extends js.Object {
+trait TcpSocketConnectOpts extends SocketConnectOpts {
   var family: js.UndefOr[scala.Double] = js.undefined
   var hints: js.UndefOr[scala.Double] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

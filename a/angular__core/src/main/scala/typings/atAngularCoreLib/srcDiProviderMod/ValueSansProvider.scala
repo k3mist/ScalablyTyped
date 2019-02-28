@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValueSansProvider extends js.Object {
+trait ValueSansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * The value to inject.
     */

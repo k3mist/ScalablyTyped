@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InvalidManifest extends PartialManifest {
+trait InvalidManifest
+  extends PartialManifest
+     with Manifest {
   /** Not for packaged apps */
   var browser_action: js.UndefOr[scala.Nothing] = js.undefined
   /**

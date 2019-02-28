@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlipTileTemplate extends TileTemplate {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- azureDashSbLib.libMpnserviceMod.Template because Already inherited */ trait FlipTileTemplate extends TileTemplate {
   var smallBackgroundImage: java.lang.String
   var wideBackBackgroundImage: java.lang.String
   var wideBackContent: java.lang.String

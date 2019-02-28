@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InternalOutput extends js.Object {
+trait InternalOutput extends Output {
   var address_n: js.Array[scala.Double]
   var amount: java.lang.String
   var script_type: js.UndefOr[java.lang.String] = js.undefined

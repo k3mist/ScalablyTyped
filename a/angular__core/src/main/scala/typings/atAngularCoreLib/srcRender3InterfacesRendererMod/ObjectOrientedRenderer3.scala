@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectOrientedRenderer3 extends js.Object {
+trait ObjectOrientedRenderer3 extends Renderer3 {
   def createComment(data: java.lang.String): RComment
   def createElement(tagName: java.lang.String): RElement
   def createElementNS(namespace: java.lang.String, tagName: java.lang.String): RElement

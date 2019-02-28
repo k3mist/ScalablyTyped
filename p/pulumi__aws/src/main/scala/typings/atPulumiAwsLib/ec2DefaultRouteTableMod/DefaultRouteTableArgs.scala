@@ -9,26 +9,28 @@ trait DefaultRouteTableArgs extends js.Object {
   /**
     * The ID of the Default Routing Table.
     */
-  val defaultRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val defaultRouteTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   /**
     * A list of virtual gateways for propagation.
     */
   val propagatingVgws: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
     * A list of route objects. Their keys are documented below.
     */
   val routes: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[
+    atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CidrBlockEgressOnlyGatewayId]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrBlockEgressOnlyGatewayId]
       ]
     ]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.undefined
 }
 

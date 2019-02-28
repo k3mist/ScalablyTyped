@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Table extends js.Object {
+trait Table
+  extends markedLib.markedMod.markedNs.Token {
   var align: js.Array[
     markedLib.markedLibStrings.center | markedLib.markedLibStrings.left | markedLib.markedLibStrings.right | scala.Null
   ]

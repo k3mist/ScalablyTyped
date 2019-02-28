@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EnumParams extends js.Object {
+trait EnumParams extends ErrorParameters {
   var allowedValues: js.Array[_]
 }
 

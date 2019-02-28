@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AttributeMemberType extends js.Object {
+trait AttributeMemberType
+  extends IDLInterfaceMemberType
+     with IDLNamespaceMemberType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** An IDL Type for the attribute. */

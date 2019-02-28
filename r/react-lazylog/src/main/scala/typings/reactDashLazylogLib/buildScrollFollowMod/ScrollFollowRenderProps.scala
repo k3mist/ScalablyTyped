@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollFollowRenderProps extends js.Object {
   var follow: scala.Boolean
   def onScroll(args: reactDashLazylogLib.Anon_ClientHeight): scala.Unit

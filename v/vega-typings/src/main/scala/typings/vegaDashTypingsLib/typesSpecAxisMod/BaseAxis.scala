@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Object {
+trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
   /**
     * An interpolation fraction indicating where, for `band` scales, axis ticks should be positioned. A value of `0` places ticks at the left edge of their bands. A value of `0.5` places ticks in the middle of their bands.
     *
@@ -25,14 +25,6 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     * __Default value:__ `"gray"`.
     */
   var domainColor: js.UndefOr[C] = js.undefined
-  /**
-    * An array of alternating [stroke, space] lengths for dashed domain lines.
-    */
-  var domainDash: js.UndefOr[DA] = js.undefined
-  /**
-    * The pixel offset at which to start drawing with the domain dash array.
-    */
-  var domainDashOffset: js.UndefOr[N] = js.undefined
   /**
     * Opacity of the axis domain line.
     */
@@ -55,13 +47,9 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var gridColor: js.UndefOr[C] = js.undefined
   /**
-    * An array of alternating [stroke, space] lengths for dashed grid lines.
+    * The offset (in pixels) into which to begin drawing with the grid dash array.
     */
   var gridDash: js.UndefOr[DA] = js.undefined
-  /**
-    * The pixel offset at which to start drawing with the grid dash array.
-    */
-  var gridDashOffset: js.UndefOr[N] = js.undefined
   /**
     * The stroke opacity of grid (value between [0,1])
     *
@@ -125,10 +113,6 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var labelFontSize: js.UndefOr[N] = js.undefined
   /**
-    * Font style of the title.
-    */
-  var labelFontStyle: js.UndefOr[FS] = js.undefined
-  /**
     * Font weight of axis tick labels.
     */
   var labelFontWeight: js.UndefOr[FW] = js.undefined
@@ -153,7 +137,7 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var labelPadding: js.UndefOr[N] = js.undefined
   /**
-    * The minimum separation that must be between label bounding boxes for them to be considered non-overlapping (default `0`). This property is ignored if *labelOverlap* resolution is not enabled.
+    * TODO: add docs.
     */
   var labelSeparation: js.UndefOr[NS] = js.undefined
   // ---------- Labels ----------
@@ -181,14 +165,6 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     * __Default value:__ `"gray"`
     */
   var tickColor: js.UndefOr[C] = js.undefined
-  /**
-    * An array of alternating [stroke, space] lengths for dashed tick mark lines.
-    */
-  var tickDash: js.UndefOr[DA] = js.undefined
-  /**
-    * The pixel offset at which to start drawing with the tick mark dash array.
-    */
-  var tickDashOffset: js.UndefOr[N] = js.undefined
   /**
     * Boolean flag indicating if an extra axis tick should be added for the initial position of the axis. This flag is useful for styling axes for `band` scales such that ticks are placed on band boundaries rather in the middle of a band. Use in conjunction with `"bandPostion": 1` and an axis `"padding"` value of `0`.
     */
@@ -233,10 +209,6 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var titleAlign: js.UndefOr[A] = js.undefined
   /**
-    * Text anchor position for placing axis titles.
-    */
-  var titleAnchor: js.UndefOr[AN] = js.undefined
-  /**
     * Angle in degrees of axis titles.
     */
   var titleAngle: js.UndefOr[N] = js.undefined
@@ -258,10 +230,6 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     * @minimum 0
     */
   var titleFontSize: js.UndefOr[N] = js.undefined
-  /**
-    * Font style of the title.
-    */
-  var titleFontStyle: js.UndefOr[FS] = js.undefined
   /**
     * Font weight of the title.
     * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StateDeclaration extends js.Object {
+trait StateDeclaration
+  extends _StateDeclaration
+     with _StateOrName {
   /**
     * Gets the internal State object API
     *

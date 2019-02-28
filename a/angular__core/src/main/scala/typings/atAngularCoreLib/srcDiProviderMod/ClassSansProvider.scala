@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassSansProvider extends js.Object {
+trait ClassSansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * Class to instantiate for the `token`.
     */

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait YAMLReferenceError
-  extends stdLib.Error {
+  extends stdLib.Error
+     with YAMLError {
   @JSName("name")
   var name_YAMLReferenceError: yamlLib.yamlLibStrings.YAMLReferenceError
   var source: yamlLib.yamlMod.cstNs.Node

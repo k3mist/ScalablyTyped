@@ -1,0 +1,113 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Step
+  extends stdLib.Object {
+  /**
+    * The user or group to whom the step is assigned.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var assignedTo: java.lang.String
+  /**
+    * Indicates whether the job is assigned to a user, group or unassigned.  **Possible Values:** none | unassigned | user | group
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var assignedType: java.lang.String
+  /**
+    * Indicates whether the step can be run asynchronously.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var async: scala.Boolean
+  /**
+    * Indicates whether the step can be automatically executed when reached.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var autoRun: scala.Boolean
+  /**
+    * Indicates whether the step can be skipped without executing it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var canSkip: scala.Boolean
+  /**
+    * Indicates whether the step can start parallel execution of other steps.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var canSpawnConcurrency: scala.Boolean
+  /**
+    * The unique id of step type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var commonId: scala.Double
+  /**
+    * The default percentage completion of the job once step is reached.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var defaultPercentComplete: scala.Double
+  /**
+    * Indicates whether the step has already been executed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var hasBeenExecuted: scala.Boolean
+  /**
+    * Indicates whether the step has been started.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var hasBeenStarted: scala.Boolean
+  /**
+    * The unique id generated as the step Id.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var id: scala.Double
+  /**
+    * The name of the step.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var name: java.lang.String
+  /**
+    * The type of notification that will be sent when the step finishes execution.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var notificationType: java.lang.String
+  /**
+    * Indicates whether the step will be automatically marked as complete when complete.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var selfCheck: scala.Boolean
+  /**
+    * The unique numeric status value configured as the status of the job once step is reached.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var statusId: scala.Double
+  /**
+    * The percentage completion of the step.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var stepPercentComplete: scala.Double
+  /**
+    * The [step template](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#StepType) for current step.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html#Step)
+    */
+  var stepType: StepType
+}
+

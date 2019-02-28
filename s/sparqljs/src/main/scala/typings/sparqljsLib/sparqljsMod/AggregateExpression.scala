@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AggregateExpression extends BaseExpression {
+trait AggregateExpression
+  extends BaseExpression
+     with _Expression {
   var aggregation: java.lang.String
   var expression: Expression
   var separator: js.UndefOr[java.lang.String] = js.undefined

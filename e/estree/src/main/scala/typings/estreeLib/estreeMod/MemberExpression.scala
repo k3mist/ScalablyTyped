@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MemberExpression extends BaseNode {
+trait MemberExpression
+  extends BaseNode
+     with Pattern {
   var computed: scala.Boolean
   var `object`: estreeLib.Expression | Super
   var property: estreeLib.Expression

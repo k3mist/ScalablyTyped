@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectMethod extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ObjectMethod
+  extends BlockParent
+     with BaseNode
+     with Function
+     with FunctionParent
+     with Method
+     with ObjectMember
+     with Scopable
+     with UserWhitespacable {
   var async: scala.Boolean
   var body: BlockStatement
   var computed: scala.Boolean

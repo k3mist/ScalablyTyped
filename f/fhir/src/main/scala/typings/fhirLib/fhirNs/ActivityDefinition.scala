@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * The definition of a specific activity to be taken, independent of any particular patient or context
   */
-trait ActivityDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ActivityDefinition extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
     */

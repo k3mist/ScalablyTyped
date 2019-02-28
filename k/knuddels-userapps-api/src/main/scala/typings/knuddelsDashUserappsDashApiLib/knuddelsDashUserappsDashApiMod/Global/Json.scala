@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Json
-  extends /* x */ org.scalablytyped.runtime.StringDictionary[
+  extends knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsEvent
+     with /* x */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.JsonData]
     ]
 

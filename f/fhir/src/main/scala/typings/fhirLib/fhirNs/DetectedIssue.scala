@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Clinical issue with action
   */
-trait DetectedIssue extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DetectedIssue extends DomainResource {
   /**
     * Contains extended information for property 'date'.
     */

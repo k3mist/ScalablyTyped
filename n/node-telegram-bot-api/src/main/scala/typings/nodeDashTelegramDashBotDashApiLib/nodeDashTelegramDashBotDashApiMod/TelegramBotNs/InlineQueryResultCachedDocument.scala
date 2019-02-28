@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InlineQueryResultCachedDocument extends InlineQueryResultBase {
+trait InlineQueryResultCachedDocument
+  extends InlineQueryResultBase
+     with InlineQueryResult {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var document_file_id: java.lang.String

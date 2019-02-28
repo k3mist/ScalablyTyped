@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InlineQueryResultContact extends InlineQueryResultBase {
+trait InlineQueryResultContact
+  extends InlineQueryResultBase
+     with InlineQueryResult {
   var first_name: java.lang.String
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   var last_name: js.UndefOr[java.lang.String] = js.undefined

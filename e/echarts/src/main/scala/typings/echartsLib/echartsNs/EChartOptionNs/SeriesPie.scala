@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie
   */
-trait SeriesPie extends js.Object {
+trait SeriesPie extends Series {
   /**
     * Whether to enable animation.
     *

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoJSON extends js.Object {
+trait GeoJSON extends _Coordinate {
   var geometry: haversineLib.Anon_Coordinates
 }
 

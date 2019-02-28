@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXText extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait JSXText
+  extends Immutable
+     with BaseNode
+     with JSX {
   @JSName("type")
   var type_JSXText: atBabelTypesLib.atBabelTypesLibStrings.JSXText
   var value: java.lang.String

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BodyParameter extends BaseParameter {
+trait BodyParameter
+  extends BaseParameter
+     with Parameter {
   @JSName("in")
   var in_BodyParameter: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.body
   var schema: js.UndefOr[Schema] = js.undefined

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InlineQueryResultArticle extends InlineQueryResultBase {
+trait InlineQueryResultArticle
+  extends InlineQueryResultBase
+     with InlineQueryResult {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var hide_url: js.UndefOr[scala.Boolean] = js.undefined
   var input_message_content: InputMessageContent

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAttachElementDelta extends IElementDelta {
+trait IAttachElementDelta
+  extends IElementDelta
+     with Delta {
   var deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.ATTACH_ELEMENT
   /**
     * If the indicated new property is listy, `newIndex` is the index where the element-to-move will end up.

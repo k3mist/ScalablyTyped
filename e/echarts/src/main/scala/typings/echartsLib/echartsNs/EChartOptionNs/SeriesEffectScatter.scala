@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter
   */
-trait SeriesEffectScatter extends js.Object {
+trait SeriesEffectScatter extends Series {
   /**
     * Whether to enable animation.
     *

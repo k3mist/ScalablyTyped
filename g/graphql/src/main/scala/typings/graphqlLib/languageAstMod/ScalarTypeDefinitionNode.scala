@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ScalarTypeDefinitionNode extends js.Object {
+trait ScalarTypeDefinitionNode
+  extends TypeDefinitionNode
+     with ASTNode {
   val description: js.UndefOr[StringValueNode] = js.undefined
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined
   val kind: graphqlLib.graphqlLibStrings.ScalarTypeDefinition

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CatchClause extends BaseNode {
+trait CatchClause
+  extends BaseNode
+     with _Node {
   var body: BlockStatement
   var param: Pattern
   @JSName("type")

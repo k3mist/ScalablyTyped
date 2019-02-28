@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImplementsType extends js.Object {
+trait ImplementsType extends IDLRootType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** The interface that is being implemented by the target. */

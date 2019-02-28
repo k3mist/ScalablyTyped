@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialMod.BaseSchema because var conflicts: description. Inlined format, title, default, multipleOf, maximum, exclusiveMaximum, minimum, exclusiveMinimum, maxLength, minLength, pattern, maxItems, minItems, uniqueItems, maxProperties, minProperties, enum, `type`, items */ trait QueryParameter extends BaseParameter {
+- swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialMod.BaseSchema because var conflicts: description. Inlined format, title, default, multipleOf, maximum, exclusiveMaximum, minimum, exclusiveMinimum, maxLength, minLength, pattern, maxItems, minItems, uniqueItems, maxProperties, minProperties, enum, `type`, items */ trait QueryParameter
+  extends BaseParameter
+     with Parameter {
   var allowEmptyValue: js.UndefOr[scala.Boolean] = js.undefined
   var default: js.UndefOr[java.lang.String | scala.Boolean | scala.Double | js.Object] = js.undefined
   var enum: js.UndefOr[js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object]] = js.undefined

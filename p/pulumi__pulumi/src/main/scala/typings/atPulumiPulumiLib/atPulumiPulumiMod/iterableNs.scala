@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 @js.native
 object iterableNs extends js.Object {
   def groupBy[T, V](
-    iter: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[T]]],
+    iter: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[T]]],
     selector: js.Function1[
       /* t */ T, 
-      atPulumiPulumiLib.outputMod.Input[
+      atPulumiPulumiLib.resourceMod.Input[
         js.Tuple2[
-          atPulumiPulumiLib.outputMod.Input[java.lang.String], 
-          atPulumiPulumiLib.outputMod.Input[V]
+          atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
+          atPulumiPulumiLib.resourceMod.Input[V]
         ]
       ]
     ]
-  ): atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[js.Array[V]]] = js.native
+  ): atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[js.Array[V]]] = js.native
   def toObject[T, V](
-    iter: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[T]]],
+    iter: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[T]]],
     selector: js.Function1[
       /* t */ T, 
-      atPulumiPulumiLib.outputMod.Input[
+      atPulumiPulumiLib.resourceMod.Input[
         js.Tuple2[
-          atPulumiPulumiLib.outputMod.Input[java.lang.String], 
-          atPulumiPulumiLib.outputMod.Input[V]
+          atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
+          atPulumiPulumiLib.resourceMod.Input[V]
         ]
       ]
     ]
-  ): atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[V]] = js.native
+  ): atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[V]] = js.native
 }
 

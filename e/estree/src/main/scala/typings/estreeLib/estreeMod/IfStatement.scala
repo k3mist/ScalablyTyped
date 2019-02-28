@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IfStatement extends BaseNode {
+trait IfStatement
+  extends BaseNode
+     with Statement {
   var alternate: js.UndefOr[Statement | scala.Null] = js.undefined
   var consequent: Statement
   var test: estreeLib.Expression

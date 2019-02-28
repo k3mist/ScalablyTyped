@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IfParams extends js.Object {
+trait IfParams extends ErrorParameters {
   var failingKeyword: java.lang.String
 }
 

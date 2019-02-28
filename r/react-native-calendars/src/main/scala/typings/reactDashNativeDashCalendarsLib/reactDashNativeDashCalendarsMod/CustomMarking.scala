@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomMarking extends js.Object {
+trait CustomMarking extends Marking {
   var customStyles: MarkedDateCustomStyles
 }
 

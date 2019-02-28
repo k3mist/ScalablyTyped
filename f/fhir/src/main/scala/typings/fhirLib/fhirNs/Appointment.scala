@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)
   */
-trait Appointment extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Appointment extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */

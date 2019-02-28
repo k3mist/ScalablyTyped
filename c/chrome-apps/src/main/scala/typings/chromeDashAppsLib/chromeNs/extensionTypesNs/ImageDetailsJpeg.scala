@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageDetailsJpeg extends js.Object {
+trait ImageDetailsJpeg extends ImageDetails {
   /**
     * The format of the resulting image.
     */

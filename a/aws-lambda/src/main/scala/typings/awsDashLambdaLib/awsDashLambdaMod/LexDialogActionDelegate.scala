@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LexDialogActionDelegate extends js.Object {
+trait LexDialogActionDelegate extends LexDialogAction {
   var slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
   var `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Delegate
 }

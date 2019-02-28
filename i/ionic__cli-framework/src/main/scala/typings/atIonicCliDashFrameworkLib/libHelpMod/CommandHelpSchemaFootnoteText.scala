@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CommandHelpSchemaFootnoteText extends js.Object {
+trait CommandHelpSchemaFootnoteText extends CommandHelpSchemaFootnote {
   val id: java.lang.String | scala.Double
   val text: java.lang.String
   val `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.text

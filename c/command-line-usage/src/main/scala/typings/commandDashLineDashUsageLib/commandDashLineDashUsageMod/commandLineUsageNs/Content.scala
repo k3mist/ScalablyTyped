@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A Content section comprises a header and one or more lines of content. */
-trait Content extends js.Object {
+trait Content extends Section {
   /**
     * Overloaded property, accepting data in one of four formats.
     *  1. A single string (one line of text).

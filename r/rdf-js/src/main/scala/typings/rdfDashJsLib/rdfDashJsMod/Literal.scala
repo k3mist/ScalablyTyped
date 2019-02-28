@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Literal extends js.Object {
+trait Literal
+  extends Quad_Object
+     with Term {
   /**
     * A NamedNode whose IRI represents the datatype of the literal.
     */

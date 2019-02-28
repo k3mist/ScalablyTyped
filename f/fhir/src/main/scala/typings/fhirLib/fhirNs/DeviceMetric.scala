@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Measurement, calculation or setting capability of a medical device
   */
-trait DeviceMetric extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DeviceMetric extends DomainResource {
   /**
     * Contains extended information for property 'category'.
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Sheet extends js.Object {
+trait Anon_Sheet extends StyleSheetManagerProps {
   var sheet: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerStyleSheet */ js.Any
   var target: js.UndefOr[scala.Nothing] = js.undefined
 }

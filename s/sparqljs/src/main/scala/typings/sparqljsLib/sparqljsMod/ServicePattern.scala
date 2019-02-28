@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ServicePattern extends BlockPattern {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- sparqljsLib.sparqljsMod.Pattern because Already inherited */ trait ServicePattern extends BlockPattern {
   var name: Term
   var silent: scala.Boolean
   @JSName("type")

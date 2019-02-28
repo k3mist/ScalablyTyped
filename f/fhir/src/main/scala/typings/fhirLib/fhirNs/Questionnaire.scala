@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A structured set of questions
   */
-trait Questionnaire extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Questionnaire extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
     */

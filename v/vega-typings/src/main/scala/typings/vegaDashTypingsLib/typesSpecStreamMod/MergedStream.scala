@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MergedStream extends StreamParameters {
+trait MergedStream
+  extends _Stream
+     with StreamParameters {
   var merge: js.Array[Stream]
 }
 

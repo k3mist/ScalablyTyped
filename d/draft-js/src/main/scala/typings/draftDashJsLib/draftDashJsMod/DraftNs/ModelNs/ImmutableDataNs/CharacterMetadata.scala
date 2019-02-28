@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CharacterMetadata extends js.Object {
   def getEntity(): java.lang.String
   def getStyle(): DraftInlineStyle

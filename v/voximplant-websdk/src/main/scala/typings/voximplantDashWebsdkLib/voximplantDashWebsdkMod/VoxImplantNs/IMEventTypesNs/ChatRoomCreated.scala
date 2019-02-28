@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		* Event dispatched if chat room was created successfully
 		*/
-trait ChatRoomCreated extends js.Object {
+trait ChatRoomCreated
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Room id
   			*/

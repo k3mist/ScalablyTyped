@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Guidance or advice relating to an immunization
   */
-trait ImmunizationRecommendation extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ImmunizationRecommendation extends DomainResource {
   /**
     * Business identifier
     */

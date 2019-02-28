@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionTypeParam extends Node {
+trait FunctionTypeParam
+  extends Node
+     with Flow {
   var name: Identifier
   var typeAnnotation: FlowTypeAnnotation
   @JSName("type")

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait File extends BaseNode {
+trait File
+  extends BaseNode
+     with _Node {
   var comments: js.Any
   var program: Program
   var tokens: js.Any

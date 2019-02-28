@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CellHyperlinkValue extends js.Object {
+trait CellHyperlinkValue extends _CellValue {
   var hyperlink: java.lang.String
   var text: java.lang.String
 }

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InterfaceTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait InterfaceTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowType {
   var body: ObjectTypeAnnotation
   var `extends`: js.Array[InterfaceExtends] | scala.Null
   @JSName("type")

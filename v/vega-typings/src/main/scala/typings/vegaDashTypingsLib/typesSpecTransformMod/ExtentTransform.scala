@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExtentTransform extends js.Object {
+trait ExtentTransform extends _Transform {
   var field: java.lang.String | TransformField
   var signal: java.lang.String
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.extent

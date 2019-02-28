@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSNonNullExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSNonNullExpression
+  extends Expression
+     with BaseNode {
   var expression: Expression
   @JSName("type")
   var type_TSNonNullExpression: atBabelTypesLib.atBabelTypesLibStrings.TSNonNullExpression

@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot
   */
-trait SeriesBoxplot extends js.Object {
+trait SeriesBoxplot extends Series {
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.

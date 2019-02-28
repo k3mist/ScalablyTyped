@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_DataEventHandle[TTarget, TData] extends js.Object {
+trait Anon_DataEventHandle[TTarget, TData]
+  extends jqueryLib.JQueryNs._SpecialEventHook[TTarget, TData] {
   /**
     * jQuery calls a handle hook when the event has occurred and jQuery would normally call the user's event handler specified by `.on()` or another event binding method. If the hook exists, jQuery calls it _instead_ of that event handler, passing it the event and any data passed from `.trigger()` if it was not a native event. The `this` keyword is the DOM element being handled, and `event.handleObj` property has the detailed event information.
     *

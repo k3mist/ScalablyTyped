@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-apollo", "ApolloProvider")
 @js.native
 class ApolloProvider[TCache] protected ()
-  extends reactDashApolloLib.apolloproviderMod.default[TCache] {
+  extends reactDashApolloLib.apolloproviderMod.ApolloProvider[TCache] {
   def this(props: reactDashApolloLib.apolloproviderMod.ApolloProviderProps[TCache], context: js.Any) = this()
 }
 

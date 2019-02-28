@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConfigPage extends js.Object {
+trait ConfigPage extends ConfigPageOrGroup {
   var content: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
   var hideFromMenu: js.UndefOr[scala.Boolean] = js.undefined
   var imports: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

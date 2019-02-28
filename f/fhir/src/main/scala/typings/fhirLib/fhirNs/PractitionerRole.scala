@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Roles/organizations the practitioner is associated with
   */
-trait PractitionerRole extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait PractitionerRole extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

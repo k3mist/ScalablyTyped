@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSParenthesizedType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSParenthesizedType
+  extends TSType
+     with BaseNode {
   var typeAnnotation: TSType
   @JSName("type")
   var type_TSParenthesizedType: atBabelTypesLib.atBabelTypesLibStrings.TSParenthesizedType

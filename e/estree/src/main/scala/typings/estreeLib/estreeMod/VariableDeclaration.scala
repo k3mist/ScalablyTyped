@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariableDeclaration extends BaseNode {
+trait VariableDeclaration
+  extends Declaration
+     with BaseNode {
   var declarations: js.Array[VariableDeclarator]
   var kind: estreeLib.estreeLibStrings.`var` | estreeLib.estreeLibStrings.let | estreeLib.estreeLibStrings.const
   @JSName("type")

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationExpression extends BaseExpression {
+trait OperationExpression
+  extends BaseExpression
+     with _Expression {
   var args: js.Array[Expression]
   var operator: java.lang.String
   @JSName("type")

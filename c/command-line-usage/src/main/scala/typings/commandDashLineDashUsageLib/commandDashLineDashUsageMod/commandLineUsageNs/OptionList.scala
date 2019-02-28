@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A OptionList section adds a table displaying details of the available options. */
-trait OptionList extends js.Object {
+trait OptionList extends Section {
   /** If specified, only options from this particular group will be printed.  */
   var group: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var header: js.UndefOr[java.lang.String] = js.undefined

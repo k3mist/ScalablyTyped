@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		* Event dispatched in case of error while chat room operation
 		*/
-trait ChatRoomError extends js.Object {
+trait ChatRoomError
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Error code
   			*/

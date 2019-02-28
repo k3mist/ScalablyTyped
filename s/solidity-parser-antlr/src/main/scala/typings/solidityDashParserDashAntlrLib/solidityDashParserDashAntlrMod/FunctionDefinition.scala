@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionDefinition extends BaseASTNode {
+trait FunctionDefinition
+  extends BaseASTNode
+     with ASTNode {
   var body: Block | scala.Null
   var name: java.lang.String
   var parameters: ParameterList

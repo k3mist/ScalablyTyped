@@ -9,7 +9,7 @@ trait APIGatewayEventRequestContext extends js.Object {
   var accountId: java.lang.String
   var apiId: java.lang.String
   var authorizer: js.UndefOr[AuthResponseContext | scala.Null] = js.undefined
-  var connectedAt: scala.Double
+  var connectedAt: js.UndefOr[scala.Double] = js.undefined
   var connectionId: js.UndefOr[java.lang.String] = js.undefined
   var domainName: js.UndefOr[java.lang.String] = js.undefined
   var eventType: js.UndefOr[java.lang.String] = js.undefined

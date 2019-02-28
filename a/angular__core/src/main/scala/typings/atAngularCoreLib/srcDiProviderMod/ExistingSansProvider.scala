@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExistingSansProvider extends js.Object {
+trait ExistingSansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * Existing `token` to return. (equivalent to `injector.get(useExisting)`)
     */

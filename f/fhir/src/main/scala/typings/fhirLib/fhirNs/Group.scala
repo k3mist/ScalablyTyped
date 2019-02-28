@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Group of multiple entities
   */
-trait Group extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Group extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

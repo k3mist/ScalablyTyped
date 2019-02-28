@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait AppImageOptions extends CommonLinuxOptions {
+trait AppImageOptions
+  extends CommonLinuxOptions
+     with appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   /**
     * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). Only plain text is supported.
     */

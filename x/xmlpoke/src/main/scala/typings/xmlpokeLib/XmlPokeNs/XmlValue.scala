@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait XmlValue extends js.Object {
+trait XmlValue extends _Value {
   var value: java.lang.String
 }
 

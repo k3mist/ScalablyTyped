@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CurrencyNumberFormatOptions
-  extends stdLib.IntlNs.NumberFormatOptions {
+  extends stdLib.IntlNs.NumberFormatOptions
+     with _NumberFormatOptions {
    // Obligatory if style is 'currency'
   @JSName("currencyDisplay")
   var currencyDisplay_CurrencyNumberFormatOptions: js.UndefOr[CurrencyDisplay] = js.undefined

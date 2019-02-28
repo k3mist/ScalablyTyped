@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   * @constructor
   * @param {String} line   Separation line content (facultative)
   */
-trait Separator extends js.Object {
+trait Separator
+  extends inquirerLib.inquirerMod.inquirerNs._ChoiceType {
   var line: java.lang.String
   var `type`: java.lang.String
 }

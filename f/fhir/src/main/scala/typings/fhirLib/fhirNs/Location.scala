@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Details and position information for a physical place
   */
-trait Location extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Location extends DomainResource {
   /**
     * Contains extended information for property 'alias'.
     */

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EnumValue extends js.Object {
+trait EnumValue
+  extends Node
+     with Value {
   var kind: java.lang.String
   var loc: js.UndefOr[Location] = js.undefined
   var value: java.lang.String

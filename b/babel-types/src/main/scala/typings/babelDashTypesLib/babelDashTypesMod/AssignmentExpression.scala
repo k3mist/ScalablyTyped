@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssignmentExpression extends Node {
+trait AssignmentExpression
+  extends Node
+     with Expression {
   var left: LVal
   var operator: babelDashTypesLib.babelDashTypesLibStrings.`=` | babelDashTypesLib.babelDashTypesLibStrings.`+=` | babelDashTypesLib.babelDashTypesLibStrings.`-=` | babelDashTypesLib.babelDashTypesLibStrings.`*=` | babelDashTypesLib.babelDashTypesLibStrings.`/=` | babelDashTypesLib.babelDashTypesLibStrings.`%=` | babelDashTypesLib.babelDashTypesLibStrings.`<<=` | babelDashTypesLib.babelDashTypesLibStrings.`>>=` | babelDashTypesLib.babelDashTypesLibStrings.`>>>=` | babelDashTypesLib.babelDashTypesLibStrings.`|=` | babelDashTypesLib.babelDashTypesLibStrings.`^=` | babelDashTypesLib.babelDashTypesLibStrings.`&=`
   var right: Expression

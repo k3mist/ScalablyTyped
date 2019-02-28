@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChooseFileEntryOptions extends ChooseEntryOptionsBase {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- chromeDashAppsLib.chromeNs.fileSystemNs.ChooseEntryOptions because Already inherited */ trait ChooseFileEntryOptions extends ChooseEntryOptionsBase {
   /**
     * Whether to accept multiple files. This is only supported for openFile and openWritableFile.
     * The callback to chooseEntry will be called with a list of entries if this is set to true.

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSEnumDeclaration extends Node {
+trait TSEnumDeclaration
+  extends Node
+     with Declaration
+     with Statement {
   var const: scala.Boolean | scala.Null
   var declare: scala.Boolean | scala.Null
   var id: Identifier

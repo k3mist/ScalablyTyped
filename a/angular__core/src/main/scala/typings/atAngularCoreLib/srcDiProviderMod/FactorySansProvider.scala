@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FactorySansProvider extends js.Object {
+trait FactorySansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * A list of `token`s which need to be resolved by the injector. The list of values is then
     * used as arguments to the `useFactory` function.

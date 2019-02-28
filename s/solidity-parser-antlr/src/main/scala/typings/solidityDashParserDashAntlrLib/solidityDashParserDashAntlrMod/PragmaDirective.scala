@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PragmaDirective extends BaseASTNode {
+trait PragmaDirective
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_PragmaDirective: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.PragmaDirective
 }

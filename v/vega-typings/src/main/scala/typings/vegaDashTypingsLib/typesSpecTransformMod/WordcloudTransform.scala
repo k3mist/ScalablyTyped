@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WordcloudTransform extends js.Object {
+trait WordcloudTransform extends _Transform {
   var as: js.UndefOr[
     (vegaDashTypingsLib.typesSpecUtilMod.Vector7[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ] = js.undefined

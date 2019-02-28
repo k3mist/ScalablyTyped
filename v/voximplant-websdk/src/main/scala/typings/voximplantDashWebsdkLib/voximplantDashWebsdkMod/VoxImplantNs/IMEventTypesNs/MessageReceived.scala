@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant message received
 		*/
-trait MessageReceived extends js.Object {
+trait MessageReceived
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	Message content
   			*/

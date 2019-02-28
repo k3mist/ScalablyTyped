@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReducersOption
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
 

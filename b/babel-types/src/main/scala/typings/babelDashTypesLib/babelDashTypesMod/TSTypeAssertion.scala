@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSTypeAssertion extends Node {
+trait TSTypeAssertion
+  extends Node
+     with Expression {
   var expression: Expression
   var typeAnnotation: TSType
   @JSName("type")

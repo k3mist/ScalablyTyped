@@ -14,15 +14,12 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
     vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
     vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
-    vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
     vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
     vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
     vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
     vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
-    vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
-    vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+    vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue
   ]
-  type AxisConfigKeys = vegaDashTypingsLib.vegaDashTypingsLibStrings.axis | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisX | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisY | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisTop | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisRight | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBottom | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisLeft | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBand
   type DefaultsConfig = stdLib.Record[
     vegaDashTypingsLib.vegaDashTypingsLibStrings.prevent | vegaDashTypingsLib.vegaDashTypingsLibStrings.allow, 
     scala.Boolean | js.Array[vegaDashTypingsLib.typesSpecStreamMod.EventType]
@@ -35,7 +32,6 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
     vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
     vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
-    vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
     vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
     vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
     vegaDashTypingsLib.typesSpecTitleMod.TitleFrame | vegaDashTypingsLib.typesSpecValuesMod.StringValue, 

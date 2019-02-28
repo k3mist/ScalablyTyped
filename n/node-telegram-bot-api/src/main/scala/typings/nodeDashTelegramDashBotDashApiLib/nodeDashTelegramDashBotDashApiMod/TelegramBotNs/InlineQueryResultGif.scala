@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InlineQueryResultGif extends InlineQueryResultBase {
+trait InlineQueryResultGif
+  extends InlineQueryResultBase
+     with InlineQueryResult {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var gif_duration: js.UndefOr[scala.Double] = js.undefined
   var gif_height: js.UndefOr[scala.Double] = js.undefined

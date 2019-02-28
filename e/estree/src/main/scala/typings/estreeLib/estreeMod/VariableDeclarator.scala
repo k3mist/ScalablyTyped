@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariableDeclarator extends BaseNode {
+trait VariableDeclarator
+  extends BaseNode
+     with _Node {
   var id: Pattern
   var init: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
   @JSName("type")

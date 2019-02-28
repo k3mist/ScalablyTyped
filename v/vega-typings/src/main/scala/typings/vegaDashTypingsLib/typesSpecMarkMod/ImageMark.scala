@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ImageMark
   extends BaseMark
-     with vegaDashTypingsLib.typesSpecEncodeMod.Encodable[vegaDashTypingsLib.typesSpecEncodeMod.ImageEncodeEntry] {
+     with vegaDashTypingsLib.typesSpecEncodeMod.Encodable[vegaDashTypingsLib.typesSpecEncodeMod.ImageEncodeEntry]
+     with Mark {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.image
 }
 

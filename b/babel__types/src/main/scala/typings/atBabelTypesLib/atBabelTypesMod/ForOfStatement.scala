@@ -5,7 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ForOfStatement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ForOfStatement
+  extends BlockParent
+     with BaseNode
+     with For
+     with ForXStatement
+     with Loop
+     with Scopable
+     with Statement {
   var await: scala.Boolean
   var body: Statement
   var left: VariableDeclaration | LVal

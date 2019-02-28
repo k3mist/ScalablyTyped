@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Type extends js.Object {
+trait Type extends FlowType {
   var aliasSymbol: js.UndefOr[Symbol] = js.undefined
   var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined
   var flags: TypeFlags

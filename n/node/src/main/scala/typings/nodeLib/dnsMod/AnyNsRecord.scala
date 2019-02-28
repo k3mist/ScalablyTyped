@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnyNsRecord extends js.Object {
+trait AnyNsRecord extends AnyRecord {
   var `type`: nodeLib.nodeLibStrings.NS
   var value: java.lang.String
 }

@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap
   */
-trait SeriesHeatmap extends js.Object {
+trait SeriesHeatmap extends Series {
   /**
     * Blur size of each data point. It is valid with
     * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Sample for analysis
   */
-trait Specimen extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Specimen extends DomainResource {
   /**
     * Contains extended information for property 'receivedTime'.
     */

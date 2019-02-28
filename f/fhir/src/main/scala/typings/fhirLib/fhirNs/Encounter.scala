@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An interaction during which services are provided to the patient
   */
-trait Encounter extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Encounter extends DomainResource {
   /**
     * Contains extended information for property 'status'.
     */

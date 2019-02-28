@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassExpression extends BaseClass {
+trait ClassExpression
+  extends BaseClass
+     with Class {
   var id: js.UndefOr[Identifier | scala.Null] = js.undefined
   @JSName("type")
   var type_ClassExpression: estreeLib.estreeLibStrings.ClassExpression

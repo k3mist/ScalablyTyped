@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConstructorAbi extends js.Object {
+trait ConstructorAbi extends FunctionAbi {
   var inputs: js.Array[DataItem]
   var payable: scala.Boolean
   var stateMutability: ConstructorStateMutability

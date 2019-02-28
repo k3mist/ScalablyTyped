@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EventOptionsObject extends js.Object {
+trait EventOptionsObject extends _Events {
   /** a string or array of strings specifying the event channels available. Defaults to no channel restrictions (event updates can specify a channel or not). */
   var channels: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /** if true, the data object passed to podium.emit() is cloned before it is passed to the listeners (unless an override specified by each listener). Defaults to false (data is passed as-is). */

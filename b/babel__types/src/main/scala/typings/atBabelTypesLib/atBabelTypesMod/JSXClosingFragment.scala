@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXClosingFragment extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait JSXClosingFragment
+  extends Immutable
+     with BaseNode
+     with JSX {
   @JSName("type")
   var type_JSXClosingFragment: atBabelTypesLib.atBabelTypesLibStrings.JSXClosingFragment
 }

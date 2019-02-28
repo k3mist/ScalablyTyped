@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * The language service will unconditionally attempt to provide a result.
   * `triggerCharacter` can be `undefined` for a retrigger caused by a cursor move.
   */
-trait SignatureHelpRetriggeredReason extends js.Object {
+trait SignatureHelpRetriggeredReason extends SignatureHelpTriggerReason {
   var kind: typescriptLib.typescriptLibStrings.retrigger
   /**
     * Character that was responsible for triggering signature help.

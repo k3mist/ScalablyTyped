@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MessageDescriptorHtml extends MessageDescriptorBase {
+trait MessageDescriptorHtml
+  extends MessageDescriptorBase
+     with MessageDescriptor {
   var html: java.lang.String
 }
 

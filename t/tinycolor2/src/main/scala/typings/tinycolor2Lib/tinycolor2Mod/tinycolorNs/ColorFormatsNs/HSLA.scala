@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HSLA
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- tinycolor2Lib.tinycolor2Mod.tinycolorNs._ColorInputWithoutInstance because Already inherited */ trait HSLA
   extends HSL
      with Alpha
 

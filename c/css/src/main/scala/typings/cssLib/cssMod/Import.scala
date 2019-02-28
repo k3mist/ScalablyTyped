@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Import extends Node {
+trait Import
+  extends Node
+     with AtRule {
   /** The part following @import. */
   var `import`: js.UndefOr[java.lang.String] = js.undefined
 }

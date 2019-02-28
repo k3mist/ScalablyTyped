@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WithStatement extends Node {
+trait WithStatement
+  extends Node
+     with Statement {
   var body: BlockStatement | Statement
   var `object`: Expression
   @JSName("type")

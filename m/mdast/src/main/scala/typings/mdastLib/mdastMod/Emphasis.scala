@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Emphasis extends Parent {
+trait Emphasis
+  extends Parent
+     with StaticPhrasingContent {
   @JSName("children")
   var children_Emphasis: js.Array[PhrasingContent]
   @JSName("type")

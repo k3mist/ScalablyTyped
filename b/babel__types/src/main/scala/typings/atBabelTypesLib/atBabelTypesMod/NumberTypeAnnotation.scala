@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NumberTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait NumberTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowBaseAnnotation
+     with FlowType {
   @JSName("type")
   var type_NumberTypeAnnotation: atBabelTypesLib.atBabelTypesLibStrings.NumberTypeAnnotation
 }

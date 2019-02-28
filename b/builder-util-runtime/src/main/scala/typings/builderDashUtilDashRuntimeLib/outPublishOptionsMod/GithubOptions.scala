@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GithubOptions extends PublishConfiguration {
+trait GithubOptions
+  extends PublishConfiguration
+     with _AllPublishOptions {
   /**
     * The host (including the port if need).
     * @default github.com

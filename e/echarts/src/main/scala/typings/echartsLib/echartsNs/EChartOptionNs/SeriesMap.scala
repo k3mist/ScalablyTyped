@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map
   */
-trait SeriesMap extends js.Object {
+trait SeriesMap extends Series {
   /**
     * Used to scale aspect of geo.
     *

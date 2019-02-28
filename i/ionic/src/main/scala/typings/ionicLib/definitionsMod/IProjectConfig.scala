@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IProjectConfig extends js.Object {
+trait IProjectConfig extends ProjectFile {
   val hooks: js.UndefOr[
     stdLib.Record[HookName, js.UndefOr[java.lang.String | js.Array[java.lang.String]]]
   ] = js.undefined

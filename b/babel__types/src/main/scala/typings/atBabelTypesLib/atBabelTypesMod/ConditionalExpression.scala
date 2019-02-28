@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConditionalExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ConditionalExpression
+  extends Conditional
+     with BaseNode
+     with Expression {
   var alternate: Expression
   var consequent: Expression
   var test: Expression

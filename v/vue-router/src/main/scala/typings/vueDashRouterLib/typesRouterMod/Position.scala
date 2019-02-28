@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Position extends js.Object {
+trait Position extends _PositionResult {
   var x: scala.Double
   var y: scala.Double
 }

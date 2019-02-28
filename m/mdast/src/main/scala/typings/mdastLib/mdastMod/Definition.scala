@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Definition
-  extends unistLib.unistMod.Node
+  extends DefinitionContent
+     with unistLib.unistMod.Node
      with Association
      with Resource {
   @JSName("type")

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DroneEnv extends CiEnvBase {
+trait DroneEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String
   var commit: java.lang.String

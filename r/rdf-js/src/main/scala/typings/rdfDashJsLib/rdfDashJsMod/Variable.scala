@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Variable extends js.Object {
+trait Variable
+  extends Quad_Graph
+     with Quad_Object
+     with Quad_Predicate
+     with Quad_Subject
+     with Term {
   /**
     * Contains the constant "Variable".
     */

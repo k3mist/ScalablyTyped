@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BlankNode extends js.Object {
+trait BlankNode
+  extends Quad_Graph
+     with Quad_Object
+     with Quad_Subject
+     with Term {
   /**
     * Contains the constant "BlankNode".
     */

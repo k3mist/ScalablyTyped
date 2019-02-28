@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ObjectTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowType {
   var callProperties: js.Array[ObjectTypeCallProperty] | scala.Null
   var exact: scala.Boolean
   var indexers: js.Array[ObjectTypeIndexer] | scala.Null

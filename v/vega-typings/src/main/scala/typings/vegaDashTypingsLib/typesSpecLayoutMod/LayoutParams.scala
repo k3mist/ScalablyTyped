@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LayoutParams extends js.Object {
+trait LayoutParams extends Layout {
   var align: js.UndefOr[
     LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[LayoutAlign]
   ] = js.undefined

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationMemberType extends js.Object {
+trait OperationMemberType
+  extends IDLInterfaceMemberType
+     with IDLNamespaceMemberType {
   /** An array of arguments for the operation. */
   var arguments: js.Array[Argument]
   /** True if a deleter operation. */

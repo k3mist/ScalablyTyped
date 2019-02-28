@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OutputStreamOption extends js.Object {
+trait OutputStreamOption extends _StreamOptions {
   var output: nodeLib.NodeJSNs.WriteStream
 }
 

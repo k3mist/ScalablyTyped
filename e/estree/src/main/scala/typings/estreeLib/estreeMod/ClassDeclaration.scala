@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassDeclaration extends BaseClass {
+trait ClassDeclaration
+  extends BaseClass
+     with Class
+     with Declaration {
   /** It is null when a class declaration is a part of the `export default class` statement */
   var id: Identifier | scala.Null
   @JSName("type")

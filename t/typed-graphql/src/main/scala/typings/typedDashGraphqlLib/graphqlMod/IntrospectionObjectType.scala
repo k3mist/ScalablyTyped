@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IntrospectionObjectType extends js.Object {
+trait IntrospectionObjectType extends IntrospectionType {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var fields: js.Array[IntrospectionField]
   var interfaces: js.Array[IntrospectionNamedTypeRef]

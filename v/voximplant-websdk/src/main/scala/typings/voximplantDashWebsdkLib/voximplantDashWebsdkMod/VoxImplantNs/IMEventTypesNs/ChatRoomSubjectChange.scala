@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if chat room subject was changed
 		*/
-trait ChatRoomSubjectChange extends js.Object {
+trait ChatRoomSubjectChange
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id who changed the subject
   			*/

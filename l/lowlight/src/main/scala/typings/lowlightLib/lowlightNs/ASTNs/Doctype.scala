@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Doctype
-  extends lowlightLib.lowlightNs.ASTNs.UnistNs.Node {
+  extends lowlightLib.lowlightNs.ASTNs.UnistNs.Node
+     with lowlightLib.lowlightNs.HastNode {
   var name: java.lang.String
   var public: js.UndefOr[java.lang.String] = js.undefined
   var system: js.UndefOr[java.lang.String] = js.undefined

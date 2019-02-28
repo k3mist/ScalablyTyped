@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlistObject
-  extends /* x */ org.scalablytyped.runtime.StringDictionary[PlistValue]
+  extends _PlistValue
+     with /* x */ org.scalablytyped.runtime.StringDictionary[PlistValue]
 

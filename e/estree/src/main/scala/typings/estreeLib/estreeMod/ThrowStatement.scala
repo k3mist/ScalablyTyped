@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ThrowStatement extends BaseNode {
+trait ThrowStatement
+  extends BaseNode
+     with Statement {
   var argument: estreeLib.Expression
   @JSName("type")
   var type_ThrowStatement: estreeLib.estreeLibStrings.ThrowStatement

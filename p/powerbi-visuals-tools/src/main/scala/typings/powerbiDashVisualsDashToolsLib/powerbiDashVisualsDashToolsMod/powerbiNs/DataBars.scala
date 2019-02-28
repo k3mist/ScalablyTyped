@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DataBars extends js.Object {
+trait DataBars extends _StructuralObjectValue {
   var axisColor: Fill
   var hideText: scala.Boolean
   var maxValue: js.UndefOr[scala.Double] = js.undefined

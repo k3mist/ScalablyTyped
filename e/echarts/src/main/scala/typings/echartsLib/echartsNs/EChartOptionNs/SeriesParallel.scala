@@ -118,7 +118,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel
   */
-trait SeriesParallel extends js.Object {
+trait SeriesParallel extends Series {
   /**
     * When perform brush selection, the selected lines will be set
     * as this transparency rate (which could highlight those lines).

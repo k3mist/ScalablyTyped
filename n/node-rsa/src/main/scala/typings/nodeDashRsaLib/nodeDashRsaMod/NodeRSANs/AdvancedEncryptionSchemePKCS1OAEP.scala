@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AdvancedEncryptionSchemePKCS1OAEP extends js.Object {
+trait AdvancedEncryptionSchemePKCS1OAEP extends AdvancedEncryptionScheme {
   var hash: HashingAlgorithm
   /**
     * Mask generation function.

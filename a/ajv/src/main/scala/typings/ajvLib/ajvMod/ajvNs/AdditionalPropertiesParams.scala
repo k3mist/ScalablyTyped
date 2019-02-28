@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AdditionalPropertiesParams extends js.Object {
+trait AdditionalPropertiesParams extends ErrorParameters {
   var additionalProperty: java.lang.String
 }
 

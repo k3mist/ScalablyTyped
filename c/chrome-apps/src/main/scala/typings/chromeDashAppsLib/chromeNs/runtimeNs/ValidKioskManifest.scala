@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Manifest for Chrome OS Kiosk apps
   * @requires(CrOS Kiosk App) **Only for Chrome OS Kiosk Apps.**
   */
-trait ValidKioskManifest extends PartialManifest {
+trait ValidKioskManifest
+  extends PartialManifest
+     with Manifest {
   /** Kiosk settings */
   var kiosk: js.UndefOr[chromeDashAppsLib.Anon_Alwaysupdate] = js.undefined
   /**

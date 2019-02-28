@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JenkinsEnv extends CiEnvBase {
+trait JenkinsEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String
   var buildUrl: java.lang.String

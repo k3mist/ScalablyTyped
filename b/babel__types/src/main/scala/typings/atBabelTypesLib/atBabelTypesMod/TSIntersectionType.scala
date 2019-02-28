@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSIntersectionType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSIntersectionType
+  extends TSType
+     with BaseNode {
   @JSName("type")
   var type_TSIntersectionType: atBabelTypesLib.atBabelTypesLibStrings.TSIntersectionType
   var types: js.Array[TSType]

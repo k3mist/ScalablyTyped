@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IdMap
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[rollupLib.Anon_External]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

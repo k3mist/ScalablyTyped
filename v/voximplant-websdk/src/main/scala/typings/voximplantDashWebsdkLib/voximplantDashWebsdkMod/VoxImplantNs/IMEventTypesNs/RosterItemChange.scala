@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when roster item changed
 		*/
-trait RosterItemChange extends js.Object {
+trait RosterItemChange
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User display name
   			*/

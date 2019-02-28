@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IPublishPacket extends IPacket {
+trait IPublishPacket
+  extends IPacket
+     with Packet {
   @JSName("cmd")
   var cmd_IPublishPacket: mqttDashPacketLib.mqttDashPacketLibStrings.publish
   var dup: scala.Boolean

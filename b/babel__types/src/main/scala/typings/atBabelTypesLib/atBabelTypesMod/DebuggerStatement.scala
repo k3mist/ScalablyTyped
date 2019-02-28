@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DebuggerStatement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DebuggerStatement
+  extends Statement
+     with BaseNode {
   @JSName("type")
   var type_DebuggerStatement: atBabelTypesLib.atBabelTypesLibStrings.DebuggerStatement
 }

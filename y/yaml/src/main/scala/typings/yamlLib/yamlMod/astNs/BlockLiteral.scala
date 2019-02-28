@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BlockLiteral extends Scalar {
+trait BlockLiteral
+  extends Scalar
+     with ScalarNode {
   @JSName("cstNode")
   var cstNode_BlockLiteral: js.UndefOr[yamlLib.yamlMod.cstNs.BlockLiteral] = js.undefined
   @JSName("type")

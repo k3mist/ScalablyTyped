@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Map extends Node {
+trait Map
+  extends Node
+     with ContentNode {
   /** implicit keys are not wrapped */
   var items: js.Array[Comment | Alias | Scalar | MapItem]
   @JSName("type")

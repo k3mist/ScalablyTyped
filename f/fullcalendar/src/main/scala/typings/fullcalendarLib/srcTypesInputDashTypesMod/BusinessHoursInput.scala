@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BusinessHoursInput extends js.Object {
+trait BusinessHoursInput extends ConstraintInput {
   var dow: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var end: js.UndefOr[MomentInput] = js.undefined
   var start: js.UndefOr[MomentInput] = js.undefined

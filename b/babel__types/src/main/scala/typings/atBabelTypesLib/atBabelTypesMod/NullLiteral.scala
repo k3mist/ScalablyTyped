@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NullLiteral extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait NullLiteral
+  extends Expression
+     with BaseNode
+     with Immutable
+     with Literal
+     with Pureish {
   @JSName("type")
   var type_NullLiteral: atBabelTypesLib.atBabelTypesLibStrings.NullLiteral
 }

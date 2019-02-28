@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NoLogFilterAppender extends js.Object {
+trait NoLogFilterAppender extends Appender {
   // the name of an appender, defined in the same configuration, that you want to filter.
   var appender: java.lang.String
   // the regular expression (or the regular expressions if you provide an array of values)

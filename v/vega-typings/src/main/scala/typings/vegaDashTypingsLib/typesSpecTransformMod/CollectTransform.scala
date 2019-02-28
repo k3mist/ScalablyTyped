@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CollectTransform extends js.Object {
+trait CollectTransform extends _Transform {
   var sort: vegaDashTypingsLib.typesSpecMarkMod.Compare
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.collect
 }

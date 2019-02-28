@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Describes the intended objective(s) for a patient, group or organization
   */
-trait Goal extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Goal extends DomainResource {
   /**
     * Contains extended information for property 'startDate'.
     */

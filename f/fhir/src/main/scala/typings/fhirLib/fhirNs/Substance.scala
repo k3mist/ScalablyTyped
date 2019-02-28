@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A homogeneous material with a definite composition
   */
-trait Substance extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Substance extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */

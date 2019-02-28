@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/concentric
   */
-trait ConcentricLayoutOptions extends ShapedLayoutOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait ConcentricLayoutOptions extends ShapedLayoutOptions {
   // whether the layout should go clockwise (true) or counterclockwise/anticlockwise (false)
   var clockwise: js.UndefOr[scala.Boolean] = js.undefined
   // whether levels have an equal radial distance betwen them, may cause bounding box overflow

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NthPlain extends CssNodeCommon {
+trait NthPlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var nth: AnPlusB | Identifier
   var selector: SelectorListPlain | scala.Null
   @JSName("type")

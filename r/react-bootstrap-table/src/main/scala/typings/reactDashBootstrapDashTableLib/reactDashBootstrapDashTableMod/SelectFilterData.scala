@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SelectFilterData extends js.Object {
+trait SelectFilterData extends FilterValue {
   var `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.SelectFilter
   var value: java.lang.String
 }

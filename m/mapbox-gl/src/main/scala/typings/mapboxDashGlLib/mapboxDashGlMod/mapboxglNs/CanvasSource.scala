@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CanvasSource extends CanvasSourceRaw {
+trait CanvasSource
+  extends CanvasSourceRaw
+     with AnySourceImpl {
   def getCanvas(): stdLib.HTMLCanvasElement
   def pause(): scala.Unit
   def play(): scala.Unit

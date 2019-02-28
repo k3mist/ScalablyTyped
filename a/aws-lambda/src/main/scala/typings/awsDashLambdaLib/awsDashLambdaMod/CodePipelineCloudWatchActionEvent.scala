@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CodePipelineCloudWatchActionEvent extends js.Object {
+trait CodePipelineCloudWatchActionEvent extends CodePipelineCloudWatchEvent {
   var account: java.lang.String
   var detail: awsDashLambdaLib.Anon_ActionExecutionid
   var `detail-type`: awsDashLambdaLib.awsDashLambdaLibStrings.`CodePipeline Action Execution State Change`

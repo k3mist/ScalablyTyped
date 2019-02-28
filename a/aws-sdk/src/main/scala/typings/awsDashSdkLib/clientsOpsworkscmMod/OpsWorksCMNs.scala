@@ -191,7 +191,7 @@ object OpsWorksCMNs extends js.Object {
       */
     var Engine: js.UndefOr[String] = js.undefined
     /**
-      * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_PIVOTAL_KEY: A base64-encoded RSA public key. The corresponding private key is required to access the Chef API. When no CHEF_PIVOTAL_KEY is set, a private key is generated and returned in the response.     CHEF_DELIVERY_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate GUI. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_DELIVERY_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.    PUPPET_R10K_REMOTE: The r10k remote is the URL of your control repository (for example, ssh://git@your.git-repo.com:user/control-repo.git). Specifying an r10k remote opens TCP port 8170.    PUPPET_R10K_PRIVATE_KEY: If you are using a private Git repository, add PUPPET_R10K_PRIVATE_KEY to specify an SSH URL and a PEM-encoded private SSH key.  
+      * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_PIVOTAL_KEY: A base64-encoded RSA private key that is not stored by AWS OpsWorks for Chef Automate. This private key is required to access the Chef API. When no CHEF_PIVOTAL_KEY is set, one is generated and returned in the response.     CHEF_DELIVERY_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate GUI. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_DELIVERY_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.  
       */
     var EngineAttributes: js.UndefOr[EngineAttributes] = js.undefined
     /**
@@ -941,7 +941,7 @@ object OpsWorksCMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateServerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Updates engine-specific attributes on a specified server. The server enters the MODIFYING state when this operation is in progress. Only one update can occur at a time. You can use this command to reset a Chef server's public key (CHEF_PIVOTAL_KEY) or a Puppet server's admin password (PUPPET_ADMIN_PASSWORD).   This operation is asynchronous.   This operation can only be called for servers in HEALTHY or UNHEALTHY states. Otherwise, an InvalidStateException is raised. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. 
+      *  Updates engine-specific attributes on a specified server. The server enters the MODIFYING state when this operation is in progress. Only one update can occur at a time. You can use this command to reset a Chef server's private key (CHEF_PIVOTAL_KEY) or a Puppet server's admin password (PUPPET_ADMIN_PASSWORD).   This operation is asynchronous.   This operation can only be called for servers in HEALTHY or UNHEALTHY states. Otherwise, an InvalidStateException is raised. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. 
       */
     def updateServerEngineAttributes(): awsDashSdkLib.libRequestMod.Request[UpdateServerEngineAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateServerEngineAttributes(
@@ -952,7 +952,7 @@ object OpsWorksCMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateServerEngineAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Updates engine-specific attributes on a specified server. The server enters the MODIFYING state when this operation is in progress. Only one update can occur at a time. You can use this command to reset a Chef server's public key (CHEF_PIVOTAL_KEY) or a Puppet server's admin password (PUPPET_ADMIN_PASSWORD).   This operation is asynchronous.   This operation can only be called for servers in HEALTHY or UNHEALTHY states. Otherwise, an InvalidStateException is raised. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. 
+      *  Updates engine-specific attributes on a specified server. The server enters the MODIFYING state when this operation is in progress. Only one update can occur at a time. You can use this command to reset a Chef server's private key (CHEF_PIVOTAL_KEY) or a Puppet server's admin password (PUPPET_ADMIN_PASSWORD).   This operation is asynchronous.   This operation can only be called for servers in HEALTHY or UNHEALTHY states. Otherwise, an InvalidStateException is raised. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. 
       */
     def updateServerEngineAttributes(params: UpdateServerEngineAttributesRequest): awsDashSdkLib.libRequestMod.Request[UpdateServerEngineAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateServerEngineAttributes(
@@ -1043,14 +1043,26 @@ object OpsWorksCMNs extends js.Object {
     var Server: js.UndefOr[Server] = js.undefined
   }
   
+  trait _BackupStatus extends js.Object
+  
+  trait _BackupType extends js.Object
+  
+  trait _MaintenanceStatus extends js.Object
+  
+  trait _NodeAssociationStatus extends js.Object
+  
+  trait _ServerStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountAttributes = js.Array[AccountAttribute]
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
   type BackupId = java.lang.String
   type BackupRetentionCountDefinition = scala.Double
-  type BackupStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
-  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.AUTOMATED | awsDashSdkLib.awsDashSdkLibStrings.MANUAL | java.lang.String
+  type BackupStatus = _BackupStatus | java.lang.String
+  type BackupType = _BackupType | java.lang.String
   type Backups = js.Array[Backup]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -1060,21 +1072,21 @@ object OpsWorksCMNs extends js.Object {
   type InstanceProfileArn = java.lang.String
   type Integer = scala.Double
   type KeyPair = java.lang.String
-  type MaintenanceStatus = awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type MaintenanceStatus = _MaintenanceStatus | java.lang.String
   type MaxResults = scala.Double
   type NextToken = java.lang.String
-  type NodeAssociationStatus = awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | java.lang.String
+  type NodeAssociationStatus = _NodeAssociationStatus | java.lang.String
   type NodeAssociationStatusToken = java.lang.String
   type NodeName = java.lang.String
   type ServerEvents = js.Array[ServerEvent]
   type ServerName = java.lang.String
-  type ServerStatus = awsDashSdkLib.awsDashSdkLibStrings.BACKING_UP | awsDashSdkLib.awsDashSdkLibStrings.CONNECTION_LOST | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.MODIFYING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.RESTORING | awsDashSdkLib.awsDashSdkLibStrings.SETUP | awsDashSdkLib.awsDashSdkLibStrings.UNDER_MAINTENANCE | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | awsDashSdkLib.awsDashSdkLibStrings.TERMINATED | java.lang.String
+  type ServerStatus = _ServerStatus | java.lang.String
   type Servers = js.Array[Server]
   type ServiceRoleArn = java.lang.String
   type String = java.lang.String
   type Strings = js.Array[String]
   type TimeWindowDefinition = java.lang.String
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

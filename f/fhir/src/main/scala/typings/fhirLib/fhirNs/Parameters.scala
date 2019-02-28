@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Operation Request or Response
   */
-trait Parameters extends ResourceBase {
+trait Parameters
+  extends ResourceBase
+     with Resource {
   /**
     * Operation Parameter
     */

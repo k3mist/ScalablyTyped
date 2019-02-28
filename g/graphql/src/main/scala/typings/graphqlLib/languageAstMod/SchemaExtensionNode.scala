@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SchemaExtensionNode extends js.Object {
+trait SchemaExtensionNode
+  extends TypeSystemExtensionNode
+     with ASTNode {
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined
   val kind: graphqlLib.graphqlLibStrings.SchemaExtension
   val loc: js.UndefOr[Location] = js.undefined

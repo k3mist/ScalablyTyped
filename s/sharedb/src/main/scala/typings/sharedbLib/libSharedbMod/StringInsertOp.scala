@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StringInsertOp extends js.Object {
+trait StringInsertOp extends Op {
   var p: Path
   var si: java.lang.String
 }

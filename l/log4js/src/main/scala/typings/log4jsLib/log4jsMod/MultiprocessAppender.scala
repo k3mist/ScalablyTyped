@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiprocessAppender extends js.Object {
+trait MultiprocessAppender extends Appender {
   // (only needed if mode == master)- the name of the appender to send the log events to
   var appender: js.UndefOr[java.lang.String] = js.undefined
   // (defaults to localhost) - the host/IP address to listen on, or send to

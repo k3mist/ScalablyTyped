@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BintrayOptions extends PublishConfiguration {
+trait BintrayOptions
+  extends PublishConfiguration
+     with _AllPublishOptions {
   /**
     * The Bintray component (Debian only).
     */

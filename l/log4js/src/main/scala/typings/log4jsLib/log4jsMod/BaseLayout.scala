@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseLayout extends js.Object {
+trait BaseLayout extends Layout {
   var `type`: log4jsLib.log4jsLibStrings.basic
 }
 

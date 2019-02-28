@@ -5,7 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrowFunctionExpression extends Node {
+trait ArrowFunctionExpression
+  extends Node
+     with BlockParent
+     with Expression
+     with Function
+     with FunctionParent
+     with Pureish
+     with Scopable {
   var async: scala.Boolean
   var body: BlockStatement | Expression
   var expression: scala.Boolean

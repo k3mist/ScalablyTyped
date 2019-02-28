@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * POST request mock.
   */
-trait Post[TResponse] extends js.Object {
+trait Post[TResponse]
+  extends AllRequests[TResponse, js.Any] {
   var request: protractorDashHttpDashMockLib.Anon_Method
   var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
 }

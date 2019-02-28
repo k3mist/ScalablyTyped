@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSTypePredicate extends Node {
+trait TSTypePredicate
+  extends Node
+     with TSType {
   var parameterName: Identifier | TSThisType
   var typeAnnotation: TSTypeAnnotation
   @JSName("type")

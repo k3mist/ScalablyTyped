@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LoadOperation extends js.Object {
+trait LoadOperation extends ManagementOperation {
   var destination: java.lang.String | sparqljsLib.sparqljsLibNumbers.`false`
   var silent: scala.Boolean
   var source: java.lang.String

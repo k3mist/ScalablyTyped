@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Medical care, research study or other healthcare event causing physical injury
   */
-trait AdverseEvent extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait AdverseEvent extends DomainResource {
   /**
     * Contains extended information for property 'category'.
     */

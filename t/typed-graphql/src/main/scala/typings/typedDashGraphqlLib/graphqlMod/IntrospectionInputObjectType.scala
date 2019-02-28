@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IntrospectionInputObjectType extends js.Object {
+trait IntrospectionInputObjectType extends IntrospectionType {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var inputFields: js.Array[IntrospectionInputValue]
   var kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.INPUT_OBJECT

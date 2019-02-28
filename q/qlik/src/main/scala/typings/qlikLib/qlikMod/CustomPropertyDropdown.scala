@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomPropertyDropdown extends CustomPropertyCommon {
+trait CustomPropertyDropdown
+  extends CustomPropertyCommon
+     with CustomProperty {
   var component: qlikLib.qlikLibStrings.dropdown
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[CustomPropertyOptions] = js.undefined

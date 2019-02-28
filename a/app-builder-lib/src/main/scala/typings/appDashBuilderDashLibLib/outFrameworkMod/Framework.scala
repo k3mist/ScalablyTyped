@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Framework extends js.Object {
   var afterPack: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any, 
+      /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
       js.Promise[_]
     ]
   ] = js.undefined
@@ -18,19 +18,19 @@ trait Framework extends js.Object {
   val distMacOsAppName: java.lang.String
   var getDefaultIcon: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       java.lang.String | scala.Null
     ]
   ] = js.undefined
   var getExcludedDependencies: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       js.Array[java.lang.String] | scala.Null
     ]
   ] = js.undefined
   var getMainFile: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       java.lang.String | scala.Null
     ]
   ] = js.undefined

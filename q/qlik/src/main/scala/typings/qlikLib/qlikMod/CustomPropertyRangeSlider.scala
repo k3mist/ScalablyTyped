@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomPropertyRangeSlider extends CustomPropertyCommon {
+trait CustomPropertyRangeSlider
+  extends CustomPropertyCommon
+     with CustomProperty {
   var component: qlikLib.qlikLibStrings.slider
   var defaultValue: js.UndefOr[scala.Double] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined

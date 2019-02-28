@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * PATCH request mock.
   */
-trait Patch[TResponse] extends js.Object {
+trait Patch[TResponse]
+  extends AllRequests[TResponse, js.Any] {
   var request: protractorDashHttpDashMockLib.Anon_Method
   var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
 }

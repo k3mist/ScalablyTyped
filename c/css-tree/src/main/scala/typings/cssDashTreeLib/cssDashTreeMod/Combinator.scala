@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Combinator extends CssNodeCommon {
+trait Combinator
+  extends CssNodeCommon
+     with CssNode
+     with CssNodePlain {
   var name: java.lang.String
   @JSName("type")
   var type_Combinator: cssDashTreeLib.cssDashTreeLibStrings.Combinator

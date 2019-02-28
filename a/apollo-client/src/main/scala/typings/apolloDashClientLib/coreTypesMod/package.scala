@@ -11,10 +11,9 @@ package object coreTypesMod {
     /* options */ apolloDashClientLib.Anon_MutationResult[T], 
     stdLib.Record[java.lang.String, js.Any]
   ]
-  type QueryListener = js.Function3[
+  type QueryListener = js.Function2[
     /* queryStoreValue */ apolloDashClientLib.dataQueriesMod.QueryStoreValue, 
     /* newData */ js.UndefOr[js.Any], 
-    /* forceResolvers */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
 }

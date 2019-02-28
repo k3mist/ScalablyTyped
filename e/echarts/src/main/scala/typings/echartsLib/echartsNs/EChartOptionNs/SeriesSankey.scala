@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey
   */
-trait SeriesSankey extends js.Object {
+trait SeriesSankey extends Series {
   /**
     * Whether to enable animation.
     *

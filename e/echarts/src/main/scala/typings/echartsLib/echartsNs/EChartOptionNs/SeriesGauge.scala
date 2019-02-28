@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge
   */
-trait SeriesGauge extends js.Object {
+trait SeriesGauge extends Series {
   /**
     * Whether to enable animation.
     *

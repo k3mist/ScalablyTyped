@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A set of codes drawn from one or more code systems
   */
-trait CodeSystem extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CodeSystem extends DomainResource {
   /**
     * Contains extended information for property 'caseSensitive'.
     */

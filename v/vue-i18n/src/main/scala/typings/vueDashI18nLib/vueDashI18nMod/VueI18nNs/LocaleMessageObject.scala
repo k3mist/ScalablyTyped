@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocaleMessageObject
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[LocaleMessage]
+  extends _LocaleMessage
+     with /* key */ org.scalablytyped.runtime.StringDictionary[LocaleMessage]
 

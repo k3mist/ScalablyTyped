@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched after SDK was successfully initialized after init function call
 		*/
-trait SDKReady extends js.Object {
+trait SDKReady
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantEvent {
   /**
   			*	SDK version
   			*/

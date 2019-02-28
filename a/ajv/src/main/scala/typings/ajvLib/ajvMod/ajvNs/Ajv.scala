@@ -8,13 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Ajv extends js.Object {
   var errors: js.UndefOr[js.Array[ErrorObject] | scala.Null] = js.native
+  def addFormat(name: java.lang.String, format: FormatDefinition): Ajv = js.native
   /**
     * Add custom format
     * @param {string} name format name
     * @param {string|RegExp|Function} format string is converted to RegExp; function should return boolean (true when valid)
     * @return {Ajv} this for method chaining
     */
-  def addFormat(name: java.lang.String, format: FormatDefinition | FormatValidator): Ajv = js.native
+  def addFormat(name: java.lang.String, format: FormatValidator): Ajv = js.native
   /**
     * Define custom keyword
     * @this  Ajv
@@ -125,14 +126,6 @@ trait Ajv extends js.Object {
     */
   def validate(schemaKeyRef: js.Object, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   def validate(schemaKeyRef: scala.Boolean, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
-  /**
-    * Validate keyword
-    * @this  Ajv
-    * @param {object} definition keyword definition object
-    * @param {boolean} throwError true to throw exception if definition is invalid
-    * @return {boolean} validation result
-    */
-  def validateKeyword(definition: KeywordDefinition, throwError: scala.Boolean): scala.Boolean = js.native
   /**
     * Validate schema
     * @param {object|Boolean} schema schema to validate

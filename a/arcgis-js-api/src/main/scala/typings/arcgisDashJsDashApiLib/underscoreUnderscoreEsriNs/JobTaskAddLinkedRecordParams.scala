@@ -1,0 +1,29 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait JobTaskAddLinkedRecordParams
+  extends stdLib.Object {
+  /**
+    * The unique id of the job.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-JobTask.html#addLinkedRecord)
+    */
+  var jobId: scala.Double
+  /**
+    * The name of the table to which the record will be added.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-JobTask.html#addLinkedRecord)
+    */
+  var tableName: java.lang.String
+  /**
+    * The user name of the user who is requesting the change.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-JobTask.html#addLinkedRecord)
+    */
+  var user: java.lang.String
+}
+

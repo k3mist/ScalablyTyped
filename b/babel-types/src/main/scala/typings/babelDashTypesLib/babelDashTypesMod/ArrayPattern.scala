@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayPattern extends Node {
+trait ArrayPattern
+  extends Node
+     with LVal
+     with Pattern {
   var elements: js.Array[Expression]
   var typeAnnotation: js.UndefOr[TypeAnnotation] = js.undefined
   @JSName("type")

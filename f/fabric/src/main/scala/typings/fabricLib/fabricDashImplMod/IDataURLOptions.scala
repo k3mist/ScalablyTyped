@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 ///////////////////////////////////////////////////////////////////////////////
-// Data Object Interfaces - These intrface are not specific part of fabric,
+// Data Object Interfaces - These interface are not specific part of fabric,
 // They are just helpful for for defining function parameters
 //////////////////////////////////////////////////////////////////////////////
 trait IDataURLOptions extends js.Object {
+  var enableRetinaScaling: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * The format of the output image. Either "jpeg" or "png"
   	 */
@@ -38,5 +39,7 @@ trait IDataURLOptions extends js.Object {
   	 * Cropping width. Introduced in v1.2.14
   	 */
   var width: js.UndefOr[scala.Double] = js.undefined
+  var withoutShadow: js.UndefOr[scala.Boolean] = js.undefined
+  var withoutTransform: js.UndefOr[scala.Boolean] = js.undefined
 }
 

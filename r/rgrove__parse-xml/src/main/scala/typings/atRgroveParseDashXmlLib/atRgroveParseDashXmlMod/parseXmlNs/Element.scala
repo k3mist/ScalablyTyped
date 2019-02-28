@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Element extends NodeBase {
+trait Element
+  extends NodeBase
+     with Node {
   var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var children: js.Array[NodeBase]
   var name: java.lang.String

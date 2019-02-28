@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UnknownPriceTransactionInfo extends BaseTransactionInfo {
+trait UnknownPriceTransactionInfo
+  extends BaseTransactionInfo
+     with TransactionInfo {
   @JSName("totalPriceStatus")
   var totalPriceStatus_UnknownPriceTransactionInfo: googlepayLib.googlepayLibStrings.NOT_CURRENTLY_KNOWN
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DateFilter extends js.Object {
+trait DateFilter extends _Filter {
   /**
   	 * Date filter comparators
   	 */

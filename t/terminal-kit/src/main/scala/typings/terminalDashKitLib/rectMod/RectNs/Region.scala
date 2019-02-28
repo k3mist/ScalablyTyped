@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Region extends js.Object {
+trait Region extends Options {
   var xmax: scala.Double
   var xmin: scala.Double
   var ymax: scala.Double

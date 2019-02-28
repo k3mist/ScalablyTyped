@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TermBiblioEntry extends BiblioEntryBase {
+trait TermBiblioEntry
+  extends BiblioEntryBase
+     with BiblioEntry {
   @JSName("refId")
   var refId_TermBiblioEntry: java.lang.String
   @JSName("term")

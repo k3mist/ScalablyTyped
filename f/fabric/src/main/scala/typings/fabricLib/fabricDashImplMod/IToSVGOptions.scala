@@ -11,6 +11,10 @@ trait IToSVGOptions extends js.Object {
   	 */
   var encoding: java.lang.String
   /**
+  	 * desired height of svg with or without units
+  	 */
+  var height: scala.Double
+  /**
   	 * If true xml tag is not included
   	 */
   var suppressPreamble: scala.Boolean
@@ -18,5 +22,9 @@ trait IToSVGOptions extends js.Object {
   	 * SVG viewbox object
   	 */
   var viewBox: IViewBox
+  /**
+  	 * desired width of svg with or without units
+  	 */
+  var width: scala.Double
 }
 

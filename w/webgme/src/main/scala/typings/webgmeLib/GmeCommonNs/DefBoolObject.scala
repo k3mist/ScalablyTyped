@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefBoolObject extends js.Object {
+trait DefBoolObject extends DefObject {
   var `type`: webgmeLib.webgmeLibStrings.boolean
 }
 

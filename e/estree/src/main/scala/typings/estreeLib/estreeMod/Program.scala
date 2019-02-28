@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Program extends BaseNode {
+trait Program
+  extends BaseNode
+     with _Node {
   var body: js.Array[Statement | ModuleDeclaration]
   var comments: js.UndefOr[js.Array[Comment]] = js.undefined
   var sourceType: estreeLib.estreeLibStrings.script | estreeLib.estreeLibStrings.module

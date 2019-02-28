@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapResult extends js.Object {
   var history: historyLib.historyMod.History[historyLib.historyMod.LocationState]
   var output: js.Any

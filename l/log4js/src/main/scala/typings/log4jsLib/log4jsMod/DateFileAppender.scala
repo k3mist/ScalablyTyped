@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DateFileAppender extends js.Object {
+trait DateFileAppender extends Appender {
   // include the pattern in the name of the current log file as well as the backups.(default false)
   var alwaysIncludePattern: js.UndefOr[scala.Boolean] = js.undefined
   // compress the backup files during rolling (backup files will have .gz extension)(default false)

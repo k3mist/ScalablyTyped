@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TeamsRequestObject extends js.Object {
+trait TeamsRequestObject extends RequestObject {
   var city: js.UndefOr[StringRequest] = js.undefined
   var country: js.UndefOr[StringRequest] = js.undefined
   var grade: js.UndefOr[StringRequest] = js.undefined

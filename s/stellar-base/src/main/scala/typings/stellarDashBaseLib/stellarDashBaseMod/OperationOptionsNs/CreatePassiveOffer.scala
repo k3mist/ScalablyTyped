@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CreatePassiveOffer extends BaseOptions {
+trait CreatePassiveOffer
+  extends BaseOptions
+     with stellarDashBaseLib.stellarDashBaseMod._OperationOptions {
   var amount: java.lang.String
   var buying: stellarDashBaseLib.stellarDashBaseMod.Asset
   var price: scala.Double | java.lang.String | js.Object

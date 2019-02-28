@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinaryExpression extends Node {
+trait BinaryExpression
+  extends Node
+     with Binary
+     with Expression {
   var left: Expression
   var operator: babelDashTypesLib.babelDashTypesLibStrings.`+` | babelDashTypesLib.babelDashTypesLibStrings.`-` | babelDashTypesLib.babelDashTypesLibStrings.`/` | babelDashTypesLib.babelDashTypesLibStrings.`%` | babelDashTypesLib.babelDashTypesLibStrings.`*` | babelDashTypesLib.babelDashTypesLibStrings.`**` | babelDashTypesLib.babelDashTypesLibStrings.`&` | babelDashTypesLib.babelDashTypesLibStrings.`|` | babelDashTypesLib.babelDashTypesLibStrings.`>>` | babelDashTypesLib.babelDashTypesLibStrings.`>>>` | babelDashTypesLib.babelDashTypesLibStrings.`<<` | babelDashTypesLib.babelDashTypesLibStrings.`^` | babelDashTypesLib.babelDashTypesLibStrings.`==` | babelDashTypesLib.babelDashTypesLibStrings.`===` | babelDashTypesLib.babelDashTypesLibStrings.`!=` | babelDashTypesLib.babelDashTypesLibStrings.`!==` | babelDashTypesLib.babelDashTypesLibStrings.in | babelDashTypesLib.babelDashTypesLibStrings.instanceof | babelDashTypesLib.babelDashTypesLibStrings.`>` | babelDashTypesLib.babelDashTypesLibStrings.`<` | babelDashTypesLib.babelDashTypesLibStrings.`>=` | babelDashTypesLib.babelDashTypesLibStrings.`<=`
   var right: Expression

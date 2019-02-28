@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SnippetSuggestion extends SuggestionBase {
+trait SnippetSuggestion
+  extends SuggestionBase
+     with AnySuggestion {
   /**
     *  A snippet string. This will allow users to tab through function arguments
     *  or other options.

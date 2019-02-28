@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoShapeTransform extends js.Object {
+trait GeoShapeTransform extends _Transform {
   var as: js.UndefOr[java.lang.String] = js.undefined
   var field: js.UndefOr[java.lang.String | TransformField] = js.undefined
   var pointRadius: js.UndefOr[

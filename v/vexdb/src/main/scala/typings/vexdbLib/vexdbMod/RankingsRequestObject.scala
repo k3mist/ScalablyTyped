@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RankingsRequestObject extends js.Object {
+trait RankingsRequestObject extends RequestObject {
   var ap: js.UndefOr[NumberRequest] = js.undefined
   var ccwm: js.UndefOr[NumberRequest] = js.undefined
   var division: js.UndefOr[StringRequest] = js.undefined

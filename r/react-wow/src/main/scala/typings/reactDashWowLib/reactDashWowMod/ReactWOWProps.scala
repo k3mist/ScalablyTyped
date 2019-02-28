@@ -15,7 +15,7 @@ trait ReactWOWProps extends js.Object {
     * Animation name.
     * @see https://daneden.github.io/animate.css/
     */
-  var animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ java.lang.String
+  var animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any
   /**
     * The callback is fired every time an animation is stoped.
     */

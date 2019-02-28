@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PseudoTtyChannelRequest extends js.Object {
+trait PseudoTtyChannelRequest extends ChannelRequest {
   var cols: scala.Double
   var height: scala.Double
   var modes: js.Any

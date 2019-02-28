@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Record of use of a device
   */
-trait DeviceUseStatement extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DeviceUseStatement extends DomainResource {
   /**
     * Contains extended information for property 'recordedOn'.
     */

@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ConnectionNameExclusions extends js.Object {
-  var connectionName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var connectionName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   var exclusions: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
-  var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 

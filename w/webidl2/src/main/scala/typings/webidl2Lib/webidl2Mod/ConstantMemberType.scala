@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConstantMemberType extends js.Object {
+trait ConstantMemberType extends IDLInterfaceMemberType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** An IDL Type of the constant that represents a simple type, the type name. */

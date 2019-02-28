@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Delete extends Parent {
+trait Delete
+  extends Parent
+     with StaticPhrasingContent {
   @JSName("children")
   var children_Delete: js.Array[PhrasingContent]
   @JSName("type")

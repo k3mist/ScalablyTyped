@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChoiceOption extends js.Object {
+trait ChoiceOption
+  extends inquirerLib.inquirerMod.inquirerNs._ChoiceType {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[java.lang.String | (js.Function1[/* answers */ js.Any, _])] = js.undefined
   var extra: js.UndefOr[js.Any] = js.undefined

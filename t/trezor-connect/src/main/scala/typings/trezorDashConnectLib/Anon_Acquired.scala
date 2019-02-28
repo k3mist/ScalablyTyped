@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Acquired extends js.Object {
+trait Anon_Acquired
+  extends trezorDashConnectLib.trezorDashConnectMod.Device {
   var features: trezorDashConnectLib.trezorDashConnectMod.Features
   var firmware: trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus
   var label: java.lang.String

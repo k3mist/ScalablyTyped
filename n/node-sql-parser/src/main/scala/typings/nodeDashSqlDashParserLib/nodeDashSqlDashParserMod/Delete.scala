@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Delete extends js.Object {
+trait Delete extends AST {
   var from: js.Array[From | Dual]
   var tables: js.Any
   var `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.delete

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Contains a collection of resources
   */
-trait Bundle extends ResourceBase {
+trait Bundle
+  extends ResourceBase
+     with Resource {
   /**
     * Contains extended information for property 'total'.
     */

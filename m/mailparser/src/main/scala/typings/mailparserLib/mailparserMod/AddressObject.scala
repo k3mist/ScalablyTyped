@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Address object.
   */
-trait AddressObject extends js.Object {
+trait AddressObject extends _HeaderValue {
   /**
   	 * A formatted address string for HTML context.
   	 */

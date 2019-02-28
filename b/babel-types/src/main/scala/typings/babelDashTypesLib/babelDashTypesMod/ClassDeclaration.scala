@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassDeclaration extends Node {
+trait ClassDeclaration
+  extends Node
+     with Class
+     with Declaration
+     with Pureish
+     with Scopable
+     with Statement {
   var body: ClassBody
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined
   var id: Identifier

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PathFinding extends js.Object {
-  var diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine
+  var diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any
   var instance: js.Any
   /**
     * Taking as argument a fully unblocked walking matrix, this method

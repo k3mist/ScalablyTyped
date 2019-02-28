@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Overrides extends js.Object {
+trait Overrides extends Options {
   var actions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   var delimiters: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var hosts: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

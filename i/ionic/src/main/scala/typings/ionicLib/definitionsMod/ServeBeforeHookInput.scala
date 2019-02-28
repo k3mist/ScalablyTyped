@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ServeBeforeHookInput extends js.Object {
+trait ServeBeforeHookInput extends HookInput {
   val name: ionicLib.ionicLibStrings.`serve:before`
   val serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions
 }

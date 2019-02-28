@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EnumTypeExtensionNode extends js.Object {
+trait EnumTypeExtensionNode
+  extends TypeExtensionNode
+     with ASTNode {
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined
   val kind: graphqlLib.graphqlLibStrings.EnumTypeExtension
   val loc: js.UndefOr[Location] = js.undefined

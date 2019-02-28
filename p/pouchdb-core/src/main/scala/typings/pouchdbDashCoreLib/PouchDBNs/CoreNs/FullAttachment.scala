@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Full attachments are used to create new attachments or returned when the attachments option
   * is true.
   */
-trait FullAttachment extends js.Object {
+trait FullAttachment extends Attachment {
   /**
     * Mime type of the attachment
     */

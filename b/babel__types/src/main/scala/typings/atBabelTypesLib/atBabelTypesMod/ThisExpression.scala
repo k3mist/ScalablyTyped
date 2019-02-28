@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ThisExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ThisExpression
+  extends Expression
+     with BaseNode {
   @JSName("type")
   var type_ThisExpression: atBabelTypesLib.atBabelTypesLibStrings.ThisExpression
 }

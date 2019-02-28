@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BooleanMapping extends js.Object {
+trait BooleanMapping extends Mapping {
   var strict: scala.Boolean
   var `type`: envDashToDashObjectLib.envDashToDashObjectLibStrings.boolean
 }

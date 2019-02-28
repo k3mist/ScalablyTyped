@@ -82,7 +82,8 @@ object grommetLibStrings {
   sealed trait around extends js.Object
   
   @js.native
-  sealed trait assertive extends js.Object
+  sealed trait assertive
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait auto extends js.Object
@@ -250,16 +251,14 @@ object grommetLibStrings {
   sealed trait minutes extends js.Object
   
   @js.native
-  sealed trait `no-repeat` extends js.Object
-  
-  @js.native
   sealed trait none extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait onSelect extends js.Object
@@ -271,7 +270,8 @@ object grommetLibStrings {
   sealed trait over extends js.Object
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait polite
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait pulse extends js.Object
@@ -281,9 +281,6 @@ object grommetLibStrings {
   
   @js.native
   sealed trait rectilinear extends js.Object
-  
-  @js.native
-  sealed trait repeat extends js.Object
   
   @js.native
   sealed trait replace extends js.Object
@@ -311,9 +308,6 @@ object grommetLibStrings {
   
   @js.native
   sealed trait shrink extends js.Object
-  
-  @js.native
-  sealed trait size extends js.Object
   
   @js.native
   sealed trait slideDown extends js.Object
@@ -550,8 +544,6 @@ object grommetLibStrings {
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   @scala.inline
-  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
-  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
@@ -572,8 +564,6 @@ object grommetLibStrings {
   @scala.inline
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
   @scala.inline
-  def repeat: repeat = "repeat".asInstanceOf[repeat]
-  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
@@ -591,8 +581,6 @@ object grommetLibStrings {
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
   @scala.inline
   def slideDown: slideDown = "slideDown".asInstanceOf[slideDown]
   @scala.inline

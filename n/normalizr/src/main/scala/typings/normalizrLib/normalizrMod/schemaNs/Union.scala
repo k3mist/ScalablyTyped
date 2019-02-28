@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Union extends js.Object {
+trait Union
+  extends normalizrLib.normalizrMod._Schema {
   def define(definition: normalizrLib.normalizrMod.Schema): scala.Unit
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait DmgOptions extends js.Object {
+trait DmgOptions
+  extends appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   /**
     * The path to background image (default: `build/background.tiff` or `build/background.png` if exists). The resolution of this file determines the resolution of the installer window.
     * If background is not specified, use `window.size`. Default locations expected background size to be 540x380.

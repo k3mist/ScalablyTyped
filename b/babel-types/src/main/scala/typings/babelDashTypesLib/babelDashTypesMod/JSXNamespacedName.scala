@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXNamespacedName extends Node {
+trait JSXNamespacedName
+  extends Node
+     with JSX {
   var name: JSXIdentifier
   var namespace: JSXIdentifier
   @JSName("type")

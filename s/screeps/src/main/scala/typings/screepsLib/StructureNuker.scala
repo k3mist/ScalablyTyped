@@ -12,7 +12,9 @@ import scala.scalajs.js.annotation._
   * until it is landed. Incoming nuke cannot be moved or cancelled. Nukes cannot
   * be launched from or to novice rooms.
   */
-trait StructureNuker extends OwnedStructure[STRUCTURE_NUKER] {
+trait StructureNuker
+  extends OwnedStructure[STRUCTURE_NUKER]
+     with AnyOwnedStructure {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */

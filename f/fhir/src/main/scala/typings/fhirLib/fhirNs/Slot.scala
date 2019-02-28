@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A slot of time on a schedule that may be available for booking appointments
   */
-trait Slot extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Slot extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */

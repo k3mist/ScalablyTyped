@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICreateElementTreeDelta extends IDelta {
+trait ICreateElementTreeDelta
+  extends IDelta
+     with Delta {
   /**
     * Index where the element should be created. Only for listy properties.
     */

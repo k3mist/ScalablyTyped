@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultValueDefinition extends js.Object {
+trait DefaultValueDefinition extends _StructuralObjectValue {
   var identityFieldsValues: js.UndefOr[
     js.Array[
       powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQConstantExpr

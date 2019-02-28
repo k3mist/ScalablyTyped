@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A task to be performed
   */
-trait Task extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Task extends DomainResource {
   /**
     * Contains extended information for property 'authoredOn'.
     */

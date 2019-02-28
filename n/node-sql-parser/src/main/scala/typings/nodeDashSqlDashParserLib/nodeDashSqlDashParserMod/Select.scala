@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Select extends js.Object {
+trait Select extends AST {
   var columns: js.Array[_] | nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.`*`
   var distinct: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.DISTINCT | scala.Null
   var from: (js.Array[From | Dual]) | scala.Null

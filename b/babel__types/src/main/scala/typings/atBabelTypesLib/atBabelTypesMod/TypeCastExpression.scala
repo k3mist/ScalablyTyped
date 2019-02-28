@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeCastExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TypeCastExpression
+  extends Expression
+     with BaseNode
+     with ExpressionWrapper
+     with Flow {
   var expression: Expression
   var typeAnnotation: TypeAnnotation
   @JSName("type")

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CountryResponse extends js.Object {
+trait CountryResponse extends Response {
   val continent: js.UndefOr[ContinentRecord] = js.undefined
   val country: js.UndefOr[CountryRecord] = js.undefined
   val registered_country: js.UndefOr[RegisteredCountryRecord] = js.undefined

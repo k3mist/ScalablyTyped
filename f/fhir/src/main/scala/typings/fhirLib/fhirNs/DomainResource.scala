@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * A resource with narrative, extensions, and contained resources
   */
-trait DomainResource extends ResourceBase {
+trait DomainResource
+  extends ResourceBase
+     with Resource {
   /**
     * Contained, inline Resources
     */

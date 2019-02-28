@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat room message removed
 		*/
-trait ChatRoomMessageRemoved extends js.Object {
+trait ChatRoomMessageRemoved
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/

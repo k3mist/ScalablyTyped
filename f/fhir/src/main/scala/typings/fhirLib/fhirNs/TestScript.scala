@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Describes a set of tests
   */
-trait TestScript extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait TestScript extends DomainResource {
   /**
     * Contains extended information for property 'copyright'.
     */

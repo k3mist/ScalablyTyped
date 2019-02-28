@@ -5,7 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassDeclaration extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ClassDeclaration
+  extends Class
+     with BaseNode
+     with Declaration
+     with Pureish
+     with Scopable
+     with Statement {
   var `abstract`: scala.Boolean | scala.Null
   var body: ClassBody
   var declare: scala.Boolean | scala.Null

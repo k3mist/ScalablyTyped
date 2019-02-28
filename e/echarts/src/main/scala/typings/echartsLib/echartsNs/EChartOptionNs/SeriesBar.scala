@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar
   */
-trait SeriesBar extends js.Object {
+trait SeriesBar extends Series {
   /**
     * Whether to enable animation.
     *

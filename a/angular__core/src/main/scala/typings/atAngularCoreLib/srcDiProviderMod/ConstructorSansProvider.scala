@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConstructorSansProvider extends js.Object {
+trait ConstructorSansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * A list of `token`s which need to be resolved by the injector. The list of values is then
     * used as arguments to the `useClass` constructor.

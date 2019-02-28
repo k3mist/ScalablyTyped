@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectTypeAnnotation extends Node {
+trait ObjectTypeAnnotation
+  extends Node
+     with Flow
+     with FlowTypeAnnotation {
   var callProperties: js.Array[ObjectTypeCallProperty]
   var indexers: js.Array[ObjectTypeIndexer]
   var properties: js.Array[ObjectTypeProperty]

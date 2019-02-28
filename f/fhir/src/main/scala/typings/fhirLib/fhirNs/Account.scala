@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Tracks balance, charges, for patient or cost center
   */
-trait Account extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Account extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */

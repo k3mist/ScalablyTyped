@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VoidTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait VoidTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowBaseAnnotation
+     with FlowType {
   @JSName("type")
   var type_VoidTypeAnnotation: atBabelTypesLib.atBabelTypesLibStrings.VoidTypeAnnotation
 }

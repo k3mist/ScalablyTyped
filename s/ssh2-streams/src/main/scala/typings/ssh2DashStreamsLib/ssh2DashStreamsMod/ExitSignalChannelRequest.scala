@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExitSignalChannelRequest extends js.Object {
+trait ExitSignalChannelRequest extends ChannelRequest {
   var coredump: scala.Boolean
   var description: java.lang.String
   var recipient: scala.Double

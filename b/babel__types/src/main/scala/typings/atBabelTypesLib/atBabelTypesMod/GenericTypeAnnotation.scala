@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GenericTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait GenericTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowType {
   var id: Identifier | QualifiedTypeIdentifier
   var typeParameters: TypeParameterInstantiation | scala.Null
   @JSName("type")

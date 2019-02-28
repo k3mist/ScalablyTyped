@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InsertDeleteOperation extends js.Object {
+trait InsertDeleteOperation extends UpdateOperation {
   var delete: js.UndefOr[js.Array[Quads]] = js.undefined
   var graph: js.UndefOr[java.lang.String] = js.undefined
   var insert: js.UndefOr[js.Array[Quads]] = js.undefined

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinearGradient extends js.Object {
+trait LinearGradient extends _Color {
   var left: Vector
   var right: Vector
   var spread: java.lang.String

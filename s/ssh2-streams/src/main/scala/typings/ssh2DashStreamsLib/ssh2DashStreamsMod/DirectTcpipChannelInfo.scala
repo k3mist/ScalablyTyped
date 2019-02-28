@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DirectTcpipChannelInfo extends js.Object {
+trait DirectTcpipChannelInfo extends ChannelOpenInfo {
   var data: TcpipChannelData
   var packetSize: scala.Double
   var sender: scala.Double

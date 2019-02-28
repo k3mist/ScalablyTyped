@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExportNamespaceSpecifier extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ExportNamespaceSpecifier
+  extends ModuleSpecifier
+     with BaseNode {
   var exported: Identifier
   @JSName("type")
   var type_ExportNamespaceSpecifier: atBabelTypesLib.atBabelTypesLibStrings.ExportNamespaceSpecifier

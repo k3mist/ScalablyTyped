@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A statement of system capabilities
   */
-trait CapabilityStatement extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CapabilityStatement extends DomainResource {
   /**
     * Contains extended information for property 'acceptUnknown'.
     */

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DoWhileStatement extends BaseASTNode {
+trait DoWhileStatement
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_DoWhileStatement: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.DoWhileStatement
 }

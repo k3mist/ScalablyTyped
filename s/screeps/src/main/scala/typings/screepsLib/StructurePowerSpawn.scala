@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Non-player structure. Contains power resource which can be obtained by
   * destroying the structure. Hits the attacker creep back on each attack.
   */
-trait StructurePowerSpawn extends OwnedStructure[STRUCTURE_POWER_SPAWN] {
+trait StructurePowerSpawn
+  extends OwnedStructure[STRUCTURE_POWER_SPAWN]
+     with AnyOwnedStructure {
   /**
     * The amount of energy containing in this structure.
     */

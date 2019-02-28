@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-apollo", "Mutation")
 @js.native
 class Mutation[TData, TVariables] protected ()
-  extends reactDashApolloLib.mutationMod.default[TData, TVariables] {
+  extends reactDashApolloLib.mutationMod.Mutation[TData, TVariables] {
   def this(props: reactDashApolloLib.mutationMod.MutationProps[TData, TVariables], context: js.Any) = this()
 }
 

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AwaitExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait AwaitExpression
+  extends Expression
+     with BaseNode
+     with Terminatorless {
   var argument: Expression
   @JSName("type")
   var type_AwaitExpression: atBabelTypesLib.atBabelTypesLibStrings.AwaitExpression

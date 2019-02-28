@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSParameterProperty extends Node {
+trait TSParameterProperty
+  extends Node
+     with LVal {
   var accessibility: babelDashTypesLib.babelDashTypesLibStrings.public | babelDashTypesLib.babelDashTypesLibStrings.`private` | babelDashTypesLib.babelDashTypesLibStrings.`protected` | scala.Null
   var parameter: Identifier | AssignmentPattern
   var readonly: scala.Boolean | scala.Null

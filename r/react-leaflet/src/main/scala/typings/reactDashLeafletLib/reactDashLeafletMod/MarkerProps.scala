@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MarkerProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashLeafletLib.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait MarkerProps
   extends leafletLib.leafletMod.MarkerOptions
      with MarkerEvents {
   var children: js.UndefOr[Children] = js.undefined

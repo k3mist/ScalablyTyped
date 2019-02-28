@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/random
   */
-trait RandomLayoutOptions
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait RandomLayoutOptions
   extends BaseLayoutOptions
      with AnimatedLayoutOptions {
   // constrain layout bounds

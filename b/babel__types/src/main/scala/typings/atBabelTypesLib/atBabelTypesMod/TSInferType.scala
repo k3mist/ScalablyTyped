@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSInferType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSInferType
+  extends TSType
+     with BaseNode {
   var typeParameter: TSTypeParameter
   @JSName("type")
   var type_TSInferType: atBabelTypesLib.atBabelTypesLibStrings.TSInferType

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when there is a new incoming call to current user
 		*/
-trait IncomingCall extends js.Object {
+trait IncomingCall
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantEvent {
   /**
   			*	Incoming call instance. See VoxImplant.Call for details
   			*/

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Who, What, When for a set of resources
   */
-trait Provenance extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Provenance extends DomainResource {
   /**
     * Contains extended information for property 'policy'.
     */

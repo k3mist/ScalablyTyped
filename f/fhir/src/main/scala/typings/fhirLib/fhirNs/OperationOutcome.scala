@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Information about the success/failure of an action
   */
-trait OperationOutcome extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait OperationOutcome extends DomainResource {
   /**
     * A single issue associated with the action
     */

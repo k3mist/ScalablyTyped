@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "asyncblock"
-version := "2.2.12-cd6142"
+version := "2.2.12-684628"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "asyncblock-generators" % "2.2.12-6911eb",
-  "org.scalablytyped" %%% "esprima" % "4.0-dt-20180501Z-9084f3",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180417Z-2db6a8",
-  "org.scalablytyped" %%% "fibers" % "0.0-unknown-dt-20180214Z-d00280",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "asyncblock-generators" % "2.2.12-108440",
+  "org.scalablytyped" %%% "esprima" % "4.0-dt-20180501Z-b7f0b8",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180417Z-87c1b5",
+  "org.scalablytyped" %%% "fibers" % "0.0-unknown-dt-20180214Z-cfbd71",
+  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

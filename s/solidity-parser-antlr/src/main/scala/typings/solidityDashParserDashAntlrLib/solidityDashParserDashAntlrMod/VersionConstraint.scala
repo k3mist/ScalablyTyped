@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VersionConstraint extends BaseASTNode {
+trait VersionConstraint
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_VersionConstraint: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.VersionConstraint
 }

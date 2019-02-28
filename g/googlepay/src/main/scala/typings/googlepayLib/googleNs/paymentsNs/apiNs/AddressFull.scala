@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AddressFull extends AddressMin {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- googlepayLib.googleNs.paymentsNs.apiNs.Address because Already inherited */ trait AddressFull extends AddressMin {
   var address1: java.lang.String
   var address2: java.lang.String
   var address3: java.lang.String

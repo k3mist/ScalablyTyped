@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PathPayment extends BaseOptions {
+trait PathPayment
+  extends BaseOptions
+     with stellarDashBaseLib.stellarDashBaseMod._OperationOptions {
   var destAmount: java.lang.String
   var destAsset: stellarDashBaseLib.stellarDashBaseMod.Asset
   var destination: java.lang.String

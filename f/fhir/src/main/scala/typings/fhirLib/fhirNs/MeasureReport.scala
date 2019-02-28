@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Results of a measure evaluation
   */
-trait MeasureReport extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait MeasureReport extends DomainResource {
   /**
     * Contains extended information for property 'date'.
     */

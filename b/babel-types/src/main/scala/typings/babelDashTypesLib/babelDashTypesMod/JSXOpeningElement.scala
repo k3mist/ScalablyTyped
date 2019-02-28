@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXOpeningElement extends Node {
+trait JSXOpeningElement
+  extends Node
+     with Immutable
+     with JSX {
   var attributes: js.Array[JSXAttribute]
   var name: JSXIdentifier | JSXMemberExpression
   var selfClosing: scala.Boolean

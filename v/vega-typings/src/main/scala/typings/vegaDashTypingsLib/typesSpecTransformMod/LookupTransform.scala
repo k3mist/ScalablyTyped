@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LookupTransform extends js.Object {
+trait LookupTransform extends _Transform {
   var as: js.UndefOr[
     (js.Array[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ] = js.undefined

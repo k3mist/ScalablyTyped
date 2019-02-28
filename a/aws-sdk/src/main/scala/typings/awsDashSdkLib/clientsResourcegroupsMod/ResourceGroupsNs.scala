@@ -494,14 +494,14 @@ object ResourceGroupsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SearchResourcesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
+      * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
       */
     def tag(): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tag(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ TagOutput, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
+      * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
       */
     def tag(params: TagInput): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tag(
@@ -629,6 +629,12 @@ object ResourceGroupsNs extends js.Object {
     var GroupQuery: js.UndefOr[GroupQuery] = js.undefined
   }
   
+  trait _QueryErrorCode extends js.Object
+  
+  trait _QueryType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type GroupArn = java.lang.String
@@ -643,10 +649,10 @@ object ResourceGroupsNs extends js.Object {
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type Query = java.lang.String
-  type QueryErrorCode = awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_NOT_EXISTING | java.lang.String
+  type QueryErrorCode = _QueryErrorCode | java.lang.String
   type QueryErrorList = js.Array[QueryError]
   type QueryErrorMessage = java.lang.String
-  type QueryType = awsDashSdkLib.awsDashSdkLibStrings.TAG_FILTERS_1_0 | awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_1_0 | java.lang.String
+  type QueryType = _QueryType | java.lang.String
   type ResourceArn = java.lang.String
   type ResourceFilterList = js.Array[ResourceFilter]
   type ResourceFilterName = awsDashSdkLib.awsDashSdkLibStrings.`resource-type` | java.lang.String
@@ -657,6 +663,6 @@ object ResourceGroupsNs extends js.Object {
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-27` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_AndroidImplementationDidJustFinish extends js.Object {
+trait Anon_AndroidImplementationDidJustFinish
+  extends expoLib.expoMod.PlaybackStatus {
   var androidImplementation: js.UndefOr[java.lang.String] = js.undefined
   /** True exactly once when the track plays to finish. */
   var didJustFinish: scala.Boolean

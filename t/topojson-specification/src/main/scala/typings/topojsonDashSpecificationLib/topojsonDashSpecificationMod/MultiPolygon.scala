@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiPolygon[P /* <: Properties */] extends GeometryObjectA[P] {
+trait MultiPolygon[P /* <: Properties */]
+  extends GeometryObjectA[P]
+     with GeometryObject[P] {
   var arcs: js.Array[js.Array[ArcIndexes]]
   @JSName("type")
   var type_MultiPolygon: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.MultiPolygon

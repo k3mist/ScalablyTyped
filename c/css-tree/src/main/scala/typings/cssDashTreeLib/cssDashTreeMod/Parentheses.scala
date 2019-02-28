@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Parentheses extends CssNodeCommon {
+trait Parentheses
+  extends CssNodeCommon
+     with CssNode {
   var children: List[CssNode]
   @JSName("type")
   var type_Parentheses: cssDashTreeLib.cssDashTreeLibStrings.Parentheses

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_AppType extends js.Object {
+trait Anon_AppType
+  extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus {
   var appType: js.UndefOr[
     mendixmodelsdkLib.mendixmodelsdkLibStrings.Licensed | mendixmodelsdkLib.mendixmodelsdkLibStrings.Unlicensed | mendixmodelsdkLib.mendixmodelsdkLibStrings.Sandbox
   ] = js.undefined

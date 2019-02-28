@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when roster item presence update happened
 		*/
-trait RosterPresenceUpdate extends js.Object {
+trait RosterPresenceUpdate
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User id
   			*/

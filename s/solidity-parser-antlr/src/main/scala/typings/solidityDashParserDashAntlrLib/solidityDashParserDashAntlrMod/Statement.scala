@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Statement extends BaseASTNode {
+trait Statement
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_Statement: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.Statement
 }

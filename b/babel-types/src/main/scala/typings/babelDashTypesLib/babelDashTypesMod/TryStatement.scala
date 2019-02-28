@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TryStatement extends Node {
+trait TryStatement
+  extends Node
+     with Statement {
   var block: BlockStatement
   var finalizer: BlockStatement
   var handler: CatchClause

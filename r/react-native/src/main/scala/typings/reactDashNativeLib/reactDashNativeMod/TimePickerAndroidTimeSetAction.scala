@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimePickerAndroidTimeSetAction extends js.Object {
+trait TimePickerAndroidTimeSetAction extends TimePickerAndroidOpenReturn {
   var action: reactDashNativeLib.reactDashNativeLibStrings.timeSetAction
   var hour: scala.Double
   var minute: scala.Double

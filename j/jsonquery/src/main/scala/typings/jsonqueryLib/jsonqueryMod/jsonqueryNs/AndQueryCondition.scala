@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AndQueryCondition[T] extends js.Object {
+trait AndQueryCondition[T] extends BinaryQueryCondition[T] {
   @JSName("$and")
   var $and: js.Array[Query[T]]
 }

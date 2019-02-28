@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__core"
-version := "3.13.0-98acd8"
+version := "3.13.0-a46a4f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "blueprintjs__icons" % "3.6.0-6a864c",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-df7a56",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-d29593",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-48a94a",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-be5ab9",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-2359a8",
-  "org.scalablytyped" %%% "react-popper" % "1.3.3-8ff65f",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-b59ab5",
-  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-d5f303",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-6ba63e")
+  "org.scalablytyped" %%% "blueprintjs__icons" % "3.6.0-60dcab",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-f47f75",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-53a7ac",
+  "org.scalablytyped" %%% "csstype" % "2.6.2-b36da9",
+  "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-90d8e2",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-9b48fa",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-2dba91",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f6f25d",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-6fcd2f",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-6749e4",
+  "org.scalablytyped" %%% "react-popper" % "1.3.3-1b104e",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-7b9f9e",
+  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-50a124",
+  "org.scalablytyped" %%% "std" % "3.3-73c9dd",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-ca2588",
+  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-f7e721")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KeyFrames extends Node {
+trait KeyFrames
+  extends Node
+     with AtRule {
   /** Array of nodes with the types keyframe and comment. */
   var keyframes: js.UndefOr[js.Array[KeyFrame | Comment]] = js.undefined
   /** The name of the keyframes rule. */

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VersionOperator extends BaseASTNode {
+trait VersionOperator
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_VersionOperator: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.VersionOperator
 }

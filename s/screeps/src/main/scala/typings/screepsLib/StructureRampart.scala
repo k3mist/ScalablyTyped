@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Blocks movement of hostile creeps, and defends your creeps and structures on
   * the same tile. Can be used as a controllable gate.
   */
-trait StructureRampart extends OwnedStructure[STRUCTURE_RAMPART] {
+trait StructureRampart
+  extends OwnedStructure[STRUCTURE_RAMPART]
+     with AnyOwnedStructure {
   /**
     * If false (default), only your creeps can step on the same square. If true, any hostile creeps can pass through.
     */

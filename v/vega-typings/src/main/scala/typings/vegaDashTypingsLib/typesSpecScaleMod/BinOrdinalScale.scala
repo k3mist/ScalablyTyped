@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinOrdinalScale extends BaseScale {
-  var bins: js.UndefOr[ScaleBins] = js.undefined
+trait BinOrdinalScale
+  extends BaseScale
+     with Scale {
   var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   var range: js.UndefOr[RangeScheme | ScaleData] = js.undefined
   @JSName("type")

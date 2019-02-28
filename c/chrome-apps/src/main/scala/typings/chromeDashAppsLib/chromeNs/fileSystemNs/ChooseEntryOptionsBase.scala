@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChooseEntryOptionsBase extends js.Object {
+trait ChooseEntryOptionsBase extends ChooseEntryOptions {
   /**
     * The optional list of accept options for this file opener.
     * Each option will be presented as a unique group to the end-user.

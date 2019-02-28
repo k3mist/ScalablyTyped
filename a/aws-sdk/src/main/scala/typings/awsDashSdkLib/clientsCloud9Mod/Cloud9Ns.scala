@@ -177,10 +177,6 @@ object Cloud9Ns extends js.Object {
       */
     var id: js.UndefOr[EnvironmentId] = js.undefined
     /**
-      * The state of the environment in its creation or deletion lifecycle.
-      */
-    var lifecycle: js.UndefOr[EnvironmentLifecycle] = js.undefined
-    /**
       * The name of the environment.
       */
     var name: js.UndefOr[EnvironmentName] = js.undefined
@@ -192,21 +188,6 @@ object Cloud9Ns extends js.Object {
       * The type of environment. Valid values include the following:    ec2: An Amazon Elastic Compute Cloud (Amazon EC2) instance connects to the environment.    ssh: Your own server connects to the environment.  
       */
     var `type`: js.UndefOr[EnvironmentType] = js.undefined
-  }
-  
-  trait EnvironmentLifecycle extends js.Object {
-    /**
-      * If the environment failed to delete, the Amazon Resource Name (ARN) of the related AWS resource.
-      */
-    var failureResource: js.UndefOr[String] = js.undefined
-    /**
-      * Any informational message about the lifecycle state of the environment.
-      */
-    var reason: js.UndefOr[String] = js.undefined
-    /**
-      * The current creation or deletion lifecycle state of the environment.    CREATED: The environment was successfully created.    DELETE_FAILED: The environment failed to delete.    DELETING: The environment is in the process of being deleted.  
-      */
-    var status: js.UndefOr[EnvironmentLifecycleStatus] = js.undefined
   }
   
   trait EnvironmentMember extends js.Object {
@@ -530,6 +511,16 @@ object Cloud9Ns extends js.Object {
   
   trait UpdateEnvironmentResult extends js.Object
   
+  trait _EnvironmentStatus extends js.Object
+  
+  trait _EnvironmentType extends js.Object
+  
+  trait _MemberPermissions extends js.Object
+  
+  trait _Permissions extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AutomaticStopTimeMinutes = scala.Double
   type BoundedEnvironmentIdList = js.Array[EnvironmentId]
@@ -538,21 +529,20 @@ object Cloud9Ns extends js.Object {
   type EnvironmentDescription = java.lang.String
   type EnvironmentId = java.lang.String
   type EnvironmentIdList = js.Array[EnvironmentId]
-  type EnvironmentLifecycleStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED | java.lang.String
   type EnvironmentList = js.Array[Environment]
   type EnvironmentMembersList = js.Array[EnvironmentMember]
   type EnvironmentName = java.lang.String
-  type EnvironmentStatus = awsDashSdkLib.awsDashSdkLibStrings.error | awsDashSdkLib.awsDashSdkLibStrings.creating | awsDashSdkLib.awsDashSdkLibStrings.connecting | awsDashSdkLib.awsDashSdkLibStrings.ready | awsDashSdkLib.awsDashSdkLibStrings.stopping | awsDashSdkLib.awsDashSdkLibStrings.stopped | awsDashSdkLib.awsDashSdkLibStrings.deleting | java.lang.String
-  type EnvironmentType = awsDashSdkLib.awsDashSdkLibStrings.ssh | awsDashSdkLib.awsDashSdkLibStrings.ec2 | java.lang.String
+  type EnvironmentStatus = _EnvironmentStatus | java.lang.String
+  type EnvironmentType = _EnvironmentType | java.lang.String
   type InstanceType = java.lang.String
   type MaxResults = scala.Double
-  type MemberPermissions = awsDashSdkLib.awsDashSdkLibStrings.`read-write` | awsDashSdkLib.awsDashSdkLibStrings.`read-only` | java.lang.String
-  type Permissions = awsDashSdkLib.awsDashSdkLibStrings.owner | awsDashSdkLib.awsDashSdkLibStrings.`read-write` | awsDashSdkLib.awsDashSdkLibStrings.`read-only` | java.lang.String
+  type MemberPermissions = _MemberPermissions | java.lang.String
+  type Permissions = _Permissions | java.lang.String
   type PermissionsList = js.Array[Permissions]
   type String = java.lang.String
   type SubnetId = java.lang.String
   type Timestamp = stdLib.Date
   type UserArn = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-23` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

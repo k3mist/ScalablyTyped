@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Ordering of medication for patient or group
   */
-trait MedicationRequest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait MedicationRequest extends DomainResource {
   /**
     * Contains extended information for property 'authoredOn'.
     */

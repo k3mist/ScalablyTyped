@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LineString extends GeoJsonObject {
+trait LineString
+  extends GeoJsonObject
+     with Geometry {
   var coordinates: js.Array[Position]
   @JSName("type")
   var type_LineString: geojsonLib.geojsonLibStrings.LineString

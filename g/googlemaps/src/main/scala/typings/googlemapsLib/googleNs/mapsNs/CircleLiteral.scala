@@ -5,5 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CircleLiteral extends CircleOptions
+trait CircleLiteral
+  extends CircleOptions
+     with googlemapsLib.googleNs.mapsNs.placesNs._LocationBias
 

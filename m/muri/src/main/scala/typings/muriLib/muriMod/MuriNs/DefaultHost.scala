@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultHost extends js.Object {
+trait DefaultHost extends Host {
   var host: java.lang.String
   var port: scala.Double
 }

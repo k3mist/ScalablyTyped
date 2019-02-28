@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Allowedextensions extends js.Object {
+trait Anon_Allowedextensions
+  extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.NativeManifest {
   var allowed_extensions: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID]
   var description: java.lang.String
   var name: java.lang.String

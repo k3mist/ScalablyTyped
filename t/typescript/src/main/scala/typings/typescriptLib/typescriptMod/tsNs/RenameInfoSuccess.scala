@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RenameInfoSuccess extends js.Object {
+trait RenameInfoSuccess extends RenameInfo {
   var canRename: typescriptLib.typescriptLibNumbers.`true`
   var displayName: java.lang.String
   /**

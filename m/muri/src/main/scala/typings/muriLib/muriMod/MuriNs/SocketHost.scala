@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SocketHost extends js.Object {
+trait SocketHost extends Host {
   var ipc: java.lang.String
 }
 

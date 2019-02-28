@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait AfterFinallyFlow
   extends FlowNodeBase
-     with FlowLock {
+     with FlowLock
+     with FlowNode {
   var antecedent: FlowNode
 }
 

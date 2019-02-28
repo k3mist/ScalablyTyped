@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinaryOperation extends BaseASTNode {
+trait BinaryOperation
+  extends BaseASTNode
+     with ASTNode {
   var left: ASTNode
   var operator: BinOp
   var right: ASTNode

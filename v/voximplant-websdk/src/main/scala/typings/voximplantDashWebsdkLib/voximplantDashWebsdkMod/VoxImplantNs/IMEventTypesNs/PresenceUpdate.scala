@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when self presence updated
 		*/
-trait PresenceUpdate extends js.Object {
+trait PresenceUpdate
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/

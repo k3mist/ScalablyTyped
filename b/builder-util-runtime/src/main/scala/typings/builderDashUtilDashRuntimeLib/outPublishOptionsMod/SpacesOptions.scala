@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SpacesOptions extends BaseS3Options {
+trait SpacesOptions
+  extends BaseS3Options
+     with _AllPublishOptions {
   /**
     * The space name.
     */

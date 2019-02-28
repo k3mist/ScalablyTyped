@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IntrospectionInputObjectType extends js.Object {
+trait IntrospectionInputObjectType
+  extends IntrospectionInputType
+     with IntrospectionType {
   val description: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]] = js.undefined
   val inputFields: js.Array[IntrospectionInputValue]
   val kind: graphqlLib.graphqlLibStrings.INPUT_OBJECT

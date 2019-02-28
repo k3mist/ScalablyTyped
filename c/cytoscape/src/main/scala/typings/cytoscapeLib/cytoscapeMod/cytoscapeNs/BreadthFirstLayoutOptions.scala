@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/breadthfirst
   */
-trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
   // put depths in concentric circles if true, put depths top down if false
   var circle: scala.Boolean
   // whether the tree is directed downwards (or edges can point in any direction if false)

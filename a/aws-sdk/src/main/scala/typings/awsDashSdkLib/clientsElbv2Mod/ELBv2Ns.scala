@@ -125,9 +125,9 @@ object ELBv2Ns extends js.Object {
       */
     var ClientId: AuthenticateOidcActionClientId
     /**
-      * The OAuth 2.0 client secret. This parameter is required if you are creating a rule. If you are modifying a rule, you can omit this parameter if you set UseExistingClientSecret to true.
+      * The OAuth 2.0 client secret.
       */
-    var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.undefined
+    var ClientSecret: AuthenticateOidcActionClientSecret
     /**
       * The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
@@ -152,10 +152,6 @@ object ELBv2Ns extends js.Object {
       * The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
     var TokenEndpoint: AuthenticateOidcActionTokenEndpoint
-    /**
-      * Indicates whether to use the existing client secret when modifying a rule. If you are creating a rule, you can omit this parameter or set it to false.
-      */
-    var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
     /**
       * The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
@@ -802,7 +798,7 @@ object ELBv2Ns extends js.Object {
   
   trait LoadBalancerAttribute extends js.Object {
     /**
-      * The name of the attribute. The following attributes are supported by both Application Load Balancers and Network Load Balancers:    access_logs.s3.enabled - Indicates whether access logs are enabled. The value is true or false. The default is false.    access_logs.s3.bucket - The name of the S3 bucket for the access logs. This attribute is required if access logs are enabled. The bucket must exist in the same region as the load balancer and have a bucket policy that grants Elastic Load Balancing permissions to write to the bucket.    access_logs.s3.prefix - The prefix for the location in the S3 bucket for the access logs.    deletion_protection.enabled - Indicates whether deletion protection is enabled. The value is true or false. The default is false.   The following attributes are supported by only Application Load Balancers:    idle_timeout.timeout_seconds - The idle timeout value, in seconds. The valid range is 1-4000 seconds. The default is 60 seconds.    routing.http2.enabled - Indicates whether HTTP/2 is enabled. The value is true or false. The default is true.   The following attributes are supported by only Network Load Balancers:    load_balancing.cross_zone.enabled - Indicates whether cross-zone load balancing is enabled. The value is true or false. The default is false.  
+      * The name of the attribute. The following attributes are supported by both Application Load Balancers and Network Load Balancers:    deletion_protection.enabled - Indicates whether deletion protection is enabled. The value is true or false. The default is false.   The following attributes are supported by only Application Load Balancers:    access_logs.s3.enabled - Indicates whether access logs are enabled. The value is true or false. The default is false.    access_logs.s3.bucket - The name of the S3 bucket for the access logs. This attribute is required if access logs are enabled. The bucket must exist in the same region as the load balancer and have a bucket policy that grants Elastic Load Balancing permissions to write to the bucket.    access_logs.s3.prefix - The prefix for the location in the S3 bucket for the access logs.    idle_timeout.timeout_seconds - The idle timeout value, in seconds. The valid range is 1-4000 seconds. The default is 60 seconds.    routing.http2.enabled - Indicates whether HTTP/2 is enabled. The value is true or false. The default is true.   The following attributes are supported by only Network Load Balancers:    load_balancing.cross_zone.enabled - Indicates whether cross-zone load balancing is enabled. The value is true or false. The default is false.  
       */
     var Key: js.UndefOr[LoadBalancerAttributeKey] = js.undefined
     /**
@@ -2266,14 +2262,40 @@ object ELBv2Ns extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeTargetHealthOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ActionTypeEnum extends js.Object
+  
+  trait _AuthenticateCognitoActionConditionalBehaviorEnum extends js.Object
+  
+  trait _AuthenticateOidcActionConditionalBehaviorEnum extends js.Object
+  
+  trait _IpAddressType extends js.Object
+  
+  trait _LoadBalancerSchemeEnum extends js.Object
+  
+  trait _LoadBalancerStateEnum extends js.Object
+  
+  trait _LoadBalancerTypeEnum extends js.Object
+  
+  trait _ProtocolEnum extends js.Object
+  
+  trait _RedirectActionStatusCodeEnum extends js.Object
+  
+  trait _TargetHealthReasonEnum extends js.Object
+  
+  trait _TargetHealthStateEnum extends js.Object
+  
+  trait _TargetTypeEnum extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActionOrder = scala.Double
-  type ActionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.forward | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-oidc` | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-cognito` | awsDashSdkLib.awsDashSdkLibStrings.redirect | awsDashSdkLib.awsDashSdkLibStrings.`fixed-response` | java.lang.String
+  type ActionTypeEnum = _ActionTypeEnum | java.lang.String
   type Actions = js.Array[Action]
   type AllocationId = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamName = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamValue = java.lang.String
-  type AuthenticateCognitoActionConditionalBehaviorEnum = awsDashSdkLib.awsDashSdkLibStrings.deny | awsDashSdkLib.awsDashSdkLibStrings.allow | awsDashSdkLib.awsDashSdkLibStrings.authenticate | java.lang.String
+  type AuthenticateCognitoActionConditionalBehaviorEnum = _AuthenticateCognitoActionConditionalBehaviorEnum | java.lang.String
   type AuthenticateCognitoActionScope = java.lang.String
   type AuthenticateCognitoActionSessionCookieName = java.lang.String
   type AuthenticateCognitoActionSessionTimeout = scala.Double
@@ -2285,13 +2307,12 @@ object ELBv2Ns extends js.Object {
   type AuthenticateOidcActionAuthorizationEndpoint = java.lang.String
   type AuthenticateOidcActionClientId = java.lang.String
   type AuthenticateOidcActionClientSecret = java.lang.String
-  type AuthenticateOidcActionConditionalBehaviorEnum = awsDashSdkLib.awsDashSdkLibStrings.deny | awsDashSdkLib.awsDashSdkLibStrings.allow | awsDashSdkLib.awsDashSdkLibStrings.authenticate | java.lang.String
+  type AuthenticateOidcActionConditionalBehaviorEnum = _AuthenticateOidcActionConditionalBehaviorEnum | java.lang.String
   type AuthenticateOidcActionIssuer = java.lang.String
   type AuthenticateOidcActionScope = java.lang.String
   type AuthenticateOidcActionSessionCookieName = java.lang.String
   type AuthenticateOidcActionSessionTimeout = scala.Double
   type AuthenticateOidcActionTokenEndpoint = java.lang.String
-  type AuthenticateOidcActionUseExistingClientSecret = scala.Boolean
   type AuthenticateOidcActionUserInfoEndpoint = java.lang.String
   type AvailabilityZones = js.Array[AvailabilityZone]
   type CanonicalHostedZoneId = java.lang.String
@@ -2316,7 +2337,7 @@ object ELBv2Ns extends js.Object {
   type HealthCheckTimeoutSeconds = scala.Double
   type HttpCode = java.lang.String
   type IpAddress = java.lang.String
-  type IpAddressType = awsDashSdkLib.awsDashSdkLibStrings.ipv4 | awsDashSdkLib.awsDashSdkLibStrings.dualstack | java.lang.String
+  type IpAddressType = _IpAddressType | java.lang.String
   type IsDefault = scala.Boolean
   type Limits = js.Array[Limit]
   type ListOfString = js.Array[StringValue]
@@ -2331,9 +2352,9 @@ object ELBv2Ns extends js.Object {
   type LoadBalancerAttributes = js.Array[LoadBalancerAttribute]
   type LoadBalancerName = java.lang.String
   type LoadBalancerNames = js.Array[LoadBalancerName]
-  type LoadBalancerSchemeEnum = awsDashSdkLib.awsDashSdkLibStrings.`internet-facing` | awsDashSdkLib.awsDashSdkLibStrings.internal | java.lang.String
-  type LoadBalancerStateEnum = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.provisioning | awsDashSdkLib.awsDashSdkLibStrings.active_impaired | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type LoadBalancerTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.application | awsDashSdkLib.awsDashSdkLibStrings.network | java.lang.String
+  type LoadBalancerSchemeEnum = _LoadBalancerSchemeEnum | java.lang.String
+  type LoadBalancerStateEnum = _LoadBalancerStateEnum | java.lang.String
+  type LoadBalancerTypeEnum = _LoadBalancerTypeEnum | java.lang.String
   type LoadBalancers = js.Array[LoadBalancer]
   type Marker = java.lang.String
   type Max = java.lang.String
@@ -2341,13 +2362,13 @@ object ELBv2Ns extends js.Object {
   type PageSize = scala.Double
   type Path = java.lang.String
   type Port = scala.Double
-  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | awsDashSdkLib.awsDashSdkLibStrings.TLS | java.lang.String
+  type ProtocolEnum = _ProtocolEnum | java.lang.String
   type RedirectActionHost = java.lang.String
   type RedirectActionPath = java.lang.String
   type RedirectActionPort = java.lang.String
   type RedirectActionProtocol = java.lang.String
   type RedirectActionQuery = java.lang.String
-  type RedirectActionStatusCodeEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP_301 | awsDashSdkLib.awsDashSdkLibStrings.HTTP_302 | java.lang.String
+  type RedirectActionStatusCodeEnum = _RedirectActionStatusCodeEnum | java.lang.String
   type ResourceArn = java.lang.String
   type ResourceArns = js.Array[ResourceArn]
   type RuleArn = java.lang.String
@@ -2384,12 +2405,12 @@ object ELBv2Ns extends js.Object {
   type TargetGroupNames = js.Array[TargetGroupName]
   type TargetGroups = js.Array[TargetGroup]
   type TargetHealthDescriptions = js.Array[TargetHealthDescription]
-  type TargetHealthReasonEnum = awsDashSdkLib.awsDashSdkLibStrings.ElbDOTRegistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInitialHealthChecking | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTResponseCodeMismatch | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTTimeout | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTFailedHealthChecks | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotRegistered | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotInUse | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTDeregistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTInvalidState | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTIpUnusable | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTHealthCheckDisabled | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInternalError | java.lang.String
-  type TargetHealthStateEnum = awsDashSdkLib.awsDashSdkLibStrings.initial | awsDashSdkLib.awsDashSdkLibStrings.healthy | awsDashSdkLib.awsDashSdkLibStrings.unhealthy | awsDashSdkLib.awsDashSdkLibStrings.unused | awsDashSdkLib.awsDashSdkLibStrings.draining | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
+  type TargetHealthReasonEnum = _TargetHealthReasonEnum | java.lang.String
+  type TargetHealthStateEnum = _TargetHealthStateEnum | java.lang.String
   type TargetId = java.lang.String
-  type TargetTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.ip | awsDashSdkLib.awsDashSdkLibStrings.lambda | java.lang.String
+  type TargetTypeEnum = _TargetTypeEnum | java.lang.String
   type VpcId = java.lang.String
   type ZoneName = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

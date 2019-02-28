@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariableDeclaration extends Node {
+trait VariableDeclaration
+  extends Node
+     with Declaration
+     with Statement {
   var declarations: js.Array[VariableDeclarator]
   var kind: babelDashTypesLib.babelDashTypesLibStrings.`var` | babelDashTypesLib.babelDashTypesLibStrings.let | babelDashTypesLib.babelDashTypesLibStrings.const
   @JSName("type")

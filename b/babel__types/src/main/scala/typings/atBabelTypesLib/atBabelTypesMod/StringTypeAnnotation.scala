@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StringTypeAnnotation extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait StringTypeAnnotation
+  extends Flow
+     with BaseNode
+     with FlowBaseAnnotation
+     with FlowType {
   @JSName("type")
   var type_StringTypeAnnotation: atBabelTypesLib.atBabelTypesLibStrings.StringTypeAnnotation
 }

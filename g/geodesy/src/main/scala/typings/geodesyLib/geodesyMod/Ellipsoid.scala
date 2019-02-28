@@ -11,3 +11,5 @@ trait Ellipsoid extends js.Object {
   var f: scala.Double
 }
 
+trait ellipsoid extends js.Object
+

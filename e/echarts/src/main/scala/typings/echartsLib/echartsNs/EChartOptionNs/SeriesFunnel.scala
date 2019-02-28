@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel
   */
-trait SeriesFunnel extends js.Object {
+trait SeriesFunnel extends Series {
   /**
     * Whether to enable animation.
     *

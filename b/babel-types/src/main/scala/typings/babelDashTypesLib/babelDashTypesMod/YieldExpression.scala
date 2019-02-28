@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait YieldExpression extends Node {
+trait YieldExpression
+  extends Node
+     with Expression
+     with Terminatorless {
   var argument: Expression
   var delegate: scala.Boolean
   @JSName("type")

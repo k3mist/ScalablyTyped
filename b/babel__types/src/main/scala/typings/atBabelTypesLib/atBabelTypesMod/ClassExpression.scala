@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ClassExpression
+  extends Class
+     with BaseNode
+     with Expression
+     with Pureish
+     with Scopable {
   var body: ClassBody
   var decorators: js.Array[Decorator] | scala.Null
   var id: Identifier | scala.Null

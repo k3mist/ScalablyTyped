@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Blocks movement of all creeps.
   */
-trait StructureWall extends Structure[STRUCTURE_WALL] {
+trait StructureWall
+  extends Structure[STRUCTURE_WALL]
+     with AnyStructure {
   /**
     * The amount of game ticks when the wall will disappear (only for automatically placed border walls at the start of the game).
     */

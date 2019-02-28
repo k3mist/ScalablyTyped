@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/null
   */
-trait NullLayoutOptions extends js.Object {
+trait NullLayoutOptions extends LayoutOptions {
   var name: cytoscapeLib.cytoscapeLibStrings.`null`
 }
 

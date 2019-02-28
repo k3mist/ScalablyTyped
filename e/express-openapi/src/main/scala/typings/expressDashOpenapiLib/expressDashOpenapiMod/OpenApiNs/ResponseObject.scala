@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ResponseObject extends js.Object {
+trait ResponseObject extends Response {
   var description: java.lang.String
   var examples: js.UndefOr[ExampleObject] = js.undefined
   var headers: js.UndefOr[HeadersObject] = js.undefined

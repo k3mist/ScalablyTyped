@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InlineQueryResultCachedVideo extends InlineQueryResultBase {
+trait InlineQueryResultCachedVideo
+  extends InlineQueryResultBase
+     with InlineQueryResult {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined

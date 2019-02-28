@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageOverlayProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashLeafletLib.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait ImageOverlayProps
   extends leafletLib.leafletMod.ImageOverlayOptions {
-  var bounds: leafletLib.leafletMod.LatLngBoundsExpression
+  var bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression] = js.undefined
   var children: js.UndefOr[Children] = js.undefined
-  var url: java.lang.String
+  var url: java.lang.String | reactLib.HTMLImageElement
 }
 

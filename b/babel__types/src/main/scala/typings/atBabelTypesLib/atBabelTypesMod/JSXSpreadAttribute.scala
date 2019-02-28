@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXSpreadAttribute extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait JSXSpreadAttribute
+  extends JSX
+     with BaseNode {
   var argument: Expression
   @JSName("type")
   var type_JSXSpreadAttribute: atBabelTypesLib.atBabelTypesLibStrings.JSXSpreadAttribute

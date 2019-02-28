@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Obj extends js.Object {
+trait Obj extends _Type {
   var bottom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var left: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var right: js.UndefOr[java.lang.String | scala.Double] = js.undefined

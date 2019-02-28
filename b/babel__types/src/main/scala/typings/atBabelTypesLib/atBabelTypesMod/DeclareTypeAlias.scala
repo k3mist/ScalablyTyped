@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclareTypeAlias extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DeclareTypeAlias
+  extends Declaration
+     with BaseNode
+     with Flow
+     with FlowDeclaration
+     with Statement {
   var id: Identifier
   var right: FlowType
   var typeParameters: TypeParameterDeclaration | scala.Null

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSDeclareFunction extends Node {
+trait TSDeclareFunction
+  extends Node
+     with Declaration
+     with Statement {
   var async: scala.Boolean
   var declare: scala.Boolean | scala.Null
   var generator: scala.Boolean

@@ -28,6 +28,12 @@ trait ITextField
   var enableKeyEvents: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var enforceMaxLength: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Method] Validates a value according to the field s validation rules and returns an array of errors for any failing validations
+  		* @param value Object The value to validate. The processed raw value will be used if nothing is passed.
+  		* @returns String[] Array of any validation errors
+  		*/
+  @JSName("getErrors")
+  var getErrors_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Returns the raw String value of the field without performing any normalization conversion or validation
   		* @returns String The raw String value of the field
   		*/

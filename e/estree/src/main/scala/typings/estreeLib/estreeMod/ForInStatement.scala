@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ForInStatement extends BaseForXStatement {
+trait ForInStatement
+  extends BaseForXStatement
+     with Statement {
   @JSName("type")
   var type_ForInStatement: estreeLib.estreeLibStrings.ForInStatement
 }

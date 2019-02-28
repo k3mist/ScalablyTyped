@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SemaphoreEnv extends CiEnvBase {
+trait SemaphoreEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: js.UndefOr[java.lang.String] = js.undefined
   var build: java.lang.String
   var commit: java.lang.String

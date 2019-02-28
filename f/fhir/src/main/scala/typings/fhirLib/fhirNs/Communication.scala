@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A record of information transmitted from a sender to a receiver
   */
-trait Communication extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Communication extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
     */

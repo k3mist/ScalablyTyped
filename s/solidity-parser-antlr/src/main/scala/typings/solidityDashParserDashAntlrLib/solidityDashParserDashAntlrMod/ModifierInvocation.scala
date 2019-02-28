@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ModifierInvocation extends BaseASTNode {
+trait ModifierInvocation
+  extends BaseASTNode
+     with ASTNode {
   var name: java.lang.String
   @JSName("type")
   var type_ModifierInvocation: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.ModifierInvocation

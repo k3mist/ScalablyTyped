@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * cannot be damaged or destroyed. It can be addressed by `Room.controller`
   * property.
   */
-trait StructureController extends OwnedStructure[STRUCTURE_CONTROLLER] {
+trait StructureController
+  extends OwnedStructure[STRUCTURE_CONTROLLER]
+     with AnyOwnedStructure {
   /**
     * Current controller level, from 0 to 8.
     */

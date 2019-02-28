@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BlockquoteEnd extends js.Object {
+trait BlockquoteEnd
+  extends markedLib.markedMod.markedNs.Token {
   var `type`: markedLib.markedLibStrings.blockquote_end
 }
 

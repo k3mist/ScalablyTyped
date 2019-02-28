@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatOptions extends js.Object {
   var options: js.UndefOr[
     js.Function2[

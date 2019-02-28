@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineNumberProps extends js.Object {
   var highlight: js.UndefOr[scala.Boolean] = js.undefined
   var number: scala.Double

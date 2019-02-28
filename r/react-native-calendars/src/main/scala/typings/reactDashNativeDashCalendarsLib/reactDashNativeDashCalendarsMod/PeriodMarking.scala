@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PeriodMarking extends js.Object {
+trait PeriodMarking extends Marking {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var endingDay: js.UndefOr[scala.Boolean] = js.undefined

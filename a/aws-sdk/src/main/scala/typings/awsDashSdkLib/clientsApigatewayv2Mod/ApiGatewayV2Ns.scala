@@ -4022,25 +4022,43 @@ object ApiGatewayV2Ns extends js.Object {
     var StageVariables: js.UndefOr[StageVariablesMap] = js.undefined
   }
   
+  trait _AuthorizationType extends js.Object
+  
+  trait _ConnectionType extends js.Object
+  
+  trait _ContentHandlingStrategy extends js.Object
+  
+  trait _DeploymentStatus extends js.Object
+  
+  trait _EndpointType extends js.Object
+  
+  trait _IntegrationType extends js.Object
+  
+  trait _LoggingLevel extends js.Object
+  
+  trait _PassthroughBehavior extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type AuthorizationScopes = js.Array[StringWithLengthBetween1And64]
-  type AuthorizationType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
+  type AuthorizationType = _AuthorizationType | java.lang.String
   type AuthorizerType = awsDashSdkLib.awsDashSdkLibStrings.REQUEST | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ConnectionType = awsDashSdkLib.awsDashSdkLibStrings.INTERNET | awsDashSdkLib.awsDashSdkLibStrings.VPC_LINK | java.lang.String
-  type ContentHandlingStrategy = awsDashSdkLib.awsDashSdkLibStrings.CONVERT_TO_BINARY | awsDashSdkLib.awsDashSdkLibStrings.CONVERT_TO_TEXT | java.lang.String
-  type DeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DEPLOYED | java.lang.String
+  type ConnectionType = _ConnectionType | java.lang.String
+  type ContentHandlingStrategy = _ContentHandlingStrategy | java.lang.String
+  type DeploymentStatus = _DeploymentStatus | java.lang.String
   type DomainNameConfigurations = js.Array[DomainNameConfiguration]
-  type EndpointType = awsDashSdkLib.awsDashSdkLibStrings.REGIONAL | awsDashSdkLib.awsDashSdkLibStrings.EDGE | java.lang.String
+  type EndpointType = _EndpointType | java.lang.String
   type Id = java.lang.String
   type IdentitySourceList = js.Array[__string]
   type IntegerWithLengthBetween0And3600 = scala.Double
   type IntegerWithLengthBetween50And29000 = scala.Double
-  type IntegrationType = awsDashSdkLib.awsDashSdkLibStrings.AWS | awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.MOCK | awsDashSdkLib.awsDashSdkLibStrings.HTTP_PROXY | awsDashSdkLib.awsDashSdkLibStrings.AWS_PROXY | java.lang.String
-  type LoggingLevel = awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.`false` | java.lang.String
+  type IntegrationType = _IntegrationType | java.lang.String
+  type LoggingLevel = _LoggingLevel | java.lang.String
   type NextToken = java.lang.String
-  type PassthroughBehavior = awsDashSdkLib.awsDashSdkLibStrings.WHEN_NO_MATCH | awsDashSdkLib.awsDashSdkLibStrings.NEVER | awsDashSdkLib.awsDashSdkLibStrings.WHEN_NO_TEMPLATES | java.lang.String
+  type PassthroughBehavior = _PassthroughBehavior | java.lang.String
   type ProtocolType = awsDashSdkLib.awsDashSdkLibStrings.WEBSOCKET | java.lang.String
   type ProviderArnList = js.Array[Arn]
   type SelectionExpression = java.lang.String
@@ -4070,6 +4088,6 @@ object ApiGatewayV2Ns extends js.Object {
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
   type __timestampIso8601 = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-11-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

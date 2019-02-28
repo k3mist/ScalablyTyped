@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when progress tone playback starts
 		*/
-trait ProgressToneStart extends js.Object {
+trait ProgressToneStart
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/

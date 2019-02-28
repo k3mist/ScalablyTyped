@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Program extends Node {
+trait Program
+  extends Node
+     with Block
+     with BlockParent
+     with FunctionParent
+     with Scopable {
   var body: js.Array[Statement | ModuleDeclaration]
   var directives: js.UndefOr[js.Array[Directive]] = js.undefined
   var sourceType: babelDashTypesLib.babelDashTypesLibStrings.script | babelDashTypesLib.babelDashTypesLibStrings.module

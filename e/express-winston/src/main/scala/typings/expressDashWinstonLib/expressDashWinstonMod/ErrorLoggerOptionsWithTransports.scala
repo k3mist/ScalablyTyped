@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ErrorLoggerOptionsWithTransports extends BaseErrorLoggerOptions {
+trait ErrorLoggerOptionsWithTransports
+  extends BaseErrorLoggerOptions
+     with ErrorLoggerOptions {
   var transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.namespaced]
 }
 

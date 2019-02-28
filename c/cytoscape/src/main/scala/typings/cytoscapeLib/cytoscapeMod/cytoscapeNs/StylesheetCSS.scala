@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#cy.style
   */
-trait StylesheetCSS extends js.Object {
+trait StylesheetCSS extends Stylesheet {
   var css: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge
   var selector: java.lang.String
 }

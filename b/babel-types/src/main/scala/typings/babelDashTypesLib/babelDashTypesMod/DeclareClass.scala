@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclareClass extends Node {
+trait DeclareClass
+  extends Node
+     with Declaration
+     with Flow
+     with FlowDeclaration
+     with Statement {
   var body: ObjectTypeAnnotation
   var `extends`: js.Array[InterfaceExtends]
   var id: Identifier

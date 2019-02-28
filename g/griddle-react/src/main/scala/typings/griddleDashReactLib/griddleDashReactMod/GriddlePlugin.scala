@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GriddlePlugin extends GriddleExtensibility {
   var initialState: js.UndefOr[GriddleInitialState] = js.undefined
   var reduxMiddleware: js.UndefOr[

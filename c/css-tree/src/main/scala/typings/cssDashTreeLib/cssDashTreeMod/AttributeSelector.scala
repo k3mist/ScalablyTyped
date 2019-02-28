@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AttributeSelector extends CssNodeCommon {
+trait AttributeSelector
+  extends CssNodeCommon
+     with CssNode
+     with CssNodePlain {
   var flags: java.lang.String | scala.Null
   var matcher: java.lang.String | scala.Null
   var name: Identifier

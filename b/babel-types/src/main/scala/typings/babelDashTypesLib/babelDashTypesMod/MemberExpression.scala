@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MemberExpression extends Node {
+trait MemberExpression
+  extends Node
+     with Expression
+     with LVal {
   var computed: scala.Boolean
   var `object`: Expression | Super
   var property: Expression

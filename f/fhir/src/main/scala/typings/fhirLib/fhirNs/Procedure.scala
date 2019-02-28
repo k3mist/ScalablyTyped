@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An action that is being or was performed on a patient
   */
-trait Procedure extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Procedure extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
     */

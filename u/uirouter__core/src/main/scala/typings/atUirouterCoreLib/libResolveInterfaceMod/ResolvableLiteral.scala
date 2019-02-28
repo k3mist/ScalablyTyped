@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ResolvableLiteral extends js.Object {
+trait ResolvableLiteral
+  extends atUirouterCoreLib.libStateInterfaceMod.ResolveTypes {
   /** Pre-resolved data. */
   var data: js.UndefOr[js.Any] = js.undefined
   /**

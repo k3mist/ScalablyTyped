@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeParameterInstantiation extends Node {
+trait TypeParameterInstantiation
+  extends Node
+     with Flow {
   var params: js.Array[FlowTypeAnnotation]
   @JSName("type")
   var type_TypeParameterInstantiation: babelDashTypesLib.babelDashTypesLibStrings.TypeParameterInstantiation

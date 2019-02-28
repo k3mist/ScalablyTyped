@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BlockValue extends Node {
+trait BlockValue
+  extends Scalar
+     with Node {
   var blockIndent: scala.Double | scala.Null
   var chomping: yamlLib.yamlLibStrings.CLIP | yamlLib.yamlLibStrings.KEEP | yamlLib.yamlLibStrings.STRIP
   var header: Range

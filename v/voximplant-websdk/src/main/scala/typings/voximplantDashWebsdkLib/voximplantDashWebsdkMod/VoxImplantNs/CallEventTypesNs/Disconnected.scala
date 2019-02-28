@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched after call was disconnected
 		*/
-trait Disconnected extends js.Object {
+trait Disconnected
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/

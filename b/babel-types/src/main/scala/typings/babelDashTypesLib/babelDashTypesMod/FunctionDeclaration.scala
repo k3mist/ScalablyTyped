@@ -5,7 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionDeclaration extends Node {
+trait FunctionDeclaration
+  extends Node
+     with BlockParent
+     with Declaration
+     with Function
+     with FunctionParent
+     with Pureish
+     with Scopable
+     with Statement {
   var async: scala.Boolean
   var body: BlockStatement
   var generator: scala.Boolean

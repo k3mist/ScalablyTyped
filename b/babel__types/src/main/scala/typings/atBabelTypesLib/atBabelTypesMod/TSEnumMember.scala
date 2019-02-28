@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSEnumMember extends BaseNode {
+trait TSEnumMember
+  extends BaseNode
+     with _Node {
   var id: Identifier | StringLiteral
   var initializer: Expression | scala.Null
   @JSName("type")

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSAnyKeyword extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSAnyKeyword
+  extends TSType
+     with BaseNode {
   @JSName("type")
   var type_TSAnyKeyword: atBabelTypesLib.atBabelTypesLibStrings.TSAnyKeyword
 }

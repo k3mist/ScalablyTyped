@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EnumType extends js.Object {
+trait EnumType extends IDLRootType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** The enum's name. */

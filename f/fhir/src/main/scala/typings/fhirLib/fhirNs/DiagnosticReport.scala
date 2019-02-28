@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports
   */
-trait DiagnosticReport extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DiagnosticReport extends DomainResource {
   /**
     * Contains extended information for property 'conclusion'.
     */

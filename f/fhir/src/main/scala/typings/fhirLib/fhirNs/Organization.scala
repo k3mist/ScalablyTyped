@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A grouping of people or organizations with a common purpose
   */
-trait Organization extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Organization extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat room participant was banned/unbanned
 		*/
-trait ChatRoomOperation extends js.Object {
+trait ChatRoomOperation
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Operation type
   			*/

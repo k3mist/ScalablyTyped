@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait List extends Parent {
+trait List
+  extends Parent
+     with BlockContent {
   @JSName("children")
   var children_List: js.Array[ListContent]
   var ordered: js.UndefOr[scala.Boolean] = js.undefined

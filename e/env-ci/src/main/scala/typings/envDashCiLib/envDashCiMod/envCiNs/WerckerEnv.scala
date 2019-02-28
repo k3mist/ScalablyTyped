@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WerckerEnv extends CiEnvBase {
+trait WerckerEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String
   var buildUrl: java.lang.String

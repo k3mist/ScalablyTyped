@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LayersControlProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Lifted 1 members from Set(react-leaflet.react-leaflet.MapControlProps) */ trait LayersControlProps
   extends leafletLib.leafletMod.ControlNs.LayersOptions
      with LayersControlEvents {
-  var baseLayers: js.UndefOr[leafletLib.leafletMod.ControlNs.LayersObject] = js.undefined
-  var children: js.UndefOr[Children] = js.undefined
-  var overlays: js.UndefOr[leafletLib.leafletMod.ControlNs.LayersObject] = js.undefined
+  var children: Children
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 

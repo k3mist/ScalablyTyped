@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst
   */
-trait SeriesSunburst extends js.Object {
+trait SeriesSunburst extends Series {
   /**
     * Whether to enable animation.
     *

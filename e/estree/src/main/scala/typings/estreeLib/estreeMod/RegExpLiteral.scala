@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RegExpLiteral extends BaseNode {
+trait RegExpLiteral
+  extends BaseNode
+     with Literal {
   var raw: js.UndefOr[java.lang.String] = js.undefined
   var regex: estreeLib.Anon_Flags
   @JSName("type")

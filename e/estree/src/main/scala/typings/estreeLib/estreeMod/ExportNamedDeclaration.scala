@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExportNamedDeclaration extends BaseNode {
+trait ExportNamedDeclaration
+  extends BaseNode
+     with ModuleDeclaration {
   var declaration: js.UndefOr[Declaration | scala.Null] = js.undefined
   var source: js.UndefOr[Literal | scala.Null] = js.undefined
   var specifiers: js.Array[ExportSpecifier]

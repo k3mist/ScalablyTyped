@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait X11ChannelInfo extends js.Object {
+trait X11ChannelInfo extends ChannelOpenInfo {
   var data: X11ChannelData
   var packetSize: scala.Double
   var sender: scala.Double

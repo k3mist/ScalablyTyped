@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateSpecCommand extends js.Object {
+trait UpdateSpecCommand extends _UpdateSpec {
   @JSName("$apply")
   var $apply: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   @JSName("$merge")

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSRestType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSRestType
+  extends TSType
+     with BaseNode {
   var typeAnnotation: TSType
   @JSName("type")
   var type_TSRestType: atBabelTypesLib.atBabelTypesLibStrings.TSRestType

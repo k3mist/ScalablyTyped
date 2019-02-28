@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Map extends MapBase {
+trait Map
+  extends MapBase
+     with MapNode {
   @JSName("cstNode")
   var cstNode_Map: js.UndefOr[yamlLib.yamlMod.cstNs.Map] = js.undefined
   @JSName("type")

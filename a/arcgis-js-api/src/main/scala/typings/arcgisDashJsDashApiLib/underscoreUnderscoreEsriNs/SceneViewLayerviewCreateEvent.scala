@@ -1,0 +1,12 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SceneViewLayerviewCreateEvent extends js.Object {
+  var layer: Layer
+  var layerView: LayerView
+}
+

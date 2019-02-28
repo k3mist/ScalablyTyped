@@ -5,12 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CircleMarkerProps
-  extends leafletLib.leafletMod.CircleMarkerOptions
-     with PathEvents {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- leafletLib.leafletMod.CircleMarkerOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined radius */ trait CircleMarkerProps extends PathProps {
   var center: leafletLib.leafletMod.LatLngExpression
-  var children: js.UndefOr[Children] = js.undefined
-  @JSName("radius")
-  var radius_CircleMarkerProps: scala.Double
+  var radius: scala.Double | js.UndefOr[scala.Double]
 }
 

@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PathProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashLeafletLib.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait PathProps
   extends leafletLib.leafletMod.PathOptions
-     with PathEvents
-     with MapLayerProps
+     with PathEvents {
+  var children: js.UndefOr[Children] = js.undefined
+}
 

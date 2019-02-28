@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar
   */
-trait SeriesRadar extends js.Object {
+trait SeriesRadar extends Series {
   /**
     * Whether to enable animation.
     *

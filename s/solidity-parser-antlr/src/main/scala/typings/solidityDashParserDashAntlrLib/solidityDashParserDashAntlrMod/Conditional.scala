@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Conditional extends BaseASTNode {
+trait Conditional
+  extends BaseASTNode
+     with ASTNode {
   var falseExpression: ASTNode
   var trueExpression: ASTNode
   @JSName("type")

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionExpression extends BaseFunction {
+trait FunctionExpression
+  extends BaseFunction
+     with Function {
   @JSName("body")
   var body_FunctionExpression: BlockStatement
   var id: js.UndefOr[Identifier | scala.Null] = js.undefined

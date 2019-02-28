@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSHandle extends js.Object {
+trait JSHandle extends SerializableOrJSHandle {
   /**
     * Returns a ElementHandle
     */

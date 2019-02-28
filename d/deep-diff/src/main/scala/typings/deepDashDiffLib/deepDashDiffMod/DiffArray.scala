@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DiffArray[LHS, RHS] extends js.Object {
+trait DiffArray[LHS, RHS] extends Diff[LHS, RHS] {
   var index: scala.Double
   var item: Diff[LHS, RHS]
   var kind: deepDashDiffLib.deepDashDiffLibStrings.A

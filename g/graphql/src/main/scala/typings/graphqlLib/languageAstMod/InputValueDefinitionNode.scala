@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InputValueDefinitionNode extends js.Object {
+trait InputValueDefinitionNode extends ASTNode {
   val defaultValue: js.UndefOr[ValueNode] = js.undefined
   val description: js.UndefOr[StringValueNode] = js.undefined
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined

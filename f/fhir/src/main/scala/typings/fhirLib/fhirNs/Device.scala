@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Item used in healthcare
   */
-trait Device extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Device extends DomainResource {
   /**
     * Contains extended information for property 'expirationDate'.
     */

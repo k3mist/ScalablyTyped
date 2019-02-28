@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ErrorResult extends js.Object {
+trait ErrorResult extends RecordResult {
   var errors: js.Array[java.lang.String]
   var success: jsforceLib.jsforceLibNumbers.`false`
 }

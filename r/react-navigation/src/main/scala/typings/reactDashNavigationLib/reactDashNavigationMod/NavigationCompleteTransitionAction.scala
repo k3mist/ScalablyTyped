@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavigationCompleteTransitionAction extends js.Object {
+trait NavigationCompleteTransitionAction extends NavigationStackAction {
   var key: java.lang.String
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/COMPLETE_TRANSITION`
 }

@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:82 Success [id => auth-header, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/auth-header/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/auth-header),TsIdentLibrarySimple(auth-header)),TsIdentModule(None,List(auth-header))) [id => auth-header, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/auth-header/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/auth-header),TsIdentLibrarySimple(auth-header)),TsIdentModule(None,List(auth-header))) [id => auth-header, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(auth-header)) [id => auth-header, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(auth-header) [id => auth-header, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => auth-header, phase => typescript] 
@@ -9,4 +9,3 @@
 [error] TokenOptions.scala:9 not found: type Params,   var params: js.UndefOr[Params] = js.undefined [id => auth-header, phase => build] 
 [error] ^.scala:16 type Params is not a member of package typings.authDashHeaderLib.authDashHeaderMod,     params: authDashHeaderLib.authDashHeaderMod.Params [id => auth-header, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [auth-header => Compilation failed] [id => auth-header, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [auth-header => Compilation failed] [id => auth-header, phase => publish] 

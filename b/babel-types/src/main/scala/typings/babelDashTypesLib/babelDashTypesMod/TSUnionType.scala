@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSUnionType extends Node {
+trait TSUnionType
+  extends Node
+     with TSType {
   @JSName("type")
   var type_TSUnionType: babelDashTypesLib.babelDashTypesLibStrings.TSUnionType
   var types: js.Array[TSType]

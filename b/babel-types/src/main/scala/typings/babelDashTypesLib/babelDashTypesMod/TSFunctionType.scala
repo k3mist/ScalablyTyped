@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSFunctionType extends Node {
+trait TSFunctionType
+  extends Node
+     with TSType {
   var parameters: (js.Array[Identifier | RestElement]) | scala.Null
   var typeAnnotation: TSTypeAnnotation | scala.Null
   var typeParameters: TypeParameterDeclaration | scala.Null

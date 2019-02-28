@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CatchClause extends Node {
+trait CatchClause
+  extends Node
+     with Scopable {
   var body: BlockStatement
   var param: Identifier
   @JSName("type")

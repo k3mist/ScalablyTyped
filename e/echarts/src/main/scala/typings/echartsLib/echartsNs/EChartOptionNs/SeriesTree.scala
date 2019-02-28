@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree
   */
-trait SeriesTree extends js.Object {
+trait SeriesTree extends Series {
   /**
     * Distance between tree component and the bottom side of the container.
     *

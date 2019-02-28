@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SharePhotoContent extends js.Object {
+trait SharePhotoContent extends ShareContent {
   /**
     * Common parameters for share content;
     */

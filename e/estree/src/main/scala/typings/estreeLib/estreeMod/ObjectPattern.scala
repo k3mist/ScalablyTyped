@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectPattern extends BaseNode {
+trait ObjectPattern
+  extends BaseNode
+     with Pattern {
   var properties: js.Array[AssignmentProperty]
   @JSName("type")
   var type_ObjectPattern: estreeLib.estreeLibStrings.ObjectPattern

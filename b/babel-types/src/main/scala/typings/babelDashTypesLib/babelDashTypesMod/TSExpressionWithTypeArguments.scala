@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSExpressionWithTypeArguments extends Node {
+trait TSExpressionWithTypeArguments
+  extends Node
+     with TSType {
   var expression: TSEntityName
   var typeParameters: TypeParameterInstantiation | scala.Null
   @JSName("type")

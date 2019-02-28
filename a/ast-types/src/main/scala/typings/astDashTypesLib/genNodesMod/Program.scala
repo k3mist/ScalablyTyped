@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Node, 'type'> ]: ast-types.ast-types/gen/nodes.Node[P]} */ trait Program extends js.Object {
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Node, 'type'> ]: ast-types.ast-types/gen/nodes.Node[P]} */ trait Program
+  extends ASTNode
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PrintableKind {
   var body: js.Array[astDashTypesLib.genKindsMod.StatementKind]
   var directives: js.Array[astDashTypesLib.genKindsMod.DirectiveKind]
   var interpreter: astDashTypesLib.genKindsMod.InterpreterDirectiveKind | scala.Null

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FailureReply extends js.Object {
+trait FailureReply
+  extends Reply[js.Any] {
   var expected: js.Array[java.lang.String]
   var furthest: scala.Double
   var index: parsimmonLib.parsimmonLibNumbers.`-1`

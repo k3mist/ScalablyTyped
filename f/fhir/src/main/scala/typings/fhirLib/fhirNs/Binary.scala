@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Pure binary content defined by a format other than FHIR
   */
-trait Binary extends ResourceBase {
+trait Binary
+  extends ResourceBase
+     with Resource {
   /**
     * Contains extended information for property 'content'.
     */

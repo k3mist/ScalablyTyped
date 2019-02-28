@@ -9,26 +9,26 @@ trait IShadowOptions extends js.Object {
   /**
   	 * Whether the shadow should affect stroke operations
   	 */
-  var affectStrike: scala.Boolean
+  var affectStrike: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Shadow blur
   	 */
-  var blur: scala.Double
+  var blur: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * Shadow color
   	 */
-  var color: java.lang.String
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Indicates whether toObject should include default values
   	 */
-  var includeDefaultValues: scala.Boolean
+  var includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Shadow horizontal offset
   	 */
-  var offsetX: scala.Double
+  var offsetX: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * Shadow vertical offset
   	 */
-  var offsetY: scala.Double
+  var offsetY: js.UndefOr[scala.Double] = js.undefined
 }
 

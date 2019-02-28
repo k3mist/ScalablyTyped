@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageReference
-  extends unistLib.unistMod.Node
+  extends StaticPhrasingContent
+     with unistLib.unistMod.Node
      with Reference
      with Alternative {
   @JSName("type")

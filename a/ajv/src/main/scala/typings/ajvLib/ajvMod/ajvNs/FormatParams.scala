@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormatParams extends js.Object {
+trait FormatParams extends ErrorParameters {
   var format: java.lang.String
 }
 

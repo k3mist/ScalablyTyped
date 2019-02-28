@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ContinueStatement extends BaseNode {
+trait ContinueStatement
+  extends BaseNode
+     with Statement {
   var label: js.UndefOr[Identifier | scala.Null] = js.undefined
   @JSName("type")
   var type_ContinueStatement: estreeLib.estreeLibStrings.ContinueStatement

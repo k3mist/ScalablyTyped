@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TreeNodeNormal extends js.Object {
+trait TreeNodeNormal extends TreeNode {
   var children: js.UndefOr[js.Array[TreeNodeNormal]] = js.undefined
   var disableCheckbox: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

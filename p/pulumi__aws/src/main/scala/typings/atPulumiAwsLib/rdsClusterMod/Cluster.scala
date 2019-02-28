@@ -101,16 +101,13 @@ class Cluster protected ()
     * made.
     */
   val finalSnapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
-    * The global cluster identifier specified on [`aws_rds_global_cluster`](https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html).
-    */
   val globalClusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Route53 Hosted Zone ID of the endpoint
     */
   val hostedZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
-    * Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.IAMDBAuth.html) for availability and limitations.
+    * Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see [AWS Documentation][6] for availability and limitations.
     */
   val iamDatabaseAuthenticationEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
@@ -196,15 +193,15 @@ object Cluster extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.rdsClusterMod.Cluster = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.rdsClusterMod.Cluster = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.rdsClusterMod.ClusterState
   ): atPulumiAwsLib.rdsClusterMod.Cluster = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.rdsClusterMod.ClusterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.rdsClusterMod.Cluster = js.native

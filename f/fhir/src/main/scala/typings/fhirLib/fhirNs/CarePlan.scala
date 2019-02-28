@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Healthcare plan for patient or group
   */
-trait CarePlan extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CarePlan extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */

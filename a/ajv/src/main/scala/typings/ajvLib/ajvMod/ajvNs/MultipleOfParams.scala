@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultipleOfParams extends js.Object {
+trait MultipleOfParams extends ErrorParameters {
   var multipleOf: scala.Double
 }
 

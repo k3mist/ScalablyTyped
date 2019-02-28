@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseLayoutOptions extends js.Object {
+trait BaseLayoutOptions extends LayoutOptions {
   var name: java.lang.String
   // on layoutready event
   var ready: js.UndefOr[LayoutHandler] = js.undefined

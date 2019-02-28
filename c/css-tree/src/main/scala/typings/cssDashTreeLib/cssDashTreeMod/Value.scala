@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Value extends CssNodeCommon {
+trait Value
+  extends CssNodeCommon
+     with CssNode {
   var children: List[CssNode]
   @JSName("type")
   var type_Value: cssDashTreeLib.cssDashTreeLibStrings.Value

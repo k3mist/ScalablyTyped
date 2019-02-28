@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AddDefaultConstraintOptions extends js.Object {
+trait AddDefaultConstraintOptions extends AddConstraintOptions {
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var `type`: sequelizeLib.sequelizeLibStrings.default

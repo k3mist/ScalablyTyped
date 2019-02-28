@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OAuth2AccessCodeSecurity extends BaseOAuthSecuirty {
+trait OAuth2AccessCodeSecurity
+  extends BaseOAuthSecuirty
+     with _Security {
   var authorizationUrl: java.lang.String
   var scopes: js.UndefOr[js.Array[OAuthScope]] = js.undefined
   var tokenUrl: java.lang.String

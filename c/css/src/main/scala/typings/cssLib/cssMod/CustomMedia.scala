@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomMedia extends Node {
+trait CustomMedia
+  extends Node
+     with AtRule {
   /** The part following the name. */
   var media: js.UndefOr[java.lang.String] = js.undefined
   /** The ---prefixed name. */

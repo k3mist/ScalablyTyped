@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclaredPredicate extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DeclaredPredicate
+  extends Flow
+     with BaseNode
+     with FlowPredicate {
   @JSName("type")
   var type_DeclaredPredicate: atBabelTypesLib.atBabelTypesLibStrings.DeclaredPredicate
   var value: Flow

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ShareOpenGraphContent extends js.Object {
+trait ShareOpenGraphContent extends ShareContent {
   /**
     * Open Graph Action to be shared.
     */

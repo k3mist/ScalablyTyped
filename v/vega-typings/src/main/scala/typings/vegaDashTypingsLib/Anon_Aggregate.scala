@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Aggregate extends js.Object {
+trait Anon_Aggregate
+  extends vegaDashTypingsLib.typesSpecMarkMod.Facet {
   var aggregate: js.UndefOr[Anon_As] = js.undefined
   var data: java.lang.String
   var groupby: java.lang.String | js.Array[java.lang.String]

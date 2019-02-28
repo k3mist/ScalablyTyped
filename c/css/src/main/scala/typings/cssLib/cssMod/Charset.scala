@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Charset extends Node {
+trait Charset
+  extends Node
+     with AtRule {
   /** The part following @charset. */
   var charset: js.UndefOr[java.lang.String] = js.undefined
 }

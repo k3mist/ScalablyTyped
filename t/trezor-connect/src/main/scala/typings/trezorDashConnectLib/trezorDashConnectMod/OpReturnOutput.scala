@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OpReturnOutput extends js.Object {
+trait OpReturnOutput extends Output {
   var dataHex: java.lang.String
   var `type`: trezorDashConnectLib.trezorDashConnectLibStrings.opreturn
 }

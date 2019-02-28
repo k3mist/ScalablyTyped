@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Menu extends js.Object {
+trait Menu extends ItemMenuSeparator {
   var contentScript: java.lang.String | js.Array[java.lang.String]
   var contentScriptFile: java.lang.String | js.Array[java.lang.String]
   var context: ItemContext

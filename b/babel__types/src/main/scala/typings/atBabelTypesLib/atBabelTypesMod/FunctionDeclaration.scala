@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FunctionDeclaration extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait FunctionDeclaration
+  extends BlockParent
+     with BaseNode
+     with Declaration
+     with Function
+     with FunctionParent
+     with Pureish
+     with Scopable
+     with Statement {
   var async: scala.Boolean
   var body: BlockStatement
   var declare: scala.Boolean | scala.Null

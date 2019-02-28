@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LogLevelFilterAppender extends js.Object {
+trait LogLevelFilterAppender extends Appender {
   // the name of an appender, defined in the same configuration, that you want to filter
   var appender: java.lang.String
   // the minimum level of event to allow through the filter

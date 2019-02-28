@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Drop", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Drop: reactLib.reactMod.ReactNs.ComponentClass[
+  val Drop: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsDropMod.DropProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    ])
   ] = js.native
 }
 

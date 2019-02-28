@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A generic person record
   */
-trait Person extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Person extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

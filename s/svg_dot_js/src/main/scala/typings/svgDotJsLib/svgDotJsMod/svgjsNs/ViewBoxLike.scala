@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // container.js
-trait ViewBoxLike extends js.Object {
+trait ViewBoxLike extends _ViewBoxAlias {
   var height: scala.Double
   var width: scala.Double
   var x: scala.Double

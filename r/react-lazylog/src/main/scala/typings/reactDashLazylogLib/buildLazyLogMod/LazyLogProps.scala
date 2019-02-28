@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LazyLogProps extends js.Object {
   var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var fetchOptions: js.UndefOr[stdLib.RequestInit] = js.undefined

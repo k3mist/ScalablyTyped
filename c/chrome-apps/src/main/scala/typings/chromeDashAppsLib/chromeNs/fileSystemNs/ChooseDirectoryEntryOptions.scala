@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChooseDirectoryEntryOptions extends ChooseEntryOptionsBase {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- chromeDashAppsLib.chromeNs.fileSystemNs.ChooseEntryOptions because Already inherited */ trait ChooseDirectoryEntryOptions extends ChooseEntryOptionsBase {
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.openDirectory
 }
 

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LogicalExpression extends Node {
+trait LogicalExpression
+  extends Node
+     with Binary
+     with Expression {
   var left: Expression
   var operator: babelDashTypesLib.babelDashTypesLibStrings.`||` | babelDashTypesLib.babelDashTypesLibStrings.`&&`
   var right: Expression

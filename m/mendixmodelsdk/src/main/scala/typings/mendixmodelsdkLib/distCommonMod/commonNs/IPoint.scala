@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Representation of a point.
   */
-trait IPoint extends js.Object {
+trait IPoint
+  extends mendixmodelsdkLib.distSdkInternalDeltasDeltasMod._PrimitiveValue {
   var x: scala.Double
   var y: scala.Double
 }

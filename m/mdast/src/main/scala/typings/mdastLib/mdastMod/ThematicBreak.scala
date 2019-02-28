@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThematicBreak
-  extends unistLib.unistMod.Node {
+  extends BlockContent
+     with unistLib.unistMod.Node {
   @JSName("type")
   var type_ThematicBreak: mdastLib.mdastLibStrings.thematicBreak
 }

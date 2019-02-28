@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SketchMSSymbolMaster extends js.Object {
+trait SketchMSSymbolMaster extends SketchMSLayer {
   var _class: sketchappLib.sketchappLibStrings.symbolMaster
   var attributedString: SketchMSAttributedString
   var backgroundColor: SketchMSColor

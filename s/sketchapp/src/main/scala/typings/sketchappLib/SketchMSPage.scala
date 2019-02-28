@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SketchMSPage extends js.Object {
+trait SketchMSPage extends SketchMSLayer {
   var _class: sketchappLib.sketchappLibStrings.page | sketchappLib.sketchappLibStrings.layer
   var attributedString: SketchMSAttributedString
   var constrainProportions: scala.Boolean

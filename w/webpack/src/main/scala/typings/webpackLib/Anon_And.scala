@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_And extends js.Object {
+trait Anon_And
+  extends webpackLib.webpackMod.webpackNs._RuleSetCondition {
   /**
     * Logical AND
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PolicyOptions[T] extends js.Object {
+trait PolicyOptions[T] extends PolicyOptionVariants[T] {
   /** dropOnError - if true, an error or timeout in the generateFunc causes the stale value to be evicted from the cache. Defaults to true. */
   var dropOnError: js.UndefOr[scala.Boolean] = js.undefined
   /** expiresAt - time of day expressed in 24h notation using the 'HH:MM' format, at which point all cache records for the route expire. Uses local time. Cannot be used together with expiresIn. */

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSEnumDeclaration extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSEnumDeclaration
+  extends Declaration
+     with BaseNode
+     with Statement {
   var const: scala.Boolean | scala.Null
   var declare: scala.Boolean | scala.Null
   var id: Identifier

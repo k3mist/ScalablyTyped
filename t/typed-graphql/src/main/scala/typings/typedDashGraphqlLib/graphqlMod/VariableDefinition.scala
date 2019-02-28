@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariableDefinition extends js.Object {
+trait VariableDefinition extends Node {
   var defaultValue: js.UndefOr[Value] = js.undefined
   var kind: java.lang.String
   var loc: js.UndefOr[Location] = js.undefined

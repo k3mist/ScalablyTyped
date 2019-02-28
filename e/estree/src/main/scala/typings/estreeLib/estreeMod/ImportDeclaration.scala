@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImportDeclaration extends BaseNode {
+trait ImportDeclaration
+  extends BaseNode
+     with ModuleDeclaration {
   var source: Literal
   var specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]
   @JSName("type")

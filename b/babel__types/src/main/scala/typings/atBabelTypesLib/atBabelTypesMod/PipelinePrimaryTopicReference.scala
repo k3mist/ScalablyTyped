@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PipelinePrimaryTopicReference extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait PipelinePrimaryTopicReference
+  extends Expression
+     with BaseNode {
   @JSName("type")
   var type_PipelinePrimaryTopicReference: atBabelTypesLib.atBabelTypesLibStrings.PipelinePrimaryTopicReference
 }

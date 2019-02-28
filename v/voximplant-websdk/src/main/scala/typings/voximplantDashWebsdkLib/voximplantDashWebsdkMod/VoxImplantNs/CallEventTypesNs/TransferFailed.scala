@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when call transfer failed
 		*/
-trait TransferFailed extends js.Object {
+trait TransferFailed
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/

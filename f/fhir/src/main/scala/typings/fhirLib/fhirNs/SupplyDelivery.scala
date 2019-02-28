@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Delivery of bulk Supplies
   */
-trait SupplyDelivery extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait SupplyDelivery extends DomainResource {
   /**
     * Contains extended information for property 'occurrenceDateTime'.
     */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevToolsOptions extends js.Object {
   var actionBlacklist: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var actionCreators: js.UndefOr[js.Array[_] | js.Object] = js.undefined

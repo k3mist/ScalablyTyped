@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InterfaceMixinType extends js.Object {
+trait InterfaceMixinType extends IDLRootType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** An array of interface members (attributes, operations, etc.). Empty if there are none. */

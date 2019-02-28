@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Declaration extends CssNodeCommon {
+trait Declaration
+  extends CssNodeCommon
+     with CssNode {
   var important: scala.Boolean | java.lang.String
   var property: java.lang.String
   @JSName("type")

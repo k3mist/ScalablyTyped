@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Potential outcomes for a subject with likelihood
   */
-trait RiskAssessment extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait RiskAssessment extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */

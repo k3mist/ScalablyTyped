@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SessionChannelInfo extends js.Object {
+trait SessionChannelInfo extends ChannelOpenInfo {
   var packetSize: scala.Double
   var sender: scala.Double
   var `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.session

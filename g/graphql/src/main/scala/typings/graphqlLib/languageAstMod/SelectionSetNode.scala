@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SelectionSetNode extends js.Object {
+trait SelectionSetNode extends ASTNode {
   var kind: graphqlLib.graphqlLibStrings.SelectionSet
   var loc: js.UndefOr[Location] = js.undefined
   var selections: js.Array[SelectionNode]

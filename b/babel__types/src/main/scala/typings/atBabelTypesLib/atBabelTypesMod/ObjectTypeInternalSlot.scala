@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectTypeInternalSlot extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ObjectTypeInternalSlot
+  extends Flow
+     with BaseNode
+     with UserWhitespacable {
   var id: Identifier
   var method: scala.Boolean
   var optional: scala.Boolean

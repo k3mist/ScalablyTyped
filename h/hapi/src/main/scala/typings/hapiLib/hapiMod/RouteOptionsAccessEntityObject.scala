@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RouteOptionsAccessEntityObject extends js.Object {
+trait RouteOptionsAccessEntityObject extends _RouteOptionsAccessObject {
   var entity: RouteOptionsAccessEntity
 }
 

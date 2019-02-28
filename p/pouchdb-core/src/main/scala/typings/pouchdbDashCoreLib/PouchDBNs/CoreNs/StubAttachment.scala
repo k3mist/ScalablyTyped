@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Stub attachments are returned by PouchDB by default (attachments option set to false)
   */
-trait StubAttachment extends js.Object {
+trait StubAttachment extends Attachment {
   /**
     * Mime type of the attachment
     */

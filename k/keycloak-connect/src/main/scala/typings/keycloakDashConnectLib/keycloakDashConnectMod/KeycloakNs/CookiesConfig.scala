@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CookiesConfig extends BaseConfig {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Config because Already inherited */ trait CookiesConfig extends BaseConfig {
   var cookies: js.Any
 }
 

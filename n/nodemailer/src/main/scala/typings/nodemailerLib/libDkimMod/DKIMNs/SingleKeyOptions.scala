@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SingleKeyOptions extends OptionalOptions {
+trait SingleKeyOptions
+  extends OptionalOptions
+     with Options {
   /** is the domain name to use in the signature */
   var domainName: java.lang.String
   /** is the DKIM key selector */

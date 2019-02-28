@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TemplateLiteral extends Node {
+trait TemplateLiteral
+  extends Node
+     with Expression
+     with Literal {
   var expressions: js.Array[Expression]
   var quasis: js.Array[TemplateElement]
   @JSName("type")

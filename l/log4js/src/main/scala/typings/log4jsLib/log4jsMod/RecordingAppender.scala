@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RecordingAppender extends js.Object {
+trait RecordingAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.recording
 }
 

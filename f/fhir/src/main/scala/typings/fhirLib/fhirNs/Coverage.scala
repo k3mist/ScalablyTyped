@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Insurance or medical plan or a payment agreement
   */
-trait Coverage extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Coverage extends DomainResource {
   /**
     * Contains extended information for property 'dependent'.
     */

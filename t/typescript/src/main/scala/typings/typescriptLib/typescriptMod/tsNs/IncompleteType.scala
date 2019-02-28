@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IncompleteType extends js.Object {
+trait IncompleteType extends FlowType {
   var flags: TypeFlags
   var `type`: Type
 }

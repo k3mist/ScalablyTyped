@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DoWhileStatement extends BaseNode {
+trait DoWhileStatement
+  extends BaseNode
+     with Statement {
   var body: Statement
   var test: estreeLib.Expression
   @JSName("type")

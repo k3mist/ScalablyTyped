@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WithStatement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait WithStatement
+  extends Statement
+     with BaseNode {
   var body: BlockStatement | Statement
   var `object`: Expression
   @JSName("type")

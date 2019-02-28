@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_File extends js.Object {
+trait Anon_File
+  extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode {
   var file: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL
 }
 

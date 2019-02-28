@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GraticuleTransform extends js.Object {
+trait GraticuleTransform extends _Transform {
   var extent: js.UndefOr[
     vegaDashTypingsLib.typesSpecUtilMod.Vector2[_] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ] = js.undefined

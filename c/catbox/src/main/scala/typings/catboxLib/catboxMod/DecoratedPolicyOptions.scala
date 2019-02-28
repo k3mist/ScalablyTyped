@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DecoratedPolicyOptions[T] extends PolicyOptions[T] {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- catboxLib.catboxMod.PolicyOptionVariants because Already inherited */ trait DecoratedPolicyOptions[T] extends PolicyOptions[T] {
   /**
     * @default false
     */

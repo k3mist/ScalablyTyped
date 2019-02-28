@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Ratio extends CssNodeCommon {
+trait Ratio
+  extends CssNodeCommon
+     with CssNode
+     with CssNodePlain {
   var left: java.lang.String
   var right: java.lang.String
   @JSName("type")

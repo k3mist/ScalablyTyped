@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MethodAbi extends js.Object {
+trait MethodAbi extends FunctionAbi {
   var constant: scala.Boolean
   var inputs: js.Array[DataItem]
   var name: java.lang.String

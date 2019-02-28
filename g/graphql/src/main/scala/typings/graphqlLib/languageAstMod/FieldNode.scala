@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FieldNode extends js.Object {
+trait FieldNode
+  extends ASTNode
+     with SelectionNode {
   val alias: js.UndefOr[NameNode] = js.undefined
   val arguments: js.UndefOr[js.Array[ArgumentNode]] = js.undefined
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXNamespacedName extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait JSXNamespacedName
+  extends JSX
+     with BaseNode {
   var name: JSXIdentifier
   var namespace: JSXIdentifier
   @JSName("type")

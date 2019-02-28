@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidationOptionsWithKey extends js.Object {
+trait ValidationOptionsWithKey extends ValidationOptions {
   var audience: js.UndefOr[js.Any] = js.undefined
   var bypassExpiration: js.UndefOr[scala.Boolean] = js.undefined
   var publicKey: java.lang.String

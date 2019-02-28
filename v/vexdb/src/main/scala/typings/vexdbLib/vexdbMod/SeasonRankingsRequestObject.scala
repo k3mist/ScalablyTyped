@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeasonRankingsRequestObject extends js.Object {
+trait SeasonRankingsRequestObject extends RequestObject {
   var limit_number: js.UndefOr[scala.Double] = js.undefined
   var limit_start: js.UndefOr[scala.Double] = js.undefined
   var program: js.UndefOr[StringRequest] = js.undefined

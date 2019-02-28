@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ContextMenuItemOptions extends js.Object {
+trait ContextMenuItemOptions extends ContextMenuOptions {
   /** Place this menu item after the menu items representing the given commands. */
   var after: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**

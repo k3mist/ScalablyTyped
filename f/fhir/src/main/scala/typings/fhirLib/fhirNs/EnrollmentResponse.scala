@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * EnrollmentResponse resource
   */
-trait EnrollmentResponse extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait EnrollmentResponse extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */

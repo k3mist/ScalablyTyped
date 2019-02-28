@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OptionsWithRender[Props, Exports /* <: js.Object */] extends CommonOptions {
+trait OptionsWithRender[Props, Exports /* <: js.Object */]
+  extends CommonOptions
+     with Options[Props, Exports] {
   /**
     * Function returning a promise which returns an object to be passed to `render` on success.
     */

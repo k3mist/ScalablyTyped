@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ListMoveOp extends js.Object {
+trait ListMoveOp extends Op {
   var lm: js.Any
   var p: Path
 }

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RectangleProps
-  extends leafletLib.leafletMod.PolylineOptions
-     with PathEvents {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- leafletLib.leafletMod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ trait RectangleProps extends PathProps {
   var bounds: leafletLib.leafletMod.LatLngBoundsExpression
-  var children: js.UndefOr[Children] = js.undefined
-  var popupContainer: js.UndefOr[leafletLib.leafletMod.FeatureGroup[_]] = js.undefined
+  var noClip: js.UndefOr[scala.Boolean] = js.undefined
+  var smoothFactor: js.UndefOr[scala.Double] = js.undefined
 }
 

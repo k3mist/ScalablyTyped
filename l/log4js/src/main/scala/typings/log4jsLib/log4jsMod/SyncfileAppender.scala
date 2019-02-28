@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SyncfileAppender extends js.Object {
+trait SyncfileAppender extends Appender {
   // (default value = 5) - the number of old log files to keep during log rolling.
   var backups: js.UndefOr[scala.Double] = js.undefined
   // the path of the file where you want your logs written.

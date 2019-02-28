@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormulaTransform extends js.Object {
+trait FormulaTransform extends _Transform {
   var as: java.lang.String
   var expr: java.lang.String
   var initonly: js.UndefOr[scala.Boolean] = js.undefined

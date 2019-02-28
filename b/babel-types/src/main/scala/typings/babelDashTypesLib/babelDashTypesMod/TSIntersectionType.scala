@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSIntersectionType extends Node {
+trait TSIntersectionType
+  extends Node
+     with TSType {
   @JSName("type")
   var type_TSIntersectionType: babelDashTypesLib.babelDashTypesLibStrings.TSIntersectionType
   var types: js.Array[TSType]

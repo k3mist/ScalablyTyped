@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InterfaceExtends extends Node {
+trait InterfaceExtends
+  extends Node
+     with Flow {
   var id: Identifier
   var typeParameters: TypeParameterInstantiation
   @JSName("type")

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Allows to harvest mineral deposits.
   */
-trait StructureExtractor extends OwnedStructure[STRUCTURE_EXTRACTOR] {
+trait StructureExtractor
+  extends OwnedStructure[STRUCTURE_EXTRACTOR]
+     with AnyOwnedStructure {
   /**
     * The amount of game ticks until the next harvest action is possible.
     */

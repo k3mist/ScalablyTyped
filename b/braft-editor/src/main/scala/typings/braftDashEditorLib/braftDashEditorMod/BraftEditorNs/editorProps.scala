@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait editorProps extends js.Object {
   var allowSetTextBackgroundColor: js.UndefOr[scala.Boolean] = js.undefined
   var blur: js.UndefOr[js.Function0[_]] = js.undefined
@@ -43,7 +42,7 @@ trait editorProps extends js.Object {
   var indents: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var initialContent: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var insertHTML: js.UndefOr[js.Function1[/* htmlString */ java.lang.String, _]] = js.undefined
-  var insertMedias: js.UndefOr[js.Function1[/* medias */ js.Array[braftDashEditorLib.Anon_Type], _]] = js.undefined
+  var insertMedias: js.UndefOr[js.Function1[/* medias */ js.Array[braftDashEditorLib.Anon_Name], _]] = js.undefined
   var insertText: js.UndefOr[
     js.Function2[/* text */ java.lang.String, /* replace */ js.UndefOr[scala.Boolean], _]
   ] = js.undefined
@@ -51,7 +50,7 @@ trait editorProps extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
   var letterSpacings: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var lineHeights: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var media: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var media: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onBlur: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onChange: js.UndefOr[
     js.Function1[

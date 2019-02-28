@@ -40,6 +40,11 @@ trait IView
       scala.Unit
     ]
   ] = js.undefined
+  /** [Method] Gets the listeners to bind to a new store
+  		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
+  		*/
+  @JSName("getStoreListeners")
+  var getStoreListeners_IView: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Gets the base TreeStore from the bound TreePanel  */
   var getTreeStore: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Property] (Boolean) */

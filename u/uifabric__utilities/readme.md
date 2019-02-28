@@ -77,6 +77,8 @@
  * ARIA helper to concatenate attributes, returning undefined if all attributes
  * are undefined. (Empty strings are not a valid ARIA attribute value.)
  *
+ * NOTE: This function will NOT insert whitespace between provided attributes.
+ *
  * @param ariaAttributes - ARIA attributes to merge
  */
 /**

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * A structure that can store huge amount of resource units. Only one structure
   * per room is allowed that can be addressed by `Room.storage` property.
   */
-trait StructureStorage extends OwnedStructure[STRUCTURE_STORAGE] {
+trait StructureStorage
+  extends OwnedStructure[STRUCTURE_STORAGE]
+     with AnyOwnedStructure {
   /**
     * An object with the storage contents.
     */

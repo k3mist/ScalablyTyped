@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSIndexSignature extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSIndexSignature
+  extends TSTypeElement
+     with BaseNode {
   var parameters: js.Array[Identifier]
   var readonly: scala.Boolean | scala.Null
   var typeAnnotation: TSTypeAnnotation | scala.Null

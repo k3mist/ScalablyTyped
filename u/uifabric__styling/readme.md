@@ -1,9 +1,5 @@
 ```
 /**
- * @internal
- * Experimental interface for decorative styling in a theme.
- */
-/**
  * UI Fabric color palette.
  */
 /**

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectExpression extends Node {
+trait ObjectExpression
+  extends Node
+     with Expression {
   var properties: js.Array[ObjectProperty | ObjectMethod | SpreadProperty]
   @JSName("type")
   var type_ObjectExpression: babelDashTypesLib.babelDashTypesLibStrings.ObjectExpression

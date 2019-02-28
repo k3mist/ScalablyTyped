@@ -651,10 +651,6 @@ object PinpointNs extends js.Object {
   
   trait ApplicationResponse extends js.Object {
     /**
-      * The arn for the application.
-      */
-    var Arn: js.UndefOr[__string] = js.undefined
-    /**
       * The unique application ID.
       */
     var Id: js.UndefOr[__string] = js.undefined
@@ -662,10 +658,6 @@ object PinpointNs extends js.Object {
       * The display name of the application.
       */
     var Name: js.UndefOr[__string] = js.undefined
-    /**
-      * The Tags for the application.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait ApplicationSettingsResource extends js.Object {
@@ -933,10 +925,6 @@ object PinpointNs extends js.Object {
       */
     var ApplicationId: js.UndefOr[__string] = js.undefined
     /**
-      * The arn for the campaign.
-      */
-    var Arn: js.UndefOr[__string] = js.undefined
-    /**
       * The date the campaign was created in ISO 8601 format.
       */
     var CreationDate: js.UndefOr[__string] = js.undefined
@@ -1009,10 +997,6 @@ object PinpointNs extends js.Object {
       * The campaign version number.
       */
     var Version: js.UndefOr[__integer] = js.undefined
-    /**
-      * The Tags for the campaign.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait CampaignSmsMessage extends js.Object {
@@ -1115,10 +1099,6 @@ object PinpointNs extends js.Object {
       * The display name of the application. Used in the Amazon Pinpoint console.
       */
     var Name: js.UndefOr[__string] = js.undefined
-    /**
-      * The Tags for the app.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait CreateCampaignRequest extends js.Object {
@@ -2924,14 +2904,6 @@ object PinpointNs extends js.Object {
     var EventsItemResponse: js.UndefOr[MapOfEventItemResponse] = js.undefined
   }
   
-  trait ListTagsForResourceRequest extends js.Object {
-    var ResourceArn: __string
-  }
-  
-  trait ListTagsForResourceResponse extends js.Object {
-    var TagsModel: TagsModel
-  }
-  
   trait MapOfAddressConfiguration
     extends /* key */ org.scalablytyped.runtime.StringDictionary[AddressConfiguration]
   
@@ -3689,10 +3661,6 @@ object PinpointNs extends js.Object {
       */
     var ApplicationId: js.UndefOr[__string] = js.undefined
     /**
-      * The arn for the segment.
-      */
-    var Arn: js.UndefOr[__string] = js.undefined
-    /**
       * The date and time when the segment was created.
       */
     var CreationDate: js.UndefOr[__string] = js.undefined
@@ -3730,10 +3698,6 @@ object PinpointNs extends js.Object {
       * The segment version number.
       */
     var Version: js.UndefOr[__integer] = js.undefined
-    /**
-      * The Tags for the segment.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait SegmentsResponse extends js.Object {
@@ -3861,15 +3825,6 @@ object PinpointNs extends js.Object {
       * The textual data of the content.
       */
     var Data: js.UndefOr[__string] = js.undefined
-  }
-  
-  trait TagResourceRequest extends js.Object {
-    var ResourceArn: __string
-    var TagsModel: TagsModel
-  }
-  
-  trait TagsModel extends js.Object {
-    var tags: MapOf__string
   }
   
   trait TreatmentResource extends js.Object {
@@ -5112,29 +5067,6 @@ object PinpointNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * 
-      */
-    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def listTagsForResource(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListTagsForResourceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-      * 
-      */
-    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def listTagsForResource(
-      params: ListTagsForResourceRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListTagsForResourceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
       * Returns information about the specified phone number.
       */
     def phoneNumberValidate(): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5272,36 +5204,6 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-      * 
-      */
-    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def tagResource(
-      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
-    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-      * 
-      */
-    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def tagResource(
-      params: TagResourceRequest,
-      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
-    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-      * 
-      */
-    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def untagResource(
-      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
-    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-      * 
-      */
-    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    def untagResource(
-      params: UntagResourceRequest,
-      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
-    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Update an ADM channel.
       */
@@ -5647,14 +5549,6 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  }
-  
-  trait UntagResourceRequest extends js.Object {
-    var ResourceArn: __string
-    /**
-      * The key(s) of tag to be deleted
-      */
-    var TagKeys: ListOf__string
   }
   
   trait UpdateAdmChannelRequest extends js.Object {
@@ -6004,10 +5898,6 @@ object PinpointNs extends js.Object {
       * The custom name of a variation of the campaign used for A/B testing.
       */
     var TreatmentName: js.UndefOr[__string] = js.undefined
-    /**
-      * The Tags for the campaign.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait WriteEventStream extends js.Object {
@@ -6036,10 +5926,6 @@ object PinpointNs extends js.Object {
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
       */
     var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
-    /**
-      * The Tags for the segments.
-      */
-    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait WriteTreatmentResource extends js.Object {
@@ -6065,20 +5951,58 @@ object PinpointNs extends js.Object {
     var TreatmentName: js.UndefOr[__string] = js.undefined
   }
   
+  trait _Action extends js.Object
+  
+  trait _AttributeType extends js.Object
+  
+  trait _CampaignStatus extends js.Object
+  
+  trait _ChannelType extends js.Object
+  
+  trait _DeliveryStatus extends js.Object
+  
+  trait _DimensionType extends js.Object
+  
+  trait _Duration extends js.Object
+  
+  trait _FilterType extends js.Object
+  
+  trait _Format extends js.Object
+  
+  trait _Frequency extends js.Object
+  
+  trait _Include extends js.Object
+  
+  trait _JobStatus extends js.Object
+  
+  trait _MessageType extends js.Object
+  
+  trait _Mode extends js.Object
+  
+  trait _RecencyType extends js.Object
+  
+  trait _SegmentType extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _Type extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type Action = awsDashSdkLib.awsDashSdkLibStrings.OPEN_APP | awsDashSdkLib.awsDashSdkLibStrings.DEEP_LINK | awsDashSdkLib.awsDashSdkLibStrings.URL | java.lang.String
-  type AttributeType = awsDashSdkLib.awsDashSdkLibStrings.INCLUSIVE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUSIVE | java.lang.String
-  type CampaignStatus = awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED | awsDashSdkLib.awsDashSdkLibStrings.EXECUTING | awsDashSdkLib.awsDashSdkLibStrings.PENDING_NEXT_RUN | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.PAUSED | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
-  type ChannelType = awsDashSdkLib.awsDashSdkLibStrings.GCM | awsDashSdkLib.awsDashSdkLibStrings.APNS | awsDashSdkLib.awsDashSdkLibStrings.APNS_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.ADM | awsDashSdkLib.awsDashSdkLibStrings.SMS | awsDashSdkLib.awsDashSdkLibStrings.VOICE | awsDashSdkLib.awsDashSdkLibStrings.EMAIL | awsDashSdkLib.awsDashSdkLibStrings.BAIDU | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
+  type Action = _Action | java.lang.String
+  type AttributeType = _AttributeType | java.lang.String
+  type CampaignStatus = _CampaignStatus | java.lang.String
+  type ChannelType = _ChannelType | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DeliveryStatus = awsDashSdkLib.awsDashSdkLibStrings.SUCCESSFUL | awsDashSdkLib.awsDashSdkLibStrings.THROTTLED | awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.PERMANENT_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.OPT_OUT | awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE | java.lang.String
-  type DimensionType = awsDashSdkLib.awsDashSdkLibStrings.INCLUSIVE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUSIVE | java.lang.String
-  type Duration = awsDashSdkLib.awsDashSdkLibStrings.HR_24 | awsDashSdkLib.awsDashSdkLibStrings.DAY_7 | awsDashSdkLib.awsDashSdkLibStrings.DAY_14 | awsDashSdkLib.awsDashSdkLibStrings.DAY_30 | java.lang.String
-  type FilterType = awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ENDPOINT | java.lang.String
-  type Format = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
-  type Frequency = awsDashSdkLib.awsDashSdkLibStrings.ONCE | awsDashSdkLib.awsDashSdkLibStrings.HOURLY | awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.WEEKLY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | awsDashSdkLib.awsDashSdkLibStrings.EVENT | java.lang.String
-  type Include = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type JobStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATED | awsDashSdkLib.awsDashSdkLibStrings.INITIALIZING | awsDashSdkLib.awsDashSdkLibStrings.PROCESSING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type DeliveryStatus = _DeliveryStatus | java.lang.String
+  type DimensionType = _DimensionType | java.lang.String
+  type Duration = _Duration | java.lang.String
+  type FilterType = _FilterType | java.lang.String
+  type Format = _Format | java.lang.String
+  type Frequency = _Frequency | java.lang.String
+  type Include = _Include | java.lang.String
+  type JobStatus = _JobStatus | java.lang.String
   type ListOfActivityResponse = js.Array[ActivityResponse]
   type ListOfApplicationResponse = js.Array[ApplicationResponse]
   type ListOfCampaignResponse = js.Array[CampaignResponse]
@@ -6093,17 +6017,17 @@ object PinpointNs extends js.Object {
   type ListOfTreatmentResource = js.Array[TreatmentResource]
   type ListOfWriteTreatmentResource = js.Array[WriteTreatmentResource]
   type ListOf__string = js.Array[__string]
-  type MessageType = awsDashSdkLib.awsDashSdkLibStrings.TRANSACTIONAL | awsDashSdkLib.awsDashSdkLibStrings.PROMOTIONAL | java.lang.String
-  type Mode = awsDashSdkLib.awsDashSdkLibStrings.DELIVERY | awsDashSdkLib.awsDashSdkLibStrings.FILTER | java.lang.String
-  type RecencyType = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
-  type SegmentType = awsDashSdkLib.awsDashSdkLibStrings.DIMENSIONAL | awsDashSdkLib.awsDashSdkLibStrings.IMPORT | java.lang.String
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type Type = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
+  type MessageType = _MessageType | java.lang.String
+  type Mode = _Mode | java.lang.String
+  type RecencyType = _RecencyType | java.lang.String
+  type SegmentType = _SegmentType | java.lang.String
+  type SourceType = _SourceType | java.lang.String
+  type Type = _Type | java.lang.String
   type __blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsPinpointMod.Blob | java.lang.String
   type __boolean = scala.Boolean
   type __double = scala.Double
   type __integer = scala.Double
   type __string = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

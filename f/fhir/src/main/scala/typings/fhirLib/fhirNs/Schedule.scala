@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A container for slots of time that may be available for booking appointments
   */
-trait Schedule extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Schedule extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

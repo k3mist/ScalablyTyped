@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MatrixLike extends js.Object {
+trait MatrixLike extends _MatrixAlias {
   var a: scala.Double
   var b: scala.Double
   var c: scala.Double

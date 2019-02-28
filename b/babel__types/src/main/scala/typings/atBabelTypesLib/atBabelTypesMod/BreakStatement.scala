@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BreakStatement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait BreakStatement
+  extends CompletionStatement
+     with BaseNode
+     with Statement
+     with Terminatorless {
   var label: Identifier | scala.Null
   @JSName("type")
   var type_BreakStatement: atBabelTypesLib.atBabelTypesLibStrings.BreakStatement

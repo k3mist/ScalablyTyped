@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblyBlock extends BaseASTNode {
+trait AssemblyBlock
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_AssemblyBlock: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.AssemblyBlock
 }

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Footnote extends Parent {
+trait Footnote
+  extends Parent
+     with StaticPhrasingContent {
   @JSName("children")
   var children_Footnote: js.Array[PhrasingContent]
   @JSName("type")

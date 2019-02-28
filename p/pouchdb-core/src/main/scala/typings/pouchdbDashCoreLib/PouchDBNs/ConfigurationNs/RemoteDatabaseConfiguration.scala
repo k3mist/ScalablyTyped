@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RemoteDatabaseConfiguration extends CommonDatabaseConfiguration {
+trait RemoteDatabaseConfiguration
+  extends CommonDatabaseConfiguration
+     with DatabaseConfiguration {
   var auth: js.UndefOr[pouchdbDashCoreLib.Anon_Password] = js.undefined
   var fetch: js.UndefOr[pouchdbDashCoreLib.Fetch] = js.undefined
   /**

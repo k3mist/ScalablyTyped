@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait NetIpcConnectOptions
   extends nodeLib.netMod.IpcNetConnectOpts
-     with BaseConnectOptions {
+     with BaseConnectOptions
+     with ConnectOptions {
   @JSName("ssl")
   var ssl_NetIpcConnectOptions: js.UndefOr[stompitLib.stompitLibNumbers.`false`] = js.undefined
 }

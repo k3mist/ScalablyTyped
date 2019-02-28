@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PlainValue extends Scalar {
+trait PlainValue
+  extends Scalar
+     with ScalarNode {
   @JSName("cstNode")
   var cstNode_PlainValue: js.UndefOr[yamlLib.yamlMod.cstNs.PlainValue] = js.undefined
   @JSName("type")

@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * be placed anywhere in the room, any spawns will be able to use them regardless
   * of distance.
   */
-trait StructureExtension extends OwnedStructure[STRUCTURE_EXTENSION] {
+trait StructureExtension
+  extends OwnedStructure[STRUCTURE_EXTENSION]
+     with AnyOwnedStructure {
   /**
     * The amount of energy containing in the extension.
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomMarkingProps extends js.Object {
+trait CustomMarkingProps extends _CalendarMarkingProps {
   var markedDates: org.scalablytyped.runtime.StringDictionary[CustomMarking]
   var markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.custom
 }

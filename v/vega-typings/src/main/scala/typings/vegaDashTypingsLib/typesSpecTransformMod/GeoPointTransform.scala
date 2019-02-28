@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoPointTransform extends js.Object {
+trait GeoPointTransform extends _Transform {
   var as: js.UndefOr[js.Array[java.lang.String]] = js.undefined
    // projection name
   var fields: (vegaDashTypingsLib.typesSpecUtilMod.Vector2[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef

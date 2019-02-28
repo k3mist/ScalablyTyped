@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GriddleInitialState
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var enableSettings: js.UndefOr[scala.Boolean] = js.undefined
   var pageProperties: js.UndefOr[GriddlePageProperties] = js.undefined
   var sortMethod: js.UndefOr[
@@ -19,6 +18,6 @@ trait GriddleInitialState
     ]
   ] = js.undefined
   var sortProperties: js.UndefOr[js.Array[GriddleSortKey]] = js.undefined
-  var textProperties: js.UndefOr[griddleDashReactLib.Anon_Next] = js.undefined
+  var textProperties: js.UndefOr[griddleDashReactLib.Anon_FilterPlaceholder] = js.undefined
 }
 

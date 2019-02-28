@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * Instantly teleports your creeps to a distant room acting as a room exit tile.
   * Portals appear randomly in the central room of each sector.
   */
-trait StructurePortal extends Structure[STRUCTURE_PORTAL] {
+trait StructurePortal
+  extends Structure[STRUCTURE_PORTAL]
+     with AnyStructure {
   /**
     * If this is an inter-room portal, then this property contains a RoomPosition object leading to the point in the destination room.
     * If this is an inter-shard portal, then this property contains an object with shard and room string properties.

@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-inside
   */
-trait Inside extends js.Object {
+trait Inside
+  extends echartsLib.echartsNs.EChartOptionNs.DataZoom {
   var angleAxisIndex: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var disable: js.UndefOr[scala.Boolean] = js.undefined
   var end: js.UndefOr[scala.Double] = js.undefined

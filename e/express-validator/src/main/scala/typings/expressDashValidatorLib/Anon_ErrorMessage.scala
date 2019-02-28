@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ErrorMessage[T] extends js.Object {
+trait Anon_ErrorMessage[T]
+  extends expressDashValidatorLib.checkSchemaMod.ValidatorSchemaOptions[T] {
   var errorMessage: js.UndefOr[js.Any] = js.undefined
   var negated: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.UndefOr[T | js.Array[T]] = js.undefined

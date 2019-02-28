@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RouteDefinition
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends Route
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var name: java.lang.String
   var path: java.lang.String
 }

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * PaymentNotice request
   */
-trait PaymentNotice extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait PaymentNotice extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */

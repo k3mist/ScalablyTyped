@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/Option", "None")
 @js.native
-class None[A] protected () extends js.Object {
+class None[A] protected () extends Option[A] {
   val _A: A = js.native
   val _URI: URI = js.native
   val _tag: fpDashTsLib.fpDashTsLibStrings.None = js.native

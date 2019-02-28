@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if chat room participant presence status was updated
 		*/
-trait ChatRoomPresenceUpdate extends js.Object {
+trait ChatRoomPresenceUpdate
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Optional presence message
   			*/

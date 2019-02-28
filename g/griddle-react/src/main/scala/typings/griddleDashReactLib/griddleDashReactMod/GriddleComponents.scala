@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GriddleComponents extends js.Object {
   var Cell: js.UndefOr[
     griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImputeTransform extends js.Object {
+trait ImputeTransform extends _Transform {
   var field: java.lang.String
   var groupby: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var key: java.lang.String

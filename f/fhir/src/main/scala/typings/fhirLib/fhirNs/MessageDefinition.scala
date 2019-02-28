@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A resource that defines a type of message that can be exchanged between systems
   */
-trait MessageDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait MessageDefinition extends DomainResource {
   /**
     * Contains extended information for property 'category'.
     */

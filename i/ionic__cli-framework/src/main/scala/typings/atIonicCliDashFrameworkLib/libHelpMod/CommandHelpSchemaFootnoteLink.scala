@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CommandHelpSchemaFootnoteLink extends js.Object {
+trait CommandHelpSchemaFootnoteLink extends CommandHelpSchemaFootnote {
   val id: java.lang.String | scala.Double
   val shortUrl: js.UndefOr[java.lang.String] = js.undefined
   val `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.link

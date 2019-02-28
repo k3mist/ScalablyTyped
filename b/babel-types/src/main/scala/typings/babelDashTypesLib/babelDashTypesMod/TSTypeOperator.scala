@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSTypeOperator extends Node {
+trait TSTypeOperator
+  extends Node
+     with TSType {
   var operator: java.lang.String | scala.Null
   var typeAnnotation: TSType
   @JSName("type")

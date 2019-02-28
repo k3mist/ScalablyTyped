@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * any object in the room. However, its effectiveness highly depends on the
   * distance. Each action consumes energy.
   */
-trait StructureTower extends OwnedStructure[STRUCTURE_TOWER] {
+trait StructureTower
+  extends OwnedStructure[STRUCTURE_TOWER]
+     with AnyOwnedStructure {
   /**
     * The amount of energy containing in this structure.
     */

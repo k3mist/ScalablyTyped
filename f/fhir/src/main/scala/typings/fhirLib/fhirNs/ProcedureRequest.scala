@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A request for a procedure or diagnostic to be performed
   */
-trait ProcedureRequest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ProcedureRequest extends DomainResource {
   /**
     * Contains extended information for property 'asNeededBoolean'.
     */

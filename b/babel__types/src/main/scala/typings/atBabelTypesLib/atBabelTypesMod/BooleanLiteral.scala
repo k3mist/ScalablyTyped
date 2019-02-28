@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BooleanLiteral extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait BooleanLiteral
+  extends Expression
+     with BaseNode
+     with Immutable
+     with Literal
+     with Pureish {
   @JSName("type")
   var type_BooleanLiteral: atBabelTypesLib.atBabelTypesLibStrings.BooleanLiteral
   var value: scala.Boolean

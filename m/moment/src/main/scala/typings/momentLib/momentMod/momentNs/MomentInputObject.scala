@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MomentInputObject extends js.Object {
+trait MomentInputObject extends _MomentInput {
   var D: js.UndefOr[scala.Double] = js.undefined
   var M: js.UndefOr[scala.Double] = js.undefined
   var d: js.UndefOr[scala.Double] = js.undefined

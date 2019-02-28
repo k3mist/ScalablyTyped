@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSDeclareFunction extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSDeclareFunction
+  extends Declaration
+     with BaseNode
+     with Statement {
   var async: scala.Boolean
   var declare: scala.Boolean | scala.Null
   var generator: scala.Boolean

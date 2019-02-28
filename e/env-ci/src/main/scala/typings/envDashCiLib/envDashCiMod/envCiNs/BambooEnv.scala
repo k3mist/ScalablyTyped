@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BambooEnv extends CiEnvBase {
+trait BambooEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String
   var buildUrl: java.lang.String

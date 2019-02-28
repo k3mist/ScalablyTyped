@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExportDefaultDeclaration extends BaseNode {
+trait ExportDefaultDeclaration
+  extends BaseNode
+     with ModuleDeclaration {
   var declaration: Declaration | estreeLib.Expression
   @JSName("type")
   var type_ExportDefaultDeclaration: estreeLib.estreeLibStrings.ExportDefaultDeclaration

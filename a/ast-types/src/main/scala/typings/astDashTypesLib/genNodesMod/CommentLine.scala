@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CommentLine extends Comment {
+trait CommentLine
+  extends Comment
+     with ASTNode
+     with astDashTypesLib.genKindsMod.CommentKind
+     with astDashTypesLib.genKindsMod.PrintableKind {
   var `type`: astDashTypesLib.astDashTypesLibStrings.CommentLine
 }
 

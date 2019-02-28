@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FeatureGroupProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashLeafletLib.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait FeatureGroupProps
   extends leafletLib.leafletMod.PathOptions
      with FeatureGroupEvents {
   var children: js.UndefOr[Children] = js.undefined

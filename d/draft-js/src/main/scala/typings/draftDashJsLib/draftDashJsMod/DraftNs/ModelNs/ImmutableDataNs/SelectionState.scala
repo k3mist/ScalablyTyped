@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Record) */ 
-trait SelectionState extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof any ]: any} */ trait SelectionState extends js.Object {
   def getAnchorKey(): java.lang.String
   def getAnchorOffset(): scala.Double
   def getEndKey(): java.lang.String
@@ -19,9 +18,9 @@ trait SelectionState extends js.Object {
   def getStartKey(): java.lang.String
   def getStartOffset(): scala.Double
   /**
-                   * Return whether the specified range overlaps with an edge of the
-                   * SelectionState.
-                   */
+    * Return whether the specified range overlaps with an edge of the
+    * SelectionState.
+    */
   def hasEdgeWithin(blockKey: java.lang.String, start: scala.Double, end: scala.Double): scala.Boolean
   def isCollapsed(): scala.Boolean
   def serialize(): java.lang.String

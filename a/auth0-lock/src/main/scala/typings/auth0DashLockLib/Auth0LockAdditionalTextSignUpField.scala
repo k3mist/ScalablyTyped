@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Auth0LockAdditionalTextSignUpField extends js.Object {
+trait Auth0LockAdditionalTextSignUpField extends Auth0LockAdditionalSignUpField {
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
   var options: js.UndefOr[

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EventDefinition extends BaseASTNode {
+trait EventDefinition
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_EventDefinition: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.EventDefinition
 }

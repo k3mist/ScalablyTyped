@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DateTime extends js.Object {
+trait DateTime
+  extends dialogflowLib.dialogflowMod.entitiesNs._DateTime {
   var date_time: java.lang.String
 }
 

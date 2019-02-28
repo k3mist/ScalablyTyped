@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ProviderLike extends js.Object {
+trait ProviderLike
+  extends atUirouterCoreLib.libStateInterfaceMod.ResolveTypes {
   var deps: js.UndefOr[js.Array[_]] = js.undefined
   var provide: js.Any
   var useClass: js.UndefOr[js.Any] = js.undefined

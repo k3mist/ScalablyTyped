@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSPropertySignature extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSPropertySignature
+  extends TSTypeElement
+     with BaseNode {
   var computed: scala.Boolean | scala.Null
   var initializer: Expression | scala.Null
   var key: Expression

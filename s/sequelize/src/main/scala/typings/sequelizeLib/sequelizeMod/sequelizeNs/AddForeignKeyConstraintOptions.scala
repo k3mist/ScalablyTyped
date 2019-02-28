@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AddForeignKeyConstraintOptions extends js.Object {
+trait AddForeignKeyConstraintOptions extends AddConstraintOptions {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onDelete: java.lang.String
   var onUpdate: java.lang.String

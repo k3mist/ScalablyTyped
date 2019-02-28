@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomPropertyRadio extends CustomPropertyCommon {
+trait CustomPropertyRadio
+  extends CustomPropertyCommon
+     with CustomProperty {
   var component: qlikLib.qlikLibStrings.radiobuttons
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[CustomPropertyOptions] = js.undefined

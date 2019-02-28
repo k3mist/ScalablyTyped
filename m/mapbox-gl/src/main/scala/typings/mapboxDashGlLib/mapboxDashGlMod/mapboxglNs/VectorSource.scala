@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VectorSource extends Source {
+trait VectorSource
+  extends Source
+     with AnySourceData
+     with AnySourceImpl {
   var attribution: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var maxzoom: js.UndefOr[scala.Double] = js.undefined

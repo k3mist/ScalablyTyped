@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IUnsubscribePacket extends IPacket {
+trait IUnsubscribePacket
+  extends IPacket
+     with Packet {
   @JSName("cmd")
   var cmd_IUnsubscribePacket: mqttDashPacketLib.mqttDashPacketLibStrings.unsubscribe
   var unsubscriptions: js.Array[java.lang.String]

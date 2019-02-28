@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/grid
   */
-trait GridLayoutOptions extends ShapedLayoutOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait GridLayoutOptions extends ShapedLayoutOptions {
   // extra spacing around nodes when avoidOverlap: true
   var avoidOverlapPadding: js.UndefOr[scala.Double] = js.undefined
   // force num of columns in the grid

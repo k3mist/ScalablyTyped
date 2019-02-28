@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object screenfullLibStrings {
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change extends EventNameMap
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends EventNameMap
   
   @scala.inline
   def change: change = "change".asInstanceOf[change]

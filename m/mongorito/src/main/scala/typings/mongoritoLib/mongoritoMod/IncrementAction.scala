@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IncrementAction extends js.Object {
+trait IncrementAction extends Action {
   var fields: js.Object
   var `type`: ActionTypes
 }

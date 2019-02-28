@@ -7,15 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait IImageOptions extends IObjectOptions {
   /**
-  	 * AlignX value, part of preserveAspectRatio (one of "none", "mid", "min", "max")
-  	 * This parameter defines how the picture is aligned to its viewport when image element width differs from image width.
+  	 * key used to retrieve the texture representing this image
+  	 * @since 2.0.0
+  	 * @type String
   	 */
-  var alignX: js.UndefOr[java.lang.String] = js.undefined
+  var cacheKey: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * AlignY value, part of preserveAspectRatio (one of "none", "mid", "min", "max")
-  	 * This parameter defines how the picture is aligned to its viewport when image element height differs from image height.
+  	 * Image crop in pixels from original image size.
+  	 * @since 2.0.0
+  	 * @type Number
   	 */
-  var alignY: js.UndefOr[java.lang.String] = js.undefined
+  var cropX: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Image crop in pixels from original image size.
+  	 * @since 2.0.0
+  	 * @type Number
+  	 */
+  var cropY: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * crossOrigin value (one of "", "anonymous", "allow-credentials")
   	 */
@@ -25,10 +33,18 @@ trait IImageOptions extends IObjectOptions {
   	 */
   var filters: js.UndefOr[js.Array[IBaseFilter]] = js.undefined
   /**
-  	 * meetOrSlice value, part of preserveAspectRatio  (one of "meet", "slice").
-  	 * if meet the image is always fully visibile, if slice the viewport is always filled with image.
-  	 * @see http://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute
+  	 * minimum scale factor under which any resizeFilter is triggered to resize the image
+  	 * 0 will disable the automatic resize. 1 will trigger automatically always.
+  	 * number bigger than 1 are not implemented yet.
+  	 * @type Number
   	 */
-  var meetOrSlice: js.UndefOr[java.lang.String] = js.undefined
+  var minimumScaleTrigger: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * When calling {@link fabric.Image.getSrc}, return value from element src with `element.getAttribute('src')`.
+  	 * This allows for relative urls as image src.
+  	 * @since 2.7.0
+  	 * @type Boolean
+  	 */
+  var srcFromAttribute: js.UndefOr[scala.Boolean] = js.undefined
 }
 

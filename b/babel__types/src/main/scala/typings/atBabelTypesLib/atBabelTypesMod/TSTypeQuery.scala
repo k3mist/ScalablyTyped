@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSTypeQuery extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSTypeQuery
+  extends TSType
+     with BaseNode {
   var exprName: TSEntityName | TSImportType
   @JSName("type")
   var type_TSTypeQuery: atBabelTypesLib.atBabelTypesLibStrings.TSTypeQuery

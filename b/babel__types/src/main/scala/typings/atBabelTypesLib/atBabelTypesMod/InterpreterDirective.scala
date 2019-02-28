@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InterpreterDirective extends BaseNode {
+trait InterpreterDirective
+  extends BaseNode
+     with _Node {
   @JSName("type")
   var type_InterpreterDirective: atBabelTypesLib.atBabelTypesLibStrings.InterpreterDirective
   var value: java.lang.String

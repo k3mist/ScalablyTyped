@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Seq extends SeqBase {
+trait Seq
+  extends SeqBase
+     with SeqNode {
   @JSName("cstNode")
   var cstNode_Seq: js.UndefOr[yamlLib.yamlMod.cstNs.Seq] = js.undefined
   @JSName("items")

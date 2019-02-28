@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultGraph extends js.Object {
+trait DefaultGraph
+  extends Quad_Graph
+     with Term {
   /**
     * Contains the constant "DefaultGraph".
     */

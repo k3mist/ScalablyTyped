@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line
   */
-trait SeriesLine extends js.Object {
+trait SeriesLine extends Series {
   /**
     * Whether to enable animation.
     *

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropertyBag[T]
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[T]
 

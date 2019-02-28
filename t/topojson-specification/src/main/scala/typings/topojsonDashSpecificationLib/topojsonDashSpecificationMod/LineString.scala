@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LineString[P /* <: Properties */] extends GeometryObjectA[P] {
+trait LineString[P /* <: Properties */]
+  extends GeometryObjectA[P]
+     with GeometryObject[P] {
   var arcs: ArcIndexes
   @JSName("type")
   var type_LineString: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.LineString

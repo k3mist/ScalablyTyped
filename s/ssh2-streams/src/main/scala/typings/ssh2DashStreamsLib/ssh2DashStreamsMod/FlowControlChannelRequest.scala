@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlowControlChannelRequest extends js.Object {
+trait FlowControlChannelRequest extends ChannelRequest {
   var clientControl: scala.Boolean
   var recipient: scala.Double
   var request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`xon-xoff`

@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclareClass extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DeclareClass
+  extends Declaration
+     with BaseNode
+     with Flow
+     with FlowDeclaration
+     with Statement {
   var body: ObjectTypeAnnotation
   var `extends`: js.Array[InterfaceExtends] | scala.Null
   var id: Identifier

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait APIResponseSuccess extends js.Object {
+trait APIResponseSuccess extends APIResponse {
   var data: APIResponseData
   var meta: APIResponseMeta
 }

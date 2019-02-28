@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LimitParams extends js.Object {
+trait LimitParams extends ErrorParameters {
   var limit: scala.Double
 }
 

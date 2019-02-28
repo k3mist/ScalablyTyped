@@ -5,7 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WhileStatement extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait WhileStatement
+  extends BlockParent
+     with BaseNode
+     with Loop
+     with Scopable
+     with Statement
+     with While {
   var body: BlockStatement | Statement
   var test: Expression
   @JSName("type")

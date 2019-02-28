@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait SslConnectOptions
   extends BaseConnectOptions
-     with nodeLib.tlsMod.ConnectionOptions {
+     with nodeLib.tlsMod.ConnectionOptions
+     with ConnectOptions {
   @JSName("ssl")
   var ssl_SslConnectOptions: stompitLib.stompitLibNumbers.`true`
 }

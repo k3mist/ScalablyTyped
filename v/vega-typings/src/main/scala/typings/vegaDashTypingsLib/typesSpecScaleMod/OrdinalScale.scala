@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OrdinalScale extends BaseScale {
-  var domainImplicit: js.UndefOr[scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
+trait OrdinalScale
+  extends BaseScale
+     with Scale {
   var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   var range: js.UndefOr[RangeScheme | ScaleData] = js.undefined
   @JSName("type")

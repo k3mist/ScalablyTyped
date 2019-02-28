@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IpcSocketConnectOpts extends js.Object {
+trait IpcSocketConnectOpts extends SocketConnectOpts {
   var path: java.lang.String
 }
 

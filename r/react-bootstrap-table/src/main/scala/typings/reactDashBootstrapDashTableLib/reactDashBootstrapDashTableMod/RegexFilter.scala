@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RegexFilter extends js.Object {
+trait RegexFilter extends _Filter {
   /**
   	 * Default value
   	 */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ItemSimpleResponse extends js.Object {
+trait ItemSimpleResponse extends RichResponseItem {
   var simpleResponse: SimpleResponse
 }
 

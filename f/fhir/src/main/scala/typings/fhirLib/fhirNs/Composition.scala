@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A set of resources composed into a single coherent clinical statement with clinical attestation
   */
-trait Composition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Composition extends DomainResource {
   /**
     * Contains extended information for property 'confidentiality'.
     */

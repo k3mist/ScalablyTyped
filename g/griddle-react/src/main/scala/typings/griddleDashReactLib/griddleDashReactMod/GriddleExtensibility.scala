@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GriddleExtensibility extends js.Object {
   var components: js.UndefOr[GriddleComponents] = js.undefined
   var events: js.UndefOr[GriddleEvents] = js.undefined

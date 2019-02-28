@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat history received
 		*/
-trait ChatHistoryReceived extends js.Object {
+trait ChatHistoryReceived
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/

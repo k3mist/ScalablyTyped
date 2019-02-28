@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ValueSignalValue extends js.Object {
+trait Anon_ValueSignalValue
+  extends vegaDashTypingsLib.typesSpecOnDashEventsMod._Update {
   var value: vegaDashTypingsLib.typesSpecSignalMod.SignalValue
 }
 

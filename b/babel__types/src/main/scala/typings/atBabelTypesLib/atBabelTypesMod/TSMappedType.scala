@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSMappedType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSMappedType
+  extends TSType
+     with BaseNode {
   var optional: scala.Boolean | scala.Null
   var readonly: scala.Boolean | scala.Null
   var typeAnnotation: TSType | scala.Null

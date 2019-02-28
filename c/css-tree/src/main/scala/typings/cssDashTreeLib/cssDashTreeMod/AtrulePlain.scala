@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AtrulePlain extends CssNodeCommon {
+trait AtrulePlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var block: BlockPlain | scala.Null
   var name: java.lang.String
   var prelude: AtrulePreludePlain | Raw | scala.Null

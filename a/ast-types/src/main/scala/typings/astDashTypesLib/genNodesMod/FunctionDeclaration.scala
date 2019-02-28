@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Function, 'type' | 'id'> ]: ast-types.ast-types/gen/nodes.Function[P]}
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Declaration, 'type'> ]: ast-types.ast-types/gen/nodes.Declaration[P]} */ trait FunctionDeclaration extends js.Object {
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Declaration, 'type'> ]: ast-types.ast-types/gen/nodes.Declaration[P]} */ trait FunctionDeclaration
+  extends ASTNode
+     with astDashTypesLib.genKindsMod.DeclarationKind
+     with astDashTypesLib.genKindsMod.FunctionKind
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PrintableKind
+     with astDashTypesLib.genKindsMod.StatementKind {
   var id: astDashTypesLib.genKindsMod.IdentifierKind
   var `type`: astDashTypesLib.astDashTypesLibStrings.FunctionDeclaration
 }

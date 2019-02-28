@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateExpression extends Node {
+trait UpdateExpression
+  extends Node
+     with Expression {
   var argument: Expression
   var operator: babelDashTypesLib.babelDashTypesLibStrings.`++` | babelDashTypesLib.babelDashTypesLibStrings.`--`
   var prefix: scala.Boolean

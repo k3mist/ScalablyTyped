@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MatchesRequestObject extends js.Object {
+trait MatchesRequestObject extends RequestObject {
   var blue1: js.UndefOr[StringRequest] = js.undefined
   var blue2: js.UndefOr[StringRequest] = js.undefined
   var blue3: js.UndefOr[StringRequest] = js.undefined

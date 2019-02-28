@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConditionalExpression extends Node {
+trait ConditionalExpression
+  extends Node
+     with Conditional
+     with Expression {
   var alternate: Expression
   var consequent: Expression
   var test: Expression

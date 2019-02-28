@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TElementNode extends TNode {
+trait TElementNode
+  extends TNode
+     with TNodeWithLocalRefs {
   @JSName("child")
   var child_TElementNode: TElementNode | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode | scala.Null
   /**

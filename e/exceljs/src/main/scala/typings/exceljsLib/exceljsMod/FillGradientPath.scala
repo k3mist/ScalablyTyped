@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FillGradientPath extends js.Object {
+trait FillGradientPath extends Fill {
   /**
   	 * For 'path' gradient. Specifies the relative coordinates for the start of the path.
   	 * 'left' and 'top' values range from 0 to 1

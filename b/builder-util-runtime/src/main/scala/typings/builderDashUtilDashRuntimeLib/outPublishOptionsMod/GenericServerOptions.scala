@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GenericServerOptions extends PublishConfiguration {
+trait GenericServerOptions
+  extends PublishConfiguration
+     with _AllPublishOptions {
   /**
     * The channel.
     * @default latest

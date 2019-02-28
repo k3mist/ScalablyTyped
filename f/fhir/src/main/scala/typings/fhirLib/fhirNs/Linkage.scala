@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Links records for 'same' item
   */
-trait Linkage extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Linkage extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */

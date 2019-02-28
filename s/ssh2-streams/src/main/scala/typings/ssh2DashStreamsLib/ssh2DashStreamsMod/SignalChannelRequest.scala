@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SignalChannelRequest extends js.Object {
+trait SignalChannelRequest extends ChannelRequest {
   var recipient: scala.Double
   var request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.signal
   var signal: java.lang.String

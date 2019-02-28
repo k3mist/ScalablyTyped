@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait LinkReference
   extends Parent
-     with Reference {
+     with Reference
+     with PhrasingContent {
   @JSName("children")
   var children_LinkReference: js.Array[StaticPhrasingContent]
   @JSName("type")

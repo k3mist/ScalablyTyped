@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LocalDatabaseConfiguration extends CommonDatabaseConfiguration {
+trait LocalDatabaseConfiguration
+  extends CommonDatabaseConfiguration
+     with DatabaseConfiguration {
   /**
     * Enables auto compaction, which means compact() is called after
     * every change to the database.

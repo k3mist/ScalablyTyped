@@ -44,7 +44,6 @@ trait `Anon_` extends js.Object {
   var TapeVolumeHeader: java.lang.String
   var V: java.lang.String
   var X: java.lang.String
-  var `\u0000`: java.lang.String
   var g: java.lang.String
   var x: java.lang.String
 }

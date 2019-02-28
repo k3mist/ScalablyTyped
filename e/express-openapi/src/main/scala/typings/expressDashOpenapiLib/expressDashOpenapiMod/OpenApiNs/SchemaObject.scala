@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SchemaObject
   extends expressDashOpenapiLib.expressDashOpenapiMod.IJsonSchema
+     with Schema
      with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var discriminator: js.UndefOr[java.lang.String] = js.undefined
   var example: js.Any

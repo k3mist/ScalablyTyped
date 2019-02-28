@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomEmoji extends js.Object {
+trait CustomEmoji extends EmojiData {
   // colons is overridden by :id:
   var colons: js.UndefOr[java.lang.String] = js.undefined
   var emoticons: js.UndefOr[js.Array[java.lang.String]] = js.undefined

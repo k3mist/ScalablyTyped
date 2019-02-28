@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OptionsWithoutRender[Props] extends CommonOptions {
+trait OptionsWithoutRender[Props]
+  extends CommonOptions
+     with Options[Props, js.Any] {
   /**
     * Function returning a promise which returns a React component displayed on success.
     *

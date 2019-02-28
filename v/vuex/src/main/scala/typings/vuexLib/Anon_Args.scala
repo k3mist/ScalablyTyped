@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Args extends js.Object {
   var Store: org.scalablytyped.runtime.Instantiable1[
-    /* options */ vuexLib.typesMod.StoreOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any], 
-    vuexLib.typesMod.Store[js.Object]
+    /* options */ vuexLib.vuexMod.StoreOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any], 
+    vuexLib.vuexMod.Store[js.Object]
   ] = js.native
   @JSName("createNamespacedHelpers")
   var createNamespacedHelpers_Original: js.Function1[/* namespace */ java.lang.String, vuexLib.typesHelpersMod.NamespacedMappers] = js.native
@@ -19,11 +19,23 @@ trait Anon_Args extends js.Object {
     scala.Unit
   ] = js.native
   @JSName("mapActions")
-  var mapActions_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.ActionMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.ActionMethod] with (vuexLib.typesHelpersMod.FunctionMapper[vuexLib.typesMod.Dispatch, vuexLib.typesHelpersMod.ActionMethod]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[vuexLib.typesMod.Dispatch, vuexLib.typesHelpersMod.ActionMethod]) = js.native
+  var mapActions_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.ActionMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.ActionMethod] with (vuexLib.typesHelpersMod.FunctionMapper[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dispatch */ _, 
+    vuexLib.typesHelpersMod.ActionMethod
+  ]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dispatch */ _, 
+    vuexLib.typesHelpersMod.ActionMethod
+  ]) = js.native
   @JSName("mapGetters")
   var mapGetters_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.Computed] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.Computed] = js.native
   @JSName("mapMutations")
-  var mapMutations_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.MutationMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.MutationMethod] with (vuexLib.typesHelpersMod.FunctionMapper[vuexLib.typesMod.Commit, vuexLib.typesHelpersMod.MutationMethod]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[vuexLib.typesMod.Commit, vuexLib.typesHelpersMod.MutationMethod]) = js.native
+  var mapMutations_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.MutationMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.MutationMethod] with (vuexLib.typesHelpersMod.FunctionMapper[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Commit */ _, 
+    vuexLib.typesHelpersMod.MutationMethod
+  ]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Commit */ _, 
+    vuexLib.typesHelpersMod.MutationMethod
+  ]) = js.native
   @JSName("mapState")
   var mapState_Original: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.Computed] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.Computed] with vuexLib.typesHelpersMod.MapperForState with vuexLib.typesHelpersMod.MapperForStateWithNamespace = js.native
   def createNamespacedHelpers(namespace: java.lang.String): vuexLib.typesHelpersMod.NamespacedMappers = js.native
@@ -33,7 +45,7 @@ trait Anon_Args extends js.Object {
     map: vuexLib.typesHelpersMod.Dictionary[
       java.lang.String | (js.ThisFunction2[
         /* this */ vuexLib.typesHelpersMod.CustomVue, 
-        /* fn */ vuexLib.typesMod.Dispatch, 
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dispatch */ /* fn */ _, 
         /* repeated */ _, 
         _
       ])
@@ -45,7 +57,7 @@ trait Anon_Args extends js.Object {
     map: vuexLib.typesHelpersMod.Dictionary[
       java.lang.String | (js.ThisFunction2[
         /* this */ vuexLib.typesHelpersMod.CustomVue, 
-        /* fn */ vuexLib.typesMod.Dispatch, 
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dispatch */ /* fn */ _, 
         /* repeated */ _, 
         _
       ])
@@ -60,7 +72,7 @@ trait Anon_Args extends js.Object {
     map: vuexLib.typesHelpersMod.Dictionary[
       java.lang.String | (js.ThisFunction2[
         /* this */ vuexLib.typesHelpersMod.CustomVue, 
-        /* fn */ vuexLib.typesMod.Commit, 
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Commit */ /* fn */ _, 
         /* repeated */ _, 
         _
       ])
@@ -72,7 +84,7 @@ trait Anon_Args extends js.Object {
     map: vuexLib.typesHelpersMod.Dictionary[
       java.lang.String | (js.ThisFunction2[
         /* this */ vuexLib.typesHelpersMod.CustomVue, 
-        /* fn */ vuexLib.typesMod.Commit, 
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Commit */ /* fn */ _, 
         /* repeated */ _, 
         _
       ])

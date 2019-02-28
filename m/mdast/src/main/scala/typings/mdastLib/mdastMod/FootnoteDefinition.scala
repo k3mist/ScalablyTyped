@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait FootnoteDefinition
   extends Parent
-     with Association {
+     with Association
+     with DefinitionContent {
   @JSName("children")
   var children_FootnoteDefinition: js.Array[BlockContent]
   @JSName("type")

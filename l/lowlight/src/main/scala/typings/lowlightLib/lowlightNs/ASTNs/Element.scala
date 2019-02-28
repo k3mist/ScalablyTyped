@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Element
-  extends lowlightLib.lowlightNs.ASTNs.UnistNs.Parent {
+  extends lowlightLib.lowlightNs.ASTNs.UnistNs.Parent
+     with lowlightLib.lowlightNs.HastNode {
   var properties: Properties
   var tagName: java.lang.String
   @JSName("type")

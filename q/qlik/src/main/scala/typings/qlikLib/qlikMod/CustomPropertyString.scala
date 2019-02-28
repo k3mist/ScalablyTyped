@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomPropertyString extends CustomPropertyCommon {
+trait CustomPropertyString
+  extends CustomPropertyCommon
+     with CustomProperty {
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var expression: js.UndefOr[
     qlikLib.qlikLibStrings.always | qlikLib.qlikLibStrings.optional | qlikLib.qlikLibStrings.Empty

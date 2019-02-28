@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LowHighBits extends js.Object {
+trait LowHighBits extends _Longable {
   /**
     * The high (signed) 32 bits of the long
     */

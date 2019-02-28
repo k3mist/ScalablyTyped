@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver
   */
-trait SeriesThemeRiver extends js.Object {
+trait SeriesThemeRiver extends Series {
   /**
     * Distance between thmemRiver component and the bottom side of
     * the container.

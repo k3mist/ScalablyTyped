@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlowSeq extends SeqBase {
+trait FlowSeq
+  extends SeqBase
+     with SeqNode {
   @JSName("cstNode")
   var cstNode_FlowSeq: js.UndefOr[yamlLib.yamlMod.cstNs.FlowSeq] = js.undefined
   @JSName("items")

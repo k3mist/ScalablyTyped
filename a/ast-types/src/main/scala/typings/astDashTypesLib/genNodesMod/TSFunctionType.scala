@@ -8,7 +8,13 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.TSType, 'type'> ]: ast-types.ast-types/gen/nodes.TSType[P]} */ trait TSFunctionType
   extends TSHasOptionalTypeParameters
-     with TSHasOptionalTypeAnnotation {
+     with TSHasOptionalTypeAnnotation
+     with ASTNode
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PrintableKind
+     with astDashTypesLib.genKindsMod.TSHasOptionalTypeAnnotationKind
+     with astDashTypesLib.genKindsMod.TSHasOptionalTypeParametersKind
+     with astDashTypesLib.genKindsMod.TSTypeKind {
   var parameters: js.Array[
     astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
   ]

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Explanation of Benefit resource
   */
-trait ExplanationOfBenefit extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ExplanationOfBenefit extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */

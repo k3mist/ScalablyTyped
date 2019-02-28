@@ -40,7 +40,7 @@ trait Anon_Absolute extends js.Object {
   var MozAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var MozAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
   var MozAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
   ] = js.undefined
   var MozBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -223,7 +223,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ js.Any
   ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[java.lang.String] = js.undefined
   var WebkitBackfaceVisibility: js.UndefOr[

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MetaProperty extends Node {
+trait MetaProperty
+  extends Node
+     with Expression {
   var meta: Identifier
   var property: Identifier
   @JSName("type")

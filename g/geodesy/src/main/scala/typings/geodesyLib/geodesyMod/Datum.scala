@@ -18,3 +18,5 @@ trait Datum extends js.Object {
   ]
 }
 
+trait datum extends js.Object
+

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait GeneralParameterObject
   extends ParameterObject
-     with ItemsObject {
+     with ItemsObject
+     with Parameter {
   var allowEmptyValue: js.UndefOr[scala.Boolean] = js.undefined
 }
 

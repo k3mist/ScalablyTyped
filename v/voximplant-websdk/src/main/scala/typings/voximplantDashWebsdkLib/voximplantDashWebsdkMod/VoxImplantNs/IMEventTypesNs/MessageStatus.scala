@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when sent message status changed
 		*/
-trait MessageStatus extends js.Object {
+trait MessageStatus
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User id
   			*/

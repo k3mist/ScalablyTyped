@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GriddleStyleElements[T] extends js.Object {
   var Cell: js.UndefOr[T] = js.undefined
   var Filter: js.UndefOr[T] = js.undefined

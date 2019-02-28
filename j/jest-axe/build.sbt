@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "jest-axe"
-version := "2.2-dt-20181205Z-27342d"
+version := "2.2-dt-20181205Z-9a1dde"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "axe-core" % "3.1.2-2bc0aa",
-  "org.scalablytyped" %%% "jest" % "24.0-dt-20190225Z-da7f0a",
-  "org.scalablytyped" %%% "jest-diff" % "20.0-dt-20190212Z-2c6446",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "axe-core" % "3.1.2-540146",
+  "org.scalablytyped" %%% "jest" % "24.0-dt-20190225Z-d80313",
+  "org.scalablytyped" %%% "jest-diff" % "20.0-dt-20190212Z-a364ca",
+  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

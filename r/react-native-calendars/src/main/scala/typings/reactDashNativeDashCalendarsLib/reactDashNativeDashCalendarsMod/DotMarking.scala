@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DotMarking extends js.Object {
+trait DotMarking extends Marking {
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
   var disableTouchEvent: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

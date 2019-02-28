@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait X11ChannelRequest extends js.Object {
+trait X11ChannelRequest extends ChannelRequest {
   var cookie: java.lang.String
   var protocol: java.lang.String
   var recipient: scala.Double

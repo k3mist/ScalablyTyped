@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSUnionType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait TSUnionType
+  extends TSType
+     with BaseNode {
   @JSName("type")
   var type_TSUnionType: atBabelTypesLib.atBabelTypesLibStrings.TSUnionType
   var types: js.Array[TSType]

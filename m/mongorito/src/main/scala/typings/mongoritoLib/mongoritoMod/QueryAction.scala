@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait QueryAction extends js.Object {
+trait QueryAction extends Action {
   var method: java.lang.String
   var query: js.Array[mongoritoLib.Anon_Args]
   var `type`: ActionTypes

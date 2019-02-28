@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   var boundsOptions: js.UndefOr[leafletLib.leafletMod.FitBoundsOptions] = js.undefined
   var boxZoom: js.UndefOr[scala.Boolean] = js.undefined
   var center: js.UndefOr[leafletLib.leafletMod.LatLngExpression] = js.undefined
-  var children: js.UndefOr[Children] = js.undefined
+  var children: Children
   var className: js.UndefOr[java.lang.String] = js.undefined
   // Interaction options
   var closePopupOnClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,9 +55,11 @@ import scala.scalajs.js.annotation._
   var trackResize: js.UndefOr[scala.Boolean] = js.undefined
   var transform3DLimit: js.UndefOr[scala.Double] = js.undefined
   var useFlyTo: js.UndefOr[scala.Boolean] = js.undefined
+  var viewport: js.UndefOr[Viewport] = js.undefined
   var watch: js.UndefOr[scala.Boolean] = js.undefined
   var wheelDebounceTime: js.UndefOr[scala.Double] = js.undefined
   var wheelPxPerZoomLevel: js.UndefOr[scala.Double] = js.undefined
+  var whenReady: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var worldCopyJump: js.UndefOr[scala.Boolean] = js.undefined
   var zoom: js.UndefOr[scala.Double] = js.undefined
   var zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined

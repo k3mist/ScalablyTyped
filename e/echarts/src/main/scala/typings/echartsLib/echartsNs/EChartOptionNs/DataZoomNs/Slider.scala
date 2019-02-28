@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-slider
   */
-trait Slider extends js.Object {
+trait Slider
+  extends echartsLib.echartsNs.EChartOptionNs.DataZoom {
   var angleAxisIndex: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var borderColor: js.UndefOr[java.lang.String] = js.undefined

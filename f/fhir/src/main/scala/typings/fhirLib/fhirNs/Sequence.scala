@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Information about a biological sequence
   */
-trait Sequence extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Sequence extends DomainResource {
   /**
     * Contains extended information for property 'coordinateSystem'.
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WindowChangeChannelRequest extends js.Object {
+trait WindowChangeChannelRequest extends ChannelRequest {
   var cols: scala.Double
   var height: scala.Double
   var recipient: scala.Double

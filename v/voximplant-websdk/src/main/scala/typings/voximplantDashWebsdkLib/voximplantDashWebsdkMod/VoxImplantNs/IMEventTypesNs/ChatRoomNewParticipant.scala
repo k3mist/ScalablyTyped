@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when new participant joined the chat room
 		*/
-trait ChatRoomNewParticipant extends js.Object {
+trait ChatRoomNewParticipant
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User display name
   			*/

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclarationListPlain extends CssNodeCommon {
+trait DeclarationListPlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var children: js.Array[CssNodePlain]
   @JSName("type")
   var type_DeclarationListPlain: cssDashTreeLib.cssDashTreeLibStrings.DeclarationList

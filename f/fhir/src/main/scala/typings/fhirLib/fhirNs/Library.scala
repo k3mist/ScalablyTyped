@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a library of quality improvement components
   */
-trait Library extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Library extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
     */

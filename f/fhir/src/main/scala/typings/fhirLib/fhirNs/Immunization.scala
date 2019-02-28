@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Immunization event information
   */
-trait Immunization extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Immunization extends DomainResource {
   /**
     * Contains extended information for property 'date'.
     */

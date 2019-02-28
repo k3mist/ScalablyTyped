@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Rule extends CssNodeCommon {
+trait Rule
+  extends CssNodeCommon
+     with CssNode {
   var block: Block
   var prelude: SelectorList | Raw
   @JSName("type")

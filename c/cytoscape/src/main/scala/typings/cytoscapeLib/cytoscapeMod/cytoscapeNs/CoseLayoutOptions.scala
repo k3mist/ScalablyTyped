@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/cose
   */
-trait CoseLayoutOptions extends ShapedLayoutOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait CoseLayoutOptions extends ShapedLayoutOptions {
   // Extra spacing between components in non-compound graphs
   var componentSpacing: scala.Double
   // Cooling factor (how the temperature is reduced between consecutive iterations

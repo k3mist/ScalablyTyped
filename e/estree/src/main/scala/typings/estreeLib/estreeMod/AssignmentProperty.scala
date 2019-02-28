@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssignmentProperty extends Property {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- estreeLib.estreeMod._Node because Already inherited */ trait AssignmentProperty extends Property {
   @JSName("kind")
   var kind_AssignmentProperty: estreeLib.estreeLibStrings.init
   @JSName("value")

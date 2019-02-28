@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VNode extends js.Object {
+trait VNode extends VTree {
   var children: js.Array[VTree]
   var count: scala.Double
   var descendantHooks: js.Array[_]

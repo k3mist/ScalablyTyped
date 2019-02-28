@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinuxOs extends js.Object {
+trait LinuxOs extends Os {
   var codename: js.UndefOr[java.lang.String] = js.undefined
   var dist: java.lang.String
   var os: getosLib.getosLibStrings.linux

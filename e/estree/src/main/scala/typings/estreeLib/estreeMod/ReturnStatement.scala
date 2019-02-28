@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReturnStatement extends BaseNode {
+trait ReturnStatement
+  extends BaseNode
+     with Statement {
   var argument: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
   @JSName("type")
   var type_ReturnStatement: estreeLib.estreeLibStrings.ReturnStatement

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IdSelector extends CssNodeCommon {
+trait IdSelector
+  extends CssNodeCommon
+     with CssNode
+     with CssNodePlain {
   var name: java.lang.String
   @JSName("type")
   var type_IdSelector: cssDashTreeLib.cssDashTreeLibStrings.IdSelector

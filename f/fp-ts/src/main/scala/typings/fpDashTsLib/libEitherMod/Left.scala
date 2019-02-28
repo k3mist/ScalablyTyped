@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/Either", "Left")
 @js.native
-class Left[L, A] protected () extends js.Object {
+class Left[L, A] protected () extends Either[L, A] {
   def this(value: L) = this()
   val _A: A = js.native
   val _L: L = js.native

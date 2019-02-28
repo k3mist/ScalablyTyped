@@ -22,6 +22,11 @@ import scala.scalajs.js.annotation._
   var bindStoreListeners: js.UndefOr[
     js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
   ] = js.undefined
+  /** [Method] Center this Component in its container
+  		* @returns Ext.Component this
+  		*/
+  @JSName("center")
+  var center_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Gets the current store instance
   		* @returns Ext.data.AbstractStore The store, null if one does not exist.
   		*/
@@ -70,6 +75,18 @@ import scala.scalajs.js.annotation._
       scala.Unit
     ]
   ] = js.undefined
+  /** [Method] This method is called internally by Ext ZIndexManager to signal that a floating Component has either been moved to th
+  		* @param active Boolean True to activate the Component, false to deactivate it.
+  		* @param newActive Ext.Component The newly active Component which is taking over topmost zIndex position.
+  		*/
+  @JSName("setActive")
+  var setActive_ILoadMask: js.UndefOr[
+    js.Function2[
+      /* active */ js.UndefOr[scala.Boolean], 
+      /* newActive */ js.UndefOr[IComponent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** [Method] Shows this Component rendering it first if autoRender or floating are true
   		* @returns Ext.Component this
   		*/
@@ -79,6 +96,17 @@ import scala.scalajs.js.annotation._
   var store: js.UndefOr[extjsLib.ExtNs.dataNs.IStore] = js.undefined
   /** [Config Option] (Ext.Component) */
   var target: js.UndefOr[IComponent] = js.undefined
+  /** [Method] Sends this Component to the back of lower z index than any other visible windows
+  		* @returns Ext.Component this
+  		*/
+  @JSName("toBack")
+  var toBack_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
+  /** [Method] Brings this floating Component to the front of any other visible floating Components managed by the same ZIndexManag
+  		* @param preventFocus Boolean Specify true to prevent the Component from being focused.
+  		* @returns Ext.Component this
+  		*/
+  @JSName("toFront")
+  var toFront_ILoadMask: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], IComponent]] = js.undefined
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSLiteralType extends Node {
+trait TSLiteralType
+  extends Node
+     with TSType {
   var literal: NumericLiteral | StringLiteral | BooleanLiteral
   @JSName("type")
   var type_TSLiteralType: babelDashTypesLib.babelDashTypesLibStrings.TSLiteralType

@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DeclareOpaqueType extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait DeclareOpaqueType
+  extends Declaration
+     with BaseNode
+     with Flow
+     with FlowDeclaration
+     with Statement {
   var id: Identifier
   var supertype: FlowType | scala.Null
   var typeParameters: TypeParameterDeclaration | scala.Null

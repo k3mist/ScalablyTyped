@@ -46,7 +46,7 @@ trait MediaConvert
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Permanently cancel a job. Once you have canceled a job, you can't start it again.
+    * Permanently remove a job from a queue. Once you have canceled a job, you can't start it again. You can't delete a running job.
     */
   def cancelJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CancelJobResponse, 
@@ -63,7 +63,7 @@ trait MediaConvert
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Permanently cancel a job. Once you have canceled a job, you can't start it again.
+    * Permanently remove a job from a queue. Once you have canceled a job, you can't start it again. You can't delete a running job.
     */
   def cancelJob(params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CancelJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CancelJobResponse, 

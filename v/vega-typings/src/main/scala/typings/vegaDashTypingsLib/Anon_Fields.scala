@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Fields extends js.Object {
+trait Anon_Fields
+  extends vegaDashTypingsLib.typesSpecScaleMod.MultiDataRef {
   var fields: js.Array[
     (js.Array[java.lang.String | scala.Double | scala.Boolean]) | vegaDashTypingsLib.typesSpecScaleMod.DataRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ]

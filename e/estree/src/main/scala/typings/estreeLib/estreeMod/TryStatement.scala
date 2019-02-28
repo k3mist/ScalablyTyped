@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TryStatement extends BaseNode {
+trait TryStatement
+  extends BaseNode
+     with Statement {
   var block: BlockStatement
   var finalizer: js.UndefOr[BlockStatement | scala.Null] = js.undefined
   var handler: js.UndefOr[CatchClause | scala.Null] = js.undefined

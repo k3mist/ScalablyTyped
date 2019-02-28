@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TSModuleDeclaration extends Node {
+trait TSModuleDeclaration
+  extends Node
+     with Declaration
+     with Statement {
   var body: TSModuleBlock | TSModuleDeclaration
   var declare: scala.Boolean | scala.Null
   var global: scala.Boolean | scala.Null

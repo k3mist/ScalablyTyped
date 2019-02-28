@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SocketPermission extends js.Object {
+trait SocketPermission extends Permission {
   /**
     * **Possible values includes:**
     * 'tcp-connect',

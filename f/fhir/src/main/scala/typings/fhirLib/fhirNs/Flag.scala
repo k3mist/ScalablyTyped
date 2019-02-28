@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Key information to flag to healthcare providers
   */
-trait Flag extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Flag extends DomainResource {
   /**
     * Contains extended information for property 'status'.
     */

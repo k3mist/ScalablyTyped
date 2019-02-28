@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICreateUnitTreeDelta extends IDelta {
+trait ICreateUnitTreeDelta
+  extends IDelta
+     with Delta {
   /**
     * The ID of the containing unit.
     * (This relates to the project tree.)

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PatternRequiredParams extends js.Object {
+trait PatternRequiredParams extends ErrorParameters {
   var missingPattern: java.lang.String
 }
 

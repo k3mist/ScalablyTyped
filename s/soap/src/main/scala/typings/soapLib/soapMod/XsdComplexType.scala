@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait XsdComplexType
   extends XsdTypeBase
+     with XsdElement
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$name")
   var $name: java.lang.String

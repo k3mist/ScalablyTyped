@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait MacConfiguration extends js.Object {
+trait MacConfiguration
+  extends appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions {
   /**
     * Paths of any extra binaries that need to be signed.
     */
@@ -66,11 +66,6 @@ import scala.scalajs.js.annotation._
     */
   val helperBundleId: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-    * The path to application icon.
-    * @default build/icon.icns
-    */
-  val icon: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  /**
     * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
     * MAS installer identity is specified in the [mas](/configuration/mas).
     */
@@ -90,10 +85,9 @@ import scala.scalajs.js.annotation._
   /**
     * The target package type: list of `default`, `dmg`, `mas`, `mas-dev`, `pkg`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`. Defaults to `default` (dmg and zip for Squirrel.Mac).
     */
-  val target: js.UndefOr[
-    (js.Array[
-      MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfiguration */ _)
-    ]) | MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfiguration */ js.Any) | scala.Null
+  @JSName("target")
+  val target_MacConfiguration: js.UndefOr[
+    (js.Array[MacOsTargetName | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration]) | MacOsTargetName | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration | scala.Null
   ] = js.undefined
   /**
     * Whether to sign app for development or for distribution.

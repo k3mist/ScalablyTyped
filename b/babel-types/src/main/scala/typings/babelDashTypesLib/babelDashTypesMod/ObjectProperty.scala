@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectProperty extends Node {
+trait ObjectProperty
+  extends Node
+     with ObjectMember
+     with Property
+     with UserWhitespacable {
   var computed: scala.Boolean
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined
   var key: Expression

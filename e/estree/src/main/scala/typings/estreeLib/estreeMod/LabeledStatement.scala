@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LabeledStatement extends BaseNode {
+trait LabeledStatement
+  extends BaseNode
+     with Statement {
   var body: Statement
   var label: Identifier
   @JSName("type")

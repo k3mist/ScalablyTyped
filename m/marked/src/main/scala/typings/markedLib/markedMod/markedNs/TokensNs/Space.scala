@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Space extends js.Object {
+trait Space
+  extends markedLib.markedMod.markedNs.Token {
   var `type`: markedLib.markedLibStrings.space
 }
 

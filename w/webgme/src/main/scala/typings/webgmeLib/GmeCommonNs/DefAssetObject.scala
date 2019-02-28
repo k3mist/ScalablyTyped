@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefAssetObject extends js.Object {
+trait DefAssetObject extends DefObject {
   var `type`: webgmeLib.webgmeLibStrings.asset
 }
 

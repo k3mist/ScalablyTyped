@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ParenthesizedExpression extends BaseNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait ParenthesizedExpression
+  extends Expression
+     with BaseNode
+     with ExpressionWrapper {
   var expression: Expression
   @JSName("type")
   var type_ParenthesizedExpression: atBabelTypesLib.atBabelTypesLibStrings.ParenthesizedExpression

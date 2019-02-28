@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NetworkInterfaceInfoIPv6 extends NetworkInterfaceBase {
+trait NetworkInterfaceInfoIPv6
+  extends NetworkInterfaceBase
+     with NetworkInterfaceInfo {
   var family: nodeLib.nodeLibStrings.IPv6
   var scopeid: scala.Double
 }

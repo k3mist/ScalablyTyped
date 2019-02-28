@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectTypeDefinition extends js.Object {
+trait ObjectTypeDefinition
+  extends TypeDefinition
+     with Node {
   var fields: js.Array[FieldDefinition]
   var interfaces: js.UndefOr[js.Array[NamedType]] = js.undefined
   var kind: java.lang.String

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExistingProvider extends ExistingSansProvider {
+trait ExistingProvider
+  extends ExistingSansProvider
+     with _Provider
+     with atAngularCoreLib.srcDiR3UnderscoreInjectorMod._SingleProvider
+     with _StaticProvider {
   /**
     * If true, then injector returns an array of instances. This is useful to allow multiple
     * providers spread across many files to provide configuration information to a common token.

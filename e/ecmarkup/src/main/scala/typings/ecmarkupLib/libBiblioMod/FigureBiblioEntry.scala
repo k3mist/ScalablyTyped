@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FigureBiblioEntry extends BiblioEntryBase {
+trait FigureBiblioEntry
+  extends BiblioEntryBase
+     with BiblioEntry {
   @JSName("id")
   var id_FigureBiblioEntry: java.lang.String
   @JSName("number")

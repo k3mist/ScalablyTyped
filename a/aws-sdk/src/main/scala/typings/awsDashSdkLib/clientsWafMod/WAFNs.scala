@@ -3850,6 +3850,32 @@ object WAFNs extends js.Object {
     var TextTransformation: TextTransformation
   }
   
+  trait _ChangeAction extends js.Object
+  
+  trait _ChangeTokenStatus extends js.Object
+  
+  trait _ComparisonOperator extends js.Object
+  
+  trait _GeoMatchConstraintValue extends js.Object
+  
+  trait _IPSetDescriptorType extends js.Object
+  
+  trait _MatchFieldType extends js.Object
+  
+  trait _PositionalConstraint extends js.Object
+  
+  trait _PredicateType extends js.Object
+  
+  trait _TextTransformation extends js.Object
+  
+  trait _WafActionType extends js.Object
+  
+  trait _WafOverrideActionType extends js.Object
+  
+  trait _WafRuleType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Action = java.lang.String
   type ActivatedRules = js.Array[ActivatedRule]
@@ -3857,15 +3883,15 @@ object WAFNs extends js.Object {
   type ByteMatchSetUpdates = js.Array[ByteMatchSetUpdate]
   type ByteMatchTargetString = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsWafMod.Blob | java.lang.String
   type ByteMatchTuples = js.Array[ByteMatchTuple]
-  type ChangeAction = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.DELETE | java.lang.String
+  type ChangeAction = _ChangeAction | java.lang.String
   type ChangeToken = java.lang.String
-  type ChangeTokenStatus = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.INSYNC | java.lang.String
+  type ChangeTokenStatus = _ChangeTokenStatus | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.EQ | awsDashSdkLib.awsDashSdkLibStrings.NE | awsDashSdkLib.awsDashSdkLibStrings.LE | awsDashSdkLib.awsDashSdkLibStrings.LT | awsDashSdkLib.awsDashSdkLibStrings.GE | awsDashSdkLib.awsDashSdkLibStrings.GT | java.lang.String
+  type ComparisonOperator = _ComparisonOperator | java.lang.String
   type Country = java.lang.String
   type ExcludedRules = js.Array[ExcludedRule]
   type GeoMatchConstraintType = awsDashSdkLib.awsDashSdkLibStrings.Country | java.lang.String
-  type GeoMatchConstraintValue = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 250 */ js.Any
+  type GeoMatchConstraintValue = _GeoMatchConstraintValue | java.lang.String
   type GeoMatchConstraints = js.Array[GeoMatchConstraint]
   type GeoMatchSetSummaries = js.Array[GeoMatchSetSummary]
   type GeoMatchSetUpdates = js.Array[GeoMatchSetUpdate]
@@ -3875,7 +3901,7 @@ object WAFNs extends js.Object {
   type HTTPVersion = java.lang.String
   type HeaderName = java.lang.String
   type HeaderValue = java.lang.String
-  type IPSetDescriptorType = awsDashSdkLib.awsDashSdkLibStrings.IPV4 | awsDashSdkLib.awsDashSdkLibStrings.IPV6 | java.lang.String
+  type IPSetDescriptorType = _IPSetDescriptorType | java.lang.String
   type IPSetDescriptorValue = java.lang.String
   type IPSetDescriptors = js.Array[IPSetDescriptor]
   type IPSetSummaries = js.Array[IPSetSummary]
@@ -3886,15 +3912,15 @@ object WAFNs extends js.Object {
   type ManagedKey = java.lang.String
   type ManagedKeys = js.Array[ManagedKey]
   type MatchFieldData = java.lang.String
-  type MatchFieldType = awsDashSdkLib.awsDashSdkLibStrings.URI | awsDashSdkLib.awsDashSdkLibStrings.QUERY_STRING | awsDashSdkLib.awsDashSdkLibStrings.HEADER | awsDashSdkLib.awsDashSdkLibStrings.METHOD | awsDashSdkLib.awsDashSdkLibStrings.BODY | awsDashSdkLib.awsDashSdkLibStrings.SINGLE_QUERY_ARG | awsDashSdkLib.awsDashSdkLibStrings.ALL_QUERY_ARGS | java.lang.String
+  type MatchFieldType = _MatchFieldType | java.lang.String
   type MetricName = java.lang.String
   type Negated = scala.Boolean
   type NextMarker = java.lang.String
   type PaginationLimit = scala.Double
   type PolicyString = java.lang.String
   type PopulationSize = scala.Double
-  type PositionalConstraint = awsDashSdkLib.awsDashSdkLibStrings.EXACTLY | awsDashSdkLib.awsDashSdkLibStrings.STARTS_WITH | awsDashSdkLib.awsDashSdkLibStrings.ENDS_WITH | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS_WORD | java.lang.String
-  type PredicateType = awsDashSdkLib.awsDashSdkLibStrings.IPMatch | awsDashSdkLib.awsDashSdkLibStrings.ByteMatch | awsDashSdkLib.awsDashSdkLibStrings.SqlInjectionMatch | awsDashSdkLib.awsDashSdkLibStrings.GeoMatch | awsDashSdkLib.awsDashSdkLibStrings.SizeConstraint | awsDashSdkLib.awsDashSdkLibStrings.XssMatch | awsDashSdkLib.awsDashSdkLibStrings.RegexMatch | java.lang.String
+  type PositionalConstraint = _PositionalConstraint | java.lang.String
+  type PredicateType = _PredicateType | java.lang.String
   type Predicates = js.Array[Predicate]
   type RateKey = awsDashSdkLib.awsDashSdkLibStrings.IP | java.lang.String
   type RateLimit = scala.Double
@@ -3924,17 +3950,17 @@ object WAFNs extends js.Object {
   type SqlInjectionMatchSetUpdates = js.Array[SqlInjectionMatchSetUpdate]
   type SqlInjectionMatchTuples = js.Array[SqlInjectionMatchTuple]
   type SubscribedRuleGroupSummaries = js.Array[SubscribedRuleGroupSummary]
-  type TextTransformation = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.COMPRESS_WHITE_SPACE | awsDashSdkLib.awsDashSdkLibStrings.HTML_ENTITY_DECODE | awsDashSdkLib.awsDashSdkLibStrings.LOWERCASE | awsDashSdkLib.awsDashSdkLibStrings.CMD_LINE | awsDashSdkLib.awsDashSdkLibStrings.URL_DECODE | java.lang.String
+  type TextTransformation = _TextTransformation | java.lang.String
   type Timestamp = stdLib.Date
   type URIString = java.lang.String
-  type WafActionType = awsDashSdkLib.awsDashSdkLibStrings.BLOCK | awsDashSdkLib.awsDashSdkLibStrings.ALLOW | awsDashSdkLib.awsDashSdkLibStrings.COUNT | java.lang.String
-  type WafOverrideActionType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.COUNT | java.lang.String
-  type WafRuleType = awsDashSdkLib.awsDashSdkLibStrings.REGULAR | awsDashSdkLib.awsDashSdkLibStrings.RATE_BASED | awsDashSdkLib.awsDashSdkLibStrings.GROUP | java.lang.String
+  type WafActionType = _WafActionType | java.lang.String
+  type WafOverrideActionType = _WafOverrideActionType | java.lang.String
+  type WafRuleType = _WafRuleType | java.lang.String
   type WebACLSummaries = js.Array[WebACLSummary]
   type WebACLUpdates = js.Array[WebACLUpdate]
   type XssMatchSetSummaries = js.Array[XssMatchSetSummary]
   type XssMatchSetUpdates = js.Array[XssMatchSetUpdate]
   type XssMatchTuples = js.Array[XssMatchTuple]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-08-24` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

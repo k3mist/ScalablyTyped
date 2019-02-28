@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_LinkText extends js.Object {
+trait Anon_LinkText
+  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.ByHash {
   var linkText: java.lang.String
 }
 

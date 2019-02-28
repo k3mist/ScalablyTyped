@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReadError extends StdError {
+trait ReadError
+  extends StdError
+     with gotLib.gotMod.gotNs.GotError {
   var name: gotLib.gotLibStrings.ReadError
 }
 

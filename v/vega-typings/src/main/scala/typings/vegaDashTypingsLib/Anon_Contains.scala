@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Contains extends js.Object {
+trait Anon_Contains
+  extends vegaDashTypingsLib.typesSpecAutosizeMod.AutoSize {
   var contains: js.UndefOr[
     vegaDashTypingsLib.vegaDashTypingsLibStrings.content | vegaDashTypingsLib.vegaDashTypingsLibStrings.padding
   ] = js.undefined

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblyIf extends BaseASTNode {
+trait AssemblyIf
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_AssemblyIf: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.AssemblyIf
 }

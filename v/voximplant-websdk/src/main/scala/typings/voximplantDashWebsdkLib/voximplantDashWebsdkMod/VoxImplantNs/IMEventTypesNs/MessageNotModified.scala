@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if error happened during instant message modification
 		*/
-trait MessageNotModified extends js.Object {
+trait MessageNotModified
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	Message new content
   			*/

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISoapFault12 extends js.Object {
+trait ISoapFault12 extends ISoapFault {
   var Fault: soapLib.Anon_Code
 }
 

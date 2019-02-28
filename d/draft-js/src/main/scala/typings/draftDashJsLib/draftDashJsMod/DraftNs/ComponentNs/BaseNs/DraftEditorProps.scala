@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraftEditorProps extends js.Object {
   var ariaActiveDescendantID: js.UndefOr[java.lang.String] = js.undefined
   var ariaAutoComplete: js.UndefOr[java.lang.String] = js.undefined
@@ -103,10 +102,9 @@ trait DraftEditorProps extends js.Object {
     ]
   ] = js.undefined
   /**
-                   * Cancelable event handlers, handled from the top level down. A handler
-                   * that returns `handled` will be the last handler to execute for that event.
-                   */
-  
+    * Cancelable event handlers, handled from the top level down. A handler
+    * that returns `handled` will be the last handler to execute for that event.
+    */
   // Useful for managing special behavior for pressing the `Return` key. E.g.
   // removing the style from an empty list item.
   var handleReturn: js.UndefOr[
@@ -125,8 +123,8 @@ trait DraftEditorProps extends js.Object {
   var onBlur: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
   var onDownArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
   /**
-                   * Non-cancelable event triggers.
-                   */
+    * Non-cancelable event triggers.
+    */
   var onEscape: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
   var onLeftArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined

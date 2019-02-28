@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Block extends js.Object {
+trait Anon_Block
+  extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs._Coordinates {
   var block: js.UndefOr[
     overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior | Anon_XYBlockBehavior | (js.Tuple2[
       overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior, 

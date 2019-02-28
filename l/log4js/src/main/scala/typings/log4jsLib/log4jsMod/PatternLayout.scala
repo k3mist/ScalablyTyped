@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PatternLayout extends js.Object {
+trait PatternLayout extends Layout {
   // specifier for the output format, using placeholders as described below
   var pattern: java.lang.String
   // user-defined tokens to be used in the pattern

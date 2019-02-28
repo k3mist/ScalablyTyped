@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A description of decision support service functionality
   */
-trait ServiceDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ServiceDefinition extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
     */

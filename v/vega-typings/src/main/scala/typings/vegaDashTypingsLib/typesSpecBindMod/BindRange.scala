@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BindRange extends BaseBinding {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- vegaDashTypingsLib.typesSpecBindMod.Binding because Already inherited */ trait BindRange extends BaseBinding {
   var input: vegaDashTypingsLib.vegaDashTypingsLibStrings.range
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined

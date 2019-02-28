@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PendingDescriptor extends js.Object {
+trait PendingDescriptor
+  extends Snapshot[js.Any] {
   var state: whenLib.whenLibStrings.pending
 }
 

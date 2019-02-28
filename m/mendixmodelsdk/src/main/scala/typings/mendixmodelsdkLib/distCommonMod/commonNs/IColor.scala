@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Representation of an RGB color.
   */
-trait IColor extends js.Object {
+trait IColor
+  extends mendixmodelsdkLib.distSdkInternalDeltasDeltasMod._PrimitiveValue {
   var blue: scala.Double
   var green: scala.Double
   var red: scala.Double
