@@ -291,14 +291,14 @@ object dsl {
           _ref.asInstanceOf[js.Any],
           children)
 
-      ^.createElement(ctor, fullProps(props), children: _*)
+      ^.asInstanceOf[js.Dynamic].createElement(ctor, fullProps(props), children: _*).asInstanceOf[ReactElement[P]]
     }
 
     @inline def noprops(children: ReactNode*): ReactElement[P] = {
       if (LinkingInfo.developmentMode && js.isUndefined(ctor))
         console.warn("Component was undefined", _key.asInstanceOf[js.Any], _ref.asInstanceOf[js.Any], children)
 
-      ^.createElement(ctor, fullProps(null), children: _*)
+      ^.asInstanceOf[js.Dynamic].createElement(ctor, fullProps(null), children: _*).asInstanceOf[ReactElement[P]]
     }
   }
 }
