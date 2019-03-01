@@ -15,3 +15,20 @@ trait ReleaseReference extends js.Object {
   var name: java.lang.String
 }
 
+object ReleaseReference {
+  @scala.inline
+  def apply(
+    definitionId: scala.Double,
+    environmentDefinitionId: scala.Double,
+    environmentDefinitionName: java.lang.String,
+    environmentId: scala.Double,
+    environmentName: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String
+  ): ReleaseReference = {
+    val __obj = js.Dynamic.literal(definitionId = definitionId, environmentDefinitionId = environmentDefinitionId, environmentDefinitionName = environmentDefinitionName, environmentId = environmentId, environmentName = environmentName, id = id, name = name)
+  
+    __obj.asInstanceOf[ReleaseReference]
+  }
+}
+

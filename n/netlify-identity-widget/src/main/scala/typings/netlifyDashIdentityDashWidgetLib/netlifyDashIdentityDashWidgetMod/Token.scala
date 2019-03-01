@@ -13,3 +13,18 @@ trait Token extends js.Object {
   var token_type: java.lang.String
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    expires_at: java.lang.String | scala.Double,
+    expires_in: java.lang.String | scala.Double,
+    refresh_token: java.lang.String,
+    token_type: java.lang.String
+  ): Token = {
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], refresh_token = refresh_token, token_type = token_type)
+  
+    __obj.asInstanceOf[Token]
+  }
+}
+

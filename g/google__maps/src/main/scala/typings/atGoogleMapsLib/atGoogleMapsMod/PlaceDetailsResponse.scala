@@ -18,3 +18,16 @@ trait PlaceDetailsResponse extends js.Object {
   var status: PlaceDetailsResponseStatus
 }
 
+object PlaceDetailsResponse {
+  @scala.inline
+  def apply(
+    html_attributions: js.Array[java.lang.String],
+    result: PlaceDetailsResult,
+    status: PlaceDetailsResponseStatus
+  ): PlaceDetailsResponse = {
+    val __obj = js.Dynamic.literal(html_attributions = html_attributions, result = result, status = status)
+  
+    __obj.asInstanceOf[PlaceDetailsResponse]
+  }
+}
+

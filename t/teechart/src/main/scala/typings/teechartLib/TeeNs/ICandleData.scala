@@ -12,3 +12,20 @@ trait ICandleData extends ISeriesData {
   var open: js.Array[scala.Double]
 }
 
+object ICandleData {
+  @scala.inline
+  def apply(
+    close: js.Array[scala.Double],
+    high: js.Array[scala.Double],
+    labels: js.Array[java.lang.String],
+    low: js.Array[scala.Double],
+    open: js.Array[scala.Double],
+    source: js.Any,
+    values: js.Array[scala.Double]
+  ): ICandleData = {
+    val __obj = js.Dynamic.literal(close = close, high = high, labels = labels, low = low, open = open, source = source, values = values)
+  
+    __obj.asInstanceOf[ICandleData]
+  }
+}
+

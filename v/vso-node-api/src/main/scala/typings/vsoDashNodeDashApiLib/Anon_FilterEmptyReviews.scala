@@ -11,3 +11,12 @@ trait Anon_FilterEmptyReviews extends js.Object {
   var none: scala.Double
 }
 
+object Anon_FilterEmptyReviews {
+  @scala.inline
+  def apply(filterEmptyReviews: scala.Double, filterEmptyUserNames: scala.Double, none: scala.Double): Anon_FilterEmptyReviews = {
+    val __obj = js.Dynamic.literal(filterEmptyReviews = filterEmptyReviews, filterEmptyUserNames = filterEmptyUserNames, none = none)
+  
+    __obj.asInstanceOf[Anon_FilterEmptyReviews]
+  }
+}
+

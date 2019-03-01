@@ -10,3 +10,12 @@ trait ErrorListItem extends js.Object {
   var message: java.lang.String
 }
 
+object ErrorListItem {
+  @scala.inline
+  def apply(element: stdLib.HTMLElement, message: java.lang.String): ErrorListItem = {
+    val __obj = js.Dynamic.literal(element = element, message = message)
+  
+    __obj.asInstanceOf[ErrorListItem]
+  }
+}
+

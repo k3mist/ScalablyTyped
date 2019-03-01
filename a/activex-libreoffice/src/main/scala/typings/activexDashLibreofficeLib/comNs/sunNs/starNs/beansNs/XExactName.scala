@@ -21,3 +21,17 @@ trait XExactName
   def getExactName(aApproximateName: java.lang.String): java.lang.String
 }
 
+object XExactName {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getExactName: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExactName = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getExactName = getExactName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XExactName]
+  }
+}
+

@@ -35,3 +35,25 @@ trait XFrames
   def remove(xFrame: XFrame): scala.Unit
 }
 
+object XFrames {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    append: js.Function1[XFrame, scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryFrames: js.Function1[scala.Double, activexDashInteropLib.SafeArray[XFrame]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[XFrame, scala.Unit]
+  ): XFrames = {
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, append = append, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, queryFrames = queryFrames, queryInterface = queryInterface, release = release, remove = remove)
+  
+    __obj.asInstanceOf[XFrames]
+  }
+}
+

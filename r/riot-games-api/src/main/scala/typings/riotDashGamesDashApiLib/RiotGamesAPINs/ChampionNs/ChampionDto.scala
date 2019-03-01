@@ -14,3 +14,19 @@ trait ChampionDto extends js.Object {
   var rankedPlayEnabled: scala.Boolean
 }
 
+object ChampionDto {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    botEnabled: scala.Boolean,
+    botMmEnabled: scala.Boolean,
+    freeToPlay: scala.Boolean,
+    id: scala.Double,
+    rankedPlayEnabled: scala.Boolean
+  ): ChampionDto = {
+    val __obj = js.Dynamic.literal(active = active, botEnabled = botEnabled, botMmEnabled = botMmEnabled, freeToPlay = freeToPlay, id = id, rankedPlayEnabled = rankedPlayEnabled)
+  
+    __obj.asInstanceOf[ChampionDto]
+  }
+}
+

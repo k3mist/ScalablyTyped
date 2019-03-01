@@ -16,3 +16,17 @@ trait IRouteSubLeg extends js.Object {
   var startDescription: java.lang.String
 }
 
+object IRouteSubLeg {
+  @scala.inline
+  def apply(
+    actualEnd: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    actualStart: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    endDescription: java.lang.String,
+    startDescription: java.lang.String
+  ): IRouteSubLeg = {
+    val __obj = js.Dynamic.literal(actualEnd = actualEnd, actualStart = actualStart, endDescription = endDescription, startDescription = startDescription)
+  
+    __obj.asInstanceOf[IRouteSubLeg]
+  }
+}
+

@@ -11,3 +11,16 @@ trait IntrospectionScalarType extends IntrospectionType {
   var name: java.lang.String
 }
 
+object IntrospectionScalarType {
+  @scala.inline
+  def apply(
+    kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.SCALAR,
+    name: java.lang.String,
+    description: java.lang.String = null
+  ): IntrospectionScalarType = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionScalarType]
+  }
+}
+

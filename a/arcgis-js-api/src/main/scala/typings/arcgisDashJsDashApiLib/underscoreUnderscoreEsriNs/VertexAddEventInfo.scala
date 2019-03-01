@@ -23,3 +23,18 @@ trait VertexAddEventInfo
   var `type`: java.lang.String
 }
 
+object VertexAddEventInfo {
+  @scala.inline
+  def apply(
+    added: js.Array[Graphic],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): VertexAddEventInfo = {
+    val __obj = js.Dynamic.literal(added = added, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[VertexAddEventInfo]
+  }
+}
+

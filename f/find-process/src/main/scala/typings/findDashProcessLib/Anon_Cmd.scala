@@ -14,3 +14,19 @@ trait Anon_Cmd extends js.Object {
   var uid: java.lang.String
 }
 
+object Anon_Cmd {
+  @scala.inline
+  def apply(
+    cmd: java.lang.String,
+    gid: java.lang.String,
+    name: java.lang.String,
+    pid: java.lang.String,
+    ppid: java.lang.String,
+    uid: java.lang.String
+  ): Anon_Cmd = {
+    val __obj = js.Dynamic.literal(cmd = cmd, gid = gid, name = name, pid = pid, ppid = ppid, uid = uid)
+  
+    __obj.asInstanceOf[Anon_Cmd]
+  }
+}
+

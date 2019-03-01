@@ -9,3 +9,20 @@ trait IPrintItemListOptionDetails extends IPrintOptionDetails {
   var items: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]
 }
 
+object IPrintItemListOptionDetails {
+  @scala.inline
+  def apply(
+    errorText: java.lang.String,
+    items: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_],
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintItemListOptionDetails = {
+    val __obj = js.Dynamic.literal(errorText = errorText, items = items, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintItemListOptionDetails]
+  }
+}
+

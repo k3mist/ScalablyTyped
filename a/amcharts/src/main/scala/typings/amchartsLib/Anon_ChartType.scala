@@ -11,3 +11,12 @@ trait Anon_ChartType extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_ChartType {
+  @scala.inline
+  def apply(chart: Anon_ChartType, `type`: java.lang.String): Anon_ChartType = {
+    val __obj = js.Dynamic.literal(chart = chart, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ChartType]
+  }
+}
+

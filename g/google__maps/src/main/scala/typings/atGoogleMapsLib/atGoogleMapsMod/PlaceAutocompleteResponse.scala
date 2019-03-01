@@ -21,3 +21,16 @@ trait PlaceAutocompleteResponse extends js.Object {
   var status: PlaceAutocompleteResponseStatus
 }
 
+object PlaceAutocompleteResponse {
+  @scala.inline
+  def apply(
+    error_message: java.lang.String,
+    predictions: js.Array[PlaceAutocompleteResult],
+    status: PlaceAutocompleteResponseStatus
+  ): PlaceAutocompleteResponse = {
+    val __obj = js.Dynamic.literal(error_message = error_message, predictions = predictions, status = status)
+  
+    __obj.asInstanceOf[PlaceAutocompleteResponse]
+  }
+}
+

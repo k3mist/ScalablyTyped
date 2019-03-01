@@ -29,3 +29,16 @@ trait XDateCategories extends js.Object {
   def setDateCategories(rDates: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XDateCategories {
+  @scala.inline
+  def apply(
+    DateCategories: activexDashInteropLib.SafeArray[scala.Double],
+    getDateCategories: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    setDateCategories: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XDateCategories = {
+    val __obj = js.Dynamic.literal(DateCategories = DateCategories, getDateCategories = getDateCategories, setDateCategories = setDateCategories)
+  
+    __obj.asInstanceOf[XDateCategories]
+  }
+}
+

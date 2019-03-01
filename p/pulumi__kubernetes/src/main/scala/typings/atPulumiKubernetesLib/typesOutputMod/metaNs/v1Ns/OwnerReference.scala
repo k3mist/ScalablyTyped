@@ -41,3 +41,19 @@ trait OwnerReference extends js.Object {
   val uid: java.lang.String
 }
 
+object OwnerReference {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    blockOwnerDeletion: scala.Boolean,
+    controller: scala.Boolean,
+    kind: java.lang.String,
+    name: java.lang.String,
+    uid: java.lang.String
+  ): OwnerReference = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, blockOwnerDeletion = blockOwnerDeletion, controller = controller, kind = kind, name = name, uid = uid)
+  
+    __obj.asInstanceOf[OwnerReference]
+  }
+}
+

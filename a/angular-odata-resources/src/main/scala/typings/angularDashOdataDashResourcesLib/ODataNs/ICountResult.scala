@@ -11,3 +11,12 @@ trait ICountResult extends js.Object {
   var result: scala.Double
 }
 
+object ICountResult {
+  @scala.inline
+  def apply($promise: angularLib.angularMod.angularNs.IPromise[_], result: scala.Double): ICountResult = {
+    val __obj = js.Dynamic.literal($promise = $promise, result = result)
+  
+    __obj.asInstanceOf[ICountResult]
+  }
+}
+

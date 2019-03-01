@@ -9,3 +9,24 @@ trait CaptionSettingsMenuItemOptions extends TextTrackMenuItemOptions {
   var kind: videoDotJsLib.videoDotJsMod.videojsNs.TextTrackNs.Kind
 }
 
+object CaptionSettingsMenuItemOptions {
+  @scala.inline
+  def apply(
+    kind: videoDotJsLib.videoDotJsMod.videojsNs.TextTrackNs.Kind,
+    track: TextTrack,
+    children: js.Array[Child] = null,
+    label: java.lang.String = null,
+    multiSelectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined
+  ): CaptionSettingsMenuItemOptions = {
+    val __obj = js.Dynamic.literal(kind = kind, track = track)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[CaptionSettingsMenuItemOptions]
+  }
+}
+

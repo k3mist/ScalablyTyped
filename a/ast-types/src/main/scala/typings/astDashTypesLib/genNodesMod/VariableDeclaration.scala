@@ -19,3 +19,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclaration
 }
 
+object VariableDeclaration {
+  @scala.inline
+  def apply(
+    declarations: js.Array[
+      astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.IdentifierKind
+    ],
+    kind: astDashTypesLib.astDashTypesLibStrings.`var` | astDashTypesLib.astDashTypesLibStrings.let | astDashTypesLib.astDashTypesLibStrings.const,
+    `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclaration
+  ): VariableDeclaration = {
+    val __obj = js.Dynamic.literal(declarations = declarations, kind = kind.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[VariableDeclaration]
+  }
+}
+

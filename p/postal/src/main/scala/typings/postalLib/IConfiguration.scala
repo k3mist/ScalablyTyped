@@ -11,3 +11,12 @@ trait IConfiguration extends js.Object {
   var resolver: IResolver
 }
 
+object IConfiguration {
+  @scala.inline
+  def apply(DEFAULT_CHANNEL: java.lang.String, SYSTEM_CHANNEL: java.lang.String, resolver: IResolver): IConfiguration = {
+    val __obj = js.Dynamic.literal(DEFAULT_CHANNEL = DEFAULT_CHANNEL, SYSTEM_CHANNEL = SYSTEM_CHANNEL, resolver = resolver)
+  
+    __obj.asInstanceOf[IConfiguration]
+  }
+}
+

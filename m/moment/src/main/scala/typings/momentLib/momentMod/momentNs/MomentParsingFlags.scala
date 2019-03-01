@@ -21,3 +21,25 @@ trait MomentParsingFlags extends js.Object {
   var userInvalidated: scala.Boolean
 }
 
+object MomentParsingFlags {
+  @scala.inline
+  def apply(
+    charsLeftOver: scala.Double,
+    empty: scala.Boolean,
+    invalidFormat: scala.Boolean,
+    invalidMonth: java.lang.String | scala.Unit,
+    iso: scala.Boolean,
+    meridiem: java.lang.String | scala.Unit,
+    nullInput: scala.Boolean,
+    overflow: scala.Double,
+    parsedDateParts: js.Array[_],
+    unusedInput: js.Array[java.lang.String],
+    unusedTokens: js.Array[java.lang.String],
+    userInvalidated: scala.Boolean
+  ): MomentParsingFlags = {
+    val __obj = js.Dynamic.literal(charsLeftOver = charsLeftOver, empty = empty, invalidFormat = invalidFormat, invalidMonth = invalidMonth.asInstanceOf[js.Any], iso = iso, meridiem = meridiem.asInstanceOf[js.Any], nullInput = nullInput, overflow = overflow, parsedDateParts = parsedDateParts, unusedInput = unusedInput, unusedTokens = unusedTokens, userInvalidated = userInvalidated)
+  
+    __obj.asInstanceOf[MomentParsingFlags]
+  }
+}
+

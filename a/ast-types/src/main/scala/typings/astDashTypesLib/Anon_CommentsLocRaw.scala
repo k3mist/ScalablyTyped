@@ -12,3 +12,18 @@ trait Anon_CommentsLocRaw extends js.Object {
   var value: scala.Double
 }
 
+object Anon_CommentsLocRaw {
+  @scala.inline
+  def apply(
+    raw: java.lang.String,
+    value: scala.Double,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsLocRaw = {
+    val __obj = js.Dynamic.literal(raw = raw, value = value)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsLocRaw]
+  }
+}
+

@@ -14,3 +14,18 @@ trait Emphasis
   var type_Emphasis: mdastLib.mdastLibStrings.emphasis
 }
 
+object Emphasis {
+  @scala.inline
+  def apply(
+    children: js.Array[PhrasingContent],
+    `type`: mdastLib.mdastLibStrings.emphasis,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null
+  ): Emphasis = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Emphasis]
+  }
+}
+

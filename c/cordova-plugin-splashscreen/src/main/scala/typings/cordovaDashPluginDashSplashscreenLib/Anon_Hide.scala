@@ -12,3 +12,12 @@ trait Anon_Hide extends js.Object {
   def show(): scala.Unit
 }
 
+object Anon_Hide {
+  @scala.inline
+  def apply(hide: js.Function0[scala.Unit], show: js.Function0[scala.Unit]): Anon_Hide = {
+    val __obj = js.Dynamic.literal(hide = hide, show = show)
+  
+    __obj.asInstanceOf[Anon_Hide]
+  }
+}
+

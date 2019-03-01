@@ -13,3 +13,20 @@ trait PartialStatement extends Node {
   var strip: StripFlags
 }
 
+object PartialStatement {
+  @scala.inline
+  def apply(
+    hash: Hash,
+    indent: java.lang.String,
+    loc: SourceLocation,
+    name: PathExpression | SubExpression,
+    params: js.Array[Expression],
+    strip: StripFlags,
+    `type`: java.lang.String
+  ): PartialStatement = {
+    val __obj = js.Dynamic.literal(hash = hash, indent = indent, loc = loc, name = name.asInstanceOf[js.Any], params = params, strip = strip, `type` = `type`)
+  
+    __obj.asInstanceOf[PartialStatement]
+  }
+}
+

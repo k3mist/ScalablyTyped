@@ -20,3 +20,25 @@ trait XLabeled extends js.Object {
   def setOwnAnchor(aAnchorPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint): scala.Unit
 }
 
+object XLabeled {
+  @scala.inline
+  def apply(
+    Label: XTitle,
+    LabelAnchor: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint,
+    Offset: activexDashInteropLib.SafeArray[scala.Double],
+    OwnAnchor: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint,
+    getLabel: js.Function0[XTitle],
+    getLabelAnchor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint],
+    getOffset: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getOwnAnchor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint],
+    setLabel: js.Function1[XTitle, scala.Unit],
+    setLabelAnchor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint, scala.Unit],
+    setOffset: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setOwnAnchor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint, scala.Unit]
+  ): XLabeled = {
+    val __obj = js.Dynamic.literal(Label = Label, LabelAnchor = LabelAnchor, Offset = Offset, OwnAnchor = OwnAnchor, getLabel = getLabel, getLabelAnchor = getLabelAnchor, getOffset = getOffset, getOwnAnchor = getOwnAnchor, setLabel = setLabel, setLabelAnchor = setLabelAnchor, setOffset = setOffset, setOwnAnchor = setOwnAnchor)
+  
+    __obj.asInstanceOf[XLabeled]
+  }
+}
+

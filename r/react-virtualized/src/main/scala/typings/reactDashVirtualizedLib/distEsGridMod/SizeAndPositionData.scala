@@ -10,3 +10,12 @@ trait SizeAndPositionData extends js.Object {
   var size: scala.Double
 }
 
+object SizeAndPositionData {
+  @scala.inline
+  def apply(offset: scala.Double, size: scala.Double): SizeAndPositionData = {
+    val __obj = js.Dynamic.literal(offset = offset, size = size)
+  
+    __obj.asInstanceOf[SizeAndPositionData]
+  }
+}
+

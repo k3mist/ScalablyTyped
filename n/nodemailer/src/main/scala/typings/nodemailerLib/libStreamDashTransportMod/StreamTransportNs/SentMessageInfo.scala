@@ -14,3 +14,16 @@ trait SentMessageInfo extends js.Object {
   var messageId: java.lang.String
 }
 
+object SentMessageInfo {
+  @scala.inline
+  def apply(
+    envelope: nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Envelope,
+    message: nodeLib.Buffer | nodeLib.streamMod.Readable,
+    messageId: java.lang.String
+  ): SentMessageInfo = {
+    val __obj = js.Dynamic.literal(envelope = envelope, message = message.asInstanceOf[js.Any], messageId = messageId)
+  
+    __obj.asInstanceOf[SentMessageInfo]
+  }
+}
+

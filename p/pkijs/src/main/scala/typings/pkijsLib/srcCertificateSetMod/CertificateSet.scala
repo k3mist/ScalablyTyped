@@ -12,3 +12,17 @@ trait CertificateSet extends js.Object {
   def toSchema(): js.Any
 }
 
+object CertificateSet {
+  @scala.inline
+  def apply(
+    certificates: js.Array[pkijsLib.srcCertificateMod.default],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): CertificateSet = {
+    val __obj = js.Dynamic.literal(certificates = certificates, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[CertificateSet]
+  }
+}
+

@@ -12,3 +12,19 @@ trait subscribeFailureArgs extends baseFailureArgs {
   var isResubscribe: scala.Boolean
 }
 
+object subscribeFailureArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    error: java.lang.String,
+    isResubscribe: scala.Boolean,
+    meta: js.Any,
+    timestamp: stdLib.Date
+  ): subscribeFailureArgs = {
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, isResubscribe = isResubscribe, meta = meta, timestamp = timestamp)
+  
+    __obj.asInstanceOf[subscribeFailureArgs]
+  }
+}
+

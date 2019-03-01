@@ -12,3 +12,17 @@ trait Anon_CLASS extends js.Object {
   var VENDOR: chromeDashAppsLib.chromeDashAppsLibStrings.vendor
 }
 
+object Anon_CLASS {
+  @scala.inline
+  def apply(
+    CLASS: chromeDashAppsLib.chromeDashAppsLibStrings.`class`,
+    RESERVED: chromeDashAppsLib.chromeDashAppsLibStrings.reserved,
+    STANDARD: chromeDashAppsLib.chromeDashAppsLibStrings.standard,
+    VENDOR: chromeDashAppsLib.chromeDashAppsLibStrings.vendor
+  ): Anon_CLASS = {
+    val __obj = js.Dynamic.literal(CLASS = CLASS, RESERVED = RESERVED, STANDARD = STANDARD, VENDOR = VENDOR)
+  
+    __obj.asInstanceOf[Anon_CLASS]
+  }
+}
+

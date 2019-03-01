@@ -64,3 +64,20 @@ trait XTableName extends js.Object {
   def setComposedName(ComposedName: java.lang.String, Type: scala.Double): scala.Unit
 }
 
+object XTableName {
+  @scala.inline
+  def apply(
+    CatalogName: java.lang.String,
+    NameForSelect: java.lang.String,
+    SchemaName: java.lang.String,
+    Table: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    TableName: java.lang.String,
+    getComposedName: js.Function2[scala.Double, scala.Boolean, java.lang.String],
+    setComposedName: js.Function2[java.lang.String, scala.Double, scala.Unit]
+  ): XTableName = {
+    val __obj = js.Dynamic.literal(CatalogName = CatalogName, NameForSelect = NameForSelect, SchemaName = SchemaName, Table = Table, TableName = TableName, getComposedName = getComposedName, setComposedName = setComposedName)
+  
+    __obj.asInstanceOf[XTableName]
+  }
+}
+

@@ -28,3 +28,22 @@ trait IPSetState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object IPSetState {
+  @scala.inline
+  def apply(
+    activate: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    detectorId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    format: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    location: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): IPSetState = {
+    val __obj = js.Dynamic.literal()
+    if (activate != null) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (detectorId != null) __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPSetState]
+  }
+}
+

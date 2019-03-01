@@ -13,3 +13,18 @@ trait TfvcItemDescriptor extends js.Object {
   var versionType: TfvcVersionType
 }
 
+object TfvcItemDescriptor {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    recursionLevel: VersionControlRecursionType,
+    version: java.lang.String,
+    versionOption: TfvcVersionOption,
+    versionType: TfvcVersionType
+  ): TfvcItemDescriptor = {
+    val __obj = js.Dynamic.literal(path = path, recursionLevel = recursionLevel, version = version, versionOption = versionOption, versionType = versionType)
+  
+    __obj.asInstanceOf[TfvcItemDescriptor]
+  }
+}
+

@@ -21,3 +21,15 @@ trait SearchDijkstraResult extends js.Object {
   def pathTo(node: NodeSingular): CollectionReturnValue
 }
 
+object SearchDijkstraResult {
+  @scala.inline
+  def apply(
+    distanceTo: js.Function1[NodeSingular, scala.Double],
+    pathTo: js.Function1[NodeSingular, CollectionReturnValue]
+  ): SearchDijkstraResult = {
+    val __obj = js.Dynamic.literal(distanceTo = distanceTo, pathTo = pathTo)
+  
+    __obj.asInstanceOf[SearchDijkstraResult]
+  }
+}
+

@@ -11,3 +11,16 @@ trait PolicyDocument extends js.Object {
   var string: java.lang.String
 }
 
+object PolicyDocument {
+  @scala.inline
+  def apply(
+    conditions: js.Array[js.Array[java.lang.String | scala.Double]],
+    expiration: java.lang.String,
+    string: java.lang.String
+  ): PolicyDocument = {
+    val __obj = js.Dynamic.literal(conditions = conditions, expiration = expiration, string = string)
+  
+    __obj.asInstanceOf[PolicyDocument]
+  }
+}
+

@@ -38,3 +38,22 @@ trait BuildOptionInputDefinition extends js.Object {
   var visibleRule: java.lang.String
 }
 
+object BuildOptionInputDefinition {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String,
+    groupName: java.lang.String,
+    help: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    label: java.lang.String,
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    required: scala.Boolean,
+    `type`: BuildOptionInputType,
+    visibleRule: java.lang.String
+  ): BuildOptionInputDefinition = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, groupName = groupName, help = help, label = label, name = name, options = options, required = required, `type` = `type`, visibleRule = visibleRule)
+  
+    __obj.asInstanceOf[BuildOptionInputDefinition]
+  }
+}
+

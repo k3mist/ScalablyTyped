@@ -21,3 +21,16 @@ trait IEventAction extends js.Object {
   def onClick(args: js.Any): scala.Unit
 }
 
+object IEventAction {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    onClick: js.Function1[js.Any, scala.Unit],
+    cssClass: java.lang.String = null
+  ): IEventAction = {
+    val __obj = js.Dynamic.literal(label = label, onClick = onClick)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    __obj.asInstanceOf[IEventAction]
+  }
+}
+

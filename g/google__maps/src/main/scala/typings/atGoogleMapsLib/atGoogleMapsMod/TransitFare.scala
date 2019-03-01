@@ -14,3 +14,12 @@ trait TransitFare extends js.Object {
   var value: scala.Double
 }
 
+object TransitFare {
+  @scala.inline
+  def apply(currency: java.lang.String, text: java.lang.String, value: scala.Double): TransitFare = {
+    val __obj = js.Dynamic.literal(currency = currency, text = text, value = value)
+  
+    __obj.asInstanceOf[TransitFare]
+  }
+}
+

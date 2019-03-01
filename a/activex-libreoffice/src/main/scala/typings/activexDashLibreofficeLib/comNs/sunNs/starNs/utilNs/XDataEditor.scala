@@ -22,3 +22,22 @@ trait XDataEditor
   def show(): scala.Unit
 }
 
+object XDataEditor {
+  @scala.inline
+  def apply(
+    Model: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    acquire: js.Function0[scala.Unit],
+    addDataEditorListener: js.Function1[XDataEditorListener, scala.Unit],
+    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDataEditorListener: js.Function1[XDataEditorListener, scala.Unit],
+    setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    show: js.Function0[scala.Unit]
+  ): XDataEditor = {
+    val __obj = js.Dynamic.literal(Model = Model, acquire = acquire, addDataEditorListener = addDataEditorListener, getModel = getModel, queryInterface = queryInterface, release = release, removeDataEditorListener = removeDataEditorListener, setModel = setModel, show = show)
+  
+    __obj.asInstanceOf[XDataEditor]
+  }
+}
+

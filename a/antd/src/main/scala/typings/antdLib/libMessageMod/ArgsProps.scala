@@ -13,3 +13,20 @@ trait ArgsProps extends js.Object {
   var `type`: NoticeType
 }
 
+object ArgsProps {
+  @scala.inline
+  def apply(
+    content: reactLib.reactMod.ReactNs.ReactNode,
+    `type`: NoticeType,
+    duration: scala.Int | scala.Double = null,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    onClose: js.Function0[scala.Unit] = null
+  ): ArgsProps = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], `type` = `type`)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    __obj.asInstanceOf[ArgsProps]
+  }
+}
+

@@ -17,3 +17,23 @@ trait GroupAll[T, TValue] extends js.Object {
   def value(): TValue
 }
 
+object GroupAll {
+  @scala.inline
+  def apply[T, TValue](
+    dispose: js.Function0[GroupAll[T, TValue]],
+    reduce: js.Function3[
+      js.Function2[js.Any, /* v */ T, js.Any], 
+      js.Function2[js.Any, /* v */ T, js.Any], 
+      js.Function0[js.Any], 
+      GroupAll[T, js.Any]
+    ],
+    reduceCount: js.Function0[GroupAll[T, TValue]],
+    reduceSum: js.Function1[Selector[T], GroupAll[T, TValue]],
+    value: js.Function0[TValue]
+  ): GroupAll[T, TValue] = {
+    val __obj = js.Dynamic.literal(dispose = dispose, reduce = reduce, reduceCount = reduceCount, reduceSum = reduceSum, value = value)
+  
+    __obj.asInstanceOf[GroupAll[T, TValue]]
+  }
+}
+

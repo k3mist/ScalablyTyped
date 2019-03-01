@@ -31,3 +31,36 @@ trait SummonerSpellDto extends js.Object {
   var vars: js.Array[SpellVarsDto]
 }
 
+object SummonerSpellDto {
+  @scala.inline
+  def apply(
+    cooldown: js.Array[scala.Double],
+    cooldownBurn: java.lang.String,
+    cost: js.Array[scala.Double],
+    costBurn: java.lang.String,
+    costType: java.lang.String,
+    description: java.lang.String,
+    effect: js.Array[js.Array[scala.Double]],
+    effectBurn: js.Array[java.lang.String],
+    id: scala.Double,
+    image: ImageDto,
+    key: java.lang.String,
+    leveltip: LevelTipDto,
+    maxrank: scala.Double,
+    modes: js.Array[java.lang.String],
+    name: java.lang.String,
+    range: js.Array[scala.Double] | java.lang.String,
+    rangeBurn: java.lang.String,
+    resource: java.lang.String,
+    sanitizedDescription: java.lang.String,
+    sanitizedTooltip: java.lang.String,
+    summonerLevel: scala.Double,
+    tooltip: java.lang.String,
+    vars: js.Array[SpellVarsDto]
+  ): SummonerSpellDto = {
+    val __obj = js.Dynamic.literal(cooldown = cooldown, cooldownBurn = cooldownBurn, cost = cost, costBurn = costBurn, costType = costType, description = description, effect = effect, effectBurn = effectBurn, id = id, image = image, key = key, leveltip = leveltip, maxrank = maxrank, modes = modes, name = name, range = range.asInstanceOf[js.Any], rangeBurn = rangeBurn, resource = resource, sanitizedDescription = sanitizedDescription, sanitizedTooltip = sanitizedTooltip, summonerLevel = summonerLevel, tooltip = tooltip, vars = vars)
+  
+    __obj.asInstanceOf[SummonerSpellDto]
+  }
+}
+

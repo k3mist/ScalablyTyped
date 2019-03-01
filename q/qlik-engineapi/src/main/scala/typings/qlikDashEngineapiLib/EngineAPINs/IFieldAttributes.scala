@@ -62,3 +62,20 @@ trait IFieldAttributes extends js.Object {
   var qnDec: scala.Double
 }
 
+object IFieldAttributes {
+  @scala.inline
+  def apply(
+    qDec: java.lang.String,
+    qFmt: java.lang.String,
+    qSAFEARRAY: js.Array[_],
+    qThou: java.lang.String,
+    qType: FieldAttributesType,
+    qUseThou: scala.Boolean,
+    qnDec: scala.Double
+  ): IFieldAttributes = {
+    val __obj = js.Dynamic.literal(qDec = qDec, qFmt = qFmt, qSAFEARRAY = qSAFEARRAY, qThou = qThou, qType = qType, qUseThou = qUseThou, qnDec = qnDec)
+  
+    __obj.asInstanceOf[IFieldAttributes]
+  }
+}
+

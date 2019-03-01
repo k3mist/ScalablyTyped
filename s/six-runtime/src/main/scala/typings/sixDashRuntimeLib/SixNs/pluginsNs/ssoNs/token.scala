@@ -12,3 +12,12 @@ trait token extends js.Object {
   var path: java.lang.String
 }
 
+object token {
+  @scala.inline
+  def apply(expiredTime: scala.Double, httpOnly: scala.Boolean, name: java.lang.String, path: java.lang.String): token = {
+    val __obj = js.Dynamic.literal(expiredTime = expiredTime, httpOnly = httpOnly, name = name, path = path)
+  
+    __obj.asInstanceOf[token]
+  }
+}
+

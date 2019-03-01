@@ -99,3 +99,43 @@ trait XRegressionCurveCalculator
   def setXYNames(aXName: java.lang.String, aYName: java.lang.String): scala.Unit
 }
 
+object XRegressionCurveCalculator {
+  @scala.inline
+  def apply(
+    CorrelationCoefficient: scala.Double,
+    Representation: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getCorrelationCoefficient: js.Function0[scala.Double],
+    getCurveValue: js.Function1[scala.Double, scala.Double],
+    getCurveValues: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      XScaling, 
+      XScaling, 
+      scala.Boolean, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+    ],
+    getFormattedRepresentation: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String
+    ],
+    getRepresentation: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    recalculateRegression: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    setRegressionProperties: js.Function4[scala.Double, scala.Boolean, scala.Double, scala.Double, scala.Unit],
+    setXYNames: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XRegressionCurveCalculator = {
+    val __obj = js.Dynamic.literal(CorrelationCoefficient = CorrelationCoefficient, Representation = Representation, acquire = acquire, getCorrelationCoefficient = getCorrelationCoefficient, getCurveValue = getCurveValue, getCurveValues = getCurveValues, getFormattedRepresentation = getFormattedRepresentation, getRepresentation = getRepresentation, queryInterface = queryInterface, recalculateRegression = recalculateRegression, release = release, setRegressionProperties = setRegressionProperties, setXYNames = setXYNames)
+  
+    __obj.asInstanceOf[XRegressionCurveCalculator]
+  }
+}
+

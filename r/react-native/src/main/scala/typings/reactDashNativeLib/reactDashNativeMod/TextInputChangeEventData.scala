@@ -11,3 +11,12 @@ trait TextInputChangeEventData extends js.Object {
   var text: java.lang.String
 }
 
+object TextInputChangeEventData {
+  @scala.inline
+  def apply(eventCount: scala.Double, target: scala.Double, text: java.lang.String): TextInputChangeEventData = {
+    val __obj = js.Dynamic.literal(eventCount = eventCount, target = target, text = text)
+  
+    __obj.asInstanceOf[TextInputChangeEventData]
+  }
+}
+

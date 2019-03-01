@@ -19,3 +19,18 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | scala.Null
 }
 
+object OpaqueType {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    impltype: astDashTypesLib.genKindsMod.FlowTypeKind,
+    supertype: astDashTypesLib.genKindsMod.FlowTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.OpaqueType,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
+  ): OpaqueType = {
+    val __obj = js.Dynamic.literal(id = id, impltype = impltype, supertype = supertype, `type` = `type`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[OpaqueType]
+  }
+}
+

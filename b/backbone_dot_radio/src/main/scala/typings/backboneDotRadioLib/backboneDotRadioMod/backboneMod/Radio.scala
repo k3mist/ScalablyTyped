@@ -12,3 +12,20 @@ trait Radio extends js.Object {
   def tuneOut(channelName: java.lang.String): Radio
 }
 
+object Radio {
+  @scala.inline
+  def apply(
+    channel: js.Function1[
+      java.lang.String, 
+      backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Channel
+    ],
+    log: js.Function3[java.lang.String, java.lang.String, /* repeated */ js.Any, scala.Unit],
+    tuneIn: js.Function1[java.lang.String, Radio],
+    tuneOut: js.Function1[java.lang.String, Radio]
+  ): Radio = {
+    val __obj = js.Dynamic.literal(channel = channel, log = log, tuneIn = tuneIn, tuneOut = tuneOut)
+  
+    __obj.asInstanceOf[Radio]
+  }
+}
+

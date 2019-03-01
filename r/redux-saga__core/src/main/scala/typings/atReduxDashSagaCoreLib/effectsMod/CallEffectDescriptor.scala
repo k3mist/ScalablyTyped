@@ -11,3 +11,12 @@ trait CallEffectDescriptor extends js.Object {
   var fn: js.Function
 }
 
+object CallEffectDescriptor {
+  @scala.inline
+  def apply(args: js.Array[_], context: js.Any, fn: js.Function): CallEffectDescriptor = {
+    val __obj = js.Dynamic.literal(args = args, context = context, fn = fn)
+  
+    __obj.asInstanceOf[CallEffectDescriptor]
+  }
+}
+

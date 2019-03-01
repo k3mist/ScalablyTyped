@@ -14,3 +14,16 @@ trait Operator
   var value: java.lang.String
 }
 
+object Operator {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Operator,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): Operator = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Operator]
+  }
+}
+

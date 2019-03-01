@@ -20,3 +20,16 @@ trait ConnectionHandle extends js.Object {
   var vendorId: chromeDashAppsLib.chromeNs.integer
 }
 
+object ConnectionHandle {
+  @scala.inline
+  def apply(
+    handle: chromeDashAppsLib.chromeNs.integer,
+    productId: chromeDashAppsLib.chromeNs.integer,
+    vendorId: chromeDashAppsLib.chromeNs.integer
+  ): ConnectionHandle = {
+    val __obj = js.Dynamic.literal(handle = handle, productId = productId, vendorId = vendorId)
+  
+    __obj.asInstanceOf[ConnectionHandle]
+  }
+}
+

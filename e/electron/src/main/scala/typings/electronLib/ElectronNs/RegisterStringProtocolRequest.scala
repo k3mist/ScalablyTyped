@@ -12,3 +12,17 @@ trait RegisterStringProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object RegisterStringProtocolRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): RegisterStringProtocolRequest = {
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[RegisterStringProtocolRequest]
+  }
+}
+

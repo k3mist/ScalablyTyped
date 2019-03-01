@@ -34,3 +34,22 @@ trait TextSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextSymbol3DLayerProperties {
+  @scala.inline
+  def apply(
+    font: FontProperties = null,
+    halo: TextSymbol3DLayerHaloProperties = null,
+    material: js.Any = null,
+    size: scala.Double | java.lang.String = null,
+    text: java.lang.String = null
+  ): TextSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (halo != null) __obj.updateDynamic("halo")(halo)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextSymbol3DLayerProperties]
+  }
+}
+

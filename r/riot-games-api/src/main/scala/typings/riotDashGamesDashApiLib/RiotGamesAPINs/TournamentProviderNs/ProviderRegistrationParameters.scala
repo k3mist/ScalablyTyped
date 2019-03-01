@@ -10,3 +10,12 @@ trait ProviderRegistrationParameters extends js.Object {
   var url: java.lang.String
 }
 
+object ProviderRegistrationParameters {
+  @scala.inline
+  def apply(region: java.lang.String, url: java.lang.String): ProviderRegistrationParameters = {
+    val __obj = js.Dynamic.literal(region = region, url = url)
+  
+    __obj.asInstanceOf[ProviderRegistrationParameters]
+  }
+}
+

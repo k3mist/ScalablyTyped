@@ -10,3 +10,17 @@ trait CardViewCustomButtonEventArgs extends ProcessingModeEventArgs {
   val visibleIndex: scala.Double
 }
 
+object CardViewCustomButtonEventArgs {
+  @scala.inline
+  def apply(
+    buttonID: java.lang.String,
+    processOnServer: scala.Boolean,
+    sender: Control,
+    visibleIndex: scala.Double
+  ): CardViewCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID, processOnServer = processOnServer, sender = sender, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[CardViewCustomButtonEventArgs]
+  }
+}
+

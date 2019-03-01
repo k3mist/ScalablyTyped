@@ -34,3 +34,26 @@ trait Metrics extends js.Object {
   var Timestamp: scala.Double
 }
 
+object Metrics {
+  @scala.inline
+  def apply(
+    Documents: scala.Double,
+    Frames: scala.Double,
+    JSEventListeners: scala.Double,
+    JSHeapTotalSize: scala.Double,
+    JSHeapUsedSize: scala.Double,
+    LayoutCount: scala.Double,
+    LayoutDuration: scala.Double,
+    Nodes: scala.Double,
+    RecalcStyleCount: scala.Double,
+    RecalcStyleDuration: scala.Double,
+    ScriptDuration: scala.Double,
+    TaskDuration: scala.Double,
+    Timestamp: scala.Double
+  ): Metrics = {
+    val __obj = js.Dynamic.literal(Documents = Documents, Frames = Frames, JSEventListeners = JSEventListeners, JSHeapTotalSize = JSHeapTotalSize, JSHeapUsedSize = JSHeapUsedSize, LayoutCount = LayoutCount, LayoutDuration = LayoutDuration, Nodes = Nodes, RecalcStyleCount = RecalcStyleCount, RecalcStyleDuration = RecalcStyleDuration, ScriptDuration = ScriptDuration, TaskDuration = TaskDuration, Timestamp = Timestamp)
+  
+    __obj.asInstanceOf[Metrics]
+  }
+}
+

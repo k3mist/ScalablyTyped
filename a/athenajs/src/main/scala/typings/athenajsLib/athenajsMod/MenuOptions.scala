@@ -11,3 +11,12 @@ trait MenuOptions extends js.Object {
   var title: java.lang.String
 }
 
+object MenuOptions {
+  @scala.inline
+  def apply(color: java.lang.String, menuItems: js.Array[MenuItem], title: java.lang.String): MenuOptions = {
+    val __obj = js.Dynamic.literal(color = color, menuItems = menuItems, title = title)
+  
+    __obj.asInstanceOf[MenuOptions]
+  }
+}
+

@@ -44,3 +44,22 @@ trait Change extends js.Object {
   var `type`: java.lang.String
 }
 
+object Change {
+  @scala.inline
+  def apply(
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    displayUri: java.lang.String,
+    id: java.lang.String,
+    location: java.lang.String,
+    message: java.lang.String,
+    messageTruncated: scala.Boolean,
+    pusher: java.lang.String,
+    timestamp: stdLib.Date,
+    `type`: java.lang.String
+  ): Change = {
+    val __obj = js.Dynamic.literal(author = author, displayUri = displayUri, id = id, location = location, message = message, messageTruncated = messageTruncated, pusher = pusher, timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[Change]
+  }
+}
+

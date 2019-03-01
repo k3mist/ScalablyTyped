@@ -39,3 +39,21 @@ trait NearestPointResult
   var vertexIndex: scala.Double
 }
 
+object NearestPointResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    coordinate: Point,
+    distance: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    isEmpty: scala.Boolean,
+    isRightSide: scala.Boolean,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    vertexIndex: scala.Double
+  ): NearestPointResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, distance = distance, hasOwnProperty = hasOwnProperty, isEmpty = isEmpty, isRightSide = isRightSide, propertyIsEnumerable = propertyIsEnumerable, vertexIndex = vertexIndex)
+  
+    __obj.asInstanceOf[NearestPointResult]
+  }
+}
+

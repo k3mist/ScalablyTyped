@@ -21,3 +21,18 @@ trait HitTestResultResults
   var mapPoint: Point
 }
 
+object HitTestResultResults {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    graphic: Graphic,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mapPoint: Point,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): HitTestResultResults = {
+    val __obj = js.Dynamic.literal(constructor = constructor, graphic = graphic, hasOwnProperty = hasOwnProperty, mapPoint = mapPoint, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[HitTestResultResults]
+  }
+}
+

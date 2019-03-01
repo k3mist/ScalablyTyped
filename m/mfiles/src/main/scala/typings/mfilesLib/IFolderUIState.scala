@@ -17,3 +17,22 @@ trait IFolderUIState extends js.Object {
   var ShowRightPaneBar: scala.Boolean
 }
 
+object IFolderUIState {
+  @scala.inline
+  def apply(
+    BottomPaneBarMinimized: scala.Boolean,
+    HitHighlightingEnabled: scala.Boolean,
+    ListingUIState: IFolderListingUIState,
+    MetadataEditorInRightPane: scala.Boolean,
+    RelativeBottomPaneHeight: scala.Double,
+    RelativeRightPaneWidth: scala.Double,
+    RightPaneBarMinimized: scala.Boolean,
+    ShowBottomPaneBar: scala.Boolean,
+    ShowRightPaneBar: scala.Boolean
+  ): IFolderUIState = {
+    val __obj = js.Dynamic.literal(BottomPaneBarMinimized = BottomPaneBarMinimized, HitHighlightingEnabled = HitHighlightingEnabled, ListingUIState = ListingUIState, MetadataEditorInRightPane = MetadataEditorInRightPane, RelativeBottomPaneHeight = RelativeBottomPaneHeight, RelativeRightPaneWidth = RelativeRightPaneWidth, RightPaneBarMinimized = RightPaneBarMinimized, ShowBottomPaneBar = ShowBottomPaneBar, ShowRightPaneBar = ShowRightPaneBar)
+  
+    __obj.asInstanceOf[IFolderUIState]
+  }
+}
+

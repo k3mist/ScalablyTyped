@@ -19,3 +19,18 @@ trait ApplicationState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApplicationState {
+  @scala.inline
+  def apply(
+    appversionLifecycle: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteSourceFromS3MaxAgeInDays] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ApplicationState = {
+    val __obj = js.Dynamic.literal()
+    if (appversionLifecycle != null) __obj.updateDynamic("appversionLifecycle")(appversionLifecycle.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationState]
+  }
+}
+

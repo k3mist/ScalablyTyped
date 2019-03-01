@@ -10,3 +10,19 @@ trait AccordionGroupClickEventArgs extends AccordionGroupCancelEventArgs {
   val htmlEvent: js.Object
 }
 
+object AccordionGroupClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    group: BootstrapAccordionGroup,
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    processOnServer: scala.Boolean,
+    sender: Control
+  ): AccordionGroupClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer, sender = sender)
+  
+    __obj.asInstanceOf[AccordionGroupClickEventArgs]
+  }
+}
+

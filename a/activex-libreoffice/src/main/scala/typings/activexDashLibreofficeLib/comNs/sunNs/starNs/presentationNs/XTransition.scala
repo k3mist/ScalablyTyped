@@ -23,3 +23,23 @@ trait XTransition
   ): scala.Unit
 }
 
+object XTransition {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    update: js.Function1[scala.Double, scala.Unit],
+    viewChanged: js.Function3[
+      XSlideShowView, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
+      scala.Unit
+    ]
+  ): XTransition = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update, viewChanged = viewChanged)
+  
+    __obj.asInstanceOf[XTransition]
+  }
+}
+

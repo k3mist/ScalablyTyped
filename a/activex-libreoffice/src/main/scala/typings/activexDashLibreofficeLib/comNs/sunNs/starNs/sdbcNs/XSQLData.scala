@@ -60,3 +60,20 @@ trait XSQLData
   def writeSQL(stream: XSQLOutput): scala.Unit
 }
 
+object XSQLData {
+  @scala.inline
+  def apply(
+    SQLTypeName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getSQLTypeName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readSQL: js.Function2[XSQLInput, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit],
+    writeSQL: js.Function1[XSQLOutput, scala.Unit]
+  ): XSQLData = {
+    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = acquire, getSQLTypeName = getSQLTypeName, queryInterface = queryInterface, readSQL = readSQL, release = release, writeSQL = writeSQL)
+  
+    __obj.asInstanceOf[XSQLData]
+  }
+}
+

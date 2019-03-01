@@ -20,3 +20,18 @@ trait TeamFieldValues extends TeamSettingsDataContractBase {
   var values: js.Array[TeamFieldValue]
 }
 
+object TeamFieldValues {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    defaultValue: java.lang.String,
+    field: FieldReference,
+    url: java.lang.String,
+    values: js.Array[TeamFieldValue]
+  ): TeamFieldValues = {
+    val __obj = js.Dynamic.literal(_links = _links, defaultValue = defaultValue, field = field, url = url, values = values)
+  
+    __obj.asInstanceOf[TeamFieldValues]
+  }
+}
+

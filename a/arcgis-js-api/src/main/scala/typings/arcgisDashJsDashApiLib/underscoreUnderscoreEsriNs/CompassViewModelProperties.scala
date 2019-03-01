@@ -22,3 +22,18 @@ trait CompassViewModelProperties extends GoToProperties {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object CompassViewModelProperties {
+  @scala.inline
+  def apply(
+    goToOverride: GoToOverride = null,
+    orientation: js.Any = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): CompassViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassViewModelProperties]
+  }
+}
+

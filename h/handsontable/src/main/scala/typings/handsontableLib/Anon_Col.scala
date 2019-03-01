@@ -15,3 +15,20 @@ trait Anon_Col extends js.Object {
   var visualRow: scala.Double
 }
 
+object Anon_Col {
+  @scala.inline
+  def apply(
+    col: scala.Double,
+    instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    row: scala.Double,
+    `type`: java.lang.String,
+    visualCol: scala.Double,
+    visualRow: scala.Double,
+    dateFormat: java.lang.String = null
+  ): Anon_Col = {
+    val __obj = js.Dynamic.literal(col = col, instance = instance, row = row, `type` = `type`, visualCol = visualCol, visualRow = visualRow)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    __obj.asInstanceOf[Anon_Col]
+  }
+}
+

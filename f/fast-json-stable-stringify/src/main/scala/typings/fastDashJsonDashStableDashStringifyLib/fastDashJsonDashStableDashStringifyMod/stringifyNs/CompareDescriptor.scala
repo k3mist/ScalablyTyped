@@ -10,3 +10,12 @@ trait CompareDescriptor extends js.Object {
   var value: js.Any
 }
 
+object CompareDescriptor {
+  @scala.inline
+  def apply(key: java.lang.String, value: js.Any): CompareDescriptor = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[CompareDescriptor]
+  }
+}
+

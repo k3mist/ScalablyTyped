@@ -52,3 +52,19 @@ trait XCloseable extends XCloseBroadcaster {
   def close(DeliverOwnership: scala.Boolean): scala.Unit
 }
 
+object XCloseable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addCloseListener: js.Function1[XCloseListener, scala.Unit],
+    close: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCloseListener: js.Function1[XCloseListener, scala.Unit]
+  ): XCloseable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addCloseListener = addCloseListener, close = close, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener)
+  
+    __obj.asInstanceOf[XCloseable]
+  }
+}
+

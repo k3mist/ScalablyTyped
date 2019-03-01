@@ -16,3 +16,12 @@ trait NetStatsReceived
   var stats: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.NetworkInfo
 }
 
+object NetStatsReceived {
+  @scala.inline
+  def apply(stats: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.NetworkInfo): NetStatsReceived = {
+    val __obj = js.Dynamic.literal(stats = stats)
+  
+    __obj.asInstanceOf[NetStatsReceived]
+  }
+}
+

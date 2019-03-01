@@ -19,3 +19,17 @@ trait XKeyCollector
   def setKeyId(id: scala.Double): scala.Unit
 }
 
+object XKeyCollector {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setKeyId: js.Function1[scala.Double, scala.Unit]
+  ): XKeyCollector = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setKeyId = setKeyId)
+  
+    __obj.asInstanceOf[XKeyCollector]
+  }
+}
+

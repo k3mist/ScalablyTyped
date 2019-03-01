@@ -11,3 +11,12 @@ trait SortStart extends js.Object {
   var node: reactLib.Element
 }
 
+object SortStart {
+  @scala.inline
+  def apply(collection: Offset, index: scala.Double, node: reactLib.Element): SortStart = {
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], index = index, node = node)
+  
+    __obj.asInstanceOf[SortStart]
+  }
+}
+

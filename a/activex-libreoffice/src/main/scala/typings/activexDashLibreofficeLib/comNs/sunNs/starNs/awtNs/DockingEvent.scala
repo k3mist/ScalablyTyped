@@ -21,3 +21,18 @@ trait DockingEvent
   var bLiveMode: scala.Boolean
 }
 
+object DockingEvent {
+  @scala.inline
+  def apply(
+    MousePos: Point,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    TrackingRectangle: Rectangle,
+    bInteractive: scala.Boolean,
+    bLiveMode: scala.Boolean
+  ): DockingEvent = {
+    val __obj = js.Dynamic.literal(MousePos = MousePos, Source = Source, TrackingRectangle = TrackingRectangle, bInteractive = bInteractive, bLiveMode = bLiveMode)
+  
+    __obj.asInstanceOf[DockingEvent]
+  }
+}
+

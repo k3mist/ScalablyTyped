@@ -25,3 +25,24 @@ trait IchooseCard extends BaseParams {
   def success_MIchooseCard(res: jweixinLib.Anon_CardList): scala.Unit
 }
 
+object IchooseCard {
+  @scala.inline
+  def apply(
+    cardId: java.lang.String,
+    cardSign: java.lang.String,
+    cardType: java.lang.String,
+    nonceStr: java.lang.String,
+    shopId: java.lang.String,
+    signType: java.lang.String,
+    success: js.Function1[jweixinLib.Anon_CardList, scala.Unit],
+    timestamp: scala.Double,
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IchooseCard = {
+    val __obj = js.Dynamic.literal(cardId = cardId, cardSign = cardSign, cardType = cardType, nonceStr = nonceStr, shopId = shopId, signType = signType, success = success, timestamp = timestamp)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IchooseCard]
+  }
+}
+

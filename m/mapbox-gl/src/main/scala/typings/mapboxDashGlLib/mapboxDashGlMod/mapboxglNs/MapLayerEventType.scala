@@ -21,3 +21,26 @@ trait MapLayerEventType extends js.Object {
   var touchstart: MapLayerTouchEvent
 }
 
+object MapLayerEventType {
+  @scala.inline
+  def apply(
+    click: MapLayerMouseEvent,
+    contextmenu: MapLayerMouseEvent,
+    dblclick: MapLayerMouseEvent,
+    mousedown: MapLayerMouseEvent,
+    mouseenter: MapLayerMouseEvent,
+    mouseleave: MapLayerMouseEvent,
+    mousemove: MapLayerMouseEvent,
+    mouseout: MapLayerMouseEvent,
+    mouseover: MapLayerMouseEvent,
+    mouseup: MapLayerMouseEvent,
+    touchcancel: MapLayerTouchEvent,
+    touchend: MapLayerTouchEvent,
+    touchstart: MapLayerTouchEvent
+  ): MapLayerEventType = {
+    val __obj = js.Dynamic.literal(click = click, contextmenu = contextmenu, dblclick = dblclick, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, touchcancel = touchcancel, touchend = touchend, touchstart = touchstart)
+  
+    __obj.asInstanceOf[MapLayerEventType]
+  }
+}
+

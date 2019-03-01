@@ -9,3 +9,12 @@ trait Map extends js.Object {
   var pm: leafletDotPmLib.leafletMod.PMNs.Map
 }
 
+object Map {
+  @scala.inline
+  def apply(pm: leafletDotPmLib.leafletMod.PMNs.Map): Map = {
+    val __obj = js.Dynamic.literal(pm = pm)
+  
+    __obj.asInstanceOf[Map]
+  }
+}
+

@@ -26,3 +26,17 @@ trait XModuleManager
   def identify(Module: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): java.lang.String
 }
 
+object XModuleManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    identify: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XModuleManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, identify = identify, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XModuleManager]
+  }
+}
+

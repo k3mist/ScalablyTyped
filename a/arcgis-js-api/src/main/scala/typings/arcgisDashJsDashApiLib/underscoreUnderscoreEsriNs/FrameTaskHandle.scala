@@ -33,3 +33,19 @@ trait FrameTaskHandle
   def resume(): scala.Unit
 }
 
+object FrameTaskHandle {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    pause: js.Function0[scala.Unit],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    remove: js.Function0[scala.Unit],
+    resume: js.Function0[scala.Unit]
+  ): FrameTaskHandle = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, pause = pause, propertyIsEnumerable = propertyIsEnumerable, remove = remove, resume = resume)
+  
+    __obj.asInstanceOf[FrameTaskHandle]
+  }
+}
+

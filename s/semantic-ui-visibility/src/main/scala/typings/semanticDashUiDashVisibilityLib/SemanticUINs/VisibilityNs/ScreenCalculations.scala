@@ -10,3 +10,12 @@ trait ScreenCalculations extends js.Object {
   var top: scala.Double
 }
 
+object ScreenCalculations {
+  @scala.inline
+  def apply(bottom: scala.Double, top: scala.Double): ScreenCalculations = {
+    val __obj = js.Dynamic.literal(bottom = bottom, top = top)
+  
+    __obj.asInstanceOf[ScreenCalculations]
+  }
+}
+

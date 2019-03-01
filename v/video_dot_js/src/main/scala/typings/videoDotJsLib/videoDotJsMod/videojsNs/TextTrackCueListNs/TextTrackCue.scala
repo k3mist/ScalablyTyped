@@ -31,3 +31,18 @@ trait TextTrackCue extends js.Object {
   var text: java.lang.String
 }
 
+object TextTrackCue {
+  @scala.inline
+  def apply(
+    endTime: scala.Double,
+    id: java.lang.String,
+    pauseOnExit: scala.Boolean,
+    startTime: scala.Double,
+    text: java.lang.String
+  ): TextTrackCue = {
+    val __obj = js.Dynamic.literal(endTime = endTime, id = id, pauseOnExit = pauseOnExit, startTime = startTime, text = text)
+  
+    __obj.asInstanceOf[TextTrackCue]
+  }
+}
+

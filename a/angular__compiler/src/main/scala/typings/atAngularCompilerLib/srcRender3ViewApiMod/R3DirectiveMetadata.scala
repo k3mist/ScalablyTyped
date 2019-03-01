@@ -67,3 +67,30 @@ trait R3DirectiveMetadata extends js.Object {
   var usesInheritance: scala.Boolean
 }
 
+object R3DirectiveMetadata {
+  @scala.inline
+  def apply(
+    host: atAngularCompilerLib.Anon_Attributes,
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])],
+    lifecycle: atAngularCompilerLib.Anon_UsesOnChanges,
+    name: java.lang.String,
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    queries: js.Array[R3QueryMetadata],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    typeArgumentCount: scala.Double,
+    typeSourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    usesInheritance: scala.Boolean,
+    deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
+    exportAs: java.lang.String = null,
+    providers: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    selector: java.lang.String = null
+  ): R3DirectiveMetadata = {
+    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, queries = queries, `type` = `type`, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[R3DirectiveMetadata]
+  }
+}
+

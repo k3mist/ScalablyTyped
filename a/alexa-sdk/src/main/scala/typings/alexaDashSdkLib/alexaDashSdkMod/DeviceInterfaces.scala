@@ -10,3 +10,12 @@ trait DeviceInterfaces extends js.Object {
   var Display: js.Any
 }
 
+object DeviceInterfaces {
+  @scala.inline
+  def apply(AudioPlayer: js.Any, Display: js.Any): DeviceInterfaces = {
+    val __obj = js.Dynamic.literal(AudioPlayer = AudioPlayer, Display = Display)
+  
+    __obj.asInstanceOf[DeviceInterfaces]
+  }
+}
+

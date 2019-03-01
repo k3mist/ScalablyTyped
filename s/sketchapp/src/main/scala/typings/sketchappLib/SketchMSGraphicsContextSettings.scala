@@ -12,3 +12,17 @@ trait SketchMSGraphicsContextSettings extends js.Object {
   var opacity: scala.Double
 }
 
+object SketchMSGraphicsContextSettings {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.graphicsContextSettings,
+    blendMode: scala.Double,
+    opacity: scala.Double,
+    do_objectID: java.lang.String = null
+  ): SketchMSGraphicsContextSettings = {
+    val __obj = js.Dynamic.literal(_class = _class, blendMode = blendMode, opacity = opacity)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSGraphicsContextSettings]
+  }
+}
+

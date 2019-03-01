@@ -9,3 +9,12 @@ trait KnockstrapCarouselDefaultsIdItemsDataConverted extends KnockstrapCarouselD
   var items: js.Any
 }
 
+object KnockstrapCarouselDefaultsIdItemsDataConverted {
+  @scala.inline
+  def apply(id: knockoutLib.KnockoutComputed[java.lang.String], items: js.Any): KnockstrapCarouselDefaultsIdItemsDataConverted = {
+    val __obj = js.Dynamic.literal(id = id, items = items)
+  
+    __obj.asInstanceOf[KnockstrapCarouselDefaultsIdItemsDataConverted]
+  }
+}
+

@@ -18,3 +18,33 @@ trait ManagedconfigurationsfordeviceResource extends js.Object {
   def update(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId): gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
 }
 
+object ManagedconfigurationsfordeviceResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForDeviceListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltDeviceIdEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ]
+  ): ManagedconfigurationsfordeviceResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[ManagedconfigurationsfordeviceResource]
+  }
+}
+

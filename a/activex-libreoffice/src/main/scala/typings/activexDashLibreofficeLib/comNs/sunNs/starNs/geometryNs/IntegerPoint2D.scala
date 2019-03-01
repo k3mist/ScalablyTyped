@@ -16,3 +16,12 @@ trait IntegerPoint2D extends js.Object {
   var Y: scala.Double
 }
 
+object IntegerPoint2D {
+  @scala.inline
+  def apply(X: scala.Double, Y: scala.Double): IntegerPoint2D = {
+    val __obj = js.Dynamic.literal(X = X, Y = Y)
+  
+    __obj.asInstanceOf[IntegerPoint2D]
+  }
+}
+

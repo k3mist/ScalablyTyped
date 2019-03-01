@@ -51,3 +51,54 @@ trait Anon_AboveMarker extends js.Object {
   var tooltipValueStyle: js.Object
 }
 
+object Anon_AboveMarker {
+  @scala.inline
+  def apply(
+    animationDownColor: java.lang.String,
+    animationDuration: scala.Double,
+    animationIndicators: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.all,
+    animationUpColor: java.lang.String,
+    barGapRatio: scala.Double,
+    borderColor: java.lang.String,
+    borderWidth: scala.Double,
+    boxPlot: Anon_MedianSvgClassName,
+    colors: js.Array[java.lang.String],
+    dataCursor: Anon_Dashed,
+    dataItemGaps: java.lang.String,
+    dataLabelPosition: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideSlice | atOracleOraclejetLib.atOracleOraclejetLibStrings.aboveMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.belowMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.beforeMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.afterMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.insideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    dataLabelStyle: js.Object | js.Array[js.Object],
+    funnelBackgroundColor: java.lang.String,
+    groupSeparators: Anon_AutoColor,
+    hoverBehaviorDelay: scala.Double,
+    lineStyle: atOracleOraclejetLib.atOracleOraclejetLibStrings.dotted | atOracleOraclejetLib.atOracleOraclejetLibStrings.dashed | atOracleOraclejetLib.atOracleOraclejetLibStrings.solid,
+    lineType: atOracleOraclejetLib.atOracleOraclejetLibStrings.straight | atOracleOraclejetLib.atOracleOraclejetLibStrings.curved | atOracleOraclejetLib.atOracleOraclejetLibStrings.stepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredStepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.segmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredSegmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    lineWidth: scala.Double,
+    markerColor: java.lang.String,
+    markerDisplayed: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    markerSize: scala.Double,
+    marqueeBorderColor: java.lang.String,
+    marqueeColor: java.lang.String,
+    maxBarWidth: scala.Double,
+    otherColor: java.lang.String,
+    patterns: js.Array[java.lang.String],
+    pieFeelerColor: java.lang.String,
+    pieInnerRadius: scala.Double,
+    selectionEffect: atOracleOraclejetLib.atOracleOraclejetLibStrings.explode | atOracleOraclejetLib.atOracleOraclejetLibStrings.highlightAndExplode | atOracleOraclejetLib.atOracleOraclejetLibStrings.highlight,
+    seriesEffect: atOracleOraclejetLib.atOracleOraclejetLibStrings.color | atOracleOraclejetLib.atOracleOraclejetLibStrings.pattern | atOracleOraclejetLib.atOracleOraclejetLibStrings.gradient,
+    shapes: js.Array[java.lang.String],
+    stackLabelStyle: js.Object,
+    stockFallingColor: java.lang.String,
+    stockRangeColor: java.lang.String,
+    stockRisingColor: java.lang.String,
+    stockVolumeColor: java.lang.String,
+    threeDEffect: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    tooltipLabelStyle: js.Object,
+    tooltipValueStyle: js.Object,
+    markerShape: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String = null
+  ): Anon_AboveMarker = {
+    val __obj = js.Dynamic.literal(animationDownColor = animationDownColor, animationDuration = animationDuration, animationIndicators = animationIndicators.asInstanceOf[js.Any], animationUpColor = animationUpColor, barGapRatio = barGapRatio, borderColor = borderColor, borderWidth = borderWidth, boxPlot = boxPlot, colors = colors, dataCursor = dataCursor, dataItemGaps = dataItemGaps, dataLabelPosition = dataLabelPosition.asInstanceOf[js.Any], dataLabelStyle = dataLabelStyle.asInstanceOf[js.Any], funnelBackgroundColor = funnelBackgroundColor, groupSeparators = groupSeparators, hoverBehaviorDelay = hoverBehaviorDelay, lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth, markerColor = markerColor, markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize, marqueeBorderColor = marqueeBorderColor, marqueeColor = marqueeColor, maxBarWidth = maxBarWidth, otherColor = otherColor, patterns = patterns, pieFeelerColor = pieFeelerColor, pieInnerRadius = pieInnerRadius, selectionEffect = selectionEffect.asInstanceOf[js.Any], seriesEffect = seriesEffect.asInstanceOf[js.Any], shapes = shapes, stackLabelStyle = stackLabelStyle, stockFallingColor = stockFallingColor, stockRangeColor = stockRangeColor, stockRisingColor = stockRisingColor, stockVolumeColor = stockVolumeColor, threeDEffect = threeDEffect.asInstanceOf[js.Any], tooltipLabelStyle = tooltipLabelStyle, tooltipValueStyle = tooltipValueStyle)
+    if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AboveMarker]
+  }
+}
+

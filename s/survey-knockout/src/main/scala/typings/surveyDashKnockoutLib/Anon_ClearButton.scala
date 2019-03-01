@@ -16,3 +16,21 @@ trait Anon_ClearButton extends js.Object {
   var root: java.lang.String
 }
 
+object Anon_ClearButton {
+  @scala.inline
+  def apply(
+    clearButton: java.lang.String,
+    controlLabel: java.lang.String,
+    item: java.lang.String,
+    itemControl: java.lang.String,
+    label: java.lang.String,
+    materialDecorator: java.lang.String,
+    other: java.lang.String,
+    root: java.lang.String
+  ): Anon_ClearButton = {
+    val __obj = js.Dynamic.literal(clearButton = clearButton, controlLabel = controlLabel, item = item, itemControl = itemControl, label = label, materialDecorator = materialDecorator, other = other, root = root)
+  
+    __obj.asInstanceOf[Anon_ClearButton]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Amazon extends js.Object {
   var tablet: scala.Boolean
 }
 
+object Amazon {
+  @scala.inline
+  def apply(device: scala.Boolean, phone: scala.Boolean, tablet: scala.Boolean): Amazon = {
+    val __obj = js.Dynamic.literal(device = device, phone = phone, tablet = tablet)
+  
+    __obj.asInstanceOf[Amazon]
+  }
+}
+

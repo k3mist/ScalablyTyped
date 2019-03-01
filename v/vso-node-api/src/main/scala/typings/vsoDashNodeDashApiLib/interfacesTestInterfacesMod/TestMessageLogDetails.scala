@@ -20,3 +20,12 @@ trait TestMessageLogDetails extends js.Object {
   var message: java.lang.String
 }
 
+object TestMessageLogDetails {
+  @scala.inline
+  def apply(dateCreated: stdLib.Date, entryId: scala.Double, message: java.lang.String): TestMessageLogDetails = {
+    val __obj = js.Dynamic.literal(dateCreated = dateCreated, entryId = entryId, message = message)
+  
+    __obj.asInstanceOf[TestMessageLogDetails]
+  }
+}
+

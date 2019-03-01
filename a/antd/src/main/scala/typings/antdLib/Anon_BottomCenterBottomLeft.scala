@@ -11,3 +11,16 @@ trait Anon_BottomCenterBottomLeft extends js.Object {
   var placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
 }
 
+object Anon_BottomCenterBottomLeft {
+  @scala.inline
+  def apply(
+    mouseEnterDelay: scala.Double,
+    mouseLeaveDelay: scala.Double,
+    placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
+  ): Anon_BottomCenterBottomLeft = {
+    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_BottomCenterBottomLeft]
+  }
+}
+

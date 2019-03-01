@@ -12,3 +12,12 @@ trait DecodeArgsWithSecret extends DecodeArgs {
   var secret: java.lang.String
 }
 
+object DecodeArgsWithSecret {
+  @scala.inline
+  def apply(packet: nodeLib.Buffer, secret: java.lang.String): DecodeArgsWithSecret = {
+    val __obj = js.Dynamic.literal(packet = packet, secret = secret)
+  
+    __obj.asInstanceOf[DecodeArgsWithSecret]
+  }
+}
+

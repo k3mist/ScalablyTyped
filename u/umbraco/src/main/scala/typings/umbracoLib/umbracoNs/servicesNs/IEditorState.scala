@@ -14,3 +14,12 @@ trait IEditorState extends js.Object {
   var state: IState
 }
 
+object IEditorState {
+  @scala.inline
+  def apply(current: js.Any, state: IState): IEditorState = {
+    val __obj = js.Dynamic.literal(current = current, state = state)
+  
+    __obj.asInstanceOf[IEditorState]
+  }
+}
+

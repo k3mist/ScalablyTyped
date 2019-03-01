@@ -10,3 +10,12 @@ trait OverscanIndices extends js.Object {
   var overscanStopIndex: scala.Double
 }
 
+object OverscanIndices {
+  @scala.inline
+  def apply(overscanStartIndex: scala.Double, overscanStopIndex: scala.Double): OverscanIndices = {
+    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex, overscanStopIndex = overscanStopIndex)
+  
+    __obj.asInstanceOf[OverscanIndices]
+  }
+}
+

@@ -16,3 +16,21 @@ trait ISaxHandler extends js.Object {
   def startTag(name: java.lang.String, attribs: js.Array[java.lang.String], param: js.Any): scala.Unit
 }
 
+object ISaxHandler {
+  @scala.inline
+  def apply(
+    cdata: js.Function2[java.lang.String, js.Any, scala.Unit],
+    comment: js.Function2[java.lang.String, js.Any, scala.Unit],
+    endDoc: js.Function1[js.Any, scala.Unit],
+    endTag: js.Function2[java.lang.String, js.Any, scala.Unit],
+    pcdata: js.Function2[java.lang.String, js.Any, scala.Unit],
+    rcdata: js.Function2[java.lang.String, js.Any, scala.Unit],
+    startDoc: js.Function1[js.Any, scala.Unit],
+    startTag: js.Function3[java.lang.String, js.Array[java.lang.String], js.Any, scala.Unit]
+  ): ISaxHandler = {
+    val __obj = js.Dynamic.literal(cdata = cdata, comment = comment, endDoc = endDoc, endTag = endTag, pcdata = pcdata, rcdata = rcdata, startDoc = startDoc, startTag = startTag)
+  
+    __obj.asInstanceOf[ISaxHandler]
+  }
+}
+

@@ -20,3 +20,12 @@ trait GitLastChangeTreeItems extends js.Object {
   var lastExploredTime: stdLib.Date
 }
 
+object GitLastChangeTreeItems {
+  @scala.inline
+  def apply(commits: js.Array[GitCommitRef], items: js.Array[GitLastChangeItem], lastExploredTime: stdLib.Date): GitLastChangeTreeItems = {
+    val __obj = js.Dynamic.literal(commits = commits, items = items, lastExploredTime = lastExploredTime)
+  
+    __obj.asInstanceOf[GitLastChangeTreeItems]
+  }
+}
+

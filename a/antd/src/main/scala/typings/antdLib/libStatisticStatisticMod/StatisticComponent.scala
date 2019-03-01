@@ -9,3 +9,12 @@ trait StatisticComponent extends js.Object {
   var Countdown: antdLib.Anon_DefaultPropsCountdownProps
 }
 
+object StatisticComponent {
+  @scala.inline
+  def apply(Countdown: antdLib.Anon_DefaultPropsCountdownProps): StatisticComponent = {
+    val __obj = js.Dynamic.literal(Countdown = Countdown)
+  
+    __obj.asInstanceOf[StatisticComponent]
+  }
+}
+

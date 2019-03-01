@@ -14,3 +14,18 @@ trait Grid[EntityType] extends js.Object {
   def configureColumnWidths(): scala.Unit
 }
 
+object Grid {
+  @scala.inline
+  def apply[EntityType](
+    $$selectionPhase: scala.Boolean,
+    config: GridOptions[EntityType],
+    configureColumnWidths: js.Function0[scala.Unit],
+    rowFactory: RowFactory[EntityType],
+    selectionService: SelectionService[EntityType]
+  ): Grid[EntityType] = {
+    val __obj = js.Dynamic.literal($$selectionPhase = $$selectionPhase, config = config, configureColumnWidths = configureColumnWidths, rowFactory = rowFactory, selectionService = selectionService)
+  
+    __obj.asInstanceOf[Grid[EntityType]]
+  }
+}
+

@@ -10,3 +10,12 @@ trait OSNotificationOpenedResult extends js.Object {
   var notification: OSNotification
 }
 
+object OSNotificationOpenedResult {
+  @scala.inline
+  def apply(action: onesignalDashCordovaDashPluginLib.Anon_ActionID, notification: OSNotification): OSNotificationOpenedResult = {
+    val __obj = js.Dynamic.literal(action = action, notification = notification)
+  
+    __obj.asInstanceOf[OSNotificationOpenedResult]
+  }
+}
+

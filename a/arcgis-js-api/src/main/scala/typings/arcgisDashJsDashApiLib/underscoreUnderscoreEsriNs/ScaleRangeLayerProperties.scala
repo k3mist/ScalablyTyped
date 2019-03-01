@@ -24,3 +24,13 @@ trait ScaleRangeLayerProperties extends js.Object {
   var minScale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScaleRangeLayerProperties {
+  @scala.inline
+  def apply(maxScale: scala.Int | scala.Double = null, minScale: scala.Int | scala.Double = null): ScaleRangeLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScaleRangeLayerProperties]
+  }
+}
+

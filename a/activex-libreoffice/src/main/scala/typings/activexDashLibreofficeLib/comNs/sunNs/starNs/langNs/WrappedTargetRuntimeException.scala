@@ -17,3 +17,16 @@ trait WrappedTargetRuntimeException
   var TargetException: js.Any
 }
 
+object WrappedTargetRuntimeException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    TargetException: js.Any
+  ): WrappedTargetRuntimeException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TargetException = TargetException)
+  
+    __obj.asInstanceOf[WrappedTargetRuntimeException]
+  }
+}
+

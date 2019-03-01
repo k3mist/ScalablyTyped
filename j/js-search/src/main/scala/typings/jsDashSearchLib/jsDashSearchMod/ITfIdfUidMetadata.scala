@@ -12,3 +12,12 @@ trait ITfIdfUidMetadata extends js.Object {
   var $numTokenOccurrences: scala.Double
 }
 
+object ITfIdfUidMetadata {
+  @scala.inline
+  def apply($document: js.Object, $numTokenOccurrences: scala.Double): ITfIdfUidMetadata = {
+    val __obj = js.Dynamic.literal($document = $document, $numTokenOccurrences = $numTokenOccurrences)
+  
+    __obj.asInstanceOf[ITfIdfUidMetadata]
+  }
+}
+

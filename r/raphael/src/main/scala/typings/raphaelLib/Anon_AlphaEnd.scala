@@ -15,3 +15,20 @@ trait Anon_AlphaEnd extends js.Object {
   var y: scala.Double
 }
 
+object Anon_AlphaEnd {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    end: Anon_X,
+    m: Anon_X,
+    n: Anon_X,
+    start: Anon_X,
+    x: scala.Double,
+    y: scala.Double
+  ): Anon_AlphaEnd = {
+    val __obj = js.Dynamic.literal(alpha = alpha, end = end, m = m, n = n, start = start, x = x, y = y)
+  
+    __obj.asInstanceOf[Anon_AlphaEnd]
+  }
+}
+

@@ -17,3 +17,12 @@ trait GetUserPoolsResult extends js.Object {
   val ids: js.Array[java.lang.String]
 }
 
+object GetUserPoolsResult {
+  @scala.inline
+  def apply(arns: js.Array[java.lang.String], id: java.lang.String, ids: js.Array[java.lang.String]): GetUserPoolsResult = {
+    val __obj = js.Dynamic.literal(arns = arns, id = id, ids = ids)
+  
+    __obj.asInstanceOf[GetUserPoolsResult]
+  }
+}
+

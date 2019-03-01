@@ -12,3 +12,15 @@ trait ObjectWithId
   var _id: java.lang.String
 }
 
+object ObjectWithId {
+  @scala.inline
+  def apply(
+    _id: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ObjectWithId = {
+    val __obj = js.Dynamic.literal(_id = _id)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ObjectWithId]
+  }
+}
+

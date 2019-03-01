@@ -22,3 +22,41 @@ trait WebResourceResource extends js.Object {
   def update(request: gapiDotClientDotSiteverificationLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceResource]
 }
 
+object WebResourceResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceResource]
+    ],
+    getToken: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceGettokenResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceResource]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceResource]
+    ],
+    update: js.Function1[
+      gapiDotClientDotSiteverificationLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SiteVerificationWebResourceResource]
+    ]
+  ): WebResourceResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, getToken = getToken, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[WebResourceResource]
+  }
+}
+

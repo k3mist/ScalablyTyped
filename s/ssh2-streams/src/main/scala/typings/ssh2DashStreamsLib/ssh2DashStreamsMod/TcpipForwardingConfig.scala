@@ -24,3 +24,12 @@ trait TcpipForwardingConfig extends js.Object {
   var srcPort: scala.Double
 }
 
+object TcpipForwardingConfig {
+  @scala.inline
+  def apply(destIP: java.lang.String, destPort: scala.Double, srcIP: java.lang.String, srcPort: scala.Double): TcpipForwardingConfig = {
+    val __obj = js.Dynamic.literal(destIP = destIP, destPort = destPort, srcIP = srcIP, srcPort = srcPort)
+  
+    __obj.asInstanceOf[TcpipForwardingConfig]
+  }
+}
+

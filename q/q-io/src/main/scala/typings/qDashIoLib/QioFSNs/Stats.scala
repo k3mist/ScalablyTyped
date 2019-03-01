@@ -14,3 +14,12 @@ trait Stats extends js.Object {
   var size: scala.Double
 }
 
+object Stats {
+  @scala.inline
+  def apply(node: NodeStats, size: scala.Double): Stats = {
+    val __obj = js.Dynamic.literal(node = node, size = size)
+  
+    __obj.asInstanceOf[Stats]
+  }
+}
+

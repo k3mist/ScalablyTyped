@@ -11,3 +11,12 @@ trait Anon_Description extends js.Object {
   val url: java.lang.String
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(description: java.lang.String, line: scala.Double, url: java.lang.String): Anon_Description = {
+    val __obj = js.Dynamic.literal(description = description, line = line, url = url)
+  
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

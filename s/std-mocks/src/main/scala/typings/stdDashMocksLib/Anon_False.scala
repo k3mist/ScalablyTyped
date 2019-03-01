@@ -10,3 +10,15 @@ trait Anon_False extends js.Object {
   var stdout: stdDashMocksLib.stdDashMocksLibNumbers.`false`
 }
 
+object Anon_False {
+  @scala.inline
+  def apply(
+    stderr: stdDashMocksLib.stdDashMocksLibNumbers.`false`,
+    stdout: stdDashMocksLib.stdDashMocksLibNumbers.`false`
+  ): Anon_False = {
+    val __obj = js.Dynamic.literal(stderr = stderr, stdout = stdout)
+  
+    __obj.asInstanceOf[Anon_False]
+  }
+}
+

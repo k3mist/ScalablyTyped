@@ -11,3 +11,12 @@ trait Anon_EndIndexEndKeyAnonRowAnonRowK[K]
   var endKey: Anon_RowK[K]
 }
 
+object Anon_EndIndexEndKeyAnonRowAnonRowK {
+  @scala.inline
+  def apply[K](endKey: Anon_RowK[K], endIndex: Anon_Row = null): Anon_EndIndexEndKeyAnonRowAnonRowK[K] = {
+    val __obj = js.Dynamic.literal(endKey = endKey)
+    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex)
+    __obj.asInstanceOf[Anon_EndIndexEndKeyAnonRowAnonRowK[K]]
+  }
+}
+

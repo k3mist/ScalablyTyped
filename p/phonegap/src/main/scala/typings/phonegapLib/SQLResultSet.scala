@@ -11,3 +11,12 @@ trait SQLResultSet extends js.Object {
   var rowsAffected: scala.Double
 }
 
+object SQLResultSet {
+  @scala.inline
+  def apply(insertId: scala.Double, rows: SQLResultSetRowList, rowsAffected: scala.Double): SQLResultSet = {
+    val __obj = js.Dynamic.literal(insertId = insertId, rows = rows, rowsAffected = rowsAffected)
+  
+    __obj.asInstanceOf[SQLResultSet]
+  }
+}
+

@@ -36,3 +36,20 @@ trait WorkItemQueryClause extends js.Object {
   var value: java.lang.String
 }
 
+object WorkItemQueryClause {
+  @scala.inline
+  def apply(
+    clauses: js.Array[WorkItemQueryClause],
+    field: WorkItemFieldReference,
+    fieldValue: WorkItemFieldReference,
+    isFieldValue: scala.Boolean,
+    logicalOperator: LogicalOperation,
+    operator: WorkItemFieldOperation,
+    value: java.lang.String
+  ): WorkItemQueryClause = {
+    val __obj = js.Dynamic.literal(clauses = clauses, field = field, fieldValue = fieldValue, isFieldValue = isFieldValue, logicalOperator = logicalOperator, operator = operator, value = value)
+  
+    __obj.asInstanceOf[WorkItemQueryClause]
+  }
+}
+

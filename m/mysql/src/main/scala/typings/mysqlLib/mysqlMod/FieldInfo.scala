@@ -22,3 +22,27 @@ trait FieldInfo extends js.Object {
   var zeroFill: scala.Boolean
 }
 
+object FieldInfo {
+  @scala.inline
+  def apply(
+    catalog: java.lang.String,
+    charsetNr: scala.Double,
+    db: java.lang.String,
+    decimals: scala.Double,
+    flags: scala.Double,
+    length: scala.Double,
+    name: java.lang.String,
+    orgName: java.lang.String,
+    orgTable: java.lang.String,
+    protocol41: scala.Boolean,
+    table: java.lang.String,
+    `type`: Types,
+    zeroFill: scala.Boolean,
+    default: java.lang.String = null
+  ): FieldInfo = {
+    val __obj = js.Dynamic.literal(catalog = catalog, charsetNr = charsetNr, db = db, decimals = decimals, flags = flags, length = length, name = name, orgName = orgName, orgTable = orgTable, protocol41 = protocol41, table = table, `type` = `type`, zeroFill = zeroFill)
+    if (default != null) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[FieldInfo]
+  }
+}
+

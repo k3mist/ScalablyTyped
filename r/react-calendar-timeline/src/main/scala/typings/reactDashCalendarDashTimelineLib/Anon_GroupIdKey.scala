@@ -15,3 +15,20 @@ trait Anon_GroupIdKey extends js.Object {
   var itemTitleKey: java.lang.String
 }
 
+object Anon_GroupIdKey {
+  @scala.inline
+  def apply(
+    groupIdKey: java.lang.String,
+    groupTitleKey: java.lang.String,
+    itemGroupKey: java.lang.String,
+    itemIdKey: java.lang.String,
+    itemTimeEndKey: java.lang.String,
+    itemTimeStartKey: java.lang.String,
+    itemTitleKey: java.lang.String
+  ): Anon_GroupIdKey = {
+    val __obj = js.Dynamic.literal(groupIdKey = groupIdKey, groupTitleKey = groupTitleKey, itemGroupKey = itemGroupKey, itemIdKey = itemIdKey, itemTimeEndKey = itemTimeEndKey, itemTimeStartKey = itemTimeStartKey, itemTitleKey = itemTitleKey)
+  
+    __obj.asInstanceOf[Anon_GroupIdKey]
+  }
+}
+

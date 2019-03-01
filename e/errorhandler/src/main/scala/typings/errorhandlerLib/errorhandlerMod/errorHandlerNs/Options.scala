@@ -17,3 +17,12 @@ trait Options extends js.Object {
   var log: scala.Boolean | LoggingCallback
 }
 
+object Options {
+  @scala.inline
+  def apply(log: scala.Boolean | LoggingCallback): Options = {
+    val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

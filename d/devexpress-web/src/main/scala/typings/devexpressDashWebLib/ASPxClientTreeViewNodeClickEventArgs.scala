@@ -21,3 +21,17 @@ trait ASPxClientTreeViewNodeClickEventArgs extends ASPxClientTreeViewNodeProcess
   var htmlEvent: js.Object
 }
 
+object ASPxClientTreeViewNodeClickEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    node: ASPxClientTreeViewNode,
+    processOnServer: scala.Boolean
+  ): ASPxClientTreeViewNodeClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, node = node, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientTreeViewNodeClickEventArgs]
+  }
+}
+

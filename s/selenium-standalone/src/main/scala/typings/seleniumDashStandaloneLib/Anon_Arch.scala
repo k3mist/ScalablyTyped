@@ -11,3 +11,16 @@ trait Anon_Arch extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Arch {
+  @scala.inline
+  def apply(
+    arch: java.lang.String | seleniumDashStandaloneLib.seleniumDashStandaloneLibStrings.ia32 | seleniumDashStandaloneLib.seleniumDashStandaloneLibStrings.x64,
+    baseURL: java.lang.String,
+    version: java.lang.String = null
+  ): Anon_Arch = {
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], baseURL = baseURL)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Arch]
+  }
+}
+

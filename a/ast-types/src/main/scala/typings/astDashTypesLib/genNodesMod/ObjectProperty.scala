@@ -18,3 +18,19 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
 }
 
+object ObjectProperty {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    shorthand: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectProperty,
+    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind,
+    accessibility: astDashTypesLib.genKindsMod.LiteralKind = null
+  ): ObjectProperty = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], shorthand = shorthand, `type` = `type`, value = value.asInstanceOf[js.Any])
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
+    __obj.asInstanceOf[ObjectProperty]
+  }
+}
+

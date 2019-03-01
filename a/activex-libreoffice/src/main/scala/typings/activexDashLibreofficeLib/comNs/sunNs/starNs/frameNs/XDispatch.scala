@@ -52,3 +52,23 @@ trait XDispatch
   def removeStatusListener(Control: XStatusListener, URL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL): scala.Unit
 }
 
+object XDispatch {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit],
+    dispatch: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit]
+  ): XDispatch = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addStatusListener = addStatusListener, dispatch = dispatch, queryInterface = queryInterface, release = release, removeStatusListener = removeStatusListener)
+  
+    __obj.asInstanceOf[XDispatch]
+  }
+}
+

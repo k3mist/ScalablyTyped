@@ -34,3 +34,20 @@ trait XCalculatable
   def isAutomaticCalculationEnabled(): scala.Boolean
 }
 
+object XCalculatable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    calculate: js.Function0[scala.Unit],
+    calculateAll: js.Function0[scala.Unit],
+    enableAutomaticCalculation: js.Function1[scala.Boolean, scala.Unit],
+    isAutomaticCalculationEnabled: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCalculatable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, calculate = calculate, calculateAll = calculateAll, enableAutomaticCalculation = enableAutomaticCalculation, isAutomaticCalculationEnabled = isAutomaticCalculationEnabled, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCalculatable]
+  }
+}
+

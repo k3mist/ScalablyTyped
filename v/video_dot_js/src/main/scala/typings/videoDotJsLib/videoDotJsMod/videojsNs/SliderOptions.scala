@@ -16,3 +16,18 @@ trait SliderOptions extends ComponentOptions {
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SliderOptions {
+  @scala.inline
+  def apply(
+    barName: java.lang.String = null,
+    children: js.Array[Child] = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): SliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (barName != null) __obj.updateDynamic("barName")(barName)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[SliderOptions]
+  }
+}
+

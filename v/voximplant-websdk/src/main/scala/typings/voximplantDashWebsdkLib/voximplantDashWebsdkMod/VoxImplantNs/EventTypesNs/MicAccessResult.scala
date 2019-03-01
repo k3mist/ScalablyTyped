@@ -16,3 +16,12 @@ trait MicAccessResult
   var result: scala.Boolean
 }
 
+object MicAccessResult {
+  @scala.inline
+  def apply(result: scala.Boolean): MicAccessResult = {
+    val __obj = js.Dynamic.literal(result = result)
+  
+    __obj.asInstanceOf[MicAccessResult]
+  }
+}
+

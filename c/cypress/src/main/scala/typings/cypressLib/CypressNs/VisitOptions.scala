@@ -47,3 +47,19 @@ trait VisitOptions
   def onLoad(win: mochaLib.Window): scala.Unit
 }
 
+object VisitOptions {
+  @scala.inline
+  def apply(
+    auth: Auth,
+    failOnStatusCode: scala.Boolean,
+    log: scala.Boolean,
+    onBeforeLoad: js.Function1[mochaLib.Window, scala.Unit],
+    onLoad: js.Function1[mochaLib.Window, scala.Unit],
+    timeout: scala.Double
+  ): VisitOptions = {
+    val __obj = js.Dynamic.literal(auth = auth, failOnStatusCode = failOnStatusCode, log = log, onBeforeLoad = onBeforeLoad, onLoad = onLoad, timeout = timeout)
+  
+    __obj.asInstanceOf[VisitOptions]
+  }
+}
+

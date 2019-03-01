@@ -16,3 +16,12 @@ trait FloatingTextBoxInfo extends FloatingObjectInfo {
   var contentSubDocument: SubDocument
 }
 
+object FloatingTextBoxInfo {
+  @scala.inline
+  def apply(contentSubDocument: SubDocument, parentSubDocument: SubDocument, position: scala.Double): FloatingTextBoxInfo = {
+    val __obj = js.Dynamic.literal(contentSubDocument = contentSubDocument, parentSubDocument = parentSubDocument, position = position)
+  
+    __obj.asInstanceOf[FloatingTextBoxInfo]
+  }
+}
+

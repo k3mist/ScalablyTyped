@@ -9,3 +9,12 @@ trait openssh_StreamLocalForwardGlobalRequest extends _GlobalRequest {
   var socketPath: java.lang.String
 }
 
+object openssh_StreamLocalForwardGlobalRequest {
+  @scala.inline
+  def apply(socketPath: java.lang.String): openssh_StreamLocalForwardGlobalRequest = {
+    val __obj = js.Dynamic.literal(socketPath = socketPath)
+  
+    __obj.asInstanceOf[openssh_StreamLocalForwardGlobalRequest]
+  }
+}
+

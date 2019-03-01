@@ -24,3 +24,17 @@ trait AcquisitionOptions extends js.Object {
   var target: java.lang.String
 }
 
+object AcquisitionOptions {
+  @scala.inline
+  def apply(
+    defaultOperation: AcquisitionOperation,
+    itemId: java.lang.String,
+    operations: js.Array[AcquisitionOperation],
+    target: java.lang.String
+  ): AcquisitionOptions = {
+    val __obj = js.Dynamic.literal(defaultOperation = defaultOperation, itemId = itemId, operations = operations, target = target)
+  
+    __obj.asInstanceOf[AcquisitionOptions]
+  }
+}
+

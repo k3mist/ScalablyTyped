@@ -20,3 +20,22 @@ trait CompilationResult extends js.Object {
   var transpileErrors: scala.Double
 }
 
+object CompilationResult {
+  @scala.inline
+  def apply(
+    declarationErrors: scala.Double,
+    emitErrors: scala.Double,
+    emitSkipped: scala.Boolean,
+    globalErrors: scala.Double,
+    noEmit: scala.Boolean,
+    optionsErrors: scala.Double,
+    semanticErrors: scala.Double,
+    syntaxErrors: scala.Double,
+    transpileErrors: scala.Double
+  ): CompilationResult = {
+    val __obj = js.Dynamic.literal(declarationErrors = declarationErrors, emitErrors = emitErrors, emitSkipped = emitSkipped, globalErrors = globalErrors, noEmit = noEmit, optionsErrors = optionsErrors, semanticErrors = semanticErrors, syntaxErrors = syntaxErrors, transpileErrors = transpileErrors)
+  
+    __obj.asInstanceOf[CompilationResult]
+  }
+}
+

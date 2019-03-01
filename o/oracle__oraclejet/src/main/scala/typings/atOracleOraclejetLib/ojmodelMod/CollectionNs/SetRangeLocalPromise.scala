@@ -12,3 +12,12 @@ trait SetRangeLocalPromise extends js.Object {
   var start: scala.Double
 }
 
+object SetRangeLocalPromise {
+  @scala.inline
+  def apply(count: scala.Double, models: js.Array[atOracleOraclejetLib.ojmodelMod.Model], start: scala.Double): SetRangeLocalPromise = {
+    val __obj = js.Dynamic.literal(count = count, models = models, start = start)
+  
+    __obj.asInstanceOf[SetRangeLocalPromise]
+  }
+}
+

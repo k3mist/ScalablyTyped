@@ -10,3 +10,12 @@ trait UploadControlFilesUploadCompleteEventArgs extends EventArgs {
   val errorText: java.lang.String
 }
 
+object UploadControlFilesUploadCompleteEventArgs {
+  @scala.inline
+  def apply(callbackData: java.lang.String, errorText: java.lang.String, sender: Control): UploadControlFilesUploadCompleteEventArgs = {
+    val __obj = js.Dynamic.literal(callbackData = callbackData, errorText = errorText, sender = sender)
+  
+    __obj.asInstanceOf[UploadControlFilesUploadCompleteEventArgs]
+  }
+}
+

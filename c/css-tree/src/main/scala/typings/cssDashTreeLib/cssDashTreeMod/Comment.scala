@@ -14,3 +14,16 @@ trait Comment
   var value: java.lang.String
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Comment,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): Comment = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

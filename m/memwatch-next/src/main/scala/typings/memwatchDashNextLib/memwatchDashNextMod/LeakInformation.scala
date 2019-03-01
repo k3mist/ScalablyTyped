@@ -28,3 +28,12 @@ trait LeakInformation extends js.Object {
   var start: stdLib.Date
 }
 
+object LeakInformation {
+  @scala.inline
+  def apply(end: stdLib.Date, growth: scala.Double, reason: java.lang.String, start: stdLib.Date): LeakInformation = {
+    val __obj = js.Dynamic.literal(end = end, growth = growth, reason = reason, start = start)
+  
+    __obj.asInstanceOf[LeakInformation]
+  }
+}
+

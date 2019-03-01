@@ -11,3 +11,12 @@ trait Text
   var `type`: markedLib.markedLibStrings.text
 }
 
+object Text {
+  @scala.inline
+  def apply(text: java.lang.String, `type`: markedLib.markedLibStrings.text): Text = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[Text]
+  }
+}
+

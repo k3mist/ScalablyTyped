@@ -21,3 +21,12 @@ trait ASPxClientAxisTitle extends ASPxClientWebChartElement {
   var text: java.lang.String
 }
 
+object ASPxClientAxisTitle {
+  @scala.inline
+  def apply(axis: ASPxClientAxisBase, chart: ASPxClientWebChart, text: java.lang.String): ASPxClientAxisTitle = {
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, text = text)
+  
+    __obj.asInstanceOf[ASPxClientAxisTitle]
+  }
+}
+

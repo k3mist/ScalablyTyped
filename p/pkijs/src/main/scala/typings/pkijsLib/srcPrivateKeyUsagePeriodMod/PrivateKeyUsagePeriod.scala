@@ -13,3 +13,19 @@ trait PrivateKeyUsagePeriod extends js.Object {
   def toSchema(): js.Any
 }
 
+object PrivateKeyUsagePeriod {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    notAfter: stdLib.Date = null,
+    notBefore: stdLib.Date = null
+  ): PrivateKeyUsagePeriod = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter)
+    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore)
+    __obj.asInstanceOf[PrivateKeyUsagePeriod]
+  }
+}
+

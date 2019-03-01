@@ -12,3 +12,12 @@ trait RecvFromInfo extends js.Object {
   var resultCode: scala.Double
 }
 
+object RecvFromInfo {
+  @scala.inline
+  def apply(address: java.lang.String, data: stdLib.ArrayBuffer, port: scala.Double, resultCode: scala.Double): RecvFromInfo = {
+    val __obj = js.Dynamic.literal(address = address, data = data, port = port, resultCode = resultCode)
+  
+    __obj.asInstanceOf[RecvFromInfo]
+  }
+}
+

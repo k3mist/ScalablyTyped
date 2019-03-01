@@ -27,3 +27,21 @@ trait XSingleServiceFactory
   def createInstanceWithArguments(aArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XSingleServiceFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    createInstanceWithArguments: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSingleServiceFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSingleServiceFactory]
+  }
+}
+

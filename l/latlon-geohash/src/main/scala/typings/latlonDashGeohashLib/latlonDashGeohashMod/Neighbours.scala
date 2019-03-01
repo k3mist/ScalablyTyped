@@ -17,3 +17,21 @@ trait Neighbours extends js.Object {
   var w: java.lang.String
 }
 
+object Neighbours {
+  @scala.inline
+  def apply(
+    e: java.lang.String,
+    n: java.lang.String,
+    ne: java.lang.String,
+    nw: java.lang.String,
+    s: java.lang.String,
+    se: java.lang.String,
+    sw: java.lang.String,
+    w: java.lang.String
+  ): Neighbours = {
+    val __obj = js.Dynamic.literal(e = e, n = n, ne = ne, nw = nw, s = s, se = se, sw = sw, w = w)
+  
+    __obj.asInstanceOf[Neighbours]
+  }
+}
+

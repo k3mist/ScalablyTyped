@@ -13,3 +13,18 @@ trait Cache[K, V] extends js.Object {
   def set(key: K, value: V): scala.Unit
 }
 
+object Cache {
+  @scala.inline
+  def apply[K, V](
+    delete: js.Function1[K, scala.Unit],
+    get: js.Function1[K, V],
+    has: js.Function1[K, scala.Boolean],
+    set: js.Function2[K, V, scala.Unit],
+    clear: js.Function0[scala.Unit] = null
+  ): Cache[K, V] = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    __obj.asInstanceOf[Cache[K, V]]
+  }
+}
+

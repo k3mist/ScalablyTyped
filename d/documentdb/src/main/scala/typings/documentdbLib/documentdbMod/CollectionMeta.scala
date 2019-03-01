@@ -16,3 +16,27 @@ import scala.scalajs.js.annotation._
   var _ts: scala.Double
 }
 
+object CollectionMeta {
+  @scala.inline
+  def apply(
+    _self: java.lang.String,
+    _ts: scala.Double,
+    id: java.lang.String,
+    _attachments: java.lang.String = null,
+    _etag: java.lang.String = null,
+    _rid: java.lang.String = null,
+    defaultTtl: scala.Int | scala.Double = null,
+    indexingPolicy: IndexingPolicy = null,
+    partitionKey: CollectionPartitionKey = null
+  ): CollectionMeta = {
+    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, id = id)
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
+    if (_rid != null) __obj.updateDynamic("_rid")(_rid)
+    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
+    if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy)
+    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey)
+    __obj.asInstanceOf[CollectionMeta]
+  }
+}
+

@@ -10,3 +10,12 @@ trait RemoveAttachmentResponse extends BasicResponse {
   var rev: RevisionId
 }
 
+object RemoveAttachmentResponse {
+  @scala.inline
+  def apply(id: DocumentId, ok: scala.Boolean, rev: RevisionId): RemoveAttachmentResponse = {
+    val __obj = js.Dynamic.literal(id = id, ok = ok, rev = rev)
+  
+    __obj.asInstanceOf[RemoveAttachmentResponse]
+  }
+}
+

@@ -39,3 +39,24 @@ trait Endpoint[Self] extends js.Object {
   def url(): java.lang.String
 }
 
+object Endpoint {
+  @scala.inline
+  def apply[Self](
+    addFullRequestInterceptor: js.Function1[FullRequestInterceptor, Self],
+    addFullResponseInterceptor: js.Function1[ResponseInterceptor, Self],
+    addRequestInterceptor: js.Function1[RequestInterceptor, Self],
+    addResponseInterceptor: js.Function1[ResponseInterceptor, Self],
+    fullRequestInterceptors: js.Function0[js.Array[FullRequestInterceptor]],
+    fullResponseInterceptors: js.Function0[js.Array[ResponseInterceptor]],
+    header: js.Function2[java.lang.String, js.Any, Self],
+    headers: js.Function0[Headers],
+    requestInterceptors: js.Function0[js.Array[RequestInterceptor]],
+    responseInterceptors: js.Function0[js.Array[ResponseInterceptor]],
+    url: js.Function0[java.lang.String]
+  ): Endpoint[Self] = {
+    val __obj = js.Dynamic.literal(addFullRequestInterceptor = addFullRequestInterceptor, addFullResponseInterceptor = addFullResponseInterceptor, addRequestInterceptor = addRequestInterceptor, addResponseInterceptor = addResponseInterceptor, fullRequestInterceptors = fullRequestInterceptors, fullResponseInterceptors = fullResponseInterceptors, header = header, headers = headers, requestInterceptors = requestInterceptors, responseInterceptors = responseInterceptors, url = url)
+  
+    __obj.asInstanceOf[Endpoint[Self]]
+  }
+}
+

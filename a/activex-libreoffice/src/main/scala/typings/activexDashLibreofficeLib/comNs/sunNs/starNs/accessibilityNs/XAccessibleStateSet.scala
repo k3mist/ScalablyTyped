@@ -49,3 +49,21 @@ trait XAccessibleStateSet
   def isEmpty(): scala.Boolean
 }
 
+object XAccessibleStateSet {
+  @scala.inline
+  def apply(
+    States: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    contains: js.Function1[scala.Double, scala.Boolean],
+    containsAll: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Boolean],
+    getStates: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    isEmpty: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleStateSet = {
+    val __obj = js.Dynamic.literal(States = States, acquire = acquire, contains = contains, containsAll = containsAll, getStates = getStates, isEmpty = isEmpty, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessibleStateSet]
+  }
+}
+

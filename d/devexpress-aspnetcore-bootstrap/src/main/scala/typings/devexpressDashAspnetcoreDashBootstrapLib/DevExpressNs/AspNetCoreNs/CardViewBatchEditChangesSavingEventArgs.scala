@@ -11,3 +11,18 @@ trait CardViewBatchEditChangesSavingEventArgs extends CancelEventArgs {
   val updatedValues: js.Any
 }
 
+object CardViewBatchEditChangesSavingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    deletedValues: js.Any,
+    insertedValues: js.Any,
+    sender: Control,
+    updatedValues: js.Any
+  ): CardViewBatchEditChangesSavingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, sender = sender, updatedValues = updatedValues)
+  
+    __obj.asInstanceOf[CardViewBatchEditChangesSavingEventArgs]
+  }
+}
+

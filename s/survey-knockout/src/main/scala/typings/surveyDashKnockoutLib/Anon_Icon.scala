@@ -13,3 +13,18 @@ trait Anon_Icon extends js.Object {
   var root: java.lang.String
 }
 
+object Anon_Icon {
+  @scala.inline
+  def apply(
+    icon: java.lang.String,
+    item: java.lang.String,
+    locationBottom: java.lang.String,
+    locationTop: java.lang.String,
+    root: java.lang.String
+  ): Anon_Icon = {
+    val __obj = js.Dynamic.literal(icon = icon, item = item, locationBottom = locationBottom, locationTop = locationTop, root = root)
+  
+    __obj.asInstanceOf[Anon_Icon]
+  }
+}
+

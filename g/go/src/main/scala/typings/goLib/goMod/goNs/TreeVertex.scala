@@ -76,3 +76,70 @@ trait TreeVertex extends LayoutVertex {
   def copyInheritedPropertiesFrom(copy: TreeVertex): scala.Unit
 }
 
+object TreeVertex {
+  @scala.inline
+  def apply(
+    addDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
+    addSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    alignment: EnumValue,
+    angle: scala.Double,
+    bounds: Rect,
+    breadthLimit: scala.Double,
+    centerX: scala.Double,
+    centerY: scala.Double,
+    childPortSpot: Spot,
+    children: js.Array[TreeVertex],
+    childrenCount: scala.Double,
+    commentMargin: scala.Double,
+    commentSpacing: scala.Double,
+    comments: js.Array[Node],
+    commit: js.Function0[scala.Unit],
+    compaction: EnumValue,
+    comparer: js.Function2[TreeVertex, TreeVertex, scala.Double],
+    copyInheritedPropertiesFrom: js.Function1[TreeVertex, scala.Unit],
+    data: js.Any,
+    deleteDestinationEdge: js.Function1[LayoutEdge, scala.Unit],
+    deleteSourceEdge: js.Function1[LayoutEdge, scala.Unit],
+    descendantCount: scala.Double,
+    destinationEdges: Iterator[LayoutEdge],
+    destinationVertexes: Iterator[LayoutVertex],
+    edges: Iterator[LayoutEdge],
+    edgesCount: scala.Double,
+    focus: Point,
+    focusX: scala.Double,
+    focusY: scala.Double,
+    height: scala.Double,
+    initialized: scala.Boolean,
+    layerSpacing: scala.Double,
+    layerSpacingParentOverlap: scala.Double,
+    level: scala.Double,
+    maxChildrenCount: scala.Double,
+    maxGenerationCount: scala.Double,
+    network: LayoutNetwork,
+    node: Node,
+    nodeIndent: scala.Double,
+    nodeIndentPastParent: scala.Double,
+    nodeSpacing: scala.Double,
+    parent: TreeVertex,
+    portSpot: Spot,
+    relativePosition: Point,
+    rowIndent: scala.Double,
+    rowSpacing: scala.Double,
+    setsChildPortSpot: scala.Boolean,
+    setsPortSpot: scala.Boolean,
+    sorting: EnumValue,
+    sourceEdges: Iterator[LayoutEdge],
+    sourceVertexes: Iterator[LayoutVertex],
+    subtreeOffset: Point,
+    subtreeSize: Size,
+    vertexes: Iterator[LayoutVertex],
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): TreeVertex = {
+    val __obj = js.Dynamic.literal(addDestinationEdge = addDestinationEdge, addSourceEdge = addSourceEdge, alignment = alignment, angle = angle, bounds = bounds, breadthLimit = breadthLimit, centerX = centerX, centerY = centerY, childPortSpot = childPortSpot, children = children, childrenCount = childrenCount, commentMargin = commentMargin, commentSpacing = commentSpacing, comments = comments, commit = commit, compaction = compaction, comparer = comparer, copyInheritedPropertiesFrom = copyInheritedPropertiesFrom, data = data, deleteDestinationEdge = deleteDestinationEdge, deleteSourceEdge = deleteSourceEdge, descendantCount = descendantCount, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, initialized = initialized, layerSpacing = layerSpacing, layerSpacingParentOverlap = layerSpacingParentOverlap, level = level, maxChildrenCount = maxChildrenCount, maxGenerationCount = maxGenerationCount, network = network, node = node, nodeIndent = nodeIndent, nodeIndentPastParent = nodeIndentPastParent, nodeSpacing = nodeSpacing, parent = parent, portSpot = portSpot, relativePosition = relativePosition, rowIndent = rowIndent, rowSpacing = rowSpacing, setsChildPortSpot = setsChildPortSpot, setsPortSpot = setsPortSpot, sorting = sorting, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, subtreeOffset = subtreeOffset, subtreeSize = subtreeSize, vertexes = vertexes, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[TreeVertex]
+  }
+}
+

@@ -24,3 +24,17 @@ trait LoaderConfig extends js.Object {
   var timeout: scala.Double
 }
 
+object LoaderConfig {
+  @scala.inline
+  def apply(
+    maxRetry: scala.Double,
+    maxRetryDelay: scala.Double,
+    retryDelay: scala.Double,
+    timeout: scala.Double
+  ): LoaderConfig = {
+    val __obj = js.Dynamic.literal(maxRetry = maxRetry, maxRetryDelay = maxRetryDelay, retryDelay = retryDelay, timeout = timeout)
+  
+    __obj.asInstanceOf[LoaderConfig]
+  }
+}
+

@@ -21,3 +21,26 @@ trait Anon_ArgsBordered extends js.Object {
   var useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
 }
 
+object Anon_ArgsBordered {
+  @scala.inline
+  def apply(
+    bordered: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    columns: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    dataSource: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    dropdownPrefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    loading: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object],
+    locale: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    rowSelection: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    size: propDashTypesLib.propDashTypesMod.Requireable[antdLib.libTableInterfaceMod.TableSize],
+    sortDirections: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  ): Anon_ArgsBordered = {
+    val __obj = js.Dynamic.literal(bordered = bordered, className = className, columns = columns, dataSource = dataSource, dropdownPrefixCls = dropdownPrefixCls, loading = loading, locale = locale, onChange = onChange, prefixCls = prefixCls, rowSelection = rowSelection, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+  
+    __obj.asInstanceOf[Anon_ArgsBordered]
+  }
+}
+

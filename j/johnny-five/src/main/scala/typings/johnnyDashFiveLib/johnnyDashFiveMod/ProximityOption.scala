@@ -10,3 +10,12 @@ trait ProximityOption extends js.Object {
   var pin: scala.Double | java.lang.String
 }
 
+object ProximityOption {
+  @scala.inline
+  def apply(controller: java.lang.String, pin: scala.Double | java.lang.String): ProximityOption = {
+    val __obj = js.Dynamic.literal(controller = controller, pin = pin.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ProximityOption]
+  }
+}
+

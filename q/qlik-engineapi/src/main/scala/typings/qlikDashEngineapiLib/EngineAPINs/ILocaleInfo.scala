@@ -108,3 +108,29 @@ trait ILocaleInfo extends js.Object {
   var qTimestampFmt: java.lang.String
 }
 
+object ILocaleInfo {
+  @scala.inline
+  def apply(
+    qBrokenWeeks: scala.Double,
+    qCalendarStrings: ICalenderStrings,
+    qCollation: java.lang.String,
+    qCurrentYear: scala.Double,
+    qDateFmt: java.lang.String,
+    qDecimalSep: java.lang.String,
+    qFirstMonthOfYear: scala.Double,
+    qFirstWeekDay: scala.Boolean,
+    qListSep: java.lang.String,
+    qMoneyDecimalSep: java.lang.String,
+    qMoneyFmt: java.lang.String,
+    qMoneyThousandSep: java.lang.String,
+    qReferenceDay: scala.Double,
+    qThousandSep: java.lang.String,
+    qTimeFmt: java.lang.String,
+    qTimestampFmt: java.lang.String
+  ): ILocaleInfo = {
+    val __obj = js.Dynamic.literal(qBrokenWeeks = qBrokenWeeks, qCalendarStrings = qCalendarStrings, qCollation = qCollation, qCurrentYear = qCurrentYear, qDateFmt = qDateFmt, qDecimalSep = qDecimalSep, qFirstMonthOfYear = qFirstMonthOfYear, qFirstWeekDay = qFirstWeekDay, qListSep = qListSep, qMoneyDecimalSep = qMoneyDecimalSep, qMoneyFmt = qMoneyFmt, qMoneyThousandSep = qMoneyThousandSep, qReferenceDay = qReferenceDay, qThousandSep = qThousandSep, qTimeFmt = qTimeFmt, qTimestampFmt = qTimestampFmt)
+  
+    __obj.asInstanceOf[ILocaleInfo]
+  }
+}
+

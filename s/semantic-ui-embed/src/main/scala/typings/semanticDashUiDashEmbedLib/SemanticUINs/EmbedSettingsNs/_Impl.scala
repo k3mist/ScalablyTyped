@@ -133,3 +133,41 @@ trait _Impl extends js.Object {
   def onPlaceholderDisplay(`this`: semanticDashUiDashEmbedLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    autoplay: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.auto | scala.Boolean,
+    brandedUI: scala.Boolean,
+    className: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ClassNameSettings,
+    color: java.lang.String,
+    debug: scala.Boolean,
+    error: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ErrorSettings,
+    hd: scala.Boolean,
+    icon: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    id: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    metadata: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.MetadataSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onCreate: js.Function2[semanticDashUiDashEmbedLib.JQuery, java.lang.String, scala.Unit],
+    onDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
+    onEmbed: js.Function2[
+      semanticDashUiDashEmbedLib.JQuery, 
+      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings, 
+      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings
+    ],
+    onPlaceholderDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
+    parameters: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings,
+    performance: scala.Boolean,
+    selector: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.SelectorSettings,
+    silent: scala.Boolean,
+    source: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    templates: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.TemplatesSettings,
+    url: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className.asInstanceOf[js.Any], color = color, debug = debug, error = error.asInstanceOf[js.Any], hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onCreate = onCreate, onDisplay = onDisplay, onEmbed = onEmbed, onPlaceholderDisplay = onPlaceholderDisplay, parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_Received extends js.Object {
   var sent: js.Array[iotaDotLibDotJsLib.iotaDotLibDotJsMod.TransactionObject]
 }
 
+object Anon_Received {
+  @scala.inline
+  def apply(
+    received: js.Array[iotaDotLibDotJsLib.iotaDotLibDotJsMod.TransactionObject],
+    sent: js.Array[iotaDotLibDotJsLib.iotaDotLibDotJsMod.TransactionObject]
+  ): Anon_Received = {
+    val __obj = js.Dynamic.literal(received = received, sent = sent)
+  
+    __obj.asInstanceOf[Anon_Received]
+  }
+}
+

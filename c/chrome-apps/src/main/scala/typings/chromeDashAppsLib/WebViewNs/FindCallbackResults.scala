@@ -17,3 +17,17 @@ trait FindCallbackResults extends js.Object {
   var selectionRect: SelectionRect
 }
 
+object FindCallbackResults {
+  @scala.inline
+  def apply(
+    activeMatchOrdinal: chromeDashAppsLib.chromeNs.integer,
+    canceled: scala.Boolean,
+    numberOfMatches: chromeDashAppsLib.chromeNs.integer,
+    selectionRect: SelectionRect
+  ): FindCallbackResults = {
+    val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal, canceled = canceled, numberOfMatches = numberOfMatches, selectionRect = selectionRect)
+  
+    __obj.asInstanceOf[FindCallbackResults]
+  }
+}
+

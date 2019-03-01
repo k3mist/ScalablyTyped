@@ -9,3 +9,12 @@ trait IFileRemovedEventArgs extends js.Object {
   var id: java.lang.String
 }
 
+object IFileRemovedEventArgs {
+  @scala.inline
+  def apply(id: java.lang.String): IFileRemovedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[IFileRemovedEventArgs]
+  }
+}
+

@@ -23,3 +23,28 @@ trait ProcessesProcessData extends js.Object {
   var user: java.lang.String
 }
 
+object ProcessesProcessData {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    mem_rss: scala.Double,
+    mem_vsz: scala.Double,
+    name: java.lang.String,
+    nice: scala.Double,
+    pcpu: scala.Double,
+    pcpus: scala.Double,
+    pcpuu: scala.Double,
+    pid: scala.Double,
+    pmem: scala.Double,
+    priority: scala.Double,
+    started: java.lang.String,
+    state: java.lang.String,
+    tty: java.lang.String,
+    user: java.lang.String
+  ): ProcessesProcessData = {
+    val __obj = js.Dynamic.literal(command = command, mem_rss = mem_rss, mem_vsz = mem_vsz, name = name, nice = nice, pcpu = pcpu, pcpus = pcpus, pcpuu = pcpuu, pid = pid, pmem = pmem, priority = priority, started = started, state = state, tty = tty, user = user)
+  
+    __obj.asInstanceOf[ProcessesProcessData]
+  }
+}
+

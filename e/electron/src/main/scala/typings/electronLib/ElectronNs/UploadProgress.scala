@@ -26,3 +26,12 @@ trait UploadProgress extends js.Object {
   var total: scala.Double
 }
 
+object UploadProgress {
+  @scala.inline
+  def apply(active: scala.Boolean, current: scala.Double, started: scala.Boolean, total: scala.Double): UploadProgress = {
+    val __obj = js.Dynamic.literal(active = active, current = current, started = started, total = total)
+  
+    __obj.asInstanceOf[UploadProgress]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Validator extends js.Object {
   def validate(args: ValidatorArgs): Pojo
 }
 
+object Validator {
+  @scala.inline
+  def apply(
+    afterValidate: js.Function1[ValidatorArgs, scala.Unit],
+    beforeValidate: js.Function1[ValidatorArgs, scala.Unit],
+    validate: js.Function1[ValidatorArgs, Pojo]
+  ): Validator = {
+    val __obj = js.Dynamic.literal(afterValidate = afterValidate, beforeValidate = beforeValidate, validate = validate)
+  
+    __obj.asInstanceOf[Validator]
+  }
+}
+

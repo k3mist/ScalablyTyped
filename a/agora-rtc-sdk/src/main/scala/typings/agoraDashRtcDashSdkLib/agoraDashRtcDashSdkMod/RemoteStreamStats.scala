@@ -22,3 +22,31 @@ trait RemoteStreamStats extends js.Object {
   var videoReceivedResolutionWidth: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoteStreamStats {
+  @scala.inline
+  def apply(
+    audioReceiveBytes: java.lang.String,
+    audioReceivePackets: java.lang.String,
+    audioReceivePacketsLost: java.lang.String,
+    duration: java.lang.String,
+    startTime: java.lang.String,
+    timestamp: java.lang.String,
+    videoReceiveBytes: java.lang.String,
+    videoReceivePackets: java.lang.String,
+    videoReceivePacketsLost: java.lang.String,
+    videoReceiveBandwidth: java.lang.String = null,
+    videoReceiveDecodeFrameRate: java.lang.String = null,
+    videoReceiveFrameRate: java.lang.String = null,
+    videoReceivedResolutionHeight: java.lang.String = null,
+    videoReceivedResolutionWidth: java.lang.String = null
+  ): RemoteStreamStats = {
+    val __obj = js.Dynamic.literal(audioReceiveBytes = audioReceiveBytes, audioReceivePackets = audioReceivePackets, audioReceivePacketsLost = audioReceivePacketsLost, duration = duration, startTime = startTime, timestamp = timestamp, videoReceiveBytes = videoReceiveBytes, videoReceivePackets = videoReceivePackets, videoReceivePacketsLost = videoReceivePacketsLost)
+    if (videoReceiveBandwidth != null) __obj.updateDynamic("videoReceiveBandwidth")(videoReceiveBandwidth)
+    if (videoReceiveDecodeFrameRate != null) __obj.updateDynamic("videoReceiveDecodeFrameRate")(videoReceiveDecodeFrameRate)
+    if (videoReceiveFrameRate != null) __obj.updateDynamic("videoReceiveFrameRate")(videoReceiveFrameRate)
+    if (videoReceivedResolutionHeight != null) __obj.updateDynamic("videoReceivedResolutionHeight")(videoReceivedResolutionHeight)
+    if (videoReceivedResolutionWidth != null) __obj.updateDynamic("videoReceivedResolutionWidth")(videoReceivedResolutionWidth)
+    __obj.asInstanceOf[RemoteStreamStats]
+  }
+}
+

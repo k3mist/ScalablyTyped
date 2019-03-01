@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.MemberTypeAnnotation
 }
 
+object MemberTypeAnnotation {
+  @scala.inline
+  def apply(
+    `object`: astDashTypesLib.genKindsMod.IdentifierKind,
+    property: astDashTypesLib.genKindsMod.MemberTypeAnnotationKind | astDashTypesLib.genKindsMod.GenericTypeAnnotationKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.MemberTypeAnnotation
+  ): MemberTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`object` = `object`, property = property.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[MemberTypeAnnotation]
+  }
+}
+

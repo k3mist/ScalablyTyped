@@ -80,3 +80,21 @@ trait GeocodingResult extends js.Object {
   var types: js.Array[AddressType]
 }
 
+object GeocodingResult {
+  @scala.inline
+  def apply(
+    address_components: js.Array[AddressComponent],
+    formatted_address: java.lang.String,
+    geometry: AddressGeometry,
+    partial_match: scala.Boolean,
+    place_id: java.lang.String,
+    plus_code: PlusCode,
+    postcode_localities: js.Array[java.lang.String],
+    types: js.Array[AddressType]
+  ): GeocodingResult = {
+    val __obj = js.Dynamic.literal(address_components = address_components, formatted_address = formatted_address, geometry = geometry, partial_match = partial_match, place_id = place_id, plus_code = plus_code, postcode_localities = postcode_localities, types = types)
+  
+    __obj.asInstanceOf[GeocodingResult]
+  }
+}
+

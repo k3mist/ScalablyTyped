@@ -10,3 +10,12 @@ trait IMediaCaptureFailedEventArgs extends js.Object {
   var message: java.lang.String
 }
 
+object IMediaCaptureFailedEventArgs {
+  @scala.inline
+  def apply(code: scala.Double, message: java.lang.String): IMediaCaptureFailedEventArgs = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
+    __obj.asInstanceOf[IMediaCaptureFailedEventArgs]
+  }
+}
+

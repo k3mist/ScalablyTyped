@@ -21,3 +21,18 @@ trait GridColumnEvent
   var OldValue: js.Any
 }
 
+object GridColumnEvent {
+  @scala.inline
+  def apply(
+    AttributeName: java.lang.String,
+    ColumnIndex: scala.Double,
+    NewValue: js.Any,
+    OldValue: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): GridColumnEvent = {
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName, ColumnIndex = ColumnIndex, NewValue = NewValue, OldValue = OldValue, Source = Source)
+  
+    __obj.asInstanceOf[GridColumnEvent]
+  }
+}
+

@@ -12,3 +12,12 @@ trait NumberSet
   var values: js.Array[scala.Double]
 }
 
+object NumberSet {
+  @scala.inline
+  def apply(`type`: awsDashSdkLib.awsDashSdkLibStrings.Number, values: js.Array[scala.Double]): NumberSet = {
+    val __obj = js.Dynamic.literal(`type` = `type`, values = values)
+  
+    __obj.asInstanceOf[NumberSet]
+  }
+}
+

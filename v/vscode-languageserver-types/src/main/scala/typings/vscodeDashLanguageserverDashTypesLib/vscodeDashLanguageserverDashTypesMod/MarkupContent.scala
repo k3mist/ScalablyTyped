@@ -16,3 +16,12 @@ trait MarkupContent extends js.Object {
   var value: java.lang.String
 }
 
+object MarkupContent {
+  @scala.inline
+  def apply(kind: MarkupKind, value: java.lang.String): MarkupContent = {
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
+  
+    __obj.asInstanceOf[MarkupContent]
+  }
+}
+

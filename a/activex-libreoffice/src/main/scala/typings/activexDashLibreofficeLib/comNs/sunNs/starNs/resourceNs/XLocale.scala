@@ -121,3 +121,65 @@ trait XLocale
   def setDefault(newLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Unit
 }
 
+object XLocale {
+  @scala.inline
+  def apply(
+    AvailableLocales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    Default: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    ISOCountries: activexDashInteropLib.SafeArray[java.lang.String],
+    ISOLanguages: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    create: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
+    ],
+    equals: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean
+    ],
+    getAvailableLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getDefault: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getDisplayCountry: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayCountry_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayLanguage: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayLanguage_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayName: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayName_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayVariant: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayVariant_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISO3Country: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISO3Language: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISOCountries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getISOLanguages: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getLanguagesForCountry: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefault: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+  ): XLocale = {
+    val __obj = js.Dynamic.literal(AvailableLocales = AvailableLocales, Default = Default, ISOCountries = ISOCountries, ISOLanguages = ISOLanguages, acquire = acquire, create = create, equals = equals, getAvailableLocales = getAvailableLocales, getDefault = getDefault, getDisplayCountry = getDisplayCountry, getDisplayCountry_Default = getDisplayCountry_Default, getDisplayLanguage = getDisplayLanguage, getDisplayLanguage_Default = getDisplayLanguage_Default, getDisplayName = getDisplayName, getDisplayName_Default = getDisplayName_Default, getDisplayVariant = getDisplayVariant, getDisplayVariant_Default = getDisplayVariant_Default, getISO3Country = getISO3Country, getISO3Language = getISO3Language, getISOCountries = getISOCountries, getISOLanguages = getISOLanguages, getLanguagesForCountry = getLanguagesForCountry, queryInterface = queryInterface, release = release, setDefault = setDefault)
+  
+    __obj.asInstanceOf[XLocale]
+  }
+}
+

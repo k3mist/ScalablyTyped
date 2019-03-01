@@ -16,3 +16,15 @@ trait WillSaveTextDocumentParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object WillSaveTextDocumentParams {
+  @scala.inline
+  def apply(
+    reason: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): WillSaveTextDocumentParams = {
+    val __obj = js.Dynamic.literal(reason = reason, textDocument = textDocument)
+  
+    __obj.asInstanceOf[WillSaveTextDocumentParams]
+  }
+}
+

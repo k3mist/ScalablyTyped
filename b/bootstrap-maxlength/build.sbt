@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "bootstrap-maxlength"
-version := "v1.7.0-dt-20181003Z-c0321c"
+version := "v1.7.0-dt-20181003Z-8c6583"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-295e43",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-c8cc19",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-56608c",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-4f3b4b",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -11,3 +11,12 @@ trait OSBackgroundImageLayout extends js.Object {
   var titleTextColor: java.lang.String
 }
 
+object OSBackgroundImageLayout {
+  @scala.inline
+  def apply(bodyTextColor: java.lang.String, image: java.lang.String, titleTextColor: java.lang.String): OSBackgroundImageLayout = {
+    val __obj = js.Dynamic.literal(bodyTextColor = bodyTextColor, image = image, titleTextColor = titleTextColor)
+  
+    __obj.asInstanceOf[OSBackgroundImageLayout]
+  }
+}
+

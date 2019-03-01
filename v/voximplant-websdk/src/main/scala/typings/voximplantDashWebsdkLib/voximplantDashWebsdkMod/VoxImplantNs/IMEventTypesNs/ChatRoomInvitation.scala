@@ -32,3 +32,18 @@ trait ChatRoomInvitation
   var room: java.lang.String
 }
 
+object ChatRoomInvitation {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    from: java.lang.String,
+    password: java.lang.String,
+    reason: java.lang.String,
+    room: java.lang.String
+  ): ChatRoomInvitation = {
+    val __obj = js.Dynamic.literal(body = body, from = from, password = password, reason = reason, room = room)
+  
+    __obj.asInstanceOf[ChatRoomInvitation]
+  }
+}
+

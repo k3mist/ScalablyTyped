@@ -14,3 +14,19 @@ trait TaskAgentQueue extends js.Object {
   var provisioned: scala.Boolean
 }
 
+object TaskAgentQueue {
+  @scala.inline
+  def apply(
+    groupScopeId: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String,
+    pool: TaskAgentPoolReference,
+    projectId: java.lang.String,
+    provisioned: scala.Boolean
+  ): TaskAgentQueue = {
+    val __obj = js.Dynamic.literal(groupScopeId = groupScopeId, id = id, name = name, pool = pool, projectId = projectId, provisioned = provisioned)
+  
+    __obj.asInstanceOf[TaskAgentQueue]
+  }
+}
+

@@ -56,3 +56,24 @@ trait FuzzyLikeThisFieldQuery extends Query {
   def toJSON(): js.Any
 }
 
+object FuzzyLikeThisFieldQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    boost: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    failOnUnsupportedField: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
+    field: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    ignoreTf: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
+    likeText: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    maxQueryTerms: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    minSimilarity: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    prefixLength: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    toJSON: js.Function0[js.Any]
+  ): FuzzyLikeThisFieldQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, failOnUnsupportedField = failOnUnsupportedField, field = field, ignoreTf = ignoreTf, likeText = likeText, maxQueryTerms = maxQueryTerms, minSimilarity = minSimilarity, prefixLength = prefixLength, toJSON = toJSON)
+  
+    __obj.asInstanceOf[FuzzyLikeThisFieldQuery]
+  }
+}
+

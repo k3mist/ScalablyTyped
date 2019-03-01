@@ -10,3 +10,17 @@ trait MetadataRequestedEventOptions extends EntryPathRequestedEventOptions {
   var thumbnail: scala.Boolean
 }
 
+object MetadataRequestedEventOptions {
+  @scala.inline
+  def apply(
+    entryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    requestId: scala.Double,
+    thumbnail: scala.Boolean
+  ): MetadataRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId, thumbnail = thumbnail)
+  
+    __obj.asInstanceOf[MetadataRequestedEventOptions]
+  }
+}
+

@@ -11,3 +11,12 @@ trait initPtsFoundData extends js.Object {
   var initPTS: scala.Double
 }
 
+object initPtsFoundData {
+  @scala.inline
+  def apply(d: java.lang.String, frag: Fragment, initPTS: scala.Double): initPtsFoundData = {
+    val __obj = js.Dynamic.literal(d = d, frag = frag, initPTS = initPTS)
+  
+    __obj.asInstanceOf[initPtsFoundData]
+  }
+}
+

@@ -22,3 +22,20 @@ trait SizeConstraintSetArgs extends js.Object {
   ] = js.undefined
 }
 
+object SizeConstraintSetArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sizeConstraints: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatch]
+      ]
+    ] = null
+  ): SizeConstraintSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sizeConstraints != null) __obj.updateDynamic("sizeConstraints")(sizeConstraints.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SizeConstraintSetArgs]
+  }
+}
+

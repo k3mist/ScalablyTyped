@@ -12,3 +12,12 @@ trait Range extends js.Object {
   var s: CellAddress
 }
 
+object Range {
+  @scala.inline
+  def apply(e: CellAddress, s: CellAddress): Range = {
+    val __obj = js.Dynamic.literal(e = e, s = s)
+  
+    __obj.asInstanceOf[Range]
+  }
+}
+

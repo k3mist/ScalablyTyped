@@ -16,3 +16,21 @@ trait Elements extends js.Object {
   var viewport: stdLib.HTMLElement
 }
 
+object Elements {
+  @scala.inline
+  def apply(
+    content: stdLib.HTMLElement,
+    host: stdLib.HTMLElement,
+    padding: stdLib.HTMLElement,
+    scrollbarCorner: stdLib.HTMLElement,
+    scrollbarHorizontal: overlayscrollbarsLib.Anon_Handle,
+    scrollbarVertical: overlayscrollbarsLib.Anon_Handle,
+    target: stdLib.HTMLElement,
+    viewport: stdLib.HTMLElement
+  ): Elements = {
+    val __obj = js.Dynamic.literal(content = content, host = host, padding = padding, scrollbarCorner = scrollbarCorner, scrollbarHorizontal = scrollbarHorizontal, scrollbarVertical = scrollbarVertical, target = target, viewport = viewport)
+  
+    __obj.asInstanceOf[Elements]
+  }
+}
+

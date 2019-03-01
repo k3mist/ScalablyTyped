@@ -16,3 +16,21 @@ trait GeoTrackingInfo extends js.Object {
   var Zip: java.lang.String
 }
 
+object GeoTrackingInfo {
+  @scala.inline
+  def apply(
+    City: java.lang.String,
+    Coords: java.lang.String,
+    Country: java.lang.String,
+    CountryISOCode: java.lang.String,
+    IP: java.lang.String,
+    Region: java.lang.String,
+    RegionISOCode: java.lang.String,
+    Zip: java.lang.String
+  ): GeoTrackingInfo = {
+    val __obj = js.Dynamic.literal(City = City, Coords = Coords, Country = Country, CountryISOCode = CountryISOCode, IP = IP, Region = Region, RegionISOCode = RegionISOCode, Zip = Zip)
+  
+    __obj.asInstanceOf[GeoTrackingInfo]
+  }
+}
+

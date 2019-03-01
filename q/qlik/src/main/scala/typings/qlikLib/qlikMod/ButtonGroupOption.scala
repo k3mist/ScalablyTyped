@@ -11,3 +11,12 @@ trait ButtonGroupOption extends js.Object {
   var value: java.lang.String
 }
 
+object ButtonGroupOption {
+  @scala.inline
+  def apply(label: java.lang.String, tooltip: java.lang.String, value: java.lang.String): ButtonGroupOption = {
+    val __obj = js.Dynamic.literal(label = label, tooltip = tooltip, value = value)
+  
+    __obj.asInstanceOf[ButtonGroupOption]
+  }
+}
+

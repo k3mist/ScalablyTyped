@@ -50,3 +50,50 @@ trait Operators extends js.Object {
   var values: js.Symbol
 }
 
+object Operators {
+  @scala.inline
+  def apply(
+    adjacent: js.Symbol,
+    all: js.Symbol,
+    and: js.Symbol,
+    any: js.Symbol,
+    between: js.Symbol,
+    col: js.Symbol,
+    contained: js.Symbol,
+    contains: js.Symbol,
+    eq: js.Symbol,
+    gt: js.Symbol,
+    gte: js.Symbol,
+    iLike: js.Symbol,
+    iRegexp: js.Symbol,
+    in: js.Symbol,
+    is: js.Symbol,
+    join: js.Symbol,
+    like: js.Symbol,
+    lt: js.Symbol,
+    lte: js.Symbol,
+    ne: js.Symbol,
+    noExtendLeft: js.Symbol,
+    noExtendRight: js.Symbol,
+    not: js.Symbol,
+    notBetween: js.Symbol,
+    notILike: js.Symbol,
+    notIRegexp: js.Symbol,
+    notIn: js.Symbol,
+    notLike: js.Symbol,
+    notRegexp: js.Symbol,
+    or: js.Symbol,
+    overlap: js.Symbol,
+    placeholder: js.Symbol,
+    raw: js.Symbol,
+    regexp: js.Symbol,
+    strictLeft: js.Symbol,
+    strictRight: js.Symbol,
+    values: js.Symbol
+  ): Operators = {
+    val __obj = js.Dynamic.literal(adjacent = adjacent, all = all, and = and, any = any, between = between, col = col, contained = contained, contains = contains, eq = eq, gt = gt, gte = gte, iLike = iLike, iRegexp = iRegexp, in = in, is = is, join = join, like = like, lt = lt, lte = lte, ne = ne, noExtendLeft = noExtendLeft, noExtendRight = noExtendRight, not = not, notBetween = notBetween, notILike = notILike, notIRegexp = notIRegexp, notIn = notIn, notLike = notLike, notRegexp = notRegexp, or = or, overlap = overlap, placeholder = placeholder, raw = raw, regexp = regexp, strictLeft = strictLeft, strictRight = strictRight, values = values)
+  
+    __obj.asInstanceOf[Operators]
+  }
+}
+

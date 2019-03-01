@@ -13,3 +13,18 @@ trait Anon_Error extends js.Object {
   var success: java.lang.String
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(
+    error: java.lang.String,
+    root: java.lang.String,
+    saveAgainButton: java.lang.String,
+    saving: java.lang.String,
+    success: java.lang.String
+  ): Anon_Error = {
+    val __obj = js.Dynamic.literal(error = error, root = root, saveAgainButton = saveAgainButton, saving = saving, success = success)
+  
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

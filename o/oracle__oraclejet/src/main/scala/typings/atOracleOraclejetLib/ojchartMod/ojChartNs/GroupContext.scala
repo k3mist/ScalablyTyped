@@ -11,3 +11,12 @@ trait GroupContext extends js.Object {
   var subId: java.lang.String
 }
 
+object GroupContext {
+  @scala.inline
+  def apply(indexPath: js.Array[_], subId: java.lang.String): GroupContext = {
+    val __obj = js.Dynamic.literal(indexPath = indexPath, subId = subId)
+  
+    __obj.asInstanceOf[GroupContext]
+  }
+}
+

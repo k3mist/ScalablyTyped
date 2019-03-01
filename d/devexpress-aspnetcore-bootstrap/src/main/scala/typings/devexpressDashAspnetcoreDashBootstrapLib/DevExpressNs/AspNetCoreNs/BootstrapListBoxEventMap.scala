@@ -18,3 +18,28 @@ trait BootstrapListBoxEventMap extends BootstrapClientEditEventMap {
   var selectedIndexChanged: ProcessingModeEventArgs
 }
 
+object BootstrapListBoxEventMap {
+  @scala.inline
+  def apply(
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    customHighlighting: ListEditCustomHighlightingEventArgs,
+    endCallback: EndCallbackEventArgs,
+    gotFocus: EventArgs,
+    init: EventArgs,
+    itemDoubleClick: EventArgs,
+    itemFiltering: ListEditItemFilteringEventArgs,
+    keyDown: EditKeyEventArgs,
+    keyPress: EditKeyEventArgs,
+    keyUp: EditKeyEventArgs,
+    lostFocus: EventArgs,
+    selectedIndexChanged: ProcessingModeEventArgs,
+    validation: EditValidationEventArgs,
+    valueChanged: ProcessingModeEventArgs
+  ): BootstrapListBoxEventMap = {
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, callbackError = callbackError, customHighlighting = customHighlighting, endCallback = endCallback, gotFocus = gotFocus, init = init, itemDoubleClick = itemDoubleClick, itemFiltering = itemFiltering, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, selectedIndexChanged = selectedIndexChanged, validation = validation, valueChanged = valueChanged)
+  
+    __obj.asInstanceOf[BootstrapListBoxEventMap]
+  }
+}
+

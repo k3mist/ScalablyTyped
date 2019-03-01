@@ -13,3 +13,18 @@ trait ForwardedTcpipChannelInfo extends ChannelOpenInfo {
   var window: scala.Double
 }
 
+object ForwardedTcpipChannelInfo {
+  @scala.inline
+  def apply(
+    data: TcpipChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-tcpip`,
+    window: scala.Double
+  ): ForwardedTcpipChannelInfo = {
+    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, `type` = `type`, window = window)
+  
+    __obj.asInstanceOf[ForwardedTcpipChannelInfo]
+  }
+}
+

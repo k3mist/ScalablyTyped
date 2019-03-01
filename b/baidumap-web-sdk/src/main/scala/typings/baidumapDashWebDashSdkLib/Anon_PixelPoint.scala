@@ -13,3 +13,18 @@ trait Anon_PixelPoint extends js.Object {
   var zoom: scala.Double
 }
 
+object Anon_PixelPoint {
+  @scala.inline
+  def apply(
+    pixel: baidumapDashWebDashSdkLib.BMapNs.Pixel,
+    point: baidumapDashWebDashSdkLib.BMapNs.Point,
+    target: js.Any,
+    `type`: java.lang.String,
+    zoom: scala.Double
+  ): Anon_PixelPoint = {
+    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target, `type` = `type`, zoom = zoom)
+  
+    __obj.asInstanceOf[Anon_PixelPoint]
+  }
+}
+

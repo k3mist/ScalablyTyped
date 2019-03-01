@@ -32,3 +32,29 @@ trait XSpreadsheets
   def moveByName(aName: java.lang.String, nDestination: scala.Double): scala.Unit
 }
 
+object XSpreadsheets {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    copyByName: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    insertByName: js.Function2[java.lang.String, js.Any, scala.Unit],
+    insertNewByName: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    moveByName: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByName: js.Function1[java.lang.String, scala.Unit],
+    replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XSpreadsheets = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, copyByName = copyByName, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, insertNewByName = insertNewByName, moveByName = moveByName, queryInterface = queryInterface, release = release, removeByName = removeByName, replaceByName = replaceByName)
+  
+    __obj.asInstanceOf[XSpreadsheets]
+  }
+}
+

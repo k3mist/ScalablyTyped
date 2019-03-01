@@ -13,3 +13,18 @@ trait Anon_AcceptableStates extends js.Object {
   var stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`false`
 }
 
+object Anon_AcceptableStates {
+  @scala.inline
+  def apply(
+    acceptableStates: js.Tuple2[
+      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates, 
+      youtubeDashPlayerLib.distConstantsPlayerStatesMod.PlayerStates
+    ],
+    stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`false`
+  ): Anon_AcceptableStates = {
+    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates, stateChangeRequired = stateChangeRequired)
+  
+    __obj.asInstanceOf[Anon_AcceptableStates]
+  }
+}
+

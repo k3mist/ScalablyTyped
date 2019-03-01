@@ -14,3 +14,19 @@ trait ConsoleFormattedStreamLevelStyle extends js.Object {
   var warn: java.lang.String
 }
 
+object ConsoleFormattedStreamLevelStyle {
+  @scala.inline
+  def apply(
+    debug: java.lang.String,
+    error: java.lang.String,
+    fatal: java.lang.String,
+    info: java.lang.String,
+    trace: java.lang.String,
+    warn: java.lang.String
+  ): ConsoleFormattedStreamLevelStyle = {
+    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, info = info, trace = trace, warn = warn)
+  
+    __obj.asInstanceOf[ConsoleFormattedStreamLevelStyle]
+  }
+}
+

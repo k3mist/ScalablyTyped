@@ -25,3 +25,30 @@ trait Anon_AllLiteral extends js.Object {
   var VoidLiteral: doctrineLib.doctrineLibStrings.VoidLiteral
 }
 
+object Anon_AllLiteral {
+  @scala.inline
+  def apply(
+    AllLiteral: doctrineLib.doctrineLibStrings.AllLiteral,
+    ArrayType: doctrineLib.doctrineLibStrings.ArrayType,
+    FieldType: doctrineLib.doctrineLibStrings.FieldType,
+    FunctionType: doctrineLib.doctrineLibStrings.FunctionType,
+    NameExpression: doctrineLib.doctrineLibStrings.NameExpression,
+    NonNullableType: doctrineLib.doctrineLibStrings.NonNullableType,
+    NullLiteral: doctrineLib.doctrineLibStrings.NullLiteral,
+    NullableLiteral: doctrineLib.doctrineLibStrings.NullableLiteral,
+    NullableType: doctrineLib.doctrineLibStrings.NullableType,
+    OptionalType: doctrineLib.doctrineLibStrings.OptionalType,
+    ParameterType: doctrineLib.doctrineLibStrings.ParameterType,
+    RecordType: doctrineLib.doctrineLibStrings.RecordType,
+    RestType: doctrineLib.doctrineLibStrings.RestType,
+    TypeApplication: doctrineLib.doctrineLibStrings.TypeApplication,
+    UndefinedLiteral: doctrineLib.doctrineLibStrings.UndefinedLiteral,
+    UnionType: doctrineLib.doctrineLibStrings.UnionType,
+    VoidLiteral: doctrineLib.doctrineLibStrings.VoidLiteral
+  ): Anon_AllLiteral = {
+    val __obj = js.Dynamic.literal(AllLiteral = AllLiteral, ArrayType = ArrayType, FieldType = FieldType, FunctionType = FunctionType, NameExpression = NameExpression, NonNullableType = NonNullableType, NullLiteral = NullLiteral, NullableLiteral = NullableLiteral, NullableType = NullableType, OptionalType = OptionalType, ParameterType = ParameterType, RecordType = RecordType, RestType = RestType, TypeApplication = TypeApplication, UndefinedLiteral = UndefinedLiteral, UnionType = UnionType, VoidLiteral = VoidLiteral)
+  
+    __obj.asInstanceOf[Anon_AllLiteral]
+  }
+}
+

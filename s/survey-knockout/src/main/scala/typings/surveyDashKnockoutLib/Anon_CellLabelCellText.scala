@@ -15,3 +15,20 @@ trait Anon_CellLabelCellText extends js.Object {
   var row: java.lang.String
 }
 
+object Anon_CellLabelCellText {
+  @scala.inline
+  def apply(
+    cellLabel: java.lang.String,
+    cellText: java.lang.String,
+    cellTextSelected: java.lang.String,
+    itemValue: java.lang.String,
+    label: java.lang.String,
+    root: java.lang.String,
+    row: java.lang.String
+  ): Anon_CellLabelCellText = {
+    val __obj = js.Dynamic.literal(cellLabel = cellLabel, cellText = cellText, cellTextSelected = cellTextSelected, itemValue = itemValue, label = label, root = root, row = row)
+  
+    __obj.asInstanceOf[Anon_CellLabelCellText]
+  }
+}
+

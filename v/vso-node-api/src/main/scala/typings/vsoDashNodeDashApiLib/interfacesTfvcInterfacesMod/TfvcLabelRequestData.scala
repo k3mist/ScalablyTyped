@@ -17,3 +17,19 @@ trait TfvcLabelRequestData extends js.Object {
   var owner: java.lang.String
 }
 
+object TfvcLabelRequestData {
+  @scala.inline
+  def apply(
+    includeLinks: scala.Boolean,
+    itemLabelFilter: java.lang.String,
+    labelScope: java.lang.String,
+    maxItemCount: scala.Double,
+    name: java.lang.String,
+    owner: java.lang.String
+  ): TfvcLabelRequestData = {
+    val __obj = js.Dynamic.literal(includeLinks = includeLinks, itemLabelFilter = itemLabelFilter, labelScope = labelScope, maxItemCount = maxItemCount, name = name, owner = owner)
+  
+    __obj.asInstanceOf[TfvcLabelRequestData]
+  }
+}
+

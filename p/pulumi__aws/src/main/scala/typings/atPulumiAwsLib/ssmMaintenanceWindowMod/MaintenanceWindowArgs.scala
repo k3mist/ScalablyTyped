@@ -44,3 +44,27 @@ trait MaintenanceWindowArgs extends js.Object {
   val startDate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object MaintenanceWindowArgs {
+  @scala.inline
+  def apply(
+    cutoff: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    duration: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    schedule: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    allowUnassociatedTargets: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    endDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    scheduleTimezone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    startDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MaintenanceWindowArgs = {
+    val __obj = js.Dynamic.literal(cutoff = cutoff.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
+    if (allowUnassociatedTargets != null) __obj.updateDynamic("allowUnassociatedTargets")(allowUnassociatedTargets.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scheduleTimezone != null) __obj.updateDynamic("scheduleTimezone")(scheduleTimezone.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowArgs]
+  }
+}
+

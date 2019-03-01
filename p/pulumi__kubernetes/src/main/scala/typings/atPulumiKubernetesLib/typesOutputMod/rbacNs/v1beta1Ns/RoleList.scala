@@ -33,3 +33,17 @@ trait RoleList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object RoleList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`,
+    items: js.Array[Role],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): RoleList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[RoleList]
+  }
+}
+

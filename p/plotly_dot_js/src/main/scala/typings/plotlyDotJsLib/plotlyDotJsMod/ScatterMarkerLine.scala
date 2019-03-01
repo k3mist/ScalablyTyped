@@ -16,3 +16,21 @@ trait ScatterMarkerLine extends js.Object {
   var width: scala.Double | js.Array[scala.Double]
 }
 
+object ScatterMarkerLine {
+  @scala.inline
+  def apply(
+    autocolorscale: scala.Boolean,
+    cauto: scala.Boolean,
+    cmax: scala.Double,
+    cmin: scala.Double,
+    color: Color,
+    colorscale: java.lang.String | js.Array[java.lang.String],
+    reversescale: scala.Boolean,
+    width: scala.Double | js.Array[scala.Double]
+  ): ScatterMarkerLine = {
+    val __obj = js.Dynamic.literal(autocolorscale = autocolorscale, cauto = cauto, cmax = cmax, cmin = cmin, color = color.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], reversescale = reversescale, width = width.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ScatterMarkerLine]
+  }
+}
+

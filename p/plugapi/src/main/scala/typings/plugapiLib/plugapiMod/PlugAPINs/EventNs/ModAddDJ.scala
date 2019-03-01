@@ -10,3 +10,12 @@ trait ModAddDJ extends js.Object {
   var username: java.lang.String
 }
 
+object ModAddDJ {
+  @scala.inline
+  def apply(moderator: java.lang.String, username: java.lang.String): ModAddDJ = {
+    val __obj = js.Dynamic.literal(moderator = moderator, username = username)
+  
+    __obj.asInstanceOf[ModAddDJ]
+  }
+}
+

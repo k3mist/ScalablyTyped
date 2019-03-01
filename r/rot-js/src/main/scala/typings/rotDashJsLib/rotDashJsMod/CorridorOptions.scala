@@ -9,3 +9,12 @@ trait CorridorOptions extends FeatureOptions {
   var corridorLength: js.Tuple2[scala.Double, scala.Double]
 }
 
+object CorridorOptions {
+  @scala.inline
+  def apply(corridorLength: js.Tuple2[scala.Double, scala.Double]): CorridorOptions = {
+    val __obj = js.Dynamic.literal(corridorLength = corridorLength)
+  
+    __obj.asInstanceOf[CorridorOptions]
+  }
+}
+

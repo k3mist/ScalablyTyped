@@ -30,3 +30,18 @@ trait AppliedDiscount extends js.Object {
   var value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount
 }
 
+object AppliedDiscount {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    title: java.lang.String,
+    value: java.lang.String,
+    value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount,
+    amount: scala.Int | scala.Double = null
+  ): AppliedDiscount = {
+    val __obj = js.Dynamic.literal(description = description, title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppliedDiscount]
+  }
+}
+

@@ -46,3 +46,24 @@ trait XTextColumns
   def setColumns(Columns: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn]): scala.Unit
 }
 
+object XTextColumns {
+  @scala.inline
+  def apply(
+    ColumnCount: scala.Double,
+    Columns: activexDashInteropLib.SafeArray[TextColumn],
+    ReferenceValue: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getColumnCount: js.Function0[scala.Double],
+    getColumns: js.Function0[activexDashInteropLib.SafeArray[TextColumn]],
+    getReferenceValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setColumnCount: js.Function1[scala.Double, scala.Unit],
+    setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
+  ): XTextColumns = {
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, ReferenceValue = ReferenceValue, acquire = acquire, getColumnCount = getColumnCount, getColumns = getColumns, getReferenceValue = getReferenceValue, queryInterface = queryInterface, release = release, setColumnCount = setColumnCount, setColumns = setColumns)
+  
+    __obj.asInstanceOf[XTextColumns]
+  }
+}
+

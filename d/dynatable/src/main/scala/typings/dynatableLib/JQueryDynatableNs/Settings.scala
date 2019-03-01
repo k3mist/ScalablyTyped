@@ -15,3 +15,20 @@ trait Settings extends js.Object {
   var writers: Writers
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    dataset: Dataset,
+    features: Features,
+    inputs: Inputs,
+    params: Params,
+    readers: Readers,
+    table: Table,
+    writers: Writers
+  ): Settings = {
+    val __obj = js.Dynamic.literal(dataset = dataset, features = features, inputs = inputs, params = params, readers = readers, table = table, writers = writers)
+  
+    __obj.asInstanceOf[Settings]
+  }
+}
+

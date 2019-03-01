@@ -13,3 +13,18 @@ trait EndpointUrl extends js.Object {
   var value: java.lang.String
 }
 
+object EndpointUrl {
+  @scala.inline
+  def apply(
+    dependsOn: DependsOn,
+    displayName: java.lang.String,
+    helpText: java.lang.String,
+    isVisible: java.lang.String,
+    value: java.lang.String
+  ): EndpointUrl = {
+    val __obj = js.Dynamic.literal(dependsOn = dependsOn, displayName = displayName, helpText = helpText, isVisible = isVisible, value = value)
+  
+    __obj.asInstanceOf[EndpointUrl]
+  }
+}
+

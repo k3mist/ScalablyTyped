@@ -12,3 +12,17 @@ trait Anon_BottomLoading extends js.Object {
   var placement: antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom
 }
 
+object Anon_BottomLoading {
+  @scala.inline
+  def apply(
+    loading: scala.Boolean,
+    multiLines: scala.Boolean,
+    notFoundContent: java.lang.String,
+    placement: antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom
+  ): Anon_BottomLoading = {
+    val __obj = js.Dynamic.literal(loading = loading, multiLines = multiLines, notFoundContent = notFoundContent, placement = placement.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_BottomLoading]
+  }
+}
+

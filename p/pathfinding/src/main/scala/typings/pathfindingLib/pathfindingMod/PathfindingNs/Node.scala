@@ -11,3 +11,12 @@ trait Node extends js.Object {
   var y: scala.Double
 }
 
+object Node {
+  @scala.inline
+  def apply(walkable: scala.Boolean, x: scala.Double, y: scala.Double): Node = {
+    val __obj = js.Dynamic.literal(walkable = walkable, x = x, y = y)
+  
+    __obj.asInstanceOf[Node]
+  }
+}
+

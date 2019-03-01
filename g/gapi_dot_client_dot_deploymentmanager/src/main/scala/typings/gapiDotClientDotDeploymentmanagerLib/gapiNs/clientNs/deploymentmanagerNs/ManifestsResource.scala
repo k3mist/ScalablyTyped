@@ -12,3 +12,21 @@ trait ManifestsResource extends js.Object {
   def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields): gapiDotClientLib.gapiNs.clientNs.Request[ManifestsListResponse]
 }
 
+object ManifestsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeployment, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Manifest]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManifestsListResponse]
+    ]
+  ): ManifestsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[ManifestsResource]
+  }
+}
+

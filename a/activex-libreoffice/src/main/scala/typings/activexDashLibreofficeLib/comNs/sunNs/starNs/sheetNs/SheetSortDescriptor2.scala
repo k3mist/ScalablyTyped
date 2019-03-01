@@ -38,3 +38,22 @@ trait SheetSortDescriptor2
   var UserListIndex: scala.Double
 }
 
+object SheetSortDescriptor2 {
+  @scala.inline
+  def apply(
+    BindFormatsToContent: scala.Boolean,
+    ContainsHeader: scala.Boolean,
+    CopyOutputData: scala.Boolean,
+    IsSortColumns: scala.Boolean,
+    IsUserListEnabled: scala.Boolean,
+    MaxSortFieldsCount: scala.Double,
+    OutputPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    SortFields: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField],
+    UserListIndex: scala.Double
+  ): SheetSortDescriptor2 = {
+    val __obj = js.Dynamic.literal(BindFormatsToContent = BindFormatsToContent, ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, IsSortColumns = IsSortColumns, IsUserListEnabled = IsUserListEnabled, MaxSortFieldsCount = MaxSortFieldsCount, OutputPosition = OutputPosition, SortFields = SortFields, UserListIndex = UserListIndex)
+  
+    __obj.asInstanceOf[SheetSortDescriptor2]
+  }
+}
+

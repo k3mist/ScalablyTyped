@@ -53,3 +53,21 @@ trait JDBCConnectionProperties extends ConnectionProperties {
   var TypeInfoSettings: activexDashInteropLib.SafeArray[_]
 }
 
+object JDBCConnectionProperties {
+  @scala.inline
+  def apply(
+    AutoRetrievingStatement: java.lang.String,
+    IsAutoRetrievingEnabled: scala.Boolean,
+    JavaDriverClass: java.lang.String,
+    JavaDriverClassPath: java.lang.String,
+    SystemProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    TypeInfoSettings: activexDashInteropLib.SafeArray[_],
+    password: java.lang.String,
+    user: java.lang.String
+  ): JDBCConnectionProperties = {
+    val __obj = js.Dynamic.literal(AutoRetrievingStatement = AutoRetrievingStatement, IsAutoRetrievingEnabled = IsAutoRetrievingEnabled, JavaDriverClass = JavaDriverClass, JavaDriverClassPath = JavaDriverClassPath, SystemProperties = SystemProperties, TypeInfoSettings = TypeInfoSettings, password = password, user = user)
+  
+    __obj.asInstanceOf[JDBCConnectionProperties]
+  }
+}
+

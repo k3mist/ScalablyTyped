@@ -14,3 +14,19 @@ trait IScroll extends js.Object {
   var position: IPoint
 }
 
+object IScroll {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    chart: IChart,
+    direction: java.lang.String,
+    enabled: scala.Boolean,
+    mouseButton: scala.Double,
+    position: IPoint
+  ): IScroll = {
+    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, mouseButton = mouseButton, position = position)
+  
+    __obj.asInstanceOf[IScroll]
+  }
+}
+

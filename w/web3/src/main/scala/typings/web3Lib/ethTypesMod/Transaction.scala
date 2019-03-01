@@ -22,3 +22,29 @@ trait Transaction extends js.Object {
   var value: java.lang.String
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    blockHash: java.lang.String,
+    blockNumber: scala.Double,
+    from: java.lang.String,
+    gas: scala.Double,
+    gasPrice: java.lang.String,
+    hash: java.lang.String,
+    input: java.lang.String,
+    nonce: scala.Double,
+    to: java.lang.String,
+    transactionIndex: scala.Double,
+    value: java.lang.String,
+    r: java.lang.String = null,
+    s: java.lang.String = null,
+    v: java.lang.String = null
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(blockHash = blockHash, blockNumber = blockNumber, from = from, gas = gas, gasPrice = gasPrice, hash = hash, input = input, nonce = nonce, to = to, transactionIndex = transactionIndex, value = value)
+    if (r != null) __obj.updateDynamic("r")(r)
+    if (s != null) __obj.updateDynamic("s")(s)
+    if (v != null) __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

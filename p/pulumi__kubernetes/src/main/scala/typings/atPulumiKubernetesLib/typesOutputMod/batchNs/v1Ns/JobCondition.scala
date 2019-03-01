@@ -35,3 +35,19 @@ trait JobCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object JobCondition {
+  @scala.inline
+  def apply(
+    lastProbeTime: java.lang.String,
+    lastTransitionTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    status: java.lang.String,
+    `type`: java.lang.String
+  ): JobCondition = {
+    val __obj = js.Dynamic.literal(lastProbeTime = lastProbeTime, lastTransitionTime = lastTransitionTime, message = message, reason = reason, status = status, `type` = `type`)
+  
+    __obj.asInstanceOf[JobCondition]
+  }
+}
+

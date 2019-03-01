@@ -10,3 +10,12 @@ trait Anon_Heading extends js.Object {
   var speed: scala.Double
 }
 
+object Anon_Heading {
+  @scala.inline
+  def apply(heading: scala.Double, speed: scala.Double): Anon_Heading = {
+    val __obj = js.Dynamic.literal(heading = heading, speed = speed)
+  
+    __obj.asInstanceOf[Anon_Heading]
+  }
+}
+

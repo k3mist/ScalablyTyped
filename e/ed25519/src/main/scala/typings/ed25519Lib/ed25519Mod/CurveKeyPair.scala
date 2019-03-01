@@ -16,3 +16,12 @@ trait CurveKeyPair extends js.Object {
   var publicKey: nodeLib.Buffer
 }
 
+object CurveKeyPair {
+  @scala.inline
+  def apply(privateKey: nodeLib.Buffer, publicKey: nodeLib.Buffer): CurveKeyPair = {
+    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+  
+    __obj.asInstanceOf[CurveKeyPair]
+  }
+}
+

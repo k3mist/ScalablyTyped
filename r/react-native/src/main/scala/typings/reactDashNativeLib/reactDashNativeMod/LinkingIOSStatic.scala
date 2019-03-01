@@ -40,3 +40,30 @@ trait LinkingIOSStatic extends js.Object {
   ): scala.Unit
 }
 
+object LinkingIOSStatic {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit], 
+      scala.Unit
+    ],
+    canOpenURL: js.Function2[
+      java.lang.String, 
+      js.Function1[/* supported */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ],
+    openURL: js.Function1[java.lang.String, scala.Unit],
+    popInitialURL: js.Function0[java.lang.String],
+    removeEventListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* event */ reactDashNativeLib.Anon_Url, scala.Unit], 
+      scala.Unit
+    ]
+  ): LinkingIOSStatic = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, canOpenURL = canOpenURL, openURL = openURL, popInitialURL = popInitialURL, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[LinkingIOSStatic]
+  }
+}
+

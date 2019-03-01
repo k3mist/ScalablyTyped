@@ -71,3 +71,17 @@ trait IHistoryService extends js.Object {
   def removeAll(): scala.Unit
 }
 
+object IHistoryService {
+  @scala.inline
+  def apply(
+    add: js.Function1[IHistoryItem, IHistoryItem],
+    getCurrent: js.Function0[js.Array[IHistoryItem]],
+    remove: js.Function1[scala.Double, scala.Unit],
+    removeAll: js.Function0[scala.Unit]
+  ): IHistoryService = {
+    val __obj = js.Dynamic.literal(add = add, getCurrent = getCurrent, remove = remove, removeAll = removeAll)
+  
+    __obj.asInstanceOf[IHistoryService]
+  }
+}
+

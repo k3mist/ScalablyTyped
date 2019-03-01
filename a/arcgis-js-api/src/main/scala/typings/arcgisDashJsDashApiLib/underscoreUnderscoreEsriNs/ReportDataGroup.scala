@@ -33,3 +33,20 @@ trait ReportDataGroup
   var value: java.lang.String
 }
 
+object ReportDataGroup {
+  @scala.inline
+  def apply(
+    aggregateLabel: java.lang.String,
+    aggregateValue: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    row: js.Array[java.lang.String],
+    value: java.lang.String
+  ): ReportDataGroup = {
+    val __obj = js.Dynamic.literal(aggregateLabel = aggregateLabel, aggregateValue = aggregateValue, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, row = row, value = value)
+  
+    __obj.asInstanceOf[ReportDataGroup]
+  }
+}
+

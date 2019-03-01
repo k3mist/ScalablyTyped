@@ -12,3 +12,12 @@ trait Options extends js.Object {
   var mismatch: js.Any
 }
 
+object Options {
+  @scala.inline
+  def apply(broaderLeft: js.Any, broaderRight: js.Any, equal: js.Any, mismatch: js.Any): Options = {
+    val __obj = js.Dynamic.literal(broaderLeft = broaderLeft, broaderRight = broaderRight, equal = equal, mismatch = mismatch)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

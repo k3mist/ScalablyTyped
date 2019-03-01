@@ -30,3 +30,19 @@ trait RateBasedRuleArgs extends js.Object {
   val rateLimit: atPulumiPulumiLib.resourceMod.Input[scala.Double]
 }
 
+object RateBasedRuleArgs {
+  @scala.inline
+  def apply(
+    metricName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    rateKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    rateLimit: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    predicates: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]] = null
+  ): RateBasedRuleArgs = {
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], rateKey = rateKey.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (predicates != null) __obj.updateDynamic("predicates")(predicates.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RateBasedRuleArgs]
+  }
+}
+

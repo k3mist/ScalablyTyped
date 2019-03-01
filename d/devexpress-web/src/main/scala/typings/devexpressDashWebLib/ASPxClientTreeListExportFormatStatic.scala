@@ -28,3 +28,18 @@ trait ASPxClientTreeListExportFormatStatic extends js.Object {
   var Xlsx: java.lang.String
 }
 
+object ASPxClientTreeListExportFormatStatic {
+  @scala.inline
+  def apply(
+    Docx: java.lang.String,
+    Pdf: java.lang.String,
+    Rtf: java.lang.String,
+    Xls: java.lang.String,
+    Xlsx: java.lang.String
+  ): ASPxClientTreeListExportFormatStatic = {
+    val __obj = js.Dynamic.literal(Docx = Docx, Pdf = Pdf, Rtf = Rtf, Xls = Xls, Xlsx = Xlsx)
+  
+    __obj.asInstanceOf[ASPxClientTreeListExportFormatStatic]
+  }
+}
+

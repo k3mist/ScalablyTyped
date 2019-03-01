@@ -22,3 +22,12 @@ trait TransitionStyle extends js.Object {
   var style: Style
 }
 
+object TransitionStyle {
+  @scala.inline
+  def apply(key: java.lang.String, style: Style, data: js.Any = null): TransitionStyle = {
+    val __obj = js.Dynamic.literal(key = key, style = style)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[TransitionStyle]
+  }
+}
+

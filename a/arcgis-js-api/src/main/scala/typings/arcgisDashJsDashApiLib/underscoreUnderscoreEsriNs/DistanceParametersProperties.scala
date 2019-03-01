@@ -32,3 +32,20 @@ trait DistanceParametersProperties extends js.Object {
   var geometry2: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
 }
 
+object DistanceParametersProperties {
+  @scala.inline
+  def apply(
+    distanceUnit: java.lang.String = null,
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    geometry1: js.Array[GeometryProperties] = null,
+    geometry2: js.Array[GeometryProperties] = null
+  ): DistanceParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (geometry1 != null) __obj.updateDynamic("geometry1")(geometry1)
+    if (geometry2 != null) __obj.updateDynamic("geometry2")(geometry2)
+    __obj.asInstanceOf[DistanceParametersProperties]
+  }
+}
+

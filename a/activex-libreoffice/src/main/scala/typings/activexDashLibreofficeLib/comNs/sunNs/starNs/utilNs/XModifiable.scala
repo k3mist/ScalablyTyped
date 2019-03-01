@@ -17,3 +17,20 @@ trait XModifiable extends XModifyBroadcaster {
   def setModified(bModified: scala.Boolean): scala.Unit
 }
 
+object XModifiable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addModifyListener: js.Function1[XModifyListener, scala.Unit],
+    isModified: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeModifyListener: js.Function1[XModifyListener, scala.Unit],
+    setModified: js.Function1[scala.Boolean, scala.Unit]
+  ): XModifiable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, isModified = isModified, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setModified = setModified)
+  
+    __obj.asInstanceOf[XModifiable]
+  }
+}
+

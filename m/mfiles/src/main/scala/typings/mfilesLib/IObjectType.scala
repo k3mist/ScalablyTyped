@@ -34,3 +34,39 @@ trait IObjectType extends js.Object {
   def IsAddingAllowedForUser(SessionInfo: ISessionInfo): scala.Boolean
 }
 
+object IObjectType {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    AllowAdding: scala.Boolean,
+    AllowedAsGroupingLevel: scala.Boolean,
+    CanHaveFiles: scala.Boolean,
+    CanHaveItemIcons: js.Function0[scala.Boolean],
+    Clone: js.Function0[IObjectType],
+    DefaultAccessControlList: IAccessControlList,
+    DefaultPropertyDef: scala.Double,
+    External: scala.Boolean,
+    GUID: java.lang.String,
+    GetIconAsPNG: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    HasOwnerType: scala.Boolean,
+    Hierarchical: scala.Boolean,
+    ID: scala.Double,
+    Icon: js.Array[scala.Double],
+    IsAddingAllowedForUser: js.Function1[ISessionInfo, scala.Boolean],
+    NamePlural: java.lang.String,
+    NameSingular: java.lang.String,
+    ObjectTypeTargetsForBrowsing: IObjectTypeTargetsForBrowsing,
+    OwnerPropertyDef: scala.Double,
+    OwnerType: scala.Double,
+    ReadOnlyPropertiesDuringInsert: IIDs,
+    ReadOnlyPropertiesDuringUpdate: IIDs,
+    RealObjectType: scala.Boolean,
+    ShowCreationCommandInTaskPane: scala.Boolean,
+    Translatable: scala.Boolean
+  ): IObjectType = {
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllowAdding = AllowAdding, AllowedAsGroupingLevel = AllowedAsGroupingLevel, CanHaveFiles = CanHaveFiles, CanHaveItemIcons = CanHaveItemIcons, Clone = Clone, DefaultAccessControlList = DefaultAccessControlList, DefaultPropertyDef = DefaultPropertyDef, External = External, GUID = GUID, GetIconAsPNG = GetIconAsPNG, HasOwnerType = HasOwnerType, Hierarchical = Hierarchical, ID = ID, Icon = Icon, IsAddingAllowedForUser = IsAddingAllowedForUser, NamePlural = NamePlural, NameSingular = NameSingular, ObjectTypeTargetsForBrowsing = ObjectTypeTargetsForBrowsing, OwnerPropertyDef = OwnerPropertyDef, OwnerType = OwnerType, ReadOnlyPropertiesDuringInsert = ReadOnlyPropertiesDuringInsert, ReadOnlyPropertiesDuringUpdate = ReadOnlyPropertiesDuringUpdate, RealObjectType = RealObjectType, ShowCreationCommandInTaskPane = ShowCreationCommandInTaskPane, Translatable = Translatable)
+  
+    __obj.asInstanceOf[IObjectType]
+  }
+}
+

@@ -69,3 +69,25 @@ trait IProgressData extends js.Object {
   var qUserInteractionWanted: scala.Boolean
 }
 
+object IProgressData {
+  @scala.inline
+  def apply(
+    qCompleted: scala.Double,
+    qErrorData: js.Array[IErrorData],
+    qFinished: scala.Boolean,
+    qKB: scala.Double,
+    qMillisecs: scala.Double,
+    qPersistentProgress: java.lang.String,
+    qPersistentProgressMessages: js.Array[IProgressMessage],
+    qStarted: scala.Boolean,
+    qTotal: scala.Double,
+    qTransientProgress: java.lang.String,
+    qTransientProgressMessage: IProgressMessage,
+    qUserInteractionWanted: scala.Boolean
+  ): IProgressData = {
+    val __obj = js.Dynamic.literal(qCompleted = qCompleted, qErrorData = qErrorData, qFinished = qFinished, qKB = qKB, qMillisecs = qMillisecs, qPersistentProgress = qPersistentProgress, qPersistentProgressMessages = qPersistentProgressMessages, qStarted = qStarted, qTotal = qTotal, qTransientProgress = qTransientProgress, qTransientProgressMessage = qTransientProgressMessage, qUserInteractionWanted = qUserInteractionWanted)
+  
+    __obj.asInstanceOf[IProgressData]
+  }
+}
+

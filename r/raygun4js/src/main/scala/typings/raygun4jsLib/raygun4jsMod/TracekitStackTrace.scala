@@ -14,3 +14,19 @@ trait TracekitStackTrace extends js.Object {
   var useragent: java.lang.String
 }
 
+object TracekitStackTrace {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    mode: java.lang.String,
+    name: java.lang.String,
+    stack: js.Array[TracekitStack],
+    url: java.lang.String,
+    useragent: java.lang.String
+  ): TracekitStackTrace = {
+    val __obj = js.Dynamic.literal(message = message, mode = mode, name = name, stack = stack, url = url, useragent = useragent)
+  
+    __obj.asInstanceOf[TracekitStackTrace]
+  }
+}
+

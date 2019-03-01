@@ -39,3 +39,21 @@ trait DirectionsViewModelLastRoute
   var routeResults: RouteResult
 }
 
+object DirectionsViewModelLastRoute {
+  @scala.inline
+  def apply(
+    barriers: js.Array[Graphic],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    messages: js.Array[DirectionsViewModelLastRouteMessages],
+    polygonBarriers: js.Array[Graphic],
+    polylineBarriers: js.Array[Graphic],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    routeResults: RouteResult
+  ): DirectionsViewModelLastRoute = {
+    val __obj = js.Dynamic.literal(barriers = barriers, constructor = constructor, hasOwnProperty = hasOwnProperty, messages = messages, polygonBarriers = polygonBarriers, polylineBarriers = polylineBarriers, propertyIsEnumerable = propertyIsEnumerable, routeResults = routeResults)
+  
+    __obj.asInstanceOf[DirectionsViewModelLastRoute]
+  }
+}
+

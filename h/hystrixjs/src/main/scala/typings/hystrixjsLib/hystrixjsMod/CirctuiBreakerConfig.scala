@@ -15,3 +15,20 @@ trait CirctuiBreakerConfig extends js.Object {
   var commandKey: java.lang.String
 }
 
+object CirctuiBreakerConfig {
+  @scala.inline
+  def apply(
+    circuitBreakerErrorThresholdPercentage: scala.Double,
+    circuitBreakerForceClosed: scala.Boolean,
+    circuitBreakerForceOpened: scala.Boolean,
+    circuitBreakerRequestVolumeThreshold: scala.Double,
+    circuitBreakerSleepWindowInMilliseconds: scala.Double,
+    commandGroup: java.lang.String,
+    commandKey: java.lang.String
+  ): CirctuiBreakerConfig = {
+    val __obj = js.Dynamic.literal(circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, commandGroup = commandGroup, commandKey = commandKey)
+  
+    __obj.asInstanceOf[CirctuiBreakerConfig]
+  }
+}
+

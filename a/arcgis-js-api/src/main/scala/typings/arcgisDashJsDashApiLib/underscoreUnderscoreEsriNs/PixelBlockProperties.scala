@@ -44,3 +44,24 @@ trait PixelBlockProperties extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PixelBlockProperties {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    mask: js.Array[scala.Double] = null,
+    pixelType: java.lang.String = null,
+    pixels: js.Array[js.Array[scala.Double]] = null,
+    statistics: js.Array[PixelBlockStatistics] = null,
+    width: scala.Int | scala.Double = null
+  ): PixelBlockProperties = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
+    if (pixels != null) __obj.updateDynamic("pixels")(pixels)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PixelBlockProperties]
+  }
+}
+

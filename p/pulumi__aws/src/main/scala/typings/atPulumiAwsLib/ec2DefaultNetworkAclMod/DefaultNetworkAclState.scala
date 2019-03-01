@@ -50,3 +50,30 @@ trait DefaultNetworkAclState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object DefaultNetworkAclState {
+  @scala.inline
+  def apply(
+    defaultNetworkAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    egress: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ] = null,
+    ingress: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ] = null,
+    ownerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DefaultNetworkAclState = {
+    val __obj = js.Dynamic.literal()
+    if (defaultNetworkAclId != null) __obj.updateDynamic("defaultNetworkAclId")(defaultNetworkAclId.asInstanceOf[js.Any])
+    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
+    if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultNetworkAclState]
+  }
+}
+

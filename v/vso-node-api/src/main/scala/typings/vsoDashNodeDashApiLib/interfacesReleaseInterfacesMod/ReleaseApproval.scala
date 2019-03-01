@@ -78,3 +78,32 @@ trait ReleaseApproval extends js.Object {
   var url: java.lang.String
 }
 
+object ReleaseApproval {
+  @scala.inline
+  def apply(
+    approvalType: ApprovalType,
+    approvedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    attempt: scala.Double,
+    comments: java.lang.String,
+    createdOn: stdLib.Date,
+    history: js.Array[ReleaseApprovalHistory],
+    id: scala.Double,
+    isAutomated: scala.Boolean,
+    isNotificationOn: scala.Boolean,
+    modifiedOn: stdLib.Date,
+    rank: scala.Double,
+    release: ReleaseShallowReference,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseEnvironment: ReleaseEnvironmentShallowReference,
+    revision: scala.Double,
+    status: ApprovalStatus,
+    trialNumber: scala.Double,
+    url: java.lang.String
+  ): ReleaseApproval = {
+    val __obj = js.Dynamic.literal(approvalType = approvalType, approvedBy = approvedBy, approver = approver, attempt = attempt, comments = comments, createdOn = createdOn, history = history, id = id, isAutomated = isAutomated, isNotificationOn = isNotificationOn, modifiedOn = modifiedOn, rank = rank, release = release, releaseDefinition = releaseDefinition, releaseEnvironment = releaseEnvironment, revision = revision, status = status, trialNumber = trialNumber, url = url)
+  
+    __obj.asInstanceOf[ReleaseApproval]
+  }
+}
+

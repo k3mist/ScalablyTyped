@@ -11,3 +11,16 @@ trait MissingBootstrapFileException
   var BootstrapFileURL: java.lang.String
 }
 
+object MissingBootstrapFileException {
+  @scala.inline
+  def apply(
+    BootstrapFileURL: java.lang.String,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): MissingBootstrapFileException = {
+    val __obj = js.Dynamic.literal(BootstrapFileURL = BootstrapFileURL, Context = Context, Message = Message)
+  
+    __obj.asInstanceOf[MissingBootstrapFileException]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_PDocumentPWindow extends js.Object {
   val pWindow: activexDashInfopathLib.InfoPathNs.Window
 }
 
+object Anon_PDocumentPWindow {
+  @scala.inline
+  def apply(
+    pDocument: activexDashInfopathLib.InfoPathNs._XDocument,
+    pWindow: activexDashInfopathLib.InfoPathNs.Window
+  ): Anon_PDocumentPWindow = {
+    val __obj = js.Dynamic.literal(pDocument = pDocument, pWindow = pWindow)
+  
+    __obj.asInstanceOf[Anon_PDocumentPWindow]
+  }
+}
+

@@ -122,3 +122,49 @@ trait TasksResource extends js.Object {
   def run(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
 }
 
+object TasksResource {
+  @scala.inline
+  def apply(
+    acknowledge: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    cancelLease: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    create: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTasksResponse]
+    ],
+    pull: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PullTasksResponse]
+    ],
+    renewLease: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    run: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ]
+  ): TasksResource = {
+    val __obj = js.Dynamic.literal(acknowledge = acknowledge, cancelLease = cancelLease, create = create, delete = delete, get = get, list = list, pull = pull, renewLease = renewLease, run = run)
+  
+    __obj.asInstanceOf[TasksResource]
+  }
+}
+

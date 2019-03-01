@@ -10,3 +10,12 @@ trait SocialSignInOptions extends js.Object {
   var connection: java.lang.String
 }
 
+object SocialSignInOptions {
+  @scala.inline
+  def apply(access_token: java.lang.String, connection: java.lang.String): SocialSignInOptions = {
+    val __obj = js.Dynamic.literal(access_token = access_token, connection = connection)
+  
+    __obj.asInstanceOf[SocialSignInOptions]
+  }
+}
+

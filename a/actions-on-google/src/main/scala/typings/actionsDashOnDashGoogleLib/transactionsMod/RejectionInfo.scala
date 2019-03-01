@@ -12,3 +12,15 @@ trait RejectionInfo extends js.Object {
   var `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
 }
 
+object RejectionInfo {
+  @scala.inline
+  def apply(
+    reason: java.lang.String,
+    `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
+  ): RejectionInfo = {
+    val __obj = js.Dynamic.literal(reason = reason, `type` = `type`)
+  
+    __obj.asInstanceOf[RejectionInfo]
+  }
+}
+

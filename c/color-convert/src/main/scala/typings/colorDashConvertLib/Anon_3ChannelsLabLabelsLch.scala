@@ -11,3 +11,16 @@ trait Anon_3ChannelsLabLabelsLch extends js.Object {
   def lab(lch: colorDashConvertLib.conversionsMod.LCH): colorDashConvertLib.conversionsMod.LAB
 }
 
+object Anon_3ChannelsLabLabelsLch {
+  @scala.inline
+  def apply(
+    channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
+    lab: js.Function1[colorDashConvertLib.conversionsMod.LCH, colorDashConvertLib.conversionsMod.LAB],
+    labels: colorDashConvertLib.colorDashConvertLibStrings.lch
+  ): Anon_3ChannelsLabLabelsLch = {
+    val __obj = js.Dynamic.literal(channels = channels, lab = lab, labels = labels)
+  
+    __obj.asInstanceOf[Anon_3ChannelsLabLabelsLch]
+  }
+}
+

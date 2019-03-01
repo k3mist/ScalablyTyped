@@ -24,3 +24,20 @@ trait TemplateArgs extends js.Object {
   val text: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object TemplateArgs {
+  @scala.inline
+  def apply(
+    html: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subject: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    text: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): TemplateArgs = {
+    val __obj = js.Dynamic.literal()
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TemplateArgs]
+  }
+}
+

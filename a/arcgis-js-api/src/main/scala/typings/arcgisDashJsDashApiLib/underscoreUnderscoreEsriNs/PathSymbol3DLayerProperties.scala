@@ -16,3 +16,13 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PathSymbol3DLayerProperties {
+  @scala.inline
+  def apply(material: js.Any = null, size: scala.Int | scala.Double = null): PathSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PathSymbol3DLayerProperties]
+  }
+}
+

@@ -20,3 +20,12 @@ trait LimiterInfo extends js.Object {
   var total: scala.Double
 }
 
+object LimiterInfo {
+  @scala.inline
+  def apply(remaining: scala.Double, reset: scala.Double, total: scala.Double): LimiterInfo = {
+    val __obj = js.Dynamic.literal(remaining = remaining, reset = reset, total = total)
+  
+    __obj.asInstanceOf[LimiterInfo]
+  }
+}
+

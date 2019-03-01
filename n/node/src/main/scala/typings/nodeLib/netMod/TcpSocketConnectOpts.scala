@@ -15,3 +15,25 @@ trait TcpSocketConnectOpts extends SocketConnectOpts {
   var port: scala.Double
 }
 
+object TcpSocketConnectOpts {
+  @scala.inline
+  def apply(
+    port: scala.Double,
+    family: scala.Int | scala.Double = null,
+    hints: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    localAddress: java.lang.String = null,
+    localPort: scala.Int | scala.Double = null,
+    lookup: LookupFunction = null
+  ): TcpSocketConnectOpts = {
+    val __obj = js.Dynamic.literal(port = port)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
+    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    __obj.asInstanceOf[TcpSocketConnectOpts]
+  }
+}
+

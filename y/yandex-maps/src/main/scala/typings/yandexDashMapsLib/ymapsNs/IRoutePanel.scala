@@ -12,3 +12,17 @@ trait IRoutePanel extends js.Object {
   def switchPoints(): scala.Unit
 }
 
+object IRoutePanel {
+  @scala.inline
+  def apply(
+    getRoute: js.Function0[yandexDashMapsLib.ymapsNs.multiRouterNs.MultiRoute],
+    options: IOptionManager,
+    state: IDataManager,
+    switchPoints: js.Function0[scala.Unit]
+  ): IRoutePanel = {
+    val __obj = js.Dynamic.literal(getRoute = getRoute, options = options, state = state, switchPoints = switchPoints)
+  
+    __obj.asInstanceOf[IRoutePanel]
+  }
+}
+

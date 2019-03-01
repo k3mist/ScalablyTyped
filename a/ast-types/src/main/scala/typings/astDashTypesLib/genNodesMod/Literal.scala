@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var value: java.lang.String | scala.Boolean | scala.Null | scala.Double | stdLib.RegExp
 }
 
+object Literal {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.Literal,
+    regex: astDashTypesLib.Anon_Flags = null,
+    value: java.lang.String | scala.Boolean | scala.Double | stdLib.RegExp = null
+  ): Literal = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Literal]
+  }
+}
+

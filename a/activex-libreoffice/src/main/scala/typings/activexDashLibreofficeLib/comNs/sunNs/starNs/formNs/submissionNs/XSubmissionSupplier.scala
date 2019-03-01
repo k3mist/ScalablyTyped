@@ -15,3 +15,17 @@ trait XSubmissionSupplier
   var Submission: XSubmission
 }
 
+object XSubmissionSupplier {
+  @scala.inline
+  def apply(
+    Submission: XSubmission,
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSubmissionSupplier = {
+    val __obj = js.Dynamic.literal(Submission = Submission, acquire = acquire, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSubmissionSupplier]
+  }
+}
+

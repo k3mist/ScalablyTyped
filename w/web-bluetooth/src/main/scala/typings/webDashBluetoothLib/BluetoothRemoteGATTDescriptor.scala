@@ -13,3 +13,18 @@ trait BluetoothRemoteGATTDescriptor extends js.Object {
   def writeValue(value: stdLib.BufferSource): js.Promise[scala.Unit]
 }
 
+object BluetoothRemoteGATTDescriptor {
+  @scala.inline
+  def apply(
+    characteristic: BluetoothRemoteGATTCharacteristic,
+    readValue: js.Function0[js.Promise[stdLib.DataView]],
+    uuid: java.lang.String,
+    writeValue: js.Function1[stdLib.BufferSource, js.Promise[scala.Unit]],
+    value: stdLib.DataView = null
+  ): BluetoothRemoteGATTDescriptor = {
+    val __obj = js.Dynamic.literal(characteristic = characteristic, readValue = readValue, uuid = uuid, writeValue = writeValue)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BluetoothRemoteGATTDescriptor]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ILookupInfo extends js.Object {
   var value: scala.Double
 }
 
+object ILookupInfo {
+  @scala.inline
+  def apply(localString: java.lang.String, value: scala.Double): ILookupInfo = {
+    val __obj = js.Dynamic.literal(localString = localString, value = value)
+  
+    __obj.asInstanceOf[ILookupInfo]
+  }
+}
+

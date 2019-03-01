@@ -19,3 +19,25 @@ trait ImageApi extends js.Object {
   def recycleImage(imageId: scala.Double): scala.Unit
 }
 
+object ImageApi {
+  @scala.inline
+  def apply(
+    createImage: js.Function1[scala.Double, scala.Unit],
+    getPixels: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    loadImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    recycleImage: js.Function1[scala.Double, scala.Unit]
+  ): ImageApi = {
+    val __obj = js.Dynamic.literal(createImage = createImage, getPixels = getPixels, loadImage = loadImage, recycleImage = recycleImage)
+  
+    __obj.asInstanceOf[ImageApi]
+  }
+}
+

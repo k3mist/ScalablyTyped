@@ -35,3 +35,19 @@ trait ASPxClientRect extends js.Object {
   def GetWidth(): scala.Double
 }
 
+object ASPxClientRect {
+  @scala.inline
+  def apply(
+    GetBottom: js.Function0[scala.Double],
+    GetHeight: js.Function0[scala.Double],
+    GetLeft: js.Function0[scala.Double],
+    GetRight: js.Function0[scala.Double],
+    GetTop: js.Function0[scala.Double],
+    GetWidth: js.Function0[scala.Double]
+  ): ASPxClientRect = {
+    val __obj = js.Dynamic.literal(GetBottom = GetBottom, GetHeight = GetHeight, GetLeft = GetLeft, GetRight = GetRight, GetTop = GetTop, GetWidth = GetWidth)
+  
+    __obj.asInstanceOf[ASPxClientRect]
+  }
+}
+

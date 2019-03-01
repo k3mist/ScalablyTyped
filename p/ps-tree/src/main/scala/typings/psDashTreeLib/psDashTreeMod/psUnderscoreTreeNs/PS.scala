@@ -12,3 +12,12 @@ trait PS extends js.Object {
   var STAT: java.lang.String
 }
 
+object PS {
+  @scala.inline
+  def apply(COMMAND: java.lang.String, PID: java.lang.String, PPID: java.lang.String, STAT: java.lang.String): PS = {
+    val __obj = js.Dynamic.literal(COMMAND = COMMAND, PID = PID, PPID = PPID, STAT = STAT)
+  
+    __obj.asInstanceOf[PS]
+  }
+}
+

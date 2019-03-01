@@ -20,3 +20,12 @@ trait TypeProfileEntry extends js.Object {
   var types: js.Array[TypeObject]
 }
 
+object TypeProfileEntry {
+  @scala.inline
+  def apply(offset: scala.Double, types: js.Array[TypeObject]): TypeProfileEntry = {
+    val __obj = js.Dynamic.literal(offset = offset, types = types)
+  
+    __obj.asInstanceOf[TypeProfileEntry]
+  }
+}
+

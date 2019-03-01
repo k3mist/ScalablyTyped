@@ -34,3 +34,36 @@ trait DateFormattingInfo extends js.Object {
   var yearMonthPattern: java.lang.String
 }
 
+object DateFormattingInfo {
+  @scala.inline
+  def apply(
+    abbreviatedDayNames: js.Array[java.lang.String],
+    abbreviatedMonthGenitiveNames: js.Array[java.lang.String],
+    abbreviatedMonthNames: js.Array[java.lang.String],
+    amDesignator: java.lang.String,
+    calendar: Calendar,
+    calendarWeekRule: scala.Double,
+    dateSeparator: java.lang.String,
+    dayNames: js.Array[java.lang.String],
+    firstDayOfWeek: scala.Double,
+    fullDateTimePattern: java.lang.String,
+    longDatePattern: java.lang.String,
+    longTimePattern: java.lang.String,
+    monthDayPattern: java.lang.String,
+    monthGenitiveNames: js.Array[java.lang.String],
+    monthNames: js.Array[java.lang.String],
+    pmDesignator: java.lang.String,
+    shortDatePattern: java.lang.String,
+    shortTimePattern: java.lang.String,
+    shortestDayNames: js.Array[java.lang.String],
+    sortableDateTimePattern: java.lang.String,
+    timeSeparator: java.lang.String,
+    universalSortableDateTimePattern: java.lang.String,
+    yearMonthPattern: java.lang.String
+  ): DateFormattingInfo = {
+    val __obj = js.Dynamic.literal(abbreviatedDayNames = abbreviatedDayNames, abbreviatedMonthGenitiveNames = abbreviatedMonthGenitiveNames, abbreviatedMonthNames = abbreviatedMonthNames, amDesignator = amDesignator, calendar = calendar, calendarWeekRule = calendarWeekRule, dateSeparator = dateSeparator, dayNames = dayNames, firstDayOfWeek = firstDayOfWeek, fullDateTimePattern = fullDateTimePattern, longDatePattern = longDatePattern, longTimePattern = longTimePattern, monthDayPattern = monthDayPattern, monthGenitiveNames = monthGenitiveNames, monthNames = monthNames, pmDesignator = pmDesignator, shortDatePattern = shortDatePattern, shortTimePattern = shortTimePattern, shortestDayNames = shortestDayNames, sortableDateTimePattern = sortableDateTimePattern, timeSeparator = timeSeparator, universalSortableDateTimePattern = universalSortableDateTimePattern, yearMonthPattern = yearMonthPattern)
+  
+    __obj.asInstanceOf[DateFormattingInfo]
+  }
+}
+

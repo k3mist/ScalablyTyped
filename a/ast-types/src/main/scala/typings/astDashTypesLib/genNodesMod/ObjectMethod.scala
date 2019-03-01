@@ -24,3 +24,24 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ObjectMethod
 }
 
+object ObjectMethod {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean,
+    generator: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    kind: astDashTypesLib.astDashTypesLibStrings.method | astDashTypesLib.astDashTypesLibStrings.get | astDashTypesLib.astDashTypesLibStrings.set,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectMethod,
+    accessibility: astDashTypesLib.genKindsMod.LiteralKind = null,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
+  ): ObjectMethod = {
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params, `type` = `type`)
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    __obj.asInstanceOf[ObjectMethod]
+  }
+}
+

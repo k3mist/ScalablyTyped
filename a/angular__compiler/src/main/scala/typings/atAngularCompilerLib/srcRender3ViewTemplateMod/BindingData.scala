@@ -28,3 +28,19 @@ trait BindingData extends js.Object {
   var retrievalLevel: scala.Double
 }
 
+object BindingData {
+  @scala.inline
+  def apply(
+    declare: scala.Boolean,
+    lhs: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
+    localRef: scala.Boolean,
+    priority: scala.Double,
+    retrievalLevel: scala.Double,
+    declareLocalCallback: DeclareLocalVarCallback = null
+  ): BindingData = {
+    val __obj = js.Dynamic.literal(declare = declare, lhs = lhs, localRef = localRef, priority = priority, retrievalLevel = retrievalLevel)
+    if (declareLocalCallback != null) __obj.updateDynamic("declareLocalCallback")(declareLocalCallback)
+    __obj.asInstanceOf[BindingData]
+  }
+}
+

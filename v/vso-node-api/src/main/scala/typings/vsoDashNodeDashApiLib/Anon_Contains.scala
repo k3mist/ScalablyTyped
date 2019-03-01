@@ -11,3 +11,12 @@ trait Anon_Contains extends js.Object {
   var startsWith: scala.Double
 }
 
+object Anon_Contains {
+  @scala.inline
+  def apply(contains: scala.Double, exact: scala.Double, startsWith: scala.Double): Anon_Contains = {
+    val __obj = js.Dynamic.literal(contains = contains, exact = exact, startsWith = startsWith)
+  
+    __obj.asInstanceOf[Anon_Contains]
+  }
+}
+

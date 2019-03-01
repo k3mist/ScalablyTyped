@@ -17,3 +17,22 @@ trait MapViewHoldEvent extends js.Object {
   var y: scala.Double
 }
 
+object MapViewHoldEvent {
+  @scala.inline
+  def apply(
+    button: scala.Double,
+    buttons: scala.Double,
+    mapPoint: Point,
+    native: js.Any,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): MapViewHoldEvent = {
+    val __obj = js.Dynamic.literal(button = button, buttons = buttons, mapPoint = mapPoint, native = native, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[MapViewHoldEvent]
+  }
+}
+

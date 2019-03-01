@@ -14,3 +14,18 @@ trait XTextGraphicObjectsSupplier
   def getGraphicObjects(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XTextGraphicObjectsSupplier {
+  @scala.inline
+  def apply(
+    GraphicObjects: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getGraphicObjects: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextGraphicObjectsSupplier = {
+    val __obj = js.Dynamic.literal(GraphicObjects = GraphicObjects, acquire = acquire, getGraphicObjects = getGraphicObjects, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextGraphicObjectsSupplier]
+  }
+}
+

@@ -12,3 +12,17 @@ trait StorageAdapter[A] extends js.Object {
   def put(key: java.lang.String, value: js.Any, callback: AdapterCallback): scala.Unit
 }
 
+object StorageAdapter {
+  @scala.inline
+  def apply[A](
+    `0`: A,
+    del: js.Function2[java.lang.String, AdapterCallback, scala.Unit],
+    get: js.Function2[java.lang.String, AdapterCallback, scala.Unit],
+    put: js.Function3[java.lang.String, js.Any, AdapterCallback, scala.Unit]
+  ): StorageAdapter[A] = {
+    val __obj = js.Dynamic.literal(del = del, get = get, put = put)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StorageAdapter[A]]
+  }
+}
+

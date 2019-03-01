@@ -18,3 +18,23 @@ trait IMobileBroadbandNetwork extends js.Object {
   def showConnectionUI(): scala.Unit
 }
 
+object IMobileBroadbandNetwork {
+  @scala.inline
+  def apply(
+    accessPointName: java.lang.String,
+    activationNetworkError: scala.Double,
+    networkAdapter: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAdapter,
+    networkRegistrationState: NetworkRegistrationState,
+    packetAttachNetworkError: scala.Double,
+    registeredDataClass: DataClasses,
+    registeredProviderId: java.lang.String,
+    registeredProviderName: java.lang.String,
+    registrationNetworkError: scala.Double,
+    showConnectionUI: js.Function0[scala.Unit]
+  ): IMobileBroadbandNetwork = {
+    val __obj = js.Dynamic.literal(accessPointName = accessPointName, activationNetworkError = activationNetworkError, networkAdapter = networkAdapter, networkRegistrationState = networkRegistrationState, packetAttachNetworkError = packetAttachNetworkError, registeredDataClass = registeredDataClass, registeredProviderId = registeredProviderId, registeredProviderName = registeredProviderName, registrationNetworkError = registrationNetworkError, showConnectionUI = showConnectionUI)
+  
+    __obj.asInstanceOf[IMobileBroadbandNetwork]
+  }
+}
+

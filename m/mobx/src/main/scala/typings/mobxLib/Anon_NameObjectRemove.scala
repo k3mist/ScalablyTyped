@@ -12,3 +12,12 @@ trait Anon_NameObjectRemove
   var `type`: mobxLib.mobxLibStrings.remove
 }
 
+object Anon_NameObjectRemove {
+  @scala.inline
+  def apply(name: java.lang.String, `object`: js.Any, `type`: mobxLib.mobxLibStrings.remove): Anon_NameObjectRemove = {
+    val __obj = js.Dynamic.literal(name = name, `object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_NameObjectRemove]
+  }
+}
+

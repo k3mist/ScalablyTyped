@@ -11,3 +11,12 @@ trait Bin extends js.Object {
   var width: scala.Double
 }
 
+object Bin {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): Bin = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[Bin]
+  }
+}
+

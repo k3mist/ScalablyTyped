@@ -26,3 +26,34 @@ trait Anon_BoundingSphere extends js.Object {
   var westSkirtHeight: scala.Double
 }
 
+object Anon_BoundingSphere {
+  @scala.inline
+  def apply(
+    boundingSphere: cesiumLib.cesiumMod.CesiumNs.BoundingSphere,
+    eastIndices: js.Array[scala.Double],
+    eastSkirtHeight: scala.Double,
+    horizonOcclusionPoint: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
+    indices: stdLib.Uint16Array | stdLib.Uint32Array,
+    maximumHeight: scala.Double,
+    minimumHeight: scala.Double,
+    northIndices: js.Array[scala.Double],
+    northSkirtHeight: scala.Double,
+    quantizedVertices: stdLib.Uint16Array,
+    southIndices: js.Array[scala.Double],
+    southSkirtHeight: scala.Double,
+    westIndices: js.Array[scala.Double],
+    westSkirtHeight: scala.Double,
+    childTileMask: scala.Int | scala.Double = null,
+    createdByUpsampling: js.UndefOr[scala.Boolean] = js.undefined,
+    encodedNormals: stdLib.Uint8Array = null,
+    waterMask: stdLib.Uint8Array = null
+  ): Anon_BoundingSphere = {
+    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere, eastIndices = eastIndices, eastSkirtHeight = eastSkirtHeight, horizonOcclusionPoint = horizonOcclusionPoint, indices = indices.asInstanceOf[js.Any], maximumHeight = maximumHeight, minimumHeight = minimumHeight, northIndices = northIndices, northSkirtHeight = northSkirtHeight, quantizedVertices = quantizedVertices, southIndices = southIndices, southSkirtHeight = southSkirtHeight, westIndices = westIndices, westSkirtHeight = westSkirtHeight)
+    if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
+    if (encodedNormals != null) __obj.updateDynamic("encodedNormals")(encodedNormals)
+    if (waterMask != null) __obj.updateDynamic("waterMask")(waterMask)
+    __obj.asInstanceOf[Anon_BoundingSphere]
+  }
+}
+

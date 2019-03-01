@@ -10,3 +10,12 @@ trait TimelineTeamStatus extends js.Object {
   var `type`: TimelineTeamStatusCode
 }
 
+object TimelineTeamStatus {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: TimelineTeamStatusCode): TimelineTeamStatus = {
+    val __obj = js.Dynamic.literal(message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[TimelineTeamStatus]
+  }
+}
+

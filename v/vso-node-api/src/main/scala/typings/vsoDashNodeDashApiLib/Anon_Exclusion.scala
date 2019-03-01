@@ -10,3 +10,12 @@ trait Anon_Exclusion extends js.Object {
   var inclusion: scala.Double
 }
 
+object Anon_Exclusion {
+  @scala.inline
+  def apply(exclusion: scala.Double, inclusion: scala.Double): Anon_Exclusion = {
+    val __obj = js.Dynamic.literal(exclusion = exclusion, inclusion = inclusion)
+  
+    __obj.asInstanceOf[Anon_Exclusion]
+  }
+}
+

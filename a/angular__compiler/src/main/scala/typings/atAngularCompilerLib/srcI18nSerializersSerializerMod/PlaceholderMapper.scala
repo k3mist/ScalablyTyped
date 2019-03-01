@@ -10,3 +10,15 @@ trait PlaceholderMapper extends js.Object {
   def toPublicName(internalName: java.lang.String): java.lang.String | scala.Null
 }
 
+object PlaceholderMapper {
+  @scala.inline
+  def apply(
+    toInternalName: js.Function1[java.lang.String, java.lang.String | scala.Null],
+    toPublicName: js.Function1[java.lang.String, java.lang.String | scala.Null]
+  ): PlaceholderMapper = {
+    val __obj = js.Dynamic.literal(toInternalName = toInternalName, toPublicName = toPublicName)
+  
+    __obj.asInstanceOf[PlaceholderMapper]
+  }
+}
+

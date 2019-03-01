@@ -21,3 +21,23 @@ trait VoiceRecognizerTask extends js.Object {
   def stop(): scala.Unit
 }
 
+object VoiceRecognizerTask {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    onError: js.Function1[js.Function1[/* res */ VoiceErrorResponse, scala.Unit], scala.Unit],
+    onFinish: js.Function1[
+      js.Function1[/* res */ baiduDashAppLib.swanNs.DataResponse, scala.Unit], 
+      scala.Unit
+    ],
+    onRecognize: js.Function1[js.Function1[/* res */ VoiceRecognizeResponse, scala.Unit], scala.Unit],
+    onStart: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    start: js.Function1[VoiceRecognizerStart, scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): VoiceRecognizerTask = {
+    val __obj = js.Dynamic.literal(cancel = cancel, onError = onError, onFinish = onFinish, onRecognize = onRecognize, onStart = onStart, start = start, stop = stop)
+  
+    __obj.asInstanceOf[VoiceRecognizerTask]
+  }
+}
+

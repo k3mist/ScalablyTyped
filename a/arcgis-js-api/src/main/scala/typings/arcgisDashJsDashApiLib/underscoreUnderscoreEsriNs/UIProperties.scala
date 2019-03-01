@@ -28,3 +28,18 @@ trait UIProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object UIProperties {
+  @scala.inline
+  def apply(
+    container: stdLib.HTMLElement = null,
+    padding: js.Any | scala.Double = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): UIProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UIProperties]
+  }
+}
+

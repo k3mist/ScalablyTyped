@@ -15,3 +15,20 @@ trait Anon_CheckboxRadio extends js.Object {
   var warn: scala.Boolean
 }
 
+object Anon_CheckboxRadio {
+  @scala.inline
+  def apply(
+    checkbox: scala.Boolean,
+    radio: scala.Boolean,
+    select: scala.Boolean,
+    selectPos: js.Any,
+    switch: scala.Boolean,
+    vcode: scala.Boolean,
+    warn: scala.Boolean
+  ): Anon_CheckboxRadio = {
+    val __obj = js.Dynamic.literal(checkbox = checkbox, radio = radio, select = select, selectPos = selectPos, switch = switch, vcode = vcode, warn = warn)
+  
+    __obj.asInstanceOf[Anon_CheckboxRadio]
+  }
+}
+

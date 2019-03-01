@@ -11,3 +11,12 @@ trait Key extends js.Object {
   var salt: java.lang.String
 }
 
+object Key {
+  @scala.inline
+  def apply(iv: java.lang.String, key: nodeLib.Buffer, salt: java.lang.String): Key = {
+    val __obj = js.Dynamic.literal(iv = iv, key = key, salt = salt)
+  
+    __obj.asInstanceOf[Key]
+  }
+}
+

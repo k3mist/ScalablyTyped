@@ -33,3 +33,20 @@ trait TableDataSource
   var workspaceId: java.lang.String
 }
 
+object TableDataSource {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dataSourceName: java.lang.String,
+    gdbVersion: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String,
+    workspaceId: java.lang.String
+  ): TableDataSource = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSourceName = dataSourceName, gdbVersion = gdbVersion, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`, workspaceId = workspaceId)
+  
+    __obj.asInstanceOf[TableDataSource]
+  }
+}
+

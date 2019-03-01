@@ -12,3 +12,17 @@ trait LetterboxProps extends js.Object {
   var width: scala.Double
 }
 
+object LetterboxProps {
+  @scala.inline
+  def apply(
+    contentAspectRatio: scala.Double,
+    height: scala.Double,
+    width: scala.Double,
+    children: reactLib.reactMod.ReactNs.ReactNode = null
+  ): LetterboxProps = {
+    val __obj = js.Dynamic.literal(contentAspectRatio = contentAspectRatio, height = height, width = width)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LetterboxProps]
+  }
+}
+

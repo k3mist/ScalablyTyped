@@ -26,3 +26,18 @@ trait IMixin extends js.Object {
   def init(args: enigmaDotJsLib.Anon_Api): scala.Unit
 }
 
+object IMixin {
+  @scala.inline
+  def apply(
+    init: js.Function1[enigmaDotJsLib.Anon_Api, scala.Unit],
+    types: js.Array[MixinType],
+    extend: js.Any = null,
+    `override`: js.Any = null
+  ): IMixin = {
+    val __obj = js.Dynamic.literal(init = init, types = types)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (`override` != null) __obj.updateDynamic("override")(`override`)
+    __obj.asInstanceOf[IMixin]
+  }
+}
+

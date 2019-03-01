@@ -26,3 +26,18 @@ trait ConnectionArgs extends js.Object {
   ] = js.undefined
 }
 
+object ConnectionArgs {
+  @scala.inline
+  def apply(
+    bandwidth: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    location: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ConnectionArgs = {
+    val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectionArgs]
+  }
+}
+

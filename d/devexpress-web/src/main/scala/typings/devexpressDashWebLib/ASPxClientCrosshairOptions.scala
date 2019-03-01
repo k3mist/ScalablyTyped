@@ -86,3 +86,29 @@ trait ASPxClientCrosshairOptions extends ASPxClientWebChartElement {
   var valueSelectionMode: java.lang.String
 }
 
+object ASPxClientCrosshairOptions {
+  @scala.inline
+  def apply(
+    argumentLineColor: java.lang.String,
+    chart: ASPxClientWebChart,
+    crosshairLabelMode: java.lang.String,
+    groupHeaderPattern: java.lang.String,
+    linesMode: java.lang.String,
+    showArgumentLine: scala.Boolean,
+    showAxisXLabels: scala.Boolean,
+    showAxisYLabels: scala.Boolean,
+    showCrosshairLabels: scala.Boolean,
+    showGroupHeaders: scala.Boolean,
+    showOnlyInFocusedPane: scala.Boolean,
+    showOutOfRangePoints: scala.Boolean,
+    showValueLine: scala.Boolean,
+    snapMode: java.lang.String,
+    valueLineColor: java.lang.String,
+    valueSelectionMode: java.lang.String
+  ): ASPxClientCrosshairOptions = {
+    val __obj = js.Dynamic.literal(argumentLineColor = argumentLineColor, chart = chart, crosshairLabelMode = crosshairLabelMode, groupHeaderPattern = groupHeaderPattern, linesMode = linesMode, showArgumentLine = showArgumentLine, showAxisXLabels = showAxisXLabels, showAxisYLabels = showAxisYLabels, showCrosshairLabels = showCrosshairLabels, showGroupHeaders = showGroupHeaders, showOnlyInFocusedPane = showOnlyInFocusedPane, showOutOfRangePoints = showOutOfRangePoints, showValueLine = showValueLine, snapMode = snapMode, valueLineColor = valueLineColor, valueSelectionMode = valueSelectionMode)
+  
+    __obj.asInstanceOf[ASPxClientCrosshairOptions]
+  }
+}
+

@@ -15,3 +15,20 @@ trait UnionTypeExtensionNode
   val types: js.UndefOr[js.Array[NamedTypeNode]] = js.undefined
 }
 
+object UnionTypeExtensionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.UnionTypeExtension,
+    name: NameNode,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null,
+    types: js.Array[NamedTypeNode] = null
+  ): UnionTypeExtensionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[UnionTypeExtensionNode]
+  }
+}
+

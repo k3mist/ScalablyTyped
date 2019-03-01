@@ -20,3 +20,16 @@ trait DocumentationPartArgs extends js.Object {
   val restApiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object DocumentationPartArgs {
+  @scala.inline
+  def apply(
+    location: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MethodName],
+    properties: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): DocumentationPartArgs = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DocumentationPartArgs]
+  }
+}
+

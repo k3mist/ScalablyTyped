@@ -16,3 +16,21 @@ trait StripeTokenResponse extends js.Object {
   var used: scala.Boolean
 }
 
+object StripeTokenResponse {
+  @scala.inline
+  def apply(
+    client_ip: java.lang.String,
+    created: scala.Double,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: java.lang.String,
+    `type`: java.lang.String,
+    used: scala.Boolean,
+    error: StripeError = null
+  ): StripeTokenResponse = {
+    val __obj = js.Dynamic.literal(client_ip = client_ip, created = created, id = id, livemode = livemode, `object` = `object`, `type` = `type`, used = used)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[StripeTokenResponse]
+  }
+}
+

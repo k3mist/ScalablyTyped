@@ -20,3 +20,16 @@ trait ExtensionAuditLog extends js.Object {
   var publisherName: java.lang.String
 }
 
+object ExtensionAuditLog {
+  @scala.inline
+  def apply(
+    entries: js.Array[ExtensionAuditLogEntry],
+    extensionName: java.lang.String,
+    publisherName: java.lang.String
+  ): ExtensionAuditLog = {
+    val __obj = js.Dynamic.literal(entries = entries, extensionName = extensionName, publisherName = publisherName)
+  
+    __obj.asInstanceOf[ExtensionAuditLog]
+  }
+}
+

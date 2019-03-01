@@ -37,3 +37,41 @@ trait SketchMSPage extends SketchMSLayer {
   var verticalRulerData: SketchMSRulerData
 }
 
+object SketchMSPage {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.page | sketchappLib.sketchappLibStrings.layer,
+    attributedString: SketchMSAttributedString,
+    constrainProportions: scala.Boolean,
+    exportOptions: SketchMSExportOptions,
+    fixedRadius: scala.Double,
+    frame: SketchMSRect,
+    hasClickThrough: scala.Double,
+    horizontalRulerData: SketchMSRulerData,
+    id: java.lang.String,
+    includeInCloudUpload: scala.Double,
+    isFlippedHorizontal: scala.Double,
+    isFlippedVertical: scala.Double,
+    isLocked: scala.Boolean,
+    isVisible: scala.Boolean,
+    layerListExpandedType: scala.Double,
+    layers: js.Array[SketchMSLayer],
+    name: java.lang.String,
+    nameIsFixed: scala.Double,
+    objectID: java.lang.String,
+    resizingConstraint: scala.Double,
+    resizingType: scala.Double,
+    rotation: scala.Double,
+    shouldBreakMaskChain: scala.Double,
+    style: SketchMSStyle,
+    verticalRulerData: SketchMSRulerData,
+    css: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    do_objectID: java.lang.String = null
+  ): SketchMSPage = {
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], attributedString = attributedString, constrainProportions = constrainProportions, exportOptions = exportOptions, fixedRadius = fixedRadius, frame = frame, hasClickThrough = hasClickThrough, horizontalRulerData = horizontalRulerData, id = id, includeInCloudUpload = includeInCloudUpload, isFlippedHorizontal = isFlippedHorizontal, isFlippedVertical = isFlippedVertical, isLocked = isLocked, isVisible = isVisible, layerListExpandedType = layerListExpandedType, layers = layers, name = name, nameIsFixed = nameIsFixed, objectID = objectID, resizingConstraint = resizingConstraint, resizingType = resizingType, rotation = rotation, shouldBreakMaskChain = shouldBreakMaskChain, style = style, verticalRulerData = verticalRulerData)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSPage]
+  }
+}
+

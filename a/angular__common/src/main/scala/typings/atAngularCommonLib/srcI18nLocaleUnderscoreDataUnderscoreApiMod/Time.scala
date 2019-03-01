@@ -10,3 +10,12 @@ trait Time extends js.Object {
   var minutes: scala.Double
 }
 
+object Time {
+  @scala.inline
+  def apply(hours: scala.Double, minutes: scala.Double): Time = {
+    val __obj = js.Dynamic.literal(hours = hours, minutes = minutes)
+  
+    __obj.asInstanceOf[Time]
+  }
+}
+

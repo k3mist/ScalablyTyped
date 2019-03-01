@@ -16,3 +16,15 @@ trait KeycloakPromise[TSuccess, TError] extends js.Object {
   def success(callback: KeycloakPromiseCallback[TSuccess]): KeycloakPromise[TSuccess, TError]
 }
 
+object KeycloakPromise {
+  @scala.inline
+  def apply[TSuccess, TError](
+    error: js.Function1[KeycloakPromiseCallback[TError], KeycloakPromise[TSuccess, TError]],
+    success: js.Function1[KeycloakPromiseCallback[TSuccess], KeycloakPromise[TSuccess, TError]]
+  ): KeycloakPromise[TSuccess, TError] = {
+    val __obj = js.Dynamic.literal(error = error, success = success)
+  
+    __obj.asInstanceOf[KeycloakPromise[TSuccess, TError]]
+  }
+}
+

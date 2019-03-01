@@ -18,3 +18,18 @@ trait InteractiveLockingLockedException extends InteractiveLockingException {
   var SelfOwned: scala.Boolean
 }
 
+object InteractiveLockingLockedException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    SelfOwned: scala.Boolean,
+    Url: java.lang.String
+  ): InteractiveLockingLockedException = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Message = Message, SelfOwned = SelfOwned, Url = Url)
+  
+    __obj.asInstanceOf[InteractiveLockingLockedException]
+  }
+}
+

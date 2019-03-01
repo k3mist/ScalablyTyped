@@ -12,3 +12,16 @@ trait PDFExportException
   var ErrorCodes: activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object PDFExportException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorCodes: activexDashInteropLib.SafeArray[scala.Double],
+    Message: java.lang.String
+  ): PDFExportException = {
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCodes = ErrorCodes, Message = Message)
+  
+    __obj.asInstanceOf[PDFExportException]
+  }
+}
+

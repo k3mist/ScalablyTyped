@@ -10,3 +10,15 @@ trait Anon_Method extends js.Object {
   var minutes: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.integer
 }
 
+object Anon_Method {
+  @scala.inline
+  def apply(
+    method: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ReminderMethod,
+    minutes: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.integer
+  ): Anon_Method = {
+    val __obj = js.Dynamic.literal(method = method, minutes = minutes)
+  
+    __obj.asInstanceOf[Anon_Method]
+  }
+}
+

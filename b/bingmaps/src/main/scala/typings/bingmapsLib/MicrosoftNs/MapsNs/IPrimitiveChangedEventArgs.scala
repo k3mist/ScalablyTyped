@@ -12,3 +12,12 @@ trait IPrimitiveChangedEventArgs extends js.Object {
   var sender: IPrimitive
 }
 
+object IPrimitiveChangedEventArgs {
+  @scala.inline
+  def apply(name: java.lang.String, sender: IPrimitive): IPrimitiveChangedEventArgs = {
+    val __obj = js.Dynamic.literal(name = name, sender = sender)
+  
+    __obj.asInstanceOf[IPrimitiveChangedEventArgs]
+  }
+}
+

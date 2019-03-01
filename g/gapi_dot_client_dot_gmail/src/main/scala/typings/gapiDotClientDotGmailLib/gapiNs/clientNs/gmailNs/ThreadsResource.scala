@@ -20,3 +20,37 @@ trait ThreadsResource extends js.Object {
   def untrash(request: gapiDotClientDotGmailLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Thread]
 }
 
+object ThreadsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsFormatId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Thread]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrashKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListThreadsResponse]
+    ],
+    modify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Thread]
+    ],
+    trash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Thread]
+    ],
+    untrash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Thread]
+    ]
+  ): ThreadsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, modify = modify, trash = trash, untrash = untrash)
+  
+    __obj.asInstanceOf[ThreadsResource]
+  }
+}
+

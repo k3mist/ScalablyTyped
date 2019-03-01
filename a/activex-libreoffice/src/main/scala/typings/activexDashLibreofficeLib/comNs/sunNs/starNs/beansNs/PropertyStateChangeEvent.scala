@@ -34,3 +34,18 @@ trait PropertyStateChangeEvent
   var PropertyName: java.lang.String
 }
 
+object PropertyStateChangeEvent {
+  @scala.inline
+  def apply(
+    NewValue: PropertyState,
+    OldValue: PropertyState,
+    PropertyHandle: scala.Double,
+    PropertyName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): PropertyStateChangeEvent = {
+    val __obj = js.Dynamic.literal(NewValue = NewValue, OldValue = OldValue, PropertyHandle = PropertyHandle, PropertyName = PropertyName, Source = Source)
+  
+    __obj.asInstanceOf[PropertyStateChangeEvent]
+  }
+}
+

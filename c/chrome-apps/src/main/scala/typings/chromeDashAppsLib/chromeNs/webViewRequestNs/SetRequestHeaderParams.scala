@@ -12,3 +12,12 @@ trait SetRequestHeaderParams extends js.Object {
   var value: java.lang.String
 }
 
+object SetRequestHeaderParams {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): SetRequestHeaderParams = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[SetRequestHeaderParams]
+  }
+}
+

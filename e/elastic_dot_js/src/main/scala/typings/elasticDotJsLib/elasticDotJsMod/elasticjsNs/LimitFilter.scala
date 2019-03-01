@@ -32,3 +32,19 @@ trait LimitFilter extends Filter {
   def value(`val`: scala.Double): LimitFilter
 }
 
+object LimitFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, LimitFilter],
+    cacheKey: js.Function1[java.lang.String, LimitFilter],
+    name: js.Function1[java.lang.String, LimitFilter],
+    toJSON: js.Function0[LimitFilter],
+    value: js.Function1[scala.Double, LimitFilter]
+  ): LimitFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON, value = value)
+  
+    __obj.asInstanceOf[LimitFilter]
+  }
+}
+

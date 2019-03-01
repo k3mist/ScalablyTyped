@@ -33,3 +33,22 @@ trait XUIElementSettings
   def updateSettings(): scala.Unit
 }
 
+object XUIElementSettings {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getSettings: js.Function1[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
+    updateSettings: js.Function0[scala.Unit]
+  ): XUIElementSettings = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getSettings = getSettings, queryInterface = queryInterface, release = release, setSettings = setSettings, updateSettings = updateSettings)
+  
+    __obj.asInstanceOf[XUIElementSettings]
+  }
+}
+

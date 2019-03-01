@@ -15,3 +15,12 @@ trait TimelineController extends js.Object {
   def destroy(): scala.Unit
 }
 
+object TimelineController {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit]): TimelineController = {
+    val __obj = js.Dynamic.literal(destroy = destroy)
+  
+    __obj.asInstanceOf[TimelineController]
+  }
+}
+

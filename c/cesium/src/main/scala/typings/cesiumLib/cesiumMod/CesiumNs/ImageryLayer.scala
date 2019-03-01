@@ -20,3 +20,25 @@ trait ImageryLayer extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object ImageryLayer {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    brightness: scala.Double,
+    contrast: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    gamma: scala.Double,
+    hue: scala.Double,
+    imageryProvider: ImageryProvider,
+    isBaseLayer: js.Function0[scala.Boolean],
+    isDestroyed: js.Function0[scala.Boolean],
+    rectangle: Rectangle,
+    saturation: scala.Double,
+    show: scala.Boolean
+  ): ImageryLayer = {
+    val __obj = js.Dynamic.literal(alpha = alpha, brightness = brightness, contrast = contrast, destroy = destroy, gamma = gamma, hue = hue, imageryProvider = imageryProvider, isBaseLayer = isBaseLayer, isDestroyed = isDestroyed, rectangle = rectangle, saturation = saturation, show = show)
+  
+    __obj.asInstanceOf[ImageryLayer]
+  }
+}
+

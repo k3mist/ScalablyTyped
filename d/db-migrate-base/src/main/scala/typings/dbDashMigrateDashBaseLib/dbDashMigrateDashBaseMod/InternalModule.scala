@@ -10,3 +10,12 @@ trait InternalModule extends js.Object {
   var `type`: js.Any
 }
 
+object InternalModule {
+  @scala.inline
+  def apply(log: js.Any, `type`: js.Any): InternalModule = {
+    val __obj = js.Dynamic.literal(log = log, `type` = `type`)
+  
+    __obj.asInstanceOf[InternalModule]
+  }
+}
+

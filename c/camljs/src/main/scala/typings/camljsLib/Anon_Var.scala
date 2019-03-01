@@ -10,3 +10,12 @@ trait Anon_Var
   var `var`: java.lang.String
 }
 
+object Anon_Var {
+  @scala.inline
+  def apply(`var`: java.lang.String): Anon_Var = {
+    val __obj = js.Dynamic.literal(`var` = `var`)
+  
+    __obj.asInstanceOf[Anon_Var]
+  }
+}
+

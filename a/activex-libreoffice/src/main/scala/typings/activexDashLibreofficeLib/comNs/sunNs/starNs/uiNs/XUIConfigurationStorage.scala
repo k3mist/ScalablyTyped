@@ -23,3 +23,18 @@ trait XUIConfigurationStorage
   def setStorage(Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage): scala.Unit
 }
 
+object XUIConfigurationStorage {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasStorage: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+  ): XUIConfigurationStorage = {
+    val __obj = js.Dynamic.literal(acquire = acquire, hasStorage = hasStorage, queryInterface = queryInterface, release = release, setStorage = setStorage)
+  
+    __obj.asInstanceOf[XUIConfigurationStorage]
+  }
+}
+

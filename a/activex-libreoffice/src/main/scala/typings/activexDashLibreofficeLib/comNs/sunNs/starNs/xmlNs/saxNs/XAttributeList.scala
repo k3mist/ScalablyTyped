@@ -32,3 +32,23 @@ trait XAttributeList
   def getValueByName(aName: java.lang.String): java.lang.String
 }
 
+object XAttributeList {
+  @scala.inline
+  def apply(
+    Length: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getLength: js.Function0[scala.Double],
+    getNameByIndex: js.Function1[scala.Double, java.lang.String],
+    getTypeByIndex: js.Function1[scala.Double, java.lang.String],
+    getTypeByName: js.Function1[java.lang.String, java.lang.String],
+    getValueByIndex: js.Function1[scala.Double, java.lang.String],
+    getValueByName: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAttributeList = {
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, getNameByIndex = getNameByIndex, getTypeByIndex = getTypeByIndex, getTypeByName = getTypeByName, getValueByIndex = getValueByIndex, getValueByName = getValueByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAttributeList]
+  }
+}
+

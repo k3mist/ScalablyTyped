@@ -14,3 +14,18 @@ trait XEmbeddedObjectSupplier
   def getEmbeddedObject(): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 }
 
+object XEmbeddedObjectSupplier {
+  @scala.inline
+  def apply(
+    EmbeddedObject: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    acquire: js.Function0[scala.Unit],
+    getEmbeddedObject: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEmbeddedObjectSupplier = {
+    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, acquire = acquire, getEmbeddedObject = getEmbeddedObject, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XEmbeddedObjectSupplier]
+  }
+}
+

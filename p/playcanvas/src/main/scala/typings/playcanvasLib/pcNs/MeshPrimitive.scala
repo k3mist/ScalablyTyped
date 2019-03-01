@@ -12,3 +12,17 @@ trait MeshPrimitive extends js.Object {
   var `type`: scala.Double
 }
 
+object MeshPrimitive {
+  @scala.inline
+  def apply(
+    base: scala.Double,
+    count: scala.Double,
+    `type`: scala.Double,
+    indexed: js.UndefOr[scala.Boolean] = js.undefined
+  ): MeshPrimitive = {
+    val __obj = js.Dynamic.literal(base = base, count = count, `type` = `type`)
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
+    __obj.asInstanceOf[MeshPrimitive]
+  }
+}
+

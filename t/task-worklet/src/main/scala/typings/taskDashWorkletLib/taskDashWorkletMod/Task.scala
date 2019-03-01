@@ -11,3 +11,12 @@ trait Task[T] extends js.Object {
   var state: State
 }
 
+object Task {
+  @scala.inline
+  def apply[T](id: scala.Double, result: js.Promise[T], state: State): Task[T] = {
+    val __obj = js.Dynamic.literal(id = id, result = result, state = state)
+  
+    __obj.asInstanceOf[Task[T]]
+  }
+}
+

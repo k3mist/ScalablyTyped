@@ -12,3 +12,17 @@ trait DocumentationRouterOptions extends js.Object {
   def before(req: Request, res: Response): scala.Unit | arangodbLib.arangodbLibNumbers.`false`
 }
 
+object DocumentationRouterOptions {
+  @scala.inline
+  def apply(
+    before: js.Function2[Request, Response, scala.Unit | arangodbLib.arangodbLibNumbers.`false`],
+    indexFile: java.lang.String,
+    mount: java.lang.String,
+    swaggerRoot: java.lang.String
+  ): DocumentationRouterOptions = {
+    val __obj = js.Dynamic.literal(before = before, indexFile = indexFile, mount = mount, swaggerRoot = swaggerRoot)
+  
+    __obj.asInstanceOf[DocumentationRouterOptions]
+  }
+}
+

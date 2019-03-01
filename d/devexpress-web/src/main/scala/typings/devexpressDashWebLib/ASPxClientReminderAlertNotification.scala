@@ -43,3 +43,20 @@ trait ASPxClientReminderAlertNotification extends js.Object {
   def GetReminderId(): java.lang.String
 }
 
+object ASPxClientReminderAlertNotification {
+  @scala.inline
+  def apply(
+    GetAppointment: js.Function0[ASPxClientAppointment],
+    GetReminder: js.Function0[ASPxClientReminder],
+    GetReminderId: js.Function0[java.lang.String],
+    appointment: ASPxClientAppointment,
+    handled: scala.Boolean,
+    ignore: scala.Boolean,
+    reminder: ASPxClientReminder
+  ): ASPxClientReminderAlertNotification = {
+    val __obj = js.Dynamic.literal(GetAppointment = GetAppointment, GetReminder = GetReminder, GetReminderId = GetReminderId, appointment = appointment, handled = handled, ignore = ignore, reminder = reminder)
+  
+    __obj.asInstanceOf[ASPxClientReminderAlertNotification]
+  }
+}
+

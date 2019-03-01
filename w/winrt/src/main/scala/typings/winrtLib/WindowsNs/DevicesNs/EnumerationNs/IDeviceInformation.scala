@@ -17,3 +17,22 @@ trait IDeviceInformation extends js.Object {
   def update(updateInfo: DeviceInformationUpdate): scala.Unit
 }
 
+object IDeviceInformation {
+  @scala.inline
+  def apply(
+    enclosureLocation: EnclosureLocation,
+    getGlyphThumbnailAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[DeviceThumbnail]],
+    getThumbnailAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[DeviceThumbnail]],
+    id: java.lang.String,
+    isDefault: scala.Boolean,
+    isEnabled: scala.Boolean,
+    name: java.lang.String,
+    properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _],
+    update: js.Function1[DeviceInformationUpdate, scala.Unit]
+  ): IDeviceInformation = {
+    val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation, getGlyphThumbnailAsync = getGlyphThumbnailAsync, getThumbnailAsync = getThumbnailAsync, id = id, isDefault = isDefault, isEnabled = isEnabled, name = name, properties = properties, update = update)
+  
+    __obj.asInstanceOf[IDeviceInformation]
+  }
+}
+

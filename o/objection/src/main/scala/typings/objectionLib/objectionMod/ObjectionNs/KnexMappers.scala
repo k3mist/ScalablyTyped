@@ -13,3 +13,19 @@ trait KnexMappers extends js.Object {
   ): java.lang.String
 }
 
+object KnexMappers {
+  @scala.inline
+  def apply(
+    postProcessResponse: js.Function1[js.Any, js.Any],
+    wrapIdentifier: js.Function2[
+      java.lang.String, 
+      js.Function1[/* identifier */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ]
+  ): KnexMappers = {
+    val __obj = js.Dynamic.literal(postProcessResponse = postProcessResponse, wrapIdentifier = wrapIdentifier)
+  
+    __obj.asInstanceOf[KnexMappers]
+  }
+}
+

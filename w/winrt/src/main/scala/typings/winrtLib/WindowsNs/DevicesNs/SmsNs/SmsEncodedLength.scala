@@ -13,3 +13,18 @@ trait SmsEncodedLength extends js.Object {
   var segmentCount: scala.Double
 }
 
+object SmsEncodedLength {
+  @scala.inline
+  def apply(
+    byteCountLastSegment: scala.Double,
+    bytesPerSegment: scala.Double,
+    characterCountLastSegment: scala.Double,
+    charactersPerSegment: scala.Double,
+    segmentCount: scala.Double
+  ): SmsEncodedLength = {
+    val __obj = js.Dynamic.literal(byteCountLastSegment = byteCountLastSegment, bytesPerSegment = bytesPerSegment, characterCountLastSegment = characterCountLastSegment, charactersPerSegment = charactersPerSegment, segmentCount = segmentCount)
+  
+    __obj.asInstanceOf[SmsEncodedLength]
+  }
+}
+

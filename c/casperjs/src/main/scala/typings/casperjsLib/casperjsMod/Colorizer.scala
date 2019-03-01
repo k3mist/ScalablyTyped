@@ -10,3 +10,15 @@ trait Colorizer extends js.Object {
   def format(text: java.lang.String, style: js.Any): scala.Unit
 }
 
+object Colorizer {
+  @scala.inline
+  def apply(
+    colorize: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    format: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): Colorizer = {
+    val __obj = js.Dynamic.literal(colorize = colorize, format = format)
+  
+    __obj.asInstanceOf[Colorizer]
+  }
+}
+

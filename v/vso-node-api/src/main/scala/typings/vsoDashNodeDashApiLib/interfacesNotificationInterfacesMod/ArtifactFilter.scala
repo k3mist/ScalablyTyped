@@ -11,3 +11,18 @@ trait ArtifactFilter extends BaseSubscriptionFilter {
   var artifactUri: java.lang.String
 }
 
+object ArtifactFilter {
+  @scala.inline
+  def apply(
+    artifactId: java.lang.String,
+    artifactType: java.lang.String,
+    artifactUri: java.lang.String,
+    eventType: java.lang.String,
+    `type`: java.lang.String
+  ): ArtifactFilter = {
+    val __obj = js.Dynamic.literal(artifactId = artifactId, artifactType = artifactType, artifactUri = artifactUri, eventType = eventType, `type` = `type`)
+  
+    __obj.asInstanceOf[ArtifactFilter]
+  }
+}
+

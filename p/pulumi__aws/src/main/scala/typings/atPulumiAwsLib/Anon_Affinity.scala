@@ -14,3 +14,19 @@ trait Anon_Affinity extends js.Object {
   var tenancy: java.lang.String
 }
 
+object Anon_Affinity {
+  @scala.inline
+  def apply(
+    affinity: java.lang.String,
+    availabilityZone: java.lang.String,
+    groupName: java.lang.String,
+    hostId: java.lang.String,
+    spreadDomain: java.lang.String,
+    tenancy: java.lang.String
+  ): Anon_Affinity = {
+    val __obj = js.Dynamic.literal(affinity = affinity, availabilityZone = availabilityZone, groupName = groupName, hostId = hostId, spreadDomain = spreadDomain, tenancy = tenancy)
+  
+    __obj.asInstanceOf[Anon_Affinity]
+  }
+}
+

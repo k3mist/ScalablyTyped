@@ -25,3 +25,12 @@ trait Placeholder extends js.Object {
   var `type`: PlaceholderType
 }
 
+object Placeholder {
+  @scala.inline
+  def apply(index: scala.Double, parent_object_id: java.lang.String, `type`: PlaceholderType): Placeholder = {
+    val __obj = js.Dynamic.literal(index = index, parent_object_id = parent_object_id, `type` = `type`)
+  
+    __obj.asInstanceOf[Placeholder]
+  }
+}
+

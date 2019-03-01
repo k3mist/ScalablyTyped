@@ -20,3 +20,12 @@ trait Bucket extends js.Object {
   var range: js.Array[scala.Double]
 }
 
+object Bucket {
+  @scala.inline
+  def apply(bucket: scala.Double, count: scala.Double, range: js.Array[scala.Double]): Bucket = {
+    val __obj = js.Dynamic.literal(bucket = bucket, count = count, range = range)
+  
+    __obj.asInstanceOf[Bucket]
+  }
+}
+

@@ -28,3 +28,39 @@ trait Attribute extends js.Object {
   var `type`: java.lang.String | scala.Null
 }
 
+object Attribute {
+  @scala.inline
+  def apply(
+    allowExpressions: scala.Boolean,
+    autocomplete: scala.Boolean,
+    defaultValue: java.lang.String,
+    deprecated: js.Any,
+    dynamicAttribute: scala.Boolean,
+    enum: js.Any,
+    filePath: java.lang.String,
+    html: scala.Boolean,
+    ignore: scala.Boolean,
+    key: java.lang.String,
+    removeDashes: scala.Boolean,
+    required: scala.Boolean,
+    setContextFlag: java.lang.String,
+    name: java.lang.String = null,
+    pattern: js.Any = null,
+    preserveName: java.lang.String = null,
+    ref: java.lang.String = null,
+    setFlag: java.lang.String = null,
+    targetProperty: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Attribute = {
+    val __obj = js.Dynamic.literal(allowExpressions = allowExpressions, autocomplete = autocomplete, defaultValue = defaultValue, deprecated = deprecated, dynamicAttribute = dynamicAttribute, enum = enum, filePath = filePath, html = html, ignore = ignore, key = key, removeDashes = removeDashes, required = required, setContextFlag = setContextFlag)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (preserveName != null) __obj.updateDynamic("preserveName")(preserveName)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (setFlag != null) __obj.updateDynamic("setFlag")(setFlag)
+    if (targetProperty != null) __obj.updateDynamic("targetProperty")(targetProperty)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Attribute]
+  }
+}
+

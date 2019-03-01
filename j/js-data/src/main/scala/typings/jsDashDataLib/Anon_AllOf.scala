@@ -29,3 +29,34 @@ trait Anon_AllOf extends js.Object {
   def uniqueItems(value: js.Any, schema: js.Any, opts: js.Any): jsDashDataLib.jsDashDataMod.SchemaValidationError
 }
 
+object Anon_AllOf {
+  @scala.inline
+  def apply(
+    allOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    anyOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    dependencies: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    enum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    items: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    maxItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    maxLength: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    maxProperties: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    maximum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    minItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    minLength: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    minProperties: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    minimum: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    multipleOf: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    not: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    oneOf: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    pattern: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    properties: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    required: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    `type`: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
+    uniqueItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError]
+  ): Anon_AllOf = {
+    val __obj = js.Dynamic.literal(allOf = allOf, anyOf = anyOf, dependencies = dependencies, enum = enum, items = items, maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, oneOf = oneOf, pattern = pattern, properties = properties, required = required, `type` = `type`, uniqueItems = uniqueItems)
+  
+    __obj.asInstanceOf[Anon_AllOf]
+  }
+}
+

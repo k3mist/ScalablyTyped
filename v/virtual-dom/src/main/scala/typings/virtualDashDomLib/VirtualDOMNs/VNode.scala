@@ -20,3 +20,26 @@ trait VNode extends VTree {
   var version: java.lang.String
 }
 
+object VNode {
+  @scala.inline
+  def apply(
+    children: js.Array[VTree],
+    count: scala.Double,
+    descendantHooks: js.Array[_],
+    hasThunks: scala.Boolean,
+    hasWidgets: scala.Boolean,
+    hooks: js.Array[_],
+    properties: VProperties,
+    tagName: java.lang.String,
+    `type`: java.lang.String,
+    version: java.lang.String,
+    key: java.lang.String = null,
+    namespace: java.lang.String = null
+  ): VNode = {
+    val __obj = js.Dynamic.literal(children = children, count = count, descendantHooks = descendantHooks, hasThunks = hasThunks, hasWidgets = hasWidgets, hooks = hooks, properties = properties, tagName = tagName, `type` = `type`, version = version)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[VNode]
+  }
+}
+

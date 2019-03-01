@@ -17,3 +17,22 @@ trait Anon_DescriptionStateExclude extends js.Object {
   ]
 }
 
+object Anon_DescriptionStateExclude {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      /* import warning: ImportType.apply Failed type conversion: typeof ServiceStatus */ js.Any, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: typeof ServiceStatus[keyof typeof ServiceStatus] */ js.Any
+      ]
+    ]
+  ): Anon_DescriptionStateExclude = {
+    val __obj = js.Dynamic.literal(description = description, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_DescriptionStateExclude]
+  }
+}
+

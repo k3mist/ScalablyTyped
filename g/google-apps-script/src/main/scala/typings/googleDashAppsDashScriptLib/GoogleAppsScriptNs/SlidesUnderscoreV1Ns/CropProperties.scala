@@ -27,3 +27,18 @@ trait CropProperties extends js.Object {
   var top_offset: scala.Double
 }
 
+object CropProperties {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    bottom_offset: scala.Double,
+    left_offset: scala.Double,
+    right_offset: scala.Double,
+    top_offset: scala.Double
+  ): CropProperties = {
+    val __obj = js.Dynamic.literal(angle = angle, bottom_offset = bottom_offset, left_offset = left_offset, right_offset = right_offset, top_offset = top_offset)
+  
+    __obj.asInstanceOf[CropProperties]
+  }
+}
+

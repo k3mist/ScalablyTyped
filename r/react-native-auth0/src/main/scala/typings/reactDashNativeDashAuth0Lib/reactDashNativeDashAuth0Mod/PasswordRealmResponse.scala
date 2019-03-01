@@ -14,3 +14,19 @@ trait PasswordRealmResponse extends js.Object {
   var tokenType: reactDashNativeDashAuth0Lib.reactDashNativeDashAuth0LibStrings.Bearer
 }
 
+object PasswordRealmResponse {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    expiresIn: scala.Double,
+    idToken: java.lang.String,
+    scope: java.lang.String,
+    tokenType: reactDashNativeDashAuth0Lib.reactDashNativeDashAuth0LibStrings.Bearer,
+    refreshToken: java.lang.String = null
+  ): PasswordRealmResponse = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, idToken = idToken, scope = scope, tokenType = tokenType)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[PasswordRealmResponse]
+  }
+}
+

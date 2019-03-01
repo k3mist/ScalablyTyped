@@ -45,3 +45,30 @@ trait Window extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Window {
+  @scala.inline
+  def apply(
+    alwaysOnTop: scala.Boolean,
+    focused: scala.Boolean,
+    id: scala.Double,
+    incognito: scala.Boolean,
+    state: java.lang.String,
+    `type`: java.lang.String,
+    height: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    sessionId: java.lang.String = null,
+    tabs: js.Array[chromeLib.chromeNs.tabsNs.Tab] = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Window = {
+    val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop, focused = focused, id = id, incognito = incognito, state = state, `type` = `type`)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Window]
+  }
+}
+

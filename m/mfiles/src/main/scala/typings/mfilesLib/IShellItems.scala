@@ -14,3 +14,19 @@ trait IShellItems extends js.Object {
   def GetObjectVersionsCount(): scala.Double
 }
 
+object IShellItems {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    Folders: IFolderDefs,
+    GetObjectVersionsCount: js.Function0[scala.Double],
+    ObjectFiles: IObjectFileAndObjVerOfMultipleFiles,
+    ObjectVersions: IObjectVersions,
+    ObjectVersionsAndProperties: IObjectVersionAndPropertiesOfMultipleObjects
+  ): IShellItems = {
+    val __obj = js.Dynamic.literal(Count = Count, Folders = Folders, GetObjectVersionsCount = GetObjectVersionsCount, ObjectFiles = ObjectFiles, ObjectVersions = ObjectVersions, ObjectVersionsAndProperties = ObjectVersionsAndProperties)
+  
+    __obj.asInstanceOf[IShellItems]
+  }
+}
+

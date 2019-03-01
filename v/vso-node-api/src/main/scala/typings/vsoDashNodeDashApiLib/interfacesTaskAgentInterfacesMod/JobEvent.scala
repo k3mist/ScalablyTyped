@@ -10,3 +10,12 @@ trait JobEvent extends js.Object {
   var name: java.lang.String
 }
 
+object JobEvent {
+  @scala.inline
+  def apply(jobId: java.lang.String, name: java.lang.String): JobEvent = {
+    val __obj = js.Dynamic.literal(jobId = jobId, name = name)
+  
+    __obj.asInstanceOf[JobEvent]
+  }
+}
+

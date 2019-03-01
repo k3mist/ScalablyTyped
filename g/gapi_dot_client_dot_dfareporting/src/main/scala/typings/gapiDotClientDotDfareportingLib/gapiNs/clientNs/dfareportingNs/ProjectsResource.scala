@@ -12,3 +12,21 @@ trait ProjectsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AdvertiserIds): gapiDotClientLib.gapiNs.clientNs.Request[ProjectsListResponse]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProjectsListResponse]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

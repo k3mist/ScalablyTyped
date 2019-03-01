@@ -11,3 +11,16 @@ trait FieldStatsResponse extends js.Object {
   var indices: org.scalablytyped.runtime.StringDictionary[FieldStatsResponseIndex]
 }
 
+object FieldStatsResponse {
+  @scala.inline
+  def apply(
+    _shards: ShardsResponse,
+    indices: org.scalablytyped.runtime.StringDictionary[FieldStatsResponseIndex],
+    conflicts: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): FieldStatsResponse = {
+    val __obj = js.Dynamic.literal(_shards = _shards, indices = indices)
+    if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts)
+    __obj.asInstanceOf[FieldStatsResponse]
+  }
+}
+

@@ -62,3 +62,23 @@ trait XDatabaseRegistrations extends js.Object {
   def revokeDatabaseLocation(Name: java.lang.String): scala.Unit
 }
 
+object XDatabaseRegistrations {
+  @scala.inline
+  def apply(
+    RegistrationNames: activexDashInteropLib.SafeArray[java.lang.String],
+    addDatabaseRegistrationsListener: js.Function1[XDatabaseRegistrationsListener, scala.Unit],
+    changeDatabaseLocation: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    getDatabaseLocation: js.Function1[java.lang.String, java.lang.String],
+    getRegistrationNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasRegisteredDatabase: js.Function1[java.lang.String, scala.Boolean],
+    isDatabaseRegistrationReadOnly: js.Function1[java.lang.String, scala.Boolean],
+    registerDatabaseLocation: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    removeDatabaseRegistrationsListener: js.Function1[XDatabaseRegistrationsListener, scala.Unit],
+    revokeDatabaseLocation: js.Function1[java.lang.String, scala.Unit]
+  ): XDatabaseRegistrations = {
+    val __obj = js.Dynamic.literal(RegistrationNames = RegistrationNames, addDatabaseRegistrationsListener = addDatabaseRegistrationsListener, changeDatabaseLocation = changeDatabaseLocation, getDatabaseLocation = getDatabaseLocation, getRegistrationNames = getRegistrationNames, hasRegisteredDatabase = hasRegisteredDatabase, isDatabaseRegistrationReadOnly = isDatabaseRegistrationReadOnly, registerDatabaseLocation = registerDatabaseLocation, removeDatabaseRegistrationsListener = removeDatabaseRegistrationsListener, revokeDatabaseLocation = revokeDatabaseLocation)
+  
+    __obj.asInstanceOf[XDatabaseRegistrations]
+  }
+}
+

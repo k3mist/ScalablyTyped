@@ -83,3 +83,23 @@ trait SharedClass extends js.Object {
   def resolve(resolver: js.Function0[scala.Unit]): scala.Unit
 }
 
+object SharedClass {
+  @scala.inline
+  def apply(
+    ctor: js.Function0[scala.Unit],
+    defineMethod: js.Function2[java.lang.String, js.Any, scala.Unit],
+    disableMethod: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    disableMethodByName: js.Function1[java.lang.String, scala.Unit],
+    find: js.Function2[js.Function0[scala.Unit | java.lang.String], scala.Boolean, js.Any],
+    findMethodByName: js.Function1[java.lang.String, js.Any],
+    getKeyFromMethodNameAndTarget: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    http: js.Any,
+    methods: js.Function1[loopbackLib.Anon_IncludeDisabled, js.Array[_]],
+    resolve: js.Function1[js.Function0[scala.Unit], scala.Unit]
+  ): SharedClass = {
+    val __obj = js.Dynamic.literal(ctor = ctor, defineMethod = defineMethod, disableMethod = disableMethod, disableMethodByName = disableMethodByName, find = find, findMethodByName = findMethodByName, getKeyFromMethodNameAndTarget = getKeyFromMethodNameAndTarget, http = http, methods = methods, resolve = resolve)
+  
+    __obj.asInstanceOf[SharedClass]
+  }
+}
+

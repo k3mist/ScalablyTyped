@@ -20,3 +20,25 @@ trait NightwatchLanguageChains extends js.Object {
   var `with`: Expect
 }
 
+object NightwatchLanguageChains {
+  @scala.inline
+  def apply(
+    and: Expect,
+    at: Expect,
+    be: Expect,
+    been: Expect,
+    has: Expect,
+    have: Expect,
+    is: Expect,
+    of: Expect,
+    that: Expect,
+    to: Expect,
+    which: Expect,
+    `with`: Expect
+  ): NightwatchLanguageChains = {
+    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, has = has, have = have, is = is, of = of, that = that, to = to, which = which, `with` = `with`)
+  
+    __obj.asInstanceOf[NightwatchLanguageChains]
+  }
+}
+

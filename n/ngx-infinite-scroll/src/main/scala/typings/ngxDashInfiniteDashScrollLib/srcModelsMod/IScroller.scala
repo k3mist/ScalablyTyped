@@ -18,3 +18,23 @@ trait IScroller extends js.Object {
   var upDistance: scala.Double
 }
 
+object IScroller {
+  @scala.inline
+  def apply(
+    alwaysCallback: scala.Boolean,
+    disable: scala.Boolean,
+    downDistance: scala.Double,
+    element: atAngularCoreLib.atAngularCoreMod.ElementRef[_],
+    fromRoot: scala.Boolean,
+    horizontal: scala.Boolean,
+    scrollContainer: java.lang.String | atAngularCoreLib.atAngularCoreMod.ElementRef[_],
+    scrollWindow: scala.Boolean,
+    throttle: scala.Double,
+    upDistance: scala.Double
+  ): IScroller = {
+    val __obj = js.Dynamic.literal(alwaysCallback = alwaysCallback, disable = disable, downDistance = downDistance, element = element, fromRoot = fromRoot, horizontal = horizontal, scrollContainer = scrollContainer.asInstanceOf[js.Any], scrollWindow = scrollWindow, throttle = throttle, upDistance = upDistance)
+  
+    __obj.asInstanceOf[IScroller]
+  }
+}
+

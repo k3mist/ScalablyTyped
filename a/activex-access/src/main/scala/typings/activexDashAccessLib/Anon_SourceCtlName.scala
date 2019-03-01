@@ -13,3 +13,18 @@ trait Anon_SourceCtlName extends js.Object {
   val Y: scala.Double
 }
 
+object Anon_SourceCtlName {
+  @scala.inline
+  def apply(
+    SourceCtlName: java.lang.String,
+    SourceFieldList: scala.Double,
+    SourceRow: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): Anon_SourceCtlName = {
+    val __obj = js.Dynamic.literal(SourceCtlName = SourceCtlName, SourceFieldList = SourceFieldList, SourceRow = SourceRow, X = X, Y = Y)
+  
+    __obj.asInstanceOf[Anon_SourceCtlName]
+  }
+}
+

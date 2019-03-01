@@ -12,3 +12,12 @@ trait HttpOptions extends js.Object {
   var raw: js.Any
 }
 
+object HttpOptions {
+  @scala.inline
+  def apply(body: js.Any, method: java.lang.String, path: java.lang.String, raw: js.Any): HttpOptions = {
+    val __obj = js.Dynamic.literal(body = body, method = method, path = path, raw = raw)
+  
+    __obj.asInstanceOf[HttpOptions]
+  }
+}
+

@@ -37,3 +37,17 @@ trait ReplicationControllerSpec extends js.Object {
   val template: PodTemplateSpec
 }
 
+object ReplicationControllerSpec {
+  @scala.inline
+  def apply(
+    minReadySeconds: scala.Double,
+    replicas: scala.Double,
+    selector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    template: PodTemplateSpec
+  ): ReplicationControllerSpec = {
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, replicas = replicas, selector = selector, template = template)
+  
+    __obj.asInstanceOf[ReplicationControllerSpec]
+  }
+}
+

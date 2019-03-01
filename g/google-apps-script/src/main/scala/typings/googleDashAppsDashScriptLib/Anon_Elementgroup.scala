@@ -25,3 +25,21 @@ trait Anon_Elementgroup extends js.Object {
   var word_art: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.WordArt
 }
 
+object Anon_Elementgroup {
+  @scala.inline
+  def apply(
+    element_group: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Group,
+    image: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Image,
+    line: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Line,
+    shape: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Shape,
+    sheets_chart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SheetsChart,
+    table: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Table,
+    video: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Video,
+    word_art: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.WordArt
+  ): Anon_Elementgroup = {
+    val __obj = js.Dynamic.literal(element_group = element_group, image = image, line = line, shape = shape, sheets_chart = sheets_chart, table = table, video = video, word_art = word_art)
+  
+    __obj.asInstanceOf[Anon_Elementgroup]
+  }
+}
+

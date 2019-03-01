@@ -11,3 +11,16 @@ trait BuiltinConverterFactory extends js.Object {
   def createPipeConverter(name: java.lang.String, argCount: scala.Double): BuiltinConverter
 }
 
+object BuiltinConverterFactory {
+  @scala.inline
+  def apply(
+    createLiteralArrayConverter: js.Function1[scala.Double, BuiltinConverter],
+    createLiteralMapConverter: js.Function1[js.Array[atAngularCompilerLib.Anon_Key], BuiltinConverter],
+    createPipeConverter: js.Function2[java.lang.String, scala.Double, BuiltinConverter]
+  ): BuiltinConverterFactory = {
+    val __obj = js.Dynamic.literal(createLiteralArrayConverter = createLiteralArrayConverter, createLiteralMapConverter = createLiteralMapConverter, createPipeConverter = createPipeConverter)
+  
+    __obj.asInstanceOf[BuiltinConverterFactory]
+  }
+}
+

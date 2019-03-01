@@ -13,3 +13,16 @@ trait SolverConstraint extends js.Object {
   var Right: js.Any
 }
 
+object SolverConstraint {
+  @scala.inline
+  def apply(
+    Left: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    Operator: SolverConstraintOperator,
+    Right: js.Any
+  ): SolverConstraint = {
+    val __obj = js.Dynamic.literal(Left = Left, Operator = Operator, Right = Right)
+  
+    __obj.asInstanceOf[SolverConstraint]
+  }
+}
+

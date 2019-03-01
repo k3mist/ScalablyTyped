@@ -11,3 +11,12 @@ trait ScryptParams extends js.Object {
   var r: scala.Double
 }
 
+object ScryptParams {
+  @scala.inline
+  def apply(N: scala.Double, p: scala.Double, r: scala.Double): ScryptParams = {
+    val __obj = js.Dynamic.literal(N = N, p = p, r = r)
+  
+    __obj.asInstanceOf[ScryptParams]
+  }
+}
+

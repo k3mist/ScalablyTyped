@@ -28,3 +28,19 @@ trait ToastMap extends js.Object {
   var `type`: ToastrType
 }
 
+object ToastMap {
+  @scala.inline
+  def apply(
+    iconClass: java.lang.String,
+    message: java.lang.String,
+    `type`: ToastrType,
+    optionsOverride: ToastrOptions = null,
+    title: java.lang.String = null
+  ): ToastMap = {
+    val __obj = js.Dynamic.literal(iconClass = iconClass, message = message, `type` = `type`)
+    if (optionsOverride != null) __obj.updateDynamic("optionsOverride")(optionsOverride)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ToastMap]
+  }
+}
+

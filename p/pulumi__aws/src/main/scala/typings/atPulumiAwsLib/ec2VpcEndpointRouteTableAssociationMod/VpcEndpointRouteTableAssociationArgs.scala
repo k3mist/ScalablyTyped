@@ -16,3 +16,15 @@ trait VpcEndpointRouteTableAssociationArgs extends js.Object {
   val vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpcEndpointRouteTableAssociationArgs {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): VpcEndpointRouteTableAssociationArgs = {
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VpcEndpointRouteTableAssociationArgs]
+  }
+}
+

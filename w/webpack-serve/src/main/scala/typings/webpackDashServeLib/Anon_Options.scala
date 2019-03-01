@@ -10,3 +10,15 @@ trait Anon_Options extends js.Object {
   var server: nodeLib.netMod.Server
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(
+    options: webpackDashServeLib.webpackDashServeMod.WebpackServeNs.InitializedOptions,
+    server: nodeLib.netMod.Server
+  ): Anon_Options = {
+    val __obj = js.Dynamic.literal(options = options, server = server)
+  
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

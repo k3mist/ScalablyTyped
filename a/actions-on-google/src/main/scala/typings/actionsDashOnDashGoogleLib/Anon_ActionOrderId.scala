@@ -17,3 +17,19 @@ trait Anon_ActionOrderId extends js.Object {
   var paymentInfo: js.Object
 }
 
+object Anon_ActionOrderId {
+  @scala.inline
+  def apply(
+    actionOrderId: java.lang.String,
+    customerInfo: Anon_Email,
+    finalOrder: actionsDashOnDashGoogleLib.transactionsMod.Order,
+    googleOrderId: java.lang.String,
+    orderDate: Anon_Nanos,
+    paymentInfo: js.Object
+  ): Anon_ActionOrderId = {
+    val __obj = js.Dynamic.literal(actionOrderId = actionOrderId, customerInfo = customerInfo, finalOrder = finalOrder, googleOrderId = googleOrderId, orderDate = orderDate, paymentInfo = paymentInfo)
+  
+    __obj.asInstanceOf[Anon_ActionOrderId]
+  }
+}
+

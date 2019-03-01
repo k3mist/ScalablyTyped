@@ -13,3 +13,18 @@ trait Anon_AtimeMode extends js.Object {
   var stats: adoneLib.adoneNs.fsNs.INs.Stats
 }
 
+object Anon_AtimeMode {
+  @scala.inline
+  def apply(
+    atime: stdLib.Date,
+    mode: scala.Double,
+    mtime: stdLib.Date,
+    name: java.lang.String,
+    stats: adoneLib.adoneNs.fsNs.INs.Stats
+  ): Anon_AtimeMode = {
+    val __obj = js.Dynamic.literal(atime = atime, mode = mode, mtime = mtime, name = name, stats = stats)
+  
+    __obj.asInstanceOf[Anon_AtimeMode]
+  }
+}
+

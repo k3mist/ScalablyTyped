@@ -11,3 +11,12 @@ trait LabelStyle extends js.Object {
   var fontSize: java.lang.String
 }
 
+object LabelStyle {
+  @scala.inline
+  def apply(color: java.lang.String, fontName: java.lang.String, fontSize: java.lang.String): LabelStyle = {
+    val __obj = js.Dynamic.literal(color = color, fontName = fontName, fontSize = fontSize)
+  
+    __obj.asInstanceOf[LabelStyle]
+  }
+}
+

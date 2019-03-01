@@ -16,3 +16,21 @@ trait RequestContext extends js.Object {
   var stage: java.lang.String
 }
 
+object RequestContext {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    apiId: java.lang.String,
+    httpMethod: java.lang.String,
+    identity: RequestIdentity,
+    requestId: java.lang.String,
+    resourceId: java.lang.String,
+    resourcePath: java.lang.String,
+    stage: java.lang.String
+  ): RequestContext = {
+    val __obj = js.Dynamic.literal(accountId = accountId, apiId = apiId, httpMethod = httpMethod, identity = identity, requestId = requestId, resourceId = resourceId, resourcePath = resourcePath, stage = stage)
+  
+    __obj.asInstanceOf[RequestContext]
+  }
+}
+

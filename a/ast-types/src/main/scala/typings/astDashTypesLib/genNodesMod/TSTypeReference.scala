@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var typeName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind
 }
 
+object TSTypeReference {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeReference,
+    typeName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
+  ): TSTypeReference = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeName = typeName.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSTypeReference]
+  }
+}
+

@@ -11,3 +11,16 @@ trait PackageMeta
   var version: java.lang.String
 }
 
+object PackageMeta {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    version: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): PackageMeta = {
+    val __obj = js.Dynamic.literal(name = name, version = version)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[PackageMeta]
+  }
+}
+

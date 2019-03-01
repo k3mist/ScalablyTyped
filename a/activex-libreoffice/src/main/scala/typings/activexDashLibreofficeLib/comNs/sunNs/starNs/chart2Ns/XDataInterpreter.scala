@@ -34,3 +34,28 @@ trait XDataInterpreter
   def reinterpretDataSeries(aInterpretedData: InterpretedData): InterpretedData
 }
 
+object XDataInterpreter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    interpretDataSource: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries], 
+      InterpretedData
+    ],
+    isDataCompatible: js.Function1[InterpretedData, scala.Boolean],
+    mergeInterpretedData: js.Function1[
+      InterpretedData, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    reinterpretDataSeries: js.Function1[InterpretedData, InterpretedData],
+    release: js.Function0[scala.Unit]
+  ): XDataInterpreter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, interpretDataSource = interpretDataSource, isDataCompatible = isDataCompatible, mergeInterpretedData = mergeInterpretedData, queryInterface = queryInterface, reinterpretDataSeries = reinterpretDataSeries, release = release)
+  
+    __obj.asInstanceOf[XDataInterpreter]
+  }
+}
+

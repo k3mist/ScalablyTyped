@@ -19,3 +19,23 @@ trait ICalendarController extends js.Object {
   def refreshItems(): scala.Unit
 }
 
+object ICalendarController {
+  @scala.inline
+  def apply(
+    collapseAll: js.Function0[scala.Unit],
+    deleteItem: js.Function1[java.lang.String, scala.Unit],
+    expandAll: js.Function0[scala.Unit],
+    getActiveScope: js.Function0[CalendarScope],
+    moveToDate: js.Function1[java.lang.String, scala.Unit],
+    moveToView: js.Function1[CalendarScope, scala.Unit],
+    moveToViewDate: js.Function2[CalendarScope, java.lang.String, scala.Unit],
+    moveToViewType: js.Function1[java.lang.String, scala.Unit],
+    newItemDialog: js.Function1[java.lang.String, scala.Unit],
+    refreshItems: js.Function0[scala.Unit]
+  ): ICalendarController = {
+    val __obj = js.Dynamic.literal(collapseAll = collapseAll, deleteItem = deleteItem, expandAll = expandAll, getActiveScope = getActiveScope, moveToDate = moveToDate, moveToView = moveToView, moveToViewDate = moveToViewDate, moveToViewType = moveToViewType, newItemDialog = newItemDialog, refreshItems = refreshItems)
+  
+    __obj.asInstanceOf[ICalendarController]
+  }
+}
+

@@ -15,3 +15,12 @@ trait GoToFooterCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object GoToFooterCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): GoToFooterCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[GoToFooterCommand]
+  }
+}
+

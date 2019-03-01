@@ -24,3 +24,19 @@ trait DatabaseArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object DatabaseArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    encryptionConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionOptionKmsKey] = null,
+    forceDestroy: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DatabaseArgs = {
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
+    if (encryptionConfiguration != null) __obj.updateDynamic("encryptionConfiguration")(encryptionConfiguration.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatabaseArgs]
+  }
+}
+

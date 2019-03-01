@@ -12,3 +12,19 @@ trait DialogAction extends js.Object {
   var text: java.lang.String
 }
 
+object DialogAction {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    id: java.lang.String = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    ref: java.lang.String = null
+  ): DialogAction = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[DialogAction]
+  }
+}
+

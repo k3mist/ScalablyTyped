@@ -12,3 +12,12 @@ trait AspectRating extends js.Object {
   var `type`: AspectRatingType
 }
 
+object AspectRating {
+  @scala.inline
+  def apply(rating: scala.Double, `type`: AspectRatingType): AspectRating = {
+    val __obj = js.Dynamic.literal(rating = rating, `type` = `type`)
+  
+    __obj.asInstanceOf[AspectRating]
+  }
+}
+

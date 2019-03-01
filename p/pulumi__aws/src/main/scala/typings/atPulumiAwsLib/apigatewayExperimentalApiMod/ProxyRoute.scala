@@ -10,3 +10,15 @@ trait ProxyRoute extends Route {
   var target: java.lang.String | atPulumiPulumiLib.atPulumiPulumiMod.Output[Endpoint]
 }
 
+object ProxyRoute {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    target: java.lang.String | atPulumiPulumiLib.atPulumiPulumiMod.Output[Endpoint]
+  ): ProxyRoute = {
+    val __obj = js.Dynamic.literal(path = path, target = target.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ProxyRoute]
+  }
+}
+

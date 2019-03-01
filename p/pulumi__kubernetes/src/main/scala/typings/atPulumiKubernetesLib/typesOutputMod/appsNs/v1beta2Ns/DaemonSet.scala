@@ -42,3 +42,18 @@ trait DaemonSet extends js.Object {
   val status: DaemonSetStatus
 }
 
+object DaemonSet {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: DaemonSetSpec,
+    status: DaemonSetStatus
+  ): DaemonSet = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[DaemonSet]
+  }
+}
+

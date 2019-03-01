@@ -17,3 +17,22 @@ trait Anon_Assertions extends js.Object {
   var tests: newmanLib.newmanMod.NewmanRunStat
 }
 
+object Anon_Assertions {
+  @scala.inline
+  def apply(
+    assertions: newmanLib.newmanMod.NewmanRunStat,
+    items: newmanLib.newmanMod.NewmanRunStat,
+    iterations: newmanLib.newmanMod.NewmanRunStat,
+    prerequestScripts: newmanLib.newmanMod.NewmanRunStat,
+    prerequests: newmanLib.newmanMod.NewmanRunStat,
+    requests: newmanLib.newmanMod.NewmanRunStat,
+    scripts: newmanLib.newmanMod.NewmanRunStat,
+    testScripts: newmanLib.newmanMod.NewmanRunStat,
+    tests: newmanLib.newmanMod.NewmanRunStat
+  ): Anon_Assertions = {
+    val __obj = js.Dynamic.literal(assertions = assertions, items = items, iterations = iterations, prerequestScripts = prerequestScripts, prerequests = prerequests, requests = requests, scripts = scripts, testScripts = testScripts, tests = tests)
+  
+    __obj.asInstanceOf[Anon_Assertions]
+  }
+}
+

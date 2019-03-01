@@ -16,3 +16,21 @@ trait Anon_CommentsIdKey extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CommentsIdKey {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    key: astDashTypesLib.genKindsMod.FlowTypeKind,
+    value: astDashTypesLib.genKindsMod.FlowTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
+  ): Anon_CommentsIdKey = {
+    val __obj = js.Dynamic.literal(id = id, key = key, value = value)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CommentsIdKey]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_Unshift[T]
   var $unshift: js.Array[T]
 }
 
+object Anon_Unshift {
+  @scala.inline
+  def apply[T]($unshift: js.Array[T]): Anon_Unshift[T] = {
+    val __obj = js.Dynamic.literal($unshift = $unshift)
+  
+    __obj.asInstanceOf[Anon_Unshift[T]]
+  }
+}
+

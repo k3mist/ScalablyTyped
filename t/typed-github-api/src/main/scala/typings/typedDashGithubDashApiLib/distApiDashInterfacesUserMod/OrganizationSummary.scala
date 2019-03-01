@@ -15,3 +15,25 @@ trait OrganizationSummary extends UserOrOrgSummary {
   var type_OrganizationSummary: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.Organization
 }
 
+object OrganizationSummary {
+  @scala.inline
+  def apply(
+    avatar_url: java.lang.String,
+    description: java.lang.String,
+    events_url: java.lang.String,
+    hooks_url: java.lang.String,
+    id: scala.Double,
+    issues_url: java.lang.String,
+    login: java.lang.String,
+    members_url: java.lang.String,
+    public_members_url: java.lang.String,
+    repos_url: java.lang.String,
+    `type`: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.Organization,
+    url: java.lang.String
+  ): OrganizationSummary = {
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, description = description, events_url = events_url, hooks_url = hooks_url, id = id, issues_url = issues_url, login = login, members_url = members_url, public_members_url = public_members_url, repos_url = repos_url, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[OrganizationSummary]
+  }
+}
+

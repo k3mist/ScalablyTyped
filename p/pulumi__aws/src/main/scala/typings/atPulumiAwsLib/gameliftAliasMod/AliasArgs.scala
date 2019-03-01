@@ -20,3 +20,17 @@ trait AliasArgs extends js.Object {
   val routingStrategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetIdMessage]
 }
 
+object AliasArgs {
+  @scala.inline
+  def apply(
+    routingStrategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetIdMessage],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): AliasArgs = {
+    val __obj = js.Dynamic.literal(routingStrategy = routingStrategy.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasArgs]
+  }
+}
+

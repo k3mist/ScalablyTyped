@@ -18,3 +18,20 @@ trait AuthResponse extends js.Object {
   var scope: java.lang.String
 }
 
+object AuthResponse {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    expires_at: scala.Double,
+    expires_in: scala.Double,
+    first_issued_at: scala.Double,
+    id_token: java.lang.String,
+    login_hint: java.lang.String,
+    scope: java.lang.String
+  ): AuthResponse = {
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_at = expires_at, expires_in = expires_in, first_issued_at = first_issued_at, id_token = id_token, login_hint = login_hint, scope = scope)
+  
+    __obj.asInstanceOf[AuthResponse]
+  }
+}
+

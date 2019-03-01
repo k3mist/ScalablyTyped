@@ -32,3 +32,19 @@ trait SizePerPageFunctionProps extends js.Object {
   def toggleDropDown(): scala.Unit
 }
 
+object SizePerPageFunctionProps {
+  @scala.inline
+  def apply(
+    changeSizePerPage: js.Function1[scala.Double, scala.Unit],
+    currSizePerPage: java.lang.String,
+    hideSizePerPage: scala.Boolean,
+    open: scala.Boolean,
+    sizePerPageList: SizePerPageList,
+    toggleDropDown: js.Function0[scala.Unit]
+  ): SizePerPageFunctionProps = {
+    val __obj = js.Dynamic.literal(changeSizePerPage = changeSizePerPage, currSizePerPage = currSizePerPage, hideSizePerPage = hideSizePerPage, open = open, sizePerPageList = sizePerPageList.asInstanceOf[js.Any], toggleDropDown = toggleDropDown)
+  
+    __obj.asInstanceOf[SizePerPageFunctionProps]
+  }
+}
+

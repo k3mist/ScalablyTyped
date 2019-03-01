@@ -16,3 +16,18 @@ trait InteractiveFileIOException extends InteractiveIOException {
   var FileName: java.lang.String
 }
 
+object InteractiveFileIOException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Code: IOErrorCode,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    FileName: java.lang.String,
+    Message: java.lang.String
+  ): InteractiveFileIOException = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Code = Code, Context = Context, FileName = FileName, Message = Message)
+  
+    __obj.asInstanceOf[InteractiveFileIOException]
+  }
+}
+

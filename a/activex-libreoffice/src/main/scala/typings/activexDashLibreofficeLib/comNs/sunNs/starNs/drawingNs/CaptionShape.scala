@@ -51,3 +51,36 @@ trait CaptionShape
   var CornerRadius: scala.Double
 }
 
+object CaptionShape {
+  @scala.inline
+  def apply(
+    CaptionAngle: scala.Double,
+    CaptionEscapeAbsolute: scala.Double,
+    CaptionEscapeDirection: scala.Double,
+    CaptionEscapeRelative: scala.Double,
+    CaptionGap: scala.Double,
+    CaptionIsEscapeRelative: scala.Boolean,
+    CaptionIsFitLineLength: scala.Boolean,
+    CaptionIsFixedAngle: scala.Boolean,
+    CaptionLineLength: scala.Double,
+    CaptionPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    CaptionType: scala.Double,
+    CornerRadius: scala.Double,
+    FillProperties: FillProperties = null,
+    LineProperties: LineProperties = null,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Text: Text = null
+  ): CaptionShape = {
+    val __obj = js.Dynamic.literal(CaptionAngle = CaptionAngle, CaptionEscapeAbsolute = CaptionEscapeAbsolute, CaptionEscapeDirection = CaptionEscapeDirection, CaptionEscapeRelative = CaptionEscapeRelative, CaptionGap = CaptionGap, CaptionIsEscapeRelative = CaptionIsEscapeRelative, CaptionIsFitLineLength = CaptionIsFitLineLength, CaptionIsFixedAngle = CaptionIsFixedAngle, CaptionLineLength = CaptionLineLength, CaptionPoint = CaptionPoint, CaptionType = CaptionType, CornerRadius = CornerRadius)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[CaptionShape]
+  }
+}
+

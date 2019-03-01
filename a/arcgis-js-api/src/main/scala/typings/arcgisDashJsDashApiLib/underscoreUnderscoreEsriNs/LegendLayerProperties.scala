@@ -26,3 +26,18 @@ trait LegendLayerProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LegendLayerProperties {
+  @scala.inline
+  def apply(
+    layerId: java.lang.String = null,
+    subLayerIds: js.Array[java.lang.String] = null,
+    title: java.lang.String = null
+  ): LegendLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
+    if (subLayerIds != null) __obj.updateDynamic("subLayerIds")(subLayerIds)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[LegendLayerProperties]
+  }
+}
+

@@ -13,3 +13,12 @@ trait NamedTypeNode
   val name: NameNode
 }
 
+object NamedTypeNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.NamedType, name: NameNode, loc: Location = null): NamedTypeNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NamedTypeNode]
+  }
+}
+

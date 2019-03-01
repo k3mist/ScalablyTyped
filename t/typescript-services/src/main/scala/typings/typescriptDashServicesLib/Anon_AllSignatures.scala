@@ -10,3 +10,15 @@ trait Anon_AllSignatures extends js.Object {
   var signature: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol
 }
 
+object Anon_AllSignatures {
+  @scala.inline
+  def apply(
+    allSignatures: js.Array[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol],
+    signature: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol
+  ): Anon_AllSignatures = {
+    val __obj = js.Dynamic.literal(allSignatures = allSignatures, signature = signature)
+  
+    __obj.asInstanceOf[Anon_AllSignatures]
+  }
+}
+

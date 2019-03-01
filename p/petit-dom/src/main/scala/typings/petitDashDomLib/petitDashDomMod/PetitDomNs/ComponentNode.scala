@@ -12,3 +12,18 @@ trait ComponentNode[P /* <: ComponentProps */] extends VNode {
   val type_ComponentNode: Component[P]
 }
 
+object ComponentNode {
+  @scala.inline
+  def apply[P /* <: ComponentProps */](
+    content: js.Array[VNode],
+    isSVG: scala.Boolean,
+    props: P with IntrinsicProps,
+    `type`: Component[P],
+    key: Key = null
+  ): ComponentNode[P] = {
+    val __obj = js.Dynamic.literal(content = content, isSVG = isSVG, props = props.asInstanceOf[js.Any], `type` = `type`)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentNode[P]]
+  }
+}
+

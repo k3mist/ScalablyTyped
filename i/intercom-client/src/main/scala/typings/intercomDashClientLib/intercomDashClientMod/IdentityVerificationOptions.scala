@@ -10,3 +10,12 @@ trait IdentityVerificationOptions extends js.Object {
   var secretKey: java.lang.String
 }
 
+object IdentityVerificationOptions {
+  @scala.inline
+  def apply(identifier: java.lang.String, secretKey: java.lang.String): IdentityVerificationOptions = {
+    val __obj = js.Dynamic.literal(identifier = identifier, secretKey = secretKey)
+  
+    __obj.asInstanceOf[IdentityVerificationOptions]
+  }
+}
+

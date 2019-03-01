@@ -15,3 +15,20 @@ trait Media extends js.Object {
   var title: java.lang.String
 }
 
+object Media {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    cid: java.lang.String,
+    duration: scala.Double,
+    format: scala.Double,
+    id: scala.Double,
+    image: java.lang.String,
+    title: java.lang.String
+  ): Media = {
+    val __obj = js.Dynamic.literal(author = author, cid = cid, duration = duration, format = format, id = id, image = image, title = title)
+  
+    __obj.asInstanceOf[Media]
+  }
+}
+

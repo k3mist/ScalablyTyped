@@ -34,3 +34,26 @@ trait AreaMeasurement2DProperties extends WidgetProperties {
   var viewModel: js.UndefOr[AreaMeasurement2DViewModel] = js.undefined
 }
 
+object AreaMeasurement2DProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    unit: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.metric | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.imperial | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-inches` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-us-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-yards` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-meters` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-kilometers` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.acres | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.ares | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hectares = null,
+    unitOptions: js.Array[java.lang.String] = null,
+    view: MapViewProperties = null,
+    viewModel: AreaMeasurement2DViewModel = null
+  ): AreaMeasurement2DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[AreaMeasurement2DProperties]
+  }
+}
+

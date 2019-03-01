@@ -15,3 +15,20 @@ trait Anon_HeightSegments extends js.Object {
   var widthSegments: scala.Double
 }
 
+object Anon_HeightSegments {
+  @scala.inline
+  def apply(
+    heightSegments: scala.Double,
+    phiLength: scala.Double,
+    phiStart: scala.Double,
+    radius: scala.Double,
+    thetaLength: scala.Double,
+    thetaStart: scala.Double,
+    widthSegments: scala.Double
+  ): Anon_HeightSegments = {
+    val __obj = js.Dynamic.literal(heightSegments = heightSegments, phiLength = phiLength, phiStart = phiStart, radius = radius, thetaLength = thetaLength, thetaStart = thetaStart, widthSegments = widthSegments)
+  
+    __obj.asInstanceOf[Anon_HeightSegments]
+  }
+}
+

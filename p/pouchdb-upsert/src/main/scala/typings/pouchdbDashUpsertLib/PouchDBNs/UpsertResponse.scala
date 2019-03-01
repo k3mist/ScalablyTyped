@@ -11,3 +11,16 @@ trait UpsertResponse extends js.Object {
   var updated: scala.Boolean
 }
 
+object UpsertResponse {
+  @scala.inline
+  def apply(
+    id: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
+    rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId,
+    updated: scala.Boolean
+  ): UpsertResponse = {
+    val __obj = js.Dynamic.literal(id = id, rev = rev, updated = updated)
+  
+    __obj.asInstanceOf[UpsertResponse]
+  }
+}
+

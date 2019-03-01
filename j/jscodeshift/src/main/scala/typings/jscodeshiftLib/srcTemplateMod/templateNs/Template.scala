@@ -14,3 +14,16 @@ trait Template extends js.Object {
   def statements(args: js.Any*): js.Any
 }
 
+object Template {
+  @scala.inline
+  def apply(
+    expression: js.Function1[/* repeated */ js.Any, js.Any],
+    statement: js.Function1[/* repeated */ js.Any, js.Any],
+    statements: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Template = {
+    val __obj = js.Dynamic.literal(expression = expression, statement = statement, statements = statements)
+  
+    __obj.asInstanceOf[Template]
+  }
+}
+

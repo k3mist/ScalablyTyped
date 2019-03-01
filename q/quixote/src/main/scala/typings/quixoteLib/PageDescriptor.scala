@@ -25,3 +25,21 @@ trait PageDescriptor extends js.Object {
   var width: SizeDescriptor
 }
 
+object PageDescriptor {
+  @scala.inline
+  def apply(
+    bottom: PositionDescriptor,
+    center: PositionDescriptor,
+    height: SizeDescriptor,
+    left: PositionDescriptor,
+    middle: PositionDescriptor,
+    right: PositionDescriptor,
+    top: PositionDescriptor,
+    width: SizeDescriptor
+  ): PageDescriptor = {
+    val __obj = js.Dynamic.literal(bottom = bottom, center = center, height = height, left = left, middle = middle, right = right, top = top, width = width)
+  
+    __obj.asInstanceOf[PageDescriptor]
+  }
+}
+

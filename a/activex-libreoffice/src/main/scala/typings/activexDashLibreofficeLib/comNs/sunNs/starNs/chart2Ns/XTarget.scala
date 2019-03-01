@@ -10,3 +10,17 @@ trait XTarget
   def addDrawElement(): scala.Unit
 }
 
+object XTarget {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addDrawElement: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTarget = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addDrawElement = addDrawElement, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTarget]
+  }
+}
+

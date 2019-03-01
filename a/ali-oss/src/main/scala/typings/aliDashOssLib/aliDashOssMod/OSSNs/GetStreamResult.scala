@@ -11,3 +11,12 @@ trait GetStreamResult extends js.Object {
   var stream: js.UndefOr[js.Any] = js.undefined
 }
 
+object GetStreamResult {
+  @scala.inline
+  def apply(res: NormalSuccessResponse, stream: js.Any = null): GetStreamResult = {
+    val __obj = js.Dynamic.literal(res = res)
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[GetStreamResult]
+  }
+}
+

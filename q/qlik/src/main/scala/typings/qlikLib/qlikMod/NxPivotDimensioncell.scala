@@ -19,3 +19,24 @@ trait NxPivotDimensioncell extends js.Object {
   var qValue: scala.Double
 }
 
+object NxPivotDimensioncell {
+  @scala.inline
+  def apply(
+    qAttrDims: js.Array[NxAttributeDimValues],
+    qAttrExps: js.Array[NxAttributeExpressionValues],
+    qCanCollapse: scala.Boolean,
+    qCanExpand: scala.Boolean,
+    qDown: scala.Double,
+    qElemNo: scala.Double,
+    qSubNodes: js.Array[NxPivotDimensioncell],
+    qText: java.lang.String,
+    qType: qlikLib.qlikLibStrings.V | qlikLib.qlikLibStrings.E | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.P | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.U,
+    qUp: scala.Double,
+    qValue: scala.Double
+  ): NxPivotDimensioncell = {
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qCanCollapse = qCanCollapse, qCanExpand = qCanExpand, qDown = qDown, qElemNo = qElemNo, qSubNodes = qSubNodes, qText = qText, qType = qType.asInstanceOf[js.Any], qUp = qUp, qValue = qValue)
+  
+    __obj.asInstanceOf[NxPivotDimensioncell]
+  }
+}
+

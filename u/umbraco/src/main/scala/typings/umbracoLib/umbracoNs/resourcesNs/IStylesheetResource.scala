@@ -75,3 +75,16 @@ trait IStylesheetResource extends js.Object {
   def getRulesByName(name: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object IStylesheetResource {
+  @scala.inline
+  def apply(
+    getAll: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getRules: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getRulesByName: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+  ): IStylesheetResource = {
+    val __obj = js.Dynamic.literal(getAll = getAll, getRules = getRules, getRulesByName = getRulesByName)
+  
+    __obj.asInstanceOf[IStylesheetResource]
+  }
+}
+

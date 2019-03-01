@@ -10,3 +10,15 @@ trait PortFromElm[V] extends js.Object {
   def unsubscribe(handler: js.Function1[/* value */ V, scala.Unit]): scala.Unit
 }
 
+object PortFromElm {
+  @scala.inline
+  def apply[V](
+    subscribe: js.Function1[js.Function1[/* value */ V, scala.Unit], scala.Unit],
+    unsubscribe: js.Function1[js.Function1[/* value */ V, scala.Unit], scala.Unit]
+  ): PortFromElm[V] = {
+    val __obj = js.Dynamic.literal(subscribe = subscribe, unsubscribe = unsubscribe)
+  
+    __obj.asInstanceOf[PortFromElm[V]]
+  }
+}
+

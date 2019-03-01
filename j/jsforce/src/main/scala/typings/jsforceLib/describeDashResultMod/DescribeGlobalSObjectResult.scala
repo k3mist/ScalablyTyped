@@ -32,3 +32,37 @@ trait DescribeGlobalSObjectResult extends js.Object {
   var urls: stdLib.Record[java.lang.String, java.lang.String]
 }
 
+object DescribeGlobalSObjectResult {
+  @scala.inline
+  def apply(
+    activateable: scala.Boolean,
+    createable: scala.Boolean,
+    custom: scala.Boolean,
+    customSetting: scala.Boolean,
+    deletable: scala.Boolean,
+    deprecatedAndHidden: scala.Boolean,
+    feedEnabled: scala.Boolean,
+    hasSubtypes: scala.Boolean,
+    isSubtype: scala.Boolean,
+    label: java.lang.String,
+    labelPlural: java.lang.String,
+    layoutable: scala.Boolean,
+    mergeable: scala.Boolean,
+    mruEnabled: scala.Boolean,
+    name: java.lang.String,
+    queryable: scala.Boolean,
+    replicateable: scala.Boolean,
+    retrieveable: scala.Boolean,
+    searchable: scala.Boolean,
+    triggerable: scala.Boolean,
+    undeletable: scala.Boolean,
+    updateable: scala.Boolean,
+    urls: stdLib.Record[java.lang.String, java.lang.String],
+    keyPrefix: java.lang.String = null
+  ): DescribeGlobalSObjectResult = {
+    val __obj = js.Dynamic.literal(activateable = activateable, createable = createable, custom = custom, customSetting = customSetting, deletable = deletable, deprecatedAndHidden = deprecatedAndHidden, feedEnabled = feedEnabled, hasSubtypes = hasSubtypes, isSubtype = isSubtype, label = label, labelPlural = labelPlural, layoutable = layoutable, mergeable = mergeable, mruEnabled = mruEnabled, name = name, queryable = queryable, replicateable = replicateable, retrieveable = retrieveable, searchable = searchable, triggerable = triggerable, undeletable = undeletable, updateable = updateable, urls = urls)
+    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
+    __obj.asInstanceOf[DescribeGlobalSObjectResult]
+  }
+}
+

@@ -79,3 +79,21 @@ trait Composite extends js.Object {
   var `type`: java.lang.String
 }
 
+object Composite {
+  @scala.inline
+  def apply(
+    bodies: js.Array[Body],
+    composites: js.Array[Composite],
+    constraints: js.Array[Constraint],
+    id: scala.Double,
+    isModified: scala.Boolean,
+    label: java.lang.String,
+    parent: Composite,
+    `type`: java.lang.String
+  ): Composite = {
+    val __obj = js.Dynamic.literal(bodies = bodies, composites = composites, constraints = constraints, id = id, isModified = isModified, label = label, parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Composite]
+  }
+}
+

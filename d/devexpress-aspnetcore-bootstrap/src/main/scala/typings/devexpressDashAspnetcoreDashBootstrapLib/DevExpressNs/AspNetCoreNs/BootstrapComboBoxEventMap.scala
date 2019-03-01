@@ -23,3 +23,33 @@ trait BootstrapComboBoxEventMap extends BootstrapClientEditEventMap {
   var userInput: EventArgs
 }
 
+object BootstrapComboBoxEventMap {
+  @scala.inline
+  def apply(
+    beginCallback: BeginCallbackEventArgs,
+    buttonClick: ButtonEditClickEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    closeUp: EventArgs,
+    customHighlighting: ListEditCustomHighlightingEventArgs,
+    dropDown: EventArgs,
+    endCallback: EndCallbackEventArgs,
+    gotFocus: EventArgs,
+    init: EventArgs,
+    itemFiltering: ListEditItemFilteringEventArgs,
+    keyDown: EditKeyEventArgs,
+    keyPress: EditKeyEventArgs,
+    keyUp: EditKeyEventArgs,
+    lostFocus: EventArgs,
+    queryCloseUp: CancelEventArgs,
+    selectedIndexChanged: ProcessingModeEventArgs,
+    textChanged: ProcessingModeEventArgs,
+    userInput: EventArgs,
+    validation: EditValidationEventArgs,
+    valueChanged: ProcessingModeEventArgs
+  ): BootstrapComboBoxEventMap = {
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, buttonClick = buttonClick, callbackError = callbackError, closeUp = closeUp, customHighlighting = customHighlighting, dropDown = dropDown, endCallback = endCallback, gotFocus = gotFocus, init = init, itemFiltering = itemFiltering, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, queryCloseUp = queryCloseUp, selectedIndexChanged = selectedIndexChanged, textChanged = textChanged, userInput = userInput, validation = validation, valueChanged = valueChanged)
+  
+    __obj.asInstanceOf[BootstrapComboBoxEventMap]
+  }
+}
+

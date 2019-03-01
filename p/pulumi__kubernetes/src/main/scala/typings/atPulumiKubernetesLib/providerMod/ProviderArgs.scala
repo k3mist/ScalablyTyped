@@ -24,3 +24,20 @@ trait ProviderArgs extends js.Object {
   val namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ProviderArgs {
+  @scala.inline
+  def apply(
+    cluster: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    context: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    kubeconfig: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ProviderArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (kubeconfig != null) __obj.updateDynamic("kubeconfig")(kubeconfig.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProviderArgs]
+  }
+}
+

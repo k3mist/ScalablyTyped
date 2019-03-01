@@ -19,3 +19,18 @@ trait AccessMapping extends js.Object {
   var virtualDirectory: java.lang.String
 }
 
+object AccessMapping {
+  @scala.inline
+  def apply(
+    accessPoint: java.lang.String,
+    displayName: java.lang.String,
+    moniker: java.lang.String,
+    serviceOwner: java.lang.String,
+    virtualDirectory: java.lang.String
+  ): AccessMapping = {
+    val __obj = js.Dynamic.literal(accessPoint = accessPoint, displayName = displayName, moniker = moniker, serviceOwner = serviceOwner, virtualDirectory = virtualDirectory)
+  
+    __obj.asInstanceOf[AccessMapping]
+  }
+}
+

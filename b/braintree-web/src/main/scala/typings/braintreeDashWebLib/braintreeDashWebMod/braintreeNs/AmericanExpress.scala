@@ -68,3 +68,17 @@ trait AmericanExpress extends js.Object {
   def getRewardsBalance(options: braintreeDashWebLib.Anon_Nonce, callback: callback): scala.Unit
 }
 
+object AmericanExpress {
+  @scala.inline
+  def apply(
+    VERSION: java.lang.String,
+    create: js.Function2[braintreeDashWebLib.Anon_Client, callback, scala.Unit],
+    getExpressCheckoutProfile: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit],
+    getRewardsBalance: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit]
+  ): AmericanExpress = {
+    val __obj = js.Dynamic.literal(VERSION = VERSION, create = create, getExpressCheckoutProfile = getExpressCheckoutProfile, getRewardsBalance = getRewardsBalance)
+  
+    __obj.asInstanceOf[AmericanExpress]
+  }
+}
+

@@ -18,3 +18,23 @@ trait WorkItemBehavior extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemBehavior {
+  @scala.inline
+  def apply(
+    `abstract`: scala.Boolean,
+    color: java.lang.String,
+    description: java.lang.String,
+    fields: js.Array[WorkItemBehaviorField],
+    id: java.lang.String,
+    inherits: WorkItemBehaviorReference,
+    name: java.lang.String,
+    overriden: scala.Boolean,
+    rank: scala.Double,
+    url: java.lang.String
+  ): WorkItemBehavior = {
+    val __obj = js.Dynamic.literal(`abstract` = `abstract`, color = color, description = description, fields = fields, id = id, inherits = inherits, name = name, overriden = overriden, rank = rank, url = url)
+  
+    __obj.asInstanceOf[WorkItemBehavior]
+  }
+}
+

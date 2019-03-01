@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexSignature
 }
 
+object TSIndexSignature {
+  @scala.inline
+  def apply(
+    parameters: js.Array[astDashTypesLib.genKindsMod.IdentifierKind],
+    readonly: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexSignature,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): TSIndexSignature = {
+    val __obj = js.Dynamic.literal(parameters = parameters, readonly = readonly, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.asInstanceOf[TSIndexSignature]
+  }
+}
+

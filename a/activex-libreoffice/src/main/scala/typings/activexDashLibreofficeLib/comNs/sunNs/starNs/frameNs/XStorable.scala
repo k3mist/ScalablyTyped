@@ -83,3 +83,31 @@ trait XStorable
   ): scala.Unit
 }
 
+object XStorable {
+  @scala.inline
+  def apply(
+    Location: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getLocation: js.Function0[java.lang.String],
+    hasLocation: js.Function0[scala.Boolean],
+    isReadonly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    store: js.Function0[scala.Unit],
+    storeAsURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeToURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XStorable = {
+    val __obj = js.Dynamic.literal(Location = Location, acquire = acquire, getLocation = getLocation, hasLocation = hasLocation, isReadonly = isReadonly, queryInterface = queryInterface, release = release, store = store, storeAsURL = storeAsURL, storeToURL = storeToURL)
+  
+    __obj.asInstanceOf[XStorable]
+  }
+}
+

@@ -20,3 +20,12 @@ trait Anon_AddGlobalClass extends js.Object {
   var multipleSlots: scala.Boolean
 }
 
+object Anon_AddGlobalClass {
+  @scala.inline
+  def apply(addGlobalClass: scala.Boolean, multipleSlots: scala.Boolean): Anon_AddGlobalClass = {
+    val __obj = js.Dynamic.literal(addGlobalClass = addGlobalClass, multipleSlots = multipleSlots)
+  
+    __obj.asInstanceOf[Anon_AddGlobalClass]
+  }
+}
+

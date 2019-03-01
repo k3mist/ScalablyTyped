@@ -14,3 +14,21 @@ trait PartialBlockStatement extends Node {
   var program: Program
 }
 
+object PartialBlockStatement {
+  @scala.inline
+  def apply(
+    closeStrip: StripFlags,
+    hash: Hash,
+    loc: SourceLocation,
+    name: PathExpression | SubExpression,
+    openStrip: StripFlags,
+    params: js.Array[Expression],
+    program: Program,
+    `type`: java.lang.String
+  ): PartialBlockStatement = {
+    val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, loc = loc, name = name.asInstanceOf[js.Any], openStrip = openStrip, params = params, program = program, `type` = `type`)
+  
+    __obj.asInstanceOf[PartialBlockStatement]
+  }
+}
+

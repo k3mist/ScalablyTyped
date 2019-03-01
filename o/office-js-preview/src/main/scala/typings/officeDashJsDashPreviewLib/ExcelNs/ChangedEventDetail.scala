@@ -47,3 +47,17 @@ trait ChangedEventDetail extends js.Object {
   var valueTypeBefore: RangeValueType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Integer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Error | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichValue
 }
 
+object ChangedEventDetail {
+  @scala.inline
+  def apply(
+    valueAfter: js.Any,
+    valueBefore: js.Any,
+    valueTypeAfter: RangeValueType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Integer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Error | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichValue,
+    valueTypeBefore: RangeValueType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Integer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Error | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichValue
+  ): ChangedEventDetail = {
+    val __obj = js.Dynamic.literal(valueAfter = valueAfter, valueBefore = valueBefore, valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ChangedEventDetail]
+  }
+}
+

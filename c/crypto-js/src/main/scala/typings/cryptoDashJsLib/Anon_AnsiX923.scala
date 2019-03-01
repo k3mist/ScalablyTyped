@@ -14,3 +14,19 @@ trait Anon_AnsiX923 extends js.Object {
   var ZeroPadding: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding
 }
 
+object Anon_AnsiX923 {
+  @scala.inline
+  def apply(
+    AnsiX923: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
+    Iso10126: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
+    Iso97971: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
+    NoPadding: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
+    Pkcs7: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
+    ZeroPadding: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding
+  ): Anon_AnsiX923 = {
+    val __obj = js.Dynamic.literal(AnsiX923 = AnsiX923, Iso10126 = Iso10126, Iso97971 = Iso97971, NoPadding = NoPadding, Pkcs7 = Pkcs7, ZeroPadding = ZeroPadding)
+  
+    __obj.asInstanceOf[Anon_AnsiX923]
+  }
+}
+

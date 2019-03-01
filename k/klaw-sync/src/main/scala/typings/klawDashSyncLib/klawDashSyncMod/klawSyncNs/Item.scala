@@ -10,3 +10,12 @@ trait Item extends js.Object {
   var stats: nodeLib.fsMod.Stats
 }
 
+object Item {
+  @scala.inline
+  def apply(path: java.lang.String, stats: nodeLib.fsMod.Stats): Item = {
+    val __obj = js.Dynamic.literal(path = path, stats = stats)
+  
+    __obj.asInstanceOf[Item]
+  }
+}
+

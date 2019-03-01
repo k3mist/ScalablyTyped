@@ -16,3 +16,21 @@ trait Anon_ColumnFilenameIsListLineno extends js.Object {
   var preserve: scala.Boolean
 }
 
+object Anon_ColumnFilenameIsListLineno {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    isList: scala.Boolean,
+    lineno: scala.Double,
+    map: stylusLib.stylusMod.StylusNs.Dictionary[stylusLib.stylusMod.StylusNs.NodesNs.Node],
+    nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node],
+    preserve: scala.Boolean
+  ): Anon_ColumnFilenameIsListLineno = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, isList = isList, lineno = lineno, map = map, nodes = nodes, preserve = preserve)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameIsListLineno]
+  }
+}
+

@@ -25,3 +25,20 @@ trait XDatabaseRegistrationsListener
   def revokedDatabaseLocation(Event: DatabaseRegistrationEvent): scala.Unit
 }
 
+object XDatabaseRegistrationsListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    changedDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registeredDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit],
+    release: js.Function0[scala.Unit],
+    revokedDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit]
+  ): XDatabaseRegistrationsListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, changedDatabaseLocation = changedDatabaseLocation, disposing = disposing, queryInterface = queryInterface, registeredDatabaseLocation = registeredDatabaseLocation, release = release, revokedDatabaseLocation = revokedDatabaseLocation)
+  
+    __obj.asInstanceOf[XDatabaseRegistrationsListener]
+  }
+}
+

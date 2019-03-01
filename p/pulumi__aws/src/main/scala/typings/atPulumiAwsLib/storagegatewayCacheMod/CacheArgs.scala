@@ -16,3 +16,15 @@ trait CacheArgs extends js.Object {
   val gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object CacheArgs {
+  @scala.inline
+  def apply(
+    diskId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): CacheArgs = {
+    val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CacheArgs]
+  }
+}
+

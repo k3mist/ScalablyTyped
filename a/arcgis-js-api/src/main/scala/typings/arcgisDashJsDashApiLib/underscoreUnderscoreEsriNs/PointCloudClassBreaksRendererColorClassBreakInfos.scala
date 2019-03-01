@@ -33,3 +33,20 @@ trait PointCloudClassBreaksRendererColorClassBreakInfos
   var minValue: scala.Double
 }
 
+object PointCloudClassBreaksRendererColorClassBreakInfos {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String = null
+  ): PointCloudClassBreaksRendererColorClassBreakInfos = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[PointCloudClassBreaksRendererColorClassBreakInfos]
+  }
+}
+

@@ -12,3 +12,17 @@ trait SanitizeAttributeHookEvent extends js.Object {
   var keepAttr: scala.Boolean
 }
 
+object SanitizeAttributeHookEvent {
+  @scala.inline
+  def apply(
+    allowedAttributes: js.Array[java.lang.String],
+    attrName: java.lang.String,
+    attrValue: java.lang.String,
+    keepAttr: scala.Boolean
+  ): SanitizeAttributeHookEvent = {
+    val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes, attrName = attrName, attrValue = attrValue, keepAttr = keepAttr)
+  
+    __obj.asInstanceOf[SanitizeAttributeHookEvent]
+  }
+}
+

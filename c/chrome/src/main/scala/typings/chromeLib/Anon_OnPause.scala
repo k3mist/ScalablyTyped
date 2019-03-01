@@ -12,3 +12,17 @@ trait Anon_OnPause extends js.Object {
   var onStop: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
 }
 
+object Anon_OnPause {
+  @scala.inline
+  def apply(
+    onPause: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]],
+    onResume: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]],
+    onSpeak: chromeLib.chromeNs.ttsEngineNs.TtsEngineSpeakEvent,
+    onStop: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
+  ): Anon_OnPause = {
+    val __obj = js.Dynamic.literal(onPause = onPause, onResume = onResume, onSpeak = onSpeak, onStop = onStop)
+  
+    __obj.asInstanceOf[Anon_OnPause]
+  }
+}
+

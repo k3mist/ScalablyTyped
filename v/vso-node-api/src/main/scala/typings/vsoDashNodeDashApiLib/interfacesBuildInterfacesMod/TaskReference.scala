@@ -20,3 +20,12 @@ trait TaskReference extends js.Object {
   var version: java.lang.String
 }
 
+object TaskReference {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, version: java.lang.String): TaskReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name, version = version)
+  
+    __obj.asInstanceOf[TaskReference]
+  }
+}
+

@@ -11,3 +11,12 @@ trait IPluginOption extends js.Object {
   var options: js.Any
 }
 
+object IPluginOption {
+  @scala.inline
+  def apply(name: java.lang.String, options: js.Any): IPluginOption = {
+    val __obj = js.Dynamic.literal(name = name, options = options)
+  
+    __obj.asInstanceOf[IPluginOption]
+  }
+}
+

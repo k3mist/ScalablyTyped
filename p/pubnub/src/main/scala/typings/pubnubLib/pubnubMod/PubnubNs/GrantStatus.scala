@@ -11,3 +11,12 @@ trait GrantStatus extends js.Object {
   var statusCode: scala.Double
 }
 
+object GrantStatus {
+  @scala.inline
+  def apply(error: scala.Boolean, operation: java.lang.String, statusCode: scala.Double): GrantStatus = {
+    val __obj = js.Dynamic.literal(error = error, operation = operation, statusCode = statusCode)
+  
+    __obj.asInstanceOf[GrantStatus]
+  }
+}
+

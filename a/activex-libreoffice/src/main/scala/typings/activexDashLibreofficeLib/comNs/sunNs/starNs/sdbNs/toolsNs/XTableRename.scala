@@ -23,3 +23,23 @@ trait XTableRename extends XConnectionSupplier {
   ): scala.Unit
 }
 
+object XTableRename {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    acquire: js.Function0[scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    rename: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      scala.Unit
+    ]
+  ): XTableRename = {
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, initialize = initialize, queryInterface = queryInterface, release = release, rename = rename)
+  
+    __obj.asInstanceOf[XTableRename]
+  }
+}
+

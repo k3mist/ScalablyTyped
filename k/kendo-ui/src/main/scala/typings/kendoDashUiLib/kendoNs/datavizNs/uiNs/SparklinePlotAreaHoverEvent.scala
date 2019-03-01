@@ -12,3 +12,23 @@ trait SparklinePlotAreaHoverEvent extends SparklineEvent {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SparklinePlotAreaHoverEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Sparkline,
+    category: js.Any = null,
+    element: js.Any = null,
+    originalEvent: js.Any = null,
+    value: js.Any = null
+  ): SparklinePlotAreaHoverEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SparklinePlotAreaHoverEvent]
+  }
+}
+

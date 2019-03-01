@@ -12,3 +12,21 @@ trait XComponentRegistry
   def createObject(URL: java.lang.String, Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XComponentRegistry {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createObject: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XComponentRegistry = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createObject = createObject, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XComponentRegistry]
+  }
+}
+

@@ -58,3 +58,39 @@ trait LocatorSearchSource extends SearchSource {
   var singleLineFieldName: java.lang.String
 }
 
+object LocatorSearchSource {
+  @scala.inline
+  def apply(
+    autoNavigate: scala.Boolean,
+    categories: js.Array[java.lang.String],
+    clone: js.Function0[LocatorSearchSource],
+    countryCode: java.lang.String,
+    filter: SearchSourceFilter,
+    localSearchOptions: LocatorSearchSourceLocalSearchOptions,
+    locationToAddressDistance: scala.Double,
+    locator: Locator,
+    maxResults: scala.Double,
+    maxSuggestions: scala.Double,
+    minSuggestCharacters: scala.Double,
+    name: java.lang.String,
+    outFields: js.Array[java.lang.String],
+    placeholder: java.lang.String,
+    popupEnabled: scala.Boolean,
+    popupTemplate: PopupTemplate,
+    prefix: java.lang.String,
+    resultGraphicEnabled: scala.Boolean,
+    resultSymbol: Symbol,
+    searchTemplate: java.lang.String,
+    singleLineFieldName: java.lang.String,
+    suffix: java.lang.String,
+    suggestionsEnabled: scala.Boolean,
+    toJSON: js.Function0[js.Any],
+    withinViewEnabled: scala.Boolean,
+    zoomScale: scala.Double
+  ): LocatorSearchSource = {
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = clone, countryCode = countryCode, filter = filter, localSearchOptions = localSearchOptions, locationToAddressDistance = locationToAddressDistance, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+  
+    __obj.asInstanceOf[LocatorSearchSource]
+  }
+}
+

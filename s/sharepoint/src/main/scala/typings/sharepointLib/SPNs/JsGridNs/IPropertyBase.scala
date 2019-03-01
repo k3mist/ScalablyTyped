@@ -16,3 +16,19 @@ trait IPropertyBase extends js.Object {
   def Update(dataValue: js.Any, localizedValue: java.lang.String): scala.Unit
 }
 
+object IPropertyBase {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IPropertyBase],
+    GetData: js.Function0[js.Any],
+    GetLocalized: js.Function0[java.lang.String],
+    HasDataValue: js.Function0[scala.Boolean],
+    HasLocalizedValue: js.Function0[scala.Boolean],
+    Update: js.Function2[js.Any, java.lang.String, scala.Unit]
+  ): IPropertyBase = {
+    val __obj = js.Dynamic.literal(Clone = Clone, GetData = GetData, GetLocalized = GetLocalized, HasDataValue = HasDataValue, HasLocalizedValue = HasLocalizedValue, Update = Update)
+  
+    __obj.asInstanceOf[IPropertyBase]
+  }
+}
+

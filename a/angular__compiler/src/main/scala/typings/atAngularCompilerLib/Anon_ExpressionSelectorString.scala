@@ -10,3 +10,15 @@ trait Anon_ExpressionSelectorString extends js.Object {
   var selector: java.lang.String
 }
 
+object Anon_ExpressionSelectorString {
+  @scala.inline
+  def apply(
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    selector: java.lang.String
+  ): Anon_ExpressionSelectorString = {
+    val __obj = js.Dynamic.literal(expression = expression, selector = selector)
+  
+    __obj.asInstanceOf[Anon_ExpressionSelectorString]
+  }
+}
+

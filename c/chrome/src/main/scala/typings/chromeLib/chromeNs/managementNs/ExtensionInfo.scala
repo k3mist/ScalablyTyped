@@ -100,3 +100,40 @@ trait ExtensionInfo extends js.Object {
   var version: java.lang.String
 }
 
+object ExtensionInfo {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    hostPermissions: js.Array[java.lang.String],
+    id: java.lang.String,
+    installType: java.lang.String,
+    isApp: scala.Boolean,
+    mayDisable: scala.Boolean,
+    name: java.lang.String,
+    offlineEnabled: scala.Boolean,
+    optionsUrl: java.lang.String,
+    permissions: js.Array[java.lang.String],
+    shortName: java.lang.String,
+    `type`: java.lang.String,
+    version: java.lang.String,
+    appLaunchUrl: java.lang.String = null,
+    availableLaunchTypes: js.Array[java.lang.String] = null,
+    disabledReason: java.lang.String = null,
+    homepageUrl: java.lang.String = null,
+    icons: js.Array[IconInfo] = null,
+    launchType: java.lang.String = null,
+    updateUrl: java.lang.String = null
+  ): ExtensionInfo = {
+    val __obj = js.Dynamic.literal(description = description, enabled = enabled, hostPermissions = hostPermissions, id = id, installType = installType, isApp = isApp, mayDisable = mayDisable, name = name, offlineEnabled = offlineEnabled, optionsUrl = optionsUrl, permissions = permissions, shortName = shortName, `type` = `type`, version = version)
+    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl)
+    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes)
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (launchType != null) __obj.updateDynamic("launchType")(launchType)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    __obj.asInstanceOf[ExtensionInfo]
+  }
+}
+

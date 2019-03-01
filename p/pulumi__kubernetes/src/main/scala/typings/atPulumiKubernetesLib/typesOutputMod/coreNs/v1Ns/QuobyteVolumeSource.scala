@@ -35,3 +35,18 @@ trait QuobyteVolumeSource extends js.Object {
   val volume: java.lang.String
 }
 
+object QuobyteVolumeSource {
+  @scala.inline
+  def apply(
+    group: java.lang.String,
+    readOnly: scala.Boolean,
+    registry: java.lang.String,
+    user: java.lang.String,
+    volume: java.lang.String
+  ): QuobyteVolumeSource = {
+    val __obj = js.Dynamic.literal(group = group, readOnly = readOnly, registry = registry, user = user, volume = volume)
+  
+    __obj.asInstanceOf[QuobyteVolumeSource]
+  }
+}
+

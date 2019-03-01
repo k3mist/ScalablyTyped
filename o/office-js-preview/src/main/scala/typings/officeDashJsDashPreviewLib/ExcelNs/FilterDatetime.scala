@@ -28,3 +28,15 @@ trait FilterDatetime extends js.Object {
   var specificity: FilterDatetimeSpecificity | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Year | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Month | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Day | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hour | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Minute | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Second
 }
 
+object FilterDatetime {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    specificity: FilterDatetimeSpecificity | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Year | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Month | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Day | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hour | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Minute | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Second
+  ): FilterDatetime = {
+    val __obj = js.Dynamic.literal(date = date, specificity = specificity.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[FilterDatetime]
+  }
+}
+

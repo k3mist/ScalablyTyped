@@ -22,3 +22,19 @@ trait X3DDefaultSetter
   def setDefaultRotation(): scala.Unit
 }
 
+object X3DDefaultSetter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    set3DSettingsToDefault: js.Function0[scala.Unit],
+    setDefaultIllumination: js.Function0[scala.Unit],
+    setDefaultRotation: js.Function0[scala.Unit]
+  ): X3DDefaultSetter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, set3DSettingsToDefault = set3DSettingsToDefault, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation)
+  
+    __obj.asInstanceOf[X3DDefaultSetter]
+  }
+}
+

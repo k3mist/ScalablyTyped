@@ -12,3 +12,17 @@ trait CommandHelpSchemaFootnoteLink extends CommandHelpSchemaFootnote {
   val url: java.lang.String
 }
 
+object CommandHelpSchemaFootnoteLink {
+  @scala.inline
+  def apply(
+    id: java.lang.String | scala.Double,
+    `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.link,
+    url: java.lang.String,
+    shortUrl: java.lang.String = null
+  ): CommandHelpSchemaFootnoteLink = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], `type` = `type`, url = url)
+    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl)
+    __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
+  }
+}
+

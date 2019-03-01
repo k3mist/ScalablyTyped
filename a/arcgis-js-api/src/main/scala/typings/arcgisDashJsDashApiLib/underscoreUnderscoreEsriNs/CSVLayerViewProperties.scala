@@ -20,3 +20,18 @@ trait CSVLayerViewProperties extends LayerViewProperties {
   var maximumNumberOfFeaturesExceeded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CSVLayerViewProperties {
+  @scala.inline
+  def apply(
+    maximumNumberOfFeatures: scala.Int | scala.Double = null,
+    maximumNumberOfFeaturesExceeded: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): CSVLayerViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (maximumNumberOfFeatures != null) __obj.updateDynamic("maximumNumberOfFeatures")(maximumNumberOfFeatures.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumNumberOfFeaturesExceeded)) __obj.updateDynamic("maximumNumberOfFeaturesExceeded")(maximumNumberOfFeaturesExceeded)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[CSVLayerViewProperties]
+  }
+}
+

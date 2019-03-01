@@ -23,3 +23,24 @@ trait PlaylistBaseObject extends js.Object {
   var uri: java.lang.String
 }
 
+object PlaylistBaseObject {
+  @scala.inline
+  def apply(
+    collaborative: scala.Boolean,
+    external_urls: ExternalUrlObject,
+    href: java.lang.String,
+    id: java.lang.String,
+    images: js.Array[ImageObject],
+    name: java.lang.String,
+    owner: UserObjectPublic,
+    public: scala.Boolean,
+    snapshot_id: java.lang.String,
+    `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.playlist,
+    uri: java.lang.String
+  ): PlaylistBaseObject = {
+    val __obj = js.Dynamic.literal(collaborative = collaborative, external_urls = external_urls, href = href, id = id, images = images, name = name, owner = owner, public = public, snapshot_id = snapshot_id, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[PlaylistBaseObject]
+  }
+}
+

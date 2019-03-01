@@ -11,3 +11,13 @@ trait LinkedNode extends js.Object {
   def length(): scala.Double
 }
 
+object LinkedNode {
+  @scala.inline
+  def apply(length: js.Function0[scala.Double], next: LinkedNode = null, prev: LinkedNode = null): LinkedNode = {
+    val __obj = js.Dynamic.literal(length = length)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    __obj.asInstanceOf[LinkedNode]
+  }
+}
+

@@ -28,3 +28,18 @@ trait Anon_Favorites extends js.Object {
   var watchLater: java.lang.String
 }
 
+object Anon_Favorites {
+  @scala.inline
+  def apply(
+    favorites: java.lang.String,
+    likes: java.lang.String,
+    uploads: java.lang.String,
+    watchHistory: java.lang.String,
+    watchLater: java.lang.String
+  ): Anon_Favorites = {
+    val __obj = js.Dynamic.literal(favorites = favorites, likes = likes, uploads = uploads, watchHistory = watchHistory, watchLater = watchLater)
+  
+    __obj.asInstanceOf[Anon_Favorites]
+  }
+}
+

@@ -35,3 +35,25 @@ trait XCoordinateSystem
   def setAxisByDimension(nDimension: scala.Double, xAxis: XAxis, nIndex: scala.Double): scala.Unit
 }
 
+object XCoordinateSystem {
+  @scala.inline
+  def apply(
+    CoordinateSystemType: java.lang.String,
+    Dimension: scala.Double,
+    ViewServiceName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAxisByDimension: js.Function2[scala.Double, scala.Double, XAxis],
+    getCoordinateSystemType: js.Function0[java.lang.String],
+    getDimension: js.Function0[scala.Double],
+    getMaximumAxisIndexByDimension: js.Function1[scala.Double, scala.Double],
+    getViewServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAxisByDimension: js.Function3[scala.Double, XAxis, scala.Double, scala.Unit]
+  ): XCoordinateSystem = {
+    val __obj = js.Dynamic.literal(CoordinateSystemType = CoordinateSystemType, Dimension = Dimension, ViewServiceName = ViewServiceName, acquire = acquire, getAxisByDimension = getAxisByDimension, getCoordinateSystemType = getCoordinateSystemType, getDimension = getDimension, getMaximumAxisIndexByDimension = getMaximumAxisIndexByDimension, getViewServiceName = getViewServiceName, queryInterface = queryInterface, release = release, setAxisByDimension = setAxisByDimension)
+  
+    __obj.asInstanceOf[XCoordinateSystem]
+  }
+}
+

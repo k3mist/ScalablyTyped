@@ -13,3 +13,18 @@ trait LexDialogActionClose
   var type_LexDialogActionClose: awsDashLambdaLib.awsDashLambdaLibStrings.Close
 }
 
+object LexDialogActionClose {
+  @scala.inline
+  def apply(
+    fulfillmentState: awsDashLambdaLib.awsDashLambdaLibStrings.Fulfilled | awsDashLambdaLib.awsDashLambdaLibStrings.Failed,
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Close,
+    message: awsDashLambdaLib.Anon_Content = null,
+    responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
+  ): LexDialogActionClose = {
+    val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any], `type` = `type`)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.asInstanceOf[LexDialogActionClose]
+  }
+}
+

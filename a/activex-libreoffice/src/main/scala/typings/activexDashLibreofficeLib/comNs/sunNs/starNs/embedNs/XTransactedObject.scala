@@ -14,3 +14,18 @@ trait XTransactedObject
   def revert(): scala.Unit
 }
 
+object XTransactedObject {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    commit: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    revert: js.Function0[scala.Unit]
+  ): XTransactedObject = {
+    val __obj = js.Dynamic.literal(acquire = acquire, commit = commit, queryInterface = queryInterface, release = release, revert = revert)
+  
+    __obj.asInstanceOf[XTransactedObject]
+  }
+}
+

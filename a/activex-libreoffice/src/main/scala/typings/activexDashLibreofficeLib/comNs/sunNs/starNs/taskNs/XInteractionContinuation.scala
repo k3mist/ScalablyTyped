@@ -19,3 +19,17 @@ trait XInteractionContinuation
   def select(): scala.Unit
 }
 
+object XInteractionContinuation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit]
+  ): XInteractionContinuation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, select = select)
+  
+    __obj.asInstanceOf[XInteractionContinuation]
+  }
+}
+

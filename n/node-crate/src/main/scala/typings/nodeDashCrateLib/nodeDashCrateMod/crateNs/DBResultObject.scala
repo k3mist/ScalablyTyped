@@ -13,3 +13,18 @@ trait DBResultObject extends js.Object {
   var rows: js.Array[js.Array[js.Object]]
 }
 
+object DBResultObject {
+  @scala.inline
+  def apply(
+    cols: js.Array[java.lang.String],
+    duration: scala.Double,
+    json: js.Array[js.Object],
+    rowcount: scala.Double,
+    rows: js.Array[js.Array[js.Object]]
+  ): DBResultObject = {
+    val __obj = js.Dynamic.literal(cols = cols, duration = duration, json = json, rowcount = rowcount, rows = rows)
+  
+    __obj.asInstanceOf[DBResultObject]
+  }
+}
+

@@ -147,3 +147,37 @@ trait INxDimensionInfo extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object INxDimensionInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: INxAttrDimInfo,
+    qAttrExprInfo: INxAttrExprInfo,
+    qCardinal: scala.Double,
+    qContinuousAxes: scala.Boolean,
+    qDerivedField: scala.Boolean,
+    qDimensionType: DimensionType,
+    qError: INxValidationError,
+    qFallbackTitle: java.lang.String,
+    qGroupFallbackTitles: js.Array[java.lang.String],
+    qGroupFieldDefs: js.Array[java.lang.String],
+    qGroupPos: scala.Double,
+    qGrouping: GroupingType,
+    qIsAutoFormat: scala.Boolean,
+    qIsCyclic: scala.Boolean,
+    qIsSemantic: scala.Boolean,
+    qLocked: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qNumFormat: FieldAttributesType,
+    qReverseSort: scala.Boolean,
+    qSortIndicator: SortIndicatorType,
+    qStateCounts: INxStateCounts,
+    qTags: js.Array[java.lang.String]
+  ): INxDimensionInfo = {
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qContinuousAxes = qContinuousAxes, qDerivedField = qDerivedField, qDimensionType = qDimensionType, qError = qError, qFallbackTitle = qFallbackTitle, qGroupFallbackTitles = qGroupFallbackTitles, qGroupFieldDefs = qGroupFieldDefs, qGroupPos = qGroupPos, qGrouping = qGrouping, qIsAutoFormat = qIsAutoFormat, qIsCyclic = qIsCyclic, qIsSemantic = qIsSemantic, qLocked = qLocked, qMax = qMax, qMin = qMin, qNumFormat = qNumFormat, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator, qStateCounts = qStateCounts, qTags = qTags)
+  
+    __obj.asInstanceOf[INxDimensionInfo]
+  }
+}
+

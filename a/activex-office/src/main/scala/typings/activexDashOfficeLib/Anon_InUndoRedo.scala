@@ -12,3 +12,17 @@ trait Anon_InUndoRedo extends js.Object {
   val OldParentNode: activexDashOfficeLib.OfficeNs.CustomXMLNode
 }
 
+object Anon_InUndoRedo {
+  @scala.inline
+  def apply(
+    InUndoRedo: scala.Boolean,
+    OldNextSibling: activexDashOfficeLib.OfficeNs.CustomXMLNode,
+    OldNode: activexDashOfficeLib.OfficeNs.CustomXMLNode,
+    OldParentNode: activexDashOfficeLib.OfficeNs.CustomXMLNode
+  ): Anon_InUndoRedo = {
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, OldNextSibling = OldNextSibling, OldNode = OldNode, OldParentNode = OldParentNode)
+  
+    __obj.asInstanceOf[Anon_InUndoRedo]
+  }
+}
+

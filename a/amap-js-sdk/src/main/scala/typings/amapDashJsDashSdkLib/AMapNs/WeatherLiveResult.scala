@@ -19,3 +19,23 @@ trait WeatherLiveResult extends js.Object {
   var windPower: scala.Double
 }
 
+object WeatherLiveResult {
+  @scala.inline
+  def apply(
+    adcode: java.lang.String,
+    city: java.lang.String,
+    humidity: java.lang.String,
+    info: java.lang.String,
+    province: java.lang.String,
+    reportTime: java.lang.String,
+    temperature: scala.Double,
+    weather: java.lang.String,
+    windDirection: java.lang.String,
+    windPower: scala.Double
+  ): WeatherLiveResult = {
+    val __obj = js.Dynamic.literal(adcode = adcode, city = city, humidity = humidity, info = info, province = province, reportTime = reportTime, temperature = temperature, weather = weather, windDirection = windDirection, windPower = windPower)
+  
+    __obj.asInstanceOf[WeatherLiveResult]
+  }
+}
+

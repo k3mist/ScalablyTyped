@@ -50,3 +50,26 @@ trait XConfiguration
   def removeResource(xResourceId: XResourceId): scala.Unit
 }
 
+object XConfiguration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addResource: js.Function1[XResourceId, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    getResources: js.Function3[
+      XResourceId, 
+      java.lang.String, 
+      AnchorBindingMode, 
+      activexDashInteropLib.SafeArray[XResourceId]
+    ],
+    hasResource: js.Function1[XResourceId, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeResource: js.Function1[XResourceId, scala.Unit]
+  ): XConfiguration = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addResource = addResource, createClone = createClone, getResources = getResources, hasResource = hasResource, queryInterface = queryInterface, release = release, removeResource = removeResource)
+  
+    __obj.asInstanceOf[XConfiguration]
+  }
+}
+

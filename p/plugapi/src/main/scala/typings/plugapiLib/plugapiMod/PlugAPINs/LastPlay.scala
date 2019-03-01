@@ -11,3 +11,12 @@ trait LastPlay extends js.Object {
   var score: Score
 }
 
+object LastPlay {
+  @scala.inline
+  def apply(dj: plugapiLib.plugapiMod.PlugAPINs.UserNs.DJ, media: Media, score: Score): LastPlay = {
+    val __obj = js.Dynamic.literal(dj = dj, media = media, score = score)
+  
+    __obj.asInstanceOf[LastPlay]
+  }
+}
+

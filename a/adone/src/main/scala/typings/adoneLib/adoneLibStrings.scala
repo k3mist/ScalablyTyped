@@ -24,7 +24,7 @@ object adoneLibStrings {
     extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `'` extends js.Object
+  sealed trait _quote extends js.Object
   
   @js.native
   sealed trait `( )` extends js.Object
@@ -2703,7 +2703,7 @@ object adoneLibStrings {
   @scala.inline
   def `!==`: `!==` = "!==".asInstanceOf[`!==`]
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def `( )`: `( )` = "( )".asInstanceOf[`( )`]
   @scala.inline

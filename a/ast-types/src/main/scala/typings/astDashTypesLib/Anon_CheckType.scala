@@ -14,3 +14,20 @@ trait Anon_CheckType extends js.Object {
   var trueType: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object Anon_CheckType {
+  @scala.inline
+  def apply(
+    checkType: astDashTypesLib.genKindsMod.TSTypeKind,
+    extendsType: astDashTypesLib.genKindsMod.TSTypeKind,
+    falseType: astDashTypesLib.genKindsMod.TSTypeKind,
+    trueType: astDashTypesLib.genKindsMod.TSTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CheckType = {
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, trueType = trueType)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CheckType]
+  }
+}
+

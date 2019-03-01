@@ -18,3 +18,19 @@ trait TripWaypoint extends Waypoint {
   var waypoint_index: scala.Double
 }
 
+object TripWaypoint {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    hint: java.lang.String,
+    location: Coordinate,
+    name: java.lang.String,
+    trips_index: scala.Double,
+    waypoint_index: scala.Double
+  ): TripWaypoint = {
+    val __obj = js.Dynamic.literal(distance = distance, hint = hint, location = location, name = name, trips_index = trips_index, waypoint_index = waypoint_index)
+  
+    __obj.asInstanceOf[TripWaypoint]
+  }
+}
+

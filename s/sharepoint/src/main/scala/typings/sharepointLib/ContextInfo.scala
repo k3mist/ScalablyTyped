@@ -84,3 +84,119 @@ trait ContextInfo
   def onRefreshFailed_MContextInfo(context: js.Any, requrest: js.Any, response: js.Any): scala.Unit
 }
 
+object ContextInfo {
+  @scala.inline
+  def apply(
+    AllowCreateFolder: scala.Boolean,
+    AllowGridMode: scala.Boolean,
+    BasePermissions: js.Any,
+    BaseViewID: js.Any,
+    CanShareLinkForNewDocument: scala.Boolean,
+    CascadeDeleteWarningMessage: java.lang.String,
+    ContentTypesEnabled: scala.Boolean,
+    CurrentSelectedItems: scala.Boolean,
+    CurrentUserId: scala.Double,
+    CurrentUserIsSiteAdmin: scala.Boolean,
+    EnableMinorVersions: scala.Boolean,
+    ExcludeFromOfflineClient: scala.Boolean,
+    ExternalDataList: scala.Boolean,
+    HasRelatedCascadeLists: scala.Boolean,
+    HttpPath: java.lang.String,
+    HttpRoot: java.lang.String,
+    IsAppWeb: scala.Boolean,
+    IsClientRendering: scala.Boolean,
+    LastRowIndexSelected: scala.Double,
+    LastSelectableRowIdx: scala.Double,
+    LastSelectedItemIID: scala.Double,
+    ListData: js.Any,
+    ListSchema: sharepointLib.SPClientTemplatesNs.ListSchema,
+    ListTitle: java.lang.String,
+    ModerationStatus: scala.Double,
+    NewWOPIDocumentEnabled: scala.Boolean,
+    NewWOPIDocumentUrl: java.lang.String,
+    PortalUrl: java.lang.String,
+    RecycleBinEnabled: scala.Double,
+    RowFocusTimerID: scala.Double,
+    SelectAllCbx: stdLib.HTMLElement,
+    SendToLocationName: java.lang.String,
+    SendToLocationUrl: java.lang.String,
+    SiteTemplateId: scala.Double,
+    SiteTitle: java.lang.String,
+    StateInitDone: scala.Boolean,
+    TableCbxFocusHandler: js.Function2[js.Any, js.Any, scala.Unit],
+    TableMouseoverHandler: js.Function2[js.Any, js.Any, scala.Unit],
+    TotalListItems: scala.Double,
+    WorkflowsAssociated: scala.Boolean,
+    clvp: js.Any,
+    ctxId: scala.Double,
+    ctxType: js.Any,
+    dictSel: js.Any,
+    displayFormUrl: java.lang.String,
+    editFormUrl: java.lang.String,
+    imagesPath: java.lang.String,
+    inGridFullRender: scala.Boolean,
+    inGridMode: scala.Boolean,
+    isForceCheckout: scala.Boolean,
+    isModerated: scala.Boolean,
+    isPortalTemplate: scala.Boolean,
+    isVersions: scala.Boolean,
+    isWebEditorPreview: scala.Boolean,
+    leavingGridMode: scala.Boolean,
+    listBaseType: scala.Double,
+    listName: java.lang.String,
+    listTemplate: java.lang.String,
+    listUrlDir: java.lang.String,
+    loadingAsyncData: scala.Boolean,
+    newFormUrl: java.lang.String,
+    noGroupCollapse: scala.Boolean,
+    onRefreshFailed: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    overrideDeleteConfirmation: java.lang.String,
+    overrideFilterQstring: java.lang.String,
+    queryString: java.lang.String,
+    recursiveView: scala.Boolean,
+    rootFolder: java.lang.String,
+    rootFolderForDisplay: java.lang.String,
+    serverUrl: java.lang.String,
+    verEnabled: scala.Boolean,
+    view: java.lang.String,
+    wpq: java.lang.String,
+    ControlMode: sharepointLib.SPClientTemplatesNs.ClientControlMode = null,
+    CurrentCultureName: java.lang.String = null,
+    CurrentLanguage: scala.Int | scala.Double = null,
+    CurrentUICultureName: java.lang.String = null,
+    ListTemplateType: scala.Int | scala.Double = null,
+    OnPostRender: sharepointLib.SPClientTemplatesNs.RenderCallback | js.Array[sharepointLib.SPClientTemplatesNs.RenderCallback] = null,
+    OnPreRender: sharepointLib.SPClientTemplatesNs.RenderCallback | js.Array[sharepointLib.SPClientTemplatesNs.RenderCallback] = null,
+    RenderBody: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderFieldByName: js.Function2[ContextInfo, /* fieldName */ java.lang.String, java.lang.String] = null,
+    RenderFields: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderFooter: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderGroups: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderHeader: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderItems: js.Function1[ContextInfo, java.lang.String] = null,
+    RenderView: js.Function1[ContextInfo, java.lang.String] = null,
+    SiteClientTag: java.lang.String = null,
+    Templates: sharepointLib.SPClientTemplatesNs.Templates = null
+  ): ContextInfo = {
+    val __obj = js.Dynamic.literal(AllowCreateFolder = AllowCreateFolder, AllowGridMode = AllowGridMode, BasePermissions = BasePermissions, BaseViewID = BaseViewID, CanShareLinkForNewDocument = CanShareLinkForNewDocument, CascadeDeleteWarningMessage = CascadeDeleteWarningMessage, ContentTypesEnabled = ContentTypesEnabled, CurrentSelectedItems = CurrentSelectedItems, CurrentUserId = CurrentUserId, CurrentUserIsSiteAdmin = CurrentUserIsSiteAdmin, EnableMinorVersions = EnableMinorVersions, ExcludeFromOfflineClient = ExcludeFromOfflineClient, ExternalDataList = ExternalDataList, HasRelatedCascadeLists = HasRelatedCascadeLists, HttpPath = HttpPath, HttpRoot = HttpRoot, IsAppWeb = IsAppWeb, IsClientRendering = IsClientRendering, LastRowIndexSelected = LastRowIndexSelected, LastSelectableRowIdx = LastSelectableRowIdx, LastSelectedItemIID = LastSelectedItemIID, ListData = ListData, ListSchema = ListSchema, ListTitle = ListTitle, ModerationStatus = ModerationStatus, NewWOPIDocumentEnabled = NewWOPIDocumentEnabled, NewWOPIDocumentUrl = NewWOPIDocumentUrl, PortalUrl = PortalUrl, RecycleBinEnabled = RecycleBinEnabled, RowFocusTimerID = RowFocusTimerID, SelectAllCbx = SelectAllCbx, SendToLocationName = SendToLocationName, SendToLocationUrl = SendToLocationUrl, SiteTemplateId = SiteTemplateId, SiteTitle = SiteTitle, StateInitDone = StateInitDone, TableCbxFocusHandler = TableCbxFocusHandler, TableMouseoverHandler = TableMouseoverHandler, TotalListItems = TotalListItems, WorkflowsAssociated = WorkflowsAssociated, clvp = clvp, ctxId = ctxId, ctxType = ctxType, dictSel = dictSel, displayFormUrl = displayFormUrl, editFormUrl = editFormUrl, imagesPath = imagesPath, inGridFullRender = inGridFullRender, inGridMode = inGridMode, isForceCheckout = isForceCheckout, isModerated = isModerated, isPortalTemplate = isPortalTemplate, isVersions = isVersions, isWebEditorPreview = isWebEditorPreview, leavingGridMode = leavingGridMode, listBaseType = listBaseType, listName = listName, listTemplate = listTemplate, listUrlDir = listUrlDir, loadingAsyncData = loadingAsyncData, newFormUrl = newFormUrl, noGroupCollapse = noGroupCollapse, onRefreshFailed = onRefreshFailed, overrideDeleteConfirmation = overrideDeleteConfirmation, overrideFilterQstring = overrideFilterQstring, queryString = queryString, recursiveView = recursiveView, rootFolder = rootFolder, rootFolderForDisplay = rootFolderForDisplay, serverUrl = serverUrl, verEnabled = verEnabled, view = view, wpq = wpq)
+    if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode)
+    if (CurrentCultureName != null) __obj.updateDynamic("CurrentCultureName")(CurrentCultureName)
+    if (CurrentLanguage != null) __obj.updateDynamic("CurrentLanguage")(CurrentLanguage.asInstanceOf[js.Any])
+    if (CurrentUICultureName != null) __obj.updateDynamic("CurrentUICultureName")(CurrentUICultureName)
+    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
+    if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
+    if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
+    if (RenderBody != null) __obj.updateDynamic("RenderBody")(RenderBody)
+    if (RenderFieldByName != null) __obj.updateDynamic("RenderFieldByName")(RenderFieldByName)
+    if (RenderFields != null) __obj.updateDynamic("RenderFields")(RenderFields)
+    if (RenderFooter != null) __obj.updateDynamic("RenderFooter")(RenderFooter)
+    if (RenderGroups != null) __obj.updateDynamic("RenderGroups")(RenderGroups)
+    if (RenderHeader != null) __obj.updateDynamic("RenderHeader")(RenderHeader)
+    if (RenderItems != null) __obj.updateDynamic("RenderItems")(RenderItems)
+    if (RenderView != null) __obj.updateDynamic("RenderView")(RenderView)
+    if (SiteClientTag != null) __obj.updateDynamic("SiteClientTag")(SiteClientTag)
+    if (Templates != null) __obj.updateDynamic("Templates")(Templates)
+    __obj.asInstanceOf[ContextInfo]
+  }
+}
+

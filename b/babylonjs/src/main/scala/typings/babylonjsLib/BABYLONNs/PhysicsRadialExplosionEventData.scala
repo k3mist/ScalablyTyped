@@ -20,3 +20,12 @@ trait PhysicsRadialExplosionEventData extends js.Object {
   var sphere: Mesh
 }
 
+object PhysicsRadialExplosionEventData {
+  @scala.inline
+  def apply(rays: js.Array[Ray], sphere: Mesh): PhysicsRadialExplosionEventData = {
+    val __obj = js.Dynamic.literal(rays = rays, sphere = sphere)
+  
+    __obj.asInstanceOf[PhysicsRadialExplosionEventData]
+  }
+}
+

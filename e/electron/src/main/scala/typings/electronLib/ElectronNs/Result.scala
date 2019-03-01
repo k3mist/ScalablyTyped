@@ -22,3 +22,18 @@ trait Result extends js.Object {
   var selectionArea: SelectionArea
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    activeMatchOrdinal: scala.Double,
+    finalUpdate: scala.Boolean,
+    matches: scala.Double,
+    requestId: scala.Double,
+    selectionArea: SelectionArea
+  ): Result = {
+    val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal, finalUpdate = finalUpdate, matches = matches, requestId = requestId, selectionArea = selectionArea)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

@@ -33,3 +33,22 @@ trait DialogContext extends js.Object {
   def removeHost(theDialog: Dialog): scala.Unit
 }
 
+object DialogContext {
+  @scala.inline
+  def apply(
+    addHost: js.Function1[Dialog, scala.Unit],
+    compositionComplete: js.Function3[
+      stdLib.HTMLElement, 
+      stdLib.HTMLElement, 
+      durandalLib.compositionMod.CompositionContext, 
+      scala.Unit
+    ],
+    removeHost: js.Function1[Dialog, scala.Unit],
+    blockoutOpacity: scala.Int | scala.Double = null
+  ): DialogContext = {
+    val __obj = js.Dynamic.literal(addHost = addHost, compositionComplete = compositionComplete, removeHost = removeHost)
+    if (blockoutOpacity != null) __obj.updateDynamic("blockoutOpacity")(blockoutOpacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogContext]
+  }
+}
+

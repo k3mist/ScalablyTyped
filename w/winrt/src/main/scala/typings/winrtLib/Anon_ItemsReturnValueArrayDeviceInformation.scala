@@ -10,3 +10,15 @@ trait Anon_ItemsReturnValueArrayDeviceInformation extends js.Object {
   var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueArrayDeviceInformation {
+  @scala.inline
+  def apply(
+    items: js.Array[winrtLib.WindowsNs.DevicesNs.EnumerationNs.DeviceInformation],
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueArrayDeviceInformation = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueArrayDeviceInformation]
+  }
+}
+

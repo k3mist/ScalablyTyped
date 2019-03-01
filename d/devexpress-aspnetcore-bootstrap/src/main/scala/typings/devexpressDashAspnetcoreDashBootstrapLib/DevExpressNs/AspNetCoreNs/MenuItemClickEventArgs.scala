@@ -11,3 +11,18 @@ trait MenuItemClickEventArgs extends ProcessingModeEventArgs {
   val item: BootstrapMenuItem
 }
 
+object MenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    item: BootstrapMenuItem,
+    processOnServer: scala.Boolean,
+    sender: Control
+  ): MenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer, sender = sender)
+  
+    __obj.asInstanceOf[MenuItemClickEventArgs]
+  }
+}
+

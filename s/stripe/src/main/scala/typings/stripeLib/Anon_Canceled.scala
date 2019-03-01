@@ -12,3 +12,12 @@ trait Anon_Canceled extends js.Object {
   var returned: scala.Double
 }
 
+object Anon_Canceled {
+  @scala.inline
+  def apply(canceled: scala.Double, fulfiled: scala.Double, paid: scala.Double, returned: scala.Double): Anon_Canceled = {
+    val __obj = js.Dynamic.literal(canceled = canceled, fulfiled = fulfiled, paid = paid, returned = returned)
+  
+    __obj.asInstanceOf[Anon_Canceled]
+  }
+}
+

@@ -25,3 +25,32 @@ trait RendererContext[K1, K2, K3, D1, D2, D3] extends js.Object {
   def renderDefaultSelection(): scala.Unit
 }
 
+object RendererContext {
+  @scala.inline
+  def apply[K1, K2, K3, D1, D2, D3](
+    color: java.lang.String,
+    componentElement: stdLib.Element,
+    data: js.Object,
+    id: K1 | K2 | K3,
+    itemData: D1 | D2 | D3,
+    label: java.lang.String,
+    parentElement: stdLib.Element,
+    previousState: atOracleOraclejetLib.Anon_Focused,
+    renderDefaultFocus: js.Function0[scala.Unit],
+    renderDefaultHover: js.Function0[scala.Unit],
+    renderDefaultSelection: js.Function0[scala.Unit],
+    state: atOracleOraclejetLib.Anon_Focused,
+    location: java.lang.String = null,
+    root: stdLib.Element = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): RendererContext[K1, K2, K3, D1, D2, D3] = {
+    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement, previousState = previousState, renderDefaultFocus = renderDefaultFocus, renderDefaultHover = renderDefaultHover, renderDefaultSelection = renderDefaultSelection, state = state)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RendererContext[K1, K2, K3, D1, D2, D3]]
+  }
+}
+

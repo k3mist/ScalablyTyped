@@ -17,3 +17,68 @@ trait AccessibleSlideViewObject
      with activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleEventBroadcaster
      with activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleComponent
 
+object AccessibleSlideViewObject {
+  @scala.inline
+  def apply(
+    AccessibleChildCount: scala.Double,
+    AccessibleContext: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleContext,
+    AccessibleDescription: java.lang.String,
+    AccessibleIndexInParent: scala.Double,
+    AccessibleName: java.lang.String,
+    AccessibleParent: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible,
+    AccessibleRelationSet: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleRelationSet,
+    AccessibleRole: scala.Double,
+    AccessibleStateSet: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleStateSet,
+    Background: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Bounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    Foreground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Location: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    LocationOnScreen: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    acquire: js.Function0[scala.Unit],
+    addAccessibleEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleEventListener, 
+      scala.Unit
+    ],
+    containsPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean],
+    getAccessibleAtPoint: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
+    ],
+    getAccessibleChild: js.Function1[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
+    ],
+    getAccessibleChildCount: js.Function0[scala.Double],
+    getAccessibleContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleContext],
+    getAccessibleDescription: js.Function0[java.lang.String],
+    getAccessibleIndexInParent: js.Function0[scala.Double],
+    getAccessibleName: js.Function0[java.lang.String],
+    getAccessibleParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible],
+    getAccessibleRelationSet: js.Function0[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleRelationSet
+    ],
+    getAccessibleRole: js.Function0[scala.Double],
+    getAccessibleStateSet: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleStateSet],
+    getBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getForeground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getLocation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getLocationOnScreen: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    grabFocus: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAccessibleEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessibleEventListener, 
+      scala.Unit
+    ]
+  ): AccessibleSlideViewObject = {
+    val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount, AccessibleContext = AccessibleContext, AccessibleDescription = AccessibleDescription, AccessibleIndexInParent = AccessibleIndexInParent, AccessibleName = AccessibleName, AccessibleParent = AccessibleParent, AccessibleRelationSet = AccessibleRelationSet, AccessibleRole = AccessibleRole, AccessibleStateSet = AccessibleStateSet, Background = Background, Bounds = Bounds, Foreground = Foreground, Locale = Locale, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, acquire = acquire, addAccessibleEventListener = addAccessibleEventListener, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getAccessibleChild = getAccessibleChild, getAccessibleChildCount = getAccessibleChildCount, getAccessibleContext = getAccessibleContext, getAccessibleDescription = getAccessibleDescription, getAccessibleIndexInParent = getAccessibleIndexInParent, getAccessibleName = getAccessibleName, getAccessibleParent = getAccessibleParent, getAccessibleRelationSet = getAccessibleRelationSet, getAccessibleRole = getAccessibleRole, getAccessibleStateSet = getAccessibleStateSet, getBackground = getBackground, getBounds = getBounds, getForeground = getForeground, getLocale = getLocale, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, grabFocus = grabFocus, queryInterface = queryInterface, release = release, removeAccessibleEventListener = removeAccessibleEventListener)
+  
+    __obj.asInstanceOf[AccessibleSlideViewObject]
+  }
+}
+

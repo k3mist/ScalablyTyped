@@ -17,3 +17,22 @@ trait RenameQuery extends BaseQueryWithFile {
   var type_RenameQuery: ternLib.ternLibStrings.rename
 }
 
+object RenameQuery {
+  @scala.inline
+  def apply(
+    end: scala.Double | Position,
+    file: java.lang.String,
+    newName: java.lang.String,
+    `type`: ternLib.ternLibStrings.rename,
+    docFormat: ternLib.ternLibStrings.full = null,
+    lineCharPositions: js.UndefOr[scala.Boolean] = js.undefined,
+    start: scala.Double | Position = null
+  ): RenameQuery = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file, newName = newName, `type` = `type`)
+    if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RenameQuery]
+  }
+}
+

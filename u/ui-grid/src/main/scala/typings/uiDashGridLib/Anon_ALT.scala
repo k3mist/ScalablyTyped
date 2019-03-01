@@ -46,3 +46,51 @@ trait Anon_ALT extends js.Object {
   var WIN: scala.Double
 }
 
+object Anon_ALT {
+  @scala.inline
+  def apply(
+    ALT: scala.Double,
+    ALTR: scala.Double,
+    ALTRIGHT: scala.Double,
+    BACKSPACE: scala.Double,
+    BCKSP: scala.Double,
+    CAPSLOCK: scala.Double,
+    CTRL: scala.Double,
+    CTRLR: scala.Double,
+    CTRLRIGHT: scala.Double,
+    DEL: scala.Double,
+    DOWN: scala.Double,
+    ENTER: scala.Double,
+    ESC: scala.Double,
+    F1: scala.Double,
+    F10: scala.Double,
+    F11: scala.Double,
+    F12: scala.Double,
+    F2: scala.Double,
+    F3: scala.Double,
+    F4: scala.Double,
+    F5: scala.Double,
+    F6: scala.Double,
+    F7: scala.Double,
+    F8: scala.Double,
+    F9: scala.Double,
+    FN: scala.Double,
+    LEFT: scala.Double,
+    MAC: scala.Double,
+    PG_DOWN: scala.Double,
+    PG_UP: scala.Double,
+    RETURN: scala.Double,
+    RIGHT: scala.Double,
+    SHIFT: scala.Double,
+    SPACE: scala.Double,
+    STRG: scala.Double,
+    TAB: scala.Double,
+    UP: scala.Double,
+    WIN: scala.Double
+  ): Anon_ALT = {
+    val __obj = js.Dynamic.literal(ALT = ALT, ALTR = ALTR, ALTRIGHT = ALTRIGHT, BACKSPACE = BACKSPACE, BCKSP = BCKSP, CAPSLOCK = CAPSLOCK, CTRL = CTRL, CTRLR = CTRLR, CTRLRIGHT = CTRLRIGHT, DEL = DEL, DOWN = DOWN, ENTER = ENTER, ESC = ESC, F1 = F1, F10 = F10, F11 = F11, F12 = F12, F2 = F2, F3 = F3, F4 = F4, F5 = F5, F6 = F6, F7 = F7, F8 = F8, F9 = F9, FN = FN, LEFT = LEFT, MAC = MAC, PG_DOWN = PG_DOWN, PG_UP = PG_UP, RETURN = RETURN, RIGHT = RIGHT, SHIFT = SHIFT, SPACE = SPACE, STRG = STRG, TAB = TAB, UP = UP, WIN = WIN)
+  
+    __obj.asInstanceOf[Anon_ALT]
+  }
+}
+

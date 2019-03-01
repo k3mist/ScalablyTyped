@@ -12,3 +12,16 @@ trait Anon_Is
   var `then`: js.Any
 }
 
+object Anon_Is {
+  @scala.inline
+  def apply(
+    is: scala.Boolean | (js.Function1[/* value */ js.Any, scala.Boolean]),
+    otherwise: js.Any,
+    `then`: js.Any
+  ): Anon_Is = {
+    val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any], otherwise = otherwise, `then` = `then`)
+  
+    __obj.asInstanceOf[Anon_Is]
+  }
+}
+

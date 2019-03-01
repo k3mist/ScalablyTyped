@@ -74,3 +74,31 @@ trait XIdlMethod extends XIdlMember {
   def invoke(obj: js.Any, args: js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]): js.Any
 }
 
+object XIdlMethod {
+  @scala.inline
+  def apply(
+    DeclaringClass: XIdlClass[_],
+    ExceptionTypes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    Mode: MethodMode,
+    Name: java.lang.String,
+    ParameterInfos: activexDashInteropLib.SafeArray[ParamInfo],
+    ParameterTypes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    ReturnType: XIdlClass[_],
+    acquire: js.Function0[scala.Unit],
+    getDeclaringClass: js.Function0[XIdlClass[_]],
+    getExceptionTypes: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getMode: js.Function0[MethodMode],
+    getName: js.Function0[java.lang.String],
+    getParameterInfos: js.Function0[activexDashInteropLib.SafeArray[ParamInfo]],
+    getParameterTypes: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getReturnType: js.Function0[XIdlClass[_]],
+    invoke: js.Function2[js.Any, js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdlMethod = {
+    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, ExceptionTypes = ExceptionTypes, Mode = Mode, Name = Name, ParameterInfos = ParameterInfos, ParameterTypes = ParameterTypes, ReturnType = ReturnType, acquire = acquire, getDeclaringClass = getDeclaringClass, getExceptionTypes = getExceptionTypes, getMode = getMode, getName = getName, getParameterInfos = getParameterInfos, getParameterTypes = getParameterTypes, getReturnType = getReturnType, invoke = invoke, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIdlMethod]
+  }
+}
+

@@ -144,3 +144,52 @@ trait _Impl extends js.Object {
   def onVisible(`this`: semanticDashUiDashModalLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    allowMultiple: scala.Boolean,
+    autofocus: scala.Boolean,
+    className: semanticDashUiDashModalLib.SemanticUINs.ModalNs.ClassNameSettings,
+    closable: scala.Boolean,
+    context: java.lang.String | semanticDashUiDashModalLib.JQuery,
+    debug: scala.Boolean,
+    detachable: scala.Boolean,
+    dimmerSettings: semanticDashUiDashDimmerLib.SemanticUINs.DimmerSettings,
+    duration: scala.Double,
+    error: semanticDashUiDashModalLib.SemanticUINs.ModalNs.ErrorSettings,
+    keyboardShortcuts: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    onApprove: js.Function2[
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
+    ],
+    onDeny: js.Function2[
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
+    ],
+    onHidden: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
+    onHide: js.Function2[
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.JQuery, 
+      semanticDashUiDashModalLib.semanticDashUiDashModalLibNumbers.`false` | scala.Unit
+    ],
+    onShow: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
+    onVisible: js.Function1[semanticDashUiDashModalLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    queue: scala.Boolean,
+    selector: semanticDashUiDashModalLib.SemanticUINs.ModalNs.SelectorSettings,
+    silent: scala.Boolean,
+    transition: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = onApprove, onDeny = onDeny, onHidden = onHidden, onHide = onHide, onShow = onShow, onVisible = onVisible, performance = performance, queue = queue, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

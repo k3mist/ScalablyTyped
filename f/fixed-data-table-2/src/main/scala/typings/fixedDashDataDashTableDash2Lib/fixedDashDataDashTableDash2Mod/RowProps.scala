@@ -14,3 +14,12 @@ trait RowProps extends js.Object {
   var width: scala.Double
 }
 
+object RowProps {
+  @scala.inline
+  def apply(height: scala.Double, rowIndex: scala.Double, width: scala.Double): RowProps = {
+    val __obj = js.Dynamic.literal(height = height, rowIndex = rowIndex, width = width)
+  
+    __obj.asInstanceOf[RowProps]
+  }
+}
+

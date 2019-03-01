@@ -13,3 +13,17 @@ trait Anon_Aggregate
   var name: java.lang.String
 }
 
+object Anon_Aggregate {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    groupby: java.lang.String | js.Array[java.lang.String],
+    name: java.lang.String,
+    aggregate: Anon_As = null
+  ): Anon_Aggregate = {
+    val __obj = js.Dynamic.literal(data = data, groupby = groupby.asInstanceOf[js.Any], name = name)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
+    __obj.asInstanceOf[Anon_Aggregate]
+  }
+}
+

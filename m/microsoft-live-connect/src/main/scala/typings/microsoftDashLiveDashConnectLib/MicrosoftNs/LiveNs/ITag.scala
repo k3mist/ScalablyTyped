@@ -40,3 +40,18 @@ trait ITag extends js.Object {
   var y: scala.Double
 }
 
+object ITag {
+  @scala.inline
+  def apply(
+    created_time: java.lang.String,
+    id: java.lang.String,
+    user: IUserInfo,
+    x: scala.Double,
+    y: scala.Double
+  ): ITag = {
+    val __obj = js.Dynamic.literal(created_time = created_time, id = id, user = user, x = x, y = y)
+  
+    __obj.asInstanceOf[ITag]
+  }
+}
+

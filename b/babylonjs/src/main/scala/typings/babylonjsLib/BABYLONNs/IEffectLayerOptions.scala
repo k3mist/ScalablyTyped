@@ -33,3 +33,18 @@ trait IEffectLayerOptions extends js.Object {
   var renderingGroupId: scala.Double
 }
 
+object IEffectLayerOptions {
+  @scala.inline
+  def apply(
+    alphaBlendingMode: scala.Double,
+    camera: Nullable[Camera],
+    mainTextureRatio: scala.Double,
+    renderingGroupId: scala.Double,
+    mainTextureFixedSize: scala.Int | scala.Double = null
+  ): IEffectLayerOptions = {
+    val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode, camera = camera.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio, renderingGroupId = renderingGroupId)
+    if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IEffectLayerOptions]
+  }
+}
+

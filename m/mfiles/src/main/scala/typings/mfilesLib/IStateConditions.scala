@@ -13,3 +13,18 @@ trait IStateConditions extends js.Object {
   def Clone(): IStateConditions
 }
 
+object IStateConditions {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IStateConditions],
+    PropertyConditions: scala.Boolean,
+    PropertyConditionsDefinition: ISearchConditions,
+    VBScript: scala.Boolean,
+    VBScriptDefinition: java.lang.String
+  ): IStateConditions = {
+    val __obj = js.Dynamic.literal(Clone = Clone, PropertyConditions = PropertyConditions, PropertyConditionsDefinition = PropertyConditionsDefinition, VBScript = VBScript, VBScriptDefinition = VBScriptDefinition)
+  
+    __obj.asInstanceOf[IStateConditions]
+  }
+}
+

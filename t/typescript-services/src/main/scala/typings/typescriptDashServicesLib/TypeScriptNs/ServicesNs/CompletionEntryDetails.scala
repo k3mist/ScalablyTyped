@@ -14,3 +14,19 @@ trait CompletionEntryDetails extends js.Object {
   var `type`: java.lang.String
 }
 
+object CompletionEntryDetails {
+  @scala.inline
+  def apply(
+    docComment: java.lang.String,
+    fullSymbolName: java.lang.String,
+    kind: java.lang.String,
+    kindModifiers: java.lang.String,
+    name: java.lang.String,
+    `type`: java.lang.String
+  ): CompletionEntryDetails = {
+    val __obj = js.Dynamic.literal(docComment = docComment, fullSymbolName = fullSymbolName, kind = kind, kindModifiers = kindModifiers, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[CompletionEntryDetails]
+  }
+}
+

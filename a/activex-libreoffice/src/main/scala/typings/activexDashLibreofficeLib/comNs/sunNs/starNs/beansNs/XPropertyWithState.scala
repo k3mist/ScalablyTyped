@@ -43,3 +43,21 @@ trait XPropertyWithState
   def setToDefaultAsProperty(): scala.Unit
 }
 
+object XPropertyWithState {
+  @scala.inline
+  def apply(
+    DefaultAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    StateAsProperty: PropertyState,
+    acquire: js.Function0[scala.Unit],
+    getDefaultAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getStateAsProperty: js.Function0[PropertyState],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setToDefaultAsProperty: js.Function0[scala.Unit]
+  ): XPropertyWithState = {
+    val __obj = js.Dynamic.literal(DefaultAsProperty = DefaultAsProperty, StateAsProperty = StateAsProperty, acquire = acquire, getDefaultAsProperty = getDefaultAsProperty, getStateAsProperty = getStateAsProperty, queryInterface = queryInterface, release = release, setToDefaultAsProperty = setToDefaultAsProperty)
+  
+    __obj.asInstanceOf[XPropertyWithState]
+  }
+}
+

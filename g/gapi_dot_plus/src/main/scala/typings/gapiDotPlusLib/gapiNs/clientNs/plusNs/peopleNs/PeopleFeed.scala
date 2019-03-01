@@ -16,3 +16,20 @@ trait PeopleFeed extends js.Object {
   var totalItems: scala.Double
 }
 
+object PeopleFeed {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    items: js.Array[Person],
+    kind: gapiDotPlusLib.gapiDotPlusLibStrings.`plus#peopleFeed`,
+    nextPageToken: java.lang.String,
+    selfLink: java.lang.String,
+    title: java.lang.String,
+    totalItems: scala.Double
+  ): PeopleFeed = {
+    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind, nextPageToken = nextPageToken, selfLink = selfLink, title = title, totalItems = totalItems)
+  
+    __obj.asInstanceOf[PeopleFeed]
+  }
+}
+

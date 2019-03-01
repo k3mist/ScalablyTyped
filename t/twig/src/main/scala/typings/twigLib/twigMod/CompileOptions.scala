@@ -10,3 +10,12 @@ trait CompileOptions extends js.Object {
   var settings: js.Any
 }
 
+object CompileOptions {
+  @scala.inline
+  def apply(filename: java.lang.String, settings: js.Any): CompileOptions = {
+    val __obj = js.Dynamic.literal(filename = filename, settings = settings)
+  
+    __obj.asInstanceOf[CompileOptions]
+  }
+}
+

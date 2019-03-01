@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.MetaProperty
 }
 
+object MetaProperty {
+  @scala.inline
+  def apply(
+    meta: astDashTypesLib.genKindsMod.IdentifierKind,
+    property: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.MetaProperty
+  ): MetaProperty = {
+    val __obj = js.Dynamic.literal(meta = meta, property = property, `type` = `type`)
+  
+    __obj.asInstanceOf[MetaProperty]
+  }
+}
+

@@ -16,3 +16,20 @@ trait IDateJSLiteral extends js.Object {
   var years: scala.Double
 }
 
+object IDateJSLiteral {
+  @scala.inline
+  def apply(
+    days: scala.Double,
+    hours: scala.Double,
+    milliseconds: scala.Double,
+    minutes: scala.Double,
+    months: scala.Double,
+    seconds: scala.Double,
+    years: scala.Double
+  ): IDateJSLiteral = {
+    val __obj = js.Dynamic.literal(days = days, hours = hours, milliseconds = milliseconds, minutes = minutes, months = months, seconds = seconds, years = years)
+  
+    __obj.asInstanceOf[IDateJSLiteral]
+  }
+}
+

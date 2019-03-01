@@ -11,3 +11,16 @@ trait SignalChannelRequest extends ChannelRequest {
   var signal: java.lang.String
 }
 
+object SignalChannelRequest {
+  @scala.inline
+  def apply(
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.signal,
+    signal: java.lang.String
+  ): SignalChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, signal = signal)
+  
+    __obj.asInstanceOf[SignalChannelRequest]
+  }
+}
+

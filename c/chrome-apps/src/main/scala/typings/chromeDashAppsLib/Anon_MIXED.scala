@@ -11,3 +11,16 @@ trait Anon_MIXED extends js.Object {
   var OFF: chromeDashAppsLib.chromeDashAppsLibStrings.off
 }
 
+object Anon_MIXED {
+  @scala.inline
+  def apply(
+    MIXED: chromeDashAppsLib.chromeDashAppsLibStrings.mixed,
+    NORMAL: chromeDashAppsLib.chromeDashAppsLibStrings.normal,
+    OFF: chromeDashAppsLib.chromeDashAppsLibStrings.off
+  ): Anon_MIXED = {
+    val __obj = js.Dynamic.literal(MIXED = MIXED, NORMAL = NORMAL, OFF = OFF)
+  
+    __obj.asInstanceOf[Anon_MIXED]
+  }
+}
+

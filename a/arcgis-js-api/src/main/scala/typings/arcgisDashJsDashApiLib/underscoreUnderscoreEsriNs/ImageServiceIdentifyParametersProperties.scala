@@ -66,3 +66,30 @@ trait ImageServiceIdentifyParametersProperties extends js.Object {
   var returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageServiceIdentifyParametersProperties {
+  @scala.inline
+  def apply(
+    geometry: PointProperties | PolygonProperties = null,
+    mosaicRule: MosaicRuleProperties = null,
+    noData: java.lang.String | scala.Double = null,
+    pixelSize: SymbolProperties = null,
+    pixelSizeX: scala.Int | scala.Double = null,
+    pixelSizeY: scala.Int | scala.Double = null,
+    renderingRule: RasterFunctionProperties = null,
+    returnCatalogItems: js.UndefOr[scala.Boolean] = js.undefined,
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageServiceIdentifyParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
+    if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
+    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
+    if (pixelSizeX != null) __obj.updateDynamic("pixelSizeX")(pixelSizeX.asInstanceOf[js.Any])
+    if (pixelSizeY != null) __obj.updateDynamic("pixelSizeY")(pixelSizeY.asInstanceOf[js.Any])
+    if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
+    if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems)
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    __obj.asInstanceOf[ImageServiceIdentifyParametersProperties]
+  }
+}
+

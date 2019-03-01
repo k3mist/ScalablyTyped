@@ -32,3 +32,18 @@ trait XInterceptorInfo
   def getInterceptedURLs(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XInterceptorInfo {
+  @scala.inline
+  def apply(
+    InterceptedURLs: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getInterceptedURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterceptorInfo = {
+    val __obj = js.Dynamic.literal(InterceptedURLs = InterceptedURLs, acquire = acquire, getInterceptedURLs = getInterceptedURLs, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInterceptorInfo]
+  }
+}
+

@@ -24,3 +24,17 @@ trait RdsDbInstanceArgs extends js.Object {
   val stackId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RdsDbInstanceArgs {
+  @scala.inline
+  def apply(
+    dbPassword: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    dbUser: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    rdsDbInstanceArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    stackId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): RdsDbInstanceArgs = {
+    val __obj = js.Dynamic.literal(dbPassword = dbPassword.asInstanceOf[js.Any], dbUser = dbUser.asInstanceOf[js.Any], rdsDbInstanceArn = rdsDbInstanceArn.asInstanceOf[js.Any], stackId = stackId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RdsDbInstanceArgs]
+  }
+}
+

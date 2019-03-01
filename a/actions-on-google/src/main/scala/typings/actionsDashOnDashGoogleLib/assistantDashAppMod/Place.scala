@@ -13,3 +13,18 @@ trait Place extends Location {
   var placeId: java.lang.String
 }
 
+object Place {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    city: java.lang.String,
+    coordinates: Coordinates,
+    placeId: java.lang.String,
+    zipCode: java.lang.String
+  ): Place = {
+    val __obj = js.Dynamic.literal(address = address, city = city, coordinates = coordinates, placeId = placeId, zipCode = zipCode)
+  
+    __obj.asInstanceOf[Place]
+  }
+}
+

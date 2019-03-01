@@ -32,3 +32,18 @@ trait LeaseSpec extends js.Object {
   val renewTime: java.lang.String
 }
 
+object LeaseSpec {
+  @scala.inline
+  def apply(
+    acquireTime: java.lang.String,
+    holderIdentity: java.lang.String,
+    leaseDurationSeconds: scala.Double,
+    leaseTransitions: scala.Double,
+    renewTime: java.lang.String
+  ): LeaseSpec = {
+    val __obj = js.Dynamic.literal(acquireTime = acquireTime, holderIdentity = holderIdentity, leaseDurationSeconds = leaseDurationSeconds, leaseTransitions = leaseTransitions, renewTime = renewTime)
+  
+    __obj.asInstanceOf[LeaseSpec]
+  }
+}
+

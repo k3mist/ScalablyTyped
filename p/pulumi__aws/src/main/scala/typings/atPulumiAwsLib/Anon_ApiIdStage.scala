@@ -10,3 +10,15 @@ trait Anon_ApiIdStage extends js.Object {
   var stage: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_ApiIdStage {
+  @scala.inline
+  def apply(
+    apiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    stage: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): Anon_ApiIdStage = {
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_ApiIdStage]
+  }
+}
+

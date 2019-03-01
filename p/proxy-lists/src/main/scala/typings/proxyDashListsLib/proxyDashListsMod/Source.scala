@@ -10,3 +10,12 @@ trait Source extends js.Object {
   var name: java.lang.String
 }
 
+object Source {
+  @scala.inline
+  def apply(homeUrl: java.lang.String, name: java.lang.String): Source = {
+    val __obj = js.Dynamic.literal(homeUrl = homeUrl, name = name)
+  
+    __obj.asInstanceOf[Source]
+  }
+}
+

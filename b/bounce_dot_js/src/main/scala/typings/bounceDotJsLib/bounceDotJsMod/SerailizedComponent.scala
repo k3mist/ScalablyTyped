@@ -16,3 +16,21 @@ trait SerailizedComponent[T] extends js.Object {
   var `type`: java.lang.String
 }
 
+object SerailizedComponent {
+  @scala.inline
+  def apply[T](
+    bounces: scala.Double,
+    delay: scala.Double,
+    duration: scala.Double,
+    easing: java.lang.String,
+    from: T,
+    stiffness: scala.Double,
+    to: T,
+    `type`: java.lang.String
+  ): SerailizedComponent[T] = {
+    val __obj = js.Dynamic.literal(bounces = bounces, delay = delay, duration = duration, easing = easing, from = from.asInstanceOf[js.Any], stiffness = stiffness, to = to.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[SerailizedComponent[T]]
+  }
+}
+

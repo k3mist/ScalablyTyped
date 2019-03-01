@@ -36,3 +36,30 @@ trait PlatformReflectionCapabilities extends js.Object {
   def setter(name: java.lang.String): atAngularCoreLib.srcReflectionTypesMod.SetterFn
 }
 
+object PlatformReflectionCapabilities {
+  @scala.inline
+  def apply(
+    annotations: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], js.Array[_]],
+    factory: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], js.Function],
+    getter: js.Function1[java.lang.String, atAngularCoreLib.srcReflectionTypesMod.GetterFn],
+    guards: js.Function1[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]],
+    hasLifecycleHook: js.Function2[js.Any, java.lang.String, scala.Boolean],
+    importUri: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], java.lang.String],
+    isReflectionEnabled: js.Function0[scala.Boolean],
+    method: js.Function1[java.lang.String, atAngularCoreLib.srcReflectionTypesMod.MethodFn],
+    parameters: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], js.Array[js.Array[_]]],
+    propMetadata: js.Function1[
+      atAngularCoreLib.srcTypeMod.Type[_], 
+      org.scalablytyped.runtime.StringDictionary[js.Array[_]]
+    ],
+    resolveEnum: js.Function2[js.Any, java.lang.String, js.Any],
+    resolveIdentifier: js.Function4[java.lang.String, java.lang.String, js.Array[java.lang.String], js.Any, js.Any],
+    resourceUri: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], java.lang.String],
+    setter: js.Function1[java.lang.String, atAngularCoreLib.srcReflectionTypesMod.SetterFn]
+  ): PlatformReflectionCapabilities = {
+    val __obj = js.Dynamic.literal(annotations = annotations, factory = factory, getter = getter, guards = guards, hasLifecycleHook = hasLifecycleHook, importUri = importUri, isReflectionEnabled = isReflectionEnabled, method = method, parameters = parameters, propMetadata = propMetadata, resolveEnum = resolveEnum, resolveIdentifier = resolveIdentifier, resourceUri = resourceUri, setter = setter)
+  
+    __obj.asInstanceOf[PlatformReflectionCapabilities]
+  }
+}
+

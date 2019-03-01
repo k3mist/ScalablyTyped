@@ -31,3 +31,18 @@ trait ASPxClientGridToolbarItemClickEventArgs extends ASPxClientProcessingModeEv
   var usePostBack: scala.Boolean
 }
 
+object ASPxClientGridToolbarItemClickEventArgs {
+  @scala.inline
+  def apply(
+    item: ASPxClientMenuItem,
+    processOnServer: scala.Boolean,
+    toolbarIndex: scala.Double,
+    toolbarName: java.lang.String,
+    usePostBack: scala.Boolean
+  ): ASPxClientGridToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(item = item, processOnServer = processOnServer, toolbarIndex = toolbarIndex, toolbarName = toolbarName, usePostBack = usePostBack)
+  
+    __obj.asInstanceOf[ASPxClientGridToolbarItemClickEventArgs]
+  }
+}
+

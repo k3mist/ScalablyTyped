@@ -26,3 +26,18 @@ trait XActivationBroadcaster
   def removeActivationEventListener(aListener: XActivationEventListener): scala.Unit
 }
 
+object XActivationBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addActivationEventListener: js.Function1[XActivationEventListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActivationEventListener: js.Function1[XActivationEventListener, scala.Unit]
+  ): XActivationBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addActivationEventListener = addActivationEventListener, queryInterface = queryInterface, release = release, removeActivationEventListener = removeActivationEventListener)
+  
+    __obj.asInstanceOf[XActivationBroadcaster]
+  }
+}
+

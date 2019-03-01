@@ -10,3 +10,12 @@ trait Anon_Frame extends js.Object {
   var transition: plotlyDotJsLib.plotlyDotJsMod.Transition
 }
 
+object Anon_Frame {
+  @scala.inline
+  def apply(frame: Anon_Duration, transition: plotlyDotJsLib.plotlyDotJsMod.Transition): Anon_Frame = {
+    val __obj = js.Dynamic.literal(frame = frame, transition = transition)
+  
+    __obj.asInstanceOf[Anon_Frame]
+  }
+}
+

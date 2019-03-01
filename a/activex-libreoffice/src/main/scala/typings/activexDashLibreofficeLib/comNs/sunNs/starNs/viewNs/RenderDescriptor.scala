@@ -14,3 +14,12 @@ trait RenderDescriptor extends js.Object {
   var PageSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
 }
 
+object RenderDescriptor {
+  @scala.inline
+  def apply(PageSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size): RenderDescriptor = {
+    val __obj = js.Dynamic.literal(PageSize = PageSize)
+  
+    __obj.asInstanceOf[RenderDescriptor]
+  }
+}
+

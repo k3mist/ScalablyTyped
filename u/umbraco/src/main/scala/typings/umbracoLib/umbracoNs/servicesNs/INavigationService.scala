@@ -208,3 +208,35 @@ trait INavigationService extends js.Object {
   def syncTree(args: ISyncTreeArgs): js.Any
 }
 
+object INavigationService {
+  @scala.inline
+  def apply(
+    _setActiveTreeType: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    _syncPath: js.Function2[js.Array[java.lang.String], scala.Boolean, scala.Unit],
+    changeSection: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    executeMenuAction: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    hideDialog: js.Function1[scala.Boolean, scala.Unit],
+    hideMenu: js.Function0[scala.Unit],
+    hideNavigation: js.Function0[scala.Unit],
+    hideSearch: js.Function0[scala.Unit],
+    hideTray: js.Function0[scala.Unit],
+    hideTree: js.Function0[scala.Unit],
+    loadLegacyIFrame: js.Function1[java.lang.String, scala.Unit],
+    reloadNode: js.Function1[js.Any, scala.Unit],
+    reloadSection: js.Function1[java.lang.String, scala.Unit],
+    setupTreeEvents: js.Function1[js.Any, scala.Unit],
+    showDialog: js.Function1[IShowDialogArgs, scala.Unit],
+    showHelpDialog: js.Function0[scala.Unit],
+    showMenu: js.Function2[stdLib.Event, /* repeated */ js.Any, scala.Unit],
+    showSearch: js.Function0[scala.Unit],
+    showTray: js.Function0[scala.Unit],
+    showTree: js.Function2[java.lang.String, ISyncTreeArgs, scala.Unit],
+    showUserDialog: js.Function0[scala.Unit],
+    syncTree: js.Function1[ISyncTreeArgs, js.Any]
+  ): INavigationService = {
+    val __obj = js.Dynamic.literal(_setActiveTreeType = _setActiveTreeType, _syncPath = _syncPath, changeSection = changeSection, executeMenuAction = executeMenuAction, hideDialog = hideDialog, hideMenu = hideMenu, hideNavigation = hideNavigation, hideSearch = hideSearch, hideTray = hideTray, hideTree = hideTree, loadLegacyIFrame = loadLegacyIFrame, reloadNode = reloadNode, reloadSection = reloadSection, setupTreeEvents = setupTreeEvents, showDialog = showDialog, showHelpDialog = showHelpDialog, showMenu = showMenu, showSearch = showSearch, showTray = showTray, showTree = showTree, showUserDialog = showUserDialog, syncTree = syncTree)
+  
+    __obj.asInstanceOf[INavigationService]
+  }
+}
+

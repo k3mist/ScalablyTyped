@@ -11,3 +11,12 @@ trait CrashReport extends js.Object {
   var id: java.lang.String
 }
 
+object CrashReport {
+  @scala.inline
+  def apply(date: stdLib.Date, id: java.lang.String): CrashReport = {
+    val __obj = js.Dynamic.literal(date = date, id = id)
+  
+    __obj.asInstanceOf[CrashReport]
+  }
+}
+

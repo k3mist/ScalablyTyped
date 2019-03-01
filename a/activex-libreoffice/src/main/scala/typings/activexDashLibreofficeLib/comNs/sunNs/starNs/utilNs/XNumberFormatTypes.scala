@@ -32,3 +32,33 @@ trait XNumberFormatTypes
   def isTypeCompatible(nOldType: scala.Double, nNewType: scala.Double): scala.Boolean
 }
 
+object XNumberFormatTypes {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getFormatForLocale: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getFormatIndex: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getStandardFormat: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getStandardIndex: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Double],
+    isTypeCompatible: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumberFormatTypes = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getFormatForLocale = getFormatForLocale, getFormatIndex = getFormatIndex, getStandardFormat = getStandardFormat, getStandardIndex = getStandardIndex, isTypeCompatible = isTypeCompatible, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XNumberFormatTypes]
+  }
+}
+

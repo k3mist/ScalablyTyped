@@ -16,3 +16,12 @@ trait NotificationPromptResult extends js.Object {
   var input1: java.lang.String
 }
 
+object NotificationPromptResult {
+  @scala.inline
+  def apply(buttonIndex: scala.Double, input1: java.lang.String): NotificationPromptResult = {
+    val __obj = js.Dynamic.literal(buttonIndex = buttonIndex, input1 = input1)
+  
+    __obj.asInstanceOf[NotificationPromptResult]
+  }
+}
+

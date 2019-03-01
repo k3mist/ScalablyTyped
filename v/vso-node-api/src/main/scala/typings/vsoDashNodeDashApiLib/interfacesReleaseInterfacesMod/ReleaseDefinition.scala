@@ -105,3 +105,38 @@ trait ReleaseDefinition extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
 }
 
+object ReleaseDefinition {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    artifacts: js.Array[Artifact],
+    comment: java.lang.String,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    description: java.lang.String,
+    environments: js.Array[ReleaseDefinitionEnvironment],
+    id: scala.Double,
+    isDeleted: scala.Boolean,
+    lastRelease: ReleaseReference,
+    modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    path: java.lang.String,
+    pipelineProcess: PipelineProcess,
+    properties: js.Any,
+    releaseNameFormat: java.lang.String,
+    retentionPolicy: RetentionPolicy,
+    revision: scala.Double,
+    source: ReleaseDefinitionSource,
+    tags: js.Array[java.lang.String],
+    triggers: js.Array[ReleaseTriggerBase],
+    url: java.lang.String,
+    variableGroups: js.Array[scala.Double],
+    variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
+  ): ReleaseDefinition = {
+    val __obj = js.Dynamic.literal(_links = _links, artifacts = artifacts, comment = comment, createdBy = createdBy, createdOn = createdOn, description = description, environments = environments, id = id, isDeleted = isDeleted, lastRelease = lastRelease, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, path = path, pipelineProcess = pipelineProcess, properties = properties, releaseNameFormat = releaseNameFormat, retentionPolicy = retentionPolicy, revision = revision, source = source, tags = tags, triggers = triggers, url = url, variableGroups = variableGroups, variables = variables)
+  
+    __obj.asInstanceOf[ReleaseDefinition]
+  }
+}
+

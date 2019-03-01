@@ -10,3 +10,12 @@ trait PromiseResponse extends js.Object {
   var resp: nodeLib.httpMod.IncomingMessage
 }
 
+object PromiseResponse {
+  @scala.inline
+  def apply(data: Response, resp: nodeLib.httpMod.IncomingMessage): PromiseResponse = {
+    val __obj = js.Dynamic.literal(data = data, resp = resp)
+  
+    __obj.asInstanceOf[PromiseResponse]
+  }
+}
+

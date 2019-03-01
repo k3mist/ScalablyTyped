@@ -36,3 +36,18 @@ trait MergeRecoveryRequest
   var IsRemovalRequest: scala.Boolean
 }
 
+object MergeRecoveryRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorDetails: js.Any,
+    ErrorLayerId: java.lang.String,
+    IsRemovalRequest: scala.Boolean,
+    Message: java.lang.String
+  ): MergeRecoveryRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, ErrorDetails = ErrorDetails, ErrorLayerId = ErrorLayerId, IsRemovalRequest = IsRemovalRequest, Message = Message)
+  
+    __obj.asInstanceOf[MergeRecoveryRequest]
+  }
+}
+

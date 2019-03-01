@@ -23,3 +23,26 @@ trait Shape extends js.Object {
   var yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    fillcolor: java.lang.String,
+    layer: plotlyDotJsLib.plotlyDotJsLibStrings.below | plotlyDotJsLib.plotlyDotJsLibStrings.above,
+    line: stdLib.Partial[ShapeLine],
+    opacity: scala.Double,
+    path: java.lang.String,
+    `type`: plotlyDotJsLib.plotlyDotJsLibStrings.rect | plotlyDotJsLib.plotlyDotJsLibStrings.circle | plotlyDotJsLib.plotlyDotJsLibStrings.line | plotlyDotJsLib.plotlyDotJsLibStrings.path,
+    visible: scala.Boolean,
+    x0: Datum,
+    x1: Datum,
+    xref: plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.paper,
+    y0: Datum,
+    y1: Datum,
+    yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
+  ): Shape = {
+    val __obj = js.Dynamic.literal(fillcolor = fillcolor, layer = layer.asInstanceOf[js.Any], line = line, opacity = opacity, path = path, `type` = `type`.asInstanceOf[js.Any], visible = visible, x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Shape]
+  }
+}
+

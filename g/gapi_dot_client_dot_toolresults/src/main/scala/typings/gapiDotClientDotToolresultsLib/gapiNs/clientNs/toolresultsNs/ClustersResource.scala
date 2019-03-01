@@ -18,3 +18,21 @@ trait ClustersResource extends js.Object {
   def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionId): gapiDotClientLib.gapiNs.clientNs.Request[ListScreenshotClustersResponse]
 }
 
+object ClustersResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ScreenshotCluster]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListScreenshotClustersResponse]
+    ]
+  ): ClustersResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[ClustersResource]
+  }
+}
+

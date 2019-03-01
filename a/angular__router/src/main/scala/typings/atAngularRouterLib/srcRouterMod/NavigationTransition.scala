@@ -26,3 +26,34 @@ trait NavigationTransition extends js.Object {
   var urlAfterRedirects: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
 }
 
+object NavigationTransition {
+  @scala.inline
+  def apply(
+    currentRawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    currentRouterState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState,
+    currentSnapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot,
+    currentUrlTree: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    extractedUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    extras: NavigationExtras,
+    guards: atAngularRouterLib.srcUtilsPreactivationMod.Checks,
+    id: scala.Double,
+    promise: js.Promise[scala.Boolean],
+    rawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    reject: js.Any,
+    resolve: js.Any,
+    source: atAngularRouterLib.srcEventsMod.NavigationTrigger,
+    urlAfterRedirects: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    guardsResult: scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = null,
+    restoredState: RestoredState = null,
+    targetRouterState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState = null,
+    targetSnapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot = null
+  ): NavigationTransition = {
+    val __obj = js.Dynamic.literal(currentRawUrl = currentRawUrl, currentRouterState = currentRouterState, currentSnapshot = currentSnapshot, currentUrlTree = currentUrlTree, extractedUrl = extractedUrl, extras = extras, guards = guards, id = id, promise = promise, rawUrl = rawUrl, reject = reject, resolve = resolve, source = source, urlAfterRedirects = urlAfterRedirects)
+    if (guardsResult != null) __obj.updateDynamic("guardsResult")(guardsResult.asInstanceOf[js.Any])
+    if (restoredState != null) __obj.updateDynamic("restoredState")(restoredState)
+    if (targetRouterState != null) __obj.updateDynamic("targetRouterState")(targetRouterState)
+    if (targetSnapshot != null) __obj.updateDynamic("targetSnapshot")(targetSnapshot)
+    __obj.asInstanceOf[NavigationTransition]
+  }
+}
+

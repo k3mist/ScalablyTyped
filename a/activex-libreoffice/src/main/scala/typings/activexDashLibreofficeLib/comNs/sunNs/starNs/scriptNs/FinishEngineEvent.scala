@@ -27,3 +27,17 @@ trait FinishEngineEvent
   var Return: js.Any
 }
 
+object FinishEngineEvent {
+  @scala.inline
+  def apply(
+    ErrorMessage: java.lang.String,
+    Finish: FinishReason,
+    Return: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): FinishEngineEvent = {
+    val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage, Finish = Finish, Return = Return, Source = Source)
+  
+    __obj.asInstanceOf[FinishEngineEvent]
+  }
+}
+

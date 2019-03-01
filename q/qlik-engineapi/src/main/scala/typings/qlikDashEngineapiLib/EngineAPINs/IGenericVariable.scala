@@ -70,3 +70,21 @@ trait IGenericVariable
   def setStringValue(qVal: java.lang.String): js.Promise[scala.Unit]
 }
 
+object IGenericVariable {
+  @scala.inline
+  def apply(
+    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
+    getInfo: js.Function0[js.Promise[INxInfo]],
+    getLayout: js.Function0[js.Promise[IGenericVariableLayout]],
+    getProperties: js.Function0[js.Promise[IGenericVariableProperties]],
+    setDualValue: js.Function2[java.lang.String, scala.Double, js.Promise[scala.Unit]],
+    setNumValue: js.Function1[scala.Double, js.Promise[scala.Unit]],
+    setProperties: js.Function1[IGenericVariableProperties, js.Promise[scala.Unit]],
+    setStringValue: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): IGenericVariable = {
+    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getInfo = getInfo, getLayout = getLayout, getProperties = getProperties, setDualValue = setDualValue, setNumValue = setNumValue, setProperties = setProperties, setStringValue = setStringValue)
+  
+    __obj.asInstanceOf[IGenericVariable]
+  }
+}
+

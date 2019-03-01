@@ -10,3 +10,12 @@ trait Anon_ScopeDescriptorValueNull extends js.Object {
   var value: java.lang.String | scala.Null
 }
 
+object Anon_ScopeDescriptorValueNull {
+  @scala.inline
+  def apply(scopeDescriptor: atomLib.atomMod.ScopeDescriptor, value: java.lang.String = null): Anon_ScopeDescriptorValueNull = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_ScopeDescriptorValueNull]
+  }
+}
+

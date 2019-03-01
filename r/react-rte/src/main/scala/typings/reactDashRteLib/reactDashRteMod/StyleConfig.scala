@@ -11,3 +11,12 @@ trait StyleConfig extends js.Object {
   var style: java.lang.String
 }
 
+object StyleConfig {
+  @scala.inline
+  def apply(label: java.lang.String, style: java.lang.String, className: java.lang.String = null): StyleConfig = {
+    val __obj = js.Dynamic.literal(label = label, style = style)
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[StyleConfig]
+  }
+}
+

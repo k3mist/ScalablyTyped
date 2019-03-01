@@ -13,3 +13,18 @@ trait Time extends js.Object {
   def toSchema(): js.Any
 }
 
+object Time {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    `type`: scala.Double,
+    value: stdLib.Date
+  ): Time = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[Time]
+  }
+}
+

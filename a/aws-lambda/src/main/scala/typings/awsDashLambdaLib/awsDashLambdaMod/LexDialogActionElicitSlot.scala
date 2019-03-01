@@ -15,3 +15,20 @@ trait LexDialogActionElicitSlot
   var type_LexDialogActionElicitSlot: awsDashLambdaLib.awsDashLambdaLibStrings.ElicitSlot
 }
 
+object LexDialogActionElicitSlot {
+  @scala.inline
+  def apply(
+    intentName: java.lang.String,
+    slotToElicit: java.lang.String,
+    slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.ElicitSlot,
+    message: awsDashLambdaLib.Anon_Content = null,
+    responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
+  ): LexDialogActionElicitSlot = {
+    val __obj = js.Dynamic.literal(intentName = intentName, slotToElicit = slotToElicit, slots = slots, `type` = `type`)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.asInstanceOf[LexDialogActionElicitSlot]
+  }
+}
+

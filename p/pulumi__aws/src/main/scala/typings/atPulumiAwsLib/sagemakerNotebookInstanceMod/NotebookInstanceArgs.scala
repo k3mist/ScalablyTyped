@@ -40,3 +40,24 @@ trait NotebookInstanceArgs extends js.Object {
   ] = js.undefined
 }
 
+object NotebookInstanceArgs {
+  @scala.inline
+  def apply(
+    instanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): NotebookInstanceArgs = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotebookInstanceArgs]
+  }
+}
+

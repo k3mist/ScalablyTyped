@@ -11,3 +11,16 @@ trait ShellChannelRequest extends ChannelRequest {
   var wantReply: scala.Boolean
 }
 
+object ShellChannelRequest {
+  @scala.inline
+  def apply(
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.shell,
+    wantReply: scala.Boolean
+  ): ShellChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, wantReply = wantReply)
+  
+    __obj.asInstanceOf[ShellChannelRequest]
+  }
+}
+

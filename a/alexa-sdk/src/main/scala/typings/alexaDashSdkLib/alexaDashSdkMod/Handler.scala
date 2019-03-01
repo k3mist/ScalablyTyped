@@ -23,3 +23,28 @@ trait Handler[T /* <: Request */] extends js.Object {
   def t(token: java.lang.String, args: js.Any*): scala.Unit
 }
 
+object Handler {
+  @scala.inline
+  def apply[T /* <: Request */](
+    attributes: js.Any,
+    callback: js.Function1[js.Any, scala.Unit],
+    context: js.Any,
+    emit: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Boolean],
+    emitWithState: js.Any,
+    event: RequestBody[T],
+    handler: js.Any,
+    i18n: js.Any,
+    isOverriden: js.Any,
+    locale: js.Any,
+    name: js.Any,
+    on: js.Any,
+    response: ResponseBuilder,
+    state: js.Any,
+    t: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): Handler[T] = {
+    val __obj = js.Dynamic.literal(attributes = attributes, callback = callback, context = context, emit = emit, emitWithState = emitWithState, event = event, handler = handler, i18n = i18n, isOverriden = isOverriden, locale = locale, name = name, on = on, response = response, state = state, t = t)
+  
+    __obj.asInstanceOf[Handler[T]]
+  }
+}
+

@@ -30,3 +30,19 @@ trait XComponentContext extends XInterface {
   def getValueByName(Name: java.lang.String): js.Any
 }
 
+object XComponentContext {
+  @scala.inline
+  def apply(
+    ServiceManager: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiComponentFactory,
+    acquire: js.Function0[scala.Unit],
+    getServiceManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiComponentFactory],
+    getValueByName: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XComponentContext = {
+    val __obj = js.Dynamic.literal(ServiceManager = ServiceManager, acquire = acquire, getServiceManager = getServiceManager, getValueByName = getValueByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XComponentContext]
+  }
+}
+

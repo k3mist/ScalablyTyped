@@ -50,3 +50,21 @@ trait ASPxClientSpreadsheetPopupMenuItemCollection extends js.Object {
   def RemoveByName(name: java.lang.String): scala.Unit
 }
 
+object ASPxClientSpreadsheetPopupMenuItemCollection {
+  @scala.inline
+  def apply(
+    Add: js.Function1[ASPxClientSpreadsheetPopupMenuItem, scala.Unit],
+    Clear: js.Function0[scala.Unit],
+    Get: js.Function1[scala.Double, ASPxClientSpreadsheetPopupMenuItem],
+    GetByName: js.Function1[java.lang.String, ASPxClientSpreadsheetPopupMenuItem],
+    GetCount: js.Function0[scala.Double],
+    Insert: js.Function2[scala.Double, ASPxClientSpreadsheetPopupMenuItem, scala.Unit],
+    Remove: js.Function1[scala.Double, scala.Unit],
+    RemoveByName: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientSpreadsheetPopupMenuItemCollection = {
+    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Get = Get, GetByName = GetByName, GetCount = GetCount, Insert = Insert, Remove = Remove, RemoveByName = RemoveByName)
+  
+    __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItemCollection]
+  }
+}
+

@@ -24,3 +24,17 @@ trait SupportedTrigger extends js.Object {
   var `type`: DefinitionTriggerType
 }
 
+object SupportedTrigger {
+  @scala.inline
+  def apply(
+    defaultPollingInterval: scala.Double,
+    notificationType: java.lang.String,
+    supportedCapabilities: org.scalablytyped.runtime.StringDictionary[SupportLevel],
+    `type`: DefinitionTriggerType
+  ): SupportedTrigger = {
+    val __obj = js.Dynamic.literal(defaultPollingInterval = defaultPollingInterval, notificationType = notificationType, supportedCapabilities = supportedCapabilities, `type` = `type`)
+  
+    __obj.asInstanceOf[SupportedTrigger]
+  }
+}
+

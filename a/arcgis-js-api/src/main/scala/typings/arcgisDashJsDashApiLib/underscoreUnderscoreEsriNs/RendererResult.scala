@@ -27,3 +27,19 @@ trait RendererResult
   var renderer: SimpleRenderer
 }
 
+object RendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    locationScheme: LocationScheme,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: SimpleRenderer
+  ): RendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = hasOwnProperty, locationScheme = locationScheme, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+  
+    __obj.asInstanceOf[RendererResult]
+  }
+}
+

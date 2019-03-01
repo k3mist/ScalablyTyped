@@ -20,3 +20,18 @@ trait IpSetArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object IpSetArgs {
+  @scala.inline
+  def apply(
+    ipSetDescriptors: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeValueInputString]]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): IpSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (ipSetDescriptors != null) __obj.updateDynamic("ipSetDescriptors")(ipSetDescriptors.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IpSetArgs]
+  }
+}
+

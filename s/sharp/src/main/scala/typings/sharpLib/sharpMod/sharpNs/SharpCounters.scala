@@ -12,3 +12,12 @@ trait SharpCounters extends js.Object {
   var queue: scala.Double
 }
 
+object SharpCounters {
+  @scala.inline
+  def apply(process: scala.Double, queue: scala.Double): SharpCounters = {
+    val __obj = js.Dynamic.literal(process = process, queue = queue)
+  
+    __obj.asInstanceOf[SharpCounters]
+  }
+}
+

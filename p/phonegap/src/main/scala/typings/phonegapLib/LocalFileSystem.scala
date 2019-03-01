@@ -15,3 +15,12 @@ trait LocalFileSystem extends js.Object {
   var TEMPORARY: scala.Double
 }
 
+object LocalFileSystem {
+  @scala.inline
+  def apply(PERSISTENT: scala.Double, TEMPORARY: scala.Double): LocalFileSystem = {
+    val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT, TEMPORARY = TEMPORARY)
+  
+    __obj.asInstanceOf[LocalFileSystem]
+  }
+}
+

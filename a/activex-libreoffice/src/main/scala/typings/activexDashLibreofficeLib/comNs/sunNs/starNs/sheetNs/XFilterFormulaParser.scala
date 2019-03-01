@@ -11,3 +11,24 @@ trait XFilterFormulaParser extends XFormulaParser {
   var SupportedNamespace: java.lang.String
 }
 
+object XFilterFormulaParser {
+  @scala.inline
+  def apply(
+    SupportedNamespace: java.lang.String,
+    parseFormula: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashInteropLib.SafeArray[FormulaToken]
+    ],
+    printFormula: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      java.lang.String
+    ]
+  ): XFilterFormulaParser = {
+    val __obj = js.Dynamic.literal(SupportedNamespace = SupportedNamespace, parseFormula = parseFormula, printFormula = printFormula)
+  
+    __obj.asInstanceOf[XFilterFormulaParser]
+  }
+}
+

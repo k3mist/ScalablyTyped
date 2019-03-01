@@ -26,3 +26,18 @@ trait BookmarkProperties extends js.Object {
   var thumbnail: js.UndefOr[BookmarkThumbnail] = js.undefined
 }
 
+object BookmarkProperties {
+  @scala.inline
+  def apply(
+    extent: ExtentProperties = null,
+    name: java.lang.String = null,
+    thumbnail: BookmarkThumbnail = null
+  ): BookmarkProperties = {
+    val __obj = js.Dynamic.literal()
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[BookmarkProperties]
+  }
+}
+

@@ -20,3 +20,16 @@ trait ExpressionFilterModel extends js.Object {
   var maxGroupLevel: scala.Double
 }
 
+object ExpressionFilterModel {
+  @scala.inline
+  def apply(
+    clauses: js.Array[ExpressionFilterClause],
+    groups: js.Array[ExpressionFilterGroup],
+    maxGroupLevel: scala.Double
+  ): ExpressionFilterModel = {
+    val __obj = js.Dynamic.literal(clauses = clauses, groups = groups, maxGroupLevel = maxGroupLevel)
+  
+    __obj.asInstanceOf[ExpressionFilterModel]
+  }
+}
+

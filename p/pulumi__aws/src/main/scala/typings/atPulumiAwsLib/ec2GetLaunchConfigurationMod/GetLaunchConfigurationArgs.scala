@@ -12,3 +12,12 @@ trait GetLaunchConfigurationArgs extends js.Object {
   val name: java.lang.String
 }
 
+object GetLaunchConfigurationArgs {
+  @scala.inline
+  def apply(name: java.lang.String): GetLaunchConfigurationArgs = {
+    val __obj = js.Dynamic.literal(name = name)
+  
+    __obj.asInstanceOf[GetLaunchConfigurationArgs]
+  }
+}
+

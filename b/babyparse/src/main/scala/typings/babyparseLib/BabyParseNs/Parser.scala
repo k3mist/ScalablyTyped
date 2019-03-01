@@ -14,3 +14,16 @@ trait Parser extends js.Object {
   def parse(input: java.lang.String): js.Any
 }
 
+object Parser {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    getCharIndex: js.Function0[scala.Double],
+    parse: js.Function1[java.lang.String, js.Any]
+  ): Parser = {
+    val __obj = js.Dynamic.literal(abort = abort, getCharIndex = getCharIndex, parse = parse)
+  
+    __obj.asInstanceOf[Parser]
+  }
+}
+

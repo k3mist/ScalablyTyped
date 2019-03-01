@@ -12,3 +12,18 @@ trait StripePaymentRequestUpdateOptions extends js.Object {
   var total: DisplayItem
 }
 
+object StripePaymentRequestUpdateOptions {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    total: DisplayItem,
+    displayItems: js.Array[DisplayItem] = null,
+    shippingOptions: js.Array[ShippingOption] = null
+  ): StripePaymentRequestUpdateOptions = {
+    val __obj = js.Dynamic.literal(currency = currency, total = total)
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
+    __obj.asInstanceOf[StripePaymentRequestUpdateOptions]
+  }
+}
+

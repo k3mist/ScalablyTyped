@@ -25,3 +25,26 @@ trait FilterOptionsDialog
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyAccess
      with XExecutableDialog
 
+object FilterOptionsDialog {
+  @scala.inline
+  def apply(
+    PropertyValues: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Double],
+    getPropertyValues: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): FilterOptionsDialog = {
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, execute = execute, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues, setTitle = setTitle)
+  
+    __obj.asInstanceOf[FilterOptionsDialog]
+  }
+}
+

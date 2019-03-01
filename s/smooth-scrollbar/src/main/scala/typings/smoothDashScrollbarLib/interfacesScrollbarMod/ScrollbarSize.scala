@@ -10,3 +10,12 @@ trait ScrollbarSize extends js.Object {
   var content: Metrics
 }
 
+object ScrollbarSize {
+  @scala.inline
+  def apply(container: Metrics, content: Metrics): ScrollbarSize = {
+    val __obj = js.Dynamic.literal(container = container, content = content)
+  
+    __obj.asInstanceOf[ScrollbarSize]
+  }
+}
+

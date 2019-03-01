@@ -10,3 +10,12 @@ trait PersistState extends js.Object {
   var version: scala.Double
 }
 
+object PersistState {
+  @scala.inline
+  def apply(rehydrated: scala.Boolean, version: scala.Double): PersistState = {
+    val __obj = js.Dynamic.literal(rehydrated = rehydrated, version = version)
+  
+    __obj.asInstanceOf[PersistState]
+  }
+}
+

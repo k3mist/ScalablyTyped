@@ -23,3 +23,16 @@ trait ScriptCoverage extends js.Object {
   var url: java.lang.String
 }
 
+object ScriptCoverage {
+  @scala.inline
+  def apply(
+    functions: js.Array[FunctionCoverage],
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    url: java.lang.String
+  ): ScriptCoverage = {
+    val __obj = js.Dynamic.literal(functions = functions, scriptId = scriptId, url = url)
+  
+    __obj.asInstanceOf[ScriptCoverage]
+  }
+}
+

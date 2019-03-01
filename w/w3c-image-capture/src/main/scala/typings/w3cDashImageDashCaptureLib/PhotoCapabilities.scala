@@ -12,3 +12,17 @@ trait PhotoCapabilities extends js.Object {
   val redEyeReduction: RedEyeReduction
 }
 
+object PhotoCapabilities {
+  @scala.inline
+  def apply(
+    fillLightMode: js.Array[FillLightMode],
+    imageHeight: MediaSettingsRange,
+    imageWidth: MediaSettingsRange,
+    redEyeReduction: RedEyeReduction
+  ): PhotoCapabilities = {
+    val __obj = js.Dynamic.literal(fillLightMode = fillLightMode, imageHeight = imageHeight, imageWidth = imageWidth, redEyeReduction = redEyeReduction)
+  
+    __obj.asInstanceOf[PhotoCapabilities]
+  }
+}
+

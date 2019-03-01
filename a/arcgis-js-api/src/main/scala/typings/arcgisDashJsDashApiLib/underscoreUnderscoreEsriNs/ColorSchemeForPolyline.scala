@@ -60,3 +60,23 @@ trait ColorSchemeForPolyline
   var width: scala.Double
 }
 
+object ColorSchemeForPolyline {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    colorsForClassBreaks: js.Array[ColorSchemeForPolylineColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    theme: java.lang.String,
+    width: scala.Double
+  ): ColorSchemeForPolyline = {
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, theme = theme, width = width)
+  
+    __obj.asInstanceOf[ColorSchemeForPolyline]
+  }
+}
+

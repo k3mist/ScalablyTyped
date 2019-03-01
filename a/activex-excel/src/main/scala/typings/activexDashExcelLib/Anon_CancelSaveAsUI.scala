@@ -11,3 +11,12 @@ trait Anon_CancelSaveAsUI extends js.Object {
   val Wb: activexDashExcelLib.ExcelNs.Workbook
 }
 
+object Anon_CancelSaveAsUI {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, SaveAsUI: scala.Boolean, Wb: activexDashExcelLib.ExcelNs.Workbook): Anon_CancelSaveAsUI = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, SaveAsUI = SaveAsUI, Wb = Wb)
+  
+    __obj.asInstanceOf[Anon_CancelSaveAsUI]
+  }
+}
+

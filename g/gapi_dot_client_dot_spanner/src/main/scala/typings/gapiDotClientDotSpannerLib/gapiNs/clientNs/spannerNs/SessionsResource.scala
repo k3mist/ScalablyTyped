@@ -115,3 +115,57 @@ trait SessionsResource extends js.Object {
   def streamingRead(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
 }
 
+object SessionsResource {
+  @scala.inline
+  def apply(
+    beginTransaction: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Transaction]
+    ],
+    commit: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Session]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    executeSql: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
+    ],
+    executeStreamingSql: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Session]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabaseFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse]
+    ],
+    read: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
+    ],
+    rollback: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    streamingRead: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
+    ]
+  ): SessionsResource = {
+    val __obj = js.Dynamic.literal(beginTransaction = beginTransaction, commit = commit, create = create, delete = delete, executeSql = executeSql, executeStreamingSql = executeStreamingSql, get = get, list = list, read = read, rollback = rollback, streamingRead = streamingRead)
+  
+    __obj.asInstanceOf[SessionsResource]
+  }
+}
+

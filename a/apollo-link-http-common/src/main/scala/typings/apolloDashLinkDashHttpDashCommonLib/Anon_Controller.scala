@@ -10,3 +10,12 @@ trait Anon_Controller extends js.Object {
   var signal: js.Any
 }
 
+object Anon_Controller {
+  @scala.inline
+  def apply(controller: js.Any, signal: js.Any): Anon_Controller = {
+    val __obj = js.Dynamic.literal(controller = controller, signal = signal)
+  
+    __obj.asInstanceOf[Anon_Controller]
+  }
+}
+

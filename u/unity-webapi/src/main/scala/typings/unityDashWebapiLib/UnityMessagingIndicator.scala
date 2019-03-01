@@ -18,3 +18,21 @@ trait UnityMessagingIndicator extends js.Object {
   def showIndicator(name: java.lang.String, indicatorProperties: UnityIndicatorProperties): js.Any
 }
 
+object UnityMessagingIndicator {
+  @scala.inline
+  def apply(
+    addAction: js.Function2[java.lang.String, js.Function, js.Any],
+    clearIndicator: js.Function1[java.lang.String, js.Any],
+    clearIndicators: js.Function0[js.Any],
+    onPresenceChanged: js.Function1[js.Function, js.Any],
+    presence: java.lang.String,
+    removeAction: js.Function1[java.lang.String, js.Any],
+    removeActions: js.Function0[js.Any],
+    showIndicator: js.Function2[java.lang.String, UnityIndicatorProperties, js.Any]
+  ): UnityMessagingIndicator = {
+    val __obj = js.Dynamic.literal(addAction = addAction, clearIndicator = clearIndicator, clearIndicators = clearIndicators, onPresenceChanged = onPresenceChanged, presence = presence, removeAction = removeAction, removeActions = removeActions, showIndicator = showIndicator)
+  
+    __obj.asInstanceOf[UnityMessagingIndicator]
+  }
+}
+

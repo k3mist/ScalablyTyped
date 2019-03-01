@@ -25,3 +25,12 @@ trait PersistentVolumeStatus extends js.Object {
   val reason: java.lang.String
 }
 
+object PersistentVolumeStatus {
+  @scala.inline
+  def apply(message: java.lang.String, phase: java.lang.String, reason: java.lang.String): PersistentVolumeStatus = {
+    val __obj = js.Dynamic.literal(message = message, phase = phase, reason = reason)
+  
+    __obj.asInstanceOf[PersistentVolumeStatus]
+  }
+}
+

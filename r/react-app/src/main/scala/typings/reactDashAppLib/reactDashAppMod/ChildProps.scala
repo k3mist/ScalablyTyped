@@ -10,3 +10,12 @@ trait ChildProps extends js.Object {
   def action(params: js.Any): js.Any
 }
 
+object ChildProps {
+  @scala.inline
+  def apply(action: js.Function1[js.Any, js.Any], path: java.lang.String): ChildProps = {
+    val __obj = js.Dynamic.literal(action = action, path = path)
+  
+    __obj.asInstanceOf[ChildProps]
+  }
+}
+

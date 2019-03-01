@@ -12,3 +12,15 @@ trait Anon_Any[T] extends js.Object {
   def factory(): T
 }
 
+object Anon_Any {
+  @scala.inline
+  def apply[T](
+    factory: js.Function0[T],
+    providedIn: atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root | atAngularCoreLib.atAngularCoreLibStrings.any = null
+  ): Anon_Any[T] = {
+    val __obj = js.Dynamic.literal(factory = factory)
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Any[T]]
+  }
+}
+

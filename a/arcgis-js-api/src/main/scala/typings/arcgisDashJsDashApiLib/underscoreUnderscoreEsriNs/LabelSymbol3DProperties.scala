@@ -20,3 +20,22 @@ trait LabelSymbol3DProperties extends Symbol3DProperties {
   var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.undefined
 }
 
+object LabelSymbol3DProperties {
+  @scala.inline
+  def apply(
+    callout: Callout3DProperties = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    styleOrigin: Symbol3DStyleOrigin = null,
+    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null,
+    verticalOffset: LabelSymbol3DVerticalOffsetProperties = null
+  ): LabelSymbol3DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (callout != null) __obj.updateDynamic("callout")(callout)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin)
+    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
+    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset)
+    __obj.asInstanceOf[LabelSymbol3DProperties]
+  }
+}
+

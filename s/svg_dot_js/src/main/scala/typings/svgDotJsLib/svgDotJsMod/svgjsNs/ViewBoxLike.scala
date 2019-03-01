@@ -13,3 +13,12 @@ trait ViewBoxLike extends _ViewBoxAlias {
   var y: scala.Double
 }
 
+object ViewBoxLike {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double, x: scala.Double, y: scala.Double): ViewBoxLike = {
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[ViewBoxLike]
+  }
+}
+

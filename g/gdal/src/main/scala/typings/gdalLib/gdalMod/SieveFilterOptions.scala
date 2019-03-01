@@ -13,3 +13,19 @@ trait SieveFilterOptions extends js.Object {
   var threshold: scala.Double
 }
 
+object SieveFilterOptions {
+  @scala.inline
+  def apply(
+    dst: RasterBand,
+    src: RasterBand,
+    threshold: scala.Double,
+    connectedness: scala.Int | scala.Double = null,
+    mask: RasterBand = null
+  ): SieveFilterOptions = {
+    val __obj = js.Dynamic.literal(dst = dst, src = src, threshold = threshold)
+    if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
+    __obj.asInstanceOf[SieveFilterOptions]
+  }
+}
+

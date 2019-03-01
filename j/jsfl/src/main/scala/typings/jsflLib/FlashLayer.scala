@@ -18,3 +18,23 @@ trait FlashLayer extends js.Object {
   var visible: scala.Boolean
 }
 
+object FlashLayer {
+  @scala.inline
+  def apply(
+    color: js.Any,
+    frameCount: scala.Double,
+    frames: js.Array[FlashFrame],
+    height: scala.Double,
+    layerType: java.lang.String,
+    locked: scala.Boolean,
+    name: java.lang.String,
+    outline: scala.Boolean,
+    parentLayer: FlashLayer,
+    visible: scala.Boolean
+  ): FlashLayer = {
+    val __obj = js.Dynamic.literal(color = color, frameCount = frameCount, frames = frames, height = height, layerType = layerType, locked = locked, name = name, outline = outline, parentLayer = parentLayer, visible = visible)
+  
+    __obj.asInstanceOf[FlashLayer]
+  }
+}
+

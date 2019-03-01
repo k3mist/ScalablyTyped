@@ -20,3 +20,12 @@ trait TaskAgentAuthorization extends js.Object {
   var publicKey: TaskAgentPublicKey
 }
 
+object TaskAgentAuthorization {
+  @scala.inline
+  def apply(authorizationUrl: java.lang.String, clientId: java.lang.String, publicKey: TaskAgentPublicKey): TaskAgentAuthorization = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, clientId = clientId, publicKey = publicKey)
+  
+    __obj.asInstanceOf[TaskAgentAuthorization]
+  }
+}
+

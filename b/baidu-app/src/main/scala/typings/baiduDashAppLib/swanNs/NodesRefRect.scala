@@ -12,3 +12,21 @@ trait NodesRefRect extends RectArea {
   var id: java.lang.String
 }
 
+object NodesRefRect {
+  @scala.inline
+  def apply(
+    bottom: scala.Double,
+    dataset: js.Any,
+    height: scala.Double,
+    id: java.lang.String,
+    left: scala.Double,
+    right: scala.Double,
+    top: scala.Double,
+    width: scala.Double
+  ): NodesRefRect = {
+    val __obj = js.Dynamic.literal(bottom = bottom, dataset = dataset, height = height, id = id, left = left, right = right, top = top, width = width)
+  
+    __obj.asInstanceOf[NodesRefRect]
+  }
+}
+

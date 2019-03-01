@@ -15,3 +15,20 @@ trait AffineTransformBuilder extends js.Object {
   def setTranslateY(translateY: stdLib.Number): AffineTransformBuilder
 }
 
+object AffineTransformBuilder {
+  @scala.inline
+  def apply(
+    build: js.Function0[AffineTransform],
+    setScaleX: js.Function1[stdLib.Number, AffineTransformBuilder],
+    setScaleY: js.Function1[stdLib.Number, AffineTransformBuilder],
+    setShearX: js.Function1[stdLib.Number, AffineTransformBuilder],
+    setShearY: js.Function1[stdLib.Number, AffineTransformBuilder],
+    setTranslateX: js.Function1[stdLib.Number, AffineTransformBuilder],
+    setTranslateY: js.Function1[stdLib.Number, AffineTransformBuilder]
+  ): AffineTransformBuilder = {
+    val __obj = js.Dynamic.literal(build = build, setScaleX = setScaleX, setScaleY = setScaleY, setShearX = setShearX, setShearY = setShearY, setTranslateX = setTranslateX, setTranslateY = setTranslateY)
+  
+    __obj.asInstanceOf[AffineTransformBuilder]
+  }
+}
+

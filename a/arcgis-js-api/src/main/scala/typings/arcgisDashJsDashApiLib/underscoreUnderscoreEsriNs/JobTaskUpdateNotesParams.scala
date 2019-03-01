@@ -27,3 +27,19 @@ trait JobTaskUpdateNotesParams
   var user: java.lang.String
 }
 
+object JobTaskUpdateNotesParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    notes: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskUpdateNotesParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, notes = notes, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskUpdateNotesParams]
+  }
+}
+

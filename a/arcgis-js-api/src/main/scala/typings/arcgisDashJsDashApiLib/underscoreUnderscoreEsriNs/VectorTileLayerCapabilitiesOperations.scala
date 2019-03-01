@@ -21,3 +21,18 @@ trait VectorTileLayerCapabilitiesOperations
   var supportsTileMap: scala.Boolean
 }
 
+object VectorTileLayerCapabilitiesOperations {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    supportsExportTiles: scala.Boolean,
+    supportsTileMap: scala.Boolean
+  ): VectorTileLayerCapabilitiesOperations = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsExportTiles = supportsExportTiles, supportsTileMap = supportsTileMap)
+  
+    __obj.asInstanceOf[VectorTileLayerCapabilitiesOperations]
+  }
+}
+

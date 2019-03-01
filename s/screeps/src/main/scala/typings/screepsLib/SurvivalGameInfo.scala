@@ -23,3 +23,12 @@ trait SurvivalGameInfo extends js.Object {
   var wave: scala.Double
 }
 
+object SurvivalGameInfo {
+  @scala.inline
+  def apply(score: scala.Double, timeToWave: scala.Double, wave: scala.Double): SurvivalGameInfo = {
+    val __obj = js.Dynamic.literal(score = score, timeToWave = timeToWave, wave = wave)
+  
+    __obj.asInstanceOf[SurvivalGameInfo]
+  }
+}
+

@@ -19,3 +19,12 @@ trait InternalPropertyDescriptor extends js.Object {
   var value: js.UndefOr[RemoteObject] = js.undefined
 }
 
+object InternalPropertyDescriptor {
+  @scala.inline
+  def apply(name: java.lang.String, value: RemoteObject = null): InternalPropertyDescriptor = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[InternalPropertyDescriptor]
+  }
+}
+

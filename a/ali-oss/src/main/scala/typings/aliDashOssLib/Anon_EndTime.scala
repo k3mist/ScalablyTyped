@@ -10,3 +10,12 @@ trait Anon_EndTime extends js.Object {
   var startTime: scala.Double
 }
 
+object Anon_EndTime {
+  @scala.inline
+  def apply(endTime: scala.Double, startTime: scala.Double): Anon_EndTime = {
+    val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
+  
+    __obj.asInstanceOf[Anon_EndTime]
+  }
+}
+

@@ -18,3 +18,18 @@ trait AdapterState extends js.Object {
   var powered: scala.Boolean
 }
 
+object AdapterState {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    available: scala.Boolean,
+    discovering: scala.Boolean,
+    name: java.lang.String,
+    powered: scala.Boolean
+  ): AdapterState = {
+    val __obj = js.Dynamic.literal(address = address, available = available, discovering = discovering, name = name, powered = powered)
+  
+    __obj.asInstanceOf[AdapterState]
+  }
+}
+

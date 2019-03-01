@@ -30,3 +30,34 @@ trait PlotMarker extends js.Object {
   var width: scala.Double
 }
 
+object PlotMarker {
+  @scala.inline
+  def apply(
+    autocolorscale: scala.Boolean,
+    cauto: scala.Boolean,
+    cmax: scala.Double,
+    cmin: scala.Double,
+    color: Color | js.Array[Color],
+    colorbar: stdLib.Partial[ColorBar],
+    colors: js.Array[Color],
+    colorscale: java.lang.String | js.Array[java.lang.String] | (js.Array[js.Array[java.lang.String | scala.Double]]),
+    gradient: plotlyDotJsLib.Anon_Color,
+    line: stdLib.Partial[ScatterMarkerLine],
+    maxdisplayed: scala.Double,
+    opacity: scala.Double | js.Array[scala.Double],
+    reversescale: scala.Boolean,
+    showscale: scala.Boolean,
+    size: scala.Double | js.Array[scala.Double],
+    sizemax: scala.Double,
+    sizemin: scala.Double,
+    sizemode: plotlyDotJsLib.plotlyDotJsLibStrings.diameter | plotlyDotJsLib.plotlyDotJsLibStrings.area,
+    sizeref: scala.Double,
+    symbol: java.lang.String | js.Array[java.lang.String],
+    width: scala.Double
+  ): PlotMarker = {
+    val __obj = js.Dynamic.literal(autocolorscale = autocolorscale, cauto = cauto, cmax = cmax, cmin = cmin, color = color.asInstanceOf[js.Any], colorbar = colorbar, colors = colors, colorscale = colorscale.asInstanceOf[js.Any], gradient = gradient, line = line, maxdisplayed = maxdisplayed, opacity = opacity.asInstanceOf[js.Any], reversescale = reversescale, showscale = showscale, size = size.asInstanceOf[js.Any], sizemax = sizemax, sizemin = sizemin, sizemode = sizemode.asInstanceOf[js.Any], sizeref = sizeref, symbol = symbol.asInstanceOf[js.Any], width = width)
+  
+    __obj.asInstanceOf[PlotMarker]
+  }
+}
+

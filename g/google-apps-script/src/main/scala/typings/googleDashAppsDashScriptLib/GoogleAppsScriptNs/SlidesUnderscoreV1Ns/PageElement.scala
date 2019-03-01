@@ -32,3 +32,19 @@ trait PageElement extends js.Object {
   var transform: AffineTransform
 }
 
+object PageElement {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    element_kind: googleDashAppsDashScriptLib.Anon_Elementgroup,
+    object_id: java.lang.String,
+    size: Size,
+    title: java.lang.String,
+    transform: AffineTransform
+  ): PageElement = {
+    val __obj = js.Dynamic.literal(description = description, element_kind = element_kind, object_id = object_id, size = size, title = title, transform = transform)
+  
+    __obj.asInstanceOf[PageElement]
+  }
+}
+

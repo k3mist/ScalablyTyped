@@ -82,3 +82,27 @@ trait XMap extends XElementAccess {
   def remove(Key: js.Any): js.Any
 }
 
+object XMap {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    KeyType: activexDashLibreofficeLib.`type`,
+    ValueType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    clear: js.Function0[scala.Unit],
+    containsKey: js.Function1[js.Any, scala.Boolean],
+    containsValue: js.Function1[js.Any, scala.Boolean],
+    get: js.Function1[js.Any, js.Any],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    put: js.Function2[js.Any, js.Any, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[js.Any, js.Any]
+  ): XMap = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = acquire, clear = clear, containsKey = containsKey, containsValue = containsValue, get = get, getElementType = getElementType, hasElements = hasElements, put = put, queryInterface = queryInterface, release = release, remove = remove)
+  
+    __obj.asInstanceOf[XMap]
+  }
+}
+

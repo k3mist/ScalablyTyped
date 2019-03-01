@@ -15,3 +15,15 @@ trait PushPermissionDescriptor
   var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PushPermissionDescriptor {
+  @scala.inline
+  def apply(
+    name: navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.push,
+    userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): PushPermissionDescriptor = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly)
+    __obj.asInstanceOf[PushPermissionDescriptor]
+  }
+}
+

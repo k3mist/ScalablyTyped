@@ -16,3 +16,12 @@ trait LocalizedName extends js.Object {
   var Name: java.lang.String
 }
 
+object LocalizedName {
+  @scala.inline
+  def apply(Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, Name: java.lang.String): LocalizedName = {
+    val __obj = js.Dynamic.literal(Locale = Locale, Name = Name)
+  
+    __obj.asInstanceOf[LocalizedName]
+  }
+}
+

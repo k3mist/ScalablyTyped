@@ -10,3 +10,12 @@ trait SaveDetails extends js.Object {
   var tabId: scala.Double
 }
 
+object SaveDetails {
+  @scala.inline
+  def apply(tabId: scala.Double): SaveDetails = {
+    val __obj = js.Dynamic.literal(tabId = tabId)
+  
+    __obj.asInstanceOf[SaveDetails]
+  }
+}
+

@@ -19,3 +19,27 @@ trait IPlayReadySecureStopServiceRequest extends IPlayReadyServiceRequest {
   var updateTime: stdLib.Date
 }
 
+object IPlayReadySecureStopServiceRequest {
+  @scala.inline
+  def apply(
+    beginServiceRequest: js.Function0[winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction],
+    challengeCustomData: java.lang.String,
+    generateManualEnablingChallenge: js.Function0[PlayReadySoapMessage],
+    nextServiceRequest: js.Function0[IPlayReadyServiceRequest],
+    processManualEnablingResponse: js.Function1[js.Array[scala.Double], winrtDashUwpLib.WindowsNs.WinRTError],
+    protectionSystem: java.lang.String,
+    publisherCertificate: scala.Double,
+    responseCustomData: java.lang.String,
+    sessionID: java.lang.String,
+    startTime: stdLib.Date,
+    stopped: scala.Boolean,
+    `type`: java.lang.String,
+    updateTime: stdLib.Date,
+    uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
+  ): IPlayReadySecureStopServiceRequest = {
+    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest, challengeCustomData = challengeCustomData, generateManualEnablingChallenge = generateManualEnablingChallenge, nextServiceRequest = nextServiceRequest, processManualEnablingResponse = processManualEnablingResponse, protectionSystem = protectionSystem, publisherCertificate = publisherCertificate, responseCustomData = responseCustomData, sessionID = sessionID, startTime = startTime, stopped = stopped, `type` = `type`, updateTime = updateTime, uri = uri)
+  
+    __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
+  }
+}
+

@@ -28,3 +28,21 @@ trait ParseResult extends js.Object {
   var Value: scala.Double
 }
 
+object ParseResult {
+  @scala.inline
+  def apply(
+    CharLen: scala.Double,
+    ContFlags: scala.Double,
+    DequotedNameOrString: java.lang.String,
+    EndPos: scala.Double,
+    LeadingWhiteSpace: scala.Double,
+    StartFlags: scala.Double,
+    TokenType: scala.Double,
+    Value: scala.Double
+  ): ParseResult = {
+    val __obj = js.Dynamic.literal(CharLen = CharLen, ContFlags = ContFlags, DequotedNameOrString = DequotedNameOrString, EndPos = EndPos, LeadingWhiteSpace = LeadingWhiteSpace, StartFlags = StartFlags, TokenType = TokenType, Value = Value)
+  
+    __obj.asInstanceOf[ParseResult]
+  }
+}
+

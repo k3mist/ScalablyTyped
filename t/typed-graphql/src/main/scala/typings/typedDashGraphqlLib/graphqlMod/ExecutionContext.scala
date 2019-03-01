@@ -15,3 +15,19 @@ trait ExecutionContext extends js.Object {
   var variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object ExecutionContext {
+  @scala.inline
+  def apply(
+    errors: js.Array[GraphQLError],
+    fragments: org.scalablytyped.runtime.StringDictionary[FragmentDefinition],
+    operation: OperationDefinition,
+    rootValue: js.Any,
+    schema: GraphQLSchema,
+    variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): ExecutionContext = {
+    val __obj = js.Dynamic.literal(errors = errors, fragments = fragments, operation = operation, rootValue = rootValue, schema = schema, variableValues = variableValues)
+  
+    __obj.asInstanceOf[ExecutionContext]
+  }
+}
+

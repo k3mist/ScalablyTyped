@@ -182,3 +182,33 @@ trait XConfigurationController
   def update(): scala.Unit
 }
 
+object XConfigurationController {
+  @scala.inline
+  def apply(
+    CurrentConfiguration: XConfiguration,
+    RequestedConfiguration: XConfiguration,
+    addConfigurationChangeListener: js.Function3[XConfigurationChangeListener, java.lang.String, js.Any, scala.Unit],
+    addResourceFactory: js.Function2[java.lang.String, XResourceFactory, scala.Unit],
+    getCurrentConfiguration: js.Function0[XConfiguration],
+    getRequestedConfiguration: js.Function0[XConfiguration],
+    getResource: js.Function1[XResourceId, XResource],
+    getResourceFactory: js.Function1[java.lang.String, XResourceFactory],
+    hasPendingRequests: js.Function0[scala.Boolean],
+    lock: js.Function0[scala.Unit],
+    notifyEvent: js.Function1[ConfigurationChangeEvent, scala.Unit],
+    postChangeRequest: js.Function1[XConfigurationChangeRequest, scala.Unit],
+    removeConfigurationChangeListener: js.Function1[XConfigurationChangeListener, scala.Unit],
+    removeResourceFactoryForReference: js.Function1[XResourceFactory, scala.Unit],
+    removeResourceFactoryForURL: js.Function1[java.lang.String, scala.Unit],
+    requestResourceActivation: js.Function2[XResourceId, ResourceActivationMode, scala.Unit],
+    requestResourceDeactivation: js.Function1[XResourceId, scala.Unit],
+    restoreConfiguration: js.Function1[XConfiguration, scala.Unit],
+    unlock: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XConfigurationController = {
+    val __obj = js.Dynamic.literal(CurrentConfiguration = CurrentConfiguration, RequestedConfiguration = RequestedConfiguration, addConfigurationChangeListener = addConfigurationChangeListener, addResourceFactory = addResourceFactory, getCurrentConfiguration = getCurrentConfiguration, getRequestedConfiguration = getRequestedConfiguration, getResource = getResource, getResourceFactory = getResourceFactory, hasPendingRequests = hasPendingRequests, lock = lock, notifyEvent = notifyEvent, postChangeRequest = postChangeRequest, removeConfigurationChangeListener = removeConfigurationChangeListener, removeResourceFactoryForReference = removeResourceFactoryForReference, removeResourceFactoryForURL = removeResourceFactoryForURL, requestResourceActivation = requestResourceActivation, requestResourceDeactivation = requestResourceDeactivation, restoreConfiguration = restoreConfiguration, unlock = unlock, update = update)
+  
+    __obj.asInstanceOf[XConfigurationController]
+  }
+}
+

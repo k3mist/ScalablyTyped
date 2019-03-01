@@ -10,3 +10,12 @@ trait Anon_AdCode extends js.Object {
   var city: java.lang.String
 }
 
+object Anon_AdCode {
+  @scala.inline
+  def apply(adCode: java.lang.String, city: java.lang.String): Anon_AdCode = {
+    val __obj = js.Dynamic.literal(adCode = adCode, city = city)
+  
+    __obj.asInstanceOf[Anon_AdCode]
+  }
+}
+

@@ -11,3 +11,16 @@ trait RootComponentProps extends js.Object {
   var store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]
 }
 
+object RootComponentProps {
+  @scala.inline
+  def apply(
+    history: historyLib.historyMod.History[historyLib.historyMod.LocationState],
+    routes: reactLib.reactMod.Global.JSXNs.Element,
+    store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]
+  ): RootComponentProps = {
+    val __obj = js.Dynamic.literal(history = history, routes = routes, store = store)
+  
+    __obj.asInstanceOf[RootComponentProps]
+  }
+}
+

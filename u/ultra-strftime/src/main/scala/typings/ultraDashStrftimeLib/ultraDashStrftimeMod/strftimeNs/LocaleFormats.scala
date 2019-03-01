@@ -26,3 +26,22 @@ trait LocaleFormats extends js.Object {
   var x: java.lang.String
 }
 
+object LocaleFormats {
+  @scala.inline
+  def apply(
+    D: java.lang.String,
+    F: java.lang.String,
+    R: java.lang.String,
+    T: java.lang.String,
+    X: java.lang.String,
+    c: java.lang.String,
+    r: java.lang.String,
+    v: java.lang.String,
+    x: java.lang.String
+  ): LocaleFormats = {
+    val __obj = js.Dynamic.literal(D = D, F = F, R = R, T = T, X = X, c = c, r = r, v = v, x = x)
+  
+    __obj.asInstanceOf[LocaleFormats]
+  }
+}
+

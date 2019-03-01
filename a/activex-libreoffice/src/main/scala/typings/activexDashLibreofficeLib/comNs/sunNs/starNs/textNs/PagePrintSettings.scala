@@ -27,3 +27,22 @@ trait PagePrintSettings extends js.Object {
   var VertMargin: scala.Double
 }
 
+object PagePrintSettings {
+  @scala.inline
+  def apply(
+    BottomMargin: scala.Double,
+    HoriMargin: scala.Double,
+    IsLandscape: scala.Boolean,
+    LeftMargin: scala.Double,
+    PageColumns: scala.Double,
+    PageRows: scala.Double,
+    RightMargin: scala.Double,
+    TopMargin: scala.Double,
+    VertMargin: scala.Double
+  ): PagePrintSettings = {
+    val __obj = js.Dynamic.literal(BottomMargin = BottomMargin, HoriMargin = HoriMargin, IsLandscape = IsLandscape, LeftMargin = LeftMargin, PageColumns = PageColumns, PageRows = PageRows, RightMargin = RightMargin, TopMargin = TopMargin, VertMargin = VertMargin)
+  
+    __obj.asInstanceOf[PagePrintSettings]
+  }
+}
+

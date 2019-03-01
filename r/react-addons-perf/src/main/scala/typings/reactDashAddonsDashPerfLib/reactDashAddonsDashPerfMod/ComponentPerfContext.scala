@@ -10,3 +10,12 @@ trait ComponentPerfContext extends js.Object {
   var owner: java.lang.String
 }
 
+object ComponentPerfContext {
+  @scala.inline
+  def apply(current: java.lang.String, owner: java.lang.String): ComponentPerfContext = {
+    val __obj = js.Dynamic.literal(current = current, owner = owner)
+  
+    __obj.asInstanceOf[ComponentPerfContext]
+  }
+}
+

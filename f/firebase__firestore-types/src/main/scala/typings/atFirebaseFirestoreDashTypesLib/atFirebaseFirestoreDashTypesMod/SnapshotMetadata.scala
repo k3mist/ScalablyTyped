@@ -32,3 +32,16 @@ trait SnapshotMetadata extends js.Object {
   def isEqual(other: SnapshotMetadata): scala.Boolean
 }
 
+object SnapshotMetadata {
+  @scala.inline
+  def apply(
+    fromCache: scala.Boolean,
+    hasPendingWrites: scala.Boolean,
+    isEqual: js.Function1[SnapshotMetadata, scala.Boolean]
+  ): SnapshotMetadata = {
+    val __obj = js.Dynamic.literal(fromCache = fromCache, hasPendingWrites = hasPendingWrites, isEqual = isEqual)
+  
+    __obj.asInstanceOf[SnapshotMetadata]
+  }
+}
+

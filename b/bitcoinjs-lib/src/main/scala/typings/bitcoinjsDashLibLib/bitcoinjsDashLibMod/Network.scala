@@ -14,3 +14,19 @@ trait Network extends js.Object {
   var wif: scala.Double
 }
 
+object Network {
+  @scala.inline
+  def apply(
+    bip32: bitcoinjsDashLibLib.Anon_Private,
+    messagePrefix: java.lang.String,
+    pubKeyHash: scala.Double,
+    scriptHash: scala.Double,
+    wif: scala.Double,
+    bech32: java.lang.String = null
+  ): Network = {
+    val __obj = js.Dynamic.literal(bip32 = bip32, messagePrefix = messagePrefix, pubKeyHash = pubKeyHash, scriptHash = scriptHash, wif = wif)
+    if (bech32 != null) __obj.updateDynamic("bech32")(bech32)
+    __obj.asInstanceOf[Network]
+  }
+}
+

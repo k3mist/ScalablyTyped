@@ -17,3 +17,22 @@ trait MultiPage_BeforeDropOrPaste_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object MultiPage_BeforeDropOrPaste_Parameter {
+  @scala.inline
+  def apply(
+    Action: activexDashMsformsLib.MSFormsNs.fmAction,
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Control: activexDashMsformsLib.MSFormsNs.Control,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Index: scala.Double,
+    Shift: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): MultiPage_BeforeDropOrPaste_Parameter = {
+    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+  
+    __obj.asInstanceOf[MultiPage_BeforeDropOrPaste_Parameter]
+  }
+}
+

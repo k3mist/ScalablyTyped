@@ -20,3 +20,12 @@ trait CustomEventParameters extends js.Object {
   var detail: js.Any
 }
 
+object CustomEventParameters {
+  @scala.inline
+  def apply(bubbles: scala.Boolean, cancelable: scala.Boolean, detail: js.Any): CustomEventParameters = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, detail = detail)
+  
+    __obj.asInstanceOf[CustomEventParameters]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_Callback extends js.Object {
   def callback(): scala.Unit
 }
 
+object Anon_Callback {
+  @scala.inline
+  def apply(callback: js.Function0[scala.Unit], icon: java.lang.String, text: java.lang.String): Anon_Callback = {
+    val __obj = js.Dynamic.literal(callback = callback, icon = icon, text = text)
+  
+    __obj.asInstanceOf[Anon_Callback]
+  }
+}
+

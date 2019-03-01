@@ -14,3 +14,19 @@ trait Anon_Create extends js.Object {
   var read: scala.Double
 }
 
+object Anon_Create {
+  @scala.inline
+  def apply(
+    create: scala.Double,
+    delete: scala.Double,
+    edit: scala.Double,
+    managePermissions: scala.Double,
+    none: scala.Double,
+    read: scala.Double
+  ): Anon_Create = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, edit = edit, managePermissions = managePermissions, none = none, read = read)
+  
+    __obj.asInstanceOf[Anon_Create]
+  }
+}
+

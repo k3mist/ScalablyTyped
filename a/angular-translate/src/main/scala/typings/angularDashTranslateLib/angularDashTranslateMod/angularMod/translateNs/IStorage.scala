@@ -10,3 +10,15 @@ trait IStorage extends js.Object {
   def put(name: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object IStorage {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, java.lang.String],
+    put: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): IStorage = {
+    val __obj = js.Dynamic.literal(get = get, put = put)
+  
+    __obj.asInstanceOf[IStorage]
+  }
+}
+

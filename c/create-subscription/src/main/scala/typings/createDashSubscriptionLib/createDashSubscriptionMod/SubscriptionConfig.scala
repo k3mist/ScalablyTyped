@@ -22,3 +22,15 @@ trait SubscriptionConfig[S, T] extends js.Object {
   def subscribe(source: S, callback: js.Function1[/* newValue */ T, scala.Unit]): Unsubscribe
 }
 
+object SubscriptionConfig {
+  @scala.inline
+  def apply[S, T](
+    getCurrentValue: js.Function1[S, T],
+    subscribe: js.Function2[S, js.Function1[/* newValue */ T, scala.Unit], Unsubscribe]
+  ): SubscriptionConfig[S, T] = {
+    val __obj = js.Dynamic.literal(getCurrentValue = getCurrentValue, subscribe = subscribe)
+  
+    __obj.asInstanceOf[SubscriptionConfig[S, T]]
+  }
+}
+

@@ -18,3 +18,33 @@ trait AnnotationsResource extends js.Object {
   def update(request: gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
 }
 
+object AnnotationsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltAnnotationIdCountry, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKeyLayerId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotations]
+    ],
+    summary: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLayerIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationsSummary]
+    ],
+    update: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltAnnotationIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+    ]
+  ): AnnotationsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, summary = summary, update = update)
+  
+    __obj.asInstanceOf[AnnotationsResource]
+  }
+}
+

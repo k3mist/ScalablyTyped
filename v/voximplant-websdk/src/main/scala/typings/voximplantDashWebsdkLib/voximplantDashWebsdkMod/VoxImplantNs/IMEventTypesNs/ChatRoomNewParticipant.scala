@@ -24,3 +24,12 @@ trait ChatRoomNewParticipant
   var room: java.lang.String
 }
 
+object ChatRoomNewParticipant {
+  @scala.inline
+  def apply(displayName: java.lang.String, participant: java.lang.String, room: java.lang.String): ChatRoomNewParticipant = {
+    val __obj = js.Dynamic.literal(displayName = displayName, participant = participant, room = room)
+  
+    __obj.asInstanceOf[ChatRoomNewParticipant]
+  }
+}
+

@@ -14,3 +14,12 @@ trait IItemModifiers extends js.Object {
   var matchesPredicate: scala.Boolean
 }
 
+object IItemModifiers {
+  @scala.inline
+  def apply(active: scala.Boolean, disabled: scala.Boolean, matchesPredicate: scala.Boolean): IItemModifiers = {
+    val __obj = js.Dynamic.literal(active = active, disabled = disabled, matchesPredicate = matchesPredicate)
+  
+    __obj.asInstanceOf[IItemModifiers]
+  }
+}
+

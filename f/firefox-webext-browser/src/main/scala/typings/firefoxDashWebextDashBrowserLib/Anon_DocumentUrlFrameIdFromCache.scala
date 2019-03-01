@@ -50,3 +50,31 @@ trait Anon_DocumentUrlFrameIdFromCache extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_DocumentUrlFrameIdFromCache {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    fromCache: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    statusCode: scala.Double,
+    statusLine: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    documentUrl: java.lang.String = null,
+    ip: java.lang.String = null,
+    originUrl: java.lang.String = null,
+    responseHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
+  ): Anon_DocumentUrlFrameIdFromCache = {
+    val __obj = js.Dynamic.literal(frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[Anon_DocumentUrlFrameIdFromCache]
+  }
+}
+

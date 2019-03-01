@@ -14,3 +14,12 @@ trait INotificationArgs extends js.Object {
   var `type`: NotificationType
 }
 
+object INotificationArgs {
+  @scala.inline
+  def apply(header: java.lang.String, message: java.lang.String, `type`: NotificationType): INotificationArgs = {
+    val __obj = js.Dynamic.literal(header = header, message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[INotificationArgs]
+  }
+}
+

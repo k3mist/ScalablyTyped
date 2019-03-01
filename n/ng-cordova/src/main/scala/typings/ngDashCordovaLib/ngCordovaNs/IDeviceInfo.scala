@@ -17,3 +17,22 @@ trait IDeviceInfo extends js.Object {
   var version: java.lang.String
 }
 
+object IDeviceInfo {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    cordova: java.lang.String,
+    isVirtual: scala.Boolean,
+    manufacturer: java.lang.String,
+    model: java.lang.String,
+    platform: java.lang.String,
+    serial: java.lang.String,
+    uuid: java.lang.String,
+    version: java.lang.String
+  ): IDeviceInfo = {
+    val __obj = js.Dynamic.literal(available = available, cordova = cordova, isVirtual = isVirtual, manufacturer = manufacturer, model = model, platform = platform, serial = serial, uuid = uuid, version = version)
+  
+    __obj.asInstanceOf[IDeviceInfo]
+  }
+}
+

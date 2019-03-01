@@ -21,3 +21,26 @@ trait PreviousMap extends js.Object {
   def withContent(): scala.Boolean
 }
 
+object PreviousMap {
+  @scala.inline
+  def apply(
+    annotation: java.lang.String,
+    consumer: js.Function0[js.Any],
+    consumerCache: js.Any,
+    decodeInline: js.Function1[js.Any, js.Any],
+    file: java.lang.String,
+    `inline`: js.Any,
+    isMap: js.Function1[js.Any, scala.Boolean],
+    loadAnnotation: js.Function1[js.Any, scala.Unit],
+    loadMap: js.Function2[js.Any, js.Any, js.Any],
+    root: java.lang.String,
+    startWith: js.Function2[js.Any, js.Any, scala.Boolean],
+    text: java.lang.String,
+    withContent: js.Function0[scala.Boolean]
+  ): PreviousMap = {
+    val __obj = js.Dynamic.literal(annotation = annotation, consumer = consumer, consumerCache = consumerCache, decodeInline = decodeInline, file = file, `inline` = `inline`, isMap = isMap, loadAnnotation = loadAnnotation, loadMap = loadMap, root = root, startWith = startWith, text = text, withContent = withContent)
+  
+    __obj.asInstanceOf[PreviousMap]
+  }
+}
+

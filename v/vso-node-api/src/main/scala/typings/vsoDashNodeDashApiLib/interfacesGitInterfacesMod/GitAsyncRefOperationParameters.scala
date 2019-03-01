@@ -24,3 +24,17 @@ trait GitAsyncRefOperationParameters extends js.Object {
   var source: GitAsyncRefOperationSource
 }
 
+object GitAsyncRefOperationParameters {
+  @scala.inline
+  def apply(
+    generatedRefName: java.lang.String,
+    ontoRefName: java.lang.String,
+    repository: GitRepository,
+    source: GitAsyncRefOperationSource
+  ): GitAsyncRefOperationParameters = {
+    val __obj = js.Dynamic.literal(generatedRefName = generatedRefName, ontoRefName = ontoRefName, repository = repository, source = source)
+  
+    __obj.asInstanceOf[GitAsyncRefOperationParameters]
+  }
+}
+

@@ -56,3 +56,25 @@ trait GetReplicationGroupResult extends js.Object {
   val snapshotWindow: java.lang.String
 }
 
+object GetReplicationGroupResult {
+  @scala.inline
+  def apply(
+    authTokenEnabled: scala.Boolean,
+    automaticFailoverEnabled: scala.Boolean,
+    configurationEndpointAddress: java.lang.String,
+    id: java.lang.String,
+    memberClusters: js.Array[java.lang.String],
+    nodeType: java.lang.String,
+    numberCacheClusters: scala.Double,
+    port: scala.Double,
+    primaryEndpointAddress: java.lang.String,
+    replicationGroupDescription: java.lang.String,
+    snapshotRetentionLimit: scala.Double,
+    snapshotWindow: java.lang.String
+  ): GetReplicationGroupResult = {
+    val __obj = js.Dynamic.literal(authTokenEnabled = authTokenEnabled, automaticFailoverEnabled = automaticFailoverEnabled, configurationEndpointAddress = configurationEndpointAddress, id = id, memberClusters = memberClusters, nodeType = nodeType, numberCacheClusters = numberCacheClusters, port = port, primaryEndpointAddress = primaryEndpointAddress, replicationGroupDescription = replicationGroupDescription, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow)
+  
+    __obj.asInstanceOf[GetReplicationGroupResult]
+  }
+}
+

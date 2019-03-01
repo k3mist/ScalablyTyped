@@ -10,3 +10,12 @@ trait Anon_Field extends js.Object {
   var fragment: java.lang.String
 }
 
+object Anon_Field {
+  @scala.inline
+  def apply(field: java.lang.String, fragment: java.lang.String): Anon_Field = {
+    val __obj = js.Dynamic.literal(field = field, fragment = fragment)
+  
+    __obj.asInstanceOf[Anon_Field]
+  }
+}
+

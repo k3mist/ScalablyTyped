@@ -13,3 +13,18 @@ trait Advertisement extends js.Object {
   var txPowerLevel: scala.Double
 }
 
+object Advertisement {
+  @scala.inline
+  def apply(
+    localName: java.lang.String,
+    manufacturerData: nodeLib.Buffer,
+    serviceData: nobleDashMacLib.Anon_Data,
+    serviceUuids: js.Array[java.lang.String],
+    txPowerLevel: scala.Double
+  ): Advertisement = {
+    val __obj = js.Dynamic.literal(localName = localName, manufacturerData = manufacturerData, serviceData = serviceData, serviceUuids = serviceUuids, txPowerLevel = txPowerLevel)
+  
+    __obj.asInstanceOf[Advertisement]
+  }
+}
+

@@ -17,3 +17,22 @@ trait Anon_Class extends js.Object {
   var vertexData: stdLib.Float64Array
 }
 
+object Anon_Class {
+  @scala.inline
+  def apply(
+    `class`: java.lang.String,
+    numPolygons: scala.Double,
+    numVerticesPerPolygon: stdLib.Uint32Array,
+    planeData: stdLib.Float64Array,
+    polygonPlaneIndexes: stdLib.Uint32Array,
+    polygonSharedIndexes: stdLib.Uint32Array,
+    polygonVertices: stdLib.Uint32Array,
+    shared: js.Array[openjscadLib.CSGNs.PolygonNs.Shared],
+    vertexData: stdLib.Float64Array
+  ): Anon_Class = {
+    val __obj = js.Dynamic.literal(`class` = `class`, numPolygons = numPolygons, numVerticesPerPolygon = numVerticesPerPolygon, planeData = planeData, polygonPlaneIndexes = polygonPlaneIndexes, polygonSharedIndexes = polygonSharedIndexes, polygonVertices = polygonVertices, shared = shared, vertexData = vertexData)
+  
+    __obj.asInstanceOf[Anon_Class]
+  }
+}
+

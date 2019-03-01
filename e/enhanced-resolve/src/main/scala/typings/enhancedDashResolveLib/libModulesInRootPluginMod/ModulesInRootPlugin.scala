@@ -13,3 +13,17 @@ trait ModulesInRootPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object ModulesInRootPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    path: java.lang.String,
+    source: java.lang.String,
+    target: java.lang.String
+  ): ModulesInRootPlugin = {
+    val __obj = js.Dynamic.literal(apply = apply, path = path, source = source, target = target)
+  
+    __obj.asInstanceOf[ModulesInRootPlugin]
+  }
+}
+

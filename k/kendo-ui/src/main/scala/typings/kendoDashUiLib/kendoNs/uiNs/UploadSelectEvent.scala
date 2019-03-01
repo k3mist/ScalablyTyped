@@ -10,3 +10,19 @@ trait UploadSelectEvent extends UploadEvent {
   var files: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object UploadSelectEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Upload,
+    e: js.Any = null,
+    files: js.Array[_] = null
+  ): UploadSelectEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (e != null) __obj.updateDynamic("e")(e)
+    if (files != null) __obj.updateDynamic("files")(files)
+    __obj.asInstanceOf[UploadSelectEvent]
+  }
+}
+

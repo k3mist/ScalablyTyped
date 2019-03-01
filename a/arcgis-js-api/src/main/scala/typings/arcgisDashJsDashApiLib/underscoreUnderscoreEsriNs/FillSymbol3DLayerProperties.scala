@@ -20,3 +20,18 @@ trait FillSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var outline: js.UndefOr[FillSymbol3DLayerOutlineProperties] = js.undefined
 }
 
+object FillSymbol3DLayerProperties {
+  @scala.inline
+  def apply(
+    edges: Edges3DProperties = null,
+    material: js.Any = null,
+    outline: FillSymbol3DLayerOutlineProperties = null
+  ): FillSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    __obj.asInstanceOf[FillSymbol3DLayerProperties]
+  }
+}
+

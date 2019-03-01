@@ -17,3 +17,15 @@ trait AssignShortcutCommand extends CommandWithSimpleStateBase {
   def execute(keyCode: scala.Double, callback: js.Function): scala.Boolean
 }
 
+object AssignShortcutCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function2[scala.Double, js.Function, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): AssignShortcutCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[AssignShortcutCommand]
+  }
+}
+

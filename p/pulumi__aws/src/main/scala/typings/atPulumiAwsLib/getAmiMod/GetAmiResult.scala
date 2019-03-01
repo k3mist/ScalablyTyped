@@ -135,3 +135,38 @@ trait GetAmiResult extends js.Object {
   val virtualizationType: java.lang.String
 }
 
+object GetAmiResult {
+  @scala.inline
+  def apply(
+    architecture: java.lang.String,
+    blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_DeviceNameEbsKey],
+    creationDate: java.lang.String,
+    description: java.lang.String,
+    hypervisor: java.lang.String,
+    id: java.lang.String,
+    imageId: java.lang.String,
+    imageLocation: java.lang.String,
+    imageOwnerAlias: java.lang.String,
+    imageType: java.lang.String,
+    kernelId: java.lang.String,
+    name: java.lang.String,
+    ownerId: java.lang.String,
+    platform: java.lang.String,
+    productCodes: js.Array[atPulumiAwsLib.Anon_ProductCodeId],
+    public: scala.Boolean,
+    ramdiskId: java.lang.String,
+    rootDeviceName: java.lang.String,
+    rootDeviceType: java.lang.String,
+    rootSnapshotId: java.lang.String,
+    sriovNetSupport: java.lang.String,
+    state: java.lang.String,
+    stateReason: org.scalablytyped.runtime.StringDictionary[js.Any],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    virtualizationType: java.lang.String
+  ): GetAmiResult = {
+    val __obj = js.Dynamic.literal(architecture = architecture, blockDeviceMappings = blockDeviceMappings, creationDate = creationDate, description = description, hypervisor = hypervisor, id = id, imageId = imageId, imageLocation = imageLocation, imageOwnerAlias = imageOwnerAlias, imageType = imageType, kernelId = kernelId, name = name, ownerId = ownerId, platform = platform, productCodes = productCodes, public = public, ramdiskId = ramdiskId, rootDeviceName = rootDeviceName, rootDeviceType = rootDeviceType, rootSnapshotId = rootSnapshotId, sriovNetSupport = sriovNetSupport, state = state, stateReason = stateReason, tags = tags, virtualizationType = virtualizationType)
+  
+    __obj.asInstanceOf[GetAmiResult]
+  }
+}
+

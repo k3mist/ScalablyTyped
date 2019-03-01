@@ -51,3 +51,34 @@ trait GatewayState extends js.Object {
   val tapeDriveType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object GatewayState {
+  @scala.inline
+  def apply(
+    activationKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    gatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    gatewayIpAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    gatewayName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    gatewayTimezone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    gatewayType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    mediumChangerType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    smbActiveDirectorySettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DomainNamePasswordUsername] = null,
+    smbGuestPassword: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tapeDriveType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): GatewayState = {
+    val __obj = js.Dynamic.literal()
+    if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
+    if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
+    if (gatewayName != null) __obj.updateDynamic("gatewayName")(gatewayName.asInstanceOf[js.Any])
+    if (gatewayTimezone != null) __obj.updateDynamic("gatewayTimezone")(gatewayTimezone.asInstanceOf[js.Any])
+    if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])
+    if (mediumChangerType != null) __obj.updateDynamic("mediumChangerType")(mediumChangerType.asInstanceOf[js.Any])
+    if (smbActiveDirectorySettings != null) __obj.updateDynamic("smbActiveDirectorySettings")(smbActiveDirectorySettings.asInstanceOf[js.Any])
+    if (smbGuestPassword != null) __obj.updateDynamic("smbGuestPassword")(smbGuestPassword.asInstanceOf[js.Any])
+    if (tapeDriveType != null) __obj.updateDynamic("tapeDriveType")(tapeDriveType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GatewayState]
+  }
+}
+

@@ -57,3 +57,22 @@ trait ItemDescriptor extends js.Object {
   var Width: scala.Double
 }
 
+object ItemDescriptor {
+  @scala.inline
+  def apply(
+    CommandURL: java.lang.String,
+    HelpURL: java.lang.String,
+    IsVisible: scala.Boolean,
+    ItemDescriptorContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    Label: java.lang.String,
+    Offset: scala.Double,
+    Style: scala.Double,
+    Type: scala.Double,
+    Width: scala.Double
+  ): ItemDescriptor = {
+    val __obj = js.Dynamic.literal(CommandURL = CommandURL, HelpURL = HelpURL, IsVisible = IsVisible, ItemDescriptorContainer = ItemDescriptorContainer, Label = Label, Offset = Offset, Style = Style, Type = Type, Width = Width)
+  
+    __obj.asInstanceOf[ItemDescriptor]
+  }
+}
+

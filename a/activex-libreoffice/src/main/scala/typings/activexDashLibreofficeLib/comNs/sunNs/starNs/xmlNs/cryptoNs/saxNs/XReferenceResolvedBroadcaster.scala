@@ -30,3 +30,18 @@ trait XReferenceResolvedBroadcaster
   def removeReferenceResolvedListener(referenceId: scala.Double, listener: XReferenceResolvedListener): scala.Unit
 }
 
+object XReferenceResolvedBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit]
+  ): XReferenceResolvedBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addReferenceResolvedListener = addReferenceResolvedListener, queryInterface = queryInterface, release = release, removeReferenceResolvedListener = removeReferenceResolvedListener)
+  
+    __obj.asInstanceOf[XReferenceResolvedBroadcaster]
+  }
+}
+

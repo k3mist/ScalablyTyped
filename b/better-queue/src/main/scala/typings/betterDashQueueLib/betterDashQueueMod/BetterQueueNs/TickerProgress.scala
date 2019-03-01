@@ -13,3 +13,18 @@ trait TickerProgress extends js.Object {
   var total: scala.Double
 }
 
+object TickerProgress {
+  @scala.inline
+  def apply(
+    complete: scala.Double,
+    eta: java.lang.String,
+    message: java.lang.String,
+    pct: scala.Double,
+    total: scala.Double
+  ): TickerProgress = {
+    val __obj = js.Dynamic.literal(complete = complete, eta = eta, message = message, pct = pct, total = total)
+  
+    __obj.asInstanceOf[TickerProgress]
+  }
+}
+

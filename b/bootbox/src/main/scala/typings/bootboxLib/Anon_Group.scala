@@ -11,3 +11,12 @@ trait Anon_Group extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Group {
+  @scala.inline
+  def apply(text: java.lang.String, value: java.lang.String, group: java.lang.String = null): Anon_Group = {
+    val __obj = js.Dynamic.literal(text = text, value = value)
+    if (group != null) __obj.updateDynamic("group")(group)
+    __obj.asInstanceOf[Anon_Group]
+  }
+}
+

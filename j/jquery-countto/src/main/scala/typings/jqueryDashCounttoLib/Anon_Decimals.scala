@@ -43,3 +43,25 @@ trait Anon_Decimals extends js.Object {
   def onUpdate(value: scala.Double): scala.Unit
 }
 
+object Anon_Decimals {
+  @scala.inline
+  def apply(
+    decimals: scala.Double,
+    formatter: js.Function2[
+      scala.Double, 
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-countto.jquery-countto.Options */ js.Object, 
+      java.lang.String
+    ],
+    from: scala.Double,
+    onComplete: js.Function1[scala.Double, scala.Unit],
+    onUpdate: js.Function1[scala.Double, scala.Unit],
+    refreshInterval: scala.Double,
+    speed: scala.Double,
+    to: scala.Double
+  ): Anon_Decimals = {
+    val __obj = js.Dynamic.literal(decimals = decimals, formatter = formatter, from = from, onComplete = onComplete, onUpdate = onUpdate, refreshInterval = refreshInterval, speed = speed, to = to)
+  
+    __obj.asInstanceOf[Anon_Decimals]
+  }
+}
+

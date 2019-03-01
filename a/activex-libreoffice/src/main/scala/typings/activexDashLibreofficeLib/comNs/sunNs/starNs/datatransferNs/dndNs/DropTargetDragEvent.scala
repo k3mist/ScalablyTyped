@@ -36,3 +36,20 @@ trait DropTargetDragEvent extends DropTargetEvent {
   var SourceActions: scala.Double
 }
 
+object DropTargetDragEvent {
+  @scala.inline
+  def apply(
+    Context: XDropTargetDragContext,
+    DropAction: scala.Double,
+    Dummy: scala.Double,
+    LocationX: scala.Double,
+    LocationY: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SourceActions: scala.Double
+  ): DropTargetDragEvent = {
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions)
+  
+    __obj.asInstanceOf[DropTargetDragEvent]
+  }
+}
+

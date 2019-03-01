@@ -20,3 +20,26 @@ trait XTextSection extends XTextContent {
   def getParentSection(): XTextSection
 }
 
+object XTextSection {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    ChildSections: activexDashInteropLib.SafeArray[XTextSection],
+    ParentSection: XTextSection,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getChildSections: js.Function0[activexDashInteropLib.SafeArray[XTextSection]],
+    getParentSection: js.Function0[XTextSection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XTextSection = {
+    val __obj = js.Dynamic.literal(Anchor = Anchor, ChildSections = ChildSections, ParentSection = ParentSection, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getChildSections = getChildSections, getParentSection = getParentSection, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[XTextSection]
+  }
+}
+

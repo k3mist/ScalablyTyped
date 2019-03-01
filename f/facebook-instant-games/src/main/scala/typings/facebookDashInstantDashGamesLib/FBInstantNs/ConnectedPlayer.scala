@@ -29,3 +29,16 @@ trait ConnectedPlayer extends js.Object {
   def getPhoto(): java.lang.String | scala.Null
 }
 
+object ConnectedPlayer {
+  @scala.inline
+  def apply(
+    getID: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String | scala.Null],
+    getPhoto: js.Function0[java.lang.String | scala.Null]
+  ): ConnectedPlayer = {
+    val __obj = js.Dynamic.literal(getID = getID, getName = getName, getPhoto = getPhoto)
+  
+    __obj.asInstanceOf[ConnectedPlayer]
+  }
+}
+

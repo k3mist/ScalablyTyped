@@ -36,3 +36,38 @@ trait KeyRingsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object KeyRingsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[KeyRing]
+    ],
+    cryptoKeys: CryptoKeysResource,
+    get: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[KeyRing]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListKeyRingsResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): KeyRingsResource = {
+    val __obj = js.Dynamic.literal(create = create, cryptoKeys = cryptoKeys, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[KeyRingsResource]
+  }
+}
+

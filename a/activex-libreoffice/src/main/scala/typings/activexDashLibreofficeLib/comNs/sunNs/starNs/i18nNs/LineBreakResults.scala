@@ -12,3 +12,16 @@ trait LineBreakResults extends js.Object {
   var rHyphenatedWord: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenatedWord
 }
 
+object LineBreakResults {
+  @scala.inline
+  def apply(
+    breakIndex: scala.Double,
+    breakType: scala.Double,
+    rHyphenatedWord: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenatedWord
+  ): LineBreakResults = {
+    val __obj = js.Dynamic.literal(breakIndex = breakIndex, breakType = breakType, rHyphenatedWord = rHyphenatedWord)
+  
+    __obj.asInstanceOf[LineBreakResults]
+  }
+}
+

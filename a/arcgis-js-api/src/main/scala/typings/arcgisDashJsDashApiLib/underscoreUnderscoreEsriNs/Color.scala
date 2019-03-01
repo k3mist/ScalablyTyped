@@ -308,3 +308,34 @@ trait color extends js.Object {
   def createVisualVariable(params: colorCreateVisualVariableParams): arcgisDashJsDashApiLib.IPromise[VisualVariableResult]
 }
 
+object color {
+  @scala.inline
+  def apply(
+    createAgeRenderer: js.Function1[colorCreateAgeRendererParams, arcgisDashJsDashApiLib.IPromise[AgeRendererResult]],
+    createClassBreaksRenderer: js.Function1[
+      colorCreateClassBreaksRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[ClassBreaksRendererResult]
+    ],
+    createContinuousRenderer: js.Function1[
+      colorCreateContinuousRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[ContinuousRendererResult]
+    ],
+    createPCContinuousRenderer: js.Function1[
+      colorCreatePCContinuousRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[PCContinuousRendererResult]
+    ],
+    createPCTrueColorRenderer: js.Function1[
+      colorCreatePCTrueColorRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[PCTrueColorRendererResult]
+    ],
+    createVisualVariable: js.Function1[
+      colorCreateVisualVariableParams, 
+      arcgisDashJsDashApiLib.IPromise[VisualVariableResult]
+    ]
+  ): color = {
+    val __obj = js.Dynamic.literal(createAgeRenderer = createAgeRenderer, createClassBreaksRenderer = createClassBreaksRenderer, createContinuousRenderer = createContinuousRenderer, createPCContinuousRenderer = createPCContinuousRenderer, createPCTrueColorRenderer = createPCTrueColorRenderer, createVisualVariable = createVisualVariable)
+  
+    __obj.asInstanceOf[color]
+  }
+}
+

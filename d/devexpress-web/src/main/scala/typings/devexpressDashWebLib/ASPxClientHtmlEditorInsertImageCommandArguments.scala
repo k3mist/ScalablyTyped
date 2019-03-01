@@ -36,3 +36,19 @@ trait ASPxClientHtmlEditorInsertImageCommandArguments extends ASPxClientHtmlEdit
   var useFloat: scala.Boolean
 }
 
+object ASPxClientHtmlEditorInsertImageCommandArguments {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    alt: java.lang.String,
+    selectedElement: js.Object,
+    src: java.lang.String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    useFloat: scala.Boolean
+  ): ASPxClientHtmlEditorInsertImageCommandArguments = {
+    val __obj = js.Dynamic.literal(align = align, alt = alt, selectedElement = selectedElement, src = src, styleSettings = styleSettings, useFloat = useFloat)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertImageCommandArguments]
+  }
+}
+

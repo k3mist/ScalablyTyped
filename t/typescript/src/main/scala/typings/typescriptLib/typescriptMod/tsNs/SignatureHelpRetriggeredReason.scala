@@ -19,3 +19,15 @@ trait SignatureHelpRetriggeredReason extends SignatureHelpTriggerReason {
   var triggerCharacter: js.UndefOr[SignatureHelpRetriggerCharacter] = js.undefined
 }
 
+object SignatureHelpRetriggeredReason {
+  @scala.inline
+  def apply(
+    kind: typescriptLib.typescriptLibStrings.retrigger,
+    triggerCharacter: SignatureHelpRetriggerCharacter = null
+  ): SignatureHelpRetriggeredReason = {
+    val __obj = js.Dynamic.literal(kind = kind)
+    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    __obj.asInstanceOf[SignatureHelpRetriggeredReason]
+  }
+}
+

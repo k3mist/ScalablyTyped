@@ -15,3 +15,16 @@ trait IMidiMessage extends js.Object {
   var `type`: MidiMessageType
 }
 
+object IMidiMessage {
+  @scala.inline
+  def apply(
+    rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    timestamp: scala.Double,
+    `type`: MidiMessageType
+  ): IMidiMessage = {
+    val __obj = js.Dynamic.literal(rawData = rawData, timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[IMidiMessage]
+  }
+}
+

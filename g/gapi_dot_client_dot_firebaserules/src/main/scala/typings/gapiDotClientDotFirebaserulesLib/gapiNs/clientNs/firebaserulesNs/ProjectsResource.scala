@@ -35,3 +35,19 @@ trait ProjectsResource extends js.Object {
   def test(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    releases: ReleasesResource,
+    rulesets: RulesetsResource,
+    test: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(releases = releases, rulesets = rulesets, test = test)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

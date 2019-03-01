@@ -80,3 +80,29 @@ trait TwitchExtContext extends js.Object {
   var volume: scala.Double
 }
 
+object TwitchExtContext {
+  @scala.inline
+  def apply(
+    arePlayerControlsVisible: scala.Boolean,
+    bitrate: scala.Double,
+    bufferSize: scala.Double,
+    displayResolution: java.lang.String,
+    game: java.lang.String,
+    hlsLatencyBroadcaster: scala.Double,
+    isFullScreen: scala.Boolean,
+    isMuted: scala.Boolean,
+    isPaused: scala.Boolean,
+    isTheatreMode: scala.Boolean,
+    language: java.lang.String,
+    mode: twitchDashExtLib.twitchDashExtLibStrings.viewer | twitchDashExtLib.twitchDashExtLibStrings.dashboard | twitchDashExtLib.twitchDashExtLibStrings.config,
+    playbackMode: twitchDashExtLib.twitchDashExtLibStrings.video | twitchDashExtLib.twitchDashExtLibStrings.audio | twitchDashExtLib.twitchDashExtLibStrings.remote | twitchDashExtLib.twitchDashExtLibStrings.`chat-only`,
+    theme: twitchDashExtLib.twitchDashExtLibStrings.light | twitchDashExtLib.twitchDashExtLibStrings.dark,
+    videoResolution: java.lang.String,
+    volume: scala.Double
+  ): TwitchExtContext = {
+    val __obj = js.Dynamic.literal(arePlayerControlsVisible = arePlayerControlsVisible, bitrate = bitrate, bufferSize = bufferSize, displayResolution = displayResolution, game = game, hlsLatencyBroadcaster = hlsLatencyBroadcaster, isFullScreen = isFullScreen, isMuted = isMuted, isPaused = isPaused, isTheatreMode = isTheatreMode, language = language, mode = mode.asInstanceOf[js.Any], playbackMode = playbackMode.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], videoResolution = videoResolution, volume = volume)
+  
+    __obj.asInstanceOf[TwitchExtContext]
+  }
+}
+

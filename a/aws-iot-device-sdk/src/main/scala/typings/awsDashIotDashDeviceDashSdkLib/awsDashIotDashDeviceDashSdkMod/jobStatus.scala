@@ -10,3 +10,12 @@ trait jobStatus extends js.Object {
   var statusDetails: statusDetails
 }
 
+object jobStatus {
+  @scala.inline
+  def apply(status: java.lang.String, statusDetails: statusDetails): jobStatus = {
+    val __obj = js.Dynamic.literal(status = status, statusDetails = statusDetails)
+  
+    __obj.asInstanceOf[jobStatus]
+  }
+}
+

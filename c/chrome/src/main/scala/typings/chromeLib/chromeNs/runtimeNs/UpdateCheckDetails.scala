@@ -10,3 +10,12 @@ trait UpdateCheckDetails extends js.Object {
   var version: java.lang.String
 }
 
+object UpdateCheckDetails {
+  @scala.inline
+  def apply(version: java.lang.String): UpdateCheckDetails = {
+    val __obj = js.Dynamic.literal(version = version)
+  
+    __obj.asInstanceOf[UpdateCheckDetails]
+  }
+}
+

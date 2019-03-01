@@ -40,3 +40,19 @@ trait LeaderboardEntry extends js.Object {
   def getTimestamp(): scala.Double
 }
 
+object LeaderboardEntry {
+  @scala.inline
+  def apply(
+    getExtraData: js.Function0[java.lang.String | scala.Null],
+    getFormattedScore: js.Function0[java.lang.String],
+    getPlayer: js.Function0[LeaderboardPlayer],
+    getRank: js.Function0[scala.Double],
+    getScore: js.Function0[scala.Double],
+    getTimestamp: js.Function0[scala.Double]
+  ): LeaderboardEntry = {
+    val __obj = js.Dynamic.literal(getExtraData = getExtraData, getFormattedScore = getFormattedScore, getPlayer = getPlayer, getRank = getRank, getScore = getScore, getTimestamp = getTimestamp)
+  
+    __obj.asInstanceOf[LeaderboardEntry]
+  }
+}
+

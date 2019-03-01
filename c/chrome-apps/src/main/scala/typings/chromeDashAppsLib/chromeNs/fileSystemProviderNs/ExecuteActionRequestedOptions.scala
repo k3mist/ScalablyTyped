@@ -17,3 +17,17 @@ trait ExecuteActionRequestedOptions extends js.Object {
   var requestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object ExecuteActionRequestedOptions {
+  @scala.inline
+  def apply(
+    actionId: java.lang.String,
+    entryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): ExecuteActionRequestedOptions = {
+    val __obj = js.Dynamic.literal(actionId = actionId, entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[ExecuteActionRequestedOptions]
+  }
+}
+

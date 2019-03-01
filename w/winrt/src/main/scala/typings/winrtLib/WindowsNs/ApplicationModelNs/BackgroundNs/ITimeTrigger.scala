@@ -10,3 +10,12 @@ trait ITimeTrigger extends IBackgroundTrigger {
   var oneShot: scala.Boolean
 }
 
+object ITimeTrigger {
+  @scala.inline
+  def apply(freshnessTime: scala.Double, oneShot: scala.Boolean): ITimeTrigger = {
+    val __obj = js.Dynamic.literal(freshnessTime = freshnessTime, oneShot = oneShot)
+  
+    __obj.asInstanceOf[ITimeTrigger]
+  }
+}
+

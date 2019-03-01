@@ -49,3 +49,30 @@ trait KeyState extends js.Object {
   ] = js.undefined
 }
 
+object KeyState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deletionWindowInDays: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enableKeyRotation: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    isEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    keyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    keyUsage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): KeyState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (deletionWindowInDays != null) __obj.updateDynamic("deletionWindowInDays")(deletionWindowInDays.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enableKeyRotation != null) __obj.updateDynamic("enableKeyRotation")(enableKeyRotation.asInstanceOf[js.Any])
+    if (isEnabled != null) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (keyUsage != null) __obj.updateDynamic("keyUsage")(keyUsage.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyState]
+  }
+}
+

@@ -21,3 +21,21 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ExportDeclaration
 }
 
+object ExportDeclaration {
+  @scala.inline
+  def apply(
+    default: scala.Boolean,
+    specifiers: js.Array[
+      astDashTypesLib.genKindsMod.ExportSpecifierKind | astDashTypesLib.genKindsMod.ExportBatchSpecifierKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ExportDeclaration,
+    declaration: astDashTypesLib.genKindsMod.DeclarationKind | astDashTypesLib.genKindsMod.ExpressionKind = null,
+    source: astDashTypesLib.genKindsMod.LiteralKind = null
+  ): ExportDeclaration = {
+    val __obj = js.Dynamic.literal(default = default, specifiers = specifiers, `type` = `type`)
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[ExportDeclaration]
+  }
+}
+

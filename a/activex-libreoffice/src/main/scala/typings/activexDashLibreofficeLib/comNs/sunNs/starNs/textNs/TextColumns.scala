@@ -34,3 +34,32 @@ trait TextColumns extends XTextColumns {
   var SeparatorLineWidth: scala.Double
 }
 
+object TextColumns {
+  @scala.inline
+  def apply(
+    AutomaticDistance: scala.Double,
+    ColumnCount: scala.Double,
+    Columns: activexDashInteropLib.SafeArray[TextColumn],
+    IsAutomatic: scala.Boolean,
+    ReferenceValue: scala.Double,
+    SeparatorLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    SeparatorLineIsOn: scala.Boolean,
+    SeparatorLineRelativeHeight: scala.Double,
+    SeparatorLineStyle: scala.Double,
+    SeparatorLineVerticalAlignment: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.VerticalAlignment,
+    SeparatorLineWidth: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getColumnCount: js.Function0[scala.Double],
+    getColumns: js.Function0[activexDashInteropLib.SafeArray[TextColumn]],
+    getReferenceValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setColumnCount: js.Function1[scala.Double, scala.Unit],
+    setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
+  ): TextColumns = {
+    val __obj = js.Dynamic.literal(AutomaticDistance = AutomaticDistance, ColumnCount = ColumnCount, Columns = Columns, IsAutomatic = IsAutomatic, ReferenceValue = ReferenceValue, SeparatorLineColor = SeparatorLineColor, SeparatorLineIsOn = SeparatorLineIsOn, SeparatorLineRelativeHeight = SeparatorLineRelativeHeight, SeparatorLineStyle = SeparatorLineStyle, SeparatorLineVerticalAlignment = SeparatorLineVerticalAlignment, SeparatorLineWidth = SeparatorLineWidth, acquire = acquire, getColumnCount = getColumnCount, getColumns = getColumns, getReferenceValue = getReferenceValue, queryInterface = queryInterface, release = release, setColumnCount = setColumnCount, setColumns = setColumns)
+  
+    __obj.asInstanceOf[TextColumns]
+  }
+}
+

@@ -10,3 +10,17 @@ trait TemplateError
   var riotData: riotLib.Anon_Riotid
 }
 
+object TemplateError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: java.lang.String,
+    riotData: riotLib.Anon_Riotid,
+    stack: java.lang.String = null
+  ): TemplateError = {
+    val __obj = js.Dynamic.literal(message = message, name = name, riotData = riotData)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[TemplateError]
+  }
+}
+

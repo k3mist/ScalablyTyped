@@ -32,3 +32,20 @@ trait LocalizationProps extends js.Object {
   var timezone: java.lang.String
 }
 
+object LocalizationProps {
+  @scala.inline
+  def apply(
+    isRTL: scala.Boolean,
+    locale: java.lang.String,
+    locales: js.Array[java.lang.String],
+    timezone: java.lang.String,
+    country: java.lang.String = null,
+    isoCurrencyCodes: js.Array[java.lang.String] = null
+  ): LocalizationProps = {
+    val __obj = js.Dynamic.literal(isRTL = isRTL, locale = locale, locales = locales, timezone = timezone)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (isoCurrencyCodes != null) __obj.updateDynamic("isoCurrencyCodes")(isoCurrencyCodes)
+    __obj.asInstanceOf[LocalizationProps]
+  }
+}
+

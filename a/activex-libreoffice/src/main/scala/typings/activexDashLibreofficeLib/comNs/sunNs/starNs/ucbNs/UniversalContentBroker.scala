@@ -31,3 +31,31 @@ trait UniversalContentBroker extends XUniversalContentBroker {
   def create(): scala.Unit
 }
 
+object UniversalContentBroker {
+  @scala.inline
+  def apply(
+    abort: js.Function1[scala.Double, scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
+    create: js.Function0[scala.Unit],
+    createCommandIdentifier: js.Function0[scala.Double],
+    createContentIdentifier: js.Function1[java.lang.String, XContentIdentifier],
+    deregisterContentProvider: js.Function2[XContentProvider, java.lang.String, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    execute: js.Function3[Command, scala.Double, XCommandEnvironment, js.Any],
+    queryContent: js.Function1[XContentIdentifier, XContent],
+    queryContentProvider: js.Function1[java.lang.String, XContentProvider],
+    queryContentProviders: js.Function0[activexDashInteropLib.SafeArray[ContentProviderInfo]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerContentProvider: js.Function3[XContentProvider, java.lang.String, scala.Boolean, XContentProvider],
+    release: js.Function0[scala.Unit],
+    releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): UniversalContentBroker = {
+    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, addEventListener = addEventListener, compareContentIds = compareContentIds, create = create, createCommandIdentifier = createCommandIdentifier, createContentIdentifier = createContentIdentifier, deregisterContentProvider = deregisterContentProvider, dispose = dispose, execute = execute, queryContent = queryContent, queryContentProvider = queryContentProvider, queryContentProviders = queryContentProviders, queryInterface = queryInterface, registerContentProvider = registerContentProvider, release = release, releaseCommandIdentifier = releaseCommandIdentifier, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[UniversalContentBroker]
+  }
+}
+

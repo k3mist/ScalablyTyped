@@ -15,3 +15,12 @@ trait OpenTableBordersAndShadingDialogCommand extends CommandWithSimpleStateBase
   def execute(): scala.Boolean
 }
 
+object OpenTableBordersAndShadingDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenTableBordersAndShadingDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[OpenTableBordersAndShadingDialogCommand]
+  }
+}
+

@@ -75,3 +75,41 @@ trait XHyphenator extends XSupportedLocales {
   ): XHyphenatedWord
 }
 
+object XHyphenator {
+  @scala.inline
+  def apply(
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: js.Function0[scala.Unit],
+    createPossibleHyphens: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XPossibleHyphens
+    ],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    hasLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
+    hyphenate: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XHyphenatedWord
+    ],
+    queryAlternativeSpelling: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XHyphenatedWord
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHyphenator = {
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, createPossibleHyphens = createPossibleHyphens, getLocales = getLocales, hasLocale = hasLocale, hyphenate = hyphenate, queryAlternativeSpelling = queryAlternativeSpelling, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XHyphenator]
+  }
+}
+

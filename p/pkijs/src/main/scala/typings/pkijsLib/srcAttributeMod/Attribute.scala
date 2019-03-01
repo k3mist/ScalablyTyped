@@ -13,3 +13,18 @@ trait Attribute extends js.Object {
   def toSchema(): js.Any
 }
 
+object Attribute {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    `type`: java.lang.String,
+    value: js.Array[_]
+  ): Attribute = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[Attribute]
+  }
+}
+

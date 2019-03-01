@@ -11,3 +11,12 @@ trait BinaryAnnotation
   var value: java.lang.String
 }
 
+object BinaryAnnotation {
+  @scala.inline
+  def apply(annotationType: java.lang.String, key: java.lang.String, value: java.lang.String): BinaryAnnotation = {
+    val __obj = js.Dynamic.literal(annotationType = annotationType, key = key, value = value)
+  
+    __obj.asInstanceOf[BinaryAnnotation]
+  }
+}
+

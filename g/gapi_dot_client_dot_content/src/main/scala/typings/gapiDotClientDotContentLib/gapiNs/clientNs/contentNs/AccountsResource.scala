@@ -38,3 +38,49 @@ trait AccountsResource extends js.Object {
   def update(request: gapiDotClientDotContentLib.Anon_AccountIdAltDryRun): gapiDotClientLib.gapiNs.clientNs.Request[Account]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    authinfo: js.Function1[
+      gapiDotClientDotContentLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountsAuthInfoResponse]
+    ],
+    claimwebsite: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountsClaimWebsiteResponse]
+    ],
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountsCustomBatchResponse]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRunFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ]
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal(authinfo = authinfo, claimwebsite = claimwebsite, custombatch = custombatch, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

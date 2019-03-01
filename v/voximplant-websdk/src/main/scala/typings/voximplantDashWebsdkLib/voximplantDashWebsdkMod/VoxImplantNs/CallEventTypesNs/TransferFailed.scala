@@ -16,3 +16,12 @@ trait TransferFailed
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
 }
 
+object TransferFailed {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): TransferFailed = {
+    val __obj = js.Dynamic.literal(call = call)
+  
+    __obj.asInstanceOf[TransferFailed]
+  }
+}
+

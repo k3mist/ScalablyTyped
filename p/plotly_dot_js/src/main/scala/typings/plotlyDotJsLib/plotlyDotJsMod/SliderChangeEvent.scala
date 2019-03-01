@@ -12,3 +12,12 @@ trait SliderChangeEvent extends js.Object {
   var step: SliderStep
 }
 
+object SliderChangeEvent {
+  @scala.inline
+  def apply(interaction: scala.Boolean, previousActive: scala.Double, slider: Slider, step: SliderStep): SliderChangeEvent = {
+    val __obj = js.Dynamic.literal(interaction = interaction, previousActive = previousActive, slider = slider, step = step)
+  
+    __obj.asInstanceOf[SliderChangeEvent]
+  }
+}
+

@@ -14,3 +14,15 @@ trait SignatureHelpInvokedReason extends SignatureHelpTriggerReason {
   var triggerCharacter: js.UndefOr[scala.Nothing] = js.undefined
 }
 
+object SignatureHelpInvokedReason {
+  @scala.inline
+  def apply(
+    kind: typescriptLib.typescriptLibStrings.invoked,
+    triggerCharacter: js.UndefOr[scala.Nothing] = js.undefined
+  ): SignatureHelpInvokedReason = {
+    val __obj = js.Dynamic.literal(kind = kind)
+    if (!js.isUndefined(triggerCharacter)) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    __obj.asInstanceOf[SignatureHelpInvokedReason]
+  }
+}
+

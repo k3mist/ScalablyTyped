@@ -35,3 +35,20 @@ trait IGenericObjectLayout extends IGenericBaseLayout {
   var qStateName: java.lang.String
 }
 
+object IGenericObjectLayout {
+  @scala.inline
+  def apply(
+    qExtendsId: java.lang.String,
+    qHasSoftPatches: scala.Boolean,
+    qInfo: INxInfo,
+    qMeta: INxMeta,
+    qSelectionInfo: INxSelectionInfo,
+    qStateName: java.lang.String,
+    qError: INxLayoutErrors = null
+  ): IGenericObjectLayout = {
+    val __obj = js.Dynamic.literal(qExtendsId = qExtendsId, qHasSoftPatches = qHasSoftPatches, qInfo = qInfo, qMeta = qMeta, qSelectionInfo = qSelectionInfo, qStateName = qStateName)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    __obj.asInstanceOf[IGenericObjectLayout]
+  }
+}
+

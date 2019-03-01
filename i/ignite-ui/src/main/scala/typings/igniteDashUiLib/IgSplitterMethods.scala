@@ -67,3 +67,25 @@ trait IgSplitterMethods extends js.Object {
   def widget(): js.Object
 }
 
+object IgSplitterMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    collapseAt: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    expandAt: js.Function1[js.Object, scala.Unit],
+    firstPanel: js.Function0[js.Object],
+    refreshLayout: js.Function0[scala.Unit],
+    secondPanel: js.Function0[js.Object],
+    setFirstPanelSize: js.Function1[js.Object, scala.Unit],
+    setSecondPanelSize: js.Function1[js.Object, scala.Unit],
+    widget: js.Function0[js.Object]
+  ): IgSplitterMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, collapseAt = collapseAt, destroy = destroy, expandAt = expandAt, firstPanel = firstPanel, refreshLayout = refreshLayout, secondPanel = secondPanel, setFirstPanelSize = setFirstPanelSize, setSecondPanelSize = setSecondPanelSize, widget = widget)
+  
+    __obj.asInstanceOf[IgSplitterMethods]
+  }
+}
+

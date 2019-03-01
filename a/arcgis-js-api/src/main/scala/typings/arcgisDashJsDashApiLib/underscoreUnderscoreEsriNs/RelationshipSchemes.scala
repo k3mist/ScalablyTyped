@@ -27,3 +27,19 @@ trait RelationshipSchemes
   var secondarySchemes: js.Array[RelationshipScheme]
 }
 
+object RelationshipSchemes {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    primaryScheme: RelationshipScheme,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    secondarySchemes: js.Array[RelationshipScheme]
+  ): RelationshipSchemes = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = hasOwnProperty, primaryScheme = primaryScheme, propertyIsEnumerable = propertyIsEnumerable, secondarySchemes = secondarySchemes)
+  
+    __obj.asInstanceOf[RelationshipSchemes]
+  }
+}
+

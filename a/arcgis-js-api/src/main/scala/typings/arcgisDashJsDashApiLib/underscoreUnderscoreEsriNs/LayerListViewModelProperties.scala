@@ -20,3 +20,13 @@ trait LayerListViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object LayerListViewModelProperties {
+  @scala.inline
+  def apply(listItemCreatedFunction: js.Function = null, view: MapViewProperties | SceneViewProperties = null): LayerListViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayerListViewModelProperties]
+  }
+}
+

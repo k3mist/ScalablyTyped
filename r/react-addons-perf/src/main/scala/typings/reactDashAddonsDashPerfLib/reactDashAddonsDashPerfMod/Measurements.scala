@@ -15,3 +15,20 @@ trait Measurements extends js.Object {
   var writes: NumericPerfContext
 }
 
+object Measurements {
+  @scala.inline
+  def apply(
+    counts: NumericPerfContext,
+    displayNames: org.scalablytyped.runtime.StringDictionary[ComponentPerfContext],
+    exclusive: NumericPerfContext,
+    inclusive: NumericPerfContext,
+    render: NumericPerfContext,
+    totalTime: scala.Double,
+    writes: NumericPerfContext
+  ): Measurements = {
+    val __obj = js.Dynamic.literal(counts = counts, displayNames = displayNames, exclusive = exclusive, inclusive = inclusive, render = render, totalTime = totalTime, writes = writes)
+  
+    __obj.asInstanceOf[Measurements]
+  }
+}
+

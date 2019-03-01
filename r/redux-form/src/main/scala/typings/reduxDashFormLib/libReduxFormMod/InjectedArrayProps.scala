@@ -18,3 +18,23 @@ trait InjectedArrayProps extends js.Object {
   def unshift(field: java.lang.String, value: js.Any): scala.Unit
 }
 
+object InjectedArrayProps {
+  @scala.inline
+  def apply(
+    insert: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    move: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    pop: js.Function1[java.lang.String, scala.Unit],
+    push: js.Function2[java.lang.String, js.Any, scala.Unit],
+    remove: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    removeAll: js.Function1[java.lang.String, scala.Unit],
+    shift: js.Function1[java.lang.String, scala.Unit],
+    splice: js.Function4[java.lang.String, scala.Double, scala.Double, js.Any, scala.Unit],
+    swap: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    unshift: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): InjectedArrayProps = {
+    val __obj = js.Dynamic.literal(insert = insert, move = move, pop = pop, push = push, remove = remove, removeAll = removeAll, shift = shift, splice = splice, swap = swap, unshift = unshift)
+  
+    __obj.asInstanceOf[InjectedArrayProps]
+  }
+}
+

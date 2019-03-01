@@ -35,3 +35,19 @@ trait Purchase extends js.Object {
   var signedRequest: SignedPurchaseRequest
 }
 
+object Purchase {
+  @scala.inline
+  def apply(
+    paymentID: java.lang.String,
+    productID: java.lang.String,
+    purchaseTime: java.lang.String,
+    purchaseToken: java.lang.String,
+    signedRequest: SignedPurchaseRequest,
+    developerPayload: java.lang.String = null
+  ): Purchase = {
+    val __obj = js.Dynamic.literal(paymentID = paymentID, productID = productID, purchaseTime = purchaseTime, purchaseToken = purchaseToken, signedRequest = signedRequest)
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
+    __obj.asInstanceOf[Purchase]
+  }
+}
+

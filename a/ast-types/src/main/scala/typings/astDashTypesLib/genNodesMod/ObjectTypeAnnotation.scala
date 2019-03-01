@@ -23,3 +23,22 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeAnnotation
 }
 
+object ObjectTypeAnnotation {
+  @scala.inline
+  def apply(
+    callProperties: js.Array[astDashTypesLib.genKindsMod.ObjectTypeCallPropertyKind],
+    exact: scala.Boolean,
+    indexers: js.Array[astDashTypesLib.genKindsMod.ObjectTypeIndexerKind],
+    internalSlots: js.Array[astDashTypesLib.genKindsMod.ObjectTypeInternalSlotKind],
+    properties: js.Array[
+      astDashTypesLib.genKindsMod.ObjectTypePropertyKind | astDashTypesLib.genKindsMod.ObjectTypeSpreadPropertyKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeAnnotation,
+    inexact: js.UndefOr[scala.Boolean] = js.undefined
+  ): ObjectTypeAnnotation = {
+    val __obj = js.Dynamic.literal(callProperties = callProperties, exact = exact, indexers = indexers, internalSlots = internalSlots, properties = properties, `type` = `type`)
+    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact)
+    __obj.asInstanceOf[ObjectTypeAnnotation]
+  }
+}
+

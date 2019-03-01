@@ -12,3 +12,17 @@ trait Tag extends js.Object {
   var `type`: java.lang.String
 }
 
+object Tag {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    id: js.Array[scala.Double],
+    techTypes: js.Array[java.lang.String],
+    `type`: java.lang.String
+  ): Tag = {
+    val __obj = js.Dynamic.literal(date = date, id = id, techTypes = techTypes, `type` = `type`)
+  
+    __obj.asInstanceOf[Tag]
+  }
+}
+

@@ -10,3 +10,12 @@ trait CursorOptions extends js.Object {
   var enabled: scala.Boolean
 }
 
+object CursorOptions {
+  @scala.inline
+  def apply(buffering: scala.Boolean, enabled: scala.Boolean): CursorOptions = {
+    val __obj = js.Dynamic.literal(buffering = buffering, enabled = enabled)
+  
+    __obj.asInstanceOf[CursorOptions]
+  }
+}
+

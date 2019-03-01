@@ -38,3 +38,72 @@ trait ResultColumn
   var TableName: java.lang.String
 }
 
+object ResultColumn {
+  @scala.inline
+  def apply(
+    Align: scala.Double,
+    CatalogName: java.lang.String,
+    ControlDefault: java.lang.String,
+    ControlModel: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    DefaultValue: java.lang.String,
+    Description: java.lang.String,
+    DisplaySize: scala.Double,
+    FormatKey: scala.Double,
+    HelpText: java.lang.String,
+    Hidden: scala.Boolean,
+    IsAutoIncrement: scala.Boolean,
+    IsCaseSensitive: scala.Boolean,
+    IsCurrency: scala.Boolean,
+    IsDefinitelyWritable: scala.Boolean,
+    IsNullable: scala.Double,
+    IsReadOnly: scala.Boolean,
+    IsRowVersion: scala.Boolean,
+    IsSearchable: scala.Boolean,
+    IsSigned: scala.Boolean,
+    IsWritable: scala.Boolean,
+    Label: java.lang.String,
+    Name: java.lang.String,
+    Position: scala.Double,
+    Precision: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Scale: scala.Double,
+    SchemaName: java.lang.String,
+    ServiceName: java.lang.String,
+    TableName: java.lang.String,
+    Type: scala.Double,
+    TypeName: java.lang.String,
+    Width: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createDataDescriptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ResultColumn = {
+    val __obj = js.Dynamic.literal(Align = Align, CatalogName = CatalogName, ControlDefault = ControlDefault, ControlModel = ControlModel, DefaultValue = DefaultValue, Description = Description, DisplaySize = DisplaySize, FormatKey = FormatKey, HelpText = HelpText, Hidden = Hidden, IsAutoIncrement = IsAutoIncrement, IsCaseSensitive = IsCaseSensitive, IsCurrency = IsCurrency, IsDefinitelyWritable = IsDefinitelyWritable, IsNullable = IsNullable, IsReadOnly = IsReadOnly, IsRowVersion = IsRowVersion, IsSearchable = IsSearchable, IsSigned = IsSigned, IsWritable = IsWritable, Label = Label, Name = Name, Position = Position, Precision = Precision, PropertySetInfo = PropertySetInfo, Scale = Scale, SchemaName = SchemaName, ServiceName = ServiceName, TableName = TableName, Type = Type, TypeName = TypeName, Width = Width, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDataDescriptor = createDataDescriptor, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[ResultColumn]
+  }
+}
+

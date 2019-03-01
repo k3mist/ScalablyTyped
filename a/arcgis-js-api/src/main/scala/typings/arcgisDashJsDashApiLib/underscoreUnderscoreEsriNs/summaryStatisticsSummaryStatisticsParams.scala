@@ -69,3 +69,34 @@ trait summaryStatisticsSummaryStatisticsParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object summaryStatisticsSummaryStatisticsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    features: js.Array[Graphic] = null,
+    field: java.lang.String = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    view: View = null
+  ): summaryStatisticsSummaryStatisticsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[summaryStatisticsSummaryStatisticsParams]
+  }
+}
+

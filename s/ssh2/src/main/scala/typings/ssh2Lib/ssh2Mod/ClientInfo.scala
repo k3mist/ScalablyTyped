@@ -12,3 +12,12 @@ trait ClientInfo extends js.Object {
   var ip: java.lang.String
 }
 
+object ClientInfo {
+  @scala.inline
+  def apply(header: ssh2DashStreamsLib.ssh2DashStreamsMod.Header, ip: java.lang.String): ClientInfo = {
+    val __obj = js.Dynamic.literal(header = header, ip = ip)
+  
+    __obj.asInstanceOf[ClientInfo]
+  }
+}
+

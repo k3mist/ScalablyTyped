@@ -16,3 +16,12 @@ trait GoToBookmarkCommand extends CommandWithSimpleStateBase {
   def execute(name: java.lang.String): scala.Boolean
 }
 
+object GoToBookmarkCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): GoToBookmarkCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[GoToBookmarkCommand]
+  }
+}
+

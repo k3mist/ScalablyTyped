@@ -74,3 +74,27 @@ trait UserProfile extends js.Object {
   var ver: java.lang.String
 }
 
+object UserProfile {
+  @scala.inline
+  def apply(
+    amr: js.Array[java.lang.String],
+    aud: java.lang.String,
+    exp: scala.Double,
+    family_name: java.lang.String,
+    given_name: java.lang.String,
+    iat: scala.Double,
+    iss: java.lang.String,
+    nbf: scala.Double,
+    oid: java.lang.String,
+    sub: java.lang.String,
+    tid: java.lang.String,
+    unique_name: java.lang.String,
+    upn: java.lang.String,
+    ver: java.lang.String
+  ): UserProfile = {
+    val __obj = js.Dynamic.literal(amr = amr, aud = aud, exp = exp, family_name = family_name, given_name = given_name, iat = iat, iss = iss, nbf = nbf, oid = oid, sub = sub, tid = tid, unique_name = unique_name, upn = upn, ver = ver)
+  
+    __obj.asInstanceOf[UserProfile]
+  }
+}
+

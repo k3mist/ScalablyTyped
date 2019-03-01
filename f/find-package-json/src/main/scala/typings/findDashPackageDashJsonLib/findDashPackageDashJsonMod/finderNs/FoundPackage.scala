@@ -11,3 +11,16 @@ trait FoundPackage extends FindResult {
   var value: Package
 }
 
+object FoundPackage {
+  @scala.inline
+  def apply(
+    done: findDashPackageDashJsonLib.findDashPackageDashJsonLibNumbers.`false`,
+    filename: java.lang.String,
+    value: Package
+  ): FoundPackage = {
+    val __obj = js.Dynamic.literal(done = done, filename = filename, value = value)
+  
+    __obj.asInstanceOf[FoundPackage]
+  }
+}
+

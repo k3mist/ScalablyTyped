@@ -13,3 +13,18 @@ trait SearchViewModelSuggestCompleteEvent extends js.Object {
   var searchTerm: java.lang.String
 }
 
+object SearchViewModelSuggestCompleteEvent {
+  @scala.inline
+  def apply(
+    activeSourceIndex: scala.Double,
+    errors: js.Array[Error],
+    numResults: scala.Double,
+    results: js.Array[SearchViewModelSuggestCompleteEventResults],
+    searchTerm: java.lang.String
+  ): SearchViewModelSuggestCompleteEvent = {
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, errors = errors, numResults = numResults, results = results, searchTerm = searchTerm)
+  
+    __obj.asInstanceOf[SearchViewModelSuggestCompleteEvent]
+  }
+}
+

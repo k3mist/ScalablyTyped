@@ -24,3 +24,29 @@ trait Anon_AllAttributes extends js.Object {
   var useFallbackAssetUri: scala.Double
 }
 
+object Anon_AllAttributes {
+  @scala.inline
+  def apply(
+    allAttributes: scala.Double,
+    excludeNonValidated: scala.Double,
+    includeAssetUri: scala.Double,
+    includeCategoryAndTags: scala.Double,
+    includeFiles: scala.Double,
+    includeInstallationTargets: scala.Double,
+    includeLatestVersionOnly: scala.Double,
+    includeLcids: scala.Double,
+    includeMetadata: scala.Double,
+    includeMinimalPayloadForVsIde: scala.Double,
+    includeSharedAccounts: scala.Double,
+    includeStatistics: scala.Double,
+    includeVersionProperties: scala.Double,
+    includeVersions: scala.Double,
+    none: scala.Double,
+    useFallbackAssetUri: scala.Double
+  ): Anon_AllAttributes = {
+    val __obj = js.Dynamic.literal(allAttributes = allAttributes, excludeNonValidated = excludeNonValidated, includeAssetUri = includeAssetUri, includeCategoryAndTags = includeCategoryAndTags, includeFiles = includeFiles, includeInstallationTargets = includeInstallationTargets, includeLatestVersionOnly = includeLatestVersionOnly, includeLcids = includeLcids, includeMetadata = includeMetadata, includeMinimalPayloadForVsIde = includeMinimalPayloadForVsIde, includeSharedAccounts = includeSharedAccounts, includeStatistics = includeStatistics, includeVersionProperties = includeVersionProperties, includeVersions = includeVersions, none = none, useFallbackAssetUri = useFallbackAssetUri)
+  
+    __obj.asInstanceOf[Anon_AllAttributes]
+  }
+}
+

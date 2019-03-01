@@ -13,3 +13,20 @@ trait GridViewContextMenuItemClickEventArgs extends ProcessingModeEventArgs {
   var usePostBack: scala.Boolean
 }
 
+object GridViewContextMenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    elementIndex: scala.Double,
+    handled: scala.Boolean,
+    item: BootstrapMenuItem,
+    objectType: java.lang.String,
+    processOnServer: scala.Boolean,
+    sender: Control,
+    usePostBack: scala.Boolean
+  ): GridViewContextMenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(elementIndex = elementIndex, handled = handled, item = item, objectType = objectType, processOnServer = processOnServer, sender = sender, usePostBack = usePostBack)
+  
+    __obj.asInstanceOf[GridViewContextMenuItemClickEventArgs]
+  }
+}
+

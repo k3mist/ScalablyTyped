@@ -11,3 +11,12 @@ trait Anon_DeviceID extends js.Object {
   val ItemID: java.lang.String
 }
 
+object Anon_DeviceID {
+  @scala.inline
+  def apply(DeviceID: java.lang.String, EventID: java.lang.String, ItemID: java.lang.String): Anon_DeviceID = {
+    val __obj = js.Dynamic.literal(DeviceID = DeviceID, EventID = EventID, ItemID = ItemID)
+  
+    __obj.asInstanceOf[Anon_DeviceID]
+  }
+}
+

@@ -10,3 +10,15 @@ trait RegexFilterData extends FilterValue {
   var value: java.lang.String
 }
 
+object RegexFilterData {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.RegexFilter,
+    value: java.lang.String
+  ): RegexFilterData = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[RegexFilterData]
+  }
+}
+

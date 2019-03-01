@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DoExpression
 }
 
+object DoExpression {
+  @scala.inline
+  def apply(
+    body: js.Array[astDashTypesLib.genKindsMod.StatementKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.DoExpression
+  ): DoExpression = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+  
+    __obj.asInstanceOf[DoExpression]
+  }
+}
+

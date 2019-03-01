@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.LogicalExpression
 }
 
+object LogicalExpression {
+  @scala.inline
+  def apply(
+    left: astDashTypesLib.genKindsMod.ExpressionKind,
+    operator: astDashTypesLib.astDashTypesLibStrings.`||` | astDashTypesLib.astDashTypesLibStrings.`&&` | astDashTypesLib.astDashTypesLibStrings.`??`,
+    right: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.LogicalExpression
+  ): LogicalExpression = {
+    val __obj = js.Dynamic.literal(left = left, operator = operator.asInstanceOf[js.Any], right = right, `type` = `type`)
+  
+    __obj.asInstanceOf[LogicalExpression]
+  }
+}
+

@@ -24,3 +24,19 @@ trait S3BucketAssociationArgs extends js.Object {
   val prefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object S3BucketAssociationArgs {
+  @scala.inline
+  def apply(
+    bucketName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    classificationType: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContinuousOneTime] = null,
+    memberAccountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    prefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): S3BucketAssociationArgs = {
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any])
+    if (classificationType != null) __obj.updateDynamic("classificationType")(classificationType.asInstanceOf[js.Any])
+    if (memberAccountId != null) __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[S3BucketAssociationArgs]
+  }
+}
+

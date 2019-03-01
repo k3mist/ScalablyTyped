@@ -16,3 +16,12 @@ trait IgGridResponsiveMethods extends js.Object {
   def getCurrentResponsiveMode(): scala.Unit
 }
 
+object IgGridResponsiveMethods {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit], getCurrentResponsiveMode: js.Function0[scala.Unit]): IgGridResponsiveMethods = {
+    val __obj = js.Dynamic.literal(destroy = destroy, getCurrentResponsiveMode = getCurrentResponsiveMode)
+  
+    __obj.asInstanceOf[IgGridResponsiveMethods]
+  }
+}
+

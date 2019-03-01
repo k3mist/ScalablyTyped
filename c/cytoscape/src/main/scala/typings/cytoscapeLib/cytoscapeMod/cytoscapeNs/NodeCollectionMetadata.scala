@@ -46,3 +46,20 @@ trait NodeCollectionMetadata extends js.Object {
   def totalDegree(includeLoops: scala.Boolean): scala.Double
 }
 
+object NodeCollectionMetadata {
+  @scala.inline
+  def apply(
+    maxDegree: js.Function1[scala.Boolean, scala.Double],
+    maxIndegree: js.Function1[scala.Boolean, scala.Double],
+    maxOutdegree: js.Function1[scala.Boolean, scala.Double],
+    minDegree: js.Function1[scala.Boolean, scala.Double],
+    minIndegree: js.Function1[scala.Boolean, scala.Double],
+    minOutdegree: js.Function1[scala.Boolean, scala.Double],
+    totalDegree: js.Function1[scala.Boolean, scala.Double]
+  ): NodeCollectionMetadata = {
+    val __obj = js.Dynamic.literal(maxDegree = maxDegree, maxIndegree = maxIndegree, maxOutdegree = maxOutdegree, minDegree = minDegree, minIndegree = minIndegree, minOutdegree = minOutdegree, totalDegree = totalDegree)
+  
+    __obj.asInstanceOf[NodeCollectionMetadata]
+  }
+}
+

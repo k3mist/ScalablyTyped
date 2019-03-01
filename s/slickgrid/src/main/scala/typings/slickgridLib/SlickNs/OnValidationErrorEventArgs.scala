@@ -14,3 +14,20 @@ trait OnValidationErrorEventArgs[T /* <: SlickData */] extends GridEventArgs[T] 
   var validationResults: ValidateResults
 }
 
+object OnValidationErrorEventArgs {
+  @scala.inline
+  def apply[T /* <: SlickData */](
+    cell: scala.Double,
+    cellNode: stdLib.HTMLElement,
+    column: Column[T],
+    editor: slickgridLib.SlickNs.EditorsNs.Editor[T],
+    grid: Grid[T],
+    row: scala.Double,
+    validationResults: ValidateResults
+  ): OnValidationErrorEventArgs[T] = {
+    val __obj = js.Dynamic.literal(cell = cell, cellNode = cellNode, column = column, editor = editor, grid = grid, row = row, validationResults = validationResults)
+  
+    __obj.asInstanceOf[OnValidationErrorEventArgs[T]]
+  }
+}
+

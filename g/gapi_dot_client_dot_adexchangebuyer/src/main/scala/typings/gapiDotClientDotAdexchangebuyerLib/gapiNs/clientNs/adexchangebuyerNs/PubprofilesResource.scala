@@ -10,3 +10,17 @@ trait PubprofilesResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangebuyerLib.Anon_AccountId): gapiDotClientLib.gapiNs.clientNs.Request[GetPublisherProfilesByAccountIdResponse]
 }
 
+object PubprofilesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetPublisherProfilesByAccountIdResponse]
+    ]
+  ): PubprofilesResource = {
+    val __obj = js.Dynamic.literal(list = list)
+  
+    __obj.asInstanceOf[PubprofilesResource]
+  }
+}
+

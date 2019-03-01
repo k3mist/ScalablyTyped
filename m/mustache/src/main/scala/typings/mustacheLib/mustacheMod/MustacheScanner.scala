@@ -38,3 +38,19 @@ trait MustacheScanner extends js.Object {
   def scanUntil(re: stdLib.RegExp): java.lang.String
 }
 
+object MustacheScanner {
+  @scala.inline
+  def apply(
+    eos: js.Function0[scala.Boolean],
+    pos: scala.Double,
+    scan: js.Function1[stdLib.RegExp, java.lang.String],
+    scanUntil: js.Function1[stdLib.RegExp, java.lang.String],
+    string: java.lang.String,
+    tail: java.lang.String
+  ): MustacheScanner = {
+    val __obj = js.Dynamic.literal(eos = eos, pos = pos, scan = scan, scanUntil = scanUntil, string = string, tail = tail)
+  
+    __obj.asInstanceOf[MustacheScanner]
+  }
+}
+

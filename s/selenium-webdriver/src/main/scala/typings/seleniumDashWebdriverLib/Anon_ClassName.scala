@@ -10,3 +10,12 @@ trait Anon_ClassName
   var className: java.lang.String
 }
 
+object Anon_ClassName {
+  @scala.inline
+  def apply(className: java.lang.String): Anon_ClassName = {
+    val __obj = js.Dynamic.literal(className = className)
+  
+    __obj.asInstanceOf[Anon_ClassName]
+  }
+}
+

@@ -9,3 +9,12 @@ trait JdbcRowId extends js.Object {
   def getBytes(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte]
 }
 
+object JdbcRowId {
+  @scala.inline
+  def apply(getBytes: js.Function0[js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte]]): JdbcRowId = {
+    val __obj = js.Dynamic.literal(getBytes = getBytes)
+  
+    __obj.asInstanceOf[JdbcRowId]
+  }
+}
+

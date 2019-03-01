@@ -36,3 +36,27 @@ trait XToolkit
   def getWorkArea(): Rectangle
 }
 
+object XToolkit {
+  @scala.inline
+  def apply(
+    DesktopWindow: XWindowPeer,
+    WorkArea: Rectangle,
+    acquire: js.Function0[scala.Unit],
+    createRegion: js.Function0[XRegion],
+    createScreenCompatibleDevice: js.Function2[scala.Double, scala.Double, XDevice],
+    createWindow: js.Function1[WindowDescriptor, XWindowPeer],
+    createWindows: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor], 
+      activexDashInteropLib.SafeArray[XWindowPeer]
+    ],
+    getDesktopWindow: js.Function0[XWindowPeer],
+    getWorkArea: js.Function0[Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XToolkit = {
+    val __obj = js.Dynamic.literal(DesktopWindow = DesktopWindow, WorkArea = WorkArea, acquire = acquire, createRegion = createRegion, createScreenCompatibleDevice = createScreenCompatibleDevice, createWindow = createWindow, createWindows = createWindows, getDesktopWindow = getDesktopWindow, getWorkArea = getWorkArea, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XToolkit]
+  }
+}
+

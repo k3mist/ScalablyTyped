@@ -35,3 +35,40 @@ trait FlashSymbolInstance extends js.Object {
   var visible: scala.Boolean
 }
 
+object FlashSymbolInstance {
+  @scala.inline
+  def apply(
+    accName: java.lang.String,
+    actionScript: java.lang.String,
+    backgroundColor: java.lang.String,
+    bitmapRenderMode: java.lang.String,
+    blendMode: java.lang.String,
+    buttonTracking: java.lang.String,
+    cacheAsBitmap: scala.Boolean,
+    colorAlphaAmount: scala.Double,
+    colorAlphaPercent: scala.Double,
+    colorBlueAmount: scala.Double,
+    colorBluePercent: scala.Double,
+    colorGreenAmount: scala.Double,
+    colorGreenPercent: scala.Double,
+    colorMode: java.lang.String,
+    colorRedAmount: scala.Double,
+    colorRedPercent: scala.Double,
+    description: java.lang.String,
+    filters: js.Array[FlashFilter],
+    firstFrame: scala.Double,
+    forceSimple: scala.Boolean,
+    loop: java.lang.String,
+    shortcut: java.lang.String,
+    silent: scala.Boolean,
+    symbolType: java.lang.String,
+    tabIndex: scala.Double,
+    useBackgroundColor: scala.Boolean,
+    visible: scala.Boolean
+  ): FlashSymbolInstance = {
+    val __obj = js.Dynamic.literal(accName = accName, actionScript = actionScript, backgroundColor = backgroundColor, bitmapRenderMode = bitmapRenderMode, blendMode = blendMode, buttonTracking = buttonTracking, cacheAsBitmap = cacheAsBitmap, colorAlphaAmount = colorAlphaAmount, colorAlphaPercent = colorAlphaPercent, colorBlueAmount = colorBlueAmount, colorBluePercent = colorBluePercent, colorGreenAmount = colorGreenAmount, colorGreenPercent = colorGreenPercent, colorMode = colorMode, colorRedAmount = colorRedAmount, colorRedPercent = colorRedPercent, description = description, filters = filters, firstFrame = firstFrame, forceSimple = forceSimple, loop = loop, shortcut = shortcut, silent = silent, symbolType = symbolType, tabIndex = tabIndex, useBackgroundColor = useBackgroundColor, visible = visible)
+  
+    __obj.asInstanceOf[FlashSymbolInstance]
+  }
+}
+

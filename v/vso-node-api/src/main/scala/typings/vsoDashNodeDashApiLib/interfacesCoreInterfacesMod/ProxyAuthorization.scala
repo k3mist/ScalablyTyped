@@ -24,3 +24,17 @@ trait ProxyAuthorization extends js.Object {
   var publicKey: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.PublicKey
 }
 
+object ProxyAuthorization {
+  @scala.inline
+  def apply(
+    authorizationUrl: java.lang.String,
+    clientId: java.lang.String,
+    identity: vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.IdentityDescriptor,
+    publicKey: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.PublicKey
+  ): ProxyAuthorization = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, clientId = clientId, identity = identity, publicKey = publicKey)
+  
+    __obj.asInstanceOf[ProxyAuthorization]
+  }
+}
+

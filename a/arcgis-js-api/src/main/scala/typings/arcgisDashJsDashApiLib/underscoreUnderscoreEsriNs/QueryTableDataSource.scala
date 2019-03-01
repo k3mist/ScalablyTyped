@@ -45,3 +45,22 @@ trait QueryTableDataSource
   var workspaceId: java.lang.String
 }
 
+object QueryTableDataSource {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    geometryType: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    oidFields: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    query: java.lang.String,
+    spatialReference: SpatialReference,
+    `type`: java.lang.String,
+    workspaceId: java.lang.String
+  ): QueryTableDataSource = {
+    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, oidFields = oidFields, propertyIsEnumerable = propertyIsEnumerable, query = query, spatialReference = spatialReference, `type` = `type`, workspaceId = workspaceId)
+  
+    __obj.asInstanceOf[QueryTableDataSource]
+  }
+}
+

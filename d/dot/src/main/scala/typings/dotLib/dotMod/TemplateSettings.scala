@@ -21,3 +21,26 @@ trait TemplateSettings extends js.Object {
   var varname: java.lang.String
 }
 
+object TemplateSettings {
+  @scala.inline
+  def apply(
+    append: scala.Boolean,
+    conditional: stdLib.RegExp,
+    define: stdLib.RegExp,
+    defineParams: stdLib.RegExp,
+    encode: stdLib.RegExp,
+    evaluate: stdLib.RegExp,
+    interpolate: stdLib.RegExp,
+    iterate: stdLib.RegExp,
+    selfcontained: scala.Boolean,
+    strip: scala.Boolean,
+    use: stdLib.RegExp,
+    useParams: stdLib.RegExp,
+    varname: java.lang.String
+  ): TemplateSettings = {
+    val __obj = js.Dynamic.literal(append = append, conditional = conditional, define = define, defineParams = defineParams, encode = encode, evaluate = evaluate, interpolate = interpolate, iterate = iterate, selfcontained = selfcontained, strip = strip, use = use, useParams = useParams, varname = varname)
+  
+    __obj.asInstanceOf[TemplateSettings]
+  }
+}
+

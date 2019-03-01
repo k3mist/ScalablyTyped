@@ -41,3 +41,18 @@ trait PersistentVolumeClaim extends js.Object {
   val status: PersistentVolumeClaimStatus
 }
 
+object PersistentVolumeClaim {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaim,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: PersistentVolumeClaimSpec,
+    status: PersistentVolumeClaimStatus
+  ): PersistentVolumeClaim = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[PersistentVolumeClaim]
+  }
+}
+

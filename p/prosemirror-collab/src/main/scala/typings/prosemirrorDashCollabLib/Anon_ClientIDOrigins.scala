@@ -12,3 +12,17 @@ trait Anon_ClientIDOrigins[S /* <: prosemirrorDashModelLib.prosemirrorDashModelM
   var version: scala.Double
 }
 
+object Anon_ClientIDOrigins {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    clientID: scala.Double | java.lang.String,
+    origins: js.Array[prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S]],
+    steps: js.Array[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S]],
+    version: scala.Double
+  ): Anon_ClientIDOrigins[S] = {
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins, steps = steps, version = version)
+  
+    __obj.asInstanceOf[Anon_ClientIDOrigins[S]]
+  }
+}
+

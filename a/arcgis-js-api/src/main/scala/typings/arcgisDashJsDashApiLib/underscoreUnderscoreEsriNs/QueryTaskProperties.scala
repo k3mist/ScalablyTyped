@@ -14,3 +14,14 @@ trait QueryTaskProperties extends TaskProperties {
   var gdbVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryTaskProperties {
+  @scala.inline
+  def apply(gdbVersion: java.lang.String = null, requestOptions: js.Any = null, url: java.lang.String = null): QueryTaskProperties = {
+    val __obj = js.Dynamic.literal()
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[QueryTaskProperties]
+  }
+}
+

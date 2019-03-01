@@ -14,3 +14,12 @@ trait TextProperties extends ContentElementContentElementProperties {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextProperties {
+  @scala.inline
+  def apply(text: java.lang.String = null): TextProperties = {
+    val __obj = js.Dynamic.literal()
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextProperties]
+  }
+}
+

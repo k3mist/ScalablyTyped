@@ -22,3 +22,21 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSPropertySignature
 }
 
+object TSPropertySignature {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    optional: scala.Boolean,
+    readonly: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSPropertySignature,
+    initializer: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): TSPropertySignature = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key, optional = optional, readonly = readonly, `type` = `type`)
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.asInstanceOf[TSPropertySignature]
+  }
+}
+

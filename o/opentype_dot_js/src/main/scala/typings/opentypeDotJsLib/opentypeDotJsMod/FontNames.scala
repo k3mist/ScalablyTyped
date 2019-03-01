@@ -22,3 +22,27 @@ trait FontNames extends js.Object {
   var version: LocalizedName
 }
 
+object FontNames {
+  @scala.inline
+  def apply(
+    copyright: LocalizedName,
+    description: LocalizedName,
+    designer: LocalizedName,
+    designerURL: LocalizedName,
+    fontFamily: LocalizedName,
+    fontSubfamily: LocalizedName,
+    fullName: LocalizedName,
+    license: LocalizedName,
+    licenseURL: LocalizedName,
+    manufacturer: LocalizedName,
+    manufacturerURL: LocalizedName,
+    postScriptName: LocalizedName,
+    trademark: LocalizedName,
+    version: LocalizedName
+  ): FontNames = {
+    val __obj = js.Dynamic.literal(copyright = copyright, description = description, designer = designer, designerURL = designerURL, fontFamily = fontFamily, fontSubfamily = fontSubfamily, fullName = fullName, license = license, licenseURL = licenseURL, manufacturer = manufacturer, manufacturerURL = manufacturerURL, postScriptName = postScriptName, trademark = trademark, version = version)
+  
+    __obj.asInstanceOf[FontNames]
+  }
+}
+

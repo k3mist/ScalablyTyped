@@ -15,3 +15,19 @@ trait Policy extends js.Object {
   var url: java.lang.String
 }
 
+object Policy {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    method: java.lang.String,
+    url: java.lang.String,
+    post_filter: js.Any = null,
+    query_filter: js.Any = null
+  ): Policy = {
+    val __obj = js.Dynamic.literal(allow = allow, method = method, url = url)
+    if (post_filter != null) __obj.updateDynamic("post_filter")(post_filter)
+    if (query_filter != null) __obj.updateDynamic("query_filter")(query_filter)
+    __obj.asInstanceOf[Policy]
+  }
+}
+

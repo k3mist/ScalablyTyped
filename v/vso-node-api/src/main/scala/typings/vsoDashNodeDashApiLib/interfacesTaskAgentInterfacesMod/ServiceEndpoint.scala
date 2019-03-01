@@ -48,3 +48,26 @@ trait ServiceEndpoint extends js.Object {
   var url: java.lang.String
 }
 
+object ServiceEndpoint {
+  @scala.inline
+  def apply(
+    administratorsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    authorization: EndpointAuthorization,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    data: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    description: java.lang.String,
+    groupScopeId: java.lang.String,
+    id: java.lang.String,
+    isReady: scala.Boolean,
+    name: java.lang.String,
+    operationStatus: js.Any,
+    readersGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): ServiceEndpoint = {
+    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup, authorization = authorization, createdBy = createdBy, data = data, description = description, groupScopeId = groupScopeId, id = id, isReady = isReady, name = name, operationStatus = operationStatus, readersGroup = readersGroup, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[ServiceEndpoint]
+  }
+}
+

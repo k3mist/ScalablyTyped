@@ -20,3 +20,22 @@ trait ECPrivateKey extends js.Object {
   def toSchema(): js.Any
 }
 
+object ECPrivateKey {
+  @scala.inline
+  def apply(
+    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    privateKey: asn1jsLib.asn1jsMod.OctetString,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double,
+    namedCurve: java.lang.String = null,
+    publicKey: pkijsLib.srcECPublicKeyMod.default = null
+  ): ECPrivateKey = {
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, privateKey = privateKey, toJSON = toJSON, toSchema = toSchema, version = version)
+    if (namedCurve != null) __obj.updateDynamic("namedCurve")(namedCurve)
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
+    __obj.asInstanceOf[ECPrivateKey]
+  }
+}
+

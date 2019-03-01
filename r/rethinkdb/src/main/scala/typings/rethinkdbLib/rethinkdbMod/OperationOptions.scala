@@ -68,3 +68,27 @@ trait OperationOptions extends js.Object {
   var timeFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw
 }
 
+object OperationOptions {
+  @scala.inline
+  def apply(
+    arrayLimit: scala.Double,
+    binaryFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw,
+    db: java.lang.String,
+    durability: rethinkdbLib.rethinkdbLibStrings.hard | rethinkdbLib.rethinkdbLibStrings.soft,
+    firstBatchScaledownFactor: scala.Double,
+    groupFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw,
+    maxBatchBytes: scala.Double,
+    maxBatchRows: scala.Double,
+    maxBatchSeconds: scala.Double,
+    minBatchRows: scala.Double,
+    noreply: scala.Boolean,
+    profile: scala.Boolean,
+    readMode: rethinkdbLib.rethinkdbLibStrings.single | rethinkdbLib.rethinkdbLibStrings.majority | rethinkdbLib.rethinkdbLibStrings.outdated,
+    timeFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw
+  ): OperationOptions = {
+    val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[OperationOptions]
+  }
+}
+

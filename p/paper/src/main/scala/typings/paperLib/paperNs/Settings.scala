@@ -24,3 +24,17 @@ trait Settings extends js.Object {
   var insertItems: scala.Boolean
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    applyMatrix: scala.Boolean,
+    handleSize: scala.Double,
+    hitTolerance: scala.Double,
+    insertItems: scala.Boolean
+  ): Settings = {
+    val __obj = js.Dynamic.literal(applyMatrix = applyMatrix, handleSize = handleSize, hitTolerance = hitTolerance, insertItems = insertItems)
+  
+    __obj.asInstanceOf[Settings]
+  }
+}
+

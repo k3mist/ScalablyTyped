@@ -12,3 +12,21 @@ trait TargetableRemarketingListsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserIdAltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TargetableRemarketingListsListResponse]
 }
 
+object TargetableRemarketingListsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetableRemarketingList]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetableRemarketingListsListResponse]
+    ]
+  ): TargetableRemarketingListsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[TargetableRemarketingListsResource]
+  }
+}
+

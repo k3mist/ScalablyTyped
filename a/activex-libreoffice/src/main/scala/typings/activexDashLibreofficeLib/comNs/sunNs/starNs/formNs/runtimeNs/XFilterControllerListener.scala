@@ -40,3 +40,20 @@ trait XFilterControllerListener
   def predicateExpressionChanged(Event: FilterEvent): scala.Unit
 }
 
+object XFilterControllerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disjunctiveTermAdded: js.Function1[FilterEvent, scala.Unit],
+    disjunctiveTermRemoved: js.Function1[FilterEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    predicateExpressionChanged: js.Function1[FilterEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFilterControllerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disjunctiveTermAdded = disjunctiveTermAdded, disjunctiveTermRemoved = disjunctiveTermRemoved, disposing = disposing, predicateExpressionChanged = predicateExpressionChanged, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFilterControllerListener]
+  }
+}
+

@@ -22,3 +22,16 @@ trait MultiSortReturn extends js.Object {
   def sort(params: SortParams): scala.Unit
 }
 
+object MultiSortReturn {
+  @scala.inline
+  def apply(
+    sort: js.Function1[SortParams, scala.Unit],
+    sortBy: js.Array[java.lang.String],
+    sortDirection: SortDirectionMap
+  ): MultiSortReturn = {
+    val __obj = js.Dynamic.literal(sort = sort, sortBy = sortBy, sortDirection = sortDirection)
+  
+    __obj.asInstanceOf[MultiSortReturn]
+  }
+}
+

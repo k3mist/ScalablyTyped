@@ -12,3 +12,19 @@ trait Anon_DeleteSourceFromS3MaxAgeInDays extends js.Object {
   var serviceRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_DeleteSourceFromS3MaxAgeInDays {
+  @scala.inline
+  def apply(
+    serviceRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    deleteSourceFromS3: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    maxAgeInDays: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    maxCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): Anon_DeleteSourceFromS3MaxAgeInDays = {
+    val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
+    if (deleteSourceFromS3 != null) __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3.asInstanceOf[js.Any])
+    if (maxAgeInDays != null) __obj.updateDynamic("maxAgeInDays")(maxAgeInDays.asInstanceOf[js.Any])
+    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DeleteSourceFromS3MaxAgeInDays]
+  }
+}
+

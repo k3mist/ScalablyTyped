@@ -14,3 +14,19 @@ trait ScrollParams extends js.Object {
   var scrollWidth: scala.Double
 }
 
+object ScrollParams {
+  @scala.inline
+  def apply(
+    clientHeight: scala.Double,
+    clientWidth: scala.Double,
+    scrollHeight: scala.Double,
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double,
+    scrollWidth: scala.Double
+  ): ScrollParams = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+  
+    __obj.asInstanceOf[ScrollParams]
+  }
+}
+

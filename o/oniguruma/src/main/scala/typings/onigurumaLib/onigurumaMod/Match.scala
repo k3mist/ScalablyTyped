@@ -12,3 +12,12 @@ trait Match extends js.Object {
   var index: scala.Double
 }
 
+object Match {
+  @scala.inline
+  def apply(captureIndices: js.Array[CaptureIndex], index: scala.Double): Match = {
+    val __obj = js.Dynamic.literal(captureIndices = captureIndices, index = index)
+  
+    __obj.asInstanceOf[Match]
+  }
+}
+

@@ -50,3 +50,55 @@ trait Aliases extends js.Object {
   var While: While
 }
 
+object Aliases {
+  @scala.inline
+  def apply(
+    Binary: Binary,
+    Block: Block,
+    BlockParent: BlockParent,
+    Class: Class,
+    CompletionStatement: CompletionStatement,
+    Conditional: Conditional,
+    Declaration: Declaration,
+    ExportDeclaration: ExportDeclaration,
+    Expression: Expression,
+    ExpressionWrapper: ExpressionWrapper,
+    Flow: Flow,
+    FlowBaseAnnotation: FlowBaseAnnotation,
+    FlowDeclaration: FlowDeclaration,
+    FlowPredicate: FlowPredicate,
+    FlowType: FlowType,
+    For: For,
+    ForXStatement: ForXStatement,
+    Function: Function,
+    FunctionParent: FunctionParent,
+    Immutable: Immutable,
+    JSX: JSX,
+    LVal: LVal,
+    Literal: Literal,
+    Loop: Loop,
+    Method: Method,
+    ModuleDeclaration: ModuleDeclaration,
+    ModuleSpecifier: ModuleSpecifier,
+    ObjectMember: ObjectMember,
+    Pattern: Pattern,
+    PatternLike: PatternLike,
+    Private: Private,
+    Property: Property,
+    Pureish: Pureish,
+    Scopable: Scopable,
+    Statement: Statement,
+    TSEntityName: TSEntityName,
+    TSType: TSType,
+    TSTypeElement: TSTypeElement,
+    Terminatorless: Terminatorless,
+    UnaryLike: UnaryLike,
+    UserWhitespacable: UserWhitespacable,
+    While: While
+  ): Aliases = {
+    val __obj = js.Dynamic.literal(Binary = Binary, Block = Block, BlockParent = BlockParent, Class = Class, CompletionStatement = CompletionStatement, Conditional = Conditional, Declaration = Declaration, ExportDeclaration = ExportDeclaration, Expression = Expression, ExpressionWrapper = ExpressionWrapper, Flow = Flow, FlowBaseAnnotation = FlowBaseAnnotation, FlowDeclaration = FlowDeclaration, FlowPredicate = FlowPredicate, FlowType = FlowType, For = For, ForXStatement = ForXStatement, Function = Function, FunctionParent = FunctionParent, Immutable = Immutable, JSX = JSX, LVal = LVal, Literal = Literal, Loop = Loop, Method = Method, ModuleDeclaration = ModuleDeclaration, ModuleSpecifier = ModuleSpecifier, ObjectMember = ObjectMember, Pattern = Pattern, PatternLike = PatternLike, Private = Private, Property = Property, Pureish = Pureish, Scopable = Scopable, Statement = Statement, TSEntityName = TSEntityName, TSType = TSType, TSTypeElement = TSTypeElement, Terminatorless = Terminatorless, UnaryLike = UnaryLike, UserWhitespacable = UserWhitespacable, While = While)
+  
+    __obj.asInstanceOf[Aliases]
+  }
+}
+

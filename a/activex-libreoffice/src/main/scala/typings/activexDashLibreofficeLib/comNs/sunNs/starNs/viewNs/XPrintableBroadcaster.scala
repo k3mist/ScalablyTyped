@@ -20,3 +20,18 @@ trait XPrintableBroadcaster
   def removePrintableListener(xListener: XPrintableListener): scala.Unit
 }
 
+object XPrintableBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addPrintableListener: js.Function1[XPrintableListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePrintableListener: js.Function1[XPrintableListener, scala.Unit]
+  ): XPrintableBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addPrintableListener = addPrintableListener, queryInterface = queryInterface, release = release, removePrintableListener = removePrintableListener)
+  
+    __obj.asInstanceOf[XPrintableBroadcaster]
+  }
+}
+

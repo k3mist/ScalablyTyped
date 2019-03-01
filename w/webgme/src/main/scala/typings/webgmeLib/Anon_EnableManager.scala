@@ -22,3 +22,15 @@ trait Anon_EnableManager extends js.Object {
   var manager: webgmeLib.webgmeLibStrings.memory | webgmeLib.webgmeLibStrings.redis
 }
 
+object Anon_EnableManager {
+  @scala.inline
+  def apply(
+    enable: scala.Boolean,
+    manager: webgmeLib.webgmeLibStrings.memory | webgmeLib.webgmeLibStrings.redis
+  ): Anon_EnableManager = {
+    val __obj = js.Dynamic.literal(enable = enable, manager = manager.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_EnableManager]
+  }
+}
+

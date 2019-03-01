@@ -12,3 +12,12 @@ trait ActiveReceiptRuleSetArgs extends js.Object {
   val ruleSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ActiveReceiptRuleSetArgs {
+  @scala.inline
+  def apply(ruleSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): ActiveReceiptRuleSetArgs = {
+    val __obj = js.Dynamic.literal(ruleSetName = ruleSetName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ActiveReceiptRuleSetArgs]
+  }
+}
+

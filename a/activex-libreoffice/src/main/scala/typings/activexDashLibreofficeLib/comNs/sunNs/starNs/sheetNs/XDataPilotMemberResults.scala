@@ -21,3 +21,18 @@ trait XDataPilotMemberResults
   def getResults(): activexDashInteropLib.SafeArray[MemberResult]
 }
 
+object XDataPilotMemberResults {
+  @scala.inline
+  def apply(
+    Results: activexDashInteropLib.SafeArray[MemberResult],
+    acquire: js.Function0[scala.Unit],
+    getResults: js.Function0[activexDashInteropLib.SafeArray[MemberResult]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotMemberResults = {
+    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getResults = getResults, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDataPilotMemberResults]
+  }
+}
+

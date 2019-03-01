@@ -19,3 +19,12 @@ trait UnionPayAccountDetails extends js.Object {
   var lastTwo: java.lang.String
 }
 
+object UnionPayAccountDetails {
+  @scala.inline
+  def apply(cardType: java.lang.String, description: java.lang.String, lastTwo: java.lang.String): UnionPayAccountDetails = {
+    val __obj = js.Dynamic.literal(cardType = cardType, description = description, lastTwo = lastTwo)
+  
+    __obj.asInstanceOf[UnionPayAccountDetails]
+  }
+}
+

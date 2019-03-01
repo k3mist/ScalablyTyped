@@ -30,3 +30,36 @@ trait BootstrapSchedulerEventMap extends ControlEventMap {
   var visibleIntervalChanged: EventArgs
 }
 
+object BootstrapSchedulerEventMap {
+  @scala.inline
+  def apply(
+    activeViewChanged: EventArgs,
+    activeViewChanging: ActiveViewChangingEventArgs,
+    appointmentClick: AppointmentClickEventArgs,
+    appointmentDeleting: AppointmentDeletingEventArgs,
+    appointmentDoubleClick: AppointmentClickEventArgs,
+    appointmentDrag: AppointmentDragEventArgs,
+    appointmentDrop: AppointmentDropEventArgs,
+    appointmentResize: AppointmentResizeEventArgs,
+    appointmentResizing: AppointmentResizingEventArgs,
+    appointmentToolTipShowing: AppointmentToolTipShowingEventArgs,
+    appointmentsSelectionChanged: AppointmentsSelectionEventArgs,
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    cellClick: CellClickEventArgs,
+    cellDoubleClick: CellClickEventArgs,
+    endCallback: EndCallbackEventArgs,
+    init: EventArgs,
+    menuItemClicked: MenuItemClickedEventArgs,
+    moreButtonClicked: MoreButtonClickedEventArgs,
+    selectionChanged: EventArgs,
+    selectionChanging: EventArgs,
+    shortcut: ShortcutEventArgs,
+    visibleIntervalChanged: EventArgs
+  ): BootstrapSchedulerEventMap = {
+    val __obj = js.Dynamic.literal(activeViewChanged = activeViewChanged, activeViewChanging = activeViewChanging, appointmentClick = appointmentClick, appointmentDeleting = appointmentDeleting, appointmentDoubleClick = appointmentDoubleClick, appointmentDrag = appointmentDrag, appointmentDrop = appointmentDrop, appointmentResize = appointmentResize, appointmentResizing = appointmentResizing, appointmentToolTipShowing = appointmentToolTipShowing, appointmentsSelectionChanged = appointmentsSelectionChanged, beginCallback = beginCallback, callbackError = callbackError, cellClick = cellClick, cellDoubleClick = cellDoubleClick, endCallback = endCallback, init = init, menuItemClicked = menuItemClicked, moreButtonClicked = moreButtonClicked, selectionChanged = selectionChanged, selectionChanging = selectionChanging, shortcut = shortcut, visibleIntervalChanged = visibleIntervalChanged)
+  
+    __obj.asInstanceOf[BootstrapSchedulerEventMap]
+  }
+}
+

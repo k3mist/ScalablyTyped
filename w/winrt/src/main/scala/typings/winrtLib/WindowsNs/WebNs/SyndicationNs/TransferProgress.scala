@@ -12,3 +12,17 @@ trait TransferProgress extends js.Object {
   var totalBytesToSend: scala.Double
 }
 
+object TransferProgress {
+  @scala.inline
+  def apply(
+    bytesRetrieved: scala.Double,
+    bytesSent: scala.Double,
+    totalBytesToRetrieve: scala.Double,
+    totalBytesToSend: scala.Double
+  ): TransferProgress = {
+    val __obj = js.Dynamic.literal(bytesRetrieved = bytesRetrieved, bytesSent = bytesSent, totalBytesToRetrieve = totalBytesToRetrieve, totalBytesToSend = totalBytesToSend)
+  
+    __obj.asInstanceOf[TransferProgress]
+  }
+}
+

@@ -11,3 +11,17 @@ trait Anon_LaunchTemplateIdLaunchTemplateNameVersionInput extends js.Object {
   var version: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_LaunchTemplateIdLaunchTemplateNameVersionInput {
+  @scala.inline
+  def apply(
+    version: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    launchTemplateId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    launchTemplateName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_LaunchTemplateIdLaunchTemplateNameVersionInput = {
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    if (launchTemplateId != null) __obj.updateDynamic("launchTemplateId")(launchTemplateId.asInstanceOf[js.Any])
+    if (launchTemplateName != null) __obj.updateDynamic("launchTemplateName")(launchTemplateName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_LaunchTemplateIdLaunchTemplateNameVersionInput]
+  }
+}
+

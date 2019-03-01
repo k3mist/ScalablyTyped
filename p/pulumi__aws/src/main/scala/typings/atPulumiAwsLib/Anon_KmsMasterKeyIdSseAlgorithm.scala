@@ -10,3 +10,15 @@ trait Anon_KmsMasterKeyIdSseAlgorithm extends js.Object {
   var sseAlgorithm: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_KmsMasterKeyIdSseAlgorithm {
+  @scala.inline
+  def apply(
+    sseAlgorithm: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    kmsMasterKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_KmsMasterKeyIdSseAlgorithm = {
+    val __obj = js.Dynamic.literal(sseAlgorithm = sseAlgorithm.asInstanceOf[js.Any])
+    if (kmsMasterKeyId != null) __obj.updateDynamic("kmsMasterKeyId")(kmsMasterKeyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_KmsMasterKeyIdSseAlgorithm]
+  }
+}
+

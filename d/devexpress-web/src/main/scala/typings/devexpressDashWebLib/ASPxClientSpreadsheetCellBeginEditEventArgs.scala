@@ -36,3 +36,19 @@ trait ASPxClientSpreadsheetCellBeginEditEventArgs extends ASPxClientCancelEventA
   var value: java.lang.String
 }
 
+object ASPxClientSpreadsheetCellBeginEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    columnIndex: scala.Double,
+    formula: java.lang.String,
+    rowIndex: scala.Double,
+    sheetName: java.lang.String,
+    value: java.lang.String
+  ): ASPxClientSpreadsheetCellBeginEditEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, columnIndex = columnIndex, formula = formula, rowIndex = rowIndex, sheetName = sheetName, value = value)
+  
+    __obj.asInstanceOf[ASPxClientSpreadsheetCellBeginEditEventArgs]
+  }
+}
+

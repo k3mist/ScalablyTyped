@@ -40,3 +40,41 @@ trait ReporterContributions extends js.Object {
   var xunit: scala.Nothing
 }
 
+object ReporterContributions {
+  @scala.inline
+  def apply(
+    Base: scala.Nothing,
+    Dot: scala.Nothing,
+    HTML: scala.Nothing,
+    JSON: scala.Nothing,
+    JSONStream: scala.Nothing,
+    Landing: scala.Nothing,
+    List: scala.Nothing,
+    Markdown: scala.Nothing,
+    Min: scala.Nothing,
+    Nyan: scala.Nothing,
+    Progress: scala.Nothing,
+    Spec: scala.Nothing,
+    TAP: scala.Nothing,
+    XUnit: scala.Nothing,
+    base: scala.Nothing,
+    dot: scala.Nothing,
+    html: scala.Nothing,
+    json: scala.Nothing,
+    `json-stream`: scala.Nothing,
+    landing: scala.Nothing,
+    list: scala.Nothing,
+    markdown: scala.Nothing,
+    min: scala.Nothing,
+    nyan: scala.Nothing,
+    progress: scala.Nothing,
+    spec: scala.Nothing,
+    tap: scala.Nothing,
+    xunit: scala.Nothing
+  ): ReporterContributions = {
+    val __obj = js.Dynamic.literal(Base = Base, Dot = Dot, HTML = HTML, JSON = JSON, JSONStream = JSONStream, Landing = Landing, List = List, Markdown = Markdown, Min = Min, Nyan = Nyan, Progress = Progress, Spec = Spec, TAP = TAP, XUnit = XUnit, base = base, dot = dot, html = html, json = json, landing = landing, list = list, markdown = markdown, min = min, nyan = nyan, progress = progress, spec = spec, tap = tap, xunit = xunit)
+    __obj.updateDynamic("json-stream")(`json-stream`)
+    __obj.asInstanceOf[ReporterContributions]
+  }
+}
+

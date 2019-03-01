@@ -30,3 +30,35 @@ trait TestPoint extends js.Object {
   var workItemProperties: js.Array[_]
 }
 
+object TestPoint {
+  @scala.inline
+  def apply(
+    assignedTo: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    automated: scala.Boolean,
+    comment: java.lang.String,
+    configuration: ShallowReference,
+    failureType: java.lang.String,
+    id: scala.Double,
+    lastResolutionStateId: scala.Double,
+    lastResult: ShallowReference,
+    lastResultDetails: LastResultDetails,
+    lastResultState: java.lang.String,
+    lastRunBuildNumber: java.lang.String,
+    lastTestRun: ShallowReference,
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    outcome: java.lang.String,
+    revision: scala.Double,
+    state: java.lang.String,
+    suite: ShallowReference,
+    testCase: WorkItemReference,
+    testPlan: ShallowReference,
+    url: java.lang.String,
+    workItemProperties: js.Array[_]
+  ): TestPoint = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, automated = automated, comment = comment, configuration = configuration, failureType = failureType, id = id, lastResolutionStateId = lastResolutionStateId, lastResult = lastResult, lastResultDetails = lastResultDetails, lastResultState = lastResultState, lastRunBuildNumber = lastRunBuildNumber, lastTestRun = lastTestRun, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, outcome = outcome, revision = revision, state = state, suite = suite, testCase = testCase, testPlan = testPlan, url = url, workItemProperties = workItemProperties)
+  
+    __obj.asInstanceOf[TestPoint]
+  }
+}
+

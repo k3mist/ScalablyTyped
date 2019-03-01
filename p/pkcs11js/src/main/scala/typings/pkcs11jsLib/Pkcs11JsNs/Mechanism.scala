@@ -10,3 +10,12 @@ trait Mechanism extends js.Object {
   var parameter: nodeLib.Buffer | IParams
 }
 
+object Mechanism {
+  @scala.inline
+  def apply(mechanism: scala.Double, parameter: nodeLib.Buffer | IParams): Mechanism = {
+    val __obj = js.Dynamic.literal(mechanism = mechanism, parameter = parameter.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Mechanism]
+  }
+}
+

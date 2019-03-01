@@ -79,3 +79,128 @@ trait Axis
   var zindex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Axis {
+  @scala.inline
+  def apply(
+    orient: AxisOrient,
+    scale: java.lang.String,
+    bandPosition: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    domain: js.UndefOr[scala.Boolean] = js.undefined,
+    domainColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    domainOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    domainWidth: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    encode: AxisEncode = null,
+    format: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    gridColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    gridDash: vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue = null,
+    gridOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    gridScale: java.lang.String = null,
+    gridWidth: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelAlign: vegaDashTypingsLib.typesSpecValuesMod.AlignValue = null,
+    labelAngle: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelBaseline: vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue = null,
+    labelBound: scala.Double | scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    labelColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    labelFlush: scala.Double | scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    labelFlushOffset: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    labelFont: vegaDashTypingsLib.typesSpecValuesMod.StringValue = null,
+    labelFontSize: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelFontWeight: vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue = null,
+    labelLimit: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelOverlap: LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    labelPadding: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    labelSeparation: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    labels: js.UndefOr[scala.Boolean] = js.undefined,
+    maxExtent: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    minExtent: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    offset: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    position: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    tickColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    tickCount: scala.Double | vegaDashTypingsLib.typesSpecScaleMod.TimeInterval | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    tickExtra: vegaDashTypingsLib.typesSpecValuesMod.BooleanValue = null,
+    tickOffset: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    tickOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    tickRound: vegaDashTypingsLib.typesSpecValuesMod.BooleanValue = null,
+    tickSize: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    tickWidth: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    ticks: vegaDashTypingsLib.typesSpecValuesMod.BooleanValue = null,
+    title: vegaDashTypingsLib.typesSpecValuesMod.StringValue = null,
+    titleAlign: vegaDashTypingsLib.typesSpecValuesMod.AlignValue = null,
+    titleAngle: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titleBaseline: vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue = null,
+    titleColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    titleFont: vegaDashTypingsLib.typesSpecValuesMod.StringValue = null,
+    titleFontSize: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titleFontWeight: vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue = null,
+    titleLimit: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titleOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titlePadding: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titleX: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    titleY: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    values: js.Array[_] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    zindex: scala.Int | scala.Double = null
+  ): Axis = {
+    val __obj = js.Dynamic.literal(orient = orient, scale = scale)
+    if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain)
+    if (domainColor != null) __obj.updateDynamic("domainColor")(domainColor.asInstanceOf[js.Any])
+    if (domainOpacity != null) __obj.updateDynamic("domainOpacity")(domainOpacity.asInstanceOf[js.Any])
+    if (domainWidth != null) __obj.updateDynamic("domainWidth")(domainWidth.asInstanceOf[js.Any])
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
+    if (gridDash != null) __obj.updateDynamic("gridDash")(gridDash.asInstanceOf[js.Any])
+    if (gridOpacity != null) __obj.updateDynamic("gridOpacity")(gridOpacity.asInstanceOf[js.Any])
+    if (gridScale != null) __obj.updateDynamic("gridScale")(gridScale)
+    if (gridWidth != null) __obj.updateDynamic("gridWidth")(gridWidth.asInstanceOf[js.Any])
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
+    if (labelAngle != null) __obj.updateDynamic("labelAngle")(labelAngle.asInstanceOf[js.Any])
+    if (labelBaseline != null) __obj.updateDynamic("labelBaseline")(labelBaseline.asInstanceOf[js.Any])
+    if (labelBound != null) __obj.updateDynamic("labelBound")(labelBound.asInstanceOf[js.Any])
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
+    if (labelFlush != null) __obj.updateDynamic("labelFlush")(labelFlush.asInstanceOf[js.Any])
+    if (labelFlushOffset != null) __obj.updateDynamic("labelFlushOffset")(labelFlushOffset.asInstanceOf[js.Any])
+    if (labelFont != null) __obj.updateDynamic("labelFont")(labelFont.asInstanceOf[js.Any])
+    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
+    if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
+    if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
+    if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
+    if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
+    if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
+    if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)
+    if (maxExtent != null) __obj.updateDynamic("maxExtent")(maxExtent.asInstanceOf[js.Any])
+    if (minExtent != null) __obj.updateDynamic("minExtent")(minExtent.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
+    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
+    if (tickExtra != null) __obj.updateDynamic("tickExtra")(tickExtra.asInstanceOf[js.Any])
+    if (tickOffset != null) __obj.updateDynamic("tickOffset")(tickOffset.asInstanceOf[js.Any])
+    if (tickOpacity != null) __obj.updateDynamic("tickOpacity")(tickOpacity.asInstanceOf[js.Any])
+    if (tickRound != null) __obj.updateDynamic("tickRound")(tickRound.asInstanceOf[js.Any])
+    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
+    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
+    if (titleAngle != null) __obj.updateDynamic("titleAngle")(titleAngle.asInstanceOf[js.Any])
+    if (titleBaseline != null) __obj.updateDynamic("titleBaseline")(titleBaseline.asInstanceOf[js.Any])
+    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
+    if (titleFont != null) __obj.updateDynamic("titleFont")(titleFont.asInstanceOf[js.Any])
+    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
+    if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
+    if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
+    if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
+    if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
+    if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])
+    if (titleY != null) __obj.updateDynamic("titleY")(titleY.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Axis]
+  }
+}
+

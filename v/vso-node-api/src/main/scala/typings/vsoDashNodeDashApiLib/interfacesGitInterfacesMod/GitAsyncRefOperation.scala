@@ -16,3 +16,18 @@ trait GitAsyncRefOperation extends js.Object {
   var url: java.lang.String
 }
 
+object GitAsyncRefOperation {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    detailedStatus: GitAsyncRefOperationDetail,
+    parameters: GitAsyncRefOperationParameters,
+    status: GitAsyncOperationStatus,
+    url: java.lang.String
+  ): GitAsyncRefOperation = {
+    val __obj = js.Dynamic.literal(_links = _links, detailedStatus = detailedStatus, parameters = parameters, status = status, url = url)
+  
+    __obj.asInstanceOf[GitAsyncRefOperation]
+  }
+}
+

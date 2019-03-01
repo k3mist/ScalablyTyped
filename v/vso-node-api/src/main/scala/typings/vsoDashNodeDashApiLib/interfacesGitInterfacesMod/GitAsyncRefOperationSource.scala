@@ -16,3 +16,12 @@ trait GitAsyncRefOperationSource extends js.Object {
   var pullRequestId: scala.Double
 }
 
+object GitAsyncRefOperationSource {
+  @scala.inline
+  def apply(commitList: js.Array[GitCommitRef], pullRequestId: scala.Double): GitAsyncRefOperationSource = {
+    val __obj = js.Dynamic.literal(commitList = commitList, pullRequestId = pullRequestId)
+  
+    __obj.asInstanceOf[GitAsyncRefOperationSource]
+  }
+}
+

@@ -12,3 +12,17 @@ trait RouteOptions extends js.Object {
   var wildcardInPairs: scala.Boolean
 }
 
+object RouteOptions {
+  @scala.inline
+  def apply(
+    caseSensitive: scala.Boolean,
+    name: java.lang.String,
+    recursiveWildcard: scala.Boolean,
+    wildcardInPairs: scala.Boolean
+  ): RouteOptions = {
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, name = name, recursiveWildcard = recursiveWildcard, wildcardInPairs = wildcardInPairs)
+  
+    __obj.asInstanceOf[RouteOptions]
+  }
+}
+

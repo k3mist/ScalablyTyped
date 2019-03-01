@@ -11,3 +11,19 @@ trait ScriptExceptionRaisedException extends ScriptErrorRaisedException {
   var exceptionType: java.lang.String
 }
 
+object ScriptExceptionRaisedException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    exceptionType: java.lang.String,
+    language: java.lang.String,
+    lineNum: scala.Double,
+    scriptName: java.lang.String
+  ): ScriptExceptionRaisedException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, exceptionType = exceptionType, language = language, lineNum = lineNum, scriptName = scriptName)
+  
+    __obj.asInstanceOf[ScriptExceptionRaisedException]
+  }
+}
+

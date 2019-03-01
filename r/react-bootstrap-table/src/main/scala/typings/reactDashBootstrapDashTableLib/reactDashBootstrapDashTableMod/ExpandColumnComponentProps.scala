@@ -16,3 +16,12 @@ trait ExpandColumnComponentProps extends js.Object {
   var isExpanded: scala.Boolean
 }
 
+object ExpandColumnComponentProps {
+  @scala.inline
+  def apply(isExpandableRow: scala.Boolean, isExpanded: scala.Boolean): ExpandColumnComponentProps = {
+    val __obj = js.Dynamic.literal(isExpandableRow = isExpandableRow, isExpanded = isExpanded)
+  
+    __obj.asInstanceOf[ExpandColumnComponentProps]
+  }
+}
+

@@ -19,3 +19,27 @@ trait Property
   var value: estreeLib.Expression | Pattern
 }
 
+object Property {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: estreeLib.Expression,
+    kind: estreeLib.estreeLibStrings.init | estreeLib.estreeLibStrings.get | estreeLib.estreeLibStrings.set,
+    method: scala.Boolean,
+    shorthand: scala.Boolean,
+    `type`: estreeLib.estreeLibStrings.Property,
+    value: estreeLib.Expression | Pattern,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Property = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key, kind = kind.asInstanceOf[js.Any], method = method, shorthand = shorthand, `type` = `type`, value = value.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[Property]
+  }
+}
+

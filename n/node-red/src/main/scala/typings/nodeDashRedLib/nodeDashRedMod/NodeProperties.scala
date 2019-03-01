@@ -18,3 +18,12 @@ trait NodeProperties extends js.Object {
   var `type`: NodeType
 }
 
+object NodeProperties {
+  @scala.inline
+  def apply(id: NodeId, name: java.lang.String, `type`: NodeType): NodeProperties = {
+    val __obj = js.Dynamic.literal(id = id, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[NodeProperties]
+  }
+}
+

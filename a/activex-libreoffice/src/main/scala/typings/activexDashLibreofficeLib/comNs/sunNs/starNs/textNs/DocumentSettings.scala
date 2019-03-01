@@ -101,3 +101,94 @@ trait DocumentSettings
   var UseFormerObjectPositioning: scala.Boolean
 }
 
+object DocumentSettings {
+  @scala.inline
+  def apply(
+    AddExternalLeading: scala.Boolean,
+    AddParaSpacingToTableCells: scala.Boolean,
+    AddParaTableSpacing: scala.Boolean,
+    AddParaTableSpacingAtStart: scala.Boolean,
+    AlignTabStopPosition: scala.Boolean,
+    ApplyUserData: scala.Boolean,
+    AutoCalculate: scala.Boolean,
+    BitmapTableURL: java.lang.String,
+    CharacterCompressionType: scala.Double,
+    ChartAutoUpdate: scala.Boolean,
+    ColorTableURL: java.lang.String,
+    ConsiderTextWrapOnObjPos: scala.Boolean,
+    CurrentDatabaseCommand: java.lang.String,
+    CurrentDatabaseCommandType: scala.Double,
+    CurrentDatabaseDataSource: java.lang.String,
+    DashTableURL: java.lang.String,
+    DefaultTabStop: scala.Double,
+    EmbedFonts: scala.Boolean,
+    EmbedSystemFonts: scala.Boolean,
+    FieldAutoUpdate: scala.Boolean,
+    ForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XForbiddenCharacters,
+    GradientTableURL: java.lang.String,
+    HatchTableURL: java.lang.String,
+    IsKernAsianPunctuation: scala.Boolean,
+    IsLabelDocument: scala.Boolean,
+    IsPrintBooklet: scala.Boolean,
+    IsPrintBookletBack: scala.Boolean,
+    IsPrintBookletFront: scala.Boolean,
+    LineEndTableURL: java.lang.String,
+    LinkUpdateMode: scala.Double,
+    MathBaselineAlignment: scala.Boolean,
+    PrintAnnotationMode: NotePrintMode,
+    PrintBlackFonts: scala.Boolean,
+    PrintControls: scala.Boolean,
+    PrintDrawings: scala.Boolean,
+    PrintEmptyPages: scala.Boolean,
+    PrintFaxName: java.lang.String,
+    PrintGraphics: scala.Boolean,
+    PrintLeftPages: scala.Boolean,
+    PrintPageBackground: scala.Boolean,
+    PrintPaperFromSetup: scala.Boolean,
+    PrintProspect: scala.Boolean,
+    PrintQuality: scala.Double,
+    PrintReversed: scala.Boolean,
+    PrintRightPages: scala.Boolean,
+    PrintTables: scala.Boolean,
+    PrinterIndependentLayout: scala.Double,
+    PrinterName: java.lang.String,
+    PrinterSetup: activexDashInteropLib.SafeArray[scala.Double],
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    SaveGlobalDocumentLinks: scala.Boolean,
+    SaveVersionOnClose: scala.Boolean,
+    UpdateFromTemplate: scala.Boolean,
+    UseFormerLineSpacing: scala.Boolean,
+    UseFormerObjectPositioning: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DocumentSettings = {
+    val __obj = js.Dynamic.literal(AddExternalLeading = AddExternalLeading, AddParaSpacingToTableCells = AddParaSpacingToTableCells, AddParaTableSpacing = AddParaTableSpacing, AddParaTableSpacingAtStart = AddParaTableSpacingAtStart, AlignTabStopPosition = AlignTabStopPosition, ApplyUserData = ApplyUserData, AutoCalculate = AutoCalculate, BitmapTableURL = BitmapTableURL, CharacterCompressionType = CharacterCompressionType, ChartAutoUpdate = ChartAutoUpdate, ColorTableURL = ColorTableURL, ConsiderTextWrapOnObjPos = ConsiderTextWrapOnObjPos, CurrentDatabaseCommand = CurrentDatabaseCommand, CurrentDatabaseCommandType = CurrentDatabaseCommandType, CurrentDatabaseDataSource = CurrentDatabaseDataSource, DashTableURL = DashTableURL, DefaultTabStop = DefaultTabStop, EmbedFonts = EmbedFonts, EmbedSystemFonts = EmbedSystemFonts, FieldAutoUpdate = FieldAutoUpdate, ForbiddenCharacters = ForbiddenCharacters, GradientTableURL = GradientTableURL, HatchTableURL = HatchTableURL, IsKernAsianPunctuation = IsKernAsianPunctuation, IsLabelDocument = IsLabelDocument, IsPrintBooklet = IsPrintBooklet, IsPrintBookletBack = IsPrintBookletBack, IsPrintBookletFront = IsPrintBookletFront, LineEndTableURL = LineEndTableURL, LinkUpdateMode = LinkUpdateMode, MathBaselineAlignment = MathBaselineAlignment, PrintAnnotationMode = PrintAnnotationMode, PrintBlackFonts = PrintBlackFonts, PrintControls = PrintControls, PrintDrawings = PrintDrawings, PrintEmptyPages = PrintEmptyPages, PrintFaxName = PrintFaxName, PrintGraphics = PrintGraphics, PrintLeftPages = PrintLeftPages, PrintPageBackground = PrintPageBackground, PrintPaperFromSetup = PrintPaperFromSetup, PrintProspect = PrintProspect, PrintQuality = PrintQuality, PrintReversed = PrintReversed, PrintRightPages = PrintRightPages, PrintTables = PrintTables, PrinterIndependentLayout = PrinterIndependentLayout, PrinterName = PrinterName, PrinterSetup = PrinterSetup, PropertySetInfo = PropertySetInfo, SaveGlobalDocumentLinks = SaveGlobalDocumentLinks, SaveVersionOnClose = SaveVersionOnClose, UpdateFromTemplate = UpdateFromTemplate, UseFormerLineSpacing = UseFormerLineSpacing, UseFormerObjectPositioning = UseFormerObjectPositioning, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[DocumentSettings]
+  }
+}
+

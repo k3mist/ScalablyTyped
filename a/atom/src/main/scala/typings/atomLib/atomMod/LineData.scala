@@ -12,3 +12,12 @@ trait LineData extends js.Object {
   var screenRow: scala.Double
 }
 
+object LineData {
+  @scala.inline
+  def apply(bufferRow: scala.Double, screenRow: scala.Double): LineData = {
+    val __obj = js.Dynamic.literal(bufferRow = bufferRow, screenRow = screenRow)
+  
+    __obj.asInstanceOf[LineData]
+  }
+}
+

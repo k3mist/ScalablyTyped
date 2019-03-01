@@ -10,3 +10,15 @@ trait Anon_Changed extends js.Object {
   var viewableItems: js.Array[reactDashNativeLib.reactDashNativeMod.ViewToken]
 }
 
+object Anon_Changed {
+  @scala.inline
+  def apply(
+    changed: js.Array[reactDashNativeLib.reactDashNativeMod.ViewToken],
+    viewableItems: js.Array[reactDashNativeLib.reactDashNativeMod.ViewToken]
+  ): Anon_Changed = {
+    val __obj = js.Dynamic.literal(changed = changed, viewableItems = viewableItems)
+  
+    __obj.asInstanceOf[Anon_Changed]
+  }
+}
+

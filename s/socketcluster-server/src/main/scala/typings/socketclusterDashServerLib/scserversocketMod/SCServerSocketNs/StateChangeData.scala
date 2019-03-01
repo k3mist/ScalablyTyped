@@ -11,3 +11,16 @@ trait StateChangeData extends js.Object {
   var oldState: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticated | socketclusterDashServerLib.socketclusterDashServerLibStrings.unauthenticated
 }
 
+object StateChangeData {
+  @scala.inline
+  def apply(
+    newState: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticated | socketclusterDashServerLib.socketclusterDashServerLibStrings.unauthenticated,
+    oldState: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticated | socketclusterDashServerLib.socketclusterDashServerLibStrings.unauthenticated,
+    authToken: socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken = null
+  ): StateChangeData = {
+    val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken)
+    __obj.asInstanceOf[StateChangeData]
+  }
+}
+

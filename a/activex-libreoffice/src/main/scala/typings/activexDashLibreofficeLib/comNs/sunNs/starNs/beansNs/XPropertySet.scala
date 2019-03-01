@@ -79,3 +79,24 @@ trait XPropertySet
   def setPropertyValue(aPropertyName: java.lang.String, aValue: js.Any): scala.Unit
 }
 
+object XPropertySet {
+  @scala.inline
+  def apply(
+    PropertySetInfo: XPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[java.lang.String, XPropertyChangeListener, scala.Unit],
+    addVetoableChangeListener: js.Function2[java.lang.String, XVetoableChangeListener, scala.Unit],
+    getPropertySetInfo: js.Function0[XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[java.lang.String, XPropertyChangeListener, scala.Unit],
+    removeVetoableChangeListener: js.Function2[java.lang.String, XVetoableChangeListener, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XPropertySet = {
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[XPropertySet]
+  }
+}
+

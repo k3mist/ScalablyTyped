@@ -21,3 +21,26 @@ trait VisibilityCalculations extends js.Object {
   var width: scala.Double
 }
 
+object VisibilityCalculations {
+  @scala.inline
+  def apply(
+    bottomPassed: scala.Boolean,
+    bottomVisible: scala.Boolean,
+    direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.down | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.up,
+    fits: scala.Boolean,
+    height: scala.Double,
+    offScreen: scala.Boolean,
+    onScreen: scala.Boolean,
+    passing: scala.Boolean,
+    percentagePassed: scala.Double,
+    pixelsPassed: scala.Double,
+    topPassed: scala.Boolean,
+    topVisible: scala.Boolean,
+    width: scala.Double
+  ): VisibilityCalculations = {
+    val __obj = js.Dynamic.literal(bottomPassed = bottomPassed, bottomVisible = bottomVisible, direction = direction.asInstanceOf[js.Any], fits = fits, height = height, offScreen = offScreen, onScreen = onScreen, passing = passing, percentagePassed = percentagePassed, pixelsPassed = pixelsPassed, topPassed = topPassed, topVisible = topVisible, width = width)
+  
+    __obj.asInstanceOf[VisibilityCalculations]
+  }
+}
+

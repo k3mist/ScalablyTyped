@@ -13,3 +13,18 @@ trait InterceptStreamProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object InterceptStreamProtocolRequest {
+  @scala.inline
+  def apply(
+    headers: Headers,
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): InterceptStreamProtocolRequest = {
+    val __obj = js.Dynamic.literal(headers = headers, method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[InterceptStreamProtocolRequest]
+  }
+}
+

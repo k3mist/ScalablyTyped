@@ -103,3 +103,47 @@ trait ASPxClientHtmlEditorChangeElementPropertiesDialog extends ASPxClientHtmlEd
   def GetWidthValueTypeComboBox(): ASPxClientComboBox
 }
 
+object ASPxClientHtmlEditorChangeElementPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetAcceptTextBox: js.Function0[ASPxClientTextBox],
+    GetActionTextBox: js.Function0[ASPxClientTextBox],
+    GetAltTextBox: js.Function0[ASPxClientTextBox],
+    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
+    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetCheckedCheckBox: js.Function0[ASPxClientCheckBox],
+    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
+    GetDirectionComboBox: js.Function0[ASPxClientComboBox],
+    GetDisabledCheckBox: js.Function0[ASPxClientCheckBox],
+    GetForTextBox: js.Function0[ASPxClientTextBox],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHeightValueSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetHeightValueTypeComboBox: js.Function0[ASPxClientComboBox],
+    GetIdTextBox: js.Function0[ASPxClientTextBox],
+    GetInputTypeComboBox: js.Function0[ASPxClientComboBox],
+    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetMaxLengthTextBox: js.Function0[ASPxClientTextBox],
+    GetMethodTextBox: js.Function0[ASPxClientTextBox],
+    GetNameTextBox: js.Function0[ASPxClientTextBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetReadonlyCheckBox: js.Function0[ASPxClientCheckBox],
+    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetSizeTextBox: js.Function0[ASPxClientTextBox],
+    GetSrcTextBox: js.Function0[ASPxClientTextBox],
+    GetStartSpinEdit: js.Function0[ASPxClientTextBox],
+    GetTabIndexTextBox: js.Function0[ASPxClientTextBox],
+    GetTitleTextBox: js.Function0[ASPxClientTextBox],
+    GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetValueTextBox: js.Function0[ASPxClientTextBox],
+    GetWidthValueSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetWidthValueTypeComboBox: js.Function0[ASPxClientComboBox]
+  ): ASPxClientHtmlEditorChangeElementPropertiesDialog = {
+    val __obj = js.Dynamic.literal(GetAcceptTextBox = GetAcceptTextBox, GetActionTextBox = GetActionTextBox, GetAltTextBox = GetAltTextBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCheckedCheckBox = GetCheckedCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetDirectionComboBox = GetDirectionComboBox, GetDisabledCheckBox = GetDisabledCheckBox, GetForTextBox = GetForTextBox, GetFormLayout = GetFormLayout, GetHeightValueSpinEdit = GetHeightValueSpinEdit, GetHeightValueTypeComboBox = GetHeightValueTypeComboBox, GetIdTextBox = GetIdTextBox, GetInputTypeComboBox = GetInputTypeComboBox, GetLeftMarginTextBox = GetLeftMarginTextBox, GetMaxLengthTextBox = GetMaxLengthTextBox, GetMethodTextBox = GetMethodTextBox, GetNameTextBox = GetNameTextBox, GetOkButton = GetOkButton, GetReadonlyCheckBox = GetReadonlyCheckBox, GetRightMarginTextBox = GetRightMarginTextBox, GetSizeTextBox = GetSizeTextBox, GetSrcTextBox = GetSrcTextBox, GetStartSpinEdit = GetStartSpinEdit, GetTabIndexTextBox = GetTabIndexTextBox, GetTitleTextBox = GetTitleTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetValueTextBox = GetValueTextBox, GetWidthValueSpinEdit = GetWidthValueSpinEdit, GetWidthValueTypeComboBox = GetWidthValueTypeComboBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorChangeElementPropertiesDialog]
+  }
+}
+

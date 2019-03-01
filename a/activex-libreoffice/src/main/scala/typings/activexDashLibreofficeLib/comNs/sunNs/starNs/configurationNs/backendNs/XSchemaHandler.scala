@@ -152,3 +152,31 @@ trait XSchemaHandler
   def startSetTemplate(aTemplate: TemplateIdentifier, aAttributes: scala.Double, aItemType: TemplateIdentifier): scala.Unit
 }
 
+object XSchemaHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addInstance: js.Function2[java.lang.String, TemplateIdentifier, scala.Unit],
+    addItemType: js.Function1[TemplateIdentifier, scala.Unit],
+    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
+    addPropertyWithDefault: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    endComponent: js.Function0[scala.Unit],
+    endNode: js.Function0[scala.Unit],
+    endSchema: js.Function0[scala.Unit],
+    endTemplate: js.Function0[scala.Unit],
+    importComponent: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startComponent: js.Function1[java.lang.String, scala.Unit],
+    startGroup: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    startGroupTemplate: js.Function2[TemplateIdentifier, scala.Double, scala.Unit],
+    startSchema: js.Function0[scala.Unit],
+    startSet: js.Function3[java.lang.String, scala.Double, TemplateIdentifier, scala.Unit],
+    startSetTemplate: js.Function3[TemplateIdentifier, scala.Double, TemplateIdentifier, scala.Unit]
+  ): XSchemaHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addInstance = addInstance, addItemType = addItemType, addProperty = addProperty, addPropertyWithDefault = addPropertyWithDefault, endComponent = endComponent, endNode = endNode, endSchema = endSchema, endTemplate = endTemplate, importComponent = importComponent, queryInterface = queryInterface, release = release, startComponent = startComponent, startGroup = startGroup, startGroupTemplate = startGroupTemplate, startSchema = startSchema, startSet = startSet, startSetTemplate = startSetTemplate)
+  
+    __obj.asInstanceOf[XSchemaHandler]
+  }
+}
+

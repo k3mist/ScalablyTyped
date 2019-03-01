@@ -26,3 +26,35 @@ trait Try[A] extends js.Object {
   def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ stdLib.Error, Try[B]]): Try[B]
 }
 
+object Try {
+  @scala.inline
+  def apply[A](
+    apply1: js.Function2[Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Try[js.Any]],
+    apply2: js.Function3[Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any], Try[js.Any]],
+    chain: js.Function1[Try[js.Any], TryBuilder1[A, js.Any]],
+    failed: js.Function0[Try[A]],
+    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Try[A]],
+    flatMap: js.Function1[js.Function1[/* a */ A, Try[js.Any]], Try[js.Any]],
+    fold: js.Function2[js.Function1[/* e */ stdLib.Error, js.Any], js.Function1[/* a */ A, js.Any], js.Any],
+    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
+    get: js.Function0[A],
+    getError: js.Function0[stdLib.Error],
+    getOrElse: js.Function1[js.Any, A],
+    isFailure: scala.Boolean,
+    isSuccess: scala.Boolean,
+    map: js.Function1[js.Function1[/* a */ A, js.Any], Try[js.Any]],
+    orElse: js.Function1[Try[js.Any], Try[A]],
+    recover: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[Try[js.Any]]], Try[A]],
+    toOptional: js.Function0[Optional[A]],
+    transform: js.Function2[
+      js.Function1[/* a */ A, Try[js.Any]], 
+      js.Function1[/* e */ stdLib.Error, Try[js.Any]], 
+      Try[js.Any]
+    ]
+  ): Try[A] = {
+    val __obj = js.Dynamic.literal(apply1 = apply1, apply2 = apply2, chain = chain, failed = failed, filter = filter, flatMap = flatMap, fold = fold, foreach = foreach, get = get, getError = getError, getOrElse = getOrElse, isFailure = isFailure, isSuccess = isSuccess, map = map, orElse = orElse, recover = recover, toOptional = toOptional, transform = transform)
+  
+    __obj.asInstanceOf[Try[A]]
+  }
+}
+

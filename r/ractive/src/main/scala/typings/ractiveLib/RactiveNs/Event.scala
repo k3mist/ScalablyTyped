@@ -16,3 +16,20 @@ trait Event extends js.Object {
   var original: ractiveLib._RactiveEvent
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    context: js.Any,
+    index: org.scalablytyped.runtime.StringDictionary[scala.Double],
+    keypath: java.lang.String,
+    name: java.lang.String,
+    node: stdLib.HTMLElement,
+    original: ractiveLib._RactiveEvent,
+    component: Ractive = null
+  ): Event = {
+    val __obj = js.Dynamic.literal(context = context, index = index, keypath = keypath, name = name, node = node, original = original)
+    if (component != null) __obj.updateDynamic("component")(component)
+    __obj.asInstanceOf[Event]
+  }
+}
+

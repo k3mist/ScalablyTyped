@@ -13,3 +13,20 @@ trait CellPosition extends Position {
   var width: scala.Double
 }
 
+object CellPosition {
+  @scala.inline
+  def apply(
+    bottom: scala.Double,
+    height: scala.Double,
+    left: scala.Double,
+    right: scala.Double,
+    top: scala.Double,
+    visible: scala.Boolean,
+    width: scala.Double
+  ): CellPosition = {
+    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, top = top, visible = visible, width = width)
+  
+    __obj.asInstanceOf[CellPosition]
+  }
+}
+

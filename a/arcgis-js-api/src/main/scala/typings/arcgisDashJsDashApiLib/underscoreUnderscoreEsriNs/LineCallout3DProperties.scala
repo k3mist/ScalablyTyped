@@ -36,3 +36,20 @@ trait LineCallout3DProperties extends Callout3DProperties {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LineCallout3DProperties {
+  @scala.inline
+  def apply(
+    border: LineCallout3DBorderProperties = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    size: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null
+  ): LineCallout3DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LineCallout3DProperties]
+  }
+}
+

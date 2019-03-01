@@ -22,3 +22,21 @@ trait NavigationBarItem extends js.Object {
   var text: java.lang.String
 }
 
+object NavigationBarItem {
+  @scala.inline
+  def apply(
+    bolded: scala.Boolean,
+    childItems: js.Array[NavigationBarItem],
+    grayed: scala.Boolean,
+    indent: scala.Double,
+    kind: ScriptElementKind,
+    kindModifiers: java.lang.String,
+    spans: js.Array[TextSpan],
+    text: java.lang.String
+  ): NavigationBarItem = {
+    val __obj = js.Dynamic.literal(bolded = bolded, childItems = childItems, grayed = grayed, indent = indent, kind = kind, kindModifiers = kindModifiers, spans = spans, text = text)
+  
+    __obj.asInstanceOf[NavigationBarItem]
+  }
+}
+

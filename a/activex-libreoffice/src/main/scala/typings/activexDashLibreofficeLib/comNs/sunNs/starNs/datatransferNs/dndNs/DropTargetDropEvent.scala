@@ -36,3 +36,21 @@ trait DropTargetDropEvent extends DropTargetEvent {
   var Transferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
 }
 
+object DropTargetDropEvent {
+  @scala.inline
+  def apply(
+    Context: XDropTargetDropContext,
+    DropAction: scala.Double,
+    Dummy: scala.Double,
+    LocationX: scala.Double,
+    LocationY: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SourceActions: scala.Double,
+    Transferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
+  ): DropTargetDropEvent = {
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions, Transferable = Transferable)
+  
+    __obj.asInstanceOf[DropTargetDropEvent]
+  }
+}
+

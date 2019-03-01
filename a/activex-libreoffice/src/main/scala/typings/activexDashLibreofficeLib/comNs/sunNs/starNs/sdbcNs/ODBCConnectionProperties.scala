@@ -39,3 +39,22 @@ trait ODBCConnectionProperties extends ConnectionProperties {
   var UseCatalog: scala.Boolean
 }
 
+object ODBCConnectionProperties {
+  @scala.inline
+  def apply(
+    AutoRetrievingStatement: java.lang.String,
+    CharSet: java.lang.String,
+    IsAutoRetrievingEnabled: scala.Boolean,
+    ParameterNameSubstitution: scala.Boolean,
+    Silent: scala.Boolean,
+    Timeout: scala.Double,
+    UseCatalog: scala.Boolean,
+    password: java.lang.String,
+    user: java.lang.String
+  ): ODBCConnectionProperties = {
+    val __obj = js.Dynamic.literal(AutoRetrievingStatement = AutoRetrievingStatement, CharSet = CharSet, IsAutoRetrievingEnabled = IsAutoRetrievingEnabled, ParameterNameSubstitution = ParameterNameSubstitution, Silent = Silent, Timeout = Timeout, UseCatalog = UseCatalog, password = password, user = user)
+  
+    __obj.asInstanceOf[ODBCConnectionProperties]
+  }
+}
+

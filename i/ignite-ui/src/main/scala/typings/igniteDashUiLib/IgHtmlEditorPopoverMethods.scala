@@ -32,3 +32,19 @@ trait IgHtmlEditorPopoverMethods extends js.Object {
   def show(item: js.Object): scala.Unit
 }
 
+object IgHtmlEditorPopoverMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    hide: js.Function0[scala.Unit],
+    show: js.Function1[js.Object, scala.Unit]
+  ): IgHtmlEditorPopoverMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, hide = hide, show = show)
+  
+    __obj.asInstanceOf[IgHtmlEditorPopoverMethods]
+  }
+}
+

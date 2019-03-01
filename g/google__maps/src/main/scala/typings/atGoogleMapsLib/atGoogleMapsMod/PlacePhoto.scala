@@ -16,3 +16,17 @@ trait PlacePhoto extends js.Object {
   var width: scala.Double
 }
 
+object PlacePhoto {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    html_attributions: js.Array[java.lang.String],
+    photo_reference: java.lang.String,
+    width: scala.Double
+  ): PlacePhoto = {
+    val __obj = js.Dynamic.literal(height = height, html_attributions = html_attributions, photo_reference = photo_reference, width = width)
+  
+    __obj.asInstanceOf[PlacePhoto]
+  }
+}
+

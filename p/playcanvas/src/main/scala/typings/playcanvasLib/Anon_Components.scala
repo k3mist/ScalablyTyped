@@ -12,3 +12,17 @@ trait Anon_Components extends js.Object {
   var `type`: scala.Double
 }
 
+object Anon_Components {
+  @scala.inline
+  def apply(
+    components: scala.Double,
+    semantic: java.lang.String,
+    `type`: scala.Double,
+    normalize: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Components = {
+    val __obj = js.Dynamic.literal(components = components, semantic = semantic, `type` = `type`)
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
+    __obj.asInstanceOf[Anon_Components]
+  }
+}
+

@@ -56,3 +56,28 @@ trait Iterator[K, V] extends js.Object {
   def update(value: V): adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]
 }
 
+object Iterator {
+  @scala.inline
+  def apply[K, V](
+    clone: js.Function0[Iterator[K, V]],
+    hasNext: scala.Boolean,
+    hasPrev: scala.Boolean,
+    index: scala.Double,
+    next: js.Function0[scala.Unit],
+    prev: js.Function0[scala.Unit],
+    remove: js.Function0[adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    tree: adoneLib.adoneNs.collectionNs.RedBlackTree[K, V],
+    update: js.Function1[V, adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    valid: scala.Boolean,
+    key: K = null,
+    node: Node[K, V] = null,
+    value: V = null
+  ): Iterator[K, V] = {
+    val __obj = js.Dynamic.literal(clone = clone, hasNext = hasNext, hasPrev = hasPrev, index = index, next = next, prev = prev, remove = remove, tree = tree, update = update, valid = valid)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Iterator[K, V]]
+  }
+}
+

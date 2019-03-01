@@ -38,3 +38,19 @@ trait MaterialboxOptions extends js.Object {
   def onOpenStart(`this`: Materialbox, el: stdLib.Element): scala.Unit
 }
 
+object MaterialboxOptions {
+  @scala.inline
+  def apply(
+    inDuration: scala.Double,
+    onCloseEnd: js.Function2[Materialbox, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Materialbox, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Materialbox, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Materialbox, stdLib.Element, scala.Unit],
+    outDuration: scala.Double
+  ): MaterialboxOptions = {
+    val __obj = js.Dynamic.literal(inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
+    __obj.asInstanceOf[MaterialboxOptions]
+  }
+}
+

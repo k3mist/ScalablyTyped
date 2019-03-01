@@ -13,3 +13,18 @@ trait Anon_AllNone extends js.Object {
   var testRun: scala.Double
 }
 
+object Anon_AllNone {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    none: scala.Double,
+    system: scala.Double,
+    testResult: scala.Double,
+    testRun: scala.Double
+  ): Anon_AllNone = {
+    val __obj = js.Dynamic.literal(all = all, none = none, system = system, testResult = testResult, testRun = testRun)
+  
+    __obj.asInstanceOf[Anon_AllNone]
+  }
+}
+

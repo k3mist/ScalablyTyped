@@ -36,3 +36,20 @@ trait URLObject extends js.Object {
   var search: java.lang.String
 }
 
+object URLObject {
+  @scala.inline
+  def apply(
+    hash: java.lang.String,
+    host: java.lang.String,
+    hostname: java.lang.String,
+    pathname: java.lang.String,
+    port: java.lang.String,
+    protocol: java.lang.String,
+    search: java.lang.String
+  ): URLObject = {
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, pathname = pathname, port = port, protocol = protocol, search = search)
+  
+    __obj.asInstanceOf[URLObject]
+  }
+}
+

@@ -15,3 +15,22 @@ trait InlineQueryResultCachedVoice
   var voice_file_id: java.lang.String
 }
 
+object InlineQueryResultCachedVoice {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    title: java.lang.String,
+    `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.voice,
+    voice_file_id: java.lang.String,
+    caption: java.lang.String = null,
+    input_message_content: InputMessageContent = null,
+    reply_markup: InlineKeyboardMarkup = null
+  ): InlineQueryResultCachedVoice = {
+    val __obj = js.Dynamic.literal(id = id, title = title, `type` = `type`, voice_file_id = voice_file_id)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    __obj.asInstanceOf[InlineQueryResultCachedVoice]
+  }
+}
+

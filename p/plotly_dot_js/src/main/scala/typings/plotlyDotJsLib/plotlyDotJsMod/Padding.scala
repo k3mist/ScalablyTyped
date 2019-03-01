@@ -25,3 +25,18 @@ trait Padding extends js.Object {
   var t: scala.Double
 }
 
+object Padding {
+  @scala.inline
+  def apply(
+    b: scala.Double,
+    editType: plotlyDotJsLib.plotlyDotJsLibStrings.arraydraw,
+    l: scala.Double,
+    r: scala.Double,
+    t: scala.Double
+  ): Padding = {
+    val __obj = js.Dynamic.literal(b = b, editType = editType, l = l, r = r, t = t)
+  
+    __obj.asInstanceOf[Padding]
+  }
+}
+

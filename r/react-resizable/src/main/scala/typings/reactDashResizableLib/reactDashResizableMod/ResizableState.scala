@@ -13,3 +13,18 @@ trait ResizableState extends js.Object {
   var width: scala.Double
 }
 
+object ResizableState {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    resizing: scala.Boolean,
+    slackH: scala.Double,
+    slackW: scala.Double,
+    width: scala.Double
+  ): ResizableState = {
+    val __obj = js.Dynamic.literal(height = height, resizing = resizing, slackH = slackH, slackW = slackW, width = width)
+  
+    __obj.asInstanceOf[ResizableState]
+  }
+}
+

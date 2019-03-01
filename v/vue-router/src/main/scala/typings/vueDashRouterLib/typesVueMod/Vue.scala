@@ -12,3 +12,15 @@ trait Vue extends js.Object {
   var $router: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VueRouter */ js.Any
 }
 
+object Vue {
+  @scala.inline
+  def apply(
+    $route: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Route */ js.Any,
+    $router: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VueRouter */ js.Any
+  ): Vue = {
+    val __obj = js.Dynamic.literal($route = $route, $router = $router)
+  
+    __obj.asInstanceOf[Vue]
+  }
+}
+

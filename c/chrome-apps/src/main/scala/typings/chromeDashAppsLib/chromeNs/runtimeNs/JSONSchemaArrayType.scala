@@ -11,3 +11,16 @@ trait JSONSchemaArrayType extends js.Object {
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.array
 }
 
+object JSONSchemaArrayType {
+  @scala.inline
+  def apply(
+    items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType,
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.array,
+    id: java.lang.String = null
+  ): JSONSchemaArrayType = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], `type` = `type`)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[JSONSchemaArrayType]
+  }
+}
+

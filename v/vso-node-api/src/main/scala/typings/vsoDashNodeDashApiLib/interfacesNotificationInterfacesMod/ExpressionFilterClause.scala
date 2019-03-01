@@ -19,3 +19,18 @@ trait ExpressionFilterClause extends js.Object {
   var value: java.lang.String
 }
 
+object ExpressionFilterClause {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String,
+    index: scala.Double,
+    logicalOperator: java.lang.String,
+    operator: java.lang.String,
+    value: java.lang.String
+  ): ExpressionFilterClause = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName, index = index, logicalOperator = logicalOperator, operator = operator, value = value)
+  
+    __obj.asInstanceOf[ExpressionFilterClause]
+  }
+}
+

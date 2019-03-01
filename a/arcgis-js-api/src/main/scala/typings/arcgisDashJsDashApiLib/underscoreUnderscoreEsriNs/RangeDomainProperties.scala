@@ -20,3 +20,20 @@ trait RangeDomainProperties extends DomainProperties {
   var minValue: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RangeDomainProperties {
+  @scala.inline
+  def apply(
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): RangeDomainProperties = {
+    val __obj = js.Dynamic.literal()
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RangeDomainProperties]
+  }
+}
+

@@ -25,3 +25,19 @@ trait IPathArc extends IPathCircle {
   var startAngle: scala.Double
 }
 
+object IPathArc {
+  @scala.inline
+  def apply(
+    endAngle: scala.Double,
+    origin: IPoint,
+    radius: scala.Double,
+    startAngle: scala.Double,
+    `type`: java.lang.String,
+    layer: java.lang.String = null
+  ): IPathArc = {
+    val __obj = js.Dynamic.literal(endAngle = endAngle, origin = origin, radius = radius, startAngle = startAngle, `type` = `type`)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    __obj.asInstanceOf[IPathArc]
+  }
+}
+

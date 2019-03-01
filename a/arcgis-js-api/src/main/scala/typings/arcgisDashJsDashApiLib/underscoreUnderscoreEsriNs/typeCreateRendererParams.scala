@@ -126,3 +126,42 @@ trait typeCreateRendererParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object typeCreateRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    basemap: java.lang.String | Basemap = null,
+    colorMixMode: java.lang.String = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    legendOptions: typeCreateRendererParamsLegendOptions = null,
+    numTypes: scala.Int | scala.Double = null,
+    sortBy: java.lang.String = null,
+    statistics: UniqueValuesResult = null,
+    symbolType: java.lang.String = null,
+    typeScheme: TypeScheme = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    view: View = null
+  ): typeCreateRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (numTypes != null) __obj.updateDynamic("numTypes")(numTypes.asInstanceOf[js.Any])
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (typeScheme != null) __obj.updateDynamic("typeScheme")(typeScheme)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[typeCreateRendererParams]
+  }
+}
+

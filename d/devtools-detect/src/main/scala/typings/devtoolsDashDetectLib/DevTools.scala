@@ -10,3 +10,15 @@ trait DevTools extends js.Object {
   var orientation: devtoolsDashDetectLib.devtoolsDashDetectLibStrings.vertical | devtoolsDashDetectLib.devtoolsDashDetectLibStrings.horizontal
 }
 
+object DevTools {
+  @scala.inline
+  def apply(
+    open: scala.Boolean,
+    orientation: devtoolsDashDetectLib.devtoolsDashDetectLibStrings.vertical | devtoolsDashDetectLib.devtoolsDashDetectLibStrings.horizontal
+  ): DevTools = {
+    val __obj = js.Dynamic.literal(open = open, orientation = orientation.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DevTools]
+  }
+}
+

@@ -234,3 +234,94 @@ trait Labels extends js.Object {
   var `text-wrap`: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.wrap
 }
 
+object Labels {
+  @scala.inline
+  def apply(
+    color: Colour,
+    `font-family`: java.lang.String,
+    `font-size`: scala.Double,
+    `font-style`: FontStyle,
+    `font-weight`: FontWeight,
+    label: java.lang.String,
+    `min-zoomed-font-size`: scala.Double,
+    `source-label`: java.lang.String,
+    `source-text-margin-x`: scala.Double,
+    `source-text-margin-y`: scala.Double,
+    `source-text-offset`: scala.Double,
+    `source-text-rotation`: scala.Double,
+    `target-label`: java.lang.String,
+    `target-text-margin-x`: scala.Double,
+    `target-text-margin-y`: scala.Double,
+    `target-text-offset`: scala.Double,
+    `target-text-rotation`: scala.Double,
+    `text-background-color`: Colour,
+    `text-background-opacity`: scala.Double,
+    `text-background-shape`: cytoscapeLib.cytoscapeLibStrings.ractangle | cytoscapeLib.cytoscapeLibStrings.roundrectangle,
+    `text-border-color`: Colour,
+    `text-border-opacity`: scala.Double,
+    `text-border-style`: LineStyle,
+    `text-border-width`: scala.Double,
+    `text-events`: cytoscapeLib.cytoscapeLibStrings.yes | cytoscapeLib.cytoscapeLibStrings.no,
+    `text-halign`: cytoscapeLib.cytoscapeLibStrings.left | cytoscapeLib.cytoscapeLibStrings.center | cytoscapeLib.cytoscapeLibStrings.right,
+    `text-margin-x`: scala.Double,
+    `text-margin-y`: scala.Double,
+    `text-max-width`: java.lang.String,
+    `text-opacity`: scala.Double,
+    `text-outline-color`: Colour,
+    `text-outline-opacity`: scala.Double,
+    `text-outline-width`: scala.Double,
+    `text-rotation`: scala.Double,
+    `text-shadow-blur`: scala.Double,
+    `text-shadow-color`: Colour,
+    `text-shadow-offset-x`: scala.Double,
+    `text-shadow-offset-y`: scala.Double,
+    `text-shadow-opacity`: scala.Double,
+    `text-transform`: TextTranformation,
+    `text-valign`: cytoscapeLib.cytoscapeLibStrings.top | cytoscapeLib.cytoscapeLibStrings.center | cytoscapeLib.cytoscapeLibStrings.bottom,
+    `text-wrap`: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.wrap
+  ): Labels = {
+    val __obj = js.Dynamic.literal(color = color, label = label)
+    __obj.updateDynamic("font-family")(`font-family`)
+    __obj.updateDynamic("font-size")(`font-size`)
+    __obj.updateDynamic("font-style")(`font-style`)
+    __obj.updateDynamic("font-weight")(`font-weight`.asInstanceOf[js.Any])
+    __obj.updateDynamic("min-zoomed-font-size")(`min-zoomed-font-size`)
+    __obj.updateDynamic("source-label")(`source-label`)
+    __obj.updateDynamic("source-text-margin-x")(`source-text-margin-x`)
+    __obj.updateDynamic("source-text-margin-y")(`source-text-margin-y`)
+    __obj.updateDynamic("source-text-offset")(`source-text-offset`)
+    __obj.updateDynamic("source-text-rotation")(`source-text-rotation`)
+    __obj.updateDynamic("target-label")(`target-label`)
+    __obj.updateDynamic("target-text-margin-x")(`target-text-margin-x`)
+    __obj.updateDynamic("target-text-margin-y")(`target-text-margin-y`)
+    __obj.updateDynamic("target-text-offset")(`target-text-offset`)
+    __obj.updateDynamic("target-text-rotation")(`target-text-rotation`)
+    __obj.updateDynamic("text-background-color")(`text-background-color`)
+    __obj.updateDynamic("text-background-opacity")(`text-background-opacity`)
+    __obj.updateDynamic("text-background-shape")(`text-background-shape`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-border-color")(`text-border-color`)
+    __obj.updateDynamic("text-border-opacity")(`text-border-opacity`)
+    __obj.updateDynamic("text-border-style")(`text-border-style`)
+    __obj.updateDynamic("text-border-width")(`text-border-width`)
+    __obj.updateDynamic("text-events")(`text-events`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-halign")(`text-halign`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-margin-x")(`text-margin-x`)
+    __obj.updateDynamic("text-margin-y")(`text-margin-y`)
+    __obj.updateDynamic("text-max-width")(`text-max-width`)
+    __obj.updateDynamic("text-opacity")(`text-opacity`)
+    __obj.updateDynamic("text-outline-color")(`text-outline-color`)
+    __obj.updateDynamic("text-outline-opacity")(`text-outline-opacity`)
+    __obj.updateDynamic("text-outline-width")(`text-outline-width`)
+    __obj.updateDynamic("text-rotation")(`text-rotation`)
+    __obj.updateDynamic("text-shadow-blur")(`text-shadow-blur`)
+    __obj.updateDynamic("text-shadow-color")(`text-shadow-color`)
+    __obj.updateDynamic("text-shadow-offset-x")(`text-shadow-offset-x`)
+    __obj.updateDynamic("text-shadow-offset-y")(`text-shadow-offset-y`)
+    __obj.updateDynamic("text-shadow-opacity")(`text-shadow-opacity`)
+    __obj.updateDynamic("text-transform")(`text-transform`)
+    __obj.updateDynamic("text-valign")(`text-valign`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-wrap")(`text-wrap`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Labels]
+  }
+}
+

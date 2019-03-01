@@ -30,3 +30,41 @@ trait Wizard extends XWizard {
   ): scala.Unit
 }
 
+object Wizard {
+  @scala.inline
+  def apply(
+    CurrentPage: XWizardPage,
+    DialogWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    HelpURL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    activatePath: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    advanceTo: js.Function1[scala.Double, scala.Boolean],
+    createMultiplePathsWizard: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      XWizardController, 
+      scala.Unit
+    ],
+    createSinglePathWizard: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XWizardController, 
+      scala.Unit
+    ],
+    enableButton: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    enablePage: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    execute: js.Function0[scala.Double],
+    getCurrentPage: js.Function0[XWizardPage],
+    goBackTo: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultButton: js.Function1[scala.Double, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    travelNext: js.Function0[scala.Boolean],
+    travelPrevious: js.Function0[scala.Boolean],
+    updateTravelUI: js.Function0[scala.Unit]
+  ): Wizard = {
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, DialogWindow = DialogWindow, HelpURL = HelpURL, acquire = acquire, activatePath = activatePath, advanceTo = advanceTo, createMultiplePathsWizard = createMultiplePathsWizard, createSinglePathWizard = createSinglePathWizard, enableButton = enableButton, enablePage = enablePage, execute = execute, getCurrentPage = getCurrentPage, goBackTo = goBackTo, queryInterface = queryInterface, release = release, setDefaultButton = setDefaultButton, setTitle = setTitle, travelNext = travelNext, travelPrevious = travelPrevious, updateTravelUI = updateTravelUI)
+  
+    __obj.asInstanceOf[Wizard]
+  }
+}
+

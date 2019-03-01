@@ -49,3 +49,36 @@ trait XXPathObject
   def getString(): java.lang.String
 }
 
+object XXPathObject {
+  @scala.inline
+  def apply(
+    Boolean: scala.Boolean,
+    Byte: scala.Double,
+    Double: scala.Double,
+    Float: scala.Double,
+    Hyper: scala.Double,
+    Long: scala.Double,
+    NodeList: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList,
+    ObjectType: XPathObjectType,
+    Short: scala.Double,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getBoolean: js.Function0[scala.Boolean],
+    getByte: js.Function0[scala.Double],
+    getDouble: js.Function0[scala.Double],
+    getFloat: js.Function0[scala.Double],
+    getHyper: js.Function0[scala.Double],
+    getLong: js.Function0[scala.Double],
+    getNodeList: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList],
+    getObjectType: js.Function0[XPathObjectType],
+    getShort: js.Function0[scala.Double],
+    getString: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XXPathObject = {
+    val __obj = js.Dynamic.literal(Boolean = Boolean, Byte = Byte, Double = Double, Float = Float, Hyper = Hyper, Long = Long, NodeList = NodeList, ObjectType = ObjectType, Short = Short, String = String, acquire = acquire, getBoolean = getBoolean, getByte = getByte, getDouble = getDouble, getFloat = getFloat, getHyper = getHyper, getLong = getLong, getNodeList = getNodeList, getObjectType = getObjectType, getShort = getShort, getString = getString, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XXPathObject]
+  }
+}
+

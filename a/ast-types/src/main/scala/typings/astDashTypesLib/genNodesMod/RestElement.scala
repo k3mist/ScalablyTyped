@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind | scala.Null
 }
 
+object RestElement {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.PatternKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.RestElement,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): RestElement = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RestElement]
+  }
+}
+

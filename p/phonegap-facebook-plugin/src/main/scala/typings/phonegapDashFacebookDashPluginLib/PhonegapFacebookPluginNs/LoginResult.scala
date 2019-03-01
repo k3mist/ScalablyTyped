@@ -15,3 +15,12 @@ trait LoginResult extends js.Object {
   var status: java.lang.String
 }
 
+object LoginResult {
+  @scala.inline
+  def apply(authResponse: phonegapDashFacebookDashPluginLib.Anon_AccessToken, status: java.lang.String): LoginResult = {
+    val __obj = js.Dynamic.literal(authResponse = authResponse, status = status)
+  
+    __obj.asInstanceOf[LoginResult]
+  }
+}
+

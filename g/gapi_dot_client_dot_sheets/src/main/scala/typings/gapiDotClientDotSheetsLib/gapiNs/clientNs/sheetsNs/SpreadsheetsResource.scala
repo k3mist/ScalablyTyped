@@ -84,3 +84,32 @@ trait SpreadsheetsResource extends js.Object {
   def getByDataFilter(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
 }
 
+object SpreadsheetsResource {
+  @scala.inline
+  def apply(
+    batchUpdate: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+    ],
+    developerMetadata: DeveloperMetadataResource,
+    get: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+    ],
+    getByDataFilter: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+    ],
+    sheets: SheetsResource,
+    values: ValuesResource
+  ): SpreadsheetsResource = {
+    val __obj = js.Dynamic.literal(batchUpdate = batchUpdate, create = create, developerMetadata = developerMetadata, get = get, getByDataFilter = getByDataFilter, sheets = sheets, values = values)
+  
+    __obj.asInstanceOf[SpreadsheetsResource]
+  }
+}
+

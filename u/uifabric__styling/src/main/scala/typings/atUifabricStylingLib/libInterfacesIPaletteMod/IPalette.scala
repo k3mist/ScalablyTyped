@@ -205,3 +205,62 @@ trait IPalette extends js.Object {
   var yellowLight: java.lang.String
 }
 
+object IPalette {
+  @scala.inline
+  def apply(
+    accent: java.lang.String,
+    black: java.lang.String,
+    blackTranslucent40: java.lang.String,
+    blue: java.lang.String,
+    blueDark: java.lang.String,
+    blueLight: java.lang.String,
+    blueMid: java.lang.String,
+    green: java.lang.String,
+    greenDark: java.lang.String,
+    greenLight: java.lang.String,
+    magenta: java.lang.String,
+    magentaDark: java.lang.String,
+    magentaLight: java.lang.String,
+    neutralDark: java.lang.String,
+    neutralLight: java.lang.String,
+    neutralLighter: java.lang.String,
+    neutralLighterAlt: java.lang.String,
+    neutralPrimary: java.lang.String,
+    neutralPrimaryAlt: java.lang.String,
+    neutralQuaternary: java.lang.String,
+    neutralQuaternaryAlt: java.lang.String,
+    neutralSecondary: java.lang.String,
+    neutralSecondaryAlt: java.lang.String,
+    neutralTertiary: java.lang.String,
+    neutralTertiaryAlt: java.lang.String,
+    orange: java.lang.String,
+    orangeLight: java.lang.String,
+    orangeLighter: java.lang.String,
+    purple: java.lang.String,
+    purpleDark: java.lang.String,
+    purpleLight: java.lang.String,
+    red: java.lang.String,
+    redDark: java.lang.String,
+    teal: java.lang.String,
+    tealDark: java.lang.String,
+    tealLight: java.lang.String,
+    themeDark: java.lang.String,
+    themeDarkAlt: java.lang.String,
+    themeDarker: java.lang.String,
+    themeLight: java.lang.String,
+    themeLighter: java.lang.String,
+    themeLighterAlt: java.lang.String,
+    themePrimary: java.lang.String,
+    themeSecondary: java.lang.String,
+    themeTertiary: java.lang.String,
+    white: java.lang.String,
+    whiteTranslucent40: java.lang.String,
+    yellow: java.lang.String,
+    yellowLight: java.lang.String
+  ): IPalette = {
+    val __obj = js.Dynamic.literal(accent = accent, black = black, blackTranslucent40 = blackTranslucent40, blue = blue, blueDark = blueDark, blueLight = blueLight, blueMid = blueMid, green = green, greenDark = greenDark, greenLight = greenLight, magenta = magenta, magentaDark = magentaDark, magentaLight = magentaLight, neutralDark = neutralDark, neutralLight = neutralLight, neutralLighter = neutralLighter, neutralLighterAlt = neutralLighterAlt, neutralPrimary = neutralPrimary, neutralPrimaryAlt = neutralPrimaryAlt, neutralQuaternary = neutralQuaternary, neutralQuaternaryAlt = neutralQuaternaryAlt, neutralSecondary = neutralSecondary, neutralSecondaryAlt = neutralSecondaryAlt, neutralTertiary = neutralTertiary, neutralTertiaryAlt = neutralTertiaryAlt, orange = orange, orangeLight = orangeLight, orangeLighter = orangeLighter, purple = purple, purpleDark = purpleDark, purpleLight = purpleLight, red = red, redDark = redDark, teal = teal, tealDark = tealDark, tealLight = tealLight, themeDark = themeDark, themeDarkAlt = themeDarkAlt, themeDarker = themeDarker, themeLight = themeLight, themeLighter = themeLighter, themeLighterAlt = themeLighterAlt, themePrimary = themePrimary, themeSecondary = themeSecondary, themeTertiary = themeTertiary, white = white, whiteTranslucent40 = whiteTranslucent40, yellow = yellow, yellowLight = yellowLight)
+  
+    __obj.asInstanceOf[IPalette]
+  }
+}
+

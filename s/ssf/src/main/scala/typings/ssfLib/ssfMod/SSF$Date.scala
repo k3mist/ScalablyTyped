@@ -28,3 +28,23 @@ trait SSF$Date extends js.Object {
   var y: scala.Double
 }
 
+object SSF$Date {
+  @scala.inline
+  def apply(
+    D: scala.Double,
+    H: scala.Double,
+    M: scala.Double,
+    S: scala.Double,
+    T: scala.Double,
+    d: scala.Double,
+    m: scala.Double,
+    q: scala.Double,
+    u: scala.Double,
+    y: scala.Double
+  ): SSF$Date = {
+    val __obj = js.Dynamic.literal(D = D, H = H, M = M, S = S, T = T, d = d, m = m, q = q, u = u, y = y)
+  
+    __obj.asInstanceOf[SSF$Date]
+  }
+}
+

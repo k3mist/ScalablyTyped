@@ -9,3 +9,12 @@ trait IInputEnabledEventArgs extends ICoreWindowEventArgs {
   var inputEnabled: scala.Boolean
 }
 
+object IInputEnabledEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, inputEnabled: scala.Boolean): IInputEnabledEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled, inputEnabled = inputEnabled)
+  
+    __obj.asInstanceOf[IInputEnabledEventArgs]
+  }
+}
+

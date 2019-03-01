@@ -10,3 +10,15 @@ trait Anon_EventValueBoolean extends js.Object {
   var value: scala.Boolean
 }
 
+object Anon_EventValueBoolean {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event],
+    value: scala.Boolean
+  ): Anon_EventValueBoolean = {
+    val __obj = js.Dynamic.literal(event = event, value = value)
+  
+    __obj.asInstanceOf[Anon_EventValueBoolean]
+  }
+}
+

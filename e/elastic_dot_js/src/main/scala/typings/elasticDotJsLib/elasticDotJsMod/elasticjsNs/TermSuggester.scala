@@ -92,3 +92,29 @@ trait TermSuggester extends Suggest {
   def toJSON(): js.Any
 }
 
+object TermSuggester {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    accuracy: js.Function1[scala.Double, TermSuggester],
+    analyzer: js.Function1[java.lang.String, TermSuggester],
+    field: js.Function1[java.lang.String, TermSuggester],
+    maxEdits: js.Function1[scala.Double, TermSuggester],
+    maxInspections: js.Function1[scala.Double, TermSuggester],
+    maxTermFreq: js.Function1[scala.Double, TermSuggester],
+    minDocFreq: js.Function1[scala.Double, TermSuggester],
+    minWordLen: js.Function1[scala.Double, TermSuggester],
+    shardSize: js.Function1[scala.Double, TermSuggester],
+    size: js.Function1[scala.Double, TermSuggester],
+    sort: js.Function1[java.lang.String, TermSuggester],
+    stringDistance: js.Function1[java.lang.String, TermSuggester],
+    suggestMode: js.Function1[java.lang.String, TermSuggester],
+    text: js.Function1[java.lang.String, TermSuggester],
+    toJSON: js.Function0[js.Any]
+  ): TermSuggester = {
+    val __obj = js.Dynamic.literal(_type = _type, accuracy = accuracy, analyzer = analyzer, field = field, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, shardSize = shardSize, size = size, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode, text = text, toJSON = toJSON)
+  
+    __obj.asInstanceOf[TermSuggester]
+  }
+}
+

@@ -60,3 +60,26 @@ trait _Impl extends js.Object {
   var text: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    addition: java.lang.String,
+    dropdown: java.lang.String,
+    icon: java.lang.String,
+    input: java.lang.String,
+    item: java.lang.String,
+    label: java.lang.String,
+    menu: java.lang.String,
+    menuIcon: java.lang.String,
+    message: java.lang.String,
+    remove: java.lang.String,
+    search: java.lang.String,
+    siblingLabel: java.lang.String,
+    text: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(addition = addition, dropdown = dropdown, icon = icon, input = input, item = item, label = label, menu = menu, menuIcon = menuIcon, message = message, remove = remove, search = search, siblingLabel = siblingLabel, text = text)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

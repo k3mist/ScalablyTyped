@@ -117,3 +117,34 @@ trait XAnimationNode
   var UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
 }
 
+object XAnimationNode {
+  @scala.inline
+  def apply(
+    Acceleration: scala.Double,
+    AutoReverse: scala.Boolean,
+    Begin: js.Any,
+    Decelerate: scala.Double,
+    Duration: js.Any,
+    End: js.Any,
+    EndSync: js.Any,
+    Fill: scala.Double,
+    FillDefault: scala.Double,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    RepeatCount: js.Any,
+    RepeatDuration: js.Any,
+    Restart: scala.Double,
+    RestartDefault: scala.Double,
+    Type: scala.Double,
+    UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    acquire: js.Function0[scala.Unit],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XAnimationNode = {
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, AutoReverse = AutoReverse, Begin = Begin, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, Type = Type, UserData = UserData, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+  
+    __obj.asInstanceOf[XAnimationNode]
+  }
+}
+

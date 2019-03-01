@@ -33,3 +33,19 @@ trait URI extends XURI {
   def createNS(Namespace: java.lang.String, LocalName: java.lang.String): scala.Unit
 }
 
+object URI {
+  @scala.inline
+  def apply(
+    LocalName: java.lang.String,
+    Namespace: java.lang.String,
+    StringValue: java.lang.String,
+    create: js.Function1[java.lang.String, scala.Unit],
+    createKnown: js.Function1[scala.Double, scala.Unit],
+    createNS: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): URI = {
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Namespace = Namespace, StringValue = StringValue, create = create, createKnown = createKnown, createNS = createNS)
+  
+    __obj.asInstanceOf[URI]
+  }
+}
+

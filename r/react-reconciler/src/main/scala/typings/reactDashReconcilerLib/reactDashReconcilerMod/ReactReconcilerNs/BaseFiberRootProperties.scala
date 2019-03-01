@@ -54,3 +54,38 @@ trait BaseFiberRootProperties extends js.Object {
   var timeoutHandle: js.Any
 }
 
+object BaseFiberRootProperties {
+  @scala.inline
+  def apply(
+    containerInfo: js.Any,
+    current: Fiber,
+    didError: scala.Boolean,
+    earliestPendingTime: ExpirationTime,
+    earliestSuspendedTime: ExpirationTime,
+    expirationTime: ExpirationTime,
+    hydrate: scala.Boolean,
+    latestPendingTime: ExpirationTime,
+    latestPingedTime: ExpirationTime,
+    latestSuspendedTime: ExpirationTime,
+    nextExpirationTimeToWorkOn: ExpirationTime,
+    pendingChildren: js.Any,
+    pendingCommitExpirationTime: ExpirationTime,
+    timeoutHandle: js.Any,
+    context: js.Object = null,
+    finishedWork: Fiber = null,
+    firstBatch: Batch = null,
+    nextScheduledRoot: FiberRoot = null,
+    pendingContext: js.Object = null,
+    pingCache: (stdLib.WeakMap[Thenable, stdLib.Set[ExpirationTime]]) | (stdLib.Map[Thenable, stdLib.Set[ExpirationTime]]) = null
+  ): BaseFiberRootProperties = {
+    val __obj = js.Dynamic.literal(containerInfo = containerInfo, current = current, didError = didError, earliestPendingTime = earliestPendingTime, earliestSuspendedTime = earliestSuspendedTime, expirationTime = expirationTime, hydrate = hydrate, latestPendingTime = latestPendingTime, latestPingedTime = latestPingedTime, latestSuspendedTime = latestSuspendedTime, nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn, pendingChildren = pendingChildren, pendingCommitExpirationTime = pendingCommitExpirationTime, timeoutHandle = timeoutHandle)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (finishedWork != null) __obj.updateDynamic("finishedWork")(finishedWork)
+    if (firstBatch != null) __obj.updateDynamic("firstBatch")(firstBatch)
+    if (nextScheduledRoot != null) __obj.updateDynamic("nextScheduledRoot")(nextScheduledRoot)
+    if (pendingContext != null) __obj.updateDynamic("pendingContext")(pendingContext)
+    if (pingCache != null) __obj.updateDynamic("pingCache")(pingCache.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseFiberRootProperties]
+  }
+}
+

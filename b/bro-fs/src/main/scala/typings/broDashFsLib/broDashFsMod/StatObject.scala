@@ -14,3 +14,19 @@ trait StatObject extends js.Object {
   var size: scala.Double
 }
 
+object StatObject {
+  @scala.inline
+  def apply(
+    fullPath: java.lang.String,
+    isDirectory: scala.Boolean,
+    isFile: scala.Boolean,
+    modificationTime: stdLib.Date,
+    name: java.lang.String,
+    size: scala.Double
+  ): StatObject = {
+    val __obj = js.Dynamic.literal(fullPath = fullPath, isDirectory = isDirectory, isFile = isFile, modificationTime = modificationTime, name = name, size = size)
+  
+    __obj.asInstanceOf[StatObject]
+  }
+}
+

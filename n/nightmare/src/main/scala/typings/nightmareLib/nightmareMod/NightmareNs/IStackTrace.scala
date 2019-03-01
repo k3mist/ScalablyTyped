@@ -11,3 +11,12 @@ trait IStackTrace extends js.Object {
   var line: scala.Double
 }
 
+object IStackTrace {
+  @scala.inline
+  def apply(file: java.lang.String, line: scala.Double, function: java.lang.String = null): IStackTrace = {
+    val __obj = js.Dynamic.literal(file = file, line = line)
+    if (function != null) __obj.updateDynamic("function")(function)
+    __obj.asInstanceOf[IStackTrace]
+  }
+}
+

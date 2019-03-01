@@ -31,3 +31,12 @@ trait ASPxClientVerticalGridRow extends ASPxClientGridColumnBase {
   var visible: scala.Boolean
 }
 
+object ASPxClientVerticalGridRow {
+  @scala.inline
+  def apply(fieldName: java.lang.String, index: scala.Double, name: java.lang.String, visible: scala.Boolean): ASPxClientVerticalGridRow = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName, index = index, name = name, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridRow]
+  }
+}
+

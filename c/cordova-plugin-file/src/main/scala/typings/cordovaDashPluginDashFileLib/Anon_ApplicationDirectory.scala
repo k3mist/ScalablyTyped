@@ -32,3 +32,25 @@ trait Anon_ApplicationDirectory extends js.Object {
   var tempDirectory: java.lang.String
 }
 
+object Anon_ApplicationDirectory {
+  @scala.inline
+  def apply(
+    applicationDirectory: java.lang.String,
+    applicationStorageDirectory: java.lang.String,
+    cacheDirectory: java.lang.String,
+    dataDirectory: java.lang.String,
+    documentsDirectory: java.lang.String,
+    externalApplicationStorageDirectory: java.lang.String,
+    externalCacheDirectory: java.lang.String,
+    externalDataDirectory: java.lang.String,
+    externalRootDirectory: java.lang.String,
+    sharedDirectory: java.lang.String,
+    syncedDataDirectory: java.lang.String,
+    tempDirectory: java.lang.String
+  ): Anon_ApplicationDirectory = {
+    val __obj = js.Dynamic.literal(applicationDirectory = applicationDirectory, applicationStorageDirectory = applicationStorageDirectory, cacheDirectory = cacheDirectory, dataDirectory = dataDirectory, documentsDirectory = documentsDirectory, externalApplicationStorageDirectory = externalApplicationStorageDirectory, externalCacheDirectory = externalCacheDirectory, externalDataDirectory = externalDataDirectory, externalRootDirectory = externalRootDirectory, sharedDirectory = sharedDirectory, syncedDataDirectory = syncedDataDirectory, tempDirectory = tempDirectory)
+  
+    __obj.asInstanceOf[Anon_ApplicationDirectory]
+  }
+}
+

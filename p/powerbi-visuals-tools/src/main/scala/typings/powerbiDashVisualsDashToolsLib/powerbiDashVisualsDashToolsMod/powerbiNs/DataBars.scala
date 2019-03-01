@@ -15,3 +15,21 @@ trait DataBars extends _StructuralObjectValue {
   var reverseDirection: scala.Boolean
 }
 
+object DataBars {
+  @scala.inline
+  def apply(
+    axisColor: Fill,
+    hideText: scala.Boolean,
+    negativeColor: Fill,
+    positiveColor: Fill,
+    reverseDirection: scala.Boolean,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null
+  ): DataBars = {
+    val __obj = js.Dynamic.literal(axisColor = axisColor, hideText = hideText, negativeColor = negativeColor, positiveColor = positiveColor, reverseDirection = reverseDirection)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataBars]
+  }
+}
+

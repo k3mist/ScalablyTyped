@@ -21,3 +21,18 @@ trait SendMailMessageFailedException
   var ValidUnsentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object SendMailMessageFailedException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    InvalidAddresses: activexDashInteropLib.SafeArray[java.lang.String],
+    Message: java.lang.String,
+    ValidSentAddresses: activexDashInteropLib.SafeArray[java.lang.String],
+    ValidUnsentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
+  ): SendMailMessageFailedException = {
+    val __obj = js.Dynamic.literal(Context = Context, InvalidAddresses = InvalidAddresses, Message = Message, ValidSentAddresses = ValidSentAddresses, ValidUnsentAddresses = ValidUnsentAddresses)
+  
+    __obj.asInstanceOf[SendMailMessageFailedException]
+  }
+}
+

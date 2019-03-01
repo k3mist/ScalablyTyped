@@ -26,3 +26,18 @@ trait AllEventObject
   var MethodName: java.lang.String
 }
 
+object AllEventObject {
+  @scala.inline
+  def apply(
+    Arguments: activexDashInteropLib.SafeArray[_],
+    Helper: js.Any,
+    ListenerType: activexDashLibreofficeLib.`type`,
+    MethodName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): AllEventObject = {
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Helper = Helper, ListenerType = ListenerType, MethodName = MethodName, Source = Source)
+  
+    __obj.asInstanceOf[AllEventObject]
+  }
+}
+

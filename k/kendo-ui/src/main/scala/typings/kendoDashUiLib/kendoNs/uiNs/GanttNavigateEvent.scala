@@ -9,3 +9,17 @@ trait GanttNavigateEvent extends GanttEvent {
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GanttNavigateEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Gantt,
+    view: java.lang.String = null
+  ): GanttNavigateEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[GanttNavigateEvent]
+  }
+}
+

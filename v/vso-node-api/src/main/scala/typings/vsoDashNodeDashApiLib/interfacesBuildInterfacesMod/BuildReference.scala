@@ -45,3 +45,23 @@ trait BuildReference extends js.Object {
   var status: BuildStatus
 }
 
+object BuildReference {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    buildNumber: java.lang.String,
+    deleted: scala.Boolean,
+    finishTime: stdLib.Date,
+    id: scala.Double,
+    queueTime: stdLib.Date,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    result: BuildResult,
+    startTime: stdLib.Date,
+    status: BuildStatus
+  ): BuildReference = {
+    val __obj = js.Dynamic.literal(_links = _links, buildNumber = buildNumber, deleted = deleted, finishTime = finishTime, id = id, queueTime = queueTime, requestedFor = requestedFor, result = result, startTime = startTime, status = status)
+  
+    __obj.asInstanceOf[BuildReference]
+  }
+}
+

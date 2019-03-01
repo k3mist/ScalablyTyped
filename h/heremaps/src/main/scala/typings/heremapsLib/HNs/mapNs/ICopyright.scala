@@ -15,3 +15,12 @@ trait ICopyright extends js.Object {
   var label: java.lang.String
 }
 
+object ICopyright {
+  @scala.inline
+  def apply(alt: java.lang.String, label: java.lang.String): ICopyright = {
+    val __obj = js.Dynamic.literal(alt = alt, label = label)
+  
+    __obj.asInstanceOf[ICopyright]
+  }
+}
+

@@ -36,3 +36,18 @@ trait ASPxClientHintHidingEventArgs extends ASPxClientEventArgs {
   var titleElement: js.Object
 }
 
+object ASPxClientHintHidingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    contentElement: js.Object,
+    hintElement: js.Object,
+    targetElement: js.Object,
+    titleElement: js.Object
+  ): ASPxClientHintHidingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, contentElement = contentElement, hintElement = hintElement, targetElement = targetElement, titleElement = titleElement)
+  
+    __obj.asInstanceOf[ASPxClientHintHidingEventArgs]
+  }
+}
+

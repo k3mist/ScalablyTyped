@@ -12,3 +12,12 @@ trait Anon_NodeParent
   var `type`: eslintLib.eslintLibStrings.TDZ
 }
 
+object Anon_NodeParent {
+  @scala.inline
+  def apply(node: js.Any, parent: scala.Null, `type`: eslintLib.eslintLibStrings.TDZ): Anon_NodeParent = {
+    val __obj = js.Dynamic.literal(node = node, parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_NodeParent]
+  }
+}
+

@@ -32,3 +32,19 @@ trait MDCTextFieldHelperTextAdapter extends js.Object {
   def setContent(content: java.lang.String): scala.Unit
 }
 
+object MDCTextFieldHelperTextAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    hasClass: js.Function1[java.lang.String, scala.Boolean],
+    removeAttr: js.Function1[java.lang.String, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setContent: js.Function1[java.lang.String, scala.Unit]
+  ): MDCTextFieldHelperTextAdapter = {
+    val __obj = js.Dynamic.literal(addClass = addClass, hasClass = hasClass, removeAttr = removeAttr, removeClass = removeClass, setAttr = setAttr, setContent = setContent)
+  
+    __obj.asInstanceOf[MDCTextFieldHelperTextAdapter]
+  }
+}
+

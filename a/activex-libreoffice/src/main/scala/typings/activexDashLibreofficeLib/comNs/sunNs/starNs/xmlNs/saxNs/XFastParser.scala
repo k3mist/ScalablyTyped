@@ -83,3 +83,25 @@ trait XFastParser
   def setTokenHandler(Handler: XFastTokenHandler): scala.Unit
 }
 
+object XFastParser {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getNamespaceURL: js.Function1[java.lang.String, java.lang.String],
+    parseStream: js.Function1[InputSource, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerNamespace: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    release: js.Function0[scala.Unit],
+    setEntityResolver: js.Function1[XEntityResolver, scala.Unit],
+    setErrorHandler: js.Function1[XErrorHandler, scala.Unit],
+    setFastDocumentHandler: js.Function1[XFastDocumentHandler, scala.Unit],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    setNamespaceHandler: js.Function1[XFastNamespaceHandler, scala.Unit],
+    setTokenHandler: js.Function1[XFastTokenHandler, scala.Unit]
+  ): XFastParser = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getNamespaceURL = getNamespaceURL, parseStream = parseStream, queryInterface = queryInterface, registerNamespace = registerNamespace, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler, setFastDocumentHandler = setFastDocumentHandler, setLocale = setLocale, setNamespaceHandler = setNamespaceHandler, setTokenHandler = setTokenHandler)
+  
+    __obj.asInstanceOf[XFastParser]
+  }
+}
+

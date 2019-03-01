@@ -16,3 +16,15 @@ trait QueuePolicyArgs extends js.Object {
   val queueUrl: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object QueuePolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    queueUrl: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): QueuePolicyArgs = {
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], queueUrl = queueUrl.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[QueuePolicyArgs]
+  }
+}
+

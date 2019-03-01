@@ -42,3 +42,37 @@ trait SetElement
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
      with XTemplateInstance
 
+object SetElement {
+  @scala.inline
+  def apply(
+    AsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property,
+    DefaultAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    HierarchicalName: java.lang.String,
+    Name: java.lang.String,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    StateAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    TemplateName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    composeHierarchicalName: js.Function1[java.lang.String, java.lang.String],
+    dispose: js.Function0[scala.Unit],
+    getAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    getDefaultAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getHierarchicalName: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getStateAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState],
+    getTemplateName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setToDefaultAsProperty: js.Function0[scala.Unit]
+  ): SetElement = {
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, DefaultAsProperty = DefaultAsProperty, HierarchicalName = HierarchicalName, Name = Name, Parent = Parent, StateAsProperty = StateAsProperty, TemplateName = TemplateName, acquire = acquire, addEventListener = addEventListener, composeHierarchicalName = composeHierarchicalName, dispose = dispose, getAsProperty = getAsProperty, getDefaultAsProperty = getDefaultAsProperty, getHierarchicalName = getHierarchicalName, getName = getName, getParent = getParent, getStateAsProperty = getStateAsProperty, getTemplateName = getTemplateName, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setName = setName, setParent = setParent, setToDefaultAsProperty = setToDefaultAsProperty)
+  
+    __obj.asInstanceOf[SetElement]
+  }
+}
+

@@ -27,3 +27,40 @@ trait KeyboardEvent[T]
   def getModifierState(key: java.lang.String): scala.Boolean
 }
 
+object KeyboardEvent {
+  @scala.inline
+  def apply[T](
+    altKey: scala.Boolean,
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    charCode: scala.Double,
+    ctrlKey: scala.Boolean,
+    currentTarget: reactLib.EventTarget with T,
+    defaultPrevented: scala.Boolean,
+    eventPhase: scala.Double,
+    getModifierState: js.Function1[java.lang.String, scala.Boolean],
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    isTrusted: scala.Boolean,
+    key: java.lang.String,
+    keyCode: scala.Double,
+    locale: java.lang.String,
+    location: scala.Double,
+    metaKey: scala.Boolean,
+    nativeEvent: reactLib.NativeKeyboardEvent,
+    persist: js.Function0[scala.Unit],
+    preventDefault: js.Function0[scala.Unit],
+    repeat: scala.Boolean,
+    shiftKey: scala.Boolean,
+    stopPropagation: js.Function0[scala.Unit],
+    target: reactLib.EventTarget,
+    timeStamp: scala.Double,
+    `type`: java.lang.String,
+    which: scala.Double
+  ): KeyboardEvent[T] = {
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, charCode = charCode, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, key = key, keyCode = keyCode, locale = locale, location = location, metaKey = metaKey, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, repeat = repeat, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, `type` = `type`, which = which)
+  
+    __obj.asInstanceOf[KeyboardEvent[T]]
+  }
+}
+

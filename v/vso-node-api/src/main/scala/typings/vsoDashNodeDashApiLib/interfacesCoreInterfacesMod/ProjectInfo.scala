@@ -22,3 +22,24 @@ trait ProjectInfo extends js.Object {
   var visibility: ProjectVisibility
 }
 
+object ProjectInfo {
+  @scala.inline
+  def apply(
+    abbreviation: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    lastUpdateTime: stdLib.Date,
+    name: java.lang.String,
+    properties: js.Array[ProjectProperty],
+    revision: scala.Double,
+    state: js.Any,
+    uri: java.lang.String,
+    version: scala.Double,
+    visibility: ProjectVisibility
+  ): ProjectInfo = {
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation, description = description, id = id, lastUpdateTime = lastUpdateTime, name = name, properties = properties, revision = revision, state = state, uri = uri, version = version, visibility = visibility)
+  
+    __obj.asInstanceOf[ProjectInfo]
+  }
+}
+

@@ -15,3 +15,20 @@ trait DecomposedTransformation extends js.Object {
   var translateY: scala.Double
 }
 
+object DecomposedTransformation {
+  @scala.inline
+  def apply(
+    rotation: scala.Double,
+    scaleX: scala.Double,
+    scaleY: scala.Double,
+    skewX: scala.Double,
+    skewY: scala.Double,
+    translateX: scala.Double,
+    translateY: scala.Double
+  ): DecomposedTransformation = {
+    val __obj = js.Dynamic.literal(rotation = rotation, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, translateX = translateX, translateY = translateY)
+  
+    __obj.asInstanceOf[DecomposedTransformation]
+  }
+}
+

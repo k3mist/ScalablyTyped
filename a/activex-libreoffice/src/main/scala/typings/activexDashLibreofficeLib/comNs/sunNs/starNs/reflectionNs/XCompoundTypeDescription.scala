@@ -49,3 +49,26 @@ trait XCompoundTypeDescription extends XTypeDescription {
   def getMemberTypes(): activexDashInteropLib.SafeArray[XTypeDescription]
 }
 
+object XCompoundTypeDescription {
+  @scala.inline
+  def apply(
+    BaseType: XTypeDescription,
+    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
+    MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    Name: java.lang.String,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getBaseType: js.Function0[XTypeDescription],
+    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getMemberTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCompoundTypeDescription = {
+    val __obj = js.Dynamic.literal(BaseType = BaseType, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = acquire, getBaseType = getBaseType, getMemberNames = getMemberNames, getMemberTypes = getMemberTypes, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCompoundTypeDescription]
+  }
+}
+

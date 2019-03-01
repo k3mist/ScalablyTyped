@@ -12,3 +12,12 @@ trait TaskVersion extends js.Object {
   var patch: scala.Double
 }
 
+object TaskVersion {
+  @scala.inline
+  def apply(isTest: scala.Boolean, major: scala.Double, minor: scala.Double, patch: scala.Double): TaskVersion = {
+    val __obj = js.Dynamic.literal(isTest = isTest, major = major, minor = minor, patch = patch)
+  
+    __obj.asInstanceOf[TaskVersion]
+  }
+}
+

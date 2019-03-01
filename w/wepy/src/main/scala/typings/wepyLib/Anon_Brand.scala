@@ -22,3 +22,27 @@ trait Anon_Brand extends js.Object {
   var windowWidth: scala.Double
 }
 
+object Anon_Brand {
+  @scala.inline
+  def apply(
+    SDKVersion: java.lang.String,
+    brand: java.lang.String,
+    fontSizeSetting: java.lang.String,
+    language: java.lang.String,
+    model: java.lang.String,
+    pixelRatio: scala.Double,
+    platform: java.lang.String,
+    screenHeight: scala.Double,
+    screenWidth: scala.Double,
+    statusBarHeight: scala.Double,
+    system: java.lang.String,
+    version: java.lang.String,
+    windowHeight: scala.Double,
+    windowWidth: scala.Double
+  ): Anon_Brand = {
+    val __obj = js.Dynamic.literal(SDKVersion = SDKVersion, brand = brand, fontSizeSetting = fontSizeSetting, language = language, model = model, pixelRatio = pixelRatio, platform = platform, screenHeight = screenHeight, screenWidth = screenWidth, statusBarHeight = statusBarHeight, system = system, version = version, windowHeight = windowHeight, windowWidth = windowWidth)
+  
+    __obj.asInstanceOf[Anon_Brand]
+  }
+}
+

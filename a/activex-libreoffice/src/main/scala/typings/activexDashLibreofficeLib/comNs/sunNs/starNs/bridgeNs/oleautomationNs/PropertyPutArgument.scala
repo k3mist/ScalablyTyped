@@ -22,3 +22,12 @@ trait PropertyPutArgument extends js.Object {
   var Value: js.Any
 }
 
+object PropertyPutArgument {
+  @scala.inline
+  def apply(Value: js.Any): PropertyPutArgument = {
+    val __obj = js.Dynamic.literal(Value = Value)
+  
+    __obj.asInstanceOf[PropertyPutArgument]
+  }
+}
+

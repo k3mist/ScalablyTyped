@@ -12,3 +12,16 @@ trait SectionView extends js.Object {
   def remove(): scala.Unit
 }
 
+object SectionView {
+  @scala.inline
+  def apply(
+    destroyed: scala.Boolean,
+    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
+    remove: js.Function0[scala.Unit]
+  ): SectionView = {
+    val __obj = js.Dynamic.literal(destroyed = destroyed, on_destroy = on_destroy, remove = remove)
+  
+    __obj.asInstanceOf[SectionView]
+  }
+}
+

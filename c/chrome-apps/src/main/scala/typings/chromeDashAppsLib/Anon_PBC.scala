@@ -10,3 +10,15 @@ trait Anon_PBC extends js.Object {
   var PIN: chromeDashAppsLib.chromeDashAppsLibStrings.PIN
 }
 
+object Anon_PBC {
+  @scala.inline
+  def apply(
+    PBC: chromeDashAppsLib.chromeDashAppsLibStrings.PBC,
+    PIN: chromeDashAppsLib.chromeDashAppsLibStrings.PIN
+  ): Anon_PBC = {
+    val __obj = js.Dynamic.literal(PBC = PBC, PIN = PIN)
+  
+    __obj.asInstanceOf[Anon_PBC]
+  }
+}
+

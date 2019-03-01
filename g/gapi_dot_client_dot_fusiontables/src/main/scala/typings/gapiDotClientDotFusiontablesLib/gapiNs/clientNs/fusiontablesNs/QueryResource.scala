@@ -26,3 +26,21 @@ trait QueryResource extends js.Object {
   def sqlGet(request: gapiDotClientDotFusiontablesLib.Anon_AltFieldsHdrs): gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
 }
 
+object QueryResource {
+  @scala.inline
+  def apply(
+    sql: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsHdrs, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
+    ],
+    sqlGet: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsHdrs, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
+    ]
+  ): QueryResource = {
+    val __obj = js.Dynamic.literal(sql = sql, sqlGet = sqlGet)
+  
+    __obj.asInstanceOf[QueryResource]
+  }
+}
+

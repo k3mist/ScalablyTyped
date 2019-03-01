@@ -19,3 +19,15 @@ trait IWorkInfo extends js.Object {
   var position: microsoftDashLiveDashConnectLib.Anon_Name
 }
 
+object IWorkInfo {
+  @scala.inline
+  def apply(
+    employer: microsoftDashLiveDashConnectLib.Anon_Name,
+    position: microsoftDashLiveDashConnectLib.Anon_Name
+  ): IWorkInfo = {
+    val __obj = js.Dynamic.literal(employer = employer, position = position)
+  
+    __obj.asInstanceOf[IWorkInfo]
+  }
+}
+

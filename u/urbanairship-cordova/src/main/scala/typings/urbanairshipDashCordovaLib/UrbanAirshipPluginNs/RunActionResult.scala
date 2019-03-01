@@ -13,3 +13,12 @@ trait RunActionResult extends js.Object {
   var value: js.Any
 }
 
+object RunActionResult {
+  @scala.inline
+  def apply(error: java.lang.String, value: js.Any): RunActionResult = {
+    val __obj = js.Dynamic.literal(error = error, value = value)
+  
+    __obj.asInstanceOf[RunActionResult]
+  }
+}
+

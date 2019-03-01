@@ -60,3 +60,23 @@ trait ColorSchemeForPolygon
   var theme: java.lang.String
 }
 
+object ColorSchemeForPolygon {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    colorsForClassBreaks: js.Array[ColorSchemeForPolygonColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: ColorSchemeForPolygonOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    theme: java.lang.String
+  ): ColorSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, theme = theme)
+  
+    __obj.asInstanceOf[ColorSchemeForPolygon]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ICustomString extends ICustomControl {
   var show: valueOrfunc[scala.Boolean]
 }
 
+object ICustomString {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String,
+    expression: ExpressionType,
+    label: java.lang.String,
+    maxlength: scala.Double,
+    ref: java.lang.String,
+    show: valueOrfunc[scala.Boolean],
+    `type`: java.lang.String
+  ): ICustomString = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, expression = expression, label = label, maxlength = maxlength, ref = ref, show = show.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomString]
+  }
+}
+

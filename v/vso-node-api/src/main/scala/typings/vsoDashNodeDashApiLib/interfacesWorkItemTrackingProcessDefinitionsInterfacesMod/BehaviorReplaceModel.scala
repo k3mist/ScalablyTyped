@@ -16,3 +16,12 @@ trait BehaviorReplaceModel extends js.Object {
   var name: java.lang.String
 }
 
+object BehaviorReplaceModel {
+  @scala.inline
+  def apply(color: java.lang.String, name: java.lang.String): BehaviorReplaceModel = {
+    val __obj = js.Dynamic.literal(color = color, name = name)
+  
+    __obj.asInstanceOf[BehaviorReplaceModel]
+  }
+}
+

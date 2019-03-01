@@ -14,3 +14,12 @@ trait Anon_NoBubble
   var noBubble: scala.Boolean
 }
 
+object Anon_NoBubble {
+  @scala.inline
+  def apply(noBubble: scala.Boolean): Anon_NoBubble = {
+    val __obj = js.Dynamic.literal(noBubble = noBubble)
+  
+    __obj.asInstanceOf[Anon_NoBubble]
+  }
+}
+

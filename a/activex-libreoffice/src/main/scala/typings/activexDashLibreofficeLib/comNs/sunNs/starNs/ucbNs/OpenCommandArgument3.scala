@@ -20,3 +20,19 @@ trait OpenCommandArgument3 extends OpenCommandArgument2 {
   var OpeningFlags: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
 }
 
+object OpenCommandArgument3 {
+  @scala.inline
+  def apply(
+    Mode: scala.Double,
+    OpeningFlags: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    Priority: scala.Double,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
+  ): OpenCommandArgument3 = {
+    val __obj = js.Dynamic.literal(Mode = Mode, OpeningFlags = OpeningFlags, Priority = Priority, Properties = Properties, Sink = Sink, SortingInfo = SortingInfo)
+  
+    __obj.asInstanceOf[OpenCommandArgument3]
+  }
+}
+

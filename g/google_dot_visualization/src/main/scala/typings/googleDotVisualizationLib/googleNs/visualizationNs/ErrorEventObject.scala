@@ -12,3 +12,18 @@ trait ErrorEventObject extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
 }
 
+object ErrorEventObject {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    message: java.lang.String,
+    detailedMessage: java.lang.String = null,
+    options: js.Any = null
+  ): ErrorEventObject = {
+    val __obj = js.Dynamic.literal(id = id, message = message)
+    if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ErrorEventObject]
+  }
+}
+

@@ -60,3 +60,33 @@ trait TransformationContext extends js.Object {
   def suspendLexicalEnvironment(): scala.Unit
 }
 
+object TransformationContext {
+  @scala.inline
+  def apply(
+    enableEmitNotification: js.Function1[SyntaxKind, scala.Unit],
+    enableSubstitution: js.Function1[SyntaxKind, scala.Unit],
+    endLexicalEnvironment: js.Function0[js.UndefOr[js.Array[Statement]]],
+    getCompilerOptions: js.Function0[CompilerOptions],
+    hoistFunctionDeclaration: js.Function1[FunctionDeclaration, scala.Unit],
+    hoistVariableDeclaration: js.Function1[Identifier, scala.Unit],
+    isEmitNotificationEnabled: js.Function1[Node, scala.Boolean],
+    isSubstitutionEnabled: js.Function1[Node, scala.Boolean],
+    onEmitNode: js.Function3[
+      EmitHint, 
+      Node, 
+      js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit], 
+      scala.Unit
+    ],
+    onSubstituteNode: js.Function2[EmitHint, Node, Node],
+    readEmitHelpers: js.Function0[js.UndefOr[js.Array[EmitHelper]]],
+    requestEmitHelper: js.Function1[EmitHelper, scala.Unit],
+    resumeLexicalEnvironment: js.Function0[scala.Unit],
+    startLexicalEnvironment: js.Function0[scala.Unit],
+    suspendLexicalEnvironment: js.Function0[scala.Unit]
+  ): TransformationContext = {
+    val __obj = js.Dynamic.literal(enableEmitNotification = enableEmitNotification, enableSubstitution = enableSubstitution, endLexicalEnvironment = endLexicalEnvironment, getCompilerOptions = getCompilerOptions, hoistFunctionDeclaration = hoistFunctionDeclaration, hoistVariableDeclaration = hoistVariableDeclaration, isEmitNotificationEnabled = isEmitNotificationEnabled, isSubstitutionEnabled = isSubstitutionEnabled, onEmitNode = onEmitNode, onSubstituteNode = onSubstituteNode, readEmitHelpers = readEmitHelpers, requestEmitHelper = requestEmitHelper, resumeLexicalEnvironment = resumeLexicalEnvironment, startLexicalEnvironment = startLexicalEnvironment, suspendLexicalEnvironment = suspendLexicalEnvironment)
+  
+    __obj.asInstanceOf[TransformationContext]
+  }
+}
+

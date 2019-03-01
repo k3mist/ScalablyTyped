@@ -16,3 +16,17 @@ trait LoaderOptions extends js.Object {
   var use: webpackLib.webpackMod.webpackNs.Loader | js.Array[webpackLib.webpackMod.webpackNs.Loader]
 }
 
+object LoaderOptions {
+  @scala.inline
+  def apply(
+    use: webpackLib.webpackMod.webpackNs.Loader | js.Array[webpackLib.webpackMod.webpackNs.Loader],
+    fallback: webpackLib.webpackMod.webpackNs.Loader | js.Array[webpackLib.webpackMod.webpackNs.Loader] = null,
+    publicPath: java.lang.String = null
+  ): LoaderOptions = {
+    val __obj = js.Dynamic.literal(use = use.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    __obj.asInstanceOf[LoaderOptions]
+  }
+}
+

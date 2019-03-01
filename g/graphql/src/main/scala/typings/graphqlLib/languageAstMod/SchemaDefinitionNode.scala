@@ -14,3 +14,18 @@ trait SchemaDefinitionNode
   val operationTypes: js.Array[OperationTypeDefinitionNode]
 }
 
+object SchemaDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.SchemaDefinition,
+    operationTypes: js.Array[OperationTypeDefinitionNode],
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): SchemaDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, operationTypes = operationTypes)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[SchemaDefinitionNode]
+  }
+}
+

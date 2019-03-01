@@ -18,3 +18,23 @@ trait DataSource extends js.Object {
   def update(time: JulianDate): scala.Boolean
 }
 
+object DataSource {
+  @scala.inline
+  def apply(
+    changedEvent: Event,
+    clock: DataSourceClock,
+    clustering: EntityCluster,
+    entities: EntityCollection,
+    errorEvent: Event,
+    isLoading: scala.Boolean,
+    loadingEvent: Event,
+    name: java.lang.String,
+    show: scala.Boolean,
+    update: js.Function1[JulianDate, scala.Boolean]
+  ): DataSource = {
+    val __obj = js.Dynamic.literal(changedEvent = changedEvent, clock = clock, clustering = clustering, entities = entities, errorEvent = errorEvent, isLoading = isLoading, loadingEvent = loadingEvent, name = name, show = show, update = update)
+  
+    __obj.asInstanceOf[DataSource]
+  }
+}
+

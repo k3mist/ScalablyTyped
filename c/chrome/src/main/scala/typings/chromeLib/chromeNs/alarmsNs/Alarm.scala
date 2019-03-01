@@ -14,3 +14,16 @@ trait Alarm extends js.Object {
   var scheduledTime: scala.Double
 }
 
+object Alarm {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    scheduledTime: scala.Double,
+    periodInMinutes: scala.Int | scala.Double = null
+  ): Alarm = {
+    val __obj = js.Dynamic.literal(name = name, scheduledTime = scheduledTime)
+    if (periodInMinutes != null) __obj.updateDynamic("periodInMinutes")(periodInMinutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Alarm]
+  }
+}
+

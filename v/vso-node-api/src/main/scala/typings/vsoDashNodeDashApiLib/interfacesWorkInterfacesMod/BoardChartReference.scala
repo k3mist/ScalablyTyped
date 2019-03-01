@@ -16,3 +16,12 @@ trait BoardChartReference extends js.Object {
   var url: java.lang.String
 }
 
+object BoardChartReference {
+  @scala.inline
+  def apply(name: java.lang.String, url: java.lang.String): BoardChartReference = {
+    val __obj = js.Dynamic.literal(name = name, url = url)
+  
+    __obj.asInstanceOf[BoardChartReference]
+  }
+}
+

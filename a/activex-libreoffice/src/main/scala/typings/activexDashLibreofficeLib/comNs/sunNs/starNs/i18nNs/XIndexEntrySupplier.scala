@@ -28,3 +28,27 @@ trait XIndexEntrySupplier
   def getIndexFollowPageWord(bMorePages: scala.Boolean, aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): java.lang.String
 }
 
+object XIndexEntrySupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getIndexCharacter: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    getIndexFollowPageWord: js.Function2[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIndexEntrySupplier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getIndexCharacter = getIndexCharacter, getIndexFollowPageWord = getIndexFollowPageWord, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIndexEntrySupplier]
+  }
+}
+

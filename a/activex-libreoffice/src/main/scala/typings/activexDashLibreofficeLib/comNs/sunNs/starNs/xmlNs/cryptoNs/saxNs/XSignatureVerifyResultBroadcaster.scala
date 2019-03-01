@@ -28,3 +28,18 @@ trait XSignatureVerifyResultBroadcaster
   def removeSignatureVerifyResultListener(listener: XSignatureVerifyResultListener): scala.Unit
 }
 
+object XSignatureVerifyResultBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSignatureVerifyResultListener: js.Function1[XSignatureVerifyResultListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSignatureVerifyResultListener: js.Function1[XSignatureVerifyResultListener, scala.Unit]
+  ): XSignatureVerifyResultBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSignatureVerifyResultListener = addSignatureVerifyResultListener, queryInterface = queryInterface, release = release, removeSignatureVerifyResultListener = removeSignatureVerifyResultListener)
+  
+    __obj.asInstanceOf[XSignatureVerifyResultBroadcaster]
+  }
+}
+

@@ -92,3 +92,32 @@ trait IPayout
   var `type`: PayoutTypes
 }
 
+object IPayout {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    arrival_date: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    description: java.lang.String,
+    destination: java.lang.String | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount | stripeLib.stripeMod.StripeNs.cardsNs.ICardHash,
+    failure_balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    failure_code: java.lang.String,
+    failure_message: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    method: PayoutMethods,
+    `object`: stripeLib.stripeLibStrings.payout,
+    source_type: stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.bitcoin_receiver | stripeLib.stripeLibStrings.card,
+    statement_descriptor: java.lang.String,
+    status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.in_transit | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.pending,
+    `type`: PayoutTypes
+  ): IPayout = {
+    val __obj = js.Dynamic.literal(amount = amount, arrival_date = arrival_date, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, description = description, destination = destination.asInstanceOf[js.Any], failure_balance_transaction = failure_balance_transaction.asInstanceOf[js.Any], failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, method = method, `object` = `object`, source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[IPayout]
+  }
+}
+

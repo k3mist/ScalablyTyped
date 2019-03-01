@@ -66,3 +66,47 @@ trait ASPxClientEdit extends ASPxClientEditBase {
   def Validate(): scala.Unit
 }
 
+object ASPxClientEdit {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    Focus: js.Function0[scala.Unit],
+    GetCaption: js.Function0[java.lang.String],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetErrorText: js.Function0[java.lang.String],
+    GetHeight: js.Function0[scala.Double],
+    GetInputElement: js.Function0[js.Object],
+    GetIsValid: js.Function0[scala.Boolean],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetReadOnly: js.Function0[scala.Boolean],
+    GetValue: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetCaption: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetErrorText: js.Function1[java.lang.String, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetIsValid: js.Function1[scala.Boolean, scala.Unit],
+    SetReadOnly: js.Function1[scala.Boolean, scala.Unit],
+    SetValue: js.Function1[js.Object, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    Validate: js.Function0[scala.Unit],
+    Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]],
+    ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]],
+    name: java.lang.String
+  ): ASPxClientEdit = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Focus = Focus, GetCaption = GetCaption, GetClientVisible = GetClientVisible, GetEnabled = GetEnabled, GetErrorText = GetErrorText, GetHeight = GetHeight, GetInputElement = GetInputElement, GetIsValid = GetIsValid, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetReadOnly = GetReadOnly, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, GotFocus = GotFocus, InCallback = InCallback, Init = Init, LostFocus = LostFocus, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetCaption = SetCaption, SetClientVisible = SetClientVisible, SetEnabled = SetEnabled, SetErrorText = SetErrorText, SetHeight = SetHeight, SetIsValid = SetIsValid, SetReadOnly = SetReadOnly, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, Validate = Validate, Validation = Validation, ValueChanged = ValueChanged, name = name)
+  
+    __obj.asInstanceOf[ASPxClientEdit]
+  }
+}
+

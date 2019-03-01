@@ -12,3 +12,19 @@ trait RequestPayloadObject extends PayloadObject {
   var method_RequestPayloadObject: java.lang.String
 }
 
+object RequestPayloadObject {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    method: java.lang.String,
+    params: js.Any,
+    error: SerializerError = null,
+    result: js.Any = null
+  ): RequestPayloadObject = {
+    val __obj = js.Dynamic.literal(id = id, method = method, params = params)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[RequestPayloadObject]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs extends ASPxClient
   var handled: scala.Boolean
 }
 
+object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
+  @scala.inline
+  def apply(column: ASPxClientCardViewColumn, handled: scala.Boolean): ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs = {
+    val __obj = js.Dynamic.literal(column = column, handled = handled)
+  
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ColorLike extends js.Object {
   var r: scala.Double
 }
 
+object ColorLike {
+  @scala.inline
+  def apply(b: scala.Double, g: scala.Double, r: scala.Double): ColorLike = {
+    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+  
+    __obj.asInstanceOf[ColorLike]
+  }
+}
+

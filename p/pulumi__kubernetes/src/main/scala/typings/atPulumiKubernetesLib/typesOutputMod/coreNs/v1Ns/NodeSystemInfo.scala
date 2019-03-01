@@ -56,3 +56,23 @@ trait NodeSystemInfo extends js.Object {
   val systemUUID: java.lang.String
 }
 
+object NodeSystemInfo {
+  @scala.inline
+  def apply(
+    architecture: java.lang.String,
+    bootID: java.lang.String,
+    containerRuntimeVersion: java.lang.String,
+    kernelVersion: java.lang.String,
+    kubeProxyVersion: java.lang.String,
+    kubeletVersion: java.lang.String,
+    machineID: java.lang.String,
+    operatingSystem: java.lang.String,
+    osImage: java.lang.String,
+    systemUUID: java.lang.String
+  ): NodeSystemInfo = {
+    val __obj = js.Dynamic.literal(architecture = architecture, bootID = bootID, containerRuntimeVersion = containerRuntimeVersion, kernelVersion = kernelVersion, kubeProxyVersion = kubeProxyVersion, kubeletVersion = kubeletVersion, machineID = machineID, operatingSystem = operatingSystem, osImage = osImage, systemUUID = systemUUID)
+  
+    __obj.asInstanceOf[NodeSystemInfo]
+  }
+}
+

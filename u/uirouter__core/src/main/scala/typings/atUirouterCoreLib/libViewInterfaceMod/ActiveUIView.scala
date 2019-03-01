@@ -23,3 +23,20 @@ trait ActiveUIView extends js.Object {
   def configUpdated(config: ViewConfig): scala.Unit
 }
 
+object ActiveUIView {
+  @scala.inline
+  def apply(
+    $type: java.lang.String,
+    config: ViewConfig,
+    configUpdated: js.Function1[ViewConfig, scala.Unit],
+    creationContext: ViewContext,
+    fqn: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String
+  ): ActiveUIView = {
+    val __obj = js.Dynamic.literal($type = $type, config = config, configUpdated = configUpdated, creationContext = creationContext, fqn = fqn, id = id, name = name)
+  
+    __obj.asInstanceOf[ActiveUIView]
+  }
+}
+

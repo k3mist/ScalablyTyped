@@ -23,3 +23,19 @@ trait CallbackObject extends js.Object {
   def reset(): scala.Unit
 }
 
+object CallbackObject {
+  @scala.inline
+  def apply(
+    autoReset: scala.Boolean,
+    called: scala.Boolean,
+    data: js.Array[_],
+    hook: scala.Double,
+    `object`: js.Any,
+    reset: js.Function0[scala.Unit]
+  ): CallbackObject = {
+    val __obj = js.Dynamic.literal(autoReset = autoReset, called = called, data = data, hook = hook, `object` = `object`, reset = reset)
+  
+    __obj.asInstanceOf[CallbackObject]
+  }
+}
+

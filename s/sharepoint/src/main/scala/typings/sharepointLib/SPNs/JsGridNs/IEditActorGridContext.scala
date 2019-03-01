@@ -16,3 +16,20 @@ trait IEditActorGridContext extends js.Object {
   def OnKeyDown(domEvent: microsoftDashAjaxLib.SysNs.UINs.DomEvent): scala.Unit
 }
 
+object IEditActorGridContext {
+  @scala.inline
+  def apply(
+    OnKeyDown: js.Function1[microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit],
+    RTL: js.Any,
+    bLightFocus: scala.Boolean,
+    emptyValue: js.Any,
+    jsGridObj: JsGridControl,
+    parentNode: stdLib.HTMLElement,
+    styleManager: IStyleManager
+  ): IEditActorGridContext = {
+    val __obj = js.Dynamic.literal(OnKeyDown = OnKeyDown, RTL = RTL, bLightFocus = bLightFocus, emptyValue = emptyValue, jsGridObj = jsGridObj, parentNode = parentNode, styleManager = styleManager)
+  
+    __obj.asInstanceOf[IEditActorGridContext]
+  }
+}
+

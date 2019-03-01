@@ -16,3 +16,21 @@ trait BufferScanResult extends js.Object {
   def stop(): scala.Unit
 }
 
+object BufferScanResult {
+  @scala.inline
+  def apply(
+    buffer: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.TextBuffer,
+    lineText: java.lang.String,
+    `match`: stdLib.RegExpExecArray,
+    matchText: java.lang.String,
+    range: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range,
+    replace: js.Function1[java.lang.String, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    stopped: scala.Boolean
+  ): BufferScanResult = {
+    val __obj = js.Dynamic.literal(buffer = buffer, lineText = lineText, `match` = `match`, matchText = matchText, range = range, replace = replace, stop = stop, stopped = stopped)
+  
+    __obj.asInstanceOf[BufferScanResult]
+  }
+}
+

@@ -111,3 +111,33 @@ trait JobUpdateParameters
   var versionName: java.lang.String
 }
 
+object JobUpdateParameters {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    assignedType: java.lang.String,
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    description: java.lang.String,
+    dueDate: stdLib.Date,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    loi: Geometry,
+    name: java.lang.String,
+    ownedBy: java.lang.String,
+    parentJobId: scala.Double,
+    parentVersion: java.lang.String,
+    percent: scala.Double,
+    priority: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    startDate: stdLib.Date,
+    status: scala.Double,
+    user: java.lang.String,
+    versionName: java.lang.String
+  ): JobUpdateParameters = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = hasOwnProperty, jobId = jobId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, percent = percent, priority = priority, propertyIsEnumerable = propertyIsEnumerable, startDate = startDate, status = status, user = user, versionName = versionName)
+  
+    __obj.asInstanceOf[JobUpdateParameters]
+  }
+}
+

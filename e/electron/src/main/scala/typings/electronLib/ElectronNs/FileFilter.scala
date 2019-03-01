@@ -11,3 +11,12 @@ trait FileFilter extends js.Object {
   var name: java.lang.String
 }
 
+object FileFilter {
+  @scala.inline
+  def apply(extensions: js.Array[java.lang.String], name: java.lang.String): FileFilter = {
+    val __obj = js.Dynamic.literal(extensions = extensions, name = name)
+  
+    __obj.asInstanceOf[FileFilter]
+  }
+}
+

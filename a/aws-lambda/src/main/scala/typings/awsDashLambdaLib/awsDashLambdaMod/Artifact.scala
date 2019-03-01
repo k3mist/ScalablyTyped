@@ -11,3 +11,12 @@ trait Artifact extends js.Object {
   var revision: java.lang.String | scala.Null
 }
 
+object Artifact {
+  @scala.inline
+  def apply(location: ArtifactLocation, name: java.lang.String, revision: java.lang.String = null): Artifact = {
+    val __obj = js.Dynamic.literal(location = location, name = name)
+    if (revision != null) __obj.updateDynamic("revision")(revision)
+    __obj.asInstanceOf[Artifact]
+  }
+}
+

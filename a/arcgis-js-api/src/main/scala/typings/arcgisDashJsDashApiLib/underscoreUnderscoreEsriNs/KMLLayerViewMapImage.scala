@@ -33,3 +33,20 @@ trait KMLLayerViewMapImage
   var rotation: scala.Double
 }
 
+object KMLLayerViewMapImage {
+  @scala.inline
+  def apply(
+    Extent: Extent,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    href: java.lang.String,
+    id: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    rotation: scala.Double
+  ): KMLLayerViewMapImage = {
+    val __obj = js.Dynamic.literal(Extent = Extent, constructor = constructor, hasOwnProperty = hasOwnProperty, href = href, id = id, propertyIsEnumerable = propertyIsEnumerable, rotation = rotation)
+  
+    __obj.asInstanceOf[KMLLayerViewMapImage]
+  }
+}
+

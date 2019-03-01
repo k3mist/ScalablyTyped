@@ -50,3 +50,55 @@ trait Anon_AgendaEventMinHeight extends js.Object {
   var windowResizeDelay: scala.Double
 }
 
+object Anon_AgendaEventMinHeight {
+  @scala.inline
+  def apply(
+    agendaEventMinHeight: scala.Double,
+    allDayText: java.lang.String,
+    aspectRatio: scala.Double,
+    buttonText: Anon_Day,
+    columnHeader: scala.Boolean,
+    dayPopoverFormat: java.lang.String,
+    defaultAllDayEventDuration: Anon_Days,
+    defaultTimedEventDuration: java.lang.String,
+    defaultView: java.lang.String,
+    dragOpacity: scala.Double,
+    dragRevertDuration: scala.Double,
+    dragScroll: scala.Boolean,
+    dropAccept: java.lang.String,
+    endParam: java.lang.String,
+    eventLimit: scala.Boolean,
+    eventLimitClick: java.lang.String,
+    eventLimitText: java.lang.String,
+    eventOrder: java.lang.String,
+    forceEventDuration: scala.Boolean,
+    handleWindowResize: scala.Boolean,
+    header: Anon_Center,
+    isRTL: scala.Boolean,
+    lazyFetching: scala.Boolean,
+    locale: js.Any,
+    longPressDelay: scala.Double,
+    maxTime: java.lang.String,
+    minTime: java.lang.String,
+    monthYearFormat: java.lang.String,
+    nextDayThreshold: java.lang.String,
+    scrollTime: java.lang.String,
+    showNonCurrentDates: scala.Boolean,
+    startParam: java.lang.String,
+    theme: scala.Boolean,
+    timezone: scala.Boolean,
+    timezoneParam: java.lang.String,
+    titleRangeSeparator: java.lang.String,
+    unselectAuto: scala.Boolean,
+    weekNumberCalculation: java.lang.String,
+    weekNumberTitle: java.lang.String,
+    weekNumbers: scala.Boolean,
+    weekends: scala.Boolean,
+    windowResizeDelay: scala.Double
+  ): Anon_AgendaEventMinHeight = {
+    val __obj = js.Dynamic.literal(agendaEventMinHeight = agendaEventMinHeight, allDayText = allDayText, aspectRatio = aspectRatio, buttonText = buttonText, columnHeader = columnHeader, dayPopoverFormat = dayPopoverFormat, defaultAllDayEventDuration = defaultAllDayEventDuration, defaultTimedEventDuration = defaultTimedEventDuration, defaultView = defaultView, dragOpacity = dragOpacity, dragRevertDuration = dragRevertDuration, dragScroll = dragScroll, dropAccept = dropAccept, endParam = endParam, eventLimit = eventLimit, eventLimitClick = eventLimitClick, eventLimitText = eventLimitText, eventOrder = eventOrder, forceEventDuration = forceEventDuration, handleWindowResize = handleWindowResize, header = header, isRTL = isRTL, lazyFetching = lazyFetching, locale = locale, longPressDelay = longPressDelay, maxTime = maxTime, minTime = minTime, monthYearFormat = monthYearFormat, nextDayThreshold = nextDayThreshold, scrollTime = scrollTime, showNonCurrentDates = showNonCurrentDates, startParam = startParam, theme = theme, timezone = timezone, timezoneParam = timezoneParam, titleRangeSeparator = titleRangeSeparator, unselectAuto = unselectAuto, weekNumberCalculation = weekNumberCalculation, weekNumberTitle = weekNumberTitle, weekNumbers = weekNumbers, weekends = weekends, windowResizeDelay = windowResizeDelay)
+  
+    __obj.asInstanceOf[Anon_AgendaEventMinHeight]
+  }
+}
+

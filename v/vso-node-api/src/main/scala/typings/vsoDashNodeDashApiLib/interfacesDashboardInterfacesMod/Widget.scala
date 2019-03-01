@@ -41,3 +41,34 @@ trait Widget extends js.Object {
   var url: java.lang.String
 }
 
+object Widget {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    allowedSizes: js.Array[WidgetSize],
+    artifactId: java.lang.String,
+    configurationContributionId: java.lang.String,
+    configurationContributionRelativeId: java.lang.String,
+    contentUri: java.lang.String,
+    contributionId: java.lang.String,
+    dashboard: Dashboard,
+    eTag: java.lang.String,
+    id: java.lang.String,
+    isEnabled: scala.Boolean,
+    isNameConfigurable: scala.Boolean,
+    lightboxOptions: LightboxOptions,
+    loadingImageUrl: java.lang.String,
+    name: java.lang.String,
+    position: WidgetPosition,
+    settings: java.lang.String,
+    settingsVersion: SemanticVersion,
+    size: WidgetSize,
+    typeId: java.lang.String,
+    url: java.lang.String
+  ): Widget = {
+    val __obj = js.Dynamic.literal(_links = _links, allowedSizes = allowedSizes, artifactId = artifactId, configurationContributionId = configurationContributionId, configurationContributionRelativeId = configurationContributionRelativeId, contentUri = contentUri, contributionId = contributionId, dashboard = dashboard, eTag = eTag, id = id, isEnabled = isEnabled, isNameConfigurable = isNameConfigurable, lightboxOptions = lightboxOptions, loadingImageUrl = loadingImageUrl, name = name, position = position, settings = settings, settingsVersion = settingsVersion, size = size, typeId = typeId, url = url)
+  
+    __obj.asInstanceOf[Widget]
+  }
+}
+

@@ -37,3 +37,19 @@ trait XSchema
   def readTemplates(aHandler: XSchemaHandler): scala.Unit
 }
 
+object XSchema {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readComponent: js.Function1[XSchemaHandler, scala.Unit],
+    readSchema: js.Function1[XSchemaHandler, scala.Unit],
+    readTemplates: js.Function1[XSchemaHandler, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XSchema = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release)
+  
+    __obj.asInstanceOf[XSchema]
+  }
+}
+

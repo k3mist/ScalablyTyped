@@ -10,3 +10,12 @@ trait VoronoiDiagram extends js.Object {
   var positions: js.Array[Point]
 }
 
+object VoronoiDiagram {
+  @scala.inline
+  def apply(cells: js.Array[Cell], positions: js.Array[Point]): VoronoiDiagram = {
+    val __obj = js.Dynamic.literal(cells = cells, positions = positions)
+  
+    __obj.asInstanceOf[VoronoiDiagram]
+  }
+}
+

@@ -20,3 +20,16 @@ trait Anon_Decode extends js.Object {
   var verify: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
 }
 
+object Anon_Decode {
+  @scala.inline
+  def apply(
+    decode: jsonwebtokenLib.jsonwebtokenMod.DecodeOptions,
+    sign: jsonwebtokenLib.jsonwebtokenMod.SignOptions,
+    verify: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
+  ): Anon_Decode = {
+    val __obj = js.Dynamic.literal(decode = decode, sign = sign, verify = verify)
+  
+    __obj.asInstanceOf[Anon_Decode]
+  }
+}
+

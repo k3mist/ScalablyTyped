@@ -11,3 +11,12 @@ trait DataResource extends js.Object {
   var realtime: RealtimeResource
 }
 
+object DataResource {
+  @scala.inline
+  def apply(ga: GaResource, mcf: McfResource, realtime: RealtimeResource): DataResource = {
+    val __obj = js.Dynamic.literal(ga = ga, mcf = mcf, realtime = realtime)
+  
+    __obj.asInstanceOf[DataResource]
+  }
+}
+

@@ -14,3 +14,28 @@ trait SlideThumbnail extends AnonymousAccessor {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SlideThumbnail {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, SlideThumbnail]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], SlideThumbnail]) = null,
+    url: java.lang.String = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): SlideThumbnail = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[SlideThumbnail]
+  }
+}
+

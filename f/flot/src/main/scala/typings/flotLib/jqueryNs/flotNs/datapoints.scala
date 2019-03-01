@@ -11,3 +11,12 @@ trait datapoints extends js.Object {
   var pointsize: scala.Double
 }
 
+object datapoints {
+  @scala.inline
+  def apply(format: js.Array[datapointFormat], points: js.Array[scala.Double], pointsize: scala.Double): datapoints = {
+    val __obj = js.Dynamic.literal(format = format, points = points, pointsize = pointsize)
+  
+    __obj.asInstanceOf[datapoints]
+  }
+}
+

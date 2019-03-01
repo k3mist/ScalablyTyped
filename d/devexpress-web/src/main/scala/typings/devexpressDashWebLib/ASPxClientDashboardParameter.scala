@@ -50,3 +50,22 @@ trait ASPxClientDashboardParameter extends js.Object {
   def SetValue(value: js.Object): scala.Unit
 }
 
+object ASPxClientDashboardParameter {
+  @scala.inline
+  def apply(
+    GetDefaultValue: js.Function0[js.Object],
+    GetDescription: js.Function0[java.lang.String],
+    GetName: js.Function0[java.lang.String],
+    GetType: js.Function0[java.lang.String],
+    GetValue: js.Function0[js.Object],
+    GetValues: js.Function0[js.Array[ASPxClientDashboardParameterValue]],
+    Name: java.lang.String,
+    SetValue: js.Function1[js.Object, scala.Unit],
+    Value: js.Object
+  ): ASPxClientDashboardParameter = {
+    val __obj = js.Dynamic.literal(GetDefaultValue = GetDefaultValue, GetDescription = GetDescription, GetName = GetName, GetType = GetType, GetValue = GetValue, GetValues = GetValues, Name = Name, SetValue = SetValue, Value = Value)
+  
+    __obj.asInstanceOf[ASPxClientDashboardParameter]
+  }
+}
+

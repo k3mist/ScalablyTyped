@@ -40,3 +40,47 @@ trait BootstrapGridViewEventMap extends BootstrapGridBaseEventMap {
   var selectionChanged: GridViewSelectionEventArgs
 }
 
+object BootstrapGridViewEventMap {
+  @scala.inline
+  def apply(
+    batchEditChangesCanceling: GridViewBatchEditChangesCancelingEventArgs,
+    batchEditChangesSaving: GridViewBatchEditChangesSavingEventArgs,
+    batchEditConfirmShowing: GridViewBatchEditConfirmShowingEventArgs,
+    batchEditEndEditing: GridViewBatchEditEndEditingEventArgs,
+    batchEditRowDeleting: GridViewBatchEditRowDeletingEventArgs,
+    batchEditRowInserting: GridViewBatchEditRowInsertingEventArgs,
+    batchEditRowValidating: GridViewBatchEditRowValidatingEventArgs,
+    batchEditStartEditing: GridViewBatchEditStartEditingEventArgs,
+    batchEditTemplateCellFocused: GridViewBatchEditTemplateCellFocusedEventArgs,
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    columnGrouping: GridViewColumnCancelEventArgs,
+    columnMoving: GridViewColumnMovingEventArgs,
+    columnResized: GridViewColumnProcessingModeEventArgs,
+    columnResizing: GridViewColumnCancelEventArgs,
+    columnSorting: GridViewColumnCancelEventArgs,
+    columnStartDragging: GridViewColumnCancelEventArgs,
+    contextMenu: GridViewContextMenuEventArgs,
+    contextMenuItemClick: GridViewContextMenuItemClickEventArgs,
+    customButtonClick: GridViewCustomButtonEventArgs,
+    customizationWindowCloseUp: EventArgs,
+    detailRowCollapsing: GridViewRowCancelEventArgs,
+    detailRowExpanding: GridViewRowCancelEventArgs,
+    endCallback: EndCallbackEventArgs,
+    focusedCellChanging: GridViewFocusedCellChangingEventArgs,
+    focusedRowChanged: GridViewFocusEventArgs,
+    init: EventArgs,
+    rowClick: GridViewRowClickEventArgs,
+    rowCollapsing: GridViewRowCancelEventArgs,
+    rowDblClick: GridViewRowClickEventArgs,
+    rowExpanding: GridViewRowCancelEventArgs,
+    rowFocusing: GridViewRowFocusingEventArgs,
+    selectionChanged: GridViewSelectionEventArgs,
+    toolbarItemClick: GridToolbarItemClickEventArgs
+  ): BootstrapGridViewEventMap = {
+    val __obj = js.Dynamic.literal(batchEditChangesCanceling = batchEditChangesCanceling, batchEditChangesSaving = batchEditChangesSaving, batchEditConfirmShowing = batchEditConfirmShowing, batchEditEndEditing = batchEditEndEditing, batchEditRowDeleting = batchEditRowDeleting, batchEditRowInserting = batchEditRowInserting, batchEditRowValidating = batchEditRowValidating, batchEditStartEditing = batchEditStartEditing, batchEditTemplateCellFocused = batchEditTemplateCellFocused, beginCallback = beginCallback, callbackError = callbackError, columnGrouping = columnGrouping, columnMoving = columnMoving, columnResized = columnResized, columnResizing = columnResizing, columnSorting = columnSorting, columnStartDragging = columnStartDragging, contextMenu = contextMenu, contextMenuItemClick = contextMenuItemClick, customButtonClick = customButtonClick, customizationWindowCloseUp = customizationWindowCloseUp, detailRowCollapsing = detailRowCollapsing, detailRowExpanding = detailRowExpanding, endCallback = endCallback, focusedCellChanging = focusedCellChanging, focusedRowChanged = focusedRowChanged, init = init, rowClick = rowClick, rowCollapsing = rowCollapsing, rowDblClick = rowDblClick, rowExpanding = rowExpanding, rowFocusing = rowFocusing, selectionChanged = selectionChanged, toolbarItemClick = toolbarItemClick)
+  
+    __obj.asInstanceOf[BootstrapGridViewEventMap]
+  }
+}
+

@@ -36,3 +36,21 @@ trait XFormulaOpCodeMapper extends js.Object {
   def getMappings(Names: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], Language: scala.Double): activexDashInteropLib.SafeArray[FormulaToken]
 }
 
+object XFormulaOpCodeMapper {
+  @scala.inline
+  def apply(
+    OpCodeExternal: scala.Double,
+    OpCodeUnknown: scala.Double,
+    getAvailableMappings: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[FormulaOpCodeMapEntry]],
+    getMappings: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[FormulaToken]
+    ]
+  ): XFormulaOpCodeMapper = {
+    val __obj = js.Dynamic.literal(OpCodeExternal = OpCodeExternal, OpCodeUnknown = OpCodeUnknown, getAvailableMappings = getAvailableMappings, getMappings = getMappings)
+  
+    __obj.asInstanceOf[XFormulaOpCodeMapper]
+  }
+}
+

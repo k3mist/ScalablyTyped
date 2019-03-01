@@ -12,3 +12,17 @@ trait IFD
   var width: scala.Double
 }
 
+object IFD {
+  @scala.inline
+  def apply(
+    data: stdLib.Uint8Array,
+    height: scala.Double,
+    width: scala.Double,
+    StringDictionary: /* property */ org.scalablytyped.runtime.StringDictionary[TiffTag | scala.Double | stdLib.Uint8Array] = null
+  ): IFD = {
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IFD]
+  }
+}
+

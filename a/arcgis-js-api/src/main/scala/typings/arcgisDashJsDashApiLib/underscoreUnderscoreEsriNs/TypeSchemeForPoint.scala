@@ -40,3 +40,21 @@ trait TypeSchemeForPoint
   var size: scala.Double
 }
 
+object TypeSchemeForPoint {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: TypeSchemeForPointOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    size: scala.Double
+  ): TypeSchemeForPoint = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size)
+  
+    __obj.asInstanceOf[TypeSchemeForPoint]
+  }
+}
+

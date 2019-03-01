@@ -24,3 +24,19 @@ trait PolicyArgs extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object PolicyArgs {
+  @scala.inline
+  def apply(
+    content: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PolicyArgs = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyArgs]
+  }
+}
+

@@ -44,3 +44,26 @@ trait XInplaceObject
   ): scala.Unit
 }
 
+object XInplaceObject {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    enableModeless: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setObjectRectangles: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      scala.Unit
+    ],
+    translateAccelerators: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent], 
+      scala.Unit
+    ]
+  ): XInplaceObject = {
+    val __obj = js.Dynamic.literal(acquire = acquire, enableModeless = enableModeless, queryInterface = queryInterface, release = release, setObjectRectangles = setObjectRectangles, translateAccelerators = translateAccelerators)
+  
+    __obj.asInstanceOf[XInplaceObject]
+  }
+}
+

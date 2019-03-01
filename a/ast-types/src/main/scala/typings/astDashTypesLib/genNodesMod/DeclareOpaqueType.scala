@@ -16,3 +16,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DeclareOpaqueType
 }
 
+object DeclareOpaqueType {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.DeclareOpaqueType): DeclareOpaqueType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[DeclareOpaqueType]
+  }
+}
+

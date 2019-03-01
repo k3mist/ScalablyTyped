@@ -19,3 +19,16 @@ trait ITreeResource extends js.Object {
   def loadNodes(options: js.Any): scala.Unit
 }
 
+object ITreeResource {
+  @scala.inline
+  def apply(
+    loadApplication: js.Function1[js.Any, scala.Unit],
+    loadMenu: js.Function1[js.Any, scala.Unit],
+    loadNodes: js.Function1[js.Any, scala.Unit]
+  ): ITreeResource = {
+    val __obj = js.Dynamic.literal(loadApplication = loadApplication, loadMenu = loadMenu, loadNodes = loadNodes)
+  
+    __obj.asInstanceOf[ITreeResource]
+  }
+}
+

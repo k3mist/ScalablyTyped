@@ -36,3 +36,18 @@ trait ASPxAppointmentType extends js.Object {
   var Pattern: java.lang.String
 }
 
+object ASPxAppointmentType {
+  @scala.inline
+  def apply(
+    ChangedOccurrence: java.lang.String,
+    DeletedOccurrence: java.lang.String,
+    Normal: java.lang.String,
+    Occurrence: java.lang.String,
+    Pattern: java.lang.String
+  ): ASPxAppointmentType = {
+    val __obj = js.Dynamic.literal(ChangedOccurrence = ChangedOccurrence, DeletedOccurrence = DeletedOccurrence, Normal = Normal, Occurrence = Occurrence, Pattern = Pattern)
+  
+    __obj.asInstanceOf[ASPxAppointmentType]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientRichEditKeyDownEventArgs extends ASPxClientEventArgs {
   var htmlEvent: js.Object
 }
 
+object ASPxClientRichEditKeyDownEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, htmlEvent: js.Object): ASPxClientRichEditKeyDownEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent)
+  
+    __obj.asInstanceOf[ASPxClientRichEditKeyDownEventArgs]
+  }
+}
+

@@ -14,3 +14,17 @@ trait Attachment
   var media: java.lang.String
 }
 
+object Attachment {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    media: java.lang.String,
+    StringDictionary: /** Other properties */
+  /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Attachment = {
+    val __obj = js.Dynamic.literal(contentType = contentType, media = media)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Attachment]
+  }
+}
+

@@ -41,3 +41,67 @@ trait WorkspacesResource extends js.Object {
   def updateProposal(request: gapiDotClientDotTagmanagerLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[WorkspaceProposal]
 }
 
+object WorkspacesResource {
+  @scala.inline
+  def apply(
+    built_in_variables: Built_in_variablesResource,
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Workspace]
+    ],
+    create_version: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateContainerVersionResponse]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    folders: FoldersResource,
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Workspace]
+    ],
+    getProposal: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WorkspaceProposal]
+    ],
+    getStatus: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetWorkspaceStatusResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListWorkspacesResponse]
+    ],
+    proposal: ProposalResource,
+    quick_preview: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[QuickPreviewResponse]
+    ],
+    resolve_conflict: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    sync: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SyncWorkspaceResponse]
+    ],
+    tags: TagsResource,
+    triggers: TriggersResource,
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Workspace]
+    ],
+    updateProposal: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WorkspaceProposal]
+    ],
+    variables: VariablesResource
+  ): WorkspacesResource = {
+    val __obj = js.Dynamic.literal(built_in_variables = built_in_variables, create = create, create_version = create_version, delete = delete, folders = folders, get = get, getProposal = getProposal, getStatus = getStatus, list = list, proposal = proposal, quick_preview = quick_preview, resolve_conflict = resolve_conflict, sync = sync, tags = tags, triggers = triggers, update = update, updateProposal = updateProposal, variables = variables)
+  
+    __obj.asInstanceOf[WorkspacesResource]
+  }
+}
+

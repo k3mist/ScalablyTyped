@@ -11,3 +11,16 @@ trait ProcessParameters extends js.Object {
   var sourceDefinitions: js.Array[TaskSourceDefinitionBase]
 }
 
+object ProcessParameters {
+  @scala.inline
+  def apply(
+    dataSourceBindings: js.Array[DataSourceBindingBase],
+    inputs: js.Array[TaskInputDefinitionBase],
+    sourceDefinitions: js.Array[TaskSourceDefinitionBase]
+  ): ProcessParameters = {
+    val __obj = js.Dynamic.literal(dataSourceBindings = dataSourceBindings, inputs = inputs, sourceDefinitions = sourceDefinitions)
+  
+    __obj.asInstanceOf[ProcessParameters]
+  }
+}
+

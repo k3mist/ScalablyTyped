@@ -12,3 +12,17 @@ trait ITransports extends js.Object {
   def register(name: java.lang.String, factory: js.Any): scala.Unit
 }
 
+object ITransports {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.Any],
+    isRegistered: js.Function1[java.lang.String, scala.Boolean],
+    list: js.Function0[js.Array[java.lang.String]],
+    register: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ITransports = {
+    val __obj = js.Dynamic.literal(get = get, isRegistered = isRegistered, list = list, register = register)
+  
+    __obj.asInstanceOf[ITransports]
+  }
+}
+

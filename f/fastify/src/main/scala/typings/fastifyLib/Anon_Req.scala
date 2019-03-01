@@ -10,3 +10,12 @@ trait Anon_Req extends js.Object {
   var res: nodeLib.httpMod.ServerResponse
 }
 
+object Anon_Req {
+  @scala.inline
+  def apply(req: nodeLib.NodeJSNs.ReadableStream, res: nodeLib.httpMod.ServerResponse): Anon_Req = {
+    val __obj = js.Dynamic.literal(req = req, res = res)
+  
+    __obj.asInstanceOf[Anon_Req]
+  }
+}
+

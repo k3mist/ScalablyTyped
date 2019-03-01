@@ -38,3 +38,22 @@ trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var size: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IconSymbol3DLayerProperties {
+  @scala.inline
+  def apply(
+    anchor: java.lang.String = null,
+    material: js.Any = null,
+    outline: IconSymbol3DLayerOutlineProperties = null,
+    resource: IconSymbol3DLayerResource = null,
+    size: scala.Double | java.lang.String = null
+  ): IconSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IconSymbol3DLayerProperties]
+  }
+}
+

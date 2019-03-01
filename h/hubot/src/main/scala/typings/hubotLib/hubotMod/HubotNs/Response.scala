@@ -13,3 +13,18 @@ trait Response[R] extends js.Object {
   def send(strings: java.lang.String*): scala.Unit
 }
 
+object Response {
+  @scala.inline
+  def apply[R](
+    `match`: stdLib.RegExpMatchArray,
+    message: Message,
+    random: js.Function1[js.Array[js.Any], js.Any],
+    reply: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    send: js.Function1[/* repeated */ java.lang.String, scala.Unit]
+  ): Response[R] = {
+    val __obj = js.Dynamic.literal(`match` = `match`, message = message, random = random, reply = reply, send = send)
+  
+    __obj.asInstanceOf[Response[R]]
+  }
+}
+

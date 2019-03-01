@@ -221,3 +221,55 @@ trait ASPxClientWebChartHitInfo extends js.Object {
   var trendLine: ASPxClientTrendLine
 }
 
+object ASPxClientWebChartHitInfo {
+  @scala.inline
+  def apply(
+    annotation: ASPxClientAnnotation,
+    axis: ASPxClientAxisBase,
+    axisLabelItem: ASPxClientAxisLabelItem,
+    axisTitle: ASPxClientAxisTitle,
+    chart: ASPxClientWebChart,
+    chartTitle: ASPxClientChartTitle,
+    constantLine: ASPxClientConstantLine,
+    customLegendItem: ASPxClientCustomLegendItem,
+    diagram: ASPxClientXYDiagramBase,
+    fibonacciIndicator: ASPxClientFibonacciIndicator,
+    hyperlink: java.lang.String,
+    inAnnotation: scala.Boolean,
+    inAxis: scala.Boolean,
+    inAxisLabelItem: scala.Boolean,
+    inAxisTitle: scala.Boolean,
+    inChart: scala.Boolean,
+    inChartTitle: scala.Boolean,
+    inConstantLine: scala.Boolean,
+    inCustomLegendItem: scala.Boolean,
+    inDiagram: scala.Boolean,
+    inFibonacciIndicator: scala.Boolean,
+    inHyperlink: scala.Boolean,
+    inIndicator: scala.Boolean,
+    inLegend: scala.Boolean,
+    inNonDefaultPane: scala.Boolean,
+    inPaneTitle: scala.Boolean,
+    inRegressionLine: scala.Boolean,
+    inSeries: scala.Boolean,
+    inSeriesLabel: scala.Boolean,
+    inSeriesPoint: scala.Boolean,
+    inSeriesTitle: scala.Boolean,
+    inTrendLine: scala.Boolean,
+    indicator: ASPxClientIndicator,
+    legend: ASPxClientLegend,
+    nonDefaultPane: ASPxClientXYDiagramPane,
+    paneTitle: ASPxClientPaneTitle,
+    regressionLine: ASPxClientRegressionLine,
+    series: ASPxClientSeries,
+    seriesLabel: ASPxClientSeriesLabel,
+    seriesPoint: ASPxClientSeriesPoint,
+    seriesTitle: ASPxClientSeriesTitle,
+    trendLine: ASPxClientTrendLine
+  ): ASPxClientWebChartHitInfo = {
+    val __obj = js.Dynamic.literal(annotation = annotation, axis = axis, axisLabelItem = axisLabelItem, axisTitle = axisTitle, chart = chart, chartTitle = chartTitle, constantLine = constantLine, customLegendItem = customLegendItem, diagram = diagram, fibonacciIndicator = fibonacciIndicator, hyperlink = hyperlink, inAnnotation = inAnnotation, inAxis = inAxis, inAxisLabelItem = inAxisLabelItem, inAxisTitle = inAxisTitle, inChart = inChart, inChartTitle = inChartTitle, inConstantLine = inConstantLine, inCustomLegendItem = inCustomLegendItem, inDiagram = inDiagram, inFibonacciIndicator = inFibonacciIndicator, inHyperlink = inHyperlink, inIndicator = inIndicator, inLegend = inLegend, inNonDefaultPane = inNonDefaultPane, inPaneTitle = inPaneTitle, inRegressionLine = inRegressionLine, inSeries = inSeries, inSeriesLabel = inSeriesLabel, inSeriesPoint = inSeriesPoint, inSeriesTitle = inSeriesTitle, inTrendLine = inTrendLine, indicator = indicator, legend = legend, nonDefaultPane = nonDefaultPane, paneTitle = paneTitle, regressionLine = regressionLine, series = series, seriesLabel = seriesLabel, seriesPoint = seriesPoint, seriesTitle = seriesTitle, trendLine = trendLine)
+  
+    __obj.asInstanceOf[ASPxClientWebChartHitInfo]
+  }
+}
+

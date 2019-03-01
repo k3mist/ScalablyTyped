@@ -55,3 +55,24 @@ trait XMethodParameter
   def isOut(): scala.Boolean
 }
 
+object XMethodParameter {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    Position: scala.Double,
+    Type: XTypeDescription,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getPosition: js.Function0[scala.Double],
+    getType: js.Function0[XTypeDescription],
+    isIn: js.Function0[scala.Boolean],
+    isOut: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMethodParameter = {
+    val __obj = js.Dynamic.literal(Name = Name, Position = Position, Type = Type, acquire = acquire, getName = getName, getPosition = getPosition, getType = getType, isIn = isIn, isOut = isOut, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMethodParameter]
+  }
+}
+

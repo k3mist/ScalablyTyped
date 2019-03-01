@@ -31,3 +31,18 @@ trait XEnumeration
   def nextElement(): js.Any
 }
 
+object XEnumeration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasMoreElements: js.Function0[scala.Boolean],
+    nextElement: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEnumeration = {
+    val __obj = js.Dynamic.literal(acquire = acquire, hasMoreElements = hasMoreElements, nextElement = nextElement, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XEnumeration]
+  }
+}
+

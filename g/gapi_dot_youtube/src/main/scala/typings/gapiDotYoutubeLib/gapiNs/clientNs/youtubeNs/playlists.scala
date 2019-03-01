@@ -26,3 +26,31 @@ trait playlists extends js.Object {
   def update(`object`: gapiDotYoutubeLib.Anon_Part): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
 }
 
+object playlists {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotYoutubeLib.Anon_Id, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
+    ],
+    insert: js.Function1[
+      gapiDotYoutubeLib.Anon_Part, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
+    ],
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_ChannelIdId, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
+      ]
+    ],
+    update: js.Function1[
+      gapiDotYoutubeLib.Anon_Part, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubePlaylistResource]
+    ]
+  ): playlists = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
+    __obj.asInstanceOf[playlists]
+  }
+}
+

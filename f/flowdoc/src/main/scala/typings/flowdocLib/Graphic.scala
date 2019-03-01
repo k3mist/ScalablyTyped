@@ -11,3 +11,19 @@ trait Graphic extends Node {
   var source: flowdocLib.FlowNs.FileAsset | flowdocLib.FlowNs.URLAsset
 }
 
+object Graphic {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    position: flowdocLib.FlowNs.Point,
+    size: flowdocLib.FlowNs.Size,
+    source: flowdocLib.FlowNs.FileAsset | flowdocLib.FlowNs.URLAsset,
+    `type`: NodeType
+  ): Graphic = {
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size, source = source.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[Graphic]
+  }
+}
+

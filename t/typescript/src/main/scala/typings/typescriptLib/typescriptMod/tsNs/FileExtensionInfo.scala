@@ -11,3 +11,12 @@ trait FileExtensionInfo extends js.Object {
   var scriptKind: js.UndefOr[ScriptKind] = js.undefined
 }
 
+object FileExtensionInfo {
+  @scala.inline
+  def apply(extension: java.lang.String, isMixedContent: scala.Boolean, scriptKind: ScriptKind = null): FileExtensionInfo = {
+    val __obj = js.Dynamic.literal(extension = extension, isMixedContent = isMixedContent)
+    if (scriptKind != null) __obj.updateDynamic("scriptKind")(scriptKind)
+    __obj.asInstanceOf[FileExtensionInfo]
+  }
+}
+

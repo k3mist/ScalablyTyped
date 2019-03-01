@@ -14,3 +14,20 @@ trait IxMonad[F] extends js.Object {
   def iof[I, A](a: A): fpDashTsLib.libHKTMod.HKT3[F, I, I, A]
 }
 
+object IxMonad {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    ichain: js.Function2[
+      fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]
+    ],
+    iof: js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]]
+  ): IxMonad[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ichain = ichain, iof = iof)
+  
+    __obj.asInstanceOf[IxMonad[F]]
+  }
+}
+

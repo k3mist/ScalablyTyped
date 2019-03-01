@@ -28,3 +28,19 @@ trait LocationSchemeForPolygon
   var outline: LocationSchemeForPolygonOutline
 }
 
+object LocationSchemeForPolygon {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    opacity: scala.Double,
+    outline: LocationSchemeForPolygonOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): LocationSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[LocationSchemeForPolygon]
+  }
+}
+

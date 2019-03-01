@@ -32,3 +32,19 @@ trait GitTreeEntryRef extends js.Object {
   var url: java.lang.String
 }
 
+object GitTreeEntryRef {
+  @scala.inline
+  def apply(
+    gitObjectType: GitObjectType,
+    mode: java.lang.String,
+    objectId: java.lang.String,
+    relativePath: java.lang.String,
+    size: scala.Double,
+    url: java.lang.String
+  ): GitTreeEntryRef = {
+    val __obj = js.Dynamic.literal(gitObjectType = gitObjectType, mode = mode, objectId = objectId, relativePath = relativePath, size = size, url = url)
+  
+    __obj.asInstanceOf[GitTreeEntryRef]
+  }
+}
+

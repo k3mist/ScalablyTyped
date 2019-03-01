@@ -24,3 +24,17 @@ trait DoctypeToken extends js.Object {
   var systemId: java.lang.String
 }
 
+object DoctypeToken {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    publicId: java.lang.String,
+    systemId: java.lang.String,
+    sourceCodeLocation: parse5Lib.parse5Mod.Location = null
+  ): DoctypeToken = {
+    val __obj = js.Dynamic.literal(name = name, publicId = publicId, systemId = systemId)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[DoctypeToken]
+  }
+}
+

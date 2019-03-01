@@ -24,3 +24,17 @@ trait WorkItemTypeUpdateModel extends js.Object {
   var isDisabled: scala.Boolean
 }
 
+object WorkItemTypeUpdateModel {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    description: java.lang.String,
+    icon: java.lang.String,
+    isDisabled: scala.Boolean
+  ): WorkItemTypeUpdateModel = {
+    val __obj = js.Dynamic.literal(color = color, description = description, icon = icon, isDisabled = isDisabled)
+  
+    __obj.asInstanceOf[WorkItemTypeUpdateModel]
+  }
+}
+

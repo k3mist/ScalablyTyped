@@ -74,3 +74,31 @@ trait FileContainerItem extends js.Object {
   var ticket: java.lang.String
 }
 
+object FileContainerItem {
+  @scala.inline
+  def apply(
+    containerId: scala.Double,
+    contentId: js.Array[scala.Double],
+    contentLocation: java.lang.String,
+    createdBy: java.lang.String,
+    dateCreated: stdLib.Date,
+    dateLastModified: stdLib.Date,
+    fileEncoding: scala.Double,
+    fileHash: js.Array[scala.Double],
+    fileId: scala.Double,
+    fileLength: scala.Double,
+    fileType: scala.Double,
+    itemLocation: java.lang.String,
+    itemType: ContainerItemType,
+    lastModifiedBy: java.lang.String,
+    path: java.lang.String,
+    scopeIdentifier: java.lang.String,
+    status: ContainerItemStatus,
+    ticket: java.lang.String
+  ): FileContainerItem = {
+    val __obj = js.Dynamic.literal(containerId = containerId, contentId = contentId, contentLocation = contentLocation, createdBy = createdBy, dateCreated = dateCreated, dateLastModified = dateLastModified, fileEncoding = fileEncoding, fileHash = fileHash, fileId = fileId, fileLength = fileLength, fileType = fileType, itemLocation = itemLocation, itemType = itemType, lastModifiedBy = lastModifiedBy, path = path, scopeIdentifier = scopeIdentifier, status = status, ticket = ticket)
+  
+    __obj.asInstanceOf[FileContainerItem]
+  }
+}
+

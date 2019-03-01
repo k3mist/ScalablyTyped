@@ -10,3 +10,12 @@ trait ResponseData extends js.Object {
   var res: koaLib.koaMod.ApplicationNs.Response
 }
 
+object ResponseData {
+  @scala.inline
+  def apply(req: koaLib.koaMod.ApplicationNs.Request, res: koaLib.koaMod.ApplicationNs.Response): ResponseData = {
+    val __obj = js.Dynamic.literal(req = req, res = res)
+  
+    __obj.asInstanceOf[ResponseData]
+  }
+}
+

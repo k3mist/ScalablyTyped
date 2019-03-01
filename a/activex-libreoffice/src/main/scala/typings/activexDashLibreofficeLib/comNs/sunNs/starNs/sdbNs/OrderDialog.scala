@@ -18,3 +18,24 @@ trait OrderDialog
   ): scala.Unit
 }
 
+object OrderDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDefault: js.Function0[scala.Unit],
+    createWithQuery: js.Function2[
+      XSingleSelectQueryComposer, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): OrderDialog = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createDefault = createDefault, createWithQuery = createWithQuery, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
+    __obj.asInstanceOf[OrderDialog]
+  }
+}
+

@@ -32,3 +32,19 @@ trait FieldModel extends js.Object {
   var url: java.lang.String
 }
 
+object FieldModel {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    pickList: PickListMetadataModel,
+    `type`: FieldType,
+    url: java.lang.String
+  ): FieldModel = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, pickList = pickList, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[FieldModel]
+  }
+}
+

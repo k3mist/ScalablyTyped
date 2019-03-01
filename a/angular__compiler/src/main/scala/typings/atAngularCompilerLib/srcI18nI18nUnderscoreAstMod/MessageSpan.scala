@@ -13,3 +13,18 @@ trait MessageSpan extends js.Object {
   var startLine: scala.Double
 }
 
+object MessageSpan {
+  @scala.inline
+  def apply(
+    endCol: scala.Double,
+    endLine: scala.Double,
+    filePath: java.lang.String,
+    startCol: scala.Double,
+    startLine: scala.Double
+  ): MessageSpan = {
+    val __obj = js.Dynamic.literal(endCol = endCol, endLine = endLine, filePath = filePath, startCol = startCol, startLine = startLine)
+  
+    __obj.asInstanceOf[MessageSpan]
+  }
+}
+

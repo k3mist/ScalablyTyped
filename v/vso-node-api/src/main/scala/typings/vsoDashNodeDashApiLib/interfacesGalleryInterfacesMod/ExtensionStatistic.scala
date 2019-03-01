@@ -10,3 +10,12 @@ trait ExtensionStatistic extends js.Object {
   var value: scala.Double
 }
 
+object ExtensionStatistic {
+  @scala.inline
+  def apply(statisticName: java.lang.String, value: scala.Double): ExtensionStatistic = {
+    val __obj = js.Dynamic.literal(statisticName = statisticName, value = value)
+  
+    __obj.asInstanceOf[ExtensionStatistic]
+  }
+}
+

@@ -40,3 +40,21 @@ trait MediaFlags extends js.Object {
   var isPaused: scala.Boolean
 }
 
+object MediaFlags {
+  @scala.inline
+  def apply(
+    canRotate: scala.Boolean,
+    canToggleControls: scala.Boolean,
+    hasAudio: scala.Boolean,
+    inError: scala.Boolean,
+    isControlsVisible: scala.Boolean,
+    isLooping: scala.Boolean,
+    isMuted: scala.Boolean,
+    isPaused: scala.Boolean
+  ): MediaFlags = {
+    val __obj = js.Dynamic.literal(canRotate = canRotate, canToggleControls = canToggleControls, hasAudio = hasAudio, inError = inError, isControlsVisible = isControlsVisible, isLooping = isLooping, isMuted = isMuted, isPaused = isPaused)
+  
+    __obj.asInstanceOf[MediaFlags]
+  }
+}
+

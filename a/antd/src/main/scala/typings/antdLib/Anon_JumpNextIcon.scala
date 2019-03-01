@@ -12,3 +12,17 @@ trait Anon_JumpNextIcon extends js.Object {
   var prevIcon: reactLib.reactMod.Global.JSXNs.Element
 }
 
+object Anon_JumpNextIcon {
+  @scala.inline
+  def apply(
+    jumpNextIcon: reactLib.reactMod.Global.JSXNs.Element,
+    jumpPrevIcon: reactLib.reactMod.Global.JSXNs.Element,
+    nextIcon: reactLib.reactMod.Global.JSXNs.Element,
+    prevIcon: reactLib.reactMod.Global.JSXNs.Element
+  ): Anon_JumpNextIcon = {
+    val __obj = js.Dynamic.literal(jumpNextIcon = jumpNextIcon, jumpPrevIcon = jumpPrevIcon, nextIcon = nextIcon, prevIcon = prevIcon)
+  
+    __obj.asInstanceOf[Anon_JumpNextIcon]
+  }
+}
+

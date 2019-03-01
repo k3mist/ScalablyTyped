@@ -18,3 +18,15 @@ trait CurrentUser extends js.Object {
   def listen(listener: js.Function1[/* user */ GoogleUser, _]): scala.Unit
 }
 
+object CurrentUser {
+  @scala.inline
+  def apply(
+    get: js.Function0[GoogleUser],
+    listen: js.Function1[js.Function1[/* user */ GoogleUser, _], scala.Unit]
+  ): CurrentUser = {
+    val __obj = js.Dynamic.literal(get = get, listen = listen)
+  
+    __obj.asInstanceOf[CurrentUser]
+  }
+}
+

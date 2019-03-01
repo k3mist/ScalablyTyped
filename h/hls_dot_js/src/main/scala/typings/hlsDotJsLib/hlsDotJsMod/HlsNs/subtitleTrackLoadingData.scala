@@ -10,3 +10,12 @@ trait subtitleTrackLoadingData extends js.Object {
   var url: java.lang.String
 }
 
+object subtitleTrackLoadingData {
+  @scala.inline
+  def apply(id: java.lang.String, url: java.lang.String): subtitleTrackLoadingData = {
+    val __obj = js.Dynamic.literal(id = id, url = url)
+  
+    __obj.asInstanceOf[subtitleTrackLoadingData]
+  }
+}
+

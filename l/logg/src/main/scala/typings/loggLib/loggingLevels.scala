@@ -15,3 +15,20 @@ trait loggingLevels extends js.Object {
   def toString(level: scala.Double): java.lang.String
 }
 
+object loggingLevels {
+  @scala.inline
+  def apply(
+    FINE: scala.Double,
+    FINER: scala.Double,
+    FINEST: scala.Double,
+    INFO: scala.Double,
+    SEVERE: scala.Double,
+    WARN: scala.Double,
+    toString: js.Function1[scala.Double, java.lang.String]
+  ): loggingLevels = {
+    val __obj = js.Dynamic.literal(FINE = FINE, FINER = FINER, FINEST = FINEST, INFO = INFO, SEVERE = SEVERE, WARN = WARN, toString = toString)
+  
+    __obj.asInstanceOf[loggingLevels]
+  }
+}
+

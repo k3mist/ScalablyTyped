@@ -13,3 +13,18 @@ trait ActionOverride extends js.Object {
   var url: js.UndefOr[maybe[java.lang.String]] = js.undefined
 }
 
+object ActionOverride {
+  @scala.inline
+  def apply(
+    formFactor: java.lang.String,
+    isAvailableInTouch: scala.Boolean,
+    name: java.lang.String,
+    pageId: java.lang.String,
+    url: maybe[java.lang.String] = null
+  ): ActionOverride = {
+    val __obj = js.Dynamic.literal(formFactor = formFactor, isAvailableInTouch = isAvailableInTouch, name = name, pageId = pageId)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionOverride]
+  }
+}
+

@@ -12,3 +12,22 @@ trait ICoreDispatcher extends ICoreAcceleratorKeys {
   def runIdleAsync(agileCallback: IdleDispatchedHandler): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object ICoreDispatcher {
+  @scala.inline
+  def apply(
+    hasThreadAccess: scala.Boolean,
+    onacceleratorkeyactivated: js.Any,
+    processEvents: js.Function1[CoreProcessEventsOption, scala.Unit],
+    runAsync: js.Function2[
+      CoreDispatcherPriority, 
+      DispatchedHandler, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    runIdleAsync: js.Function1[IdleDispatchedHandler, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
+  ): ICoreDispatcher = {
+    val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess, onacceleratorkeyactivated = onacceleratorkeyactivated, processEvents = processEvents, runAsync = runAsync, runIdleAsync = runIdleAsync)
+  
+    __obj.asInstanceOf[ICoreDispatcher]
+  }
+}
+

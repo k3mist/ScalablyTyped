@@ -12,3 +12,16 @@ trait OpenCLPlatform extends js.Object {
   var Vendor: java.lang.String
 }
 
+object OpenCLPlatform {
+  @scala.inline
+  def apply(
+    Devices: activexDashInteropLib.SafeArray[OpenCLDevice],
+    Name: java.lang.String,
+    Vendor: java.lang.String
+  ): OpenCLPlatform = {
+    val __obj = js.Dynamic.literal(Devices = Devices, Name = Name, Vendor = Vendor)
+  
+    __obj.asInstanceOf[OpenCLPlatform]
+  }
+}
+

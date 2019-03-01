@@ -15,3 +15,16 @@ trait INDClosedCaptionDataReceivedEventArgs extends js.Object {
   var presentationTimestamp: scala.Double
 }
 
+object INDClosedCaptionDataReceivedEventArgs {
+  @scala.inline
+  def apply(
+    closedCaptionData: scala.Double,
+    closedCaptionDataFormat: NDClosedCaptionFormat,
+    presentationTimestamp: scala.Double
+  ): INDClosedCaptionDataReceivedEventArgs = {
+    val __obj = js.Dynamic.literal(closedCaptionData = closedCaptionData, closedCaptionDataFormat = closedCaptionDataFormat, presentationTimestamp = presentationTimestamp)
+  
+    __obj.asInstanceOf[INDClosedCaptionDataReceivedEventArgs]
+  }
+}
+

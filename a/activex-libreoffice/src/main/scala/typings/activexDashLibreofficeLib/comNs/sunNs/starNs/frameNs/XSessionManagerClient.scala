@@ -47,3 +47,22 @@ trait XSessionManagerClient
   def saveDone(xListener: XSessionManagerListener): scala.Unit
 }
 
+object XSessionManagerClient {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSessionManagerListener: js.Function1[XSessionManagerListener, scala.Unit],
+    cancelShutdown: js.Function0[scala.Boolean],
+    interactionDone: js.Function1[XSessionManagerListener, scala.Unit],
+    queryInteraction: js.Function1[XSessionManagerListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSessionManagerListener: js.Function1[XSessionManagerListener, scala.Unit],
+    saveDone: js.Function1[XSessionManagerListener, scala.Unit]
+  ): XSessionManagerClient = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSessionManagerListener = addSessionManagerListener, cancelShutdown = cancelShutdown, interactionDone = interactionDone, queryInteraction = queryInteraction, queryInterface = queryInterface, release = release, removeSessionManagerListener = removeSessionManagerListener, saveDone = saveDone)
+  
+    __obj.asInstanceOf[XSessionManagerClient]
+  }
+}
+

@@ -10,3 +10,12 @@ trait FileDescriptorInfo extends js.Object {
   var pos: java.lang.String
 }
 
+object FileDescriptorInfo {
+  @scala.inline
+  def apply(flags: java.lang.String, pos: java.lang.String): FileDescriptorInfo = {
+    val __obj = js.Dynamic.literal(flags = flags, pos = pos)
+  
+    __obj.asInstanceOf[FileDescriptorInfo]
+  }
+}
+

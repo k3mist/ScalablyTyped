@@ -14,3 +14,19 @@ trait ITransitionEvent extends js.Object {
   var state: java.lang.String
 }
 
+object ITransitionEvent {
+  @scala.inline
+  def apply(
+    changed: scala.Boolean,
+    context: js.Object,
+    id: scala.Double,
+    name: java.lang.String,
+    newValue: java.lang.String,
+    state: java.lang.String
+  ): ITransitionEvent = {
+    val __obj = js.Dynamic.literal(changed = changed, context = context, id = id, name = name, newValue = newValue, state = state)
+  
+    __obj.asInstanceOf[ITransitionEvent]
+  }
+}
+

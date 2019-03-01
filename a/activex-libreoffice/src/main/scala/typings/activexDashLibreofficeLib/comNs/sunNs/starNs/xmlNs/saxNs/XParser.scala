@@ -39,3 +39,22 @@ trait XParser
   def setLocale(locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Unit
 }
 
+object XParser {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    parseStream: js.Function1[InputSource, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDTDHandler: js.Function1[XDTDHandler, scala.Unit],
+    setDocumentHandler: js.Function1[XDocumentHandler, scala.Unit],
+    setEntityResolver: js.Function1[XEntityResolver, scala.Unit],
+    setErrorHandler: js.Function1[XErrorHandler, scala.Unit],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+  ): XParser = {
+    val __obj = js.Dynamic.literal(acquire = acquire, parseStream = parseStream, queryInterface = queryInterface, release = release, setDTDHandler = setDTDHandler, setDocumentHandler = setDocumentHandler, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler, setLocale = setLocale)
+  
+    __obj.asInstanceOf[XParser]
+  }
+}
+

@@ -15,3 +15,20 @@ trait ISurveyData extends js.Object {
   def setValue(name: java.lang.String, newValue: js.Any): js.Any
 }
 
+object ISurveyData {
+  @scala.inline
+  def apply(
+    getAllValues: js.Function0[js.Any],
+    getComment: js.Function1[java.lang.String, java.lang.String],
+    getFilteredProperties: js.Function0[js.Any],
+    getFilteredValues: js.Function0[js.Any],
+    getValue: js.Function1[java.lang.String, js.Any],
+    setComment: js.Function2[java.lang.String, java.lang.String, js.Any],
+    setValue: js.Function2[java.lang.String, js.Any, js.Any]
+  ): ISurveyData = {
+    val __obj = js.Dynamic.literal(getAllValues = getAllValues, getComment = getComment, getFilteredProperties = getFilteredProperties, getFilteredValues = getFilteredValues, getValue = getValue, setComment = setComment, setValue = setValue)
+  
+    __obj.asInstanceOf[ISurveyData]
+  }
+}
+

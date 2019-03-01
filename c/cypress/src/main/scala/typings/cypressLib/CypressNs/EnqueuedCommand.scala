@@ -13,3 +13,18 @@ trait EnqueuedCommand extends js.Object {
   def fn(args: js.Any*): js.Any
 }
 
+object EnqueuedCommand {
+  @scala.inline
+  def apply(
+    args: js.Array[_],
+    chainerId: java.lang.String,
+    fn: js.Function1[/* repeated */ js.Any, js.Any],
+    name: java.lang.String,
+    `type`: java.lang.String
+  ): EnqueuedCommand = {
+    val __obj = js.Dynamic.literal(args = args, chainerId = chainerId, fn = fn, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[EnqueuedCommand]
+  }
+}
+

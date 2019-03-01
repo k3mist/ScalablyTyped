@@ -21,3 +21,18 @@ trait NotificationTaskDeleteChangeRuleParams
   var user: java.lang.String
 }
 
+object NotificationTaskDeleteChangeRuleParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    ruleId: java.lang.String,
+    user: java.lang.String
+  ): NotificationTaskDeleteChangeRuleParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, ruleId = ruleId, user = user)
+  
+    __obj.asInstanceOf[NotificationTaskDeleteChangeRuleParams]
+  }
+}
+

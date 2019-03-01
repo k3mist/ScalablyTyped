@@ -92,3 +92,38 @@ trait WMSSublayerProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WMSSublayerProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    id: scala.Int | scala.Double = null,
+    layer: WMSLayerProperties = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    legendUrl: java.lang.String = null,
+    name: java.lang.String = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    queryable: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialReferences: js.Array[scala.Double] = null,
+    sublayers: CollectionProperties[WMSSublayerProperties] = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): WMSSublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable)
+    if (spatialReferences != null) __obj.updateDynamic("spatialReferences")(spatialReferences)
+    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[WMSSublayerProperties]
+  }
+}
+

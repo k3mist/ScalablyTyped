@@ -10,3 +10,15 @@ trait TestResult extends js.Object {
   var results: org.scalablytyped.runtime.StringDictionary[TestOutput | SkippedTest]
 }
 
+object TestResult {
+  @scala.inline
+  def apply(
+    directory: java.lang.String,
+    results: org.scalablytyped.runtime.StringDictionary[TestOutput | SkippedTest]
+  ): TestResult = {
+    val __obj = js.Dynamic.literal(directory = directory, results = results)
+  
+    __obj.asInstanceOf[TestResult]
+  }
+}
+

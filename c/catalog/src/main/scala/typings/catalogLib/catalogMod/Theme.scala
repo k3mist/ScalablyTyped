@@ -35,3 +35,40 @@ trait Theme extends js.Object {
   var textColor: java.lang.String
 }
 
+object Theme {
+  @scala.inline
+  def apply(
+    background: java.lang.String,
+    baseFontSize: scala.Double,
+    bgDark: java.lang.String,
+    bgLight: java.lang.String,
+    brandColor: java.lang.String,
+    checkerboardPatternDark: java.lang.String,
+    checkerboardPatternLight: java.lang.String,
+    codeColor: java.lang.String,
+    codeStyles: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
+    fontFamily: java.lang.String,
+    fontHeading: java.lang.String,
+    fontMono: java.lang.String,
+    lightColor: java.lang.String,
+    linkColor: java.lang.String,
+    msRatio: scala.Double,
+    navBarBackground: java.lang.String,
+    navBarTextColor: java.lang.String,
+    pageHeadingBackground: java.lang.String,
+    pageHeadingHeight: scala.Double,
+    pageHeadingTextColor: java.lang.String,
+    sidebarColor: java.lang.String,
+    sidebarColorActive: java.lang.String,
+    sidebarColorHeading: java.lang.String,
+    sidebarColorLine: java.lang.String,
+    sidebarColorText: java.lang.String,
+    sidebarColorTextActive: java.lang.String,
+    textColor: java.lang.String
+  ): Theme = {
+    val __obj = js.Dynamic.literal(background = background, baseFontSize = baseFontSize, bgDark = bgDark, bgLight = bgLight, brandColor = brandColor, checkerboardPatternDark = checkerboardPatternDark, checkerboardPatternLight = checkerboardPatternLight, codeColor = codeColor, codeStyles = codeStyles, fontFamily = fontFamily, fontHeading = fontHeading, fontMono = fontMono, lightColor = lightColor, linkColor = linkColor, msRatio = msRatio, navBarBackground = navBarBackground, navBarTextColor = navBarTextColor, pageHeadingBackground = pageHeadingBackground, pageHeadingHeight = pageHeadingHeight, pageHeadingTextColor = pageHeadingTextColor, sidebarColor = sidebarColor, sidebarColorActive = sidebarColorActive, sidebarColorHeading = sidebarColorHeading, sidebarColorLine = sidebarColorLine, sidebarColorText = sidebarColorText, sidebarColorTextActive = sidebarColorTextActive, textColor = textColor)
+  
+    __obj.asInstanceOf[Theme]
+  }
+}
+

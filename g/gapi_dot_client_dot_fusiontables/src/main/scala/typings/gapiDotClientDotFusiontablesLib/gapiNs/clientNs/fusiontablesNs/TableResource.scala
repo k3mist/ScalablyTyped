@@ -31,3 +31,53 @@ trait TableResource extends js.Object {
   def update(request: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Table]
 }
 
+object TableResource {
+  @scala.inline
+  def apply(
+    copy: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltCopyPresentation, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ],
+    importRows: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltDelimiter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Import]
+    ],
+    importTable: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltDelimiterEncoding, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TableList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ],
+    replaceRows: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltDelimiter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    update: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Table]
+    ]
+  ): TableResource = {
+    val __obj = js.Dynamic.literal(copy = copy, delete = delete, get = get, importRows = importRows, importTable = importTable, insert = insert, list = list, patch = patch, replaceRows = replaceRows, update = update)
+  
+    __obj.asInstanceOf[TableResource]
+  }
+}
+

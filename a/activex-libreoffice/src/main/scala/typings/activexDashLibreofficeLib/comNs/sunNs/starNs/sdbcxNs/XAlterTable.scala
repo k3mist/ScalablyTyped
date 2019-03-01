@@ -28,3 +28,26 @@ trait XAlterTable
   ): scala.Unit
 }
 
+object XAlterTable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    alterColumnByIndex: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    alterColumnByName: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAlterTable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, alterColumnByIndex = alterColumnByIndex, alterColumnByName = alterColumnByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAlterTable]
+  }
+}
+

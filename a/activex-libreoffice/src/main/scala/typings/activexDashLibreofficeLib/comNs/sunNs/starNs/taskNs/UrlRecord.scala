@@ -10,3 +10,12 @@ trait UrlRecord extends js.Object {
   var UserList: activexDashInteropLib.SafeArray[UserRecord]
 }
 
+object UrlRecord {
+  @scala.inline
+  def apply(Url: java.lang.String, UserList: activexDashInteropLib.SafeArray[UserRecord]): UrlRecord = {
+    val __obj = js.Dynamic.literal(Url = Url, UserList = UserList)
+  
+    __obj.asInstanceOf[UrlRecord]
+  }
+}
+

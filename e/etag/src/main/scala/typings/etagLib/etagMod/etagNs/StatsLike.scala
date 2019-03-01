@@ -12,3 +12,12 @@ trait StatsLike extends js.Object {
   var size: scala.Double
 }
 
+object StatsLike {
+  @scala.inline
+  def apply(ctime: stdLib.Date, ino: scala.Double, mtime: stdLib.Date, size: scala.Double): StatsLike = {
+    val __obj = js.Dynamic.literal(ctime = ctime, ino = ino, mtime = mtime, size = size)
+  
+    __obj.asInstanceOf[StatsLike]
+  }
+}
+

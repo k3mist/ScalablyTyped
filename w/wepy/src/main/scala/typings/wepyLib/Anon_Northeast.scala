@@ -10,3 +10,15 @@ trait Anon_Northeast extends js.Object {
   var southwest: wepyLib.wxUnderscoreEnhancedMod.LagLng
 }
 
+object Anon_Northeast {
+  @scala.inline
+  def apply(
+    northeast: wepyLib.wxUnderscoreEnhancedMod.LagLng,
+    southwest: wepyLib.wxUnderscoreEnhancedMod.LagLng
+  ): Anon_Northeast = {
+    val __obj = js.Dynamic.literal(northeast = northeast, southwest = southwest)
+  
+    __obj.asInstanceOf[Anon_Northeast]
+  }
+}
+

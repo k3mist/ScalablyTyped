@@ -11,3 +11,16 @@ trait Response[Content /* <: js.Object */] extends js.Object {
   var total_rows: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply[Content /* <: js.Object */](
+    offset: scala.Double,
+    rows: js.Array[pouchdbDashMapreduceLib.Anon_Doc[Content]],
+    total_rows: scala.Double
+  ): Response[Content] = {
+    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows)
+  
+    __obj.asInstanceOf[Response[Content]]
+  }
+}
+

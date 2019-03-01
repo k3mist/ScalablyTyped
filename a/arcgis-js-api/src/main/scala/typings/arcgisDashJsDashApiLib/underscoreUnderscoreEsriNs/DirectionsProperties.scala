@@ -58,3 +58,34 @@ trait DirectionsProperties
   var viewModel: js.UndefOr[DirectionsViewModelProperties] = js.undefined
 }
 
+object DirectionsProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    goToOverride: GoToOverride = null,
+    id: java.lang.String = null,
+    maxStops: scala.Int | scala.Double = null,
+    routeServiceUrl: java.lang.String = null,
+    routeSymbol: SimpleLineSymbolProperties = null,
+    searchProperties: DirectionsSearchProperties = null,
+    stopSymbols: DirectionsStopSymbols = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: DirectionsViewModelProperties = null
+  ): DirectionsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
+    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)
+    if (searchProperties != null) __obj.updateDynamic("searchProperties")(searchProperties)
+    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[DirectionsProperties]
+  }
+}
+

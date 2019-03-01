@@ -158,3 +158,42 @@ trait XIdlClass[T]
   def isAssignableFrom(xType: XIdlClass[_]): scala.Boolean
 }
 
+object XIdlClass {
+  @scala.inline
+  def apply[T](
+    Array: XIdlArray,
+    Classes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    ComponentType: XIdlClass[_],
+    Fields: activexDashInteropLib.SafeArray[XIdlField],
+    Interfaces: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    Methods: activexDashInteropLib.SafeArray[XIdlMethod],
+    Name: java.lang.String,
+    Superclasses: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    acquire: js.Function0[scala.Unit],
+    createObject: js.Function1[js.Array[T], scala.Unit],
+    equals: js.Function1[XIdlClass[_], scala.Boolean],
+    getArray: js.Function0[XIdlArray],
+    getClass: js.Function1[java.lang.String, XIdlClass[_]],
+    getClasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getComponentType: js.Function0[XIdlClass[_]],
+    getField: js.Function1[java.lang.String, XIdlField],
+    getFields: js.Function0[activexDashInteropLib.SafeArray[XIdlField]],
+    getInterfaces: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getMethod: js.Function1[java.lang.String, XIdlMethod],
+    getMethods: js.Function0[activexDashInteropLib.SafeArray[XIdlMethod]],
+    getName: js.Function0[java.lang.String],
+    getSuperclasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
+    isAssignableFrom: js.Function1[XIdlClass[_], scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdlClass[T] = {
+    val __obj = js.Dynamic.literal(Array = Array, Classes = Classes, ComponentType = ComponentType, Fields = Fields, Interfaces = Interfaces, Methods = Methods, Name = Name, Superclasses = Superclasses, TypeClass = TypeClass, Uik = Uik, acquire = acquire, createObject = createObject, equals = equals, getArray = getArray, getClass = getClass, getClasses = getClasses, getComponentType = getComponentType, getField = getField, getFields = getFields, getInterfaces = getInterfaces, getMethod = getMethod, getMethods = getMethods, getName = getName, getSuperclasses = getSuperclasses, getTypeClass = getTypeClass, getUik = getUik, isAssignableFrom = isAssignableFrom, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIdlClass[T]]
+  }
+}
+

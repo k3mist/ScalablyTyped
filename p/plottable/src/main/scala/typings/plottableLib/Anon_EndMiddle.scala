@@ -11,3 +11,16 @@ trait Anon_EndMiddle extends js.Object {
   var start: plottableLib.plottableLibStrings.start
 }
 
+object Anon_EndMiddle {
+  @scala.inline
+  def apply(
+    end: plottableLib.plottableLibStrings.end,
+    middle: plottableLib.plottableLibStrings.middle,
+    start: plottableLib.plottableLibStrings.start
+  ): Anon_EndMiddle = {
+    val __obj = js.Dynamic.literal(end = end, middle = middle, start = start)
+  
+    __obj.asInstanceOf[Anon_EndMiddle]
+  }
+}
+

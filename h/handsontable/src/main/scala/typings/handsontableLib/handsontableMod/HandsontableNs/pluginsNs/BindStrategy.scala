@@ -17,3 +17,22 @@ trait BindStrategy extends js.Object {
   def translate(params: js.Any): scala.Unit
 }
 
+object BindStrategy {
+  @scala.inline
+  def apply(
+    clearMap: js.Function0[scala.Unit],
+    createMap: js.Function1[scala.Double, scala.Unit],
+    createRow: js.Function1[js.Any, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    klass: js.Function0[scala.Unit],
+    removeRow: js.Function1[js.Any, scala.Unit],
+    setStrategy: js.Function1[java.lang.String, scala.Unit],
+    strategy: java.lang.String | scala.Unit,
+    translate: js.Function1[js.Any, scala.Unit]
+  ): BindStrategy = {
+    val __obj = js.Dynamic.literal(clearMap = clearMap, createMap = createMap, createRow = createRow, destroy = destroy, klass = klass, removeRow = removeRow, setStrategy = setStrategy, strategy = strategy.asInstanceOf[js.Any], translate = translate)
+  
+    __obj.asInstanceOf[BindStrategy]
+  }
+}
+

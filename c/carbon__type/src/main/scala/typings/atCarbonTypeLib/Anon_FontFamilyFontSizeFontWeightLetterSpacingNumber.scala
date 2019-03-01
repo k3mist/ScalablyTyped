@@ -12,3 +12,17 @@ trait Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber extends js.Object {
   var letterSpacing: scala.Double
 }
 
+object Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber {
+  @scala.inline
+  def apply(
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    fontWeight: scala.Double,
+    letterSpacing: scala.Double
+  ): Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber = {
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing)
+  
+    __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber]
+  }
+}
+

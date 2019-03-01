@@ -14,3 +14,19 @@ trait Tag extends js.Object {
   var slug: java.lang.String
 }
 
+object Tag {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    name: java.lang.String,
+    path: java.lang.String,
+    permalink: java.lang.String,
+    posts: hexoLib.hexoMod.Model[Post],
+    slug: java.lang.String
+  ): Tag = {
+    val __obj = js.Dynamic.literal(length = length, name = name, path = path, permalink = permalink, posts = posts, slug = slug)
+  
+    __obj.asInstanceOf[Tag]
+  }
+}
+

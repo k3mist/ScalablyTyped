@@ -34,3 +34,18 @@ trait XDropTargetDragContext
   def rejectDrag(): scala.Unit
 }
 
+object XDropTargetDragContext {
+  @scala.inline
+  def apply(
+    acceptDrag: js.Function1[scala.Double, scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    rejectDrag: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XDropTargetDragContext = {
+    val __obj = js.Dynamic.literal(acceptDrag = acceptDrag, acquire = acquire, queryInterface = queryInterface, rejectDrag = rejectDrag, release = release)
+  
+    __obj.asInstanceOf[XDropTargetDragContext]
+  }
+}
+

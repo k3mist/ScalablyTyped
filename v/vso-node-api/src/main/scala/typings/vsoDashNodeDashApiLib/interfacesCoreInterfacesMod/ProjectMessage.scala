@@ -11,3 +11,16 @@ trait ProjectMessage extends js.Object {
   var shouldInvalidateSystemStore: scala.Boolean
 }
 
+object ProjectMessage {
+  @scala.inline
+  def apply(
+    project: ProjectInfo,
+    projectChangeType: ProjectChangeType,
+    shouldInvalidateSystemStore: scala.Boolean
+  ): ProjectMessage = {
+    val __obj = js.Dynamic.literal(project = project, projectChangeType = projectChangeType, shouldInvalidateSystemStore = shouldInvalidateSystemStore)
+  
+    __obj.asInstanceOf[ProjectMessage]
+  }
+}
+

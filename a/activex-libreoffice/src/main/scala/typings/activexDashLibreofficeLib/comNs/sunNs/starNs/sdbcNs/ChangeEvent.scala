@@ -17,3 +17,16 @@ trait ChangeEvent
   var Rows: scala.Double
 }
 
+object ChangeEvent {
+  @scala.inline
+  def apply(
+    Action: scala.Double,
+    Rows: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ChangeEvent = {
+    val __obj = js.Dynamic.literal(Action = Action, Rows = Rows, Source = Source)
+  
+    __obj.asInstanceOf[ChangeEvent]
+  }
+}
+

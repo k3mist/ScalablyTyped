@@ -439,7 +439,7 @@ object solidityDashParserDashAntlrLibStrings {
     extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `^`
+  sealed trait `_backtick^_backtick`
     extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
@@ -677,7 +677,7 @@ object solidityDashParserDashAntlrLibStrings {
   @scala.inline
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline

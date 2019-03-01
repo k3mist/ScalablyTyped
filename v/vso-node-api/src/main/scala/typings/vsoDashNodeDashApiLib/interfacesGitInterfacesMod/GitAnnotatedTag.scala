@@ -29,3 +29,19 @@ trait GitAnnotatedTag extends js.Object {
   var url: java.lang.String
 }
 
+object GitAnnotatedTag {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: java.lang.String,
+    objectId: java.lang.String,
+    taggedBy: GitUserDate,
+    taggedObject: GitObject,
+    url: java.lang.String
+  ): GitAnnotatedTag = {
+    val __obj = js.Dynamic.literal(message = message, name = name, objectId = objectId, taggedBy = taggedBy, taggedObject = taggedObject, url = url)
+  
+    __obj.asInstanceOf[GitAnnotatedTag]
+  }
+}
+

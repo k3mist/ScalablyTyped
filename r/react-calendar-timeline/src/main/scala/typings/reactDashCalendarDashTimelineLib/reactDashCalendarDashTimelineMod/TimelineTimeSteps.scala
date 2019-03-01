@@ -14,3 +14,19 @@ trait TimelineTimeSteps extends js.Object {
   var year: scala.Double
 }
 
+object TimelineTimeSteps {
+  @scala.inline
+  def apply(
+    day: scala.Double,
+    hour: scala.Double,
+    minute: scala.Double,
+    month: scala.Double,
+    second: scala.Double,
+    year: scala.Double
+  ): TimelineTimeSteps = {
+    val __obj = js.Dynamic.literal(day = day, hour = hour, minute = minute, month = month, second = second, year = year)
+  
+    __obj.asInstanceOf[TimelineTimeSteps]
+  }
+}
+

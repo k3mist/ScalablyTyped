@@ -99,3 +99,17 @@ trait relationship extends js.Object {
   def createRenderer(params: relationshipCreateRendererParams): arcgisDashJsDashApiLib.IPromise[relationshipRendererResult]
 }
 
+object relationship {
+  @scala.inline
+  def apply(
+    createRenderer: js.Function1[
+      relationshipCreateRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[relationshipRendererResult]
+    ]
+  ): relationship = {
+    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+  
+    __obj.asInstanceOf[relationship]
+  }
+}
+

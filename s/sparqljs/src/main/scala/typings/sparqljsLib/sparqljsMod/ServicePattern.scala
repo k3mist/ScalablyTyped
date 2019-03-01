@@ -13,3 +13,17 @@ import scala.scalajs.js.annotation._
   var type_ServicePattern: sparqljsLib.sparqljsLibStrings.service
 }
 
+object ServicePattern {
+  @scala.inline
+  def apply(
+    name: Term,
+    patterns: js.Array[Pattern],
+    silent: scala.Boolean,
+    `type`: sparqljsLib.sparqljsLibStrings.service
+  ): ServicePattern = {
+    val __obj = js.Dynamic.literal(name = name, patterns = patterns, silent = silent, `type` = `type`)
+  
+    __obj.asInstanceOf[ServicePattern]
+  }
+}
+

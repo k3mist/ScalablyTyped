@@ -27,3 +27,19 @@ trait DynamicDataLayer
   var `type`: java.lang.String
 }
 
+object DynamicDataLayer {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource,
+    fields: js.Array[DynamicDataLayerFields],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): DynamicDataLayer = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSource = dataSource.asInstanceOf[js.Any], fields = fields, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[DynamicDataLayer]
+  }
+}
+

@@ -34,3 +34,24 @@ trait XCellCursor extends XCellRange {
   def gotoStart(): scala.Unit
 }
 
+object XCellCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCellByPosition: js.Function2[scala.Double, scala.Double, XCell],
+    getCellRangeByName: js.Function1[java.lang.String, XCellRange],
+    getCellRangeByPosition: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XCellRange],
+    gotoEnd: js.Function0[scala.Unit],
+    gotoNext: js.Function0[scala.Unit],
+    gotoOffset: js.Function2[scala.Double, scala.Double, scala.Unit],
+    gotoPrevious: js.Function0[scala.Unit],
+    gotoStart: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellCursor = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, gotoEnd = gotoEnd, gotoNext = gotoNext, gotoOffset = gotoOffset, gotoPrevious = gotoPrevious, gotoStart = gotoStart, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCellCursor]
+  }
+}
+

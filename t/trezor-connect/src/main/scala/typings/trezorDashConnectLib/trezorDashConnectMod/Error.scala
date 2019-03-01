@@ -11,3 +11,15 @@ trait Error
   var success: trezorDashConnectLib.trezorDashConnectLibNumbers.`false`
 }
 
+object Error {
+  @scala.inline
+  def apply(
+    payload: trezorDashConnectLib.Anon_Error,
+    success: trezorDashConnectLib.trezorDashConnectLibNumbers.`false`
+  ): Error = {
+    val __obj = js.Dynamic.literal(payload = payload, success = success)
+  
+    __obj.asInstanceOf[Error]
+  }
+}
+

@@ -14,3 +14,12 @@ trait TableRange extends js.Object {
   var row_span: scala.Double
 }
 
+object TableRange {
+  @scala.inline
+  def apply(column_span: scala.Double, location: TableCellLocation, row_span: scala.Double): TableRange = {
+    val __obj = js.Dynamic.literal(column_span = column_span, location = location, row_span = row_span)
+  
+    __obj.asInstanceOf[TableRange]
+  }
+}
+

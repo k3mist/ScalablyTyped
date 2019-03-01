@@ -40,3 +40,24 @@ trait MarkerChanged extends js.Object {
   var wasValid: scala.Boolean
 }
 
+object MarkerChanged {
+  @scala.inline
+  def apply(
+    hadTail: scala.Boolean,
+    hasTail: scala.Boolean,
+    isValid: scala.Boolean,
+    newHeadPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newProperties: js.Object,
+    newTailPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldHeadPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldProperties: js.Object,
+    oldTailPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    textChanged: scala.Boolean,
+    wasValid: scala.Boolean
+  ): MarkerChanged = {
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadPosition = newHeadPosition, newProperties = newProperties, newTailPosition = newTailPosition, oldHeadPosition = oldHeadPosition, oldProperties = oldProperties, oldTailPosition = oldTailPosition, textChanged = textChanged, wasValid = wasValid)
+  
+    __obj.asInstanceOf[MarkerChanged]
+  }
+}
+

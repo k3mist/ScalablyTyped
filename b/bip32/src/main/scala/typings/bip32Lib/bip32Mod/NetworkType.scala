@@ -11,3 +11,12 @@ trait NetworkType extends js.Object {
   var wif: scala.Double
 }
 
+object NetworkType {
+  @scala.inline
+  def apply(bip32: bip32Lib.Anon_Private, wif: scala.Double): NetworkType = {
+    val __obj = js.Dynamic.literal(bip32 = bip32, wif = wif)
+  
+    __obj.asInstanceOf[NetworkType]
+  }
+}
+

@@ -16,3 +16,12 @@ trait DashboardExportPageLayoutStatic extends js.Object {
   var Portrait: java.lang.String
 }
 
+object DashboardExportPageLayoutStatic {
+  @scala.inline
+  def apply(Landscape: java.lang.String, Portrait: java.lang.String): DashboardExportPageLayoutStatic = {
+    val __obj = js.Dynamic.literal(Landscape = Landscape, Portrait = Portrait)
+  
+    __obj.asInstanceOf[DashboardExportPageLayoutStatic]
+  }
+}
+

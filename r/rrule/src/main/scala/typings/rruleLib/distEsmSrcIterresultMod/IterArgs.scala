@@ -13,3 +13,18 @@ trait IterArgs extends js.Object {
   var inc: scala.Boolean
 }
 
+object IterArgs {
+  @scala.inline
+  def apply(
+    after: stdLib.Date,
+    before: stdLib.Date,
+    dt: stdLib.Date,
+    inc: scala.Boolean,
+    _value: stdLib.Date | js.Array[stdLib.Date] = null
+  ): IterArgs = {
+    val __obj = js.Dynamic.literal(after = after, before = before, dt = dt, inc = inc)
+    if (_value != null) __obj.updateDynamic("_value")(_value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IterArgs]
+  }
+}
+

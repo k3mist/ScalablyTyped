@@ -14,3 +14,19 @@ trait EditorOptions extends js.Object {
   var TabSize: scala.Double
 }
 
+object EditorOptions {
+  @scala.inline
+  def apply(
+    ConvertTabsToSpaces: scala.Boolean,
+    IndentSize: scala.Double,
+    IndentStyle: IndentStyle,
+    NewLineCharacter: java.lang.String,
+    TabSize: scala.Double,
+    BaseIndentSize: scala.Int | scala.Double = null
+  ): EditorOptions = {
+    val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces, IndentSize = IndentSize, IndentStyle = IndentStyle, NewLineCharacter = NewLineCharacter, TabSize = TabSize)
+    if (BaseIndentSize != null) __obj.updateDynamic("BaseIndentSize")(BaseIndentSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditorOptions]
+  }
+}
+

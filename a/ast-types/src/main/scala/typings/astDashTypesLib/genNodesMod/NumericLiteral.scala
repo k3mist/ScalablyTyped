@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var value: scala.Double
 }
 
+object NumericLiteral {
+  @scala.inline
+  def apply(
+    extra: astDashTypesLib.Anon_Raw,
+    `type`: astDashTypesLib.astDashTypesLibStrings.NumericLiteral,
+    value: scala.Double,
+    raw: java.lang.String = null
+  ): NumericLiteral = {
+    val __obj = js.Dynamic.literal(extra = extra, `type` = `type`, value = value)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[NumericLiteral]
+  }
+}
+

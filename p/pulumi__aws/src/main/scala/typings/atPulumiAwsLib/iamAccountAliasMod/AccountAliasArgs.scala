@@ -12,3 +12,12 @@ trait AccountAliasArgs extends js.Object {
   val accountAlias: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object AccountAliasArgs {
+  @scala.inline
+  def apply(accountAlias: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): AccountAliasArgs = {
+    val __obj = js.Dynamic.literal(accountAlias = accountAlias.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AccountAliasArgs]
+  }
+}
+

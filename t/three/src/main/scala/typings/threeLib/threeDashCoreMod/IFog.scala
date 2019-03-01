@@ -11,3 +11,12 @@ trait IFog extends js.Object {
   def toJSON(): js.Any
 }
 
+object IFog {
+  @scala.inline
+  def apply(clone: js.Function0[IFog], color: Color, name: java.lang.String, toJSON: js.Function0[js.Any]): IFog = {
+    val __obj = js.Dynamic.literal(clone = clone, color = color, name = name, toJSON = toJSON)
+  
+    __obj.asInstanceOf[IFog]
+  }
+}
+

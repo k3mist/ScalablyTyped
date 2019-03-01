@@ -15,3 +15,19 @@ trait Table
   var `type`: markedLib.markedLibStrings.table
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    align: js.Array[
+      markedLib.markedLibStrings.center | markedLib.markedLibStrings.left | markedLib.markedLibStrings.right | scala.Null
+    ],
+    cells: js.Array[js.Array[java.lang.String]],
+    header: js.Array[java.lang.String],
+    `type`: markedLib.markedLibStrings.table
+  ): Table = {
+    val __obj = js.Dynamic.literal(align = align, cells = cells, header = header, `type` = `type`)
+  
+    __obj.asInstanceOf[Table]
+  }
+}
+

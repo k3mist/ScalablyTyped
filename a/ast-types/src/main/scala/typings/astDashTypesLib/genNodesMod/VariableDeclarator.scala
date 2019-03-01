@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclarator
 }
 
+object VariableDeclarator {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.PatternKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclarator,
+    init: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): VariableDeclarator = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+    if (init != null) __obj.updateDynamic("init")(init)
+    __obj.asInstanceOf[VariableDeclarator]
+  }
+}
+

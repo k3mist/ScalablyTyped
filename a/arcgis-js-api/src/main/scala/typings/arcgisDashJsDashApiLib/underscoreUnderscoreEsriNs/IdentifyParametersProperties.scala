@@ -129,3 +129,44 @@ trait IdentifyParametersProperties extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IdentifyParametersProperties {
+  @scala.inline
+  def apply(
+    dpi: scala.Int | scala.Double = null,
+    geometry: GeometryProperties = null,
+    geometryPrecision: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    layerIds: js.Array[scala.Double] = null,
+    layerOption: java.lang.String = null,
+    mapExtent: ExtentProperties = null,
+    maxAllowableOffset: scala.Int | scala.Double = null,
+    returnFieldName: js.UndefOr[scala.Boolean] = js.undefined,
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    returnM: js.UndefOr[scala.Boolean] = js.undefined,
+    returnUnformattedValues: js.UndefOr[scala.Boolean] = js.undefined,
+    returnZ: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialReference: SpatialReferenceProperties = null,
+    tolerance: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): IdentifyParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
+    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption)
+    if (mapExtent != null) __obj.updateDynamic("mapExtent")(mapExtent)
+    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFieldName)) __obj.updateDynamic("returnFieldName")(returnFieldName)
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM)
+    if (!js.isUndefined(returnUnformattedValues)) __obj.updateDynamic("returnUnformattedValues")(returnUnformattedValues)
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentifyParametersProperties]
+  }
+}
+

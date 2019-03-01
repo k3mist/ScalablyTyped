@@ -56,3 +56,25 @@ trait TestConfiguration extends js.Object {
   var values: js.Array[NameValuePair]
 }
 
+object TestConfiguration {
+  @scala.inline
+  def apply(
+    area: ShallowReference,
+    description: java.lang.String,
+    id: scala.Double,
+    isDefault: scala.Boolean,
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    name: java.lang.String,
+    project: ShallowReference,
+    revision: scala.Double,
+    state: TestConfigurationState,
+    url: java.lang.String,
+    values: js.Array[NameValuePair]
+  ): TestConfiguration = {
+    val __obj = js.Dynamic.literal(area = area, description = description, id = id, isDefault = isDefault, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, name = name, project = project, revision = revision, state = state, url = url, values = values)
+  
+    __obj.asInstanceOf[TestConfiguration]
+  }
+}
+

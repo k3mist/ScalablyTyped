@@ -12,3 +12,17 @@ trait IShortcutMappingInfo extends js.Object {
   var ObjectTypeSemanticAliases: ISemanticAliases
 }
 
+object IShortcutMappingInfo {
+  @scala.inline
+  def apply(
+    ObjectTypeGUID: java.lang.String,
+    ObjectTypeID: scala.Double,
+    ObjectTypeName: java.lang.String,
+    ObjectTypeSemanticAliases: ISemanticAliases
+  ): IShortcutMappingInfo = {
+    val __obj = js.Dynamic.literal(ObjectTypeGUID = ObjectTypeGUID, ObjectTypeID = ObjectTypeID, ObjectTypeName = ObjectTypeName, ObjectTypeSemanticAliases = ObjectTypeSemanticAliases)
+  
+    __obj.asInstanceOf[IShortcutMappingInfo]
+  }
+}
+

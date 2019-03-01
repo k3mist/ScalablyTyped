@@ -16,3 +16,21 @@ trait IMobileBroadbandAccountWatcher extends js.Object {
   def stop(): scala.Unit
 }
 
+object IMobileBroadbandAccountWatcher {
+  @scala.inline
+  def apply(
+    onaccountadded: js.Any,
+    onaccountremoved: js.Any,
+    onaccountupdated: js.Any,
+    onenumerationcompleted: js.Any,
+    onstopped: js.Any,
+    start: js.Function0[scala.Unit],
+    status: MobileBroadbandAccountWatcherStatus,
+    stop: js.Function0[scala.Unit]
+  ): IMobileBroadbandAccountWatcher = {
+    val __obj = js.Dynamic.literal(onaccountadded = onaccountadded, onaccountremoved = onaccountremoved, onaccountupdated = onaccountupdated, onenumerationcompleted = onenumerationcompleted, onstopped = onstopped, start = start, status = status, stop = stop)
+  
+    __obj.asInstanceOf[IMobileBroadbandAccountWatcher]
+  }
+}
+

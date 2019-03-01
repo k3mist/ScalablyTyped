@@ -13,3 +13,18 @@ trait RequestLog extends js.Object {
   var timestamp: scala.Double
 }
 
+object RequestLog {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    data: java.lang.String | js.Object,
+    request: java.lang.String,
+    tags: js.Array[java.lang.String],
+    timestamp: scala.Double
+  ): RequestLog = {
+    val __obj = js.Dynamic.literal(channel = channel, data = data.asInstanceOf[js.Any], request = request, tags = tags, timestamp = timestamp)
+  
+    __obj.asInstanceOf[RequestLog]
+  }
+}
+

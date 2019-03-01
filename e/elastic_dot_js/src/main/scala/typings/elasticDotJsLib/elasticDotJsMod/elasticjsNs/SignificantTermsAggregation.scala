@@ -75,3 +75,25 @@ trait SignificantTermsAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object SignificantTermsAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, SignificantTermsAggregation],
+    aggregation: js.Function1[Aggregation, SignificantTermsAggregation],
+    exclude: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
+    executionHint: js.Function1[java.lang.String, SignificantTermsAggregation],
+    field: js.Function1[java.lang.String, SignificantTermsAggregation],
+    format: js.Function1[java.lang.String, SignificantTermsAggregation],
+    include: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
+    minDocCount: js.Function1[scala.Double, SignificantTermsAggregation],
+    shardSize: js.Function1[scala.Double, SignificantTermsAggregation],
+    size: js.Function1[scala.Double, SignificantTermsAggregation],
+    toJSON: js.Function0[js.Any]
+  ): SignificantTermsAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, exclude = exclude, executionHint = executionHint, field = field, format = format, include = include, minDocCount = minDocCount, shardSize = shardSize, size = size, toJSON = toJSON)
+  
+    __obj.asInstanceOf[SignificantTermsAggregation]
+  }
+}
+

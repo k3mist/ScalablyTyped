@@ -25,3 +25,17 @@ trait SpanMultiTermQuery extends Query {
   def toJSON(): js.Any
 }
 
+object SpanMultiTermQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, SpanMultiTermQuery],
+    `match`: js.Function1[js.Object, SpanMultiTermQuery],
+    toJSON: js.Function0[js.Any]
+  ): SpanMultiTermQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, `match` = `match`, toJSON = toJSON)
+  
+    __obj.asInstanceOf[SpanMultiTermQuery]
+  }
+}
+

@@ -111,3 +111,25 @@ trait TextStyle extends js.Object {
   var weighted_font_family: TextStyleWeightedFontFamily
 }
 
+object TextStyle {
+  @scala.inline
+  def apply(
+    background_color: OptionalColor,
+    baseline_offset: TextStyleBaselineOffset,
+    bold: scala.Boolean,
+    font_family: java.lang.String,
+    font_size: Dimension,
+    foreground_color: OptionalColor,
+    italic: scala.Boolean,
+    link: Link,
+    small_caps: scala.Boolean,
+    strikethrough: scala.Boolean,
+    underline: scala.Boolean,
+    weighted_font_family: TextStyleWeightedFontFamily
+  ): TextStyle = {
+    val __obj = js.Dynamic.literal(background_color = background_color, baseline_offset = baseline_offset, bold = bold, font_family = font_family, font_size = font_size, foreground_color = foreground_color, italic = italic, link = link, small_caps = small_caps, strikethrough = strikethrough, underline = underline, weighted_font_family = weighted_font_family)
+  
+    __obj.asInstanceOf[TextStyle]
+  }
+}
+

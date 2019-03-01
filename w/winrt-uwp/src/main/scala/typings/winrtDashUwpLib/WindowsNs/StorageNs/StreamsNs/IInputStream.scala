@@ -18,3 +18,20 @@ trait IInputStream
   def readAsync(buffer: IBuffer, count: scala.Double, options: InputStreamOptions): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[IBuffer, scala.Double]
 }
 
+object IInputStream {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    readAsync: js.Function3[
+      IBuffer, 
+      scala.Double, 
+      InputStreamOptions, 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[IBuffer, scala.Double]
+    ]
+  ): IInputStream = {
+    val __obj = js.Dynamic.literal(close = close, readAsync = readAsync)
+  
+    __obj.asInstanceOf[IInputStream]
+  }
+}
+

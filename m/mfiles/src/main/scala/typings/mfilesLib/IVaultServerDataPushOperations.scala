@@ -14,3 +14,19 @@ trait IVaultServerDataPushOperations extends js.Object {
   def SetServerDataPushSink(ServerDataPushSink: IServerDataPushSink): scala.Unit
 }
 
+object IVaultServerDataPushOperations {
+  @scala.inline
+  def apply(
+    CloneVaultForServerDataPush: js.Function1[IServerDataPushSink, IVault],
+    SendCancel: js.Function1[scala.Double, scala.Unit],
+    SendError: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    SendHeartbeat: js.Function1[scala.Double, scala.Unit],
+    SendResponse: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    SetServerDataPushSink: js.Function1[IServerDataPushSink, scala.Unit]
+  ): IVaultServerDataPushOperations = {
+    val __obj = js.Dynamic.literal(CloneVaultForServerDataPush = CloneVaultForServerDataPush, SendCancel = SendCancel, SendError = SendError, SendHeartbeat = SendHeartbeat, SendResponse = SendResponse, SetServerDataPushSink = SetServerDataPushSink)
+  
+    __obj.asInstanceOf[IVaultServerDataPushOperations]
+  }
+}
+

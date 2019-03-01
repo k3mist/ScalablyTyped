@@ -11,3 +11,16 @@ trait Anon_Data extends js.Object {
   var styles: js.Array[java.lang.String | js.Array[_]]
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Array[_]],
+    encapsulation: atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation,
+    styles: js.Array[java.lang.String | js.Array[_]]
+  ): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, encapsulation = encapsulation, styles = styles)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

@@ -39,3 +39,20 @@ trait Symbol extends js.Object {
   var Style: SymbolStyle
 }
 
+object Symbol {
+  @scala.inline
+  def apply(
+    BorderColor: scala.Double,
+    FillColor: scala.Double,
+    Graphic: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    PolygonCoords: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.PolyPolygonBezierCoords,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    StandardSymbol: scala.Double,
+    Style: SymbolStyle
+  ): Symbol = {
+    val __obj = js.Dynamic.literal(BorderColor = BorderColor, FillColor = FillColor, Graphic = Graphic, PolygonCoords = PolygonCoords, Size = Size, StandardSymbol = StandardSymbol, Style = Style)
+  
+    __obj.asInstanceOf[Symbol]
+  }
+}
+

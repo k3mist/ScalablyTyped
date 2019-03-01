@@ -24,3 +24,12 @@ trait CreateSubscriberRequest extends js.Object {
   var Subscriber: Subscriber
 }
 
+object CreateSubscriberRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification, Subscriber: Subscriber): CreateSubscriberRequest = {
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, Notification = Notification, Subscriber = Subscriber)
+  
+    __obj.asInstanceOf[CreateSubscriberRequest]
+  }
+}
+

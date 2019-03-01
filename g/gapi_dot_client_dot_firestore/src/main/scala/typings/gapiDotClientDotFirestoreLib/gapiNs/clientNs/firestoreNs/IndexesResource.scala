@@ -30,3 +30,29 @@ trait IndexesResource extends js.Object {
   def list(request: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
 }
 
+object IndexesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Index]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
+    ]
+  ): IndexesResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[IndexesResource]
+  }
+}
+

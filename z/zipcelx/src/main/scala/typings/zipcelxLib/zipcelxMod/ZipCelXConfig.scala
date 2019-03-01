@@ -16,3 +16,12 @@ trait ZipCelXConfig extends js.Object {
   var sheet: ZipCelXSheet
 }
 
+object ZipCelXConfig {
+  @scala.inline
+  def apply(filename: java.lang.String, sheet: ZipCelXSheet): ZipCelXConfig = {
+    val __obj = js.Dynamic.literal(filename = filename, sheet = sheet)
+  
+    __obj.asInstanceOf[ZipCelXConfig]
+  }
+}
+

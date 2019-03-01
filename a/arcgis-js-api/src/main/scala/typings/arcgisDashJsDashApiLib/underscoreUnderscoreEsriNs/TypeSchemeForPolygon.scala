@@ -34,3 +34,20 @@ trait TypeSchemeForPolygon
   var outline: TypeSchemeForPolygonOutline
 }
 
+object TypeSchemeForPolygon {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: TypeSchemeForPolygonOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): TypeSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[TypeSchemeForPolygon]
+  }
+}
+

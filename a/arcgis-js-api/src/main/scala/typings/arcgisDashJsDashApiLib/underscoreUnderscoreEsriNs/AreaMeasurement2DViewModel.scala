@@ -91,3 +91,24 @@ trait AreaMeasurement2DViewModel extends js.Object {
   def newMeasurement(): scala.Unit
 }
 
+object AreaMeasurement2DViewModel {
+  @scala.inline
+  def apply(
+    clearMeasurement: js.Function0[scala.Unit],
+    geodesicDistanceThreshold: scala.Double,
+    measurement: AreaMeasurement2DViewModelMeasurement,
+    measurementLabel: AreaMeasurement2DViewModelMeasurementLabel,
+    mode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.auto | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.planar | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.geodesic,
+    modes: js.Array[java.lang.String],
+    newMeasurement: js.Function0[scala.Unit],
+    state: java.lang.String,
+    unit: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.metric | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.imperial | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-inches` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-us-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-yards` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-meters` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-kilometers` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.acres | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.ares | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hectares,
+    unitOptions: js.Array[java.lang.String],
+    view: MapView
+  ): AreaMeasurement2DViewModel = {
+    val __obj = js.Dynamic.literal(clearMeasurement = clearMeasurement, geodesicDistanceThreshold = geodesicDistanceThreshold, measurement = measurement, measurementLabel = measurementLabel, mode = mode.asInstanceOf[js.Any], modes = modes, newMeasurement = newMeasurement, state = state, unit = unit.asInstanceOf[js.Any], unitOptions = unitOptions, view = view)
+  
+    __obj.asInstanceOf[AreaMeasurement2DViewModel]
+  }
+}
+

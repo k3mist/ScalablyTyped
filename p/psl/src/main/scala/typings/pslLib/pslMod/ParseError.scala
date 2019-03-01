@@ -10,3 +10,12 @@ trait ParseError extends js.Object {
   var input: java.lang.String
 }
 
+object ParseError {
+  @scala.inline
+  def apply(error: pslLib.Anon_Code, input: java.lang.String): ParseError = {
+    val __obj = js.Dynamic.literal(error = error, input = input)
+  
+    __obj.asInstanceOf[ParseError]
+  }
+}
+

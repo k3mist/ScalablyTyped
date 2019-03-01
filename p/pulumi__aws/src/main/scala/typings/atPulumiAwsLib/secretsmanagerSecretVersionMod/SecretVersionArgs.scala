@@ -26,3 +26,19 @@ trait SecretVersionArgs extends js.Object {
   ] = js.undefined
 }
 
+object SecretVersionArgs {
+  @scala.inline
+  def apply(
+    secretId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    secretBinary: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    secretString: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    versionStages: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): SecretVersionArgs = {
+    val __obj = js.Dynamic.literal(secretId = secretId.asInstanceOf[js.Any])
+    if (secretBinary != null) __obj.updateDynamic("secretBinary")(secretBinary.asInstanceOf[js.Any])
+    if (secretString != null) __obj.updateDynamic("secretString")(secretString.asInstanceOf[js.Any])
+    if (versionStages != null) __obj.updateDynamic("versionStages")(versionStages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecretVersionArgs]
+  }
+}
+

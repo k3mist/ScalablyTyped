@@ -15,3 +15,20 @@ trait XMLHttpRequestEventTargetEventMap extends js.Object {
   var timeout: reactLib.Event
 }
 
+object XMLHttpRequestEventTargetEventMap {
+  @scala.inline
+  def apply(
+    abort: reactLib.Event,
+    error: reactLib.Event,
+    load: reactLib.Event,
+    loadend: reactLib.Event,
+    loadstart: reactLib.Event,
+    progress: reactLib.Event,
+    timeout: reactLib.Event
+  ): XMLHttpRequestEventTargetEventMap = {
+    val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress, timeout = timeout)
+  
+    __obj.asInstanceOf[XMLHttpRequestEventTargetEventMap]
+  }
+}
+

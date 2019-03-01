@@ -12,3 +12,12 @@ trait ModeEvent extends js.Object {
   var target: java.lang.String
 }
 
+object ModeEvent {
+  @scala.inline
+  def apply(client: java.lang.String, mode: java.lang.String, nick: java.lang.String, target: java.lang.String): ModeEvent = {
+    val __obj = js.Dynamic.literal(client = client, mode = mode, nick = nick, target = target)
+  
+    __obj.asInstanceOf[ModeEvent]
+  }
+}
+

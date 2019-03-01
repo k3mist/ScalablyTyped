@@ -22,3 +22,19 @@ trait XMeaning
   def querySynonyms(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XMeaning {
+  @scala.inline
+  def apply(
+    Meaning: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getMeaning: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    querySynonyms: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    release: js.Function0[scala.Unit]
+  ): XMeaning = {
+    val __obj = js.Dynamic.literal(Meaning = Meaning, acquire = acquire, getMeaning = getMeaning, queryInterface = queryInterface, querySynonyms = querySynonyms, release = release)
+  
+    __obj.asInstanceOf[XMeaning]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ojOptgroupSettableProperties
   var label: java.lang.String
 }
 
+object ojOptgroupSettableProperties {
+  @scala.inline
+  def apply(disabled: scala.Boolean, label: java.lang.String): ojOptgroupSettableProperties = {
+    val __obj = js.Dynamic.literal(disabled = disabled, label = label)
+  
+    __obj.asInstanceOf[ojOptgroupSettableProperties]
+  }
+}
+

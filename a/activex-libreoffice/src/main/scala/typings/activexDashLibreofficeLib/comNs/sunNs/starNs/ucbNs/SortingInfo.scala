@@ -13,3 +13,12 @@ trait SortingInfo extends js.Object {
   var PropertyName: java.lang.String
 }
 
+object SortingInfo {
+  @scala.inline
+  def apply(Ascending: scala.Boolean, PropertyName: java.lang.String): SortingInfo = {
+    val __obj = js.Dynamic.literal(Ascending = Ascending, PropertyName = PropertyName)
+  
+    __obj.asInstanceOf[SortingInfo]
+  }
+}
+

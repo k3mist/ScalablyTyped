@@ -11,3 +11,12 @@ trait ControlOptions extends js.Object {
   var enabled: scala.Boolean
 }
 
+object ControlOptions {
+  @scala.inline
+  def apply(alwaysRun: scala.Boolean, continueOnError: scala.Boolean, enabled: scala.Boolean): ControlOptions = {
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, continueOnError = continueOnError, enabled = enabled)
+  
+    __obj.asInstanceOf[ControlOptions]
+  }
+}
+

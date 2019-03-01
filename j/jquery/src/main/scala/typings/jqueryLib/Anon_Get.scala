@@ -14,3 +14,12 @@ trait Anon_Get[TElement]
   def get(tween: jqueryLib.JQueryNs.Tween[TElement]): js.Any
 }
 
+object Anon_Get {
+  @scala.inline
+  def apply[TElement](get: js.Function1[jqueryLib.JQueryNs.Tween[TElement], js.Any]): Anon_Get[TElement] = {
+    val __obj = js.Dynamic.literal(get = get)
+  
+    __obj.asInstanceOf[Anon_Get[TElement]]
+  }
+}
+

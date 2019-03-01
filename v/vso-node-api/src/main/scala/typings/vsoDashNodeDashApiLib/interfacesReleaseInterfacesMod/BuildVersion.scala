@@ -19,3 +19,21 @@ trait BuildVersion extends js.Object {
   var sourceVersion: java.lang.String
 }
 
+object BuildVersion {
+  @scala.inline
+  def apply(
+    commitMessage: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    sourceBranch: java.lang.String,
+    sourcePullRequestId: java.lang.String,
+    sourceRepositoryId: java.lang.String,
+    sourceRepositoryType: java.lang.String,
+    sourceVersion: java.lang.String
+  ): BuildVersion = {
+    val __obj = js.Dynamic.literal(commitMessage = commitMessage, id = id, name = name, sourceBranch = sourceBranch, sourcePullRequestId = sourcePullRequestId, sourceRepositoryId = sourceRepositoryId, sourceRepositoryType = sourceRepositoryType, sourceVersion = sourceVersion)
+  
+    __obj.asInstanceOf[BuildVersion]
+  }
+}
+

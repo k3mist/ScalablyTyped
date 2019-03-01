@@ -10,3 +10,12 @@ trait Anon_18 extends js.Object {
   var repair: screepsLib.screepsLibNumbers.`1DOT8`
 }
 
+object Anon_18 {
+  @scala.inline
+  def apply(build: screepsLib.screepsLibNumbers.`1DOT8`, repair: screepsLib.screepsLibNumbers.`1DOT8`): Anon_18 = {
+    val __obj = js.Dynamic.literal(build = build, repair = repair)
+  
+    __obj.asInstanceOf[Anon_18]
+  }
+}
+

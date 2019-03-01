@@ -38,3 +38,20 @@ trait EnvironmentProperties extends js.Object {
   var starsEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EnvironmentProperties {
+  @scala.inline
+  def apply(
+    atmosphereEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    background: BackgroundProperties = null,
+    lighting: LightingProperties = null,
+    starsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): EnvironmentProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (lighting != null) __obj.updateDynamic("lighting")(lighting)
+    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled)
+    __obj.asInstanceOf[EnvironmentProperties]
+  }
+}
+

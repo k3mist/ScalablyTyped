@@ -21,3 +21,18 @@ trait JobTaskQueryMultiLevelSelectedValuesParams
   var user: java.lang.String
 }
 
+object JobTaskQueryMultiLevelSelectedValuesParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskQueryMultiLevelSelectedValuesParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskQueryMultiLevelSelectedValuesParams]
+  }
+}
+

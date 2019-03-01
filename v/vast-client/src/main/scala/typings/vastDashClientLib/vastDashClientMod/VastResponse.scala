@@ -10,3 +10,12 @@ trait VastResponse extends js.Object {
   var errorURLTemplates: js.Array[java.lang.String]
 }
 
+object VastResponse {
+  @scala.inline
+  def apply(ads: js.Array[VastAd], errorURLTemplates: js.Array[java.lang.String]): VastResponse = {
+    val __obj = js.Dynamic.literal(ads = ads, errorURLTemplates = errorURLTemplates)
+  
+    __obj.asInstanceOf[VastResponse]
+  }
+}
+

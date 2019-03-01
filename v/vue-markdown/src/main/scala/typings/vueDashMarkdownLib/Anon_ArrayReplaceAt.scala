@@ -24,3 +24,29 @@ trait Anon_ArrayReplaceAt extends js.Object {
   var unescapeMd: js.Any
 }
 
+object Anon_ArrayReplaceAt {
+  @scala.inline
+  def apply(
+    arrayReplaceAt: js.Any,
+    assign: js.Any,
+    escapeHtml: js.Any,
+    escapeRE: js.Any,
+    fromCodePoint: js.Any,
+    has: js.Any,
+    isMdAsciiPunct: js.Any,
+    isPunctChar: js.Any,
+    isSpace: js.Any,
+    isString: js.Any,
+    isValidEntityCode: js.Any,
+    isWhiteSpace: js.Any,
+    lib: Anon_Mdurl,
+    normalizeReference: js.Any,
+    unescapeAll: js.Any,
+    unescapeMd: js.Any
+  ): Anon_ArrayReplaceAt = {
+    val __obj = js.Dynamic.literal(arrayReplaceAt = arrayReplaceAt, assign = assign, escapeHtml = escapeHtml, escapeRE = escapeRE, fromCodePoint = fromCodePoint, has = has, isMdAsciiPunct = isMdAsciiPunct, isPunctChar = isPunctChar, isSpace = isSpace, isString = isString, isValidEntityCode = isValidEntityCode, isWhiteSpace = isWhiteSpace, lib = lib, normalizeReference = normalizeReference, unescapeAll = unescapeAll, unescapeMd = unescapeMd)
+  
+    __obj.asInstanceOf[Anon_ArrayReplaceAt]
+  }
+}
+

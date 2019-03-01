@@ -14,3 +14,19 @@ trait ShadowMap extends js.Object {
   var softShadows: scala.Boolean
 }
 
+object ShadowMap {
+  @scala.inline
+  def apply(
+    darkness: scala.Double,
+    enabled: scala.Boolean,
+    maximumDistance: scala.Double,
+    normalOffset: scala.Boolean,
+    size: scala.Double,
+    softShadows: scala.Boolean
+  ): ShadowMap = {
+    val __obj = js.Dynamic.literal(darkness = darkness, enabled = enabled, maximumDistance = maximumDistance, normalOffset = normalOffset, size = size, softShadows = softShadows)
+  
+    __obj.asInstanceOf[ShadowMap]
+  }
+}
+

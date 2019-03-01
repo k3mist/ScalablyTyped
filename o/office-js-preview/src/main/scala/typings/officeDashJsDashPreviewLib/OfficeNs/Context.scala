@@ -214,3 +214,27 @@ trait Context extends js.Object {
   var ui: UI
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    commerceAllowed: scala.Boolean,
+    contentLanguage: java.lang.String,
+    diagnostics: ContextInformation,
+    displayLanguage: java.lang.String,
+    document: Document,
+    host: HostType,
+    license: java.lang.String,
+    mailbox: Mailbox,
+    officeTheme: OfficeTheme,
+    platform: PlatformType,
+    requirements: RequirementSetSupport,
+    roamingSettings: RoamingSettings,
+    touchEnabled: scala.Boolean,
+    ui: UI
+  ): Context = {
+    val __obj = js.Dynamic.literal(commerceAllowed = commerceAllowed, contentLanguage = contentLanguage, diagnostics = diagnostics, displayLanguage = displayLanguage, document = document, host = host, license = license, mailbox = mailbox, officeTheme = officeTheme, platform = platform, requirements = requirements, roamingSettings = roamingSettings, touchEnabled = touchEnabled, ui = ui)
+  
+    __obj.asInstanceOf[Context]
+  }
+}
+

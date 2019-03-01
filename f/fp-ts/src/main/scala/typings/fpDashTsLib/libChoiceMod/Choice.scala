@@ -11,3 +11,41 @@ trait Choice[F]
   def right[A, B, C](pbc: fpDashTsLib.libHKTMod.HKT2[F, B, C]): fpDashTsLib.libHKTMod.HKT2[F, fpDashTsLib.libEitherMod.Either[A, B], fpDashTsLib.libEitherMod.Either[A, C]]
 }
 
+object Choice {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    left: js.Function1[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[
+        F, 
+        fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
+        fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
+      ]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
+    ],
+    promap: js.Function3[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
+    ],
+    right: js.Function1[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[
+        F, 
+        fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
+        fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
+      ]
+    ]
+  ): Choice[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], left = left, map = map, promap = promap, right = right)
+  
+    __obj.asInstanceOf[Choice[F]]
+  }
+}
+

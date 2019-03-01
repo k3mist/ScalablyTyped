@@ -12,3 +12,12 @@ trait FaceRectangle extends js.Object {
   var width: scala.Double
 }
 
+object FaceRectangle {
+  @scala.inline
+  def apply(height: scala.Double, left: scala.Double, top: scala.Double, width: scala.Double): FaceRectangle = {
+    val __obj = js.Dynamic.literal(height = height, left = left, top = top, width = width)
+  
+    __obj.asInstanceOf[FaceRectangle]
+  }
+}
+

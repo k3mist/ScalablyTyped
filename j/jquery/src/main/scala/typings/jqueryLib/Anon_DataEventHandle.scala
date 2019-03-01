@@ -20,3 +20,19 @@ trait Anon_DataEventHandle[TTarget, TData]
   ): scala.Unit
 }
 
+object Anon_DataEventHandle {
+  @scala.inline
+  def apply[TTarget, TData](
+    handle: js.Function3[
+      TTarget, 
+      (jqueryLib.JQueryNs.TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObjHandleObject[TTarget, TData]), 
+      /* repeated */ TData, 
+      scala.Unit
+    ]
+  ): Anon_DataEventHandle[TTarget, TData] = {
+    val __obj = js.Dynamic.literal(handle = handle)
+  
+    __obj.asInstanceOf[Anon_DataEventHandle[TTarget, TData]]
+  }
+}
+

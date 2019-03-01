@@ -31,3 +31,12 @@ trait ASPxClientControlCoordinates extends js.Object {
   var y: scala.Double
 }
 
+object ASPxClientControlCoordinates {
+  @scala.inline
+  def apply(pane: ASPxClientXYDiagramPane, visibility: java.lang.String, x: scala.Double, y: scala.Double): ASPxClientControlCoordinates = {
+    val __obj = js.Dynamic.literal(pane = pane, visibility = visibility, x = x, y = y)
+  
+    __obj.asInstanceOf[ASPxClientControlCoordinates]
+  }
+}
+

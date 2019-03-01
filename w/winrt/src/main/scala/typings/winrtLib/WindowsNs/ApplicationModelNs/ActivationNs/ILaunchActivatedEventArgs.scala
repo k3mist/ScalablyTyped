@@ -10,3 +10,18 @@ trait ILaunchActivatedEventArgs extends IActivatedEventArgs {
   var tileId: java.lang.String
 }
 
+object ILaunchActivatedEventArgs {
+  @scala.inline
+  def apply(
+    arguments: java.lang.String,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    tileId: java.lang.String
+  ): ILaunchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(arguments = arguments, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen, tileId = tileId)
+  
+    __obj.asInstanceOf[ILaunchActivatedEventArgs]
+  }
+}
+

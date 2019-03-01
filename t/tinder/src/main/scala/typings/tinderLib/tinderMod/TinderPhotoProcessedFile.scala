@@ -11,3 +11,12 @@ trait TinderPhotoProcessedFile extends js.Object {
   var width: scala.Double
 }
 
+object TinderPhotoProcessedFile {
+  @scala.inline
+  def apply(height: scala.Double, url: java.lang.String, width: scala.Double): TinderPhotoProcessedFile = {
+    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+  
+    __obj.asInstanceOf[TinderPhotoProcessedFile]
+  }
+}
+

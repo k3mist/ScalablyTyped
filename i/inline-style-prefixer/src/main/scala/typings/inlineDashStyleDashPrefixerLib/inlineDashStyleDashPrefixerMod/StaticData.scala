@@ -10,3 +10,12 @@ trait StaticData extends js.Object {
   var prefixMap: stdLib.Record[java.lang.String, js.Array[java.lang.String]]
 }
 
+object StaticData {
+  @scala.inline
+  def apply(plugins: js.Array[Plugin], prefixMap: stdLib.Record[java.lang.String, js.Array[java.lang.String]]): StaticData = {
+    val __obj = js.Dynamic.literal(plugins = plugins, prefixMap = prefixMap)
+  
+    __obj.asInstanceOf[StaticData]
+  }
+}
+

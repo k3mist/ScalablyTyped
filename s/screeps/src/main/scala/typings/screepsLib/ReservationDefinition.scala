@@ -10,3 +10,12 @@ trait ReservationDefinition extends js.Object {
   var username: java.lang.String
 }
 
+object ReservationDefinition {
+  @scala.inline
+  def apply(ticksToEnd: scala.Double, username: java.lang.String): ReservationDefinition = {
+    val __obj = js.Dynamic.literal(ticksToEnd = ticksToEnd, username = username)
+  
+    __obj.asInstanceOf[ReservationDefinition]
+  }
+}
+

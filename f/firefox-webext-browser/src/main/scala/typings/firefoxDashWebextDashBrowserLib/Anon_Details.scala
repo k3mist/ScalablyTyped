@@ -28,3 +28,20 @@ trait Anon_Details extends js.Object {
   def unregister(): js.Promise[scala.Unit]
 }
 
+object Anon_Details {
+  @scala.inline
+  def apply(
+    onError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
+    onProxyError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
+    onRequest: firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyOnRequestEvent[js.Function1[/* details */ Anon_DocumentUrl, scala.Unit]],
+    register: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    registerProxyScript: js.Function1[java.lang.String, js.Promise[_]],
+    settings: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    unregister: js.Function0[js.Promise[scala.Unit]]
+  ): Anon_Details = {
+    val __obj = js.Dynamic.literal(onError = onError, onProxyError = onProxyError, onRequest = onRequest, register = register, registerProxyScript = registerProxyScript, settings = settings, unregister = unregister)
+  
+    __obj.asInstanceOf[Anon_Details]
+  }
+}
+

@@ -18,3 +18,26 @@ trait Anon_ApiPath[P /* <: swaggerDashToolsLib.swaggerDashToolsMod.SwaggerReques
   var useStubs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ApiPath {
+  @scala.inline
+  def apply[P /* <: swaggerDashToolsLib.swaggerDashToolsMod.SwaggerRequestParameters */](
+    apiPath: java.lang.String,
+    params: P,
+    path: js.Any,
+    security: js.Array[_],
+    swaggerObject: js.Any,
+    swaggerVersion: java.lang.String,
+    operation: swaggerDashToolsLib.swaggerDashToolsMod.Swagger20Operation = null,
+    operationParameters: js.Array[swaggerDashToolsLib.swaggerDashToolsMod.OperationParameter] = null,
+    operationPath: js.Array[java.lang.String] = null,
+    useStubs: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ApiPath[P] = {
+    val __obj = js.Dynamic.literal(apiPath = apiPath, params = params.asInstanceOf[js.Any], path = path, security = security, swaggerObject = swaggerObject, swaggerVersion = swaggerVersion)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (operationParameters != null) __obj.updateDynamic("operationParameters")(operationParameters)
+    if (operationPath != null) __obj.updateDynamic("operationPath")(operationPath)
+    if (!js.isUndefined(useStubs)) __obj.updateDynamic("useStubs")(useStubs)
+    __obj.asInstanceOf[Anon_ApiPath[P]]
+  }
+}
+

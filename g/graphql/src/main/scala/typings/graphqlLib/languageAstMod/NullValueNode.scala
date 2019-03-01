@@ -12,3 +12,12 @@ trait NullValueNode
   val loc: js.UndefOr[Location] = js.undefined
 }
 
+object NullValueNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.NullValue, loc: Location = null): NullValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NullValueNode]
+  }
+}
+

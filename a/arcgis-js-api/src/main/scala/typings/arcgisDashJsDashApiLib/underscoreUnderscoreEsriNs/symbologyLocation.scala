@@ -30,3 +30,15 @@ trait symbologyLocation extends js.Object {
   def getSchemes(params: locationGetSchemesParams): LocationSchemes
 }
 
+object symbologyLocation {
+  @scala.inline
+  def apply(
+    cloneScheme: js.Function1[LocationScheme, LocationScheme],
+    getSchemes: js.Function1[locationGetSchemesParams, LocationSchemes]
+  ): symbologyLocation = {
+    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+  
+    __obj.asInstanceOf[symbologyLocation]
+  }
+}
+

@@ -24,3 +24,35 @@ trait CommandBuilderA4[R, T, U, V, W] extends js.Object {
   def timeout(value: scala.Double): CommandBuilderA4[R, T, U, V, W]
 }
 
+object CommandBuilderA4 {
+  @scala.inline
+  def apply[R, T, U, V, W](
+    build: js.Function0[CommandA4[R, T, U, V, W]],
+    circuitBreakerErrorThresholdPercentage: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    circuitBreakerForceClosed: js.Function1[scala.Boolean, CommandBuilderA4[R, T, U, V, W]],
+    circuitBreakerForceOpened: js.Function1[scala.Boolean, CommandBuilderA4[R, T, U, V, W]],
+    circuitBreakerRequestVolumeThreshold: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    circuitBreakerSleepWindowInMilliseconds: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    context: js.Function1[js.Any, CommandBuilderA4[R, T, U, V, W]],
+    errorHandler: js.Function1[js.Function1[/* error */ js.Any, scala.Boolean], CommandBuilderA4[R, T, U, V, W]],
+    fallbackTo: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* args */ js.Tuple4[T, U, V, W], js.Thenable[R]], 
+      CommandBuilderA4[R, T, U, V, W]
+    ],
+    percentileWindowLength: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    percentileWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    requestVolumeRejectionThreshold: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    run: js.Function1[
+      js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, js.Thenable[R]], 
+      CommandBuilderA4[R, T, U, V, W]
+    ],
+    statisticalWindowLength: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    statisticalWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]],
+    timeout: js.Function1[scala.Double, CommandBuilderA4[R, T, U, V, W]]
+  ): CommandBuilderA4[R, T, U, V, W] = {
+    val __obj = js.Dynamic.literal(build = build, circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, context = context, errorHandler = errorHandler, fallbackTo = fallbackTo, percentileWindowLength = percentileWindowLength, percentileWindowNumberOfBuckets = percentileWindowNumberOfBuckets, requestVolumeRejectionThreshold = requestVolumeRejectionThreshold, run = run, statisticalWindowLength = statisticalWindowLength, statisticalWindowNumberOfBuckets = statisticalWindowNumberOfBuckets, timeout = timeout)
+  
+    __obj.asInstanceOf[CommandBuilderA4[R, T, U, V, W]]
+  }
+}
+

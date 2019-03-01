@@ -15,3 +15,20 @@ trait ScalarTypeDefinitionNode
   val name: NameNode
 }
 
+object ScalarTypeDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.ScalarTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): ScalarTypeDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ScalarTypeDefinitionNode]
+  }
+}
+

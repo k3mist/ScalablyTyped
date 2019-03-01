@@ -55,3 +55,25 @@ trait ProjectsResource extends js.Object {
   def updateBillingInfo(request: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    getBillingInfo: js.Function1[
+      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudbillingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListProjectBillingInfoResponse]
+    ],
+    updateBillingInfo: js.Function1[
+      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(getBillingInfo = getBillingInfo, list = list, updateBillingInfo = updateBillingInfo)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

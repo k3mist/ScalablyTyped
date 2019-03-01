@@ -10,3 +10,12 @@ trait Vote extends js.Object {
   var v: scala.Double
 }
 
+object Vote {
+  @scala.inline
+  def apply(i: scala.Double, v: scala.Double): Vote = {
+    val __obj = js.Dynamic.literal(i = i, v = v)
+  
+    __obj.asInstanceOf[Vote]
+  }
+}
+

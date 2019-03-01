@@ -11,3 +11,12 @@ trait ISyndicationAttribute extends js.Object {
   var value: java.lang.String
 }
 
+object ISyndicationAttribute {
+  @scala.inline
+  def apply(name: java.lang.String, namespace: java.lang.String, value: java.lang.String): ISyndicationAttribute = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, value = value)
+  
+    __obj.asInstanceOf[ISyndicationAttribute]
+  }
+}
+

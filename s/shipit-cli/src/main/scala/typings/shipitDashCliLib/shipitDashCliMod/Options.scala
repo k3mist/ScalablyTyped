@@ -11,3 +11,16 @@ trait Options extends js.Object {
   var stdout: nodeLib.fsMod.WriteStream
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    environment: java.lang.String,
+    stderr: nodeLib.fsMod.WriteStream,
+    stdout: nodeLib.fsMod.WriteStream
+  ): Options = {
+    val __obj = js.Dynamic.literal(environment = environment, stderr = stderr, stdout = stdout)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

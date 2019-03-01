@@ -10,3 +10,12 @@ trait BuildDeployment extends js.Object {
   var sourceBuild: XamlBuildReference
 }
 
+object BuildDeployment {
+  @scala.inline
+  def apply(deployment: BuildSummary, sourceBuild: XamlBuildReference): BuildDeployment = {
+    val __obj = js.Dynamic.literal(deployment = deployment, sourceBuild = sourceBuild)
+  
+    __obj.asInstanceOf[BuildDeployment]
+  }
+}
+

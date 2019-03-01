@@ -35,3 +35,62 @@ import scala.scalajs.js.annotation._
   def removeData(name: java.lang.String): scala.Unit
 }
 
+object FlashItem {
+  @scala.inline
+  def apply(
+    addData: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit],
+    allowSmoothing: scala.Boolean,
+    bitRate: java.lang.String,
+    bitmap: scala.Boolean,
+    bits: java.lang.String,
+    bold: scala.Boolean,
+    compressionType: java.lang.String,
+    convertStereoToMono: scala.Boolean,
+    convertToCompiledClip: js.Function0[scala.Unit],
+    embedRanges: java.lang.String,
+    embedVariantGlyphs: scala.Boolean,
+    embeddedCharacters: java.lang.String,
+    exportSWC: js.Function1[java.lang.String, scala.Unit],
+    exportSWF: js.Function1[java.lang.String, scala.Unit],
+    exportToFLV: js.Function1[java.lang.String, scala.Boolean],
+    exportToFile: js.Function1[java.lang.String, scala.Boolean],
+    fileLastModifiedDate: java.lang.String,
+    font: java.lang.String,
+    getData: js.Function1[java.lang.String, js.Any],
+    hasData: js.Function1[java.lang.String, scala.Boolean],
+    isDefineFont4Symbol: scala.Boolean,
+    italic: scala.Boolean,
+    itemType: java.lang.String,
+    linkageBaseClass: java.lang.String,
+    linkageClassName: java.lang.String,
+    linkageExportForAS: scala.Boolean,
+    linkageExportForRS: scala.Boolean,
+    linkageExportInFirstFrame: scala.Boolean,
+    linkageIdentifier: java.lang.String,
+    linkageImportForRS: scala.Boolean,
+    linkageURL: java.lang.String,
+    name: java.lang.String,
+    originalCompressionType: java.lang.String,
+    quality: java.lang.String,
+    removeData: js.Function1[java.lang.String, scala.Unit],
+    sampleRate: java.lang.String,
+    scalingGrid: scala.Boolean,
+    scalingGridRect: FlashRectangle,
+    size: scala.Double,
+    sourceAutoUpdate: scala.Boolean,
+    sourceFileExists: scala.Boolean,
+    sourceFileIsCurrent: scala.Boolean,
+    sourceFilePath: java.lang.String,
+    sourceLibraryName: java.lang.String,
+    symbolType: java.lang.String,
+    timeline: FlashTimeline,
+    useDeblocking: scala.Boolean,
+    useImportedJPEGQuality: scala.Boolean,
+    videoType: java.lang.String
+  ): FlashItem = {
+    val __obj = js.Dynamic.literal(addData = addData, allowSmoothing = allowSmoothing, bitRate = bitRate, bitmap = bitmap, bits = bits, bold = bold, compressionType = compressionType, convertStereoToMono = convertStereoToMono, convertToCompiledClip = convertToCompiledClip, embedRanges = embedRanges, embedVariantGlyphs = embedVariantGlyphs, embeddedCharacters = embeddedCharacters, exportSWC = exportSWC, exportSWF = exportSWF, exportToFLV = exportToFLV, exportToFile = exportToFile, fileLastModifiedDate = fileLastModifiedDate, font = font, getData = getData, hasData = hasData, isDefineFont4Symbol = isDefineFont4Symbol, italic = italic, itemType = itemType, linkageBaseClass = linkageBaseClass, linkageClassName = linkageClassName, linkageExportForAS = linkageExportForAS, linkageExportForRS = linkageExportForRS, linkageExportInFirstFrame = linkageExportInFirstFrame, linkageIdentifier = linkageIdentifier, linkageImportForRS = linkageImportForRS, linkageURL = linkageURL, name = name, originalCompressionType = originalCompressionType, quality = quality, removeData = removeData, sampleRate = sampleRate, scalingGrid = scalingGrid, scalingGridRect = scalingGridRect, size = size, sourceAutoUpdate = sourceAutoUpdate, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, sourceLibraryName = sourceLibraryName, symbolType = symbolType, timeline = timeline, useDeblocking = useDeblocking, useImportedJPEGQuality = useImportedJPEGQuality, videoType = videoType)
+  
+    __obj.asInstanceOf[FlashItem]
+  }
+}
+

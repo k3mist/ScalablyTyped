@@ -10,3 +10,12 @@ trait TeamBacklogMapping extends js.Object {
   var teamId: java.lang.String
 }
 
+object TeamBacklogMapping {
+  @scala.inline
+  def apply(categoryReferenceName: java.lang.String, teamId: java.lang.String): TeamBacklogMapping = {
+    val __obj = js.Dynamic.literal(categoryReferenceName = categoryReferenceName, teamId = teamId)
+  
+    __obj.asInstanceOf[TeamBacklogMapping]
+  }
+}
+

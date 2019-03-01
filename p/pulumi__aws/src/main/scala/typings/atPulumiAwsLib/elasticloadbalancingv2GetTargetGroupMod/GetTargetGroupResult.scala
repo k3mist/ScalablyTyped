@@ -23,3 +23,25 @@ trait GetTargetGroupResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetTargetGroupResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    arnSuffix: java.lang.String,
+    deregistrationDelay: scala.Double,
+    healthCheck: atPulumiAwsLib.Anon_HealthyThreshold,
+    id: java.lang.String,
+    name: java.lang.String,
+    port: scala.Double,
+    protocol: java.lang.String,
+    slowStart: scala.Double,
+    stickiness: atPulumiAwsLib.Anon_CookieDuration,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetTargetGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, arnSuffix = arnSuffix, deregistrationDelay = deregistrationDelay, healthCheck = healthCheck, id = id, name = name, port = port, protocol = protocol, slowStart = slowStart, stickiness = stickiness, tags = tags, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetTargetGroupResult]
+  }
+}
+

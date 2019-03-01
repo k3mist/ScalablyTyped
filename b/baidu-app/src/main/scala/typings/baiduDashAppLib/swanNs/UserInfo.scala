@@ -15,3 +15,19 @@ trait UserInfo extends js.Object {
   var province: java.lang.String
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(
+    avatarUrl: java.lang.String,
+    city: java.lang.String,
+    country: java.lang.String,
+    gender: scala.Double,
+    nickName: java.lang.String,
+    province: java.lang.String
+  ): UserInfo = {
+    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl, city = city, country = country, gender = gender, nickName = nickName, province = province)
+  
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

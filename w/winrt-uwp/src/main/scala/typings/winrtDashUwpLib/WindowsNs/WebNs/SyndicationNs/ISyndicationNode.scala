@@ -29,3 +29,21 @@ trait ISyndicationNode extends js.Object {
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
 }
 
+object ISyndicationNode {
+  @scala.inline
+  def apply(
+    attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute],
+    baseUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
+    elementExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
+    getXmlDocument: js.Function1[SyndicationFormat, winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    language: java.lang.String,
+    nodeName: java.lang.String,
+    nodeNamespace: java.lang.String,
+    nodeValue: java.lang.String
+  ): ISyndicationNode = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue)
+  
+    __obj.asInstanceOf[ISyndicationNode]
+  }
+}
+

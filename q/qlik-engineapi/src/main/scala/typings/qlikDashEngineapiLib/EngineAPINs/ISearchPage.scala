@@ -38,3 +38,18 @@ trait ISearchPage extends js.Object {
   var qOffset: scala.Double
 }
 
+object ISearchPage {
+  @scala.inline
+  def apply(
+    qCount: scala.Double,
+    qGroupItemOptions: js.Array[ISearchGroupItemOptions],
+    qGroupOptions: js.Array[ISearchGroupOptions],
+    qMaxNbrFieldMatches: scala.Double,
+    qOffset: scala.Double
+  ): ISearchPage = {
+    val __obj = js.Dynamic.literal(qCount = qCount, qGroupItemOptions = qGroupItemOptions, qGroupOptions = qGroupOptions, qMaxNbrFieldMatches = qMaxNbrFieldMatches, qOffset = qOffset)
+  
+    __obj.asInstanceOf[ISearchPage]
+  }
+}
+

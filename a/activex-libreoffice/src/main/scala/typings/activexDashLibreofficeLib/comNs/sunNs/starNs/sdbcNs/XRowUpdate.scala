@@ -139,3 +139,51 @@ trait XRowUpdate
   def updateTimestamp(columnIndex: scala.Double, x: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime): scala.Unit
 }
 
+object XRowUpdate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateBinaryStream: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    updateBoolean: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    updateByte: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateBytes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    updateCharacterStream: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    updateDate: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    updateDouble: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateFloat: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateInt: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateLong: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateNull: js.Function1[scala.Double, scala.Unit],
+    updateNumericObject: js.Function3[scala.Double, js.Any, scala.Double, scala.Unit],
+    updateObject: js.Function2[scala.Double, js.Any, scala.Unit],
+    updateShort: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateString: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    updateTime: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    updateTimestamp: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, 
+      scala.Unit
+    ]
+  ): XRowUpdate = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateBinaryStream = updateBinaryStream, updateBoolean = updateBoolean, updateByte = updateByte, updateBytes = updateBytes, updateCharacterStream = updateCharacterStream, updateDate = updateDate, updateDouble = updateDouble, updateFloat = updateFloat, updateInt = updateInt, updateLong = updateLong, updateNull = updateNull, updateNumericObject = updateNumericObject, updateObject = updateObject, updateShort = updateShort, updateString = updateString, updateTime = updateTime, updateTimestamp = updateTimestamp)
+  
+    __obj.asInstanceOf[XRowUpdate]
+  }
+}
+

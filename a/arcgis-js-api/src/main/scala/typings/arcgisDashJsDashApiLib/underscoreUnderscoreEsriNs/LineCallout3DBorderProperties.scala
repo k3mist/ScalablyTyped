@@ -17,3 +17,17 @@ trait LineCallout3DBorderProperties
   var color: js.UndefOr[Color] = js.undefined
 }
 
+object LineCallout3DBorderProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    color: Color = null
+  ): LineCallout3DBorderProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[LineCallout3DBorderProperties]
+  }
+}
+

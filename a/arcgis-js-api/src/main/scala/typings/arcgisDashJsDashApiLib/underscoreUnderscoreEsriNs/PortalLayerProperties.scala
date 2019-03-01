@@ -14,3 +14,12 @@ trait PortalLayerProperties extends js.Object {
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
 }
 
+object PortalLayerProperties {
+  @scala.inline
+  def apply(portalItem: PortalItemProperties = null): PortalLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    __obj.asInstanceOf[PortalLayerProperties]
+  }
+}
+

@@ -42,3 +42,17 @@ trait DataValidationErrorAlert extends js.Object {
   var title: java.lang.String
 }
 
+object DataValidationErrorAlert {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    showAlert: scala.Boolean,
+    style: DataValidationAlertStyle | officeDashJsLib.officeDashJsLibStrings.Stop | officeDashJsLib.officeDashJsLibStrings.Warning | officeDashJsLib.officeDashJsLibStrings.Information,
+    title: java.lang.String
+  ): DataValidationErrorAlert = {
+    val __obj = js.Dynamic.literal(message = message, showAlert = showAlert, style = style.asInstanceOf[js.Any], title = title)
+  
+    __obj.asInstanceOf[DataValidationErrorAlert]
+  }
+}
+

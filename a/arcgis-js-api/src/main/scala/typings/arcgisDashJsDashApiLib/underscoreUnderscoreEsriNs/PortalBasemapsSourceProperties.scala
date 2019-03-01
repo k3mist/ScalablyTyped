@@ -32,3 +32,22 @@ trait PortalBasemapsSourceProperties extends LocalBasemapsSourceProperties {
   var updateBasemapsCallback: js.UndefOr[js.Function] = js.undefined
 }
 
+object PortalBasemapsSourceProperties {
+  @scala.inline
+  def apply(
+    basemaps: CollectionProperties[BasemapProperties] = null,
+    filterFunction: js.Function = null,
+    portal: PortalProperties = null,
+    query: js.Any | java.lang.String = null,
+    updateBasemapsCallback: js.Function = null
+  ): PortalBasemapsSourceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (basemaps != null) __obj.updateDynamic("basemaps")(basemaps.asInstanceOf[js.Any])
+    if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (updateBasemapsCallback != null) __obj.updateDynamic("updateBasemapsCallback")(updateBasemapsCallback)
+    __obj.asInstanceOf[PortalBasemapsSourceProperties]
+  }
+}
+

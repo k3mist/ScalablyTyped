@@ -19,3 +19,16 @@ trait Anon_DataRemovalPermitted extends js.Object {
   var options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions
 }
 
+object Anon_DataRemovalPermitted {
+  @scala.inline
+  def apply(
+    dataRemovalPermitted: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet,
+    dataToRemove: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet,
+    options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions
+  ): Anon_DataRemovalPermitted = {
+    val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted, dataToRemove = dataToRemove, options = options)
+  
+    __obj.asInstanceOf[Anon_DataRemovalPermitted]
+  }
+}
+

@@ -31,3 +31,23 @@ trait NotifyBLECharacteristicValueChangedOptions
   def success_MNotifyBLECharacteristicValueChangedOptions(res: ErrMsgResponse): scala.Unit
 }
 
+object NotifyBLECharacteristicValueChangedOptions {
+  @scala.inline
+  def apply(
+    characteristicId: java.lang.String,
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    state: scala.Boolean,
+    success: js.Function1[ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    descriptorId: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): NotifyBLECharacteristicValueChangedOptions = {
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, state = state, success = success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (descriptorId != null) __obj.updateDynamic("descriptorId")(descriptorId)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[NotifyBLECharacteristicValueChangedOptions]
+  }
+}
+

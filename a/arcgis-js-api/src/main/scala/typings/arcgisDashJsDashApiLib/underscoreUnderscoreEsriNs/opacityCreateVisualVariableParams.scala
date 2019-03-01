@@ -81,3 +81,38 @@ trait opacityCreateVisualVariableParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object opacityCreateVisualVariableParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    field: java.lang.String = null,
+    legendOptions: opacityCreateVisualVariableParamsLegendOptions = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    statistics: SummaryStatisticsResult = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    view: View = null
+  ): opacityCreateVisualVariableParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[opacityCreateVisualVariableParams]
+  }
+}
+

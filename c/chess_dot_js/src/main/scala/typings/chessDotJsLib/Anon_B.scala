@@ -22,3 +22,20 @@ trait Anon_B extends js.Object {
   var QSIDE_CASTLE: chessDotJsLib.chessDotJsLibStrings.q
 }
 
+object Anon_B {
+  @scala.inline
+  def apply(
+    BIG_PAWN: chessDotJsLib.chessDotJsLibStrings.b,
+    CAPTURE: chessDotJsLib.chessDotJsLibStrings.c,
+    EP_CAPTURE: chessDotJsLib.chessDotJsLibStrings.e,
+    KSIDE_CASTLE: chessDotJsLib.chessDotJsLibStrings.k,
+    NORMAL: chessDotJsLib.chessDotJsLibStrings.n,
+    PROMOTION: chessDotJsLib.chessDotJsLibStrings.p,
+    QSIDE_CASTLE: chessDotJsLib.chessDotJsLibStrings.q
+  ): Anon_B = {
+    val __obj = js.Dynamic.literal(BIG_PAWN = BIG_PAWN, CAPTURE = CAPTURE, EP_CAPTURE = EP_CAPTURE, KSIDE_CASTLE = KSIDE_CASTLE, NORMAL = NORMAL, PROMOTION = PROMOTION, QSIDE_CASTLE = QSIDE_CASTLE)
+  
+    __obj.asInstanceOf[Anon_B]
+  }
+}
+

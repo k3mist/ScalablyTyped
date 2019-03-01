@@ -11,3 +11,12 @@ trait Residence extends js.Object {
   var value: java.lang.String
 }
 
+object Residence {
+  @scala.inline
+  def apply(current: scala.Boolean, metadata: FieldMetadata, value: java.lang.String): Residence = {
+    val __obj = js.Dynamic.literal(current = current, metadata = metadata, value = value)
+  
+    __obj.asInstanceOf[Residence]
+  }
+}
+

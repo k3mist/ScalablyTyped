@@ -21,3 +21,26 @@ trait CheapRuler extends js.Object {
   def pointOnLine(line: Line, p: Point): cheapDashRulerLib.Anon_Index
 }
 
+object CheapRuler {
+  @scala.inline
+  def apply(
+    along: js.Function2[Line, scala.Double, Point],
+    area: js.Function1[Polygon, scala.Double],
+    bearing: js.Function2[Point, Point, scala.Double],
+    bufferBBox: js.Function2[BBox, scala.Double, BBox],
+    bufferPoint: js.Function2[Point, scala.Double, BBox],
+    destination: js.Function3[Point, scala.Double, scala.Double, Point],
+    distance: js.Function2[Point, Point, scala.Double],
+    insideBBox: js.Function2[Point, BBox, scala.Boolean],
+    lineDistance: js.Function1[Points, scala.Double],
+    lineSlice: js.Function3[Point, Point, Line, Line],
+    lineSliceAlong: js.Function3[scala.Double, scala.Double, Line, Line],
+    offset: js.Function3[Point, scala.Double, scala.Double, Point],
+    pointOnLine: js.Function2[Line, Point, cheapDashRulerLib.Anon_Index]
+  ): CheapRuler = {
+    val __obj = js.Dynamic.literal(along = along, area = area, bearing = bearing, bufferBBox = bufferBBox, bufferPoint = bufferPoint, destination = destination, distance = distance, insideBBox = insideBBox, lineDistance = lineDistance, lineSlice = lineSlice, lineSliceAlong = lineSliceAlong, offset = offset, pointOnLine = pointOnLine)
+  
+    __obj.asInstanceOf[CheapRuler]
+  }
+}
+

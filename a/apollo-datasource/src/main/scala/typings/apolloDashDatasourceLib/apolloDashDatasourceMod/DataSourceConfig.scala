@@ -10,3 +10,15 @@ trait DataSourceConfig[TContext] extends js.Object {
   var context: TContext
 }
 
+object DataSourceConfig {
+  @scala.inline
+  def apply[TContext](
+    cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String],
+    context: TContext
+  ): DataSourceConfig[TContext] = {
+    val __obj = js.Dynamic.literal(cache = cache, context = context.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DataSourceConfig[TContext]]
+  }
+}
+

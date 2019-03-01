@@ -94,3 +94,46 @@ trait IntegrationArgs extends js.Object {
   val uri: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object IntegrationArgs {
+  @scala.inline
+  def apply(
+    httpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    cacheKeyParameters: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    cacheNamespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentHandling: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    credentials: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    integrationHttpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    passthroughBehavior: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    requestParametersInJson: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestTemplates: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    timeoutMilliseconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    uri: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): IntegrationArgs = {
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    if (cacheKeyParameters != null) __obj.updateDynamic("cacheKeyParameters")(cacheKeyParameters.asInstanceOf[js.Any])
+    if (cacheNamespace != null) __obj.updateDynamic("cacheNamespace")(cacheNamespace.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
+    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (integrationHttpMethod != null) __obj.updateDynamic("integrationHttpMethod")(integrationHttpMethod.asInstanceOf[js.Any])
+    if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
+    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
+    if (requestParametersInJson != null) __obj.updateDynamic("requestParametersInJson")(requestParametersInJson.asInstanceOf[js.Any])
+    if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
+    if (timeoutMilliseconds != null) __obj.updateDynamic("timeoutMilliseconds")(timeoutMilliseconds.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntegrationArgs]
+  }
+}
+

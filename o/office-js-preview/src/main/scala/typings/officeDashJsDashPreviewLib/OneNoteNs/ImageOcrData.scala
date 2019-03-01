@@ -28,3 +28,12 @@ trait ImageOcrData extends js.Object {
   var ocrText: java.lang.String
 }
 
+object ImageOcrData {
+  @scala.inline
+  def apply(ocrLanguageId: java.lang.String, ocrText: java.lang.String): ImageOcrData = {
+    val __obj = js.Dynamic.literal(ocrLanguageId = ocrLanguageId, ocrText = ocrText)
+  
+    __obj.asInstanceOf[ImageOcrData]
+  }
+}
+

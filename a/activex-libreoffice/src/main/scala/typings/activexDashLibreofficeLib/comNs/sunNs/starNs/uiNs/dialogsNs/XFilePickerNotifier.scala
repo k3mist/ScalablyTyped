@@ -20,3 +20,18 @@ trait XFilePickerNotifier
   def removeFilePickerListener(xListener: XFilePickerListener): scala.Unit
 }
 
+object XFilePickerNotifier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addFilePickerListener: js.Function1[XFilePickerListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeFilePickerListener: js.Function1[XFilePickerListener, scala.Unit]
+  ): XFilePickerNotifier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addFilePickerListener = addFilePickerListener, queryInterface = queryInterface, release = release, removeFilePickerListener = removeFilePickerListener)
+  
+    __obj.asInstanceOf[XFilePickerNotifier]
+  }
+}
+

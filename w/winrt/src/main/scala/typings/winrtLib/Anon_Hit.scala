@@ -10,3 +10,12 @@ trait Anon_Hit extends js.Object {
   var rect: winrtLib.WindowsNs.FoundationNs.Rect
 }
 
+object Anon_Hit {
+  @scala.inline
+  def apply(hit: scala.Double, rect: winrtLib.WindowsNs.FoundationNs.Rect): Anon_Hit = {
+    val __obj = js.Dynamic.literal(hit = hit, rect = rect)
+  
+    __obj.asInstanceOf[Anon_Hit]
+  }
+}
+

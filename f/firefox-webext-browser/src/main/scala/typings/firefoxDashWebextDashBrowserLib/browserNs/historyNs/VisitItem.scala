@@ -19,3 +19,18 @@ trait VisitItem extends js.Object {
   var visitTime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VisitItem {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    referringVisitId: java.lang.String,
+    transition: TransitionType,
+    visitId: java.lang.String,
+    visitTime: scala.Int | scala.Double = null
+  ): VisitItem = {
+    val __obj = js.Dynamic.literal(id = id, referringVisitId = referringVisitId, transition = transition, visitId = visitId)
+    if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VisitItem]
+  }
+}
+

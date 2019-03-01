@@ -15,3 +15,20 @@ trait AppUser extends js.Object {
   def setUser(data: js.Object, callback: CbCallback): scala.Unit
 }
 
+object AppUser {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    allUsers: js.Function2[Query, CbCallback, scala.Unit],
+    getUser: js.Function1[CbCallback, scala.Unit],
+    setUser: js.Function2[js.Object, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    user: APIUser
+  ): AppUser = {
+    val __obj = js.Dynamic.literal(URI = URI, allUsers = allUsers, getUser = getUser, setUser = setUser, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
+    __obj.asInstanceOf[AppUser]
+  }
+}
+

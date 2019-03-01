@@ -24,3 +24,12 @@ trait ReleaseEnvironmentShallowReference extends js.Object {
   var url: java.lang.String
 }
 
+object ReleaseEnvironmentShallowReference {
+  @scala.inline
+  def apply(_links: js.Any, id: scala.Double, name: java.lang.String, url: java.lang.String): ReleaseEnvironmentShallowReference = {
+    val __obj = js.Dynamic.literal(_links = _links, id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[ReleaseEnvironmentShallowReference]
+  }
+}
+

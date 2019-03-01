@@ -13,3 +13,12 @@ trait NamedValue extends js.Object {
   var Value: js.Any
 }
 
+object NamedValue {
+  @scala.inline
+  def apply(Name: java.lang.String, Value: js.Any): NamedValue = {
+    val __obj = js.Dynamic.literal(Name = Name, Value = Value)
+  
+    __obj.asInstanceOf[NamedValue]
+  }
+}
+

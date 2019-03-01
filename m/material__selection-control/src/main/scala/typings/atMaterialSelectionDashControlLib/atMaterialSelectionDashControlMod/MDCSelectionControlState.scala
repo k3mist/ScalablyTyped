@@ -12,3 +12,17 @@ trait MDCSelectionControlState extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MDCSelectionControlState {
+  @scala.inline
+  def apply(
+    checked: scala.Boolean,
+    disabled: scala.Boolean,
+    indeterminate: scala.Boolean,
+    value: java.lang.String = null
+  ): MDCSelectionControlState = {
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, indeterminate = indeterminate)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MDCSelectionControlState]
+  }
+}
+

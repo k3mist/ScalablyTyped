@@ -16,3 +16,12 @@ trait Subscriber extends js.Object {
   var SubscriptionType: SubscriptionType
 }
 
+object Subscriber {
+  @scala.inline
+  def apply(Address: SubscriberAddress, SubscriptionType: SubscriptionType): Subscriber = {
+    val __obj = js.Dynamic.literal(Address = Address, SubscriptionType = SubscriptionType.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Subscriber]
+  }
+}
+

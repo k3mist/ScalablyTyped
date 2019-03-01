@@ -11,3 +11,12 @@ trait IEXTENSION_RESPONSE extends js.Object {
   var sourceRoom: scala.Double
 }
 
+object IEXTENSION_RESPONSE {
+  @scala.inline
+  def apply(cmd: java.lang.String, params: js.Object, sourceRoom: scala.Double): IEXTENSION_RESPONSE = {
+    val __obj = js.Dynamic.literal(cmd = cmd, params = params, sourceRoom = sourceRoom)
+  
+    __obj.asInstanceOf[IEXTENSION_RESPONSE]
+  }
+}
+

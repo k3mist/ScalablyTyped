@@ -30,3 +30,22 @@ trait Calendar2 extends js.Object {
   var StartOfWeek: java.lang.String
 }
 
+object Calendar2 {
+  @scala.inline
+  def apply(
+    Days: activexDashInteropLib.SafeArray[CalendarItem2],
+    Default: scala.Boolean,
+    Eras: activexDashInteropLib.SafeArray[CalendarItem2],
+    GenitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2],
+    MinimumNumberOfDaysForFirstWeek: scala.Double,
+    Months: activexDashInteropLib.SafeArray[CalendarItem2],
+    Name: java.lang.String,
+    PartitiveMonths: activexDashInteropLib.SafeArray[CalendarItem2],
+    StartOfWeek: java.lang.String
+  ): Calendar2 = {
+    val __obj = js.Dynamic.literal(Days = Days, Default = Default, Eras = Eras, GenitiveMonths = GenitiveMonths, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, Name = Name, PartitiveMonths = PartitiveMonths, StartOfWeek = StartOfWeek)
+  
+    __obj.asInstanceOf[Calendar2]
+  }
+}
+

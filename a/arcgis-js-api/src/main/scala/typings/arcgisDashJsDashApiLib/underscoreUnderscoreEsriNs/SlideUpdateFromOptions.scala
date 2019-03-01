@@ -15,3 +15,17 @@ trait SlideUpdateFromOptions
   var screenshot: SlideUpdateFromOptionsScreenshot
 }
 
+object SlideUpdateFromOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    screenshot: SlideUpdateFromOptionsScreenshot
+  ): SlideUpdateFromOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, screenshot = screenshot)
+  
+    __obj.asInstanceOf[SlideUpdateFromOptions]
+  }
+}
+

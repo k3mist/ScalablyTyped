@@ -12,3 +12,17 @@ trait TabsActivationUIParams extends js.Object {
   var oldTab: jqueryuiLib.JQuery
 }
 
+object TabsActivationUIParams {
+  @scala.inline
+  def apply(
+    newPanel: jqueryuiLib.JQuery,
+    newTab: jqueryuiLib.JQuery,
+    oldPanel: jqueryuiLib.JQuery,
+    oldTab: jqueryuiLib.JQuery
+  ): TabsActivationUIParams = {
+    val __obj = js.Dynamic.literal(newPanel = newPanel, newTab = newTab, oldPanel = oldPanel, oldTab = oldTab)
+  
+    __obj.asInstanceOf[TabsActivationUIParams]
+  }
+}
+

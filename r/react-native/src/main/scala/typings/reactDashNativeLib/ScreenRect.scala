@@ -12,3 +12,12 @@ trait ScreenRect extends js.Object {
   var width: scala.Double
 }
 
+object ScreenRect {
+  @scala.inline
+  def apply(height: scala.Double, screenX: scala.Double, screenY: scala.Double, width: scala.Double): ScreenRect = {
+    val __obj = js.Dynamic.literal(height = height, screenX = screenX, screenY = screenY, width = width)
+  
+    __obj.asInstanceOf[ScreenRect]
+  }
+}
+

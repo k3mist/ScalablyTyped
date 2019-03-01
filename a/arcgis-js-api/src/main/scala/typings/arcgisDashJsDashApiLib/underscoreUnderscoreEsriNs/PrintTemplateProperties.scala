@@ -89,3 +89,30 @@ trait PrintTemplateProperties extends js.Object {
   var showLabels: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrintTemplateProperties {
+  @scala.inline
+  def apply(
+    attributionVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    exportOptions: PrintTemplateExportOptions = null,
+    forceFeatureAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    layout: java.lang.String = null,
+    layoutOptions: PrintTemplateLayoutOptions = null,
+    outScale: scala.Int | scala.Double = null,
+    preserveScale: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabels: js.UndefOr[scala.Boolean] = js.undefined
+  ): PrintTemplateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible)
+    if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions)
+    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions)
+    if (outScale != null) __obj.updateDynamic("outScale")(outScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale)
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    __obj.asInstanceOf[PrintTemplateProperties]
+  }
+}
+

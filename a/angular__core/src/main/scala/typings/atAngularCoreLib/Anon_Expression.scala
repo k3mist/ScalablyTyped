@@ -10,3 +10,12 @@ trait Anon_Expression extends js.Object {
   var selector: java.lang.String
 }
 
+object Anon_Expression {
+  @scala.inline
+  def apply(expression: js.Any, selector: java.lang.String): Anon_Expression = {
+    val __obj = js.Dynamic.literal(expression = expression, selector = selector)
+  
+    __obj.asInstanceOf[Anon_Expression]
+  }
+}
+

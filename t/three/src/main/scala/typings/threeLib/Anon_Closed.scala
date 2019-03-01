@@ -13,3 +13,18 @@ trait Anon_Closed extends js.Object {
   var tubularSegments: scala.Double
 }
 
+object Anon_Closed {
+  @scala.inline
+  def apply(
+    closed: scala.Boolean,
+    path: threeLib.threeDashCoreMod.Curve[threeLib.threeDashCoreMod.Vector3],
+    radialSegments: scala.Double,
+    radius: scala.Double,
+    tubularSegments: scala.Double
+  ): Anon_Closed = {
+    val __obj = js.Dynamic.literal(closed = closed, path = path, radialSegments = radialSegments, radius = radius, tubularSegments = tubularSegments)
+  
+    __obj.asInstanceOf[Anon_Closed]
+  }
+}
+

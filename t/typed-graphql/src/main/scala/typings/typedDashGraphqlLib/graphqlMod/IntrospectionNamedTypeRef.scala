@@ -10,3 +10,12 @@ trait IntrospectionNamedTypeRef extends IntrospectionTypeRef {
   var name: java.lang.String
 }
 
+object IntrospectionNamedTypeRef {
+  @scala.inline
+  def apply(kind: java.lang.String, name: java.lang.String): IntrospectionNamedTypeRef = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+  
+    __obj.asInstanceOf[IntrospectionNamedTypeRef]
+  }
+}
+

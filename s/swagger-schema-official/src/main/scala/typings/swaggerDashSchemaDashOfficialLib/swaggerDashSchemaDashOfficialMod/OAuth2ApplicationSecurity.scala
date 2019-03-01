@@ -12,3 +12,19 @@ trait OAuth2ApplicationSecurity
   var tokenUrl: java.lang.String
 }
 
+object OAuth2ApplicationSecurity {
+  @scala.inline
+  def apply(
+    flow: java.lang.String,
+    tokenUrl: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null,
+    scopes: js.Array[OAuthScope] = null
+  ): OAuth2ApplicationSecurity = {
+    val __obj = js.Dynamic.literal(flow = flow, tokenUrl = tokenUrl, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[OAuth2ApplicationSecurity]
+  }
+}
+

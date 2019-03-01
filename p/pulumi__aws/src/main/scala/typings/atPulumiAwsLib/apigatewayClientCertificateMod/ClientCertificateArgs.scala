@@ -12,3 +12,12 @@ trait ClientCertificateArgs extends js.Object {
   val description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ClientCertificateArgs {
+  @scala.inline
+  def apply(description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null): ClientCertificateArgs = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientCertificateArgs]
+  }
+}
+

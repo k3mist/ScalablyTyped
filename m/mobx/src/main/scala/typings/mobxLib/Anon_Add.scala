@@ -13,3 +13,17 @@ trait Anon_Add[K, V]
   var `type`: mobxLib.mobxLibStrings.add
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply[K, V](
+    name: K,
+    newValue: V,
+    `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V],
+    `type`: mobxLib.mobxLibStrings.add
+  ): Anon_Add[K, V] = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], `object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Add[K, V]]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Repeated extends js.Object {
   var value: Any
 }
 
+object Repeated {
+  @scala.inline
+  def apply(local: scala.Boolean, name: java.lang.String, optional: scala.Boolean, value: Any): Repeated = {
+    val __obj = js.Dynamic.literal(local = local, name = name, optional = optional, value = value)
+  
+    __obj.asInstanceOf[Repeated]
+  }
+}
+

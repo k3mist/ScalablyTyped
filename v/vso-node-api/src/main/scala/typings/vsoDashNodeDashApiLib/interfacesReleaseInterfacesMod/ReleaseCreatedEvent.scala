@@ -10,3 +10,12 @@ trait ReleaseCreatedEvent extends js.Object {
   var release: Release
 }
 
+object ReleaseCreatedEvent {
+  @scala.inline
+  def apply(project: ProjectReference, release: Release): ReleaseCreatedEvent = {
+    val __obj = js.Dynamic.literal(project = project, release = release)
+  
+    __obj.asInstanceOf[ReleaseCreatedEvent]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_DocFromState extends js.Object {
   val ToState: scala.Double
 }
 
+object Anon_DocFromState {
+  @scala.inline
+  def apply(
+    Doc: activexDashWordLib.WordNs.Document,
+    FromState: scala.Double,
+    Handled: scala.Boolean,
+    ToState: scala.Double
+  ): Anon_DocFromState = {
+    val __obj = js.Dynamic.literal(Doc = Doc, FromState = FromState, Handled = Handled, ToState = ToState)
+  
+    __obj.asInstanceOf[Anon_DocFromState]
+  }
+}
+

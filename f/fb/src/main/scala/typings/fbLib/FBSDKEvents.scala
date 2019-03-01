@@ -12,3 +12,15 @@ trait FBSDKEvents extends js.Object {
   def unsubscribe(event: java.lang.String, callback: js.Function1[/* fbResponseObject */ js.Object, _]): scala.Unit
 }
 
+object FBSDKEvents {
+  @scala.inline
+  def apply(
+    subscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit],
+    unsubscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit]
+  ): FBSDKEvents = {
+    val __obj = js.Dynamic.literal(subscribe = subscribe, unsubscribe = unsubscribe)
+  
+    __obj.asInstanceOf[FBSDKEvents]
+  }
+}
+

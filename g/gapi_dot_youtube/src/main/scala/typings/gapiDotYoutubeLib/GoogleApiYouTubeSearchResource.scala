@@ -24,3 +24,17 @@ trait GoogleApiYouTubeSearchResource extends js.Object {
   var snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtThumbnails
 }
 
+object GoogleApiYouTubeSearchResource {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    id: Anon_ChannelIdKindPlaylistId,
+    kind: java.lang.String,
+    snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtThumbnails
+  ): GoogleApiYouTubeSearchResource = {
+    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, snippet = snippet)
+  
+    __obj.asInstanceOf[GoogleApiYouTubeSearchResource]
+  }
+}
+

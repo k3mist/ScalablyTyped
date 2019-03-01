@@ -20,3 +20,29 @@ trait Month extends TemporalAccessor {
   def value(): scala.Double
 }
 
+object Month {
+  @scala.inline
+  def apply(
+    adjustInto: js.Function1[Temporal, Temporal],
+    firstDayOfYear: js.Function1[scala.Boolean, scala.Double],
+    firstMonthOfQuarter: js.Function0[Month],
+    get: js.Function1[TemporalField, scala.Double],
+    getDisplayName: js.Function2[TextStyle, Locale, java.lang.String],
+    getLong: js.Function1[TemporalField, scala.Double],
+    isSupported: js.Function1[TemporalField, scala.Boolean],
+    length: js.Function1[scala.Boolean, scala.Double],
+    maxLength: js.Function0[scala.Double],
+    minLength: js.Function0[scala.Double],
+    minus: js.Function1[scala.Double, Month],
+    plus: js.Function1[scala.Double, Month],
+    query: js.Function1[TemporalQuery, js.Any],
+    range: js.Function1[TemporalField, ValueRange],
+    toString: js.Function0[java.lang.String],
+    value: js.Function0[scala.Double]
+  ): Month = {
+    val __obj = js.Dynamic.literal(adjustInto = adjustInto, firstDayOfYear = firstDayOfYear, firstMonthOfQuarter = firstMonthOfQuarter, get = get, getDisplayName = getDisplayName, getLong = getLong, isSupported = isSupported, length = length, maxLength = maxLength, minLength = minLength, minus = minus, plus = plus, query = query, range = range, toString = toString, value = value)
+  
+    __obj.asInstanceOf[Month]
+  }
+}
+

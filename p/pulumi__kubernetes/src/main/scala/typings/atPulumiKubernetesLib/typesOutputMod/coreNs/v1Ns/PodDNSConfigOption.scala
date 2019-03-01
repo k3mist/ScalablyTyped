@@ -16,3 +16,12 @@ trait PodDNSConfigOption extends js.Object {
   val value: java.lang.String
 }
 
+object PodDNSConfigOption {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): PodDNSConfigOption = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[PodDNSConfigOption]
+  }
+}
+

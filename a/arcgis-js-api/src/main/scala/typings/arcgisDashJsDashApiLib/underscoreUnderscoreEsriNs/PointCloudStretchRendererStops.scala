@@ -27,3 +27,19 @@ trait PointCloudStretchRendererStops
   var value: scala.Double
 }
 
+object PointCloudStretchRendererStops {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: scala.Double,
+    label: java.lang.String = null
+  ): PointCloudStretchRendererStops = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[PointCloudStretchRendererStops]
+  }
+}
+

@@ -59,3 +59,18 @@ trait IWebElementFinders extends js.Object {
   def findElements(locator: Locator): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]]
 }
 
+object IWebElementFinders {
+  @scala.inline
+  def apply(
+    findElement: js.Function1[Locator, WebElementPromise],
+    findElements: js.Function1[
+      Locator, 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]]
+    ]
+  ): IWebElementFinders = {
+    val __obj = js.Dynamic.literal(findElement = findElement, findElements = findElements)
+  
+    __obj.asInstanceOf[IWebElementFinders]
+  }
+}
+

@@ -11,3 +11,12 @@ trait RequestJSON extends js.Object {
   var url: java.lang.String
 }
 
+object RequestJSON {
+  @scala.inline
+  def apply(header: nodeLib.httpMod.IncomingHttpHeaders, method: java.lang.String, url: java.lang.String): RequestJSON = {
+    val __obj = js.Dynamic.literal(header = header, method = method, url = url)
+  
+    __obj.asInstanceOf[RequestJSON]
+  }
+}
+

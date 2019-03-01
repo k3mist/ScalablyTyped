@@ -11,3 +11,12 @@ trait Anon_PartiallyResolved extends js.Object {
   var unresolved: scala.Double
 }
 
+object Anon_PartiallyResolved {
+  @scala.inline
+  def apply(partiallyResolved: scala.Double, resolved: scala.Double, unresolved: scala.Double): Anon_PartiallyResolved = {
+    val __obj = js.Dynamic.literal(partiallyResolved = partiallyResolved, resolved = resolved, unresolved = unresolved)
+  
+    __obj.asInstanceOf[Anon_PartiallyResolved]
+  }
+}
+

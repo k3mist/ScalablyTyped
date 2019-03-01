@@ -66,3 +66,27 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEv
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDeliveredNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
+    getPendingNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
+    removeDeliveredNotifications: js.Function0[scala.Unit],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removePendingNotifications: js.Function1[js.Array[titaniumLib.TitaniumNs.AppNs.iOSNs.LocalNotification], scala.Unit],
+    requestUserNotificationSettings: js.Function1[js.Function1[/* param0 */ GetUserNotificationSettings, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDeliveredNotifications = getDeliveredNotifications, getPendingNotifications = getPendingNotifications, removeDeliveredNotifications = removeDeliveredNotifications, removeEventListener = removeEventListener, removePendingNotifications = removePendingNotifications, requestUserNotificationSettings = requestUserNotificationSettings, setBubbleParent = setBubbleParent)
+  
+    __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName]
+  }
+}
+

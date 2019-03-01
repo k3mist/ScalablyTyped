@@ -32,3 +32,18 @@ trait CollectionSelection extends js.Object {
   def unselectify(): this.type
 }
 
+object CollectionSelection {
+  @scala.inline
+  def apply(
+    deselect: js.Function0[CollectionSelection],
+    select: js.Function0[CollectionSelection],
+    selectify: js.Function0[CollectionSelection],
+    unselect: js.Function0[CollectionSelection],
+    unselectify: js.Function0[CollectionSelection]
+  ): CollectionSelection = {
+    val __obj = js.Dynamic.literal(deselect = deselect, select = select, selectify = selectify, unselect = unselect, unselectify = unselectify)
+  
+    __obj.asInstanceOf[CollectionSelection]
+  }
+}
+

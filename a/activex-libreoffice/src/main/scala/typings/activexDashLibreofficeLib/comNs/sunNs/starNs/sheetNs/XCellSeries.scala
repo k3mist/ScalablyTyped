@@ -34,3 +34,18 @@ trait XCellSeries
   ): scala.Unit
 }
 
+object XCellSeries {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    fillAuto: js.Function2[FillDirection, scala.Double, scala.Unit],
+    fillSeries: js.Function5[FillDirection, FillMode, FillDateMode, scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellSeries = {
+    val __obj = js.Dynamic.literal(acquire = acquire, fillAuto = fillAuto, fillSeries = fillSeries, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCellSeries]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ForwardConnectionArgs extends js.Object {
   var first: graphqlDashRelayLib.Anon_Type
 }
 
+object ForwardConnectionArgs {
+  @scala.inline
+  def apply(after: graphqlDashRelayLib.Anon_Type, first: graphqlDashRelayLib.Anon_Type): ForwardConnectionArgs = {
+    val __obj = js.Dynamic.literal(after = after, first = first)
+  
+    __obj.asInstanceOf[ForwardConnectionArgs]
+  }
+}
+

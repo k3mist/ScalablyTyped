@@ -14,3 +14,23 @@ trait IContactLocationField extends IContactField {
   var unstructuredAddress: java.lang.String
 }
 
+object IContactLocationField {
+  @scala.inline
+  def apply(
+    category: ContactFieldCategory,
+    city: java.lang.String,
+    country: java.lang.String,
+    name: java.lang.String,
+    postalCode: java.lang.String,
+    region: java.lang.String,
+    street: java.lang.String,
+    `type`: ContactFieldType,
+    unstructuredAddress: java.lang.String,
+    value: java.lang.String
+  ): IContactLocationField = {
+    val __obj = js.Dynamic.literal(category = category, city = city, country = country, name = name, postalCode = postalCode, region = region, street = street, `type` = `type`, unstructuredAddress = unstructuredAddress, value = value)
+  
+    __obj.asInstanceOf[IContactLocationField]
+  }
+}
+

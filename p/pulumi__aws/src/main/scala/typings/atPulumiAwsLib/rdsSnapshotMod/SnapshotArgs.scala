@@ -22,3 +22,16 @@ trait SnapshotArgs extends js.Object {
   ] = js.undefined
 }
 
+object SnapshotArgs {
+  @scala.inline
+  def apply(
+    dbInstanceIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    dbSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotArgs = {
+    val __obj = js.Dynamic.literal(dbInstanceIdentifier = dbInstanceIdentifier.asInstanceOf[js.Any], dbSnapshotIdentifier = dbSnapshotIdentifier.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotArgs]
+  }
+}
+

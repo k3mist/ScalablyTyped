@@ -10,3 +10,15 @@ trait Anon_AnErrorStringBodyBlob extends js.Object {
   def success(obj: kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, bodyBlob: stdLib.Blob): js.Any
 }
 
+object Anon_AnErrorStringBodyBlob {
+  @scala.inline
+  def apply(
+    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any],
+    success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, stdLib.Blob, js.Any]
+  ): Anon_AnErrorStringBodyBlob = {
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
+    __obj.asInstanceOf[Anon_AnErrorStringBodyBlob]
+  }
+}
+

@@ -35,3 +35,17 @@ trait ResourceQuotaList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object ResourceQuotaList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    items: js.Array[ResourceQuota],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuotaList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): ResourceQuotaList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[ResourceQuotaList]
+  }
+}
+

@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
 }
 
+object TypeCastExpression {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TypeCastExpression,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): TypeCastExpression = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[TypeCastExpression]
+  }
+}
+

@@ -16,3 +16,22 @@ trait StackFrame extends js.Object {
   var source: java.lang.String
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    args: js.Any,
+    columnNumber: scala.Double,
+    fileName: java.lang.String,
+    functionName: java.lang.String,
+    isEval: scala.Boolean,
+    isNative: scala.Boolean,
+    lineNumber: scala.Double,
+    source: java.lang.String,
+    toString: js.Function0[java.lang.String]
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal(args = args, columnNumber = columnNumber, fileName = fileName, functionName = functionName, isEval = isEval, isNative = isNative, lineNumber = lineNumber, source = source, toString = toString)
+  
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

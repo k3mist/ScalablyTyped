@@ -11,3 +11,17 @@ trait MapStyleDataEvent
   var dataType: mapboxDashGlLib.mapboxDashGlLibStrings.style
 }
 
+object MapStyleDataEvent {
+  @scala.inline
+  def apply(
+    dataType: mapboxDashGlLib.mapboxDashGlLibStrings.style,
+    target: Map,
+    `type`: java.lang.String,
+    originalEvent: js.UndefOr[scala.Nothing] = js.undefined
+  ): MapStyleDataEvent = {
+    val __obj = js.Dynamic.literal(dataType = dataType, target = target, `type` = `type`)
+    if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[MapStyleDataEvent]
+  }
+}
+

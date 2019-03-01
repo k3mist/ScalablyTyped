@@ -19,3 +19,24 @@ trait Anon_Dead extends js.Object {
   var Status: java.lang.String
 }
 
+object Anon_Dead {
+  @scala.inline
+  def apply(
+    Dead: scala.Boolean,
+    Error: java.lang.String,
+    ExitCode: scala.Double,
+    FinishedAt: java.lang.String,
+    OOMKilled: scala.Boolean,
+    Paused: scala.Boolean,
+    Pid: scala.Double,
+    Restarting: scala.Boolean,
+    Running: scala.Boolean,
+    StartedAt: java.lang.String,
+    Status: java.lang.String
+  ): Anon_Dead = {
+    val __obj = js.Dynamic.literal(Dead = Dead, Error = Error, ExitCode = ExitCode, FinishedAt = FinishedAt, OOMKilled = OOMKilled, Paused = Paused, Pid = Pid, Restarting = Restarting, Running = Running, StartedAt = StartedAt, Status = Status)
+  
+    __obj.asInstanceOf[Anon_Dead]
+  }
+}
+

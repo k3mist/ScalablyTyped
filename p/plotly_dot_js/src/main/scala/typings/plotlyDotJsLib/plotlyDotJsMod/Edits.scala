@@ -18,3 +18,23 @@ trait Edits extends js.Object {
   var titleText: scala.Boolean
 }
 
+object Edits {
+  @scala.inline
+  def apply(
+    annotationPosition: scala.Boolean,
+    annotationTail: scala.Boolean,
+    annotationText: scala.Boolean,
+    axisTitleText: scala.Boolean,
+    colorbarPosition: scala.Boolean,
+    colorbarTitleText: scala.Boolean,
+    legendPosition: scala.Boolean,
+    legendText: scala.Boolean,
+    shapePosition: scala.Boolean,
+    titleText: scala.Boolean
+  ): Edits = {
+    val __obj = js.Dynamic.literal(annotationPosition = annotationPosition, annotationTail = annotationTail, annotationText = annotationText, axisTitleText = axisTitleText, colorbarPosition = colorbarPosition, colorbarTitleText = colorbarTitleText, legendPosition = legendPosition, legendText = legendText, shapePosition = shapePosition, titleText = titleText)
+  
+    __obj.asInstanceOf[Edits]
+  }
+}
+

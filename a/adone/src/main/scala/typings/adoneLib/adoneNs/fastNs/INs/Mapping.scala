@@ -16,3 +16,12 @@ trait Mapping extends js.Object {
   var to: java.lang.String
 }
 
+object Mapping {
+  @scala.inline
+  def apply(from: java.lang.String, to: java.lang.String): Mapping = {
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
+    __obj.asInstanceOf[Mapping]
+  }
+}
+

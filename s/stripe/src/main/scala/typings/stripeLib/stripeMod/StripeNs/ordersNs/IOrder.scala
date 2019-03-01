@@ -74,3 +74,34 @@ trait IOrder
   var updated: scala.Double
 }
 
+object IOrder {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    amount_returned: scala.Double,
+    application: java.lang.String,
+    application_fee: scala.Double,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer,
+    email: java.lang.String,
+    external_coupon_code: java.lang.String,
+    id: java.lang.String,
+    items: js.Array[IOrderItem],
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.order,
+    selected_shipping_method: java.lang.String,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation,
+    shipping_methods: js.Array[IShippingMethod],
+    status: OrderStatus,
+    status_transitions: stripeLib.Anon_Canceled,
+    updated: scala.Double
+  ): IOrder = {
+    val __obj = js.Dynamic.literal(amount = amount, amount_returned = amount_returned, application = application, application_fee = application_fee, charge = charge.asInstanceOf[js.Any], created = created, currency = currency, customer = customer.asInstanceOf[js.Any], email = email, external_coupon_code = external_coupon_code, id = id, items = items, livemode = livemode, metadata = metadata, `object` = `object`, selected_shipping_method = selected_shipping_method, shipping = shipping, shipping_methods = shipping_methods, status = status, status_transitions = status_transitions, updated = updated)
+  
+    __obj.asInstanceOf[IOrder]
+  }
+}
+

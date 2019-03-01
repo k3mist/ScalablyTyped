@@ -18,3 +18,16 @@ trait RegexPatternSetArgs extends js.Object {
   ] = js.undefined
 }
 
+object RegexPatternSetArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    regexPatternStrings: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): RegexPatternSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (regexPatternStrings != null) __obj.updateDynamic("regexPatternStrings")(regexPatternStrings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RegexPatternSetArgs]
+  }
+}
+

@@ -20,3 +20,19 @@ trait ILookupFieldExpression extends js.Object {
   def ValueAsText(): ITextFieldExpression
 }
 
+object ILookupFieldExpression {
+  @scala.inline
+  def apply(
+    Id: js.Function0[INumberFieldExpression],
+    ValueAsBoolean: js.Function0[IBooleanFieldExpression],
+    ValueAsDate: js.Function0[IDateTimeFieldExpression],
+    ValueAsDateTime: js.Function0[IDateTimeFieldExpression],
+    ValueAsNumber: js.Function0[INumberFieldExpression],
+    ValueAsText: js.Function0[ITextFieldExpression]
+  ): ILookupFieldExpression = {
+    val __obj = js.Dynamic.literal(Id = Id, ValueAsBoolean = ValueAsBoolean, ValueAsDate = ValueAsDate, ValueAsDateTime = ValueAsDateTime, ValueAsNumber = ValueAsNumber, ValueAsText = ValueAsText)
+  
+    __obj.asInstanceOf[ILookupFieldExpression]
+  }
+}
+

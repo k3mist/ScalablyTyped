@@ -27,3 +27,33 @@ trait Anon_ArgsEscaped extends js.Object {
   var WorkingDir: java.lang.String
 }
 
+object Anon_ArgsEscaped {
+  @scala.inline
+  def apply(
+    ArgsEscaped: scala.Boolean,
+    AttachStderr: scala.Boolean,
+    AttachStdin: scala.Boolean,
+    AttachStdout: scala.Boolean,
+    Cmd: js.Array[java.lang.String],
+    Domainname: java.lang.String,
+    Env: js.Array[java.lang.String],
+    ExposedPorts: org.scalablytyped.runtime.StringDictionary[js.Object],
+    Hostname: java.lang.String,
+    Image: java.lang.String,
+    Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    OpenStdin: scala.Boolean,
+    StdinOnce: scala.Boolean,
+    Tty: scala.Boolean,
+    User: java.lang.String,
+    Volumes: org.scalablytyped.runtime.StringDictionary[js.Object],
+    WorkingDir: java.lang.String,
+    Entrypoint: js.Any = null,
+    OnBuild: js.Array[_] = null
+  ): Anon_ArgsEscaped = {
+    val __obj = js.Dynamic.literal(ArgsEscaped = ArgsEscaped, AttachStderr = AttachStderr, AttachStdin = AttachStdin, AttachStdout = AttachStdout, Cmd = Cmd, Domainname = Domainname, Env = Env, ExposedPorts = ExposedPorts, Hostname = Hostname, Image = Image, Labels = Labels, OpenStdin = OpenStdin, StdinOnce = StdinOnce, Tty = Tty, User = User, Volumes = Volumes, WorkingDir = WorkingDir)
+    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint)
+    if (OnBuild != null) __obj.updateDynamic("OnBuild")(OnBuild)
+    __obj.asInstanceOf[Anon_ArgsEscaped]
+  }
+}
+

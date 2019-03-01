@@ -39,3 +39,21 @@ trait sizeClassBreaksRendererResult
   var sizeScheme: SizeScheme
 }
 
+object sizeClassBreaksRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    classBreaksResult: ClassBreaksResult,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer,
+    sizeScheme: SizeScheme
+  ): sizeClassBreaksRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme)
+  
+    __obj.asInstanceOf[sizeClassBreaksRendererResult]
+  }
+}
+

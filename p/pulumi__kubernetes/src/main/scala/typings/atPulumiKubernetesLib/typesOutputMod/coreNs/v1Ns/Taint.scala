@@ -30,3 +30,17 @@ trait Taint extends js.Object {
   val value: java.lang.String
 }
 
+object Taint {
+  @scala.inline
+  def apply(
+    effect: java.lang.String,
+    key: java.lang.String,
+    timeAdded: java.lang.String,
+    value: java.lang.String
+  ): Taint = {
+    val __obj = js.Dynamic.literal(effect = effect, key = key, timeAdded = timeAdded, value = value)
+  
+    __obj.asInstanceOf[Taint]
+  }
+}
+

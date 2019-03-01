@@ -11,3 +11,12 @@ trait DateTimePeriod
   var startDateTime: DateTime
 }
 
+object DateTimePeriod {
+  @scala.inline
+  def apply(endDateTime: DateTime, startDateTime: DateTime): DateTimePeriod = {
+    val __obj = js.Dynamic.literal(endDateTime = endDateTime, startDateTime = startDateTime)
+  
+    __obj.asInstanceOf[DateTimePeriod]
+  }
+}
+

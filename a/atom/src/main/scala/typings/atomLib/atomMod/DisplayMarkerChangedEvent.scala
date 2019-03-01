@@ -47,3 +47,28 @@ trait DisplayMarkerChangedEvent extends js.Object {
   var wasValid: scala.Boolean
 }
 
+object DisplayMarkerChangedEvent {
+  @scala.inline
+  def apply(
+    hadTail: scala.Boolean,
+    hasTail: scala.Boolean,
+    isValid: scala.Boolean,
+    newHeadBufferPosition: Point,
+    newHeadScreenPosition: Point,
+    newProperties: js.Object,
+    newTailBufferPosition: Point,
+    newTailScreenPosition: Point,
+    oldHeadBufferPosition: Point,
+    oldHeadScreenPosition: Point,
+    oldProperties: js.Object,
+    oldTailBufferPosition: Point,
+    oldTailScreenPosition: Point,
+    textChanged: scala.Boolean,
+    wasValid: scala.Boolean
+  ): DisplayMarkerChangedEvent = {
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadBufferPosition = newHeadBufferPosition, newHeadScreenPosition = newHeadScreenPosition, newProperties = newProperties, newTailBufferPosition = newTailBufferPosition, newTailScreenPosition = newTailScreenPosition, oldHeadBufferPosition = oldHeadBufferPosition, oldHeadScreenPosition = oldHeadScreenPosition, oldProperties = oldProperties, oldTailBufferPosition = oldTailBufferPosition, oldTailScreenPosition = oldTailScreenPosition, textChanged = textChanged, wasValid = wasValid)
+  
+    __obj.asInstanceOf[DisplayMarkerChangedEvent]
+  }
+}
+

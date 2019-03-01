@@ -12,3 +12,17 @@ trait cookie extends js.Object {
   def remove(name: java.lang.String): scala.Unit
 }
 
+object cookie {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    get: js.Function1[java.lang.String, js.Any],
+    put: js.Function2[java.lang.String, js.Any, scala.Unit],
+    remove: js.Function1[java.lang.String, scala.Unit]
+  ): cookie = {
+    val __obj = js.Dynamic.literal(clear = clear, get = get, put = put, remove = remove)
+  
+    __obj.asInstanceOf[cookie]
+  }
+}
+

@@ -60,3 +60,26 @@ trait Anon_CssResponsebytes extends js.Object {
   var totalRequestBytes: java.lang.String
 }
 
+object Anon_CssResponsebytes {
+  @scala.inline
+  def apply(
+    cssResponsebytes: java.lang.String,
+    flashResponseBytes: java.lang.String,
+    htmlResponseBytes: java.lang.String,
+    imageResponseBytes: java.lang.String,
+    javascriptResponsebytes: java.lang.String,
+    numberCssResources: scala.Double,
+    numberHosts: scala.Double,
+    numberJsResources: scala.Double,
+    numberResources: scala.Double,
+    numberStaticResources: scala.Double,
+    otherResponsebytes: java.lang.String,
+    textResponseBytes: java.lang.String,
+    totalRequestBytes: java.lang.String
+  ): Anon_CssResponsebytes = {
+    val __obj = js.Dynamic.literal(cssResponsebytes = cssResponsebytes, flashResponseBytes = flashResponseBytes, htmlResponseBytes = htmlResponseBytes, imageResponseBytes = imageResponseBytes, javascriptResponsebytes = javascriptResponsebytes, numberCssResources = numberCssResources, numberHosts = numberHosts, numberJsResources = numberJsResources, numberResources = numberResources, numberStaticResources = numberStaticResources, otherResponsebytes = otherResponsebytes, textResponseBytes = textResponseBytes, totalRequestBytes = totalRequestBytes)
+  
+    __obj.asInstanceOf[Anon_CssResponsebytes]
+  }
+}
+

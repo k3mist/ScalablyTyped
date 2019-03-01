@@ -60,3 +60,34 @@ trait NfsFileShareArgs extends js.Object {
   val squash: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object NfsFileShareArgs {
+  @scala.inline
+  def apply(
+    clientLists: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    locationArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    defaultStorageClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    guessMimeTypeEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsEncrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    nfsFileShareDefaults: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DirectoryModeFileMode] = null,
+    objectAcl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    readOnly: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    requesterPays: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    squash: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): NfsFileShareArgs = {
+    val __obj = js.Dynamic.literal(clientLists = clientLists.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any], locationArn = locationArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+    if (defaultStorageClass != null) __obj.updateDynamic("defaultStorageClass")(defaultStorageClass.asInstanceOf[js.Any])
+    if (guessMimeTypeEnabled != null) __obj.updateDynamic("guessMimeTypeEnabled")(guessMimeTypeEnabled.asInstanceOf[js.Any])
+    if (kmsEncrypted != null) __obj.updateDynamic("kmsEncrypted")(kmsEncrypted.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (nfsFileShareDefaults != null) __obj.updateDynamic("nfsFileShareDefaults")(nfsFileShareDefaults.asInstanceOf[js.Any])
+    if (objectAcl != null) __obj.updateDynamic("objectAcl")(objectAcl.asInstanceOf[js.Any])
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (requesterPays != null) __obj.updateDynamic("requesterPays")(requesterPays.asInstanceOf[js.Any])
+    if (squash != null) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NfsFileShareArgs]
+  }
+}
+

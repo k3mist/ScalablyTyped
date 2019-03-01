@@ -21,3 +21,20 @@ trait MessageEvent extends js.Object {
   var timetoken: java.lang.String
 }
 
+object MessageEvent {
+  @scala.inline
+  def apply(
+    actualChannel: java.lang.String,
+    channel: java.lang.String,
+    message: js.Any,
+    publisher: java.lang.String,
+    subscribedChannel: java.lang.String,
+    subscription: java.lang.String,
+    timetoken: java.lang.String
+  ): MessageEvent = {
+    val __obj = js.Dynamic.literal(actualChannel = actualChannel, channel = channel, message = message, publisher = publisher, subscribedChannel = subscribedChannel, subscription = subscription, timetoken = timetoken)
+  
+    __obj.asInstanceOf[MessageEvent]
+  }
+}
+

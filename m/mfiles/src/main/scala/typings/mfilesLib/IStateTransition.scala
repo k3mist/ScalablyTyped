@@ -22,3 +22,27 @@ trait IStateTransition extends js.Object {
   def Clone(): IStateTransition
 }
 
+object IStateTransition {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    Clone: js.Function0[IStateTransition],
+    Description: java.lang.String,
+    EvaluationOrderNumber: scala.Double,
+    FromState: scala.Double,
+    ID: scala.Double,
+    Name: java.lang.String,
+    SemanticAliases: ISemanticAliases,
+    SignatureSettings: ISignatureSettings,
+    ToState: scala.Double,
+    TriggerAllowedByVBScript: java.lang.String,
+    TriggerCriteria: ISearchConditions,
+    TriggerInDays: scala.Double,
+    TriggerMode: mfilesLib.MFilesNs.MFAutoStateTransitionMode
+  ): IStateTransition = {
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, Description = Description, EvaluationOrderNumber = EvaluationOrderNumber, FromState = FromState, ID = ID, Name = Name, SemanticAliases = SemanticAliases, SignatureSettings = SignatureSettings, ToState = ToState, TriggerAllowedByVBScript = TriggerAllowedByVBScript, TriggerCriteria = TriggerCriteria, TriggerInDays = TriggerInDays, TriggerMode = TriggerMode)
+  
+    __obj.asInstanceOf[IStateTransition]
+  }
+}
+

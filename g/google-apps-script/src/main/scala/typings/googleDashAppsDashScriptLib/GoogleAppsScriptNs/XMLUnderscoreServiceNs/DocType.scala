@@ -19,3 +19,24 @@ trait DocType extends js.Object {
   def setSystemId(id: java.lang.String): DocType
 }
 
+object DocType {
+  @scala.inline
+  def apply(
+    detach: js.Function0[Content],
+    getElementName: js.Function0[java.lang.String],
+    getInternalSubset: js.Function0[java.lang.String],
+    getParentElement: js.Function0[Element],
+    getPublicId: js.Function0[java.lang.String],
+    getSystemId: js.Function0[java.lang.String],
+    getValue: js.Function0[java.lang.String],
+    setElementName: js.Function1[java.lang.String, DocType],
+    setInternalSubset: js.Function1[java.lang.String, DocType],
+    setPublicId: js.Function1[java.lang.String, DocType],
+    setSystemId: js.Function1[java.lang.String, DocType]
+  ): DocType = {
+    val __obj = js.Dynamic.literal(detach = detach, getElementName = getElementName, getInternalSubset = getInternalSubset, getParentElement = getParentElement, getPublicId = getPublicId, getSystemId = getSystemId, getValue = getValue, setElementName = setElementName, setInternalSubset = setInternalSubset, setPublicId = setPublicId, setSystemId = setSystemId)
+  
+    __obj.asInstanceOf[DocType]
+  }
+}
+

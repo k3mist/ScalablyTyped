@@ -17,3 +17,25 @@ trait DDPStatic extends js.Object {
   def subscribe(name: java.lang.String, rest: js.Any*): meteorDashTypingsLib.MeteorNs.SubscriptionHandle
 }
 
+object DDPStatic {
+  @scala.inline
+  def apply(
+    apply: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
+    call: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
+    disconnect: js.Function0[scala.Unit],
+    methods: js.Function1[js.Any, js.Any],
+    onReconnect: js.Function0[scala.Unit],
+    reconnect: js.Function0[scala.Unit],
+    status: js.Function0[DDPStatus],
+    subscribe: js.Function2[
+      java.lang.String, 
+      /* repeated */ js.Any, 
+      meteorDashTypingsLib.MeteorNs.SubscriptionHandle
+    ]
+  ): DDPStatic = {
+    val __obj = js.Dynamic.literal(apply = apply, call = call, disconnect = disconnect, methods = methods, onReconnect = onReconnect, reconnect = reconnect, status = status, subscribe = subscribe)
+  
+    __obj.asInstanceOf[DDPStatic]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Handle extends js.Object {
   var suffix: java.lang.String
 }
 
+object Anon_Handle {
+  @scala.inline
+  def apply(handle: java.lang.String, suffix: java.lang.String): Anon_Handle = {
+    val __obj = js.Dynamic.literal(handle = handle, suffix = suffix)
+  
+    __obj.asInstanceOf[Anon_Handle]
+  }
+}
+

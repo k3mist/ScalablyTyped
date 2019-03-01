@@ -11,3 +11,12 @@ trait Anon_ButtonIcons extends js.Object {
   var themeButtonIcons: Anon_NextNextYear
 }
 
+object Anon_ButtonIcons {
+  @scala.inline
+  def apply(buttonIcons: Anon_Next, header: Anon_Center, themeButtonIcons: Anon_NextNextYear): Anon_ButtonIcons = {
+    val __obj = js.Dynamic.literal(buttonIcons = buttonIcons, header = header, themeButtonIcons = themeButtonIcons)
+  
+    __obj.asInstanceOf[Anon_ButtonIcons]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_DeleteOnTerminationEncrypted extends js.Object {
   var volumeType: java.lang.String
 }
 
+object Anon_DeleteOnTerminationEncrypted {
+  @scala.inline
+  def apply(
+    deleteOnTermination: java.lang.String,
+    encrypted: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    snapshotId: java.lang.String,
+    volumeSize: scala.Double,
+    volumeType: java.lang.String
+  ): Anon_DeleteOnTerminationEncrypted = {
+    val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination, encrypted = encrypted, iops = iops, kmsKeyId = kmsKeyId, snapshotId = snapshotId, volumeSize = volumeSize, volumeType = volumeType)
+  
+    __obj.asInstanceOf[Anon_DeleteOnTerminationEncrypted]
+  }
+}
+

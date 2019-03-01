@@ -178,3 +178,56 @@ trait _Impl extends js.Object {
   def onSelect(`this`: semanticDashUiDashSearchLib.JQuery, result: js.Any, response: js.Any): semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    apiSettings: semanticDashUiDashApiLib.SemanticUINs.ApiSettings,
+    cache: scala.Boolean,
+    className: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.ClassNameSettings,
+    debug: scala.Boolean,
+    duration: scala.Double,
+    easing: java.lang.String,
+    error: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.ErrorSettings,
+    fields: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.FieldsSettings,
+    hideDelay: scala.Double,
+    maxResults: scala.Double,
+    metadata: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.MetadataSettings,
+    minCharacters: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onResults: js.Function2[semanticDashUiDashSearchLib.JQuery, js.Any, scala.Unit],
+    onResultsAdd: js.Function2[
+      semanticDashUiDashSearchLib.JQuery, 
+      java.lang.String, 
+      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
+    ],
+    onResultsClose: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
+    onResultsOpen: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
+    onSearchQuery: js.Function2[semanticDashUiDashSearchLib.JQuery, java.lang.String, scala.Unit],
+    onSelect: js.Function3[
+      semanticDashUiDashSearchLib.JQuery, 
+      js.Any, 
+      js.Any, 
+      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
+    ],
+    performance: scala.Boolean,
+    regExp: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.RegExpSettings,
+    searchDelay: scala.Double,
+    searchFields: js.Array[java.lang.String],
+    searchFullText: scala.Boolean,
+    selectFirstResult: scala.Boolean,
+    selector: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.SelectorSettings,
+    showNoResults: scala.Boolean,
+    silent: scala.Boolean,
+    source: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | js.Any,
+    templates: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.TemplatesSettings,
+    transition: java.lang.String,
+    `type`: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any], cache = cache, className = className.asInstanceOf[js.Any], debug = debug, duration = duration, easing = easing, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hideDelay = hideDelay, maxResults = maxResults, metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, onResults = onResults, onResultsAdd = onResultsAdd, onResultsClose = onResultsClose, onResultsOpen = onResultsOpen, onSearchQuery = onSearchQuery, onSelect = onSelect, performance = performance, regExp = regExp.asInstanceOf[js.Any], searchDelay = searchDelay, searchFields = searchFields, searchFullText = searchFullText, selectFirstResult = selectFirstResult, selector = selector.asInstanceOf[js.Any], showNoResults = showNoResults, silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], transition = transition, `type` = `type`, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -46,3 +46,20 @@ trait TableBordersSettings extends js.Object {
   var top: TableBorderSettings
 }
 
+object TableBordersSettings {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    bottom: TableBorderSettings,
+    insideHorizontal: TableBorderSettings,
+    insideVertical: TableBorderSettings,
+    left: TableBorderSettings,
+    right: TableBorderSettings,
+    top: TableBorderSettings
+  ): TableBordersSettings = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, bottom = bottom, insideHorizontal = insideHorizontal, insideVertical = insideVertical, left = left, right = right, top = top)
+  
+    __obj.asInstanceOf[TableBordersSettings]
+  }
+}
+

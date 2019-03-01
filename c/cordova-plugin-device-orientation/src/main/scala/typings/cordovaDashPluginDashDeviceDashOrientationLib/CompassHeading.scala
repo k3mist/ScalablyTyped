@@ -17,3 +17,17 @@ trait CompassHeading extends js.Object {
   var trueHeading: scala.Double
 }
 
+object CompassHeading {
+  @scala.inline
+  def apply(
+    headingAccuracy: scala.Double,
+    magneticHeading: scala.Double,
+    timestamp: scala.Double,
+    trueHeading: scala.Double
+  ): CompassHeading = {
+    val __obj = js.Dynamic.literal(headingAccuracy = headingAccuracy, magneticHeading = magneticHeading, timestamp = timestamp, trueHeading = trueHeading)
+  
+    __obj.asInstanceOf[CompassHeading]
+  }
+}
+

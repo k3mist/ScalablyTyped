@@ -13,3 +13,18 @@ trait X11ChannelInfo extends ChannelOpenInfo {
   var window: scala.Double
 }
 
+object X11ChannelInfo {
+  @scala.inline
+  def apply(
+    data: X11ChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.x11,
+    window: scala.Double
+  ): X11ChannelInfo = {
+    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, `type` = `type`, window = window)
+  
+    __obj.asInstanceOf[X11ChannelInfo]
+  }
+}
+

@@ -18,3 +18,37 @@ trait XCommand extends XAnimationNode {
   var Target: js.Any
 }
 
+object XCommand {
+  @scala.inline
+  def apply(
+    Acceleration: scala.Double,
+    AutoReverse: scala.Boolean,
+    Begin: js.Any,
+    Command: scala.Double,
+    Decelerate: scala.Double,
+    Duration: js.Any,
+    End: js.Any,
+    EndSync: js.Any,
+    Fill: scala.Double,
+    FillDefault: scala.Double,
+    Parameter: js.Any,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    RepeatCount: js.Any,
+    RepeatDuration: js.Any,
+    Restart: scala.Double,
+    RestartDefault: scala.Double,
+    Target: js.Any,
+    Type: scala.Double,
+    UserData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    acquire: js.Function0[scala.Unit],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XCommand = {
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, AutoReverse = AutoReverse, Begin = Begin, Command = Command, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Parameter = Parameter, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, Target = Target, Type = Type, UserData = UserData, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+  
+    __obj.asInstanceOf[XCommand]
+  }
+}
+

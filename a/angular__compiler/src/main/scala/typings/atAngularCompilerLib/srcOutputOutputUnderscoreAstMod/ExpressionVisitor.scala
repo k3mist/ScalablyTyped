@@ -30,3 +30,35 @@ trait ExpressionVisitor extends js.Object {
   def visitWriteVarExpr(expr: WriteVarExpr, context: js.Any): js.Any
 }
 
+object ExpressionVisitor {
+  @scala.inline
+  def apply(
+    visitAssertNotNullExpr: js.Function2[AssertNotNull, js.Any, js.Any],
+    visitBinaryOperatorExpr: js.Function2[BinaryOperatorExpr, js.Any, js.Any],
+    visitCastExpr: js.Function2[CastExpr, js.Any, js.Any],
+    visitCommaExpr: js.Function2[CommaExpr, js.Any, js.Any],
+    visitConditionalExpr: js.Function2[ConditionalExpr, js.Any, js.Any],
+    visitExternalExpr: js.Function2[ExternalExpr, js.Any, js.Any],
+    visitFunctionExpr: js.Function2[FunctionExpr, js.Any, js.Any],
+    visitInstantiateExpr: js.Function2[InstantiateExpr, js.Any, js.Any],
+    visitInvokeFunctionExpr: js.Function2[InvokeFunctionExpr, js.Any, js.Any],
+    visitInvokeMethodExpr: js.Function2[InvokeMethodExpr, js.Any, js.Any],
+    visitLiteralArrayExpr: js.Function2[LiteralArrayExpr, js.Any, js.Any],
+    visitLiteralExpr: js.Function2[LiteralExpr, js.Any, js.Any],
+    visitLiteralMapExpr: js.Function2[LiteralMapExpr, js.Any, js.Any],
+    visitNotExpr: js.Function2[NotExpr, js.Any, js.Any],
+    visitReadKeyExpr: js.Function2[ReadKeyExpr, js.Any, js.Any],
+    visitReadPropExpr: js.Function2[ReadPropExpr, js.Any, js.Any],
+    visitReadVarExpr: js.Function2[ReadVarExpr, js.Any, js.Any],
+    visitTypeofExpr: js.Function2[TypeofExpr, js.Any, js.Any],
+    visitWrappedNodeExpr: js.Function2[WrappedNodeExpr[_], js.Any, js.Any],
+    visitWriteKeyExpr: js.Function2[WriteKeyExpr, js.Any, js.Any],
+    visitWritePropExpr: js.Function2[WritePropExpr, js.Any, js.Any],
+    visitWriteVarExpr: js.Function2[WriteVarExpr, js.Any, js.Any]
+  ): ExpressionVisitor = {
+    val __obj = js.Dynamic.literal(visitAssertNotNullExpr = visitAssertNotNullExpr, visitBinaryOperatorExpr = visitBinaryOperatorExpr, visitCastExpr = visitCastExpr, visitCommaExpr = visitCommaExpr, visitConditionalExpr = visitConditionalExpr, visitExternalExpr = visitExternalExpr, visitFunctionExpr = visitFunctionExpr, visitInstantiateExpr = visitInstantiateExpr, visitInvokeFunctionExpr = visitInvokeFunctionExpr, visitInvokeMethodExpr = visitInvokeMethodExpr, visitLiteralArrayExpr = visitLiteralArrayExpr, visitLiteralExpr = visitLiteralExpr, visitLiteralMapExpr = visitLiteralMapExpr, visitNotExpr = visitNotExpr, visitReadKeyExpr = visitReadKeyExpr, visitReadPropExpr = visitReadPropExpr, visitReadVarExpr = visitReadVarExpr, visitTypeofExpr = visitTypeofExpr, visitWrappedNodeExpr = visitWrappedNodeExpr, visitWriteKeyExpr = visitWriteKeyExpr, visitWritePropExpr = visitWritePropExpr, visitWriteVarExpr = visitWriteVarExpr)
+  
+    __obj.asInstanceOf[ExpressionVisitor]
+  }
+}
+

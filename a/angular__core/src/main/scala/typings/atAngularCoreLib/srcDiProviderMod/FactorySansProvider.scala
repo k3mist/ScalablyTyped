@@ -19,3 +19,12 @@ trait FactorySansProvider
   var useFactory: js.Function
 }
 
+object FactorySansProvider {
+  @scala.inline
+  def apply(useFactory: js.Function, deps: js.Array[_] = null): FactorySansProvider = {
+    val __obj = js.Dynamic.literal(useFactory = useFactory)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[FactorySansProvider]
+  }
+}
+

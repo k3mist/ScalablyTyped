@@ -28,3 +28,19 @@ trait SizeSchemeForPolygon
   var opacity: scala.Double
 }
 
+object SizeSchemeForPolygon {
+  @scala.inline
+  def apply(
+    background: SizeSchemeForPolygonBackground,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    marker: SizeSchemeForPoint,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): SizeSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(background = background, constructor = constructor, hasOwnProperty = hasOwnProperty, marker = marker, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[SizeSchemeForPolygon]
+  }
+}
+

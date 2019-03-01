@@ -20,3 +20,16 @@ trait SliceViewModelProperties extends js.Object {
   var excludedLayers: js.UndefOr[CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]] = js.undefined
 }
 
+object SliceViewModelProperties {
+  @scala.inline
+  def apply(
+    excludeGroundSurface: js.UndefOr[scala.Boolean] = js.undefined,
+    excludedLayers: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties] = null
+  ): SliceViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(excludeGroundSurface)) __obj.updateDynamic("excludeGroundSurface")(excludeGroundSurface)
+    if (excludedLayers != null) __obj.updateDynamic("excludedLayers")(excludedLayers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SliceViewModelProperties]
+  }
+}
+

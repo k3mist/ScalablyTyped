@@ -11,3 +11,18 @@ import scala.scalajs.js.annotation._
   def onOutsideClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    onOutsideClick: js.Function1[
+      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
+  ): Props = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onOutsideClick = onOutsideClick)
+  
+    __obj.asInstanceOf[Props]
+  }
+}
+

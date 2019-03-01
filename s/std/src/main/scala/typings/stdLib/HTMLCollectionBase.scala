@@ -19,3 +19,17 @@ trait HTMLCollectionBase
   def item(index: scala.Double): Element | scala.Null
 }
 
+object HTMLCollectionBase {
+  @scala.inline
+  def apply(
+    item: js.Function1[scala.Double, Element | scala.Null],
+    iterator: js.Function0[IterableIterator[Element]],
+    length: scala.Double,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Element] = null
+  ): HTMLCollectionBase = {
+    val __obj = js.Dynamic.literal(item = item, iterator = iterator, length = length)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[HTMLCollectionBase]
+  }
+}
+

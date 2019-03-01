@@ -26,3 +26,23 @@ trait XMultipleOperation
   ): scala.Unit
 }
 
+object XMultipleOperation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTableOperation: js.Function4[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      TableOperationMode, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      scala.Unit
+    ]
+  ): XMultipleOperation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setTableOperation = setTableOperation)
+  
+    __obj.asInstanceOf[XMultipleOperation]
+  }
+}
+

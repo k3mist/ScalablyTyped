@@ -16,3 +16,12 @@ trait ASPxClientReportDesignerDialogCancelEventArgs extends ASPxClientReportDesi
   var Cancel: scala.Boolean
 }
 
+object ASPxClientReportDesignerDialogCancelEventArgs {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, Report: js.Object, Url: java.lang.String): ASPxClientReportDesignerDialogCancelEventArgs = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Report = Report, Url = Url)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerDialogCancelEventArgs]
+  }
+}
+

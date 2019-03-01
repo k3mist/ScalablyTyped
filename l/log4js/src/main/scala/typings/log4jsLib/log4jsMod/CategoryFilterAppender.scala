@@ -13,3 +13,17 @@ trait CategoryFilterAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.categoryFilter
 }
 
+object CategoryFilterAppender {
+  @scala.inline
+  def apply(
+    `type`: log4jsLib.log4jsLibStrings.categoryFilter,
+    appender: java.lang.String = null,
+    exclude: java.lang.String | js.Array[java.lang.String] = null
+  ): CategoryFilterAppender = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (appender != null) __obj.updateDynamic("appender")(appender)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CategoryFilterAppender]
+  }
+}
+

@@ -9,3 +9,12 @@ trait TransitionProps extends js.Object {
   var progress: scala.Double
 }
 
+object TransitionProps {
+  @scala.inline
+  def apply(progress: scala.Double): TransitionProps = {
+    val __obj = js.Dynamic.literal(progress = progress)
+  
+    __obj.asInstanceOf[TransitionProps]
+  }
+}
+

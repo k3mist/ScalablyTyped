@@ -12,3 +12,12 @@ trait IResizeEntry extends js.Object {
   var target: reactLib.Element
 }
 
+object IResizeEntry {
+  @scala.inline
+  def apply(contentRect: stdLib.DOMRectReadOnly, target: reactLib.Element): IResizeEntry = {
+    val __obj = js.Dynamic.literal(contentRect = contentRect, target = target)
+  
+    __obj.asInstanceOf[IResizeEntry]
+  }
+}
+

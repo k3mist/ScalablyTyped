@@ -44,3 +44,21 @@ trait ConfigOptions extends js.Object {
   var useCalc: scala.Boolean
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    autoRename: scala.Boolean,
+    autoRenameStrict: scala.Boolean,
+    blacklist: js.Object,
+    clean: scala.Boolean,
+    greedy: scala.Boolean,
+    processUrls: scala.Boolean | js.Object,
+    stringMap: js.Array[StringMap],
+    useCalc: scala.Boolean
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal(autoRename = autoRename, autoRenameStrict = autoRenameStrict, blacklist = blacklist, clean = clean, greedy = greedy, processUrls = processUrls.asInstanceOf[js.Any], stringMap = stringMap, useCalc = useCalc)
+  
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

@@ -11,3 +11,12 @@ trait View extends js.Object {
   def unbind(): scala.Unit
 }
 
+object View {
+  @scala.inline
+  def apply(bind: js.Function0[scala.Unit], build: js.Function0[scala.Unit], unbind: js.Function0[scala.Unit]): View = {
+    val __obj = js.Dynamic.literal(bind = bind, build = build, unbind = unbind)
+  
+    __obj.asInstanceOf[View]
+  }
+}
+

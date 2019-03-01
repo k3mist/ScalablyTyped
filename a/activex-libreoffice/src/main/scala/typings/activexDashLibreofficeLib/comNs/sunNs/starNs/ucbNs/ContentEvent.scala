@@ -34,3 +34,17 @@ trait ContentEvent
   var Id: XContentIdentifier
 }
 
+object ContentEvent {
+  @scala.inline
+  def apply(
+    Action: scala.Double,
+    Content: XContent,
+    Id: XContentIdentifier,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ContentEvent = {
+    val __obj = js.Dynamic.literal(Action = Action, Content = Content, Id = Id, Source = Source)
+  
+    __obj.asInstanceOf[ContentEvent]
+  }
+}
+

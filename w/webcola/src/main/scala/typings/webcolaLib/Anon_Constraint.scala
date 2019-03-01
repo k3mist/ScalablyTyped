@@ -11,3 +11,16 @@ trait Anon_Constraint extends js.Object {
   var rb: webcolaLib.distSrcVpscMod.Block
 }
 
+object Anon_Constraint {
+  @scala.inline
+  def apply(
+    constraint: webcolaLib.distSrcVpscMod.Constraint,
+    lb: webcolaLib.distSrcVpscMod.Block,
+    rb: webcolaLib.distSrcVpscMod.Block
+  ): Anon_Constraint = {
+    val __obj = js.Dynamic.literal(constraint = constraint, lb = lb, rb = rb)
+  
+    __obj.asInstanceOf[Anon_Constraint]
+  }
+}
+

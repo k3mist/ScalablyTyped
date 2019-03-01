@@ -13,3 +13,18 @@ trait Anon_0 extends js.Object {
   var ZERO: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`0`
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    FOUR: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`4`,
+    ONE: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`1`,
+    THREE: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`3`,
+    TWO: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`2`,
+    ZERO: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`0`
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal(FOUR = FOUR, ONE = ONE, THREE = THREE, TWO = TWO, ZERO = ZERO)
+  
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

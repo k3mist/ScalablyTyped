@@ -27,3 +27,19 @@ trait ThemeManager extends js.Object {
   def onDidChangeActiveThemes(callback: js.Function0[scala.Unit]): Disposable
 }
 
+object ThemeManager {
+  @scala.inline
+  def apply(
+    getActiveThemeNames: js.Function0[js.UndefOr[js.Array[java.lang.String]]],
+    getActiveThemes: js.Function0[js.UndefOr[js.Array[Package]]],
+    getEnabledThemeNames: js.Function0[js.Array[java.lang.String]],
+    getLoadedThemeNames: js.Function0[js.UndefOr[js.Array[java.lang.String]]],
+    getLoadedThemes: js.Function0[js.UndefOr[js.Array[Package]]],
+    onDidChangeActiveThemes: js.Function1[js.Function0[scala.Unit], Disposable]
+  ): ThemeManager = {
+    val __obj = js.Dynamic.literal(getActiveThemeNames = getActiveThemeNames, getActiveThemes = getActiveThemes, getEnabledThemeNames = getEnabledThemeNames, getLoadedThemeNames = getLoadedThemeNames, getLoadedThemes = getLoadedThemes, onDidChangeActiveThemes = onDidChangeActiveThemes)
+  
+    __obj.asInstanceOf[ThemeManager]
+  }
+}
+

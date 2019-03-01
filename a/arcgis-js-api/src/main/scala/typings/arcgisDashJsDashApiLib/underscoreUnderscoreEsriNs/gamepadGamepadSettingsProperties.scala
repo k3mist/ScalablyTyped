@@ -44,3 +44,20 @@ trait gamepadGamepadSettingsProperties extends js.Object {
   ] = js.undefined
 }
 
+object gamepadGamepadSettingsProperties {
+  @scala.inline
+  def apply(
+    device: GamepadInputDeviceProperties = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.pan | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.zoom = null,
+    tiltDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`forward-down` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`forward-up` = null
+  ): gamepadGamepadSettingsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (tiltDirection != null) __obj.updateDynamic("tiltDirection")(tiltDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[gamepadGamepadSettingsProperties]
+  }
+}
+

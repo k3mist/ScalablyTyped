@@ -47,3 +47,52 @@ trait IPropertyValueStatics extends js.Object {
   def createUInt8Array(value: stdLib.Uint8Array): js.Any
 }
 
+object IPropertyValueStatics {
+  @scala.inline
+  def apply(
+    createBoolean: js.Function1[scala.Boolean, js.Any],
+    createBooleanArray: js.Function1[js.Array[scala.Boolean], js.Any],
+    createChar16: js.Function1[java.lang.String, js.Any],
+    createChar16Array: js.Function1[js.Array[java.lang.String], js.Any],
+    createDateTime: js.Function1[stdLib.Date, js.Any],
+    createDateTimeArray: js.Function1[js.Array[stdLib.Date], js.Any],
+    createDouble: js.Function1[scala.Double, js.Any],
+    createDoubleArray: js.Function1[stdLib.Float64Array, js.Any],
+    createEmpty: js.Function0[js.Any],
+    createGuid: js.Function1[java.lang.String, js.Any],
+    createGuidArray: js.Function1[js.Array[java.lang.String], js.Any],
+    createInspectable: js.Function1[js.Any, js.Any],
+    createInspectableArray: js.Function1[js.Array[_], js.Any],
+    createInt16: js.Function1[scala.Double, js.Any],
+    createInt16Array: js.Function1[stdLib.Int16Array, js.Any],
+    createInt32: js.Function1[scala.Double, js.Any],
+    createInt32Array: js.Function1[stdLib.Int32Array, js.Any],
+    createInt64: js.Function1[scala.Double, js.Any],
+    createInt64Array: js.Function1[js.Array[scala.Double], js.Any],
+    createPoint: js.Function1[Point, js.Any],
+    createPointArray: js.Function1[js.Array[Point], js.Any],
+    createRect: js.Function1[Rect, js.Any],
+    createRectArray: js.Function1[js.Array[Rect], js.Any],
+    createSingle: js.Function1[scala.Double, js.Any],
+    createSingleArray: js.Function1[stdLib.Float32Array, js.Any],
+    createSize: js.Function1[Size, js.Any],
+    createSizeArray: js.Function1[js.Array[Size], js.Any],
+    createString: js.Function1[java.lang.String, js.Any],
+    createStringArray: js.Function1[js.Array[java.lang.String], js.Any],
+    createTimeSpan: js.Function1[scala.Double, js.Any],
+    createTimeSpanArray: js.Function1[js.Array[scala.Double], js.Any],
+    createUInt16: js.Function1[scala.Double, js.Any],
+    createUInt16Array: js.Function1[stdLib.Uint16Array, js.Any],
+    createUInt32: js.Function1[scala.Double, js.Any],
+    createUInt32Array: js.Function1[stdLib.Uint32Array, js.Any],
+    createUInt64: js.Function1[scala.Double, js.Any],
+    createUInt64Array: js.Function1[js.Array[scala.Double], js.Any],
+    createUInt8: js.Function1[scala.Double, js.Any],
+    createUInt8Array: js.Function1[stdLib.Uint8Array, js.Any]
+  ): IPropertyValueStatics = {
+    val __obj = js.Dynamic.literal(createBoolean = createBoolean, createBooleanArray = createBooleanArray, createChar16 = createChar16, createChar16Array = createChar16Array, createDateTime = createDateTime, createDateTimeArray = createDateTimeArray, createDouble = createDouble, createDoubleArray = createDoubleArray, createEmpty = createEmpty, createGuid = createGuid, createGuidArray = createGuidArray, createInspectable = createInspectable, createInspectableArray = createInspectableArray, createInt16 = createInt16, createInt16Array = createInt16Array, createInt32 = createInt32, createInt32Array = createInt32Array, createInt64 = createInt64, createInt64Array = createInt64Array, createPoint = createPoint, createPointArray = createPointArray, createRect = createRect, createRectArray = createRectArray, createSingle = createSingle, createSingleArray = createSingleArray, createSize = createSize, createSizeArray = createSizeArray, createString = createString, createStringArray = createStringArray, createTimeSpan = createTimeSpan, createTimeSpanArray = createTimeSpanArray, createUInt16 = createUInt16, createUInt16Array = createUInt16Array, createUInt32 = createUInt32, createUInt32Array = createUInt32Array, createUInt64 = createUInt64, createUInt64Array = createUInt64Array, createUInt8 = createUInt8, createUInt8Array = createUInt8Array)
+  
+    __obj.asInstanceOf[IPropertyValueStatics]
+  }
+}
+

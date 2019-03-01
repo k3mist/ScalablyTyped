@@ -76,3 +76,31 @@ trait XGlobalSheetSettings extends js.Object {
   var UserLists: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XGlobalSheetSettings {
+  @scala.inline
+  def apply(
+    DoAutoComplete: scala.Boolean,
+    EnterEdit: scala.Boolean,
+    ExpandReferences: scala.Boolean,
+    ExtendFormat: scala.Boolean,
+    LinkUpdateMode: scala.Double,
+    MarkHeader: scala.Boolean,
+    Metric: scala.Double,
+    MoveDirection: scala.Double,
+    MoveSelection: scala.Boolean,
+    PrintAllSheets: scala.Boolean,
+    PrintEmptyPages: scala.Boolean,
+    RangeFinder: scala.Boolean,
+    ReplaceCellsWarning: scala.Boolean,
+    Scale: scala.Double,
+    StatusBarFunction: scala.Double,
+    UsePrinterMetrics: scala.Boolean,
+    UseTabCol: scala.Boolean,
+    UserLists: activexDashInteropLib.SafeArray[java.lang.String]
+  ): XGlobalSheetSettings = {
+    val __obj = js.Dynamic.literal(DoAutoComplete = DoAutoComplete, EnterEdit = EnterEdit, ExpandReferences = ExpandReferences, ExtendFormat = ExtendFormat, LinkUpdateMode = LinkUpdateMode, MarkHeader = MarkHeader, Metric = Metric, MoveDirection = MoveDirection, MoveSelection = MoveSelection, PrintAllSheets = PrintAllSheets, PrintEmptyPages = PrintEmptyPages, RangeFinder = RangeFinder, ReplaceCellsWarning = ReplaceCellsWarning, Scale = Scale, StatusBarFunction = StatusBarFunction, UsePrinterMetrics = UsePrinterMetrics, UseTabCol = UseTabCol, UserLists = UserLists)
+  
+    __obj.asInstanceOf[XGlobalSheetSettings]
+  }
+}
+

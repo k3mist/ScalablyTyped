@@ -10,3 +10,16 @@ trait ExtendedFeatureCollection[FeatureType /* <: ExtendedFeature[GeoGeometryObj
   var features: js.Array[FeatureType]
 }
 
+object ExtendedFeatureCollection {
+  @scala.inline
+  def apply[FeatureType /* <: ExtendedFeature[GeoGeometryObjects | scala.Null, geojsonLib.geojsonMod.GeoJsonProperties] */](
+    features: js.Array[FeatureType],
+    `type`: geojsonLib.geojsonMod.GeoJsonTypes,
+    bbox: geojsonLib.geojsonMod.BBox = null
+  ): ExtendedFeatureCollection[FeatureType] = {
+    val __obj = js.Dynamic.literal(features = features, `type` = `type`.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtendedFeatureCollection[FeatureType]]
+  }
+}
+

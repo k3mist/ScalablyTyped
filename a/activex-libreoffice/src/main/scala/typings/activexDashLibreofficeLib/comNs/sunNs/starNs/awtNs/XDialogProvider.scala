@@ -17,3 +17,17 @@ trait XDialogProvider
   def createDialog(URL: java.lang.String): XDialog
 }
 
+object XDialogProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDialog: js.Function1[java.lang.String, XDialog],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDialogProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createDialog = createDialog, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDialogProvider]
+  }
+}
+

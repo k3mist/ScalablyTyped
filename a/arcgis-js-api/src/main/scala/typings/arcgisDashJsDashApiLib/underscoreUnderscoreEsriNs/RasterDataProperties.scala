@@ -26,3 +26,14 @@ trait RasterDataProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RasterDataProperties {
+  @scala.inline
+  def apply(format: java.lang.String = null, itemId: java.lang.String = null, url: java.lang.String = null): RasterDataProperties = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[RasterDataProperties]
+  }
+}
+

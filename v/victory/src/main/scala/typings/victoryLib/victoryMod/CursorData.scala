@@ -10,3 +10,12 @@ trait CursorData extends js.Object {
   var y: scala.Double
 }
 
+object CursorData {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): CursorData = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[CursorData]
+  }
+}
+

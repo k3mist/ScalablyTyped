@@ -100,3 +100,29 @@ trait GuardianInvitationsResource extends js.Object {
   def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationIdKey): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
 }
 
+object GuardianInvitationsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListGuardianInvitationsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+    ]
+  ): GuardianInvitationsResource = {
+    val __obj = js.Dynamic.literal(create = create, get = get, list = list, patch = patch)
+  
+    __obj.asInstanceOf[GuardianInvitationsResource]
+  }
+}
+

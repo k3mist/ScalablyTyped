@@ -13,3 +13,18 @@ trait IRequest extends js.Object {
   var url: java.lang.String
 }
 
+object IRequest {
+  @scala.inline
+  def apply(
+    headers: js.Object,
+    id: scala.Double,
+    method: java.lang.String,
+    time: stdLib.Date,
+    url: java.lang.String
+  ): IRequest = {
+    val __obj = js.Dynamic.literal(headers = headers, id = id, method = method, time = time, url = url)
+  
+    __obj.asInstanceOf[IRequest]
+  }
+}
+

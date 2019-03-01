@@ -68,3 +68,27 @@ trait Spot extends js.Object {
   def setTo(x: scala.Double, y: scala.Double, offx: scala.Double, offy: scala.Double): Spot
 }
 
+object Spot {
+  @scala.inline
+  def apply(
+    copy: js.Function0[Spot],
+    equals: js.Function1[Spot, scala.Boolean],
+    includesSide: js.Function1[Spot, scala.Boolean],
+    isDefault: js.Function0[scala.Boolean],
+    isNoSpot: js.Function0[scala.Boolean],
+    isSide: js.Function0[scala.Boolean],
+    isSpot: js.Function0[scala.Boolean],
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    opposite: js.Function0[Spot],
+    set: js.Function1[Spot, Spot],
+    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Spot],
+    x: scala.Double,
+    y: scala.Double
+  ): Spot = {
+    val __obj = js.Dynamic.literal(copy = copy, equals = equals, includesSide = includesSide, isDefault = isDefault, isNoSpot = isNoSpot, isSide = isSide, isSpot = isSpot, offsetX = offsetX, offsetY = offsetY, opposite = opposite, set = set, setTo = setTo, x = x, y = y)
+  
+    __obj.asInstanceOf[Spot]
+  }
+}
+

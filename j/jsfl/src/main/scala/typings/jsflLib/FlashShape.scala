@@ -28,3 +28,30 @@ trait FlashShape extends FlashOval {
   def getCubicSegmentPoints(cubicSegmentIndex: scala.Double): js.Array[FlashPoint]
 }
 
+object FlashShape {
+  @scala.inline
+  def apply(
+    beginEdit: js.Function0[scala.Unit],
+    closePath: scala.Boolean,
+    contours: js.Array[FlashContour],
+    deleteEdge: js.Function1[scala.Double, scala.Unit],
+    edges: js.Array[FlashEdge],
+    endAngle: scala.Double,
+    endEdit: js.Function0[scala.Unit],
+    getCubicSegmentPoints: js.Function1[scala.Double, js.Array[FlashPoint]],
+    innerRadius: scala.Double,
+    isDrawingObject: scala.Boolean,
+    isGroup: scala.Boolean,
+    isOvalObject: scala.Boolean,
+    isRectangleObject: scala.Boolean,
+    members: js.Array[FlashShape],
+    numCubicSegments: scala.Double,
+    startAngle: scala.Double,
+    vertices: js.Array[FlashVertex]
+  ): FlashShape = {
+    val __obj = js.Dynamic.literal(beginEdit = beginEdit, closePath = closePath, contours = contours, deleteEdge = deleteEdge, edges = edges, endAngle = endAngle, endEdit = endEdit, getCubicSegmentPoints = getCubicSegmentPoints, innerRadius = innerRadius, isDrawingObject = isDrawingObject, isGroup = isGroup, isOvalObject = isOvalObject, isRectangleObject = isRectangleObject, members = members, numCubicSegments = numCubicSegments, startAngle = startAngle, vertices = vertices)
+  
+    __obj.asInstanceOf[FlashShape]
+  }
+}
+

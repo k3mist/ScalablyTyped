@@ -10,3 +10,12 @@ trait DefaultHost extends Host {
   var port: scala.Double
 }
 
+object DefaultHost {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Double): DefaultHost = {
+    val __obj = js.Dynamic.literal(host = host, port = port)
+  
+    __obj.asInstanceOf[DefaultHost]
+  }
+}
+

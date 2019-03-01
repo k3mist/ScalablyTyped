@@ -12,3 +12,12 @@ trait EventCall[T] extends js.Object {
   var url: EventUrl
 }
 
+object EventCall {
+  @scala.inline
+  def apply[T](headers: EventHttpHeaders, params: T, statusCode: scala.Double, url: EventUrl): EventCall[T] = {
+    val __obj = js.Dynamic.literal(headers = headers, params = params.asInstanceOf[js.Any], statusCode = statusCode, url = url.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[EventCall[T]]
+  }
+}
+

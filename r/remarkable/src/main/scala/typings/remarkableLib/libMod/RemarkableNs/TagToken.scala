@@ -22,3 +22,12 @@ trait TagToken extends js.Object {
   var `type`: java.lang.String
 }
 
+object TagToken {
+  @scala.inline
+  def apply(level: scala.Double, `type`: java.lang.String, lines: js.Tuple2[scala.Double, scala.Double] = null): TagToken = {
+    val __obj = js.Dynamic.literal(level = level, `type` = `type`)
+    if (lines != null) __obj.updateDynamic("lines")(lines)
+    __obj.asInstanceOf[TagToken]
+  }
+}
+

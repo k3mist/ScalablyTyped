@@ -10,3 +10,15 @@ trait NavigationScreenConfigProps extends js.Object {
   var screenProps: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object NavigationScreenConfigProps {
+  @scala.inline
+  def apply(
+    navigation: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams],
+    screenProps: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): NavigationScreenConfigProps = {
+    val __obj = js.Dynamic.literal(navigation = navigation, screenProps = screenProps)
+  
+    __obj.asInstanceOf[NavigationScreenConfigProps]
+  }
+}
+

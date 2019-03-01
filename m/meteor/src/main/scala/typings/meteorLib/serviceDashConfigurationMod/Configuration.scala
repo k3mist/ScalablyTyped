@@ -10,3 +10,12 @@ trait Configuration extends js.Object {
   var secret: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(appId: java.lang.String, secret: java.lang.String): Configuration = {
+    val __obj = js.Dynamic.literal(appId = appId, secret = secret)
+  
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

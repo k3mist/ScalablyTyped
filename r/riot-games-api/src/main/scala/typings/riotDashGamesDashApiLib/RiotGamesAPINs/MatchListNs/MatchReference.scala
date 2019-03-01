@@ -17,3 +17,22 @@ trait MatchReference extends js.Object {
   var timestamp: scala.Double
 }
 
+object MatchReference {
+  @scala.inline
+  def apply(
+    champion: scala.Double,
+    lane: java.lang.String,
+    matchId: scala.Double,
+    plateformId: java.lang.String,
+    queue: java.lang.String,
+    region: java.lang.String,
+    role: java.lang.String,
+    season: java.lang.String,
+    timestamp: scala.Double
+  ): MatchReference = {
+    val __obj = js.Dynamic.literal(champion = champion, lane = lane, matchId = matchId, plateformId = plateformId, queue = queue, region = region, role = role, season = season, timestamp = timestamp)
+  
+    __obj.asInstanceOf[MatchReference]
+  }
+}
+

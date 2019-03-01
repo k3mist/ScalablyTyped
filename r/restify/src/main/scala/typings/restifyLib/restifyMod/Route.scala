@@ -13,3 +13,18 @@ trait Route extends js.Object {
   var spec: RouteSpec
 }
 
+object Route {
+  @scala.inline
+  def apply(
+    chain: Chain,
+    method: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String | stdLib.RegExp,
+    spec: RouteSpec
+  ): Route = {
+    val __obj = js.Dynamic.literal(chain = chain, method = method, name = name, path = path.asInstanceOf[js.Any], spec = spec)
+  
+    __obj.asInstanceOf[Route]
+  }
+}
+

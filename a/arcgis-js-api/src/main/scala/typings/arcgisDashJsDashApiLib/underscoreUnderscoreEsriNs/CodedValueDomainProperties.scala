@@ -14,3 +14,18 @@ trait CodedValueDomainProperties extends DomainProperties {
   var codedValues: js.UndefOr[js.Array[CodedValueDomainCodedValues]] = js.undefined
 }
 
+object CodedValueDomainProperties {
+  @scala.inline
+  def apply(
+    codedValues: js.Array[CodedValueDomainCodedValues] = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): CodedValueDomainProperties = {
+    val __obj = js.Dynamic.literal()
+    if (codedValues != null) __obj.updateDynamic("codedValues")(codedValues)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CodedValueDomainProperties]
+  }
+}
+

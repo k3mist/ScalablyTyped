@@ -30,3 +30,31 @@ trait AudioFeaturesObject extends js.Object {
   var valence: scala.Double
 }
 
+object AudioFeaturesObject {
+  @scala.inline
+  def apply(
+    acousticness: scala.Double,
+    analysis_url: java.lang.String,
+    danceability: scala.Double,
+    duration_ms: scala.Double,
+    energy: scala.Double,
+    id: java.lang.String,
+    instrumentalness: scala.Double,
+    key: scala.Double,
+    liveness: scala.Double,
+    loudness: scala.Double,
+    mode: scala.Double,
+    speechiness: scala.Double,
+    tempo: scala.Double,
+    time_signature: scala.Double,
+    track_href: java.lang.String,
+    `type`: spotifyDashApiLib.spotifyDashApiLibStrings.audio_features,
+    uri: java.lang.String,
+    valence: scala.Double
+  ): AudioFeaturesObject = {
+    val __obj = js.Dynamic.literal(acousticness = acousticness, analysis_url = analysis_url, danceability = danceability, duration_ms = duration_ms, energy = energy, id = id, instrumentalness = instrumentalness, key = key, liveness = liveness, loudness = loudness, mode = mode, speechiness = speechiness, tempo = tempo, time_signature = time_signature, track_href = track_href, `type` = `type`, uri = uri, valence = valence)
+  
+    __obj.asInstanceOf[AudioFeaturesObject]
+  }
+}
+

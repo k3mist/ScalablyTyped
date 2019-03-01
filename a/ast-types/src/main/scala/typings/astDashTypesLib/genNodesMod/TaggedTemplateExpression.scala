@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TaggedTemplateExpression
 }
 
+object TaggedTemplateExpression {
+  @scala.inline
+  def apply(
+    quasi: astDashTypesLib.genKindsMod.TemplateLiteralKind,
+    tag: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TaggedTemplateExpression
+  ): TaggedTemplateExpression = {
+    val __obj = js.Dynamic.literal(quasi = quasi, tag = tag, `type` = `type`)
+  
+    __obj.asInstanceOf[TaggedTemplateExpression]
+  }
+}
+

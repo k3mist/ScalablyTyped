@@ -13,3 +13,16 @@ trait BracketsPlain
   var type_BracketsPlain: cssDashTreeLib.cssDashTreeLibStrings.Brackets
 }
 
+object BracketsPlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Brackets,
+    loc: CssLocation = null
+  ): BracketsPlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[BracketsPlain]
+  }
+}
+

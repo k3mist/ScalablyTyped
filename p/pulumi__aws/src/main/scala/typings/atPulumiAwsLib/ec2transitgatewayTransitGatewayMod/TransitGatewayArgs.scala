@@ -44,3 +44,30 @@ trait TransitGatewayArgs extends js.Object {
   val vpnEcmpSupport: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object TransitGatewayArgs {
+  @scala.inline
+  def apply(
+    amazonSideAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    autoAcceptSharedAttachments: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    defaultRouteTableAssociation: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    defaultRouteTablePropagation: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsSupport: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    vpnEcmpSupport: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): TransitGatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
+    if (autoAcceptSharedAttachments != null) __obj.updateDynamic("autoAcceptSharedAttachments")(autoAcceptSharedAttachments.asInstanceOf[js.Any])
+    if (defaultRouteTableAssociation != null) __obj.updateDynamic("defaultRouteTableAssociation")(defaultRouteTableAssociation.asInstanceOf[js.Any])
+    if (defaultRouteTablePropagation != null) __obj.updateDynamic("defaultRouteTablePropagation")(defaultRouteTablePropagation.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpnEcmpSupport != null) __obj.updateDynamic("vpnEcmpSupport")(vpnEcmpSupport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TransitGatewayArgs]
+  }
+}
+

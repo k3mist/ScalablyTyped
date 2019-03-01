@@ -47,3 +47,20 @@ trait ResolvableLiteral
   var token: js.Any
 }
 
+object ResolvableLiteral {
+  @scala.inline
+  def apply(
+    resolveFn: js.Function,
+    token: js.Any,
+    data: js.Any = null,
+    deps: js.Array[_] = null,
+    policy: ResolvePolicy = null
+  ): ResolvableLiteral = {
+    val __obj = js.Dynamic.literal(resolveFn = resolveFn, token = token)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[ResolvableLiteral]
+  }
+}
+

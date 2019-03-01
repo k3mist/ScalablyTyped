@@ -21,3 +21,12 @@ trait ASPxClientGridViewCellInfo extends js.Object {
   var rowVisibleIndex: scala.Double
 }
 
+object ASPxClientGridViewCellInfo {
+  @scala.inline
+  def apply(column: ASPxClientGridViewColumn, rowVisibleIndex: scala.Double): ASPxClientGridViewCellInfo = {
+    val __obj = js.Dynamic.literal(column = column, rowVisibleIndex = rowVisibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientGridViewCellInfo]
+  }
+}
+

@@ -51,3 +51,21 @@ trait TableCellFormattingSettings extends js.Object {
   var verticalAlignment: js.Any
 }
 
+object TableCellFormattingSettings {
+  @scala.inline
+  def apply(
+    marginBottom: scala.Double,
+    marginLeft: scala.Double,
+    marginRight: scala.Double,
+    marginTop: scala.Double,
+    marginsSameAsTable: scala.Boolean,
+    noWrap: scala.Boolean,
+    preferredWidth: TableWidthUnit,
+    verticalAlignment: js.Any
+  ): TableCellFormattingSettings = {
+    val __obj = js.Dynamic.literal(marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, marginsSameAsTable = marginsSameAsTable, noWrap = noWrap, preferredWidth = preferredWidth, verticalAlignment = verticalAlignment)
+  
+    __obj.asInstanceOf[TableCellFormattingSettings]
+  }
+}
+

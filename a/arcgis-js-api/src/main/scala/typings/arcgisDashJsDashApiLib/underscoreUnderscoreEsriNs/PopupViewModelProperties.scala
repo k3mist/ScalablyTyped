@@ -86,3 +86,38 @@ trait PopupViewModelProperties extends GoToProperties {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PopupViewModelProperties {
+  @scala.inline
+  def apply(
+    actions: CollectionProperties[ActionButton | ActionToggle] = null,
+    autoCloseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    autoOpenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String | stdLib.HTMLElement | WidgetProperties = null,
+    features: js.Array[GraphicProperties] = null,
+    goToOverride: GoToOverride = null,
+    highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    location: PointProperties = null,
+    promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
+    selectedFeatureIndex: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PopupViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled)
+    if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (promises != null) __obj.updateDynamic("promises")(promises)
+    if (selectedFeatureIndex != null) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PopupViewModelProperties]
+  }
+}
+

@@ -12,3 +12,12 @@ trait BadgeTextDetails extends js.Object {
   var text: java.lang.String
 }
 
+object BadgeTextDetails {
+  @scala.inline
+  def apply(text: java.lang.String, tabId: scala.Int | scala.Double = null): BadgeTextDetails = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BadgeTextDetails]
+  }
+}
+

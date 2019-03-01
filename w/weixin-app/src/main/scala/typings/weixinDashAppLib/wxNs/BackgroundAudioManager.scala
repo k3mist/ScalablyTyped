@@ -58,3 +58,38 @@ trait BackgroundAudioManager extends js.Object {
   def stop(): scala.Unit
 }
 
+object BackgroundAudioManager {
+  @scala.inline
+  def apply(
+    buffered: scala.Double,
+    coverImgUrl: java.lang.String,
+    currentTime: scala.Double,
+    duration: scala.Double,
+    epname: java.lang.String,
+    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onNext: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPrev: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    paused: scala.Boolean,
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    singer: java.lang.String,
+    src: java.lang.String,
+    startTime: scala.Double,
+    stop: js.Function0[scala.Unit],
+    title: java.lang.String,
+    webUrl: java.lang.String
+  ): BackgroundAudioManager = {
+    val __obj = js.Dynamic.literal(buffered = buffered, coverImgUrl = coverImgUrl, currentTime = currentTime, duration = duration, epname = epname, onCanplay = onCanplay, onEnded = onEnded, onError = onError, onNext = onNext, onPause = onPause, onPlay = onPlay, onPrev = onPrev, onStop = onStop, onTimeUpdate = onTimeUpdate, onWaiting = onWaiting, pause = pause, paused = paused, play = play, seek = seek, singer = singer, src = src, startTime = startTime, stop = stop, title = title, webUrl = webUrl)
+  
+    __obj.asInstanceOf[BackgroundAudioManager]
+  }
+}
+

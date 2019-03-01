@@ -14,3 +14,19 @@ trait Anon_CellMatrix extends js.Object {
   var tbodyEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery
 }
 
+object Anon_CellMatrix {
+  @scala.inline
+  def apply(
+    cellMatrix: js.Array[_],
+    row: js.Any,
+    segLevels: js.Array[_],
+    segMatrix: js.Array[_],
+    segs: js.Any,
+    tbodyEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery
+  ): Anon_CellMatrix = {
+    val __obj = js.Dynamic.literal(cellMatrix = cellMatrix, row = row, segLevels = segLevels, segMatrix = segMatrix, segs = segs, tbodyEl = tbodyEl)
+  
+    __obj.asInstanceOf[Anon_CellMatrix]
+  }
+}
+

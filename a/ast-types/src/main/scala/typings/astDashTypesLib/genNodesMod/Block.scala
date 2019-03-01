@@ -13,3 +13,18 @@ trait Block
   var `type`: astDashTypesLib.astDashTypesLibStrings.Block
 }
 
+object Block {
+  @scala.inline
+  def apply(
+    leading: scala.Boolean,
+    trailing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.Block,
+    value: java.lang.String,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Block = {
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, `type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Block]
+  }
+}
+

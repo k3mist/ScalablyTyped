@@ -10,3 +10,12 @@ trait JobCancelMessage extends js.Object {
   var timeout: js.Any
 }
 
+object JobCancelMessage {
+  @scala.inline
+  def apply(jobId: java.lang.String, timeout: js.Any): JobCancelMessage = {
+    val __obj = js.Dynamic.literal(jobId = jobId, timeout = timeout)
+  
+    __obj.asInstanceOf[JobCancelMessage]
+  }
+}
+

@@ -13,3 +13,22 @@ trait NightwatchTestHooks extends NightwatchTests {
   var beforeEach: js.UndefOr[NightwatchTestHook] = js.undefined
 }
 
+object NightwatchTestHooks {
+  @scala.inline
+  def apply(
+    `@disabled`: js.UndefOr[scala.Boolean] = js.undefined,
+    after: NightwatchTestHook = null,
+    afterEach: NightwatchTestHook = null,
+    before: NightwatchTestHook = null,
+    beforeEach: NightwatchTestHook = null
+  ): NightwatchTestHooks = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach)
+    __obj.asInstanceOf[NightwatchTestHooks]
+  }
+}
+

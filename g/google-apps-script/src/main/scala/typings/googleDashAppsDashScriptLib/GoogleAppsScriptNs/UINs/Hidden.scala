@@ -33,3 +33,39 @@ trait Hidden extends js.Object {
   def setWidth(width: java.lang.String): Hidden
 }
 
+object Hidden {
+  @scala.inline
+  def apply(
+    addStyleDependentName: js.Function1[java.lang.String, Hidden],
+    addStyleName: js.Function1[java.lang.String, Hidden],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setDefaultValue: js.Function1[java.lang.String, Hidden],
+    setHeight: js.Function1[java.lang.String, Hidden],
+    setID: js.Function1[java.lang.String, Hidden],
+    setId: js.Function1[java.lang.String, Hidden],
+    setLayoutData: js.Function1[js.Object, Hidden],
+    setName: js.Function1[java.lang.String, Hidden],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      Hidden
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, Hidden],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, Hidden],
+    setStyleAttributes: js.Function1[js.Object, Hidden],
+    setStyleName: js.Function1[java.lang.String, Hidden],
+    setStylePrimaryName: js.Function1[java.lang.String, Hidden],
+    setTag: js.Function1[java.lang.String, Hidden],
+    setTitle: js.Function1[java.lang.String, Hidden],
+    setValue: js.Function1[java.lang.String, Hidden],
+    setVisible: js.Function1[scala.Boolean, Hidden],
+    setWidth: js.Function1[java.lang.String, Hidden]
+  ): Hidden = {
+    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDefaultValue = setDefaultValue, setHeight = setHeight, setID = setID, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setValue = setValue, setVisible = setVisible, setWidth = setWidth)
+  
+    __obj.asInstanceOf[Hidden]
+  }
+}
+

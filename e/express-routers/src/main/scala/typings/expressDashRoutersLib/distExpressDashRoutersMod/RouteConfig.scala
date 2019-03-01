@@ -11,3 +11,16 @@ trait RouteConfig extends js.Object {
   var path: java.lang.String
 }
 
+object RouteConfig {
+  @scala.inline
+  def apply(
+    handler: expressLib.expressMod.eNs.RequestHandler | js.Array[expressLib.expressMod.eNs.RequestHandler],
+    method: RouteConfigMethod,
+    path: java.lang.String
+  ): RouteConfig = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method, path = path)
+  
+    __obj.asInstanceOf[RouteConfig]
+  }
+}
+

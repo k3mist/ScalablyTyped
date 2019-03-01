@@ -12,3 +12,17 @@ trait Delete extends AST {
   var where: js.Any
 }
 
+object Delete {
+  @scala.inline
+  def apply(
+    from: js.Array[From | Dual],
+    tables: js.Any,
+    `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.delete,
+    where: js.Any
+  ): Delete = {
+    val __obj = js.Dynamic.literal(from = from, tables = tables, `type` = `type`, where = where)
+  
+    __obj.asInstanceOf[Delete]
+  }
+}
+

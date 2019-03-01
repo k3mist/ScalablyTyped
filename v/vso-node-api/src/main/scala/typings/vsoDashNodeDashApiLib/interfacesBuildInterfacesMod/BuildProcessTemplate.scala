@@ -18,3 +18,23 @@ trait BuildProcessTemplate extends js.Object {
   var version: java.lang.String
 }
 
+object BuildProcessTemplate {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    fileExists: scala.Boolean,
+    id: scala.Double,
+    parameters: java.lang.String,
+    serverPath: java.lang.String,
+    supportedReasons: BuildReason,
+    teamProject: java.lang.String,
+    templateType: ProcessTemplateType,
+    url: java.lang.String,
+    version: java.lang.String
+  ): BuildProcessTemplate = {
+    val __obj = js.Dynamic.literal(description = description, fileExists = fileExists, id = id, parameters = parameters, serverPath = serverPath, supportedReasons = supportedReasons, teamProject = teamProject, templateType = templateType, url = url, version = version)
+  
+    __obj.asInstanceOf[BuildProcessTemplate]
+  }
+}
+

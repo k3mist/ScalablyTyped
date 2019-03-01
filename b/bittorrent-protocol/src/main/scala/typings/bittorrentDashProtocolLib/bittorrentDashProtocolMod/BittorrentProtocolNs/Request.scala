@@ -12,3 +12,17 @@ trait Request extends js.Object {
   def callback(): scala.Unit
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit],
+    length: scala.Double,
+    offset: scala.Double,
+    piece: scala.Double
+  ): Request = {
+    val __obj = js.Dynamic.literal(callback = callback, length = length, offset = offset, piece = piece)
+  
+    __obj.asInstanceOf[Request]
+  }
+}
+

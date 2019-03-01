@@ -17,3 +17,22 @@ trait MultiPage_BeforeDragOver_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object MultiPage_BeforeDragOver_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Control: activexDashMsformsLib.MSFormsNs.Control,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Index: scala.Double,
+    Shift: scala.Double,
+    State: activexDashMsformsLib.MSFormsNs.fmDragState,
+    X: scala.Double,
+    Y: scala.Double
+  ): MultiPage_BeforeDragOver_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Index = Index, Shift = Shift, State = State, X = X, Y = Y)
+  
+    __obj.asInstanceOf[MultiPage_BeforeDragOver_Parameter]
+  }
+}
+

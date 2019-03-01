@@ -36,3 +36,20 @@ trait DataProviderResult extends js.Object {
   var sharedData: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object DataProviderResult {
+  @scala.inline
+  def apply(
+    clientProviders: org.scalablytyped.runtime.StringDictionary[ClientDataProviderQuery],
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    exceptions: org.scalablytyped.runtime.StringDictionary[DataProviderExceptionDetails],
+    resolvedProviders: js.Array[ResolvedDataProvider],
+    scopeName: java.lang.String,
+    scopeValue: java.lang.String,
+    sharedData: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): DataProviderResult = {
+    val __obj = js.Dynamic.literal(clientProviders = clientProviders, data = data, exceptions = exceptions, resolvedProviders = resolvedProviders, scopeName = scopeName, scopeValue = scopeValue, sharedData = sharedData)
+  
+    __obj.asInstanceOf[DataProviderResult]
+  }
+}
+

@@ -14,3 +14,19 @@ trait WeatherForecastResult extends js.Object {
   var reportTime: java.lang.String
 }
 
+object WeatherForecastResult {
+  @scala.inline
+  def apply(
+    adcode: java.lang.String,
+    city: java.lang.String,
+    forecasts: js.Array[Forecast],
+    info: java.lang.String,
+    province: java.lang.String,
+    reportTime: java.lang.String
+  ): WeatherForecastResult = {
+    val __obj = js.Dynamic.literal(adcode = adcode, city = city, forecasts = forecasts, info = info, province = province, reportTime = reportTime)
+  
+    __obj.asInstanceOf[WeatherForecastResult]
+  }
+}
+

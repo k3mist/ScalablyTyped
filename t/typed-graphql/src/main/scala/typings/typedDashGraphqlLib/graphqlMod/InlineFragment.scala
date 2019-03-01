@@ -15,3 +15,20 @@ trait InlineFragment
   var typeCondition: js.UndefOr[NamedType] = js.undefined
 }
 
+object InlineFragment {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    selectionSet: SelectionSet,
+    directives: js.Array[Directive] = null,
+    loc: Location = null,
+    typeCondition: NamedType = null
+  ): InlineFragment = {
+    val __obj = js.Dynamic.literal(kind = kind, selectionSet = selectionSet)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeCondition != null) __obj.updateDynamic("typeCondition")(typeCondition)
+    __obj.asInstanceOf[InlineFragment]
+  }
+}
+

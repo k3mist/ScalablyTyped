@@ -30,3 +30,22 @@ trait XConnectable
   def setSuccessor(aSuccessor: XConnectable): scala.Unit
 }
 
+object XConnectable {
+  @scala.inline
+  def apply(
+    Predecessor: XConnectable,
+    Successor: XConnectable,
+    acquire: js.Function0[scala.Unit],
+    getPredecessor: js.Function0[XConnectable],
+    getSuccessor: js.Function0[XConnectable],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPredecessor: js.Function1[XConnectable, scala.Unit],
+    setSuccessor: js.Function1[XConnectable, scala.Unit]
+  ): XConnectable = {
+    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = acquire, getPredecessor = getPredecessor, getSuccessor = getSuccessor, queryInterface = queryInterface, release = release, setPredecessor = setPredecessor, setSuccessor = setSuccessor)
+  
+    __obj.asInstanceOf[XConnectable]
+  }
+}
+

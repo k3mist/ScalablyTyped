@@ -18,3 +18,23 @@ trait FontCommon extends js.Object {
   var scaleW: scala.Double
 }
 
+object FontCommon {
+  @scala.inline
+  def apply(
+    alphaChnl: scala.Double,
+    base: scala.Double,
+    blueChnl: scala.Double,
+    greenChnl: scala.Double,
+    lineHeight: scala.Double,
+    packed: scala.Double,
+    pages: scala.Double,
+    redChnl: scala.Double,
+    scaleH: scala.Double,
+    scaleW: scala.Double
+  ): FontCommon = {
+    val __obj = js.Dynamic.literal(alphaChnl = alphaChnl, base = base, blueChnl = blueChnl, greenChnl = greenChnl, lineHeight = lineHeight, packed = packed, pages = pages, redChnl = redChnl, scaleH = scaleH, scaleW = scaleW)
+  
+    __obj.asInstanceOf[FontCommon]
+  }
+}
+

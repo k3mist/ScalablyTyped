@@ -32,3 +32,21 @@ trait ReferencesetsResource extends js.Object {
   def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferenceSetsResponse]
 }
 
+object ReferencesetsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReferenceSet]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchReferenceSetsResponse]
+    ]
+  ): ReferencesetsResource = {
+    val __obj = js.Dynamic.literal(get = get, search = search)
+  
+    __obj.asInstanceOf[ReferencesetsResource]
+  }
+}
+

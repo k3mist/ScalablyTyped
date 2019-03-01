@@ -176,3 +176,57 @@ trait Ndef extends js.Object {
   def uriRecord(uri: java.lang.String, id: js.Array[scala.Double]): NdefRecord
 }
 
+object Ndef {
+  @scala.inline
+  def apply(
+    RTD_ALTERNATIVE_CARRIER: js.Array[scala.Double],
+    RTD_HANDOVER_CARRIER: js.Array[scala.Double],
+    RTD_HANDOVER_REQUEST: js.Array[scala.Double],
+    RTD_HANDOVER_SELECT: js.Array[scala.Double],
+    RTD_SMART_POSTER: js.Array[scala.Double],
+    RTD_TEXT: js.Array[scala.Double],
+    RTD_URI: js.Array[scala.Double],
+    TNF_ABSOLUTE_URI: scala.Double,
+    TNF_EMPTY: scala.Double,
+    TNF_EXTERNAL_TYPE: scala.Double,
+    TNF_MIME_MEDIA: scala.Double,
+    TNF_RESERVED: scala.Double,
+    TNF_UNCHANGED: scala.Double,
+    TNF_UNKNOWN: scala.Double,
+    TNF_WELL_KNOWN: scala.Double,
+    absoluteUriRecord: js.Function3[java.lang.String, js.Array[scala.Double], js.Array[scala.Double], NdefRecord],
+    androidApplicationRecord: js.Function1[java.lang.String, NdefRecord],
+    decodeMessage: js.Function1[js.Array[scala.Double], js.Array[NdefRecord]],
+    decodeTnf: js.Function1[scala.Double, js.Any],
+    emptyRecord: js.Function0[NdefRecord],
+    encodeMessage: js.Function1[js.Array[NdefRecord], js.Array[scala.Double]],
+    encodeTnf: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double
+    ],
+    mimeMediaRecord: js.Function3[java.lang.String, js.Array[scala.Double], js.Array[scala.Double], NdefRecord],
+    record: js.Function4[
+      scala.Double, 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      NdefRecord
+    ],
+    smartPoster: js.Function2[js.Array[NdefRecord], js.Array[scala.Double], NdefRecord],
+    textHelper: TextHelper,
+    textRecord: js.Function3[java.lang.String, java.lang.String, js.Array[scala.Double], NdefRecord],
+    tnfToString: js.Function1[scala.Double, java.lang.String],
+    uriHelper: UriHelper,
+    uriRecord: js.Function2[java.lang.String, js.Array[scala.Double], NdefRecord]
+  ): Ndef = {
+    val __obj = js.Dynamic.literal(RTD_ALTERNATIVE_CARRIER = RTD_ALTERNATIVE_CARRIER, RTD_HANDOVER_CARRIER = RTD_HANDOVER_CARRIER, RTD_HANDOVER_REQUEST = RTD_HANDOVER_REQUEST, RTD_HANDOVER_SELECT = RTD_HANDOVER_SELECT, RTD_SMART_POSTER = RTD_SMART_POSTER, RTD_TEXT = RTD_TEXT, RTD_URI = RTD_URI, TNF_ABSOLUTE_URI = TNF_ABSOLUTE_URI, TNF_EMPTY = TNF_EMPTY, TNF_EXTERNAL_TYPE = TNF_EXTERNAL_TYPE, TNF_MIME_MEDIA = TNF_MIME_MEDIA, TNF_RESERVED = TNF_RESERVED, TNF_UNCHANGED = TNF_UNCHANGED, TNF_UNKNOWN = TNF_UNKNOWN, TNF_WELL_KNOWN = TNF_WELL_KNOWN, absoluteUriRecord = absoluteUriRecord, androidApplicationRecord = androidApplicationRecord, decodeMessage = decodeMessage, decodeTnf = decodeTnf, emptyRecord = emptyRecord, encodeMessage = encodeMessage, encodeTnf = encodeTnf, mimeMediaRecord = mimeMediaRecord, record = record, smartPoster = smartPoster, textHelper = textHelper, textRecord = textRecord, tnfToString = tnfToString, uriHelper = uriHelper, uriRecord = uriRecord)
+  
+    __obj.asInstanceOf[Ndef]
+  }
+}
+

@@ -15,3 +15,21 @@ trait GroupsResource extends js.Object {
   def update(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
 }
 
+object GroupsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
+    ],
+    update: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
+    ]
+  ): GroupsResource = {
+    val __obj = js.Dynamic.literal(get = get, update = update)
+  
+    __obj.asInstanceOf[GroupsResource]
+  }
+}
+

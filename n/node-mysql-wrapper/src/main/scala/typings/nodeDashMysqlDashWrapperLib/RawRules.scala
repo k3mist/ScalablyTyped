@@ -18,3 +18,22 @@ trait RawRules extends js.Object {
   var table: java.lang.String
 }
 
+object RawRules {
+  @scala.inline
+  def apply(
+    begin: java.lang.String,
+    end: java.lang.String,
+    groupBy: java.lang.String,
+    limit: scala.Double,
+    limitEnd: scala.Double,
+    limitStart: scala.Double,
+    orderBy: java.lang.String,
+    orderByDesc: java.lang.String,
+    table: java.lang.String
+  ): RawRules = {
+    val __obj = js.Dynamic.literal(begin = begin, end = end, groupBy = groupBy, limit = limit, limitEnd = limitEnd, limitStart = limitStart, orderBy = orderBy, orderByDesc = orderByDesc, table = table)
+  
+    __obj.asInstanceOf[RawRules]
+  }
+}
+

@@ -12,3 +12,19 @@ trait MoreButtonClickedEventArgs extends ProcessingModeEventArgs {
   val targetDateTime: stdLib.Date
 }
 
+object MoreButtonClickedEventArgs {
+  @scala.inline
+  def apply(
+    handled: scala.Boolean,
+    interval: BootstrapTimeInterval,
+    processOnServer: scala.Boolean,
+    resource: java.lang.String,
+    sender: Control,
+    targetDateTime: stdLib.Date
+  ): MoreButtonClickedEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled, interval = interval, processOnServer = processOnServer, resource = resource, sender = sender, targetDateTime = targetDateTime)
+  
+    __obj.asInstanceOf[MoreButtonClickedEventArgs]
+  }
+}
+

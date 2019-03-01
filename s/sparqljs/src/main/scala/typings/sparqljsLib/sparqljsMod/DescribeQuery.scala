@@ -12,3 +12,22 @@ trait DescribeQuery
   var variables: js.Array[Variable] | js.Array[sparqljsLib.sparqljsLibStrings.`*`]
 }
 
+object DescribeQuery {
+  @scala.inline
+  def apply(
+    prefixes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    queryType: sparqljsLib.sparqljsLibStrings.DESCRIBE,
+    `type`: sparqljsLib.sparqljsLibStrings.query,
+    variables: js.Array[Variable] | js.Array[sparqljsLib.sparqljsLibStrings.`*`],
+    base: java.lang.String = null,
+    values: js.Array[ValuePatternRow] = null,
+    where: js.Array[Pattern] = null
+  ): DescribeQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType, `type` = `type`, variables = variables.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[DescribeQuery]
+  }
+}
+

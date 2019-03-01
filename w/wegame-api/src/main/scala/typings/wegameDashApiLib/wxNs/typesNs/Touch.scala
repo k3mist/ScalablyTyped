@@ -21,3 +21,12 @@ trait Touch extends js.Object {
   var screenY: scala.Double
 }
 
+object Touch {
+  @scala.inline
+  def apply(identifier: scala.Double, screenX: scala.Double, screenY: scala.Double): Touch = {
+    val __obj = js.Dynamic.literal(identifier = identifier, screenX = screenX, screenY = screenY)
+  
+    __obj.asInstanceOf[Touch]
+  }
+}
+

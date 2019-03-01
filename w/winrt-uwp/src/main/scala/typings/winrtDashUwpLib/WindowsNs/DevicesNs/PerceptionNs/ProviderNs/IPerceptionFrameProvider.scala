@@ -25,3 +25,20 @@ trait IPerceptionFrameProvider
   def stop(): scala.Unit
 }
 
+object IPerceptionFrameProvider {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    close: js.Function0[scala.Unit],
+    frameProviderInfo: PerceptionFrameProviderInfo,
+    properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
+    setProperty: js.Function1[PerceptionPropertyChangeRequest, scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): IPerceptionFrameProvider = {
+    val __obj = js.Dynamic.literal(available = available, close = close, frameProviderInfo = frameProviderInfo, properties = properties, setProperty = setProperty, start = start, stop = stop)
+  
+    __obj.asInstanceOf[IPerceptionFrameProvider]
+  }
+}
+

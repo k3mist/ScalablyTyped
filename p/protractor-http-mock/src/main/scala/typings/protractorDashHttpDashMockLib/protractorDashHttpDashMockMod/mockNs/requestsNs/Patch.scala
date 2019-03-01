@@ -14,3 +14,15 @@ trait Patch[TResponse]
   var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
 }
 
+object Patch {
+  @scala.inline
+  def apply[TResponse](
+    request: protractorDashHttpDashMockLib.Anon_Method,
+    response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
+  ): Patch[TResponse] = {
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
+    __obj.asInstanceOf[Patch[TResponse]]
+  }
+}
+

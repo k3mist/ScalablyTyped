@@ -21,3 +21,26 @@ trait Tcp extends js.Object {
   var uid: java.lang.String
 }
 
+object Tcp {
+  @scala.inline
+  def apply(
+    `_`: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inode: java.lang.String,
+    local_address: java.lang.String,
+    rem_address: java.lang.String,
+    retrnsmt: java.lang.String,
+    rx_queue: java.lang.String,
+    sl: java.lang.String,
+    st: java.lang.String,
+    timeout: java.lang.String,
+    `tm->when`: java.lang.String,
+    tr: java.lang.String,
+    tx_queue: java.lang.String,
+    uid: java.lang.String
+  ): Tcp = {
+    val __obj = js.Dynamic.literal(`_` = `_`, inode = inode, local_address = local_address, rem_address = rem_address, retrnsmt = retrnsmt, rx_queue = rx_queue, sl = sl, st = st, timeout = timeout, tr = tr, tx_queue = tx_queue, uid = uid)
+    __obj.updateDynamic("tm->when")(`tm->when`)
+    __obj.asInstanceOf[Tcp]
+  }
+}
+

@@ -16,3 +16,21 @@ trait SecureFile extends js.Object {
   var ticket: java.lang.String
 }
 
+object SecureFile {
+  @scala.inline
+  def apply(
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    id: java.lang.String,
+    modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    ticket: java.lang.String
+  ): SecureFile = {
+    val __obj = js.Dynamic.literal(createdBy = createdBy, createdOn = createdOn, id = id, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, properties = properties, ticket = ticket)
+  
+    __obj.asInstanceOf[SecureFile]
+  }
+}
+

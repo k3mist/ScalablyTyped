@@ -26,3 +26,17 @@ trait ASPxClientNavBarItemEventArgs extends ASPxClientProcessingModeEventArgs {
   var item: ASPxClientNavBarItem
 }
 
+object ASPxClientNavBarItemEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    item: ASPxClientNavBarItem,
+    processOnServer: scala.Boolean
+  ): ASPxClientNavBarItemEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientNavBarItemEventArgs]
+  }
+}
+

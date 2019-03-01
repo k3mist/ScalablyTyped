@@ -10,3 +10,12 @@ trait CustomArchiveLayoutOptions extends ArchiveLayoutOptions {
   var `type`: opentokLib.opentokLibStrings.custom
 }
 
+object CustomArchiveLayoutOptions {
+  @scala.inline
+  def apply(stylesheet: java.lang.String, `type`: opentokLib.opentokLibStrings.custom): CustomArchiveLayoutOptions = {
+    val __obj = js.Dynamic.literal(stylesheet = stylesheet, `type` = `type`)
+  
+    __obj.asInstanceOf[CustomArchiveLayoutOptions]
+  }
+}
+

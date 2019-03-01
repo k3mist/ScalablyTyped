@@ -12,3 +12,18 @@ trait Anon_CommentsLocParameterName extends js.Object {
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
 }
 
+object Anon_CommentsLocParameterName {
+  @scala.inline
+  def apply(
+    parameterName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSThisTypeKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsLocParameterName = {
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], typeAnnotation = typeAnnotation)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsLocParameterName]
+  }
+}
+

@@ -11,3 +11,12 @@ trait SwaggerParser extends js.Object {
   var api: js.Any
 }
 
+object SwaggerParser {
+  @scala.inline
+  def apply($ref: js.Any, api: js.Any): SwaggerParser = {
+    val __obj = js.Dynamic.literal($ref = $ref, api = api)
+  
+    __obj.asInstanceOf[SwaggerParser]
+  }
+}
+

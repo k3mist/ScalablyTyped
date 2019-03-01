@@ -17,3 +17,12 @@ trait Boundary extends js.Object {
   var startPos: scala.Double
 }
 
+object Boundary {
+  @scala.inline
+  def apply(endPos: scala.Double, startPos: scala.Double): Boundary = {
+    val __obj = js.Dynamic.literal(endPos = endPos, startPos = startPos)
+  
+    __obj.asInstanceOf[Boundary]
+  }
+}
+

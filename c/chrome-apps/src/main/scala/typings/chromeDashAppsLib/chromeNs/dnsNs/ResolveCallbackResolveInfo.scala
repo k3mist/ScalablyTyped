@@ -16,3 +16,12 @@ trait ResolveCallbackResolveInfo extends js.Object {
   var resultCode: chromeDashAppsLib.chromeNs.integer
 }
 
+object ResolveCallbackResolveInfo {
+  @scala.inline
+  def apply(resultCode: chromeDashAppsLib.chromeNs.integer, address: java.lang.String = null): ResolveCallbackResolveInfo = {
+    val __obj = js.Dynamic.literal(resultCode = resultCode)
+    if (address != null) __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[ResolveCallbackResolveInfo]
+  }
+}
+

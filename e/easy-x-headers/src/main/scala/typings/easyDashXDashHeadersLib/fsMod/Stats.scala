@@ -28,3 +28,33 @@ trait Stats extends js.Object {
   def isSymbolicLink(): scala.Boolean
 }
 
+object Stats {
+  @scala.inline
+  def apply(
+    atime: stdLib.Date,
+    blksize: scala.Double,
+    blocks: scala.Double,
+    ctime: stdLib.Date,
+    dev: scala.Double,
+    gid: scala.Double,
+    ino: scala.Double,
+    isBlockDevice: js.Function0[scala.Boolean],
+    isCharacterDevice: js.Function0[scala.Boolean],
+    isDirectory: js.Function0[scala.Boolean],
+    isFIFO: js.Function0[scala.Boolean],
+    isFile: js.Function0[scala.Boolean],
+    isSocket: js.Function0[scala.Boolean],
+    isSymbolicLink: js.Function0[scala.Boolean],
+    mode: scala.Double,
+    mtime: stdLib.Date,
+    nlink: scala.Double,
+    rdev: scala.Double,
+    size: scala.Double,
+    uid: scala.Double
+  ): Stats = {
+    val __obj = js.Dynamic.literal(atime = atime, blksize = blksize, blocks = blocks, ctime = ctime, dev = dev, gid = gid, ino = ino, isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink, mode = mode, mtime = mtime, nlink = nlink, rdev = rdev, size = size, uid = uid)
+  
+    __obj.asInstanceOf[Stats]
+  }
+}
+

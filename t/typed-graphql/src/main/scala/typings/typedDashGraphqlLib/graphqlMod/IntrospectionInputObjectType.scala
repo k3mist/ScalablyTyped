@@ -12,3 +12,17 @@ trait IntrospectionInputObjectType extends IntrospectionType {
   var name: java.lang.String
 }
 
+object IntrospectionInputObjectType {
+  @scala.inline
+  def apply(
+    inputFields: js.Array[IntrospectionInputValue],
+    kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.INPUT_OBJECT,
+    name: java.lang.String,
+    description: java.lang.String = null
+  ): IntrospectionInputObjectType = {
+    val __obj = js.Dynamic.literal(inputFields = inputFields, kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionInputObjectType]
+  }
+}
+

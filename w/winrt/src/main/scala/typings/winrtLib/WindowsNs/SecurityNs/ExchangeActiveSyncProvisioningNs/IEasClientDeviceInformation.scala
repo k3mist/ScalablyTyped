@@ -14,3 +14,19 @@ trait IEasClientDeviceInformation extends js.Object {
   var systemSku: java.lang.String
 }
 
+object IEasClientDeviceInformation {
+  @scala.inline
+  def apply(
+    friendlyName: java.lang.String,
+    id: java.lang.String,
+    operatingSystem: java.lang.String,
+    systemManufacturer: java.lang.String,
+    systemProductName: java.lang.String,
+    systemSku: java.lang.String
+  ): IEasClientDeviceInformation = {
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName, id = id, operatingSystem = operatingSystem, systemManufacturer = systemManufacturer, systemProductName = systemProductName, systemSku = systemSku)
+  
+    __obj.asInstanceOf[IEasClientDeviceInformation]
+  }
+}
+

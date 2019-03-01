@@ -28,3 +28,24 @@ trait LegendProperties extends WidgetProperties {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object LegendProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    layerInfos: js.Array[LegendLayerInfos] = null,
+    style: java.lang.String | LegendStyle = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): LegendProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LegendProperties]
+  }
+}
+

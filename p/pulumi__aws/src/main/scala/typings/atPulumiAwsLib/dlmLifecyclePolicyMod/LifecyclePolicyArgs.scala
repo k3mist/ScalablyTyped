@@ -24,3 +24,17 @@ trait LifecyclePolicyArgs extends js.Object {
   val state: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object LifecyclePolicyArgs {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    executionRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    policyDetails: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyResourceTypesSchedules],
+    state: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): LifecyclePolicyArgs = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], executionRoleArn = executionRoleArn.asInstanceOf[js.Any], policyDetails = policyDetails.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LifecyclePolicyArgs]
+  }
+}
+

@@ -15,3 +15,12 @@ trait IGenericFieldLayout extends IGenericBaseLayout {
   var qFieldListObject: IFieldList
 }
 
+object IGenericFieldLayout {
+  @scala.inline
+  def apply(qFieldListObject: IFieldList, qInfo: INxInfo, qMeta: INxMeta): IGenericFieldLayout = {
+    val __obj = js.Dynamic.literal(qFieldListObject = qFieldListObject, qInfo = qInfo, qMeta = qMeta)
+  
+    __obj.asInstanceOf[IGenericFieldLayout]
+  }
+}
+

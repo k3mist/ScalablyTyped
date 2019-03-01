@@ -12,3 +12,16 @@ trait EnumTypeDefinition
   var format_EnumTypeDefinition: atGrpcProtoDashLoaderLib.atGrpcProtoDashLoaderLibStrings.`Protocol Buffer 3 EnumDescriptorProto`
 }
 
+object EnumTypeDefinition {
+  @scala.inline
+  def apply(
+    fileDescriptorProtos: js.Array[nodeLib.Buffer],
+    format: atGrpcProtoDashLoaderLib.atGrpcProtoDashLoaderLibStrings.`Protocol Buffer 3 EnumDescriptorProto`,
+    `type`: js.Object
+  ): EnumTypeDefinition = {
+    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos, format = format, `type` = `type`)
+  
+    __obj.asInstanceOf[EnumTypeDefinition]
+  }
+}
+

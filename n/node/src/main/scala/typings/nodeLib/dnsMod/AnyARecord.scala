@@ -12,3 +12,12 @@ trait AnyARecord
   var `type`: nodeLib.nodeLibStrings.A
 }
 
+object AnyARecord {
+  @scala.inline
+  def apply(address: java.lang.String, ttl: scala.Double, `type`: nodeLib.nodeLibStrings.A): AnyARecord = {
+    val __obj = js.Dynamic.literal(address = address, ttl = ttl, `type` = `type`)
+  
+    __obj.asInstanceOf[AnyARecord]
+  }
+}
+

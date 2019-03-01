@@ -10,3 +10,12 @@ trait Layout extends js.Object {
   var subtitleTemplateString: java.lang.String
 }
 
+object Layout {
+  @scala.inline
+  def apply(icon: java.lang.String, subtitleTemplateString: java.lang.String): Layout = {
+    val __obj = js.Dynamic.literal(icon = icon, subtitleTemplateString = subtitleTemplateString)
+  
+    __obj.asInstanceOf[Layout]
+  }
+}
+

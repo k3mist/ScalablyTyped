@@ -10,3 +10,12 @@ trait ICoreCursor extends js.Object {
   var `type`: CoreCursorType
 }
 
+object ICoreCursor {
+  @scala.inline
+  def apply(id: scala.Double, `type`: CoreCursorType): ICoreCursor = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+  
+    __obj.asInstanceOf[ICoreCursor]
+  }
+}
+

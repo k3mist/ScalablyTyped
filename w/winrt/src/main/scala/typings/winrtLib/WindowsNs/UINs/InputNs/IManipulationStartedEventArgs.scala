@@ -11,3 +11,16 @@ trait IManipulationStartedEventArgs extends js.Object {
   var position: winrtLib.WindowsNs.FoundationNs.Point
 }
 
+object IManipulationStartedEventArgs {
+  @scala.inline
+  def apply(
+    cumulative: ManipulationDelta,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point
+  ): IManipulationStartedEventArgs = {
+    val __obj = js.Dynamic.literal(cumulative = cumulative, pointerDeviceType = pointerDeviceType, position = position)
+  
+    __obj.asInstanceOf[IManipulationStartedEventArgs]
+  }
+}
+

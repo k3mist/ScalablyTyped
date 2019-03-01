@@ -31,3 +31,12 @@ trait IBodyRenderOptionsSprite extends js.Object {
   var yScale: scala.Double
 }
 
+object IBodyRenderOptionsSprite {
+  @scala.inline
+  def apply(texture: java.lang.String, xScale: scala.Double, yScale: scala.Double): IBodyRenderOptionsSprite = {
+    val __obj = js.Dynamic.literal(texture = texture, xScale = xScale, yScale = yScale)
+  
+    __obj.asInstanceOf[IBodyRenderOptionsSprite]
+  }
+}
+

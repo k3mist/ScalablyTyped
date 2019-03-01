@@ -13,3 +13,23 @@ trait TSTypeLiteral
   var type_TSTypeLiteral: babelDashTypesLib.babelDashTypesLibStrings.TSTypeLiteral
 }
 
+object TSTypeLiteral {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    members: js.Array[TSTypeElement],
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.TSTypeLiteral,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): TSTypeLiteral = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, members = members, start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[TSTypeLiteral]
+  }
+}
+

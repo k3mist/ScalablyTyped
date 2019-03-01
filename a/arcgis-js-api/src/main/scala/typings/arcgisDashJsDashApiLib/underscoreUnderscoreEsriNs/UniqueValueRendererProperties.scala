@@ -120,3 +120,38 @@ trait UniqueValueRendererProperties
   var valueExpressionTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UniqueValueRendererProperties {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfoProperties = null,
+    backgroundFillSymbol: FillSymbolProperties | PolygonSymbol3DProperties = null,
+    defaultLabel: java.lang.String = null,
+    defaultSymbol: SymbolProperties = null,
+    field: java.lang.String = null,
+    field2: java.lang.String = null,
+    field3: java.lang.String = null,
+    fieldDelimiter: java.lang.String = null,
+    legendOptions: UniqueValueRendererLegendOptions = null,
+    uniqueValueInfos: js.Array[UniqueValueRendererUniqueValueInfos] = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    visualVariables: js.Array[VisualVariableProperties] = null
+  ): UniqueValueRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (backgroundFillSymbol != null) __obj.updateDynamic("backgroundFillSymbol")(backgroundFillSymbol.asInstanceOf[js.Any])
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel)
+    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (field2 != null) __obj.updateDynamic("field2")(field2)
+    if (field3 != null) __obj.updateDynamic("field3")(field3)
+    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (uniqueValueInfos != null) __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[UniqueValueRendererProperties]
+  }
+}
+

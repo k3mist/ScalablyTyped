@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ClassBody
 }
 
+object ClassBody {
+  @scala.inline
+  def apply(
+    body: js.Array[
+      astDashTypesLib.genKindsMod.MethodDefinitionKind | astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.ClassPropertyDefinitionKind | astDashTypesLib.genKindsMod.ClassPropertyKind | astDashTypesLib.genKindsMod.ClassPrivatePropertyKind | astDashTypesLib.genKindsMod.ClassMethodKind | astDashTypesLib.genKindsMod.ClassPrivateMethodKind | astDashTypesLib.genKindsMod.TSDeclareMethodKind | astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassBody
+  ): ClassBody = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+  
+    __obj.asInstanceOf[ClassBody]
+  }
+}
+

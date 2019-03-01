@@ -18,3 +18,21 @@ trait RoomsResource extends js.Object {
   def resetForAllPlayers(request: gapiDotClientDotGamesmanagementLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object RoomsResource {
+  @scala.inline
+  def apply(
+    reset: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): RoomsResource = {
+    val __obj = js.Dynamic.literal(reset = reset, resetForAllPlayers = resetForAllPlayers)
+  
+    __obj.asInstanceOf[RoomsResource]
+  }
+}
+

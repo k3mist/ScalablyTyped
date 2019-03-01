@@ -14,3 +14,12 @@ trait Anon_FrameId extends js.Object {
   var tabId: scala.Double
 }
 
+object Anon_FrameId {
+  @scala.inline
+  def apply(frameId: scala.Double, tabId: scala.Double, processId: scala.Int | scala.Double = null): Anon_FrameId = {
+    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FrameId]
+  }
+}
+

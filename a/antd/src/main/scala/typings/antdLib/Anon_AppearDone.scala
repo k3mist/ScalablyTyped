@@ -11,3 +11,16 @@ trait Anon_AppearDone extends js.Object {
   def leave(node: reactLib.HTMLElement, done: js.Function0[scala.Unit]): js.Any
 }
 
+object Anon_AppearDone {
+  @scala.inline
+  def apply(
+    appear: scala.Null,
+    enter: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], js.Any],
+    leave: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], js.Any]
+  ): Anon_AppearDone = {
+    val __obj = js.Dynamic.literal(appear = appear, enter = enter, leave = leave)
+  
+    __obj.asInstanceOf[Anon_AppearDone]
+  }
+}
+

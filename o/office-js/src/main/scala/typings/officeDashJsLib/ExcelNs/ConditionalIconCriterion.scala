@@ -42,3 +42,17 @@ trait ConditionalIconCriterion extends js.Object {
   var `type`: ConditionalFormatIconRuleType | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Number | officeDashJsLib.officeDashJsLibStrings.Percent | officeDashJsLib.officeDashJsLibStrings.Formula | officeDashJsLib.officeDashJsLibStrings.Percentile
 }
 
+object ConditionalIconCriterion {
+  @scala.inline
+  def apply(
+    formula: java.lang.String,
+    operator: ConditionalIconCriterionOperator | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqual,
+    `type`: ConditionalFormatIconRuleType | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Number | officeDashJsLib.officeDashJsLibStrings.Percent | officeDashJsLib.officeDashJsLibStrings.Formula | officeDashJsLib.officeDashJsLibStrings.Percentile,
+    customIcon: Icon = null
+  ): ConditionalIconCriterion = {
+    val __obj = js.Dynamic.literal(formula = formula, operator = operator.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon)
+    __obj.asInstanceOf[ConditionalIconCriterion]
+  }
+}
+

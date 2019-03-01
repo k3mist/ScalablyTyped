@@ -16,3 +16,15 @@ trait NumberConstructor extends js.Object {
   def parseLocale(format: java.lang.String): scala.Double
 }
 
+object NumberConstructor {
+  @scala.inline
+  def apply(
+    parseInvariant: js.Function1[java.lang.String, scala.Double],
+    parseLocale: js.Function1[java.lang.String, scala.Double]
+  ): NumberConstructor = {
+    val __obj = js.Dynamic.literal(parseInvariant = parseInvariant, parseLocale = parseLocale)
+  
+    __obj.asInstanceOf[NumberConstructor]
+  }
+}
+

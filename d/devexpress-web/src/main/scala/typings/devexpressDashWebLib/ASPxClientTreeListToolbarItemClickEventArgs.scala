@@ -31,3 +31,18 @@ trait ASPxClientTreeListToolbarItemClickEventArgs extends ASPxClientProcessingMo
   var usePostBack: scala.Boolean
 }
 
+object ASPxClientTreeListToolbarItemClickEventArgs {
+  @scala.inline
+  def apply(
+    item: ASPxClientMenuItem,
+    processOnServer: scala.Boolean,
+    toolbarIndex: scala.Double,
+    toolbarName: java.lang.String,
+    usePostBack: scala.Boolean
+  ): ASPxClientTreeListToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(item = item, processOnServer = processOnServer, toolbarIndex = toolbarIndex, toolbarName = toolbarName, usePostBack = usePostBack)
+  
+    __obj.asInstanceOf[ASPxClientTreeListToolbarItemClickEventArgs]
+  }
+}
+

@@ -18,3 +18,23 @@ trait DKIMKey extends js.Object {
   var WeakDKIM: scala.Boolean
 }
 
+object DKIMKey {
+  @scala.inline
+  def apply(
+    DKIMHost: java.lang.String,
+    DKIMPendingHost: java.lang.String,
+    DKIMPendingTextValue: java.lang.String,
+    DKIMRevokedHost: java.lang.String,
+    DKIMRevokedTextValue: java.lang.String,
+    DKIMTextValue: java.lang.String,
+    DKIMUpdateStatus: java.lang.String,
+    DKIMVerified: scala.Boolean,
+    SafeToRemoveRevokedKeyFromDNS: scala.Boolean,
+    WeakDKIM: scala.Boolean
+  ): DKIMKey = {
+    val __obj = js.Dynamic.literal(DKIMHost = DKIMHost, DKIMPendingHost = DKIMPendingHost, DKIMPendingTextValue = DKIMPendingTextValue, DKIMRevokedHost = DKIMRevokedHost, DKIMRevokedTextValue = DKIMRevokedTextValue, DKIMTextValue = DKIMTextValue, DKIMUpdateStatus = DKIMUpdateStatus, DKIMVerified = DKIMVerified, SafeToRemoveRevokedKeyFromDNS = SafeToRemoveRevokedKeyFromDNS, WeakDKIM = WeakDKIM)
+  
+    __obj.asInstanceOf[DKIMKey]
+  }
+}
+

@@ -20,3 +20,12 @@ trait ExternalMetricStatus extends js.Object {
   val metric: MetricIdentifier
 }
 
+object ExternalMetricStatus {
+  @scala.inline
+  def apply(current: MetricValueStatus, metric: MetricIdentifier): ExternalMetricStatus = {
+    val __obj = js.Dynamic.literal(current = current, metric = metric)
+  
+    __obj.asInstanceOf[ExternalMetricStatus]
+  }
+}
+

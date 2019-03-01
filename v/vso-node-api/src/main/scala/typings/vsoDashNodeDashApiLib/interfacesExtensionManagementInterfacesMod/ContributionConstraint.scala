@@ -32,3 +32,19 @@ trait ContributionConstraint extends js.Object {
   var relationships: js.Array[java.lang.String]
 }
 
+object ContributionConstraint {
+  @scala.inline
+  def apply(
+    group: scala.Double,
+    id: java.lang.String,
+    inverse: scala.Boolean,
+    name: java.lang.String,
+    properties: js.Any,
+    relationships: js.Array[java.lang.String]
+  ): ContributionConstraint = {
+    val __obj = js.Dynamic.literal(group = group, id = id, inverse = inverse, name = name, properties = properties, relationships = relationships)
+  
+    __obj.asInstanceOf[ContributionConstraint]
+  }
+}
+

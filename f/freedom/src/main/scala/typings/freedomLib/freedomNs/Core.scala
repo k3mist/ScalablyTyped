@@ -17,3 +17,17 @@ trait Core extends js.Object {
   def getLogger(tag: java.lang.String): js.Promise[Logger]
 }
 
+object Core {
+  @scala.inline
+  def apply(
+    bindChannel: js.Function1[java.lang.String, js.Promise[Channel]],
+    createChannel: js.Function0[js.Promise[ChannelSpecifier]],
+    getId: js.Function0[js.Promise[js.Array[java.lang.String]]],
+    getLogger: js.Function1[java.lang.String, js.Promise[Logger]]
+  ): Core = {
+    val __obj = js.Dynamic.literal(bindChannel = bindChannel, createChannel = createChannel, getId = getId, getLogger = getLogger)
+  
+    __obj.asInstanceOf[Core]
+  }
+}
+

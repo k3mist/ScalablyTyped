@@ -10,3 +10,15 @@ trait DeserializeObject extends js.Object {
   var `type`: PayloadType
 }
 
+object DeserializeObject {
+  @scala.inline
+  def apply(
+    payload: RequestPayloadObject | NotificationPayloadObject | SuccessPayloadObject | ErrorPayloadObject,
+    `type`: PayloadType
+  ): DeserializeObject = {
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[DeserializeObject]
+  }
+}
+

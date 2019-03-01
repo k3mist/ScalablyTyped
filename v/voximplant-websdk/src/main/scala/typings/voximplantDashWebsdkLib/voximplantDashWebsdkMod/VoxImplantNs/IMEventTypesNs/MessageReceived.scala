@@ -32,3 +32,18 @@ trait MessageReceived
   var to: java.lang.String
 }
 
+object MessageReceived {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    id: java.lang.String,
+    message_id: java.lang.String,
+    to: java.lang.String,
+    resource: java.lang.String = null
+  ): MessageReceived = {
+    val __obj = js.Dynamic.literal(content = content, id = id, message_id = message_id, to = to)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[MessageReceived]
+  }
+}
+

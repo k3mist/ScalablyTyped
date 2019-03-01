@@ -14,3 +14,16 @@ trait IGeoDataResultSet extends js.Object {
   var results: js.Array[IGeoDataResult]
 }
 
+object IGeoDataResultSet {
+  @scala.inline
+  def apply(
+    Copyright: java.lang.String,
+    location: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location,
+    results: js.Array[IGeoDataResult]
+  ): IGeoDataResultSet = {
+    val __obj = js.Dynamic.literal(Copyright = Copyright, location = location.asInstanceOf[js.Any], results = results)
+  
+    __obj.asInstanceOf[IGeoDataResultSet]
+  }
+}
+

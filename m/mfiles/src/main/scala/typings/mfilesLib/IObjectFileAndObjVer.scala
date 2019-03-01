@@ -12,3 +12,17 @@ trait IObjectFileAndObjVer extends js.Object {
   def ToJSON(): java.lang.String
 }
 
+object IObjectFileAndObjVer {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IObjectFileAndObjVer],
+    ObjVer: IObjVer,
+    ObjectFile: IObjectFile,
+    ToJSON: js.Function0[java.lang.String]
+  ): IObjectFileAndObjVer = {
+    val __obj = js.Dynamic.literal(Clone = Clone, ObjVer = ObjVer, ObjectFile = ObjectFile, ToJSON = ToJSON)
+  
+    __obj.asInstanceOf[IObjectFileAndObjVer]
+  }
+}
+

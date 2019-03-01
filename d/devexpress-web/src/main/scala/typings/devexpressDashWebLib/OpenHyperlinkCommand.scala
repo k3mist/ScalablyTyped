@@ -15,3 +15,12 @@ trait OpenHyperlinkCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object OpenHyperlinkCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenHyperlinkCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[OpenHyperlinkCommand]
+  }
+}
+

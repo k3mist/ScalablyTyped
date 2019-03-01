@@ -59,3 +59,27 @@ trait IInvoiceLineItem
   var `type`: stripeLib.stripeLibStrings.invoiceitem | stripeLib.stripeLibStrings.subscription
 }
 
+object IInvoiceLineItem {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    description: java.lang.String,
+    discountable: scala.Boolean,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.line_item,
+    period: IPeriod,
+    plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan,
+    proration: scala.Boolean,
+    quantity: scala.Double,
+    subscription: java.lang.String,
+    `type`: stripeLib.stripeLibStrings.invoiceitem | stripeLib.stripeLibStrings.subscription
+  ): IInvoiceLineItem = {
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, `object` = `object`, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IInvoiceLineItem]
+  }
+}
+

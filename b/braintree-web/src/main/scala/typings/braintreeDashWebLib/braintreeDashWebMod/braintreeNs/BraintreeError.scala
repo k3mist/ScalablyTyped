@@ -28,3 +28,17 @@ trait BraintreeError extends js.Object {
   var `type`: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
 }
 
+object BraintreeError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    details: js.Any,
+    message: java.lang.String,
+    `type`: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+  ): BraintreeError = {
+    val __obj = js.Dynamic.literal(code = code, details = details, message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[BraintreeError]
+  }
+}
+

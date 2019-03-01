@@ -10,3 +10,15 @@ trait Anon_AudioMode extends js.Object {
   var label: java.lang.String
 }
 
+object Anon_AudioMode {
+  @scala.inline
+  def apply(
+    audioMode: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.AudioMode,
+    label: java.lang.String
+  ): Anon_AudioMode = {
+    val __obj = js.Dynamic.literal(audioMode = audioMode, label = label)
+  
+    __obj.asInstanceOf[Anon_AudioMode]
+  }
+}
+

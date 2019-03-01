@@ -20,3 +20,16 @@ trait ExtensionFilterResult extends js.Object {
   var resultMetadata: js.Array[ExtensionFilterResultMetadata]
 }
 
+object ExtensionFilterResult {
+  @scala.inline
+  def apply(
+    extensions: js.Array[PublishedExtension],
+    pagingToken: java.lang.String,
+    resultMetadata: js.Array[ExtensionFilterResultMetadata]
+  ): ExtensionFilterResult = {
+    val __obj = js.Dynamic.literal(extensions = extensions, pagingToken = pagingToken, resultMetadata = resultMetadata)
+  
+    __obj.asInstanceOf[ExtensionFilterResult]
+  }
+}
+

@@ -23,3 +23,16 @@ trait IGenericObjectEntry extends js.Object {
   var qProperty: IGenericObjectProperties
 }
 
+object IGenericObjectEntry {
+  @scala.inline
+  def apply(
+    qChildren: js.Array[IGenericObjectEntry],
+    qEmbeddedSnapshotRef: IGenericBookmarkEntry,
+    qProperty: IGenericObjectProperties
+  ): IGenericObjectEntry = {
+    val __obj = js.Dynamic.literal(qChildren = qChildren, qEmbeddedSnapshotRef = qEmbeddedSnapshotRef, qProperty = qProperty)
+  
+    __obj.asInstanceOf[IGenericObjectEntry]
+  }
+}
+

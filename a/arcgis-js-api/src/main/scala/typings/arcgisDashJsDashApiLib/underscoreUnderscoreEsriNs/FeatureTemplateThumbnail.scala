@@ -33,3 +33,20 @@ trait FeatureTemplateThumbnail
   var width: scala.Double
 }
 
+object FeatureTemplateThumbnail {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    contentType: js.Any,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    height: scala.Double,
+    imageData: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    width: scala.Double
+  ): FeatureTemplateThumbnail = {
+    val __obj = js.Dynamic.literal(constructor = constructor, contentType = contentType, hasOwnProperty = hasOwnProperty, height = height, imageData = imageData, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
+    __obj.asInstanceOf[FeatureTemplateThumbnail]
+  }
+}
+

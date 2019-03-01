@@ -22,3 +22,27 @@ trait hwb extends js.Object {
   def xyz(from: colorDashConvertLib.conversionsMod.HWB): colorDashConvertLib.conversionsMod.XYZ
 }
 
+object hwb {
+  @scala.inline
+  def apply(
+    ansi16: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.ANSI16],
+    ansi256: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.ANSI256],
+    apple: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.APPLE],
+    cmyk: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.CMYK],
+    gray: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.GRAY],
+    hcg: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.HCG],
+    hex: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.HEX],
+    hsl: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.HSL],
+    hsv: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.HSV],
+    keyword: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.KEYWORD],
+    lab: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.LAB],
+    lch: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.LCH],
+    rgb: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.RGB],
+    xyz: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.XYZ]
+  ): hwb = {
+    val __obj = js.Dynamic.literal(ansi16 = ansi16, ansi256 = ansi256, apple = apple, cmyk = cmyk, gray = gray, hcg = hcg, hex = hex, hsl = hsl, hsv = hsv, keyword = keyword, lab = lab, lch = lch, rgb = rgb, xyz = xyz)
+  
+    __obj.asInstanceOf[hwb]
+  }
+}
+

@@ -16,3 +16,12 @@ trait PubSubNames extends js.Object {
   var refreshTokens: java.lang.String
 }
 
+object PubSubNames {
+  @scala.inline
+  def apply(authCodes: java.lang.String, refreshTokens: java.lang.String): PubSubNames = {
+    val __obj = js.Dynamic.literal(authCodes = authCodes, refreshTokens = refreshTokens)
+  
+    __obj.asInstanceOf[PubSubNames]
+  }
+}
+

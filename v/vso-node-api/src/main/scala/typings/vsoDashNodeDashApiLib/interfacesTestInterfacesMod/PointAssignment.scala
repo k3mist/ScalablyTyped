@@ -10,3 +10,15 @@ trait PointAssignment extends js.Object {
   var tester: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object PointAssignment {
+  @scala.inline
+  def apply(
+    configuration: ShallowReference,
+    tester: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): PointAssignment = {
+    val __obj = js.Dynamic.literal(configuration = configuration, tester = tester)
+  
+    __obj.asInstanceOf[PointAssignment]
+  }
+}
+

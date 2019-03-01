@@ -12,3 +12,17 @@ trait StripeError extends js.Object {
   var `type`: java.lang.String
 }
 
+object StripeError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    message: java.lang.String,
+    `type`: java.lang.String,
+    param: java.lang.String = null
+  ): StripeError = {
+    val __obj = js.Dynamic.literal(code = code, message = message, `type` = `type`)
+    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.asInstanceOf[StripeError]
+  }
+}
+

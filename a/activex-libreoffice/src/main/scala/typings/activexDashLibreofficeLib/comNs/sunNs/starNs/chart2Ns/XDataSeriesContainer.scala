@@ -22,3 +22,21 @@ trait XDataSeriesContainer
   def setDataSeries(aDataSeries: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries]): scala.Unit
 }
 
+object XDataSeriesContainer {
+  @scala.inline
+  def apply(
+    DataSeries: activexDashInteropLib.SafeArray[XDataSeries],
+    acquire: js.Function0[scala.Unit],
+    addDataSeries: js.Function1[XDataSeries, scala.Unit],
+    getDataSeries: js.Function0[activexDashInteropLib.SafeArray[XDataSeries]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDataSeries: js.Function1[XDataSeries, scala.Unit],
+    setDataSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries], scala.Unit]
+  ): XDataSeriesContainer = {
+    val __obj = js.Dynamic.literal(DataSeries = DataSeries, acquire = acquire, addDataSeries = addDataSeries, getDataSeries = getDataSeries, queryInterface = queryInterface, release = release, removeDataSeries = removeDataSeries, setDataSeries = setDataSeries)
+  
+    __obj.asInstanceOf[XDataSeriesContainer]
+  }
+}
+

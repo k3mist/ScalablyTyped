@@ -16,3 +16,21 @@ trait InputValidation extends js.Object {
   var patternMismatchErrorMessage: java.lang.String
 }
 
+object InputValidation {
+  @scala.inline
+  def apply(
+    dataType: InputDataType,
+    isRequired: scala.Boolean,
+    maxLength: scala.Double,
+    maxValue: scala.Double,
+    minLength: scala.Double,
+    minValue: scala.Double,
+    pattern: java.lang.String,
+    patternMismatchErrorMessage: java.lang.String
+  ): InputValidation = {
+    val __obj = js.Dynamic.literal(dataType = dataType, isRequired = isRequired, maxLength = maxLength, maxValue = maxValue, minLength = minLength, minValue = minValue, pattern = pattern, patternMismatchErrorMessage = patternMismatchErrorMessage)
+  
+    __obj.asInstanceOf[InputValidation]
+  }
+}
+

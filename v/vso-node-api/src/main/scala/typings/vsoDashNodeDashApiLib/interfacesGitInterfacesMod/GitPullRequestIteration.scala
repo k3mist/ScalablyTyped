@@ -64,3 +64,27 @@ trait GitPullRequestIteration extends js.Object {
   var updatedDate: stdLib.Date
 }
 
+object GitPullRequestIteration {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changeList: js.Array[GitPullRequestChange],
+    commits: js.Array[GitCommitRef],
+    commonRefCommit: GitCommitRef,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    hasMoreCommits: scala.Boolean,
+    id: scala.Double,
+    push: GitPushRef,
+    reason: IterationReason,
+    sourceRefCommit: GitCommitRef,
+    targetRefCommit: GitCommitRef,
+    updatedDate: stdLib.Date
+  ): GitPullRequestIteration = {
+    val __obj = js.Dynamic.literal(_links = _links, author = author, changeList = changeList, commits = commits, commonRefCommit = commonRefCommit, createdDate = createdDate, description = description, hasMoreCommits = hasMoreCommits, id = id, push = push, reason = reason, sourceRefCommit = sourceRefCommit, targetRefCommit = targetRefCommit, updatedDate = updatedDate)
+  
+    __obj.asInstanceOf[GitPullRequestIteration]
+  }
+}
+

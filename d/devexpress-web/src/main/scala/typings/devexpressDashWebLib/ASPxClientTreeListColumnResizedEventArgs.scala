@@ -16,3 +16,12 @@ trait ASPxClientTreeListColumnResizedEventArgs extends ASPxClientProcessingModeE
   var column: ASPxClientTreeListColumn
 }
 
+object ASPxClientTreeListColumnResizedEventArgs {
+  @scala.inline
+  def apply(column: ASPxClientTreeListColumn, processOnServer: scala.Boolean): ASPxClientTreeListColumnResizedEventArgs = {
+    val __obj = js.Dynamic.literal(column = column, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientTreeListColumnResizedEventArgs]
+  }
+}
+

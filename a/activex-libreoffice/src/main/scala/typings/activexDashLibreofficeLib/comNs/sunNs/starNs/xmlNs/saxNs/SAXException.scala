@@ -20,3 +20,16 @@ trait SAXException
   var WrappedException: js.Any
 }
 
+object SAXException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    WrappedException: js.Any
+  ): SAXException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, WrappedException = WrappedException)
+  
+    __obj.asInstanceOf[SAXException]
+  }
+}
+

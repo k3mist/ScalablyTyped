@@ -34,3 +34,16 @@ trait Transaction extends js.Object {
   def rollback(): bluebirdLib.bluebirdMod.namespaced[scala.Unit]
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    LOCK: TransactionLock,
+    commit: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
+    rollback: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]]
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(LOCK = LOCK, commit = commit, rollback = rollback)
+  
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

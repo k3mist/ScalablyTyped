@@ -15,3 +15,19 @@ trait ItemContext[K, D] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object ItemContext {
+  @scala.inline
+  def apply[K, D](
+    componentElement: stdLib.Element,
+    data: js.Any,
+    index: scala.Double,
+    key: js.Any,
+    parentElement: stdLib.Element,
+    datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
+  ): ItemContext[K, D] = {
+    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, index = index, key = key, parentElement = parentElement)
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    __obj.asInstanceOf[ItemContext[K, D]]
+  }
+}
+

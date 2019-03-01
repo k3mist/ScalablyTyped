@@ -37,3 +37,25 @@ trait ZipEntry extends js.Object {
   var sName: java.lang.String
 }
 
+object ZipEntry {
+  @scala.inline
+  def apply(
+    extra: activexDashInteropLib.SafeArray[scala.Double],
+    nCompressedSize: scala.Double,
+    nCrc: scala.Double,
+    nDiskNumber: scala.Double,
+    nFlag: scala.Double,
+    nMethod: scala.Double,
+    nOffset: scala.Double,
+    nSize: scala.Double,
+    nTime: scala.Double,
+    nVersion: scala.Double,
+    sComment: java.lang.String,
+    sName: java.lang.String
+  ): ZipEntry = {
+    val __obj = js.Dynamic.literal(extra = extra, nCompressedSize = nCompressedSize, nCrc = nCrc, nDiskNumber = nDiskNumber, nFlag = nFlag, nMethod = nMethod, nOffset = nOffset, nSize = nSize, nTime = nTime, nVersion = nVersion, sComment = sComment, sName = sName)
+  
+    __obj.asInstanceOf[ZipEntry]
+  }
+}
+

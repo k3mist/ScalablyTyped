@@ -40,3 +40,17 @@ trait SecretVolumeSource extends js.Object {
   val secretName: java.lang.String
 }
 
+object SecretVolumeSource {
+  @scala.inline
+  def apply(
+    defaultMode: scala.Double,
+    items: js.Array[KeyToPath],
+    optional: scala.Boolean,
+    secretName: java.lang.String
+  ): SecretVolumeSource = {
+    val __obj = js.Dynamic.literal(defaultMode = defaultMode, items = items, optional = optional, secretName = secretName)
+  
+    __obj.asInstanceOf[SecretVolumeSource]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_NotAction
   var NotAction: java.lang.String | js.Array[java.lang.String]
 }
 
+object Anon_NotAction {
+  @scala.inline
+  def apply(NotAction: java.lang.String | js.Array[java.lang.String]): Anon_NotAction = {
+    val __obj = js.Dynamic.literal(NotAction = NotAction.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_NotAction]
+  }
+}
+

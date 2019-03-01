@@ -17,3 +17,18 @@ trait FieldType extends js.Object {
   var `type`: webidl2Lib.webidl2LibStrings.field
 }
 
+object FieldType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.field,
+    default: ValueDescription = null
+  ): FieldType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, `type` = `type`)
+    if (default != null) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[FieldType]
+  }
+}
+

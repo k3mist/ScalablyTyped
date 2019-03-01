@@ -14,3 +14,19 @@ trait TeamSettingsPatch extends js.Object {
   var workingDays: js.Array[vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek]
 }
 
+object TeamSettingsPatch {
+  @scala.inline
+  def apply(
+    backlogIteration: java.lang.String,
+    backlogVisibilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    bugsBehavior: BugsBehavior,
+    defaultIteration: java.lang.String,
+    defaultIterationMacro: java.lang.String,
+    workingDays: js.Array[vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek]
+  ): TeamSettingsPatch = {
+    val __obj = js.Dynamic.literal(backlogIteration = backlogIteration, backlogVisibilities = backlogVisibilities, bugsBehavior = bugsBehavior, defaultIteration = defaultIteration, defaultIterationMacro = defaultIterationMacro, workingDays = workingDays)
+  
+    __obj.asInstanceOf[TeamSettingsPatch]
+  }
+}
+

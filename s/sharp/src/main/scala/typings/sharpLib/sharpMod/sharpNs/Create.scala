@@ -16,3 +16,12 @@ trait Create extends js.Object {
   var width: scala.Double
 }
 
+object Create {
+  @scala.inline
+  def apply(background: Color, channels: Channels, height: scala.Double, width: scala.Double): Create = {
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], channels = channels, height = height, width = width)
+  
+    __obj.asInstanceOf[Create]
+  }
+}
+

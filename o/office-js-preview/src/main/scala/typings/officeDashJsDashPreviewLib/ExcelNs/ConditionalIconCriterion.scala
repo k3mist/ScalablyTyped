@@ -42,3 +42,17 @@ trait ConditionalIconCriterion extends js.Object {
   var `type`: ConditionalFormatIconRuleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Formula | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percentile
 }
 
+object ConditionalIconCriterion {
+  @scala.inline
+  def apply(
+    formula: java.lang.String,
+    operator: ConditionalIconCriterionOperator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThanOrEqual,
+    `type`: ConditionalFormatIconRuleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Formula | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percentile,
+    customIcon: Icon = null
+  ): ConditionalIconCriterion = {
+    val __obj = js.Dynamic.literal(formula = formula, operator = operator.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon)
+    __obj.asInstanceOf[ConditionalIconCriterion]
+  }
+}
+

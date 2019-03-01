@@ -11,3 +11,16 @@ trait Anon_BINARY extends js.Object {
   def MSE(targetValues: js.Array[scala.Double], outputValues: js.Array[scala.Double]): scala.Double
 }
 
+object Anon_BINARY {
+  @scala.inline
+  def apply(
+    BINARY: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double],
+    CROSS_ENTROPY: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double],
+    MSE: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double]
+  ): Anon_BINARY = {
+    val __obj = js.Dynamic.literal(BINARY = BINARY, CROSS_ENTROPY = CROSS_ENTROPY, MSE = MSE)
+  
+    __obj.asInstanceOf[Anon_BINARY]
+  }
+}
+

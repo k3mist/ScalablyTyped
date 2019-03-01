@@ -12,3 +12,17 @@ trait Anon_DomainName extends js.Object {
   var resourceRecordValue: java.lang.String
 }
 
+object Anon_DomainName {
+  @scala.inline
+  def apply(
+    domainName: java.lang.String,
+    resourceRecordName: java.lang.String,
+    resourceRecordType: java.lang.String,
+    resourceRecordValue: java.lang.String
+  ): Anon_DomainName = {
+    val __obj = js.Dynamic.literal(domainName = domainName, resourceRecordName = resourceRecordName, resourceRecordType = resourceRecordType, resourceRecordValue = resourceRecordValue)
+  
+    __obj.asInstanceOf[Anon_DomainName]
+  }
+}
+

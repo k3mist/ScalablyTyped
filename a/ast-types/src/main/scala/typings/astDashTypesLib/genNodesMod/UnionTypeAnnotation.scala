@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
 }
 
+object UnionTypeAnnotation {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.UnionTypeAnnotation,
+    types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
+  ): UnionTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`, types = types)
+  
+    __obj.asInstanceOf[UnionTypeAnnotation]
+  }
+}
+

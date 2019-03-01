@@ -50,3 +50,19 @@ trait ServiceAccount extends js.Object {
   val secrets: js.Array[ObjectReference]
 }
 
+object ServiceAccount {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    automountServiceAccountToken: scala.Boolean,
+    imagePullSecrets: js.Array[LocalObjectReference],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccount,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    secrets: js.Array[ObjectReference]
+  ): ServiceAccount = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, automountServiceAccountToken = automountServiceAccountToken, imagePullSecrets = imagePullSecrets, kind = kind, metadata = metadata, secrets = secrets)
+  
+    __obj.asInstanceOf[ServiceAccount]
+  }
+}
+

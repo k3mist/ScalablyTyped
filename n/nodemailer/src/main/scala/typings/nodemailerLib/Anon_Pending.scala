@@ -10,3 +10,12 @@ trait Anon_Pending extends js.Object {
   var ts: scala.Double
 }
 
+object Anon_Pending {
+  @scala.inline
+  def apply(pending: scala.Boolean, ts: scala.Double): Anon_Pending = {
+    val __obj = js.Dynamic.literal(pending = pending, ts = ts)
+  
+    __obj.asInstanceOf[Anon_Pending]
+  }
+}
+

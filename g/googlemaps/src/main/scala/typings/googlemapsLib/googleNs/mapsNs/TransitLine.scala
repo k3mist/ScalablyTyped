@@ -16,3 +16,21 @@ trait TransitLine extends js.Object {
   var vehicle: TransitVehicle
 }
 
+object TransitLine {
+  @scala.inline
+  def apply(
+    agencies: js.Array[TransitAgency],
+    color: java.lang.String,
+    icon: java.lang.String,
+    name: java.lang.String,
+    short_name: java.lang.String,
+    text_color: java.lang.String,
+    url: java.lang.String,
+    vehicle: TransitVehicle
+  ): TransitLine = {
+    val __obj = js.Dynamic.literal(agencies = agencies, color = color, icon = icon, name = name, short_name = short_name, text_color = text_color, url = url, vehicle = vehicle)
+  
+    __obj.asInstanceOf[TransitLine]
+  }
+}
+

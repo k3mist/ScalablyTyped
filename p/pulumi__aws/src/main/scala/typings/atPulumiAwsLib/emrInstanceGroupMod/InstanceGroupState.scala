@@ -36,3 +36,28 @@ trait InstanceGroupState extends js.Object {
   val status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object InstanceGroupState {
+  @scala.inline
+  def apply(
+    clusterId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ebsConfigs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IopsSize]]] = null,
+    ebsOptimized: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    instanceCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    instanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    runningInstanceCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): InstanceGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (ebsConfigs != null) __obj.updateDynamic("ebsConfigs")(ebsConfigs.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (runningInstanceCount != null) __obj.updateDynamic("runningInstanceCount")(runningInstanceCount.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceGroupState]
+  }
+}
+

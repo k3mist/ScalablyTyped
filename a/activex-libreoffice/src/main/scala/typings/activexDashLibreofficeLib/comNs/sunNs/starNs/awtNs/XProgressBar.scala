@@ -26,3 +26,22 @@ trait XProgressBar
   def setValue(Value: scala.Double): scala.Unit
 }
 
+object XProgressBar {
+  @scala.inline
+  def apply(
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setBackgroundColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
+    setForegroundColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
+    setRange: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): XProgressBar = {
+    val __obj = js.Dynamic.literal(Value = Value, acquire = acquire, getValue = getValue, queryInterface = queryInterface, release = release, setBackgroundColor = setBackgroundColor, setForegroundColor = setForegroundColor, setRange = setRange, setValue = setValue)
+  
+    __obj.asInstanceOf[XProgressBar]
+  }
+}
+

@@ -11,3 +11,12 @@ trait SymbolConstructor extends js.Object {
   val observable: js.Symbol
 }
 
+object SymbolConstructor {
+  @scala.inline
+  def apply(asyncIterator: js.Symbol, iterator: js.Symbol, observable: js.Symbol): SymbolConstructor = {
+    val __obj = js.Dynamic.literal(asyncIterator = asyncIterator, iterator = iterator, observable = observable)
+  
+    __obj.asInstanceOf[SymbolConstructor]
+  }
+}
+

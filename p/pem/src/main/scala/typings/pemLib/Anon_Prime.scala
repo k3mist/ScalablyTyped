@@ -10,3 +10,12 @@ trait Anon_Prime extends js.Object {
   var size: js.Any
 }
 
+object Anon_Prime {
+  @scala.inline
+  def apply(prime: js.Any, size: js.Any): Anon_Prime = {
+    val __obj = js.Dynamic.literal(prime = prime, size = size)
+  
+    __obj.asInstanceOf[Anon_Prime]
+  }
+}
+

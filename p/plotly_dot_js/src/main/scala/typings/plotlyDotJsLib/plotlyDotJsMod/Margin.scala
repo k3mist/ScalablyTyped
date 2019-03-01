@@ -12,3 +12,12 @@ trait Margin extends js.Object {
   var t: scala.Double
 }
 
+object Margin {
+  @scala.inline
+  def apply(b: scala.Double, l: scala.Double, r: scala.Double, t: scala.Double): Margin = {
+    val __obj = js.Dynamic.literal(b = b, l = l, r = r, t = t)
+  
+    __obj.asInstanceOf[Margin]
+  }
+}
+

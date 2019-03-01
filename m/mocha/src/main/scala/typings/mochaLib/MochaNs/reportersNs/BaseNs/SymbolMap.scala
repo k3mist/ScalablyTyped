@@ -19,3 +19,19 @@ trait SymbolMap
   var ok: java.lang.String
 }
 
+object SymbolMap {
+  @scala.inline
+  def apply(
+    bang: java.lang.String,
+    comma: java.lang.String,
+    dot: java.lang.String,
+    err: java.lang.String,
+    ok: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): SymbolMap = {
+    val __obj = js.Dynamic.literal(bang = bang, comma = comma, dot = dot, err = err, ok = ok)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[SymbolMap]
+  }
+}
+

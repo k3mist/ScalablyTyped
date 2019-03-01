@@ -28,3 +28,12 @@ trait SelectionChangedEventArgs extends js.Object {
   var shapeNames: js.Array[java.lang.String]
 }
 
+object SelectionChangedEventArgs {
+  @scala.inline
+  def apply(pageName: java.lang.String, shapeNames: js.Array[java.lang.String]): SelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(pageName = pageName, shapeNames = shapeNames)
+  
+    __obj.asInstanceOf[SelectionChangedEventArgs]
+  }
+}
+

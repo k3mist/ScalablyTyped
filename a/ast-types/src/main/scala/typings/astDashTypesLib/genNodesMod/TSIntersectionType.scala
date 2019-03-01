@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var types: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]
 }
 
+object TSIntersectionType {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSIntersectionType,
+    types: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]
+  ): TSIntersectionType = {
+    val __obj = js.Dynamic.literal(`type` = `type`, types = types)
+  
+    __obj.asInstanceOf[TSIntersectionType]
+  }
+}
+

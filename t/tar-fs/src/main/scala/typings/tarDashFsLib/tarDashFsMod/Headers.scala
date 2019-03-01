@@ -15,3 +15,20 @@ trait Headers extends js.Object {
   var uid: scala.Double
 }
 
+object Headers {
+  @scala.inline
+  def apply(
+    gid: scala.Double,
+    mode: scala.Double,
+    mtime: stdLib.Date,
+    name: java.lang.String,
+    size: scala.Double,
+    `type`: tarDashFsLib.tarDashFsLibStrings.file | tarDashFsLib.tarDashFsLibStrings.directory | tarDashFsLib.tarDashFsLibStrings.link | tarDashFsLib.tarDashFsLibStrings.symlink,
+    uid: scala.Double
+  ): Headers = {
+    val __obj = js.Dynamic.literal(gid = gid, mode = mode, mtime = mtime, name = name, size = size, `type` = `type`.asInstanceOf[js.Any], uid = uid)
+  
+    __obj.asInstanceOf[Headers]
+  }
+}
+

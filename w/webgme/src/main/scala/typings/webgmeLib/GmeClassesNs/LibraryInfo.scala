@@ -14,3 +14,12 @@ trait LibraryInfo extends js.Object {
   var projectId: java.lang.String
 }
 
+object LibraryInfo {
+  @scala.inline
+  def apply(branchName: java.lang.String, commitHash: java.lang.String, projectId: java.lang.String): LibraryInfo = {
+    val __obj = js.Dynamic.literal(branchName = branchName, commitHash = commitHash, projectId = projectId)
+  
+    __obj.asInstanceOf[LibraryInfo]
+  }
+}
+

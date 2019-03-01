@@ -21,3 +21,12 @@ trait NetworkPolicyPort extends js.Object {
   val protocol: java.lang.String
 }
 
+object NetworkPolicyPort {
+  @scala.inline
+  def apply(port: scala.Double | java.lang.String, protocol: java.lang.String): NetworkPolicyPort = {
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol)
+  
+    __obj.asInstanceOf[NetworkPolicyPort]
+  }
+}
+

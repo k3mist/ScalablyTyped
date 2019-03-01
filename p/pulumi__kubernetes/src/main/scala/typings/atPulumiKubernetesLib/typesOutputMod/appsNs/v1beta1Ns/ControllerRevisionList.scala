@@ -33,3 +33,17 @@ trait ControllerRevisionList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object ControllerRevisionList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`,
+    items: js.Array[ControllerRevision],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): ControllerRevisionList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[ControllerRevisionList]
+  }
+}
+

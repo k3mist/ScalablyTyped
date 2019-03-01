@@ -20,3 +20,12 @@ trait Anon_Cache extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Cache {
+  @scala.inline
+  def apply(cache: scala.Boolean, dataType: java.lang.String, `type`: java.lang.String): Anon_Cache = {
+    val __obj = js.Dynamic.literal(cache = cache, dataType = dataType, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Cache]
+  }
+}
+

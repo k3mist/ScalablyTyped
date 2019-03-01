@@ -23,3 +23,18 @@ trait LicenseException
   var Text: java.lang.String
 }
 
+object LicenseException {
+  @scala.inline
+  def apply(
+    AcceptBy: java.lang.String,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ExtensionName: java.lang.String,
+    Message: java.lang.String,
+    Text: java.lang.String
+  ): LicenseException = {
+    val __obj = js.Dynamic.literal(AcceptBy = AcceptBy, Context = Context, ExtensionName = ExtensionName, Message = Message, Text = Text)
+  
+    __obj.asInstanceOf[LicenseException]
+  }
+}
+

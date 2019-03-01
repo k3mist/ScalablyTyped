@@ -14,3 +14,16 @@ trait NetworkInterface extends js.Object {
   var prefixLength: chromeDashAppsLib.chromeNs.integer
 }
 
+object NetworkInterface {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    name: java.lang.String,
+    prefixLength: chromeDashAppsLib.chromeNs.integer
+  ): NetworkInterface = {
+    val __obj = js.Dynamic.literal(address = address, name = name, prefixLength = prefixLength)
+  
+    __obj.asInstanceOf[NetworkInterface]
+  }
+}
+

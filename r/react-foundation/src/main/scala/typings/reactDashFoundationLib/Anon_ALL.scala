@@ -14,3 +14,19 @@ trait Anon_ALL extends js.Object {
   var XXLARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints
 }
 
+object Anon_ALL {
+  @scala.inline
+  def apply(
+    ALL: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
+    LARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
+    MEDIUM: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
+    SMALL: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
+    XLARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
+    XXLARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints
+  ): Anon_ALL = {
+    val __obj = js.Dynamic.literal(ALL = ALL, LARGE = LARGE, MEDIUM = MEDIUM, SMALL = SMALL, XLARGE = XLARGE, XXLARGE = XXLARGE)
+  
+    __obj.asInstanceOf[Anon_ALL]
+  }
+}
+

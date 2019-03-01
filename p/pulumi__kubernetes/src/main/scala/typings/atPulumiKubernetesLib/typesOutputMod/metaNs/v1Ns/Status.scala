@@ -55,3 +55,21 @@ trait Status extends js.Object {
   val status: java.lang.String
 }
 
+object Status {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    code: scala.Double,
+    details: StatusDetails,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status,
+    message: java.lang.String,
+    metadata: ListMeta,
+    reason: java.lang.String,
+    status: java.lang.String
+  ): Status = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, code = code, details = details, kind = kind, message = message, metadata = metadata, reason = reason, status = status)
+  
+    __obj.asInstanceOf[Status]
+  }
+}
+

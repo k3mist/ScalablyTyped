@@ -23,3 +23,17 @@ trait ReshapeEventInfo
   var `type`: java.lang.String
 }
 
+object ReshapeEventInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): ReshapeEventInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[ReshapeEventInfo]
+  }
+}
+

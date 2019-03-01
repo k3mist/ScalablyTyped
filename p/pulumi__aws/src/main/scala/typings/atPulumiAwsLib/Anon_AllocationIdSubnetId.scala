@@ -10,3 +10,15 @@ trait Anon_AllocationIdSubnetId extends js.Object {
   var subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_AllocationIdSubnetId {
+  @scala.inline
+  def apply(
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    allocationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_AllocationIdSubnetId = {
+    val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any])
+    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AllocationIdSubnetId]
+  }
+}
+

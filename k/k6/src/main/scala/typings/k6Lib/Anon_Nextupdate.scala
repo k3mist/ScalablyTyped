@@ -14,3 +14,19 @@ trait Anon_Nextupdate extends js.Object {
   var this_update: scala.Double
 }
 
+object Anon_Nextupdate {
+  @scala.inline
+  def apply(
+    next_update: scala.Double,
+    produced_at: scala.Double,
+    revocation_reason: java.lang.String,
+    revoked_at: scala.Double,
+    status: java.lang.String,
+    this_update: scala.Double
+  ): Anon_Nextupdate = {
+    val __obj = js.Dynamic.literal(next_update = next_update, produced_at = produced_at, revocation_reason = revocation_reason, revoked_at = revoked_at, status = status, this_update = this_update)
+  
+    __obj.asInstanceOf[Anon_Nextupdate]
+  }
+}
+

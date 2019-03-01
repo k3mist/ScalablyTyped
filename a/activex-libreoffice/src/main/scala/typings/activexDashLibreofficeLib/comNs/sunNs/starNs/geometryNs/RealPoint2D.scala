@@ -16,3 +16,12 @@ trait RealPoint2D extends js.Object {
   var Y: scala.Double
 }
 
+object RealPoint2D {
+  @scala.inline
+  def apply(X: scala.Double, Y: scala.Double): RealPoint2D = {
+    val __obj = js.Dynamic.literal(X = X, Y = Y)
+  
+    __obj.asInstanceOf[RealPoint2D]
+  }
+}
+

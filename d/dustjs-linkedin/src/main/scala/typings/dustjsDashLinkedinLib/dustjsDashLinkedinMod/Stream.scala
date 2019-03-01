@@ -16,3 +16,17 @@ trait Stream extends js.Object {
   def pipe(stream: Stream): Stream
 }
 
+object Stream {
+  @scala.inline
+  def apply(
+    emit: js.Function2[java.lang.String, js.Any, scala.Unit],
+    flush: js.Function0[scala.Unit],
+    on: js.Function2[java.lang.String, js.Function1[/* data */ js.UndefOr[js.Any], _], Stream],
+    pipe: js.Function1[Stream, Stream]
+  ): Stream = {
+    val __obj = js.Dynamic.literal(emit = emit, flush = flush, on = on, pipe = pipe)
+  
+    __obj.asInstanceOf[Stream]
+  }
+}
+

@@ -31,3 +31,12 @@ trait TableRow extends js.Object {
   var start: scala.Double
 }
 
+object TableRow {
+  @scala.inline
+  def apply(cells: js.Array[TableCell], interval: Interval, length: scala.Double, start: scala.Double): TableRow = {
+    val __obj = js.Dynamic.literal(cells = cells, interval = interval, length = length, start = start)
+  
+    __obj.asInstanceOf[TableRow]
+  }
+}
+

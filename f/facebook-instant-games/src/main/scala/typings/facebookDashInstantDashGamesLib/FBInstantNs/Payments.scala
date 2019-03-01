@@ -57,3 +57,18 @@ trait Payments extends js.Object {
   def purchaseAsync(purchaseConfig: PurchaseConfig): js.Promise[Purchase]
 }
 
+object Payments {
+  @scala.inline
+  def apply(
+    consumePurchaseAsync: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    getCatalogAsync: js.Function0[js.Promise[js.Array[Product]]],
+    getPurchasesAsync: js.Function0[js.Promise[js.Array[Purchase]]],
+    onReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    purchaseAsync: js.Function1[PurchaseConfig, js.Promise[Purchase]]
+  ): Payments = {
+    val __obj = js.Dynamic.literal(consumePurchaseAsync = consumePurchaseAsync, getCatalogAsync = getCatalogAsync, getPurchasesAsync = getPurchasesAsync, onReady = onReady, purchaseAsync = purchaseAsync)
+  
+    __obj.asInstanceOf[Payments]
+  }
+}
+

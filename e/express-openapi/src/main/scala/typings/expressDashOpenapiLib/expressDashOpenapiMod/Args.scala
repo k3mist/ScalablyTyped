@@ -16,3 +16,21 @@ trait Args extends js.Object {
   def errorTransformer(openapiError: OpenapiError, jsonschemaError: JsonschemaError): js.Any
 }
 
+object Args {
+  @scala.inline
+  def apply(
+    apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition,
+    app: expressLib.expressMod.eNs.Application,
+    customFormats: CustomFormats,
+    docPath: java.lang.String,
+    errorTransformer: js.Function2[OpenapiError, JsonschemaError, js.Any],
+    exposeApiDocs: scala.Boolean,
+    routes: java.lang.String,
+    validateApiDoc: scala.Boolean
+  ): Args = {
+    val __obj = js.Dynamic.literal(apiDoc = apiDoc, app = app, customFormats = customFormats, docPath = docPath, errorTransformer = errorTransformer, exposeApiDocs = exposeApiDocs, routes = routes, validateApiDoc = validateApiDoc)
+  
+    __obj.asInstanceOf[Args]
+  }
+}
+

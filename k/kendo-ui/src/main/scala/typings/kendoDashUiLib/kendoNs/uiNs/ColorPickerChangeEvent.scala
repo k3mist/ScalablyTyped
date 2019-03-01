@@ -9,3 +9,17 @@ trait ColorPickerChangeEvent extends ColorPickerEvent {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColorPickerChangeEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ColorPicker,
+    value: java.lang.String = null
+  ): ColorPickerChangeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ColorPickerChangeEvent]
+  }
+}
+

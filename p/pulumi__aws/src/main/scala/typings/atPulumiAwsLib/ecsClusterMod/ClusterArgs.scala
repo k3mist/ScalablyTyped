@@ -18,3 +18,16 @@ trait ClusterArgs extends js.Object {
   ] = js.undefined
 }
 
+object ClusterArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ClusterArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterArgs]
+  }
+}
+

@@ -28,3 +28,17 @@ trait MessageModified
   var to: java.lang.String
 }
 
+object MessageModified {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    id: java.lang.String,
+    message_id: java.lang.String,
+    to: java.lang.String
+  ): MessageModified = {
+    val __obj = js.Dynamic.literal(content = content, id = id, message_id = message_id, to = to)
+  
+    __obj.asInstanceOf[MessageModified]
+  }
+}
+

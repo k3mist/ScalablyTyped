@@ -25,3 +25,17 @@ trait SealOptionsSub extends js.Object {
   var saltBits: scala.Double
 }
 
+object SealOptionsSub {
+  @scala.inline
+  def apply(
+    algorithm: ironLib.ironLibStrings.`aes-128-ctr` | ironLib.ironLibStrings.`aes-256-cbc` | ironLib.ironLibStrings.sha256,
+    iterations: scala.Double,
+    minPasswordlength: scala.Double,
+    saltBits: scala.Double
+  ): SealOptionsSub = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], iterations = iterations, minPasswordlength = minPasswordlength, saltBits = saltBits)
+  
+    __obj.asInstanceOf[SealOptionsSub]
+  }
+}
+

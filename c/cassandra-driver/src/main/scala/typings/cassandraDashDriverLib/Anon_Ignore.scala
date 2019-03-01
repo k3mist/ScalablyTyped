@@ -11,3 +11,12 @@ trait Anon_Ignore extends js.Object {
   var retry: scala.Double
 }
 
+object Anon_Ignore {
+  @scala.inline
+  def apply(ignore: scala.Double, rethrow: scala.Double, retry: scala.Double): Anon_Ignore = {
+    val __obj = js.Dynamic.literal(ignore = ignore, rethrow = rethrow, retry = retry)
+  
+    __obj.asInstanceOf[Anon_Ignore]
+  }
+}
+

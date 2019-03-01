@@ -19,3 +19,12 @@ trait GetCurrentPositionResponse extends js.Object {
   var timestamp: scala.Double
 }
 
+object GetCurrentPositionResponse {
+  @scala.inline
+  def apply(coords: js.Any, timestamp: scala.Double): GetCurrentPositionResponse = {
+    val __obj = js.Dynamic.literal(coords = coords, timestamp = timestamp)
+  
+    __obj.asInstanceOf[GetCurrentPositionResponse]
+  }
+}
+

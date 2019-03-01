@@ -47,3 +47,29 @@ trait ApnsChannelArgs extends js.Object {
   val tokenKeyId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApnsChannelArgs {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    bundleId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    defaultAuthenticationMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    privateKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    teamId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tokenKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tokenKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ApnsChannelArgs = {
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (defaultAuthenticationMethod != null) __obj.updateDynamic("defaultAuthenticationMethod")(defaultAuthenticationMethod.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
+    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey.asInstanceOf[js.Any])
+    if (tokenKeyId != null) __obj.updateDynamic("tokenKeyId")(tokenKeyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApnsChannelArgs]
+  }
+}
+

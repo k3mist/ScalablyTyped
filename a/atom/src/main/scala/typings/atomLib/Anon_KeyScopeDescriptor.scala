@@ -10,3 +10,15 @@ trait Anon_KeyScopeDescriptor extends js.Object {
   var value: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 }
 
+object Anon_KeyScopeDescriptor {
+  @scala.inline
+  def apply(
+    scopeDescriptor: atomLib.atomMod.ScopeDescriptor,
+    value: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  ): Anon_KeyScopeDescriptor = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+  
+    __obj.asInstanceOf[Anon_KeyScopeDescriptor]
+  }
+}
+

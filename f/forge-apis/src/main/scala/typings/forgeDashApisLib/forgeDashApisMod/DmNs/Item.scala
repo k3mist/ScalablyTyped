@@ -13,3 +13,18 @@ trait Item extends js.Object {
   var `type`: java.lang.String
 }
 
+object Item {
+  @scala.inline
+  def apply(
+    attributes: forgeDashApisLib.Anon_CreateTime,
+    id: java.lang.String,
+    links: forgeDashApisLib.Anon_Self,
+    relationships: forgeDashApisLib.Anon_Derivatives,
+    `type`: java.lang.String
+  ): Item = {
+    val __obj = js.Dynamic.literal(attributes = attributes, id = id, links = links, relationships = relationships, `type` = `type`)
+  
+    __obj.asInstanceOf[Item]
+  }
+}
+

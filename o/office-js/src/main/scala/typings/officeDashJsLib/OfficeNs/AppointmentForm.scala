@@ -185,3 +185,21 @@ trait AppointmentForm extends js.Object {
   var subject: java.lang.String
 }
 
+object AppointmentForm {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    end: stdLib.Date,
+    location: java.lang.String,
+    optionalAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails],
+    requiredAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails],
+    resources: js.Array[java.lang.String],
+    start: stdLib.Date,
+    subject: java.lang.String
+  ): AppointmentForm = {
+    val __obj = js.Dynamic.literal(body = body, end = end, location = location, optionalAttendees = optionalAttendees.asInstanceOf[js.Any], requiredAttendees = requiredAttendees.asInstanceOf[js.Any], resources = resources, start = start, subject = subject)
+  
+    __obj.asInstanceOf[AppointmentForm]
+  }
+}
+

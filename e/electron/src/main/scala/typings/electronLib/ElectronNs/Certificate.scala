@@ -49,3 +49,23 @@ trait Certificate extends js.Object {
   var validStart: scala.Double
 }
 
+object Certificate {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    fingerprint: java.lang.String,
+    issuer: CertificatePrincipal,
+    issuerCert: Certificate,
+    issuerName: java.lang.String,
+    serialNumber: java.lang.String,
+    subject: CertificatePrincipal,
+    subjectName: java.lang.String,
+    validExpiry: scala.Double,
+    validStart: scala.Double
+  ): Certificate = {
+    val __obj = js.Dynamic.literal(data = data, fingerprint = fingerprint, issuer = issuer, issuerCert = issuerCert, issuerName = issuerName, serialNumber = serialNumber, subject = subject, subjectName = subjectName, validExpiry = validExpiry, validStart = validStart)
+  
+    __obj.asInstanceOf[Certificate]
+  }
+}
+

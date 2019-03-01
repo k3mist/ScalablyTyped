@@ -11,3 +11,12 @@ trait RenderDataPointOptions extends js.Object {
   var strokeOpacity: scala.Double
 }
 
+object RenderDataPointOptions {
+  @scala.inline
+  def apply(fillOpacity: scala.Double, radius: scala.Double, strokeOpacity: scala.Double): RenderDataPointOptions = {
+    val __obj = js.Dynamic.literal(fillOpacity = fillOpacity, radius = radius, strokeOpacity = strokeOpacity)
+  
+    __obj.asInstanceOf[RenderDataPointOptions]
+  }
+}
+

@@ -20,3 +20,21 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
 }
 
+object Property {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    kind: astDashTypesLib.astDashTypesLibStrings.init | astDashTypesLib.astDashTypesLibStrings.get | astDashTypesLib.astDashTypesLibStrings.set,
+    method: scala.Boolean,
+    shorthand: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.Property,
+    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
+  ): Property = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method, shorthand = shorthand, `type` = `type`, value = value.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    __obj.asInstanceOf[Property]
+  }
+}
+

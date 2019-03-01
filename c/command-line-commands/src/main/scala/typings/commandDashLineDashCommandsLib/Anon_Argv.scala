@@ -10,3 +10,12 @@ trait Anon_Argv extends js.Object {
   var command: java.lang.String | scala.Null
 }
 
+object Anon_Argv {
+  @scala.inline
+  def apply(argv: js.Array[java.lang.String], command: java.lang.String = null): Anon_Argv = {
+    val __obj = js.Dynamic.literal(argv = argv)
+    if (command != null) __obj.updateDynamic("command")(command)
+    __obj.asInstanceOf[Anon_Argv]
+  }
+}
+

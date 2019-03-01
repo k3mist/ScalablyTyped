@@ -21,3 +21,23 @@ trait PrivateKeyInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object PrivateKeyInfo {
+  @scala.inline
+  def apply(
+    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    privateKey: asn1jsLib.asn1jsMod.OctetString,
+    privateKeyAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double,
+    attributes: js.Array[pkijsLib.srcAttributeMod.default] = null,
+    parsedKey: pkijsLib.srcECPrivateKeyMod.default | pkijsLib.srcRSAPrivateKeyMod.default = null
+  ): PrivateKeyInfo = {
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, privateKey = privateKey, privateKeyAlgorithm = privateKeyAlgorithm, toJSON = toJSON, toSchema = toSchema, version = version)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (parsedKey != null) __obj.updateDynamic("parsedKey")(parsedKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrivateKeyInfo]
+  }
+}
+

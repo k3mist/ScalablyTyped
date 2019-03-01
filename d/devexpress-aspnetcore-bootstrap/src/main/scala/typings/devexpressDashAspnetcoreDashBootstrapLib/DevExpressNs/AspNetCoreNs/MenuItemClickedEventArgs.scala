@@ -10,3 +10,12 @@ trait MenuItemClickedEventArgs extends EventArgs {
   val itemName: java.lang.String
 }
 
+object MenuItemClickedEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, itemName: java.lang.String, sender: Control): MenuItemClickedEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled, itemName = itemName, sender = sender)
+  
+    __obj.asInstanceOf[MenuItemClickedEventArgs]
+  }
+}
+

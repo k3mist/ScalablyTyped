@@ -31,3 +31,16 @@ trait AdInstance extends js.Object {
   def showAsync(): js.Promise[scala.Unit]
 }
 
+object AdInstance {
+  @scala.inline
+  def apply(
+    getPlacementID: js.Function0[java.lang.String],
+    loadAsync: js.Function0[js.Promise[scala.Unit]],
+    showAsync: js.Function0[js.Promise[scala.Unit]]
+  ): AdInstance = {
+    val __obj = js.Dynamic.literal(getPlacementID = getPlacementID, loadAsync = loadAsync, showAsync = showAsync)
+  
+    __obj.asInstanceOf[AdInstance]
+  }
+}
+

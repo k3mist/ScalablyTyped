@@ -10,3 +10,12 @@ trait KeyPair extends js.Object {
   var publicKey: Handle
 }
 
+object KeyPair {
+  @scala.inline
+  def apply(privateKey: Handle, publicKey: Handle): KeyPair = {
+    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+  
+    __obj.asInstanceOf[KeyPair]
+  }
+}
+

@@ -24,3 +24,16 @@ trait ContainerState extends js.Object {
   val waiting: ContainerStateWaiting
 }
 
+object ContainerState {
+  @scala.inline
+  def apply(
+    running: ContainerStateRunning,
+    terminated: ContainerStateTerminated,
+    waiting: ContainerStateWaiting
+  ): ContainerState = {
+    val __obj = js.Dynamic.literal(running = running, terminated = terminated, waiting = waiting)
+  
+    __obj.asInstanceOf[ContainerState]
+  }
+}
+

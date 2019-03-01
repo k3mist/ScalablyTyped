@@ -13,3 +13,18 @@ trait Session extends js.Object {
   var user: SessionUser
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    application: Application,
+    attributes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    `new`: scala.Boolean,
+    sessionId: java.lang.String,
+    user: SessionUser
+  ): Session = {
+    val __obj = js.Dynamic.literal(application = application, attributes = attributes, `new` = `new`, sessionId = sessionId, user = user)
+  
+    __obj.asInstanceOf[Session]
+  }
+}
+

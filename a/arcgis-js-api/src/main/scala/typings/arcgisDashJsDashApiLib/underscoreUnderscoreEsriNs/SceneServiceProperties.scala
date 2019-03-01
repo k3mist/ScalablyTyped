@@ -37,3 +37,20 @@ trait SceneServiceProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SceneServiceProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    layerId: scala.Int | scala.Double = null,
+    spatialReference: SpatialReferenceProperties = null,
+    url: java.lang.String = null
+  ): SceneServiceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[SceneServiceProperties]
+  }
+}
+

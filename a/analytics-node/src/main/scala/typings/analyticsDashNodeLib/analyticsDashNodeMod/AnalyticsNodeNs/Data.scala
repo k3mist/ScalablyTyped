@@ -11,3 +11,12 @@ trait Data extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object Data {
+  @scala.inline
+  def apply(batch: js.Array[Message], sentAt: stdLib.Date, timestamp: stdLib.Date): Data = {
+    val __obj = js.Dynamic.literal(batch = batch, sentAt = sentAt, timestamp = timestamp)
+  
+    __obj.asInstanceOf[Data]
+  }
+}
+

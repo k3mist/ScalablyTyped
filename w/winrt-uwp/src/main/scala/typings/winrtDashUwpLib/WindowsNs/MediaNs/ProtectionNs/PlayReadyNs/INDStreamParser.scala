@@ -25,3 +25,21 @@ trait INDStreamParser extends js.Object {
   def parseData(dataBytes: js.Array[scala.Double]): scala.Unit
 }
 
+object INDStreamParser {
+  @scala.inline
+  def apply(
+    beginOfStream: js.Function0[scala.Unit],
+    endOfStream: js.Function0[scala.Unit],
+    getStreamInformation: js.Function1[
+      winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaStreamDescriptor, 
+      winrtDashUwpLib.Anon_ReturnValueStreamType
+    ],
+    notifier: NDStreamParserNotifier,
+    parseData: js.Function1[js.Array[scala.Double], scala.Unit]
+  ): INDStreamParser = {
+    val __obj = js.Dynamic.literal(beginOfStream = beginOfStream, endOfStream = endOfStream, getStreamInformation = getStreamInformation, notifier = notifier, parseData = parseData)
+  
+    __obj.asInstanceOf[INDStreamParser]
+  }
+}
+

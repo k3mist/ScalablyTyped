@@ -26,3 +26,16 @@ trait Anon_Location extends js.Object {
   var placeId: java.lang.String
 }
 
+object Anon_Location {
+  @scala.inline
+  def apply(
+    location: atGoogleMapsLib.atGoogleMapsMod.LatLngLiteralVerbose,
+    originalIndex: scala.Double,
+    placeId: java.lang.String
+  ): Anon_Location = {
+    val __obj = js.Dynamic.literal(location = location, originalIndex = originalIndex, placeId = placeId)
+  
+    __obj.asInstanceOf[Anon_Location]
+  }
+}
+

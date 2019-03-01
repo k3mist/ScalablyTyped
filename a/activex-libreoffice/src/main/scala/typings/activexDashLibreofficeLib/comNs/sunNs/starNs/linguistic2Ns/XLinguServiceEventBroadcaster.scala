@@ -30,3 +30,18 @@ trait XLinguServiceEventBroadcaster
   def removeLinguServiceEventListener(xLstnr: XLinguServiceEventListener): scala.Boolean
 }
 
+object XLinguServiceEventBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean]
+  ): XLinguServiceEventBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addLinguServiceEventListener = addLinguServiceEventListener, queryInterface = queryInterface, release = release, removeLinguServiceEventListener = removeLinguServiceEventListener)
+  
+    __obj.asInstanceOf[XLinguServiceEventBroadcaster]
+  }
+}
+

@@ -9,3 +9,12 @@ trait NxAutoSortByStateDef extends js.Object {
   var qDisplayNumberOfRows: scala.Double
 }
 
+object NxAutoSortByStateDef {
+  @scala.inline
+  def apply(qDisplayNumberOfRows: scala.Double): NxAutoSortByStateDef = {
+    val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows)
+  
+    __obj.asInstanceOf[NxAutoSortByStateDef]
+  }
+}
+

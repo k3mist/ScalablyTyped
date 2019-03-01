@@ -15,3 +15,27 @@ import scala.scalajs.js.annotation._
   var zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DivOverlayProps {
+  @scala.inline
+  def apply(
+    children: Children,
+    className: java.lang.String = null,
+    leaflet: LeafletContext = null,
+    offset: leafletLib.leafletMod.PointExpression = null,
+    onClose: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    pane: java.lang.String = null,
+    zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
+  ): DivOverlayProps = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)
+    __obj.asInstanceOf[DivOverlayProps]
+  }
+}
+

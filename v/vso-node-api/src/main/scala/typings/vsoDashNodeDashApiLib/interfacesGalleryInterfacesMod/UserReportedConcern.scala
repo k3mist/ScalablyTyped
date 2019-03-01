@@ -28,3 +28,18 @@ trait UserReportedConcern extends js.Object {
   var userId: java.lang.String
 }
 
+object UserReportedConcern {
+  @scala.inline
+  def apply(
+    category: ConcernCategory,
+    concernText: java.lang.String,
+    reviewId: scala.Double,
+    submittedDate: stdLib.Date,
+    userId: java.lang.String
+  ): UserReportedConcern = {
+    val __obj = js.Dynamic.literal(category = category, concernText = concernText, reviewId = reviewId, submittedDate = submittedDate, userId = userId)
+  
+    __obj.asInstanceOf[UserReportedConcern]
+  }
+}
+

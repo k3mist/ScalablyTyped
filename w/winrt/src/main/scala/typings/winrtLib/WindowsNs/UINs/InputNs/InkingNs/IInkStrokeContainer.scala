@@ -26,3 +26,43 @@ trait IInkStrokeContainer extends js.Object {
   ): scala.Unit
 }
 
+object IInkStrokeContainer {
+  @scala.inline
+  def apply(
+    addStroke: js.Function1[InkStroke, scala.Unit],
+    boundingRect: winrtLib.WindowsNs.FoundationNs.Rect,
+    canPasteFromClipboard: js.Function0[scala.Boolean],
+    copySelectedToClipboard: js.Function0[scala.Unit],
+    deleteSelected: js.Function0[winrtLib.WindowsNs.FoundationNs.Rect],
+    getRecognitionResults: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult]],
+    getStrokes: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStroke]],
+    loadAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double]
+    ],
+    moveSelected: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, winrtLib.WindowsNs.FoundationNs.Rect],
+    pasteFromClipboard: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, winrtLib.WindowsNs.FoundationNs.Rect],
+    saveAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
+    ],
+    selectWithLine: js.Function2[
+      winrtLib.WindowsNs.FoundationNs.Point, 
+      winrtLib.WindowsNs.FoundationNs.Point, 
+      winrtLib.WindowsNs.FoundationNs.Rect
+    ],
+    selectWithPolyLine: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.FoundationNs.Point], 
+      winrtLib.WindowsNs.FoundationNs.Rect
+    ],
+    updateRecognitionResults: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkRecognitionResult], 
+      scala.Unit
+    ]
+  ): IInkStrokeContainer = {
+    val __obj = js.Dynamic.literal(addStroke = addStroke, boundingRect = boundingRect, canPasteFromClipboard = canPasteFromClipboard, copySelectedToClipboard = copySelectedToClipboard, deleteSelected = deleteSelected, getRecognitionResults = getRecognitionResults, getStrokes = getStrokes, loadAsync = loadAsync, moveSelected = moveSelected, pasteFromClipboard = pasteFromClipboard, saveAsync = saveAsync, selectWithLine = selectWithLine, selectWithPolyLine = selectWithPolyLine, updateRecognitionResults = updateRecognitionResults)
+  
+    __obj.asInstanceOf[IInkStrokeContainer]
+  }
+}
+

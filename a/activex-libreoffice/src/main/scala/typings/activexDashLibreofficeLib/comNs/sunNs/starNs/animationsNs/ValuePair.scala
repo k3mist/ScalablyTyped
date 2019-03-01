@@ -10,3 +10,12 @@ trait ValuePair extends js.Object {
   var Second: js.Any
 }
 
+object ValuePair {
+  @scala.inline
+  def apply(First: js.Any, Second: js.Any): ValuePair = {
+    val __obj = js.Dynamic.literal(First = First, Second = Second)
+  
+    __obj.asInstanceOf[ValuePair]
+  }
+}
+

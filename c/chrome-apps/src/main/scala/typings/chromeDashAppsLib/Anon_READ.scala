@@ -10,3 +10,15 @@ trait Anon_READ extends js.Object {
   var WRITE: chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
 }
 
+object Anon_READ {
+  @scala.inline
+  def apply(
+    READ: chromeDashAppsLib.chromeDashAppsLibStrings.READ,
+    WRITE: chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
+  ): Anon_READ = {
+    val __obj = js.Dynamic.literal(READ = READ, WRITE = WRITE)
+  
+    __obj.asInstanceOf[Anon_READ]
+  }
+}
+

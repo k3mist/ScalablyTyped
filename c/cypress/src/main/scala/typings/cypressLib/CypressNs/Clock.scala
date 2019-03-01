@@ -21,3 +21,12 @@ trait Clock extends js.Object {
   def tick(time: scala.Double): scala.Unit
 }
 
+object Clock {
+  @scala.inline
+  def apply(restore: js.Function0[scala.Unit], tick: js.Function1[scala.Double, scala.Unit]): Clock = {
+    val __obj = js.Dynamic.literal(restore = restore, tick = tick)
+  
+    __obj.asInstanceOf[Clock]
+  }
+}
+

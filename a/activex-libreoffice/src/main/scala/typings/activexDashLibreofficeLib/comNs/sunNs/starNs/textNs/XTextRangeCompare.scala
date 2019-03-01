@@ -24,3 +24,18 @@ trait XTextRangeCompare
   def compareRegionStarts(xR1: XTextRange, xR2: XTextRange): scala.Double
 }
 
+object XTextRangeCompare {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    compareRegionEnds: js.Function2[XTextRange, XTextRange, scala.Double],
+    compareRegionStarts: js.Function2[XTextRange, XTextRange, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextRangeCompare = {
+    val __obj = js.Dynamic.literal(acquire = acquire, compareRegionEnds = compareRegionEnds, compareRegionStarts = compareRegionStarts, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextRangeCompare]
+  }
+}
+

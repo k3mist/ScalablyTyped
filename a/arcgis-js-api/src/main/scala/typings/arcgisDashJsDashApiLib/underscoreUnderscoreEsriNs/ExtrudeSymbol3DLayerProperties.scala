@@ -22,3 +22,14 @@ trait ExtrudeSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExtrudeSymbol3DLayerProperties {
+  @scala.inline
+  def apply(edges: Edges3DProperties = null, material: js.Any = null, size: scala.Int | scala.Double = null): ExtrudeSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtrudeSymbol3DLayerProperties]
+  }
+}
+

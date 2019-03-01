@@ -44,3 +44,21 @@ trait BackgroundTokenizer extends js.Object {
   def stop(): scala.Unit
 }
 
+object BackgroundTokenizer {
+  @scala.inline
+  def apply(
+    fireUpdateEvent: js.Function2[scala.Double, scala.Double, scala.Unit],
+    getState: js.Function1[scala.Double, java.lang.String],
+    getTokens: js.Function1[scala.Double, js.Array[TokenInfo]],
+    setDocument: js.Function1[Document, scala.Unit],
+    setTokenizer: js.Function1[Tokenizer, scala.Unit],
+    start: js.Function1[scala.Double, scala.Unit],
+    states: js.Array[_],
+    stop: js.Function0[scala.Unit]
+  ): BackgroundTokenizer = {
+    val __obj = js.Dynamic.literal(fireUpdateEvent = fireUpdateEvent, getState = getState, getTokens = getTokens, setDocument = setDocument, setTokenizer = setTokenizer, start = start, states = states, stop = stop)
+  
+    __obj.asInstanceOf[BackgroundTokenizer]
+  }
+}
+

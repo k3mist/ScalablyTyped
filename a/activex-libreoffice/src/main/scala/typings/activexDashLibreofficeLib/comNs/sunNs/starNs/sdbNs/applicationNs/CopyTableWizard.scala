@@ -68,3 +68,35 @@ trait CopyTableWizard extends XCopyTableWizard {
   ): scala.Unit
 }
 
+object CopyTableWizard {
+  @scala.inline
+  def apply(
+    CreatePrimaryKey: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    DestinationTableName: java.lang.String,
+    Operation: scala.Double,
+    UseHeaderLineAsColumnNames: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addCopyTableListener: js.Function1[XCopyTableListener, scala.Unit],
+    create: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    createWithInteractionHandler: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCopyTableListener: js.Function1[XCopyTableListener, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): CopyTableWizard = {
+    val __obj = js.Dynamic.literal(CreatePrimaryKey = CreatePrimaryKey, DestinationTableName = DestinationTableName, Operation = Operation, UseHeaderLineAsColumnNames = UseHeaderLineAsColumnNames, acquire = acquire, addCopyTableListener = addCopyTableListener, create = create, createWithInteractionHandler = createWithInteractionHandler, execute = execute, queryInterface = queryInterface, release = release, removeCopyTableListener = removeCopyTableListener, setTitle = setTitle)
+  
+    __obj.asInstanceOf[CopyTableWizard]
+  }
+}
+

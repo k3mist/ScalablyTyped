@@ -21,3 +21,12 @@ trait HeaderFooter extends js.Object {
   var `type`: js.Any
 }
 
+object HeaderFooter {
+  @scala.inline
+  def apply(subDocument: SubDocument, `type`: js.Any): HeaderFooter = {
+    val __obj = js.Dynamic.literal(subDocument = subDocument, `type` = `type`)
+  
+    __obj.asInstanceOf[HeaderFooter]
+  }
+}
+

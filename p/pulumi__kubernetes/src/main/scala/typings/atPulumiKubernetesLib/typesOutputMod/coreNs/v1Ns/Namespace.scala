@@ -40,3 +40,18 @@ trait Namespace extends js.Object {
   val status: NamespaceStatus
 }
 
+object Namespace {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Namespace,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: NamespaceSpec,
+    status: NamespaceStatus
+  ): Namespace = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[Namespace]
+  }
+}
+

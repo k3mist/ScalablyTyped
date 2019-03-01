@@ -20,3 +20,12 @@ trait SecretReference extends js.Object {
   val namespace: java.lang.String
 }
 
+object SecretReference {
+  @scala.inline
+  def apply(name: java.lang.String, namespace: java.lang.String): SecretReference = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace)
+  
+    __obj.asInstanceOf[SecretReference]
+  }
+}
+

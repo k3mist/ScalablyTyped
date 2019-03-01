@@ -14,3 +14,19 @@ trait IBitmapTransform extends js.Object {
   var scaledWidth: scala.Double
 }
 
+object IBitmapTransform {
+  @scala.inline
+  def apply(
+    bounds: BitmapBounds,
+    flip: BitmapFlip,
+    interpolationMode: BitmapInterpolationMode,
+    rotation: BitmapRotation,
+    scaledHeight: scala.Double,
+    scaledWidth: scala.Double
+  ): IBitmapTransform = {
+    val __obj = js.Dynamic.literal(bounds = bounds, flip = flip, interpolationMode = interpolationMode, rotation = rotation, scaledHeight = scaledHeight, scaledWidth = scaledWidth)
+  
+    __obj.asInstanceOf[IBitmapTransform]
+  }
+}
+

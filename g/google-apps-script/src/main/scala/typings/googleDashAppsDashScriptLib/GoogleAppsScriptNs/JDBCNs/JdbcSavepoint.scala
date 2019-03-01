@@ -10,3 +10,15 @@ trait JdbcSavepoint extends js.Object {
   def getSavepointName(): java.lang.String
 }
 
+object JdbcSavepoint {
+  @scala.inline
+  def apply(
+    getSavepointId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getSavepointName: js.Function0[java.lang.String]
+  ): JdbcSavepoint = {
+    val __obj = js.Dynamic.literal(getSavepointId = getSavepointId, getSavepointName = getSavepointName)
+  
+    __obj.asInstanceOf[JdbcSavepoint]
+  }
+}
+

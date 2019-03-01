@@ -17,3 +17,18 @@ trait XViewPanesSupplier
   def getViewPanes(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XViewPanesSupplier {
+  @scala.inline
+  def apply(
+    ViewPanes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getViewPanes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XViewPanesSupplier = {
+    val __obj = js.Dynamic.literal(ViewPanes = ViewPanes, acquire = acquire, getViewPanes = getViewPanes, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XViewPanesSupplier]
+  }
+}
+

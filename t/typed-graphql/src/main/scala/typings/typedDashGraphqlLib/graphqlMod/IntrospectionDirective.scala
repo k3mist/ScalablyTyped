@@ -12,3 +12,17 @@ trait IntrospectionDirective extends js.Object {
   var name: java.lang.String
 }
 
+object IntrospectionDirective {
+  @scala.inline
+  def apply(
+    args: js.Array[IntrospectionInputValue],
+    locations: js.Array[DirectiveLocationEnum],
+    name: java.lang.String,
+    description: java.lang.String = null
+  ): IntrospectionDirective = {
+    val __obj = js.Dynamic.literal(args = args, locations = locations, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionDirective]
+  }
+}
+

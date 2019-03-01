@@ -16,3 +16,12 @@ trait BuildRequestValidationResult extends js.Object {
   var result: ValidationResult
 }
 
+object BuildRequestValidationResult {
+  @scala.inline
+  def apply(message: java.lang.String, result: ValidationResult): BuildRequestValidationResult = {
+    val __obj = js.Dynamic.literal(message = message, result = result)
+  
+    __obj.asInstanceOf[BuildRequestValidationResult]
+  }
+}
+

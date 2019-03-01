@@ -12,3 +12,12 @@ trait TestMessageParams extends js.Object {
   var value: js.Any
 }
 
+object TestMessageParams {
+  @scala.inline
+  def apply(label: java.lang.String, originalValue: js.Any, path: java.lang.String, value: js.Any): TestMessageParams = {
+    val __obj = js.Dynamic.literal(label = label, originalValue = originalValue, path = path, value = value)
+  
+    __obj.asInstanceOf[TestMessageParams]
+  }
+}
+

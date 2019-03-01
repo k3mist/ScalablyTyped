@@ -27,3 +27,12 @@ trait DialogOpenParameters extends js.Object {
   var ObjectId: java.lang.String
 }
 
+object DialogOpenParameters {
+  @scala.inline
+  def apply(DialogId: java.lang.String, EntityName: java.lang.String, ObjectId: java.lang.String): DialogOpenParameters = {
+    val __obj = js.Dynamic.literal(DialogId = DialogId, EntityName = EntityName, ObjectId = ObjectId)
+  
+    __obj.asInstanceOf[DialogOpenParameters]
+  }
+}
+

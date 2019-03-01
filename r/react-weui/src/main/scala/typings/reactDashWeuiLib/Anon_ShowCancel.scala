@@ -10,3 +10,12 @@ trait Anon_ShowCancel extends js.Object {
   var value: scala.Double
 }
 
+object Anon_ShowCancel {
+  @scala.inline
+  def apply(showCancel: scala.Boolean, value: scala.Double): Anon_ShowCancel = {
+    val __obj = js.Dynamic.literal(showCancel = showCancel, value = value)
+  
+    __obj.asInstanceOf[Anon_ShowCancel]
+  }
+}
+

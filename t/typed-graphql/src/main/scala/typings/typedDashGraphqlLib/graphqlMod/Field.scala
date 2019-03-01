@@ -17,3 +17,24 @@ trait Field
   var selectionSet: js.UndefOr[SelectionSet] = js.undefined
 }
 
+object Field {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    name: Name,
+    alias: Name = null,
+    arguments: js.Array[Argument] = null,
+    directives: js.Array[Directive] = null,
+    loc: Location = null,
+    selectionSet: SelectionSet = null
+  ): Field = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (selectionSet != null) __obj.updateDynamic("selectionSet")(selectionSet)
+    __obj.asInstanceOf[Field]
+  }
+}
+

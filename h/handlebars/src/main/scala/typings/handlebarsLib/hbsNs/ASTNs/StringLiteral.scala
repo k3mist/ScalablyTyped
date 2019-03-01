@@ -10,3 +10,12 @@ trait StringLiteral extends Node {
   var value: java.lang.String
 }
 
+object StringLiteral {
+  @scala.inline
+  def apply(loc: SourceLocation, original: java.lang.String, `type`: java.lang.String, value: java.lang.String): StringLiteral = {
+    val __obj = js.Dynamic.literal(loc = loc, original = original, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[StringLiteral]
+  }
+}
+

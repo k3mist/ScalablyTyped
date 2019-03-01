@@ -15,3 +15,19 @@ trait LngLat extends _LngLatLike {
   def wrap(): LngLat
 }
 
+object LngLat {
+  @scala.inline
+  def apply(
+    lat: scala.Double,
+    lng: scala.Double,
+    toArray: js.Function0[js.Array[scala.Double]],
+    toBounds: js.Function1[scala.Double, LngLatBounds],
+    toString: js.Function0[java.lang.String],
+    wrap: js.Function0[LngLat]
+  ): LngLat = {
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng, toArray = toArray, toBounds = toBounds, toString = toString, wrap = wrap)
+  
+    __obj.asInstanceOf[LngLat]
+  }
+}
+

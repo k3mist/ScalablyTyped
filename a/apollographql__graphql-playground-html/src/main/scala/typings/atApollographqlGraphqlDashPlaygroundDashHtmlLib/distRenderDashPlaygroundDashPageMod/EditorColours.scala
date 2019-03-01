@@ -29,3 +29,34 @@ trait EditorColours extends js.Object {
   var ws: java.lang.String
 }
 
+object EditorColours {
+  @scala.inline
+  def apply(
+    atom: java.lang.String,
+    attribute: java.lang.String,
+    builtin: java.lang.String,
+    comment: java.lang.String,
+    cursorColor: java.lang.String,
+    `def`: java.lang.String,
+    editorBackground: java.lang.String,
+    keyword: java.lang.String,
+    leftDrawerBackground: java.lang.String,
+    meta: java.lang.String,
+    number: java.lang.String,
+    property: java.lang.String,
+    punctuation: java.lang.String,
+    qualifier: java.lang.String,
+    resultBackground: java.lang.String,
+    rightDrawerBackground: java.lang.String,
+    selection: java.lang.String,
+    string: java.lang.String,
+    string2: java.lang.String,
+    variable: java.lang.String,
+    ws: java.lang.String
+  ): EditorColours = {
+    val __obj = js.Dynamic.literal(atom = atom, attribute = attribute, builtin = builtin, comment = comment, cursorColor = cursorColor, `def` = `def`, editorBackground = editorBackground, keyword = keyword, leftDrawerBackground = leftDrawerBackground, meta = meta, number = number, property = property, punctuation = punctuation, qualifier = qualifier, resultBackground = resultBackground, rightDrawerBackground = rightDrawerBackground, selection = selection, string = string, string2 = string2, variable = variable, ws = ws)
+  
+    __obj.asInstanceOf[EditorColours]
+  }
+}
+

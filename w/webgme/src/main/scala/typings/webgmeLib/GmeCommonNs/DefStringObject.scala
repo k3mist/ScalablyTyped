@@ -11,3 +11,17 @@ trait DefStringObject extends DefObject {
   var `type`: webgmeLib.webgmeLibStrings.string
 }
 
+object DefStringObject {
+  @scala.inline
+  def apply(
+    `type`: webgmeLib.webgmeLibStrings.string,
+    enum: js.Array[java.lang.String] = null,
+    regex: java.lang.String = null
+  ): DefStringObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (enum != null) __obj.updateDynamic("enum")(enum)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    __obj.asInstanceOf[DefStringObject]
+  }
+}
+

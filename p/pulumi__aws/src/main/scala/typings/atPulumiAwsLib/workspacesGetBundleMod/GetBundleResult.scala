@@ -36,3 +36,20 @@ trait GetBundleResult extends js.Object {
   val userStorages: js.Array[atPulumiAwsLib.Anon_Capacity]
 }
 
+object GetBundleResult {
+  @scala.inline
+  def apply(
+    computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_201725593],
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    owner: java.lang.String,
+    rootStorages: js.Array[atPulumiAwsLib.Anon_Capacity],
+    userStorages: js.Array[atPulumiAwsLib.Anon_Capacity]
+  ): GetBundleResult = {
+    val __obj = js.Dynamic.literal(computeTypes = computeTypes, description = description, id = id, name = name, owner = owner, rootStorages = rootStorages, userStorages = userStorages)
+  
+    __obj.asInstanceOf[GetBundleResult]
+  }
+}
+

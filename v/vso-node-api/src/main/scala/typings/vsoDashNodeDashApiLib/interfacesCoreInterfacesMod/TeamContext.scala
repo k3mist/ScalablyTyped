@@ -24,3 +24,17 @@ trait TeamContext extends js.Object {
   var teamId: java.lang.String
 }
 
+object TeamContext {
+  @scala.inline
+  def apply(
+    project: java.lang.String,
+    projectId: java.lang.String,
+    team: java.lang.String,
+    teamId: java.lang.String
+  ): TeamContext = {
+    val __obj = js.Dynamic.literal(project = project, projectId = projectId, team = team, teamId = teamId)
+  
+    __obj.asInstanceOf[TeamContext]
+  }
+}
+

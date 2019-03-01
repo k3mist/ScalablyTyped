@@ -12,3 +12,12 @@ trait EgressOnlyInternetGatewayArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object EgressOnlyInternetGatewayArgs {
+  @scala.inline
+  def apply(vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): EgressOnlyInternetGatewayArgs = {
+    val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[EgressOnlyInternetGatewayArgs]
+  }
+}
+

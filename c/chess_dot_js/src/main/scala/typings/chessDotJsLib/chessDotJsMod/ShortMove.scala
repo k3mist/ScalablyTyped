@@ -28,3 +28,16 @@ trait ShortMove extends js.Object {
   var to: Square
 }
 
+object ShortMove {
+  @scala.inline
+  def apply(
+    from: Square,
+    to: Square,
+    promotion: chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null
+  ): ShortMove = {
+    val __obj = js.Dynamic.literal(from = from, to = to)
+    if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShortMove]
+  }
+}
+

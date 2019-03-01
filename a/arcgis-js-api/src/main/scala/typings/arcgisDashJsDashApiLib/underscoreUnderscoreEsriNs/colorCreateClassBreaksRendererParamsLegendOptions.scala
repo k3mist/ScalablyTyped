@@ -15,3 +15,17 @@ trait colorCreateClassBreaksRendererParamsLegendOptions
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object colorCreateClassBreaksRendererParamsLegendOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String = null
+  ): colorCreateClassBreaksRendererParamsLegendOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[colorCreateClassBreaksRendererParamsLegendOptions]
+  }
+}
+

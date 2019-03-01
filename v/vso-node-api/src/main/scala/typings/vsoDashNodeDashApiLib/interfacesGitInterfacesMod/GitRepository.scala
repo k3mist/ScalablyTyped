@@ -22,3 +22,24 @@ trait GitRepository extends js.Object {
   var validRemoteUrls: js.Array[java.lang.String]
 }
 
+object GitRepository {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    defaultBranch: java.lang.String,
+    id: java.lang.String,
+    isFork: scala.Boolean,
+    name: java.lang.String,
+    parentRepository: GitRepositoryRef,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    remoteUrl: java.lang.String,
+    sshUrl: java.lang.String,
+    url: java.lang.String,
+    validRemoteUrls: js.Array[java.lang.String]
+  ): GitRepository = {
+    val __obj = js.Dynamic.literal(_links = _links, defaultBranch = defaultBranch, id = id, isFork = isFork, name = name, parentRepository = parentRepository, project = project, remoteUrl = remoteUrl, sshUrl = sshUrl, url = url, validRemoteUrls = validRemoteUrls)
+  
+    __obj.asInstanceOf[GitRepository]
+  }
+}
+

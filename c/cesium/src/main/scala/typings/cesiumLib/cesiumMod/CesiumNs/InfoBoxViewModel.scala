@@ -18,3 +18,23 @@ trait InfoBoxViewModel extends js.Object {
   def maxHeightOffset(offset: scala.Double): java.lang.String
 }
 
+object InfoBoxViewModel {
+  @scala.inline
+  def apply(
+    cameraClicked: Event,
+    cameraIconPath: java.lang.String,
+    closeClicked: Event,
+    description: java.lang.String,
+    enableCamera: scala.Boolean,
+    isCameraTracking: scala.Boolean,
+    maxHeight: scala.Double,
+    maxHeightOffset: js.Function1[scala.Double, java.lang.String],
+    showInfo: scala.Boolean,
+    titleText: java.lang.String
+  ): InfoBoxViewModel = {
+    val __obj = js.Dynamic.literal(cameraClicked = cameraClicked, cameraIconPath = cameraIconPath, closeClicked = closeClicked, description = description, enableCamera = enableCamera, isCameraTracking = isCameraTracking, maxHeight = maxHeight, maxHeightOffset = maxHeightOffset, showInfo = showInfo, titleText = titleText)
+  
+    __obj.asInstanceOf[InfoBoxViewModel]
+  }
+}
+

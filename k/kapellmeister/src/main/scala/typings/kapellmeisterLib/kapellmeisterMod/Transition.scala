@@ -14,3 +14,19 @@ trait Transition extends js.Object {
   var tweens: js.Array[js.Function0[Interpolator]]
 }
 
+object Transition {
+  @scala.inline
+  def apply(
+    events: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Events */ js.Any,
+    stateKey: java.lang.String,
+    status: scala.Double,
+    timing: Timing,
+    tweens: js.Array[js.Function0[Interpolator]],
+    timer: d3DashTimerLib.d3DashTimerMod.Timer = null
+  ): Transition = {
+    val __obj = js.Dynamic.literal(events = events, stateKey = stateKey, status = status, timing = timing, tweens = tweens)
+    if (timer != null) __obj.updateDynamic("timer")(timer)
+    __obj.asInstanceOf[Transition]
+  }
+}
+

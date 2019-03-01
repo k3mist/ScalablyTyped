@@ -22,3 +22,27 @@ trait IShellPaneContainer extends js.Object {
   def SetDefaultVisibility(Visible: scala.Boolean, resetToDefault: scala.Boolean): scala.Unit
 }
 
+object IShellPaneContainer {
+  @scala.inline
+  def apply(
+    AddTab: js.Function3[java.lang.String, java.lang.String, java.lang.String, IShellPaneTab],
+    Content: js.Any,
+    Events: IShellPaneContainerEvents,
+    Focus: js.Function0[scala.Unit],
+    GetSelectedTab: js.Function0[IShellPaneTab],
+    GetTab: js.Function1[java.lang.String, IShellPaneTab],
+    IsFocused: scala.Boolean,
+    Minimized: scala.Boolean,
+    SetDefaultSize: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    SetDefaultVisibility: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
+    ShellFrame: IShellFrame,
+    Size: scala.Double,
+    TabTitleSize: scala.Double,
+    Visible: scala.Boolean
+  ): IShellPaneContainer = {
+    val __obj = js.Dynamic.literal(AddTab = AddTab, Content = Content, Events = Events, Focus = Focus, GetSelectedTab = GetSelectedTab, GetTab = GetTab, IsFocused = IsFocused, Minimized = Minimized, SetDefaultSize = SetDefaultSize, SetDefaultVisibility = SetDefaultVisibility, ShellFrame = ShellFrame, Size = Size, TabTitleSize = TabTitleSize, Visible = Visible)
+  
+    __obj.asInstanceOf[IShellPaneContainer]
+  }
+}
+

@@ -13,3 +13,18 @@ trait LoadingComponentProps extends js.Object {
   def retry(): scala.Unit
 }
 
+object LoadingComponentProps {
+  @scala.inline
+  def apply(
+    error: js.Any,
+    isLoading: scala.Boolean,
+    pastDelay: scala.Boolean,
+    retry: js.Function0[scala.Unit],
+    timedOut: scala.Boolean
+  ): LoadingComponentProps = {
+    val __obj = js.Dynamic.literal(error = error, isLoading = isLoading, pastDelay = pastDelay, retry = retry, timedOut = timedOut)
+  
+    __obj.asInstanceOf[LoadingComponentProps]
+  }
+}
+

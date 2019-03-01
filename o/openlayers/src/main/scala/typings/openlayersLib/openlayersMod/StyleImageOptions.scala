@@ -13,3 +13,18 @@ trait StyleImageOptions extends js.Object {
   var snapToPixel: scala.Boolean
 }
 
+object StyleImageOptions {
+  @scala.inline
+  def apply(
+    opacity: scala.Double,
+    rotateWithView: scala.Boolean,
+    rotation: scala.Double,
+    scale: scala.Double,
+    snapToPixel: scala.Boolean
+  ): StyleImageOptions = {
+    val __obj = js.Dynamic.literal(opacity = opacity, rotateWithView = rotateWithView, rotation = rotation, scale = scale, snapToPixel = snapToPixel)
+  
+    __obj.asInstanceOf[StyleImageOptions]
+  }
+}
+

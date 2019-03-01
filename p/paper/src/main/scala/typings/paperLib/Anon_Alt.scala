@@ -16,3 +16,21 @@ trait Anon_Alt extends js.Object {
   var space: scala.Boolean
 }
 
+object Anon_Alt {
+  @scala.inline
+  def apply(
+    alt: scala.Boolean,
+    capsLock: scala.Boolean,
+    command: scala.Boolean,
+    control: scala.Boolean,
+    meta: scala.Boolean,
+    option: scala.Boolean,
+    shift: scala.Boolean,
+    space: scala.Boolean
+  ): Anon_Alt = {
+    val __obj = js.Dynamic.literal(alt = alt, capsLock = capsLock, command = command, control = control, meta = meta, option = option, shift = shift, space = space)
+  
+    __obj.asInstanceOf[Anon_Alt]
+  }
+}
+

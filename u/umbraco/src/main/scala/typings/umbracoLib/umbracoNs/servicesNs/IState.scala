@@ -50,3 +50,16 @@ trait IState extends js.Object {
   def set(entity: js.Object): scala.Unit
 }
 
+object IState {
+  @scala.inline
+  def apply(
+    getCurrent: js.Function0[js.Any],
+    reset: js.Function0[scala.Unit],
+    set: js.Function1[js.Object, scala.Unit]
+  ): IState = {
+    val __obj = js.Dynamic.literal(getCurrent = getCurrent, reset = reset, set = set)
+  
+    __obj.asInstanceOf[IState]
+  }
+}
+

@@ -11,3 +11,12 @@ trait GeocodeResult extends js.Object {
   var resultNum: scala.Double
 }
 
+object GeocodeResult {
+  @scala.inline
+  def apply(geocodes: js.Array[LngLat], info: java.lang.String, resultNum: scala.Double): GeocodeResult = {
+    val __obj = js.Dynamic.literal(geocodes = geocodes, info = info, resultNum = resultNum)
+  
+    __obj.asInstanceOf[GeocodeResult]
+  }
+}
+

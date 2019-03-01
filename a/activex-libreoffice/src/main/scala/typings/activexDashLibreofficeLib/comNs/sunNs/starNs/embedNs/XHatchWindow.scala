@@ -19,3 +19,21 @@ trait XHatchWindow
   def setController(xController: XHatchWindowController): scala.Unit
 }
 
+object XHatchWindow {
+  @scala.inline
+  def apply(
+    HatchBorderSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setController: js.Function1[XHatchWindowController, scala.Unit]
+  ): XHatchWindow = {
+    val __obj = js.Dynamic.literal(HatchBorderSize = HatchBorderSize, acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setController = setController)
+  
+    __obj.asInstanceOf[XHatchWindow]
+  }
+}
+

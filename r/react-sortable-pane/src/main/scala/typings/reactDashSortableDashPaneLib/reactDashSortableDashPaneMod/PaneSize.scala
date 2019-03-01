@@ -10,3 +10,12 @@ trait PaneSize extends js.Object {
   var width: scala.Double
 }
 
+object PaneSize {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): PaneSize = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[PaneSize]
+  }
+}
+

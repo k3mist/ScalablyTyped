@@ -14,3 +14,18 @@ trait PseudoElementSelector
   var type_PseudoElementSelector: cssDashTreeLib.cssDashTreeLibStrings.PseudoElementSelector
 }
 
+object PseudoElementSelector {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.PseudoElementSelector,
+    children: List[CssNode] = null,
+    loc: CssLocation = null
+  ): PseudoElementSelector = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[PseudoElementSelector]
+  }
+}
+

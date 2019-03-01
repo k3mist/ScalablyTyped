@@ -9,3 +9,12 @@ trait AsObject extends js.Object {
   var fileName: java.lang.String
 }
 
+object AsObject {
+  @scala.inline
+  def apply(fileName: java.lang.String): AsObject = {
+    val __obj = js.Dynamic.literal(fileName = fileName)
+  
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

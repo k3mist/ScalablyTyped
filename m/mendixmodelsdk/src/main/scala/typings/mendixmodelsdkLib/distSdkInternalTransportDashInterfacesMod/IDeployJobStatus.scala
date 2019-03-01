@@ -23,3 +23,25 @@ trait IDeployJobStatus extends js.Object {
   var `type`: mendixmodelsdkLib.mendixmodelsdkLibStrings.full | mendixmodelsdkLib.mendixmodelsdkLibStrings.fast
 }
 
+object IDeployJobStatus {
+  @scala.inline
+  def apply(
+    jobid: java.lang.String,
+    startTime: scala.Double,
+    status: IUpdateAppJobStatus,
+    trace: js.Array[java.lang.String],
+    `type`: mendixmodelsdkLib.mendixmodelsdkLibStrings.full | mendixmodelsdkLib.mendixmodelsdkLibStrings.fast,
+    appUrl: java.lang.String = null,
+    buildErrors: js.Array[IBuildError] = null,
+    buildstatus: java.lang.String = null,
+    consistencyErrors: js.Array[IProblem] = null
+  ): IDeployJobStatus = {
+    val __obj = js.Dynamic.literal(jobid = jobid, startTime = startTime, status = status, trace = trace, `type` = `type`.asInstanceOf[js.Any])
+    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl)
+    if (buildErrors != null) __obj.updateDynamic("buildErrors")(buildErrors)
+    if (buildstatus != null) __obj.updateDynamic("buildstatus")(buildstatus)
+    if (consistencyErrors != null) __obj.updateDynamic("consistencyErrors")(consistencyErrors)
+    __obj.asInstanceOf[IDeployJobStatus]
+  }
+}
+

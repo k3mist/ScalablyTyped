@@ -27,3 +27,29 @@ trait GetTableResult extends js.Object {
   val writeCapacity: scala.Double
 }
 
+object GetTableResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    attributes: js.Array[atPulumiAwsLib.Anon_NameTypeString],
+    globalSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_HashKey],
+    hashKey: java.lang.String,
+    id: java.lang.String,
+    localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes],
+    rangeKey: java.lang.String,
+    readCapacity: scala.Double,
+    serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_204597847,
+    streamArn: java.lang.String,
+    streamEnabled: scala.Boolean,
+    streamLabel: java.lang.String,
+    streamViewType: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    ttl: atPulumiAwsLib.Anon_AttributeName,
+    writeCapacity: scala.Double
+  ): GetTableResult = {
+    val __obj = js.Dynamic.literal(arn = arn, attributes = attributes, globalSecondaryIndexes = globalSecondaryIndexes, hashKey = hashKey, id = id, localSecondaryIndexes = localSecondaryIndexes, rangeKey = rangeKey, readCapacity = readCapacity, serverSideEncryption = serverSideEncryption, streamArn = streamArn, streamEnabled = streamEnabled, streamLabel = streamLabel, streamViewType = streamViewType, tags = tags, ttl = ttl, writeCapacity = writeCapacity)
+  
+    __obj.asInstanceOf[GetTableResult]
+  }
+}
+

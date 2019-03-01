@@ -16,3 +16,12 @@ trait GitTemplate extends js.Object {
   var `type`: java.lang.String
 }
 
+object GitTemplate {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String): GitTemplate = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[GitTemplate]
+  }
+}
+

@@ -62,3 +62,26 @@ trait XCellRangesQuery
   def queryVisibleCells(): XSheetCellRanges
 }
 
+object XCellRangesQuery {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryColumnDifferences: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, XSheetCellRanges],
+    queryContentCells: js.Function1[scala.Double, XSheetCellRanges],
+    queryEmptyCells: js.Function0[XSheetCellRanges],
+    queryFormulaCells: js.Function1[scala.Double, XSheetCellRanges],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryIntersection: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      XSheetCellRanges
+    ],
+    queryRowDifferences: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, XSheetCellRanges],
+    queryVisibleCells: js.Function0[XSheetCellRanges],
+    release: js.Function0[scala.Unit]
+  ): XCellRangesQuery = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryColumnDifferences = queryColumnDifferences, queryContentCells = queryContentCells, queryEmptyCells = queryEmptyCells, queryFormulaCells = queryFormulaCells, queryInterface = queryInterface, queryIntersection = queryIntersection, queryRowDifferences = queryRowDifferences, queryVisibleCells = queryVisibleCells, release = release)
+  
+    __obj.asInstanceOf[XCellRangesQuery]
+  }
+}
+

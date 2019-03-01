@@ -14,3 +14,19 @@ trait Channel extends js.Object {
   var Status: java.lang.String
 }
 
+object Channel {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    LastModified: java.lang.String,
+    Name: java.lang.String,
+    PlayUrls: js.Array[java.lang.String],
+    PublishUrls: js.Array[java.lang.String],
+    Status: java.lang.String
+  ): Channel = {
+    val __obj = js.Dynamic.literal(Description = Description, LastModified = LastModified, Name = Name, PlayUrls = PlayUrls, PublishUrls = PublishUrls, Status = Status)
+  
+    __obj.asInstanceOf[Channel]
+  }
+}
+

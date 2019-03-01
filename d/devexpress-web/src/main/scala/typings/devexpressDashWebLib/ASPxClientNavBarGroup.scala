@@ -71,3 +71,26 @@ trait ASPxClientNavBarGroup extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientNavBarGroup {
+  @scala.inline
+  def apply(
+    GetEnabled: js.Function0[scala.Boolean],
+    GetExpanded: js.Function0[scala.Boolean],
+    GetItem: js.Function1[scala.Double, ASPxClientNavBarItem],
+    GetItemByName: js.Function1[java.lang.String, ASPxClientNavBarItem],
+    GetItemCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    navBar: ASPxClientNavBar
+  ): ASPxClientNavBarGroup = {
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetText = GetText, GetVisible = GetVisible, SetExpanded = SetExpanded, SetText = SetText, SetVisible = SetVisible, index = index, name = name, navBar = navBar)
+  
+    __obj.asInstanceOf[ASPxClientNavBarGroup]
+  }
+}
+

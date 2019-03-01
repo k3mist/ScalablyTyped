@@ -10,3 +10,12 @@ trait CaptureError extends js.Object {
   var message: java.lang.String
 }
 
+object CaptureError {
+  @scala.inline
+  def apply(code: scala.Double, message: java.lang.String): CaptureError = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
+    __obj.asInstanceOf[CaptureError]
+  }
+}
+

@@ -250,3 +250,78 @@ trait ServiceAreaParametersProperties extends js.Object {
   var useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServiceAreaParametersProperties {
+  @scala.inline
+  def apply(
+    accumulateAttributes: js.Array[java.lang.String] = null,
+    attributeParameterValues: js.Array[_] = null,
+    defaultBreaks: js.Array[scala.Double] = null,
+    doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeSourcesFromPolygons: js.Array[java.lang.String] = null,
+    facilities: DataLayerProperties | FeatureSetProperties = null,
+    impedanceAttribute: java.lang.String = null,
+    mergeSimilarPolygonRanges: js.UndefOr[scala.Boolean] = js.undefined,
+    outSpatialReference: SpatialReferenceProperties = null,
+    outputGeometryPrecision: scala.Int | scala.Double = null,
+    outputGeometryPrecisionUnits: java.lang.String = null,
+    outputLines: java.lang.String = null,
+    outputPolygons: java.lang.String = null,
+    overlapLines: js.UndefOr[scala.Boolean] = js.undefined,
+    overlapPolygons: js.UndefOr[scala.Boolean] = js.undefined,
+    pointBarriers: DataLayerProperties | FeatureSetProperties = null,
+    polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
+    polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
+    restrictUTurns: java.lang.String = null,
+    restrictionAttributes: js.Array[java.lang.String] = null,
+    returnFacilities: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPointBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolygonBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolylineBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    splitLinesAtBreaks: js.UndefOr[scala.Boolean] = js.undefined,
+    splitPolygonsAtBreaks: js.UndefOr[scala.Boolean] = js.undefined,
+    timeOfDay: DateProperties = null,
+    travelDirection: java.lang.String = null,
+    travelMode: js.Any = null,
+    trimOuterPolygon: js.UndefOr[scala.Boolean] = js.undefined,
+    trimPolygonDistance: scala.Int | scala.Double = null,
+    trimPolygonDistanceUnits: java.lang.String = null,
+    useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
+  ): ServiceAreaParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (accumulateAttributes != null) __obj.updateDynamic("accumulateAttributes")(accumulateAttributes)
+    if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues)
+    if (defaultBreaks != null) __obj.updateDynamic("defaultBreaks")(defaultBreaks)
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements)
+    if (excludeSourcesFromPolygons != null) __obj.updateDynamic("excludeSourcesFromPolygons")(excludeSourcesFromPolygons)
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (!js.isUndefined(mergeSimilarPolygonRanges)) __obj.updateDynamic("mergeSimilarPolygonRanges")(mergeSimilarPolygonRanges)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
+    if (outputPolygons != null) __obj.updateDynamic("outputPolygons")(outputPolygons)
+    if (!js.isUndefined(overlapLines)) __obj.updateDynamic("overlapLines")(overlapLines)
+    if (!js.isUndefined(overlapPolygons)) __obj.updateDynamic("overlapPolygons")(overlapPolygons)
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
+    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities)
+    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers)
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers)
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers)
+    if (!js.isUndefined(splitLinesAtBreaks)) __obj.updateDynamic("splitLinesAtBreaks")(splitLinesAtBreaks)
+    if (!js.isUndefined(splitPolygonsAtBreaks)) __obj.updateDynamic("splitPolygonsAtBreaks")(splitPolygonsAtBreaks)
+    if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
+    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection)
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (!js.isUndefined(trimOuterPolygon)) __obj.updateDynamic("trimOuterPolygon")(trimOuterPolygon)
+    if (trimPolygonDistance != null) __obj.updateDynamic("trimPolygonDistance")(trimPolygonDistance.asInstanceOf[js.Any])
+    if (trimPolygonDistanceUnits != null) __obj.updateDynamic("trimPolygonDistanceUnits")(trimPolygonDistanceUnits)
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy)
+    __obj.asInstanceOf[ServiceAreaParametersProperties]
+  }
+}
+

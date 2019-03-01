@@ -10,3 +10,18 @@ trait VolumePanelOptions extends ComponentOptions {
   var volumeControl: js.UndefOr[VolumeControlOptions] = js.undefined
 }
 
+object VolumePanelOptions {
+  @scala.inline
+  def apply(
+    children: js.Array[Child] = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    volumeControl: VolumeControlOptions = null
+  ): VolumePanelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (volumeControl != null) __obj.updateDynamic("volumeControl")(volumeControl)
+    __obj.asInstanceOf[VolumePanelOptions]
+  }
+}
+

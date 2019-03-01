@@ -10,3 +10,12 @@ trait AnyCnameRecord extends AnyRecord {
   var value: java.lang.String
 }
 
+object AnyCnameRecord {
+  @scala.inline
+  def apply(`type`: nodeLib.nodeLibStrings.CNAME, value: java.lang.String): AnyCnameRecord = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[AnyCnameRecord]
+  }
+}
+

@@ -12,3 +12,19 @@ trait AesGCM extends IParams {
   var tagBits: scala.Double
 }
 
+object AesGCM {
+  @scala.inline
+  def apply(
+    ivBits: scala.Double,
+    tagBits: scala.Double,
+    `type`: scala.Double,
+    aad: nodeLib.Buffer = null,
+    iv: nodeLib.Buffer = null
+  ): AesGCM = {
+    val __obj = js.Dynamic.literal(ivBits = ivBits, tagBits = tagBits, `type` = `type`)
+    if (aad != null) __obj.updateDynamic("aad")(aad)
+    if (iv != null) __obj.updateDynamic("iv")(iv)
+    __obj.asInstanceOf[AesGCM]
+  }
+}
+

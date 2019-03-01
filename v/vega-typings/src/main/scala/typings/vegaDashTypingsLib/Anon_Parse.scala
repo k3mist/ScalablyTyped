@@ -10,3 +10,12 @@ trait Anon_Parse
   var parse: vegaDashTypingsLib.typesSpecDataMod.Parse
 }
 
+object Anon_Parse {
+  @scala.inline
+  def apply(parse: vegaDashTypingsLib.typesSpecDataMod.Parse): Anon_Parse = {
+    val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Parse]
+  }
+}
+

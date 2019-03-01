@@ -13,3 +13,18 @@ trait ISignaturePromptInfoMetadataBased extends js.Object {
   def Clone(): ISignaturePromptInfoMetadataBased
 }
 
+object ISignaturePromptInfoMetadataBased {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ISignaturePromptInfoMetadataBased],
+    IsReferencedBySignatureObject: scala.Boolean,
+    MeaningPropertyID: scala.Double,
+    PromptInfoLookupPropertyID: scala.Double,
+    ReasonPropertyID: scala.Double
+  ): ISignaturePromptInfoMetadataBased = {
+    val __obj = js.Dynamic.literal(Clone = Clone, IsReferencedBySignatureObject = IsReferencedBySignatureObject, MeaningPropertyID = MeaningPropertyID, PromptInfoLookupPropertyID = PromptInfoLookupPropertyID, ReasonPropertyID = ReasonPropertyID)
+  
+    __obj.asInstanceOf[ISignaturePromptInfoMetadataBased]
+  }
+}
+

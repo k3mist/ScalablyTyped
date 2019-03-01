@@ -25,3 +25,17 @@ trait IQMeasureCell extends js.Object {
   def getPercentOfMax(): scala.Double
 }
 
+object IQMeasureCell {
+  @scala.inline
+  def apply(
+    getPercent: js.Function0[scala.Double],
+    getPercentOfMax: js.Function0[scala.Double],
+    qText: java.lang.String,
+    qNum: scala.Int | scala.Double = null
+  ): IQMeasureCell = {
+    val __obj = js.Dynamic.literal(getPercent = getPercent, getPercentOfMax = getPercentOfMax, qText = qText)
+    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IQMeasureCell]
+  }
+}
+

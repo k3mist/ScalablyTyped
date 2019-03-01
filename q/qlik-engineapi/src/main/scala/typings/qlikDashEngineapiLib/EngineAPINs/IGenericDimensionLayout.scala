@@ -26,3 +26,17 @@ trait IGenericDimensionLayout extends IGenericBaseLayout {
   var qMeta_IGenericDimensionLayout: INxMetaTitleDescriptionTag
 }
 
+object IGenericDimensionLayout {
+  @scala.inline
+  def apply(
+    qDim: INxLibraryDimensionDef,
+    qDimInfos: js.Array[IGenericDimensionInfo],
+    qInfo: INxInfo,
+    qMeta: INxMetaTitleDescriptionTag
+  ): IGenericDimensionLayout = {
+    val __obj = js.Dynamic.literal(qDim = qDim, qDimInfos = qDimInfos, qInfo = qInfo, qMeta = qMeta)
+  
+    __obj.asInstanceOf[IGenericDimensionLayout]
+  }
+}
+

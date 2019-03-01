@@ -16,3 +16,15 @@ trait UploadBufferArgs extends js.Object {
   val gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UploadBufferArgs {
+  @scala.inline
+  def apply(
+    diskId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): UploadBufferArgs = {
+    val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UploadBufferArgs]
+  }
+}
+

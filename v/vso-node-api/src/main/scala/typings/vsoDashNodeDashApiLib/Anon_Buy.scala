@@ -15,3 +15,20 @@ trait Anon_Buy extends js.Object {
   var `try`: scala.Double
 }
 
+object Anon_Buy {
+  @scala.inline
+  def apply(
+    buy: scala.Double,
+    get: scala.Double,
+    install: scala.Double,
+    none: scala.Double,
+    purchaseRequest: scala.Double,
+    request: scala.Double,
+    `try`: scala.Double
+  ): Anon_Buy = {
+    val __obj = js.Dynamic.literal(buy = buy, get = get, install = install, none = none, purchaseRequest = purchaseRequest, request = request, `try` = `try`)
+  
+    __obj.asInstanceOf[Anon_Buy]
+  }
+}
+

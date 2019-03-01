@@ -17,3 +17,22 @@ trait Result extends js.Object {
   var zip_url: java.lang.String
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    api_url: java.lang.String,
+    branch: java.lang.String,
+    clone_url: java.lang.String,
+    https_url: java.lang.String,
+    repo: java.lang.String,
+    tarball_url: java.lang.String,
+    travis_url: java.lang.String,
+    user: java.lang.String,
+    zip_url: java.lang.String
+  ): Result = {
+    val __obj = js.Dynamic.literal(api_url = api_url, branch = branch, clone_url = clone_url, https_url = https_url, repo = repo, tarball_url = tarball_url, travis_url = travis_url, user = user, zip_url = zip_url)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

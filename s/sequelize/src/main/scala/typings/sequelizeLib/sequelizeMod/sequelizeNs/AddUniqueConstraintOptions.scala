@@ -10,3 +10,12 @@ trait AddUniqueConstraintOptions extends AddConstraintOptions {
   var `type`: sequelizeLib.sequelizeLibStrings.unique
 }
 
+object AddUniqueConstraintOptions {
+  @scala.inline
+  def apply(`type`: sequelizeLib.sequelizeLibStrings.unique, name: java.lang.String = null): AddUniqueConstraintOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AddUniqueConstraintOptions]
+  }
+}
+

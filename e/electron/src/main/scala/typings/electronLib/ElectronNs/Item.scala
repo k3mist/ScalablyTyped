@@ -16,3 +16,12 @@ trait Item extends js.Object {
   var icon: NativeImage
 }
 
+object Item {
+  @scala.inline
+  def apply(file: java.lang.String, icon: NativeImage): Item = {
+    val __obj = js.Dynamic.literal(file = file, icon = icon)
+  
+    __obj.asInstanceOf[Item]
+  }
+}
+

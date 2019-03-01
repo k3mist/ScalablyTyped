@@ -23,3 +23,12 @@ trait AddressObject extends _HeaderValue {
   var value: js.Array[EmailAddress]
 }
 
+object AddressObject {
+  @scala.inline
+  def apply(html: java.lang.String, text: java.lang.String, value: js.Array[EmailAddress]): AddressObject = {
+    val __obj = js.Dynamic.literal(html = html, text = text, value = value)
+  
+    __obj.asInstanceOf[AddressObject]
+  }
+}
+

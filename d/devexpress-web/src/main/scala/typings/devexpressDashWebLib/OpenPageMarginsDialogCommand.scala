@@ -15,3 +15,12 @@ trait OpenPageMarginsDialogCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object OpenPageMarginsDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenPageMarginsDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[OpenPageMarginsDialogCommand]
+  }
+}
+

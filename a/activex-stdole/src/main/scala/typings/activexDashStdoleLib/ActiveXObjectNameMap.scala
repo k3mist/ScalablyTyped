@@ -10,3 +10,15 @@ trait ActiveXObjectNameMap extends js.Object {
   var StdPicture: activexDashStdoleLib.stdoleNs.StdPicture
 }
 
+object ActiveXObjectNameMap {
+  @scala.inline
+  def apply(
+    StdFont: activexDashStdoleLib.stdoleNs.StdFont,
+    StdPicture: activexDashStdoleLib.stdoleNs.StdPicture
+  ): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal(StdFont = StdFont, StdPicture = StdPicture)
+  
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+}
+

@@ -12,3 +12,17 @@ trait IELangEditEvents extends js.Object {
   var select: jqueryLib.JQueryDeferred[_]
 }
 
+object IELangEditEvents {
+  @scala.inline
+  def apply(
+    insert: jqueryLib.JQueryDeferred[_],
+    modify: jqueryLib.JQueryDeferred[_],
+    remove: jqueryLib.JQueryDeferred[_],
+    select: jqueryLib.JQueryDeferred[_]
+  ): IELangEditEvents = {
+    val __obj = js.Dynamic.literal(insert = insert, modify = modify, remove = remove, select = select)
+  
+    __obj.asInstanceOf[IELangEditEvents]
+  }
+}
+

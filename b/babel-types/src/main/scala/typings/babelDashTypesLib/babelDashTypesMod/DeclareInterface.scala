@@ -19,3 +19,26 @@ trait DeclareInterface
   var type_DeclareInterface: babelDashTypesLib.babelDashTypesLibStrings.DeclareInterface
 }
 
+object DeclareInterface {
+  @scala.inline
+  def apply(
+    body: ObjectTypeAnnotation,
+    end: scala.Double,
+    `extends`: js.Array[InterfaceExtends],
+    id: Identifier,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.DeclareInterface,
+    typeParameters: TypeParameterDeclaration,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): DeclareInterface = {
+    val __obj = js.Dynamic.literal(body = body, end = end, `extends` = `extends`, id = id, loc = loc, start = start, `type` = `type`, typeParameters = typeParameters)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[DeclareInterface]
+  }
+}
+

@@ -16,3 +16,21 @@ trait TopicProperties extends js.Object {
   var SupportOrdering: scala.Boolean
 }
 
+object TopicProperties {
+  @scala.inline
+  def apply(
+    DefaultMessageTimeToLive: java.lang.String,
+    DuplicateDetectionHistoryTimeWindow: java.lang.String,
+    EnableBatchedOperations: scala.Boolean,
+    EnablePartitioning: scala.Boolean,
+    MaxSizeInMegabytes: scala.Double,
+    RequiresDuplicateDetection: scala.Boolean,
+    SizeInBytes: scala.Double,
+    SupportOrdering: scala.Boolean
+  ): TopicProperties = {
+    val __obj = js.Dynamic.literal(DefaultMessageTimeToLive = DefaultMessageTimeToLive, DuplicateDetectionHistoryTimeWindow = DuplicateDetectionHistoryTimeWindow, EnableBatchedOperations = EnableBatchedOperations, EnablePartitioning = EnablePartitioning, MaxSizeInMegabytes = MaxSizeInMegabytes, RequiresDuplicateDetection = RequiresDuplicateDetection, SizeInBytes = SizeInBytes, SupportOrdering = SupportOrdering)
+  
+    __obj.asInstanceOf[TopicProperties]
+  }
+}
+

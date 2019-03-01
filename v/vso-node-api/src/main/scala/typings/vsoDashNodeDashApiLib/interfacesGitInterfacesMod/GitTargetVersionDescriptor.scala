@@ -20,3 +20,19 @@ trait GitTargetVersionDescriptor extends GitVersionDescriptor {
   var targetVersionType: GitVersionType
 }
 
+object GitTargetVersionDescriptor {
+  @scala.inline
+  def apply(
+    targetVersion: java.lang.String,
+    targetVersionOptions: GitVersionOptions,
+    targetVersionType: GitVersionType,
+    version: java.lang.String,
+    versionOptions: GitVersionOptions,
+    versionType: GitVersionType
+  ): GitTargetVersionDescriptor = {
+    val __obj = js.Dynamic.literal(targetVersion = targetVersion, targetVersionOptions = targetVersionOptions, targetVersionType = targetVersionType, version = version, versionOptions = versionOptions, versionType = versionType)
+  
+    __obj.asInstanceOf[GitTargetVersionDescriptor]
+  }
+}
+

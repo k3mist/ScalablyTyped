@@ -9,3 +9,12 @@ trait DefaultProps extends js.Object {
   var quiet: scala.Boolean
 }
 
+object DefaultProps {
+  @scala.inline
+  def apply(quiet: scala.Boolean): DefaultProps = {
+    val __obj = js.Dynamic.literal(quiet = quiet)
+  
+    __obj.asInstanceOf[DefaultProps]
+  }
+}
+

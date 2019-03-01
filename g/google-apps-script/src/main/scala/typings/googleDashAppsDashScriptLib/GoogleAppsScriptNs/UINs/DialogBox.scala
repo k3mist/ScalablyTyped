@@ -49,3 +49,56 @@ trait DialogBox extends js.Object {
   def show(): DialogBox
 }
 
+object DialogBox {
+  @scala.inline
+  def apply(
+    add: js.Function1[Widget, DialogBox],
+    addAutoHidePartner: js.Function1[Component, DialogBox],
+    addCloseHandler: js.Function1[Handler, DialogBox],
+    addStyleDependentName: js.Function1[java.lang.String, DialogBox],
+    addStyleName: js.Function1[java.lang.String, DialogBox],
+    clear: js.Function0[DialogBox],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    hide: js.Function0[DialogBox],
+    setAnimationEnabled: js.Function1[scala.Boolean, DialogBox],
+    setAutoHideEnabled: js.Function1[scala.Boolean, DialogBox],
+    setGlassEnabled: js.Function1[scala.Boolean, DialogBox],
+    setGlassStyleName: js.Function1[java.lang.String, DialogBox],
+    setHTML: js.Function1[java.lang.String, DialogBox],
+    setHeight: js.Function1[java.lang.String, DialogBox],
+    setId: js.Function1[java.lang.String, DialogBox],
+    setLayoutData: js.Function1[js.Object, DialogBox],
+    setModal: js.Function1[scala.Boolean, DialogBox],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      DialogBox
+    ],
+    setPopupPosition: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      DialogBox
+    ],
+    setPopupPositionAndShow: js.Function1[Component, DialogBox],
+    setPreviewingAllNativeEvents: js.Function1[scala.Boolean, DialogBox],
+    setSize: js.Function2[java.lang.String, java.lang.String, DialogBox],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DialogBox],
+    setStyleAttributes: js.Function1[js.Object, DialogBox],
+    setStyleName: js.Function1[java.lang.String, DialogBox],
+    setStylePrimaryName: js.Function1[java.lang.String, DialogBox],
+    setTag: js.Function1[java.lang.String, DialogBox],
+    setText: js.Function1[java.lang.String, DialogBox],
+    setTitle: js.Function1[java.lang.String, DialogBox],
+    setVisible: js.Function1[scala.Boolean, DialogBox],
+    setWidget: js.Function1[Widget, DialogBox],
+    setWidth: js.Function1[java.lang.String, DialogBox],
+    show: js.Function0[DialogBox]
+  ): DialogBox = {
+    val __obj = js.Dynamic.literal(add = add, addAutoHidePartner = addAutoHidePartner, addCloseHandler = addCloseHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, hide = hide, setAnimationEnabled = setAnimationEnabled, setAutoHideEnabled = setAutoHideEnabled, setGlassEnabled = setGlassEnabled, setGlassStyleName = setGlassStyleName, setHTML = setHTML, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setModal = setModal, setPixelSize = setPixelSize, setPopupPosition = setPopupPosition, setPopupPositionAndShow = setPopupPositionAndShow, setPreviewingAllNativeEvents = setPreviewingAllNativeEvents, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth, show = show)
+  
+    __obj.asInstanceOf[DialogBox]
+  }
+}
+

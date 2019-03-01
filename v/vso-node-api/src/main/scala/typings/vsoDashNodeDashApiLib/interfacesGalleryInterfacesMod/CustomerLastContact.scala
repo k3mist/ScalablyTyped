@@ -16,3 +16,12 @@ trait CustomerLastContact extends js.Object {
   var lastContactDate: stdLib.Date
 }
 
+object CustomerLastContact {
+  @scala.inline
+  def apply(account: java.lang.String, lastContactDate: stdLib.Date): CustomerLastContact = {
+    val __obj = js.Dynamic.literal(account = account, lastContactDate = lastContactDate)
+  
+    __obj.asInstanceOf[CustomerLastContact]
+  }
+}
+

@@ -16,3 +16,21 @@ trait JQueryCLEditorButtonDefinitionEventData extends js.Object {
   var value: js.Any
 }
 
+object JQueryCLEditorButtonDefinitionEventData {
+  @scala.inline
+  def apply(
+    button: stdLib.HTMLElement,
+    buttonName: java.lang.String,
+    command: java.lang.String,
+    editor: CLEditor,
+    popup: stdLib.HTMLElement,
+    popupName: java.lang.String,
+    useCSS: scala.Boolean,
+    value: js.Any
+  ): JQueryCLEditorButtonDefinitionEventData = {
+    val __obj = js.Dynamic.literal(button = button, buttonName = buttonName, command = command, editor = editor, popup = popup, popupName = popupName, useCSS = useCSS, value = value)
+  
+    __obj.asInstanceOf[JQueryCLEditorButtonDefinitionEventData]
+  }
+}
+

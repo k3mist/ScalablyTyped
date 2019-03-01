@@ -11,3 +11,12 @@ trait NativeSegmentedControlIOSChangeEvent extends js.Object {
   var value: java.lang.String
 }
 
+object NativeSegmentedControlIOSChangeEvent {
+  @scala.inline
+  def apply(selectedSegmentIndex: scala.Double, target: scala.Double, value: java.lang.String): NativeSegmentedControlIOSChangeEvent = {
+    val __obj = js.Dynamic.literal(selectedSegmentIndex = selectedSegmentIndex, target = target, value = value)
+  
+    __obj.asInstanceOf[NativeSegmentedControlIOSChangeEvent]
+  }
+}
+

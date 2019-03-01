@@ -61,3 +61,36 @@ trait DmgOptions
   var window: js.UndefOr[DmgWindow] = js.undefined
 }
 
+object DmgOptions {
+  @scala.inline
+  def apply(
+    artifactName: java.lang.String = null,
+    background: java.lang.String = null,
+    backgroundColor: java.lang.String = null,
+    contents: js.Array[DmgContent] = null,
+    format: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDRW | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDRO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDCO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDZO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDBZ | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.ULFO = null,
+    icon: java.lang.String = null,
+    iconSize: scala.Int | scala.Double = null,
+    iconTextSize: scala.Int | scala.Double = null,
+    internetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    title: java.lang.String = null,
+    window: DmgWindow = null
+  ): DmgOptions = {
+    val __obj = js.Dynamic.literal()
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (iconTextSize != null) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[DmgOptions]
+  }
+}
+

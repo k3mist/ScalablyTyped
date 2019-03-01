@@ -20,3 +20,16 @@ trait UserPoolDomainArgs extends js.Object {
   val userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UserPoolDomainArgs {
+  @scala.inline
+  def apply(
+    domain: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): UserPoolDomainArgs = {
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserPoolDomainArgs]
+  }
+}
+

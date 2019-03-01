@@ -21,3 +21,18 @@ trait ASPxClientDashboardItemDrillDownStateChangedEventArgs extends ASPxClientDa
   var Values: js.Array[js.Object]
 }
 
+object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
+  @scala.inline
+  def apply(
+    Action: java.lang.String,
+    IsNullValue: js.Function1[js.Object, scala.Boolean],
+    IsOthersValue: js.Function1[js.Object, scala.Boolean],
+    ItemName: java.lang.String,
+    Values: js.Array[js.Object]
+  ): ASPxClientDashboardItemDrillDownStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(Action = Action, IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName, Values = Values)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemDrillDownStateChangedEventArgs]
+  }
+}
+

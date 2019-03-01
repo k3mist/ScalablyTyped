@@ -11,3 +11,12 @@ trait Anon_AllHosted extends js.Object {
   var onPremises: scala.Double
 }
 
+object Anon_AllHosted {
+  @scala.inline
+  def apply(all: scala.Double, hosted: scala.Double, onPremises: scala.Double): Anon_AllHosted = {
+    val __obj = js.Dynamic.literal(all = all, hosted = hosted, onPremises = onPremises)
+  
+    __obj.asInstanceOf[Anon_AllHosted]
+  }
+}
+

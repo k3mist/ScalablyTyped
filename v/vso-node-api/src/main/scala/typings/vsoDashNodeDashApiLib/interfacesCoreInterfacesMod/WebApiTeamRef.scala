@@ -20,3 +20,12 @@ trait WebApiTeamRef extends js.Object {
   var url: java.lang.String
 }
 
+object WebApiTeamRef {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, url: java.lang.String): WebApiTeamRef = {
+    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[WebApiTeamRef]
+  }
+}
+

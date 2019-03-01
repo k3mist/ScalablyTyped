@@ -21,3 +21,12 @@ trait IPoint extends js.Object {
   var qy: scala.Double
 }
 
+object IPoint {
+  @scala.inline
+  def apply(qx: scala.Double, qy: scala.Double): IPoint = {
+    val __obj = js.Dynamic.literal(qx = qx, qy = qy)
+  
+    __obj.asInstanceOf[IPoint]
+  }
+}
+

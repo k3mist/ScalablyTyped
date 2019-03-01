@@ -18,3 +18,23 @@ trait IResponse extends js.Object {
   var url: java.lang.String
 }
 
+object IResponse {
+  @scala.inline
+  def apply(
+    bodySize: scala.Double,
+    contentType: java.lang.String,
+    headers: js.Object,
+    id: scala.Double,
+    redirectURL: java.lang.String,
+    stage: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String,
+    time: stdLib.Date,
+    url: java.lang.String
+  ): IResponse = {
+    val __obj = js.Dynamic.literal(bodySize = bodySize, contentType = contentType, headers = headers, id = id, redirectURL = redirectURL, stage = stage, status = status, statusText = statusText, time = time, url = url)
+  
+    __obj.asInstanceOf[IResponse]
+  }
+}
+

@@ -13,3 +13,17 @@ trait Anon_Delete[K, V]
   var `type`: mobxLib.mobxLibStrings.delete
 }
 
+object Anon_Delete {
+  @scala.inline
+  def apply[K, V](
+    name: K,
+    `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V],
+    oldValue: V,
+    `type`: mobxLib.mobxLibStrings.delete
+  ): Anon_Delete[K, V] = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], `object` = `object`, oldValue = oldValue.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Delete[K, V]]
+  }
+}
+

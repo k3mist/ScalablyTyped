@@ -40,3 +40,28 @@ trait XMultiSelectionSupplier extends XSelectionSupplier {
   def removeSelection(Selection: js.Any): scala.Unit
 }
 
+object XMultiSelectionSupplier {
+  @scala.inline
+  def apply(
+    Selection: js.Any,
+    SelectionCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addSelection: js.Function1[js.Any, scala.Boolean],
+    addSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
+    clearSelection: js.Function0[scala.Unit],
+    createReverseSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    createSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getSelection: js.Function0[js.Any],
+    getSelectionCount: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSelection: js.Function1[js.Any, scala.Unit],
+    removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
+    select: js.Function1[js.Any, scala.Boolean]
+  ): XMultiSelectionSupplier = {
+    val __obj = js.Dynamic.literal(Selection = Selection, SelectionCount = SelectionCount, acquire = acquire, addSelection = addSelection, addSelectionChangeListener = addSelectionChangeListener, clearSelection = clearSelection, createReverseSelectionEnumeration = createReverseSelectionEnumeration, createSelectionEnumeration = createSelectionEnumeration, getSelection = getSelection, getSelectionCount = getSelectionCount, queryInterface = queryInterface, release = release, removeSelection = removeSelection, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+  
+    __obj.asInstanceOf[XMultiSelectionSupplier]
+  }
+}
+

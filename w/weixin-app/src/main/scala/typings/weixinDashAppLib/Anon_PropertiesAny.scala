@@ -9,3 +9,12 @@ trait Anon_PropertiesAny extends js.Object {
   var properties: js.Any
 }
 
+object Anon_PropertiesAny {
+  @scala.inline
+  def apply(properties: js.Any): Anon_PropertiesAny = {
+    val __obj = js.Dynamic.literal(properties = properties)
+  
+    __obj.asInstanceOf[Anon_PropertiesAny]
+  }
+}
+

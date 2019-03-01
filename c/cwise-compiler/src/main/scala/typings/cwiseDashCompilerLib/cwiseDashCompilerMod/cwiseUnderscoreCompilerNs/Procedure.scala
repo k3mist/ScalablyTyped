@@ -23,3 +23,28 @@ trait Procedure extends js.Object {
   var shimArgs: js.Array[java.lang.String]
 }
 
+object Procedure {
+  @scala.inline
+  def apply(
+    argTypes: js.Array[ArgType],
+    arrayArgs: js.Array[scala.Double],
+    arrayBlockIndices: js.Array[scala.Double],
+    body: cwiseDashParserLib.cwiseDashParserMod.cwiseUnderscoreParserNs.CompiledRoutine,
+    debug: scala.Boolean,
+    funcName: java.lang.String,
+    indexArgs: js.Array[scala.Double],
+    offsetArgIndex: js.Array[scala.Double],
+    offsetArgs: js.Array[OffsetArg],
+    post: cwiseDashParserLib.cwiseDashParserMod.cwiseUnderscoreParserNs.CompiledRoutine,
+    pre: cwiseDashParserLib.cwiseDashParserMod.cwiseUnderscoreParserNs.CompiledRoutine,
+    scalarArgs: js.Array[scala.Double],
+    shapeArgs: js.Array[scala.Double],
+    shimArgs: js.Array[java.lang.String],
+    blockSize: scala.Int | scala.Double = null
+  ): Procedure = {
+    val __obj = js.Dynamic.literal(argTypes = argTypes, arrayArgs = arrayArgs, arrayBlockIndices = arrayBlockIndices, body = body, debug = debug, funcName = funcName, indexArgs = indexArgs, offsetArgIndex = offsetArgIndex, offsetArgs = offsetArgs, post = post, pre = pre, scalarArgs = scalarArgs, shapeArgs = shapeArgs, shimArgs = shimArgs)
+    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Procedure]
+  }
+}
+

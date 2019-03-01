@@ -42,3 +42,25 @@ trait Anon_DetailsGetPopup extends js.Object {
   def show(tabId: scala.Double): js.Promise[scala.Unit]
 }
 
+object Anon_DetailsGetPopup {
+  @scala.inline
+  def apply(
+    getPopup: js.Function1[Anon_TabIdNumber, js.Promise[java.lang.String]],
+    getTitle: js.Function1[Anon_TabIdNumber, js.Promise[java.lang.String]],
+    hide: js.Function1[scala.Double, js.Promise[scala.Unit]],
+    isShown: js.Function1[Anon_TabIdNumber, js.Promise[scala.Boolean]],
+    onClicked: WebExtEvent[
+      js.Function1[/* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, scala.Unit]
+    ],
+    openPopup: js.Function0[js.Promise[scala.Unit]],
+    setIcon: js.Function1[Anon_ImageDataKeyPath, js.Promise[scala.Unit]],
+    setPopup: js.Function1[Anon_PopupTabId, scala.Unit],
+    setTitle: js.Function1[Anon_TabIdTitleNull, scala.Unit],
+    show: js.Function1[scala.Double, js.Promise[scala.Unit]]
+  ): Anon_DetailsGetPopup = {
+    val __obj = js.Dynamic.literal(getPopup = getPopup, getTitle = getTitle, hide = hide, isShown = isShown, onClicked = onClicked, openPopup = openPopup, setIcon = setIcon, setPopup = setPopup, setTitle = setTitle, show = show)
+  
+    __obj.asInstanceOf[Anon_DetailsGetPopup]
+  }
+}
+

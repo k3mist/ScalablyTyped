@@ -28,3 +28,18 @@ trait Anon_Basename extends js.Object {
   var filename: java.lang.String
 }
 
+object Anon_Basename {
+  @scala.inline
+  def apply(
+    basename: java.lang.String,
+    dirname: java.lang.String,
+    ext: java.lang.String,
+    extname: java.lang.String,
+    filename: java.lang.String
+  ): Anon_Basename = {
+    val __obj = js.Dynamic.literal(basename = basename, dirname = dirname, ext = ext, extname = extname, filename = filename)
+  
+    __obj.asInstanceOf[Anon_Basename]
+  }
+}
+

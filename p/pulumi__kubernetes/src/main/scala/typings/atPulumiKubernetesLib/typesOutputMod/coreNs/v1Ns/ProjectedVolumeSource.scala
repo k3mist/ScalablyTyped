@@ -22,3 +22,12 @@ trait ProjectedVolumeSource extends js.Object {
   val sources: js.Array[VolumeProjection]
 }
 
+object ProjectedVolumeSource {
+  @scala.inline
+  def apply(defaultMode: scala.Double, sources: js.Array[VolumeProjection]): ProjectedVolumeSource = {
+    val __obj = js.Dynamic.literal(defaultMode = defaultMode, sources = sources)
+  
+    __obj.asInstanceOf[ProjectedVolumeSource]
+  }
+}
+

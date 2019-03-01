@@ -22,3 +22,15 @@ trait Box extends js.Object {
   def selectOption(dialogResult: java.lang.String): scala.Unit
 }
 
+object Box {
+  @scala.inline
+  def apply(
+    getView: js.Function0[stdLib.HTMLElement],
+    selectOption: js.Function1[java.lang.String, scala.Unit]
+  ): Box = {
+    val __obj = js.Dynamic.literal(getView = getView, selectOption = selectOption)
+  
+    __obj.asInstanceOf[Box]
+  }
+}
+

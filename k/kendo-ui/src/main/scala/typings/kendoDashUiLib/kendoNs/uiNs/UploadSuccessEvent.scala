@@ -12,3 +12,23 @@ trait UploadSuccessEvent extends UploadEvent {
   var response: js.UndefOr[js.Any] = js.undefined
 }
 
+object UploadSuccessEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Upload,
+    XMLHttpRequest: js.Any = null,
+    files: js.Array[_] = null,
+    operation: java.lang.String = null,
+    response: js.Any = null
+  ): UploadSuccessEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[UploadSuccessEvent]
+  }
+}
+

@@ -24,3 +24,12 @@ trait FileSystemWatcher extends js.Object {
   var kind: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FileSystemWatcher {
+  @scala.inline
+  def apply(globPattern: java.lang.String, kind: scala.Int | scala.Double = null): FileSystemWatcher = {
+    val __obj = js.Dynamic.literal(globPattern = globPattern)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileSystemWatcher]
+  }
+}
+

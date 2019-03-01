@@ -29,3 +29,22 @@ trait GetNatGatewayResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetNatGatewayResult {
+  @scala.inline
+  def apply(
+    allocationId: java.lang.String,
+    id: java.lang.String,
+    networkInterfaceId: java.lang.String,
+    privateIp: java.lang.String,
+    publicIp: java.lang.String,
+    state: java.lang.String,
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetNatGatewayResult = {
+    val __obj = js.Dynamic.literal(allocationId = allocationId, id = id, networkInterfaceId = networkInterfaceId, privateIp = privateIp, publicIp = publicIp, state = state, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetNatGatewayResult]
+  }
+}
+

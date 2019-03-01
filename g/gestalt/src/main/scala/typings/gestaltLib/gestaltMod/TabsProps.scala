@@ -11,3 +11,16 @@ trait TabsProps extends js.Object {
   def onChange(args: gestaltLib.Anon_ActiveTabIndex): scala.Unit
 }
 
+object TabsProps {
+  @scala.inline
+  def apply(
+    activeTabIndex: scala.Double,
+    onChange: js.Function1[gestaltLib.Anon_ActiveTabIndex, scala.Unit],
+    tabs: js.Array[gestaltLib.Anon_Href]
+  ): TabsProps = {
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, onChange = onChange, tabs = tabs)
+  
+    __obj.asInstanceOf[TabsProps]
+  }
+}
+

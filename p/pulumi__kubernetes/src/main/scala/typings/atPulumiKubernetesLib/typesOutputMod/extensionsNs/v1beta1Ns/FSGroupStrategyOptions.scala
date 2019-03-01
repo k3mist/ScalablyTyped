@@ -21,3 +21,12 @@ trait FSGroupStrategyOptions extends js.Object {
   val rule: java.lang.String
 }
 
+object FSGroupStrategyOptions {
+  @scala.inline
+  def apply(ranges: js.Array[IDRange], rule: java.lang.String): FSGroupStrategyOptions = {
+    val __obj = js.Dynamic.literal(ranges = ranges, rule = rule)
+  
+    __obj.asInstanceOf[FSGroupStrategyOptions]
+  }
+}
+

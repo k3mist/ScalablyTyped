@@ -10,3 +10,12 @@ trait DeltaFilter extends js.Object {
   var id: adoneLib.adoneLibStrings.LZMA_FILTER_DELTA
 }
 
+object DeltaFilter {
+  @scala.inline
+  def apply(id: adoneLib.adoneLibStrings.LZMA_FILTER_DELTA, dist: scala.Int | scala.Double = null): DeltaFilter = {
+    val __obj = js.Dynamic.literal(id = id)
+    if (dist != null) __obj.updateDynamic("dist")(dist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeltaFilter]
+  }
+}
+

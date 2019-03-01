@@ -10,3 +10,20 @@ trait Category4[F /* <: fpDashTsLib.libHKTMod.URIS4 */]
   def id[X, U, A](): fpDashTsLib.libHKTMod.Type4[F, X, U, A, A]
 }
 
+object Category4 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS4 */](
+    URI: F,
+    compose: js.Function2[
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
+    ],
+    id: js.Function0[fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]]
+  ): Category4[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compose = compose, id = id)
+  
+    __obj.asInstanceOf[Category4[F]]
+  }
+}
+

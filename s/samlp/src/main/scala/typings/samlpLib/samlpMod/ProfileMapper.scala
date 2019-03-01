@@ -11,3 +11,16 @@ trait ProfileMapper extends js.Object {
   def getNameIdentifier(): js.Any
 }
 
+object ProfileMapper {
+  @scala.inline
+  def apply(
+    getClaims: js.Function0[js.Any],
+    getNameIdentifier: js.Function0[js.Any],
+    metadata: js.Array[MetadataItem]
+  ): ProfileMapper = {
+    val __obj = js.Dynamic.literal(getClaims = getClaims, getNameIdentifier = getNameIdentifier, metadata = metadata)
+  
+    __obj.asInstanceOf[ProfileMapper]
+  }
+}
+

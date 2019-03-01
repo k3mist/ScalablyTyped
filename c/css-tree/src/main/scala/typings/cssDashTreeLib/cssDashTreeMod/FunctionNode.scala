@@ -14,3 +14,17 @@ trait FunctionNode
   var type_FunctionNode: cssDashTreeLib.cssDashTreeLibStrings.Function
 }
 
+object FunctionNode {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Function,
+    loc: CssLocation = null
+  ): FunctionNode = {
+    val __obj = js.Dynamic.literal(children = children, name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[FunctionNode]
+  }
+}
+

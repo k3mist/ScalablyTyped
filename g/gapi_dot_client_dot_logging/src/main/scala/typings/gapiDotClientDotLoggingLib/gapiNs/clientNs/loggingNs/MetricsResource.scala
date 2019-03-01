@@ -18,3 +18,33 @@ trait MetricsResource extends js.Object {
   def update(request: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName): gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
 }
 
+object MetricsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
+    ],
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLogMetricsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyMetricName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]
+    ]
+  ): MetricsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, update = update)
+  
+    __obj.asInstanceOf[MetricsResource]
+  }
+}
+

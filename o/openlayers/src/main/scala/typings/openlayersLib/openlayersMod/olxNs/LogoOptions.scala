@@ -13,3 +13,12 @@ trait LogoOptions extends js.Object {
   var src: java.lang.String
 }
 
+object LogoOptions {
+  @scala.inline
+  def apply(href: java.lang.String, src: java.lang.String): LogoOptions = {
+    val __obj = js.Dynamic.literal(href = href, src = src)
+  
+    __obj.asInstanceOf[LogoOptions]
+  }
+}
+

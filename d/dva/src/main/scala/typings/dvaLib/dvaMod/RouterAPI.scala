@@ -10,3 +10,12 @@ trait RouterAPI extends js.Object {
   var history: historyLib.historyMod.History[historyLib.historyMod.LocationState]
 }
 
+object RouterAPI {
+  @scala.inline
+  def apply(app: DvaInstance, history: historyLib.historyMod.History[historyLib.historyMod.LocationState]): RouterAPI = {
+    val __obj = js.Dynamic.literal(app = app, history = history)
+  
+    __obj.asInstanceOf[RouterAPI]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_KeyValue extends js.Object {
   ]
 }
 
+object Anon_KeyValue {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    value: js.Array[
+      vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColorAndIcon
+    ]
+  ): Anon_KeyValue = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[Anon_KeyValue]
+  }
+}
+

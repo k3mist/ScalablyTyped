@@ -33,3 +33,21 @@ trait ApplicationVersionArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApplicationVersionArgs {
+  @scala.inline
+  def apply(
+    application: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application],
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.s3BucketMod.Bucket],
+    key: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    forceDelete: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ApplicationVersionArgs = {
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (forceDelete != null) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationVersionArgs]
+  }
+}
+

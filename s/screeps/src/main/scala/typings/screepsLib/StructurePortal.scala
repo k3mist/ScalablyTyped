@@ -25,3 +25,24 @@ trait StructurePortal
   var ticksToDecay: js.UndefOr[scala.Double]
 }
 
+object StructurePortal {
+  @scala.inline
+  def apply(
+    destination: RoomPosition | Anon_RoomShard,
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_PORTAL,
+    ticksToDecay: scala.Int | scala.Double = null
+  ): StructurePortal = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType)
+    if (ticksToDecay != null) __obj.updateDynamic("ticksToDecay")(ticksToDecay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructurePortal]
+  }
+}
+

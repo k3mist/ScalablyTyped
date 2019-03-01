@@ -12,3 +12,15 @@ trait Anon_CacheObjectSelectorCreator extends _Options {
   var selectorCreator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.Any
 }
 
+object Anon_CacheObjectSelectorCreator {
+  @scala.inline
+  def apply(
+    selectorCreator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.Any,
+    cacheObject: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ICacheObject */ js.Any = null
+  ): Anon_CacheObjectSelectorCreator = {
+    val __obj = js.Dynamic.literal(selectorCreator = selectorCreator)
+    if (cacheObject != null) __obj.updateDynamic("cacheObject")(cacheObject)
+    __obj.asInstanceOf[Anon_CacheObjectSelectorCreator]
+  }
+}
+

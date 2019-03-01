@@ -132,3 +132,34 @@ trait IgDoughnutChartMethods extends js.Object {
   def updateSeries(value: js.Object): scala.Unit
 }
 
+object IgDoughnutChartMethods {
+  @scala.inline
+  def apply(
+    addItem: js.Function1[js.Object, js.Object],
+    addSeries: js.Function1[js.Object, scala.Unit],
+    chart: js.Function0[js.Object],
+    dataBind: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[js.Object],
+    findIndexOfItem: js.Function1[js.Object, scala.Double],
+    flush: js.Function0[scala.Unit],
+    getCenterCoordinates: js.Function0[js.Object],
+    getData: js.Function1[java.lang.String, js.Object],
+    getDataItem: js.Function1[js.Object, js.Object],
+    getHoleRadius: js.Function0[scala.Double],
+    insertItem: js.Function2[js.Object, scala.Double, js.Object],
+    notifyClearItems: js.Function1[js.Object, js.Object],
+    notifyInsertItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifyRemoveItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifySetItem: js.Function4[js.Object, scala.Double, js.Object, js.Object, js.Object],
+    removeItem: js.Function1[scala.Double, js.Object],
+    removeSeries: js.Function1[js.Object, scala.Unit],
+    setItem: js.Function2[scala.Double, js.Object, js.Object],
+    updateSeries: js.Function1[js.Object, scala.Unit]
+  ): IgDoughnutChartMethods = {
+    val __obj = js.Dynamic.literal(addItem = addItem, addSeries = addSeries, chart = chart, dataBind = dataBind, destroy = destroy, exportVisualData = exportVisualData, findIndexOfItem = findIndexOfItem, flush = flush, getCenterCoordinates = getCenterCoordinates, getData = getData, getDataItem = getDataItem, getHoleRadius = getHoleRadius, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, removeSeries = removeSeries, setItem = setItem, updateSeries = updateSeries)
+  
+    __obj.asInstanceOf[IgDoughnutChartMethods]
+  }
+}
+

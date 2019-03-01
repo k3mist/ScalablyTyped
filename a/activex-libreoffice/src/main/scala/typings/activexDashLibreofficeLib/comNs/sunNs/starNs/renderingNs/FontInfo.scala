@@ -60,3 +60,22 @@ trait FontInfo extends js.Object {
   var UnicodeRanges3: scala.Double
 }
 
+object FontInfo {
+  @scala.inline
+  def apply(
+    FamilyName: java.lang.String,
+    FontDescription: Panose,
+    IsSymbolFont: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.TriState,
+    IsVertical: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.TriState,
+    StyleName: java.lang.String,
+    UnicodeRanges0: scala.Double,
+    UnicodeRanges1: scala.Double,
+    UnicodeRanges2: scala.Double,
+    UnicodeRanges3: scala.Double
+  ): FontInfo = {
+    val __obj = js.Dynamic.literal(FamilyName = FamilyName, FontDescription = FontDescription, IsSymbolFont = IsSymbolFont, IsVertical = IsVertical, StyleName = StyleName, UnicodeRanges0 = UnicodeRanges0, UnicodeRanges1 = UnicodeRanges1, UnicodeRanges2 = UnicodeRanges2, UnicodeRanges3 = UnicodeRanges3)
+  
+    __obj.asInstanceOf[FontInfo]
+  }
+}
+

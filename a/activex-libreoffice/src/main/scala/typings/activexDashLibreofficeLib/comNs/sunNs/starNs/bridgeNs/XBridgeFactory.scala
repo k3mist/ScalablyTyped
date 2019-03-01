@@ -36,3 +36,26 @@ trait XBridgeFactory
   def getExistingBridges(): activexDashInteropLib.SafeArray[XBridge]
 }
 
+object XBridgeFactory {
+  @scala.inline
+  def apply(
+    ExistingBridges: activexDashInteropLib.SafeArray[XBridge],
+    acquire: js.Function0[scala.Unit],
+    createBridge: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, 
+      XInstanceProvider, 
+      XBridge
+    ],
+    getBridge: js.Function1[java.lang.String, XBridge],
+    getExistingBridges: js.Function0[activexDashInteropLib.SafeArray[XBridge]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBridgeFactory = {
+    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = acquire, createBridge = createBridge, getBridge = getBridge, getExistingBridges = getExistingBridges, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBridgeFactory]
+  }
+}
+

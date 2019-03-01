@@ -14,3 +14,19 @@ trait TableRow extends js.Object {
   def remove(): scala.Unit
 }
 
+object TableRow {
+  @scala.inline
+  def apply(
+    getCell: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, TableCell],
+    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getMinimumHeight: js.Function0[stdLib.Number],
+    getNumCells: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getParentTable: js.Function0[Table],
+    remove: js.Function0[scala.Unit]
+  ): TableRow = {
+    val __obj = js.Dynamic.literal(getCell = getCell, getIndex = getIndex, getMinimumHeight = getMinimumHeight, getNumCells = getNumCells, getParentTable = getParentTable, remove = remove)
+  
+    __obj.asInstanceOf[TableRow]
+  }
+}
+

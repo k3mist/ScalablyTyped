@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ForInStatement
 }
 
+object ForInStatement {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    left: astDashTypesLib.genKindsMod.VariableDeclarationKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    right: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ForInStatement
+  ): ForInStatement = {
+    val __obj = js.Dynamic.literal(body = body, left = left.asInstanceOf[js.Any], right = right, `type` = `type`)
+  
+    __obj.asInstanceOf[ForInStatement]
+  }
+}
+

@@ -24,3 +24,22 @@ trait XConstantsTypeDescription extends XTypeDescription {
   def getConstants(): activexDashInteropLib.SafeArray[XConstantTypeDescription]
 }
 
+object XConstantsTypeDescription {
+  @scala.inline
+  def apply(
+    Constants: activexDashInteropLib.SafeArray[XConstantTypeDescription],
+    Name: java.lang.String,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getConstants: js.Function0[activexDashInteropLib.SafeArray[XConstantTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XConstantsTypeDescription = {
+    val __obj = js.Dynamic.literal(Constants = Constants, Name = Name, TypeClass = TypeClass, acquire = acquire, getConstants = getConstants, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XConstantsTypeDescription]
+  }
+}
+

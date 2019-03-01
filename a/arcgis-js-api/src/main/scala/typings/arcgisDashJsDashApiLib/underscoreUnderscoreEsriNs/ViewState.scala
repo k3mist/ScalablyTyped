@@ -86,3 +86,24 @@ trait ViewState extends js.Object {
   def toScreenNoRotation(out: js.Array[scala.Double], x: scala.Double, y: scala.Double): js.Array[scala.Double]
 }
 
+object ViewState {
+  @scala.inline
+  def apply(
+    center: js.Array[scala.Double],
+    clone: js.Function0[ViewState],
+    copy: js.Function1[ViewState, ViewState],
+    extent: Extent,
+    resolution: scala.Double,
+    rotation: scala.Double,
+    scale: scala.Double,
+    size: js.Array[scala.Double],
+    toMap: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]],
+    toScreen: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]],
+    toScreenNoRotation: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]]
+  ): ViewState = {
+    val __obj = js.Dynamic.literal(center = center, clone = clone, copy = copy, extent = extent, resolution = resolution, rotation = rotation, scale = scale, size = size, toMap = toMap, toScreen = toScreen, toScreenNoRotation = toScreenNoRotation)
+  
+    __obj.asInstanceOf[ViewState]
+  }
+}
+

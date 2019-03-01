@@ -29,3 +29,22 @@ trait SearchOptions extends js.Object {
   var transliterateFlags: scala.Double
 }
 
+object SearchOptions {
+  @scala.inline
+  def apply(
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    algorithmType: SearchAlgorithms,
+    changedChars: scala.Double,
+    deletedChars: scala.Double,
+    insertedChars: scala.Double,
+    replaceString: java.lang.String,
+    searchFlag: scala.Double,
+    searchString: java.lang.String,
+    transliterateFlags: scala.Double
+  ): SearchOptions = {
+    val __obj = js.Dynamic.literal(Locale = Locale, algorithmType = algorithmType, changedChars = changedChars, deletedChars = deletedChars, insertedChars = insertedChars, replaceString = replaceString, searchFlag = searchFlag, searchString = searchString, transliterateFlags = transliterateFlags)
+  
+    __obj.asInstanceOf[SearchOptions]
+  }
+}
+

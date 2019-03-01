@@ -10,3 +10,12 @@ trait Anon_InUndoRedoOldContentControl extends js.Object {
   val OldContentControl: activexDashWordLib.WordNs.ContentControl
 }
 
+object Anon_InUndoRedoOldContentControl {
+  @scala.inline
+  def apply(InUndoRedo: scala.Boolean, OldContentControl: activexDashWordLib.WordNs.ContentControl): Anon_InUndoRedoOldContentControl = {
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, OldContentControl = OldContentControl)
+  
+    __obj.asInstanceOf[Anon_InUndoRedoOldContentControl]
+  }
+}
+

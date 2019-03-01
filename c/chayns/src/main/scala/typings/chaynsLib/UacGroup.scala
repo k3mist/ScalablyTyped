@@ -12,3 +12,12 @@ trait UacGroup extends js.Object {
   var showName: java.lang.String
 }
 
+object UacGroup {
+  @scala.inline
+  def apply(id: scala.Double, name: java.lang.String, showName: java.lang.String): UacGroup = {
+    val __obj = js.Dynamic.literal(id = id, name = name, showName = showName)
+  
+    __obj.asInstanceOf[UacGroup]
+  }
+}
+

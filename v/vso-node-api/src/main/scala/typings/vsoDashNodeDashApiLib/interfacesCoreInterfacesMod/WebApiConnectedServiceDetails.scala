@@ -20,3 +20,18 @@ trait WebApiConnectedServiceDetails extends WebApiConnectedServiceRef {
   var endPoint: java.lang.String
 }
 
+object WebApiConnectedServiceDetails {
+  @scala.inline
+  def apply(
+    connectedServiceMetaData: WebApiConnectedService,
+    credentialsXml: java.lang.String,
+    endPoint: java.lang.String,
+    id: java.lang.String,
+    url: java.lang.String
+  ): WebApiConnectedServiceDetails = {
+    val __obj = js.Dynamic.literal(connectedServiceMetaData = connectedServiceMetaData, credentialsXml = credentialsXml, endPoint = endPoint, id = id, url = url)
+  
+    __obj.asInstanceOf[WebApiConnectedServiceDetails]
+  }
+}
+

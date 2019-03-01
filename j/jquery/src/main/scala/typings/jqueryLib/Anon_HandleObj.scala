@@ -14,3 +14,12 @@ trait Anon_HandleObj[TTarget, TData]
   def remove(`this`: TTarget, handleObj: jqueryLib.JQueryNs.HandleObject[TTarget, TData]): scala.Unit
 }
 
+object Anon_HandleObj {
+  @scala.inline
+  def apply[TTarget, TData](remove: js.Function2[TTarget, jqueryLib.JQueryNs.HandleObject[TTarget, TData], scala.Unit]): Anon_HandleObj[TTarget, TData] = {
+    val __obj = js.Dynamic.literal(remove = remove)
+  
+    __obj.asInstanceOf[Anon_HandleObj[TTarget, TData]]
+  }
+}
+

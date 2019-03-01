@@ -14,3 +14,12 @@ trait GregorianDateObject extends js.Object {
   var gy: scala.Double
 }
 
+object GregorianDateObject {
+  @scala.inline
+  def apply(gd: scala.Double, gm: scala.Double, gy: scala.Double): GregorianDateObject = {
+    val __obj = js.Dynamic.literal(gd = gd, gm = gm, gy = gy)
+  
+    __obj.asInstanceOf[GregorianDateObject]
+  }
+}
+

@@ -11,3 +11,12 @@ trait where extends js.Object {
   var logic: java.lang.String | js.Object
 }
 
+object where {
+  @scala.inline
+  def apply(attribute: js.Object, logic: java.lang.String | js.Object, comparator: java.lang.String = null): where = {
+    val __obj = js.Dynamic.literal(attribute = attribute, logic = logic.asInstanceOf[js.Any])
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    __obj.asInstanceOf[where]
+  }
+}
+

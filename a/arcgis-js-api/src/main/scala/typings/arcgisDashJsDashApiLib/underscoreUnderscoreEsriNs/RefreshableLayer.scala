@@ -24,3 +24,12 @@ trait RefreshableLayer extends js.Object {
   def refresh(): scala.Unit
 }
 
+object RefreshableLayer {
+  @scala.inline
+  def apply(refresh: js.Function0[scala.Unit], refreshInterval: scala.Double): RefreshableLayer = {
+    val __obj = js.Dynamic.literal(refresh = refresh, refreshInterval = refreshInterval)
+  
+    __obj.asInstanceOf[RefreshableLayer]
+  }
+}
+

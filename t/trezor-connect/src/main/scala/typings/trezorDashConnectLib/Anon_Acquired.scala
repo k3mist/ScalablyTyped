@@ -17,3 +17,21 @@ trait Anon_Acquired
   var `type`: trezorDashConnectLib.trezorDashConnectLibStrings.acquired
 }
 
+object Anon_Acquired {
+  @scala.inline
+  def apply(
+    features: trezorDashConnectLib.trezorDashConnectMod.Features,
+    firmware: trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus,
+    label: java.lang.String,
+    mode: trezorDashConnectLib.trezorDashConnectMod.DeviceMode,
+    path: java.lang.String,
+    status: trezorDashConnectLib.trezorDashConnectMod.DeviceStatus,
+    `type`: trezorDashConnectLib.trezorDashConnectLibStrings.acquired,
+    state: java.lang.String = null
+  ): Anon_Acquired = {
+    val __obj = js.Dynamic.literal(features = features, firmware = firmware, label = label, mode = mode, path = path, status = status, `type` = `type`)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_Acquired]
+  }
+}
+

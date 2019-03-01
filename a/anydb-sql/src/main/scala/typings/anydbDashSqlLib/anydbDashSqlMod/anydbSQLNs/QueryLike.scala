@@ -11,3 +11,12 @@ trait QueryLike extends js.Object {
   var values: js.Array[_]
 }
 
+object QueryLike {
+  @scala.inline
+  def apply(query: java.lang.String, text: java.lang.String, values: js.Array[_]): QueryLike = {
+    val __obj = js.Dynamic.literal(query = query, text = text, values = values)
+  
+    __obj.asInstanceOf[QueryLike]
+  }
+}
+

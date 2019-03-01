@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DebuggerStatement
 }
 
+object DebuggerStatement {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.DebuggerStatement): DebuggerStatement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[DebuggerStatement]
+  }
+}
+

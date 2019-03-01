@@ -13,3 +13,18 @@ trait Options extends js.Object {
   var writeable: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    bufoverflow: scala.Double,
+    frequence: scala.Double,
+    maxbufsize: scala.Double,
+    readable: scala.Boolean,
+    writeable: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal(bufoverflow = bufoverflow, frequence = frequence, maxbufsize = maxbufsize, readable = readable, writeable = writeable)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

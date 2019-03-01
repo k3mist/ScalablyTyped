@@ -192,3 +192,59 @@ trait ASPxClientGridViewCallbackCommandStatic extends js.Object {
   var UpdateEdit: java.lang.String
 }
 
+object ASPxClientGridViewCallbackCommandStatic {
+  @scala.inline
+  def apply(
+    AddNewRow: java.lang.String,
+    ApplyColumnFilter: java.lang.String,
+    ApplyCustomizationDialogChanges: java.lang.String,
+    ApplyFilter: java.lang.String,
+    ApplyHeaderColumnFilter: java.lang.String,
+    ApplyMultiColumnFilter: java.lang.String,
+    ApplySearchPanelFilter: java.lang.String,
+    CancelEdit: java.lang.String,
+    CloseFilterControl: java.lang.String,
+    CollapseAll: java.lang.String,
+    CollapseRow: java.lang.String,
+    ColumnMove: java.lang.String,
+    ContextMenu: java.lang.String,
+    CustomButton: java.lang.String,
+    CustomCallback: java.lang.String,
+    CustomValues: java.lang.String,
+    DeleteRow: java.lang.String,
+    ExpandAll: java.lang.String,
+    ExpandRow: java.lang.String,
+    Export: java.lang.String,
+    FilterPopup: java.lang.String,
+    FilterRowMenu: java.lang.String,
+    FocusedRow: java.lang.String,
+    GotoPage: java.lang.String,
+    Group: java.lang.String,
+    HideAllDetail: java.lang.String,
+    HideDetailRow: java.lang.String,
+    NextPage: java.lang.String,
+    PageRowValues: java.lang.String,
+    PagerOnClick: java.lang.String,
+    PreviousPage: java.lang.String,
+    Refresh: java.lang.String,
+    RowValues: java.lang.String,
+    SelFieldValues: java.lang.String,
+    SelectRows: java.lang.String,
+    SelectRowsKey: java.lang.String,
+    Selection: java.lang.String,
+    SetFilterEnabled: java.lang.String,
+    ShowAllDetail: java.lang.String,
+    ShowDetailRow: java.lang.String,
+    ShowFilterControl: java.lang.String,
+    Sort: java.lang.String,
+    StartEdit: java.lang.String,
+    Toolbar: java.lang.String,
+    UnGroup: java.lang.String,
+    UpdateEdit: java.lang.String
+  ): ASPxClientGridViewCallbackCommandStatic = {
+    val __obj = js.Dynamic.literal(AddNewRow = AddNewRow, ApplyColumnFilter = ApplyColumnFilter, ApplyCustomizationDialogChanges = ApplyCustomizationDialogChanges, ApplyFilter = ApplyFilter, ApplyHeaderColumnFilter = ApplyHeaderColumnFilter, ApplyMultiColumnFilter = ApplyMultiColumnFilter, ApplySearchPanelFilter = ApplySearchPanelFilter, CancelEdit = CancelEdit, CloseFilterControl = CloseFilterControl, CollapseAll = CollapseAll, CollapseRow = CollapseRow, ColumnMove = ColumnMove, ContextMenu = ContextMenu, CustomButton = CustomButton, CustomCallback = CustomCallback, CustomValues = CustomValues, DeleteRow = DeleteRow, ExpandAll = ExpandAll, ExpandRow = ExpandRow, Export = Export, FilterPopup = FilterPopup, FilterRowMenu = FilterRowMenu, FocusedRow = FocusedRow, GotoPage = GotoPage, Group = Group, HideAllDetail = HideAllDetail, HideDetailRow = HideDetailRow, NextPage = NextPage, PageRowValues = PageRowValues, PagerOnClick = PagerOnClick, PreviousPage = PreviousPage, Refresh = Refresh, RowValues = RowValues, SelFieldValues = SelFieldValues, SelectRows = SelectRows, SelectRowsKey = SelectRowsKey, Selection = Selection, SetFilterEnabled = SetFilterEnabled, ShowAllDetail = ShowAllDetail, ShowDetailRow = ShowDetailRow, ShowFilterControl = ShowFilterControl, Sort = Sort, StartEdit = StartEdit, Toolbar = Toolbar, UnGroup = UnGroup, UpdateEdit = UpdateEdit)
+  
+    __obj.asInstanceOf[ASPxClientGridViewCallbackCommandStatic]
+  }
+}
+

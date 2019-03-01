@@ -34,3 +34,17 @@ trait NetworkPolicy extends js.Object {
   val spec: NetworkPolicySpec
 }
 
+object NetworkPolicy {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: NetworkPolicySpec
+  ): NetworkPolicy = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec)
+  
+    __obj.asInstanceOf[NetworkPolicy]
+  }
+}
+

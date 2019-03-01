@@ -12,3 +12,12 @@ trait DISPPARAMS extends js.Object {
   val rgvarg: js.Any
 }
 
+object DISPPARAMS {
+  @scala.inline
+  def apply(cArgs: scala.Double, cNamedArgs: scala.Double, rgdispidNamedArgs: scala.Double, rgvarg: js.Any): DISPPARAMS = {
+    val __obj = js.Dynamic.literal(cArgs = cArgs, cNamedArgs = cNamedArgs, rgdispidNamedArgs = rgdispidNamedArgs, rgvarg = rgvarg)
+  
+    __obj.asInstanceOf[DISPPARAMS]
+  }
+}
+

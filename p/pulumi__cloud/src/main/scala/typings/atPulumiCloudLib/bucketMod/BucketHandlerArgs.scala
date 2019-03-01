@@ -20,3 +20,12 @@ trait BucketHandlerArgs extends js.Object {
   var size: scala.Double
 }
 
+object BucketHandlerArgs {
+  @scala.inline
+  def apply(eventTime: java.lang.String, key: java.lang.String, size: scala.Double): BucketHandlerArgs = {
+    val __obj = js.Dynamic.literal(eventTime = eventTime, key = key, size = size)
+  
+    __obj.asInstanceOf[BucketHandlerArgs]
+  }
+}
+

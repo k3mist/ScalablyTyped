@@ -56,3 +56,37 @@ trait MessageEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object MessageEvent {
+  @scala.inline
+  def apply(
+    bounce_class: java.lang.String,
+    campaign_id: java.lang.String,
+    customer_id: java.lang.String,
+    delv_method: java.lang.String,
+    device_token: java.lang.String,
+    error_code: java.lang.String,
+    ip_address: java.lang.String,
+    message_id: java.lang.String,
+    msg_from: java.lang.String,
+    msg_size: java.lang.String,
+    num_retries: java.lang.String,
+    raw_reason: java.lang.String,
+    rcpt_meta: js.Any,
+    rcpt_tags: js.Array[java.lang.String],
+    rcpt_to: java.lang.String,
+    rcpt_type: java.lang.String,
+    reason: java.lang.String,
+    routing_domain: java.lang.String,
+    subject: java.lang.String,
+    template_id: java.lang.String,
+    template_version: java.lang.String,
+    timestamp: java.lang.String,
+    transmission_id: java.lang.String,
+    `type`: java.lang.String
+  ): MessageEvent = {
+    val __obj = js.Dynamic.literal(bounce_class = bounce_class, campaign_id = campaign_id, customer_id = customer_id, delv_method = delv_method, device_token = device_token, error_code = error_code, ip_address = ip_address, message_id = message_id, msg_from = msg_from, msg_size = msg_size, num_retries = num_retries, raw_reason = raw_reason, rcpt_meta = rcpt_meta, rcpt_tags = rcpt_tags, rcpt_to = rcpt_to, rcpt_type = rcpt_type, reason = reason, routing_domain = routing_domain, subject = subject, template_id = template_id, template_version = template_version, timestamp = timestamp, transmission_id = transmission_id, `type` = `type`)
+  
+    __obj.asInstanceOf[MessageEvent]
+  }
+}
+

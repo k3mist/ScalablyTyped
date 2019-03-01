@@ -11,3 +11,16 @@ trait IMessageWebSocketMessageReceivedEventArgs extends js.Object {
   def getDataStream(): winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream
 }
 
+object IMessageWebSocketMessageReceivedEventArgs {
+  @scala.inline
+  def apply(
+    getDataReader: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.DataReader],
+    getDataStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream],
+    messageType: SocketMessageType
+  ): IMessageWebSocketMessageReceivedEventArgs = {
+    val __obj = js.Dynamic.literal(getDataReader = getDataReader, getDataStream = getDataStream, messageType = messageType)
+  
+    __obj.asInstanceOf[IMessageWebSocketMessageReceivedEventArgs]
+  }
+}
+

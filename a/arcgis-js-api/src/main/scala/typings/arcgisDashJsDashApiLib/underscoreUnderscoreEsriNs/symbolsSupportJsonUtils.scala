@@ -17,3 +17,12 @@ trait symbolsSupportJsonUtils extends js.Object {
   def fromJSON(json: js.Any): Symbol
 }
 
+object symbolsSupportJsonUtils {
+  @scala.inline
+  def apply(fromJSON: js.Function1[js.Any, Symbol]): symbolsSupportJsonUtils = {
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON)
+  
+    __obj.asInstanceOf[symbolsSupportJsonUtils]
+  }
+}
+

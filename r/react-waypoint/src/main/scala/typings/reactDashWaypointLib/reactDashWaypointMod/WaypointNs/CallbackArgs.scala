@@ -35,3 +35,19 @@ trait CallbackArgs extends js.Object {
   var waypointTop: scala.Double
 }
 
+object CallbackArgs {
+  @scala.inline
+  def apply(
+    currentPosition: java.lang.String,
+    previousPosition: java.lang.String,
+    viewportBottom: scala.Double,
+    viewportTop: scala.Double,
+    waypointTop: scala.Double,
+    event: reactLib.Event = null
+  ): CallbackArgs = {
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition, previousPosition = previousPosition, viewportBottom = viewportBottom, viewportTop = viewportTop, waypointTop = waypointTop)
+    if (event != null) __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[CallbackArgs]
+  }
+}
+

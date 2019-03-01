@@ -10,3 +10,12 @@ trait Anon_NeedsUpdate extends js.Object {
   var value: js.Any
 }
 
+object Anon_NeedsUpdate {
+  @scala.inline
+  def apply(needsUpdate: scala.Boolean, value: js.Any): Anon_NeedsUpdate = {
+    val __obj = js.Dynamic.literal(needsUpdate = needsUpdate, value = value)
+  
+    __obj.asInstanceOf[Anon_NeedsUpdate]
+  }
+}
+

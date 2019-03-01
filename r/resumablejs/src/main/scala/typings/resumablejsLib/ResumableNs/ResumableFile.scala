@@ -64,3 +64,27 @@ trait ResumableFile extends js.Object {
   def retry(): scala.Unit
 }
 
+object ResumableFile {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    bootstrap: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    chunks: js.Array[ResumableChunk],
+    file: stdLib.File,
+    fileName: java.lang.String,
+    isComplete: js.Function0[scala.Boolean],
+    isUploading: js.Function0[scala.Boolean],
+    progress: js.Function1[scala.Boolean, scala.Double],
+    relativePath: java.lang.String,
+    resumableObj: Resumable,
+    retry: js.Function0[scala.Unit],
+    size: scala.Double,
+    uniqueIdentifier: java.lang.String
+  ): ResumableFile = {
+    val __obj = js.Dynamic.literal(abort = abort, bootstrap = bootstrap, cancel = cancel, chunks = chunks, file = file, fileName = fileName, isComplete = isComplete, isUploading = isUploading, progress = progress, relativePath = relativePath, resumableObj = resumableObj, retry = retry, size = size, uniqueIdentifier = uniqueIdentifier)
+  
+    __obj.asInstanceOf[ResumableFile]
+  }
+}
+

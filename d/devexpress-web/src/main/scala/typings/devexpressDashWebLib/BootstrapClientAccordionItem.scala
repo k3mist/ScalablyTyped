@@ -50,3 +50,33 @@ trait BootstrapClientAccordionItem extends ASPxClientNavBarItem {
   def SetIconCssClass(cssClass: java.lang.String): scala.Unit
 }
 
+object BootstrapClientAccordionItem {
+  @scala.inline
+  def apply(
+    GetBadgeIconCssClass: js.Function0[java.lang.String],
+    GetBadgeText: js.Function0[java.lang.String],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetIconCssClass: js.Function0[java.lang.String],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    group: BootstrapClientAccordionGroup,
+    index: scala.Double,
+    name: java.lang.String,
+    navBar: BootstrapClientAccordion
+  ): BootstrapClientAccordionItem = {
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, group = group, index = index, name = name, navBar = navBar)
+  
+    __obj.asInstanceOf[BootstrapClientAccordionItem]
+  }
+}
+

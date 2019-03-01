@@ -26,3 +26,20 @@ trait XJob
   ): js.Any
 }
 
+object XJob {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    execute: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      js.Any
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XJob = {
+    val __obj = js.Dynamic.literal(acquire = acquire, execute = execute, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XJob]
+  }
+}
+

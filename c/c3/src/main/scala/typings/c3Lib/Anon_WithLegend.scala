@@ -9,3 +9,12 @@ trait Anon_WithLegend extends js.Object {
   var withLegend: scala.Boolean
 }
 
+object Anon_WithLegend {
+  @scala.inline
+  def apply(withLegend: scala.Boolean): Anon_WithLegend = {
+    val __obj = js.Dynamic.literal(withLegend = withLegend)
+  
+    __obj.asInstanceOf[Anon_WithLegend]
+  }
+}
+

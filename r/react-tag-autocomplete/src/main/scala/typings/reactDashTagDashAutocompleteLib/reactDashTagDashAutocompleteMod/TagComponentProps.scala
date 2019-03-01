@@ -11,3 +11,19 @@ trait TagComponentProps extends js.Object {
   def onDelete(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent]): scala.Unit
 }
 
+object TagComponentProps {
+  @scala.inline
+  def apply(
+    classNames: ClassNames,
+    onDelete: js.Function1[
+      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ],
+    tag: Tag
+  ): TagComponentProps = {
+    val __obj = js.Dynamic.literal(classNames = classNames, onDelete = onDelete, tag = tag)
+  
+    __obj.asInstanceOf[TagComponentProps]
+  }
+}
+

@@ -10,3 +10,17 @@ trait GroupStatsResource extends js.Object {
   def list(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlignment): gapiDotClientLib.gapiNs.clientNs.Request[ListGroupStatsResponse]
 }
 
+object GroupStatsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlignment, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListGroupStatsResponse]
+    ]
+  ): GroupStatsResource = {
+    val __obj = js.Dynamic.literal(list = list)
+  
+    __obj.asInstanceOf[GroupStatsResource]
+  }
+}
+

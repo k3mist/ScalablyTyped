@@ -29,3 +29,49 @@ trait JdbcResultSetMetaData extends js.Object {
   def isWritable(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean
 }
 
+object JdbcResultSetMetaData {
+  @scala.inline
+  def apply(
+    getCatalogName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getColumnClassName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getColumnCount: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getColumnDisplaySize: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
+    ],
+    getColumnLabel: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getColumnName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getColumnType: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
+    ],
+    getColumnTypeName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getPrecision: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
+    ],
+    getScale: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
+    ],
+    getSchemaName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    getTableName: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String],
+    isAutoIncrement: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isCaseSensitive: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isCurrency: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isDefinitelyWritable: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isNullable: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
+    ],
+    isReadOnly: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isSearchable: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isSigned: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    isWritable: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean]
+  ): JdbcResultSetMetaData = {
+    val __obj = js.Dynamic.literal(getCatalogName = getCatalogName, getColumnClassName = getColumnClassName, getColumnCount = getColumnCount, getColumnDisplaySize = getColumnDisplaySize, getColumnLabel = getColumnLabel, getColumnName = getColumnName, getColumnType = getColumnType, getColumnTypeName = getColumnTypeName, getPrecision = getPrecision, getScale = getScale, getSchemaName = getSchemaName, getTableName = getTableName, isAutoIncrement = isAutoIncrement, isCaseSensitive = isCaseSensitive, isCurrency = isCurrency, isDefinitelyWritable = isDefinitelyWritable, isNullable = isNullable, isReadOnly = isReadOnly, isSearchable = isSearchable, isSigned = isSigned, isWritable = isWritable)
+  
+    __obj.asInstanceOf[JdbcResultSetMetaData]
+  }
+}
+

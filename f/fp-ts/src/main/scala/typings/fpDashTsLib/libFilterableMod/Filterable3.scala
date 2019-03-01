@@ -22,3 +22,56 @@ trait Filterable3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   ): fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type3[F, U, L, RL], fpDashTsLib.libHKTMod.Type3[F, U, L, RR]]
 }
 
+object Filterable3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    filter: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    filterMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    partition: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+      ]
+    ],
+    partitionMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+      ]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+      ]
+    ]
+  ): Filterable3[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = compact, filter = filter, filterMap = filterMap, map = map, partition = partition, partitionMap = partitionMap, separate = separate)
+  
+    __obj.asInstanceOf[Filterable3[F]]
+  }
+}
+

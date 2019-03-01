@@ -31,3 +31,24 @@ trait INDTransmitterProperties extends js.Object {
   var supportedFeatures: NDCertificateFeature
 }
 
+object INDTransmitterProperties {
+  @scala.inline
+  def apply(
+    certificateType: NDCertificateType,
+    clientID: scala.Double,
+    expirationDate: stdLib.Date,
+    modelDigest: scala.Double,
+    modelManufacturerName: java.lang.String,
+    modelName: java.lang.String,
+    modelNumber: java.lang.String,
+    platformIdentifier: NDCertificatePlatformID,
+    securityLevel: scala.Double,
+    securityVersion: scala.Double,
+    supportedFeatures: NDCertificateFeature
+  ): INDTransmitterProperties = {
+    val __obj = js.Dynamic.literal(certificateType = certificateType, clientID = clientID, expirationDate = expirationDate, modelDigest = modelDigest, modelManufacturerName = modelManufacturerName, modelName = modelName, modelNumber = modelNumber, platformIdentifier = platformIdentifier, securityLevel = securityLevel, securityVersion = securityVersion, supportedFeatures = supportedFeatures)
+  
+    __obj.asInstanceOf[INDTransmitterProperties]
+  }
+}
+

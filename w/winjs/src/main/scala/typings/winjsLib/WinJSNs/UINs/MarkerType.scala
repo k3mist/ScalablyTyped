@@ -14,3 +14,12 @@ trait MarkerType extends js.Object {
   var custom: java.lang.String
 }
 
+object MarkerType {
+  @scala.inline
+  def apply(advertisement: java.lang.String, chapter: java.lang.String, custom: java.lang.String): MarkerType = {
+    val __obj = js.Dynamic.literal(advertisement = advertisement, chapter = chapter, custom = custom)
+  
+    __obj.asInstanceOf[MarkerType]
+  }
+}
+

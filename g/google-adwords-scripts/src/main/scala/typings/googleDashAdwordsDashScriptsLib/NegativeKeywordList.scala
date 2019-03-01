@@ -15,3 +15,21 @@ trait NegativeKeywordList extends AdWordsEntity {
   def setName(): java.lang.String
 }
 
+object NegativeKeywordList {
+  @scala.inline
+  def apply(
+    addNegativeKeyword: js.Function1[java.lang.String, scala.Unit],
+    addNegativeKeywords: js.Function1[js.Array[java.lang.String], scala.Unit],
+    campaigns: js.Function0[AdWordsSelector[Campaign]],
+    getId: js.Function0[scala.Double],
+    getName: js.Function0[java.lang.String],
+    negativeKeywords: js.Function0[AdWordsSelector[SharedNegativeKeyword]],
+    setName: js.Function0[java.lang.String],
+    getEntityType: js.Function0[java.lang.String] = null
+  ): NegativeKeywordList = {
+    val __obj = js.Dynamic.literal(addNegativeKeyword = addNegativeKeyword, addNegativeKeywords = addNegativeKeywords, campaigns = campaigns, getId = getId, getName = getName, negativeKeywords = negativeKeywords, setName = setName)
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    __obj.asInstanceOf[NegativeKeywordList]
+  }
+}
+

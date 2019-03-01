@@ -11,3 +11,19 @@ trait ICustomNumber extends ICustomControl {
   var min: scala.Double
 }
 
+object ICustomNumber {
+  @scala.inline
+  def apply(
+    defaultValue: scala.Double,
+    label: java.lang.String,
+    max: scala.Double,
+    min: scala.Double,
+    ref: java.lang.String,
+    `type`: java.lang.String
+  ): ICustomNumber = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, label = label, max = max, min = min, ref = ref, `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomNumber]
+  }
+}
+

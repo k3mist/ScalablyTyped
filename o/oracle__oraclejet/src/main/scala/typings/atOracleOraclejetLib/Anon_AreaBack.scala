@@ -25,3 +25,30 @@ trait Anon_AreaBack extends js.Object {
   var value: scala.Double
 }
 
+object Anon_AreaBack {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    color: java.lang.String,
+    displayInLegend: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    high: scala.Double,
+    id: java.lang.String,
+    items: js.Array[Anon_High],
+    lineStyle: atOracleOraclejetLib.atOracleOraclejetLibStrings.dotted | atOracleOraclejetLib.atOracleOraclejetLibStrings.dashed | atOracleOraclejetLib.atOracleOraclejetLibStrings.solid,
+    lineType: atOracleOraclejetLib.atOracleOraclejetLibStrings.curved | atOracleOraclejetLib.atOracleOraclejetLibStrings.stepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredStepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.segmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredSegmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.straight,
+    lineWidth: scala.Double,
+    location: atOracleOraclejetLib.atOracleOraclejetLibStrings.front | atOracleOraclejetLib.atOracleOraclejetLibStrings.back,
+    low: scala.Double,
+    shortDesc: java.lang.String,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    text: java.lang.String,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.area | atOracleOraclejetLib.atOracleOraclejetLibStrings.line,
+    value: scala.Double
+  ): Anon_AreaBack = {
+    val __obj = js.Dynamic.literal(categories = categories, color = color, displayInLegend = displayInLegend.asInstanceOf[js.Any], high = high, id = id, items = items, lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth, location = location.asInstanceOf[js.Any], low = low, shortDesc = shortDesc, svgClassName = svgClassName, svgStyle = svgStyle, text = text, `type` = `type`.asInstanceOf[js.Any], value = value)
+  
+    __obj.asInstanceOf[Anon_AreaBack]
+  }
+}
+

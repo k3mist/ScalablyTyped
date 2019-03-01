@@ -14,3 +14,19 @@ trait PaginatedResult[T] extends js.Object {
   def next(results: paginatedResultCallback[T]): scala.Unit
 }
 
+object PaginatedResult {
+  @scala.inline
+  def apply[T](
+    current: js.Function1[paginatedResultCallback[T], scala.Unit],
+    first: js.Function1[paginatedResultCallback[T], scala.Unit],
+    hasNext: js.Function0[scala.Boolean],
+    isLast: js.Function0[scala.Boolean],
+    items: js.Array[T],
+    next: js.Function1[paginatedResultCallback[T], scala.Unit]
+  ): PaginatedResult[T] = {
+    val __obj = js.Dynamic.literal(current = current, first = first, hasNext = hasNext, isLast = isLast, items = items, next = next)
+  
+    __obj.asInstanceOf[PaginatedResult[T]]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Summary extends js.Object {
   var previous: scala.Double
 }
 
+object Summary {
+  @scala.inline
+  def apply(current: scala.Double, previous: scala.Double): Summary = {
+    val __obj = js.Dynamic.literal(current = current, previous = previous)
+  
+    __obj.asInstanceOf[Summary]
+  }
+}
+

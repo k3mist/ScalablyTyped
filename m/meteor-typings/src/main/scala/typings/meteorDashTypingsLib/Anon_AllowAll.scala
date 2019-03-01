@@ -11,3 +11,16 @@ trait Anon_AllowAll extends js.Object {
   def restrictToOrigin(origin: java.lang.String): scala.Unit
 }
 
+object Anon_AllowAll {
+  @scala.inline
+  def apply(
+    allowAll: js.Function0[scala.Unit],
+    disallow: js.Function0[scala.Unit],
+    restrictToOrigin: js.Function1[java.lang.String, scala.Unit]
+  ): Anon_AllowAll = {
+    val __obj = js.Dynamic.literal(allowAll = allowAll, disallow = disallow, restrictToOrigin = restrictToOrigin)
+  
+    __obj.asInstanceOf[Anon_AllowAll]
+  }
+}
+

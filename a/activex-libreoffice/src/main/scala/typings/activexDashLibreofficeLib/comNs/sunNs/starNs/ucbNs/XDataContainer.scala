@@ -62,3 +62,34 @@ trait XDataContainer
   def setDataURL(aURL: java.lang.String): scala.Unit
 }
 
+object XDataContainer {
+  @scala.inline
+  def apply(
+    ContentType: java.lang.String,
+    Count: scala.Double,
+    Data: activexDashInteropLib.SafeArray[scala.Double],
+    DataURL: java.lang.String,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getContentType: js.Function0[java.lang.String],
+    getCount: js.Function0[scala.Double],
+    getData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getDataURL: js.Function0[java.lang.String],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    insertByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByIndex: js.Function1[scala.Double, scala.Unit],
+    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
+    setContentType: js.Function1[java.lang.String, scala.Unit],
+    setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setDataURL: js.Function1[java.lang.String, scala.Unit]
+  ): XDataContainer = {
+    val __obj = js.Dynamic.literal(ContentType = ContentType, Count = Count, Data = Data, DataURL = DataURL, ElementType = ElementType, acquire = acquire, getByIndex = getByIndex, getContentType = getContentType, getCount = getCount, getData = getData, getDataURL = getDataURL, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, replaceByIndex = replaceByIndex, setContentType = setContentType, setData = setData, setDataURL = setDataURL)
+  
+    __obj.asInstanceOf[XDataContainer]
+  }
+}
+

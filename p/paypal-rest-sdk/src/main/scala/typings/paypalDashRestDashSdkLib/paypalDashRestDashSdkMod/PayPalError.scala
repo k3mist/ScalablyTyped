@@ -13,3 +13,18 @@ trait PayPalError extends js.Object {
   val name: java.lang.String
 }
 
+object PayPalError {
+  @scala.inline
+  def apply(
+    debug_id: java.lang.String,
+    details: js.Array[ErrorDetails],
+    information_link: java.lang.String,
+    message: java.lang.String,
+    name: java.lang.String
+  ): PayPalError = {
+    val __obj = js.Dynamic.literal(debug_id = debug_id, details = details, information_link = information_link, message = message, name = name)
+  
+    __obj.asInstanceOf[PayPalError]
+  }
+}
+

@@ -165,3 +165,53 @@ trait sizeCreateClassBreaksRendererParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object sizeCreateClassBreaksRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    basemap: java.lang.String | Basemap = null,
+    classificationMethod: java.lang.String = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    legendOptions: sizeCreateClassBreaksRendererParamsLegendOptions = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    normalizationTotal: scala.Int | scala.Double = null,
+    normalizationType: java.lang.String = null,
+    numClasses: scala.Int | scala.Double = null,
+    sizeScheme: SizeScheme = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    standardDeviationInterval: scala.Int | scala.Double = null,
+    symbolType: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    view: View = null
+  ): sizeCreateClassBreaksRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
+    if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType)
+    if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[sizeCreateClassBreaksRendererParams]
+  }
+}
+

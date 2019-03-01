@@ -10,3 +10,12 @@ trait Anon_DataStatusCode extends js.Object {
   var statusCode: scala.Double
 }
 
+object Anon_DataStatusCode {
+  @scala.inline
+  def apply(data: java.lang.String, statusCode: scala.Double): Anon_DataStatusCode = {
+    val __obj = js.Dynamic.literal(data = data, statusCode = statusCode)
+  
+    __obj.asInstanceOf[Anon_DataStatusCode]
+  }
+}
+

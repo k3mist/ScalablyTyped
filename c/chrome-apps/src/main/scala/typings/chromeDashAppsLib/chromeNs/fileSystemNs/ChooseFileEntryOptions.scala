@@ -18,3 +18,21 @@ import scala.scalajs.js.annotation._
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.openFile | chromeDashAppsLib.chromeDashAppsLibStrings.openWritableFile
 }
 
+object ChooseFileEntryOptions {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.openFile | chromeDashAppsLib.chromeDashAppsLibStrings.openWritableFile,
+    accepts: js.Array[AcceptOptions] = null,
+    acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    acceptsMultiple: chromeDashAppsLib.chromeDashAppsLibNumbers.`false` = null,
+    suggestedName: java.lang.String = null
+  ): ChooseFileEntryOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
+    if (acceptsMultiple != null) __obj.updateDynamic("acceptsMultiple")(acceptsMultiple)
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    __obj.asInstanceOf[ChooseFileEntryOptions]
+  }
+}
+

@@ -21,3 +21,18 @@ trait XShapeBinder
   def unbind(xShape: XShape): scala.Unit
 }
 
+object XShapeBinder {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    bind: js.Function1[XShapes, XShape],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unbind: js.Function1[XShape, scala.Unit]
+  ): XShapeBinder = {
+    val __obj = js.Dynamic.literal(acquire = acquire, bind = bind, queryInterface = queryInterface, release = release, unbind = unbind)
+  
+    __obj.asInstanceOf[XShapeBinder]
+  }
+}
+

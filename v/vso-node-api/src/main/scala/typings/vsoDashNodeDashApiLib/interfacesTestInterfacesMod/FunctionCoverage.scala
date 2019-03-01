@@ -13,3 +13,18 @@ trait FunctionCoverage extends js.Object {
   var statistics: CoverageStatistics
 }
 
+object FunctionCoverage {
+  @scala.inline
+  def apply(
+    `class`: java.lang.String,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    sourceFile: java.lang.String,
+    statistics: CoverageStatistics
+  ): FunctionCoverage = {
+    val __obj = js.Dynamic.literal(`class` = `class`, name = name, namespace = namespace, sourceFile = sourceFile, statistics = statistics)
+  
+    __obj.asInstanceOf[FunctionCoverage]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_LinkText
   var linkText: java.lang.String
 }
 
+object Anon_LinkText {
+  @scala.inline
+  def apply(linkText: java.lang.String): Anon_LinkText = {
+    val __obj = js.Dynamic.literal(linkText = linkText)
+  
+    __obj.asInstanceOf[Anon_LinkText]
+  }
+}
+

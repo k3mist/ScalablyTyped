@@ -67,3 +67,28 @@ trait LabelClassProperties extends js.Object {
   var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LabelClassProperties {
+  @scala.inline
+  def apply(
+    labelExpression: java.lang.String = null,
+    labelExpressionInfo: LabelClassLabelExpressionInfo = null,
+    labelPlacement: java.lang.String = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    symbol: TextSymbolProperties | LabelSymbol3DProperties = null,
+    useCodedValues: js.UndefOr[scala.Boolean] = js.undefined,
+    where: java.lang.String = null
+  ): LabelClassProperties = {
+    val __obj = js.Dynamic.literal()
+    if (labelExpression != null) __obj.updateDynamic("labelExpression")(labelExpression)
+    if (labelExpressionInfo != null) __obj.updateDynamic("labelExpressionInfo")(labelExpressionInfo)
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCodedValues)) __obj.updateDynamic("useCodedValues")(useCodedValues)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[LabelClassProperties]
+  }
+}
+

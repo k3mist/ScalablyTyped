@@ -195,3 +195,59 @@ trait IInvoice
   var webhooks_delivered_at: scala.Double
 }
 
+object IInvoice {
+  @scala.inline
+  def apply(
+    amount_due: scala.Double,
+    amount_paid: scala.Double,
+    amount_remaining: scala.Double,
+    application_fee: scala.Double,
+    attempt_count: scala.Double,
+    attempted: scala.Boolean,
+    billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice,
+    billing_reason: stripeLib.stripeLibStrings.subscription_cycle | stripeLib.stripeLibStrings.subscription_update | stripeLib.stripeLibStrings.subscription | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.upcoming,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    closed: scala.Boolean,
+    currency: java.lang.String,
+    customer: java.lang.String,
+    date: scala.Double,
+    description: java.lang.String,
+    forgiven: scala.Boolean,
+    id: java.lang.String,
+    lines: stripeLib.stripeMod.StripeNs.IList[IInvoiceLineItem],
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    next_payment_attempt: scala.Double,
+    number: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.invoice,
+    paid: scala.Boolean,
+    period_end: scala.Double,
+    period_start: scala.Double,
+    receipt_number: java.lang.String,
+    starting_balance: scala.Double,
+    statement_descriptor: java.lang.String,
+    subscription: java.lang.String | stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription,
+    subscription_proration_date: scala.Double,
+    subtotal: scala.Double,
+    total: scala.Double,
+    webhooks_delivered_at: scala.Double,
+    discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount = null,
+    due_date: scala.Int | scala.Double = null,
+    ending_balance: scala.Int | scala.Double = null,
+    hosted_invoice_url: java.lang.String = null,
+    invoice_pdf: java.lang.String = null,
+    tax: scala.Int | scala.Double = null,
+    tax_percent: scala.Int | scala.Double = null
+  ): IInvoice = {
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, `object` = `object`, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    if (discount != null) __obj.updateDynamic("discount")(discount)
+    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
+    if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])
+    if (hosted_invoice_url != null) __obj.updateDynamic("hosted_invoice_url")(hosted_invoice_url)
+    if (invoice_pdf != null) __obj.updateDynamic("invoice_pdf")(invoice_pdf)
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
+    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInvoice]
+  }
+}
+

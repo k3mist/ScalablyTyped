@@ -13,3 +13,16 @@ trait DeclarationList
   var type_DeclarationList: cssDashTreeLib.cssDashTreeLibStrings.DeclarationList
 }
 
+object DeclarationList {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.DeclarationList,
+    loc: CssLocation = null
+  ): DeclarationList = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[DeclarationList]
+  }
+}
+

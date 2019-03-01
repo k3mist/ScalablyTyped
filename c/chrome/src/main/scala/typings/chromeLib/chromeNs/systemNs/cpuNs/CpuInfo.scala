@@ -21,3 +21,18 @@ trait CpuInfo extends js.Object {
   var processors: js.Array[ProcessorInfo]
 }
 
+object CpuInfo {
+  @scala.inline
+  def apply(
+    archName: java.lang.String,
+    features: js.Array[java.lang.String],
+    modelName: java.lang.String,
+    numOfProcessors: scala.Double,
+    processors: js.Array[ProcessorInfo]
+  ): CpuInfo = {
+    val __obj = js.Dynamic.literal(archName = archName, features = features, modelName = modelName, numOfProcessors = numOfProcessors, processors = processors)
+  
+    __obj.asInstanceOf[CpuInfo]
+  }
+}
+

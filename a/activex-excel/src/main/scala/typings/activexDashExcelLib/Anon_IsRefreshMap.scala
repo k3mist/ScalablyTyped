@@ -11,3 +11,16 @@ trait Anon_IsRefreshMap extends js.Object {
   val Result: activexDashExcelLib.ExcelNs.XlXmlImportResult
 }
 
+object Anon_IsRefreshMap {
+  @scala.inline
+  def apply(
+    IsRefresh: scala.Boolean,
+    Map: activexDashExcelLib.ExcelNs.XmlMap,
+    Result: activexDashExcelLib.ExcelNs.XlXmlImportResult
+  ): Anon_IsRefreshMap = {
+    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh, Map = Map, Result = Result)
+  
+    __obj.asInstanceOf[Anon_IsRefreshMap]
+  }
+}
+

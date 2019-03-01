@@ -12,3 +12,12 @@ trait QueryError extends js.Object {
   var code: scala.Double
 }
 
+object QueryError {
+  @scala.inline
+  def apply(body: java.lang.String, code: scala.Double): QueryError = {
+    val __obj = js.Dynamic.literal(body = body, code = code)
+  
+    __obj.asInstanceOf[QueryError]
+  }
+}
+

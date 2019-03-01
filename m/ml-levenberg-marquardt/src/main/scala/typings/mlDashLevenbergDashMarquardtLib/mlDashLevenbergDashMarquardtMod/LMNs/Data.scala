@@ -13,3 +13,12 @@ trait Data extends js.Object {
   var y: js.Array[scala.Double]
 }
 
+object Data {
+  @scala.inline
+  def apply(x: js.Array[scala.Double], y: js.Array[scala.Double]): Data = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[Data]
+  }
+}
+

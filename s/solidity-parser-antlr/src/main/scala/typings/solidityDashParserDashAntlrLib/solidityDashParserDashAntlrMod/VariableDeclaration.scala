@@ -14,3 +14,19 @@ trait VariableDeclaration
   var visibility: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.public | solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.`private`
 }
 
+object VariableDeclaration {
+  @scala.inline
+  def apply(
+    isStateVar: scala.Boolean,
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.VariableDeclaration,
+    visibility: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.public | solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.`private`,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): VariableDeclaration = {
+    val __obj = js.Dynamic.literal(isStateVar = isStateVar, `type` = `type`, visibility = visibility.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[VariableDeclaration]
+  }
+}
+

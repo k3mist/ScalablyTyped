@@ -14,3 +14,19 @@ trait Anon_ADMIN extends js.Object {
   var WRITE: scala.Double
 }
 
+object Anon_ADMIN {
+  @scala.inline
+  def apply(
+    ADMIN: scala.Double,
+    ALL: scala.Double,
+    CREATE: scala.Double,
+    DELETE: scala.Double,
+    READ: scala.Double,
+    WRITE: scala.Double
+  ): Anon_ADMIN = {
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN, ALL = ALL, CREATE = CREATE, DELETE = DELETE, READ = READ, WRITE = WRITE)
+  
+    __obj.asInstanceOf[Anon_ADMIN]
+  }
+}
+

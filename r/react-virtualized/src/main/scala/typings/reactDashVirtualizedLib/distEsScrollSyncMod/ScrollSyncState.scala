@@ -14,3 +14,19 @@ trait ScrollSyncState extends js.Object {
   var scrollWidth: scala.Double
 }
 
+object ScrollSyncState {
+  @scala.inline
+  def apply(
+    clientHeight: scala.Double,
+    clientWidth: scala.Double,
+    scrollHeight: scala.Double,
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double,
+    scrollWidth: scala.Double
+  ): ScrollSyncState = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+  
+    __obj.asInstanceOf[ScrollSyncState]
+  }
+}
+

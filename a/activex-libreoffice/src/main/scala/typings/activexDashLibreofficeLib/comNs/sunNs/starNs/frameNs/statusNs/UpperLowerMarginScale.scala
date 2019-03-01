@@ -20,3 +20,12 @@ trait UpperLowerMarginScale extends js.Object {
   var Upper: scala.Double
 }
 
+object UpperLowerMarginScale {
+  @scala.inline
+  def apply(Lower: scala.Double, ScaleLower: scala.Double, ScaleUpper: scala.Double, Upper: scala.Double): UpperLowerMarginScale = {
+    val __obj = js.Dynamic.literal(Lower = Lower, ScaleLower = ScaleLower, ScaleUpper = ScaleUpper, Upper = Upper)
+  
+    __obj.asInstanceOf[UpperLowerMarginScale]
+  }
+}
+

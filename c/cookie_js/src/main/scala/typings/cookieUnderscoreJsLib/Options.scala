@@ -12,3 +12,17 @@ trait Options extends js.Object {
   var secure: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    expires: scala.Double | java.lang.String | stdLib.Date,
+    path: java.lang.String,
+    secure: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal(domain = domain, expires = expires.asInstanceOf[js.Any], path = path, secure = secure)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

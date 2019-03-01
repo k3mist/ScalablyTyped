@@ -24,3 +24,17 @@ trait NdefRecord extends js.Object {
   var `type`: js.Array[scala.Double]
 }
 
+object NdefRecord {
+  @scala.inline
+  def apply(
+    id: js.Array[scala.Double],
+    payload: js.Array[scala.Double],
+    tnf: scala.Double,
+    `type`: js.Array[scala.Double]
+  ): NdefRecord = {
+    val __obj = js.Dynamic.literal(id = id, payload = payload, tnf = tnf, `type` = `type`)
+  
+    __obj.asInstanceOf[NdefRecord]
+  }
+}
+

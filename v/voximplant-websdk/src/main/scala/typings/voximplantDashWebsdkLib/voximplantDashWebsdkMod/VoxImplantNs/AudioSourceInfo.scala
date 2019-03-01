@@ -19,3 +19,12 @@ trait AudioSourceInfo extends js.Object {
   var name: java.lang.String
 }
 
+object AudioSourceInfo {
+  @scala.inline
+  def apply(id: scala.Double | java.lang.String, name: java.lang.String): AudioSourceInfo = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name)
+  
+    __obj.asInstanceOf[AudioSourceInfo]
+  }
+}
+

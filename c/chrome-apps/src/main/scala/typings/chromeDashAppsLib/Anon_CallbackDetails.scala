@@ -35,3 +35,28 @@ trait Anon_CallbackDetails extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackDetails {
+  @scala.inline
+  def apply(
+    onExecute: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* id */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId, 
+        /* details */ Anon_Entries, 
+        scala.Unit
+      ]
+    ],
+    selectFile: js.Function2[
+      chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectFileParameters, 
+      js.Function1[
+        /* result */ chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.SelectionResult, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_CallbackDetails = {
+    val __obj = js.Dynamic.literal(onExecute = onExecute, selectFile = selectFile)
+  
+    __obj.asInstanceOf[Anon_CallbackDetails]
+  }
+}
+

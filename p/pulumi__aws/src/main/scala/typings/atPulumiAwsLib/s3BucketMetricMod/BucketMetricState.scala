@@ -20,3 +20,18 @@ trait BucketMetricState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object BucketMetricState {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    filter: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyPrefixTags] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): BucketMetricState = {
+    val __obj = js.Dynamic.literal()
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketMetricState]
+  }
+}
+

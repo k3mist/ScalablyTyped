@@ -15,3 +15,20 @@ trait Anon_Arpa extends js.Object {
   var mrr: scala.Double
 }
 
+object Anon_Arpa {
+  @scala.inline
+  def apply(
+    arpa: scala.Double,
+    arr: scala.Double,
+    asp: scala.Double,
+    customers: scala.Double,
+    date: java.lang.String,
+    ltv: scala.Double,
+    mrr: scala.Double
+  ): Anon_Arpa = {
+    val __obj = js.Dynamic.literal(arpa = arpa, arr = arr, asp = asp, customers = customers, date = date, ltv = ltv, mrr = mrr)
+  
+    __obj.asInstanceOf[Anon_Arpa]
+  }
+}
+

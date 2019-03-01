@@ -28,3 +28,13 @@ trait NavigationToggleViewModelProperties extends js.Object {
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 
+object NavigationToggleViewModelProperties {
+  @scala.inline
+  def apply(navigationMode: java.lang.String = null, view: SceneViewProperties = null): NavigationToggleViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (navigationMode != null) __obj.updateDynamic("navigationMode")(navigationMode)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[NavigationToggleViewModelProperties]
+  }
+}
+

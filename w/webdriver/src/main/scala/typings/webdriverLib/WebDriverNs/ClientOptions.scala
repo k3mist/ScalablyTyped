@@ -14,3 +14,19 @@ trait ClientOptions extends js.Object {
   var sessionId: java.lang.String
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    capabilities: DesiredCapabilities,
+    isAndroid: scala.Boolean,
+    isIOS: scala.Boolean,
+    isMobile: scala.Boolean,
+    isW3C: scala.Boolean,
+    sessionId: java.lang.String
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal(capabilities = capabilities, isAndroid = isAndroid, isIOS = isIOS, isMobile = isMobile, isW3C = isW3C, sessionId = sessionId)
+  
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

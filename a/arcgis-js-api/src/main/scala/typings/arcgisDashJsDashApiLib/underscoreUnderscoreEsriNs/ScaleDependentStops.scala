@@ -39,3 +39,22 @@ trait ScaleDependentStops
   var valueExpression: java.lang.String
 }
 
+object ScaleDependentStops {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stops: js.Array[SizeStop],
+    `type`: java.lang.String,
+    valueExpression: java.lang.String,
+    expression: java.lang.String = null,
+    target: java.lang.String = null
+  ): ScaleDependentStops = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, stops = stops, `type` = `type`, valueExpression = valueExpression)
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ScaleDependentStops]
+  }
+}
+

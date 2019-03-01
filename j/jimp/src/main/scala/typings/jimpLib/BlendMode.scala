@@ -11,3 +11,12 @@ trait BlendMode extends js.Object {
   var opacitySource: scala.Double
 }
 
+object BlendMode {
+  @scala.inline
+  def apply(mode: java.lang.String, opacityDest: scala.Double, opacitySource: scala.Double): BlendMode = {
+    val __obj = js.Dynamic.literal(mode = mode, opacityDest = opacityDest, opacitySource = opacitySource)
+  
+    __obj.asInstanceOf[BlendMode]
+  }
+}
+

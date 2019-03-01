@@ -20,3 +20,21 @@ trait GitChange extends Change[GitItem] {
   var originalPath: java.lang.String
 }
 
+object GitChange {
+  @scala.inline
+  def apply(
+    changeId: scala.Double,
+    changeType: VersionControlChangeType,
+    item: GitItem,
+    newContent: ItemContent,
+    newContentTemplate: GitTemplate,
+    originalPath: java.lang.String,
+    sourceServerItem: java.lang.String,
+    url: java.lang.String
+  ): GitChange = {
+    val __obj = js.Dynamic.literal(changeId = changeId, changeType = changeType, item = item, newContent = newContent, newContentTemplate = newContentTemplate, originalPath = originalPath, sourceServerItem = sourceServerItem, url = url)
+  
+    __obj.asInstanceOf[GitChange]
+  }
+}
+

@@ -21,3 +21,17 @@ trait SecurityConfigurationArgs extends js.Object {
   val namePrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object SecurityConfigurationArgs {
+  @scala.inline
+  def apply(
+    configuration: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): SecurityConfigurationArgs = {
+    val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecurityConfigurationArgs]
+  }
+}
+

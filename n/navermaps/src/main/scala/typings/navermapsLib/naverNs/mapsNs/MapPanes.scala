@@ -11,3 +11,12 @@ trait MapPanes extends js.Object {
   var overlayLayer: stdLib.HTMLElement
 }
 
+object MapPanes {
+  @scala.inline
+  def apply(floatPane: stdLib.HTMLElement, overlayImage: stdLib.HTMLElement, overlayLayer: stdLib.HTMLElement): MapPanes = {
+    val __obj = js.Dynamic.literal(floatPane = floatPane, overlayImage = overlayImage, overlayLayer = overlayLayer)
+  
+    __obj.asInstanceOf[MapPanes]
+  }
+}
+

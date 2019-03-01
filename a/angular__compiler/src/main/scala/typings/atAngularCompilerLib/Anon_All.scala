@@ -14,3 +14,23 @@ trait Anon_All extends js.Object {
   ): atAngularCompilerLib.srcUtilMod.SyncAsync[R]
 }
 
+object Anon_All {
+  @scala.inline
+  def apply(
+    all: js.Function1[
+      js.Array[atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]], 
+      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Array[js.Any]]
+    ],
+    assertSync: js.Function1[atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any], js.Any],
+    `then`: js.Function2[
+      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any], 
+      js.Function1[js.Any, atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]], 
+      atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]
+    ]
+  ): Anon_All = {
+    val __obj = js.Dynamic.literal(all = all, assertSync = assertSync, `then` = `then`)
+  
+    __obj.asInstanceOf[Anon_All]
+  }
+}
+

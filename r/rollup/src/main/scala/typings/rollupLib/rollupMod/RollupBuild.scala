@@ -13,3 +13,18 @@ trait RollupBuild extends js.Object {
   def write(options: OutputOptions): js.Promise[RollupOutput]
 }
 
+object RollupBuild {
+  @scala.inline
+  def apply(
+    cache: RollupCache,
+    generate: js.Function1[OutputOptions, js.Promise[RollupOutput]],
+    watchFiles: js.Array[java.lang.String],
+    write: js.Function1[OutputOptions, js.Promise[RollupOutput]],
+    getTimings: js.Function0[SerializedTimings] = null
+  ): RollupBuild = {
+    val __obj = js.Dynamic.literal(cache = cache, generate = generate, watchFiles = watchFiles, write = write)
+    if (getTimings != null) __obj.updateDynamic("getTimings")(getTimings)
+    __obj.asInstanceOf[RollupBuild]
+  }
+}
+

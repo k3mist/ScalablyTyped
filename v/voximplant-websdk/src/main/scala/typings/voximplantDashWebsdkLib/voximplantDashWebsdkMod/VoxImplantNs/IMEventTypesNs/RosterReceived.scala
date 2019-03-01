@@ -20,3 +20,15 @@ trait RosterReceived
   var roster: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItem]
 }
 
+object RosterReceived {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    roster: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItem]
+  ): RosterReceived = {
+    val __obj = js.Dynamic.literal(id = id, roster = roster)
+  
+    __obj.asInstanceOf[RosterReceived]
+  }
+}
+

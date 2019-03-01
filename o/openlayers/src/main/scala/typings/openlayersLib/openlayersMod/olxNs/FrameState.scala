@@ -11,3 +11,12 @@ trait FrameState extends js.Object {
   var viewState: ViewState
 }
 
+object FrameState {
+  @scala.inline
+  def apply(pixelRatio: scala.Double, time: scala.Double, viewState: ViewState): FrameState = {
+    val __obj = js.Dynamic.literal(pixelRatio = pixelRatio, time = time, viewState = viewState)
+  
+    __obj.asInstanceOf[FrameState]
+  }
+}
+

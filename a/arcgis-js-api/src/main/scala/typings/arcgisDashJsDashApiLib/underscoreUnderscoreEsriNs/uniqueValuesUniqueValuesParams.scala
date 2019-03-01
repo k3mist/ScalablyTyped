@@ -57,3 +57,30 @@ trait uniqueValuesUniqueValuesParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object uniqueValuesUniqueValuesParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    features: js.Array[Graphic] = null,
+    field: java.lang.String = null,
+    returnAllCodedValues: js.UndefOr[scala.Boolean] = js.undefined,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    view: View = null
+  ): uniqueValuesUniqueValuesParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[uniqueValuesUniqueValuesParams]
+  }
+}
+

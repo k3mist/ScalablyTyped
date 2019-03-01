@@ -12,3 +12,12 @@ trait Host extends js.Object {
   var status: java.lang.String
 }
 
+object Host {
+  @scala.inline
+  def apply(id: java.lang.String, ip: java.lang.String, port: scala.Double, status: java.lang.String): Host = {
+    val __obj = js.Dynamic.literal(id = id, ip = ip, port = port, status = status)
+  
+    __obj.asInstanceOf[Host]
+  }
+}
+

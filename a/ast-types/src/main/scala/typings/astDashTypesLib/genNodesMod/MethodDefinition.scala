@@ -21,3 +21,20 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.FunctionKind
 }
 
+object MethodDefinition {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    kind: astDashTypesLib.astDashTypesLibStrings.constructor | astDashTypesLib.astDashTypesLibStrings.method | astDashTypesLib.astDashTypesLibStrings.get | astDashTypesLib.astDashTypesLibStrings.set,
+    static: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.MethodDefinition,
+    value: astDashTypesLib.genKindsMod.FunctionKind,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
+  ): MethodDefinition = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key, kind = kind.asInstanceOf[js.Any], static = static, `type` = `type`, value = value)
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    __obj.asInstanceOf[MethodDefinition]
+  }
+}
+

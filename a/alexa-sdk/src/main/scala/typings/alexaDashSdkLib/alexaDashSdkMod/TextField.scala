@@ -10,3 +10,12 @@ trait TextField extends js.Object {
   var `type`: java.lang.String
 }
 
+object TextField {
+  @scala.inline
+  def apply(text: java.lang.String, `type`: java.lang.String): TextField = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[TextField]
+  }
+}
+

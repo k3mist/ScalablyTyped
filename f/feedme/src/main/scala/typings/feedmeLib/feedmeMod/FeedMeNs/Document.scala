@@ -9,3 +9,29 @@ trait Document extends Meta {
   var items: js.Array[Item]
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    categories: js.Array[java.lang.String],
+    copyright: java.lang.String,
+    date: java.lang.String,
+    description: java.lang.String,
+    favicon: java.lang.String,
+    generator: java.lang.String,
+    image: Image,
+    items: js.Array[Item],
+    language: java.lang.String,
+    lastbuilddate: java.lang.String,
+    link: java.lang.String,
+    pubdate: java.lang.String,
+    title: java.lang.String,
+    `type`: Type,
+    xmlurl: java.lang.String
+  ): Document = {
+    val __obj = js.Dynamic.literal(author = author, categories = categories, copyright = copyright, date = date, description = description, favicon = favicon, generator = generator, image = image, items = items, language = language, lastbuilddate = lastbuilddate, link = link, pubdate = pubdate, title = title, `type` = `type`, xmlurl = xmlurl)
+  
+    __obj.asInstanceOf[Document]
+  }
+}
+

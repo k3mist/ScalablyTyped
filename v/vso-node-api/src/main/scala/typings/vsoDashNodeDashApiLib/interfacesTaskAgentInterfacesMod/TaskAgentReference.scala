@@ -29,3 +29,19 @@ trait TaskAgentReference extends js.Object {
   var version: java.lang.String
 }
 
+object TaskAgentReference {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    enabled: scala.Boolean,
+    id: scala.Double,
+    name: java.lang.String,
+    status: TaskAgentStatus,
+    version: java.lang.String
+  ): TaskAgentReference = {
+    val __obj = js.Dynamic.literal(_links = _links, enabled = enabled, id = id, name = name, status = status, version = version)
+  
+    __obj.asInstanceOf[TaskAgentReference]
+  }
+}
+

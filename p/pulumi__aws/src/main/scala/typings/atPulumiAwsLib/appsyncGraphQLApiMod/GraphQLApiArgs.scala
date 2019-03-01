@@ -32,3 +32,21 @@ trait GraphQLApiArgs extends js.Object {
   ] = js.undefined
 }
 
+object GraphQLApiArgs {
+  @scala.inline
+  def apply(
+    authenticationType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    logConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogsRoleArnFieldLogLevel] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    openidConnectConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthTtlClientId] = null,
+    userPoolConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AppIdClientRegexAwsRegion] = null
+  ): GraphQLApiArgs = {
+    val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any])
+    if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (openidConnectConfig != null) __obj.updateDynamic("openidConnectConfig")(openidConnectConfig.asInstanceOf[js.Any])
+    if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLApiArgs]
+  }
+}
+

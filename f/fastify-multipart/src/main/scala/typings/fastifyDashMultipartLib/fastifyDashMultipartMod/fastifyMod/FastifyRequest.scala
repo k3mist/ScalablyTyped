@@ -13,3 +13,19 @@ trait FastifyRequest[HttpRequest] extends js.Object {
   ): busboyLib.busboyNs.Busboy
 }
 
+object FastifyRequest {
+  @scala.inline
+  def apply[HttpRequest](
+    isMultipart: js.Function0[scala.Boolean],
+    multipart: js.Function2[
+      fastifyDashMultipartLib.MultipartHandler, 
+      js.Function1[/* err */ nodeLib.Error, scala.Unit], 
+      busboyLib.busboyNs.Busboy
+    ]
+  ): FastifyRequest[HttpRequest] = {
+    val __obj = js.Dynamic.literal(isMultipart = isMultipart, multipart = multipart)
+  
+    __obj.asInstanceOf[FastifyRequest[HttpRequest]]
+  }
+}
+

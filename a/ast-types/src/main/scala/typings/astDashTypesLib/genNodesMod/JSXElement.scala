@@ -25,3 +25,24 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXElement
 }
 
+object JSXElement {
+  @scala.inline
+  def apply(
+    attributes: js.Array[
+      astDashTypesLib.genKindsMod.JSXAttributeKind | astDashTypesLib.genKindsMod.JSXSpreadAttributeKind
+    ],
+    children: js.Array[
+      astDashTypesLib.genKindsMod.JSXElementKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind | astDashTypesLib.genKindsMod.JSXFragmentKind | astDashTypesLib.genKindsMod.JSXTextKind | astDashTypesLib.genKindsMod.LiteralKind
+    ],
+    name: astDashTypesLib.genKindsMod.JSXIdentifierKind | astDashTypesLib.genKindsMod.JSXNamespacedNameKind | astDashTypesLib.genKindsMod.JSXMemberExpressionKind,
+    openingElement: astDashTypesLib.genKindsMod.JSXOpeningElementKind,
+    selfClosing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXElement,
+    closingElement: astDashTypesLib.genKindsMod.JSXClosingElementKind = null
+  ): JSXElement = {
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name.asInstanceOf[js.Any], openingElement = openingElement, selfClosing = selfClosing, `type` = `type`)
+    if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement)
+    __obj.asInstanceOf[JSXElement]
+  }
+}
+

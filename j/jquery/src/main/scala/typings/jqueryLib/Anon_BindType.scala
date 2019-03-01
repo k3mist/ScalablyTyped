@@ -14,3 +14,12 @@ trait Anon_BindType
   var bindType: java.lang.String
 }
 
+object Anon_BindType {
+  @scala.inline
+  def apply(bindType: java.lang.String): Anon_BindType = {
+    val __obj = js.Dynamic.literal(bindType = bindType)
+  
+    __obj.asInstanceOf[Anon_BindType]
+  }
+}
+

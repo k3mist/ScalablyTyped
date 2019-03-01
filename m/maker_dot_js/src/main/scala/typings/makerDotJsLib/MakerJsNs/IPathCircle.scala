@@ -21,3 +21,12 @@ trait IPathCircle extends IPath {
   var radius: scala.Double
 }
 
+object IPathCircle {
+  @scala.inline
+  def apply(origin: IPoint, radius: scala.Double, `type`: java.lang.String, layer: java.lang.String = null): IPathCircle = {
+    val __obj = js.Dynamic.literal(origin = origin, radius = radius, `type` = `type`)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    __obj.asInstanceOf[IPathCircle]
+  }
+}
+

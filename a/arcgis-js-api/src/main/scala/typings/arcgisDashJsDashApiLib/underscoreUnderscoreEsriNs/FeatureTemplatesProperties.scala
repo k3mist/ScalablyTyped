@@ -51,3 +51,28 @@ trait FeatureTemplatesProperties extends WidgetProperties {
   var viewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.undefined
 }
 
+object FeatureTemplatesProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    filterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    filterFunction: FilterFunction = null,
+    groupBy: java.lang.String | GroupByFunction = null,
+    id: java.lang.String = null,
+    layers: js.Array[FeatureLayerProperties] = null,
+    viewModel: FeatureTemplatesViewModelProperties = null
+  ): FeatureTemplatesProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled)
+    if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction)
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[FeatureTemplatesProperties]
+  }
+}
+

@@ -55,3 +55,29 @@ trait decoratorsPropertyPropertyMetadata
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object decoratorsPropertyPropertyMetadata {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    aliasOf: java.lang.String = null,
+    cast: js.Function = null,
+    constructOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    dependsOn: js.Array[java.lang.String] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.Function = null,
+    value: js.Any = null
+  ): decoratorsPropertyPropertyMetadata = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf)
+    if (cast != null) __obj.updateDynamic("cast")(cast)
+    if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly)
+    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_AllFailed extends js.Object {
   var undefined: scala.Double
 }
 
+object Anon_AllFailed {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    failed: scala.Double,
+    inProgress: scala.Double,
+    notDeployed: scala.Double,
+    partiallySucceeded: scala.Double,
+    succeeded: scala.Double,
+    undefined: scala.Double
+  ): Anon_AllFailed = {
+    val __obj = js.Dynamic.literal(all = all, failed = failed, inProgress = inProgress, notDeployed = notDeployed, partiallySucceeded = partiallySucceeded, succeeded = succeeded, undefined = undefined)
+  
+    __obj.asInstanceOf[Anon_AllFailed]
+  }
+}
+

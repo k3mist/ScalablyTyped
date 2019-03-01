@@ -12,3 +12,12 @@ trait PageOption extends js.Object {
   var y: scala.Double
 }
 
+object PageOption {
+  @scala.inline
+  def apply(pageX: scala.Double, pageY: scala.Double, x: scala.Double, y: scala.Double): PageOption = {
+    val __obj = js.Dynamic.literal(pageX = pageX, pageY = pageY, x = x, y = y)
+  
+    __obj.asInstanceOf[PageOption]
+  }
+}
+

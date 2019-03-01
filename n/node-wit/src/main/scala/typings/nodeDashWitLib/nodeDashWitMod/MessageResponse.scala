@@ -11,3 +11,12 @@ trait MessageResponse extends js.Object {
   var msg_id: java.lang.String
 }
 
+object MessageResponse {
+  @scala.inline
+  def apply(_text: java.lang.String, entities: js.Any, msg_id: java.lang.String): MessageResponse = {
+    val __obj = js.Dynamic.literal(_text = _text, entities = entities, msg_id = msg_id)
+  
+    __obj.asInstanceOf[MessageResponse]
+  }
+}
+

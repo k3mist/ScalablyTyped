@@ -10,3 +10,12 @@ trait Anon_Index extends js.Object {
   var length: scala.Double
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(index: scala.Double, length: scala.Double): Anon_Index = {
+    val __obj = js.Dynamic.literal(index = index, length = length)
+  
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

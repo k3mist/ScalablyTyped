@@ -14,3 +14,19 @@ trait Storage extends js.Object {
   def set(key: java.lang.String, value: js.Any): js.Any
 }
 
+object Storage {
+  @scala.inline
+  def apply(
+    defaults: js.Function1[js.Object, js.Object],
+    delete: js.Function1[java.lang.String, scala.Unit],
+    get: js.Function1[java.lang.String, js.Any],
+    getAll: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]],
+    save: js.Function0[scala.Unit],
+    set: js.Function2[java.lang.String, js.Any, js.Any]
+  ): Storage = {
+    val __obj = js.Dynamic.literal(defaults = defaults, delete = delete, get = get, getAll = getAll, save = save, set = set)
+  
+    __obj.asInstanceOf[Storage]
+  }
+}
+

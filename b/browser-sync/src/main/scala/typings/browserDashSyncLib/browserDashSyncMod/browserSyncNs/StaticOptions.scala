@@ -10,3 +10,15 @@ trait StaticOptions extends js.Object {
   var route: java.lang.String | js.Array[java.lang.String]
 }
 
+object StaticOptions {
+  @scala.inline
+  def apply(
+    dir: java.lang.String | js.Array[java.lang.String],
+    route: java.lang.String | js.Array[java.lang.String]
+  ): StaticOptions = {
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StaticOptions]
+  }
+}
+

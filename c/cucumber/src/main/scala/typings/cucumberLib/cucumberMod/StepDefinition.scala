@@ -13,3 +13,12 @@ trait StepDefinition extends js.Object {
   var uri: java.lang.String
 }
 
+object StepDefinition {
+  @scala.inline
+  def apply(code: js.Function, line: scala.Double, pattern: js.Any, uri: java.lang.String): StepDefinition = {
+    val __obj = js.Dynamic.literal(code = code, line = line, pattern = pattern, uri = uri)
+  
+    __obj.asInstanceOf[StepDefinition]
+  }
+}
+

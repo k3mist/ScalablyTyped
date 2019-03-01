@@ -10,3 +10,12 @@ trait Anon_DeviceName extends js.Object {
   var virtualName: java.lang.String
 }
 
+object Anon_DeviceName {
+  @scala.inline
+  def apply(deviceName: java.lang.String, virtualName: java.lang.String): Anon_DeviceName = {
+    val __obj = js.Dynamic.literal(deviceName = deviceName, virtualName = virtualName)
+  
+    __obj.asInstanceOf[Anon_DeviceName]
+  }
+}
+

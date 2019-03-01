@@ -34,3 +34,27 @@ trait StripePaymentOptions extends UpdateOptions {
   var requestShipping: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StripePaymentOptions {
+  @scala.inline
+  def apply(
+    country: java.lang.String,
+    currency: java.lang.String,
+    total: PaymentItem,
+    displayItems: js.Array[PaymentItem] = null,
+    requestPayerEmail: js.UndefOr[scala.Boolean] = js.undefined,
+    requestPayerName: js.UndefOr[scala.Boolean] = js.undefined,
+    requestPayerPhone: js.UndefOr[scala.Boolean] = js.undefined,
+    requestShipping: js.UndefOr[scala.Boolean] = js.undefined,
+    shippingOptions: js.Array[stripejsLib.shippingMod.ShippingOption] = null
+  ): StripePaymentOptions = {
+    val __obj = js.Dynamic.literal(country = country, currency = currency, total = total)
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
+    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail)
+    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName)
+    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone)
+    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping)
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
+    __obj.asInstanceOf[StripePaymentOptions]
+  }
+}
+

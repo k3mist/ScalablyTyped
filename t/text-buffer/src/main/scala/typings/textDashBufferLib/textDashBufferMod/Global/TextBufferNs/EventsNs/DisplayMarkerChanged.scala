@@ -47,3 +47,28 @@ trait DisplayMarkerChanged extends js.Object {
   var wasValid: scala.Boolean
 }
 
+object DisplayMarkerChanged {
+  @scala.inline
+  def apply(
+    hadTail: scala.Boolean,
+    hasTail: scala.Boolean,
+    isValid: scala.Boolean,
+    newHeadBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newHeadScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newProperties: js.Object,
+    newTailBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newTailScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldHeadBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldHeadScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldProperties: js.Object,
+    oldTailBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldTailScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    textChanged: scala.Boolean,
+    wasValid: scala.Boolean
+  ): DisplayMarkerChanged = {
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadBufferPosition = newHeadBufferPosition, newHeadScreenPosition = newHeadScreenPosition, newProperties = newProperties, newTailBufferPosition = newTailBufferPosition, newTailScreenPosition = newTailScreenPosition, oldHeadBufferPosition = oldHeadBufferPosition, oldHeadScreenPosition = oldHeadScreenPosition, oldProperties = oldProperties, oldTailBufferPosition = oldTailBufferPosition, oldTailScreenPosition = oldTailScreenPosition, textChanged = textChanged, wasValid = wasValid)
+  
+    __obj.asInstanceOf[DisplayMarkerChanged]
+  }
+}
+

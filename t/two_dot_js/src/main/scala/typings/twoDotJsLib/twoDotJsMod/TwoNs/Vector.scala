@@ -31,3 +31,37 @@ trait Vector extends js.Object {
   def subSelf(v: Vector): this.type
 }
 
+object Vector {
+  @scala.inline
+  def apply(
+    add: js.Function2[Vector, Vector, Vector],
+    addSelf: js.Function1[Vector, Vector],
+    clear: js.Function0[Vector],
+    clone: js.Function0[Vector],
+    copy: js.Function1[Vector, Vector],
+    distanceSquared: js.Function1[Vector, scala.Double],
+    distanceTo: js.Function1[Vector, scala.Double],
+    divideScalar: js.Function1[scala.Double, Vector],
+    dot: js.Function1[Vector, scala.Double],
+    equals: js.Function1[Vector, scala.Boolean],
+    isZero: js.Function0[scala.Boolean],
+    length: js.Function0[scala.Double],
+    lengthSquared: js.Function0[scala.Double],
+    lerp: js.Function2[Vector, scala.Double, Vector],
+    multiplyScalar: js.Function1[scala.Double, Vector],
+    multiplySelf: js.Function1[Vector, Vector],
+    negate: js.Function0[Vector],
+    normalize: js.Function0[Vector],
+    set: js.Function2[scala.Double, scala.Double, Vector],
+    setLength: js.Function1[scala.Double, Vector],
+    sub: js.Function2[Vector, Vector, Vector],
+    subSelf: js.Function1[Vector, Vector],
+    x: scala.Double,
+    y: scala.Double
+  ): Vector = {
+    val __obj = js.Dynamic.literal(add = add, addSelf = addSelf, clear = clear, clone = clone, copy = copy, distanceSquared = distanceSquared, distanceTo = distanceTo, divideScalar = divideScalar, dot = dot, equals = equals, isZero = isZero, length = length, lengthSquared = lengthSquared, lerp = lerp, multiplyScalar = multiplyScalar, multiplySelf = multiplySelf, negate = negate, normalize = normalize, set = set, setLength = setLength, sub = sub, subSelf = subSelf, x = x, y = y)
+  
+    __obj.asInstanceOf[Vector]
+  }
+}
+

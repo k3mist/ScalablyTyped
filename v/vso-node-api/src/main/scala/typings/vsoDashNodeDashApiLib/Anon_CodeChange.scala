@@ -12,3 +12,12 @@ trait Anon_CodeChange extends js.Object {
   var unknown: scala.Double
 }
 
+object Anon_CodeChange {
+  @scala.inline
+  def apply(codeChange: scala.Double, system: scala.Double, text: scala.Double, unknown: scala.Double): Anon_CodeChange = {
+    val __obj = js.Dynamic.literal(codeChange = codeChange, system = system, text = text, unknown = unknown)
+  
+    __obj.asInstanceOf[Anon_CodeChange]
+  }
+}
+

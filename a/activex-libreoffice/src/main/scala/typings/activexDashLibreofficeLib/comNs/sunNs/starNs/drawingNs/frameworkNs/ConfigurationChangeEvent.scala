@@ -31,3 +31,19 @@ trait ConfigurationChangeEvent
   var UserData: js.Any
 }
 
+object ConfigurationChangeEvent {
+  @scala.inline
+  def apply(
+    Configuration: XConfiguration,
+    ResourceId: XResourceId,
+    ResourceObject: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Type: java.lang.String,
+    UserData: js.Any
+  ): ConfigurationChangeEvent = {
+    val __obj = js.Dynamic.literal(Configuration = Configuration, ResourceId = ResourceId, ResourceObject = ResourceObject, Source = Source, Type = Type, UserData = UserData)
+  
+    __obj.asInstanceOf[ConfigurationChangeEvent]
+  }
+}
+

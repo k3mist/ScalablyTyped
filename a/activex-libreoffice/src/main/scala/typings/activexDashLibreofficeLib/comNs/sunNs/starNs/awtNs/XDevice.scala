@@ -44,3 +44,25 @@ trait XDevice
   def getInfo(): DeviceInfo
 }
 
+object XDevice {
+  @scala.inline
+  def apply(
+    FontDescriptors: activexDashInteropLib.SafeArray[FontDescriptor],
+    Info: DeviceInfo,
+    acquire: js.Function0[scala.Unit],
+    createBitmap: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XBitmap],
+    createDevice: js.Function2[scala.Double, scala.Double, XDevice],
+    createDisplayBitmap: js.Function1[XBitmap, XDisplayBitmap],
+    createGraphics: js.Function0[XGraphics],
+    getFont: js.Function1[FontDescriptor, XFont],
+    getFontDescriptors: js.Function0[activexDashInteropLib.SafeArray[FontDescriptor]],
+    getInfo: js.Function0[DeviceInfo],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDevice = {
+    val __obj = js.Dynamic.literal(FontDescriptors = FontDescriptors, Info = Info, acquire = acquire, createBitmap = createBitmap, createDevice = createDevice, createDisplayBitmap = createDisplayBitmap, createGraphics = createGraphics, getFont = getFont, getFontDescriptors = getFontDescriptors, getInfo = getInfo, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDevice]
+  }
+}
+

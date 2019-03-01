@@ -38,3 +38,22 @@ trait EndpointArgs extends js.Object {
   val transportProtocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object EndpointArgs {
+  @scala.inline
+  def apply(
+    authenticationOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActiveDirectoryIdRootCertificateChainArn],
+    clientCidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    connectionLogOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupCloudwatchLogStream],
+    serverCertificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    transportProtocol: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): EndpointArgs = {
+    val __obj = js.Dynamic.literal(authenticationOptions = authenticationOptions.asInstanceOf[js.Any], clientCidrBlock = clientCidrBlock.asInstanceOf[js.Any], connectionLogOptions = connectionLogOptions.asInstanceOf[js.Any], serverCertificateArn = serverCertificateArn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
+    if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EndpointArgs]
+  }
+}
+

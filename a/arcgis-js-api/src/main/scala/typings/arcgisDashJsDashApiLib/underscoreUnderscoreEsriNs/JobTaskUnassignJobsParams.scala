@@ -21,3 +21,18 @@ trait JobTaskUnassignJobsParams
   var user: java.lang.String
 }
 
+object JobTaskUnassignJobsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobIds: js.Array[scala.Double],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskUnassignJobsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobIds = jobIds, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskUnassignJobsParams]
+  }
+}
+

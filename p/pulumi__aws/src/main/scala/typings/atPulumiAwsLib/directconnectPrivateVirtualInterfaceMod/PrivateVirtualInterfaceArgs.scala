@@ -59,3 +59,32 @@ trait PrivateVirtualInterfaceArgs extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object PrivateVirtualInterfaceArgs {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    amazonAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    bgpAuthKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dxGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    mtu: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PrivateVirtualInterfaceArgs = {
+    val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (dxGatewayId != null) __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrivateVirtualInterfaceArgs]
+  }
+}
+

@@ -83,3 +83,31 @@ trait HasherStatic extends js.Object {
   def stop(): scala.Unit
 }
 
+object HasherStatic {
+  @scala.inline
+  def apply(
+    VERSION: java.lang.String,
+    appendHash: java.lang.String,
+    changed: signalsLib.signalsMod.signalsNs.Signal[_],
+    dispose: js.Function0[scala.Unit],
+    getBaseURL: js.Function0[java.lang.String],
+    getHash: js.Function0[java.lang.String],
+    getHashAsArray: js.Function0[js.Array[java.lang.String]],
+    getURL: js.Function0[java.lang.String],
+    init: js.Function0[scala.Unit],
+    initialized: signalsLib.signalsMod.signalsNs.Signal[_],
+    isActive: js.Function0[scala.Boolean],
+    prependHash: java.lang.String,
+    replaceHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    separator: java.lang.String,
+    setHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    stopped: signalsLib.signalsMod.signalsNs.Signal[_],
+    toString: js.Function0[java.lang.String]
+  ): HasherStatic = {
+    val __obj = js.Dynamic.literal(VERSION = VERSION, appendHash = appendHash, changed = changed, dispose = dispose, getBaseURL = getBaseURL, getHash = getHash, getHashAsArray = getHashAsArray, getURL = getURL, init = init, initialized = initialized, isActive = isActive, prependHash = prependHash, replaceHash = replaceHash, separator = separator, setHash = setHash, stop = stop, stopped = stopped, toString = toString)
+  
+    __obj.asInstanceOf[HasherStatic]
+  }
+}
+

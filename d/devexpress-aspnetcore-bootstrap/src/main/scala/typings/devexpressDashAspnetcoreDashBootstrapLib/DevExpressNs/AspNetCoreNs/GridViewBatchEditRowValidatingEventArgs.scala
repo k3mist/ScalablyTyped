@@ -10,3 +10,12 @@ trait GridViewBatchEditRowValidatingEventArgs extends EventArgs {
   val visibleIndex: scala.Double
 }
 
+object GridViewBatchEditRowValidatingEventArgs {
+  @scala.inline
+  def apply(sender: Control, validationInfo: js.Any, visibleIndex: scala.Double): GridViewBatchEditRowValidatingEventArgs = {
+    val __obj = js.Dynamic.literal(sender = sender, validationInfo = validationInfo, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[GridViewBatchEditRowValidatingEventArgs]
+  }
+}
+

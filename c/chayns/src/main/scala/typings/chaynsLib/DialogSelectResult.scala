@@ -10,3 +10,12 @@ trait DialogSelectResult extends js.Object {
   var selection: js.Array[DialogSelectResultItem]
 }
 
+object DialogSelectResult {
+  @scala.inline
+  def apply(buttonType: chaynsLib.chaynsNs.dialogNs.buttonType, selection: js.Array[DialogSelectResultItem]): DialogSelectResult = {
+    val __obj = js.Dynamic.literal(buttonType = buttonType, selection = selection)
+  
+    __obj.asInstanceOf[DialogSelectResult]
+  }
+}
+

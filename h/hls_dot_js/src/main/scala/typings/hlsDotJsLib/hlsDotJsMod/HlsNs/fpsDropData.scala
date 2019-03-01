@@ -11,3 +11,12 @@ trait fpsDropData extends js.Object {
   var totalDroppedFragmes: scala.Double
 }
 
+object fpsDropData {
+  @scala.inline
+  def apply(currentDecoded: scala.Double, currentDropped: scala.Double, totalDroppedFragmes: scala.Double): fpsDropData = {
+    val __obj = js.Dynamic.literal(currentDecoded = currentDecoded, currentDropped = currentDropped, totalDroppedFragmes = totalDroppedFragmes)
+  
+    __obj.asInstanceOf[fpsDropData]
+  }
+}
+

@@ -131,3 +131,35 @@ trait PodSecurityPolicySpec extends js.Object {
   val volumes: js.Array[java.lang.String]
 }
 
+object PodSecurityPolicySpec {
+  @scala.inline
+  def apply(
+    allowPrivilegeEscalation: scala.Boolean,
+    allowedCapabilities: js.Array[java.lang.String],
+    allowedFlexVolumes: js.Array[AllowedFlexVolume],
+    allowedHostPaths: js.Array[AllowedHostPath],
+    allowedProcMountTypes: js.Array[java.lang.String],
+    allowedUnsafeSysctls: js.Array[java.lang.String],
+    defaultAddCapabilities: js.Array[java.lang.String],
+    defaultAllowPrivilegeEscalation: scala.Boolean,
+    forbiddenSysctls: js.Array[java.lang.String],
+    fsGroup: FSGroupStrategyOptions,
+    hostIPC: scala.Boolean,
+    hostNetwork: scala.Boolean,
+    hostPID: scala.Boolean,
+    hostPorts: js.Array[HostPortRange],
+    privileged: scala.Boolean,
+    readOnlyRootFilesystem: scala.Boolean,
+    requiredDropCapabilities: js.Array[java.lang.String],
+    runAsGroup: RunAsGroupStrategyOptions,
+    runAsUser: RunAsUserStrategyOptions,
+    seLinux: SELinuxStrategyOptions,
+    supplementalGroups: SupplementalGroupsStrategyOptions,
+    volumes: js.Array[java.lang.String]
+  ): PodSecurityPolicySpec = {
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
+  
+    __obj.asInstanceOf[PodSecurityPolicySpec]
+  }
+}
+

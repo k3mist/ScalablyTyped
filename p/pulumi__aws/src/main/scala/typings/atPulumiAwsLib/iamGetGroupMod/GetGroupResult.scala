@@ -24,3 +24,12 @@ trait GetGroupResult extends js.Object {
   val path: java.lang.String
 }
 
+object GetGroupResult {
+  @scala.inline
+  def apply(arn: java.lang.String, groupId: java.lang.String, id: java.lang.String, path: java.lang.String): GetGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, groupId = groupId, id = id, path = path)
+  
+    __obj.asInstanceOf[GetGroupResult]
+  }
+}
+

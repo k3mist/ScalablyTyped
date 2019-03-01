@@ -26,3 +26,21 @@ trait XExportFilter
   ): scala.Boolean
 }
 
+object XExportFilter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    exporter: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExportFilter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, exporter = exporter, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XExportFilter]
+  }
+}
+

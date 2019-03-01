@@ -23,3 +23,28 @@ trait Milestone extends js.Object {
   var url: java.lang.String
 }
 
+object Milestone {
+  @scala.inline
+  def apply(
+    closed_issues: scala.Double,
+    created_at: stdLib.Date,
+    creator: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary,
+    description: java.lang.String,
+    due_on: stdLib.Date,
+    html_url: java.lang.String,
+    id: scala.Double,
+    labels_url: java.lang.String,
+    number: scala.Double,
+    open_issues: scala.Double,
+    state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
+    title: java.lang.String,
+    updated_at: stdLib.Date,
+    url: java.lang.String,
+    closed_at: stdLib.Date = null
+  ): Milestone = {
+    val __obj = js.Dynamic.literal(closed_issues = closed_issues, created_at = created_at, creator = creator, description = description, due_on = due_on, html_url = html_url, id = id, labels_url = labels_url, number = number, open_issues = open_issues, state = state.asInstanceOf[js.Any], title = title, updated_at = updated_at, url = url)
+    if (closed_at != null) __obj.updateDynamic("closed_at")(closed_at)
+    __obj.asInstanceOf[Milestone]
+  }
+}
+

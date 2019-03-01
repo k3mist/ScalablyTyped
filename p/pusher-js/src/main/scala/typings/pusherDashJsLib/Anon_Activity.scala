@@ -13,3 +13,18 @@ trait Anon_Activity extends js.Object {
   def ping(): scala.Unit
 }
 
+object Anon_Activity {
+  @scala.inline
+  def apply(
+    activity: js.Function0[scala.Unit],
+    closed: js.Function0[scala.Unit],
+    error: js.Function1[js.Any, scala.Unit],
+    message: js.Function1[java.lang.String, scala.Unit],
+    ping: js.Function0[scala.Unit]
+  ): Anon_Activity = {
+    val __obj = js.Dynamic.literal(activity = activity, closed = closed, error = error, message = message, ping = ping)
+  
+    __obj.asInstanceOf[Anon_Activity]
+  }
+}
+

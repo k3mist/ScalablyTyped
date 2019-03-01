@@ -10,3 +10,12 @@ trait MultiGridState extends js.Object {
   var scrollTop: scala.Double
 }
 
+object MultiGridState {
+  @scala.inline
+  def apply(scrollLeft: scala.Double, scrollTop: scala.Double): MultiGridState = {
+    val __obj = js.Dynamic.literal(scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
+    __obj.asInstanceOf[MultiGridState]
+  }
+}
+

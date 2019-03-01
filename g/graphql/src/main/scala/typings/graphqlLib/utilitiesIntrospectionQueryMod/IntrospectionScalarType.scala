@@ -14,3 +14,16 @@ trait IntrospectionScalarType
   val name: java.lang.String
 }
 
+object IntrospectionScalarType {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.SCALAR,
+    name: java.lang.String,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): IntrospectionScalarType = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionScalarType]
+  }
+}
+

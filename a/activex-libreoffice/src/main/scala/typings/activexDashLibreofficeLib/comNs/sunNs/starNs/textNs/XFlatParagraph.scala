@@ -91,3 +91,60 @@ trait XFlatParagraph extends XTextMarkup {
   def setChecked(nType: scala.Double, bVal: scala.Boolean): scala.Unit
 }
 
+object XFlatParagraph {
+  @scala.inline
+  def apply(
+    LanguagePortions: activexDashInteropLib.SafeArray[scala.Double],
+    MarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap,
+    Text: java.lang.String,
+    changeAttributes: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    changeText: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    commitStringMarkup: js.Function5[
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
+      scala.Unit
+    ],
+    commitTextRangeMarkup: js.Function4[
+      scala.Double, 
+      java.lang.String, 
+      XTextRange, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
+      scala.Unit
+    ],
+    getLanguageOfText: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
+    ],
+    getLanguagePortions: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getMarkupInfoContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap],
+    getPrimaryLanguageOfText: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
+    ],
+    getText: js.Function0[java.lang.String],
+    isChecked: js.Function1[scala.Double, scala.Boolean],
+    isModified: js.Function0[scala.Boolean],
+    setChecked: js.Function2[scala.Double, scala.Boolean, scala.Unit]
+  ): XFlatParagraph = {
+    val __obj = js.Dynamic.literal(LanguagePortions = LanguagePortions, MarkupInfoContainer = MarkupInfoContainer, Text = Text, changeAttributes = changeAttributes, changeText = changeText, commitStringMarkup = commitStringMarkup, commitTextRangeMarkup = commitTextRangeMarkup, getLanguageOfText = getLanguageOfText, getLanguagePortions = getLanguagePortions, getMarkupInfoContainer = getMarkupInfoContainer, getPrimaryLanguageOfText = getPrimaryLanguageOfText, getText = getText, isChecked = isChecked, isModified = isModified, setChecked = setChecked)
+  
+    __obj.asInstanceOf[XFlatParagraph]
+  }
+}
+

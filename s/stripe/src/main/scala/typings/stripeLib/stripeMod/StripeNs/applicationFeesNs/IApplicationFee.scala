@@ -54,3 +54,27 @@ trait IApplicationFee
   var refunds: IApplicationFeeRefunds
 }
 
+object IApplicationFee {
+  @scala.inline
+  def apply(
+    account: java.lang.String | stripeLib.stripeMod.StripeNs.accountsNs.IAccount,
+    amount: scala.Double,
+    amount_refunded: scala.Double,
+    application: java.lang.String | stripeLib.stripeMod.StripeNs.applicationsNs.IApplication,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: java.lang.String,
+    originating_transaction: java.lang.String,
+    refunded: scala.Boolean,
+    refunds: IApplicationFeeRefunds
+  ): IApplicationFee = {
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], amount = amount, amount_refunded = amount_refunded, application = application.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, id = id, livemode = livemode, `object` = `object`, originating_transaction = originating_transaction, refunded = refunded, refunds = refunds)
+  
+    __obj.asInstanceOf[IApplicationFee]
+  }
+}
+

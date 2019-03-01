@@ -33,3 +33,23 @@ trait WebSceneUpdateFromOptions
   var viewpointExcluded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WebSceneUpdateFromOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    environmentExcluded: js.UndefOr[scala.Boolean] = js.undefined,
+    thumbnailExcluded: js.UndefOr[scala.Boolean] = js.undefined,
+    thumbnailSize: WebSceneUpdateFromOptionsThumbnailSize = null,
+    viewpointExcluded: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebSceneUpdateFromOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(environmentExcluded)) __obj.updateDynamic("environmentExcluded")(environmentExcluded)
+    if (!js.isUndefined(thumbnailExcluded)) __obj.updateDynamic("thumbnailExcluded")(thumbnailExcluded)
+    if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize)
+    if (!js.isUndefined(viewpointExcluded)) __obj.updateDynamic("viewpointExcluded")(viewpointExcluded)
+    __obj.asInstanceOf[WebSceneUpdateFromOptions]
+  }
+}
+

@@ -40,3 +40,24 @@ trait VpcDhcpOptionsArgs extends js.Object {
   ] = js.undefined
 }
 
+object VpcDhcpOptionsArgs {
+  @scala.inline
+  def apply(
+    domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    domainNameServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    netbiosNameServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    netbiosNodeType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ntpServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): VpcDhcpOptionsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (domainNameServers != null) __obj.updateDynamic("domainNameServers")(domainNameServers.asInstanceOf[js.Any])
+    if (netbiosNameServers != null) __obj.updateDynamic("netbiosNameServers")(netbiosNameServers.asInstanceOf[js.Any])
+    if (netbiosNodeType != null) __obj.updateDynamic("netbiosNodeType")(netbiosNodeType.asInstanceOf[js.Any])
+    if (ntpServers != null) __obj.updateDynamic("ntpServers")(ntpServers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcDhcpOptionsArgs]
+  }
+}
+

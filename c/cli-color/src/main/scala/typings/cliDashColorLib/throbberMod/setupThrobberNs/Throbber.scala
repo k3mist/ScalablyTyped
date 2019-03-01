@@ -11,3 +11,12 @@ trait Throbber extends js.Object {
   def stop(): scala.Unit
 }
 
+object Throbber {
+  @scala.inline
+  def apply(restart: js.Function0[scala.Unit], start: js.Function0[scala.Unit], stop: js.Function0[scala.Unit]): Throbber = {
+    val __obj = js.Dynamic.literal(restart = restart, start = start, stop = stop)
+  
+    __obj.asInstanceOf[Throbber]
+  }
+}
+

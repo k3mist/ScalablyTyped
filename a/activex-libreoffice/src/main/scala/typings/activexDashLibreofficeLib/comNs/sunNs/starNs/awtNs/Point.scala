@@ -13,3 +13,12 @@ trait Point extends js.Object {
   var Y: scala.Double
 }
 
+object Point {
+  @scala.inline
+  def apply(X: scala.Double, Y: scala.Double): Point = {
+    val __obj = js.Dynamic.literal(X = X, Y = Y)
+  
+    __obj.asInstanceOf[Point]
+  }
+}
+

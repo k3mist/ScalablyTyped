@@ -21,3 +21,38 @@ trait TimelineResource extends js.Object {
   def update(request: gapiDotClientDotMirrorLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
 }
 
+object TimelineResource {
+  @scala.inline
+  def apply(
+    attachments: AttachmentsResource,
+    delete: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltBundleId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TimelineListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
+    ],
+    update: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
+    ]
+  ): TimelineResource = {
+    val __obj = js.Dynamic.literal(attachments = attachments, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[TimelineResource]
+  }
+}
+

@@ -59,3 +59,24 @@ trait CustomUpdatePayload extends js.Object {
   var text: java.lang.String | LocalizableContent
 }
 
+object CustomUpdatePayload {
+  @scala.inline
+  def apply(
+    action: UpdateAction,
+    image: java.lang.String,
+    template: java.lang.String,
+    text: java.lang.String | LocalizableContent,
+    cta: java.lang.String | LocalizableContent = null,
+    data: js.Any = null,
+    notification: java.lang.String = null,
+    strategy: java.lang.String = null
+  ): CustomUpdatePayload = {
+    val __obj = js.Dynamic.literal(action = action, image = image, template = template, text = text.asInstanceOf[js.Any])
+    if (cta != null) __obj.updateDynamic("cta")(cta.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    __obj.asInstanceOf[CustomUpdatePayload]
+  }
+}
+

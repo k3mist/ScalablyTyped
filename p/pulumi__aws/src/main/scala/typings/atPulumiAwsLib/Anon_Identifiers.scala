@@ -10,3 +10,12 @@ trait Anon_Identifiers extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Identifiers {
+  @scala.inline
+  def apply(identifiers: js.Array[java.lang.String], `type`: java.lang.String): Anon_Identifiers = {
+    val __obj = js.Dynamic.literal(identifiers = identifiers, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Identifiers]
+  }
+}
+

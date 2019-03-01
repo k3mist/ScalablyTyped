@@ -49,3 +49,25 @@ trait typeCreatePCClassRendererParams
   var typeScheme: js.UndefOr[TypeSchemeForPoint] = js.undefined
 }
 
+object typeCreatePCClassRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    density: scala.Int | scala.Double = null,
+    size: java.lang.String = null,
+    statistics: UniqueValuesResult = null,
+    typeScheme: TypeSchemeForPoint = null
+  ): typeCreatePCClassRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (typeScheme != null) __obj.updateDynamic("typeScheme")(typeScheme)
+    __obj.asInstanceOf[typeCreatePCClassRendererParams]
+  }
+}
+

@@ -65,3 +65,26 @@ trait IAudioEngine extends IDisposable {
   def unlock(): scala.Unit
 }
 
+object IAudioEngine {
+  @scala.inline
+  def apply(
+    WarnedWebAudioUnsupported: scala.Boolean,
+    audioContext: Nullable[stdLib.AudioContext],
+    canUseWebAudio: scala.Boolean,
+    dispose: js.Function0[scala.Unit],
+    isMP3supported: scala.Boolean,
+    isOGGsupported: scala.Boolean,
+    lock: js.Function0[scala.Unit],
+    masterGain: stdLib.GainNode,
+    onAudioLockedObservable: Observable[AudioEngine],
+    onAudioUnlockedObservable: Observable[AudioEngine],
+    unlock: js.Function0[scala.Unit],
+    unlocked: scala.Boolean,
+    useCustomUnlockedButton: scala.Boolean
+  ): IAudioEngine = {
+    val __obj = js.Dynamic.literal(WarnedWebAudioUnsupported = WarnedWebAudioUnsupported, audioContext = audioContext.asInstanceOf[js.Any], canUseWebAudio = canUseWebAudio, dispose = dispose, isMP3supported = isMP3supported, isOGGsupported = isOGGsupported, lock = lock, masterGain = masterGain, onAudioLockedObservable = onAudioLockedObservable, onAudioUnlockedObservable = onAudioUnlockedObservable, unlock = unlock, unlocked = unlocked, useCustomUnlockedButton = useCustomUnlockedButton)
+  
+    __obj.asInstanceOf[IAudioEngine]
+  }
+}
+

@@ -119,3 +119,52 @@ trait ClusterInstanceArgs extends js.Object {
   ] = js.undefined
 }
 
+object ClusterInstanceArgs {
+  @scala.inline
+  def apply(
+    clusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    instanceClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    applyImmediately: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    copyTagsToSnapshot: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    dbParameterGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbSubnetGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    identifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    identifierPrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    monitoringInterval: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    monitoringRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    performanceInsightsEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    performanceInsightsKmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    preferredBackupWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    promotionTier: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    publiclyAccessible: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ClusterInstanceArgs = {
+    val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], instanceClass = instanceClass.asInstanceOf[js.Any])
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
+    if (dbParameterGroupName != null) __obj.updateDynamic("dbParameterGroupName")(dbParameterGroupName.asInstanceOf[js.Any])
+    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
+    if (monitoringInterval != null) __obj.updateDynamic("monitoringInterval")(monitoringInterval.asInstanceOf[js.Any])
+    if (monitoringRoleArn != null) __obj.updateDynamic("monitoringRoleArn")(monitoringRoleArn.asInstanceOf[js.Any])
+    if (performanceInsightsEnabled != null) __obj.updateDynamic("performanceInsightsEnabled")(performanceInsightsEnabled.asInstanceOf[js.Any])
+    if (performanceInsightsKmsKeyId != null) __obj.updateDynamic("performanceInsightsKmsKeyId")(performanceInsightsKmsKeyId.asInstanceOf[js.Any])
+    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (promotionTier != null) __obj.updateDynamic("promotionTier")(promotionTier.asInstanceOf[js.Any])
+    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterInstanceArgs]
+  }
+}
+

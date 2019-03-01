@@ -15,3 +15,20 @@ trait IRuleFailureJson extends js.Object {
   var startPosition: IRuleFailurePositionJson
 }
 
+object IRuleFailureJson {
+  @scala.inline
+  def apply(
+    endPosition: IRuleFailurePositionJson,
+    failure: java.lang.String,
+    name: java.lang.String,
+    ruleName: java.lang.String,
+    ruleSeverity: java.lang.String,
+    startPosition: IRuleFailurePositionJson,
+    fix: FixJson = null
+  ): IRuleFailureJson = {
+    val __obj = js.Dynamic.literal(endPosition = endPosition, failure = failure, name = name, ruleName = ruleName, ruleSeverity = ruleSeverity, startPosition = startPosition)
+    if (fix != null) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IRuleFailureJson]
+  }
+}
+

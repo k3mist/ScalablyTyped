@@ -12,3 +12,12 @@ trait NvLogo extends js.Object {
   var width: scala.Double
 }
 
+object NvLogo {
+  @scala.inline
+  def apply(data: js.Array[scala.Double], height: scala.Double, `type`: java.lang.String, width: scala.Double): NvLogo = {
+    val __obj = js.Dynamic.literal(data = data, height = height, `type` = `type`, width = width)
+  
+    __obj.asInstanceOf[NvLogo]
+  }
+}
+

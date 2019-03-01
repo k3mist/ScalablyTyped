@@ -31,3 +31,36 @@ trait PlaceResult extends js.Object {
   var website: java.lang.String
 }
 
+object PlaceResult {
+  @scala.inline
+  def apply(
+    address_components: js.Array[googlemapsLib.googleNs.mapsNs.GeocoderAddressComponent],
+    adr_address: java.lang.String,
+    aspects: js.Array[PlaceAspectRating],
+    formatted_address: java.lang.String,
+    formatted_phone_number: java.lang.String,
+    geometry: PlaceGeometry,
+    html_attributions: js.Array[java.lang.String],
+    icon: java.lang.String,
+    id: java.lang.String,
+    international_phone_number: java.lang.String,
+    name: java.lang.String,
+    opening_hours: OpeningHours,
+    permanently_closed: scala.Boolean,
+    photos: js.Array[PlacePhoto],
+    place_id: java.lang.String,
+    price_level: scala.Double,
+    rating: scala.Double,
+    reviews: js.Array[PlaceReview],
+    types: js.Array[java.lang.String],
+    url: java.lang.String,
+    utc_offset: scala.Double,
+    vicinity: java.lang.String,
+    website: java.lang.String
+  ): PlaceResult = {
+    val __obj = js.Dynamic.literal(address_components = address_components, adr_address = adr_address, aspects = aspects, formatted_address = formatted_address, formatted_phone_number = formatted_phone_number, geometry = geometry, html_attributions = html_attributions, icon = icon, id = id, international_phone_number = international_phone_number, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, price_level = price_level, rating = rating, reviews = reviews, types = types, url = url, utc_offset = utc_offset, vicinity = vicinity, website = website)
+  
+    __obj.asInstanceOf[PlaceResult]
+  }
+}
+

@@ -75,3 +75,30 @@ trait BitArray extends js.Object {
   def xor(x: BitArray): BitArray
 }
 
+object BitArray {
+  @scala.inline
+  def apply(
+    and: js.Function1[BitArray, BitArray],
+    copy: js.Function0[BitArray],
+    count: js.Function0[scala.Double],
+    equals: js.Function1[BitArray, scala.Boolean],
+    get: js.Function1[scala.Double, scala.Boolean],
+    not: js.Function0[BitArray],
+    or: js.Function1[BitArray, BitArray],
+    reset: js.Function0[BitArray],
+    set: js.Function2[scala.Double, scala.Boolean, BitArray],
+    size: js.Function0[scala.Double],
+    toArray: js.Function0[js.Array[scala.Boolean]],
+    toBinaryString: js.Function0[java.lang.String],
+    toHexString: js.Function0[java.lang.String],
+    toJSON: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    toggle: js.Function1[scala.Double, BitArray],
+    xor: js.Function1[BitArray, BitArray]
+  ): BitArray = {
+    val __obj = js.Dynamic.literal(and = and, copy = copy, count = count, equals = equals, get = get, not = not, or = or, reset = reset, set = set, size = size, toArray = toArray, toBinaryString = toBinaryString, toHexString = toHexString, toJSON = toJSON, toString = toString, toggle = toggle, xor = xor)
+  
+    __obj.asInstanceOf[BitArray]
+  }
+}
+

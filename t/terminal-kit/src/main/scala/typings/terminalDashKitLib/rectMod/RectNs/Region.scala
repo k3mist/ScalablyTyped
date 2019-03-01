@@ -12,3 +12,12 @@ trait Region extends Options {
   var ymin: scala.Double
 }
 
+object Region {
+  @scala.inline
+  def apply(xmax: scala.Double, xmin: scala.Double, ymax: scala.Double, ymin: scala.Double): Region = {
+    val __obj = js.Dynamic.literal(xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
+  
+    __obj.asInstanceOf[Region]
+  }
+}
+

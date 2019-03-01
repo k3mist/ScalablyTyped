@@ -37,3 +37,19 @@ trait Anchor extends js.Object {
   def setPosition(row: scala.Double, column: scala.Double, noClip: scala.Boolean): scala.Unit
 }
 
+object Anchor {
+  @scala.inline
+  def apply(
+    detach: js.Function0[scala.Unit],
+    getDocument: js.Function0[Document],
+    getPosition: js.Function0[Position],
+    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
+    onChange: js.Function1[js.Any, scala.Unit],
+    setPosition: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit]
+  ): Anchor = {
+    val __obj = js.Dynamic.literal(detach = detach, getDocument = getDocument, getPosition = getPosition, on = on, onChange = onChange, setPosition = setPosition)
+  
+    __obj.asInstanceOf[Anchor]
+  }
+}
+

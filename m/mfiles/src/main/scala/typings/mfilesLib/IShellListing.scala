@@ -45,3 +45,46 @@ trait IShellListing extends js.Object {
   def UnselectAll(): scala.Unit
 }
 
+object IShellListing {
+  @scala.inline
+  def apply(
+    ActivateListing: js.Function0[scala.Unit],
+    ActivateSelected: js.Function0[scala.Unit],
+    AutoFitAllColumns: scala.Boolean,
+    AutoFitFirstColumn: scala.Boolean,
+    ColumnHeadersVisible: scala.Boolean,
+    CurrentPath: java.lang.String,
+    CurrentSelection: IShellItems,
+    Events: IShellListingEvents,
+    GroupObjectsByObjectType: scala.Boolean,
+    GroupViewsAndFolders: scala.Boolean,
+    IsActive: scala.Boolean,
+    Items: IShellItems,
+    RefreshListing: js.Function3[scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
+    RefreshListingAsync: js.Function0[scala.Unit],
+    RefreshObject: js.Function3[IObjID, scala.Boolean, scala.Boolean, scala.Unit],
+    RefreshSelectedObjects: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
+    SelectFolder: js.Function1[IFolderDef, scala.Unit],
+    SelectNextFolder: js.Function1[mfilesLib.MFilesNs.MFFolderDefType, scala.Boolean],
+    SelectNextObject: js.Function0[scala.Boolean],
+    SelectNextObjectFile: js.Function1[scala.Boolean, scala.Boolean],
+    SelectObjectFile: js.Function2[IObjVer, IFileVer, scala.Unit],
+    SelectObjectOrObjectFileVersion: js.Function1[IObjOrFileVer, scala.Unit],
+    SelectObjectVersion: js.Function1[IObjVer, scala.Unit],
+    SelectPrevFolder: js.Function1[mfilesLib.MFilesNs.MFFolderDefType, scala.Boolean],
+    SelectPrevObject: js.Function0[scala.Boolean],
+    SelectPrevObjectFile: js.Function1[scala.Boolean, scala.Boolean],
+    SetFolderSelectionStates: js.Function2[IFolderDefs, scala.Boolean, scala.Unit],
+    SetObjectOrObjectFileVersionSelectionStates: js.Function2[IObjOrFileVers, scala.Boolean, scala.Unit],
+    SetObjectVersionSelectionStates: js.Function2[IObjVers, scala.Boolean, scala.Unit],
+    SetTheme: js.Function1[ITheme, scala.Unit],
+    SetVirtualSelection: js.Function1[IObjOrFileVers, scala.Unit],
+    SumOfResultCounts: scala.Double,
+    UnselectAll: js.Function0[scala.Unit]
+  ): IShellListing = {
+    val __obj = js.Dynamic.literal(ActivateListing = ActivateListing, ActivateSelected = ActivateSelected, AutoFitAllColumns = AutoFitAllColumns, AutoFitFirstColumn = AutoFitFirstColumn, ColumnHeadersVisible = ColumnHeadersVisible, CurrentPath = CurrentPath, CurrentSelection = CurrentSelection, Events = Events, GroupObjectsByObjectType = GroupObjectsByObjectType, GroupViewsAndFolders = GroupViewsAndFolders, IsActive = IsActive, Items = Items, RefreshListing = RefreshListing, RefreshListingAsync = RefreshListingAsync, RefreshObject = RefreshObject, RefreshSelectedObjects = RefreshSelectedObjects, SelectFolder = SelectFolder, SelectNextFolder = SelectNextFolder, SelectNextObject = SelectNextObject, SelectNextObjectFile = SelectNextObjectFile, SelectObjectFile = SelectObjectFile, SelectObjectOrObjectFileVersion = SelectObjectOrObjectFileVersion, SelectObjectVersion = SelectObjectVersion, SelectPrevFolder = SelectPrevFolder, SelectPrevObject = SelectPrevObject, SelectPrevObjectFile = SelectPrevObjectFile, SetFolderSelectionStates = SetFolderSelectionStates, SetObjectOrObjectFileVersionSelectionStates = SetObjectOrObjectFileVersionSelectionStates, SetObjectVersionSelectionStates = SetObjectVersionSelectionStates, SetTheme = SetTheme, SetVirtualSelection = SetVirtualSelection, SumOfResultCounts = SumOfResultCounts, UnselectAll = UnselectAll)
+  
+    __obj.asInstanceOf[IShellListing]
+  }
+}
+

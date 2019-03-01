@@ -11,3 +11,12 @@ trait CameraPictureSourceTypeObject extends js.Object {
   var SAVEDPHOTOALBUM: scala.Double
 }
 
+object CameraPictureSourceTypeObject {
+  @scala.inline
+  def apply(CAMERA: scala.Double, PHOTOLIBRARY: scala.Double, SAVEDPHOTOALBUM: scala.Double): CameraPictureSourceTypeObject = {
+    val __obj = js.Dynamic.literal(CAMERA = CAMERA, PHOTOLIBRARY = PHOTOLIBRARY, SAVEDPHOTOALBUM = SAVEDPHOTOALBUM)
+  
+    __obj.asInstanceOf[CameraPictureSourceTypeObject]
+  }
+}
+

@@ -14,3 +14,16 @@ trait Entitlement extends js.Object {
   var skuType: java.lang.String
 }
 
+object Entitlement {
+  @scala.inline
+  def apply(
+    inAppDetails: actionsDashOnDashGoogleLib.Anon_InAppDataSignature,
+    sku: java.lang.String,
+    skuType: java.lang.String
+  ): Entitlement = {
+    val __obj = js.Dynamic.literal(inAppDetails = inAppDetails, sku = sku, skuType = skuType)
+  
+    __obj.asInstanceOf[Entitlement]
+  }
+}
+

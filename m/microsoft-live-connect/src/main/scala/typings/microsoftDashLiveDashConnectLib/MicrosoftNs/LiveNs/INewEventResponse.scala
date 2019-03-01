@@ -83,3 +83,25 @@ trait INewEventResponse extends js.Object {
   var visibility: java.lang.String
 }
 
+object INewEventResponse {
+  @scala.inline
+  def apply(
+    availability: java.lang.String,
+    description: java.lang.String,
+    end_time: java.lang.String,
+    is_all_day_event: scala.Boolean,
+    is_recurrent: scala.Boolean,
+    location: java.lang.String,
+    name: java.lang.String,
+    recurrence: java.lang.String,
+    reminder_time: scala.Double,
+    start_time: java.lang.String,
+    updated_time: java.lang.String,
+    visibility: java.lang.String
+  ): INewEventResponse = {
+    val __obj = js.Dynamic.literal(availability = availability, description = description, end_time = end_time, is_all_day_event = is_all_day_event, is_recurrent = is_recurrent, location = location, name = name, recurrence = recurrence, reminder_time = reminder_time, start_time = start_time, updated_time = updated_time, visibility = visibility)
+  
+    __obj.asInstanceOf[INewEventResponse]
+  }
+}
+

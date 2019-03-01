@@ -11,3 +11,12 @@ trait MatrixEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object MatrixEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Matrix): MatrixEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[MatrixEvent]
+  }
+}
+

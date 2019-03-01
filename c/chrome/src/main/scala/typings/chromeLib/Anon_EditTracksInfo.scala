@@ -21,3 +21,26 @@ trait Anon_EditTracksInfo extends js.Object {
   var stop: scala.Double
 }
 
+object Anon_EditTracksInfo {
+  @scala.inline
+  def apply(
+    editTracksInfo: scala.Double,
+    getStatus: scala.Double,
+    load: scala.Double,
+    pause: scala.Double,
+    play: scala.Double,
+    queueInsert: scala.Double,
+    queueLoad: scala.Double,
+    queueRemove: scala.Double,
+    queueReorder: scala.Double,
+    queueUpdate: scala.Double,
+    seek: scala.Double,
+    setVolume: scala.Double,
+    stop: scala.Double
+  ): Anon_EditTracksInfo = {
+    val __obj = js.Dynamic.literal(editTracksInfo = editTracksInfo, getStatus = getStatus, load = load, pause = pause, play = play, queueInsert = queueInsert, queueLoad = queueLoad, queueRemove = queueRemove, queueReorder = queueReorder, queueUpdate = queueUpdate, seek = seek, setVolume = setVolume, stop = stop)
+  
+    __obj.asInstanceOf[Anon_EditTracksInfo]
+  }
+}
+

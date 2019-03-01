@@ -25,3 +25,21 @@ trait GamepadReading extends js.Object {
   var timestamp: scala.Double
 }
 
+object GamepadReading {
+  @scala.inline
+  def apply(
+    buttons: GamepadButtons,
+    leftThumbstickX: scala.Double,
+    leftThumbstickY: scala.Double,
+    leftTrigger: scala.Double,
+    rightThumbstickX: scala.Double,
+    rightThumbstickY: scala.Double,
+    rightTrigger: scala.Double,
+    timestamp: scala.Double
+  ): GamepadReading = {
+    val __obj = js.Dynamic.literal(buttons = buttons, leftThumbstickX = leftThumbstickX, leftThumbstickY = leftThumbstickY, leftTrigger = leftTrigger, rightThumbstickX = rightThumbstickX, rightThumbstickY = rightThumbstickY, rightTrigger = rightTrigger, timestamp = timestamp)
+  
+    __obj.asInstanceOf[GamepadReading]
+  }
+}
+

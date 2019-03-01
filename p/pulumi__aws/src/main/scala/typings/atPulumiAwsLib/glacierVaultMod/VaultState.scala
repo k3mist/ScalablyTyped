@@ -39,3 +39,26 @@ trait VaultState extends js.Object {
   ] = js.undefined
 }
 
+object VaultState {
+  @scala.inline
+  def apply(
+    accessPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    location: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notifications: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EventsSnsTopic]]
+    ] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): VaultState = {
+    val __obj = js.Dynamic.literal()
+    if (accessPolicy != null) __obj.updateDynamic("accessPolicy")(accessPolicy.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VaultState]
+  }
+}
+

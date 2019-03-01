@@ -18,3 +18,23 @@ trait OCRReadPara extends js.Object {
   def OnSuccess(): scala.Unit
 }
 
+object OCRReadPara {
+  @scala.inline
+  def apply(
+    AjaxFunctionUrl: java.lang.String,
+    AryZone: js.Array[scala.Double],
+    FileNames: java.lang.String,
+    FunctionName: java.lang.String,
+    ImageIndex: scala.Double,
+    JsonString: java.lang.String,
+    OnFailure: js.Function0[scala.Unit],
+    OnSuccess: js.Function0[scala.Unit],
+    STWAIN: WebTwain,
+    Type: java.lang.String
+  ): OCRReadPara = {
+    val __obj = js.Dynamic.literal(AjaxFunctionUrl = AjaxFunctionUrl, AryZone = AryZone, FileNames = FileNames, FunctionName = FunctionName, ImageIndex = ImageIndex, JsonString = JsonString, OnFailure = OnFailure, OnSuccess = OnSuccess, STWAIN = STWAIN, Type = Type)
+  
+    __obj.asInstanceOf[OCRReadPara]
+  }
+}
+

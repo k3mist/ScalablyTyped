@@ -24,3 +24,17 @@ trait AcquisitionOperation extends js.Object {
   var reasons: js.Array[AcquisitionOperationDisallowReason]
 }
 
+object AcquisitionOperation {
+  @scala.inline
+  def apply(
+    operationState: AcquisitionOperationState,
+    operationType: AcquisitionOperationType,
+    reason: java.lang.String,
+    reasons: js.Array[AcquisitionOperationDisallowReason]
+  ): AcquisitionOperation = {
+    val __obj = js.Dynamic.literal(operationState = operationState, operationType = operationType, reason = reason, reasons = reasons)
+  
+    __obj.asInstanceOf[AcquisitionOperation]
+  }
+}
+

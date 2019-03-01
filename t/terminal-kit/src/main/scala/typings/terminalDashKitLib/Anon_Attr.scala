@@ -11,3 +11,16 @@ trait Anon_Attr extends js.Object {
   var transparencyType: scala.Double
 }
 
+object Anon_Attr {
+  @scala.inline
+  def apply(
+    attr: scala.Double | terminalDashKitLib.screenbufferMod.ScreenBufferNs.Attributes,
+    transparencyChar: java.lang.String,
+    transparencyType: scala.Double
+  ): Anon_Attr = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar, transparencyType = transparencyType)
+  
+    __obj.asInstanceOf[Anon_Attr]
+  }
+}
+

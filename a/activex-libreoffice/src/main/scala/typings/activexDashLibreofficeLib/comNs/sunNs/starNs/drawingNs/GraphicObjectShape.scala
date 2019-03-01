@@ -45,3 +45,33 @@ trait GraphicObjectShape
   var Transparency: scala.Double
 }
 
+object GraphicObjectShape {
+  @scala.inline
+  def apply(
+    AdjustBlue: scala.Double,
+    AdjustContrast: scala.Double,
+    AdjustGreen: scala.Double,
+    AdjustLuminance: scala.Double,
+    AdjustRed: scala.Double,
+    Gamma: scala.Double,
+    Graphic: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    GraphicColorMode: ColorMode,
+    GraphicObjectFillBitmap: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    GraphicStreamURL: java.lang.String,
+    GraphicURL: java.lang.String,
+    ImageMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Transparency: scala.Double,
+    Text: Text = null
+  ): GraphicObjectShape = {
+    val __obj = js.Dynamic.literal(AdjustBlue = AdjustBlue, AdjustContrast = AdjustContrast, AdjustGreen = AdjustGreen, AdjustLuminance = AdjustLuminance, AdjustRed = AdjustRed, Gamma = Gamma, Graphic = Graphic, GraphicColorMode = GraphicColorMode, GraphicObjectFillBitmap = GraphicObjectFillBitmap, GraphicStreamURL = GraphicStreamURL, GraphicURL = GraphicURL, ImageMap = ImageMap, Transparency = Transparency)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[GraphicObjectShape]
+  }
+}
+

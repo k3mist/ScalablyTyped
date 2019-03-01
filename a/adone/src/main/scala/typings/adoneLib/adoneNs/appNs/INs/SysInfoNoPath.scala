@@ -10,3 +10,19 @@ trait SysInfoNoPath extends SysInfo {
   var path_SysInfoNoPath: scala.Null
 }
 
+object SysInfoNoPath {
+  @scala.inline
+  def apply(
+    configureArgs: js.Array[_],
+    description: java.lang.String,
+    group: java.lang.String,
+    instance: adoneLib.adoneNs.appNs.Subsystem,
+    name: java.lang.String,
+    path: scala.Null
+  ): SysInfoNoPath = {
+    val __obj = js.Dynamic.literal(configureArgs = configureArgs, description = description, group = group, instance = instance, name = name, path = path)
+  
+    __obj.asInstanceOf[SysInfoNoPath]
+  }
+}
+

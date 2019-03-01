@@ -38,3 +38,20 @@ trait MouseEvent extends InputEvent {
   var Y: scala.Double
 }
 
+object MouseEvent {
+  @scala.inline
+  def apply(
+    Buttons: scala.Double,
+    ClickCount: scala.Double,
+    Modifiers: scala.Double,
+    PopupTrigger: scala.Boolean,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    X: scala.Double,
+    Y: scala.Double
+  ): MouseEvent = {
+    val __obj = js.Dynamic.literal(Buttons = Buttons, ClickCount = ClickCount, Modifiers = Modifiers, PopupTrigger = PopupTrigger, Source = Source, X = X, Y = Y)
+  
+    __obj.asInstanceOf[MouseEvent]
+  }
+}
+

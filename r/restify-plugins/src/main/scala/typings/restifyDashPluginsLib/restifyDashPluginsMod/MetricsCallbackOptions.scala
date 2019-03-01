@@ -31,3 +31,18 @@ trait MetricsCallbackOptions extends js.Object {
   var statusCode: scala.Double
 }
 
+object MetricsCallbackOptions {
+  @scala.inline
+  def apply(
+    connectionState: TMetricsCallback,
+    latency: scala.Double,
+    method: java.lang.String,
+    path: java.lang.String,
+    statusCode: scala.Double
+  ): MetricsCallbackOptions = {
+    val __obj = js.Dynamic.literal(connectionState = connectionState.asInstanceOf[js.Any], latency = latency, method = method, path = path, statusCode = statusCode)
+  
+    __obj.asInstanceOf[MetricsCallbackOptions]
+  }
+}
+

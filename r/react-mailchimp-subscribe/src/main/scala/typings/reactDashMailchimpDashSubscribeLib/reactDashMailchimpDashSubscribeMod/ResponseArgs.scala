@@ -10,3 +10,15 @@ trait ResponseArgs extends js.Object {
   var status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.success | reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.error
 }
 
+object ResponseArgs {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.success | reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.error
+  ): ResponseArgs = {
+    val __obj = js.Dynamic.literal(message = message, status = status.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ResponseArgs]
+  }
+}
+

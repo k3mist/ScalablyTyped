@@ -24,3 +24,23 @@ trait ContinuousDeploymentDefinition extends js.Object {
   var webspace: java.lang.String
 }
 
+object ContinuousDeploymentDefinition {
+  @scala.inline
+  def apply(
+    connectedService: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.WebApiConnectedServiceRef,
+    definition: XamlDefinitionReference,
+    gitBranch: java.lang.String,
+    hostedServiceName: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    repositoryId: java.lang.String,
+    storageAccountName: java.lang.String,
+    subscriptionId: java.lang.String,
+    website: java.lang.String,
+    webspace: java.lang.String
+  ): ContinuousDeploymentDefinition = {
+    val __obj = js.Dynamic.literal(connectedService = connectedService, definition = definition, gitBranch = gitBranch, hostedServiceName = hostedServiceName, project = project, repositoryId = repositoryId, storageAccountName = storageAccountName, subscriptionId = subscriptionId, website = website, webspace = webspace)
+  
+    __obj.asInstanceOf[ContinuousDeploymentDefinition]
+  }
+}
+

@@ -9,3 +9,14 @@ trait Arc extends JsonCurve {
   var a: js.Tuple7[Position, Position2D, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
 }
 
+object Arc {
+  @scala.inline
+  def apply(
+    a: js.Tuple7[Position, Position2D, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+  ): Arc = {
+    val __obj = js.Dynamic.literal(a = a)
+  
+    __obj.asInstanceOf[Arc]
+  }
+}
+

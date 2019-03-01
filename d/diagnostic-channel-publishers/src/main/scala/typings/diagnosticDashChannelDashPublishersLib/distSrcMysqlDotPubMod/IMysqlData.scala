@@ -12,3 +12,17 @@ trait IMysqlData extends js.Object {
   var query: diagnosticDashChannelDashPublishersLib.Anon_Connection
 }
 
+object IMysqlData {
+  @scala.inline
+  def apply(
+    callbackArgs: stdLib.IArguments,
+    duration: scala.Double,
+    err: stdLib.Error,
+    query: diagnosticDashChannelDashPublishersLib.Anon_Connection
+  ): IMysqlData = {
+    val __obj = js.Dynamic.literal(callbackArgs = callbackArgs, duration = duration, err = err, query = query)
+  
+    __obj.asInstanceOf[IMysqlData]
+  }
+}
+

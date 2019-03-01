@@ -24,3 +24,29 @@ trait Anon_AsNeeded extends js.Object {
   var titleStyle: js.Object
 }
 
+object Anon_AsNeeded {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    borderColor: java.lang.String,
+    maxSize: java.lang.String,
+    position: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    referenceObjectSection: Anon_Center,
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    scrolling: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.asNeeded,
+    sections: js.Array[Anon_CenterEnd],
+    seriesSection: Anon_Center,
+    size: java.lang.String,
+    symbolHeight: scala.Double,
+    symbolWidth: scala.Double,
+    textStyle: js.Object,
+    title: java.lang.String,
+    titleHalign: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
+    titleStyle: js.Object
+  ): Anon_AsNeeded = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, maxSize = maxSize, position = position.asInstanceOf[js.Any], referenceObjectSection = referenceObjectSection, rendered = rendered.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], sections = sections, seriesSection = seriesSection, size = size, symbolHeight = symbolHeight, symbolWidth = symbolWidth, textStyle = textStyle, title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+  
+    __obj.asInstanceOf[Anon_AsNeeded]
+  }
+}
+

@@ -20,3 +20,12 @@ trait MappingDetails extends js.Object {
   var serverPath: java.lang.String
 }
 
+object MappingDetails {
+  @scala.inline
+  def apply(localPath: java.lang.String, mappingType: java.lang.String, serverPath: java.lang.String): MappingDetails = {
+    val __obj = js.Dynamic.literal(localPath = localPath, mappingType = mappingType, serverPath = serverPath)
+  
+    __obj.asInstanceOf[MappingDetails]
+  }
+}
+

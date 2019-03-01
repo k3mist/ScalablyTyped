@@ -10,3 +10,12 @@ trait Choice extends js.Object {
   var value: js.Array[LocalValueBlock]
 }
 
+object Choice {
+  @scala.inline
+  def apply(optional: scala.Boolean, value: js.Array[LocalValueBlock]): Choice = {
+    val __obj = js.Dynamic.literal(optional = optional, value = value)
+  
+    __obj.asInstanceOf[Choice]
+  }
+}
+

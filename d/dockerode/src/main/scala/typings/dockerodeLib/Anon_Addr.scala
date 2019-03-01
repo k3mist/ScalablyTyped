@@ -15,3 +15,20 @@ trait Anon_Addr extends js.Object {
   var Name: java.lang.String
 }
 
+object Anon_Addr {
+  @scala.inline
+  def apply(
+    Addr: java.lang.String,
+    Cpus: scala.Double,
+    ID: java.lang.String,
+    IP: java.lang.String,
+    Labels: js.Any,
+    Memory: scala.Double,
+    Name: java.lang.String
+  ): Anon_Addr = {
+    val __obj = js.Dynamic.literal(Addr = Addr, Cpus = Cpus, ID = ID, IP = IP, Labels = Labels, Memory = Memory, Name = Name)
+  
+    __obj.asInstanceOf[Anon_Addr]
+  }
+}
+

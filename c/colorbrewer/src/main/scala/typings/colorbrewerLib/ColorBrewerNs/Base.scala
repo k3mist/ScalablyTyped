@@ -43,3 +43,48 @@ trait Base extends js.Object {
   var YlOrRd: NineColorScheme
 }
 
+object Base {
+  @scala.inline
+  def apply(
+    Accent: EightColorScheme,
+    Blues: NineColorScheme,
+    BrBG: ElevenColorScheme,
+    BuGn: NineColorScheme,
+    BuPu: NineColorScheme,
+    Dark2: EightColorScheme,
+    GnBu: NineColorScheme,
+    Greens: NineColorScheme,
+    Greys: NineColorScheme,
+    OrRd: NineColorScheme,
+    Oranges: NineColorScheme,
+    PRGn: ElevenColorScheme,
+    Paired: TwelveColorScheme,
+    Pastel1: NineColorScheme,
+    Pastel2: EightColorScheme,
+    PiYG: ElevenColorScheme,
+    PuBu: NineColorScheme,
+    PuBuGn: NineColorScheme,
+    PuOr: ElevenColorScheme,
+    PuRd: NineColorScheme,
+    Purples: NineColorScheme,
+    RdBu: ElevenColorScheme,
+    RdGy: ElevenColorScheme,
+    RdPu: NineColorScheme,
+    RdYlBu: ElevenColorScheme,
+    RdYlGn: ElevenColorScheme,
+    Reds: NineColorScheme,
+    Set1: NineColorScheme,
+    Set2: EightColorScheme,
+    Set3: TwelveColorScheme,
+    Spectral: ElevenColorScheme,
+    YlGn: NineColorScheme,
+    YlGnBu: NineColorScheme,
+    YlOrBr: NineColorScheme,
+    YlOrRd: NineColorScheme
+  ): Base = {
+    val __obj = js.Dynamic.literal(Accent = Accent, Blues = Blues, BrBG = BrBG, BuGn = BuGn, BuPu = BuPu, Dark2 = Dark2, GnBu = GnBu, Greens = Greens, Greys = Greys, OrRd = OrRd, Oranges = Oranges, PRGn = PRGn, Paired = Paired, Pastel1 = Pastel1, Pastel2 = Pastel2, PiYG = PiYG, PuBu = PuBu, PuBuGn = PuBuGn, PuOr = PuOr, PuRd = PuRd, Purples = Purples, RdBu = RdBu, RdGy = RdGy, RdPu = RdPu, RdYlBu = RdYlBu, RdYlGn = RdYlGn, Reds = Reds, Set1 = Set1, Set2 = Set2, Set3 = Set3, Spectral = Spectral, YlGn = YlGn, YlGnBu = YlGnBu, YlOrBr = YlOrBr, YlOrRd = YlOrRd)
+  
+    __obj.asInstanceOf[Base]
+  }
+}
+

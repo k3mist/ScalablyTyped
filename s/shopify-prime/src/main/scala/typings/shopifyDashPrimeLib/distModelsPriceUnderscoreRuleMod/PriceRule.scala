@@ -102,3 +102,47 @@ trait PriceRule
   var value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage
 }
 
+object PriceRule {
+  @scala.inline
+  def apply(
+    allocation_method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.across | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.each,
+    customer_selection: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.all | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.prerequisite,
+    once_per_customer: scala.Boolean,
+    starts_at: java.lang.String,
+    target_selection: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.all | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.entitled,
+    target_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.line_item | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.shipping_line,
+    title: java.lang.String,
+    value: java.lang.String,
+    value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage,
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    ends_at: java.lang.String = null,
+    entitled_collection_ids: js.Array[scala.Double] = null,
+    entitled_country_ids: js.Array[scala.Double] = null,
+    entitled_product_ids: js.Array[scala.Double] = null,
+    entitled_variant_ids: js.Array[scala.Double] = null,
+    id: scala.Int | scala.Double = null,
+    prerequisite_saved_search_ids: js.Array[scala.Double] = null,
+    prerequisite_shipping_price_range: shopifyDashPrimeLib.Anon_Lessthanorequalto = null,
+    prerequisite_subtotal_range: shopifyDashPrimeLib.Anon_Greaterthanorequalto = null,
+    updated_at: java.lang.String = null,
+    usage_limit: scala.Int | scala.Double = null
+  ): PriceRule = {
+    val __obj = js.Dynamic.literal(allocation_method = allocation_method.asInstanceOf[js.Any], customer_selection = customer_selection.asInstanceOf[js.Any], once_per_customer = once_per_customer, starts_at = starts_at, target_selection = target_selection.asInstanceOf[js.Any], target_type = target_type.asInstanceOf[js.Any], title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at)
+    if (entitled_collection_ids != null) __obj.updateDynamic("entitled_collection_ids")(entitled_collection_ids)
+    if (entitled_country_ids != null) __obj.updateDynamic("entitled_country_ids")(entitled_country_ids)
+    if (entitled_product_ids != null) __obj.updateDynamic("entitled_product_ids")(entitled_product_ids)
+    if (entitled_variant_ids != null) __obj.updateDynamic("entitled_variant_ids")(entitled_variant_ids)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (prerequisite_saved_search_ids != null) __obj.updateDynamic("prerequisite_saved_search_ids")(prerequisite_saved_search_ids)
+    if (prerequisite_shipping_price_range != null) __obj.updateDynamic("prerequisite_shipping_price_range")(prerequisite_shipping_price_range)
+    if (prerequisite_subtotal_range != null) __obj.updateDynamic("prerequisite_subtotal_range")(prerequisite_subtotal_range)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PriceRule]
+  }
+}
+

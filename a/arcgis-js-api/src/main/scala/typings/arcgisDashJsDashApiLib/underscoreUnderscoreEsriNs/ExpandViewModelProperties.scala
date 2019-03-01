@@ -28,3 +28,18 @@ trait ExpandViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object ExpandViewModelProperties {
+  @scala.inline
+  def apply(
+    autoCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    group: java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): ExpandViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExpandViewModelProperties]
+  }
+}
+

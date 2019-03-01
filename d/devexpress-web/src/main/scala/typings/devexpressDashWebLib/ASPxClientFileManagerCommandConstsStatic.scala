@@ -40,3 +40,21 @@ trait ASPxClientFileManagerCommandConstsStatic extends js.Object {
   var Upload: java.lang.String
 }
 
+object ASPxClientFileManagerCommandConstsStatic {
+  @scala.inline
+  def apply(
+    Copy: java.lang.String,
+    Create: java.lang.String,
+    Delete: java.lang.String,
+    Download: java.lang.String,
+    Move: java.lang.String,
+    Open: java.lang.String,
+    Rename: java.lang.String,
+    Upload: java.lang.String
+  ): ASPxClientFileManagerCommandConstsStatic = {
+    val __obj = js.Dynamic.literal(Copy = Copy, Create = Create, Delete = Delete, Download = Download, Move = Move, Open = Open, Rename = Rename, Upload = Upload)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerCommandConstsStatic]
+  }
+}
+

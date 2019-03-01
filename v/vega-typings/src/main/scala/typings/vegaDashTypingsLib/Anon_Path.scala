@@ -10,3 +10,12 @@ trait Anon_Path
   var path: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
 }
 
+object Anon_Path {
+  @scala.inline
+  def apply(path: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef): Anon_Path = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Path]
+  }
+}
+

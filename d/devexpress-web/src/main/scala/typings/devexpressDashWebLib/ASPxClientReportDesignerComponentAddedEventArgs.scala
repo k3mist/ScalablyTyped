@@ -21,3 +21,12 @@ trait ASPxClientReportDesignerComponentAddedEventArgs extends ASPxClientEventArg
   var Parent: js.Object
 }
 
+object ASPxClientReportDesignerComponentAddedEventArgs {
+  @scala.inline
+  def apply(Model: js.Object, Parent: js.Object): ASPxClientReportDesignerComponentAddedEventArgs = {
+    val __obj = js.Dynamic.literal(Model = Model, Parent = Parent)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
+  }
+}
+

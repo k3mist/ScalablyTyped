@@ -16,3 +16,20 @@ trait OptionContext extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object OptionContext {
+  @scala.inline
+  def apply(
+    component: stdLib.Element,
+    data: js.Object,
+    depth: scala.Double,
+    index: scala.Double,
+    leaf: scala.Boolean,
+    parent: stdLib.Element,
+    parentElement: stdLib.Element
+  ): OptionContext = {
+    val __obj = js.Dynamic.literal(component = component, data = data, depth = depth, index = index, leaf = leaf, parent = parent, parentElement = parentElement)
+  
+    __obj.asInstanceOf[OptionContext]
+  }
+}
+

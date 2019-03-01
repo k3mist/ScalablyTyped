@@ -10,3 +10,12 @@ trait IThemePalette extends js.Object {
   var name: java.lang.String
 }
 
+object IThemePalette {
+  @scala.inline
+  def apply(hues: IThemeHues, name: java.lang.String): IThemePalette = {
+    val __obj = js.Dynamic.literal(hues = hues, name = name)
+  
+    __obj.asInstanceOf[IThemePalette]
+  }
+}
+

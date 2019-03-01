@@ -10,3 +10,12 @@ trait Consumer extends js.Object {
   var consumerName: java.lang.String
 }
 
+object Consumer {
+  @scala.inline
+  def apply(consumerId: scala.Double, consumerName: java.lang.String): Consumer = {
+    val __obj = js.Dynamic.literal(consumerId = consumerId, consumerName = consumerName)
+  
+    __obj.asInstanceOf[Consumer]
+  }
+}
+

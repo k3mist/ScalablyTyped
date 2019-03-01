@@ -24,3 +24,16 @@ trait ScriptTypeProfile extends js.Object {
   var url: java.lang.String
 }
 
+object ScriptTypeProfile {
+  @scala.inline
+  def apply(
+    entries: js.Array[TypeProfileEntry],
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    url: java.lang.String
+  ): ScriptTypeProfile = {
+    val __obj = js.Dynamic.literal(entries = entries, scriptId = scriptId, url = url)
+  
+    __obj.asInstanceOf[ScriptTypeProfile]
+  }
+}
+

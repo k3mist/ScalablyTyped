@@ -18,3 +18,18 @@ trait ModeSwitchConfig extends js.Object {
   def callback(result: ModeSwitchItem): scala.Unit
 }
 
+object ModeSwitchConfig {
+  @scala.inline
+  def apply(
+    callback: js.Function1[ModeSwitchItem, scala.Unit],
+    items: js.Array[ModeSwitchItem],
+    headline: java.lang.String = null,
+    preventclose: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModeSwitchConfig = {
+    val __obj = js.Dynamic.literal(callback = callback, items = items)
+    if (headline != null) __obj.updateDynamic("headline")(headline)
+    if (!js.isUndefined(preventclose)) __obj.updateDynamic("preventclose")(preventclose)
+    __obj.asInstanceOf[ModeSwitchConfig]
+  }
+}
+

@@ -17,3 +17,18 @@ trait ISearchCondition extends js.Object {
   ): scala.Unit
 }
 
+object ISearchCondition {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ISearchCondition],
+    ConditionType: mfilesLib.MFilesNs.MFConditionType,
+    Expression: IExpression,
+    Set: js.Function3[IExpression, mfilesLib.MFilesNs.MFConditionType, ITypedValue, scala.Unit],
+    TypedValue: ITypedValue
+  ): ISearchCondition = {
+    val __obj = js.Dynamic.literal(Clone = Clone, ConditionType = ConditionType, Expression = Expression, Set = Set, TypedValue = TypedValue)
+  
+    __obj.asInstanceOf[ISearchCondition]
+  }
+}
+

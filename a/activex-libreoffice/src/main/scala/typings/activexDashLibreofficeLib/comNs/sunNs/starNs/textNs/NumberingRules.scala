@@ -29,3 +29,54 @@ trait NumberingRules
   var NumberingType: scala.Double
 }
 
+object NumberingRules {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    DefaultListId: java.lang.String,
+    ElementType: activexDashLibreofficeLib.`type`,
+    IsAbsoluteMargins: scala.Boolean,
+    IsAutomatic: scala.Boolean,
+    IsContinuousNumbering: scala.Boolean,
+    Name: java.lang.String,
+    NumberingIsOutline: scala.Boolean,
+    NumberingType: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): NumberingRules = {
+    val __obj = js.Dynamic.literal(Count = Count, DefaultListId = DefaultListId, ElementType = ElementType, IsAbsoluteMargins = IsAbsoluteMargins, IsAutomatic = IsAutomatic, IsContinuousNumbering = IsContinuousNumbering, Name = Name, NumberingIsOutline = NumberingIsOutline, NumberingType = NumberingType, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasElements = hasElements, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, replaceByIndex = replaceByIndex, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[NumberingRules]
+  }
+}
+

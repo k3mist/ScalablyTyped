@@ -18,3 +18,22 @@ trait ojThematicMapLinkSettableProperties
   var width: scala.Double
 }
 
+object ojThematicMapLinkSettableProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    color: java.lang.String,
+    endLocation: atOracleOraclejetLib.Anon_IdLocation,
+    selectable: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    shortDesc: java.lang.String,
+    startLocation: atOracleOraclejetLib.Anon_IdLocation,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    width: scala.Double
+  ): ojThematicMapLinkSettableProperties = {
+    val __obj = js.Dynamic.literal(categories = categories, color = color, endLocation = endLocation, selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc, startLocation = startLocation, svgClassName = svgClassName, svgStyle = svgStyle, width = width)
+  
+    __obj.asInstanceOf[ojThematicMapLinkSettableProperties]
+  }
+}
+

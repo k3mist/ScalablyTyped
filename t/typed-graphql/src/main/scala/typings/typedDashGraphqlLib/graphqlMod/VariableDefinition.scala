@@ -13,3 +13,19 @@ trait VariableDefinition extends Node {
   var variable: Variable
 }
 
+object VariableDefinition {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    `type`: Type,
+    variable: Variable,
+    defaultValue: Value = null,
+    loc: Location = null
+  ): VariableDefinition = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`, variable = variable)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[VariableDefinition]
+  }
+}
+

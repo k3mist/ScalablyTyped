@@ -47,3 +47,54 @@ trait PopupPanel extends js.Object {
   def show(): PopupPanel
 }
 
+object PopupPanel {
+  @scala.inline
+  def apply(
+    add: js.Function1[Widget, PopupPanel],
+    addAutoHidePartner: js.Function1[Component, PopupPanel],
+    addCloseHandler: js.Function1[Handler, PopupPanel],
+    addStyleDependentName: js.Function1[java.lang.String, PopupPanel],
+    addStyleName: js.Function1[java.lang.String, PopupPanel],
+    clear: js.Function0[PopupPanel],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    hide: js.Function0[PopupPanel],
+    setAnimationEnabled: js.Function1[scala.Boolean, PopupPanel],
+    setAutoHideEnabled: js.Function1[scala.Boolean, PopupPanel],
+    setGlassEnabled: js.Function1[scala.Boolean, PopupPanel],
+    setGlassStyleName: js.Function1[java.lang.String, PopupPanel],
+    setHeight: js.Function1[java.lang.String, PopupPanel],
+    setId: js.Function1[java.lang.String, PopupPanel],
+    setLayoutData: js.Function1[js.Object, PopupPanel],
+    setModal: js.Function1[scala.Boolean, PopupPanel],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      PopupPanel
+    ],
+    setPopupPosition: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      PopupPanel
+    ],
+    setPopupPositionAndShow: js.Function1[Component, PopupPanel],
+    setPreviewingAllNativeEvents: js.Function1[scala.Boolean, PopupPanel],
+    setSize: js.Function2[java.lang.String, java.lang.String, PopupPanel],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, PopupPanel],
+    setStyleAttributes: js.Function1[js.Object, PopupPanel],
+    setStyleName: js.Function1[java.lang.String, PopupPanel],
+    setStylePrimaryName: js.Function1[java.lang.String, PopupPanel],
+    setTag: js.Function1[java.lang.String, PopupPanel],
+    setTitle: js.Function1[java.lang.String, PopupPanel],
+    setVisible: js.Function1[scala.Boolean, PopupPanel],
+    setWidget: js.Function1[Widget, PopupPanel],
+    setWidth: js.Function1[java.lang.String, PopupPanel],
+    show: js.Function0[PopupPanel]
+  ): PopupPanel = {
+    val __obj = js.Dynamic.literal(add = add, addAutoHidePartner = addAutoHidePartner, addCloseHandler = addCloseHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, hide = hide, setAnimationEnabled = setAnimationEnabled, setAutoHideEnabled = setAutoHideEnabled, setGlassEnabled = setGlassEnabled, setGlassStyleName = setGlassStyleName, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setModal = setModal, setPixelSize = setPixelSize, setPopupPosition = setPopupPosition, setPopupPositionAndShow = setPopupPositionAndShow, setPreviewingAllNativeEvents = setPreviewingAllNativeEvents, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth, show = show)
+  
+    __obj.asInstanceOf[PopupPanel]
+  }
+}
+

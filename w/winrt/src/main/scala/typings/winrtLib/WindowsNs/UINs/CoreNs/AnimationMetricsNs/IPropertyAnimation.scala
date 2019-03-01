@@ -13,3 +13,18 @@ trait IPropertyAnimation extends js.Object {
   var `type`: PropertyAnimationType
 }
 
+object IPropertyAnimation {
+  @scala.inline
+  def apply(
+    control1: winrtLib.WindowsNs.FoundationNs.Point,
+    control2: winrtLib.WindowsNs.FoundationNs.Point,
+    delay: scala.Double,
+    duration: scala.Double,
+    `type`: PropertyAnimationType
+  ): IPropertyAnimation = {
+    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration, `type` = `type`)
+  
+    __obj.asInstanceOf[IPropertyAnimation]
+  }
+}
+

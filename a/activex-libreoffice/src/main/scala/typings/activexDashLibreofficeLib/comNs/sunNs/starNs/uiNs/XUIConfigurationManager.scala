@@ -115,3 +115,47 @@ trait XUIConfigurationManager
   def reset(): scala.Unit
 }
 
+object XUIConfigurationManager {
+  @scala.inline
+  def apply(
+    EventsManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ImageManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ShortCutManager: XAcceleratorConfiguration,
+    acquire: js.Function0[scala.Unit],
+    createSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
+    getEventsManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getImageManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getSettings: js.Function2[
+      java.lang.String, 
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    getShortCutManager: js.Function0[XAcceleratorConfiguration],
+    getUIElementsInfo: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    hasSettings: js.Function1[java.lang.String, scala.Boolean],
+    insertSettings: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSettings: js.Function1[java.lang.String, scala.Unit],
+    replaceSettings: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
+      scala.Unit
+    ],
+    reset: js.Function0[scala.Unit]
+  ): XUIConfigurationManager = {
+    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = acquire, createSettings = createSettings, getEventsManager = getEventsManager, getImageManager = getImageManager, getSettings = getSettings, getShortCutManager = getShortCutManager, getUIElementsInfo = getUIElementsInfo, hasSettings = hasSettings, insertSettings = insertSettings, queryInterface = queryInterface, release = release, removeSettings = removeSettings, replaceSettings = replaceSettings, reset = reset)
+  
+    __obj.asInstanceOf[XUIConfigurationManager]
+  }
+}
+

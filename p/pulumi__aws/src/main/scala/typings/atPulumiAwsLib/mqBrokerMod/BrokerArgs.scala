@@ -75,3 +75,38 @@ trait BrokerArgs extends js.Object {
   ]
 }
 
+object BrokerArgs {
+  @scala.inline
+  def apply(
+    brokerName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    engineType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    hostInstanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    users: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ConsoleAccessGroups]]
+    ],
+    applyImmediately: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    configuration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdRevisionInput] = null,
+    deploymentMode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    logs: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuditGeneral] = null,
+    maintenanceWindowStartTime: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DayOfWeekTimeOfDay] = null,
+    publiclyAccessible: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): BrokerArgs = {
+    val __obj = js.Dynamic.literal(brokerName = brokerName.asInstanceOf[js.Any], engineType = engineType.asInstanceOf[js.Any], engineVersion = engineVersion.asInstanceOf[js.Any], hostInstanceType = hostInstanceType.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (deploymentMode != null) __obj.updateDynamic("deploymentMode")(deploymentMode.asInstanceOf[js.Any])
+    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
+    if (maintenanceWindowStartTime != null) __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime.asInstanceOf[js.Any])
+    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrokerArgs]
+  }
+}
+

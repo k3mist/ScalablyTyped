@@ -24,3 +24,30 @@ trait IconSymbol3DLayerOutline extends AnonymousAccessor {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IconSymbol3DLayerOutline {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    color: Color = null,
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, IconSymbol3DLayerOutline]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], IconSymbol3DLayerOutline]) = null,
+    size: scala.Int | scala.Double = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): IconSymbol3DLayerOutline = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[IconSymbol3DLayerOutline]
+  }
+}
+

@@ -12,3 +12,12 @@ trait STATUS extends js.Object {
   var OK: java.lang.String
 }
 
+object STATUS {
+  @scala.inline
+  def apply(ERROR: java.lang.String, OK: java.lang.String): STATUS = {
+    val __obj = js.Dynamic.literal(ERROR = ERROR, OK = OK)
+  
+    __obj.asInstanceOf[STATUS]
+  }
+}
+

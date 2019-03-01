@@ -11,3 +11,16 @@ trait Anon_Dep extends js.Object {
   var source: java.lang.String
 }
 
+object Anon_Dep {
+  @scala.inline
+  def apply(
+    deps: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    `package`: js.Any,
+    source: java.lang.String
+  ): Anon_Dep = {
+    val __obj = js.Dynamic.literal(deps = deps, `package` = `package`, source = source)
+  
+    __obj.asInstanceOf[Anon_Dep]
+  }
+}
+

@@ -19,3 +19,12 @@ trait IngressBackend extends js.Object {
   val servicePort: scala.Double | java.lang.String
 }
 
+object IngressBackend {
+  @scala.inline
+  def apply(serviceName: java.lang.String, servicePort: scala.Double | java.lang.String): IngressBackend = {
+    val __obj = js.Dynamic.literal(serviceName = serviceName, servicePort = servicePort.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IngressBackend]
+  }
+}
+

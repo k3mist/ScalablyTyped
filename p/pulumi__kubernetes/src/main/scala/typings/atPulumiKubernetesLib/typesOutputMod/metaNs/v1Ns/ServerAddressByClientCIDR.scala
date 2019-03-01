@@ -22,3 +22,12 @@ trait ServerAddressByClientCIDR extends js.Object {
   val serverAddress: java.lang.String
 }
 
+object ServerAddressByClientCIDR {
+  @scala.inline
+  def apply(clientCIDR: java.lang.String, serverAddress: java.lang.String): ServerAddressByClientCIDR = {
+    val __obj = js.Dynamic.literal(clientCIDR = clientCIDR, serverAddress = serverAddress)
+  
+    __obj.asInstanceOf[ServerAddressByClientCIDR]
+  }
+}
+

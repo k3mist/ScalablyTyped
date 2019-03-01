@@ -13,3 +13,18 @@ trait Label extends js.Object {
   var url: java.lang.String
 }
 
+object Label {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    default: scala.Boolean,
+    id: scala.Double,
+    name: java.lang.String,
+    url: java.lang.String
+  ): Label = {
+    val __obj = js.Dynamic.literal(color = color, default = default, id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[Label]
+  }
+}
+

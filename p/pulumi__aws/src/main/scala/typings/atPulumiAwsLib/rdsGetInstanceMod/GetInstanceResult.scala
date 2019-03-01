@@ -156,3 +156,50 @@ trait GetInstanceResult extends js.Object {
   val vpcSecurityGroups: js.Array[java.lang.String]
 }
 
+object GetInstanceResult {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    allocatedStorage: scala.Double,
+    autoMinorVersionUpgrade: scala.Boolean,
+    availabilityZone: java.lang.String,
+    backupRetentionPeriod: scala.Double,
+    caCertIdentifier: java.lang.String,
+    dbClusterIdentifier: java.lang.String,
+    dbInstanceArn: java.lang.String,
+    dbInstanceClass: java.lang.String,
+    dbInstancePort: scala.Double,
+    dbName: java.lang.String,
+    dbParameterGroups: js.Array[java.lang.String],
+    dbSecurityGroups: js.Array[java.lang.String],
+    dbSubnetGroup: java.lang.String,
+    enabledCloudwatchLogsExports: js.Array[java.lang.String],
+    endpoint: java.lang.String,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    hostedZoneId: java.lang.String,
+    id: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    licenseModel: java.lang.String,
+    masterUsername: java.lang.String,
+    monitoringInterval: scala.Double,
+    monitoringRoleArn: java.lang.String,
+    multiAz: scala.Boolean,
+    optionGroupMemberships: js.Array[java.lang.String],
+    port: scala.Double,
+    preferredBackupWindow: java.lang.String,
+    preferredMaintenanceWindow: java.lang.String,
+    publiclyAccessible: scala.Boolean,
+    replicateSourceDb: java.lang.String,
+    storageEncrypted: scala.Boolean,
+    storageType: java.lang.String,
+    timezone: java.lang.String,
+    vpcSecurityGroups: js.Array[java.lang.String]
+  ): GetInstanceResult = {
+    val __obj = js.Dynamic.literal(address = address, allocatedStorage = allocatedStorage, autoMinorVersionUpgrade = autoMinorVersionUpgrade, availabilityZone = availabilityZone, backupRetentionPeriod = backupRetentionPeriod, caCertIdentifier = caCertIdentifier, dbClusterIdentifier = dbClusterIdentifier, dbInstanceArn = dbInstanceArn, dbInstanceClass = dbInstanceClass, dbInstancePort = dbInstancePort, dbName = dbName, dbParameterGroups = dbParameterGroups, dbSecurityGroups = dbSecurityGroups, dbSubnetGroup = dbSubnetGroup, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, hostedZoneId = hostedZoneId, id = id, iops = iops, kmsKeyId = kmsKeyId, licenseModel = licenseModel, masterUsername = masterUsername, monitoringInterval = monitoringInterval, monitoringRoleArn = monitoringRoleArn, multiAz = multiAz, optionGroupMemberships = optionGroupMemberships, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, replicateSourceDb = replicateSourceDb, storageEncrypted = storageEncrypted, storageType = storageType, timezone = timezone, vpcSecurityGroups = vpcSecurityGroups)
+  
+    __obj.asInstanceOf[GetInstanceResult]
+  }
+}
+

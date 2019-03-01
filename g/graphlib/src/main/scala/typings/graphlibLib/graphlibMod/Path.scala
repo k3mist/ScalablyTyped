@@ -10,3 +10,12 @@ trait Path extends js.Object {
   var predecessor: java.lang.String
 }
 
+object Path {
+  @scala.inline
+  def apply(distance: scala.Double, predecessor: java.lang.String): Path = {
+    val __obj = js.Dynamic.literal(distance = distance, predecessor = predecessor)
+  
+    __obj.asInstanceOf[Path]
+  }
+}
+

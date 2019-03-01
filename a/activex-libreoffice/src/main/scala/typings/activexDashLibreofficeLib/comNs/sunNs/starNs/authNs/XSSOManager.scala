@@ -37,3 +37,20 @@ trait XSSOManager
   def getMechanism(): java.lang.String
 }
 
+object XSSOManager {
+  @scala.inline
+  def apply(
+    Mechanism: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    createAcceptorContext: js.Function1[java.lang.String, XSSOAcceptorContext],
+    createInitiatorContext: js.Function3[java.lang.String, java.lang.String, java.lang.String, XSSOInitiatorContext],
+    getMechanism: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSSOManager = {
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, acquire = acquire, createAcceptorContext = createAcceptorContext, createInitiatorContext = createInitiatorContext, getMechanism = getMechanism, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSSOManager]
+  }
+}
+

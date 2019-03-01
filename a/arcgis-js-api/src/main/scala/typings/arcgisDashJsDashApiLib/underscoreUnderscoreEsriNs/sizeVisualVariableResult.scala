@@ -45,3 +45,22 @@ trait sizeVisualVariableResult
   var visualVariables: js.Array[SizeVariable]
 }
 
+object sizeVisualVariableResult {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfo,
+    basemapId: java.lang.String,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sizeScheme: SizeScheme,
+    statistics: SummaryStatisticsResult,
+    visualVariables: js.Array[SizeVariable]
+  ): sizeVisualVariableResult = {
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+  
+    __obj.asInstanceOf[sizeVisualVariableResult]
+  }
+}
+

@@ -16,3 +16,17 @@ trait ASPxClientFileManagerItemMovedEventArgs extends ASPxClientFileManagerActio
   var oldFolderFullName: java.lang.String
 }
 
+object ASPxClientFileManagerItemMovedEventArgs {
+  @scala.inline
+  def apply(
+    fullName: java.lang.String,
+    isFolder: scala.Boolean,
+    name: java.lang.String,
+    oldFolderFullName: java.lang.String
+  ): ASPxClientFileManagerItemMovedEventArgs = {
+    val __obj = js.Dynamic.literal(fullName = fullName, isFolder = isFolder, name = name, oldFolderFullName = oldFolderFullName)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerItemMovedEventArgs]
+  }
+}
+

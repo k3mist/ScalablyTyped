@@ -20,3 +20,20 @@ trait ASPxClientFABAction extends ASPxClientFABActionItemBase {
   def GetItemCount(): scala.Double
 }
 
+object ASPxClientFABAction {
+  @scala.inline
+  def apply(
+    GetActionItemByName: js.Function1[java.lang.String, ASPxClientFABActionItem],
+    GetActionName: js.Function0[java.lang.String],
+    GetContextName: js.Function0[java.lang.String],
+    GetItem: js.Function1[scala.Double, ASPxClientFABActionItem],
+    GetItemCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    SetText: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientFABAction = {
+    val __obj = js.Dynamic.literal(GetActionItemByName = GetActionItemByName, GetActionName = GetActionName, GetContextName = GetContextName, GetItem = GetItem, GetItemCount = GetItemCount, GetText = GetText, SetText = SetText)
+  
+    __obj.asInstanceOf[ASPxClientFABAction]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_Network extends js.Object {
   var websites: chromeLib.chromeNs.privacyNs.Websites
 }
 
+object Anon_Network {
+  @scala.inline
+  def apply(
+    network: chromeLib.chromeNs.privacyNs.Network,
+    services: chromeLib.chromeNs.privacyNs.Services,
+    websites: chromeLib.chromeNs.privacyNs.Websites
+  ): Anon_Network = {
+    val __obj = js.Dynamic.literal(network = network, services = services, websites = websites)
+  
+    __obj.asInstanceOf[Anon_Network]
+  }
+}
+

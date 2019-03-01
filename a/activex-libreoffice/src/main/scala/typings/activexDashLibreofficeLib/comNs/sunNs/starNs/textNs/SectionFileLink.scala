@@ -23,3 +23,12 @@ trait SectionFileLink extends js.Object {
   var FilterName: java.lang.String
 }
 
+object SectionFileLink {
+  @scala.inline
+  def apply(FileURL: java.lang.String, FilterName: java.lang.String): SectionFileLink = {
+    val __obj = js.Dynamic.literal(FileURL = FileURL, FilterName = FilterName)
+  
+    __obj.asInstanceOf[SectionFileLink]
+  }
+}
+

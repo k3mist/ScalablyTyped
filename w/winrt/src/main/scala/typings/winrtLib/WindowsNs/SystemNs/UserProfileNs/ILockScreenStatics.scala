@@ -12,3 +12,23 @@ trait ILockScreenStatics extends js.Object {
   def setImageStreamAsync(value: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object ILockScreenStatics {
+  @scala.inline
+  def apply(
+    getImageStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream],
+    originalImageFile: winrtLib.WindowsNs.FoundationNs.Uri,
+    setImageFileAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    setImageStreamAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ]
+  ): ILockScreenStatics = {
+    val __obj = js.Dynamic.literal(getImageStream = getImageStream, originalImageFile = originalImageFile, setImageFileAsync = setImageFileAsync, setImageStreamAsync = setImageStreamAsync)
+  
+    __obj.asInstanceOf[ILockScreenStatics]
+  }
+}
+

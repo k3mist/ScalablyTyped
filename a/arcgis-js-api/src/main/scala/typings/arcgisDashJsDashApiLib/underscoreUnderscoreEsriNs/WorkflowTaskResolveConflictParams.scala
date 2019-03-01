@@ -39,3 +39,21 @@ trait WorkflowTaskResolveConflictParams
   var user: java.lang.String
 }
 
+object WorkflowTaskResolveConflictParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    optionReturnCode: scala.Double,
+    optionStepIds: js.Array[scala.Double],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stepId: scala.Double,
+    user: java.lang.String
+  ): WorkflowTaskResolveConflictParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, optionReturnCode = optionReturnCode, optionStepIds = optionStepIds, propertyIsEnumerable = propertyIsEnumerable, stepId = stepId, user = user)
+  
+    __obj.asInstanceOf[WorkflowTaskResolveConflictParams]
+  }
+}
+

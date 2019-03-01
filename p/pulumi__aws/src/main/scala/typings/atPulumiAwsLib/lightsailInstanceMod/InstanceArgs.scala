@@ -35,3 +35,21 @@ trait InstanceArgs extends js.Object {
   val userData: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object InstanceArgs {
+  @scala.inline
+  def apply(
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    blueprintId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    bundleId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    keyPairName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    userData: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): InstanceArgs = {
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any])
+    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceArgs]
+  }
+}
+

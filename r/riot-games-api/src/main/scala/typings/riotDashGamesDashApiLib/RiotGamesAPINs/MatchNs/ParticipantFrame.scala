@@ -18,3 +18,23 @@ trait ParticipantFrame extends js.Object {
   var xp: scala.Double
 }
 
+object ParticipantFrame {
+  @scala.inline
+  def apply(
+    currentGold: scala.Double,
+    dominionScore: scala.Double,
+    jungleMinionsKilled: scala.Double,
+    level: scala.Double,
+    minionsKilled: scala.Double,
+    participantId: scala.Double,
+    position: Position,
+    teamScore: scala.Double,
+    totalGold: scala.Double,
+    xp: scala.Double
+  ): ParticipantFrame = {
+    val __obj = js.Dynamic.literal(currentGold = currentGold, dominionScore = dominionScore, jungleMinionsKilled = jungleMinionsKilled, level = level, minionsKilled = minionsKilled, participantId = participantId, position = position, teamScore = teamScore, totalGold = totalGold, xp = xp)
+  
+    __obj.asInstanceOf[ParticipantFrame]
+  }
+}
+

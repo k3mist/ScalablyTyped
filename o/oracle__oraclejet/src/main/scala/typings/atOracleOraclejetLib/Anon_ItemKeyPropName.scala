@@ -11,3 +11,16 @@ trait Anon_ItemKeyPropName
   var key: js.Any
 }
 
+object Anon_ItemKeyPropName {
+  @scala.inline
+  def apply(
+    item: stdLib.Element,
+    key: js.Any,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_ItemKeyPropName = {
+    val __obj = js.Dynamic.literal(item = item, key = key)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_ItemKeyPropName]
+  }
+}
+

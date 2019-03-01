@@ -10,3 +10,12 @@ trait SignResult extends js.Object {
   var signature: nodeLib.Buffer
 }
 
+object SignResult {
+  @scala.inline
+  def apply(recovery: scala.Double, signature: nodeLib.Buffer): SignResult = {
+    val __obj = js.Dynamic.literal(recovery = recovery, signature = signature)
+  
+    __obj.asInstanceOf[SignResult]
+  }
+}
+

@@ -12,3 +12,17 @@ trait ProjectionPicker extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object ProjectionPicker {
+  @scala.inline
+  def apply(
+    container: stdLib.Element,
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    viewModel: ProjectionPickerViewModel
+  ): ProjectionPicker = {
+    val __obj = js.Dynamic.literal(container = container, destroy = destroy, isDestroyed = isDestroyed, viewModel = viewModel)
+  
+    __obj.asInstanceOf[ProjectionPicker]
+  }
+}
+

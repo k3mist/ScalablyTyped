@@ -11,3 +11,12 @@ trait RerunParam extends js.Object {
   var param: java.lang.String
 }
 
+object RerunParam {
+  @scala.inline
+  def apply(`import`: java.lang.String, max_runs: scala.Double, param: java.lang.String): RerunParam = {
+    val __obj = js.Dynamic.literal(`import` = `import`, max_runs = max_runs, param = param)
+  
+    __obj.asInstanceOf[RerunParam]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Currency extends js.Object {
   val number: scala.Double
 }
 
+object Currency {
+  @scala.inline
+  def apply(code: java.lang.String, decimals: scala.Double, name: java.lang.String, number: scala.Double): Currency = {
+    val __obj = js.Dynamic.literal(code = code, decimals = decimals, name = name, number = number)
+  
+    __obj.asInstanceOf[Currency]
+  }
+}
+

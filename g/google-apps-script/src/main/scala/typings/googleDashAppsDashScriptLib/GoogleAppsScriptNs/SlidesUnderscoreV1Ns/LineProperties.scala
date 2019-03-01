@@ -21,3 +21,19 @@ trait LineProperties extends js.Object {
   var weight: Dimension
 }
 
+object LineProperties {
+  @scala.inline
+  def apply(
+    dash_style: DashStyle,
+    end_arrow: LinePropertiesArrowStyle,
+    line_fill: LinePropertiesLineFill,
+    link: Link,
+    start_arrow: LinePropertiesArrowStyle,
+    weight: Dimension
+  ): LineProperties = {
+    val __obj = js.Dynamic.literal(dash_style = dash_style, end_arrow = end_arrow, line_fill = line_fill, link = link, start_arrow = start_arrow, weight = weight)
+  
+    __obj.asInstanceOf[LineProperties]
+  }
+}
+

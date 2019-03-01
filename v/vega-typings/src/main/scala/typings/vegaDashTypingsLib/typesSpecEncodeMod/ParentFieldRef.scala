@@ -10,3 +10,12 @@ trait ParentFieldRef extends _Field {
   var parent: Field
 }
 
+object ParentFieldRef {
+  @scala.inline
+  def apply(parent: Field, level: scala.Int | scala.Double = null): ParentFieldRef = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParentFieldRef]
+  }
+}
+

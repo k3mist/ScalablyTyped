@@ -42,3 +42,14 @@ trait location extends js.Object {
   def createRenderer(params: locationCreateRendererParams): arcgisDashJsDashApiLib.IPromise[RendererResult]
 }
 
+object location {
+  @scala.inline
+  def apply(
+    createRenderer: js.Function1[locationCreateRendererParams, arcgisDashJsDashApiLib.IPromise[RendererResult]]
+  ): location = {
+    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+  
+    __obj.asInstanceOf[location]
+  }
+}
+

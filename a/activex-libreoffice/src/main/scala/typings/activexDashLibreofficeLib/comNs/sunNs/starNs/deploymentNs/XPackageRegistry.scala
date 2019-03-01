@@ -56,3 +56,24 @@ trait XPackageRegistry extends js.Object {
   def packageRemoved(url: java.lang.String, mediaType: java.lang.String): scala.Unit
 }
 
+object XPackageRegistry {
+  @scala.inline
+  def apply(
+    SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo],
+    bindPackage: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      scala.Boolean, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      XPackage
+    ],
+    getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
+    packageRemoved: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XPackageRegistry = {
+    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = bindPackage, getSupportedPackageTypes = getSupportedPackageTypes, packageRemoved = packageRemoved)
+  
+    __obj.asInstanceOf[XPackageRegistry]
+  }
+}
+

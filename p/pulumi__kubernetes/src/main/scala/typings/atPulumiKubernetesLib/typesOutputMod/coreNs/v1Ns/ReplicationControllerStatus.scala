@@ -39,3 +39,19 @@ trait ReplicationControllerStatus extends js.Object {
   val replicas: scala.Double
 }
 
+object ReplicationControllerStatus {
+  @scala.inline
+  def apply(
+    availableReplicas: scala.Double,
+    conditions: js.Array[ReplicationControllerCondition],
+    fullyLabeledReplicas: scala.Double,
+    observedGeneration: scala.Double,
+    readyReplicas: scala.Double,
+    replicas: scala.Double
+  ): ReplicationControllerStatus = {
+    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas, conditions = conditions, fullyLabeledReplicas = fullyLabeledReplicas, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas)
+  
+    __obj.asInstanceOf[ReplicationControllerStatus]
+  }
+}
+

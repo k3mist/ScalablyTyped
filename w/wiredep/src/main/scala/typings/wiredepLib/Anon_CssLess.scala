@@ -18,3 +18,12 @@ trait Anon_CssLess extends js.Object {
   var less: stdLib.RegExp
 }
 
+object Anon_CssLess {
+  @scala.inline
+  def apply(css: stdLib.RegExp, less: stdLib.RegExp): Anon_CssLess = {
+    val __obj = js.Dynamic.literal(css = css, less = less)
+  
+    __obj.asInstanceOf[Anon_CssLess]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_HalfExtents extends js.Object {
   var widthSegments: scala.Double
 }
 
+object Anon_HalfExtents {
+  @scala.inline
+  def apply(halfExtents: playcanvasLib.pcNs.Vec2, lenghtSegments: scala.Double, widthSegments: scala.Double): Anon_HalfExtents = {
+    val __obj = js.Dynamic.literal(halfExtents = halfExtents, lenghtSegments = lenghtSegments, widthSegments = widthSegments)
+  
+    __obj.asInstanceOf[Anon_HalfExtents]
+  }
+}
+

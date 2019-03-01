@@ -11,3 +11,12 @@ trait NickEvent extends js.Object {
   var nick: java.lang.String
 }
 
+object NickEvent {
+  @scala.inline
+  def apply(hostmask: java.lang.String, `new`: java.lang.String, nick: java.lang.String): NickEvent = {
+    val __obj = js.Dynamic.literal(hostmask = hostmask, `new` = `new`, nick = nick)
+  
+    __obj.asInstanceOf[NickEvent]
+  }
+}
+

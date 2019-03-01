@@ -13,3 +13,17 @@ trait Payment
   var destination: java.lang.String
 }
 
+object Payment {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    asset: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    destination: java.lang.String,
+    source: java.lang.String = null
+  ): Payment = {
+    val __obj = js.Dynamic.literal(amount = amount, asset = asset, destination = destination)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Payment]
+  }
+}
+

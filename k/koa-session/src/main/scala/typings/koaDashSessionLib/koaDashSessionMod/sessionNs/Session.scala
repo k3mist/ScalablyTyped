@@ -40,3 +40,24 @@ trait Session
   def toJSON(): js.Object
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    inspect: js.Function0[js.Object],
+    length: scala.Double,
+    populated: scala.Boolean,
+    save: js.Function0[scala.Unit],
+    toJSON: js.Function0[js.Object],
+    StringDictionary: /**
+    * allow to put any value on session object
+    */
+  /* _ */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    maxAge: scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session = null
+  ): Session = {
+    val __obj = js.Dynamic.literal(inspect = inspect, length = length, populated = populated, save = save, toJSON = toJSON)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Session]
+  }
+}
+

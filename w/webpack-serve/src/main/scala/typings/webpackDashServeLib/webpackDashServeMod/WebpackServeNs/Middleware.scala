@@ -12,3 +12,12 @@ trait Middleware extends js.Object {
   def webpack(): scala.Unit
 }
 
+object Middleware {
+  @scala.inline
+  def apply(content: js.Function0[scala.Unit], webpack: js.Function0[scala.Unit]): Middleware = {
+    val __obj = js.Dynamic.literal(content = content, webpack = webpack)
+  
+    __obj.asInstanceOf[Middleware]
+  }
+}
+

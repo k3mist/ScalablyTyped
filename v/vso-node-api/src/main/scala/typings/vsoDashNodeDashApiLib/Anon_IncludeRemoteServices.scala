@@ -10,3 +10,12 @@ trait Anon_IncludeRemoteServices extends js.Object {
   var none: scala.Double
 }
 
+object Anon_IncludeRemoteServices {
+  @scala.inline
+  def apply(includeRemoteServices: scala.Double, none: scala.Double): Anon_IncludeRemoteServices = {
+    val __obj = js.Dynamic.literal(includeRemoteServices = includeRemoteServices, none = none)
+  
+    __obj.asInstanceOf[Anon_IncludeRemoteServices]
+  }
+}
+

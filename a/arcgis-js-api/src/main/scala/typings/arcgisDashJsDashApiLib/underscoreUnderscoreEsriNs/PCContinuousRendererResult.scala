@@ -39,3 +39,21 @@ trait PCContinuousRendererResult
   var statistics: SummaryStatisticsResult
 }
 
+object PCContinuousRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    colorScheme: ColorScheme,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: PointCloudStretchRenderer,
+    statistics: SummaryStatisticsResult
+  ): PCContinuousRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, statistics = statistics)
+  
+    __obj.asInstanceOf[PCContinuousRendererResult]
+  }
+}
+

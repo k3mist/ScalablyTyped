@@ -11,3 +11,12 @@ trait Settings extends js.Object {
   var number: NumberSettings
 }
 
+object Settings {
+  @scala.inline
+  def apply(currency: CurrencySettings[_], number: NumberSettings): Settings = {
+    val __obj = js.Dynamic.literal(currency = currency, number = number)
+  
+    __obj.asInstanceOf[Settings]
+  }
+}
+

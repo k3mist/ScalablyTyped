@@ -18,3 +18,18 @@ trait Token extends js.Object {
   var `type`: java.lang.String | scala.Null
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    start: scala.Double,
+    state: js.Any,
+    string: java.lang.String,
+    `type`: java.lang.String = null
+  ): Token = {
+    val __obj = js.Dynamic.literal(end = end, start = start, state = state, string = string)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Token]
+  }
+}
+

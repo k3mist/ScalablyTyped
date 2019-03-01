@@ -14,3 +14,19 @@ trait StateReturnModel extends js.Object {
   var time: scala.Double
 }
 
+object StateReturnModel {
+  @scala.inline
+  def apply(
+    columns: js.Array[StateReturnModelColumns],
+    length: scala.Double,
+    order: js.Array[js.Array[java.lang.String | scala.Double]],
+    search: SearchSettings,
+    start: scala.Double,
+    time: scala.Double
+  ): StateReturnModel = {
+    val __obj = js.Dynamic.literal(columns = columns, length = length, order = order, search = search, start = start, time = time)
+  
+    __obj.asInstanceOf[StateReturnModel]
+  }
+}
+

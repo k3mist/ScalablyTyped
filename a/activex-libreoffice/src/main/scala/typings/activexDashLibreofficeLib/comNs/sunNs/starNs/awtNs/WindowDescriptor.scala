@@ -43,3 +43,19 @@ trait WindowDescriptor extends js.Object {
   var WindowServiceName: java.lang.String
 }
 
+object WindowDescriptor {
+  @scala.inline
+  def apply(
+    Bounds: Rectangle,
+    Parent: XWindowPeer,
+    ParentIndex: scala.Double,
+    Type: WindowClass,
+    WindowAttributes: scala.Double,
+    WindowServiceName: java.lang.String
+  ): WindowDescriptor = {
+    val __obj = js.Dynamic.literal(Bounds = Bounds, Parent = Parent, ParentIndex = ParentIndex, Type = Type, WindowAttributes = WindowAttributes, WindowServiceName = WindowServiceName)
+  
+    __obj.asInstanceOf[WindowDescriptor]
+  }
+}
+

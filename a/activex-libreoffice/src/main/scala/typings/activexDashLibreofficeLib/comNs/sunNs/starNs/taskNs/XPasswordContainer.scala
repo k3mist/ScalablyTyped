@@ -70,3 +70,36 @@ trait XPasswordContainer
   def removePersistent(Url: java.lang.String, UserName: java.lang.String): scala.Unit
 }
 
+object XPasswordContainer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    add: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XInteractionHandler, 
+      scala.Unit
+    ],
+    addPersistent: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XInteractionHandler, 
+      scala.Unit
+    ],
+    find: js.Function2[java.lang.String, XInteractionHandler, UrlRecord],
+    findForName: js.Function3[java.lang.String, java.lang.String, XInteractionHandler, UrlRecord],
+    getAllPersistent: js.Function1[XInteractionHandler, activexDashInteropLib.SafeArray[UrlRecord]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    removeAllPersistent: js.Function0[scala.Unit],
+    removePersistent: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XPasswordContainer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, add = add, addPersistent = addPersistent, find = find, findForName = findForName, getAllPersistent = getAllPersistent, queryInterface = queryInterface, release = release, remove = remove, removeAllPersistent = removeAllPersistent, removePersistent = removePersistent)
+  
+    __obj.asInstanceOf[XPasswordContainer]
+  }
+}
+

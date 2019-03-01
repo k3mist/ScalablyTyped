@@ -12,3 +12,16 @@ trait Paragraph
   var `type`: markedLib.markedLibStrings.paragraph
 }
 
+object Paragraph {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: markedLib.markedLibStrings.paragraph,
+    pre: js.UndefOr[scala.Boolean] = js.undefined
+  ): Paragraph = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre)
+    __obj.asInstanceOf[Paragraph]
+  }
+}
+

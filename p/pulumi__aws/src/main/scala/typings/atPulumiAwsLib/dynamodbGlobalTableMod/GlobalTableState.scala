@@ -24,3 +24,20 @@ trait GlobalTableState extends js.Object {
   ] = js.undefined
 }
 
+object GlobalTableState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    replicas: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RegionNameInput]]
+    ] = null
+  ): GlobalTableState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GlobalTableState]
+  }
+}
+

@@ -33,3 +33,18 @@ trait ICellNavApi[TEntity] extends js.Object {
   def scrollToFocus(rowEntity: TEntity, colDef: IColumnDef): angularLib.angularMod.angularNs.IPromise[_]
 }
 
+object ICellNavApi {
+  @scala.inline
+  def apply[TEntity](
+    getCurrentSelection: js.Function0[js.Array[IRowCol[TEntity]]],
+    getFocusedCell: js.Function0[IRowCol[TEntity]],
+    on: uiDashGridLib.Anon_Handler[TEntity],
+    rowColSelectIndex: js.Function1[IRowCol[TEntity], scala.Double],
+    scrollToFocus: js.Function2[TEntity, IColumnDef, angularLib.angularMod.angularNs.IPromise[_]]
+  ): ICellNavApi[TEntity] = {
+    val __obj = js.Dynamic.literal(getCurrentSelection = getCurrentSelection, getFocusedCell = getFocusedCell, on = on, rowColSelectIndex = rowColSelectIndex, scrollToFocus = scrollToFocus)
+  
+    __obj.asInstanceOf[ICellNavApi[TEntity]]
+  }
+}
+

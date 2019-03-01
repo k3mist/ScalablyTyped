@@ -13,3 +13,18 @@ trait ICacheNameDetails extends js.Object {
   var suffix: java.lang.String
 }
 
+object ICacheNameDetails {
+  @scala.inline
+  def apply(
+    googleAnalytics: java.lang.String,
+    precache: java.lang.String,
+    prefix: java.lang.String,
+    runtime: java.lang.String,
+    suffix: java.lang.String
+  ): ICacheNameDetails = {
+    val __obj = js.Dynamic.literal(googleAnalytics = googleAnalytics, precache = precache, prefix = prefix, runtime = runtime, suffix = suffix)
+  
+    __obj.asInstanceOf[ICacheNameDetails]
+  }
+}
+

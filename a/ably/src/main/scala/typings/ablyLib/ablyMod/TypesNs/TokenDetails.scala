@@ -13,3 +13,18 @@ trait TokenDetails extends js.Object {
   var token: java.lang.String
 }
 
+object TokenDetails {
+  @scala.inline
+  def apply(
+    capability: java.lang.String,
+    expires: scala.Double,
+    issued: scala.Double,
+    token: java.lang.String,
+    clientId: java.lang.String = null
+  ): TokenDetails = {
+    val __obj = js.Dynamic.literal(capability = capability, expires = expires, issued = issued, token = token)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    __obj.asInstanceOf[TokenDetails]
+  }
+}
+

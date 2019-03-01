@@ -15,3 +15,17 @@ trait ASPxClientHtmlEditorPlaceholderDialog extends ASPxClientHtmlEditorDialogBa
   def GetPlaceholderNameListBox(): ASPxClientListBox
 }
 
+object ASPxClientHtmlEditorPlaceholderDialog {
+  @scala.inline
+  def apply(
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetPlaceholderNameListBox: js.Function0[ASPxClientListBox]
+  ): ASPxClientHtmlEditorPlaceholderDialog = {
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton, GetPlaceholderNameListBox = GetPlaceholderNameListBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorPlaceholderDialog]
+  }
+}
+

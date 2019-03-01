@@ -26,3 +26,18 @@ trait SizeStopProperties extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SizeStopProperties {
+  @scala.inline
+  def apply(
+    label: java.lang.String = null,
+    size: scala.Double | java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): SizeStopProperties = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SizeStopProperties]
+  }
+}
+

@@ -13,3 +13,18 @@ trait IScheduledToastNotification extends js.Object {
   var snoozeInterval: scala.Double
 }
 
+object IScheduledToastNotification {
+  @scala.inline
+  def apply(
+    content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
+    deliveryTime: stdLib.Date,
+    id: java.lang.String,
+    maximumSnoozeCount: scala.Double,
+    snoozeInterval: scala.Double
+  ): IScheduledToastNotification = {
+    val __obj = js.Dynamic.literal(content = content, deliveryTime = deliveryTime, id = id, maximumSnoozeCount = maximumSnoozeCount, snoozeInterval = snoozeInterval)
+  
+    __obj.asInstanceOf[IScheduledToastNotification]
+  }
+}
+

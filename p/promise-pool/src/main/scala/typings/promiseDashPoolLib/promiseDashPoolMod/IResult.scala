@@ -11,3 +11,12 @@ trait IResult extends js.Object {
   var total: scala.Double
 }
 
+object IResult {
+  @scala.inline
+  def apply(fulfilled: scala.Double, rejected: scala.Double, total: scala.Double): IResult = {
+    val __obj = js.Dynamic.literal(fulfilled = fulfilled, rejected = rejected, total = total)
+  
+    __obj.asInstanceOf[IResult]
+  }
+}
+

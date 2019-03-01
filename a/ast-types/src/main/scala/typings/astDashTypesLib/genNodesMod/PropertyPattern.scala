@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.PropertyPattern
 }
 
+object PropertyPattern {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    pattern: astDashTypesLib.genKindsMod.PatternKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.PropertyPattern
+  ): PropertyPattern = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], pattern = pattern, `type` = `type`)
+  
+    __obj.asInstanceOf[PropertyPattern]
+  }
+}
+

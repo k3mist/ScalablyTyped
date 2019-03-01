@@ -56,3 +56,35 @@ trait XSheetOutline
   ): scala.Unit
 }
 
+object XSheetOutline {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    autoOutline: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    clearOutline: js.Function0[scala.Unit],
+    group: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
+      scala.Unit
+    ],
+    hideDetail: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    showDetail: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    showLevel: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
+      scala.Unit
+    ],
+    ungroup: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableOrientation, 
+      scala.Unit
+    ]
+  ): XSheetOutline = {
+    val __obj = js.Dynamic.literal(acquire = acquire, autoOutline = autoOutline, clearOutline = clearOutline, group = group, hideDetail = hideDetail, queryInterface = queryInterface, release = release, showDetail = showDetail, showLevel = showLevel, ungroup = ungroup)
+  
+    __obj.asInstanceOf[XSheetOutline]
+  }
+}
+

@@ -23,3 +23,19 @@ trait IntegerBezierSegment2D extends js.Object {
   var Py: scala.Double
 }
 
+object IntegerBezierSegment2D {
+  @scala.inline
+  def apply(
+    C1x: scala.Double,
+    C1y: scala.Double,
+    C2x: scala.Double,
+    C2y: scala.Double,
+    Px: scala.Double,
+    Py: scala.Double
+  ): IntegerBezierSegment2D = {
+    val __obj = js.Dynamic.literal(C1x = C1x, C1y = C1y, C2x = C2x, C2y = C2y, Px = Px, Py = Py)
+  
+    __obj.asInstanceOf[IntegerBezierSegment2D]
+  }
+}
+

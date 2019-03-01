@@ -10,3 +10,12 @@ trait GroupDto extends js.Object {
   var key: java.lang.String
 }
 
+object GroupDto {
+  @scala.inline
+  def apply(MaxGroupOwnable: java.lang.String, key: java.lang.String): GroupDto = {
+    val __obj = js.Dynamic.literal(MaxGroupOwnable = MaxGroupOwnable, key = key)
+  
+    __obj.asInstanceOf[GroupDto]
+  }
+}
+

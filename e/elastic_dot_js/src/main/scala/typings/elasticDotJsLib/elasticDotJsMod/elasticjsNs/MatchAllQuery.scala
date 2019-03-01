@@ -21,3 +21,16 @@ trait MatchAllQuery extends Query {
   def toJSON(): js.Any
 }
 
+object MatchAllQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, MatchAllQuery],
+    toJSON: js.Function0[js.Any]
+  ): MatchAllQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, toJSON = toJSON)
+  
+    __obj.asInstanceOf[MatchAllQuery]
+  }
+}
+

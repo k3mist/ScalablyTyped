@@ -25,3 +25,17 @@ trait TableItemArgs extends js.Object {
   val tableName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object TableItemArgs {
+  @scala.inline
+  def apply(
+    hashKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    item: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    tableName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    rangeKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): TableItemArgs = {
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableItemArgs]
+  }
+}
+

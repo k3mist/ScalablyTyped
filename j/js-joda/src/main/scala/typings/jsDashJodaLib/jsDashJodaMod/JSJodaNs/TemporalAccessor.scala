@@ -11,3 +11,16 @@ trait TemporalAccessor extends js.Object {
   def range(field: TemporalField): ValueRange
 }
 
+object TemporalAccessor {
+  @scala.inline
+  def apply(
+    get: js.Function1[TemporalField, scala.Double],
+    query: js.Function1[TemporalQuery, js.Any],
+    range: js.Function1[TemporalField, ValueRange]
+  ): TemporalAccessor = {
+    val __obj = js.Dynamic.literal(get = get, query = query, range = range)
+  
+    __obj.asInstanceOf[TemporalAccessor]
+  }
+}
+

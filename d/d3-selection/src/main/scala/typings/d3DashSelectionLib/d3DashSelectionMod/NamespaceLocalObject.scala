@@ -16,3 +16,12 @@ trait NamespaceLocalObject extends js.Object {
   var space: java.lang.String
 }
 
+object NamespaceLocalObject {
+  @scala.inline
+  def apply(local: java.lang.String, space: java.lang.String): NamespaceLocalObject = {
+    val __obj = js.Dynamic.literal(local = local, space = space)
+  
+    __obj.asInstanceOf[NamespaceLocalObject]
+  }
+}
+

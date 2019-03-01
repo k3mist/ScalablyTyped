@@ -15,3 +15,17 @@ trait MeshOffsetParams
   var geographic: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MeshOffsetParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    geographic: js.UndefOr[scala.Boolean] = js.undefined
+  ): MeshOffsetParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
+    __obj.asInstanceOf[MeshOffsetParams]
+  }
+}
+

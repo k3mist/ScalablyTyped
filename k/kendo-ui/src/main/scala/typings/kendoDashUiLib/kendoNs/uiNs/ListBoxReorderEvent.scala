@@ -11,3 +11,21 @@ trait ListBoxReorderEvent extends ListBoxEvent {
   var offset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListBoxReorderEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ListBox,
+    dataItems: js.Any = null,
+    items: js.Any = null,
+    offset: scala.Int | scala.Double = null
+  ): ListBoxReorderEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListBoxReorderEvent]
+  }
+}
+

@@ -62,3 +62,20 @@ trait Render extends js.Object {
   var textures: js.Any
 }
 
+object Render {
+  @scala.inline
+  def apply(
+    bounds: Bounds,
+    canvas: stdLib.HTMLCanvasElement,
+    context: stdLib.CanvasRenderingContext2D,
+    controller: js.Any,
+    element: stdLib.HTMLElement,
+    options: IRendererOptions,
+    textures: js.Any
+  ): Render = {
+    val __obj = js.Dynamic.literal(bounds = bounds, canvas = canvas, context = context, controller = controller, element = element, options = options, textures = textures)
+  
+    __obj.asInstanceOf[Render]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_Architecture extends js.Object {
   var utcOffset: scala.Double
 }
 
+object Anon_Architecture {
+  @scala.inline
+  def apply(
+    architecture: java.lang.String,
+    availablePhysicalMemory: scala.Double,
+    cpu: Anon_Model,
+    osVersion: java.lang.String,
+    totalPhysicalMemory: scala.Double,
+    utcOffset: scala.Double,
+    processorCount: scala.Int | scala.Double = null
+  ): Anon_Architecture = {
+    val __obj = js.Dynamic.literal(architecture = architecture, availablePhysicalMemory = availablePhysicalMemory, cpu = cpu, osVersion = osVersion, totalPhysicalMemory = totalPhysicalMemory, utcOffset = utcOffset)
+    if (processorCount != null) __obj.updateDynamic("processorCount")(processorCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Architecture]
+  }
+}
+

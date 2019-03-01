@@ -11,3 +11,16 @@ trait Anon_Created extends js.Object {
   var updated: js.Array[java.lang.String]
 }
 
+object Anon_Created {
+  @scala.inline
+  def apply(
+    created: js.Array[java.lang.String],
+    deleted: js.Array[java.lang.String],
+    updated: js.Array[java.lang.String]
+  ): Anon_Created = {
+    val __obj = js.Dynamic.literal(created = created, deleted = deleted, updated = updated)
+  
+    __obj.asInstanceOf[Anon_Created]
+  }
+}
+

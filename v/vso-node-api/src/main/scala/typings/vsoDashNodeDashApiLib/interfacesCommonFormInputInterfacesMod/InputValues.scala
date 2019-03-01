@@ -36,3 +36,20 @@ trait InputValues extends js.Object {
   var possibleValues: js.Array[InputValue]
 }
 
+object InputValues {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String,
+    error: InputValuesError,
+    inputId: java.lang.String,
+    isDisabled: scala.Boolean,
+    isLimitedToPossibleValues: scala.Boolean,
+    isReadOnly: scala.Boolean,
+    possibleValues: js.Array[InputValue]
+  ): InputValues = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, error = error, inputId = inputId, isDisabled = isDisabled, isLimitedToPossibleValues = isLimitedToPossibleValues, isReadOnly = isReadOnly, possibleValues = possibleValues)
+  
+    __obj.asInstanceOf[InputValues]
+  }
+}
+

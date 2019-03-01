@@ -67,3 +67,36 @@ trait EnhancedCustomShapeExtrusion extends js.Object {
   var ViewPoint: Position3D
 }
 
+object EnhancedCustomShapeExtrusion {
+  @scala.inline
+  def apply(
+    Brightness: scala.Double,
+    Depth: EnhancedCustomShapeParameterPair,
+    Diffusion: scala.Double,
+    Extrusion: scala.Boolean,
+    ExtrusionColor: scala.Boolean,
+    FirstLightDirection: Direction3D,
+    FirstLightHarsh: scala.Boolean,
+    FirstLightLevel: scala.Double,
+    LightFace: scala.Boolean,
+    Metal: scala.Boolean,
+    NumberOfLineSegments: scala.Double,
+    Origin: EnhancedCustomShapeParameterPair,
+    ProjectionMode: ProjectionMode,
+    RotateAngle: EnhancedCustomShapeParameterPair,
+    RotationCenter: Direction3D,
+    SecondLightDirection: Direction3D,
+    SecondLightHarsh: scala.Boolean,
+    SecondLightLevel: scala.Double,
+    ShadeMode: ShadeMode,
+    Shininess: scala.Double,
+    Skew: EnhancedCustomShapeParameterPair,
+    Specularity: scala.Double,
+    ViewPoint: Position3D
+  ): EnhancedCustomShapeExtrusion = {
+    val __obj = js.Dynamic.literal(Brightness = Brightness, Depth = Depth, Diffusion = Diffusion, Extrusion = Extrusion, ExtrusionColor = ExtrusionColor, FirstLightDirection = FirstLightDirection, FirstLightHarsh = FirstLightHarsh, FirstLightLevel = FirstLightLevel, LightFace = LightFace, Metal = Metal, NumberOfLineSegments = NumberOfLineSegments, Origin = Origin, ProjectionMode = ProjectionMode, RotateAngle = RotateAngle, RotationCenter = RotationCenter, SecondLightDirection = SecondLightDirection, SecondLightHarsh = SecondLightHarsh, SecondLightLevel = SecondLightLevel, ShadeMode = ShadeMode, Shininess = Shininess, Skew = Skew, Specularity = Specularity, ViewPoint = ViewPoint)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeExtrusion]
+  }
+}
+

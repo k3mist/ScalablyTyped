@@ -10,3 +10,12 @@ trait Anon_Assigned extends js.Object {
   var inherited: scala.Double
 }
 
+object Anon_Assigned {
+  @scala.inline
+  def apply(assigned: scala.Double, inherited: scala.Double): Anon_Assigned = {
+    val __obj = js.Dynamic.literal(assigned = assigned, inherited = inherited)
+  
+    __obj.asInstanceOf[Anon_Assigned]
+  }
+}
+

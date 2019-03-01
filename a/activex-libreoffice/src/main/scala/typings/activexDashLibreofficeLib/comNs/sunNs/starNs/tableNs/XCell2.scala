@@ -25,3 +25,28 @@ trait XCell2 extends XCell {
   def setFormulaString(aFormula: java.lang.String): scala.Unit
 }
 
+object XCell2 {
+  @scala.inline
+  def apply(
+    Error: scala.Double,
+    Formula: java.lang.String,
+    Type: CellContentType,
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getError: js.Function0[scala.Double],
+    getFormula: js.Function0[java.lang.String],
+    getType: js.Function0[CellContentType],
+    getValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFormula: js.Function1[java.lang.String, scala.Unit],
+    setFormulaResult: js.Function1[scala.Double, scala.Unit],
+    setFormulaString: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): XCell2 = {
+    val __obj = js.Dynamic.literal(Error = Error, Formula = Formula, Type = Type, Value = Value, acquire = acquire, getError = getError, getFormula = getFormula, getType = getType, getValue = getValue, queryInterface = queryInterface, release = release, setFormula = setFormula, setFormulaResult = setFormulaResult, setFormulaString = setFormulaString, setValue = setValue)
+  
+    __obj.asInstanceOf[XCell2]
+  }
+}
+

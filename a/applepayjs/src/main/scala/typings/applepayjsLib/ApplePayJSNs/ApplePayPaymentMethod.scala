@@ -27,3 +27,17 @@ trait ApplePayPaymentMethod extends js.Object {
   var `type`: ApplePayPaymentMethodType
 }
 
+object ApplePayPaymentMethod {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    network: java.lang.String,
+    paymentPass: ApplePayPaymentPass,
+    `type`: ApplePayPaymentMethodType
+  ): ApplePayPaymentMethod = {
+    val __obj = js.Dynamic.literal(displayName = displayName, network = network, paymentPass = paymentPass, `type` = `type`)
+  
+    __obj.asInstanceOf[ApplePayPaymentMethod]
+  }
+}
+

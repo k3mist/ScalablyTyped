@@ -15,3 +15,17 @@ trait FeatureLayerGetFieldDomainOptions
   var feature: Graphic
 }
 
+object FeatureLayerGetFieldDomainOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    feature: Graphic,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): FeatureLayerGetFieldDomainOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, feature = feature, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[FeatureLayerGetFieldDomainOptions]
+  }
+}
+

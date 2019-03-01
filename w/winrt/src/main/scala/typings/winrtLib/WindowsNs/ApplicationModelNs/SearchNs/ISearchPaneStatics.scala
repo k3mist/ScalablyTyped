@@ -9,3 +9,12 @@ trait ISearchPaneStatics extends js.Object {
   def getForCurrentView(): SearchPane
 }
 
+object ISearchPaneStatics {
+  @scala.inline
+  def apply(getForCurrentView: js.Function0[SearchPane]): ISearchPaneStatics = {
+    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView)
+  
+    __obj.asInstanceOf[ISearchPaneStatics]
+  }
+}
+

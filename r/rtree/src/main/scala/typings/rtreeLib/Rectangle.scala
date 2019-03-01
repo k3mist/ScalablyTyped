@@ -12,3 +12,12 @@ trait Rectangle extends js.Object {
   var y: scala.Double
 }
 
+object Rectangle {
+  @scala.inline
+  def apply(h: scala.Double, w: scala.Double, x: scala.Double, y: scala.Double): Rectangle = {
+    val __obj = js.Dynamic.literal(h = h, w = w, x = x, y = y)
+  
+    __obj.asInstanceOf[Rectangle]
+  }
+}
+

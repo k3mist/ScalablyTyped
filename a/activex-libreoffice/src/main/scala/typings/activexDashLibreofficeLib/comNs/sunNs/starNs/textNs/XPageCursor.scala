@@ -37,3 +37,25 @@ trait XPageCursor
   def jumpToStartOfPage(): scala.Boolean
 }
 
+object XPageCursor {
+  @scala.inline
+  def apply(
+    Page: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getPage: js.Function0[scala.Double],
+    jumpToEndOfPage: js.Function0[scala.Boolean],
+    jumpToFirstPage: js.Function0[scala.Boolean],
+    jumpToLastPage: js.Function0[scala.Boolean],
+    jumpToNextPage: js.Function0[scala.Boolean],
+    jumpToPage: js.Function1[scala.Double, scala.Boolean],
+    jumpToPreviousPage: js.Function0[scala.Boolean],
+    jumpToStartOfPage: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPageCursor = {
+    val __obj = js.Dynamic.literal(Page = Page, acquire = acquire, getPage = getPage, jumpToEndOfPage = jumpToEndOfPage, jumpToFirstPage = jumpToFirstPage, jumpToLastPage = jumpToLastPage, jumpToNextPage = jumpToNextPage, jumpToPage = jumpToPage, jumpToPreviousPage = jumpToPreviousPage, jumpToStartOfPage = jumpToStartOfPage, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPageCursor]
+  }
+}
+

@@ -52,3 +52,37 @@ trait XScrollBar
   def setVisibleSize(n: scala.Double): scala.Unit
 }
 
+object XScrollBar {
+  @scala.inline
+  def apply(
+    BlockIncrement: scala.Double,
+    LineIncrement: scala.Double,
+    Maximum: scala.Double,
+    Orientation: scala.Double,
+    Value: scala.Double,
+    VisibleSize: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
+    getBlockIncrement: js.Function0[scala.Double],
+    getLineIncrement: js.Function0[scala.Double],
+    getMaximum: js.Function0[scala.Double],
+    getOrientation: js.Function0[scala.Double],
+    getValue: js.Function0[scala.Double],
+    getVisibleSize: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
+    setBlockIncrement: js.Function1[scala.Double, scala.Unit],
+    setLineIncrement: js.Function1[scala.Double, scala.Unit],
+    setMaximum: js.Function1[scala.Double, scala.Unit],
+    setOrientation: js.Function1[scala.Double, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit],
+    setValues: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    setVisibleSize: js.Function1[scala.Double, scala.Unit]
+  ): XScrollBar = {
+    val __obj = js.Dynamic.literal(BlockIncrement = BlockIncrement, LineIncrement = LineIncrement, Maximum = Maximum, Orientation = Orientation, Value = Value, VisibleSize = VisibleSize, acquire = acquire, addAdjustmentListener = addAdjustmentListener, getBlockIncrement = getBlockIncrement, getLineIncrement = getLineIncrement, getMaximum = getMaximum, getOrientation = getOrientation, getValue = getValue, getVisibleSize = getVisibleSize, queryInterface = queryInterface, release = release, removeAdjustmentListener = removeAdjustmentListener, setBlockIncrement = setBlockIncrement, setLineIncrement = setLineIncrement, setMaximum = setMaximum, setOrientation = setOrientation, setValue = setValue, setValues = setValues, setVisibleSize = setVisibleSize)
+  
+    __obj.asInstanceOf[XScrollBar]
+  }
+}
+

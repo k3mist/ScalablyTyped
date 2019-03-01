@@ -15,3 +15,12 @@ trait EnhancedCustomShapeTextPath extends js.Object {
   var TextPathMode: EnhancedCustomShapeTextPathMode
 }
 
+object EnhancedCustomShapeTextPath {
+  @scala.inline
+  def apply(ScaleX: scala.Boolean, TextPath: scala.Boolean, TextPathMode: EnhancedCustomShapeTextPathMode): EnhancedCustomShapeTextPath = {
+    val __obj = js.Dynamic.literal(ScaleX = ScaleX, TextPath = TextPath, TextPathMode = TextPathMode)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeTextPath]
+  }
+}
+

@@ -10,3 +10,12 @@ trait BoothCycle extends js.Object {
   var moderator: java.lang.String
 }
 
+object BoothCycle {
+  @scala.inline
+  def apply(cycle: scala.Boolean, moderator: java.lang.String): BoothCycle = {
+    val __obj = js.Dynamic.literal(cycle = cycle, moderator = moderator)
+  
+    __obj.asInstanceOf[BoothCycle]
+  }
+}
+

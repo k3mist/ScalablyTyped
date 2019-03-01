@@ -12,3 +12,17 @@ trait CreditCardType extends js.Object {
   var short_name: java.lang.String
 }
 
+object CreditCardType {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    short_name: java.lang.String
+  ): CreditCardType = {
+    val __obj = js.Dynamic.literal(length = length, name = name, prefix = prefix, short_name = short_name)
+  
+    __obj.asInstanceOf[CreditCardType]
+  }
+}
+

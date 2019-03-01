@@ -13,3 +13,18 @@ trait Anon_BodyABodyBShapeA extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_BodyABodyBShapeA {
+  @scala.inline
+  def apply(
+    bodyA: p2Lib.p2Mod.p2Ns.Body,
+    bodyB: p2Lib.p2Mod.p2Ns.Body,
+    shapeA: p2Lib.p2Mod.p2Ns.Shape,
+    shapeB: p2Lib.p2Mod.p2Ns.Shape,
+    `type`: java.lang.String
+  ): Anon_BodyABodyBShapeA = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, shapeA = shapeA, shapeB = shapeB, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_BodyABodyBShapeA]
+  }
+}
+

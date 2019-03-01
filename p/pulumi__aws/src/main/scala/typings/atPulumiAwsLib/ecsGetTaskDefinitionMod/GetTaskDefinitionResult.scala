@@ -32,3 +32,19 @@ trait GetTaskDefinitionResult extends js.Object {
   val taskRoleArn: java.lang.String
 }
 
+object GetTaskDefinitionResult {
+  @scala.inline
+  def apply(
+    family: java.lang.String,
+    id: java.lang.String,
+    networkMode: java.lang.String,
+    revision: scala.Double,
+    status: java.lang.String,
+    taskRoleArn: java.lang.String
+  ): GetTaskDefinitionResult = {
+    val __obj = js.Dynamic.literal(family = family, id = id, networkMode = networkMode, revision = revision, status = status, taskRoleArn = taskRoleArn)
+  
+    __obj.asInstanceOf[GetTaskDefinitionResult]
+  }
+}
+

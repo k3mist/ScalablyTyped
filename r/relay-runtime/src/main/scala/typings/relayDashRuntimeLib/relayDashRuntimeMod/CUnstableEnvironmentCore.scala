@@ -107,3 +107,39 @@ trait CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNod
   def getVariablesFromObject(operationVariables: Variables, fragments: CFragmentMap[TFragment], props: Props): Variables
 }
 
+object CUnstableEnvironmentCore {
+  @scala.inline
+  def apply[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation](
+    areEqualSelectors: js.Function2[CSelector[TNode], CSelector[TNode], scala.Boolean],
+    createFragmentSpecResolver: js.Function5[
+      CRelayContext[TEnvironment], 
+      java.lang.String, 
+      CFragmentMap[TFragment], 
+      Props, 
+      js.Function0[scala.Unit], 
+      FragmentSpecResolver
+    ],
+    createOperationSelector: js.Function2[TOperation, Variables, COperationSelector[TNode, TOperation]],
+    getDataIDsFromObject: js.Function2[
+      CFragmentMap[TFragment], 
+      Props, 
+      org.scalablytyped.runtime.StringDictionary[js.UndefOr[DataID | js.Array[DataID] | scala.Null]]
+    ],
+    getFragment: js.Function1[TGraphQLTaggedNode, TFragment],
+    getOperation: js.Function1[TGraphQLTaggedNode, TOperation],
+    getSelector: js.Function3[Variables, TFragment, js.Any, CSelector[TNode] | scala.Null],
+    getSelectorList: js.Function3[Variables, TFragment, js.Array[_], js.Array[CSelector[TNode]] | scala.Null],
+    getSelectorsFromObject: js.Function3[
+      Variables, 
+      CFragmentMap[TFragment], 
+      Props, 
+      org.scalablytyped.runtime.StringDictionary[js.UndefOr[CSelector[TNode] | js.Array[CSelector[TNode]] | scala.Null]]
+    ],
+    getVariablesFromObject: js.Function3[Variables, CFragmentMap[TFragment], Props, Variables]
+  ): CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation] = {
+    val __obj = js.Dynamic.literal(areEqualSelectors = areEqualSelectors, createFragmentSpecResolver = createFragmentSpecResolver, createOperationSelector = createOperationSelector, getDataIDsFromObject = getDataIDsFromObject, getFragment = getFragment, getOperation = getOperation, getSelector = getSelector, getSelectorList = getSelectorList, getSelectorsFromObject = getSelectorsFromObject, getVariablesFromObject = getVariablesFromObject)
+  
+    __obj.asInstanceOf[CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]]
+  }
+}
+

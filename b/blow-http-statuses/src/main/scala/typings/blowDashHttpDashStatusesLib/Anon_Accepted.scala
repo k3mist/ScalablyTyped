@@ -65,3 +65,70 @@ trait Anon_Accepted extends js.Object {
   var VariantAlsoNegotiates: scala.Double
 }
 
+object Anon_Accepted {
+  @scala.inline
+  def apply(
+    Accepted: scala.Double,
+    BadGateway: scala.Double,
+    BadRequest: scala.Double,
+    BandwidthLimitExceeded: scala.Double,
+    Conflict: scala.Double,
+    Continue: scala.Double,
+    Created: scala.Double,
+    ExpectationFailed: scala.Double,
+    FailedDependency: scala.Double,
+    Forbidden: scala.Double,
+    Found: scala.Double,
+    GatewayTimeout: scala.Double,
+    Gone: scala.Double,
+    HTTPVersionNotSupported: scala.Double,
+    InsufficientStorage: scala.Double,
+    InternalServerError: scala.Double,
+    LengthRequired: scala.Double,
+    Locked: scala.Double,
+    LoopDetected: scala.Double,
+    MethodNotAllowed: scala.Double,
+    MovedPermanently: scala.Double,
+    MultipleChoices: scala.Double,
+    NetworkAuthenticationRequired: scala.Double,
+    NoContent: scala.Double,
+    NonAuthoritativeInformation: scala.Double,
+    NotAcceptable: scala.Double,
+    NotExtended: scala.Double,
+    NotFound: scala.Double,
+    NotImplemented: scala.Double,
+    NotModified: scala.Double,
+    OK: scala.Double,
+    PartialContent: scala.Double,
+    PayloadTooLarge: scala.Double,
+    PaymentRequired: scala.Double,
+    PermanentRedirect: scala.Double,
+    PreconditionFailed: scala.Double,
+    PreconditionRequired: scala.Double,
+    Processing: scala.Double,
+    ProxyAuthenticationRequired: scala.Double,
+    RangeNotSatisfiable: scala.Double,
+    RequestHeaderFieldsTooLarge: scala.Double,
+    RequestTimeout: scala.Double,
+    ResetContent: scala.Double,
+    SeeOther: scala.Double,
+    ServiceUnavailable: scala.Double,
+    SwitchingProtocols: scala.Double,
+    TemporaryRedirect: scala.Double,
+    TooManyRequests: scala.Double,
+    URITooLong: scala.Double,
+    Unauthorized: scala.Double,
+    UnavailableForLegalReasons: scala.Double,
+    UnorderedCollection: scala.Double,
+    UnprocessableEntity: scala.Double,
+    UnsupportedMediaType: scala.Double,
+    UpgradeRequired: scala.Double,
+    UseProxy: scala.Double,
+    VariantAlsoNegotiates: scala.Double
+  ): Anon_Accepted = {
+    val __obj = js.Dynamic.literal(Accepted = Accepted, BadGateway = BadGateway, BadRequest = BadRequest, BandwidthLimitExceeded = BandwidthLimitExceeded, Conflict = Conflict, Continue = Continue, Created = Created, ExpectationFailed = ExpectationFailed, FailedDependency = FailedDependency, Forbidden = Forbidden, Found = Found, GatewayTimeout = GatewayTimeout, Gone = Gone, HTTPVersionNotSupported = HTTPVersionNotSupported, InsufficientStorage = InsufficientStorage, InternalServerError = InternalServerError, LengthRequired = LengthRequired, Locked = Locked, LoopDetected = LoopDetected, MethodNotAllowed = MethodNotAllowed, MovedPermanently = MovedPermanently, MultipleChoices = MultipleChoices, NetworkAuthenticationRequired = NetworkAuthenticationRequired, NoContent = NoContent, NonAuthoritativeInformation = NonAuthoritativeInformation, NotAcceptable = NotAcceptable, NotExtended = NotExtended, NotFound = NotFound, NotImplemented = NotImplemented, NotModified = NotModified, OK = OK, PartialContent = PartialContent, PayloadTooLarge = PayloadTooLarge, PaymentRequired = PaymentRequired, PermanentRedirect = PermanentRedirect, PreconditionFailed = PreconditionFailed, PreconditionRequired = PreconditionRequired, Processing = Processing, ProxyAuthenticationRequired = ProxyAuthenticationRequired, RangeNotSatisfiable = RangeNotSatisfiable, RequestHeaderFieldsTooLarge = RequestHeaderFieldsTooLarge, RequestTimeout = RequestTimeout, ResetContent = ResetContent, SeeOther = SeeOther, ServiceUnavailable = ServiceUnavailable, SwitchingProtocols = SwitchingProtocols, TemporaryRedirect = TemporaryRedirect, TooManyRequests = TooManyRequests, URITooLong = URITooLong, Unauthorized = Unauthorized, UnavailableForLegalReasons = UnavailableForLegalReasons, UnorderedCollection = UnorderedCollection, UnprocessableEntity = UnprocessableEntity, UnsupportedMediaType = UnsupportedMediaType, UpgradeRequired = UpgradeRequired, UseProxy = UseProxy, VariantAlsoNegotiates = VariantAlsoNegotiates)
+  
+    __obj.asInstanceOf[Anon_Accepted]
+  }
+}
+

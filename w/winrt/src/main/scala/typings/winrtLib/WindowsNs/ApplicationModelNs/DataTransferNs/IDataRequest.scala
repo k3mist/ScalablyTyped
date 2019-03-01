@@ -12,3 +12,17 @@ trait IDataRequest extends js.Object {
   def getDeferral(): DataRequestDeferral
 }
 
+object IDataRequest {
+  @scala.inline
+  def apply(
+    data: DataPackage,
+    deadline: stdLib.Date,
+    failWithDisplayText: js.Function1[java.lang.String, scala.Unit],
+    getDeferral: js.Function0[DataRequestDeferral]
+  ): IDataRequest = {
+    val __obj = js.Dynamic.literal(data = data, deadline = deadline, failWithDisplayText = failWithDisplayText, getDeferral = getDeferral)
+  
+    __obj.asInstanceOf[IDataRequest]
+  }
+}
+

@@ -20,3 +20,12 @@ trait StatusObject extends js.Object {
   var metadata: Metadata
 }
 
+object StatusObject {
+  @scala.inline
+  def apply(code: status, details: java.lang.String, metadata: Metadata): StatusObject = {
+    val __obj = js.Dynamic.literal(code = code, details = details, metadata = metadata)
+  
+    __obj.asInstanceOf[StatusObject]
+  }
+}
+

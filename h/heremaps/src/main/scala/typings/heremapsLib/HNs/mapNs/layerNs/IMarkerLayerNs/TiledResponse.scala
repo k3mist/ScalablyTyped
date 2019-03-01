@@ -17,3 +17,16 @@ trait TiledResponse extends js.Object {
   var requested: scala.Double
 }
 
+object TiledResponse {
+  @scala.inline
+  def apply(
+    number: scala.Double,
+    objects: js.Array[heremapsLib.HNs.mapNs.AbstractMarker],
+    requested: scala.Double
+  ): TiledResponse = {
+    val __obj = js.Dynamic.literal(number = number, objects = objects, requested = requested)
+  
+    __obj.asInstanceOf[TiledResponse]
+  }
+}
+

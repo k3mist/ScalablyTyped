@@ -39,3 +39,21 @@ trait JobType
   var state: java.lang.String
 }
 
+object JobType {
+  @scala.inline
+  def apply(
+    category: java.lang.String,
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    state: java.lang.String
+  ): JobType = {
+    val __obj = js.Dynamic.literal(category = category, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, state = state)
+  
+    __obj.asInstanceOf[JobType]
+  }
+}
+

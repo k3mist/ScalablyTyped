@@ -14,3 +14,19 @@ trait DateObj extends js.Object {
   var today: scala.Boolean
 }
 
+object DateObj {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    nextMonth: scala.Boolean,
+    prevMonth: scala.Boolean,
+    selectable: scala.Boolean,
+    selected: scala.Boolean,
+    today: scala.Boolean
+  ): DateObj = {
+    val __obj = js.Dynamic.literal(date = date, nextMonth = nextMonth, prevMonth = prevMonth, selectable = selectable, selected = selected, today = today)
+  
+    __obj.asInstanceOf[DateObj]
+  }
+}
+

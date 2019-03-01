@@ -11,3 +11,12 @@ trait PlotCoordinate extends js.Object {
   var y: scala.Double
 }
 
+object PlotCoordinate {
+  @scala.inline
+  def apply(pointNumber: scala.Double, x: scala.Double, y: scala.Double): PlotCoordinate = {
+    val __obj = js.Dynamic.literal(pointNumber = pointNumber, x = x, y = y)
+  
+    __obj.asInstanceOf[PlotCoordinate]
+  }
+}
+

@@ -13,3 +13,18 @@ trait OverlapKeeperRecord extends js.Object {
   def set(bodyA: Body, shapeA: Shape, bodyB: Body, shapeB: Shape): scala.Unit
 }
 
+object OverlapKeeperRecord {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    set: js.Function4[Body, Shape, Body, Shape, scala.Unit],
+    shapeA: Shape,
+    shapeB: Shape
+  ): OverlapKeeperRecord = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, set = set, shapeA = shapeA, shapeB = shapeB)
+  
+    __obj.asInstanceOf[OverlapKeeperRecord]
+  }
+}
+

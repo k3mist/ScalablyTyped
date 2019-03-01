@@ -13,3 +13,17 @@ trait CollidePayload extends js.Object {
   var maximumRetry: scala.Double
 }
 
+object CollidePayload {
+  @scala.inline
+  def apply(
+    collider: SerializedColliderToWorker,
+    collisionId: scala.Double,
+    excludedMeshUniqueId: Nullable[scala.Double],
+    maximumRetry: scala.Double
+  ): CollidePayload = {
+    val __obj = js.Dynamic.literal(collider = collider, collisionId = collisionId, excludedMeshUniqueId = excludedMeshUniqueId.asInstanceOf[js.Any], maximumRetry = maximumRetry)
+  
+    __obj.asInstanceOf[CollidePayload]
+  }
+}
+

@@ -15,3 +15,17 @@ trait EnumType extends IDLRootType {
   var values: js.Array[webidl2Lib.Anon_String]
 }
 
+object EnumType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.enum,
+    values: js.Array[webidl2Lib.Anon_String]
+  ): EnumType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, name = name, `type` = `type`, values = values)
+  
+    __obj.asInstanceOf[EnumType]
+  }
+}
+

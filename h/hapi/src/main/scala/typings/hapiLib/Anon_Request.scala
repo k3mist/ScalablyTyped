@@ -20,3 +20,16 @@ trait Anon_Request extends js.Object {
   var toolkit: js.Array[java.lang.String]
 }
 
+object Anon_Request {
+  @scala.inline
+  def apply(
+    request: js.Array[java.lang.String],
+    server: js.Array[java.lang.String],
+    toolkit: js.Array[java.lang.String]
+  ): Anon_Request = {
+    val __obj = js.Dynamic.literal(request = request, server = server, toolkit = toolkit)
+  
+    __obj.asInstanceOf[Anon_Request]
+  }
+}
+

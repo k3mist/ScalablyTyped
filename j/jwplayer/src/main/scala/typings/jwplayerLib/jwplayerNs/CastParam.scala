@@ -12,3 +12,17 @@ trait CastParam extends js.Object {
   var `type`: jwplayerLib.jwplayerLibStrings.cast
 }
 
+object CastParam {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    available: scala.Boolean,
+    deviceName: java.lang.String,
+    `type`: jwplayerLib.jwplayerLibStrings.cast
+  ): CastParam = {
+    val __obj = js.Dynamic.literal(active = active, available = available, deviceName = deviceName, `type` = `type`)
+  
+    __obj.asInstanceOf[CastParam]
+  }
+}
+

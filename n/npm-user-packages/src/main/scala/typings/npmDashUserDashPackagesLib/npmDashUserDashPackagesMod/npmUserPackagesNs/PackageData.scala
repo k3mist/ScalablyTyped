@@ -18,3 +18,23 @@ trait PackageData extends js.Object {
   var version: java.lang.String
 }
 
+object PackageData {
+  @scala.inline
+  def apply(
+    author: npmDashUserDashPackagesLib.Anon_Email,
+    date: java.lang.String,
+    description: java.lang.String,
+    keywords: js.Array[java.lang.String],
+    links: npmDashUserDashPackagesLib.Anon_Bugs,
+    maintainers: js.Array[npmDashUserDashPackagesLib.Anon_EmailUsername],
+    name: java.lang.String,
+    publisher: npmDashUserDashPackagesLib.Anon_EmailUsername,
+    scope: java.lang.String,
+    version: java.lang.String
+  ): PackageData = {
+    val __obj = js.Dynamic.literal(author = author, date = date, description = description, keywords = keywords, links = links, maintainers = maintainers, name = name, publisher = publisher, scope = scope, version = version)
+  
+    __obj.asInstanceOf[PackageData]
+  }
+}
+

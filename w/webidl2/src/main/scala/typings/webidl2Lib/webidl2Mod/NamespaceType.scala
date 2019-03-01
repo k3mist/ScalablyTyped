@@ -17,3 +17,18 @@ trait NamespaceType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.namespace
 }
 
+object NamespaceType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    members: js.Array[IDLNamespaceMemberType],
+    name: java.lang.String,
+    partial: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.namespace
+  ): NamespaceType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial, `type` = `type`)
+  
+    __obj.asInstanceOf[NamespaceType]
+  }
+}
+

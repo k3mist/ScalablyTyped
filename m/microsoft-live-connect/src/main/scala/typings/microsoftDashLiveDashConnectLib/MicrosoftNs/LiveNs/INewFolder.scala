@@ -24,3 +24,13 @@ trait INewFolder extends js.Object {
   var sort_by: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INewFolder {
+  @scala.inline
+  def apply(name: java.lang.String, description: java.lang.String = null, sort_by: java.lang.String = null): INewFolder = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (sort_by != null) __obj.updateDynamic("sort_by")(sort_by)
+    __obj.asInstanceOf[INewFolder]
+  }
+}
+

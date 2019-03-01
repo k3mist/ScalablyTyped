@@ -10,3 +10,12 @@ trait FileObject extends js.Object {
   var file: java.lang.String
 }
 
+object FileObject {
+  @scala.inline
+  def apply(file: java.lang.String, config: ParseConfig = null): FileObject = {
+    val __obj = js.Dynamic.literal(file = file)
+    if (config != null) __obj.updateDynamic("config")(config)
+    __obj.asInstanceOf[FileObject]
+  }
+}
+

@@ -47,3 +47,21 @@ trait GeoPolygonFilter extends js.Object {
   def toJSON(): GeoPolygonFilter
 }
 
+object GeoPolygonFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, GeoPolygonFilter],
+    cacheKey: js.Function1[java.lang.String, GeoPolygonFilter],
+    field: js.Function1[java.lang.String, GeoPolygonFilter],
+    name: js.Function1[java.lang.String, GeoPolygonFilter],
+    normalize: js.Function1[java.lang.String, GeoPolygonFilter],
+    points: js.Function1[js.Array[_], GeoPolygonFilter],
+    toJSON: js.Function0[GeoPolygonFilter]
+  ): GeoPolygonFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, normalize = normalize, points = points, toJSON = toJSON)
+  
+    __obj.asInstanceOf[GeoPolygonFilter]
+  }
+}
+

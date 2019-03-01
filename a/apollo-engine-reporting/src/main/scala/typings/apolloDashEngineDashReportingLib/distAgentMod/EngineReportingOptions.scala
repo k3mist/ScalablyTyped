@@ -33,3 +33,50 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EngineReportingOptions {
+  @scala.inline
+  def apply[TContext](
+    apiKey: java.lang.String = null,
+    calculateSignature: js.Function2[
+      /* ast */ graphqlLib.languageAstMod.DocumentNode, 
+      /* operationName */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    debugPrintReports: js.UndefOr[scala.Boolean] = js.undefined,
+    endpointUrl: java.lang.String = null,
+    generateClientInfo: GenerateClientInfo[TContext] = null,
+    handleSignals: js.UndefOr[scala.Boolean] = js.undefined,
+    maskErrorDetails: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAttempts: scala.Int | scala.Double = null,
+    maxUncompressedReportSize: scala.Int | scala.Double = null,
+    minimumRetryDelayMs: scala.Int | scala.Double = null,
+    privateHeaders: js.Array[nodeLib.String] | scala.Boolean = null,
+    privateVariables: js.Array[nodeLib.String] | scala.Boolean = null,
+    reportErrorFunction: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
+    reportIntervalMs: scala.Int | scala.Double = null,
+    requestAgent: apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false` = null,
+    schemaTag: java.lang.String = null,
+    sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
+  ): EngineReportingOptions[TContext] = {
+    val __obj = js.Dynamic.literal()
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(calculateSignature)
+    if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports)
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
+    if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(generateClientInfo)
+    if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals)
+    if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails)
+    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (maxUncompressedReportSize != null) __obj.updateDynamic("maxUncompressedReportSize")(maxUncompressedReportSize.asInstanceOf[js.Any])
+    if (minimumRetryDelayMs != null) __obj.updateDynamic("minimumRetryDelayMs")(minimumRetryDelayMs.asInstanceOf[js.Any])
+    if (privateHeaders != null) __obj.updateDynamic("privateHeaders")(privateHeaders.asInstanceOf[js.Any])
+    if (privateVariables != null) __obj.updateDynamic("privateVariables")(privateVariables.asInstanceOf[js.Any])
+    if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(reportErrorFunction)
+    if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
+    if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
+    if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag)
+    if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately)
+    __obj.asInstanceOf[EngineReportingOptions[TContext]]
+  }
+}
+

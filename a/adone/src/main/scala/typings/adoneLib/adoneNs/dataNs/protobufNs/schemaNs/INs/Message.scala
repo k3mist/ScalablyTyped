@@ -14,3 +14,19 @@ trait Message extends js.Object {
   var name: java.lang.String
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    enums: js.Array[Enum],
+    `extends`: js.Array[Extend],
+    fields: js.Array[Field],
+    messages: js.Array[Message],
+    name: java.lang.String,
+    extensions: adoneLib.Anon_FromTo = null
+  ): Message = {
+    val __obj = js.Dynamic.literal(enums = enums, `extends` = `extends`, fields = fields, messages = messages, name = name)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    __obj.asInstanceOf[Message]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Path extends js.Object {
   var value: js.Any
 }
 
+object Anon_Path {
+  @scala.inline
+  def apply(path: js.Array[PathComponent], value: js.Any): Anon_Path = {
+    val __obj = js.Dynamic.literal(path = path, value = value)
+  
+    __obj.asInstanceOf[Anon_Path]
+  }
+}
+

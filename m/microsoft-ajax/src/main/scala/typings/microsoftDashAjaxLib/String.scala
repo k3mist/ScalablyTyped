@@ -29,3 +29,17 @@ trait String extends js.Object {
   def trimStart(): java.lang.String
 }
 
+object String {
+  @scala.inline
+  def apply(
+    endsWith: js.Function1[java.lang.String, scala.Boolean],
+    trim: js.Function0[java.lang.String],
+    trimEnd: js.Function0[java.lang.String],
+    trimStart: js.Function0[java.lang.String]
+  ): String = {
+    val __obj = js.Dynamic.literal(endsWith = endsWith, trim = trim, trimEnd = trimEnd, trimStart = trimStart)
+  
+    __obj.asInstanceOf[String]
+  }
+}
+

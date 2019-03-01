@@ -9,3 +9,12 @@ trait TranslateOptions extends BaseOptions {
   var s: java.lang.String
 }
 
+object TranslateOptions {
+  @scala.inline
+  def apply(rating: giphyDashApiLib.Rating, s: java.lang.String, fmt: giphyDashApiLib.Format = null): TranslateOptions = {
+    val __obj = js.Dynamic.literal(rating = rating, s = s)
+    if (fmt != null) __obj.updateDynamic("fmt")(fmt)
+    __obj.asInstanceOf[TranslateOptions]
+  }
+}
+

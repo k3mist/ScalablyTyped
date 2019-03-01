@@ -11,3 +11,12 @@ trait Anon_ActiveIcon extends js.Object {
   var label: java.lang.String
 }
 
+object Anon_ActiveIcon {
+  @scala.inline
+  def apply(active: scala.Boolean, icon: scala.Boolean, label: java.lang.String): Anon_ActiveIcon = {
+    val __obj = js.Dynamic.literal(active = active, icon = icon, label = label)
+  
+    __obj.asInstanceOf[Anon_ActiveIcon]
+  }
+}
+

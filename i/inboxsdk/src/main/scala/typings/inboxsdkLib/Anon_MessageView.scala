@@ -11,3 +11,16 @@ trait Anon_MessageView extends js.Object {
   var oldViewState: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
 }
 
+object Anon_MessageView {
+  @scala.inline
+  def apply(
+    messageView: Anon_MessageView,
+    newViewState: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates,
+    oldViewState: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
+  ): Anon_MessageView = {
+    val __obj = js.Dynamic.literal(messageView = messageView, newViewState = newViewState, oldViewState = oldViewState)
+  
+    __obj.asInstanceOf[Anon_MessageView]
+  }
+}
+

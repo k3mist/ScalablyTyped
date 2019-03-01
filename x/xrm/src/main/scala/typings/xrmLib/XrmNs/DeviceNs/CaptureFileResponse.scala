@@ -27,3 +27,17 @@ trait CaptureFileResponse extends js.Object {
   var mimeType: java.lang.String
 }
 
+object CaptureFileResponse {
+  @scala.inline
+  def apply(
+    fileContent: java.lang.String,
+    fileName: java.lang.String,
+    fileSize: scala.Double,
+    mimeType: java.lang.String
+  ): CaptureFileResponse = {
+    val __obj = js.Dynamic.literal(fileContent = fileContent, fileName = fileName, fileSize = fileSize, mimeType = mimeType)
+  
+    __obj.asInstanceOf[CaptureFileResponse]
+  }
+}
+

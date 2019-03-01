@@ -11,3 +11,16 @@ trait FoldTransform extends _Transform {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.fold
 }
 
+object FoldTransform {
+  @scala.inline
+  def apply(
+    fields: (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef,
+    `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.fold,
+    as: js.Tuple2[java.lang.String, java.lang.String] = null
+  ): FoldTransform = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], `type` = `type`)
+    if (as != null) __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[FoldTransform]
+  }
+}
+

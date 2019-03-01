@@ -12,3 +12,17 @@ trait AppEngineRouting extends js.Object {
   var version: java.lang.String
 }
 
+object AppEngineRouting {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    instance: java.lang.String,
+    service: java.lang.String,
+    version: java.lang.String
+  ): AppEngineRouting = {
+    val __obj = js.Dynamic.literal(host = host, instance = instance, service = service, version = version)
+  
+    __obj.asInstanceOf[AppEngineRouting]
+  }
+}
+

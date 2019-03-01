@@ -13,3 +13,18 @@ trait FitEnum extends js.Object {
   var outside: sharpLib.sharpLibStrings.outside
 }
 
+object FitEnum {
+  @scala.inline
+  def apply(
+    contain: sharpLib.sharpLibStrings.contain,
+    cover: sharpLib.sharpLibStrings.cover,
+    fill: sharpLib.sharpLibStrings.fill,
+    inside: sharpLib.sharpLibStrings.inside,
+    outside: sharpLib.sharpLibStrings.outside
+  ): FitEnum = {
+    val __obj = js.Dynamic.literal(contain = contain, cover = cover, fill = fill, inside = inside, outside = outside)
+  
+    __obj.asInstanceOf[FitEnum]
+  }
+}
+

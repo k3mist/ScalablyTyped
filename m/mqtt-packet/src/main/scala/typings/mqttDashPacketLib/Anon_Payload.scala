@@ -12,3 +12,18 @@ trait Anon_Payload extends js.Object {
   var topic: java.lang.String
 }
 
+object Anon_Payload {
+  @scala.inline
+  def apply(
+    payload: nodeLib.Buffer,
+    topic: java.lang.String,
+    qos: mqttDashPacketLib.mqttDashPacketMod.QoS = null,
+    retain: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Payload = {
+    val __obj = js.Dynamic.literal(payload = payload, topic = topic)
+    if (qos != null) __obj.updateDynamic("qos")(qos)
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
+    __obj.asInstanceOf[Anon_Payload]
+  }
+}
+

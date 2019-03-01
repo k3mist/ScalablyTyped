@@ -81,3 +81,30 @@ trait SlideProperties extends js.Object {
   var visibleLayers: js.UndefOr[CollectionProperties[SlideVisibleLayersProperties]] = js.undefined
 }
 
+object SlideProperties {
+  @scala.inline
+  def apply(
+    basemap: BasemapProperties | java.lang.String = null,
+    description: SlideDescriptionProperties | java.lang.String = null,
+    environment: EnvironmentProperties = null,
+    ground: SlideGroundProperties = null,
+    id: java.lang.String = null,
+    thumbnail: SlideThumbnailProperties | java.lang.String = null,
+    title: SlideTitleProperties | java.lang.String = null,
+    viewpoint: ViewpointProperties = null,
+    visibleLayers: CollectionProperties[SlideVisibleLayersProperties] = null
+  ): SlideProperties = {
+    val __obj = js.Dynamic.literal()
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (ground != null) __obj.updateDynamic("ground")(ground)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (visibleLayers != null) __obj.updateDynamic("visibleLayers")(visibleLayers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlideProperties]
+  }
+}
+

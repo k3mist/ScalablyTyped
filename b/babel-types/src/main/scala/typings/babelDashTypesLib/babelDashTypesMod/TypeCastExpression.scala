@@ -16,3 +16,24 @@ trait TypeCastExpression
   var type_TypeCastExpression: babelDashTypesLib.babelDashTypesLibStrings.TypeCastExpression
 }
 
+object TypeCastExpression {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    expression: Expression,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.TypeCastExpression,
+    typeAnnotation: FlowTypeAnnotation,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): TypeCastExpression = {
+    val __obj = js.Dynamic.literal(end = end, expression = expression, loc = loc, start = start, `type` = `type`, typeAnnotation = typeAnnotation)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[TypeCastExpression]
+  }
+}
+

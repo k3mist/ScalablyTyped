@@ -13,3 +13,18 @@ trait App extends js.Object {
   def launch(launchData: java.lang.String): scala.Unit
 }
 
+object App {
+  @scala.inline
+  def apply(
+    allowStop: scala.Boolean,
+    launch: js.Function1[java.lang.String, scala.Unit],
+    name: java.lang.String,
+    pid: java.lang.String,
+    state: java.lang.String
+  ): App = {
+    val __obj = js.Dynamic.literal(allowStop = allowStop, launch = launch, name = name, pid = pid, state = state)
+  
+    __obj.asInstanceOf[App]
+  }
+}
+

@@ -12,3 +12,16 @@ trait carClassifyResponse extends js.Object {
   var result: js.Array[baiduDashAppLib.Anon_Name]
 }
 
+object carClassifyResponse {
+  @scala.inline
+  def apply(
+    location_result: baiduDashAppLib.Anon_Height,
+    log_id: scala.Double,
+    result: js.Array[baiduDashAppLib.Anon_Name]
+  ): carClassifyResponse = {
+    val __obj = js.Dynamic.literal(location_result = location_result, log_id = log_id, result = result)
+  
+    __obj.asInstanceOf[carClassifyResponse]
+  }
+}
+

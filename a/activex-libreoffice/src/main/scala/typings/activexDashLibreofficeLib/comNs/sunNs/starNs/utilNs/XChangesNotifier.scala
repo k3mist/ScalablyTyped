@@ -19,3 +19,18 @@ trait XChangesNotifier
   def removeChangesListener(aListener: XChangesListener): scala.Unit
 }
 
+object XChangesNotifier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addChangesListener: js.Function1[XChangesListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChangesListener: js.Function1[XChangesListener, scala.Unit]
+  ): XChangesNotifier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addChangesListener = addChangesListener, queryInterface = queryInterface, release = release, removeChangesListener = removeChangesListener)
+  
+    __obj.asInstanceOf[XChangesNotifier]
+  }
+}
+

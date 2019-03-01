@@ -20,3 +20,12 @@ trait IFrameEvent extends js.Object {
   var time: scala.Double
 }
 
+object IFrameEvent {
+  @scala.inline
+  def apply(count: scala.Double, delta: scala.Double, time: scala.Double): IFrameEvent = {
+    val __obj = js.Dynamic.literal(count = count, delta = delta, time = time)
+  
+    __obj.asInstanceOf[IFrameEvent]
+  }
+}
+

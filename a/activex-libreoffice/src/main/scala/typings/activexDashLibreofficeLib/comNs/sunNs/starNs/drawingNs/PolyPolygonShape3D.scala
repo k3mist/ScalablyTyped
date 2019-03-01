@@ -12,3 +12,16 @@ trait PolyPolygonShape3D extends js.Object {
   var SequenceZ: DoubleSequenceSequence
 }
 
+object PolyPolygonShape3D {
+  @scala.inline
+  def apply(
+    SequenceX: DoubleSequenceSequence,
+    SequenceY: DoubleSequenceSequence,
+    SequenceZ: DoubleSequenceSequence
+  ): PolyPolygonShape3D = {
+    val __obj = js.Dynamic.literal(SequenceX = SequenceX.asInstanceOf[js.Any], SequenceY = SequenceY.asInstanceOf[js.Any], SequenceZ = SequenceZ.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[PolyPolygonShape3D]
+  }
+}
+

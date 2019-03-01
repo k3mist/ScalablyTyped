@@ -11,3 +11,12 @@ trait IStaticFilesLoaderOptions extends js.Object {
   var suffix: java.lang.String
 }
 
+object IStaticFilesLoaderOptions {
+  @scala.inline
+  def apply(prefix: java.lang.String, suffix: java.lang.String, key: java.lang.String = null): IStaticFilesLoaderOptions = {
+    val __obj = js.Dynamic.literal(prefix = prefix, suffix = suffix)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[IStaticFilesLoaderOptions]
+  }
+}
+

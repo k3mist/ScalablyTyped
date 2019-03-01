@@ -12,3 +12,12 @@ trait OnFrameRecordedOptions extends js.Object {
   var isLastFrame: scala.Boolean
 }
 
+object OnFrameRecordedOptions {
+  @scala.inline
+  def apply(frameBuffer: stdLib.ArrayBuffer, isLastFrame: scala.Boolean): OnFrameRecordedOptions = {
+    val __obj = js.Dynamic.literal(frameBuffer = frameBuffer, isLastFrame = isLastFrame)
+  
+    __obj.asInstanceOf[OnFrameRecordedOptions]
+  }
+}
+

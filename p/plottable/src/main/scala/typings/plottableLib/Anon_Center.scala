@@ -11,3 +11,16 @@ trait Anon_Center extends js.Object {
   var right: plottableLib.plottableLibStrings.right
 }
 
+object Anon_Center {
+  @scala.inline
+  def apply(
+    center: plottableLib.plottableLibStrings.center,
+    left: plottableLib.plottableLibStrings.left,
+    right: plottableLib.plottableLibStrings.right
+  ): Anon_Center = {
+    val __obj = js.Dynamic.literal(center = center, left = left, right = right)
+  
+    __obj.asInstanceOf[Anon_Center]
+  }
+}
+

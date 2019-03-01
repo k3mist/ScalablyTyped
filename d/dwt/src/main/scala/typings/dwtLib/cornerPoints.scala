@@ -12,3 +12,12 @@ trait cornerPoints extends js.Object {
   var rightTop: point
 }
 
+object cornerPoints {
+  @scala.inline
+  def apply(leftBottom: point, leftTop: point, rightBottom: point, rightTop: point): cornerPoints = {
+    val __obj = js.Dynamic.literal(leftBottom = leftBottom, leftTop = leftTop, rightBottom = rightBottom, rightTop = rightTop)
+  
+    __obj.asInstanceOf[cornerPoints]
+  }
+}
+

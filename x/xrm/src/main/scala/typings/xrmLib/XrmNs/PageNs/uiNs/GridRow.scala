@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 trait GridRow
   extends xrmLib.XrmNs.ControlsNs.GridNs.GridRow
 
+object GridRow {
+  @scala.inline
+  def apply(data: xrmLib.XrmNs.Data, getData: js.Function0[xrmLib.XrmNs.ControlsNs.GridNs.GridRowData]): GridRow = {
+    val __obj = js.Dynamic.literal(data = data, getData = getData)
+  
+    __obj.asInstanceOf[GridRow]
+  }
+}
+

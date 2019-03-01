@@ -12,3 +12,17 @@ trait Anon_FogColor extends js.Object {
   var fogNear: threeLib.threeDashCoreMod.IUniform
 }
 
+object Anon_FogColor {
+  @scala.inline
+  def apply(
+    fogColor: threeLib.threeDashCoreMod.IUniform,
+    fogDensity: threeLib.threeDashCoreMod.IUniform,
+    fogFar: threeLib.threeDashCoreMod.IUniform,
+    fogNear: threeLib.threeDashCoreMod.IUniform
+  ): Anon_FogColor = {
+    val __obj = js.Dynamic.literal(fogColor = fogColor, fogDensity = fogDensity, fogFar = fogFar, fogNear = fogNear)
+  
+    __obj.asInstanceOf[Anon_FogColor]
+  }
+}
+

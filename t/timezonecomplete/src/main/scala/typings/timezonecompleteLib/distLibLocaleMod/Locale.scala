@@ -63,3 +63,35 @@ trait Locale extends js.Object {
   var weekdayTwoLetters: js.Array[java.lang.String]
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    dayPeriodAbbreviated: DayPeriod,
+    dayPeriodNarrow: DayPeriod,
+    dayPeriodWide: DayPeriod,
+    eraAbbreviated: js.Tuple2[java.lang.String, java.lang.String],
+    eraNarrow: js.Tuple2[java.lang.String, java.lang.String],
+    eraWide: js.Tuple2[java.lang.String, java.lang.String],
+    longMonthNames: js.Array[java.lang.String],
+    longWeekdayNames: js.Array[java.lang.String],
+    monthLetters: js.Array[java.lang.String],
+    quarterAbbreviations: js.Array[java.lang.String],
+    quarterLetter: java.lang.String,
+    quarterWord: java.lang.String,
+    shortMonthNames: js.Array[java.lang.String],
+    shortWeekdayNames: js.Array[java.lang.String],
+    standAloneLongMonthNames: js.Array[java.lang.String],
+    standAloneMonthLetters: js.Array[java.lang.String],
+    standAloneQuarterAbbreviations: js.Array[java.lang.String],
+    standAloneQuarterLetter: java.lang.String,
+    standAloneQuarterWord: java.lang.String,
+    standAloneShortMonthNames: js.Array[java.lang.String],
+    weekdayLetters: js.Array[java.lang.String],
+    weekdayTwoLetters: js.Array[java.lang.String]
+  ): Locale = {
+    val __obj = js.Dynamic.literal(dayPeriodAbbreviated = dayPeriodAbbreviated, dayPeriodNarrow = dayPeriodNarrow, dayPeriodWide = dayPeriodWide, eraAbbreviated = eraAbbreviated, eraNarrow = eraNarrow, eraWide = eraWide, longMonthNames = longMonthNames, longWeekdayNames = longWeekdayNames, monthLetters = monthLetters, quarterAbbreviations = quarterAbbreviations, quarterLetter = quarterLetter, quarterWord = quarterWord, shortMonthNames = shortMonthNames, shortWeekdayNames = shortWeekdayNames, standAloneLongMonthNames = standAloneLongMonthNames, standAloneMonthLetters = standAloneMonthLetters, standAloneQuarterAbbreviations = standAloneQuarterAbbreviations, standAloneQuarterLetter = standAloneQuarterLetter, standAloneQuarterWord = standAloneQuarterWord, standAloneShortMonthNames = standAloneShortMonthNames, weekdayLetters = weekdayLetters, weekdayTwoLetters = weekdayTwoLetters)
+  
+    __obj.asInstanceOf[Locale]
+  }
+}
+

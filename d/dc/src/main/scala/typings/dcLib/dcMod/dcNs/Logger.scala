@@ -12,3 +12,17 @@ trait Logger extends js.Object {
   def warn(msg: java.lang.String): scala.Unit
 }
 
+object Logger {
+  @scala.inline
+  def apply(
+    debug: js.Function1[java.lang.String, scala.Unit],
+    deprecate: js.Function2[js.Function, java.lang.String, scala.Unit],
+    enableDebugLog: scala.Boolean,
+    warn: js.Function1[java.lang.String, scala.Unit]
+  ): Logger = {
+    val __obj = js.Dynamic.literal(debug = debug, deprecate = deprecate, enableDebugLog = enableDebugLog, warn = warn)
+  
+    __obj.asInstanceOf[Logger]
+  }
+}
+

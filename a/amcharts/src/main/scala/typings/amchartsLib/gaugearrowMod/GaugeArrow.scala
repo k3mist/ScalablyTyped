@@ -82,3 +82,28 @@ trait GaugeArrow extends js.Object {
   def setValue(value: scala.Double): scala.Unit
 }
 
+object GaugeArrow {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    axis: amchartsLib.gaugeaxisMod.default,
+    borderAlpha: scala.Double,
+    clockWiseOnly: scala.Boolean,
+    color: java.lang.String,
+    id: java.lang.String,
+    innerRadius: js.Any,
+    nailAlpha: scala.Double,
+    nailBorderAlpha: scala.Double,
+    nailBorderThickness: scala.Double,
+    nailRadius: scala.Double,
+    radius: js.Any,
+    setValue: js.Function1[scala.Double, scala.Unit],
+    startWidth: scala.Double,
+    value: scala.Double
+  ): GaugeArrow = {
+    val __obj = js.Dynamic.literal(alpha = alpha, axis = axis, borderAlpha = borderAlpha, clockWiseOnly = clockWiseOnly, color = color, id = id, innerRadius = innerRadius, nailAlpha = nailAlpha, nailBorderAlpha = nailBorderAlpha, nailBorderThickness = nailBorderThickness, nailRadius = nailRadius, radius = radius, setValue = setValue, startWidth = startWidth, value = value)
+  
+    __obj.asInstanceOf[GaugeArrow]
+  }
+}
+

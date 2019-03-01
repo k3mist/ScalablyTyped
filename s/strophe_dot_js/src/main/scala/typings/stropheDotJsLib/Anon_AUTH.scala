@@ -26,3 +26,31 @@ trait Anon_AUTH extends js.Object {
   var XHTML_IM: java.lang.String
 }
 
+object Anon_AUTH {
+  @scala.inline
+  def apply(
+    AUTH: java.lang.String,
+    BIND: java.lang.String,
+    BOSH: java.lang.String,
+    CLIENT: java.lang.String,
+    DISCO_INFO: java.lang.String,
+    DISCO_ITEMS: java.lang.String,
+    FRAMING: java.lang.String,
+    HTTPBIND: java.lang.String,
+    MUC: java.lang.String,
+    PROFILE: java.lang.String,
+    ROSTER: java.lang.String,
+    SASL: java.lang.String,
+    SESSION: java.lang.String,
+    STANZAS: java.lang.String,
+    STREAM: java.lang.String,
+    VERSION: java.lang.String,
+    XHTML: java.lang.String,
+    XHTML_IM: java.lang.String
+  ): Anon_AUTH = {
+    val __obj = js.Dynamic.literal(AUTH = AUTH, BIND = BIND, BOSH = BOSH, CLIENT = CLIENT, DISCO_INFO = DISCO_INFO, DISCO_ITEMS = DISCO_ITEMS, FRAMING = FRAMING, HTTPBIND = HTTPBIND, MUC = MUC, PROFILE = PROFILE, ROSTER = ROSTER, SASL = SASL, SESSION = SESSION, STANZAS = STANZAS, STREAM = STREAM, VERSION = VERSION, XHTML = XHTML, XHTML_IM = XHTML_IM)
+  
+    __obj.asInstanceOf[Anon_AUTH]
+  }
+}
+

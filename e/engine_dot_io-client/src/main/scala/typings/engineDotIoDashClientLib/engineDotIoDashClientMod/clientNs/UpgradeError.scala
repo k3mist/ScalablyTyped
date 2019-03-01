@@ -10,3 +10,12 @@ trait UpgradeError
   var transport: java.lang.String
 }
 
+object UpgradeError {
+  @scala.inline
+  def apply(transport: java.lang.String, stack: java.lang.String = null): UpgradeError = {
+    val __obj = js.Dynamic.literal(transport = transport)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[UpgradeError]
+  }
+}
+

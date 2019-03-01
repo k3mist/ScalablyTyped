@@ -40,3 +40,24 @@ trait MarkerChangedEvent extends js.Object {
   var wasValid: scala.Boolean
 }
 
+object MarkerChangedEvent {
+  @scala.inline
+  def apply(
+    hadTail: scala.Boolean,
+    hasTail: scala.Boolean,
+    isValid: scala.Boolean,
+    newHeadPosition: Point,
+    newProperties: js.Object,
+    newTailPosition: Point,
+    oldHeadPosition: Point,
+    oldProperties: js.Object,
+    oldTailPosition: Point,
+    textChanged: scala.Boolean,
+    wasValid: scala.Boolean
+  ): MarkerChangedEvent = {
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadPosition = newHeadPosition, newProperties = newProperties, newTailPosition = newTailPosition, oldHeadPosition = oldHeadPosition, oldProperties = oldProperties, oldTailPosition = oldTailPosition, textChanged = textChanged, wasValid = wasValid)
+  
+    __obj.asInstanceOf[MarkerChangedEvent]
+  }
+}
+

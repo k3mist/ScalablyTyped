@@ -32,3 +32,21 @@ trait Shadow extends js.Object {
   var `type`: ShadowType
 }
 
+object Shadow {
+  @scala.inline
+  def apply(
+    alignment: RectanglePosition,
+    alpha: scala.Double,
+    blur_radius: Dimension,
+    color: OpaqueColor,
+    property_state: PropertyState,
+    rotate_with_shape: scala.Boolean,
+    transform: AffineTransform,
+    `type`: ShadowType
+  ): Shadow = {
+    val __obj = js.Dynamic.literal(alignment = alignment, alpha = alpha, blur_radius = blur_radius, color = color, property_state = property_state, rotate_with_shape = rotate_with_shape, transform = transform, `type` = `type`)
+  
+    __obj.asInstanceOf[Shadow]
+  }
+}
+

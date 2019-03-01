@@ -12,3 +12,12 @@ trait MultiFingerStatus extends js.Object {
   var z: scala.Double
 }
 
+object MultiFingerStatus {
+  @scala.inline
+  def apply(angle: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): MultiFingerStatus = {
+    val __obj = js.Dynamic.literal(angle = angle, x = x, y = y, z = z)
+  
+    __obj.asInstanceOf[MultiFingerStatus]
+  }
+}
+

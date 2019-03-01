@@ -122,3 +122,65 @@ trait SpreadsheetDocumentSettings
   var Wildcards: scala.Boolean
 }
 
+object SpreadsheetDocumentSettings {
+  @scala.inline
+  def apply(
+    CalcAsShown: scala.Boolean,
+    CharLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharLocaleAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharLocaleComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultTabStop: scala.Double,
+    ForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XForbiddenCharacters,
+    HasDrawPages: scala.Boolean,
+    IgnoreCase: scala.Boolean,
+    IsAdjustHeightEnabled: scala.Boolean,
+    IsExecuteLinkEnabled: scala.Boolean,
+    IsIterationEnabled: scala.Boolean,
+    IsLoaded: scala.Boolean,
+    IsRecordChangesProtected: scala.Boolean,
+    IsUndoEnabled: scala.Boolean,
+    IterationCount: scala.Double,
+    IterationEpsilon: scala.Double,
+    LookUpLabels: scala.Boolean,
+    MatchWholeCell: scala.Boolean,
+    NullDate: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RecordChanges: scala.Boolean,
+    ReferenceDevice: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XDevice,
+    RegularExpressions: scala.Boolean,
+    SpellOnline: scala.Boolean,
+    StandardDecimals: scala.Double,
+    Wildcards: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): SpreadsheetDocumentSettings = {
+    val __obj = js.Dynamic.literal(CalcAsShown = CalcAsShown, CharLocale = CharLocale, CharLocaleAsian = CharLocaleAsian, CharLocaleComplex = CharLocaleComplex, DefaultTabStop = DefaultTabStop, ForbiddenCharacters = ForbiddenCharacters, HasDrawPages = HasDrawPages, IgnoreCase = IgnoreCase, IsAdjustHeightEnabled = IsAdjustHeightEnabled, IsExecuteLinkEnabled = IsExecuteLinkEnabled, IsIterationEnabled = IsIterationEnabled, IsLoaded = IsLoaded, IsRecordChangesProtected = IsRecordChangesProtected, IsUndoEnabled = IsUndoEnabled, IterationCount = IterationCount, IterationEpsilon = IterationEpsilon, LookUpLabels = LookUpLabels, MatchWholeCell = MatchWholeCell, NullDate = NullDate, PropertySetInfo = PropertySetInfo, RecordChanges = RecordChanges, ReferenceDevice = ReferenceDevice, RegularExpressions = RegularExpressions, SpellOnline = SpellOnline, StandardDecimals = StandardDecimals, Wildcards = Wildcards, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[SpreadsheetDocumentSettings]
+  }
+}
+

@@ -114,3 +114,36 @@ trait IVideo extends js.Object {
   var width: scala.Double
 }
 
+object IVideo {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    comments_count: scala.Double,
+    comments_enabled: scala.Boolean,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    duration: scala.Double,
+    from: IUserInfo,
+    height: scala.Double,
+    id: java.lang.String,
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    picture: java.lang.String,
+    shared_with: ISharedWith,
+    size: scala.Double,
+    source: java.lang.String,
+    tags_count: scala.Double,
+    tags_enabled: scala.Boolean,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String,
+    width: scala.Double
+  ): IVideo = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, duration = duration, from = from, height = height, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, picture = picture, shared_with = shared_with, size = size, source = source, tags_count = tags_count, tags_enabled = tags_enabled, `type` = `type`, updated_time = updated_time, upload_location = upload_location, width = width)
+  
+    __obj.asInstanceOf[IVideo]
+  }
+}
+

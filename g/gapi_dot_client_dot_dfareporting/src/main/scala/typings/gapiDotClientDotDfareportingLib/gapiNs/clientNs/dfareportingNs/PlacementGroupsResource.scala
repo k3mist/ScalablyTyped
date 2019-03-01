@@ -18,3 +18,33 @@ trait PlacementGroupsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroup]
 }
 
+object PlacementGroupsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroup]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroup]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdsAltArchived, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroupsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroup]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementGroup]
+    ]
+  ): PlacementGroupsResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[PlacementGroupsResource]
+  }
+}
+

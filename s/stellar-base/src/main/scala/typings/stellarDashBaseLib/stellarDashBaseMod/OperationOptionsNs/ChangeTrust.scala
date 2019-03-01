@@ -12,3 +12,17 @@ trait ChangeTrust
   var limit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChangeTrust {
+  @scala.inline
+  def apply(
+    asset: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    limit: java.lang.String = null,
+    source: java.lang.String = null
+  ): ChangeTrust = {
+    val __obj = js.Dynamic.literal(asset = asset)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[ChangeTrust]
+  }
+}
+

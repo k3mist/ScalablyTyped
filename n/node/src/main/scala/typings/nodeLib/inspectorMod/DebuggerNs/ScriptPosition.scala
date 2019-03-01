@@ -14,3 +14,12 @@ trait ScriptPosition extends js.Object {
   var lineNumber: scala.Double
 }
 
+object ScriptPosition {
+  @scala.inline
+  def apply(columnNumber: scala.Double, lineNumber: scala.Double): ScriptPosition = {
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, lineNumber = lineNumber)
+  
+    __obj.asInstanceOf[ScriptPosition]
+  }
+}
+

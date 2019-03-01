@@ -16,3 +16,17 @@ trait XBrowseNodeFactory
   def createView(viewType: scala.Double): XBrowseNode
 }
 
+object XBrowseNodeFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createView: js.Function1[scala.Double, XBrowseNode],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBrowseNodeFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createView = createView, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBrowseNodeFactory]
+  }
+}
+

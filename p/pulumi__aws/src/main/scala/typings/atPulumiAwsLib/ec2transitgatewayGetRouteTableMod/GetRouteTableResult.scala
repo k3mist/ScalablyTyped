@@ -24,3 +24,17 @@ trait GetRouteTableResult extends js.Object {
   val transitGatewayId: java.lang.String
 }
 
+object GetRouteTableResult {
+  @scala.inline
+  def apply(
+    defaultAssociationRouteTable: scala.Boolean,
+    defaultPropagationRouteTable: scala.Boolean,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    transitGatewayId: java.lang.String
+  ): GetRouteTableResult = {
+    val __obj = js.Dynamic.literal(defaultAssociationRouteTable = defaultAssociationRouteTable, defaultPropagationRouteTable = defaultPropagationRouteTable, tags = tags, transitGatewayId = transitGatewayId)
+  
+    __obj.asInstanceOf[GetRouteTableResult]
+  }
+}
+

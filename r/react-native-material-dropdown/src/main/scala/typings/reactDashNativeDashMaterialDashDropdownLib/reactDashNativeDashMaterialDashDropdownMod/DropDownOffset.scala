@@ -12,3 +12,12 @@ trait DropDownOffset extends js.Object {
   var top: scala.Double
 }
 
+object DropDownOffset {
+  @scala.inline
+  def apply(left: scala.Double, top: scala.Double): DropDownOffset = {
+    val __obj = js.Dynamic.literal(left = left, top = top)
+  
+    __obj.asInstanceOf[DropDownOffset]
+  }
+}
+

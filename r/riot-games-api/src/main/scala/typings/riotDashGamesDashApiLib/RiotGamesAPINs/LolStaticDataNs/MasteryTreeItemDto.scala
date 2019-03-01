@@ -10,3 +10,12 @@ trait MasteryTreeItemDto extends js.Object {
   var prereq: java.lang.String
 }
 
+object MasteryTreeItemDto {
+  @scala.inline
+  def apply(masteryId: scala.Double, prereq: java.lang.String): MasteryTreeItemDto = {
+    val __obj = js.Dynamic.literal(masteryId = masteryId, prereq = prereq)
+  
+    __obj.asInstanceOf[MasteryTreeItemDto]
+  }
+}
+

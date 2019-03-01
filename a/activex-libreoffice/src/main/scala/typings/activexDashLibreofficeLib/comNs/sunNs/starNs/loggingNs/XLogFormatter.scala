@@ -50,3 +50,18 @@ trait XLogFormatter extends js.Object {
   def getTail(): java.lang.String
 }
 
+object XLogFormatter {
+  @scala.inline
+  def apply(
+    Head: java.lang.String,
+    Tail: java.lang.String,
+    format: js.Function1[LogRecord, java.lang.String],
+    getHead: js.Function0[java.lang.String],
+    getTail: js.Function0[java.lang.String]
+  ): XLogFormatter = {
+    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, format = format, getHead = getHead, getTail = getTail)
+  
+    __obj.asInstanceOf[XLogFormatter]
+  }
+}
+

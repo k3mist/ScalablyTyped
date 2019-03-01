@@ -64,3 +64,27 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN extends js
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN {
+  @scala.inline
+  def apply(
+    CURL_DOWN: scala.Double,
+    CURL_UP: scala.Double,
+    FLIP_FROM_LEFT: scala.Double,
+    FLIP_FROM_RIGHT: scala.Double,
+    NONE: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN = {
+    val __obj = js.Dynamic.literal(CURL_DOWN = CURL_DOWN, CURL_UP = CURL_UP, FLIP_FROM_LEFT = FLIP_FROM_LEFT, FLIP_FROM_RIGHT = FLIP_FROM_RIGHT, NONE = NONE, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+  
+    __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN]
+  }
+}
+

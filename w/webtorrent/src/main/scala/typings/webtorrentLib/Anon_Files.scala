@@ -11,3 +11,16 @@ trait Anon_Files extends js.Object {
   var torrent: webtorrentLib.webtorrentMod.WebTorrentNs.Torrent
 }
 
+object Anon_Files {
+  @scala.inline
+  def apply(
+    files: js.Array[stdLib.File],
+    length: scala.Double,
+    torrent: webtorrentLib.webtorrentMod.WebTorrentNs.Torrent
+  ): Anon_Files = {
+    val __obj = js.Dynamic.literal(files = files, length = length, torrent = torrent)
+  
+    __obj.asInstanceOf[Anon_Files]
+  }
+}
+

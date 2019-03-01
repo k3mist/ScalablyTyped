@@ -77,3 +77,30 @@ trait ICapability extends js.Object {
   var VERSION: java.lang.String
 }
 
+object ICapability {
+  @scala.inline
+  def apply(
+    ACCEPT_SSL_CERTS: java.lang.String,
+    BROWSER_NAME: java.lang.String,
+    ELEMENT_SCROLL_BEHAVIOR: java.lang.String,
+    HANDLES_ALERTS: java.lang.String,
+    LOGGING_PREFS: java.lang.String,
+    NATIVE_EVENTS: java.lang.String,
+    PLATFORM: java.lang.String,
+    PROXY: java.lang.String,
+    ROTATABLE: java.lang.String,
+    SECURE_SSL: java.lang.String,
+    SUPPORTS_APPLICATION_CACHE: java.lang.String,
+    SUPPORTS_CSS_SELECTORS: java.lang.String,
+    SUPPORTS_JAVASCRIPT: java.lang.String,
+    SUPPORTS_LOCATION_CONTEXT: java.lang.String,
+    TAKES_SCREENSHOT: java.lang.String,
+    UNEXPECTED_ALERT_BEHAVIOR: java.lang.String,
+    VERSION: java.lang.String
+  ): ICapability = {
+    val __obj = js.Dynamic.literal(ACCEPT_SSL_CERTS = ACCEPT_SSL_CERTS, BROWSER_NAME = BROWSER_NAME, ELEMENT_SCROLL_BEHAVIOR = ELEMENT_SCROLL_BEHAVIOR, HANDLES_ALERTS = HANDLES_ALERTS, LOGGING_PREFS = LOGGING_PREFS, NATIVE_EVENTS = NATIVE_EVENTS, PLATFORM = PLATFORM, PROXY = PROXY, ROTATABLE = ROTATABLE, SECURE_SSL = SECURE_SSL, SUPPORTS_APPLICATION_CACHE = SUPPORTS_APPLICATION_CACHE, SUPPORTS_CSS_SELECTORS = SUPPORTS_CSS_SELECTORS, SUPPORTS_JAVASCRIPT = SUPPORTS_JAVASCRIPT, SUPPORTS_LOCATION_CONTEXT = SUPPORTS_LOCATION_CONTEXT, TAKES_SCREENSHOT = TAKES_SCREENSHOT, UNEXPECTED_ALERT_BEHAVIOR = UNEXPECTED_ALERT_BEHAVIOR, VERSION = VERSION)
+  
+    __obj.asInstanceOf[ICapability]
+  }
+}
+

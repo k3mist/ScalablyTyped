@@ -13,3 +13,18 @@ trait LogLevels
   var warn: lambdaDashLogLib.lambdaDashLogLibStrings.warn
 }
 
+object LogLevels {
+  @scala.inline
+  def apply(
+    debug: lambdaDashLogLib.lambdaDashLogLibStrings.log | lambdaDashLogLib.lambdaDashLogLibNumbers.`false`,
+    error: lambdaDashLogLib.lambdaDashLogLibStrings.error,
+    info: lambdaDashLogLib.lambdaDashLogLibStrings.info,
+    warn: lambdaDashLogLib.lambdaDashLogLibStrings.warn,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): LogLevels = {
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error, info = info, warn = warn)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[LogLevels]
+  }
+}
+

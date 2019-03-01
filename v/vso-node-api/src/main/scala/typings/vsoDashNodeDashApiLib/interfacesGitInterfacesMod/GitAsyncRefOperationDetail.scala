@@ -32,3 +32,19 @@ trait GitAsyncRefOperationDetail extends js.Object {
   var timedout: scala.Boolean
 }
 
+object GitAsyncRefOperationDetail {
+  @scala.inline
+  def apply(
+    conflict: scala.Boolean,
+    currentCommitId: java.lang.String,
+    failureMessage: java.lang.String,
+    progress: scala.Double,
+    status: GitAsyncRefOperationFailureStatus,
+    timedout: scala.Boolean
+  ): GitAsyncRefOperationDetail = {
+    val __obj = js.Dynamic.literal(conflict = conflict, currentCommitId = currentCommitId, failureMessage = failureMessage, progress = progress, status = status, timedout = timedout)
+  
+    __obj.asInstanceOf[GitAsyncRefOperationDetail]
+  }
+}
+

@@ -14,3 +14,19 @@ trait LayoutAnimationTypes extends js.Object {
   var spring: java.lang.String
 }
 
+object LayoutAnimationTypes {
+  @scala.inline
+  def apply(
+    easeIn: java.lang.String,
+    easeInEaseOut: java.lang.String,
+    easeOut: java.lang.String,
+    keyboard: java.lang.String,
+    linear: java.lang.String,
+    spring: java.lang.String
+  ): LayoutAnimationTypes = {
+    val __obj = js.Dynamic.literal(easeIn = easeIn, easeInEaseOut = easeInEaseOut, easeOut = easeOut, keyboard = keyboard, linear = linear, spring = spring)
+  
+    __obj.asInstanceOf[LayoutAnimationTypes]
+  }
+}
+

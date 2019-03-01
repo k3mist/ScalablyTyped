@@ -45,3 +45,28 @@ trait EnhancedCustomShapeHandle extends js.Object {
   var Switched: scala.Boolean
 }
 
+object EnhancedCustomShapeHandle {
+  @scala.inline
+  def apply(
+    MirroredX: scala.Boolean,
+    MirroredY: scala.Boolean,
+    Polar: EnhancedCustomShapeParameterPair,
+    Position: EnhancedCustomShapeParameterPair,
+    RadiusRangeMaximum: EnhancedCustomShapeParameter,
+    RadiusRangeMinimum: EnhancedCustomShapeParameter,
+    RangeXMaximum: EnhancedCustomShapeParameter,
+    RangeXMinimum: EnhancedCustomShapeParameter,
+    RangeYMaximum: EnhancedCustomShapeParameter,
+    RangeYMinimum: EnhancedCustomShapeParameter,
+    RefAngle: scala.Double,
+    RefR: scala.Double,
+    RefX: scala.Double,
+    RefY: scala.Double,
+    Switched: scala.Boolean
+  ): EnhancedCustomShapeHandle = {
+    val __obj = js.Dynamic.literal(MirroredX = MirroredX, MirroredY = MirroredY, Polar = Polar, Position = Position, RadiusRangeMaximum = RadiusRangeMaximum, RadiusRangeMinimum = RadiusRangeMinimum, RangeXMaximum = RangeXMaximum, RangeXMinimum = RangeXMinimum, RangeYMaximum = RangeYMaximum, RangeYMinimum = RangeYMinimum, RefAngle = RefAngle, RefR = RefR, RefX = RefX, RefY = RefY, Switched = Switched)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeHandle]
+  }
+}
+

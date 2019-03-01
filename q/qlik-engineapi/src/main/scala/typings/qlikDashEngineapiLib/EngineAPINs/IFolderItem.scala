@@ -19,3 +19,12 @@ trait IFolderItem extends js.Object {
   var qType: FolderItemType
 }
 
+object IFolderItem {
+  @scala.inline
+  def apply(qName: java.lang.String, qType: FolderItemType): IFolderItem = {
+    val __obj = js.Dynamic.literal(qName = qName, qType = qType)
+  
+    __obj.asInstanceOf[IFolderItem]
+  }
+}
+

@@ -48,3 +48,26 @@ trait BacklogLevelConfiguration extends js.Object {
   ]
 }
 
+object BacklogLevelConfiguration {
+  @scala.inline
+  def apply(
+    addPanelFields: js.Array[
+      vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemFieldReference
+    ],
+    color: java.lang.String,
+    columnFields: js.Array[BacklogColumn],
+    defaultWorkItemType: vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeReference,
+    id: java.lang.String,
+    name: java.lang.String,
+    rank: scala.Double,
+    workItemCountLimit: scala.Double,
+    workItemTypes: js.Array[
+      vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeReference
+    ]
+  ): BacklogLevelConfiguration = {
+    val __obj = js.Dynamic.literal(addPanelFields = addPanelFields, color = color, columnFields = columnFields, defaultWorkItemType = defaultWorkItemType, id = id, name = name, rank = rank, workItemCountLimit = workItemCountLimit, workItemTypes = workItemTypes)
+  
+    __obj.asInstanceOf[BacklogLevelConfiguration]
+  }
+}
+

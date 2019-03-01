@@ -12,3 +12,18 @@ trait Anon_Cipher extends js.Object {
   var `type`: nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.spki | nodeLib.nodeLibStrings.pkcs8 | nodeLib.nodeLibStrings.sec1
 }
 
+object Anon_Cipher {
+  @scala.inline
+  def apply(
+    format: nodeLib.cryptoMod.KeyFormat,
+    `type`: nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.spki | nodeLib.nodeLibStrings.pkcs8 | nodeLib.nodeLibStrings.sec1,
+    cipher: java.lang.String = null,
+    passphrase: java.lang.String | Buffer = null
+  ): Anon_Cipher = {
+    val __obj = js.Dynamic.literal(format = format, `type` = `type`.asInstanceOf[js.Any])
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Cipher]
+  }
+}
+

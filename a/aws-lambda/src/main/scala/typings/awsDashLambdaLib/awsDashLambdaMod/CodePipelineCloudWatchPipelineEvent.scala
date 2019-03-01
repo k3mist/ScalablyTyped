@@ -17,3 +17,22 @@ trait CodePipelineCloudWatchPipelineEvent extends CodePipelineCloudWatchEvent {
   var version: java.lang.String
 }
 
+object CodePipelineCloudWatchPipelineEvent {
+  @scala.inline
+  def apply(
+    account: java.lang.String,
+    detail: awsDashLambdaLib.Anon_Executionid,
+    `detail-type`: awsDashLambdaLib.awsDashLambdaLibStrings.`CodePipeline Pipeline Execution State Change`,
+    id: java.lang.String,
+    region: java.lang.String,
+    resources: js.Array[java.lang.String],
+    source: awsDashLambdaLib.awsDashLambdaLibStrings.awsDOTcodepipeline,
+    time: java.lang.String,
+    version: java.lang.String
+  ): CodePipelineCloudWatchPipelineEvent = {
+    val __obj = js.Dynamic.literal(account = account, detail = detail, id = id, region = region, resources = resources, source = source, time = time, version = version)
+    __obj.updateDynamic("detail-type")(`detail-type`)
+    __obj.asInstanceOf[CodePipelineCloudWatchPipelineEvent]
+  }
+}
+

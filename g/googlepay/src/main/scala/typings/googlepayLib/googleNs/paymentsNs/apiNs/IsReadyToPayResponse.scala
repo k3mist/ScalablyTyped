@@ -10,3 +10,12 @@ trait IsReadyToPayResponse extends js.Object {
   var result: scala.Boolean
 }
 
+object IsReadyToPayResponse {
+  @scala.inline
+  def apply(result: scala.Boolean, paymentMethodPresent: js.UndefOr[scala.Boolean] = js.undefined): IsReadyToPayResponse = {
+    val __obj = js.Dynamic.literal(result = result)
+    if (!js.isUndefined(paymentMethodPresent)) __obj.updateDynamic("paymentMethodPresent")(paymentMethodPresent)
+    __obj.asInstanceOf[IsReadyToPayResponse]
+  }
+}
+

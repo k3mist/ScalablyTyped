@@ -13,3 +13,18 @@ trait JQueryNotifyInstance extends js.Object {
   def open(): scala.Unit
 }
 
+object JQueryNotifyInstance {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    element: JQuery,
+    isOpen: scala.Boolean,
+    open: js.Function0[scala.Unit],
+    options: JQueryNotifyOptions
+  ): JQueryNotifyInstance = {
+    val __obj = js.Dynamic.literal(close = close, element = element, isOpen = isOpen, open = open, options = options)
+  
+    __obj.asInstanceOf[JQueryNotifyInstance]
+  }
+}
+

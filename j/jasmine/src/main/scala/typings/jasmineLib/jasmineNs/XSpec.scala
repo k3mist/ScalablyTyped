@@ -10,3 +10,12 @@ trait XSpec extends js.Object {
   def runs(): scala.Unit
 }
 
+object XSpec {
+  @scala.inline
+  def apply(id: scala.Double, runs: js.Function0[scala.Unit]): XSpec = {
+    val __obj = js.Dynamic.literal(id = id, runs = runs)
+  
+    __obj.asInstanceOf[XSpec]
+  }
+}
+

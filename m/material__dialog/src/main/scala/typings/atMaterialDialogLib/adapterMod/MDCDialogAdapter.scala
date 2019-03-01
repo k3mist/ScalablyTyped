@@ -26,3 +26,31 @@ trait MDCDialogAdapter extends js.Object {
   def untrapFocusOnSurface(): scala.Unit
 }
 
+object MDCDialogAdapter {
+  @scala.inline
+  def apply(
+    addBodyClass: js.Function1[java.lang.String, scala.Unit],
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    deregisterDocumentKeydownHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    deregisterSurfaceInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    deregisterTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    eventTargetHasClass: js.Function2[stdLib.EventTarget, java.lang.String, scala.Boolean],
+    isDialog: js.Function1[stdLib.Element, scala.Boolean],
+    notifyAccept: js.Function0[scala.Unit],
+    notifyCancel: js.Function0[scala.Unit],
+    registerDocumentKeydownHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerSurfaceInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    removeBodyClass: js.Function1[java.lang.String, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    trapFocusOnSurface: js.Function0[scala.Unit],
+    untrapFocusOnSurface: js.Function0[scala.Unit]
+  ): MDCDialogAdapter = {
+    val __obj = js.Dynamic.literal(addBodyClass = addBodyClass, addClass = addClass, deregisterDocumentKeydownHandler = deregisterDocumentKeydownHandler, deregisterInteractionHandler = deregisterInteractionHandler, deregisterSurfaceInteractionHandler = deregisterSurfaceInteractionHandler, deregisterTransitionEndHandler = deregisterTransitionEndHandler, eventTargetHasClass = eventTargetHasClass, isDialog = isDialog, notifyAccept = notifyAccept, notifyCancel = notifyCancel, registerDocumentKeydownHandler = registerDocumentKeydownHandler, registerInteractionHandler = registerInteractionHandler, registerSurfaceInteractionHandler = registerSurfaceInteractionHandler, registerTransitionEndHandler = registerTransitionEndHandler, removeBodyClass = removeBodyClass, removeClass = removeClass, trapFocusOnSurface = trapFocusOnSurface, untrapFocusOnSurface = untrapFocusOnSurface)
+  
+    __obj.asInstanceOf[MDCDialogAdapter]
+  }
+}
+

@@ -17,3 +17,22 @@ trait RealmDto extends js.Object {
   var v: java.lang.String
 }
 
+object RealmDto {
+  @scala.inline
+  def apply(
+    cdn: java.lang.String,
+    css: java.lang.String,
+    dd: java.lang.String,
+    l: java.lang.String,
+    lg: java.lang.String,
+    n: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
+    profileiconmax: scala.Double,
+    storage: java.lang.String,
+    v: java.lang.String
+  ): RealmDto = {
+    val __obj = js.Dynamic.literal(cdn = cdn, css = css, dd = dd, l = l, lg = lg, n = n, profileiconmax = profileiconmax, storage = storage, v = v)
+  
+    __obj.asInstanceOf[RealmDto]
+  }
+}
+

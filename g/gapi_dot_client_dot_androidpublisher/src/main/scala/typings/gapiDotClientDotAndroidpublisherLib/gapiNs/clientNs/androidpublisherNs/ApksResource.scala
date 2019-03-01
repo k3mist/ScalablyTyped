@@ -15,3 +15,25 @@ trait ApksResource extends js.Object {
   def upload(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId): gapiDotClientLib.gapiNs.clientNs.Request[Apk]
 }
 
+object ApksResource {
+  @scala.inline
+  def apply(
+    addexternallyhosted: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApksAddExternallyHostedResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApksListResponse]
+    ],
+    upload: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Apk]
+    ]
+  ): ApksResource = {
+    val __obj = js.Dynamic.literal(addexternallyhosted = addexternallyhosted, list = list, upload = upload)
+  
+    __obj.asInstanceOf[ApksResource]
+  }
+}
+

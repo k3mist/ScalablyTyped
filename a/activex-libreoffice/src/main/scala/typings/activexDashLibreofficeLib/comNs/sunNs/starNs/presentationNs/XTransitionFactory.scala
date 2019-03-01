@@ -34,3 +34,25 @@ trait XTransitionFactory
   def hasTransition(transitionType: scala.Double, transitionSubType: scala.Double): scala.Boolean
 }
 
+object XTransitionFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createTransition: js.Function5[
+      scala.Double, 
+      scala.Double, 
+      XSlideShowView, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap, 
+      XTransition
+    ],
+    hasTransition: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTransitionFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createTransition = createTransition, hasTransition = hasTransition, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTransitionFactory]
+  }
+}
+

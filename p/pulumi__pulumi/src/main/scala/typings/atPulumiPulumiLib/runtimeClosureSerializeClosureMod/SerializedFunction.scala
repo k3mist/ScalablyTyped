@@ -18,3 +18,12 @@ trait SerializedFunction extends js.Object {
   var text: java.lang.String
 }
 
+object SerializedFunction {
+  @scala.inline
+  def apply(exportName: java.lang.String, text: java.lang.String): SerializedFunction = {
+    val __obj = js.Dynamic.literal(exportName = exportName, text = text)
+  
+    __obj.asInstanceOf[SerializedFunction]
+  }
+}
+

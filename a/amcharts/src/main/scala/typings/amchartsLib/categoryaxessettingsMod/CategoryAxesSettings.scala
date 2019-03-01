@@ -136,3 +136,37 @@ trait CategoryAxesSettings extends js.Object {
   var tickLength: scala.Double
 }
 
+object CategoryAxesSettings {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisHeight: scala.Double,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    dateFormats: js.Array[_],
+    equalSpacing: scala.Boolean,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    groupToPeriods: js.Array[_],
+    inside: scala.Boolean,
+    labelRotation: scala.Double,
+    maxSeries: scala.Double,
+    minPeriod: java.lang.String,
+    position: java.lang.String,
+    startOnAxis: scala.Boolean,
+    tickLength: scala.Double
+  ): CategoryAxesSettings = {
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisHeight = axisHeight, axisThickness = axisThickness, color = color, dashLength = dashLength, dateFormats = dateFormats, equalSpacing = equalSpacing, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, groupToPeriods = groupToPeriods, inside = inside, labelRotation = labelRotation, maxSeries = maxSeries, minPeriod = minPeriod, position = position, startOnAxis = startOnAxis, tickLength = tickLength)
+  
+    __obj.asInstanceOf[CategoryAxesSettings]
+  }
+}
+

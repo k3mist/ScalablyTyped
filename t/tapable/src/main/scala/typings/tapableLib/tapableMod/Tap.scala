@@ -13,3 +13,18 @@ trait Tap extends js.Object {
   var `type`: tapableLib.TapType
 }
 
+object Tap {
+  @scala.inline
+  def apply(
+    context: scala.Boolean,
+    fn: js.Function,
+    name: java.lang.String,
+    stage: scala.Double,
+    `type`: tapableLib.TapType
+  ): Tap = {
+    val __obj = js.Dynamic.literal(context = context, fn = fn, name = name, stage = stage, `type` = `type`)
+  
+    __obj.asInstanceOf[Tap]
+  }
+}
+

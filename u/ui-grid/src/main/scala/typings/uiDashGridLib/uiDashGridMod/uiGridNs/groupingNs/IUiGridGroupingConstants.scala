@@ -15,3 +15,18 @@ trait IUiGridGroupingConstants
   var featureName: java.lang.String
 }
 
+object IUiGridGroupingConstants {
+  @scala.inline
+  def apply(
+    COLLAPSED: java.lang.String,
+    EXPANDED: java.lang.String,
+    aggregation: uiDashGridLib.Anon_AVG,
+    featureName: java.lang.String,
+    rowHeaderColName: java.lang.String
+  ): IUiGridGroupingConstants = {
+    val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED, EXPANDED = EXPANDED, aggregation = aggregation, featureName = featureName, rowHeaderColName = rowHeaderColName)
+  
+    __obj.asInstanceOf[IUiGridGroupingConstants]
+  }
+}
+

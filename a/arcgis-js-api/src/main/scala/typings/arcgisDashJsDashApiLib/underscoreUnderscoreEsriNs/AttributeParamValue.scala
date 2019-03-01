@@ -27,3 +27,19 @@ trait AttributeParamValue
   var value: java.lang.String
 }
 
+object AttributeParamValue {
+  @scala.inline
+  def apply(
+    attributeName: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    parameterName: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: java.lang.String
+  ): AttributeParamValue = {
+    val __obj = js.Dynamic.literal(attributeName = attributeName, constructor = constructor, hasOwnProperty = hasOwnProperty, parameterName = parameterName, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
+    __obj.asInstanceOf[AttributeParamValue]
+  }
+}
+

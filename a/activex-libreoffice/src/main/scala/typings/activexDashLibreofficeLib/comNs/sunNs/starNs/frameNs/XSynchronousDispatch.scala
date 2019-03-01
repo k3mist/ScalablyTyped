@@ -26,3 +26,21 @@ trait XSynchronousDispatch
   ): js.Any
 }
 
+object XSynchronousDispatch {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dispatchWithReturnValue: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      js.Any
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSynchronousDispatch = {
+    val __obj = js.Dynamic.literal(acquire = acquire, dispatchWithReturnValue = dispatchWithReturnValue, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSynchronousDispatch]
+  }
+}
+

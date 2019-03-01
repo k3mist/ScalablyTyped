@@ -10,3 +10,12 @@ trait Anon_ItemsReturnValueHttpCookie extends js.Object {
   /** The number of HttpCookie items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueHttpCookie {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpCookie, returnValue: scala.Double): Anon_ItemsReturnValueHttpCookie = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueHttpCookie]
+  }
+}
+

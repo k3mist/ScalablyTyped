@@ -10,3 +10,12 @@ trait KeyboardShortcutDescriptor extends js.Object {
   var description: java.lang.String
 }
 
+object KeyboardShortcutDescriptor {
+  @scala.inline
+  def apply(chord: java.lang.String, description: java.lang.String): KeyboardShortcutDescriptor = {
+    val __obj = js.Dynamic.literal(chord = chord, description = description)
+  
+    __obj.asInstanceOf[KeyboardShortcutDescriptor]
+  }
+}
+

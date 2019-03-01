@@ -18,3 +18,18 @@ trait TableCell extends js.Object {
   var text: TextContent
 }
 
+object TableCell {
+  @scala.inline
+  def apply(
+    column_span: scala.Double,
+    location: TableCellLocation,
+    row_span: scala.Double,
+    table_cell_properties: TableCellProperties,
+    text: TextContent
+  ): TableCell = {
+    val __obj = js.Dynamic.literal(column_span = column_span, location = location, row_span = row_span, table_cell_properties = table_cell_properties, text = text)
+  
+    __obj.asInstanceOf[TableCell]
+  }
+}
+

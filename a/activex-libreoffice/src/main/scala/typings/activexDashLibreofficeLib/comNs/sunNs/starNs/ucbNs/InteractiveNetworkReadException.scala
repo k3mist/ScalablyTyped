@@ -12,3 +12,17 @@ trait InteractiveNetworkReadException
   var Diagnostic: java.lang.String
 }
 
+object InteractiveNetworkReadException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Diagnostic: java.lang.String,
+    Message: java.lang.String
+  ): InteractiveNetworkReadException = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Diagnostic = Diagnostic, Message = Message)
+  
+    __obj.asInstanceOf[InteractiveNetworkReadException]
+  }
+}
+

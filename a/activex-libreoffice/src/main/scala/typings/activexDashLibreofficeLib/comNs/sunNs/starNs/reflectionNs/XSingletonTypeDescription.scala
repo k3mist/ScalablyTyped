@@ -27,3 +27,22 @@ trait XSingletonTypeDescription extends XTypeDescription {
   def getService(): XServiceTypeDescription
 }
 
+object XSingletonTypeDescription {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    Service: XServiceTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getService: js.Function0[XServiceTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSingletonTypeDescription = {
+    val __obj = js.Dynamic.literal(Name = Name, Service = Service, TypeClass = TypeClass, acquire = acquire, getName = getName, getService = getService, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSingletonTypeDescription]
+  }
+}
+

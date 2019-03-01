@@ -12,3 +12,18 @@ trait ReleaseDefinitionApprovalStep extends ReleaseDefinitionEnvironmentStep {
   var rank: scala.Double
 }
 
+object ReleaseDefinitionApprovalStep {
+  @scala.inline
+  def apply(
+    approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    id: scala.Double,
+    isAutomated: scala.Boolean,
+    isNotificationOn: scala.Boolean,
+    rank: scala.Double
+  ): ReleaseDefinitionApprovalStep = {
+    val __obj = js.Dynamic.literal(approver = approver, id = id, isAutomated = isAutomated, isNotificationOn = isNotificationOn, rank = rank)
+  
+    __obj.asInstanceOf[ReleaseDefinitionApprovalStep]
+  }
+}
+

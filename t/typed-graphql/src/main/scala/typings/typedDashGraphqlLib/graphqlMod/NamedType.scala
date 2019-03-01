@@ -11,3 +11,12 @@ trait NamedType extends Type {
   var name: Name
 }
 
+object NamedType {
+  @scala.inline
+  def apply(kind: java.lang.String, name: Name, loc: Location = null): NamedType = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NamedType]
+  }
+}
+

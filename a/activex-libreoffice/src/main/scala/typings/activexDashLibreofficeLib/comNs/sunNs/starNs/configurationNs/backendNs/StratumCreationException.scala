@@ -16,3 +16,18 @@ trait StratumCreationException extends BackendSetupException {
   var StratumService: java.lang.String
 }
 
+object StratumCreationException {
+  @scala.inline
+  def apply(
+    BackendException: js.Any,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    StratumData: java.lang.String,
+    StratumService: java.lang.String
+  ): StratumCreationException = {
+    val __obj = js.Dynamic.literal(BackendException = BackendException, Context = Context, Message = Message, StratumData = StratumData, StratumService = StratumService)
+  
+    __obj.asInstanceOf[StratumCreationException]
+  }
+}
+

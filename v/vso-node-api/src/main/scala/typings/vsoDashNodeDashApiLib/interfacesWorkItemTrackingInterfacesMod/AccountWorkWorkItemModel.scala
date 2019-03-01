@@ -15,3 +15,20 @@ trait AccountWorkWorkItemModel extends js.Object {
   var workItemType: java.lang.String
 }
 
+object AccountWorkWorkItemModel {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    changedDate: stdLib.Date,
+    id: scala.Double,
+    state: java.lang.String,
+    teamProject: java.lang.String,
+    title: java.lang.String,
+    workItemType: java.lang.String
+  ): AccountWorkWorkItemModel = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, changedDate = changedDate, id = id, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+  
+    __obj.asInstanceOf[AccountWorkWorkItemModel]
+  }
+}
+

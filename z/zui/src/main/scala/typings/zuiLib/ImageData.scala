@@ -19,3 +19,22 @@ trait ImageData extends js.Object {
   var top: scala.Double
 }
 
+object ImageData {
+  @scala.inline
+  def apply(
+    bottom: scala.Double,
+    left: scala.Double,
+    originHeight: scala.Double,
+    originWidth: scala.Double,
+    right: scala.Double,
+    scaleHeight: scala.Double,
+    scaleWidth: scala.Double,
+    scaled: scala.Boolean,
+    top: scala.Double
+  ): ImageData = {
+    val __obj = js.Dynamic.literal(bottom = bottom, left = left, originHeight = originHeight, originWidth = originWidth, right = right, scaleHeight = scaleHeight, scaleWidth = scaleWidth, scaled = scaled, top = top)
+  
+    __obj.asInstanceOf[ImageData]
+  }
+}
+

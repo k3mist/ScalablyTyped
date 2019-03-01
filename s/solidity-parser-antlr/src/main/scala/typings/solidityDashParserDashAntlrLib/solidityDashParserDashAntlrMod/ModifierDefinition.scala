@@ -13,3 +13,18 @@ trait ModifierDefinition
   var type_ModifierDefinition: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.ModifierDefinition
 }
 
+object ModifierDefinition {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.ModifierDefinition,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): ModifierDefinition = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[ModifierDefinition]
+  }
+}
+

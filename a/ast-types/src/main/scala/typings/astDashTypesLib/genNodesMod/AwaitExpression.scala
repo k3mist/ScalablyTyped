@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.AwaitExpression
 }
 
+object AwaitExpression {
+  @scala.inline
+  def apply(
+    all: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.AwaitExpression,
+    argument: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): AwaitExpression = {
+    val __obj = js.Dynamic.literal(all = all, `type` = `type`)
+    if (argument != null) __obj.updateDynamic("argument")(argument)
+    __obj.asInstanceOf[AwaitExpression]
+  }
+}
+

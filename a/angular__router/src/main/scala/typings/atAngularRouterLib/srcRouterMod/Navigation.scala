@@ -44,3 +44,21 @@ trait Navigation extends js.Object {
   var trigger: atAngularRouterLib.atAngularRouterLibStrings.imperative | atAngularRouterLib.atAngularRouterLibStrings.popstate | atAngularRouterLib.atAngularRouterLibStrings.hashchange
 }
 
+object Navigation {
+  @scala.inline
+  def apply(
+    extractedUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    extras: NavigationExtras,
+    id: scala.Double,
+    initialUrl: java.lang.String | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
+    trigger: atAngularRouterLib.atAngularRouterLibStrings.imperative | atAngularRouterLib.atAngularRouterLibStrings.popstate | atAngularRouterLib.atAngularRouterLibStrings.hashchange,
+    finalUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = null,
+    previousNavigation: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @angular/router.@angular/router/src/router.Navigation */ js.Object = null
+  ): Navigation = {
+    val __obj = js.Dynamic.literal(extractedUrl = extractedUrl, extras = extras, id = id, initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
+    if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl)
+    if (previousNavigation != null) __obj.updateDynamic("previousNavigation")(previousNavigation)
+    __obj.asInstanceOf[Navigation]
+  }
+}
+

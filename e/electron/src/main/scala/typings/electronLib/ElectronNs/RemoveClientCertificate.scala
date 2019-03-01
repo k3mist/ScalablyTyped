@@ -18,3 +18,12 @@ trait RemoveClientCertificate extends js.Object {
   var `type`: java.lang.String
 }
 
+object RemoveClientCertificate {
+  @scala.inline
+  def apply(origin: java.lang.String, `type`: java.lang.String): RemoveClientCertificate = {
+    val __obj = js.Dynamic.literal(origin = origin, `type` = `type`)
+  
+    __obj.asInstanceOf[RemoveClientCertificate]
+  }
+}
+

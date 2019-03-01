@@ -41,3 +41,18 @@ trait SelfSubjectRulesReview extends js.Object {
   val status: SubjectRulesReviewStatus
 }
 
+object SelfSubjectRulesReview {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: SelfSubjectRulesReviewSpec,
+    status: SubjectRulesReviewStatus
+  ): SelfSubjectRulesReview = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[SelfSubjectRulesReview]
+  }
+}
+

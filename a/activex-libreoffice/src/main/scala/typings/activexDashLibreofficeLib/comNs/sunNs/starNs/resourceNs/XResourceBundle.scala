@@ -119,3 +119,27 @@ trait XResourceBundle
   def getLocale(): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
 }
 
+object XResourceBundle {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Parent: XResourceBundle,
+    acquire: js.Function0[scala.Unit],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getDirectElement: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XResourceBundle = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Locale = Locale, Parent = Parent, acquire = acquire, getByName = getByName, getDirectElement = getDirectElement, getElementNames = getElementNames, getElementType = getElementType, getLocale = getLocale, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XResourceBundle]
+  }
+}
+

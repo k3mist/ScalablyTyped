@@ -11,3 +11,12 @@ trait GeoLocationResult extends js.Object {
   var longitude: scala.Double
 }
 
+object GeoLocationResult {
+  @scala.inline
+  def apply(latitude: scala.Double, longitude: scala.Double): GeoLocationResult = {
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[GeoLocationResult]
+  }
+}
+

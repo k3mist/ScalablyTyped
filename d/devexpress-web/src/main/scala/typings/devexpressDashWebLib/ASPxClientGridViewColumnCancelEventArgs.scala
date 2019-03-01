@@ -16,3 +16,12 @@ trait ASPxClientGridViewColumnCancelEventArgs extends ASPxClientCancelEventArgs 
   var column: ASPxClientGridViewColumn
 }
 
+object ASPxClientGridViewColumnCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, column: ASPxClientGridViewColumn): ASPxClientGridViewColumnCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, column = column)
+  
+    __obj.asInstanceOf[ASPxClientGridViewColumnCancelEventArgs]
+  }
+}
+

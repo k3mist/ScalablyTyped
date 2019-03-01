@@ -12,3 +12,17 @@ trait XTextEditField
   def setEchoChar(cEcho: java.lang.String): scala.Unit
 }
 
+object XTextEditField {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEchoChar: js.Function1[java.lang.String, scala.Unit]
+  ): XTextEditField = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setEchoChar = setEchoChar)
+  
+    __obj.asInstanceOf[XTextEditField]
+  }
+}
+

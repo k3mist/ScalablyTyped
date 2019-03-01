@@ -20,3 +20,12 @@ trait WorkItemFieldReference extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemFieldReference {
+  @scala.inline
+  def apply(name: java.lang.String, referenceName: java.lang.String, url: java.lang.String): WorkItemFieldReference = {
+    val __obj = js.Dynamic.literal(name = name, referenceName = referenceName, url = url)
+  
+    __obj.asInstanceOf[WorkItemFieldReference]
+  }
+}
+

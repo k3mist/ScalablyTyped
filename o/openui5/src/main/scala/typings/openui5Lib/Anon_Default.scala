@@ -24,3 +24,12 @@ trait Anon_Default extends js.Object {
   var TwoWay: js.Any
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply(Default: js.Any, OneTime: js.Any, OneWay: js.Any, TwoWay: js.Any): Anon_Default = {
+    val __obj = js.Dynamic.literal(Default = Default, OneTime = OneTime, OneWay = OneWay, TwoWay = TwoWay)
+  
+    __obj.asInstanceOf[Anon_Default]
+  }
+}
+

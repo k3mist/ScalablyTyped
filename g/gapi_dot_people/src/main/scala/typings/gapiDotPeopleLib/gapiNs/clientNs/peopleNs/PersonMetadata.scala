@@ -13,3 +13,18 @@ trait PersonMetadata extends js.Object {
   var sources: js.Array[Source]
 }
 
+object PersonMetadata {
+  @scala.inline
+  def apply(
+    deleted: scala.Boolean,
+    linkedPeopleResourceNames: js.Array[java.lang.String],
+    objectType: ObjectType,
+    previousResourceNames: js.Array[java.lang.String],
+    sources: js.Array[Source]
+  ): PersonMetadata = {
+    val __obj = js.Dynamic.literal(deleted = deleted, linkedPeopleResourceNames = linkedPeopleResourceNames, objectType = objectType, previousResourceNames = previousResourceNames, sources = sources)
+  
+    __obj.asInstanceOf[PersonMetadata]
+  }
+}
+

@@ -69,3 +69,27 @@ trait RangeFilter extends Filter {
   def toJSON(): RangeFilter
 }
 
+object RangeFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, RangeFilter],
+    cacheKey: js.Function1[java.lang.String, RangeFilter],
+    field: js.Function1[java.lang.String, RangeFilter],
+    from: js.Function1[js.Any, RangeFilter],
+    gt: js.Function1[js.Any, RangeFilter],
+    gte: js.Function1[js.Any, RangeFilter],
+    includeLower: js.Function1[scala.Boolean, RangeFilter],
+    includeUpper: js.Function1[scala.Boolean, RangeFilter],
+    lt: js.Function1[js.Any, RangeFilter],
+    lte: js.Function1[js.Any, RangeFilter],
+    name: js.Function1[java.lang.String, RangeFilter],
+    to: js.Function1[js.Any, RangeFilter],
+    toJSON: js.Function0[RangeFilter]
+  ): RangeFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, name = name, to = to, toJSON = toJSON)
+  
+    __obj.asInstanceOf[RangeFilter]
+  }
+}
+

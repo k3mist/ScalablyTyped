@@ -120,3 +120,39 @@ trait GetLaunchTemplateResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetLaunchTemplateResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_DeviceNameEbs],
+    creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits],
+    defaultVersion: scala.Double,
+    description: java.lang.String,
+    disableApiTermination: scala.Boolean,
+    ebsOptimized: java.lang.String,
+    elasticGpuSpecifications: js.Array[atPulumiAwsLib.Anon_TypeString],
+    iamInstanceProfiles: js.Array[atPulumiAwsLib.Anon_Arn],
+    id: java.lang.String,
+    imageId: java.lang.String,
+    instanceInitiatedShutdownBehavior: java.lang.String,
+    instanceMarketOptions: js.Array[atPulumiAwsLib.Anon_MarketType],
+    instanceType: java.lang.String,
+    kernelId: java.lang.String,
+    keyName: java.lang.String,
+    latestVersion: scala.Double,
+    monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_204597847],
+    networkInterfaces: js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddress],
+    placements: js.Array[atPulumiAwsLib.Anon_Affinity],
+    ramDiskId: java.lang.String,
+    securityGroupNames: js.Array[java.lang.String],
+    tagSpecifications: js.Array[atPulumiAwsLib.Anon_KeyResourceType],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    userData: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetLaunchTemplateResult = {
+    val __obj = js.Dynamic.literal(arn = arn, blockDeviceMappings = blockDeviceMappings, creditSpecifications = creditSpecifications, defaultVersion = defaultVersion, description = description, disableApiTermination = disableApiTermination, ebsOptimized = ebsOptimized, elasticGpuSpecifications = elasticGpuSpecifications, iamInstanceProfiles = iamInstanceProfiles, id = id, imageId = imageId, instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior, instanceMarketOptions = instanceMarketOptions, instanceType = instanceType, kernelId = kernelId, keyName = keyName, latestVersion = latestVersion, monitorings = monitorings, networkInterfaces = networkInterfaces, placements = placements, ramDiskId = ramDiskId, securityGroupNames = securityGroupNames, tagSpecifications = tagSpecifications, tags = tags, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
+    __obj.asInstanceOf[GetLaunchTemplateResult]
+  }
+}
+

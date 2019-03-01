@@ -10,3 +10,12 @@ trait KMLLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object KMLLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): KMLLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[KMLLayerLayerviewDestroyEvent]
+  }
+}
+

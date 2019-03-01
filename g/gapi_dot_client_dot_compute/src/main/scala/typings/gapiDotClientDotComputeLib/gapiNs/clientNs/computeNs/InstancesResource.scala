@@ -64,3 +64,105 @@ trait InstancesResource extends js.Object {
   def stop(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object InstancesResource {
+  @scala.inline
+  def apply(
+    addAccessConfig: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstance, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceAggregatedList]
+    ],
+    attachDisk: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    deleteAccessConfig: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AccessConfig, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    detachDisk: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltDeviceName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
+    ],
+    getSerialPortOutput: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKeyOauthtokenPort, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SerialPortOutput]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceList]
+    ],
+    reset: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setDiskAutoDelete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoDelete, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setLabels: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMachineResources: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMachineType: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMetadata: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMinCpuPlatform: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setScheduling: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setServiceAccount: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setTags: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    start: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    startWithEncryptionKey: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    stop: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): InstancesResource = {
+    val __obj = js.Dynamic.literal(addAccessConfig = addAccessConfig, aggregatedList = aggregatedList, attachDisk = attachDisk, delete = delete, deleteAccessConfig = deleteAccessConfig, detachDisk = detachDisk, get = get, getSerialPortOutput = getSerialPortOutput, insert = insert, list = list, reset = reset, setDiskAutoDelete = setDiskAutoDelete, setLabels = setLabels, setMachineResources = setMachineResources, setMachineType = setMachineType, setMetadata = setMetadata, setMinCpuPlatform = setMinCpuPlatform, setScheduling = setScheduling, setServiceAccount = setServiceAccount, setTags = setTags, start = start, startWithEncryptionKey = startWithEncryptionKey, stop = stop)
+  
+    __obj.asInstanceOf[InstancesResource]
+  }
+}
+

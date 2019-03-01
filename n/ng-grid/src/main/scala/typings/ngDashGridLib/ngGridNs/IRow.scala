@@ -27,3 +27,32 @@ trait IRow extends js.Object {
   def toggleSelected(event: js.Any): scala.Boolean
 }
 
+object IRow {
+  @scala.inline
+  def apply(
+    afterSelectionChange: js.Function0[scala.Unit],
+    alternatingRowClass: js.Function0[scala.Unit],
+    beforeSelectionChange: js.Function0[scala.Unit],
+    config: IRowConfig,
+    continueSelection: js.Function1[js.Any, scala.Unit],
+    copy: js.Function0[IRow],
+    cursor: java.lang.String,
+    ensureEntity: js.Function1[js.Any, scala.Unit],
+    entity: js.Any,
+    getProperty: js.Function1[java.lang.String, js.Any],
+    offsetTop: scala.Double,
+    rowDisplayIndex: scala.Double,
+    rowIndex: scala.Double,
+    selected: scala.Boolean,
+    selectionProvider: ISelectionProvider,
+    setSelection: js.Function1[scala.Boolean, scala.Unit],
+    setVars: js.Function1[IRow, scala.Unit],
+    toggleSelected: js.Function1[js.Any, scala.Boolean],
+    utils: js.Any
+  ): IRow = {
+    val __obj = js.Dynamic.literal(afterSelectionChange = afterSelectionChange, alternatingRowClass = alternatingRowClass, beforeSelectionChange = beforeSelectionChange, config = config, continueSelection = continueSelection, copy = copy, cursor = cursor, ensureEntity = ensureEntity, entity = entity, getProperty = getProperty, offsetTop = offsetTop, rowDisplayIndex = rowDisplayIndex, rowIndex = rowIndex, selected = selected, selectionProvider = selectionProvider, setSelection = setSelection, setVars = setVars, toggleSelected = toggleSelected, utils = utils)
+  
+    __obj.asInstanceOf[IRow]
+  }
+}
+

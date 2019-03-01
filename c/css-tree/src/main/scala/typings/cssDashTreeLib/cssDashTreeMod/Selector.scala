@@ -13,3 +13,16 @@ trait Selector
   var type_Selector: cssDashTreeLib.cssDashTreeLibStrings.Selector
 }
 
+object Selector {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Selector,
+    loc: CssLocation = null
+  ): Selector = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Selector]
+  }
+}
+

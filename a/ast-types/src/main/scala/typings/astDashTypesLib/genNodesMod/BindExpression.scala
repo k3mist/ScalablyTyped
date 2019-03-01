@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.BindExpression
 }
 
+object BindExpression {
+  @scala.inline
+  def apply(
+    callee: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.BindExpression,
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): BindExpression = {
+    val __obj = js.Dynamic.literal(callee = callee, `type` = `type`)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    __obj.asInstanceOf[BindExpression]
+  }
+}
+

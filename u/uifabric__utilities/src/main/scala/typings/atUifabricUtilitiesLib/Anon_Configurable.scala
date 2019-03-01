@@ -11,3 +11,12 @@ trait Anon_Configurable[T /* <: js.Function */] extends js.Object {
   def set(newValue: js.Any): scala.Unit
 }
 
+object Anon_Configurable {
+  @scala.inline
+  def apply[T /* <: js.Function */](configurable: scala.Boolean, get: js.Function0[T], set: js.Function1[js.Any, scala.Unit]): Anon_Configurable[T] = {
+    val __obj = js.Dynamic.literal(configurable = configurable, get = get, set = set)
+  
+    __obj.asInstanceOf[Anon_Configurable[T]]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Baseline extends js.Object {
   var size: scala.Double
 }
 
+object Anon_Baseline {
+  @scala.inline
+  def apply(baseline: scala.Double, size: scala.Double): Anon_Baseline = {
+    val __obj = js.Dynamic.literal(baseline = baseline, size = size)
+  
+    __obj.asInstanceOf[Anon_Baseline]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TextRange extends js.Object {
   var pos: scala.Double
 }
 
+object TextRange {
+  @scala.inline
+  def apply(end: scala.Double, pos: scala.Double): TextRange = {
+    val __obj = js.Dynamic.literal(end = end, pos = pos)
+  
+    __obj.asInstanceOf[TextRange]
+  }
+}
+

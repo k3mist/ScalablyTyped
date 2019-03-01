@@ -31,3 +31,19 @@ trait Lock extends LockEntry {
   var Timeout: scala.Double
 }
 
+object Lock {
+  @scala.inline
+  def apply(
+    Depth: LockDepth,
+    LockTokens: activexDashInteropLib.SafeArray[java.lang.String],
+    Owner: js.Any,
+    Scope: LockScope,
+    Timeout: scala.Double,
+    Type: LockType
+  ): Lock = {
+    val __obj = js.Dynamic.literal(Depth = Depth, LockTokens = LockTokens, Owner = Owner, Scope = Scope, Timeout = Timeout, Type = Type)
+  
+    __obj.asInstanceOf[Lock]
+  }
+}
+

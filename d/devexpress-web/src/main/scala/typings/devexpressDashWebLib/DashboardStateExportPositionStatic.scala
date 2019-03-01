@@ -16,3 +16,12 @@ trait DashboardStateExportPositionStatic extends js.Object {
   var SeparatePage: java.lang.String
 }
 
+object DashboardStateExportPositionStatic {
+  @scala.inline
+  def apply(Below: java.lang.String, SeparatePage: java.lang.String): DashboardStateExportPositionStatic = {
+    val __obj = js.Dynamic.literal(Below = Below, SeparatePage = SeparatePage)
+  
+    __obj.asInstanceOf[DashboardStateExportPositionStatic]
+  }
+}
+

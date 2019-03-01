@@ -15,3 +15,17 @@ trait VectorTileLayerCapabilitiesExportMap
   var maxExportTilesCount: scala.Double
 }
 
+object VectorTileLayerCapabilitiesExportMap {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxExportTilesCount: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): VectorTileLayerCapabilitiesExportMap = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxExportTilesCount = maxExportTilesCount, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[VectorTileLayerCapabilitiesExportMap]
+  }
+}
+

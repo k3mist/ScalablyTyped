@@ -25,3 +25,18 @@ trait Artifact extends js.Object {
   var `type`: java.lang.String
 }
 
+object Artifact {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    definitionReference: org.scalablytyped.runtime.StringDictionary[ArtifactSourceReference],
+    isPrimary: scala.Boolean,
+    sourceId: java.lang.String,
+    `type`: java.lang.String
+  ): Artifact = {
+    val __obj = js.Dynamic.literal(alias = alias, definitionReference = definitionReference, isPrimary = isPrimary, sourceId = sourceId, `type` = `type`)
+  
+    __obj.asInstanceOf[Artifact]
+  }
+}
+

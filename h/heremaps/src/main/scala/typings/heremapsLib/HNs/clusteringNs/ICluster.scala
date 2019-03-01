@@ -52,3 +52,21 @@ trait ICluster extends js.Object {
   def isCluster(): scala.Boolean
 }
 
+object ICluster {
+  @scala.inline
+  def apply(
+    forEachDataPoint: js.Function1[js.Function1[/* noise */ INoisePoint, scala.Unit], scala.Unit],
+    forEachEntry: js.Function1[js.Function1[/* result */ IResult, scala.Unit], scala.Unit],
+    getBounds: js.Function0[heremapsLib.HNs.geoNs.Rect],
+    getMaxZoom: js.Function0[scala.Double],
+    getMinZoom: js.Function0[scala.Double],
+    getPosition: js.Function0[heremapsLib.HNs.geoNs.Point],
+    getWeight: js.Function0[scala.Double],
+    isCluster: js.Function0[scala.Boolean]
+  ): ICluster = {
+    val __obj = js.Dynamic.literal(forEachDataPoint = forEachDataPoint, forEachEntry = forEachEntry, getBounds = getBounds, getMaxZoom = getMaxZoom, getMinZoom = getMinZoom, getPosition = getPosition, getWeight = getWeight, isCluster = isCluster)
+  
+    __obj.asInstanceOf[ICluster]
+  }
+}
+

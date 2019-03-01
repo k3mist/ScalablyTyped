@@ -34,3 +34,45 @@ trait RoomsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[RoomStatus]
 }
 
+object RoomsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Room]
+    ],
+    decline: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Room]
+    ],
+    dismiss: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Room]
+    ],
+    join: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Room]
+    ],
+    leave: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Room]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RoomList]
+    ],
+    reportStatus: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RoomStatus]
+    ]
+  ): RoomsResource = {
+    val __obj = js.Dynamic.literal(create = create, decline = decline, dismiss = dismiss, get = get, join = join, leave = leave, list = list, reportStatus = reportStatus)
+  
+    __obj.asInstanceOf[RoomsResource]
+  }
+}
+

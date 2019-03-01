@@ -56,3 +56,23 @@ trait ScaleIOPersistentVolumeSource extends js.Object {
   val volumeName: java.lang.String
 }
 
+object ScaleIOPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    gateway: java.lang.String,
+    protectionDomain: java.lang.String,
+    readOnly: scala.Boolean,
+    secretRef: SecretReference,
+    sslEnabled: scala.Boolean,
+    storageMode: java.lang.String,
+    storagePool: java.lang.String,
+    system: java.lang.String,
+    volumeName: java.lang.String
+  ): ScaleIOPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, gateway = gateway, protectionDomain = protectionDomain, readOnly = readOnly, secretRef = secretRef, sslEnabled = sslEnabled, storageMode = storageMode, storagePool = storagePool, system = system, volumeName = volumeName)
+  
+    __obj.asInstanceOf[ScaleIOPersistentVolumeSource]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Name extends js.Object {
   var `type`: web3Lib.ethAbiMod.ABIDataTypes
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: web3Lib.ethAbiMod.ABIDataTypes): Anon_Name = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

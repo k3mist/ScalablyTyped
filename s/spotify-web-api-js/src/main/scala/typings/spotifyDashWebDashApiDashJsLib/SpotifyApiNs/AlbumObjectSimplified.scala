@@ -21,3 +21,22 @@ trait AlbumObjectSimplified extends js.Object {
   var uri: java.lang.String
 }
 
+object AlbumObjectSimplified {
+  @scala.inline
+  def apply(
+    album_type: java.lang.String,
+    external_urls: ExternalUrlObject,
+    href: java.lang.String,
+    id: java.lang.String,
+    images: js.Array[ImageObject],
+    name: java.lang.String,
+    `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.album,
+    uri: java.lang.String,
+    available_markets: js.Array[java.lang.String] = null
+  ): AlbumObjectSimplified = {
+    val __obj = js.Dynamic.literal(album_type = album_type, external_urls = external_urls, href = href, id = id, images = images, name = name, `type` = `type`, uri = uri)
+    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets)
+    __obj.asInstanceOf[AlbumObjectSimplified]
+  }
+}
+

@@ -9,3 +9,12 @@ trait DropQuery extends Executable {
   def ifExists(): Executable
 }
 
+object DropQuery {
+  @scala.inline
+  def apply(ifExists: js.Function0[Executable], toQuery: js.Function0[QueryLike]): DropQuery = {
+    val __obj = js.Dynamic.literal(ifExists = ifExists, toQuery = toQuery)
+  
+    __obj.asInstanceOf[DropQuery]
+  }
+}
+

@@ -55,3 +55,26 @@ trait IRefund extends js.Object {
   var status: stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.canceled
 }
 
+object IRefund {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: java.lang.String,
+    reason: java.lang.String,
+    receipt_number: java.lang.String,
+    status: stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.canceled,
+    failure_reason: stripeLib.stripeLibStrings.lost_or_stolen_card | stripeLib.stripeLibStrings.expired_or_canceled_card | stripeLib.stripeLibStrings.unknown = null
+  ): IRefund = {
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, description = description, id = id, metadata = metadata, `object` = `object`, reason = reason, receipt_number = receipt_number, status = status.asInstanceOf[js.Any])
+    if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IRefund]
+  }
+}
+

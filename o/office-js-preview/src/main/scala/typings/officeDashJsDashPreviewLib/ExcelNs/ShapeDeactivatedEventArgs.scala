@@ -39,3 +39,16 @@ trait ShapeDeactivatedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object ShapeDeactivatedEventArgs {
+  @scala.inline
+  def apply(
+    shapeId: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeDeactivated,
+    worksheetId: java.lang.String
+  ): ShapeDeactivatedEventArgs = {
+    val __obj = js.Dynamic.literal(shapeId = shapeId, `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[ShapeDeactivatedEventArgs]
+  }
+}
+

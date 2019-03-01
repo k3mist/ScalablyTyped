@@ -12,3 +12,12 @@ trait BinarySet
   var values: js.Array[binaryType]
 }
 
+object BinarySet {
+  @scala.inline
+  def apply(`type`: awsDashSdkLib.awsDashSdkLibStrings.Binary, values: js.Array[binaryType]): BinarySet = {
+    val __obj = js.Dynamic.literal(`type` = `type`, values = values)
+  
+    __obj.asInstanceOf[BinarySet]
+  }
+}
+

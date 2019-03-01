@@ -41,3 +41,22 @@ trait IAdcControllerProvider extends js.Object {
   def releaseChannel(channel: scala.Double): scala.Unit
 }
 
+object IAdcControllerProvider {
+  @scala.inline
+  def apply(
+    acquireChannel: js.Function1[scala.Double, scala.Unit],
+    channelCount: scala.Double,
+    channelMode: ProviderAdcChannelMode,
+    isChannelModeSupported: js.Function1[ProviderAdcChannelMode, scala.Boolean],
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    readValue: js.Function1[scala.Double, scala.Double],
+    releaseChannel: js.Function1[scala.Double, scala.Unit],
+    resolutionInBits: scala.Double
+  ): IAdcControllerProvider = {
+    val __obj = js.Dynamic.literal(acquireChannel = acquireChannel, channelCount = channelCount, channelMode = channelMode, isChannelModeSupported = isChannelModeSupported, maxValue = maxValue, minValue = minValue, readValue = readValue, releaseChannel = releaseChannel, resolutionInBits = resolutionInBits)
+  
+    __obj.asInstanceOf[IAdcControllerProvider]
+  }
+}
+

@@ -16,3 +16,12 @@ trait Anon_Tar extends js.Object {
   val zipNs: Anon_Pack
 }
 
+object Anon_Tar {
+  @scala.inline
+  def apply(tarNs: Anon_CwdI, zipNs: Anon_Pack): Anon_Tar = {
+    val __obj = js.Dynamic.literal(tarNs = tarNs, zipNs = zipNs)
+  
+    __obj.asInstanceOf[Anon_Tar]
+  }
+}
+

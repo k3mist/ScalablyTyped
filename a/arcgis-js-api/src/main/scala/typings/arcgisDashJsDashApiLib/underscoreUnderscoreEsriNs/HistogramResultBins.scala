@@ -27,3 +27,19 @@ trait HistogramResultBins
   var minValue: scala.Double
 }
 
+object HistogramResultBins {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    count: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): HistogramResultBins = {
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[HistogramResultBins]
+  }
+}
+

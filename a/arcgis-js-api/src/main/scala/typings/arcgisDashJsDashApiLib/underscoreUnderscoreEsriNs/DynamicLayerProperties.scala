@@ -20,3 +20,13 @@ trait DynamicLayerProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DynamicLayerProperties {
+  @scala.inline
+  def apply(portalItem: PortalItemProperties = null, url: java.lang.String = null): DynamicLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DynamicLayerProperties]
+  }
+}
+

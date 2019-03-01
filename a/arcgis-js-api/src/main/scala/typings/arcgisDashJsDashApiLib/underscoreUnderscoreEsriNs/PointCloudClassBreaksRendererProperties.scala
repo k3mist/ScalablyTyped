@@ -34,3 +34,26 @@ trait PointCloudClassBreaksRendererProperties extends PointCloudRendererProperti
   var legendOptions: js.UndefOr[PointCloudClassBreaksRendererLegendOptions] = js.undefined
 }
 
+object PointCloudClassBreaksRendererProperties {
+  @scala.inline
+  def apply(
+    colorClassBreakInfos: js.Array[PointCloudClassBreaksRendererColorClassBreakInfos] = null,
+    colorModulation: PointCloudRendererColorModulation = null,
+    field: java.lang.String = null,
+    fieldTransformType: java.lang.String = null,
+    legendOptions: PointCloudClassBreaksRendererLegendOptions = null,
+    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
+    pointsPerInch: scala.Int | scala.Double = null
+  ): PointCloudClassBreaksRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (colorClassBreakInfos != null) __obj.updateDynamic("colorClassBreakInfos")(colorClassBreakInfos)
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointCloudClassBreaksRendererProperties]
+  }
+}
+

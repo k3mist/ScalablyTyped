@@ -12,3 +12,15 @@ trait Anon_Rgbcolor extends js.Object {
   var theme_color: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ThemeColorType
 }
 
+object Anon_Rgbcolor {
+  @scala.inline
+  def apply(
+    rgb_color: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.RgbColor,
+    theme_color: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ThemeColorType
+  ): Anon_Rgbcolor = {
+    val __obj = js.Dynamic.literal(rgb_color = rgb_color, theme_color = theme_color)
+  
+    __obj.asInstanceOf[Anon_Rgbcolor]
+  }
+}
+

@@ -37,3 +37,26 @@ trait Anon_DocumentUrlFrameIdMethod extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_DocumentUrlFrameIdMethod {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    documentUrl: java.lang.String = null,
+    originUrl: java.lang.String = null,
+    requestHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
+  ): Anon_DocumentUrlFrameIdMethod = {
+    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    __obj.asInstanceOf[Anon_DocumentUrlFrameIdMethod]
+  }
+}
+

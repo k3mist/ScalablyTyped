@@ -11,3 +11,16 @@ trait IPropertyDefs extends js.Object {
   def Item(Index: scala.Double): IPropertyDef
 }
 
+object IPropertyDefs {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IPropertyDefs],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IPropertyDef]
+  ): IPropertyDefs = {
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[IPropertyDefs]
+  }
+}
+

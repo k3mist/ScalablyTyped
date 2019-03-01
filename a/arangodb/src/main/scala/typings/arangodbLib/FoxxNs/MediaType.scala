@@ -12,3 +12,17 @@ trait MediaType extends js.Object {
   var `type`: java.lang.String
 }
 
+object MediaType {
+  @scala.inline
+  def apply(
+    parameters: arangodbLib.Anon_Charset,
+    subtype: java.lang.String,
+    `type`: java.lang.String,
+    suffix: java.lang.String = null
+  ): MediaType = {
+    val __obj = js.Dynamic.literal(parameters = parameters, subtype = subtype, `type` = `type`)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[MediaType]
+  }
+}
+

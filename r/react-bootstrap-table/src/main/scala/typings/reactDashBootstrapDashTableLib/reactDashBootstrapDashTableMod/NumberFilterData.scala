@@ -10,3 +10,15 @@ trait NumberFilterData extends FilterValue {
   var value: NumberFilterValue
 }
 
+object NumberFilterData {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.NumberFilter,
+    value: NumberFilterValue
+  ): NumberFilterData = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[NumberFilterData]
+  }
+}
+

@@ -25,3 +25,18 @@ trait XSheetOperation
   def computeFunction(nFunction: GeneralFunction): scala.Double
 }
 
+object XSheetOperation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    clearContents: js.Function1[scala.Double, scala.Unit],
+    computeFunction: js.Function1[GeneralFunction, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetOperation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, clearContents = clearContents, computeFunction = computeFunction, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSheetOperation]
+  }
+}
+

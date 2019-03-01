@@ -21,3 +21,25 @@ trait Box extends js.Object {
   def transform(m: Matrix): Box
 }
 
+object Box {
+  @scala.inline
+  def apply(
+    cx: scala.Double,
+    cy: scala.Double,
+    h: scala.Double,
+    height: scala.Double,
+    merge: js.Function1[Box, Box],
+    transform: js.Function1[Matrix, Box],
+    w: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    x2: scala.Double,
+    y: scala.Double,
+    y2: scala.Double
+  ): Box = {
+    val __obj = js.Dynamic.literal(cx = cx, cy = cy, h = h, height = height, merge = merge, transform = transform, w = w, width = width, x = x, x2 = x2, y = y, y2 = y2)
+  
+    __obj.asInstanceOf[Box]
+  }
+}
+

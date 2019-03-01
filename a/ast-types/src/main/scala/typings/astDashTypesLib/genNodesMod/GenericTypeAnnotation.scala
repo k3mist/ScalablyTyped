@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | scala.Null
 }
 
+object GenericTypeAnnotation {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.QualifiedTypeIdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.GenericTypeAnnotation,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
+  ): GenericTypeAnnotation = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], `type` = `type`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[GenericTypeAnnotation]
+  }
+}
+

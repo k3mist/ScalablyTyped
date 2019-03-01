@@ -34,3 +34,39 @@ trait Element extends js.Object {
   def zoomOut(): Zoom
 }
 
+object Element {
+  @scala.inline
+  def apply(
+    expand: js.Function1[java.lang.String, Expand],
+    expandHorizontal: js.Function0[Expand],
+    expandVertical: js.Function0[Expand],
+    fade: js.Function1[java.lang.String, Fade],
+    fadeIn: js.Function0[Fade],
+    fadeOut: js.Function0[Fade],
+    flip: js.Function3[java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
+    flipHorizontal: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
+    flipVertical: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, Flip],
+    pageturn: js.Function3[java.lang.String, kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
+    pageturnHorizontal: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
+    pageturnVertical: js.Function2[kendoDashUiLib.JQuery, kendoDashUiLib.JQuery, PageTurn],
+    slideIn: js.Function1[java.lang.String, SlideIn],
+    slideInDown: js.Function0[SlideIn],
+    slideInLeft: js.Function0[SlideIn],
+    slideInRight: js.Function0[SlideIn],
+    slideInUp: js.Function0[SlideIn],
+    tile: js.Function2[java.lang.String, kendoDashUiLib.JQuery, Tile],
+    tileDown: js.Function1[kendoDashUiLib.JQuery, Tile],
+    tileLeft: js.Function1[kendoDashUiLib.JQuery, Tile],
+    tileRight: js.Function1[kendoDashUiLib.JQuery, Tile],
+    tileUp: js.Function1[kendoDashUiLib.JQuery, Tile],
+    transfer: js.Function1[kendoDashUiLib.JQuery, Transfer],
+    zoom: js.Function1[java.lang.String, Zoom],
+    zoomIn: js.Function0[Zoom],
+    zoomOut: js.Function0[Zoom]
+  ): Element = {
+    val __obj = js.Dynamic.literal(expand = expand, expandHorizontal = expandHorizontal, expandVertical = expandVertical, fade = fade, fadeIn = fadeIn, fadeOut = fadeOut, flip = flip, flipHorizontal = flipHorizontal, flipVertical = flipVertical, pageturn = pageturn, pageturnHorizontal = pageturnHorizontal, pageturnVertical = pageturnVertical, slideIn = slideIn, slideInDown = slideInDown, slideInLeft = slideInLeft, slideInRight = slideInRight, slideInUp = slideInUp, tile = tile, tileDown = tileDown, tileLeft = tileLeft, tileRight = tileRight, tileUp = tileUp, transfer = transfer, zoom = zoom, zoomIn = zoomIn, zoomOut = zoomOut)
+  
+    __obj.asInstanceOf[Element]
+  }
+}
+

@@ -20,3 +20,16 @@ trait ProfileRegions extends js.Object {
   var regions: js.Array[ProfileRegion]
 }
 
+object ProfileRegions {
+  @scala.inline
+  def apply(
+    noticeContactConsentRequirementRegions: js.Array[java.lang.String],
+    optOutContactConsentRequirementRegions: js.Array[java.lang.String],
+    regions: js.Array[ProfileRegion]
+  ): ProfileRegions = {
+    val __obj = js.Dynamic.literal(noticeContactConsentRequirementRegions = noticeContactConsentRequirementRegions, optOutContactConsentRequirementRegions = optOutContactConsentRequirementRegions, regions = regions)
+  
+    __obj.asInstanceOf[ProfileRegions]
+  }
+}
+

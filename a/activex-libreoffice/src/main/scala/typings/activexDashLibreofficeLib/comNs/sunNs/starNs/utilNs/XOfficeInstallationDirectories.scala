@@ -59,3 +59,22 @@ trait XOfficeInstallationDirectories
   def makeRelocatableURL(URL: java.lang.String): java.lang.String
 }
 
+object XOfficeInstallationDirectories {
+  @scala.inline
+  def apply(
+    OfficeInstallationDirectoryURL: java.lang.String,
+    OfficeUserDataDirectoryURL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getOfficeInstallationDirectoryURL: js.Function0[java.lang.String],
+    getOfficeUserDataDirectoryURL: js.Function0[java.lang.String],
+    makeAbsoluteURL: js.Function1[java.lang.String, java.lang.String],
+    makeRelocatableURL: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XOfficeInstallationDirectories = {
+    val __obj = js.Dynamic.literal(OfficeInstallationDirectoryURL = OfficeInstallationDirectoryURL, OfficeUserDataDirectoryURL = OfficeUserDataDirectoryURL, acquire = acquire, getOfficeInstallationDirectoryURL = getOfficeInstallationDirectoryURL, getOfficeUserDataDirectoryURL = getOfficeUserDataDirectoryURL, makeAbsoluteURL = makeAbsoluteURL, makeRelocatableURL = makeRelocatableURL, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XOfficeInstallationDirectories]
+  }
+}
+

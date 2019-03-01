@@ -10,3 +10,12 @@ trait IDialogsPromptResult extends js.Object {
   var input1: java.lang.String
 }
 
+object IDialogsPromptResult {
+  @scala.inline
+  def apply(buttonIndex: scala.Double, input1: java.lang.String): IDialogsPromptResult = {
+    val __obj = js.Dynamic.literal(buttonIndex = buttonIndex, input1 = input1)
+  
+    __obj.asInstanceOf[IDialogsPromptResult]
+  }
+}
+

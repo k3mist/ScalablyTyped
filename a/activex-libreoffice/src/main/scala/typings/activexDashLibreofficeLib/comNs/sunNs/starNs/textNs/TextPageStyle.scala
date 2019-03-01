@@ -82,3 +82,31 @@ trait TextPageStyle extends js.Object {
   var TextColumns: XTextColumns
 }
 
+object TextPageStyle {
+  @scala.inline
+  def apply(
+    FooterText: XText,
+    FooterTextFirst: XText,
+    FooterTextLeft: XText,
+    FooterTextRight: XText,
+    FootnoteHeight: scala.Double,
+    FootnoteLineAdjust: scala.Double,
+    FootnoteLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FootnoteLineDistance: scala.Double,
+    FootnoteLineRelativeWidth: scala.Double,
+    FootnoteLineTextDistance: scala.Double,
+    FootnoteLineWeight: scala.Double,
+    HeaderText: XText,
+    HeaderTextFirst: XText,
+    HeaderTextLeft: XText,
+    HeaderTextRight: XText,
+    RegisterModeActive: scala.Boolean,
+    RegisterParagraphStyle: java.lang.String,
+    TextColumns: XTextColumns
+  ): TextPageStyle = {
+    val __obj = js.Dynamic.literal(FooterText = FooterText, FooterTextFirst = FooterTextFirst, FooterTextLeft = FooterTextLeft, FooterTextRight = FooterTextRight, FootnoteHeight = FootnoteHeight, FootnoteLineAdjust = FootnoteLineAdjust, FootnoteLineColor = FootnoteLineColor, FootnoteLineDistance = FootnoteLineDistance, FootnoteLineRelativeWidth = FootnoteLineRelativeWidth, FootnoteLineTextDistance = FootnoteLineTextDistance, FootnoteLineWeight = FootnoteLineWeight, HeaderText = HeaderText, HeaderTextFirst = HeaderTextFirst, HeaderTextLeft = HeaderTextLeft, HeaderTextRight = HeaderTextRight, RegisterModeActive = RegisterModeActive, RegisterParagraphStyle = RegisterParagraphStyle, TextColumns = TextColumns)
+  
+    __obj.asInstanceOf[TextPageStyle]
+  }
+}
+

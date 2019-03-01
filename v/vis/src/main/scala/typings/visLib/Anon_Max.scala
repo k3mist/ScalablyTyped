@@ -10,3 +10,12 @@ trait Anon_Max extends js.Object {
   var min: stdLib.Date
 }
 
+object Anon_Max {
+  @scala.inline
+  def apply(max: stdLib.Date, min: stdLib.Date): Anon_Max = {
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
+    __obj.asInstanceOf[Anon_Max]
+  }
+}
+

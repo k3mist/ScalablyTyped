@@ -14,3 +14,12 @@ trait Anon_DelegateType
   var delegateType: java.lang.String
 }
 
+object Anon_DelegateType {
+  @scala.inline
+  def apply(delegateType: java.lang.String): Anon_DelegateType = {
+    val __obj = js.Dynamic.literal(delegateType = delegateType)
+  
+    __obj.asInstanceOf[Anon_DelegateType]
+  }
+}
+

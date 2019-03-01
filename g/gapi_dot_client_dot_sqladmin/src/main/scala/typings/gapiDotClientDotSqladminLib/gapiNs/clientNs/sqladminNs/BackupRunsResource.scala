@@ -16,3 +16,29 @@ trait BackupRunsResource extends js.Object {
   def list(request: gapiDotClientDotSqladminLib.Anon_AltFieldsInstance): gapiDotClientLib.gapiNs.clientNs.Request[BackupRunsListResponse]
 }
 
+object BackupRunsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackupRun]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFieldsInstance, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackupRunsListResponse]
+    ]
+  ): BackupRunsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list)
+  
+    __obj.asInstanceOf[BackupRunsResource]
+  }
+}
+

@@ -15,3 +15,20 @@ trait IProperty extends js.Object {
   var validators: js.Array[Validator]
 }
 
+object IProperty {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    isDataProperty: scala.Boolean,
+    isNavigationProperty: scala.Boolean,
+    name: java.lang.String,
+    nameOnServer: java.lang.String,
+    parentType: IStructuralType,
+    validators: js.Array[Validator]
+  ): IProperty = {
+    val __obj = js.Dynamic.literal(displayName = displayName, isDataProperty = isDataProperty, isNavigationProperty = isNavigationProperty, name = name, nameOnServer = nameOnServer, parentType = parentType, validators = validators)
+  
+    __obj.asInstanceOf[IProperty]
+  }
+}
+

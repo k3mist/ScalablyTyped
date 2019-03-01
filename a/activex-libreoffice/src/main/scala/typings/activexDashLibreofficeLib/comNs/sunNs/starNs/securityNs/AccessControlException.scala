@@ -15,3 +15,16 @@ trait AccessControlException
   var LackingPermission: js.Any
 }
 
+object AccessControlException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    LackingPermission: js.Any,
+    Message: java.lang.String
+  ): AccessControlException = {
+    val __obj = js.Dynamic.literal(Context = Context, LackingPermission = LackingPermission, Message = Message)
+  
+    __obj.asInstanceOf[AccessControlException]
+  }
+}
+

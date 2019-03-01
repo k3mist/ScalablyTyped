@@ -55,3 +55,21 @@ trait CSIPersistentVolumeSource extends js.Object {
   val volumeHandle: java.lang.String
 }
 
+object CSIPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    controllerPublishSecretRef: SecretReference,
+    driver: java.lang.String,
+    fsType: java.lang.String,
+    nodePublishSecretRef: SecretReference,
+    nodeStageSecretRef: SecretReference,
+    readOnly: scala.Boolean,
+    volumeAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    volumeHandle: java.lang.String
+  ): CSIPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal(controllerPublishSecretRef = controllerPublishSecretRef, driver = driver, fsType = fsType, nodePublishSecretRef = nodePublishSecretRef, nodeStageSecretRef = nodeStageSecretRef, readOnly = readOnly, volumeAttributes = volumeAttributes, volumeHandle = volumeHandle)
+  
+    __obj.asInstanceOf[CSIPersistentVolumeSource]
+  }
+}
+

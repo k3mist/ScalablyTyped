@@ -17,3 +17,22 @@ trait StructLog extends js.Object {
   var storage: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object StructLog {
+  @scala.inline
+  def apply(
+    depth: scala.Double,
+    error: java.lang.String,
+    gas: scala.Double,
+    gasCost: scala.Double,
+    memory: js.Array[java.lang.String],
+    op: OpCode,
+    pc: scala.Double,
+    stack: js.Array[java.lang.String],
+    storage: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): StructLog = {
+    val __obj = js.Dynamic.literal(depth = depth, error = error, gas = gas, gasCost = gasCost, memory = memory, op = op, pc = pc, stack = stack, storage = storage)
+  
+    __obj.asInstanceOf[StructLog]
+  }
+}
+

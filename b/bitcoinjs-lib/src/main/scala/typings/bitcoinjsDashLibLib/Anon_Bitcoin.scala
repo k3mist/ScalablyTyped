@@ -10,3 +10,15 @@ trait Anon_Bitcoin extends js.Object {
   var testnet: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network
 }
 
+object Anon_Bitcoin {
+  @scala.inline
+  def apply(
+    bitcoin: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network,
+    testnet: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network
+  ): Anon_Bitcoin = {
+    val __obj = js.Dynamic.literal(bitcoin = bitcoin, testnet = testnet)
+  
+    __obj.asInstanceOf[Anon_Bitcoin]
+  }
+}
+

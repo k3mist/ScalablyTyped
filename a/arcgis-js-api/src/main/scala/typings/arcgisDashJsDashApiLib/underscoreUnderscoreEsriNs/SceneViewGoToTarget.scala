@@ -53,3 +53,29 @@ trait SceneViewGoToTarget
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SceneViewGoToTarget {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    center: js.Array[scala.Double] | Point = null,
+    heading: scala.Int | scala.Double = null,
+    position: Point = null,
+    scale: scala.Int | scala.Double = null,
+    target: js.Array[scala.Double] | Geometry | js.Array[Geometry] | Graphic | js.Array[Graphic] | Viewpoint | Camera = null,
+    tilt: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): SceneViewGoToTarget = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneViewGoToTarget]
+  }
+}
+

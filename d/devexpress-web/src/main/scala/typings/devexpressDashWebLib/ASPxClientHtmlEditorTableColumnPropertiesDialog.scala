@@ -23,3 +23,22 @@ trait ASPxClientHtmlEditorTableColumnPropertiesDialog extends ASPxClientHtmlEdit
   def GetWidthValueTypeComboBox(): ASPxClientComboBox
 }
 
+object ASPxClientHtmlEditorTableColumnPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox],
+    GetWidthTypeComboBox: js.Function0[ASPxClientComboBox],
+    GetWidthValueSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetWidthValueTypeComboBox: js.Function0[ASPxClientComboBox]
+  ): ASPxClientHtmlEditorTableColumnPropertiesDialog = {
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox, GetWidthTypeComboBox = GetWidthTypeComboBox, GetWidthValueSpinEdit = GetWidthValueSpinEdit, GetWidthValueTypeComboBox = GetWidthValueTypeComboBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesDialog]
+  }
+}
+

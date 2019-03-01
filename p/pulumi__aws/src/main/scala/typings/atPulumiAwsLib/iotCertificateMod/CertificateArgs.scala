@@ -18,3 +18,15 @@ trait CertificateArgs extends js.Object {
   val csr: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object CertificateArgs {
+  @scala.inline
+  def apply(
+    active: atPulumiPulumiLib.resourceMod.Input[scala.Boolean],
+    csr: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): CertificateArgs = {
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], csr = csr.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CertificateArgs]
+  }
+}
+

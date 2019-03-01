@@ -30,3 +30,18 @@ trait Flags[T] extends js.Object {
   var shallow: AssertionChain[T]
 }
 
+object Flags {
+  @scala.inline
+  def apply[T](
+    not: AssertionChain[T],
+    once: AssertionChain[T],
+    only: AssertionChain[T],
+    part: AssertionChain[T],
+    shallow: AssertionChain[T]
+  ): Flags[T] = {
+    val __obj = js.Dynamic.literal(not = not, once = once, only = only, part = part, shallow = shallow)
+  
+    __obj.asInstanceOf[Flags[T]]
+  }
+}
+

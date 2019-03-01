@@ -11,3 +11,12 @@ trait DetectIdentifyResponse extends js.Object {
   var result: baiduDashAppLib.Anon_Height
 }
 
+object DetectIdentifyResponse {
+  @scala.inline
+  def apply(log_id: scala.Double, result: baiduDashAppLib.Anon_Height): DetectIdentifyResponse = {
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result)
+  
+    __obj.asInstanceOf[DetectIdentifyResponse]
+  }
+}
+

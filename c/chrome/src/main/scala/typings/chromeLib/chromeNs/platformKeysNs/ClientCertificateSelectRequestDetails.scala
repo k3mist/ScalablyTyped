@@ -12,3 +12,12 @@ trait ClientCertificateSelectRequestDetails extends js.Object {
   var certificateTypes: js.Array[java.lang.String]
 }
 
+object ClientCertificateSelectRequestDetails {
+  @scala.inline
+  def apply(certificateAuthorities: js.Array[stdLib.ArrayBuffer], certificateTypes: js.Array[java.lang.String]): ClientCertificateSelectRequestDetails = {
+    val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities, certificateTypes = certificateTypes)
+  
+    __obj.asInstanceOf[ClientCertificateSelectRequestDetails]
+  }
+}
+

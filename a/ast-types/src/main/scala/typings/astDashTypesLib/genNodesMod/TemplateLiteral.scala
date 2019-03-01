@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TemplateLiteral
 }
 
+object TemplateLiteral {
+  @scala.inline
+  def apply(
+    expressions: js.Array[astDashTypesLib.genKindsMod.ExpressionKind],
+    quasis: js.Array[astDashTypesLib.genKindsMod.TemplateElementKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TemplateLiteral
+  ): TemplateLiteral = {
+    val __obj = js.Dynamic.literal(expressions = expressions, quasis = quasis, `type` = `type`)
+  
+    __obj.asInstanceOf[TemplateLiteral]
+  }
+}
+

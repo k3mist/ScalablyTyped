@@ -14,3 +14,19 @@ trait IKnownContactFieldStatics extends js.Object {
   def convertTypeToName(`type`: ContactFieldType): java.lang.String
 }
 
+object IKnownContactFieldStatics {
+  @scala.inline
+  def apply(
+    convertNameToType: js.Function1[java.lang.String, ContactFieldType],
+    convertTypeToName: js.Function1[ContactFieldType, java.lang.String],
+    email: java.lang.String,
+    instantMessage: java.lang.String,
+    location: java.lang.String,
+    phoneNumber: java.lang.String
+  ): IKnownContactFieldStatics = {
+    val __obj = js.Dynamic.literal(convertNameToType = convertNameToType, convertTypeToName = convertTypeToName, email = email, instantMessage = instantMessage, location = location, phoneNumber = phoneNumber)
+  
+    __obj.asInstanceOf[IKnownContactFieldStatics]
+  }
+}
+

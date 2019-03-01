@@ -12,3 +12,17 @@ trait ErrorObject
   var stack: java.lang.String
 }
 
+object ErrorObject {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: java.lang.String,
+    stack: java.lang.String,
+    StringDictionary: /* keyof */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): ErrorObject = {
+    val __obj = js.Dynamic.literal(message = message, name = name, stack = stack)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ErrorObject]
+  }
+}
+

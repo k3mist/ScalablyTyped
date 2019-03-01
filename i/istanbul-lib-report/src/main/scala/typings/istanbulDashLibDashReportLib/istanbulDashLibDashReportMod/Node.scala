@@ -17,3 +17,25 @@ trait Node extends js.Object {
   def visit(visitor: Visitor[Node], state: js.Any): scala.Unit
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    getChildren: js.Function0[js.Array[Node]],
+    getCoverageSummary: js.Function1[
+      scala.Boolean, 
+      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary
+    ],
+    getFileCoverage: js.Function0[istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage],
+    getParent: js.Function0[Node],
+    getQualifiedName: js.Function0[java.lang.String],
+    getRelativeName: js.Function0[java.lang.String],
+    isRoot: js.Function0[scala.Boolean],
+    isSummary: js.Function0[scala.Boolean],
+    visit: js.Function2[Visitor[Node], js.Any, scala.Unit]
+  ): Node = {
+    val __obj = js.Dynamic.literal(getChildren = getChildren, getCoverageSummary = getCoverageSummary, getFileCoverage = getFileCoverage, getParent = getParent, getQualifiedName = getQualifiedName, getRelativeName = getRelativeName, isRoot = isRoot, isSummary = isSummary, visit = visit)
+  
+    __obj.asInstanceOf[Node]
+  }
+}
+

@@ -12,3 +12,17 @@ trait InterceptFileProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object InterceptFileProtocolRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): InterceptFileProtocolRequest = {
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[InterceptFileProtocolRequest]
+  }
+}
+

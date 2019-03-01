@@ -194,3 +194,71 @@ trait ParagraphProperties extends js.Object {
   var TopBorderDistance: scala.Double
 }
 
+object ParagraphProperties {
+  @scala.inline
+  def apply(
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BreakType: BreakType,
+    DropCapCharStyleName: java.lang.String,
+    DropCapFormat: DropCapFormat,
+    DropCapWholeWord: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    ListId: java.lang.String,
+    NumberingIsNumber: scala.Boolean,
+    NumberingLevel: scala.Double,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    NumberingStartValue: scala.Double,
+    NumberingStyleName: java.lang.String,
+    OutlineLevel: scala.Double,
+    PageDescName: java.lang.String,
+    PageNumberOffset: scala.Double,
+    PageStyleName: java.lang.String,
+    ParaAdjust: ParagraphAdjust,
+    ParaBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ParaBackGraphicFilter: java.lang.String,
+    ParaBackGraphicLocation: GraphicLocation,
+    ParaBackGraphicURL: java.lang.String,
+    ParaBackTransparent: scala.Boolean,
+    ParaBottomMargin: scala.Double,
+    ParaContextMargin: scala.Boolean,
+    ParaExpandSingleWord: scala.Boolean,
+    ParaFirstLineIndent: scala.Double,
+    ParaHyphenationMaxHyphens: scala.Double,
+    ParaHyphenationMaxLeadingChars: scala.Double,
+    ParaHyphenationMaxTrailingChars: scala.Double,
+    ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ParaIsAutoFirstLineIndent: scala.Boolean,
+    ParaIsConnectBorder: scala.Boolean,
+    ParaIsHyphenation: scala.Boolean,
+    ParaIsNumberingRestart: scala.Boolean,
+    ParaKeepTogether: scala.Boolean,
+    ParaLastLineAdjust: scala.Double,
+    ParaLeftMargin: scala.Double,
+    ParaLineNumberCount: scala.Boolean,
+    ParaLineNumberStartValue: scala.Double,
+    ParaLineSpacing: LineSpacing,
+    ParaOrphans: scala.Double,
+    ParaRegisterModeActive: scala.Boolean,
+    ParaRightMargin: scala.Double,
+    ParaShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ParaSplit: scala.Boolean,
+    ParaStyleName: java.lang.String,
+    ParaTabStops: activexDashInteropLib.SafeArray[TabStop],
+    ParaTopMargin: scala.Double,
+    ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    ParaVertAlignment: scala.Double,
+    ParaWidows: scala.Double,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double
+  ): ParagraphProperties = {
+    val __obj = js.Dynamic.literal(BorderDistance = BorderDistance, BottomBorder = BottomBorder, BottomBorderDistance = BottomBorderDistance, BreakType = BreakType, DropCapCharStyleName = DropCapCharStyleName, DropCapFormat = DropCapFormat, DropCapWholeWord = DropCapWholeWord, LeftBorder = LeftBorder, LeftBorderDistance = LeftBorderDistance, ListId = ListId, NumberingIsNumber = NumberingIsNumber, NumberingLevel = NumberingLevel, NumberingRules = NumberingRules, NumberingStartValue = NumberingStartValue, NumberingStyleName = NumberingStyleName, OutlineLevel = OutlineLevel, PageDescName = PageDescName, PageNumberOffset = PageNumberOffset, PageStyleName = PageStyleName, ParaAdjust = ParaAdjust, ParaBackColor = ParaBackColor, ParaBackGraphicFilter = ParaBackGraphicFilter, ParaBackGraphicLocation = ParaBackGraphicLocation, ParaBackGraphicURL = ParaBackGraphicURL, ParaBackTransparent = ParaBackTransparent, ParaBottomMargin = ParaBottomMargin, ParaContextMargin = ParaContextMargin, ParaExpandSingleWord = ParaExpandSingleWord, ParaFirstLineIndent = ParaFirstLineIndent, ParaHyphenationMaxHyphens = ParaHyphenationMaxHyphens, ParaHyphenationMaxLeadingChars = ParaHyphenationMaxLeadingChars, ParaHyphenationMaxTrailingChars = ParaHyphenationMaxTrailingChars, ParaInteropGrabBag = ParaInteropGrabBag, ParaIsAutoFirstLineIndent = ParaIsAutoFirstLineIndent, ParaIsConnectBorder = ParaIsConnectBorder, ParaIsHyphenation = ParaIsHyphenation, ParaIsNumberingRestart = ParaIsNumberingRestart, ParaKeepTogether = ParaKeepTogether, ParaLastLineAdjust = ParaLastLineAdjust, ParaLeftMargin = ParaLeftMargin, ParaLineNumberCount = ParaLineNumberCount, ParaLineNumberStartValue = ParaLineNumberStartValue, ParaLineSpacing = ParaLineSpacing, ParaOrphans = ParaOrphans, ParaRegisterModeActive = ParaRegisterModeActive, ParaRightMargin = ParaRightMargin, ParaShadowFormat = ParaShadowFormat, ParaSplit = ParaSplit, ParaStyleName = ParaStyleName, ParaTabStops = ParaTabStops, ParaTopMargin = ParaTopMargin, ParaUserDefinedAttributes = ParaUserDefinedAttributes, ParaVertAlignment = ParaVertAlignment, ParaWidows = ParaWidows, RightBorder = RightBorder, RightBorderDistance = RightBorderDistance, TopBorder = TopBorder, TopBorderDistance = TopBorderDistance)
+  
+    __obj.asInstanceOf[ParagraphProperties]
+  }
+}
+

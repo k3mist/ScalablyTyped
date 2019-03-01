@@ -19,3 +19,16 @@ trait PolyPolygonBezierDescriptor extends js.Object {
   var PolygonKind: PolygonKind
 }
 
+object PolyPolygonBezierDescriptor {
+  @scala.inline
+  def apply(
+    Geometry: PolyPolygonBezierCoords,
+    PolyPolygonBezier: PolyPolygonBezierCoords,
+    PolygonKind: PolygonKind
+  ): PolyPolygonBezierDescriptor = {
+    val __obj = js.Dynamic.literal(Geometry = Geometry, PolyPolygonBezier = PolyPolygonBezier, PolygonKind = PolygonKind)
+  
+    __obj.asInstanceOf[PolyPolygonBezierDescriptor]
+  }
+}
+

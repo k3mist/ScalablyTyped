@@ -45,3 +45,42 @@ import scala.scalajs.js.annotation._
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TileLayerProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    listMode: java.lang.String = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    portalItem: PortalItemProperties = null,
+    refreshInterval: scala.Int | scala.Double = null,
+    tileInfo: TileInfoProperties = null,
+    tileServers: js.Array[java.lang.String] = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TileLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    if (tileServers != null) __obj.updateDynamic("tileServers")(tileServers)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TileLayerProperties]
+  }
+}
+

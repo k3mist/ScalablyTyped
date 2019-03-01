@@ -26,3 +26,16 @@ trait ASPxClientDashboardItemEventArgs extends ASPxClientEventArgs {
   def IsOthersValue(value: js.Object): scala.Boolean
 }
 
+object ASPxClientDashboardItemEventArgs {
+  @scala.inline
+  def apply(
+    IsNullValue: js.Function1[js.Object, scala.Boolean],
+    IsOthersValue: js.Function1[js.Object, scala.Boolean],
+    ItemName: java.lang.String
+  ): ASPxClientDashboardItemEventArgs = {
+    val __obj = js.Dynamic.literal(IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemEventArgs]
+  }
+}
+

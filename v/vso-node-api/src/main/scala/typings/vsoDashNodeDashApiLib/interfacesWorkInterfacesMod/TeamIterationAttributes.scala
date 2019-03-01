@@ -11,3 +11,12 @@ trait TeamIterationAttributes extends js.Object {
   var timeFrame: TimeFrame
 }
 
+object TeamIterationAttributes {
+  @scala.inline
+  def apply(finishDate: stdLib.Date, startDate: stdLib.Date, timeFrame: TimeFrame): TeamIterationAttributes = {
+    val __obj = js.Dynamic.literal(finishDate = finishDate, startDate = startDate, timeFrame = timeFrame)
+  
+    __obj.asInstanceOf[TeamIterationAttributes]
+  }
+}
+

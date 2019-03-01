@@ -30,3 +30,25 @@ trait TextContent extends XTextContent {
   var TextWrap: WrapTextMode
 }
 
+object TextContent {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    AnchorType: TextContentAnchorType,
+    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    TextWrap: WrapTextMode,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): TextContent = {
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, TextWrap = TextWrap, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[TextContent]
+  }
+}
+

@@ -21,3 +21,18 @@ trait CodedValueDomainCodedValues
   var name: java.lang.String
 }
 
+object CodedValueDomainCodedValues {
+  @scala.inline
+  def apply(
+    code: java.lang.String | scala.Double,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): CodedValueDomainCodedValues = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[CodedValueDomainCodedValues]
+  }
+}
+

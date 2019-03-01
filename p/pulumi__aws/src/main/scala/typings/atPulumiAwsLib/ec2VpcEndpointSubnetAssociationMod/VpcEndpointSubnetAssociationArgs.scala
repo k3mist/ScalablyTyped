@@ -16,3 +16,15 @@ trait VpcEndpointSubnetAssociationArgs extends js.Object {
   val vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpcEndpointSubnetAssociationArgs {
+  @scala.inline
+  def apply(
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): VpcEndpointSubnetAssociationArgs = {
+    val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any], vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VpcEndpointSubnetAssociationArgs]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ProcessesProcessLoadData extends js.Object {
   var proc: java.lang.String
 }
 
+object ProcessesProcessLoadData {
+  @scala.inline
+  def apply(cpu: scala.Double, mem: scala.Double, pid: scala.Double, proc: java.lang.String): ProcessesProcessLoadData = {
+    val __obj = js.Dynamic.literal(cpu = cpu, mem = mem, pid = pid, proc = proc)
+  
+    __obj.asInstanceOf[ProcessesProcessLoadData]
+  }
+}
+

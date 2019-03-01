@@ -20,3 +20,18 @@ trait GeoMatchSetState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object GeoMatchSetState {
+  @scala.inline
+  def apply(
+    geoMatchConstraints: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeValueInputString]]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): GeoMatchSetState = {
+    val __obj = js.Dynamic.literal()
+    if (geoMatchConstraints != null) __obj.updateDynamic("geoMatchConstraints")(geoMatchConstraints.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeoMatchSetState]
+  }
+}
+

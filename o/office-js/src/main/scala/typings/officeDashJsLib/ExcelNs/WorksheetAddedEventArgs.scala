@@ -35,3 +35,16 @@ trait WorksheetAddedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object WorksheetAddedEventArgs {
+  @scala.inline
+  def apply(
+    source: EventSource | officeDashJsLib.officeDashJsLibStrings.Local | officeDashJsLib.officeDashJsLibStrings.Remote,
+    `type`: officeDashJsLib.officeDashJsLibStrings.WorksheetAdded,
+    worksheetId: java.lang.String
+  ): WorksheetAddedEventArgs = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[WorksheetAddedEventArgs]
+  }
+}
+

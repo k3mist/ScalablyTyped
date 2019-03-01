@@ -13,3 +13,18 @@ trait Anon_AttributeNames extends js.Object {
   var SignedPropertiesType: java.lang.String
 }
 
+object Anon_AttributeNames {
+  @scala.inline
+  def apply(
+    AttributeNames: Anon_Encoding,
+    DefaultPrefix: java.lang.String,
+    ElementNames: Anon_AllDataObjectsTimeStamp,
+    NamespaceURI: java.lang.String,
+    SignedPropertiesType: java.lang.String
+  ): Anon_AttributeNames = {
+    val __obj = js.Dynamic.literal(AttributeNames = AttributeNames, DefaultPrefix = DefaultPrefix, ElementNames = ElementNames, NamespaceURI = NamespaceURI, SignedPropertiesType = SignedPropertiesType)
+  
+    __obj.asInstanceOf[Anon_AttributeNames]
+  }
+}
+

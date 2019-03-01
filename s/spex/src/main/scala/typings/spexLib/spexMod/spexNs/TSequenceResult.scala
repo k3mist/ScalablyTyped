@@ -10,3 +10,12 @@ trait TSequenceResult extends js.Object {
   var total: scala.Double
 }
 
+object TSequenceResult {
+  @scala.inline
+  def apply(duration: scala.Double, total: scala.Double): TSequenceResult = {
+    val __obj = js.Dynamic.literal(duration = duration, total = total)
+  
+    __obj.asInstanceOf[TSequenceResult]
+  }
+}
+

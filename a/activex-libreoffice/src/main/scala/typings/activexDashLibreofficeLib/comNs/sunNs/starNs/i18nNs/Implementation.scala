@@ -14,3 +14,12 @@ trait Implementation extends js.Object {
   var unoID: java.lang.String
 }
 
+object Implementation {
+  @scala.inline
+  def apply(isDefault: scala.Boolean, unoID: java.lang.String): Implementation = {
+    val __obj = js.Dynamic.literal(isDefault = isDefault, unoID = unoID)
+  
+    __obj.asInstanceOf[Implementation]
+  }
+}
+

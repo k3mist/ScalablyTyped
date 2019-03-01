@@ -21,3 +21,19 @@ trait configWorkers
   var loaderUrl: js.UndefOr[js.Any] = js.undefined
 }
 
+object configWorkers {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    loaderConfig: configWorkersLoaderConfig = null,
+    loaderUrl: js.Any = null
+  ): configWorkers = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (loaderConfig != null) __obj.updateDynamic("loaderConfig")(loaderConfig)
+    if (loaderUrl != null) __obj.updateDynamic("loaderUrl")(loaderUrl)
+    __obj.asInstanceOf[configWorkers]
+  }
+}
+

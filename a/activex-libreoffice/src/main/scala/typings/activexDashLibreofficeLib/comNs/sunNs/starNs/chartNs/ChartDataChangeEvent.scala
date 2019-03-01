@@ -20,3 +20,19 @@ trait ChartDataChangeEvent
   var Type: ChartDataChangeType
 }
 
+object ChartDataChangeEvent {
+  @scala.inline
+  def apply(
+    EndColumn: scala.Double,
+    EndRow: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    StartColumn: scala.Double,
+    StartRow: scala.Double,
+    Type: ChartDataChangeType
+  ): ChartDataChangeEvent = {
+    val __obj = js.Dynamic.literal(EndColumn = EndColumn, EndRow = EndRow, Source = Source, StartColumn = StartColumn, StartRow = StartRow, Type = Type)
+  
+    __obj.asInstanceOf[ChartDataChangeEvent]
+  }
+}
+

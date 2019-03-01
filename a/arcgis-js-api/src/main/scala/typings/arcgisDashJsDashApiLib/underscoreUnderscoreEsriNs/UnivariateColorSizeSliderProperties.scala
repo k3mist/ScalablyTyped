@@ -86,3 +86,38 @@ trait UnivariateColorSizeSliderProperties extends WidgetteProperties {
   var visualVariables: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object UnivariateColorSizeSliderProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    handlesVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    histogram: HistogramResult = null,
+    histogramVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    histogramWidth: scala.Int | scala.Double = null,
+    labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    statistics: UnivariateColorSizeSliderStatistics = null,
+    statisticsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    ticksVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    visualVariables: js.Array[_] = null
+  ): UnivariateColorSizeSliderProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(handlesVisible)) __obj.updateDynamic("handlesVisible")(handlesVisible)
+    if (histogram != null) __obj.updateDynamic("histogram")(histogram)
+    if (!js.isUndefined(histogramVisible)) __obj.updateDynamic("histogramVisible")(histogramVisible)
+    if (histogramWidth != null) __obj.updateDynamic("histogramWidth")(histogramWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (!js.isUndefined(statisticsVisible)) __obj.updateDynamic("statisticsVisible")(statisticsVisible)
+    if (!js.isUndefined(ticksVisible)) __obj.updateDynamic("ticksVisible")(ticksVisible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[UnivariateColorSizeSliderProperties]
+  }
+}
+

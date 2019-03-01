@@ -18,3 +18,31 @@ trait IDataProtectionProvider extends js.Object {
   ): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object IDataProtectionProvider {
+  @scala.inline
+  def apply(
+    protectAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
+    ],
+    protectStreamAsync: js.Function2[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    unprotectAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
+    ],
+    unprotectStreamAsync: js.Function2[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ]
+  ): IDataProtectionProvider = {
+    val __obj = js.Dynamic.literal(protectAsync = protectAsync, protectStreamAsync = protectStreamAsync, unprotectAsync = unprotectAsync, unprotectStreamAsync = unprotectStreamAsync)
+  
+    __obj.asInstanceOf[IDataProtectionProvider]
+  }
+}
+

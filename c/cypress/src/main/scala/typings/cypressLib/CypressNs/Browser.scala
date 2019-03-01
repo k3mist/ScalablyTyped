@@ -18,3 +18,20 @@ trait Browser extends js.Object {
   var version: java.lang.String
 }
 
+object Browser {
+  @scala.inline
+  def apply(
+    displayName: cypressLib.cypressLibStrings.Electron | cypressLib.cypressLibStrings.Chrome | cypressLib.cypressLibStrings.Canary | cypressLib.cypressLibStrings.Chromium | cypressLib.cypressLibStrings.FireFox,
+    isHeaded: scala.Boolean,
+    isHeadless: scala.Boolean,
+    majorVersion: java.lang.String,
+    name: cypressLib.cypressLibStrings.electron | cypressLib.cypressLibStrings.chrome | cypressLib.cypressLibStrings.canary | cypressLib.cypressLibStrings.chromium | cypressLib.cypressLibStrings.firefox,
+    path: java.lang.String,
+    version: java.lang.String
+  ): Browser = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], isHeaded = isHeaded, isHeadless = isHeadless, majorVersion = majorVersion, name = name.asInstanceOf[js.Any], path = path, version = version)
+  
+    __obj.asInstanceOf[Browser]
+  }
+}
+

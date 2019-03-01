@@ -19,3 +19,28 @@ trait Package
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XSingleServiceFactory
      with activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesBatch
 
+object Package {
+  @scala.inline
+  def apply(
+    PendingChanges: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.ChangesSet,
+    acquire: js.Function0[scala.Unit],
+    commitChanges: js.Function0[scala.Unit],
+    createInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    createInstanceWithArguments: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    getPendingChanges: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.ChangesSet],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    hasPendingChanges: js.Function0[scala.Boolean],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): Package = {
+    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, commitChanges = commitChanges, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByHierarchicalName = getByHierarchicalName, getPendingChanges = getPendingChanges, hasByHierarchicalName = hasByHierarchicalName, hasPendingChanges = hasPendingChanges, initialize = initialize, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[Package]
+  }
+}
+

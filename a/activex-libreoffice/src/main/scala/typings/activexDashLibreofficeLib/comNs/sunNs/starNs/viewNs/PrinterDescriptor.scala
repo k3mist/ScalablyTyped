@@ -42,3 +42,21 @@ trait PrinterDescriptor extends js.Object {
   var PaperSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
 }
 
+object PrinterDescriptor {
+  @scala.inline
+  def apply(
+    CanSetPaperFormat: scala.Boolean,
+    CanSetPaperOrientation: scala.Boolean,
+    CanSetPaperSize: scala.Boolean,
+    IsBusy: scala.Boolean,
+    Name: java.lang.String,
+    PaperFormat: PaperFormat,
+    PaperOrientation: PaperOrientation,
+    PaperSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
+  ): PrinterDescriptor = {
+    val __obj = js.Dynamic.literal(CanSetPaperFormat = CanSetPaperFormat, CanSetPaperOrientation = CanSetPaperOrientation, CanSetPaperSize = CanSetPaperSize, IsBusy = IsBusy, Name = Name, PaperFormat = PaperFormat, PaperOrientation = PaperOrientation, PaperSize = PaperSize)
+  
+    __obj.asInstanceOf[PrinterDescriptor]
+  }
+}
+

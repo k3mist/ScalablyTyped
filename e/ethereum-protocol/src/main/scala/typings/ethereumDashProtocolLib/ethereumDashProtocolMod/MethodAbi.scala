@@ -15,3 +15,20 @@ trait MethodAbi extends FunctionAbi {
   var `type`: AbiType
 }
 
+object MethodAbi {
+  @scala.inline
+  def apply(
+    constant: scala.Boolean,
+    inputs: js.Array[DataItem],
+    name: java.lang.String,
+    outputs: js.Array[DataItem],
+    payable: scala.Boolean,
+    stateMutability: StateMutability,
+    `type`: AbiType
+  ): MethodAbi = {
+    val __obj = js.Dynamic.literal(constant = constant, inputs = inputs, name = name, outputs = outputs, payable = payable, stateMutability = stateMutability, `type` = `type`)
+  
+    __obj.asInstanceOf[MethodAbi]
+  }
+}
+

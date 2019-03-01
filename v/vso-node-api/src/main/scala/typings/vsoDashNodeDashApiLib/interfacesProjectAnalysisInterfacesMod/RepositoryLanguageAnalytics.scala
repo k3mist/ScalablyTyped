@@ -13,3 +13,18 @@ trait RepositoryLanguageAnalytics extends js.Object {
   var updatedTime: stdLib.Date
 }
 
+object RepositoryLanguageAnalytics {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    languageBreakdown: js.Array[LanguageStatistics],
+    name: java.lang.String,
+    resultPhase: ResultPhase,
+    updatedTime: stdLib.Date
+  ): RepositoryLanguageAnalytics = {
+    val __obj = js.Dynamic.literal(id = id, languageBreakdown = languageBreakdown, name = name, resultPhase = resultPhase, updatedTime = updatedTime)
+  
+    __obj.asInstanceOf[RepositoryLanguageAnalytics]
+  }
+}
+

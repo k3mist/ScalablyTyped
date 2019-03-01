@@ -11,3 +11,15 @@ trait JQueryStyleEventEmitter
   def on(eventName: java.lang.String, handler: js.Function): scala.Unit
 }
 
+object JQueryStyleEventEmitter {
+  @scala.inline
+  def apply(
+    off: js.Function2[java.lang.String, js.Function, scala.Unit],
+    on: js.Function2[java.lang.String, js.Function, scala.Unit]
+  ): JQueryStyleEventEmitter = {
+    val __obj = js.Dynamic.literal(off = off, on = on)
+  
+    __obj.asInstanceOf[JQueryStyleEventEmitter]
+  }
+}
+

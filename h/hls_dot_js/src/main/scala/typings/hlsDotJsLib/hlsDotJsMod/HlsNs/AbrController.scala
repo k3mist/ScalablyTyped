@@ -36,3 +36,19 @@ trait AbrController extends js.Object {
   var useGenericHandler: scala.Boolean
 }
 
+object AbrController {
+  @scala.inline
+  def apply(
+    autoLevelCapping: scala.Double,
+    handledEvents: js.Array[java.lang.String],
+    hls: hlsDotJsLib.hlsDotJsMod.Hls,
+    lastLoadedFragLevel: scala.Double,
+    nextAutoLevel: scala.Double,
+    useGenericHandler: scala.Boolean
+  ): AbrController = {
+    val __obj = js.Dynamic.literal(autoLevelCapping = autoLevelCapping, handledEvents = handledEvents, hls = hls, lastLoadedFragLevel = lastLoadedFragLevel, nextAutoLevel = nextAutoLevel, useGenericHandler = useGenericHandler)
+  
+    __obj.asInstanceOf[AbrController]
+  }
+}
+

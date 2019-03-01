@@ -12,3 +12,17 @@ trait Anon_AssetsHtml extends js.Object {
   var plugin: htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginMod.HtmlWebpackPlugin
 }
 
+object Anon_AssetsHtml {
+  @scala.inline
+  def apply(
+    assets: Anon_Css,
+    html: java.lang.String,
+    outputName: java.lang.String,
+    plugin: htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginMod.HtmlWebpackPlugin
+  ): Anon_AssetsHtml = {
+    val __obj = js.Dynamic.literal(assets = assets, html = html, outputName = outputName, plugin = plugin)
+  
+    __obj.asInstanceOf[Anon_AssetsHtml]
+  }
+}
+

@@ -14,3 +14,16 @@ trait StreamLayerViewProperties extends LayerViewProperties {
   var graphics: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
 }
 
+object StreamLayerViewProperties {
+  @scala.inline
+  def apply(
+    graphics: CollectionProperties[GraphicProperties] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): StreamLayerViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[StreamLayerViewProperties]
+  }
+}
+

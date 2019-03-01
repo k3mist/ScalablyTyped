@@ -10,3 +10,12 @@ trait Anon_CreateRemove extends js.Object {
   var remove: scala.Double
 }
 
+object Anon_CreateRemove {
+  @scala.inline
+  def apply(create: scala.Double, remove: scala.Double): Anon_CreateRemove = {
+    val __obj = js.Dynamic.literal(create = create, remove = remove)
+  
+    __obj.asInstanceOf[Anon_CreateRemove]
+  }
+}
+

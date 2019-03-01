@@ -14,3 +14,19 @@ trait OverlayRenderProps extends js.Object {
   def scheduleUpdate(): scala.Unit
 }
 
+object OverlayRenderProps {
+  @scala.inline
+  def apply(
+    arrowProps: reactDashOverlaysLib.Anon_Element,
+    placement: Placements,
+    props: reactDashOverlaysLib.Anon_Arialabelledby,
+    scheduleUpdate: js.Function0[scala.Unit],
+    show: scala.Boolean,
+    outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
+  ): OverlayRenderProps = {
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, props = props, scheduleUpdate = scheduleUpdate, show = show)
+    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
+    __obj.asInstanceOf[OverlayRenderProps]
+  }
+}
+

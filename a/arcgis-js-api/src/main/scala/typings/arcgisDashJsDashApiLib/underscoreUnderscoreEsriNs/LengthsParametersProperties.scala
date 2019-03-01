@@ -39,3 +39,20 @@ trait LengthsParametersProperties extends js.Object {
   var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
 }
 
+object LengthsParametersProperties {
+  @scala.inline
+  def apply(
+    calculationType: java.lang.String = null,
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    lengthUnit: scala.Double | java.lang.String = null,
+    polylines: js.Array[PolylineProperties] = null
+  ): LengthsParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
+    if (polylines != null) __obj.updateDynamic("polylines")(polylines)
+    __obj.asInstanceOf[LengthsParametersProperties]
+  }
+}
+

@@ -40,3 +40,18 @@ trait BroccoliPlugin extends js.Object {
   def getCallbackObject(): broccoliDashPluginLib.Anon_Build
 }
 
+object BroccoliPlugin {
+  @scala.inline
+  def apply(
+    build: js.Function0[scala.Unit | js.Promise[_]],
+    getCallbackObject: js.Function0[broccoliDashPluginLib.Anon_Build],
+    inputPaths: js.Array[java.lang.String],
+    outputPath: java.lang.String,
+    cachePath: java.lang.String = null
+  ): BroccoliPlugin = {
+    val __obj = js.Dynamic.literal(build = build, getCallbackObject = getCallbackObject, inputPaths = inputPaths, outputPath = outputPath)
+    if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath)
+    __obj.asInstanceOf[BroccoliPlugin]
+  }
+}
+

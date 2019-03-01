@@ -13,3 +13,12 @@ trait ScannerContext extends js.Object {
   var ScannerName: java.lang.String
 }
 
+object ScannerContext {
+  @scala.inline
+  def apply(InternalData: scala.Double, ScannerName: java.lang.String): ScannerContext = {
+    val __obj = js.Dynamic.literal(InternalData = InternalData, ScannerName = ScannerName)
+  
+    __obj.asInstanceOf[ScannerContext]
+  }
+}
+

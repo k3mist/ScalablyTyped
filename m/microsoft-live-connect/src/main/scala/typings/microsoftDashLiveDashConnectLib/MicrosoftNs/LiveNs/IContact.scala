@@ -63,3 +63,24 @@ trait IContact extends js.Object {
   var user_id: java.lang.String
 }
 
+object IContact {
+  @scala.inline
+  def apply(
+    birth_day: scala.Double,
+    birth_month: scala.Double,
+    email_hashes: js.Array[java.lang.String],
+    first_name: java.lang.String,
+    id: java.lang.String,
+    is_favorite: scala.Boolean,
+    is_friend: scala.Boolean,
+    last_name: java.lang.String,
+    name: java.lang.String,
+    updated_time: java.lang.String,
+    user_id: java.lang.String
+  ): IContact = {
+    val __obj = js.Dynamic.literal(birth_day = birth_day, birth_month = birth_month, email_hashes = email_hashes, first_name = first_name, id = id, is_favorite = is_favorite, is_friend = is_friend, last_name = last_name, name = name, updated_time = updated_time, user_id = user_id)
+  
+    __obj.asInstanceOf[IContact]
+  }
+}
+

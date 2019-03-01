@@ -10,3 +10,12 @@ trait HasOptedInOutOptions extends js.Object {
   var persistence_type: Persistence
 }
 
+object HasOptedInOutOptions {
+  @scala.inline
+  def apply(cookie_prefix: java.lang.String, persistence_type: Persistence): HasOptedInOutOptions = {
+    val __obj = js.Dynamic.literal(cookie_prefix = cookie_prefix, persistence_type = persistence_type)
+  
+    __obj.asInstanceOf[HasOptedInOutOptions]
+  }
+}
+

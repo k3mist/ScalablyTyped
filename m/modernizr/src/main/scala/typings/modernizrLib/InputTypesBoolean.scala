@@ -21,3 +21,26 @@ trait InputTypesBoolean extends js.Object {
   var week: scala.Boolean
 }
 
+object InputTypesBoolean {
+  @scala.inline
+  def apply(
+    color: scala.Boolean,
+    date: scala.Boolean,
+    datetime: scala.Boolean,
+    `datetime-local`: scala.Boolean,
+    email: scala.Boolean,
+    month: scala.Boolean,
+    number: scala.Boolean,
+    range: scala.Boolean,
+    search: scala.Boolean,
+    tel: scala.Boolean,
+    time: scala.Boolean,
+    url: scala.Boolean,
+    week: scala.Boolean
+  ): InputTypesBoolean = {
+    val __obj = js.Dynamic.literal(color = color, date = date, datetime = datetime, email = email, month = month, number = number, range = range, search = search, tel = tel, time = time, url = url, week = week)
+    __obj.updateDynamic("datetime-local")(`datetime-local`)
+    __obj.asInstanceOf[InputTypesBoolean]
+  }
+}
+

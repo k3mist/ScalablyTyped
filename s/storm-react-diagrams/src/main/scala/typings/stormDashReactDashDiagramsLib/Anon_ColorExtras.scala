@@ -17,3 +17,22 @@ trait Anon_ColorExtras extends js.Object {
   var y: scala.Double
 }
 
+object Anon_ColorExtras {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    extras: js.Any,
+    id: java.lang.String,
+    name: java.lang.String,
+    ports: js.Array[Anon_IdLinks],
+    selected: scala.Boolean,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): Anon_ColorExtras = {
+    val __obj = js.Dynamic.literal(color = color, extras = extras, id = id, name = name, ports = ports, selected = selected, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[Anon_ColorExtras]
+  }
+}
+

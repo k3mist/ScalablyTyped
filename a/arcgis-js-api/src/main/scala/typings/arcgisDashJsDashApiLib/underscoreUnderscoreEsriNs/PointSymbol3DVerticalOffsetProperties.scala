@@ -27,3 +27,21 @@ trait PointSymbol3DVerticalOffsetProperties
   var screenLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PointSymbol3DVerticalOffsetProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxWorldLength: scala.Int | scala.Double = null,
+    minWorldLength: scala.Int | scala.Double = null,
+    screenLength: scala.Int | scala.Double = null
+  ): PointSymbol3DVerticalOffsetProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (maxWorldLength != null) __obj.updateDynamic("maxWorldLength")(maxWorldLength.asInstanceOf[js.Any])
+    if (minWorldLength != null) __obj.updateDynamic("minWorldLength")(minWorldLength.asInstanceOf[js.Any])
+    if (screenLength != null) __obj.updateDynamic("screenLength")(screenLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointSymbol3DVerticalOffsetProperties]
+  }
+}
+

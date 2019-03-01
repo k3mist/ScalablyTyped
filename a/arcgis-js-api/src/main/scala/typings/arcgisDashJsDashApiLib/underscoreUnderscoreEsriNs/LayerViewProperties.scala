@@ -16,3 +16,12 @@ trait LayerViewProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LayerViewProperties {
+  @scala.inline
+  def apply(visible: js.UndefOr[scala.Boolean] = js.undefined): LayerViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[LayerViewProperties]
+  }
+}
+

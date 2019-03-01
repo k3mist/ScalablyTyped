@@ -14,3 +14,19 @@ trait WindowScrollerChildProps extends js.Object {
   def onChildScroll(params: reactDashVirtualizedLib.Anon_ScrollTop): scala.Unit
 }
 
+object WindowScrollerChildProps {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    isScrolling: scala.Boolean,
+    onChildScroll: js.Function1[reactDashVirtualizedLib.Anon_ScrollTop, scala.Unit],
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double,
+    width: scala.Double
+  ): WindowScrollerChildProps = {
+    val __obj = js.Dynamic.literal(height = height, isScrolling = isScrolling, onChildScroll = onChildScroll, scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
+  
+    __obj.asInstanceOf[WindowScrollerChildProps]
+  }
+}
+

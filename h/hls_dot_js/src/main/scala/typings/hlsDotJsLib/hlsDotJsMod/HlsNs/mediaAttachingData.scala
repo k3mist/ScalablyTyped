@@ -10,3 +10,12 @@ trait mediaAttachingData extends js.Object {
   var video: stdLib.HTMLVideoElement
 }
 
+object mediaAttachingData {
+  @scala.inline
+  def apply(mediaSource: java.lang.String, video: stdLib.HTMLVideoElement): mediaAttachingData = {
+    val __obj = js.Dynamic.literal(mediaSource = mediaSource, video = video)
+  
+    __obj.asInstanceOf[mediaAttachingData]
+  }
+}
+

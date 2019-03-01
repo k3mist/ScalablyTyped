@@ -23,3 +23,19 @@ trait meshUtilsCreateFromElevationParams
   var material: js.UndefOr[meshUtilsCreateFromElevationParamsMaterial] = js.undefined
 }
 
+object meshUtilsCreateFromElevationParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    demResolution: scala.Double | java.lang.String = null,
+    material: meshUtilsCreateFromElevationParamsMaterial = null
+  ): meshUtilsCreateFromElevationParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material)
+    __obj.asInstanceOf[meshUtilsCreateFromElevationParams]
+  }
+}
+

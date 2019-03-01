@@ -11,3 +11,19 @@ trait Rectangle
   var type_Rectangle: flowdocLib.flowdocLibStrings.RECT
 }
 
+object Rectangle {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    position: Point,
+    size: Size,
+    `type`: flowdocLib.flowdocLibStrings.RECT,
+    connections: js.Array[Connection] = null
+  ): Rectangle = {
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size, `type` = `type`)
+    if (connections != null) __obj.updateDynamic("connections")(connections)
+    __obj.asInstanceOf[Rectangle]
+  }
+}
+

@@ -17,3 +17,17 @@ trait CmisVersion extends js.Object {
   var TimeStamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime
 }
 
+object CmisVersion {
+  @scala.inline
+  def apply(
+    Author: java.lang.String,
+    Comment: java.lang.String,
+    Id: java.lang.String,
+    TimeStamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime
+  ): CmisVersion = {
+    val __obj = js.Dynamic.literal(Author = Author, Comment = Comment, Id = Id, TimeStamp = TimeStamp)
+  
+    __obj.asInstanceOf[CmisVersion]
+  }
+}
+

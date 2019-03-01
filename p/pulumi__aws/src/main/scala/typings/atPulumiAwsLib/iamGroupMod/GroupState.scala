@@ -24,3 +24,20 @@ trait GroupState extends js.Object {
   val uniqueId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object GroupState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    uniqueId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): GroupState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupState]
+  }
+}
+

@@ -35,3 +35,18 @@ trait ObjectMetricSource extends js.Object {
   val targetValue: java.lang.String
 }
 
+object ObjectMetricSource {
+  @scala.inline
+  def apply(
+    averageValue: java.lang.String,
+    metricName: java.lang.String,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    target: CrossVersionObjectReference,
+    targetValue: java.lang.String
+  ): ObjectMetricSource = {
+    val __obj = js.Dynamic.literal(averageValue = averageValue, metricName = metricName, selector = selector, target = target, targetValue = targetValue)
+  
+    __obj.asInstanceOf[ObjectMetricSource]
+  }
+}
+

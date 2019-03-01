@@ -123,3 +123,26 @@ trait LineDescriptor extends js.Object {
   var SecondaryButtonImageURL: java.lang.String
 }
 
+object LineDescriptor {
+  @scala.inline
+  def apply(
+    Category: java.lang.String,
+    Control: XPropertyControl,
+    DisplayName: java.lang.String,
+    HasPrimaryButton: scala.Boolean,
+    HasSecondaryButton: scala.Boolean,
+    HelpURL: java.lang.String,
+    IndentLevel: scala.Double,
+    PrimaryButtonId: java.lang.String,
+    PrimaryButtonImage: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    PrimaryButtonImageURL: java.lang.String,
+    SecondaryButtonId: java.lang.String,
+    SecondaryButtonImage: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    SecondaryButtonImageURL: java.lang.String
+  ): LineDescriptor = {
+    val __obj = js.Dynamic.literal(Category = Category, Control = Control, DisplayName = DisplayName, HasPrimaryButton = HasPrimaryButton, HasSecondaryButton = HasSecondaryButton, HelpURL = HelpURL, IndentLevel = IndentLevel, PrimaryButtonId = PrimaryButtonId, PrimaryButtonImage = PrimaryButtonImage, PrimaryButtonImageURL = PrimaryButtonImageURL, SecondaryButtonId = SecondaryButtonId, SecondaryButtonImage = SecondaryButtonImage, SecondaryButtonImageURL = SecondaryButtonImageURL)
+  
+    __obj.asInstanceOf[LineDescriptor]
+  }
+}
+

@@ -10,3 +10,15 @@ trait RefreshLoadListener extends js.Object {
   def onRefresh(prll: androiduixLib.androiduiNs.widgetNs.PullRefreshLoadLayout): scala.Unit
 }
 
+object RefreshLoadListener {
+  @scala.inline
+  def apply(
+    onLoadMore: js.Function1[androiduixLib.androiduiNs.widgetNs.PullRefreshLoadLayout, scala.Unit],
+    onRefresh: js.Function1[androiduixLib.androiduiNs.widgetNs.PullRefreshLoadLayout, scala.Unit]
+  ): RefreshLoadListener = {
+    val __obj = js.Dynamic.literal(onLoadMore = onLoadMore, onRefresh = onRefresh)
+  
+    __obj.asInstanceOf[RefreshLoadListener]
+  }
+}
+

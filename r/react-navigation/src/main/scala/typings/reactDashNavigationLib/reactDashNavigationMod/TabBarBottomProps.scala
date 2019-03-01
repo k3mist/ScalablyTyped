@@ -27,3 +27,42 @@ trait TabBarBottomProps extends js.Object {
   def renderIcon(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object TabBarBottomProps {
+  @scala.inline
+  def apply(
+    activeBackgroundColor: java.lang.String,
+    activeTintColor: java.lang.String,
+    allowFontScaling: scala.Boolean,
+    getLabel: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactNode | java.lang.String],
+    getOnPress: js.Function2[
+      NavigationRoute[NavigationParams], 
+      TabScene, 
+      js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
+    ],
+    getTestIDProps: js.Function1[TabScene, js.Function1[/* scene */ TabScene, _]],
+    inactiveBackgroundColor: java.lang.String,
+    inactiveTintColor: java.lang.String,
+    jumpToIndex: js.Function1[scala.Double, scala.Unit],
+    navigation: NavigationScreenProp[NavigationState, NavigationParams],
+    position: AnimatedValue,
+    renderIcon: js.Function1[TabScene, reactLib.reactMod.ReactNs.ReactNode],
+    adaptive: js.UndefOr[scala.Boolean] = js.undefined,
+    animateStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    labelStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null,
+    showIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    tabStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
+  ): TabBarBottomProps = {
+    val __obj = js.Dynamic.literal(activeBackgroundColor = activeBackgroundColor, activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = getLabel, getOnPress = getOnPress, getTestIDProps = getTestIDProps, inactiveBackgroundColor = inactiveBackgroundColor, inactiveTintColor = inactiveTintColor, jumpToIndex = jumpToIndex, navigation = navigation, position = position, renderIcon = renderIcon)
+    if (!js.isUndefined(adaptive)) __obj.updateDynamic("adaptive")(adaptive)
+    if (animateStyle != null) __obj.updateDynamic("animateStyle")(animateStyle)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)
+    __obj.asInstanceOf[TabBarBottomProps]
+  }
+}
+

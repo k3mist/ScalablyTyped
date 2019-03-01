@@ -16,3 +16,21 @@ trait Anon_ClassNameDefault extends js.Object {
   var wrapperClassName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
+object Anon_ClassNameDefault {
+  @scala.inline
+  def apply(
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    indicator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    size: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+    ],
+    spinning: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    wrapperClassName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ClassNameDefault = {
+    val __obj = js.Dynamic.literal(className = className, indicator = indicator, prefixCls = prefixCls, size = size, spinning = spinning, wrapperClassName = wrapperClassName)
+  
+    __obj.asInstanceOf[Anon_ClassNameDefault]
+  }
+}
+

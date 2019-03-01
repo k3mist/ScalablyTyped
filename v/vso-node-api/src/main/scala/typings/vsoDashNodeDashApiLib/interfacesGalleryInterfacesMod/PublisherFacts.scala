@@ -12,3 +12,17 @@ trait PublisherFacts extends js.Object {
   var publisherName: java.lang.String
 }
 
+object PublisherFacts {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    flags: PublisherFlags,
+    publisherId: java.lang.String,
+    publisherName: java.lang.String
+  ): PublisherFacts = {
+    val __obj = js.Dynamic.literal(displayName = displayName, flags = flags, publisherId = publisherId, publisherName = publisherName)
+  
+    __obj.asInstanceOf[PublisherFacts]
+  }
+}
+

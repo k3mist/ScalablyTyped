@@ -25,3 +25,12 @@ trait AllowedHostPath extends js.Object {
   val readOnly: scala.Boolean
 }
 
+object AllowedHostPath {
+  @scala.inline
+  def apply(pathPrefix: java.lang.String, readOnly: scala.Boolean): AllowedHostPath = {
+    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, readOnly = readOnly)
+  
+    __obj.asInstanceOf[AllowedHostPath]
+  }
+}
+

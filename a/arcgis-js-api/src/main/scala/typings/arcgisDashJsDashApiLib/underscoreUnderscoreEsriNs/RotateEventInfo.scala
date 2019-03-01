@@ -29,3 +29,18 @@ trait RotateEventInfo
   var `type`: java.lang.String
 }
 
+object RotateEventInfo {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): RotateEventInfo = {
+    val __obj = js.Dynamic.literal(angle = angle, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[RotateEventInfo]
+  }
+}
+

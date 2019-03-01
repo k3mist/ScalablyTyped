@@ -12,3 +12,12 @@ trait LightBoxElement extends js.Object {
   def show(): scala.Unit
 }
 
+object LightBoxElement {
+  @scala.inline
+  def apply(show: js.Function0[scala.Unit]): LightBoxElement = {
+    val __obj = js.Dynamic.literal(show = show)
+  
+    __obj.asInstanceOf[LightBoxElement]
+  }
+}
+

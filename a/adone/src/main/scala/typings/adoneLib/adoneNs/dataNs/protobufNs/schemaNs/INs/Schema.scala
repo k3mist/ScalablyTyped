@@ -17,3 +17,22 @@ trait Schema extends js.Object {
   var syntax: js.Any
 }
 
+object Schema {
+  @scala.inline
+  def apply(
+    enums: js.Array[Enum],
+    `extends`: js.Array[Extend],
+    imports: js.Array[java.lang.String],
+    messages: js.Array[Message],
+    options: js.Object,
+    syntax: js.Any,
+    `package`: java.lang.String = null,
+    services: js.Array[Service] = null
+  ): Schema = {
+    val __obj = js.Dynamic.literal(enums = enums, `extends` = `extends`, imports = imports, messages = messages, options = options, syntax = syntax)
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (services != null) __obj.updateDynamic("services")(services)
+    __obj.asInstanceOf[Schema]
+  }
+}
+

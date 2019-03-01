@@ -11,3 +11,12 @@ trait IncludedPath extends js.Object {
   var Path: java.lang.String
 }
 
+object IncludedPath {
+  @scala.inline
+  def apply(Indexes: js.Array[Index], Path: java.lang.String): IncludedPath = {
+    val __obj = js.Dynamic.literal(Indexes = Indexes, Path = Path)
+  
+    __obj.asInstanceOf[IncludedPath]
+  }
+}
+

@@ -12,3 +12,12 @@ trait RemovedResult extends js.Object {
   var urls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object RemovedResult {
+  @scala.inline
+  def apply(allHistory: scala.Boolean, urls: js.Array[java.lang.String] = null): RemovedResult = {
+    val __obj = js.Dynamic.literal(allHistory = allHistory)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[RemovedResult]
+  }
+}
+

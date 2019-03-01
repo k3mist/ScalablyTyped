@@ -15,3 +15,17 @@ trait ColumnInfo extends js.Object {
   var `type`: java.lang.String
 }
 
+object ColumnInfo {
+  @scala.inline
+  def apply(
+    defaultValue: knexLib.Value,
+    maxLength: scala.Double,
+    nullable: scala.Boolean,
+    `type`: java.lang.String
+  ): ColumnInfo = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], maxLength = maxLength, nullable = nullable, `type` = `type`)
+  
+    __obj.asInstanceOf[ColumnInfo]
+  }
+}
+

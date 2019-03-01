@@ -69,3 +69,26 @@ trait ExecuteInfo
   var threwError: scala.Boolean
 }
 
+object ExecuteInfo {
+  @scala.inline
+  def apply(
+    conflicts: WorkflowConflicts,
+    constructor: js.Function,
+    errorCode: scala.Double,
+    errorDescription: java.lang.String,
+    executionResult: java.lang.String,
+    hasConflicts: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hasReturnCode: scala.Boolean,
+    jobID: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    returnCode: scala.Double,
+    stepID: scala.Double,
+    threwError: scala.Boolean
+  ): ExecuteInfo = {
+    val __obj = js.Dynamic.literal(conflicts = conflicts, constructor = constructor, errorCode = errorCode, errorDescription = errorDescription, executionResult = executionResult, hasConflicts = hasConflicts, hasOwnProperty = hasOwnProperty, hasReturnCode = hasReturnCode, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable, returnCode = returnCode, stepID = stepID, threwError = threwError)
+  
+    __obj.asInstanceOf[ExecuteInfo]
+  }
+}
+

@@ -14,3 +14,16 @@ trait ExtendedAttributes extends js.Object {
   var rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList | scala.Null
 }
 
+object ExtendedAttributes {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Argument],
+    name: java.lang.String,
+    rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList = null
+  ): ExtendedAttributes = {
+    val __obj = js.Dynamic.literal(arguments = arguments, name = name)
+    if (rhs != null) __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtendedAttributes]
+  }
+}
+

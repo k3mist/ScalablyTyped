@@ -21,3 +21,12 @@ trait ASPxClientSeriesLabel extends ASPxClientWebChartElement {
   var text: java.lang.String
 }
 
+object ASPxClientSeriesLabel {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart, series: ASPxClientSeries, text: java.lang.String): ASPxClientSeriesLabel = {
+    val __obj = js.Dynamic.literal(chart = chart, series = series, text = text)
+  
+    __obj.asInstanceOf[ASPxClientSeriesLabel]
+  }
+}
+

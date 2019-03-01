@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeLiteral
 }
 
+object TSTypeLiteral {
+  @scala.inline
+  def apply(
+    members: js.Array[
+      astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeLiteral
+  ): TSTypeLiteral = {
+    val __obj = js.Dynamic.literal(members = members, `type` = `type`)
+  
+    __obj.asInstanceOf[TSTypeLiteral]
+  }
+}
+

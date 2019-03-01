@@ -13,3 +13,18 @@ trait MapWheelEvent
   def preventDefault(): scala.Unit
 }
 
+object MapWheelEvent {
+  @scala.inline
+  def apply(
+    defaultPrevented: scala.Boolean,
+    originalEvent: stdLib.WheelEvent,
+    preventDefault: js.Function0[scala.Unit],
+    target: Map,
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.wheel
+  ): MapWheelEvent = {
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, originalEvent = originalEvent, preventDefault = preventDefault, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[MapWheelEvent]
+  }
+}
+

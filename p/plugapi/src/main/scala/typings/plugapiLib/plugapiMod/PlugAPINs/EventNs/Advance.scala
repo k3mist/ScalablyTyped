@@ -15,3 +15,20 @@ trait Advance extends js.Object {
   var startTime: java.lang.String
 }
 
+object Advance {
+  @scala.inline
+  def apply(
+    currentDJ: plugapiLib.plugapiMod.PlugAPINs.UserNs.DJ,
+    djs: js.Array[plugapiLib.plugapiMod.PlugAPINs.UserNs.DJ],
+    historyID: java.lang.String,
+    lastPlay: plugapiLib.plugapiMod.PlugAPINs.LastPlay,
+    media: plugapiLib.plugapiMod.PlugAPINs.Media,
+    playlistID: scala.Double,
+    startTime: java.lang.String
+  ): Advance = {
+    val __obj = js.Dynamic.literal(currentDJ = currentDJ, djs = djs, historyID = historyID, lastPlay = lastPlay, media = media, playlistID = playlistID, startTime = startTime)
+  
+    __obj.asInstanceOf[Advance]
+  }
+}
+

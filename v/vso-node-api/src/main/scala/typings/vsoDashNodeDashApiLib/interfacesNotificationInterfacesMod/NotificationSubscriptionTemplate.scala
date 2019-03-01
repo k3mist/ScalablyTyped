@@ -13,3 +13,18 @@ trait NotificationSubscriptionTemplate extends js.Object {
   var `type`: SubscriptionTemplateType
 }
 
+object NotificationSubscriptionTemplate {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    filter: ISubscriptionFilter,
+    id: java.lang.String,
+    notificationEventInformation: NotificationEventType,
+    `type`: SubscriptionTemplateType
+  ): NotificationSubscriptionTemplate = {
+    val __obj = js.Dynamic.literal(description = description, filter = filter, id = id, notificationEventInformation = notificationEventInformation, `type` = `type`)
+  
+    __obj.asInstanceOf[NotificationSubscriptionTemplate]
+  }
+}
+

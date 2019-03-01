@@ -31,3 +31,25 @@ trait XSheetAnnotation
   def setIsVisible(bIsVisible: scala.Boolean): scala.Unit
 }
 
+object XSheetAnnotation {
+  @scala.inline
+  def apply(
+    Author: java.lang.String,
+    Date: java.lang.String,
+    IsVisible: scala.Boolean,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    acquire: js.Function0[scala.Unit],
+    getAuthor: js.Function0[java.lang.String],
+    getDate: js.Function0[java.lang.String],
+    getIsVisible: js.Function0[scala.Boolean],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setIsVisible: js.Function1[scala.Boolean, scala.Unit]
+  ): XSheetAnnotation = {
+    val __obj = js.Dynamic.literal(Author = Author, Date = Date, IsVisible = IsVisible, Position = Position, acquire = acquire, getAuthor = getAuthor, getDate = getDate, getIsVisible = getIsVisible, getPosition = getPosition, queryInterface = queryInterface, release = release, setIsVisible = setIsVisible)
+  
+    __obj.asInstanceOf[XSheetAnnotation]
+  }
+}
+

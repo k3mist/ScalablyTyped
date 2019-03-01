@@ -10,3 +10,12 @@ trait Anon_Format extends js.Object {
   var source: java.lang.String
 }
 
+object Anon_Format {
+  @scala.inline
+  def apply(format: java.lang.String, source: java.lang.String): Anon_Format = {
+    val __obj = js.Dynamic.literal(format = format, source = source)
+  
+    __obj.asInstanceOf[Anon_Format]
+  }
+}
+

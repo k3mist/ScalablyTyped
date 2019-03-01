@@ -13,3 +13,18 @@ trait Anon_CreateForcePush extends js.Object {
   var unknown: scala.Double
 }
 
+object Anon_CreateForcePush {
+  @scala.inline
+  def apply(
+    create: scala.Double,
+    forcePush: scala.Double,
+    push: scala.Double,
+    rebase: scala.Double,
+    unknown: scala.Double
+  ): Anon_CreateForcePush = {
+    val __obj = js.Dynamic.literal(create = create, forcePush = forcePush, push = push, rebase = rebase, unknown = unknown)
+  
+    __obj.asInstanceOf[Anon_CreateForcePush]
+  }
+}
+

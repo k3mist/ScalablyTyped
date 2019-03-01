@@ -10,3 +10,12 @@ trait FileSystem extends js.Object {
   var root: DirectoryEntry
 }
 
+object FileSystem {
+  @scala.inline
+  def apply(name: java.lang.String, root: DirectoryEntry): FileSystem = {
+    val __obj = js.Dynamic.literal(name = name, root = root)
+  
+    __obj.asInstanceOf[FileSystem]
+  }
+}
+

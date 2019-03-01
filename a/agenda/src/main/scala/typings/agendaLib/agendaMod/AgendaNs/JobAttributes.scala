@@ -75,3 +75,29 @@ trait JobAttributes[T /* <: JobAttributesData */] extends js.Object {
   var `type`: java.lang.String
 }
 
+object JobAttributes {
+  @scala.inline
+  def apply[T /* <: JobAttributesData */](
+    _id: mongodbLib.mongodbMod.ObjectID,
+    data: T,
+    disabled: scala.Boolean,
+    failCount: scala.Double,
+    failReason: java.lang.String,
+    failedAt: stdLib.Date,
+    lastFinishedAt: stdLib.Date,
+    lastModifiedBy: java.lang.String,
+    lastRunAt: stdLib.Date,
+    lockedAt: stdLib.Date,
+    name: java.lang.String,
+    nextRunAt: stdLib.Date,
+    priority: scala.Double,
+    repeatInterval: java.lang.String | scala.Double,
+    repeatTimezone: java.lang.String,
+    `type`: java.lang.String
+  ): JobAttributes[T] = {
+    val __obj = js.Dynamic.literal(_id = _id, data = data.asInstanceOf[js.Any], disabled = disabled, failCount = failCount, failReason = failReason, failedAt = failedAt, lastFinishedAt = lastFinishedAt, lastModifiedBy = lastModifiedBy, lastRunAt = lastRunAt, lockedAt = lockedAt, name = name, nextRunAt = nextRunAt, priority = priority, repeatInterval = repeatInterval.asInstanceOf[js.Any], repeatTimezone = repeatTimezone, `type` = `type`)
+  
+    __obj.asInstanceOf[JobAttributes[T]]
+  }
+}
+

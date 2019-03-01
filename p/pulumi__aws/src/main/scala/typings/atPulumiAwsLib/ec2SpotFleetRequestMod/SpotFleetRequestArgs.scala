@@ -101,3 +101,45 @@ trait SpotFleetRequestArgs extends js.Object {
   val waitForFulfillment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object SpotFleetRequestArgs {
+  @scala.inline
+  def apply(
+    iamFleetRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    launchSpecifications: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmiAssociatePublicIpAddress]
+      ]
+    ],
+    targetCapacity: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    allocationStrategy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    excessCapacityTerminationPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    fleetType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instanceInterruptionBehaviour: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instancePoolsToUseCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    loadBalancers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    replaceUnhealthyInstances: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    spotPrice: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    targetGroupArns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    terminateInstancesWithExpiration: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    validFrom: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    validUntil: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    waitForFulfillment: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): SpotFleetRequestArgs = {
+    val __obj = js.Dynamic.literal(iamFleetRole = iamFleetRole.asInstanceOf[js.Any], launchSpecifications = launchSpecifications.asInstanceOf[js.Any], targetCapacity = targetCapacity.asInstanceOf[js.Any])
+    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
+    if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
+    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
+    if (instanceInterruptionBehaviour != null) __obj.updateDynamic("instanceInterruptionBehaviour")(instanceInterruptionBehaviour.asInstanceOf[js.Any])
+    if (instancePoolsToUseCount != null) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.asInstanceOf[js.Any])
+    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
+    if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
+    if (terminateInstancesWithExpiration != null) __obj.updateDynamic("terminateInstancesWithExpiration")(terminateInstancesWithExpiration.asInstanceOf[js.Any])
+    if (validFrom != null) __obj.updateDynamic("validFrom")(validFrom.asInstanceOf[js.Any])
+    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
+    if (waitForFulfillment != null) __obj.updateDynamic("waitForFulfillment")(waitForFulfillment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpotFleetRequestArgs]
+  }
+}
+

@@ -67,3 +67,28 @@ trait BoundedMinMax
   var valueExpressionTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BoundedMinMax {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxDataValue: scala.Double,
+    maxSize: java.lang.String | scala.Double,
+    minDataValue: scala.Double,
+    minSize: java.lang.String | scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String,
+    field: java.lang.String = null,
+    normalizationField: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null
+  ): BoundedMinMax = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxDataValue = maxDataValue, maxSize = maxSize.asInstanceOf[js.Any], minDataValue = minDataValue, minSize = minSize.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    __obj.asInstanceOf[BoundedMinMax]
+  }
+}
+

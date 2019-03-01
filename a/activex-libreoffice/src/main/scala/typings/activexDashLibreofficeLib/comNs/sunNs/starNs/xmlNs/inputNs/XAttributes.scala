@@ -70,3 +70,26 @@ trait XAttributes
   def getValueByUidName(uid: scala.Double, localName: java.lang.String): java.lang.String
 }
 
+object XAttributes {
+  @scala.inline
+  def apply(
+    Length: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getIndexByQName: js.Function1[java.lang.String, scala.Double],
+    getIndexByUidName: js.Function2[scala.Double, java.lang.String, scala.Double],
+    getLength: js.Function0[scala.Double],
+    getLocalNameByIndex: js.Function1[scala.Double, java.lang.String],
+    getQNameByIndex: js.Function1[scala.Double, java.lang.String],
+    getTypeByIndex: js.Function1[scala.Double, java.lang.String],
+    getUidByIndex: js.Function1[scala.Double, scala.Double],
+    getValueByIndex: js.Function1[scala.Double, java.lang.String],
+    getValueByUidName: js.Function2[scala.Double, java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAttributes = {
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getIndexByQName = getIndexByQName, getIndexByUidName = getIndexByUidName, getLength = getLength, getLocalNameByIndex = getLocalNameByIndex, getQNameByIndex = getQNameByIndex, getTypeByIndex = getTypeByIndex, getUidByIndex = getUidByIndex, getValueByIndex = getValueByIndex, getValueByUidName = getValueByUidName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAttributes]
+  }
+}
+

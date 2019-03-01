@@ -48,3 +48,21 @@ trait TooltipOptions extends js.Object {
   var transitionMovement: scala.Double
 }
 
+object TooltipOptions {
+  @scala.inline
+  def apply(
+    enterDelay: scala.Double,
+    exitDelay: scala.Double,
+    html: java.lang.String,
+    inDuration: scala.Double,
+    margin: scala.Double,
+    outDuration: scala.Double,
+    position: materializeDashCssLib.materializeDashCssLibStrings.top | materializeDashCssLib.materializeDashCssLibStrings.right | materializeDashCssLib.materializeDashCssLibStrings.bottom | materializeDashCssLib.materializeDashCssLibStrings.left,
+    transitionMovement: scala.Double
+  ): TooltipOptions = {
+    val __obj = js.Dynamic.literal(enterDelay = enterDelay, exitDelay = exitDelay, html = html, inDuration = inDuration, margin = margin, outDuration = outDuration, position = position.asInstanceOf[js.Any], transitionMovement = transitionMovement)
+  
+    __obj.asInstanceOf[TooltipOptions]
+  }
+}
+

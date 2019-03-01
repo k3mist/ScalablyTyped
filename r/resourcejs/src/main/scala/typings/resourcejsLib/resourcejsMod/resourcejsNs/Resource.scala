@@ -11,3 +11,12 @@ trait Resource extends js.Object {
   var status: scala.Double
 }
 
+object Resource {
+  @scala.inline
+  def apply(error: Error, item: js.Any, status: scala.Double): Resource = {
+    val __obj = js.Dynamic.literal(error = error, item = item, status = status)
+  
+    __obj.asInstanceOf[Resource]
+  }
+}
+

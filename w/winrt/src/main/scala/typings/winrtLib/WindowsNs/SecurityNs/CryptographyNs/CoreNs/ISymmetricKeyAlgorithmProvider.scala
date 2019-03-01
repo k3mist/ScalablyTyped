@@ -11,3 +11,16 @@ trait ISymmetricKeyAlgorithmProvider extends js.Object {
   def createSymmetricKey(keyMaterial: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey
 }
 
+object ISymmetricKeyAlgorithmProvider {
+  @scala.inline
+  def apply(
+    algorithmName: java.lang.String,
+    blockLength: scala.Double,
+    createSymmetricKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey]
+  ): ISymmetricKeyAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, blockLength = blockLength, createSymmetricKey = createSymmetricKey)
+  
+    __obj.asInstanceOf[ISymmetricKeyAlgorithmProvider]
+  }
+}
+

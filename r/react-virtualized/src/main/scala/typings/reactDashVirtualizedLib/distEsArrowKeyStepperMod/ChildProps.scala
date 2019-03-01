@@ -11,3 +11,16 @@ trait ChildProps extends js.Object {
   def onSectionRendered(params: reactDashVirtualizedLib.distEsGridMod.RenderedSection): scala.Unit
 }
 
+object ChildProps {
+  @scala.inline
+  def apply(
+    onSectionRendered: js.Function1[reactDashVirtualizedLib.distEsGridMod.RenderedSection, scala.Unit],
+    scrollToColumn: scala.Double,
+    scrollToRow: scala.Double
+  ): ChildProps = {
+    val __obj = js.Dynamic.literal(onSectionRendered = onSectionRendered, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+  
+    __obj.asInstanceOf[ChildProps]
+  }
+}
+

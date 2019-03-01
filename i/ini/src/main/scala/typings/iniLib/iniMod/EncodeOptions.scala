@@ -10,3 +10,12 @@ trait EncodeOptions extends js.Object {
   var whitespace: scala.Boolean
 }
 
+object EncodeOptions {
+  @scala.inline
+  def apply(section: java.lang.String, whitespace: scala.Boolean): EncodeOptions = {
+    val __obj = js.Dynamic.literal(section = section, whitespace = whitespace)
+  
+    __obj.asInstanceOf[EncodeOptions]
+  }
+}
+

@@ -22,3 +22,12 @@ trait SlideProperties extends js.Object {
   var notes_page: Page
 }
 
+object SlideProperties {
+  @scala.inline
+  def apply(layout_object_id: java.lang.String, master_object_id: java.lang.String, notes_page: Page): SlideProperties = {
+    val __obj = js.Dynamic.literal(layout_object_id = layout_object_id, master_object_id = master_object_id, notes_page = notes_page)
+  
+    __obj.asInstanceOf[SlideProperties]
+  }
+}
+

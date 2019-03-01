@@ -16,3 +16,15 @@ trait StaticIpAttachmentArgs extends js.Object {
   val staticIpName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object StaticIpAttachmentArgs {
+  @scala.inline
+  def apply(
+    instanceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    staticIpName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): StaticIpAttachmentArgs = {
+    val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StaticIpAttachmentArgs]
+  }
+}
+

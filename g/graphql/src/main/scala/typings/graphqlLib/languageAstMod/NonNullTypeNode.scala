@@ -13,3 +13,16 @@ trait NonNullTypeNode
   val `type`: NamedTypeNode | ListTypeNode
 }
 
+object NonNullTypeNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.NonNullType,
+    `type`: NamedTypeNode | ListTypeNode,
+    loc: Location = null
+  ): NonNullTypeNode = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NonNullTypeNode]
+  }
+}
+

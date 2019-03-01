@@ -24,3 +24,12 @@ trait EndpointPort extends js.Object {
   val protocol: java.lang.String
 }
 
+object EndpointPort {
+  @scala.inline
+  def apply(name: java.lang.String, port: scala.Double, protocol: java.lang.String): EndpointPort = {
+    val __obj = js.Dynamic.literal(name = name, port = port, protocol = protocol)
+  
+    __obj.asInstanceOf[EndpointPort]
+  }
+}
+

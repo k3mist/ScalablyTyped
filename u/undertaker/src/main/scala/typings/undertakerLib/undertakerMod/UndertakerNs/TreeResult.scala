@@ -10,3 +10,12 @@ trait TreeResult extends js.Object {
   var nodes: js.Array[Node]
 }
 
+object TreeResult {
+  @scala.inline
+  def apply(label: undertakerLib.undertakerLibStrings.Tasks, nodes: js.Array[Node]): TreeResult = {
+    val __obj = js.Dynamic.literal(label = label, nodes = nodes)
+  
+    __obj.asInstanceOf[TreeResult]
+  }
+}
+

@@ -46,3 +46,26 @@ trait MethodResponseArgs extends js.Object {
   val statusCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object MethodResponseArgs {
+  @scala.inline
+  def apply(
+    httpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    statusCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    responseModels: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    responseParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]]
+    ] = null,
+    responseParametersInJson: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MethodResponseArgs = {
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (responseModels != null) __obj.updateDynamic("responseModels")(responseModels.asInstanceOf[js.Any])
+    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
+    if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MethodResponseArgs]
+  }
+}
+

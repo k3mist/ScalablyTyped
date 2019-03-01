@@ -34,3 +34,39 @@ trait videos extends js.Object {
   def update(`object`: gapiDotYoutubeLib.Anon_OnBehalfOfContentOwnerPart): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
 }
 
+object videos {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotYoutubeLib.Anon_IdOnBehalfOfContentOwner, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
+    ],
+    getRating: js.Function1[
+      gapiDotYoutubeLib.Anon_IdOnBehalfOfContentOwner, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoGetRatingResponse]
+    ],
+    insert: js.Function1[
+      gapiDotYoutubeLib.Anon_AutoLevels, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
+    ],
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_Chart, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
+      ]
+    ],
+    rate: js.Function1[
+      gapiDotYoutubeLib.Anon_IdOnBehalfOfContentOwnerRating, 
+      gapiLib.gapiNs.clientNs.HttpRequest[_]
+    ],
+    update: js.Function1[
+      gapiDotYoutubeLib.Anon_OnBehalfOfContentOwnerPart, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
+    ]
+  ): videos = {
+    val __obj = js.Dynamic.literal(delete = delete, getRating = getRating, insert = insert, list = list, rate = rate, update = update)
+  
+    __obj.asInstanceOf[videos]
+  }
+}
+

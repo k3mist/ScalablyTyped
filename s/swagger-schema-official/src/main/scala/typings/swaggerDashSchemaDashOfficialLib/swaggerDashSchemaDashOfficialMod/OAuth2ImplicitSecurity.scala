@@ -11,3 +11,17 @@ trait OAuth2ImplicitSecurity
   var authorizationUrl: java.lang.String
 }
 
+object OAuth2ImplicitSecurity {
+  @scala.inline
+  def apply(
+    authorizationUrl: java.lang.String,
+    flow: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null
+  ): OAuth2ImplicitSecurity = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, flow = flow, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[OAuth2ImplicitSecurity]
+  }
+}
+

@@ -29,3 +29,18 @@ trait ITooltipPosition extends js.Object {
   var target: scala.Double
 }
 
+object ITooltipPosition {
+  @scala.inline
+  def apply(
+    coord: tooltipsterLib.Anon_Left,
+    distance: scala.Double,
+    side: TooltipPositioningSide,
+    size: tooltipsterLib.Anon_Height,
+    target: scala.Double
+  ): ITooltipPosition = {
+    val __obj = js.Dynamic.literal(coord = coord, distance = distance, side = side, size = size, target = target)
+  
+    __obj.asInstanceOf[ITooltipPosition]
+  }
+}
+

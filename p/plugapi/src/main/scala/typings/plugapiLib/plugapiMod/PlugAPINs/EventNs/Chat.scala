@@ -15,3 +15,20 @@ trait Chat extends js.Object {
   var `type`: java.lang.String
 }
 
+object Chat {
+  @scala.inline
+  def apply(
+    from: plugapiLib.plugapiMod.PlugAPINs.UserNs.User,
+    id: java.lang.String,
+    mentions: js.Array[_],
+    message: java.lang.String,
+    muted: scala.Boolean,
+    raw: plugapiLib.plugapiMod.PlugAPINs.RawChatMessage,
+    `type`: java.lang.String
+  ): Chat = {
+    val __obj = js.Dynamic.literal(from = from, id = id, mentions = mentions, message = message, muted = muted, raw = raw, `type` = `type`)
+  
+    __obj.asInstanceOf[Chat]
+  }
+}
+

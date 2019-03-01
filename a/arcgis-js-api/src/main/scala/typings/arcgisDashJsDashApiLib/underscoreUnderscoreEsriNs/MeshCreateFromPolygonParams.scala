@@ -15,3 +15,17 @@ trait MeshCreateFromPolygonParams
   var material: js.UndefOr[MeshCreateFromPolygonParamsMaterial] = js.undefined
 }
 
+object MeshCreateFromPolygonParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    material: MeshCreateFromPolygonParamsMaterial = null
+  ): MeshCreateFromPolygonParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (material != null) __obj.updateDynamic("material")(material)
+    __obj.asInstanceOf[MeshCreateFromPolygonParams]
+  }
+}
+

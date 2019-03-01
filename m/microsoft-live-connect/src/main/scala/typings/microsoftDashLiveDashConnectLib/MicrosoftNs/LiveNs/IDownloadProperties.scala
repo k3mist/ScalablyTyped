@@ -17,3 +17,12 @@ trait IDownloadProperties extends js.Object {
   var path: java.lang.String
 }
 
+object IDownloadProperties {
+  @scala.inline
+  def apply(path: java.lang.String): IDownloadProperties = {
+    val __obj = js.Dynamic.literal(path = path)
+  
+    __obj.asInstanceOf[IDownloadProperties]
+  }
+}
+

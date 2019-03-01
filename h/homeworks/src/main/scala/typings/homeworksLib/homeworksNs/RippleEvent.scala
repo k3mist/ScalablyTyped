@@ -13,3 +13,12 @@ trait RippleEvent extends js.Object {
   var y: scala.Double
 }
 
+object RippleEvent {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): RippleEvent = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[RippleEvent]
+  }
+}
+

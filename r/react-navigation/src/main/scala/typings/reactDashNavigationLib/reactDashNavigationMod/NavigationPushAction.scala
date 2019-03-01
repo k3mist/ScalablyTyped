@@ -13,3 +13,20 @@ trait NavigationPushAction extends NavigationStackAction {
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/PUSH`
 }
 
+object NavigationPushAction {
+  @scala.inline
+  def apply(
+    routeName: java.lang.String,
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/PUSH`,
+    action: NavigationNavigateAction = null,
+    key: java.lang.String = null,
+    params: NavigationParams = null
+  ): NavigationPushAction = {
+    val __obj = js.Dynamic.literal(routeName = routeName, `type` = `type`)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationPushAction]
+  }
+}
+

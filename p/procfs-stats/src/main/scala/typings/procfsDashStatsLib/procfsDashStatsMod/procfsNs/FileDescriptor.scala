@@ -12,3 +12,17 @@ trait FileDescriptor extends js.Object {
   var stat: FileDescriptorStat | scala.Boolean
 }
 
+object FileDescriptor {
+  @scala.inline
+  def apply(
+    info: FileDescriptorInfo,
+    path: java.lang.String,
+    stat: FileDescriptorStat | scala.Boolean,
+    fd: java.lang.String = null
+  ): FileDescriptor = {
+    val __obj = js.Dynamic.literal(info = info, path = path, stat = stat.asInstanceOf[js.Any])
+    if (fd != null) __obj.updateDynamic("fd")(fd)
+    __obj.asInstanceOf[FileDescriptor]
+  }
+}
+

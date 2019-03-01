@@ -20,3 +20,17 @@ trait XStatusIndicatorFactory
   def createStatusIndicator(): XStatusIndicator
 }
 
+object XStatusIndicatorFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createStatusIndicator: js.Function0[XStatusIndicator],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStatusIndicatorFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createStatusIndicator = createStatusIndicator, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStatusIndicatorFactory]
+  }
+}
+

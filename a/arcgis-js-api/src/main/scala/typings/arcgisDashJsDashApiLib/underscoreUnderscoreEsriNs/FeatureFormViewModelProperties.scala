@@ -27,3 +27,18 @@ trait FeatureFormViewModelProperties extends js.Object {
   var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
 }
 
+object FeatureFormViewModelProperties {
+  @scala.inline
+  def apply(
+    feature: GraphicProperties = null,
+    fieldConfig: js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties] = null,
+    layer: FeatureLayerProperties = null
+  ): FeatureFormViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (feature != null) __obj.updateDynamic("feature")(feature)
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    __obj.asInstanceOf[FeatureFormViewModelProperties]
+  }
+}
+

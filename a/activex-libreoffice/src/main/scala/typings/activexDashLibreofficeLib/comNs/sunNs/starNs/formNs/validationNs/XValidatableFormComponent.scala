@@ -66,3 +66,24 @@ trait XValidatableFormComponent extends XValidatable {
   def removeFormComponentValidityListener(Listener: XFormComponentValidityListener): scala.Unit
 }
 
+object XValidatableFormComponent {
+  @scala.inline
+  def apply(
+    CurrentValue: js.Any,
+    Validator: XValidator,
+    acquire: js.Function0[scala.Unit],
+    addFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
+    getCurrentValue: js.Function0[js.Any],
+    getValidator: js.Function0[XValidator],
+    isValid: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
+    setValidator: js.Function1[XValidator, scala.Unit]
+  ): XValidatableFormComponent = {
+    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, Validator = Validator, acquire = acquire, addFormComponentValidityListener = addFormComponentValidityListener, getCurrentValue = getCurrentValue, getValidator = getValidator, isValid = isValid, queryInterface = queryInterface, release = release, removeFormComponentValidityListener = removeFormComponentValidityListener, setValidator = setValidator)
+  
+    __obj.asInstanceOf[XValidatableFormComponent]
+  }
+}
+

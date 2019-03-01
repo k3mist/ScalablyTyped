@@ -15,3 +15,20 @@ trait DebugModelMatrixPrimitive extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object DebugModelMatrixPrimitive {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    length: scala.Double,
+    modelMatrix: Matrix4,
+    show: scala.Boolean,
+    width: scala.Double
+  ): DebugModelMatrixPrimitive = {
+    val __obj = js.Dynamic.literal(destroy = destroy, id = id, isDestroyed = isDestroyed, length = length, modelMatrix = modelMatrix, show = show, width = width)
+  
+    __obj.asInstanceOf[DebugModelMatrixPrimitive]
+  }
+}
+

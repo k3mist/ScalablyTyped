@@ -24,3 +24,18 @@ trait CreateCalendarObjectOptions extends js.Object {
   var xhr: js.UndefOr[davLib.davMod.transportNs.Transport] = js.undefined
 }
 
+object CreateCalendarObjectOptions {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    filename: java.lang.String,
+    sandbox: Sandbox = null,
+    xhr: davLib.davMod.transportNs.Transport = null
+  ): CreateCalendarObjectOptions = {
+    val __obj = js.Dynamic.literal(data = data, filename = filename)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[CreateCalendarObjectOptions]
+  }
+}
+

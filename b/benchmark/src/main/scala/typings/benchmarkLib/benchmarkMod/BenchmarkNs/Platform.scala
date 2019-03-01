@@ -16,3 +16,22 @@ trait Platform extends js.Object {
   var version: java.lang.String
 }
 
+object Platform {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    layout: java.lang.String,
+    manufacturer: java.lang.String,
+    name: java.lang.String,
+    os: java.lang.String,
+    prerelease: java.lang.String,
+    product: java.lang.String,
+    toString: js.Function0[java.lang.String],
+    version: java.lang.String
+  ): Platform = {
+    val __obj = js.Dynamic.literal(description = description, layout = layout, manufacturer = manufacturer, name = name, os = os, prerelease = prerelease, product = product, toString = toString, version = version)
+  
+    __obj.asInstanceOf[Platform]
+  }
+}
+

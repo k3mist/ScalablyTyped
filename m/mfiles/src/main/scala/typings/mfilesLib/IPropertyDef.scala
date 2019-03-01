@@ -35,3 +35,40 @@ trait IPropertyDef extends js.Object {
   def Clone(): IPropertyDef
 }
 
+object IPropertyDef {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    AllObjectTypes: scala.Boolean,
+    AllowedAsGroupingLevel: scala.Boolean,
+    AutomaticValueDefinition: ITypedValue,
+    AutomaticValueType: mfilesLib.MFilesNs.MFAutomaticValueType,
+    BasedOnValueList: scala.Boolean,
+    Clone: js.Function0[IPropertyDef],
+    ContentType: mfilesLib.MFilesNs.MFContentType,
+    DataType: mfilesLib.MFilesNs.MFDataType,
+    DependencyPD: scala.Double,
+    DependencyRelation: mfilesLib.MFilesNs.MFDependencyRelation,
+    FormattingType: mfilesLib.MFilesNs.MFFormattingType,
+    GUID: java.lang.String,
+    ID: scala.Double,
+    Name: java.lang.String,
+    ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
+    OwnerPropertyDef: IOwnerPropertyDef,
+    Predefined: scala.Boolean,
+    SortAscending: scala.Boolean,
+    StaticFilter: ISearchConditions,
+    ThisIsConflictPD: scala.Boolean,
+    ThisIsDefaultPD: scala.Boolean,
+    ThisIsOwnerPD: scala.Boolean,
+    UpdateType: mfilesLib.MFilesNs.MFUpdateType,
+    ValidationType: mfilesLib.MFilesNs.MFValidationType,
+    ValueList: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double,
+    ValueListSortingType: mfilesLib.MFilesNs.MFValueListSortingType
+  ): IPropertyDef = {
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllObjectTypes = AllObjectTypes, AllowedAsGroupingLevel = AllowedAsGroupingLevel, AutomaticValueDefinition = AutomaticValueDefinition, AutomaticValueType = AutomaticValueType, BasedOnValueList = BasedOnValueList, Clone = Clone, ContentType = ContentType, DataType = DataType, DependencyPD = DependencyPD, DependencyRelation = DependencyRelation, FormattingType = FormattingType, GUID = GUID, ID = ID, Name = Name, ObjectType = ObjectType.asInstanceOf[js.Any], OwnerPropertyDef = OwnerPropertyDef, Predefined = Predefined, SortAscending = SortAscending, StaticFilter = StaticFilter, ThisIsConflictPD = ThisIsConflictPD, ThisIsDefaultPD = ThisIsDefaultPD, ThisIsOwnerPD = ThisIsOwnerPD, UpdateType = UpdateType, ValidationType = ValidationType, ValueList = ValueList.asInstanceOf[js.Any], ValueListSortingType = ValueListSortingType)
+  
+    __obj.asInstanceOf[IPropertyDef]
+  }
+}
+

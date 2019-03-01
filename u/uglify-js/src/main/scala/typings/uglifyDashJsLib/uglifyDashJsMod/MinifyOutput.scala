@@ -12,3 +12,18 @@ trait MinifyOutput extends js.Object {
   var warnings: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object MinifyOutput {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    map: java.lang.String,
+    error: stdLib.Error = null,
+    warnings: js.Array[java.lang.String] = null
+  ): MinifyOutput = {
+    val __obj = js.Dynamic.literal(code = code, map = map)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[MinifyOutput]
+  }
+}
+

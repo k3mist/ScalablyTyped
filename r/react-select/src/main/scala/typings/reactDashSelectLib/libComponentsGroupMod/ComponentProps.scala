@@ -14,3 +14,16 @@ trait ComponentProps extends js.Object {
   var label: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object ComponentProps {
+  @scala.inline
+  def apply(
+    Heading: reactLib.reactMod.ReactNs.ComponentType[_],
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNs.ReactNode
+  ): ComponentProps = {
+    val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ComponentProps]
+  }
+}
+

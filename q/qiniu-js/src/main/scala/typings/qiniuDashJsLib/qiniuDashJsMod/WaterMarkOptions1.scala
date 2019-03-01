@@ -19,3 +19,19 @@ trait WaterMarkOptions1 extends js.Object {
   var mode: qiniuDashJsLib.qiniuDashJsLibNumbers.`1`
 }
 
+object WaterMarkOptions1 {
+  @scala.inline
+  def apply(
+    dissolve: scala.Double,
+    dx: scala.Double,
+    dy: scala.Double,
+    gravity: qiniuDashJsLib.qiniuDashJsLibStrings.NorthWest | qiniuDashJsLib.qiniuDashJsLibStrings.North | qiniuDashJsLib.qiniuDashJsLibStrings.NorthEast | qiniuDashJsLib.qiniuDashJsLibStrings.West | qiniuDashJsLib.qiniuDashJsLibStrings.Center | qiniuDashJsLib.qiniuDashJsLibStrings.East | qiniuDashJsLib.qiniuDashJsLibStrings.SouthWest | qiniuDashJsLib.qiniuDashJsLibStrings.South | qiniuDashJsLib.qiniuDashJsLibStrings.SouthEast,
+    image: java.lang.String,
+    mode: qiniuDashJsLib.qiniuDashJsLibNumbers.`1`
+  ): WaterMarkOptions1 = {
+    val __obj = js.Dynamic.literal(dissolve = dissolve, dx = dx, dy = dy, gravity = gravity.asInstanceOf[js.Any], image = image, mode = mode)
+  
+    __obj.asInstanceOf[WaterMarkOptions1]
+  }
+}
+

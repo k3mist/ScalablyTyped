@@ -22,3 +22,18 @@ trait CursorUpdateEventInfo
   var `type`: java.lang.String
 }
 
+object CursorUpdateEventInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    coordinates: js.Array[scala.Double],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): CursorUpdateEventInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinates = coordinates, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[CursorUpdateEventInfo]
+  }
+}
+

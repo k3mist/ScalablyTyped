@@ -18,3 +18,33 @@ trait AdsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Ad]
 }
 
+object AdsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_ActiveAdvertiserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Ad]
+    ]
+  ): AdsResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[AdsResource]
+  }
+}
+

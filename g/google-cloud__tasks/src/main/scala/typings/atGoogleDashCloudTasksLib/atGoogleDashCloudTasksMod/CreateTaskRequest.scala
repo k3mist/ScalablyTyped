@@ -10,3 +10,12 @@ trait CreateTaskRequest extends js.Object {
   var task: stdLib.Partial[Task]
 }
 
+object CreateTaskRequest {
+  @scala.inline
+  def apply(responseView: View, task: stdLib.Partial[Task]): CreateTaskRequest = {
+    val __obj = js.Dynamic.literal(responseView = responseView, task = task)
+  
+    __obj.asInstanceOf[CreateTaskRequest]
+  }
+}
+

@@ -43,3 +43,19 @@ trait Command extends js.Object {
   def usage(usage: java.lang.String): Command
 }
 
+object Command {
+  @scala.inline
+  def apply(
+    callback: js.Function1[js.Function1[/* options */ js.Any, scala.Unit], Command],
+    help: js.Function1[java.lang.String, Command],
+    name: java.lang.String,
+    option: js.Function2[java.lang.String, Option, Command],
+    options: js.Function1[org.scalablytyped.runtime.StringDictionary[Option], Command],
+    usage: js.Function1[java.lang.String, Command]
+  ): Command = {
+    val __obj = js.Dynamic.literal(callback = callback, help = help, name = name, option = option, options = options, usage = usage)
+  
+    __obj.asInstanceOf[Command]
+  }
+}
+

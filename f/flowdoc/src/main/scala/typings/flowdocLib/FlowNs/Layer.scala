@@ -14,3 +14,19 @@ trait Layer
   var type_Layer: flowdocLib.flowdocLibStrings.LAYER | flowdocLib.flowdocLibStrings.HOTSPOT
 }
 
+object Layer {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    position: Point,
+    size: Size,
+    `type`: flowdocLib.flowdocLibStrings.LAYER | flowdocLib.flowdocLibStrings.HOTSPOT,
+    connections: js.Array[Connection] = null
+  ): Layer = {
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size, `type` = `type`.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections)
+    __obj.asInstanceOf[Layer]
+  }
+}
+

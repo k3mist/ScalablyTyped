@@ -15,3 +15,19 @@ trait GraphQLDirective extends js.Object {
   var onOperation: scala.Boolean
 }
 
+object GraphQLDirective {
+  @scala.inline
+  def apply(
+    args: js.Array[GraphQLArgument],
+    description: java.lang.String,
+    name: java.lang.String,
+    onField: scala.Boolean,
+    onFragment: scala.Boolean,
+    onOperation: scala.Boolean
+  ): GraphQLDirective = {
+    val __obj = js.Dynamic.literal(args = args, description = description, name = name, onField = onField, onFragment = onFragment, onOperation = onOperation)
+  
+    __obj.asInstanceOf[GraphQLDirective]
+  }
+}
+

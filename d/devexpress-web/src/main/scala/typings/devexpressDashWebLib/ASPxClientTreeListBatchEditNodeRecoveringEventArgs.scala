@@ -21,3 +21,12 @@ trait ASPxClientTreeListBatchEditNodeRecoveringEventArgs extends ASPxClientCance
   var nodeValues: js.Object
 }
 
+object ASPxClientTreeListBatchEditNodeRecoveringEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, nodeKey: java.lang.String, nodeValues: js.Object): ASPxClientTreeListBatchEditNodeRecoveringEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, nodeKey = nodeKey, nodeValues = nodeValues)
+  
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeRecoveringEventArgs]
+  }
+}
+

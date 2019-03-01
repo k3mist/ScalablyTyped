@@ -12,3 +12,17 @@ trait Anon_Code extends js.Object {
   var wasClean: scala.Boolean
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    reason: java.lang.String,
+    target: uwsLib.uwsMod.WebSocket,
+    wasClean: scala.Boolean
+  ): Anon_Code = {
+    val __obj = js.Dynamic.literal(code = code, reason = reason, target = target, wasClean = wasClean)
+  
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

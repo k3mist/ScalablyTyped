@@ -20,3 +20,24 @@ trait Typography extends js.Object {
   var textMinBlack: java.lang.String
 }
 
+object Typography {
+  @scala.inline
+  def apply(
+    fontStyleButtonFontSize: scala.Double,
+    fontWeightLight: scala.Double,
+    fontWeightMedium: scala.Double,
+    fontWeightNormal: scala.Double,
+    textDarkBlack: java.lang.String,
+    textDarkWhite: java.lang.String,
+    textFullBlack: java.lang.String,
+    textFullWhite: java.lang.String,
+    textLightBlack: java.lang.String,
+    textLightWhite: java.lang.String,
+    textMinBlack: java.lang.String
+  ): Typography = {
+    val __obj = js.Dynamic.literal(fontStyleButtonFontSize = fontStyleButtonFontSize, fontWeightLight = fontWeightLight, fontWeightMedium = fontWeightMedium, fontWeightNormal = fontWeightNormal, textDarkBlack = textDarkBlack, textDarkWhite = textDarkWhite, textFullBlack = textFullBlack, textFullWhite = textFullWhite, textLightBlack = textLightBlack, textLightWhite = textLightWhite, textMinBlack = textMinBlack)
+  
+    __obj.asInstanceOf[Typography]
+  }
+}
+

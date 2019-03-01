@@ -18,3 +18,15 @@ trait InsertBookmarkCommand extends CommandWithSimpleStateBase {
   def execute(name: java.lang.String, start: scala.Double, length: scala.Double): scala.Boolean
 }
 
+object InsertBookmarkCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): InsertBookmarkCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[InsertBookmarkCommand]
+  }
+}
+

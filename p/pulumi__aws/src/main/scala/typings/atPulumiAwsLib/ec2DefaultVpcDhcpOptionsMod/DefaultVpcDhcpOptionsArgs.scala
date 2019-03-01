@@ -24,3 +24,18 @@ trait DefaultVpcDhcpOptionsArgs extends js.Object {
   ] = js.undefined
 }
 
+object DefaultVpcDhcpOptionsArgs {
+  @scala.inline
+  def apply(
+    netbiosNameServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    netbiosNodeType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DefaultVpcDhcpOptionsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (netbiosNameServers != null) __obj.updateDynamic("netbiosNameServers")(netbiosNameServers.asInstanceOf[js.Any])
+    if (netbiosNodeType != null) __obj.updateDynamic("netbiosNodeType")(netbiosNodeType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultVpcDhcpOptionsArgs]
+  }
+}
+

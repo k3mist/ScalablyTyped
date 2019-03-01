@@ -23,3 +23,30 @@ trait ojLedGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
 }
 
+object ojLedGaugeSettableProperties {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String,
+    color: java.lang.String,
+    label: atOracleOraclejetLib.Anon_Style,
+    max: scala.Double,
+    metricLabel: atOracleOraclejetLib.Anon_AutoBillionConverterMillionNone,
+    min: scala.Double,
+    rotation: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`,
+    size: scala.Double,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.Threshold],
+    tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext,
+    trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.arrow | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle,
+    visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    value: scala.Int | scala.Double = null
+  ): ojLedGaugeSettableProperties = {
+    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, label = label, max = max, metricLabel = metricLabel, min = min, rotation = rotation.asInstanceOf[js.Any], size = size, svgClassName = svgClassName, svgStyle = svgStyle, thresholds = thresholds, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, `type` = `type`.asInstanceOf[js.Any], visualEffects = visualEffects.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ojLedGaugeSettableProperties]
+  }
+}
+

@@ -14,3 +14,19 @@ trait BarData extends js.Object {
   var y: scala.Double
 }
 
+object BarData {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    radius: scala.Double | js.Array[_],
+    value: scala.Double | java.lang.String | js.Array[_],
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): BarData = {
+    val __obj = js.Dynamic.literal(height = height, radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[BarData]
+  }
+}
+

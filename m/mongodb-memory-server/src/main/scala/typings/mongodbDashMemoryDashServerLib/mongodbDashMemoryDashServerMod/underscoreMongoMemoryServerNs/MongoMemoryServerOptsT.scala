@@ -13,3 +13,19 @@ trait MongoMemoryServerOptsT extends js.Object {
   var spawn: js.Any
 }
 
+object MongoMemoryServerOptsT {
+  @scala.inline
+  def apply(
+    binary: mongodbDashMemoryDashServerLib.Anon_Arch,
+    instance: mongodbDashMemoryDashServerLib.Anon_ArgsDbName,
+    spawn: js.Any,
+    autoStart: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined
+  ): MongoMemoryServerOptsT = {
+    val __obj = js.Dynamic.literal(binary = binary, instance = instance, spawn = spawn)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    __obj.asInstanceOf[MongoMemoryServerOptsT]
+  }
+}
+

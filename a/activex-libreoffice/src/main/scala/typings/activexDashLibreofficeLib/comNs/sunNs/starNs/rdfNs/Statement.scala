@@ -17,3 +17,12 @@ trait Statement extends js.Object {
   var Subject: XResource
 }
 
+object Statement {
+  @scala.inline
+  def apply(Graph: XURI, Object: XNode, Predicate: XURI, Subject: XResource): Statement = {
+    val __obj = js.Dynamic.literal(Graph = Graph, Object = Object, Predicate = Predicate, Subject = Subject)
+  
+    __obj.asInstanceOf[Statement]
+  }
+}
+

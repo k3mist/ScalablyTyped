@@ -35,3 +35,17 @@ trait PersistentVolumeClaimList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object PersistentVolumeClaimList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    items: js.Array[PersistentVolumeClaim],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaimList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): PersistentVolumeClaimList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[PersistentVolumeClaimList]
+  }
+}
+

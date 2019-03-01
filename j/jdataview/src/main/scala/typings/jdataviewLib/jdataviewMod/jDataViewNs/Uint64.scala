@@ -10,3 +10,12 @@ trait Uint64 extends js.Object {
   var lo: scala.Double
 }
 
+object Uint64 {
+  @scala.inline
+  def apply(hi: scala.Double, lo: scala.Double, valueOf: js.Function0[scala.Double]): Uint64 = {
+    val __obj = js.Dynamic.literal(hi = hi, lo = lo, valueOf = valueOf)
+  
+    __obj.asInstanceOf[Uint64]
+  }
+}
+

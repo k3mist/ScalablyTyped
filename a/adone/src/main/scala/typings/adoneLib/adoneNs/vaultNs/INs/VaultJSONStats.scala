@@ -11,3 +11,12 @@ trait VaultJSONStats extends js.Object {
   var updated: scala.Double
 }
 
+object VaultJSONStats {
+  @scala.inline
+  def apply(created: scala.Double, location: java.lang.String, updated: scala.Double): VaultJSONStats = {
+    val __obj = js.Dynamic.literal(created = created, location = location, updated = updated)
+  
+    __obj.asInstanceOf[VaultJSONStats]
+  }
+}
+

@@ -25,3 +25,17 @@ trait VerbDescriptor extends js.Object {
   var VerbName: java.lang.String
 }
 
+object VerbDescriptor {
+  @scala.inline
+  def apply(
+    VerbAttributes: scala.Double,
+    VerbFlags: scala.Double,
+    VerbID: scala.Double,
+    VerbName: java.lang.String
+  ): VerbDescriptor = {
+    val __obj = js.Dynamic.literal(VerbAttributes = VerbAttributes, VerbFlags = VerbFlags, VerbID = VerbID, VerbName = VerbName)
+  
+    __obj.asInstanceOf[VerbDescriptor]
+  }
+}
+

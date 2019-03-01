@@ -11,3 +11,16 @@ trait IVaultAutomaticMetadataOperations extends js.Object {
   def GetAutomaticMetadataForTemporaryFiles(IIDs: IIDs): IAutomaticMetadataResult
 }
 
+object IVaultAutomaticMetadataOperations {
+  @scala.inline
+  def apply(
+    GetAutomaticMetadataForObject: js.Function1[IObjVer, IAutomaticMetadataResult],
+    GetAutomaticMetadataForTemporaryFile: js.Function1[scala.Double, IAutomaticMetadataResult],
+    GetAutomaticMetadataForTemporaryFiles: js.Function1[IIDs, IAutomaticMetadataResult]
+  ): IVaultAutomaticMetadataOperations = {
+    val __obj = js.Dynamic.literal(GetAutomaticMetadataForObject = GetAutomaticMetadataForObject, GetAutomaticMetadataForTemporaryFile = GetAutomaticMetadataForTemporaryFile, GetAutomaticMetadataForTemporaryFiles = GetAutomaticMetadataForTemporaryFiles)
+  
+    __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
+  }
+}
+

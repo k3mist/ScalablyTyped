@@ -10,3 +10,12 @@ trait ComponentPropsOptionsSelector extends js.Object {
   var value: java.lang.String
 }
 
+object ComponentPropsOptionsSelector {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): ComponentPropsOptionsSelector = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[ComponentPropsOptionsSelector]
+  }
+}
+

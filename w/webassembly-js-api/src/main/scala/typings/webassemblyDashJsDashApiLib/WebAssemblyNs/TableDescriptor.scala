@@ -14,3 +14,16 @@ trait TableDescriptor extends js.Object {
   var maximum: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TableDescriptor {
+  @scala.inline
+  def apply(
+    element: webassemblyDashJsDashApiLib.webassemblyDashJsDashApiLibStrings.anyfunc,
+    initial: scala.Double,
+    maximum: scala.Int | scala.Double = null
+  ): TableDescriptor = {
+    val __obj = js.Dynamic.literal(element = element, initial = initial)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableDescriptor]
+  }
+}
+

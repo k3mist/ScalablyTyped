@@ -20,3 +20,18 @@ trait XScenariosSupplier
   def getScenarios(): XScenarios
 }
 
+object XScenariosSupplier {
+  @scala.inline
+  def apply(
+    Scenarios: XScenarios,
+    acquire: js.Function0[scala.Unit],
+    getScenarios: js.Function0[XScenarios],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScenariosSupplier = {
+    val __obj = js.Dynamic.literal(Scenarios = Scenarios, acquire = acquire, getScenarios = getScenarios, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScenariosSupplier]
+  }
+}
+

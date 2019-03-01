@@ -10,3 +10,12 @@ trait OffsetType extends js.Object {
   var top: scala.Double
 }
 
+object OffsetType {
+  @scala.inline
+  def apply(left: scala.Double, top: scala.Double): OffsetType = {
+    val __obj = js.Dynamic.literal(left = left, top = top)
+  
+    __obj.asInstanceOf[OffsetType]
+  }
+}
+

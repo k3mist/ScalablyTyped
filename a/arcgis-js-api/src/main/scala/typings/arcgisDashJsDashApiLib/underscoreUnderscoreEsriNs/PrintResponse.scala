@@ -15,3 +15,17 @@ trait PrintResponse
   var url: java.lang.String
 }
 
+object PrintResponse {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    url: java.lang.String
+  ): PrintResponse = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, url = url)
+  
+    __obj.asInstanceOf[PrintResponse]
+  }
+}
+

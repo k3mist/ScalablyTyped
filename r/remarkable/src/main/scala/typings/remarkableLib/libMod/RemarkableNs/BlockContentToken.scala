@@ -18,3 +18,18 @@ trait BlockContentToken extends TagToken {
   var content: java.lang.String
 }
 
+object BlockContentToken {
+  @scala.inline
+  def apply(
+    children: js.Array[Token],
+    content: java.lang.String,
+    level: scala.Double,
+    `type`: java.lang.String,
+    lines: js.Tuple2[scala.Double, scala.Double] = null
+  ): BlockContentToken = {
+    val __obj = js.Dynamic.literal(children = children, content = content, level = level, `type` = `type`)
+    if (lines != null) __obj.updateDynamic("lines")(lines)
+    __obj.asInstanceOf[BlockContentToken]
+  }
+}
+

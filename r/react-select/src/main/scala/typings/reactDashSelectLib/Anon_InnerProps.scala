@@ -16,3 +16,12 @@ trait Anon_InnerProps extends js.Object {
   var size: scala.Double
 }
 
+object Anon_InnerProps {
+  @scala.inline
+  def apply(innerProps: js.Any, isFocused: scala.Boolean, isRtl: scala.Boolean, size: scala.Double): Anon_InnerProps = {
+    val __obj = js.Dynamic.literal(innerProps = innerProps, isFocused = isFocused, isRtl = isRtl, size = size)
+  
+    __obj.asInstanceOf[Anon_InnerProps]
+  }
+}
+

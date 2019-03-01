@@ -27,3 +27,19 @@ trait JobPriority
   var value: scala.Double
 }
 
+object JobPriority {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: scala.Double
+  ): JobPriority = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
+    __obj.asInstanceOf[JobPriority]
+  }
+}
+

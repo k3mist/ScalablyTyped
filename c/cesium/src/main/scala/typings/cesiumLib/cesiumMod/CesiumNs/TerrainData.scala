@@ -22,3 +22,28 @@ trait TerrainData extends js.Object {
   def wasCreatedByUpsampling(): scala.Boolean
 }
 
+object TerrainData {
+  @scala.inline
+  def apply(
+    credits: js.Array[Credit],
+    interpolateHeight: js.Function3[Rectangle, scala.Double, scala.Double, scala.Double],
+    isChildAvailable: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
+    upsample: js.Function7[
+      TilingScheme, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Promise[TerrainData]
+    ],
+    wasCreatedByUpsampling: js.Function0[scala.Boolean],
+    waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement
+  ): TerrainData = {
+    val __obj = js.Dynamic.literal(credits = credits, interpolateHeight = interpolateHeight, isChildAvailable = isChildAvailable, upsample = upsample, wasCreatedByUpsampling = wasCreatedByUpsampling, waterMask = waterMask.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[TerrainData]
+  }
+}
+

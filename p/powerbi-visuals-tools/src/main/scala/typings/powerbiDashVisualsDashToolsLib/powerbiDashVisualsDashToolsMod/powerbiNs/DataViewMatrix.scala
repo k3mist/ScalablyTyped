@@ -15,3 +15,16 @@ trait DataViewMatrix extends js.Object {
   var valueSources: js.Array[DataViewMetadataColumn]
 }
 
+object DataViewMatrix {
+  @scala.inline
+  def apply(
+    columns: DataViewHierarchy,
+    rows: DataViewHierarchy,
+    valueSources: js.Array[DataViewMetadataColumn]
+  ): DataViewMatrix = {
+    val __obj = js.Dynamic.literal(columns = columns, rows = rows, valueSources = valueSources)
+  
+    __obj.asInstanceOf[DataViewMatrix]
+  }
+}
+

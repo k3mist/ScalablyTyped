@@ -13,3 +13,12 @@ trait AllPermission extends js.Object {
   var dummy: scala.Double
 }
 
+object AllPermission {
+  @scala.inline
+  def apply(dummy: scala.Double): AllPermission = {
+    val __obj = js.Dynamic.literal(dummy = dummy)
+  
+    __obj.asInstanceOf[AllPermission]
+  }
+}
+

@@ -10,3 +10,12 @@ trait WrappedFieldProps extends js.Object {
   var meta: WrappedFieldMetaProps
 }
 
+object WrappedFieldProps {
+  @scala.inline
+  def apply(input: WrappedFieldInputProps, meta: WrappedFieldMetaProps): WrappedFieldProps = {
+    val __obj = js.Dynamic.literal(input = input, meta = meta)
+  
+    __obj.asInstanceOf[WrappedFieldProps]
+  }
+}
+

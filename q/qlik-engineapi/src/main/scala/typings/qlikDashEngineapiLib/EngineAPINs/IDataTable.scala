@@ -20,3 +20,12 @@ trait IDataTable extends js.Object {
   var qType: java.lang.String
 }
 
+object IDataTable {
+  @scala.inline
+  def apply(qName: java.lang.String, qType: java.lang.String): IDataTable = {
+    val __obj = js.Dynamic.literal(qName = qName, qType = qType)
+  
+    __obj.asInstanceOf[IDataTable]
+  }
+}
+

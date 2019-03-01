@@ -12,3 +12,12 @@ trait MemoryInfo extends js.Object {
   var capacity: scala.Double
 }
 
+object MemoryInfo {
+  @scala.inline
+  def apply(availableCapacity: scala.Double, capacity: scala.Double): MemoryInfo = {
+    val __obj = js.Dynamic.literal(availableCapacity = availableCapacity, capacity = capacity)
+  
+    __obj.asInstanceOf[MemoryInfo]
+  }
+}
+

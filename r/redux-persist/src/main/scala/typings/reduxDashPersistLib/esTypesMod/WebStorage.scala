@@ -20,3 +20,16 @@ trait WebStorage extends js.Object {
   def setItem(key: java.lang.String, item: java.lang.String): js.Promise[java.lang.String]
 }
 
+object WebStorage {
+  @scala.inline
+  def apply(
+    getItem: js.Function1[java.lang.String, js.Promise[java.lang.String]],
+    removeItem: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    setItem: js.Function2[java.lang.String, java.lang.String, js.Promise[java.lang.String]]
+  ): WebStorage = {
+    val __obj = js.Dynamic.literal(getItem = getItem, removeItem = removeItem, setItem = setItem)
+  
+    __obj.asInstanceOf[WebStorage]
+  }
+}
+

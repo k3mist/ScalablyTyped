@@ -11,3 +11,12 @@ trait Anon_Ctor extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Ctor {
+  @scala.inline
+  def apply(ctor: js.Any, filePath: java.lang.String, name: java.lang.String): Anon_Ctor = {
+    val __obj = js.Dynamic.literal(ctor = ctor, filePath = filePath, name = name)
+  
+    __obj.asInstanceOf[Anon_Ctor]
+  }
+}
+

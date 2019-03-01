@@ -13,3 +13,12 @@ trait IntValueNode
   val value: java.lang.String
 }
 
+object IntValueNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.IntValue, value: java.lang.String, loc: Location = null): IntValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[IntValueNode]
+  }
+}
+

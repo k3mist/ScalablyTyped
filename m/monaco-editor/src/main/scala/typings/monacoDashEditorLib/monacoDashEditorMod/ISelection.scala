@@ -24,3 +24,17 @@ trait ISelection extends js.Object {
   val selectionStartLineNumber: scala.Double
 }
 
+object ISelection {
+  @scala.inline
+  def apply(
+    positionColumn: scala.Double,
+    positionLineNumber: scala.Double,
+    selectionStartColumn: scala.Double,
+    selectionStartLineNumber: scala.Double
+  ): ISelection = {
+    val __obj = js.Dynamic.literal(positionColumn = positionColumn, positionLineNumber = positionLineNumber, selectionStartColumn = selectionStartColumn, selectionStartLineNumber = selectionStartLineNumber)
+  
+    __obj.asInstanceOf[ISelection]
+  }
+}
+

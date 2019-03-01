@@ -19,3 +19,28 @@ trait AccountsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    adclients: AdclientsResource,
+    alerts: AlertsResource,
+    customchannels: CustomchannelsResource,
+    get: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
+    ],
+    metadata: MetadataResource,
+    preferreddeals: PreferreddealsResource,
+    reports: ReportsResource,
+    urlchannels: UrlchannelsResource
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal(adclients = adclients, alerts = alerts, customchannels = customchannels, get = get, list = list, metadata = metadata, preferreddeals = preferreddeals, reports = reports, urlchannels = urlchannels)
+  
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

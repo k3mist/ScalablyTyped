@@ -16,3 +16,17 @@ trait XUnoUrlResolver
   def resolve(sUnoUrl: java.lang.String): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XUnoUrlResolver {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resolve: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+  ): XUnoUrlResolver = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, resolve = resolve)
+  
+    __obj.asInstanceOf[XUnoUrlResolver]
+  }
+}
+

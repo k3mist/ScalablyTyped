@@ -10,3 +10,12 @@ trait AnimationEffectReadOnly extends js.Object {
   def getComputedTiming(): ComputedTimingProperties
 }
 
+object AnimationEffectReadOnly {
+  @scala.inline
+  def apply(getComputedTiming: js.Function0[ComputedTimingProperties], timing: scala.Double): AnimationEffectReadOnly = {
+    val __obj = js.Dynamic.literal(getComputedTiming = getComputedTiming, timing = timing)
+  
+    __obj.asInstanceOf[AnimationEffectReadOnly]
+  }
+}
+

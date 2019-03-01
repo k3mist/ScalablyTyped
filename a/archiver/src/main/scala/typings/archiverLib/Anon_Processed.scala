@@ -10,3 +10,12 @@ trait Anon_Processed extends js.Object {
   var total: scala.Double
 }
 
+object Anon_Processed {
+  @scala.inline
+  def apply(processed: scala.Double, total: scala.Double): Anon_Processed = {
+    val __obj = js.Dynamic.literal(processed = processed, total = total)
+  
+    __obj.asInstanceOf[Anon_Processed]
+  }
+}
+

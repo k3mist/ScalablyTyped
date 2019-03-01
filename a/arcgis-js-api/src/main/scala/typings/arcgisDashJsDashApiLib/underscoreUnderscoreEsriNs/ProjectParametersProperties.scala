@@ -38,3 +38,22 @@ trait ProjectParametersProperties extends js.Object {
   var transformation: js.UndefOr[ProjectParametersTransformation] = js.undefined
 }
 
+object ProjectParametersProperties {
+  @scala.inline
+  def apply(
+    geometries: js.Array[GeometryProperties] = null,
+    outSR: SpatialReferenceProperties = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    transformForward: js.UndefOr[scala.Boolean] = js.undefined,
+    transformation: ProjectParametersTransformation = null
+  ): ProjectParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (outSR != null) __obj.updateDynamic("outSR")(outSR)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward)
+    if (transformation != null) __obj.updateDynamic("transformation")(transformation)
+    __obj.asInstanceOf[ProjectParametersProperties]
+  }
+}
+

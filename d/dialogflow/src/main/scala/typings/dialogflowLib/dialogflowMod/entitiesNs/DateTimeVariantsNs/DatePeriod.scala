@@ -11,3 +11,15 @@ trait DatePeriod
   var startDate: dialogflowLib.dialogflowMod.entitiesNs.Date
 }
 
+object DatePeriod {
+  @scala.inline
+  def apply(
+    endDate: dialogflowLib.dialogflowMod.entitiesNs.Date,
+    startDate: dialogflowLib.dialogflowMod.entitiesNs.Date
+  ): DatePeriod = {
+    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
+  
+    __obj.asInstanceOf[DatePeriod]
+  }
+}
+

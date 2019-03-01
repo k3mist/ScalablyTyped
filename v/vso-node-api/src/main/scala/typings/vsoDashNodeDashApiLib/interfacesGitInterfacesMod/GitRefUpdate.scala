@@ -13,3 +13,18 @@ trait GitRefUpdate extends js.Object {
   var repositoryId: java.lang.String
 }
 
+object GitRefUpdate {
+  @scala.inline
+  def apply(
+    isLocked: scala.Boolean,
+    name: java.lang.String,
+    newObjectId: java.lang.String,
+    oldObjectId: java.lang.String,
+    repositoryId: java.lang.String
+  ): GitRefUpdate = {
+    val __obj = js.Dynamic.literal(isLocked = isLocked, name = name, newObjectId = newObjectId, oldObjectId = oldObjectId, repositoryId = repositoryId)
+  
+    __obj.asInstanceOf[GitRefUpdate]
+  }
+}
+

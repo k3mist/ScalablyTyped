@@ -13,3 +13,12 @@ trait Token extends js.Object {
   var value: java.lang.String
 }
 
+object Token {
+  @scala.inline
+  def apply(end: scala.Double, kind: scala.Double, start: scala.Double, value: java.lang.String): Token = {
+    val __obj = js.Dynamic.literal(end = end, kind = kind, start = start, value = value)
+  
+    __obj.asInstanceOf[Token]
+  }
+}
+

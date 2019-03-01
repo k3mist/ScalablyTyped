@@ -16,3 +16,12 @@ trait HierarchyRectangularLink[Datum] extends js.Object {
   var target: HierarchyRectangularNode[Datum]
 }
 
+object HierarchyRectangularLink {
+  @scala.inline
+  def apply[Datum](source: HierarchyRectangularNode[Datum], target: HierarchyRectangularNode[Datum]): HierarchyRectangularLink[Datum] = {
+    val __obj = js.Dynamic.literal(source = source, target = target)
+  
+    __obj.asInstanceOf[HierarchyRectangularLink[Datum]]
+  }
+}
+

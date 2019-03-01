@@ -13,3 +13,18 @@ trait Anon_AlwaysReturnBasicInformation extends js.Object {
   var none: scala.Double
 }
 
+object Anon_AlwaysReturnBasicInformation {
+  @scala.inline
+  def apply(
+    alwaysReturnBasicInformation: scala.Double,
+    includeDeletedSubscriptions: scala.Double,
+    includeFilterDetails: scala.Double,
+    includeInvalidSubscriptions: scala.Double,
+    none: scala.Double
+  ): Anon_AlwaysReturnBasicInformation = {
+    val __obj = js.Dynamic.literal(alwaysReturnBasicInformation = alwaysReturnBasicInformation, includeDeletedSubscriptions = includeDeletedSubscriptions, includeFilterDetails = includeFilterDetails, includeInvalidSubscriptions = includeInvalidSubscriptions, none = none)
+  
+    __obj.asInstanceOf[Anon_AlwaysReturnBasicInformation]
+  }
+}
+

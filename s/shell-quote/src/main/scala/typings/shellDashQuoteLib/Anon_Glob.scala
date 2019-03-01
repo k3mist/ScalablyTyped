@@ -11,3 +11,12 @@ trait Anon_Glob
   var pattern: java.lang.String
 }
 
+object Anon_Glob {
+  @scala.inline
+  def apply(op: shellDashQuoteLib.shellDashQuoteLibStrings.glob, pattern: java.lang.String): Anon_Glob = {
+    val __obj = js.Dynamic.literal(op = op, pattern = pattern)
+  
+    __obj.asInstanceOf[Anon_Glob]
+  }
+}
+

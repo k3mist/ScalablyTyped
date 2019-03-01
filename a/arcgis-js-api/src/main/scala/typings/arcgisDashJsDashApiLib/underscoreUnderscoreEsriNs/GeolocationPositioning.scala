@@ -44,3 +44,18 @@ trait GeolocationPositioning extends js.Object {
   var view: MapView | SceneView
 }
 
+object GeolocationPositioning {
+  @scala.inline
+  def apply(
+    geolocationOptions: js.Any,
+    goToLocationEnabled: scala.Boolean,
+    graphic: Graphic,
+    scale: scala.Double,
+    view: MapView | SceneView
+  ): GeolocationPositioning = {
+    val __obj = js.Dynamic.literal(geolocationOptions = geolocationOptions, goToLocationEnabled = goToLocationEnabled, graphic = graphic, scale = scale, view = view.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeolocationPositioning]
+  }
+}
+

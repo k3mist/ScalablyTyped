@@ -16,3 +16,17 @@ trait Bounds extends js.Object {
   var width: chromeDashAppsLib.chromeNs.integer
 }
 
+object Bounds {
+  @scala.inline
+  def apply(
+    height: chromeDashAppsLib.chromeNs.integer,
+    left: chromeDashAppsLib.chromeNs.integer,
+    top: chromeDashAppsLib.chromeNs.integer,
+    width: chromeDashAppsLib.chromeNs.integer
+  ): Bounds = {
+    val __obj = js.Dynamic.literal(height = height, left = left, top = top, width = width)
+  
+    __obj.asInstanceOf[Bounds]
+  }
+}
+

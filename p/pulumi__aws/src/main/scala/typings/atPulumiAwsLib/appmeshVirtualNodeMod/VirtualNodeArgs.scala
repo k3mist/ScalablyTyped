@@ -20,3 +20,16 @@ trait VirtualNodeArgs extends js.Object {
   val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BackendsListener]
 }
 
+object VirtualNodeArgs {
+  @scala.inline
+  def apply(
+    meshName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BackendsListener],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): VirtualNodeArgs = {
+    val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VirtualNodeArgs]
+  }
+}
+

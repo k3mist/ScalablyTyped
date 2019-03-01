@@ -12,3 +12,12 @@ trait MemoryUsageDetails extends js.Object {
   var size: scala.Double
 }
 
+object MemoryUsageDetails {
+  @scala.inline
+  def apply(count: scala.Double, liveSize: scala.Double, size: scala.Double): MemoryUsageDetails = {
+    val __obj = js.Dynamic.literal(count = count, liveSize = liveSize, size = size)
+  
+    __obj.asInstanceOf[MemoryUsageDetails]
+  }
+}
+

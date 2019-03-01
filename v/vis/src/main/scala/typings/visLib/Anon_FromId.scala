@@ -10,3 +10,12 @@ trait Anon_FromId extends js.Object {
   var toId: visLib.visMod.IdType
 }
 
+object Anon_FromId {
+  @scala.inline
+  def apply(fromId: visLib.visMod.IdType, toId: visLib.visMod.IdType): Anon_FromId = {
+    val __obj = js.Dynamic.literal(fromId = fromId.asInstanceOf[js.Any], toId = toId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_FromId]
+  }
+}
+

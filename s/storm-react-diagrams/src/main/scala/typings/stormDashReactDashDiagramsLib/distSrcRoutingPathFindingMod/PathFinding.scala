@@ -32,3 +32,33 @@ trait PathFinding extends js.Object {
   def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_End
 }
 
+object PathFinding {
+  @scala.inline
+  def apply(
+    calculateDirectPath: js.Function2[
+      stormDashReactDashDiagramsLib.Anon_X, 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      js.Array[js.Array[scala.Double]]
+    ],
+    calculateDynamicPath: js.Function5[
+      js.Array[js.Array[scala.Double]], 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      js.Array[js.Array[scala.Double]], 
+      js.Array[js.Array[scala.Double]], 
+      js.Any
+    ],
+    calculateLinkStartEndCoords: js.Function2[
+      js.Array[js.Array[scala.Double]], 
+      js.Array[js.Array[scala.Double]], 
+      stormDashReactDashDiagramsLib.Anon_End
+    ],
+    diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any,
+    instance: js.Any
+  ): PathFinding = {
+    val __obj = js.Dynamic.literal(calculateDirectPath = calculateDirectPath, calculateDynamicPath = calculateDynamicPath, calculateLinkStartEndCoords = calculateLinkStartEndCoords, diagramEngine = diagramEngine, instance = instance)
+  
+    __obj.asInstanceOf[PathFinding]
+  }
+}
+

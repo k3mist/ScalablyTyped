@@ -80,3 +80,36 @@ trait WMTSSublayerProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WMTSSublayerProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    imageFormat: java.lang.String = null,
+    imageFormats: js.Array[java.lang.String] = null,
+    layer: WMTSLayerProperties = null,
+    styleId: java.lang.String = null,
+    styles: CollectionProperties[WMTSStyleProperties] = null,
+    tileMatrixSet: TileMatrixSetProperties = null,
+    tileMatrixSetId: java.lang.String = null,
+    tileMatrixSets: CollectionProperties[TileMatrixSetProperties] = null,
+    title: java.lang.String = null
+  ): WMTSSublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat)
+    if (imageFormats != null) __obj.updateDynamic("imageFormats")(imageFormats)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (styleId != null) __obj.updateDynamic("styleId")(styleId)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (tileMatrixSet != null) __obj.updateDynamic("tileMatrixSet")(tileMatrixSet)
+    if (tileMatrixSetId != null) __obj.updateDynamic("tileMatrixSetId")(tileMatrixSetId)
+    if (tileMatrixSets != null) __obj.updateDynamic("tileMatrixSets")(tileMatrixSets.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[WMTSSublayerProperties]
+  }
+}
+

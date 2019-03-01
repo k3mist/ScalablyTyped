@@ -10,3 +10,15 @@ trait DeclinedMessageEvent extends MessageEvent {
   var signature_id: java.lang.String
 }
 
+object DeclinedMessageEvent {
+  @scala.inline
+  def apply(
+    event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.signature_request_declined,
+    signature_id: java.lang.String
+  ): DeclinedMessageEvent = {
+    val __obj = js.Dynamic.literal(event = event, signature_id = signature_id)
+  
+    __obj.asInstanceOf[DeclinedMessageEvent]
+  }
+}
+

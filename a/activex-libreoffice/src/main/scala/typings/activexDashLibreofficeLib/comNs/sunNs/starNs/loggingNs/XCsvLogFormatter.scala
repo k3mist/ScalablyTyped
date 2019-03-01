@@ -33,3 +33,27 @@ trait XCsvLogFormatter extends XLogFormatter {
   def formatMultiColumn(columnData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): java.lang.String
 }
 
+object XCsvLogFormatter {
+  @scala.inline
+  def apply(
+    Columnnames: activexDashInteropLib.SafeArray[java.lang.String],
+    Head: java.lang.String,
+    LogEventNo: scala.Boolean,
+    LogSource: scala.Boolean,
+    LogThread: scala.Boolean,
+    LogTimestamp: scala.Boolean,
+    Tail: java.lang.String,
+    format: js.Function1[LogRecord, java.lang.String],
+    formatMultiColumn: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String
+    ],
+    getHead: js.Function0[java.lang.String],
+    getTail: js.Function0[java.lang.String]
+  ): XCsvLogFormatter = {
+    val __obj = js.Dynamic.literal(Columnnames = Columnnames, Head = Head, LogEventNo = LogEventNo, LogSource = LogSource, LogThread = LogThread, LogTimestamp = LogTimestamp, Tail = Tail, format = format, formatMultiColumn = formatMultiColumn, getHead = getHead, getTail = getTail)
+  
+    __obj.asInstanceOf[XCsvLogFormatter]
+  }
+}
+

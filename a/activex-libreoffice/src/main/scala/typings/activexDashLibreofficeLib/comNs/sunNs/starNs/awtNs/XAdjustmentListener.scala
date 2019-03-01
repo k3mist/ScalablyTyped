@@ -12,3 +12,18 @@ trait XAdjustmentListener
   def adjustmentValueChanged(rEvent: AdjustmentEvent): scala.Unit
 }
 
+object XAdjustmentListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    adjustmentValueChanged: js.Function1[AdjustmentEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAdjustmentListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, adjustmentValueChanged = adjustmentValueChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAdjustmentListener]
+  }
+}
+

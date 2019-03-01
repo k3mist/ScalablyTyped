@@ -12,3 +12,12 @@ trait IDrawingModeChangedData extends js.Object {
   var shape: IPrimitive
 }
 
+object IDrawingModeChangedData {
+  @scala.inline
+  def apply(mode: bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingMode, shape: IPrimitive): IDrawingModeChangedData = {
+    val __obj = js.Dynamic.literal(mode = mode, shape = shape)
+  
+    __obj.asInstanceOf[IDrawingModeChangedData]
+  }
+}
+

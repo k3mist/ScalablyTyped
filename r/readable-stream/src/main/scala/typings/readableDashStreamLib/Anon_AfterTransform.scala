@@ -19,3 +19,25 @@ trait Anon_AfterTransform extends js.Object {
   ): scala.Unit | scala.Boolean
 }
 
+object Anon_AfterTransform {
+  @scala.inline
+  def apply(
+    afterTransform: js.Function3[
+      readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
+      js.Any, 
+      js.Any, 
+      scala.Unit | scala.Boolean
+    ],
+    needTransform: scala.Boolean,
+    transforming: scala.Boolean,
+    writechunk: js.Any,
+    writecb: js.Function1[/* err */ js.Any, _] = null,
+    writeencoding: java.lang.String = null
+  ): Anon_AfterTransform = {
+    val __obj = js.Dynamic.literal(afterTransform = afterTransform, needTransform = needTransform, transforming = transforming, writechunk = writechunk)
+    if (writecb != null) __obj.updateDynamic("writecb")(writecb)
+    if (writeencoding != null) __obj.updateDynamic("writeencoding")(writeencoding)
+    __obj.asInstanceOf[Anon_AfterTransform]
+  }
+}
+

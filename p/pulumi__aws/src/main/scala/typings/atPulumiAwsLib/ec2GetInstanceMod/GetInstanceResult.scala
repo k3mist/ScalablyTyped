@@ -133,3 +133,45 @@ trait GetInstanceResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetInstanceResult {
+  @scala.inline
+  def apply(
+    ami: java.lang.String,
+    arn: java.lang.String,
+    associatePublicIpAddress: scala.Boolean,
+    availabilityZone: java.lang.String,
+    creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits],
+    disableApiTermination: scala.Boolean,
+    ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId],
+    ebsOptimized: scala.Boolean,
+    ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameNoDevice],
+    hostId: java.lang.String,
+    iamInstanceProfile: java.lang.String,
+    id: java.lang.String,
+    instanceState: java.lang.String,
+    instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    instanceType: java.lang.String,
+    keyName: java.lang.String,
+    monitoring: scala.Boolean,
+    networkInterfaceId: java.lang.String,
+    passwordData: java.lang.String,
+    placementGroup: java.lang.String,
+    privateDns: java.lang.String,
+    privateIp: java.lang.String,
+    publicDns: java.lang.String,
+    publicIp: java.lang.String,
+    rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIops],
+    securityGroups: js.Array[java.lang.String],
+    sourceDestCheck: scala.Boolean,
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    tenancy: java.lang.String,
+    userData: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetInstanceResult = {
+    val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
+    __obj.asInstanceOf[GetInstanceResult]
+  }
+}
+

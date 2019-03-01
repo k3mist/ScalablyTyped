@@ -12,3 +12,17 @@ trait RoleInstance extends js.Object {
   var updateDomain: java.lang.String
 }
 
+object RoleInstance {
+  @scala.inline
+  def apply(
+    endpoints: org.scalablytyped.runtime.StringDictionary[RoleInstanceEndpoint],
+    faultDomain: java.lang.String,
+    id: java.lang.String,
+    updateDomain: java.lang.String
+  ): RoleInstance = {
+    val __obj = js.Dynamic.literal(endpoints = endpoints, faultDomain = faultDomain, id = id, updateDomain = updateDomain)
+  
+    __obj.asInstanceOf[RoleInstance]
+  }
+}
+

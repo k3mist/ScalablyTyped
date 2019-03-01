@@ -17,3 +17,18 @@ trait EnvInfo extends js.Object {
   var sdkVersion: java.lang.String
 }
 
+object EnvInfo {
+  @scala.inline
+  def apply(
+    appKey: java.lang.String,
+    appName: java.lang.String,
+    lastAppURL: java.lang.String,
+    scheme: java.lang.String,
+    sdkVersion: java.lang.String
+  ): EnvInfo = {
+    val __obj = js.Dynamic.literal(appKey = appKey, appName = appName, lastAppURL = lastAppURL, scheme = scheme, sdkVersion = sdkVersion)
+  
+    __obj.asInstanceOf[EnvInfo]
+  }
+}
+

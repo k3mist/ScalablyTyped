@@ -16,3 +16,12 @@ trait NotificationEventFieldOperator extends js.Object {
   var id: java.lang.String
 }
 
+object NotificationEventFieldOperator {
+  @scala.inline
+  def apply(displayName: java.lang.String, id: java.lang.String): NotificationEventFieldOperator = {
+    val __obj = js.Dynamic.literal(displayName = displayName, id = id)
+  
+    __obj.asInstanceOf[NotificationEventFieldOperator]
+  }
+}
+

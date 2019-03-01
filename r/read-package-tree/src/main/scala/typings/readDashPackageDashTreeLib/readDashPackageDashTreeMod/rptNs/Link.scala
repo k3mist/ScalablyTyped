@@ -11,3 +11,24 @@ trait Link extends Node {
   var target: Node
 }
 
+object Link {
+  @scala.inline
+  def apply(
+    children: js.Array[Node],
+    id: scala.Double,
+    isLink: readDashPackageDashTreeLib.readDashPackageDashTreeLibNumbers.`true`,
+    name: java.lang.String,
+    `package`: js.Any,
+    path: java.lang.String,
+    realpath: java.lang.String,
+    target: Node,
+    error: stdLib.Error = null,
+    parent: Node = null
+  ): Link = {
+    val __obj = js.Dynamic.literal(children = children, id = id, isLink = isLink, name = name, `package` = `package`, path = path, realpath = realpath, target = target)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Link]
+  }
+}
+

@@ -12,3 +12,17 @@ trait DescribeMetadataResult extends js.Object {
   var testRequired: scala.Boolean
 }
 
+object DescribeMetadataResult {
+  @scala.inline
+  def apply(
+    metadataObjects: js.Array[MetadataObject],
+    organizationNamespace: java.lang.String,
+    partialSaveAllowed: scala.Boolean,
+    testRequired: scala.Boolean
+  ): DescribeMetadataResult = {
+    val __obj = js.Dynamic.literal(metadataObjects = metadataObjects, organizationNamespace = organizationNamespace, partialSaveAllowed = partialSaveAllowed, testRequired = testRequired)
+  
+    __obj.asInstanceOf[DescribeMetadataResult]
+  }
+}
+

@@ -21,3 +21,18 @@ trait DataWorkspace
   var name: java.lang.String
 }
 
+object DataWorkspace {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): DataWorkspace = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[DataWorkspace]
+  }
+}
+

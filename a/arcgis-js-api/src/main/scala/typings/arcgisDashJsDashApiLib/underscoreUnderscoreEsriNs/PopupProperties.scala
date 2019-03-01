@@ -144,3 +144,60 @@ trait PopupProperties
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PopupProperties {
+  @scala.inline
+  def apply(
+    actions: CollectionProperties[ActionButton | ActionToggle] = null,
+    alignment: java.lang.String | js.Function = null,
+    autoCloseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    autoOpenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String | stdLib.HTMLElement = null,
+    content: java.lang.String | stdLib.HTMLElement | WidgetProperties = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    dockEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dockOptions: PopupDockOptions = null,
+    featureNavigationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    features: js.Array[GraphicProperties] = null,
+    goToOverride: GoToOverride = null,
+    highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    location: PointProperties = null,
+    promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
+    selectedFeatureIndex: scala.Int | scala.Double = null,
+    spinnerEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: PopupViewModelProperties = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PopupProperties = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled)
+    if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled)
+    if (!js.isUndefined(collapseEnabled)) __obj.updateDynamic("collapseEnabled")(collapseEnabled)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(dockEnabled)) __obj.updateDynamic("dockEnabled")(dockEnabled)
+    if (dockOptions != null) __obj.updateDynamic("dockOptions")(dockOptions)
+    if (!js.isUndefined(featureNavigationEnabled)) __obj.updateDynamic("featureNavigationEnabled")(featureNavigationEnabled)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (promises != null) __obj.updateDynamic("promises")(promises)
+    if (selectedFeatureIndex != null) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinnerEnabled)) __obj.updateDynamic("spinnerEnabled")(spinnerEnabled)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PopupProperties]
+  }
+}
+

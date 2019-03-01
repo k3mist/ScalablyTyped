@@ -31,3 +31,20 @@ trait Province extends js.Object {
   var short: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Province {
+  @scala.inline
+  def apply(
+    country: java.lang.String,
+    name: java.lang.String,
+    alt: js.Array[java.lang.String] = null,
+    region: java.lang.String = null,
+    short: java.lang.String = null
+  ): Province = {
+    val __obj = js.Dynamic.literal(country = country, name = name)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (short != null) __obj.updateDynamic("short")(short)
+    __obj.asInstanceOf[Province]
+  }
+}
+

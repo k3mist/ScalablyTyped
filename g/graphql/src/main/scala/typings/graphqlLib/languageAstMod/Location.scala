@@ -28,3 +28,18 @@ trait Location extends js.Object {
   val startToken: Token
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    endToken: Token,
+    source: graphqlLib.languageSourceMod.Source,
+    start: scala.Double,
+    startToken: Token
+  ): Location = {
+    val __obj = js.Dynamic.literal(end = end, endToken = endToken, source = source, start = start, startToken = startToken)
+  
+    __obj.asInstanceOf[Location]
+  }
+}
+

@@ -22,3 +22,18 @@ trait XDialogClosedListener
   def dialogClosed(aEvent: DialogClosedEvent): scala.Unit
 }
 
+object XDialogClosedListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dialogClosed: js.Function1[DialogClosedEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDialogClosedListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, dialogClosed = dialogClosed, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDialogClosedListener]
+  }
+}
+

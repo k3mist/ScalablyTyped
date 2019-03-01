@@ -34,3 +34,18 @@ trait Constraint extends js.Object {
   var value: js.Any
 }
 
+object Constraint {
+  @scala.inline
+  def apply(
+    comparator: java.lang.String,
+    field: java.lang.String,
+    monitor: java.lang.String,
+    value: js.Any,
+    negate: js.UndefOr[scala.Boolean] = js.undefined
+  ): Constraint = {
+    val __obj = js.Dynamic.literal(comparator = comparator, field = field, monitor = monitor, value = value)
+    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate)
+    __obj.asInstanceOf[Constraint]
+  }
+}
+

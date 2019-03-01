@@ -23,3 +23,17 @@ trait ASPxClientIndicatorPoint extends ASPxClientWebChartElement {
   var values: js.Array[js.Object]
 }
 
+object ASPxClientIndicatorPoint {
+  @scala.inline
+  def apply(
+    argument: js.Object,
+    chart: ASPxClientWebChart,
+    series: ASPxClientSeries,
+    values: js.Array[js.Object]
+  ): ASPxClientIndicatorPoint = {
+    val __obj = js.Dynamic.literal(argument = argument, chart = chart, series = series, values = values)
+  
+    __obj.asInstanceOf[ASPxClientIndicatorPoint]
+  }
+}
+

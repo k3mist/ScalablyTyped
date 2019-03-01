@@ -27,3 +27,19 @@ trait SceneServiceVersion
   var versionString: java.lang.String
 }
 
+object SceneServiceVersion {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    major: scala.Double,
+    minor: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    versionString: java.lang.String
+  ): SceneServiceVersion = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, major = major, minor = minor, propertyIsEnumerable = propertyIsEnumerable, versionString = versionString)
+  
+    __obj.asInstanceOf[SceneServiceVersion]
+  }
+}
+

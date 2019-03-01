@@ -11,3 +11,16 @@ trait RepositoryActivityMetrics extends js.Object {
   var repositoryId: java.lang.String
 }
 
+object RepositoryActivityMetrics {
+  @scala.inline
+  def apply(
+    codeChangesCount: scala.Double,
+    codeChangesTrend: js.Array[CodeChangeTrendItem],
+    repositoryId: java.lang.String
+  ): RepositoryActivityMetrics = {
+    val __obj = js.Dynamic.literal(codeChangesCount = codeChangesCount, codeChangesTrend = codeChangesTrend, repositoryId = repositoryId)
+  
+    __obj.asInstanceOf[RepositoryActivityMetrics]
+  }
+}
+

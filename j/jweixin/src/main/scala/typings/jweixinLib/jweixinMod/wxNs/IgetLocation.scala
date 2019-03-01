@@ -12,3 +12,18 @@ trait IgetLocation extends BaseParams {
   def success_MIgetLocation(res: jweixinLib.Anon_Accuracy): scala.Unit
 }
 
+object IgetLocation {
+  @scala.inline
+  def apply(
+    success: js.Function1[jweixinLib.Anon_Accuracy, scala.Unit],
+    `type`: jweixinLib.jweixinLibStrings.wgs84 | jweixinLib.jweixinLibStrings.gcj02,
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IgetLocation = {
+    val __obj = js.Dynamic.literal(success = success, `type` = `type`.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IgetLocation]
+  }
+}
+

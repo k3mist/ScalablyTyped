@@ -11,3 +11,12 @@ trait TargetTypeEnum extends js.Object {
   var Variable: TargetType
 }
 
+object TargetTypeEnum {
+  @scala.inline
+  def apply(ClassProperty: TargetType, ConstructorArgument: TargetType, Variable: TargetType): TargetTypeEnum = {
+    val __obj = js.Dynamic.literal(ClassProperty = ClassProperty, ConstructorArgument = ConstructorArgument, Variable = Variable)
+  
+    __obj.asInstanceOf[TargetTypeEnum]
+  }
+}
+

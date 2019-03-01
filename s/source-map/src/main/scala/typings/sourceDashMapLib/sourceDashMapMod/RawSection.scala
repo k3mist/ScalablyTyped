@@ -10,3 +10,12 @@ trait RawSection extends js.Object {
   var offset: Position
 }
 
+object RawSection {
+  @scala.inline
+  def apply(map: RawSourceMap, offset: Position): RawSection = {
+    val __obj = js.Dynamic.literal(map = map, offset = offset)
+  
+    __obj.asInstanceOf[RawSection]
+  }
+}
+

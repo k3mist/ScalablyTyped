@@ -22,3 +22,19 @@ trait XContentEnumerationAccess
   def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XContentEnumerationAccess {
+  @scala.inline
+  def apply(
+    AvailableServiceNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    createContentEnumeration: js.Function1[java.lang.String, XEnumeration],
+    getAvailableServiceNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentEnumerationAccess = {
+    val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames, acquire = acquire, createContentEnumeration = createContentEnumeration, getAvailableServiceNames = getAvailableServiceNames, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContentEnumerationAccess]
+  }
+}
+

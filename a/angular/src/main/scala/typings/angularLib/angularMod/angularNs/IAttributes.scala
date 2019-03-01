@@ -66,3 +66,30 @@ trait IAttributes
   def $updateClass(newClasses: java.lang.String, oldClasses: java.lang.String): scala.Unit
 }
 
+object IAttributes {
+  @scala.inline
+  def apply(
+    $addClass: js.Function1[java.lang.String, scala.Unit],
+    $attr: js.Object,
+    $normalize: js.Function1[java.lang.String, java.lang.String],
+    $observe: js.Function2[
+      java.lang.String, 
+      js.Function1[/* value */ js.UndefOr[js.Any], _], 
+      angularLib.angularMod.Global.Function
+    ],
+    $removeClass: js.Function1[java.lang.String, scala.Unit],
+    $set: js.Function2[java.lang.String, js.Any, scala.Unit],
+    $updateClass: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    StringDictionary: /**
+    * this is necessary to be able to access the scoped attributes. it's not very elegant
+    * because you have to use attrs['foo'] instead of attrs.foo but I don't know of a better way
+    * this should really be limited to return string but it creates this problem: http://stackoverflow.com/q/17201854/165656
+    */
+  /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): IAttributes = {
+    val __obj = js.Dynamic.literal($addClass = $addClass, $attr = $attr, $normalize = $normalize, $observe = $observe, $removeClass = $removeClass, $set = $set, $updateClass = $updateClass)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IAttributes]
+  }
+}
+

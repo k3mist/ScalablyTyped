@@ -27,3 +27,32 @@ trait ManagementResource extends js.Object {
   var webpropertyUserLinks: WebpropertyUserLinksResource
 }
 
+object ManagementResource {
+  @scala.inline
+  def apply(
+    accountSummaries: AccountSummariesResource,
+    accountUserLinks: AccountUserLinksResource,
+    accounts: AccountsResource,
+    customDataSources: CustomDataSourcesResource,
+    customDimensions: CustomDimensionsResource,
+    customMetrics: CustomMetricsResource,
+    experiments: ExperimentsResource,
+    filters: FiltersResource,
+    goals: GoalsResource,
+    profileFilterLinks: ProfileFilterLinksResource,
+    profileUserLinks: ProfileUserLinksResource,
+    profiles: ProfilesResource,
+    remarketingAudience: RemarketingAudienceResource,
+    segments: SegmentsResource,
+    unsampledReports: UnsampledReportsResource,
+    uploads: UploadsResource,
+    webPropertyAdWordsLinks: WebPropertyAdWordsLinksResource,
+    webproperties: WebpropertiesResource,
+    webpropertyUserLinks: WebpropertyUserLinksResource
+  ): ManagementResource = {
+    val __obj = js.Dynamic.literal(accountSummaries = accountSummaries, accountUserLinks = accountUserLinks, accounts = accounts, customDataSources = customDataSources, customDimensions = customDimensions, customMetrics = customMetrics, experiments = experiments, filters = filters, goals = goals, profileFilterLinks = profileFilterLinks, profileUserLinks = profileUserLinks, profiles = profiles, remarketingAudience = remarketingAudience, segments = segments, unsampledReports = unsampledReports, uploads = uploads, webPropertyAdWordsLinks = webPropertyAdWordsLinks, webproperties = webproperties, webpropertyUserLinks = webpropertyUserLinks)
+  
+    __obj.asInstanceOf[ManagementResource]
+  }
+}
+

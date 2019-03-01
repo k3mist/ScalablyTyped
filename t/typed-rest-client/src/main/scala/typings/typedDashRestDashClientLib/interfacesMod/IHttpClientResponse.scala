@@ -10,3 +10,12 @@ trait IHttpClientResponse extends js.Object {
   def readBody(): js.Promise[java.lang.String]
 }
 
+object IHttpClientResponse {
+  @scala.inline
+  def apply(message: nodeLib.httpMod.IncomingMessage, readBody: js.Function0[js.Promise[java.lang.String]]): IHttpClientResponse = {
+    val __obj = js.Dynamic.literal(message = message, readBody = readBody)
+  
+    __obj.asInstanceOf[IHttpClientResponse]
+  }
+}
+

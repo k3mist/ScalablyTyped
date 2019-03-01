@@ -11,3 +11,12 @@ trait Anon_DataValue extends js.Object {
   var normalizedLocValue: java.lang.String
 }
 
+object Anon_DataValue {
+  @scala.inline
+  def apply(dataValue: js.Any, isValid: scala.Boolean, normalizedLocValue: java.lang.String): Anon_DataValue = {
+    val __obj = js.Dynamic.literal(dataValue = dataValue, isValid = isValid, normalizedLocValue = normalizedLocValue)
+  
+    __obj.asInstanceOf[Anon_DataValue]
+  }
+}
+

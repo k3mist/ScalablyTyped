@@ -13,3 +13,18 @@ trait GlobalRole extends js.Object {
   var VOLUNTEER: scala.Double
 }
 
+object GlobalRole {
+  @scala.inline
+  def apply(
+    ADMIN: scala.Double,
+    AMBASSADOR: scala.Double,
+    LEADER: scala.Double,
+    NONE: scala.Double,
+    VOLUNTEER: scala.Double
+  ): GlobalRole = {
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN, AMBASSADOR = AMBASSADOR, LEADER = LEADER, NONE = NONE, VOLUNTEER = VOLUNTEER)
+  
+    __obj.asInstanceOf[GlobalRole]
+  }
+}
+

@@ -13,3 +13,12 @@ trait SettingsCallback extends js.Object {
   var options: RemovalOptions
 }
 
+object SettingsCallback {
+  @scala.inline
+  def apply(dataRemovalPermitted: DataTypeSet, dataToRemove: DataTypeSet, options: RemovalOptions): SettingsCallback = {
+    val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted, dataToRemove = dataToRemove, options = options)
+  
+    __obj.asInstanceOf[SettingsCallback]
+  }
+}
+

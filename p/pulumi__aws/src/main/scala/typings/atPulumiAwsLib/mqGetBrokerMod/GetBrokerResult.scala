@@ -28,3 +28,30 @@ trait GetBrokerResult extends js.Object {
   val users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername]
 }
 
+object GetBrokerResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    autoMinorVersionUpgrade: scala.Boolean,
+    brokerId: java.lang.String,
+    brokerName: java.lang.String,
+    configuration: atPulumiAwsLib.Anon_IdRevision,
+    deploymentMode: java.lang.String,
+    engineType: java.lang.String,
+    engineVersion: java.lang.String,
+    hostInstanceType: java.lang.String,
+    id: java.lang.String,
+    instances: js.Array[atPulumiAwsLib.Anon_ConsoleUrl],
+    maintenanceWindowStartTime: atPulumiAwsLib.Anon_DayOfWeek,
+    publiclyAccessible: scala.Boolean,
+    securityGroups: js.Array[java.lang.String],
+    subnetIds: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername]
+  ): GetBrokerResult = {
+    val __obj = js.Dynamic.literal(arn = arn, autoMinorVersionUpgrade = autoMinorVersionUpgrade, brokerId = brokerId, brokerName = brokerName, configuration = configuration, deploymentMode = deploymentMode, engineType = engineType, engineVersion = engineVersion, hostInstanceType = hostInstanceType, id = id, instances = instances, maintenanceWindowStartTime = maintenanceWindowStartTime, publiclyAccessible = publiclyAccessible, securityGroups = securityGroups, subnetIds = subnetIds, tags = tags, users = users)
+  
+    __obj.asInstanceOf[GetBrokerResult]
+  }
+}
+

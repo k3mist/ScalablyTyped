@@ -10,3 +10,12 @@ trait Action extends js.Object {
   var instructions: java.lang.String
 }
 
+object Action {
+  @scala.inline
+  def apply(button: Button, instructions: java.lang.String): Action = {
+    val __obj = js.Dynamic.literal(button = button, instructions = instructions)
+  
+    __obj.asInstanceOf[Action]
+  }
+}
+

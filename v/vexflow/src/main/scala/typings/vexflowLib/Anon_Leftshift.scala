@@ -11,3 +11,12 @@ trait Anon_Leftshift extends js.Object {
   var text_line: scala.Double
 }
 
+object Anon_Leftshift {
+  @scala.inline
+  def apply(left_shift: scala.Double, right_shift: scala.Double, text_line: scala.Double): Anon_Leftshift = {
+    val __obj = js.Dynamic.literal(left_shift = left_shift, right_shift = right_shift, text_line = text_line)
+  
+    __obj.asInstanceOf[Anon_Leftshift]
+  }
+}
+

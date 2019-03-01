@@ -21,3 +21,18 @@ trait SceneViewScreenshot
   var dataUrl: java.lang.String
 }
 
+object SceneViewScreenshot {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    data: stdLib.ImageData,
+    dataUrl: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): SceneViewScreenshot = {
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, dataUrl = dataUrl, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[SceneViewScreenshot]
+  }
+}
+

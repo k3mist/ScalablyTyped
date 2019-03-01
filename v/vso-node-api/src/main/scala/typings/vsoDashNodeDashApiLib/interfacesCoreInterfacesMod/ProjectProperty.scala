@@ -10,3 +10,12 @@ trait ProjectProperty extends js.Object {
   var value: js.Any
 }
 
+object ProjectProperty {
+  @scala.inline
+  def apply(name: java.lang.String, value: js.Any): ProjectProperty = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[ProjectProperty]
+  }
+}
+

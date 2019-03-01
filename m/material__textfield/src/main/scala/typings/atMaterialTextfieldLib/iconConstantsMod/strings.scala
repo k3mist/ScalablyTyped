@@ -11,3 +11,15 @@ trait strings
   var ICON_ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.button
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    ICON_EVENT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`MDCTextField:icon`,
+    ICON_ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.button
+  ): strings = {
+    val __obj = js.Dynamic.literal(ICON_EVENT = ICON_EVENT, ICON_ROLE = ICON_ROLE)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

@@ -251,3 +251,54 @@ trait XRegistryKey
   def setStringValue(value: java.lang.String): scala.Unit
 }
 
+object XRegistryKey {
+  @scala.inline
+  def apply(
+    AsciiListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    AsciiValue: java.lang.String,
+    BinaryValue: activexDashInteropLib.SafeArray[scala.Double],
+    KeyName: java.lang.String,
+    KeyNames: activexDashInteropLib.SafeArray[java.lang.String],
+    LongListValue: activexDashInteropLib.SafeArray[scala.Double],
+    LongValue: scala.Double,
+    StringListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    StringValue: java.lang.String,
+    ValueType: RegistryValueType,
+    acquire: js.Function0[scala.Unit],
+    closeKey: js.Function0[scala.Unit],
+    createKey: js.Function1[java.lang.String, XRegistryKey],
+    createLink: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    deleteKey: js.Function1[java.lang.String, scala.Unit],
+    deleteLink: js.Function1[java.lang.String, scala.Unit],
+    getAsciiListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getAsciiValue: js.Function0[java.lang.String],
+    getBinaryValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getKeyNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getKeyType: js.Function1[java.lang.String, RegistryKeyType],
+    getLinkTarget: js.Function1[java.lang.String, java.lang.String],
+    getLongListValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getLongValue: js.Function0[scala.Double],
+    getResolvedName: js.Function1[java.lang.String, java.lang.String],
+    getStringListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getStringValue: js.Function0[java.lang.String],
+    getValueType: js.Function0[RegistryValueType],
+    isReadOnly: js.Function0[scala.Boolean],
+    isValid: js.Function0[scala.Boolean],
+    openKey: js.Function1[java.lang.String, XRegistryKey],
+    openKeys: js.Function0[activexDashInteropLib.SafeArray[XRegistryKey]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAsciiListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setAsciiValue: js.Function1[java.lang.String, scala.Unit],
+    setBinaryValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setLongListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setLongValue: js.Function1[scala.Double, scala.Unit],
+    setStringListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setStringValue: js.Function1[java.lang.String, scala.Unit]
+  ): XRegistryKey = {
+    val __obj = js.Dynamic.literal(AsciiListValue = AsciiListValue, AsciiValue = AsciiValue, BinaryValue = BinaryValue, KeyName = KeyName, KeyNames = KeyNames, LongListValue = LongListValue, LongValue = LongValue, StringListValue = StringListValue, StringValue = StringValue, ValueType = ValueType, acquire = acquire, closeKey = closeKey, createKey = createKey, createLink = createLink, deleteKey = deleteKey, deleteLink = deleteLink, getAsciiListValue = getAsciiListValue, getAsciiValue = getAsciiValue, getBinaryValue = getBinaryValue, getKeyNames = getKeyNames, getKeyType = getKeyType, getLinkTarget = getLinkTarget, getLongListValue = getLongListValue, getLongValue = getLongValue, getResolvedName = getResolvedName, getStringListValue = getStringListValue, getStringValue = getStringValue, getValueType = getValueType, isReadOnly = isReadOnly, isValid = isValid, openKey = openKey, openKeys = openKeys, queryInterface = queryInterface, release = release, setAsciiListValue = setAsciiListValue, setAsciiValue = setAsciiValue, setBinaryValue = setBinaryValue, setLongListValue = setLongListValue, setLongValue = setLongValue, setStringListValue = setStringListValue, setStringValue = setStringValue)
+  
+    __obj.asInstanceOf[XRegistryKey]
+  }
+}
+

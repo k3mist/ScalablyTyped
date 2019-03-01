@@ -66,3 +66,24 @@ trait ColorSchemeForPoint
   var theme: java.lang.String
 }
 
+object ColorSchemeForPoint {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    colorsForClassBreaks: js.Array[ColorSchemeForPointColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: ColorSchemeForPointOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    size: scala.Double,
+    theme: java.lang.String
+  ): ColorSchemeForPoint = {
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size, theme = theme)
+  
+    __obj.asInstanceOf[ColorSchemeForPoint]
+  }
+}
+

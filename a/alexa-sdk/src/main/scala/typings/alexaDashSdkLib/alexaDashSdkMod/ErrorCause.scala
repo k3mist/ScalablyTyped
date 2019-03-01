@@ -9,3 +9,12 @@ trait ErrorCause extends js.Object {
   var requestId: java.lang.String
 }
 
+object ErrorCause {
+  @scala.inline
+  def apply(requestId: java.lang.String): ErrorCause = {
+    val __obj = js.Dynamic.literal(requestId = requestId)
+  
+    __obj.asInstanceOf[ErrorCause]
+  }
+}
+

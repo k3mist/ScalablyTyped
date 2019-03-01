@@ -32,3 +32,20 @@ trait PortalFolderProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortalFolderProperties {
+  @scala.inline
+  def apply(
+    created: DateProperties = null,
+    id: java.lang.String = null,
+    portal: PortalProperties = null,
+    title: java.lang.String = null
+  ): PortalFolderProperties = {
+    val __obj = js.Dynamic.literal()
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PortalFolderProperties]
+  }
+}
+

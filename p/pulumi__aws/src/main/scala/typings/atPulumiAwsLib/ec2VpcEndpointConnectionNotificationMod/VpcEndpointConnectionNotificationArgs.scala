@@ -24,3 +24,18 @@ trait VpcEndpointConnectionNotificationArgs extends js.Object {
   val vpcEndpointServiceId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcEndpointConnectionNotificationArgs {
+  @scala.inline
+  def apply(
+    connectionEvents: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    connectionNotificationArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcEndpointServiceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): VpcEndpointConnectionNotificationArgs = {
+    val __obj = js.Dynamic.literal(connectionEvents = connectionEvents.asInstanceOf[js.Any], connectionNotificationArn = connectionNotificationArn.asInstanceOf[js.Any])
+    if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
+    if (vpcEndpointServiceId != null) __obj.updateDynamic("vpcEndpointServiceId")(vpcEndpointServiceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointConnectionNotificationArgs]
+  }
+}
+

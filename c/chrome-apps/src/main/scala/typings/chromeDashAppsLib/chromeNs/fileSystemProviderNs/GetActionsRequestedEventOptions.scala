@@ -11,3 +11,16 @@ trait GetActionsRequestedEventOptions
   var entryPaths: js.Array[java.lang.String]
 }
 
+object GetActionsRequestedEventOptions {
+  @scala.inline
+  def apply(
+    entryPaths: js.Array[java.lang.String],
+    fileSystemId: java.lang.String,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): GetActionsRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(entryPaths = entryPaths, fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[GetActionsRequestedEventOptions]
+  }
+}
+

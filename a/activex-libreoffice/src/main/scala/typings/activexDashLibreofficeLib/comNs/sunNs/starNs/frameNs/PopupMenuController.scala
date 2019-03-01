@@ -20,3 +20,34 @@ trait PopupMenuController
      with XDispatchProvider
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 
+object PopupMenuController {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setPopupMenu: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XPopupMenu, scala.Unit],
+    statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
+    updatePopupMenu: js.Function0[scala.Unit]
+  ): PopupMenuController = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, disposing = disposing, initialize = initialize, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setPopupMenu = setPopupMenu, statusChanged = statusChanged, updatePopupMenu = updatePopupMenu)
+  
+    __obj.asInstanceOf[PopupMenuController]
+  }
+}
+

@@ -21,3 +21,18 @@ trait ASPxClientNavBarGroupClickEventArgs extends ASPxClientNavBarGroupCancelEve
   var htmlEvent: js.Object
 }
 
+object ASPxClientNavBarGroupClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    group: ASPxClientNavBarGroup,
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    processOnServer: scala.Boolean
+  ): ASPxClientNavBarGroupClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientNavBarGroupClickEventArgs]
+  }
+}
+

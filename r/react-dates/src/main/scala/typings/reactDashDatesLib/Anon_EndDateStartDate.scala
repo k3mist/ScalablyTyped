@@ -10,3 +10,15 @@ trait Anon_EndDateStartDate extends js.Object {
   var startDate: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj
 }
 
+object Anon_EndDateStartDate {
+  @scala.inline
+  def apply(
+    endDate: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj,
+    startDate: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj
+  ): Anon_EndDateStartDate = {
+    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
+  
+    __obj.asInstanceOf[Anon_EndDateStartDate]
+  }
+}
+

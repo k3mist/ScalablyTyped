@@ -14,3 +14,19 @@ trait OAuth2Server extends js.Object {
   var subscribeTo: SubscribeTo
 }
 
+object OAuth2Server {
+  @scala.inline
+  def apply(
+    callMethod: CallMethod,
+    collections: Collections,
+    methodNames: MethodNames,
+    oauthserver: js.Any,
+    pubSubNames: PubSubNames,
+    subscribeTo: SubscribeTo
+  ): OAuth2Server = {
+    val __obj = js.Dynamic.literal(callMethod = callMethod, collections = collections, methodNames = methodNames, oauthserver = oauthserver, pubSubNames = pubSubNames, subscribeTo = subscribeTo)
+  
+    __obj.asInstanceOf[OAuth2Server]
+  }
+}
+

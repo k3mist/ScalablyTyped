@@ -10,3 +10,12 @@ trait MatchObj extends js.Object {
   var `match`: java.lang.String
 }
 
+object MatchObj {
+  @scala.inline
+  def apply(groups: js.Array[Maybe[java.lang.String]], `match`: java.lang.String): MatchObj = {
+    val __obj = js.Dynamic.literal(groups = groups, `match` = `match`)
+  
+    __obj.asInstanceOf[MatchObj]
+  }
+}
+

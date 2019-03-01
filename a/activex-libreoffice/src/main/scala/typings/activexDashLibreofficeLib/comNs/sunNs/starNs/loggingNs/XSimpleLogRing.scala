@@ -29,3 +29,16 @@ trait XSimpleLogRing extends js.Object {
   def logString(aMessage: java.lang.String): scala.Unit
 }
 
+object XSimpleLogRing {
+  @scala.inline
+  def apply(
+    CollectedLog: activexDashInteropLib.SafeArray[java.lang.String],
+    getCollectedLog: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    logString: js.Function1[java.lang.String, scala.Unit]
+  ): XSimpleLogRing = {
+    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, getCollectedLog = getCollectedLog, logString = logString)
+  
+    __obj.asInstanceOf[XSimpleLogRing]
+  }
+}
+

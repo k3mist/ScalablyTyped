@@ -10,3 +10,15 @@ trait Anon_Hint extends js.Object {
   var signature: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature
 }
 
+object Anon_Hint {
+  @scala.inline
+  def apply(
+    hint: stellarDashBaseLib.stellarDashBaseMod.xdrNs.SignatureHint,
+    signature: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature
+  ): Anon_Hint = {
+    val __obj = js.Dynamic.literal(hint = hint, signature = signature)
+  
+    __obj.asInstanceOf[Anon_Hint]
+  }
+}
+

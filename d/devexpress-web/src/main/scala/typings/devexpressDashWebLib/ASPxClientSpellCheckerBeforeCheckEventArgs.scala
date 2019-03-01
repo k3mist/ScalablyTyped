@@ -16,3 +16,12 @@ trait ASPxClientSpellCheckerBeforeCheckEventArgs extends ASPxClientCancelEventAr
   var controlId: java.lang.String
 }
 
+object ASPxClientSpellCheckerBeforeCheckEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, controlId: java.lang.String): ASPxClientSpellCheckerBeforeCheckEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, controlId = controlId)
+  
+    __obj.asInstanceOf[ASPxClientSpellCheckerBeforeCheckEventArgs]
+  }
+}
+

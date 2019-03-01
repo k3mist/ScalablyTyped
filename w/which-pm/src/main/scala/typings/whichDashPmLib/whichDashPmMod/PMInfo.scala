@@ -10,3 +10,12 @@ trait PMInfo extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PMInfo {
+  @scala.inline
+  def apply(name: java.lang.String, version: java.lang.String = null): PMInfo = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PMInfo]
+  }
+}
+

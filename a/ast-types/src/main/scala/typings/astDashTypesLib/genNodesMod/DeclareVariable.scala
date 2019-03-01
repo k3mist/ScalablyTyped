@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DeclareVariable
 }
 
+object DeclareVariable {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.DeclareVariable
+  ): DeclareVariable = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+  
+    __obj.asInstanceOf[DeclareVariable]
+  }
+}
+

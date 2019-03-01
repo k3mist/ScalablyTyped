@@ -9,3 +9,12 @@ trait Anon_SavedFilePath extends js.Object {
   var savedFilePath: java.lang.String
 }
 
+object Anon_SavedFilePath {
+  @scala.inline
+  def apply(savedFilePath: java.lang.String): Anon_SavedFilePath = {
+    val __obj = js.Dynamic.literal(savedFilePath = savedFilePath)
+  
+    __obj.asInstanceOf[Anon_SavedFilePath]
+  }
+}
+

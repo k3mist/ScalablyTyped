@@ -14,3 +14,25 @@ trait EventsResource extends js.Object {
   def record(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[EventUpdateResponse]
 }
 
+object EventsResource {
+  @scala.inline
+  def apply(
+    listByPlayer: js.Function1[
+      gapiDotClientDotGamesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerEventListResponse]
+    ],
+    listDefinitions: js.Function1[
+      gapiDotClientDotGamesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventDefinitionListResponse]
+    ],
+    record: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventUpdateResponse]
+    ]
+  ): EventsResource = {
+    val __obj = js.Dynamic.literal(listByPlayer = listByPlayer, listDefinitions = listDefinitions, record = record)
+  
+    __obj.asInstanceOf[EventsResource]
+  }
+}
+

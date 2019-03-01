@@ -18,3 +18,20 @@ trait HTTPInjectResponse extends js.Object {
   var trailers: js.Object
 }
 
+object HTTPInjectResponse {
+  @scala.inline
+  def apply(
+    headers: js.Object,
+    payload: java.lang.String,
+    raw: fastifyLib.Anon_Req,
+    rawPayload: nodeLib.Buffer,
+    statusCode: scala.Double,
+    statusMessage: java.lang.String,
+    trailers: js.Object
+  ): HTTPInjectResponse = {
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, raw = raw, rawPayload = rawPayload, statusCode = statusCode, statusMessage = statusMessage, trailers = trailers)
+  
+    __obj.asInstanceOf[HTTPInjectResponse]
+  }
+}
+

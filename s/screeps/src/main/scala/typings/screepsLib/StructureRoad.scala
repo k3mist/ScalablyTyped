@@ -18,3 +18,23 @@ trait StructureRoad
   var ticksToDecay: scala.Double
 }
 
+object StructureRoad {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_ROAD,
+    ticksToDecay: scala.Double
+  ): StructureRoad = {
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
+  
+    __obj.asInstanceOf[StructureRoad]
+  }
+}
+

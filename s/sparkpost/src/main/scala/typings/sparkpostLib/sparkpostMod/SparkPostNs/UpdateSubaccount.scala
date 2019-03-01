@@ -14,3 +14,12 @@ trait UpdateSubaccount extends js.Object {
   var status: java.lang.String
 }
 
+object UpdateSubaccount {
+  @scala.inline
+  def apply(name: java.lang.String, status: java.lang.String, ip_pool: java.lang.String = null): UpdateSubaccount = {
+    val __obj = js.Dynamic.literal(name = name, status = status)
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
+    __obj.asInstanceOf[UpdateSubaccount]
+  }
+}
+

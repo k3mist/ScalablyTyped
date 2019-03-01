@@ -26,3 +26,17 @@ trait ASPxClientGridViewBatchEditChangesSavingEventArgs extends ASPxClientCancel
   var updatedValues: js.Object
 }
 
+object ASPxClientGridViewBatchEditChangesSavingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    deletedValues: js.Object,
+    insertedValues: js.Object,
+    updatedValues: js.Object
+  ): ASPxClientGridViewBatchEditChangesSavingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, updatedValues = updatedValues)
+  
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditChangesSavingEventArgs]
+  }
+}
+

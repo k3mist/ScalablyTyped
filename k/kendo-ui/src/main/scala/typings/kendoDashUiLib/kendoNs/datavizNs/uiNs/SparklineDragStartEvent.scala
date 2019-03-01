@@ -10,3 +10,19 @@ trait SparklineDragStartEvent extends SparklineEvent {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object SparklineDragStartEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Sparkline,
+    axisRanges: js.Any = null,
+    originalEvent: js.Any = null
+  ): SparklineDragStartEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[SparklineDragStartEvent]
+  }
+}
+

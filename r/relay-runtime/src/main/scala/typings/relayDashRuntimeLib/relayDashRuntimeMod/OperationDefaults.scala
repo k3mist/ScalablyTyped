@@ -10,3 +10,12 @@ trait OperationDefaults extends js.Object {
   var variables: Variables
 }
 
+object OperationDefaults {
+  @scala.inline
+  def apply(response: Variables, variables: Variables): OperationDefaults = {
+    val __obj = js.Dynamic.literal(response = response, variables = variables)
+  
+    __obj.asInstanceOf[OperationDefaults]
+  }
+}
+

@@ -15,3 +15,17 @@ trait ConsoleMessage extends js.Object {
   def `type`(): ConsoleMessageType
 }
 
+object ConsoleMessage {
+  @scala.inline
+  def apply(
+    args: js.Function0[js.Array[JSHandle]],
+    location: js.Function0[ConsoleMessageLocation],
+    text: js.Function0[java.lang.String],
+    `type`: js.Function0[ConsoleMessageType]
+  ): ConsoleMessage = {
+    val __obj = js.Dynamic.literal(args = args, location = location, text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[ConsoleMessage]
+  }
+}
+

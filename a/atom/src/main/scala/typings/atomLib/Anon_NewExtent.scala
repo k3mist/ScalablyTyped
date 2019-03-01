@@ -16,3 +16,17 @@ trait Anon_NewExtent extends js.Object {
   var start: atomLib.atomMod.Point
 }
 
+object Anon_NewExtent {
+  @scala.inline
+  def apply(
+    newExtent: atomLib.atomMod.Point,
+    newText: java.lang.String,
+    oldExtent: atomLib.atomMod.Point,
+    start: atomLib.atomMod.Point
+  ): Anon_NewExtent = {
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newText = newText, oldExtent = oldExtent, start = start)
+  
+    __obj.asInstanceOf[Anon_NewExtent]
+  }
+}
+

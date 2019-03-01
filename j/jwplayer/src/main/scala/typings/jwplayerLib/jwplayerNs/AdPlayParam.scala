@@ -12,3 +12,17 @@ trait AdPlayParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdPlayParam {
+  @scala.inline
+  def apply(
+    creativetype: java.lang.String,
+    newstate: java.lang.String,
+    oldstate: java.lang.String,
+    tag: java.lang.String
+  ): AdPlayParam = {
+    val __obj = js.Dynamic.literal(creativetype = creativetype, newstate = newstate, oldstate = oldstate, tag = tag)
+  
+    __obj.asInstanceOf[AdPlayParam]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var encoding: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(encoding: java.lang.String): Options = {
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

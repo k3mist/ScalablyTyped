@@ -9,3 +9,12 @@ trait GoBackAction extends RouterActions {
   var `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_GO_BACK
 }
 
+object GoBackAction {
+  @scala.inline
+  def apply(`type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_GO_BACK): GoBackAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[GoBackAction]
+  }
+}
+

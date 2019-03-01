@@ -44,3 +44,24 @@ trait FeatureSetProperties extends js.Object {
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 
+object FeatureSetProperties {
+  @scala.inline
+  def apply(
+    displayFieldName: java.lang.String = null,
+    exceededTransferLimit: js.UndefOr[scala.Boolean] = js.undefined,
+    features: js.Array[GraphicProperties] = null,
+    fields: js.Array[FieldProperties] = null,
+    geometryType: java.lang.String = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): FeatureSetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
+    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[FeatureSetProperties]
+  }
+}
+

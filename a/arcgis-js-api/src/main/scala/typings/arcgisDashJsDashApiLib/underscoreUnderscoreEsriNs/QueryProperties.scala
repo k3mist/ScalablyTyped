@@ -262,3 +262,80 @@ trait QueryProperties extends js.Object {
   var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryProperties {
+  @scala.inline
+  def apply(
+    datumTransformation: scala.Int | scala.Double = null,
+    distance: scala.Int | scala.Double = null,
+    gdbVersion: java.lang.String = null,
+    geometry: GeometryProperties = null,
+    geometryPrecision: scala.Int | scala.Double = null,
+    groupByFieldsForStatistics: js.Array[java.lang.String] = null,
+    having: java.lang.String = null,
+    historicMoment: DateProperties = null,
+    maxAllowableOffset: scala.Int | scala.Double = null,
+    maxRecordCountFactor: scala.Int | scala.Double = null,
+    multipatchOption: java.lang.String = null,
+    num: scala.Int | scala.Double = null,
+    objectIds: js.Array[scala.Double] = null,
+    orderByFields: js.Array[java.lang.String] = null,
+    outFields: js.Array[java.lang.String] = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    outStatistics: js.Array[StatisticDefinitionProperties] = null,
+    parameterValues: js.Array[QueryParameterValues] = null,
+    pixelSize: SymbolProperties = null,
+    quantizationParameters: QueryQuantizationParameters = null,
+    rangeValues: js.Array[QueryRangeValues] = null,
+    relationParameter: java.lang.String = null,
+    returnCentroid: js.UndefOr[scala.Boolean] = js.undefined,
+    returnDistinctValues: js.UndefOr[scala.Boolean] = js.undefined,
+    returnExceededLimitFeatures: js.UndefOr[scala.Boolean] = js.undefined,
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    returnM: js.UndefOr[scala.Boolean] = js.undefined,
+    returnZ: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialRelationship: java.lang.String = null,
+    sqlFormat: java.lang.String = null,
+    start: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    units: java.lang.String = null,
+    where: java.lang.String = null
+  ): QueryProperties = {
+    val __obj = js.Dynamic.literal()
+    if (datumTransformation != null) __obj.updateDynamic("datumTransformation")(datumTransformation.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (groupByFieldsForStatistics != null) __obj.updateDynamic("groupByFieldsForStatistics")(groupByFieldsForStatistics)
+    if (having != null) __obj.updateDynamic("having")(having)
+    if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
+    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (maxRecordCountFactor != null) __obj.updateDynamic("maxRecordCountFactor")(maxRecordCountFactor.asInstanceOf[js.Any])
+    if (multipatchOption != null) __obj.updateDynamic("multipatchOption")(multipatchOption)
+    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (outStatistics != null) __obj.updateDynamic("outStatistics")(outStatistics)
+    if (parameterValues != null) __obj.updateDynamic("parameterValues")(parameterValues)
+    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
+    if (quantizationParameters != null) __obj.updateDynamic("quantizationParameters")(quantizationParameters)
+    if (rangeValues != null) __obj.updateDynamic("rangeValues")(rangeValues)
+    if (relationParameter != null) __obj.updateDynamic("relationParameter")(relationParameter)
+    if (!js.isUndefined(returnCentroid)) __obj.updateDynamic("returnCentroid")(returnCentroid)
+    if (!js.isUndefined(returnDistinctValues)) __obj.updateDynamic("returnDistinctValues")(returnDistinctValues)
+    if (!js.isUndefined(returnExceededLimitFeatures)) __obj.updateDynamic("returnExceededLimitFeatures")(returnExceededLimitFeatures)
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM)
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
+    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
+    if (sqlFormat != null) __obj.updateDynamic("sqlFormat")(sqlFormat)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (units != null) __obj.updateDynamic("units")(units)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[QueryProperties]
+  }
+}
+

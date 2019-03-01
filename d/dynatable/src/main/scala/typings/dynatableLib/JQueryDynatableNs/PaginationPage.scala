@@ -22,3 +22,16 @@ trait PaginationPage extends js.Object {
   def set(page: scala.Double): scala.Unit
 }
 
+object PaginationPage {
+  @scala.inline
+  def apply(
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean],
+    set: js.Function1[scala.Double, scala.Unit]
+  ): PaginationPage = {
+    val __obj = js.Dynamic.literal(init = init, initOnLoad = initOnLoad, set = set)
+  
+    __obj.asInstanceOf[PaginationPage]
+  }
+}
+

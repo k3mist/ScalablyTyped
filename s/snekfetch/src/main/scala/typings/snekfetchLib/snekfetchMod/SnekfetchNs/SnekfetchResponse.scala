@@ -15,3 +15,20 @@ trait SnekfetchResponse extends js.Object {
   var statusText: java.lang.String
 }
 
+object SnekfetchResponse {
+  @scala.inline
+  def apply(
+    body: java.lang.String | js.Object | nodeLib.Buffer,
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any],
+    ok: scala.Boolean,
+    raw: nodeLib.Buffer,
+    request: nodeLib.httpMod.ClientRequest,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): SnekfetchResponse = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, ok = ok, raw = raw, request = request, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[SnekfetchResponse]
+  }
+}
+

@@ -21,3 +21,26 @@ trait DayTableInterface extends js.Object {
   def updateDayTable(): js.Any
 }
 
+object DayTableInterface {
+  @scala.inline
+  def apply(
+    bookendCells: js.Function1[js.Any, js.Any],
+    colCnt: js.Any,
+    dayDates: js.Any,
+    daysPerRow: js.Any,
+    getCellDate: js.Function2[js.Any, js.Any, js.Any],
+    getCellRange: js.Function2[js.Any, js.Any, js.Any],
+    renderBgTrHtml: js.Function1[js.Any, js.Any],
+    renderHeadHtml: js.Function0[js.Any],
+    renderIntroHtml: js.Function0[js.Any],
+    rowCnt: js.Any,
+    sliceRangeByDay: js.Function1[js.Any, js.Any],
+    sliceRangeByRow: js.Function1[js.Any, js.Any],
+    updateDayTable: js.Function0[js.Any]
+  ): DayTableInterface = {
+    val __obj = js.Dynamic.literal(bookendCells = bookendCells, colCnt = colCnt, dayDates = dayDates, daysPerRow = daysPerRow, getCellDate = getCellDate, getCellRange = getCellRange, renderBgTrHtml = renderBgTrHtml, renderHeadHtml = renderHeadHtml, renderIntroHtml = renderIntroHtml, rowCnt = rowCnt, sliceRangeByDay = sliceRangeByDay, sliceRangeByRow = sliceRangeByRow, updateDayTable = updateDayTable)
+  
+    __obj.asInstanceOf[DayTableInterface]
+  }
+}
+

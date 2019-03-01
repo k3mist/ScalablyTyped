@@ -12,3 +12,17 @@ trait FakeUploadProgress extends js.Object {
   def removeEventListener(event: java.lang.String, listener: js.Function1[/* e */ stdLib.Event, _]): scala.Unit
 }
 
+object FakeUploadProgress {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* e */ stdLib.Event, _], scala.Unit],
+    dispatchEvent: js.Function1[stdLib.Event, scala.Unit],
+    eventListeners: niseLib.Anon_Abort,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* e */ stdLib.Event, _], scala.Unit]
+  ): FakeUploadProgress = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, dispatchEvent = dispatchEvent, eventListeners = eventListeners, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[FakeUploadProgress]
+  }
+}
+

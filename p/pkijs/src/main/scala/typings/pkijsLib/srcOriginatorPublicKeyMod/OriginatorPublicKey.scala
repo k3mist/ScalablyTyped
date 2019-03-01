@@ -13,3 +13,18 @@ trait OriginatorPublicKey extends js.Object {
   def toSchema(): js.Any
 }
 
+object OriginatorPublicKey {
+  @scala.inline
+  def apply(
+    algorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    publicKey: asn1jsLib.asn1jsMod.BitString,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OriginatorPublicKey = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm, fromSchema = fromSchema, publicKey = publicKey, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[OriginatorPublicKey]
+  }
+}
+

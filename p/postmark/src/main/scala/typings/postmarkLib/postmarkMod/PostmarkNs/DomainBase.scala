@@ -15,3 +15,19 @@ trait DomainBase extends js.Object {
   var WeakDKIM: scala.Boolean
 }
 
+object DomainBase {
+  @scala.inline
+  def apply(
+    DKIMVerified: scala.Boolean,
+    ID: scala.Double,
+    Name: java.lang.String,
+    ReturnPathDomainVerified: scala.Boolean,
+    SPFVerified: scala.Boolean,
+    WeakDKIM: scala.Boolean
+  ): DomainBase = {
+    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified, ID = ID, Name = Name, ReturnPathDomainVerified = ReturnPathDomainVerified, SPFVerified = SPFVerified, WeakDKIM = WeakDKIM)
+  
+    __obj.asInstanceOf[DomainBase]
+  }
+}
+

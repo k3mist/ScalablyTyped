@@ -29,3 +29,18 @@ trait SimpleFillSymbolProperties extends FillSymbolProperties {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SimpleFillSymbolProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    outline: SimpleLineSymbolProperties = null,
+    style: java.lang.String = null
+  ): SimpleFillSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SimpleFillSymbolProperties]
+  }
+}
+

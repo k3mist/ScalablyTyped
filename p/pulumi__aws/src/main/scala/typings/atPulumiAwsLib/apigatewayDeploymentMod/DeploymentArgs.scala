@@ -32,3 +32,22 @@ trait DeploymentArgs extends js.Object {
   ] = js.undefined
 }
 
+object DeploymentArgs {
+  @scala.inline
+  def apply(
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    stageName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    stageDescription: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    variables: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null
+  ): DeploymentArgs = {
+    val __obj = js.Dynamic.literal(restApi = restApi.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (stageDescription != null) __obj.updateDynamic("stageDescription")(stageDescription.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentArgs]
+  }
+}
+

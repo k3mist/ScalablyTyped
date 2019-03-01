@@ -17,3 +17,17 @@ trait YamlProcess extends BuildProcess {
   var yamlFilename: java.lang.String
 }
 
+object YamlProcess {
+  @scala.inline
+  def apply(
+    errors: js.Array[java.lang.String],
+    resources: BuildProcessResources,
+    `type`: scala.Double,
+    yamlFilename: java.lang.String
+  ): YamlProcess = {
+    val __obj = js.Dynamic.literal(errors = errors, resources = resources, `type` = `type`, yamlFilename = yamlFilename)
+  
+    __obj.asInstanceOf[YamlProcess]
+  }
+}
+

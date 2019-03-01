@@ -16,3 +16,15 @@ trait ResourceDataSyncArgs extends js.Object {
   val s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion]
 }
 
+object ResourceDataSyncArgs {
+  @scala.inline
+  def apply(
+    s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ResourceDataSyncArgs = {
+    val __obj = js.Dynamic.literal(s3Destination = s3Destination.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceDataSyncArgs]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ITimeEntryStatic extends js.Object {
   def setDefaults(settings: ITimeEntryOptions): scala.Unit
 }
 
+object ITimeEntryStatic {
+  @scala.inline
+  def apply(regionalOptions: ITimeEntryLocales, setDefaults: js.Function1[ITimeEntryOptions, scala.Unit]): ITimeEntryStatic = {
+    val __obj = js.Dynamic.literal(regionalOptions = regionalOptions, setDefaults = setDefaults)
+  
+    __obj.asInstanceOf[ITimeEntryStatic]
+  }
+}
+

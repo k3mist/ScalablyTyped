@@ -12,3 +12,12 @@ trait Mapping extends js.Object {
   var source: java.lang.String
 }
 
+object Mapping {
+  @scala.inline
+  def apply(generated: Position, original: Position, source: java.lang.String, name: java.lang.String = null): Mapping = {
+    val __obj = js.Dynamic.literal(generated = generated, original = original, source = source)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Mapping]
+  }
+}
+

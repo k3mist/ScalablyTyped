@@ -11,3 +11,12 @@ trait Anon_End extends js.Object {
   var start: scala.Double
 }
 
+object Anon_End {
+  @scala.inline
+  def apply(end: scala.Double, loop: scala.Boolean, start: scala.Double): Anon_End = {
+    val __obj = js.Dynamic.literal(end = end, loop = loop, start = start)
+  
+    __obj.asInstanceOf[Anon_End]
+  }
+}
+

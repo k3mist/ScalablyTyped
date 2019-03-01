@@ -39,3 +39,20 @@ trait Tombstone extends RoomObject {
   var ticksToDecay: scala.Double
 }
 
+object Tombstone {
+  @scala.inline
+  def apply(
+    creep: Creep,
+    deathTime: scala.Double,
+    id: java.lang.String,
+    pos: RoomPosition,
+    store: StoreDefinition,
+    ticksToDecay: scala.Double,
+    room: Room = null
+  ): Tombstone = {
+    val __obj = js.Dynamic.literal(creep = creep, deathTime = deathTime, id = id, pos = pos, store = store, ticksToDecay = ticksToDecay)
+    if (room != null) __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[Tombstone]
+  }
+}
+

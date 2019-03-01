@@ -23,3 +23,27 @@ trait IELangBaseDefaults extends js.Object {
   var submitButtonHtml: java.lang.String
 }
 
+object IELangBaseDefaults {
+  @scala.inline
+  def apply(
+    contentCSS: java.lang.String,
+    contentInnerCSS: java.lang.String,
+    contentInnerHtml: java.lang.String,
+    fluidRowHtml: java.lang.String,
+    headLabel: java.lang.String,
+    headLabelHtml: java.lang.String,
+    radioButtonHtml: java.lang.String,
+    radioGroupHtml: java.lang.String,
+    resultCSS: java.lang.String,
+    resultHeadCSS: java.lang.String,
+    resultHeadLabel: java.lang.String,
+    resultHeadLabelHtml: java.lang.String,
+    resultHtml: java.lang.String,
+    submitButtonHtml: java.lang.String
+  ): IELangBaseDefaults = {
+    val __obj = js.Dynamic.literal(contentCSS = contentCSS, contentInnerCSS = contentInnerCSS, contentInnerHtml = contentInnerHtml, fluidRowHtml = fluidRowHtml, headLabel = headLabel, headLabelHtml = headLabelHtml, radioButtonHtml = radioButtonHtml, radioGroupHtml = radioGroupHtml, resultCSS = resultCSS, resultHeadCSS = resultHeadCSS, resultHeadLabel = resultHeadLabel, resultHeadLabelHtml = resultHeadLabelHtml, resultHtml = resultHtml, submitButtonHtml = submitButtonHtml)
+  
+    __obj.asInstanceOf[IELangBaseDefaults]
+  }
+}
+

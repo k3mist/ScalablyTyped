@@ -19,3 +19,12 @@ trait PositionTickInfo extends js.Object {
   var ticks: scala.Double
 }
 
+object PositionTickInfo {
+  @scala.inline
+  def apply(line: scala.Double, ticks: scala.Double): PositionTickInfo = {
+    val __obj = js.Dynamic.literal(line = line, ticks = ticks)
+  
+    __obj.asInstanceOf[PositionTickInfo]
+  }
+}
+

@@ -45,3 +45,25 @@ trait RealWorldSize
   var valueUnit: java.lang.String
 }
 
+object RealWorldSize {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String,
+    valueUnit: java.lang.String,
+    field: java.lang.String = null,
+    normalizationField: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    valueRepresentation: java.lang.String = null
+  ): RealWorldSize = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`, valueUnit = valueUnit)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation)
+    __obj.asInstanceOf[RealWorldSize]
+  }
+}
+

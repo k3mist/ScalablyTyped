@@ -11,3 +11,12 @@ trait NameToken extends js.Object {
   var Sheet: scala.Double
 }
 
+object NameToken {
+  @scala.inline
+  def apply(Index: scala.Double, Sheet: scala.Double): NameToken = {
+    val __obj = js.Dynamic.literal(Index = Index, Sheet = Sheet)
+  
+    __obj.asInstanceOf[NameToken]
+  }
+}
+

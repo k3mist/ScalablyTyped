@@ -10,3 +10,12 @@ trait Validator extends js.Object {
   var `type`: java.lang.String
 }
 
+object Validator {
+  @scala.inline
+  def apply(param: js.Any, `type`: java.lang.String): Validator = {
+    val __obj = js.Dynamic.literal(param = param, `type` = `type`)
+  
+    __obj.asInstanceOf[Validator]
+  }
+}
+

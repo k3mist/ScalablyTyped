@@ -28,3 +28,19 @@ trait ShareOpenGraphContent extends ShareContent {
   var previewPropertyName: java.lang.String
 }
 
+object ShareOpenGraphContent {
+  @scala.inline
+  def apply(
+    action: ShareOpenGraphAction,
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.`open-graph`,
+    previewPropertyName: java.lang.String,
+    commonParameters: ShareContentCommonParameters = null,
+    contentUrl: java.lang.String = null
+  ): ShareOpenGraphContent = {
+    val __obj = js.Dynamic.literal(action = action, contentType = contentType, previewPropertyName = previewPropertyName)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    __obj.asInstanceOf[ShareOpenGraphContent]
+  }
+}
+

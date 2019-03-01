@@ -12,3 +12,17 @@ trait DistanceScales extends js.Object {
   var pixelsPerMeter: js.Tuple3[scala.Double, scala.Double, scala.Double]
 }
 
+object DistanceScales {
+  @scala.inline
+  def apply(
+    degreesPerPixel: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    metersPerPixel: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    pixelsPerDegree: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    pixelsPerMeter: js.Tuple3[scala.Double, scala.Double, scala.Double]
+  ): DistanceScales = {
+    val __obj = js.Dynamic.literal(degreesPerPixel = degreesPerPixel, metersPerPixel = metersPerPixel, pixelsPerDegree = pixelsPerDegree, pixelsPerMeter = pixelsPerMeter)
+  
+    __obj.asInstanceOf[DistanceScales]
+  }
+}
+

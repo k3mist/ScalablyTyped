@@ -43,3 +43,44 @@ trait PointCloudLayerProperties
   var renderer: js.UndefOr[PointCloudRendererProperties] = js.undefined
 }
 
+object PointCloudLayerProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    elevationInfo: PointCloudLayerElevationInfo = null,
+    fields: js.Array[FieldProperties] = null,
+    filters: js.Array[PointCloudFilterProperties] = null,
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    layerId: scala.Int | scala.Double = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    listMode: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    portalItem: PortalItemProperties = null,
+    renderer: PointCloudRendererProperties = null,
+    spatialReference: SpatialReferenceProperties = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PointCloudLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PointCloudLayerProperties]
+  }
+}
+

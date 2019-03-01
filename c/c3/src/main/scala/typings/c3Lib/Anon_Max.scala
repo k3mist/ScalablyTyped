@@ -16,3 +16,12 @@ trait Anon_Max extends js.Object {
   var ratio: scala.Double
 }
 
+object Anon_Max {
+  @scala.inline
+  def apply(ratio: scala.Double, max: scala.Int | scala.Double = null): Anon_Max = {
+    val __obj = js.Dynamic.literal(ratio = ratio)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Max]
+  }
+}
+

@@ -37,3 +37,18 @@ trait IJqGridJsonReader extends js.Object {
   var total: java.lang.String | (js.Function1[/* obj */ js.Any, scala.Double])
 }
 
+object IJqGridJsonReader {
+  @scala.inline
+  def apply(
+    page: java.lang.String | (js.Function1[/* obj */ js.Any, scala.Double]),
+    records: java.lang.String | (js.Function1[/* obj */ Anon_Data, scala.Double]),
+    repeatitems: scala.Boolean,
+    root: java.lang.String | (js.Function1[/* obj */ js.Any, _]),
+    total: java.lang.String | (js.Function1[/* obj */ js.Any, scala.Double])
+  ): IJqGridJsonReader = {
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], repeatitems = repeatitems, root = root.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IJqGridJsonReader]
+  }
+}
+

@@ -11,3 +11,16 @@ trait ButtonsApiExportDataReturn extends js.Object {
   var header: js.Array[java.lang.String]
 }
 
+object ButtonsApiExportDataReturn {
+  @scala.inline
+  def apply(
+    body: js.Array[java.lang.String],
+    footer: js.Array[java.lang.String],
+    header: js.Array[java.lang.String]
+  ): ButtonsApiExportDataReturn = {
+    val __obj = js.Dynamic.literal(body = body, footer = footer, header = header)
+  
+    __obj.asInstanceOf[ButtonsApiExportDataReturn]
+  }
+}
+

@@ -16,3 +16,12 @@ trait UpdateGlobalSecondaryIndexAction extends js.Object {
   var ProvisionedThroughput: ProvisionedThroughput
 }
 
+object UpdateGlobalSecondaryIndexAction {
+  @scala.inline
+  def apply(IndexName: IndexName, ProvisionedThroughput: ProvisionedThroughput): UpdateGlobalSecondaryIndexAction = {
+    val __obj = js.Dynamic.literal(IndexName = IndexName, ProvisionedThroughput = ProvisionedThroughput)
+  
+    __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
+  }
+}
+

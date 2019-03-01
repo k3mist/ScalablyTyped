@@ -11,3 +11,16 @@ trait Selectionobject extends js.Object {
   var qSelections: js.Array[NxCurrentSelectionItem]
 }
 
+object Selectionobject {
+  @scala.inline
+  def apply(
+    qBackCount: scala.Double,
+    qForwardCount: scala.Double,
+    qSelections: js.Array[NxCurrentSelectionItem]
+  ): Selectionobject = {
+    val __obj = js.Dynamic.literal(qBackCount = qBackCount, qForwardCount = qForwardCount, qSelections = qSelections)
+  
+    __obj.asInstanceOf[Selectionobject]
+  }
+}
+

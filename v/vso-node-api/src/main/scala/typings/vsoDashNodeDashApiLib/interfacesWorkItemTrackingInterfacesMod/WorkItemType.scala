@@ -48,3 +48,25 @@ trait WorkItemType extends WorkItemTrackingResource {
   var xmlForm: java.lang.String
 }
 
+object WorkItemType {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    color: java.lang.String,
+    description: java.lang.String,
+    fieldInstances: js.Array[WorkItemTypeFieldInstance],
+    fields: js.Array[WorkItemTypeFieldInstance],
+    icon: WorkItemIcon,
+    isDisabled: scala.Boolean,
+    name: java.lang.String,
+    referenceName: java.lang.String,
+    transitions: org.scalablytyped.runtime.StringDictionary[js.Array[WorkItemStateTransition]],
+    url: java.lang.String,
+    xmlForm: java.lang.String
+  ): WorkItemType = {
+    val __obj = js.Dynamic.literal(_links = _links, color = color, description = description, fieldInstances = fieldInstances, fields = fields, icon = icon, isDisabled = isDisabled, name = name, referenceName = referenceName, transitions = transitions, url = url, xmlForm = xmlForm)
+  
+    __obj.asInstanceOf[WorkItemType]
+  }
+}
+

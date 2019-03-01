@@ -25,3 +25,27 @@ trait IdentityRefWithVote
   var votedFor: js.Array[IdentityRefWithVote]
 }
 
+object IdentityRefWithVote {
+  @scala.inline
+  def apply(
+    directoryAlias: java.lang.String,
+    displayName: java.lang.String,
+    id: java.lang.String,
+    imageUrl: java.lang.String,
+    inactive: scala.Boolean,
+    isAadIdentity: scala.Boolean,
+    isContainer: scala.Boolean,
+    isRequired: scala.Boolean,
+    profileUrl: java.lang.String,
+    reviewerUrl: java.lang.String,
+    uniqueName: java.lang.String,
+    url: java.lang.String,
+    vote: scala.Double,
+    votedFor: js.Array[IdentityRefWithVote]
+  ): IdentityRefWithVote = {
+    val __obj = js.Dynamic.literal(directoryAlias = directoryAlias, displayName = displayName, id = id, imageUrl = imageUrl, inactive = inactive, isAadIdentity = isAadIdentity, isContainer = isContainer, isRequired = isRequired, profileUrl = profileUrl, reviewerUrl = reviewerUrl, uniqueName = uniqueName, url = url, vote = vote, votedFor = votedFor)
+  
+    __obj.asInstanceOf[IdentityRefWithVote]
+  }
+}
+

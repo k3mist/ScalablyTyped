@@ -12,3 +12,17 @@ trait Anon_Action extends js.Object {
   def logNone(): scala.Unit
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    logAll: js.Function0[scala.Unit],
+    logByAction: js.Function1[java.lang.String, scala.Unit],
+    logByName: js.Function1[java.lang.String, scala.Unit],
+    logNone: js.Function0[scala.Unit]
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal(logAll = logAll, logByAction = logByAction, logByName = logByName, logNone = logNone)
+  
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

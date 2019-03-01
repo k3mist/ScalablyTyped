@@ -63,3 +63,22 @@ trait ICalendar extends js.Object {
   var updated_time: java.lang.String
 }
 
+object ICalendar {
+  @scala.inline
+  def apply(
+    created_time: java.lang.String,
+    description: java.lang.String,
+    from: IUserInfo,
+    id: java.lang.String,
+    is_default: scala.Boolean,
+    name: java.lang.String,
+    permissions: java.lang.String,
+    subscription_location: java.lang.String,
+    updated_time: java.lang.String
+  ): ICalendar = {
+    val __obj = js.Dynamic.literal(created_time = created_time, description = description, from = from, id = id, is_default = is_default, name = name, permissions = permissions, subscription_location = subscription_location, updated_time = updated_time)
+  
+    __obj.asInstanceOf[ICalendar]
+  }
+}
+

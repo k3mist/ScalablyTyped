@@ -11,3 +11,12 @@ trait ISeriesData extends js.Object {
   var values: js.Array[scala.Double]
 }
 
+object ISeriesData {
+  @scala.inline
+  def apply(labels: js.Array[java.lang.String], source: js.Any, values: js.Array[scala.Double]): ISeriesData = {
+    val __obj = js.Dynamic.literal(labels = labels, source = source, values = values)
+  
+    __obj.asInstanceOf[ISeriesData]
+  }
+}
+

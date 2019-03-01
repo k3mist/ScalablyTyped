@@ -21,3 +21,12 @@ trait ASPxClientCustomizeParameterEditorsEventArgs extends ASPxClientEventArgs {
   var parameter: ASPxDesignerElementParameterDescriptor
 }
 
+object ASPxClientCustomizeParameterEditorsEventArgs {
+  @scala.inline
+  def apply(info: ASPxDesignerElementSerializationInfo, parameter: ASPxDesignerElementParameterDescriptor): ASPxClientCustomizeParameterEditorsEventArgs = {
+    val __obj = js.Dynamic.literal(info = info, parameter = parameter)
+  
+    __obj.asInstanceOf[ASPxClientCustomizeParameterEditorsEventArgs]
+  }
+}
+

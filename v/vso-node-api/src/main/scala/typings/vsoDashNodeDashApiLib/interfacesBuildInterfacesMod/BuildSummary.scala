@@ -16,3 +16,21 @@ trait BuildSummary extends js.Object {
   var status: BuildStatus
 }
 
+object BuildSummary {
+  @scala.inline
+  def apply(
+    build: XamlBuildReference,
+    finishTime: stdLib.Date,
+    keepForever: scala.Boolean,
+    quality: java.lang.String,
+    reason: BuildReason,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    startTime: stdLib.Date,
+    status: BuildStatus
+  ): BuildSummary = {
+    val __obj = js.Dynamic.literal(build = build, finishTime = finishTime, keepForever = keepForever, quality = quality, reason = reason, requestedFor = requestedFor, startTime = startTime, status = status)
+  
+    __obj.asInstanceOf[BuildSummary]
+  }
+}
+

@@ -26,3 +26,22 @@ trait XChainable
   def setSuccessor(xChainable: XChainable): scala.Unit
 }
 
+object XChainable {
+  @scala.inline
+  def apply(
+    Predecessor: XChainable,
+    Successor: XChainable,
+    acquire: js.Function0[scala.Unit],
+    getPredecessor: js.Function0[XChainable],
+    getSuccessor: js.Function0[XChainable],
+    isChainable: js.Function1[XChainable, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSuccessor: js.Function1[XChainable, scala.Unit]
+  ): XChainable = {
+    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = acquire, getPredecessor = getPredecessor, getSuccessor = getSuccessor, isChainable = isChainable, queryInterface = queryInterface, release = release, setSuccessor = setSuccessor)
+  
+    __obj.asInstanceOf[XChainable]
+  }
+}
+

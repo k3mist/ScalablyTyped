@@ -17,3 +17,19 @@ trait UsAtlas
   var transform_UsAtlas: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform
 }
 
+object UsAtlas {
+  @scala.inline
+  def apply(
+    arcs: js.Array[topojsonDashSpecificationLib.topojsonDashSpecificationMod.Arc],
+    bbox: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
+    objects: topojsonLib.Anon_Counties,
+    transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform,
+    type_Topology: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology,
+    `type`: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology | geojsonLib.geojsonMod.GeoJsonGeometryTypes = null
+  ): UsAtlas = {
+    val __obj = js.Dynamic.literal(arcs = arcs, bbox = bbox, objects = objects, transform = transform, type_Topology = type_Topology)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsAtlas]
+  }
+}
+

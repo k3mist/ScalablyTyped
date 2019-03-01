@@ -45,3 +45,25 @@ trait SlideApplyToOptions
   var speedFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SlideApplyToOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String | EasingFunction = null,
+    maxDuration: scala.Int | scala.Double = null,
+    speedFactor: scala.Int | scala.Double = null
+  ): SlideApplyToOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
+    if (speedFactor != null) __obj.updateDynamic("speedFactor")(speedFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlideApplyToOptions]
+  }
+}
+

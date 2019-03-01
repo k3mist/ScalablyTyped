@@ -23,3 +23,31 @@ trait EventWrapperProps[T /* <: Event */] extends js.Object {
   def onDoubleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
 }
 
+object EventWrapperProps {
+  @scala.inline
+  def apply[T /* <: Event */](
+    accessors: reactDashBigDashCalendarLib.Anon_End[T],
+    className: java.lang.String,
+    continuesEarlier: scala.Boolean,
+    continuesLater: scala.Boolean,
+    event: T,
+    getters: reactDashBigDashCalendarLib.Anon_DayProp[T],
+    isRtl: scala.Boolean,
+    label: java.lang.String,
+    onClick: js.Function1[
+      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ],
+    onDoubleClick: js.Function1[
+      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ],
+    selected: scala.Boolean,
+    style: reactLib.reactMod.ReactNs.CSSProperties with reactDashBigDashCalendarLib.Anon_XOffset = null
+  ): EventWrapperProps[T] = {
+    val __obj = js.Dynamic.literal(accessors = accessors, className = className, continuesEarlier = continuesEarlier, continuesLater = continuesLater, event = event.asInstanceOf[js.Any], getters = getters, isRtl = isRtl, label = label, onClick = onClick, onDoubleClick = onDoubleClick, selected = selected)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[EventWrapperProps[T]]
+  }
+}
+

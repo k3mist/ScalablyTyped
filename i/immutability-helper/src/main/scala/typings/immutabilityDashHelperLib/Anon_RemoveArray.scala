@@ -10,3 +10,12 @@ trait Anon_RemoveArray[T] extends SetSpec[T] {
   var $remove: js.Array[T]
 }
 
+object Anon_RemoveArray {
+  @scala.inline
+  def apply[T]($remove: js.Array[T]): Anon_RemoveArray[T] = {
+    val __obj = js.Dynamic.literal($remove = $remove)
+  
+    __obj.asInstanceOf[Anon_RemoveArray[T]]
+  }
+}
+

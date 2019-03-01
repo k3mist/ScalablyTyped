@@ -14,3 +14,18 @@ trait FailureReply
   var value: scala.Null
 }
 
+object FailureReply {
+  @scala.inline
+  def apply(
+    expected: js.Array[java.lang.String],
+    furthest: scala.Double,
+    index: parsimmonLib.parsimmonLibNumbers.`-1`,
+    status: parsimmonLib.parsimmonLibNumbers.`false`,
+    value: scala.Null
+  ): FailureReply = {
+    val __obj = js.Dynamic.literal(expected = expected, furthest = furthest, index = index, status = status, value = value)
+  
+    __obj.asInstanceOf[FailureReply]
+  }
+}
+

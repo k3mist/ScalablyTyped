@@ -15,3 +15,17 @@ trait PortalItemUpdateParams
   var data: java.lang.String | js.Any
 }
 
+object PortalItemUpdateParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    data: java.lang.String | js.Any,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): PortalItemUpdateParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[PortalItemUpdateParams]
+  }
+}
+

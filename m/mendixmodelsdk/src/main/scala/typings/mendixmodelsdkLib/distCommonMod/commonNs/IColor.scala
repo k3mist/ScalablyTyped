@@ -15,3 +15,12 @@ trait IColor
   var red: scala.Double
 }
 
+object IColor {
+  @scala.inline
+  def apply(blue: scala.Double, green: scala.Double, red: scala.Double): IColor = {
+    val __obj = js.Dynamic.literal(blue = blue, green = green, red = red)
+  
+    __obj.asInstanceOf[IColor]
+  }
+}
+

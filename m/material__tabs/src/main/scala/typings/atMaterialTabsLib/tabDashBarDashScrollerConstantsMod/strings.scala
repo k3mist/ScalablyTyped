@@ -14,3 +14,18 @@ trait strings
   var TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    FRAME_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__scroll-frame`,
+    INDICATOR_BACK_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__indicator--back`,
+    INDICATOR_FORWARD_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__indicator--forward`,
+    TABS_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__scroll-frame__tabs`,
+    TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
+  ): strings = {
+    val __obj = js.Dynamic.literal(FRAME_SELECTOR = FRAME_SELECTOR, INDICATOR_BACK_SELECTOR = INDICATOR_BACK_SELECTOR, INDICATOR_FORWARD_SELECTOR = INDICATOR_FORWARD_SELECTOR, TABS_SELECTOR = TABS_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

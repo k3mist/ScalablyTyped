@@ -89,3 +89,26 @@ trait XDocumentTemplates
   def update(): scala.Unit
 }
 
+object XDocumentTemplates {
+  @scala.inline
+  def apply(
+    Content: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent,
+    acquire: js.Function0[scala.Unit],
+    addGroup: js.Function1[java.lang.String, scala.Boolean],
+    addTemplate: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Boolean],
+    getContent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeGroup: js.Function1[java.lang.String, scala.Boolean],
+    removeTemplate: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    renameGroup: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    renameTemplate: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Boolean],
+    storeTemplate: js.Function3[java.lang.String, java.lang.String, XStorable, scala.Boolean],
+    update: js.Function0[scala.Unit]
+  ): XDocumentTemplates = {
+    val __obj = js.Dynamic.literal(Content = Content, acquire = acquire, addGroup = addGroup, addTemplate = addTemplate, getContent = getContent, queryInterface = queryInterface, release = release, removeGroup = removeGroup, removeTemplate = removeTemplate, renameGroup = renameGroup, renameTemplate = renameTemplate, storeTemplate = storeTemplate, update = update)
+  
+    __obj.asInstanceOf[XDocumentTemplates]
+  }
+}
+

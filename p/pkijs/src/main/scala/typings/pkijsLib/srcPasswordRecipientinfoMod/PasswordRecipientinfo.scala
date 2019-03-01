@@ -16,3 +16,21 @@ trait PasswordRecipientinfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object PasswordRecipientinfo {
+  @scala.inline
+  def apply(
+    encryptedKey: asn1jsLib.asn1jsMod.OctetString,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    password: stdLib.ArrayBuffer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double,
+    keyDerivationAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default = null
+  ): PasswordRecipientinfo = {
+    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = fromSchema, keyEncryptionAlgorithm = keyEncryptionAlgorithm, password = password, toJSON = toJSON, toSchema = toSchema, version = version)
+    if (keyDerivationAlgorithm != null) __obj.updateDynamic("keyDerivationAlgorithm")(keyDerivationAlgorithm)
+    __obj.asInstanceOf[PasswordRecipientinfo]
+  }
+}
+

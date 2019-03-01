@@ -15,3 +15,17 @@ trait TypedefType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.typedef
 }
 
+object TypedefType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.typedef
+  ): TypedefType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[TypedefType]
+  }
+}
+

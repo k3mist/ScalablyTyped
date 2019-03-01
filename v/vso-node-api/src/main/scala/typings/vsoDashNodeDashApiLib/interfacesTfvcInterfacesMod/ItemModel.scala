@@ -14,3 +14,19 @@ trait ItemModel extends js.Object {
   var url: java.lang.String
 }
 
+object ItemModel {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    contentMetadata: FileContentMetadata,
+    isFolder: scala.Boolean,
+    isSymLink: scala.Boolean,
+    path: java.lang.String,
+    url: java.lang.String
+  ): ItemModel = {
+    val __obj = js.Dynamic.literal(_links = _links, contentMetadata = contentMetadata, isFolder = isFolder, isSymLink = isSymLink, path = path, url = url)
+  
+    __obj.asInstanceOf[ItemModel]
+  }
+}
+

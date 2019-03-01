@@ -42,3 +42,28 @@ trait DateTimeRange extends js.Object {
   var StartYear: scala.Double
 }
 
+object DateTimeRange {
+  @scala.inline
+  def apply(
+    EndDay: scala.Double,
+    EndHours: scala.Double,
+    EndMinutes: scala.Double,
+    EndMonth: scala.Double,
+    EndNanoSeconds: scala.Double,
+    EndSeconds: scala.Double,
+    EndYear: scala.Double,
+    IsUTC: scala.Boolean,
+    StartDay: scala.Double,
+    StartHours: scala.Double,
+    StartMinutes: scala.Double,
+    StartMonth: scala.Double,
+    StartNanoSeconds: scala.Double,
+    StartSeconds: scala.Double,
+    StartYear: scala.Double
+  ): DateTimeRange = {
+    val __obj = js.Dynamic.literal(EndDay = EndDay, EndHours = EndHours, EndMinutes = EndMinutes, EndMonth = EndMonth, EndNanoSeconds = EndNanoSeconds, EndSeconds = EndSeconds, EndYear = EndYear, IsUTC = IsUTC, StartDay = StartDay, StartHours = StartHours, StartMinutes = StartMinutes, StartMonth = StartMonth, StartNanoSeconds = StartNanoSeconds, StartSeconds = StartSeconds, StartYear = StartYear)
+  
+    __obj.asInstanceOf[DateTimeRange]
+  }
+}
+

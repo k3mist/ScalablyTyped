@@ -26,3 +26,17 @@ trait ASPxClientLegend extends ASPxClientWebChartElement {
   var useCheckBoxes: scala.Boolean
 }
 
+object ASPxClientLegend {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    customItems: js.Array[ASPxClientCustomLegendItem],
+    name: java.lang.String,
+    useCheckBoxes: scala.Boolean
+  ): ASPxClientLegend = {
+    val __obj = js.Dynamic.literal(chart = chart, customItems = customItems, name = name, useCheckBoxes = useCheckBoxes)
+  
+    __obj.asInstanceOf[ASPxClientLegend]
+  }
+}
+

@@ -13,3 +13,18 @@ trait FormState extends js.Object {
   var values: FormValues
 }
 
+object FormState {
+  @scala.inline
+  def apply(
+    errors: FormErrors,
+    nestedErrors: NestedErrors,
+    touched: Touched,
+    values: FormValues,
+    dirty: js.UndefOr[scala.Boolean] = js.undefined
+  ): FormState = {
+    val __obj = js.Dynamic.literal(errors = errors, nestedErrors = nestedErrors, touched = touched, values = values)
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty)
+    __obj.asInstanceOf[FormState]
+  }
+}
+

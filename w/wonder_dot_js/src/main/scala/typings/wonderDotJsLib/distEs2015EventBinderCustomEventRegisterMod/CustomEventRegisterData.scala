@@ -13,3 +13,18 @@ trait CustomEventRegisterData extends js.Object {
   var target: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject
 }
 
+object CustomEventRegisterData {
+  @scala.inline
+  def apply(
+    domHandler: js.Function,
+    handler: js.Function,
+    originHandler: js.Function,
+    priority: scala.Double,
+    target: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject
+  ): CustomEventRegisterData = {
+    val __obj = js.Dynamic.literal(domHandler = domHandler, handler = handler, originHandler = originHandler, priority = priority, target = target)
+  
+    __obj.asInstanceOf[CustomEventRegisterData]
+  }
+}
+

@@ -21,3 +21,26 @@ trait Castable extends js.Object {
   def castType(sqlType: java.lang.String): this.type
 }
 
+object Castable {
+  @scala.inline
+  def apply(
+    as: js.Function1[java.lang.String, Castable],
+    asArray: js.Function0[Castable],
+    castArray: js.Function0[Castable],
+    castBigInt: js.Function0[Castable],
+    castBool: js.Function0[Castable],
+    castDecimal: js.Function0[Castable],
+    castFloat: js.Function0[Castable],
+    castInt: js.Function0[Castable],
+    castJson: js.Function0[Castable],
+    castReal: js.Function0[Castable],
+    castText: js.Function0[Castable],
+    castTo: js.Function1[java.lang.String, Castable],
+    castType: js.Function1[java.lang.String, Castable]
+  ): Castable = {
+    val __obj = js.Dynamic.literal(as = as, asArray = asArray, castArray = castArray, castBigInt = castBigInt, castBool = castBool, castDecimal = castDecimal, castFloat = castFloat, castInt = castInt, castJson = castJson, castReal = castReal, castText = castText, castTo = castTo, castType = castType)
+  
+    __obj.asInstanceOf[Castable]
+  }
+}
+

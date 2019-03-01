@@ -18,3 +18,18 @@ trait XReferenceMarksSupplier
   def getReferenceMarks(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XReferenceMarksSupplier {
+  @scala.inline
+  def apply(
+    ReferenceMarks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getReferenceMarks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XReferenceMarksSupplier = {
+    val __obj = js.Dynamic.literal(ReferenceMarks = ReferenceMarks, acquire = acquire, getReferenceMarks = getReferenceMarks, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XReferenceMarksSupplier]
+  }
+}
+

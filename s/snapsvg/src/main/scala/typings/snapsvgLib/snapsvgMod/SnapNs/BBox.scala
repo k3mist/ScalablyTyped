@@ -23,3 +23,28 @@ trait BBox extends js.Object {
   var y2: scala.Double
 }
 
+object BBox {
+  @scala.inline
+  def apply(
+    cx: scala.Double,
+    cy: scala.Double,
+    h: scala.Double,
+    height: scala.Double,
+    path: scala.Double,
+    r0: scala.Double,
+    r1: scala.Double,
+    r2: scala.Double,
+    vb: java.lang.String,
+    w: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    x2: scala.Double,
+    y: scala.Double,
+    y2: scala.Double
+  ): BBox = {
+    val __obj = js.Dynamic.literal(cx = cx, cy = cy, h = h, height = height, path = path, r0 = r0, r1 = r1, r2 = r2, vb = vb, w = w, width = width, x = x, x2 = x2, y = y, y2 = y2)
+  
+    __obj.asInstanceOf[BBox]
+  }
+}
+

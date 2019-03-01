@@ -16,3 +16,12 @@ trait ProgressToneStop
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
 }
 
+object ProgressToneStop {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): ProgressToneStop = {
+    val __obj = js.Dynamic.literal(call = call)
+  
+    __obj.asInstanceOf[ProgressToneStop]
+  }
+}
+

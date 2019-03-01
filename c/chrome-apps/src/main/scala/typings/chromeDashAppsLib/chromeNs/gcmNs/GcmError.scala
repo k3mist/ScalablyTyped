@@ -14,3 +14,12 @@ trait GcmError extends js.Object {
   var messageId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GcmError {
+  @scala.inline
+  def apply(detail: js.Object, errorMessage: java.lang.String, messageId: java.lang.String = null): GcmError = {
+    val __obj = js.Dynamic.literal(detail = detail, errorMessage = errorMessage)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    __obj.asInstanceOf[GcmError]
+  }
+}
+

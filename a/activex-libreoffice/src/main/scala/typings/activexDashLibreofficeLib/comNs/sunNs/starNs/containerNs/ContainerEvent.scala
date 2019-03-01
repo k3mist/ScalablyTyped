@@ -23,3 +23,17 @@ trait ContainerEvent
   var ReplacedElement: js.Any
 }
 
+object ContainerEvent {
+  @scala.inline
+  def apply(
+    Accessor: js.Any,
+    Element: js.Any,
+    ReplacedElement: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ContainerEvent = {
+    val __obj = js.Dynamic.literal(Accessor = Accessor, Element = Element, ReplacedElement = ReplacedElement, Source = Source)
+  
+    __obj.asInstanceOf[ContainerEvent]
+  }
+}
+

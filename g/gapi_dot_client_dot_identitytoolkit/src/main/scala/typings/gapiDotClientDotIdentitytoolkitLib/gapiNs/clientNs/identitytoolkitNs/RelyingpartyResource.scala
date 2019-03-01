@@ -48,3 +48,93 @@ trait RelyingpartyResource extends js.Object {
   def verifyPhoneNumber(request: gapiDotClientDotIdentitytoolkitLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
 }
 
+object RelyingpartyResource {
+  @scala.inline
+  def apply(
+    createAuthUri: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateAuthUriResponse]
+    ],
+    deleteAccount: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeleteAccountResponse]
+    ],
+    downloadAccount: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DownloadAccountResponse]
+    ],
+    emailLinkSignin: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EmailLinkSigninResponse]
+    ],
+    getAccountInfo: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetAccountInfoResponse]
+    ],
+    getOobConfirmationCode: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetOobConfirmationCodeResponse]
+    ],
+    getProjectConfig: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_AltDelegatedProjectNumber, 
+      gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartyGetProjectConfigResponse]
+    ],
+    getPublicKeys: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    getRecaptchaParam: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetRecaptchaParamResponse]
+    ],
+    resetPassword: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResetPasswordResponse]
+    ],
+    sendVerificationCode: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
+    ],
+    setAccountInfo: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SetAccountInfoResponse]
+    ],
+    setProjectConfig: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartySetProjectConfigResponse]
+    ],
+    signOutUser: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartySignOutUserResponse]
+    ],
+    signupNewUser: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SignupNewUserResponse]
+    ],
+    uploadAccount: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UploadAccountResponse]
+    ],
+    verifyAssertion: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VerifyAssertionResponse]
+    ],
+    verifyCustomToken: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VerifyCustomTokenResponse]
+    ],
+    verifyPassword: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VerifyPasswordResponse]
+    ],
+    verifyPhoneNumber: js.Function1[
+      gapiDotClientDotIdentitytoolkitLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
+    ]
+  ): RelyingpartyResource = {
+    val __obj = js.Dynamic.literal(createAuthUri = createAuthUri, deleteAccount = deleteAccount, downloadAccount = downloadAccount, emailLinkSignin = emailLinkSignin, getAccountInfo = getAccountInfo, getOobConfirmationCode = getOobConfirmationCode, getProjectConfig = getProjectConfig, getPublicKeys = getPublicKeys, getRecaptchaParam = getRecaptchaParam, resetPassword = resetPassword, sendVerificationCode = sendVerificationCode, setAccountInfo = setAccountInfo, setProjectConfig = setProjectConfig, signOutUser = signOutUser, signupNewUser = signupNewUser, uploadAccount = uploadAccount, verifyAssertion = verifyAssertion, verifyCustomToken = verifyCustomToken, verifyPassword = verifyPassword, verifyPhoneNumber = verifyPhoneNumber)
+  
+    __obj.asInstanceOf[RelyingpartyResource]
+  }
+}
+

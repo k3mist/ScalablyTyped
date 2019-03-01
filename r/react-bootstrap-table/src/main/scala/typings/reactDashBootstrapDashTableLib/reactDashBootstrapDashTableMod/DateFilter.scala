@@ -28,3 +28,21 @@ trait DateFilter extends _Filter {
   var `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.DateFilter
 }
 
+object DateFilter {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.DateFilter,
+    dateComparators: js.Array[FilterComparator] = null,
+    defaultValue: reactDashBootstrapDashTableLib.Anon_ComparatorDate = null,
+    delay: scala.Int | scala.Double = null,
+    style: reactDashBootstrapDashTableLib.Anon_ComparatorDateCSSProperties = null
+  ): DateFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (dateComparators != null) __obj.updateDynamic("dateComparators")(dateComparators)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DateFilter]
+  }
+}
+

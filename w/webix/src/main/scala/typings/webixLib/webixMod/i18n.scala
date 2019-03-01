@@ -40,3 +40,45 @@ trait i18n extends js.Object {
   def timeFormatStr(date: js.Any): java.lang.String
 }
 
+object i18n {
+  @scala.inline
+  def apply(
+    calendar: js.Any,
+    controls: js.Any,
+    dateFormat: java.lang.String,
+    dateFormatDate: js.Function1[java.lang.String, js.Any],
+    dateFormatStr: js.Function1[js.Any, java.lang.String],
+    decimalDelimiter: java.lang.String,
+    decimalSize: scala.Double,
+    fileSize: js.Array[_],
+    fullDateFormat: java.lang.String,
+    fullDateFormatDate: js.Function1[java.lang.String, js.Any],
+    fullDateFormatStr: js.Function1[Date, java.lang.String],
+    groupDelimiter: java.lang.String,
+    groupSize: scala.Double,
+    intFormat: js.Function1[scala.Double, java.lang.String],
+    locales: js.Any,
+    longDateFormat: java.lang.String,
+    longDateFormatDate: js.Function1[java.lang.String, js.Any],
+    longDateFormatStr: js.Function1[js.Any, java.lang.String],
+    numberFormat: js.Function1[scala.Double, java.lang.String],
+    parseFormat: java.lang.String,
+    parseFormatDate: js.Function1[java.lang.String, js.Any],
+    parseFormatStr: js.Function1[js.Any, java.lang.String],
+    parseTimeFormat: java.lang.String,
+    parseTimeFormatDate: js.Function1[java.lang.String, js.Any],
+    parseTimeFormatStr: js.Function1[js.Any, java.lang.String],
+    price: java.lang.String,
+    priceFormat: js.Function1[scala.Double, java.lang.String],
+    priceSettings: js.Any,
+    setLocale: js.Function1[java.lang.String, scala.Unit],
+    timeFormat: java.lang.String,
+    timeFormatDate: js.Function1[java.lang.String, js.Any],
+    timeFormatStr: js.Function1[js.Any, java.lang.String]
+  ): i18n = {
+    val __obj = js.Dynamic.literal(calendar = calendar, controls = controls, dateFormat = dateFormat, dateFormatDate = dateFormatDate, dateFormatStr = dateFormatStr, decimalDelimiter = decimalDelimiter, decimalSize = decimalSize, fileSize = fileSize, fullDateFormat = fullDateFormat, fullDateFormatDate = fullDateFormatDate, fullDateFormatStr = fullDateFormatStr, groupDelimiter = groupDelimiter, groupSize = groupSize, intFormat = intFormat, locales = locales, longDateFormat = longDateFormat, longDateFormatDate = longDateFormatDate, longDateFormatStr = longDateFormatStr, numberFormat = numberFormat, parseFormat = parseFormat, parseFormatDate = parseFormatDate, parseFormatStr = parseFormatStr, parseTimeFormat = parseTimeFormat, parseTimeFormatDate = parseTimeFormatDate, parseTimeFormatStr = parseTimeFormatStr, price = price, priceFormat = priceFormat, priceSettings = priceSettings, setLocale = setLocale, timeFormat = timeFormat, timeFormatDate = timeFormatDate, timeFormatStr = timeFormatStr)
+  
+    __obj.asInstanceOf[i18n]
+  }
+}
+

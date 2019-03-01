@@ -18,3 +18,21 @@ trait PDFPageViewport extends js.Object {
   def convertToViewportRectangle(rect: js.Array[scala.Double]): js.Array[scala.Double]
 }
 
+object PDFPageViewport {
+  @scala.inline
+  def apply(
+    clone: js.Function1[PDFPageViewportOptions, PDFPageViewport],
+    convertToPdfPoint: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    convertToViewportPoint: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    convertToViewportRectangle: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
+    fontScale: scala.Double,
+    height: scala.Double,
+    transforms: js.Array[scala.Double],
+    width: scala.Double
+  ): PDFPageViewport = {
+    val __obj = js.Dynamic.literal(clone = clone, convertToPdfPoint = convertToPdfPoint, convertToViewportPoint = convertToViewportPoint, convertToViewportRectangle = convertToViewportRectangle, fontScale = fontScale, height = height, transforms = transforms, width = width)
+  
+    __obj.asInstanceOf[PDFPageViewport]
+  }
+}
+

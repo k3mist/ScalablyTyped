@@ -14,3 +14,21 @@ trait Auth0LockAdditionalCheckboxSignUpField extends Auth0LockAdditionalSignUpFi
   var validator: js.UndefOr[js.Function1[/* input */ java.lang.String, Anon_Hint]] = js.undefined
 }
 
+object Auth0LockAdditionalCheckboxSignUpField {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    placeholder: java.lang.String,
+    prefill: auth0DashLockLib.auth0DashLockLibStrings.`true` | auth0DashLockLib.auth0DashLockLibStrings.`false`,
+    icon: java.lang.String = null,
+    `type`: auth0DashLockLib.auth0DashLockLibStrings.checkbox = null,
+    validator: js.Function1[/* input */ java.lang.String, Anon_Hint] = null
+  ): Auth0LockAdditionalCheckboxSignUpField = {
+    val __obj = js.Dynamic.literal(name = name, placeholder = placeholder, prefill = prefill.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (validator != null) __obj.updateDynamic("validator")(validator)
+    __obj.asInstanceOf[Auth0LockAdditionalCheckboxSignUpField]
+  }
+}
+

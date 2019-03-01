@@ -14,3 +14,19 @@ trait NetStatsData extends js.Object {
   var tx_sec: scala.Double
 }
 
+object NetStatsData {
+  @scala.inline
+  def apply(
+    iface: java.lang.String,
+    ms: scala.Double,
+    rx: scala.Double,
+    rx_sec: scala.Double,
+    tx: scala.Double,
+    tx_sec: scala.Double
+  ): NetStatsData = {
+    val __obj = js.Dynamic.literal(iface = iface, ms = ms, rx = rx, rx_sec = rx_sec, tx = tx, tx_sec = tx_sec)
+  
+    __obj.asInstanceOf[NetStatsData]
+  }
+}
+

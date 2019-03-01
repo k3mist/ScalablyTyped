@@ -17,3 +17,16 @@ trait GetNetworkAclsResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetNetworkAclsResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    ids: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetNetworkAclsResult = {
+    val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)
+  
+    __obj.asInstanceOf[GetNetworkAclsResult]
+  }
+}
+

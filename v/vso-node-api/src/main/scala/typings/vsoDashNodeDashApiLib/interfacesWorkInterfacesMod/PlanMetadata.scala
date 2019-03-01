@@ -24,3 +24,17 @@ trait PlanMetadata extends js.Object {
   var userPermissions: PlanUserPermissions
 }
 
+object PlanMetadata {
+  @scala.inline
+  def apply(
+    createdByIdentity: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    description: java.lang.String,
+    modifiedDate: stdLib.Date,
+    userPermissions: PlanUserPermissions
+  ): PlanMetadata = {
+    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity, description = description, modifiedDate = modifiedDate, userPermissions = userPermissions)
+  
+    __obj.asInstanceOf[PlanMetadata]
+  }
+}
+

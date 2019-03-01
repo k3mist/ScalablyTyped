@@ -89,3 +89,34 @@ trait TablePageStyle
   var ScaleToPagesY: scala.Double
 }
 
+object TablePageStyle {
+  @scala.inline
+  def apply(
+    CenterHorizontally: scala.Boolean,
+    CenterVertically: scala.Boolean,
+    FirstPageNumber: scala.Double,
+    LeftPageFooterContent: XHeaderFooterContent,
+    LeftPageHeaderContent: XHeaderFooterContent,
+    PageScale: scala.Double,
+    PrintAnnotations: scala.Boolean,
+    PrintCharts: scala.Boolean,
+    PrintDownFirst: scala.Boolean,
+    PrintDrawing: scala.Boolean,
+    PrintFormulas: scala.Boolean,
+    PrintGrid: scala.Boolean,
+    PrintHeaders: scala.Boolean,
+    PrintObjects: scala.Boolean,
+    PrintZeroValues: scala.Boolean,
+    RightPageFooterContent: XHeaderFooterContent,
+    RightPageHeaderContent: XHeaderFooterContent,
+    ScaleToPages: scala.Double,
+    ScaleToPagesX: scala.Double,
+    ScaleToPagesY: scala.Double,
+    PageStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.PageStyle = null
+  ): TablePageStyle = {
+    val __obj = js.Dynamic.literal(CenterHorizontally = CenterHorizontally, CenterVertically = CenterVertically, FirstPageNumber = FirstPageNumber, LeftPageFooterContent = LeftPageFooterContent, LeftPageHeaderContent = LeftPageHeaderContent, PageScale = PageScale, PrintAnnotations = PrintAnnotations, PrintCharts = PrintCharts, PrintDownFirst = PrintDownFirst, PrintDrawing = PrintDrawing, PrintFormulas = PrintFormulas, PrintGrid = PrintGrid, PrintHeaders = PrintHeaders, PrintObjects = PrintObjects, PrintZeroValues = PrintZeroValues, RightPageFooterContent = RightPageFooterContent, RightPageHeaderContent = RightPageHeaderContent, ScaleToPages = ScaleToPages, ScaleToPagesX = ScaleToPagesX, ScaleToPagesY = ScaleToPagesY)
+    js.Dynamic.global.Object.assign(__obj, PageStyle)
+    __obj.asInstanceOf[TablePageStyle]
+  }
+}
+

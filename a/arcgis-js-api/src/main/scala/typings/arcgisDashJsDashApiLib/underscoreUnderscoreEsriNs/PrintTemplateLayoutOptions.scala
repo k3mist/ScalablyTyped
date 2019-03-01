@@ -47,3 +47,22 @@ trait PrintTemplateLayoutOptions
   var titleText: java.lang.String
 }
 
+object PrintTemplateLayoutOptions {
+  @scala.inline
+  def apply(
+    authorText: java.lang.String,
+    constructor: js.Function,
+    copyrightText: java.lang.String,
+    customTextElements: js.Array[_],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    legendLayers: js.Array[LegendLayer],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    titleText: java.lang.String,
+    scalebarUnit: java.lang.String = null
+  ): PrintTemplateLayoutOptions = {
+    val __obj = js.Dynamic.literal(authorText = authorText, constructor = constructor, copyrightText = copyrightText, customTextElements = customTextElements, hasOwnProperty = hasOwnProperty, legendLayers = legendLayers, propertyIsEnumerable = propertyIsEnumerable, titleText = titleText)
+    if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit)
+    __obj.asInstanceOf[PrintTemplateLayoutOptions]
+  }
+}
+

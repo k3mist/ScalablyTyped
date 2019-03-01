@@ -348,3 +348,61 @@ trait Anon_Alarms extends js.Object {
   val windowsNs: Anon_CreateCreateData
 }
 
+object Anon_Alarms {
+  @scala.inline
+  def apply(
+    alarmsNs: Anon_AlarmInfo,
+    bookmarksNs: Anon_Bookmark,
+    browserActionNs: Anon_DetailsDisable,
+    browserSettingsNs: Anon_AllowPopupsForUserEvents,
+    browsingDataNs: Anon_DataToRemove,
+    clipboardNs: Anon_ImageData,
+    commandsNs: Anon_Command,
+    contentScriptsNs: Anon_ContentScriptOptions,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    contextualIdentitiesNs: Anon_ChangeInfo,
+    cookiesNs: Anon_ChangeInfoDetails,
+    devtoolsNs: Anon_InspectedWindow,
+    dnsNs: Anon_Flags,
+    downloadsNs: Anon_AcceptDanger,
+    eventsNs: js.Any,
+    experimentsNs: js.Any,
+    extensionNs: Anon_Data,
+    extensionTypesNs: js.Any,
+    findNs: Anon_Find,
+    geckoProfilerNs: Anon_BreakpadId,
+    historyNs: Anon_AddUrl,
+    i18nNs: Anon_DetectLanguage,
+    identityNs: Anon_AccountDetails,
+    idleNs: Anon_DetectionIntervalInSeconds,
+    managementNs: Anon_Enabled,
+    menusNs: Anon_ACTIONMENUTOPLEVELLIMITCallback,
+    notificationsNs: Anon_ButtonIndex,
+    omniboxNs: Anon_Disposition,
+    pageActionNs: Anon_DetailsGetPopup,
+    permissionsNs: Anon_Contains,
+    pkcs11Ns: Anon_FlagsGetModuleSlots,
+    privacyNs: Anon_Network,
+    proxyNs: Anon_Details,
+    runtimeNs: Anon_Application,
+    searchNs: Anon_GetSearch,
+    sessionsNs: Anon_Callback,
+    sidebarActionNs: Anon_Close,
+    storageNs: Anon_AreaName,
+    tabsNs: Anon_ActiveInfo,
+    telemetryNs: Anon_CanUpload,
+    themeNs: Anon_DetailsGetCurrent,
+    topSitesNs: Anon_Get,
+    typesNs: js.Any,
+    underscoreManifestNs: js.Any,
+    userScriptsNs: Anon_OnBeforeScript,
+    webNavigationNs: Anon_DetailsGetAllFrames,
+    webRequestNs: Anon_DetailsFilterResponseData,
+    windowsNs: Anon_CreateCreateData
+  ): Anon_Alarms = {
+    val __obj = js.Dynamic.literal(alarmsNs = alarmsNs, bookmarksNs = bookmarksNs, browserActionNs = browserActionNs, browserSettingsNs = browserSettingsNs, browsingDataNs = browsingDataNs, clipboardNs = clipboardNs, commandsNs = commandsNs, contentScriptsNs = contentScriptsNs, contextMenusNs = contextMenusNs, contextualIdentitiesNs = contextualIdentitiesNs, cookiesNs = cookiesNs, devtoolsNs = devtoolsNs, dnsNs = dnsNs, downloadsNs = downloadsNs, eventsNs = eventsNs, experimentsNs = experimentsNs, extensionNs = extensionNs, extensionTypesNs = extensionTypesNs, findNs = findNs, geckoProfilerNs = geckoProfilerNs, historyNs = historyNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, managementNs = managementNs, menusNs = menusNs, notificationsNs = notificationsNs, omniboxNs = omniboxNs, pageActionNs = pageActionNs, permissionsNs = permissionsNs, pkcs11Ns = pkcs11Ns, privacyNs = privacyNs, proxyNs = proxyNs, runtimeNs = runtimeNs, searchNs = searchNs, sessionsNs = sessionsNs, sidebarActionNs = sidebarActionNs, storageNs = storageNs, tabsNs = tabsNs, telemetryNs = telemetryNs, themeNs = themeNs, topSitesNs = topSitesNs, typesNs = typesNs, underscoreManifestNs = underscoreManifestNs, userScriptsNs = userScriptsNs, webNavigationNs = webNavigationNs, webRequestNs = webRequestNs, windowsNs = windowsNs)
+  
+    __obj.asInstanceOf[Anon_Alarms]
+  }
+}
+

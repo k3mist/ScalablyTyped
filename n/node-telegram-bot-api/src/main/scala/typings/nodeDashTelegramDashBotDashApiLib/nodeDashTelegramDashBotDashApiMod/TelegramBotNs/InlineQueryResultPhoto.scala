@@ -19,3 +19,30 @@ trait InlineQueryResultPhoto
   var `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.photo
 }
 
+object InlineQueryResultPhoto {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    photo_url: java.lang.String,
+    thumb_url: java.lang.String,
+    `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.photo,
+    caption: java.lang.String = null,
+    description: java.lang.String = null,
+    input_message_content: InputMessageContent = null,
+    photo_height: scala.Int | scala.Double = null,
+    photo_width: scala.Int | scala.Double = null,
+    reply_markup: InlineKeyboardMarkup = null,
+    title: java.lang.String = null
+  ): InlineQueryResultPhoto = {
+    val __obj = js.Dynamic.literal(id = id, photo_url = photo_url, thumb_url = thumb_url, `type` = `type`)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
+    if (photo_height != null) __obj.updateDynamic("photo_height")(photo_height.asInstanceOf[js.Any])
+    if (photo_width != null) __obj.updateDynamic("photo_width")(photo_width.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[InlineQueryResultPhoto]
+  }
+}
+

@@ -50,3 +50,21 @@ trait Probe extends js.Object {
   val timeoutSeconds: scala.Double
 }
 
+object Probe {
+  @scala.inline
+  def apply(
+    exec: ExecAction,
+    failureThreshold: scala.Double,
+    httpGet: HTTPGetAction,
+    initialDelaySeconds: scala.Double,
+    periodSeconds: scala.Double,
+    successThreshold: scala.Double,
+    tcpSocket: TCPSocketAction,
+    timeoutSeconds: scala.Double
+  ): Probe = {
+    val __obj = js.Dynamic.literal(exec = exec, failureThreshold = failureThreshold, httpGet = httpGet, initialDelaySeconds = initialDelaySeconds, periodSeconds = periodSeconds, successThreshold = successThreshold, tcpSocket = tcpSocket, timeoutSeconds = timeoutSeconds)
+  
+    __obj.asInstanceOf[Probe]
+  }
+}
+

@@ -750,3 +750,70 @@ trait Anon_AccessibilityFeatures extends js.Object {
   def loadTimes(): chromeDashAppsLib.chromeNs.deprecatedButUsable
 }
 
+object Anon_AccessibilityFeatures {
+  @scala.inline
+  def apply(
+    Event: Anon_Event,
+    accessibilityFeaturesNs: Anon_AnimationPolicy,
+    alarmsNs: Anon_Alarm,
+    appNs: Anon_Runtime,
+    audioNs: Anon_Callback,
+    bluetoothLowEnergyNs: Anon_Advertisement,
+    bluetoothNs: Anon_AdapterInfo,
+    bluetoothSocketNs: Anon_Address,
+    browserNs: Anon_CallbackOpenTab,
+    certificateProviderNs: Anon_CallbackCertificates,
+    clipboardNs: Anon_AdditionalItems,
+    commandsNs: Anon_CallbackCommands,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    csi: js.Function0[Anon_OnloadT],
+    desktopCaptureNs: Anon_CallbackCancelChooseDesktopMedia,
+    diagnosticsNs: Anon_CallbackOptions,
+    displaySourceNs: Anon_AuthenticationMethod,
+    dnsNs: Anon_CallbackHostname,
+    documentScanNs: Anon_CallbackOptionsResult,
+    enterpriseNs: Anon_DeviceAttributes,
+    eventsNs: js.Any,
+    experimental: js.Any,
+    extensionTypesNs: Anon_Internal,
+    fileBrowserHandlerNs: Anon_CallbackDetails,
+    fileSystemNs: Anon_CallbackChildChangeType,
+    fileSystemProviderNs: Anon_ActionsCallback,
+    gcmNs: Anon_CallbackError,
+    hidNs: Anon_CallbackConnect,
+    i18nNs: Anon_CallbackDetectLanguage,
+    identityNs: Anon_Account,
+    idleNs: Anon_CallbackDetectionIntervalInSeconds,
+    instanceIDNs: Anon_CallbackCreationTime,
+    loadTimes: js.Function0[chromeDashAppsLib.chromeNs.deprecatedButUsable],
+    managementNs: Anon_CallbackExtensionDisabledReason,
+    mdnsNs: Anon_CallbackForceDiscovery,
+    mediaGalleriesNs: Anon_AddGalleryWatch,
+    networkingNs: Anon_Config,
+    notificationsNs: Anon_ButtonIndex,
+    permissionsNs: Anon_CallbackContains,
+    platformKeysNs: Anon_CallbackCertificateClientCertificateType,
+    powerNs: Anon_Level,
+    printerProviderNs: Anon_Capabilities,
+    runtimeNs: Anon_Application,
+    serial: chromeDashAppsLib.chromeNs.deprecated,
+    signedInDevicesNs: Anon_CallbackDevices,
+    socketsNs: Anon_TcpTcpServer,
+    storageNs: Anon_AreaName,
+    syncFileSystemNs: Anon_CallbackConflictResolutionPolicy,
+    systemNs: Anon_Cpu,
+    ttsNs: Anon_CallbackGetVoices,
+    typesNs: js.Any,
+    usbNs: Anon_AlternateSetting,
+    virtualKeyboardNs: Anon_CallbackRestrictFeatures,
+    vpnProviderNs: Anon_CallbackCreateConfig,
+    wallpaperNs: Anon_CallbackDetailsSetWallpaper,
+    webRequestNs: js.Any,
+    webViewRequestNs: Anon_AddRequestCookie
+  ): Anon_AccessibilityFeatures = {
+    val __obj = js.Dynamic.literal(Event = Event, accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, appNs = appNs, audioNs = audioNs, bluetoothLowEnergyNs = bluetoothLowEnergyNs, bluetoothNs = bluetoothNs, bluetoothSocketNs = bluetoothSocketNs, browserNs = browserNs, certificateProviderNs = certificateProviderNs, clipboardNs = clipboardNs, commandsNs = commandsNs, contextMenusNs = contextMenusNs, csi = csi, desktopCaptureNs = desktopCaptureNs, diagnosticsNs = diagnosticsNs, displaySourceNs = displaySourceNs, dnsNs = dnsNs, documentScanNs = documentScanNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, experimental = experimental, extensionTypesNs = extensionTypesNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemNs = fileSystemNs, fileSystemProviderNs = fileSystemProviderNs, gcmNs = gcmNs, hidNs = hidNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, instanceIDNs = instanceIDNs, loadTimes = loadTimes, managementNs = managementNs, mdnsNs = mdnsNs, mediaGalleriesNs = mediaGalleriesNs, networkingNs = networkingNs, notificationsNs = notificationsNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, runtimeNs = runtimeNs, serial = serial, signedInDevicesNs = signedInDevicesNs, socketsNs = socketsNs, storageNs = storageNs, syncFileSystemNs = syncFileSystemNs, systemNs = systemNs, ttsNs = ttsNs, typesNs = typesNs, usbNs = usbNs, virtualKeyboardNs = virtualKeyboardNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webRequestNs = webRequestNs, webViewRequestNs = webViewRequestNs)
+  
+    __obj.asInstanceOf[Anon_AccessibilityFeatures]
+  }
+}
+

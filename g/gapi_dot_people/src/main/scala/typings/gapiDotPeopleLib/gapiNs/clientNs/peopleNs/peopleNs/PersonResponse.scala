@@ -11,3 +11,16 @@ trait PersonResponse extends js.Object {
   var requestedResourceName: java.lang.String
 }
 
+object PersonResponse {
+  @scala.inline
+  def apply(
+    httpStatusCode: scala.Double,
+    person: gapiDotPeopleLib.gapiNs.clientNs.peopleNs.Person,
+    requestedResourceName: java.lang.String
+  ): PersonResponse = {
+    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode, person = person, requestedResourceName = requestedResourceName)
+  
+    __obj.asInstanceOf[PersonResponse]
+  }
+}
+

@@ -35,3 +35,17 @@ trait PodSecurityPolicy extends js.Object {
   val spec: PodSecurityPolicySpec
 }
 
+object PodSecurityPolicy {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicy,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: PodSecurityPolicySpec
+  ): PodSecurityPolicy = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec)
+  
+    __obj.asInstanceOf[PodSecurityPolicy]
+  }
+}
+

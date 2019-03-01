@@ -12,3 +12,17 @@ trait Anon_Data[T] extends js.Object {
   var statusText: java.lang.String
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply[T](
+    data: T,
+    headers: restfulDotJsLib.restfulDotJsMod.Headers,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): Anon_Data[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[Anon_Data[T]]
+  }
+}
+

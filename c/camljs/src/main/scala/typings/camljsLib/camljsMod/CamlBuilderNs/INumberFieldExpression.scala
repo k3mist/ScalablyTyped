@@ -26,3 +26,22 @@ trait INumberFieldExpression extends js.Object {
   def NotEqualTo(value: scala.Double): IExpression
 }
 
+object INumberFieldExpression {
+  @scala.inline
+  def apply(
+    EqualTo: js.Function1[scala.Double, IExpression],
+    GreaterThan: js.Function1[scala.Double, IExpression],
+    GreaterThanOrEqualTo: js.Function1[scala.Double, IExpression],
+    In: js.Function1[js.Array[scala.Double], IExpression],
+    IsNotNull: js.Function0[IExpression],
+    IsNull: js.Function0[IExpression],
+    LessThan: js.Function1[scala.Double, IExpression],
+    LessThanOrEqualTo: js.Function1[scala.Double, IExpression],
+    NotEqualTo: js.Function1[scala.Double, IExpression]
+  ): INumberFieldExpression = {
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, GreaterThan = GreaterThan, GreaterThanOrEqualTo = GreaterThanOrEqualTo, In = In, IsNotNull = IsNotNull, IsNull = IsNull, LessThan = LessThan, LessThanOrEqualTo = LessThanOrEqualTo, NotEqualTo = NotEqualTo)
+  
+    __obj.asInstanceOf[INumberFieldExpression]
+  }
+}
+

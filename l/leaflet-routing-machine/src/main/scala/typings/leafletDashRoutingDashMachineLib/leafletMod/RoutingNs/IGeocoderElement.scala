@@ -12,3 +12,12 @@ trait IGeocoderElement extends js.Object {
   var input: stdLib.HTMLElement
 }
 
+object IGeocoderElement {
+  @scala.inline
+  def apply(closeButton: stdLib.HTMLElement, container: stdLib.HTMLElement, input: stdLib.HTMLElement): IGeocoderElement = {
+    val __obj = js.Dynamic.literal(closeButton = closeButton, container = container, input = input)
+  
+    __obj.asInstanceOf[IGeocoderElement]
+  }
+}
+

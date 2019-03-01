@@ -82,3 +82,30 @@ trait IFieldInTableData extends js.Object {
   var qnTotalDistinctValues: scala.Double
 }
 
+object IFieldInTableData {
+  @scala.inline
+  def apply(
+    qComment: java.lang.String,
+    qDerivedFields: IDerivedFieldsInTableData,
+    qHasDuplicates: scala.Boolean,
+    qHasNull: scala.Boolean,
+    qHasWild: scala.Boolean,
+    qInformationDensity: scala.Double,
+    qIsSynthetic: scala.Boolean,
+    qKeyType: TableRecordKeyType,
+    qName: java.lang.String,
+    qOriginalFields: js.Array[java.lang.String],
+    qPresent: scala.Boolean,
+    qSubsetRatio: scala.Double,
+    qTags: js.Array[java.lang.String],
+    qnNonNulls: scala.Double,
+    qnPresentDistinctValues: scala.Double,
+    qnRows: scala.Double,
+    qnTotalDistinctValues: scala.Double
+  ): IFieldInTableData = {
+    val __obj = js.Dynamic.literal(qComment = qComment, qDerivedFields = qDerivedFields, qHasDuplicates = qHasDuplicates, qHasNull = qHasNull, qHasWild = qHasWild, qInformationDensity = qInformationDensity, qIsSynthetic = qIsSynthetic, qKeyType = qKeyType, qName = qName, qOriginalFields = qOriginalFields, qPresent = qPresent, qSubsetRatio = qSubsetRatio, qTags = qTags, qnNonNulls = qnNonNulls, qnPresentDistinctValues = qnPresentDistinctValues, qnRows = qnRows, qnTotalDistinctValues = qnTotalDistinctValues)
+  
+    __obj.asInstanceOf[IFieldInTableData]
+  }
+}
+

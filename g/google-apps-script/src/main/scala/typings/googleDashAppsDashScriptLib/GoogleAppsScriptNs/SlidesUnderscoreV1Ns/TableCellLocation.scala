@@ -12,3 +12,12 @@ trait TableCellLocation extends js.Object {
   var row_index: scala.Double
 }
 
+object TableCellLocation {
+  @scala.inline
+  def apply(column_index: scala.Double, row_index: scala.Double): TableCellLocation = {
+    val __obj = js.Dynamic.literal(column_index = column_index, row_index = row_index)
+  
+    __obj.asInstanceOf[TableCellLocation]
+  }
+}
+

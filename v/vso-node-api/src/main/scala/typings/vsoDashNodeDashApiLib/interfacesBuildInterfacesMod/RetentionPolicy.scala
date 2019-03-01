@@ -27,3 +27,20 @@ trait RetentionPolicy extends js.Object {
   var minimumToKeep: scala.Double
 }
 
+object RetentionPolicy {
+  @scala.inline
+  def apply(
+    artifactTypesToDelete: js.Array[java.lang.String],
+    artifacts: js.Array[java.lang.String],
+    branches: js.Array[java.lang.String],
+    daysToKeep: scala.Double,
+    deleteBuildRecord: scala.Boolean,
+    deleteTestResults: scala.Boolean,
+    minimumToKeep: scala.Double
+  ): RetentionPolicy = {
+    val __obj = js.Dynamic.literal(artifactTypesToDelete = artifactTypesToDelete, artifacts = artifacts, branches = branches, daysToKeep = daysToKeep, deleteBuildRecord = deleteBuildRecord, deleteTestResults = deleteTestResults, minimumToKeep = minimumToKeep)
+  
+    __obj.asInstanceOf[RetentionPolicy]
+  }
+}
+

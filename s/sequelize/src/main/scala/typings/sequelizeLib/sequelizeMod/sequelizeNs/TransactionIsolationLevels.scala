@@ -20,3 +20,17 @@ trait TransactionIsolationLevels extends js.Object {
   var SERIALIZABLE: TransactionIsolationLevelSerializable
 }
 
+object TransactionIsolationLevels {
+  @scala.inline
+  def apply(
+    READ_COMMITTED: TransactionIsolationLevelReadCommitted,
+    READ_UNCOMMITTED: TransactionIsolationLevelReadUncommitted,
+    REPEATABLE_READ: TransactionIsolationLevelRepeatableRead,
+    SERIALIZABLE: TransactionIsolationLevelSerializable
+  ): TransactionIsolationLevels = {
+    val __obj = js.Dynamic.literal(READ_COMMITTED = READ_COMMITTED, READ_UNCOMMITTED = READ_UNCOMMITTED, REPEATABLE_READ = REPEATABLE_READ, SERIALIZABLE = SERIALIZABLE)
+  
+    __obj.asInstanceOf[TransactionIsolationLevels]
+  }
+}
+

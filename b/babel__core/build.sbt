@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "babel__core"
-version := "7.1-dt-20190216Z-c30b99"
+version := "7.1-dt-20190216Z-e0a5d8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "babel__generator" % "7.0-dt-20190213Z-97bf85",
-  "org.scalablytyped" %%% "babel__parser" % "7.3.3-c7e21e",
-  "org.scalablytyped" %%% "babel__template" % "7.0-dt-20190213Z-aeb9d2",
-  "org.scalablytyped" %%% "babel__traverse" % "7.0-dt-20190213Z-f4dcb2",
-  "org.scalablytyped" %%% "babel__types" % "7.3.3-984fd6",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-0a072d",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
+  "org.scalablytyped" %%% "babel__generator" % "7.0-dt-20190213Z-90a2be",
+  "org.scalablytyped" %%% "babel__parser" % "7.3.3-69c479",
+  "org.scalablytyped" %%% "babel__template" % "7.0-dt-20190213Z-0ae476",
+  "org.scalablytyped" %%% "babel__traverse" % "7.0-dt-20190213Z-bedbf2",
+  "org.scalablytyped" %%% "babel__types" % "7.3.3-9ca449",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-e580c8",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

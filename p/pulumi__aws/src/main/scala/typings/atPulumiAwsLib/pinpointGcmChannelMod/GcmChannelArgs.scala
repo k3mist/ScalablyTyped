@@ -20,3 +20,16 @@ trait GcmChannelArgs extends js.Object {
   val enabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object GcmChannelArgs {
+  @scala.inline
+  def apply(
+    apiKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    applicationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): GcmChannelArgs = {
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], applicationId = applicationId.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GcmChannelArgs]
+  }
+}
+

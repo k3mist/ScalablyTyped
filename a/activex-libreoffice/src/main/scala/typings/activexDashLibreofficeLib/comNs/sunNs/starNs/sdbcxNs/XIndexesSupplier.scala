@@ -20,3 +20,18 @@ trait XIndexesSupplier
   def getIndexes(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XIndexesSupplier {
+  @scala.inline
+  def apply(
+    Indexes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getIndexes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIndexesSupplier = {
+    val __obj = js.Dynamic.literal(Indexes = Indexes, acquire = acquire, getIndexes = getIndexes, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIndexesSupplier]
+  }
+}
+

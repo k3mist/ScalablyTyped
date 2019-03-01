@@ -11,3 +11,12 @@ trait Filter extends js.Object {
   var value: js.Any
 }
 
+object Filter {
+  @scala.inline
+  def apply(id: java.lang.String, value: js.Any, pivotId: java.lang.String = null): Filter = {
+    val __obj = js.Dynamic.literal(id = id, value = value)
+    if (pivotId != null) __obj.updateDynamic("pivotId")(pivotId)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

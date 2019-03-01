@@ -28,3 +28,12 @@ trait IPackageDimensions extends js.Object {
   var width: scala.Double
 }
 
+object IPackageDimensions {
+  @scala.inline
+  def apply(height: scala.Double, length: scala.Double, weight: scala.Double, width: scala.Double): IPackageDimensions = {
+    val __obj = js.Dynamic.literal(height = height, length = length, weight = weight, width = width)
+  
+    __obj.asInstanceOf[IPackageDimensions]
+  }
+}
+

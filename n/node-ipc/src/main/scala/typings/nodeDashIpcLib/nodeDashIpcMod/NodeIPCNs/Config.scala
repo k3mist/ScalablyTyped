@@ -115,3 +115,32 @@ trait Config extends js.Object {
   def logger(msg: java.lang.String): scala.Unit
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    appspace: java.lang.String,
+    encoding: nodeDashIpcLib.nodeDashIpcLibStrings.ascii | nodeDashIpcLib.nodeDashIpcLibStrings.utf8 | nodeDashIpcLib.nodeDashIpcLibStrings.utf16le | nodeDashIpcLib.nodeDashIpcLibStrings.ucs2 | nodeDashIpcLib.nodeDashIpcLibStrings.base64 | nodeDashIpcLib.nodeDashIpcLibStrings.hex,
+    id: java.lang.String,
+    interfaces: nodeDashIpcLib.Anon_Family,
+    logDepth: scala.Double,
+    logInColor: scala.Boolean,
+    logger: js.Function1[java.lang.String, scala.Unit],
+    maxConnections: scala.Double,
+    maxRetries: scala.Boolean,
+    networkHost: java.lang.String,
+    networkPort: scala.Double,
+    rawBuffer: scala.Boolean,
+    retry: scala.Double,
+    silent: scala.Boolean,
+    socketRoot: java.lang.String,
+    stopRetrying: scala.Boolean,
+    sync: scala.Boolean,
+    tls: nodeDashIpcLib.Anon_Private,
+    unlink: scala.Boolean
+  ): Config = {
+    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = logger, maxConnections = maxConnections, maxRetries = maxRetries, networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

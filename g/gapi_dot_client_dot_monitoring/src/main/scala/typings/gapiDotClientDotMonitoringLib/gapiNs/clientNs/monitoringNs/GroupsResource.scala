@@ -19,3 +19,34 @@ trait GroupsResource extends js.Object {
   def update(request: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Group]
 }
 
+object GroupsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Group]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Group]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltAncestorsOfGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListGroupsResponse]
+    ],
+    members: MembersResource,
+    update: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Group]
+    ]
+  ): GroupsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, members = members, update = update)
+  
+    __obj.asInstanceOf[GroupsResource]
+  }
+}
+

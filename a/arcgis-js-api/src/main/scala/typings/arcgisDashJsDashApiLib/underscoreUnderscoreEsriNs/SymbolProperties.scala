@@ -16,3 +16,12 @@ trait SymbolProperties extends js.Object {
   var color: js.UndefOr[Color | js.Array[scala.Double] | java.lang.String] = js.undefined
 }
 
+object SymbolProperties {
+  @scala.inline
+  def apply(color: Color | js.Array[scala.Double] | java.lang.String = null): SymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SymbolProperties]
+  }
+}
+

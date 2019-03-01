@@ -11,3 +11,12 @@ trait Link extends js.Object {
   var rel: java.lang.String
 }
 
+object Link {
+  @scala.inline
+  def apply(href: java.lang.String, method: java.lang.String, rel: java.lang.String): Link = {
+    val __obj = js.Dynamic.literal(href = href, method = method, rel = rel)
+  
+    __obj.asInstanceOf[Link]
+  }
+}
+

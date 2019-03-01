@@ -16,3 +16,22 @@ trait AssertionResult extends js.Object {
   var title: java.lang.String
 }
 
+object AssertionResult {
+  @scala.inline
+  def apply(
+    ancestorTitles: js.Array[java.lang.String],
+    failureMessages: js.Array[java.lang.String],
+    fullName: java.lang.String,
+    numPassingAsserts: scala.Double,
+    status: Status,
+    title: java.lang.String,
+    duration: scala.Int | scala.Double = null,
+    location: Callsite = null
+  ): AssertionResult = {
+    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles, failureMessages = failureMessages, fullName = fullName, numPassingAsserts = numPassingAsserts, status = status, title = title)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[AssertionResult]
+  }
+}
+

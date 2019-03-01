@@ -93,3 +93,48 @@ trait TextProperties
   var TextWritingMode: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.WritingMode
 }
 
+object TextProperties {
+  @scala.inline
+  def apply(
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    IsNumbering: scala.Boolean,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    ParagraphPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian = null,
+    ParagraphPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex = null,
+    TextAnimationAmount: scala.Double,
+    TextAnimationCount: scala.Double,
+    TextAnimationDelay: scala.Double,
+    TextAnimationDirection: TextAnimationDirection,
+    TextAnimationKind: TextAnimationKind,
+    TextAnimationStartInside: scala.Boolean,
+    TextAnimationStopInside: scala.Boolean,
+    TextAutoGrowHeight: scala.Boolean,
+    TextAutoGrowWidth: scala.Boolean,
+    TextContourFrame: scala.Boolean,
+    TextFitToSize: TextFitToSizeType,
+    TextHorizontalAdjust: TextHorizontalAdjust,
+    TextLeftDistance: scala.Double,
+    TextLowerDistance: scala.Double,
+    TextMaximumFrameHeight: scala.Double,
+    TextMaximumFrameWidth: scala.Double,
+    TextMinimumFrameHeight: scala.Double,
+    TextMinimumFrameWidth: scala.Double,
+    TextRightDistance: scala.Double,
+    TextUpperDistance: scala.Double,
+    TextVerticalAdjust: TextVerticalAdjust,
+    TextWritingMode: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.WritingMode
+  ): TextProperties = {
+    val __obj = js.Dynamic.literal(IsNumbering = IsNumbering, NumberingRules = NumberingRules, TextAnimationAmount = TextAnimationAmount, TextAnimationCount = TextAnimationCount, TextAnimationDelay = TextAnimationDelay, TextAnimationDirection = TextAnimationDirection, TextAnimationKind = TextAnimationKind, TextAnimationStartInside = TextAnimationStartInside, TextAnimationStopInside = TextAnimationStopInside, TextAutoGrowHeight = TextAutoGrowHeight, TextAutoGrowWidth = TextAutoGrowWidth, TextContourFrame = TextContourFrame, TextFitToSize = TextFitToSize, TextHorizontalAdjust = TextHorizontalAdjust, TextLeftDistance = TextLeftDistance, TextLowerDistance = TextLowerDistance, TextMaximumFrameHeight = TextMaximumFrameHeight, TextMaximumFrameWidth = TextMaximumFrameWidth, TextMinimumFrameHeight = TextMinimumFrameHeight, TextMinimumFrameWidth = TextMinimumFrameWidth, TextRightDistance = TextRightDistance, TextUpperDistance = TextUpperDistance, TextVerticalAdjust = TextVerticalAdjust, TextWritingMode = TextWritingMode)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
+    __obj.asInstanceOf[TextProperties]
+  }
+}
+

@@ -31,3 +31,33 @@ trait TorrentProvider extends js.Object {
   var torrentDetailsSelector: java.lang.String
 }
 
+object TorrentProvider {
+  @scala.inline
+  def apply(
+    autoFixUnstableUrl: scala.Boolean,
+    baseUrl: java.lang.String,
+    categories: js.Any,
+    defaultCategory: java.lang.String,
+    enableCloudFareBypass: scala.Boolean,
+    headers: js.Any,
+    itemSelectors: js.Any,
+    itemsSelector: java.lang.String,
+    loginQueryString: java.lang.String,
+    loginUrl: java.lang.String,
+    magnetSelector: java.lang.String,
+    name: java.lang.String,
+    paginateSelector: java.lang.String,
+    requireAuthentification: scala.Boolean,
+    resultsPerPageCount: scala.Double,
+    searchUrl: java.lang.String,
+    supportCookiesAuthentification: scala.Boolean,
+    supportCredentialsAuthentification: scala.Boolean,
+    supportTokenAuthentification: scala.Boolean,
+    torrentDetailsSelector: java.lang.String
+  ): TorrentProvider = {
+    val __obj = js.Dynamic.literal(autoFixUnstableUrl = autoFixUnstableUrl, baseUrl = baseUrl, categories = categories, defaultCategory = defaultCategory, enableCloudFareBypass = enableCloudFareBypass, headers = headers, itemSelectors = itemSelectors, itemsSelector = itemsSelector, loginQueryString = loginQueryString, loginUrl = loginUrl, magnetSelector = magnetSelector, name = name, paginateSelector = paginateSelector, requireAuthentification = requireAuthentification, resultsPerPageCount = resultsPerPageCount, searchUrl = searchUrl, supportCookiesAuthentification = supportCookiesAuthentification, supportCredentialsAuthentification = supportCredentialsAuthentification, supportTokenAuthentification = supportTokenAuthentification, torrentDetailsSelector = torrentDetailsSelector)
+  
+    __obj.asInstanceOf[TorrentProvider]
+  }
+}
+

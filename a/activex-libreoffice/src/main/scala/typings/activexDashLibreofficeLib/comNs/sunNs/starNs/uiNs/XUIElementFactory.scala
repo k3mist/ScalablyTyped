@@ -30,3 +30,21 @@ trait XUIElementFactory
   ): XUIElement
 }
 
+object XUIElementFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createUIElement: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XUIElement
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUIElementFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createUIElement = createUIElement, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUIElementFactory]
+  }
+}
+

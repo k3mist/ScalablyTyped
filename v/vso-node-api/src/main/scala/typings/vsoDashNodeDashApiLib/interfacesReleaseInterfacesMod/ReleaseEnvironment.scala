@@ -138,3 +138,47 @@ trait ReleaseEnvironment extends js.Object {
   var workflowTasks: js.Array[WorkflowTask]
 }
 
+object ReleaseEnvironment {
+  @scala.inline
+  def apply(
+    conditions: js.Array[ReleaseCondition],
+    createdOn: stdLib.Date,
+    definitionEnvironmentId: scala.Double,
+    demands: js.Array[_],
+    deployPhasesSnapshot: js.Array[DeployPhase],
+    deploySteps: js.Array[DeploymentAttempt],
+    environmentOptions: EnvironmentOptions,
+    id: scala.Double,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    nextScheduledUtcTime: stdLib.Date,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    postApprovalsSnapshot: ReleaseDefinitionApprovals,
+    postDeployApprovals: js.Array[ReleaseApproval],
+    postDeploymentGatesSnapshot: ReleaseDefinitionGatesStep,
+    preApprovalsSnapshot: ReleaseDefinitionApprovals,
+    preDeployApprovals: js.Array[ReleaseApproval],
+    preDeploymentGatesSnapshot: ReleaseDefinitionGatesStep,
+    processParameters: vsoDashNodeDashApiLib.interfacesDistributedTaskCommonInterfacesMod.ProcessParameters,
+    queueId: scala.Double,
+    rank: scala.Double,
+    release: ReleaseShallowReference,
+    releaseCreatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseDescription: java.lang.String,
+    releaseId: scala.Double,
+    scheduledDeploymentTime: stdLib.Date,
+    schedules: js.Array[ReleaseSchedule],
+    status: EnvironmentStatus,
+    timeToDeploy: scala.Double,
+    triggerReason: java.lang.String,
+    variableGroups: js.Array[VariableGroup],
+    variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue],
+    workflowTasks: js.Array[WorkflowTask]
+  ): ReleaseEnvironment = {
+    val __obj = js.Dynamic.literal(conditions = conditions, createdOn = createdOn, definitionEnvironmentId = definitionEnvironmentId, demands = demands, deployPhasesSnapshot = deployPhasesSnapshot, deploySteps = deploySteps, environmentOptions = environmentOptions, id = id, modifiedOn = modifiedOn, name = name, nextScheduledUtcTime = nextScheduledUtcTime, owner = owner, postApprovalsSnapshot = postApprovalsSnapshot, postDeployApprovals = postDeployApprovals, postDeploymentGatesSnapshot = postDeploymentGatesSnapshot, preApprovalsSnapshot = preApprovalsSnapshot, preDeployApprovals = preDeployApprovals, preDeploymentGatesSnapshot = preDeploymentGatesSnapshot, processParameters = processParameters, queueId = queueId, rank = rank, release = release, releaseCreatedBy = releaseCreatedBy, releaseDefinition = releaseDefinition, releaseDescription = releaseDescription, releaseId = releaseId, scheduledDeploymentTime = scheduledDeploymentTime, schedules = schedules, status = status, timeToDeploy = timeToDeploy, triggerReason = triggerReason, variableGroups = variableGroups, variables = variables, workflowTasks = workflowTasks)
+  
+    __obj.asInstanceOf[ReleaseEnvironment]
+  }
+}
+

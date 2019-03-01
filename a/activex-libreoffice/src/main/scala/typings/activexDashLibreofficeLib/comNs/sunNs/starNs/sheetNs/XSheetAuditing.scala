@@ -44,3 +44,23 @@ trait XSheetAuditing
   def showPrecedents(aPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress): scala.Boolean
 }
 
+object XSheetAuditing {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    clearArrows: js.Function0[scala.Unit],
+    hideDependents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
+    hidePrecedents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    showDependents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
+    showErrors: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean],
+    showInvalid: js.Function0[scala.Boolean],
+    showPrecedents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean]
+  ): XSheetAuditing = {
+    val __obj = js.Dynamic.literal(acquire = acquire, clearArrows = clearArrows, hideDependents = hideDependents, hidePrecedents = hidePrecedents, queryInterface = queryInterface, release = release, showDependents = showDependents, showErrors = showErrors, showInvalid = showInvalid, showPrecedents = showPrecedents)
+  
+    __obj.asInstanceOf[XSheetAuditing]
+  }
+}
+

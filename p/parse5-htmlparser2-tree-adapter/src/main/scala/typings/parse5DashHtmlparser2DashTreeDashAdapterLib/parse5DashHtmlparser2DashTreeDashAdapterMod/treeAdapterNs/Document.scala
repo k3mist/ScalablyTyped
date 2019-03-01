@@ -24,3 +24,27 @@ trait Document extends ParentNode {
   var `x-mode`: parse5Lib.parse5Mod.DocumentMode
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    childNodes: js.Array[Node],
+    children: js.Array[Node],
+    firstChild: Node,
+    lastChild: Node,
+    name: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.root,
+    next: Node,
+    nextSibling: Node,
+    nodeType: scala.Double,
+    parent: ParentNode,
+    parentNode: ParentNode,
+    prev: Node,
+    previousSibling: Node,
+    `type`: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.root,
+    `x-mode`: parse5Lib.parse5Mod.DocumentMode
+  ): Document = {
+    val __obj = js.Dynamic.literal(childNodes = childNodes, children = children, firstChild = firstChild, lastChild = lastChild, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling, `type` = `type`)
+    __obj.updateDynamic("x-mode")(`x-mode`)
+    __obj.asInstanceOf[Document]
+  }
+}
+

@@ -19,3 +19,20 @@ trait RenameInfoSuccess extends RenameInfo {
   var triggerSpan: TextSpan
 }
 
+object RenameInfoSuccess {
+  @scala.inline
+  def apply(
+    canRename: typescriptLib.typescriptLibNumbers.`true`,
+    displayName: java.lang.String,
+    fullDisplayName: java.lang.String,
+    kind: ScriptElementKind,
+    kindModifiers: java.lang.String,
+    triggerSpan: TextSpan,
+    fileToRename: java.lang.String = null
+  ): RenameInfoSuccess = {
+    val __obj = js.Dynamic.literal(canRename = canRename, displayName = displayName, fullDisplayName = fullDisplayName, kind = kind, kindModifiers = kindModifiers, triggerSpan = triggerSpan)
+    if (fileToRename != null) __obj.updateDynamic("fileToRename")(fileToRename)
+    __obj.asInstanceOf[RenameInfoSuccess]
+  }
+}
+

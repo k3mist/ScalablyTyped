@@ -14,3 +14,19 @@ trait Icon extends js.Object {
   var source: java.lang.String
 }
 
+object Icon {
+  @scala.inline
+  def apply(
+    data: nodeLib.Buffer,
+    ext: java.lang.String,
+    mime: java.lang.String,
+    name: java.lang.String,
+    size: scala.Double,
+    source: java.lang.String
+  ): Icon = {
+    val __obj = js.Dynamic.literal(data = data, ext = ext, mime = mime, name = name, size = size, source = source)
+  
+    __obj.asInstanceOf[Icon]
+  }
+}
+

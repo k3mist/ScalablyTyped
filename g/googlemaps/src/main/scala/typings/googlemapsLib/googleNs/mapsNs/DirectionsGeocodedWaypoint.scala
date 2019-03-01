@@ -11,3 +11,12 @@ trait DirectionsGeocodedWaypoint extends js.Object {
   var types: js.Array[java.lang.String]
 }
 
+object DirectionsGeocodedWaypoint {
+  @scala.inline
+  def apply(partial_match: scala.Boolean, place_id: java.lang.String, types: js.Array[java.lang.String]): DirectionsGeocodedWaypoint = {
+    val __obj = js.Dynamic.literal(partial_match = partial_match, place_id = place_id, types = types)
+  
+    __obj.asInstanceOf[DirectionsGeocodedWaypoint]
+  }
+}
+

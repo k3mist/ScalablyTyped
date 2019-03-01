@@ -10,3 +10,15 @@ trait Anon_VpcIdVpcRegion extends js.Object {
   var vpcRegion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_VpcIdVpcRegion {
+  @scala.inline
+  def apply(
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_VpcIdVpcRegion = {
+    val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
+    if (vpcRegion != null) __obj.updateDynamic("vpcRegion")(vpcRegion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_VpcIdVpcRegion]
+  }
+}
+

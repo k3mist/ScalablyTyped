@@ -20,3 +20,25 @@ trait RegionsMixin extends js.Object {
   var showChildView: js.Any
 }
 
+object RegionsMixin {
+  @scala.inline
+  def apply(
+    addRegion: js.Any,
+    addRegions: js.Any,
+    detachChildView: js.Any,
+    emptyRegions: js.Any,
+    getChildView: js.Any,
+    getRegion: js.Any,
+    getRegions: js.Any,
+    hasRegion: js.Any,
+    regionClass: js.Any,
+    removeRegion: js.Any,
+    removeRegions: js.Any,
+    showChildView: js.Any
+  ): RegionsMixin = {
+    val __obj = js.Dynamic.literal(addRegion = addRegion, addRegions = addRegions, detachChildView = detachChildView, emptyRegions = emptyRegions, getChildView = getChildView, getRegion = getRegion, getRegions = getRegions, hasRegion = hasRegion, regionClass = regionClass, removeRegion = removeRegion, removeRegions = removeRegions, showChildView = showChildView)
+  
+    __obj.asInstanceOf[RegionsMixin]
+  }
+}
+

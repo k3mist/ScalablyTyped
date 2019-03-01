@@ -47,3 +47,53 @@ trait FocusPanel extends js.Object {
   def setWidth(width: java.lang.String): FocusPanel
 }
 
+object FocusPanel {
+  @scala.inline
+  def apply(
+    add: js.Function1[Widget, FocusPanel],
+    addBlurHandler: js.Function1[Handler, FocusPanel],
+    addClickHandler: js.Function1[Handler, FocusPanel],
+    addFocusHandler: js.Function1[Handler, FocusPanel],
+    addKeyDownHandler: js.Function1[Handler, FocusPanel],
+    addKeyPressHandler: js.Function1[Handler, FocusPanel],
+    addKeyUpHandler: js.Function1[Handler, FocusPanel],
+    addMouseDownHandler: js.Function1[Handler, FocusPanel],
+    addMouseMoveHandler: js.Function1[Handler, FocusPanel],
+    addMouseOutHandler: js.Function1[Handler, FocusPanel],
+    addMouseOverHandler: js.Function1[Handler, FocusPanel],
+    addMouseUpHandler: js.Function1[Handler, FocusPanel],
+    addMouseWheelHandler: js.Function1[Handler, FocusPanel],
+    addStyleDependentName: js.Function1[java.lang.String, FocusPanel],
+    addStyleName: js.Function1[java.lang.String, FocusPanel],
+    clear: js.Function0[FocusPanel],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, FocusPanel],
+    setFocus: js.Function1[scala.Boolean, FocusPanel],
+    setHeight: js.Function1[java.lang.String, FocusPanel],
+    setId: js.Function1[java.lang.String, FocusPanel],
+    setLayoutData: js.Function1[js.Object, FocusPanel],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      FocusPanel
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, FocusPanel],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, FocusPanel],
+    setStyleAttributes: js.Function1[js.Object, FocusPanel],
+    setStyleName: js.Function1[java.lang.String, FocusPanel],
+    setStylePrimaryName: js.Function1[java.lang.String, FocusPanel],
+    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FocusPanel],
+    setTag: js.Function1[java.lang.String, FocusPanel],
+    setTitle: js.Function1[java.lang.String, FocusPanel],
+    setVisible: js.Function1[scala.Boolean, FocusPanel],
+    setWidget: js.Function1[Widget, FocusPanel],
+    setWidth: js.Function1[java.lang.String, FocusPanel]
+  ): FocusPanel = {
+    val __obj = js.Dynamic.literal(add = add, addBlurHandler = addBlurHandler, addClickHandler = addClickHandler, addFocusHandler = addFocusHandler, addKeyDownHandler = addKeyDownHandler, addKeyPressHandler = addKeyPressHandler, addKeyUpHandler = addKeyUpHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setAccessKey = setAccessKey, setFocus = setFocus, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTabIndex = setTabIndex, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+  
+    __obj.asInstanceOf[FocusPanel]
+  }
+}
+

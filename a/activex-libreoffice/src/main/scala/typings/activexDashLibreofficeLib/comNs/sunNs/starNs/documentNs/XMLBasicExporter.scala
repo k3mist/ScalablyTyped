@@ -16,3 +16,26 @@ trait XMLBasicExporter extends XXMLBasicExporter {
   def createWithHandler(DocumentHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler): scala.Unit
 }
 
+object XMLBasicExporter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    createWithHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      scala.Unit
+    ],
+    filter: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit]
+  ): XMLBasicExporter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, cancel = cancel, createWithHandler = createWithHandler, filter = filter, queryInterface = queryInterface, release = release, setSourceDocument = setSourceDocument)
+  
+    __obj.asInstanceOf[XMLBasicExporter]
+  }
+}
+

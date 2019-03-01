@@ -46,3 +46,50 @@ trait Strings extends js.Object {
   var video: java.lang.String
 }
 
+object Strings {
+  @scala.inline
+  def apply(
+    addExtraScreenshot: java.lang.String,
+    addImageFromGallery: java.lang.String,
+    addVideoMessage: java.lang.String,
+    addVoiceMessage: java.lang.String,
+    audio: java.lang.String,
+    audioRecordingPermissionDeniedMessage: java.lang.String,
+    audioRecordingPermissionDeniedTitle: java.lang.String,
+    cancelButtonText: java.lang.String,
+    chatsHeaderTitle: java.lang.String,
+    chatsNoConversationsHeadlineText: java.lang.String,
+    commentFieldHintForBugReport: java.lang.String,
+    commentFieldHintForFeedback: java.lang.String,
+    conversationsHeaderTitle: java.lang.String,
+    doneButtonText: java.lang.String,
+    edgeSwipeStartHint: java.lang.String,
+    emailFieldHint: java.lang.String,
+    image: java.lang.String,
+    invalidCommentMessage: java.lang.String,
+    invalidCommentTitle: java.lang.String,
+    invalidEmailMessage: java.lang.String,
+    invalidEmailTitle: java.lang.String,
+    invocationHeader: java.lang.String,
+    messageNotification: java.lang.String,
+    messagesNotificationAndOthers: java.lang.String,
+    okButtonText: java.lang.String,
+    recordingMessageToHoldText: java.lang.String,
+    recordingMessageToReleaseText: java.lang.String,
+    reportBug: java.lang.String,
+    reportFeedback: java.lang.String,
+    screenshotHeaderTitle: java.lang.String,
+    shakeHint: java.lang.String,
+    startAlertText: java.lang.String,
+    swipeHint: java.lang.String,
+    talkToUs: java.lang.String,
+    team: java.lang.String,
+    thankYouText: java.lang.String,
+    video: java.lang.String
+  ): Strings = {
+    val __obj = js.Dynamic.literal(addExtraScreenshot = addExtraScreenshot, addImageFromGallery = addImageFromGallery, addVideoMessage = addVideoMessage, addVoiceMessage = addVoiceMessage, audio = audio, audioRecordingPermissionDeniedMessage = audioRecordingPermissionDeniedMessage, audioRecordingPermissionDeniedTitle = audioRecordingPermissionDeniedTitle, cancelButtonText = cancelButtonText, chatsHeaderTitle = chatsHeaderTitle, chatsNoConversationsHeadlineText = chatsNoConversationsHeadlineText, commentFieldHintForBugReport = commentFieldHintForBugReport, commentFieldHintForFeedback = commentFieldHintForFeedback, conversationsHeaderTitle = conversationsHeaderTitle, doneButtonText = doneButtonText, edgeSwipeStartHint = edgeSwipeStartHint, emailFieldHint = emailFieldHint, image = image, invalidCommentMessage = invalidCommentMessage, invalidCommentTitle = invalidCommentTitle, invalidEmailMessage = invalidEmailMessage, invalidEmailTitle = invalidEmailTitle, invocationHeader = invocationHeader, messageNotification = messageNotification, messagesNotificationAndOthers = messagesNotificationAndOthers, okButtonText = okButtonText, recordingMessageToHoldText = recordingMessageToHoldText, recordingMessageToReleaseText = recordingMessageToReleaseText, reportBug = reportBug, reportFeedback = reportFeedback, screenshotHeaderTitle = screenshotHeaderTitle, shakeHint = shakeHint, startAlertText = startAlertText, swipeHint = swipeHint, talkToUs = talkToUs, team = team, thankYouText = thankYouText, video = video)
+  
+    __obj.asInstanceOf[Strings]
+  }
+}
+

@@ -31,3 +31,36 @@ trait Tickable extends js.Object {
   def shouldIgnoreTicks(): scala.Boolean
 }
 
+object Tickable {
+  @scala.inline
+  def apply(
+    addModifier: js.Function1[Modifier, Tickable],
+    addToModifierContext: js.Function1[ModifierContext, scala.Unit],
+    applyTickMultiplier: js.Function2[scala.Double, scala.Double, scala.Unit],
+    getBoundingBox: js.Function0[BoundingBox],
+    getCenterXShift: js.Function0[scala.Double],
+    getIntrinsicTicks: js.Function0[Fraction],
+    getTickMultiplier: js.Function0[Fraction],
+    getTicks: js.Function0[Fraction],
+    getTuplet: js.Function0[Tuplet],
+    getVoice: js.Function0[Voice],
+    getWidth: js.Function0[scala.Double],
+    isCenterAligned: js.Function0[scala.Boolean],
+    postFormat: js.Function0[Tickable],
+    preFormat: js.Function0[scala.Unit],
+    setCenterAlignment: js.Function1[scala.Boolean, Tickable],
+    setContext: js.Function1[vexflowLib.VexNs.IRenderContext, scala.Unit],
+    setDuration: js.Function1[Fraction, scala.Unit],
+    setIntrinsicTicks: js.Function1[Fraction, scala.Unit],
+    setTickContext: js.Function1[TickContext, scala.Unit],
+    setTuplet: js.Function1[Tuplet, Tickable],
+    setVoice: js.Function1[Voice, scala.Unit],
+    setXShift: js.Function1[scala.Double, Tickable],
+    shouldIgnoreTicks: js.Function0[scala.Boolean]
+  ): Tickable = {
+    val __obj = js.Dynamic.literal(addModifier = addModifier, addToModifierContext = addToModifierContext, applyTickMultiplier = applyTickMultiplier, getBoundingBox = getBoundingBox, getCenterXShift = getCenterXShift, getIntrinsicTicks = getIntrinsicTicks, getTickMultiplier = getTickMultiplier, getTicks = getTicks, getTuplet = getTuplet, getVoice = getVoice, getWidth = getWidth, isCenterAligned = isCenterAligned, postFormat = postFormat, preFormat = preFormat, setCenterAlignment = setCenterAlignment, setContext = setContext, setDuration = setDuration, setIntrinsicTicks = setIntrinsicTicks, setTickContext = setTickContext, setTuplet = setTuplet, setVoice = setVoice, setXShift = setXShift, shouldIgnoreTicks = shouldIgnoreTicks)
+  
+    __obj.asInstanceOf[Tickable]
+  }
+}
+

@@ -20,3 +20,19 @@ trait GitBaseVersionDescriptor extends GitVersionDescriptor {
   var baseVersionType: GitVersionType
 }
 
+object GitBaseVersionDescriptor {
+  @scala.inline
+  def apply(
+    baseVersion: java.lang.String,
+    baseVersionOptions: GitVersionOptions,
+    baseVersionType: GitVersionType,
+    version: java.lang.String,
+    versionOptions: GitVersionOptions,
+    versionType: GitVersionType
+  ): GitBaseVersionDescriptor = {
+    val __obj = js.Dynamic.literal(baseVersion = baseVersion, baseVersionOptions = baseVersionOptions, baseVersionType = baseVersionType, version = version, versionOptions = versionOptions, versionType = versionType)
+  
+    __obj.asInstanceOf[GitBaseVersionDescriptor]
+  }
+}
+

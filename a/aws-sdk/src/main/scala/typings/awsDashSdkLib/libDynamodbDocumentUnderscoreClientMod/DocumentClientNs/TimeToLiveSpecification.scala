@@ -16,3 +16,12 @@ trait TimeToLiveSpecification extends js.Object {
   var Enabled: TimeToLiveEnabled
 }
 
+object TimeToLiveSpecification {
+  @scala.inline
+  def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName, Enabled = Enabled)
+  
+    __obj.asInstanceOf[TimeToLiveSpecification]
+  }
+}
+

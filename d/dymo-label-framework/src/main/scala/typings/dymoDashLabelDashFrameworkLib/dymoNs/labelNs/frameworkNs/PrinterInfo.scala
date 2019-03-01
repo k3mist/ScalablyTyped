@@ -22,3 +22,20 @@ trait PrinterInfo extends js.Object {
   var printerType: java.lang.String
 }
 
+object PrinterInfo {
+  @scala.inline
+  def apply(
+    isAutoCutSupported: scala.Boolean,
+    isConnected: scala.Boolean,
+    isLocal: scala.Boolean,
+    isTwinTurbo: scala.Boolean,
+    modelName: java.lang.String,
+    name: java.lang.String,
+    printerType: java.lang.String
+  ): PrinterInfo = {
+    val __obj = js.Dynamic.literal(isAutoCutSupported = isAutoCutSupported, isConnected = isConnected, isLocal = isLocal, isTwinTurbo = isTwinTurbo, modelName = modelName, name = name, printerType = printerType)
+  
+    __obj.asInstanceOf[PrinterInfo]
+  }
+}
+

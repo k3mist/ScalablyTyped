@@ -38,3 +38,20 @@ trait ValueCountAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object ValueCountAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, ValueCountAggregation],
+    lang: js.Function1[java.lang.String, ValueCountAggregation],
+    params: js.Function1[js.Object, ValueCountAggregation],
+    script: js.Function1[java.lang.String, ValueCountAggregation],
+    scriptValuesUnique: js.Function1[scala.Boolean, ValueCountAggregation],
+    toJSON: js.Function0[js.Any]
+  ): ValueCountAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesUnique = scriptValuesUnique, toJSON = toJSON)
+  
+    __obj.asInstanceOf[ValueCountAggregation]
+  }
+}
+

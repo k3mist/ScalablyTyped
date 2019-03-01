@@ -49,3 +49,20 @@ trait NightwatchSeleniumOptions extends js.Object {
   var start_session: scala.Boolean
 }
 
+object NightwatchSeleniumOptions {
+  @scala.inline
+  def apply(
+    cli_args: js.Any,
+    host: java.lang.String,
+    log_path: java.lang.String | scala.Boolean,
+    port: scala.Double,
+    server_path: java.lang.String,
+    start_process: scala.Boolean,
+    start_session: scala.Boolean
+  ): NightwatchSeleniumOptions = {
+    val __obj = js.Dynamic.literal(cli_args = cli_args, host = host, log_path = log_path.asInstanceOf[js.Any], port = port, server_path = server_path, start_process = start_process, start_session = start_session)
+  
+    __obj.asInstanceOf[NightwatchSeleniumOptions]
+  }
+}
+

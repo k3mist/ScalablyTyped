@@ -11,3 +11,16 @@ trait SjclECCBasic extends js.Object {
   def generateKeys(cn: java.lang.String): SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]
 }
 
+object SjclECCBasic {
+  @scala.inline
+  def apply(
+    generateKeys: js.Function1[java.lang.String, SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]],
+    publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey],
+    secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
+  ): SjclECCBasic = {
+    val __obj = js.Dynamic.literal(generateKeys = generateKeys, publicKey = publicKey, secretKey = secretKey)
+  
+    __obj.asInstanceOf[SjclECCBasic]
+  }
+}
+

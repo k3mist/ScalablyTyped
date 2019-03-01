@@ -47,3 +47,52 @@ trait EventParams extends js.Object {
   var volume: VolumeParam
 }
 
+object EventParams {
+  @scala.inline
+  def apply(
+    adClick: AdProgressParam,
+    adCompanions: AdCompanionsParam,
+    adComplete: AdProgressParam,
+    adError: AdErrorParam,
+    adImpression: AdImpressionParam,
+    adPause: AdPlayParam,
+    adPlay: AdPlayParam,
+    adRequest: AdRequestParam,
+    adSchedule: AdScheduleParam,
+    adSkipped: AdProgressParam,
+    adStarted: AdStartedParam,
+    adTime: AdTimeParam,
+    audioTrackChanged: AudioTrackChangedParam,
+    audioTracks: AudioTracksParam,
+    buffer: BufferParam,
+    bufferChange: BufferChangeParam,
+    captionsChanged: CaptionsChangedParam,
+    captionsList: CaptionsListParam,
+    cast: CastParam,
+    controls: ControlsParam,
+    error: ErrorParam,
+    firstFrame: FirstFrameParam,
+    fullscreen: FullscreenParam,
+    idle: IdleParam,
+    levels: LevelsParam,
+    levelsChanged: LevelsChangedParam,
+    meta: MetadataParam,
+    mute: MuteParam,
+    pause: PlayParam,
+    play: PlayParam,
+    playlist: PlaylistParam,
+    playlistItem: PlaylistItemParam,
+    ready: ReadyParam,
+    resize: ResizeParam,
+    seek: SeekParam,
+    setupError: ErrorParam,
+    time: TimeParam,
+    visualQuality: VisualQualityParam,
+    volume: VolumeParam
+  ): EventParams = {
+    val __obj = js.Dynamic.literal(adClick = adClick, adCompanions = adCompanions, adComplete = adComplete, adError = adError, adImpression = adImpression, adPause = adPause, adPlay = adPlay, adRequest = adRequest, adSchedule = adSchedule, adSkipped = adSkipped, adStarted = adStarted, adTime = adTime, audioTrackChanged = audioTrackChanged, audioTracks = audioTracks, buffer = buffer, bufferChange = bufferChange, captionsChanged = captionsChanged, captionsList = captionsList, cast = cast, controls = controls, error = error, firstFrame = firstFrame, fullscreen = fullscreen, idle = idle, levels = levels, levelsChanged = levelsChanged, meta = meta, mute = mute, pause = pause, play = play, playlist = playlist, playlistItem = playlistItem, ready = ready, resize = resize, seek = seek, setupError = setupError, time = time, visualQuality = visualQuality, volume = volume)
+  
+    __obj.asInstanceOf[EventParams]
+  }
+}
+

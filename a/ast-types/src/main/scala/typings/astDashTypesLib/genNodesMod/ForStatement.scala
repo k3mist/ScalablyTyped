@@ -18,3 +18,20 @@ import scala.scalajs.js.annotation._
   var update: astDashTypesLib.genKindsMod.ExpressionKind | scala.Null
 }
 
+object ForStatement {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ForStatement,
+    init: astDashTypesLib.genKindsMod.VariableDeclarationKind | astDashTypesLib.genKindsMod.ExpressionKind = null,
+    test: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    update: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): ForStatement = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ForStatement]
+  }
+}
+

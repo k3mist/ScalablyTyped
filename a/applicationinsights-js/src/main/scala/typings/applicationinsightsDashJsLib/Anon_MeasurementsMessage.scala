@@ -13,3 +13,18 @@ trait Anon_MeasurementsMessage extends js.Object {
   var ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
 }
 
+object Anon_MeasurementsMessage {
+  @scala.inline
+  def apply(
+    measurements: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    message: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    properties: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    severityLevel: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
+  ): Anon_MeasurementsMessage = {
+    val __obj = js.Dynamic.literal(measurements = measurements, message = message, properties = properties, severityLevel = severityLevel, ver = ver)
+  
+    __obj.asInstanceOf[Anon_MeasurementsMessage]
+  }
+}
+

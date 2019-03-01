@@ -27,3 +27,25 @@ ReverseIteratorT] */]
   def rend(): ReverseIteratorT
 }
 
+object IBidirectionalContainer {
+  @scala.inline
+  def apply[IteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReversableIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[IteratorT], 
+    IteratorT, 
+    ReverseIteratorT
+  ] */, ReverseIteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReverseIterator[
+    tstlLib.functionalIPointerMod.IPointerNs.ValueType[IteratorT], 
+    IteratorT, 
+    ReverseIteratorT
+  ] */](
+    begin: js.Function0[IteratorT],
+    end: js.Function0[IteratorT],
+    rbegin: js.Function0[ReverseIteratorT],
+    rend: js.Function0[ReverseIteratorT]
+  ): IBidirectionalContainer[IteratorT, ReverseIteratorT] = {
+    val __obj = js.Dynamic.literal(begin = begin, end = end, rbegin = rbegin, rend = rend)
+  
+    __obj.asInstanceOf[IBidirectionalContainer[IteratorT, ReverseIteratorT]]
+  }
+}
+

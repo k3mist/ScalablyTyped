@@ -14,3 +14,19 @@ trait XVBACompatibility extends js.Object {
   def removeVBAScriptListener(Listener: XVBAScriptListener): scala.Unit
 }
 
+object XVBACompatibility {
+  @scala.inline
+  def apply(
+    ProjectName: java.lang.String,
+    RunningVBAScripts: scala.Double,
+    VBACompatibilityMode: scala.Boolean,
+    addVBAScriptListener: js.Function1[XVBAScriptListener, scala.Unit],
+    broadcastVBAScriptEvent: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    removeVBAScriptListener: js.Function1[XVBAScriptListener, scala.Unit]
+  ): XVBACompatibility = {
+    val __obj = js.Dynamic.literal(ProjectName = ProjectName, RunningVBAScripts = RunningVBAScripts, VBACompatibilityMode = VBACompatibilityMode, addVBAScriptListener = addVBAScriptListener, broadcastVBAScriptEvent = broadcastVBAScriptEvent, removeVBAScriptListener = removeVBAScriptListener)
+  
+    __obj.asInstanceOf[XVBACompatibility]
+  }
+}
+

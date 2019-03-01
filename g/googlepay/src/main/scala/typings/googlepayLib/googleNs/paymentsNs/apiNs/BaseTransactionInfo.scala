@@ -10,3 +10,12 @@ trait BaseTransactionInfo extends js.Object {
   var totalPriceStatus: TotalPriceStatus
 }
 
+object BaseTransactionInfo {
+  @scala.inline
+  def apply(currencyCode: java.lang.String, totalPriceStatus: TotalPriceStatus): BaseTransactionInfo = {
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, totalPriceStatus = totalPriceStatus)
+  
+    __obj.asInstanceOf[BaseTransactionInfo]
+  }
+}
+

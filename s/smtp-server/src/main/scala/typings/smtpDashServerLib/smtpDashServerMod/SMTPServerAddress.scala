@@ -16,3 +16,12 @@ trait SMTPServerAddress extends js.Object {
   var args: js.Object
 }
 
+object SMTPServerAddress {
+  @scala.inline
+  def apply(address: java.lang.String, args: js.Object): SMTPServerAddress = {
+    val __obj = js.Dynamic.literal(address = address, args = args)
+  
+    __obj.asInstanceOf[SMTPServerAddress]
+  }
+}
+

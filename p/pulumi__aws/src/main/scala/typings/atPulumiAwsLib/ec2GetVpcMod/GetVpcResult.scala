@@ -54,3 +54,28 @@ trait GetVpcResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetVpcResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    cidrBlock: java.lang.String,
+    cidrBlockAssociations: js.Array[atPulumiAwsLib.Anon_AssociationId],
+    default: scala.Boolean,
+    dhcpOptionsId: java.lang.String,
+    enableDnsHostnames: scala.Boolean,
+    enableDnsSupport: scala.Boolean,
+    id: java.lang.String,
+    instanceTenancy: java.lang.String,
+    ipv6AssociationId: java.lang.String,
+    ipv6CidrBlock: java.lang.String,
+    mainRouteTableId: java.lang.String,
+    ownerId: java.lang.String,
+    state: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetVpcResult = {
+    val __obj = js.Dynamic.literal(arn = arn, cidrBlock = cidrBlock, cidrBlockAssociations = cidrBlockAssociations, default = default, dhcpOptionsId = dhcpOptionsId, enableDnsHostnames = enableDnsHostnames, enableDnsSupport = enableDnsSupport, id = id, instanceTenancy = instanceTenancy, ipv6AssociationId = ipv6AssociationId, ipv6CidrBlock = ipv6CidrBlock, mainRouteTableId = mainRouteTableId, ownerId = ownerId, state = state, tags = tags)
+  
+    __obj.asInstanceOf[GetVpcResult]
+  }
+}
+

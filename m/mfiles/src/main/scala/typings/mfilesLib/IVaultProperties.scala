@@ -20,3 +20,25 @@ trait IVaultProperties extends js.Object {
   def Clone(): IVaultProperties
 }
 
+object IVaultProperties {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IVaultProperties],
+    DisplayName: java.lang.String,
+    EncryptionOfFileDataAtRest: scala.Boolean,
+    ExtendedMetadataDrivenPermissions: scala.Boolean,
+    FileDataConnectionString: java.lang.String,
+    FileDataStorageType: mfilesLib.MFilesNs.MFFileDataStorage,
+    FullTextSearchLanguage: java.lang.String,
+    Icon: js.Array[scala.Double],
+    MainDataFolder: java.lang.String,
+    SQLDatabase: ISQLDatabase,
+    SeparateLocationForFileData: IAdditionalFolders,
+    VaultGUID: java.lang.String
+  ): IVaultProperties = {
+    val __obj = js.Dynamic.literal(Clone = Clone, DisplayName = DisplayName, EncryptionOfFileDataAtRest = EncryptionOfFileDataAtRest, ExtendedMetadataDrivenPermissions = ExtendedMetadataDrivenPermissions, FileDataConnectionString = FileDataConnectionString, FileDataStorageType = FileDataStorageType, FullTextSearchLanguage = FullTextSearchLanguage, Icon = Icon, MainDataFolder = MainDataFolder, SQLDatabase = SQLDatabase, SeparateLocationForFileData = SeparateLocationForFileData, VaultGUID = VaultGUID)
+  
+    __obj.asInstanceOf[IVaultProperties]
+  }
+}
+

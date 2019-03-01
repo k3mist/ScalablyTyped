@@ -27,3 +27,19 @@ trait SearchInfo extends js.Object {
   var RespectFolderViewRestrictions: scala.Boolean
 }
 
+object SearchInfo {
+  @scala.inline
+  def apply(
+    Criteria: activexDashInteropLib.SafeArray[SearchCriterium],
+    FollowIndirections: scala.Boolean,
+    IncludeBase: scala.Boolean,
+    Recursion: SearchRecursion,
+    RespectDocViewRestrictions: scala.Boolean,
+    RespectFolderViewRestrictions: scala.Boolean
+  ): SearchInfo = {
+    val __obj = js.Dynamic.literal(Criteria = Criteria, FollowIndirections = FollowIndirections, IncludeBase = IncludeBase, Recursion = Recursion, RespectDocViewRestrictions = RespectDocViewRestrictions, RespectFolderViewRestrictions = RespectFolderViewRestrictions)
+  
+    __obj.asInstanceOf[SearchInfo]
+  }
+}
+

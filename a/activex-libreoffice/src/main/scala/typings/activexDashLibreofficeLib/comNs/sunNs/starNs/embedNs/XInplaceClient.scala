@@ -118,3 +118,35 @@ trait XInplaceClient
   ): scala.Unit
 }
 
+object XInplaceClient {
+  @scala.inline
+  def apply(
+    ClipRectangle: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    InplaceDispatchProvider: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider,
+    LayoutManager: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager,
+    Placement: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    acquire: js.Function0[scala.Unit],
+    activatingInplace: js.Function0[scala.Unit],
+    activatingUI: js.Function0[scala.Unit],
+    canInplaceActivate: js.Function0[scala.Boolean],
+    changedPlacement: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
+    deactivatedInplace: js.Function0[scala.Unit],
+    deactivatedUI: js.Function0[scala.Unit],
+    getClipRectangle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getInplaceDispatchProvider: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider],
+    getLayoutManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager],
+    getPlacement: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    scrollObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
+    translateAccelerators: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent], 
+      scala.Unit
+    ]
+  ): XInplaceClient = {
+    val __obj = js.Dynamic.literal(ClipRectangle = ClipRectangle, InplaceDispatchProvider = InplaceDispatchProvider, LayoutManager = LayoutManager, Placement = Placement, acquire = acquire, activatingInplace = activatingInplace, activatingUI = activatingUI, canInplaceActivate = canInplaceActivate, changedPlacement = changedPlacement, deactivatedInplace = deactivatedInplace, deactivatedUI = deactivatedUI, getClipRectangle = getClipRectangle, getInplaceDispatchProvider = getInplaceDispatchProvider, getLayoutManager = getLayoutManager, getPlacement = getPlacement, queryInterface = queryInterface, release = release, scrollObject = scrollObject, translateAccelerators = translateAccelerators)
+  
+    __obj.asInstanceOf[XInplaceClient]
+  }
+}
+

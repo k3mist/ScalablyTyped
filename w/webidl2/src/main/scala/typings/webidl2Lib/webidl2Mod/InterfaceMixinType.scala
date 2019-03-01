@@ -17,3 +17,18 @@ trait InterfaceMixinType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.`interface mixin`
 }
 
+object InterfaceMixinType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    members: js.Array[IDLInterfaceMemberType],
+    name: java.lang.String,
+    partial: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.`interface mixin`
+  ): InterfaceMixinType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial, `type` = `type`)
+  
+    __obj.asInstanceOf[InterfaceMixinType]
+  }
+}
+

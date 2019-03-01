@@ -28,3 +28,17 @@ trait CommandInfoChangeEvent
   var Reason: scala.Double
 }
 
+object CommandInfoChangeEvent {
+  @scala.inline
+  def apply(
+    Handle: scala.Double,
+    Name: java.lang.String,
+    Reason: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): CommandInfoChangeEvent = {
+    val __obj = js.Dynamic.literal(Handle = Handle, Name = Name, Reason = Reason, Source = Source)
+  
+    __obj.asInstanceOf[CommandInfoChangeEvent]
+  }
+}
+

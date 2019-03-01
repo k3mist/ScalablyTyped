@@ -55,3 +55,34 @@ trait XSpinValue
   def setValues(minValue: scala.Double, maxValue: scala.Double, currentValue: scala.Double): scala.Unit
 }
 
+object XSpinValue {
+  @scala.inline
+  def apply(
+    Maximum: scala.Double,
+    Minimum: scala.Double,
+    Orientation: scala.Double,
+    SpinIncrement: scala.Double,
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
+    getMaximum: js.Function0[scala.Double],
+    getMinimum: js.Function0[scala.Double],
+    getOrientation: js.Function0[scala.Double],
+    getSpinIncrement: js.Function0[scala.Double],
+    getValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAdjustmentListener: js.Function1[XAdjustmentListener, scala.Unit],
+    setMaximum: js.Function1[scala.Double, scala.Unit],
+    setMinimum: js.Function1[scala.Double, scala.Unit],
+    setOrientation: js.Function1[scala.Double, scala.Unit],
+    setSpinIncrement: js.Function1[scala.Double, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit],
+    setValues: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+  ): XSpinValue = {
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum, Orientation = Orientation, SpinIncrement = SpinIncrement, Value = Value, acquire = acquire, addAdjustmentListener = addAdjustmentListener, getMaximum = getMaximum, getMinimum = getMinimum, getOrientation = getOrientation, getSpinIncrement = getSpinIncrement, getValue = getValue, queryInterface = queryInterface, release = release, removeAdjustmentListener = removeAdjustmentListener, setMaximum = setMaximum, setMinimum = setMinimum, setOrientation = setOrientation, setSpinIncrement = setSpinIncrement, setValue = setValue, setValues = setValues)
+  
+    __obj.asInstanceOf[XSpinValue]
+  }
+}
+

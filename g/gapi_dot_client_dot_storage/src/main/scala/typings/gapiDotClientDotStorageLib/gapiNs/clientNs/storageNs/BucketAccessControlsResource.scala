@@ -20,3 +20,37 @@ trait BucketAccessControlsResource extends js.Object {
   def update(request: gapiDotClientDotStorageLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
 }
 
+object BucketAccessControlsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotStorageLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStorageLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControls]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotStorageLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
+    ],
+    update: js.Function1[
+      gapiDotClientDotStorageLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BucketAccessControl]
+    ]
+  ): BucketAccessControlsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[BucketAccessControlsResource]
+  }
+}
+

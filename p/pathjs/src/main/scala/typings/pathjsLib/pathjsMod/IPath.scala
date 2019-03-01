@@ -17,3 +17,22 @@ trait IPath extends js.Object {
   def root(path: java.lang.String): scala.Unit
 }
 
+object IPath {
+  @scala.inline
+  def apply(
+    core: IPathCore,
+    dispatch: js.Function1[java.lang.String, scala.Unit],
+    history: IPathHistory,
+    listen: js.Function0[scala.Unit],
+    map: js.Function1[java.lang.String, IPathRoute],
+    `match`: js.Function2[java.lang.String, scala.Boolean, IPathRoute | scala.Null],
+    rescue: js.Function1[js.Function, scala.Unit],
+    root: js.Function1[java.lang.String, scala.Unit],
+    routes: IPathRoutes
+  ): IPath = {
+    val __obj = js.Dynamic.literal(core = core, dispatch = dispatch, history = history, listen = listen, map = map, `match` = `match`, rescue = rescue, root = root, routes = routes)
+  
+    __obj.asInstanceOf[IPath]
+  }
+}
+

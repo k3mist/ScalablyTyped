@@ -10,3 +10,15 @@ trait Anon_Creationtime
   var creation_time: java.lang.String
 }
 
+object Anon_Creationtime {
+  @scala.inline
+  def apply(
+    creation_time: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Anon_Creationtime = {
+    val __obj = js.Dynamic.literal(creation_time = creation_time)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Creationtime]
+  }
+}
+

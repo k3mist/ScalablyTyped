@@ -20,3 +20,12 @@ trait INxTreeDataOption extends js.Object {
   var TreeNodes: js.Array[INxPageTreeNode]
 }
 
+object INxTreeDataOption {
+  @scala.inline
+  def apply(MaxNbrOfNodes: scala.Double, TreeLevels: INxPageTreeLevel, TreeNodes: js.Array[INxPageTreeNode]): INxTreeDataOption = {
+    val __obj = js.Dynamic.literal(MaxNbrOfNodes = MaxNbrOfNodes, TreeLevels = TreeLevels, TreeNodes = TreeNodes)
+  
+    __obj.asInstanceOf[INxTreeDataOption]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Notification extends js.Object {
   def setType(`type`: NotificationType): Notification
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    setText: js.Function1[java.lang.String, Notification],
+    setType: js.Function1[NotificationType, Notification]
+  ): Notification = {
+    val __obj = js.Dynamic.literal(setText = setText, setType = setType)
+  
+    __obj.asInstanceOf[Notification]
+  }
+}
+

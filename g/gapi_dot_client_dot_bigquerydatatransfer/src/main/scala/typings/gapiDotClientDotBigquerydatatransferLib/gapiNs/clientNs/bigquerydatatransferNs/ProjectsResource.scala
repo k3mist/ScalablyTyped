@@ -11,3 +11,16 @@ trait ProjectsResource extends js.Object {
   var transferConfigs: TransferConfigsResource
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    dataSources: DataSourcesResource,
+    locations: LocationsResource,
+    transferConfigs: TransferConfigsResource
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(dataSources = dataSources, locations = locations, transferConfigs = transferConfigs)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

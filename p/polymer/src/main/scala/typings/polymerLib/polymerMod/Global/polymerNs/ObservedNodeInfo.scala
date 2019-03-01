@@ -11,3 +11,12 @@ trait ObservedNodeInfo extends js.Object {
   var target: stdLib.Node
 }
 
+object ObservedNodeInfo {
+  @scala.inline
+  def apply(addedNodes: js.Array[stdLib.Node], removedNode: js.Array[stdLib.Node], target: stdLib.Node): ObservedNodeInfo = {
+    val __obj = js.Dynamic.literal(addedNodes = addedNodes, removedNode = removedNode, target = target)
+  
+    __obj.asInstanceOf[ObservedNodeInfo]
+  }
+}
+

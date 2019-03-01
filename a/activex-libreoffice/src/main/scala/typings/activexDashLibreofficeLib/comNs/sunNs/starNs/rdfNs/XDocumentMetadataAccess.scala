@@ -161,3 +161,48 @@ trait XDocumentMetadataAccess
   def storeMetadataToStorage(Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage): scala.Unit
 }
 
+object XDocumentMetadataAccess {
+  @scala.inline
+  def apply(
+    LocalName: java.lang.String,
+    Namespace: java.lang.String,
+    RDFRepository: XRepository,
+    StringValue: java.lang.String,
+    addContentOrStylesFile: js.Function1[java.lang.String, scala.Unit],
+    addMetadataFile: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XURI], XURI],
+    getElementByMetadataReference: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair, XMetadatable],
+    getElementByURI: js.Function1[XURI, XMetadatable],
+    getMetadataGraphsWithType: js.Function1[XURI, activexDashInteropLib.SafeArray[XURI]],
+    getRDFRepository: js.Function0[XRepository],
+    importMetadataFile: js.Function5[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      java.lang.String, 
+      XURI, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XURI], 
+      XURI
+    ],
+    loadMetadataFromMedium: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    loadMetadataFromStorage: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
+      XURI, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ],
+    removeContentOrStylesFile: js.Function1[java.lang.String, scala.Unit],
+    removeMetadataFile: js.Function1[XURI, scala.Unit],
+    storeMetadataToMedium: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeMetadataToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+  ): XDocumentMetadataAccess = {
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Namespace = Namespace, RDFRepository = RDFRepository, StringValue = StringValue, addContentOrStylesFile = addContentOrStylesFile, addMetadataFile = addMetadataFile, getElementByMetadataReference = getElementByMetadataReference, getElementByURI = getElementByURI, getMetadataGraphsWithType = getMetadataGraphsWithType, getRDFRepository = getRDFRepository, importMetadataFile = importMetadataFile, loadMetadataFromMedium = loadMetadataFromMedium, loadMetadataFromStorage = loadMetadataFromStorage, removeContentOrStylesFile = removeContentOrStylesFile, removeMetadataFile = removeMetadataFile, storeMetadataToMedium = storeMetadataToMedium, storeMetadataToStorage = storeMetadataToStorage)
+  
+    __obj.asInstanceOf[XDocumentMetadataAccess]
+  }
+}
+

@@ -31,3 +31,22 @@ trait XTypeDescriptionEnumerationAccess
   ): XTypeDescriptionEnumeration
 }
 
+object XTypeDescriptionEnumerationAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createTypeDescriptionEnumeration: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass], 
+      TypeDescriptionSearchDepth, 
+      XTypeDescriptionEnumeration
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTypeDescriptionEnumerationAccess = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createTypeDescriptionEnumeration = createTypeDescriptionEnumeration, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTypeDescriptionEnumerationAccess]
+  }
+}
+

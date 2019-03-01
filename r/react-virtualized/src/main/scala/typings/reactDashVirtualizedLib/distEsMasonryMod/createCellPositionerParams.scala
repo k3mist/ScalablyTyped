@@ -12,3 +12,17 @@ trait createCellPositionerParams extends js.Object {
   var spacer: js.UndefOr[scala.Double] = js.undefined
 }
 
+object createCellPositionerParams {
+  @scala.inline
+  def apply(
+    cellMeasurerCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCacheInterface,
+    columnCount: scala.Double,
+    columnWidth: scala.Double,
+    spacer: scala.Int | scala.Double = null
+  ): createCellPositionerParams = {
+    val __obj = js.Dynamic.literal(cellMeasurerCache = cellMeasurerCache, columnCount = columnCount, columnWidth = columnWidth)
+    if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[createCellPositionerParams]
+  }
+}
+

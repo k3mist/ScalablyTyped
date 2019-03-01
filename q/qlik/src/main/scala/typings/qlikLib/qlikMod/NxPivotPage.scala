@@ -12,3 +12,17 @@ trait NxPivotPage extends js.Object {
   var qTop: js.Array[NxPivotDimensioncell]
 }
 
+object NxPivotPage {
+  @scala.inline
+  def apply(
+    qArea: Rect,
+    qData: js.Array[NxPivotValuePoint],
+    qLeft: js.Array[NxPivotDimensioncell],
+    qTop: js.Array[NxPivotDimensioncell]
+  ): NxPivotPage = {
+    val __obj = js.Dynamic.literal(qArea = qArea, qData = qData, qLeft = qLeft, qTop = qTop)
+  
+    __obj.asInstanceOf[NxPivotPage]
+  }
+}
+

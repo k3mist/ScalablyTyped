@@ -17,3 +17,22 @@ trait REACT_STATICS extends js.Object {
   var `type`: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`
 }
 
+object REACT_STATICS {
+  @scala.inline
+  def apply(
+    childContextTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    contextTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    defaultProps: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    displayName: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    getDefaultProps: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    getDerivedStateFromProps: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    mixins: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    propTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
+    `type`: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`
+  ): REACT_STATICS = {
+    val __obj = js.Dynamic.literal(childContextTypes = childContextTypes, contextTypes = contextTypes, defaultProps = defaultProps, displayName = displayName, getDefaultProps = getDefaultProps, getDerivedStateFromProps = getDerivedStateFromProps, mixins = mixins, propTypes = propTypes, `type` = `type`)
+  
+    __obj.asInstanceOf[REACT_STATICS]
+  }
+}
+

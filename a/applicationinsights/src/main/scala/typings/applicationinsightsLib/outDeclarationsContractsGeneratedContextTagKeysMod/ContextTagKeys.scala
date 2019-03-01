@@ -108,3 +108,36 @@ trait ContextTagKeys extends js.Object {
   var userId: java.lang.String
 }
 
+object ContextTagKeys {
+  @scala.inline
+  def apply(
+    applicationVersion: java.lang.String,
+    cloudRole: java.lang.String,
+    cloudRoleInstance: java.lang.String,
+    deviceId: java.lang.String,
+    deviceLocale: java.lang.String,
+    deviceModel: java.lang.String,
+    deviceOEMName: java.lang.String,
+    deviceOSVersion: java.lang.String,
+    deviceType: java.lang.String,
+    internalAgentVersion: java.lang.String,
+    internalNodeName: java.lang.String,
+    internalSdkVersion: java.lang.String,
+    locationIp: java.lang.String,
+    operationCorrelationVector: java.lang.String,
+    operationId: java.lang.String,
+    operationName: java.lang.String,
+    operationParentId: java.lang.String,
+    operationSyntheticSource: java.lang.String,
+    sessionId: java.lang.String,
+    sessionIsFirst: java.lang.String,
+    userAccountId: java.lang.String,
+    userAuthUserId: java.lang.String,
+    userId: java.lang.String
+  ): ContextTagKeys = {
+    val __obj = js.Dynamic.literal(applicationVersion = applicationVersion, cloudRole = cloudRole, cloudRoleInstance = cloudRoleInstance, deviceId = deviceId, deviceLocale = deviceLocale, deviceModel = deviceModel, deviceOEMName = deviceOEMName, deviceOSVersion = deviceOSVersion, deviceType = deviceType, internalAgentVersion = internalAgentVersion, internalNodeName = internalNodeName, internalSdkVersion = internalSdkVersion, locationIp = locationIp, operationCorrelationVector = operationCorrelationVector, operationId = operationId, operationName = operationName, operationParentId = operationParentId, operationSyntheticSource = operationSyntheticSource, sessionId = sessionId, sessionIsFirst = sessionIsFirst, userAccountId = userAccountId, userAuthUserId = userAuthUserId, userId = userId)
+  
+    __obj.asInstanceOf[ContextTagKeys]
+  }
+}
+

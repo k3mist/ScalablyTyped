@@ -22,3 +22,40 @@ import scala.scalajs.js.annotation._
   var roots: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BreadthFirstLayoutOptions {
+  @scala.inline
+  def apply(
+    circle: scala.Boolean,
+    directed: scala.Boolean,
+    fit: scala.Boolean,
+    maximalAdjustments: scala.Double,
+    name: cytoscapeLib.cytoscapeLibStrings.breadthfirst,
+    nodeDimensionsIncludeLabels: scala.Boolean,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    padding: scala.Int | scala.Double = null,
+    ready: LayoutHandler = null,
+    roots: java.lang.String = null,
+    sort: SortingFunction = null,
+    spacingFactor: scala.Int | scala.Double = null,
+    stop: LayoutHandler = null
+  ): BreadthFirstLayoutOptions = {
+    val __obj = js.Dynamic.literal(circle = circle, directed = directed, fit = fit, maximalAdjustments = maximalAdjustments, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (roots != null) __obj.updateDynamic("roots")(roots)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[BreadthFirstLayoutOptions]
+  }
+}
+

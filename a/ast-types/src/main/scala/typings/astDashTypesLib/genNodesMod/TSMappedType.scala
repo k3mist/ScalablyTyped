@@ -18,3 +18,18 @@ import scala.scalajs.js.annotation._
   var typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind
 }
 
+object TSMappedType {
+  @scala.inline
+  def apply(
+    optional: scala.Boolean | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-`,
+    readonly: scala.Boolean | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-`,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSMappedType,
+    typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind = null
+  ): TSMappedType = {
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], `type` = `type`, typeParameter = typeParameter)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.asInstanceOf[TSMappedType]
+  }
+}
+

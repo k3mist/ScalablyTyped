@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameterInstantiation
 }
 
+object TSTypeParameterInstantiation {
+  @scala.inline
+  def apply(
+    params: js.Array[astDashTypesLib.genKindsMod.TSTypeKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameterInstantiation
+  ): TSTypeParameterInstantiation = {
+    val __obj = js.Dynamic.literal(params = params, `type` = `type`)
+  
+    __obj.asInstanceOf[TSTypeParameterInstantiation]
+  }
+}
+

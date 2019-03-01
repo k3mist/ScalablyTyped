@@ -24,3 +24,21 @@ trait Grammar[T] extends js.Object {
   var to: AssertionChain[T]
 }
 
+object Grammar {
+  @scala.inline
+  def apply[T](
+    a: AssertionChain[T],
+    an: AssertionChain[T],
+    and: AssertionChain[T],
+    at: AssertionChain[T],
+    be: AssertionChain[T],
+    have: AssertionChain[T],
+    in: AssertionChain[T],
+    to: AssertionChain[T]
+  ): Grammar[T] = {
+    val __obj = js.Dynamic.literal(a = a, an = an, and = and, at = at, be = be, have = have, in = in, to = to)
+  
+    __obj.asInstanceOf[Grammar[T]]
+  }
+}
+

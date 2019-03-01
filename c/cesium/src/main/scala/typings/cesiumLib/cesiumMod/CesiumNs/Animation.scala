@@ -14,3 +14,19 @@ trait Animation extends js.Object {
   def resize(): scala.Unit
 }
 
+object Animation {
+  @scala.inline
+  def apply(
+    applyThemeChanges: js.Function0[scala.Unit],
+    container: stdLib.Element,
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    resize: js.Function0[scala.Unit],
+    viewModel: AnimationViewModel
+  ): Animation = {
+    val __obj = js.Dynamic.literal(applyThemeChanges = applyThemeChanges, container = container, destroy = destroy, isDestroyed = isDestroyed, resize = resize, viewModel = viewModel)
+  
+    __obj.asInstanceOf[Animation]
+  }
+}
+

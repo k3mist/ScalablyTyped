@@ -13,3 +13,18 @@ trait Anon_AnimationDuration extends js.Object {
   var promotedLink: Anon_ArrowArrowConcave
 }
 
+object Anon_AnimationDuration {
+  @scala.inline
+  def apply(
+    animationDuration: scala.Double,
+    hoverBehaviorDelay: scala.Double,
+    linkDefaults: Anon_Arrow,
+    nodeDefaults: Anon_Icon,
+    promotedLink: Anon_ArrowArrowConcave
+  ): Anon_AnimationDuration = {
+    val __obj = js.Dynamic.literal(animationDuration = animationDuration, hoverBehaviorDelay = hoverBehaviorDelay, linkDefaults = linkDefaults, nodeDefaults = nodeDefaults, promotedLink = promotedLink)
+  
+    __obj.asInstanceOf[Anon_AnimationDuration]
+  }
+}
+

@@ -35,3 +35,20 @@ trait Product extends js.Object {
   var title: java.lang.String
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    price: java.lang.String,
+    priceCurrencyCode: java.lang.String,
+    productID: java.lang.String,
+    title: java.lang.String,
+    description: java.lang.String = null,
+    imageURI: java.lang.String = null
+  ): Product = {
+    val __obj = js.Dynamic.literal(price = price, priceCurrencyCode = priceCurrencyCode, productID = productID, title = title)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (imageURI != null) __obj.updateDynamic("imageURI")(imageURI)
+    __obj.asInstanceOf[Product]
+  }
+}
+

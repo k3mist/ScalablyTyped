@@ -144,3 +144,54 @@ trait ArcGISImageServiceProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ArcGISImageServiceProperties {
+  @scala.inline
+  def apply(
+    compressionQuality: scala.Int | scala.Double = null,
+    compressionTolerance: scala.Int | scala.Double = null,
+    copyright: java.lang.String = null,
+    definitionExpression: java.lang.String = null,
+    domainFields: js.Array[FieldProperties] = null,
+    fields: js.Array[FieldProperties] = null,
+    format: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    hasMultidimensions: js.UndefOr[scala.Boolean] = js.undefined,
+    hasRasterAttributeTable: js.UndefOr[scala.Boolean] = js.undefined,
+    imageMaxHeight: scala.Int | scala.Double = null,
+    imageMaxWidth: scala.Int | scala.Double = null,
+    mosaicRule: MosaicRuleProperties = null,
+    multidimensionalInfo: js.Any = null,
+    pixelType: java.lang.String = null,
+    popupTemplate: PopupTemplateProperties = null,
+    rasterAttributeTable: js.Any = null,
+    rasterAttributeTableFieldPrefix: java.lang.String = null,
+    rasterFields: js.Array[FieldProperties] = null,
+    renderingRule: RasterFunctionProperties = null,
+    url: java.lang.String = null
+  ): ArcGISImageServiceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (compressionQuality != null) __obj.updateDynamic("compressionQuality")(compressionQuality.asInstanceOf[js.Any])
+    if (compressionTolerance != null) __obj.updateDynamic("compressionTolerance")(compressionTolerance.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (domainFields != null) __obj.updateDynamic("domainFields")(domainFields)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (!js.isUndefined(hasMultidimensions)) __obj.updateDynamic("hasMultidimensions")(hasMultidimensions)
+    if (!js.isUndefined(hasRasterAttributeTable)) __obj.updateDynamic("hasRasterAttributeTable")(hasRasterAttributeTable)
+    if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
+    if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
+    if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
+    if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
+    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (rasterAttributeTable != null) __obj.updateDynamic("rasterAttributeTable")(rasterAttributeTable)
+    if (rasterAttributeTableFieldPrefix != null) __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
+    if (rasterFields != null) __obj.updateDynamic("rasterFields")(rasterFields)
+    if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ArcGISImageServiceProperties]
+  }
+}
+

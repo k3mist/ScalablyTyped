@@ -13,3 +13,18 @@ trait VDomElement extends js.Object {
   var `val`: java.lang.String
 }
 
+object VDomElement {
+  @scala.inline
+  def apply(
+    children: js.Array[VDomElement],
+    meta: js.Object,
+    props: stdLib.Record[java.lang.String, _],
+    `type`: java.lang.String,
+    `val`: java.lang.String
+  ): VDomElement = {
+    val __obj = js.Dynamic.literal(children = children, meta = meta, props = props, `type` = `type`, `val` = `val`)
+  
+    __obj.asInstanceOf[VDomElement]
+  }
+}
+

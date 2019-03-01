@@ -32,3 +32,25 @@ trait RowInfo extends js.Object {
   var viewIndex: scala.Double
 }
 
+object RowInfo {
+  @scala.inline
+  def apply(
+    aggregated: scala.Boolean,
+    groupedByPivot: scala.Boolean,
+    index: scala.Double,
+    level: scala.Double,
+    nestingPath: js.Array[scala.Double],
+    original: js.Any,
+    page: scala.Double,
+    pageSize: scala.Double,
+    row: js.Any,
+    rowValues: js.Any,
+    subRows: js.Array[_],
+    viewIndex: scala.Double
+  ): RowInfo = {
+    val __obj = js.Dynamic.literal(aggregated = aggregated, groupedByPivot = groupedByPivot, index = index, level = level, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, row = row, rowValues = rowValues, subRows = subRows, viewIndex = viewIndex)
+  
+    __obj.asInstanceOf[RowInfo]
+  }
+}
+

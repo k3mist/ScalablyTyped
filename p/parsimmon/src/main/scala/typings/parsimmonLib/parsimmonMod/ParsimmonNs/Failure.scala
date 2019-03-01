@@ -12,3 +12,16 @@ trait Failure
   var status: parsimmonLib.parsimmonLibNumbers.`false`
 }
 
+object Failure {
+  @scala.inline
+  def apply(
+    expected: js.Array[java.lang.String],
+    index: Index,
+    status: parsimmonLib.parsimmonLibNumbers.`false`
+  ): Failure = {
+    val __obj = js.Dynamic.literal(expected = expected, index = index, status = status)
+  
+    __obj.asInstanceOf[Failure]
+  }
+}
+

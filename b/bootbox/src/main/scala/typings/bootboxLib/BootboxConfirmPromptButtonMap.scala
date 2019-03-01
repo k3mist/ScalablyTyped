@@ -11,3 +11,12 @@ trait BootboxConfirmPromptButtonMap extends BootboxButtonMap {
   var confirm: BootboxButton | js.Function
 }
 
+object BootboxConfirmPromptButtonMap {
+  @scala.inline
+  def apply(cancel: BootboxButton | js.Function, confirm: BootboxButton | js.Function): BootboxConfirmPromptButtonMap = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BootboxConfirmPromptButtonMap]
+  }
+}
+

@@ -10,3 +10,12 @@ trait AlertState extends js.Object {
   var closing: scala.Boolean
 }
 
+object AlertState {
+  @scala.inline
+  def apply(closed: scala.Boolean, closing: scala.Boolean): AlertState = {
+    val __obj = js.Dynamic.literal(closed = closed, closing = closing)
+  
+    __obj.asInstanceOf[AlertState]
+  }
+}
+

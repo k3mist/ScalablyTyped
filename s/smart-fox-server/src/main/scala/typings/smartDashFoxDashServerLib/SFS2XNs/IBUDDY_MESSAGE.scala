@@ -12,3 +12,17 @@ trait IBUDDY_MESSAGE extends js.Object {
   var message: java.lang.String
 }
 
+object IBUDDY_MESSAGE {
+  @scala.inline
+  def apply(
+    buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy,
+    data: js.Object,
+    isItMe: scala.Boolean,
+    message: java.lang.String
+  ): IBUDDY_MESSAGE = {
+    val __obj = js.Dynamic.literal(buddy = buddy, data = data, isItMe = isItMe, message = message)
+  
+    __obj.asInstanceOf[IBUDDY_MESSAGE]
+  }
+}
+

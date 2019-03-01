@@ -10,3 +10,12 @@ trait Anon_HeaderState extends js.Object {
   var state: libsodiumDashWrappersLib.libsodiumDashWrappersMod.state_address
 }
 
+object Anon_HeaderState {
+  @scala.inline
+  def apply(header: java.lang.String, state: libsodiumDashWrappersLib.libsodiumDashWrappersMod.state_address): Anon_HeaderState = {
+    val __obj = js.Dynamic.literal(header = header, state = state)
+  
+    __obj.asInstanceOf[Anon_HeaderState]
+  }
+}
+

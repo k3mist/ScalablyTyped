@@ -17,3 +17,12 @@ trait CommandType extends js.Object {
   var label: java.lang.String
 }
 
+object CommandType {
+  @scala.inline
+  def apply(badge: java.lang.String, color: java.lang.String, label: java.lang.String): CommandType = {
+    val __obj = js.Dynamic.literal(badge = badge, color = color, label = label)
+  
+    __obj.asInstanceOf[CommandType]
+  }
+}
+

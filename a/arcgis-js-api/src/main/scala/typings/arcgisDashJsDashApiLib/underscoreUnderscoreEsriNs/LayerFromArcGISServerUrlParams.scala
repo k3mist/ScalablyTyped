@@ -21,3 +21,18 @@ trait LayerFromArcGISServerUrlParams
   var url: java.lang.String
 }
 
+object LayerFromArcGISServerUrlParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    url: java.lang.String,
+    properties: js.Any = null
+  ): LayerFromArcGISServerUrlParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, url = url)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[LayerFromArcGISServerUrlParams]
+  }
+}
+

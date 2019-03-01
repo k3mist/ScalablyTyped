@@ -11,3 +11,16 @@ trait SketchMSImmutableFlowConnection extends js.Object {
   var destinationArtboardID: js.UndefOr[java.lang.String | sketchappLib.sketchappLibStrings.back] = js.undefined
 }
 
+object SketchMSImmutableFlowConnection {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.immutableFlowConnection,
+    animationType: scala.Double,
+    destinationArtboardID: java.lang.String | sketchappLib.sketchappLibStrings.back = null
+  ): SketchMSImmutableFlowConnection = {
+    val __obj = js.Dynamic.literal(_class = _class, animationType = animationType)
+    if (destinationArtboardID != null) __obj.updateDynamic("destinationArtboardID")(destinationArtboardID.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SketchMSImmutableFlowConnection]
+  }
+}
+

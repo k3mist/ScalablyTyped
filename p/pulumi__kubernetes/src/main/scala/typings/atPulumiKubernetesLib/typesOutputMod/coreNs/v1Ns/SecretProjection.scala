@@ -33,3 +33,12 @@ trait SecretProjection extends js.Object {
   val optional: scala.Boolean
 }
 
+object SecretProjection {
+  @scala.inline
+  def apply(items: js.Array[KeyToPath], name: java.lang.String, optional: scala.Boolean): SecretProjection = {
+    val __obj = js.Dynamic.literal(items = items, name = name, optional = optional)
+  
+    __obj.asInstanceOf[SecretProjection]
+  }
+}
+

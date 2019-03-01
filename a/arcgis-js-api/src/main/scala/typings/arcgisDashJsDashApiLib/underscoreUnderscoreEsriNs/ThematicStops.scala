@@ -39,3 +39,23 @@ trait ThematicStops
   var valueExpression: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThematicStops {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stops: js.Array[SizeStop],
+    `type`: java.lang.String,
+    field: java.lang.String = null,
+    normalizationField: java.lang.String = null,
+    valueExpression: java.lang.String = null
+  ): ThematicStops = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, stops = stops, `type` = `type`)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    __obj.asInstanceOf[ThematicStops]
+  }
+}
+

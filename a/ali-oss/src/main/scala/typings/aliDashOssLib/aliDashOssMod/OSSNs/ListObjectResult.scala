@@ -13,3 +13,18 @@ trait ListObjectResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object ListObjectResult {
+  @scala.inline
+  def apply(
+    isTruncated: scala.Boolean,
+    nextMarker: java.lang.String,
+    objects: js.Array[ObjectMeta],
+    prefixes: js.Array[java.lang.String],
+    res: NormalSuccessResponse
+  ): ListObjectResult = {
+    val __obj = js.Dynamic.literal(isTruncated = isTruncated, nextMarker = nextMarker, objects = objects, prefixes = prefixes, res = res)
+  
+    __obj.asInstanceOf[ListObjectResult]
+  }
+}
+

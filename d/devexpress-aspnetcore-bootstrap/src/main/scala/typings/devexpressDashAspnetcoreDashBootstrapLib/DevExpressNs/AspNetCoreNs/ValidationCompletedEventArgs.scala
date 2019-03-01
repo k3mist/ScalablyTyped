@@ -14,3 +14,20 @@ trait ValidationCompletedEventArgs extends EventArgs {
   val validationGroup: java.lang.String
 }
 
+object ValidationCompletedEventArgs {
+  @scala.inline
+  def apply(
+    container: js.Any,
+    firstInvalidControl: Control,
+    firstVisibleInvalidControl: Control,
+    invisibleControlsValidated: scala.Boolean,
+    isValid: scala.Boolean,
+    sender: Control,
+    validationGroup: java.lang.String
+  ): ValidationCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(container = container, firstInvalidControl = firstInvalidControl, firstVisibleInvalidControl = firstVisibleInvalidControl, invisibleControlsValidated = invisibleControlsValidated, isValid = isValid, sender = sender, validationGroup = validationGroup)
+  
+    __obj.asInstanceOf[ValidationCompletedEventArgs]
+  }
+}
+

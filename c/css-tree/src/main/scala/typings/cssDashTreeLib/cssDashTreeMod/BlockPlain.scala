@@ -13,3 +13,16 @@ trait BlockPlain
   var type_BlockPlain: cssDashTreeLib.cssDashTreeLibStrings.Block
 }
 
+object BlockPlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Block,
+    loc: CssLocation = null
+  ): BlockPlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[BlockPlain]
+  }
+}
+

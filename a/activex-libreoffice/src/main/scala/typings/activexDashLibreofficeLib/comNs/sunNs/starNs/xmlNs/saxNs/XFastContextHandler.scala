@@ -51,3 +51,23 @@ trait XFastContextHandler
   def startUnknownElement(Namespace: java.lang.String, Name: java.lang.String, Attribs: XFastAttributeList): scala.Unit
 }
 
+object XFastContextHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    characters: js.Function1[java.lang.String, scala.Unit],
+    createFastChildContext: js.Function2[scala.Double, XFastAttributeList, XFastContextHandler],
+    createUnknownChildContext: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, XFastContextHandler],
+    endFastElement: js.Function1[scala.Double, scala.Unit],
+    endUnknownElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startFastElement: js.Function2[scala.Double, XFastAttributeList, scala.Unit],
+    startUnknownElement: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, scala.Unit]
+  ): XFastContextHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, characters = characters, createFastChildContext = createFastChildContext, createUnknownChildContext = createUnknownChildContext, endFastElement = endFastElement, endUnknownElement = endUnknownElement, queryInterface = queryInterface, release = release, startFastElement = startFastElement, startUnknownElement = startUnknownElement)
+  
+    __obj.asInstanceOf[XFastContextHandler]
+  }
+}
+

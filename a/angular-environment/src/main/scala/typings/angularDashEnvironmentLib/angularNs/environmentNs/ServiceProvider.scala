@@ -22,3 +22,16 @@ trait ServiceProvider extends js.Object {
   def read(key: java.lang.String): js.Any
 }
 
+object ServiceProvider {
+  @scala.inline
+  def apply(
+    check: js.Function0[scala.Unit],
+    config: js.Function1[Config, scala.Unit],
+    read: js.Function1[java.lang.String, js.Any]
+  ): ServiceProvider = {
+    val __obj = js.Dynamic.literal(check = check, config = config, read = read)
+  
+    __obj.asInstanceOf[ServiceProvider]
+  }
+}
+

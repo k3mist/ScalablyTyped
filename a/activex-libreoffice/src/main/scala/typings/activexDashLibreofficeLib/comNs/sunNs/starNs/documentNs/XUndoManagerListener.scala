@@ -89,3 +89,28 @@ trait XUndoManagerListener
   def undoActionAdded(iEvent: UndoManagerEvent): scala.Unit
 }
 
+object XUndoManagerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    actionRedone: js.Function1[UndoManagerEvent, scala.Unit],
+    actionUndone: js.Function1[UndoManagerEvent, scala.Unit],
+    allActionsCleared: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    cancelledContext: js.Function1[UndoManagerEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    enteredContext: js.Function1[UndoManagerEvent, scala.Unit],
+    enteredHiddenContext: js.Function1[UndoManagerEvent, scala.Unit],
+    leftContext: js.Function1[UndoManagerEvent, scala.Unit],
+    leftHiddenContext: js.Function1[UndoManagerEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    redoActionsCleared: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    release: js.Function0[scala.Unit],
+    resetAll: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    undoActionAdded: js.Function1[UndoManagerEvent, scala.Unit]
+  ): XUndoManagerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, actionRedone = actionRedone, actionUndone = actionUndone, allActionsCleared = allActionsCleared, cancelledContext = cancelledContext, disposing = disposing, enteredContext = enteredContext, enteredHiddenContext = enteredHiddenContext, leftContext = leftContext, leftHiddenContext = leftHiddenContext, queryInterface = queryInterface, redoActionsCleared = redoActionsCleared, release = release, resetAll = resetAll, undoActionAdded = undoActionAdded)
+  
+    __obj.asInstanceOf[XUndoManagerListener]
+  }
+}
+

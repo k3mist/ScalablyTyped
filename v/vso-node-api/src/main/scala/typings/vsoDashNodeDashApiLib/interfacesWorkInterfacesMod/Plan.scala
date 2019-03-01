@@ -56,3 +56,25 @@ trait Plan extends js.Object {
   var userPermissions: PlanUserPermissions
 }
 
+object Plan {
+  @scala.inline
+  def apply(
+    createdByIdentity: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    id: java.lang.String,
+    modifiedByIdentity: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedDate: stdLib.Date,
+    name: java.lang.String,
+    properties: js.Any,
+    revision: scala.Double,
+    `type`: PlanType,
+    url: java.lang.String,
+    userPermissions: PlanUserPermissions
+  ): Plan = {
+    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity, createdDate = createdDate, description = description, id = id, modifiedByIdentity = modifiedByIdentity, modifiedDate = modifiedDate, name = name, properties = properties, revision = revision, `type` = `type`, url = url, userPermissions = userPermissions)
+  
+    __obj.asInstanceOf[Plan]
+  }
+}
+

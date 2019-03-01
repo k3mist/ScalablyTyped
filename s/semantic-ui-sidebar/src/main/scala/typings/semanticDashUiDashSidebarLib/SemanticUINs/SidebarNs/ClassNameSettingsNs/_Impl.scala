@@ -52,3 +52,24 @@ trait _Impl extends js.Object {
   var visible: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    active: java.lang.String,
+    animating: java.lang.String,
+    bottom: java.lang.String,
+    dimmed: java.lang.String,
+    ios: java.lang.String,
+    left: java.lang.String,
+    pushable: java.lang.String,
+    pushed: java.lang.String,
+    right: java.lang.String,
+    top: java.lang.String,
+    visible: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(active = active, animating = animating, bottom = bottom, dimmed = dimmed, ios = ios, left = left, pushable = pushable, pushed = pushed, right = right, top = top, visible = visible)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

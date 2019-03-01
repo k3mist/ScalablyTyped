@@ -11,3 +11,15 @@ trait strings
   var ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.role
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    ARIA_HIDDEN: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`aria-hidden`,
+    ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.role
+  ): strings = {
+    val __obj = js.Dynamic.literal(ARIA_HIDDEN = ARIA_HIDDEN, ROLE = ROLE)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

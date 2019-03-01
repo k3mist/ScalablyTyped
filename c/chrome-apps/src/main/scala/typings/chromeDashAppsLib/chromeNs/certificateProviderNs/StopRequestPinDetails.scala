@@ -28,3 +28,22 @@ trait StopRequestPinDetails extends js.Object {
   var signRequestId: scala.Double
 }
 
+object StopRequestPinDetails {
+  @scala.inline
+  def apply(
+    signRequestId: scala.Double,
+    errorType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_INVALIDPIN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+      ]
+    ] = null
+  ): StopRequestPinDetails = {
+    val __obj = js.Dynamic.literal(signRequestId = signRequestId)
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StopRequestPinDetails]
+  }
+}
+

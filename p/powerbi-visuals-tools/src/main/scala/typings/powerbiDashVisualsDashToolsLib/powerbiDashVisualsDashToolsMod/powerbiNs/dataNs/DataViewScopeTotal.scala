@@ -16,3 +16,16 @@ trait DataViewScopeTotal extends DataRepetitionSelector {
   var kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
 }
 
+object DataViewScopeTotal {
+  @scala.inline
+  def apply(
+    exprs: js.Array[ISQExpr],
+    key: java.lang.String,
+    kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
+  ): DataViewScopeTotal = {
+    val __obj = js.Dynamic.literal(exprs = exprs, key = key, kind = kind)
+  
+    __obj.asInstanceOf[DataViewScopeTotal]
+  }
+}
+

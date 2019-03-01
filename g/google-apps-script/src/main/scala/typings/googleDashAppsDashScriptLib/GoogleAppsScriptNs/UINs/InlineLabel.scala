@@ -40,3 +40,46 @@ trait InlineLabel extends js.Object {
   def setWordWrap(wordWrap: scala.Boolean): InlineLabel
 }
 
+object InlineLabel {
+  @scala.inline
+  def apply(
+    addClickHandler: js.Function1[Handler, InlineLabel],
+    addMouseDownHandler: js.Function1[Handler, InlineLabel],
+    addMouseMoveHandler: js.Function1[Handler, InlineLabel],
+    addMouseOutHandler: js.Function1[Handler, InlineLabel],
+    addMouseOverHandler: js.Function1[Handler, InlineLabel],
+    addMouseUpHandler: js.Function1[Handler, InlineLabel],
+    addMouseWheelHandler: js.Function1[Handler, InlineLabel],
+    addStyleDependentName: js.Function1[java.lang.String, InlineLabel],
+    addStyleName: js.Function1[java.lang.String, InlineLabel],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setDirection: js.Function1[Component, InlineLabel],
+    setHeight: js.Function1[java.lang.String, InlineLabel],
+    setHorizontalAlignment: js.Function1[HorizontalAlignment, InlineLabel],
+    setId: js.Function1[java.lang.String, InlineLabel],
+    setLayoutData: js.Function1[js.Object, InlineLabel],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      InlineLabel
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, InlineLabel],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, InlineLabel],
+    setStyleAttributes: js.Function1[js.Object, InlineLabel],
+    setStyleName: js.Function1[java.lang.String, InlineLabel],
+    setStylePrimaryName: js.Function1[java.lang.String, InlineLabel],
+    setTag: js.Function1[java.lang.String, InlineLabel],
+    setText: js.Function1[java.lang.String, InlineLabel],
+    setTitle: js.Function1[java.lang.String, InlineLabel],
+    setVisible: js.Function1[scala.Boolean, InlineLabel],
+    setWidth: js.Function1[java.lang.String, InlineLabel],
+    setWordWrap: js.Function1[scala.Boolean, InlineLabel]
+  ): InlineLabel = {
+    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDirection = setDirection, setHeight = setHeight, setHorizontalAlignment = setHorizontalAlignment, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth, setWordWrap = setWordWrap)
+  
+    __obj.asInstanceOf[InlineLabel]
+  }
+}
+

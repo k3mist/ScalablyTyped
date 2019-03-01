@@ -16,3 +16,15 @@ trait ClusterSnapshotArgs extends js.Object {
   val dbClusterSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ClusterSnapshotArgs {
+  @scala.inline
+  def apply(
+    dbClusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    dbClusterSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): ClusterSnapshotArgs = {
+    val __obj = js.Dynamic.literal(dbClusterIdentifier = dbClusterIdentifier.asInstanceOf[js.Any], dbClusterSnapshotIdentifier = dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ClusterSnapshotArgs]
+  }
+}
+

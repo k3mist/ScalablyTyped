@@ -17,3 +17,18 @@ trait TrackLinkObject extends js.Object {
   var uri: java.lang.String
 }
 
+object TrackLinkObject {
+  @scala.inline
+  def apply(
+    external_urls: ExternalUrlObject,
+    href: java.lang.String,
+    id: java.lang.String,
+    `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track,
+    uri: java.lang.String
+  ): TrackLinkObject = {
+    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[TrackLinkObject]
+  }
+}
+

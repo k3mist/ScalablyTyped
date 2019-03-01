@@ -12,3 +12,17 @@ trait GroupMembership extends js.Object {
   var queriedId: java.lang.String
 }
 
+object GroupMembership {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    descriptor: IdentityDescriptor,
+    id: java.lang.String,
+    queriedId: java.lang.String
+  ): GroupMembership = {
+    val __obj = js.Dynamic.literal(active = active, descriptor = descriptor, id = id, queriedId = queriedId)
+  
+    __obj.asInstanceOf[GroupMembership]
+  }
+}
+

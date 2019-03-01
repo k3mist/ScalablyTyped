@@ -16,3 +16,18 @@ trait ScriptFrameworkErrorException
   var scriptName: java.lang.String
 }
 
+object ScriptFrameworkErrorException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    errorType: scala.Double,
+    language: java.lang.String,
+    scriptName: java.lang.String
+  ): ScriptFrameworkErrorException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, errorType = errorType, language = language, scriptName = scriptName)
+  
+    __obj.asInstanceOf[ScriptFrameworkErrorException]
+  }
+}
+

@@ -20,3 +20,12 @@ trait ShallowReference extends js.Object {
   var url: java.lang.String
 }
 
+object ShallowReference {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, url: java.lang.String): ShallowReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[ShallowReference]
+  }
+}
+

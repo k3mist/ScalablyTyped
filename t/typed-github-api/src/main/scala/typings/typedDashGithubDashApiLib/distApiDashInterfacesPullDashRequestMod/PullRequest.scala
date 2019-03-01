@@ -32,3 +32,40 @@ trait PullRequest extends js.Object {
   var user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
 }
 
+object PullRequest {
+  @scala.inline
+  def apply(
+    assignees: js.Array[typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary],
+    base: typedDashGithubDashApiLib.distApiDashInterfacesBranchMod.BranchSummary,
+    body: java.lang.String,
+    comments_url: java.lang.String,
+    commits_url: java.lang.String,
+    created_at: stdLib.Date,
+    head: typedDashGithubDashApiLib.distApiDashInterfacesBranchMod.BranchSummary,
+    html_url: java.lang.String,
+    id: scala.Double,
+    issue_url: java.lang.String,
+    locked: scala.Boolean,
+    number: scala.Double,
+    review_comment_url: java.lang.String,
+    review_comments_url: java.lang.String,
+    state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
+    statuses_url: java.lang.String,
+    title: java.lang.String,
+    updated_at: stdLib.Date,
+    url: java.lang.String,
+    user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary,
+    assignee: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary = null,
+    closed_at: stdLib.Date = null,
+    merged_at: stdLib.Date = null,
+    milestone: typedDashGithubDashApiLib.distApiDashInterfacesMilestoneMod.Milestone = null
+  ): PullRequest = {
+    val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, comments_url = comments_url, commits_url = commits_url, created_at = created_at, head = head, html_url = html_url, id = id, issue_url = issue_url, locked = locked, number = number, review_comment_url = review_comment_url, review_comments_url = review_comments_url, state = state.asInstanceOf[js.Any], statuses_url = statuses_url, title = title, updated_at = updated_at, url = url, user = user)
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
+    if (closed_at != null) __obj.updateDynamic("closed_at")(closed_at)
+    if (merged_at != null) __obj.updateDynamic("merged_at")(merged_at)
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    __obj.asInstanceOf[PullRequest]
+  }
+}
+

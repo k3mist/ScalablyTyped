@@ -11,3 +11,12 @@ trait HSB extends js.Object {
   var s: scala.Double
 }
 
+object HSB {
+  @scala.inline
+  def apply(b: scala.Double, h: scala.Double, s: scala.Double): HSB = {
+    val __obj = js.Dynamic.literal(b = b, h = h, s = s)
+  
+    __obj.asInstanceOf[HSB]
+  }
+}
+

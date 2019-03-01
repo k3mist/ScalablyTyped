@@ -22,3 +22,16 @@ trait JavaVMCreationFailureException
   var ErrorCode: scala.Double
 }
 
+object JavaVMCreationFailureException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorCode: scala.Double,
+    Message: java.lang.String
+  ): JavaVMCreationFailureException = {
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message)
+  
+    __obj.asInstanceOf[JavaVMCreationFailureException]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_FromGenerateVerificationToken extends js.Object {
   def generateVerificationToken(): scala.Unit
 }
 
+object Anon_FromGenerateVerificationToken {
+  @scala.inline
+  def apply(
+    from: java.lang.String,
+    generateVerificationToken: js.Function0[scala.Unit],
+    redirect: java.lang.String,
+    subject: java.lang.String,
+    template: java.lang.String,
+    text: java.lang.String,
+    to: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_FromGenerateVerificationToken = {
+    val __obj = js.Dynamic.literal(from = from, generateVerificationToken = generateVerificationToken, redirect = redirect, subject = subject, template = template, text = text, to = to, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_FromGenerateVerificationToken]
+  }
+}
+

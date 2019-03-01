@@ -12,3 +12,21 @@ trait VideoFormatsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[VideoFormatsListResponse]
 }
 
+object VideoFormatsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VideoFormat]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VideoFormatsListResponse]
+    ]
+  ): VideoFormatsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[VideoFormatsResource]
+  }
+}
+

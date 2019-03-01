@@ -11,3 +11,15 @@ trait InterpretedData extends js.Object {
   var Series: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[XDataSeries]]
 }
 
+object InterpretedData {
+  @scala.inline
+  def apply(
+    Categories: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence,
+    Series: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[XDataSeries]]
+  ): InterpretedData = {
+    val __obj = js.Dynamic.literal(Categories = Categories, Series = Series)
+  
+    __obj.asInstanceOf[InterpretedData]
+  }
+}
+

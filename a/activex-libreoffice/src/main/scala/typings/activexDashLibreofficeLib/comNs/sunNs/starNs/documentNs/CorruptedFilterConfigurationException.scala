@@ -15,3 +15,16 @@ trait CorruptedFilterConfigurationException
   var Details: java.lang.String
 }
 
+object CorruptedFilterConfigurationException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Details: java.lang.String,
+    Message: java.lang.String
+  ): CorruptedFilterConfigurationException = {
+    val __obj = js.Dynamic.literal(Context = Context, Details = Details, Message = Message)
+  
+    __obj.asInstanceOf[CorruptedFilterConfigurationException]
+  }
+}
+

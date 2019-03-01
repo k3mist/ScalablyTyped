@@ -20,3 +20,21 @@ trait XUnoControlContainer
   def setTabControllers(TabControllers: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTabController]): scala.Unit
 }
 
+object XUnoControlContainer {
+  @scala.inline
+  def apply(
+    TabControllers: activexDashInteropLib.SafeArray[XTabController],
+    acquire: js.Function0[scala.Unit],
+    addTabController: js.Function1[XTabController, scala.Unit],
+    getTabControllers: js.Function0[activexDashInteropLib.SafeArray[XTabController]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTabController: js.Function1[XTabController, scala.Unit],
+    setTabControllers: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTabController], scala.Unit]
+  ): XUnoControlContainer = {
+    val __obj = js.Dynamic.literal(TabControllers = TabControllers, acquire = acquire, addTabController = addTabController, getTabControllers = getTabControllers, queryInterface = queryInterface, release = release, removeTabController = removeTabController, setTabControllers = setTabControllers)
+  
+    __obj.asInstanceOf[XUnoControlContainer]
+  }
+}
+

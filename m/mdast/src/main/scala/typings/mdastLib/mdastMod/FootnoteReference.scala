@@ -13,3 +13,20 @@ trait FootnoteReference
   var type_FootnoteReference: mdastLib.mdastLibStrings.footnoteReference
 }
 
+object FootnoteReference {
+  @scala.inline
+  def apply(
+    identifier: java.lang.String,
+    `type`: mdastLib.mdastLibStrings.footnoteReference,
+    data: unistLib.unistMod.Data = null,
+    label: java.lang.String = null,
+    position: unistLib.unistMod.Position = null
+  ): FootnoteReference = {
+    val __obj = js.Dynamic.literal(identifier = identifier, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[FootnoteReference]
+  }
+}
+

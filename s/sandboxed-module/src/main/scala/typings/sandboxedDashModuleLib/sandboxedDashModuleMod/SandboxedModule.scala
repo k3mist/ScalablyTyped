@@ -36,3 +36,20 @@ trait SandboxedModule extends js.Object {
   var sourceTransformers: js.Object
 }
 
+object SandboxedModule {
+  @scala.inline
+  def apply(
+    exports: js.Any,
+    filename: java.lang.String,
+    globals: js.Object,
+    locals: js.Object,
+    module: java.lang.String,
+    required: js.Object,
+    sourceTransformers: js.Object
+  ): SandboxedModule = {
+    val __obj = js.Dynamic.literal(exports = exports, filename = filename, globals = globals, locals = locals, module = module, required = required, sourceTransformers = sourceTransformers)
+  
+    __obj.asInstanceOf[SandboxedModule]
+  }
+}
+

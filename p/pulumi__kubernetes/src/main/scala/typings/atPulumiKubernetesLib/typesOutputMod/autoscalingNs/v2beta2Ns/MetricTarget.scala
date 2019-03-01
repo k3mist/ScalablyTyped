@@ -31,3 +31,17 @@ trait MetricTarget extends js.Object {
   val value: java.lang.String
 }
 
+object MetricTarget {
+  @scala.inline
+  def apply(
+    averageUtilization: scala.Double,
+    averageValue: java.lang.String,
+    `type`: java.lang.String,
+    value: java.lang.String
+  ): MetricTarget = {
+    val __obj = js.Dynamic.literal(averageUtilization = averageUtilization, averageValue = averageValue, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[MetricTarget]
+  }
+}
+

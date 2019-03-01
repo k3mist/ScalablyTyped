@@ -35,3 +35,28 @@ import scala.scalajs.js.annotation._
   var participantRefs: js.Array[Participant]
 }
 
+object ConversationNode {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    correlationKeys: js.Array[CorrelationKey],
+    id: java.lang.String,
+    incomingConversationLinks: js.Array[ConversationLink],
+    messageFlowRefs: js.Array[MessageFlow],
+    name: java.lang.String,
+    outgoingConversationLinks: js.Array[ConversationLink],
+    participantRefs: js.Array[Participant],
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): ConversationNode = {
+    val __obj = js.Dynamic.literal($type = $type, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[ConversationNode]
+  }
+}
+

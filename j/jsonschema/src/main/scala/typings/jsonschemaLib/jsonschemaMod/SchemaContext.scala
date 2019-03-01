@@ -13,3 +13,18 @@ trait SchemaContext extends js.Object {
   var schemas: org.scalablytyped.runtime.StringDictionary[Schema]
 }
 
+object SchemaContext {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    options: Options,
+    propertyPath: java.lang.String,
+    schema: Schema,
+    schemas: org.scalablytyped.runtime.StringDictionary[Schema]
+  ): SchemaContext = {
+    val __obj = js.Dynamic.literal(base = base, options = options, propertyPath = propertyPath, schema = schema, schemas = schemas)
+  
+    __obj.asInstanceOf[SchemaContext]
+  }
+}
+

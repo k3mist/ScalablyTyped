@@ -23,3 +23,18 @@ trait Anon_FrameIdProcessIdTabId extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_FrameIdProcessIdTabId {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String,
+    processId: scala.Int | scala.Double = null
+  ): Anon_FrameIdProcessIdTabId = {
+    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId, timeStamp = timeStamp, url = url)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FrameIdProcessIdTabId]
+  }
+}
+

@@ -31,3 +31,17 @@ trait FloatingObjectAbsolutePositionSettings extends js.Object {
   var verticalPositionType: js.Any
 }
 
+object FloatingObjectAbsolutePositionSettings {
+  @scala.inline
+  def apply(
+    horizontalAbsolutePosition: scala.Double,
+    horizontalPositionType: js.Any,
+    verticalAbsolutePosition: scala.Double,
+    verticalPositionType: js.Any
+  ): FloatingObjectAbsolutePositionSettings = {
+    val __obj = js.Dynamic.literal(horizontalAbsolutePosition = horizontalAbsolutePosition, horizontalPositionType = horizontalPositionType, verticalAbsolutePosition = verticalAbsolutePosition, verticalPositionType = verticalPositionType)
+  
+    __obj.asInstanceOf[FloatingObjectAbsolutePositionSettings]
+  }
+}
+

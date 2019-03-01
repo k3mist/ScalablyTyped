@@ -16,3 +16,29 @@ trait AccountUserLinksResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
 }
 
+object AccountUserLinksResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLinks]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityUserLink]
+    ]
+  ): AccountUserLinksResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
+    __obj.asInstanceOf[AccountUserLinksResource]
+  }
+}
+

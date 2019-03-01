@@ -38,3 +38,20 @@ trait SumAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object SumAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, SumAggregation],
+    lang: js.Function1[java.lang.String, SumAggregation],
+    params: js.Function1[js.Object, SumAggregation],
+    script: js.Function1[java.lang.String, SumAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, SumAggregation],
+    toJSON: js.Function0[js.Any]
+  ): SumAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[SumAggregation]
+  }
+}
+

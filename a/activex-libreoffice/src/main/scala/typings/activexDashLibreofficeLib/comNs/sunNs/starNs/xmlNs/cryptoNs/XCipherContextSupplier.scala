@@ -29,3 +29,24 @@ trait XCipherContextSupplier
   ): XCipherContext
 }
 
+object XCipherContextSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCipherContext: js.Function5[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Boolean, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XCipherContext
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCipherContextSupplier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getCipherContext = getCipherContext, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCipherContextSupplier]
+  }
+}
+

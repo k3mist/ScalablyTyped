@@ -81,3 +81,29 @@ trait PhotosResource extends js.Object {
   def list(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
 }
 
+object PhotosResource {
+  @scala.inline
+  def apply(
+    batchDelete: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchDeletePhotosResponse]
+    ],
+    batchGet: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetPhotosResponse]
+    ],
+    batchUpdate: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePhotosResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
+    ]
+  ): PhotosResource = {
+    val __obj = js.Dynamic.literal(batchDelete = batchDelete, batchGet = batchGet, batchUpdate = batchUpdate, list = list)
+  
+    __obj.asInstanceOf[PhotosResource]
+  }
+}
+

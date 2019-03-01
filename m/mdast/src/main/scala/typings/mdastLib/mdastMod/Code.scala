@@ -14,3 +14,22 @@ trait Code
   var type_Code: mdastLib.mdastLibStrings.code
 }
 
+object Code {
+  @scala.inline
+  def apply(
+    `type`: mdastLib.mdastLibStrings.code,
+    value: java.lang.String,
+    data: unistLib.unistMod.Data = null,
+    lang: java.lang.String = null,
+    meta: java.lang.String = null,
+    position: unistLib.unistMod.Position = null
+  ): Code = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Code]
+  }
+}
+

@@ -28,3 +28,36 @@ trait Album extends js.Object {
   var views: scala.Double
 }
 
+object Album {
+  @scala.inline
+  def apply(
+    cover: java.lang.String,
+    cover_height: scala.Double,
+    cover_width: scala.Double,
+    datetime: scala.Double,
+    description: java.lang.String,
+    favorite: scala.Boolean,
+    id: java.lang.String,
+    images: js.Array[Image],
+    images_count: scala.Double,
+    layout: java.lang.String,
+    link: java.lang.String,
+    order: scala.Double,
+    privacy: java.lang.String,
+    section: java.lang.String,
+    title: java.lang.String,
+    views: scala.Double,
+    account_id: scala.Int | scala.Double = null,
+    account_url: java.lang.String = null,
+    deletehash: java.lang.String = null,
+    nsfw: js.UndefOr[scala.Boolean] = js.undefined
+  ): Album = {
+    val __obj = js.Dynamic.literal(cover = cover, cover_height = cover_height, cover_width = cover_width, datetime = datetime, description = description, favorite = favorite, id = id, images = images, images_count = images_count, layout = layout, link = link, order = order, privacy = privacy, section = section, title = title, views = views)
+    if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
+    if (account_url != null) __obj.updateDynamic("account_url")(account_url)
+    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash)
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)
+    __obj.asInstanceOf[Album]
+  }
+}
+

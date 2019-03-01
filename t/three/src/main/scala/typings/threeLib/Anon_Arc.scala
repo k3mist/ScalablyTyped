@@ -13,3 +13,18 @@ trait Anon_Arc extends js.Object {
   var tubularSegments: scala.Double
 }
 
+object Anon_Arc {
+  @scala.inline
+  def apply(
+    arc: scala.Double,
+    radialSegments: scala.Double,
+    radius: scala.Double,
+    tube: scala.Double,
+    tubularSegments: scala.Double
+  ): Anon_Arc = {
+    val __obj = js.Dynamic.literal(arc = arc, radialSegments = radialSegments, radius = radius, tube = tube, tubularSegments = tubularSegments)
+  
+    __obj.asInstanceOf[Anon_Arc]
+  }
+}
+

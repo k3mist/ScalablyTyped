@@ -28,3 +28,28 @@ trait XDocumentBuilder
   def setErrorHandler(eh: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler): scala.Unit
 }
 
+object XDocumentBuilder {
+  @scala.inline
+  def apply(
+    DOMImplementation: XDOMImplementation,
+    acquire: js.Function0[scala.Unit],
+    getDOMImplementation: js.Function0[XDOMImplementation],
+    isNamespaceAware: js.Function0[scala.Boolean],
+    isValidating: js.Function0[scala.Boolean],
+    newDocument: js.Function0[XDocument],
+    parse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, XDocument],
+    parseURI: js.Function1[java.lang.String, XDocument],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEntityResolver: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XEntityResolver, 
+      scala.Unit
+    ],
+    setErrorHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler, scala.Unit]
+  ): XDocumentBuilder = {
+    val __obj = js.Dynamic.literal(DOMImplementation = DOMImplementation, acquire = acquire, getDOMImplementation = getDOMImplementation, isNamespaceAware = isNamespaceAware, isValidating = isValidating, newDocument = newDocument, parse = parse, parseURI = parseURI, queryInterface = queryInterface, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler)
+  
+    __obj.asInstanceOf[XDocumentBuilder]
+  }
+}
+

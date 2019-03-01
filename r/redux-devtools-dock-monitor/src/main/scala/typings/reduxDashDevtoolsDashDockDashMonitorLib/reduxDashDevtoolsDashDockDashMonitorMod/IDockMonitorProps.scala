@@ -54,3 +54,26 @@ trait IDockMonitorProps extends js.Object {
   var toggleVisibilityKey: java.lang.String
 }
 
+object IDockMonitorProps {
+  @scala.inline
+  def apply(
+    changePositionKey: java.lang.String,
+    toggleVisibilityKey: java.lang.String,
+    changeMonitorKey: java.lang.String = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    defaultIsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultPosition: reduxDashDevtoolsDashDockDashMonitorLib.DockPosition = null,
+    defaultSize: scala.Int | scala.Double = null,
+    fluid: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDockMonitorProps = {
+    val __obj = js.Dynamic.literal(changePositionKey = changePositionKey, toggleVisibilityKey = toggleVisibilityKey)
+    if (changeMonitorKey != null) __obj.updateDynamic("changeMonitorKey")(changeMonitorKey)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible)
+    if (defaultPosition != null) __obj.updateDynamic("defaultPosition")(defaultPosition)
+    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    __obj.asInstanceOf[IDockMonitorProps]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ScrollEventData extends js.Object {
   var scrollTop: scala.Double
 }
 
+object ScrollEventData {
+  @scala.inline
+  def apply(clientHeight: scala.Double, scrollHeight: scala.Double, scrollTop: scala.Double): ScrollEventData = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, scrollHeight = scrollHeight, scrollTop = scrollTop)
+  
+    __obj.asInstanceOf[ScrollEventData]
+  }
+}
+

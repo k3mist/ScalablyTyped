@@ -20,3 +20,16 @@ trait QueryAutocompleteResult extends js.Object {
   var terms: js.Array[PredictionTerm]
 }
 
+object QueryAutocompleteResult {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    matched_substrings: js.Array[PredictionSubstring],
+    terms: js.Array[PredictionTerm]
+  ): QueryAutocompleteResult = {
+    val __obj = js.Dynamic.literal(description = description, matched_substrings = matched_substrings, terms = terms)
+  
+    __obj.asInstanceOf[QueryAutocompleteResult]
+  }
+}
+

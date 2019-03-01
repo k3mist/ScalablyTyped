@@ -16,3 +16,17 @@ trait ExecuteActionRequestedOptions extends js.Object {
   var requestId: scala.Double
 }
 
+object ExecuteActionRequestedOptions {
+  @scala.inline
+  def apply(
+    actionId: java.lang.String,
+    entryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    requestId: scala.Double
+  ): ExecuteActionRequestedOptions = {
+    val __obj = js.Dynamic.literal(actionId = actionId, entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[ExecuteActionRequestedOptions]
+  }
+}
+

@@ -46,3 +46,19 @@ trait Contact extends js.Object {
   var urls: js.Array[java.lang.String]
 }
 
+object Contact {
+  @scala.inline
+  def apply(
+    addresses: js.Array[java.lang.String],
+    businessName: java.lang.String,
+    emailAddresses: js.Array[java.lang.String],
+    personName: java.lang.String,
+    phoneNumbers: js.Array[PhoneNumber],
+    urls: js.Array[java.lang.String]
+  ): Contact = {
+    val __obj = js.Dynamic.literal(addresses = addresses, businessName = businessName, emailAddresses = emailAddresses, personName = personName, phoneNumbers = phoneNumbers, urls = urls)
+  
+    __obj.asInstanceOf[Contact]
+  }
+}
+

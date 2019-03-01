@@ -23,3 +23,16 @@ trait SamplingHeapProfileNode extends js.Object {
   var selfSize: scala.Double
 }
 
+object SamplingHeapProfileNode {
+  @scala.inline
+  def apply(
+    callFrame: nodeLib.inspectorMod.RuntimeNs.CallFrame,
+    children: js.Array[SamplingHeapProfileNode],
+    selfSize: scala.Double
+  ): SamplingHeapProfileNode = {
+    val __obj = js.Dynamic.literal(callFrame = callFrame, children = children, selfSize = selfSize)
+  
+    __obj.asInstanceOf[SamplingHeapProfileNode]
+  }
+}
+

@@ -61,3 +61,23 @@ trait RichEditUnitConverter extends js.Object {
   def twipsToPoints(value: scala.Double): scala.Double
 }
 
+object RichEditUnitConverter {
+  @scala.inline
+  def apply(
+    centimetersToTwips: js.Function1[scala.Double, scala.Double],
+    inchesToTwips: js.Function1[scala.Double, scala.Double],
+    pixelsToCentimeters: js.Function1[scala.Double, scala.Double],
+    pixelsToInches: js.Function1[scala.Double, scala.Double],
+    pixelsToPoints: js.Function1[scala.Double, scala.Double],
+    pixelsToTwips: js.Function1[scala.Double, scala.Double],
+    pointsToTwips: js.Function1[scala.Double, scala.Double],
+    twipsToCentimeters: js.Function1[scala.Double, scala.Double],
+    twipsToInches: js.Function1[scala.Double, scala.Double],
+    twipsToPoints: js.Function1[scala.Double, scala.Double]
+  ): RichEditUnitConverter = {
+    val __obj = js.Dynamic.literal(centimetersToTwips = centimetersToTwips, inchesToTwips = inchesToTwips, pixelsToCentimeters = pixelsToCentimeters, pixelsToInches = pixelsToInches, pixelsToPoints = pixelsToPoints, pixelsToTwips = pixelsToTwips, pointsToTwips = pointsToTwips, twipsToCentimeters = twipsToCentimeters, twipsToInches = twipsToInches, twipsToPoints = twipsToPoints)
+  
+    __obj.asInstanceOf[RichEditUnitConverter]
+  }
+}
+

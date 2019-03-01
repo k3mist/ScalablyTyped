@@ -26,3 +26,20 @@ trait ContinuousIntegrationTrigger extends BuildTrigger {
   var pollingJobId: java.lang.String
 }
 
+object ContinuousIntegrationTrigger {
+  @scala.inline
+  def apply(
+    batchChanges: scala.Boolean,
+    branchFilters: js.Array[java.lang.String],
+    maxConcurrentBuildsPerBranch: scala.Double,
+    pathFilters: js.Array[java.lang.String],
+    pollingInterval: scala.Double,
+    pollingJobId: java.lang.String,
+    triggerType: DefinitionTriggerType
+  ): ContinuousIntegrationTrigger = {
+    val __obj = js.Dynamic.literal(batchChanges = batchChanges, branchFilters = branchFilters, maxConcurrentBuildsPerBranch = maxConcurrentBuildsPerBranch, pathFilters = pathFilters, pollingInterval = pollingInterval, pollingJobId = pollingJobId, triggerType = triggerType)
+  
+    __obj.asInstanceOf[ContinuousIntegrationTrigger]
+  }
+}
+

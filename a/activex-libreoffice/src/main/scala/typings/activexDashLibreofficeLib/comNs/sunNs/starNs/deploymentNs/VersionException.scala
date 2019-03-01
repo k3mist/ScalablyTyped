@@ -25,3 +25,18 @@ trait VersionException
   var NewVersion: java.lang.String
 }
 
+object VersionException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Deployed: XPackage,
+    Message: java.lang.String,
+    NewDisplayName: java.lang.String,
+    NewVersion: java.lang.String
+  ): VersionException = {
+    val __obj = js.Dynamic.literal(Context = Context, Deployed = Deployed, Message = Message, NewDisplayName = NewDisplayName, NewVersion = NewVersion)
+  
+    __obj.asInstanceOf[VersionException]
+  }
+}
+

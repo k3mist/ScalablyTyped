@@ -13,3 +13,18 @@ trait Anon_HealthyThresholdIntervalTarget extends js.Object {
   var unhealthyThreshold: scala.Double
 }
 
+object Anon_HealthyThresholdIntervalTarget {
+  @scala.inline
+  def apply(
+    healthyThreshold: scala.Double,
+    interval: scala.Double,
+    target: java.lang.String,
+    timeout: scala.Double,
+    unhealthyThreshold: scala.Double
+  ): Anon_HealthyThresholdIntervalTarget = {
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold, interval = interval, target = target, timeout = timeout, unhealthyThreshold = unhealthyThreshold)
+  
+    __obj.asInstanceOf[Anon_HealthyThresholdIntervalTarget]
+  }
+}
+

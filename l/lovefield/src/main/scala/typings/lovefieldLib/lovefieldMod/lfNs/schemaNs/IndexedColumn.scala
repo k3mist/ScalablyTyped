@@ -11,3 +11,12 @@ trait IndexedColumn extends js.Object {
   var order: lovefieldLib.lovefieldMod.lfNs.Order
 }
 
+object IndexedColumn {
+  @scala.inline
+  def apply(autoIncrement: scala.Boolean, name: java.lang.String, order: lovefieldLib.lovefieldMod.lfNs.Order): IndexedColumn = {
+    val __obj = js.Dynamic.literal(autoIncrement = autoIncrement, name = name, order = order)
+  
+    __obj.asInstanceOf[IndexedColumn]
+  }
+}
+

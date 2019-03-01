@@ -10,3 +10,12 @@ trait ViewPagerAndroidOnPageScrollEventData extends js.Object {
   var position: scala.Double
 }
 
+object ViewPagerAndroidOnPageScrollEventData {
+  @scala.inline
+  def apply(offset: scala.Double, position: scala.Double): ViewPagerAndroidOnPageScrollEventData = {
+    val __obj = js.Dynamic.literal(offset = offset, position = position)
+  
+    __obj.asInstanceOf[ViewPagerAndroidOnPageScrollEventData]
+  }
+}
+

@@ -10,3 +10,19 @@ trait ListViewRemoveEvent extends ListViewEvent {
   var model: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.Model] = js.undefined
 }
 
+object ListViewRemoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ListView,
+    item: kendoDashUiLib.JQuery = null,
+    model: kendoDashUiLib.kendoNs.dataNs.Model = null
+  ): ListViewRemoveEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (model != null) __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[ListViewRemoveEvent]
+  }
+}
+

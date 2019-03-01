@@ -11,3 +11,16 @@ trait Waterline extends js.Object {
   def loadCollection(collection: CollectionClass): scala.Unit
 }
 
+object Waterline {
+  @scala.inline
+  def apply(
+    collections: js.Any,
+    initialize: js.Function2[Config, js.Function2[/* err */ nodeLib.Error, /* ontology */ Ontology, _], js.Any],
+    loadCollection: js.Function1[CollectionClass, scala.Unit]
+  ): Waterline = {
+    val __obj = js.Dynamic.literal(collections = collections, initialize = initialize, loadCollection = loadCollection)
+  
+    __obj.asInstanceOf[Waterline]
+  }
+}
+

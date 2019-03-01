@@ -36,3 +36,19 @@ trait PrintOption extends js.Object {
   var shouldPrintBackgrounds: scala.Boolean
 }
 
+object PrintOption {
+  @scala.inline
+  def apply(
+    headerFooterEnabled: scala.Boolean,
+    landscape: scala.Boolean,
+    mediaSize: js.Any,
+    pdf_path: java.lang.String,
+    printer: java.lang.String,
+    shouldPrintBackgrounds: scala.Boolean
+  ): PrintOption = {
+    val __obj = js.Dynamic.literal(headerFooterEnabled = headerFooterEnabled, landscape = landscape, mediaSize = mediaSize, pdf_path = pdf_path, printer = printer, shouldPrintBackgrounds = shouldPrintBackgrounds)
+  
+    __obj.asInstanceOf[PrintOption]
+  }
+}
+

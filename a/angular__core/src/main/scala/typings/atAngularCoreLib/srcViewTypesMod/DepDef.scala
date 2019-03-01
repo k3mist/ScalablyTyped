@@ -11,3 +11,12 @@ trait DepDef extends js.Object {
   var tokenKey: java.lang.String
 }
 
+object DepDef {
+  @scala.inline
+  def apply(flags: DepFlags, token: js.Any, tokenKey: java.lang.String): DepDef = {
+    val __obj = js.Dynamic.literal(flags = flags, token = token, tokenKey = tokenKey)
+  
+    __obj.asInstanceOf[DepDef]
+  }
+}
+

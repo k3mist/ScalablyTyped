@@ -11,3 +11,12 @@ trait Anon_Failed extends js.Object {
   var unknown: scala.Double
 }
 
+object Anon_Failed {
+  @scala.inline
+  def apply(failed: scala.Double, succeeded: scala.Double, unknown: scala.Double): Anon_Failed = {
+    val __obj = js.Dynamic.literal(failed = failed, succeeded = succeeded, unknown = unknown)
+  
+    __obj.asInstanceOf[Anon_Failed]
+  }
+}
+

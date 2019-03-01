@@ -12,3 +12,21 @@ trait ResourcesResource extends js.Object {
   def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields): gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
 }
 
+object ResourcesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Resource]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
+    ]
+  ): ResourcesResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[ResourcesResource]
+  }
+}
+

@@ -20,3 +20,22 @@ trait SliceProperties extends WidgetProperties {
   var viewModel: js.UndefOr[SliceViewModelProperties] = js.undefined
 }
 
+object SliceProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    view: SceneViewProperties = null,
+    viewModel: SliceViewModelProperties = null
+  ): SliceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[SliceProperties]
+  }
+}
+

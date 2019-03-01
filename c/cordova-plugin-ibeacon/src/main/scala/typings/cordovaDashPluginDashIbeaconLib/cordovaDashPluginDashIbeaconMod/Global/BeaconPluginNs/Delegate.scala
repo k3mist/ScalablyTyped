@@ -17,3 +17,22 @@ trait Delegate extends js.Object {
   def peripheralManagerDidUpdateState(pluginResult: PluginResult): scala.Unit
 }
 
+object Delegate {
+  @scala.inline
+  def apply(
+    didChangeAuthorizationStatus: js.Function1[java.lang.String, scala.Unit],
+    didDetermineStateForRegion: js.Function1[PluginResult, scala.Unit],
+    didEnterRegion: js.Function1[PluginResult, scala.Unit],
+    didExitRegion: js.Function1[PluginResult, scala.Unit],
+    didRangeBeaconsInRegion: js.Function1[PluginResult, scala.Unit],
+    didStartMonitoringForRegion: js.Function1[PluginResult, scala.Unit],
+    monitoringDidFailForRegionWithError: js.Function1[PluginResult, scala.Unit],
+    peripheralManagerDidStartAdvertising: js.Function1[PluginResult, scala.Unit],
+    peripheralManagerDidUpdateState: js.Function1[PluginResult, scala.Unit]
+  ): Delegate = {
+    val __obj = js.Dynamic.literal(didChangeAuthorizationStatus = didChangeAuthorizationStatus, didDetermineStateForRegion = didDetermineStateForRegion, didEnterRegion = didEnterRegion, didExitRegion = didExitRegion, didRangeBeaconsInRegion = didRangeBeaconsInRegion, didStartMonitoringForRegion = didStartMonitoringForRegion, monitoringDidFailForRegionWithError = monitoringDidFailForRegionWithError, peripheralManagerDidStartAdvertising = peripheralManagerDidStartAdvertising, peripheralManagerDidUpdateState = peripheralManagerDidUpdateState)
+  
+    __obj.asInstanceOf[Delegate]
+  }
+}
+

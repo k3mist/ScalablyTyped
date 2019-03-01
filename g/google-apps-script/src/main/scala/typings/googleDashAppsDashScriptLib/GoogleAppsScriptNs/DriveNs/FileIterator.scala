@@ -21,3 +21,16 @@ trait FileIterator extends js.Object {
   def next(): File
 }
 
+object FileIterator {
+  @scala.inline
+  def apply(
+    getContinuationToken: js.Function0[java.lang.String],
+    hasNext: js.Function0[scala.Boolean],
+    next: js.Function0[File]
+  ): FileIterator = {
+    val __obj = js.Dynamic.literal(getContinuationToken = getContinuationToken, hasNext = hasNext, next = next)
+  
+    __obj.asInstanceOf[FileIterator]
+  }
+}
+

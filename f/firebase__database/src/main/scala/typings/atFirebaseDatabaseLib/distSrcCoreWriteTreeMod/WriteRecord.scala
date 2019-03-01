@@ -15,3 +15,19 @@ trait WriteRecord extends js.Object {
   var writeId: scala.Double
 }
 
+object WriteRecord {
+  @scala.inline
+  def apply(
+    path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
+    visible: scala.Boolean,
+    writeId: scala.Double,
+    children: org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node] = null,
+    snap: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node = null
+  ): WriteRecord = {
+    val __obj = js.Dynamic.literal(path = path, visible = visible, writeId = writeId)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (snap != null) __obj.updateDynamic("snap")(snap)
+    __obj.asInstanceOf[WriteRecord]
+  }
+}
+

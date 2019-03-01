@@ -24,3 +24,12 @@ trait IngressTLS extends js.Object {
   val secretName: java.lang.String
 }
 
+object IngressTLS {
+  @scala.inline
+  def apply(hosts: js.Array[java.lang.String], secretName: java.lang.String): IngressTLS = {
+    val __obj = js.Dynamic.literal(hosts = hosts, secretName = secretName)
+  
+    __obj.asInstanceOf[IngressTLS]
+  }
+}
+

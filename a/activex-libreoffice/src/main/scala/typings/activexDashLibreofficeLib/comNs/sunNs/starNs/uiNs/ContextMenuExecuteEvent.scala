@@ -17,3 +17,17 @@ trait ContextMenuExecuteEvent extends js.Object {
   var SourceWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
 }
 
+object ContextMenuExecuteEvent {
+  @scala.inline
+  def apply(
+    ActionTriggerContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    ExecutePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Selection: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionSupplier,
+    SourceWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
+  ): ContextMenuExecuteEvent = {
+    val __obj = js.Dynamic.literal(ActionTriggerContainer = ActionTriggerContainer, ExecutePosition = ExecutePosition, Selection = Selection, SourceWindow = SourceWindow)
+  
+    __obj.asInstanceOf[ContextMenuExecuteEvent]
+  }
+}
+

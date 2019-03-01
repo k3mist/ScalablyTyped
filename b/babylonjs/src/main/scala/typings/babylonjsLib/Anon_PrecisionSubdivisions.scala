@@ -15,3 +15,22 @@ trait Anon_PrecisionSubdivisions extends js.Object {
   var zmin: scala.Double
 }
 
+object Anon_PrecisionSubdivisions {
+  @scala.inline
+  def apply(
+    xmax: scala.Double,
+    xmin: scala.Double,
+    zmax: scala.Double,
+    zmin: scala.Double,
+    precision: Anon_H = null,
+    subdivisions: Anon_H = null,
+    updatable: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_PrecisionSubdivisions = {
+    val __obj = js.Dynamic.literal(xmax = xmax, xmin = xmin, zmax = zmax, zmin = zmin)
+    if (precision != null) __obj.updateDynamic("precision")(precision)
+    if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions)
+    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable)
+    __obj.asInstanceOf[Anon_PrecisionSubdivisions]
+  }
+}
+

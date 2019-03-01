@@ -37,3 +37,22 @@ trait ProjectsResource extends js.Object {
   def initializeSettings(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    getSettings: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
+    ],
+    histories: HistoriesResource,
+    initializeSettings: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(getSettings = getSettings, histories = histories, initializeSettings = initializeSettings)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

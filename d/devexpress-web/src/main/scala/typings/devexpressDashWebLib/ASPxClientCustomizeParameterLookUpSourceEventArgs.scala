@@ -26,3 +26,16 @@ trait ASPxClientCustomizeParameterLookUpSourceEventArgs extends ASPxClientEventA
   var parameter: ASPxDesignerElementParameterDescriptor
 }
 
+object ASPxClientCustomizeParameterLookUpSourceEventArgs {
+  @scala.inline
+  def apply(
+    dataSource: js.Object,
+    items: js.Array[ASPxDesignerElementEditorItem],
+    parameter: ASPxDesignerElementParameterDescriptor
+  ): ASPxClientCustomizeParameterLookUpSourceEventArgs = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource, items = items, parameter = parameter)
+  
+    __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
+  }
+}
+

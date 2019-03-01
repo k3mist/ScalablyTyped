@@ -52,3 +52,23 @@ trait SizeSchemeForPolyline
   var width: scala.Double
 }
 
+object SizeSchemeForPolyline {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxWidth: scala.Double,
+    minWidth: scala.Double,
+    noDataColor: Color,
+    noDataWidth: scala.Double,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    width: scala.Double
+  ): SizeSchemeForPolyline = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, maxWidth = maxWidth, minWidth = minWidth, noDataColor = noDataColor, noDataWidth = noDataWidth, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
+    __obj.asInstanceOf[SizeSchemeForPolyline]
+  }
+}
+

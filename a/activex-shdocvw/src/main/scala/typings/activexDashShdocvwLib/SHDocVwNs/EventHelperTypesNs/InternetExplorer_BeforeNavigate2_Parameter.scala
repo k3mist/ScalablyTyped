@@ -15,3 +15,20 @@ trait InternetExplorer_BeforeNavigate2_Parameter extends js.Object {
   val pDisp: js.Any
 }
 
+object InternetExplorer_BeforeNavigate2_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    Flags: js.Any,
+    Headers: js.Any,
+    PostData: js.Any,
+    TargetFrameName: js.Any,
+    URL: js.Any,
+    pDisp: js.Any
+  ): InternetExplorer_BeforeNavigate2_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Flags = Flags, Headers = Headers, PostData = PostData, TargetFrameName = TargetFrameName, URL = URL, pDisp = pDisp)
+  
+    __obj.asInstanceOf[InternetExplorer_BeforeNavigate2_Parameter]
+  }
+}
+

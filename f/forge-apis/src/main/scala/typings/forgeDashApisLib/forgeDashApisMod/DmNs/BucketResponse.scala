@@ -13,3 +13,18 @@ trait BucketResponse extends js.Object {
   var policyKey: java.lang.String
 }
 
+object BucketResponse {
+  @scala.inline
+  def apply(
+    bucketKey: java.lang.String,
+    bucketOwner: java.lang.String,
+    createdDate: scala.Double,
+    permissions: js.Array[forgeDashApisLib.Anon_Access],
+    policyKey: java.lang.String
+  ): BucketResponse = {
+    val __obj = js.Dynamic.literal(bucketKey = bucketKey, bucketOwner = bucketOwner, createdDate = createdDate, permissions = permissions, policyKey = policyKey)
+  
+    __obj.asInstanceOf[BucketResponse]
+  }
+}
+

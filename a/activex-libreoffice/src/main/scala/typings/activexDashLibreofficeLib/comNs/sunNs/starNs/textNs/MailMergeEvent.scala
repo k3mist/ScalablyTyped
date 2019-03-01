@@ -19,3 +19,15 @@ trait MailMergeEvent
   var Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel
 }
 
+object MailMergeEvent {
+  @scala.inline
+  def apply(
+    Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): MailMergeEvent = {
+    val __obj = js.Dynamic.literal(Model = Model, Source = Source)
+  
+    __obj.asInstanceOf[MailMergeEvent]
+  }
+}
+

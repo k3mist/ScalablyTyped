@@ -14,3 +14,19 @@ trait EnterElement extends js.Object {
   def querySelectorAll(selectors: java.lang.String): stdLib.NodeListOf[stdLib.Element]
 }
 
+object EnterElement {
+  @scala.inline
+  def apply(
+    appendChild: js.Function1[stdLib.Node, stdLib.Node],
+    insertBefore: js.Function2[stdLib.Node, stdLib.Node, stdLib.Node],
+    namespaceURI: java.lang.String,
+    ownerDocument: stdLib.Document,
+    querySelector: js.Function1[java.lang.String, stdLib.Element],
+    querySelectorAll: js.Function1[java.lang.String, stdLib.NodeListOf[stdLib.Element]]
+  ): EnterElement = {
+    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, namespaceURI = namespaceURI, ownerDocument = ownerDocument, querySelector = querySelector, querySelectorAll = querySelectorAll)
+  
+    __obj.asInstanceOf[EnterElement]
+  }
+}
+

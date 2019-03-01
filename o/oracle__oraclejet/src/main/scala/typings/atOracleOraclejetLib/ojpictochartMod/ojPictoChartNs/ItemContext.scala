@@ -15,3 +15,19 @@ trait ItemContext[K] extends js.Object {
   var tooltip: java.lang.String
 }
 
+object ItemContext {
+  @scala.inline
+  def apply[K](
+    color: java.lang.String,
+    count: scala.Double,
+    id: K,
+    name: java.lang.String,
+    selected: scala.Boolean,
+    tooltip: java.lang.String
+  ): ItemContext[K] = {
+    val __obj = js.Dynamic.literal(color = color, count = count, id = id.asInstanceOf[js.Any], name = name, selected = selected, tooltip = tooltip)
+  
+    __obj.asInstanceOf[ItemContext[K]]
+  }
+}
+

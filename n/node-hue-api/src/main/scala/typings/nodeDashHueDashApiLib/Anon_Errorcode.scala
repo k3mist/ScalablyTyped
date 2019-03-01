@@ -10,3 +10,12 @@ trait Anon_Errorcode extends js.Object {
   var status: nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
 }
 
+object Anon_Errorcode {
+  @scala.inline
+  def apply(errorcode: scala.Double, status: nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus): Anon_Errorcode = {
+    val __obj = js.Dynamic.literal(errorcode = errorcode, status = status)
+  
+    __obj.asInstanceOf[Anon_Errorcode]
+  }
+}
+

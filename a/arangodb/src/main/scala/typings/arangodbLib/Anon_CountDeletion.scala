@@ -11,3 +11,12 @@ trait Anon_CountDeletion extends js.Object {
   var size: scala.Double
 }
 
+object Anon_CountDeletion {
+  @scala.inline
+  def apply(count: scala.Double, deletion: scala.Double, size: scala.Double): Anon_CountDeletion = {
+    val __obj = js.Dynamic.literal(count = count, deletion = deletion, size = size)
+  
+    __obj.asInstanceOf[Anon_CountDeletion]
+  }
+}
+

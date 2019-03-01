@@ -67,3 +67,29 @@ trait XController
   def suspend(Suspend: scala.Boolean): scala.Boolean
 }
 
+object XController {
+  @scala.inline
+  def apply(
+    Frame: XFrame,
+    Model: XModel,
+    ViewData: js.Any,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attachFrame: js.Function1[XFrame, scala.Unit],
+    attachModel: js.Function1[XModel, scala.Boolean],
+    dispose: js.Function0[scala.Unit],
+    getFrame: js.Function0[XFrame],
+    getModel: js.Function0[XModel],
+    getViewData: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    restoreViewData: js.Function1[js.Any, scala.Unit],
+    suspend: js.Function1[scala.Boolean, scala.Boolean]
+  ): XController = {
+    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+  
+    __obj.asInstanceOf[XController]
+  }
+}
+

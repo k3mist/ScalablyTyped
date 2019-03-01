@@ -26,3 +26,18 @@ trait XDynamicResultSetListener
   def notify(Changes: ListEvent): scala.Unit
 }
 
+object XDynamicResultSetListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notify: js.Function1[ListEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDynamicResultSetListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notify = notify, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDynamicResultSetListener]
+  }
+}
+

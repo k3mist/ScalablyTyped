@@ -20,3 +20,25 @@ trait Anon_ALL extends js.Object {
   var VIDEO: chromeDashAppsLib.chromeDashAppsLibStrings.video
 }
 
+object Anon_ALL {
+  @scala.inline
+  def apply(
+    ALL: chromeDashAppsLib.chromeDashAppsLibStrings.all,
+    AUDIO: chromeDashAppsLib.chromeDashAppsLibStrings.audio,
+    BROWSER_ACTION: chromeDashAppsLib.chromeDashAppsLibStrings.browser_action,
+    EDITABLE: chromeDashAppsLib.chromeDashAppsLibStrings.editable,
+    FRAME: chromeDashAppsLib.chromeDashAppsLibStrings.frame,
+    IMAGE: chromeDashAppsLib.chromeDashAppsLibStrings.image,
+    LAUNCHER: chromeDashAppsLib.chromeDashAppsLibStrings.launcher,
+    LINK: chromeDashAppsLib.chromeDashAppsLibStrings.link,
+    PAGE: chromeDashAppsLib.chromeDashAppsLibStrings.page,
+    PAGE_ACTION: chromeDashAppsLib.chromeDashAppsLibStrings.page_action,
+    SELECTION: chromeDashAppsLib.chromeDashAppsLibStrings.selection,
+    VIDEO: chromeDashAppsLib.chromeDashAppsLibStrings.video
+  ): Anon_ALL = {
+    val __obj = js.Dynamic.literal(ALL = ALL, AUDIO = AUDIO, BROWSER_ACTION = BROWSER_ACTION, EDITABLE = EDITABLE, FRAME = FRAME, IMAGE = IMAGE, LAUNCHER = LAUNCHER, LINK = LINK, PAGE = PAGE, PAGE_ACTION = PAGE_ACTION, SELECTION = SELECTION, VIDEO = VIDEO)
+  
+    __obj.asInstanceOf[Anon_ALL]
+  }
+}
+

@@ -49,3 +49,15 @@ trait Anon_ScopedSettings extends js.Object {
   var settings: atUifabricUtilitiesLib.libCustomizationsMod.Settings | atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
 }
 
+object Anon_ScopedSettings {
+  @scala.inline
+  def apply(
+    scopedSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings | atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction,
+    settings: atUifabricUtilitiesLib.libCustomizationsMod.Settings | atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
+  ): Anon_ScopedSettings = {
+    val __obj = js.Dynamic.literal(scopedSettings = scopedSettings.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_ScopedSettings]
+  }
+}
+

@@ -16,3 +16,17 @@ trait Anon_NewExtent extends js.Object {
   var start: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point
 }
 
+object Anon_NewExtent {
+  @scala.inline
+  def apply(
+    newExtent: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newText: java.lang.String,
+    oldExtent: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    start: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point
+  ): Anon_NewExtent = {
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newText = newText, oldExtent = oldExtent, start = start)
+  
+    __obj.asInstanceOf[Anon_NewExtent]
+  }
+}
+

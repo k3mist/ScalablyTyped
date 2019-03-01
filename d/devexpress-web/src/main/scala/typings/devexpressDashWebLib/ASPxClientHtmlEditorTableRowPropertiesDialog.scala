@@ -23,3 +23,22 @@ trait ASPxClientHtmlEditorTableRowPropertiesDialog extends ASPxClientHtmlEditorT
   def GetHeightValueTypeComboBox(): ASPxClientComboBox
 }
 
+object ASPxClientHtmlEditorTableRowPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHeightTypeComboBox: js.Function0[ASPxClientComboBox],
+    GetHeightValueSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetHeightValueTypeComboBox: js.Function0[ASPxClientComboBox],
+    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+  ): ASPxClientHtmlEditorTableRowPropertiesDialog = {
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHeightTypeComboBox = GetHeightTypeComboBox, GetHeightValueSpinEdit = GetHeightValueSpinEdit, GetHeightValueTypeComboBox = GetHeightValueTypeComboBox, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesDialog]
+  }
+}
+

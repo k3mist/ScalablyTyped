@@ -27,3 +27,21 @@ trait Anon_GetHAR extends js.Object {
   def getHAR(): js.Promise[_]
 }
 
+object Anon_GetHAR {
+  @scala.inline
+  def apply(
+    getHAR: js.Function0[js.Promise[_]],
+    onNavigated: WebExtEvent[js.Function1[/* url */ java.lang.String, scala.Unit]],
+    onRequestFinished: WebExtEvent[
+      js.Function1[
+        /* request */ firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.networkNs.Request, 
+        scala.Unit
+      ]
+    ]
+  ): Anon_GetHAR = {
+    val __obj = js.Dynamic.literal(getHAR = getHAR, onNavigated = onNavigated, onRequestFinished = onRequestFinished)
+  
+    __obj.asInstanceOf[Anon_GetHAR]
+  }
+}
+

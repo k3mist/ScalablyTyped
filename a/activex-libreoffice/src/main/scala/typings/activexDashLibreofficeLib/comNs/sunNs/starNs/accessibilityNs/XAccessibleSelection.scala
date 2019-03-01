@@ -76,3 +76,24 @@ trait XAccessibleSelection
   def selectAllAccessibleChildren(): scala.Unit
 }
 
+object XAccessibleSelection {
+  @scala.inline
+  def apply(
+    SelectedAccessibleChildCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    clearAccessibleSelection: js.Function0[scala.Unit],
+    deselectAccessibleChild: js.Function1[scala.Double, scala.Unit],
+    getSelectedAccessibleChild: js.Function1[scala.Double, XAccessible],
+    getSelectedAccessibleChildCount: js.Function0[scala.Double],
+    isAccessibleChildSelected: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectAccessibleChild: js.Function1[scala.Double, scala.Unit],
+    selectAllAccessibleChildren: js.Function0[scala.Unit]
+  ): XAccessibleSelection = {
+    val __obj = js.Dynamic.literal(SelectedAccessibleChildCount = SelectedAccessibleChildCount, acquire = acquire, clearAccessibleSelection = clearAccessibleSelection, deselectAccessibleChild = deselectAccessibleChild, getSelectedAccessibleChild = getSelectedAccessibleChild, getSelectedAccessibleChildCount = getSelectedAccessibleChildCount, isAccessibleChildSelected = isAccessibleChildSelected, queryInterface = queryInterface, release = release, selectAccessibleChild = selectAccessibleChild, selectAllAccessibleChildren = selectAllAccessibleChildren)
+  
+    __obj.asInstanceOf[XAccessibleSelection]
+  }
+}
+

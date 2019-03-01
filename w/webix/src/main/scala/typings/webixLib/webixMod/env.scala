@@ -22,3 +22,27 @@ trait env extends js.Object {
   var translate: java.lang.String
 }
 
+object env {
+  @scala.inline
+  def apply(
+    cssPrefix: java.lang.String,
+    isFF: scala.Boolean,
+    isIE: scala.Boolean,
+    isSafari: scala.Boolean,
+    isWebKit: scala.Boolean,
+    jsPrefix: java.lang.String,
+    mouse: js.Any,
+    strict: scala.Boolean,
+    svg: scala.Boolean,
+    transform: scala.Boolean,
+    transition: scala.Boolean,
+    transitionDuration: java.lang.String,
+    transitionEnd: java.lang.String,
+    translate: java.lang.String
+  ): env = {
+    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix, isFF = isFF, isIE = isIE, isSafari = isSafari, isWebKit = isWebKit, jsPrefix = jsPrefix, mouse = mouse, strict = strict, svg = svg, transform = transform, transition = transition, transitionDuration = transitionDuration, transitionEnd = transitionEnd, translate = translate)
+  
+    __obj.asInstanceOf[env]
+  }
+}
+

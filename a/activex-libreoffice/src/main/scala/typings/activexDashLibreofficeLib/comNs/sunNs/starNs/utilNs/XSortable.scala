@@ -48,3 +48,23 @@ trait XSortable
   ): scala.Unit
 }
 
+object XSortable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createSortDescriptor: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    sort: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XSortable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createSortDescriptor = createSortDescriptor, queryInterface = queryInterface, release = release, sort = sort)
+  
+    __obj.asInstanceOf[XSortable]
+  }
+}
+

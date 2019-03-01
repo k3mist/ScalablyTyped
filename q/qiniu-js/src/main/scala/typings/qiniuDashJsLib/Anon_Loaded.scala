@@ -13,3 +13,12 @@ trait Anon_Loaded extends js.Object {
   var total: scala.Double
 }
 
+object Anon_Loaded {
+  @scala.inline
+  def apply(loaded: scala.Double, percent: scala.Double, total: scala.Double): Anon_Loaded = {
+    val __obj = js.Dynamic.literal(loaded = loaded, percent = percent, total = total)
+  
+    __obj.asInstanceOf[Anon_Loaded]
+  }
+}
+

@@ -81,3 +81,33 @@ trait XMailMessage
   def getRecipients(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XMailMessage {
+  @scala.inline
+  def apply(
+    Attachments: activexDashInteropLib.SafeArray[MailAttachment],
+    BccRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Body: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    CcRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Recipients: activexDashInteropLib.SafeArray[java.lang.String],
+    ReplyToAddress: java.lang.String,
+    SenderAddress: java.lang.String,
+    SenderName: java.lang.String,
+    Subject: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addAttachment: js.Function1[MailAttachment, scala.Unit],
+    addBccRecipient: js.Function1[java.lang.String, scala.Unit],
+    addCcRecipient: js.Function1[java.lang.String, scala.Unit],
+    addRecipient: js.Function1[java.lang.String, scala.Unit],
+    getAttachments: js.Function0[activexDashInteropLib.SafeArray[MailAttachment]],
+    getBccRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getCcRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMailMessage = {
+    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = acquire, addAttachment = addAttachment, addBccRecipient = addBccRecipient, addCcRecipient = addCcRecipient, addRecipient = addRecipient, getAttachments = getAttachments, getBccRecipients = getBccRecipients, getCcRecipients = getCcRecipients, getRecipients = getRecipients, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMailMessage]
+  }
+}
+

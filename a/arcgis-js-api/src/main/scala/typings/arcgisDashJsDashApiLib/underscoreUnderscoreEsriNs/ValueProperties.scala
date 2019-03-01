@@ -38,3 +38,22 @@ trait ValueProperties extends js.Object {
   var tooltipField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ValueProperties {
+  @scala.inline
+  def apply(
+    fields: js.Array[java.lang.String] = null,
+    normalizeField: java.lang.String = null,
+    series: js.Array[SeriesProperties] = null,
+    theme: java.lang.String = null,
+    tooltipField: java.lang.String = null
+  ): ValueProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (normalizeField != null) __obj.updateDynamic("normalizeField")(normalizeField)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField)
+    __obj.asInstanceOf[ValueProperties]
+  }
+}
+

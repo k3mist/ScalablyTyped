@@ -14,3 +14,25 @@ trait GroupsResource extends js.Object {
   def update(request: gapiDotClientDotGroupssettingsLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Groups]
 }
 
+object GroupsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
+    ],
+    update: js.Function1[
+      gapiDotClientDotGroupssettingsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
+    ]
+  ): GroupsResource = {
+    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update)
+  
+    __obj.asInstanceOf[GroupsResource]
+  }
+}
+

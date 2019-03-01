@@ -16,3 +16,15 @@ trait DiffView extends js.Object {
   def setShowDifferences(showDifferences: scala.Boolean): scala.Unit
 }
 
+object DiffView {
+  @scala.inline
+  def apply(
+    forceUpdate: js.Function0[js.Function1[/* mode */ java.lang.String, scala.Unit]],
+    setShowDifferences: js.Function1[scala.Boolean, scala.Unit]
+  ): DiffView = {
+    val __obj = js.Dynamic.literal(forceUpdate = forceUpdate, setShowDifferences = setShowDifferences)
+  
+    __obj.asInstanceOf[DiffView]
+  }
+}
+

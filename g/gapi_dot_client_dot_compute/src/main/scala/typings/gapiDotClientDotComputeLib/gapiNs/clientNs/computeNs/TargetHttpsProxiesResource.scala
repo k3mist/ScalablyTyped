@@ -28,3 +28,37 @@ trait TargetHttpsProxiesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object TargetHttpsProxiesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetHttpsProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetHttpsProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetHttpsProxy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetHttpsProxyList]
+    ],
+    setSslCertificates: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetHttpsProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setUrlMap: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetHttpsProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): TargetHttpsProxiesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setSslCertificates = setSslCertificates, setUrlMap = setUrlMap)
+  
+    __obj.asInstanceOf[TargetHttpsProxiesResource]
+  }
+}
+

@@ -21,3 +21,13 @@ trait CodeFlow extends js.Object {
   var threadFlows: js.Array[ThreadFlow]
 }
 
+object CodeFlow {
+  @scala.inline
+  def apply(threadFlows: js.Array[ThreadFlow], message: Message = null, properties: PropertyBag = null): CodeFlow = {
+    val __obj = js.Dynamic.literal(threadFlows = threadFlows)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[CodeFlow]
+  }
+}
+

@@ -12,3 +12,17 @@ trait OperationTypeDefinitionNode extends ASTNode {
   val `type`: NamedTypeNode
 }
 
+object OperationTypeDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.OperationTypeDefinition,
+    operation: OperationTypeNode,
+    `type`: NamedTypeNode,
+    loc: Location = null
+  ): OperationTypeDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, operation = operation, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[OperationTypeDefinitionNode]
+  }
+}
+

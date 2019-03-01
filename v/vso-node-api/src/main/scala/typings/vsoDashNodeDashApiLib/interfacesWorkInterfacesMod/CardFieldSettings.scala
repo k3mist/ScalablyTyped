@@ -40,3 +40,21 @@ trait CardFieldSettings extends js.Object {
   var showTags: scala.Boolean
 }
 
+object CardFieldSettings {
+  @scala.inline
+  def apply(
+    additionalFields: js.Array[FieldInfo],
+    assignedToDisplayFormat: IdentityDisplayFormat,
+    coreFields: js.Array[FieldInfo],
+    showAssignedTo: scala.Boolean,
+    showEmptyFields: scala.Boolean,
+    showId: scala.Boolean,
+    showState: scala.Boolean,
+    showTags: scala.Boolean
+  ): CardFieldSettings = {
+    val __obj = js.Dynamic.literal(additionalFields = additionalFields, assignedToDisplayFormat = assignedToDisplayFormat, coreFields = coreFields, showAssignedTo = showAssignedTo, showEmptyFields = showEmptyFields, showId = showId, showState = showState, showTags = showTags)
+  
+    __obj.asInstanceOf[CardFieldSettings]
+  }
+}
+

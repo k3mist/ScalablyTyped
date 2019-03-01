@@ -15,3 +15,19 @@ trait Anon_Checkforupdate extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Checkforupdate {
+  @scala.inline
+  def apply(
+    checkforupdate: scala.Boolean,
+    devicetypes: Anon_Bridge,
+    notify: scala.Boolean,
+    text: java.lang.String,
+    updatestate: scala.Double,
+    url: java.lang.String
+  ): Anon_Checkforupdate = {
+    val __obj = js.Dynamic.literal(checkforupdate = checkforupdate, devicetypes = devicetypes, notify = notify, text = text, updatestate = updatestate, url = url)
+  
+    __obj.asInstanceOf[Anon_Checkforupdate]
+  }
+}
+

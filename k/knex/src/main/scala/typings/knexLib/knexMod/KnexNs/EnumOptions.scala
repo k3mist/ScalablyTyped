@@ -10,3 +10,12 @@ trait EnumOptions extends js.Object {
   var useNative: scala.Boolean
 }
 
+object EnumOptions {
+  @scala.inline
+  def apply(enumName: java.lang.String, useNative: scala.Boolean): EnumOptions = {
+    val __obj = js.Dynamic.literal(enumName = enumName, useNative = useNative)
+  
+    __obj.asInstanceOf[EnumOptions]
+  }
+}
+

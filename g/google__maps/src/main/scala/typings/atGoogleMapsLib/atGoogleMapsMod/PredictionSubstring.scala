@@ -12,3 +12,12 @@ trait PredictionSubstring extends js.Object {
   var offset: scala.Double
 }
 
+object PredictionSubstring {
+  @scala.inline
+  def apply(length: scala.Double, offset: scala.Double): PredictionSubstring = {
+    val __obj = js.Dynamic.literal(length = length, offset = offset)
+  
+    __obj.asInstanceOf[PredictionSubstring]
+  }
+}
+

@@ -12,3 +12,17 @@ trait SessionChannelInfo extends ChannelOpenInfo {
   var window: scala.Double
 }
 
+object SessionChannelInfo {
+  @scala.inline
+  def apply(
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.session,
+    window: scala.Double
+  ): SessionChannelInfo = {
+    val __obj = js.Dynamic.literal(packetSize = packetSize, sender = sender, `type` = `type`, window = window)
+  
+    __obj.asInstanceOf[SessionChannelInfo]
+  }
+}
+

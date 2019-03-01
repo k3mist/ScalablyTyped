@@ -17,3 +17,26 @@ trait LEVELS extends js.Object {
   var `8`: yogDashLogLib.yogDashLogLibStrings.TRACE
 }
 
+object LEVELS {
+  @scala.inline
+  def apply(
+    `0`: yogDashLogLib.yogDashLogLibStrings.ACCESS,
+    `1`: yogDashLogLib.yogDashLogLibStrings.FATAL,
+    `16`: yogDashLogLib.yogDashLogLibStrings.DEBUG,
+    `2`: yogDashLogLib.yogDashLogLibStrings.WARNING,
+    `3`: yogDashLogLib.yogDashLogLibStrings.ACCESS_ERROR,
+    `4`: yogDashLogLib.yogDashLogLibStrings.NOTICE,
+    `8`: yogDashLogLib.yogDashLogLibStrings.TRACE
+  ): LEVELS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`)
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("16")(`16`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("8")(`8`)
+    __obj.asInstanceOf[LEVELS]
+  }
+}
+

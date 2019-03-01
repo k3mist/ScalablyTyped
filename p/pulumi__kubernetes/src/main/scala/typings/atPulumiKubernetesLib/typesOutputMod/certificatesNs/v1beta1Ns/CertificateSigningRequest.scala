@@ -34,3 +34,18 @@ trait CertificateSigningRequest extends js.Object {
   val status: CertificateSigningRequestStatus
 }
 
+object CertificateSigningRequest {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequest,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: CertificateSigningRequestSpec,
+    status: CertificateSigningRequestStatus
+  ): CertificateSigningRequest = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[CertificateSigningRequest]
+  }
+}
+

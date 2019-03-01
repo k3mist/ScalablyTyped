@@ -16,3 +16,40 @@ trait SendmailTransport
   var winbreak: scala.Boolean
 }
 
+object SendmailTransport {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] | nodemailerLib.nodemailerLibNumbers.`false`,
+    logger: nodemailerLib.libSharedMod.Logger,
+    mailer: nodemailerLib.libMailerMod.namespaced,
+    name: java.lang.String,
+    options: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options,
+    path: java.lang.String,
+    send: js.Function2[
+      nodemailerLib.libMailerMailDashMessageMod.namespaced, 
+      js.Function2[
+        /* err */ nodeLib.Error | scala.Null, 
+        /* info */ nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.SentMessageInfo, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    version: java.lang.String,
+    winbreak: scala.Boolean,
+    close: js.Function0[scala.Unit] = null,
+    verify: (js.Function1[
+      /* callback */ js.Function2[
+        /* err */ nodeLib.Error | scala.Null, 
+        nodemailerLib.nodemailerLibNumbers.`true`, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]) with js.Function0[js.Promise[nodemailerLib.nodemailerLibNumbers.`true`]] = null
+  ): SendmailTransport = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], logger = logger, mailer = mailer, name = name, options = options, path = path, send = send, version = version, winbreak = winbreak)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (verify != null) __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[SendmailTransport]
+  }
+}
+

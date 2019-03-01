@@ -10,3 +10,12 @@ trait WorkItemBehaviorReference extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemBehaviorReference {
+  @scala.inline
+  def apply(id: java.lang.String, url: java.lang.String): WorkItemBehaviorReference = {
+    val __obj = js.Dynamic.literal(id = id, url = url)
+  
+    __obj.asInstanceOf[WorkItemBehaviorReference]
+  }
+}
+

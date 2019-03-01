@@ -24,3 +24,25 @@ trait ServerOptions extends js.Object {
   def whitelist(xhr: stdLib.Request): scala.Unit
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Double,
+    enable: scala.Boolean,
+    force404: scala.Boolean,
+    headers: js.Object,
+    method: HttpMethod,
+    onAbort: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onRequest: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onResponse: js.Function1[/* repeated */ js.Any, scala.Unit],
+    response: js.Any,
+    status: scala.Double,
+    urlMatchingOptions: js.Object,
+    whitelist: js.Function1[stdLib.Request, scala.Unit]
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = whitelist)
+  
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

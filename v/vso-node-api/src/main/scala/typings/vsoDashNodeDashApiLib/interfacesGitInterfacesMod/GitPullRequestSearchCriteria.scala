@@ -40,3 +40,21 @@ trait GitPullRequestSearchCriteria extends js.Object {
   var targetRefName: java.lang.String
 }
 
+object GitPullRequestSearchCriteria {
+  @scala.inline
+  def apply(
+    creatorId: java.lang.String,
+    includeLinks: scala.Boolean,
+    repositoryId: java.lang.String,
+    reviewerId: java.lang.String,
+    sourceRefName: java.lang.String,
+    sourceRepositoryId: java.lang.String,
+    status: PullRequestStatus,
+    targetRefName: java.lang.String
+  ): GitPullRequestSearchCriteria = {
+    val __obj = js.Dynamic.literal(creatorId = creatorId, includeLinks = includeLinks, repositoryId = repositoryId, reviewerId = reviewerId, sourceRefName = sourceRefName, sourceRepositoryId = sourceRepositoryId, status = status, targetRefName = targetRefName)
+  
+    __obj.asInstanceOf[GitPullRequestSearchCriteria]
+  }
+}
+

@@ -13,3 +13,16 @@ trait EventTriggerCondition extends js.Object {
   var `type`: java.lang.String
 }
 
+object EventTriggerCondition {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: java.lang.String,
+    selfCallback: js.UndefOr[scala.Boolean] = js.undefined
+  ): EventTriggerCondition = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (!js.isUndefined(selfCallback)) __obj.updateDynamic("selfCallback")(selfCallback)
+    __obj.asInstanceOf[EventTriggerCondition]
+  }
+}
+

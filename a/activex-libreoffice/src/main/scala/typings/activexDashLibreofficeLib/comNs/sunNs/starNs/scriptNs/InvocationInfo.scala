@@ -30,3 +30,19 @@ trait InvocationInfo extends js.Object {
   var eMemberType: MemberType
 }
 
+object InvocationInfo {
+  @scala.inline
+  def apply(
+    PropertyAttribute: scala.Double,
+    aName: java.lang.String,
+    aParamModes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.ParamMode],
+    aParamTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    aType: activexDashLibreofficeLib.`type`,
+    eMemberType: MemberType
+  ): InvocationInfo = {
+    val __obj = js.Dynamic.literal(PropertyAttribute = PropertyAttribute, aName = aName, aParamModes = aParamModes, aParamTypes = aParamTypes, aType = aType, eMemberType = eMemberType)
+  
+    __obj.asInstanceOf[InvocationInfo]
+  }
+}
+

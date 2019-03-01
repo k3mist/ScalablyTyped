@@ -10,3 +10,12 @@ trait Deserializer extends js.Object {
   def deserialize(state: js.Object): js.Object
 }
 
+object Deserializer {
+  @scala.inline
+  def apply(deserialize: js.Function1[js.Object, js.Object], name: java.lang.String): Deserializer = {
+    val __obj = js.Dynamic.literal(deserialize = deserialize, name = name)
+  
+    __obj.asInstanceOf[Deserializer]
+  }
+}
+

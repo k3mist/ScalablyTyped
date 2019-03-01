@@ -12,3 +12,12 @@ trait ChannelHistory extends js.Object {
   var StartTime: java.lang.String
 }
 
+object ChannelHistory {
+  @scala.inline
+  def apply(EndTime: java.lang.String, RemoteAddr: java.lang.String, StartTime: java.lang.String): ChannelHistory = {
+    val __obj = js.Dynamic.literal(EndTime = EndTime, RemoteAddr = RemoteAddr, StartTime = StartTime)
+  
+    __obj.asInstanceOf[ChannelHistory]
+  }
+}
+

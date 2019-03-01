@@ -32,3 +32,21 @@ trait ConditionCheck extends js.Object {
   var TableName: TableName
 }
 
+object ConditionCheck {
+  @scala.inline
+  def apply(
+    ConditionExpression: ConditionExpression,
+    Key: Key,
+    TableName: TableName,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
+  ): ConditionCheck = {
+    val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression, Key = Key, TableName = TableName)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConditionCheck]
+  }
+}
+

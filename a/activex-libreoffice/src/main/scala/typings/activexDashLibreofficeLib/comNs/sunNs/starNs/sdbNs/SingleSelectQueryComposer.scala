@@ -133,3 +133,116 @@ import scala.scalajs.js.annotation._
   ): scala.Unit
 }
 
+object SingleSelectQueryComposer {
+  @scala.inline
+  def apply(
+    Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    ElementaryQuery: java.lang.String,
+    Filter: java.lang.String,
+    Group: java.lang.String,
+    GroupColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    HavingClause: java.lang.String,
+    Order: java.lang.String,
+    OrderColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    Original: java.lang.String,
+    Parameters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Query: java.lang.String,
+    QueryWithSubstitution: java.lang.String,
+    StructuredFilter: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    StructuredHavingClause: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    Tables: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    appendFilterByColumn: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Boolean, 
+      scala.Double, 
+      scala.Unit
+    ],
+    appendGroupByColumn: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    appendHavingClauseByColumn: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Boolean, 
+      scala.Double, 
+      scala.Unit
+    ],
+    appendOrderByColumn: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getFilter: js.Function0[java.lang.String],
+    getGroup: js.Function0[java.lang.String],
+    getGroupColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getHavingClause: js.Function0[java.lang.String],
+    getOrder: js.Function0[java.lang.String],
+    getOrderColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getParameters: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getQuery: js.Function0[java.lang.String],
+    getQueryWithSubstitution: js.Function0[java.lang.String],
+    getStructuredFilter: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    getStructuredHavingClause: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    getTables: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setCommand: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    setFilter: js.Function1[java.lang.String, scala.Unit],
+    setGroup: js.Function1[java.lang.String, scala.Unit],
+    setHavingClause: js.Function1[java.lang.String, scala.Unit],
+    setOrder: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setQuery: js.Function1[java.lang.String, scala.Unit],
+    setStructuredFilter: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ], 
+      scala.Unit
+    ],
+    setStructuredHavingClause: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ], 
+      scala.Unit
+    ]
+  ): SingleSelectQueryComposer = {
+    val __obj = js.Dynamic.literal(Columns = Columns, ElementaryQuery = ElementaryQuery, Filter = Filter, Group = Group, GroupColumns = GroupColumns, HavingClause = HavingClause, Order = Order, OrderColumns = OrderColumns, Original = Original, Parameters = Parameters, PropertySetInfo = PropertySetInfo, Query = Query, QueryWithSubstitution = QueryWithSubstitution, StructuredFilter = StructuredFilter, StructuredHavingClause = StructuredHavingClause, Tables = Tables, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, appendFilterByColumn = appendFilterByColumn, appendGroupByColumn = appendGroupByColumn, appendHavingClauseByColumn = appendHavingClauseByColumn, appendOrderByColumn = appendOrderByColumn, getColumns = getColumns, getFilter = getFilter, getGroup = getGroup, getGroupColumns = getGroupColumns, getHavingClause = getHavingClause, getOrder = getOrder, getOrderColumns = getOrderColumns, getParameters = getParameters, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getQuery = getQuery, getQueryWithSubstitution = getQueryWithSubstitution, getStructuredFilter = getStructuredFilter, getStructuredHavingClause = getStructuredHavingClause, getTables = getTables, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setCommand = setCommand, setFilter = setFilter, setGroup = setGroup, setHavingClause = setHavingClause, setOrder = setOrder, setPropertyValue = setPropertyValue, setQuery = setQuery, setStructuredFilter = setStructuredFilter, setStructuredHavingClause = setStructuredHavingClause)
+  
+    __obj.asInstanceOf[SingleSelectQueryComposer]
+  }
+}
+

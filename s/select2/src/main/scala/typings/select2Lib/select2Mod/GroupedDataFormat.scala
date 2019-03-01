@@ -11,3 +11,17 @@ trait GroupedDataFormat extends js.Object {
   var text: java.lang.String
 }
 
+object GroupedDataFormat {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    children: js.Array[DataFormat] = null,
+    id: js.UndefOr[scala.Nothing] = js.undefined
+  ): GroupedDataFormat = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GroupedDataFormat]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Spec extends js.Object {
   def toHTML(): java.lang.String
 }
 
+object Spec {
+  @scala.inline
+  def apply(
+    exportBiblio: js.Function0[js.Any],
+    namespace: java.lang.String,
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Options */ js.Any,
+    rootDir: java.lang.String,
+    rootPath: java.lang.String,
+    spec: Spec,
+    toHTML: js.Function0[java.lang.String]
+  ): Spec = {
+    val __obj = js.Dynamic.literal(exportBiblio = exportBiblio, namespace = namespace, opts = opts, rootDir = rootDir, rootPath = rootPath, spec = spec, toHTML = toHTML)
+  
+    __obj.asInstanceOf[Spec]
+  }
+}
+

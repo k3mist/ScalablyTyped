@@ -17,3 +17,12 @@ trait CookieChangeInfo extends js.Object {
   var removed: scala.Boolean
 }
 
+object CookieChangeInfo {
+  @scala.inline
+  def apply(cause: java.lang.String, cookie: Cookie, removed: scala.Boolean): CookieChangeInfo = {
+    val __obj = js.Dynamic.literal(cause = cause, cookie = cookie, removed = removed)
+  
+    __obj.asInstanceOf[CookieChangeInfo]
+  }
+}
+

@@ -28,3 +28,26 @@ trait CertID extends js.Object {
   def toSchema(): js.Any
 }
 
+object CertID {
+  @scala.inline
+  def apply(
+    createForCertificate: js.Function2[
+      pkijsLib.srcCertificateMod.default, 
+      CreateFroCertificateParams, 
+      js.Thenable[scala.Unit]
+    ],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    isEqual: js.Function1[CertID, scala.Boolean],
+    issuerKeyHash: asn1jsLib.asn1jsMod.OctetString,
+    issuerNameHash: asn1jsLib.asn1jsMod.OctetString,
+    serialNumber: asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): CertID = {
+    val __obj = js.Dynamic.literal(createForCertificate = createForCertificate, fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, isEqual = isEqual, issuerKeyHash = issuerKeyHash, issuerNameHash = issuerNameHash, serialNumber = serialNumber, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[CertID]
+  }
+}
+

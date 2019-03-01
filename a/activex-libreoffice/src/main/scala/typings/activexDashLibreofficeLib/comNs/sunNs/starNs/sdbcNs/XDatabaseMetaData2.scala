@@ -21,3 +21,18 @@ trait XDatabaseMetaData2 extends XDatabaseMetaData {
   def getConnectionInfo(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
+object XDatabaseMetaData2 {
+  @scala.inline
+  def apply(
+    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    XDatabaseMetaData: XDatabaseMetaData = null,
+    getConnectionInfo: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ]
+  ): XDatabaseMetaData2 = {
+    val __obj = js.Dynamic.literal(ConnectionInfo = ConnectionInfo, getConnectionInfo = getConnectionInfo)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDatabaseMetaData)
+    __obj.asInstanceOf[XDatabaseMetaData2]
+  }
+}
+

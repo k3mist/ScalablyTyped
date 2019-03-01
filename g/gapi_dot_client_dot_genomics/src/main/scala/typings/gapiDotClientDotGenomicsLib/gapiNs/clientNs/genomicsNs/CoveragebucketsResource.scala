@@ -24,3 +24,17 @@ trait CoveragebucketsResource extends js.Object {
   def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEnd): gapiDotClientLib.gapiNs.clientNs.Request[ListCoverageBucketsResponse]
 }
 
+object CoveragebucketsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEnd, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCoverageBucketsResponse]
+    ]
+  ): CoveragebucketsResource = {
+    val __obj = js.Dynamic.literal(list = list)
+  
+    __obj.asInstanceOf[CoveragebucketsResource]
+  }
+}
+

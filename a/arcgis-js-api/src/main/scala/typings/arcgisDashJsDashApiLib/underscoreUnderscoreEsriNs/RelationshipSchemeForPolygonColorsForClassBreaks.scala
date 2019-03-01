@@ -21,3 +21,18 @@ trait RelationshipSchemeForPolygonColorsForClassBreaks
   var numClasses: scala.Double
 }
 
+object RelationshipSchemeForPolygonColorsForClassBreaks {
+  @scala.inline
+  def apply(
+    colors: js.Array[js.Array[Color]],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    numClasses: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): RelationshipSchemeForPolygonColorsForClassBreaks = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, numClasses = numClasses, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[RelationshipSchemeForPolygonColorsForClassBreaks]
+  }
+}
+

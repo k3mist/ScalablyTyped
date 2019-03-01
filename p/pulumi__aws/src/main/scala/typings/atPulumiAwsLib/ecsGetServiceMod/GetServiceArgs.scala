@@ -16,3 +16,12 @@ trait GetServiceArgs extends js.Object {
   val serviceName: java.lang.String
 }
 
+object GetServiceArgs {
+  @scala.inline
+  def apply(clusterArn: java.lang.String, serviceName: java.lang.String): GetServiceArgs = {
+    val __obj = js.Dynamic.literal(clusterArn = clusterArn, serviceName = serviceName)
+  
+    __obj.asInstanceOf[GetServiceArgs]
+  }
+}
+

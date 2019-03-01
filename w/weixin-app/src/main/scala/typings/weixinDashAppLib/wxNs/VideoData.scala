@@ -18,3 +18,18 @@ trait VideoData extends js.Object {
   var width: scala.Double
 }
 
+object VideoData {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    height: scala.Double,
+    size: scala.Double,
+    tempFilePath: java.lang.String,
+    width: scala.Double
+  ): VideoData = {
+    val __obj = js.Dynamic.literal(duration = duration, height = height, size = size, tempFilePath = tempFilePath, width = width)
+  
+    __obj.asInstanceOf[VideoData]
+  }
+}
+

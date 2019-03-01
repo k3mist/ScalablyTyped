@@ -21,3 +21,33 @@ trait ToolbarController
      with XToolbarController
      with XSubToolbarController
 
+object ToolbarController {
+  @scala.inline
+  def apply(
+    SubToolbarName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    click: js.Function0[scala.Unit],
+    createItemWindow: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
+    ],
+    createPopupWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    doubleClick: js.Function0[scala.Unit],
+    execute: js.Function1[scala.Double, scala.Unit],
+    functionSelected: js.Function1[java.lang.String, scala.Unit],
+    getSubToolbarName: js.Function0[java.lang.String],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    opensSubToolbar: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
+    update: js.Function0[scala.Unit],
+    updateImage: js.Function0[scala.Unit]
+  ): ToolbarController = {
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, disposing = disposing, doubleClick = doubleClick, execute = execute, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, initialize = initialize, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, statusChanged = statusChanged, update = update, updateImage = updateImage)
+  
+    __obj.asInstanceOf[ToolbarController]
+  }
+}
+

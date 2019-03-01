@@ -28,3 +28,17 @@ trait HoriOrientationFormat extends js.Object {
   var XPos: scala.Double
 }
 
+object HoriOrientationFormat {
+  @scala.inline
+  def apply(
+    HorizontalOrientation: scala.Double,
+    HorizontalRelation: scala.Double,
+    PositionToggle: scala.Boolean,
+    XPos: scala.Double
+  ): HoriOrientationFormat = {
+    val __obj = js.Dynamic.literal(HorizontalOrientation = HorizontalOrientation, HorizontalRelation = HorizontalRelation, PositionToggle = PositionToggle, XPos = XPos)
+  
+    __obj.asInstanceOf[HoriOrientationFormat]
+  }
+}
+

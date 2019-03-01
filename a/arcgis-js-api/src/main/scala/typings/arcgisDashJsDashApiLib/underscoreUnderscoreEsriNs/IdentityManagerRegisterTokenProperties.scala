@@ -39,3 +39,23 @@ trait IdentityManagerRegisterTokenProperties
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentityManagerRegisterTokenProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    server: java.lang.String,
+    token: java.lang.String,
+    expires: scala.Int | scala.Double = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    userId: java.lang.String = null
+  ): IdentityManagerRegisterTokenProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, server = server, token = token)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[IdentityManagerRegisterTokenProperties]
+  }
+}
+

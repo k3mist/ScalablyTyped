@@ -14,3 +14,12 @@ trait ViewAnimationProperties extends js.Object {
   var target: js.UndefOr[ViewpointProperties] = js.undefined
 }
 
+object ViewAnimationProperties {
+  @scala.inline
+  def apply(target: ViewpointProperties = null): ViewAnimationProperties = {
+    val __obj = js.Dynamic.literal()
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ViewAnimationProperties]
+  }
+}
+

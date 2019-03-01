@@ -36,3 +36,26 @@ trait BuildingComponentSublayerProperties
   var renderer: js.UndefOr[RendererProperties] = js.undefined
 }
 
+object BuildingComponentSublayerProperties {
+  @scala.inline
+  def apply(
+    definitionExpression: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplateProperties = null,
+    renderer: RendererProperties = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): BuildingComponentSublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[BuildingComponentSublayerProperties]
+  }
+}
+

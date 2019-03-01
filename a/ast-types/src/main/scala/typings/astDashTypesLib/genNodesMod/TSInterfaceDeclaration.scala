@@ -21,3 +21,20 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSInterfaceDeclaration
 }
 
+object TSInterfaceDeclaration {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.TSInterfaceBodyKind,
+    declare: scala.Boolean,
+    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSInterfaceDeclaration,
+    `extends`: js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind] = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSInterfaceDeclaration = {
+    val __obj = js.Dynamic.literal(body = body, declare = declare, id = id.asInstanceOf[js.Any], `type` = `type`)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSInterfaceDeclaration]
+  }
+}
+

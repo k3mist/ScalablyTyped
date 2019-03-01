@@ -27,3 +27,17 @@ trait PropertySetInfoChangeEvent
   var Reason: scala.Double
 }
 
+object PropertySetInfoChangeEvent {
+  @scala.inline
+  def apply(
+    Handle: scala.Double,
+    Name: java.lang.String,
+    Reason: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): PropertySetInfoChangeEvent = {
+    val __obj = js.Dynamic.literal(Handle = Handle, Name = Name, Reason = Reason, Source = Source)
+  
+    __obj.asInstanceOf[PropertySetInfoChangeEvent]
+  }
+}
+

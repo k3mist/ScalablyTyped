@@ -12,3 +12,12 @@ trait VueSelectData extends js.Object {
   var search: java.lang.String
 }
 
+object VueSelectData {
+  @scala.inline
+  def apply(mutableOptions: js.Array[_], mutableValue: js.Any, open: scala.Boolean, search: java.lang.String): VueSelectData = {
+    val __obj = js.Dynamic.literal(mutableOptions = mutableOptions, mutableValue = mutableValue, open = open, search = search)
+  
+    __obj.asInstanceOf[VueSelectData]
+  }
+}
+

@@ -12,3 +12,16 @@ trait PromiseRejectedResult
   var reason: js.Any
 }
 
+object PromiseRejectedResult {
+  @scala.inline
+  def apply(
+    isFulfilled: pDashReflectLib.pDashReflectLibNumbers.`false`,
+    isRejected: pDashReflectLib.pDashReflectLibNumbers.`true`,
+    reason: js.Any
+  ): PromiseRejectedResult = {
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isRejected = isRejected, reason = reason)
+  
+    __obj.asInstanceOf[PromiseRejectedResult]
+  }
+}
+

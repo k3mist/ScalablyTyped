@@ -28,3 +28,19 @@ trait GetPropertiesParameterType extends js.Object {
   var ownProperties: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetPropertiesParameterType {
+  @scala.inline
+  def apply(
+    objectId: RemoteObjectId,
+    accessorPropertiesOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    ownProperties: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetPropertiesParameterType = {
+    val __obj = js.Dynamic.literal(objectId = objectId)
+    if (!js.isUndefined(accessorPropertiesOnly)) __obj.updateDynamic("accessorPropertiesOnly")(accessorPropertiesOnly)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties)
+    __obj.asInstanceOf[GetPropertiesParameterType]
+  }
+}
+

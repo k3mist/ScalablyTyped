@@ -20,3 +20,16 @@ trait ClassProvider
   var provide: js.Any
 }
 
+object ClassProvider {
+  @scala.inline
+  def apply(
+    provide: js.Any,
+    useClass: atAngularCoreLib.srcTypeMod.Type[_],
+    multi: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClassProvider = {
+    val __obj = js.Dynamic.literal(provide = provide, useClass = useClass)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    __obj.asInstanceOf[ClassProvider]
+  }
+}
+

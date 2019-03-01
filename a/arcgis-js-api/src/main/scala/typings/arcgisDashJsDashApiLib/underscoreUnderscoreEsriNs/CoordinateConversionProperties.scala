@@ -74,3 +74,38 @@ trait CoordinateConversionProperties
   var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.undefined
 }
 
+object CoordinateConversionProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    conversions: CollectionProperties[Conversion] = null,
+    currentLocation: PointProperties = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    formats: CollectionProperties[Format] = null,
+    goToOverride: GoToOverride = null,
+    id: java.lang.String = null,
+    mode: java.lang.String = null,
+    multipleConversions: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: java.lang.String = null,
+    requestDelay: scala.Int | scala.Double = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: CoordinateConversionViewModelProperties = null
+  ): CoordinateConversionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
+    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation)
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(multipleConversions)) __obj.updateDynamic("multipleConversions")(multipleConversions)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (requestDelay != null) __obj.updateDynamic("requestDelay")(requestDelay.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[CoordinateConversionProperties]
+  }
+}
+

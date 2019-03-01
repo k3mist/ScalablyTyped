@@ -12,3 +12,16 @@ trait Anon_CatchClause
   var `type`: eslintLib.eslintLibStrings.CatchClause
 }
 
+object Anon_CatchClause {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.CatchClause,
+    parent: scala.Null,
+    `type`: eslintLib.eslintLibStrings.CatchClause
+  ): Anon_CatchClause = {
+    val __obj = js.Dynamic.literal(node = node, parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_CatchClause]
+  }
+}
+

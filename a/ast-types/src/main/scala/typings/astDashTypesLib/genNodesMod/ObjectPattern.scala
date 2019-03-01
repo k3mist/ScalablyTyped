@@ -19,3 +19,20 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind | scala.Null
 }
 
+object ObjectPattern {
+  @scala.inline
+  def apply(
+    properties: js.Array[
+      astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.PropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.RestPropertyKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectPattern,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): ObjectPattern = {
+    val __obj = js.Dynamic.literal(properties = properties, `type` = `type`)
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ObjectPattern]
+  }
+}
+

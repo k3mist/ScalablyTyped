@@ -26,3 +26,31 @@ trait Anon_Longhand extends js.Object {
   ]
 }
 
+object Anon_Longhand {
+  @scala.inline
+  def apply(
+    longhand: js.Tuple7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    shorthand: js.Tuple7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ]
+  ): Anon_Longhand = {
+    val __obj = js.Dynamic.literal(longhand = longhand, shorthand = shorthand)
+  
+    __obj.asInstanceOf[Anon_Longhand]
+  }
+}
+

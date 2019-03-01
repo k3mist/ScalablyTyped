@@ -21,3 +21,19 @@ trait Anon_ChildrenData extends js.Object {
   var `type`: reactDashSelectLib.reactDashSelectLibStrings.option
 }
 
+object Anon_ChildrenData {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    data: js.Any,
+    innerProps: reactDashSelectLib.libComponentsOptionMod.InnerProps,
+    innerRef: reactDashSelectLib.libTypesMod.InnerRef,
+    label: java.lang.String,
+    `type`: reactDashSelectLib.reactDashSelectLibStrings.option
+  ): Anon_ChildrenData = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data, innerProps = innerProps, innerRef = innerRef.asInstanceOf[js.Any], label = label, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ChildrenData]
+  }
+}
+

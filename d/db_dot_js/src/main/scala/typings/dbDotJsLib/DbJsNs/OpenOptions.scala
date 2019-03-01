@@ -11,3 +11,12 @@ trait OpenOptions extends js.Object {
   var version: scala.Double
 }
 
+object OpenOptions {
+  @scala.inline
+  def apply(server: java.lang.String, version: scala.Double, schema: js.Any = null): OpenOptions = {
+    val __obj = js.Dynamic.literal(server = server, version = version)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[OpenOptions]
+  }
+}
+

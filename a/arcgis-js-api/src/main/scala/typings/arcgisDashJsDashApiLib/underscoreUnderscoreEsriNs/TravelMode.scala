@@ -39,3 +39,25 @@ trait TravelMode
   var timeAttributeName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TravelMode {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    impedanceAttributeName: java.lang.String = null,
+    name: java.lang.String = null,
+    timeAttributeName: java.lang.String = null
+  ): TravelMode = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (impedanceAttributeName != null) __obj.updateDynamic("impedanceAttributeName")(impedanceAttributeName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (timeAttributeName != null) __obj.updateDynamic("timeAttributeName")(timeAttributeName)
+    __obj.asInstanceOf[TravelMode]
+  }
+}
+

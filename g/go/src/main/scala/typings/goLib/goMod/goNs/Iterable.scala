@@ -15,3 +15,12 @@ trait Iterable[T] extends js.Object {
   var iterator: Iterator[T]
 }
 
+object Iterable {
+  @scala.inline
+  def apply[T](iterator: Iterator[T]): Iterable[T] = {
+    val __obj = js.Dynamic.literal(iterator = iterator)
+  
+    __obj.asInstanceOf[Iterable[T]]
+  }
+}
+

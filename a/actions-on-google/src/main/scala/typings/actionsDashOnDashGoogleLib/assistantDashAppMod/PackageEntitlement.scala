@@ -12,3 +12,12 @@ trait PackageEntitlement extends js.Object {
   var packageName: java.lang.String
 }
 
+object PackageEntitlement {
+  @scala.inline
+  def apply(entitlements: js.Array[Entitlement], packageName: java.lang.String): PackageEntitlement = {
+    val __obj = js.Dynamic.literal(entitlements = entitlements, packageName = packageName)
+  
+    __obj.asInstanceOf[PackageEntitlement]
+  }
+}
+

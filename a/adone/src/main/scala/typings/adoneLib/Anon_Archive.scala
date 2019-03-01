@@ -14,3 +14,19 @@ trait Anon_Archive extends js.Object {
   val wrapNs: js.Any
 }
 
+object Anon_Archive {
+  @scala.inline
+  def apply(
+    archiveNs: js.Any,
+    chmodNs: js.Any,
+    compressorNs: js.Any,
+    notifyNs: js.Any,
+    sourcemapsNs: js.Any,
+    wrapNs: js.Any
+  ): Anon_Archive = {
+    val __obj = js.Dynamic.literal(archiveNs = archiveNs, chmodNs = chmodNs, compressorNs = compressorNs, notifyNs = notifyNs, sourcemapsNs = sourcemapsNs, wrapNs = wrapNs)
+  
+    __obj.asInstanceOf[Anon_Archive]
+  }
+}
+

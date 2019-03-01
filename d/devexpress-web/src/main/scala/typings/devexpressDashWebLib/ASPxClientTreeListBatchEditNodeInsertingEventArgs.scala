@@ -21,3 +21,12 @@ trait ASPxClientTreeListBatchEditNodeInsertingEventArgs extends ASPxClientCancel
   var parentNodeKey: java.lang.String
 }
 
+object ASPxClientTreeListBatchEditNodeInsertingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, nodeKey: java.lang.String, parentNodeKey: java.lang.String): ASPxClientTreeListBatchEditNodeInsertingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, nodeKey = nodeKey, parentNodeKey = parentNodeKey)
+  
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeInsertingEventArgs]
+  }
+}
+

@@ -13,3 +13,18 @@ trait FourArrowsSet
   var yellowUpInclineArrow: Icon
 }
 
+object FourArrowsSet {
+  @scala.inline
+  def apply(
+    greenUpArrow: Icon,
+    redDownArrow: Icon,
+    yellowDownInclineArrow: Icon,
+    yellowUpInclineArrow: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): FourArrowsSet = {
+    val __obj = js.Dynamic.literal(greenUpArrow = greenUpArrow, redDownArrow = redDownArrow, yellowDownInclineArrow = yellowDownInclineArrow, yellowUpInclineArrow = yellowUpInclineArrow)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FourArrowsSet]
+  }
+}
+

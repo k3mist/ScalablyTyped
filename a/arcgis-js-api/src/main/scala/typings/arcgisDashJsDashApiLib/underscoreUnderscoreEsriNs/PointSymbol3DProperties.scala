@@ -20,3 +20,22 @@ trait PointSymbol3DProperties extends Symbol3DProperties {
   var verticalOffset: js.UndefOr[PointSymbol3DVerticalOffsetProperties] = js.undefined
 }
 
+object PointSymbol3DProperties {
+  @scala.inline
+  def apply(
+    callout: Callout3DProperties = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    styleOrigin: Symbol3DStyleOrigin = null,
+    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null,
+    verticalOffset: PointSymbol3DVerticalOffsetProperties = null
+  ): PointSymbol3DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (callout != null) __obj.updateDynamic("callout")(callout)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin)
+    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
+    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset)
+    __obj.asInstanceOf[PointSymbol3DProperties]
+  }
+}
+

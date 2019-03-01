@@ -20,3 +20,13 @@ trait FullscreenViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object FullscreenViewModelProperties {
+  @scala.inline
+  def apply(element: stdLib.HTMLElement = null, view: MapViewProperties | SceneViewProperties = null): FullscreenViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FullscreenViewModelProperties]
+  }
+}
+

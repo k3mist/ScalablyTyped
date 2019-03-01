@@ -73,3 +73,26 @@ trait DropdownOptions extends js.Object {
   def onOpenStart(`this`: Dropdown, el: stdLib.Element): scala.Unit
 }
 
+object DropdownOptions {
+  @scala.inline
+  def apply(
+    alignment: materializeDashCssLib.materializeDashCssLibStrings.left | materializeDashCssLib.materializeDashCssLibStrings.right,
+    autoTrigger: scala.Boolean,
+    closeOnClick: scala.Boolean,
+    constrainWidth: scala.Boolean,
+    container: stdLib.Element,
+    coverTrigger: scala.Boolean,
+    hover: scala.Boolean,
+    inDuration: scala.Double,
+    onCloseEnd: js.Function2[Dropdown, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Dropdown, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Dropdown, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Dropdown, stdLib.Element, scala.Unit],
+    outDuration: scala.Double
+  ): DropdownOptions = {
+    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger, closeOnClick = closeOnClick, constrainWidth = constrainWidth, container = container, coverTrigger = coverTrigger, hover = hover, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
+    __obj.asInstanceOf[DropdownOptions]
+  }
+}
+

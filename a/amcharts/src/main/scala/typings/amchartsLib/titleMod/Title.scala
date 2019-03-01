@@ -33,3 +33,19 @@ trait Title extends js.Object {
   var text: java.lang.String
 }
 
+object Title {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    bold: scala.Boolean,
+    color: java.lang.String,
+    id: java.lang.String,
+    size: scala.Double,
+    text: java.lang.String
+  ): Title = {
+    val __obj = js.Dynamic.literal(alpha = alpha, bold = bold, color = color, id = id, size = size, text = text)
+  
+    __obj.asInstanceOf[Title]
+  }
+}
+

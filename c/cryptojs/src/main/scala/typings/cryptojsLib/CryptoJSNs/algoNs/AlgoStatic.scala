@@ -26,3 +26,31 @@ trait AlgoStatic extends js.Object {
   var TripleDES: TripleDES
 }
 
+object AlgoStatic {
+  @scala.inline
+  def apply(
+    AES: AES,
+    DES: DES,
+    EvpKDF: EvpKDF,
+    HMAC: HMAC,
+    MD5: MD5,
+    PBKDF2: PBKDF2,
+    RC4: RC4,
+    RC4Drop: RC4Drop,
+    RIPEMD160: RIPEMD160,
+    Rabbit: Rabbit,
+    RabbitLegacy: RabbitLegacy,
+    SHA1: SHA1,
+    SHA224: SHA224,
+    SHA256: SHA256,
+    SHA3: SHA3,
+    SHA384: SHA384,
+    SHA512: SHA512,
+    TripleDES: TripleDES
+  ): AlgoStatic = {
+    val __obj = js.Dynamic.literal(AES = AES, DES = DES, EvpKDF = EvpKDF, HMAC = HMAC, MD5 = MD5, PBKDF2 = PBKDF2, RC4 = RC4, RC4Drop = RC4Drop, RIPEMD160 = RIPEMD160, Rabbit = Rabbit, RabbitLegacy = RabbitLegacy, SHA1 = SHA1, SHA224 = SHA224, SHA256 = SHA256, SHA3 = SHA3, SHA384 = SHA384, SHA512 = SHA512, TripleDES = TripleDES)
+  
+    __obj.asInstanceOf[AlgoStatic]
+  }
+}
+

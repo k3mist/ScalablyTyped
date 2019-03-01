@@ -15,3 +15,12 @@ trait Attribute extends js.Object {
   var Value: java.lang.String
 }
 
+object Attribute {
+  @scala.inline
+  def apply(Name: java.lang.String, NamespaceURL: java.lang.String, Value: java.lang.String): Attribute = {
+    val __obj = js.Dynamic.literal(Name = Name, NamespaceURL = NamespaceURL, Value = Value)
+  
+    __obj.asInstanceOf[Attribute]
+  }
+}
+

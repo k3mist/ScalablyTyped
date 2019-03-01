@@ -66,3 +66,26 @@ trait StatisticalFacet extends Facet {
   def toJSON(): js.Any
 }
 
+object StatisticalFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, StatisticalFacet],
+    facetFilter: js.Function1[js.Object, StatisticalFacet],
+    field: js.Function1[java.lang.String, StatisticalFacet],
+    fields: js.Function1[js.Array[_], StatisticalFacet],
+    global: js.Function1[scala.Boolean, StatisticalFacet],
+    lang: js.Function1[java.lang.String, StatisticalFacet],
+    mode: js.Function1[java.lang.String, StatisticalFacet],
+    nested: js.Function1[java.lang.String, StatisticalFacet],
+    params: js.Function1[js.Object, StatisticalFacet],
+    scope: js.Function1[java.lang.String, StatisticalFacet],
+    script: js.Function1[java.lang.String, StatisticalFacet],
+    toJSON: js.Function0[js.Any]
+  ): StatisticalFacet = {
+    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, field = field, fields = fields, global = global, lang = lang, mode = mode, nested = nested, params = params, scope = scope, script = script, toJSON = toJSON)
+  
+    __obj.asInstanceOf[StatisticalFacet]
+  }
+}
+

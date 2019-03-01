@@ -15,3 +15,20 @@ trait IUserOrUserGroupIDExs extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IUserOrUserGroupIDExs {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IUserOrUserGroupIDEx, scala.Unit],
+    Clone: js.Function0[IUserOrUserGroupIDExs],
+    Count: scala.Double,
+    GetUserOrUserGroupIDEx: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, IUserOrUserGroupIDEx],
+    GetUserOrUserGroupIDExIndex: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, scala.Double],
+    Item: js.Function1[scala.Double, IUserOrUserGroupIDEx],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IUserOrUserGroupIDExs = {
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetUserOrUserGroupIDEx = GetUserOrUserGroupIDEx, GetUserOrUserGroupIDExIndex = GetUserOrUserGroupIDExIndex, Item = Item, Remove = Remove)
+  
+    __obj.asInstanceOf[IUserOrUserGroupIDExs]
+  }
+}
+

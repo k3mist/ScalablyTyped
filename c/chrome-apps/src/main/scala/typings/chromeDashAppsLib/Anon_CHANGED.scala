@@ -11,3 +11,16 @@ trait Anon_CHANGED extends js.Object {
   var REMOVED: chromeDashAppsLib.chromeDashAppsLibStrings.removed
 }
 
+object Anon_CHANGED {
+  @scala.inline
+  def apply(
+    CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.changed,
+    CREATED: chromeDashAppsLib.chromeDashAppsLibStrings.created,
+    REMOVED: chromeDashAppsLib.chromeDashAppsLibStrings.removed
+  ): Anon_CHANGED = {
+    val __obj = js.Dynamic.literal(CHANGED = CHANGED, CREATED = CREATED, REMOVED = REMOVED)
+  
+    __obj.asInstanceOf[Anon_CHANGED]
+  }
+}
+

@@ -16,3 +16,21 @@ trait ColumnAttr extends js.Object {
   var sortable: scala.Boolean
 }
 
+object ColumnAttr {
+  @scala.inline
+  def apply(
+    cell: java.lang.String,
+    editable: scala.Boolean,
+    formater: java.lang.String,
+    headerCell: java.lang.String,
+    label: java.lang.String,
+    name: java.lang.String,
+    renderable: scala.Boolean,
+    sortable: scala.Boolean
+  ): ColumnAttr = {
+    val __obj = js.Dynamic.literal(cell = cell, editable = editable, formater = formater, headerCell = headerCell, label = label, name = name, renderable = renderable, sortable = sortable)
+  
+    __obj.asInstanceOf[ColumnAttr]
+  }
+}
+

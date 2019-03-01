@@ -12,3 +12,12 @@ trait Runtime extends js.Object {
   var task: java.lang.String
 }
 
+object Runtime {
+  @scala.inline
+  def apply(hosts: js.Array[Host], options: js.Any, target: java.lang.String, task: java.lang.String): Runtime = {
+    val __obj = js.Dynamic.literal(hosts = hosts, options = options, target = target, task = task)
+  
+    __obj.asInstanceOf[Runtime]
+  }
+}
+

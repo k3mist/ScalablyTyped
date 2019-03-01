@@ -15,3 +15,17 @@ trait SlideThumbnailProperties
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SlideThumbnailProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    url: java.lang.String = null
+  ): SlideThumbnailProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[SlideThumbnailProperties]
+  }
+}
+

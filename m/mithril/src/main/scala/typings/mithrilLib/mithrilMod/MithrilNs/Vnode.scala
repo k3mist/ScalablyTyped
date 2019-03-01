@@ -25,3 +25,21 @@ trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends js.Object {
   var text: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
 }
 
+object Vnode {
+  @scala.inline
+  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+    attrs: Attrs,
+    state: State,
+    tag: java.lang.String | (ComponentTypes[Attrs, State]),
+    children: ChildArrayOrPrimitive = null,
+    key: java.lang.String | scala.Double = null,
+    text: java.lang.String | scala.Double | scala.Boolean = null
+  ): Vnode[Attrs, State] = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Vnode[Attrs, State]]
+  }
+}
+

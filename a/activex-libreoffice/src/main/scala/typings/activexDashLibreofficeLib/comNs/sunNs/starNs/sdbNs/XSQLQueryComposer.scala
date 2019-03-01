@@ -116,3 +116,41 @@ trait XSQLQueryComposer
   def setQuery(command: java.lang.String): scala.Unit
 }
 
+object XSQLQueryComposer {
+  @scala.inline
+  def apply(
+    ComposedQuery: java.lang.String,
+    Filter: java.lang.String,
+    Order: java.lang.String,
+    Query: java.lang.String,
+    StructuredFilter: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    acquire: js.Function0[scala.Unit],
+    appendFilterByColumn: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    appendOrderByColumn: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    getComposedQuery: js.Function0[java.lang.String],
+    getFilter: js.Function0[java.lang.String],
+    getOrder: js.Function0[java.lang.String],
+    getQuery: js.Function0[java.lang.String],
+    getStructuredFilter: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFilter: js.Function1[java.lang.String, scala.Unit],
+    setOrder: js.Function1[java.lang.String, scala.Unit],
+    setQuery: js.Function1[java.lang.String, scala.Unit]
+  ): XSQLQueryComposer = {
+    val __obj = js.Dynamic.literal(ComposedQuery = ComposedQuery, Filter = Filter, Order = Order, Query = Query, StructuredFilter = StructuredFilter, acquire = acquire, appendFilterByColumn = appendFilterByColumn, appendOrderByColumn = appendOrderByColumn, getComposedQuery = getComposedQuery, getFilter = getFilter, getOrder = getOrder, getQuery = getQuery, getStructuredFilter = getStructuredFilter, queryInterface = queryInterface, release = release, setFilter = setFilter, setOrder = setOrder, setQuery = setQuery)
+  
+    __obj.asInstanceOf[XSQLQueryComposer]
+  }
+}
+

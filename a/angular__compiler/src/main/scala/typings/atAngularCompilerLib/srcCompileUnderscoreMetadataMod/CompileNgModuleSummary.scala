@@ -13,3 +13,20 @@ trait CompileNgModuleSummary extends CompileTypeSummary {
   var providers: js.Array[atAngularCompilerLib.Anon_Module]
 }
 
+object CompileNgModuleSummary {
+  @scala.inline
+  def apply(
+    entryComponents: js.Array[CompileEntryComponentMetadata],
+    exportedDirectives: js.Array[CompileIdentifierMetadata],
+    exportedPipes: js.Array[CompileIdentifierMetadata],
+    modules: js.Array[CompileTypeMetadata],
+    providers: js.Array[atAngularCompilerLib.Anon_Module],
+    `type`: CompileTypeMetadata,
+    summaryKind: CompileSummaryKind = null
+  ): CompileNgModuleSummary = {
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents, exportedDirectives = exportedDirectives, exportedPipes = exportedPipes, modules = modules, providers = providers, `type` = `type`)
+    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind)
+    __obj.asInstanceOf[CompileNgModuleSummary]
+  }
+}
+

@@ -18,3 +18,23 @@ trait MemLayoutData extends js.Object {
   var voltageMin: scala.Double
 }
 
+object MemLayoutData {
+  @scala.inline
+  def apply(
+    bank: java.lang.String,
+    clockSpeed: scala.Double,
+    formFactor: java.lang.String,
+    partNum: java.lang.String,
+    serialNum: java.lang.String,
+    size: scala.Double,
+    `type`: java.lang.String,
+    voltageConfigured: scala.Double,
+    voltageMax: scala.Double,
+    voltageMin: scala.Double
+  ): MemLayoutData = {
+    val __obj = js.Dynamic.literal(bank = bank, clockSpeed = clockSpeed, formFactor = formFactor, partNum = partNum, serialNum = serialNum, size = size, `type` = `type`, voltageConfigured = voltageConfigured, voltageMax = voltageMax, voltageMin = voltageMin)
+  
+    __obj.asInstanceOf[MemLayoutData]
+  }
+}
+

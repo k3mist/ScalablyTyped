@@ -147,3 +147,47 @@ trait GrammarRegistry extends js.Object {
   def selectGrammar(filePath: java.lang.String, fileContents: java.lang.String): Grammar
 }
 
+object GrammarRegistry {
+  @scala.inline
+  def apply(
+    addGrammar: js.Function1[Grammar, Disposable],
+    assignLanguageMode: js.Function2[TextBuffer, java.lang.String, scala.Boolean],
+    autoAssignLanguageMode: js.Function1[TextBuffer, scala.Unit],
+    decodeTokens: js.Function2[java.lang.String, js.Array[scala.Double | java.lang.String], js.Array[GrammarToken]],
+    getGrammarScore: js.Function3[Grammar, java.lang.String, java.lang.String, scala.Double],
+    getGrammars: js.Function0[js.Array[Grammar]],
+    grammarForScopeName: js.Function1[java.lang.String, js.UndefOr[Grammar]],
+    loadGrammar: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* error */ nodeLib.Error | scala.Null, 
+        /* grammar */ js.UndefOr[Grammar], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    loadGrammarSync: js.Function1[java.lang.String, Grammar],
+    maintainLanguageMode: js.Function1[TextBuffer, Disposable],
+    onDidAddGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
+    onDidRemoveGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
+    onDidUpdateGrammar: js.Function1[js.Function1[/* grammar */ Grammar, scala.Unit], Disposable],
+    readGrammar: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* error */ nodeLib.Error | scala.Null, 
+        /* grammar */ js.UndefOr[Grammar], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    readGrammarSync: js.Function1[java.lang.String, Grammar],
+    removeGrammar: js.Function1[Grammar, scala.Unit],
+    removeGrammarForScopeName: js.Function1[java.lang.String, js.UndefOr[Grammar]],
+    selectGrammar: js.Function2[java.lang.String, java.lang.String, Grammar]
+  ): GrammarRegistry = {
+    val __obj = js.Dynamic.literal(addGrammar = addGrammar, assignLanguageMode = assignLanguageMode, autoAssignLanguageMode = autoAssignLanguageMode, decodeTokens = decodeTokens, getGrammarScore = getGrammarScore, getGrammars = getGrammars, grammarForScopeName = grammarForScopeName, loadGrammar = loadGrammar, loadGrammarSync = loadGrammarSync, maintainLanguageMode = maintainLanguageMode, onDidAddGrammar = onDidAddGrammar, onDidRemoveGrammar = onDidRemoveGrammar, onDidUpdateGrammar = onDidUpdateGrammar, readGrammar = readGrammar, readGrammarSync = readGrammarSync, removeGrammar = removeGrammar, removeGrammarForScopeName = removeGrammarForScopeName, selectGrammar = selectGrammar)
+  
+    __obj.asInstanceOf[GrammarRegistry]
+  }
+}
+

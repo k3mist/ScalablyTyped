@@ -12,3 +12,17 @@ trait TraversalOptions extends js.Object {
   var traverseContext: TraversalContext
 }
 
+object TraversalOptions {
+  @scala.inline
+  def apply(
+    allowEmptyStartVector: scala.Boolean,
+    signalStart: scala.Boolean,
+    startVector: java.lang.String | js.Array[java.lang.String],
+    traverseContext: TraversalContext
+  ): TraversalOptions = {
+    val __obj = js.Dynamic.literal(allowEmptyStartVector = allowEmptyStartVector, signalStart = signalStart, startVector = startVector.asInstanceOf[js.Any], traverseContext = traverseContext)
+  
+    __obj.asInstanceOf[TraversalOptions]
+  }
+}
+

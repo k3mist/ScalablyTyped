@@ -10,3 +10,12 @@ trait OnDragOverData extends js.Object {
   var node: InternalTreeNode
 }
 
+object OnDragOverData {
+  @scala.inline
+  def apply(event: reactLib.Event, node: InternalTreeNode): OnDragOverData = {
+    val __obj = js.Dynamic.literal(event = event, node = node)
+  
+    __obj.asInstanceOf[OnDragOverData]
+  }
+}
+

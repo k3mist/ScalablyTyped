@@ -11,3 +11,16 @@ trait IRandomAccessStreamReferenceStatics extends js.Object {
   def createFromUri(uri: winrtLib.WindowsNs.FoundationNs.Uri): RandomAccessStreamReference
 }
 
+object IRandomAccessStreamReferenceStatics {
+  @scala.inline
+  def apply(
+    createFromFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, RandomAccessStreamReference],
+    createFromStream: js.Function1[IRandomAccessStream, RandomAccessStreamReference],
+    createFromUri: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, RandomAccessStreamReference]
+  ): IRandomAccessStreamReferenceStatics = {
+    val __obj = js.Dynamic.literal(createFromFile = createFromFile, createFromStream = createFromStream, createFromUri = createFromUri)
+  
+    __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
+  }
+}
+

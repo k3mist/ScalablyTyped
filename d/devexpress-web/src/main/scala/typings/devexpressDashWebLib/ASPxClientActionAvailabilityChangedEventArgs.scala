@@ -16,3 +16,12 @@ trait ASPxClientActionAvailabilityChangedEventArgs extends ASPxClientEventArgs {
   var ItemName: java.lang.String
 }
 
+object ASPxClientActionAvailabilityChangedEventArgs {
+  @scala.inline
+  def apply(ItemName: java.lang.String): ASPxClientActionAvailabilityChangedEventArgs = {
+    val __obj = js.Dynamic.literal(ItemName = ItemName)
+  
+    __obj.asInstanceOf[ASPxClientActionAvailabilityChangedEventArgs]
+  }
+}
+

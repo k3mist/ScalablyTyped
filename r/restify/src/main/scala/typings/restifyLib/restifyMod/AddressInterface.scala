@@ -11,3 +11,12 @@ trait AddressInterface extends js.Object {
   var port: scala.Double
 }
 
+object AddressInterface {
+  @scala.inline
+  def apply(address: java.lang.String, family: java.lang.String, port: scala.Double): AddressInterface = {
+    val __obj = js.Dynamic.literal(address = address, family = family, port = port)
+  
+    __obj.asInstanceOf[AddressInterface]
+  }
+}
+

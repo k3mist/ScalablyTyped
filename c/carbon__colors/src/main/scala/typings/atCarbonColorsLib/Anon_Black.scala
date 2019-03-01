@@ -22,3 +22,27 @@ trait Anon_Black extends js.Object {
   var yellow: Anon_20
 }
 
+object Anon_Black {
+  @scala.inline
+  def apply(
+    black: Anon_100,
+    blue: Anon_10,
+    coolGray: Anon_10,
+    cyan: Anon_10,
+    gray: Anon_10,
+    green: Anon_10,
+    magenta: Anon_10,
+    orange: Anon_40,
+    purple: Anon_10,
+    red: Anon_10,
+    teal: Anon_10,
+    warmGray: Anon_10,
+    white: Anon_0,
+    yellow: Anon_20
+  ): Anon_Black = {
+    val __obj = js.Dynamic.literal(black = black, blue = blue, coolGray = coolGray, cyan = cyan, gray = gray, green = green, magenta = magenta, orange = orange, purple = purple, red = red, teal = teal, warmGray = warmGray, white = white, yellow = yellow)
+  
+    __obj.asInstanceOf[Anon_Black]
+  }
+}
+

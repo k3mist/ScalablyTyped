@@ -22,3 +22,13 @@ trait LinearUnitProperties extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LinearUnitProperties {
+  @scala.inline
+  def apply(distance: scala.Int | scala.Double = null, units: java.lang.String = null): LinearUnitProperties = {
+    val __obj = js.Dynamic.literal()
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[LinearUnitProperties]
+  }
+}
+

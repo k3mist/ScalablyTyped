@@ -17,3 +17,22 @@ trait AbideDefaults extends js.Object {
   var validators: js.Any
 }
 
+object AbideDefaults {
+  @scala.inline
+  def apply(
+    formErrorClass: java.lang.String,
+    formErrorSelector: java.lang.String,
+    inputErrorClass: java.lang.String,
+    labelErrorClass: java.lang.String,
+    liveValidate: scala.Boolean,
+    patterns: IAbidePatterns,
+    validateOn: java.lang.String,
+    validateOnBlur: scala.Boolean,
+    validators: js.Any
+  ): AbideDefaults = {
+    val __obj = js.Dynamic.literal(formErrorClass = formErrorClass, formErrorSelector = formErrorSelector, inputErrorClass = inputErrorClass, labelErrorClass = labelErrorClass, liveValidate = liveValidate, patterns = patterns, validateOn = validateOn, validateOnBlur = validateOnBlur, validators = validators)
+  
+    __obj.asInstanceOf[AbideDefaults]
+  }
+}
+

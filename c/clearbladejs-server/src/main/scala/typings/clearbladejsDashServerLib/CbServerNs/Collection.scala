@@ -21,3 +21,26 @@ trait Collection extends js.Object {
   def update(query: Query, changes: js.Object, callback: CbCallback): scala.Unit
 }
 
+object Collection {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    addColumn: js.Function2[js.Object, CbCallback, scala.Unit],
+    columns: js.Function1[CbCallback, scala.Unit],
+    count: js.Function2[Query, CbCallback, scala.Unit],
+    create: js.Function2[Item, CbCallback, scala.Unit],
+    deleteCollection: js.Function1[CbCallback, scala.Unit],
+    dropColumn: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    fetch: js.Function2[Query, CbCallback, scala.Unit],
+    remove: js.Function2[Query, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function3[Query, js.Object, CbCallback, scala.Unit],
+    user: APIUser
+  ): Collection = {
+    val __obj = js.Dynamic.literal(URI = URI, addColumn = addColumn, columns = columns, count = count, create = create, deleteCollection = deleteCollection, dropColumn = dropColumn, fetch = fetch, remove = remove, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
+    __obj.asInstanceOf[Collection]
+  }
+}
+

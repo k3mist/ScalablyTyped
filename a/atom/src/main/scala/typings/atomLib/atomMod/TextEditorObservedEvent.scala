@@ -11,3 +11,12 @@ trait TextEditorObservedEvent extends js.Object {
   var textEditor: TextEditor
 }
 
+object TextEditorObservedEvent {
+  @scala.inline
+  def apply(index: scala.Double, pane: Pane, textEditor: TextEditor): TextEditorObservedEvent = {
+    val __obj = js.Dynamic.literal(index = index, pane = pane, textEditor = textEditor)
+  
+    __obj.asInstanceOf[TextEditorObservedEvent]
+  }
+}
+

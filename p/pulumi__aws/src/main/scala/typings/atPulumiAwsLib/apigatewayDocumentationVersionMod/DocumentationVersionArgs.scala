@@ -20,3 +20,16 @@ trait DocumentationVersionArgs extends js.Object {
   val version: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object DocumentationVersionArgs {
+  @scala.inline
+  def apply(
+    restApiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    version: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DocumentationVersionArgs = {
+    val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocumentationVersionArgs]
+  }
+}
+

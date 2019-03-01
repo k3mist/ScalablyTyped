@@ -11,3 +11,17 @@ trait IonVoiceRecordEnd extends BaseParams {
   def complete_MIonVoiceRecordEnd(res: Resouce): scala.Unit
 }
 
+object IonVoiceRecordEnd {
+  @scala.inline
+  def apply(
+    complete: js.Function1[Resouce, scala.Unit],
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IonVoiceRecordEnd = {
+    val __obj = js.Dynamic.literal(complete = complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[IonVoiceRecordEnd]
+  }
+}
+

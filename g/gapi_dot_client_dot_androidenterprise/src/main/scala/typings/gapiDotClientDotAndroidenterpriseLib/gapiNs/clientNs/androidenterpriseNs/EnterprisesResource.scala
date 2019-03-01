@@ -85,3 +85,85 @@ trait EnterprisesResource extends js.Object {
   def unenroll(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object EnterprisesResource {
+  @scala.inline
+  def apply(
+    acknowledgeNotificationSet: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    completeSignup: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltCompletionToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    createWebToken: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdministratorWebToken]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    enroll: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    generateSignupUrl: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltCallbackUrl, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SignupInfo]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    getAndroidDevicePolicyConfig: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AndroidDevicePolicyConfig]
+    ],
+    getServiceAccount: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
+    ],
+    getStoreLayout: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StoreLayout]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltDomain, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EnterprisesListResponse]
+    ],
+    pullNotificationSet: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[NotificationSet]
+    ],
+    sendTestPushNotification: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EnterprisesSendTestPushNotificationResponse]
+    ],
+    setAccount: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EnterpriseAccount]
+    ],
+    setAndroidDevicePolicyConfig: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AndroidDevicePolicyConfig]
+    ],
+    setStoreLayout: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StoreLayout]
+    ],
+    unenroll: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): EnterprisesResource = {
+    val __obj = js.Dynamic.literal(acknowledgeNotificationSet = acknowledgeNotificationSet, completeSignup = completeSignup, createWebToken = createWebToken, delete = delete, enroll = enroll, generateSignupUrl = generateSignupUrl, get = get, getAndroidDevicePolicyConfig = getAndroidDevicePolicyConfig, getServiceAccount = getServiceAccount, getStoreLayout = getStoreLayout, insert = insert, list = list, pullNotificationSet = pullNotificationSet, sendTestPushNotification = sendTestPushNotification, setAccount = setAccount, setAndroidDevicePolicyConfig = setAndroidDevicePolicyConfig, setStoreLayout = setStoreLayout, unenroll = unenroll)
+  
+    __obj.asInstanceOf[EnterprisesResource]
+  }
+}
+

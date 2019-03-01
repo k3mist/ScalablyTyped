@@ -29,3 +29,17 @@ trait GeocodedWaypoint extends js.Object {
   var types: js.Array[AddressType]
 }
 
+object GeocodedWaypoint {
+  @scala.inline
+  def apply(
+    geocoder_status: GeocodedWaypointStatus,
+    partial_match: scala.Boolean,
+    place_id: java.lang.String,
+    types: js.Array[AddressType]
+  ): GeocodedWaypoint = {
+    val __obj = js.Dynamic.literal(geocoder_status = geocoder_status, partial_match = partial_match, place_id = place_id, types = types)
+  
+    __obj.asInstanceOf[GeocodedWaypoint]
+  }
+}
+

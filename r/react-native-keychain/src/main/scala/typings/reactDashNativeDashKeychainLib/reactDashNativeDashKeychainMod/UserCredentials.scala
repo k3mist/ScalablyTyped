@@ -10,3 +10,12 @@ trait UserCredentials extends js.Object {
   var username: java.lang.String
 }
 
+object UserCredentials {
+  @scala.inline
+  def apply(password: java.lang.String, username: java.lang.String): UserCredentials = {
+    val __obj = js.Dynamic.literal(password = password, username = username)
+  
+    __obj.asInstanceOf[UserCredentials]
+  }
+}
+

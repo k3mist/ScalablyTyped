@@ -14,3 +14,16 @@ trait RawDraftInlineStyleRange extends js.Object {
   var style: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftInlineStyleType
 }
 
+object RawDraftInlineStyleRange {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    offset: scala.Double,
+    style: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftInlineStyleType
+  ): RawDraftInlineStyleRange = {
+    val __obj = js.Dynamic.literal(length = length, offset = offset, style = style)
+  
+    __obj.asInstanceOf[RawDraftInlineStyleRange]
+  }
+}
+

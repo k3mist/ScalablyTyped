@@ -26,3 +26,12 @@ trait TableBorderSettings extends js.Object {
   var width: scala.Double
 }
 
+object TableBorderSettings {
+  @scala.inline
+  def apply(color: java.lang.String, style: js.Any, width: scala.Double): TableBorderSettings = {
+    val __obj = js.Dynamic.literal(color = color, style = style, width = width)
+  
+    __obj.asInstanceOf[TableBorderSettings]
+  }
+}
+

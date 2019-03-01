@@ -9,3 +9,12 @@ trait LayersControlEvent extends LayerEvent {
   var name: java.lang.String
 }
 
+object LayersControlEvent {
+  @scala.inline
+  def apply(layer: Layer, name: java.lang.String, target: js.Any, `type`: java.lang.String): LayersControlEvent = {
+    val __obj = js.Dynamic.literal(layer = layer, name = name, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[LayersControlEvent]
+  }
+}
+

@@ -24,3 +24,18 @@ trait XFormsSupplier
   def getForms(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
 }
 
+object XFormsSupplier {
+  @scala.inline
+  def apply(
+    Forms: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    getForms: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFormsSupplier = {
+    val __obj = js.Dynamic.literal(Forms = Forms, acquire = acquire, getForms = getForms, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFormsSupplier]
+  }
+}
+

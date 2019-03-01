@@ -29,3 +29,18 @@ trait UploadFile extends js.Object {
   var `type`: java.lang.String
 }
 
+object UploadFile {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    length: scala.Double,
+    modificationTime: scala.Double,
+    offset: scala.Double,
+    `type`: java.lang.String
+  ): UploadFile = {
+    val __obj = js.Dynamic.literal(filePath = filePath, length = length, modificationTime = modificationTime, offset = offset, `type` = `type`)
+  
+    __obj.asInstanceOf[UploadFile]
+  }
+}
+

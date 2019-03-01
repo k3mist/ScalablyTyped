@@ -51,3 +51,23 @@ trait JobQueryDetails
   var where: java.lang.String
 }
 
+object JobQueryDetails {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String],
+    constructor: js.Function,
+    fields: js.Array[java.lang.String],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    name: java.lang.String,
+    orderBy: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    tables: js.Array[java.lang.String],
+    where: java.lang.String
+  ): JobQueryDetails = {
+    val __obj = js.Dynamic.literal(aliases = aliases, constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, id = id, name = name, orderBy = orderBy, propertyIsEnumerable = propertyIsEnumerable, tables = tables, where = where)
+  
+    __obj.asInstanceOf[JobQueryDetails]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Op
   var op: java.lang.String
 }
 
+object Anon_Op {
+  @scala.inline
+  def apply(op: java.lang.String): Anon_Op = {
+    val __obj = js.Dynamic.literal(op = op)
+  
+    __obj.asInstanceOf[Anon_Op]
+  }
+}
+

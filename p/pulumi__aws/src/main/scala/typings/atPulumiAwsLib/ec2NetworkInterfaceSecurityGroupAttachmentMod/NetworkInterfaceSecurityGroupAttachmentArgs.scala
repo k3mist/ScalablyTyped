@@ -16,3 +16,15 @@ trait NetworkInterfaceSecurityGroupAttachmentArgs extends js.Object {
   val securityGroupId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object NetworkInterfaceSecurityGroupAttachmentArgs {
+  @scala.inline
+  def apply(
+    networkInterfaceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    securityGroupId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): NetworkInterfaceSecurityGroupAttachmentArgs = {
+    val __obj = js.Dynamic.literal(networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentArgs]
+  }
+}
+

@@ -10,3 +10,15 @@ trait RouterAction extends js.Object {
   var `type`: reactDashRouterDashReduxLib.reactDashRouterDashReduxLibStrings.`@@router/CALL_HISTORY_METHOD`
 }
 
+object RouterAction {
+  @scala.inline
+  def apply(
+    payload: LocationActionPayload,
+    `type`: reactDashRouterDashReduxLib.reactDashRouterDashReduxLibStrings.`@@router/CALL_HISTORY_METHOD`
+  ): RouterAction = {
+    val __obj = js.Dynamic.literal(payload = payload, `type` = `type`)
+  
+    __obj.asInstanceOf[RouterAction]
+  }
+}
+

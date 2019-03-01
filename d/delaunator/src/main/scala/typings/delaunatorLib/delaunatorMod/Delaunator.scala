@@ -24,3 +24,16 @@ trait Delaunator[P] extends js.Object {
   var triangles: stdLib.Uint32Array
 }
 
+object Delaunator {
+  @scala.inline
+  def apply[P](
+    halfedges: stdLib.Int32Array,
+    hull: delaunatorLib.delaunatorMod.DelaunatorNs.Node,
+    triangles: stdLib.Uint32Array
+  ): Delaunator[P] = {
+    val __obj = js.Dynamic.literal(halfedges = halfedges, hull = hull, triangles = triangles)
+  
+    __obj.asInstanceOf[Delaunator[P]]
+  }
+}
+

@@ -25,3 +25,19 @@ trait XBoundControl
   def setLock(bLock: scala.Boolean): scala.Unit
 }
 
+object XBoundControl {
+  @scala.inline
+  def apply(
+    Lock: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    getLock: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLock: js.Function1[scala.Boolean, scala.Unit]
+  ): XBoundControl = {
+    val __obj = js.Dynamic.literal(Lock = Lock, acquire = acquire, getLock = getLock, queryInterface = queryInterface, release = release, setLock = setLock)
+  
+    __obj.asInstanceOf[XBoundControl]
+  }
+}
+

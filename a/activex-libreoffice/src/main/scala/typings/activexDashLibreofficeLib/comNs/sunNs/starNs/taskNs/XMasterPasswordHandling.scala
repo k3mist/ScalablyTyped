@@ -38,3 +38,22 @@ trait XMasterPasswordHandling
   def removeMasterPassword(): scala.Unit
 }
 
+object XMasterPasswordHandling {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    allowPersistentStoring: js.Function1[scala.Boolean, scala.Boolean],
+    authorizateWithMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
+    changeMasterPassword: js.Function1[XInteractionHandler, scala.Boolean],
+    hasMasterPassword: js.Function0[scala.Boolean],
+    isPersistentStoringAllowed: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeMasterPassword: js.Function0[scala.Unit]
+  ): XMasterPasswordHandling = {
+    val __obj = js.Dynamic.literal(acquire = acquire, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, hasMasterPassword = hasMasterPassword, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, removeMasterPassword = removeMasterPassword)
+  
+    __obj.asInstanceOf[XMasterPasswordHandling]
+  }
+}
+

@@ -136,3 +136,31 @@ trait XAccessibleComponent
   def grabFocus(): scala.Unit
 }
 
+object XAccessibleComponent {
+  @scala.inline
+  def apply(
+    Background: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Bounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    Foreground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Location: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    LocationOnScreen: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    acquire: js.Function0[scala.Unit],
+    containsPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean],
+    getAccessibleAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, XAccessible],
+    getBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getForeground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getLocation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getLocationOnScreen: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    grabFocus: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleComponent = {
+    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, acquire = acquire, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getBackground = getBackground, getBounds = getBounds, getForeground = getForeground, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, grabFocus = grabFocus, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessibleComponent]
+  }
+}
+

@@ -111,3 +111,49 @@ trait DirectionsSearchProperties
   var viewModel: js.UndefOr[SearchViewModel] = js.undefined
 }
 
+object DirectionsSearchProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    activeSourceIndex: scala.Int | scala.Double = null,
+    allPlaceholder: java.lang.String = null,
+    autoNavigate: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    maxResults: scala.Int | scala.Double = null,
+    maxSuggestions: scala.Int | scala.Double = null,
+    minSuggestCharacters: scala.Int | scala.Double = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupOpenOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplate = null,
+    resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    searchTerm: java.lang.String = null,
+    sources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = null,
+    suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    view: MapView | SceneView = null,
+    viewModel: SearchViewModel = null
+  ): DirectionsSearchProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
+    if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
+    if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
+    if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (!js.isUndefined(popupOpenOnSelect)) __obj.updateDynamic("popupOpenOnSelect")(popupOpenOnSelect)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled)
+    if (!js.isUndefined(searchAllEnabled)) __obj.updateDynamic("searchAllEnabled")(searchAllEnabled)
+    if (searchTerm != null) __obj.updateDynamic("searchTerm")(searchTerm)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[DirectionsSearchProperties]
+  }
+}
+

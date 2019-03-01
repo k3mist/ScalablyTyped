@@ -18,3 +18,12 @@ trait ZoomStruct extends js.Object {
   var zW: scala.Double
 }
 
+object ZoomStruct {
+  @scala.inline
+  def apply(Y: scala.Double, mH: scala.Double, mW: scala.Double, zH: scala.Double, zW: scala.Double): ZoomStruct = {
+    val __obj = js.Dynamic.literal(Y = Y, mH = mH, mW = mW, zH = zH, zW = zW)
+  
+    __obj.asInstanceOf[ZoomStruct]
+  }
+}
+

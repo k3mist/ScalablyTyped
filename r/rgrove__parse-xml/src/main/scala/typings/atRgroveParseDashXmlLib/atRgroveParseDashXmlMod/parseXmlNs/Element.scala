@@ -16,3 +16,20 @@ trait Element
   var type_Element: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.element
 }
 
+object Element {
+  @scala.inline
+  def apply(
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    children: js.Array[NodeBase],
+    name: java.lang.String,
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.element,
+    parent: NodeBase = null,
+    preserveWhitespace: java.lang.String = null
+  ): Element = {
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    __obj.asInstanceOf[Element]
+  }
+}
+

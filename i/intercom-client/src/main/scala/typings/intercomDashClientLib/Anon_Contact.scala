@@ -10,3 +10,15 @@ trait Anon_Contact extends js.Object {
   var user: intercomDashClientLib.userMod.UserIdentifier
 }
 
+object Anon_Contact {
+  @scala.inline
+  def apply(
+    contact: intercomDashClientLib.leadMod.LeadIdentifier,
+    user: intercomDashClientLib.userMod.UserIdentifier
+  ): Anon_Contact = {
+    val __obj = js.Dynamic.literal(contact = contact, user = user)
+  
+    __obj.asInstanceOf[Anon_Contact]
+  }
+}
+

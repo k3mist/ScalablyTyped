@@ -147,3 +147,45 @@ trait Range extends js.Object {
   def toScreenRange(session: IEditSession): Range
 }
 
+object Range {
+  @scala.inline
+  def apply(
+    clipRows: js.Function2[scala.Double, scala.Double, Range],
+    clone: js.Function0[Range],
+    collapseRows: js.Function0[Range],
+    compare: js.Function2[scala.Double, scala.Double, scala.Double],
+    compareEnd: js.Function2[scala.Double, scala.Double, scala.Double],
+    compareInside: js.Function2[scala.Double, scala.Double, scala.Double],
+    comparePoint: js.Function1[Range, scala.Double],
+    compareRange: js.Function1[Range, scala.Double],
+    compareStart: js.Function2[scala.Double, scala.Double, scala.Double],
+    contains: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    containsRange: js.Function1[Range, scala.Boolean],
+    end: Position,
+    endColumn: scala.Double,
+    endRow: scala.Double,
+    extend: js.Function2[scala.Double, scala.Double, Range],
+    fromPoints: js.Function2[Range, Range, Range],
+    inside: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    insideEnd: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    insideStart: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    intersects: js.Function1[Range, scala.Boolean],
+    isEmpty: js.Function0[scala.Boolean],
+    isEnd: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    isEqual: js.Function1[Range, scala.Unit],
+    isMultiLine: js.Function0[scala.Boolean],
+    isStart: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    setEnd: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setStart: js.Function2[scala.Double, scala.Double, scala.Unit],
+    start: Position,
+    startColumn: scala.Double,
+    startRow: scala.Double,
+    toScreenRange: js.Function1[IEditSession, Range],
+    toString: js.Function0[scala.Unit]
+  ): Range = {
+    val __obj = js.Dynamic.literal(clipRows = clipRows, clone = clone, collapseRows = collapseRows, compare = compare, compareEnd = compareEnd, compareInside = compareInside, comparePoint = comparePoint, compareRange = compareRange, compareStart = compareStart, contains = contains, containsRange = containsRange, end = end, endColumn = endColumn, endRow = endRow, extend = extend, fromPoints = fromPoints, inside = inside, insideEnd = insideEnd, insideStart = insideStart, intersects = intersects, isEmpty = isEmpty, isEnd = isEnd, isEqual = isEqual, isMultiLine = isMultiLine, isStart = isStart, setEnd = setEnd, setStart = setStart, start = start, startColumn = startColumn, startRow = startRow, toScreenRange = toScreenRange, toString = toString)
+  
+    __obj.asInstanceOf[Range]
+  }
+}
+

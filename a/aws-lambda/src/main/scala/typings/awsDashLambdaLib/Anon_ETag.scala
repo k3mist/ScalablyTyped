@@ -13,3 +13,18 @@ trait Anon_ETag extends js.Object {
   var versionId: java.lang.String
 }
 
+object Anon_ETag {
+  @scala.inline
+  def apply(
+    eTag: java.lang.String,
+    key: java.lang.String,
+    sequencer: java.lang.String,
+    size: scala.Double,
+    versionId: java.lang.String
+  ): Anon_ETag = {
+    val __obj = js.Dynamic.literal(eTag = eTag, key = key, sequencer = sequencer, size = size, versionId = versionId)
+  
+    __obj.asInstanceOf[Anon_ETag]
+  }
+}
+

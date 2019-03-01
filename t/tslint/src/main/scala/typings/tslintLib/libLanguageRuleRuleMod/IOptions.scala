@@ -17,3 +17,17 @@ trait IOptions extends js.Object {
   var ruleSeverity: RuleSeverity
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    disabledIntervals: js.Array[IDisabledInterval],
+    ruleArguments: js.Array[_],
+    ruleName: java.lang.String,
+    ruleSeverity: RuleSeverity
+  ): IOptions = {
+    val __obj = js.Dynamic.literal(disabledIntervals = disabledIntervals, ruleArguments = ruleArguments, ruleName = ruleName, ruleSeverity = ruleSeverity)
+  
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

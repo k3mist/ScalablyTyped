@@ -10,3 +10,17 @@ trait NextRelease extends LastRelease {
   var notes: java.lang.String
 }
 
+object NextRelease {
+  @scala.inline
+  def apply(
+    gitHead: java.lang.String,
+    gitTag: java.lang.String,
+    notes: java.lang.String,
+    version: java.lang.String
+  ): NextRelease = {
+    val __obj = js.Dynamic.literal(gitHead = gitHead, gitTag = gitTag, notes = notes, version = version)
+  
+    __obj.asInstanceOf[NextRelease]
+  }
+}
+

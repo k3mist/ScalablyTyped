@@ -10,3 +10,12 @@ trait JobPayload extends js.Object {
   var output: JobPayloadOutput
 }
 
+object JobPayload {
+  @scala.inline
+  def apply(input: JobPayloadInput, output: JobPayloadOutput): JobPayload = {
+    val __obj = js.Dynamic.literal(input = input, output = output)
+  
+    __obj.asInstanceOf[JobPayload]
+  }
+}
+

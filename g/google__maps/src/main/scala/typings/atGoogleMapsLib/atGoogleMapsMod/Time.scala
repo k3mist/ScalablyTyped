@@ -17,3 +17,12 @@ trait Time extends js.Object {
   var value: stdLib.Date
 }
 
+object Time {
+  @scala.inline
+  def apply(text: java.lang.String, time_zone: java.lang.String, value: stdLib.Date): Time = {
+    val __obj = js.Dynamic.literal(text = text, time_zone = time_zone, value = value)
+  
+    __obj.asInstanceOf[Time]
+  }
+}
+

@@ -14,3 +14,16 @@ trait AdjustmentEvent
   var Value: scala.Double
 }
 
+object AdjustmentEvent {
+  @scala.inline
+  def apply(
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Type: AdjustmentType,
+    Value: scala.Double
+  ): AdjustmentEvent = {
+    val __obj = js.Dynamic.literal(Source = Source, Type = Type, Value = Value)
+  
+    __obj.asInstanceOf[AdjustmentEvent]
+  }
+}
+

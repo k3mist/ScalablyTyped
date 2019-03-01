@@ -24,3 +24,24 @@ trait TfvcBranch extends TfvcBranchRef {
   var relatedBranches: js.Array[TfvcShallowBranchRef]
 }
 
+object TfvcBranch {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    children: js.Array[TfvcBranch],
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    isDeleted: scala.Boolean,
+    mappings: js.Array[TfvcBranchMapping],
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    parent: TfvcShallowBranchRef,
+    path: java.lang.String,
+    relatedBranches: js.Array[TfvcShallowBranchRef],
+    url: java.lang.String
+  ): TfvcBranch = {
+    val __obj = js.Dynamic.literal(_links = _links, children = children, createdDate = createdDate, description = description, isDeleted = isDeleted, mappings = mappings, owner = owner, parent = parent, path = path, relatedBranches = relatedBranches, url = url)
+  
+    __obj.asInstanceOf[TfvcBranch]
+  }
+}
+

@@ -14,3 +14,19 @@ trait PullCallSymbolInfo extends js.Object {
   var targetSymbol: PullSymbol
 }
 
+object PullCallSymbolInfo {
+  @scala.inline
+  def apply(
+    ast: AST,
+    candidateSignature: PullSignatureSymbol,
+    enclosingScopeSymbol: PullSymbol,
+    isConstructorCall: scala.Boolean,
+    resolvedSignatures: js.Array[PullSignatureSymbol],
+    targetSymbol: PullSymbol
+  ): PullCallSymbolInfo = {
+    val __obj = js.Dynamic.literal(ast = ast, candidateSignature = candidateSignature, enclosingScopeSymbol = enclosingScopeSymbol, isConstructorCall = isConstructorCall, resolvedSignatures = resolvedSignatures, targetSymbol = targetSymbol)
+  
+    __obj.asInstanceOf[PullCallSymbolInfo]
+  }
+}
+

@@ -11,3 +11,12 @@ trait BarcodeOptions extends js.Object {
   var width: scala.Double
 }
 
+object BarcodeOptions {
+  @scala.inline
+  def apply(data: java.lang.String | scala.Double, height: scala.Double, width: scala.Double): BarcodeOptions = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height, width = width)
+  
+    __obj.asInstanceOf[BarcodeOptions]
+  }
+}
+

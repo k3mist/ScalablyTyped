@@ -15,3 +15,18 @@ trait XConfigurationChangeListener
   def notifyConfigurationChange(aEvent: ConfigurationChangeEvent): scala.Unit
 }
 
+object XConfigurationChangeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notifyConfigurationChange: js.Function1[ConfigurationChangeEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XConfigurationChangeListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notifyConfigurationChange = notifyConfigurationChange, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XConfigurationChangeListener]
+  }
+}
+

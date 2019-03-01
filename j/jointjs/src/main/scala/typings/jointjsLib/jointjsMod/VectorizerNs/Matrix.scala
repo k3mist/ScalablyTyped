@@ -15,3 +15,19 @@ trait Matrix extends js.Object {
   var f: scala.Double
 }
 
+object Matrix {
+  @scala.inline
+  def apply(
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    e: scala.Double,
+    f: scala.Double
+  ): Matrix = {
+    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, e = e, f = f)
+  
+    __obj.asInstanceOf[Matrix]
+  }
+}
+

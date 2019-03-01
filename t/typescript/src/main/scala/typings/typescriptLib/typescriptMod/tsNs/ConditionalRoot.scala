@@ -19,3 +19,28 @@ trait ConditionalRoot extends js.Object {
   var trueType: Type
 }
 
+object ConditionalRoot {
+  @scala.inline
+  def apply(
+    checkType: Type,
+    extendsType: Type,
+    falseType: Type,
+    isDistributive: scala.Boolean,
+    node: ConditionalTypeNode,
+    trueType: Type,
+    aliasSymbol: Symbol = null,
+    aliasTypeArguments: js.Array[Type] = null,
+    inferTypeParameters: js.Array[TypeParameter] = null,
+    instantiations: Map[Type] = null,
+    outerTypeParameters: js.Array[TypeParameter] = null
+  ): ConditionalRoot = {
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, isDistributive = isDistributive, node = node, trueType = trueType)
+    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
+    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
+    if (inferTypeParameters != null) __obj.updateDynamic("inferTypeParameters")(inferTypeParameters)
+    if (instantiations != null) __obj.updateDynamic("instantiations")(instantiations)
+    if (outerTypeParameters != null) __obj.updateDynamic("outerTypeParameters")(outerTypeParameters)
+    __obj.asInstanceOf[ConditionalRoot]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Anon_Index[T] extends js.Object {
   var subscription: rxjsLib.internalSubscriptionMod.Subscription
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply[T](
+    index: scala.Double,
+    keys: js.Array[java.lang.String],
+    obj: js.Object,
+    subscriber: rxjsLib.internalSubscriberMod.Subscriber[js.Tuple2[java.lang.String, T]],
+    subscription: rxjsLib.internalSubscriptionMod.Subscription
+  ): Anon_Index[T] = {
+    val __obj = js.Dynamic.literal(index = index, keys = keys, obj = obj, subscriber = subscriber, subscription = subscription)
+  
+    __obj.asInstanceOf[Anon_Index[T]]
+  }
+}
+

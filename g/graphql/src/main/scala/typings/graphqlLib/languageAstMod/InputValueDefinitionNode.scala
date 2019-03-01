@@ -15,3 +15,23 @@ trait InputValueDefinitionNode extends ASTNode {
   val `type`: TypeNode
 }
 
+object InputValueDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.InputValueDefinition,
+    name: NameNode,
+    `type`: TypeNode,
+    defaultValue: ValueNode = null,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): InputValueDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, `type` = `type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[InputValueDefinitionNode]
+  }
+}
+

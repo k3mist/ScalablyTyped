@@ -20,3 +20,29 @@ trait Anon_Animations extends js.Object {
   var templateUrl: java.lang.String | scala.Null
 }
 
+object Anon_Animations {
+  @scala.inline
+  def apply(
+    animations: js.Array[_],
+    externalStylesheets: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileStylesheetMetadata],
+    isInline: scala.Boolean,
+    ngContentSelectors: js.Array[java.lang.String],
+    preserveWhitespaces: scala.Boolean,
+    styleUrls: js.Array[java.lang.String],
+    styles: js.Array[java.lang.String],
+    encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation = null,
+    htmlAst: atAngularCompilerLib.srcMlUnderscoreParserParserMod.ParseTreeResult = null,
+    interpolation: js.Tuple2[java.lang.String, java.lang.String] = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null
+  ): Anon_Animations = {
+    val __obj = js.Dynamic.literal(animations = animations, externalStylesheets = externalStylesheets, isInline = isInline, ngContentSelectors = ngContentSelectors, preserveWhitespaces = preserveWhitespaces, styleUrls = styleUrls, styles = styles)
+    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
+    if (htmlAst != null) __obj.updateDynamic("htmlAst")(htmlAst)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[Anon_Animations]
+  }
+}
+

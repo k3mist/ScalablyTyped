@@ -17,3 +17,22 @@ trait Credit extends js.Object {
   def hasLink(): scala.Boolean
 }
 
+object Credit {
+  @scala.inline
+  def apply(
+    element: stdLib.HTMLElement,
+    equals: js.Function1[Credit, scala.Boolean],
+    hasImage: js.Function0[scala.Boolean],
+    hasLink: js.Function0[scala.Boolean],
+    html: java.lang.String,
+    imageUrl: java.lang.String,
+    link: java.lang.String,
+    showOnScreen: scala.Boolean,
+    text: java.lang.String
+  ): Credit = {
+    val __obj = js.Dynamic.literal(element = element, equals = equals, hasImage = hasImage, hasLink = hasLink, html = html, imageUrl = imageUrl, link = link, showOnScreen = showOnScreen, text = text)
+  
+    __obj.asInstanceOf[Credit]
+  }
+}
+

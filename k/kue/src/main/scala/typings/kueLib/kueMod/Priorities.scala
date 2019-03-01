@@ -13,3 +13,18 @@ trait Priorities extends js.Object {
   var normal: scala.Double
 }
 
+object Priorities {
+  @scala.inline
+  def apply(
+    critical: scala.Double,
+    high: scala.Double,
+    low: scala.Double,
+    medium: scala.Double,
+    normal: scala.Double
+  ): Priorities = {
+    val __obj = js.Dynamic.literal(critical = critical, high = high, low = low, medium = medium, normal = normal)
+  
+    __obj.asInstanceOf[Priorities]
+  }
+}
+

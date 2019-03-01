@@ -24,3 +24,18 @@ trait StaticRoute extends Route {
   var path: java.lang.String
 }
 
+object StaticRoute {
+  @scala.inline
+  def apply(
+    localPath: java.lang.String,
+    path: java.lang.String,
+    contentType: java.lang.String = null,
+    index: scala.Boolean | java.lang.String = null
+  ): StaticRoute = {
+    val __obj = js.Dynamic.literal(localPath = localPath, path = path)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StaticRoute]
+  }
+}
+

@@ -157,3 +157,40 @@ trait IEnvironmentHelperOptions extends js.Object {
   var toneMappingEnabled: scala.Boolean
 }
 
+object IEnvironmentHelperOptions {
+  @scala.inline
+  def apply(
+    backgroundYRotation: scala.Double,
+    cameraContrast: scala.Double,
+    cameraExposure: scala.Double,
+    createGround: scala.Boolean,
+    createSkybox: scala.Boolean,
+    enableGroundMirror: scala.Boolean,
+    enableGroundShadow: scala.Boolean,
+    environmentTexture: java.lang.String | BaseTexture,
+    groundColor: Color3,
+    groundMirrorAmount: scala.Double,
+    groundMirrorBlurKernel: scala.Double,
+    groundMirrorFallOffDistance: scala.Double,
+    groundMirrorFresnelWeight: scala.Double,
+    groundMirrorSizeRatio: scala.Double,
+    groundMirrorTextureType: scala.Double,
+    groundOpacity: scala.Double,
+    groundShadowLevel: scala.Double,
+    groundSize: scala.Double,
+    groundTexture: java.lang.String | BaseTexture,
+    groundYBias: scala.Double,
+    rootPosition: Vector3,
+    setupImageProcessing: scala.Boolean,
+    sizeAuto: scala.Boolean,
+    skyboxColor: Color3,
+    skyboxSize: scala.Double,
+    skyboxTexture: java.lang.String | BaseTexture,
+    toneMappingEnabled: scala.Boolean
+  ): IEnvironmentHelperOptions = {
+    val __obj = js.Dynamic.literal(backgroundYRotation = backgroundYRotation, cameraContrast = cameraContrast, cameraExposure = cameraExposure, createGround = createGround, createSkybox = createSkybox, enableGroundMirror = enableGroundMirror, enableGroundShadow = enableGroundShadow, environmentTexture = environmentTexture.asInstanceOf[js.Any], groundColor = groundColor, groundMirrorAmount = groundMirrorAmount, groundMirrorBlurKernel = groundMirrorBlurKernel, groundMirrorFallOffDistance = groundMirrorFallOffDistance, groundMirrorFresnelWeight = groundMirrorFresnelWeight, groundMirrorSizeRatio = groundMirrorSizeRatio, groundMirrorTextureType = groundMirrorTextureType, groundOpacity = groundOpacity, groundShadowLevel = groundShadowLevel, groundSize = groundSize, groundTexture = groundTexture.asInstanceOf[js.Any], groundYBias = groundYBias, rootPosition = rootPosition, setupImageProcessing = setupImageProcessing, sizeAuto = sizeAuto, skyboxColor = skyboxColor, skyboxSize = skyboxSize, skyboxTexture = skyboxTexture.asInstanceOf[js.Any], toneMappingEnabled = toneMappingEnabled)
+  
+    __obj.asInstanceOf[IEnvironmentHelperOptions]
+  }
+}
+

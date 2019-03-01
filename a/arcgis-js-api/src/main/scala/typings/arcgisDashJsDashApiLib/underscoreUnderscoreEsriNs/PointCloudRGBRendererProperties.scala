@@ -14,3 +14,20 @@ trait PointCloudRGBRendererProperties extends PointCloudRendererProperties {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PointCloudRGBRendererProperties {
+  @scala.inline
+  def apply(
+    colorModulation: PointCloudRendererColorModulation = null,
+    field: java.lang.String = null,
+    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
+    pointsPerInch: scala.Int | scala.Double = null
+  ): PointCloudRGBRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointCloudRGBRendererProperties]
+  }
+}
+

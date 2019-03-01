@@ -17,3 +17,22 @@ trait ViewerTouchEvent[T] extends js.Object {
   def stopPropagation(): scala.Unit
 }
 
+object ViewerTouchEvent {
+  @scala.inline
+  def apply[T](
+    SVGViewer: reactLib.SVGSVGElement,
+    changedPoints: js.Array[Point],
+    originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T],
+    points: js.Array[Point],
+    preventDefault: js.Function0[scala.Unit],
+    scaleFactor: scala.Double,
+    stopPropagation: js.Function0[scala.Unit],
+    translationX: scala.Double,
+    translationY: scala.Double
+  ): ViewerTouchEvent[T] = {
+    val __obj = js.Dynamic.literal(SVGViewer = SVGViewer, changedPoints = changedPoints, originalEvent = originalEvent, points = points, preventDefault = preventDefault, scaleFactor = scaleFactor, stopPropagation = stopPropagation, translationX = translationX, translationY = translationY)
+  
+    __obj.asInstanceOf[ViewerTouchEvent[T]]
+  }
+}
+

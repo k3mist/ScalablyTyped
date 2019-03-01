@@ -15,3 +15,17 @@ trait UniqueValueRendererLegendOptions
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UniqueValueRendererLegendOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String = null
+  ): UniqueValueRendererLegendOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[UniqueValueRendererLegendOptions]
+  }
+}
+

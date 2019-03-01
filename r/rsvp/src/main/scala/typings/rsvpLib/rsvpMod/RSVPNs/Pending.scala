@@ -10,3 +10,12 @@ trait Pending
   var state: State
 }
 
+object Pending {
+  @scala.inline
+  def apply(state: State): Pending = {
+    val __obj = js.Dynamic.literal(state = state)
+  
+    __obj.asInstanceOf[Pending]
+  }
+}
+

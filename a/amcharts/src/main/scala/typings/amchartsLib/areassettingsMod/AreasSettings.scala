@@ -95,3 +95,32 @@ trait AreasSettings extends js.Object {
   var unlistedAreasOutlineColor: java.lang.String
 }
 
+object AreasSettings {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    autoZoom: scala.Boolean,
+    balloonText: java.lang.String,
+    color: java.lang.String,
+    colorSolid: java.lang.String,
+    descriptionWindowHeight: scala.Double,
+    descriptionWindowWidth: scala.Double,
+    descriptionWindowX: scala.Double,
+    descriptionWindowY: scala.Double,
+    outlineAlpha: scala.Double,
+    outlineColor: java.lang.String,
+    outlineThickness: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverOutlineColor: java.lang.String,
+    selectedColor: java.lang.String,
+    unlistedAreasAlpha: scala.Double,
+    unlistedAreasColor: java.lang.String,
+    unlistedAreasOutlineAlpha: scala.Double,
+    unlistedAreasOutlineColor: java.lang.String
+  ): AreasSettings = {
+    val __obj = js.Dynamic.literal(alpha = alpha, autoZoom = autoZoom, balloonText = balloonText, color = color, colorSolid = colorSolid, descriptionWindowHeight = descriptionWindowHeight, descriptionWindowWidth = descriptionWindowWidth, descriptionWindowX = descriptionWindowX, descriptionWindowY = descriptionWindowY, outlineAlpha = outlineAlpha, outlineColor = outlineColor, outlineThickness = outlineThickness, rollOverColor = rollOverColor, rollOverOutlineColor = rollOverOutlineColor, selectedColor = selectedColor, unlistedAreasAlpha = unlistedAreasAlpha, unlistedAreasColor = unlistedAreasColor, unlistedAreasOutlineAlpha = unlistedAreasOutlineAlpha, unlistedAreasOutlineColor = unlistedAreasOutlineColor)
+  
+    __obj.asInstanceOf[AreasSettings]
+  }
+}
+

@@ -11,3 +11,12 @@ trait LegacyPortWrapper extends js.Object {
   var `@enabled`: scala.Boolean
 }
 
+object LegacyPortWrapper {
+  @scala.inline
+  def apply($: scala.Double, `@enabled`: scala.Boolean): LegacyPortWrapper = {
+    val __obj = js.Dynamic.literal($ = $)
+    __obj.updateDynamic("@enabled")(`@enabled`)
+    __obj.asInstanceOf[LegacyPortWrapper]
+  }
+}
+

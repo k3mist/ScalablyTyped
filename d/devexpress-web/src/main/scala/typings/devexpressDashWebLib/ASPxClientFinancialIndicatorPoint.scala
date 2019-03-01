@@ -26,3 +26,17 @@ trait ASPxClientFinancialIndicatorPoint extends ASPxClientWebChartElement {
   var valueLevel: java.lang.String
 }
 
+object ASPxClientFinancialIndicatorPoint {
+  @scala.inline
+  def apply(
+    argument: js.Object,
+    chart: ASPxClientWebChart,
+    financialIndicator: ASPxClientFinancialIndicator,
+    valueLevel: java.lang.String
+  ): ASPxClientFinancialIndicatorPoint = {
+    val __obj = js.Dynamic.literal(argument = argument, chart = chart, financialIndicator = financialIndicator, valueLevel = valueLevel)
+  
+    __obj.asInstanceOf[ASPxClientFinancialIndicatorPoint]
+  }
+}
+

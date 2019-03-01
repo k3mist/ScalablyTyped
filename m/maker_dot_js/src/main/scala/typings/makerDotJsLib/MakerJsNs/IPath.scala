@@ -23,3 +23,12 @@ trait IPath extends js.Object {
   var `type`: java.lang.String
 }
 
+object IPath {
+  @scala.inline
+  def apply(origin: IPoint, `type`: java.lang.String, layer: java.lang.String = null): IPath = {
+    val __obj = js.Dynamic.literal(origin = origin, `type` = `type`)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    __obj.asInstanceOf[IPath]
+  }
+}
+

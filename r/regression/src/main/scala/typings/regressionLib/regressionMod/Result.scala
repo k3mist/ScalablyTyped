@@ -54,3 +54,18 @@ trait Result extends js.Object {
   def predict(x: scala.Double): DataPoint
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    equation: js.Array[scala.Double],
+    points: js.Array[DataPoint],
+    predict: js.Function1[scala.Double, DataPoint],
+    r2: scala.Double,
+    string: java.lang.String
+  ): Result = {
+    val __obj = js.Dynamic.literal(equation = equation, points = points, predict = predict, r2 = r2, string = string)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

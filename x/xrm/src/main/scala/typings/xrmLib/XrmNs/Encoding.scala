@@ -24,3 +24,15 @@ trait Encoding extends js.Object {
   def xmlEncode(arg: java.lang.String): java.lang.String
 }
 
+object Encoding {
+  @scala.inline
+  def apply(
+    xmlAttributeEncode: js.Function1[java.lang.String, java.lang.String],
+    xmlEncode: js.Function1[java.lang.String, java.lang.String]
+  ): Encoding = {
+    val __obj = js.Dynamic.literal(xmlAttributeEncode = xmlAttributeEncode, xmlEncode = xmlEncode)
+  
+    __obj.asInstanceOf[Encoding]
+  }
+}
+

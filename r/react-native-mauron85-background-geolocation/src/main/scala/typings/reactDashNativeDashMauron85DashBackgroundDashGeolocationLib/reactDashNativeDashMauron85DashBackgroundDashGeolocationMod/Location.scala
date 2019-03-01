@@ -30,3 +30,26 @@ trait Location extends js.Object {
   var time: scala.Double
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    accuracy: scala.Double,
+    altitude: scala.Double,
+    bearing: scala.Double,
+    id: scala.Double,
+    latitude: scala.Double,
+    locationProvider: scala.Double,
+    longitude: scala.Double,
+    provider: Provider,
+    speed: scala.Double,
+    time: scala.Double,
+    isFromMockProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    mockLocationsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Location = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, bearing = bearing, id = id, latitude = latitude, locationProvider = locationProvider, longitude = longitude, provider = provider, speed = speed, time = time)
+    if (!js.isUndefined(isFromMockProvider)) __obj.updateDynamic("isFromMockProvider")(isFromMockProvider)
+    if (!js.isUndefined(mockLocationsEnabled)) __obj.updateDynamic("mockLocationsEnabled")(mockLocationsEnabled)
+    __obj.asInstanceOf[Location]
+  }
+}
+

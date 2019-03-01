@@ -21,3 +21,28 @@ trait Frame extends js.Object {
   var y: scala.Double
 }
 
+object Frame {
+  @scala.inline
+  def apply(
+    data_length: scala.Double,
+    data_offset: scala.Double,
+    delay: scala.Double,
+    disposal: scala.Double,
+    has_local_palette: scala.Boolean,
+    height: scala.Double,
+    interlaced: scala.Boolean,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    palette_offset: scala.Int | scala.Double = null,
+    palette_size: scala.Int | scala.Double = null,
+    transparent_index: scala.Int | scala.Double = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal(data_length = data_length, data_offset = data_offset, delay = delay, disposal = disposal, has_local_palette = has_local_palette, height = height, interlaced = interlaced, width = width, x = x, y = y)
+    if (palette_offset != null) __obj.updateDynamic("palette_offset")(palette_offset.asInstanceOf[js.Any])
+    if (palette_size != null) __obj.updateDynamic("palette_size")(palette_size.asInstanceOf[js.Any])
+    if (transparent_index != null) __obj.updateDynamic("transparent_index")(transparent_index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+}
+

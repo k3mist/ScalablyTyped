@@ -16,3 +16,20 @@ trait ReadonlyMap[T] extends js.Object {
   def values(): Iterator[T]
 }
 
+object ReadonlyMap {
+  @scala.inline
+  def apply[T](
+    entries: js.Function0[Iterator[js.Tuple2[java.lang.String, T]]],
+    forEach: js.Function1[js.Function2[/* value */ T, /* key */ java.lang.String, scala.Unit], scala.Unit],
+    get: js.Function1[java.lang.String, js.UndefOr[T]],
+    has: js.Function1[java.lang.String, scala.Boolean],
+    keys: js.Function0[Iterator[java.lang.String]],
+    size: scala.Double,
+    values: js.Function0[Iterator[T]]
+  ): ReadonlyMap[T] = {
+    val __obj = js.Dynamic.literal(entries = entries, forEach = forEach, get = get, has = has, keys = keys, size = size, values = values)
+  
+    __obj.asInstanceOf[ReadonlyMap[T]]
+  }
+}
+

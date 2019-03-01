@@ -21,3 +21,16 @@ trait DeleteFile extends ResourceOperation {
   var uri: java.lang.String
 }
 
+object DeleteFile {
+  @scala.inline
+  def apply(
+    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesLibStrings.delete,
+    uri: java.lang.String,
+    options: DeleteFileOptions = null
+  ): DeleteFile = {
+    val __obj = js.Dynamic.literal(kind = kind, uri = uri)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[DeleteFile]
+  }
+}
+

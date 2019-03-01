@@ -11,3 +11,12 @@ trait PreAuthTx
   var weight: js.UndefOr[scala.Double]
 }
 
+object PreAuthTx {
+  @scala.inline
+  def apply(preAuthTx: nodeLib.Buffer, weight: scala.Int | scala.Double = null): PreAuthTx = {
+    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PreAuthTx]
+  }
+}
+

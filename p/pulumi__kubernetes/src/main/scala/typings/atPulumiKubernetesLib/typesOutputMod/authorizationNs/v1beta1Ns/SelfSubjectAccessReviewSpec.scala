@@ -20,3 +20,12 @@ trait SelfSubjectAccessReviewSpec extends js.Object {
   val resourceAttributes: ResourceAttributes
 }
 
+object SelfSubjectAccessReviewSpec {
+  @scala.inline
+  def apply(nonResourceAttributes: NonResourceAttributes, resourceAttributes: ResourceAttributes): SelfSubjectAccessReviewSpec = {
+    val __obj = js.Dynamic.literal(nonResourceAttributes = nonResourceAttributes, resourceAttributes = resourceAttributes)
+  
+    __obj.asInstanceOf[SelfSubjectAccessReviewSpec]
+  }
+}
+

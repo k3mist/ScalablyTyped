@@ -15,3 +15,20 @@ trait MapViewMouseWheelEvent extends js.Object {
   var y: scala.Double
 }
 
+object MapViewMouseWheelEvent {
+  @scala.inline
+  def apply(
+    deltaY: scala.Double,
+    native: js.Any,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): MapViewMouseWheelEvent = {
+    val __obj = js.Dynamic.literal(deltaY = deltaY, native = native, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[MapViewMouseWheelEvent]
+  }
+}
+

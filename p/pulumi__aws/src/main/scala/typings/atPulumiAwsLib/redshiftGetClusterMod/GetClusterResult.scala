@@ -121,3 +121,42 @@ trait GetClusterResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    allowVersionUpgrade: scala.Boolean,
+    automatedSnapshotRetentionPeriod: scala.Double,
+    availabilityZone: java.lang.String,
+    bucketName: java.lang.String,
+    clusterParameterGroupName: java.lang.String,
+    clusterPublicKey: java.lang.String,
+    clusterRevisionNumber: java.lang.String,
+    clusterSecurityGroups: js.Array[java.lang.String],
+    clusterSubnetGroupName: java.lang.String,
+    clusterType: java.lang.String,
+    clusterVersion: java.lang.String,
+    databaseName: java.lang.String,
+    elasticIp: java.lang.String,
+    enableLogging: scala.Boolean,
+    encrypted: scala.Boolean,
+    endpoint: java.lang.String,
+    enhancedVpcRouting: scala.Boolean,
+    iamRoles: js.Array[java.lang.String],
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    masterUsername: java.lang.String,
+    nodeType: java.lang.String,
+    numberOfNodes: scala.Double,
+    port: scala.Double,
+    preferredMaintenanceWindow: java.lang.String,
+    publiclyAccessible: scala.Boolean,
+    s3KeyPrefix: java.lang.String,
+    vpcId: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal(allowVersionUpgrade = allowVersionUpgrade, automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod, availabilityZone = availabilityZone, bucketName = bucketName, clusterParameterGroupName = clusterParameterGroupName, clusterPublicKey = clusterPublicKey, clusterRevisionNumber = clusterRevisionNumber, clusterSecurityGroups = clusterSecurityGroups, clusterSubnetGroupName = clusterSubnetGroupName, clusterType = clusterType, clusterVersion = clusterVersion, databaseName = databaseName, elasticIp = elasticIp, enableLogging = enableLogging, encrypted = encrypted, endpoint = endpoint, enhancedVpcRouting = enhancedVpcRouting, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, nodeType = nodeType, numberOfNodes = numberOfNodes, port = port, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, s3KeyPrefix = s3KeyPrefix, vpcId = vpcId, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

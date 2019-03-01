@@ -17,3 +17,20 @@ trait SyncfileAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.fileSync
 }
 
+object SyncfileAppender {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    `type`: log4jsLib.log4jsLibStrings.fileSync,
+    backups: scala.Int | scala.Double = null,
+    layout: Layout = null,
+    maxLogSize: scala.Double | java.lang.String = null
+  ): SyncfileAppender = {
+    val __obj = js.Dynamic.literal(filename = filename, `type` = `type`)
+    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyncfileAppender]
+  }
+}
+

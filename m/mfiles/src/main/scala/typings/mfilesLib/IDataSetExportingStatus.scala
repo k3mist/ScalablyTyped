@@ -11,3 +11,12 @@ trait IDataSetExportingStatus extends js.Object {
   val LatestActivity: ITimestamp
 }
 
+object IDataSetExportingStatus {
+  @scala.inline
+  def apply(CurrentServerTime: ITimestamp, IsExporting: scala.Boolean, LatestActivity: ITimestamp): IDataSetExportingStatus = {
+    val __obj = js.Dynamic.literal(CurrentServerTime = CurrentServerTime, IsExporting = IsExporting, LatestActivity = LatestActivity)
+  
+    __obj.asInstanceOf[IDataSetExportingStatus]
+  }
+}
+

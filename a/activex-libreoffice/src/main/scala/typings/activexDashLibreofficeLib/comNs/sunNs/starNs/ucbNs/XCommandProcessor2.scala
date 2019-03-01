@@ -17,3 +17,20 @@ trait XCommandProcessor2 extends XCommandProcessor {
   def releaseCommandIdentifier(CommandId: scala.Double): scala.Unit
 }
 
+object XCommandProcessor2 {
+  @scala.inline
+  def apply(
+    abort: js.Function1[scala.Double, scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    createCommandIdentifier: js.Function0[scala.Double],
+    execute: js.Function3[Command, scala.Double, XCommandEnvironment, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit]
+  ): XCommandProcessor2 = {
+    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, createCommandIdentifier = createCommandIdentifier, execute = execute, queryInterface = queryInterface, release = release, releaseCommandIdentifier = releaseCommandIdentifier)
+  
+    __obj.asInstanceOf[XCommandProcessor2]
+  }
+}
+

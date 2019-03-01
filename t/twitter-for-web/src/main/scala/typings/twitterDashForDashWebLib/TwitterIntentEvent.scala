@@ -27,3 +27,17 @@ trait TwitterIntentEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object TwitterIntentEvent {
+  @scala.inline
+  def apply(
+    data: TwitterIntentEventData,
+    region: java.lang.String,
+    target: stdLib.HTMLElement,
+    `type`: java.lang.String
+  ): TwitterIntentEvent = {
+    val __obj = js.Dynamic.literal(data = data, region = region, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[TwitterIntentEvent]
+  }
+}
+

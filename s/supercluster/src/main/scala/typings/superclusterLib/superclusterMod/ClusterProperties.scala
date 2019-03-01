@@ -24,3 +24,17 @@ trait ClusterProperties extends js.Object {
   var point_count_abbreviated: java.lang.String | scala.Double
 }
 
+object ClusterProperties {
+  @scala.inline
+  def apply(
+    cluster: superclusterLib.superclusterLibNumbers.`true`,
+    cluster_id: scala.Double,
+    point_count: scala.Double,
+    point_count_abbreviated: java.lang.String | scala.Double
+  ): ClusterProperties = {
+    val __obj = js.Dynamic.literal(cluster = cluster, cluster_id = cluster_id, point_count = point_count, point_count_abbreviated = point_count_abbreviated.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ClusterProperties]
+  }
+}
+

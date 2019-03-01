@@ -11,3 +11,12 @@ trait ComparisonParams extends ErrorParameters {
   var limit: scala.Double | java.lang.String
 }
 
+object ComparisonParams {
+  @scala.inline
+  def apply(comparison: java.lang.String, exclusive: scala.Boolean, limit: scala.Double | java.lang.String): ComparisonParams = {
+    val __obj = js.Dynamic.literal(comparison = comparison, exclusive = exclusive, limit = limit.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ComparisonParams]
+  }
+}
+

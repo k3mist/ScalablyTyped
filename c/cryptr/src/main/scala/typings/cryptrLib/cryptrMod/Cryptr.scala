@@ -12,3 +12,15 @@ trait Cryptr extends js.Object {
   def encrypt(value: java.lang.String): java.lang.String
 }
 
+object Cryptr {
+  @scala.inline
+  def apply(
+    decrypt: js.Function1[java.lang.String, java.lang.String],
+    encrypt: js.Function1[java.lang.String, java.lang.String]
+  ): Cryptr = {
+    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+  
+    __obj.asInstanceOf[Cryptr]
+  }
+}
+

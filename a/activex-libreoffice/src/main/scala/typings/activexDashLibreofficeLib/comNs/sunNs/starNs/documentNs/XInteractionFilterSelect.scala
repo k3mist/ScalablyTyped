@@ -32,3 +32,20 @@ trait XInteractionFilterSelect
   def setFilter(Name: java.lang.String): scala.Unit
 }
 
+object XInteractionFilterSelect {
+  @scala.inline
+  def apply(
+    Filter: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getFilter: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setFilter: js.Function1[java.lang.String, scala.Unit]
+  ): XInteractionFilterSelect = {
+    val __obj = js.Dynamic.literal(Filter = Filter, acquire = acquire, getFilter = getFilter, queryInterface = queryInterface, release = release, select = select, setFilter = setFilter)
+  
+    __obj.asInstanceOf[XInteractionFilterSelect]
+  }
+}
+

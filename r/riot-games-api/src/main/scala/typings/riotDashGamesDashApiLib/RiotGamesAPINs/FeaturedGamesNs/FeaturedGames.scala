@@ -10,3 +10,12 @@ trait FeaturedGames extends js.Object {
   var gameList: js.Array[FeaturedGameInfo]
 }
 
+object FeaturedGames {
+  @scala.inline
+  def apply(clientRefreshInterval: scala.Double, gameList: js.Array[FeaturedGameInfo]): FeaturedGames = {
+    val __obj = js.Dynamic.literal(clientRefreshInterval = clientRefreshInterval, gameList = gameList)
+  
+    __obj.asInstanceOf[FeaturedGames]
+  }
+}
+

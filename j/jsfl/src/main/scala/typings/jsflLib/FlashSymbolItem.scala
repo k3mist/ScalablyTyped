@@ -18,3 +18,23 @@ trait FlashSymbolItem extends js.Object {
   def exportSWF(outputURI: java.lang.String): scala.Unit
 }
 
+object FlashSymbolItem {
+  @scala.inline
+  def apply(
+    convertToCompiledClip: js.Function0[scala.Unit],
+    exportSWC: js.Function1[java.lang.String, scala.Unit],
+    exportSWF: js.Function1[java.lang.String, scala.Unit],
+    scalingGrid: scala.Boolean,
+    scalingGridRect: FlashRectangle,
+    sourceAutoUpdate: scala.Boolean,
+    sourceFilePath: java.lang.String,
+    sourceLibraryName: java.lang.String,
+    symbolType: java.lang.String,
+    timeline: FlashTimeline
+  ): FlashSymbolItem = {
+    val __obj = js.Dynamic.literal(convertToCompiledClip = convertToCompiledClip, exportSWC = exportSWC, exportSWF = exportSWF, scalingGrid = scalingGrid, scalingGridRect = scalingGridRect, sourceAutoUpdate = sourceAutoUpdate, sourceFilePath = sourceFilePath, sourceLibraryName = sourceLibraryName, symbolType = symbolType, timeline = timeline)
+  
+    __obj.asInstanceOf[FlashSymbolItem]
+  }
+}
+

@@ -14,3 +14,12 @@ trait CoreProviderParentApp extends js.Object {
   var manifestId: java.lang.String
 }
 
+object CoreProviderParentApp {
+  @scala.inline
+  def apply(config: freedomLib.Anon_ViewName, global: freedomLib.Anon_B, manifestId: java.lang.String): CoreProviderParentApp = {
+    val __obj = js.Dynamic.literal(config = config, global = global, manifestId = manifestId)
+  
+    __obj.asInstanceOf[CoreProviderParentApp]
+  }
+}
+

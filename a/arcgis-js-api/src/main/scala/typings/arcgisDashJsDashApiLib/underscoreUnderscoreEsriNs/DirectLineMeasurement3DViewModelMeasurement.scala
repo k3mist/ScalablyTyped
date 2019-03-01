@@ -33,3 +33,20 @@ trait DirectLineMeasurement3DViewModelMeasurement
   var verticalDistance: DirectLineMeasurement3DViewModelMeasurementValue
 }
 
+object DirectLineMeasurement3DViewModelMeasurement {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    directDistance: DirectLineMeasurement3DViewModelMeasurementValue,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    horizontalDistance: DirectLineMeasurement3DViewModelMeasurementValue,
+    measurementMode: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    verticalDistance: DirectLineMeasurement3DViewModelMeasurementValue
+  ): DirectLineMeasurement3DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(constructor = constructor, directDistance = directDistance, hasOwnProperty = hasOwnProperty, horizontalDistance = horizontalDistance, measurementMode = measurementMode, propertyIsEnumerable = propertyIsEnumerable, verticalDistance = verticalDistance)
+  
+    __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurement]
+  }
+}
+

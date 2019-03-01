@@ -26,3 +26,20 @@ trait SingleReference extends js.Object {
   var Sheet: scala.Double
 }
 
+object SingleReference {
+  @scala.inline
+  def apply(
+    Column: scala.Double,
+    Flags: scala.Double,
+    RelativeColumn: scala.Double,
+    RelativeRow: scala.Double,
+    RelativeSheet: scala.Double,
+    Row: scala.Double,
+    Sheet: scala.Double
+  ): SingleReference = {
+    val __obj = js.Dynamic.literal(Column = Column, Flags = Flags, RelativeColumn = RelativeColumn, RelativeRow = RelativeRow, RelativeSheet = RelativeSheet, Row = Row, Sheet = Sheet)
+  
+    __obj.asInstanceOf[SingleReference]
+  }
+}
+

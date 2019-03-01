@@ -11,3 +11,20 @@ import scala.scalajs.js.annotation._
   extends ReflectionObject
      with ContainerReflectionContainer[ReflectionObject]
 
+object ContainerReflectionObject {
+  @scala.inline
+  def apply(
+    children: js.Array[ReflectionObject],
+    flags: ReflectionFlagsObject,
+    id: scala.Double,
+    kind: scala.Double,
+    kindString: java.lang.String,
+    name: java.lang.String,
+    originalName: java.lang.String = null
+  ): ContainerReflectionObject = {
+    val __obj = js.Dynamic.literal(children = children, flags = flags, id = id, kind = kind, kindString = kindString, name = name)
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
+    __obj.asInstanceOf[ContainerReflectionObject]
+  }
+}
+

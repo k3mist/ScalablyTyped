@@ -16,3 +16,21 @@ trait DirectiveDefinitionNode
   val name: NameNode
 }
 
+object DirectiveDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.DirectiveDefinition,
+    locations: js.Array[NameNode],
+    name: NameNode,
+    arguments: js.Array[InputValueDefinitionNode] = null,
+    description: StringValueNode = null,
+    loc: Location = null
+  ): DirectiveDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, locations = locations, name = name)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[DirectiveDefinitionNode]
+  }
+}
+

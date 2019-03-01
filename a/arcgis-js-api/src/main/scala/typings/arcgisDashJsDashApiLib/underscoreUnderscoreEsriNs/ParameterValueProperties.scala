@@ -36,3 +36,13 @@ trait ParameterValueProperties extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ParameterValueProperties {
+  @scala.inline
+  def apply(dataType: java.lang.String = null, value: js.Any = null): ParameterValueProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ParameterValueProperties]
+  }
+}
+

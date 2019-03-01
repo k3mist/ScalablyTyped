@@ -37,3 +37,33 @@ trait DeploymentAttempt extends js.Object {
   var tasks: js.Array[ReleaseTask]
 }
 
+object DeploymentAttempt {
+  @scala.inline
+  def apply(
+    attempt: scala.Double,
+    deploymentId: scala.Double,
+    errorLog: java.lang.String,
+    hasStarted: scala.Boolean,
+    id: scala.Double,
+    issues: js.Array[Issue],
+    job: ReleaseTask,
+    lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastModifiedOn: stdLib.Date,
+    operationStatus: DeploymentOperationStatus,
+    postDeploymentGates: ReleaseGates,
+    preDeploymentGates: ReleaseGates,
+    queuedOn: stdLib.Date,
+    reason: DeploymentReason,
+    releaseDeployPhases: js.Array[ReleaseDeployPhase],
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    runPlanId: java.lang.String,
+    status: DeploymentStatus,
+    tasks: js.Array[ReleaseTask]
+  ): DeploymentAttempt = {
+    val __obj = js.Dynamic.literal(attempt = attempt, deploymentId = deploymentId, errorLog = errorLog, hasStarted = hasStarted, id = id, issues = issues, job = job, lastModifiedBy = lastModifiedBy, lastModifiedOn = lastModifiedOn, operationStatus = operationStatus, postDeploymentGates = postDeploymentGates, preDeploymentGates = preDeploymentGates, queuedOn = queuedOn, reason = reason, releaseDeployPhases = releaseDeployPhases, requestedBy = requestedBy, requestedFor = requestedFor, runPlanId = runPlanId, status = status, tasks = tasks)
+  
+    __obj.asInstanceOf[DeploymentAttempt]
+  }
+}
+

@@ -22,3 +22,17 @@ trait DrawCreateDrawOptions
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawCreateDrawOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mode: java.lang.String = null
+  ): DrawCreateDrawOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[DrawCreateDrawOptions]
+  }
+}
+

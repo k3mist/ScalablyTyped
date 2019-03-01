@@ -23,3 +23,29 @@ trait ShippableEnv
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShippableEnv {
+  @scala.inline
+  def apply(
+    branch: java.lang.String,
+    build: java.lang.String,
+    buildUrl: java.lang.String,
+    commit: java.lang.String,
+    isCi: envDashCiLib.envDashCiLibNumbers.`true`,
+    isPr: scala.Boolean,
+    job: java.lang.String,
+    name: envDashCiLib.envDashCiLibStrings.Shippable,
+    root: java.lang.String,
+    service: envDashCiLib.envDashCiLibStrings.shippable,
+    slug: java.lang.String,
+    pr: java.lang.String = null,
+    prBranch: java.lang.String = null,
+    tag: java.lang.String = null
+  ): ShippableEnv = {
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, job = job, name = name, root = root, service = service, slug = slug)
+    if (pr != null) __obj.updateDynamic("pr")(pr)
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[ShippableEnv]
+  }
+}
+

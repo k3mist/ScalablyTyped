@@ -12,3 +12,17 @@ trait Anon_Controller extends js.Object {
   var httpContext: java.lang.String
 }
 
+object Anon_Controller {
+  @scala.inline
+  def apply(
+    controller: java.lang.String,
+    controllerMethod: java.lang.String,
+    controllerParameter: java.lang.String,
+    httpContext: java.lang.String
+  ): Anon_Controller = {
+    val __obj = js.Dynamic.literal(controller = controller, controllerMethod = controllerMethod, controllerParameter = controllerParameter, httpContext = httpContext)
+  
+    __obj.asInstanceOf[Anon_Controller]
+  }
+}
+

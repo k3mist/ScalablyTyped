@@ -13,3 +13,18 @@ trait MaskOptions extends js.Object {
   var permanents: js.Array[scala.Double]
 }
 
+object MaskOptions {
+  @scala.inline
+  def apply(
+    alwaysShowMask: scala.Boolean,
+    formatChars: stdLib.Record[java.lang.String, java.lang.String],
+    mask: java.lang.String,
+    maskChar: java.lang.String,
+    permanents: js.Array[scala.Double]
+  ): MaskOptions = {
+    val __obj = js.Dynamic.literal(alwaysShowMask = alwaysShowMask, formatChars = formatChars, mask = mask, maskChar = maskChar, permanents = permanents)
+  
+    __obj.asInstanceOf[MaskOptions]
+  }
+}
+

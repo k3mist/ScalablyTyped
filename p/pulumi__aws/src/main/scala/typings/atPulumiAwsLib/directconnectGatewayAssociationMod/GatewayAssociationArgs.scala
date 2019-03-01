@@ -16,3 +16,15 @@ trait GatewayAssociationArgs extends js.Object {
   val vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object GatewayAssociationArgs {
+  @scala.inline
+  def apply(
+    dxGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): GatewayAssociationArgs = {
+    val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GatewayAssociationArgs]
+  }
+}
+

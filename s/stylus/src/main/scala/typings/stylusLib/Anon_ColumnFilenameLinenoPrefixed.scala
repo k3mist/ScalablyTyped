@@ -15,3 +15,20 @@ trait Anon_ColumnFilenameLinenoPrefixed extends js.Object {
   var `val`: java.lang.String
 }
 
+object Anon_ColumnFilenameLinenoPrefixed {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    prefixed: scala.Boolean,
+    string: java.lang.String,
+    `val`: java.lang.String
+  ): Anon_ColumnFilenameLinenoPrefixed = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, prefixed = prefixed, string = string, `val` = `val`)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameLinenoPrefixed]
+  }
+}
+

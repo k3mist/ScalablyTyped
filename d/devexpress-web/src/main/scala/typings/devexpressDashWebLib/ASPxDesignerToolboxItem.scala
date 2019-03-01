@@ -46,3 +46,20 @@ trait ASPxDesignerToolboxItem extends js.Object {
   var `type`: js.Any
 }
 
+object ASPxDesignerToolboxItem {
+  @scala.inline
+  def apply(
+    defaultVal: js.Object,
+    info: js.Array[ASPxDesignerElementSerializationInfo],
+    isToolboxItem: scala.Boolean,
+    popularProperties: js.Array[java.lang.String],
+    surfaceType: js.Any,
+    toolboxIndex: scala.Double,
+    `type`: js.Any
+  ): ASPxDesignerToolboxItem = {
+    val __obj = js.Dynamic.literal(defaultVal = defaultVal, info = info, isToolboxItem = isToolboxItem, popularProperties = popularProperties, surfaceType = surfaceType, toolboxIndex = toolboxIndex, `type` = `type`)
+  
+    __obj.asInstanceOf[ASPxDesignerToolboxItem]
+  }
+}
+

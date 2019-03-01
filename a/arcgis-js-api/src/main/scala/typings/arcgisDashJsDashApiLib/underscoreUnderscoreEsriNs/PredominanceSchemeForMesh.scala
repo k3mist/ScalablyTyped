@@ -28,3 +28,19 @@ trait PredominanceSchemeForMesh
   var opacity: scala.Double
 }
 
+object PredominanceSchemeForMesh {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    noDataColor: Color,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): PredominanceSchemeForMesh = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[PredominanceSchemeForMesh]
+  }
+}
+

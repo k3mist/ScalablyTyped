@@ -60,3 +60,26 @@ trait ExtensionManifest extends js.Object {
   var serviceInstanceType: java.lang.String
 }
 
+object ExtensionManifest {
+  @scala.inline
+  def apply(
+    baseUri: java.lang.String,
+    constraints: js.Array[ContributionConstraint],
+    contributionTypes: js.Array[ContributionType],
+    contributions: js.Array[Contribution],
+    demands: js.Array[java.lang.String],
+    eventCallbacks: ExtensionEventCallbackCollection,
+    fallbackBaseUri: java.lang.String,
+    language: java.lang.String,
+    licensing: ExtensionLicensing,
+    manifestVersion: scala.Double,
+    restrictedTo: js.Array[java.lang.String],
+    scopes: js.Array[java.lang.String],
+    serviceInstanceType: java.lang.String
+  ): ExtensionManifest = {
+    val __obj = js.Dynamic.literal(baseUri = baseUri, constraints = constraints, contributionTypes = contributionTypes, contributions = contributions, demands = demands, eventCallbacks = eventCallbacks, fallbackBaseUri = fallbackBaseUri, language = language, licensing = licensing, manifestVersion = manifestVersion, restrictedTo = restrictedTo, scopes = scopes, serviceInstanceType = serviceInstanceType)
+  
+    __obj.asInstanceOf[ExtensionManifest]
+  }
+}
+

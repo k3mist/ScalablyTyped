@@ -24,3 +24,16 @@ trait XEmbeddedScripts extends js.Object {
   var DialogLibraries: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XStorageBasedLibraryContainer
 }
 
+object XEmbeddedScripts {
+  @scala.inline
+  def apply(
+    AllowMacroExecution: scala.Boolean,
+    BasicLibraries: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XStorageBasedLibraryContainer,
+    DialogLibraries: activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XStorageBasedLibraryContainer
+  ): XEmbeddedScripts = {
+    val __obj = js.Dynamic.literal(AllowMacroExecution = AllowMacroExecution, BasicLibraries = BasicLibraries, DialogLibraries = DialogLibraries)
+  
+    __obj.asInstanceOf[XEmbeddedScripts]
+  }
+}
+

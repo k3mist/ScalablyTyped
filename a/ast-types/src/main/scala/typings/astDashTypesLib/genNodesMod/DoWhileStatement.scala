@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DoWhileStatement
 }
 
+object DoWhileStatement {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    test: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.DoWhileStatement
+  ): DoWhileStatement = {
+    val __obj = js.Dynamic.literal(body = body, test = test, `type` = `type`)
+  
+    __obj.asInstanceOf[DoWhileStatement]
+  }
+}
+

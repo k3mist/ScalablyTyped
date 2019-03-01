@@ -14,3 +14,17 @@ trait Batch extends js.Object {
   def _onComplete(): js.Any
 }
 
+object Batch {
+  @scala.inline
+  def apply(
+    _defer: scala.Boolean,
+    _expirationTime: ExpirationTime,
+    _onComplete: js.Function0[js.Any],
+    _next: Batch = null
+  ): Batch = {
+    val __obj = js.Dynamic.literal(_defer = _defer, _expirationTime = _expirationTime, _onComplete = _onComplete)
+    if (_next != null) __obj.updateDynamic("_next")(_next)
+    __obj.asInstanceOf[Batch]
+  }
+}
+

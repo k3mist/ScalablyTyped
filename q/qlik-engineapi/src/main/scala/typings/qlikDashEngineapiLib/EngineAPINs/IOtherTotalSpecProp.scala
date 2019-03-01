@@ -109,3 +109,25 @@ trait IOtherTotalSpecProp extends js.Object {
   var qTotalMode: TotalModeType
 }
 
+object IOtherTotalSpecProp {
+  @scala.inline
+  def apply(
+    qApplyEvenWhenPossiblyWrongResult: scala.Boolean,
+    qForceBadValueKeeping: scala.Boolean,
+    qGlobalOtherGrouping: scala.Boolean,
+    qOtherCollapseInnerDimensions: scala.Boolean,
+    qOtherCounted: java.lang.String,
+    qOtherLimit: java.lang.String,
+    qOtherLimitMode: OtherLimitModeType,
+    qOtherMode: OtherModeType,
+    qOtherSortMode: OtherSortModeType,
+    qReferencedExpression: java.lang.String,
+    qSuppressOther: scala.Boolean,
+    qTotalMode: TotalModeType
+  ): IOtherTotalSpecProp = {
+    val __obj = js.Dynamic.literal(qApplyEvenWhenPossiblyWrongResult = qApplyEvenWhenPossiblyWrongResult, qForceBadValueKeeping = qForceBadValueKeeping, qGlobalOtherGrouping = qGlobalOtherGrouping, qOtherCollapseInnerDimensions = qOtherCollapseInnerDimensions, qOtherCounted = qOtherCounted, qOtherLimit = qOtherLimit, qOtherLimitMode = qOtherLimitMode, qOtherMode = qOtherMode, qOtherSortMode = qOtherSortMode, qReferencedExpression = qReferencedExpression, qSuppressOther = qSuppressOther, qTotalMode = qTotalMode)
+  
+    __obj.asInstanceOf[IOtherTotalSpecProp]
+  }
+}
+

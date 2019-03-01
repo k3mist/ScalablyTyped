@@ -12,3 +12,12 @@ trait Size extends js.Object {
   var width: Dimension
 }
 
+object Size {
+  @scala.inline
+  def apply(height: Dimension, width: Dimension): Size = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[Size]
+  }
+}
+

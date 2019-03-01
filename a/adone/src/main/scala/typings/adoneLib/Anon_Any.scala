@@ -112,3 +112,99 @@ trait Anon_Any extends js.Object {
   def verifySchema(inputBuffer: stdLib.ArrayBuffer, inputSchema: js.Any): Anon_Result
 }
 
+object Anon_Any {
+  @scala.inline
+  def apply(
+    Any: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.AnyParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.Any
+    ],
+    BaseBlock: org.scalablytyped.runtime.Instantiable2[
+      /* parameters */ js.UndefOr[/* parameters */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams], 
+      /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.Any
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.BaseBlock[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]
+    ],
+    BitString: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.BitString
+    ],
+    BmpString: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BmpStringParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.BmpString
+    ],
+    Boolean: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Boolean],
+    CharacterString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.CharacterString],
+    Choice: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.ChoiceParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.Choice
+    ],
+    Constructed: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Constructed],
+    DATE: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.DATE],
+    DateTime: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.DateTime],
+    Duration: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Duration],
+    EndOfContent: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.EndOfContent],
+    Enumerated: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Enumerated],
+    GeneralString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.GeneralString],
+    GeneralizedTime: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.GeneralizedTime],
+    GraphicString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.GraphicString],
+    IA5String: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.IA5String],
+    INs: Anon_LocalBaseBlock,
+    Integer: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.Integer
+    ],
+    Null: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Null],
+    NumericString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.NumericString],
+    ObjectIdentifier: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalObjectIdentifierValueBlockParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.ObjectIdentifier
+    ],
+    OctetString: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalOctetStringValueBlockParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.OctetString
+    ],
+    Primitive: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Primitive],
+    PrintableString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.PrintableString],
+    RawData: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RawDataParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.RawData
+    ],
+    Repeated: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RepeatedParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.Repeated
+    ],
+    Sequence: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Sequence],
+    Set: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Set],
+    TIME: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TIME],
+    TeletexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TeletexString],
+    TimeOfDay: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TimeOfDay],
+    UTCTime: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UTCTimeParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.UTCTime
+    ],
+    UniversalString: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UniversalStringParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.UniversalString
+    ],
+    Utf8String: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.Utf8StringParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.Utf8String
+    ],
+    VideotexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VideotexString],
+    VisibleString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VisibleString],
+    compareSchema: js.Function3[js.Any, js.Any, js.Any, Anon_Result],
+    fromBER: js.Function1[stdLib.ArrayBuffer, Anon_Offset],
+    verifySchema: js.Function2[stdLib.ArrayBuffer, js.Any, Anon_Result]
+  ): Anon_Any = {
+    val __obj = js.Dynamic.literal(Any = Any, BaseBlock = BaseBlock, BitString = BitString, BmpString = BmpString, Boolean = Boolean, CharacterString = CharacterString, Choice = Choice, Constructed = Constructed, DATE = DATE, DateTime = DateTime, Duration = Duration, EndOfContent = EndOfContent, Enumerated = Enumerated, GeneralString = GeneralString, GeneralizedTime = GeneralizedTime, GraphicString = GraphicString, IA5String = IA5String, INs = INs, Integer = Integer, Null = Null, NumericString = NumericString, ObjectIdentifier = ObjectIdentifier, OctetString = OctetString, Primitive = Primitive, PrintableString = PrintableString, RawData = RawData, Repeated = Repeated, Sequence = Sequence, Set = Set, TIME = TIME, TeletexString = TeletexString, TimeOfDay = TimeOfDay, UTCTime = UTCTime, UniversalString = UniversalString, Utf8String = Utf8String, VideotexString = VideotexString, VisibleString = VisibleString, compareSchema = compareSchema, fromBER = fromBER, verifySchema = verifySchema)
+  
+    __obj.asInstanceOf[Anon_Any]
+  }
+}
+

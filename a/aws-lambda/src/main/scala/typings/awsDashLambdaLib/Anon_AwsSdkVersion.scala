@@ -10,3 +10,12 @@ trait Anon_AwsSdkVersion extends js.Object {
   var clientId: java.lang.String
 }
 
+object Anon_AwsSdkVersion {
+  @scala.inline
+  def apply(awsSdkVersion: java.lang.String, clientId: java.lang.String): Anon_AwsSdkVersion = {
+    val __obj = js.Dynamic.literal(awsSdkVersion = awsSdkVersion, clientId = clientId)
+  
+    __obj.asInstanceOf[Anon_AwsSdkVersion]
+  }
+}
+

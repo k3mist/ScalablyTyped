@@ -14,3 +14,19 @@ trait SpaceInfo extends js.Object {
   var used: scala.Double
 }
 
+object SpaceInfo {
+  @scala.inline
+  def apply(
+    available: scala.Double,
+    capacity: scala.Double,
+    filesystem: java.lang.String,
+    mountpoint: java.lang.String,
+    size: scala.Double,
+    used: scala.Double
+  ): SpaceInfo = {
+    val __obj = js.Dynamic.literal(available = available, capacity = capacity, filesystem = filesystem, mountpoint = mountpoint, size = size, used = used)
+  
+    __obj.asInstanceOf[SpaceInfo]
+  }
+}
+

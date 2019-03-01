@@ -17,3 +17,22 @@ trait DomMixin extends js.Object {
   var setInnerContent: js.Any
 }
 
+object DomMixin {
+  @scala.inline
+  def apply(
+    appendChildren: js.Any,
+    beforeEl: js.Any,
+    createBuffer: js.Any,
+    detachContents: js.Any,
+    detachEl: js.Any,
+    findEls: js.Any,
+    removeEl: js.Any,
+    replaceEl: js.Any,
+    setInnerContent: js.Any
+  ): DomMixin = {
+    val __obj = js.Dynamic.literal(appendChildren = appendChildren, beforeEl = beforeEl, createBuffer = createBuffer, detachContents = detachContents, detachEl = detachEl, findEls = findEls, removeEl = removeEl, replaceEl = replaceEl, setInnerContent = setInnerContent)
+  
+    __obj.asInstanceOf[DomMixin]
+  }
+}
+

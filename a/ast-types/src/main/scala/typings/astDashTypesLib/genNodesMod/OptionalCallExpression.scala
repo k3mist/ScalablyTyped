@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.OptionalCallExpression
 }
 
+object OptionalCallExpression {
+  @scala.inline
+  def apply(optional: scala.Boolean, `type`: astDashTypesLib.astDashTypesLibStrings.OptionalCallExpression): OptionalCallExpression = {
+    val __obj = js.Dynamic.literal(optional = optional, `type` = `type`)
+  
+    __obj.asInstanceOf[OptionalCallExpression]
+  }
+}
+

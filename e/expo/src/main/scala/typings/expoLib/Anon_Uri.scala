@@ -10,3 +10,12 @@ trait Anon_Uri
   var uri: java.lang.String
 }
 
+object Anon_Uri {
+  @scala.inline
+  def apply(uri: java.lang.String): Anon_Uri = {
+    val __obj = js.Dynamic.literal(uri = uri)
+  
+    __obj.asInstanceOf[Anon_Uri]
+  }
+}
+

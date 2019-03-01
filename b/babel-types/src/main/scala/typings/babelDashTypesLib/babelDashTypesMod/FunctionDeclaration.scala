@@ -25,3 +25,31 @@ trait FunctionDeclaration
   var type_FunctionDeclaration: babelDashTypesLib.babelDashTypesLibStrings.FunctionDeclaration
 }
 
+object FunctionDeclaration {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    body: BlockStatement,
+    end: scala.Double,
+    generator: scala.Boolean,
+    id: Identifier,
+    loc: SourceLocation,
+    params: js.Array[LVal],
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.FunctionDeclaration,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    returnType: TypeAnnotation = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration = null
+  ): FunctionDeclaration = {
+    val __obj = js.Dynamic.literal(async = async, body = body, end = end, generator = generator, id = id, loc = loc, params = params, start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[FunctionDeclaration]
+  }
+}
+

@@ -11,3 +11,18 @@ trait GriddleStyleConfig extends js.Object {
   var styles: js.UndefOr[GriddleStyleElements[reactLib.reactMod.ReactNs.CSSProperties]] = js.undefined
 }
 
+object GriddleStyleConfig {
+  @scala.inline
+  def apply(
+    classNames: GriddleStyleElements[java.lang.String] = null,
+    icons: GriddleStyleElements[GriddleStyleIcons] = null,
+    styles: GriddleStyleElements[reactLib.reactMod.ReactNs.CSSProperties] = null
+  ): GriddleStyleConfig = {
+    val __obj = js.Dynamic.literal()
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[GriddleStyleConfig]
+  }
+}
+

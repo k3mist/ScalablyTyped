@@ -37,3 +37,49 @@ trait InstanceGroupsResource extends js.Object {
   def setNamedPorts(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object InstanceGroupsResource {
+  @scala.inline
+  def apply(
+    addInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupList]
+    ],
+    listInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupsListInstances]
+    ],
+    removeInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setNamedPorts: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): InstanceGroupsResource = {
+    val __obj = js.Dynamic.literal(addInstances = addInstances, aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, listInstances = listInstances, removeInstances = removeInstances, setNamedPorts = setNamedPorts)
+  
+    __obj.asInstanceOf[InstanceGroupsResource]
+  }
+}
+

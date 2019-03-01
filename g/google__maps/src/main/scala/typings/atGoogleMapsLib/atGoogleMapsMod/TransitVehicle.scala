@@ -16,3 +16,12 @@ trait TransitVehicle extends js.Object {
   var `type`: VehicleType
 }
 
+object TransitVehicle {
+  @scala.inline
+  def apply(icon: java.lang.String, local_icon: java.lang.String, name: java.lang.String, `type`: VehicleType): TransitVehicle = {
+    val __obj = js.Dynamic.literal(icon = icon, local_icon = local_icon, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[TransitVehicle]
+  }
+}
+

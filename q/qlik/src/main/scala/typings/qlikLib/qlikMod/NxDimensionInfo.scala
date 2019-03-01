@@ -20,3 +20,37 @@ trait NxDimensionInfo extends ColumnInfo {
   var qTags: js.Array[java.lang.String]
 }
 
+object NxDimensionInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: js.Array[NxAttrDimInfo],
+    qAttrExprInfo: js.Array[NxAttrExprInfo],
+    qCardinal: java.lang.String,
+    qContinuousAxes: scala.Boolean,
+    qDerivedField: scala.Boolean,
+    qDimensionType: qlikLib.qlikLibStrings.D | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T,
+    qError: NxValidationError,
+    qFallbackTitle: java.lang.String,
+    qGroupFallbackTitles: js.Array[java.lang.String],
+    qGroupFieldDefs: js.Array[java.lang.String],
+    qGroupPos: scala.Double,
+    qGrouping: qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.H | qlikLib.qlikLibStrings.C,
+    qIsAutoFormat: scala.Boolean,
+    qIsCyclic: scala.Boolean,
+    qIsSemantic: scala.Boolean,
+    qLocker: java.lang.String,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qNumFormat: FieldAttributes,
+    qReverseSort: scala.Boolean,
+    qSortIndicator: qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.D,
+    qStateCounts: NxStateCounts,
+    qTags: js.Array[java.lang.String]
+  ): NxDimensionInfo = {
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qContinuousAxes = qContinuousAxes, qDerivedField = qDerivedField, qDimensionType = qDimensionType.asInstanceOf[js.Any], qError = qError, qFallbackTitle = qFallbackTitle, qGroupFallbackTitles = qGroupFallbackTitles, qGroupFieldDefs = qGroupFieldDefs, qGroupPos = qGroupPos, qGrouping = qGrouping.asInstanceOf[js.Any], qIsAutoFormat = qIsAutoFormat, qIsCyclic = qIsCyclic, qIsSemantic = qIsSemantic, qLocker = qLocker, qMax = qMax, qMin = qMin, qNumFormat = qNumFormat, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], qStateCounts = qStateCounts, qTags = qTags)
+  
+    __obj.asInstanceOf[NxDimensionInfo]
+  }
+}
+

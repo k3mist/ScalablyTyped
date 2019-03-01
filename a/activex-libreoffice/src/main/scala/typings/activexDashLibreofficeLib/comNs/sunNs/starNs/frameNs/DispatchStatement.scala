@@ -41,3 +41,18 @@ trait DispatchStatement extends js.Object {
   var nFlags: scala.Double
 }
 
+object DispatchStatement {
+  @scala.inline
+  def apply(
+    aArgs: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aCommand: java.lang.String,
+    aTarget: java.lang.String,
+    bIsComment: scala.Boolean,
+    nFlags: scala.Double
+  ): DispatchStatement = {
+    val __obj = js.Dynamic.literal(aArgs = aArgs, aCommand = aCommand, aTarget = aTarget, bIsComment = bIsComment, nFlags = nFlags)
+  
+    __obj.asInstanceOf[DispatchStatement]
+  }
+}
+

@@ -72,3 +72,28 @@ trait XAccessibleHyperlink extends XAccessibleAction {
   def isValid(): scala.Boolean
 }
 
+object XAccessibleHyperlink {
+  @scala.inline
+  def apply(
+    AccessibleActionCount: scala.Double,
+    EndIndex: scala.Double,
+    StartIndex: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    doAccessibleAction: js.Function1[scala.Double, scala.Boolean],
+    getAccessibleActionAnchor: js.Function1[scala.Double, js.Any],
+    getAccessibleActionCount: js.Function0[scala.Double],
+    getAccessibleActionDescription: js.Function1[scala.Double, java.lang.String],
+    getAccessibleActionKeyBinding: js.Function1[scala.Double, XAccessibleKeyBinding],
+    getAccessibleActionObject: js.Function1[scala.Double, js.Any],
+    getEndIndex: js.Function0[scala.Double],
+    getStartIndex: js.Function0[scala.Double],
+    isValid: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleHyperlink = {
+    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, EndIndex = EndIndex, StartIndex = StartIndex, acquire = acquire, doAccessibleAction = doAccessibleAction, getAccessibleActionAnchor = getAccessibleActionAnchor, getAccessibleActionCount = getAccessibleActionCount, getAccessibleActionDescription = getAccessibleActionDescription, getAccessibleActionKeyBinding = getAccessibleActionKeyBinding, getAccessibleActionObject = getAccessibleActionObject, getEndIndex = getEndIndex, getStartIndex = getStartIndex, isValid = isValid, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessibleHyperlink]
+  }
+}
+

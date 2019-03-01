@@ -19,3 +19,24 @@ trait Place extends js.Object {
   var url: java.lang.String
 }
 
+object Place {
+  @scala.inline
+  def apply(
+    attributes: PlaceAttribute,
+    bounding_box: geojsonLib.geojsonMod.Polygon,
+    contained_within: js.Array[Place],
+    country: java.lang.String,
+    country_code: java.lang.String,
+    full_name: java.lang.String,
+    geometry: geojsonLib.geojsonMod.Point,
+    id: java.lang.String,
+    name: java.lang.String,
+    place_type: java.lang.String,
+    url: java.lang.String
+  ): Place = {
+    val __obj = js.Dynamic.literal(attributes = attributes, bounding_box = bounding_box, contained_within = contained_within, country = country, country_code = country_code, full_name = full_name, geometry = geometry, id = id, name = name, place_type = place_type, url = url)
+  
+    __obj.asInstanceOf[Place]
+  }
+}
+

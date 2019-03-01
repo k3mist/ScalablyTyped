@@ -10,3 +10,21 @@ trait ZeroClipboardReadyEvent extends ZeroClipboardEvent {
   var version: java.lang.String
 }
 
+object ZeroClipboardReadyEvent {
+  @scala.inline
+  def apply(
+    currentTarget: stdLib.HTMLObjectElement,
+    message: java.lang.String,
+    relatedTarget: stdLib.HTMLElement,
+    target: stdLib.HTMLElement,
+    timeStamp: scala.Double,
+    `type`: java.lang.String,
+    version: java.lang.String,
+    client: ZeroClipboardClient = null
+  ): ZeroClipboardReadyEvent = {
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, message = message, relatedTarget = relatedTarget, target = target, timeStamp = timeStamp, `type` = `type`, version = version)
+    if (client != null) __obj.updateDynamic("client")(client)
+    __obj.asInstanceOf[ZeroClipboardReadyEvent]
+  }
+}
+

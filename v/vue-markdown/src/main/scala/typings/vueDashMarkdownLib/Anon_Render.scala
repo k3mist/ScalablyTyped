@@ -14,3 +14,19 @@ trait Anon_Render extends js.Object {
   var rules: Anon_Codeblock
 }
 
+object Anon_Render {
+  @scala.inline
+  def apply(
+    render: js.Any,
+    renderAttrs: js.Any,
+    renderInline: js.Any,
+    renderInlineAsText: js.Any,
+    renderToken: js.Any,
+    rules: Anon_Codeblock
+  ): Anon_Render = {
+    val __obj = js.Dynamic.literal(render = render, renderAttrs = renderAttrs, renderInline = renderInline, renderInlineAsText = renderInlineAsText, renderToken = renderToken, rules = rules)
+  
+    __obj.asInstanceOf[Anon_Render]
+  }
+}
+

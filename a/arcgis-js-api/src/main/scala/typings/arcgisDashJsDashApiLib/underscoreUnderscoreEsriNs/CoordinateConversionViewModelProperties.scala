@@ -56,3 +56,28 @@ trait CoordinateConversionViewModelProperties extends GoToProperties {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object CoordinateConversionViewModelProperties {
+  @scala.inline
+  def apply(
+    conversions: CollectionProperties[Conversion] = null,
+    currentLocation: PointProperties = null,
+    formats: CollectionProperties[Format] = null,
+    goToOverride: GoToOverride = null,
+    locationSymbol: SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties = null,
+    mode: java.lang.String = null,
+    requestDelay: scala.Int | scala.Double = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): CoordinateConversionViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
+    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation)
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (locationSymbol != null) __obj.updateDynamic("locationSymbol")(locationSymbol.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (requestDelay != null) __obj.updateDynamic("requestDelay")(requestDelay.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoordinateConversionViewModelProperties]
+  }
+}
+

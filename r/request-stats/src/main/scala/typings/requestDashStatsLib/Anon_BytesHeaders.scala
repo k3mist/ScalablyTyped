@@ -24,3 +24,17 @@ trait Anon_BytesHeaders extends js.Object {
   var status: scala.Double
 }
 
+object Anon_BytesHeaders {
+  @scala.inline
+  def apply(
+    bytes: scala.Double,
+    headers: nodeLib.httpMod.OutgoingHttpHeaders,
+    raw: nodeLib.httpMod.ServerResponse,
+    status: scala.Double
+  ): Anon_BytesHeaders = {
+    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, raw = raw, status = status)
+  
+    __obj.asInstanceOf[Anon_BytesHeaders]
+  }
+}
+

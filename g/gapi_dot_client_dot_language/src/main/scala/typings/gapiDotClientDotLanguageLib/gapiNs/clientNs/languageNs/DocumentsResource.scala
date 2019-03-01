@@ -32,3 +32,33 @@ trait DocumentsResource extends js.Object {
   def annotateText(request: gapiDotClientDotLanguageLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[AnnotateTextResponse]
 }
 
+object DocumentsResource {
+  @scala.inline
+  def apply(
+    analyzeEntities: js.Function1[
+      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitiesResponse]
+    ],
+    analyzeEntitySentiment: js.Function1[
+      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeEntitySentimentResponse]
+    ],
+    analyzeSentiment: js.Function1[
+      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSentimentResponse]
+    ],
+    analyzeSyntax: js.Function1[
+      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnalyzeSyntaxResponse]
+    ],
+    annotateText: js.Function1[
+      gapiDotClientDotLanguageLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnnotateTextResponse]
+    ]
+  ): DocumentsResource = {
+    val __obj = js.Dynamic.literal(analyzeEntities = analyzeEntities, analyzeEntitySentiment = analyzeEntitySentiment, analyzeSentiment = analyzeSentiment, analyzeSyntax = analyzeSyntax, annotateText = annotateText)
+  
+    __obj.asInstanceOf[DocumentsResource]
+  }
+}
+

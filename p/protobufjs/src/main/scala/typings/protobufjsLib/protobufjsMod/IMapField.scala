@@ -10,3 +10,19 @@ trait IMapField extends IField {
   var keyType: java.lang.String
 }
 
+object IMapField {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    keyType: java.lang.String,
+    `type`: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    rule: java.lang.String = null
+  ): IMapField = {
+    val __obj = js.Dynamic.literal(id = id, keyType = keyType, `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[IMapField]
+  }
+}
+

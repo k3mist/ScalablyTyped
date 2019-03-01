@@ -15,3 +15,20 @@ trait Table
   var type_Table: mdastLib.mdastLibStrings.table
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    children: js.Array[TableContent],
+    `type`: mdastLib.mdastLibStrings.table,
+    align: js.Array[AlignType] = null,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null
+  ): Table = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Table]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Viewport extends js.Object {
   var top: scala.Double
 }
 
+object Viewport {
+  @scala.inline
+  def apply(bottom: scala.Double, leftPx: scala.Double, rightPx: scala.Double, top: scala.Double): Viewport = {
+    val __obj = js.Dynamic.literal(bottom = bottom, leftPx = leftPx, rightPx = rightPx, top = top)
+  
+    __obj.asInstanceOf[Viewport]
+  }
+}
+

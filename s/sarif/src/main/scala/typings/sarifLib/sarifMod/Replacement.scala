@@ -20,3 +20,13 @@ trait Replacement extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Replacement {
+  @scala.inline
+  def apply(deletedRegion: Region, insertedContent: ArtifactContent = null, properties: PropertyBag = null): Replacement = {
+    val __obj = js.Dynamic.literal(deletedRegion = deletedRegion)
+    if (insertedContent != null) __obj.updateDynamic("insertedContent")(insertedContent)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Replacement]
+  }
+}
+

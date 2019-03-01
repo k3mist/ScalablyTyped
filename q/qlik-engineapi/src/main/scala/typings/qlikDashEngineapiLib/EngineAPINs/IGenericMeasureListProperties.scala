@@ -14,3 +14,12 @@ trait IGenericMeasureListProperties extends IGenericProperties {
   var qMeasureListDef: IMeasureListDef
 }
 
+object IGenericMeasureListProperties {
+  @scala.inline
+  def apply(qInfo: IGenericMeassureListNxInfo, qMeasureListDef: IMeasureListDef): IGenericMeasureListProperties = {
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qMeasureListDef = qMeasureListDef)
+  
+    __obj.asInstanceOf[IGenericMeasureListProperties]
+  }
+}
+

@@ -34,3 +34,18 @@ trait NestedAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object NestedAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, NestedAggregation],
+    aggregation: js.Function1[Aggregation, NestedAggregation],
+    path: js.Function1[java.lang.String, NestedAggregation],
+    toJSON: js.Function0[js.Any]
+  ): NestedAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, path = path, toJSON = toJSON)
+  
+    __obj.asInstanceOf[NestedAggregation]
+  }
+}
+

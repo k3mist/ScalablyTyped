@@ -38,3 +38,18 @@ trait ToolbarAndroidProps extends js.Object {
   var overflowIconName: java.lang.String
 }
 
+object ToolbarAndroidProps {
+  @scala.inline
+  def apply(
+    iconColor: java.lang.String,
+    iconSize: scala.Double,
+    logoName: java.lang.String,
+    navIconName: java.lang.String,
+    overflowIconName: java.lang.String
+  ): ToolbarAndroidProps = {
+    val __obj = js.Dynamic.literal(iconColor = iconColor, iconSize = iconSize, logoName = logoName, navIconName = navIconName, overflowIconName = overflowIconName)
+  
+    __obj.asInstanceOf[ToolbarAndroidProps]
+  }
+}
+

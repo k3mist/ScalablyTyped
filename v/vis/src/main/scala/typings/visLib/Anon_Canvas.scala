@@ -10,3 +10,12 @@ trait Anon_Canvas extends js.Object {
   var canvas: visLib.visMod.Position
 }
 
+object Anon_Canvas {
+  @scala.inline
+  def apply(DOM: visLib.visMod.Position, canvas: visLib.visMod.Position): Anon_Canvas = {
+    val __obj = js.Dynamic.literal(DOM = DOM, canvas = canvas)
+  
+    __obj.asInstanceOf[Anon_Canvas]
+  }
+}
+

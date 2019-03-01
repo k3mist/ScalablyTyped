@@ -33,3 +33,27 @@ trait RequestTelemetry
   var url: java.lang.String
 }
 
+object RequestTelemetry {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    name: java.lang.String,
+    resultCode: java.lang.String | scala.Double,
+    success: scala.Boolean,
+    url: java.lang.String,
+    contextObjects: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    source: java.lang.String = null,
+    tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    time: stdLib.Date = null
+  ): RequestTelemetry = {
+    val __obj = js.Dynamic.literal(duration = duration, name = name, resultCode = resultCode.asInstanceOf[js.Any], success = success, url = url)
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[RequestTelemetry]
+  }
+}
+

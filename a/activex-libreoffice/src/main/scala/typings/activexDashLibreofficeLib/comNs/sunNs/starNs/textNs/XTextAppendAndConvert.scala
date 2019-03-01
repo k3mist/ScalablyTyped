@@ -11,3 +11,75 @@ trait XTextAppendAndConvert
      with XTextContentAppend
      with XTextConvert
 
+object XTextAppendAndConvert {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    appendTextContent: js.Function2[
+      XTextContent, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange
+    ],
+    appendTextPortion: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange
+    ],
+    convertToTable: js.Function4[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.sequence[XTextRange]]
+      ], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+      ], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextTable
+    ],
+    convertToTextFrame: js.Function3[
+      XTextRange, 
+      XTextRange, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextContent
+    ],
+    createTextCursor: js.Function0[XTextCursor],
+    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
+    finishParagraph: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange],
+    finishParagraphInsert: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
+    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
+    insertTextContent: js.Function3[XTextRange, XTextContent, scala.Boolean, scala.Unit],
+    insertTextContentWithProperties: js.Function3[
+      XTextContent, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    insertTextPortion: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextContent: js.Function1[XTextContent, scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XTextAppendAndConvert = {
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, appendTextContent = appendTextContent, appendTextPortion = appendTextPortion, convertToTable = convertToTable, convertToTextFrame = convertToTextFrame, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, finishParagraph = finishParagraph, finishParagraphInsert = finishParagraphInsert, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, insertTextContentWithProperties = insertTextContentWithProperties, insertTextPortion = insertTextPortion, queryInterface = queryInterface, release = release, removeTextContent = removeTextContent, setString = setString)
+  
+    __obj.asInstanceOf[XTextAppendAndConvert]
+  }
+}
+

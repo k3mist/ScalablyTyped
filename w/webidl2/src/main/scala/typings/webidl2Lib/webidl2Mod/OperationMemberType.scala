@@ -29,3 +29,24 @@ trait OperationMemberType
   var `type`: webidl2Lib.webidl2LibStrings.operation
 }
 
+object OperationMemberType {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Argument],
+    deleter: scala.Boolean,
+    extAttrs: js.Array[ExtendedAttributes],
+    getter: scala.Boolean,
+    setter: scala.Boolean,
+    static: scala.Boolean,
+    stringifier: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.operation,
+    idlType: IDLTypeDescription = null,
+    name: java.lang.String = null
+  ): OperationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments, deleter = deleter, extAttrs = extAttrs, getter = getter, setter = setter, static = static, stringifier = stringifier, `type` = `type`)
+    if (idlType != null) __obj.updateDynamic("idlType")(idlType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[OperationMemberType]
+  }
+}
+

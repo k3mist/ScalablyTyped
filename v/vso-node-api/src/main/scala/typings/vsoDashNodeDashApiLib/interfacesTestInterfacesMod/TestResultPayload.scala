@@ -11,3 +11,12 @@ trait TestResultPayload extends js.Object {
   var stream: java.lang.String
 }
 
+object TestResultPayload {
+  @scala.inline
+  def apply(comment: java.lang.String, name: java.lang.String, stream: java.lang.String): TestResultPayload = {
+    val __obj = js.Dynamic.literal(comment = comment, name = name, stream = stream)
+  
+    __obj.asInstanceOf[TestResultPayload]
+  }
+}
+

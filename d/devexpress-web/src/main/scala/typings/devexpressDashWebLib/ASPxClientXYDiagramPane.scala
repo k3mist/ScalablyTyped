@@ -17,3 +17,17 @@ trait ASPxClientXYDiagramPane extends ASPxClientWebChartElementNamed {
   var title: ASPxClientPaneTitle
 }
 
+object ASPxClientXYDiagramPane {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    diagram: ASPxClientXYDiagram,
+    name: java.lang.String,
+    title: ASPxClientPaneTitle
+  ): ASPxClientXYDiagramPane = {
+    val __obj = js.Dynamic.literal(chart = chart, diagram = diagram, name = name, title = title)
+  
+    __obj.asInstanceOf[ASPxClientXYDiagramPane]
+  }
+}
+

@@ -16,3 +16,21 @@ trait SectionHeaderItem extends js.Object {
   def setTitle(title: java.lang.String): SectionHeaderItem
 }
 
+object SectionHeaderItem {
+  @scala.inline
+  def apply(
+    duplicate: js.Function0[SectionHeaderItem],
+    getHelpText: js.Function0[java.lang.String],
+    getId: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getTitle: js.Function0[java.lang.String],
+    getType: js.Function0[ItemType],
+    setHelpText: js.Function1[java.lang.String, SectionHeaderItem],
+    setTitle: js.Function1[java.lang.String, SectionHeaderItem]
+  ): SectionHeaderItem = {
+    val __obj = js.Dynamic.literal(duplicate = duplicate, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, setHelpText = setHelpText, setTitle = setTitle)
+  
+    __obj.asInstanceOf[SectionHeaderItem]
+  }
+}
+

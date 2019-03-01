@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | scala.Null
 }
 
+object ClassImplements {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassImplements,
+    superClass: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
+  ): ClassImplements = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[ClassImplements]
+  }
+}
+

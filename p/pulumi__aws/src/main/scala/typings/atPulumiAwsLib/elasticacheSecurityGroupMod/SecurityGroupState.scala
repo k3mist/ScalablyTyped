@@ -23,3 +23,18 @@ trait SecurityGroupState extends js.Object {
   ] = js.undefined
 }
 
+object SecurityGroupState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    securityGroupNames: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): SecurityGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecurityGroupState]
+  }
+}
+

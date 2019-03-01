@@ -35,3 +35,16 @@ trait ConditionalColorScaleCriteria extends js.Object {
   var minimum: ConditionalColorScaleCriterion
 }
 
+object ConditionalColorScaleCriteria {
+  @scala.inline
+  def apply(
+    maximum: ConditionalColorScaleCriterion,
+    minimum: ConditionalColorScaleCriterion,
+    midpoint: ConditionalColorScaleCriterion = null
+  ): ConditionalColorScaleCriteria = {
+    val __obj = js.Dynamic.literal(maximum = maximum, minimum = minimum)
+    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint)
+    __obj.asInstanceOf[ConditionalColorScaleCriteria]
+  }
+}
+

@@ -19,3 +19,20 @@ trait XInteractionRequestStringResolver
   def getStringFromInformationalRequest(Request: XInteractionRequest): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]
 }
 
+object XInteractionRequestStringResolver {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getStringFromInformationalRequest: js.Function1[
+      XInteractionRequest, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInteractionRequestStringResolver = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getStringFromInformationalRequest = getStringFromInformationalRequest, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInteractionRequestStringResolver]
+  }
+}
+

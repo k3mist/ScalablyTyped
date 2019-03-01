@@ -58,3 +58,36 @@ trait FleetArgs extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object FleetArgs {
+  @scala.inline
+  def apply(
+    launchTemplateConfig: atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType
+    ],
+    targetCapacitySpecification: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity],
+    excessCapacityTerminationPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    onDemandOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationStrategyInput] = null,
+    replaceUnhealthyInstances: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    spotOptions: atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_AllocationStrategyInstanceInterruptionBehaviorInstancePoolsToUseCount
+    ] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    terminateInstances: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    terminateInstancesWithExpiration: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): FleetArgs = {
+    val __obj = js.Dynamic.literal(launchTemplateConfig = launchTemplateConfig.asInstanceOf[js.Any], targetCapacitySpecification = targetCapacitySpecification.asInstanceOf[js.Any])
+    if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
+    if (onDemandOptions != null) __obj.updateDynamic("onDemandOptions")(onDemandOptions.asInstanceOf[js.Any])
+    if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])
+    if (spotOptions != null) __obj.updateDynamic("spotOptions")(spotOptions.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (terminateInstances != null) __obj.updateDynamic("terminateInstances")(terminateInstances.asInstanceOf[js.Any])
+    if (terminateInstancesWithExpiration != null) __obj.updateDynamic("terminateInstancesWithExpiration")(terminateInstancesWithExpiration.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FleetArgs]
+  }
+}
+

@@ -149,3 +149,36 @@ trait PlaceDetailsResult extends js.Object {
   var website: java.lang.String
 }
 
+object PlaceDetailsResult {
+  @scala.inline
+  def apply(
+    address_components: js.Array[AddressComponent],
+    adr_address: java.lang.String,
+    alt_ids: js.Array[AlternativePlaceId],
+    formatted_address: java.lang.String,
+    formatted_phone_number: java.lang.String,
+    geometry: AddressGeometry,
+    icon: java.lang.String,
+    international_phone_number: java.lang.String,
+    name: java.lang.String,
+    opening_hours: OpeningHours,
+    permanently_closed: scala.Boolean,
+    photos: js.Array[PlacePhoto],
+    place_id: java.lang.String,
+    plus_code: PlusCode,
+    price_level: scala.Double,
+    rating: scala.Double,
+    reviews: js.Array[PlaceReview],
+    scope: PlaceIdScope,
+    types: js.Array[AddressType],
+    url: java.lang.String,
+    utc_offset: scala.Double,
+    vicinity: scala.Double,
+    website: java.lang.String
+  ): PlaceDetailsResult = {
+    val __obj = js.Dynamic.literal(address_components = address_components, adr_address = adr_address, alt_ids = alt_ids, formatted_address = formatted_address, formatted_phone_number = formatted_phone_number, geometry = geometry, icon = icon, international_phone_number = international_phone_number, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, reviews = reviews, scope = scope, types = types, url = url, utc_offset = utc_offset, vicinity = vicinity, website = website)
+  
+    __obj.asInstanceOf[PlaceDetailsResult]
+  }
+}
+

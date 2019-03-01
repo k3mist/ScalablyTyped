@@ -10,3 +10,12 @@ trait SecretBox extends js.Object {
   var mac: stdLib.Uint8Array
 }
 
+object SecretBox {
+  @scala.inline
+  def apply(cipher: stdLib.Uint8Array, mac: stdLib.Uint8Array): SecretBox = {
+    val __obj = js.Dynamic.literal(cipher = cipher, mac = mac)
+  
+    __obj.asInstanceOf[SecretBox]
+  }
+}
+

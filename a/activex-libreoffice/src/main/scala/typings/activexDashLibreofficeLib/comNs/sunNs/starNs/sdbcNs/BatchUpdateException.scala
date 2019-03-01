@@ -17,3 +17,19 @@ trait BatchUpdateException extends SQLException {
   var UpdateCounts: activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object BatchUpdateException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorCode: scala.Double,
+    Message: java.lang.String,
+    NextException: js.Any,
+    SQLState: java.lang.String,
+    UpdateCounts: activexDashInteropLib.SafeArray[scala.Double]
+  ): BatchUpdateException = {
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message, NextException = NextException, SQLState = SQLState, UpdateCounts = UpdateCounts)
+  
+    __obj.asInstanceOf[BatchUpdateException]
+  }
+}
+

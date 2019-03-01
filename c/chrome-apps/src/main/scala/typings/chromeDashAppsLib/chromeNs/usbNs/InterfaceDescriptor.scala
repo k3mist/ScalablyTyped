@@ -31,3 +31,21 @@ trait InterfaceDescriptor extends js.Object {
   var interfaceSubclass: chromeDashAppsLib.chromeNs.integer
 }
 
+object InterfaceDescriptor {
+  @scala.inline
+  def apply(
+    alternateSetting: chromeDashAppsLib.chromeNs.integer,
+    endpoints: js.Array[EndpointDescriptor],
+    extra_data: stdLib.ArrayBuffer,
+    interfaceClass: chromeDashAppsLib.chromeNs.integer,
+    interfaceNumber: chromeDashAppsLib.chromeNs.integer,
+    interfaceProtocol: chromeDashAppsLib.chromeNs.integer,
+    interfaceSubclass: chromeDashAppsLib.chromeNs.integer,
+    description: java.lang.String = null
+  ): InterfaceDescriptor = {
+    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting, endpoints = endpoints, extra_data = extra_data, interfaceClass = interfaceClass, interfaceNumber = interfaceNumber, interfaceProtocol = interfaceProtocol, interfaceSubclass = interfaceSubclass)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[InterfaceDescriptor]
+  }
+}
+

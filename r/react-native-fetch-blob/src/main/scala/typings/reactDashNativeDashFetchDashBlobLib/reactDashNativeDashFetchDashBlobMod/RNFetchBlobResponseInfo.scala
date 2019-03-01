@@ -14,3 +14,19 @@ trait RNFetchBlobResponseInfo extends js.Object {
   var taskId: java.lang.String
 }
 
+object RNFetchBlobResponseInfo {
+  @scala.inline
+  def apply(
+    headers: js.Any,
+    respType: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.text | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.blob | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.Empty | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.json,
+    rnfbEncode: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.path | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.base64 | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.ascii | reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibStrings.utf8,
+    state: scala.Double,
+    status: scala.Double,
+    taskId: java.lang.String
+  ): RNFetchBlobResponseInfo = {
+    val __obj = js.Dynamic.literal(headers = headers, respType = respType.asInstanceOf[js.Any], rnfbEncode = rnfbEncode.asInstanceOf[js.Any], state = state, status = status, taskId = taskId)
+  
+    __obj.asInstanceOf[RNFetchBlobResponseInfo]
+  }
+}
+

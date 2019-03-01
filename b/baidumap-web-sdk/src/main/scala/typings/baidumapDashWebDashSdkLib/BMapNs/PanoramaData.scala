@@ -13,3 +13,18 @@ trait PanoramaData extends js.Object {
   var tiles: PanoramaTileData
 }
 
+object PanoramaData {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    links: js.Array[PanoramaLink],
+    position: Point,
+    tiles: PanoramaTileData
+  ): PanoramaData = {
+    val __obj = js.Dynamic.literal(description = description, id = id, links = links, position = position, tiles = tiles)
+  
+    __obj.asInstanceOf[PanoramaData]
+  }
+}
+

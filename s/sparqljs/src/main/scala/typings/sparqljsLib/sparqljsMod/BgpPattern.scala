@@ -13,3 +13,12 @@ trait BgpPattern
   var `type`: sparqljsLib.sparqljsLibStrings.bgp
 }
 
+object BgpPattern {
+  @scala.inline
+  def apply(triples: js.Array[Triple], `type`: sparqljsLib.sparqljsLibStrings.bgp): BgpPattern = {
+    val __obj = js.Dynamic.literal(triples = triples, `type` = `type`)
+  
+    __obj.asInstanceOf[BgpPattern]
+  }
+}
+

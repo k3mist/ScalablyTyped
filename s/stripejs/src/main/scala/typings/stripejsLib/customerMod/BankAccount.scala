@@ -59,3 +59,26 @@ trait BankAccount extends js.Object {
   var status: stripejsLib.stripejsLibStrings.`new` | stripejsLib.stripejsLibStrings.validated | stripejsLib.stripejsLibStrings.verified | stripejsLib.stripejsLibStrings.verification_failed | stripejsLib.stripejsLibStrings.errored
 }
 
+object BankAccount {
+  @scala.inline
+  def apply(
+    account_holder_name: java.lang.String,
+    account_holder_type: stripejsLib.stripejsLibStrings.individual | stripejsLib.stripejsLibStrings.company,
+    bank_name: java.lang.String,
+    country: java.lang.String,
+    currency: java.lang.String,
+    customer: java.lang.String,
+    fingerprint: java.lang.String,
+    id: java.lang.String,
+    last4: java.lang.String,
+    metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `object`: stripejsLib.stripejsLibStrings.bank_account,
+    routing_number: java.lang.String,
+    status: stripejsLib.stripejsLibStrings.`new` | stripejsLib.stripejsLibStrings.validated | stripejsLib.stripejsLibStrings.verified | stripejsLib.stripejsLibStrings.verification_failed | stripejsLib.stripejsLibStrings.errored
+  ): BankAccount = {
+    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name, account_holder_type = account_holder_type.asInstanceOf[js.Any], bank_name = bank_name, country = country, currency = currency, customer = customer, fingerprint = fingerprint, id = id, last4 = last4, metadata = metadata, `object` = `object`, routing_number = routing_number, status = status.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BankAccount]
+  }
+}
+

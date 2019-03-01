@@ -13,3 +13,18 @@ trait Response extends js.Object {
   var window: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    current: scala.Double,
+    key: java.lang.String,
+    limit: scala.Double,
+    over: scala.Boolean,
+    window: scala.Double
+  ): Response = {
+    val __obj = js.Dynamic.literal(current = current, key = key, limit = limit, over = over, window = window)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

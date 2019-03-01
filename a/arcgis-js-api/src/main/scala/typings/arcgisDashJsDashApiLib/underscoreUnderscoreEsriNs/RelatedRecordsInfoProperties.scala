@@ -20,3 +20,16 @@ trait RelatedRecordsInfoProperties extends js.Object {
   var showRelatedRecords: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RelatedRecordsInfoProperties {
+  @scala.inline
+  def apply(
+    orderByFields: js.Array[FieldOrderProperties] = null,
+    showRelatedRecords: js.UndefOr[scala.Boolean] = js.undefined
+  ): RelatedRecordsInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields)
+    if (!js.isUndefined(showRelatedRecords)) __obj.updateDynamic("showRelatedRecords")(showRelatedRecords)
+    __obj.asInstanceOf[RelatedRecordsInfoProperties]
+  }
+}
+

@@ -13,3 +13,18 @@ trait CardHeader extends js.Object {
   def setTitle(title: java.lang.String): CardHeader
 }
 
+object CardHeader {
+  @scala.inline
+  def apply(
+    setImageAltText: js.Function1[java.lang.String, CardHeader],
+    setImageStyle: js.Function1[ImageStyle, CardHeader],
+    setImageUrl: js.Function1[java.lang.String, CardHeader],
+    setSubtitle: js.Function1[java.lang.String, CardHeader],
+    setTitle: js.Function1[java.lang.String, CardHeader]
+  ): CardHeader = {
+    val __obj = js.Dynamic.literal(setImageAltText = setImageAltText, setImageStyle = setImageStyle, setImageUrl = setImageUrl, setSubtitle = setSubtitle, setTitle = setTitle)
+  
+    __obj.asInstanceOf[CardHeader]
+  }
+}
+

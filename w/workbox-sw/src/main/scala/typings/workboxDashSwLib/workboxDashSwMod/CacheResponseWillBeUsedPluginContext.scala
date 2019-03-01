@@ -12,3 +12,17 @@ trait CacheResponseWillBeUsedPluginContext extends js.Object {
   val request: stdLib.Request
 }
 
+object CacheResponseWillBeUsedPluginContext {
+  @scala.inline
+  def apply(
+    cacheName: java.lang.String,
+    cachedResponse: stdLib.Response,
+    matchOptions: js.Any,
+    request: stdLib.Request
+  ): CacheResponseWillBeUsedPluginContext = {
+    val __obj = js.Dynamic.literal(cacheName = cacheName, cachedResponse = cachedResponse, matchOptions = matchOptions, request = request)
+  
+    __obj.asInstanceOf[CacheResponseWillBeUsedPluginContext]
+  }
+}
+

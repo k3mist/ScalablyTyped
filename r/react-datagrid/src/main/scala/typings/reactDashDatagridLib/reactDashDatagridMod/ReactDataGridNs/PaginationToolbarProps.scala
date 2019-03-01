@@ -22,3 +22,18 @@ trait PaginationToolbarProps extends js.Object {
   var showRefreshIcon: scala.Boolean
 }
 
+object PaginationToolbarProps {
+  @scala.inline
+  def apply(
+    iconProps: reactDashDatagridLib.Anon_DisabledStyle,
+    iconSize: scala.Double,
+    pageSizes: js.Array[scala.Double],
+    showPageSize: scala.Boolean,
+    showRefreshIcon: scala.Boolean
+  ): PaginationToolbarProps = {
+    val __obj = js.Dynamic.literal(iconProps = iconProps, iconSize = iconSize, pageSizes = pageSizes, showPageSize = showPageSize, showRefreshIcon = showRefreshIcon)
+  
+    __obj.asInstanceOf[PaginationToolbarProps]
+  }
+}
+

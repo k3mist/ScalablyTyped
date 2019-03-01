@@ -19,3 +19,16 @@ trait UnsupportedDataSinkException
   var Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object UnsupportedDataSinkException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): UnsupportedDataSinkException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Sink = Sink)
+  
+    __obj.asInstanceOf[UnsupportedDataSinkException]
+  }
+}
+

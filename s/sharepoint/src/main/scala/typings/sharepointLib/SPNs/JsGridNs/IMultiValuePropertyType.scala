@@ -16,3 +16,30 @@ trait IMultiValuePropertyType extends IPropertyType {
   def LocStrToLocStrArray(locStr: java.lang.String): js.Array[java.lang.String]
 }
 
+object IMultiValuePropertyType {
+  @scala.inline
+  def apply(
+    BeginValidateNormalizeConvert: js.Function6[
+      scala.Double, 
+      java.lang.String, 
+      js.Any, 
+      scala.Boolean, 
+      js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], 
+      js.Any, 
+      scala.Unit
+    ],
+    GetSerializableMultiValuePropType: js.Function0[sharepointLib.Anon_BDelayInit],
+    ID: java.lang.String,
+    InitSingleValuePropType: js.Function0[scala.Unit],
+    LocStrArrayToLocStr: js.Function1[js.Array[java.lang.String], java.lang.String],
+    LocStrToLocStrArray: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    bMultiValue: scala.Boolean,
+    separator: java.lang.String,
+    singleValuePropType: java.lang.String
+  ): IMultiValuePropertyType = {
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, GetSerializableMultiValuePropType = GetSerializableMultiValuePropType, ID = ID, InitSingleValuePropType = InitSingleValuePropType, LocStrArrayToLocStr = LocStrArrayToLocStr, LocStrToLocStrArray = LocStrToLocStrArray, bMultiValue = bMultiValue, separator = separator, singleValuePropType = singleValuePropType)
+  
+    __obj.asInstanceOf[IMultiValuePropertyType]
+  }
+}
+

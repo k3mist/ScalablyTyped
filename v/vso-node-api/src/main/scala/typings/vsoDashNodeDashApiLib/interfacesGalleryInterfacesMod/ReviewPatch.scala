@@ -20,3 +20,12 @@ trait ReviewPatch extends js.Object {
   var reviewItem: Review
 }
 
+object ReviewPatch {
+  @scala.inline
+  def apply(operation: ReviewPatchOperation, reportedConcern: UserReportedConcern, reviewItem: Review): ReviewPatch = {
+    val __obj = js.Dynamic.literal(operation = operation, reportedConcern = reportedConcern, reviewItem = reviewItem)
+  
+    __obj.asInstanceOf[ReviewPatch]
+  }
+}
+

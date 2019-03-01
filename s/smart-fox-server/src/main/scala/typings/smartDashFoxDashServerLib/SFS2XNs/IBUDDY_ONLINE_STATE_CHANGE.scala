@@ -10,3 +10,12 @@ trait IBUDDY_ONLINE_STATE_CHANGE extends js.Object {
   var isItMe: scala.Boolean
 }
 
+object IBUDDY_ONLINE_STATE_CHANGE {
+  @scala.inline
+  def apply(buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy, isItMe: scala.Boolean): IBUDDY_ONLINE_STATE_CHANGE = {
+    val __obj = js.Dynamic.literal(buddy = buddy, isItMe = isItMe)
+  
+    __obj.asInstanceOf[IBUDDY_ONLINE_STATE_CHANGE]
+  }
+}
+

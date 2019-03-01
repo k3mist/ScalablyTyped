@@ -119,3 +119,34 @@ trait _Impl extends js.Object {
   def onShow(`this`: semanticDashUiDashDimmerLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    className: semanticDashUiDashDimmerLib.SemanticUINs.DimmerNs.ClassNameSettings,
+    closable: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.auto | scala.Boolean,
+    debug: scala.Boolean,
+    dimmerName: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibNumbers.`false` | java.lang.String,
+    duration: scala.Double | semanticDashUiDashDimmerLib.SemanticUINs.DimmerNs.DurationSettings,
+    error: semanticDashUiDashDimmerLib.SemanticUINs.DimmerNs.ErrorSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    on: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibNumbers.`false` | semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.hover | semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.click,
+    onChange: js.Function1[semanticDashUiDashDimmerLib.JQuery, scala.Unit],
+    onHide: js.Function1[semanticDashUiDashDimmerLib.JQuery, scala.Unit],
+    onShow: js.Function1[semanticDashUiDashDimmerLib.JQuery, scala.Unit],
+    opacity: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.auto | scala.Double,
+    performance: scala.Boolean,
+    selector: semanticDashUiDashDimmerLib.SemanticUINs.DimmerNs.SelectorSettings,
+    silent: scala.Boolean,
+    template: semanticDashUiDashDimmerLib.SemanticUINs.DimmerNs.TemplateSettings,
+    transition: java.lang.String,
+    useCSS: scala.Boolean,
+    variation: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibNumbers.`false` | java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], debug = debug, dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onChange = onChange, onHide = onHide, onShow = onShow, opacity = opacity.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, template = template, transition = transition, useCSS = useCSS, variation = variation.asInstanceOf[js.Any], verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ArrayPattern
 }
 
+object ArrayPattern {
+  @scala.inline
+  def apply(
+    elements: js.Array[
+      astDashTypesLib.genKindsMod.PatternKind | astDashTypesLib.genKindsMod.SpreadElementKind | scala.Null
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ArrayPattern
+  ): ArrayPattern = {
+    val __obj = js.Dynamic.literal(elements = elements, `type` = `type`)
+  
+    __obj.asInstanceOf[ArrayPattern]
+  }
+}
+

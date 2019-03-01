@@ -16,3 +16,25 @@ trait XVolatileBitmap extends XBitmap {
   def isValid(): scala.Boolean
 }
 
+object XVolatileBitmap {
+  @scala.inline
+  def apply(
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    acquire: js.Function0[scala.Unit],
+    getScaledBitmap: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, 
+      scala.Boolean, 
+      XBitmap
+    ],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
+    hasAlpha: js.Function0[scala.Boolean],
+    isValid: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XVolatileBitmap = {
+    val __obj = js.Dynamic.literal(Size = Size, acquire = acquire, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, isValid = isValid, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XVolatileBitmap]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_Files
   var files: stdLib.FileList
 }
 
+object Anon_Files {
+  @scala.inline
+  def apply(
+    files: stdLib.FileList,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Files = {
+    val __obj = js.Dynamic.literal(files = files)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Files]
+  }
+}
+

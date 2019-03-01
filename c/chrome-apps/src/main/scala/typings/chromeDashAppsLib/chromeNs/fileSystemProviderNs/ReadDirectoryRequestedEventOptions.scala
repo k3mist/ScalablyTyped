@@ -40,3 +40,22 @@ trait ReadDirectoryRequestedEventOptions
   var thumbnail: scala.Boolean
 }
 
+object ReadDirectoryRequestedEventOptions {
+  @scala.inline
+  def apply(
+    directoryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    isDirectory: scala.Boolean,
+    mimeType: scala.Boolean,
+    modificationTime: scala.Boolean,
+    name: scala.Boolean,
+    requestId: chromeDashAppsLib.chromeNs.integer,
+    size: scala.Boolean,
+    thumbnail: scala.Boolean
+  ): ReadDirectoryRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(directoryPath = directoryPath, fileSystemId = fileSystemId, isDirectory = isDirectory, mimeType = mimeType, modificationTime = modificationTime, name = name, requestId = requestId, size = size, thumbnail = thumbnail)
+  
+    __obj.asInstanceOf[ReadDirectoryRequestedEventOptions]
+  }
+}
+

@@ -39,3 +39,23 @@ trait Token extends js.Object {
   val value: js.UndefOr[java.lang.String]
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    end: scala.Double,
+    kind: graphqlLib.languageLexerMod.TokenKindEnum,
+    line: scala.Double,
+    start: scala.Double,
+    next: Token = null,
+    prev: Token = null,
+    value: java.lang.String = null
+  ): Token = {
+    val __obj = js.Dynamic.literal(column = column, end = end, kind = kind, line = line, start = start)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Token]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_Autocomplete extends js.Object {
   var searchName: java.lang.String
 }
 
+object Anon_Autocomplete {
+  @scala.inline
+  def apply(
+    autocomplete: java.lang.String,
+    lang: Anon_Cancel,
+    onCancel: js.Any,
+    onChange: js.Any,
+    onClear: js.Any,
+    onSubmit: js.Any,
+    placeholder: java.lang.String,
+    searchName: java.lang.String
+  ): Anon_Autocomplete = {
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, lang = lang, onCancel = onCancel, onChange = onChange, onClear = onClear, onSubmit = onSubmit, placeholder = placeholder, searchName = searchName)
+  
+    __obj.asInstanceOf[Anon_Autocomplete]
+  }
+}
+

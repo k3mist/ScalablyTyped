@@ -23,3 +23,24 @@ trait XVclContainerPeer
   ): scala.Unit
 }
 
+object XVclContainerPeer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    enableDialogControl: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setGroup: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow], scala.Unit],
+    setTabOrder: js.Function3[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XWindow], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Boolean, 
+      scala.Unit
+    ]
+  ): XVclContainerPeer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, enableDialogControl = enableDialogControl, queryInterface = queryInterface, release = release, setGroup = setGroup, setTabOrder = setTabOrder)
+  
+    __obj.asInstanceOf[XVclContainerPeer]
+  }
+}
+

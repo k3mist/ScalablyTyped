@@ -10,3 +10,12 @@ trait Breakpoint extends js.Object {
   var size: karmaDashViewportLib.Anon_Height
 }
 
+object Breakpoint {
+  @scala.inline
+  def apply(name: java.lang.String, size: karmaDashViewportLib.Anon_Height): Breakpoint = {
+    val __obj = js.Dynamic.literal(name = name, size = size)
+  
+    __obj.asInstanceOf[Breakpoint]
+  }
+}
+

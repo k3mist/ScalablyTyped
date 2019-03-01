@@ -11,3 +11,12 @@ trait Anon_Lang extends js.Object {
   var withCredentials: scala.Boolean
 }
 
+object Anon_Lang {
+  @scala.inline
+  def apply(lang: java.lang.String, timeout: scala.Double, withCredentials: scala.Boolean): Anon_Lang = {
+    val __obj = js.Dynamic.literal(lang = lang, timeout = timeout, withCredentials = withCredentials)
+  
+    __obj.asInstanceOf[Anon_Lang]
+  }
+}
+

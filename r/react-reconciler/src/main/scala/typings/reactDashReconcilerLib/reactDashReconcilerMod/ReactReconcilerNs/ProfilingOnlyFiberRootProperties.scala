@@ -15,3 +15,16 @@ trait ProfilingOnlyFiberRootProperties extends js.Object {
   var pendingInteractionMap: PendingInteractionMap
 }
 
+object ProfilingOnlyFiberRootProperties {
+  @scala.inline
+  def apply(
+    interactionThreadID: scala.Double,
+    memoizedInteractions: stdLib.Set[Interaction],
+    pendingInteractionMap: PendingInteractionMap
+  ): ProfilingOnlyFiberRootProperties = {
+    val __obj = js.Dynamic.literal(interactionThreadID = interactionThreadID, memoizedInteractions = memoizedInteractions, pendingInteractionMap = pendingInteractionMap)
+  
+    __obj.asInstanceOf[ProfilingOnlyFiberRootProperties]
+  }
+}
+

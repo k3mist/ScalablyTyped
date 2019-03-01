@@ -17,3 +17,22 @@ trait ILicenseStatus extends js.Object {
   def ClearLicenseCode(): scala.Unit
 }
 
+object ILicenseStatus {
+  @scala.inline
+  def apply(
+    ClearLicenseCode: js.Function0[scala.Unit],
+    EvaluationDaysLeft: scala.Double,
+    EvaluationMode: scala.Boolean,
+    Expired: scala.Boolean,
+    LicenseCode: java.lang.String,
+    NumOfConcurrentUserLicenses: scala.Double,
+    NumOfNamedUserLicenses: scala.Double,
+    NumOfReadonlyLicenses: scala.Double,
+    SerialNumber: java.lang.String
+  ): ILicenseStatus = {
+    val __obj = js.Dynamic.literal(ClearLicenseCode = ClearLicenseCode, EvaluationDaysLeft = EvaluationDaysLeft, EvaluationMode = EvaluationMode, Expired = Expired, LicenseCode = LicenseCode, NumOfConcurrentUserLicenses = NumOfConcurrentUserLicenses, NumOfNamedUserLicenses = NumOfNamedUserLicenses, NumOfReadonlyLicenses = NumOfReadonlyLicenses, SerialNumber = SerialNumber)
+  
+    __obj.asInstanceOf[ILicenseStatus]
+  }
+}
+

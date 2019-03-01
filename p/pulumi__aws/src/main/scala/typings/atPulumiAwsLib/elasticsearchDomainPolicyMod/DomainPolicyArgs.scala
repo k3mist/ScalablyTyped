@@ -16,3 +16,15 @@ trait DomainPolicyArgs extends js.Object {
   val domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object DomainPolicyArgs {
+  @scala.inline
+  def apply(
+    accessPolicies: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): DomainPolicyArgs = {
+    val __obj = js.Dynamic.literal(accessPolicies = accessPolicies.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DomainPolicyArgs]
+  }
+}
+

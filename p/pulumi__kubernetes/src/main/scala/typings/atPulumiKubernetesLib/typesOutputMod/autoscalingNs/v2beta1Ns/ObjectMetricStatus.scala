@@ -36,3 +36,18 @@ trait ObjectMetricStatus extends js.Object {
   val target: CrossVersionObjectReference
 }
 
+object ObjectMetricStatus {
+  @scala.inline
+  def apply(
+    averageValue: java.lang.String,
+    currentValue: java.lang.String,
+    metricName: java.lang.String,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    target: CrossVersionObjectReference
+  ): ObjectMetricStatus = {
+    val __obj = js.Dynamic.literal(averageValue = averageValue, currentValue = currentValue, metricName = metricName, selector = selector, target = target)
+  
+    __obj.asInstanceOf[ObjectMetricStatus]
+  }
+}
+

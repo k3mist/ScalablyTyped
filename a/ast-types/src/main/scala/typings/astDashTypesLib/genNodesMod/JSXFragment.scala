@@ -20,3 +20,19 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXFragment
 }
 
+object JSXFragment {
+  @scala.inline
+  def apply(
+    children: js.Array[
+      astDashTypesLib.genKindsMod.JSXElementKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind | astDashTypesLib.genKindsMod.JSXFragmentKind | astDashTypesLib.genKindsMod.JSXTextKind | astDashTypesLib.genKindsMod.LiteralKind
+    ],
+    closingElement: astDashTypesLib.genKindsMod.JSXClosingFragmentKind,
+    openingElement: astDashTypesLib.genKindsMod.JSXOpeningFragmentKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXFragment
+  ): JSXFragment = {
+    val __obj = js.Dynamic.literal(children = children, closingElement = closingElement, openingElement = openingElement, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXFragment]
+  }
+}
+

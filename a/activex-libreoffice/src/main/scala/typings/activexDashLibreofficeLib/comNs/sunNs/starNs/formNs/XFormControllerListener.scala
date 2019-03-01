@@ -26,3 +26,19 @@ trait XFormControllerListener
   def formDeactivated(rEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XFormControllerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    formActivated: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    formDeactivated: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFormControllerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, formActivated = formActivated, formDeactivated = formDeactivated, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFormControllerListener]
+  }
+}
+

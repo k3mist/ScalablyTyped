@@ -19,3 +19,18 @@ trait XRangeXMLConversion
   def convertRangeToXML(aRangeRepresentation: java.lang.String): java.lang.String
 }
 
+object XRangeXMLConversion {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertRangeFromXML: js.Function1[java.lang.String, java.lang.String],
+    convertRangeToXML: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRangeXMLConversion = {
+    val __obj = js.Dynamic.literal(acquire = acquire, convertRangeFromXML = convertRangeFromXML, convertRangeToXML = convertRangeToXML, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XRangeXMLConversion]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TOriginData extends js.Object {
   var success: scala.Boolean
 }
 
+object TOriginData {
+  @scala.inline
+  def apply(result: js.Any, success: scala.Boolean): TOriginData = {
+    val __obj = js.Dynamic.literal(result = result, success = success)
+  
+    __obj.asInstanceOf[TOriginData]
+  }
+}
+

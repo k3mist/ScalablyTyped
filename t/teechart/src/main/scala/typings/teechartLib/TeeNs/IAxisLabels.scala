@@ -22,3 +22,26 @@ trait IAxisLabels extends js.Object {
   def width(value: scala.Double): scala.Double
 }
 
+object IAxisLabels {
+  @scala.inline
+  def apply(
+    alternate: scala.Boolean,
+    chart: IChart,
+    dateFormat: java.lang.String,
+    decimals: scala.Double,
+    format: IFormat,
+    getLabel: js.Function1[scala.Double, java.lang.String],
+    labelStyle: java.lang.String,
+    maxWidth: scala.Double,
+    padding: scala.Double,
+    rotation: scala.Double,
+    separation: scala.Double,
+    visible: scala.Boolean,
+    width: js.Function1[scala.Double, scala.Double]
+  ): IAxisLabels = {
+    val __obj = js.Dynamic.literal(alternate = alternate, chart = chart, dateFormat = dateFormat, decimals = decimals, format = format, getLabel = getLabel, labelStyle = labelStyle, maxWidth = maxWidth, padding = padding, rotation = rotation, separation = separation, visible = visible, width = width)
+  
+    __obj.asInstanceOf[IAxisLabels]
+  }
+}
+

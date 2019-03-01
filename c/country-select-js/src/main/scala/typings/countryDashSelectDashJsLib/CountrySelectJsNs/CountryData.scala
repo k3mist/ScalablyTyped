@@ -10,3 +10,12 @@ trait CountryData extends js.Object {
   var name: java.lang.String
 }
 
+object CountryData {
+  @scala.inline
+  def apply(iso2: java.lang.String, name: java.lang.String): CountryData = {
+    val __obj = js.Dynamic.literal(iso2 = iso2, name = name)
+  
+    __obj.asInstanceOf[CountryData]
+  }
+}
+

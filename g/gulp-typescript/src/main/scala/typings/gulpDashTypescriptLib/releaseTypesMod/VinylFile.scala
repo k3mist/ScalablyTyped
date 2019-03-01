@@ -17,3 +17,23 @@ trait VinylFile extends js.Object {
   var stem: java.lang.String
 }
 
+object VinylFile {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    basename: java.lang.String,
+    cwd: java.lang.String,
+    dirname: java.lang.String,
+    extname: java.lang.String,
+    path: java.lang.String,
+    stem: java.lang.String,
+    contents: nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream = null,
+    sourceMap: js.Any = null
+  ): VinylFile = {
+    val __obj = js.Dynamic.literal(base = base, basename = basename, cwd = cwd, dirname = dirname, extname = extname, path = path, stem = stem)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.asInstanceOf[VinylFile]
+  }
+}
+

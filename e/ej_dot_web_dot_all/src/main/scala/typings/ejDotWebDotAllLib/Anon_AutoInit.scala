@@ -20,3 +20,20 @@ trait Anon_AutoInit extends js.Object {
   ): scala.Unit
 }
 
+object Anon_AutoInit {
+  @scala.inline
+  def apply(
+    autoInit: scala.Boolean,
+    destroyAll: js.Function1[stdLib.Element, scala.Unit],
+    init: js.Function1[stdLib.Element, scala.Unit],
+    register: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit],
+    registerInstance: js.Function4[stdLib.Element, java.lang.String, java.lang.String, js.Any, scala.Unit],
+    registeredInstances: js.Array[_],
+    registeredWidgets: js.Array[_]
+  ): Anon_AutoInit = {
+    val __obj = js.Dynamic.literal(autoInit = autoInit, destroyAll = destroyAll, init = init, register = register, registerInstance = registerInstance, registeredInstances = registeredInstances, registeredWidgets = registeredWidgets)
+  
+    __obj.asInstanceOf[Anon_AutoInit]
+  }
+}
+

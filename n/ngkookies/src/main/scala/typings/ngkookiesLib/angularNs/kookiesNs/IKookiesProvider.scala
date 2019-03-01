@@ -12,3 +12,17 @@ trait IKookiesProvider extends js.Object {
   def setDefaults(options: Options): scala.Unit
 }
 
+object IKookiesProvider {
+  @scala.inline
+  def apply(
+    config: Config,
+    defaults: Options,
+    setConfig: js.Function1[Config, scala.Unit],
+    setDefaults: js.Function1[Options, scala.Unit]
+  ): IKookiesProvider = {
+    val __obj = js.Dynamic.literal(config = config, defaults = defaults, setConfig = setConfig, setDefaults = setDefaults)
+  
+    __obj.asInstanceOf[IKookiesProvider]
+  }
+}
+

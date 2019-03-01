@@ -34,3 +34,20 @@ trait DimensionalDefinitionProperties extends js.Object {
   var variableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DimensionalDefinitionProperties {
+  @scala.inline
+  def apply(
+    dimensionName: java.lang.String = null,
+    isSlice: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.Array[_] = null,
+    variableName: java.lang.String = null
+  ): DimensionalDefinitionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName)
+    if (!js.isUndefined(isSlice)) __obj.updateDynamic("isSlice")(isSlice)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (variableName != null) __obj.updateDynamic("variableName")(variableName)
+    __obj.asInstanceOf[DimensionalDefinitionProperties]
+  }
+}
+

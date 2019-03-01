@@ -46,3 +46,31 @@ trait DialogContext extends js.Object {
   def setType(dialogType: java.lang.String): scala.Unit
 }
 
+object DialogContext {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    enableButtons: js.Function1[scala.Boolean, scala.Unit],
+    getButton: js.Function1[java.lang.String, jqueryLib.JQuery[stdLib.HTMLElement]],
+    getData: js.Function1[java.lang.String, js.Any],
+    getModal: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalBody: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalContent: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalDialog: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalFooter: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalHeader: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getTitle: js.Function0[java.lang.String],
+    open: js.Function0[scala.Unit],
+    realize: js.Function0[scala.Unit],
+    setClosable: js.Function1[scala.Boolean, scala.Unit],
+    setData: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setMessage: js.Function1[java.lang.String, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    setType: js.Function1[java.lang.String, scala.Unit]
+  ): DialogContext = {
+    val __obj = js.Dynamic.literal(close = close, enableButtons = enableButtons, getButton = getButton, getData = getData, getModal = getModal, getModalBody = getModalBody, getModalContent = getModalContent, getModalDialog = getModalDialog, getModalFooter = getModalFooter, getModalHeader = getModalHeader, getTitle = getTitle, open = open, realize = realize, setClosable = setClosable, setData = setData, setMessage = setMessage, setTitle = setTitle, setType = setType)
+  
+    __obj.asInstanceOf[DialogContext]
+  }
+}
+

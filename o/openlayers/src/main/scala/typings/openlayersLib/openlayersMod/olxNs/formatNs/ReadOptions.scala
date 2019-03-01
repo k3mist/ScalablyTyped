@@ -10,3 +10,15 @@ trait ReadOptions extends js.Object {
   var featureProjection: openlayersLib.openlayersMod.ProjectionLike
 }
 
+object ReadOptions {
+  @scala.inline
+  def apply(
+    dataProjection: openlayersLib.openlayersMod.ProjectionLike,
+    featureProjection: openlayersLib.openlayersMod.ProjectionLike
+  ): ReadOptions = {
+    val __obj = js.Dynamic.literal(dataProjection = dataProjection.asInstanceOf[js.Any], featureProjection = featureProjection.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ReadOptions]
+  }
+}
+

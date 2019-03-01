@@ -54,3 +54,24 @@ trait Fingerprint extends js.Object {
   def murmurhash3_32_gc(key: java.lang.String, seed: scala.Double): scala.Double
 }
 
+object Fingerprint {
+  @scala.inline
+  def apply(
+    get: js.Function0[scala.Double],
+    getCanvasFingerprint: js.Function0[java.lang.String],
+    getIEPluginsString: js.Function0[java.lang.String],
+    getPluginsString: js.Function0[java.lang.String],
+    getRegularPluginsString: js.Function0[java.lang.String],
+    getScreenResolution: js.Function0[js.Array[scala.Double]],
+    hasLocalStorage: js.Function0[scala.Boolean],
+    hasSessionStorage: js.Function0[scala.Boolean],
+    isCanvasSupported: js.Function0[scala.Boolean],
+    isIE: js.Function0[scala.Boolean],
+    murmurhash3_32_gc: js.Function2[java.lang.String, scala.Double, scala.Double]
+  ): Fingerprint = {
+    val __obj = js.Dynamic.literal(get = get, getCanvasFingerprint = getCanvasFingerprint, getIEPluginsString = getIEPluginsString, getPluginsString = getPluginsString, getRegularPluginsString = getRegularPluginsString, getScreenResolution = getScreenResolution, hasLocalStorage = hasLocalStorage, hasSessionStorage = hasSessionStorage, isCanvasSupported = isCanvasSupported, isIE = isIE, murmurhash3_32_gc = murmurhash3_32_gc)
+  
+    __obj.asInstanceOf[Fingerprint]
+  }
+}
+

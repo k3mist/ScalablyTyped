@@ -16,3 +16,28 @@ trait GriddleExtensibility extends js.Object {
   var styleConfig: js.UndefOr[GriddleStyleConfig] = js.undefined
 }
 
+object GriddleExtensibility {
+  @scala.inline
+  def apply(
+    components: GriddleComponents = null,
+    events: GriddleEvents = null,
+    listeners: PropertyBag[griddleDashReactLib.Listener] = null,
+    reducer: PropertyBag[griddleDashReactLib.Reducer] = null,
+    renderProperties: GriddleRenderProperties = null,
+    selectors: PropertyBag[griddleDashReactLib.Selector] = null,
+    settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
+    styleConfig: GriddleStyleConfig = null
+  ): GriddleExtensibility = {
+    val __obj = js.Dynamic.literal()
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (reducer != null) __obj.updateDynamic("reducer")(reducer)
+    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects)
+    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig)
+    __obj.asInstanceOf[GriddleExtensibility]
+  }
+}
+

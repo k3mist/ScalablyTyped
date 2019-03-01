@@ -48,3 +48,54 @@ trait ToggleButton extends js.Object {
   def setWidth(width: java.lang.String): ToggleButton
 }
 
+object ToggleButton {
+  @scala.inline
+  def apply(
+    addBlurHandler: js.Function1[Handler, ToggleButton],
+    addClickHandler: js.Function1[Handler, ToggleButton],
+    addFocusHandler: js.Function1[Handler, ToggleButton],
+    addKeyDownHandler: js.Function1[Handler, ToggleButton],
+    addKeyPressHandler: js.Function1[Handler, ToggleButton],
+    addKeyUpHandler: js.Function1[Handler, ToggleButton],
+    addMouseDownHandler: js.Function1[Handler, ToggleButton],
+    addMouseMoveHandler: js.Function1[Handler, ToggleButton],
+    addMouseOutHandler: js.Function1[Handler, ToggleButton],
+    addMouseOverHandler: js.Function1[Handler, ToggleButton],
+    addMouseUpHandler: js.Function1[Handler, ToggleButton],
+    addMouseWheelHandler: js.Function1[Handler, ToggleButton],
+    addStyleDependentName: js.Function1[java.lang.String, ToggleButton],
+    addStyleName: js.Function1[java.lang.String, ToggleButton],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, ToggleButton],
+    setDown: js.Function1[scala.Boolean, ToggleButton],
+    setEnabled: js.Function1[scala.Boolean, ToggleButton],
+    setFocus: js.Function1[scala.Boolean, ToggleButton],
+    setHTML: js.Function1[java.lang.String, ToggleButton],
+    setHeight: js.Function1[java.lang.String, ToggleButton],
+    setId: js.Function1[java.lang.String, ToggleButton],
+    setLayoutData: js.Function1[js.Object, ToggleButton],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      ToggleButton
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, ToggleButton],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, ToggleButton],
+    setStyleAttributes: js.Function1[js.Object, ToggleButton],
+    setStyleName: js.Function1[java.lang.String, ToggleButton],
+    setStylePrimaryName: js.Function1[java.lang.String, ToggleButton],
+    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ToggleButton],
+    setTag: js.Function1[java.lang.String, ToggleButton],
+    setText: js.Function1[java.lang.String, ToggleButton],
+    setTitle: js.Function1[java.lang.String, ToggleButton],
+    setVisible: js.Function1[scala.Boolean, ToggleButton],
+    setWidth: js.Function1[java.lang.String, ToggleButton]
+  ): ToggleButton = {
+    val __obj = js.Dynamic.literal(addBlurHandler = addBlurHandler, addClickHandler = addClickHandler, addFocusHandler = addFocusHandler, addKeyDownHandler = addKeyDownHandler, addKeyPressHandler = addKeyPressHandler, addKeyUpHandler = addKeyUpHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setAccessKey = setAccessKey, setDown = setDown, setEnabled = setEnabled, setFocus = setFocus, setHTML = setHTML, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTabIndex = setTabIndex, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
+    __obj.asInstanceOf[ToggleButton]
+  }
+}
+

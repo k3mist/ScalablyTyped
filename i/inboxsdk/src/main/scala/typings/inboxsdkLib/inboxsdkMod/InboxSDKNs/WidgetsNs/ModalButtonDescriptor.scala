@@ -16,3 +16,21 @@ trait ModalButtonDescriptor extends js.Object {
   def onClick(): scala.Unit
 }
 
+object ModalButtonDescriptor {
+  @scala.inline
+  def apply(
+    onClick: js.Function0[scala.Unit],
+    text: java.lang.String,
+    title: java.lang.String,
+    color: java.lang.String = null,
+    orderHint: scala.Int | scala.Double = null,
+    `type`: inboxsdkLib.inboxsdkLibStrings.PRIMARY_ACTION | inboxsdkLib.inboxsdkLibStrings.SECONDARY_ACTION = null
+  ): ModalButtonDescriptor = {
+    val __obj = js.Dynamic.literal(onClick = onClick, text = text, title = title)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModalButtonDescriptor]
+  }
+}
+

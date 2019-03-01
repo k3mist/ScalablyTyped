@@ -23,3 +23,20 @@ trait Schema extends XSchema {
   var URL: java.lang.String
 }
 
+object Schema {
+  @scala.inline
+  def apply(
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readComponent: js.Function1[XSchemaHandler, scala.Unit],
+    readSchema: js.Function1[XSchemaHandler, scala.Unit],
+    readTemplates: js.Function1[XSchemaHandler, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): Schema = {
+    val __obj = js.Dynamic.literal(URL = URL, acquire = acquire, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release)
+  
+    __obj.asInstanceOf[Schema]
+  }
+}
+

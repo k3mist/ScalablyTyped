@@ -31,3 +31,16 @@ trait Anon_ActionBind extends js.Object {
   def unbind(name: java.lang.String, action: js.Function): js.Any
 }
 
+object Anon_ActionBind {
+  @scala.inline
+  def apply(
+    bind: js.Function2[java.lang.String, js.Function, js.Any],
+    notify: js.Function3[java.lang.String, js.Any, js.Any, winjsLib.WinJSNs.Promise[_]],
+    unbind: js.Function2[java.lang.String, js.Function, js.Any]
+  ): Anon_ActionBind = {
+    val __obj = js.Dynamic.literal(bind = bind, notify = notify, unbind = unbind)
+  
+    __obj.asInstanceOf[Anon_ActionBind]
+  }
+}
+

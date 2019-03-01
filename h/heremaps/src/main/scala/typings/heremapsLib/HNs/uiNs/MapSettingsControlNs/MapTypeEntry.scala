@@ -15,3 +15,12 @@ trait MapTypeEntry extends js.Object {
   var name: java.lang.String
 }
 
+object MapTypeEntry {
+  @scala.inline
+  def apply(mapType: heremapsLib.HNs.serviceNs.MapType, name: java.lang.String): MapTypeEntry = {
+    val __obj = js.Dynamic.literal(mapType = mapType, name = name)
+  
+    __obj.asInstanceOf[MapTypeEntry]
+  }
+}
+

@@ -24,3 +24,16 @@ trait CopyTableRowEvent
   var SourceData: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
 }
 
+object CopyTableRowEvent {
+  @scala.inline
+  def apply(
+    Error: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SourceData: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
+  ): CopyTableRowEvent = {
+    val __obj = js.Dynamic.literal(Error = Error, Source = Source, SourceData = SourceData)
+  
+    __obj.asInstanceOf[CopyTableRowEvent]
+  }
+}
+

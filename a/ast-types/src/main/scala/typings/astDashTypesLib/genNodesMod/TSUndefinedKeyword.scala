@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSUndefinedKeyword
 }
 
+object TSUndefinedKeyword {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.TSUndefinedKeyword): TSUndefinedKeyword = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[TSUndefinedKeyword]
+  }
+}
+

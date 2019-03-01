@@ -16,3 +16,26 @@ trait IContactInformation extends js.Object {
   def queryCustomFields(customName: java.lang.String): winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField]
 }
 
+object IContactInformation {
+  @scala.inline
+  def apply(
+    customFields: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField],
+    emails: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField],
+    getThumbnailAsync: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamWithContentType]
+    ],
+    instantMessages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactInstantMessageField],
+    locations: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactLocationField],
+    name: java.lang.String,
+    phoneNumbers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField],
+    queryCustomFields: js.Function1[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField]
+    ]
+  ): IContactInformation = {
+    val __obj = js.Dynamic.literal(customFields = customFields, emails = emails, getThumbnailAsync = getThumbnailAsync, instantMessages = instantMessages, locations = locations, name = name, phoneNumbers = phoneNumbers, queryCustomFields = queryCustomFields)
+  
+    __obj.asInstanceOf[IContactInformation]
+  }
+}
+

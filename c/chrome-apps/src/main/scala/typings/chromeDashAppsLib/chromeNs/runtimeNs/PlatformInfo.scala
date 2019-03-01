@@ -48,3 +48,37 @@ trait PlatformInfo extends js.Object {
   ]
 }
 
+object PlatformInfo {
+  @scala.inline
+  def apply(
+    arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ARM, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+      ]
+    ],
+    nacl_arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ARM, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+      ]
+    ],
+    os: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ANDROID, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ANDROID[keyof chrome-apps.Anon_ANDROID] */ js.Any
+      ]
+    ]
+  ): PlatformInfo = {
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], nacl_arch = nacl_arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[PlatformInfo]
+  }
+}
+

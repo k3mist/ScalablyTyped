@@ -16,3 +16,16 @@ trait StateChangeInProgressException
   var TargetState: scala.Double
 }
 
+object StateChangeInProgressException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    TargetState: scala.Double
+  ): StateChangeInProgressException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TargetState = TargetState)
+  
+    __obj.asInstanceOf[StateChangeInProgressException]
+  }
+}
+

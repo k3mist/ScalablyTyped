@@ -15,3 +15,16 @@ trait ErrorCodeRequest
   var ErrCode: scala.Double
 }
 
+object ErrorCodeRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrCode: scala.Double,
+    Message: java.lang.String
+  ): ErrorCodeRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, ErrCode = ErrCode, Message = Message)
+  
+    __obj.asInstanceOf[ErrorCodeRequest]
+  }
+}
+

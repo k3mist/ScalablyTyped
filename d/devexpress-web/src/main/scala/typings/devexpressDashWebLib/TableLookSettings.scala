@@ -41,3 +41,19 @@ trait TableLookSettings extends js.Object {
   var doNotApplyRowBanding: scala.Boolean
 }
 
+object TableLookSettings {
+  @scala.inline
+  def apply(
+    applyFirstColumn: scala.Boolean,
+    applyFirstRow: scala.Boolean,
+    applyLastColumn: scala.Boolean,
+    applyLastRow: scala.Boolean,
+    doNotApplyColumnBanding: scala.Boolean,
+    doNotApplyRowBanding: scala.Boolean
+  ): TableLookSettings = {
+    val __obj = js.Dynamic.literal(applyFirstColumn = applyFirstColumn, applyFirstRow = applyFirstRow, applyLastColumn = applyLastColumn, applyLastRow = applyLastRow, doNotApplyColumnBanding = doNotApplyColumnBanding, doNotApplyRowBanding = doNotApplyRowBanding)
+  
+    __obj.asInstanceOf[TableLookSettings]
+  }
+}
+

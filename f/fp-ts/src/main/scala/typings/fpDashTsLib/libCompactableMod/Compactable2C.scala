@@ -12,3 +12,26 @@ trait Compactable2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L] extends js.Object
   def separate[A, B](fa: fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libEitherMod.Either[A, B]]): Separated[fpDashTsLib.libHKTMod.Type2[F, L, A], fpDashTsLib.libHKTMod.Type2[F, L, B]]
 }
 
+object Compactable2C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
+    URI: F,
+    _L: L,
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      Separated[
+        fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
+        fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
+      ]
+    ]
+  ): Compactable2C[F, L] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], compact = compact, separate = separate)
+  
+    __obj.asInstanceOf[Compactable2C[F, L]]
+  }
+}
+

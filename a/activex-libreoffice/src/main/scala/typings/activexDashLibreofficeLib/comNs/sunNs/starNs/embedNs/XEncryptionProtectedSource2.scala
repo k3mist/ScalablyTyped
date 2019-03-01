@@ -25,3 +25,23 @@ trait XEncryptionProtectedSource2 extends XEncryptionProtectedSource {
   ): scala.Unit
 }
 
+object XEncryptionProtectedSource2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasEncryptionData: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEncryption: js.Function0[scala.Unit],
+    setEncryptionData: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ],
+    setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
+  ): XEncryptionProtectedSource2 = {
+    val __obj = js.Dynamic.literal(acquire = acquire, hasEncryptionData = hasEncryptionData, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionData = setEncryptionData, setEncryptionPassword = setEncryptionPassword)
+  
+    __obj.asInstanceOf[XEncryptionProtectedSource2]
+  }
+}
+

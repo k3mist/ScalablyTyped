@@ -10,3 +10,15 @@ trait Anon_Provide extends js.Object {
   var useValue: java.lang.String
 }
 
+object Anon_Provide {
+  @scala.inline
+  def apply(
+    provide: atAngularCoreLib.atAngularCoreMod.InjectionToken[java.lang.String],
+    useValue: java.lang.String
+  ): Anon_Provide = {
+    val __obj = js.Dynamic.literal(provide = provide, useValue = useValue)
+  
+    __obj.asInstanceOf[Anon_Provide]
+  }
+}
+

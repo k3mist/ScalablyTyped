@@ -11,3 +11,12 @@ trait DeploymentApprovalCompletedEvent extends js.Object {
   var release: Release
 }
 
+object DeploymentApprovalCompletedEvent {
+  @scala.inline
+  def apply(approval: ReleaseApproval, project: ProjectReference, release: Release): DeploymentApprovalCompletedEvent = {
+    val __obj = js.Dynamic.literal(approval = approval, project = project, release = release)
+  
+    __obj.asInstanceOf[DeploymentApprovalCompletedEvent]
+  }
+}
+

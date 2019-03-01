@@ -17,3 +17,18 @@ trait XTransferableSource
   def getDataSourceDescription(): java.lang.String
 }
 
+object XTransferableSource {
+  @scala.inline
+  def apply(
+    DataSourceDescription: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDataSourceDescription: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTransferableSource = {
+    val __obj = js.Dynamic.literal(DataSourceDescription = DataSourceDescription, acquire = acquire, getDataSourceDescription = getDataSourceDescription, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTransferableSource]
+  }
+}
+

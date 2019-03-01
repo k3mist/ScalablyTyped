@@ -62,3 +62,24 @@ trait NodeStatus extends js.Object {
   val volumesInUse: js.Array[java.lang.String]
 }
 
+object NodeStatus {
+  @scala.inline
+  def apply(
+    addresses: js.Array[NodeAddress],
+    allocatable: js.Object,
+    capacity: js.Object,
+    conditions: js.Array[NodeCondition],
+    config: NodeConfigStatus,
+    daemonEndpoints: NodeDaemonEndpoints,
+    images: js.Array[ContainerImage],
+    nodeInfo: NodeSystemInfo,
+    phase: java.lang.String,
+    volumesAttached: js.Array[AttachedVolume],
+    volumesInUse: js.Array[java.lang.String]
+  ): NodeStatus = {
+    val __obj = js.Dynamic.literal(addresses = addresses, allocatable = allocatable, capacity = capacity, conditions = conditions, config = config, daemonEndpoints = daemonEndpoints, images = images, nodeInfo = nodeInfo, phase = phase, volumesAttached = volumesAttached, volumesInUse = volumesInUse)
+  
+    __obj.asInstanceOf[NodeStatus]
+  }
+}
+

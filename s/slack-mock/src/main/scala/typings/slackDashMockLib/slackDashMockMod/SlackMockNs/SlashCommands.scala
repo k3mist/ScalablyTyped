@@ -12,3 +12,17 @@ trait SlashCommands[T] extends js.Object {
   def send(targetUrl: SlashCommandUrl, body: T): js.Promise[scala.Unit]
 }
 
+object SlashCommands {
+  @scala.inline
+  def apply[T](
+    addResponse: js.Function1[SlashCommandOptions[T], scala.Unit],
+    calls: js.Array[SlashCommandCall[T]],
+    reset: js.Function0[scala.Unit],
+    send: js.Function2[SlashCommandUrl, T, js.Promise[scala.Unit]]
+  ): SlashCommands[T] = {
+    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset, send = send)
+  
+    __obj.asInstanceOf[SlashCommands[T]]
+  }
+}
+

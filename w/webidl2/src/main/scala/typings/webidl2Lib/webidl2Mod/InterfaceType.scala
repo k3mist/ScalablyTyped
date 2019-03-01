@@ -19,3 +19,19 @@ trait InterfaceType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.interface | (webidl2Lib.webidl2LibStrings.`callback interface`)
 }
 
+object InterfaceType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    members: js.Array[IDLInterfaceMemberType],
+    name: java.lang.String,
+    partial: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.interface | (webidl2Lib.webidl2LibStrings.`callback interface`),
+    inheritance: java.lang.String = null
+  ): InterfaceType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial, `type` = `type`.asInstanceOf[js.Any])
+    if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance)
+    __obj.asInstanceOf[InterfaceType]
+  }
+}
+

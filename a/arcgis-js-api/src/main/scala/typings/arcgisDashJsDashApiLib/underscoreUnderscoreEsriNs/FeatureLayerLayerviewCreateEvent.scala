@@ -10,3 +10,12 @@ trait FeatureLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object FeatureLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): FeatureLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[FeatureLayerLayerviewCreateEvent]
+  }
+}
+

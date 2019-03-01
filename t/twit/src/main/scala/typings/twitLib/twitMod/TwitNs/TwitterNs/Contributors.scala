@@ -11,3 +11,12 @@ trait Contributors extends js.Object {
   var screen_name: java.lang.String
 }
 
+object Contributors {
+  @scala.inline
+  def apply(id: scala.Double, id_str: java.lang.String, screen_name: java.lang.String): Contributors = {
+    val __obj = js.Dynamic.literal(id = id, id_str = id_str, screen_name = screen_name)
+  
+    __obj.asInstanceOf[Contributors]
+  }
+}
+

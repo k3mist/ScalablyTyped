@@ -13,3 +13,18 @@ trait TcpPortUsedOptions extends js.Object {
   var timeOutMs: scala.Double
 }
 
+object TcpPortUsedOptions {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    port: scala.Double,
+    retryTimeMs: scala.Double,
+    status: scala.Boolean,
+    timeOutMs: scala.Double
+  ): TcpPortUsedOptions = {
+    val __obj = js.Dynamic.literal(host = host, port = port, retryTimeMs = retryTimeMs, status = status, timeOutMs = timeOutMs)
+  
+    __obj.asInstanceOf[TcpPortUsedOptions]
+  }
+}
+

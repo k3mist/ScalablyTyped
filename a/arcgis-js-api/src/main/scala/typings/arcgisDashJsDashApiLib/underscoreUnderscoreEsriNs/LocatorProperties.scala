@@ -26,3 +26,22 @@ trait LocatorProperties extends TaskProperties {
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 
+object LocatorProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String] = null,
+    countryCode: java.lang.String = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    requestOptions: js.Any = null,
+    url: java.lang.String = null
+  ): LocatorProperties = {
+    val __obj = js.Dynamic.literal()
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LocatorProperties]
+  }
+}
+

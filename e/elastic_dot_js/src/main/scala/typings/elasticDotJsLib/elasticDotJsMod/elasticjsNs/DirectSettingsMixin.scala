@@ -66,3 +66,23 @@ trait DirectSettingsMixin extends js.Object {
   def suggestMode(m: java.lang.String): DirectSettingsMixin
 }
 
+object DirectSettingsMixin {
+  @scala.inline
+  def apply(
+    accuracy: js.Function1[scala.Double, DirectSettingsMixin],
+    maxEdits: js.Function1[scala.Double, DirectSettingsMixin],
+    maxInspections: js.Function1[scala.Double, DirectSettingsMixin],
+    maxTermFreq: js.Function1[scala.Double, DirectSettingsMixin],
+    minDocFreq: js.Function1[scala.Double, DirectSettingsMixin],
+    minWordLen: js.Function1[scala.Double, DirectSettingsMixin],
+    prefixLen: js.Function1[scala.Double, DirectSettingsMixin],
+    sort: js.Function1[java.lang.String, DirectSettingsMixin],
+    stringDistance: js.Function1[java.lang.String, DirectSettingsMixin],
+    suggestMode: js.Function1[java.lang.String, DirectSettingsMixin]
+  ): DirectSettingsMixin = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, prefixLen = prefixLen, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode)
+  
+    __obj.asInstanceOf[DirectSettingsMixin]
+  }
+}
+

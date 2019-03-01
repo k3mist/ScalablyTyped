@@ -16,3 +16,12 @@ trait Result extends js.Object {
   var map: js.Object | scala.Null
 }
 
+object Result {
+  @scala.inline
+  def apply(css: java.lang.String, map: js.Object = null): Result = {
+    val __obj = js.Dynamic.literal(css = css)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[Result]
+  }
+}
+

@@ -15,3 +15,15 @@ trait Window extends js.Object {
   ): Database
 }
 
+object Window {
+  @scala.inline
+  def apply(
+    openDatabase: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, Database],
+    requestFileSystem: js.Any
+  ): Window = {
+    val __obj = js.Dynamic.literal(openDatabase = openDatabase, requestFileSystem = requestFileSystem)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

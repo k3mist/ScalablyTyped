@@ -20,3 +20,16 @@ trait Sequence extends js.Object {
   def reset(initialValue: scala.Double): js.Promise[scala.Unit]
 }
 
+object Sequence {
+  @scala.inline
+  def apply(
+    lastValue: js.Function0[js.Promise[java.lang.String]],
+    nextValue: js.Function0[js.Promise[java.lang.String]],
+    reset: js.Function1[scala.Double, js.Promise[scala.Unit]]
+  ): Sequence = {
+    val __obj = js.Dynamic.literal(lastValue = lastValue, nextValue = nextValue, reset = reset)
+  
+    __obj.asInstanceOf[Sequence]
+  }
+}
+

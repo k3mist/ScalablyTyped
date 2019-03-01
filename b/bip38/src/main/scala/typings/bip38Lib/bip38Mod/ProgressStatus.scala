@@ -11,3 +11,12 @@ trait ProgressStatus extends js.Object {
   var total: scala.Double
 }
 
+object ProgressStatus {
+  @scala.inline
+  def apply(current: scala.Double, percent: scala.Double, total: scala.Double): ProgressStatus = {
+    val __obj = js.Dynamic.literal(current = current, percent = percent, total = total)
+  
+    __obj.asInstanceOf[ProgressStatus]
+  }
+}
+

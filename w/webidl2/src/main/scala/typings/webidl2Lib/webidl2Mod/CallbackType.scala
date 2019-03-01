@@ -17,3 +17,18 @@ trait CallbackType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.callback
 }
 
+object CallbackType {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Argument],
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.callback
+  ): CallbackType = {
+    val __obj = js.Dynamic.literal(arguments = arguments, extAttrs = extAttrs, idlType = idlType, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[CallbackType]
+  }
+}
+

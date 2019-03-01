@@ -17,3 +17,22 @@ trait Line extends js.Object {
   var words: js.Array[Word]
 }
 
+object Line {
+  @scala.inline
+  def apply(
+    baseline: Baseline,
+    bbox: Bbox,
+    block: Block,
+    confidence: scala.Double,
+    page: Page,
+    paragraph: Paragraph,
+    symbols: js.Array[Symbol],
+    text: java.lang.String,
+    words: js.Array[Word]
+  ): Line = {
+    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, confidence = confidence, page = page, paragraph = paragraph, symbols = symbols, text = text, words = words)
+  
+    __obj.asInstanceOf[Line]
+  }
+}
+

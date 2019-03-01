@@ -32,3 +32,20 @@ trait RouteResultProperties extends js.Object {
   var stops: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
 
+object RouteResultProperties {
+  @scala.inline
+  def apply(
+    directions: DirectionsFeatureSetProperties = null,
+    route: GraphicProperties = null,
+    routeName: java.lang.String = null,
+    stops: js.Array[GraphicProperties] = null
+  ): RouteResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (directions != null) __obj.updateDynamic("directions")(directions)
+    if (route != null) __obj.updateDynamic("route")(route)
+    if (routeName != null) __obj.updateDynamic("routeName")(routeName)
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[RouteResultProperties]
+  }
+}
+

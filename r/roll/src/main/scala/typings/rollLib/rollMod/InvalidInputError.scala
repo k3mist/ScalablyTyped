@@ -11,3 +11,16 @@ trait InvalidInputError
   var name_InvalidInputError: rollLib.rollLibStrings.InvalidInputError
 }
 
+object InvalidInputError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: rollLib.rollLibStrings.InvalidInputError,
+    stack: java.lang.String = null
+  ): InvalidInputError = {
+    val __obj = js.Dynamic.literal(message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InvalidInputError]
+  }
+}
+

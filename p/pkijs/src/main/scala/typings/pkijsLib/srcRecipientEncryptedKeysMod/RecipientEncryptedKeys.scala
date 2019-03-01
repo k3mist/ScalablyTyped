@@ -12,3 +12,17 @@ trait RecipientEncryptedKeys extends js.Object {
   def toSchema(): js.Any
 }
 
+object RecipientEncryptedKeys {
+  @scala.inline
+  def apply(
+    encryptedKeys: js.Array[pkijsLib.srcRecipientEncryptedKeyMod.default],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): RecipientEncryptedKeys = {
+    val __obj = js.Dynamic.literal(encryptedKeys = encryptedKeys, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[RecipientEncryptedKeys]
+  }
+}
+

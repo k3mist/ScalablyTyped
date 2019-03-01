@@ -80,3 +80,28 @@ trait XTreeNode extends js.Object {
   def hasChildrenOnDemand(): scala.Boolean
 }
 
+object XTreeNode {
+  @scala.inline
+  def apply(
+    ChildCount: scala.Double,
+    CollapsedGraphicURL: java.lang.String,
+    DisplayValue: js.Any,
+    ExpandedGraphicURL: java.lang.String,
+    NodeGraphicURL: java.lang.String,
+    Parent: XTreeNode,
+    getChildAt: js.Function1[scala.Double, XTreeNode],
+    getChildCount: js.Function0[scala.Double],
+    getCollapsedGraphicURL: js.Function0[java.lang.String],
+    getDisplayValue: js.Function0[js.Any],
+    getExpandedGraphicURL: js.Function0[java.lang.String],
+    getIndex: js.Function1[XTreeNode, scala.Double],
+    getNodeGraphicURL: js.Function0[java.lang.String],
+    getParent: js.Function0[XTreeNode],
+    hasChildrenOnDemand: js.Function0[scala.Boolean]
+  ): XTreeNode = {
+    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, getChildAt = getChildAt, getChildCount = getChildCount, getCollapsedGraphicURL = getCollapsedGraphicURL, getDisplayValue = getDisplayValue, getExpandedGraphicURL = getExpandedGraphicURL, getIndex = getIndex, getNodeGraphicURL = getNodeGraphicURL, getParent = getParent, hasChildrenOnDemand = hasChildrenOnDemand)
+  
+    __obj.asInstanceOf[XTreeNode]
+  }
+}
+

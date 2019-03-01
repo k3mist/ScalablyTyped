@@ -141,3 +141,64 @@ trait SceneViewProperties
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SceneViewProperties {
+  @scala.inline
+  def apply(
+    allLayerViews: CollectionProperties[LayerViewProperties] = null,
+    alphaCompositingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: ViewAnimationProperties = null,
+    breakpoints: BreakpointsOwnerBreakpoints = null,
+    camera: CameraProperties = null,
+    center: PointProperties | js.Array[scala.Double] = null,
+    clippingArea: ExtentProperties = null,
+    constraints: SceneViewConstraintsProperties = null,
+    container: stdLib.HTMLDivElement | java.lang.String = null,
+    environment: SceneViewEnvironmentProperties = null,
+    extent: ExtentProperties = null,
+    graphics: CollectionProperties[GraphicProperties] = null,
+    heightBreakpoint: java.lang.String = null,
+    highlightOptions: SceneViewHighlightOptionsProperties = null,
+    layerViews: CollectionProperties[LayerViewProperties] = null,
+    map: MapProperties = null,
+    padding: ViewPadding = null,
+    popup: PopupProperties = null,
+    qualityProfile: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    spatialReference: SpatialReferenceProperties = null,
+    ui: DefaultUIProperties = null,
+    viewingMode: java.lang.String = null,
+    viewpoint: ViewpointProperties = null,
+    widthBreakpoint: java.lang.String = null,
+    zoom: scala.Int | scala.Double = null
+  ): SceneViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaCompositingEnabled)) __obj.updateDynamic("alphaCompositingEnabled")(alphaCompositingEnabled)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (clippingArea != null) __obj.updateDynamic("clippingArea")(clippingArea)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
+    if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
+    if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (qualityProfile != null) __obj.updateDynamic("qualityProfile")(qualityProfile)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneViewProperties]
+  }
+}
+

@@ -11,3 +11,12 @@ trait HooksObject extends js.Object {
   var error: stdLib.Partial[HookMap]
 }
 
+object HooksObject {
+  @scala.inline
+  def apply(after: stdLib.Partial[HookMap], before: stdLib.Partial[HookMap], error: stdLib.Partial[HookMap]): HooksObject = {
+    val __obj = js.Dynamic.literal(after = after, before = before, error = error)
+  
+    __obj.asInstanceOf[HooksObject]
+  }
+}
+

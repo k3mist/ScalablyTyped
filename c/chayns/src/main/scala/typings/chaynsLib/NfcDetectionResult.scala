@@ -11,3 +11,12 @@ trait NfcDetectionResult extends js.Object {
   var rfid: java.lang.String
 }
 
+object NfcDetectionResult {
+  @scala.inline
+  def apply(connected: scala.Boolean, rfid: java.lang.String): NfcDetectionResult = {
+    val __obj = js.Dynamic.literal(connected = connected, rfid = rfid)
+  
+    __obj.asInstanceOf[NfcDetectionResult]
+  }
+}
+

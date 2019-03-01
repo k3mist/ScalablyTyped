@@ -16,3 +16,28 @@ import scala.scalajs.js.annotation._
   var value: JSXElement | JSXFragment | StringLiteral | JSXExpressionContainer | scala.Null
 }
 
+object JSXAttribute {
+  @scala.inline
+  def apply(
+    name: JSXIdentifier | JSXNamespacedName,
+    `type`: atBabelTypesLib.atBabelTypesLibStrings.JSXAttribute,
+    end: scala.Int | scala.Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: scala.Int | scala.Double = null,
+    trailingComments: js.Array[Comment] = null,
+    value: JSXElement | JSXFragment | StringLiteral | JSXExpressionContainer = null
+  ): JSXAttribute = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], `type` = `type`)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSXAttribute]
+  }
+}
+

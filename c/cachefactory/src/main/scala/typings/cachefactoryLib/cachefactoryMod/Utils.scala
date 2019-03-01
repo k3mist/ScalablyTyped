@@ -15,3 +15,20 @@ trait Utils extends js.Object {
   def isString(value: js.Any): scala.Boolean
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    equals: js.Function2[js.Any, js.Any, scala.Boolean],
+    fromJson: js.Function1[java.lang.String, js.Any],
+    isFunction: js.Function1[js.Any, scala.Boolean],
+    isNumber: js.Function1[js.Any, scala.Boolean],
+    isObject: js.Function1[js.Any, scala.Boolean],
+    isString: js.Function1[js.Any, scala.Boolean],
+    Promise: stdLib.PromiseConstructor = null
+  ): Utils = {
+    val __obj = js.Dynamic.literal(equals = equals, fromJson = fromJson, isFunction = isFunction, isNumber = isNumber, isObject = isObject, isString = isString)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    __obj.asInstanceOf[Utils]
+  }
+}
+

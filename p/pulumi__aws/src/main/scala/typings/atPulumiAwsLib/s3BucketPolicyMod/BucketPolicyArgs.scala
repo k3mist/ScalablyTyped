@@ -16,3 +16,15 @@ trait BucketPolicyArgs extends js.Object {
   val policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
 }
 
+object BucketPolicyArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
+  ): BucketPolicyArgs = {
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BucketPolicyArgs]
+  }
+}
+

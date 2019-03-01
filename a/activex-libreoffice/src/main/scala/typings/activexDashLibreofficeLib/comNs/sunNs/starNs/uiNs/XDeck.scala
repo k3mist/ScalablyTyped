@@ -53,3 +53,29 @@ trait XDeck extends js.Object {
   def setTitle(newTitle: java.lang.String): scala.Unit
 }
 
+object XDeck {
+  @scala.inline
+  def apply(
+    Id: java.lang.String,
+    OrderIndex: scala.Double,
+    Panels: XPanels,
+    Title: java.lang.String,
+    activate: js.Function1[scala.Boolean, scala.Unit],
+    getId: js.Function0[java.lang.String],
+    getOrderIndex: js.Function0[scala.Double],
+    getPanels: js.Function0[XPanels],
+    getTitle: js.Function0[java.lang.String],
+    isActive: js.Function0[scala.Boolean],
+    moveDown: js.Function0[scala.Unit],
+    moveFirst: js.Function0[scala.Unit],
+    moveLast: js.Function0[scala.Unit],
+    moveUp: js.Function0[scala.Unit],
+    setOrderIndex: js.Function1[scala.Double, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XDeck = {
+    val __obj = js.Dynamic.literal(Id = Id, OrderIndex = OrderIndex, Panels = Panels, Title = Title, activate = activate, getId = getId, getOrderIndex = getOrderIndex, getPanels = getPanels, getTitle = getTitle, isActive = isActive, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+  
+    __obj.asInstanceOf[XDeck]
+  }
+}
+

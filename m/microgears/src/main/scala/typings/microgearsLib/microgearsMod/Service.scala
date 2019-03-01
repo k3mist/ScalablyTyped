@@ -12,3 +12,18 @@ trait Service extends js.Object {
   var pathname: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    namespace: java.lang.String,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    pathname: java.lang.String = null
+  ): Service = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    __obj.asInstanceOf[Service]
+  }
+}
+

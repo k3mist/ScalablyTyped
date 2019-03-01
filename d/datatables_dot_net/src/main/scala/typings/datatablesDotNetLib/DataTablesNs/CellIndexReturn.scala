@@ -11,3 +11,12 @@ trait CellIndexReturn extends js.Object {
   var row: scala.Double
 }
 
+object CellIndexReturn {
+  @scala.inline
+  def apply(column: scala.Double, columnVisible: scala.Double, row: scala.Double): CellIndexReturn = {
+    val __obj = js.Dynamic.literal(column = column, columnVisible = columnVisible, row = row)
+  
+    __obj.asInstanceOf[CellIndexReturn]
+  }
+}
+

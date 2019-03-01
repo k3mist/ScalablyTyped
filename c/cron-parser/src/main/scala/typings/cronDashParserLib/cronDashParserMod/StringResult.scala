@@ -11,3 +11,16 @@ trait StringResult extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object StringResult {
+  @scala.inline
+  def apply(
+    errors: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    expressions: js.Array[CronExpression],
+    variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): StringResult = {
+    val __obj = js.Dynamic.literal(errors = errors, expressions = expressions, variables = variables)
+  
+    __obj.asInstanceOf[StringResult]
+  }
+}
+

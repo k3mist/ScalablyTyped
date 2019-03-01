@@ -65,3 +65,20 @@ trait config extends js.Object {
   var workers: configWorkers
 }
 
+object config {
+  @scala.inline
+  def apply(
+    fontsUrl: java.lang.String,
+    geoRSSServiceUrl: java.lang.String,
+    geometryServiceUrl: java.lang.String,
+    kmlServiceUrl: java.lang.String,
+    portalUrl: java.lang.String,
+    request: configRequest,
+    workers: configWorkers
+  ): config = {
+    val __obj = js.Dynamic.literal(fontsUrl = fontsUrl, geoRSSServiceUrl = geoRSSServiceUrl, geometryServiceUrl = geometryServiceUrl, kmlServiceUrl = kmlServiceUrl, portalUrl = portalUrl, request = request, workers = workers)
+  
+    __obj.asInstanceOf[config]
+  }
+}
+

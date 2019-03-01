@@ -91,3 +91,24 @@ trait DistanceMeasurement2DViewModel extends js.Object {
   def newMeasurement(): scala.Unit
 }
 
+object DistanceMeasurement2DViewModel {
+  @scala.inline
+  def apply(
+    clearMeasurement: js.Function0[scala.Unit],
+    geodesicDistanceThreshold: scala.Double,
+    measurement: DistanceMeasurement2DViewModelMeasurement,
+    measurementLabel: java.lang.String,
+    mode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.auto | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.planar | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.geodesic,
+    modes: js.Array[java.lang.String],
+    newMeasurement: js.Function0[scala.Unit],
+    state: java.lang.String,
+    unit: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.metric | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.imperial | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`us-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers,
+    unitOptions: js.Array[java.lang.String],
+    view: MapView
+  ): DistanceMeasurement2DViewModel = {
+    val __obj = js.Dynamic.literal(clearMeasurement = clearMeasurement, geodesicDistanceThreshold = geodesicDistanceThreshold, measurement = measurement, measurementLabel = measurementLabel, mode = mode.asInstanceOf[js.Any], modes = modes, newMeasurement = newMeasurement, state = state, unit = unit.asInstanceOf[js.Any], unitOptions = unitOptions, view = view)
+  
+    __obj.asInstanceOf[DistanceMeasurement2DViewModel]
+  }
+}
+

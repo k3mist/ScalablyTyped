@@ -34,3 +34,29 @@ trait ServicesResource extends js.Object {
   def search(request: gapiDotClientDotServiceuserLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
 }
 
+object ServicesResource {
+  @scala.inline
+  def apply(
+    disable: js.Function1[
+      gapiDotClientDotServiceuserLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    enable: js.Function1[
+      gapiDotClientDotServiceuserLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotServiceuserLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledServicesResponse]
+    ],
+    search: js.Function1[
+      gapiDotClientDotServiceuserLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
+    ]
+  ): ServicesResource = {
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, list = list, search = search)
+  
+    __obj.asInstanceOf[ServicesResource]
+  }
+}
+

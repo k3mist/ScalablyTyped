@@ -10,3 +10,15 @@ trait Anon_PANEL extends js.Object {
   var SHELL: chromeDashAppsLib.chromeDashAppsLibStrings.shell
 }
 
+object Anon_PANEL {
+  @scala.inline
+  def apply(
+    PANEL: chromeDashAppsLib.chromeDashAppsLibStrings.panel,
+    SHELL: chromeDashAppsLib.chromeDashAppsLibStrings.shell
+  ): Anon_PANEL = {
+    val __obj = js.Dynamic.literal(PANEL = PANEL, SHELL = SHELL)
+  
+    __obj.asInstanceOf[Anon_PANEL]
+  }
+}
+

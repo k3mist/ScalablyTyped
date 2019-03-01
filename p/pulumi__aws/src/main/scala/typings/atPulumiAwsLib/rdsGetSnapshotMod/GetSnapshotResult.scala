@@ -77,3 +77,31 @@ trait GetSnapshotResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetSnapshotResult {
+  @scala.inline
+  def apply(
+    allocatedStorage: scala.Double,
+    availabilityZone: java.lang.String,
+    dbSnapshotArn: java.lang.String,
+    encrypted: scala.Boolean,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    id: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    licenseModel: java.lang.String,
+    optionGroupName: java.lang.String,
+    port: scala.Double,
+    snapshotCreateTime: java.lang.String,
+    sourceDbSnapshotIdentifier: java.lang.String,
+    sourceRegion: java.lang.String,
+    status: java.lang.String,
+    storageType: java.lang.String,
+    vpcId: java.lang.String
+  ): GetSnapshotResult = {
+    val __obj = js.Dynamic.literal(allocatedStorage = allocatedStorage, availabilityZone = availabilityZone, dbSnapshotArn = dbSnapshotArn, encrypted = encrypted, engine = engine, engineVersion = engineVersion, id = id, iops = iops, kmsKeyId = kmsKeyId, licenseModel = licenseModel, optionGroupName = optionGroupName, port = port, snapshotCreateTime = snapshotCreateTime, sourceDbSnapshotIdentifier = sourceDbSnapshotIdentifier, sourceRegion = sourceRegion, status = status, storageType = storageType, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetSnapshotResult]
+  }
+}
+

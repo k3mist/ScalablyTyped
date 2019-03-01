@@ -18,3 +18,23 @@ trait InputBoolean extends js.Object {
   var step: scala.Boolean
 }
 
+object InputBoolean {
+  @scala.inline
+  def apply(
+    autocomplete: scala.Boolean,
+    autofocus: scala.Boolean,
+    list: scala.Boolean,
+    max: scala.Boolean,
+    min: scala.Boolean,
+    multiple: scala.Boolean,
+    pattern: scala.Boolean,
+    placeholder: scala.Boolean,
+    required: scala.Boolean,
+    step: scala.Boolean
+  ): InputBoolean = {
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, autofocus = autofocus, list = list, max = max, min = min, multiple = multiple, pattern = pattern, placeholder = placeholder, required = required, step = step)
+  
+    __obj.asInstanceOf[InputBoolean]
+  }
+}
+

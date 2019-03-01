@@ -41,3 +41,26 @@ trait HistoriesResource extends js.Object {
   def list(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsFilterByName): gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
 }
 
+object HistoriesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[History]
+    ],
+    executions: ExecutionsResource,
+    get: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[History]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsFilterByName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
+    ]
+  ): HistoriesResource = {
+    val __obj = js.Dynamic.literal(create = create, executions = executions, get = get, list = list)
+  
+    __obj.asInstanceOf[HistoriesResource]
+  }
+}
+

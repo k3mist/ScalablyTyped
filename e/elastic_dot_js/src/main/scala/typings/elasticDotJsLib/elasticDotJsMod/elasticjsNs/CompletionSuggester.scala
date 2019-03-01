@@ -71,3 +71,26 @@ trait CompletionSuggester extends Suggest {
   def unicodeAware(trueFalse: scala.Boolean): CompletionSuggester
 }
 
+object CompletionSuggester {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, CompletionSuggester],
+    editDistance: js.Function1[scala.Double, CompletionSuggester],
+    field: js.Function1[java.lang.String, CompletionSuggester],
+    fuzzy: js.Function1[scala.Boolean, CompletionSuggester],
+    minLength: js.Function1[scala.Double, CompletionSuggester],
+    prefixLength: js.Function1[scala.Double, CompletionSuggester],
+    shardSize: js.Function1[scala.Double, CompletionSuggester],
+    size: js.Function1[scala.Double, CompletionSuggester],
+    text: js.Function1[java.lang.String, CompletionSuggester],
+    toJSON: js.Function0[js.Any],
+    transpositions: js.Function1[scala.Boolean, CompletionSuggester],
+    unicodeAware: js.Function1[scala.Boolean, CompletionSuggester]
+  ): CompletionSuggester = {
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, editDistance = editDistance, field = field, fuzzy = fuzzy, minLength = minLength, prefixLength = prefixLength, shardSize = shardSize, size = size, text = text, toJSON = toJSON, transpositions = transpositions, unicodeAware = unicodeAware)
+  
+    __obj.asInstanceOf[CompletionSuggester]
+  }
+}
+

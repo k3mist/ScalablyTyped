@@ -14,3 +14,19 @@ trait IDateFormats extends js.Object {
   var weekDay: java.lang.String
 }
 
+object IDateFormats {
+  @scala.inline
+  def apply(
+    datetime: java.lang.String,
+    day: java.lang.String,
+    hour: java.lang.String,
+    month: java.lang.String,
+    time: java.lang.String,
+    weekDay: java.lang.String
+  ): IDateFormats = {
+    val __obj = js.Dynamic.literal(datetime = datetime, day = day, hour = hour, month = month, time = time, weekDay = weekDay)
+  
+    __obj.asInstanceOf[IDateFormats]
+  }
+}
+

@@ -12,3 +12,17 @@ trait TimerInstance extends js.Object {
   def Update(options: js.Object, callback: CbCallback): scala.Unit
 }
 
+object TimerInstance {
+  @scala.inline
+  def apply(
+    Delete: js.Function1[CbCallback, scala.Unit],
+    Update: js.Function2[js.Object, CbCallback, scala.Unit],
+    name: java.lang.String,
+    systemKey: java.lang.String
+  ): TimerInstance = {
+    val __obj = js.Dynamic.literal(Delete = Delete, Update = Update, name = name, systemKey = systemKey)
+  
+    __obj.asInstanceOf[TimerInstance]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_Address extends js.Object {
   var port: java.lang.String
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(address: java.lang.String, family: java.lang.String, port: java.lang.String): Anon_Address = {
+    val __obj = js.Dynamic.literal(address = address, family = family, port = port)
+  
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

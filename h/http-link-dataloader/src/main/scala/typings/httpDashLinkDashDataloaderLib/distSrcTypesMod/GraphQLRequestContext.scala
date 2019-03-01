@@ -10,3 +10,12 @@ trait GraphQLRequestContext extends js.Object {
   var variables: js.UndefOr[Variables] = js.undefined
 }
 
+object GraphQLRequestContext {
+  @scala.inline
+  def apply(query: java.lang.String, variables: Variables = null): GraphQLRequestContext = {
+    val __obj = js.Dynamic.literal(query = query)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[GraphQLRequestContext]
+  }
+}
+

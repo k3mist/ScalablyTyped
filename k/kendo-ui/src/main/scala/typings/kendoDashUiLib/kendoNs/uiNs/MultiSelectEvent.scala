@@ -11,3 +11,12 @@ trait MultiSelectEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object MultiSelectEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: MultiSelect): MultiSelectEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[MultiSelectEvent]
+  }
+}
+

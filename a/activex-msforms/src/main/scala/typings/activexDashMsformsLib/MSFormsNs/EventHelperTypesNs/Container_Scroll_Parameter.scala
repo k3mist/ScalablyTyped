@@ -14,3 +14,19 @@ trait Container_Scroll_Parameter extends js.Object {
   val RequestDy: scala.Double
 }
 
+object Container_Scroll_Parameter {
+  @scala.inline
+  def apply(
+    ActionX: activexDashMsformsLib.MSFormsNs.fmScrollAction,
+    ActionY: activexDashMsformsLib.MSFormsNs.fmScrollAction,
+    ActualDx: activexDashMsformsLib.MSFormsNs.ReturnSingle,
+    ActualDy: activexDashMsformsLib.MSFormsNs.ReturnSingle,
+    RequestDx: scala.Double,
+    RequestDy: scala.Double
+  ): Container_Scroll_Parameter = {
+    val __obj = js.Dynamic.literal(ActionX = ActionX, ActionY = ActionY, ActualDx = ActualDx, ActualDy = ActualDy, RequestDx = RequestDx, RequestDy = RequestDy)
+  
+    __obj.asInstanceOf[Container_Scroll_Parameter]
+  }
+}
+

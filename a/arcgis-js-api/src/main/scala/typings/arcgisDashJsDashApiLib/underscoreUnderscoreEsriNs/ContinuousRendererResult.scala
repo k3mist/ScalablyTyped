@@ -45,3 +45,22 @@ trait ContinuousRendererResult
   var visualVariable: ColorVariable
 }
 
+object ContinuousRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    colorScheme: ColorScheme,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer,
+    statistics: SummaryStatisticsResult,
+    visualVariable: ColorVariable
+  ): ContinuousRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, statistics = statistics, visualVariable = visualVariable)
+  
+    __obj.asInstanceOf[ContinuousRendererResult]
+  }
+}
+

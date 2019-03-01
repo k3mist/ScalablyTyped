@@ -30,3 +30,20 @@ trait Button extends js.Object {
   ] = js.undefined
 }
 
+object Button {
+  @scala.inline
+  def apply(
+    onClicked: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
+    update: js.Function3[
+      /* iconPath */ js.UndefOr[java.lang.String], 
+      /* tooltipText */ js.UndefOr[java.lang.String], 
+      /* disabled */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null
+  ): Button = {
+    val __obj = js.Dynamic.literal(onClicked = onClicked)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Button]
+  }
+}
+

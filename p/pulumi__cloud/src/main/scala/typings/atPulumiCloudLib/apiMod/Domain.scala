@@ -25,3 +25,17 @@ trait Domain extends js.Object {
   var domainName: java.lang.String
 }
 
+object Domain {
+  @scala.inline
+  def apply(
+    certificateBody: java.lang.String,
+    certificateChain: java.lang.String,
+    certificatePrivateKey: java.lang.String,
+    domainName: java.lang.String
+  ): Domain = {
+    val __obj = js.Dynamic.literal(certificateBody = certificateBody, certificateChain = certificateChain, certificatePrivateKey = certificatePrivateKey, domainName = domainName)
+  
+    __obj.asInstanceOf[Domain]
+  }
+}
+

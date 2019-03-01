@@ -27,3 +27,19 @@ trait JobTaskDeleteDependencyParams
   var user: java.lang.String
 }
 
+object JobTaskDeleteDependencyParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dependencyId: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskDeleteDependencyParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dependencyId = dependencyId, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskDeleteDependencyParams]
+  }
+}
+

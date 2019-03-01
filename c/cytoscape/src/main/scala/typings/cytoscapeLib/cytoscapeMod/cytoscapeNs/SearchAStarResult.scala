@@ -14,3 +14,12 @@ trait SearchAStarResult extends js.Object {
   var path: CollectionReturnValue
 }
 
+object SearchAStarResult {
+  @scala.inline
+  def apply(distance: scala.Double, found: scala.Boolean, path: CollectionReturnValue): SearchAStarResult = {
+    val __obj = js.Dynamic.literal(distance = distance, found = found, path = path)
+  
+    __obj.asInstanceOf[SearchAStarResult]
+  }
+}
+

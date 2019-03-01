@@ -32,3 +32,19 @@ trait IAngularEvent extends js.Object {
   def preventDefault(): scala.Unit
 }
 
+object IAngularEvent {
+  @scala.inline
+  def apply(
+    currentScope: IScope,
+    defaultPrevented: scala.Boolean,
+    name: java.lang.String,
+    preventDefault: js.Function0[scala.Unit],
+    targetScope: IScope,
+    stopPropagation: js.Function0[scala.Unit] = null
+  ): IAngularEvent = {
+    val __obj = js.Dynamic.literal(currentScope = currentScope, defaultPrevented = defaultPrevented, name = name, preventDefault = preventDefault, targetScope = targetScope)
+    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.asInstanceOf[IAngularEvent]
+  }
+}
+

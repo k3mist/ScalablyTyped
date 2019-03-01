@@ -11,3 +11,16 @@ trait MetricsFactory extends js.Object {
   def resetCache(): scala.Unit
 }
 
+object MetricsFactory {
+  @scala.inline
+  def apply(
+    getAllMetrics: js.Function0[js.Array[CommandMetrics]],
+    getOrCreate: js.Function1[MetricsProperties, CommandMetrics],
+    resetCache: js.Function0[scala.Unit]
+  ): MetricsFactory = {
+    val __obj = js.Dynamic.literal(getAllMetrics = getAllMetrics, getOrCreate = getOrCreate, resetCache = resetCache)
+  
+    __obj.asInstanceOf[MetricsFactory]
+  }
+}
+

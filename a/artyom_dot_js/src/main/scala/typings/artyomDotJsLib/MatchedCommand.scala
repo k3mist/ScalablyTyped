@@ -11,3 +11,12 @@ trait MatchedCommand extends js.Object {
   var wildcard: js.UndefOr[js.Any] = js.undefined
 }
 
+object MatchedCommand {
+  @scala.inline
+  def apply(index: scala.Double, instruction: ArtyomCommand, wildcard: js.Any = null): MatchedCommand = {
+    val __obj = js.Dynamic.literal(index = index, instruction = instruction)
+    if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard)
+    __obj.asInstanceOf[MatchedCommand]
+  }
+}
+

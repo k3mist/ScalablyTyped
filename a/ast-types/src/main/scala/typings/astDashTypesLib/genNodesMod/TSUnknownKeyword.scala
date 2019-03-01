@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSUnknownKeyword
 }
 
+object TSUnknownKeyword {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.TSUnknownKeyword): TSUnknownKeyword = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[TSUnknownKeyword]
+  }
+}
+

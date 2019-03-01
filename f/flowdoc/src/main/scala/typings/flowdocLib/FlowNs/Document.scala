@@ -12,3 +12,17 @@ trait Document extends js.Object {
   var `type`: flowdocLib.flowdocLibStrings.DOCUMENT
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    children: js.Array[Page],
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: flowdocLib.flowdocLibStrings.DOCUMENT
+  ): Document = {
+    val __obj = js.Dynamic.literal(children = children, id = id, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[Document]
+  }
+}
+

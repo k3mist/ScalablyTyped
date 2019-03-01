@@ -16,3 +16,20 @@ trait ResourceHandler extends js.Object {
   def patch(asset: Asset, assets: AssetRegistry): scala.Unit
 }
 
+object ResourceHandler {
+  @scala.inline
+  def apply(
+    load_string: js.Function2[
+      playcanvasLib.playcanvasLibStrings.string, 
+      js.Function1[/* repeated */ js.Any, js.Object], 
+      scala.Unit
+    ],
+    open_string: js.Function2[playcanvasLib.playcanvasLibStrings.string, js.Any, js.Any],
+    patch: js.Function2[Asset, AssetRegistry, scala.Unit]
+  ): ResourceHandler = {
+    val __obj = js.Dynamic.literal(load_string = load_string, open_string = open_string, patch = patch)
+  
+    __obj.asInstanceOf[ResourceHandler]
+  }
+}
+

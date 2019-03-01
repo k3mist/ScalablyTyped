@@ -9,3 +9,12 @@ trait Serializer extends js.Object {
   def serialize(data: js.Any): js.Any
 }
 
+object Serializer {
+  @scala.inline
+  def apply(serialize: js.Function1[js.Any, js.Any]): Serializer = {
+    val __obj = js.Dynamic.literal(serialize = serialize)
+  
+    __obj.asInstanceOf[Serializer]
+  }
+}
+

@@ -34,3 +34,28 @@ trait StateInline extends js.Object {
   def pushPending(): scala.Unit
 }
 
+object StateInline {
+  @scala.inline
+  def apply(
+    env: Env,
+    isInLabel: scala.Boolean,
+    labelUnmatchedScopes: scala.Double,
+    level: scala.Double,
+    linkContent: java.lang.String,
+    linkLevel: scala.Double,
+    parser: remarkableLib.libMod.ParserInline,
+    pending: java.lang.String,
+    pendingLevel: scala.Double,
+    pos: scala.Double,
+    posMax: scala.Double,
+    push: js.Function1[ContentToken, scala.Unit],
+    pushPending: js.Function0[scala.Unit],
+    src: java.lang.String,
+    tokens: js.Array[ContentToken]
+  ): StateInline = {
+    val __obj = js.Dynamic.literal(env = env, isInLabel = isInLabel, labelUnmatchedScopes = labelUnmatchedScopes, level = level, linkContent = linkContent, linkLevel = linkLevel, parser = parser, pending = pending, pendingLevel = pendingLevel, pos = pos, posMax = posMax, push = push, pushPending = pushPending, src = src, tokens = tokens)
+  
+    __obj.asInstanceOf[StateInline]
+  }
+}
+

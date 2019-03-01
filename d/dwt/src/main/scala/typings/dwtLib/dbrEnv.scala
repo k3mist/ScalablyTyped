@@ -14,3 +14,19 @@ trait dbrEnv extends js.Object {
   def onAutoConnectServiceSuccess(): scala.Unit
 }
 
+object dbrEnv {
+  @scala.inline
+  def apply(
+    bAutoConnectService: scala.Boolean,
+    logLevel: scala.Double,
+    onAutoConnectServiceError: js.Function1[js.Any, scala.Unit],
+    onAutoConnectServiceSuccess: js.Function0[scala.Unit],
+    productKey: java.lang.String,
+    resourcesPath: java.lang.String
+  ): dbrEnv = {
+    val __obj = js.Dynamic.literal(bAutoConnectService = bAutoConnectService, logLevel = logLevel, onAutoConnectServiceError = onAutoConnectServiceError, onAutoConnectServiceSuccess = onAutoConnectServiceSuccess, productKey = productKey, resourcesPath = resourcesPath)
+  
+    __obj.asInstanceOf[dbrEnv]
+  }
+}
+

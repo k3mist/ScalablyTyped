@@ -12,3 +12,12 @@ trait ColumnGroupHeaderProps extends js.Object {
   var width: scala.Double
 }
 
+object ColumnGroupHeaderProps {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): ColumnGroupHeaderProps = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[ColumnGroupHeaderProps]
+  }
+}
+

@@ -32,3 +32,19 @@ trait LQuery[T] extends js.Object {
   var values: js.Array[_]
 }
 
+object LQuery {
+  @scala.inline
+  def apply[T](
+    list: QueryList[T],
+    predicate: QueryPredicate[T],
+    values: js.Array[_],
+    containerValues: js.Array[_] = null,
+    next: LQuery[_] = null
+  ): LQuery[T] = {
+    val __obj = js.Dynamic.literal(list = list, predicate = predicate, values = values)
+    if (containerValues != null) __obj.updateDynamic("containerValues")(containerValues)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[LQuery[T]]
+  }
+}
+

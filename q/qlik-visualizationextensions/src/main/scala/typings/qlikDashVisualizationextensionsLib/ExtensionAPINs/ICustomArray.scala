@@ -13,3 +13,21 @@ trait ICustomArray extends ICustomControl {
   var itemTitleRef: java.lang.String
 }
 
+object ICustomArray {
+  @scala.inline
+  def apply(
+    addTranslation: java.lang.String,
+    allowAdd: scala.Boolean,
+    allowMove: scala.Boolean,
+    allowRemove: scala.Boolean,
+    itemTitleRef: java.lang.String,
+    label: java.lang.String,
+    ref: java.lang.String,
+    `type`: java.lang.String
+  ): ICustomArray = {
+    val __obj = js.Dynamic.literal(addTranslation = addTranslation, allowAdd = allowAdd, allowMove = allowMove, allowRemove = allowRemove, itemTitleRef = itemTitleRef, label = label, ref = ref, `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomArray]
+  }
+}
+

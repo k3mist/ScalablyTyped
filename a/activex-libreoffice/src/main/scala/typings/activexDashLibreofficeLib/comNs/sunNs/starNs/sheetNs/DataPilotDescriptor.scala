@@ -48,3 +48,75 @@ trait DataPilotDescriptor
   var SourceServiceName: java.lang.String
 }
 
+object DataPilotDescriptor {
+  @scala.inline
+  def apply(
+    ColumnFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    ColumnGrand: scala.Boolean,
+    DataFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    DataLayoutField: XDataPilotField,
+    DataPilotFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    DrillDownOnDoubleClick: scala.Boolean,
+    FilterDescriptor: XSheetFilterDescriptor,
+    GrandTotalName: java.lang.String,
+    HiddenFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    IgnoreEmptyRows: scala.Boolean,
+    ImportDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Name: java.lang.String,
+    PageFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RepeatIfEmpty: scala.Boolean,
+    RowFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    RowGrand: scala.Boolean,
+    ServiceArguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ShowFilterButton: scala.Boolean,
+    SourceRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    SourceServiceName: java.lang.String,
+    Tag: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getColumnFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getDataFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getDataLayoutField: js.Function0[XDataPilotField],
+    getDataPilotFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getFilterDescriptor: js.Function0[XSheetFilterDescriptor],
+    getHiddenFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getName: js.Function0[java.lang.String],
+    getPageFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getRowFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getSourceRange: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getTag: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setSourceRange: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    setTag: js.Function1[java.lang.String, scala.Unit]
+  ): DataPilotDescriptor = {
+    val __obj = js.Dynamic.literal(ColumnFields = ColumnFields, ColumnGrand = ColumnGrand, DataFields = DataFields, DataLayoutField = DataLayoutField, DataPilotFields = DataPilotFields, DrillDownOnDoubleClick = DrillDownOnDoubleClick, FilterDescriptor = FilterDescriptor, GrandTotalName = GrandTotalName, HiddenFields = HiddenFields, IgnoreEmptyRows = IgnoreEmptyRows, ImportDescriptor = ImportDescriptor, Name = Name, PageFields = PageFields, PropertySetInfo = PropertySetInfo, RepeatIfEmpty = RepeatIfEmpty, RowFields = RowFields, RowGrand = RowGrand, ServiceArguments = ServiceArguments, ShowFilterButton = ShowFilterButton, SourceRange = SourceRange, SourceServiceName = SourceServiceName, Tag = Tag, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getColumnFields = getColumnFields, getDataFields = getDataFields, getDataLayoutField = getDataLayoutField, getDataPilotFields = getDataPilotFields, getFilterDescriptor = getFilterDescriptor, getHiddenFields = getHiddenFields, getName = getName, getPageFields = getPageFields, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getRowFields = getRowFields, getSourceRange = getSourceRange, getTag = getTag, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue, setSourceRange = setSourceRange, setTag = setTag)
+  
+    __obj.asInstanceOf[DataPilotDescriptor]
+  }
+}
+

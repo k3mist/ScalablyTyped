@@ -177,3 +177,68 @@ trait UserActivity
   def setWebpageURL(webpageURL: java.lang.String): scala.Unit
 }
 
+object UserActivity {
+  @scala.inline
+  def apply(
+    activityType: java.lang.String,
+    addContentAttributeSet: js.Function1[SearchableItemAttributeSet, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    becomeCurrent: js.Function0[scala.Unit],
+    bubbleParent: scala.Boolean,
+    eligibleForHandoff: scala.Boolean,
+    eligibleForPublicIndexing: scala.Boolean,
+    eligibleForSearch: scala.Boolean,
+    expirationDate: java.lang.String,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getActivityType: js.Function0[java.lang.String],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getEligibleForHandoff: js.Function0[scala.Boolean],
+    getEligibleForPublicIndexing: js.Function0[scala.Boolean],
+    getEligibleForSearch: js.Function0[scala.Boolean],
+    getExpirationDate: js.Function0[java.lang.String],
+    getKeywords: js.Function0[js.Array[java.lang.String]],
+    getNeedsSave: js.Function0[scala.Boolean],
+    getRequiredUserInfoKeys: js.Function0[js.Array[java.lang.String]],
+    getSupported: js.Function0[scala.Boolean],
+    getTitle: js.Function0[java.lang.String],
+    getUserInfo: js.Function0[js.Any],
+    getWebpageURL: js.Function0[java.lang.String],
+    invalidate: js.Function0[scala.Unit],
+    isSupported: js.Function0[scala.Boolean],
+    keywords: js.Array[java.lang.String],
+    needsSave: scala.Boolean,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    requiredUserInfoKeys: js.Array[java.lang.String],
+    resignCurrent: js.Function0[scala.Unit],
+    setActivityType: js.Function1[java.lang.String, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setEligibleForHandoff: js.Function1[scala.Boolean, scala.Unit],
+    setEligibleForPublicIndexing: js.Function1[scala.Boolean, scala.Unit],
+    setEligibleForSearch: js.Function1[scala.Boolean, scala.Unit],
+    setExpirationDate: js.Function1[java.lang.String, scala.Unit],
+    setKeywords: js.Function1[js.Array[java.lang.String], scala.Unit],
+    setNeedsSave: js.Function1[scala.Boolean, scala.Unit],
+    setRequiredUserInfoKeys: js.Function1[js.Array[java.lang.String], scala.Unit],
+    setSupported: js.Function1[scala.Boolean, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    setUserInfo: js.Function1[js.Any, scala.Unit],
+    setWebpageURL: js.Function1[java.lang.String, scala.Unit],
+    supported: scala.Boolean,
+    title: java.lang.String,
+    userInfo: js.Any,
+    webpageURL: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): UserActivity = {
+    val __obj = js.Dynamic.literal(activityType = activityType, addContentAttributeSet = addContentAttributeSet, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, becomeCurrent = becomeCurrent, bubbleParent = bubbleParent, eligibleForHandoff = eligibleForHandoff, eligibleForPublicIndexing = eligibleForPublicIndexing, eligibleForSearch = eligibleForSearch, expirationDate = expirationDate, fireEvent = fireEvent, getActivityType = getActivityType, getApiName = getApiName, getBubbleParent = getBubbleParent, getEligibleForHandoff = getEligibleForHandoff, getEligibleForPublicIndexing = getEligibleForPublicIndexing, getEligibleForSearch = getEligibleForSearch, getExpirationDate = getExpirationDate, getKeywords = getKeywords, getNeedsSave = getNeedsSave, getRequiredUserInfoKeys = getRequiredUserInfoKeys, getSupported = getSupported, getTitle = getTitle, getUserInfo = getUserInfo, getWebpageURL = getWebpageURL, invalidate = invalidate, isSupported = isSupported, keywords = keywords, needsSave = needsSave, removeEventListener = removeEventListener, requiredUserInfoKeys = requiredUserInfoKeys, resignCurrent = resignCurrent, setActivityType = setActivityType, setBubbleParent = setBubbleParent, setEligibleForHandoff = setEligibleForHandoff, setEligibleForPublicIndexing = setEligibleForPublicIndexing, setEligibleForSearch = setEligibleForSearch, setExpirationDate = setExpirationDate, setKeywords = setKeywords, setNeedsSave = setNeedsSave, setRequiredUserInfoKeys = setRequiredUserInfoKeys, setSupported = setSupported, setTitle = setTitle, setUserInfo = setUserInfo, setWebpageURL = setWebpageURL, supported = supported, title = title, userInfo = userInfo, webpageURL = webpageURL)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[UserActivity]
+  }
+}
+

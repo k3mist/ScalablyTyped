@@ -18,3 +18,23 @@ trait OperationDefinitionNode
   val variableDefinitions: js.UndefOr[js.Array[VariableDefinitionNode]] = js.undefined
 }
 
+object OperationDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.OperationDefinition,
+    operation: OperationTypeNode,
+    selectionSet: SelectionSetNode,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null,
+    name: NameNode = null,
+    variableDefinitions: js.Array[VariableDefinitionNode] = null
+  ): OperationDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, operation = operation, selectionSet = selectionSet)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    __obj.asInstanceOf[OperationDefinitionNode]
+  }
+}
+

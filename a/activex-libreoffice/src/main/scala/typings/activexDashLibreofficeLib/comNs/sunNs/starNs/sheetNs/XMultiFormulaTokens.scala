@@ -35,3 +35,21 @@ trait XMultiFormulaTokens extends js.Object {
   def setTokens(nIndex: scala.Double, aTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken]): scala.Unit
 }
 
+object XMultiFormulaTokens {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    getCount: js.Function0[scala.Double],
+    getTokens: js.Function1[scala.Double, activexDashInteropLib.SafeArray[FormulaToken]],
+    setTokens: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
+      scala.Unit
+    ]
+  ): XMultiFormulaTokens = {
+    val __obj = js.Dynamic.literal(Count = Count, getCount = getCount, getTokens = getTokens, setTokens = setTokens)
+  
+    __obj.asInstanceOf[XMultiFormulaTokens]
+  }
+}
+

@@ -10,3 +10,12 @@ trait PullRequestTabExtensionConfig extends js.Object {
   var repositoryId: java.lang.String
 }
 
+object PullRequestTabExtensionConfig {
+  @scala.inline
+  def apply(pullRequestId: scala.Double, repositoryId: java.lang.String): PullRequestTabExtensionConfig = {
+    val __obj = js.Dynamic.literal(pullRequestId = pullRequestId, repositoryId = repositoryId)
+  
+    __obj.asInstanceOf[PullRequestTabExtensionConfig]
+  }
+}
+

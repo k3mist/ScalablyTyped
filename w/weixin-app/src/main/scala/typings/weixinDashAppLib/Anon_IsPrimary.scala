@@ -10,3 +10,12 @@ trait Anon_IsPrimary extends js.Object {
   var uuid: java.lang.String
 }
 
+object Anon_IsPrimary {
+  @scala.inline
+  def apply(isPrimary: scala.Boolean, uuid: java.lang.String): Anon_IsPrimary = {
+    val __obj = js.Dynamic.literal(isPrimary = isPrimary, uuid = uuid)
+  
+    __obj.asInstanceOf[Anon_IsPrimary]
+  }
+}
+

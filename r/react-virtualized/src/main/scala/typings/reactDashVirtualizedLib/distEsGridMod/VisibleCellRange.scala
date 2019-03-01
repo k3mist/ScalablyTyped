@@ -10,3 +10,12 @@ trait VisibleCellRange extends js.Object {
   var stop: scala.Double
 }
 
+object VisibleCellRange {
+  @scala.inline
+  def apply(start: scala.Double, stop: scala.Double): VisibleCellRange = {
+    val __obj = js.Dynamic.literal(start = start, stop = stop)
+  
+    __obj.asInstanceOf[VisibleCellRange]
+  }
+}
+

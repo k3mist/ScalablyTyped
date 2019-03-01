@@ -10,3 +10,18 @@ trait ICustomColorPicker extends ICustomControl {
   var defaultValue: scala.Double
 }
 
+object ICustomColorPicker {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.`color-picker`,
+    defaultValue: scala.Double,
+    label: java.lang.String,
+    ref: java.lang.String,
+    `type`: java.lang.String
+  ): ICustomColorPicker = {
+    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, ref = ref, `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomColorPicker]
+  }
+}
+

@@ -50,3 +50,27 @@ trait PublicVirtualInterfaceArgs extends js.Object {
   val vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double]
 }
 
+object PublicVirtualInterfaceArgs {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    routeFilterPrefixes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    amazonAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    bgpAuthKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): PublicVirtualInterfaceArgs = {
+    val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], routeFilterPrefixes = routeFilterPrefixes.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublicVirtualInterfaceArgs]
+  }
+}
+

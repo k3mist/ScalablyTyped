@@ -10,3 +10,12 @@ trait ResolutionValue extends js.Object {
   var name: java.lang.String
 }
 
+object ResolutionValue {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String): ResolutionValue = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
+    __obj.asInstanceOf[ResolutionValue]
+  }
+}
+

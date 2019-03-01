@@ -10,3 +10,15 @@ trait GraphQLConnectionDefinitions extends js.Object {
   var edgeType: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
 }
 
+object GraphQLConnectionDefinitions {
+  @scala.inline
+  def apply(
+    connectionType: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
+    edgeType: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ): GraphQLConnectionDefinitions = {
+    val __obj = js.Dynamic.literal(connectionType = connectionType, edgeType = edgeType)
+  
+    __obj.asInstanceOf[GraphQLConnectionDefinitions]
+  }
+}
+

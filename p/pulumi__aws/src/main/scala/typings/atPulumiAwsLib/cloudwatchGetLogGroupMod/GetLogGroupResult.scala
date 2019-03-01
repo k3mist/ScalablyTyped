@@ -20,3 +20,12 @@ trait GetLogGroupResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetLogGroupResult {
+  @scala.inline
+  def apply(arn: java.lang.String, creationTime: scala.Double, id: java.lang.String): GetLogGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, creationTime = creationTime, id = id)
+  
+    __obj.asInstanceOf[GetLogGroupResult]
+  }
+}
+

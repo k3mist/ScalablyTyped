@@ -13,3 +13,18 @@ trait Code extends js.Object {
   def getAllServices(callback: CbCallback): scala.Unit
 }
 
+object Code {
+  @scala.inline
+  def apply(
+    execute: js.Function4[java.lang.String, js.Object, scala.Boolean, CbCallback, scala.Unit],
+    getAllServices: js.Function1[CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    user: APIUser
+  ): Code = {
+    val __obj = js.Dynamic.literal(execute = execute, getAllServices = getAllServices, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
+    __obj.asInstanceOf[Code]
+  }
+}
+

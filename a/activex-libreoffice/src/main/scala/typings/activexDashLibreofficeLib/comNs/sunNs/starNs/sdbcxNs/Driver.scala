@@ -19,3 +19,46 @@ trait Driver
      with XCreateCatalog
      with XDropCatalog
 
+object Driver {
+  @scala.inline
+  def apply(
+    MajorVersion: scala.Double,
+    MinorVersion: scala.Double,
+    acceptsURL: js.Function1[java.lang.String, scala.Boolean],
+    acquire: js.Function0[scala.Unit],
+    connect: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
+    ],
+    createCatalog: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    dropCatalog: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    getDataDefinitionByConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, XTablesSupplier],
+    getDataDefinitionByURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XTablesSupplier
+    ],
+    getMajorVersion: js.Function0[scala.Double],
+    getMinorVersion: js.Function0[scala.Double],
+    getPropertyInfo: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.DriverPropertyInfo]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): Driver = {
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = acceptsURL, acquire = acquire, connect = connect, createCatalog = createCatalog, dropCatalog = dropCatalog, getDataDefinitionByConnection = getDataDefinitionByConnection, getDataDefinitionByURL = getDataDefinitionByURL, getMajorVersion = getMajorVersion, getMinorVersion = getMinorVersion, getPropertyInfo = getPropertyInfo, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[Driver]
+  }
+}
+

@@ -23,3 +23,18 @@ trait XSheetFilterable
   def filter(xDescriptor: XSheetFilterDescriptor): scala.Unit
 }
 
+object XSheetFilterable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createFilterDescriptor: js.Function1[scala.Boolean, XSheetFilterDescriptor],
+    filter: js.Function1[XSheetFilterDescriptor, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetFilterable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createFilterDescriptor = createFilterDescriptor, filter = filter, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSheetFilterable]
+  }
+}
+

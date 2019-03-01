@@ -12,3 +12,12 @@ trait Anon_NameScore extends js.Object {
   var score: scala.Double
 }
 
+object Anon_NameScore {
+  @scala.inline
+  def apply(name: scala.Double, score: scala.Double): Anon_NameScore = {
+    val __obj = js.Dynamic.literal(name = name, score = score)
+  
+    __obj.asInstanceOf[Anon_NameScore]
+  }
+}
+

@@ -18,3 +18,20 @@ trait XNumberFormatsSupplier
   def getNumberFormats(): XNumberFormats
 }
 
+object XNumberFormatsSupplier {
+  @scala.inline
+  def apply(
+    NumberFormatSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    NumberFormats: XNumberFormats,
+    acquire: js.Function0[scala.Unit],
+    getNumberFormatSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getNumberFormats: js.Function0[XNumberFormats],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumberFormatsSupplier = {
+    val __obj = js.Dynamic.literal(NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, acquire = acquire, getNumberFormatSettings = getNumberFormatSettings, getNumberFormats = getNumberFormats, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XNumberFormatsSupplier]
+  }
+}
+

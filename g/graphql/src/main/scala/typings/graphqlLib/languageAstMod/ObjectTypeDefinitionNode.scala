@@ -17,3 +17,24 @@ trait ObjectTypeDefinitionNode
   val name: NameNode
 }
 
+object ObjectTypeDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.ObjectTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    fields: js.Array[FieldDefinitionNode] = null,
+    interfaces: js.Array[NamedTypeNode] = null,
+    loc: Location = null
+  ): ObjectTypeDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ObjectTypeDefinitionNode]
+  }
+}
+

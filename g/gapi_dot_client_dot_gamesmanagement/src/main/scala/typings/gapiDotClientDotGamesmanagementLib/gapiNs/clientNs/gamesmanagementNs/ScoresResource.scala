@@ -30,3 +30,33 @@ trait ScoresResource extends js.Object {
   def resetMultipleForAllPlayers(request: gapiDotClientDotGamesmanagementLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object ScoresResource {
+  @scala.inline
+  def apply(
+    reset: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreResetResponse]
+    ],
+    resetAll: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreResetAllResponse]
+    ],
+    resetAllForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetMultipleForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): ScoresResource = {
+    val __obj = js.Dynamic.literal(reset = reset, resetAll = resetAll, resetAllForAllPlayers = resetAllForAllPlayers, resetForAllPlayers = resetForAllPlayers, resetMultipleForAllPlayers = resetMultipleForAllPlayers)
+  
+    __obj.asInstanceOf[ScoresResource]
+  }
+}
+

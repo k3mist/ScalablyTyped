@@ -28,3 +28,19 @@ trait S3LocationArgs extends js.Object {
   ] = js.undefined
 }
 
+object S3LocationArgs {
+  @scala.inline
+  def apply(
+    s3BucketArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN],
+    s3Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArnInput],
+    subdirectory: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null
+  ): S3LocationArgs = {
+    val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Config = s3Config.asInstanceOf[js.Any], subdirectory = subdirectory.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[S3LocationArgs]
+  }
+}
+

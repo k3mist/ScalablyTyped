@@ -10,3 +10,19 @@ trait GridColumnMenuInitEvent extends GridEvent {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridColumnMenuInitEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    container: kendoDashUiLib.JQuery = null,
+    field: java.lang.String = null
+  ): GridColumnMenuInitEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[GridColumnMenuInitEvent]
+  }
+}
+

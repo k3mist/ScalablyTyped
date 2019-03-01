@@ -18,3 +18,23 @@ trait Clock extends js.Object {
   def tick(): JulianDate
 }
 
+object Clock {
+  @scala.inline
+  def apply(
+    canAnimate: scala.Boolean,
+    clockRange: ClockRange,
+    clockStep: ClockStep,
+    currentTime: JulianDate,
+    multiplier: scala.Double,
+    onTick: Event,
+    shouldAnimate: scala.Boolean,
+    startTime: JulianDate,
+    stopTime: JulianDate,
+    tick: js.Function0[JulianDate]
+  ): Clock = {
+    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, multiplier = multiplier, onTick = onTick, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, tick = tick)
+  
+    __obj.asInstanceOf[Clock]
+  }
+}
+

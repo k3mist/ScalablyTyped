@@ -38,3 +38,41 @@ trait ProductsResource extends js.Object {
   def unapprove(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object ProductsResource {
+  @scala.inline
+  def apply(
+    approve: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    generateApprovalUrl: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyLanguageCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductsGenerateApprovalUrlResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyLanguage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ],
+    getAppRestrictionsSchema: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyLanguage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppRestrictionsSchema]
+    ],
+    getPermissions: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductPermissions]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltApproved, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
+    ],
+    unapprove: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): ProductsResource = {
+    val __obj = js.Dynamic.literal(approve = approve, generateApprovalUrl = generateApprovalUrl, get = get, getAppRestrictionsSchema = getAppRestrictionsSchema, getPermissions = getPermissions, list = list, unapprove = unapprove)
+  
+    __obj.asInstanceOf[ProductsResource]
+  }
+}
+

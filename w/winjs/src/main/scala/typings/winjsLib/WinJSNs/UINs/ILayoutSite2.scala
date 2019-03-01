@@ -32,3 +32,18 @@ trait ILayoutSite2 extends js.Object {
   var visibleRange: js.Any
 }
 
+object ILayoutSite2 {
+  @scala.inline
+  def apply(
+    groupCount: scala.Double,
+    itemCount: winjsLib.WinJSNs.Promise[scala.Double],
+    realizedRange: js.Any,
+    tree: js.Any,
+    visibleRange: js.Any
+  ): ILayoutSite2 = {
+    val __obj = js.Dynamic.literal(groupCount = groupCount, itemCount = itemCount, realizedRange = realizedRange, tree = tree, visibleRange = visibleRange)
+  
+    __obj.asInstanceOf[ILayoutSite2]
+  }
+}
+

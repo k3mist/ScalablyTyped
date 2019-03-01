@@ -29,3 +29,16 @@ import scala.scalajs.js.annotation._
   var SortFields: activexDashInteropLib.SafeArray[TableSortField]
 }
 
+object TableSortDescriptor2 {
+  @scala.inline
+  def apply(
+    IsSortColumns: scala.Boolean,
+    MaxSortFieldsCount: scala.Double,
+    SortFields: activexDashInteropLib.SafeArray[TableSortField]
+  ): TableSortDescriptor2 = {
+    val __obj = js.Dynamic.literal(IsSortColumns = IsSortColumns, MaxSortFieldsCount = MaxSortFieldsCount, SortFields = SortFields)
+  
+    __obj.asInstanceOf[TableSortDescriptor2]
+  }
+}
+

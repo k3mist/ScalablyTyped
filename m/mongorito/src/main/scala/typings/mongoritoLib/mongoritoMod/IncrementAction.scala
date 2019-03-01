@@ -10,3 +10,12 @@ trait IncrementAction extends Action {
   var `type`: ActionTypes
 }
 
+object IncrementAction {
+  @scala.inline
+  def apply(fields: js.Object, `type`: ActionTypes): IncrementAction = {
+    val __obj = js.Dynamic.literal(fields = fields, `type` = `type`)
+  
+    __obj.asInstanceOf[IncrementAction]
+  }
+}
+

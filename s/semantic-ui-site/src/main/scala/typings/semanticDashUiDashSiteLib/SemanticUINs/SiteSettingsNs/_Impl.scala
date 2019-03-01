@@ -39,3 +39,22 @@ trait _Impl extends js.Object {
   var verbose: scala.Boolean
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    debug: scala.Boolean,
+    modules: js.Array[java.lang.String],
+    name: java.lang.String,
+    namespace: java.lang.String,
+    namespaceStub: semanticDashUiDashSiteLib.SemanticUINs.SiteNs.NamespaceStubSettings,
+    performance: scala.Boolean,
+    silent: scala.Boolean,
+    siteNamespace: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(debug = debug, modules = modules, name = name, namespace = namespace, namespaceStub = namespaceStub.asInstanceOf[js.Any], performance = performance, silent = silent, siteNamespace = siteNamespace, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

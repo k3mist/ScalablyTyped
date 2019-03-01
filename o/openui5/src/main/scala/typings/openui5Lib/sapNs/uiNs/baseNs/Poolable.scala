@@ -25,3 +25,12 @@ trait Poolable extends js.Object {
   def reset(): scala.Unit
 }
 
+object Poolable {
+  @scala.inline
+  def apply(init: js.Function0[scala.Unit], reset: js.Function0[scala.Unit]): Poolable = {
+    val __obj = js.Dynamic.literal(init = init, reset = reset)
+  
+    __obj.asInstanceOf[Poolable]
+  }
+}
+

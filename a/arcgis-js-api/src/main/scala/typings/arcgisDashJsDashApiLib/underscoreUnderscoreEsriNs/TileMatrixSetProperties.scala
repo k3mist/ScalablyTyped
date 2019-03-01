@@ -26,3 +26,18 @@ trait TileMatrixSetProperties extends js.Object {
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 
+object TileMatrixSetProperties {
+  @scala.inline
+  def apply(
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    tileInfo: TileInfoProperties = null
+  ): TileMatrixSetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    __obj.asInstanceOf[TileMatrixSetProperties]
+  }
+}
+

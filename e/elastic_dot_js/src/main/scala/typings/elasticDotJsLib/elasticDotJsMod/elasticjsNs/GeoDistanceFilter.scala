@@ -67,3 +67,25 @@ trait GeoDistanceFilter extends Filter {
   def unit(unit: java.lang.String): GeoDistanceFilter
 }
 
+object GeoDistanceFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, GeoDistanceFilter],
+    cacheKey: js.Function1[java.lang.String, GeoDistanceFilter],
+    distance: js.Function1[stdLib.Number, GeoDistanceFilter],
+    distanceType: js.Function1[java.lang.String, GeoDistanceFilter],
+    field: js.Function1[java.lang.String, GeoDistanceFilter],
+    name: js.Function1[java.lang.String, GeoDistanceFilter],
+    normalize: js.Function1[java.lang.String, GeoDistanceFilter],
+    optimizeBbox: js.Function1[java.lang.String, GeoDistanceFilter],
+    point: js.Function1[GeoPoint, GeoDistanceFilter],
+    toJSON: js.Function0[GeoDistanceFilter],
+    unit: js.Function1[java.lang.String, GeoDistanceFilter]
+  ): GeoDistanceFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, distance = distance, distanceType = distanceType, field = field, name = name, normalize = normalize, optimizeBbox = optimizeBbox, point = point, toJSON = toJSON, unit = unit)
+  
+    __obj.asInstanceOf[GeoDistanceFilter]
+  }
+}
+

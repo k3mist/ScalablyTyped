@@ -52,3 +52,24 @@ trait Comment extends js.Object {
   var usersLiked: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    commentType: CommentType,
+    content: java.lang.String,
+    id: scala.Double,
+    isDeleted: scala.Boolean,
+    lastContentUpdatedDate: stdLib.Date,
+    lastUpdatedDate: stdLib.Date,
+    parentCommentId: scala.Double,
+    publishedDate: stdLib.Date,
+    usersLiked: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
+  ): Comment = {
+    val __obj = js.Dynamic.literal(_links = _links, author = author, commentType = commentType, content = content, id = id, isDeleted = isDeleted, lastContentUpdatedDate = lastContentUpdatedDate, lastUpdatedDate = lastUpdatedDate, parentCommentId = parentCommentId, publishedDate = publishedDate, usersLiked = usersLiked)
+  
+    __obj.asInstanceOf[Comment]
+  }
+}
+

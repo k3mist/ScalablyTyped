@@ -12,3 +12,12 @@ trait TagVote extends js.Object {
   var ups: scala.Double
 }
 
+object TagVote {
+  @scala.inline
+  def apply(author: java.lang.String, downs: scala.Double, name: java.lang.String, ups: scala.Double): TagVote = {
+    val __obj = js.Dynamic.literal(author = author, downs = downs, name = name, ups = ups)
+  
+    __obj.asInstanceOf[TagVote]
+  }
+}
+

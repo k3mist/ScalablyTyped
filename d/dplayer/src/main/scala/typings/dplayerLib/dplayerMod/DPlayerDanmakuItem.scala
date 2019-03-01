@@ -11,3 +11,12 @@ trait DPlayerDanmakuItem extends js.Object {
   var `type`: DirectionType
 }
 
+object DPlayerDanmakuItem {
+  @scala.inline
+  def apply(color: java.lang.String, text: java.lang.String, `type`: DirectionType): DPlayerDanmakuItem = {
+    val __obj = js.Dynamic.literal(color = color, text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[DPlayerDanmakuItem]
+  }
+}
+

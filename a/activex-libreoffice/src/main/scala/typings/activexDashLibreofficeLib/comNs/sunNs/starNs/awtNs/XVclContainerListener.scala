@@ -19,3 +19,19 @@ trait XVclContainerListener
   def windowRemoved(e: VclContainerEvent): scala.Unit
 }
 
+object XVclContainerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    windowAdded: js.Function1[VclContainerEvent, scala.Unit],
+    windowRemoved: js.Function1[VclContainerEvent, scala.Unit]
+  ): XVclContainerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowAdded = windowAdded, windowRemoved = windowRemoved)
+  
+    __obj.asInstanceOf[XVclContainerListener]
+  }
+}
+

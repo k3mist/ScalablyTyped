@@ -26,3 +26,17 @@ trait XColumnLocate
   def findColumn(columnName: java.lang.String): scala.Double
 }
 
+object XColumnLocate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    findColumn: js.Function1[java.lang.String, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XColumnLocate = {
+    val __obj = js.Dynamic.literal(acquire = acquire, findColumn = findColumn, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XColumnLocate]
+  }
+}
+

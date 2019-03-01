@@ -17,3 +17,20 @@ trait FragmentDefinition
   var typeCondition: NamedType
 }
 
+object FragmentDefinition {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    name: Name,
+    selectionSet: SelectionSet,
+    typeCondition: NamedType,
+    directives: js.Array[Directive] = null,
+    loc: Location = null
+  ): FragmentDefinition = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, selectionSet = selectionSet, typeCondition = typeCondition)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[FragmentDefinition]
+  }
+}
+

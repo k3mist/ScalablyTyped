@@ -27,3 +27,19 @@ trait ArcGISMapServiceCapabilities
   var operations: ArcGISMapServiceCapabilitiesOperations
 }
 
+object ArcGISMapServiceCapabilities {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    exportMap: ArcGISMapServiceCapabilitiesExportMap,
+    exportTiles: ArcGISMapServiceCapabilitiesExportTiles,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    operations: ArcGISMapServiceCapabilitiesOperations,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ArcGISMapServiceCapabilities = {
+    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ArcGISMapServiceCapabilities]
+  }
+}
+

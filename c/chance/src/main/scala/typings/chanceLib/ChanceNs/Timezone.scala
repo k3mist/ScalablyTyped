@@ -14,3 +14,19 @@ trait Timezone extends js.Object {
   var utc: js.Array[java.lang.String]
 }
 
+object Timezone {
+  @scala.inline
+  def apply(
+    abbr: java.lang.String,
+    isdst: scala.Boolean,
+    name: java.lang.String,
+    offset: scala.Double,
+    text: java.lang.String,
+    utc: js.Array[java.lang.String]
+  ): Timezone = {
+    val __obj = js.Dynamic.literal(abbr = abbr, isdst = isdst, name = name, offset = offset, text = text, utc = utc)
+  
+    __obj.asInstanceOf[Timezone]
+  }
+}
+

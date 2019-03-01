@@ -12,3 +12,13 @@ trait ItemOptions extends js.Object {
   var imageSelected: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemOptions {
+  @scala.inline
+  def apply(image: java.lang.String, badge: java.lang.String = null, imageSelected: java.lang.String = null): ItemOptions = {
+    val __obj = js.Dynamic.literal(image = image)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (imageSelected != null) __obj.updateDynamic("imageSelected")(imageSelected)
+    __obj.asInstanceOf[ItemOptions]
+  }
+}
+

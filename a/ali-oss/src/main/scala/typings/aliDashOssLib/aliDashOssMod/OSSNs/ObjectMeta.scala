@@ -20,3 +20,20 @@ trait ObjectMeta extends js.Object {
   var `type`: java.lang.String
 }
 
+object ObjectMeta {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    lastModified: java.lang.String,
+    name: java.lang.String,
+    owner: OwnerType,
+    size: scala.Double,
+    storageClass: StorageType,
+    `type`: java.lang.String
+  ): ObjectMeta = {
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, name = name, owner = owner, size = size, storageClass = storageClass, `type` = `type`)
+  
+    __obj.asInstanceOf[ObjectMeta]
+  }
+}
+

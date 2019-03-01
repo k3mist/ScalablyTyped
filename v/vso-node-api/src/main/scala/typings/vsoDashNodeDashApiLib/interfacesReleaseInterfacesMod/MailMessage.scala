@@ -18,3 +18,23 @@ trait MailMessage extends js.Object {
   var to: EmailRecipients
 }
 
+object MailMessage {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    cC: EmailRecipients,
+    inReplyTo: java.lang.String,
+    messageId: java.lang.String,
+    replyBy: stdLib.Date,
+    replyTo: EmailRecipients,
+    sections: js.Array[MailSectionType],
+    senderType: SenderType,
+    subject: java.lang.String,
+    to: EmailRecipients
+  ): MailMessage = {
+    val __obj = js.Dynamic.literal(body = body, cC = cC, inReplyTo = inReplyTo, messageId = messageId, replyBy = replyBy, replyTo = replyTo, sections = sections, senderType = senderType, subject = subject, to = to)
+  
+    __obj.asInstanceOf[MailMessage]
+  }
+}
+

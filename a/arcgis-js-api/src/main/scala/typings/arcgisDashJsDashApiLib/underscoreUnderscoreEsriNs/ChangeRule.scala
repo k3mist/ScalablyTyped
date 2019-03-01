@@ -45,3 +45,22 @@ trait ChangeRule
   var summarize: scala.Boolean
 }
 
+object ChangeRule {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    evaluators: js.Array[_],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    name: java.lang.String,
+    notifier: js.Any,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    summarize: scala.Boolean
+  ): ChangeRule = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, evaluators = evaluators, hasOwnProperty = hasOwnProperty, id = id, name = name, notifier = notifier, propertyIsEnumerable = propertyIsEnumerable, summarize = summarize)
+  
+    __obj.asInstanceOf[ChangeRule]
+  }
+}
+

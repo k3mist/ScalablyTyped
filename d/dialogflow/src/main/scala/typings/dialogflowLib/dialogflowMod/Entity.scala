@@ -10,3 +10,12 @@ trait Entity extends js.Object {
   var value: java.lang.String
 }
 
+object Entity {
+  @scala.inline
+  def apply(synonyms: js.Array[java.lang.String], value: java.lang.String): Entity = {
+    val __obj = js.Dynamic.literal(synonyms = synonyms, value = value)
+  
+    __obj.asInstanceOf[Entity]
+  }
+}
+

@@ -16,3 +16,21 @@ trait TabStrip_BeforeDragOver_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object TabStrip_BeforeDragOver_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    DragState: activexDashMsformsLib.MSFormsNs.fmDragState,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Index: scala.Double,
+    Shift: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): TabStrip_BeforeDragOver_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Data = Data, DragState = DragState, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+  
+    __obj.asInstanceOf[TabStrip_BeforeDragOver_Parameter]
+  }
+}
+

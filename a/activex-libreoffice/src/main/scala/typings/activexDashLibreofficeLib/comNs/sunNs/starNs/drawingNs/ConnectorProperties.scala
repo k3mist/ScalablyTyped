@@ -19,3 +19,18 @@ trait ConnectorProperties extends js.Object {
   var EdgeNode2VertDist: scala.Double
 }
 
+object ConnectorProperties {
+  @scala.inline
+  def apply(
+    EdgeKind: ConnectorType,
+    EdgeNode1HorzDist: scala.Double,
+    EdgeNode1VertDist: scala.Double,
+    EdgeNode2HorzDist: scala.Double,
+    EdgeNode2VertDist: scala.Double
+  ): ConnectorProperties = {
+    val __obj = js.Dynamic.literal(EdgeKind = EdgeKind, EdgeNode1HorzDist = EdgeNode1HorzDist, EdgeNode1VertDist = EdgeNode1VertDist, EdgeNode2HorzDist = EdgeNode2HorzDist, EdgeNode2VertDist = EdgeNode2VertDist)
+  
+    __obj.asInstanceOf[ConnectorProperties]
+  }
+}
+

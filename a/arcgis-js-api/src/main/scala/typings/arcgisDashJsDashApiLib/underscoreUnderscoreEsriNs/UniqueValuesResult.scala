@@ -15,3 +15,17 @@ trait UniqueValuesResult
   var uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos]
 }
 
+object UniqueValuesResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos]
+  ): UniqueValuesResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, uniqueValueInfos = uniqueValueInfos)
+  
+    __obj.asInstanceOf[UniqueValuesResult]
+  }
+}
+

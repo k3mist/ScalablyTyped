@@ -16,3 +16,12 @@ trait KeyCertPair extends js.Object {
   var private_key: nodeLib.Buffer
 }
 
+object KeyCertPair {
+  @scala.inline
+  def apply(cert_chain: nodeLib.Buffer, private_key: nodeLib.Buffer): KeyCertPair = {
+    val __obj = js.Dynamic.literal(cert_chain = cert_chain, private_key = private_key)
+  
+    __obj.asInstanceOf[KeyCertPair]
+  }
+}
+

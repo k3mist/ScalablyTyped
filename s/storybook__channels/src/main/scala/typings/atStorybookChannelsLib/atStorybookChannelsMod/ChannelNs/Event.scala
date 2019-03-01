@@ -11,3 +11,12 @@ trait Event extends js.Object {
   var `type`: atStorybookChannelsLib.EventName
 }
 
+object Event {
+  @scala.inline
+  def apply(args: js.Any, from: java.lang.String, `type`: atStorybookChannelsLib.EventName): Event = {
+    val __obj = js.Dynamic.literal(args = args, from = from, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Event]
+  }
+}
+

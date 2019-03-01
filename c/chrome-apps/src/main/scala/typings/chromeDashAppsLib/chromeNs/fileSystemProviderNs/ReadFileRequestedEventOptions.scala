@@ -15,3 +15,18 @@ trait ReadFileRequestedEventOptions
   var openRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object ReadFileRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    length: chromeDashAppsLib.chromeNs.double,
+    offset: chromeDashAppsLib.chromeNs.double,
+    openRequestId: chromeDashAppsLib.chromeNs.integer,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): ReadFileRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, length = length, offset = offset, openRequestId = openRequestId, requestId = requestId)
+  
+    __obj.asInstanceOf[ReadFileRequestedEventOptions]
+  }
+}
+

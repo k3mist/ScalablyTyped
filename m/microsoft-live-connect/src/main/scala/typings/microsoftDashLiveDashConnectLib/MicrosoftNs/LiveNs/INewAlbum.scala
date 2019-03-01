@@ -19,3 +19,12 @@ trait INewAlbum extends js.Object {
   var name: java.lang.String
 }
 
+object INewAlbum {
+  @scala.inline
+  def apply(name: java.lang.String, description: java.lang.String = null): INewAlbum = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[INewAlbum]
+  }
+}
+

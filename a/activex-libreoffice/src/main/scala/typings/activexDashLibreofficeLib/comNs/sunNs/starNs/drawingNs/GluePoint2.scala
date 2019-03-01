@@ -29,3 +29,18 @@ trait GluePoint2 extends js.Object {
   var PositionAlignment: Alignment
 }
 
+object GluePoint2 {
+  @scala.inline
+  def apply(
+    Escape: EscapeDirection,
+    IsRelative: scala.Boolean,
+    IsUserDefined: scala.Boolean,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    PositionAlignment: Alignment
+  ): GluePoint2 = {
+    val __obj = js.Dynamic.literal(Escape = Escape, IsRelative = IsRelative, IsUserDefined = IsUserDefined, Position = Position, PositionAlignment = PositionAlignment)
+  
+    __obj.asInstanceOf[GluePoint2]
+  }
+}
+

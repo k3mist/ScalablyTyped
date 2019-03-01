@@ -11,3 +11,15 @@ trait ElementArrayFinder extends js.Object {
   def getByText(text: java.lang.String): ElementFinder
 }
 
+object ElementArrayFinder {
+  @scala.inline
+  def apply(
+    $$data: js.Function1[java.lang.String, ElementArrayFinder],
+    getByText: js.Function1[java.lang.String, ElementFinder]
+  ): ElementArrayFinder = {
+    val __obj = js.Dynamic.literal($$data = $$data, getByText = getByText)
+  
+    __obj.asInstanceOf[ElementArrayFinder]
+  }
+}
+

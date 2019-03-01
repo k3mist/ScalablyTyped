@@ -46,3 +46,22 @@ trait IndexInfo extends js.Object {
   var using: couchbaseLib.couchbaseLibStrings.gsi
 }
 
+object IndexInfo {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    index_key: js.Array[java.lang.String],
+    is_primary: scala.Boolean,
+    keyspace_id: java.lang.String,
+    name: java.lang.String,
+    namespace_id: java.lang.String,
+    state: java.lang.String,
+    store_id: java.lang.String,
+    using: couchbaseLib.couchbaseLibStrings.gsi
+  ): IndexInfo = {
+    val __obj = js.Dynamic.literal(id = id, index_key = index_key, is_primary = is_primary, keyspace_id = keyspace_id, name = name, namespace_id = namespace_id, state = state, store_id = store_id, using = using)
+  
+    __obj.asInstanceOf[IndexInfo]
+  }
+}
+

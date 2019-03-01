@@ -53,3 +53,21 @@ trait GeoShapeQuery extends Query {
   def toJSON(): js.Any
 }
 
+object GeoShapeQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[stdLib.Number, GeoShapeQuery],
+    field: js.Function1[java.lang.String, GeoShapeQuery],
+    indexedShape: js.Function1[java.lang.String, GeoShapeQuery],
+    relation: js.Function1[java.lang.String, GeoShapeQuery],
+    shape: js.Function1[java.lang.String, GeoShapeQuery],
+    strategy: js.Function1[java.lang.String, GeoShapeQuery],
+    toJSON: js.Function0[js.Any]
+  ): GeoShapeQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, indexedShape = indexedShape, relation = relation, shape = shape, strategy = strategy, toJSON = toJSON)
+  
+    __obj.asInstanceOf[GeoShapeQuery]
+  }
+}
+

@@ -16,3 +16,21 @@ trait PlatformStatic extends js.Object {
   ): T
 }
 
+object PlatformStatic {
+  @scala.inline
+  def apply(
+    OS: PlatformOSType,
+    Version: scala.Double | java.lang.String,
+    select_default: js.Function1[
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
+    */ reactDashPrimitivesLib.reactDashPrimitivesLibStrings.PlatformStatic with js.Any, 
+      js.Any
+    ]
+  ): PlatformStatic = {
+    val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], select_default = select_default)
+  
+    __obj.asInstanceOf[PlatformStatic]
+  }
+}
+

@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind
 }
 
+object TSInferType {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSInferType,
+    typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind
+  ): TSInferType = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeParameter = typeParameter)
+  
+    __obj.asInstanceOf[TSInferType]
+  }
+}
+

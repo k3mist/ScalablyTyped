@@ -32,3 +32,12 @@ trait CropStepData extends js.Object {
   var originalEvent: stdLib.Event
 }
 
+object CropStepData {
+  @scala.inline
+  def apply(action: java.lang.String, originalEvent: stdLib.Event): CropStepData = {
+    val __obj = js.Dynamic.literal(action = action, originalEvent = originalEvent)
+  
+    __obj.asInstanceOf[CropStepData]
+  }
+}
+

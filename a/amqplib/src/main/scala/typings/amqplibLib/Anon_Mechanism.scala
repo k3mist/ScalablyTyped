@@ -10,3 +10,12 @@ trait Anon_Mechanism extends js.Object {
   def response(): nodeLib.Buffer
 }
 
+object Anon_Mechanism {
+  @scala.inline
+  def apply(mechanism: java.lang.String, response: js.Function0[nodeLib.Buffer]): Anon_Mechanism = {
+    val __obj = js.Dynamic.literal(mechanism = mechanism, response = response)
+  
+    __obj.asInstanceOf[Anon_Mechanism]
+  }
+}
+

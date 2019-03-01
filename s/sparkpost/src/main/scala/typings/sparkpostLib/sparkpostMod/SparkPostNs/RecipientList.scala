@@ -18,3 +18,18 @@ trait RecipientList extends js.Object {
   var total_accepted_recipients: scala.Double
 }
 
+object RecipientList {
+  @scala.inline
+  def apply(
+    attributes: js.Any,
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    total_accepted_recipients: scala.Double
+  ): RecipientList = {
+    val __obj = js.Dynamic.literal(attributes = attributes, description = description, id = id, name = name, total_accepted_recipients = total_accepted_recipients)
+  
+    __obj.asInstanceOf[RecipientList]
+  }
+}
+

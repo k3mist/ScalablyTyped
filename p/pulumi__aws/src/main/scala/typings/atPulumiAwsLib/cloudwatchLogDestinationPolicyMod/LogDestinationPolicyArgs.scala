@@ -16,3 +16,15 @@ trait LogDestinationPolicyArgs extends js.Object {
   val destinationName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object LogDestinationPolicyArgs {
+  @scala.inline
+  def apply(
+    accessPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    destinationName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): LogDestinationPolicyArgs = {
+    val __obj = js.Dynamic.literal(accessPolicy = accessPolicy.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[LogDestinationPolicyArgs]
+  }
+}
+

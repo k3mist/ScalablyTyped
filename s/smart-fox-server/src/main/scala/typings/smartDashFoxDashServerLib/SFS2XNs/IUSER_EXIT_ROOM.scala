@@ -10,3 +10,15 @@ trait IUSER_EXIT_ROOM extends js.Object {
   var user: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
 }
 
+object IUSER_EXIT_ROOM {
+  @scala.inline
+  def apply(
+    room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
+    user: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
+  ): IUSER_EXIT_ROOM = {
+    val __obj = js.Dynamic.literal(room = room, user = user)
+  
+    __obj.asInstanceOf[IUSER_EXIT_ROOM]
+  }
+}
+

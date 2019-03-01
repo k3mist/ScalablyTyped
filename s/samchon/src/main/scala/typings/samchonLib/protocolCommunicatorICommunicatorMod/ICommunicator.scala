@@ -27,3 +27,18 @@ trait ICommunicator
   def isConnected(): scala.Boolean
 }
 
+object ICommunicator {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    isConnected: js.Function0[scala.Boolean],
+    onClose: js.Function,
+    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
+    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+  ): ICommunicator = {
+    val __obj = js.Dynamic.literal(close = close, isConnected = isConnected, onClose = onClose, replyData = replyData, sendData = sendData)
+  
+    __obj.asInstanceOf[ICommunicator]
+  }
+}
+

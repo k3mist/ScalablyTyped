@@ -33,3 +33,20 @@ trait ClassBreaksRendererClassBreakInfos
   var symbol: Symbol
 }
 
+object ClassBreaksRendererClassBreakInfos {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    symbol: Symbol,
+    label: java.lang.String = null
+  ): ClassBreaksRendererClassBreakInfos = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[ClassBreaksRendererClassBreakInfos]
+  }
+}
+

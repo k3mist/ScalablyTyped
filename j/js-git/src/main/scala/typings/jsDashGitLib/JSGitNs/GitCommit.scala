@@ -11,3 +11,12 @@ trait GitCommit extends js.Object {
   var tree: java.lang.String
 }
 
+object GitCommit {
+  @scala.inline
+  def apply(author: GitAuthor, message: java.lang.String, tree: java.lang.String): GitCommit = {
+    val __obj = js.Dynamic.literal(author = author, message = message, tree = tree)
+  
+    __obj.asInstanceOf[GitCommit]
+  }
+}
+

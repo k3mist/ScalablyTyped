@@ -10,3 +10,15 @@ trait RESTAPIResponseStream extends js.Object {
   def writeString(data: java.lang.String): scala.Unit
 }
 
+object RESTAPIResponseStream {
+  @scala.inline
+  def apply(
+    writeStream: js.Function1[js.Object, scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit]
+  ): RESTAPIResponseStream = {
+    val __obj = js.Dynamic.literal(writeStream = writeStream, writeString = writeString)
+  
+    __obj.asInstanceOf[RESTAPIResponseStream]
+  }
+}
+

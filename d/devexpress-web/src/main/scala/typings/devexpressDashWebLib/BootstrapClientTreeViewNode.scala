@@ -50,3 +50,43 @@ trait BootstrapClientTreeViewNode extends ASPxClientTreeViewNode {
   def SetIconCssClass(cssClass: java.lang.String): scala.Unit
 }
 
+object BootstrapClientTreeViewNode {
+  @scala.inline
+  def apply(
+    GetBadgeIconCssClass: js.Function0[java.lang.String],
+    GetBadgeText: js.Function0[java.lang.String],
+    GetCheckState: js.Function0[java.lang.String],
+    GetChecked: js.Function0[scala.Boolean],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetExpanded: js.Function0[scala.Boolean],
+    GetHtmlElement: js.Function0[js.Object],
+    GetIconCssClass: js.Function0[java.lang.String],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetNode: js.Function1[scala.Double, BootstrapClientTreeViewNode],
+    GetNodeByName: js.Function1[java.lang.String, BootstrapClientTreeViewNode],
+    GetNodeByText: js.Function1[java.lang.String, BootstrapClientTreeViewNode],
+    GetNodeCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
+    SetChecked: js.Function1[scala.Boolean, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
+    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    parent: BootstrapClientTreeViewNode,
+    treeView: BootstrapClientTreeView
+  ): BootstrapClientTreeViewNode = {
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetCheckState = GetCheckState, GetChecked = GetChecked, GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetHtmlElement = GetHtmlElement, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetNode = GetNode, GetNodeByName = GetNodeByName, GetNodeByText = GetNodeByText, GetNodeCount = GetNodeCount, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetChecked = SetChecked, SetEnabled = SetEnabled, SetExpanded = SetExpanded, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, parent = parent, treeView = treeView)
+  
+    __obj.asInstanceOf[BootstrapClientTreeViewNode]
+  }
+}
+

@@ -16,3 +16,16 @@ trait ContentCreationException
   var eError: ContentCreationError
 }
 
+object ContentCreationException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    eError: ContentCreationError
+  ): ContentCreationException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, eError = eError)
+  
+    __obj.asInstanceOf[ContentCreationException]
+  }
+}
+

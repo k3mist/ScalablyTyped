@@ -44,3 +44,22 @@ trait CommentThread extends js.Object {
   var threadContext: CommentThreadContext
 }
 
+object CommentThread {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    comments: js.Array[Comment],
+    id: scala.Double,
+    isDeleted: scala.Boolean,
+    lastUpdatedDate: stdLib.Date,
+    properties: js.Any,
+    publishedDate: stdLib.Date,
+    status: CommentThreadStatus,
+    threadContext: CommentThreadContext
+  ): CommentThread = {
+    val __obj = js.Dynamic.literal(_links = _links, comments = comments, id = id, isDeleted = isDeleted, lastUpdatedDate = lastUpdatedDate, properties = properties, publishedDate = publishedDate, status = status, threadContext = threadContext)
+  
+    __obj.asInstanceOf[CommentThread]
+  }
+}
+

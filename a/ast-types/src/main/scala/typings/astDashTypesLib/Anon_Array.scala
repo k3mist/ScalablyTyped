@@ -18,3 +18,23 @@ trait Anon_Array extends js.Object {
   var undefined: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<undefined> */ js.Any
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    Date: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Date> */ js.Any,
+    RegExp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<RegExp> */ js.Any,
+    array: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Array<any>> */ js.Any,
+    boolean: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<boolean> */ js.Any,
+    function: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Function> */ js.Any,
+    `null`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<null> */ js.Any,
+    number: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<number> */ js.Any,
+    `object`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<{[key: string] : any}> */ js.Any,
+    string: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<string> */ js.Any,
+    undefined: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<undefined> */ js.Any
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(Date = Date, RegExp = RegExp, array = array, boolean = boolean, function = function, `null` = `null`, number = number, `object` = `object`, string = string, undefined = undefined)
+  
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

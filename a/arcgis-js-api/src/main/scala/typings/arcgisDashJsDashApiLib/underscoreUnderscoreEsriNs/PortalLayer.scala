@@ -14,3 +14,12 @@ trait PortalLayer extends js.Object {
   var portalItem: PortalItem
 }
 
+object PortalLayer {
+  @scala.inline
+  def apply(portalItem: PortalItem): PortalLayer = {
+    val __obj = js.Dynamic.literal(portalItem = portalItem)
+  
+    __obj.asInstanceOf[PortalLayer]
+  }
+}
+

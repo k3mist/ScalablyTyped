@@ -12,3 +12,12 @@ trait SetEnvInfo extends js.Object {
   var value: java.lang.String
 }
 
+object SetEnvInfo {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): SetEnvInfo = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[SetEnvInfo]
+  }
+}
+

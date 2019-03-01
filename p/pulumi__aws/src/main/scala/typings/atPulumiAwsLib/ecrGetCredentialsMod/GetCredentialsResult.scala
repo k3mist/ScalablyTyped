@@ -15,3 +15,17 @@ trait GetCredentialsResult extends js.Object {
   val proxyEndpoint: java.lang.String
 }
 
+object GetCredentialsResult {
+  @scala.inline
+  def apply(
+    authorizationToken: java.lang.String,
+    expiresAt: java.lang.String,
+    id: java.lang.String,
+    proxyEndpoint: java.lang.String
+  ): GetCredentialsResult = {
+    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken, expiresAt = expiresAt, id = id, proxyEndpoint = proxyEndpoint)
+  
+    __obj.asInstanceOf[GetCredentialsResult]
+  }
+}
+

@@ -29,3 +29,22 @@ trait XScriptTypeDetector
   def getScriptDirection(aText: java.lang.String, nPos: scala.Double, nDefaultScriptDirection: scala.Double): scala.Double
 }
 
+object XScriptTypeDetector {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    beginOfCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
+    beginOfScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    endOfCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
+    endOfScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    getCTLScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getScriptDirection: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScriptTypeDetector = {
+    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCTLScriptType = beginOfCTLScriptType, beginOfScriptDirection = beginOfScriptDirection, endOfCTLScriptType = endOfCTLScriptType, endOfScriptDirection = endOfScriptDirection, getCTLScriptType = getCTLScriptType, getScriptDirection = getScriptDirection, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScriptTypeDetector]
+  }
+}
+

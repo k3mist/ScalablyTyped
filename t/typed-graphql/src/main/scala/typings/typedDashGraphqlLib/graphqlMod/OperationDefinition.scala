@@ -19,3 +19,23 @@ trait OperationDefinition
   var variableDefinitions: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 
+object OperationDefinition {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    operation: java.lang.String,
+    selectionSet: SelectionSet,
+    directives: js.Array[Directive] = null,
+    loc: Location = null,
+    name: Name = null,
+    variableDefinitions: js.Array[VariableDefinition] = null
+  ): OperationDefinition = {
+    val __obj = js.Dynamic.literal(kind = kind, operation = operation, selectionSet = selectionSet)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    __obj.asInstanceOf[OperationDefinition]
+  }
+}
+

@@ -13,3 +13,20 @@ trait OAuthConfig extends js.Object {
   var revokePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuthConfig {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String,
+    clientId: java.lang.String,
+    clientSecret: java.lang.String = null,
+    grantPath: java.lang.String = null,
+    revokePath: java.lang.String = null
+  ): OAuthConfig = {
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, clientId = clientId)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (grantPath != null) __obj.updateDynamic("grantPath")(grantPath)
+    if (revokePath != null) __obj.updateDynamic("revokePath")(revokePath)
+    __obj.asInstanceOf[OAuthConfig]
+  }
+}
+

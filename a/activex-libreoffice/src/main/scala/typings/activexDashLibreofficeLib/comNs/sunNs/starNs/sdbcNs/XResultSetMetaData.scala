@@ -164,3 +164,38 @@ trait XResultSetMetaData
   def isWritable(column: scala.Double): scala.Boolean
 }
 
+object XResultSetMetaData {
+  @scala.inline
+  def apply(
+    ColumnCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getCatalogName: js.Function1[scala.Double, java.lang.String],
+    getColumnCount: js.Function0[scala.Double],
+    getColumnDisplaySize: js.Function1[scala.Double, scala.Double],
+    getColumnLabel: js.Function1[scala.Double, java.lang.String],
+    getColumnName: js.Function1[scala.Double, java.lang.String],
+    getColumnServiceName: js.Function1[scala.Double, java.lang.String],
+    getColumnType: js.Function1[scala.Double, scala.Double],
+    getColumnTypeName: js.Function1[scala.Double, java.lang.String],
+    getPrecision: js.Function1[scala.Double, scala.Double],
+    getScale: js.Function1[scala.Double, scala.Double],
+    getSchemaName: js.Function1[scala.Double, java.lang.String],
+    getTableName: js.Function1[scala.Double, java.lang.String],
+    isAutoIncrement: js.Function1[scala.Double, scala.Boolean],
+    isCaseSensitive: js.Function1[scala.Double, scala.Boolean],
+    isCurrency: js.Function1[scala.Double, scala.Boolean],
+    isDefinitelyWritable: js.Function1[scala.Double, scala.Boolean],
+    isNullable: js.Function1[scala.Double, scala.Double],
+    isReadOnly: js.Function1[scala.Double, scala.Boolean],
+    isSearchable: js.Function1[scala.Double, scala.Boolean],
+    isSigned: js.Function1[scala.Double, scala.Boolean],
+    isWritable: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XResultSetMetaData = {
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, acquire = acquire, getCatalogName = getCatalogName, getColumnCount = getColumnCount, getColumnDisplaySize = getColumnDisplaySize, getColumnLabel = getColumnLabel, getColumnName = getColumnName, getColumnServiceName = getColumnServiceName, getColumnType = getColumnType, getColumnTypeName = getColumnTypeName, getPrecision = getPrecision, getScale = getScale, getSchemaName = getSchemaName, getTableName = getTableName, isAutoIncrement = isAutoIncrement, isCaseSensitive = isCaseSensitive, isCurrency = isCurrency, isDefinitelyWritable = isDefinitelyWritable, isNullable = isNullable, isReadOnly = isReadOnly, isSearchable = isSearchable, isSigned = isSigned, isWritable = isWritable, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XResultSetMetaData]
+  }
+}
+

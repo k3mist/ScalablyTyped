@@ -74,3 +74,28 @@ trait FieldProperties extends js.Object {
   ] = js.undefined
 }
 
+object FieldProperties {
+  @scala.inline
+  def apply(
+    alias: java.lang.String = null,
+    defaultValue: scala.Double | java.lang.String | js.Any = null,
+    domain: DomainProperties = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    length: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    nullable: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`small-integer` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.integer | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.single | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.double | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.long | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.string | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.date | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.oid | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.geometry | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.blob | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.raster | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.guid | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`global-id` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.xml = null
+  ): FieldProperties = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldProperties]
+  }
+}
+

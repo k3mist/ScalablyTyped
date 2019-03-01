@@ -1382,7 +1382,7 @@ object arangodbLibStrings {
     extends arangodbLib.ArangoDBNs.HttpStatus
   
   @js.native
-  sealed trait `i'm a teapot`
+  sealed trait `i_quotem a teapot`
     extends arangodbLib.ArangoDBNs.HttpStatus
   
   @js.native
@@ -2340,7 +2340,7 @@ object arangodbLibStrings {
   @scala.inline
   def `http version not supported`: `http version not supported` = "http version not supported".asInstanceOf[`http version not supported`]
   @scala.inline
-  def `i'm a teapot`: `i'm a teapot` = "i'm a teapot".asInstanceOf[`i'm a teapot`]
+  def `i_quotem a teapot`: `i_quotem a teapot` = "i'm a teapot".asInstanceOf[`i_quotem a teapot`]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline

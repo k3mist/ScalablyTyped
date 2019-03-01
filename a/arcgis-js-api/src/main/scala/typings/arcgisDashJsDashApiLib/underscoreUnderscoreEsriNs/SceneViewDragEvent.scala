@@ -20,3 +20,25 @@ trait SceneViewDragEvent extends js.Object {
   var y: scala.Double
 }
 
+object SceneViewDragEvent {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    angle: scala.Double,
+    button: scala.Double,
+    buttons: scala.Double,
+    native: js.Any,
+    origin: SceneViewDragEventOrigin,
+    radius: scala.Double,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): SceneViewDragEvent = {
+    val __obj = js.Dynamic.literal(action = action, angle = angle, button = button, buttons = buttons, native = native, origin = origin, radius = radius, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[SceneViewDragEvent]
+  }
+}
+

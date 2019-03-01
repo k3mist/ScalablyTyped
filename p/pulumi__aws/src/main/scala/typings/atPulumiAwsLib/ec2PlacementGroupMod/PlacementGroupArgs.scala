@@ -16,3 +16,15 @@ trait PlacementGroupArgs extends js.Object {
   val strategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy]
 }
 
+object PlacementGroupArgs {
+  @scala.inline
+  def apply(
+    strategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PlacementGroupArgs = {
+    val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlacementGroupArgs]
+  }
+}
+

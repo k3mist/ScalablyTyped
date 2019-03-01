@@ -39,3 +39,20 @@ trait AreasAndLengthsParametersProperties extends js.Object {
   var polygons: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
 }
 
+object AreasAndLengthsParametersProperties {
+  @scala.inline
+  def apply(
+    areaUnit: java.lang.String = null,
+    calculationType: java.lang.String = null,
+    lengthUnit: java.lang.String = null,
+    polygons: js.Array[PolygonProperties] = null
+  ): AreasAndLengthsParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (areaUnit != null) __obj.updateDynamic("areaUnit")(areaUnit)
+    if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType)
+    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit)
+    if (polygons != null) __obj.updateDynamic("polygons")(polygons)
+    __obj.asInstanceOf[AreasAndLengthsParametersProperties]
+  }
+}
+

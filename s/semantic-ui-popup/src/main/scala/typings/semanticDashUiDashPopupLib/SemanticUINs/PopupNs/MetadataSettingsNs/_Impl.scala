@@ -32,3 +32,19 @@ trait _Impl extends js.Object {
   var variation: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    html: java.lang.String,
+    offset: java.lang.String,
+    position: java.lang.String,
+    title: java.lang.String,
+    variation: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(content = content, html = html, offset = offset, position = position, title = title, variation = variation)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -87,3 +87,30 @@ trait Event extends js.Object {
   val `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`,
+    deprecatedCount: scala.Double,
+    deprecatedFirstTimestamp: java.lang.String,
+    deprecatedLastTimestamp: java.lang.String,
+    deprecatedSource: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EventSource,
+    eventTime: java.lang.String,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    note: java.lang.String,
+    reason: java.lang.String,
+    regarding: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference,
+    related: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference,
+    reportingController: java.lang.String,
+    reportingInstance: java.lang.String,
+    series: EventSeries,
+    `type`: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(action = action, apiVersion = apiVersion, deprecatedCount = deprecatedCount, deprecatedFirstTimestamp = deprecatedFirstTimestamp, deprecatedLastTimestamp = deprecatedLastTimestamp, deprecatedSource = deprecatedSource, eventTime = eventTime, kind = kind, metadata = metadata, note = note, reason = reason, regarding = regarding, related = related, reportingController = reportingController, reportingInstance = reportingInstance, series = series, `type` = `type`)
+  
+    __obj.asInstanceOf[Event]
+  }
+}
+

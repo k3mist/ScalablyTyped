@@ -29,3 +29,37 @@ trait PawsResource extends js.Object {
   def verifyDevice(request: gapiDotClientDotSpectrumLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[PawsVerifyDeviceResponse]
 }
 
+object PawsResource {
+  @scala.inline
+  def apply(
+    getSpectrum: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsGetSpectrumResponse]
+    ],
+    getSpectrumBatch: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsGetSpectrumBatchResponse]
+    ],
+    init: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsInitResponse]
+    ],
+    notifySpectrumUse: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsNotifySpectrumUseResponse]
+    ],
+    register: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsRegisterResponse]
+    ],
+    verifyDevice: js.Function1[
+      gapiDotClientDotSpectrumLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PawsVerifyDeviceResponse]
+    ]
+  ): PawsResource = {
+    val __obj = js.Dynamic.literal(getSpectrum = getSpectrum, getSpectrumBatch = getSpectrumBatch, init = init, notifySpectrumUse = notifySpectrumUse, register = register, verifyDevice = verifyDevice)
+  
+    __obj.asInstanceOf[PawsResource]
+  }
+}
+

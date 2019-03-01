@@ -40,3 +40,20 @@ trait ChatRoomMessageReceived
   var timestamp: java.lang.String
 }
 
+object ChatRoomMessageReceived {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    from: java.lang.String,
+    message_id: java.lang.String,
+    private_message: java.lang.String,
+    resource: java.lang.String,
+    room: java.lang.String,
+    timestamp: java.lang.String
+  ): ChatRoomMessageReceived = {
+    val __obj = js.Dynamic.literal(content = content, from = from, message_id = message_id, private_message = private_message, resource = resource, room = room, timestamp = timestamp)
+  
+    __obj.asInstanceOf[ChatRoomMessageReceived]
+  }
+}
+

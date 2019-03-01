@@ -19,3 +19,12 @@ trait Filter extends js.Object {
   var filterTerm: java.lang.String
 }
 
+object Filter {
+  @scala.inline
+  def apply(columnKey: java.lang.String, filterTerm: java.lang.String): Filter = {
+    val __obj = js.Dynamic.literal(columnKey = columnKey, filterTerm = filterTerm)
+  
+    __obj.asInstanceOf[Filter]
+  }
+}
+

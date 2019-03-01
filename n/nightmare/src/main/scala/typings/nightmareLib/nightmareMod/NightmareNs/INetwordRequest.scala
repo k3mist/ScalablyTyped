@@ -11,3 +11,16 @@ trait INetwordRequest extends js.Object {
   def setHeader(key: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object INetwordRequest {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    changeUrl: js.Function1[java.lang.String, scala.Unit],
+    setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): INetwordRequest = {
+    val __obj = js.Dynamic.literal(abort = abort, changeUrl = changeUrl, setHeader = setHeader)
+  
+    __obj.asInstanceOf[INetwordRequest]
+  }
+}
+

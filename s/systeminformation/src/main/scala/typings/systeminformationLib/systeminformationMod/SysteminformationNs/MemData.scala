@@ -17,3 +17,22 @@ trait MemData extends js.Object {
   var used: scala.Double
 }
 
+object MemData {
+  @scala.inline
+  def apply(
+    active: scala.Double,
+    available: scala.Double,
+    buffcache: scala.Double,
+    free: scala.Double,
+    swapfree: scala.Double,
+    swaptotal: scala.Double,
+    swapused: scala.Double,
+    total: scala.Double,
+    used: scala.Double
+  ): MemData = {
+    val __obj = js.Dynamic.literal(active = active, available = available, buffcache = buffcache, free = free, swapfree = swapfree, swaptotal = swaptotal, swapused = swapused, total = total, used = used)
+  
+    __obj.asInstanceOf[MemData]
+  }
+}
+

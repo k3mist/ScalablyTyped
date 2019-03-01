@@ -13,3 +13,12 @@ trait ClassSansProvider
   var useClass: atAngularCoreLib.srcTypeMod.Type[_]
 }
 
+object ClassSansProvider {
+  @scala.inline
+  def apply(useClass: atAngularCoreLib.srcTypeMod.Type[_]): ClassSansProvider = {
+    val __obj = js.Dynamic.literal(useClass = useClass)
+  
+    __obj.asInstanceOf[ClassSansProvider]
+  }
+}
+

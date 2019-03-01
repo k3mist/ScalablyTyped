@@ -13,3 +13,18 @@ trait IRedisData extends js.Object {
   var result: js.Any
 }
 
+object IRedisData {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    commandObj: js.Any,
+    duration: scala.Double,
+    err: stdLib.Error,
+    result: js.Any
+  ): IRedisData = {
+    val __obj = js.Dynamic.literal(address = address, commandObj = commandObj, duration = duration, err = err, result = result)
+  
+    __obj.asInstanceOf[IRedisData]
+  }
+}
+

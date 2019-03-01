@@ -22,3 +22,18 @@ trait SnapshotCopyGrantState extends js.Object {
   ] = js.undefined
 }
 
+object SnapshotCopyGrantState {
+  @scala.inline
+  def apply(
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    snapshotCopyGrantName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotCopyGrantState = {
+    val __obj = js.Dynamic.literal()
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (snapshotCopyGrantName != null) __obj.updateDynamic("snapshotCopyGrantName")(snapshotCopyGrantName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCopyGrantState]
+  }
+}
+

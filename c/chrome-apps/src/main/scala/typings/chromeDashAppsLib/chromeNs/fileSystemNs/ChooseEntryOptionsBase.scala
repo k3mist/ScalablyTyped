@@ -29,3 +29,18 @@ trait ChooseEntryOptionsBase extends ChooseEntryOptions {
   var suggestedName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChooseEntryOptionsBase {
+  @scala.inline
+  def apply(
+    accepts: js.Array[AcceptOptions] = null,
+    acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    suggestedName: java.lang.String = null
+  ): ChooseEntryOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    __obj.asInstanceOf[ChooseEntryOptionsBase]
+  }
+}
+

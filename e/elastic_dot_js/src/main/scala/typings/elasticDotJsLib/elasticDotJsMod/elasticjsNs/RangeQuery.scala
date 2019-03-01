@@ -62,3 +62,25 @@ trait RangeQuery extends Query {
   def toJSON(): js.Any
 }
 
+object RangeQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, RangeQuery],
+    field: js.Function1[java.lang.String, RangeQuery],
+    from: js.Function1[js.Any, RangeQuery],
+    gt: js.Function1[js.Any, RangeQuery],
+    gte: js.Function1[js.Any, RangeQuery],
+    includeLower: js.Function1[scala.Boolean, RangeQuery],
+    includeUpper: js.Function1[scala.Boolean, RangeQuery],
+    lt: js.Function1[js.Any, RangeQuery],
+    lte: js.Function1[js.Any, RangeQuery],
+    to: js.Function1[js.Any, RangeQuery],
+    toJSON: js.Function0[js.Any]
+  ): RangeQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, to = to, toJSON = toJSON)
+  
+    __obj.asInstanceOf[RangeQuery]
+  }
+}
+

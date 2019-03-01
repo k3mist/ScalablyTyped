@@ -70,3 +70,32 @@ trait RelationshipQueryProperties extends js.Object {
   var returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RelationshipQueryProperties {
+  @scala.inline
+  def apply(
+    definitionExpression: java.lang.String = null,
+    gdbVersion: java.lang.String = null,
+    geometryPrecision: scala.Int | scala.Double = null,
+    historicMoment: DateProperties = null,
+    maxAllowableOffset: scala.Int | scala.Double = null,
+    objectIds: js.Array[scala.Double] = null,
+    outFields: js.Array[java.lang.String] = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    relationshipId: scala.Int | scala.Double = null,
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  ): RelationshipQueryProperties = {
+    val __obj = js.Dynamic.literal()
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
+    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
+    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (relationshipId != null) __obj.updateDynamic("relationshipId")(relationshipId.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    __obj.asInstanceOf[RelationshipQueryProperties]
+  }
+}
+

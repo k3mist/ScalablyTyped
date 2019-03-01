@@ -19,3 +19,24 @@ trait EquationSymbol extends js.Object {
   def setAttributes(attributes: js.Object): EquationSymbol
 }
 
+object EquationSymbol {
+  @scala.inline
+  def apply(
+    copy: js.Function0[EquationSymbol],
+    getAttributes: js.Function0[js.Object],
+    getCode: js.Function0[java.lang.String],
+    getNextSibling: js.Function0[Element],
+    getParent: js.Function0[ContainerElement],
+    getPreviousSibling: js.Function0[Element],
+    getType: js.Function0[ElementType],
+    isAtDocumentEnd: js.Function0[scala.Boolean],
+    merge: js.Function0[EquationSymbol],
+    removeFromParent: js.Function0[EquationSymbol],
+    setAttributes: js.Function1[js.Object, EquationSymbol]
+  ): EquationSymbol = {
+    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getCode = getCode, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAttributes = setAttributes)
+  
+    __obj.asInstanceOf[EquationSymbol]
+  }
+}
+

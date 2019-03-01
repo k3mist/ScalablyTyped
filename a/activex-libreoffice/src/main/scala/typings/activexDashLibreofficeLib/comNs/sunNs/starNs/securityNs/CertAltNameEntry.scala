@@ -16,3 +16,12 @@ trait CertAltNameEntry extends js.Object {
   var Value: js.Any
 }
 
+object CertAltNameEntry {
+  @scala.inline
+  def apply(Type: ExtAltNameType, Value: js.Any): CertAltNameEntry = {
+    val __obj = js.Dynamic.literal(Type = Type, Value = Value)
+  
+    __obj.asInstanceOf[CertAltNameEntry]
+  }
+}
+

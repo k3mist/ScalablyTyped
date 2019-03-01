@@ -16,3 +16,12 @@ trait IdentityDescriptor extends js.Object {
   var identityType: java.lang.String
 }
 
+object IdentityDescriptor {
+  @scala.inline
+  def apply(identifier: java.lang.String, identityType: java.lang.String): IdentityDescriptor = {
+    val __obj = js.Dynamic.literal(identifier = identifier, identityType = identityType)
+  
+    __obj.asInstanceOf[IdentityDescriptor]
+  }
+}
+

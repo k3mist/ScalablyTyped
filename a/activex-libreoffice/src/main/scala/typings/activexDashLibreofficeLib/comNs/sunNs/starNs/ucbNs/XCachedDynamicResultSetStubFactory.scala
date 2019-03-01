@@ -44,3 +44,24 @@ trait XCachedDynamicResultSetStubFactory
   def createCachedDynamicResultSetStub(Source: XDynamicResultSet): XDynamicResultSet
 }
 
+object XCachedDynamicResultSetStubFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    connectToCache: js.Function4[
+      XDynamicResultSet, 
+      XDynamicResultSet, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], 
+      XAnyCompareFactory, 
+      scala.Unit
+    ],
+    createCachedDynamicResultSetStub: js.Function1[XDynamicResultSet, XDynamicResultSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCachedDynamicResultSetStubFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, connectToCache = connectToCache, createCachedDynamicResultSetStub = createCachedDynamicResultSetStub, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCachedDynamicResultSetStubFactory]
+  }
+}
+

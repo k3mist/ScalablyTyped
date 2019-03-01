@@ -12,3 +12,12 @@ trait IntentArgument extends js.Object {
   var textValue: java.lang.String
 }
 
+object IntentArgument {
+  @scala.inline
+  def apply(name: java.lang.String, textValue: java.lang.String): IntentArgument = {
+    val __obj = js.Dynamic.literal(name = name, textValue = textValue)
+  
+    __obj.asInstanceOf[IntentArgument]
+  }
+}
+

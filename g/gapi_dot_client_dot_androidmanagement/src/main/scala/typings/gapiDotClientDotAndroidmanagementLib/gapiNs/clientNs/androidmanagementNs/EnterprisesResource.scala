@@ -21,3 +21,30 @@ trait EnterprisesResource extends js.Object {
   def patch(request: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
 }
 
+object EnterprisesResource {
+  @scala.inline
+  def apply(
+    applications: ApplicationsResource,
+    create: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackEnterpriseToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    devices: DevicesResource,
+    enrollmentTokens: EnrollmentTokensResource,
+    get: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Enterprise]
+    ],
+    policies: PoliciesResource,
+    webTokens: WebTokensResource
+  ): EnterprisesResource = {
+    val __obj = js.Dynamic.literal(applications = applications, create = create, devices = devices, enrollmentTokens = enrollmentTokens, get = get, patch = patch, policies = policies, webTokens = webTokens)
+  
+    __obj.asInstanceOf[EnterprisesResource]
+  }
+}
+

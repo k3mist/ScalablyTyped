@@ -11,3 +11,16 @@ trait AnimationListener extends js.Object {
   def onAnimationStart(animation: androiduixLib.androidNs.viewNs.animationNs.Animation): scala.Unit
 }
 
+object AnimationListener {
+  @scala.inline
+  def apply(
+    onAnimationEnd: js.Function1[androiduixLib.androidNs.viewNs.animationNs.Animation, scala.Unit],
+    onAnimationRepeat: js.Function1[androiduixLib.androidNs.viewNs.animationNs.Animation, scala.Unit],
+    onAnimationStart: js.Function1[androiduixLib.androidNs.viewNs.animationNs.Animation, scala.Unit]
+  ): AnimationListener = {
+    val __obj = js.Dynamic.literal(onAnimationEnd = onAnimationEnd, onAnimationRepeat = onAnimationRepeat, onAnimationStart = onAnimationStart)
+  
+    __obj.asInstanceOf[AnimationListener]
+  }
+}
+

@@ -20,3 +20,25 @@ trait OverlapKeeper extends js.Object {
   def tick(): scala.Unit
 }
 
+object OverlapKeeper {
+  @scala.inline
+  def apply(
+    OverlapKeeperRecordPool: OverlapKeeperRecordPool,
+    bodiesAreOverlapping: js.Function2[Body, Body, scala.Boolean],
+    bodyA: Body,
+    bodyB: Body,
+    overlappingShapesCurrentState: TupleDictionary,
+    overlappingShapesLastState: TupleDictionary,
+    setOverlapping: js.Function4[Body, Shape, Body, Body, scala.Unit],
+    shapeA: Shape,
+    shapeB: Shape,
+    tick: js.Function0[scala.Unit],
+    tmpArray1: js.Array[_],
+    tmpDict: TupleDictionary
+  ): OverlapKeeper = {
+    val __obj = js.Dynamic.literal(OverlapKeeperRecordPool = OverlapKeeperRecordPool, bodiesAreOverlapping = bodiesAreOverlapping, bodyA = bodyA, bodyB = bodyB, overlappingShapesCurrentState = overlappingShapesCurrentState, overlappingShapesLastState = overlappingShapesLastState, setOverlapping = setOverlapping, shapeA = shapeA, shapeB = shapeB, tick = tick, tmpArray1 = tmpArray1, tmpDict = tmpDict)
+  
+    __obj.asInstanceOf[OverlapKeeper]
+  }
+}
+

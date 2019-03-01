@@ -125,3 +125,19 @@ trait Effects extends js.Object {
   def timer(tickFunction: TickFunction[_]): scala.Unit
 }
 
+object Effects {
+  @scala.inline
+  def apply(
+    interval: scala.Double,
+    off: scala.Boolean,
+    step: PlainObject[AnimationHook[Node]],
+    stop: js.Function0[scala.Unit],
+    tick: js.Function0[scala.Unit],
+    timer: js.Function1[TickFunction[_], scala.Unit]
+  ): Effects = {
+    val __obj = js.Dynamic.literal(interval = interval, off = off, step = step, stop = stop, tick = tick, timer = timer)
+  
+    __obj.asInstanceOf[Effects]
+  }
+}
+

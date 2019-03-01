@@ -20,3 +20,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.CallExpression
 }
 
+object CallExpression {
+  @scala.inline
+  def apply(
+    arguments: js.Array[
+      astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind
+    ],
+    callee: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.CallExpression
+  ): CallExpression = {
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee, `type` = `type`)
+  
+    __obj.asInstanceOf[CallExpression]
+  }
+}
+

@@ -13,3 +13,12 @@ trait ListTypeNode
   val `type`: TypeNode
 }
 
+object ListTypeNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.ListType, `type`: TypeNode, loc: Location = null): ListTypeNode = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ListTypeNode]
+  }
+}
+

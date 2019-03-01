@@ -10,3 +10,15 @@ trait SketchMSTextStyle extends js.Object {
   var encodedAttributes: Anon_MSAttributedStringColorAttribute
 }
 
+object SketchMSTextStyle {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.textStyle,
+    encodedAttributes: Anon_MSAttributedStringColorAttribute
+  ): SketchMSTextStyle = {
+    val __obj = js.Dynamic.literal(_class = _class, encodedAttributes = encodedAttributes)
+  
+    __obj.asInstanceOf[SketchMSTextStyle]
+  }
+}
+

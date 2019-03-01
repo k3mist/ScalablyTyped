@@ -37,3 +37,16 @@ trait EmbeddedObjectDescriptor extends js.Object {
   var StoreVisualReplacement: scala.Boolean
 }
 
+object EmbeddedObjectDescriptor {
+  @scala.inline
+  def apply(
+    OutplaceDispatchInterceptor: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProviderInterceptor,
+    RecoveryStorage: XStorage,
+    StoreVisualReplacement: scala.Boolean
+  ): EmbeddedObjectDescriptor = {
+    val __obj = js.Dynamic.literal(OutplaceDispatchInterceptor = OutplaceDispatchInterceptor, RecoveryStorage = RecoveryStorage, StoreVisualReplacement = StoreVisualReplacement)
+  
+    __obj.asInstanceOf[EmbeddedObjectDescriptor]
+  }
+}
+

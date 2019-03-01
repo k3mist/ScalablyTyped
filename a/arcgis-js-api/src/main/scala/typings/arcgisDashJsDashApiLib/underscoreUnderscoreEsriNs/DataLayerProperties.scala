@@ -45,3 +45,20 @@ trait DataLayerProperties extends js.Object {
   var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataLayerProperties {
+  @scala.inline
+  def apply(
+    geometry: GeometryProperties = null,
+    name: java.lang.String = null,
+    spatialRelationship: java.lang.String = null,
+    where: java.lang.String = null
+  ): DataLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[DataLayerProperties]
+  }
+}
+

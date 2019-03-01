@@ -15,3 +15,17 @@ trait CompressOptions extends js.Object {
   var quality: scala.Double
 }
 
+object CompressOptions {
+  @scala.inline
+  def apply(
+    maxHeight: scala.Double,
+    maxWidh: scala.Double,
+    noCompressIfLarger: scala.Boolean,
+    quality: scala.Double
+  ): CompressOptions = {
+    val __obj = js.Dynamic.literal(maxHeight = maxHeight, maxWidh = maxWidh, noCompressIfLarger = noCompressIfLarger, quality = quality)
+  
+    __obj.asInstanceOf[CompressOptions]
+  }
+}
+

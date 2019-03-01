@@ -11,3 +11,12 @@ trait Request extends js.Object {
   var url: java.lang.String
 }
 
+object Request {
+  @scala.inline
+  def apply(method: java.lang.String, referrer: java.lang.String, url: java.lang.String): Request = {
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, url = url)
+  
+    __obj.asInstanceOf[Request]
+  }
+}
+

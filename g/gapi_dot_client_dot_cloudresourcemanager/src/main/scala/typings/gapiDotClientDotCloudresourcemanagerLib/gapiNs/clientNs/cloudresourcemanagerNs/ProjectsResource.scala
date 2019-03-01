@@ -177,3 +177,77 @@ trait ProjectsResource extends js.Object {
   def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Project]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    clearOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    create: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ],
+    getAncestry: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
+    ],
+    getEffectiveOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    getOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
+    ],
+    listAvailableOrgPolicyConstraints: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
+    ],
+    listOrgPolicies: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    setOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    update: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, create = create, delete = delete, get = get, getAncestry = getAncestry, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getIamPolicy = getIamPolicy, getOrgPolicy = getOrgPolicy, list = list, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, setIamPolicy = setIamPolicy, setOrgPolicy = setOrgPolicy, testIamPermissions = testIamPermissions, undelete = undelete, update = update)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

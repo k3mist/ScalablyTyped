@@ -15,3 +15,20 @@ trait HTMLImportsPolyfill extends js.Object {
   def whenReady(callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object HTMLImportsPolyfill {
+  @scala.inline
+  def apply(
+    IMPORT_LINK_TYPE: java.lang.String,
+    flags: js.Any,
+    isIE: scala.Boolean,
+    ready: scala.Boolean,
+    rootDocument: webcomponentsDotJsLib.webcomponentsDotJsMod.Global.Document,
+    useNative: scala.Boolean,
+    whenReady: js.Function1[js.Function0[scala.Unit], scala.Unit]
+  ): HTMLImportsPolyfill = {
+    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE, flags = flags, isIE = isIE, ready = ready, rootDocument = rootDocument, useNative = useNative, whenReady = whenReady)
+  
+    __obj.asInstanceOf[HTMLImportsPolyfill]
+  }
+}
+

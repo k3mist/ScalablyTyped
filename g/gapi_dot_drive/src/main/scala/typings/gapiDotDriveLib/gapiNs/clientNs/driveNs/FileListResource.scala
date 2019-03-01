@@ -15,3 +15,20 @@ trait FileListResource extends js.Object {
   var selfLink: java.lang.String
 }
 
+object FileListResource {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    incompleteSearch: scala.Boolean,
+    items: js.Array[FileResource],
+    kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#fileList`,
+    nextLink: java.lang.String,
+    nextPageToken: java.lang.String,
+    selfLink: java.lang.String
+  ): FileListResource = {
+    val __obj = js.Dynamic.literal(etag = etag, incompleteSearch = incompleteSearch, items = items, kind = kind, nextLink = nextLink, nextPageToken = nextPageToken, selfLink = selfLink)
+  
+    __obj.asInstanceOf[FileListResource]
+  }
+}
+

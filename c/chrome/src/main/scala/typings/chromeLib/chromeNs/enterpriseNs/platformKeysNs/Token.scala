@@ -19,3 +19,12 @@ trait Token extends js.Object {
   var subtleCrypto: stdLib.SubtleCrypto
 }
 
+object Token {
+  @scala.inline
+  def apply(id: java.lang.String, subtleCrypto: stdLib.SubtleCrypto): Token = {
+    val __obj = js.Dynamic.literal(id = id, subtleCrypto = subtleCrypto)
+  
+    __obj.asInstanceOf[Token]
+  }
+}
+

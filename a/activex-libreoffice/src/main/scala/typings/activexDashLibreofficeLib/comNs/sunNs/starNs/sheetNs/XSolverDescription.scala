@@ -16,3 +16,19 @@ trait XSolverDescription
   def getPropertyDescription(aPropertyName: java.lang.String): java.lang.String
 }
 
+object XSolverDescription {
+  @scala.inline
+  def apply(
+    ComponentDescription: java.lang.String,
+    StatusDescription: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getPropertyDescription: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSolverDescription = {
+    val __obj = js.Dynamic.literal(ComponentDescription = ComponentDescription, StatusDescription = StatusDescription, acquire = acquire, getPropertyDescription = getPropertyDescription, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSolverDescription]
+  }
+}
+

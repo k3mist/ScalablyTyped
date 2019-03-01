@@ -16,3 +16,18 @@ trait ScriptErrorRaisedException
   var scriptName: java.lang.String
 }
 
+object ScriptErrorRaisedException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    language: java.lang.String,
+    lineNum: scala.Double,
+    scriptName: java.lang.String
+  ): ScriptErrorRaisedException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, language = language, lineNum = lineNum, scriptName = scriptName)
+  
+    __obj.asInstanceOf[ScriptErrorRaisedException]
+  }
+}
+

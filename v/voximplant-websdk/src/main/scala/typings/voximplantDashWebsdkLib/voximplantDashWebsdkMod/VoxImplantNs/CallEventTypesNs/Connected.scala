@@ -20,3 +20,12 @@ trait Connected
   var headers: js.UndefOr[js.Object] = js.undefined
 }
 
+object Connected {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call, headers: js.Object = null): Connected = {
+    val __obj = js.Dynamic.literal(call = call)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[Connected]
+  }
+}
+

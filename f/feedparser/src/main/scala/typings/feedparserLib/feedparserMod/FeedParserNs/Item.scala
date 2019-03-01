@@ -22,3 +22,28 @@ trait Item extends js.Object {
   var title: java.lang.String
 }
 
+object Item {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    categories: js.Array[java.lang.String],
+    comments: java.lang.String,
+    description: java.lang.String,
+    enclosures: js.Array[java.lang.String],
+    guid: java.lang.String,
+    image: Image,
+    link: java.lang.String,
+    meta: Meta,
+    origlink: java.lang.String,
+    summary: java.lang.String,
+    title: java.lang.String,
+    date: stdLib.Date = null,
+    pubdate: stdLib.Date = null
+  ): Item = {
+    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, description = description, enclosures = enclosures, guid = guid, image = image, link = link, meta = meta, origlink = origlink, summary = summary, title = title)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate)
+    __obj.asInstanceOf[Item]
+  }
+}
+

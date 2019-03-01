@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 trait UiKeyPressable
   extends xrmLib.XrmNs.ControlsNs.UiKeyPressable
 
+object UiKeyPressable {
+  @scala.inline
+  def apply(
+    addOnKeyPress: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit],
+    fireOnKeyPress: js.Function0[scala.Unit],
+    removeOnKeyPress: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit]
+  ): UiKeyPressable = {
+    val __obj = js.Dynamic.literal(addOnKeyPress = addOnKeyPress, fireOnKeyPress = fireOnKeyPress, removeOnKeyPress = removeOnKeyPress)
+  
+    __obj.asInstanceOf[UiKeyPressable]
+  }
+}
+

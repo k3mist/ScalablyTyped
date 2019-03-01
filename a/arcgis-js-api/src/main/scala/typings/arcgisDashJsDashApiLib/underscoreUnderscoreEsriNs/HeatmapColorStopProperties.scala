@@ -20,3 +20,16 @@ trait HeatmapColorStopProperties extends js.Object {
   var ratio: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HeatmapColorStopProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    ratio: scala.Int | scala.Double = null
+  ): HeatmapColorStopProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatmapColorStopProperties]
+  }
+}
+

@@ -105,3 +105,29 @@ trait IEvent extends js.Object {
   var visibility: java.lang.String
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    availability: java.lang.String,
+    calendar_id: java.lang.String,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    end_time: java.lang.String,
+    from: IUserInfo,
+    id: java.lang.String,
+    is_all_day_event: scala.Boolean,
+    is_recurrent: scala.Boolean,
+    location: java.lang.String,
+    name: java.lang.String,
+    recurrence: java.lang.String,
+    reminder_time: scala.Double,
+    start_time: java.lang.String,
+    updated_time: java.lang.String,
+    visibility: java.lang.String
+  ): IEvent = {
+    val __obj = js.Dynamic.literal(availability = availability, calendar_id = calendar_id, created_time = created_time, description = description, end_time = end_time, from = from, id = id, is_all_day_event = is_all_day_event, is_recurrent = is_recurrent, location = location, name = name, recurrence = recurrence, reminder_time = reminder_time, start_time = start_time, updated_time = updated_time, visibility = visibility)
+  
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

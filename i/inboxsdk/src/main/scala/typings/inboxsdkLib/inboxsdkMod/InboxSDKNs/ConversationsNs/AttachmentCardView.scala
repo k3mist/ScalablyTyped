@@ -19,3 +19,20 @@ trait AttachmentCardView extends js.Object {
   def on_destroy(name: inboxsdkLib.inboxsdkLibStrings.destroy, cb: js.Function0[scala.Unit]): scala.Unit
 }
 
+object AttachmentCardView {
+  @scala.inline
+  def apply(
+    addButton: js.Function1[CustomButtonDescriptor, scala.Unit],
+    destroyed: scala.Boolean,
+    getAttachmentType: js.Function0[java.lang.String],
+    getDownloadURL: js.Function0[js.Promise[java.lang.String]],
+    getMessageView: js.Function0[MessageView | scala.Null],
+    getTitle: js.Function0[java.lang.String],
+    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit]
+  ): AttachmentCardView = {
+    val __obj = js.Dynamic.literal(addButton = addButton, destroyed = destroyed, getAttachmentType = getAttachmentType, getDownloadURL = getDownloadURL, getMessageView = getMessageView, getTitle = getTitle, on_destroy = on_destroy)
+  
+    __obj.asInstanceOf[AttachmentCardView]
+  }
+}
+

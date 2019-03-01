@@ -23,3 +23,30 @@ trait ServicesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ServicesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Service]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyMigrateTraffic, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    versions: VersionsResource
+  ): ServicesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, versions = versions)
+  
+    __obj.asInstanceOf[ServicesResource]
+  }
+}
+

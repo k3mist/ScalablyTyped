@@ -10,3 +10,15 @@ trait Anon_QueryType extends js.Object {
   var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_QueryType {
+  @scala.inline
+  def apply(
+    query: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_QueryType = {
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_QueryType]
+  }
+}
+

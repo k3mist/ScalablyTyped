@@ -23,3 +23,28 @@ trait DPlayer extends js.Object {
   def volume(percentage: scala.Double, nostorage: scala.Boolean, nonotice: scala.Boolean): scala.Unit
 }
 
+object DPlayer {
+  @scala.inline
+  def apply(
+    danmaku: Danmaku,
+    destroy: js.Function0[scala.Unit],
+    events: js.Any,
+    fullScreen: FullScreen,
+    notice: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    on: js.Function2[DPlayerEvents, js.Function0[scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    speed: js.Function1[scala.Double, scala.Unit],
+    switchQuality: js.Function1[scala.Double, scala.Unit],
+    switchVideo: js.Function2[DPlayerVideo, DPlayerDanmaku, scala.Unit],
+    toggle: js.Function0[scala.Unit],
+    video: stdLib.HTMLVideoElement,
+    volume: js.Function3[scala.Double, scala.Boolean, scala.Boolean, scala.Unit]
+  ): DPlayer = {
+    val __obj = js.Dynamic.literal(danmaku = danmaku, destroy = destroy, events = events, fullScreen = fullScreen, notice = notice, on = on, pause = pause, play = play, seek = seek, speed = speed, switchQuality = switchQuality, switchVideo = switchVideo, toggle = toggle, video = video, volume = volume)
+  
+    __obj.asInstanceOf[DPlayer]
+  }
+}
+

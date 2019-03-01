@@ -12,3 +12,17 @@ trait Anon_FAILED extends js.Object {
   var UNHANDLED: chromeDashAppsLib.chromeDashAppsLibStrings.unhandled
 }
 
+object Anon_FAILED {
+  @scala.inline
+  def apply(
+    FAILED: chromeDashAppsLib.chromeDashAppsLibStrings.failed,
+    REJECTED: chromeDashAppsLib.chromeDashAppsLibStrings.rejected,
+    SUCCEEDED: chromeDashAppsLib.chromeDashAppsLibStrings.succeeded,
+    UNHANDLED: chromeDashAppsLib.chromeDashAppsLibStrings.unhandled
+  ): Anon_FAILED = {
+    val __obj = js.Dynamic.literal(FAILED = FAILED, REJECTED = REJECTED, SUCCEEDED = SUCCEEDED, UNHANDLED = UNHANDLED)
+  
+    __obj.asInstanceOf[Anon_FAILED]
+  }
+}
+

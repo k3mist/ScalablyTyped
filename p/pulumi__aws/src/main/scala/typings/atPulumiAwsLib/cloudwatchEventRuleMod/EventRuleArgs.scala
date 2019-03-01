@@ -39,3 +39,26 @@ trait EventRuleArgs extends js.Object {
   val scheduleExpression: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventRuleArgs {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    eventPattern: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    isEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    scheduleExpression: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): EventRuleArgs = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (eventPattern != null) __obj.updateDynamic("eventPattern")(eventPattern.asInstanceOf[js.Any])
+    if (isEnabled != null) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (scheduleExpression != null) __obj.updateDynamic("scheduleExpression")(scheduleExpression.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventRuleArgs]
+  }
+}
+

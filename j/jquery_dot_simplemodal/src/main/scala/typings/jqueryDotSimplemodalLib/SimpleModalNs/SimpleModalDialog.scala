@@ -13,3 +13,17 @@ trait SimpleModalDialog extends js.Object {
   var overlay: jqueryDotSimplemodalLib.JQuery
 }
 
+object SimpleModalDialog {
+  @scala.inline
+  def apply(
+    container: jqueryDotSimplemodalLib.JQuery,
+    data: js.Any,
+    iframe: jqueryDotSimplemodalLib.JQuery,
+    overlay: jqueryDotSimplemodalLib.JQuery
+  ): SimpleModalDialog = {
+    val __obj = js.Dynamic.literal(container = container, data = data, iframe = iframe, overlay = overlay)
+  
+    __obj.asInstanceOf[SimpleModalDialog]
+  }
+}
+

@@ -35,3 +35,24 @@ trait IterResult[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */] extend
   def getValue(): rruleLib.distEsmSrcTypesMod.IterResultType[M]
 }
 
+object IterResult {
+  @scala.inline
+  def apply[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */](
+    _result: js.Array[stdLib.Date],
+    accept: js.Function1[stdLib.Date, scala.Boolean],
+    add: js.Function1[stdLib.Date, scala.Boolean],
+    args: stdLib.Partial[IterArgs],
+    clone: js.Function0[IterResult[M]],
+    getValue: js.Function0[rruleLib.distEsmSrcTypesMod.IterResultType[M]],
+    method: M,
+    total: scala.Double,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null
+  ): IterResult[M] = {
+    val __obj = js.Dynamic.literal(_result = _result, accept = accept, add = add, args = args, clone = clone, getValue = getValue, method = method.asInstanceOf[js.Any], total = total)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    __obj.asInstanceOf[IterResult[M]]
+  }
+}
+

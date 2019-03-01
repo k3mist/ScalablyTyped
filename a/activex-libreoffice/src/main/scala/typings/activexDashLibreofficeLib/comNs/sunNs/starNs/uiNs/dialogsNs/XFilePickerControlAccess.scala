@@ -59,3 +59,30 @@ trait XFilePickerControlAccess extends XFilePicker {
   def setValue(ControlId: scala.Double, aControlAction: scala.Double, aValue: js.Any): scala.Unit
 }
 
+object XFilePickerControlAccess {
+  @scala.inline
+  def apply(
+    DisplayDirectory: java.lang.String,
+    Files: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    enableControl: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    execute: js.Function0[scala.Double],
+    getDisplayDirectory: js.Function0[java.lang.String],
+    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getLabel: js.Function1[scala.Double, java.lang.String],
+    getValue: js.Function2[scala.Double, scala.Double, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultName: js.Function1[java.lang.String, scala.Unit],
+    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
+    setLabel: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
+  ): XFilePickerControlAccess = {
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = acquire, enableControl = enableControl, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, getLabel = getLabel, getValue = getValue, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setLabel = setLabel, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle, setValue = setValue)
+  
+    __obj.asInstanceOf[XFilePickerControlAccess]
+  }
+}
+

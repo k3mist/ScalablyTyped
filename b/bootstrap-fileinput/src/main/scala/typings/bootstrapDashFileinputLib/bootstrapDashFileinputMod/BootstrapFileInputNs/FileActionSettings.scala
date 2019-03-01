@@ -64,3 +64,27 @@ trait FileActionSettings extends js.Object {
   var uploadTitle: java.lang.String
 }
 
+object FileActionSettings {
+  @scala.inline
+  def apply(
+    indicatorError: java.lang.String,
+    indicatorErrorTitle: java.lang.String,
+    indicatorLoading: java.lang.String,
+    indicatorLoadingTitle: java.lang.String,
+    indicatorNew: java.lang.String,
+    indicatorNewTitle: java.lang.String,
+    indicatorSuccess: java.lang.String,
+    indicatorSuccessTitle: java.lang.String,
+    removeClass: java.lang.String,
+    removeIcon: java.lang.String,
+    removeTitle: java.lang.String,
+    uploadClass: java.lang.String,
+    uploadIcon: java.lang.String,
+    uploadTitle: java.lang.String
+  ): FileActionSettings = {
+    val __obj = js.Dynamic.literal(indicatorError = indicatorError, indicatorErrorTitle = indicatorErrorTitle, indicatorLoading = indicatorLoading, indicatorLoadingTitle = indicatorLoadingTitle, indicatorNew = indicatorNew, indicatorNewTitle = indicatorNewTitle, indicatorSuccess = indicatorSuccess, indicatorSuccessTitle = indicatorSuccessTitle, removeClass = removeClass, removeIcon = removeIcon, removeTitle = removeTitle, uploadClass = uploadClass, uploadIcon = uploadIcon, uploadTitle = uploadTitle)
+  
+    __obj.asInstanceOf[FileActionSettings]
+  }
+}
+

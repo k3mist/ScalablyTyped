@@ -12,3 +12,15 @@ trait UIViewData extends js.Object {
   var $uiView: atUirouterCoreLib.libViewInterfaceMod.ActiveUIView
 }
 
+object UIViewData {
+  @scala.inline
+  def apply(
+    $cfg: atUirouterAngularjsLib.libStatebuildersViewsMod.Ng1ViewConfig,
+    $uiView: atUirouterCoreLib.libViewInterfaceMod.ActiveUIView
+  ): UIViewData = {
+    val __obj = js.Dynamic.literal($cfg = $cfg, $uiView = $uiView)
+  
+    __obj.asInstanceOf[UIViewData]
+  }
+}
+

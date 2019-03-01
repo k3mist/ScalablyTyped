@@ -11,3 +11,12 @@ trait SpriteSheetFrame extends js.Object {
   var rect: Rectangle
 }
 
+object SpriteSheetFrame {
+  @scala.inline
+  def apply(image: stdLib.HTMLImageElement, rect: Rectangle): SpriteSheetFrame = {
+    val __obj = js.Dynamic.literal(image = image, rect = rect)
+  
+    __obj.asInstanceOf[SpriteSheetFrame]
+  }
+}
+

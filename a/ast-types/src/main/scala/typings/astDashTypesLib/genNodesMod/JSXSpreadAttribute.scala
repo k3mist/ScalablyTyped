@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXSpreadAttribute
 }
 
+object JSXSpreadAttribute {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXSpreadAttribute
+  ): JSXSpreadAttribute = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXSpreadAttribute]
+  }
+}
+

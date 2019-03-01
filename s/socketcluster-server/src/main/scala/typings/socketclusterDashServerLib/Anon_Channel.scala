@@ -9,3 +9,12 @@ trait Anon_Channel extends js.Object {
   var channel: java.lang.String
 }
 
+object Anon_Channel {
+  @scala.inline
+  def apply(channel: java.lang.String): Anon_Channel = {
+    val __obj = js.Dynamic.literal(channel = channel)
+  
+    __obj.asInstanceOf[Anon_Channel]
+  }
+}
+

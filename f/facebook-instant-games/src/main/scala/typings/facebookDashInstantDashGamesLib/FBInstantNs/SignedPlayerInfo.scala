@@ -41,3 +41,12 @@ trait SignedPlayerInfo extends js.Object {
   def getSignature(): java.lang.String
 }
 
+object SignedPlayerInfo {
+  @scala.inline
+  def apply(getPlayerID: js.Function0[java.lang.String], getSignature: js.Function0[java.lang.String]): SignedPlayerInfo = {
+    val __obj = js.Dynamic.literal(getPlayerID = getPlayerID, getSignature = getSignature)
+  
+    __obj.asInstanceOf[SignedPlayerInfo]
+  }
+}
+

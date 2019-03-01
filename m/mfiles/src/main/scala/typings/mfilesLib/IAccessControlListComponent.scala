@@ -22,3 +22,27 @@ trait IAccessControlListComponent extends js.Object {
   def ResetNamedACLLink(): scala.Unit
 }
 
+object IAccessControlListComponent {
+  @scala.inline
+  def apply(
+    AccessControlEntries: IAccessControlEntryContainer,
+    CanDeactivate: scala.Boolean,
+    Clone: js.Function0[IAccessControlListComponent],
+    CurrentUserBinding: scala.Double,
+    GetACEByUserOrGroupID: js.Function2[scala.Double, scala.Boolean, IAccessControlEntryData],
+    GetACEKeyByUserOrGroupID: js.Function2[scala.Double, scala.Boolean, IAccessControlEntryKey],
+    HasCurrentUser: scala.Boolean,
+    HasCurrentUserBinding: scala.Boolean,
+    HasNamedACLLink: scala.Boolean,
+    HasPseudoUsers: scala.Boolean,
+    IsActive: scala.Boolean,
+    NamedACLLink: scala.Double,
+    ResetCurrentUserBinding: js.Function0[scala.Unit],
+    ResetNamedACLLink: js.Function0[scala.Unit]
+  ): IAccessControlListComponent = {
+    val __obj = js.Dynamic.literal(AccessControlEntries = AccessControlEntries, CanDeactivate = CanDeactivate, Clone = Clone, CurrentUserBinding = CurrentUserBinding, GetACEByUserOrGroupID = GetACEByUserOrGroupID, GetACEKeyByUserOrGroupID = GetACEKeyByUserOrGroupID, HasCurrentUser = HasCurrentUser, HasCurrentUserBinding = HasCurrentUserBinding, HasNamedACLLink = HasNamedACLLink, HasPseudoUsers = HasPseudoUsers, IsActive = IsActive, NamedACLLink = NamedACLLink, ResetCurrentUserBinding = ResetCurrentUserBinding, ResetNamedACLLink = ResetNamedACLLink)
+  
+    __obj.asInstanceOf[IAccessControlListComponent]
+  }
+}
+

@@ -37,3 +37,19 @@ trait Route extends js.Object {
   var weight_name: java.lang.String
 }
 
+object Route {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    duration: scala.Double,
+    legs: js.Array[RouteLeg],
+    weight: scala.Double,
+    weight_name: java.lang.String,
+    geometry: js.Any = null
+  ): Route = {
+    val __obj = js.Dynamic.literal(distance = distance, duration = duration, legs = legs, weight = weight, weight_name = weight_name)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    __obj.asInstanceOf[Route]
+  }
+}
+

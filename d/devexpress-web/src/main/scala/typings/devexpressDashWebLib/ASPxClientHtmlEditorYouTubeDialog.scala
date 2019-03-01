@@ -31,3 +31,29 @@ trait ASPxClientHtmlEditorYouTubeDialog extends ASPxClientHtmlEditorEditElementD
   def GetShowVideoNameCheckBox(): ASPxClientCheckBox
 }
 
+object ASPxClientHtmlEditorYouTubeDialog {
+  @scala.inline
+  def apply(
+    GetAllowFullscreenCheckBox: js.Function0[ASPxClientCheckBox],
+    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
+    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetConfidentModeCheckBox: js.Function0[ASPxClientCheckBox],
+    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetShowPlayerControlsCheckBox: js.Function0[ASPxClientCheckBox],
+    GetShowSameVideosCheckBox: js.Function0[ASPxClientCheckBox],
+    GetShowVideoNameCheckBox: js.Function0[ASPxClientCheckBox],
+    GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
+  ): ASPxClientHtmlEditorYouTubeDialog = {
+    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = GetAllowFullscreenCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetConfidentModeCheckBox = GetConfidentModeCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetLeftMarginTextBox = GetLeftMarginTextBox, GetOkButton = GetOkButton, GetRightMarginTextBox = GetRightMarginTextBox, GetShowPlayerControlsCheckBox = GetShowPlayerControlsCheckBox, GetShowSameVideosCheckBox = GetShowSameVideosCheckBox, GetShowVideoNameCheckBox = GetShowVideoNameCheckBox, GetTopMarginTextBox = GetTopMarginTextBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
+  }
+}
+

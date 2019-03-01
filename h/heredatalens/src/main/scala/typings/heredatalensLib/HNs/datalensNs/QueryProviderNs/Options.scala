@@ -16,3 +16,12 @@ trait Options extends js.Object {
   var queryParams: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(queryId: java.lang.String, queryParams: js.Any = null): Options = {
+    val __obj = js.Dynamic.literal(queryId = queryId)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    __obj.asInstanceOf[Options]
+  }
+}
+

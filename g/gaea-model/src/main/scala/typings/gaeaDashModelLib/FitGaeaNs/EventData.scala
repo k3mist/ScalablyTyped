@@ -17,3 +17,20 @@ trait EventData extends js.Object {
   var typeIndex: scala.Double
 }
 
+object EventData {
+  @scala.inline
+  def apply(
+    event: java.lang.String,
+    eventIndex: scala.Double,
+    `type`: java.lang.String,
+    typeIndex: scala.Double,
+    eventData: EventActionJumpUrl | EventActionCall | EventActionEvent = null,
+    typeData: EventTriggerEvent = null
+  ): EventData = {
+    val __obj = js.Dynamic.literal(event = event, eventIndex = eventIndex, `type` = `type`, typeIndex = typeIndex)
+    if (eventData != null) __obj.updateDynamic("eventData")(eventData.asInstanceOf[js.Any])
+    if (typeData != null) __obj.updateDynamic("typeData")(typeData)
+    __obj.asInstanceOf[EventData]
+  }
+}
+

@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumMember
 }
 
+object TSEnumMember {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.StringLiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumMember,
+    initializer: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): TSEnumMember = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], `type` = `type`)
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
+    __obj.asInstanceOf[TSEnumMember]
+  }
+}
+

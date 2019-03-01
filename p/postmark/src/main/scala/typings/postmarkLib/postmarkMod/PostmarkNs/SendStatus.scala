@@ -13,3 +13,18 @@ trait SendStatus extends js.Object {
   var To: java.lang.String
 }
 
+object SendStatus {
+  @scala.inline
+  def apply(
+    ErrorCode: scala.Double,
+    Message: java.lang.String,
+    MessageID: java.lang.String,
+    SubmittedAt: java.lang.String,
+    To: java.lang.String
+  ): SendStatus = {
+    val __obj = js.Dynamic.literal(ErrorCode = ErrorCode, Message = Message, MessageID = MessageID, SubmittedAt = SubmittedAt, To = To)
+  
+    __obj.asInstanceOf[SendStatus]
+  }
+}
+

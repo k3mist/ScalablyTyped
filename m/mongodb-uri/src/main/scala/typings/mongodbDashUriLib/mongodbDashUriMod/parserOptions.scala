@@ -9,3 +9,12 @@ trait parserOptions extends js.Object {
   var scheme: java.lang.String
 }
 
+object parserOptions {
+  @scala.inline
+  def apply(scheme: java.lang.String): parserOptions = {
+    val __obj = js.Dynamic.literal(scheme = scheme)
+  
+    __obj.asInstanceOf[parserOptions]
+  }
+}
+

@@ -12,3 +12,12 @@ trait SearchDegreeCentralityNormalizedResultDirected extends js.Object {
   def outdegree(node: NodeSingular): js.Any
 }
 
+object SearchDegreeCentralityNormalizedResultDirected {
+  @scala.inline
+  def apply(indegree: js.Function1[NodeSingular, js.Any], outdegree: js.Function1[NodeSingular, js.Any]): SearchDegreeCentralityNormalizedResultDirected = {
+    val __obj = js.Dynamic.literal(indegree = indegree, outdegree = outdegree)
+  
+    __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultDirected]
+  }
+}
+

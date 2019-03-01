@@ -10,3 +10,12 @@ trait Anon_ItemsReturnValueAudioTrack extends js.Object {
   /** The number of audio tracks retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueAudioTrack {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.AudioTrack, returnValue: scala.Double): Anon_ItemsReturnValueAudioTrack = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueAudioTrack]
+  }
+}
+

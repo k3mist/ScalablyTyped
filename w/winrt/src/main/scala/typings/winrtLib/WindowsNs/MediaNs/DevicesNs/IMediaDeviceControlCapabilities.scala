@@ -14,3 +14,19 @@ trait IMediaDeviceControlCapabilities extends js.Object {
   var supported: scala.Boolean
 }
 
+object IMediaDeviceControlCapabilities {
+  @scala.inline
+  def apply(
+    autoModeSupported: scala.Boolean,
+    default: scala.Double,
+    max: scala.Double,
+    min: scala.Double,
+    step: scala.Double,
+    supported: scala.Boolean
+  ): IMediaDeviceControlCapabilities = {
+    val __obj = js.Dynamic.literal(autoModeSupported = autoModeSupported, default = default, max = max, min = min, step = step, supported = supported)
+  
+    __obj.asInstanceOf[IMediaDeviceControlCapabilities]
+  }
+}
+

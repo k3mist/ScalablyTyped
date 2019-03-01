@@ -12,3 +12,16 @@ trait Anon_ImplicitGlobalVariable
   var `type`: eslintLib.eslintLibStrings.ImplicitGlobalVariable
 }
 
+object Anon_ImplicitGlobalVariable {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.Program,
+    parent: scala.Null,
+    `type`: eslintLib.eslintLibStrings.ImplicitGlobalVariable
+  ): Anon_ImplicitGlobalVariable = {
+    val __obj = js.Dynamic.literal(node = node, parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ImplicitGlobalVariable]
+  }
+}
+

@@ -15,3 +15,23 @@ trait ImputeTransform extends _Transform {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ImputeTransform {
+  @scala.inline
+  def apply(
+    field: java.lang.String,
+    key: java.lang.String,
+    `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.impute,
+    groupby: js.Array[java.lang.String] = null,
+    keyvals: js.Array[_] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    method: ImputeMethod = null,
+    value: js.Any = null
+  ): ImputeTransform = {
+    val __obj = js.Dynamic.literal(field = field, key = key, `type` = `type`)
+    if (groupby != null) __obj.updateDynamic("groupby")(groupby)
+    if (keyvals != null) __obj.updateDynamic("keyvals")(keyvals.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ImputeTransform]
+  }
+}
+

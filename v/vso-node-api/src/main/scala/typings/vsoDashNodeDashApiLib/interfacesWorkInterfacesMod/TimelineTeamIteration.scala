@@ -36,3 +36,20 @@ trait TimelineTeamIteration extends js.Object {
   var workItems: js.Array[js.Array[_]]
 }
 
+object TimelineTeamIteration {
+  @scala.inline
+  def apply(
+    finishDate: stdLib.Date,
+    name: java.lang.String,
+    partiallyPagedWorkItems: js.Array[js.Array[_]],
+    path: java.lang.String,
+    startDate: stdLib.Date,
+    status: TimelineIterationStatus,
+    workItems: js.Array[js.Array[_]]
+  ): TimelineTeamIteration = {
+    val __obj = js.Dynamic.literal(finishDate = finishDate, name = name, partiallyPagedWorkItems = partiallyPagedWorkItems, path = path, startDate = startDate, status = status, workItems = workItems)
+  
+    __obj.asInstanceOf[TimelineTeamIteration]
+  }
+}
+

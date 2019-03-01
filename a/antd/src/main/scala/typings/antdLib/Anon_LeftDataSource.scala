@@ -10,3 +10,15 @@ trait Anon_LeftDataSource extends js.Object {
   var rightDataSource: js.Array[antdLib.libTransferMod.TransferItem]
 }
 
+object Anon_LeftDataSource {
+  @scala.inline
+  def apply(
+    leftDataSource: js.Array[antdLib.libTransferMod.TransferItem],
+    rightDataSource: js.Array[antdLib.libTransferMod.TransferItem]
+  ): Anon_LeftDataSource = {
+    val __obj = js.Dynamic.literal(leftDataSource = leftDataSource, rightDataSource = rightDataSource)
+  
+    __obj.asInstanceOf[Anon_LeftDataSource]
+  }
+}
+

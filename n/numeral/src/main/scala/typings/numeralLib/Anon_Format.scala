@@ -10,3 +10,12 @@ trait Anon_Format extends js.Object {
   var unformat: stdLib.RegExp
 }
 
+object Anon_Format {
+  @scala.inline
+  def apply(format: stdLib.RegExp, unformat: stdLib.RegExp): Anon_Format = {
+    val __obj = js.Dynamic.literal(format = format, unformat = unformat)
+  
+    __obj.asInstanceOf[Anon_Format]
+  }
+}
+

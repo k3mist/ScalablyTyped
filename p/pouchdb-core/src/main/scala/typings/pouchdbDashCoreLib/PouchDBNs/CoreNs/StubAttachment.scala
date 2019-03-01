@@ -27,3 +27,17 @@ trait StubAttachment extends Attachment {
   var stub: pouchdbDashCoreLib.pouchdbDashCoreLibNumbers.`true`
 }
 
+object StubAttachment {
+  @scala.inline
+  def apply(
+    content_type: java.lang.String,
+    digest: java.lang.String,
+    length: scala.Double,
+    stub: pouchdbDashCoreLib.pouchdbDashCoreLibNumbers.`true`
+  ): StubAttachment = {
+    val __obj = js.Dynamic.literal(content_type = content_type, digest = digest, length = length, stub = stub)
+  
+    __obj.asInstanceOf[StubAttachment]
+  }
+}
+

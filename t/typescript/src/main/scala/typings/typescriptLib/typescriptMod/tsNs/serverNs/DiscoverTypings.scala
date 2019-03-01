@@ -15,3 +15,21 @@ trait DiscoverTypings extends TypingInstallerRequestWithProjectName {
   val unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String]
 }
 
+object DiscoverTypings {
+  @scala.inline
+  def apply(
+    compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    fileNames: js.Array[java.lang.String],
+    kind: typescriptLib.typescriptLibStrings.discover,
+    projectName: java.lang.String,
+    projectRootPath: typescriptLib.typescriptMod.tsNs.Path,
+    typeAcquisition: typescriptLib.typescriptMod.tsNs.TypeAcquisition,
+    unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String],
+    cachePath: java.lang.String = null
+  ): DiscoverTypings = {
+    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions, fileNames = fileNames, kind = kind, projectName = projectName, projectRootPath = projectRootPath, typeAcquisition = typeAcquisition, unresolvedImports = unresolvedImports)
+    if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath)
+    __obj.asInstanceOf[DiscoverTypings]
+  }
+}
+

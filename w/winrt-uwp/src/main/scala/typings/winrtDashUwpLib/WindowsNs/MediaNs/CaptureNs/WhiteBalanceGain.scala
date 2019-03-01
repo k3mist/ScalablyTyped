@@ -15,3 +15,12 @@ trait WhiteBalanceGain extends js.Object {
   var r: scala.Double
 }
 
+object WhiteBalanceGain {
+  @scala.inline
+  def apply(b: scala.Double, g: scala.Double, r: scala.Double): WhiteBalanceGain = {
+    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+  
+    __obj.asInstanceOf[WhiteBalanceGain]
+  }
+}
+

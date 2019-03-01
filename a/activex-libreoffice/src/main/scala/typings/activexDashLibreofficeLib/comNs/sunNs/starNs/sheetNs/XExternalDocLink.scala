@@ -39,3 +39,29 @@ trait XExternalDocLink
   def addSheetCache(aSheetName: java.lang.String, DynamicCache: scala.Boolean): XExternalSheetCache
 }
 
+object XExternalDocLink {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    TokenIndex: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addSheetCache: js.Function2[java.lang.String, scala.Boolean, XExternalSheetCache],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExternalDocLink = {
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, TokenIndex = TokenIndex, acquire = acquire, addSheetCache = addSheetCache, createEnumeration = createEnumeration, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XExternalDocLink]
+  }
+}
+

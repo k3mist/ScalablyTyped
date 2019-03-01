@@ -9,3 +9,12 @@ trait TeamSettingsDaysOff extends TeamSettingsDataContractBase {
   var daysOff: js.Array[DateRange]
 }
 
+object TeamSettingsDaysOff {
+  @scala.inline
+  def apply(_links: js.Any, daysOff: js.Array[DateRange], url: java.lang.String): TeamSettingsDaysOff = {
+    val __obj = js.Dynamic.literal(_links = _links, daysOff = daysOff, url = url)
+  
+    __obj.asInstanceOf[TeamSettingsDaysOff]
+  }
+}
+

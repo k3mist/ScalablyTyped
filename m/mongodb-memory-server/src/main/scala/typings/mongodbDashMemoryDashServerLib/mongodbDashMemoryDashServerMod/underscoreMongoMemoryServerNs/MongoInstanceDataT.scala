@@ -16,3 +16,21 @@ trait MongoInstanceDataT extends js.Object {
   var uri: java.lang.String
 }
 
+object MongoInstanceDataT {
+  @scala.inline
+  def apply(
+    childProcess: nodeLib.childUnderscoreProcessMod.ChildProcess,
+    dbName: java.lang.String,
+    dbPath: java.lang.String,
+    instance: mongodbDashMemoryDashServerLib.mongodbDashMemoryDashServerMod.underscoreMongoInstanceNs.MongodbInstance,
+    port: scala.Double,
+    storageEngine: java.lang.String,
+    uri: java.lang.String,
+    tmpDir: mongodbDashMemoryDashServerLib.Anon_ArgsName = null
+  ): MongoInstanceDataT = {
+    val __obj = js.Dynamic.literal(childProcess = childProcess, dbName = dbName, dbPath = dbPath, instance = instance, port = port, storageEngine = storageEngine, uri = uri)
+    if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir)
+    __obj.asInstanceOf[MongoInstanceDataT]
+  }
+}
+

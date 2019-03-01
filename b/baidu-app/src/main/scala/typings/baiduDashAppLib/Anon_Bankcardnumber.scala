@@ -14,3 +14,12 @@ trait Anon_Bankcardnumber extends js.Object {
   var bank_name: java.lang.String
 }
 
+object Anon_Bankcardnumber {
+  @scala.inline
+  def apply(bank_card_number: java.lang.String, bank_card_type: java.lang.String, bank_name: java.lang.String): Anon_Bankcardnumber = {
+    val __obj = js.Dynamic.literal(bank_card_number = bank_card_number, bank_card_type = bank_card_type, bank_name = bank_name)
+  
+    __obj.asInstanceOf[Anon_Bankcardnumber]
+  }
+}
+

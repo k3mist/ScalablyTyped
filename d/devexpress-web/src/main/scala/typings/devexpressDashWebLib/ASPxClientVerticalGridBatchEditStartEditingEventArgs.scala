@@ -26,3 +26,17 @@ trait ASPxClientVerticalGridBatchEditStartEditingEventArgs extends ASPxClientCan
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridBatchEditStartEditingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    focusedRow: ASPxClientVerticalGridRow,
+    recordValues: js.Object,
+    visibleIndex: scala.Double
+  ): ASPxClientVerticalGridBatchEditStartEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, focusedRow = focusedRow, recordValues = recordValues, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditStartEditingEventArgs]
+  }
+}
+

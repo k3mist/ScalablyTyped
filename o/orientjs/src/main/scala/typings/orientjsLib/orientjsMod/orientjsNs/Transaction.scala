@@ -14,3 +14,19 @@ trait Transaction extends js.Object {
   def update(record: Record): Transaction
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    commit: js.Function0[bluebirdLib.bluebirdMod.namespaced[_]],
+    create: js.Function1[Record, Transaction],
+    db: Db,
+    delete: js.Function1[Record, Transaction],
+    id: scala.Double,
+    update: js.Function1[Record, Transaction]
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(commit = commit, create = create, db = db, delete = delete, id = id, update = update)
+  
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

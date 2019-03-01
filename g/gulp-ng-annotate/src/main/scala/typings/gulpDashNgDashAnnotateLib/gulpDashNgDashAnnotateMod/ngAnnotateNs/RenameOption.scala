@@ -10,3 +10,12 @@ trait RenameOption extends js.Object {
   var to: java.lang.String
 }
 
+object RenameOption {
+  @scala.inline
+  def apply(from: java.lang.String, to: java.lang.String): RenameOption = {
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
+    __obj.asInstanceOf[RenameOption]
+  }
+}
+

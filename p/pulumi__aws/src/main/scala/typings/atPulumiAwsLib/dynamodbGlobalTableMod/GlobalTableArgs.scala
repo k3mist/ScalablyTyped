@@ -18,3 +18,17 @@ trait GlobalTableArgs extends js.Object {
   ]
 }
 
+object GlobalTableArgs {
+  @scala.inline
+  def apply(
+    replicas: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RegionNameInput]]
+    ],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): GlobalTableArgs = {
+    val __obj = js.Dynamic.literal(replicas = replicas.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GlobalTableArgs]
+  }
+}
+

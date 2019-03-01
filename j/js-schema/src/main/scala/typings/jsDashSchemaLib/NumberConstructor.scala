@@ -13,3 +13,18 @@ trait NumberConstructor extends js.Object {
   def step(n: scala.Double): NumberConstructor
 }
 
+object NumberConstructor {
+  @scala.inline
+  def apply(
+    above: js.Function1[scala.Double, NumberConstructor],
+    below: js.Function1[scala.Double, NumberConstructor],
+    max: js.Function1[scala.Double, NumberConstructor],
+    min: js.Function1[scala.Double, NumberConstructor],
+    step: js.Function1[scala.Double, NumberConstructor]
+  ): NumberConstructor = {
+    val __obj = js.Dynamic.literal(above = above, below = below, max = max, min = min, step = step)
+  
+    __obj.asInstanceOf[NumberConstructor]
+  }
+}
+

@@ -14,3 +14,19 @@ trait JenkinsPromisifiedAPI extends js.Object {
   def info(): js.Promise[_]
 }
 
+object JenkinsPromisifiedAPI {
+  @scala.inline
+  def apply(
+    build: jenkinsLib.Anon_DelayGet,
+    info: js.Function0[js.Promise[_]],
+    job: jenkinsLib.Anon_BuildConfig,
+    node: jenkinsLib.Anon_Config,
+    queue: jenkinsLib.Anon_Cancel,
+    view: jenkinsLib.Anon_AddConfig
+  ): JenkinsPromisifiedAPI = {
+    val __obj = js.Dynamic.literal(build = build, info = info, job = job, node = node, queue = queue, view = view)
+  
+    __obj.asInstanceOf[JenkinsPromisifiedAPI]
+  }
+}
+

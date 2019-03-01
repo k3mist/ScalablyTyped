@@ -10,3 +10,12 @@ trait TableToSearchPart extends js.Object {
   var tableName: java.lang.String
 }
 
+object TableToSearchPart {
+  @scala.inline
+  def apply(propertyName: java.lang.String, tableName: java.lang.String): TableToSearchPart = {
+    val __obj = js.Dynamic.literal(propertyName = propertyName, tableName = tableName)
+  
+    __obj.asInstanceOf[TableToSearchPart]
+  }
+}
+

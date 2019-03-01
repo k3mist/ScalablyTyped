@@ -14,3 +14,19 @@ trait Anon_HTMLHandler extends js.Object {
   var XMLHandler: rdflibLib.rdflibMod.Handler
 }
 
+object Anon_HTMLHandler {
+  @scala.inline
+  def apply(
+    HTMLHandler: rdflibLib.rdflibMod.Handler,
+    N3Handler: rdflibLib.rdflibMod.Handler,
+    RDFXMLHandler: rdflibLib.rdflibMod.Handler,
+    TextHandler: rdflibLib.rdflibMod.Handler,
+    XHTMLHandler: rdflibLib.rdflibMod.Handler,
+    XMLHandler: rdflibLib.rdflibMod.Handler
+  ): Anon_HTMLHandler = {
+    val __obj = js.Dynamic.literal(HTMLHandler = HTMLHandler, N3Handler = N3Handler, RDFXMLHandler = RDFXMLHandler, TextHandler = TextHandler, XHTMLHandler = XHTMLHandler, XMLHandler = XMLHandler)
+  
+    __obj.asInstanceOf[Anon_HTMLHandler]
+  }
+}
+

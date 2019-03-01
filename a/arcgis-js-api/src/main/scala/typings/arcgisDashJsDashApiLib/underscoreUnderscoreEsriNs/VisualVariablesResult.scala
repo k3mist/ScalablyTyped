@@ -45,3 +45,22 @@ trait VisualVariablesResult
   var statistics: SummaryStatisticsResult
 }
 
+object VisualVariablesResult {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfo,
+    basemapId: java.lang.String,
+    color: VisualVariablesResultColor,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    size: VisualVariablesResultSize,
+    statistics: SummaryStatisticsResult
+  ): VisualVariablesResult = {
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, size = size, statistics = statistics)
+  
+    __obj.asInstanceOf[VisualVariablesResult]
+  }
+}
+

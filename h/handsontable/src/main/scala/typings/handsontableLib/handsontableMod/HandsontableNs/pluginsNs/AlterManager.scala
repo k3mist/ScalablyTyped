@@ -15,3 +15,20 @@ trait AlterManager extends js.Object {
   def triggerAlter(action: java.lang.String, args: js.Any): scala.Unit
 }
 
+object AlterManager {
+  @scala.inline
+  def apply(
+    dataProvider: DataProvider,
+    destroy: js.Function0[scala.Unit],
+    hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
+    matrix: Matrix,
+    prepareAlter: js.Function2[java.lang.String, js.Any, scala.Unit],
+    sheet: Sheet,
+    triggerAlter: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): AlterManager = {
+    val __obj = js.Dynamic.literal(dataProvider = dataProvider, destroy = destroy, hot = hot, matrix = matrix, prepareAlter = prepareAlter, sheet = sheet, triggerAlter = triggerAlter)
+  
+    __obj.asInstanceOf[AlterManager]
+  }
+}
+

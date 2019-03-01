@@ -41,3 +41,31 @@ trait ServiceDefinition extends js.Object {
   var toolId: java.lang.String
 }
 
+object ServiceDefinition {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    displayName: java.lang.String,
+    identifier: java.lang.String,
+    inheritLevel: InheritLevel,
+    locationMappings: js.Array[LocationMapping],
+    maxVersion: java.lang.String,
+    minVersion: java.lang.String,
+    parentIdentifier: java.lang.String,
+    parentServiceType: java.lang.String,
+    properties: js.Any,
+    relativePath: java.lang.String,
+    relativeToSetting: RelativeToSetting,
+    releasedVersion: java.lang.String,
+    resourceVersion: scala.Double,
+    serviceOwner: java.lang.String,
+    serviceType: java.lang.String,
+    status: ServiceStatus,
+    toolId: java.lang.String
+  ): ServiceDefinition = {
+    val __obj = js.Dynamic.literal(description = description, displayName = displayName, identifier = identifier, inheritLevel = inheritLevel, locationMappings = locationMappings, maxVersion = maxVersion, minVersion = minVersion, parentIdentifier = parentIdentifier, parentServiceType = parentServiceType, properties = properties, relativePath = relativePath, relativeToSetting = relativeToSetting, releasedVersion = releasedVersion, resourceVersion = resourceVersion, serviceOwner = serviceOwner, serviceType = serviceType, status = status, toolId = toolId)
+  
+    __obj.asInstanceOf[ServiceDefinition]
+  }
+}
+

@@ -26,3 +26,20 @@ trait IdentityPoolRoleAttachmentArgs extends js.Object {
   val roles: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticatedUnauthenticated]
 }
 
+object IdentityPoolRoleAttachmentArgs {
+  @scala.inline
+  def apply(
+    identityPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    roles: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticatedUnauthenticated],
+    roleMappings: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmbiguousRoleResolutionIdentityProvider]
+      ]
+    ] = null
+  ): IdentityPoolRoleAttachmentArgs = {
+    val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
+    if (roleMappings != null) __obj.updateDynamic("roleMappings")(roleMappings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentityPoolRoleAttachmentArgs]
+  }
+}
+

@@ -29,3 +29,12 @@ trait GetPropertyTolerantResult extends js.Object {
   var Value: js.Any
 }
 
+object GetPropertyTolerantResult {
+  @scala.inline
+  def apply(Result: scala.Double, State: PropertyState, Value: js.Any): GetPropertyTolerantResult = {
+    val __obj = js.Dynamic.literal(Result = Result, State = State, Value = Value)
+  
+    __obj.asInstanceOf[GetPropertyTolerantResult]
+  }
+}
+

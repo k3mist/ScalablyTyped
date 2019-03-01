@@ -18,3 +18,20 @@ trait XCreateCatalog
   ): scala.Unit
 }
 
+object XCreateCatalog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createCatalog: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCreateCatalog = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createCatalog = createCatalog, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCreateCatalog]
+  }
+}
+

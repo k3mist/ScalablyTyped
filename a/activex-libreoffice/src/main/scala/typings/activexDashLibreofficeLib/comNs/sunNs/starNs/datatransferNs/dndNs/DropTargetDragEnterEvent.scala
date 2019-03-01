@@ -17,3 +17,21 @@ trait DropTargetDragEnterEvent extends DropTargetDragEvent {
   var SupportedDataFlavors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
 }
 
+object DropTargetDragEnterEvent {
+  @scala.inline
+  def apply(
+    Context: XDropTargetDragContext,
+    DropAction: scala.Double,
+    Dummy: scala.Double,
+    LocationX: scala.Double,
+    LocationY: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SourceActions: scala.Double,
+    SupportedDataFlavors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
+  ): DropTargetDragEnterEvent = {
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions, SupportedDataFlavors = SupportedDataFlavors)
+  
+    __obj.asInstanceOf[DropTargetDragEnterEvent]
+  }
+}
+

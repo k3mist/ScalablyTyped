@@ -12,3 +12,15 @@ trait VisualObjectInstanceEnumerationObject extends js.Object {
   var instances: js.Array[VisualObjectInstance]
 }
 
+object VisualObjectInstanceEnumerationObject {
+  @scala.inline
+  def apply(
+    instances: js.Array[VisualObjectInstance],
+    containers: js.Array[VisualObjectInstanceContainer] = null
+  ): VisualObjectInstanceEnumerationObject = {
+    val __obj = js.Dynamic.literal(instances = instances)
+    if (containers != null) __obj.updateDynamic("containers")(containers)
+    __obj.asInstanceOf[VisualObjectInstanceEnumerationObject]
+  }
+}
+

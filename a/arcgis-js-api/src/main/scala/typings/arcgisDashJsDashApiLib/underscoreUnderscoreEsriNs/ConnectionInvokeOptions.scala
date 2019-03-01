@@ -21,3 +21,19 @@ trait ConnectionInvokeOptions
   var transferList: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ConnectionInvokeOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    signal: stdLib.AbortSignal = null,
+    transferList: js.Array[_] = null
+  ): ConnectionInvokeOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (transferList != null) __obj.updateDynamic("transferList")(transferList)
+    __obj.asInstanceOf[ConnectionInvokeOptions]
+  }
+}
+

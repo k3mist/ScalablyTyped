@@ -195,3 +195,43 @@ trait PodSpec extends js.Object {
   val volumes: js.Array[Volume]
 }
 
+object PodSpec {
+  @scala.inline
+  def apply(
+    activeDeadlineSeconds: scala.Double,
+    affinity: Affinity,
+    automountServiceAccountToken: scala.Boolean,
+    containers: js.Array[Container],
+    dnsConfig: PodDNSConfig,
+    dnsPolicy: java.lang.String,
+    enableServiceLinks: scala.Boolean,
+    hostAliases: js.Array[HostAlias],
+    hostIPC: scala.Boolean,
+    hostNetwork: scala.Boolean,
+    hostPID: scala.Boolean,
+    hostname: java.lang.String,
+    imagePullSecrets: js.Array[LocalObjectReference],
+    initContainers: js.Array[Container],
+    nodeName: java.lang.String,
+    nodeSelector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    priority: scala.Double,
+    priorityClassName: java.lang.String,
+    readinessGates: js.Array[PodReadinessGate],
+    restartPolicy: java.lang.String,
+    runtimeClassName: java.lang.String,
+    schedulerName: java.lang.String,
+    securityContext: PodSecurityContext,
+    serviceAccount: java.lang.String,
+    serviceAccountName: java.lang.String,
+    shareProcessNamespace: scala.Boolean,
+    subdomain: java.lang.String,
+    terminationGracePeriodSeconds: scala.Double,
+    tolerations: js.Array[Toleration],
+    volumes: js.Array[Volume]
+  ): PodSpec = {
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, affinity = affinity, automountServiceAccountToken = automountServiceAccountToken, containers = containers, dnsConfig = dnsConfig, dnsPolicy = dnsPolicy, enableServiceLinks = enableServiceLinks, hostAliases = hostAliases, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostname = hostname, imagePullSecrets = imagePullSecrets, initContainers = initContainers, nodeName = nodeName, nodeSelector = nodeSelector, priority = priority, priorityClassName = priorityClassName, readinessGates = readinessGates, restartPolicy = restartPolicy, runtimeClassName = runtimeClassName, schedulerName = schedulerName, securityContext = securityContext, serviceAccount = serviceAccount, serviceAccountName = serviceAccountName, shareProcessNamespace = shareProcessNamespace, subdomain = subdomain, terminationGracePeriodSeconds = terminationGracePeriodSeconds, tolerations = tolerations, volumes = volumes)
+  
+    __obj.asInstanceOf[PodSpec]
+  }
+}
+

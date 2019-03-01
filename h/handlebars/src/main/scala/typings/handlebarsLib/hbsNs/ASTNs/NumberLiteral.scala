@@ -10,3 +10,12 @@ trait NumberLiteral extends Node {
   var value: scala.Double
 }
 
+object NumberLiteral {
+  @scala.inline
+  def apply(loc: SourceLocation, original: scala.Double, `type`: java.lang.String, value: scala.Double): NumberLiteral = {
+    val __obj = js.Dynamic.literal(loc = loc, original = original, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[NumberLiteral]
+  }
+}
+

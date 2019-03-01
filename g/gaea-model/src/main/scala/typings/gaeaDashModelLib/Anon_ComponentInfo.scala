@@ -14,3 +14,16 @@ trait Anon_ComponentInfo extends js.Object {
   var parentMapUniqueKey: java.lang.String
 }
 
+object Anon_ComponentInfo {
+  @scala.inline
+  def apply(
+    componentInfo: gaeaDashModelLib.FitGaeaNs.ViewportComponentFullInfo,
+    index: scala.Double,
+    parentMapUniqueKey: java.lang.String
+  ): Anon_ComponentInfo = {
+    val __obj = js.Dynamic.literal(componentInfo = componentInfo, index = index, parentMapUniqueKey = parentMapUniqueKey)
+  
+    __obj.asInstanceOf[Anon_ComponentInfo]
+  }
+}
+

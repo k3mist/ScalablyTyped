@@ -14,3 +14,19 @@ trait FiveBoxesSet
   var twoFilledBoxes: Icon
 }
 
+object FiveBoxesSet {
+  @scala.inline
+  def apply(
+    fourFilledBoxes: Icon,
+    noFilledBoxes: Icon,
+    oneFilledBox: Icon,
+    threeFilledBoxes: Icon,
+    twoFilledBoxes: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): FiveBoxesSet = {
+    val __obj = js.Dynamic.literal(fourFilledBoxes = fourFilledBoxes, noFilledBoxes = noFilledBoxes, oneFilledBox = oneFilledBox, threeFilledBoxes = threeFilledBoxes, twoFilledBoxes = twoFilledBoxes)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FiveBoxesSet]
+  }
+}
+

@@ -11,3 +11,12 @@ trait HeapDiffInformation extends js.Object {
   var change: HeapDiffChange
 }
 
+object HeapDiffInformation {
+  @scala.inline
+  def apply(after: HeapDiffSnapshot, before: HeapDiffSnapshot, change: HeapDiffChange): HeapDiffInformation = {
+    val __obj = js.Dynamic.literal(after = after, before = before, change = change)
+  
+    __obj.asInstanceOf[HeapDiffInformation]
+  }
+}
+

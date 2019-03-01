@@ -12,3 +12,18 @@ trait FillPattern extends Fill {
   var `type`: exceljsLib.exceljsLibStrings.pattern
 }
 
+object FillPattern {
+  @scala.inline
+  def apply(
+    pattern: FillPatterns,
+    `type`: exceljsLib.exceljsLibStrings.pattern,
+    bgColor: Color = null,
+    fgColor: Color = null
+  ): FillPattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern, `type` = `type`)
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
+    if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor)
+    __obj.asInstanceOf[FillPattern]
+  }
+}
+

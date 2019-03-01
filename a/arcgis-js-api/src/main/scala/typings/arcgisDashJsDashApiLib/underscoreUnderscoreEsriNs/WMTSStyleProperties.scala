@@ -32,3 +32,20 @@ trait WMTSStyleProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WMTSStyleProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    legendUrl: java.lang.String = null,
+    title: java.lang.String = null
+  ): WMTSStyleProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[WMTSStyleProperties]
+  }
+}
+

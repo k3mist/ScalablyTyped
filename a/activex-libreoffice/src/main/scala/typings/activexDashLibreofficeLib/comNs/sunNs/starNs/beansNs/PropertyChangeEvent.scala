@@ -32,3 +32,19 @@ trait PropertyChangeEvent
   var PropertyName: java.lang.String
 }
 
+object PropertyChangeEvent {
+  @scala.inline
+  def apply(
+    Further: scala.Boolean,
+    NewValue: js.Any,
+    OldValue: js.Any,
+    PropertyHandle: scala.Double,
+    PropertyName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): PropertyChangeEvent = {
+    val __obj = js.Dynamic.literal(Further = Further, NewValue = NewValue, OldValue = OldValue, PropertyHandle = PropertyHandle, PropertyName = PropertyName, Source = Source)
+  
+    __obj.asInstanceOf[PropertyChangeEvent]
+  }
+}
+

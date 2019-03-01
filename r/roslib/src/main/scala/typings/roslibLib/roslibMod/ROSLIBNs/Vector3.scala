@@ -29,3 +29,20 @@ trait Vector3 extends js.Object {
   def subtract(v: Vector3): scala.Unit
 }
 
+object Vector3 {
+  @scala.inline
+  def apply(
+    add: js.Function1[Vector3, scala.Unit],
+    clone: js.Function0[Vector3],
+    multiplyQuaternion: js.Function1[Quaternion, scala.Unit],
+    subtract: js.Function1[Vector3, scala.Unit],
+    x: scala.Double,
+    y: scala.Double,
+    z: scala.Double
+  ): Vector3 = {
+    val __obj = js.Dynamic.literal(add = add, clone = clone, multiplyQuaternion = multiplyQuaternion, subtract = subtract, x = x, y = y, z = z)
+  
+    __obj.asInstanceOf[Vector3]
+  }
+}
+

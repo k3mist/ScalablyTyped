@@ -10,3 +10,12 @@ trait ConfigPageGroup extends ConfigPageOrGroup {
   var title: java.lang.String
 }
 
+object ConfigPageGroup {
+  @scala.inline
+  def apply(pages: js.Array[ConfigPage], title: java.lang.String): ConfigPageGroup = {
+    val __obj = js.Dynamic.literal(pages = pages, title = title)
+  
+    __obj.asInstanceOf[ConfigPageGroup]
+  }
+}
+

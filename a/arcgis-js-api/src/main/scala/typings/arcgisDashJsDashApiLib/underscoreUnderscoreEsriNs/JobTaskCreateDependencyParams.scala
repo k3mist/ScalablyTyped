@@ -51,3 +51,23 @@ trait JobTaskCreateDependencyParams
   var user: java.lang.String
 }
 
+object JobTaskCreateDependencyParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    depJobId: scala.Double,
+    depOnType: java.lang.String,
+    depOnValue: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    heldOnType: java.lang.String,
+    heldOnValue: scala.Double,
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskCreateDependencyParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = hasOwnProperty, heldOnType = heldOnType, heldOnValue = heldOnValue, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskCreateDependencyParams]
+  }
+}
+

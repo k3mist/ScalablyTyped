@@ -15,3 +15,20 @@ trait Event extends js.Object {
   var `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    aborted: scala.Boolean,
+    cancelled: scala.Boolean,
+    currentTarget: js.Object,
+    result: js.Any,
+    target: js.Object,
+    timeStamp: scala.Double,
+    `type`: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(aborted = aborted, cancelled = cancelled, currentTarget = currentTarget, result = result, target = target, timeStamp = timeStamp, `type` = `type`)
+  
+    __obj.asInstanceOf[Event]
+  }
+}
+

@@ -11,3 +11,12 @@ trait NodeFileData extends FileData {
   var url: java.lang.String
 }
 
+object NodeFileData {
+  @scala.inline
+  def apply(body: nodeLib.streamMod.PassThrough, filename: java.lang.String, url: java.lang.String): NodeFileData = {
+    val __obj = js.Dynamic.literal(body = body, filename = filename, url = url)
+  
+    __obj.asInstanceOf[NodeFileData]
+  }
+}
+

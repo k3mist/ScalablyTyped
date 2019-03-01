@@ -14,3 +14,19 @@ trait Anon_Dra extends js.Object {
   var normalHandle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle
 }
 
+object Anon_Dra {
+  @scala.inline
+  def apply(
+    dra: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter,
+    dragHandle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle,
+    hover: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter,
+    hoverHandle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle,
+    normal: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Splitter,
+    normalHandle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.SplitterHandle
+  ): Anon_Dra = {
+    val __obj = js.Dynamic.literal(dra = dra, dragHandle = dragHandle, hover = hover, hoverHandle = hoverHandle, normal = normal, normalHandle = normalHandle)
+  
+    __obj.asInstanceOf[Anon_Dra]
+  }
+}
+

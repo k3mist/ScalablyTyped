@@ -10,3 +10,12 @@ trait State[OptionType] extends js.Object {
   var options: reactDashSelectLib.libTypesMod.OptionsType[OptionType]
 }
 
+object State {
+  @scala.inline
+  def apply[OptionType](options: reactDashSelectLib.libTypesMod.OptionsType[OptionType], newOption: OptionType = null): State[OptionType] = {
+    val __obj = js.Dynamic.literal(options = options)
+    if (newOption != null) __obj.updateDynamic("newOption")(newOption.asInstanceOf[js.Any])
+    __obj.asInstanceOf[State[OptionType]]
+  }
+}
+

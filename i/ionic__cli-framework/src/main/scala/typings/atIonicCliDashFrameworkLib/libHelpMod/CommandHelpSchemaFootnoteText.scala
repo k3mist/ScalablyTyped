@@ -11,3 +11,16 @@ trait CommandHelpSchemaFootnoteText extends CommandHelpSchemaFootnote {
   val `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.text
 }
 
+object CommandHelpSchemaFootnoteText {
+  @scala.inline
+  def apply(
+    id: java.lang.String | scala.Double,
+    text: java.lang.String,
+    `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.text
+  ): CommandHelpSchemaFootnoteText = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
+  }
+}
+

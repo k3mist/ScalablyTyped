@@ -17,3 +17,12 @@ trait ObjectIdAndType extends js.Object {
   var objectType: ObjectIdActionType
 }
 
+object ObjectIdAndType {
+  @scala.inline
+  def apply(objectId: java.lang.String, objectType: ObjectIdActionType): ObjectIdAndType = {
+    val __obj = js.Dynamic.literal(objectId = objectId, objectType = objectType)
+  
+    __obj.asInstanceOf[ObjectIdAndType]
+  }
+}
+

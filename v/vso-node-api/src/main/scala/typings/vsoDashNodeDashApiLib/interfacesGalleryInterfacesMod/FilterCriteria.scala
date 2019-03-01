@@ -13,3 +13,12 @@ trait FilterCriteria extends js.Object {
   var value: java.lang.String
 }
 
+object FilterCriteria {
+  @scala.inline
+  def apply(filterType: scala.Double, value: java.lang.String): FilterCriteria = {
+    val __obj = js.Dynamic.literal(filterType = filterType, value = value)
+  
+    __obj.asInstanceOf[FilterCriteria]
+  }
+}
+

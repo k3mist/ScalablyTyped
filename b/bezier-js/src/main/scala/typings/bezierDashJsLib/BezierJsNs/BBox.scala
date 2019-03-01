@@ -11,3 +11,12 @@ trait BBox extends js.Object {
   var z: js.UndefOr[MinMax] = js.undefined
 }
 
+object BBox {
+  @scala.inline
+  def apply(x: MinMax, y: MinMax, z: MinMax = null): BBox = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+    if (z != null) __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[BBox]
+  }
+}
+

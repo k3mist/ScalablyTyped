@@ -12,3 +12,12 @@ trait QueryResultBase extends js.Object {
   var rowCount: scala.Double
 }
 
+object QueryResultBase {
+  @scala.inline
+  def apply(command: java.lang.String, fields: js.Array[FieldDef], oid: scala.Double, rowCount: scala.Double): QueryResultBase = {
+    val __obj = js.Dynamic.literal(command = command, fields = fields, oid = oid, rowCount = rowCount)
+  
+    __obj.asInstanceOf[QueryResultBase]
+  }
+}
+

@@ -10,3 +10,12 @@ trait GeoViewport extends js.Object {
   var zoom: scala.Double
 }
 
+object GeoViewport {
+  @scala.inline
+  def apply(center: js.Tuple2[scala.Double, scala.Double], zoom: scala.Double): GeoViewport = {
+    val __obj = js.Dynamic.literal(center = center, zoom = zoom)
+  
+    __obj.asInstanceOf[GeoViewport]
+  }
+}
+

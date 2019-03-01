@@ -51,3 +51,21 @@ trait INxStateCounts extends js.Object {
   var qSelectedExcluded: scala.Double
 }
 
+object INxStateCounts {
+  @scala.inline
+  def apply(
+    qAlternative: scala.Double,
+    qDeselected: scala.Double,
+    qExcluded: scala.Double,
+    qLocked: scala.Double,
+    qLockedExcluded: scala.Double,
+    qSelected: scala.Double,
+    qSelectedExcluded: scala.Double,
+    qOption: scala.Int | scala.Double = null
+  ): INxStateCounts = {
+    val __obj = js.Dynamic.literal(qAlternative = qAlternative, qDeselected = qDeselected, qExcluded = qExcluded, qLocked = qLocked, qLockedExcluded = qLockedExcluded, qSelected = qSelected, qSelectedExcluded = qSelectedExcluded)
+    if (qOption != null) __obj.updateDynamic("qOption")(qOption.asInstanceOf[js.Any])
+    __obj.asInstanceOf[INxStateCounts]
+  }
+}
+

@@ -22,3 +22,20 @@ trait FlashHalfEdge extends js.Object {
   def getVertex(): FlashVertex
 }
 
+object FlashHalfEdge {
+  @scala.inline
+  def apply(
+    getEdge: js.Function0[FlashEdge],
+    getNext: js.Function0[FlashHalfEdge],
+    getOppositeHalfEdge: js.Function0[FlashHalfEdge],
+    getPrev: js.Function0[FlashHalfEdge],
+    getVertex: js.Function0[FlashVertex],
+    id: scala.Double,
+    index: scala.Double
+  ): FlashHalfEdge = {
+    val __obj = js.Dynamic.literal(getEdge = getEdge, getNext = getNext, getOppositeHalfEdge = getOppositeHalfEdge, getPrev = getPrev, getVertex = getVertex, id = id, index = index)
+  
+    __obj.asInstanceOf[FlashHalfEdge]
+  }
+}
+

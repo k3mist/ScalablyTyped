@@ -10,3 +10,12 @@ trait Anon_ItemsReturnValueLanguage extends js.Object {
   /** The number of items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueLanguage {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.GlobalizationNs.Language, returnValue: scala.Double): Anon_ItemsReturnValueLanguage = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueLanguage]
+  }
+}
+

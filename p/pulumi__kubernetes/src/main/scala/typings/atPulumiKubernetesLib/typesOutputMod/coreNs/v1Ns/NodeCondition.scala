@@ -35,3 +35,19 @@ trait NodeCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object NodeCondition {
+  @scala.inline
+  def apply(
+    lastHeartbeatTime: java.lang.String,
+    lastTransitionTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    status: java.lang.String,
+    `type`: java.lang.String
+  ): NodeCondition = {
+    val __obj = js.Dynamic.literal(lastHeartbeatTime = lastHeartbeatTime, lastTransitionTime = lastTransitionTime, message = message, reason = reason, status = status, `type` = `type`)
+  
+    __obj.asInstanceOf[NodeCondition]
+  }
+}
+

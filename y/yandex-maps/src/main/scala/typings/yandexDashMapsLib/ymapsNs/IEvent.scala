@@ -19,3 +19,24 @@ trait IEvent extends js.Object {
   def stopPropagation(): scala.Boolean
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    allowMapEvent: js.Function0[scala.Unit],
+    callMethod: js.Function1[java.lang.String, scala.Unit],
+    get: js.Function1[java.lang.String, js.Object],
+    getSourceEvent: js.Function0[IEvent | scala.Null],
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isImmediatePropagationStopped: js.Function0[scala.Boolean],
+    isMapEventAllowed: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    preventDefault: js.Function0[scala.Boolean],
+    stopImmediatePropagation: js.Function0[scala.Boolean],
+    stopPropagation: js.Function0[scala.Boolean]
+  ): IEvent = {
+    val __obj = js.Dynamic.literal(allowMapEvent = allowMapEvent, callMethod = callMethod, get = get, getSourceEvent = getSourceEvent, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isMapEventAllowed = isMapEventAllowed, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation)
+  
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

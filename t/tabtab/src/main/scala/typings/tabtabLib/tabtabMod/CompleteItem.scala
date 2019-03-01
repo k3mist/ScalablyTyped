@@ -10,3 +10,12 @@ trait CompleteItem extends js.Object {
   var name: java.lang.String
 }
 
+object CompleteItem {
+  @scala.inline
+  def apply(name: java.lang.String, description: java.lang.String = null): CompleteItem = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[CompleteItem]
+  }
+}
+

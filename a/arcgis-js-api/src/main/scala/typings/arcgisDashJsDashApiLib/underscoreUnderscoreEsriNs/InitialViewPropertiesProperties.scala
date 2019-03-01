@@ -20,3 +20,13 @@ trait InitialViewPropertiesProperties extends js.Object {
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 
+object InitialViewPropertiesProperties {
+  @scala.inline
+  def apply(spatialReference: SpatialReferenceProperties = null, viewpoint: ViewpointProperties = null): InitialViewPropertiesProperties = {
+    val __obj = js.Dynamic.literal()
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    __obj.asInstanceOf[InitialViewPropertiesProperties]
+  }
+}
+

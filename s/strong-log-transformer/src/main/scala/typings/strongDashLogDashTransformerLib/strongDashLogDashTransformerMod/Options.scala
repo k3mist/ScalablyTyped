@@ -12,3 +12,17 @@ trait Options extends js.Object {
   var timeStamp: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    format: java.lang.String,
+    mergeMultiline: scala.Boolean,
+    tag: java.lang.String,
+    timeStamp: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal(format = format, mergeMultiline = mergeMultiline, tag = tag, timeStamp = timeStamp)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

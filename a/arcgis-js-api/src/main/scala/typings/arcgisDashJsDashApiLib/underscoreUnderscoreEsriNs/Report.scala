@@ -39,3 +39,21 @@ trait Report
   var title: java.lang.String
 }
 
+object Report {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    hierarchy: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String
+  ): Report = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, hierarchy = hierarchy, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
+    __obj.asInstanceOf[Report]
+  }
+}
+

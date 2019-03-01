@@ -20,3 +20,17 @@ trait XConnector
   def connect(sConnectionDescription: java.lang.String): XConnection
 }
 
+object XConnector {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    connect: js.Function1[java.lang.String, XConnection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XConnector = {
+    val __obj = js.Dynamic.literal(acquire = acquire, connect = connect, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XConnector]
+  }
+}
+

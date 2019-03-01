@@ -18,3 +18,25 @@ trait Order extends js.Object {
   var `type`: java.lang.String
 }
 
+object Order {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    created: scala.Double,
+    id: java.lang.String,
+    price: scala.Double,
+    remainingAmount: scala.Double,
+    resourceType: MarketResourceConstant,
+    `type`: java.lang.String,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    roomName: java.lang.String = null,
+    totalAmount: scala.Int | scala.Double = null
+  ): Order = {
+    val __obj = js.Dynamic.literal(amount = amount, created = created, id = id, price = price, remainingAmount = remainingAmount, resourceType = resourceType.asInstanceOf[js.Any], `type` = `type`)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (roomName != null) __obj.updateDynamic("roomName")(roomName)
+    if (totalAmount != null) __obj.updateDynamic("totalAmount")(totalAmount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Order]
+  }
+}
+

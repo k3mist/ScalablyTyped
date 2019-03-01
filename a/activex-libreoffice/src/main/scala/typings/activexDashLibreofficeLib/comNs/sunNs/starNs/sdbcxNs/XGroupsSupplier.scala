@@ -20,3 +20,18 @@ trait XGroupsSupplier
   def getGroups(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XGroupsSupplier {
+  @scala.inline
+  def apply(
+    Groups: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getGroups: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGroupsSupplier = {
+    val __obj = js.Dynamic.literal(Groups = Groups, acquire = acquire, getGroups = getGroups, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGroupsSupplier]
+  }
+}
+

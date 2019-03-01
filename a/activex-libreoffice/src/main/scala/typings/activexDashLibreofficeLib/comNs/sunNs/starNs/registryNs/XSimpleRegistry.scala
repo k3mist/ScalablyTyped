@@ -65,3 +65,26 @@ trait XSimpleRegistry
   def open(rURL: java.lang.String, bReadOnly: scala.Boolean, bCreate: scala.Boolean): scala.Unit
 }
 
+object XSimpleRegistry {
+  @scala.inline
+  def apply(
+    RootKey: XRegistryKey,
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    close: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getRootKey: js.Function0[XRegistryKey],
+    getURL: js.Function0[java.lang.String],
+    isReadOnly: js.Function0[scala.Boolean],
+    isValid: js.Function0[scala.Boolean],
+    mergeKey: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    open: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSimpleRegistry = {
+    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = acquire, close = close, destroy = destroy, getRootKey = getRootKey, getURL = getURL, isReadOnly = isReadOnly, isValid = isValid, mergeKey = mergeKey, open = open, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSimpleRegistry]
+  }
+}
+

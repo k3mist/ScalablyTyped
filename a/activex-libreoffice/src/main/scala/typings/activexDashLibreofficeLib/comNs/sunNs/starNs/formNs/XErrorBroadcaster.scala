@@ -19,3 +19,18 @@ trait XErrorBroadcaster
   def removeErrorListener(aListener: XErrorListener): scala.Unit
 }
 
+object XErrorBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addErrorListener: js.Function1[XErrorListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeErrorListener: js.Function1[XErrorListener, scala.Unit]
+  ): XErrorBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addErrorListener = addErrorListener, queryInterface = queryInterface, release = release, removeErrorListener = removeErrorListener)
+  
+    __obj.asInstanceOf[XErrorBroadcaster]
+  }
+}
+

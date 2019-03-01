@@ -17,3 +17,18 @@ trait XDefaultsSupplier
   def getDefaults(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XDefaultsSupplier {
+  @scala.inline
+  def apply(
+    Defaults: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getDefaults: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDefaultsSupplier = {
+    val __obj = js.Dynamic.literal(Defaults = Defaults, acquire = acquire, getDefaults = getDefaults, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDefaultsSupplier]
+  }
+}
+

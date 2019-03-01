@@ -16,3 +16,12 @@ trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
   var version: scala.Double | scala.Null
 }
 
+object VersionedTextDocumentIdentifier {
+  @scala.inline
+  def apply(uri: java.lang.String, version: scala.Int | scala.Double = null): VersionedTextDocumentIdentifier = {
+    val __obj = js.Dynamic.literal(uri = uri)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VersionedTextDocumentIdentifier]
+  }
+}
+

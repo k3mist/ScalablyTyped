@@ -21,3 +21,12 @@ trait INxSimpleValue extends js.Object {
   var qText: java.lang.String
 }
 
+object INxSimpleValue {
+  @scala.inline
+  def apply(qNum: scala.Double, qText: java.lang.String): INxSimpleValue = {
+    val __obj = js.Dynamic.literal(qNum = qNum, qText = qText)
+  
+    __obj.asInstanceOf[INxSimpleValue]
+  }
+}
+

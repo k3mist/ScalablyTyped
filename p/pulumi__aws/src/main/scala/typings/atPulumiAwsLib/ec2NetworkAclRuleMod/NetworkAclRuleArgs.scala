@@ -52,3 +52,30 @@ trait NetworkAclRuleArgs extends js.Object {
   val toPort: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object NetworkAclRuleArgs {
+  @scala.inline
+  def apply(
+    networkAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    protocol: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ruleAction: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ruleNumber: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    cidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    egress: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    fromPort: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    icmpCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    icmpType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ipv6CidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    toPort: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): NetworkAclRuleArgs = {
+    val __obj = js.Dynamic.literal(networkAclId = networkAclId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], ruleAction = ruleAction.asInstanceOf[js.Any], ruleNumber = ruleNumber.asInstanceOf[js.Any])
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
+    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
+    if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
+    if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])
+    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
+    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAclRuleArgs]
+  }
+}
+

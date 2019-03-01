@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "gulp-typescript"
-version := "5.0.0-ccd7c7"
+version := "5.0.0-b4dca2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-colors" % "3.2-dt-20181231Z-7e7e9e",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ad9cd5",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20180214Z-07b6ca",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-337a74",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-9b48fa",
-  "org.scalablytyped" %%% "plugin-error" % "0.1-dt-20190212Z-795ece",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-f37bcc",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-468d45",
-  "org.scalablytyped" %%% "typescript" % "3.3.3-010c4f",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-4ed116",
-  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-ddf1db")
+  "org.scalablytyped" %%% "ansi-colors" % "3.2-dt-20181231Z-311c0c",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-7dc944",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20180214Z-85446d",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-8cfae8",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-050272",
+  "org.scalablytyped" %%% "plugin-error" % "0.1-dt-20190212Z-dfd183",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-bbbf0a",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e",
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-05726a",
+  "org.scalablytyped" %%% "typescript" % "3.3.3-a1b20b",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-1402b8",
+  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-678ffe")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

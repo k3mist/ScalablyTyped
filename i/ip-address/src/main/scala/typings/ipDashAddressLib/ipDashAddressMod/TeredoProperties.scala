@@ -15,3 +15,20 @@ trait TeredoProperties extends js.Object {
   var udpPort: java.lang.String
 }
 
+object TeredoProperties {
+  @scala.inline
+  def apply(
+    client4: Address4,
+    coneNat: scala.Boolean,
+    flags: java.lang.String,
+    microsoft: ipDashAddressLib.Anon_GroupIndividual,
+    prefix: java.lang.String,
+    server4: Address4,
+    udpPort: java.lang.String
+  ): TeredoProperties = {
+    val __obj = js.Dynamic.literal(client4 = client4, coneNat = coneNat, flags = flags, microsoft = microsoft, prefix = prefix, server4 = server4, udpPort = udpPort)
+  
+    __obj.asInstanceOf[TeredoProperties]
+  }
+}
+

@@ -20,3 +20,24 @@ trait OwnedStructure[T /* <: StructureConstant */] extends Structure[T] {
   var owner: Owner
 }
 
+object OwnedStructure {
+  @scala.inline
+  def apply[T /* <: StructureConstant */](
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    room: Room,
+    structureType: T
+  ): OwnedStructure[T] = {
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, structureType = structureType.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[OwnedStructure[T]]
+  }
+}
+

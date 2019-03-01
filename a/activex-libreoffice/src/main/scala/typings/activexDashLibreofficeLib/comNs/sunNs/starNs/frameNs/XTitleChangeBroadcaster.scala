@@ -14,3 +14,18 @@ trait XTitleChangeBroadcaster
   def removeTitleChangeListener(xListener: XTitleChangeListener): scala.Unit
 }
 
+object XTitleChangeBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addTitleChangeListener: js.Function1[XTitleChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTitleChangeListener: js.Function1[XTitleChangeListener, scala.Unit]
+  ): XTitleChangeBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addTitleChangeListener = addTitleChangeListener, queryInterface = queryInterface, release = release, removeTitleChangeListener = removeTitleChangeListener)
+  
+    __obj.asInstanceOf[XTitleChangeBroadcaster]
+  }
+}
+

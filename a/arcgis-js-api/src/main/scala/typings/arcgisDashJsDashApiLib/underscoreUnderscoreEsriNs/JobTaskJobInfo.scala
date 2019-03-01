@@ -159,3 +159,41 @@ trait JobTaskJobInfo
   var versionName: java.lang.String
 }
 
+object JobTaskJobInfo {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    assignedType: java.lang.String,
+    childJobIds: js.Array[scala.Double],
+    constructor: js.Function,
+    createdBy: java.lang.String,
+    createdDate: stdLib.Date,
+    dataWorkspaceId: java.lang.String,
+    description: java.lang.String,
+    dueDate: stdLib.Date,
+    endDate: stdLib.Date,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    jobTypeId: scala.Double,
+    loi: Geometry,
+    name: java.lang.String,
+    ownedBy: java.lang.String,
+    parentJobId: scala.Double,
+    parentVersion: java.lang.String,
+    pendingDays: scala.Double,
+    percentageComplete: scala.Double,
+    priority: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stage: java.lang.String,
+    startDate: stdLib.Date,
+    status: scala.Double,
+    versionExists: scala.Boolean,
+    versionInfo: JobVersionInfo,
+    versionName: java.lang.String
+  ): JobTaskJobInfo = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, childJobIds = childJobIds, constructor = constructor, createdBy = createdBy, createdDate = createdDate, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, endDate = endDate, hasOwnProperty = hasOwnProperty, id = id, jobTypeId = jobTypeId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, pendingDays = pendingDays, percentageComplete = percentageComplete, priority = priority, propertyIsEnumerable = propertyIsEnumerable, stage = stage, startDate = startDate, status = status, versionExists = versionExists, versionInfo = versionInfo, versionName = versionName)
+  
+    __obj.asInstanceOf[JobTaskJobInfo]
+  }
+}
+

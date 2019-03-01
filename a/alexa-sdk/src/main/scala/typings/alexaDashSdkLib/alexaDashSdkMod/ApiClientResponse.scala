@@ -12,3 +12,12 @@ trait ApiClientResponse extends js.Object {
   var statusText: java.lang.String
 }
 
+object ApiClientResponse {
+  @scala.inline
+  def apply(body: js.Object, headers: js.Object, statusCode: java.lang.String, statusText: java.lang.String): ApiClientResponse = {
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode, statusText = statusText)
+  
+    __obj.asInstanceOf[ApiClientResponse]
+  }
+}
+

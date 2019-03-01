@@ -15,3 +15,20 @@ trait Anon_ColumnFilenameLeft extends js.Object {
   var right: stylusLib.stylusMod.StylusNs.NodesNs.Expression
 }
 
+object Anon_ColumnFilenameLeft {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    left: stylusLib.stylusMod.StylusNs.NodesNs.Expression,
+    lineno: scala.Double,
+    op: java.lang.String,
+    right: stylusLib.stylusMod.StylusNs.NodesNs.Expression
+  ): Anon_ColumnFilenameLeft = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, left = left, lineno = lineno, op = op, right = right)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameLeft]
+  }
+}
+

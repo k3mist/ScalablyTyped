@@ -10,3 +10,12 @@ trait TestSummaryForWorkItem extends js.Object {
   var workItem: WorkItemReference
 }
 
+object TestSummaryForWorkItem {
+  @scala.inline
+  def apply(summary: AggregatedDataForResultTrend, workItem: WorkItemReference): TestSummaryForWorkItem = {
+    val __obj = js.Dynamic.literal(summary = summary, workItem = workItem)
+  
+    __obj.asInstanceOf[TestSummaryForWorkItem]
+  }
+}
+

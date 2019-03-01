@@ -10,3 +10,12 @@ trait TestMethod extends js.Object {
   var name: java.lang.String
 }
 
+object TestMethod {
+  @scala.inline
+  def apply(container: java.lang.String, name: java.lang.String): TestMethod = {
+    val __obj = js.Dynamic.literal(container = container, name = name)
+  
+    __obj.asInstanceOf[TestMethod]
+  }
+}
+

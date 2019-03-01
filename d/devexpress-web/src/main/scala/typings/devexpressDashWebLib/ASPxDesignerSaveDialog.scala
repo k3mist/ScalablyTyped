@@ -25,3 +25,27 @@ trait ASPxDesignerSaveDialog extends ASPxDesignerReportDialogBase {
   def save(url: java.lang.String): scala.Unit
 }
 
+object ASPxDesignerSaveDialog {
+  @scala.inline
+  def apply(
+    buttons: js.Array[js.Object],
+    cancel: js.Function0[scala.Unit],
+    customize: js.Function2[java.lang.String, ASPxDesignerDialogModel, scala.Unit],
+    height: js.Any,
+    model: js.Any,
+    notSave: js.Function0[scala.Unit],
+    save: js.Function1[java.lang.String, scala.Unit],
+    saveReportDialog: ASPxDesignerSaveAsDialog,
+    show: js.Function1[ASPxDesignerNavigateTab, scala.Unit],
+    tab: js.Any,
+    template: js.Any,
+    title: java.lang.String,
+    visible: js.Any,
+    width: js.Any
+  ): ASPxDesignerSaveDialog = {
+    val __obj = js.Dynamic.literal(buttons = buttons, cancel = cancel, customize = customize, height = height, model = model, notSave = notSave, save = save, saveReportDialog = saveReportDialog, show = show, tab = tab, template = template, title = title, visible = visible, width = width)
+  
+    __obj.asInstanceOf[ASPxDesignerSaveDialog]
+  }
+}
+

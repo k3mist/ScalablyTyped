@@ -26,3 +26,18 @@ trait WidgetProperties extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WidgetProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null
+  ): WidgetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[WidgetProperties]
+  }
+}
+

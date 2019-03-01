@@ -17,3 +17,17 @@ trait ISpeechRecognitionConstraint extends js.Object {
   var `type`: SpeechRecognitionConstraintType
 }
 
+object ISpeechRecognitionConstraint {
+  @scala.inline
+  def apply(
+    isEnabled: scala.Boolean,
+    probability: SpeechRecognitionConstraintProbability,
+    tag: java.lang.String,
+    `type`: SpeechRecognitionConstraintType
+  ): ISpeechRecognitionConstraint = {
+    val __obj = js.Dynamic.literal(isEnabled = isEnabled, probability = probability, tag = tag, `type` = `type`)
+  
+    __obj.asInstanceOf[ISpeechRecognitionConstraint]
+  }
+}
+

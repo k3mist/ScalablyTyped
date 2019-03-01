@@ -12,3 +12,15 @@ import scala.scalajs.js.annotation._
 trait FormSelector
   extends xrmLib.XrmNs.ControlsNs.FormSelector
 
+object FormSelector {
+  @scala.inline
+  def apply(
+    getCurrentItem: js.Function0[xrmLib.XrmNs.ControlsNs.FormItem],
+    items: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.FormItem]
+  ): FormSelector = {
+    val __obj = js.Dynamic.literal(getCurrentItem = getCurrentItem, items = items)
+  
+    __obj.asInstanceOf[FormSelector]
+  }
+}
+

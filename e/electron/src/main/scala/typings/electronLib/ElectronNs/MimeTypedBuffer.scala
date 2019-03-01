@@ -17,3 +17,12 @@ trait MimeTypedBuffer extends js.Object {
   var mimeType: java.lang.String
 }
 
+object MimeTypedBuffer {
+  @scala.inline
+  def apply(data: nodeLib.Buffer, mimeType: java.lang.String): MimeTypedBuffer = {
+    val __obj = js.Dynamic.literal(data = data, mimeType = mimeType)
+  
+    __obj.asInstanceOf[MimeTypedBuffer]
+  }
+}
+

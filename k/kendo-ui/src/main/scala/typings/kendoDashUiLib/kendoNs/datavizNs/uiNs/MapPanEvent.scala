@@ -11,3 +11,21 @@ trait MapPanEvent extends MapEvent {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object MapPanEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Map,
+    center: kendoDashUiLib.kendoNs.datavizNs.mapNs.Location = null,
+    origin: kendoDashUiLib.kendoNs.datavizNs.mapNs.Location = null,
+    originalEvent: js.Any = null
+  ): MapPanEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[MapPanEvent]
+  }
+}
+

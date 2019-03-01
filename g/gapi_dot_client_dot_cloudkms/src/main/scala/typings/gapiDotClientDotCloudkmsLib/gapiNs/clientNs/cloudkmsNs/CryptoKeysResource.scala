@@ -51,3 +51,54 @@ trait CryptoKeysResource extends js.Object {
   def updatePrimaryVersion(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
 }
 
+object CryptoKeysResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackCryptoKeyId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+    ],
+    cryptoKeyVersions: CryptoKeyVersionsResource,
+    decrypt: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DecryptResponse]
+    ],
+    encrypt: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EncryptResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeysResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    updatePrimaryVersion: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+    ]
+  ): CryptoKeysResource = {
+    val __obj = js.Dynamic.literal(create = create, cryptoKeyVersions = cryptoKeyVersions, decrypt = decrypt, encrypt = encrypt, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, updatePrimaryVersion = updatePrimaryVersion)
+  
+    __obj.asInstanceOf[CryptoKeysResource]
+  }
+}
+

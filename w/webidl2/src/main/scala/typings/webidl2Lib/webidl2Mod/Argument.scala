@@ -19,3 +19,19 @@ trait Argument extends js.Object {
   var variadic: scala.Boolean
 }
 
+object Argument {
+  @scala.inline
+  def apply(
+    default: ValueDescription,
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    optional: scala.Boolean,
+    variadic: scala.Boolean
+  ): Argument = {
+    val __obj = js.Dynamic.literal(default = default, extAttrs = extAttrs, idlType = idlType, name = name, optional = optional, variadic = variadic)
+  
+    __obj.asInstanceOf[Argument]
+  }
+}
+

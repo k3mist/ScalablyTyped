@@ -33,3 +33,18 @@ trait MeshComponentProperties extends js.Object {
   var shading: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MeshComponentProperties {
+  @scala.inline
+  def apply(
+    faces: stdLib.Uint32Array | js.Array[scala.Double] | stdLib.Uint16Array = null,
+    material: MeshComponentMaterialProperties = null,
+    shading: java.lang.String = null
+  ): MeshComponentProperties = {
+    val __obj = js.Dynamic.literal()
+    if (faces != null) __obj.updateDynamic("faces")(faces.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (shading != null) __obj.updateDynamic("shading")(shading)
+    __obj.asInstanceOf[MeshComponentProperties]
+  }
+}
+

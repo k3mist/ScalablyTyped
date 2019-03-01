@@ -47,3 +47,27 @@ trait StreamArgs extends js.Object {
   ] = js.undefined
 }
 
+object StreamArgs {
+  @scala.inline
+  def apply(
+    shardCount: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    encryptionType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    retentionPeriod: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    shardLevelMetrics: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): StreamArgs = {
+    val __obj = js.Dynamic.literal(shardCount = shardCount.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (encryptionType != null) __obj.updateDynamic("encryptionType")(encryptionType.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])
+    if (shardLevelMetrics != null) __obj.updateDynamic("shardLevelMetrics")(shardLevelMetrics.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamArgs]
+  }
+}
+

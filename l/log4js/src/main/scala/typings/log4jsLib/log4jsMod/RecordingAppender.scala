@@ -9,3 +9,12 @@ trait RecordingAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.recording
 }
 
+object RecordingAppender {
+  @scala.inline
+  def apply(`type`: log4jsLib.log4jsLibStrings.recording): RecordingAppender = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[RecordingAppender]
+  }
+}
+

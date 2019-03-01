@@ -21,3 +21,12 @@ trait ASPxClientCardViewBatchEditCardRecoveringEventArgs extends ASPxClientCance
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewBatchEditCardRecoveringEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, cardValues: js.Object, visibleIndex: scala.Double): ASPxClientCardViewBatchEditCardRecoveringEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardRecoveringEventArgs]
+  }
+}
+

@@ -46,3 +46,51 @@ trait IMetadataCardControl extends js.Object {
   def SetValueItemState(itemID: java.lang.String, state: js.Any): scala.Unit
 }
 
+object IMetadataCardControl {
+  @scala.inline
+  def apply(
+    ActivateLink: js.Function1[js.Any, scala.Unit],
+    AddNewItem: js.Function1[java.lang.String, js.Any],
+    AddNewSubItem: js.Function2[java.lang.String, js.Any, js.Any],
+    AllowAdding: scala.Boolean,
+    AllowHitHighlighting: js.Function0[scala.Boolean],
+    CanActivateLink: js.Function1[js.Any, scala.Boolean],
+    CanAddNewSubItem: js.Function2[java.lang.String, js.Any, scala.Boolean],
+    CanEditItem: js.Function1[js.Any, scala.Boolean],
+    CreateSelectionList: js.Function0[IMetadataCardSelectionList],
+    CreateUnvalidatedValue: js.Function1[java.lang.String, IMetadataCardUnvalidatedValue],
+    EditItem: js.Function1[js.Any, js.Any],
+    Events: IEvents,
+    FindItem: js.Function1[java.lang.String, js.Any],
+    FindItemByID: js.Function1[scala.Double, js.Any],
+    GetSelectableValueItemStates: js.Function0[js.Any],
+    GetValueSuggestions: js.Function0[js.Any],
+    HasAutomaticValue: js.Function0[scala.Boolean],
+    HasInitialValue: js.Function0[scala.Boolean],
+    HasUncalculatedAutomaticValue: js.Function0[scala.Boolean],
+    Hierarchical: scala.Boolean,
+    ID: java.lang.String,
+    IsExternal: js.Function0[scala.Boolean],
+    Label: java.lang.String,
+    Linked: scala.Boolean,
+    Modified: scala.Boolean,
+    MustExist: scala.Boolean,
+    PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
+    ReadOnly: scala.Boolean,
+    RealObjectType: scala.Boolean,
+    RefreshList: js.Function0[scala.Unit],
+    Remove: js.Function0[scala.Unit],
+    RevertToInitialValue: js.Function0[scala.Unit],
+    SetValueItemState: js.Function2[java.lang.String, js.Any, scala.Unit],
+    Type: java.lang.String,
+    Value: js.Any,
+    ValueRequired: scala.Boolean,
+    Valuelist: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double,
+    Visible: scala.Boolean
+  ): IMetadataCardControl = {
+    val __obj = js.Dynamic.literal(ActivateLink = ActivateLink, AddNewItem = AddNewItem, AddNewSubItem = AddNewSubItem, AllowAdding = AllowAdding, AllowHitHighlighting = AllowHitHighlighting, CanActivateLink = CanActivateLink, CanAddNewSubItem = CanAddNewSubItem, CanEditItem = CanEditItem, CreateSelectionList = CreateSelectionList, CreateUnvalidatedValue = CreateUnvalidatedValue, EditItem = EditItem, Events = Events, FindItem = FindItem, FindItemByID = FindItemByID, GetSelectableValueItemStates = GetSelectableValueItemStates, GetValueSuggestions = GetValueSuggestions, HasAutomaticValue = HasAutomaticValue, HasInitialValue = HasInitialValue, HasUncalculatedAutomaticValue = HasUncalculatedAutomaticValue, Hierarchical = Hierarchical, ID = ID, IsExternal = IsExternal, Label = Label, Linked = Linked, Modified = Modified, MustExist = MustExist, PropertyDef = PropertyDef.asInstanceOf[js.Any], ReadOnly = ReadOnly, RealObjectType = RealObjectType, RefreshList = RefreshList, Remove = Remove, RevertToInitialValue = RevertToInitialValue, SetValueItemState = SetValueItemState, Type = Type, Value = Value, ValueRequired = ValueRequired, Valuelist = Valuelist.asInstanceOf[js.Any], Visible = Visible)
+  
+    __obj.asInstanceOf[IMetadataCardControl]
+  }
+}
+

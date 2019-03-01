@@ -65,3 +65,26 @@ trait XBlob
   def positionOfBlob(pattern: XBlob, start: scala.Double): scala.Double
 }
 
+object XBlob {
+  @scala.inline
+  def apply(
+    BinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getBytes: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
+    length: js.Function0[scala.Double],
+    position: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      scala.Double
+    ],
+    positionOfBlob: js.Function2[XBlob, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBlob = {
+    val __obj = js.Dynamic.literal(BinaryStream = BinaryStream, acquire = acquire, getBinaryStream = getBinaryStream, getBytes = getBytes, length = length, position = position, positionOfBlob = positionOfBlob, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBlob]
+  }
+}
+

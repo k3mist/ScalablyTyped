@@ -17,3 +17,22 @@ trait DirectionsStep extends js.Object {
   var travel_mode: TravelMode
 }
 
+object DirectionsStep {
+  @scala.inline
+  def apply(
+    distance: Distance,
+    duration: Duration,
+    end_location: LatLng,
+    instructions: java.lang.String,
+    path: js.Array[LatLng],
+    start_location: LatLng,
+    steps: DirectionsStep,
+    transit: TransitDetails,
+    travel_mode: TravelMode
+  ): DirectionsStep = {
+    val __obj = js.Dynamic.literal(distance = distance, duration = duration, end_location = end_location, instructions = instructions, path = path, start_location = start_location, steps = steps, transit = transit, travel_mode = travel_mode)
+  
+    __obj.asInstanceOf[DirectionsStep]
+  }
+}
+

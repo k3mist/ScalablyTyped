@@ -33,3 +33,20 @@ trait TableRelationship
   var tableName: java.lang.String
 }
 
+object TableRelationship {
+  @scala.inline
+  def apply(
+    cardinality: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    linkField: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    tableAlias: java.lang.String,
+    tableName: java.lang.String
+  ): TableRelationship = {
+    val __obj = js.Dynamic.literal(cardinality = cardinality, constructor = constructor, hasOwnProperty = hasOwnProperty, linkField = linkField, propertyIsEnumerable = propertyIsEnumerable, tableAlias = tableAlias, tableName = tableName)
+  
+    __obj.asInstanceOf[TableRelationship]
+  }
+}
+

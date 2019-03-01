@@ -167,3 +167,35 @@ trait XAccessibleContext
   def getLocale(): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
 }
 
+object XAccessibleContext {
+  @scala.inline
+  def apply(
+    AccessibleChildCount: scala.Double,
+    AccessibleDescription: java.lang.String,
+    AccessibleIndexInParent: scala.Double,
+    AccessibleName: java.lang.String,
+    AccessibleParent: XAccessible,
+    AccessibleRelationSet: XAccessibleRelationSet,
+    AccessibleRole: scala.Double,
+    AccessibleStateSet: XAccessibleStateSet,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    acquire: js.Function0[scala.Unit],
+    getAccessibleChild: js.Function1[scala.Double, XAccessible],
+    getAccessibleChildCount: js.Function0[scala.Double],
+    getAccessibleDescription: js.Function0[java.lang.String],
+    getAccessibleIndexInParent: js.Function0[scala.Double],
+    getAccessibleName: js.Function0[java.lang.String],
+    getAccessibleParent: js.Function0[XAccessible],
+    getAccessibleRelationSet: js.Function0[XAccessibleRelationSet],
+    getAccessibleRole: js.Function0[scala.Double],
+    getAccessibleStateSet: js.Function0[XAccessibleStateSet],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleContext = {
+    val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount, AccessibleDescription = AccessibleDescription, AccessibleIndexInParent = AccessibleIndexInParent, AccessibleName = AccessibleName, AccessibleParent = AccessibleParent, AccessibleRelationSet = AccessibleRelationSet, AccessibleRole = AccessibleRole, AccessibleStateSet = AccessibleStateSet, Locale = Locale, acquire = acquire, getAccessibleChild = getAccessibleChild, getAccessibleChildCount = getAccessibleChildCount, getAccessibleDescription = getAccessibleDescription, getAccessibleIndexInParent = getAccessibleIndexInParent, getAccessibleName = getAccessibleName, getAccessibleParent = getAccessibleParent, getAccessibleRelationSet = getAccessibleRelationSet, getAccessibleRole = getAccessibleRole, getAccessibleStateSet = getAccessibleStateSet, getLocale = getLocale, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessibleContext]
+  }
+}
+

@@ -20,3 +20,13 @@ trait TextDocumentContentChangeEvent extends js.Object {
   var text: java.lang.String
 }
 
+object TextDocumentContentChangeEvent {
+  @scala.inline
+  def apply(text: java.lang.String, range: Range = null, rangeLength: scala.Int | scala.Double = null): TextDocumentContentChangeEvent = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (rangeLength != null) __obj.updateDynamic("rangeLength")(rangeLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextDocumentContentChangeEvent]
+  }
+}
+

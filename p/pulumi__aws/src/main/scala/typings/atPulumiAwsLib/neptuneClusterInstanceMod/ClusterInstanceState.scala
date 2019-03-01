@@ -108,3 +108,60 @@ trait ClusterInstanceState extends js.Object {
   val writer: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object ClusterInstanceState {
+  @scala.inline
+  def apply(
+    address: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    applyImmediately: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    clusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbiResourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    endpoint: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    identifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    identifierPrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instanceClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    kmsKeyArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    neptuneParameterGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    neptuneSubnetGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    preferredBackupWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    promotionTier: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    publiclyAccessible: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    storageEncrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    writer: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): ClusterInstanceState = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    if (dbiResourceId != null) __obj.updateDynamic("dbiResourceId")(dbiResourceId.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
+    if (instanceClass != null) __obj.updateDynamic("instanceClass")(instanceClass.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (neptuneParameterGroupName != null) __obj.updateDynamic("neptuneParameterGroupName")(neptuneParameterGroupName.asInstanceOf[js.Any])
+    if (neptuneSubnetGroupName != null) __obj.updateDynamic("neptuneSubnetGroupName")(neptuneSubnetGroupName.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (promotionTier != null) __obj.updateDynamic("promotionTier")(promotionTier.asInstanceOf[js.Any])
+    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (writer != null) __obj.updateDynamic("writer")(writer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterInstanceState]
+  }
+}
+

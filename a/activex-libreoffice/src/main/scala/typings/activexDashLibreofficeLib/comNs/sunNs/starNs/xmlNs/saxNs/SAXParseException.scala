@@ -20,3 +20,20 @@ trait SAXParseException extends SAXException {
   var SystemId: java.lang.String
 }
 
+object SAXParseException {
+  @scala.inline
+  def apply(
+    ColumnNumber: scala.Double,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    LineNumber: scala.Double,
+    Message: java.lang.String,
+    PublicId: java.lang.String,
+    SystemId: java.lang.String,
+    WrappedException: js.Any
+  ): SAXParseException = {
+    val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber, Context = Context, LineNumber = LineNumber, Message = Message, PublicId = PublicId, SystemId = SystemId, WrappedException = WrappedException)
+  
+    __obj.asInstanceOf[SAXParseException]
+  }
+}
+

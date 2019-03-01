@@ -12,3 +12,12 @@ trait OnStateChangeEvent extends PlayerEvent {
   var data: PlayerState
 }
 
+object OnStateChangeEvent {
+  @scala.inline
+  def apply(data: PlayerState, target: Player): OnStateChangeEvent = {
+    val __obj = js.Dynamic.literal(data = data, target = target)
+  
+    __obj.asInstanceOf[OnStateChangeEvent]
+  }
+}
+

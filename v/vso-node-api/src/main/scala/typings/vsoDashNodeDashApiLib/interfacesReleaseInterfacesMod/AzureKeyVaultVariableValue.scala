@@ -11,3 +11,18 @@ trait AzureKeyVaultVariableValue extends VariableValue {
   var expires: stdLib.Date
 }
 
+object AzureKeyVaultVariableValue {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    enabled: scala.Boolean,
+    expires: stdLib.Date,
+    isSecret: scala.Boolean,
+    value: java.lang.String
+  ): AzureKeyVaultVariableValue = {
+    val __obj = js.Dynamic.literal(contentType = contentType, enabled = enabled, expires = expires, isSecret = isSecret, value = value)
+  
+    __obj.asInstanceOf[AzureKeyVaultVariableValue]
+  }
+}
+

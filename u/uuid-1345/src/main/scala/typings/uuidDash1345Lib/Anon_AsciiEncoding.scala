@@ -11,3 +11,16 @@ trait Anon_AsciiEncoding extends js.Object {
   var namespace: UuidTypes
 }
 
+object Anon_AsciiEncoding {
+  @scala.inline
+  def apply(
+    encoding: uuidDash1345Lib.uuidDash1345LibStrings.ascii,
+    name: java.lang.String,
+    namespace: UuidTypes
+  ): Anon_AsciiEncoding = {
+    val __obj = js.Dynamic.literal(encoding = encoding, name = name, namespace = namespace.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_AsciiEncoding]
+  }
+}
+

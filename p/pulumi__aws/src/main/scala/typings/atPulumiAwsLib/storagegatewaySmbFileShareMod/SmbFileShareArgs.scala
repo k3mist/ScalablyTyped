@@ -64,3 +64,35 @@ trait SmbFileShareArgs extends js.Object {
   ] = js.undefined
 }
 
+object SmbFileShareArgs {
+  @scala.inline
+  def apply(
+    gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    locationArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    authentication: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    defaultStorageClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    guessMimeTypeEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    invalidUserLists: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    kmsEncrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    objectAcl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    readOnly: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    requesterPays: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    validUserLists: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): SmbFileShareArgs = {
+    val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], locationArn = locationArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
+    if (defaultStorageClass != null) __obj.updateDynamic("defaultStorageClass")(defaultStorageClass.asInstanceOf[js.Any])
+    if (guessMimeTypeEnabled != null) __obj.updateDynamic("guessMimeTypeEnabled")(guessMimeTypeEnabled.asInstanceOf[js.Any])
+    if (invalidUserLists != null) __obj.updateDynamic("invalidUserLists")(invalidUserLists.asInstanceOf[js.Any])
+    if (kmsEncrypted != null) __obj.updateDynamic("kmsEncrypted")(kmsEncrypted.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (objectAcl != null) __obj.updateDynamic("objectAcl")(objectAcl.asInstanceOf[js.Any])
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (requesterPays != null) __obj.updateDynamic("requesterPays")(requesterPays.asInstanceOf[js.Any])
+    if (validUserLists != null) __obj.updateDynamic("validUserLists")(validUserLists.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmbFileShareArgs]
+  }
+}
+

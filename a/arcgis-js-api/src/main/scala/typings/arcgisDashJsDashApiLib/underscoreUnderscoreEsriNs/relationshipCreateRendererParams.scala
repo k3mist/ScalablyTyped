@@ -129,3 +129,37 @@ trait relationshipCreateRendererParams
   var view: View
 }
 
+object relationshipCreateRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field1: relationshipCreateRendererParamsField1,
+    field2: relationshipCreateRendererParamsField2,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    view: View,
+    basemap: java.lang.String | Basemap = null,
+    classificationMethod: java.lang.String = null,
+    colorMixMode: java.lang.String = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: java.lang.String = null,
+    legendOptions: relationshipCreateRendererParamsLegendOptions = null,
+    numClasses: scala.Int | scala.Double = null,
+    relationshipScheme: RelationshipScheme = null,
+    symbolType: java.lang.String = null
+  ): relationshipCreateRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field1 = field1, field2 = field2, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (relationshipScheme != null) __obj.updateDynamic("relationshipScheme")(relationshipScheme)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    __obj.asInstanceOf[relationshipCreateRendererParams]
+  }
+}
+

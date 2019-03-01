@@ -28,3 +28,21 @@ trait LeftRightMarginScale extends js.Object {
   var TextLeft: scala.Double
 }
 
+object LeftRightMarginScale {
+  @scala.inline
+  def apply(
+    AutoFirstLine: scala.Boolean,
+    FirstLine: scala.Double,
+    Left: scala.Double,
+    Right: scala.Double,
+    ScaleFirstLine: scala.Double,
+    ScaleLeft: scala.Double,
+    ScaleRight: scala.Double,
+    TextLeft: scala.Double
+  ): LeftRightMarginScale = {
+    val __obj = js.Dynamic.literal(AutoFirstLine = AutoFirstLine, FirstLine = FirstLine, Left = Left, Right = Right, ScaleFirstLine = ScaleFirstLine, ScaleLeft = ScaleLeft, ScaleRight = ScaleRight, TextLeft = TextLeft)
+  
+    __obj.asInstanceOf[LeftRightMarginScale]
+  }
+}
+

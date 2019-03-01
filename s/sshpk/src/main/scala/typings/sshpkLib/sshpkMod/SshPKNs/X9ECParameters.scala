@@ -12,3 +12,12 @@ trait X9ECParameters extends js.Object {
   var n: js.Any
 }
 
+object X9ECParameters {
+  @scala.inline
+  def apply(G: js.Any, g: js.Any, h: js.Any, n: js.Any): X9ECParameters = {
+    val __obj = js.Dynamic.literal(G = G, g = g, h = h, n = n)
+  
+    __obj.asInstanceOf[X9ECParameters]
+  }
+}
+

@@ -12,3 +12,17 @@ trait List extends js.Object {
   var users: js.Array[User]
 }
 
+object List {
+  @scala.inline
+  def apply(
+    pages: intercomDashClientLib.Anon_Next,
+    total_count: scala.Double,
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.userDOTlist,
+    users: js.Array[User]
+  ): List = {
+    val __obj = js.Dynamic.literal(pages = pages, total_count = total_count, `type` = `type`, users = users)
+  
+    __obj.asInstanceOf[List]
+  }
+}
+

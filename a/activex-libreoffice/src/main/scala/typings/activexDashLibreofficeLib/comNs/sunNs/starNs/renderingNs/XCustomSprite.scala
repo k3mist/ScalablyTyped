@@ -34,3 +34,30 @@ trait XCustomSprite extends XSprite {
   def getContentCanvas(): XCanvas
 }
 
+object XCustomSprite {
+  @scala.inline
+  def apply(
+    ContentCanvas: XCanvas,
+    acquire: js.Function0[scala.Unit],
+    clip: js.Function1[XPolyPolygon2D, scala.Unit],
+    getContentCanvas: js.Function0[XCanvas],
+    hide: js.Function0[scala.Unit],
+    move: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      ViewState, 
+      RenderState, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAlpha: js.Function1[scala.Double, scala.Unit],
+    setPriority: js.Function1[scala.Double, scala.Unit],
+    show: js.Function0[scala.Unit],
+    transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit]
+  ): XCustomSprite = {
+    val __obj = js.Dynamic.literal(ContentCanvas = ContentCanvas, acquire = acquire, clip = clip, getContentCanvas = getContentCanvas, hide = hide, move = move, queryInterface = queryInterface, release = release, setAlpha = setAlpha, setPriority = setPriority, show = show, transform = transform)
+  
+    __obj.asInstanceOf[XCustomSprite]
+  }
+}
+

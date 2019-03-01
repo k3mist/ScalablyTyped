@@ -13,3 +13,18 @@ trait Listener extends js.Object {
   def onInit(controller: Controller): scala.Unit
 }
 
+object Listener {
+  @scala.inline
+  def apply(
+    onConnect: js.Function1[Controller, scala.Unit],
+    onDisconnect: js.Function1[Controller, scala.Unit],
+    onExit: js.Function1[Controller, scala.Unit],
+    onFrame: js.Function2[Controller, Frame, scala.Unit],
+    onInit: js.Function1[Controller, scala.Unit]
+  ): Listener = {
+    val __obj = js.Dynamic.literal(onConnect = onConnect, onDisconnect = onDisconnect, onExit = onExit, onFrame = onFrame, onInit = onInit)
+  
+    __obj.asInstanceOf[Listener]
+  }
+}
+

@@ -12,3 +12,17 @@ trait ExecChannelRequest extends ChannelRequest {
   var wantReply: scala.Boolean
 }
 
+object ExecChannelRequest {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.exec,
+    wantReply: scala.Boolean
+  ): ExecChannelRequest = {
+    val __obj = js.Dynamic.literal(command = command, recipient = recipient, request = request, wantReply = wantReply)
+  
+    __obj.asInstanceOf[ExecChannelRequest]
+  }
+}
+

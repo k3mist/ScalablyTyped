@@ -21,3 +21,17 @@ trait RestartFrameReturnType extends js.Object {
   var callFrames: js.Array[CallFrame]
 }
 
+object RestartFrameReturnType {
+  @scala.inline
+  def apply(
+    callFrames: js.Array[CallFrame],
+    asyncStackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace = null,
+    asyncStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId = null
+  ): RestartFrameReturnType = {
+    val __obj = js.Dynamic.literal(callFrames = callFrames)
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
+    __obj.asInstanceOf[RestartFrameReturnType]
+  }
+}
+

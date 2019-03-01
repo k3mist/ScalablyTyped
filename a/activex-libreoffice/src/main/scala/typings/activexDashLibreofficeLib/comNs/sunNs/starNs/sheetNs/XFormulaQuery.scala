@@ -32,3 +32,18 @@ trait XFormulaQuery
   def queryPrecedents(bRecursive: scala.Boolean): XSheetCellRanges
 }
 
+object XFormulaQuery {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryDependents: js.Function1[scala.Boolean, XSheetCellRanges],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryPrecedents: js.Function1[scala.Boolean, XSheetCellRanges],
+    release: js.Function0[scala.Unit]
+  ): XFormulaQuery = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryDependents = queryDependents, queryInterface = queryInterface, queryPrecedents = queryPrecedents, release = release)
+  
+    __obj.asInstanceOf[XFormulaQuery]
+  }
+}
+

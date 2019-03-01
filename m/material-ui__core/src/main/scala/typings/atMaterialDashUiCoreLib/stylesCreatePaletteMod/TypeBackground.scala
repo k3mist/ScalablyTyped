@@ -10,3 +10,12 @@ trait TypeBackground extends js.Object {
   var paper: java.lang.String
 }
 
+object TypeBackground {
+  @scala.inline
+  def apply(default: java.lang.String, paper: java.lang.String): TypeBackground = {
+    val __obj = js.Dynamic.literal(default = default, paper = paper)
+  
+    __obj.asInstanceOf[TypeBackground]
+  }
+}
+

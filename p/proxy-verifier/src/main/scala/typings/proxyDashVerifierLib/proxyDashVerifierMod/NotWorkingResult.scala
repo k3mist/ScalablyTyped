@@ -10,3 +10,15 @@ trait NotWorkingResult extends Result {
   var ok: proxyDashVerifierLib.proxyDashVerifierLibNumbers.`false`
 }
 
+object NotWorkingResult {
+  @scala.inline
+  def apply(
+    error: proxyDashVerifierLib.Anon_Code,
+    ok: proxyDashVerifierLib.proxyDashVerifierLibNumbers.`false`
+  ): NotWorkingResult = {
+    val __obj = js.Dynamic.literal(error = error, ok = ok)
+  
+    __obj.asInstanceOf[NotWorkingResult]
+  }
+}
+

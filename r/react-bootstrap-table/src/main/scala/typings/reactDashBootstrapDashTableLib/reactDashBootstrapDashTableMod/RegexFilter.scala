@@ -28,3 +28,21 @@ trait RegexFilter extends _Filter {
   var `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.RegexFilter
 }
 
+object RegexFilter {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.RegexFilter,
+    defaultValue: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    placeholder: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): RegexFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[RegexFilter]
+  }
+}
+

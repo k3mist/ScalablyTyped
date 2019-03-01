@@ -12,3 +12,12 @@ trait State extends js.Object {
   var path: java.lang.String
 }
 
+object State {
+  @scala.inline
+  def apply(name: java.lang.String, params: Params, path: java.lang.String, meta: StateMeta = null): State = {
+    val __obj = js.Dynamic.literal(name = name, params = params, path = path)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[State]
+  }
+}
+

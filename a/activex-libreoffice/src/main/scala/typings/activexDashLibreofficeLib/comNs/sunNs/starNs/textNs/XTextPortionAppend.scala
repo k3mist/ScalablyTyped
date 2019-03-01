@@ -32,3 +32,27 @@ trait XTextPortionAppend
   ): XTextRange
 }
 
+object XTextPortionAppend {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    appendTextPortion: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange
+    ],
+    insertTextPortion: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextPortionAppend = {
+    val __obj = js.Dynamic.literal(acquire = acquire, appendTextPortion = appendTextPortion, insertTextPortion = insertTextPortion, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextPortionAppend]
+  }
+}
+

@@ -18,3 +18,25 @@ trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] 
   def targetedProximities(): AdWordsSelector[TargetedProximity]
 }
 
+object CampaignTargeting {
+  @scala.inline
+  def apply[SearchCampaignAudience, SearchCampaignExcludedAudience](
+    adSchedules: js.Function0[AdWordsSelector[AdSchedule]],
+    audiences: js.Function0[AdWordsSelector[AdWordsEntity]],
+    excludedContentLabels: js.Function0[AdWordsSelector[ExcludedContentLabel]],
+    excludedLocations: js.Function0[AdWordsSelector[ExcludedLocation]],
+    exculdedAudiences: js.Function0[AdWordsSelector[AdWordsEntity]],
+    getTargetingSetting: js.Function1[CriterionTypeGroup, TargetingSetting],
+    languages: js.Function0[AdWordsSelector[Language]],
+    newUserListBuilder: js.Function0[SearchCampaignAudienceBuilder[SearchCampaignAudience]],
+    platforms: js.Function0[AdWordsSelector[Platform]],
+    setTargetingSetting: js.Function2[CriterionTypeGroup, TargetingSetting, scala.Unit],
+    targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
+    targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
+  ): CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] = {
+    val __obj = js.Dynamic.literal(adSchedules = adSchedules, audiences = audiences, excludedContentLabels = excludedContentLabels, excludedLocations = excludedLocations, exculdedAudiences = exculdedAudiences, getTargetingSetting = getTargetingSetting, languages = languages, newUserListBuilder = newUserListBuilder, platforms = platforms, setTargetingSetting = setTargetingSetting, targetedLocations = targetedLocations, targetedProximities = targetedProximities)
+  
+    __obj.asInstanceOf[CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]]
+  }
+}
+

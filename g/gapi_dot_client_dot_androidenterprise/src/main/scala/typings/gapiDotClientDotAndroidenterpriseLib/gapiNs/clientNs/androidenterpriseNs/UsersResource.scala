@@ -62,3 +62,57 @@ trait UsersResource extends js.Object {
   def update(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId): gapiDotClientLib.gapiNs.clientNs.Request[User]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    generateAuthenticationToken: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AuthenticationToken]
+    ],
+    generateToken: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserToken]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ],
+    getAvailableProductSet: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductSet]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEmail, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UsersListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ],
+    revokeToken: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    setAvailableProductSet: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductSet]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal(delete = delete, generateAuthenticationToken = generateAuthenticationToken, generateToken = generateToken, get = get, getAvailableProductSet = getAvailableProductSet, insert = insert, list = list, patch = patch, revokeToken = revokeToken, setAvailableProductSet = setAvailableProductSet, update = update)
+  
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

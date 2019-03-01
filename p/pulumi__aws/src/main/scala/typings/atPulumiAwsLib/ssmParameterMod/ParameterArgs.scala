@@ -46,3 +46,28 @@ trait ParameterArgs extends js.Object {
   val value: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ParameterArgs {
+  @scala.inline
+  def apply(
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    value: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    allowedPattern: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    keyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    overwrite: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ParameterArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (allowedPattern != null) __obj.updateDynamic("allowedPattern")(allowedPattern.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParameterArgs]
+  }
+}
+

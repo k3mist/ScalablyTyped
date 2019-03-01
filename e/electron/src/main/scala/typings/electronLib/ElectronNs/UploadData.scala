@@ -21,3 +21,12 @@ trait UploadData extends js.Object {
   var file: java.lang.String
 }
 
+object UploadData {
+  @scala.inline
+  def apply(blobUUID: java.lang.String, bytes: nodeLib.Buffer, file: java.lang.String): UploadData = {
+    val __obj = js.Dynamic.literal(blobUUID = blobUUID, bytes = bytes, file = file)
+  
+    __obj.asInstanceOf[UploadData]
+  }
+}
+

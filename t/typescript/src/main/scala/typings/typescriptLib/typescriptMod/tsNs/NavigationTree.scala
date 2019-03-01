@@ -25,3 +25,20 @@ trait NavigationTree extends js.Object {
   var text: java.lang.String
 }
 
+object NavigationTree {
+  @scala.inline
+  def apply(
+    kind: ScriptElementKind,
+    kindModifiers: java.lang.String,
+    spans: js.Array[TextSpan],
+    text: java.lang.String,
+    childItems: js.Array[NavigationTree] = null,
+    nameSpan: TextSpan = null
+  ): NavigationTree = {
+    val __obj = js.Dynamic.literal(kind = kind, kindModifiers = kindModifiers, spans = spans, text = text)
+    if (childItems != null) __obj.updateDynamic("childItems")(childItems)
+    if (nameSpan != null) __obj.updateDynamic("nameSpan")(nameSpan)
+    __obj.asInstanceOf[NavigationTree]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Elem[TElement]
   def get(elem: TElement): js.Any
 }
 
+object Anon_Elem {
+  @scala.inline
+  def apply[TElement](get: js.Function1[TElement, js.Any]): Anon_Elem[TElement] = {
+    val __obj = js.Dynamic.literal(get = get)
+  
+    __obj.asInstanceOf[Anon_Elem[TElement]]
+  }
+}
+

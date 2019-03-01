@@ -10,3 +10,12 @@ trait EdgeRequest extends js.Object {
   var p: js.Any
 }
 
+object EdgeRequest {
+  @scala.inline
+  def apply(e: Edge, p: js.Any): EdgeRequest = {
+    val __obj = js.Dynamic.literal(e = e, p = p)
+  
+    __obj.asInstanceOf[EdgeRequest]
+  }
+}
+

@@ -76,3 +76,41 @@ trait XStatusbarController
   ): scala.Unit
 }
 
+object XStatusbarController {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    click: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    command: js.Function4[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, 
+      scala.Double, 
+      scala.Boolean, 
+      js.Any, 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    doubleClick: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    mouseButtonDown: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, scala.Boolean],
+    mouseButtonUp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, scala.Boolean],
+    mouseMove: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, scala.Boolean],
+    paint: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XGraphics, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      scala.Double, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XStatusbarController = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, click = click, command = command, dispose = dispose, disposing = disposing, doubleClick = doubleClick, initialize = initialize, mouseButtonDown = mouseButtonDown, mouseButtonUp = mouseButtonUp, mouseMove = mouseMove, paint = paint, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, statusChanged = statusChanged, update = update)
+  
+    __obj.asInstanceOf[XStatusbarController]
+  }
+}
+

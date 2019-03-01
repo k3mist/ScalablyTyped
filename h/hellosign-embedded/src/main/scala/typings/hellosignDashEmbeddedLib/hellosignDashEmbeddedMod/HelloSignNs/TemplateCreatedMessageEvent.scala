@@ -11,3 +11,16 @@ trait TemplateCreatedMessageEvent extends MessageEvent {
   var template_info: hellosignDashEmbeddedLib.Anon_Ccroles
 }
 
+object TemplateCreatedMessageEvent {
+  @scala.inline
+  def apply(
+    event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.template_created,
+    template_id: java.lang.String,
+    template_info: hellosignDashEmbeddedLib.Anon_Ccroles
+  ): TemplateCreatedMessageEvent = {
+    val __obj = js.Dynamic.literal(event = event, template_id = template_id, template_info = template_info)
+  
+    __obj.asInstanceOf[TemplateCreatedMessageEvent]
+  }
+}
+

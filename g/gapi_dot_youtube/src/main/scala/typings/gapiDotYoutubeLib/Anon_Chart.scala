@@ -44,3 +44,22 @@ trait Anon_Chart extends js.Object {
   var videoCategoryId: java.lang.String
 }
 
+object Anon_Chart {
+  @scala.inline
+  def apply(
+    chart: java.lang.String,
+    id: java.lang.String,
+    locale: java.lang.String,
+    maxResults: scala.Double,
+    myRating: java.lang.String,
+    onBehalfOfContentOwner: java.lang.String,
+    pageToken: java.lang.String,
+    part: java.lang.String,
+    videoCategoryId: java.lang.String
+  ): Anon_Chart = {
+    val __obj = js.Dynamic.literal(chart = chart, id = id, locale = locale, maxResults = maxResults, myRating = myRating, onBehalfOfContentOwner = onBehalfOfContentOwner, pageToken = pageToken, part = part, videoCategoryId = videoCategoryId)
+  
+    __obj.asInstanceOf[Anon_Chart]
+  }
+}
+

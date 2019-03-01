@@ -13,3 +13,26 @@ trait TSExternalModuleReference
   var type_TSExternalModuleReference: atBabelTypesLib.atBabelTypesLibStrings.TSExternalModuleReference
 }
 
+object TSExternalModuleReference {
+  @scala.inline
+  def apply(
+    expression: StringLiteral,
+    `type`: atBabelTypesLib.atBabelTypesLibStrings.TSExternalModuleReference,
+    end: scala.Int | scala.Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: scala.Int | scala.Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): TSExternalModuleReference = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[TSExternalModuleReference]
+  }
+}
+

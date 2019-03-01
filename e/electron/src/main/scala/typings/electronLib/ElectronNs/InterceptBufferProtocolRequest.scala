@@ -12,3 +12,17 @@ trait InterceptBufferProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object InterceptBufferProtocolRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): InterceptBufferProtocolRequest = {
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[InterceptBufferProtocolRequest]
+  }
+}
+

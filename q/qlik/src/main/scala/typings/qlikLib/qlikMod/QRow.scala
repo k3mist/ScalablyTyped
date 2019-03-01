@@ -11,3 +11,16 @@ trait QRow extends js.Object {
   var measures: js.Array[QMeasureCell]
 }
 
+object QRow {
+  @scala.inline
+  def apply(
+    cells: js.Array[QDimensionCell | QMeasureCell],
+    dimensions: js.Array[QDimensionCell],
+    measures: js.Array[QMeasureCell]
+  ): QRow = {
+    val __obj = js.Dynamic.literal(cells = cells, dimensions = dimensions, measures = measures)
+  
+    __obj.asInstanceOf[QRow]
+  }
+}
+

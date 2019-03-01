@@ -303,3 +303,55 @@ trait XPropertyHandler
   def suspend(Suspend: scala.Boolean): scala.Boolean
 }
 
+object XPropertyHandler {
+  @scala.inline
+  def apply(
+    ActuatingProperties: activexDashInteropLib.SafeArray[java.lang.String],
+    SupersededProperties: activexDashInteropLib.SafeArray[java.lang.String],
+    SupportedProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    acquire: js.Function0[scala.Unit],
+    actuatingPropertyChanged: js.Function5[java.lang.String, js.Any, js.Any, XObjectInspectorUI, scala.Boolean, scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    convertToControlValue: js.Function3[java.lang.String, js.Any, activexDashLibreofficeLib.`type`, js.Any],
+    convertToPropertyValue: js.Function2[java.lang.String, js.Any, js.Any],
+    describePropertyLine: js.Function2[java.lang.String, XPropertyControlFactory, LineDescriptor],
+    dispose: js.Function0[scala.Unit],
+    getActuatingProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getPropertyState: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getSupersededProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getSupportedProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+    ],
+    inspect: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    isComposable: js.Function1[java.lang.String, scala.Boolean],
+    onInteractivePropertySelection: js.Function4[
+      java.lang.String, 
+      scala.Boolean, 
+      js.Array[_], 
+      XObjectInspectorUI, 
+      InteractiveSelectionResult
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    suspend: js.Function1[scala.Boolean, scala.Boolean]
+  ): XPropertyHandler = {
+    val __obj = js.Dynamic.literal(ActuatingProperties = ActuatingProperties, SupersededProperties = SupersededProperties, SupportedProperties = SupportedProperties, acquire = acquire, actuatingPropertyChanged = actuatingPropertyChanged, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue, describePropertyLine = describePropertyLine, dispose = dispose, getActuatingProperties = getActuatingProperties, getPropertyState = getPropertyState, getPropertyValue = getPropertyValue, getSupersededProperties = getSupersededProperties, getSupportedProperties = getSupportedProperties, inspect = inspect, isComposable = isComposable, onInteractivePropertySelection = onInteractivePropertySelection, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, setPropertyValue = setPropertyValue, suspend = suspend)
+  
+    __obj.asInstanceOf[XPropertyHandler]
+  }
+}
+

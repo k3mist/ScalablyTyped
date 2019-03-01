@@ -16,3 +16,29 @@ trait SitesResource extends js.Object {
   def list(request: gapiDotClientDotWebmastersLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[SitesListResponse]
 }
 
+object SitesResource {
+  @scala.inline
+  def apply(
+    add: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WmxSite]
+    ],
+    list: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SitesListResponse]
+    ]
+  ): SitesResource = {
+    val __obj = js.Dynamic.literal(add = add, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[SitesResource]
+  }
+}
+

@@ -23,3 +23,26 @@ trait Cookie extends js.Object {
   def toHeader(): java.lang.String
 }
 
+object Cookie {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    expires: stdLib.Date,
+    httpOnly: scala.Boolean,
+    maxAge: scala.Double,
+    maxage: scala.Double,
+    name: java.lang.String,
+    overwrite: scala.Boolean,
+    path: java.lang.String,
+    sameSite: scala.Boolean,
+    secure: scala.Boolean,
+    toHeader: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    value: java.lang.String
+  ): Cookie = {
+    val __obj = js.Dynamic.literal(domain = domain, expires = expires, httpOnly = httpOnly, maxAge = maxAge, maxage = maxage, name = name, overwrite = overwrite, path = path, sameSite = sameSite, secure = secure, toHeader = toHeader, toString = toString, value = value)
+  
+    __obj.asInstanceOf[Cookie]
+  }
+}
+

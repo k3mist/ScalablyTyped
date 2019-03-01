@@ -12,3 +12,12 @@ trait TaskAgentPoolMaintenanceRetentionPolicy extends js.Object {
   var numberOfHistoryRecordsToKeep: scala.Double
 }
 
+object TaskAgentPoolMaintenanceRetentionPolicy {
+  @scala.inline
+  def apply(numberOfHistoryRecordsToKeep: scala.Double): TaskAgentPoolMaintenanceRetentionPolicy = {
+    val __obj = js.Dynamic.literal(numberOfHistoryRecordsToKeep = numberOfHistoryRecordsToKeep)
+  
+    __obj.asInstanceOf[TaskAgentPoolMaintenanceRetentionPolicy]
+  }
+}
+

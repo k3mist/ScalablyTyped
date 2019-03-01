@@ -16,3 +16,14 @@ trait MediaProperties extends ContentElementContentElementProperties {
   ] = js.undefined
 }
 
+object MediaProperties {
+  @scala.inline
+  def apply(
+    mediaInfos: BarChartProperties | ColumnChartProperties | ImageProperties | LineChartProperties | PieChartProperties | js.Array[_] = null
+  ): MediaProperties = {
+    val __obj = js.Dynamic.literal()
+    if (mediaInfos != null) __obj.updateDynamic("mediaInfos")(mediaInfos.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaProperties]
+  }
+}
+

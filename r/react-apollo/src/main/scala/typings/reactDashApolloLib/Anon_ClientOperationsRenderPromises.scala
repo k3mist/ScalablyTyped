@@ -11,3 +11,16 @@ trait Anon_ClientOperationsRenderPromises extends js.Object {
   var renderPromises: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
 }
 
+object Anon_ClientOperationsRenderPromises {
+  @scala.inline
+  def apply(
+    client: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    operations: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    renderPromises: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  ): Anon_ClientOperationsRenderPromises = {
+    val __obj = js.Dynamic.literal(client = client, operations = operations, renderPromises = renderPromises)
+  
+    __obj.asInstanceOf[Anon_ClientOperationsRenderPromises]
+  }
+}
+

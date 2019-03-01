@@ -11,3 +11,12 @@ trait Anon_Equals extends js.Object {
   var notEquals: scala.Double
 }
 
+object Anon_Equals {
+  @scala.inline
+  def apply(equals: scala.Double, notEquals: scala.Double): Anon_Equals = {
+    val __obj = js.Dynamic.literal(equals = equals, notEquals = notEquals)
+  
+    __obj.asInstanceOf[Anon_Equals]
+  }
+}
+

@@ -30,3 +30,22 @@ trait FLATConnectionProperties extends FILEConnectionProperties {
   var ThousandDelimiter: java.lang.String
 }
 
+object FLATConnectionProperties {
+  @scala.inline
+  def apply(
+    CharSet: java.lang.String,
+    DecimalDelimiter: java.lang.String,
+    Extension: java.lang.String,
+    FieldDelimiter: java.lang.String,
+    HeaderLine: scala.Boolean,
+    StringDelimiter: java.lang.String,
+    ThousandDelimiter: java.lang.String,
+    password: java.lang.String,
+    user: java.lang.String
+  ): FLATConnectionProperties = {
+    val __obj = js.Dynamic.literal(CharSet = CharSet, DecimalDelimiter = DecimalDelimiter, Extension = Extension, FieldDelimiter = FieldDelimiter, HeaderLine = HeaderLine, StringDelimiter = StringDelimiter, ThousandDelimiter = ThousandDelimiter, password = password, user = user)
+  
+    __obj.asInstanceOf[FLATConnectionProperties]
+  }
+}
+

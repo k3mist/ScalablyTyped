@@ -16,3 +16,12 @@ trait IApplication extends js.Object {
   var ver: java.lang.String
 }
 
+object IApplication {
+  @scala.inline
+  def apply(build: java.lang.String, ver: java.lang.String): IApplication = {
+    val __obj = js.Dynamic.literal(build = build, ver = ver)
+  
+    __obj.asInstanceOf[IApplication]
+  }
+}
+

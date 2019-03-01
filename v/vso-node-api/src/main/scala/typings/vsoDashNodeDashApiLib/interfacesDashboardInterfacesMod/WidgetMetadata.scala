@@ -92,3 +92,34 @@ trait WidgetMetadata extends js.Object {
   var typeId: java.lang.String
 }
 
+object WidgetMetadata {
+  @scala.inline
+  def apply(
+    allowedSizes: js.Array[WidgetSize],
+    analyticsServiceRequired: scala.Boolean,
+    catalogIconUrl: java.lang.String,
+    catalogInfoUrl: java.lang.String,
+    configurationContributionId: java.lang.String,
+    configurationContributionRelativeId: java.lang.String,
+    configurationRequired: scala.Boolean,
+    contentUri: java.lang.String,
+    contributionId: java.lang.String,
+    defaultSettings: java.lang.String,
+    description: java.lang.String,
+    isEnabled: scala.Boolean,
+    isNameConfigurable: scala.Boolean,
+    isVisibleFromCatalog: scala.Boolean,
+    lightboxOptions: LightboxOptions,
+    loadingImageUrl: java.lang.String,
+    name: java.lang.String,
+    publisherName: java.lang.String,
+    supportedScopes: js.Array[WidgetScope],
+    targets: js.Array[java.lang.String],
+    typeId: java.lang.String
+  ): WidgetMetadata = {
+    val __obj = js.Dynamic.literal(allowedSizes = allowedSizes, analyticsServiceRequired = analyticsServiceRequired, catalogIconUrl = catalogIconUrl, catalogInfoUrl = catalogInfoUrl, configurationContributionId = configurationContributionId, configurationContributionRelativeId = configurationContributionRelativeId, configurationRequired = configurationRequired, contentUri = contentUri, contributionId = contributionId, defaultSettings = defaultSettings, description = description, isEnabled = isEnabled, isNameConfigurable = isNameConfigurable, isVisibleFromCatalog = isVisibleFromCatalog, lightboxOptions = lightboxOptions, loadingImageUrl = loadingImageUrl, name = name, publisherName = publisherName, supportedScopes = supportedScopes, targets = targets, typeId = typeId)
+  
+    __obj.asInstanceOf[WidgetMetadata]
+  }
+}
+

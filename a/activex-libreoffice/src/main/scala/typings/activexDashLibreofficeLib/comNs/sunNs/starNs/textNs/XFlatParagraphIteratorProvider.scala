@@ -21,3 +21,17 @@ trait XFlatParagraphIteratorProvider
   def getFlatParagraphIterator(nType: scala.Double, bAutomatic: scala.Boolean): XFlatParagraphIterator
 }
 
+object XFlatParagraphIteratorProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getFlatParagraphIterator: js.Function2[scala.Double, scala.Boolean, XFlatParagraphIterator],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFlatParagraphIteratorProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getFlatParagraphIterator = getFlatParagraphIterator, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFlatParagraphIteratorProvider]
+  }
+}
+

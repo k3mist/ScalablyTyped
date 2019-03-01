@@ -18,3 +18,19 @@ trait ArtistObjectSimplified extends js.Object {
   var uri: java.lang.String
 }
 
+object ArtistObjectSimplified {
+  @scala.inline
+  def apply(
+    external_urls: ExternalUrlObject,
+    href: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: spotifyDashApiLib.spotifyDashApiLibStrings.artist,
+    uri: java.lang.String
+  ): ArtistObjectSimplified = {
+    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, name = name, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[ArtistObjectSimplified]
+  }
+}
+

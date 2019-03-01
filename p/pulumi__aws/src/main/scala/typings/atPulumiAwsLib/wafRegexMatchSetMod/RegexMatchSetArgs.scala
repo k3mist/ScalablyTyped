@@ -23,3 +23,20 @@ trait RegexMatchSetArgs extends js.Object {
   ] = js.undefined
 }
 
+object RegexMatchSetArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    regexMatchTuples: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetIdTextTransformation]
+      ]
+    ] = null
+  ): RegexMatchSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (regexMatchTuples != null) __obj.updateDynamic("regexMatchTuples")(regexMatchTuples.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RegexMatchSetArgs]
+  }
+}
+

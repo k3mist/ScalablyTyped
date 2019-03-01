@@ -10,3 +10,12 @@ trait IValueListItems extends js.Object {
   def Item(Index: scala.Double): IValueListItem
 }
 
+object IValueListItems {
+  @scala.inline
+  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IValueListItem]): IValueListItems = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[IValueListItems]
+  }
+}
+

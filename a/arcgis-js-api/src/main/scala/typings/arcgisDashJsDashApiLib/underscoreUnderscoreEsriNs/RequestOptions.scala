@@ -96,3 +96,35 @@ trait RequestOptions
   var useProxy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    authMode: java.lang.String = null,
+    body: stdLib.FormData | stdLib.HTMLFormElement | java.lang.String = null,
+    cacheBust: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: js.Any = null,
+    method: java.lang.String = null,
+    query: js.Any = null,
+    responseType: java.lang.String = null,
+    signal: stdLib.AbortSignal = null,
+    timeout: scala.Int | scala.Double = null,
+    useProxy: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (authMode != null) __obj.updateDynamic("authMode")(authMode)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

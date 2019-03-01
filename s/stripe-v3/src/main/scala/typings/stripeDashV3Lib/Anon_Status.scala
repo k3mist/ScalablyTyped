@@ -10,3 +10,12 @@ trait Anon_Status extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Status {
+  @scala.inline
+  def apply(status: java.lang.String, url: java.lang.String): Anon_Status = {
+    val __obj = js.Dynamic.literal(status = status, url = url)
+  
+    __obj.asInstanceOf[Anon_Status]
+  }
+}
+

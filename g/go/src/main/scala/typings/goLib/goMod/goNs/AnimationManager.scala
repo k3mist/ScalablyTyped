@@ -25,3 +25,19 @@ trait AnimationManager extends js.Object {
   def stopAnimation(): scala.Unit
 }
 
+object AnimationManager {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    isAnimating: scala.Boolean,
+    isEnabled: scala.Boolean,
+    isInitial: scala.Boolean,
+    isTicking: scala.Boolean,
+    stopAnimation: js.Function0[scala.Unit]
+  ): AnimationManager = {
+    val __obj = js.Dynamic.literal(duration = duration, isAnimating = isAnimating, isEnabled = isEnabled, isInitial = isInitial, isTicking = isTicking, stopAnimation = stopAnimation)
+  
+    __obj.asInstanceOf[AnimationManager]
+  }
+}
+

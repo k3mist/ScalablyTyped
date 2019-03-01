@@ -26,3 +26,31 @@ trait ParagraphStyle extends js.Object {
   def setTextDirection(direction: TextDirection): ParagraphStyle
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    getIndentEnd: js.Function0[stdLib.Number],
+    getIndentFirstLine: js.Function0[stdLib.Number],
+    getIndentStart: js.Function0[stdLib.Number],
+    getLineSpacing: js.Function0[stdLib.Number],
+    getParagraphAlignment: js.Function0[ParagraphAlignment],
+    getSpaceAbove: js.Function0[stdLib.Number],
+    getSpaceBelow: js.Function0[stdLib.Number],
+    getSpacingMode: js.Function0[SpacingMode],
+    getTextDirection: js.Function0[TextDirection],
+    setIndentEnd: js.Function1[stdLib.Number, ParagraphStyle],
+    setIndentFirstLine: js.Function1[stdLib.Number, ParagraphStyle],
+    setIndentStart: js.Function1[stdLib.Number, ParagraphStyle],
+    setLineSpacing: js.Function1[stdLib.Number, ParagraphStyle],
+    setParagraphAlignment: js.Function1[ParagraphAlignment, ParagraphStyle],
+    setSpaceAbove: js.Function1[stdLib.Number, ParagraphStyle],
+    setSpaceBelow: js.Function1[stdLib.Number, ParagraphStyle],
+    setSpacingMode: js.Function1[SpacingMode, ParagraphStyle],
+    setTextDirection: js.Function1[TextDirection, ParagraphStyle]
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal(getIndentEnd = getIndentEnd, getIndentFirstLine = getIndentFirstLine, getIndentStart = getIndentStart, getLineSpacing = getLineSpacing, getParagraphAlignment = getParagraphAlignment, getSpaceAbove = getSpaceAbove, getSpaceBelow = getSpaceBelow, getSpacingMode = getSpacingMode, getTextDirection = getTextDirection, setIndentEnd = setIndentEnd, setIndentFirstLine = setIndentFirstLine, setIndentStart = setIndentStart, setLineSpacing = setLineSpacing, setParagraphAlignment = setParagraphAlignment, setSpaceAbove = setSpaceAbove, setSpaceBelow = setSpaceBelow, setSpacingMode = setSpacingMode, setTextDirection = setTextDirection)
+  
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

@@ -16,3 +16,20 @@ trait AliasPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object AliasPlugin {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    name: java.lang.String,
+    onlyModule: scala.Boolean,
+    options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.AliasItem,
+    source: java.lang.String,
+    target: java.lang.String
+  ): AliasPlugin = {
+    val __obj = js.Dynamic.literal(alias = alias, apply = apply, name = name, onlyModule = onlyModule, options = options, source = source, target = target)
+  
+    __obj.asInstanceOf[AliasPlugin]
+  }
+}
+

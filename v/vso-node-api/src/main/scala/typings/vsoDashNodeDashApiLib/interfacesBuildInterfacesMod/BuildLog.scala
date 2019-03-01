@@ -20,3 +20,19 @@ trait BuildLog extends BuildLogReference {
   var lineCount: scala.Double
 }
 
+object BuildLog {
+  @scala.inline
+  def apply(
+    createdOn: stdLib.Date,
+    id: scala.Double,
+    lastChangedOn: stdLib.Date,
+    lineCount: scala.Double,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): BuildLog = {
+    val __obj = js.Dynamic.literal(createdOn = createdOn, id = id, lastChangedOn = lastChangedOn, lineCount = lineCount, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[BuildLog]
+  }
+}
+

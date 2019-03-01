@@ -26,3 +26,19 @@ trait MaintenanceWindowTargetArgs extends js.Object {
   val windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object MaintenanceWindowTargetArgs {
+  @scala.inline
+  def apply(
+    resourceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    targets: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
+    ],
+    windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ownerInformation: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MaintenanceWindowTargetArgs = {
+    val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
+    if (ownerInformation != null) __obj.updateDynamic("ownerInformation")(ownerInformation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowTargetArgs]
+  }
+}
+

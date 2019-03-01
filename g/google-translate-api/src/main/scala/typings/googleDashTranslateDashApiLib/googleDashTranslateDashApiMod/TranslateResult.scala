@@ -11,3 +11,12 @@ trait TranslateResult extends js.Object {
   var text: java.lang.String
 }
 
+object TranslateResult {
+  @scala.inline
+  def apply(from: googleDashTranslateDashApiLib.Anon_Language, raw: java.lang.String, text: java.lang.String): TranslateResult = {
+    val __obj = js.Dynamic.literal(from = from, raw = raw, text = text)
+  
+    __obj.asInstanceOf[TranslateResult]
+  }
+}
+

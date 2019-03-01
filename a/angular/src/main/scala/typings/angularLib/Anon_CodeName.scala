@@ -13,3 +13,18 @@ trait Anon_CodeName extends js.Object {
   var minor: scala.Double
 }
 
+object Anon_CodeName {
+  @scala.inline
+  def apply(
+    codeName: java.lang.String,
+    dot: scala.Double,
+    full: java.lang.String,
+    major: scala.Double,
+    minor: scala.Double
+  ): Anon_CodeName = {
+    val __obj = js.Dynamic.literal(codeName = codeName, dot = dot, full = full, major = major, minor = minor)
+  
+    __obj.asInstanceOf[Anon_CodeName]
+  }
+}
+

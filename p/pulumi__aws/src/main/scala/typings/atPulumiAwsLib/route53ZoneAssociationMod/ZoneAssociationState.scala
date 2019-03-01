@@ -20,3 +20,18 @@ trait ZoneAssociationState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ZoneAssociationState {
+  @scala.inline
+  def apply(
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    zoneId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ZoneAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (vpcRegion != null) __obj.updateDynamic("vpcRegion")(vpcRegion.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoneAssociationState]
+  }
+}
+

@@ -15,3 +15,19 @@ trait SetTypings extends ProjectResponse {
   val unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String]
 }
 
+object SetTypings {
+  @scala.inline
+  def apply(
+    compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    kind: ActionSet,
+    projectName: java.lang.String,
+    typeAcquisition: typescriptLib.typescriptMod.tsNs.TypeAcquisition,
+    `typings_`: js.Array[java.lang.String],
+    unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String]
+  ): SetTypings = {
+    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions, kind = kind, projectName = projectName, typeAcquisition = typeAcquisition, `typings_` = `typings_`, unresolvedImports = unresolvedImports)
+  
+    __obj.asInstanceOf[SetTypings]
+  }
+}
+

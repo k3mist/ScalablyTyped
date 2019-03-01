@@ -27,3 +27,19 @@ trait PointCloudUniqueValueRendererColorUniqueValueInfos
   var values: js.Array[java.lang.String]
 }
 
+object PointCloudUniqueValueRendererColorUniqueValueInfos {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    values: js.Array[java.lang.String],
+    label: java.lang.String = null
+  ): PointCloudUniqueValueRendererColorUniqueValueInfos = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, values = values)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[PointCloudUniqueValueRendererColorUniqueValueInfos]
+  }
+}
+

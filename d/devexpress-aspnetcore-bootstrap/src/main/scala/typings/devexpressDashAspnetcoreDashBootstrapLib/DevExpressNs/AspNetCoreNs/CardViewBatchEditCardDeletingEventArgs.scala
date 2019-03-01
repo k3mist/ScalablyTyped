@@ -10,3 +10,12 @@ trait CardViewBatchEditCardDeletingEventArgs extends CancelEventArgs {
   val visibleIndex: scala.Double
 }
 
+object CardViewBatchEditCardDeletingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, cardValues: js.Any, sender: Control, visibleIndex: scala.Double): CardViewBatchEditCardDeletingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, sender = sender, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[CardViewBatchEditCardDeletingEventArgs]
+  }
+}
+

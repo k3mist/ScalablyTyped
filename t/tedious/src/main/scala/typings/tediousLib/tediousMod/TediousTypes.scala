@@ -39,3 +39,44 @@ trait TediousTypes extends js.Object {
   var Xml: TediousType
 }
 
+object TediousTypes {
+  @scala.inline
+  def apply(
+    BigInt: TediousType,
+    Binary: TediousType,
+    Bit: TediousType,
+    Char: TediousType,
+    Date: TediousType,
+    DateTime: TediousType,
+    DateTime2: TediousType,
+    DateTimeOffset: TediousType,
+    Decimal: TediousType,
+    Float: TediousType,
+    Image: TediousType,
+    Int: TediousType,
+    Money: TediousType,
+    NChar: TediousType,
+    NText: TediousType,
+    NVarChar: TediousType,
+    Null: TediousType,
+    Numeric: TediousType,
+    Real: TediousType,
+    SmallDateTime: TediousType,
+    SmallInt: TediousType,
+    SmallMoney: TediousType,
+    TVP: TediousType,
+    Text: TediousType,
+    Time: TediousType,
+    TinyInt: TediousType,
+    UDT: TediousType,
+    UniqueIdentifier: TediousType,
+    VarBinary: TediousType,
+    VarChar: TediousType,
+    Xml: TediousType
+  ): TediousTypes = {
+    val __obj = js.Dynamic.literal(BigInt = BigInt, Binary = Binary, Bit = Bit, Char = Char, Date = Date, DateTime = DateTime, DateTime2 = DateTime2, DateTimeOffset = DateTimeOffset, Decimal = Decimal, Float = Float, Image = Image, Int = Int, Money = Money, NChar = NChar, NText = NText, NVarChar = NVarChar, Null = Null, Numeric = Numeric, Real = Real, SmallDateTime = SmallDateTime, SmallInt = SmallInt, SmallMoney = SmallMoney, TVP = TVP, Text = Text, Time = Time, TinyInt = TinyInt, UDT = UDT, UniqueIdentifier = UniqueIdentifier, VarBinary = VarBinary, VarChar = VarChar, Xml = Xml)
+  
+    __obj.asInstanceOf[TediousTypes]
+  }
+}
+

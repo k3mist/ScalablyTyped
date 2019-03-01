@@ -12,3 +12,12 @@ trait WSOptions extends js.Object {
   var port: scala.Double
 }
 
+object WSOptions {
+  @scala.inline
+  def apply(headers: HttpHeaders, host: java.lang.String, path: java.lang.String, port: scala.Double): WSOptions = {
+    val __obj = js.Dynamic.literal(headers = headers, host = host, path = path, port = port)
+  
+    __obj.asInstanceOf[WSOptions]
+  }
+}
+

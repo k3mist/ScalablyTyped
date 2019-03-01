@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceTypeAnnotation
 }
 
+object InterfaceTypeAnnotation {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.ObjectTypeAnnotationKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceTypeAnnotation,
+    `extends`: js.Array[astDashTypesLib.genKindsMod.InterfaceExtendsKind] = null
+  ): InterfaceTypeAnnotation = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    __obj.asInstanceOf[InterfaceTypeAnnotation]
+  }
+}
+

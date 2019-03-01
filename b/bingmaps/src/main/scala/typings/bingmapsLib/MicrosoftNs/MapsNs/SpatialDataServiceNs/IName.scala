@@ -14,3 +14,12 @@ trait IName extends js.Object {
   var SourceID: java.lang.String
 }
 
+object IName {
+  @scala.inline
+  def apply(Culture: java.lang.String, EntityName: java.lang.String, SourceID: java.lang.String): IName = {
+    val __obj = js.Dynamic.literal(Culture = Culture, EntityName = EntityName, SourceID = SourceID)
+  
+    __obj.asInstanceOf[IName]
+  }
+}
+

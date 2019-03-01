@@ -13,3 +13,18 @@ trait CameraControlMoreSetting extends js.Object {
   def GetSteppingDelta(): scala.Double
 }
 
+object CameraControlMoreSetting {
+  @scala.inline
+  def apply(
+    GetDefaultValue: js.Function0[scala.Double],
+    GetIfAuto: js.Function0[scala.Boolean],
+    GetMaxValue: js.Function0[scala.Double],
+    GetMinValue: js.Function0[scala.Double],
+    GetSteppingDelta: js.Function0[scala.Double]
+  ): CameraControlMoreSetting = {
+    val __obj = js.Dynamic.literal(GetDefaultValue = GetDefaultValue, GetIfAuto = GetIfAuto, GetMaxValue = GetMaxValue, GetMinValue = GetMinValue, GetSteppingDelta = GetSteppingDelta)
+  
+    __obj.asInstanceOf[CameraControlMoreSetting]
+  }
+}
+

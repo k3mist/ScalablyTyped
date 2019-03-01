@@ -23,3 +23,28 @@ trait Anon_BlurButton extends js.Object {
   var unknown: downshiftLib.downshiftMod.StateChangeTypes
 }
 
+object Anon_BlurButton {
+  @scala.inline
+  def apply(
+    blurButton: downshiftLib.downshiftMod.StateChangeTypes,
+    blurInput: downshiftLib.downshiftMod.StateChangeTypes,
+    changeInput: downshiftLib.downshiftMod.StateChangeTypes,
+    clickButton: downshiftLib.downshiftMod.StateChangeTypes,
+    clickItem: downshiftLib.downshiftMod.StateChangeTypes,
+    controlledPropUpdatedSelectedItem: downshiftLib.downshiftMod.StateChangeTypes,
+    itemMouseEnter: downshiftLib.downshiftMod.StateChangeTypes,
+    keyDownArrowDown: downshiftLib.downshiftMod.StateChangeTypes,
+    keyDownArrowUp: downshiftLib.downshiftMod.StateChangeTypes,
+    keyDownEnter: downshiftLib.downshiftMod.StateChangeTypes,
+    keyDownEscape: downshiftLib.downshiftMod.StateChangeTypes,
+    keyDownSpaceButton: downshiftLib.downshiftMod.StateChangeTypes,
+    mouseUp: downshiftLib.downshiftMod.StateChangeTypes,
+    touchEnd: downshiftLib.downshiftMod.StateChangeTypes,
+    unknown: downshiftLib.downshiftMod.StateChangeTypes
+  ): Anon_BlurButton = {
+    val __obj = js.Dynamic.literal(blurButton = blurButton, blurInput = blurInput, changeInput = changeInput, clickButton = clickButton, clickItem = clickItem, controlledPropUpdatedSelectedItem = controlledPropUpdatedSelectedItem, itemMouseEnter = itemMouseEnter, keyDownArrowDown = keyDownArrowDown, keyDownArrowUp = keyDownArrowUp, keyDownEnter = keyDownEnter, keyDownEscape = keyDownEscape, keyDownSpaceButton = keyDownSpaceButton, mouseUp = mouseUp, touchEnd = touchEnd, unknown = unknown)
+  
+    __obj.asInstanceOf[Anon_BlurButton]
+  }
+}
+

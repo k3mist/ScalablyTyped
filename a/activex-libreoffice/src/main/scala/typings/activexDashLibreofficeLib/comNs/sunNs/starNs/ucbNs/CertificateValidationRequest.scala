@@ -16,3 +16,19 @@ trait CertificateValidationRequest
   var HostName: java.lang.String
 }
 
+object CertificateValidationRequest {
+  @scala.inline
+  def apply(
+    Certificate: activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate,
+    CertificateValidity: scala.Double,
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    HostName: java.lang.String,
+    Message: java.lang.String
+  ): CertificateValidationRequest = {
+    val __obj = js.Dynamic.literal(Certificate = Certificate, CertificateValidity = CertificateValidity, Classification = Classification, Context = Context, HostName = HostName, Message = Message)
+  
+    __obj.asInstanceOf[CertificateValidationRequest]
+  }
+}
+

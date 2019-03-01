@@ -27,3 +27,19 @@ trait NotificationTaskSendNotificationParams
   var user: java.lang.String
 }
 
+object NotificationTaskSendNotificationParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    notificationType: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): NotificationTaskSendNotificationParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, notificationType = notificationType, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[NotificationTaskSendNotificationParams]
+  }
+}
+

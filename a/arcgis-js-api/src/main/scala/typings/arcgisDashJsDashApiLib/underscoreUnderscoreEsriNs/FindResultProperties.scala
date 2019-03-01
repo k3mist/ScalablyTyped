@@ -44,3 +44,24 @@ trait FindResultProperties extends js.Object {
   var value: js.UndefOr[scala.Unit] = js.undefined
 }
 
+object FindResultProperties {
+  @scala.inline
+  def apply(
+    displayFieldName: java.lang.String = null,
+    feature: GraphicProperties = null,
+    foundFieldName: java.lang.String = null,
+    layerId: scala.Int | scala.Double = null,
+    layerName: java.lang.String = null,
+    value: js.UndefOr[scala.Unit] = js.undefined
+  ): FindResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
+    if (feature != null) __obj.updateDynamic("feature")(feature)
+    if (foundFieldName != null) __obj.updateDynamic("foundFieldName")(foundFieldName)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[FindResultProperties]
+  }
+}
+

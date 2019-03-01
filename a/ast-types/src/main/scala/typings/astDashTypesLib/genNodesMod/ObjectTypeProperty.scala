@@ -17,3 +17,18 @@ import scala.scalajs.js.annotation._
   var variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus | scala.Null
 }
 
+object ObjectTypeProperty {
+  @scala.inline
+  def apply(
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind,
+    optional: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeProperty,
+    value: astDashTypesLib.genKindsMod.FlowTypeKind,
+    variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
+  ): ObjectTypeProperty = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optional = optional, `type` = `type`, value = value)
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ObjectTypeProperty]
+  }
+}
+

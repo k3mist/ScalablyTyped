@@ -12,3 +12,17 @@ trait PaginationProps extends js.Object {
   def onChange(value: scala.Double): scala.Unit
 }
 
+object PaginationProps {
+  @scala.inline
+  def apply(
+    current: scala.Double,
+    display: scala.Double,
+    onChange: js.Function1[scala.Double, scala.Unit],
+    total: scala.Double
+  ): PaginationProps = {
+    val __obj = js.Dynamic.literal(current = current, display = display, onChange = onChange, total = total)
+  
+    __obj.asInstanceOf[PaginationProps]
+  }
+}
+

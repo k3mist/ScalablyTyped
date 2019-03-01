@@ -10,3 +10,15 @@ trait SignedMessageEvent extends MessageEvent {
   var signature_id: java.lang.String
 }
 
+object SignedMessageEvent {
+  @scala.inline
+  def apply(
+    event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.signature_request_signed,
+    signature_id: java.lang.String
+  ): SignedMessageEvent = {
+    val __obj = js.Dynamic.literal(event = event, signature_id = signature_id)
+  
+    __obj.asInstanceOf[SignedMessageEvent]
+  }
+}
+

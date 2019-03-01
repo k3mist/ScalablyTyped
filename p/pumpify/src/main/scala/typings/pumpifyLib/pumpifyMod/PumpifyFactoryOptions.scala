@@ -12,3 +12,17 @@ trait PumpifyFactoryOptions extends js.Object {
   var objectMode: scala.Boolean
 }
 
+object PumpifyFactoryOptions {
+  @scala.inline
+  def apply(
+    autoDestroy: scala.Boolean,
+    destroy: scala.Boolean,
+    highWaterMark: scala.Double,
+    objectMode: scala.Boolean
+  ): PumpifyFactoryOptions = {
+    val __obj = js.Dynamic.literal(autoDestroy = autoDestroy, destroy = destroy, highWaterMark = highWaterMark, objectMode = objectMode)
+  
+    __obj.asInstanceOf[PumpifyFactoryOptions]
+  }
+}
+

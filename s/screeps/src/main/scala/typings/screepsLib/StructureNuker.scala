@@ -42,3 +42,30 @@ trait StructureNuker
   def launchNuke(pos: RoomPosition): ScreepsReturnCode
 }
 
+object StructureNuker {
+  @scala.inline
+  def apply(
+    cooldown: scala.Double,
+    destroy: js.Function0[ScreepsReturnCode],
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    ghodium: scala.Double,
+    ghodiumCapacity: scala.Double,
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    launchNuke: js.Function1[RoomPosition, ScreepsReturnCode],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_NUKER
+  ): StructureNuker = {
+    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = destroy, energy = energy, energyCapacity = energyCapacity, ghodium = ghodium, ghodiumCapacity = ghodiumCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, launchNuke = launchNuke, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, structureType = structureType)
+  
+    __obj.asInstanceOf[StructureNuker]
+  }
+}
+

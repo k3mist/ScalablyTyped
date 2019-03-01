@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.EmptyTypeAnnotation
 }
 
+object EmptyTypeAnnotation {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.EmptyTypeAnnotation): EmptyTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[EmptyTypeAnnotation]
+  }
+}
+

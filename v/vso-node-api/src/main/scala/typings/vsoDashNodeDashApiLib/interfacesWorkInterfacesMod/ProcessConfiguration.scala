@@ -31,3 +31,21 @@ trait ProcessConfiguration extends js.Object {
   var url: java.lang.String
 }
 
+object ProcessConfiguration {
+  @scala.inline
+  def apply(
+    bugWorkItems: CategoryConfiguration,
+    portfolioBacklogs: js.Array[CategoryConfiguration],
+    requirementBacklog: CategoryConfiguration,
+    taskBacklog: CategoryConfiguration,
+    typeFields: org.scalablytyped.runtime.StringDictionary[
+      vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemFieldReference
+    ],
+    url: java.lang.String
+  ): ProcessConfiguration = {
+    val __obj = js.Dynamic.literal(bugWorkItems = bugWorkItems, portfolioBacklogs = portfolioBacklogs, requirementBacklog = requirementBacklog, taskBacklog = taskBacklog, typeFields = typeFields, url = url)
+  
+    __obj.asInstanceOf[ProcessConfiguration]
+  }
+}
+

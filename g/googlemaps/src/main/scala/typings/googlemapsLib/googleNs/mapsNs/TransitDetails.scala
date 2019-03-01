@@ -16,3 +16,21 @@ trait TransitDetails extends js.Object {
   var num_stops: scala.Double
 }
 
+object TransitDetails {
+  @scala.inline
+  def apply(
+    arrival_stop: TransitStop,
+    arrival_time: Time,
+    departure_stop: TransitStop,
+    departure_time: Time,
+    headsign: java.lang.String,
+    headway: scala.Double,
+    line: TransitLine,
+    num_stops: scala.Double
+  ): TransitDetails = {
+    val __obj = js.Dynamic.literal(arrival_stop = arrival_stop, arrival_time = arrival_time, departure_stop = departure_stop, departure_time = departure_time, headsign = headsign, headway = headway, line = line, num_stops = num_stops)
+  
+    __obj.asInstanceOf[TransitDetails]
+  }
+}
+

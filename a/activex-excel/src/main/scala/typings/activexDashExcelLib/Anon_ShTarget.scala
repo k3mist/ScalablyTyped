@@ -10,3 +10,12 @@ trait Anon_ShTarget extends js.Object {
   val Target: activexDashExcelLib.ExcelNs.Hyperlink
 }
 
+object Anon_ShTarget {
+  @scala.inline
+  def apply(Sh: activexDashExcelLib.ExcelNs.Worksheet, Target: activexDashExcelLib.ExcelNs.Hyperlink): Anon_ShTarget = {
+    val __obj = js.Dynamic.literal(Sh = Sh, Target = Target)
+  
+    __obj.asInstanceOf[Anon_ShTarget]
+  }
+}
+

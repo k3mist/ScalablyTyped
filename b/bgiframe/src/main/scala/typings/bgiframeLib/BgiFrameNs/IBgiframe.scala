@@ -13,3 +13,18 @@ trait IBgiframe extends js.Object {
   def prop(n: js.Any): java.lang.String
 }
 
+object IBgiframe {
+  @scala.inline
+  def apply(
+    createIframe: js.Function0[stdLib.HTMLElement],
+    fire: js.Function1[stdLib.HTMLElement, scala.Unit],
+    getIframe: js.Function1[stdLib.HTMLElement, stdLib.HTMLElement],
+    prop: js.Function1[js.Any, java.lang.String],
+    s: ISettings
+  ): IBgiframe = {
+    val __obj = js.Dynamic.literal(createIframe = createIframe, fire = fire, getIframe = getIframe, prop = prop, s = s)
+  
+    __obj.asInstanceOf[IBgiframe]
+  }
+}
+

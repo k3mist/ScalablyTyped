@@ -26,3 +26,25 @@ trait XStringListControl extends XPropertyControl {
   def prependListEntry(NewEntry: java.lang.String): scala.Unit
 }
 
+object XStringListControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    ListEntries: activexDashInteropLib.SafeArray[java.lang.String],
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    appendListEntry: js.Function1[java.lang.String, scala.Unit],
+    clearList: js.Function0[scala.Unit],
+    getListEntries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit],
+    prependListEntry: js.Function1[java.lang.String, scala.Unit]
+  ): XStringListControl = {
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, ListEntries = ListEntries, Value = Value, ValueType = ValueType, appendListEntry = appendListEntry, clearList = clearList, getListEntries = getListEntries, isModified = isModified, notifyModifiedValue = notifyModifiedValue, prependListEntry = prependListEntry)
+  
+    __obj.asInstanceOf[XStringListControl]
+  }
+}
+

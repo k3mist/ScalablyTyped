@@ -39,3 +39,24 @@ trait DebugInfo extends js.Object {
   var surroundingStatements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DebugInfo {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    message: java.lang.String,
+    errorLocation: java.lang.String = null,
+    fullStatements: js.Array[java.lang.String] = null,
+    innerError: DebugInfo | java.lang.String = null,
+    statements: java.lang.String = null,
+    surroundingStatements: js.Array[java.lang.String] = null
+  ): DebugInfo = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+    if (errorLocation != null) __obj.updateDynamic("errorLocation")(errorLocation)
+    if (fullStatements != null) __obj.updateDynamic("fullStatements")(fullStatements)
+    if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])
+    if (statements != null) __obj.updateDynamic("statements")(statements)
+    if (surroundingStatements != null) __obj.updateDynamic("surroundingStatements")(surroundingStatements)
+    __obj.asInstanceOf[DebugInfo]
+  }
+}
+

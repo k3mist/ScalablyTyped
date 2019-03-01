@@ -17,3 +17,18 @@ trait LanguageCountryInfo extends js.Object {
   var Variant: java.lang.String
 }
 
+object LanguageCountryInfo {
+  @scala.inline
+  def apply(
+    Country: java.lang.String,
+    CountryDefaultName: java.lang.String,
+    Language: java.lang.String,
+    LanguageDefaultName: java.lang.String,
+    Variant: java.lang.String
+  ): LanguageCountryInfo = {
+    val __obj = js.Dynamic.literal(Country = Country, CountryDefaultName = CountryDefaultName, Language = Language, LanguageDefaultName = LanguageDefaultName, Variant = Variant)
+  
+    __obj.asInstanceOf[LanguageCountryInfo]
+  }
+}
+

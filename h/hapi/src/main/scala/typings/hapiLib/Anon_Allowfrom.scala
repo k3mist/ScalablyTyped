@@ -17,3 +17,15 @@ trait Anon_Allowfrom extends js.Object {
   var source: java.lang.String
 }
 
+object Anon_Allowfrom {
+  @scala.inline
+  def apply(
+    rule: hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.hapiLibStrings.`allow-from`,
+    source: java.lang.String
+  ): Anon_Allowfrom = {
+    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], source = source)
+  
+    __obj.asInstanceOf[Anon_Allowfrom]
+  }
+}
+

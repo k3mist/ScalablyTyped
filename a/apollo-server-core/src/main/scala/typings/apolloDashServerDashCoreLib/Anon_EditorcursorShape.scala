@@ -16,3 +16,28 @@ trait Anon_EditorcursorShape extends js.Object {
   var `tracing.hideTracingResponse`: scala.Boolean
 }
 
+object Anon_EditorcursorShape {
+  @scala.inline
+  def apply(
+    `editor.cursorShape`: java.lang.String,
+    `editor.fontFamily`: java.lang.String,
+    `editor.fontSize`: scala.Double,
+    `editor.reuseHeaders`: scala.Boolean,
+    `editor.theme`: atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.Theme,
+    `general.betaUpdates`: scala.Boolean,
+    `request.credentials`: java.lang.String,
+    `tracing.hideTracingResponse`: scala.Boolean
+  ): Anon_EditorcursorShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`)
+    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`)
+    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`)
+    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
+    __obj.updateDynamic("editor.theme")(`editor.theme`)
+    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
+    __obj.updateDynamic("request.credentials")(`request.credentials`)
+    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
+    __obj.asInstanceOf[Anon_EditorcursorShape]
+  }
+}
+

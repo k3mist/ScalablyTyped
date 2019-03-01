@@ -17,3 +17,19 @@ trait JobEnvironment extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object JobEnvironment {
+  @scala.inline
+  def apply(
+    endpoints: js.Array[ServiceEndpoint],
+    mask: js.Array[MaskHint],
+    options: org.scalablytyped.runtime.StringDictionary[JobOption],
+    secureFiles: js.Array[SecureFile],
+    systemConnection: ServiceEndpoint,
+    variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): JobEnvironment = {
+    val __obj = js.Dynamic.literal(endpoints = endpoints, mask = mask, options = options, secureFiles = secureFiles, systemConnection = systemConnection, variables = variables)
+  
+    __obj.asInstanceOf[JobEnvironment]
+  }
+}
+

@@ -14,3 +14,19 @@ trait Anon_Alpha extends js.Object {
   var patch: scala.Double
 }
 
+object Anon_Alpha {
+  @scala.inline
+  def apply(
+    alpha: java.lang.String | scala.Boolean,
+    beta: java.lang.String | scala.Boolean,
+    full: java.lang.String,
+    major: scala.Double,
+    minor: scala.Double,
+    patch: scala.Double
+  ): Anon_Alpha = {
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], full = full, major = major, minor = minor, patch = patch)
+  
+    __obj.asInstanceOf[Anon_Alpha]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Subtext extends js.Object {
   var text: java.lang.String
 }
 
+object Anon_Subtext {
+  @scala.inline
+  def apply(text: java.lang.String, subtext: java.lang.String = null): Anon_Subtext = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (subtext != null) __obj.updateDynamic("subtext")(subtext)
+    __obj.asInstanceOf[Anon_Subtext]
+  }
+}
+

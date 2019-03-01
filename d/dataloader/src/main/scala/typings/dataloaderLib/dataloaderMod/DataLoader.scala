@@ -42,3 +42,18 @@ trait DataLoader[K, V] extends js.Object {
   def prime(key: K, value: V): DataLoader[K, V]
 }
 
+object DataLoader {
+  @scala.inline
+  def apply[K, V](
+    clear: js.Function1[K, DataLoader[K, V]],
+    clearAll: js.Function0[DataLoader[K, V]],
+    load: js.Function1[K, js.Promise[V]],
+    loadMany: js.Function1[js.Array[K], js.Promise[js.Array[V]]],
+    prime: js.Function2[K, V, DataLoader[K, V]]
+  ): DataLoader[K, V] = {
+    val __obj = js.Dynamic.literal(clear = clear, clearAll = clearAll, load = load, loadMany = loadMany, prime = prime)
+  
+    __obj.asInstanceOf[DataLoader[K, V]]
+  }
+}
+

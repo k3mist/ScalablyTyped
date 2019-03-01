@@ -10,3 +10,12 @@ trait Position extends js.Object {
   var line: scala.Double
 }
 
+object Position {
+  @scala.inline
+  def apply(ch: scala.Double, line: scala.Double): Position = {
+    val __obj = js.Dynamic.literal(ch = ch, line = line)
+  
+    __obj.asInstanceOf[Position]
+  }
+}
+

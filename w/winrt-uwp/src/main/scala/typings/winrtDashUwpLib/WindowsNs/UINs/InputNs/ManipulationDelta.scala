@@ -17,3 +17,17 @@ trait ManipulationDelta extends js.Object {
   var translation: winrtDashUwpLib.WindowsNs.FoundationNs.Point
 }
 
+object ManipulationDelta {
+  @scala.inline
+  def apply(
+    expansion: scala.Double,
+    rotation: scala.Double,
+    scale: scala.Double,
+    translation: winrtDashUwpLib.WindowsNs.FoundationNs.Point
+  ): ManipulationDelta = {
+    val __obj = js.Dynamic.literal(expansion = expansion, rotation = rotation, scale = scale, translation = translation)
+  
+    __obj.asInstanceOf[ManipulationDelta]
+  }
+}
+

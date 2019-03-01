@@ -20,3 +20,12 @@ trait PropertyInfo extends js.Object {
   var Value: js.Any
 }
 
+object PropertyInfo {
+  @scala.inline
+  def apply(Name: java.lang.String, Protected: scala.Boolean, Type: java.lang.String, Value: js.Any): PropertyInfo = {
+    val __obj = js.Dynamic.literal(Name = Name, Protected = Protected, Type = Type, Value = Value)
+  
+    __obj.asInstanceOf[PropertyInfo]
+  }
+}
+

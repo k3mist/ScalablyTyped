@@ -10,3 +10,15 @@ trait Anon_Placeholder extends js.Object {
   var range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
 }
 
+object Anon_Placeholder {
+  @scala.inline
+  def apply(
+    placeholder: java.lang.String,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
+  ): Anon_Placeholder = {
+    val __obj = js.Dynamic.literal(placeholder = placeholder, range = range)
+  
+    __obj.asInstanceOf[Anon_Placeholder]
+  }
+}
+

@@ -10,3 +10,17 @@ trait SqliteError
   var code: java.lang.String
 }
 
+object SqliteError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    message: java.lang.String,
+    name: java.lang.String,
+    stack: java.lang.String = null
+  ): SqliteError = {
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[SqliteError]
+  }
+}
+

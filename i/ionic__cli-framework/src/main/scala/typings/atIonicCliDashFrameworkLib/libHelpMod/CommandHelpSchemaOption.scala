@@ -15,3 +15,20 @@ trait CommandHelpSchemaOption extends js.Object {
   val `type`: java.lang.String
 }
 
+object CommandHelpSchemaOption {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String],
+    groups: js.Array[java.lang.String],
+    name: java.lang.String,
+    spec: atIonicCliDashFrameworkLib.Anon_ValueString,
+    summary: java.lang.String,
+    `type`: java.lang.String,
+    default: java.lang.String | scala.Boolean = null
+  ): CommandHelpSchemaOption = {
+    val __obj = js.Dynamic.literal(aliases = aliases, groups = groups, name = name, spec = spec, summary = summary, `type` = `type`)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommandHelpSchemaOption]
+  }
+}
+

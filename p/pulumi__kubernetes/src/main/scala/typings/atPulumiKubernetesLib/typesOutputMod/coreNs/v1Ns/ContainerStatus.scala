@@ -48,3 +48,21 @@ trait ContainerStatus extends js.Object {
   val state: ContainerState
 }
 
+object ContainerStatus {
+  @scala.inline
+  def apply(
+    containerID: java.lang.String,
+    image: java.lang.String,
+    imageID: java.lang.String,
+    lastState: ContainerState,
+    name: java.lang.String,
+    ready: scala.Boolean,
+    restartCount: scala.Double,
+    state: ContainerState
+  ): ContainerStatus = {
+    val __obj = js.Dynamic.literal(containerID = containerID, image = image, imageID = imageID, lastState = lastState, name = name, ready = ready, restartCount = restartCount, state = state)
+  
+    __obj.asInstanceOf[ContainerStatus]
+  }
+}
+

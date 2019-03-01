@@ -12,3 +12,17 @@ trait IObjectVersionPermissions extends js.Object {
   val ObjVer: IObjVer
 }
 
+object IObjectVersionPermissions {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    CustomACL: scala.Boolean,
+    NamedACL: INamedACL,
+    ObjVer: IObjVer
+  ): IObjectVersionPermissions = {
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, CustomACL = CustomACL, NamedACL = NamedACL, ObjVer = ObjVer)
+  
+    __obj.asInstanceOf[IObjectVersionPermissions]
+  }
+}
+

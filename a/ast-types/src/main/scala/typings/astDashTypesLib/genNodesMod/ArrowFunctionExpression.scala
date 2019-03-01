@@ -20,3 +20,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ArrowFunctionExpression
 }
 
+object ArrowFunctionExpression {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    generator: astDashTypesLib.astDashTypesLibNumbers.`false`,
+    id: scala.Null,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ArrowFunctionExpression
+  ): ArrowFunctionExpression = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], generator = generator, id = id, `type` = `type`)
+  
+    __obj.asInstanceOf[ArrowFunctionExpression]
+  }
+}
+

@@ -27,3 +27,12 @@ trait ArrayWrapper extends js.Object {
   var IsZeroIndex: scala.Boolean
 }
 
+object ArrayWrapper {
+  @scala.inline
+  def apply(Array: js.Any, IsZeroIndex: scala.Boolean): ArrayWrapper = {
+    val __obj = js.Dynamic.literal(Array = Array, IsZeroIndex = IsZeroIndex)
+  
+    __obj.asInstanceOf[ArrayWrapper]
+  }
+}
+

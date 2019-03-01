@@ -38,3 +38,43 @@ trait JQueryMobileEvents extends js.Object {
   var vmouseup: js.Any
 }
 
+object JQueryMobileEvents {
+  @scala.inline
+  def apply(
+    orientationchange: js.Any,
+    pagebeforechange: js.Any,
+    pagebeforecreate: js.Any,
+    pagebeforehide: js.Any,
+    pagebeforeload: js.Any,
+    pagebeforeshow: js.Any,
+    pagechange: js.Any,
+    pagechangefailed: js.Any,
+    pagecreate: js.Any,
+    pagehide: js.Any,
+    pageinit: js.Any,
+    pageload: js.Any,
+    pageloadfailed: js.Any,
+    pageremove: js.Any,
+    pageshow: js.Any,
+    scrollstart: js.Any,
+    scrollstop: js.Any,
+    swipe: js.Any,
+    swipeleft: js.Any,
+    swiperight: js.Any,
+    tap: js.Any,
+    taphold: js.Any,
+    updatelayout: js.Any,
+    vclick: js.Any,
+    vmousecancel: js.Any,
+    vmousedown: js.Any,
+    vmousemove: js.Any,
+    vmouseout: js.Any,
+    vmouseover: js.Any,
+    vmouseup: js.Any
+  ): JQueryMobileEvents = {
+    val __obj = js.Dynamic.literal(orientationchange = orientationchange, pagebeforechange = pagebeforechange, pagebeforecreate = pagebeforecreate, pagebeforehide = pagebeforehide, pagebeforeload = pagebeforeload, pagebeforeshow = pagebeforeshow, pagechange = pagechange, pagechangefailed = pagechangefailed, pagecreate = pagecreate, pagehide = pagehide, pageinit = pageinit, pageload = pageload, pageloadfailed = pageloadfailed, pageremove = pageremove, pageshow = pageshow, scrollstart = scrollstart, scrollstop = scrollstop, swipe = swipe, swipeleft = swipeleft, swiperight = swiperight, tap = tap, taphold = taphold, updatelayout = updatelayout, vclick = vclick, vmousecancel = vmousecancel, vmousedown = vmousedown, vmousemove = vmousemove, vmouseout = vmouseout, vmouseover = vmouseover, vmouseup = vmouseup)
+  
+    __obj.asInstanceOf[JQueryMobileEvents]
+  }
+}
+

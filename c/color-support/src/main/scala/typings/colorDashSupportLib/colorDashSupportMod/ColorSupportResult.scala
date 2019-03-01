@@ -12,3 +12,17 @@ trait ColorSupportResult extends js.Object {
   var level: colorDashSupportLib.ColorSupportLevel
 }
 
+object ColorSupportResult {
+  @scala.inline
+  def apply(
+    has16m: scala.Boolean,
+    has256: scala.Boolean,
+    hasBasic: scala.Boolean,
+    level: colorDashSupportLib.ColorSupportLevel
+  ): ColorSupportResult = {
+    val __obj = js.Dynamic.literal(has16m = has16m, has256 = has256, hasBasic = hasBasic, level = level)
+  
+    __obj.asInstanceOf[ColorSupportResult]
+  }
+}
+

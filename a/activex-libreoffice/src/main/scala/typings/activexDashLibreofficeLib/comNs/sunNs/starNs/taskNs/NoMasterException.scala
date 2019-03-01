@@ -12,3 +12,16 @@ trait NoMasterException
   var Mode: PasswordRequestMode
 }
 
+object NoMasterException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Mode: PasswordRequestMode
+  ): NoMasterException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Mode = Mode)
+  
+    __obj.asInstanceOf[NoMasterException]
+  }
+}
+

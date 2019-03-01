@@ -12,3 +12,16 @@ trait Anon_Event
   var `type`: expoLib.expoLibStrings.success
 }
 
+object Anon_Event {
+  @scala.inline
+  def apply(
+    event: expoLib.expoMod.HashMap,
+    params: expoLib.expoMod.HashMap,
+    `type`: expoLib.expoLibStrings.success
+  ): Anon_Event = {
+    val __obj = js.Dynamic.literal(event = event, params = params, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Event]
+  }
+}
+

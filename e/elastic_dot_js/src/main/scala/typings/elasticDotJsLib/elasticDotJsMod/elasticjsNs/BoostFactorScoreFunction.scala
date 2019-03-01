@@ -25,3 +25,17 @@ trait BoostFactorScoreFunction extends ScoreFunction {
   def toJSON(): js.Any
 }
 
+object BoostFactorScoreFunction {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, BoostFactorScoreFunction],
+    filter: js.Function1[Filter, BoostFactorScoreFunction],
+    toJSON: js.Function0[js.Any]
+  ): BoostFactorScoreFunction = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, filter = filter, toJSON = toJSON)
+  
+    __obj.asInstanceOf[BoostFactorScoreFunction]
+  }
+}
+

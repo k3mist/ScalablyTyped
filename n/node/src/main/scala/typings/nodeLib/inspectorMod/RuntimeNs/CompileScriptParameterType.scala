@@ -25,3 +25,17 @@ trait CompileScriptParameterType extends js.Object {
   var sourceURL: java.lang.String
 }
 
+object CompileScriptParameterType {
+  @scala.inline
+  def apply(
+    expression: java.lang.String,
+    persistScript: scala.Boolean,
+    sourceURL: java.lang.String,
+    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
+  ): CompileScriptParameterType = {
+    val __obj = js.Dynamic.literal(expression = expression, persistScript = persistScript, sourceURL = sourceURL)
+    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    __obj.asInstanceOf[CompileScriptParameterType]
+  }
+}
+

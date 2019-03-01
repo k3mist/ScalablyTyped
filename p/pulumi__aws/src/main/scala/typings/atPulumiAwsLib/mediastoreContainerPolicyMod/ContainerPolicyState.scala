@@ -16,3 +16,16 @@ trait ContainerPolicyState extends js.Object {
   val policy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ContainerPolicyState {
+  @scala.inline
+  def apply(
+    containerName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ContainerPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContainerPolicyState]
+  }
+}
+

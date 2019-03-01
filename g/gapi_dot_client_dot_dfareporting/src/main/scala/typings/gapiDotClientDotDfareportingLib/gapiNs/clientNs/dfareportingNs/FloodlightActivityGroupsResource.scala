@@ -18,3 +18,33 @@ trait FloodlightActivityGroupsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroup]
 }
 
+object FloodlightActivityGroupsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroup]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroup]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAltFieldsFloodlightConfigurationId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroupsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroup]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivityGroup]
+    ]
+  ): FloodlightActivityGroupsResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[FloodlightActivityGroupsResource]
+  }
+}
+

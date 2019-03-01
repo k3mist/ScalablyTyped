@@ -10,3 +10,12 @@ trait Anon_Edges extends js.Object {
   var nodes: js.Array[visLib.visMod.IdType]
 }
 
+object Anon_Edges {
+  @scala.inline
+  def apply(edges: js.Array[visLib.visMod.IdType], nodes: js.Array[visLib.visMod.IdType]): Anon_Edges = {
+    val __obj = js.Dynamic.literal(edges = edges, nodes = nodes)
+  
+    __obj.asInstanceOf[Anon_Edges]
+  }
+}
+

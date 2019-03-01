@@ -15,3 +15,22 @@ trait RouteSchema extends js.Object {
   ] = js.undefined
 }
 
+object RouteSchema {
+  @scala.inline
+  def apply(
+    body: JSONSchema = null,
+    headers: JSONSchema = null,
+    params: JSONSchema = null,
+    querystring: JSONSchema = null,
+    response: /* import warning: ImportType.apply Failed type conversion: {[code: number] : fastify.fastify.fastify.JSONSchema, [code: string] : fastify.fastify.fastify.JSONSchema} */ js.Any = null
+  ): RouteSchema = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (querystring != null) __obj.updateDynamic("querystring")(querystring)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[RouteSchema]
+  }
+}
+

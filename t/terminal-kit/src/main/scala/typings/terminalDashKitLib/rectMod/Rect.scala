@@ -17,3 +17,22 @@ trait Rect extends js.Object {
   def set(obj: terminalDashKitLib.rectMod.RectNs.Region): scala.Unit
 }
 
+object Rect {
+  @scala.inline
+  def apply(
+    clip: js.Function4[Rect, scala.Double, scala.Double, scala.Boolean, scala.Unit],
+    height: scala.Double,
+    isNull: scala.Boolean,
+    set: js.Function1[terminalDashKitLib.rectMod.RectNs.Region, scala.Unit],
+    width: scala.Double,
+    xmax: scala.Double,
+    xmin: scala.Double,
+    ymax: scala.Double,
+    ymin: scala.Double
+  ): Rect = {
+    val __obj = js.Dynamic.literal(clip = clip, height = height, isNull = isNull, set = set, width = width, xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
+  
+    __obj.asInstanceOf[Rect]
+  }
+}
+

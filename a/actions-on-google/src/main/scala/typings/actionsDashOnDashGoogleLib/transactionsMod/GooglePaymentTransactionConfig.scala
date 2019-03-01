@@ -19,3 +19,19 @@ trait GooglePaymentTransactionConfig extends js.Object {
   var tokenizationType: java.lang.String
 }
 
+object GooglePaymentTransactionConfig {
+  @scala.inline
+  def apply(
+    cardNetworks: js.Array[actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork],
+    deliveryAddressRequired: scala.Boolean,
+    prepaidCardDisallowed: scala.Boolean,
+    tokenizationParameters: js.Object,
+    tokenizationType: java.lang.String,
+    customerInfoOptions: CustomerInfoOptions = null
+  ): GooglePaymentTransactionConfig = {
+    val __obj = js.Dynamic.literal(cardNetworks = cardNetworks, deliveryAddressRequired = deliveryAddressRequired, prepaidCardDisallowed = prepaidCardDisallowed, tokenizationParameters = tokenizationParameters, tokenizationType = tokenizationType)
+    if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions)
+    __obj.asInstanceOf[GooglePaymentTransactionConfig]
+  }
+}
+

@@ -16,3 +16,22 @@ trait MVCxClientSchedulerTemplateToolTip extends ASPxClientToolTipBase {
   var `type`: MVCxSchedulerToolTipType
 }
 
+object MVCxClientSchedulerTemplateToolTip {
+  @scala.inline
+  def apply(
+    CalculatePosition: js.Function1[js.Object, ASPxClientPoint],
+    CanShowToolTip: js.Function0[scala.Boolean],
+    Close: js.Function0[scala.Unit],
+    ConvertIntervalToString: js.Function1[ASPxClientTimeInterval, java.lang.String],
+    FinalizeUpdate: js.Function1[ASPxClientSchedulerToolTipData, scala.Unit],
+    ShowAppointmentMenu: js.Function1[js.Object, scala.Unit],
+    ShowViewMenu: js.Function1[js.Object, scala.Unit],
+    Update: js.Function1[ASPxClientSchedulerToolTipData, scala.Unit],
+    `type`: MVCxSchedulerToolTipType
+  ): MVCxClientSchedulerTemplateToolTip = {
+    val __obj = js.Dynamic.literal(CalculatePosition = CalculatePosition, CanShowToolTip = CanShowToolTip, Close = Close, ConvertIntervalToString = ConvertIntervalToString, FinalizeUpdate = FinalizeUpdate, ShowAppointmentMenu = ShowAppointmentMenu, ShowViewMenu = ShowViewMenu, Update = Update, `type` = `type`)
+  
+    __obj.asInstanceOf[MVCxClientSchedulerTemplateToolTip]
+  }
+}
+

@@ -80,3 +80,42 @@ trait Config extends js.Object {
   var topojsonURL: java.lang.String
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    autosizable: scala.Boolean,
+    displayModeBar: plotlyDotJsLib.plotlyDotJsLibStrings.hover | scala.Boolean,
+    displaylogo: scala.Boolean,
+    doubleClick: plotlyDotJsLib.plotlyDotJsLibStrings.`reset+autosize` | plotlyDotJsLib.plotlyDotJsLibStrings.reset | plotlyDotJsLib.plotlyDotJsLibStrings.autosize | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
+    editable: scala.Boolean,
+    edits: stdLib.Partial[Edits],
+    fillFrame: scala.Boolean,
+    frameMargins: scala.Double,
+    globalTransforms: js.Array[_],
+    linkText: java.lang.String,
+    locale: java.lang.String,
+    logging: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibNumbers.`0` | plotlyDotJsLib.plotlyDotJsLibNumbers.`1` | plotlyDotJsLib.plotlyDotJsLibNumbers.`2`,
+    mapboxAccessToken: java.lang.String,
+    modeBarButtons: js.Array[js.Array[ModeBarDefaultButtons]] | js.Array[js.Array[ModeBarButton]] | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
+    modeBarButtonsToAdd: js.Array[ModeBarDefaultButtons] | js.Array[ModeBarButton],
+    modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons],
+    plotGlPixelRatio: scala.Double,
+    queueLength: scala.Double,
+    responsive: scala.Boolean,
+    scrollZoom: scala.Boolean,
+    sendData: scala.Boolean,
+    setBackground: java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent,
+    showAxisDragHandles: scala.Boolean,
+    showAxisRangeEntryBoxes: scala.Boolean,
+    showLink: scala.Boolean,
+    showSources: scala.Boolean,
+    showTips: scala.Boolean,
+    staticPlot: scala.Boolean,
+    topojsonURL: java.lang.String
+  ): Config = {
+    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = setBackground.asInstanceOf[js.Any], showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

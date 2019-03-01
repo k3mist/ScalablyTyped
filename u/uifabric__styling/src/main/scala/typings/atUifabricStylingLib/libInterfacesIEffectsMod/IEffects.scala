@@ -36,3 +36,18 @@ trait IEffects extends js.Object {
   var roundedCorner2: scala.Double
 }
 
+object IEffects {
+  @scala.inline
+  def apply(
+    elevation16: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    elevation4: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    elevation64: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    elevation8: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    roundedCorner2: scala.Double
+  ): IEffects = {
+    val __obj = js.Dynamic.literal(elevation16 = elevation16, elevation4 = elevation4, elevation64 = elevation64, elevation8 = elevation8, roundedCorner2 = roundedCorner2)
+  
+    __obj.asInstanceOf[IEffects]
+  }
+}
+

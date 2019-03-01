@@ -126,3 +126,41 @@ trait ValueAxesSettings extends js.Object {
   var unitPosition: java.lang.String
 }
 
+object ValueAxesSettings {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    includeGuidesInMinMax: scala.Boolean,
+    includeHidden: scala.Boolean,
+    inside: scala.Boolean,
+    integersOnly: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelsEnabled: scala.Boolean,
+    logarithmic: scala.Boolean,
+    offset: scala.Double,
+    position: java.lang.String,
+    reversed: scala.Boolean,
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    stackType: java.lang.String,
+    tickLength: scala.Double,
+    unit: java.lang.String,
+    unitPosition: java.lang.String
+  ): ValueAxesSettings = {
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisThickness = axisThickness, color = color, dashLength = dashLength, fillAlpha = fillAlpha, fillColor = fillColor, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, includeGuidesInMinMax = includeGuidesInMinMax, includeHidden = includeHidden, inside = inside, integersOnly = integersOnly, labelFrequency = labelFrequency, labelsEnabled = labelsEnabled, logarithmic = logarithmic, offset = offset, position = position, reversed = reversed, showFirstLabel = showFirstLabel, showLastLabel = showLastLabel, stackType = stackType, tickLength = tickLength, unit = unit, unitPosition = unitPosition)
+  
+    __obj.asInstanceOf[ValueAxesSettings]
+  }
+}
+

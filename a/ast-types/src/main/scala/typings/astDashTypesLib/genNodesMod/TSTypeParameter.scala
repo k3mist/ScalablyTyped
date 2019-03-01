@@ -19,3 +19,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameter
 }
 
+object TSTypeParameter {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameter,
+    constraint: astDashTypesLib.genKindsMod.TSTypeKind = null,
+    default: astDashTypesLib.genKindsMod.TSTypeKind = null
+  ): TSTypeParameter = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    if (default != null) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[TSTypeParameter]
+  }
+}
+

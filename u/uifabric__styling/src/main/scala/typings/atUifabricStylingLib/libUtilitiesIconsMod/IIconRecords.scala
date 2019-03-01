@@ -11,3 +11,16 @@ trait IIconRecords
   var __remapped: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object IIconRecords {
+  @scala.inline
+  def apply(
+    __options: IIconOptions,
+    __remapped: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[IIconRecord | js.Object] = null
+  ): IIconRecords = {
+    val __obj = js.Dynamic.literal(__options = __options, __remapped = __remapped)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IIconRecords]
+  }
+}
+

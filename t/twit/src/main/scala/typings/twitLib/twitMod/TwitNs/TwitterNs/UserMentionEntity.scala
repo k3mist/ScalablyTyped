@@ -13,3 +13,18 @@ trait UserMentionEntity extends js.Object {
   var screen_name: java.lang.String
 }
 
+object UserMentionEntity {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    id_str: java.lang.String,
+    indices: js.Tuple2[scala.Double, scala.Double],
+    name: java.lang.String,
+    screen_name: java.lang.String
+  ): UserMentionEntity = {
+    val __obj = js.Dynamic.literal(id = id, id_str = id_str, indices = indices, name = name, screen_name = screen_name)
+  
+    __obj.asInstanceOf[UserMentionEntity]
+  }
+}
+

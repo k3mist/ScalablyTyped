@@ -31,3 +31,21 @@ trait IApplicationFeeRefund
   var metadata: stripeLib.stripeMod.StripeNs.IMetadata
 }
 
+object IApplicationFeeRefund {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    fee: java.lang.String | IApplicationFee,
+    id: java.lang.String,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: java.lang.String
+  ): IApplicationFeeRefund = {
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, fee = fee.asInstanceOf[js.Any], id = id, metadata = metadata, `object` = `object`)
+  
+    __obj.asInstanceOf[IApplicationFeeRefund]
+  }
+}
+

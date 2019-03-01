@@ -15,3 +15,20 @@ trait Anon_InvalidPath extends js.Object {
   var unknownMergeType: scala.Double
 }
 
+object Anon_InvalidPath {
+  @scala.inline
+  def apply(
+    invalidPath: scala.Double,
+    mergeContentNotFound: scala.Double,
+    none: scala.Double,
+    otherError: scala.Double,
+    pathInUse: scala.Double,
+    unknownAction: scala.Double,
+    unknownMergeType: scala.Double
+  ): Anon_InvalidPath = {
+    val __obj = js.Dynamic.literal(invalidPath = invalidPath, mergeContentNotFound = mergeContentNotFound, none = none, otherError = otherError, pathInUse = pathInUse, unknownAction = unknownAction, unknownMergeType = unknownMergeType)
+  
+    __obj.asInstanceOf[Anon_InvalidPath]
+  }
+}
+

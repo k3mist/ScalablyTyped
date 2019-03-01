@@ -10,3 +10,12 @@ trait DropIndexAction extends Action {
   var `type`: ActionTypes
 }
 
+object DropIndexAction {
+  @scala.inline
+  def apply(args: js.Array[_], `type`: ActionTypes): DropIndexAction = {
+    val __obj = js.Dynamic.literal(args = args, `type` = `type`)
+  
+    __obj.asInstanceOf[DropIndexAction]
+  }
+}
+

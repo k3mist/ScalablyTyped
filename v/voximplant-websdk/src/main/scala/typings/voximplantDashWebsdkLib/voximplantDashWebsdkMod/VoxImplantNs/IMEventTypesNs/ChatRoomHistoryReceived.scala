@@ -24,3 +24,16 @@ trait ChatRoomHistoryReceived
   var room: java.lang.String
 }
 
+object ChatRoomHistoryReceived {
+  @scala.inline
+  def apply(
+    message_id: java.lang.String,
+    messages: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMHistoryMessage],
+    room: java.lang.String
+  ): ChatRoomHistoryReceived = {
+    val __obj = js.Dynamic.literal(message_id = message_id, messages = messages, room = room)
+  
+    __obj.asInstanceOf[ChatRoomHistoryReceived]
+  }
+}
+

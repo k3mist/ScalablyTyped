@@ -19,3 +19,26 @@ trait Delegate extends js.Object {
   ): scala.Unit
 }
 
+object Delegate {
+  @scala.inline
+  def apply(
+    getApp: js.Function1[java.lang.String, App],
+    launchApp: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function1[/* data */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    stopApp: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function1[/* data */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ]
+  ): Delegate = {
+    val __obj = js.Dynamic.literal(getApp = getApp, launchApp = launchApp, stopApp = stopApp)
+  
+    __obj.asInstanceOf[Delegate]
+  }
+}
+

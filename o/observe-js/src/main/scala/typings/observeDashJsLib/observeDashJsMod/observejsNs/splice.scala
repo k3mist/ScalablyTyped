@@ -23,3 +23,12 @@ trait splice extends js.Object {
   var removed: js.Array[_]
 }
 
+object splice {
+  @scala.inline
+  def apply(addedCount: scala.Double, index: scala.Double, removed: js.Array[_]): splice = {
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, removed = removed)
+  
+    __obj.asInstanceOf[splice]
+  }
+}
+

@@ -25,3 +25,30 @@ trait IFormExtensionsProvider
   def confirmResetStrategy(): scala.Boolean
 }
 
+object IFormExtensionsProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    confirmResetStrategy: js.Function0[scala.Boolean],
+    defaultFieldGroupStrategy: java.lang.String,
+    defaultLabelStrategy: java.lang.String,
+    defaultNotifyTarget: java.lang.String,
+    defaultOnNavigateAwayStrategy: java.lang.String,
+    defaultSpinnerClickStrategy: java.lang.String,
+    defaultValMsgPlacementStrategy: java.lang.String,
+    fieldGroupStrategies: IFieldGroupStrategies,
+    globalSettings: IGlobalSettings,
+    labelStrategies: ILabelStrategies,
+    onNavigateAwayStrategies: IOnNavigateAwayStrategies,
+    spinnerClickStrategies: ISpinnerClickStrategies,
+    valMsgForTemplate: java.lang.String,
+    valMsgPlacementStrategies: IValMsgPlacementStrategies,
+    validIconStrategy: IValidIconStrategy,
+    validationMessages: IValidationMessages
+  ): IFormExtensionsProvider = {
+    val __obj = js.Dynamic.literal($get = $get, confirmResetStrategy = confirmResetStrategy, defaultFieldGroupStrategy = defaultFieldGroupStrategy, defaultLabelStrategy = defaultLabelStrategy, defaultNotifyTarget = defaultNotifyTarget, defaultOnNavigateAwayStrategy = defaultOnNavigateAwayStrategy, defaultSpinnerClickStrategy = defaultSpinnerClickStrategy, defaultValMsgPlacementStrategy = defaultValMsgPlacementStrategy, fieldGroupStrategies = fieldGroupStrategies, globalSettings = globalSettings, labelStrategies = labelStrategies, onNavigateAwayStrategies = onNavigateAwayStrategies, spinnerClickStrategies = spinnerClickStrategies, valMsgForTemplate = valMsgForTemplate, valMsgPlacementStrategies = valMsgPlacementStrategies, validIconStrategy = validIconStrategy, validationMessages = validationMessages)
+  
+    __obj.asInstanceOf[IFormExtensionsProvider]
+  }
+}
+

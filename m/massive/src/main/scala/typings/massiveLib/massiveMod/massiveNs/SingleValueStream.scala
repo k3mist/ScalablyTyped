@@ -16,3 +16,20 @@ trait SingleValueStream extends js.Object {
   def singleValue(obj: AnyObject[_]): js.Any
 }
 
+object SingleValueStream {
+  @scala.inline
+  def apply(
+    _transform: js.Function3[
+      AnyObject[_], 
+      java.lang.String, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      scala.Unit
+    ],
+    singleValue: js.Function1[AnyObject[_], js.Any]
+  ): SingleValueStream = {
+    val __obj = js.Dynamic.literal(_transform = _transform, singleValue = singleValue)
+  
+    __obj.asInstanceOf[SingleValueStream]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ImeParameters extends js.Object {
   var items: js.Array[MenuItem]
 }
 
+object ImeParameters {
+  @scala.inline
+  def apply(engineID: java.lang.String, items: js.Array[MenuItem]): ImeParameters = {
+    val __obj = js.Dynamic.literal(engineID = engineID, items = items)
+  
+    __obj.asInstanceOf[ImeParameters]
+  }
+}
+

@@ -13,3 +13,19 @@ trait AclOptions extends js.Object {
   ): scala.Unit
 }
 
+object AclOptions {
+  @scala.inline
+  def apply(
+    pathPrefix: java.lang.String,
+    request: js.Function2[
+      atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions, 
+      atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback, 
+      scala.Unit
+    ]
+  ): AclOptions = {
+    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, request = request)
+  
+    __obj.asInstanceOf[AclOptions]
+  }
+}
+

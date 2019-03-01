@@ -27,3 +27,20 @@ trait CustomerGatewayState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object CustomerGatewayState {
+  @scala.inline
+  def apply(
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    ipAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): CustomerGatewayState = {
+    val __obj = js.Dynamic.literal()
+    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CustomerGatewayState]
+  }
+}
+

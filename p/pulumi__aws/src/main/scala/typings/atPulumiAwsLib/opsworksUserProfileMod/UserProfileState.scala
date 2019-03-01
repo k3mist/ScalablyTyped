@@ -24,3 +24,20 @@ trait UserProfileState extends js.Object {
   val userArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object UserProfileState {
+  @scala.inline
+  def apply(
+    allowSelfManagement: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    sshPublicKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sshUsername: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    userArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): UserProfileState = {
+    val __obj = js.Dynamic.literal()
+    if (allowSelfManagement != null) __obj.updateDynamic("allowSelfManagement")(allowSelfManagement.asInstanceOf[js.Any])
+    if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
+    if (sshUsername != null) __obj.updateDynamic("sshUsername")(sshUsername.asInstanceOf[js.Any])
+    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserProfileState]
+  }
+}
+

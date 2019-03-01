@@ -23,3 +23,12 @@ trait SecretEnvSource extends js.Object {
   val optional: scala.Boolean
 }
 
+object SecretEnvSource {
+  @scala.inline
+  def apply(name: java.lang.String, optional: scala.Boolean): SecretEnvSource = {
+    val __obj = js.Dynamic.literal(name = name, optional = optional)
+  
+    __obj.asInstanceOf[SecretEnvSource]
+  }
+}
+

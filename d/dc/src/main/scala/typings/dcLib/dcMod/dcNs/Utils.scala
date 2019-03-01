@@ -34,3 +34,40 @@ trait Utils extends js.Object {
   def uniqueId(): scala.Double
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    add: js.Function2[js.Any, js.Any, js.Any],
+    appendOrSelect: js.Function3[
+      d3DashSelectionLib.d3DashSelectionMod.Selection[
+        _, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      ], 
+      java.lang.String, 
+      js.Any, 
+      d3DashSelectionLib.d3DashSelectionMod.Selection[
+        _, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      ]
+    ],
+    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    isFloat: js.Function1[js.Any, scala.Boolean],
+    isInteger: js.Function1[js.Any, scala.Boolean],
+    isNegligible: js.Function1[js.Any, scala.Boolean],
+    isNumber: js.Function1[js.Any, scala.Boolean],
+    nameToId: js.Function1[java.lang.String, java.lang.String],
+    printSingleValue: js.Function1[js.Any, java.lang.String],
+    safeNumber: js.Function1[js.Any, scala.Double],
+    subtract: js.Function2[js.Any, js.Any, js.Any],
+    uniqueId: js.Function0[scala.Double]
+  ): Utils = {
+    val __obj = js.Dynamic.literal(add = add, appendOrSelect = appendOrSelect, clamp = clamp, isFloat = isFloat, isInteger = isInteger, isNegligible = isNegligible, isNumber = isNumber, nameToId = nameToId, printSingleValue = printSingleValue, safeNumber = safeNumber, subtract = subtract, uniqueId = uniqueId)
+  
+    __obj.asInstanceOf[Utils]
+  }
+}
+

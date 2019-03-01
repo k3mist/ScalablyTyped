@@ -79,3 +79,40 @@ trait StackState extends js.Object {
   val timeoutInMinutes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object StackState {
+  @scala.inline
+  def apply(
+    capabilities: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    disableRollback: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    iamRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notificationArns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    onFailure: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    outputs: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    parameters: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    policyBody: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    policyUrl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    templateBody: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    templateUrl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    timeoutInMinutes: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): StackState = {
+    val __obj = js.Dynamic.literal()
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (disableRollback != null) __obj.updateDynamic("disableRollback")(disableRollback.asInstanceOf[js.Any])
+    if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notificationArns != null) __obj.updateDynamic("notificationArns")(notificationArns.asInstanceOf[js.Any])
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (policyBody != null) __obj.updateDynamic("policyBody")(policyBody.asInstanceOf[js.Any])
+    if (policyUrl != null) __obj.updateDynamic("policyUrl")(policyUrl.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackState]
+  }
+}
+

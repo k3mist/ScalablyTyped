@@ -9,3 +9,12 @@ trait OnMenuItemClickListener extends js.Object {
   def onMenuItemClick(item: androiduixLib.androidNs.viewNs.MenuItem): scala.Boolean
 }
 
+object OnMenuItemClickListener {
+  @scala.inline
+  def apply(onMenuItemClick: js.Function1[androiduixLib.androidNs.viewNs.MenuItem, scala.Boolean]): OnMenuItemClickListener = {
+    val __obj = js.Dynamic.literal(onMenuItemClick = onMenuItemClick)
+  
+    __obj.asInstanceOf[OnMenuItemClickListener]
+  }
+}
+

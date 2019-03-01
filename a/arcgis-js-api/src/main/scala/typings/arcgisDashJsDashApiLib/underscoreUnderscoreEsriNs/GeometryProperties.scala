@@ -29,3 +29,18 @@ trait GeometryProperties extends js.Object {
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 
+object GeometryProperties {
+  @scala.inline
+  def apply(
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialReference: SpatialReferenceProperties = null
+  ): GeometryProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[GeometryProperties]
+  }
+}
+

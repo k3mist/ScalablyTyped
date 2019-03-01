@@ -84,3 +84,32 @@ trait GetBucketObjectResult extends js.Object {
   val websiteRedirectLocation: java.lang.String
 }
 
+object GetBucketObjectResult {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    cacheControl: java.lang.String,
+    contentDisposition: java.lang.String,
+    contentEncoding: java.lang.String,
+    contentLanguage: java.lang.String,
+    contentLength: scala.Double,
+    contentType: java.lang.String,
+    etag: java.lang.String,
+    expiration: java.lang.String,
+    expires: java.lang.String,
+    id: java.lang.String,
+    lastModified: java.lang.String,
+    metadata: org.scalablytyped.runtime.StringDictionary[js.Any],
+    serverSideEncryption: java.lang.String,
+    sseKmsKeyId: java.lang.String,
+    storageClass: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    versionId: java.lang.String,
+    websiteRedirectLocation: java.lang.String
+  ): GetBucketObjectResult = {
+    val __obj = js.Dynamic.literal(body = body, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, lastModified = lastModified, metadata = metadata, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
+  
+    __obj.asInstanceOf[GetBucketObjectResult]
+  }
+}
+

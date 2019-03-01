@@ -33,3 +33,37 @@ import scala.scalajs.js.annotation._
   var width: scala.Double
 }
 
+object CellInfo {
+  @scala.inline
+  def apply(
+    aggregated: scala.Boolean,
+    classes: js.Array[java.lang.String],
+    column: Column[_],
+    columnProps: js.Any,
+    expander: scala.Boolean,
+    groupedByPivot: scala.Boolean,
+    index: scala.Double,
+    isExpanded: scala.Boolean,
+    level: scala.Double,
+    maxWidth: scala.Double,
+    nestingPath: js.Array[scala.Double],
+    original: js.Any,
+    page: scala.Double,
+    pageSize: scala.Double,
+    pivoted: scala.Boolean,
+    row: js.Any,
+    rowValues: js.Any,
+    show: scala.Boolean,
+    styles: js.Object,
+    subRows: js.Array[_],
+    tdProps: js.Any,
+    value: js.Any,
+    viewIndex: scala.Double,
+    width: scala.Double
+  ): CellInfo = {
+    val __obj = js.Dynamic.literal(aggregated = aggregated, classes = classes, column = column, columnProps = columnProps, expander = expander, groupedByPivot = groupedByPivot, index = index, isExpanded = isExpanded, level = level, maxWidth = maxWidth, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, pivoted = pivoted, row = row, rowValues = rowValues, show = show, styles = styles, subRows = subRows, tdProps = tdProps, value = value, viewIndex = viewIndex, width = width)
+  
+    __obj.asInstanceOf[CellInfo]
+  }
+}
+

@@ -64,3 +64,25 @@ trait DateRangeAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object DateRangeAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, DateRangeAggregation],
+    aggregation: js.Function1[Aggregation, DateRangeAggregation],
+    field: js.Function1[java.lang.String, DateRangeAggregation],
+    format: js.Function1[java.lang.String, DateRangeAggregation],
+    keyed: js.Function1[scala.Boolean, DateRangeAggregation],
+    lang: js.Function1[java.lang.String, DateRangeAggregation],
+    params: js.Function1[js.Object, DateRangeAggregation],
+    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, DateRangeAggregation],
+    script: js.Function1[java.lang.String, DateRangeAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, DateRangeAggregation],
+    toJSON: js.Function0[js.Any]
+  ): DateRangeAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, format = format, keyed = keyed, lang = lang, params = params, range = range, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[DateRangeAggregation]
+  }
+}
+

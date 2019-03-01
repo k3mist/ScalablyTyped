@@ -20,3 +20,13 @@ trait ArcGISCachedServiceProperties extends js.Object {
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 
+object ArcGISCachedServiceProperties {
+  @scala.inline
+  def apply(copyright: java.lang.String = null, tileInfo: TileInfoProperties = null): ArcGISCachedServiceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    __obj.asInstanceOf[ArcGISCachedServiceProperties]
+  }
+}
+

@@ -15,3 +15,16 @@ trait JQueryCLEditorStatic extends js.Object {
   def imagesPath(): java.lang.String
 }
 
+object JQueryCLEditorStatic {
+  @scala.inline
+  def apply(
+    buttons: js.Array[JQueryCLEditorButtonDefinition],
+    defaultOptions: JQueryCLEditorOptions,
+    imagesPath: js.Function0[java.lang.String]
+  ): JQueryCLEditorStatic = {
+    val __obj = js.Dynamic.literal(buttons = buttons, defaultOptions = defaultOptions, imagesPath = imagesPath)
+  
+    __obj.asInstanceOf[JQueryCLEditorStatic]
+  }
+}
+

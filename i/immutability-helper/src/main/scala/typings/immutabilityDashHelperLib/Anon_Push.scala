@@ -11,3 +11,12 @@ trait Anon_Push[T]
   var $push: js.Array[T]
 }
 
+object Anon_Push {
+  @scala.inline
+  def apply[T]($push: js.Array[T]): Anon_Push[T] = {
+    val __obj = js.Dynamic.literal($push = $push)
+  
+    __obj.asInstanceOf[Anon_Push[T]]
+  }
+}
+

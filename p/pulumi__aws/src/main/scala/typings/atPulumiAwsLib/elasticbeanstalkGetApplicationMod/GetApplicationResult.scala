@@ -21,3 +21,17 @@ trait GetApplicationResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetApplicationResult {
+  @scala.inline
+  def apply(
+    appversionLifecycle: atPulumiAwsLib.Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount,
+    arn: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String
+  ): GetApplicationResult = {
+    val __obj = js.Dynamic.literal(appversionLifecycle = appversionLifecycle, arn = arn, description = description, id = id)
+  
+    __obj.asInstanceOf[GetApplicationResult]
+  }
+}
+

@@ -35,3 +35,18 @@ trait FCVolumeSource extends js.Object {
   val wwids: js.Array[java.lang.String]
 }
 
+object FCVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    lun: scala.Double,
+    readOnly: scala.Boolean,
+    targetWWNs: js.Array[java.lang.String],
+    wwids: js.Array[java.lang.String]
+  ): FCVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, lun = lun, readOnly = readOnly, targetWWNs = targetWWNs, wwids = wwids)
+  
+    __obj.asInstanceOf[FCVolumeSource]
+  }
+}
+

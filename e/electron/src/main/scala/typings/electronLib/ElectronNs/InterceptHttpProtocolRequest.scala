@@ -13,3 +13,18 @@ trait InterceptHttpProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object InterceptHttpProtocolRequest {
+  @scala.inline
+  def apply(
+    headers: Headers,
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): InterceptHttpProtocolRequest = {
+    val __obj = js.Dynamic.literal(headers = headers, method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[InterceptHttpProtocolRequest]
+  }
+}
+

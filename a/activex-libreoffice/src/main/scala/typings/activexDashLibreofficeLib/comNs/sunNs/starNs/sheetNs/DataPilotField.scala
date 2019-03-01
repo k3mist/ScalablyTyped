@@ -101,3 +101,69 @@ trait DataPilotField
   var UsedHierarchy: java.lang.String
 }
 
+object DataPilotField {
+  @scala.inline
+  def apply(
+    AutoShowInfo: DataPilotFieldAutoShowInfo,
+    Function: GeneralFunction,
+    Function2: scala.Double,
+    GroupInfo: DataPilotFieldGroupInfo,
+    HasAutoShowInfo: scala.Boolean,
+    HasLayoutInfo: scala.Boolean,
+    HasReference: scala.Boolean,
+    HasSortInfo: scala.Boolean,
+    IsGroupField: scala.Boolean,
+    Items: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    LayoutInfo: DataPilotFieldLayoutInfo,
+    Name: java.lang.String,
+    Orientation: DataPilotFieldOrientation,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Reference: DataPilotFieldReference,
+    SelectedPage: java.lang.String,
+    ShowEmpty: scala.Boolean,
+    SortInfo: DataPilotFieldSortInfo,
+    Subtotals: activexDashInteropLib.SafeArray[GeneralFunction],
+    Subtotals2: activexDashInteropLib.SafeArray[scala.Double],
+    UseSelectedPage: scala.Boolean,
+    UsedHierarchy: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createDateGroup: js.Function1[DataPilotFieldGroupInfo, XDataPilotField],
+    createNameGroup: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XDataPilotField
+    ],
+    getItems: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getName: js.Function0[java.lang.String],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DataPilotField = {
+    val __obj = js.Dynamic.literal(AutoShowInfo = AutoShowInfo, Function = Function, Function2 = Function2, GroupInfo = GroupInfo, HasAutoShowInfo = HasAutoShowInfo, HasLayoutInfo = HasLayoutInfo, HasReference = HasReference, HasSortInfo = HasSortInfo, IsGroupField = IsGroupField, Items = Items, LayoutInfo = LayoutInfo, Name = Name, Orientation = Orientation, PropertySetInfo = PropertySetInfo, Reference = Reference, SelectedPage = SelectedPage, ShowEmpty = ShowEmpty, SortInfo = SortInfo, Subtotals = Subtotals, Subtotals2 = Subtotals2, UseSelectedPage = UseSelectedPage, UsedHierarchy = UsedHierarchy, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDateGroup = createDateGroup, createNameGroup = createNameGroup, getItems = getItems, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[DataPilotField]
+  }
+}
+

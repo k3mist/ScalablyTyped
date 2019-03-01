@@ -13,3 +13,18 @@ trait VariableInfo extends js.Object {
   var uses: js.Array[VariableUse]
 }
 
+object VariableInfo {
+  @scala.inline
+  def apply(
+    declarations: js.Array[typescriptLib.typescriptMod.tsNs.Identifier],
+    domain: DeclarationDomain,
+    exported: scala.Boolean,
+    inGlobalScope: scala.Boolean,
+    uses: js.Array[VariableUse]
+  ): VariableInfo = {
+    val __obj = js.Dynamic.literal(declarations = declarations, domain = domain, exported = exported, inGlobalScope = inGlobalScope, uses = uses)
+  
+    __obj.asInstanceOf[VariableInfo]
+  }
+}
+

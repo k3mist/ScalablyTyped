@@ -10,3 +10,15 @@ trait Anon_Level extends js.Object {
   var of: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]
 }
 
+object Anon_Level {
+  @scala.inline
+  def apply(
+    level: sequelizeLib.sequelizeMod.sequelizeNs.TransactionLockLevel,
+    of: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]
+  ): Anon_Level = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of)
+  
+    __obj.asInstanceOf[Anon_Level]
+  }
+}
+

@@ -11,3 +11,16 @@ trait StaticOptions extends js.Object {
   var modifyVars: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object StaticOptions {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    fileAsync: scala.Boolean,
+    modifyVars: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): StaticOptions = {
+    val __obj = js.Dynamic.literal(async = async, fileAsync = fileAsync, modifyVars = modifyVars)
+  
+    __obj.asInstanceOf[StaticOptions]
+  }
+}
+

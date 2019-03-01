@@ -10,3 +10,12 @@ trait ProcessVersions extends js.Object {
   var electron: java.lang.String
 }
 
+object ProcessVersions {
+  @scala.inline
+  def apply(chrome: java.lang.String, electron: java.lang.String): ProcessVersions = {
+    val __obj = js.Dynamic.literal(chrome = chrome, electron = electron)
+  
+    __obj.asInstanceOf[ProcessVersions]
+  }
+}
+

@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXSpreadChild
 }
 
+object JSXSpreadChild {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXSpreadChild
+  ): JSXSpreadChild = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXSpreadChild]
+  }
+}
+

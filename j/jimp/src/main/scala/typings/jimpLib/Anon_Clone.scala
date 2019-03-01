@@ -10,3 +10,15 @@ trait Anon_Clone[T /* <: ListenableName */] extends ListenerData[T] {
   var methodName: jimpLib.jimpLibStrings.clone | ChangeName | jimpLib.jimpLibStrings.constructor
 }
 
+object Anon_Clone {
+  @scala.inline
+  def apply[T /* <: ListenableName */](
+    eventName: T,
+    methodName: jimpLib.jimpLibStrings.clone | ChangeName | jimpLib.jimpLibStrings.constructor
+  ): Anon_Clone[T] = {
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Clone[T]]
+  }
+}
+

@@ -13,3 +13,18 @@ trait RequestError
   var response: nodeLib.httpMod.IncomingMessage
 }
 
+object RequestError {
+  @scala.inline
+  def apply(
+    cause: js.Any,
+    error: js.Any,
+    options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options,
+    response: nodeLib.httpMod.IncomingMessage,
+    stack: java.lang.String = null
+  ): RequestError = {
+    val __obj = js.Dynamic.literal(cause = cause, error = error, options = options.asInstanceOf[js.Any], response = response)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[RequestError]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_ColumnFilenameInline extends js.Object {
   var suppress: scala.Boolean
 }
 
+object Anon_ColumnFilenameInline {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    `inline`: scala.Boolean,
+    lineno: scala.Double,
+    str: java.lang.String,
+    suppress: scala.Boolean
+  ): Anon_ColumnFilenameInline = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, `inline` = `inline`, lineno = lineno, str = str, suppress = suppress)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameInline]
+  }
+}
+

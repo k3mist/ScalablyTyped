@@ -18,3 +18,23 @@ trait IdentityScope extends js.Object {
   var subjectDescriptor: java.lang.String
 }
 
+object IdentityScope {
+  @scala.inline
+  def apply(
+    administrators: IdentityDescriptor,
+    id: java.lang.String,
+    isActive: scala.Boolean,
+    isGlobal: scala.Boolean,
+    localScopeId: java.lang.String,
+    name: java.lang.String,
+    parentId: java.lang.String,
+    scopeType: GroupScopeType,
+    securingHostId: java.lang.String,
+    subjectDescriptor: java.lang.String
+  ): IdentityScope = {
+    val __obj = js.Dynamic.literal(administrators = administrators, id = id, isActive = isActive, isGlobal = isGlobal, localScopeId = localScopeId, name = name, parentId = parentId, scopeType = scopeType, securingHostId = securingHostId, subjectDescriptor = subjectDescriptor)
+  
+    __obj.asInstanceOf[IdentityScope]
+  }
+}
+

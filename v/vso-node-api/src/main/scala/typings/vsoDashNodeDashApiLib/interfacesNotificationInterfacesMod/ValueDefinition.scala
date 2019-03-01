@@ -20,3 +20,16 @@ trait ValueDefinition extends js.Object {
   var resultTemplate: java.lang.String
 }
 
+object ValueDefinition {
+  @scala.inline
+  def apply(
+    dataSource: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputValue],
+    endPoint: java.lang.String,
+    resultTemplate: java.lang.String
+  ): ValueDefinition = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource, endPoint = endPoint, resultTemplate = resultTemplate)
+  
+    __obj.asInstanceOf[ValueDefinition]
+  }
+}
+

@@ -13,3 +13,18 @@ trait ApolloQueryResult[T] extends js.Object {
   var stale: scala.Boolean
 }
 
+object ApolloQueryResult {
+  @scala.inline
+  def apply[T](
+    data: T,
+    loading: scala.Boolean,
+    networkStatus: apolloDashClientLib.coreNetworkStatusMod.NetworkStatus,
+    stale: scala.Boolean,
+    errors: js.Array[graphqlLib.graphqlMod.GraphQLError] = null
+  ): ApolloQueryResult[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading, networkStatus = networkStatus, stale = stale)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    __obj.asInstanceOf[ApolloQueryResult[T]]
+  }
+}
+

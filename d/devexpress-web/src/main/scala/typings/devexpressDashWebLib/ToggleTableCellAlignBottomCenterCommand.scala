@@ -15,3 +15,12 @@ trait ToggleTableCellAlignBottomCenterCommand extends CommandWithBooleanStateBas
   def execute(): scala.Boolean
 }
 
+object ToggleTableCellAlignBottomCenterCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleTableCellAlignBottomCenterCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ToggleTableCellAlignBottomCenterCommand]
+  }
+}
+

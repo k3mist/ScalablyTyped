@@ -49,3 +49,19 @@ trait IType extends js.Object {
   def is(`val`: js.Any, key: java.lang.String): scala.Boolean
 }
 
+object IType {
+  @scala.inline
+  def apply(
+    decode: js.Function2[java.lang.String, java.lang.String, js.Any],
+    encode: js.Function2[js.Any, java.lang.String, java.lang.String],
+    is: js.Function2[js.Any, java.lang.String, scala.Boolean],
+    equals: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Boolean] = null,
+    pattern: stdLib.RegExp = null
+  ): IType = {
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, is = is)
+    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[IType]
+  }
+}
+

@@ -13,3 +13,12 @@ trait IModalProvider
   var options: IModalSettings
 }
 
+object IModalProvider {
+  @scala.inline
+  def apply($get: js.Any, options: IModalSettings): IModalProvider = {
+    val __obj = js.Dynamic.literal($get = $get, options = options)
+  
+    __obj.asInstanceOf[IModalProvider]
+  }
+}
+

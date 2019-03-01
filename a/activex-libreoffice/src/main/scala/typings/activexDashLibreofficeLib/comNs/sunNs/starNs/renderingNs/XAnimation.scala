@@ -47,3 +47,19 @@ trait XAnimation
   def render(canvas: XCanvas, viewState: ViewState, t: scala.Double): scala.Unit
 }
 
+object XAnimation {
+  @scala.inline
+  def apply(
+    AnimationAttributes: AnimationAttributes,
+    acquire: js.Function0[scala.Unit],
+    getAnimationAttributes: js.Function0[AnimationAttributes],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    render: js.Function3[XCanvas, ViewState, scala.Double, scala.Unit]
+  ): XAnimation = {
+    val __obj = js.Dynamic.literal(AnimationAttributes = AnimationAttributes, acquire = acquire, getAnimationAttributes = getAnimationAttributes, queryInterface = queryInterface, release = release, render = render)
+  
+    __obj.asInstanceOf[XAnimation]
+  }
+}
+

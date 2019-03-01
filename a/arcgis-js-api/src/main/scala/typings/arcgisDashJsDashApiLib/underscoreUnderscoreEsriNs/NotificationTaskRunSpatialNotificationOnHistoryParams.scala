@@ -45,3 +45,22 @@ trait NotificationTaskRunSpatialNotificationOnHistoryParams
   var user: java.lang.String
 }
 
+object NotificationTaskRunSpatialNotificationOnHistoryParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    from: stdLib.Date,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    logMatches: scala.Boolean,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    send: scala.Boolean,
+    to: stdLib.Date,
+    user: java.lang.String
+  ): NotificationTaskRunSpatialNotificationOnHistoryParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, from = from, hasOwnProperty = hasOwnProperty, logMatches = logMatches, propertyIsEnumerable = propertyIsEnumerable, send = send, to = to, user = user)
+  
+    __obj.asInstanceOf[NotificationTaskRunSpatialNotificationOnHistoryParams]
+  }
+}
+

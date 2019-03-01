@@ -21,3 +21,12 @@ trait ASPxClientDashboardItemAction extends js.Object {
   var ItemName: java.lang.String
 }
 
+object ASPxClientDashboardItemAction {
+  @scala.inline
+  def apply(Actions: js.Array[_], ItemName: java.lang.String): ASPxClientDashboardItemAction = {
+    val __obj = js.Dynamic.literal(Actions = Actions, ItemName = ItemName)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemAction]
+  }
+}
+

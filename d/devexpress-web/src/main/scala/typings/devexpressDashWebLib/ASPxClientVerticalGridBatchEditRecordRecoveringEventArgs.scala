@@ -21,3 +21,12 @@ trait ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs extends ASPxClien
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, recordValues: js.Object, visibleIndex: scala.Double): ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, recordValues = recordValues, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs]
+  }
+}
+

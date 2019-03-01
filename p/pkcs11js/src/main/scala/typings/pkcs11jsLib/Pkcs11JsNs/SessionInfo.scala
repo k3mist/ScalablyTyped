@@ -12,3 +12,12 @@ trait SessionInfo extends js.Object {
   var state: scala.Double
 }
 
+object SessionInfo {
+  @scala.inline
+  def apply(deviceError: scala.Double, flags: scala.Double, slotID: nodeLib.Buffer, state: scala.Double): SessionInfo = {
+    val __obj = js.Dynamic.literal(deviceError = deviceError, flags = flags, slotID = slotID, state = state)
+  
+    __obj.asInstanceOf[SessionInfo]
+  }
+}
+

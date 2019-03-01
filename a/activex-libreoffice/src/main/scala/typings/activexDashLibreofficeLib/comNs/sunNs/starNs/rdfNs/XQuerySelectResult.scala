@@ -23,3 +23,20 @@ trait XQuerySelectResult
   def getBindingNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XQuerySelectResult {
+  @scala.inline
+  def apply(
+    BindingNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getBindingNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasMoreElements: js.Function0[scala.Boolean],
+    nextElement: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XQuerySelectResult = {
+    val __obj = js.Dynamic.literal(BindingNames = BindingNames, acquire = acquire, getBindingNames = getBindingNames, hasMoreElements = hasMoreElements, nextElement = nextElement, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XQuerySelectResult]
+  }
+}
+

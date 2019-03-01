@@ -14,3 +14,16 @@ trait RawDraftEntity extends js.Object {
   var `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType
 }
 
+object RawDraftEntity {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    mutability: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityMutability,
+    `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType
+  ): RawDraftEntity = {
+    val __obj = js.Dynamic.literal(data = data, mutability = mutability, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RawDraftEntity]
+  }
+}
+

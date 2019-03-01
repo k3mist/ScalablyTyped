@@ -30,3 +30,17 @@ trait INxValidationError extends js.Object {
   var qExtendedMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INxValidationError {
+  @scala.inline
+  def apply(
+    qErrorCode: scala.Double,
+    qContext: java.lang.String = null,
+    qExtendedMessage: java.lang.String = null
+  ): INxValidationError = {
+    val __obj = js.Dynamic.literal(qErrorCode = qErrorCode)
+    if (qContext != null) __obj.updateDynamic("qContext")(qContext)
+    if (qExtendedMessage != null) __obj.updateDynamic("qExtendedMessage")(qExtendedMessage)
+    __obj.asInstanceOf[INxValidationError]
+  }
+}
+

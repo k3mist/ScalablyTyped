@@ -33,3 +33,20 @@ trait WorkflowTaskExecuteStepsParams
   var user: java.lang.String
 }
 
+object WorkflowTaskExecuteStepsParams {
+  @scala.inline
+  def apply(
+    auto: scala.Boolean,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stepIds: js.Array[scala.Double],
+    user: java.lang.String
+  ): WorkflowTaskExecuteStepsParams = {
+    val __obj = js.Dynamic.literal(auto = auto, constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stepIds = stepIds, user = user)
+  
+    __obj.asInstanceOf[WorkflowTaskExecuteStepsParams]
+  }
+}
+

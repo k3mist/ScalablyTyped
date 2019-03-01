@@ -11,3 +11,16 @@ trait Anon_CONFLICTING extends js.Object {
   var SYNCED: chromeDashAppsLib.chromeDashAppsLibStrings.synced
 }
 
+object Anon_CONFLICTING {
+  @scala.inline
+  def apply(
+    CONFLICTING: chromeDashAppsLib.chromeDashAppsLibStrings.conflicting,
+    PENDING: chromeDashAppsLib.chromeDashAppsLibStrings.pending,
+    SYNCED: chromeDashAppsLib.chromeDashAppsLibStrings.synced
+  ): Anon_CONFLICTING = {
+    val __obj = js.Dynamic.literal(CONFLICTING = CONFLICTING, PENDING = PENDING, SYNCED = SYNCED)
+  
+    __obj.asInstanceOf[Anon_CONFLICTING]
+  }
+}
+

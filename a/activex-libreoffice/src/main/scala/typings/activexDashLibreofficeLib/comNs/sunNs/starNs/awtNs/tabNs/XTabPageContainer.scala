@@ -53,3 +53,21 @@ trait XTabPageContainer extends js.Object {
   def removeTabPageContainerListener(listener: XTabPageContainerListener): scala.Unit
 }
 
+object XTabPageContainer {
+  @scala.inline
+  def apply(
+    ActiveTabPageID: scala.Double,
+    TabPageCount: scala.Double,
+    addTabPageContainerListener: js.Function1[XTabPageContainerListener, scala.Unit],
+    getTabPage: js.Function1[scala.Double, XTabPage],
+    getTabPageByID: js.Function1[scala.Double, XTabPage],
+    getTabPageCount: js.Function0[scala.Double],
+    isTabPageActive: js.Function1[scala.Double, scala.Boolean],
+    removeTabPageContainerListener: js.Function1[XTabPageContainerListener, scala.Unit]
+  ): XTabPageContainer = {
+    val __obj = js.Dynamic.literal(ActiveTabPageID = ActiveTabPageID, TabPageCount = TabPageCount, addTabPageContainerListener = addTabPageContainerListener, getTabPage = getTabPage, getTabPageByID = getTabPageByID, getTabPageCount = getTabPageCount, isTabPageActive = isTabPageActive, removeTabPageContainerListener = removeTabPageContainerListener)
+  
+    __obj.asInstanceOf[XTabPageContainer]
+  }
+}
+

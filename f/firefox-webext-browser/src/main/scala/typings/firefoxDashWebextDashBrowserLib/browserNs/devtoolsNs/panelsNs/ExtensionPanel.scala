@@ -46,3 +46,28 @@ trait ExtensionPanel extends js.Object {
   var onShown: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* window */ js.Object, scala.Unit]]
 }
 
+object ExtensionPanel {
+  @scala.inline
+  def apply(
+    onHidden: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
+    onSearch: firefoxDashWebextDashBrowserLib.WebExtEvent[
+      js.Function2[
+        /* action */ java.lang.String, 
+        /* queryString */ js.UndefOr[java.lang.String], 
+        scala.Unit
+      ]
+    ],
+    onShown: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* window */ js.Object, scala.Unit]],
+    createStatusBarButton: js.Function3[
+      /* iconPath */ java.lang.String, 
+      /* tooltipText */ java.lang.String, 
+      /* disabled */ scala.Boolean, 
+      Button
+    ] = null
+  ): ExtensionPanel = {
+    val __obj = js.Dynamic.literal(onHidden = onHidden, onSearch = onSearch, onShown = onShown)
+    if (createStatusBarButton != null) __obj.updateDynamic("createStatusBarButton")(createStatusBarButton)
+    __obj.asInstanceOf[ExtensionPanel]
+  }
+}
+

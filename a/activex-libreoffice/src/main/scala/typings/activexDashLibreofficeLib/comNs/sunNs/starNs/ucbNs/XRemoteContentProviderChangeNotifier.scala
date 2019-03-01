@@ -24,3 +24,18 @@ trait XRemoteContentProviderChangeNotifier
   def removeRemoteContentProviderChangeListener(Listener: XRemoteContentProviderChangeListener): scala.Unit
 }
 
+object XRemoteContentProviderChangeNotifier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addRemoteContentProviderChangeListener: js.Function1[XRemoteContentProviderChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRemoteContentProviderChangeListener: js.Function1[XRemoteContentProviderChangeListener, scala.Unit]
+  ): XRemoteContentProviderChangeNotifier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addRemoteContentProviderChangeListener = addRemoteContentProviderChangeListener, queryInterface = queryInterface, release = release, removeRemoteContentProviderChangeListener = removeRemoteContentProviderChangeListener)
+  
+    __obj.asInstanceOf[XRemoteContentProviderChangeNotifier]
+  }
+}
+

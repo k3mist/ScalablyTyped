@@ -17,3 +17,15 @@ trait MainRouteTableAssociationArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object MainRouteTableAssociationArgs {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): MainRouteTableAssociationArgs = {
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[MainRouteTableAssociationArgs]
+  }
+}
+

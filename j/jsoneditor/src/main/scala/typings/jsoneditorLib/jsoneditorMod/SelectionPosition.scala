@@ -10,3 +10,12 @@ trait SelectionPosition extends js.Object {
   var row: scala.Double
 }
 
+object SelectionPosition {
+  @scala.inline
+  def apply(column: scala.Double, row: scala.Double): SelectionPosition = {
+    val __obj = js.Dynamic.literal(column = column, row = row)
+  
+    __obj.asInstanceOf[SelectionPosition]
+  }
+}
+

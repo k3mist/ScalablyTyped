@@ -18,3 +18,12 @@ trait Anon_Account extends js.Object {
   var amount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Account {
+  @scala.inline
+  def apply(account: java.lang.String, amount: scala.Int | scala.Double = null): Anon_Account = {
+    val __obj = js.Dynamic.literal(account = account)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Account]
+  }
+}
+

@@ -14,3 +14,19 @@ trait InteractionTrackingData extends js.Object {
   var rightDown: scala.Boolean
 }
 
+object InteractionTrackingData {
+  @scala.inline
+  def apply(
+    flags: scala.Double,
+    leftDown: scala.Boolean,
+    none: scala.Double,
+    over: scala.Boolean,
+    pointerId: scala.Double,
+    rightDown: scala.Boolean
+  ): InteractionTrackingData = {
+    val __obj = js.Dynamic.literal(flags = flags, leftDown = leftDown, none = none, over = over, pointerId = pointerId, rightDown = rightDown)
+  
+    __obj.asInstanceOf[InteractionTrackingData]
+  }
+}
+

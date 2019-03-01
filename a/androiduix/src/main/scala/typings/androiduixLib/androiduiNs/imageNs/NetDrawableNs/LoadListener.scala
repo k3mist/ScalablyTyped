@@ -10,3 +10,15 @@ trait LoadListener extends js.Object {
   def onLoad(drawable: androiduixLib.androiduiNs.imageNs.NetDrawable): js.Any
 }
 
+object LoadListener {
+  @scala.inline
+  def apply(
+    onError: js.Function1[androiduixLib.androiduiNs.imageNs.NetDrawable, js.Any],
+    onLoad: js.Function1[androiduixLib.androiduiNs.imageNs.NetDrawable, js.Any]
+  ): LoadListener = {
+    val __obj = js.Dynamic.literal(onError = onError, onLoad = onLoad)
+  
+    __obj.asInstanceOf[LoadListener]
+  }
+}
+

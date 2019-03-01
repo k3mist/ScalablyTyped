@@ -31,3 +31,21 @@ trait TaskAgentPoolMaintenanceDefinition extends js.Object {
   var scheduleSetting: TaskAgentPoolMaintenanceSchedule
 }
 
+object TaskAgentPoolMaintenanceDefinition {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    id: scala.Double,
+    jobTimeoutInMinutes: scala.Double,
+    maxConcurrentAgentsPercentage: scala.Double,
+    options: TaskAgentPoolMaintenanceOptions,
+    pool: TaskAgentPoolReference,
+    retentionPolicy: TaskAgentPoolMaintenanceRetentionPolicy,
+    scheduleSetting: TaskAgentPoolMaintenanceSchedule
+  ): TaskAgentPoolMaintenanceDefinition = {
+    val __obj = js.Dynamic.literal(enabled = enabled, id = id, jobTimeoutInMinutes = jobTimeoutInMinutes, maxConcurrentAgentsPercentage = maxConcurrentAgentsPercentage, options = options, pool = pool, retentionPolicy = retentionPolicy, scheduleSetting = scheduleSetting)
+  
+    __obj.asInstanceOf[TaskAgentPoolMaintenanceDefinition]
+  }
+}
+

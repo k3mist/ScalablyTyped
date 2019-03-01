@@ -22,3 +22,16 @@ trait DeepLinkParameters extends js.Object {
   var subEntityWebUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeepLinkParameters {
+  @scala.inline
+  def apply(
+    subEntityId: java.lang.String,
+    subEntityLabel: java.lang.String,
+    subEntityWebUrl: java.lang.String = null
+  ): DeepLinkParameters = {
+    val __obj = js.Dynamic.literal(subEntityId = subEntityId, subEntityLabel = subEntityLabel)
+    if (subEntityWebUrl != null) __obj.updateDynamic("subEntityWebUrl")(subEntityWebUrl)
+    __obj.asInstanceOf[DeepLinkParameters]
+  }
+}
+

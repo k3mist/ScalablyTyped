@@ -12,3 +12,17 @@ trait Serialized extends js.Object {
   var version: java.lang.String
 }
 
+object Serialized {
+  @scala.inline
+  def apply(
+    cookies: js.Array[toughDashCookieLib.toughDashCookieMod.CookieNs.Serialized],
+    rejectPublicSuffixes: scala.Boolean,
+    storeType: java.lang.String,
+    version: java.lang.String
+  ): Serialized = {
+    val __obj = js.Dynamic.literal(cookies = cookies, rejectPublicSuffixes = rejectPublicSuffixes, storeType = storeType, version = version)
+  
+    __obj.asInstanceOf[Serialized]
+  }
+}
+

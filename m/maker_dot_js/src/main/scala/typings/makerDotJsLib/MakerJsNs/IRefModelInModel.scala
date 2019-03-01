@@ -14,3 +14,12 @@ trait IRefModelInModel extends js.Object {
   var parentModel: IModel
 }
 
+object IRefModelInModel {
+  @scala.inline
+  def apply(childId: java.lang.String, childModel: IModel, parentModel: IModel): IRefModelInModel = {
+    val __obj = js.Dynamic.literal(childId = childId, childModel = childModel, parentModel = parentModel)
+  
+    __obj.asInstanceOf[IRefModelInModel]
+  }
+}
+

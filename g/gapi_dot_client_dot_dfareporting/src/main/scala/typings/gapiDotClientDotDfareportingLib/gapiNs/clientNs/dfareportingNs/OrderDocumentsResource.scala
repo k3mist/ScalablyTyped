@@ -12,3 +12,21 @@ trait OrderDocumentsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltApproved): gapiDotClientLib.gapiNs.clientNs.Request[OrderDocumentsListResponse]
 }
 
+object OrderDocumentsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrderDocument]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltApproved, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrderDocumentsListResponse]
+    ]
+  ): OrderDocumentsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[OrderDocumentsResource]
+  }
+}
+

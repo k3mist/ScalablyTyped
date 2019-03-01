@@ -10,3 +10,12 @@ trait UpdateRefsRequest extends js.Object {
   var updateMode: GitRefUpdateMode
 }
 
+object UpdateRefsRequest {
+  @scala.inline
+  def apply(refUpdateRequests: js.Array[GitRefUpdate], updateMode: GitRefUpdateMode): UpdateRefsRequest = {
+    val __obj = js.Dynamic.literal(refUpdateRequests = refUpdateRequests, updateMode = updateMode)
+  
+    __obj.asInstanceOf[UpdateRefsRequest]
+  }
+}
+

@@ -9,3 +9,12 @@ trait BlurOptions
   extends Loggable
      with Forceable
 
+object BlurOptions {
+  @scala.inline
+  def apply(force: scala.Boolean, log: scala.Boolean): BlurOptions = {
+    val __obj = js.Dynamic.literal(force = force, log = log)
+  
+    __obj.asInstanceOf[BlurOptions]
+  }
+}
+

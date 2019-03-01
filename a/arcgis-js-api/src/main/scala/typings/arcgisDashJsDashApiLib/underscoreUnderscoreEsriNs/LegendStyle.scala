@@ -36,3 +36,18 @@ trait LegendStyle
   var `type`: java.lang.String
 }
 
+object LegendStyle {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String,
+    layout: java.lang.String = null
+  ): LegendStyle = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    __obj.asInstanceOf[LegendStyle]
+  }
+}
+

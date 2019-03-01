@@ -20,3 +20,25 @@ trait Anon_AmbientLightColor extends js.Object {
   var spotShadowMatrix: threeLib.threeDashCoreMod.IUniform
 }
 
+object Anon_AmbientLightColor {
+  @scala.inline
+  def apply(
+    ambientLightColor: threeLib.threeDashCoreMod.IUniform,
+    directionalLights: Anon_Properties,
+    directionalShadowMap: threeLib.threeDashCoreMod.IUniform,
+    directionalShadowMatrix: threeLib.threeDashCoreMod.IUniform,
+    hemisphereLights: Anon_PropertiesValueAnonDirection,
+    pointLights: Anon_PropertiesValueAnonColorDecay,
+    pointShadowMap: threeLib.threeDashCoreMod.IUniform,
+    pointShadowMatrix: threeLib.threeDashCoreMod.IUniform,
+    rectAreaLights: Anon_PropertiesValueAnonColorHeight,
+    spotLights: Anon_PropertiesValue,
+    spotShadowMap: threeLib.threeDashCoreMod.IUniform,
+    spotShadowMatrix: threeLib.threeDashCoreMod.IUniform
+  ): Anon_AmbientLightColor = {
+    val __obj = js.Dynamic.literal(ambientLightColor = ambientLightColor, directionalLights = directionalLights, directionalShadowMap = directionalShadowMap, directionalShadowMatrix = directionalShadowMatrix, hemisphereLights = hemisphereLights, pointLights = pointLights, pointShadowMap = pointShadowMap, pointShadowMatrix = pointShadowMatrix, rectAreaLights = rectAreaLights, spotLights = spotLights, spotShadowMap = spotShadowMap, spotShadowMatrix = spotShadowMatrix)
+  
+    __obj.asInstanceOf[Anon_AmbientLightColor]
+  }
+}
+

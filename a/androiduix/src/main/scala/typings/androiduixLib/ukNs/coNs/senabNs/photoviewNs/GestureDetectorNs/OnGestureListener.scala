@@ -11,3 +11,16 @@ trait OnGestureListener extends js.Object {
   def onScale(scaleFactor: scala.Double, focusX: scala.Double, focusY: scala.Double): scala.Unit
 }
 
+object OnGestureListener {
+  @scala.inline
+  def apply(
+    onDrag: js.Function2[scala.Double, scala.Double, scala.Unit],
+    onFling: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    onScale: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+  ): OnGestureListener = {
+    val __obj = js.Dynamic.literal(onDrag = onDrag, onFling = onFling, onScale = onScale)
+  
+    __obj.asInstanceOf[OnGestureListener]
+  }
+}
+

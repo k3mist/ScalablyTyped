@@ -22,3 +22,27 @@ trait RectanglePrimitive extends js.Object {
   def update(): scala.Unit
 }
 
+object RectanglePrimitive {
+  @scala.inline
+  def apply(
+    asynchronous: scala.Boolean,
+    debugShowBoundingVolume: scala.Boolean,
+    destroy: js.Function0[scala.Unit],
+    ellipsoid: Ellipsoid,
+    granularity: scala.Double,
+    height: scala.Double,
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    material: Material,
+    rectangle: Rectangle,
+    rotation: scala.Double,
+    show: scala.Boolean,
+    textureRotationAngle: scala.Double,
+    update: js.Function0[scala.Unit]
+  ): RectanglePrimitive = {
+    val __obj = js.Dynamic.literal(asynchronous = asynchronous, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, ellipsoid = ellipsoid, granularity = granularity, height = height, id = id, isDestroyed = isDestroyed, material = material, rectangle = rectangle, rotation = rotation, show = show, textureRotationAngle = textureRotationAngle, update = update)
+  
+    __obj.asInstanceOf[RectanglePrimitive]
+  }
+}
+

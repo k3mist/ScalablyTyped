@@ -12,3 +12,12 @@ trait FailedKeymapFileRead extends js.Object {
   var stack: java.lang.String
 }
 
+object FailedKeymapFileRead {
+  @scala.inline
+  def apply(message: java.lang.String, stack: java.lang.String): FailedKeymapFileRead = {
+    val __obj = js.Dynamic.literal(message = message, stack = stack)
+  
+    __obj.asInstanceOf[FailedKeymapFileRead]
+  }
+}
+

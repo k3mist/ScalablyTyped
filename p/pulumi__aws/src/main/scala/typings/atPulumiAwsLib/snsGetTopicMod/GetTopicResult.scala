@@ -16,3 +16,12 @@ trait GetTopicResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetTopicResult {
+  @scala.inline
+  def apply(arn: java.lang.String, id: java.lang.String): GetTopicResult = {
+    val __obj = js.Dynamic.literal(arn = arn, id = id)
+  
+    __obj.asInstanceOf[GetTopicResult]
+  }
+}
+

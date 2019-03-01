@@ -17,3 +17,22 @@ trait VueSelectComputed extends js.Object {
   def valueAsArray(): js.Array[_]
 }
 
+object VueSelectComputed {
+  @scala.inline
+  def apply(
+    clearSearchOnBlur: js.Function0[scala.Boolean],
+    dropdownClasses: js.Function0[DropdownClasses],
+    dropdownOpen: js.Function0[scala.Boolean],
+    filteredOptions: js.Function0[js.Array[_]],
+    isValueEmpty: js.Function0[scala.Boolean],
+    searchPlaceholder: js.Function0[scala.Boolean],
+    searching: js.Function0[scala.Boolean],
+    showClearButton: js.Function0[scala.Boolean],
+    valueAsArray: js.Function0[js.Array[_]]
+  ): VueSelectComputed = {
+    val __obj = js.Dynamic.literal(clearSearchOnBlur = clearSearchOnBlur, dropdownClasses = dropdownClasses, dropdownOpen = dropdownOpen, filteredOptions = filteredOptions, isValueEmpty = isValueEmpty, searchPlaceholder = searchPlaceholder, searching = searching, showClearButton = showClearButton, valueAsArray = valueAsArray)
+  
+    __obj.asInstanceOf[VueSelectComputed]
+  }
+}
+

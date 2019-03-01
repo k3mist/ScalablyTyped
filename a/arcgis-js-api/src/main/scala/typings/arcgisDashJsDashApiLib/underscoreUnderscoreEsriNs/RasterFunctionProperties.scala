@@ -34,3 +34,20 @@ trait RasterFunctionProperties extends js.Object {
   var variableName: js.UndefOr[js.Any] = js.undefined
 }
 
+object RasterFunctionProperties {
+  @scala.inline
+  def apply(
+    functionArguments: js.Any = null,
+    functionName: java.lang.String = null,
+    outputPixelType: java.lang.String = null,
+    variableName: js.Any = null
+  ): RasterFunctionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (outputPixelType != null) __obj.updateDynamic("outputPixelType")(outputPixelType)
+    if (variableName != null) __obj.updateDynamic("variableName")(variableName)
+    __obj.asInstanceOf[RasterFunctionProperties]
+  }
+}
+

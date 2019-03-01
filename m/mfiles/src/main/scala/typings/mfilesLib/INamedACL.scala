@@ -14,3 +14,19 @@ trait INamedACL extends js.Object {
   def Clone(): INamedACL
 }
 
+object INamedACL {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    Clone: js.Function0[INamedACL],
+    GUID: java.lang.String,
+    ID: scala.Double,
+    Name: java.lang.String,
+    NamedACLType: mfilesLib.MFilesNs.MFNamedACLType
+  ): INamedACL = {
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, GUID = GUID, ID = ID, Name = Name, NamedACLType = NamedACLType)
+  
+    __obj.asInstanceOf[INamedACL]
+  }
+}
+

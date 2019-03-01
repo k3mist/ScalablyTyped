@@ -12,3 +12,12 @@ trait WorkItemTrackingResource extends WorkItemTrackingResourceReference {
   var _links: js.Any
 }
 
+object WorkItemTrackingResource {
+  @scala.inline
+  def apply(_links: js.Any, url: java.lang.String): WorkItemTrackingResource = {
+    val __obj = js.Dynamic.literal(_links = _links, url = url)
+  
+    __obj.asInstanceOf[WorkItemTrackingResource]
+  }
+}
+

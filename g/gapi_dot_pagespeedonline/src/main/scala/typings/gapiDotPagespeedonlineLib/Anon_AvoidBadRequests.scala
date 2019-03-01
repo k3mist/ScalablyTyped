@@ -36,3 +36,41 @@ trait Anon_AvoidBadRequests extends js.Object {
   var SpriteImages: GoogleApiPageSpeedOnlineRuleResource
 }
 
+object Anon_AvoidBadRequests {
+  @scala.inline
+  def apply(
+    AvoidBadRequests: GoogleApiPageSpeedOnlineRuleResource,
+    AvoidCharsetInMetaTag: GoogleApiPageSpeedOnlineRuleResource,
+    AvoidCssImport: GoogleApiPageSpeedOnlineRuleResource,
+    AvoidLandingPageRedirects: GoogleApiPageSpeedOnlineRuleResource,
+    AvoidLongRunningScripts: GoogleApiPageSpeedOnlineRuleResource,
+    DeferParsingJavaScript: GoogleApiPageSpeedOnlineRuleResource,
+    EnableGzipCompression: GoogleApiPageSpeedOnlineRuleResource,
+    InlineSmallCss: GoogleApiPageSpeedOnlineRuleResource,
+    InlineSmallJavaScript: GoogleApiPageSpeedOnlineRuleResource,
+    LeverageBrowserCaching: GoogleApiPageSpeedOnlineRuleResource,
+    MinifyCss: GoogleApiPageSpeedOnlineRuleResource,
+    MinifyHTML: GoogleApiPageSpeedOnlineRuleResource,
+    MinifyJavaScript: GoogleApiPageSpeedOnlineRuleResource,
+    MinimizeRedirects: GoogleApiPageSpeedOnlineRuleResource,
+    MinimizeRequestSize: GoogleApiPageSpeedOnlineRuleResource,
+    OptimizeImages: GoogleApiPageSpeedOnlineRuleResource,
+    OptimizeTheOrderOfStylesAndScripts: GoogleApiPageSpeedOnlineRuleResource,
+    PreferAsyncResources: GoogleApiPageSpeedOnlineRuleResource,
+    PutCssInTheDocumentHead: GoogleApiPageSpeedOnlineRuleResource,
+    RemoveQueryStringsFromStaticResources: GoogleApiPageSpeedOnlineRuleResource,
+    ServeResponseTime: GoogleApiPageSpeedOnlineRuleResource,
+    ServerResourcesFromAConsistentUrl: GoogleApiPageSpeedOnlineRuleResource,
+    ServerScaledImages: GoogleApiPageSpeedOnlineRuleResource,
+    SpecifyACacheValidator: GoogleApiPageSpeedOnlineRuleResource,
+    SpecifyAVaryAcceptEncodingHeader: GoogleApiPageSpeedOnlineRuleResource,
+    SpecifyCharsetEarly: GoogleApiPageSpeedOnlineRuleResource,
+    SpecifyImageDimensions: GoogleApiPageSpeedOnlineRuleResource,
+    SpriteImages: GoogleApiPageSpeedOnlineRuleResource
+  ): Anon_AvoidBadRequests = {
+    val __obj = js.Dynamic.literal(AvoidBadRequests = AvoidBadRequests, AvoidCharsetInMetaTag = AvoidCharsetInMetaTag, AvoidCssImport = AvoidCssImport, AvoidLandingPageRedirects = AvoidLandingPageRedirects, AvoidLongRunningScripts = AvoidLongRunningScripts, DeferParsingJavaScript = DeferParsingJavaScript, EnableGzipCompression = EnableGzipCompression, InlineSmallCss = InlineSmallCss, InlineSmallJavaScript = InlineSmallJavaScript, LeverageBrowserCaching = LeverageBrowserCaching, MinifyCss = MinifyCss, MinifyHTML = MinifyHTML, MinifyJavaScript = MinifyJavaScript, MinimizeRedirects = MinimizeRedirects, MinimizeRequestSize = MinimizeRequestSize, OptimizeImages = OptimizeImages, OptimizeTheOrderOfStylesAndScripts = OptimizeTheOrderOfStylesAndScripts, PreferAsyncResources = PreferAsyncResources, PutCssInTheDocumentHead = PutCssInTheDocumentHead, RemoveQueryStringsFromStaticResources = RemoveQueryStringsFromStaticResources, ServeResponseTime = ServeResponseTime, ServerResourcesFromAConsistentUrl = ServerResourcesFromAConsistentUrl, ServerScaledImages = ServerScaledImages, SpecifyACacheValidator = SpecifyACacheValidator, SpecifyAVaryAcceptEncodingHeader = SpecifyAVaryAcceptEncodingHeader, SpecifyCharsetEarly = SpecifyCharsetEarly, SpecifyImageDimensions = SpecifyImageDimensions, SpriteImages = SpriteImages)
+  
+    __obj.asInstanceOf[Anon_AvoidBadRequests]
+  }
+}
+

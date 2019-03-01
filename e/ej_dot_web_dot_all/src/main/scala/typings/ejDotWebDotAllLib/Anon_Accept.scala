@@ -12,3 +12,12 @@ trait Anon_Accept extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Accept {
+  @scala.inline
+  def apply(accept: java.lang.String, data: js.Any, `type`: java.lang.String, url: java.lang.String): Anon_Accept = {
+    val __obj = js.Dynamic.literal(accept = accept, data = data, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[Anon_Accept]
+  }
+}
+

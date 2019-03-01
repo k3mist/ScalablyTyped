@@ -23,3 +23,19 @@ trait XLoadEventListener
   def loadFinished(Loader: XFrameLoader): scala.Unit
 }
 
+object XLoadEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    loadCancelled: js.Function1[XFrameLoader, scala.Unit],
+    loadFinished: js.Function1[XFrameLoader, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLoadEventListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, loadCancelled = loadCancelled, loadFinished = loadFinished, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLoadEventListener]
+  }
+}
+

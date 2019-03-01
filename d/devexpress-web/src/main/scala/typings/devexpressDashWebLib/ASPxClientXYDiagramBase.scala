@@ -21,3 +21,12 @@ trait ASPxClientXYDiagramBase extends ASPxClientWebChartElement {
   var axisY: ASPxClientAxisBase
 }
 
+object ASPxClientXYDiagramBase {
+  @scala.inline
+  def apply(axisX: ASPxClientAxisBase, axisY: ASPxClientAxisBase, chart: ASPxClientWebChart): ASPxClientXYDiagramBase = {
+    val __obj = js.Dynamic.literal(axisX = axisX, axisY = axisY, chart = chart)
+  
+    __obj.asInstanceOf[ASPxClientXYDiagramBase]
+  }
+}
+

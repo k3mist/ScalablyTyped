@@ -13,3 +13,18 @@ trait Anon_ColumnFilenameLinenoType extends js.Object {
   var `val`: scala.Boolean
 }
 
+object Anon_ColumnFilenameLinenoType {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    `val`: scala.Boolean
+  ): Anon_ColumnFilenameLinenoType = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, `val` = `val`)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameLinenoType]
+  }
+}
+

@@ -75,3 +75,27 @@ trait _Impl extends js.Object {
   def onRate(`this`: semanticDashUiDashRatingLib.JQuery, value: scala.Double): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    className: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.ClassNameSettings,
+    clearable: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.auto | scala.Boolean,
+    debug: scala.Boolean,
+    error: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.ErrorSettings,
+    fireOnInit: scala.Boolean,
+    initialRating: scala.Double,
+    interactive: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onRate: js.Function2[semanticDashUiDashRatingLib.JQuery, scala.Double, scala.Unit],
+    performance: scala.Boolean,
+    selector: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.SelectorSettings,
+    silent: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, initialRating = initialRating, interactive = interactive, name = name, namespace = namespace, onRate = onRate, performance = performance, selector = selector, silent = silent, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

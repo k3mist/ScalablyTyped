@@ -24,3 +24,20 @@ trait CertificateState extends js.Object {
   val certificateWallet: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object CertificateState {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificatePem: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateWallet: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): CertificateState = {
+    val __obj = js.Dynamic.literal()
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
+    if (certificatePem != null) __obj.updateDynamic("certificatePem")(certificatePem.asInstanceOf[js.Any])
+    if (certificateWallet != null) __obj.updateDynamic("certificateWallet")(certificateWallet.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateState]
+  }
+}
+

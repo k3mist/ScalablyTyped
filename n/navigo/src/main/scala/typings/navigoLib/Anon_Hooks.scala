@@ -13,3 +13,19 @@ trait Anon_Hooks extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Hooks {
+  @scala.inline
+  def apply(
+    hooks: navigoLib.navigoMod.NavigoHooks,
+    query: java.lang.String,
+    url: java.lang.String,
+    name: java.lang.String = null,
+    params: Params = null
+  ): Anon_Hooks = {
+    val __obj = js.Dynamic.literal(hooks = hooks, query = query, url = url)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Hooks]
+  }
+}
+

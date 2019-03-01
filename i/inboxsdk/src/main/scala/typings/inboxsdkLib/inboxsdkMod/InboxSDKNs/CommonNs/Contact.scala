@@ -10,3 +10,12 @@ trait Contact extends js.Object {
   var name: java.lang.String
 }
 
+object Contact {
+  @scala.inline
+  def apply(emailAddress: java.lang.String, name: java.lang.String): Contact = {
+    val __obj = js.Dynamic.literal(emailAddress = emailAddress, name = name)
+  
+    __obj.asInstanceOf[Contact]
+  }
+}
+

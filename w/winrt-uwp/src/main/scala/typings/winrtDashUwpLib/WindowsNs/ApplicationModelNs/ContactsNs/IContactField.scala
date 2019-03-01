@@ -17,3 +17,17 @@ trait IContactField extends js.Object {
   var value: java.lang.String
 }
 
+object IContactField {
+  @scala.inline
+  def apply(
+    category: ContactFieldCategory,
+    name: java.lang.String,
+    `type`: ContactFieldType,
+    value: java.lang.String
+  ): IContactField = {
+    val __obj = js.Dynamic.literal(category = category, name = name, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[IContactField]
+  }
+}
+

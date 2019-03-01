@@ -18,3 +18,25 @@ trait LocationState[TKeys, TState] extends js.Object {
   var `type`: java.lang.String
 }
 
+object LocationState {
+  @scala.inline
+  def apply[TKeys, TState](
+    history: Nullable[HistoryData],
+    kind: Nullable[java.lang.String],
+    pathname: java.lang.String,
+    payload: Payload,
+    prev: Location,
+    routesMap: RoutesMap[TKeys, TState],
+    `type`: java.lang.String,
+    hasSSR: js.UndefOr[scala.Boolean] = js.undefined,
+    query: js.Object = null,
+    search: java.lang.String = null
+  ): LocationState[TKeys, TState] = {
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pathname = pathname, payload = payload, prev = prev, routesMap = routesMap, `type` = `type`)
+    if (!js.isUndefined(hasSSR)) __obj.updateDynamic("hasSSR")(hasSSR)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[LocationState[TKeys, TState]]
+  }
+}
+

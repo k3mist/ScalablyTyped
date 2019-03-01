@@ -28,3 +28,18 @@ trait RequestInfo extends js.Object {
   var valid: scala.Boolean
 }
 
+object RequestInfo {
+  @scala.inline
+  def apply(
+    parameters: js.Any,
+    requestType: RequestType,
+    stateMatch: scala.Boolean,
+    stateResponse: java.lang.String,
+    valid: scala.Boolean
+  ): RequestInfo = {
+    val __obj = js.Dynamic.literal(parameters = parameters, requestType = requestType, stateMatch = stateMatch, stateResponse = stateResponse, valid = valid)
+  
+    __obj.asInstanceOf[RequestInfo]
+  }
+}
+

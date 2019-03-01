@@ -78,3 +78,27 @@ trait IgUploadMethods extends js.Object {
   def widget(): scala.Unit
 }
 
+object IgUploadMethods {
+  @scala.inline
+  def apply(
+    addDataField: js.Function2[js.Object, js.Object, scala.Unit],
+    addDataFields: js.Function2[js.Object, js.Array[_], scala.Unit],
+    cancelAll: js.Function0[scala.Unit],
+    cancelUpload: js.Function1[scala.Double, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    clearAll: js.Function0[scala.Unit],
+    container: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getFileInfo: js.Function1[scala.Double, js.Object],
+    getFileInfoData: js.Function0[js.Object],
+    startUpload: js.Function1[scala.Double, scala.Unit],
+    widget: js.Function0[scala.Unit]
+  ): IgUploadMethods = {
+    val __obj = js.Dynamic.literal(addDataField = addDataField, addDataFields = addDataFields, cancelAll = cancelAll, cancelUpload = cancelUpload, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, clearAll = clearAll, container = container, destroy = destroy, getFileInfo = getFileInfo, getFileInfoData = getFileInfoData, startUpload = startUpload, widget = widget)
+  
+    __obj.asInstanceOf[IgUploadMethods]
+  }
+}
+

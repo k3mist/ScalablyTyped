@@ -31,3 +31,18 @@ trait Trade extends js.Object {
   var Type: VOrderType
 }
 
+object Trade {
+  @scala.inline
+  def apply(
+    Amount: scala.Double,
+    Id: java.lang.String,
+    Price: scala.Double,
+    Time: scala.Double,
+    Type: VOrderType
+  ): Trade = {
+    val __obj = js.Dynamic.literal(Amount = Amount, Id = Id, Price = Price, Time = Time, Type = Type)
+  
+    __obj.asInstanceOf[Trade]
+  }
+}
+

@@ -23,3 +23,20 @@ trait BackgroundUploadProgress extends js.Object {
   var totalBytesToSend: scala.Double
 }
 
+object BackgroundUploadProgress {
+  @scala.inline
+  def apply(
+    bytesReceived: scala.Double,
+    bytesSent: scala.Double,
+    hasResponseChanged: scala.Boolean,
+    hasRestarted: scala.Boolean,
+    status: BackgroundTransferStatus,
+    totalBytesToReceive: scala.Double,
+    totalBytesToSend: scala.Double
+  ): BackgroundUploadProgress = {
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, bytesSent = bytesSent, hasResponseChanged = hasResponseChanged, hasRestarted = hasRestarted, status = status, totalBytesToReceive = totalBytesToReceive, totalBytesToSend = totalBytesToSend)
+  
+    __obj.asInstanceOf[BackgroundUploadProgress]
+  }
+}
+

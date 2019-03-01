@@ -40,3 +40,32 @@ trait DateFileAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.dateFile
 }
 
+object DateFileAppender {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    `type`: log4jsLib.log4jsLibStrings.dateFile,
+    alwaysIncludePattern: js.UndefOr[scala.Boolean] = js.undefined,
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    daysToKeep: scala.Int | scala.Double = null,
+    encoding: java.lang.String = null,
+    flags: java.lang.String = null,
+    keepFileExt: js.UndefOr[scala.Boolean] = js.undefined,
+    layout: Layout = null,
+    mode: scala.Int | scala.Double = null,
+    pattern: java.lang.String = null
+  ): DateFileAppender = {
+    val __obj = js.Dynamic.literal(filename = filename, `type` = `type`)
+    if (!js.isUndefined(alwaysIncludePattern)) __obj.updateDynamic("alwaysIncludePattern")(alwaysIncludePattern)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (daysToKeep != null) __obj.updateDynamic("daysToKeep")(daysToKeep.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[DateFileAppender]
+  }
+}
+

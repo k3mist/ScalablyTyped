@@ -10,3 +10,12 @@ trait INumber extends js.Object {
   def Clone(): INumber
 }
 
+object INumber {
+  @scala.inline
+  def apply(Clone: js.Function0[INumber], Value: scala.Double): INumber = {
+    val __obj = js.Dynamic.literal(Clone = Clone, Value = Value)
+  
+    __obj.asInstanceOf[INumber]
+  }
+}
+

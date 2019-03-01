@@ -12,3 +12,17 @@ trait Anon_Cidr extends js.Object {
   var securityGroupOwnerId: java.lang.String
 }
 
+object Anon_Cidr {
+  @scala.inline
+  def apply(
+    securityGroupId: java.lang.String,
+    securityGroupName: java.lang.String,
+    securityGroupOwnerId: java.lang.String,
+    cidr: java.lang.String = null
+  ): Anon_Cidr = {
+    val __obj = js.Dynamic.literal(securityGroupId = securityGroupId, securityGroupName = securityGroupName, securityGroupOwnerId = securityGroupOwnerId)
+    if (cidr != null) __obj.updateDynamic("cidr")(cidr)
+    __obj.asInstanceOf[Anon_Cidr]
+  }
+}
+

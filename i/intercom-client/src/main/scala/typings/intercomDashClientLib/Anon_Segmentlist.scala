@@ -10,3 +10,15 @@ trait Anon_Segmentlist extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.segmentDOTlist
 }
 
+object Anon_Segmentlist {
+  @scala.inline
+  def apply(
+    segments: js.Array[intercomDashClientLib.userMod.Segment],
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.segmentDOTlist
+  ): Anon_Segmentlist = {
+    val __obj = js.Dynamic.literal(segments = segments, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Segmentlist]
+  }
+}
+

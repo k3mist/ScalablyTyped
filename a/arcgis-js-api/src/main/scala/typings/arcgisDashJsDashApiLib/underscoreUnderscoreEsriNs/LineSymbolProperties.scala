@@ -16,3 +16,16 @@ trait LineSymbolProperties extends SymbolProperties {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object LineSymbolProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): LineSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineSymbolProperties]
+  }
+}
+

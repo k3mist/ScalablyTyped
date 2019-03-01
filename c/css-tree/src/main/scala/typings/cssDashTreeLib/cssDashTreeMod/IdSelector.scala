@@ -14,3 +14,16 @@ trait IdSelector
   var type_IdSelector: cssDashTreeLib.cssDashTreeLibStrings.IdSelector
 }
 
+object IdSelector {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.IdSelector,
+    loc: CssLocation = null
+  ): IdSelector = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[IdSelector]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_Errno extends js.Object {
   var signals: Anon_SIGABRT
 }
 
+object Anon_Errno {
+  @scala.inline
+  def apply(
+    UV_UDP_REUSEADDR: scala.Double,
+    errno: Anon_E2BIG,
+    priority: Anon_PRIORITYABOVENORMAL,
+    signals: Anon_SIGABRT
+  ): Anon_Errno = {
+    val __obj = js.Dynamic.literal(UV_UDP_REUSEADDR = UV_UDP_REUSEADDR, errno = errno, priority = priority, signals = signals)
+  
+    __obj.asInstanceOf[Anon_Errno]
+  }
+}
+

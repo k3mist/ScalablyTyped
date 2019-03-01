@@ -10,3 +10,12 @@ trait Rationale extends js.Object {
   var title: java.lang.String
 }
 
+object Rationale {
+  @scala.inline
+  def apply(message: java.lang.String, title: java.lang.String): Rationale = {
+    val __obj = js.Dynamic.literal(message = message, title = title)
+  
+    __obj.asInstanceOf[Rationale]
+  }
+}
+

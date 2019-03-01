@@ -11,3 +11,17 @@ trait ICollection extends IEventEmitter {
   def remove(`object`: js.Object): this.type
 }
 
+object ICollection {
+  @scala.inline
+  def apply(
+    add: js.Function1[js.Object, ICollection],
+    events: IEventManager,
+    getIterator: js.Function0[IIterator],
+    remove: js.Function1[js.Object, ICollection]
+  ): ICollection = {
+    val __obj = js.Dynamic.literal(add = add, events = events, getIterator = getIterator, remove = remove)
+  
+    __obj.asInstanceOf[ICollection]
+  }
+}
+

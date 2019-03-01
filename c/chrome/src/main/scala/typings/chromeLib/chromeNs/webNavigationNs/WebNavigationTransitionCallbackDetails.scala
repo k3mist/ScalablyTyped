@@ -18,3 +18,20 @@ trait WebNavigationTransitionCallbackDetails extends WebNavigationFramedCallback
   var transitionType: java.lang.String
 }
 
+object WebNavigationTransitionCallbackDetails {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    processId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    transitionQualifiers: js.Array[java.lang.String],
+    transitionType: java.lang.String,
+    url: java.lang.String
+  ): WebNavigationTransitionCallbackDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, processId = processId, tabId = tabId, timeStamp = timeStamp, transitionQualifiers = transitionQualifiers, transitionType = transitionType, url = url)
+  
+    __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
+  }
+}
+

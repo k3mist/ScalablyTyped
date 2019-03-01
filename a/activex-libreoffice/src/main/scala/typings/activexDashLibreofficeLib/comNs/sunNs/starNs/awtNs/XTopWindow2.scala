@@ -23,3 +23,24 @@ trait XTopWindow2 extends XTopWindow {
   var IsMinimized: scala.Boolean
 }
 
+object XTopWindow2 {
+  @scala.inline
+  def apply(
+    Display: scala.Double,
+    IsMaximized: scala.Boolean,
+    IsMinimized: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
+    setMenuBar: js.Function1[XMenuBar, scala.Unit],
+    toBack: js.Function0[scala.Unit],
+    toFront: js.Function0[scala.Unit]
+  ): XTopWindow2 = {
+    val __obj = js.Dynamic.literal(Display = Display, IsMaximized = IsMaximized, IsMinimized = IsMinimized, acquire = acquire, addTopWindowListener = addTopWindowListener, queryInterface = queryInterface, release = release, removeTopWindowListener = removeTopWindowListener, setMenuBar = setMenuBar, toBack = toBack, toFront = toFront)
+  
+    __obj.asInstanceOf[XTopWindow2]
+  }
+}
+

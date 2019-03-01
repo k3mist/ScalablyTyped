@@ -33,3 +33,20 @@ trait ActivityType
   var name: java.lang.String
 }
 
+object ActivityType {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    desription: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ActivityType = {
+    val __obj = js.Dynamic.literal(constructor = constructor, desription = desription, hasOwnProperty = hasOwnProperty, id = id, message = message, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ActivityType]
+  }
+}
+

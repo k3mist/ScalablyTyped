@@ -44,3 +44,22 @@ trait WorkItemDeleteReference extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemDeleteReference {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    deletedBy: java.lang.String,
+    deletedDate: java.lang.String,
+    id: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    project: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): WorkItemDeleteReference = {
+    val __obj = js.Dynamic.literal(code = code, deletedBy = deletedBy, deletedDate = deletedDate, id = id, message = message, name = name, project = project, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[WorkItemDeleteReference]
+  }
+}
+

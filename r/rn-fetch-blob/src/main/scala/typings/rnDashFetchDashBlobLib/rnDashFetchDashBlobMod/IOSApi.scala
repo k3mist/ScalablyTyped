@@ -19,3 +19,15 @@ trait IOSApi extends js.Object {
   def previewDocument(path: java.lang.String): scala.Unit
 }
 
+object IOSApi {
+  @scala.inline
+  def apply(
+    openDocument: js.Function1[java.lang.String, scala.Unit],
+    previewDocument: js.Function1[java.lang.String, scala.Unit]
+  ): IOSApi = {
+    val __obj = js.Dynamic.literal(openDocument = openDocument, previewDocument = previewDocument)
+  
+    __obj.asInstanceOf[IOSApi]
+  }
+}
+

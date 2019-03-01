@@ -20,3 +20,17 @@ trait Reference extends js.Object {
   def `type`(): java.lang.String
 }
 
+object Reference {
+  @scala.inline
+  def apply(
+    _referencedContext: opentracingLib.libSpanUnderscoreContextMod.default,
+    _type: java.lang.String,
+    referencedContext: js.Function0[opentracingLib.libSpanUnderscoreContextMod.default],
+    `type`: js.Function0[java.lang.String]
+  ): Reference = {
+    val __obj = js.Dynamic.literal(_referencedContext = _referencedContext, _type = _type, referencedContext = referencedContext, `type` = `type`)
+  
+    __obj.asInstanceOf[Reference]
+  }
+}
+

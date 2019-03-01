@@ -11,3 +11,21 @@ trait GridSaveEvent extends GridEvent {
   var values: js.UndefOr[js.Any] = js.undefined
 }
 
+object GridSaveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    container: kendoDashUiLib.JQuery = null,
+    model: kendoDashUiLib.kendoNs.dataNs.Model = null,
+    values: js.Any = null
+  ): GridSaveEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[GridSaveEvent]
+  }
+}
+

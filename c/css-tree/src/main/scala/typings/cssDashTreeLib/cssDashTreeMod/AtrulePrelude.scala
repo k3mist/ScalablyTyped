@@ -13,3 +13,16 @@ trait AtrulePrelude
   var type_AtrulePrelude: cssDashTreeLib.cssDashTreeLibStrings.AtrulePrelude
 }
 
+object AtrulePrelude {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.AtrulePrelude,
+    loc: CssLocation = null
+  ): AtrulePrelude = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[AtrulePrelude]
+  }
+}
+

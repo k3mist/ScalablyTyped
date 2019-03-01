@@ -14,3 +14,19 @@ trait PathTypes
   var to: PathType
 }
 
+object PathTypes {
+  @scala.inline
+  def apply(
+    entering: PathType,
+    exiting: PathType,
+    from: PathType,
+    retained: PathType,
+    to: PathType,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[PathType] = null
+  ): PathTypes = {
+    val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, to = to)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[PathTypes]
+  }
+}
+

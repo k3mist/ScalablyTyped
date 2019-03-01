@@ -69,3 +69,74 @@ trait Anon_AddColumn extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_AddColumn {
+  @scala.inline
+  def apply(
+    addColumn: java.lang.String,
+    addPanel: java.lang.String,
+    addRow: java.lang.String,
+    choices_Item: java.lang.String,
+    chooseFile: java.lang.String,
+    cleanCaption: java.lang.String,
+    clearCaption: java.lang.String,
+    completeText: java.lang.String,
+    completingSurvey: java.lang.String,
+    completingSurveyBefore: java.lang.String,
+    confirmDelete: java.lang.String,
+    emptySurvey: java.lang.String,
+    exceedMaxSize: java.lang.String,
+    invalidEmail: java.lang.String,
+    invalidExpression: java.lang.String,
+    keyDuplicationError: java.lang.String,
+    loadingFile: java.lang.String,
+    loadingSurvey: java.lang.String,
+    matrix_column: java.lang.String,
+    matrix_row: java.lang.String,
+    maxSelectError: java.lang.String,
+    minRowCountError: java.lang.String,
+    minSelectError: java.lang.String,
+    noneItemText: java.lang.String,
+    numericError: java.lang.String,
+    numericMax: java.lang.String,
+    numericMin: java.lang.String,
+    numericMinMax: java.lang.String,
+    optionsCaption: java.lang.String,
+    otherItemText: java.lang.String,
+    otherRequiredError: java.lang.String,
+    pageNextText: java.lang.String,
+    pagePrevText: java.lang.String,
+    progressText: java.lang.String,
+    removeFileCaption: java.lang.String,
+    removePanel: java.lang.String,
+    removeRow: java.lang.String,
+    requiredError: java.lang.String,
+    requiredErrorInPanel: java.lang.String,
+    requiredInAllRowsError: java.lang.String,
+    saveAgainButton: java.lang.String,
+    savingData: java.lang.String,
+    savingDataError: java.lang.String,
+    savingDataSuccess: java.lang.String,
+    selectAllItemText: java.lang.String,
+    startSurveyText: java.lang.String,
+    textMaxLength: java.lang.String,
+    textMinLength: java.lang.String,
+    textMinMaxLength: java.lang.String,
+    timerLimitAll: java.lang.String,
+    timerLimitPage: java.lang.String,
+    timerLimitSurvey: java.lang.String,
+    timerMin: java.lang.String,
+    timerSec: java.lang.String,
+    timerSpentAll: java.lang.String,
+    timerSpentPage: java.lang.String,
+    timerSpentSurvey: java.lang.String,
+    uploadingFile: java.lang.String,
+    urlGetChoicesError: java.lang.String,
+    urlRequestError: java.lang.String,
+    value: java.lang.String
+  ): Anon_AddColumn = {
+    val __obj = js.Dynamic.literal(addColumn = addColumn, addPanel = addPanel, addRow = addRow, choices_Item = choices_Item, chooseFile = chooseFile, cleanCaption = cleanCaption, clearCaption = clearCaption, completeText = completeText, completingSurvey = completingSurvey, completingSurveyBefore = completingSurveyBefore, confirmDelete = confirmDelete, emptySurvey = emptySurvey, exceedMaxSize = exceedMaxSize, invalidEmail = invalidEmail, invalidExpression = invalidExpression, keyDuplicationError = keyDuplicationError, loadingFile = loadingFile, loadingSurvey = loadingSurvey, matrix_column = matrix_column, matrix_row = matrix_row, maxSelectError = maxSelectError, minRowCountError = minRowCountError, minSelectError = minSelectError, noneItemText = noneItemText, numericError = numericError, numericMax = numericMax, numericMin = numericMin, numericMinMax = numericMinMax, optionsCaption = optionsCaption, otherItemText = otherItemText, otherRequiredError = otherRequiredError, pageNextText = pageNextText, pagePrevText = pagePrevText, progressText = progressText, removeFileCaption = removeFileCaption, removePanel = removePanel, removeRow = removeRow, requiredError = requiredError, requiredErrorInPanel = requiredErrorInPanel, requiredInAllRowsError = requiredInAllRowsError, saveAgainButton = saveAgainButton, savingData = savingData, savingDataError = savingDataError, savingDataSuccess = savingDataSuccess, selectAllItemText = selectAllItemText, startSurveyText = startSurveyText, textMaxLength = textMaxLength, textMinLength = textMinLength, textMinMaxLength = textMinMaxLength, timerLimitAll = timerLimitAll, timerLimitPage = timerLimitPage, timerLimitSurvey = timerLimitSurvey, timerMin = timerMin, timerSec = timerSec, timerSpentAll = timerSpentAll, timerSpentPage = timerSpentPage, timerSpentSurvey = timerSpentSurvey, uploadingFile = uploadingFile, urlGetChoicesError = urlGetChoicesError, urlRequestError = urlRequestError, value = value)
+  
+    __obj.asInstanceOf[Anon_AddColumn]
+  }
+}
+

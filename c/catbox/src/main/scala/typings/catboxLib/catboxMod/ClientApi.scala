@@ -33,3 +33,20 @@ trait ClientApi[T] extends js.Object {
   def validateSegmentName(segment: java.lang.String): scala.Null | stdLib.Error
 }
 
+object ClientApi {
+  @scala.inline
+  def apply[T](
+    drop: js.Function1[CacheKey, js.Promise[scala.Unit]],
+    get: js.Function1[CacheKey, js.Promise[scala.Null | CachedObject[T]]],
+    isReady: js.Function0[scala.Boolean],
+    set: js.Function3[CacheKey, T, scala.Double, js.Promise[scala.Unit]],
+    start: js.Function0[js.Promise[scala.Unit]],
+    stop: js.Function0[scala.Unit],
+    validateSegmentName: js.Function1[java.lang.String, scala.Null | stdLib.Error]
+  ): ClientApi[T] = {
+    val __obj = js.Dynamic.literal(drop = drop, get = get, isReady = isReady, set = set, start = start, stop = stop, validateSegmentName = validateSegmentName)
+  
+    __obj.asInstanceOf[ClientApi[T]]
+  }
+}
+

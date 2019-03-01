@@ -29,3 +29,21 @@ trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
   var sizeScheme: js.UndefOr[SizeScheme] = js.undefined
 }
 
+object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    axis: js.UndefOr[scala.Boolean] = js.undefined,
+    legendOptions: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions = null,
+    sizeScheme: SizeScheme = null
+  ): univariateColorSizeCreateVisualVariablesParamsSizeOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
+    __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptions]
+  }
+}
+

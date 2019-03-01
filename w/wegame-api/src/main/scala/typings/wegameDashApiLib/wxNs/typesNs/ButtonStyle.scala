@@ -25,3 +25,24 @@ trait ButtonStyle extends js.Object {
   var width: scala.Double
 }
 
+object ButtonStyle {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    borderColor: java.lang.String,
+    borderRadius: scala.Double,
+    borderWidth: scala.Double,
+    fontSize: scala.Double,
+    height: scala.Double,
+    left: scala.Double,
+    lineHeight: scala.Double,
+    textAlign: wegameDashApiLib.wegameDashApiLibStrings.left | wegameDashApiLib.wegameDashApiLibStrings.center | wegameDashApiLib.wegameDashApiLibStrings.right,
+    top: scala.Double,
+    width: scala.Double
+  ): ButtonStyle = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, fontSize = fontSize, height = height, left = left, lineHeight = lineHeight, textAlign = textAlign.asInstanceOf[js.Any], top = top, width = width)
+  
+    __obj.asInstanceOf[ButtonStyle]
+  }
+}
+

@@ -19,3 +19,24 @@ trait AdImpressionParam extends js.Object {
   var wrapper: js.Array[_]
 }
 
+object AdImpressionParam {
+  @scala.inline
+  def apply(
+    adposition: jwplayerLib.jwplayerLibStrings.pre | jwplayerLib.jwplayerLibStrings.mid | jwplayerLib.jwplayerLibStrings.post,
+    adsystem: java.lang.String,
+    adtitle: java.lang.String,
+    clickThroughUrl: java.lang.String,
+    client: jwplayerLib.jwplayerLibStrings.vast | jwplayerLib.jwplayerLibStrings.googima,
+    creativetype: java.lang.String,
+    linear: java.lang.String,
+    mediafile: js.Any,
+    tag: java.lang.String,
+    vastversion: scala.Double,
+    wrapper: js.Array[_]
+  ): AdImpressionParam = {
+    val __obj = js.Dynamic.literal(adposition = adposition.asInstanceOf[js.Any], adsystem = adsystem, adtitle = adtitle, clickThroughUrl = clickThroughUrl, client = client.asInstanceOf[js.Any], creativetype = creativetype, linear = linear, mediafile = mediafile, tag = tag, vastversion = vastversion, wrapper = wrapper)
+  
+    __obj.asInstanceOf[AdImpressionParam]
+  }
+}
+

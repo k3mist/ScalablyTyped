@@ -26,3 +26,12 @@ trait ConnectionProperties extends js.Object {
   var user: java.lang.String
 }
 
+object ConnectionProperties {
+  @scala.inline
+  def apply(password: java.lang.String, user: java.lang.String): ConnectionProperties = {
+    val __obj = js.Dynamic.literal(password = password, user = user)
+  
+    __obj.asInstanceOf[ConnectionProperties]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Line extends js.Object {
   var `type`: java.lang.String
 }
 
+object Line {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    newNumber: scala.Double,
+    oldNumber: scala.Double,
+    `type`: java.lang.String
+  ): Line = {
+    val __obj = js.Dynamic.literal(content = content, newNumber = newNumber, oldNumber = oldNumber, `type` = `type`)
+  
+    __obj.asInstanceOf[Line]
+  }
+}
+

@@ -26,3 +26,17 @@ trait ASPxClientMenuItemClickEventArgs extends ASPxClientProcessingModeEventArgs
   var item: ASPxClientMenuItem
 }
 
+object ASPxClientMenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    item: ASPxClientMenuItem,
+    processOnServer: scala.Boolean
+  ): ASPxClientMenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientMenuItemClickEventArgs]
+  }
+}
+

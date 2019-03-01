@@ -19,3 +19,19 @@ trait ISimpleText extends js.Object {
   def substr(start: scala.Double, length: scala.Double, intern: scala.Boolean): java.lang.String
 }
 
+object ISimpleText {
+  @scala.inline
+  def apply(
+    charCodeAt: js.Function1[scala.Double, scala.Double],
+    copyTo: js.Function4[scala.Double, js.Array[scala.Double], scala.Double, scala.Double, scala.Unit],
+    length: js.Function0[scala.Double],
+    lineMap: js.Function0[LineMap],
+    subText: js.Function1[TextSpan, ISimpleText],
+    substr: js.Function3[scala.Double, scala.Double, scala.Boolean, java.lang.String]
+  ): ISimpleText = {
+    val __obj = js.Dynamic.literal(charCodeAt = charCodeAt, copyTo = copyTo, length = length, lineMap = lineMap, subText = subText, substr = substr)
+  
+    __obj.asInstanceOf[ISimpleText]
+  }
+}
+

@@ -12,3 +12,12 @@ trait GetReplicationGroupArgs extends js.Object {
   val replicationGroupId: java.lang.String
 }
 
+object GetReplicationGroupArgs {
+  @scala.inline
+  def apply(replicationGroupId: java.lang.String): GetReplicationGroupArgs = {
+    val __obj = js.Dynamic.literal(replicationGroupId = replicationGroupId)
+  
+    __obj.asInstanceOf[GetReplicationGroupArgs]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Input extends js.Object {
   var witness: scala.Boolean
 }
 
+object Input {
+  @scala.inline
+  def apply(
+    prevOutScript: nodeLib.Buffer,
+    prevOutType: java.lang.String,
+    pubKeys: js.Array[nodeLib.Buffer],
+    signScript: nodeLib.Buffer,
+    signType: java.lang.String,
+    signatures: js.Array[nodeLib.Buffer],
+    witness: scala.Boolean
+  ): Input = {
+    val __obj = js.Dynamic.literal(prevOutScript = prevOutScript, prevOutType = prevOutType, pubKeys = pubKeys, signScript = signScript, signType = signType, signatures = signatures, witness = witness)
+  
+    __obj.asInstanceOf[Input]
+  }
+}
+

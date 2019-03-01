@@ -70,3 +70,30 @@ trait GetNetworkInterfaceResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetNetworkInterfaceResult {
+  @scala.inline
+  def apply(
+    associations: js.Array[atPulumiAwsLib.Anon_AllocationIdAssociationId],
+    attachments: js.Array[atPulumiAwsLib.Anon_AttachmentId],
+    availabilityZone: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    interfaceType: java.lang.String,
+    ipv6Addresses: js.Array[java.lang.String],
+    macAddress: java.lang.String,
+    ownerId: java.lang.String,
+    privateDnsName: java.lang.String,
+    privateIp: java.lang.String,
+    privateIps: js.Array[java.lang.String],
+    requesterId: java.lang.String,
+    securityGroups: js.Array[java.lang.String],
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetNetworkInterfaceResult = {
+    val __obj = js.Dynamic.literal(associations = associations, attachments = attachments, availabilityZone = availabilityZone, description = description, id = id, interfaceType = interfaceType, ipv6Addresses = ipv6Addresses, macAddress = macAddress, ownerId = ownerId, privateDnsName = privateDnsName, privateIp = privateIp, privateIps = privateIps, requesterId = requesterId, securityGroups = securityGroups, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetNetworkInterfaceResult]
+  }
+}
+

@@ -11,3 +11,12 @@ trait RawExpression extends _SqlExpression {
   def as(alias: java.lang.String): RawExpression
 }
 
+object RawExpression {
+  @scala.inline
+  def apply(as: js.Function1[java.lang.String, RawExpression], db: Db, value: java.lang.String): RawExpression = {
+    val __obj = js.Dynamic.literal(as = as, db = db, value = value)
+  
+    __obj.asInstanceOf[RawExpression]
+  }
+}
+

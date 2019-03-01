@@ -11,3 +11,12 @@ trait Anon_Arrows extends js.Object {
   var draggable: scala.Boolean
 }
 
+object Anon_Arrows {
+  @scala.inline
+  def apply(arrows: scala.Boolean, dots: scala.Boolean, draggable: scala.Boolean): Anon_Arrows = {
+    val __obj = js.Dynamic.literal(arrows = arrows, dots = dots, draggable = draggable)
+  
+    __obj.asInstanceOf[Anon_Arrows]
+  }
+}
+

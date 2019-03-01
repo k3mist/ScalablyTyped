@@ -24,3 +24,53 @@ trait FoldableWithIndexComposition[F, FI, G, GI]
   ): B
 }
 
+object FoldableWithIndexComposition {
+  @scala.inline
+  def apply[F, FI, G, GI](
+    foldMap: js.Function1[
+      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
+      js.Function2[
+        /* fa */ fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, _]], 
+        /* f */ js.Function1[/* a */ js.Any, js.Any], 
+        js.Any
+      ]
+    ],
+    foldMapWithIndex: js.Function1[
+      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
+      js.Function2[
+        /* fga */ fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, _]], 
+        /* f */ js.Function2[/* i */ js.Tuple2[FI, GI], /* a */ js.Any, js.Any], 
+        js.Any
+      ]
+    ],
+    foldr: js.Function3[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ],
+    foldrWithIndex: js.Function3[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Any, 
+      js.Function3[/* i */ js.Tuple2[FI, GI], js.Any, js.Any, js.Any], 
+      js.Any
+    ],
+    reduce: js.Function3[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ],
+    reduceWithIndex: js.Function3[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Any, 
+      js.Function3[/* i */ js.Tuple2[FI, GI], js.Any, js.Any, js.Any], 
+      js.Any
+    ]
+  ): FoldableWithIndexComposition[F, FI, G, GI] = {
+    val __obj = js.Dynamic.literal(foldMap = foldMap, foldMapWithIndex = foldMapWithIndex, foldr = foldr, foldrWithIndex = foldrWithIndex, reduce = reduce, reduceWithIndex = reduceWithIndex)
+  
+    __obj.asInstanceOf[FoldableWithIndexComposition[F, FI, G, GI]]
+  }
+}
+

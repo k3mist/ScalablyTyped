@@ -19,3 +19,12 @@ trait SearchFirstResult extends js.Object {
   var path: CollectionArgument
 }
 
+object SearchFirstResult {
+  @scala.inline
+  def apply(found: NodeCollection, path: CollectionArgument): SearchFirstResult = {
+    val __obj = js.Dynamic.literal(found = found, path = path.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SearchFirstResult]
+  }
+}
+

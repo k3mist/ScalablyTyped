@@ -9,3 +9,17 @@ trait ISearchPaneSuggestionsRequestedEventArgs extends ISearchPaneQueryChangedEv
   var request: SearchPaneSuggestionsRequest
 }
 
+object ISearchPaneSuggestionsRequestedEventArgs {
+  @scala.inline
+  def apply(
+    language: java.lang.String,
+    linguisticDetails: SearchPaneQueryLinguisticDetails,
+    queryText: java.lang.String,
+    request: SearchPaneSuggestionsRequest
+  ): ISearchPaneSuggestionsRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(language = language, linguisticDetails = linguisticDetails, queryText = queryText, request = request)
+  
+    __obj.asInstanceOf[ISearchPaneSuggestionsRequestedEventArgs]
+  }
+}
+

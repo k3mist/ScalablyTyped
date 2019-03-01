@@ -28,3 +28,18 @@ trait _Impl extends js.Object {
   var searchButton: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    category: java.lang.String,
+    prompt: java.lang.String,
+    result: java.lang.String,
+    results: java.lang.String,
+    searchButton: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(category = category, prompt = prompt, result = result, results = results, searchButton = searchButton)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

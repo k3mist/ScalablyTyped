@@ -17,3 +17,22 @@ trait ICalendarIdentifiersStatics extends js.Object {
   var umAlQura: java.lang.String
 }
 
+object ICalendarIdentifiersStatics {
+  @scala.inline
+  def apply(
+    gregorian: java.lang.String,
+    hebrew: java.lang.String,
+    hijri: java.lang.String,
+    japanese: java.lang.String,
+    julian: java.lang.String,
+    korean: java.lang.String,
+    taiwan: java.lang.String,
+    thai: java.lang.String,
+    umAlQura: java.lang.String
+  ): ICalendarIdentifiersStatics = {
+    val __obj = js.Dynamic.literal(gregorian = gregorian, hebrew = hebrew, hijri = hijri, japanese = japanese, julian = julian, korean = korean, taiwan = taiwan, thai = thai, umAlQura = umAlQura)
+  
+    __obj.asInstanceOf[ICalendarIdentifiersStatics]
+  }
+}
+

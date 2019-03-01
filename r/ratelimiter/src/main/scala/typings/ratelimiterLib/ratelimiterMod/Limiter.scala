@@ -10,3 +10,15 @@ trait Limiter extends js.Object {
   def inspect(): java.lang.String
 }
 
+object Limiter {
+  @scala.inline
+  def apply(
+    get: js.Function1[js.Function2[/* err */ js.Any, /* info */ LimiterInfo, scala.Unit], scala.Unit],
+    inspect: js.Function0[java.lang.String]
+  ): Limiter = {
+    val __obj = js.Dynamic.literal(get = get, inspect = inspect)
+  
+    __obj.asInstanceOf[Limiter]
+  }
+}
+

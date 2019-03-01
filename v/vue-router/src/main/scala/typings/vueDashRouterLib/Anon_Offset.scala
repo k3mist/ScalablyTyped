@@ -11,3 +11,12 @@ trait Anon_Offset
   var selector: java.lang.String
 }
 
+object Anon_Offset {
+  @scala.inline
+  def apply(selector: java.lang.String, offset: vueDashRouterLib.typesRouterMod.Position = null): Anon_Offset = {
+    val __obj = js.Dynamic.literal(selector = selector)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    __obj.asInstanceOf[Anon_Offset]
+  }
+}
+

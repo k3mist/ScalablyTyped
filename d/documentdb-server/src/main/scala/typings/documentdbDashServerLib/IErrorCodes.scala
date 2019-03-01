@@ -27,3 +27,21 @@ trait IErrorCodes extends js.Object {
   var RetryWith: scala.Double
 }
 
+object IErrorCodes {
+  @scala.inline
+  def apply(
+    BadRequest: scala.Double,
+    Conflict: scala.Double,
+    Forbidden: scala.Double,
+    InternalServerError: scala.Double,
+    NotFound: scala.Double,
+    PreconditionFailed: scala.Double,
+    RequestEntityTooLarge: scala.Double,
+    RetryWith: scala.Double
+  ): IErrorCodes = {
+    val __obj = js.Dynamic.literal(BadRequest = BadRequest, Conflict = Conflict, Forbidden = Forbidden, InternalServerError = InternalServerError, NotFound = NotFound, PreconditionFailed = PreconditionFailed, RequestEntityTooLarge = RequestEntityTooLarge, RetryWith = RetryWith)
+  
+    __obj.asInstanceOf[IErrorCodes]
+  }
+}
+

@@ -74,3 +74,32 @@ trait ChangedEvent extends js.Object {
   def undo(): scala.Unit
 }
 
+object ChangedEvent {
+  @scala.inline
+  def apply(
+    canRedo: js.Function0[scala.Boolean],
+    canUndo: js.Function0[scala.Boolean],
+    change: EnumValue,
+    clear: js.Function0[scala.Unit],
+    copy: js.Function0[ChangedEvent],
+    diagram: Diagram,
+    getParam: js.Function1[scala.Boolean, js.Any],
+    getValue: js.Function1[scala.Boolean, js.Any],
+    isTransactionFinished: scala.Boolean,
+    model: Model,
+    modelChange: java.lang.String,
+    newParam: js.Any,
+    newValue: js.Any,
+    `object`: js.Any,
+    oldParam: js.Any,
+    oldValue: js.Any,
+    propertyName: PropertyAccessor,
+    redo: js.Function0[scala.Unit],
+    undo: js.Function0[scala.Unit]
+  ): ChangedEvent = {
+    val __obj = js.Dynamic.literal(canRedo = canRedo, canUndo = canUndo, change = change, clear = clear, copy = copy, diagram = diagram, getParam = getParam, getValue = getValue, isTransactionFinished = isTransactionFinished, model = model, modelChange = modelChange, newParam = newParam, newValue = newValue, `object` = `object`, oldParam = oldParam, oldValue = oldValue, propertyName = propertyName.asInstanceOf[js.Any], redo = redo, undo = undo)
+  
+    __obj.asInstanceOf[ChangedEvent]
+  }
+}
+

@@ -16,3 +16,12 @@ trait GetSecretsResult extends js.Object {
   val plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object GetSecretsResult {
+  @scala.inline
+  def apply(id: java.lang.String, plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String]): GetSecretsResult = {
+    val __obj = js.Dynamic.literal(id = id, plaintext = plaintext)
+  
+    __obj.asInstanceOf[GetSecretsResult]
+  }
+}
+

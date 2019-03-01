@@ -128,3 +128,56 @@ trait ListItem
   def setSelectedSubtitleColor(selectedSubtitleColor: java.lang.String): scala.Unit
 }
 
+object ListItem {
+  @scala.inline
+  def apply(
+    accessoryType: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    backgroundColor: java.lang.String,
+    backgroundGradient: titaniumLib.Gradient,
+    backgroundImage: java.lang.String,
+    bubbleParent: scala.Boolean,
+    canEdit: scala.Boolean,
+    canInsert: scala.Boolean,
+    canMove: scala.Boolean,
+    color: java.lang.String,
+    editActions: js.Array[titaniumLib.RowActionType],
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    font: titaniumLib.Font,
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getEditActions: js.Function0[js.Array[titaniumLib.RowActionType]],
+    getSelectedColor: js.Function0[java.lang.String],
+    getSelectedSubtitleColor: js.Function0[java.lang.String],
+    height: scala.Double | java.lang.String,
+    image: java.lang.String,
+    itemId: java.lang.String,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    searchableText: java.lang.String,
+    selectedBackgroundColor: java.lang.String,
+    selectedBackgroundGradient: titaniumLib.Gradient,
+    selectedBackgroundImage: java.lang.String,
+    selectedColor: java.lang.String,
+    selectedSubtitleColor: java.lang.String,
+    selectionStyle: scala.Double,
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setEditActions: js.Function1[js.Array[titaniumLib.RowActionType], scala.Unit],
+    setSelectedColor: js.Function1[java.lang.String, scala.Unit],
+    setSelectedSubtitleColor: js.Function1[java.lang.String, scala.Unit],
+    subtitle: java.lang.String,
+    subtitleColor: java.lang.String,
+    title: java.lang.String,
+    getLifecycleContainer: js.Function0[Window | TabGroup] = null,
+    lifecycleContainer: Window | TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, scala.Unit]) = null
+  ): ListItem = {
+    val __obj = js.Dynamic.literal(accessoryType = accessoryType, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, backgroundColor = backgroundColor, backgroundGradient = backgroundGradient, backgroundImage = backgroundImage, bubbleParent = bubbleParent, canEdit = canEdit, canInsert = canInsert, canMove = canMove, color = color, editActions = editActions, fireEvent = fireEvent, font = font, getApiName = getApiName, getBubbleParent = getBubbleParent, getEditActions = getEditActions, getSelectedColor = getSelectedColor, getSelectedSubtitleColor = getSelectedSubtitleColor, height = height.asInstanceOf[js.Any], image = image, itemId = itemId, removeEventListener = removeEventListener, searchableText = searchableText, selectedBackgroundColor = selectedBackgroundColor, selectedBackgroundGradient = selectedBackgroundGradient, selectedBackgroundImage = selectedBackgroundImage, selectedColor = selectedColor, selectedSubtitleColor = selectedSubtitleColor, selectionStyle = selectionStyle, setBubbleParent = setBubbleParent, setEditActions = setEditActions, setSelectedColor = setSelectedColor, setSelectedSubtitleColor = setSelectedSubtitleColor, subtitle = subtitle, subtitleColor = subtitleColor, title = title)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[ListItem]
+  }
+}
+

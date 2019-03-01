@@ -13,3 +13,18 @@ trait TrackProps extends js.Object {
   var srcLang: java.lang.String
 }
 
+object TrackProps {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    label: java.lang.String,
+    src: java.lang.String,
+    srcLang: java.lang.String,
+    default: js.UndefOr[scala.Boolean] = js.undefined
+  ): TrackProps = {
+    val __obj = js.Dynamic.literal(kind = kind, label = label, src = src, srcLang = srcLang)
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[TrackProps]
+  }
+}
+

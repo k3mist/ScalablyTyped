@@ -18,3 +18,16 @@ trait InternetGatewayArgs extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object InternetGatewayArgs {
+  @scala.inline
+  def apply(
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): InternetGatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InternetGatewayArgs]
+  }
+}
+

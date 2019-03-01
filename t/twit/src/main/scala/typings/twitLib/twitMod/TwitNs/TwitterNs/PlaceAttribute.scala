@@ -17,3 +17,22 @@ trait PlaceAttribute extends js.Object {
   var url: java.lang.String
 }
 
+object PlaceAttribute {
+  @scala.inline
+  def apply(
+    `app:id`: java.lang.String,
+    iso3: java.lang.String,
+    locality: java.lang.String,
+    phone: java.lang.String,
+    postal_code: java.lang.String,
+    region: java.lang.String,
+    street_address: java.lang.String,
+    twitter: java.lang.String,
+    url: java.lang.String
+  ): PlaceAttribute = {
+    val __obj = js.Dynamic.literal(iso3 = iso3, locality = locality, phone = phone, postal_code = postal_code, region = region, street_address = street_address, twitter = twitter, url = url)
+    __obj.updateDynamic("app:id")(`app:id`)
+    __obj.asInstanceOf[PlaceAttribute]
+  }
+}
+

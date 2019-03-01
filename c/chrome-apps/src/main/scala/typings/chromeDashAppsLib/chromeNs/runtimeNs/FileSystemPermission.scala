@@ -15,3 +15,16 @@ trait FileSystemPermission extends ChromeOSOnlyPermissions {
   ]
 }
 
+object FileSystemPermission {
+  @scala.inline
+  def apply(
+    fileSystem: js.Array[
+      chromeDashAppsLib.chromeDashAppsLibStrings.write | chromeDashAppsLib.chromeDashAppsLibStrings.retainEntries | chromeDashAppsLib.chromeDashAppsLibStrings.directory | chromeDashAppsLib.chromeDashAppsLibStrings.requestFileSystem
+    ]
+  ): FileSystemPermission = {
+    val __obj = js.Dynamic.literal(fileSystem = fileSystem)
+  
+    __obj.asInstanceOf[FileSystemPermission]
+  }
+}
+

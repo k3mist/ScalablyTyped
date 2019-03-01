@@ -17,3 +17,22 @@ trait Anon_AlreadyUpToDate extends js.Object {
   var updated: scala.Double
 }
 
+object Anon_AlreadyUpToDate {
+  @scala.inline
+  def apply(
+    alreadyUpToDate: scala.Double,
+    inlineUpdateReceived: scala.Double,
+    installed: scala.Double,
+    preinstalled: scala.Double,
+    receivedInstallOrUpdate: scala.Double,
+    receivedUninstall: scala.Double,
+    requestedUpdate: scala.Double,
+    uninstalled: scala.Double,
+    updated: scala.Double
+  ): Anon_AlreadyUpToDate = {
+    val __obj = js.Dynamic.literal(alreadyUpToDate = alreadyUpToDate, inlineUpdateReceived = inlineUpdateReceived, installed = installed, preinstalled = preinstalled, receivedInstallOrUpdate = receivedInstallOrUpdate, receivedUninstall = receivedUninstall, requestedUpdate = requestedUpdate, uninstalled = uninstalled, updated = updated)
+  
+    __obj.asInstanceOf[Anon_AlreadyUpToDate]
+  }
+}
+

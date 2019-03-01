@@ -20,3 +20,12 @@ trait ILoginStatus extends js.Object {
   var status: java.lang.String
 }
 
+object ILoginStatus {
+  @scala.inline
+  def apply(session: ISession, status: java.lang.String): ILoginStatus = {
+    val __obj = js.Dynamic.literal(session = session, status = status)
+  
+    __obj.asInstanceOf[ILoginStatus]
+  }
+}
+

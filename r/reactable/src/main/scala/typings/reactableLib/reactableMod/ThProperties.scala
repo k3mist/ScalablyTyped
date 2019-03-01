@@ -10,3 +10,12 @@ trait ThProperties extends js.Object {
   var column: java.lang.String
 }
 
+object ThProperties {
+  @scala.inline
+  def apply(column: java.lang.String, className: java.lang.String = null): ThProperties = {
+    val __obj = js.Dynamic.literal(column = column)
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[ThProperties]
+  }
+}
+

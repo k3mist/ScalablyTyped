@@ -11,3 +11,16 @@ trait SummonerSpellListDto extends js.Object {
   var version: java.lang.String
 }
 
+object SummonerSpellListDto {
+  @scala.inline
+  def apply(
+    data: js.Array[org.scalablytyped.runtime.StringDictionary[SummonerSpellDto]],
+    `type`: java.lang.String,
+    version: java.lang.String
+  ): SummonerSpellListDto = {
+    val __obj = js.Dynamic.literal(data = data, `type` = `type`, version = version)
+  
+    __obj.asInstanceOf[SummonerSpellListDto]
+  }
+}
+

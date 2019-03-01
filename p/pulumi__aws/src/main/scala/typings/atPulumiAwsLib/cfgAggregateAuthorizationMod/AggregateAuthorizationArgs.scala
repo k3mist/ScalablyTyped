@@ -16,3 +16,15 @@ trait AggregateAuthorizationArgs extends js.Object {
   val region: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object AggregateAuthorizationArgs {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    region: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): AggregateAuthorizationArgs = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AggregateAuthorizationArgs]
+  }
+}
+

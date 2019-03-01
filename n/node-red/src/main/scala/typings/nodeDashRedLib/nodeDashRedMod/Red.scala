@@ -22,3 +22,25 @@ trait Red extends js.Object {
   def version(): java.lang.String
 }
 
+object Red {
+  @scala.inline
+  def apply(
+    auth: js.Any,
+    comms: js.Any,
+    events: js.Any,
+    httpAdmin: js.Any,
+    httpNode: js.Any,
+    library: js.Any,
+    log: js.Any,
+    nodes: Nodes,
+    server: js.Any,
+    settings: js.Any,
+    util: js.Any,
+    version: js.Function0[java.lang.String]
+  ): Red = {
+    val __obj = js.Dynamic.literal(auth = auth, comms = comms, events = events, httpAdmin = httpAdmin, httpNode = httpNode, library = library, log = log, nodes = nodes, server = server, settings = settings, util = util, version = version)
+  
+    __obj.asInstanceOf[Red]
+  }
+}
+

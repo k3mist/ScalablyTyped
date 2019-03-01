@@ -12,3 +12,12 @@ trait ExtensionDataCollectionQuery extends js.Object {
   var collections: js.Array[ExtensionDataCollection]
 }
 
+object ExtensionDataCollectionQuery {
+  @scala.inline
+  def apply(collections: js.Array[ExtensionDataCollection]): ExtensionDataCollectionQuery = {
+    val __obj = js.Dynamic.literal(collections = collections)
+  
+    __obj.asInstanceOf[ExtensionDataCollectionQuery]
+  }
+}
+

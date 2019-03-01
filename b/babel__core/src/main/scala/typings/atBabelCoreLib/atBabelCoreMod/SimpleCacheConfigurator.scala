@@ -36,3 +36,17 @@ trait SimpleCacheConfigurator extends js.Object {
   def using[T /* <: SimpleCacheKey */](callback: SimpleCacheCallback[T]): T
 }
 
+object SimpleCacheConfigurator {
+  @scala.inline
+  def apply(
+    forever: js.Function0[scala.Unit],
+    invalidate: js.Function1[SimpleCacheCallback[js.Any], js.Any],
+    never: js.Function0[scala.Unit],
+    using: js.Function1[SimpleCacheCallback[js.Any], js.Any]
+  ): SimpleCacheConfigurator = {
+    val __obj = js.Dynamic.literal(forever = forever, invalidate = invalidate, never = never, using = using)
+  
+    __obj.asInstanceOf[SimpleCacheConfigurator]
+  }
+}
+

@@ -10,3 +10,12 @@ trait StringDeleteOp extends Op {
   var sd: java.lang.String
 }
 
+object StringDeleteOp {
+  @scala.inline
+  def apply(p: Path, sd: java.lang.String): StringDeleteOp = {
+    val __obj = js.Dynamic.literal(p = p, sd = sd)
+  
+    __obj.asInstanceOf[StringDeleteOp]
+  }
+}
+

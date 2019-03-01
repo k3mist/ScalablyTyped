@@ -19,3 +19,24 @@ trait Anon_All extends js.Object {
   var validateShelveset: scala.Double
 }
 
+object Anon_All {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    batchedCI: scala.Double,
+    checkInShelveset: scala.Double,
+    individualCI: scala.Double,
+    manual: scala.Double,
+    none: scala.Double,
+    pullRequest: scala.Double,
+    schedule: scala.Double,
+    triggered: scala.Double,
+    userCreated: scala.Double,
+    validateShelveset: scala.Double
+  ): Anon_All = {
+    val __obj = js.Dynamic.literal(all = all, batchedCI = batchedCI, checkInShelveset = checkInShelveset, individualCI = individualCI, manual = manual, none = none, pullRequest = pullRequest, schedule = schedule, triggered = triggered, userCreated = userCreated, validateShelveset = validateShelveset)
+  
+    __obj.asInstanceOf[Anon_All]
+  }
+}
+

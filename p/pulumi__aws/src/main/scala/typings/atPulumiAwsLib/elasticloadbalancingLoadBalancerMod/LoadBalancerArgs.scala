@@ -94,3 +94,47 @@ trait LoadBalancerArgs extends js.Object {
   ] = js.undefined
 }
 
+object LoadBalancerArgs {
+  @scala.inline
+  def apply(
+    listeners: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InstancePortInstanceProtocolLbPort]
+      ]
+    ],
+    accessLogs: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketBucketPrefixEnabledInterval] = null,
+    availabilityZones: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    connectionDraining: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    connectionDrainingTimeout: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    crossZoneLoadBalancing: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    healthCheck: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTargetTimeout] = null,
+    idleTimeout: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    instances: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    internal: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    sourceSecurityGroup: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subnets: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): LoadBalancerArgs = {
+    val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
+    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
+    if (connectionDrainingTimeout != null) __obj.updateDynamic("connectionDrainingTimeout")(connectionDrainingTimeout.asInstanceOf[js.Any])
+    if (crossZoneLoadBalancing != null) __obj.updateDynamic("crossZoneLoadBalancing")(crossZoneLoadBalancing.asInstanceOf[js.Any])
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceSecurityGroup != null) __obj.updateDynamic("sourceSecurityGroup")(sourceSecurityGroup.asInstanceOf[js.Any])
+    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerArgs]
+  }
+}
+

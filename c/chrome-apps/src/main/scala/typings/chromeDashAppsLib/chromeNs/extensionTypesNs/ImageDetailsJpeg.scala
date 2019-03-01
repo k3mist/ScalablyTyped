@@ -12,3 +12,12 @@ trait ImageDetailsJpeg extends ImageDetails {
   var format: js.UndefOr[chromeDashAppsLib.chromeDashAppsLibStrings.png] = js.undefined
 }
 
+object ImageDetailsJpeg {
+  @scala.inline
+  def apply(format: chromeDashAppsLib.chromeDashAppsLibStrings.png = null): ImageDetailsJpeg = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[ImageDetailsJpeg]
+  }
+}
+

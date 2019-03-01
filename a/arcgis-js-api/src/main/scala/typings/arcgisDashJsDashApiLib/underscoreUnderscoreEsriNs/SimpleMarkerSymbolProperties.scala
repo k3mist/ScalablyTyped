@@ -48,3 +48,28 @@ trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SimpleMarkerSymbolProperties {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    outline: SimpleLineSymbolProperties = null,
+    path: java.lang.String = null,
+    size: scala.Double | java.lang.String = null,
+    style: java.lang.String = null,
+    xoffset: scala.Double | java.lang.String = null,
+    yoffset: scala.Double | java.lang.String = null
+  ): SimpleMarkerSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
+    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimpleMarkerSymbolProperties]
+  }
+}
+

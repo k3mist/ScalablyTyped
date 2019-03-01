@@ -54,3 +54,26 @@ trait XInterfaceTypeDescription extends XTypeDescription {
   def getUik(): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik
 }
 
+object XInterfaceTypeDescription {
+  @scala.inline
+  def apply(
+    BaseType: XTypeDescription,
+    Members: activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription],
+    Name: java.lang.String,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    acquire: js.Function0[scala.Unit],
+    getBaseType: js.Function0[XTypeDescription],
+    getMembers: js.Function0[activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceTypeDescription = {
+    val __obj = js.Dynamic.literal(BaseType = BaseType, Members = Members, Name = Name, TypeClass = TypeClass, Uik = Uik, acquire = acquire, getBaseType = getBaseType, getMembers = getMembers, getName = getName, getTypeClass = getTypeClass, getUik = getUik, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInterfaceTypeDescription]
+  }
+}
+

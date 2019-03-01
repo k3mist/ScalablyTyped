@@ -32,3 +32,19 @@ trait MDCTextFieldIconAdapter extends js.Object {
   def setAttr(attr: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object MDCTextFieldIconAdapter {
+  @scala.inline
+  def apply(
+    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    getAttr: js.Function1[java.lang.String, java.lang.String],
+    notifyIconAction: js.Function0[scala.Unit],
+    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    removeAttr: js.Function1[java.lang.String, scala.Unit],
+    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): MDCTextFieldIconAdapter = {
+    val __obj = js.Dynamic.literal(deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, notifyIconAction = notifyIconAction, registerInteractionHandler = registerInteractionHandler, removeAttr = removeAttr, setAttr = setAttr)
+  
+    __obj.asInstanceOf[MDCTextFieldIconAdapter]
+  }
+}
+

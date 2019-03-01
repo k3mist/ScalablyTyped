@@ -18,3 +18,23 @@ trait Matchers extends js.Object {
   def toMatch(regularExpression: js.Any): scala.Unit
 }
 
+object Matchers {
+  @scala.inline
+  def apply(
+    toBe: js.Function1[js.Any, scala.Unit],
+    toBeDefined: js.Function0[scala.Unit],
+    toBeFalsy: js.Function0[scala.Unit],
+    toBeGreaterThan: js.Function1[js.Any, scala.Unit],
+    toBeLessThan: js.Function1[js.Any, scala.Unit],
+    toBeNull: js.Function0[scala.Unit],
+    toBeTruthy: js.Function0[scala.Unit],
+    toContain: js.Function1[js.Any, scala.Unit],
+    toEqual: js.Function1[js.Any, scala.Unit],
+    toMatch: js.Function1[js.Any, scala.Unit]
+  ): Matchers = {
+    val __obj = js.Dynamic.literal(toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toContain = toContain, toEqual = toEqual, toMatch = toMatch)
+  
+    __obj.asInstanceOf[Matchers]
+  }
+}
+

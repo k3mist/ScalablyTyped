@@ -14,3 +14,19 @@ trait NxMeasure extends js.Object {
   var qSortBy: SortCriteria
 }
 
+object NxMeasure {
+  @scala.inline
+  def apply(
+    qAttributeDimensions: js.Array[NxAttrDimDef],
+    qAttributeExpressions: js.Array[NxAttrExprDef],
+    qCalcCond: ValueExpr,
+    qDef: NxInlineMeasureDef,
+    qLibraryId: java.lang.String,
+    qSortBy: SortCriteria
+  ): NxMeasure = {
+    val __obj = js.Dynamic.literal(qAttributeDimensions = qAttributeDimensions, qAttributeExpressions = qAttributeExpressions, qCalcCond = qCalcCond, qDef = qDef, qLibraryId = qLibraryId, qSortBy = qSortBy)
+  
+    __obj.asInstanceOf[NxMeasure]
+  }
+}
+

@@ -37,3 +37,28 @@ trait Traceback extends js.Object {
   var `type`: java.lang.String
 }
 
+object Traceback {
+  @scala.inline
+  def apply(
+    col: scala.Double,
+    file: java.lang.String,
+    fun: js.Any,
+    is_ctor: scala.Boolean,
+    is_eval: scala.Boolean,
+    is_native: scala.Boolean,
+    is_top: scala.Boolean,
+    line: scala.Double,
+    method: java.lang.String,
+    name: java.lang.String,
+    origin: js.Any,
+    path: java.lang.String,
+    pos: scala.Double,
+    `this`: js.Any,
+    `type`: java.lang.String
+  ): Traceback = {
+    val __obj = js.Dynamic.literal(col = col, file = file, fun = fun, is_ctor = is_ctor, is_eval = is_eval, is_native = is_native, is_top = is_top, line = line, method = method, name = name, origin = origin, path = path, pos = pos, `this` = `this`, `type` = `type`)
+  
+    __obj.asInstanceOf[Traceback]
+  }
+}
+

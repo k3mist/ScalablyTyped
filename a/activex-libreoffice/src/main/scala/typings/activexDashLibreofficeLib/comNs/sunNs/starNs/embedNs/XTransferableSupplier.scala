@@ -20,3 +20,18 @@ trait XTransferableSupplier
   def getTransferable(): activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
 }
 
+object XTransferableSupplier {
+  @scala.inline
+  def apply(
+    Transferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    acquire: js.Function0[scala.Unit],
+    getTransferable: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTransferableSupplier = {
+    val __obj = js.Dynamic.literal(Transferable = Transferable, acquire = acquire, getTransferable = getTransferable, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTransferableSupplier]
+  }
+}
+

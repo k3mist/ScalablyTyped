@@ -51,3 +51,20 @@ trait IBookmarkFieldItem extends js.Object {
   var qValues: js.Array[IFieldValue]
 }
 
+object IBookmarkFieldItem {
+  @scala.inline
+  def apply(
+    qAndMode: scala.Boolean,
+    qDef: IFieldDefEx,
+    qExcludedValues: js.Array[IFieldValue],
+    qLocked: scala.Boolean,
+    qOneAndOnlyOne: scala.Boolean,
+    qSelectInfo: ISelectInfo,
+    qValues: js.Array[IFieldValue]
+  ): IBookmarkFieldItem = {
+    val __obj = js.Dynamic.literal(qAndMode = qAndMode, qDef = qDef, qExcludedValues = qExcludedValues, qLocked = qLocked, qOneAndOnlyOne = qOneAndOnlyOne, qSelectInfo = qSelectInfo, qValues = qValues)
+  
+    __obj.asInstanceOf[IBookmarkFieldItem]
+  }
+}
+

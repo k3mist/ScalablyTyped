@@ -52,3 +52,27 @@ trait GetVpcEndpointResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetVpcEndpointResult {
+  @scala.inline
+  def apply(
+    cidrBlocks: js.Array[java.lang.String],
+    dnsEntries: js.Array[atPulumiAwsLib.Anon_DnsName],
+    id: java.lang.String,
+    networkInterfaceIds: js.Array[java.lang.String],
+    policy: java.lang.String,
+    prefixListId: java.lang.String,
+    privateDnsEnabled: scala.Boolean,
+    routeTableIds: js.Array[java.lang.String],
+    securityGroupIds: js.Array[java.lang.String],
+    serviceName: java.lang.String,
+    state: java.lang.String,
+    subnetIds: js.Array[java.lang.String],
+    vpcEndpointType: java.lang.String,
+    vpcId: java.lang.String
+  ): GetVpcEndpointResult = {
+    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, dnsEntries = dnsEntries, id = id, networkInterfaceIds = networkInterfaceIds, policy = policy, prefixListId = prefixListId, privateDnsEnabled = privateDnsEnabled, routeTableIds = routeTableIds, securityGroupIds = securityGroupIds, serviceName = serviceName, state = state, subnetIds = subnetIds, vpcEndpointType = vpcEndpointType, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetVpcEndpointResult]
+  }
+}
+

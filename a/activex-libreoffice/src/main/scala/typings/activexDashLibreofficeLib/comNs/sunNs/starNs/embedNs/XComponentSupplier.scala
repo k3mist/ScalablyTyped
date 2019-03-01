@@ -24,3 +24,18 @@ trait XComponentSupplier
   def getComponent(): activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable
 }
 
+object XComponentSupplier {
+  @scala.inline
+  def apply(
+    Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    acquire: js.Function0[scala.Unit],
+    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XComponentSupplier = {
+    val __obj = js.Dynamic.literal(Component = Component, acquire = acquire, getComponent = getComponent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XComponentSupplier]
+  }
+}
+

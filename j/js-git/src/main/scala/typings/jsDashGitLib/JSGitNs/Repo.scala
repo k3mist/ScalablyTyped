@@ -116,3 +116,60 @@ trait Repo extends js.Object {
   def walk(seed: js.Any, scan: js.Any, loadKey: js.Any, compare: js.Any): js.Any
 }
 
+object Repo {
+  @scala.inline
+  def apply(
+    fetch: js.Function3[Remote, js.Object, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    getHead: js.Function1[
+      js.Function2[/* err */ js.Any, /* ref_name */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    load: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* git_object */ GitObject, scala.Unit], 
+      scala.Unit
+    ],
+    loadAs: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* body */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    logWalk: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* log_stream */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    remove: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    resolveHashish: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    save: js.Function2[
+      GitObject, 
+      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    saveAs: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* err */ js.Any, /* hash */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    setHead: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    treeWalk: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* file_stream */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    unpack: js.Function3[js.Any, js.Object, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    updateHead: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    walk: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any]
+  ): Repo = {
+    val __obj = js.Dynamic.literal(fetch = fetch, getHead = getHead, load = load, loadAs = loadAs, logWalk = logWalk, remove = remove, resolveHashish = resolveHashish, save = save, saveAs = saveAs, setHead = setHead, treeWalk = treeWalk, unpack = unpack, updateHead = updateHead, walk = walk)
+  
+    __obj.asInstanceOf[Repo]
+  }
+}
+

@@ -50,3 +50,26 @@ trait TileInfoProperties extends js.Object {
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 
+object TileInfoProperties {
+  @scala.inline
+  def apply(
+    dpi: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    isWrappable: js.UndefOr[scala.Boolean] = js.undefined,
+    lods: js.Array[LODProperties] = null,
+    origin: PointProperties = null,
+    size: js.Array[scala.Double] = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): TileInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable)
+    if (lods != null) __obj.updateDynamic("lods")(lods)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[TileInfoProperties]
+  }
+}
+

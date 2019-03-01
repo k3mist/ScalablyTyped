@@ -13,3 +13,17 @@ trait Anon_AndroidImplementation
   var isLoaded: expoLib.expoLibNumbers.`false`
 }
 
+object Anon_AndroidImplementation {
+  @scala.inline
+  def apply(
+    isLoaded: expoLib.expoLibNumbers.`false`,
+    androidImplementation: java.lang.String = null,
+    error: java.lang.String = null
+  ): Anon_AndroidImplementation = {
+    val __obj = js.Dynamic.literal(isLoaded = isLoaded)
+    if (androidImplementation != null) __obj.updateDynamic("androidImplementation")(androidImplementation)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Anon_AndroidImplementation]
+  }
+}
+

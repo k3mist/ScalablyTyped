@@ -14,3 +14,19 @@ trait WebpackError extends js.Object {
   var webpackError: js.Any
 }
 
+object WebpackError {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    message: java.lang.String,
+    name: java.lang.String,
+    origin: java.lang.String,
+    severity: Severity,
+    webpackError: js.Any
+  ): WebpackError = {
+    val __obj = js.Dynamic.literal(file = file, message = message, name = name, origin = origin, severity = severity, webpackError = webpackError)
+  
+    __obj.asInstanceOf[WebpackError]
+  }
+}
+

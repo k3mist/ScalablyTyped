@@ -10,3 +10,12 @@ trait AnimationAction extends js.Object {
   var option: AnimationActionOption
 }
 
+object AnimationAction {
+  @scala.inline
+  def apply(animates: js.Array[Animate], option: AnimationActionOption): AnimationAction = {
+    val __obj = js.Dynamic.literal(animates = animates, option = option)
+  
+    __obj.asInstanceOf[AnimationAction]
+  }
+}
+

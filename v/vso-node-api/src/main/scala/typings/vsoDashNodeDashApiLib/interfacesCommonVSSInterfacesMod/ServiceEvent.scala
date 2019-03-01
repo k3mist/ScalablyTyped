@@ -28,3 +28,18 @@ trait ServiceEvent extends js.Object {
   var resourceVersion: java.lang.String
 }
 
+object ServiceEvent {
+  @scala.inline
+  def apply(
+    eventType: java.lang.String,
+    publisher: Publisher,
+    resource: js.Any,
+    resourceContainers: org.scalablytyped.runtime.StringDictionary[js.Any],
+    resourceVersion: java.lang.String
+  ): ServiceEvent = {
+    val __obj = js.Dynamic.literal(eventType = eventType, publisher = publisher, resource = resource, resourceContainers = resourceContainers, resourceVersion = resourceVersion)
+  
+    __obj.asInstanceOf[ServiceEvent]
+  }
+}
+

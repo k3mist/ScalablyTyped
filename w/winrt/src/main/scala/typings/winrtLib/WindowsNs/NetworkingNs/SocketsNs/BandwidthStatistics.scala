@@ -14,3 +14,19 @@ trait BandwidthStatistics extends js.Object {
   var outboundBitsPerSecondInstability: scala.Double
 }
 
+object BandwidthStatistics {
+  @scala.inline
+  def apply(
+    inboundBandwidthPeaked: scala.Boolean,
+    inboundBitsPerSecond: scala.Double,
+    inboundBitsPerSecondInstability: scala.Double,
+    outboundBandwidthPeaked: scala.Boolean,
+    outboundBitsPerSecond: scala.Double,
+    outboundBitsPerSecondInstability: scala.Double
+  ): BandwidthStatistics = {
+    val __obj = js.Dynamic.literal(inboundBandwidthPeaked = inboundBandwidthPeaked, inboundBitsPerSecond = inboundBitsPerSecond, inboundBitsPerSecondInstability = inboundBitsPerSecondInstability, outboundBandwidthPeaked = outboundBandwidthPeaked, outboundBitsPerSecond = outboundBitsPerSecond, outboundBitsPerSecondInstability = outboundBitsPerSecondInstability)
+  
+    __obj.asInstanceOf[BandwidthStatistics]
+  }
+}
+

@@ -23,3 +23,29 @@ trait Canvas extends js.Object {
   def toggleCanvas(): scala.Unit
 }
 
+object Canvas {
+  @scala.inline
+  def apply(
+    clearCanvas: js.Function0[scala.Unit],
+    getCanvas: js.Function1[java.lang.String, js.Any],
+    hideCanvas: js.Function0[scala.Unit],
+    renderText: js.Function5[scala.Double, scala.Double, java.lang.String, java.lang.String, scala.Double, scala.Unit],
+    renderTextAt: js.Function7[
+      java.lang.String, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Unit
+    ],
+    showCanvas: js.Function0[scala.Unit],
+    toggleCanvas: js.Function0[scala.Unit]
+  ): Canvas = {
+    val __obj = js.Dynamic.literal(clearCanvas = clearCanvas, getCanvas = getCanvas, hideCanvas = hideCanvas, renderText = renderText, renderTextAt = renderTextAt, showCanvas = showCanvas, toggleCanvas = toggleCanvas)
+  
+    __obj.asInstanceOf[Canvas]
+  }
+}
+

@@ -15,3 +15,20 @@ trait CurrentLoadData extends js.Object {
   var currentload_user: scala.Double
 }
 
+object CurrentLoadData {
+  @scala.inline
+  def apply(
+    avgload: scala.Double,
+    cpus: js.Array[CurrentLoadCpuData],
+    currentload: scala.Double,
+    currentload_irq: scala.Double,
+    currentload_nice: scala.Double,
+    currentload_system: scala.Double,
+    currentload_user: scala.Double
+  ): CurrentLoadData = {
+    val __obj = js.Dynamic.literal(avgload = avgload, cpus = cpus, currentload = currentload, currentload_irq = currentload_irq, currentload_nice = currentload_nice, currentload_system = currentload_system, currentload_user = currentload_user)
+  
+    __obj.asInstanceOf[CurrentLoadData]
+  }
+}
+

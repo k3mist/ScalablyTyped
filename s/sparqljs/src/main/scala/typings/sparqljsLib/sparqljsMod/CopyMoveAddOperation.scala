@@ -12,3 +12,17 @@ trait CopyMoveAddOperation extends ManagementOperation {
   var `type`: sparqljsLib.sparqljsLibStrings.copy | sparqljsLib.sparqljsLibStrings.move | sparqljsLib.sparqljsLibStrings.add
 }
 
+object CopyMoveAddOperation {
+  @scala.inline
+  def apply(
+    destination: GraphOrDefault,
+    silent: scala.Boolean,
+    source: GraphOrDefault,
+    `type`: sparqljsLib.sparqljsLibStrings.copy | sparqljsLib.sparqljsLibStrings.move | sparqljsLib.sparqljsLibStrings.add
+  ): CopyMoveAddOperation = {
+    val __obj = js.Dynamic.literal(destination = destination, silent = silent, source = source, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CopyMoveAddOperation]
+  }
+}
+

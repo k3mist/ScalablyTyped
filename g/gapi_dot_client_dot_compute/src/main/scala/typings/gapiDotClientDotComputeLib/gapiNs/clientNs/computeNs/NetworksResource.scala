@@ -24,3 +24,45 @@ trait NetworksResource extends js.Object {
   def switchToCustomMode(request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object NetworksResource {
+  @scala.inline
+  def apply(
+    addPeering: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetworkOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Network]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[NetworkList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    removePeering: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    switchToCustomMode: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyNetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): NetworksResource = {
+    val __obj = js.Dynamic.literal(addPeering = addPeering, delete = delete, get = get, insert = insert, list = list, patch = patch, removePeering = removePeering, switchToCustomMode = switchToCustomMode)
+  
+    __obj.asInstanceOf[NetworksResource]
+  }
+}
+

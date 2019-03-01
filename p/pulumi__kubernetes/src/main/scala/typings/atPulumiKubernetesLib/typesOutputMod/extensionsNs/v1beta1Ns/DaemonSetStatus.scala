@@ -60,3 +60,23 @@ trait DaemonSetStatus extends js.Object {
   val updatedNumberScheduled: scala.Double
 }
 
+object DaemonSetStatus {
+  @scala.inline
+  def apply(
+    collisionCount: scala.Double,
+    conditions: js.Array[DaemonSetCondition],
+    currentNumberScheduled: scala.Double,
+    desiredNumberScheduled: scala.Double,
+    numberAvailable: scala.Double,
+    numberMisscheduled: scala.Double,
+    numberReady: scala.Double,
+    numberUnavailable: scala.Double,
+    observedGeneration: scala.Double,
+    updatedNumberScheduled: scala.Double
+  ): DaemonSetStatus = {
+    val __obj = js.Dynamic.literal(collisionCount = collisionCount, conditions = conditions, currentNumberScheduled = currentNumberScheduled, desiredNumberScheduled = desiredNumberScheduled, numberAvailable = numberAvailable, numberMisscheduled = numberMisscheduled, numberReady = numberReady, numberUnavailable = numberUnavailable, observedGeneration = observedGeneration, updatedNumberScheduled = updatedNumberScheduled)
+  
+    __obj.asInstanceOf[DaemonSetStatus]
+  }
+}
+

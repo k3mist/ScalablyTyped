@@ -11,3 +11,12 @@ trait IPopoverState extends js.Object {
   var transformOrigin: java.lang.String
 }
 
+object IPopoverState {
+  @scala.inline
+  def apply(hasDarkParent: scala.Boolean, isOpen: scala.Boolean, transformOrigin: java.lang.String): IPopoverState = {
+    val __obj = js.Dynamic.literal(hasDarkParent = hasDarkParent, isOpen = isOpen, transformOrigin = transformOrigin)
+  
+    __obj.asInstanceOf[IPopoverState]
+  }
+}
+

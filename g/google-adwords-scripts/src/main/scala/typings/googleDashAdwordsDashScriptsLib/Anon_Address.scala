@@ -10,3 +10,12 @@ trait Anon_Address extends js.Object {
   var bidModifier: scala.Double
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(address: AddressObject, bidModifier: scala.Double): Anon_Address = {
+    val __obj = js.Dynamic.literal(address = address, bidModifier = bidModifier)
+  
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

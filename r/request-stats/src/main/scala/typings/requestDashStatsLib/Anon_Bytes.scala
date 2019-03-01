@@ -32,3 +32,19 @@ trait Anon_Bytes extends js.Object {
   var raw: nodeLib.httpMod.IncomingMessage
 }
 
+object Anon_Bytes {
+  @scala.inline
+  def apply(
+    bytes: scala.Double,
+    headers: nodeLib.httpMod.IncomingHttpHeaders,
+    ip: java.lang.String,
+    method: java.lang.String,
+    path: java.lang.String,
+    raw: nodeLib.httpMod.IncomingMessage
+  ): Anon_Bytes = {
+    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, ip = ip, method = method, path = path, raw = raw)
+  
+    __obj.asInstanceOf[Anon_Bytes]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Issue extends js.Object {
   var path: java.lang.String
 }
 
+object Issue {
+  @scala.inline
+  def apply(code: java.lang.String, data: js.Any, message: java.lang.String, path: java.lang.String): Issue = {
+    val __obj = js.Dynamic.literal(code = code, data = data, message = message, path = path)
+  
+    __obj.asInstanceOf[Issue]
+  }
+}
+

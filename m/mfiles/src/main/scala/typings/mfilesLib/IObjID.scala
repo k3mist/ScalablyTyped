@@ -16,3 +16,21 @@ trait IObjID extends js.Object {
   def Unserialize(Bytes: js.Array[scala.Double]): scala.Unit
 }
 
+object IObjID {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IObjID],
+    CloneFrom: js.Function1[IObjID, scala.Unit],
+    ID: scala.Double,
+    Serialize: js.Function0[js.Array[scala.Double]],
+    SetIDs: js.Function2[scala.Double, scala.Double, scala.Unit],
+    ToJSON: js.Function0[java.lang.String],
+    Type: scala.Double,
+    Unserialize: js.Function1[js.Array[scala.Double], scala.Unit]
+  ): IObjID = {
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, ID = ID, Serialize = Serialize, SetIDs = SetIDs, ToJSON = ToJSON, Type = Type, Unserialize = Unserialize)
+  
+    __obj.asInstanceOf[IObjID]
+  }
+}
+

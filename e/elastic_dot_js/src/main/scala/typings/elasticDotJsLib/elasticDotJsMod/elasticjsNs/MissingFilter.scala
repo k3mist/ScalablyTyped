@@ -40,3 +40,21 @@ trait MissingFilter extends Filter {
   def toJSON(): MissingFilter
 }
 
+object MissingFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, MissingFilter],
+    cacheKey: js.Function1[java.lang.String, MissingFilter],
+    existence: js.Function1[scala.Boolean, MissingFilter],
+    field: js.Function1[java.lang.String, MissingFilter],
+    name: js.Function1[java.lang.String, MissingFilter],
+    nullValue: js.Function1[scala.Boolean, MissingFilter],
+    toJSON: js.Function0[MissingFilter]
+  ): MissingFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, existence = existence, field = field, name = name, nullValue = nullValue, toJSON = toJSON)
+  
+    __obj.asInstanceOf[MissingFilter]
+  }
+}
+

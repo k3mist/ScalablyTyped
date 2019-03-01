@@ -12,3 +12,12 @@ trait Anon_Change extends js.Object {
   var oldWidth: scala.Double
 }
 
+object Anon_Change {
+  @scala.inline
+  def apply(change: java.lang.String, colIndex: scala.Double, newWidth: scala.Double, oldWidth: scala.Double): Anon_Change = {
+    val __obj = js.Dynamic.literal(change = change, colIndex = colIndex, newWidth = newWidth, oldWidth = oldWidth)
+  
+    __obj.asInstanceOf[Anon_Change]
+  }
+}
+

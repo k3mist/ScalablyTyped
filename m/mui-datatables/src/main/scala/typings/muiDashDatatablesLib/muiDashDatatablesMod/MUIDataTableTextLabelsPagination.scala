@@ -12,3 +12,17 @@ trait MUIDataTableTextLabelsPagination extends js.Object {
   var rowsPerPage: java.lang.String
 }
 
+object MUIDataTableTextLabelsPagination {
+  @scala.inline
+  def apply(
+    displayRows: java.lang.String,
+    next: java.lang.String,
+    previous: java.lang.String,
+    rowsPerPage: java.lang.String
+  ): MUIDataTableTextLabelsPagination = {
+    val __obj = js.Dynamic.literal(displayRows = displayRows, next = next, previous = previous, rowsPerPage = rowsPerPage)
+  
+    __obj.asInstanceOf[MUIDataTableTextLabelsPagination]
+  }
+}
+

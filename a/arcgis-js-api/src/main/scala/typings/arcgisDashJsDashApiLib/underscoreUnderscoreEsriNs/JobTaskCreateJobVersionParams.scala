@@ -33,3 +33,20 @@ trait JobTaskCreateJobVersionParams
   var user: java.lang.String
 }
 
+object JobTaskCreateJobVersionParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    name: java.lang.String,
+    parent: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskCreateJobVersionParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskCreateJobVersionParams]
+  }
+}
+

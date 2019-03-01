@@ -10,3 +10,12 @@ trait NavigationState[OwnRoute] extends js.Object {
   var routes: js.Array[Route[js.Object] with OwnRoute]
 }
 
+object NavigationState {
+  @scala.inline
+  def apply[OwnRoute](index: scala.Double, routes: js.Array[Route[js.Object] with OwnRoute]): NavigationState[OwnRoute] = {
+    val __obj = js.Dynamic.literal(index = index, routes = routes)
+  
+    __obj.asInstanceOf[NavigationState[OwnRoute]]
+  }
+}
+

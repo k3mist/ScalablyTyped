@@ -21,3 +21,26 @@ trait Device extends js.Object {
   def updateDeviceByName(name: java.lang.String, `object`: js.Object, trigger: scala.Boolean, callback: CbCallback): scala.Unit
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    columns: js.Function1[CbCallback, scala.Unit],
+    count: js.Function2[Query, CbCallback, scala.Unit],
+    create: js.Function2[js.Object, CbCallback, scala.Unit],
+    delete: js.Function2[Query, CbCallback, scala.Unit],
+    deleteDeviceByName: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    fetch: js.Function2[Query, CbCallback, scala.Unit],
+    getDeviceByName: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function4[Query, js.Object, scala.Boolean, CbCallback, scala.Unit],
+    updateDeviceByName: js.Function4[java.lang.String, js.Object, scala.Boolean, CbCallback, scala.Unit],
+    user: APIUser
+  ): Device = {
+    val __obj = js.Dynamic.literal(URI = URI, columns = columns, count = count, create = create, delete = delete, deleteDeviceByName = deleteDeviceByName, fetch = fetch, getDeviceByName = getDeviceByName, systemKey = systemKey, systemSecret = systemSecret, update = update, updateDeviceByName = updateDeviceByName, user = user)
+  
+    __obj.asInstanceOf[Device]
+  }
+}
+

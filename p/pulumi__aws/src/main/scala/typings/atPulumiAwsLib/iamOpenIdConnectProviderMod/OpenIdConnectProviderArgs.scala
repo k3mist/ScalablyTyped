@@ -20,3 +20,16 @@ trait OpenIdConnectProviderArgs extends js.Object {
   val url: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object OpenIdConnectProviderArgs {
+  @scala.inline
+  def apply(
+    clientIdLists: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    thumbprintLists: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    url: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): OpenIdConnectProviderArgs = {
+    val __obj = js.Dynamic.literal(clientIdLists = clientIdLists.asInstanceOf[js.Any], thumbprintLists = thumbprintLists.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[OpenIdConnectProviderArgs]
+  }
+}
+

@@ -44,3 +44,20 @@ trait ChartDataRowProperties
   var DataRegressionProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object ChartDataRowProperties {
+  @scala.inline
+  def apply(
+    Axis: scala.Double,
+    ChartDataPointProperties: ChartDataPointProperties = null,
+    ChartStatistics: ChartStatistics = null,
+    DataErrorProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    DataMeanValueProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    DataRegressionProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
+  ): ChartDataRowProperties = {
+    val __obj = js.Dynamic.literal(Axis = Axis, DataErrorProperties = DataErrorProperties, DataMeanValueProperties = DataMeanValueProperties, DataRegressionProperties = DataRegressionProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ChartDataPointProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ChartStatistics)
+    __obj.asInstanceOf[ChartDataRowProperties]
+  }
+}
+

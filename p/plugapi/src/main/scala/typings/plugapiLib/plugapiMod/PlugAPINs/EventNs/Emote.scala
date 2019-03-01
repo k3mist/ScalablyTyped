@@ -13,3 +13,18 @@ trait Emote extends js.Object {
   var `type`: java.lang.String
 }
 
+object Emote {
+  @scala.inline
+  def apply(
+    chatID: java.lang.String,
+    from: java.lang.String,
+    fromID: java.lang.String,
+    message: java.lang.String,
+    `type`: java.lang.String
+  ): Emote = {
+    val __obj = js.Dynamic.literal(chatID = chatID, from = from, fromID = fromID, message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[Emote]
+  }
+}
+

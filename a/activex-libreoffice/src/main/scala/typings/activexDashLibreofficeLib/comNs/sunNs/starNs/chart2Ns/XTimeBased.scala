@@ -17,3 +17,19 @@ trait XTimeBased
   def switchToNext(wrap: scala.Boolean): scala.Boolean
 }
 
+object XTimeBased {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setRange: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setToPointInTime: js.Function1[scala.Double, scala.Boolean],
+    switchToNext: js.Function1[scala.Boolean, scala.Boolean]
+  ): XTimeBased = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setRange = setRange, setToPointInTime = setToPointInTime, switchToNext = switchToNext)
+  
+    __obj.asInstanceOf[XTimeBased]
+  }
+}
+

@@ -16,3 +16,12 @@ trait LayerOptionsProperties extends js.Object {
   var showNoDataRecords: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LayerOptionsProperties {
+  @scala.inline
+  def apply(showNoDataRecords: js.UndefOr[scala.Boolean] = js.undefined): LayerOptionsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showNoDataRecords)) __obj.updateDynamic("showNoDataRecords")(showNoDataRecords)
+    __obj.asInstanceOf[LayerOptionsProperties]
+  }
+}
+

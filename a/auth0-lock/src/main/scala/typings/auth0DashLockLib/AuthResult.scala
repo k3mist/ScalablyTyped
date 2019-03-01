@@ -17,3 +17,24 @@ trait AuthResult extends js.Object {
   var tokenType: java.lang.String
 }
 
+object AuthResult {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    expiresIn: scala.Double,
+    idToken: java.lang.String,
+    idTokenPayload: Anon_Aud,
+    state: java.lang.String,
+    tokenType: java.lang.String,
+    appState: js.Any = null,
+    refreshToken: java.lang.String = null,
+    scope: java.lang.String = null
+  ): AuthResult = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, idToken = idToken, idTokenPayload = idTokenPayload, state = state, tokenType = tokenType)
+    if (appState != null) __obj.updateDynamic("appState")(appState)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[AuthResult]
+  }
+}
+

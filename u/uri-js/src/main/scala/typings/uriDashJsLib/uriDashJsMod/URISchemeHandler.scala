@@ -14,3 +14,21 @@ trait URISchemeHandler[Components /* <: URIComponents */, Options /* <: URIOptio
   def serialize(components: Components, options: Options): ParentComponents
 }
 
+object URISchemeHandler {
+  @scala.inline
+  def apply[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](
+    parse: js.Function2[ParentComponents, Options, Components],
+    scheme: java.lang.String,
+    serialize: js.Function2[Components, Options, ParentComponents],
+    absolutePath: js.UndefOr[scala.Boolean] = js.undefined,
+    domainHost: js.UndefOr[scala.Boolean] = js.undefined,
+    unicodeSupport: js.UndefOr[scala.Boolean] = js.undefined
+  ): URISchemeHandler[Components, Options, ParentComponents] = {
+    val __obj = js.Dynamic.literal(parse = parse, scheme = scheme, serialize = serialize)
+    if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath)
+    if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost)
+    if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport)
+    __obj.asInstanceOf[URISchemeHandler[Components, Options, ParentComponents]]
+  }
+}
+

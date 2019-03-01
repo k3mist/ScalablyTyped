@@ -11,3 +11,16 @@ trait Jsonnet extends js.Object {
   def evalFile(): js.Any
 }
 
+object Jsonnet {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    eval: js.Function1[java.lang.String, js.Any],
+    evalFile: js.Function0[js.Any]
+  ): Jsonnet = {
+    val __obj = js.Dynamic.literal(destroy = destroy, eval = eval, evalFile = evalFile)
+  
+    __obj.asInstanceOf[Jsonnet]
+  }
+}
+

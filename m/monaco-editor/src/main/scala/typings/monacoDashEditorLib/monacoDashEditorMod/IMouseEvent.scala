@@ -23,3 +23,28 @@ trait IMouseEvent extends js.Object {
   def stopPropagation(): scala.Unit
 }
 
+object IMouseEvent {
+  @scala.inline
+  def apply(
+    altKey: scala.Boolean,
+    browserEvent: stdLib.MouseEvent,
+    ctrlKey: scala.Boolean,
+    detail: scala.Double,
+    leftButton: scala.Boolean,
+    metaKey: scala.Boolean,
+    middleButton: scala.Boolean,
+    posx: scala.Double,
+    posy: scala.Double,
+    preventDefault: js.Function0[scala.Unit],
+    rightButton: scala.Boolean,
+    shiftKey: scala.Boolean,
+    stopPropagation: js.Function0[scala.Unit],
+    target: stdLib.HTMLElement,
+    timestamp: scala.Double
+  ): IMouseEvent = {
+    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, ctrlKey = ctrlKey, detail = detail, leftButton = leftButton, metaKey = metaKey, middleButton = middleButton, posx = posx, posy = posy, preventDefault = preventDefault, rightButton = rightButton, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IMouseEvent]
+  }
+}
+

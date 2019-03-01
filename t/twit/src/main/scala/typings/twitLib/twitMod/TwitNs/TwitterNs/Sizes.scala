@@ -12,3 +12,12 @@ trait Sizes extends js.Object {
   var thumb: Size
 }
 
+object Sizes {
+  @scala.inline
+  def apply(large: Size, medium: Size, small: Size, thumb: Size): Sizes = {
+    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small, thumb = thumb)
+  
+    __obj.asInstanceOf[Sizes]
+  }
+}
+

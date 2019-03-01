@@ -79,3 +79,49 @@ trait Anon_Adjacent
   var $values: js.Symbol
 }
 
+object Anon_Adjacent {
+  @scala.inline
+  def apply(
+    $adjacent: js.Symbol,
+    $all: js.Symbol,
+    $and: js.Symbol,
+    $any: js.Symbol,
+    $between: js.Symbol,
+    $col: js.Symbol,
+    $contained: js.Symbol,
+    $contains: js.Symbol,
+    $eq: js.Symbol,
+    $gt: js.Symbol,
+    $gte: js.Symbol,
+    $iLike: js.Symbol,
+    $iRegexp: js.Symbol,
+    $in: js.Symbol,
+    $is: js.Symbol,
+    $like: js.Symbol,
+    $lt: js.Symbol,
+    $lte: js.Symbol,
+    $ne: js.Symbol,
+    $noExtendLeft: js.Symbol,
+    $noExtendRight: js.Symbol,
+    $not: js.Symbol,
+    $notBetween: js.Symbol,
+    $notILike: js.Symbol,
+    $notIRegexp: js.Symbol,
+    $notIn: js.Symbol,
+    $notLike: js.Symbol,
+    $notRegexp: js.Symbol,
+    $or: js.Symbol,
+    $overlap: js.Symbol,
+    $raw: js.Symbol,
+    $regexp: js.Symbol,
+    $strictLeft: js.Symbol,
+    $strictRight: js.Symbol,
+    $values: js.Symbol,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Symbol] = null
+  ): Anon_Adjacent = {
+    val __obj = js.Dynamic.literal($adjacent = $adjacent, $all = $all, $and = $and, $any = $any, $between = $between, $col = $col, $contained = $contained, $contains = $contains, $eq = $eq, $gt = $gt, $gte = $gte, $iLike = $iLike, $iRegexp = $iRegexp, $in = $in, $is = $is, $like = $like, $lt = $lt, $lte = $lte, $ne = $ne, $noExtendLeft = $noExtendLeft, $noExtendRight = $noExtendRight, $not = $not, $notBetween = $notBetween, $notILike = $notILike, $notIRegexp = $notIRegexp, $notIn = $notIn, $notLike = $notLike, $notRegexp = $notRegexp, $or = $or, $overlap = $overlap, $raw = $raw, $regexp = $regexp, $strictLeft = $strictLeft, $strictRight = $strictRight, $values = $values)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Adjacent]
+  }
+}
+

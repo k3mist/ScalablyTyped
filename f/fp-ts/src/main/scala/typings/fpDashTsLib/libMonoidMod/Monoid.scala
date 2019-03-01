@@ -10,3 +10,12 @@ trait Monoid[A]
   val empty: A
 }
 
+object Monoid {
+  @scala.inline
+  def apply[A](concat: js.Function2[A, A, A], empty: A): Monoid[A] = {
+    val __obj = js.Dynamic.literal(concat = concat, empty = empty.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Monoid[A]]
+  }
+}
+

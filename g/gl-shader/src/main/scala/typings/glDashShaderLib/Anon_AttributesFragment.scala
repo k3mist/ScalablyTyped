@@ -12,3 +12,17 @@ trait Anon_AttributesFragment extends js.Object {
   var vertex: java.lang.String
 }
 
+object Anon_AttributesFragment {
+  @scala.inline
+  def apply(
+    attributes: js.Array[glDashShaderLib.glDashShaderMod.Parameter],
+    fragment: java.lang.String,
+    uniforms: js.Array[glDashShaderLib.glDashShaderMod.Parameter],
+    vertex: java.lang.String
+  ): Anon_AttributesFragment = {
+    val __obj = js.Dynamic.literal(attributes = attributes, fragment = fragment, uniforms = uniforms, vertex = vertex)
+  
+    __obj.asInstanceOf[Anon_AttributesFragment]
+  }
+}
+

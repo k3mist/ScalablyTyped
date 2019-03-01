@@ -11,3 +11,16 @@ trait IDeleteElementDelta
   var deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.DELETE_ELEMENT
 }
 
+object IDeleteElementDelta {
+  @scala.inline
+  def apply(
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.DELETE_ELEMENT,
+    elementId: java.lang.String,
+    unitId: java.lang.String
+  ): IDeleteElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = deltaType, elementId = elementId, unitId = unitId)
+  
+    __obj.asInstanceOf[IDeleteElementDelta]
+  }
+}
+

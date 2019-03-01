@@ -15,3 +15,17 @@ trait DeclarationMemberType extends IDLInterfaceMemberType {
   var `type`: webidl2Lib.webidl2LibStrings.iterable | webidl2Lib.webidl2LibStrings.legacyiterable | webidl2Lib.webidl2LibStrings.setlike | webidl2Lib.webidl2LibStrings.maplike
 }
 
+object DeclarationMemberType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: js.Array[IDLTypeDescription],
+    readonly: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.iterable | webidl2Lib.webidl2LibStrings.legacyiterable | webidl2Lib.webidl2LibStrings.setlike | webidl2Lib.webidl2LibStrings.maplike
+  ): DeclarationMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, readonly = readonly, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DeclarationMemberType]
+  }
+}
+

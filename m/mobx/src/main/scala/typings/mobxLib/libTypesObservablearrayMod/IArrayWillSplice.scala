@@ -13,3 +13,18 @@ trait IArrayWillSplice[T] extends js.Object {
   var `type`: mobxLib.mobxLibStrings.splice
 }
 
+object IArrayWillSplice {
+  @scala.inline
+  def apply[T](
+    added: js.Array[T],
+    index: scala.Double,
+    `object`: IObservableArray[T],
+    removedCount: scala.Double,
+    `type`: mobxLib.mobxLibStrings.splice
+  ): IArrayWillSplice[T] = {
+    val __obj = js.Dynamic.literal(added = added, index = index, `object` = `object`, removedCount = removedCount, `type` = `type`)
+  
+    __obj.asInstanceOf[IArrayWillSplice[T]]
+  }
+}
+

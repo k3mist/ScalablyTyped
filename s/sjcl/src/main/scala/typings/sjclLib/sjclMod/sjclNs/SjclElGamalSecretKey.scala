@@ -10,3 +10,16 @@ trait SjclElGamalSecretKey extends SjclECCSecretKey {
   def unkem(tag: BitArray): BitArray
 }
 
+object SjclElGamalSecretKey {
+  @scala.inline
+  def apply(
+    dh: js.Function1[SjclECCPublicKey, BitArray],
+    get: js.Function0[BitArray],
+    unkem: js.Function1[BitArray, BitArray]
+  ): SjclElGamalSecretKey = {
+    val __obj = js.Dynamic.literal(dh = dh, get = get, unkem = unkem)
+  
+    __obj.asInstanceOf[SjclElGamalSecretKey]
+  }
+}
+

@@ -22,3 +22,27 @@ trait IObjectTypeAdmin extends js.Object {
   def Clone(): IObjectTypeAdmin
 }
 
+object IObjectTypeAdmin {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IObjectTypeAdmin],
+    ColumnMappings: IObjectTypeColumnMappings,
+    ConnectionString: java.lang.String,
+    DefaultForAutomaticPermissions: IAutomaticPermissions,
+    DeleteStatement: java.lang.String,
+    InsertIntoStatement: java.lang.String,
+    NamedValueNamespaces: INamedValueNamespaces,
+    ObjectType: IObjectType,
+    SelectExtIDStatement: java.lang.String,
+    SelectStatement: java.lang.String,
+    SelectStatementOneRecord: java.lang.String,
+    SemanticAliases: ISemanticAliases,
+    Translatable: scala.Boolean,
+    UpdateStatement: java.lang.String
+  ): IObjectTypeAdmin = {
+    val __obj = js.Dynamic.literal(Clone = Clone, ColumnMappings = ColumnMappings, ConnectionString = ConnectionString, DefaultForAutomaticPermissions = DefaultForAutomaticPermissions, DeleteStatement = DeleteStatement, InsertIntoStatement = InsertIntoStatement, NamedValueNamespaces = NamedValueNamespaces, ObjectType = ObjectType, SelectExtIDStatement = SelectExtIDStatement, SelectStatement = SelectStatement, SelectStatementOneRecord = SelectStatementOneRecord, SemanticAliases = SemanticAliases, Translatable = Translatable, UpdateStatement = UpdateStatement)
+  
+    __obj.asInstanceOf[IObjectTypeAdmin]
+  }
+}
+

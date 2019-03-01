@@ -147,3 +147,53 @@ trait XTreeControl
   def stopEditing(): scala.Boolean
 }
 
+object XTreeControl {
+  @scala.inline
+  def apply(
+    DefaultCollapsedGraphicURL: java.lang.String,
+    DefaultExpandedGraphicURL: java.lang.String,
+    Selection: js.Any,
+    SelectionCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addSelection: js.Function1[js.Any, scala.Boolean],
+    addSelectionChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
+      scala.Unit
+    ],
+    addTreeEditListener: js.Function1[XTreeEditListener, scala.Unit],
+    addTreeExpansionListener: js.Function1[XTreeExpansionListener, scala.Unit],
+    cancelEditing: js.Function0[scala.Unit],
+    clearSelection: js.Function0[scala.Unit],
+    collapseNode: js.Function1[XTreeNode, scala.Unit],
+    createReverseSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    createSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    expandNode: js.Function1[XTreeNode, scala.Unit],
+    getClosestNodeForLocation: js.Function2[scala.Double, scala.Double, XTreeNode],
+    getNodeForLocation: js.Function2[scala.Double, scala.Double, XTreeNode],
+    getNodeRect: js.Function1[XTreeNode, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getSelection: js.Function0[js.Any],
+    getSelectionCount: js.Function0[scala.Double],
+    isEditing: js.Function0[scala.Boolean],
+    isNodeCollapsed: js.Function1[XTreeNode, scala.Boolean],
+    isNodeExpanded: js.Function1[XTreeNode, scala.Boolean],
+    isNodeVisible: js.Function1[XTreeNode, scala.Boolean],
+    makeNodeVisible: js.Function1[XTreeNode, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSelection: js.Function1[js.Any, scala.Unit],
+    removeSelectionChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XSelectionChangeListener, 
+      scala.Unit
+    ],
+    removeTreeEditListener: js.Function1[XTreeEditListener, scala.Unit],
+    removeTreeExpansionListener: js.Function1[XTreeExpansionListener, scala.Unit],
+    select: js.Function1[js.Any, scala.Boolean],
+    startEditingAtNode: js.Function1[XTreeNode, scala.Unit],
+    stopEditing: js.Function0[scala.Boolean]
+  ): XTreeControl = {
+    val __obj = js.Dynamic.literal(DefaultCollapsedGraphicURL = DefaultCollapsedGraphicURL, DefaultExpandedGraphicURL = DefaultExpandedGraphicURL, Selection = Selection, SelectionCount = SelectionCount, acquire = acquire, addSelection = addSelection, addSelectionChangeListener = addSelectionChangeListener, addTreeEditListener = addTreeEditListener, addTreeExpansionListener = addTreeExpansionListener, cancelEditing = cancelEditing, clearSelection = clearSelection, collapseNode = collapseNode, createReverseSelectionEnumeration = createReverseSelectionEnumeration, createSelectionEnumeration = createSelectionEnumeration, expandNode = expandNode, getClosestNodeForLocation = getClosestNodeForLocation, getNodeForLocation = getNodeForLocation, getNodeRect = getNodeRect, getSelection = getSelection, getSelectionCount = getSelectionCount, isEditing = isEditing, isNodeCollapsed = isNodeCollapsed, isNodeExpanded = isNodeExpanded, isNodeVisible = isNodeVisible, makeNodeVisible = makeNodeVisible, queryInterface = queryInterface, release = release, removeSelection = removeSelection, removeSelectionChangeListener = removeSelectionChangeListener, removeTreeEditListener = removeTreeEditListener, removeTreeExpansionListener = removeTreeExpansionListener, select = select, startEditingAtNode = startEditingAtNode, stopEditing = stopEditing)
+  
+    __obj.asInstanceOf[XTreeControl]
+  }
+}
+

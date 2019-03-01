@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXEmptyExpression
 }
 
+object JSXEmptyExpression {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.JSXEmptyExpression): JSXEmptyExpression = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[JSXEmptyExpression]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ValueProvider
   var provide: js.Any
 }
 
+object ValueProvider {
+  @scala.inline
+  def apply(provide: js.Any, useValue: js.Any, multi: js.UndefOr[scala.Boolean] = js.undefined): ValueProvider = {
+    val __obj = js.Dynamic.literal(provide = provide, useValue = useValue)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    __obj.asInstanceOf[ValueProvider]
+  }
+}
+

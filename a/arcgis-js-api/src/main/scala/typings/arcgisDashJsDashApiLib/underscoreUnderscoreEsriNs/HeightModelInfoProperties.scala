@@ -36,3 +36,18 @@ trait HeightModelInfoProperties extends js.Object {
   var vertCRS: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeightModelInfoProperties {
+  @scala.inline
+  def apply(
+    heightModel: java.lang.String = null,
+    heightUnit: java.lang.String = null,
+    vertCRS: java.lang.String = null
+  ): HeightModelInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (heightModel != null) __obj.updateDynamic("heightModel")(heightModel)
+    if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit)
+    if (vertCRS != null) __obj.updateDynamic("vertCRS")(vertCRS)
+    __obj.asInstanceOf[HeightModelInfoProperties]
+  }
+}
+

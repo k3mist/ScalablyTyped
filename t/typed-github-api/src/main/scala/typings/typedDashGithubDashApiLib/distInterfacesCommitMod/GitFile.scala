@@ -12,3 +12,17 @@ trait GitFile extends js.Object {
   var status: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.modified
 }
 
+object GitFile {
+  @scala.inline
+  def apply(
+    changes: GitChanges,
+    filename: java.lang.String,
+    patch: java.lang.String,
+    status: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.modified
+  ): GitFile = {
+    val __obj = js.Dynamic.literal(changes = changes, filename = filename, patch = patch, status = status)
+  
+    __obj.asInstanceOf[GitFile]
+  }
+}
+

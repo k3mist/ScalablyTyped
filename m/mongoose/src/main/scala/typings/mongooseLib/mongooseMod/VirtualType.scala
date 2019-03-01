@@ -20,3 +20,17 @@ trait VirtualType extends js.Object {
   def set(fn: js.Function): this.type
 }
 
+object VirtualType {
+  @scala.inline
+  def apply(
+    applyGetters: js.Function2[js.Any, js.Any, js.Any],
+    applySetters: js.Function2[js.Any, js.Any, js.Any],
+    get: js.Function1[js.Function, VirtualType],
+    set: js.Function1[js.Function, VirtualType]
+  ): VirtualType = {
+    val __obj = js.Dynamic.literal(applyGetters = applyGetters, applySetters = applySetters, get = get, set = set)
+  
+    __obj.asInstanceOf[VirtualType]
+  }
+}
+

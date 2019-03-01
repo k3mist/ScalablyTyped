@@ -13,3 +13,23 @@ trait ObjectExpression
   var type_ObjectExpression: babelDashTypesLib.babelDashTypesLibStrings.ObjectExpression
 }
 
+object ObjectExpression {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    properties: js.Array[ObjectProperty | ObjectMethod | SpreadProperty],
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.ObjectExpression,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): ObjectExpression = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, properties = properties, start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[ObjectExpression]
+  }
+}
+

@@ -15,3 +15,12 @@ trait Keyboard extends js.Object {
   def onTextChange(): scala.Unit
 }
 
+object Keyboard {
+  @scala.inline
+  def apply(onTextChange: js.Function0[scala.Unit], text: java.lang.String): Keyboard = {
+    val __obj = js.Dynamic.literal(onTextChange = onTextChange, text = text)
+  
+    __obj.asInstanceOf[Keyboard]
+  }
+}
+

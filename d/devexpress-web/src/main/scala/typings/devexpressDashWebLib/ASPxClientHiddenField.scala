@@ -59,3 +59,38 @@ trait ASPxClientHiddenField extends ASPxClientControl {
   def Set(propertyName: java.lang.String, propertyValue: js.Object): scala.Unit
 }
 
+object ASPxClientHiddenField {
+  @scala.inline
+  def apply(
+    Add: js.Function2[java.lang.String, js.Object, scala.Unit],
+    AdjustControl: js.Function0[scala.Unit],
+    BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]],
+    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]],
+    Clear: js.Function0[scala.Unit],
+    Contains: js.Function1[java.lang.String, scala.Boolean],
+    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]],
+    Get: js.Function1[java.lang.String, js.Object],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    PerformCallback: js.Function1[java.lang.String, scala.Unit],
+    Remove: js.Function1[java.lang.String, scala.Unit],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    Set: js.Function2[java.lang.String, js.Object, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientHiddenField = {
+    val __obj = js.Dynamic.literal(Add = Add, AdjustControl = AdjustControl, BeginCallback = BeginCallback, CallbackError = CallbackError, Clear = Clear, Contains = Contains, EndCallback = EndCallback, Get = Get, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, PerformCallback = PerformCallback, Remove = Remove, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, Set = Set, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
+    __obj.asInstanceOf[ASPxClientHiddenField]
+  }
+}
+

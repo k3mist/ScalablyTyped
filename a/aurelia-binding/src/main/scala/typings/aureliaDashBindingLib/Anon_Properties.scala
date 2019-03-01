@@ -10,3 +10,15 @@ trait Anon_Properties extends js.Object {
   var tagName: java.lang.String
 }
 
+object Anon_Properties {
+  @scala.inline
+  def apply(
+    properties: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
+    tagName: java.lang.String
+  ): Anon_Properties = {
+    val __obj = js.Dynamic.literal(properties = properties, tagName = tagName)
+  
+    __obj.asInstanceOf[Anon_Properties]
+  }
+}
+

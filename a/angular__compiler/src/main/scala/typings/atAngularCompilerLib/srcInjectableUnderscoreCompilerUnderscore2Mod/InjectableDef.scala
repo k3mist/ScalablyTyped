@@ -11,3 +11,16 @@ trait InjectableDef extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
 }
 
+object InjectableDef {
+  @scala.inline
+  def apply(
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
+  ): InjectableDef = {
+    val __obj = js.Dynamic.literal(expression = expression, statements = statements, `type` = `type`)
+  
+    __obj.asInstanceOf[InjectableDef]
+  }
+}
+

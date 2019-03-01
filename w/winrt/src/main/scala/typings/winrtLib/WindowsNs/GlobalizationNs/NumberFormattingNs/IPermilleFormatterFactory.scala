@@ -12,3 +12,18 @@ trait IPermilleFormatterFactory extends js.Object {
   ): PermilleFormatter
 }
 
+object IPermilleFormatterFactory {
+  @scala.inline
+  def apply(
+    createPermilleFormatter: js.Function2[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      java.lang.String, 
+      PermilleFormatter
+    ]
+  ): IPermilleFormatterFactory = {
+    val __obj = js.Dynamic.literal(createPermilleFormatter = createPermilleFormatter)
+  
+    __obj.asInstanceOf[IPermilleFormatterFactory]
+  }
+}
+

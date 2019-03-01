@@ -13,3 +13,18 @@ trait ExitSignalChannelRequest extends ChannelRequest {
   var signal: java.lang.String
 }
 
+object ExitSignalChannelRequest {
+  @scala.inline
+  def apply(
+    coredump: scala.Boolean,
+    description: java.lang.String,
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`exit-signal`,
+    signal: java.lang.String
+  ): ExitSignalChannelRequest = {
+    val __obj = js.Dynamic.literal(coredump = coredump, description = description, recipient = recipient, request = request, signal = signal)
+  
+    __obj.asInstanceOf[ExitSignalChannelRequest]
+  }
+}
+

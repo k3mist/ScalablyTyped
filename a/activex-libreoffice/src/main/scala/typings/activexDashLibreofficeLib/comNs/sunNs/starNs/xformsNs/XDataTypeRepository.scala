@@ -35,3 +35,32 @@ trait XDataTypeRepository
   def revokeDataType(typeName: java.lang.String): scala.Unit
 }
 
+object XDataTypeRepository {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    cloneDataType: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xsdNs.XDataType
+    ],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getBasicDataType: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.xsdNs.XDataType],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getDataType: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.xsdNs.XDataType],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    revokeDataType: js.Function1[java.lang.String, scala.Unit]
+  ): XDataTypeRepository = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, cloneDataType = cloneDataType, createEnumeration = createEnumeration, getBasicDataType = getBasicDataType, getByName = getByName, getDataType = getDataType, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release, revokeDataType = revokeDataType)
+  
+    __obj.asInstanceOf[XDataTypeRepository]
+  }
+}
+

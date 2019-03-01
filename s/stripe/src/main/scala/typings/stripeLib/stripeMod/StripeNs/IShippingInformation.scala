@@ -29,3 +29,20 @@ trait IShippingInformation extends js.Object {
   var tracking_number: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IShippingInformation {
+  @scala.inline
+  def apply(
+    address: stripeLib.Anon_City,
+    name: java.lang.String,
+    carrier: java.lang.String = null,
+    phone: java.lang.String = null,
+    tracking_number: java.lang.String = null
+  ): IShippingInformation = {
+    val __obj = js.Dynamic.literal(address = address, name = name)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number)
+    __obj.asInstanceOf[IShippingInformation]
+  }
+}
+

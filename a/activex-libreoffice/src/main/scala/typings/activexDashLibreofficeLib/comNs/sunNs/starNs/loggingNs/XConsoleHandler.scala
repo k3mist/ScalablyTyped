@@ -23,3 +23,25 @@ trait XConsoleHandler extends XLogHandler {
   var Threshold: scala.Double
 }
 
+object XConsoleHandler {
+  @scala.inline
+  def apply(
+    Encoding: java.lang.String,
+    Formatter: XLogFormatter,
+    Level: scala.Double,
+    Threshold: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    publish: js.Function1[LogRecord, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XConsoleHandler = {
+    val __obj = js.Dynamic.literal(Encoding = Encoding, Formatter = Formatter, Level = Level, Threshold = Threshold, acquire = acquire, addEventListener = addEventListener, dispose = dispose, flush = flush, publish = publish, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[XConsoleHandler]
+  }
+}
+

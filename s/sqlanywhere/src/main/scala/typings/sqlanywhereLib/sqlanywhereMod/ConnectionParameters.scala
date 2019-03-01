@@ -14,3 +14,21 @@ trait ConnectionParameters extends js.Object {
   var UserId: java.lang.String
 }
 
+object ConnectionParameters {
+  @scala.inline
+  def apply(
+    Password: java.lang.String,
+    Server: java.lang.String,
+    UserId: java.lang.String,
+    AutoStart: java.lang.String = null,
+    DatabaseFile: java.lang.String = null,
+    Host: java.lang.String = null
+  ): ConnectionParameters = {
+    val __obj = js.Dynamic.literal(Password = Password, Server = Server, UserId = UserId)
+    if (AutoStart != null) __obj.updateDynamic("AutoStart")(AutoStart)
+    if (DatabaseFile != null) __obj.updateDynamic("DatabaseFile")(DatabaseFile)
+    if (Host != null) __obj.updateDynamic("Host")(Host)
+    __obj.asInstanceOf[ConnectionParameters]
+  }
+}
+

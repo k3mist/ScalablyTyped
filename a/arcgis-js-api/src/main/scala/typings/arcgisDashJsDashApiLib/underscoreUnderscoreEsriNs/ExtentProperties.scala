@@ -74,3 +74,34 @@ trait ExtentProperties extends GeometryProperties {
   var zmin: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExtentProperties {
+  @scala.inline
+  def apply(
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    mmax: scala.Int | scala.Double = null,
+    mmin: scala.Int | scala.Double = null,
+    spatialReference: SpatialReferenceProperties = null,
+    xmax: scala.Int | scala.Double = null,
+    xmin: scala.Int | scala.Double = null,
+    ymax: scala.Int | scala.Double = null,
+    ymin: scala.Int | scala.Double = null,
+    zmax: scala.Int | scala.Double = null,
+    zmin: scala.Int | scala.Double = null
+  ): ExtentProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
+    if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (xmax != null) __obj.updateDynamic("xmax")(xmax.asInstanceOf[js.Any])
+    if (xmin != null) __obj.updateDynamic("xmin")(xmin.asInstanceOf[js.Any])
+    if (ymax != null) __obj.updateDynamic("ymax")(ymax.asInstanceOf[js.Any])
+    if (ymin != null) __obj.updateDynamic("ymin")(ymin.asInstanceOf[js.Any])
+    if (zmax != null) __obj.updateDynamic("zmax")(zmax.asInstanceOf[js.Any])
+    if (zmin != null) __obj.updateDynamic("zmin")(zmin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtentProperties]
+  }
+}
+

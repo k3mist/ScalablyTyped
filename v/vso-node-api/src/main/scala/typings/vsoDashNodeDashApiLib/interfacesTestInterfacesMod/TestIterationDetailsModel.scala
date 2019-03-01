@@ -19,3 +19,24 @@ trait TestIterationDetailsModel extends js.Object {
   var url: java.lang.String
 }
 
+object TestIterationDetailsModel {
+  @scala.inline
+  def apply(
+    actionResults: js.Array[TestActionResultModel],
+    attachments: js.Array[TestCaseResultAttachmentModel],
+    comment: java.lang.String,
+    completedDate: stdLib.Date,
+    durationInMs: scala.Double,
+    errorMessage: java.lang.String,
+    id: scala.Double,
+    outcome: java.lang.String,
+    parameters: js.Array[TestResultParameterModel],
+    startedDate: stdLib.Date,
+    url: java.lang.String
+  ): TestIterationDetailsModel = {
+    val __obj = js.Dynamic.literal(actionResults = actionResults, attachments = attachments, comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, id = id, outcome = outcome, parameters = parameters, startedDate = startedDate, url = url)
+  
+    __obj.asInstanceOf[TestIterationDetailsModel]
+  }
+}
+

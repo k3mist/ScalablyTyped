@@ -33,3 +33,19 @@ trait R3DependencyMetadata extends js.Object {
   var token: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
 }
 
+object R3DependencyMetadata {
+  @scala.inline
+  def apply(
+    host: scala.Boolean,
+    optional: scala.Boolean,
+    resolved: R3ResolvedDependencyType,
+    self: scala.Boolean,
+    skipSelf: scala.Boolean,
+    token: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+  ): R3DependencyMetadata = {
+    val __obj = js.Dynamic.literal(host = host, optional = optional, resolved = resolved, self = self, skipSelf = skipSelf, token = token)
+  
+    __obj.asInstanceOf[R3DependencyMetadata]
+  }
+}
+

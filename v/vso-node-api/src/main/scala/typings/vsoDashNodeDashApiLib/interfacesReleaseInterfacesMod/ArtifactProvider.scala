@@ -12,3 +12,12 @@ trait ArtifactProvider extends js.Object {
   var version: java.lang.String
 }
 
+object ArtifactProvider {
+  @scala.inline
+  def apply(id: scala.Double, name: java.lang.String, sourceUri: java.lang.String, version: java.lang.String): ArtifactProvider = {
+    val __obj = js.Dynamic.literal(id = id, name = name, sourceUri = sourceUri, version = version)
+  
+    __obj.asInstanceOf[ArtifactProvider]
+  }
+}
+

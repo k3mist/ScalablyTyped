@@ -24,3 +24,17 @@ trait AssessmentTemplateArgs extends js.Object {
   val targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object AssessmentTemplateArgs {
+  @scala.inline
+  def apply(
+    duration: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    rulesPackageArns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): AssessmentTemplateArgs = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], rulesPackageArns = rulesPackageArns.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AssessmentTemplateArgs]
+  }
+}
+

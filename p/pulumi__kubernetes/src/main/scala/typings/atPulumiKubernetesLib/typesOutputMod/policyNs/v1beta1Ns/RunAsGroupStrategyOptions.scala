@@ -21,3 +21,12 @@ trait RunAsGroupStrategyOptions extends js.Object {
   val rule: java.lang.String
 }
 
+object RunAsGroupStrategyOptions {
+  @scala.inline
+  def apply(ranges: js.Array[IDRange], rule: java.lang.String): RunAsGroupStrategyOptions = {
+    val __obj = js.Dynamic.literal(ranges = ranges, rule = rule)
+  
+    __obj.asInstanceOf[RunAsGroupStrategyOptions]
+  }
+}
+

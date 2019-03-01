@@ -28,3 +28,22 @@ trait XImportFilter
   ): scala.Boolean
 }
 
+object XImportFilter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    importer: js.Function3[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XImportFilter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, importer = importer, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XImportFilter]
+  }
+}
+

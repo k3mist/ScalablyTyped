@@ -22,3 +22,17 @@ trait ScrollToOptions
   var easing: cypressLib.cypressLibStrings.swing | cypressLib.cypressLibStrings.linear
 }
 
+object ScrollToOptions {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    easing: cypressLib.cypressLibStrings.swing | cypressLib.cypressLibStrings.linear,
+    log: scala.Boolean,
+    timeout: scala.Double
+  ): ScrollToOptions = {
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing.asInstanceOf[js.Any], log = log, timeout = timeout)
+  
+    __obj.asInstanceOf[ScrollToOptions]
+  }
+}
+

@@ -10,3 +10,12 @@ trait CreateIndexAction extends Action {
   var `type`: ActionTypes
 }
 
+object CreateIndexAction {
+  @scala.inline
+  def apply(args: js.Array[_], `type`: ActionTypes): CreateIndexAction = {
+    val __obj = js.Dynamic.literal(args = args, `type` = `type`)
+  
+    __obj.asInstanceOf[CreateIndexAction]
+  }
+}
+

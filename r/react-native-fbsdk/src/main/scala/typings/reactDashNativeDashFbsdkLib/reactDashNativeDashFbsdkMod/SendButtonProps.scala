@@ -16,3 +16,12 @@ trait SendButtonProps extends js.Object {
   var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
 }
 
+object SendButtonProps {
+  @scala.inline
+  def apply(shareContent: ShareContent, style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null): SendButtonProps = {
+    val __obj = js.Dynamic.literal(shareContent = shareContent)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SendButtonProps]
+  }
+}
+

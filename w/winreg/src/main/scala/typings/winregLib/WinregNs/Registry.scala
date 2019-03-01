@@ -140,3 +140,53 @@ trait Registry extends js.Object {
   def values(cb: js.Function2[/* err */ stdLib.Error, /* result */ js.Array[RegistryItem], scala.Unit]): Registry
 }
 
+object Registry {
+  @scala.inline
+  def apply(
+    arch: java.lang.String,
+    clear: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    create: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    destroy: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    erase: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    get: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ stdLib.Error, /* result */ RegistryItem, scala.Unit], 
+      Registry
+    ],
+    hive: java.lang.String,
+    host: java.lang.String,
+    key: java.lang.String,
+    keyExists: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit], 
+      Registry
+    ],
+    keys: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* result */ js.Array[Registry], scala.Unit], 
+      Registry
+    ],
+    parent: Registry,
+    path: java.lang.String,
+    remove: js.Function2[java.lang.String, js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    set: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      js.Function1[/* err */ stdLib.Error, scala.Unit], 
+      Registry
+    ],
+    valueExists: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit], 
+      Registry
+    ],
+    values: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* result */ js.Array[RegistryItem], scala.Unit], 
+      Registry
+    ]
+  ): Registry = {
+    val __obj = js.Dynamic.literal(arch = arch, clear = clear, create = create, destroy = destroy, erase = erase, get = get, hive = hive, host = host, key = key, keyExists = keyExists, keys = keys, parent = parent, path = path, remove = remove, set = set, valueExists = valueExists, values = values)
+  
+    __obj.asInstanceOf[Registry]
+  }
+}
+

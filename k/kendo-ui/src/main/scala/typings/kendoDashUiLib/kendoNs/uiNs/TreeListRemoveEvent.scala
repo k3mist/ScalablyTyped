@@ -10,3 +10,19 @@ trait TreeListRemoveEvent extends TreeListEvent {
   var row: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object TreeListRemoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeList,
+    model: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
+    row: kendoDashUiLib.JQuery = null
+  ): TreeListRemoveEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[TreeListRemoveEvent]
+  }
+}
+

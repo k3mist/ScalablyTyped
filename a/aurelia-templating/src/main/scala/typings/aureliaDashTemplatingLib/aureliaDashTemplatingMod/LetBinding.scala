@@ -24,3 +24,17 @@ trait LetBinding extends js.Object {
   def updateTarget(value: js.Any): scala.Unit
 }
 
+object LetBinding {
+  @scala.inline
+  def apply(
+    bind: js.Function1[aureliaDashBindingLib.aureliaDashBindingMod.Scope, scala.Unit],
+    sourceExpression: aureliaDashBindingLib.aureliaDashBindingMod.Expression,
+    unbind: js.Function0[scala.Unit],
+    updateTarget: js.Function1[js.Any, scala.Unit]
+  ): LetBinding = {
+    val __obj = js.Dynamic.literal(bind = bind, sourceExpression = sourceExpression, unbind = unbind, updateTarget = updateTarget)
+  
+    __obj.asInstanceOf[LetBinding]
+  }
+}
+

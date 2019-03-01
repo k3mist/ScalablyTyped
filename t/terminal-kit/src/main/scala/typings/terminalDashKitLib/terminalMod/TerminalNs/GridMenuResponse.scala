@@ -13,3 +13,18 @@ trait GridMenuResponse extends js.Object {
   var y: scala.Double
 }
 
+object GridMenuResponse {
+  @scala.inline
+  def apply(
+    selectedIndex: scala.Double,
+    selectedText: java.lang.String,
+    unexpectedKey: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): GridMenuResponse = {
+    val __obj = js.Dynamic.literal(selectedIndex = selectedIndex, selectedText = selectedText, unexpectedKey = unexpectedKey, x = x, y = y)
+  
+    __obj.asInstanceOf[GridMenuResponse]
+  }
+}
+

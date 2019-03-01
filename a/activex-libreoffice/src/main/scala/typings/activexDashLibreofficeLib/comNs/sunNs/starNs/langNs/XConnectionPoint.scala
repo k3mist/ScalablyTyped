@@ -87,3 +87,26 @@ trait XConnectionPoint
   def unadvise(xListener: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): scala.Unit
 }
 
+object XConnectionPoint {
+  @scala.inline
+  def apply(
+    ConnectionPointContainer: XConnectionPointContainer,
+    ConnectionType: activexDashLibreofficeLib.`type`,
+    Connections: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    acquire: js.Function0[scala.Unit],
+    advise: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    getConnectionPointContainer: js.Function0[XConnectionPointContainer],
+    getConnectionType: js.Function0[activexDashLibreofficeLib.`type`],
+    getConnections: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unadvise: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XConnectionPoint = {
+    val __obj = js.Dynamic.literal(ConnectionPointContainer = ConnectionPointContainer, ConnectionType = ConnectionType, Connections = Connections, acquire = acquire, advise = advise, getConnectionPointContainer = getConnectionPointContainer, getConnectionType = getConnectionType, getConnections = getConnections, queryInterface = queryInterface, release = release, unadvise = unadvise)
+  
+    __obj.asInstanceOf[XConnectionPoint]
+  }
+}
+

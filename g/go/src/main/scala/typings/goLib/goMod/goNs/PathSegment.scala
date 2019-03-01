@@ -57,3 +57,33 @@ trait PathSegment extends js.Object {
   def equalsApprox(s: PathSegment): scala.Boolean
 }
 
+object PathSegment {
+  @scala.inline
+  def apply(
+    centerX: scala.Double,
+    centerY: scala.Double,
+    close: js.Function0[PathSegment],
+    copy: js.Function0[PathSegment],
+    endX: scala.Double,
+    endY: scala.Double,
+    equalsApprox: js.Function1[PathSegment, scala.Boolean],
+    isClockwiseArc: scala.Boolean,
+    isClosed: scala.Boolean,
+    isLargeArc: scala.Boolean,
+    point1X: scala.Double,
+    point1Y: scala.Double,
+    point2X: scala.Double,
+    point2Y: scala.Double,
+    radiusX: scala.Double,
+    radiusY: scala.Double,
+    startAngle: scala.Double,
+    sweepAngle: scala.Double,
+    `type`: EnumValue,
+    xAxisRotation: scala.Double
+  ): PathSegment = {
+    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY, close = close, copy = copy, endX = endX, endY = endY, equalsApprox = equalsApprox, isClockwiseArc = isClockwiseArc, isClosed = isClosed, isLargeArc = isLargeArc, point1X = point1X, point1Y = point1Y, point2X = point2X, point2Y = point2Y, radiusX = radiusX, radiusY = radiusY, startAngle = startAngle, sweepAngle = sweepAngle, `type` = `type`, xAxisRotation = xAxisRotation)
+  
+    __obj.asInstanceOf[PathSegment]
+  }
+}
+

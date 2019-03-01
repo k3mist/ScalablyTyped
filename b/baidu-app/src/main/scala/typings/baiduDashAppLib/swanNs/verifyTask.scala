@@ -11,3 +11,12 @@ trait verifyTask extends js.Object {
   var errno: java.lang.String
 }
 
+object verifyTask {
+  @scala.inline
+  def apply(data: baiduDashAppLib.Anon_Result, errmsg: java.lang.String, errno: java.lang.String): verifyTask = {
+    val __obj = js.Dynamic.literal(data = data, errmsg = errmsg, errno = errno)
+  
+    __obj.asInstanceOf[verifyTask]
+  }
+}
+

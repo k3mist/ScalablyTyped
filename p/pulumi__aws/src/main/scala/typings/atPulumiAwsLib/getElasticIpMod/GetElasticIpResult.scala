@@ -48,3 +48,23 @@ trait GetElasticIpResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetElasticIpResult {
+  @scala.inline
+  def apply(
+    associationId: java.lang.String,
+    domain: java.lang.String,
+    id: java.lang.String,
+    instanceId: java.lang.String,
+    networkInterfaceId: java.lang.String,
+    networkInterfaceOwnerId: java.lang.String,
+    privateIp: java.lang.String,
+    publicIp: java.lang.String,
+    publicIpv4Pool: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetElasticIpResult = {
+    val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateIp = privateIp, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
+  
+    __obj.asInstanceOf[GetElasticIpResult]
+  }
+}
+

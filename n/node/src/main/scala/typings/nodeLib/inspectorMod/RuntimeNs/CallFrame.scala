@@ -31,3 +31,18 @@ trait CallFrame extends js.Object {
   var url: java.lang.String
 }
 
+object CallFrame {
+  @scala.inline
+  def apply(
+    columnNumber: scala.Double,
+    functionName: java.lang.String,
+    lineNumber: scala.Double,
+    scriptId: ScriptId,
+    url: java.lang.String
+  ): CallFrame = {
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, functionName = functionName, lineNumber = lineNumber, scriptId = scriptId, url = url)
+  
+    __obj.asInstanceOf[CallFrame]
+  }
+}
+

@@ -12,3 +12,17 @@ trait USBEndpoint extends js.Object {
   val `type`: USBEndpointType
 }
 
+object USBEndpoint {
+  @scala.inline
+  def apply(
+    direction: USBDirection,
+    endpointNumber: scala.Double,
+    packetSize: scala.Double,
+    `type`: USBEndpointType
+  ): USBEndpoint = {
+    val __obj = js.Dynamic.literal(direction = direction, endpointNumber = endpointNumber, packetSize = packetSize, `type` = `type`)
+  
+    __obj.asInstanceOf[USBEndpoint]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_LineColor extends js.Object {
   var rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
 }
 
+object Anon_LineColor {
+  @scala.inline
+  def apply(
+    lineColor: java.lang.String,
+    lineWidth: scala.Double,
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
+  ): Anon_LineColor = {
+    val __obj = js.Dynamic.literal(lineColor = lineColor, lineWidth = lineWidth, rendered = rendered.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_LineColor]
+  }
+}
+

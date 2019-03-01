@@ -10,3 +10,12 @@ trait IntrospectionListTypeRef extends IntrospectionTypeRef {
   var ofType: js.UndefOr[IntrospectionTypeRef] = js.undefined
 }
 
+object IntrospectionListTypeRef {
+  @scala.inline
+  def apply(kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.LIST, ofType: IntrospectionTypeRef = null): IntrospectionListTypeRef = {
+    val __obj = js.Dynamic.literal(kind = kind)
+    if (ofType != null) __obj.updateDynamic("ofType")(ofType)
+    __obj.asInstanceOf[IntrospectionListTypeRef]
+  }
+}
+

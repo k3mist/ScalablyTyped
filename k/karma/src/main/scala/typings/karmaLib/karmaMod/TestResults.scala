@@ -13,3 +13,18 @@ trait TestResults extends js.Object {
   var success: scala.Double
 }
 
+object TestResults {
+  @scala.inline
+  def apply(
+    disconnected: scala.Boolean,
+    error: scala.Boolean,
+    exitCode: scala.Double,
+    failed: scala.Double,
+    success: scala.Double
+  ): TestResults = {
+    val __obj = js.Dynamic.literal(disconnected = disconnected, error = error, exitCode = exitCode, failed = failed, success = success)
+  
+    __obj.asInstanceOf[TestResults]
+  }
+}
+

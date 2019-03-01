@@ -21,3 +21,12 @@ trait TopologySelectorLabelRequirement extends js.Object {
   val values: js.Array[java.lang.String]
 }
 
+object TopologySelectorLabelRequirement {
+  @scala.inline
+  def apply(key: java.lang.String, values: js.Array[java.lang.String]): TopologySelectorLabelRequirement = {
+    val __obj = js.Dynamic.literal(key = key, values = values)
+  
+    __obj.asInstanceOf[TopologySelectorLabelRequirement]
+  }
+}
+

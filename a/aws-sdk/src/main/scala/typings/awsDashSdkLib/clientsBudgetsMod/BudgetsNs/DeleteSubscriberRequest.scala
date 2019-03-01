@@ -24,3 +24,12 @@ trait DeleteSubscriberRequest extends js.Object {
   var Subscriber: Subscriber
 }
 
+object DeleteSubscriberRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification, Subscriber: Subscriber): DeleteSubscriberRequest = {
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, Notification = Notification, Subscriber = Subscriber)
+  
+    __obj.asInstanceOf[DeleteSubscriberRequest]
+  }
+}
+

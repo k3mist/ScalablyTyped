@@ -16,3 +16,12 @@ trait ColorStop extends js.Object {
   var position: scala.Double
 }
 
+object ColorStop {
+  @scala.inline
+  def apply(alpha: scala.Double, color: OpaqueColor, position: scala.Double): ColorStop = {
+    val __obj = js.Dynamic.literal(alpha = alpha, color = color, position = position)
+  
+    __obj.asInstanceOf[ColorStop]
+  }
+}
+

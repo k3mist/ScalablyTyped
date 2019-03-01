@@ -20,3 +20,16 @@ trait CodeActionParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object CodeActionParams {
+  @scala.inline
+  def apply(
+    context: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionContext,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): CodeActionParams = {
+    val __obj = js.Dynamic.literal(context = context, range = range, textDocument = textDocument)
+  
+    __obj.asInstanceOf[CodeActionParams]
+  }
+}
+

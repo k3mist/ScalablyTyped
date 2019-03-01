@@ -14,3 +14,12 @@ trait Anon_ChildrenHasValue extends js.Object {
   var isMulti: scala.Boolean
 }
 
+object Anon_ChildrenHasValue {
+  @scala.inline
+  def apply(children: reactLib.reactMod.ReactNs.ReactNode, hasValue: scala.Boolean, isMulti: scala.Boolean): Anon_ChildrenHasValue = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], hasValue = hasValue, isMulti = isMulti)
+  
+    __obj.asInstanceOf[Anon_ChildrenHasValue]
+  }
+}
+

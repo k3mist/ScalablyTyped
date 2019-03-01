@@ -16,3 +16,20 @@ import scala.scalajs.js.annotation._
   def updateZIndex(zIndex: scala.Double): scala.Unit
 }
 
+object Label {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    onAdd: js.Function1[leafletLib.leafletMod.Map, scala.Unit],
+    onRemove: js.Function1[leafletLib.leafletMod.Map, scala.Unit],
+    setContent: js.Function1[java.lang.String, Label],
+    setLatLng: js.Function1[leafletLib.leafletMod.LatLng, Label],
+    setOpacity: js.Function1[scala.Double, scala.Unit],
+    updateZIndex: js.Function1[scala.Double, scala.Unit]
+  ): Label = {
+    val __obj = js.Dynamic.literal(close = close, onAdd = onAdd, onRemove = onRemove, setContent = setContent, setLatLng = setLatLng, setOpacity = setOpacity, updateZIndex = updateZIndex)
+  
+    __obj.asInstanceOf[Label]
+  }
+}
+

@@ -43,3 +43,49 @@ import scala.scalajs.js.annotation._
   def nodeRepulsion(node: js.Any): scala.Double
 }
 
+object CoseLayoutOptions {
+  @scala.inline
+  def apply(
+    componentSpacing: scala.Double,
+    coolingFactor: scala.Double,
+    edgeElasticity: js.Function1[js.Any, scala.Double],
+    fit: scala.Boolean,
+    gravity: scala.Double,
+    idealEdgeLength: js.Function1[js.Any, scala.Double],
+    initialTemp: scala.Double,
+    minTemp: scala.Double,
+    name: cytoscapeLib.cytoscapeLibStrings.cose,
+    nestingFactor: scala.Double,
+    nodeDimensionsIncludeLabels: scala.Boolean,
+    nodeOverlap: scala.Double,
+    nodeRepulsion: js.Function1[js.Any, scala.Double],
+    numIter: scala.Double,
+    randomize: scala.Boolean,
+    refresh: scala.Double,
+    weaver: scala.Boolean,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    padding: scala.Int | scala.Double = null,
+    ready: LayoutHandler = null,
+    sort: SortingFunction = null,
+    spacingFactor: scala.Int | scala.Double = null,
+    stop: LayoutHandler = null
+  ): CoseLayoutOptions = {
+    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing, coolingFactor = coolingFactor, edgeElasticity = edgeElasticity, fit = fit, gravity = gravity, idealEdgeLength = idealEdgeLength, initialTemp = initialTemp, minTemp = minTemp, name = name, nestingFactor = nestingFactor, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, nodeOverlap = nodeOverlap, nodeRepulsion = nodeRepulsion, numIter = numIter, randomize = randomize, refresh = refresh, weaver = weaver)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[CoseLayoutOptions]
+  }
+}
+

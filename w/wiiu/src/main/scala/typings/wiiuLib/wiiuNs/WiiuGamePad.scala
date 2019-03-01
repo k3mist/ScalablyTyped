@@ -38,3 +38,43 @@ trait WiiuGamePad extends js.Object {
   def update(): WiiuGamePad
 }
 
+object WiiuGamePad {
+  @scala.inline
+  def apply(
+    accX: scala.Double,
+    accY: scala.Double,
+    accZ: scala.Double,
+    angleX: scala.Double,
+    angleY: scala.Double,
+    angleZ: scala.Double,
+    contentX: scala.Double,
+    contentY: scala.Double,
+    dirXx: scala.Double,
+    dirXy: scala.Double,
+    dirXz: scala.Double,
+    dirYx: scala.Double,
+    dirYy: scala.Double,
+    dirYz: scala.Double,
+    dirZx: scala.Double,
+    dirZy: scala.Double,
+    dirZz: scala.Double,
+    gyroX: scala.Double,
+    gyroY: scala.Double,
+    gyroZ: scala.Double,
+    hold: scala.Double,
+    isDataValid: scala.Boolean,
+    isEnabled: scala.Boolean,
+    lStickX: scala.Double,
+    lStickY: scala.Double,
+    rStickX: scala.Double,
+    rStickY: scala.Double,
+    tpTouch: scala.Boolean,
+    tpValidity: scala.Double,
+    update: js.Function0[WiiuGamePad]
+  ): WiiuGamePad = {
+    val __obj = js.Dynamic.literal(accX = accX, accY = accY, accZ = accZ, angleX = angleX, angleY = angleY, angleZ = angleZ, contentX = contentX, contentY = contentY, dirXx = dirXx, dirXy = dirXy, dirXz = dirXz, dirYx = dirYx, dirYy = dirYy, dirYz = dirYz, dirZx = dirZx, dirZy = dirZy, dirZz = dirZz, gyroX = gyroX, gyroY = gyroY, gyroZ = gyroZ, hold = hold, isDataValid = isDataValid, isEnabled = isEnabled, lStickX = lStickX, lStickY = lStickY, rStickX = rStickX, rStickY = rStickY, tpTouch = tpTouch, tpValidity = tpValidity, update = update)
+  
+    __obj.asInstanceOf[WiiuGamePad]
+  }
+}
+

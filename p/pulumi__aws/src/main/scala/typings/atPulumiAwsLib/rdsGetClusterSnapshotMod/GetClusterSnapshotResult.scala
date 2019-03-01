@@ -61,3 +61,27 @@ trait GetClusterSnapshotResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetClusterSnapshotResult {
+  @scala.inline
+  def apply(
+    allocatedStorage: scala.Double,
+    availabilityZones: js.Array[java.lang.String],
+    dbClusterSnapshotArn: java.lang.String,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    licenseModel: java.lang.String,
+    port: scala.Double,
+    snapshotCreateTime: java.lang.String,
+    sourceDbClusterSnapshotArn: java.lang.String,
+    status: java.lang.String,
+    storageEncrypted: scala.Boolean,
+    vpcId: java.lang.String
+  ): GetClusterSnapshotResult = {
+    val __obj = js.Dynamic.literal(allocatedStorage = allocatedStorage, availabilityZones = availabilityZones, dbClusterSnapshotArn = dbClusterSnapshotArn, engine = engine, engineVersion = engineVersion, id = id, kmsKeyId = kmsKeyId, licenseModel = licenseModel, port = port, snapshotCreateTime = snapshotCreateTime, sourceDbClusterSnapshotArn = sourceDbClusterSnapshotArn, status = status, storageEncrypted = storageEncrypted, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetClusterSnapshotResult]
+  }
+}
+

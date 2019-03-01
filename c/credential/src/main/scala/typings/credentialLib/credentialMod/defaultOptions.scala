@@ -11,3 +11,12 @@ trait defaultOptions extends js.Object {
   var work: scala.Double
 }
 
+object defaultOptions {
+  @scala.inline
+  def apply(hashMethod: java.lang.String, keyLength: scala.Double, work: scala.Double): defaultOptions = {
+    val __obj = js.Dynamic.literal(hashMethod = hashMethod, keyLength = keyLength, work = work)
+  
+    __obj.asInstanceOf[defaultOptions]
+  }
+}
+

@@ -12,3 +12,12 @@ trait PointBoundsObjectLiteral extends js.Object {
   var minY: scala.Double
 }
 
+object PointBoundsObjectLiteral {
+  @scala.inline
+  def apply(maxX: scala.Double, maxY: scala.Double, minX: scala.Double, minY: scala.Double): PointBoundsObjectLiteral = {
+    val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, minX = minX, minY = minY)
+  
+    __obj.asInstanceOf[PointBoundsObjectLiteral]
+  }
+}
+

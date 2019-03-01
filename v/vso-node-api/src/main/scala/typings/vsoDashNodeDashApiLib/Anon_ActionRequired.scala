@@ -15,3 +15,20 @@ trait Anon_ActionRequired extends js.Object {
   var versionUpdated: scala.Double
 }
 
+object Anon_ActionRequired {
+  @scala.inline
+  def apply(
+    actionRequired: scala.Double,
+    actionResolved: scala.Double,
+    disabled: scala.Double,
+    enabled: scala.Double,
+    installed: scala.Double,
+    uninstalled: scala.Double,
+    versionUpdated: scala.Double
+  ): Anon_ActionRequired = {
+    val __obj = js.Dynamic.literal(actionRequired = actionRequired, actionResolved = actionResolved, disabled = disabled, enabled = enabled, installed = installed, uninstalled = uninstalled, versionUpdated = versionUpdated)
+  
+    __obj.asInstanceOf[Anon_ActionRequired]
+  }
+}
+

@@ -20,3 +20,12 @@ trait HeatmapData[T] extends js.Object {
   var min: scala.Double
 }
 
+object HeatmapData {
+  @scala.inline
+  def apply[T](data: js.Array[T], max: scala.Double, min: scala.Double): HeatmapData[T] = {
+    val __obj = js.Dynamic.literal(data = data, max = max, min = min)
+  
+    __obj.asInstanceOf[HeatmapData[T]]
+  }
+}
+

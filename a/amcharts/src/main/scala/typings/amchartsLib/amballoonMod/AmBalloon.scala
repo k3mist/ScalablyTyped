@@ -96,3 +96,32 @@ trait AmBalloon extends js.Object {
   def show(value: java.lang.String): scala.Unit
 }
 
+object AmBalloon {
+  @scala.inline
+  def apply(
+    adjustBorderColor: scala.Boolean,
+    borderAlpha: scala.Double,
+    borderColor: java.lang.String,
+    borderThickness: scala.Double,
+    color: java.lang.String,
+    cornerRadius: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    hide: js.Function0[scala.Unit],
+    horizontalPadding: scala.Double,
+    pointerWidth: scala.Double,
+    setBounds: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    setPosition: js.Function2[scala.Double, scala.Double, scala.Unit],
+    show: js.Function1[java.lang.String, scala.Unit],
+    showBullet: scala.Boolean,
+    textAlign: java.lang.String,
+    textShadowColor: java.lang.String,
+    verticalPadding: scala.Double
+  ): AmBalloon = {
+    val __obj = js.Dynamic.literal(adjustBorderColor = adjustBorderColor, borderAlpha = borderAlpha, borderColor = borderColor, borderThickness = borderThickness, color = color, cornerRadius = cornerRadius, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, hide = hide, horizontalPadding = horizontalPadding, pointerWidth = pointerWidth, setBounds = setBounds, setPosition = setPosition, show = show, showBullet = showBullet, textAlign = textAlign, textShadowColor = textShadowColor, verticalPadding = verticalPadding)
+  
+    __obj.asInstanceOf[AmBalloon]
+  }
+}
+

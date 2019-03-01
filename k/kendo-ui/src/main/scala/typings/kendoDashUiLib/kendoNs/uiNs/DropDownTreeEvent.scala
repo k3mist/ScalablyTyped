@@ -11,3 +11,12 @@ trait DropDownTreeEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object DropDownTreeEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: DropDownTree): DropDownTreeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[DropDownTreeEvent]
+  }
+}
+

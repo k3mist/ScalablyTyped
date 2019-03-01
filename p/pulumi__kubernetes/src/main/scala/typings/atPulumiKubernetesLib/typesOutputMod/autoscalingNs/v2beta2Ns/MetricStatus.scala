@@ -41,3 +41,18 @@ trait MetricStatus extends js.Object {
   val `type`: java.lang.String
 }
 
+object MetricStatus {
+  @scala.inline
+  def apply(
+    external: ExternalMetricStatus,
+    `object`: ObjectMetricStatus,
+    pods: PodsMetricStatus,
+    resource: ResourceMetricStatus,
+    `type`: java.lang.String
+  ): MetricStatus = {
+    val __obj = js.Dynamic.literal(external = external, `object` = `object`, pods = pods, resource = resource, `type` = `type`)
+  
+    __obj.asInstanceOf[MetricStatus]
+  }
+}
+

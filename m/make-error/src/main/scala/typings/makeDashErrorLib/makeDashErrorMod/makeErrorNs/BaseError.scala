@@ -11,3 +11,12 @@ trait BaseError
   var stack_BaseError: java.lang.String
 }
 
+object BaseError {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String): BaseError = {
+    val __obj = js.Dynamic.literal(message = message, name = name, stack = stack)
+  
+    __obj.asInstanceOf[BaseError]
+  }
+}
+

@@ -33,3 +33,23 @@ trait XCheckBox
   def setState(n: scala.Double): scala.Unit
 }
 
+object XCheckBox {
+  @scala.inline
+  def apply(
+    State: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addItemListener: js.Function1[XItemListener, scala.Unit],
+    enableTriState: js.Function1[scala.Boolean, scala.Unit],
+    getState: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeItemListener: js.Function1[XItemListener, scala.Unit],
+    setLabel: js.Function1[java.lang.String, scala.Unit],
+    setState: js.Function1[scala.Double, scala.Unit]
+  ): XCheckBox = {
+    val __obj = js.Dynamic.literal(State = State, acquire = acquire, addItemListener = addItemListener, enableTriState = enableTriState, getState = getState, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener, setLabel = setLabel, setState = setState)
+  
+    __obj.asInstanceOf[XCheckBox]
+  }
+}
+

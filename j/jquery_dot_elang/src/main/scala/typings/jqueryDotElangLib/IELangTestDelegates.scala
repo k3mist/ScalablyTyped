@@ -15,3 +15,20 @@ trait IELangTestDelegates extends js.Object {
   var startStopHandler: js.Function
 }
 
+object IELangTestDelegates {
+  @scala.inline
+  def apply(
+    rdoModeClickHandler: js.Function,
+    rdoModeHandler: js.Function,
+    rdoQuestionClickHandler: js.Function,
+    rdoQuestionHandler: js.Function,
+    rdoVariantClickHandler: js.Function,
+    rdoVariantHandler: js.Function,
+    startStopHandler: js.Function
+  ): IELangTestDelegates = {
+    val __obj = js.Dynamic.literal(rdoModeClickHandler = rdoModeClickHandler, rdoModeHandler = rdoModeHandler, rdoQuestionClickHandler = rdoQuestionClickHandler, rdoQuestionHandler = rdoQuestionHandler, rdoVariantClickHandler = rdoVariantClickHandler, rdoVariantHandler = rdoVariantHandler, startStopHandler = startStopHandler)
+  
+    __obj.asInstanceOf[IELangTestDelegates]
+  }
+}
+

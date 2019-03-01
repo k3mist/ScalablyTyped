@@ -24,3 +24,29 @@ trait PalxPalette
   var yellow: js.Array[java.lang.String]
 }
 
+object PalxPalette {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    black: java.lang.String,
+    blue: js.Array[java.lang.String],
+    cyan: js.Array[java.lang.String],
+    fuschia: js.Array[java.lang.String],
+    gray: js.Array[java.lang.String],
+    green: js.Array[java.lang.String],
+    indigo: js.Array[java.lang.String],
+    lime: js.Array[java.lang.String],
+    orange: js.Array[java.lang.String],
+    pink: js.Array[java.lang.String],
+    red: js.Array[java.lang.String],
+    teal: js.Array[java.lang.String],
+    violet: js.Array[java.lang.String],
+    yellow: js.Array[java.lang.String],
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null
+  ): PalxPalette = {
+    val __obj = js.Dynamic.literal(base = base, black = black, blue = blue, cyan = cyan, fuschia = fuschia, gray = gray, green = green, indigo = indigo, lime = lime, orange = orange, pink = pink, red = red, teal = teal, violet = violet, yellow = yellow)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[PalxPalette]
+  }
+}
+

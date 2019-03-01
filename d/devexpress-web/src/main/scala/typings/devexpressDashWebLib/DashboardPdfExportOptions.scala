@@ -147,3 +147,41 @@ trait DashboardPdfExportOptions extends js.Object {
   var TreemapSizeMode: java.lang.String
 }
 
+object DashboardPdfExportOptions {
+  @scala.inline
+  def apply(
+    AutoFitPageCount: scala.Double,
+    CardAutoArrangeContent: scala.Boolean,
+    ChartAutomaticPageLayout: scala.Boolean,
+    ChartSizeMode: java.lang.String,
+    DashboardAutomaticPageLayout: scala.Boolean,
+    DashboardStatePosition: java.lang.String,
+    DocumentScaleMode: java.lang.String,
+    ExportFilters: scala.Boolean,
+    ExportParameters: scala.Boolean,
+    FontInfo: ExportFontInfo,
+    GaugeAutoArrangeContent: scala.Boolean,
+    GridFitToPageWidth: scala.Boolean,
+    GridPrintHeadersOnEveryPage: scala.Boolean,
+    IncludeHiddenParameters: scala.Boolean,
+    MapAutomaticPageLayout: scala.Boolean,
+    MapSizeMode: java.lang.String,
+    PageLayout: java.lang.String,
+    PaperKind: java.lang.String,
+    PieAutoArrangeContent: scala.Boolean,
+    PivotPrintHeadersOnEveryPage: scala.Boolean,
+    RangeFilterAutomaticPageLayout: scala.Boolean,
+    RangeFilterSizeMode: java.lang.String,
+    ScaleFactor: scala.Double,
+    ScaleMode: java.lang.String,
+    ShowTitle: scala.Boolean,
+    Title: java.lang.String,
+    TreemapAutomaticPageLayout: scala.Boolean,
+    TreemapSizeMode: java.lang.String
+  ): DashboardPdfExportOptions = {
+    val __obj = js.Dynamic.literal(AutoFitPageCount = AutoFitPageCount, CardAutoArrangeContent = CardAutoArrangeContent, ChartAutomaticPageLayout = ChartAutomaticPageLayout, ChartSizeMode = ChartSizeMode, DashboardAutomaticPageLayout = DashboardAutomaticPageLayout, DashboardStatePosition = DashboardStatePosition, DocumentScaleMode = DocumentScaleMode, ExportFilters = ExportFilters, ExportParameters = ExportParameters, FontInfo = FontInfo, GaugeAutoArrangeContent = GaugeAutoArrangeContent, GridFitToPageWidth = GridFitToPageWidth, GridPrintHeadersOnEveryPage = GridPrintHeadersOnEveryPage, IncludeHiddenParameters = IncludeHiddenParameters, MapAutomaticPageLayout = MapAutomaticPageLayout, MapSizeMode = MapSizeMode, PageLayout = PageLayout, PaperKind = PaperKind, PieAutoArrangeContent = PieAutoArrangeContent, PivotPrintHeadersOnEveryPage = PivotPrintHeadersOnEveryPage, RangeFilterAutomaticPageLayout = RangeFilterAutomaticPageLayout, RangeFilterSizeMode = RangeFilterSizeMode, ScaleFactor = ScaleFactor, ScaleMode = ScaleMode, ShowTitle = ShowTitle, Title = Title, TreemapAutomaticPageLayout = TreemapAutomaticPageLayout, TreemapSizeMode = TreemapSizeMode)
+  
+    __obj.asInstanceOf[DashboardPdfExportOptions]
+  }
+}
+

@@ -31,3 +31,22 @@ trait BaseDef[T] extends js.Object {
     */ atAngularCoreLib.atAngularCoreLibStrings.BaseDef with js.Any
 }
 
+object BaseDef {
+  @scala.inline
+  def apply[T](
+    declaredInputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: P}
+    */ atAngularCoreLib.atAngularCoreLibStrings.BaseDef with js.Any,
+    inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: string}
+    */ atAngularCoreLib.atAngularCoreLibStrings.BaseDef with js.Any,
+    outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: P}
+    */ atAngularCoreLib.atAngularCoreLibStrings.BaseDef with js.Any
+  ): BaseDef[T] = {
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs, inputs = inputs, outputs = outputs)
+  
+    __obj.asInstanceOf[BaseDef[T]]
+  }
+}
+

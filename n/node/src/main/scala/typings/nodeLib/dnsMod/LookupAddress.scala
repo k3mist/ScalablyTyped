@@ -10,3 +10,12 @@ trait LookupAddress extends js.Object {
   var family: scala.Double
 }
 
+object LookupAddress {
+  @scala.inline
+  def apply(address: java.lang.String, family: scala.Double): LookupAddress = {
+    val __obj = js.Dynamic.literal(address = address, family = family)
+  
+    __obj.asInstanceOf[LookupAddress]
+  }
+}
+

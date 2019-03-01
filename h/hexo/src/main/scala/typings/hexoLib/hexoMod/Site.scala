@@ -13,3 +13,18 @@ trait Site extends js.Object {
   var tags: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Tag]
 }
 
+object Site {
+  @scala.inline
+  def apply(
+    categories: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Category],
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    pages: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Page],
+    posts: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Post],
+    tags: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Tag]
+  ): Site = {
+    val __obj = js.Dynamic.literal(categories = categories, data = data, pages = pages, posts = posts, tags = tags)
+  
+    __obj.asInstanceOf[Site]
+  }
+}
+

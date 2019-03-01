@@ -21,3 +21,19 @@ trait MeshCreatePlaneParamsSize
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MeshCreatePlaneParamsSize {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    height: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): MeshCreatePlaneParamsSize = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshCreatePlaneParamsSize]
+  }
+}
+

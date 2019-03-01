@@ -30,3 +30,15 @@ trait ViewState extends js.Object {
   var Clip: XPolyPolygon2D
 }
 
+object ViewState {
+  @scala.inline
+  def apply(
+    AffineTransform: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
+    Clip: XPolyPolygon2D
+  ): ViewState = {
+    val __obj = js.Dynamic.literal(AffineTransform = AffineTransform, Clip = Clip)
+  
+    __obj.asInstanceOf[ViewState]
+  }
+}
+

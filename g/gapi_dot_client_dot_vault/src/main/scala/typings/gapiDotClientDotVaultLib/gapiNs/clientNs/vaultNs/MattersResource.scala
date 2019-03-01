@@ -38,3 +38,54 @@ trait MattersResource extends js.Object {
   def update(request: gapiDotClientDotVaultLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
 }
 
+object MattersResource {
+  @scala.inline
+  def apply(
+    addPermissions: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MatterPermission]
+    ],
+    close: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CloseMatterResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    get: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    holds: HoldsResource,
+    list: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMattersResponse]
+    ],
+    removePermissions: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    reopen: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReopenMatterResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    update: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ]
+  ): MattersResource = {
+    val __obj = js.Dynamic.literal(addPermissions = addPermissions, close = close, create = create, delete = delete, get = get, holds = holds, list = list, removePermissions = removePermissions, reopen = reopen, undelete = undelete, update = update)
+  
+    __obj.asInstanceOf[MattersResource]
+  }
+}
+

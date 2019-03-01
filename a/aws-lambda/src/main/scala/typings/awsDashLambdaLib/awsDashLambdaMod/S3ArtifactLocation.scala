@@ -10,3 +10,12 @@ trait S3ArtifactLocation extends js.Object {
   var objectKey: java.lang.String
 }
 
+object S3ArtifactLocation {
+  @scala.inline
+  def apply(bucketName: java.lang.String, objectKey: java.lang.String): S3ArtifactLocation = {
+    val __obj = js.Dynamic.literal(bucketName = bucketName, objectKey = objectKey)
+  
+    __obj.asInstanceOf[S3ArtifactLocation]
+  }
+}
+

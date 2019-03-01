@@ -35,3 +35,17 @@ trait Binding extends js.Object {
   val target: ObjectReference
 }
 
+object Binding {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Binding,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    target: ObjectReference
+  ): Binding = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, target = target)
+  
+    __obj.asInstanceOf[Binding]
+  }
+}
+

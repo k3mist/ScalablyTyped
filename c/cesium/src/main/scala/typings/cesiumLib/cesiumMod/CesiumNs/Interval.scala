@@ -10,3 +10,12 @@ trait Interval extends js.Object {
   var stop: scala.Double
 }
 
+object Interval {
+  @scala.inline
+  def apply(start: scala.Double, stop: scala.Double): Interval = {
+    val __obj = js.Dynamic.literal(start = start, stop = stop)
+  
+    __obj.asInstanceOf[Interval]
+  }
+}
+

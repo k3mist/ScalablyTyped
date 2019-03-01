@@ -14,3 +14,18 @@ trait XTextSectionsSupplier
   def getTextSections(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XTextSectionsSupplier {
+  @scala.inline
+  def apply(
+    TextSections: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getTextSections: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextSectionsSupplier = {
+    val __obj = js.Dynamic.literal(TextSections = TextSections, acquire = acquire, getTextSections = getTextSections, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextSectionsSupplier]
+  }
+}
+

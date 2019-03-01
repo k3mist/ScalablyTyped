@@ -12,3 +12,17 @@ trait ListChildComponentProps extends js.Object {
   var style: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object ListChildComponentProps {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    index: scala.Double,
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    isScrolling: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListChildComponentProps = {
+    val __obj = js.Dynamic.literal(data = data, index = index, style = style)
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling)
+    __obj.asInstanceOf[ListChildComponentProps]
+  }
+}
+

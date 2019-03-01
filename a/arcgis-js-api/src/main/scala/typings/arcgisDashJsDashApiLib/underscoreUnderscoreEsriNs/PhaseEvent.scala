@@ -27,3 +27,19 @@ trait PhaseEvent
   var time: scala.Double
 }
 
+object PhaseEvent {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    deltaTime: scala.Double,
+    elapsedFrameTime: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    time: scala.Double
+  ): PhaseEvent = {
+    val __obj = js.Dynamic.literal(constructor = constructor, deltaTime = deltaTime, elapsedFrameTime = elapsedFrameTime, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, time = time)
+  
+    __obj.asInstanceOf[PhaseEvent]
+  }
+}
+

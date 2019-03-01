@@ -13,3 +13,19 @@ trait GridViewContextMenuEventArgs extends EventArgs {
   var showBrowserMenu: scala.Boolean
 }
 
+object GridViewContextMenuEventArgs {
+  @scala.inline
+  def apply(
+    htmlEvent: js.Any,
+    index: scala.Double,
+    menu: js.Any,
+    objectType: java.lang.String,
+    sender: Control,
+    showBrowserMenu: scala.Boolean
+  ): GridViewContextMenuEventArgs = {
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent, index = index, menu = menu, objectType = objectType, sender = sender, showBrowserMenu = showBrowserMenu)
+  
+    __obj.asInstanceOf[GridViewContextMenuEventArgs]
+  }
+}
+

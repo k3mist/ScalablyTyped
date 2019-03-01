@@ -57,3 +57,29 @@ trait StudentsResource extends js.Object {
   def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListStudentsResponse]
 }
 
+object StudentsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdEnrollmentCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Student]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Student]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListStudentsResponse]
+    ]
+  ): StudentsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[StudentsResource]
+  }
+}
+

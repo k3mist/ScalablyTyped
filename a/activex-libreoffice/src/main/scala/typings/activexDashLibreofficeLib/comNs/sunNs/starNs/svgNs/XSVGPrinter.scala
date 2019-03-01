@@ -19,3 +19,26 @@ trait XSVGPrinter
   ): scala.Boolean
 }
 
+object XSVGPrinter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    endJob: js.Function0[scala.Unit],
+    printPage: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startJob: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      java.lang.String, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Boolean
+    ]
+  ): XSVGPrinter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, endJob = endJob, printPage = printPage, queryInterface = queryInterface, release = release, startJob = startJob)
+  
+    __obj.asInstanceOf[XSVGPrinter]
+  }
+}
+

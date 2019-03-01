@@ -61,3 +61,26 @@ trait GoogleApiYouTubeVideoResource extends js.Object {
   var topicDetails: Anon_TopicIds
 }
 
+object GoogleApiYouTubeVideoResource {
+  @scala.inline
+  def apply(
+    contentDetails: Anon_Caption,
+    etag: java.lang.String,
+    fileDetails: Anon_AudioStreams,
+    id: java.lang.String,
+    kind: java.lang.String,
+    player: Anon_EmbedHtml,
+    processingDetails: Anon_EditorSuggestionsAvailability,
+    recordingDetails: Anon_Location,
+    snippet: Anon_CategoryIdChannelId,
+    statistics: Anon_CommentCountDislikeCount,
+    status: Anon_Embeddable,
+    suggestions: Anon_EditorSuggestions,
+    topicDetails: Anon_TopicIds
+  ): GoogleApiYouTubeVideoResource = {
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, fileDetails = fileDetails, id = id, kind = kind, player = player, processingDetails = processingDetails, recordingDetails = recordingDetails, snippet = snippet, statistics = statistics, status = status, suggestions = suggestions, topicDetails = topicDetails)
+  
+    __obj.asInstanceOf[GoogleApiYouTubeVideoResource]
+  }
+}
+

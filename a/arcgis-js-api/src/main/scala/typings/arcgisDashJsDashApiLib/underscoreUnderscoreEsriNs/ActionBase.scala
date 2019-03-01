@@ -58,3 +58,20 @@ trait ActionBase extends js.Object {
   var visible: scala.Boolean
 }
 
+object ActionBase {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    className: java.lang.String,
+    disabled: scala.Boolean,
+    id: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String,
+    visible: scala.Boolean
+  ): ActionBase = {
+    val __obj = js.Dynamic.literal(active = active, className = className, disabled = disabled, id = id, title = title, `type` = `type`, visible = visible)
+  
+    __obj.asInstanceOf[ActionBase]
+  }
+}
+

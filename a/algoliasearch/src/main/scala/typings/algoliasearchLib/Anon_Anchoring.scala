@@ -25,3 +25,16 @@ trait Anon_Anchoring extends js.Object {
   var pattern: java.lang.String
 }
 
+object Anon_Anchoring {
+  @scala.inline
+  def apply(
+    anchoring: algoliasearchLib.algoliasearchLibStrings.is | algoliasearchLib.algoliasearchLibStrings.startsWith | algoliasearchLib.algoliasearchLibStrings.endsWith | algoliasearchLib.algoliasearchLibStrings.contains,
+    pattern: java.lang.String,
+    context: java.lang.String = null
+  ): Anon_Anchoring = {
+    val __obj = js.Dynamic.literal(anchoring = anchoring.asInstanceOf[js.Any], pattern = pattern)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[Anon_Anchoring]
+  }
+}
+

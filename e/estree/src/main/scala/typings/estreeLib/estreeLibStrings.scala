@@ -349,7 +349,7 @@ object estreeLibStrings {
     extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `^`
+  sealed trait `_backtick^_backtick`
     extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
@@ -623,7 +623,7 @@ object estreeLibStrings {
   @scala.inline
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline

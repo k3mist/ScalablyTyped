@@ -21,3 +21,23 @@ trait EventOptionsObject extends _Events {
   var tags: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EventOptionsObject {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    channels: java.lang.String | js.Array[java.lang.String] = null,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    spread: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: js.UndefOr[scala.Boolean] = js.undefined
+  ): EventOptionsObject = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[EventOptionsObject]
+  }
+}
+

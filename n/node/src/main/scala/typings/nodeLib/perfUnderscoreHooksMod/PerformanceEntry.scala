@@ -32,3 +32,18 @@ trait PerformanceEntry extends js.Object {
   val startTime: scala.Double
 }
 
+object PerformanceEntry {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    entryType: java.lang.String,
+    name: java.lang.String,
+    startTime: scala.Double,
+    kind: scala.Int | scala.Double = null
+  ): PerformanceEntry = {
+    val __obj = js.Dynamic.literal(duration = duration, entryType = entryType, name = name, startTime = startTime)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerformanceEntry]
+  }
+}
+

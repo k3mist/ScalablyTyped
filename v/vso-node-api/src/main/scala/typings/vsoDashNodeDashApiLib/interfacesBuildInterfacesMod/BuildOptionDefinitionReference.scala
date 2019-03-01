@@ -12,3 +12,12 @@ trait BuildOptionDefinitionReference extends js.Object {
   var id: java.lang.String
 }
 
+object BuildOptionDefinitionReference {
+  @scala.inline
+  def apply(id: java.lang.String): BuildOptionDefinitionReference = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[BuildOptionDefinitionReference]
+  }
+}
+

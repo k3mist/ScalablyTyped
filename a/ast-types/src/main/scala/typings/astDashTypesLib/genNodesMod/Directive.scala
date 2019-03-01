@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.DirectiveLiteralKind
 }
 
+object Directive {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.Directive,
+    value: astDashTypesLib.genKindsMod.DirectiveLiteralKind
+  ): Directive = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[Directive]
+  }
+}
+

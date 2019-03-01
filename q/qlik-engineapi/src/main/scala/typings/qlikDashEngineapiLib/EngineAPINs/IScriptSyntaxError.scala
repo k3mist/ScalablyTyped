@@ -35,3 +35,19 @@ trait IScriptSyntaxError extends js.Object {
   var qTextPos: scala.Double
 }
 
+object IScriptSyntaxError {
+  @scala.inline
+  def apply(
+    qColInLine: scala.Double,
+    qErrLen: scala.Double,
+    qLineInTab: scala.Double,
+    qSecondaryFailure: scala.Boolean,
+    qTabIx: scala.Double,
+    qTextPos: scala.Double
+  ): IScriptSyntaxError = {
+    val __obj = js.Dynamic.literal(qColInLine = qColInLine, qErrLen = qErrLen, qLineInTab = qLineInTab, qSecondaryFailure = qSecondaryFailure, qTabIx = qTabIx, qTextPos = qTextPos)
+  
+    __obj.asInstanceOf[IScriptSyntaxError]
+  }
+}
+

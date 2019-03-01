@@ -12,3 +12,19 @@ trait GridToolbarItemClickEventArgs extends ProcessingModeEventArgs {
   var usePostBack: scala.Boolean
 }
 
+object GridToolbarItemClickEventArgs {
+  @scala.inline
+  def apply(
+    item: BootstrapMenuItem,
+    processOnServer: scala.Boolean,
+    sender: Control,
+    toolbarIndex: scala.Double,
+    toolbarName: java.lang.String,
+    usePostBack: scala.Boolean
+  ): GridToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(item = item, processOnServer = processOnServer, sender = sender, toolbarIndex = toolbarIndex, toolbarName = toolbarName, usePostBack = usePostBack)
+  
+    __obj.asInstanceOf[GridToolbarItemClickEventArgs]
+  }
+}
+

@@ -95,3 +95,34 @@ trait IOptions[T] extends js.Object {
   var unique: scala.Boolean
 }
 
+object IOptions {
+  @scala.inline
+  def apply[T](
+    absolute: scala.Boolean,
+    brace: scala.Boolean,
+    `case`: scala.Boolean,
+    cwd: java.lang.String,
+    deep: scala.Double | scala.Boolean,
+    dot: scala.Boolean,
+    extension: scala.Boolean,
+    followSymlinkedDirectories: scala.Boolean,
+    globstar: scala.Boolean,
+    ignore: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
+    markDirectories: scala.Boolean,
+    matchBase: scala.Boolean,
+    nobrace: scala.Boolean,
+    nocase: scala.Boolean,
+    noext: scala.Boolean,
+    noglobstar: scala.Boolean,
+    onlyDirectories: scala.Boolean,
+    onlyFiles: scala.Boolean,
+    stats: scala.Boolean,
+    unique: scala.Boolean,
+    transform: TransformFunction[T] = null
+  ): IOptions[T] = {
+    val __obj = js.Dynamic.literal(absolute = absolute, brace = brace, `case` = `case`, cwd = cwd, deep = deep.asInstanceOf[js.Any], dot = dot, extension = extension, followSymlinkedDirectories = followSymlinkedDirectories, globstar = globstar, ignore = ignore, markDirectories = markDirectories, matchBase = matchBase, nobrace = nobrace, nocase = nocase, noext = noext, noglobstar = noglobstar, onlyDirectories = onlyDirectories, onlyFiles = onlyFiles, stats = stats, unique = unique)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[IOptions[T]]
+  }
+}
+

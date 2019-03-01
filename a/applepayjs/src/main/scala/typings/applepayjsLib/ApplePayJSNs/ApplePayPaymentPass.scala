@@ -31,3 +31,19 @@ trait ApplePayPaymentPass extends js.Object {
   var primaryAccountNumberSuffix: java.lang.String
 }
 
+object ApplePayPaymentPass {
+  @scala.inline
+  def apply(
+    activationState: ApplePayPaymentPassActivationState,
+    primaryAccountIdentifier: java.lang.String,
+    primaryAccountNumberSuffix: java.lang.String,
+    deviceAccountIdentifier: java.lang.String = null,
+    deviceAccountNumberSuffix: java.lang.String = null
+  ): ApplePayPaymentPass = {
+    val __obj = js.Dynamic.literal(activationState = activationState, primaryAccountIdentifier = primaryAccountIdentifier, primaryAccountNumberSuffix = primaryAccountNumberSuffix)
+    if (deviceAccountIdentifier != null) __obj.updateDynamic("deviceAccountIdentifier")(deviceAccountIdentifier)
+    if (deviceAccountNumberSuffix != null) __obj.updateDynamic("deviceAccountNumberSuffix")(deviceAccountNumberSuffix)
+    __obj.asInstanceOf[ApplePayPaymentPass]
+  }
+}
+

@@ -31,3 +31,12 @@ trait ASPxClientToolTipFreePosition extends ASPxClientToolTipPosition {
   var paneID: scala.Double
 }
 
+object ASPxClientToolTipFreePosition {
+  @scala.inline
+  def apply(dockPosition: java.lang.String, offsetX: scala.Double, offsetY: scala.Double, paneID: scala.Double): ASPxClientToolTipFreePosition = {
+    val __obj = js.Dynamic.literal(dockPosition = dockPosition, offsetX = offsetX, offsetY = offsetY, paneID = paneID)
+  
+    __obj.asInstanceOf[ASPxClientToolTipFreePosition]
+  }
+}
+

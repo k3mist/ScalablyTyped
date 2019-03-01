@@ -12,3 +12,12 @@ trait RangeLike extends js.Object {
   var start: PointLike
 }
 
+object RangeLike {
+  @scala.inline
+  def apply(end: PointLike, start: PointLike): RangeLike = {
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
+    __obj.asInstanceOf[RangeLike]
+  }
+}
+

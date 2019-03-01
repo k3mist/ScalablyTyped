@@ -28,3 +28,21 @@ trait UserGroupArgs extends js.Object {
   val userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UserGroupArgs {
+  @scala.inline
+  def apply(
+    userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    precedence: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): UserGroupArgs = {
+    val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (precedence != null) __obj.updateDynamic("precedence")(precedence.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserGroupArgs]
+  }
+}
+

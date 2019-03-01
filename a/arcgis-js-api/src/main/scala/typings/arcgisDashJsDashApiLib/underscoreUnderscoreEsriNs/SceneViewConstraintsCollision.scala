@@ -17,3 +17,17 @@ trait SceneViewConstraintsCollision
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SceneViewConstraintsCollision {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    enabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): SceneViewConstraintsCollision = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[SceneViewConstraintsCollision]
+  }
+}
+

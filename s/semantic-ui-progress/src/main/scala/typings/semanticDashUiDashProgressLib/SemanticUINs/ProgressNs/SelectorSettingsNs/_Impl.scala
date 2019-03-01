@@ -20,3 +20,12 @@ trait _Impl extends js.Object {
   var progress: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(bar: java.lang.String, label: java.lang.String, progress: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal(bar = bar, label = label, progress = progress)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

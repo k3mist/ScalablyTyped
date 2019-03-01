@@ -11,3 +11,12 @@ trait Anon_Current extends js.Object {
   var max: scala.Double
 }
 
+object Anon_Current {
+  @scala.inline
+  def apply(current: scala.Double, high: scala.Double, max: scala.Double): Anon_Current = {
+    val __obj = js.Dynamic.literal(current = current, high = high, max = max)
+  
+    __obj.asInstanceOf[Anon_Current]
+  }
+}
+

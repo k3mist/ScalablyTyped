@@ -24,3 +24,12 @@ trait SystemMemoryInfo extends js.Object {
   var total: scala.Double
 }
 
+object SystemMemoryInfo {
+  @scala.inline
+  def apply(free: scala.Double, swapFree: scala.Double, swapTotal: scala.Double, total: scala.Double): SystemMemoryInfo = {
+    val __obj = js.Dynamic.literal(free = free, swapFree = swapFree, swapTotal = swapTotal, total = total)
+  
+    __obj.asInstanceOf[SystemMemoryInfo]
+  }
+}
+

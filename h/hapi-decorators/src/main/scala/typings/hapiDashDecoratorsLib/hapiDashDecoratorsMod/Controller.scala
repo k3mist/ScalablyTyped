@@ -12,3 +12,19 @@ trait Controller extends js.Object {
   ]
 }
 
+object Controller {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String,
+    routes: js.Function0[
+      js.Array[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
+      ]
+    ]
+  ): Controller = {
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, routes = routes)
+  
+    __obj.asInstanceOf[Controller]
+  }
+}
+

@@ -85,3 +85,18 @@ trait XObjectNames extends js.Object {
   def suggestName(CommandType: scala.Double, BaseName: java.lang.String): java.lang.String
 }
 
+object XObjectNames {
+  @scala.inline
+  def apply(
+    checkNameForCreate: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    convertToSQLName: js.Function1[java.lang.String, java.lang.String],
+    isNameUsed: js.Function2[scala.Double, java.lang.String, scala.Boolean],
+    isNameValid: js.Function2[scala.Double, java.lang.String, scala.Boolean],
+    suggestName: js.Function2[scala.Double, java.lang.String, java.lang.String]
+  ): XObjectNames = {
+    val __obj = js.Dynamic.literal(checkNameForCreate = checkNameForCreate, convertToSQLName = convertToSQLName, isNameUsed = isNameUsed, isNameValid = isNameValid, suggestName = suggestName)
+  
+    __obj.asInstanceOf[XObjectNames]
+  }
+}
+

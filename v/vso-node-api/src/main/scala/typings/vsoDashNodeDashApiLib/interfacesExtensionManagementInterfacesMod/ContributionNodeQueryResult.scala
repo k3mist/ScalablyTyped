@@ -16,3 +16,15 @@ trait ContributionNodeQueryResult extends js.Object {
   var providerDetails: org.scalablytyped.runtime.StringDictionary[ClientContributionProviderDetails]
 }
 
+object ContributionNodeQueryResult {
+  @scala.inline
+  def apply(
+    nodes: org.scalablytyped.runtime.StringDictionary[ClientContributionNode],
+    providerDetails: org.scalablytyped.runtime.StringDictionary[ClientContributionProviderDetails]
+  ): ContributionNodeQueryResult = {
+    val __obj = js.Dynamic.literal(nodes = nodes, providerDetails = providerDetails)
+  
+    __obj.asInstanceOf[ContributionNodeQueryResult]
+  }
+}
+

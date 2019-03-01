@@ -11,3 +11,12 @@ trait BootboxLocaleValues extends js.Object {
   var OK: java.lang.String
 }
 
+object BootboxLocaleValues {
+  @scala.inline
+  def apply(CANCEL: java.lang.String, CONFIRM: java.lang.String, OK: java.lang.String): BootboxLocaleValues = {
+    val __obj = js.Dynamic.literal(CANCEL = CANCEL, CONFIRM = CONFIRM, OK = OK)
+  
+    __obj.asInstanceOf[BootboxLocaleValues]
+  }
+}
+

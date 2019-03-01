@@ -104,3 +104,110 @@ trait XFormController
   def removeActivateListener(Listener: activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XFormControllerListener): scala.Unit
 }
 
+object XFormController {
+  @scala.inline
+  def apply(
+    ActiveTerm: scala.Double,
+    Container: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer,
+    Context: XFormControllerContext,
+    Controls: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    Count: scala.Double,
+    CurrentControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
+    DisjunctiveTerms: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    FilterComponents: scala.Double,
+    FormOperations: XFormOperations,
+    InteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
+    Mode: java.lang.String,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    PredicateExpressions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    SupportedModes: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    activateFirst: js.Function0[scala.Unit],
+    activateLast: js.Function0[scala.Unit],
+    activateTabOrder: js.Function0[scala.Unit],
+    addActivateListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XFormControllerListener, 
+      scala.Unit
+    ],
+    addChildController: js.Function1[XFormController, scala.Unit],
+    addConfirmDeleteListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XConfirmDeleteListener, 
+      scala.Unit
+    ],
+    addDatabaseParameterListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XDatabaseParameterListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addFilterControllerListener: js.Function1[XFilterControllerListener, scala.Unit],
+    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    addParameterListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XDatabaseParameterListener, 
+      scala.Unit
+    ],
+    addRowSetApproveListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XRowSetApproveListener, 
+      scala.Unit
+    ],
+    addSQLErrorListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XSQLErrorListener, scala.Unit],
+    appendEmptyDisjunctiveTerm: js.Function0[scala.Unit],
+    autoTabOrder: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    dispose: js.Function0[scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer],
+    getControls: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl]
+    ],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getFilterComponent: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    getMode: js.Function0[java.lang.String],
+    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getPredicateExpressions: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ],
+    getSupportedModes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActivateListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XFormControllerListener, 
+      scala.Unit
+    ],
+    removeConfirmDeleteListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XConfirmDeleteListener, 
+      scala.Unit
+    ],
+    removeDatabaseParameterListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XDatabaseParameterListener, 
+      scala.Unit
+    ],
+    removeDisjunctiveTerm: js.Function1[scala.Double, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeFilterControllerListener: js.Function1[XFilterControllerListener, scala.Unit],
+    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    removeParameterListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XDatabaseParameterListener, 
+      scala.Unit
+    ],
+    removeRowSetApproveListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XRowSetApproveListener, 
+      scala.Unit
+    ],
+    removeSQLErrorListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XSQLErrorListener, scala.Unit],
+    setContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer, scala.Unit],
+    setMode: js.Function1[java.lang.String, scala.Unit],
+    setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel, scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setPredicateExpression: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
+    supportsMode: js.Function1[java.lang.String, scala.Boolean]
+  ): XFormController = {
+    val __obj = js.Dynamic.literal(ActiveTerm = ActiveTerm, Container = Container, Context = Context, Controls = Controls, Count = Count, CurrentControl = CurrentControl, DisjunctiveTerms = DisjunctiveTerms, ElementType = ElementType, FilterComponents = FilterComponents, FormOperations = FormOperations, InteractionHandler = InteractionHandler, Mode = Mode, Parent = Parent, PredicateExpressions = PredicateExpressions, SupportedModes = SupportedModes, acquire = acquire, activateFirst = activateFirst, activateLast = activateLast, activateTabOrder = activateTabOrder, addActivateListener = addActivateListener, addChildController = addChildController, addConfirmDeleteListener = addConfirmDeleteListener, addDatabaseParameterListener = addDatabaseParameterListener, addEventListener = addEventListener, addFilterControllerListener = addFilterControllerListener, addModifyListener = addModifyListener, addParameterListener = addParameterListener, addRowSetApproveListener = addRowSetApproveListener, addSQLErrorListener = addSQLErrorListener, appendEmptyDisjunctiveTerm = appendEmptyDisjunctiveTerm, autoTabOrder = autoTabOrder, createEnumeration = createEnumeration, dispose = dispose, getByIndex = getByIndex, getContainer = getContainer, getControls = getControls, getCount = getCount, getElementType = getElementType, getFilterComponent = getFilterComponent, getMode = getMode, getModel = getModel, getParent = getParent, getPredicateExpressions = getPredicateExpressions, getSupportedModes = getSupportedModes, hasElements = hasElements, queryInterface = queryInterface, release = release, removeActivateListener = removeActivateListener, removeConfirmDeleteListener = removeConfirmDeleteListener, removeDatabaseParameterListener = removeDatabaseParameterListener, removeDisjunctiveTerm = removeDisjunctiveTerm, removeEventListener = removeEventListener, removeFilterControllerListener = removeFilterControllerListener, removeModifyListener = removeModifyListener, removeParameterListener = removeParameterListener, removeRowSetApproveListener = removeRowSetApproveListener, removeSQLErrorListener = removeSQLErrorListener, setContainer = setContainer, setMode = setMode, setModel = setModel, setParent = setParent, setPredicateExpression = setPredicateExpression, supportsMode = supportsMode)
+  
+    __obj.asInstanceOf[XFormController]
+  }
+}
+

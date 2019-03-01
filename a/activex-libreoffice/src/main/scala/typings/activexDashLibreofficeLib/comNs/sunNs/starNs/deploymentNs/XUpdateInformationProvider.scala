@@ -42,3 +42,28 @@ trait XUpdateInformationProvider extends js.Object {
   def setInteractionHandler(handler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler): scala.Unit
 }
 
+object XUpdateInformationProvider {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    getUpdateInformation: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
+    ],
+    getUpdateInformationEnumeration: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
+    ],
+    setInteractionHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ]
+  ): XUpdateInformationProvider = {
+    val __obj = js.Dynamic.literal(cancel = cancel, getUpdateInformation = getUpdateInformation, getUpdateInformationEnumeration = getUpdateInformationEnumeration, setInteractionHandler = setInteractionHandler)
+  
+    __obj.asInstanceOf[XUpdateInformationProvider]
+  }
+}
+

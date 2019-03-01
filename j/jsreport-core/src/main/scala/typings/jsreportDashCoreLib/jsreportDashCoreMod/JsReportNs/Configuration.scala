@@ -17,3 +17,22 @@ trait Configuration extends js.Object {
   var tempDirectory: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    autoTempCleanup: scala.Boolean,
+    dataDirectory: java.lang.String,
+    extensionsLocationCache: scala.Boolean,
+    loadConfig: scala.Boolean,
+    logger: jsreportDashCoreLib.Anon_Silent,
+    rootDirectory: java.lang.String,
+    scripts: jsreportDashCoreLib.Anon_AllowedModules,
+    tasks: stdLib.Partial[jsreportDashCoreLib.Anon_AllowedModulesDedicatedprocess],
+    tempDirectory: java.lang.String
+  ): Configuration = {
+    val __obj = js.Dynamic.literal(autoTempCleanup = autoTempCleanup, dataDirectory = dataDirectory, extensionsLocationCache = extensionsLocationCache, loadConfig = loadConfig, logger = logger, rootDirectory = rootDirectory, scripts = scripts, tasks = tasks, tempDirectory = tempDirectory)
+  
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

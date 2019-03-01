@@ -20,3 +20,19 @@ trait XCertificateExtension
   def isCritical(): scala.Boolean
 }
 
+object XCertificateExtension {
+  @scala.inline
+  def apply(
+    ExtensionId: activexDashInteropLib.SafeArray[scala.Double],
+    ExtensionValue: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    isCritical: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCertificateExtension = {
+    val __obj = js.Dynamic.literal(ExtensionId = ExtensionId, ExtensionValue = ExtensionValue, acquire = acquire, isCritical = isCritical, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCertificateExtension]
+  }
+}
+

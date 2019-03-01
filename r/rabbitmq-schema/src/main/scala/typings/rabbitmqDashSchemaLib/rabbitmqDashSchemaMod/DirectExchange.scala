@@ -12,3 +12,17 @@ trait DirectExchange extends Exchange {
   var type_DirectExchange: rabbitmqDashSchemaLib.rabbitmqDashSchemaLibStrings.direct
 }
 
+object DirectExchange {
+  @scala.inline
+  def apply(
+    bindings: js.Array[DirectBinding],
+    exchange: java.lang.String,
+    `type`: rabbitmqDashSchemaLib.rabbitmqDashSchemaLibStrings.direct,
+    options: js.Object = null
+  ): DirectExchange = {
+    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange, `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[DirectExchange]
+  }
+}
+

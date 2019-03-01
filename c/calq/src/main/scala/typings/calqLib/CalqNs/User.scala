@@ -11,3 +11,16 @@ trait User extends js.Object {
   def profile(params: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit
 }
 
+object User {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    identify: js.Function1[java.lang.String, scala.Unit],
+    profile: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
+  ): User = {
+    val __obj = js.Dynamic.literal(clear = clear, identify = identify, profile = profile)
+  
+    __obj.asInstanceOf[User]
+  }
+}
+

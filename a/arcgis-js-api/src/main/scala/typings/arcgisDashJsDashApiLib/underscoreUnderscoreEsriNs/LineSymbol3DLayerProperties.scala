@@ -16,3 +16,13 @@ trait LineSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var size: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object LineSymbol3DLayerProperties {
+  @scala.inline
+  def apply(material: js.Any = null, size: scala.Double | java.lang.String = null): LineSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineSymbol3DLayerProperties]
+  }
+}
+

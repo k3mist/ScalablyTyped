@@ -15,3 +15,19 @@ trait NavItemView extends js.Object {
   def setCollapsed(collapseValue: scala.Boolean): scala.Unit
 }
 
+object NavItemView {
+  @scala.inline
+  def apply(
+    addNavItem: js.Function1[NavItemDescriptor, NavItemView],
+    destroyed: scala.Boolean,
+    isCollapsed: js.Function0[scala.Boolean],
+    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
+    remove: js.Function0[scala.Unit],
+    setCollapsed: js.Function1[scala.Boolean, scala.Unit]
+  ): NavItemView = {
+    val __obj = js.Dynamic.literal(addNavItem = addNavItem, destroyed = destroyed, isCollapsed = isCollapsed, on_destroy = on_destroy, remove = remove, setCollapsed = setCollapsed)
+  
+    __obj.asInstanceOf[NavItemView]
+  }
+}
+

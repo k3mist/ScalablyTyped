@@ -15,3 +15,19 @@ trait IdownloadImage extends BaseParams {
   def success_MIdownloadImage(res: Resouce): scala.Unit
 }
 
+object IdownloadImage {
+  @scala.inline
+  def apply(
+    isShowProgressTips: scala.Double,
+    serverId: java.lang.String,
+    success: js.Function1[Resouce, scala.Unit],
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IdownloadImage = {
+    val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips, serverId = serverId, success = success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IdownloadImage]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Schema extends js.Object {
   def validate[T](value: T): ValidationResult[T]
 }
 
+object Schema {
+  @scala.inline
+  def apply(isJoi: scala.Boolean, validate: js.Function1[js.Any, ValidationResult[js.Any]]): Schema = {
+    val __obj = js.Dynamic.literal(isJoi = isJoi, validate = validate)
+  
+    __obj.asInstanceOf[Schema]
+  }
+}
+

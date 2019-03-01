@@ -36,3 +36,20 @@ trait GetVpcAttachmentResult extends js.Object {
   val vpcOwnerId: java.lang.String
 }
 
+object GetVpcAttachmentResult {
+  @scala.inline
+  def apply(
+    dnsSupport: java.lang.String,
+    ipv6Support: java.lang.String,
+    subnetIds: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    transitGatewayId: java.lang.String,
+    vpcId: java.lang.String,
+    vpcOwnerId: java.lang.String
+  ): GetVpcAttachmentResult = {
+    val __obj = js.Dynamic.literal(dnsSupport = dnsSupport, ipv6Support = ipv6Support, subnetIds = subnetIds, tags = tags, transitGatewayId = transitGatewayId, vpcId = vpcId, vpcOwnerId = vpcOwnerId)
+  
+    __obj.asInstanceOf[GetVpcAttachmentResult]
+  }
+}
+

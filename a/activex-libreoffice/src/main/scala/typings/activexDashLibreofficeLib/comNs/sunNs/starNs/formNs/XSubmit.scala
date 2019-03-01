@@ -38,3 +38,23 @@ trait XSubmit
   ): scala.Unit
 }
 
+object XSubmit {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSubmitListener: js.Function1[XSubmitListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSubmitListener: js.Function1[XSubmitListener, scala.Unit],
+    submit: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, 
+      scala.Unit
+    ]
+  ): XSubmit = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSubmitListener = addSubmitListener, queryInterface = queryInterface, release = release, removeSubmitListener = removeSubmitListener, submit = submit)
+  
+    __obj.asInstanceOf[XSubmit]
+  }
+}
+

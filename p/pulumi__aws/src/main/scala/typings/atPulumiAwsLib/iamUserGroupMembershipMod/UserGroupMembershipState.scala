@@ -18,3 +18,16 @@ trait UserGroupMembershipState extends js.Object {
   val user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object UserGroupMembershipState {
+  @scala.inline
+  def apply(
+    groups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    user: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): UserGroupMembershipState = {
+    val __obj = js.Dynamic.literal()
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserGroupMembershipState]
+  }
+}
+

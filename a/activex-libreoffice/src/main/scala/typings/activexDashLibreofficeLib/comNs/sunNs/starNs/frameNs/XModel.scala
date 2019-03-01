@@ -121,3 +121,40 @@ trait XModel
   def unlockControllers(): scala.Unit
 }
 
+object XModel {
+  @scala.inline
+  def apply(
+    Args: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CurrentController: XController,
+    CurrentSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attachResource: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    connectController: js.Function1[XController, scala.Unit],
+    disconnectController: js.Function1[XController, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getArgs: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getCurrentController: js.Function0[XController],
+    getCurrentSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getURL: js.Function0[java.lang.String],
+    hasControllersLocked: js.Function0[scala.Boolean],
+    lockControllers: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setCurrentController: js.Function1[XController, scala.Unit],
+    unlockControllers: js.Function0[scala.Unit]
+  ): XModel = {
+    val __obj = js.Dynamic.literal(Args = Args, CurrentController = CurrentController, CurrentSelection = CurrentSelection, URL = URL, acquire = acquire, addEventListener = addEventListener, attachResource = attachResource, connectController = connectController, disconnectController = disconnectController, dispose = dispose, getArgs = getArgs, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getURL = getURL, hasControllersLocked = hasControllersLocked, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setCurrentController = setCurrentController, unlockControllers = unlockControllers)
+  
+    __obj.asInstanceOf[XModel]
+  }
+}
+

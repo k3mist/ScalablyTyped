@@ -36,3 +36,22 @@ trait WebhookArgs extends js.Object {
   val targetPipeline: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object WebhookArgs {
+  @scala.inline
+  def apply(
+    authentication: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    filters: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_JsonPathMatchEquals]]
+    ],
+    targetAction: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    targetPipeline: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    authenticationConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedIpRangeSecretToken] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): WebhookArgs = {
+    val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], targetAction = targetAction.asInstanceOf[js.Any], targetPipeline = targetPipeline.asInstanceOf[js.Any])
+    if (authenticationConfiguration != null) __obj.updateDynamic("authenticationConfiguration")(authenticationConfiguration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebhookArgs]
+  }
+}
+

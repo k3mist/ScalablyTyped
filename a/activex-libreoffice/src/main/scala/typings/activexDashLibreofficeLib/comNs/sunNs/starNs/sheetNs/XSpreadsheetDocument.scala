@@ -23,3 +23,18 @@ trait XSpreadsheetDocument
   def getSheets(): XSpreadsheets
 }
 
+object XSpreadsheetDocument {
+  @scala.inline
+  def apply(
+    Sheets: XSpreadsheets,
+    acquire: js.Function0[scala.Unit],
+    getSheets: js.Function0[XSpreadsheets],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSpreadsheetDocument = {
+    val __obj = js.Dynamic.literal(Sheets = Sheets, acquire = acquire, getSheets = getSheets, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSpreadsheetDocument]
+  }
+}
+

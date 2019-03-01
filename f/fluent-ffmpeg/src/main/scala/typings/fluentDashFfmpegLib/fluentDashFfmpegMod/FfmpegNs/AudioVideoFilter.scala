@@ -10,3 +10,12 @@ trait AudioVideoFilter extends js.Object {
   var options: java.lang.String | js.Array[java.lang.String] | js.Object
 }
 
+object AudioVideoFilter {
+  @scala.inline
+  def apply(filter: java.lang.String, options: java.lang.String | js.Array[java.lang.String] | js.Object): AudioVideoFilter = {
+    val __obj = js.Dynamic.literal(filter = filter, options = options.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AudioVideoFilter]
+  }
+}
+

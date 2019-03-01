@@ -16,3 +16,12 @@ trait Anon_Application extends js.Object {
   var Control: js.Any
 }
 
+object Anon_Application {
+  @scala.inline
+  def apply(Application: js.Any, Control: js.Any): Anon_Application = {
+    val __obj = js.Dynamic.literal(Application = Application, Control = Control)
+  
+    __obj.asInstanceOf[Anon_Application]
+  }
+}
+

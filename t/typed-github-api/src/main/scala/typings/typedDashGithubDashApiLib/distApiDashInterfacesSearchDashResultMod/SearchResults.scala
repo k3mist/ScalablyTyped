@@ -11,3 +11,12 @@ trait SearchResults[T] extends js.Object {
   var total_count: scala.Double
 }
 
+object SearchResults {
+  @scala.inline
+  def apply[T](incomplete_results: scala.Boolean, items: js.Array[T with SearchResult], total_count: scala.Double): SearchResults[T] = {
+    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results, items = items, total_count = total_count)
+  
+    __obj.asInstanceOf[SearchResults[T]]
+  }
+}
+

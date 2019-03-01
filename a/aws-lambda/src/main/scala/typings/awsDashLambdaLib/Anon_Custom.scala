@@ -11,3 +11,15 @@ trait Anon_Custom
   var s3: awsDashLambdaLib.awsDashLambdaMod.CloudFrontS3Origin
 }
 
+object Anon_Custom {
+  @scala.inline
+  def apply(
+    s3: awsDashLambdaLib.awsDashLambdaMod.CloudFrontS3Origin,
+    custom: js.UndefOr[scala.Nothing] = js.undefined
+  ): Anon_Custom = {
+    val __obj = js.Dynamic.literal(s3 = s3)
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom)
+    __obj.asInstanceOf[Anon_Custom]
+  }
+}
+

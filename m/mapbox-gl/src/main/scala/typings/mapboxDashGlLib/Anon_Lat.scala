@@ -11,3 +11,12 @@ trait Anon_Lat
   var lng: scala.Double
 }
 
+object Anon_Lat {
+  @scala.inline
+  def apply(lat: scala.Double, lng: scala.Double): Anon_Lat = {
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
+  
+    __obj.asInstanceOf[Anon_Lat]
+  }
+}
+

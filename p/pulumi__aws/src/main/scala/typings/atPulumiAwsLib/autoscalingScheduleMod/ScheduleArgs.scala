@@ -44,3 +44,26 @@ trait ScheduleArgs extends js.Object {
   val startTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ScheduleArgs {
+  @scala.inline
+  def apply(
+    autoscalingGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    scheduledActionName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    desiredCapacity: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    endTime: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    maxSize: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    minSize: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    recurrence: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    startTime: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ScheduleArgs = {
+    val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], scheduledActionName = scheduledActionName.asInstanceOf[js.Any])
+    if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScheduleArgs]
+  }
+}
+

@@ -28,3 +28,18 @@ trait IOperation extends js.Object {
   var syntheticSource: java.lang.String
 }
 
+object IOperation {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    parentId: java.lang.String,
+    rootId: java.lang.String,
+    syntheticSource: java.lang.String
+  ): IOperation = {
+    val __obj = js.Dynamic.literal(id = id, name = name, parentId = parentId, rootId = rootId, syntheticSource = syntheticSource)
+  
+    __obj.asInstanceOf[IOperation]
+  }
+}
+

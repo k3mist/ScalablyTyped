@@ -21,3 +21,18 @@ trait ConfigurationTaskGetDataWorkspaceDetailsParams
   var user: java.lang.String
 }
 
+object ConfigurationTaskGetDataWorkspaceDetailsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): ConfigurationTaskGetDataWorkspaceDetailsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[ConfigurationTaskGetDataWorkspaceDetailsParams]
+  }
+}
+

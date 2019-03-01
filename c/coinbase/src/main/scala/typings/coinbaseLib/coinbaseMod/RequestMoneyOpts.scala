@@ -28,3 +28,18 @@ trait RequestMoneyOpts extends js.Object {
   var `type`: coinbaseLib.coinbaseLibStrings.request
 }
 
+object RequestMoneyOpts {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    currency: java.lang.String,
+    to: java.lang.String,
+    `type`: coinbaseLib.coinbaseLibStrings.request,
+    description: java.lang.String = null
+  ): RequestMoneyOpts = {
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[RequestMoneyOpts]
+  }
+}
+

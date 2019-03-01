@@ -9,3 +9,17 @@ trait GridNavigateEvent extends GridEvent {
   var element: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object GridNavigateEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    element: kendoDashUiLib.JQuery = null
+  ): GridNavigateEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[GridNavigateEvent]
+  }
+}
+

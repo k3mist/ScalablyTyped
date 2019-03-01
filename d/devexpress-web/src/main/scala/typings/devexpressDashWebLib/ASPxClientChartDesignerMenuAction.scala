@@ -51,3 +51,21 @@ trait ASPxClientChartDesignerMenuAction extends js.Object {
   var visible: scala.Boolean
 }
 
+object ASPxClientChartDesignerMenuAction {
+  @scala.inline
+  def apply(
+    clickAction: js.Function,
+    container: java.lang.String,
+    disabled: scala.Boolean,
+    hasSeparator: java.lang.String,
+    hotKey: java.lang.String,
+    imageClassName: java.lang.String,
+    text: java.lang.String,
+    visible: scala.Boolean
+  ): ASPxClientChartDesignerMenuAction = {
+    val __obj = js.Dynamic.literal(clickAction = clickAction, container = container, disabled = disabled, hasSeparator = hasSeparator, hotKey = hotKey, imageClassName = imageClassName, text = text, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientChartDesignerMenuAction]
+  }
+}
+

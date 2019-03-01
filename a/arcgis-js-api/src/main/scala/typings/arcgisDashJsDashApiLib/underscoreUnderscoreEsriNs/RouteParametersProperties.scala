@@ -246,3 +246,82 @@ trait RouteParametersProperties extends js.Object {
   var useTimeWindows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RouteParametersProperties {
+  @scala.inline
+  def apply(
+    accumulateAttributes: js.Array[java.lang.String] = null,
+    attributeParameterValues: AttributeParamValue = null,
+    barriers: DataLayerProperties | FeatureSetProperties = null,
+    directionsLanguage: java.lang.String = null,
+    directionsLengthUnits: java.lang.String = null,
+    directionsOutputType: java.lang.String = null,
+    directionsStyleName: java.lang.String = null,
+    directionsTimeAttribute: java.lang.String = null,
+    doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined,
+    findBestSequence: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreInvalidLocations: js.UndefOr[scala.Boolean] = js.undefined,
+    impedanceAttribute: java.lang.String = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    outputGeometryPrecision: scala.Int | scala.Double = null,
+    outputGeometryPrecisionUnits: java.lang.String = null,
+    outputLines: java.lang.String = null,
+    polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
+    polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
+    preserveFirstStop: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveLastStop: js.UndefOr[scala.Boolean] = js.undefined,
+    restrictUTurns: java.lang.String = null,
+    restrictionAttributes: js.Array[java.lang.String] = null,
+    returnBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnDirections: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolygonBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolylineBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnRoutes: js.UndefOr[scala.Boolean] = js.undefined,
+    returnStops: js.UndefOr[scala.Boolean] = js.undefined,
+    returnZ: js.UndefOr[scala.Boolean] = js.undefined,
+    startTime: DateProperties = null,
+    startTimeIsUTC: js.UndefOr[scala.Boolean] = js.undefined,
+    stops: DataLayerProperties | FeatureSetProperties = null,
+    travelMode: js.Any = null,
+    useHierarchy: js.UndefOr[scala.Boolean] = js.undefined,
+    useTimeWindows: js.UndefOr[scala.Boolean] = js.undefined
+  ): RouteParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (accumulateAttributes != null) __obj.updateDynamic("accumulateAttributes")(accumulateAttributes)
+    if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues)
+    if (barriers != null) __obj.updateDynamic("barriers")(barriers.asInstanceOf[js.Any])
+    if (directionsLanguage != null) __obj.updateDynamic("directionsLanguage")(directionsLanguage)
+    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits)
+    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType)
+    if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName)
+    if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute)
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements)
+    if (!js.isUndefined(findBestSequence)) __obj.updateDynamic("findBestSequence")(findBestSequence)
+    if (!js.isUndefined(ignoreInvalidLocations)) __obj.updateDynamic("ignoreInvalidLocations")(ignoreInvalidLocations)
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFirstStop)) __obj.updateDynamic("preserveFirstStop")(preserveFirstStop)
+    if (!js.isUndefined(preserveLastStop)) __obj.updateDynamic("preserveLastStop")(preserveLastStop)
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
+    if (!js.isUndefined(returnBarriers)) __obj.updateDynamic("returnBarriers")(returnBarriers)
+    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections)
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers)
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers)
+    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes)
+    if (!js.isUndefined(returnStops)) __obj.updateDynamic("returnStops")(returnStops)
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTimeIsUTC)) __obj.updateDynamic("startTimeIsUTC")(startTimeIsUTC)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy)
+    if (!js.isUndefined(useTimeWindows)) __obj.updateDynamic("useTimeWindows")(useTimeWindows)
+    __obj.asInstanceOf[RouteParametersProperties]
+  }
+}
+

@@ -50,3 +50,26 @@ trait BufferParametersProperties extends js.Object {
   var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BufferParametersProperties {
+  @scala.inline
+  def apply(
+    bufferSpatialReference: SpatialReferenceProperties = null,
+    distances: js.Array[scala.Double] = null,
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    geometries: js.Array[GeometryProperties] = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    unionResults: js.UndefOr[scala.Boolean] = js.undefined,
+    unit: java.lang.String = null
+  ): BufferParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (bufferSpatialReference != null) __obj.updateDynamic("bufferSpatialReference")(bufferSpatialReference)
+    if (distances != null) __obj.updateDynamic("distances")(distances)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (!js.isUndefined(unionResults)) __obj.updateDynamic("unionResults")(unionResults)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[BufferParametersProperties]
+  }
+}
+

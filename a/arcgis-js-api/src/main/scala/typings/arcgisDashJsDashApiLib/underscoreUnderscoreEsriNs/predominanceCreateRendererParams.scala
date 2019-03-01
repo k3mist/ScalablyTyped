@@ -119,3 +119,38 @@ trait predominanceCreateRendererParams
   var view: View
 }
 
+object predominanceCreateRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    fields: js.Array[predominanceCreateRendererParamsFields],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    view: View,
+    basemap: java.lang.String | Basemap = null,
+    colorMixMode: java.lang.String = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    includeOpacityVariable: js.UndefOr[scala.Boolean] = js.undefined,
+    includeSizeVariable: js.UndefOr[scala.Boolean] = js.undefined,
+    legendOptions: predominanceCreateRendererParamsLegendOptions = null,
+    predominanceScheme: PredominanceScheme = null,
+    sortBy: java.lang.String = null,
+    statistics: SummaryStatisticsResult = null,
+    symbolType: java.lang.String = null
+  ): predominanceCreateRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (!js.isUndefined(includeOpacityVariable)) __obj.updateDynamic("includeOpacityVariable")(includeOpacityVariable)
+    if (!js.isUndefined(includeSizeVariable)) __obj.updateDynamic("includeSizeVariable")(includeSizeVariable)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (predominanceScheme != null) __obj.updateDynamic("predominanceScheme")(predominanceScheme)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    __obj.asInstanceOf[predominanceCreateRendererParams]
+  }
+}
+

@@ -20,3 +20,13 @@ trait ProxyConfig extends js.Object {
   var rules: js.UndefOr[ProxyRules] = js.undefined
 }
 
+object ProxyConfig {
+  @scala.inline
+  def apply(mode: java.lang.String, pacScript: PacScript = null, rules: ProxyRules = null): ProxyConfig = {
+    val __obj = js.Dynamic.literal(mode = mode)
+    if (pacScript != null) __obj.updateDynamic("pacScript")(pacScript)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[ProxyConfig]
+  }
+}
+

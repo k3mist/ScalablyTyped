@@ -16,3 +16,12 @@ trait NoteAttribute extends js.Object {
   var value: java.lang.String | scala.Double
 }
 
+object NoteAttribute {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String | scala.Double): NoteAttribute = {
+    val __obj = js.Dynamic.literal(name = name, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[NoteAttribute]
+  }
+}
+

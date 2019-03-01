@@ -10,3 +10,12 @@ trait CreditCardExpiration extends js.Object {
   var year: java.lang.String
 }
 
+object CreditCardExpiration {
+  @scala.inline
+  def apply(month: java.lang.String, year: java.lang.String): CreditCardExpiration = {
+    val __obj = js.Dynamic.literal(month = month, year = year)
+  
+    __obj.asInstanceOf[CreditCardExpiration]
+  }
+}
+

@@ -10,3 +10,12 @@ trait GameTypes extends js.Object {
   var quickplay: QuickplayGameType
 }
 
+object GameTypes {
+  @scala.inline
+  def apply(competitive: CompetitiveGameType, quickplay: QuickplayGameType): GameTypes = {
+    val __obj = js.Dynamic.literal(competitive = competitive, quickplay = quickplay)
+  
+    __obj.asInstanceOf[GameTypes]
+  }
+}
+

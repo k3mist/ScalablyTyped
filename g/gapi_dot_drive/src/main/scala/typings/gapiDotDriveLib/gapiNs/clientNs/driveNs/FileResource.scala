@@ -72,3 +72,75 @@ trait FileResource extends js.Object {
   var writersCanShare: scala.Boolean
 }
 
+object FileResource {
+  @scala.inline
+  def apply(
+    alternateLink: java.lang.String,
+    appDataContents: scala.Boolean,
+    canComment: scala.Boolean,
+    canReadRevisions: scala.Boolean,
+    capabilities: gapiDotDriveLib.Anon_CanAddChildren,
+    copyable: scala.Boolean,
+    createdDate: stdLib.Date,
+    defaultOpenWithLink: java.lang.String,
+    description: java.lang.String,
+    downloadUrl: java.lang.String,
+    editable: scala.Boolean,
+    embedLink: java.lang.String,
+    etag: java.lang.String,
+    explicitlyTrashed: scala.Boolean,
+    fileExtension: java.lang.String,
+    fileSize: scala.Double,
+    folderColorRgb: java.lang.String,
+    fullFileExtension: java.lang.String,
+    hasAugmentedPermissions: scala.Boolean,
+    hasThumbnail: scala.Boolean,
+    headRevisionId: java.lang.String,
+    iconLink: java.lang.String,
+    id: java.lang.String,
+    imageMediaMetadata: gapiDotDriveLib.Anon_Aperture,
+    indexableText: gapiDotDriveLib.Anon_Text,
+    isAppAuthorized: scala.Boolean,
+    kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#file`,
+    labels: gapiDotDriveLib.Anon_Hidden,
+    lastModifyingUser: gapiDotDriveLib.Anon_DisplayName,
+    lastModifyingUserName: java.lang.String,
+    lastViewedByMeDate: stdLib.Date,
+    markedViewedByMeDate: stdLib.Date,
+    md5Checksum: java.lang.String,
+    mimeType: java.lang.String,
+    modifiedByMeDate: stdLib.Date,
+    modifiedDate: stdLib.Date,
+    originalFilename: java.lang.String,
+    ownedByMe: scala.Boolean,
+    ownerNames: js.Array[java.lang.String],
+    owners: js.Array[gapiDotDriveLib.Anon_DisplayName],
+    parents: js.Array[ParentResource],
+    permissions: js.Array[PermissionResource],
+    properties: js.Array[PropertiesResource],
+    quotaBytesUsed: scala.Double,
+    selfLink: java.lang.String,
+    shareable: scala.Boolean,
+    shared: scala.Boolean,
+    sharedWithMeDate: stdLib.Date,
+    sharingUser: gapiDotDriveLib.Anon_DisplayName,
+    spaces: js.Array[java.lang.String],
+    teamDriveId: java.lang.String,
+    thumbnail: gapiDotDriveLib.Anon_Image,
+    thumbnailLink: java.lang.String,
+    title: java.lang.String,
+    trashedDate: stdLib.Date,
+    trashingUser: gapiDotDriveLib.Anon_DisplayName,
+    userPermission: PermissionResource,
+    version: scala.Double,
+    videoMediaMetadata: gapiDotDriveLib.Anon_DurationMillis,
+    webContentLink: java.lang.String,
+    webViewLink: java.lang.String,
+    writersCanShare: scala.Boolean
+  ): FileResource = {
+    val __obj = js.Dynamic.literal(alternateLink = alternateLink, appDataContents = appDataContents, canComment = canComment, canReadRevisions = canReadRevisions, capabilities = capabilities, copyable = copyable, createdDate = createdDate, defaultOpenWithLink = defaultOpenWithLink, description = description, downloadUrl = downloadUrl, editable = editable, embedLink = embedLink, etag = etag, explicitlyTrashed = explicitlyTrashed, fileExtension = fileExtension, fileSize = fileSize, folderColorRgb = folderColorRgb, fullFileExtension = fullFileExtension, hasAugmentedPermissions = hasAugmentedPermissions, hasThumbnail = hasThumbnail, headRevisionId = headRevisionId, iconLink = iconLink, id = id, imageMediaMetadata = imageMediaMetadata, indexableText = indexableText, isAppAuthorized = isAppAuthorized, kind = kind, labels = labels, lastModifyingUser = lastModifyingUser, lastModifyingUserName = lastModifyingUserName, lastViewedByMeDate = lastViewedByMeDate, markedViewedByMeDate = markedViewedByMeDate, md5Checksum = md5Checksum, mimeType = mimeType, modifiedByMeDate = modifiedByMeDate, modifiedDate = modifiedDate, originalFilename = originalFilename, ownedByMe = ownedByMe, ownerNames = ownerNames, owners = owners, parents = parents, permissions = permissions, properties = properties, quotaBytesUsed = quotaBytesUsed, selfLink = selfLink, shareable = shareable, shared = shared, sharedWithMeDate = sharedWithMeDate, sharingUser = sharingUser, spaces = spaces, teamDriveId = teamDriveId, thumbnail = thumbnail, thumbnailLink = thumbnailLink, title = title, trashedDate = trashedDate, trashingUser = trashingUser, userPermission = userPermission, version = version, videoMediaMetadata = videoMediaMetadata, webContentLink = webContentLink, webViewLink = webViewLink, writersCanShare = writersCanShare)
+  
+    __obj.asInstanceOf[FileResource]
+  }
+}
+

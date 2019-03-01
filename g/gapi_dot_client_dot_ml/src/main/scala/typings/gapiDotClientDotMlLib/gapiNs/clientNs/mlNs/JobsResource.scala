@@ -37,3 +37,41 @@ trait JobsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
 }
 
+object JobsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    create: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Job]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Job]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListJobsResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
+    ]
+  ): JobsResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[JobsResource]
+  }
+}
+

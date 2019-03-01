@@ -32,3 +32,20 @@ trait CachesIscsiVolumeArgs extends js.Object {
   val volumeSizeInBytes: atPulumiPulumiLib.resourceMod.Input[scala.Double]
 }
 
+object CachesIscsiVolumeArgs {
+  @scala.inline
+  def apply(
+    gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    networkInterfaceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    targetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    volumeSizeInBytes: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    snapshotId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceVolumeArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): CachesIscsiVolumeArgs = {
+    val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any], volumeSizeInBytes = volumeSizeInBytes.asInstanceOf[js.Any])
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    if (sourceVolumeArn != null) __obj.updateDynamic("sourceVolumeArn")(sourceVolumeArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CachesIscsiVolumeArgs]
+  }
+}
+

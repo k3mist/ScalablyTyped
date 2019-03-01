@@ -20,3 +20,19 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ImportDeclaration
 }
 
+object ImportDeclaration {
+  @scala.inline
+  def apply(
+    importKind: astDashTypesLib.astDashTypesLibStrings.value | astDashTypesLib.astDashTypesLibStrings.`type`,
+    source: astDashTypesLib.genKindsMod.LiteralKind,
+    specifiers: js.Array[
+      astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ImportDeclaration
+  ): ImportDeclaration = {
+    val __obj = js.Dynamic.literal(importKind = importKind.asInstanceOf[js.Any], source = source, specifiers = specifiers, `type` = `type`)
+  
+    __obj.asInstanceOf[ImportDeclaration]
+  }
+}
+

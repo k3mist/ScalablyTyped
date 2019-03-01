@@ -18,3 +18,23 @@ trait HttpResponse extends js.Object {
   var url: java.lang.String
 }
 
+object HttpResponse {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    data: js.Any,
+    headers: js.Array[Header],
+    id: scala.Double,
+    stage: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String,
+    time: java.lang.String,
+    url: java.lang.String,
+    redirectURL: java.lang.String = null
+  ): HttpResponse = {
+    val __obj = js.Dynamic.literal(contentType = contentType, data = data, headers = headers, id = id, stage = stage, status = status, statusText = statusText, time = time, url = url)
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    __obj.asInstanceOf[HttpResponse]
+  }
+}
+

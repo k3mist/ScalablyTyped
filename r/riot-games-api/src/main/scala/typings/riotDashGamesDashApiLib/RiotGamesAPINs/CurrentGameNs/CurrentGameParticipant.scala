@@ -18,3 +18,23 @@ trait CurrentGameParticipant extends js.Object {
   var teamId: scala.Double
 }
 
+object CurrentGameParticipant {
+  @scala.inline
+  def apply(
+    bot: scala.Boolean,
+    championId: scala.Double,
+    masteries: js.Array[Mastery],
+    profileIconId: scala.Double,
+    runes: js.Array[Rune],
+    spell1Id: scala.Double,
+    spell2Id: scala.Double,
+    summonerId: scala.Double,
+    summonerName: java.lang.String,
+    teamId: scala.Double
+  ): CurrentGameParticipant = {
+    val __obj = js.Dynamic.literal(bot = bot, championId = championId, masteries = masteries, profileIconId = profileIconId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, summonerId = summonerId, summonerName = summonerName, teamId = teamId)
+  
+    __obj.asInstanceOf[CurrentGameParticipant]
+  }
+}
+

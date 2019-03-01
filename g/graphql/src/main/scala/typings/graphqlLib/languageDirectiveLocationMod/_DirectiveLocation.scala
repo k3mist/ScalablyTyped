@@ -30,3 +30,32 @@ trait _DirectiveLocation extends js.Object {
   var VARIABLE_DEFINITION: graphqlLib.graphqlLibStrings.VARIABLE_DEFINITION
 }
 
+object _DirectiveLocation {
+  @scala.inline
+  def apply(
+    ARGUMENT_DEFINITION: graphqlLib.graphqlLibStrings.ARGUMENT_DEFINITION,
+    ENUM: graphqlLib.graphqlLibStrings.ENUM,
+    ENUM_VALUE: graphqlLib.graphqlLibStrings.ENUM_VALUE,
+    FIELD: graphqlLib.graphqlLibStrings.FIELD,
+    FIELD_DEFINITION: graphqlLib.graphqlLibStrings.FIELD_DEFINITION,
+    FRAGMENT_DEFINITION: graphqlLib.graphqlLibStrings.FRAGMENT_DEFINITION,
+    FRAGMENT_SPREAD: graphqlLib.graphqlLibStrings.FRAGMENT_SPREAD,
+    INLINE_FRAGMENT: graphqlLib.graphqlLibStrings.INLINE_FRAGMENT,
+    INPUT_FIELD_DEFINITION: graphqlLib.graphqlLibStrings.INPUT_FIELD_DEFINITION,
+    INPUT_OBJECT: graphqlLib.graphqlLibStrings.INPUT_OBJECT,
+    INTERFACE: graphqlLib.graphqlLibStrings.INTERFACE,
+    MUTATION: graphqlLib.graphqlLibStrings.MUTATION,
+    OBJECT: graphqlLib.graphqlLibStrings.OBJECT,
+    QUERY: graphqlLib.graphqlLibStrings.QUERY,
+    SCALAR: graphqlLib.graphqlLibStrings.SCALAR,
+    SCHEMA: graphqlLib.graphqlLibStrings.SCHEMA,
+    SUBSCRIPTION: graphqlLib.graphqlLibStrings.SUBSCRIPTION,
+    UNION: graphqlLib.graphqlLibStrings.UNION,
+    VARIABLE_DEFINITION: graphqlLib.graphqlLibStrings.VARIABLE_DEFINITION
+  ): _DirectiveLocation = {
+    val __obj = js.Dynamic.literal(ARGUMENT_DEFINITION = ARGUMENT_DEFINITION, ENUM = ENUM, ENUM_VALUE = ENUM_VALUE, FIELD = FIELD, FIELD_DEFINITION = FIELD_DEFINITION, FRAGMENT_DEFINITION = FRAGMENT_DEFINITION, FRAGMENT_SPREAD = FRAGMENT_SPREAD, INLINE_FRAGMENT = INLINE_FRAGMENT, INPUT_FIELD_DEFINITION = INPUT_FIELD_DEFINITION, INPUT_OBJECT = INPUT_OBJECT, INTERFACE = INTERFACE, MUTATION = MUTATION, OBJECT = OBJECT, QUERY = QUERY, SCALAR = SCALAR, SCHEMA = SCHEMA, SUBSCRIPTION = SUBSCRIPTION, UNION = UNION, VARIABLE_DEFINITION = VARIABLE_DEFINITION)
+  
+    __obj.asInstanceOf[_DirectiveLocation]
+  }
+}
+

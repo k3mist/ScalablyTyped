@@ -110,3 +110,35 @@ trait ASPxClientChartPrintOptions extends js.Object {
   def SetSizeMode(sizeMode: java.lang.String): scala.Unit
 }
 
+object ASPxClientChartPrintOptions {
+  @scala.inline
+  def apply(
+    GetCustomPaperHeight: js.Function0[scala.Double],
+    GetCustomPaperName: js.Function0[java.lang.String],
+    GetCustomPaperWidth: js.Function0[scala.Double],
+    GetLandscape: js.Function0[scala.Boolean],
+    GetMarginBottom: js.Function0[scala.Double],
+    GetMarginLeft: js.Function0[scala.Double],
+    GetMarginRight: js.Function0[scala.Double],
+    GetMarginTop: js.Function0[scala.Double],
+    GetPaperKind: js.Function0[java.lang.String],
+    GetPrintCrosshair: js.Function0[scala.Boolean],
+    GetSizeMode: js.Function0[java.lang.String],
+    SetCustomPaperHeight: js.Function1[scala.Double, scala.Unit],
+    SetCustomPaperName: js.Function1[java.lang.String, scala.Unit],
+    SetCustomPaperWidth: js.Function1[scala.Double, scala.Unit],
+    SetLandscape: js.Function1[scala.Boolean, scala.Unit],
+    SetMarginBottom: js.Function1[scala.Double, scala.Unit],
+    SetMarginLeft: js.Function1[scala.Double, scala.Unit],
+    SetMarginRight: js.Function1[scala.Double, scala.Unit],
+    SetMarginTop: js.Function1[scala.Double, scala.Unit],
+    SetPaperKind: js.Function1[java.lang.String, scala.Unit],
+    SetPrintCrosshair: js.Function1[scala.Boolean, scala.Unit],
+    SetSizeMode: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientChartPrintOptions = {
+    val __obj = js.Dynamic.literal(GetCustomPaperHeight = GetCustomPaperHeight, GetCustomPaperName = GetCustomPaperName, GetCustomPaperWidth = GetCustomPaperWidth, GetLandscape = GetLandscape, GetMarginBottom = GetMarginBottom, GetMarginLeft = GetMarginLeft, GetMarginRight = GetMarginRight, GetMarginTop = GetMarginTop, GetPaperKind = GetPaperKind, GetPrintCrosshair = GetPrintCrosshair, GetSizeMode = GetSizeMode, SetCustomPaperHeight = SetCustomPaperHeight, SetCustomPaperName = SetCustomPaperName, SetCustomPaperWidth = SetCustomPaperWidth, SetLandscape = SetLandscape, SetMarginBottom = SetMarginBottom, SetMarginLeft = SetMarginLeft, SetMarginRight = SetMarginRight, SetMarginTop = SetMarginTop, SetPaperKind = SetPaperKind, SetPrintCrosshair = SetPrintCrosshair, SetSizeMode = SetSizeMode)
+  
+    __obj.asInstanceOf[ASPxClientChartPrintOptions]
+  }
+}
+

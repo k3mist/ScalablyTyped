@@ -26,3 +26,18 @@ trait XConnectionBroadcaster
   def removeStreamListener(aListener: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener): scala.Unit
 }
 
+object XConnectionBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addStreamListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeStreamListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener, scala.Unit]
+  ): XConnectionBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addStreamListener = addStreamListener, queryInterface = queryInterface, release = release, removeStreamListener = removeStreamListener)
+  
+    __obj.asInstanceOf[XConnectionBroadcaster]
+  }
+}
+

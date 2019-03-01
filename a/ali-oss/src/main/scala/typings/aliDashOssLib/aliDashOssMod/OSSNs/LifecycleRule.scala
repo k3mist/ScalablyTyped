@@ -17,3 +17,19 @@ trait LifecycleRule extends js.Object {
   var status: RuleStatusType
 }
 
+object LifecycleRule {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    prefix: java.lang.String,
+    status: RuleStatusType,
+    days: scala.Double | java.lang.String = null,
+    id: java.lang.String = null
+  ): LifecycleRule = {
+    val __obj = js.Dynamic.literal(date = date, prefix = prefix, status = status)
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[LifecycleRule]
+  }
+}
+

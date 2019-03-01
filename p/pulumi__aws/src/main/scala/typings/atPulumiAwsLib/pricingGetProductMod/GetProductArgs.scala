@@ -16,3 +16,12 @@ trait GetProductArgs extends js.Object {
   val serviceCode: java.lang.String
 }
 
+object GetProductArgs {
+  @scala.inline
+  def apply(filters: js.Array[atPulumiAwsLib.Anon_FieldValue], serviceCode: java.lang.String): GetProductArgs = {
+    val __obj = js.Dynamic.literal(filters = filters, serviceCode = serviceCode)
+  
+    __obj.asInstanceOf[GetProductArgs]
+  }
+}
+

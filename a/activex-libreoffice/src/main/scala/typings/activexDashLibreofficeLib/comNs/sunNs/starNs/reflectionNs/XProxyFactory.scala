@@ -20,3 +20,20 @@ trait XProxyFactory
   def createProxy(xTarget: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XAggregation
 }
 
+object XProxyFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createProxy: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XAggregation
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XProxyFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createProxy = createProxy, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XProxyFactory]
+  }
+}
+

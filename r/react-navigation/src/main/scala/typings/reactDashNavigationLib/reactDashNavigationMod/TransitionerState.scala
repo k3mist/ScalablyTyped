@@ -12,3 +12,17 @@ trait TransitionerState extends js.Object {
   var scenes: js.Array[NavigationScene]
 }
 
+object TransitionerState {
+  @scala.inline
+  def apply(
+    layout: NavigationLayout,
+    position: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value,
+    progress: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value,
+    scenes: js.Array[NavigationScene]
+  ): TransitionerState = {
+    val __obj = js.Dynamic.literal(layout = layout, position = position, progress = progress, scenes = scenes)
+  
+    __obj.asInstanceOf[TransitionerState]
+  }
+}
+

@@ -10,3 +10,12 @@ trait SwapCommand extends js.Object {
   var $swap: tcombLib.Anon_From
 }
 
+object SwapCommand {
+  @scala.inline
+  def apply($swap: tcombLib.Anon_From): SwapCommand = {
+    val __obj = js.Dynamic.literal($swap = $swap)
+  
+    __obj.asInstanceOf[SwapCommand]
+  }
+}
+

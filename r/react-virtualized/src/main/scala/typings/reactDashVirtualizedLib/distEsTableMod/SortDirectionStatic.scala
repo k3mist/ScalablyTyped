@@ -18,3 +18,15 @@ trait SortDirectionStatic extends js.Object {
   var DESC: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.DESC
 }
 
+object SortDirectionStatic {
+  @scala.inline
+  def apply(
+    ASC: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.ASC,
+    DESC: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.DESC
+  ): SortDirectionStatic = {
+    val __obj = js.Dynamic.literal(ASC = ASC, DESC = DESC)
+  
+    __obj.asInstanceOf[SortDirectionStatic]
+  }
+}
+

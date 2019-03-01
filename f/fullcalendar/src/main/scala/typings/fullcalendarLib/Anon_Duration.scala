@@ -11,3 +11,12 @@ trait Anon_Duration extends js.Object {
   var unzonedRange: js.Any
 }
 
+object Anon_Duration {
+  @scala.inline
+  def apply(duration: js.Any, unit: js.Any, unzonedRange: js.Any): Anon_Duration = {
+    val __obj = js.Dynamic.literal(duration = duration, unit = unit, unzonedRange = unzonedRange)
+  
+    __obj.asInstanceOf[Anon_Duration]
+  }
+}
+

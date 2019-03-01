@@ -48,3 +48,20 @@ trait ILocalStorageServiceProvider
   def setStorageType(storageType: java.lang.String): ILocalStorageServiceProvider
 }
 
+object ILocalStorageServiceProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    setDefaultToCookie: js.Function1[scala.Boolean, ILocalStorageServiceProvider],
+    setNotify: js.Function2[scala.Boolean, scala.Boolean, ILocalStorageServiceProvider],
+    setPrefix: js.Function1[java.lang.String, ILocalStorageServiceProvider],
+    setStorageCookie: js.Function3[scala.Double, java.lang.String, scala.Boolean, ILocalStorageServiceProvider],
+    setStorageCookieDomain: js.Function1[java.lang.String, ILocalStorageServiceProvider],
+    setStorageType: js.Function1[java.lang.String, ILocalStorageServiceProvider]
+  ): ILocalStorageServiceProvider = {
+    val __obj = js.Dynamic.literal($get = $get, setDefaultToCookie = setDefaultToCookie, setNotify = setNotify, setPrefix = setPrefix, setStorageCookie = setStorageCookie, setStorageCookieDomain = setStorageCookieDomain, setStorageType = setStorageType)
+  
+    __obj.asInstanceOf[ILocalStorageServiceProvider]
+  }
+}
+

@@ -12,3 +12,17 @@ trait IDateElementEvaluator extends js.Object {
   def fromNow(): datejsLib.Date
 }
 
+object IDateElementEvaluator {
+  @scala.inline
+  def apply(
+    after: js.Function0[datejsLib.Date],
+    ago: js.Function0[datejsLib.Date],
+    before: js.Function0[datejsLib.Date],
+    fromNow: js.Function0[datejsLib.Date]
+  ): IDateElementEvaluator = {
+    val __obj = js.Dynamic.literal(after = after, ago = ago, before = before, fromNow = fromNow)
+  
+    __obj.asInstanceOf[IDateElementEvaluator]
+  }
+}
+

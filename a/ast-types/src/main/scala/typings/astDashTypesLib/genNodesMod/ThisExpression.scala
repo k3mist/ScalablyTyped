@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ThisExpression
 }
 
+object ThisExpression {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ThisExpression): ThisExpression = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ThisExpression]
+  }
+}
+

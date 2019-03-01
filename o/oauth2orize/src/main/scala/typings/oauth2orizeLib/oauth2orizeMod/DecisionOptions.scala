@@ -11,3 +11,12 @@ trait DecisionOptions extends js.Object {
   var userProperty: java.lang.String
 }
 
+object DecisionOptions {
+  @scala.inline
+  def apply(cancelField: java.lang.String, sessionKey: java.lang.String, userProperty: java.lang.String): DecisionOptions = {
+    val __obj = js.Dynamic.literal(cancelField = cancelField, sessionKey = sessionKey, userProperty = userProperty)
+  
+    __obj.asInstanceOf[DecisionOptions]
+  }
+}
+

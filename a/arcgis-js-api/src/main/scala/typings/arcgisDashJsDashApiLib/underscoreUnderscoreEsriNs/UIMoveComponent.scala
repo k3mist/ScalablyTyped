@@ -21,3 +21,18 @@ trait UIMoveComponent
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UIMoveComponent {
+  @scala.inline
+  def apply(
+    component: Widget | stdLib.HTMLElement | java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    position: java.lang.String = null
+  ): UIMoveComponent = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[UIMoveComponent]
+  }
+}
+

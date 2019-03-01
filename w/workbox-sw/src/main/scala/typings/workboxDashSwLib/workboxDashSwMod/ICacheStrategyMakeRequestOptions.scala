@@ -12,3 +12,15 @@ trait ICacheStrategyMakeRequestOptions extends js.Object {
   var request: stdLib.Request | java.lang.String
 }
 
+object ICacheStrategyMakeRequestOptions {
+  @scala.inline
+  def apply(
+    request: stdLib.Request | java.lang.String,
+    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null
+  ): ICacheStrategyMakeRequestOptions = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[ICacheStrategyMakeRequestOptions]
+  }
+}
+

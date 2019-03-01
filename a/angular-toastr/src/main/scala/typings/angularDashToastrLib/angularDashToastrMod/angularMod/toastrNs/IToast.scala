@@ -14,3 +14,19 @@ trait IToast extends js.Object {
   var toastId: scala.Double
 }
 
+object IToast {
+  @scala.inline
+  def apply(
+    el: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    iconClass: java.lang.String,
+    isOpened: scala.Boolean,
+    open: angularLib.angularMod.angularNs.IPromise[_],
+    scope: IToastScope,
+    toastId: scala.Double
+  ): IToast = {
+    val __obj = js.Dynamic.literal(el = el, iconClass = iconClass, isOpened = isOpened, open = open, scope = scope, toastId = toastId)
+  
+    __obj.asInstanceOf[IToast]
+  }
+}
+

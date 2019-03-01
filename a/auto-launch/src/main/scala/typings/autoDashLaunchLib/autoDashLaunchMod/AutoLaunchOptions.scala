@@ -24,3 +24,19 @@ trait AutoLaunchOptions extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoLaunchOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    isHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    mac: autoDashLaunchLib.Anon_UseLaunchAgent = null,
+    path: java.lang.String = null
+  ): AutoLaunchOptions = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
+    if (mac != null) __obj.updateDynamic("mac")(mac)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[AutoLaunchOptions]
+  }
+}
+

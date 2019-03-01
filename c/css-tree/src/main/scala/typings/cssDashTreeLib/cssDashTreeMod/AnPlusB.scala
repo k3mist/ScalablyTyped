@@ -15,3 +15,19 @@ trait AnPlusB
   var type_AnPlusB: cssDashTreeLib.cssDashTreeLibStrings.AnPlusB
 }
 
+object AnPlusB {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.AnPlusB,
+    a: java.lang.String = null,
+    b: java.lang.String = null,
+    loc: CssLocation = null
+  ): AnPlusB = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (a != null) __obj.updateDynamic("a")(a)
+    if (b != null) __obj.updateDynamic("b")(b)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[AnPlusB]
+  }
+}
+

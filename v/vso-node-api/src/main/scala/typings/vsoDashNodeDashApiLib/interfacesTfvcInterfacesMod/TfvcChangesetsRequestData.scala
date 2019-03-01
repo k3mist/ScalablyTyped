@@ -20,3 +20,12 @@ trait TfvcChangesetsRequestData extends js.Object {
   var includeLinks: scala.Boolean
 }
 
+object TfvcChangesetsRequestData {
+  @scala.inline
+  def apply(changesetIds: js.Array[scala.Double], commentLength: scala.Double, includeLinks: scala.Boolean): TfvcChangesetsRequestData = {
+    val __obj = js.Dynamic.literal(changesetIds = changesetIds, commentLength = commentLength, includeLinks = includeLinks)
+  
+    __obj.asInstanceOf[TfvcChangesetsRequestData]
+  }
+}
+

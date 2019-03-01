@@ -28,3 +28,18 @@ trait ISearch extends js.Object {
   var total: scala.Double
 }
 
+object ISearch {
+  @scala.inline
+  def apply(
+    items: js.Array[ISearchResult],
+    options: js.Any,
+    query: java.lang.String,
+    tokens: js.Array[ISearchToken],
+    total: scala.Double
+  ): ISearch = {
+    val __obj = js.Dynamic.literal(items = items, options = options, query = query, tokens = tokens, total = total)
+  
+    __obj.asInstanceOf[ISearch]
+  }
+}
+

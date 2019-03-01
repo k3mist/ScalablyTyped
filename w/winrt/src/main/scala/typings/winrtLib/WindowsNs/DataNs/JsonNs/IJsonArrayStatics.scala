@@ -10,3 +10,15 @@ trait IJsonArrayStatics extends js.Object {
   def tryParse(input: java.lang.String): winrtLib.Anon_Result
 }
 
+object IJsonArrayStatics {
+  @scala.inline
+  def apply(
+    parse: js.Function1[java.lang.String, JsonArray],
+    tryParse: js.Function1[java.lang.String, winrtLib.Anon_Result]
+  ): IJsonArrayStatics = {
+    val __obj = js.Dynamic.literal(parse = parse, tryParse = tryParse)
+  
+    __obj.asInstanceOf[IJsonArrayStatics]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Hash extends js.Object {
   def update(messageToHash: java.lang.String): Hash
 }
 
+object Hash {
+  @scala.inline
+  def apply(
+    array: js.Function0[js.Array[scala.Double]],
+    arrayBuffer: js.Function0[stdLib.ArrayBuffer],
+    digest: js.Function0[js.Array[scala.Double]],
+    hex: js.Function0[java.lang.String],
+    update: js.Function1[java.lang.String, Hash]
+  ): Hash = {
+    val __obj = js.Dynamic.literal(array = array, arrayBuffer = arrayBuffer, digest = digest, hex = hex, update = update)
+  
+    __obj.asInstanceOf[Hash]
+  }
+}
+

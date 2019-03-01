@@ -57,3 +57,27 @@ trait colorCreatePCContinuousRendererParams
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
 }
 
+object colorCreatePCContinuousRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    basemap: java.lang.String | Basemap = null,
+    colorScheme: ColorScheme = null,
+    density: scala.Int | scala.Double = null,
+    size: java.lang.String = null,
+    statistics: SummaryStatisticsResult = null
+  ): colorCreatePCContinuousRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    __obj.asInstanceOf[colorCreatePCContinuousRendererParams]
+  }
+}
+

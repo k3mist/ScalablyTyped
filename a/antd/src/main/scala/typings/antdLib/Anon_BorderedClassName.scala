@@ -18,3 +18,23 @@ trait Anon_BorderedClassName extends js.Object {
   var useFixedHeader: scala.Boolean
 }
 
+object Anon_BorderedClassName {
+  @scala.inline
+  def apply(
+    bordered: scala.Boolean,
+    className: java.lang.String,
+    dataSource: js.Array[scala.Nothing],
+    indentSize: scala.Double,
+    loading: scala.Boolean,
+    rowKey: java.lang.String,
+    showHeader: scala.Boolean,
+    size: antdLib.libTableInterfaceMod.TableSize,
+    sortDirections: js.Array[java.lang.String],
+    useFixedHeader: scala.Boolean
+  ): Anon_BorderedClassName = {
+    val __obj = js.Dynamic.literal(bordered = bordered, className = className, dataSource = dataSource, indentSize = indentSize, loading = loading, rowKey = rowKey, showHeader = showHeader, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+  
+    __obj.asInstanceOf[Anon_BorderedClassName]
+  }
+}
+

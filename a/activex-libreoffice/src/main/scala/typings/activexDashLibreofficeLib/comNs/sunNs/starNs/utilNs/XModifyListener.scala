@@ -18,3 +18,18 @@ trait XModifyListener
   def modified(aEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XModifyListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    modified: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XModifyListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, modified = modified, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XModifyListener]
+  }
+}
+

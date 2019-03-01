@@ -9,3 +9,12 @@ trait `Anon_` extends js.Object {
   val underscoreNs: js.Any
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(underscoreNs: js.Any): `Anon_` = {
+    val __obj = js.Dynamic.literal(underscoreNs = underscoreNs)
+  
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

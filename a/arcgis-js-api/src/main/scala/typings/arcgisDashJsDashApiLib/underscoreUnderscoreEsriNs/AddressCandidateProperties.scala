@@ -38,3 +38,22 @@ trait AddressCandidateProperties extends js.Object {
   var score: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AddressCandidateProperties {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    attributes: js.Any = null,
+    extent: ExtentProperties = null,
+    location: PointProperties = null,
+    score: scala.Int | scala.Double = null
+  ): AddressCandidateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddressCandidateProperties]
+  }
+}
+

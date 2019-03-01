@@ -10,3 +10,12 @@ trait ContainerVolumeMount extends js.Object {
   var sourceVolume: Volume
 }
 
+object ContainerVolumeMount {
+  @scala.inline
+  def apply(containerPath: java.lang.String, sourceVolume: Volume): ContainerVolumeMount = {
+    val __obj = js.Dynamic.literal(containerPath = containerPath, sourceVolume = sourceVolume)
+  
+    __obj.asInstanceOf[ContainerVolumeMount]
+  }
+}
+

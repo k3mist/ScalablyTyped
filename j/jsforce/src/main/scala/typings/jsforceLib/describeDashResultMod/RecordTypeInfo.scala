@@ -15,3 +15,20 @@ trait RecordTypeInfo extends js.Object {
   var urls: stdLib.Record[java.lang.String, java.lang.String]
 }
 
+object RecordTypeInfo {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    defaultRecordTypeMapping: scala.Boolean,
+    master: scala.Boolean,
+    name: java.lang.String,
+    recordTypeId: java.lang.String,
+    urls: stdLib.Record[java.lang.String, java.lang.String],
+    developerName: maybe[java.lang.String] = null
+  ): RecordTypeInfo = {
+    val __obj = js.Dynamic.literal(available = available, defaultRecordTypeMapping = defaultRecordTypeMapping, master = master, name = name, recordTypeId = recordTypeId, urls = urls)
+    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordTypeInfo]
+  }
+}
+

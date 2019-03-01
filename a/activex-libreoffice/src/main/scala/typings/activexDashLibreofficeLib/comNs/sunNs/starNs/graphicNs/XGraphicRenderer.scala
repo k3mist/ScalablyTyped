@@ -16,3 +16,17 @@ trait XGraphicRenderer
   def render(Graphic: XGraphic): scala.Unit
 }
 
+object XGraphicRenderer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    render: js.Function1[XGraphic, scala.Unit]
+  ): XGraphicRenderer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, render = render)
+  
+    __obj.asInstanceOf[XGraphicRenderer]
+  }
+}
+

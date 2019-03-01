@@ -19,3 +19,15 @@ trait RawDraftContentState extends js.Object {
   var entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity]
 }
 
+object RawDraftContentState {
+  @scala.inline
+  def apply(
+    blocks: js.Array[RawDraftContentBlock],
+    entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity]
+  ): RawDraftContentState = {
+    val __obj = js.Dynamic.literal(blocks = blocks, entityMap = entityMap)
+  
+    __obj.asInstanceOf[RawDraftContentState]
+  }
+}
+

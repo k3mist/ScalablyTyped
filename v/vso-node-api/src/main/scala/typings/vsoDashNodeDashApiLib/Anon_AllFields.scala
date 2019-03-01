@@ -13,3 +13,18 @@ trait Anon_AllFields extends js.Object {
   var relations: scala.Double
 }
 
+object Anon_AllFields {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    fields: scala.Double,
+    links: scala.Double,
+    none: scala.Double,
+    relations: scala.Double
+  ): Anon_AllFields = {
+    val __obj = js.Dynamic.literal(all = all, fields = fields, links = links, none = none, relations = relations)
+  
+    __obj.asInstanceOf[Anon_AllFields]
+  }
+}
+

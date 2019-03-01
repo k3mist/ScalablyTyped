@@ -13,3 +13,20 @@ trait BodyParameter
   var schema: js.UndefOr[Schema] = js.undefined
 }
 
+object BodyParameter {
+  @scala.inline
+  def apply(
+    in: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.body,
+    name: java.lang.String,
+    description: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: Schema = null
+  ): BodyParameter = {
+    val __obj = js.Dynamic.literal(in = in, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[BodyParameter]
+  }
+}
+

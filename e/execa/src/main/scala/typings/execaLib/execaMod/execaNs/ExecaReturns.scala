@@ -40,3 +40,21 @@ trait ExecaReturns extends js.Object {
   var timedOut: scala.Boolean
 }
 
+object ExecaReturns {
+  @scala.inline
+  def apply(
+    cmd: java.lang.String,
+    code: scala.Double,
+    failed: scala.Boolean,
+    killed: scala.Boolean,
+    stderr: java.lang.String,
+    stdout: java.lang.String,
+    timedOut: scala.Boolean,
+    signal: java.lang.String = null
+  ): ExecaReturns = {
+    val __obj = js.Dynamic.literal(cmd = cmd, code = code, failed = failed, killed = killed, stderr = stderr, stdout = stdout, timedOut = timedOut)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    __obj.asInstanceOf[ExecaReturns]
+  }
+}
+

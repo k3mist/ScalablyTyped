@@ -13,3 +13,18 @@ trait Anon_Delete extends js.Object {
   var values: js.Array[_]
 }
 
+object Anon_Delete {
+  @scala.inline
+  def apply(
+    _delete: js.Function,
+    hasKey: js.Function,
+    keys: js.Array[_],
+    set: js.Function,
+    values: js.Array[_]
+  ): Anon_Delete = {
+    val __obj = js.Dynamic.literal(_delete = _delete, hasKey = hasKey, keys = keys, set = set, values = values)
+  
+    __obj.asInstanceOf[Anon_Delete]
+  }
+}
+

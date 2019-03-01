@@ -21,3 +21,17 @@ trait XContentProviderFactory
   def createContentProvider(Service: java.lang.String): XContentProvider
 }
 
+object XContentProviderFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createContentProvider: js.Function1[java.lang.String, XContentProvider],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentProviderFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createContentProvider = createContentProvider, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContentProviderFactory]
+  }
+}
+

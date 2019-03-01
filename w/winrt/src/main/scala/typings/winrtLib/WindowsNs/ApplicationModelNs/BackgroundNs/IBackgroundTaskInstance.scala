@@ -15,3 +15,20 @@ trait IBackgroundTaskInstance extends js.Object {
   def getDeferral(): BackgroundTaskDeferral
 }
 
+object IBackgroundTaskInstance {
+  @scala.inline
+  def apply(
+    getDeferral: js.Function0[BackgroundTaskDeferral],
+    instanceId: java.lang.String,
+    oncanceled: js.Any,
+    progress: scala.Double,
+    suspendedCount: scala.Double,
+    task: BackgroundTaskRegistration,
+    triggerDetails: js.Any
+  ): IBackgroundTaskInstance = {
+    val __obj = js.Dynamic.literal(getDeferral = getDeferral, instanceId = instanceId, oncanceled = oncanceled, progress = progress, suspendedCount = suspendedCount, task = task, triggerDetails = triggerDetails)
+  
+    __obj.asInstanceOf[IBackgroundTaskInstance]
+  }
+}
+

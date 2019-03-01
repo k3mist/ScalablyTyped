@@ -64,3 +64,39 @@ trait StructureController
   def unclaim(): ScreepsReturnCode
 }
 
+object StructureController {
+  @scala.inline
+  def apply(
+    activateSafeMode: js.Function0[ScreepsReturnCode],
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    level: scala.Double,
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    progress: scala.Double,
+    progressTotal: scala.Double,
+    room: Room,
+    safeModeAvailable: scala.Double,
+    structureType: STRUCTURE_CONTROLLER,
+    ticksToDowngrade: scala.Double,
+    unclaim: js.Function0[ScreepsReturnCode],
+    upgradeBlocked: scala.Double,
+    reservation: ReservationDefinition = null,
+    safeMode: scala.Int | scala.Double = null,
+    safeModeCooldown: scala.Int | scala.Double = null,
+    sign: SignDefinition = null
+  ): StructureController = {
+    val __obj = js.Dynamic.literal(activateSafeMode = activateSafeMode, destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, level = level, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, room = room, safeModeAvailable = safeModeAvailable, structureType = structureType, ticksToDowngrade = ticksToDowngrade, unclaim = unclaim, upgradeBlocked = upgradeBlocked)
+    if (reservation != null) __obj.updateDynamic("reservation")(reservation)
+    if (safeMode != null) __obj.updateDynamic("safeMode")(safeMode.asInstanceOf[js.Any])
+    if (safeModeCooldown != null) __obj.updateDynamic("safeModeCooldown")(safeModeCooldown.asInstanceOf[js.Any])
+    if (sign != null) __obj.updateDynamic("sign")(sign)
+    __obj.asInstanceOf[StructureController]
+  }
+}
+

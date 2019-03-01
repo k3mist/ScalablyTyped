@@ -12,3 +12,17 @@ trait Anon_Charmap extends js.Object {
   var multicharmap: slugLib.slugMod.CharMap
 }
 
+object Anon_Charmap {
+  @scala.inline
+  def apply(
+    charmap: slugLib.slugMod.CharMap,
+    mode: java.lang.String,
+    modes: Anon_Pretty,
+    multicharmap: slugLib.slugMod.CharMap
+  ): Anon_Charmap = {
+    val __obj = js.Dynamic.literal(charmap = charmap, mode = mode, modes = modes, multicharmap = multicharmap)
+  
+    __obj.asInstanceOf[Anon_Charmap]
+  }
+}
+

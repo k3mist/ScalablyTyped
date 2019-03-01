@@ -11,3 +11,16 @@ trait HookScenarioResult extends js.Object {
   var sourceLocation: SourceLocation
 }
 
+object HookScenarioResult {
+  @scala.inline
+  def apply(
+    pickle: cucumberLib.cucumberMod.pickleNs.Pickle,
+    result: ScenarioResult,
+    sourceLocation: SourceLocation
+  ): HookScenarioResult = {
+    val __obj = js.Dynamic.literal(pickle = pickle, result = result, sourceLocation = sourceLocation)
+  
+    __obj.asInstanceOf[HookScenarioResult]
+  }
+}
+

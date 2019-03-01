@@ -69,3 +69,34 @@ trait MethodArgs extends js.Object {
   val restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]
 }
 
+object MethodArgs {
+  @scala.inline
+  def apply(
+    authorization: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    httpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    apiKeyRequired: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    authorizationScopes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    authorizerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestModels: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    requestParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]]
+    ] = null,
+    requestParametersInJson: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestValidatorId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MethodArgs = {
+    val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
+    if (apiKeyRequired != null) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
+    if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
+    if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])
+    if (requestModels != null) __obj.updateDynamic("requestModels")(requestModels.asInstanceOf[js.Any])
+    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
+    if (requestParametersInJson != null) __obj.updateDynamic("requestParametersInJson")(requestParametersInJson.asInstanceOf[js.Any])
+    if (requestValidatorId != null) __obj.updateDynamic("requestValidatorId")(requestValidatorId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MethodArgs]
+  }
+}
+

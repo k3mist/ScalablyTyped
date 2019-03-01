@@ -21,3 +21,24 @@ trait IopenLocation extends BaseParams {
   var scale: scala.Double
 }
 
+object IopenLocation {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    infoUrl: java.lang.String,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    name: java.lang.String,
+    scale: scala.Double,
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IopenLocation = {
+    val __obj = js.Dynamic.literal(address = address, infoUrl = infoUrl, latitude = latitude, longitude = longitude, name = name, scale = scale)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[IopenLocation]
+  }
+}
+

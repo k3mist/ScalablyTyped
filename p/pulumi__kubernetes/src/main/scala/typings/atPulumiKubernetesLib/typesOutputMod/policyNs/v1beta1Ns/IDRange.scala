@@ -19,3 +19,12 @@ trait IDRange extends js.Object {
   val min: scala.Double
 }
 
+object IDRange {
+  @scala.inline
+  def apply(max: scala.Double, min: scala.Double): IDRange = {
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
+    __obj.asInstanceOf[IDRange]
+  }
+}
+

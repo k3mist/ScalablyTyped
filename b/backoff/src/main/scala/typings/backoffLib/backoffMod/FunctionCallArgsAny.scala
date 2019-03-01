@@ -61,3 +61,49 @@ trait FunctionCallArgsAny extends js.Object {
   ): this.type
 }
 
+object FunctionCallArgsAny {
+  @scala.inline
+  def apply(
+    addListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ],
+    emit_callback: js.Function2[backoffLib.backoffLibStrings.callback, js.Array[_], scala.Boolean],
+    getLastResult: js.Function0[js.Array[_]],
+    listeners_callback: js.Function1[
+      backoffLib.backoffLibStrings.callback, 
+      js.Array[js.Function1[/* results */ js.Array[_], scala.Unit]]
+    ],
+    on_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ],
+    once_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ],
+    prependListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ],
+    prependOnceListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ],
+    removeListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Array[_], scala.Unit], 
+      FunctionCallArgsAny
+    ]
+  ): FunctionCallArgsAny = {
+    val __obj = js.Dynamic.literal(addListener_callback = addListener_callback, emit_callback = emit_callback, getLastResult = getLastResult, listeners_callback = listeners_callback, on_callback = on_callback, once_callback = once_callback, prependListener_callback = prependListener_callback, prependOnceListener_callback = prependOnceListener_callback, removeListener_callback = removeListener_callback)
+  
+    __obj.asInstanceOf[FunctionCallArgsAny]
+  }
+}
+

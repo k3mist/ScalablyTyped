@@ -14,3 +14,17 @@ trait IntrospectionUnionType
   val possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]]
 }
 
+object IntrospectionUnionType {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.UNION,
+    name: java.lang.String,
+    possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): IntrospectionUnionType = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, possibleTypes = possibleTypes)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionUnionType]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Style extends js.Object {
   var wrapper: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object Style {
+  @scala.inline
+  def apply(
+    child: reactLib.reactMod.ReactNs.CSSProperties,
+    container: reactLib.reactMod.ReactNs.CSSProperties,
+    wrapper: reactLib.reactMod.ReactNs.CSSProperties
+  ): Style = {
+    val __obj = js.Dynamic.literal(child = child, container = container, wrapper = wrapper)
+  
+    __obj.asInstanceOf[Style]
+  }
+}
+

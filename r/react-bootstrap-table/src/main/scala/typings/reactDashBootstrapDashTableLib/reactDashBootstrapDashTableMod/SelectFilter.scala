@@ -36,3 +36,24 @@ trait SelectFilter extends _Filter {
   var withoutEmptyOption: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SelectFilter {
+  @scala.inline
+  def apply(
+    options: SelectFilterOptionsType,
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.SelectFilter,
+    condition: FilterCondition = null,
+    defaultValue: java.lang.String | scala.Double | scala.Boolean = null,
+    selectText: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    withoutEmptyOption: js.UndefOr[scala.Boolean] = js.undefined
+  ): SelectFilter = {
+    val __obj = js.Dynamic.literal(options = options, `type` = `type`)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (selectText != null) __obj.updateDynamic("selectText")(selectText)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption)
+    __obj.asInstanceOf[SelectFilter]
+  }
+}
+

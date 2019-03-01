@@ -20,3 +20,18 @@ trait XSheetAnnotationsSupplier
   def getAnnotations(): XSheetAnnotations
 }
 
+object XSheetAnnotationsSupplier {
+  @scala.inline
+  def apply(
+    Annotations: XSheetAnnotations,
+    acquire: js.Function0[scala.Unit],
+    getAnnotations: js.Function0[XSheetAnnotations],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetAnnotationsSupplier = {
+    val __obj = js.Dynamic.literal(Annotations = Annotations, acquire = acquire, getAnnotations = getAnnotations, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSheetAnnotationsSupplier]
+  }
+}
+

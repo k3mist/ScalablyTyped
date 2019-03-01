@@ -20,3 +20,37 @@ trait CalendarsResource extends js.Object {
   def update(request: gapiDotClientDotCalendarLib.Anon_AltCalendarId): gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
 }
 
+object CalendarsResource {
+  @scala.inline
+  def apply(
+    clear: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
+    ],
+    update: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
+    ]
+  ): CalendarsResource = {
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, insert = insert, patch = patch, update = update)
+  
+    __obj.asInstanceOf[CalendarsResource]
+  }
+}
+

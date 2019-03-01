@@ -10,3 +10,12 @@ trait NativeScrollPoint extends js.Object {
   var y: scala.Double
 }
 
+object NativeScrollPoint {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): NativeScrollPoint = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[NativeScrollPoint]
+  }
+}
+

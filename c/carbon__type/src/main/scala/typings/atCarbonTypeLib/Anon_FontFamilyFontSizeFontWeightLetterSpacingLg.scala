@@ -15,3 +15,20 @@ trait Anon_FontFamilyFontSizeFontWeightLetterSpacingLg extends js.Object {
   var max: Anon_FontSizeLineHeight
 }
 
+object Anon_FontFamilyFontSizeFontWeightLetterSpacingLg {
+  @scala.inline
+  def apply(
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    fontWeight: scala.Double,
+    letterSpacing: scala.Double,
+    lg: Anon_FontSizeLineHeight,
+    lineHeight: java.lang.String,
+    max: Anon_FontSizeLineHeight
+  ): Anon_FontFamilyFontSizeFontWeightLetterSpacingLg = {
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lg = lg, lineHeight = lineHeight, max = max)
+  
+    __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingLg]
+  }
+}
+

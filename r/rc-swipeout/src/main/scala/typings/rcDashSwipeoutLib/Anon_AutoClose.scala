@@ -15,3 +15,20 @@ trait Anon_AutoClose extends js.Object {
   def onOpen(): scala.Unit
 }
 
+object Anon_AutoClose {
+  @scala.inline
+  def apply(
+    autoClose: scala.Boolean,
+    disabled: scala.Boolean,
+    left: js.Array[scala.Nothing],
+    onClose: js.Function0[scala.Unit],
+    onOpen: js.Function0[scala.Unit],
+    prefixCls: java.lang.String,
+    right: js.Array[scala.Nothing]
+  ): Anon_AutoClose = {
+    val __obj = js.Dynamic.literal(autoClose = autoClose, disabled = disabled, left = left, onClose = onClose, onOpen = onOpen, prefixCls = prefixCls, right = right)
+  
+    __obj.asInstanceOf[Anon_AutoClose]
+  }
+}
+

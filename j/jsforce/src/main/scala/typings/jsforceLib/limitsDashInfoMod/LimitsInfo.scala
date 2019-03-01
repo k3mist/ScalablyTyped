@@ -35,3 +35,40 @@ trait LimitsInfo extends js.Object {
   var StreamingApiConcurrentClients: Limit
 }
 
+object LimitsInfo {
+  @scala.inline
+  def apply(
+    ConcurrentAsyncGetReportInstances: Limit,
+    ConcurrentSyncReportRuns: Limit,
+    DailyAnalyticsDataflowJobExecutions: Limit,
+    DailyApiRequests: DailyApiRequests,
+    DailyAsyncApexExecutions: Limit,
+    DailyBulkApiRequests: DailyApiRequests,
+    DailyDurableGenericStreamingApiEvents: Limit,
+    DailyDurableStreamingApiEvents: Limit,
+    DailyGenericStreamingApiEvents: DailyApiRequests,
+    DailyStreamingApiEvents: DailyApiRequests,
+    DailyWorkflowEmails: Limit,
+    DataStorageMB: Limit,
+    DurableStreamingApiConcurrentClients: Limit,
+    FileStorageMB: Limit,
+    HourlyAsyncReportRuns: Limit,
+    HourlyDashboardRefreshes: Limit,
+    HourlyDashboardResults: Limit,
+    HourlyDashboardStatuses: Limit,
+    HourlyODataCallout: Limit,
+    HourlySyncReportRuns: Limit,
+    HourlyTimeBasedWorkflow: Limit,
+    MassEmail: Limit,
+    MonthlyPlatformEvents: Limit,
+    Package2VersionCreates: Limit,
+    PermissionSets: PermissionSets,
+    SingleEmail: Limit,
+    StreamingApiConcurrentClients: Limit
+  ): LimitsInfo = {
+    val __obj = js.Dynamic.literal(ConcurrentAsyncGetReportInstances = ConcurrentAsyncGetReportInstances, ConcurrentSyncReportRuns = ConcurrentSyncReportRuns, DailyAnalyticsDataflowJobExecutions = DailyAnalyticsDataflowJobExecutions, DailyApiRequests = DailyApiRequests, DailyAsyncApexExecutions = DailyAsyncApexExecutions, DailyBulkApiRequests = DailyBulkApiRequests, DailyDurableGenericStreamingApiEvents = DailyDurableGenericStreamingApiEvents, DailyDurableStreamingApiEvents = DailyDurableStreamingApiEvents, DailyGenericStreamingApiEvents = DailyGenericStreamingApiEvents, DailyStreamingApiEvents = DailyStreamingApiEvents, DailyWorkflowEmails = DailyWorkflowEmails, DataStorageMB = DataStorageMB, DurableStreamingApiConcurrentClients = DurableStreamingApiConcurrentClients, FileStorageMB = FileStorageMB, HourlyAsyncReportRuns = HourlyAsyncReportRuns, HourlyDashboardRefreshes = HourlyDashboardRefreshes, HourlyDashboardResults = HourlyDashboardResults, HourlyDashboardStatuses = HourlyDashboardStatuses, HourlyODataCallout = HourlyODataCallout, HourlySyncReportRuns = HourlySyncReportRuns, HourlyTimeBasedWorkflow = HourlyTimeBasedWorkflow, MassEmail = MassEmail, MonthlyPlatformEvents = MonthlyPlatformEvents, Package2VersionCreates = Package2VersionCreates, PermissionSets = PermissionSets, SingleEmail = SingleEmail, StreamingApiConcurrentClients = StreamingApiConcurrentClients)
+  
+    __obj.asInstanceOf[LimitsInfo]
+  }
+}
+

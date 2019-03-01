@@ -10,3 +10,12 @@ trait OSPermissionState extends js.Object {
   var status: OSNotificationPermission
 }
 
+object OSPermissionState {
+  @scala.inline
+  def apply(hasPrompted: scala.Boolean, status: OSNotificationPermission): OSPermissionState = {
+    val __obj = js.Dynamic.literal(hasPrompted = hasPrompted, status = status)
+  
+    __obj.asInstanceOf[OSPermissionState]
+  }
+}
+

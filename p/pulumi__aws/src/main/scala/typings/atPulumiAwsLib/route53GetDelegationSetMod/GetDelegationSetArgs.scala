@@ -12,3 +12,12 @@ trait GetDelegationSetArgs extends js.Object {
   val id: java.lang.String
 }
 
+object GetDelegationSetArgs {
+  @scala.inline
+  def apply(id: java.lang.String): GetDelegationSetArgs = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[GetDelegationSetArgs]
+  }
+}
+

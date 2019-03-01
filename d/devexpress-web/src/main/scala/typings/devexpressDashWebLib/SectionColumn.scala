@@ -21,3 +21,12 @@ trait SectionColumn extends js.Object {
   var width: scala.Double
 }
 
+object SectionColumn {
+  @scala.inline
+  def apply(spacing: scala.Double, width: scala.Double): SectionColumn = {
+    val __obj = js.Dynamic.literal(spacing = spacing, width = width)
+  
+    __obj.asInstanceOf[SectionColumn]
+  }
+}
+

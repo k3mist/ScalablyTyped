@@ -14,3 +14,12 @@ trait CompositionParameterSegment extends js.Object {
   var style: java.lang.String
 }
 
+object CompositionParameterSegment {
+  @scala.inline
+  def apply(end: scala.Double, start: scala.Double, style: java.lang.String): CompositionParameterSegment = {
+    val __obj = js.Dynamic.literal(end = end, start = start, style = style)
+  
+    __obj.asInstanceOf[CompositionParameterSegment]
+  }
+}
+

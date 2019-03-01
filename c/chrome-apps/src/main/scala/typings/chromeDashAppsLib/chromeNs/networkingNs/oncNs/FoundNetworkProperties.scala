@@ -18,3 +18,19 @@ trait FoundNetworkProperties extends js.Object {
   var Technology: java.lang.String
 }
 
+object FoundNetworkProperties {
+  @scala.inline
+  def apply(
+    NetworkId: java.lang.String,
+    Status: java.lang.String,
+    Technology: java.lang.String,
+    LongName: java.lang.String = null,
+    ShortName: java.lang.String = null
+  ): FoundNetworkProperties = {
+    val __obj = js.Dynamic.literal(NetworkId = NetworkId, Status = Status, Technology = Technology)
+    if (LongName != null) __obj.updateDynamic("LongName")(LongName)
+    if (ShortName != null) __obj.updateDynamic("ShortName")(ShortName)
+    __obj.asInstanceOf[FoundNetworkProperties]
+  }
+}
+

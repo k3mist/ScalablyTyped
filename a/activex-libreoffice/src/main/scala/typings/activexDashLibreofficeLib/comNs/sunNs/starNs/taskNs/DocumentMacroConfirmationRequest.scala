@@ -25,3 +25,22 @@ trait DocumentMacroConfirmationRequest extends ClassifiedInteractionRequest {
   var DocumentVersion: java.lang.String
 }
 
+object DocumentMacroConfirmationRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DocumentSignatureInformation: activexDashInteropLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.DocumentSignatureInformation
+    ],
+    DocumentStorage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage,
+    DocumentURL: java.lang.String,
+    DocumentVersion: java.lang.String,
+    Message: java.lang.String
+  ): DocumentMacroConfirmationRequest = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, DocumentSignatureInformation = DocumentSignatureInformation, DocumentStorage = DocumentStorage, DocumentURL = DocumentURL, DocumentVersion = DocumentVersion, Message = Message)
+  
+    __obj.asInstanceOf[DocumentMacroConfirmationRequest]
+  }
+}
+

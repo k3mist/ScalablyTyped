@@ -19,3 +19,20 @@ trait IPathBezierSeed extends IPathLine {
   var parentRange: js.UndefOr[IBezierRange] = js.undefined
 }
 
+object IPathBezierSeed {
+  @scala.inline
+  def apply(
+    controls: js.Array[IPoint],
+    end: IPoint,
+    origin: IPoint,
+    `type`: java.lang.String,
+    layer: java.lang.String = null,
+    parentRange: IBezierRange = null
+  ): IPathBezierSeed = {
+    val __obj = js.Dynamic.literal(controls = controls, end = end, origin = origin, `type` = `type`)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (parentRange != null) __obj.updateDynamic("parentRange")(parentRange)
+    __obj.asInstanceOf[IPathBezierSeed]
+  }
+}
+

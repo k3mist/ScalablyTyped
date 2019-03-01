@@ -40,3 +40,26 @@ trait LifecycleHookArgs extends js.Object {
   val roleArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object LifecycleHookArgs {
+  @scala.inline
+  def apply(
+    autoscalingGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    lifecycleTransition: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    defaultResult: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    heartbeatTimeout: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notificationMetadata: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notificationTargetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): LifecycleHookArgs = {
+    val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], lifecycleTransition = lifecycleTransition.asInstanceOf[js.Any])
+    if (defaultResult != null) __obj.updateDynamic("defaultResult")(defaultResult.asInstanceOf[js.Any])
+    if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata.asInstanceOf[js.Any])
+    if (notificationTargetArn != null) __obj.updateDynamic("notificationTargetArn")(notificationTargetArn.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LifecycleHookArgs]
+  }
+}
+

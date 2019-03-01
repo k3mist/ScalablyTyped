@@ -10,3 +10,19 @@ import scala.scalajs.js.annotation._
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.saveFile
 }
 
+object ChooseSaveFileEntryOptions {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.saveFile,
+    accepts: js.Array[AcceptOptions] = null,
+    acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    suggestedName: java.lang.String = null
+  ): ChooseSaveFileEntryOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    __obj.asInstanceOf[ChooseSaveFileEntryOptions]
+  }
+}
+

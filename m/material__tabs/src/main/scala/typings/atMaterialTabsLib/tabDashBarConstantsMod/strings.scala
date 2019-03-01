@@ -12,3 +12,16 @@ trait strings
   var TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    CHANGE_EVENT: atMaterialTabsLib.atMaterialTabsLibStrings.`MDCTabBar:change`,
+    INDICATOR_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar__indicator`,
+    TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
+  ): strings = {
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, INDICATOR_SELECTOR = INDICATOR_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

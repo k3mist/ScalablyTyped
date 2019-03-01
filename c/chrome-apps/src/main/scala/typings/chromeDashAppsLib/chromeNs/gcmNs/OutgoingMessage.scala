@@ -24,3 +24,17 @@ trait OutgoingMessage extends js.Object {
   var timeToLive: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object OutgoingMessage {
+  @scala.inline
+  def apply(
+    data: IGCMDataSend,
+    destinationId: java.lang.String,
+    messageId: java.lang.String,
+    timeToLive: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): OutgoingMessage = {
+    val __obj = js.Dynamic.literal(data = data, destinationId = destinationId, messageId = messageId)
+    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive)
+    __obj.asInstanceOf[OutgoingMessage]
+  }
+}
+

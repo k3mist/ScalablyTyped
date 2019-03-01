@@ -10,3 +10,12 @@ trait Projection extends js.Object {
   def fromPointToCoord(point: Point): Coord
 }
 
+object Projection {
+  @scala.inline
+  def apply(fromCoordToPoint: js.Function1[Coord, Point], fromPointToCoord: js.Function1[Point, Coord]): Projection = {
+    val __obj = js.Dynamic.literal(fromCoordToPoint = fromCoordToPoint, fromPointToCoord = fromPointToCoord)
+  
+    __obj.asInstanceOf[Projection]
+  }
+}
+

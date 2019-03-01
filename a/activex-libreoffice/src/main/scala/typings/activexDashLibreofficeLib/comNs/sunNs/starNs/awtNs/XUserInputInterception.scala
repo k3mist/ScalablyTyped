@@ -35,3 +35,20 @@ trait XUserInputInterception
   def removeMouseClickHandler(xHandler: XMouseClickHandler): scala.Unit
 }
 
+object XUserInputInterception {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addKeyHandler: js.Function1[XKeyHandler, scala.Unit],
+    addMouseClickHandler: js.Function1[XMouseClickHandler, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeKeyHandler: js.Function1[XKeyHandler, scala.Unit],
+    removeMouseClickHandler: js.Function1[XMouseClickHandler, scala.Unit]
+  ): XUserInputInterception = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addKeyHandler = addKeyHandler, addMouseClickHandler = addMouseClickHandler, queryInterface = queryInterface, release = release, removeKeyHandler = removeKeyHandler, removeMouseClickHandler = removeMouseClickHandler)
+  
+    __obj.asInstanceOf[XUserInputInterception]
+  }
+}
+

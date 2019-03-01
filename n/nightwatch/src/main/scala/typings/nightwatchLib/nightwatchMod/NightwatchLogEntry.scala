@@ -20,3 +20,12 @@ trait NightwatchLogEntry extends js.Object {
   var timestamp: scala.Double
 }
 
+object NightwatchLogEntry {
+  @scala.inline
+  def apply(level: java.lang.String, message: java.lang.String, timestamp: scala.Double): NightwatchLogEntry = {
+    val __obj = js.Dynamic.literal(level = level, message = message, timestamp = timestamp)
+  
+    __obj.asInstanceOf[NightwatchLogEntry]
+  }
+}
+

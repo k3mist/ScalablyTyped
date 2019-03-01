@@ -14,3 +14,19 @@ trait FlowSwitchClause
   var switchStatement: SwitchStatement
 }
 
+object FlowSwitchClause {
+  @scala.inline
+  def apply(
+    antecedent: FlowNode,
+    clauseEnd: scala.Double,
+    clauseStart: scala.Double,
+    flags: FlowFlags,
+    switchStatement: SwitchStatement,
+    id: scala.Int | scala.Double = null
+  ): FlowSwitchClause = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent, clauseEnd = clauseEnd, clauseStart = clauseStart, flags = flags, switchStatement = switchStatement)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowSwitchClause]
+  }
+}
+

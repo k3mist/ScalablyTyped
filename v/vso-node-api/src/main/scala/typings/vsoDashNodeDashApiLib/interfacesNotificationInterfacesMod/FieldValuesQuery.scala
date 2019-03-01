@@ -12,3 +12,17 @@ trait FieldValuesQuery
   var scope: java.lang.String
 }
 
+object FieldValuesQuery {
+  @scala.inline
+  def apply(
+    currentValues: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inputValues: js.Array[FieldInputValues],
+    resource: js.Any,
+    scope: java.lang.String
+  ): FieldValuesQuery = {
+    val __obj = js.Dynamic.literal(currentValues = currentValues, inputValues = inputValues, resource = resource, scope = scope)
+  
+    __obj.asInstanceOf[FieldValuesQuery]
+  }
+}
+

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "jquery-drawer"
-version := "3.2-dt-20180409Z-e0f19a"
+version := "3.2-dt-20180409Z-b18aff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "iscroll" % "5.2-dt-20180418Z-208ff0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-295e43",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-c8cc19",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
+  "org.scalablytyped" %%% "iscroll" % "5.2-dt-20180418Z-a61561",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-56608c",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-4f3b4b",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

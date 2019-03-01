@@ -20,3 +20,13 @@ trait ImageValueProperties extends js.Object {
   var sourceURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageValueProperties {
+  @scala.inline
+  def apply(linkURL: java.lang.String = null, sourceURL: java.lang.String = null): ImageValueProperties = {
+    val __obj = js.Dynamic.literal()
+    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL)
+    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL)
+    __obj.asInstanceOf[ImageValueProperties]
+  }
+}
+

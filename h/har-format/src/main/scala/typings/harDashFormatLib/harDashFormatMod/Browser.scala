@@ -14,3 +14,12 @@ trait Browser extends js.Object {
   var version: java.lang.String
 }
 
+object Browser {
+  @scala.inline
+  def apply(name: java.lang.String, version: java.lang.String, comment: java.lang.String = null): Browser = {
+    val __obj = js.Dynamic.literal(name = name, version = version)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    __obj.asInstanceOf[Browser]
+  }
+}
+

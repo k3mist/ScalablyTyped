@@ -10,3 +10,12 @@ trait Anon_ActionClient extends js.Object {
   var goalMessage: js.Any
 }
 
+object Anon_ActionClient {
+  @scala.inline
+  def apply(actionClient: roslibLib.roslibMod.ROSLIBNs.ActionClient, goalMessage: js.Any): Anon_ActionClient = {
+    val __obj = js.Dynamic.literal(actionClient = actionClient, goalMessage = goalMessage)
+  
+    __obj.asInstanceOf[Anon_ActionClient]
+  }
+}
+

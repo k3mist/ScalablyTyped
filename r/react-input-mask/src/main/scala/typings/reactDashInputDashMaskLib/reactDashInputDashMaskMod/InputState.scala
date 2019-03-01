@@ -10,3 +10,12 @@ trait InputState extends js.Object {
   var value: java.lang.String
 }
 
+object InputState {
+  @scala.inline
+  def apply(value: java.lang.String, selection: Selection = null): InputState = {
+    val __obj = js.Dynamic.literal(value = value)
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    __obj.asInstanceOf[InputState]
+  }
+}
+

@@ -19,3 +19,20 @@ trait XTransferableEx
   def queryTransferDataFlavors(requestedFlavors: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor]): activexDashInteropLib.SafeArray[DataFlavor]
 }
 
+object XTransferableEx {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryTransferDataFlavors: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor], 
+      activexDashInteropLib.SafeArray[DataFlavor]
+    ],
+    release: js.Function0[scala.Unit]
+  ): XTransferableEx = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryTransferDataFlavors = queryTransferDataFlavors, release = release)
+  
+    __obj.asInstanceOf[XTransferableEx]
+  }
+}
+

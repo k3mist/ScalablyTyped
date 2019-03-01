@@ -13,3 +13,18 @@ trait AbstractHandshake extends js.Object {
   def getHandshakeFields(client: Client): HandshakeFields
 }
 
+object AbstractHandshake {
+  @scala.inline
+  def apply(
+    authType: java.lang.String,
+    authVersion: java.lang.String,
+    deploymentId: java.lang.String,
+    getHandshakeFields: js.Function1[Client, HandshakeFields],
+    sandboxId: java.lang.String
+  ): AbstractHandshake = {
+    val __obj = js.Dynamic.literal(authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = getHandshakeFields, sandboxId = sandboxId)
+  
+    __obj.asInstanceOf[AbstractHandshake]
+  }
+}
+

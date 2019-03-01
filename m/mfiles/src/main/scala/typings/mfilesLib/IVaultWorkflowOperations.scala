@@ -29,3 +29,34 @@ trait IVaultWorkflowOperations extends js.Object {
   def UpdateWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
 }
 
+object IVaultWorkflowOperations {
+  @scala.inline
+  def apply(
+    AddWorkflowAdmin: js.Function1[IWorkflowAdmin, IWorkflowAdmin],
+    GetStateTransitionSignatureSettings: js.Function2[scala.Double, scala.Double, ISignatureSettings],
+    GetStateTransitionSignatureSettingsByID: js.Function1[scala.Double, ISignatureSettings],
+    GetWorkflowAdmin: js.Function1[scala.Double, IWorkflowAdmin],
+    GetWorkflowForClient: js.Function2[scala.Double, scala.Boolean, IWorkflow],
+    GetWorkflowIDByAlias: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowIDByGUID: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowStateIDByAlias: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowStateIDByGUID: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowStateTransitionIDByAlias: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowStateTransitionIDByGUID: js.Function1[java.lang.String, scala.Double],
+    GetWorkflowStateTransitions: js.Function2[scala.Double, ITypedValue, IStateTransitionsForClient],
+    GetWorkflowStateTransitionsAsJSON: js.Function3[scala.Double, ITypedValue, IObjVer, java.lang.String],
+    GetWorkflowStateTransitionsEx: js.Function3[scala.Double, ITypedValue, IObjVer, IStateTransitionsForClient],
+    GetWorkflowStates: js.Function2[scala.Double, ITypedValue, IStates],
+    GetWorkflowStatesEx: js.Function3[scala.Double, ITypedValue, IObjVer, IStates],
+    GetWorkflowsAdmin: js.Function0[IWorkflowsAdmin],
+    GetWorkflowsAsValueListItems: js.Function1[scala.Boolean, IValueListItems],
+    GetWorkflowsForClient: js.Function1[scala.Boolean, IWorkflows],
+    RemoveWorkflowAdmin: js.Function1[scala.Double, scala.Unit],
+    UpdateWorkflowAdmin: js.Function1[IWorkflowAdmin, IWorkflowAdmin]
+  ): IVaultWorkflowOperations = {
+    val __obj = js.Dynamic.literal(AddWorkflowAdmin = AddWorkflowAdmin, GetStateTransitionSignatureSettings = GetStateTransitionSignatureSettings, GetStateTransitionSignatureSettingsByID = GetStateTransitionSignatureSettingsByID, GetWorkflowAdmin = GetWorkflowAdmin, GetWorkflowForClient = GetWorkflowForClient, GetWorkflowIDByAlias = GetWorkflowIDByAlias, GetWorkflowIDByGUID = GetWorkflowIDByGUID, GetWorkflowStateIDByAlias = GetWorkflowStateIDByAlias, GetWorkflowStateIDByGUID = GetWorkflowStateIDByGUID, GetWorkflowStateTransitionIDByAlias = GetWorkflowStateTransitionIDByAlias, GetWorkflowStateTransitionIDByGUID = GetWorkflowStateTransitionIDByGUID, GetWorkflowStateTransitions = GetWorkflowStateTransitions, GetWorkflowStateTransitionsAsJSON = GetWorkflowStateTransitionsAsJSON, GetWorkflowStateTransitionsEx = GetWorkflowStateTransitionsEx, GetWorkflowStates = GetWorkflowStates, GetWorkflowStatesEx = GetWorkflowStatesEx, GetWorkflowsAdmin = GetWorkflowsAdmin, GetWorkflowsAsValueListItems = GetWorkflowsAsValueListItems, GetWorkflowsForClient = GetWorkflowsForClient, RemoveWorkflowAdmin = RemoveWorkflowAdmin, UpdateWorkflowAdmin = UpdateWorkflowAdmin)
+  
+    __obj.asInstanceOf[IVaultWorkflowOperations]
+  }
+}
+

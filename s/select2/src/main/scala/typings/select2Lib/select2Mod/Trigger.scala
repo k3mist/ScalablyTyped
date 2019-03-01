@@ -10,3 +10,12 @@ trait Trigger extends js.Object {
   var `type`: select2Lib.select2LibStrings.`select2:select`
 }
 
+object Trigger {
+  @scala.inline
+  def apply(params: select2Lib.Anon_Data, `type`: select2Lib.select2LibStrings.`select2:select`): Trigger = {
+    val __obj = js.Dynamic.literal(params = params, `type` = `type`)
+  
+    __obj.asInstanceOf[Trigger]
+  }
+}
+

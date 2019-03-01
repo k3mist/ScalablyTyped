@@ -12,3 +12,17 @@ trait Anon_COLUMNHEADERCLICK extends js.Object {
   var ITEM_DRAGGING: java.lang.String
 }
 
+object Anon_COLUMNHEADERCLICK {
+  @scala.inline
+  def apply(
+    COLUMN_HEADER_CLICK: java.lang.String,
+    COLUMN_MENU_SHOWN: java.lang.String,
+    GRID_SCROLL: java.lang.String,
+    ITEM_DRAGGING: java.lang.String
+  ): Anon_COLUMNHEADERCLICK = {
+    val __obj = js.Dynamic.literal(COLUMN_HEADER_CLICK = COLUMN_HEADER_CLICK, COLUMN_MENU_SHOWN = COLUMN_MENU_SHOWN, GRID_SCROLL = GRID_SCROLL, ITEM_DRAGGING = ITEM_DRAGGING)
+  
+    __obj.asInstanceOf[Anon_COLUMNHEADERCLICK]
+  }
+}
+

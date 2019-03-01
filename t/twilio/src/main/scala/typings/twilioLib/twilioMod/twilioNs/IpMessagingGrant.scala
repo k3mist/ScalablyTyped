@@ -13,3 +13,19 @@ trait IpMessagingGrant extends Grant {
   var serviceSid: java.lang.String
 }
 
+object IpMessagingGrant {
+  @scala.inline
+  def apply(
+    deploymentRoleSid: java.lang.String,
+    endpointId: java.lang.String,
+    key: java.lang.String,
+    pushCredentialSid: java.lang.String,
+    serviceSid: java.lang.String,
+    toPayload: js.Function0[IpMessagingGrantPayload]
+  ): IpMessagingGrant = {
+    val __obj = js.Dynamic.literal(deploymentRoleSid = deploymentRoleSid, endpointId = endpointId, key = key, pushCredentialSid = pushCredentialSid, serviceSid = serviceSid, toPayload = toPayload)
+  
+    __obj.asInstanceOf[IpMessagingGrant]
+  }
+}
+

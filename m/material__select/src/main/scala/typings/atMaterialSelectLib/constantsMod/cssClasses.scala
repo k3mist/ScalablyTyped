@@ -12,3 +12,16 @@ trait cssClasses
   var ROOT: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    BOX: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select--box`,
+    DISABLED: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select--disabled`,
+    ROOT: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(BOX = BOX, DISABLED = DISABLED, ROOT = ROOT)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

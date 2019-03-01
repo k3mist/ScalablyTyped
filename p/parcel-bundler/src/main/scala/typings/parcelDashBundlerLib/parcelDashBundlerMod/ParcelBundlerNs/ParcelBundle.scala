@@ -40,3 +40,21 @@ trait ParcelBundle extends js.Object {
   var `type`: java.lang.String
 }
 
+object ParcelBundle {
+  @scala.inline
+  def apply(
+    assets: nodeLib.Set[_],
+    entryAsset: js.Any,
+    name: java.lang.String,
+    offsets: stdLib.Map[ParcelAsset, scala.Double],
+    siblingBundles: nodeLib.Set[_],
+    siblingBundlesMap: stdLib.Map[java.lang.String, ParcelBundle],
+    `type`: java.lang.String,
+    parentBundle: js.Any = null
+  ): ParcelBundle = {
+    val __obj = js.Dynamic.literal(assets = assets, entryAsset = entryAsset, name = name, offsets = offsets, siblingBundles = siblingBundles, siblingBundlesMap = siblingBundlesMap, `type` = `type`)
+    if (parentBundle != null) __obj.updateDynamic("parentBundle")(parentBundle)
+    __obj.asInstanceOf[ParcelBundle]
+  }
+}
+

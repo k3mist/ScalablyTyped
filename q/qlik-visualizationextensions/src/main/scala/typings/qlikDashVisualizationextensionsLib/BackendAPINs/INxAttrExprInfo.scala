@@ -28,3 +28,18 @@ trait INxAttrExprInfo extends js.Object {
   var qMin: scala.Double
 }
 
+object INxAttrExprInfo {
+  @scala.inline
+  def apply(
+    qContinuousAxes: scala.Boolean,
+    qFallbackTitle: java.lang.String,
+    qIsCyclic: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double
+  ): INxAttrExprInfo = {
+    val __obj = js.Dynamic.literal(qContinuousAxes = qContinuousAxes, qFallbackTitle = qFallbackTitle, qIsCyclic = qIsCyclic, qMax = qMax, qMin = qMin)
+  
+    __obj.asInstanceOf[INxAttrExprInfo]
+  }
+}
+

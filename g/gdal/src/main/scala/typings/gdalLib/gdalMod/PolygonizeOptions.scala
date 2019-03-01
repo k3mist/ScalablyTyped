@@ -14,3 +14,21 @@ trait PolygonizeOptions extends js.Object {
   var useFloats: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PolygonizeOptions {
+  @scala.inline
+  def apply(
+    dst: Layer,
+    pixValField: scala.Double,
+    src: RasterBand,
+    connectedness: scala.Int | scala.Double = null,
+    mask: RasterBand = null,
+    useFloats: js.UndefOr[scala.Boolean] = js.undefined
+  ): PolygonizeOptions = {
+    val __obj = js.Dynamic.literal(dst = dst, pixValField = pixValField, src = src)
+    if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(useFloats)) __obj.updateDynamic("useFloats")(useFloats)
+    __obj.asInstanceOf[PolygonizeOptions]
+  }
+}
+

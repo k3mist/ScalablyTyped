@@ -39,3 +39,35 @@ trait XServiceTypeDescription2 extends XServiceTypeDescription {
   def isSingleInterfaceBased(): scala.Boolean
 }
 
+object XServiceTypeDescription2 {
+  @scala.inline
+  def apply(
+    Constructors: activexDashInteropLib.SafeArray[XServiceConstructorDescription],
+    Interface: XTypeDescription,
+    MandatoryInterfaces: activexDashInteropLib.SafeArray[XInterfaceTypeDescription],
+    MandatoryServices: activexDashInteropLib.SafeArray[XServiceTypeDescription],
+    Name: java.lang.String,
+    OptionalInterfaces: activexDashInteropLib.SafeArray[XInterfaceTypeDescription],
+    OptionalServices: activexDashInteropLib.SafeArray[XServiceTypeDescription],
+    Properties: activexDashInteropLib.SafeArray[XPropertyTypeDescription],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getConstructors: js.Function0[activexDashInteropLib.SafeArray[XServiceConstructorDescription]],
+    getInterface: js.Function0[XTypeDescription],
+    getMandatoryInterfaces: js.Function0[activexDashInteropLib.SafeArray[XInterfaceTypeDescription]],
+    getMandatoryServices: js.Function0[activexDashInteropLib.SafeArray[XServiceTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getOptionalInterfaces: js.Function0[activexDashInteropLib.SafeArray[XInterfaceTypeDescription]],
+    getOptionalServices: js.Function0[activexDashInteropLib.SafeArray[XServiceTypeDescription]],
+    getProperties: js.Function0[activexDashInteropLib.SafeArray[XPropertyTypeDescription]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    isSingleInterfaceBased: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XServiceTypeDescription2 = {
+    val __obj = js.Dynamic.literal(Constructors = Constructors, Interface = Interface, MandatoryInterfaces = MandatoryInterfaces, MandatoryServices = MandatoryServices, Name = Name, OptionalInterfaces = OptionalInterfaces, OptionalServices = OptionalServices, Properties = Properties, TypeClass = TypeClass, acquire = acquire, getConstructors = getConstructors, getInterface = getInterface, getMandatoryInterfaces = getMandatoryInterfaces, getMandatoryServices = getMandatoryServices, getName = getName, getOptionalInterfaces = getOptionalInterfaces, getOptionalServices = getOptionalServices, getProperties = getProperties, getTypeClass = getTypeClass, isSingleInterfaceBased = isSingleInterfaceBased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XServiceTypeDescription2]
+  }
+}
+

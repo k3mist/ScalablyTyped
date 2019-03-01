@@ -11,3 +11,16 @@ trait ITileNotification extends js.Object {
   var tag: java.lang.String
 }
 
+object ITileNotification {
+  @scala.inline
+  def apply(
+    content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
+    expirationTime: stdLib.Date,
+    tag: java.lang.String
+  ): ITileNotification = {
+    val __obj = js.Dynamic.literal(content = content, expirationTime = expirationTime, tag = tag)
+  
+    __obj.asInstanceOf[ITileNotification]
+  }
+}
+

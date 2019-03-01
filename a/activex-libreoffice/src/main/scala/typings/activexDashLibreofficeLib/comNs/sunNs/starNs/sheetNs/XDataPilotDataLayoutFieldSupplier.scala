@@ -31,3 +31,12 @@ trait XDataPilotDataLayoutFieldSupplier extends js.Object {
   def getDataLayoutField(): XDataPilotField
 }
 
+object XDataPilotDataLayoutFieldSupplier {
+  @scala.inline
+  def apply(DataLayoutField: XDataPilotField, getDataLayoutField: js.Function0[XDataPilotField]): XDataPilotDataLayoutFieldSupplier = {
+    val __obj = js.Dynamic.literal(DataLayoutField = DataLayoutField, getDataLayoutField = getDataLayoutField)
+  
+    __obj.asInstanceOf[XDataPilotDataLayoutFieldSupplier]
+  }
+}
+

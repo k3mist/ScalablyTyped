@@ -13,3 +13,18 @@ trait BitArray extends js.Object {
   def toJSON(): minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON
 }
 
+object BitArray {
+  @scala.inline
+  def apply(
+    bits: stdLib.Uint32Array,
+    get: js.Function1[scala.Double, scala.Boolean],
+    length: scala.Double,
+    set: js.Function2[scala.Double, js.Any, scala.Boolean],
+    toJSON: js.Function0[minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON]
+  ): BitArray = {
+    val __obj = js.Dynamic.literal(bits = bits, get = get, length = length, set = set, toJSON = toJSON)
+  
+    __obj.asInstanceOf[BitArray]
+  }
+}
+

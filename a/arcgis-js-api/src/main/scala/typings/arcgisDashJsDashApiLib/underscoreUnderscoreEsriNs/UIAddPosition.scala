@@ -21,3 +21,18 @@ trait UIAddPosition
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UIAddPosition {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    index: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    position: java.lang.String = null
+  ): UIAddPosition = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, index = index, propertyIsEnumerable = propertyIsEnumerable)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[UIAddPosition]
+  }
+}
+

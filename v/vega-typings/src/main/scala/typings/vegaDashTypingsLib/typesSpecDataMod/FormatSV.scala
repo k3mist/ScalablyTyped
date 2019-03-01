@@ -10,3 +10,15 @@ trait FormatSV extends _Format {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.csv | vegaDashTypingsLib.vegaDashTypingsLibStrings.tsv
 }
 
+object FormatSV {
+  @scala.inline
+  def apply(
+    `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.csv | vegaDashTypingsLib.vegaDashTypingsLibStrings.tsv,
+    parse: Parse = null
+  ): FormatSV = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatSV]
+  }
+}
+

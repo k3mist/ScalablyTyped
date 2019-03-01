@@ -14,3 +14,15 @@ trait CopyrightObject extends js.Object {
   var `type`: spotifyDashApiLib.spotifyDashApiLibStrings.C | spotifyDashApiLib.spotifyDashApiLibStrings.P
 }
 
+object CopyrightObject {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: spotifyDashApiLib.spotifyDashApiLibStrings.C | spotifyDashApiLib.spotifyDashApiLibStrings.P
+  ): CopyrightObject = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CopyrightObject]
+  }
+}
+

@@ -14,3 +14,22 @@ trait Page
   var selectors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    declarations: js.Array[Declaration | Comment] = null,
+    parent: Node = null,
+    position: cssLib.Anon_Content = null,
+    selectors: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): Page = {
+    val __obj = js.Dynamic.literal()
+    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Page]
+  }
+}
+

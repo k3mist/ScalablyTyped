@@ -10,3 +10,12 @@ trait Area extends js.Object {
   var size: scala.Double
 }
 
+object Area {
+  @scala.inline
+  def apply(sets: js.Array[java.lang.String], size: scala.Double): Area = {
+    val __obj = js.Dynamic.literal(sets = sets, size = size)
+  
+    __obj.asInstanceOf[Area]
+  }
+}
+

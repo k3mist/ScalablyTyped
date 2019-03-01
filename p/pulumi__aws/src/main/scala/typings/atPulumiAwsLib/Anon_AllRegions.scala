@@ -11,3 +11,17 @@ trait Anon_AllRegions extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_AllRegions {
+  @scala.inline
+  def apply(
+    roleArn: java.lang.String,
+    allRegions: js.UndefOr[scala.Boolean] = js.undefined,
+    regions: js.Array[java.lang.String] = null
+  ): Anon_AllRegions = {
+    val __obj = js.Dynamic.literal(roleArn = roleArn)
+    if (!js.isUndefined(allRegions)) __obj.updateDynamic("allRegions")(allRegions)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    __obj.asInstanceOf[Anon_AllRegions]
+  }
+}
+

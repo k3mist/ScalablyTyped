@@ -117,3 +117,53 @@ trait XModel extends js.Object {
   ): scala.Unit
 }
 
+object XModel {
+  @scala.inline
+  def apply(
+    Bindings: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    DataTypeRepository: XDataTypeRepository,
+    DefaultInstance: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument,
+    ID: java.lang.String,
+    Instances: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    Submissions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet,
+    cloneBinding: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
+    ],
+    cloneSubmission: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, XSubmission],
+    createBinding: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    createSubmission: js.Function0[XSubmission],
+    getBinding: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
+    ],
+    getBindings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
+    getDataTypeRepository: js.Function0[XDataTypeRepository],
+    getDefaultInstance: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument],
+    getID: js.Function0[java.lang.String],
+    getInstanceDocument: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XDocument
+    ],
+    getInstances: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
+    getSubmission: js.Function1[java.lang.String, XSubmission],
+    getSubmissions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XSet],
+    initialize: js.Function0[scala.Unit],
+    rebuild: js.Function0[scala.Unit],
+    recalculate: js.Function0[scala.Unit],
+    refresh: js.Function0[scala.Unit],
+    revalidate: js.Function0[scala.Unit],
+    setID: js.Function1[java.lang.String, scala.Unit],
+    submit: js.Function1[java.lang.String, scala.Unit],
+    submitWithInteraction: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ]
+  ): XModel = {
+    val __obj = js.Dynamic.literal(Bindings = Bindings, DataTypeRepository = DataTypeRepository, DefaultInstance = DefaultInstance, ID = ID, Instances = Instances, Submissions = Submissions, cloneBinding = cloneBinding, cloneSubmission = cloneSubmission, createBinding = createBinding, createSubmission = createSubmission, getBinding = getBinding, getBindings = getBindings, getDataTypeRepository = getDataTypeRepository, getDefaultInstance = getDefaultInstance, getID = getID, getInstanceDocument = getInstanceDocument, getInstances = getInstances, getSubmission = getSubmission, getSubmissions = getSubmissions, initialize = initialize, rebuild = rebuild, recalculate = recalculate, refresh = refresh, revalidate = revalidate, setID = setID, submit = submit, submitWithInteraction = submitWithInteraction)
+  
+    __obj.asInstanceOf[XModel]
+  }
+}
+

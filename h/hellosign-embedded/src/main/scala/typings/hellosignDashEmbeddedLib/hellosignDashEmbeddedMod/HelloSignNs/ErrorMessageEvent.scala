@@ -10,3 +10,15 @@ trait ErrorMessageEvent extends MessageEvent {
   var event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.error
 }
 
+object ErrorMessageEvent {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.error
+  ): ErrorMessageEvent = {
+    val __obj = js.Dynamic.literal(description = description, event = event)
+  
+    __obj.asInstanceOf[ErrorMessageEvent]
+  }
+}
+

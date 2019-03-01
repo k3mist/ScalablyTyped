@@ -10,3 +10,12 @@ trait AddResponseHeader extends js.Object {
   var value: java.lang.String
 }
 
+object AddResponseHeader {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): AddResponseHeader = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[AddResponseHeader]
+  }
+}
+

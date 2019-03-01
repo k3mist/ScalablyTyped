@@ -47,3 +47,21 @@ trait IgRadialMenuMethods extends js.Object {
   def styleUpdated(): scala.Unit
 }
 
+object IgRadialMenuMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    itemOption: js.Function3[java.lang.String, java.lang.String, js.Object, js.Object],
+    styleUpdated: js.Function0[scala.Unit]
+  ): IgRadialMenuMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, flush = flush, itemOption = itemOption, styleUpdated = styleUpdated)
+  
+    __obj.asInstanceOf[IgRadialMenuMethods]
+  }
+}
+

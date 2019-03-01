@@ -9,3 +9,12 @@ trait CreateQuery extends Executable {
   def ifNotExists(): Executable
 }
 
+object CreateQuery {
+  @scala.inline
+  def apply(ifNotExists: js.Function0[Executable], toQuery: js.Function0[QueryLike]): CreateQuery = {
+    val __obj = js.Dynamic.literal(ifNotExists = ifNotExists, toQuery = toQuery)
+  
+    __obj.asInstanceOf[CreateQuery]
+  }
+}
+

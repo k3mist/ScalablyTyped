@@ -13,3 +13,18 @@ trait SelectionInput extends js.Object {
   def setType(`type`: SelectionInputType): SelectionInput
 }
 
+object SelectionInput {
+  @scala.inline
+  def apply(
+    addItem: js.Function3[js.Object, js.Object, scala.Boolean, SelectionInput],
+    setFieldName: js.Function1[java.lang.String, SelectionInput],
+    setOnChangeAction: js.Function1[Action, SelectionInput],
+    setTitle: js.Function1[java.lang.String, SelectionInput],
+    setType: js.Function1[SelectionInputType, SelectionInput]
+  ): SelectionInput = {
+    val __obj = js.Dynamic.literal(addItem = addItem, setFieldName = setFieldName, setOnChangeAction = setOnChangeAction, setTitle = setTitle, setType = setType)
+  
+    __obj.asInstanceOf[SelectionInput]
+  }
+}
+

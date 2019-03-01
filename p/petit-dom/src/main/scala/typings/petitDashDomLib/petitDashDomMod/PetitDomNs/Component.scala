@@ -17,3 +17,16 @@ trait Component[P /* <: ComponentProps */] extends js.Object {
   def unmount(element: stdLib.Element): scala.Unit
 }
 
+object Component {
+  @scala.inline
+  def apply[P /* <: ComponentProps */](
+    mount: js.Function2[P, js.Array[VNode], stdLib.Element],
+    patch: js.Function5[stdLib.Element, P, P, js.Array[VNode], js.Array[VNode], stdLib.Element],
+    unmount: js.Function1[stdLib.Element, scala.Unit]
+  ): Component[P] = {
+    val __obj = js.Dynamic.literal(mount = mount, patch = patch, unmount = unmount)
+  
+    __obj.asInstanceOf[Component[P]]
+  }
+}
+

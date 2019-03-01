@@ -22,3 +22,16 @@ trait Output extends js.Object {
   var statusCode: scala.Double
 }
 
+object Output {
+  @scala.inline
+  def apply(
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    payload: Payload,
+    statusCode: scala.Double
+  ): Output = {
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, statusCode = statusCode)
+  
+    __obj.asInstanceOf[Output]
+  }
+}
+

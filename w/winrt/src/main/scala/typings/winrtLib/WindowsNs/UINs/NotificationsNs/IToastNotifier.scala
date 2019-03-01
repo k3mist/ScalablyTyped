@@ -14,3 +14,21 @@ trait IToastNotifier extends js.Object {
   def show(notification: ToastNotification): scala.Unit
 }
 
+object IToastNotifier {
+  @scala.inline
+  def apply(
+    addToSchedule: js.Function1[ScheduledToastNotification, scala.Unit],
+    getScheduledToastNotifications: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ScheduledToastNotification]
+    ],
+    hide: js.Function1[ToastNotification, scala.Unit],
+    removeFromSchedule: js.Function1[ScheduledToastNotification, scala.Unit],
+    setting: NotificationSetting,
+    show: js.Function1[ToastNotification, scala.Unit]
+  ): IToastNotifier = {
+    val __obj = js.Dynamic.literal(addToSchedule = addToSchedule, getScheduledToastNotifications = getScheduledToastNotifications, hide = hide, removeFromSchedule = removeFromSchedule, setting = setting, show = show)
+  
+    __obj.asInstanceOf[IToastNotifier]
+  }
+}
+

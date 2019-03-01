@@ -11,3 +11,16 @@ trait DOMException
   var Code: DOMExceptionType
 }
 
+object DOMException {
+  @scala.inline
+  def apply(
+    Code: DOMExceptionType,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): DOMException = {
+    val __obj = js.Dynamic.literal(Code = Code, Context = Context, Message = Message)
+  
+    __obj.asInstanceOf[DOMException]
+  }
+}
+

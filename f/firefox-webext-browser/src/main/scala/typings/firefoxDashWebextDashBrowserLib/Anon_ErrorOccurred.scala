@@ -27,3 +27,18 @@ trait Anon_ErrorOccurred extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_ErrorOccurred {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    parentFrameId: scala.Double,
+    tabId: scala.Double,
+    url: java.lang.String,
+    errorOccurred: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ErrorOccurred = {
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, tabId = tabId, url = url)
+    if (!js.isUndefined(errorOccurred)) __obj.updateDynamic("errorOccurred")(errorOccurred)
+    __obj.asInstanceOf[Anon_ErrorOccurred]
+  }
+}
+

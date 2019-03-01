@@ -13,3 +13,18 @@ trait ISubscribePacket
   var subscriptions: js.Array[ISubscription]
 }
 
+object ISubscribePacket {
+  @scala.inline
+  def apply(
+    cmd: mqttDashPacketLib.mqttDashPacketLibStrings.subscribe,
+    subscriptions: js.Array[ISubscription],
+    length: scala.Int | scala.Double = null,
+    messageId: scala.Int | scala.Double = null
+  ): ISubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = cmd, subscriptions = subscriptions)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscribePacket]
+  }
+}
+

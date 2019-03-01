@@ -10,3 +10,12 @@ trait AttrRecognizerStatic extends js.Object {
   def process(input: HammerInput): js.Any
 }
 
+object AttrRecognizerStatic {
+  @scala.inline
+  def apply(attrTest: js.Function1[HammerInput, scala.Boolean], process: js.Function1[HammerInput, js.Any]): AttrRecognizerStatic = {
+    val __obj = js.Dynamic.literal(attrTest = attrTest, process = process)
+  
+    __obj.asInstanceOf[AttrRecognizerStatic]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Mode extends js.Object {
   var reverse: scala.Boolean
 }
 
+object Anon_Mode {
+  @scala.inline
+  def apply(mode: java.lang.String, reverse: scala.Boolean): Anon_Mode = {
+    val __obj = js.Dynamic.literal(mode = mode, reverse = reverse)
+  
+    __obj.asInstanceOf[Anon_Mode]
+  }
+}
+

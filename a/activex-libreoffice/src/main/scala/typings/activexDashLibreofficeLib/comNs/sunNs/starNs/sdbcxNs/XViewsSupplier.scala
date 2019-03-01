@@ -20,3 +20,18 @@ trait XViewsSupplier
   def getViews(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XViewsSupplier {
+  @scala.inline
+  def apply(
+    Views: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getViews: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XViewsSupplier = {
+    val __obj = js.Dynamic.literal(Views = Views, acquire = acquire, getViews = getViews, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XViewsSupplier]
+  }
+}
+

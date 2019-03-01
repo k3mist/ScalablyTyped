@@ -24,3 +24,17 @@ trait TaskAgentMessage extends js.Object {
   var messageType: java.lang.String
 }
 
+object TaskAgentMessage {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    iV: js.Array[scala.Double],
+    messageId: scala.Double,
+    messageType: java.lang.String
+  ): TaskAgentMessage = {
+    val __obj = js.Dynamic.literal(body = body, iV = iV, messageId = messageId, messageType = messageType)
+  
+    __obj.asInstanceOf[TaskAgentMessage]
+  }
+}
+

@@ -54,3 +54,28 @@ trait XNamedRange
   def setType(nType: scala.Double): scala.Unit
 }
 
+object XNamedRange {
+  @scala.inline
+  def apply(
+    Content: java.lang.String,
+    Name: java.lang.String,
+    ReferencePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getContent: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getReferencePosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    getType: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setContent: js.Function1[java.lang.String, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setReferencePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    setType: js.Function1[scala.Double, scala.Unit]
+  ): XNamedRange = {
+    val __obj = js.Dynamic.literal(Content = Content, Name = Name, ReferencePosition = ReferencePosition, Type = Type, acquire = acquire, getContent = getContent, getName = getName, getReferencePosition = getReferencePosition, getType = getType, queryInterface = queryInterface, release = release, setContent = setContent, setName = setName, setReferencePosition = setReferencePosition, setType = setType)
+  
+    __obj.asInstanceOf[XNamedRange]
+  }
+}
+

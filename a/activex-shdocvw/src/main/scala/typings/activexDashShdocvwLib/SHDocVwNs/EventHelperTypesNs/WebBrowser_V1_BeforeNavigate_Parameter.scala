@@ -14,3 +14,19 @@ trait WebBrowser_V1_BeforeNavigate_Parameter extends js.Object {
   val URL: java.lang.String
 }
 
+object WebBrowser_V1_BeforeNavigate_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    Flags: scala.Double,
+    Headers: java.lang.String,
+    PostData: js.Any,
+    TargetFrameName: java.lang.String,
+    URL: java.lang.String
+  ): WebBrowser_V1_BeforeNavigate_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Flags = Flags, Headers = Headers, PostData = PostData, TargetFrameName = TargetFrameName, URL = URL)
+  
+    __obj.asInstanceOf[WebBrowser_V1_BeforeNavigate_Parameter]
+  }
+}
+

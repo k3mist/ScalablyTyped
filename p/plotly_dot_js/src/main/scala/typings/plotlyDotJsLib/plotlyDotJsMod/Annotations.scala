@@ -225,3 +225,54 @@ trait Annotations extends Label {
   var yshift: scala.Double
 }
 
+object Annotations {
+  @scala.inline
+  def apply(
+    align: plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right,
+    arrowcolor: java.lang.String,
+    arrowhead: scala.Double,
+    arrowside: plotlyDotJsLib.plotlyDotJsLibStrings.end | plotlyDotJsLib.plotlyDotJsLibStrings.start,
+    arrowsize: scala.Double,
+    arrowwidth: scala.Double,
+    ax: scala.Double,
+    axref: plotlyDotJsLib.plotlyDotJsLibStrings.pixel,
+    ay: scala.Double,
+    ayref: plotlyDotJsLib.plotlyDotJsLibStrings.pixel,
+    bgcolor: java.lang.String,
+    bordercolor: java.lang.String,
+    borderpad: scala.Double,
+    borderwidth: scala.Double,
+    captureevents: scala.Boolean,
+    clicktoshow: plotlyDotJsLib.plotlyDotJsLibNumbers.`false` | plotlyDotJsLib.plotlyDotJsLibStrings.onoff | plotlyDotJsLib.plotlyDotJsLibStrings.onout,
+    font: stdLib.Partial[Font],
+    height: scala.Double,
+    hoverlabel: stdLib.Partial[Label],
+    hovertext: java.lang.String,
+    opacity: scala.Double,
+    showarrow: scala.Boolean,
+    standoff: scala.Double,
+    startarrowhead: scala.Double,
+    startarrowsize: scala.Double,
+    startstandoff: scala.Double,
+    text: java.lang.String,
+    textangle: java.lang.String,
+    valign: plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
+    visible: scala.Boolean,
+    width: scala.Double,
+    x: scala.Double | java.lang.String,
+    xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right,
+    xclick: js.Any,
+    xref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.x,
+    xshift: scala.Double,
+    y: scala.Double | java.lang.String,
+    yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
+    yclick: js.Any,
+    yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y,
+    yshift: scala.Double
+  ): Annotations = {
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], arrowcolor = arrowcolor, arrowhead = arrowhead, arrowside = arrowside.asInstanceOf[js.Any], arrowsize = arrowsize, arrowwidth = arrowwidth, ax = ax, axref = axref, ay = ay, ayref = ayref, bgcolor = bgcolor, bordercolor = bordercolor, borderpad = borderpad, borderwidth = borderwidth, captureevents = captureevents, clicktoshow = clicktoshow.asInstanceOf[js.Any], font = font, height = height, hoverlabel = hoverlabel, hovertext = hovertext, opacity = opacity, showarrow = showarrow, standoff = standoff, startarrowhead = startarrowhead, startarrowsize = startarrowsize, startstandoff = startstandoff, text = text, textangle = textangle, valign = valign.asInstanceOf[js.Any], visible = visible, width = width, x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xclick = xclick, xref = xref.asInstanceOf[js.Any], xshift = xshift, y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yclick = yclick, yref = yref.asInstanceOf[js.Any], yshift = yshift)
+  
+    __obj.asInstanceOf[Annotations]
+  }
+}
+

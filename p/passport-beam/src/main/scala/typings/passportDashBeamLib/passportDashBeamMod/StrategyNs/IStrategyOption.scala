@@ -11,3 +11,12 @@ trait IStrategyOption extends js.Object {
   var clientSecret: java.lang.String
 }
 
+object IStrategyOption {
+  @scala.inline
+  def apply(callbackURL: java.lang.String, clientID: java.lang.String, clientSecret: java.lang.String): IStrategyOption = {
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
+  
+    __obj.asInstanceOf[IStrategyOption]
+  }
+}
+

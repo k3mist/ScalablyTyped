@@ -16,3 +16,12 @@ trait SavedFileInfoData extends js.Object {
   var size: scala.Double
 }
 
+object SavedFileInfoData {
+  @scala.inline
+  def apply(createTime: scala.Double, size: scala.Double): SavedFileInfoData = {
+    val __obj = js.Dynamic.literal(createTime = createTime, size = size)
+  
+    __obj.asInstanceOf[SavedFileInfoData]
+  }
+}
+

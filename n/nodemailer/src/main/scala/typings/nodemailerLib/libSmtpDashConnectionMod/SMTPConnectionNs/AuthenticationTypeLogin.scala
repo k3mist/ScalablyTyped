@@ -14,3 +14,16 @@ trait AuthenticationTypeLogin
   ] = js.undefined
 }
 
+object AuthenticationTypeLogin {
+  @scala.inline
+  def apply(
+    pass: java.lang.String,
+    user: java.lang.String,
+    `type`: nodemailerLib.nodemailerLibStrings.login | nodemailerLib.nodemailerLibStrings.Login | nodemailerLib.nodemailerLibStrings.LOGIN = null
+  ): AuthenticationTypeLogin = {
+    val __obj = js.Dynamic.literal(pass = pass, user = user)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthenticationTypeLogin]
+  }
+}
+

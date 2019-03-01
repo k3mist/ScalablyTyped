@@ -11,3 +11,16 @@ trait DeviceMapping extends js.Object {
   var PathOnHost: java.lang.String
 }
 
+object DeviceMapping {
+  @scala.inline
+  def apply(
+    CgroupPermissions: java.lang.String,
+    PathInContainer: java.lang.String,
+    PathOnHost: java.lang.String
+  ): DeviceMapping = {
+    val __obj = js.Dynamic.literal(CgroupPermissions = CgroupPermissions, PathInContainer = PathInContainer, PathOnHost = PathOnHost)
+  
+    __obj.asInstanceOf[DeviceMapping]
+  }
+}
+

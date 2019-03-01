@@ -15,3 +15,12 @@ trait FeedDialogResult extends BaseDialogResult {
   var post_id: java.lang.String
 }
 
+object FeedDialogResult {
+  @scala.inline
+  def apply(error_code: java.lang.String, error_message: java.lang.String, post_id: java.lang.String): FeedDialogResult = {
+    val __obj = js.Dynamic.literal(error_code = error_code, error_message = error_message, post_id = post_id)
+  
+    __obj.asInstanceOf[FeedDialogResult]
+  }
+}
+

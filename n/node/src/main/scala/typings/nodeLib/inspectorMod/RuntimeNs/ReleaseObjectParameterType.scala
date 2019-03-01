@@ -12,3 +12,12 @@ trait ReleaseObjectParameterType extends js.Object {
   var objectId: RemoteObjectId
 }
 
+object ReleaseObjectParameterType {
+  @scala.inline
+  def apply(objectId: RemoteObjectId): ReleaseObjectParameterType = {
+    val __obj = js.Dynamic.literal(objectId = objectId)
+  
+    __obj.asInstanceOf[ReleaseObjectParameterType]
+  }
+}
+

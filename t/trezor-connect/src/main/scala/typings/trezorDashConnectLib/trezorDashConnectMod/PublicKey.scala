@@ -25,3 +25,22 @@ trait PublicKey extends js.Object {
   var xpubSegwit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PublicKey {
+  @scala.inline
+  def apply(
+    chainCode: java.lang.String,
+    childNum: scala.Double,
+    depth: scala.Double,
+    fingerprint: scala.Double,
+    path: js.Array[scala.Double],
+    publicKey: java.lang.String,
+    serializedPath: java.lang.String,
+    xpub: java.lang.String,
+    xpubSegwit: java.lang.String = null
+  ): PublicKey = {
+    val __obj = js.Dynamic.literal(chainCode = chainCode, childNum = childNum, depth = depth, fingerprint = fingerprint, path = path, publicKey = publicKey, serializedPath = serializedPath, xpub = xpub)
+    if (xpubSegwit != null) __obj.updateDynamic("xpubSegwit")(xpubSegwit)
+    __obj.asInstanceOf[PublicKey]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_BadSignature extends js.Object {
   var Unsupported: java.lang.String
 }
 
+object Anon_BadSignature {
+  @scala.inline
+  def apply(
+    BadSignature: java.lang.String,
+    FileCorrupt: java.lang.String,
+    InvalidArg: java.lang.String,
+    InvalidKey: java.lang.String,
+    InvalidVersion: java.lang.String,
+    MergeError: java.lang.String,
+    NotImplemented: java.lang.String,
+    Unsupported: java.lang.String
+  ): Anon_BadSignature = {
+    val __obj = js.Dynamic.literal(BadSignature = BadSignature, FileCorrupt = FileCorrupt, InvalidArg = InvalidArg, InvalidKey = InvalidKey, InvalidVersion = InvalidVersion, MergeError = MergeError, NotImplemented = NotImplemented, Unsupported = Unsupported)
+  
+    __obj.asInstanceOf[Anon_BadSignature]
+  }
+}
+

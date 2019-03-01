@@ -10,3 +10,15 @@ trait NavigationCompleteTransitionAction extends NavigationStackAction {
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/COMPLETE_TRANSITION`
 }
 
+object NavigationCompleteTransitionAction {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/COMPLETE_TRANSITION`
+  ): NavigationCompleteTransitionAction = {
+    val __obj = js.Dynamic.literal(key = key, `type` = `type`)
+  
+    __obj.asInstanceOf[NavigationCompleteTransitionAction]
+  }
+}
+

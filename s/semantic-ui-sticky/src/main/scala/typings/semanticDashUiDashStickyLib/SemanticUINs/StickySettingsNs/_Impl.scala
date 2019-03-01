@@ -123,3 +123,35 @@ trait _Impl extends js.Object {
   def onUnstick(`this`: semanticDashUiDashStickyLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    bottomOffset: scala.Double,
+    className: semanticDashUiDashStickyLib.SemanticUINs.StickyNs.ClassNameSettings,
+    context: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibNumbers.`false` | java.lang.String | semanticDashUiDashStickyLib.JQuery,
+    debug: scala.Boolean,
+    error: semanticDashUiDashStickyLib.SemanticUINs.StickyNs.ErrorSettings,
+    jitter: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    onBottom: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onReposition: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onScroll: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onStick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onTop: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onUnstick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    pushing: scala.Boolean,
+    scrollContext: java.lang.String | semanticDashUiDashStickyLib.JQuery,
+    setSize: scala.Boolean,
+    silent: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = onBottom, onReposition = onReposition, onScroll = onScroll, onStick = onStick, onTop = onTop, onUnstick = onUnstick, performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

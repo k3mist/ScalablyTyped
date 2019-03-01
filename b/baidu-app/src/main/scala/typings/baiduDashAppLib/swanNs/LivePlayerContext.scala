@@ -22,3 +22,20 @@ trait LivePlayerContext extends js.Object {
   def stop(options: BaseOptions[_, _]): scala.Unit
 }
 
+object LivePlayerContext {
+  @scala.inline
+  def apply(
+    exitFullScreen: js.Function1[BaseOptions[_, _], scala.Unit],
+    mute: js.Function1[BaseOptions[_, _], scala.Unit],
+    pause: js.Function1[BaseOptions[_, _], scala.Unit],
+    play: js.Function1[BaseOptions[_, _], scala.Unit],
+    requestFullScreen: js.Function1[RequestFullScreenOptions, scala.Unit],
+    resume: js.Function1[BaseOptions[_, _], scala.Unit],
+    stop: js.Function1[BaseOptions[_, _], scala.Unit]
+  ): LivePlayerContext = {
+    val __obj = js.Dynamic.literal(exitFullScreen = exitFullScreen, mute = mute, pause = pause, play = play, requestFullScreen = requestFullScreen, resume = resume, stop = stop)
+  
+    __obj.asInstanceOf[LivePlayerContext]
+  }
+}
+

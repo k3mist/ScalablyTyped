@@ -165,3 +165,43 @@ trait PersistentVolumeSpec extends js.Object {
   val vsphereVolume: VsphereVirtualDiskVolumeSource
 }
 
+object PersistentVolumeSpec {
+  @scala.inline
+  def apply(
+    accessModes: js.Array[java.lang.String],
+    awsElasticBlockStore: AWSElasticBlockStoreVolumeSource,
+    azureDisk: AzureDiskVolumeSource,
+    azureFile: AzureFilePersistentVolumeSource,
+    capacity: js.Object,
+    cephfs: CephFSPersistentVolumeSource,
+    cinder: CinderPersistentVolumeSource,
+    claimRef: ObjectReference,
+    csi: CSIPersistentVolumeSource,
+    fc: FCVolumeSource,
+    flexVolume: FlexPersistentVolumeSource,
+    flocker: FlockerVolumeSource,
+    gcePersistentDisk: GCEPersistentDiskVolumeSource,
+    glusterfs: GlusterfsPersistentVolumeSource,
+    hostPath: HostPathVolumeSource,
+    iscsi: ISCSIPersistentVolumeSource,
+    local: LocalVolumeSource,
+    mountOptions: js.Array[java.lang.String],
+    nfs: NFSVolumeSource,
+    nodeAffinity: VolumeNodeAffinity,
+    persistentVolumeReclaimPolicy: java.lang.String,
+    photonPersistentDisk: PhotonPersistentDiskVolumeSource,
+    portworxVolume: PortworxVolumeSource,
+    quobyte: QuobyteVolumeSource,
+    rbd: RBDPersistentVolumeSource,
+    scaleIO: ScaleIOPersistentVolumeSource,
+    storageClassName: java.lang.String,
+    storageos: StorageOSPersistentVolumeSource,
+    volumeMode: java.lang.String,
+    vsphereVolume: VsphereVirtualDiskVolumeSource
+  ): PersistentVolumeSpec = {
+    val __obj = js.Dynamic.literal(accessModes = accessModes, awsElasticBlockStore = awsElasticBlockStore, azureDisk = azureDisk, azureFile = azureFile, capacity = capacity, cephfs = cephfs, cinder = cinder, claimRef = claimRef, csi = csi, fc = fc, flexVolume = flexVolume, flocker = flocker, gcePersistentDisk = gcePersistentDisk, glusterfs = glusterfs, hostPath = hostPath, iscsi = iscsi, local = local, mountOptions = mountOptions, nfs = nfs, nodeAffinity = nodeAffinity, persistentVolumeReclaimPolicy = persistentVolumeReclaimPolicy, photonPersistentDisk = photonPersistentDisk, portworxVolume = portworxVolume, quobyte = quobyte, rbd = rbd, scaleIO = scaleIO, storageClassName = storageClassName, storageos = storageos, volumeMode = volumeMode, vsphereVolume = vsphereVolume)
+  
+    __obj.asInstanceOf[PersistentVolumeSpec]
+  }
+}
+

@@ -14,3 +14,19 @@ trait Anon_Optional extends js.Object {
   ]
 }
 
+object Anon_Optional {
+  @scala.inline
+  def apply(
+    optional: js.Array[
+      owaspDashPasswordDashStrengthDashTestLib.owaspDashPasswordDashStrengthDashTestMod.PasswordTest
+    ],
+    required: js.Array[
+      owaspDashPasswordDashStrengthDashTestLib.owaspDashPasswordDashStrengthDashTestMod.PasswordTest
+    ]
+  ): Anon_Optional = {
+    val __obj = js.Dynamic.literal(optional = optional, required = required)
+  
+    __obj.asInstanceOf[Anon_Optional]
+  }
+}
+

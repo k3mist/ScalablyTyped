@@ -11,3 +11,16 @@ trait CustomButtonDescriptor extends js.Object {
   def onClick(event: AttachmentCardClickEvent): scala.Unit
 }
 
+object CustomButtonDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function1[AttachmentCardClickEvent, scala.Unit],
+    tooltip: java.lang.String
+  ): CustomButtonDescriptor = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, tooltip = tooltip)
+  
+    __obj.asInstanceOf[CustomButtonDescriptor]
+  }
+}
+

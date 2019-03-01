@@ -121,3 +121,37 @@ trait ASPxClientTreeViewNode extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientTreeViewNode {
+  @scala.inline
+  def apply(
+    GetCheckState: js.Function0[java.lang.String],
+    GetChecked: js.Function0[scala.Boolean],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetExpanded: js.Function0[scala.Boolean],
+    GetHtmlElement: js.Function0[js.Object],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetNode: js.Function1[scala.Double, ASPxClientTreeViewNode],
+    GetNodeByName: js.Function1[java.lang.String, ASPxClientTreeViewNode],
+    GetNodeByText: js.Function1[java.lang.String, ASPxClientTreeViewNode],
+    GetNodeCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetChecked: js.Function1[scala.Boolean, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    parent: ASPxClientTreeViewNode,
+    treeView: ASPxClientTreeView
+  ): ASPxClientTreeViewNode = {
+    val __obj = js.Dynamic.literal(GetCheckState = GetCheckState, GetChecked = GetChecked, GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetHtmlElement = GetHtmlElement, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetNode = GetNode, GetNodeByName = GetNodeByName, GetNodeByText = GetNodeByText, GetNodeCount = GetNodeCount, GetText = GetText, GetVisible = GetVisible, SetChecked = SetChecked, SetEnabled = SetEnabled, SetExpanded = SetExpanded, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, parent = parent, treeView = treeView)
+  
+    __obj.asInstanceOf[ASPxClientTreeViewNode]
+  }
+}
+

@@ -16,3 +16,12 @@ trait OpenCustomNumberingListDialogCommand extends CommandWithSimpleStateBase {
   def execute(abstractNumberingListIndex: scala.Double): scala.Boolean
 }
 
+object OpenCustomNumberingListDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenCustomNumberingListDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[OpenCustomNumberingListDialogCommand]
+  }
+}
+

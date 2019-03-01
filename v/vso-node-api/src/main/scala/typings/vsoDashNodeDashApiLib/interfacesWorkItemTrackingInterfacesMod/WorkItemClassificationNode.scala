@@ -36,3 +36,22 @@ trait WorkItemClassificationNode extends WorkItemTrackingResource {
   var structureType: TreeNodeStructureType
 }
 
+object WorkItemClassificationNode {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    attributes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    children: js.Array[WorkItemClassificationNode],
+    hasChildren: scala.Boolean,
+    id: scala.Double,
+    identifier: java.lang.String,
+    name: java.lang.String,
+    structureType: TreeNodeStructureType,
+    url: java.lang.String
+  ): WorkItemClassificationNode = {
+    val __obj = js.Dynamic.literal(_links = _links, attributes = attributes, children = children, hasChildren = hasChildren, id = id, identifier = identifier, name = name, structureType = structureType, url = url)
+  
+    __obj.asInstanceOf[WorkItemClassificationNode]
+  }
+}
+

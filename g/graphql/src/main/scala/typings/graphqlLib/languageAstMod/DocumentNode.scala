@@ -11,3 +11,16 @@ trait DocumentNode extends ASTNode {
   val loc: js.UndefOr[Location] = js.undefined
 }
 
+object DocumentNode {
+  @scala.inline
+  def apply(
+    definitions: js.Array[DefinitionNode],
+    kind: graphqlLib.graphqlLibStrings.Document,
+    loc: Location = null
+  ): DocumentNode = {
+    val __obj = js.Dynamic.literal(definitions = definitions, kind = kind)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[DocumentNode]
+  }
+}
+

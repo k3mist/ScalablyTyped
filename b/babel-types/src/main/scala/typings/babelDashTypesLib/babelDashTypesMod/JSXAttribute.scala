@@ -15,3 +15,25 @@ trait JSXAttribute
   var value: JSXElement | StringLiteral | JSXExpressionContainer | scala.Null
 }
 
+object JSXAttribute {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    name: JSXIdentifier | JSXNamespacedName,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.JSXAttribute,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null,
+    value: JSXElement | StringLiteral | JSXExpressionContainer = null
+  ): JSXAttribute = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, name = name.asInstanceOf[js.Any], start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSXAttribute]
+  }
+}
+

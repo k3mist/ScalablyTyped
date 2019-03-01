@@ -23,3 +23,12 @@ trait EmailAddress extends js.Object {
   var name: java.lang.String
 }
 
+object EmailAddress {
+  @scala.inline
+  def apply(address: java.lang.String, name: java.lang.String, group: js.Array[EmailAddress] = null): EmailAddress = {
+    val __obj = js.Dynamic.literal(address = address, name = name)
+    if (group != null) __obj.updateDynamic("group")(group)
+    __obj.asInstanceOf[EmailAddress]
+  }
+}
+

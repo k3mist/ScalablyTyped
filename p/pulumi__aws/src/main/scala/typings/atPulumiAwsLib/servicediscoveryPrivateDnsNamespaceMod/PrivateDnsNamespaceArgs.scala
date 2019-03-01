@@ -20,3 +20,17 @@ trait PrivateDnsNamespaceArgs extends js.Object {
   val vpc: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object PrivateDnsNamespaceArgs {
+  @scala.inline
+  def apply(
+    vpc: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PrivateDnsNamespaceArgs = {
+    val __obj = js.Dynamic.literal(vpc = vpc.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrivateDnsNamespaceArgs]
+  }
+}
+

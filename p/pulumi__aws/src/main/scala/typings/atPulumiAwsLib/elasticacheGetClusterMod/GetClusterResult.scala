@@ -95,3 +95,34 @@ trait GetClusterResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    availabilityZone: java.lang.String,
+    cacheNodes: js.Array[atPulumiAwsLib.Anon_Address],
+    clusterAddress: java.lang.String,
+    configurationEndpoint: java.lang.String,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    id: java.lang.String,
+    maintenanceWindow: java.lang.String,
+    nodeType: java.lang.String,
+    notificationTopicArn: java.lang.String,
+    numCacheNodes: scala.Double,
+    parameterGroupName: java.lang.String,
+    port: scala.Double,
+    replicationGroupId: java.lang.String,
+    securityGroupIds: js.Array[java.lang.String],
+    securityGroupNames: js.Array[java.lang.String],
+    snapshotRetentionLimit: scala.Double,
+    snapshotWindow: java.lang.String,
+    subnetGroupName: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, cacheNodes = cacheNodes, clusterAddress = clusterAddress, configurationEndpoint = configurationEndpoint, engine = engine, engineVersion = engineVersion, id = id, maintenanceWindow = maintenanceWindow, nodeType = nodeType, notificationTopicArn = notificationTopicArn, numCacheNodes = numCacheNodes, parameterGroupName = parameterGroupName, port = port, replicationGroupId = replicationGroupId, securityGroupIds = securityGroupIds, securityGroupNames = securityGroupNames, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow, subnetGroupName = subnetGroupName, tags = tags)
+  
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

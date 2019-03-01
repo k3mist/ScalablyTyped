@@ -13,3 +13,18 @@ trait Anon_AbandonedActive extends js.Object {
   var notSet: scala.Double
 }
 
+object Anon_AbandonedActive {
+  @scala.inline
+  def apply(
+    abandoned: scala.Double,
+    active: scala.Double,
+    all: scala.Double,
+    completed: scala.Double,
+    notSet: scala.Double
+  ): Anon_AbandonedActive = {
+    val __obj = js.Dynamic.literal(abandoned = abandoned, active = active, all = all, completed = completed, notSet = notSet)
+  
+    __obj.asInstanceOf[Anon_AbandonedActive]
+  }
+}
+

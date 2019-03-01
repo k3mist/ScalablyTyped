@@ -16,3 +16,21 @@ trait GridOnItemsRenderedProps extends js.Object {
   var visibleRowStopIndex: scala.Double
 }
 
+object GridOnItemsRenderedProps {
+  @scala.inline
+  def apply(
+    overscanColumnStartIndex: scala.Double,
+    overscanColumnStopIndex: scala.Double,
+    overscanRowStartIndex: scala.Double,
+    overscanRowStopIndex: scala.Double,
+    visibleColumnStartIndex: scala.Double,
+    visibleColumnStopIndex: scala.Double,
+    visibleRowStartIndex: scala.Double,
+    visibleRowStopIndex: scala.Double
+  ): GridOnItemsRenderedProps = {
+    val __obj = js.Dynamic.literal(overscanColumnStartIndex = overscanColumnStartIndex, overscanColumnStopIndex = overscanColumnStopIndex, overscanRowStartIndex = overscanRowStartIndex, overscanRowStopIndex = overscanRowStopIndex, visibleColumnStartIndex = visibleColumnStartIndex, visibleColumnStopIndex = visibleColumnStopIndex, visibleRowStartIndex = visibleRowStartIndex, visibleRowStopIndex = visibleRowStopIndex)
+  
+    __obj.asInstanceOf[GridOnItemsRenderedProps]
+  }
+}
+

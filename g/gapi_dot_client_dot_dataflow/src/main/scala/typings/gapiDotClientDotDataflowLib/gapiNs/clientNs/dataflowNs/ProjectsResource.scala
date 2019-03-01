@@ -13,3 +13,20 @@ trait ProjectsResource extends js.Object {
   def workerMessages(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    jobs: JobsResource,
+    locations: LocationsResource,
+    templates: TemplatesResource,
+    workerMessages: js.Function1[
+      gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(jobs = jobs, locations = locations, templates = templates, workerMessages = workerMessages)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_OnloadT extends js.Object {
   var tran: chromeDashAppsLib.chromeNs.integer
 }
 
+object Anon_OnloadT {
+  @scala.inline
+  def apply(
+    onloadT: chromeDashAppsLib.chromeNs.integer,
+    pageT: chromeDashAppsLib.chromeNs.integer,
+    startE: chromeDashAppsLib.chromeNs.integer,
+    tran: chromeDashAppsLib.chromeNs.integer
+  ): Anon_OnloadT = {
+    val __obj = js.Dynamic.literal(onloadT = onloadT, pageT = pageT, startE = startE, tran = tran)
+  
+    __obj.asInstanceOf[Anon_OnloadT]
+  }
+}
+

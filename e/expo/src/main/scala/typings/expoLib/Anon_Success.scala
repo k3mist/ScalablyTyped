@@ -10,3 +10,12 @@ trait Anon_Success
   var success: expoLib.expoLibNumbers.`true`
 }
 
+object Anon_Success {
+  @scala.inline
+  def apply(success: expoLib.expoLibNumbers.`true`): Anon_Success = {
+    val __obj = js.Dynamic.literal(success = success)
+  
+    __obj.asInstanceOf[Anon_Success]
+  }
+}
+

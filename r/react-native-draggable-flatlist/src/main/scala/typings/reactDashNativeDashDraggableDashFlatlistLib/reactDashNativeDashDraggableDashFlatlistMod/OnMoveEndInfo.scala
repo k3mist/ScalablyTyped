@@ -12,3 +12,12 @@ trait OnMoveEndInfo[ItemM] extends js.Object {
   var to: scala.Double
 }
 
+object OnMoveEndInfo {
+  @scala.inline
+  def apply[ItemM](from: scala.Double, row: ItemM, to: scala.Double, data: js.Array[ItemM] = null): OnMoveEndInfo[ItemM] = {
+    val __obj = js.Dynamic.literal(from = from, row = row.asInstanceOf[js.Any], to = to)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[OnMoveEndInfo[ItemM]]
+  }
+}
+

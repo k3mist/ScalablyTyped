@@ -10,3 +10,12 @@ trait OptimizedSvg extends js.Object {
   var info: js.Object
 }
 
+object OptimizedSvg {
+  @scala.inline
+  def apply(data: java.lang.String, info: js.Object): OptimizedSvg = {
+    val __obj = js.Dynamic.literal(data = data, info = info)
+  
+    __obj.asInstanceOf[OptimizedSvg]
+  }
+}
+

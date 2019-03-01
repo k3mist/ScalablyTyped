@@ -11,3 +11,16 @@ trait Anon_APPUPDATE extends js.Object {
   var PERIODIC: chromeDashAppsLib.chromeDashAppsLibStrings.periodic
 }
 
+object Anon_APPUPDATE {
+  @scala.inline
+  def apply(
+    APP_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.app_update,
+    OS_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.os_update,
+    PERIODIC: chromeDashAppsLib.chromeDashAppsLibStrings.periodic
+  ): Anon_APPUPDATE = {
+    val __obj = js.Dynamic.literal(APP_UPDATE = APP_UPDATE, OS_UPDATE = OS_UPDATE, PERIODIC = PERIODIC)
+  
+    __obj.asInstanceOf[Anon_APPUPDATE]
+  }
+}
+

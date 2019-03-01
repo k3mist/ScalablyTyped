@@ -13,3 +13,18 @@ trait TaskSourceDefinitionBase extends js.Object {
   var target: java.lang.String
 }
 
+object TaskSourceDefinitionBase {
+  @scala.inline
+  def apply(
+    authKey: java.lang.String,
+    endpoint: java.lang.String,
+    keySelector: java.lang.String,
+    selector: java.lang.String,
+    target: java.lang.String
+  ): TaskSourceDefinitionBase = {
+    val __obj = js.Dynamic.literal(authKey = authKey, endpoint = endpoint, keySelector = keySelector, selector = selector, target = target)
+  
+    __obj.asInstanceOf[TaskSourceDefinitionBase]
+  }
+}
+

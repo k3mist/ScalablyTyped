@@ -12,3 +12,17 @@ trait DropdownButtonAccessoryDescriptor extends js.Object {
   def onClick(event: DropdownButtonClickEvent): scala.Unit
 }
 
+object DropdownButtonAccessoryDescriptor {
+  @scala.inline
+  def apply(
+    buttonBackgroundColor: java.lang.String,
+    buttonForegroundColor: java.lang.String,
+    onClick: js.Function1[DropdownButtonClickEvent, scala.Unit],
+    `type`: inboxsdkLib.inboxsdkLibStrings.DROPDOWN_BUTTON
+  ): DropdownButtonAccessoryDescriptor = {
+    val __obj = js.Dynamic.literal(buttonBackgroundColor = buttonBackgroundColor, buttonForegroundColor = buttonForegroundColor, onClick = onClick, `type` = `type`)
+  
+    __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
+  }
+}
+

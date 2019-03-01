@@ -16,3 +16,16 @@ trait ListenerCertificateState extends js.Object {
   val listenerArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ListenerCertificateState {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    listenerArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ListenerCertificateState = {
+    val __obj = js.Dynamic.literal()
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (listenerArn != null) __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerCertificateState]
+  }
+}
+

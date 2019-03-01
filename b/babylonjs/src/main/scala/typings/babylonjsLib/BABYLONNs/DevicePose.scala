@@ -38,3 +38,19 @@ trait DevicePose extends js.Object {
   val position: Nullable[stdLib.Float32Array]
 }
 
+object DevicePose {
+  @scala.inline
+  def apply(
+    angularAcceleration: Nullable[stdLib.Float32Array],
+    angularVelocity: Nullable[stdLib.Float32Array],
+    linearAcceleration: Nullable[stdLib.Float32Array],
+    linearVelocity: Nullable[stdLib.Float32Array],
+    orientation: Nullable[stdLib.Float32Array],
+    position: Nullable[stdLib.Float32Array]
+  ): DevicePose = {
+    val __obj = js.Dynamic.literal(angularAcceleration = angularAcceleration.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], linearAcceleration = linearAcceleration.asInstanceOf[js.Any], linearVelocity = linearVelocity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DevicePose]
+  }
+}
+

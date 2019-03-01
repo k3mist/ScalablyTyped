@@ -11,3 +11,16 @@ trait AbstractNode extends js.Object {
   var tag: java.lang.String
 }
 
+object AbstractNode {
+  @scala.inline
+  def apply(
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    tag: java.lang.String,
+    children: js.Array[AbstractNode] = null
+  ): AbstractNode = {
+    val __obj = js.Dynamic.literal(attrs = attrs, tag = tag)
+    if (children != null) __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[AbstractNode]
+  }
+}
+

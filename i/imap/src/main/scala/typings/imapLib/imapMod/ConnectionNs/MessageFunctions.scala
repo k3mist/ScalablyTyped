@@ -79,3 +79,38 @@ trait MessageFunctions extends js.Object {
   def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
 }
 
+object MessageFunctions {
+  @scala.inline
+  def apply(
+    addFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
+    addKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
+    copy: js.Function3[
+      js.Any, 
+      java.lang.String, 
+      js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      scala.Unit
+    ],
+    delFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
+    delKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
+    fetch: js.Function2[js.Any, FetchOptions, ImapFetch],
+    move: js.Function3[
+      js.Any, 
+      java.lang.String, 
+      js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      scala.Unit
+    ],
+    search: js.Function2[
+      js.Array[_], 
+      js.Function2[/* error */ nodeLib.Error, /* uids */ js.Array[scala.Double], scala.Unit], 
+      scala.Unit
+    ],
+    serverSupports: js.Function1[java.lang.String, scala.Boolean],
+    setFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
+    setKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit]
+  ): MessageFunctions = {
+    val __obj = js.Dynamic.literal(addFlags = addFlags, addKeywords = addKeywords, copy = copy, delFlags = delFlags, delKeywords = delKeywords, fetch = fetch, move = move, search = search, serverSupports = serverSupports, setFlags = setFlags, setKeywords = setKeywords)
+  
+    __obj.asInstanceOf[MessageFunctions]
+  }
+}
+

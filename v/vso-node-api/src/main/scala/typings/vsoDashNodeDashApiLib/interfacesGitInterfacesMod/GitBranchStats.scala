@@ -28,3 +28,18 @@ trait GitBranchStats extends js.Object {
   var name: java.lang.String
 }
 
+object GitBranchStats {
+  @scala.inline
+  def apply(
+    aheadCount: scala.Double,
+    behindCount: scala.Double,
+    commit: GitCommitRef,
+    isBaseVersion: scala.Boolean,
+    name: java.lang.String
+  ): GitBranchStats = {
+    val __obj = js.Dynamic.literal(aheadCount = aheadCount, behindCount = behindCount, commit = commit, isBaseVersion = isBaseVersion, name = name)
+  
+    __obj.asInstanceOf[GitBranchStats]
+  }
+}
+

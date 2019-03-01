@@ -21,3 +21,24 @@ trait DatabaseDefinition
      with XUsersSupplier
      with XGroupsSupplier
 
+object DatabaseDefinition {
+  @scala.inline
+  def apply(
+    Groups: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    Tables: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    Users: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    Views: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getGroups: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getTables: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getUsers: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getViews: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): DatabaseDefinition = {
+    val __obj = js.Dynamic.literal(Groups = Groups, Tables = Tables, Users = Users, Views = Views, acquire = acquire, getGroups = getGroups, getTables = getTables, getUsers = getUsers, getViews = getViews, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[DatabaseDefinition]
+  }
+}
+

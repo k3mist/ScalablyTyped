@@ -80,3 +80,30 @@ trait FieldConfigProperties extends js.Object {
   var required: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FieldConfigProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    domain: CodedValueDomainProperties | RangeDomainProperties = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    editorType: java.lang.String = null,
+    hint: java.lang.String = null,
+    label: java.lang.String = null,
+    maxLength: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined
+  ): FieldConfigProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[FieldConfigProperties]
+  }
+}
+

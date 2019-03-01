@@ -12,3 +12,17 @@ trait Anon_Full extends js.Object {
   var short: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat
 }
 
+object Anon_Full {
+  @scala.inline
+  def apply(
+    full: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat,
+    long: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat,
+    medium: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat,
+    short: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat
+  ): Anon_Full = {
+    val __obj = js.Dynamic.literal(full = full, long = long, medium = medium, short = short)
+  
+    __obj.asInstanceOf[Anon_Full]
+  }
+}
+

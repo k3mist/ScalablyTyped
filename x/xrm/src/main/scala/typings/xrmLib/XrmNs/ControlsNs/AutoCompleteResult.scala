@@ -23,3 +23,16 @@ trait AutoCompleteResult extends js.Object {
   var id: java.lang.String | scala.Double
 }
 
+object AutoCompleteResult {
+  @scala.inline
+  def apply(
+    fields: js.Array[java.lang.String],
+    id: java.lang.String | scala.Double,
+    icon: java.lang.String = null
+  ): AutoCompleteResult = {
+    val __obj = js.Dynamic.literal(fields = fields, id = id.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    __obj.asInstanceOf[AutoCompleteResult]
+  }
+}
+

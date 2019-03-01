@@ -42,3 +42,25 @@ trait DefaultNetworkAclArgs extends js.Object {
   ] = js.undefined
 }
 
+object DefaultNetworkAclArgs {
+  @scala.inline
+  def apply(
+    defaultNetworkAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    egress: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ] = null,
+    ingress: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ] = null,
+    subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DefaultNetworkAclArgs = {
+    val __obj = js.Dynamic.literal(defaultNetworkAclId = defaultNetworkAclId.asInstanceOf[js.Any])
+    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
+    if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultNetworkAclArgs]
+  }
+}
+

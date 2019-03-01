@@ -21,3 +21,33 @@ trait AuthorizedCertificatesResource extends js.Object {
   def patch(request: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdAuthorizedCertificatesId): gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
 }
 
+object AuthorizedCertificatesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAuthorizedCertificatesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdAuthorizedCertificatesId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AuthorizedCertificate]
+    ]
+  ): AuthorizedCertificatesResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+  
+    __obj.asInstanceOf[AuthorizedCertificatesResource]
+  }
+}
+

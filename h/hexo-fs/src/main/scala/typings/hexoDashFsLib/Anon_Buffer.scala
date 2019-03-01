@@ -10,3 +10,12 @@ trait Anon_Buffer[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */] extends j
   var bytesRead: scala.Double
 }
 
+object Anon_Buffer {
+  @scala.inline
+  def apply[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, bytesRead: scala.Double): Anon_Buffer[TBuffer] = {
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead)
+  
+    __obj.asInstanceOf[Anon_Buffer[TBuffer]]
+  }
+}
+

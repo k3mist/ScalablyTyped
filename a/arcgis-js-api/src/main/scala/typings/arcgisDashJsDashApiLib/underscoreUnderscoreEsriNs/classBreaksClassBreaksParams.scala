@@ -95,3 +95,40 @@ trait classBreaksClassBreaksParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object classBreaksClassBreaksParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    classificationMethod: java.lang.String = null,
+    features: js.Array[Graphic] = null,
+    field: java.lang.String = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    numClasses: scala.Int | scala.Double = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    standardDeviationInterval: scala.Int | scala.Double = null,
+    valueExpression: java.lang.String = null,
+    view: View = null
+  ): classBreaksClassBreaksParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[classBreaksClassBreaksParams]
+  }
+}
+

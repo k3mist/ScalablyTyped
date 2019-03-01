@@ -10,3 +10,12 @@ trait GmePersisted extends js.Object {
   var rootHash: ObjectHash
 }
 
+object GmePersisted {
+  @scala.inline
+  def apply(objects: org.scalablytyped.runtime.StringDictionary[DataObject], rootHash: ObjectHash): GmePersisted = {
+    val __obj = js.Dynamic.literal(objects = objects, rootHash = rootHash)
+  
+    __obj.asInstanceOf[GmePersisted]
+  }
+}
+

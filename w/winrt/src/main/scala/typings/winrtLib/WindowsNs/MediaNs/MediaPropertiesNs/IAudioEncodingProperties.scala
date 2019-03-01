@@ -12,3 +12,20 @@ trait IAudioEncodingProperties extends IMediaEncodingProperties {
   var sampleRate: scala.Double
 }
 
+object IAudioEncodingProperties {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    bitsPerSample: scala.Double,
+    channelCount: scala.Double,
+    properties: MediaPropertySet,
+    sampleRate: scala.Double,
+    subtype: java.lang.String,
+    `type`: java.lang.String
+  ): IAudioEncodingProperties = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate, bitsPerSample = bitsPerSample, channelCount = channelCount, properties = properties, sampleRate = sampleRate, subtype = subtype, `type` = `type`)
+  
+    __obj.asInstanceOf[IAudioEncodingProperties]
+  }
+}
+

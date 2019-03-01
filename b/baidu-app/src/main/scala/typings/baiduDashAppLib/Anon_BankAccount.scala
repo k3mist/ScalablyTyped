@@ -23,3 +23,21 @@ trait Anon_BankAccount extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_BankAccount {
+  @scala.inline
+  def apply(
+    bankAccount: java.lang.String,
+    bankName: java.lang.String,
+    companyAddress: java.lang.String,
+    errMsg: java.lang.String,
+    taxNumber: java.lang.String,
+    telephone: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_BankAccount = {
+    val __obj = js.Dynamic.literal(bankAccount = bankAccount, bankName = bankName, companyAddress = companyAddress, errMsg = errMsg, taxNumber = taxNumber, telephone = telephone, title = title, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_BankAccount]
+  }
+}
+

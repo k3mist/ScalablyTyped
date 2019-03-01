@@ -10,3 +10,12 @@ trait DefinitionInfoAndBoundSpan extends js.Object {
   var textSpan: TextSpan
 }
 
+object DefinitionInfoAndBoundSpan {
+  @scala.inline
+  def apply(textSpan: TextSpan, definitions: js.Array[DefinitionInfo] = null): DefinitionInfoAndBoundSpan = {
+    val __obj = js.Dynamic.literal(textSpan = textSpan)
+    if (definitions != null) __obj.updateDynamic("definitions")(definitions)
+    __obj.asInstanceOf[DefinitionInfoAndBoundSpan]
+  }
+}
+

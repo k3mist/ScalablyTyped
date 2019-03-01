@@ -28,3 +28,18 @@ trait PrintViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 
+object PrintViewModelProperties {
+  @scala.inline
+  def apply(
+    printServiceUrl: java.lang.String = null,
+    updateDelay: scala.Int | scala.Double = null,
+    view: MapViewProperties = null
+  ): PrintViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl)
+    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[PrintViewModelProperties]
+  }
+}
+

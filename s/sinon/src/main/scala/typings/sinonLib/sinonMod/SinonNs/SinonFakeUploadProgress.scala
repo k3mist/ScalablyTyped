@@ -12,3 +12,17 @@ trait SinonFakeUploadProgress extends js.Object {
   def removeEventListener(event: java.lang.String, listener: js.Function1[/* e */ sinonLib.sinonMod.Event, _]): scala.Unit
 }
 
+object SinonFakeUploadProgress {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _], scala.Unit],
+    dispatchEvent: js.Function1[sinonLib.sinonMod.Event, scala.Unit],
+    eventListeners: sinonLib.Anon_Abort,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _], scala.Unit]
+  ): SinonFakeUploadProgress = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, dispatchEvent = dispatchEvent, eventListeners = eventListeners, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[SinonFakeUploadProgress]
+  }
+}
+

@@ -37,3 +37,42 @@ trait Anon_Action extends js.Object {
   var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    Action: org.scalablytyped.runtime.Instantiable3[
+      /* action */ java.lang.String, 
+      /* icon */ java.lang.String, 
+      /* title */ java.lang.String, 
+      reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Action
+    ],
+    BadgeIconType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.BadgeIconType */ js.Any,
+    Category: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category,
+    Channel: org.scalablytyped.runtime.Instantiable3[
+      /* channelId */ java.lang.String, 
+      /* name */ java.lang.String, 
+      /* importance */ reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Importance, 
+      reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Channel
+    ],
+    ChannelGroup: org.scalablytyped.runtime.Instantiable2[
+      /* groupId */ java.lang.String, 
+      /* name */ java.lang.String, 
+      reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.ChannelGroup
+    ],
+    Defaults: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Defaults */ js.Any,
+    GroupAlert: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.GroupAlert */ js.Any,
+    Importance: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Importance */ js.Any,
+    Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Priority */ js.Any,
+    RemoteInput: org.scalablytyped.runtime.Instantiable1[
+      /* resultKey */ java.lang.String, 
+      reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.RemoteInput
+    ],
+    SemanticAction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any,
+    Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal(Action = Action, BadgeIconType = BadgeIconType, Category = Category, Channel = Channel, ChannelGroup = ChannelGroup, Defaults = Defaults, GroupAlert = GroupAlert, Importance = Importance, Priority = Priority, RemoteInput = RemoteInput, SemanticAction = SemanticAction, Visibility = Visibility)
+  
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

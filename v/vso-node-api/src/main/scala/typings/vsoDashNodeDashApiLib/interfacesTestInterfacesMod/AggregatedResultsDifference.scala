@@ -13,3 +13,18 @@ trait AggregatedResultsDifference extends js.Object {
   var increaseInTotalTests: scala.Double
 }
 
+object AggregatedResultsDifference {
+  @scala.inline
+  def apply(
+    increaseInDuration: js.Any,
+    increaseInFailures: scala.Double,
+    increaseInOtherTests: scala.Double,
+    increaseInPassedTests: scala.Double,
+    increaseInTotalTests: scala.Double
+  ): AggregatedResultsDifference = {
+    val __obj = js.Dynamic.literal(increaseInDuration = increaseInDuration, increaseInFailures = increaseInFailures, increaseInOtherTests = increaseInOtherTests, increaseInPassedTests = increaseInPassedTests, increaseInTotalTests = increaseInTotalTests)
+  
+    __obj.asInstanceOf[AggregatedResultsDifference]
+  }
+}
+

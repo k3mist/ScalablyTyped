@@ -35,3 +35,19 @@ trait LoginItemSettings extends js.Object {
   var wasOpenedAtLogin: scala.Boolean
 }
 
+object LoginItemSettings {
+  @scala.inline
+  def apply(
+    openAsHidden: scala.Boolean,
+    openAtLogin: scala.Boolean,
+    restoreState: scala.Boolean,
+    wasOpenedAsHidden: scala.Boolean,
+    wasOpenedAtLogin: scala.Boolean,
+    options: Options = null
+  ): LoginItemSettings = {
+    val __obj = js.Dynamic.literal(openAsHidden = openAsHidden, openAtLogin = openAtLogin, restoreState = restoreState, wasOpenedAsHidden = wasOpenedAsHidden, wasOpenedAtLogin = wasOpenedAtLogin)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[LoginItemSettings]
+  }
+}
+

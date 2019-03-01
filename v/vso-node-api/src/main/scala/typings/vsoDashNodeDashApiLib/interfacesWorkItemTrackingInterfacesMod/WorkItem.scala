@@ -24,3 +24,19 @@ trait WorkItem extends WorkItemTrackingResource {
   var rev: scala.Double
 }
 
+object WorkItem {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    fields: org.scalablytyped.runtime.StringDictionary[js.Any],
+    id: scala.Double,
+    relations: js.Array[WorkItemRelation],
+    rev: scala.Double,
+    url: java.lang.String
+  ): WorkItem = {
+    val __obj = js.Dynamic.literal(_links = _links, fields = fields, id = id, relations = relations, rev = rev, url = url)
+  
+    __obj.asInstanceOf[WorkItem]
+  }
+}
+

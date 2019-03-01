@@ -10,3 +10,12 @@ trait IMessageChannel extends js.Object {
   def sendMessage(message: Message): scala.Unit
 }
 
+object IMessageChannel {
+  @scala.inline
+  def apply(onMessage: js.Function1[Message, js.Any], sendMessage: js.Function1[Message, scala.Unit]): IMessageChannel = {
+    val __obj = js.Dynamic.literal(onMessage = onMessage, sendMessage = sendMessage)
+  
+    __obj.asInstanceOf[IMessageChannel]
+  }
+}
+

@@ -20,3 +20,12 @@ trait HostedFieldsAccountDetails extends js.Object {
   var lastTwo: java.lang.String
 }
 
+object HostedFieldsAccountDetails {
+  @scala.inline
+  def apply(cardType: java.lang.String, lastFour: java.lang.String, lastTwo: java.lang.String): HostedFieldsAccountDetails = {
+    val __obj = js.Dynamic.literal(cardType = cardType, lastFour = lastFour, lastTwo = lastTwo)
+  
+    __obj.asInstanceOf[HostedFieldsAccountDetails]
+  }
+}
+

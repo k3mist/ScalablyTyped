@@ -37,3 +37,16 @@ trait RelativePosition extends js.Object {
   var Secondary: scala.Double
 }
 
+object RelativePosition {
+  @scala.inline
+  def apply(
+    Anchor: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.Alignment,
+    Primary: scala.Double,
+    Secondary: scala.Double
+  ): RelativePosition = {
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Primary = Primary, Secondary = Secondary)
+  
+    __obj.asInstanceOf[RelativePosition]
+  }
+}
+

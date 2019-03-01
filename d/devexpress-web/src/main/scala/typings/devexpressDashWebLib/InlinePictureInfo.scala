@@ -51,3 +51,21 @@ trait InlinePictureInfo extends js.Object {
   var scaleY: scala.Double
 }
 
+object InlinePictureInfo {
+  @scala.inline
+  def apply(
+    actualHeight: scala.Double,
+    actualWidth: scala.Double,
+    id: scala.Double,
+    initialHeight: scala.Double,
+    initialWidth: scala.Double,
+    position: scala.Double,
+    scaleX: scala.Double,
+    scaleY: scala.Double
+  ): InlinePictureInfo = {
+    val __obj = js.Dynamic.literal(actualHeight = actualHeight, actualWidth = actualWidth, id = id, initialHeight = initialHeight, initialWidth = initialWidth, position = position, scaleX = scaleX, scaleY = scaleY)
+  
+    __obj.asInstanceOf[InlinePictureInfo]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Closest extends js.Object {
   var mpos: scala.Double
 }
 
+object Closest {
+  @scala.inline
+  def apply(mdist: scala.Double, mpos: scala.Double): Closest = {
+    val __obj = js.Dynamic.literal(mdist = mdist, mpos = mpos)
+  
+    __obj.asInstanceOf[Closest]
+  }
+}
+

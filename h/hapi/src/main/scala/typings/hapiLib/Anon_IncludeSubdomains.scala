@@ -20,3 +20,12 @@ trait Anon_IncludeSubdomains extends js.Object {
   var preload: scala.Boolean
 }
 
+object Anon_IncludeSubdomains {
+  @scala.inline
+  def apply(includeSubdomains: scala.Boolean, maxAge: scala.Double, preload: scala.Boolean): Anon_IncludeSubdomains = {
+    val __obj = js.Dynamic.literal(includeSubdomains = includeSubdomains, maxAge = maxAge, preload = preload)
+  
+    __obj.asInstanceOf[Anon_IncludeSubdomains]
+  }
+}
+

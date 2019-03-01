@@ -19,3 +19,24 @@ trait IFontWeightsStatics extends js.Object {
   var thin: FontWeight
 }
 
+object IFontWeightsStatics {
+  @scala.inline
+  def apply(
+    black: FontWeight,
+    bold: FontWeight,
+    extraBlack: FontWeight,
+    extraBold: FontWeight,
+    extraLight: FontWeight,
+    light: FontWeight,
+    medium: FontWeight,
+    normal: FontWeight,
+    semiBold: FontWeight,
+    semiLight: FontWeight,
+    thin: FontWeight
+  ): IFontWeightsStatics = {
+    val __obj = js.Dynamic.literal(black = black, bold = bold, extraBlack = extraBlack, extraBold = extraBold, extraLight = extraLight, light = light, medium = medium, normal = normal, semiBold = semiBold, semiLight = semiLight, thin = thin)
+  
+    __obj.asInstanceOf[IFontWeightsStatics]
+  }
+}
+

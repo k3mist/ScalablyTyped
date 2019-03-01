@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var mapsforge: MapsforgePlugin
 }
 
+object Window {
+  @scala.inline
+  def apply(mapsforge: MapsforgePlugin): Window = {
+    val __obj = js.Dynamic.literal(mapsforge = mapsforge)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

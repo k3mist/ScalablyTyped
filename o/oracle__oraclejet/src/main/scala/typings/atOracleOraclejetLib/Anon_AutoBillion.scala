@@ -12,3 +12,17 @@ trait Anon_AutoBillion extends js.Object {
   var tooltipLabel: java.lang.String
 }
 
+object Anon_AutoBillion {
+  @scala.inline
+  def apply(
+    converter: js.Object,
+    scaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.thousand | atOracleOraclejetLib.atOracleOraclejetLibStrings.million | atOracleOraclejetLib.atOracleOraclejetLibStrings.billion | atOracleOraclejetLib.atOracleOraclejetLibStrings.trillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.quadrillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    tooltipDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    tooltipLabel: java.lang.String
+  ): Anon_AutoBillion = {
+    val __obj = js.Dynamic.literal(converter = converter, scaling = scaling.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel)
+  
+    __obj.asInstanceOf[Anon_AutoBillion]
+  }
+}
+

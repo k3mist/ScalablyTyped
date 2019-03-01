@@ -18,3 +18,17 @@ trait DatabaseRegistrationEvent
   var OldLocation: java.lang.String
 }
 
+object DatabaseRegistrationEvent {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    NewLocation: java.lang.String,
+    OldLocation: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): DatabaseRegistrationEvent = {
+    val __obj = js.Dynamic.literal(Name = Name, NewLocation = NewLocation, OldLocation = OldLocation, Source = Source)
+  
+    __obj.asInstanceOf[DatabaseRegistrationEvent]
+  }
+}
+

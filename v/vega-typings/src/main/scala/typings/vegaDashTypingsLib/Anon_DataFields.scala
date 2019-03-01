@@ -11,3 +11,12 @@ trait Anon_DataFields
   var fields: js.Array[vegaDashTypingsLib.typesSpecScaleMod.ScaleField]
 }
 
+object Anon_DataFields {
+  @scala.inline
+  def apply(data: java.lang.String, fields: js.Array[vegaDashTypingsLib.typesSpecScaleMod.ScaleField]): Anon_DataFields = {
+    val __obj = js.Dynamic.literal(data = data, fields = fields)
+  
+    __obj.asInstanceOf[Anon_DataFields]
+  }
+}
+

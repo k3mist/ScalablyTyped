@@ -80,3 +80,53 @@ trait XListBox
   def setMultipleMode(bMulti: scala.Boolean): scala.Unit
 }
 
+object XListBox {
+  @scala.inline
+  def apply(
+    DropDownLineCount: scala.Double,
+    ItemCount: scala.Double,
+    Items: activexDashInteropLib.SafeArray[java.lang.String],
+    SelectedItem: java.lang.String,
+    SelectedItemPos: scala.Double,
+    SelectedItems: activexDashInteropLib.SafeArray[java.lang.String],
+    SelectedItemsPos: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    addActionListener: js.Function1[XActionListener, scala.Unit],
+    addItem: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    addItemListener: js.Function1[XItemListener, scala.Unit],
+    addItems: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Double, 
+      scala.Unit
+    ],
+    getDropDownLineCount: js.Function0[scala.Double],
+    getItem: js.Function1[scala.Double, java.lang.String],
+    getItemCount: js.Function0[scala.Double],
+    getItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getSelectedItem: js.Function0[java.lang.String],
+    getSelectedItemPos: js.Function0[scala.Double],
+    getSelectedItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getSelectedItemsPos: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    isMutipleMode: js.Function0[scala.Boolean],
+    makeVisible: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActionListener: js.Function1[XActionListener, scala.Unit],
+    removeItemListener: js.Function1[XItemListener, scala.Unit],
+    removeItems: js.Function2[scala.Double, scala.Double, scala.Unit],
+    selectItem: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    selectItemPos: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    selectItemsPos: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    setDropDownLineCount: js.Function1[scala.Double, scala.Unit],
+    setMultipleMode: js.Function1[scala.Boolean, scala.Unit]
+  ): XListBox = {
+    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, SelectedItem = SelectedItem, SelectedItemPos = SelectedItemPos, SelectedItems = SelectedItems, SelectedItemsPos = SelectedItemsPos, acquire = acquire, addActionListener = addActionListener, addItem = addItem, addItemListener = addItemListener, addItems = addItems, getDropDownLineCount = getDropDownLineCount, getItem = getItem, getItemCount = getItemCount, getItems = getItems, getSelectedItem = getSelectedItem, getSelectedItemPos = getSelectedItemPos, getSelectedItems = getSelectedItems, getSelectedItemsPos = getSelectedItemsPos, isMutipleMode = isMutipleMode, makeVisible = makeVisible, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, removeItemListener = removeItemListener, removeItems = removeItems, selectItem = selectItem, selectItemPos = selectItemPos, selectItemsPos = selectItemsPos, setDropDownLineCount = setDropDownLineCount, setMultipleMode = setMultipleMode)
+  
+    __obj.asInstanceOf[XListBox]
+  }
+}
+

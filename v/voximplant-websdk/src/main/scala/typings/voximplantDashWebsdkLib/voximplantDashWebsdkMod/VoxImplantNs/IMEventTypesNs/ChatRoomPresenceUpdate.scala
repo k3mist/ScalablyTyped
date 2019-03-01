@@ -28,3 +28,17 @@ trait ChatRoomPresenceUpdate
   var room: java.lang.String
 }
 
+object ChatRoomPresenceUpdate {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    participant: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ParticipantInfo,
+    presence: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.UserStatuses,
+    room: java.lang.String
+  ): ChatRoomPresenceUpdate = {
+    val __obj = js.Dynamic.literal(message = message, participant = participant, presence = presence, room = room)
+  
+    __obj.asInstanceOf[ChatRoomPresenceUpdate]
+  }
+}
+

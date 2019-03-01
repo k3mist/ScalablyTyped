@@ -28,3 +28,20 @@ trait FormatElement extends js.Object {
   var isDefault: scala.Boolean
 }
 
+object FormatElement {
+  @scala.inline
+  def apply(
+    formatCode: java.lang.String,
+    formatIndex: scala.Double,
+    formatKey: java.lang.String,
+    formatName: java.lang.String,
+    formatType: java.lang.String,
+    formatUsage: java.lang.String,
+    isDefault: scala.Boolean
+  ): FormatElement = {
+    val __obj = js.Dynamic.literal(formatCode = formatCode, formatIndex = formatIndex, formatKey = formatKey, formatName = formatName, formatType = formatType, formatUsage = formatUsage, isDefault = isDefault)
+  
+    __obj.asInstanceOf[FormatElement]
+  }
+}
+

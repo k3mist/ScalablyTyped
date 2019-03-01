@@ -13,3 +13,18 @@ trait Stats extends js.Object {
   var vsize: scala.Double
 }
 
+object Stats {
+  @scala.inline
+  def apply(
+    hits: scala.Double,
+    keys: scala.Double,
+    ksize: scala.Double,
+    misses: scala.Double,
+    vsize: scala.Double
+  ): Stats = {
+    val __obj = js.Dynamic.literal(hits = hits, keys = keys, ksize = ksize, misses = misses, vsize = vsize)
+  
+    __obj.asInstanceOf[Stats]
+  }
+}
+

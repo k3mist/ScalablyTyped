@@ -12,3 +12,16 @@ trait Anon_AddNewValueObject[T]
   var `type`: mobxLib.mobxLibStrings.add
 }
 
+object Anon_AddNewValueObject {
+  @scala.inline
+  def apply[T](
+    newValue: T,
+    `object`: mobxLib.libTypesObservablesetMod.ObservableSet[T],
+    `type`: mobxLib.mobxLibStrings.add
+  ): Anon_AddNewValueObject[T] = {
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], `object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_AddNewValueObject[T]]
+  }
+}
+

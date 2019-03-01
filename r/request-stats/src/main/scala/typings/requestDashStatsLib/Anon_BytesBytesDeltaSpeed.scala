@@ -20,3 +20,12 @@ trait Anon_BytesBytesDeltaSpeed extends js.Object {
   var speed: scala.Double
 }
 
+object Anon_BytesBytesDeltaSpeed {
+  @scala.inline
+  def apply(bytes: scala.Double, bytesDelta: scala.Double, speed: scala.Double): Anon_BytesBytesDeltaSpeed = {
+    val __obj = js.Dynamic.literal(bytes = bytes, bytesDelta = bytesDelta, speed = speed)
+  
+    __obj.asInstanceOf[Anon_BytesBytesDeltaSpeed]
+  }
+}
+

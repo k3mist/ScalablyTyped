@@ -18,3 +18,16 @@ trait ResourceDataSyncState extends js.Object {
   ] = js.undefined
 }
 
+object ResourceDataSyncState {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion] = null
+  ): ResourceDataSyncState = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (s3Destination != null) __obj.updateDynamic("s3Destination")(s3Destination.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceDataSyncState]
+  }
+}
+

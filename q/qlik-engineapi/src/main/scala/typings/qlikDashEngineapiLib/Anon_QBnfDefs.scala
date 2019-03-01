@@ -10,3 +10,12 @@ trait Anon_QBnfDefs extends js.Object {
   var qBnfHash: java.lang.String
 }
 
+object Anon_QBnfDefs {
+  @scala.inline
+  def apply(qBnfDefs: qlikDashEngineapiLib.EngineAPINs.IBNFDef, qBnfHash: java.lang.String): Anon_QBnfDefs = {
+    val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs, qBnfHash = qBnfHash)
+  
+    __obj.asInstanceOf[Anon_QBnfDefs]
+  }
+}
+

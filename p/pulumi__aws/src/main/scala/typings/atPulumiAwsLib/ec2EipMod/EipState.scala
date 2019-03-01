@@ -47,3 +47,34 @@ trait EipState extends js.Object {
   val vpc: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object EipState {
+  @scala.inline
+  def apply(
+    allocationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    associateWithPrivateIp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    associationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    domain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instance: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    networkInterface: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    publicIp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    publicIpv4Pool: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpc: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): EipState = {
+    val __obj = js.Dynamic.literal()
+    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
+    if (associateWithPrivateIp != null) __obj.updateDynamic("associateWithPrivateIp")(associateWithPrivateIp.asInstanceOf[js.Any])
+    if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
+    if (publicIpv4Pool != null) __obj.updateDynamic("publicIpv4Pool")(publicIpv4Pool.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpc != null) __obj.updateDynamic("vpc")(vpc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EipState]
+  }
+}
+

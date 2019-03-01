@@ -14,3 +14,19 @@ trait Anon_Forceturn extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_Forceturn {
+  @scala.inline
+  def apply(
+    forceturn: scala.Boolean,
+    password: java.lang.String,
+    tcpport: java.lang.String,
+    turnServerURL: java.lang.String,
+    udpport: java.lang.String,
+    username: java.lang.String
+  ): Anon_Forceturn = {
+    val __obj = js.Dynamic.literal(forceturn = forceturn, password = password, tcpport = tcpport, turnServerURL = turnServerURL, udpport = udpport, username = username)
+  
+    __obj.asInstanceOf[Anon_Forceturn]
+  }
+}
+

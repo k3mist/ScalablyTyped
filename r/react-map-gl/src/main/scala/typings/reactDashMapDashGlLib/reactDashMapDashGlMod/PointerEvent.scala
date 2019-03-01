@@ -15,3 +15,19 @@ trait PointerEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object PointerEvent {
+  @scala.inline
+  def apply(
+    features: js.Array[_],
+    lngLat: js.Tuple2[scala.Double, scala.Double],
+    point: js.Tuple2[scala.Double, scala.Double],
+    srcEvent: js.Any,
+    target: js.Any,
+    `type`: java.lang.String
+  ): PointerEvent = {
+    val __obj = js.Dynamic.literal(features = features, lngLat = lngLat, point = point, srcEvent = srcEvent, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[PointerEvent]
+  }
+}
+

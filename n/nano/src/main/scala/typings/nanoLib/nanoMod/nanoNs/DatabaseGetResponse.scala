@@ -30,3 +30,24 @@ trait DatabaseGetResponse extends js.Object {
   var update_seq: scala.Double
 }
 
+object DatabaseGetResponse {
+  @scala.inline
+  def apply(
+    compact_running: scala.Boolean,
+    data_size: scala.Double,
+    db_name: java.lang.String,
+    disk_format_version: scala.Double,
+    disk_size: scala.Double,
+    doc_count: scala.Double,
+    doc_del_count: scala.Double,
+    instance_start_time: java.lang.String,
+    purge_seq: scala.Double,
+    sizes: nanoLib.Anon_Active,
+    update_seq: scala.Double
+  ): DatabaseGetResponse = {
+    val __obj = js.Dynamic.literal(compact_running = compact_running, data_size = data_size, db_name = db_name, disk_format_version = disk_format_version, disk_size = disk_size, doc_count = doc_count, doc_del_count = doc_del_count, instance_start_time = instance_start_time, purge_seq = purge_seq, sizes = sizes, update_seq = update_seq)
+  
+    __obj.asInstanceOf[DatabaseGetResponse]
+  }
+}
+

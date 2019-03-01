@@ -107,3 +107,26 @@ trait ServiceSpec extends js.Object {
   val `type`: java.lang.String
 }
 
+object ServiceSpec {
+  @scala.inline
+  def apply(
+    clusterIP: java.lang.String,
+    externalIPs: js.Array[java.lang.String],
+    externalName: java.lang.String,
+    externalTrafficPolicy: java.lang.String,
+    healthCheckNodePort: scala.Double,
+    loadBalancerIP: java.lang.String,
+    loadBalancerSourceRanges: js.Array[java.lang.String],
+    ports: js.Array[ServicePort],
+    publishNotReadyAddresses: scala.Boolean,
+    selector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    sessionAffinity: java.lang.String,
+    sessionAffinityConfig: SessionAffinityConfig,
+    `type`: java.lang.String
+  ): ServiceSpec = {
+    val __obj = js.Dynamic.literal(clusterIP = clusterIP, externalIPs = externalIPs, externalName = externalName, externalTrafficPolicy = externalTrafficPolicy, healthCheckNodePort = healthCheckNodePort, loadBalancerIP = loadBalancerIP, loadBalancerSourceRanges = loadBalancerSourceRanges, ports = ports, publishNotReadyAddresses = publishNotReadyAddresses, selector = selector, sessionAffinity = sessionAffinity, sessionAffinityConfig = sessionAffinityConfig, `type` = `type`)
+  
+    __obj.asInstanceOf[ServiceSpec]
+  }
+}
+

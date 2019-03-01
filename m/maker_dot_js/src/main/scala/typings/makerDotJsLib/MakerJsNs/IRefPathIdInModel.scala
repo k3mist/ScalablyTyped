@@ -13,3 +13,12 @@ trait IRefPathIdInModel extends js.Object {
   var pathId: java.lang.String
 }
 
+object IRefPathIdInModel {
+  @scala.inline
+  def apply(modelContext: IModel, pathId: java.lang.String): IRefPathIdInModel = {
+    val __obj = js.Dynamic.literal(modelContext = modelContext, pathId = pathId)
+  
+    __obj.asInstanceOf[IRefPathIdInModel]
+  }
+}
+

@@ -45,3 +45,33 @@ trait ConnectorShape
   var StartShape: XShape
 }
 
+object ConnectorShape {
+  @scala.inline
+  def apply(
+    ConnectorProperties: ConnectorProperties = null,
+    EdgeLine1Delta: scala.Double,
+    EdgeLine2Delta: scala.Double,
+    EdgeLine3Delta: scala.Double,
+    EndGluePointIndex: scala.Double,
+    EndPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    EndShape: XShape,
+    LineProperties: LineProperties = null,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    StartGluePointIndex: scala.Double,
+    StartPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    StartShape: XShape,
+    Text: Text = null
+  ): ConnectorShape = {
+    val __obj = js.Dynamic.literal(EdgeLine1Delta = EdgeLine1Delta, EdgeLine2Delta = EdgeLine2Delta, EdgeLine3Delta = EdgeLine3Delta, EndGluePointIndex = EndGluePointIndex, EndPosition = EndPosition, EndShape = EndShape, StartGluePointIndex = StartGluePointIndex, StartPosition = StartPosition, StartShape = StartShape)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ConnectorProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[ConnectorShape]
+  }
+}
+

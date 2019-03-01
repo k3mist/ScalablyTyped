@@ -22,3 +22,17 @@ trait XFunctionAccess
   def callFunction(aName: java.lang.String, aArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]): js.Any
 }
 
+object XFunctionAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    callFunction: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFunctionAccess = {
+    val __obj = js.Dynamic.literal(acquire = acquire, callFunction = callFunction, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFunctionAccess]
+  }
+}
+

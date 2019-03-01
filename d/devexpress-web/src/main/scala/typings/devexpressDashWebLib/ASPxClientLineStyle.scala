@@ -26,3 +26,17 @@ trait ASPxClientLineStyle extends ASPxClientWebChartElement {
   var thickness: scala.Double
 }
 
+object ASPxClientLineStyle {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    dashStyle: java.lang.String,
+    lineJoin: java.lang.String,
+    thickness: scala.Double
+  ): ASPxClientLineStyle = {
+    val __obj = js.Dynamic.literal(chart = chart, dashStyle = dashStyle, lineJoin = lineJoin, thickness = thickness)
+  
+    __obj.asInstanceOf[ASPxClientLineStyle]
+  }
+}
+

@@ -97,3 +97,52 @@ trait LoadBalancerState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object LoadBalancerState {
+  @scala.inline
+  def apply(
+    accessLogs: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketEnabledPrefix] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arnSuffix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enableCrossZoneLoadBalancing: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    enableDeletionProtection: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    enableHttp2: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    idleTimeout: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    internal: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    ipAddressType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    loadBalancerType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    subnetMappings: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationIdSubnetId]]
+    ] = null,
+    subnets: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    zoneId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): LoadBalancerState = {
+    val __obj = js.Dynamic.literal()
+    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (arnSuffix != null) __obj.updateDynamic("arnSuffix")(arnSuffix.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (enableCrossZoneLoadBalancing != null) __obj.updateDynamic("enableCrossZoneLoadBalancing")(enableCrossZoneLoadBalancing.asInstanceOf[js.Any])
+    if (enableDeletionProtection != null) __obj.updateDynamic("enableDeletionProtection")(enableDeletionProtection.asInstanceOf[js.Any])
+    if (enableHttp2 != null) __obj.updateDynamic("enableHttp2")(enableHttp2.asInstanceOf[js.Any])
+    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (ipAddressType != null) __obj.updateDynamic("ipAddressType")(ipAddressType.asInstanceOf[js.Any])
+    if (loadBalancerType != null) __obj.updateDynamic("loadBalancerType")(loadBalancerType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (subnetMappings != null) __obj.updateDynamic("subnetMappings")(subnetMappings.asInstanceOf[js.Any])
+    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerState]
+  }
+}
+

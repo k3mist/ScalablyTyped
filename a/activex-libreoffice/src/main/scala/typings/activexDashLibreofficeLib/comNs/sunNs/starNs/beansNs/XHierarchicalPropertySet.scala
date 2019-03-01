@@ -53,3 +53,20 @@ trait XHierarchicalPropertySet
   def setHierarchicalPropertyValue(aHierarchicalPropertyName: java.lang.String, aValue: js.Any): scala.Unit
 }
 
+object XHierarchicalPropertySet {
+  @scala.inline
+  def apply(
+    HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    getHierarchicalPropertySetInfo: js.Function0[XHierarchicalPropertySetInfo],
+    getHierarchicalPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setHierarchicalPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XHierarchicalPropertySet = {
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = acquire, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValue = getHierarchicalPropertyValue, queryInterface = queryInterface, release = release, setHierarchicalPropertyValue = setHierarchicalPropertyValue)
+  
+    __obj.asInstanceOf[XHierarchicalPropertySet]
+  }
+}
+

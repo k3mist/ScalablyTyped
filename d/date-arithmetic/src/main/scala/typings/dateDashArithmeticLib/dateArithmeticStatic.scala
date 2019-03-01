@@ -25,3 +25,21 @@ trait dateArithmeticStatic extends js.Object {
   def subtract(date: stdLib.Date, num: scala.Double, unit: Unit): stdLib.Date
 }
 
+object dateArithmeticStatic {
+  @scala.inline
+  def apply(
+    add: js.Function3[stdLib.Date, scala.Double, Unit, stdLib.Date],
+    eq: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    gt: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    gte: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    lt: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    lte: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    neq: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
+    subtract: js.Function3[stdLib.Date, scala.Double, Unit, stdLib.Date]
+  ): dateArithmeticStatic = {
+    val __obj = js.Dynamic.literal(add = add, eq = eq, gt = gt, gte = gte, lt = lt, lte = lte, neq = neq, subtract = subtract)
+  
+    __obj.asInstanceOf[dateArithmeticStatic]
+  }
+}
+

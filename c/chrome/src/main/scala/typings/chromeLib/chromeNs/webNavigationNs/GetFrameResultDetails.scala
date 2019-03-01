@@ -14,3 +14,12 @@ trait GetFrameResultDetails extends js.Object {
   var url: java.lang.String
 }
 
+object GetFrameResultDetails {
+  @scala.inline
+  def apply(errorOccurred: scala.Boolean, parentFrameId: scala.Double, url: java.lang.String): GetFrameResultDetails = {
+    val __obj = js.Dynamic.literal(errorOccurred = errorOccurred, parentFrameId = parentFrameId, url = url)
+  
+    __obj.asInstanceOf[GetFrameResultDetails]
+  }
+}
+

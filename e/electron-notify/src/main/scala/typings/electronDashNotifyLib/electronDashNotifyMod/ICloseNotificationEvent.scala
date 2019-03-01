@@ -10,3 +10,15 @@ trait ICloseNotificationEvent extends js.Object {
   var id: scala.Double
 }
 
+object ICloseNotificationEvent {
+  @scala.inline
+  def apply(
+    event: electronDashNotifyLib.electronDashNotifyLibStrings.close | electronDashNotifyLib.electronDashNotifyLibStrings.show | electronDashNotifyLib.electronDashNotifyLibStrings.click,
+    id: scala.Double
+  ): ICloseNotificationEvent = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id)
+  
+    __obj.asInstanceOf[ICloseNotificationEvent]
+  }
+}
+

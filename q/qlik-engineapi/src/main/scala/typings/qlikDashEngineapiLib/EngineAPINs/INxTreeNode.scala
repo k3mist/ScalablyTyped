@@ -49,3 +49,24 @@ trait INxTreeNode extends js.Object {
   var qValues: INxTreeValue
 }
 
+object INxTreeNode {
+  @scala.inline
+  def apply(
+    qElemNo: scala.Double,
+    qNodeNr: scala.Double,
+    qNodes: INxTreeNode,
+    qParentNode: scala.Double,
+    qRow: scala.Double,
+    qText: java.lang.String,
+    qType: NxTreeNodeType,
+    qValues: INxTreeValue,
+    qAttrDims: INxAttributeDimValues = null,
+    qAttrExps: INxAttributeExpressionValues = null
+  ): INxTreeNode = {
+    val __obj = js.Dynamic.literal(qElemNo = qElemNo, qNodeNr = qNodeNr, qNodes = qNodes, qParentNode = qParentNode, qRow = qRow, qText = qText, qType = qType, qValues = qValues)
+    if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims)
+    if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps)
+    __obj.asInstanceOf[INxTreeNode]
+  }
+}
+

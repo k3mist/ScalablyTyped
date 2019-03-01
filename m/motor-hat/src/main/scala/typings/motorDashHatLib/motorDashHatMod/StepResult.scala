@@ -24,3 +24,12 @@ trait StepResult extends js.Object {
   var steps: scala.Double
 }
 
+object StepResult {
+  @scala.inline
+  def apply(dir: Direction, duration: scala.Double, retried: scala.Double, steps: scala.Double): StepResult = {
+    val __obj = js.Dynamic.literal(dir = dir, duration = duration, retried = retried, steps = steps)
+  
+    __obj.asInstanceOf[StepResult]
+  }
+}
+

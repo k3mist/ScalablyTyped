@@ -48,3 +48,27 @@ trait XHyphenatedWord
   def isAlternativeSpelling(): scala.Boolean
 }
 
+object XHyphenatedWord {
+  @scala.inline
+  def apply(
+    HyphenPos: scala.Double,
+    HyphenatedWord: java.lang.String,
+    HyphenationPos: scala.Double,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Word: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getHyphenPos: js.Function0[scala.Double],
+    getHyphenatedWord: js.Function0[java.lang.String],
+    getHyphenationPos: js.Function0[scala.Double],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getWord: js.Function0[java.lang.String],
+    isAlternativeSpelling: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHyphenatedWord = {
+    val __obj = js.Dynamic.literal(HyphenPos = HyphenPos, HyphenatedWord = HyphenatedWord, HyphenationPos = HyphenationPos, Locale = Locale, Word = Word, acquire = acquire, getHyphenPos = getHyphenPos, getHyphenatedWord = getHyphenatedWord, getHyphenationPos = getHyphenationPos, getLocale = getLocale, getWord = getWord, isAlternativeSpelling = isAlternativeSpelling, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XHyphenatedWord]
+  }
+}
+

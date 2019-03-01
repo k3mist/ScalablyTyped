@@ -27,3 +27,19 @@ trait Anon_BufferSize extends js.Object {
   var windowLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BufferSize {
+  @scala.inline
+  def apply(
+    bufferSize: scala.Double,
+    features: js.Array[firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature],
+    interval: scala.Double,
+    threads: js.Array[java.lang.String] = null,
+    windowLength: scala.Int | scala.Double = null
+  ): Anon_BufferSize = {
+    val __obj = js.Dynamic.literal(bufferSize = bufferSize, features = features, interval = interval)
+    if (threads != null) __obj.updateDynamic("threads")(threads)
+    if (windowLength != null) __obj.updateDynamic("windowLength")(windowLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BufferSize]
+  }
+}
+

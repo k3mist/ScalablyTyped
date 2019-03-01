@@ -57,3 +57,24 @@ trait LayerProperties extends LoadableProperties {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LayerProperties {
+  @scala.inline
+  def apply(
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    listMode: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): LayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[LayerProperties]
+  }
+}
+

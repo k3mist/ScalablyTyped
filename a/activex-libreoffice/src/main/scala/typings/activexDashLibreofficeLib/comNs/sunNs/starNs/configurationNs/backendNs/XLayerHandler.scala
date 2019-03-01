@@ -158,3 +158,35 @@ trait XLayerHandler
   def startLayer(): scala.Unit
 }
 
+object XLayerHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addOrReplaceNode: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    addOrReplaceNodeFromTemplate: js.Function3[java.lang.String, TemplateIdentifier, scala.Double, scala.Unit],
+    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
+    addPropertyWithValue: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    dropNode: js.Function1[java.lang.String, scala.Unit],
+    endLayer: js.Function0[scala.Unit],
+    endNode: js.Function0[scala.Unit],
+    endProperty: js.Function0[scala.Unit],
+    overrideNode: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Unit],
+    overrideProperty: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.`type`, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyValue: js.Function1[js.Any, scala.Unit],
+    setPropertyValueForLocale: js.Function2[js.Any, java.lang.String, scala.Unit],
+    startLayer: js.Function0[scala.Unit]
+  ): XLayerHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addOrReplaceNode = addOrReplaceNode, addOrReplaceNodeFromTemplate = addOrReplaceNodeFromTemplate, addProperty = addProperty, addPropertyWithValue = addPropertyWithValue, dropNode = dropNode, endLayer = endLayer, endNode = endNode, endProperty = endProperty, overrideNode = overrideNode, overrideProperty = overrideProperty, queryInterface = queryInterface, release = release, setPropertyValue = setPropertyValue, setPropertyValueForLocale = setPropertyValueForLocale, startLayer = startLayer)
+  
+    __obj.asInstanceOf[XLayerHandler]
+  }
+}
+

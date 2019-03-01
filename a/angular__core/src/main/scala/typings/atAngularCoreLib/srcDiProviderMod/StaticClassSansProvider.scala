@@ -19,3 +19,12 @@ trait StaticClassSansProvider
   var useClass: atAngularCoreLib.srcTypeMod.Type[_]
 }
 
+object StaticClassSansProvider {
+  @scala.inline
+  def apply(deps: js.Array[_], useClass: atAngularCoreLib.srcTypeMod.Type[_]): StaticClassSansProvider = {
+    val __obj = js.Dynamic.literal(deps = deps, useClass = useClass)
+  
+    __obj.asInstanceOf[StaticClassSansProvider]
+  }
+}
+

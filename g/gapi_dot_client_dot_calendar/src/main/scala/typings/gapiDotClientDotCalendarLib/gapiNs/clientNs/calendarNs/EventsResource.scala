@@ -30,3 +30,57 @@ trait EventsResource extends js.Object {
   def watch(request: gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object EventsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdEventId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmail, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    `import`: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdFieldsKeyMaxAttendees, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    instances: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Events]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Events]
+    ],
+    move: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdDestination, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarIdEventId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    quickAdd: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    update: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarIdEventId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Event]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltAlwaysIncludeEmailCalendarIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): EventsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, `import` = `import`, insert = insert, instances = instances, list = list, move = move, patch = patch, quickAdd = quickAdd, update = update, watch = watch)
+  
+    __obj.asInstanceOf[EventsResource]
+  }
+}
+

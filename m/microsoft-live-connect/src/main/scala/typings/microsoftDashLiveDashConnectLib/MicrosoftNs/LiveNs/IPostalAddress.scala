@@ -36,3 +36,19 @@ trait IPostalAddress extends js.Object {
   var street_2: java.lang.String
 }
 
+object IPostalAddress {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    postal_code: java.lang.String,
+    region: java.lang.String,
+    state: java.lang.String,
+    street: java.lang.String,
+    street_2: java.lang.String
+  ): IPostalAddress = {
+    val __obj = js.Dynamic.literal(city = city, postal_code = postal_code, region = region, state = state, street = street, street_2 = street_2)
+  
+    __obj.asInstanceOf[IPostalAddress]
+  }
+}
+

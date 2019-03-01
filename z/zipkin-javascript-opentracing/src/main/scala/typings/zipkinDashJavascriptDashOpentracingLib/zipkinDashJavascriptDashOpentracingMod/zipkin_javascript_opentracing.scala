@@ -11,3 +11,16 @@ trait zipkin_javascript_opentracing extends js.Object {
   def startSpan(name: js.Any, args: js.Any*): js.Any
 }
 
+object zipkin_javascript_opentracing {
+  @scala.inline
+  def apply(
+    extract: js.Function2[js.Any, js.Any, js.Any],
+    inject: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    startSpan: js.Function2[js.Any, /* repeated */ js.Any, js.Any]
+  ): zipkin_javascript_opentracing = {
+    val __obj = js.Dynamic.literal(extract = extract, inject = inject, startSpan = startSpan)
+  
+    __obj.asInstanceOf[zipkin_javascript_opentracing]
+  }
+}
+

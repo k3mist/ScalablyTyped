@@ -15,3 +15,12 @@ trait ILockerProvider
   def defaults(lockerSettings: ILockerSettings): scala.Unit
 }
 
+object ILockerProvider {
+  @scala.inline
+  def apply($get: js.Any, defaults: js.Function1[ILockerSettings, scala.Unit]): ILockerProvider = {
+    val __obj = js.Dynamic.literal($get = $get, defaults = defaults)
+  
+    __obj.asInstanceOf[ILockerProvider]
+  }
+}
+

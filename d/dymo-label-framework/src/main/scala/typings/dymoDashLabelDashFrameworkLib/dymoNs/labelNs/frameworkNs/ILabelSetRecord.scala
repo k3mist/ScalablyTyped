@@ -39,3 +39,16 @@ trait ILabelSetRecord extends js.Object {
   def setTextMarkup(objectName: java.lang.String, textMarkup: java.lang.String): ILabelSetRecord
 }
 
+object ILabelSetRecord {
+  @scala.inline
+  def apply(
+    setBase64Image: js.Function2[java.lang.String, java.lang.String, ILabelSetRecord],
+    setText: js.Function2[java.lang.String, java.lang.String, ILabelSetRecord],
+    setTextMarkup: js.Function2[java.lang.String, java.lang.String, ILabelSetRecord]
+  ): ILabelSetRecord = {
+    val __obj = js.Dynamic.literal(setBase64Image = setBase64Image, setText = setText, setTextMarkup = setTextMarkup)
+  
+    __obj.asInstanceOf[ILabelSetRecord]
+  }
+}
+

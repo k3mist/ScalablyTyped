@@ -13,3 +13,19 @@ trait MochaPhantomJsWindowOptions extends Window {
   def run(): scala.Unit
 }
 
+object MochaPhantomJsWindowOptions {
+  @scala.inline
+  def apply(
+    ended: scala.Boolean,
+    env: js.Any,
+    failures: scala.Double,
+    mochaPhantomJS: js.Function0[MochaPhantomJsWindowOptions],
+    run: js.Function0[scala.Unit],
+    started: scala.Boolean
+  ): MochaPhantomJsWindowOptions = {
+    val __obj = js.Dynamic.literal(ended = ended, env = env, failures = failures, mochaPhantomJS = mochaPhantomJS, run = run, started = started)
+  
+    __obj.asInstanceOf[MochaPhantomJsWindowOptions]
+  }
+}
+

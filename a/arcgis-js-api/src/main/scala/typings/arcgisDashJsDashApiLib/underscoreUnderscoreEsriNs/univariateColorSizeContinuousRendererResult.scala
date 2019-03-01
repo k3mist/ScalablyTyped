@@ -45,3 +45,22 @@ trait univariateColorSizeContinuousRendererResult
   var statistics: SummaryStatisticsResult
 }
 
+object univariateColorSizeContinuousRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    color: ContinuousRendererResultColor,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer,
+    size: ContinuousRendererResultSize,
+    statistics: SummaryStatisticsResult
+  ): univariateColorSizeContinuousRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, size = size, statistics = statistics)
+  
+    __obj.asInstanceOf[univariateColorSizeContinuousRendererResult]
+  }
+}
+

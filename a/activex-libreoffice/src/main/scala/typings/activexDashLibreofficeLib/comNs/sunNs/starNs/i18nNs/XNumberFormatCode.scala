@@ -38,3 +38,36 @@ trait XNumberFormatCode
   def getFormatCode(nFormatIndex: scala.Double, rLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): NumberFormatCode
 }
 
+object XNumberFormatCode {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getAllFormatCode: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[NumberFormatCode]
+    ],
+    getAllFormatCodes: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[NumberFormatCode]
+    ],
+    getDefault: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      NumberFormatCode
+    ],
+    getFormatCode: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      NumberFormatCode
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumberFormatCode = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getAllFormatCode = getAllFormatCode, getAllFormatCodes = getAllFormatCodes, getDefault = getDefault, getFormatCode = getFormatCode, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XNumberFormatCode]
+  }
+}
+

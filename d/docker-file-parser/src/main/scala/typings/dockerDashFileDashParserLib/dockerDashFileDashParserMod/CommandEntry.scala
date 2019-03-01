@@ -13,3 +13,18 @@ trait CommandEntry extends js.Object {
   var raw: java.lang.String
 }
 
+object CommandEntry {
+  @scala.inline
+  def apply(
+    args: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    lineno: scala.Double,
+    name: java.lang.String,
+    raw: java.lang.String,
+    error: java.lang.String = null
+  ): CommandEntry = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], lineno = lineno, name = name, raw = raw)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[CommandEntry]
+  }
+}
+

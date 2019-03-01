@@ -36,3 +36,20 @@ trait QueryFilter extends js.Object {
   var sortOrder: scala.Double
 }
 
+object QueryFilter {
+  @scala.inline
+  def apply(
+    criteria: js.Array[FilterCriteria],
+    direction: PagingDirection,
+    pageNumber: scala.Double,
+    pageSize: scala.Double,
+    pagingToken: java.lang.String,
+    sortBy: scala.Double,
+    sortOrder: scala.Double
+  ): QueryFilter = {
+    val __obj = js.Dynamic.literal(criteria = criteria, direction = direction, pageNumber = pageNumber, pageSize = pageSize, pagingToken = pagingToken, sortBy = sortBy, sortOrder = sortOrder)
+  
+    __obj.asInstanceOf[QueryFilter]
+  }
+}
+

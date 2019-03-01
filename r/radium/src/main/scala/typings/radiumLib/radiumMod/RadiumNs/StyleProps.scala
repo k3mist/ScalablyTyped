@@ -19,3 +19,15 @@ trait StyleProps extends js.Object {
   var scopeSelector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StyleProps {
+  @scala.inline
+  def apply(
+    rules: reactLib.reactMod.ReactNs.CSSProperties | StyleRules,
+    scopeSelector: java.lang.String = null
+  ): StyleProps = {
+    val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
+    if (scopeSelector != null) __obj.updateDynamic("scopeSelector")(scopeSelector)
+    __obj.asInstanceOf[StyleProps]
+  }
+}
+

@@ -28,3 +28,33 @@ trait HtmlOutput extends js.Object {
   def setXFrameOptionsMode(mode: XFrameOptionsMode): HtmlOutput
 }
 
+object HtmlOutput {
+  @scala.inline
+  def apply(
+    addMetaTag: js.Function2[java.lang.String, java.lang.String, HtmlOutput],
+    append: js.Function1[java.lang.String, HtmlOutput],
+    appendUntrusted: js.Function1[java.lang.String, HtmlOutput],
+    asTemplate: js.Function0[HtmlTemplate],
+    clear: js.Function0[HtmlOutput],
+    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getContent: js.Function0[java.lang.String],
+    getFaviconUrl: js.Function0[java.lang.String],
+    getHeight: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getMetaTags: js.Function0[js.Array[HtmlOutputMetaTag]],
+    getTitle: js.Function0[java.lang.String],
+    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    setContent: js.Function1[java.lang.String, HtmlOutput],
+    setFaviconUrl: js.Function1[java.lang.String, HtmlOutput],
+    setHeight: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
+    setSandboxMode: js.Function1[SandboxMode, HtmlOutput],
+    setTitle: js.Function1[java.lang.String, HtmlOutput],
+    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
+    setXFrameOptionsMode: js.Function1[XFrameOptionsMode, HtmlOutput]
+  ): HtmlOutput = {
+    val __obj = js.Dynamic.literal(addMetaTag = addMetaTag, append = append, appendUntrusted = appendUntrusted, asTemplate = asTemplate, clear = clear, getAs = getAs, getBlob = getBlob, getContent = getContent, getFaviconUrl = getFaviconUrl, getHeight = getHeight, getMetaTags = getMetaTags, getTitle = getTitle, getWidth = getWidth, setContent = setContent, setFaviconUrl = setFaviconUrl, setHeight = setHeight, setSandboxMode = setSandboxMode, setTitle = setTitle, setWidth = setWidth, setXFrameOptionsMode = setXFrameOptionsMode)
+  
+    __obj.asInstanceOf[HtmlOutput]
+  }
+}
+

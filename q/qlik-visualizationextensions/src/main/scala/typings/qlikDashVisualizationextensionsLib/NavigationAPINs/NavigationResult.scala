@@ -35,3 +35,19 @@ trait NavigationResult extends js.Object {
   var success: scala.Boolean
 }
 
+object NavigationResult {
+  @scala.inline
+  def apply(
+    error: NavigationErrorType,
+    errorMsg: java.lang.String,
+    mode: java.lang.String,
+    sheetId: java.lang.String,
+    storyId: java.lang.String,
+    success: scala.Boolean
+  ): NavigationResult = {
+    val __obj = js.Dynamic.literal(error = error, errorMsg = errorMsg, mode = mode, sheetId = sheetId, storyId = storyId, success = success)
+  
+    __obj.asInstanceOf[NavigationResult]
+  }
+}
+

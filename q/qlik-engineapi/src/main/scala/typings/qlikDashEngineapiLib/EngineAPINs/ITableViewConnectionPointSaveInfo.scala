@@ -19,3 +19,12 @@ trait ITableViewConnectionPointSaveInfo extends js.Object {
   var qPos: IPoint
 }
 
+object ITableViewConnectionPointSaveInfo {
+  @scala.inline
+  def apply(qFields: js.Array[java.lang.String], qPos: IPoint): ITableViewConnectionPointSaveInfo = {
+    val __obj = js.Dynamic.literal(qFields = qFields, qPos = qPos)
+  
+    __obj.asInstanceOf[ITableViewConnectionPointSaveInfo]
+  }
+}
+

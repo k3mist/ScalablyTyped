@@ -20,3 +20,12 @@ trait DashboardExportFilterStateStatic extends js.Object {
   var SeparatePage: java.lang.String
 }
 
+object DashboardExportFilterStateStatic {
+  @scala.inline
+  def apply(Below: java.lang.String, None: java.lang.String, SeparatePage: java.lang.String): DashboardExportFilterStateStatic = {
+    val __obj = js.Dynamic.literal(Below = Below, None = None, SeparatePage = SeparatePage)
+  
+    __obj.asInstanceOf[DashboardExportFilterStateStatic]
+  }
+}
+

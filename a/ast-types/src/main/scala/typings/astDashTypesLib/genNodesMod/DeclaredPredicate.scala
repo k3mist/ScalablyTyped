@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.ExpressionKind
 }
 
+object DeclaredPredicate {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.DeclaredPredicate,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): DeclaredPredicate = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[DeclaredPredicate]
+  }
+}
+

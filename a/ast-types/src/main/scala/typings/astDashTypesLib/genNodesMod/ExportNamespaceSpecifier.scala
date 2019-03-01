@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ExportNamespaceSpecifier
 }
 
+object ExportNamespaceSpecifier {
+  @scala.inline
+  def apply(
+    exported: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ExportNamespaceSpecifier
+  ): ExportNamespaceSpecifier = {
+    val __obj = js.Dynamic.literal(exported = exported, `type` = `type`)
+  
+    __obj.asInstanceOf[ExportNamespaceSpecifier]
+  }
+}
+

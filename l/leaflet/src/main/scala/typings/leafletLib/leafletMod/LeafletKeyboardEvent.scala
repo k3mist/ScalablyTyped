@@ -9,3 +9,12 @@ trait LeafletKeyboardEvent extends LeafletEvent {
   var originalEvent: stdLib.KeyboardEvent
 }
 
+object LeafletKeyboardEvent {
+  @scala.inline
+  def apply(originalEvent: stdLib.KeyboardEvent, target: js.Any, `type`: java.lang.String): LeafletKeyboardEvent = {
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[LeafletKeyboardEvent]
+  }
+}
+

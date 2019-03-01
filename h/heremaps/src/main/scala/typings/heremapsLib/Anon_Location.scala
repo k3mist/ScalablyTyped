@@ -13,3 +13,18 @@ trait Anon_Location extends js.Object {
   var Relevance: scala.Double
 }
 
+object Anon_Location {
+  @scala.inline
+  def apply(
+    Location: Anon_AddressDisplayPosition,
+    MatchLevel: java.lang.String,
+    MatchQuality: Anon_CityHouseNumber,
+    MatchType: java.lang.String,
+    Relevance: scala.Double
+  ): Anon_Location = {
+    val __obj = js.Dynamic.literal(Location = Location, MatchLevel = MatchLevel, MatchQuality = MatchQuality, MatchType = MatchType, Relevance = Relevance)
+  
+    __obj.asInstanceOf[Anon_Location]
+  }
+}
+

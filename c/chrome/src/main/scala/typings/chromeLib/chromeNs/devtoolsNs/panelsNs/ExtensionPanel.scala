@@ -21,3 +21,17 @@ trait ExtensionPanel extends js.Object {
   def createStatusBarButton(iconPath: java.lang.String, tooltipText: java.lang.String, disabled: scala.Boolean): Button
 }
 
+object ExtensionPanel {
+  @scala.inline
+  def apply(
+    createStatusBarButton: js.Function3[java.lang.String, java.lang.String, scala.Boolean, Button],
+    onHidden: PanelHiddenEvent,
+    onSearch: PanelSearchEvent,
+    onShown: PanelShownEvent
+  ): ExtensionPanel = {
+    val __obj = js.Dynamic.literal(createStatusBarButton = createStatusBarButton, onHidden = onHidden, onSearch = onSearch, onShown = onShown)
+  
+    __obj.asInstanceOf[ExtensionPanel]
+  }
+}
+

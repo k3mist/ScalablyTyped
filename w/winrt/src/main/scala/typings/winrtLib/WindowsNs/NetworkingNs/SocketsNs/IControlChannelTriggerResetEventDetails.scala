@@ -11,3 +11,16 @@ trait IControlChannelTriggerResetEventDetails extends js.Object {
   var softwareSlotReset: scala.Boolean
 }
 
+object IControlChannelTriggerResetEventDetails {
+  @scala.inline
+  def apply(
+    hardwareSlotReset: scala.Boolean,
+    resetReason: ControlChannelTriggerResetReason,
+    softwareSlotReset: scala.Boolean
+  ): IControlChannelTriggerResetEventDetails = {
+    val __obj = js.Dynamic.literal(hardwareSlotReset = hardwareSlotReset, resetReason = resetReason, softwareSlotReset = softwareSlotReset)
+  
+    __obj.asInstanceOf[IControlChannelTriggerResetEventDetails]
+  }
+}
+

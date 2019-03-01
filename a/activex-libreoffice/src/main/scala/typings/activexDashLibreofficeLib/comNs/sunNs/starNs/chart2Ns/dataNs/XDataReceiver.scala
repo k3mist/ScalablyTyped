@@ -61,3 +61,31 @@ trait XDataReceiver
   ): scala.Unit
 }
 
+object XDataReceiver {
+  @scala.inline
+  def apply(
+    RangeHighlighter: XRangeHighlighter,
+    UsedData: XDataSource,
+    UsedRangeRepresentations: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    attachDataProvider: js.Function1[XDataProvider, scala.Unit],
+    attachNumberFormatsSupplier: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
+      scala.Unit
+    ],
+    getRangeHighlighter: js.Function0[XRangeHighlighter],
+    getUsedData: js.Function0[XDataSource],
+    getUsedRangeRepresentations: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setArguments: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XDataReceiver = {
+    val __obj = js.Dynamic.literal(RangeHighlighter = RangeHighlighter, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = acquire, attachDataProvider = attachDataProvider, attachNumberFormatsSupplier = attachNumberFormatsSupplier, getRangeHighlighter = getRangeHighlighter, getUsedData = getUsedData, getUsedRangeRepresentations = getUsedRangeRepresentations, queryInterface = queryInterface, release = release, setArguments = setArguments)
+  
+    __obj.asInstanceOf[XDataReceiver]
+  }
+}
+

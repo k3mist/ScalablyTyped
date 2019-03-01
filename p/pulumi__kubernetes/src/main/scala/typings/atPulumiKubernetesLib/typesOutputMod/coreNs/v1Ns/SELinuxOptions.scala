@@ -27,3 +27,12 @@ trait SELinuxOptions extends js.Object {
   val user: java.lang.String
 }
 
+object SELinuxOptions {
+  @scala.inline
+  def apply(level: java.lang.String, role: java.lang.String, `type`: java.lang.String, user: java.lang.String): SELinuxOptions = {
+    val __obj = js.Dynamic.literal(level = level, role = role, `type` = `type`, user = user)
+  
+    __obj.asInstanceOf[SELinuxOptions]
+  }
+}
+

@@ -16,3 +16,21 @@ trait TextMode extends js.Object {
   def transformAction(state: js.Any, action: js.Any, editor: js.Any, session: js.Any, param: js.Any): js.Any
 }
 
+object TextMode {
+  @scala.inline
+  def apply(
+    autoOutdent: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    checkOutdent: js.Function3[js.Any, js.Any, js.Any, scala.Boolean],
+    createModeDelegates: js.Function1[js.Any, scala.Unit],
+    createWorker: js.Function1[js.Any, js.Any],
+    getNextLineIndent: js.Function3[js.Any, js.Any, js.Any, java.lang.String],
+    getTokenizer: js.Function0[js.Any],
+    toggleCommentLines: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Unit],
+    transformAction: js.Function5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
+  ): TextMode = {
+    val __obj = js.Dynamic.literal(autoOutdent = autoOutdent, checkOutdent = checkOutdent, createModeDelegates = createModeDelegates, createWorker = createWorker, getNextLineIndent = getNextLineIndent, getTokenizer = getTokenizer, toggleCommentLines = toggleCommentLines, transformAction = transformAction)
+  
+    __obj.asInstanceOf[TextMode]
+  }
+}
+

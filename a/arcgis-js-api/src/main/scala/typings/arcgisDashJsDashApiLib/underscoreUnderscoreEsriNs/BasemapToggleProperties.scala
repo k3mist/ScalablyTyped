@@ -36,3 +36,26 @@ trait BasemapToggleProperties extends WidgetProperties {
   var viewModel: js.UndefOr[BasemapToggleViewModelProperties] = js.undefined
 }
 
+object BasemapToggleProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    nextBasemap: BasemapProperties | java.lang.String = null,
+    titleVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: BasemapToggleViewModelProperties = null
+  ): BasemapToggleProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (nextBasemap != null) __obj.updateDynamic("nextBasemap")(nextBasemap.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleVisible)) __obj.updateDynamic("titleVisible")(titleVisible)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[BasemapToggleProperties]
+  }
+}
+

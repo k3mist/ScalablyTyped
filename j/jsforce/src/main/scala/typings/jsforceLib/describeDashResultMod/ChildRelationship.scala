@@ -16,3 +16,21 @@ trait ChildRelationship extends js.Object {
   var restrictedDelete: scala.Boolean
 }
 
+object ChildRelationship {
+  @scala.inline
+  def apply(
+    cascadeDelete: scala.Boolean,
+    childSObject: java.lang.String,
+    deprecatedAndHidden: scala.Boolean,
+    field: java.lang.String,
+    junctionIdListNames: js.Array[java.lang.String],
+    junctionReferenceTo: js.Array[java.lang.String],
+    restrictedDelete: scala.Boolean,
+    relationshipName: maybe[java.lang.String] = null
+  ): ChildRelationship = {
+    val __obj = js.Dynamic.literal(cascadeDelete = cascadeDelete, childSObject = childSObject, deprecatedAndHidden = deprecatedAndHidden, field = field, junctionIdListNames = junctionIdListNames, junctionReferenceTo = junctionReferenceTo, restrictedDelete = restrictedDelete)
+    if (relationshipName != null) __obj.updateDynamic("relationshipName")(relationshipName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChildRelationship]
+  }
+}
+

@@ -10,3 +10,12 @@ trait NxGroupTail extends js.Object {
   var qUp: scala.Double
 }
 
+object NxGroupTail {
+  @scala.inline
+  def apply(qDown: scala.Double, qUp: scala.Double): NxGroupTail = {
+    val __obj = js.Dynamic.literal(qDown = qDown, qUp = qUp)
+  
+    __obj.asInstanceOf[NxGroupTail]
+  }
+}
+

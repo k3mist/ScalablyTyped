@@ -13,3 +13,18 @@ trait ChampionListDto extends js.Object {
   var version: java.lang.String
 }
 
+object ChampionListDto {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[ChampionDto],
+    format: java.lang.String,
+    keys: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `type`: java.lang.String,
+    version: java.lang.String
+  ): ChampionListDto = {
+    val __obj = js.Dynamic.literal(data = data, format = format, keys = keys, `type` = `type`, version = version)
+  
+    __obj.asInstanceOf[ChampionListDto]
+  }
+}
+

@@ -14,3 +14,19 @@ trait AggregatedResultsAnalysis extends js.Object {
   var totalTests: scala.Double
 }
 
+object AggregatedResultsAnalysis {
+  @scala.inline
+  def apply(
+    duration: js.Any,
+    notReportedResultsByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome],
+    previousContext: TestResultsContext,
+    resultsByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome],
+    resultsDifference: AggregatedResultsDifference,
+    totalTests: scala.Double
+  ): AggregatedResultsAnalysis = {
+    val __obj = js.Dynamic.literal(duration = duration, notReportedResultsByOutcome = notReportedResultsByOutcome, previousContext = previousContext, resultsByOutcome = resultsByOutcome, resultsDifference = resultsDifference, totalTests = totalTests)
+  
+    __obj.asInstanceOf[AggregatedResultsAnalysis]
+  }
+}
+

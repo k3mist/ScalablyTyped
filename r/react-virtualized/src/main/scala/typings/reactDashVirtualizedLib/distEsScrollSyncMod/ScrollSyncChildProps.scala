@@ -15,3 +15,20 @@ trait ScrollSyncChildProps extends js.Object {
   def onScroll(params: OnScrollParams): scala.Unit
 }
 
+object ScrollSyncChildProps {
+  @scala.inline
+  def apply(
+    clientHeight: scala.Double,
+    clientWidth: scala.Double,
+    onScroll: js.Function1[OnScrollParams, scala.Unit],
+    scrollHeight: scala.Double,
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double,
+    scrollWidth: scala.Double
+  ): ScrollSyncChildProps = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, onScroll = onScroll, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+  
+    __obj.asInstanceOf[ScrollSyncChildProps]
+  }
+}
+

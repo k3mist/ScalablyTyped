@@ -16,3 +16,12 @@ trait ASPxClientDockManagerCancelEventArgs extends ASPxClientCancelEventArgs {
   var panel: ASPxClientDockPanel
 }
 
+object ASPxClientDockManagerCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, panel: ASPxClientDockPanel): ASPxClientDockManagerCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, panel = panel)
+  
+    __obj.asInstanceOf[ASPxClientDockManagerCancelEventArgs]
+  }
+}
+

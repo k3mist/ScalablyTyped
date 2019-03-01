@@ -34,3 +34,21 @@ trait XContainerQuery
   def createSubSetEnumerationByQuery(Query: java.lang.String): XEnumeration
 }
 
+object XContainerQuery {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createSubSetEnumerationByProperties: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XEnumeration
+    ],
+    createSubSetEnumerationByQuery: js.Function1[java.lang.String, XEnumeration],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContainerQuery = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createSubSetEnumerationByProperties = createSubSetEnumerationByProperties, createSubSetEnumerationByQuery = createSubSetEnumerationByQuery, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContainerQuery]
+  }
+}
+

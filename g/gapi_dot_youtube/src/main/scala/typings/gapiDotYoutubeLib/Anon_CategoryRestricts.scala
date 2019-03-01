@@ -16,3 +16,12 @@ trait Anon_CategoryRestricts extends js.Object {
   var tag: java.lang.String
 }
 
+object Anon_CategoryRestricts {
+  @scala.inline
+  def apply(categoryRestricts: js.Array[java.lang.String], tag: java.lang.String): Anon_CategoryRestricts = {
+    val __obj = js.Dynamic.literal(categoryRestricts = categoryRestricts, tag = tag)
+  
+    __obj.asInstanceOf[Anon_CategoryRestricts]
+  }
+}
+

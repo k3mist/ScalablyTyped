@@ -14,3 +14,25 @@ trait LiveChatMessagesResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKeyLiveChatId): gapiDotClientLib.gapiNs.clientNs.Request[LiveChatMessageListResponse]
 }
 
+object LiveChatMessagesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveChatMessage]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKeyLiveChatId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveChatMessageListResponse]
+    ]
+  ): LiveChatMessagesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+  
+    __obj.asInstanceOf[LiveChatMessagesResource]
+  }
+}
+

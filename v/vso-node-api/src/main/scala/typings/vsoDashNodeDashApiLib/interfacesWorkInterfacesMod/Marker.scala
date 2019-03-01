@@ -20,3 +20,12 @@ trait Marker extends js.Object {
   var label: java.lang.String
 }
 
+object Marker {
+  @scala.inline
+  def apply(color: java.lang.String, date: stdLib.Date, label: java.lang.String): Marker = {
+    val __obj = js.Dynamic.literal(color = color, date = date, label = label)
+  
+    __obj.asInstanceOf[Marker]
+  }
+}
+

@@ -35,3 +35,28 @@ trait Heap[T] extends js.Object {
   def updateItem(item: T): scala.Unit
 }
 
+object Heap {
+  @scala.inline
+  def apply[T](
+    clone: js.Function0[Heap[T]],
+    copy: js.Function0[Heap[T]],
+    empty: js.Function0[scala.Boolean],
+    front: js.Function0[T],
+    heapify: js.Function0[scala.Unit],
+    insert: js.Function1[T, scala.Unit],
+    peek: js.Function0[T],
+    pop: js.Function0[T],
+    push: js.Function1[T, scala.Unit],
+    pushpop: js.Function1[T, T],
+    replace: js.Function1[T, T],
+    size: js.Function0[scala.Double],
+    toArray: js.Function0[js.Array[T]],
+    top: js.Function0[T],
+    updateItem: js.Function1[T, scala.Unit]
+  ): Heap[T] = {
+    val __obj = js.Dynamic.literal(clone = clone, copy = copy, empty = empty, front = front, heapify = heapify, insert = insert, peek = peek, pop = pop, push = push, pushpop = pushpop, replace = replace, size = size, toArray = toArray, top = top, updateItem = updateItem)
+  
+    __obj.asInstanceOf[Heap[T]]
+  }
+}
+

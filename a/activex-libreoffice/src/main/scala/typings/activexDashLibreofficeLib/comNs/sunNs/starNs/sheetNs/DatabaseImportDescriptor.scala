@@ -32,3 +32,18 @@ trait DatabaseImportDescriptor extends js.Object {
   var SourceType: DataImportMode
 }
 
+object DatabaseImportDescriptor {
+  @scala.inline
+  def apply(
+    ConnectionResource: java.lang.String,
+    DatabaseName: java.lang.String,
+    IsNative: scala.Boolean,
+    SourceObject: java.lang.String,
+    SourceType: DataImportMode
+  ): DatabaseImportDescriptor = {
+    val __obj = js.Dynamic.literal(ConnectionResource = ConnectionResource, DatabaseName = DatabaseName, IsNative = IsNative, SourceObject = SourceObject, SourceType = SourceType)
+  
+    __obj.asInstanceOf[DatabaseImportDescriptor]
+  }
+}
+

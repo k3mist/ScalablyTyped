@@ -38,3 +38,22 @@ trait RelationshipProperties extends js.Object {
   var relatedTableId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RelationshipProperties {
+  @scala.inline
+  def apply(
+    cardinality: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    keyField: java.lang.String = null,
+    name: java.lang.String = null,
+    relatedTableId: scala.Int | scala.Double = null
+  ): RelationshipProperties = {
+    val __obj = js.Dynamic.literal()
+    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keyField != null) __obj.updateDynamic("keyField")(keyField)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (relatedTableId != null) __obj.updateDynamic("relatedTableId")(relatedTableId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RelationshipProperties]
+  }
+}
+

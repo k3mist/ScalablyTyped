@@ -15,3 +15,16 @@ trait NoLogFilterAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.noLogFilter
 }
 
+object NoLogFilterAppender {
+  @scala.inline
+  def apply(
+    appender: java.lang.String,
+    exclude: java.lang.String | js.Array[java.lang.String],
+    `type`: log4jsLib.log4jsLibStrings.noLogFilter
+  ): NoLogFilterAppender = {
+    val __obj = js.Dynamic.literal(appender = appender, exclude = exclude.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[NoLogFilterAppender]
+  }
+}
+

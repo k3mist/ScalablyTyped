@@ -40,3 +40,20 @@ trait IQSelectionState extends js.Object {
   def unlockAll(): angularLib.angularMod.angularNs.IPromise[_]
 }
 
+object IQSelectionState {
+  @scala.inline
+  def apply(
+    backCount: scala.Double,
+    clearAll: js.Function1[scala.Boolean, angularLib.angularMod.angularNs.IPromise[_]],
+    forwardCount: scala.Double,
+    lockAll: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
+    selections: IQFieldSelections,
+    stateName: java.lang.String,
+    unlockAll: js.Function0[angularLib.angularMod.angularNs.IPromise[_]]
+  ): IQSelectionState = {
+    val __obj = js.Dynamic.literal(backCount = backCount, clearAll = clearAll, forwardCount = forwardCount, lockAll = lockAll, selections = selections, stateName = stateName, unlockAll = unlockAll)
+  
+    __obj.asInstanceOf[IQSelectionState]
+  }
+}
+

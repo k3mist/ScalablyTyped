@@ -15,3 +15,20 @@ trait Logger extends js.Object {
   def log(level: scala.Double, obj: java.lang.String): scala.Unit
 }
 
+object Logger {
+  @scala.inline
+  def apply(
+    DEBUG: scala.Double,
+    ERROR: scala.Double,
+    INFO: scala.Double,
+    WARN: scala.Double,
+    level: scala.Double,
+    log: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    methodMap: org.scalablytyped.runtime.NumberDictionary[java.lang.String]
+  ): Logger = {
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, WARN = WARN, level = level, log = log, methodMap = methodMap)
+  
+    __obj.asInstanceOf[Logger]
+  }
+}
+

@@ -26,3 +26,12 @@ trait TableCell extends js.Object {
   var start: scala.Double
 }
 
+object TableCell {
+  @scala.inline
+  def apply(interval: Interval, length: scala.Double, start: scala.Double): TableCell = {
+    val __obj = js.Dynamic.literal(interval = interval, length = length, start = start)
+  
+    __obj.asInstanceOf[TableCell]
+  }
+}
+

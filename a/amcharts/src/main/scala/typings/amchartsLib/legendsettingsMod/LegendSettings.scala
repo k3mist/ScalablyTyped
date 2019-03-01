@@ -115,3 +115,38 @@ trait LegendSettings extends js.Object {
   var verticalGap: scala.Double
 }
 
+object LegendSettings {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    equalWidths: scala.Boolean,
+    horizontalGap: scala.Double,
+    labelText: java.lang.String,
+    marginBottom: scala.Double,
+    marginTop: scala.Double,
+    markerBorderAlpha: scala.Double,
+    markerBorderColor: java.lang.String,
+    markerBorderThickness: scala.Double,
+    markerDisabledColor: java.lang.String,
+    markerLabelGap: scala.Double,
+    markerSize: scala.Double,
+    markerType: java.lang.String,
+    reversedOrder: scala.Boolean,
+    rollOverColor: java.lang.String,
+    rollOverGraphAlpha: scala.Double,
+    switchColor: java.lang.String,
+    switchType: java.lang.String,
+    switchable: scala.Boolean,
+    textClickEnabled: scala.Boolean,
+    useMarkerColorForLabels: scala.Boolean,
+    valueTextComparing: java.lang.String,
+    valueTextRegular: java.lang.String,
+    valueWidth: scala.Double,
+    verticalGap: scala.Double
+  ): LegendSettings = {
+    val __obj = js.Dynamic.literal(align = align, equalWidths = equalWidths, horizontalGap = horizontalGap, labelText = labelText, marginBottom = marginBottom, marginTop = marginTop, markerBorderAlpha = markerBorderAlpha, markerBorderColor = markerBorderColor, markerBorderThickness = markerBorderThickness, markerDisabledColor = markerDisabledColor, markerLabelGap = markerLabelGap, markerSize = markerSize, markerType = markerType, reversedOrder = reversedOrder, rollOverColor = rollOverColor, rollOverGraphAlpha = rollOverGraphAlpha, switchColor = switchColor, switchType = switchType, switchable = switchable, textClickEnabled = textClickEnabled, useMarkerColorForLabels = useMarkerColorForLabels, valueTextComparing = valueTextComparing, valueTextRegular = valueTextRegular, valueWidth = valueWidth, verticalGap = verticalGap)
+  
+    __obj.asInstanceOf[LegendSettings]
+  }
+}
+

@@ -9,3 +9,15 @@ trait HelmetDatum extends js.Object {
   def toComponent(): reactLib.reactMod.Component[_, js.Object, _]
 }
 
+object HelmetDatum {
+  @scala.inline
+  def apply(
+    toComponent: js.Function0[reactLib.reactMod.Component[_, js.Object, _]],
+    toString: js.Function0[java.lang.String]
+  ): HelmetDatum = {
+    val __obj = js.Dynamic.literal(toComponent = toComponent, toString = toString)
+  
+    __obj.asInstanceOf[HelmetDatum]
+  }
+}
+

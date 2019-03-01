@@ -13,3 +13,17 @@ trait PrinterInfo extends js.Object {
   var status: scala.Double
 }
 
+object PrinterInfo {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    isDefault: scala.Boolean,
+    name: java.lang.String,
+    status: scala.Double
+  ): PrinterInfo = {
+    val __obj = js.Dynamic.literal(description = description, isDefault = isDefault, name = name, status = status)
+  
+    __obj.asInstanceOf[PrinterInfo]
+  }
+}
+

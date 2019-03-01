@@ -21,3 +21,17 @@ trait FillGradientPath extends Fill {
   var `type`: exceljsLib.exceljsLibStrings.gradient
 }
 
+object FillGradientPath {
+  @scala.inline
+  def apply(
+    center: exceljsLib.Anon_Left,
+    gradient: exceljsLib.exceljsLibStrings.path,
+    stops: js.Array[GradientStop],
+    `type`: exceljsLib.exceljsLibStrings.gradient
+  ): FillGradientPath = {
+    val __obj = js.Dynamic.literal(center = center, gradient = gradient, stops = stops, `type` = `type`)
+  
+    __obj.asInstanceOf[FillGradientPath]
+  }
+}
+

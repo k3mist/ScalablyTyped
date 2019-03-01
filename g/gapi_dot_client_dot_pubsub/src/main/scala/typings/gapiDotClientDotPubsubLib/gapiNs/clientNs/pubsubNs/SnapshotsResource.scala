@@ -29,3 +29,25 @@ trait SnapshotsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotPubsubLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object SnapshotsResource {
+  @scala.inline
+  def apply(
+    getIamPolicy: js.Function1[
+      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotPubsubLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): SnapshotsResource = {
+    val __obj = js.Dynamic.literal(getIamPolicy = getIamPolicy, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[SnapshotsResource]
+  }
+}
+

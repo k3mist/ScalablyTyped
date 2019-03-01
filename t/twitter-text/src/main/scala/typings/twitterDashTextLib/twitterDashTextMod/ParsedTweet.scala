@@ -15,3 +15,20 @@ trait ParsedTweet extends js.Object {
   var weightedLength: scala.Double
 }
 
+object ParsedTweet {
+  @scala.inline
+  def apply(
+    displayRangeEnd: scala.Double,
+    displayRangeStart: scala.Double,
+    permillage: scala.Double,
+    valid: scala.Boolean,
+    validRangeEnd: scala.Double,
+    validRangeStart: scala.Double,
+    weightedLength: scala.Double
+  ): ParsedTweet = {
+    val __obj = js.Dynamic.literal(displayRangeEnd = displayRangeEnd, displayRangeStart = displayRangeStart, permillage = permillage, valid = valid, validRangeEnd = validRangeEnd, validRangeStart = validRangeStart, weightedLength = weightedLength)
+  
+    __obj.asInstanceOf[ParsedTweet]
+  }
+}
+

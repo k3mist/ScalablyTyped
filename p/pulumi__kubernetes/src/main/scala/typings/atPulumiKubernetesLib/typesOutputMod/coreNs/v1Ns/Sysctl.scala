@@ -19,3 +19,12 @@ trait Sysctl extends js.Object {
   val value: java.lang.String
 }
 
+object Sysctl {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): Sysctl = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[Sysctl]
+  }
+}
+

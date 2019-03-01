@@ -10,3 +10,12 @@ trait IKeepResponse extends js.Object {
   var querystring: java.lang.String
 }
 
+object IKeepResponse {
+  @scala.inline
+  def apply(keptParams: js.Object, querystring: java.lang.String): IKeepResponse = {
+    val __obj = js.Dynamic.literal(keptParams = keptParams, querystring = querystring)
+  
+    __obj.asInstanceOf[IKeepResponse]
+  }
+}
+

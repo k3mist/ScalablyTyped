@@ -21,3 +21,18 @@ trait JobTaskReleaseHoldParams
   var jobId: scala.Double
 }
 
+object JobTaskReleaseHoldParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    holdId: scala.Double,
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): JobTaskReleaseHoldParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, holdId = holdId, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[JobTaskReleaseHoldParams]
+  }
+}
+

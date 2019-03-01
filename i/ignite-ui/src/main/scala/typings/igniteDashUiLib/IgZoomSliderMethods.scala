@@ -17,3 +17,16 @@ trait IgZoomSliderMethods extends js.Object {
   def notifySizeChanged(): scala.Unit
 }
 
+object IgZoomSliderMethods {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    notifySizeChanged: js.Function0[scala.Unit]
+  ): IgZoomSliderMethods = {
+    val __obj = js.Dynamic.literal(destroy = destroy, flush = flush, notifySizeChanged = notifySizeChanged)
+  
+    __obj.asInstanceOf[IgZoomSliderMethods]
+  }
+}
+

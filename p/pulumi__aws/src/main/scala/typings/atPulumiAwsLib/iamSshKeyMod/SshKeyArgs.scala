@@ -24,3 +24,17 @@ trait SshKeyArgs extends js.Object {
   val username: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object SshKeyArgs {
+  @scala.inline
+  def apply(
+    encoding: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    publicKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    username: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): SshKeyArgs = {
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SshKeyArgs]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_AppMode extends js.Object {
   var tablet: js.Any
 }
 
+object Anon_AppMode {
+  @scala.inline
+  def apply(
+    appMode: scala.Boolean,
+    browser: java.lang.String,
+    device: java.lang.String,
+    flatVersion: scala.Double,
+    majorVersion: java.lang.String,
+    minorVersion: java.lang.String,
+    name: java.lang.String,
+    tablet: js.Any
+  ): Anon_AppMode = {
+    val __obj = js.Dynamic.literal(appMode = appMode, browser = browser, device = device, flatVersion = flatVersion, majorVersion = majorVersion, minorVersion = minorVersion, name = name, tablet = tablet)
+  
+    __obj.asInstanceOf[Anon_AppMode]
+  }
+}
+

@@ -24,3 +24,30 @@ trait XText extends XSimpleText {
   def removeTextContent(xContent: XTextContent): scala.Unit
 }
 
+object XText {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    createTextCursor: js.Function0[XTextCursor],
+    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
+    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
+    insertTextContent: js.Function3[XTextRange, XTextContent, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextContent: js.Function1[XTextContent, scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XText = {
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, queryInterface = queryInterface, release = release, removeTextContent = removeTextContent, setString = setString)
+  
+    __obj.asInstanceOf[XText]
+  }
+}
+

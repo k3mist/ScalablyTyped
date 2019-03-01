@@ -15,3 +15,21 @@ trait LogsResource extends js.Object {
   def list(request: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListLogsResponse]
 }
 
+object LogsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLogsResponse]
+    ]
+  ): LogsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, list = list)
+  
+    __obj.asInstanceOf[LogsResource]
+  }
+}
+

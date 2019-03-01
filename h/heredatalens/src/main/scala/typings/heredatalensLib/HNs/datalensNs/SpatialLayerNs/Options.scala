@@ -33,3 +33,25 @@ trait Options extends js.Object {
   def rowToStyle(row: Row, z: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, styleState: StyleState): js.Any
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    defaultStyle: js.Function2[heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, StyleState, js.Any],
+    featureToSpatialId: js.Function1[Feature, java.lang.String],
+    rowToSpatialId: js.Function1[Row, java.lang.String],
+    rowToStyle: js.Function3[Row, heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, StyleState, js.Any],
+    transformFeature: transformFeature,
+    dataToRows: js.Function4[
+      /* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, 
+      /* x */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X, 
+      /* y */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y, 
+      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      js.Array[Row]
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(defaultStyle = defaultStyle, featureToSpatialId = featureToSpatialId, rowToSpatialId = rowToSpatialId, rowToStyle = rowToStyle, transformFeature = transformFeature)
+    if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
+    __obj.asInstanceOf[Options]
+  }
+}
+

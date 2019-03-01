@@ -35,3 +35,19 @@ trait XFileIdentifierConverter
   def getSystemPathFromFileURL(URL: java.lang.String): java.lang.String
 }
 
+object XFileIdentifierConverter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getFileProviderLocality: js.Function1[java.lang.String, scala.Double],
+    getFileURLFromSystemPath: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    getSystemPathFromFileURL: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFileIdentifierConverter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getFileProviderLocality = getFileProviderLocality, getFileURLFromSystemPath = getFileURLFromSystemPath, getSystemPathFromFileURL = getSystemPathFromFileURL, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFileIdentifierConverter]
+  }
+}
+

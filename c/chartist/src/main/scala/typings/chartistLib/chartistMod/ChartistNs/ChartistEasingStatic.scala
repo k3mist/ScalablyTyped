@@ -32,3 +32,37 @@ trait ChartistEasingStatic extends js.Object {
   var easeOutSine: IChartistEasingDefinition
 }
 
+object ChartistEasingStatic {
+  @scala.inline
+  def apply(
+    easeInBack: IChartistEasingDefinition,
+    easeInCirc: IChartistEasingDefinition,
+    easeInCubic: IChartistEasingDefinition,
+    easeInExpo: IChartistEasingDefinition,
+    easeInOutBack: IChartistEasingDefinition,
+    easeInOutCirc: IChartistEasingDefinition,
+    easeInOutCubic: IChartistEasingDefinition,
+    easeInOutExpo: IChartistEasingDefinition,
+    easeInOutQuad: IChartistEasingDefinition,
+    easeInOutQuart: IChartistEasingDefinition,
+    easeInOutQuint: IChartistEasingDefinition,
+    easeInOutSine: IChartistEasingDefinition,
+    easeInQuad: IChartistEasingDefinition,
+    easeInQuart: IChartistEasingDefinition,
+    easeInQuint: IChartistEasingDefinition,
+    easeInSine: IChartistEasingDefinition,
+    easeOutBack: IChartistEasingDefinition,
+    easeOutCirc: IChartistEasingDefinition,
+    easeOutCubic: IChartistEasingDefinition,
+    easeOutExpo: IChartistEasingDefinition,
+    easeOutQuad: IChartistEasingDefinition,
+    easeOutQuart: IChartistEasingDefinition,
+    easeOutQuint: IChartistEasingDefinition,
+    easeOutSine: IChartistEasingDefinition
+  ): ChartistEasingStatic = {
+    val __obj = js.Dynamic.literal(easeInBack = easeInBack, easeInCirc = easeInCirc, easeInCubic = easeInCubic, easeInExpo = easeInExpo, easeInOutBack = easeInOutBack, easeInOutCirc = easeInOutCirc, easeInOutCubic = easeInOutCubic, easeInOutExpo = easeInOutExpo, easeInOutQuad = easeInOutQuad, easeInOutQuart = easeInOutQuart, easeInOutQuint = easeInOutQuint, easeInOutSine = easeInOutSine, easeInQuad = easeInQuad, easeInQuart = easeInQuart, easeInQuint = easeInQuint, easeInSine = easeInSine, easeOutBack = easeOutBack, easeOutCirc = easeOutCirc, easeOutCubic = easeOutCubic, easeOutExpo = easeOutExpo, easeOutQuad = easeOutQuad, easeOutQuart = easeOutQuart, easeOutQuint = easeOutQuint, easeOutSine = easeOutSine)
+  
+    __obj.asInstanceOf[ChartistEasingStatic]
+  }
+}
+

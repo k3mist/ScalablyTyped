@@ -20,3 +20,25 @@ trait BuildServer extends js.Object {
   var version: scala.Double
 }
 
+object BuildServer {
+  @scala.inline
+  def apply(
+    agents: js.Array[BuildAgentReference],
+    controller: XamlBuildControllerReference,
+    id: scala.Double,
+    isVirtual: scala.Boolean,
+    messageQueueUrl: java.lang.String,
+    name: java.lang.String,
+    requireClientCertificates: scala.Boolean,
+    status: ServiceHostStatus,
+    statusChangedDate: stdLib.Date,
+    uri: java.lang.String,
+    url: java.lang.String,
+    version: scala.Double
+  ): BuildServer = {
+    val __obj = js.Dynamic.literal(agents = agents, controller = controller, id = id, isVirtual = isVirtual, messageQueueUrl = messageQueueUrl, name = name, requireClientCertificates = requireClientCertificates, status = status, statusChangedDate = statusChangedDate, uri = uri, url = url, version = version)
+  
+    __obj.asInstanceOf[BuildServer]
+  }
+}
+

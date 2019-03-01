@@ -25,3 +25,30 @@ trait AntdTreeNodeAttribute extends js.Object {
   var title: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object AntdTreeNodeAttribute {
+  @scala.inline
+  def apply(
+    checked: scala.Boolean,
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    className: java.lang.String,
+    disableCheckbox: scala.Boolean,
+    disabled: scala.Boolean,
+    dragOver: scala.Boolean,
+    dragOverGapBottom: scala.Boolean,
+    dragOverGapTop: scala.Boolean,
+    eventKey: java.lang.String,
+    expanded: scala.Boolean,
+    halfChecked: scala.Boolean,
+    isLeaf: scala.Boolean,
+    pos: java.lang.String,
+    prefixCls: java.lang.String,
+    selectable: scala.Boolean,
+    selected: scala.Boolean,
+    title: reactLib.reactMod.ReactNs.ReactNode
+  ): AntdTreeNodeAttribute = {
+    val __obj = js.Dynamic.literal(checked = checked, children = children.asInstanceOf[js.Any], className = className, disableCheckbox = disableCheckbox, disabled = disabled, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, isLeaf = isLeaf, pos = pos, prefixCls = prefixCls, selectable = selectable, selected = selected, title = title.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AntdTreeNodeAttribute]
+  }
+}
+

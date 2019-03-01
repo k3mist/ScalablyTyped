@@ -13,3 +13,18 @@ trait CloudFormationCustomResourceResponseCommon extends js.Object {
   var StackId: java.lang.String
 }
 
+object CloudFormationCustomResourceResponseCommon {
+  @scala.inline
+  def apply(
+    LogicalResourceId: java.lang.String,
+    PhysicalResourceId: java.lang.String,
+    RequestId: java.lang.String,
+    StackId: java.lang.String,
+    Data: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): CloudFormationCustomResourceResponseCommon = {
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, RequestId = RequestId, StackId = StackId)
+    if (Data != null) __obj.updateDynamic("Data")(Data)
+    __obj.asInstanceOf[CloudFormationCustomResourceResponseCommon]
+  }
+}
+

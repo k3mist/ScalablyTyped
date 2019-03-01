@@ -70,3 +70,35 @@ trait XSlideSorterBase
   var TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
 }
 
+object XSlideSorterBase {
+  @scala.inline
+  def apply(
+    BackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CurrentPage: XDrawPage,
+    DocumentSlides: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    HighlightColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    IsCenterSelection: scala.Boolean,
+    IsHighlightCurrentSlide: scala.Boolean,
+    IsOrientationVertical: scala.Boolean,
+    IsShowFocus: scala.Boolean,
+    IsShowSelection: scala.Boolean,
+    IsSmoothScrolling: scala.Boolean,
+    IsSuspendPreviewUpdatesDuringFullScreenPresentation: scala.Boolean,
+    IsUIReadOnly: scala.Boolean,
+    ResourceId: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.frameworkNs.XResourceId,
+    SelectionColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    acquire: js.Function0[scala.Unit],
+    getCurrentPage: js.Function0[XDrawPage],
+    getResourceId: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.frameworkNs.XResourceId],
+    isAnchorOnly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCurrentPage: js.Function1[XDrawPage, scala.Unit]
+  ): XSlideSorterBase = {
+    val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor, CurrentPage = CurrentPage, DocumentSlides = DocumentSlides, HighlightColor = HighlightColor, IsCenterSelection = IsCenterSelection, IsHighlightCurrentSlide = IsHighlightCurrentSlide, IsOrientationVertical = IsOrientationVertical, IsShowFocus = IsShowFocus, IsShowSelection = IsShowSelection, IsSmoothScrolling = IsSmoothScrolling, IsSuspendPreviewUpdatesDuringFullScreenPresentation = IsSuspendPreviewUpdatesDuringFullScreenPresentation, IsUIReadOnly = IsUIReadOnly, ResourceId = ResourceId, SelectionColor = SelectionColor, TextColor = TextColor, acquire = acquire, getCurrentPage = getCurrentPage, getResourceId = getResourceId, isAnchorOnly = isAnchorOnly, queryInterface = queryInterface, release = release, setCurrentPage = setCurrentPage)
+  
+    __obj.asInstanceOf[XSlideSorterBase]
+  }
+}
+

@@ -16,3 +16,17 @@ trait $breadcrumbService extends js.Object {
   def getStatesChain(): js.Array[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState]
 }
 
+object $breadcrumbService {
+  @scala.inline
+  def apply(
+    getLastStep: js.Function0[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState],
+    getStatesChain: js.Function0[
+      js.Array[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState]
+    ]
+  ): $breadcrumbService = {
+    val __obj = js.Dynamic.literal(getLastStep = getLastStep, getStatesChain = getStatesChain)
+  
+    __obj.asInstanceOf[$breadcrumbService]
+  }
+}
+

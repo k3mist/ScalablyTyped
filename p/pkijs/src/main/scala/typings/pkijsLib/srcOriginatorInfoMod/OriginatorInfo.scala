@@ -13,3 +13,18 @@ trait OriginatorInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object OriginatorInfo {
+  @scala.inline
+  def apply(
+    certs: pkijsLib.srcCertificateSetMod.default,
+    crls: pkijsLib.srcRevocationInfoChoicesMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OriginatorInfo = {
+    val __obj = js.Dynamic.literal(certs = certs, crls = crls, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[OriginatorInfo]
+  }
+}
+

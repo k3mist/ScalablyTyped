@@ -15,3 +15,19 @@ trait SenderSignatureBase extends js.Object {
   var ReplyToEmailAddress: java.lang.String
 }
 
+object SenderSignatureBase {
+  @scala.inline
+  def apply(
+    Confirmed: scala.Boolean,
+    Domain: java.lang.String,
+    EmailAddress: java.lang.String,
+    ID: scala.Double,
+    Name: java.lang.String,
+    ReplyToEmailAddress: java.lang.String
+  ): SenderSignatureBase = {
+    val __obj = js.Dynamic.literal(Confirmed = Confirmed, Domain = Domain, EmailAddress = EmailAddress, ID = ID, Name = Name, ReplyToEmailAddress = ReplyToEmailAddress)
+  
+    __obj.asInstanceOf[SenderSignatureBase]
+  }
+}
+

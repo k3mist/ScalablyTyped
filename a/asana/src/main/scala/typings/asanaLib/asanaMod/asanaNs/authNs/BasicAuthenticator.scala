@@ -16,3 +16,16 @@ trait BasicAuthenticator extends Authenticator {
   def authenticateRequest(request: BasicAuthenticatorRequest): BasicAuthenticatorRequest
 }
 
+object BasicAuthenticator {
+  @scala.inline
+  def apply(
+    authenticateRequest: js.Function1[BasicAuthenticatorRequest, BasicAuthenticatorRequest],
+    establishCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
+    refreshCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Boolean]]
+  ): BasicAuthenticator = {
+    val __obj = js.Dynamic.literal(authenticateRequest = authenticateRequest, establishCredentials = establishCredentials, refreshCredentials = refreshCredentials)
+  
+    __obj.asInstanceOf[BasicAuthenticator]
+  }
+}
+

@@ -11,3 +11,12 @@ trait AdvancedSigningSchemePSS extends AdvancedSigningScheme {
   var scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pss
 }
 
+object AdvancedSigningSchemePSS {
+  @scala.inline
+  def apply(hash: HashingAlgorithm, saltLength: scala.Double, scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pss): AdvancedSigningSchemePSS = {
+    val __obj = js.Dynamic.literal(hash = hash, saltLength = saltLength, scheme = scheme)
+  
+    __obj.asInstanceOf[AdvancedSigningSchemePSS]
+  }
+}
+

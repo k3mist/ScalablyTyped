@@ -45,3 +45,30 @@ trait AccountPasswordPolicyArgs extends js.Object {
   val requireUppercaseCharacters: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object AccountPasswordPolicyArgs {
+  @scala.inline
+  def apply(
+    allowUsersToChangePassword: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    hardExpiry: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    maxPasswordAge: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    minimumPasswordLength: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    passwordReusePrevention: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    requireLowercaseCharacters: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    requireNumbers: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    requireSymbols: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    requireUppercaseCharacters: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): AccountPasswordPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    if (allowUsersToChangePassword != null) __obj.updateDynamic("allowUsersToChangePassword")(allowUsersToChangePassword.asInstanceOf[js.Any])
+    if (hardExpiry != null) __obj.updateDynamic("hardExpiry")(hardExpiry.asInstanceOf[js.Any])
+    if (maxPasswordAge != null) __obj.updateDynamic("maxPasswordAge")(maxPasswordAge.asInstanceOf[js.Any])
+    if (minimumPasswordLength != null) __obj.updateDynamic("minimumPasswordLength")(minimumPasswordLength.asInstanceOf[js.Any])
+    if (passwordReusePrevention != null) __obj.updateDynamic("passwordReusePrevention")(passwordReusePrevention.asInstanceOf[js.Any])
+    if (requireLowercaseCharacters != null) __obj.updateDynamic("requireLowercaseCharacters")(requireLowercaseCharacters.asInstanceOf[js.Any])
+    if (requireNumbers != null) __obj.updateDynamic("requireNumbers")(requireNumbers.asInstanceOf[js.Any])
+    if (requireSymbols != null) __obj.updateDynamic("requireSymbols")(requireSymbols.asInstanceOf[js.Any])
+    if (requireUppercaseCharacters != null) __obj.updateDynamic("requireUppercaseCharacters")(requireUppercaseCharacters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountPasswordPolicyArgs]
+  }
+}
+

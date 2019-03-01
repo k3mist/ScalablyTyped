@@ -19,3 +19,27 @@ trait Anon_CanPurchaseUploadAllowance extends js.Object {
   var sponsoredGroupRole: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.SponsoredGroupRole] = js.undefined
 }
 
+object Anon_CanPurchaseUploadAllowance {
+  @scala.inline
+  def apply(
+    canPurchaseUploadAllowance: scala.Boolean,
+    currentTime: scala.Double,
+    premium: scala.Boolean,
+    premiumCancellationPending: scala.Boolean,
+    premiumExtendable: scala.Boolean,
+    premiumPending: scala.Boolean,
+    premiumRecurring: scala.Boolean,
+    premiumExpirationDate: scala.Int | scala.Double = null,
+    premiumUpgradable: js.UndefOr[scala.Boolean] = js.undefined,
+    sponsoredGroupName: java.lang.String = null,
+    sponsoredGroupRole: evernoteLib.evernoteMod.EvernoteNs.SponsoredGroupRole = null
+  ): Anon_CanPurchaseUploadAllowance = {
+    val __obj = js.Dynamic.literal(canPurchaseUploadAllowance = canPurchaseUploadAllowance, currentTime = currentTime, premium = premium, premiumCancellationPending = premiumCancellationPending, premiumExtendable = premiumExtendable, premiumPending = premiumPending, premiumRecurring = premiumRecurring)
+    if (premiumExpirationDate != null) __obj.updateDynamic("premiumExpirationDate")(premiumExpirationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(premiumUpgradable)) __obj.updateDynamic("premiumUpgradable")(premiumUpgradable)
+    if (sponsoredGroupName != null) __obj.updateDynamic("sponsoredGroupName")(sponsoredGroupName)
+    if (sponsoredGroupRole != null) __obj.updateDynamic("sponsoredGroupRole")(sponsoredGroupRole)
+    __obj.asInstanceOf[Anon_CanPurchaseUploadAllowance]
+  }
+}
+

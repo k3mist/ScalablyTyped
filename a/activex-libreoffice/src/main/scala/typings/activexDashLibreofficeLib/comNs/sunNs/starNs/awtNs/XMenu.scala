@@ -165,3 +165,43 @@ trait XMenu
   def setTipHelpText(nItemId: scala.Double, sTipHelpText: java.lang.String): scala.Unit
 }
 
+object XMenu {
+  @scala.inline
+  def apply(
+    ItemCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addMenuListener: js.Function1[XMenuListener, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    enableAutoMnemonics: js.Function1[scala.Boolean, scala.Unit],
+    enableItem: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    getCommand: js.Function1[scala.Double, java.lang.String],
+    getHelpCommand: js.Function1[scala.Double, java.lang.String],
+    getHelpText: js.Function1[scala.Double, java.lang.String],
+    getItemCount: js.Function0[scala.Double],
+    getItemId: js.Function1[scala.Double, scala.Double],
+    getItemPos: js.Function1[scala.Double, scala.Double],
+    getItemText: js.Function1[scala.Double, java.lang.String],
+    getItemType: js.Function1[scala.Double, MenuItemType],
+    getPopupMenu: js.Function1[scala.Double, XPopupMenu],
+    getTipHelpText: js.Function1[scala.Double, java.lang.String],
+    hideDisabledEntries: js.Function1[scala.Boolean, scala.Unit],
+    insertItem: js.Function4[scala.Double, java.lang.String, scala.Double, scala.Double, scala.Unit],
+    isItemEnabled: js.Function1[scala.Double, scala.Boolean],
+    isPopupMenu: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeItem: js.Function2[scala.Double, scala.Double, scala.Unit],
+    removeMenuListener: js.Function1[XMenuListener, scala.Unit],
+    setCommand: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setHelpCommand: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setHelpText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setPopupMenu: js.Function2[scala.Double, XPopupMenu, scala.Unit],
+    setTipHelpText: js.Function2[scala.Double, java.lang.String, scala.Unit]
+  ): XMenu = {
+    val __obj = js.Dynamic.literal(ItemCount = ItemCount, acquire = acquire, addMenuListener = addMenuListener, clear = clear, enableAutoMnemonics = enableAutoMnemonics, enableItem = enableItem, getCommand = getCommand, getHelpCommand = getHelpCommand, getHelpText = getHelpText, getItemCount = getItemCount, getItemId = getItemId, getItemPos = getItemPos, getItemText = getItemText, getItemType = getItemType, getPopupMenu = getPopupMenu, getTipHelpText = getTipHelpText, hideDisabledEntries = hideDisabledEntries, insertItem = insertItem, isItemEnabled = isItemEnabled, isPopupMenu = isPopupMenu, queryInterface = queryInterface, release = release, removeItem = removeItem, removeMenuListener = removeMenuListener, setCommand = setCommand, setHelpCommand = setHelpCommand, setHelpText = setHelpText, setItemText = setItemText, setPopupMenu = setPopupMenu, setTipHelpText = setTipHelpText)
+  
+    __obj.asInstanceOf[XMenu]
+  }
+}
+

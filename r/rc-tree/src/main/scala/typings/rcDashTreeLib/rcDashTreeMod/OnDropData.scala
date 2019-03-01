@@ -14,3 +14,19 @@ trait OnDropData extends js.Object {
   var node: InternalTreeNode
 }
 
+object OnDropData {
+  @scala.inline
+  def apply(
+    dragNode: InternalTreeNode,
+    dragNodesKeys: js.Array[java.lang.String],
+    dropPosition: scala.Double,
+    event: reactLib.Event,
+    node: InternalTreeNode,
+    dropToGap: js.UndefOr[scala.Boolean] = js.undefined
+  ): OnDropData = {
+    val __obj = js.Dynamic.literal(dragNode = dragNode, dragNodesKeys = dragNodesKeys, dropPosition = dropPosition, event = event, node = node)
+    if (!js.isUndefined(dropToGap)) __obj.updateDynamic("dropToGap")(dropToGap)
+    __obj.asInstanceOf[OnDropData]
+  }
+}
+

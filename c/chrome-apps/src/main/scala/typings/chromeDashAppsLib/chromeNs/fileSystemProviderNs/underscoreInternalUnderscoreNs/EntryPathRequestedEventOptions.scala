@@ -14,3 +14,16 @@ trait EntryPathRequestedEventOptions extends RequestedEventOptions {
   var entryPath: java.lang.String
 }
 
+object EntryPathRequestedEventOptions {
+  @scala.inline
+  def apply(
+    entryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): EntryPathRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[EntryPathRequestedEventOptions]
+  }
+}
+

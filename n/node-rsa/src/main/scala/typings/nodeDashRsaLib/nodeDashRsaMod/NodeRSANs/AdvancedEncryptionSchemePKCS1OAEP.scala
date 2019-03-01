@@ -21,3 +21,21 @@ trait AdvancedEncryptionSchemePKCS1OAEP extends AdvancedEncryptionScheme {
   var scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pkcs1_oaep
 }
 
+object AdvancedEncryptionSchemePKCS1OAEP {
+  @scala.inline
+  def apply(
+    hash: HashingAlgorithm,
+    scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pkcs1_oaep,
+    mgf: js.Function3[
+      /* data */ nodeLib.Buffer, 
+      /* length */ scala.Double, 
+      /* hash */ HashingAlgorithm, 
+      nodeLib.Buffer
+    ] = null
+  ): AdvancedEncryptionSchemePKCS1OAEP = {
+    val __obj = js.Dynamic.literal(hash = hash, scheme = scheme)
+    if (mgf != null) __obj.updateDynamic("mgf")(mgf)
+    __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
+  }
+}
+

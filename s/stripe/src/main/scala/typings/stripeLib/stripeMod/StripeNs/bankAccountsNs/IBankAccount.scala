@@ -19,3 +19,32 @@ trait IBankAccount extends IBankAccountHash {
   var metadata: stripeLib.stripeMod.StripeNs.IMetadata
 }
 
+object IBankAccount {
+  @scala.inline
+  def apply(
+    bank_name: java.lang.String,
+    country: java.lang.String,
+    currency: java.lang.String,
+    fingerprint: java.lang.String,
+    id: java.lang.String,
+    last4: java.lang.String,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.bank_account,
+    routing_number: java.lang.String,
+    status: stripeLib.stripeLibStrings.`new` | stripeLib.stripeLibStrings.validated | stripeLib.stripeLibStrings.verified | stripeLib.stripeLibStrings.verification_failed | stripeLib.stripeLibStrings.errored,
+    account: java.lang.String = null,
+    account_holder_name: java.lang.String = null,
+    account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
+    customer: java.lang.String = null,
+    default_for_currency: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBankAccount = {
+    val __obj = js.Dynamic.literal(bank_name = bank_name, country = country, currency = currency, fingerprint = fingerprint, id = id, last4 = last4, metadata = metadata, `object` = `object`, routing_number = routing_number, status = status.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
+    __obj.asInstanceOf[IBankAccount]
+  }
+}
+

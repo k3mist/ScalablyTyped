@@ -42,3 +42,46 @@ trait PluginsCollection extends js.Object {
   var trimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
 }
 
+object PluginsCollection {
+  @scala.inline
+  def apply(
+    autoColumnSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoColumnSize,
+    autoRowSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoRowSize,
+    autofill: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Autofill,
+    bindRowsWithHeaders: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.BindRowsWithHeaders,
+    collapsibleColumns: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CollapsibleColumns,
+    columnSorting: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSorting,
+    columnSummary: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSummary,
+    comments: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Comments,
+    contextMenu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu,
+    copyPaste: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CopyPaste,
+    dragToScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DragToScroll,
+    dropdownMenu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu,
+    exportFile: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ExportFile,
+    filters: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Filters,
+    formulas: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Formulas,
+    ganttChart: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.GanttChart,
+    headerTooltips: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HeaderTooltips,
+    hiddenColumns: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HiddenColumns,
+    hiddenRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HiddenRows,
+    manualColumnFreeze: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnFreeze,
+    manualColumnMove: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnMove,
+    manualColumnResize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnResize,
+    manualRowMove: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualRowMove,
+    manualRowResize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualRowResize,
+    mergeCells: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCells,
+    multiColumnSorting: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MultiColumnSorting,
+    multipleSelectionHandles: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MultipleSelectionHandles,
+    nestedHeaders: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.NestedHeaders,
+    nestedRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.NestedRows,
+    observeChanges: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ObserveChanges,
+    search: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Search,
+    touchScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll,
+    trimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
+  ): PluginsCollection = {
+    val __obj = js.Dynamic.literal(autoColumnSize = autoColumnSize, autoRowSize = autoRowSize, autofill = autofill, bindRowsWithHeaders = bindRowsWithHeaders, collapsibleColumns = collapsibleColumns, columnSorting = columnSorting, columnSummary = columnSummary, comments = comments, contextMenu = contextMenu, copyPaste = copyPaste, dragToScroll = dragToScroll, dropdownMenu = dropdownMenu, exportFile = exportFile, filters = filters, formulas = formulas, ganttChart = ganttChart, headerTooltips = headerTooltips, hiddenColumns = hiddenColumns, hiddenRows = hiddenRows, manualColumnFreeze = manualColumnFreeze, manualColumnMove = manualColumnMove, manualColumnResize = manualColumnResize, manualRowMove = manualRowMove, manualRowResize = manualRowResize, mergeCells = mergeCells, multiColumnSorting = multiColumnSorting, multipleSelectionHandles = multipleSelectionHandles, nestedHeaders = nestedHeaders, nestedRows = nestedRows, observeChanges = observeChanges, search = search, touchScroll = touchScroll, trimRows = trimRows)
+  
+    __obj.asInstanceOf[PluginsCollection]
+  }
+}
+

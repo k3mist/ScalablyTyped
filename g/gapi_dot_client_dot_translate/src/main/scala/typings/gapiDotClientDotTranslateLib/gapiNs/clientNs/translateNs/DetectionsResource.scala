@@ -12,3 +12,21 @@ trait DetectionsResource extends js.Object {
   def list(request: gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[DetectionsListResponse]
 }
 
+object DetectionsResource {
+  @scala.inline
+  def apply(
+    detect: js.Function1[
+      gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DetectionsListResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DetectionsListResponse]
+    ]
+  ): DetectionsResource = {
+    val __obj = js.Dynamic.literal(detect = detect, list = list)
+  
+    __obj.asInstanceOf[DetectionsResource]
+  }
+}
+

@@ -12,3 +12,17 @@ trait BucketItemStat extends js.Object {
   var size: scala.Double
 }
 
+object BucketItemStat {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    lastModified: stdLib.Date,
+    metaData: ItemBucketMetadata,
+    size: scala.Double
+  ): BucketItemStat = {
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, metaData = metaData, size = size)
+  
+    __obj.asInstanceOf[BucketItemStat]
+  }
+}
+

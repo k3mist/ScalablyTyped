@@ -16,3 +16,12 @@ trait ASPxClientDynamicLookUpValuesLoadedEventArgs extends ASPxClientEventArgs {
   var ParameterName: java.lang.String
 }
 
+object ASPxClientDynamicLookUpValuesLoadedEventArgs {
+  @scala.inline
+  def apply(ParameterName: java.lang.String): ASPxClientDynamicLookUpValuesLoadedEventArgs = {
+    val __obj = js.Dynamic.literal(ParameterName = ParameterName)
+  
+    __obj.asInstanceOf[ASPxClientDynamicLookUpValuesLoadedEventArgs]
+  }
+}
+

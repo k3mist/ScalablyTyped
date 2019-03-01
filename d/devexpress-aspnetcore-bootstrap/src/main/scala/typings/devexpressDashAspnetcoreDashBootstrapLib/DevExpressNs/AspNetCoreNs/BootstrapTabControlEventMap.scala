@@ -14,3 +14,20 @@ trait BootstrapTabControlEventMap extends ControlEventMap {
   var tabClick: TabControlTabClickEventArgs
 }
 
+object BootstrapTabControlEventMap {
+  @scala.inline
+  def apply(
+    activeTabChanged: TabControlTabEventArgs,
+    activeTabChanging: TabControlTabCancelEventArgs,
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    endCallback: EndCallbackEventArgs,
+    init: EventArgs,
+    tabClick: TabControlTabClickEventArgs
+  ): BootstrapTabControlEventMap = {
+    val __obj = js.Dynamic.literal(activeTabChanged = activeTabChanged, activeTabChanging = activeTabChanging, beginCallback = beginCallback, callbackError = callbackError, endCallback = endCallback, init = init, tabClick = tabClick)
+  
+    __obj.asInstanceOf[BootstrapTabControlEventMap]
+  }
+}
+

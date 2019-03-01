@@ -16,3 +16,12 @@ trait ASPxClientHtmlEditorCustomDialogCloseEventArgsBase extends ASPxClientHtmlE
   var status: js.Object
 }
 
+object ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
+  @scala.inline
+  def apply(name: java.lang.String, status: js.Object): ASPxClientHtmlEditorCustomDialogCloseEventArgsBase = {
+    val __obj = js.Dynamic.literal(name = name, status = status)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogCloseEventArgsBase]
+  }
+}
+

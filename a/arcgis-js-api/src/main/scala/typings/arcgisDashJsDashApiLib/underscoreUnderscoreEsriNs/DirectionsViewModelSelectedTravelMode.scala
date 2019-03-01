@@ -43,3 +43,21 @@ trait DirectionsViewModelSelectedTravelMode extends TravelMode {
   var timeAttributeName_DirectionsViewModelSelectedTravelMode: java.lang.String
 }
 
+object DirectionsViewModelSelectedTravelMode {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    impedanceAttributeName: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    timeAttributeName: java.lang.String
+  ): DirectionsViewModelSelectedTravelMode = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, impedanceAttributeName = impedanceAttributeName, name = name, propertyIsEnumerable = propertyIsEnumerable, timeAttributeName = timeAttributeName)
+  
+    __obj.asInstanceOf[DirectionsViewModelSelectedTravelMode]
+  }
+}
+

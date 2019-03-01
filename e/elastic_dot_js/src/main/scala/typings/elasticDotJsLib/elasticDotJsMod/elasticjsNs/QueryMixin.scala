@@ -21,3 +21,16 @@ trait QueryMixin extends js.Object {
   def toJSON(): js.Any
 }
 
+object QueryMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, QueryMixin],
+    toJSON: js.Function0[js.Any]
+  ): QueryMixin = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, toJSON = toJSON)
+  
+    __obj.asInstanceOf[QueryMixin]
+  }
+}
+

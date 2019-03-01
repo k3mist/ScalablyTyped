@@ -9,3 +9,12 @@ trait SnappyDecompressOpts extends js.Object {
   var asBuffer: scala.Boolean
 }
 
+object SnappyDecompressOpts {
+  @scala.inline
+  def apply(asBuffer: scala.Boolean): SnappyDecompressOpts = {
+    val __obj = js.Dynamic.literal(asBuffer = asBuffer)
+  
+    __obj.asInstanceOf[SnappyDecompressOpts]
+  }
+}
+

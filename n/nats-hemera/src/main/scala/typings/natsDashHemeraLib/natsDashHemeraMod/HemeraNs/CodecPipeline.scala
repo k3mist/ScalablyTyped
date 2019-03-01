@@ -12,3 +12,17 @@ trait CodecPipeline extends js.Object {
   def unshift(step: js.Any): CodecPipeline
 }
 
+object CodecPipeline {
+  @scala.inline
+  def apply(
+    add: js.Function1[js.Any, CodecPipeline],
+    reset: js.Function1[js.Any, CodecPipeline],
+    run: js.Function2[js.Any, js.Any, js.Any],
+    unshift: js.Function1[js.Any, CodecPipeline]
+  ): CodecPipeline = {
+    val __obj = js.Dynamic.literal(add = add, reset = reset, run = run, unshift = unshift)
+  
+    __obj.asInstanceOf[CodecPipeline]
+  }
+}
+

@@ -36,3 +36,20 @@ trait GroundProperties extends LoadableProperties {
   var surfaceColor: js.UndefOr[Color | js.Array[scala.Double] | java.lang.String] = js.undefined
 }
 
+object GroundProperties {
+  @scala.inline
+  def apply(
+    layers: CollectionProperties[ElevationLayerProperties] = null,
+    navigationConstraint: GroundNavigationConstraintProperties = null,
+    opacity: scala.Int | scala.Double = null,
+    surfaceColor: Color | js.Array[scala.Double] | java.lang.String = null
+  ): GroundProperties = {
+    val __obj = js.Dynamic.literal()
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (navigationConstraint != null) __obj.updateDynamic("navigationConstraint")(navigationConstraint)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (surfaceColor != null) __obj.updateDynamic("surfaceColor")(surfaceColor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroundProperties]
+  }
+}
+

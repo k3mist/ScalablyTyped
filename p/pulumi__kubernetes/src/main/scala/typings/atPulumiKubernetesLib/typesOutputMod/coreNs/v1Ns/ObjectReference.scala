@@ -50,3 +50,20 @@ trait ObjectReference extends js.Object {
   val uid: java.lang.String
 }
 
+object ObjectReference {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    fieldPath: java.lang.String,
+    kind: java.lang.String,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    resourceVersion: java.lang.String,
+    uid: java.lang.String
+  ): ObjectReference = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fieldPath = fieldPath, kind = kind, name = name, namespace = namespace, resourceVersion = resourceVersion, uid = uid)
+  
+    __obj.asInstanceOf[ObjectReference]
+  }
+}
+

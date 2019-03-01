@@ -10,3 +10,12 @@ trait Anon_ItemsReturnValueNumberStorageFile extends js.Object {
   /** The number of items returned. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumberStorageFile {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile, returnValue: scala.Double): Anon_ItemsReturnValueNumberStorageFile = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumberStorageFile]
+  }
+}
+

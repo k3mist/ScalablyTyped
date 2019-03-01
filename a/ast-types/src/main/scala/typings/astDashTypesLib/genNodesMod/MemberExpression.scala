@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.MemberExpression
 }
 
+object MemberExpression {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind,
+    property: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.MemberExpression
+  ): MemberExpression = {
+    val __obj = js.Dynamic.literal(computed = computed, `object` = `object`, property = property.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[MemberExpression]
+  }
+}
+

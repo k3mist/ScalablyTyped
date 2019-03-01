@@ -16,3 +16,19 @@ trait RefactorEditInfo extends js.Object {
   var renameLocation: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RefactorEditInfo {
+  @scala.inline
+  def apply(
+    edits: js.Array[FileTextChanges],
+    commands: js.Array[CodeActionCommand] = null,
+    renameFilename: java.lang.String = null,
+    renameLocation: scala.Int | scala.Double = null
+  ): RefactorEditInfo = {
+    val __obj = js.Dynamic.literal(edits = edits)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (renameFilename != null) __obj.updateDynamic("renameFilename")(renameFilename)
+    if (renameLocation != null) __obj.updateDynamic("renameLocation")(renameLocation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefactorEditInfo]
+  }
+}
+

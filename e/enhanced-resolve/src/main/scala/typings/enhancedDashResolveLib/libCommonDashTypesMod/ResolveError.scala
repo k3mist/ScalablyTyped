@@ -12,3 +12,17 @@ trait ResolveError
   var recursion: scala.Boolean
 }
 
+object ResolveError {
+  @scala.inline
+  def apply(
+    details: java.lang.String,
+    missing: js.Array[java.lang.String],
+    recursion: scala.Boolean,
+    stack: java.lang.String = null
+  ): ResolveError = {
+    val __obj = js.Dynamic.literal(details = details, missing = missing, recursion = recursion)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResolveError]
+  }
+}
+

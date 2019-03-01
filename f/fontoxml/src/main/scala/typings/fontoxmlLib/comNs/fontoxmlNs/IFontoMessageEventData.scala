@@ -12,3 +12,12 @@ trait IFontoMessageEventData extends js.Object {
   var `type`: java.lang.String
 }
 
+object IFontoMessageEventData {
+  @scala.inline
+  def apply(command: java.lang.String, metadata: js.Any, scope: IInvocator, `type`: java.lang.String): IFontoMessageEventData = {
+    val __obj = js.Dynamic.literal(command = command, metadata = metadata, scope = scope, `type` = `type`)
+  
+    __obj.asInstanceOf[IFontoMessageEventData]
+  }
+}
+

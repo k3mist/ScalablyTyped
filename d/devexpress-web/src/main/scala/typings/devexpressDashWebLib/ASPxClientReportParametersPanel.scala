@@ -31,3 +31,32 @@ trait ASPxClientReportParametersPanel extends ASPxClientControl {
   def GetParameterNames(): js.Array[java.lang.String]
 }
 
+object ASPxClientReportParametersPanel {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    AssignParameter: js.Function2[java.lang.String, js.Object, scala.Unit],
+    AssignParameters: js.Function1[js.Array[ASPxClientReportParameterInfo], scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetEditorByParameterName: js.Function1[java.lang.String, ASPxClientControl],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParameterNames: js.Function0[js.Array[java.lang.String]],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientReportParametersPanel = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, AssignParameter = AssignParameter, AssignParameters = AssignParameters, GetClientVisible = GetClientVisible, GetEditorByParameterName = GetEditorByParameterName, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParameterNames = GetParameterNames, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
+    __obj.asInstanceOf[ASPxClientReportParametersPanel]
+  }
+}
+

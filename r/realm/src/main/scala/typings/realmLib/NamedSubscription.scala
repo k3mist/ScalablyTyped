@@ -11,3 +11,12 @@ trait NamedSubscription extends js.Object {
   var query: java.lang.String
 }
 
+object NamedSubscription {
+  @scala.inline
+  def apply(name: java.lang.String, objectType: java.lang.String, query: java.lang.String): NamedSubscription = {
+    val __obj = js.Dynamic.literal(name = name, objectType = objectType, query = query)
+  
+    __obj.asInstanceOf[NamedSubscription]
+  }
+}
+

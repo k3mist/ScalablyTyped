@@ -28,3 +28,33 @@ trait Poi extends js.Object {
   var website: java.lang.String
 }
 
+object Poi {
+  @scala.inline
+  def apply(
+    adcode: java.lang.String,
+    address: java.lang.String,
+    adname: java.lang.String,
+    citycode: java.lang.String,
+    cityname: java.lang.String,
+    discount: scala.Boolean,
+    distance: scala.Double,
+    email: java.lang.String,
+    entr_location: LngLat,
+    exit_location: LngLat,
+    groupbuy: scala.Boolean,
+    id: java.lang.String,
+    location: LngLat,
+    name: java.lang.String,
+    pcode: java.lang.String,
+    pname: java.lang.String,
+    postcode: java.lang.String,
+    tel: java.lang.String,
+    `type`: java.lang.String,
+    website: java.lang.String
+  ): Poi = {
+    val __obj = js.Dynamic.literal(adcode = adcode, address = address, adname = adname, citycode = citycode, cityname = cityname, discount = discount, distance = distance, email = email, entr_location = entr_location, exit_location = exit_location, groupbuy = groupbuy, id = id, location = location, name = name, pcode = pcode, pname = pname, postcode = postcode, tel = tel, `type` = `type`, website = website)
+  
+    __obj.asInstanceOf[Poi]
+  }
+}
+

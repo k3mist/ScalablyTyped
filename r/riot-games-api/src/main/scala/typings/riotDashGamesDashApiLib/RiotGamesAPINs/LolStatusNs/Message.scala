@@ -15,3 +15,20 @@ trait Message extends js.Object {
   var updated_at: java.lang.String
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    content: java.lang.String,
+    created_at: java.lang.String,
+    id: scala.Double,
+    severity: java.lang.String,
+    translations: js.Array[Translation],
+    updated_at: java.lang.String
+  ): Message = {
+    val __obj = js.Dynamic.literal(author = author, content = content, created_at = created_at, id = id, severity = severity, translations = translations, updated_at = updated_at)
+  
+    __obj.asInstanceOf[Message]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Version extends js.Object {
   var minor: scala.Double
 }
 
+object Version {
+  @scala.inline
+  def apply(major: scala.Double, minor: scala.Double): Version = {
+    val __obj = js.Dynamic.literal(major = major, minor = minor)
+  
+    __obj.asInstanceOf[Version]
+  }
+}
+

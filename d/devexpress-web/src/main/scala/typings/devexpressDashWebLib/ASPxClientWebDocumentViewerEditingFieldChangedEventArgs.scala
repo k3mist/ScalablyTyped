@@ -26,3 +26,12 @@ trait ASPxClientWebDocumentViewerEditingFieldChangedEventArgs extends ASPxClient
   var OldValue: js.Object
 }
 
+object ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
+  @scala.inline
+  def apply(Field: ASPxClientWebDocumentViewerEditingField, NewValue: js.Object, OldValue: js.Object): ASPxClientWebDocumentViewerEditingFieldChangedEventArgs = {
+    val __obj = js.Dynamic.literal(Field = Field, NewValue = NewValue, OldValue = OldValue)
+  
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingFieldChangedEventArgs]
+  }
+}
+

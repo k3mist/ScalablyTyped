@@ -70,3 +70,19 @@ trait TabularDataProviderArguments extends js.Object {
   var TableNumberList: java.lang.String
 }
 
+object TabularDataProviderArguments {
+  @scala.inline
+  def apply(
+    CellRangeRepresentation: java.lang.String,
+    DataRowSource: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.ChartDataRowSource,
+    FirstCellAsLabel: scala.Boolean,
+    HasCategories: scala.Boolean,
+    SequenceMapping: activexDashInteropLib.SafeArray[scala.Double],
+    TableNumberList: java.lang.String
+  ): TabularDataProviderArguments = {
+    val __obj = js.Dynamic.literal(CellRangeRepresentation = CellRangeRepresentation, DataRowSource = DataRowSource, FirstCellAsLabel = FirstCellAsLabel, HasCategories = HasCategories, SequenceMapping = SequenceMapping, TableNumberList = TableNumberList)
+  
+    __obj.asInstanceOf[TabularDataProviderArguments]
+  }
+}
+

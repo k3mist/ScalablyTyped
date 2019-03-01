@@ -24,3 +24,21 @@ trait subscribeSuccessArgs extends baseResponseArgs {
   var subscribedClients: js.Array[subscribedClient]
 }
 
+object subscribeSuccessArgs {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    channels: js.Array[java.lang.String],
+    client: client,
+    clientId: java.lang.String,
+    isResubscribe: scala.Boolean,
+    meta: js.Any,
+    subscribedClients: js.Array[subscribedClient],
+    timestamp: stdLib.Date
+  ): subscribeSuccessArgs = {
+    val __obj = js.Dynamic.literal(channel = channel, channels = channels, client = client, clientId = clientId, isResubscribe = isResubscribe, meta = meta, subscribedClients = subscribedClients, timestamp = timestamp)
+  
+    __obj.asInstanceOf[subscribeSuccessArgs]
+  }
+}
+

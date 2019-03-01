@@ -39,3 +39,21 @@ trait NavigationLeafRoute[Params] extends js.Object {
   var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 
+object NavigationLeafRoute {
+  @scala.inline
+  def apply[Params](
+    index: scala.Double,
+    isTransitioning: scala.Boolean,
+    key: java.lang.String,
+    routeName: java.lang.String,
+    routes: js.Array[NavigationRoute[NavigationParams]],
+    params: Params = null,
+    path: java.lang.String = null
+  ): NavigationLeafRoute[Params] = {
+    val __obj = js.Dynamic.literal(index = index, isTransitioning = isTransitioning, key = key, routeName = routeName, routes = routes)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[NavigationLeafRoute[Params]]
+  }
+}
+

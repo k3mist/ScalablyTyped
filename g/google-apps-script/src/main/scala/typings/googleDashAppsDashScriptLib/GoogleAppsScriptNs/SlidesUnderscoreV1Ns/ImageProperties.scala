@@ -31,3 +31,21 @@ trait ImageProperties extends js.Object {
   var transparency: scala.Double
 }
 
+object ImageProperties {
+  @scala.inline
+  def apply(
+    brightness: scala.Double,
+    contrast: scala.Double,
+    crop_properties: CropProperties,
+    link: Link,
+    outline: Outline,
+    recolor: Recolor,
+    shadow: Shadow,
+    transparency: scala.Double
+  ): ImageProperties = {
+    val __obj = js.Dynamic.literal(brightness = brightness, contrast = contrast, crop_properties = crop_properties, link = link, outline = outline, recolor = recolor, shadow = shadow, transparency = transparency)
+  
+    __obj.asInstanceOf[ImageProperties]
+  }
+}
+

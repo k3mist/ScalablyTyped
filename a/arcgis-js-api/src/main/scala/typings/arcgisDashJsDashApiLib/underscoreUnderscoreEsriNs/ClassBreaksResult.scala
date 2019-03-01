@@ -33,3 +33,20 @@ trait ClassBreaksResult
   var normalizationTotal: scala.Double
 }
 
+object ClassBreaksResult {
+  @scala.inline
+  def apply(
+    classBreaksInfos: js.Array[ClassBreaksResultClassBreaksInfos],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    normalizationTotal: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ClassBreaksResult = {
+    val __obj = js.Dynamic.literal(classBreaksInfos = classBreaksInfos, constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, normalizationTotal = normalizationTotal, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ClassBreaksResult]
+  }
+}
+

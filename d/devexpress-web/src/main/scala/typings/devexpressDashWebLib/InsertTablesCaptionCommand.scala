@@ -15,3 +15,12 @@ trait InsertTablesCaptionCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object InsertTablesCaptionCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertTablesCaptionCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[InsertTablesCaptionCommand]
+  }
+}
+

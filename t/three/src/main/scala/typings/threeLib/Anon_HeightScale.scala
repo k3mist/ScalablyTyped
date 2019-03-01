@@ -15,3 +15,20 @@ trait Anon_HeightScale extends js.Object {
   var tubularSegments: scala.Double
 }
 
+object Anon_HeightScale {
+  @scala.inline
+  def apply(
+    heightScale: scala.Double,
+    p: scala.Double,
+    q: scala.Double,
+    radialSegments: scala.Double,
+    radius: scala.Double,
+    tube: scala.Double,
+    tubularSegments: scala.Double
+  ): Anon_HeightScale = {
+    val __obj = js.Dynamic.literal(heightScale = heightScale, p = p, q = q, radialSegments = radialSegments, radius = radius, tube = tube, tubularSegments = tubularSegments)
+  
+    __obj.asInstanceOf[Anon_HeightScale]
+  }
+}
+

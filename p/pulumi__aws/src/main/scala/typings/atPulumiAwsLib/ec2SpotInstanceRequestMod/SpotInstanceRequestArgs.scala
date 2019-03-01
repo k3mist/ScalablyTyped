@@ -220,3 +220,104 @@ trait SpotInstanceRequestArgs extends js.Object {
   val waitForFulfillment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object SpotInstanceRequestArgs {
+  @scala.inline
+  def apply(
+    ami: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    instanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    associatePublicIpAddress: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    blockDurationMinutes: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    cpuCoreCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    cpuThreadsPerCore: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    creditSpecification: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput] = null,
+    disableApiTermination: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    ebsBlockDevices: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[
+          atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeIdVolumeSize
+        ]
+      ]
+    ] = null,
+    ebsOptimized: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    ephemeralBlockDevices: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameNoDeviceVirtualName]
+      ]
+    ] = null,
+    getPasswordData: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    hostId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    iamInstanceProfile: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instanceInitiatedShutdownBehavior: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instanceInterruptionBehaviour: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ipv6AddressCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    ipv6Addresses: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    keyName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    launchGroup: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    monitoring: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    networkInterfaces: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]
+      ]
+    ] = null,
+    placementGroup: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    rootBlockDevice: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeIdVolumeSize] = null,
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    sourceDestCheck: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    spotPrice: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    spotType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    tenancy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    userData: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    userDataBase64: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    validFrom: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    validUntil: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    volumeTags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    waitForFulfillment: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): SpotInstanceRequestArgs = {
+    val __obj = js.Dynamic.literal(ami = ami.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
+    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (blockDurationMinutes != null) __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes.asInstanceOf[js.Any])
+    if (cpuCoreCount != null) __obj.updateDynamic("cpuCoreCount")(cpuCoreCount.asInstanceOf[js.Any])
+    if (cpuThreadsPerCore != null) __obj.updateDynamic("cpuThreadsPerCore")(cpuThreadsPerCore.asInstanceOf[js.Any])
+    if (creditSpecification != null) __obj.updateDynamic("creditSpecification")(creditSpecification.asInstanceOf[js.Any])
+    if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])
+    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
+    if (getPasswordData != null) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
+    if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
+    if (instanceInterruptionBehaviour != null) __obj.updateDynamic("instanceInterruptionBehaviour")(instanceInterruptionBehaviour.asInstanceOf[js.Any])
+    if (ipv6AddressCount != null) __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount.asInstanceOf[js.Any])
+    if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (launchGroup != null) __obj.updateDynamic("launchGroup")(launchGroup.asInstanceOf[js.Any])
+    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
+    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (rootBlockDevice != null) __obj.updateDynamic("rootBlockDevice")(rootBlockDevice.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
+    if (spotType != null) __obj.updateDynamic("spotType")(spotType.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userDataBase64 != null) __obj.updateDynamic("userDataBase64")(userDataBase64.asInstanceOf[js.Any])
+    if (validFrom != null) __obj.updateDynamic("validFrom")(validFrom.asInstanceOf[js.Any])
+    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
+    if (volumeTags != null) __obj.updateDynamic("volumeTags")(volumeTags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    if (waitForFulfillment != null) __obj.updateDynamic("waitForFulfillment")(waitForFulfillment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpotInstanceRequestArgs]
+  }
+}
+

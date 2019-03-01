@@ -22,3 +22,22 @@ trait XControlContainer
   def setStatusText(StatusText: java.lang.String): scala.Unit
 }
 
+object XControlContainer {
+  @scala.inline
+  def apply(
+    Controls: activexDashInteropLib.SafeArray[XControl],
+    acquire: js.Function0[scala.Unit],
+    addControl: js.Function2[java.lang.String, XControl, scala.Unit],
+    getControl: js.Function1[java.lang.String, XControl],
+    getControls: js.Function0[activexDashInteropLib.SafeArray[XControl]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeControl: js.Function1[XControl, scala.Unit],
+    setStatusText: js.Function1[java.lang.String, scala.Unit]
+  ): XControlContainer = {
+    val __obj = js.Dynamic.literal(Controls = Controls, acquire = acquire, addControl = addControl, getControl = getControl, getControls = getControls, queryInterface = queryInterface, release = release, removeControl = removeControl, setStatusText = setStatusText)
+  
+    __obj.asInstanceOf[XControlContainer]
+  }
+}
+

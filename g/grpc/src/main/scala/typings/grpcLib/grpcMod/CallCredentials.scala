@@ -20,3 +20,15 @@ trait CallCredentials extends js.Object {
   def generateMetadata(options: js.Object): js.Promise[Metadata]
 }
 
+object CallCredentials {
+  @scala.inline
+  def apply(
+    compose: js.Function1[CallCredentials, CallCredentials],
+    generateMetadata: js.Function1[js.Object, js.Promise[Metadata]]
+  ): CallCredentials = {
+    val __obj = js.Dynamic.literal(compose = compose, generateMetadata = generateMetadata)
+  
+    __obj.asInstanceOf[CallCredentials]
+  }
+}
+

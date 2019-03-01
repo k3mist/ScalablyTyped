@@ -12,3 +12,19 @@ trait LeafletMouseEvent extends LeafletEvent {
   var originalEvent: stdLib.MouseEvent
 }
 
+object LeafletMouseEvent {
+  @scala.inline
+  def apply(
+    containerPoint: Point,
+    latlng: LatLng,
+    layerPoint: Point,
+    originalEvent: stdLib.MouseEvent,
+    target: js.Any,
+    `type`: java.lang.String
+  ): LeafletMouseEvent = {
+    val __obj = js.Dynamic.literal(containerPoint = containerPoint, latlng = latlng, layerPoint = layerPoint, originalEvent = originalEvent, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[LeafletMouseEvent]
+  }
+}
+

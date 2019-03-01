@@ -10,3 +10,12 @@ trait PDFRef extends js.Object {
   var num: scala.Double
 }
 
+object PDFRef {
+  @scala.inline
+  def apply(gen: js.Any, num: scala.Double): PDFRef = {
+    val __obj = js.Dynamic.literal(gen = gen, num = num)
+  
+    __obj.asInstanceOf[PDFRef]
+  }
+}
+

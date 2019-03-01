@@ -11,3 +11,16 @@ trait InsertRet extends js.Object {
   def into(collection: js.Any): InsertExpression
 }
 
+object InsertRet {
+  @scala.inline
+  def apply(
+    in: js.Function1[/* collection */ js.Any, InsertExpression],
+    `in_`: js.Function1[/* collection */ js.Any, InsertExpression],
+    into: js.Function1[js.Any, InsertExpression]
+  ): InsertRet = {
+    val __obj = js.Dynamic.literal(in = in, `in_` = `in_`, into = into)
+  
+    __obj.asInstanceOf[InsertRet]
+  }
+}
+

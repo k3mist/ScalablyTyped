@@ -11,3 +11,16 @@ trait Ban extends js.Object {
   var PERMA: plugapiLib.plugapiLibStrings.f
 }
 
+object Ban {
+  @scala.inline
+  def apply(
+    DAY: plugapiLib.plugapiLibStrings.d,
+    HOUR: plugapiLib.plugapiLibStrings.h,
+    PERMA: plugapiLib.plugapiLibStrings.f
+  ): Ban = {
+    val __obj = js.Dynamic.literal(DAY = DAY, HOUR = HOUR, PERMA = PERMA)
+  
+    __obj.asInstanceOf[Ban]
+  }
+}
+

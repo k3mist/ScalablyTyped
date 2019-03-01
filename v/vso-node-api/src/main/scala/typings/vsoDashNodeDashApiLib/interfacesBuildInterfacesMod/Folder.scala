@@ -36,3 +36,20 @@ trait Folder extends js.Object {
   var project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
 }
 
+object Folder {
+  @scala.inline
+  def apply(
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    description: java.lang.String,
+    lastChangedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastChangedDate: stdLib.Date,
+    path: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
+  ): Folder = {
+    val __obj = js.Dynamic.literal(createdBy = createdBy, createdOn = createdOn, description = description, lastChangedBy = lastChangedBy, lastChangedDate = lastChangedDate, path = path, project = project)
+  
+    __obj.asInstanceOf[Folder]
+  }
+}
+

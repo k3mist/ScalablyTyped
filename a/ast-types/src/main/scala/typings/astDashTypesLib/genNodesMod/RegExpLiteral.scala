@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var value: stdLib.RegExp
 }
 
+object RegExpLiteral {
+  @scala.inline
+  def apply(
+    flags: java.lang.String,
+    pattern: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.RegExpLiteral,
+    value: stdLib.RegExp
+  ): RegExpLiteral = {
+    val __obj = js.Dynamic.literal(flags = flags, pattern = pattern, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[RegExpLiteral]
+  }
+}
+

@@ -16,3 +16,12 @@ trait MapObj extends js.Object {
   var specialAreas: js.Object
 }
 
+object MapObj {
+  @scala.inline
+  def apply(geoJson: js.Object, specialAreas: js.Object): MapObj = {
+    val __obj = js.Dynamic.literal(geoJson = geoJson, specialAreas = specialAreas)
+  
+    __obj.asInstanceOf[MapObj]
+  }
+}
+

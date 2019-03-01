@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSExternalModuleReference
 }
 
+object TSExternalModuleReference {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.StringLiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSExternalModuleReference
+  ): TSExternalModuleReference = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+  
+    __obj.asInstanceOf[TSExternalModuleReference]
+  }
+}
+

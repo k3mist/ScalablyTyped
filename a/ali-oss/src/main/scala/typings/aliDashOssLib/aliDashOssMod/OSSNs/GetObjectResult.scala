@@ -11,3 +11,12 @@ trait GetObjectResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object GetObjectResult {
+  @scala.inline
+  def apply(res: NormalSuccessResponse, content: js.Any = null): GetObjectResult = {
+    val __obj = js.Dynamic.literal(res = res)
+    if (content != null) __obj.updateDynamic("content")(content)
+    __obj.asInstanceOf[GetObjectResult]
+  }
+}
+

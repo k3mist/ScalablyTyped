@@ -19,3 +19,25 @@ trait ParsedKey extends js.Object {
   var `type`: java.lang.String
 }
 
+object ParsedKey {
+  @scala.inline
+  def apply(
+    comment: java.lang.String,
+    encryption: java.lang.String,
+    extra: java.lang.String,
+    fulltype: java.lang.String,
+    `private`: nodeLib.Buffer,
+    privateOrig: nodeLib.Buffer,
+    public: nodeLib.Buffer,
+    publicOrig: nodeLib.Buffer,
+    `type`: java.lang.String,
+    ppk: js.UndefOr[scala.Boolean] = js.undefined,
+    privateMAC: java.lang.String = null
+  ): ParsedKey = {
+    val __obj = js.Dynamic.literal(comment = comment, encryption = encryption, extra = extra, fulltype = fulltype, `private` = `private`, privateOrig = privateOrig, public = public, publicOrig = publicOrig, `type` = `type`)
+    if (!js.isUndefined(ppk)) __obj.updateDynamic("ppk")(ppk)
+    if (privateMAC != null) __obj.updateDynamic("privateMAC")(privateMAC)
+    __obj.asInstanceOf[ParsedKey]
+  }
+}
+

@@ -11,3 +11,16 @@ trait NonError
   var name_NonError: ensureDashErrorLib.ensureDashErrorLibStrings.NonError
 }
 
+object NonError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: ensureDashErrorLib.ensureDashErrorLibStrings.NonError,
+    stack: java.lang.String = null
+  ): NonError = {
+    val __obj = js.Dynamic.literal(message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[NonError]
+  }
+}
+

@@ -14,3 +14,19 @@ trait ISymbol extends js.Object {
   var width: scala.Double
 }
 
+object ISymbol {
+  @scala.inline
+  def apply(
+    chart: IChart,
+    format: IFormat,
+    height: scala.Double,
+    padding: scala.Double,
+    visible: scala.Boolean,
+    width: scala.Double
+  ): ISymbol = {
+    val __obj = js.Dynamic.literal(chart = chart, format = format, height = height, padding = padding, visible = visible, width = width)
+  
+    __obj.asInstanceOf[ISymbol]
+  }
+}
+

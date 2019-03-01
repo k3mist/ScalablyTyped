@@ -18,3 +18,23 @@ trait ReleaseDeployPhase extends js.Object {
   var status: DeployPhaseStatus
 }
 
+object ReleaseDeployPhase {
+  @scala.inline
+  def apply(
+    deploymentJobs: js.Array[DeploymentJob],
+    errorLog: java.lang.String,
+    id: scala.Double,
+    manualInterventions: js.Array[ManualIntervention],
+    name: java.lang.String,
+    phaseId: java.lang.String,
+    phaseType: DeployPhaseTypes,
+    rank: scala.Double,
+    runPlanId: java.lang.String,
+    status: DeployPhaseStatus
+  ): ReleaseDeployPhase = {
+    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs, errorLog = errorLog, id = id, manualInterventions = manualInterventions, name = name, phaseId = phaseId, phaseType = phaseType, rank = rank, runPlanId = runPlanId, status = status)
+  
+    __obj.asInstanceOf[ReleaseDeployPhase]
+  }
+}
+

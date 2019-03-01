@@ -40,3 +40,38 @@ trait SceneViewEnvironmentLighting extends AnonymousAccessor {
   var directShadowsEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SceneViewEnvironmentLighting {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    ambientOcclusionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    cameraTrackingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    date: stdLib.Date = null,
+    directShadowsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    set: (js.Function2[
+      /* propertyName */ java.lang.String, 
+      /* value */ js.Any, 
+      SceneViewEnvironmentLighting
+    ]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], SceneViewEnvironmentLighting]) = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): SceneViewEnvironmentLighting = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(ambientOcclusionEnabled)) __obj.updateDynamic("ambientOcclusionEnabled")(ambientOcclusionEnabled)
+    if (!js.isUndefined(cameraTrackingEnabled)) __obj.updateDynamic("cameraTrackingEnabled")(cameraTrackingEnabled)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[SceneViewEnvironmentLighting]
+  }
+}
+

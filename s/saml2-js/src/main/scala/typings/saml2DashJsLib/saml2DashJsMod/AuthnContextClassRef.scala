@@ -10,3 +10,12 @@ trait AuthnContextClassRef extends js.Object {
   var comparison: java.lang.String
 }
 
+object AuthnContextClassRef {
+  @scala.inline
+  def apply(class_refs: js.Array[java.lang.String], comparison: java.lang.String): AuthnContextClassRef = {
+    val __obj = js.Dynamic.literal(class_refs = class_refs, comparison = comparison)
+  
+    __obj.asInstanceOf[AuthnContextClassRef]
+  }
+}
+

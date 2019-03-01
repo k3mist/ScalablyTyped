@@ -52,3 +52,24 @@ trait GetVolumeResult extends js.Object {
   val volumeType: java.lang.String
 }
 
+object GetVolumeResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    availabilityZone: java.lang.String,
+    encrypted: scala.Boolean,
+    id: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    size: scala.Double,
+    snapshotId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    volumeId: java.lang.String,
+    volumeType: java.lang.String
+  ): GetVolumeResult = {
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, encrypted = encrypted, id = id, iops = iops, kmsKeyId = kmsKeyId, size = size, snapshotId = snapshotId, tags = tags, volumeId = volumeId, volumeType = volumeType)
+  
+    __obj.asInstanceOf[GetVolumeResult]
+  }
+}
+

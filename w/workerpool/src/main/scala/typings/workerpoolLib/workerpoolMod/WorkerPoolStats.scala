@@ -13,3 +13,18 @@ trait WorkerPoolStats extends js.Object {
   var totalWorkers: scala.Double
 }
 
+object WorkerPoolStats {
+  @scala.inline
+  def apply(
+    activeTasks: scala.Double,
+    busyWorkers: scala.Double,
+    idleWorkers: scala.Double,
+    pendingTasks: scala.Double,
+    totalWorkers: scala.Double
+  ): WorkerPoolStats = {
+    val __obj = js.Dynamic.literal(activeTasks = activeTasks, busyWorkers = busyWorkers, idleWorkers = idleWorkers, pendingTasks = pendingTasks, totalWorkers = totalWorkers)
+  
+    __obj.asInstanceOf[WorkerPoolStats]
+  }
+}
+

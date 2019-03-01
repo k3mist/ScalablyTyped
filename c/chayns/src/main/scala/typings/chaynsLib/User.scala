@@ -14,3 +14,19 @@ trait User extends js.Object {
   var UserID: scala.Double
 }
 
+object User {
+  @scala.inline
+  def apply(
+    FacebookID: java.lang.String,
+    FirstName: java.lang.String,
+    LastName: java.lang.String,
+    PersonID: java.lang.String,
+    UserFullName: java.lang.String,
+    UserID: scala.Double
+  ): User = {
+    val __obj = js.Dynamic.literal(FacebookID = FacebookID, FirstName = FirstName, LastName = LastName, PersonID = PersonID, UserFullName = UserFullName, UserID = UserID)
+  
+    __obj.asInstanceOf[User]
+  }
+}
+

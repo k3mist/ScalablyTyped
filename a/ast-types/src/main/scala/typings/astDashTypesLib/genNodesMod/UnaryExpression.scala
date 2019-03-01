@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.UnaryExpression
 }
 
+object UnaryExpression {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.ExpressionKind,
+    operator: astDashTypesLib.astDashTypesLibStrings.`-` | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`!` | astDashTypesLib.astDashTypesLibStrings.`~` | astDashTypesLib.astDashTypesLibStrings.typeof | astDashTypesLib.astDashTypesLibStrings.void | astDashTypesLib.astDashTypesLibStrings.delete,
+    prefix: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.UnaryExpression
+  ): UnaryExpression = {
+    val __obj = js.Dynamic.literal(argument = argument, operator = operator.asInstanceOf[js.Any], prefix = prefix, `type` = `type`)
+  
+    __obj.asInstanceOf[UnaryExpression]
+  }
+}
+

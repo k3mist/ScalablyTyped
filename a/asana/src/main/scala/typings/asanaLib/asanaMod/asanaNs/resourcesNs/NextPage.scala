@@ -11,3 +11,12 @@ trait NextPage extends js.Object {
   var uri: java.lang.String
 }
 
+object NextPage {
+  @scala.inline
+  def apply(offset: java.lang.String, path: java.lang.String, uri: java.lang.String): NextPage = {
+    val __obj = js.Dynamic.literal(offset = offset, path = path, uri = uri)
+  
+    __obj.asInstanceOf[NextPage]
+  }
+}
+

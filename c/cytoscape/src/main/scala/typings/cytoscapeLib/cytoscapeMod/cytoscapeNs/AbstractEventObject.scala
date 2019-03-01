@@ -21,3 +21,18 @@ trait AbstractEventObject extends js.Object {
   var `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
 }
 
+object AbstractEventObject {
+  @scala.inline
+  def apply(
+    cy: Core,
+    namespace: java.lang.String,
+    timeStamp: scala.Double,
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
+    target: js.Any = null
+  ): AbstractEventObject = {
+    val __obj = js.Dynamic.literal(cy = cy, namespace = namespace, timeStamp = timeStamp, `type` = `type`.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[AbstractEventObject]
+  }
+}
+

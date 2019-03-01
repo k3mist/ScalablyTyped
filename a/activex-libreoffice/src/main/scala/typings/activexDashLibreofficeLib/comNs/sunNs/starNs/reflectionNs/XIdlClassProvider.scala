@@ -15,3 +15,18 @@ trait XIdlClassProvider
   def getIdlClasses(): activexDashInteropLib.SafeArray[XIdlClass[_]]
 }
 
+object XIdlClassProvider {
+  @scala.inline
+  def apply(
+    IdlClasses: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    acquire: js.Function0[scala.Unit],
+    getIdlClasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdlClassProvider = {
+    val __obj = js.Dynamic.literal(IdlClasses = IdlClasses, acquire = acquire, getIdlClasses = getIdlClasses, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIdlClassProvider]
+  }
+}
+

@@ -39,3 +39,44 @@ trait ITextParagraphFormat extends js.Object {
   def setLineSpacing(rule: LineSpacingRule, spacing: scala.Double): scala.Unit
 }
 
+object ITextParagraphFormat {
+  @scala.inline
+  def apply(
+    addTab: js.Function3[scala.Double, TabAlignment, TabLeader, scala.Unit],
+    alignment: ParagraphAlignment,
+    clearAllTabs: js.Function0[scala.Unit],
+    deleteTab: js.Function1[scala.Double, scala.Unit],
+    firstLineIndent: scala.Double,
+    getClone: js.Function0[ITextParagraphFormat],
+    getTab: js.Function1[scala.Double, winrtLib.Anon_Align],
+    isEqual: js.Function1[ITextParagraphFormat, scala.Boolean],
+    keepTogether: FormatEffect,
+    keepWithNext: FormatEffect,
+    leftIndent: scala.Double,
+    lineSpacing: scala.Double,
+    lineSpacingRule: LineSpacingRule,
+    listAlignment: MarkerAlignment,
+    listLevelIndex: scala.Double,
+    listStart: scala.Double,
+    listStyle: MarkerStyle,
+    listTab: scala.Double,
+    listType: MarkerType,
+    noLineNumber: FormatEffect,
+    pageBreakBefore: FormatEffect,
+    rightIndent: scala.Double,
+    rightToLeft: FormatEffect,
+    setClone: js.Function1[ITextParagraphFormat, scala.Unit],
+    setIndents: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    setLineSpacing: js.Function2[LineSpacingRule, scala.Double, scala.Unit],
+    spaceAfter: scala.Double,
+    spaceBefore: scala.Double,
+    style: ParagraphStyle,
+    tabCount: scala.Double,
+    widowControl: FormatEffect
+  ): ITextParagraphFormat = {
+    val __obj = js.Dynamic.literal(addTab = addTab, alignment = alignment, clearAllTabs = clearAllTabs, deleteTab = deleteTab, firstLineIndent = firstLineIndent, getClone = getClone, getTab = getTab, isEqual = isEqual, keepTogether = keepTogether, keepWithNext = keepWithNext, leftIndent = leftIndent, lineSpacing = lineSpacing, lineSpacingRule = lineSpacingRule, listAlignment = listAlignment, listLevelIndex = listLevelIndex, listStart = listStart, listStyle = listStyle, listTab = listTab, listType = listType, noLineNumber = noLineNumber, pageBreakBefore = pageBreakBefore, rightIndent = rightIndent, rightToLeft = rightToLeft, setClone = setClone, setIndents = setIndents, setLineSpacing = setLineSpacing, spaceAfter = spaceAfter, spaceBefore = spaceBefore, style = style, tabCount = tabCount, widowControl = widowControl)
+  
+    __obj.asInstanceOf[ITextParagraphFormat]
+  }
+}
+

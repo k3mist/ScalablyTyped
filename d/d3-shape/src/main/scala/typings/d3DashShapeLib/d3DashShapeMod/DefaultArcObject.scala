@@ -28,3 +28,18 @@ trait DefaultArcObject extends js.Object {
   var startAngle: scala.Double
 }
 
+object DefaultArcObject {
+  @scala.inline
+  def apply(
+    endAngle: scala.Double,
+    innerRadius: scala.Double,
+    outerRadius: scala.Double,
+    startAngle: scala.Double,
+    padAngle: scala.Int | scala.Double = null
+  ): DefaultArcObject = {
+    val __obj = js.Dynamic.literal(endAngle = endAngle, innerRadius = innerRadius, outerRadius = outerRadius, startAngle = startAngle)
+    if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultArcObject]
+  }
+}
+

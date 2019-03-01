@@ -16,3 +16,21 @@ trait Utils extends js.Object {
   def toString(obj: js.Any): java.lang.String
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    blockParams: js.Function2[js.Array[_], js.Array[_], js.Array[_]],
+    createFrame: js.Function1[js.Any, js.Any],
+    escapeExpression: js.Function1[java.lang.String, java.lang.String],
+    extend: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
+    isArray: js.Function1[js.Any, scala.Boolean],
+    isEmpty: js.Function1[js.Any, scala.Boolean],
+    isFunction: js.Function1[js.Any, scala.Boolean],
+    toString: js.Function1[js.Any, java.lang.String]
+  ): Utils = {
+    val __obj = js.Dynamic.literal(blockParams = blockParams, createFrame = createFrame, escapeExpression = escapeExpression, extend = extend, isArray = isArray, isEmpty = isEmpty, isFunction = isFunction, toString = toString)
+  
+    __obj.asInstanceOf[Utils]
+  }
+}
+

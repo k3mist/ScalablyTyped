@@ -16,3 +16,12 @@ trait Answers extends js.Object {
   var vSMarketplacePublisherName: java.lang.String
 }
 
+object Answers {
+  @scala.inline
+  def apply(vSMarketplaceExtensionName: java.lang.String, vSMarketplacePublisherName: java.lang.String): Answers = {
+    val __obj = js.Dynamic.literal(vSMarketplaceExtensionName = vSMarketplaceExtensionName, vSMarketplacePublisherName = vSMarketplacePublisherName)
+  
+    __obj.asInstanceOf[Answers]
+  }
+}
+

@@ -12,3 +12,17 @@ trait GraphQLEnumValueDefinition extends js.Object {
   var value: js.Any
 }
 
+object GraphQLEnumValueDefinition {
+  @scala.inline
+  def apply(
+    deprecationReason: java.lang.String,
+    description: java.lang.String,
+    name: java.lang.String,
+    value: js.Any
+  ): GraphQLEnumValueDefinition = {
+    val __obj = js.Dynamic.literal(deprecationReason = deprecationReason, description = description, name = name, value = value)
+  
+    __obj.asInstanceOf[GraphQLEnumValueDefinition]
+  }
+}
+

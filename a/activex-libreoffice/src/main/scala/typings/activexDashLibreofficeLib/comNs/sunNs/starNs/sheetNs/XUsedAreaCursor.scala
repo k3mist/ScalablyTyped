@@ -26,3 +26,18 @@ trait XUsedAreaCursor
   def gotoStartOfUsedArea(bExpand: scala.Boolean): scala.Unit
 }
 
+object XUsedAreaCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    gotoEndOfUsedArea: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfUsedArea: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUsedAreaCursor = {
+    val __obj = js.Dynamic.literal(acquire = acquire, gotoEndOfUsedArea = gotoEndOfUsedArea, gotoStartOfUsedArea = gotoStartOfUsedArea, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUsedAreaCursor]
+  }
+}
+

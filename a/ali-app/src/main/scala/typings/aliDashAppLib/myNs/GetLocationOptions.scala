@@ -23,3 +23,19 @@ trait GetLocationOptions
   def success_MGetLocationOptions(res: LocationData): scala.Unit
 }
 
+object GetLocationOptions {
+  @scala.inline
+  def apply(
+    cacheTimeout: scala.Double,
+    success: js.Function1[LocationData, scala.Unit],
+    `type`: aliDashAppLib.aliDashAppLibNumbers.`0` | aliDashAppLib.aliDashAppLibNumbers.`1` | aliDashAppLib.aliDashAppLibNumbers.`2` | aliDashAppLib.aliDashAppLibNumbers.`3`,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetLocationOptions = {
+    val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout, success = success, `type` = `type`.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetLocationOptions]
+  }
+}
+

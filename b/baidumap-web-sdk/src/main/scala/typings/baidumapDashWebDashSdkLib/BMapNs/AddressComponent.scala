@@ -13,3 +13,18 @@ trait AddressComponent extends js.Object {
   var streetNumber: java.lang.String
 }
 
+object AddressComponent {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    district: java.lang.String,
+    province: java.lang.String,
+    street: java.lang.String,
+    streetNumber: java.lang.String
+  ): AddressComponent = {
+    val __obj = js.Dynamic.literal(city = city, district = district, province = province, street = street, streetNumber = streetNumber)
+  
+    __obj.asInstanceOf[AddressComponent]
+  }
+}
+

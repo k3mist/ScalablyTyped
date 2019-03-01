@@ -12,3 +12,17 @@ trait Anon_FULLSCREEN extends js.Object {
   var NORMAL: chromeDashAppsLib.chromeDashAppsLibStrings.normal
 }
 
+object Anon_FULLSCREEN {
+  @scala.inline
+  def apply(
+    FULLSCREEN: chromeDashAppsLib.chromeDashAppsLibStrings.fullscreen,
+    MAXIMIZED: chromeDashAppsLib.chromeDashAppsLibStrings.maximized,
+    MINIMIZED: chromeDashAppsLib.chromeDashAppsLibStrings.minimized,
+    NORMAL: chromeDashAppsLib.chromeDashAppsLibStrings.normal
+  ): Anon_FULLSCREEN = {
+    val __obj = js.Dynamic.literal(FULLSCREEN = FULLSCREEN, MAXIMIZED = MAXIMIZED, MINIMIZED = MINIMIZED, NORMAL = NORMAL)
+  
+    __obj.asInstanceOf[Anon_FULLSCREEN]
+  }
+}
+

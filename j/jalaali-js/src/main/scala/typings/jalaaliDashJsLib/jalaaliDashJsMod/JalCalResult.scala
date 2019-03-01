@@ -14,3 +14,12 @@ trait JalCalResult extends js.Object {
   var march: scala.Double
 }
 
+object JalCalResult {
+  @scala.inline
+  def apply(gy: scala.Double, leap: scala.Double, march: scala.Double): JalCalResult = {
+    val __obj = js.Dynamic.literal(gy = gy, leap = leap, march = march)
+  
+    __obj.asInstanceOf[JalCalResult]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ProjectSpecification extends js.Object {
   var paths: js.Array[java.lang.String]
 }
 
+object ProjectSpecification {
+  @scala.inline
+  def apply(originPath: java.lang.String, paths: js.Array[java.lang.String], config: ConfigValues = null): ProjectSpecification = {
+    val __obj = js.Dynamic.literal(originPath = originPath, paths = paths)
+    if (config != null) __obj.updateDynamic("config")(config)
+    __obj.asInstanceOf[ProjectSpecification]
+  }
+}
+

@@ -51,3 +51,23 @@ trait AgeRendererResult
   var visualVariable: ColorVariable
 }
 
+object AgeRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    colorScheme: ColorScheme,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer,
+    statistics: SummaryStatisticsResult,
+    unit: java.lang.String,
+    visualVariable: ColorVariable
+  ): AgeRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, statistics = statistics, unit = unit, visualVariable = visualVariable)
+  
+    __obj.asInstanceOf[AgeRendererResult]
+  }
+}
+

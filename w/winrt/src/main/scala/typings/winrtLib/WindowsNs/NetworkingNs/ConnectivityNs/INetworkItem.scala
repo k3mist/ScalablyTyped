@@ -10,3 +10,12 @@ trait INetworkItem extends js.Object {
   def getNetworkTypes(): NetworkTypes
 }
 
+object INetworkItem {
+  @scala.inline
+  def apply(getNetworkTypes: js.Function0[NetworkTypes], networkId: java.lang.String): INetworkItem = {
+    val __obj = js.Dynamic.literal(getNetworkTypes = getNetworkTypes, networkId = networkId)
+  
+    __obj.asInstanceOf[INetworkItem]
+  }
+}
+

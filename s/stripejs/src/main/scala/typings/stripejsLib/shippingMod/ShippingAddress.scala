@@ -55,3 +55,22 @@ trait ShippingAddress extends js.Object {
   var sortingCode: java.lang.String
 }
 
+object ShippingAddress {
+  @scala.inline
+  def apply(
+    addressLine: js.Array[java.lang.String],
+    city: java.lang.String,
+    country: java.lang.String,
+    dependentLocality: java.lang.String,
+    phone: java.lang.String,
+    postalCode: java.lang.String,
+    recipient: java.lang.String,
+    region: java.lang.String,
+    sortingCode: java.lang.String
+  ): ShippingAddress = {
+    val __obj = js.Dynamic.literal(addressLine = addressLine, city = city, country = country, dependentLocality = dependentLocality, phone = phone, postalCode = postalCode, recipient = recipient, region = region, sortingCode = sortingCode)
+  
+    __obj.asInstanceOf[ShippingAddress]
+  }
+}
+

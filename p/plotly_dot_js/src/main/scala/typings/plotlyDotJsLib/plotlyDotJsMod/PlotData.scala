@@ -64,3 +64,83 @@ trait PlotData extends js.Object {
   var zsmooth: plotlyDotJsLib.plotlyDotJsLibStrings.fast | plotlyDotJsLib.plotlyDotJsLibStrings.best | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
 }
 
+object PlotData {
+  @scala.inline
+  def apply(
+    autobinx: scala.Boolean,
+    boxmean: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.sd,
+    colorscale: java.lang.String | (js.Array[js.Tuple2[scala.Double, java.lang.String]]),
+    connectgaps: scala.Boolean,
+    error_x: ErrorBar,
+    error_y: ErrorBar,
+    fill: plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.tozeroy | plotlyDotJsLib.plotlyDotJsLibStrings.tozerox | plotlyDotJsLib.plotlyDotJsLibStrings.tonexty | plotlyDotJsLib.plotlyDotJsLibStrings.tonextx | plotlyDotJsLib.plotlyDotJsLibStrings.toself | plotlyDotJsLib.plotlyDotJsLibStrings.tonext,
+    fillcolor: java.lang.String,
+    hole: scala.Double,
+    hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`,
+    hoverlabel: stdLib.Partial[Label],
+    hoveron: plotlyDotJsLib.plotlyDotJsLibStrings.points | plotlyDotJsLib.plotlyDotJsLibStrings.fills,
+    labels: js.Array[Datum],
+    legendgroup: java.lang.String,
+    line: stdLib.Partial[ScatterLine],
+    `line.color`: Color,
+    `line.dash`: Dash,
+    `line.shape`: plotlyDotJsLib.plotlyDotJsLibStrings.linear | plotlyDotJsLib.plotlyDotJsLibStrings.spline | plotlyDotJsLib.plotlyDotJsLibStrings.hv | plotlyDotJsLib.plotlyDotJsLibStrings.vh | plotlyDotJsLib.plotlyDotJsLibStrings.hvh | plotlyDotJsLib.plotlyDotJsLibStrings.vhv,
+    `line.simplify`: scala.Boolean,
+    `line.smoothing`: scala.Double,
+    `line.width`: scala.Double,
+    marker: stdLib.Partial[PlotMarker],
+    `marker.color`: Color,
+    `marker.line`: stdLib.Partial[ScatterMarkerLine],
+    `marker.maxdisplayed`: scala.Double,
+    `marker.opacity`: scala.Double | js.Array[scala.Double],
+    `marker.showscale`: scala.Boolean,
+    `marker.size`: scala.Double | js.Array[scala.Double],
+    `marker.sizemax`: scala.Double,
+    `marker.sizemin`: scala.Double,
+    `marker.sizemode`: plotlyDotJsLib.plotlyDotJsLibStrings.diameter | plotlyDotJsLib.plotlyDotJsLibStrings.area,
+    `marker.sizeref`: scala.Double,
+    `marker.symbol`: java.lang.String | js.Array[java.lang.String],
+    mode: plotlyDotJsLib.plotlyDotJsLibStrings.lines | plotlyDotJsLib.plotlyDotJsLibStrings.markers | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.`lines+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+lines` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+lines+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.none,
+    name: java.lang.String,
+    orientation: plotlyDotJsLib.plotlyDotJsLibStrings.v | plotlyDotJsLib.plotlyDotJsLibStrings.h,
+    r: js.Array[Datum],
+    text: java.lang.String | js.Array[java.lang.String],
+    theta: js.Array[Datum],
+    transforms: js.Array[DataTransform],
+    transpose: scala.Boolean,
+    `type`: plotlyDotJsLib.plotlyDotJsLibStrings.bar | plotlyDotJsLib.plotlyDotJsLibStrings.box | plotlyDotJsLib.plotlyDotJsLibStrings.candlestick | plotlyDotJsLib.plotlyDotJsLibStrings.choropleth | plotlyDotJsLib.plotlyDotJsLibStrings.contour | plotlyDotJsLib.plotlyDotJsLibStrings.heatmap | plotlyDotJsLib.plotlyDotJsLibStrings.histogram | plotlyDotJsLib.plotlyDotJsLibStrings.mesh3d | plotlyDotJsLib.plotlyDotJsLibStrings.ohlc | plotlyDotJsLib.plotlyDotJsLibStrings.parcoords | plotlyDotJsLib.plotlyDotJsLibStrings.pie | plotlyDotJsLib.plotlyDotJsLibStrings.pointcloud | plotlyDotJsLib.plotlyDotJsLibStrings.scatter | plotlyDotJsLib.plotlyDotJsLibStrings.scatter3d | plotlyDotJsLib.plotlyDotJsLibStrings.scattergeo | plotlyDotJsLib.plotlyDotJsLibStrings.scattergl | plotlyDotJsLib.plotlyDotJsLibStrings.scatterpolar | plotlyDotJsLib.plotlyDotJsLibStrings.scatterternary | plotlyDotJsLib.plotlyDotJsLibStrings.surface,
+    values: js.Array[Datum],
+    visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly,
+    x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray,
+    xaxis: java.lang.String,
+    xbins: plotlyDotJsLib.Anon_End,
+    xgap: scala.Double,
+    xy: stdLib.Float32Array,
+    y: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray,
+    yaxis: java.lang.String,
+    ygap: scala.Double,
+    z: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray,
+    zsmooth: plotlyDotJsLib.plotlyDotJsLibStrings.fast | plotlyDotJsLib.plotlyDotJsLibStrings.best | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
+  ): PlotData = {
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, text = text.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, `type` = `type`.asInstanceOf[js.Any], values = values, visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.dash")(`line.dash`)
+    __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.simplify")(`line.simplify`)
+    __obj.updateDynamic("line.smoothing")(`line.smoothing`)
+    __obj.updateDynamic("line.width")(`line.width`)
+    __obj.updateDynamic("marker.color")(`marker.color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line")(`marker.line`)
+    __obj.updateDynamic("marker.maxdisplayed")(`marker.maxdisplayed`)
+    __obj.updateDynamic("marker.opacity")(`marker.opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.showscale")(`marker.showscale`)
+    __obj.updateDynamic("marker.size")(`marker.size`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizemax")(`marker.sizemax`)
+    __obj.updateDynamic("marker.sizemin")(`marker.sizemin`)
+    __obj.updateDynamic("marker.sizemode")(`marker.sizemode`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizeref")(`marker.sizeref`)
+    __obj.updateDynamic("marker.symbol")(`marker.symbol`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotData]
+  }
+}
+

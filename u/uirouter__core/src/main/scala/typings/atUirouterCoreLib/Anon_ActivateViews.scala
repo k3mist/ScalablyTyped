@@ -23,3 +23,28 @@ trait Anon_ActivateViews extends js.Object {
   var updateUrl: js.Function
 }
 
+object Anon_ActivateViews {
+  @scala.inline
+  def apply(
+    activateViews: js.Function,
+    addCoreResolves: js.Function,
+    eagerResolve: js.Function,
+    ignored: js.Function,
+    invalid: js.Function,
+    lazyLoad: js.Function,
+    lazyResolve: js.Function,
+    loadViews: js.Function,
+    onEnter: js.Function,
+    onExit: js.Function,
+    onRetain: js.Function,
+    redirectTo: js.Function,
+    resolveAll: js.Function,
+    updateGlobals: js.Function,
+    updateUrl: js.Function
+  ): Anon_ActivateViews = {
+    val __obj = js.Dynamic.literal(activateViews = activateViews, addCoreResolves = addCoreResolves, eagerResolve = eagerResolve, ignored = ignored, invalid = invalid, lazyLoad = lazyLoad, lazyResolve = lazyResolve, loadViews = loadViews, onEnter = onEnter, onExit = onExit, onRetain = onRetain, redirectTo = redirectTo, resolveAll = resolveAll, updateGlobals = updateGlobals, updateUrl = updateUrl)
+  
+    __obj.asInstanceOf[Anon_ActivateViews]
+  }
+}
+

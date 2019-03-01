@@ -26,3 +26,12 @@ trait ASPxClientSchedulerCellClickEventArgs extends ASPxClientEventArgs {
   var resource: java.lang.String
 }
 
+object ASPxClientSchedulerCellClickEventArgs {
+  @scala.inline
+  def apply(htmlElement: js.Object, interval: ASPxClientTimeInterval, resource: java.lang.String): ASPxClientSchedulerCellClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, interval = interval, resource = resource)
+  
+    __obj.asInstanceOf[ASPxClientSchedulerCellClickEventArgs]
+  }
+}
+

@@ -133,3 +133,57 @@ trait Intent
   def setUrl(url: java.lang.String): scala.Unit
 }
 
+object Intent {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    addCategory: js.Function1[java.lang.String, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addFlags: js.Function1[scala.Double, scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    className: java.lang.String,
+    data: java.lang.String,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    flags: scala.Double,
+    getAction: js.Function0[java.lang.String],
+    getApiName: js.Function0[java.lang.String],
+    getBlobExtra: js.Function1[java.lang.String, titaniumLib.TitaniumNs.Blob],
+    getBooleanExtra: js.Function2[java.lang.String, scala.Boolean, scala.Boolean],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getClassName: js.Function0[java.lang.String],
+    getData: js.Function0[java.lang.String],
+    getDoubleExtra: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getFlags: js.Function0[scala.Double],
+    getIntExtra: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getLongExtra: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getPackageName: js.Function0[java.lang.String],
+    getStringExtra: js.Function1[java.lang.String, java.lang.String],
+    getType: js.Function0[java.lang.String],
+    getUrl: js.Function0[java.lang.String],
+    hasExtra: js.Function1[java.lang.String, scala.Boolean],
+    packageName: java.lang.String,
+    putExtra: js.Function2[java.lang.String, js.Any, scala.Unit],
+    putExtraUri: js.Function2[java.lang.String, js.Any, scala.Unit],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setAction: js.Function1[java.lang.String, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setClassName: js.Function1[java.lang.String, scala.Unit],
+    setFlags: js.Function1[scala.Double, scala.Unit],
+    setPackageName: js.Function1[java.lang.String, scala.Unit],
+    setUrl: js.Function1[java.lang.String, scala.Unit],
+    `type`: java.lang.String,
+    url: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Intent = {
+    val __obj = js.Dynamic.literal(action = action, addCategory = addCategory, addEventListener = addEventListener, addFlags = addFlags, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, className = className, data = data, fireEvent = fireEvent, flags = flags, getAction = getAction, getApiName = getApiName, getBlobExtra = getBlobExtra, getBooleanExtra = getBooleanExtra, getBubbleParent = getBubbleParent, getClassName = getClassName, getData = getData, getDoubleExtra = getDoubleExtra, getFlags = getFlags, getIntExtra = getIntExtra, getLongExtra = getLongExtra, getPackageName = getPackageName, getStringExtra = getStringExtra, getType = getType, getUrl = getUrl, hasExtra = hasExtra, packageName = packageName, putExtra = putExtra, putExtraUri = putExtraUri, removeEventListener = removeEventListener, setAction = setAction, setBubbleParent = setBubbleParent, setClassName = setClassName, setFlags = setFlags, setPackageName = setPackageName, setUrl = setUrl, `type` = `type`, url = url)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Intent]
+  }
+}
+

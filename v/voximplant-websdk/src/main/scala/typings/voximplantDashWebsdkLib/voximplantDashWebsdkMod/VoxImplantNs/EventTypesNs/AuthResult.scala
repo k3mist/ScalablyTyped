@@ -32,3 +32,21 @@ trait AuthResult
   var result: scala.Boolean
 }
 
+object AuthResult {
+  @scala.inline
+  def apply(
+    result: scala.Boolean,
+    code: scala.Int | scala.Double = null,
+    displayName: java.lang.String = null,
+    key: java.lang.String = null,
+    options: js.Object = null
+  ): AuthResult = {
+    val __obj = js.Dynamic.literal(result = result)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AuthResult]
+  }
+}
+

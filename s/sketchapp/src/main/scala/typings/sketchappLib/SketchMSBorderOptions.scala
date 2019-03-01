@@ -13,3 +13,18 @@ trait SketchMSBorderOptions extends js.Object {
   var lineJoinStyle: SketchMSBorderLineJoinStyle
 }
 
+object SketchMSBorderOptions {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.borderOptions,
+    dashPattern: js.Array[scala.Double],
+    isEnabled: scala.Boolean,
+    lineCapStyle: SketchMSBorderLineCapStyle,
+    lineJoinStyle: SketchMSBorderLineJoinStyle
+  ): SketchMSBorderOptions = {
+    val __obj = js.Dynamic.literal(_class = _class, dashPattern = dashPattern, isEnabled = isEnabled, lineCapStyle = lineCapStyle, lineJoinStyle = lineJoinStyle)
+  
+    __obj.asInstanceOf[SketchMSBorderOptions]
+  }
+}
+

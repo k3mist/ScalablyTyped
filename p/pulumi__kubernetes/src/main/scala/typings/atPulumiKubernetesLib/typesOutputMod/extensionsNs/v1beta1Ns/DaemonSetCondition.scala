@@ -31,3 +31,18 @@ trait DaemonSetCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object DaemonSetCondition {
+  @scala.inline
+  def apply(
+    lastTransitionTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    status: java.lang.String,
+    `type`: java.lang.String
+  ): DaemonSetCondition = {
+    val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime, message = message, reason = reason, status = status, `type` = `type`)
+  
+    __obj.asInstanceOf[DaemonSetCondition]
+  }
+}
+

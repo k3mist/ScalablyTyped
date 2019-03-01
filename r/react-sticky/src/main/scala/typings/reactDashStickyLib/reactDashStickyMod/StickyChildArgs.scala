@@ -14,3 +14,19 @@ trait StickyChildArgs extends js.Object {
   var wasSticky: scala.Boolean
 }
 
+object StickyChildArgs {
+  @scala.inline
+  def apply(
+    calculatedHeight: scala.Double,
+    distanceFromBottom: scala.Double,
+    distanceFromTop: scala.Double,
+    isSticky: scala.Boolean,
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    wasSticky: scala.Boolean
+  ): StickyChildArgs = {
+    val __obj = js.Dynamic.literal(calculatedHeight = calculatedHeight, distanceFromBottom = distanceFromBottom, distanceFromTop = distanceFromTop, isSticky = isSticky, style = style, wasSticky = wasSticky)
+  
+    __obj.asInstanceOf[StickyChildArgs]
+  }
+}
+

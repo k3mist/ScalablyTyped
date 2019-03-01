@@ -20,3 +20,25 @@ trait WorkflowTask extends js.Object {
   var version: java.lang.String
 }
 
+object WorkflowTask {
+  @scala.inline
+  def apply(
+    alwaysRun: scala.Boolean,
+    condition: java.lang.String,
+    continueOnError: scala.Boolean,
+    definitionType: java.lang.String,
+    enabled: scala.Boolean,
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    name: java.lang.String,
+    overrideInputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    refName: java.lang.String,
+    taskId: java.lang.String,
+    timeoutInMinutes: scala.Double,
+    version: java.lang.String
+  ): WorkflowTask = {
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, definitionType = definitionType, enabled = enabled, inputs = inputs, name = name, overrideInputs = overrideInputs, refName = refName, taskId = taskId, timeoutInMinutes = timeoutInMinutes, version = version)
+  
+    __obj.asInstanceOf[WorkflowTask]
+  }
+}
+

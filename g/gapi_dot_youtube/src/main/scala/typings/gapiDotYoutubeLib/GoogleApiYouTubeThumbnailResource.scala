@@ -28,3 +28,19 @@ trait GoogleApiYouTubeThumbnailResource extends js.Object {
   var standard: js.UndefOr[GoogleApiYouTubeThumbnailItemResource] = js.undefined
 }
 
+object GoogleApiYouTubeThumbnailResource {
+  @scala.inline
+  def apply(
+    default: GoogleApiYouTubeThumbnailItemResource,
+    high: GoogleApiYouTubeThumbnailItemResource,
+    medium: GoogleApiYouTubeThumbnailItemResource,
+    maxres: GoogleApiYouTubeThumbnailItemResource = null,
+    standard: GoogleApiYouTubeThumbnailItemResource = null
+  ): GoogleApiYouTubeThumbnailResource = {
+    val __obj = js.Dynamic.literal(default = default, high = high, medium = medium)
+    if (maxres != null) __obj.updateDynamic("maxres")(maxres)
+    if (standard != null) __obj.updateDynamic("standard")(standard)
+    __obj.asInstanceOf[GoogleApiYouTubeThumbnailResource]
+  }
+}
+

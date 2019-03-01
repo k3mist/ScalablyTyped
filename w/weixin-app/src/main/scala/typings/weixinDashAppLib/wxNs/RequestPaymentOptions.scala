@@ -19,3 +19,23 @@ trait RequestPaymentOptions
   var timeStamp: java.lang.String | scala.Double
 }
 
+object RequestPaymentOptions {
+  @scala.inline
+  def apply(
+    nonceStr: java.lang.String,
+    `package`: java.lang.String,
+    paySign: java.lang.String,
+    signType: PaymentSignType,
+    timeStamp: java.lang.String | scala.Double,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): RequestPaymentOptions = {
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr, `package` = `package`, paySign = paySign, signType = signType, timeStamp = timeStamp.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RequestPaymentOptions]
+  }
+}
+

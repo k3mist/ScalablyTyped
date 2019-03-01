@@ -13,3 +13,18 @@ trait IMenuItemDefinition extends js.Object {
   var order: scala.Double
 }
 
+object IMenuItemDefinition {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    group: java.lang.String,
+    icon: java.lang.String,
+    label: java.lang.String,
+    order: scala.Double
+  ): IMenuItemDefinition = {
+    val __obj = js.Dynamic.literal(command = command, group = group, icon = icon, label = label, order = order)
+  
+    __obj.asInstanceOf[IMenuItemDefinition]
+  }
+}
+

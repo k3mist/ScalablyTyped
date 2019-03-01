@@ -32,3 +32,37 @@ trait ScreenSpaceCameraController extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object ScreenSpaceCameraController {
+  @scala.inline
+  def apply(
+    bounceAnimationTime: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    enableCollisionDetection: scala.Boolean,
+    enableInputs: scala.Boolean,
+    enableLook: scala.Boolean,
+    enableRotate: scala.Boolean,
+    enableTilt: scala.Boolean,
+    enableTranslate: scala.Boolean,
+    enableZoom: scala.Boolean,
+    inertiaSpin: scala.Double,
+    inertiaTranslate: scala.Double,
+    inertiaZoom: scala.Double,
+    isDestroyed: js.Function0[scala.Boolean],
+    lookEventTypes: CameraEventType | js.Array[_],
+    maximumMovementRatio: scala.Double,
+    maximumZoomDistance: scala.Double,
+    minimumCollisionTerrainHeight: scala.Double,
+    minimumPickingTerrainHeight: scala.Double,
+    minimumTrackBallHeight: scala.Double,
+    minimumZoomDistance: scala.Double,
+    rotateEventTypes: CameraEventType | js.Array[_],
+    tiltEventTypes: CameraEventType | js.Array[_],
+    translateEventTypes: CameraEventType | js.Array[_],
+    zoomEventTypes: CameraEventType | js.Array[_]
+  ): ScreenSpaceCameraController = {
+    val __obj = js.Dynamic.literal(bounceAnimationTime = bounceAnimationTime, destroy = destroy, enableCollisionDetection = enableCollisionDetection, enableInputs = enableInputs, enableLook = enableLook, enableRotate = enableRotate, enableTilt = enableTilt, enableTranslate = enableTranslate, enableZoom = enableZoom, inertiaSpin = inertiaSpin, inertiaTranslate = inertiaTranslate, inertiaZoom = inertiaZoom, isDestroyed = isDestroyed, lookEventTypes = lookEventTypes.asInstanceOf[js.Any], maximumMovementRatio = maximumMovementRatio, maximumZoomDistance = maximumZoomDistance, minimumCollisionTerrainHeight = minimumCollisionTerrainHeight, minimumPickingTerrainHeight = minimumPickingTerrainHeight, minimumTrackBallHeight = minimumTrackBallHeight, minimumZoomDistance = minimumZoomDistance, rotateEventTypes = rotateEventTypes.asInstanceOf[js.Any], tiltEventTypes = tiltEventTypes.asInstanceOf[js.Any], translateEventTypes = translateEventTypes.asInstanceOf[js.Any], zoomEventTypes = zoomEventTypes.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ScreenSpaceCameraController]
+  }
+}
+

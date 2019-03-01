@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.VoidTypeAnnotation
 }
 
+object VoidTypeAnnotation {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.VoidTypeAnnotation): VoidTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[VoidTypeAnnotation]
+  }
+}
+

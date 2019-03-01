@@ -116,3 +116,38 @@ trait ChartScrollbarSettings extends js.Object {
   var updateOnReleaseOnly: scala.Boolean
 }
 
+object ChartScrollbarSettings {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    color: java.lang.String,
+    enabled: scala.Boolean,
+    fontSize: java.lang.String,
+    graph: amchartsLib.amgraphMod.default,
+    graphFillAlpha: scala.Double,
+    graphFillColor: java.lang.String,
+    graphLineAlpha: scala.Double,
+    graphLineColor: java.lang.String,
+    graphType: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    height: scala.Double,
+    hideResizeGrips: scala.Boolean,
+    scrollDuration: scala.Double,
+    selectedBackgroundAlpha: scala.Double,
+    selectedBackgroundColor: java.lang.String,
+    selectedGraphFillAlpha: scala.Double,
+    selectedGraphFillColor: java.lang.String,
+    selectedGraphLineAlpha: scala.Double,
+    selectedGraphLineColor: java.lang.String,
+    updateOnReleaseOnly: scala.Boolean
+  ): ChartScrollbarSettings = {
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, color = color, enabled = enabled, fontSize = fontSize, graph = graph, graphFillAlpha = graphFillAlpha, graphFillColor = graphFillColor, graphLineAlpha = graphLineAlpha, graphLineColor = graphLineColor, graphType = graphType, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, height = height, hideResizeGrips = hideResizeGrips, scrollDuration = scrollDuration, selectedBackgroundAlpha = selectedBackgroundAlpha, selectedBackgroundColor = selectedBackgroundColor, selectedGraphFillAlpha = selectedGraphFillAlpha, selectedGraphFillColor = selectedGraphFillColor, selectedGraphLineAlpha = selectedGraphLineAlpha, selectedGraphLineColor = selectedGraphLineColor, updateOnReleaseOnly = updateOnReleaseOnly)
+  
+    __obj.asInstanceOf[ChartScrollbarSettings]
+  }
+}
+

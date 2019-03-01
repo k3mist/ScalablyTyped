@@ -53,3 +53,58 @@ trait MapEventType extends js.Object {
   var zoomstart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]
 }
 
+object MapEventType {
+  @scala.inline
+  def apply(
+    boxzoomcancel: MapBoxZoomEvent,
+    boxzoomend: MapBoxZoomEvent,
+    boxzoomstart: MapBoxZoomEvent,
+    click: MapMouseEvent,
+    contextmenu: MapMouseEvent,
+    data: MapDataEvent,
+    dataloading: MapDataEvent,
+    dblclick: MapMouseEvent,
+    drag: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    dragend: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    dragstart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    error: ErrorEvent,
+    load: MapboxEvent[js.UndefOr[scala.Nothing]],
+    mousedown: MapMouseEvent,
+    mousemove: MapMouseEvent,
+    mouseout: MapMouseEvent,
+    mouseover: MapMouseEvent,
+    mouseup: MapMouseEvent,
+    move: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]],
+    moveend: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]],
+    movestart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]],
+    pitch: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    pitchend: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    pitchstart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    remove: MapboxEvent[js.UndefOr[scala.Nothing]],
+    render: MapboxEvent[js.UndefOr[scala.Nothing]],
+    resize: MapboxEvent[js.UndefOr[scala.Nothing]],
+    rotate: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    rotateend: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    rotatestart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent]],
+    sourcedata: MapSourceDataEvent,
+    sourcedataloading: MapSourceDataEvent,
+    styledata: MapStyleDataEvent,
+    styledataloading: MapStyleDataEvent,
+    tiledataloading: MapDataEvent,
+    touchcancel: MapTouchEvent,
+    touchend: MapTouchEvent,
+    touchmove: MapTouchEvent,
+    touchstart: MapTouchEvent,
+    webglcontextlost: MapContextEvent,
+    webglcontextrestored: MapContextEvent,
+    wheel: MapWheelEvent,
+    zoom: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]],
+    zoomend: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]],
+    zoomstart: MapboxEvent[js.UndefOr[stdLib.MouseEvent | stdLib.TouchEvent | stdLib.WheelEvent]]
+  ): MapEventType = {
+    val __obj = js.Dynamic.literal(boxzoomcancel = boxzoomcancel, boxzoomend = boxzoomend, boxzoomstart = boxzoomstart, click = click, contextmenu = contextmenu, data = data, dataloading = dataloading, dblclick = dblclick, drag = drag, dragend = dragend, dragstart = dragstart, error = error, load = load, mousedown = mousedown, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, move = move, moveend = moveend, movestart = movestart, pitch = pitch, pitchend = pitchend, pitchstart = pitchstart, remove = remove, render = render, resize = resize, rotate = rotate, rotateend = rotateend, rotatestart = rotatestart, sourcedata = sourcedata, sourcedataloading = sourcedataloading, styledata = styledata, styledataloading = styledataloading, tiledataloading = tiledataloading, touchcancel = touchcancel, touchend = touchend, touchmove = touchmove, touchstart = touchstart, webglcontextlost = webglcontextlost, webglcontextrestored = webglcontextrestored, wheel = wheel, zoom = zoom, zoomend = zoomend, zoomstart = zoomstart)
+  
+    __obj.asInstanceOf[MapEventType]
+  }
+}
+

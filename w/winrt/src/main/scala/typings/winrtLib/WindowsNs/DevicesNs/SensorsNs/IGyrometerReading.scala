@@ -12,3 +12,17 @@ trait IGyrometerReading extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object IGyrometerReading {
+  @scala.inline
+  def apply(
+    angularVelocityX: scala.Double,
+    angularVelocityY: scala.Double,
+    angularVelocityZ: scala.Double,
+    timestamp: stdLib.Date
+  ): IGyrometerReading = {
+    val __obj = js.Dynamic.literal(angularVelocityX = angularVelocityX, angularVelocityY = angularVelocityY, angularVelocityZ = angularVelocityZ, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IGyrometerReading]
+  }
+}
+

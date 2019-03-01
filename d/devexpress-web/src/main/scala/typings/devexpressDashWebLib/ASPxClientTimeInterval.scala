@@ -67,3 +67,25 @@ trait ASPxClientTimeInterval extends js.Object {
   def SetStart(value: stdLib.Date): scala.Unit
 }
 
+object ASPxClientTimeInterval {
+  @scala.inline
+  def apply(
+    Contains: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    Equals: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    GetAllDay: js.Function0[scala.Boolean],
+    GetDuration: js.Function0[scala.Double],
+    GetEnd: js.Function0[stdLib.Date],
+    GetStart: js.Function0[stdLib.Date],
+    IntersectsWith: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    IntersectsWithExcludingBounds: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    SetAllDay: js.Function1[scala.Boolean, scala.Unit],
+    SetDuration: js.Function1[js.Any, scala.Unit],
+    SetEnd: js.Function1[stdLib.Date, scala.Unit],
+    SetStart: js.Function1[stdLib.Date, scala.Unit]
+  ): ASPxClientTimeInterval = {
+    val __obj = js.Dynamic.literal(Contains = Contains, Equals = Equals, GetAllDay = GetAllDay, GetDuration = GetDuration, GetEnd = GetEnd, GetStart = GetStart, IntersectsWith = IntersectsWith, IntersectsWithExcludingBounds = IntersectsWithExcludingBounds, SetAllDay = SetAllDay, SetDuration = SetDuration, SetEnd = SetEnd, SetStart = SetStart)
+  
+    __obj.asInstanceOf[ASPxClientTimeInterval]
+  }
+}
+

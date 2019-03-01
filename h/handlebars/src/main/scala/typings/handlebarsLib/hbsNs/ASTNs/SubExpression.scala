@@ -11,3 +11,18 @@ trait SubExpression extends Node {
   var path: PathExpression
 }
 
+object SubExpression {
+  @scala.inline
+  def apply(
+    hash: Hash,
+    loc: SourceLocation,
+    params: js.Array[Expression],
+    path: PathExpression,
+    `type`: java.lang.String
+  ): SubExpression = {
+    val __obj = js.Dynamic.literal(hash = hash, loc = loc, params = params, path = path, `type` = `type`)
+  
+    __obj.asInstanceOf[SubExpression]
+  }
+}
+

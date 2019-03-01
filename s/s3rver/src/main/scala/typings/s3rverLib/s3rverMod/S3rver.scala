@@ -23,3 +23,29 @@ trait S3rver extends js.Object {
   def setSilent(silent: scala.Boolean): S3rver
 }
 
+object S3rver {
+  @scala.inline
+  def apply(
+    run: js.Function1[
+      js.Function4[
+        /* error */ nodeLib.Error, 
+        /* hostname */ java.lang.String, 
+        /* port */ scala.Double, 
+        /* directory */ java.lang.String, 
+        scala.Unit
+      ], 
+      nodeLib.httpMod.Server
+    ],
+    setDirectory: js.Function1[java.lang.String, S3rver],
+    setErrorDocument: js.Function1[java.lang.String, S3rver],
+    setHostname: js.Function1[java.lang.String, S3rver],
+    setIndexDocument: js.Function1[java.lang.String, S3rver],
+    setPort: js.Function1[scala.Double, S3rver],
+    setSilent: js.Function1[scala.Boolean, S3rver]
+  ): S3rver = {
+    val __obj = js.Dynamic.literal(run = run, setDirectory = setDirectory, setErrorDocument = setErrorDocument, setHostname = setHostname, setIndexDocument = setIndexDocument, setPort = setPort, setSilent = setSilent)
+  
+    __obj.asInstanceOf[S3rver]
+  }
+}
+

@@ -16,3 +16,12 @@ trait ISubscriptionRequest extends js.Object {
   var topic: java.lang.String
 }
 
+object ISubscriptionRequest {
+  @scala.inline
+  def apply(qos: mqttDashPacketLib.mqttDashPacketMod.QoS, topic: java.lang.String): ISubscriptionRequest = {
+    val __obj = js.Dynamic.literal(qos = qos, topic = topic)
+  
+    __obj.asInstanceOf[ISubscriptionRequest]
+  }
+}
+

@@ -21,3 +21,28 @@ trait Connection extends js.Object {
   def get(collectionName: java.lang.String, documentID: java.lang.String): sharedbLib.libSharedbMod.Doc
 }
 
+object Connection {
+  @scala.inline
+  def apply(
+    createFetchQuery: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      sharedbLib.Anon_Results, 
+      js.Function2[/* err */ Error, /* results */ js.Any, _], 
+      sharedbLib.libSharedbMod.Query
+    ],
+    createSubscribeQuery: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      sharedbLib.Anon_Results, 
+      js.Function2[/* err */ Error, /* results */ js.Any, _], 
+      sharedbLib.libSharedbMod.Query
+    ],
+    get: js.Function2[java.lang.String, java.lang.String, sharedbLib.libSharedbMod.Doc]
+  ): Connection = {
+    val __obj = js.Dynamic.literal(createFetchQuery = createFetchQuery, createSubscribeQuery = createSubscribeQuery, get = get)
+  
+    __obj.asInstanceOf[Connection]
+  }
+}
+

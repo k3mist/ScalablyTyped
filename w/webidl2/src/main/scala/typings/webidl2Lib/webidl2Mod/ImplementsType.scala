@@ -15,3 +15,17 @@ trait ImplementsType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.implements
 }
 
+object ImplementsType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    implements: java.lang.String,
+    target: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.implements
+  ): ImplementsType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, implements = implements, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[ImplementsType]
+  }
+}
+

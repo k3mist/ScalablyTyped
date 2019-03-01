@@ -21,3 +21,18 @@ trait ConversionPosition
   var location: Point
 }
 
+object ConversionPosition {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    coordinate: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    location: Point,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ConversionPosition = {
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, hasOwnProperty = hasOwnProperty, location = location, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ConversionPosition]
+  }
+}
+

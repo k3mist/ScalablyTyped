@@ -10,3 +10,15 @@ trait Anon_NameScriptLocationInput extends js.Object {
   var scriptLocation: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_NameScriptLocationInput {
+  @scala.inline
+  def apply(
+    scriptLocation: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_NameScriptLocationInput = {
+    val __obj = js.Dynamic.literal(scriptLocation = scriptLocation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NameScriptLocationInput]
+  }
+}
+

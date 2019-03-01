@@ -127,3 +127,68 @@ trait XStringResourceManager extends XStringResourceResolver {
   ): scala.Unit
 }
 
+object XStringResourceManager {
+  @scala.inline
+  def apply(
+    CurrentLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    ResourceIDs: activexDashInteropLib.SafeArray[java.lang.String],
+    UniqueNumericId: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    getCurrentLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getDefaultLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getResourceIDs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getResourceIDsForLocale: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getUniqueNumericId: js.Function0[scala.Double],
+    hasEntryForId: js.Function1[java.lang.String, scala.Boolean],
+    hasEntryForIdAndLocale: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean
+    ],
+    isReadOnly: js.Function0[scala.Boolean],
+    newLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeId: js.Function1[java.lang.String, scala.Unit],
+    removeIdForLocale: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    removeLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    resolveString: js.Function1[java.lang.String, java.lang.String],
+    resolveStringForLocale: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    setCurrentLocale: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    setDefaultLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    setString: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setStringForLocale: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ]
+  ): XStringResourceManager = {
+    val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale, DefaultLocale = DefaultLocale, Locales = Locales, ResourceIDs = ResourceIDs, UniqueNumericId = UniqueNumericId, acquire = acquire, addModifyListener = addModifyListener, getCurrentLocale = getCurrentLocale, getDefaultLocale = getDefaultLocale, getLocales = getLocales, getResourceIDs = getResourceIDs, getResourceIDsForLocale = getResourceIDsForLocale, getUniqueNumericId = getUniqueNumericId, hasEntryForId = hasEntryForId, hasEntryForIdAndLocale = hasEntryForIdAndLocale, isReadOnly = isReadOnly, newLocale = newLocale, queryInterface = queryInterface, release = release, removeId = removeId, removeIdForLocale = removeIdForLocale, removeLocale = removeLocale, removeModifyListener = removeModifyListener, resolveString = resolveString, resolveStringForLocale = resolveStringForLocale, setCurrentLocale = setCurrentLocale, setDefaultLocale = setDefaultLocale, setString = setString, setStringForLocale = setStringForLocale)
+  
+    __obj.asInstanceOf[XStringResourceManager]
+  }
+}
+

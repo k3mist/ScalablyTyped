@@ -32,3 +32,23 @@ trait XTableUIProvider extends js.Object {
   def getTableIcon(TableName: java.lang.String, ColorMode: scala.Double): activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
 }
 
+object XTableUIProvider {
+  @scala.inline
+  def apply(
+    getTableEditor: js.Function2[
+      XDatabaseDocumentUI, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    getTableIcon: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
+    ]
+  ): XTableUIProvider = {
+    val __obj = js.Dynamic.literal(getTableEditor = getTableEditor, getTableIcon = getTableIcon)
+  
+    __obj.asInstanceOf[XTableUIProvider]
+  }
+}
+

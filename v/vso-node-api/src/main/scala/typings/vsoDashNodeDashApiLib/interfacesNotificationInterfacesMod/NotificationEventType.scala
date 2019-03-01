@@ -38,3 +38,25 @@ trait NotificationEventType extends js.Object {
   var url: java.lang.String
 }
 
+object NotificationEventType {
+  @scala.inline
+  def apply(
+    category: NotificationEventTypeCategory,
+    color: java.lang.String,
+    customSubscriptionsAllowed: scala.Boolean,
+    eventPublisher: NotificationEventPublisher,
+    fields: org.scalablytyped.runtime.StringDictionary[NotificationEventField],
+    hasInitiator: scala.Boolean,
+    icon: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    roles: js.Array[NotificationEventRole],
+    supportedScopes: js.Array[java.lang.String],
+    url: java.lang.String
+  ): NotificationEventType = {
+    val __obj = js.Dynamic.literal(category = category, color = color, customSubscriptionsAllowed = customSubscriptionsAllowed, eventPublisher = eventPublisher, fields = fields, hasInitiator = hasInitiator, icon = icon, id = id, name = name, roles = roles, supportedScopes = supportedScopes, url = url)
+  
+    __obj.asInstanceOf[NotificationEventType]
+  }
+}
+

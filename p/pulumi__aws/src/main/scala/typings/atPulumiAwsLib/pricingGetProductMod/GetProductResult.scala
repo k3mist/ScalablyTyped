@@ -16,3 +16,12 @@ trait GetProductResult extends js.Object {
   val result: java.lang.String
 }
 
+object GetProductResult {
+  @scala.inline
+  def apply(id: java.lang.String, result: java.lang.String): GetProductResult = {
+    val __obj = js.Dynamic.literal(id = id, result = result)
+  
+    __obj.asInstanceOf[GetProductResult]
+  }
+}
+

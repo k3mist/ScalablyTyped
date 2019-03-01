@@ -44,3 +44,22 @@ trait GetClusterResult extends js.Object {
   val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    certificateAuthority: atPulumiAwsLib.Anon_DataString,
+    createdAt: java.lang.String,
+    endpoint: java.lang.String,
+    id: java.lang.String,
+    platformVersion: java.lang.String,
+    roleArn: java.lang.String,
+    version: java.lang.String,
+    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
+  
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

@@ -19,3 +19,19 @@ trait Transformoptions extends js.Object {
   var translateY: scala.Double
 }
 
+object Transformoptions {
+  @scala.inline
+  def apply(
+    scaleX: scala.Double,
+    scaleY: scala.Double,
+    skewX: scala.Double,
+    skewY: scala.Double,
+    translateX: scala.Double,
+    translateY: scala.Double
+  ): Transformoptions = {
+    val __obj = js.Dynamic.literal(scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, translateX = translateX, translateY = translateY)
+  
+    __obj.asInstanceOf[Transformoptions]
+  }
+}
+

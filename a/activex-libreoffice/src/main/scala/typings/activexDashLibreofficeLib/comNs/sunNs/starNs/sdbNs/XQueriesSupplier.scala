@@ -24,3 +24,18 @@ trait XQueriesSupplier
   def getQueries(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XQueriesSupplier {
+  @scala.inline
+  def apply(
+    Queries: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getQueries: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XQueriesSupplier = {
+    val __obj = js.Dynamic.literal(Queries = Queries, acquire = acquire, getQueries = getQueries, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XQueriesSupplier]
+  }
+}
+

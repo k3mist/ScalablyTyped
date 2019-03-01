@@ -17,3 +17,12 @@ trait FeatureState extends js.Object {
   var State: js.Any
 }
 
+object FeatureState {
+  @scala.inline
+  def apply(Enabled: scala.Boolean, State: js.Any): FeatureState = {
+    val __obj = js.Dynamic.literal(Enabled = Enabled, State = State)
+  
+    __obj.asInstanceOf[FeatureState]
+  }
+}
+

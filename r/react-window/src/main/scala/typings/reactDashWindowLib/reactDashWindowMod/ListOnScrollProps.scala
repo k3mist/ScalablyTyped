@@ -11,3 +11,16 @@ trait ListOnScrollProps extends js.Object {
   var scrollUpdateWasRequested: scala.Boolean
 }
 
+object ListOnScrollProps {
+  @scala.inline
+  def apply(
+    scrollDirection: ScrollDirection,
+    scrollOffset: scala.Double,
+    scrollUpdateWasRequested: scala.Boolean
+  ): ListOnScrollProps = {
+    val __obj = js.Dynamic.literal(scrollDirection = scrollDirection, scrollOffset = scrollOffset, scrollUpdateWasRequested = scrollUpdateWasRequested)
+  
+    __obj.asInstanceOf[ListOnScrollProps]
+  }
+}
+

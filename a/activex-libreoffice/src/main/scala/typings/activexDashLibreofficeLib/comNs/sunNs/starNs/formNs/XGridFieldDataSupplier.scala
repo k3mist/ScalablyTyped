@@ -39,3 +39,18 @@ trait XGridFieldDataSupplier
   def queryFieldDataType(xType: activexDashLibreofficeLib.`type`): activexDashInteropLib.SafeArray[scala.Boolean]
 }
 
+object XGridFieldDataSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryFieldData: js.Function2[scala.Double, activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[_]],
+    queryFieldDataType: js.Function1[activexDashLibreofficeLib.`type`, activexDashInteropLib.SafeArray[scala.Boolean]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGridFieldDataSupplier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryFieldData = queryFieldData, queryFieldDataType = queryFieldDataType, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGridFieldDataSupplier]
+  }
+}
+

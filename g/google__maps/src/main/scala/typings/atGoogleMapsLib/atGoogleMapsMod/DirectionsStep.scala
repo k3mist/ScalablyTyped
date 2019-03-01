@@ -44,3 +44,22 @@ trait DirectionsStep extends js.Object {
   var transit_details: TransitDetails
 }
 
+object DirectionsStep {
+  @scala.inline
+  def apply(
+    distance: Distance,
+    duration: Duration,
+    end_location: LatLngLiteral,
+    html_instructions: java.lang.String,
+    maneuver: Maneuver,
+    polyline: java.lang.String,
+    start_location: LatLngLiteral,
+    steps: DirectionsStep,
+    transit_details: TransitDetails
+  ): DirectionsStep = {
+    val __obj = js.Dynamic.literal(distance = distance, duration = duration, end_location = end_location, html_instructions = html_instructions, maneuver = maneuver, polyline = polyline, start_location = start_location, steps = steps, transit_details = transit_details)
+  
+    __obj.asInstanceOf[DirectionsStep]
+  }
+}
+

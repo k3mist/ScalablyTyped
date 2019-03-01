@@ -11,3 +11,24 @@ trait ISyndicationCategory extends ISyndicationNode {
   var term: java.lang.String
 }
 
+object ISyndicationCategory {
+  @scala.inline
+  def apply(
+    attributeExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute],
+    baseUri: winrtLib.WindowsNs.FoundationNs.Uri,
+    elementExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
+    getXmlDocument: js.Function1[SyndicationFormat, winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    label: java.lang.String,
+    language: java.lang.String,
+    nodeName: java.lang.String,
+    nodeNamespace: java.lang.String,
+    nodeValue: java.lang.String,
+    scheme: java.lang.String,
+    term: java.lang.String
+  ): ISyndicationCategory = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, label = label, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, scheme = scheme, term = term)
+  
+    __obj.asInstanceOf[ISyndicationCategory]
+  }
+}
+

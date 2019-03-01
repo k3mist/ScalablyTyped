@@ -14,3 +14,18 @@ trait Project extends js.Object {
   var write: scala.Boolean
 }
 
+object Project {
+  @scala.inline
+  def apply(
+    branches: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    delete: scala.Boolean,
+    name: java.lang.String,
+    read: scala.Boolean,
+    write: scala.Boolean
+  ): Project = {
+    val __obj = js.Dynamic.literal(branches = branches, delete = delete, name = name, read = read, write = write)
+  
+    __obj.asInstanceOf[Project]
+  }
+}
+

@@ -25,3 +25,12 @@ trait Anon_Indicate extends js.Object {
   var write: scala.Boolean
 }
 
+object Anon_Indicate {
+  @scala.inline
+  def apply(indicate: scala.Boolean, notify: scala.Boolean, read: scala.Boolean, write: scala.Boolean): Anon_Indicate = {
+    val __obj = js.Dynamic.literal(indicate = indicate, notify = notify, read = read, write = write)
+  
+    __obj.asInstanceOf[Anon_Indicate]
+  }
+}
+

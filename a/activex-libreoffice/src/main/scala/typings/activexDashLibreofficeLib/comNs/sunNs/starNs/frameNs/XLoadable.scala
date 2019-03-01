@@ -25,3 +25,21 @@ trait XLoadable
   ): scala.Unit
 }
 
+object XLoadable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    initNew: js.Function0[scala.Unit],
+    load: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLoadable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, initNew = initNew, load = load, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLoadable]
+  }
+}
+

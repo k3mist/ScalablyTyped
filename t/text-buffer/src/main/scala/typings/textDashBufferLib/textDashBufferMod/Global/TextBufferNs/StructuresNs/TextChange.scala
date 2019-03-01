@@ -15,3 +15,20 @@ trait TextChange extends js.Object {
   var start: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point
 }
 
+object TextChange {
+  @scala.inline
+  def apply(
+    newExtent: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range,
+    newText: java.lang.String,
+    oldExtent: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range,
+    oldText: java.lang.String,
+    start: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point
+  ): TextChange = {
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newRange = newRange, newText = newText, oldExtent = oldExtent, oldRange = oldRange, oldText = oldText, start = start)
+  
+    __obj.asInstanceOf[TextChange]
+  }
+}
+

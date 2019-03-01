@@ -56,3 +56,39 @@ trait Device extends js.Object {
   var vendorIdSource: js.UndefOr[DeviceVendorIdSource] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    inquiryRssi: chromeDashAppsLib.chromeNs.integer,
+    inquiryTxPower: chromeDashAppsLib.chromeNs.integer,
+    connectable: js.UndefOr[scala.Boolean] = js.undefined,
+    connected: js.UndefOr[scala.Boolean] = js.undefined,
+    connecting: js.UndefOr[scala.Boolean] = js.undefined,
+    deviceClass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    deviceId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    name: java.lang.String = null,
+    paired: js.UndefOr[scala.Boolean] = js.undefined,
+    productId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    `type`: DeviceType = null,
+    uuids: js.Array[java.lang.String] = null,
+    vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    vendorIdSource: DeviceVendorIdSource = null
+  ): Device = {
+    val __obj = js.Dynamic.literal(address = address, inquiryRssi = inquiryRssi, inquiryTxPower = inquiryTxPower)
+    if (!js.isUndefined(connectable)) __obj.updateDynamic("connectable")(connectable)
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
+    if (!js.isUndefined(connecting)) __obj.updateDynamic("connecting")(connecting)
+    if (!js.isUndefined(deviceClass)) __obj.updateDynamic("deviceClass")(deviceClass)
+    if (!js.isUndefined(deviceId)) __obj.updateDynamic("deviceId")(deviceId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(paired)) __obj.updateDynamic("paired")(paired)
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (uuids != null) __obj.updateDynamic("uuids")(uuids)
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId)
+    if (vendorIdSource != null) __obj.updateDynamic("vendorIdSource")(vendorIdSource)
+    __obj.asInstanceOf[Device]
+  }
+}
+

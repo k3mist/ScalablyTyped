@@ -11,3 +11,16 @@ trait ICrossSlidingEventArgs extends js.Object {
   var position: winrtLib.WindowsNs.FoundationNs.Point
 }
 
+object ICrossSlidingEventArgs {
+  @scala.inline
+  def apply(
+    crossSlidingState: CrossSlidingState,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point
+  ): ICrossSlidingEventArgs = {
+    val __obj = js.Dynamic.literal(crossSlidingState = crossSlidingState, pointerDeviceType = pointerDeviceType, position = position)
+  
+    __obj.asInstanceOf[ICrossSlidingEventArgs]
+  }
+}
+

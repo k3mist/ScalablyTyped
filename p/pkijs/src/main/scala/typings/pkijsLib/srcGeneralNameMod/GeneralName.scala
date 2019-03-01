@@ -25,3 +25,18 @@ trait GeneralName extends js.Object {
   def toSchema(): js.Any
 }
 
+object GeneralName {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    `type`: scala.Double,
+    value: js.Any
+  ): GeneralName = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[GeneralName]
+  }
+}
+

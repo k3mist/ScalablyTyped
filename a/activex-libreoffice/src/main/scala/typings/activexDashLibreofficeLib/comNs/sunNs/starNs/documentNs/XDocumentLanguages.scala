@@ -14,3 +14,21 @@ trait XDocumentLanguages
   def getDocumentLanguages(nScriptTypes: scala.Double, nCount: scala.Double): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
 }
 
+object XDocumentLanguages {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDocumentLanguages: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDocumentLanguages = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getDocumentLanguages = getDocumentLanguages, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDocumentLanguages]
+  }
+}
+

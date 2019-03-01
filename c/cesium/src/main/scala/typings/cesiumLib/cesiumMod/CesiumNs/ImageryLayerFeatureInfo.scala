@@ -14,3 +14,19 @@ trait ImageryLayerFeatureInfo extends js.Object {
   def configureNameFromProperties(properties: js.Any): scala.Unit
 }
 
+object ImageryLayerFeatureInfo {
+  @scala.inline
+  def apply(
+    configureDescriptionFromProperties: js.Function1[js.Any, scala.Unit],
+    configureNameFromProperties: js.Function1[js.Any, scala.Unit],
+    data: js.Any,
+    description: java.lang.String,
+    name: java.lang.String,
+    position: Cartographic
+  ): ImageryLayerFeatureInfo = {
+    val __obj = js.Dynamic.literal(configureDescriptionFromProperties = configureDescriptionFromProperties, configureNameFromProperties = configureNameFromProperties, data = data, description = description, name = name, position = position)
+  
+    __obj.asInstanceOf[ImageryLayerFeatureInfo]
+  }
+}
+

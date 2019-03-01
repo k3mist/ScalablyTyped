@@ -33,3 +33,32 @@ trait XTableCharts
   def removeByName(aName: java.lang.String): scala.Unit
 }
 
+object XTableCharts {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addNewByName: js.Function5[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress], 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByName: js.Function1[java.lang.String, scala.Unit]
+  ): XTableCharts = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addNewByName = addNewByName, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release, removeByName = removeByName)
+  
+    __obj.asInstanceOf[XTableCharts]
+  }
+}
+

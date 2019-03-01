@@ -14,3 +14,19 @@ trait Queue extends js.Object {
   var state: java.lang.String
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    appEngineHttpQueue: AppEngineHttpQueue,
+    name: java.lang.String,
+    purgeTime: java.lang.String,
+    rateLimits: RateLimits,
+    retryConfig: RetryConfig,
+    state: java.lang.String
+  ): Queue = {
+    val __obj = js.Dynamic.literal(appEngineHttpQueue = appEngineHttpQueue, name = name, purgeTime = purgeTime, rateLimits = rateLimits, retryConfig = retryConfig, state = state)
+  
+    __obj.asInstanceOf[Queue]
+  }
+}
+

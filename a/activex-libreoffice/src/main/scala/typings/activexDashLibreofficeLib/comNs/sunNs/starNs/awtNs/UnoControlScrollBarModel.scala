@@ -80,3 +80,98 @@ trait UnoControlScrollBarModel extends UnoControlModel {
   var VisibleSize: scala.Double
 }
 
+object UnoControlScrollBarModel {
+  @scala.inline
+  def apply(
+    BackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BlockIncrement: scala.Double,
+    Border: scala.Double,
+    BorderColor: scala.Double,
+    DefaultControl: java.lang.String,
+    Enabled: scala.Boolean,
+    Height: scala.Double,
+    HelpText: java.lang.String,
+    HelpURL: java.lang.String,
+    LineIncrement: scala.Double,
+    LiveScroll: scala.Boolean,
+    Name: java.lang.String,
+    Orientation: scala.Double,
+    PositionX: java.lang.String,
+    PositionY: java.lang.String,
+    Printable: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RepeatDelay: scala.Double,
+    ScrollValue: scala.Double,
+    ScrollValueMax: scala.Double,
+    ScrollValueMin: scala.Double,
+    ServiceName: java.lang.String,
+    Step: scala.Double,
+    SymbolColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TabIndex: scala.Double,
+    Tabstop: scala.Boolean,
+    Tag: java.lang.String,
+    VisibleSize: scala.Double,
+    Width: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectInputStream, scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
+  ): UnoControlScrollBarModel = {
+    val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor, BlockIncrement = BlockIncrement, Border = Border, BorderColor = BorderColor, DefaultControl = DefaultControl, Enabled = Enabled, Height = Height, HelpText = HelpText, HelpURL = HelpURL, LineIncrement = LineIncrement, LiveScroll = LiveScroll, Name = Name, Orientation = Orientation, PositionX = PositionX, PositionY = PositionY, Printable = Printable, PropertySetInfo = PropertySetInfo, RepeatDelay = RepeatDelay, ScrollValue = ScrollValue, ScrollValueMax = ScrollValueMax, ScrollValueMin = ScrollValueMin, ServiceName = ServiceName, Step = Step, SymbolColor = SymbolColor, TabIndex = TabIndex, Tabstop = Tabstop, Tag = Tag, VisibleSize = VisibleSize, Width = Width, acquire = acquire, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createClone = createClone, dispose = dispose, firePropertiesChangeEvent = firePropertiesChangeEvent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues, write = write)
+  
+    __obj.asInstanceOf[UnoControlScrollBarModel]
+  }
+}
+

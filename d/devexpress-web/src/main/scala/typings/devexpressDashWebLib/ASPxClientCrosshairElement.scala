@@ -46,3 +46,20 @@ trait ASPxClientCrosshairElement extends js.Object {
   var visible: scala.Boolean
 }
 
+object ASPxClientCrosshairElement {
+  @scala.inline
+  def apply(
+    AxisLabelElement: ASPxClientCrosshairAxisLabelElement,
+    Indicator: ASPxClientIndicator,
+    LabelElement: ASPxClientCrosshairSeriesLabelElement,
+    LineElement: ASPxClientCrosshairLineElement,
+    Point: ASPxClientSeriesPoint,
+    Series: ASPxClientSeries,
+    visible: scala.Boolean
+  ): ASPxClientCrosshairElement = {
+    val __obj = js.Dynamic.literal(AxisLabelElement = AxisLabelElement, Indicator = Indicator, LabelElement = LabelElement, LineElement = LineElement, Point = Point, Series = Series, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientCrosshairElement]
+  }
+}
+

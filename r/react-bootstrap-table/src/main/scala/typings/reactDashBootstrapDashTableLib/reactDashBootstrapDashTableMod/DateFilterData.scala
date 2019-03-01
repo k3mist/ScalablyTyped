@@ -10,3 +10,15 @@ trait DateFilterData extends FilterValue {
   var value: DateFilterValue
 }
 
+object DateFilterData {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.DateFilter,
+    value: DateFilterValue
+  ): DateFilterData = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[DateFilterData]
+  }
+}
+

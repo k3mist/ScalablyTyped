@@ -51,3 +51,23 @@ trait ChangeRuleMatch
   var ruleID: java.lang.String
 }
 
+object ChangeRuleMatch {
+  @scala.inline
+  def apply(
+    changeTime: stdLib.Date,
+    changeType: java.lang.String,
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    dataset: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    jobID: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    ruleID: java.lang.String
+  ): ChangeRuleMatch = {
+    val __obj = js.Dynamic.literal(changeTime = changeTime, changeType = changeType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = hasOwnProperty, id = id, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable, ruleID = ruleID)
+  
+    __obj.asInstanceOf[ChangeRuleMatch]
+  }
+}
+

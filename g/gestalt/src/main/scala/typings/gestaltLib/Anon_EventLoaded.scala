@@ -10,3 +10,15 @@ trait Anon_EventLoaded extends js.Object {
   var loaded: scala.Double
 }
 
+object Anon_EventLoaded {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLVideoElement, reactLib.Event],
+    loaded: scala.Double
+  ): Anon_EventLoaded = {
+    val __obj = js.Dynamic.literal(event = event, loaded = loaded)
+  
+    __obj.asInstanceOf[Anon_EventLoaded]
+  }
+}
+

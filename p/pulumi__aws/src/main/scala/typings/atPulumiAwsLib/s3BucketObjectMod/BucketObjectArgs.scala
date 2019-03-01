@@ -85,3 +85,45 @@ trait BucketObjectArgs extends js.Object {
   val websiteRedirect: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object BucketObjectArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.s3BucketMod.Bucket],
+    acl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    cacheControl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    content: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentBase64: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentDisposition: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentEncoding: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentLanguage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    etag: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    key: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    serverSideEncryption: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    source: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Asset] = null,
+    storageClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    websiteRedirect: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): BucketObjectArgs = {
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentBase64 != null) __obj.updateDynamic("contentBase64")(contentBase64.asInstanceOf[js.Any])
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (websiteRedirect != null) __obj.updateDynamic("websiteRedirect")(websiteRedirect.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketObjectArgs]
+  }
+}
+

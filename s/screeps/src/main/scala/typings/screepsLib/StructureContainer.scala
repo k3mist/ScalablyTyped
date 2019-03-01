@@ -26,3 +26,25 @@ trait StructureContainer
   var ticksToDecay: scala.Double
 }
 
+object StructureContainer {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    pos: RoomPosition,
+    room: Room,
+    store: StoreDefinition,
+    storeCapacity: scala.Double,
+    structureType: STRUCTURE_CONTAINER,
+    ticksToDecay: scala.Double
+  ): StructureContainer = {
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, store = store, storeCapacity = storeCapacity, structureType = structureType, ticksToDecay = ticksToDecay)
+  
+    __obj.asInstanceOf[StructureContainer]
+  }
+}
+

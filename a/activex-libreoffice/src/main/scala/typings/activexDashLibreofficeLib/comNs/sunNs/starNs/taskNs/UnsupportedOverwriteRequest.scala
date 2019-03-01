@@ -17,3 +17,17 @@ trait UnsupportedOverwriteRequest extends ClassifiedInteractionRequest {
   var Name: java.lang.String
 }
 
+object UnsupportedOverwriteRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Name: java.lang.String
+  ): UnsupportedOverwriteRequest = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Message = Message, Name = Name)
+  
+    __obj.asInstanceOf[UnsupportedOverwriteRequest]
+  }
+}
+

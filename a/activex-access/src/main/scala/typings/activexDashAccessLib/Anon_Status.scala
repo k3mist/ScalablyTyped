@@ -9,3 +9,12 @@ trait Anon_Status extends js.Object {
   var Status: scala.Double
 }
 
+object Anon_Status {
+  @scala.inline
+  def apply(Status: scala.Double): Anon_Status = {
+    val __obj = js.Dynamic.literal(Status = Status)
+  
+    __obj.asInstanceOf[Anon_Status]
+  }
+}
+

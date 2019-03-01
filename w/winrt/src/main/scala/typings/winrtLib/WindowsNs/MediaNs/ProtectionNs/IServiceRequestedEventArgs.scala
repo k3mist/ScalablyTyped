@@ -10,3 +10,12 @@ trait IServiceRequestedEventArgs extends js.Object {
   var request: IMediaProtectionServiceRequest
 }
 
+object IServiceRequestedEventArgs {
+  @scala.inline
+  def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): IServiceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion, request = request)
+  
+    __obj.asInstanceOf[IServiceRequestedEventArgs]
+  }
+}
+

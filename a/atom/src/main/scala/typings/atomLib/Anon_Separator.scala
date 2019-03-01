@@ -10,3 +10,12 @@ trait Anon_Separator
   var `type`: atomLib.atomLibStrings.separator
 }
 
+object Anon_Separator {
+  @scala.inline
+  def apply(`type`: atomLib.atomLibStrings.separator): Anon_Separator = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Separator]
+  }
+}
+

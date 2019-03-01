@@ -24,3 +24,22 @@ trait XModuleTypeDescription extends XTypeDescription {
   def getMembers(): activexDashInteropLib.SafeArray[XTypeDescription]
 }
 
+object XModuleTypeDescription {
+  @scala.inline
+  def apply(
+    Members: activexDashInteropLib.SafeArray[XTypeDescription],
+    Name: java.lang.String,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getMembers: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XModuleTypeDescription = {
+    val __obj = js.Dynamic.literal(Members = Members, Name = Name, TypeClass = TypeClass, acquire = acquire, getMembers = getMembers, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XModuleTypeDescription]
+  }
+}
+

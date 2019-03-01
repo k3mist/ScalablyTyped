@@ -21,3 +21,18 @@ trait VisualVariablesResultSize
   var visualVariables: js.Array[SizeVariable]
 }
 
+object VisualVariablesResultSize {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sizeScheme: SizeScheme,
+    visualVariables: js.Array[SizeVariable]
+  ): VisualVariablesResultSize = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, visualVariables = visualVariables)
+  
+    __obj.asInstanceOf[VisualVariablesResultSize]
+  }
+}
+

@@ -55,3 +55,51 @@ trait FsModule extends js.Object {
   def write(path: java.lang.String, content: js.Any, mode: java.lang.String): scala.Unit
 }
 
+object FsModule {
+  @scala.inline
+  def apply(
+    absolute: js.Function1[java.lang.String, java.lang.String],
+    base: js.Function1[java.lang.String, java.lang.String],
+    basename: js.Function1[java.lang.String, java.lang.String],
+    changeWorkingDirectory: js.Function1[java.lang.String, scala.Unit],
+    copy: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    copyTree: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    directory: js.Function1[java.lang.String, java.lang.String],
+    dirname: js.Function1[java.lang.String, java.lang.String],
+    exists: js.Function1[java.lang.String, scala.Boolean],
+    extension: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
+    isAbsolute: js.Function1[java.lang.String, scala.Boolean],
+    isDirectory: js.Function1[java.lang.String, scala.Boolean],
+    isExecutable: js.Function1[java.lang.String, scala.Boolean],
+    isFile: js.Function1[java.lang.String, scala.Boolean],
+    isLink: js.Function1[java.lang.String, scala.Boolean],
+    isReadable: js.Function1[java.lang.String, scala.Boolean],
+    isWritable: js.Function1[java.lang.String, scala.Boolean],
+    join: js.Function3[java.lang.String, java.lang.String, /* repeated */ java.lang.String, java.lang.String],
+    lastModified: js.Function1[java.lang.String, stdLib.Date],
+    list: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    makeDirectory: js.Function1[java.lang.String, scala.Unit],
+    makeTree: js.Function1[java.lang.String, scala.Unit],
+    mkpath: js.Function1[java.lang.String, scala.Unit],
+    move: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    open: js.Function2[java.lang.String, Opts, scala.Unit],
+    read: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    readLink: js.Function1[java.lang.String, java.lang.String],
+    remove: js.Function1[java.lang.String, scala.Unit],
+    removeDirectory: js.Function1[java.lang.String, scala.Unit],
+    removeTree: js.Function1[java.lang.String, scala.Unit],
+    rename: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    rmdir: js.Function1[java.lang.String, scala.Unit],
+    separator: java.lang.String,
+    size: js.Function1[java.lang.String, scala.Double],
+    split: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    touch: js.Function2[java.lang.String, stdLib.Date, scala.Unit],
+    workingDirectory: java.lang.String,
+    write: js.Function3[java.lang.String, js.Any, java.lang.String, scala.Unit]
+  ): FsModule = {
+    val __obj = js.Dynamic.literal(absolute = absolute, base = base, basename = basename, changeWorkingDirectory = changeWorkingDirectory, copy = copy, copyTree = copyTree, directory = directory, dirname = dirname, exists = exists, extension = extension, isAbsolute = isAbsolute, isDirectory = isDirectory, isExecutable = isExecutable, isFile = isFile, isLink = isLink, isReadable = isReadable, isWritable = isWritable, join = join, lastModified = lastModified, list = list, makeDirectory = makeDirectory, makeTree = makeTree, mkpath = mkpath, move = move, open = open, read = read, readLink = readLink, remove = remove, removeDirectory = removeDirectory, removeTree = removeTree, rename = rename, rmdir = rmdir, separator = separator, size = size, split = split, touch = touch, workingDirectory = workingDirectory, write = write)
+  
+    __obj.asInstanceOf[FsModule]
+  }
+}
+

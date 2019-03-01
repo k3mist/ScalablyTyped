@@ -99,3 +99,31 @@ trait AuxRecordValue
   var userVisible: scala.Boolean
 }
 
+object AuxRecordValue {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    canUpdate: scala.Boolean,
+    constructor: js.Function,
+    data: js.Any,
+    dataType: java.lang.String,
+    displayOrder: scala.Double,
+    displayType: java.lang.String,
+    domain: java.lang.String,
+    filter: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    length: scala.Double,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    required: scala.Boolean,
+    tableListClass: java.lang.String,
+    tableListDisplayField: java.lang.String,
+    tableListStoreField: java.lang.String,
+    userVisible: scala.Boolean
+  ): AuxRecordValue = {
+    val __obj = js.Dynamic.literal(alias = alias, canUpdate = canUpdate, constructor = constructor, data = data, dataType = dataType, displayOrder = displayOrder, displayType = displayType, domain = domain, filter = filter, hasOwnProperty = hasOwnProperty, length = length, name = name, propertyIsEnumerable = propertyIsEnumerable, required = required, tableListClass = tableListClass, tableListDisplayField = tableListDisplayField, tableListStoreField = tableListStoreField, userVisible = userVisible)
+  
+    __obj.asInstanceOf[AuxRecordValue]
+  }
+}
+

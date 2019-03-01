@@ -10,3 +10,15 @@ trait Anon_BlurSteps extends js.Object {
   var circleOfConfusion: babylonjsLib.BABYLONNs.PostProcess
 }
 
+object Anon_BlurSteps {
+  @scala.inline
+  def apply(
+    blurSteps: js.Array[babylonjsLib.BABYLONNs.PostProcess],
+    circleOfConfusion: babylonjsLib.BABYLONNs.PostProcess
+  ): Anon_BlurSteps = {
+    val __obj = js.Dynamic.literal(blurSteps = blurSteps, circleOfConfusion = circleOfConfusion)
+  
+    __obj.asInstanceOf[Anon_BlurSteps]
+  }
+}
+

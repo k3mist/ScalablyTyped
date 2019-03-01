@@ -21,3 +21,29 @@ trait RenderData extends js.Object {
   var year: scala.Double
 }
 
+object RenderData {
+  @scala.inline
+  def apply(
+    days: js.Array[CalendarDay],
+    daysOfTheWeek: js.Array[java.lang.String],
+    eventsLastMonth: js.Array[_],
+    eventsNextMonth: js.Array[_],
+    eventsThisMonth: js.Array[_],
+    month: java.lang.String,
+    months: js.Array[Month],
+    numberOfRows: scala.Double,
+    year: scala.Double,
+    eventsThisInterval: js.Array[_] = null,
+    extras: js.Any = null,
+    intervalEnd: momentLib.momentMod.momentNs.Moment = null,
+    intervalStart: momentLib.momentMod.momentNs.Moment = null
+  ): RenderData = {
+    val __obj = js.Dynamic.literal(days = days, daysOfTheWeek = daysOfTheWeek, eventsLastMonth = eventsLastMonth, eventsNextMonth = eventsNextMonth, eventsThisMonth = eventsThisMonth, month = month, months = months, numberOfRows = numberOfRows, year = year)
+    if (eventsThisInterval != null) __obj.updateDynamic("eventsThisInterval")(eventsThisInterval)
+    if (extras != null) __obj.updateDynamic("extras")(extras)
+    if (intervalEnd != null) __obj.updateDynamic("intervalEnd")(intervalEnd)
+    if (intervalStart != null) __obj.updateDynamic("intervalStart")(intervalStart)
+    __obj.asInstanceOf[RenderData]
+  }
+}
+

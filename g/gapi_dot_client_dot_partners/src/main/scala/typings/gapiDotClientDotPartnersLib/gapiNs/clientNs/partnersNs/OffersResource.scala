@@ -11,3 +11,18 @@ trait OffersResource extends js.Object {
   def list(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListOffersResponse]
 }
 
+object OffersResource {
+  @scala.inline
+  def apply(
+    history: HistoryResource,
+    list: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOffersResponse]
+    ]
+  ): OffersResource = {
+    val __obj = js.Dynamic.literal(history = history, list = list)
+  
+    __obj.asInstanceOf[OffersResource]
+  }
+}
+

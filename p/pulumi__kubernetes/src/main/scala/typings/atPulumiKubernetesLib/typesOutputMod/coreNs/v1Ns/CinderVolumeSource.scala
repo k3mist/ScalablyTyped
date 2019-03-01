@@ -33,3 +33,17 @@ trait CinderVolumeSource extends js.Object {
   val volumeID: java.lang.String
 }
 
+object CinderVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    readOnly: scala.Boolean,
+    secretRef: LocalObjectReference,
+    volumeID: java.lang.String
+  ): CinderVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, readOnly = readOnly, secretRef = secretRef, volumeID = volumeID)
+  
+    __obj.asInstanceOf[CinderVolumeSource]
+  }
+}
+

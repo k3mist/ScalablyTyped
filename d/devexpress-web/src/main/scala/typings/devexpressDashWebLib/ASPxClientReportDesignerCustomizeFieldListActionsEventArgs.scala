@@ -10,3 +10,12 @@ trait ASPxClientReportDesignerCustomizeFieldListActionsEventArgs extends ASPxCli
   var Item: js.Object
 }
 
+object ASPxClientReportDesignerCustomizeFieldListActionsEventArgs {
+  @scala.inline
+  def apply(Actions: js.Array[js.Object], Item: js.Object): ASPxClientReportDesignerCustomizeFieldListActionsEventArgs = {
+    val __obj = js.Dynamic.literal(Actions = Actions, Item = Item)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerCustomizeFieldListActionsEventArgs]
+  }
+}
+

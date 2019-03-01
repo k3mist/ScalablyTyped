@@ -19,3 +19,20 @@ trait GMXMLHttpRequestResponse extends js.Object {
   var statusText: java.lang.String
 }
 
+object GMXMLHttpRequestResponse {
+  @scala.inline
+  def apply(
+    context: js.Any,
+    finalUrl: java.lang.String,
+    readyState: scala.Double,
+    responseHeaders: java.lang.String,
+    responseText: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): GMXMLHttpRequestResponse = {
+    val __obj = js.Dynamic.literal(context = context, finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[GMXMLHttpRequestResponse]
+  }
+}
+

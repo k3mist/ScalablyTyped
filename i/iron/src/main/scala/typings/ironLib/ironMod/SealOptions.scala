@@ -28,3 +28,18 @@ trait SealOptions extends js.Object {
   var ttl: scala.Double
 }
 
+object SealOptions {
+  @scala.inline
+  def apply(
+    encryption: SealOptionsSub,
+    integrity: SealOptionsSub,
+    localtimeOffsetMsec: scala.Double,
+    timestampSkewSec: scala.Double,
+    ttl: scala.Double
+  ): SealOptions = {
+    val __obj = js.Dynamic.literal(encryption = encryption, integrity = integrity, localtimeOffsetMsec = localtimeOffsetMsec, timestampSkewSec = timestampSkewSec, ttl = ttl)
+  
+    __obj.asInstanceOf[SealOptions]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Anon_Distance extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Distance {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    points: js.Array[baidumapDashWebDashSdkLib.BMapNs.Point],
+    polylines: js.Array[baidumapDashWebDashSdkLib.BMapNs.Polyline],
+    target: js.Any,
+    `type`: java.lang.String
+  ): Anon_Distance = {
+    val __obj = js.Dynamic.literal(distance = distance, points = points, polylines = polylines, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Distance]
+  }
+}
+

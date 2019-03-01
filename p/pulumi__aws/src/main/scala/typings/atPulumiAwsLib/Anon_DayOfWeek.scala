@@ -11,3 +11,12 @@ trait Anon_DayOfWeek extends js.Object {
   var timeZone: java.lang.String
 }
 
+object Anon_DayOfWeek {
+  @scala.inline
+  def apply(dayOfWeek: java.lang.String, timeOfDay: java.lang.String, timeZone: java.lang.String): Anon_DayOfWeek = {
+    val __obj = js.Dynamic.literal(dayOfWeek = dayOfWeek, timeOfDay = timeOfDay, timeZone = timeZone)
+  
+    __obj.asInstanceOf[Anon_DayOfWeek]
+  }
+}
+

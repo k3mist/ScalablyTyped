@@ -12,3 +12,15 @@ trait Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType 
   ] = js.undefined
 }
 
+object Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType {
+  @scala.inline
+  def apply(
+    launchTemplateSpecification: atPulumiPulumiLib.resourceMod.Input[Anon_LaunchTemplateIdLaunchTemplateNameVersionInput],
+    overrides: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_AvailabilityZoneInstanceType]]] = null
+  ): Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType = {
+    val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType]
+  }
+}
+

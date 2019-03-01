@@ -11,3 +11,12 @@ trait ObjectReplaceOp extends Op {
   var p: Path
 }
 
+object ObjectReplaceOp {
+  @scala.inline
+  def apply(od: js.Any, oi: js.Any, p: Path): ObjectReplaceOp = {
+    val __obj = js.Dynamic.literal(od = od, oi = oi, p = p)
+  
+    __obj.asInstanceOf[ObjectReplaceOp]
+  }
+}
+

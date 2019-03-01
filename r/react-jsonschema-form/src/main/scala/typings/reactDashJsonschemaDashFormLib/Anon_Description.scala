@@ -10,3 +10,12 @@ trait Anon_Description extends js.Object {
   var id: java.lang.String
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(description: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_], id: java.lang.String): Anon_Description = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id)
+  
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

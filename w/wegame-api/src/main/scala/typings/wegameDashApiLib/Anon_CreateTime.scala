@@ -11,3 +11,12 @@ trait Anon_CreateTime extends js.Object {
   var size: scala.Double
 }
 
+object Anon_CreateTime {
+  @scala.inline
+  def apply(createTime: scala.Double, filePath: java.lang.String, size: scala.Double): Anon_CreateTime = {
+    val __obj = js.Dynamic.literal(createTime = createTime, filePath = filePath, size = size)
+  
+    __obj.asInstanceOf[Anon_CreateTime]
+  }
+}
+

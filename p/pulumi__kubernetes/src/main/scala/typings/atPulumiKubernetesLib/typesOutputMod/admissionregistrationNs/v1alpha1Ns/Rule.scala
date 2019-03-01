@@ -35,3 +35,16 @@ trait Rule extends js.Object {
   val resources: js.Array[java.lang.String]
 }
 
+object Rule {
+  @scala.inline
+  def apply(
+    apiGroups: js.Array[java.lang.String],
+    apiVersions: js.Array[java.lang.String],
+    resources: js.Array[java.lang.String]
+  ): Rule = {
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, resources = resources)
+  
+    __obj.asInstanceOf[Rule]
+  }
+}
+

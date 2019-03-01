@@ -47,3 +47,53 @@ trait SimpleRadioButton extends js.Object {
   def setWidth(width: java.lang.String): SimpleRadioButton
 }
 
+object SimpleRadioButton {
+  @scala.inline
+  def apply(
+    addBlurHandler: js.Function1[Handler, SimpleRadioButton],
+    addClickHandler: js.Function1[Handler, SimpleRadioButton],
+    addFocusHandler: js.Function1[Handler, SimpleRadioButton],
+    addKeyDownHandler: js.Function1[Handler, SimpleRadioButton],
+    addKeyPressHandler: js.Function1[Handler, SimpleRadioButton],
+    addKeyUpHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseDownHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseMoveHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseOutHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseOverHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseUpHandler: js.Function1[Handler, SimpleRadioButton],
+    addMouseWheelHandler: js.Function1[Handler, SimpleRadioButton],
+    addStyleDependentName: js.Function1[java.lang.String, SimpleRadioButton],
+    addStyleName: js.Function1[java.lang.String, SimpleRadioButton],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, SimpleRadioButton],
+    setChecked: js.Function1[scala.Boolean, SimpleRadioButton],
+    setEnabled: js.Function1[scala.Boolean, SimpleRadioButton],
+    setFocus: js.Function1[scala.Boolean, SimpleRadioButton],
+    setHeight: js.Function1[java.lang.String, SimpleRadioButton],
+    setId: js.Function1[java.lang.String, SimpleRadioButton],
+    setLayoutData: js.Function1[js.Object, SimpleRadioButton],
+    setName: js.Function1[java.lang.String, SimpleRadioButton],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      SimpleRadioButton
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, SimpleRadioButton],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, SimpleRadioButton],
+    setStyleAttributes: js.Function1[js.Object, SimpleRadioButton],
+    setStyleName: js.Function1[java.lang.String, SimpleRadioButton],
+    setStylePrimaryName: js.Function1[java.lang.String, SimpleRadioButton],
+    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, SimpleRadioButton],
+    setTag: js.Function1[java.lang.String, SimpleRadioButton],
+    setTitle: js.Function1[java.lang.String, SimpleRadioButton],
+    setVisible: js.Function1[scala.Boolean, SimpleRadioButton],
+    setWidth: js.Function1[java.lang.String, SimpleRadioButton]
+  ): SimpleRadioButton = {
+    val __obj = js.Dynamic.literal(addBlurHandler = addBlurHandler, addClickHandler = addClickHandler, addFocusHandler = addFocusHandler, addKeyDownHandler = addKeyDownHandler, addKeyPressHandler = addKeyPressHandler, addKeyUpHandler = addKeyUpHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setAccessKey = setAccessKey, setChecked = setChecked, setEnabled = setEnabled, setFocus = setFocus, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTabIndex = setTabIndex, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
+    __obj.asInstanceOf[SimpleRadioButton]
+  }
+}
+

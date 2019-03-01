@@ -12,3 +12,17 @@ trait ScrollFollowRenderProps extends js.Object {
   def stopFollowing(): scala.Unit
 }
 
+object ScrollFollowRenderProps {
+  @scala.inline
+  def apply(
+    follow: scala.Boolean,
+    onScroll: js.Function1[reactDashLazylogLib.Anon_ClientHeight, scala.Unit],
+    startFollowing: js.Function0[scala.Unit],
+    stopFollowing: js.Function0[scala.Unit]
+  ): ScrollFollowRenderProps = {
+    val __obj = js.Dynamic.literal(follow = follow, onScroll = onScroll, startFollowing = startFollowing, stopFollowing = stopFollowing)
+  
+    __obj.asInstanceOf[ScrollFollowRenderProps]
+  }
+}
+

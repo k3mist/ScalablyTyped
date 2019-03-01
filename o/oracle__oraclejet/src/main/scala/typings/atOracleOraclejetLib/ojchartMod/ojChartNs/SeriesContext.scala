@@ -11,3 +11,12 @@ trait SeriesContext extends js.Object {
   var subId: java.lang.String
 }
 
+object SeriesContext {
+  @scala.inline
+  def apply(itemIndex: scala.Double, subId: java.lang.String): SeriesContext = {
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex, subId = subId)
+  
+    __obj.asInstanceOf[SeriesContext]
+  }
+}
+

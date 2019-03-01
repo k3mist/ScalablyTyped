@@ -20,3 +20,12 @@ trait Condition extends js.Object {
   var value: java.lang.String
 }
 
+object Condition {
+  @scala.inline
+  def apply(conditionType: ConditionType, name: java.lang.String, value: java.lang.String): Condition = {
+    val __obj = js.Dynamic.literal(conditionType = conditionType, name = name, value = value)
+  
+    __obj.asInstanceOf[Condition]
+  }
+}
+

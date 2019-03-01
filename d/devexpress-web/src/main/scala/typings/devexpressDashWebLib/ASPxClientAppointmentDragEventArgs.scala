@@ -26,3 +26,16 @@ trait ASPxClientAppointmentDragEventArgs extends ASPxClientEventArgs {
   var mouseEvent: js.Object
 }
 
+object ASPxClientAppointmentDragEventArgs {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    dragInformation: js.Array[ASPxClientAppointmentDragInfo],
+    mouseEvent: js.Object
+  ): ASPxClientAppointmentDragEventArgs = {
+    val __obj = js.Dynamic.literal(allow = allow, dragInformation = dragInformation, mouseEvent = mouseEvent)
+  
+    __obj.asInstanceOf[ASPxClientAppointmentDragEventArgs]
+  }
+}
+

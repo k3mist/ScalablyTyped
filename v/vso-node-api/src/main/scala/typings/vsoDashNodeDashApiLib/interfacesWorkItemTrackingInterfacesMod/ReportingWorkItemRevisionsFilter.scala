@@ -32,3 +32,19 @@ trait ReportingWorkItemRevisionsFilter extends js.Object {
   var types: js.Array[java.lang.String]
 }
 
+object ReportingWorkItemRevisionsFilter {
+  @scala.inline
+  def apply(
+    fields: js.Array[java.lang.String],
+    includeDeleted: scala.Boolean,
+    includeIdentityRef: scala.Boolean,
+    includeLatestOnly: scala.Boolean,
+    includeTagRef: scala.Boolean,
+    types: js.Array[java.lang.String]
+  ): ReportingWorkItemRevisionsFilter = {
+    val __obj = js.Dynamic.literal(fields = fields, includeDeleted = includeDeleted, includeIdentityRef = includeIdentityRef, includeLatestOnly = includeLatestOnly, includeTagRef = includeTagRef, types = types)
+  
+    __obj.asInstanceOf[ReportingWorkItemRevisionsFilter]
+  }
+}
+

@@ -74,3 +74,23 @@ trait XRowLocate
   def moveToBookmark(bookmark: js.Any): scala.Boolean
 }
 
+object XRowLocate {
+  @scala.inline
+  def apply(
+    Bookmark: js.Any,
+    acquire: js.Function0[scala.Unit],
+    compareBookmarks: js.Function2[js.Any, js.Any, scala.Double],
+    getBookmark: js.Function0[js.Any],
+    hasOrderedBookmarks: js.Function0[scala.Boolean],
+    hashBookmark: js.Function1[js.Any, scala.Double],
+    moveRelativeToBookmark: js.Function2[js.Any, scala.Double, scala.Boolean],
+    moveToBookmark: js.Function1[js.Any, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRowLocate = {
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, acquire = acquire, compareBookmarks = compareBookmarks, getBookmark = getBookmark, hasOrderedBookmarks = hasOrderedBookmarks, hashBookmark = hashBookmark, moveRelativeToBookmark = moveRelativeToBookmark, moveToBookmark = moveToBookmark, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XRowLocate]
+  }
+}
+

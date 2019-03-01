@@ -97,3 +97,74 @@ trait XCharacterClassification
   ): java.lang.String
 }
 
+object XCharacterClassification {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCharacterDirection: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getCharacterType: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getScript: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getStringType: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getType: js.Function2[java.lang.String, scala.Double, scala.Double],
+    parseAnyToken: js.Function7[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      java.lang.String, 
+      ParseResult
+    ],
+    parsePredefinedToken: js.Function8[
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      java.lang.String, 
+      ParseResult
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    toLower: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    toTitle: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    toUpper: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ]
+  ): XCharacterClassification = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getCharacterDirection = getCharacterDirection, getCharacterType = getCharacterType, getScript = getScript, getStringType = getStringType, getType = getType, parseAnyToken = parseAnyToken, parsePredefinedToken = parsePredefinedToken, queryInterface = queryInterface, release = release, toLower = toLower, toTitle = toTitle, toUpper = toUpper)
+  
+    __obj.asInstanceOf[XCharacterClassification]
+  }
+}
+

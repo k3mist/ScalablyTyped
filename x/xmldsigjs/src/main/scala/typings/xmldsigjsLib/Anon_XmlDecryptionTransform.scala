@@ -18,3 +18,23 @@ trait Anon_XmlDecryptionTransform extends js.Object {
   var XmlLicenseTransform: java.lang.String
 }
 
+object Anon_XmlDecryptionTransform {
+  @scala.inline
+  def apply(
+    XmlDecryptionTransform: java.lang.String,
+    XmlDsigBase64Transform: java.lang.String,
+    XmlDsigC14NTransform: java.lang.String,
+    XmlDsigC14NWithCommentsTransform: java.lang.String,
+    XmlDsigEnvelopedSignatureTransform: java.lang.String,
+    XmlDsigExcC14NTransform: java.lang.String,
+    XmlDsigExcC14NWithCommentsTransform: java.lang.String,
+    XmlDsigXPathTransform: java.lang.String,
+    XmlDsigXsltTransform: java.lang.String,
+    XmlLicenseTransform: java.lang.String
+  ): Anon_XmlDecryptionTransform = {
+    val __obj = js.Dynamic.literal(XmlDecryptionTransform = XmlDecryptionTransform, XmlDsigBase64Transform = XmlDsigBase64Transform, XmlDsigC14NTransform = XmlDsigC14NTransform, XmlDsigC14NWithCommentsTransform = XmlDsigC14NWithCommentsTransform, XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransform, XmlDsigExcC14NTransform = XmlDsigExcC14NTransform, XmlDsigExcC14NWithCommentsTransform = XmlDsigExcC14NWithCommentsTransform, XmlDsigXPathTransform = XmlDsigXPathTransform, XmlDsigXsltTransform = XmlDsigXsltTransform, XmlLicenseTransform = XmlLicenseTransform)
+  
+    __obj.asInstanceOf[Anon_XmlDecryptionTransform]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_ActiveDocument extends js.Object {
   var Cancel: scala.Boolean
 }
 
+object Anon_ActiveDocument {
+  @scala.inline
+  def apply(ActiveDocument: scala.Boolean, Cancel: scala.Boolean): Anon_ActiveDocument = {
+    val __obj = js.Dynamic.literal(ActiveDocument = ActiveDocument, Cancel = Cancel)
+  
+    __obj.asInstanceOf[Anon_ActiveDocument]
+  }
+}
+

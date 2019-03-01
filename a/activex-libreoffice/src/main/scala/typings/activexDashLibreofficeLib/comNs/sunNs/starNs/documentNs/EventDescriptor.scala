@@ -21,3 +21,12 @@ trait EventDescriptor extends js.Object {
   var Script: java.lang.String
 }
 
+object EventDescriptor {
+  @scala.inline
+  def apply(EventType: java.lang.String, Script: java.lang.String): EventDescriptor = {
+    val __obj = js.Dynamic.literal(EventType = EventType, Script = Script)
+  
+    __obj.asInstanceOf[EventDescriptor]
+  }
+}
+

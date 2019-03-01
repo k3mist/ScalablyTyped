@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSNonNullExpression
 }
 
+object TSNonNullExpression {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSNonNullExpression
+  ): TSNonNullExpression = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+  
+    __obj.asInstanceOf[TSNonNullExpression]
+  }
+}
+

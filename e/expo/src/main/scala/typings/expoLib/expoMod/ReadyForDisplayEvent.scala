@@ -10,3 +10,12 @@ trait ReadyForDisplayEvent extends js.Object {
   var status: PlaybackStatus
 }
 
+object ReadyForDisplayEvent {
+  @scala.inline
+  def apply(naturalSize: NaturalSize, status: PlaybackStatus): ReadyForDisplayEvent = {
+    val __obj = js.Dynamic.literal(naturalSize = naturalSize, status = status)
+  
+    __obj.asInstanceOf[ReadyForDisplayEvent]
+  }
+}
+

@@ -20,3 +20,12 @@ trait RangeFormatConfiguration extends js.Object {
   var format: js.Object
 }
 
+object RangeFormatConfiguration {
+  @scala.inline
+  def apply(cells: Table | RangeCoordinates, format: js.Object): RangeFormatConfiguration = {
+    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], format = format)
+  
+    __obj.asInstanceOf[RangeFormatConfiguration]
+  }
+}
+

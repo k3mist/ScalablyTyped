@@ -12,3 +12,12 @@ trait Anon_ErrorFalse
   var success: expoLib.expoLibNumbers.`false`
 }
 
+object Anon_ErrorFalse {
+  @scala.inline
+  def apply(error: java.lang.String, success: expoLib.expoLibNumbers.`false`): Anon_ErrorFalse = {
+    val __obj = js.Dynamic.literal(error = error, success = success)
+  
+    __obj.asInstanceOf[Anon_ErrorFalse]
+  }
+}
+

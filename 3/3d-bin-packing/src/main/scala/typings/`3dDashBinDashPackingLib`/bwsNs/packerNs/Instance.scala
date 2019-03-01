@@ -62,3 +62,23 @@ import scala.scalajs.js.annotation._
   def setWidth(`val`: scala.Double): scala.Unit
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    TYPE: js.Function0[java.lang.String],
+    getHeight: js.Function0[scala.Double],
+    getLength: js.Function0[scala.Double],
+    getName: js.Function0[java.lang.String],
+    getVolume: js.Function0[scala.Double],
+    getWidth: js.Function0[scala.Double],
+    setHeight: js.Function1[scala.Double, scala.Unit],
+    setLength: js.Function1[scala.Double, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setWidth: js.Function1[scala.Double, scala.Unit]
+  ): Instance = {
+    val __obj = js.Dynamic.literal(TYPE = TYPE, getHeight = getHeight, getLength = getLength, getName = getName, getVolume = getVolume, getWidth = getWidth, setHeight = setHeight, setLength = setLength, setName = setName, setWidth = setWidth)
+  
+    __obj.asInstanceOf[Instance]
+  }
+}
+

@@ -23,3 +23,32 @@ trait UIElementSettings
   var UIName: java.lang.String
 }
 
+object UIElementSettings {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    UIName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    createInstanceWithArgumentsAndContext: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    createInstanceWithContext: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): UIElementSettings = {
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, UIName = UIName, acquire = acquire, createInstanceWithArgumentsAndContext = createInstanceWithArgumentsAndContext, createInstanceWithContext = createInstanceWithContext, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[UIElementSettings]
+  }
+}
+

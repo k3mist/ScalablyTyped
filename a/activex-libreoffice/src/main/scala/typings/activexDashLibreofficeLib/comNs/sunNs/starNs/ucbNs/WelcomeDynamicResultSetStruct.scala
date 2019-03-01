@@ -19,3 +19,15 @@ trait WelcomeDynamicResultSetStruct extends js.Object {
   var Old: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
 }
 
+object WelcomeDynamicResultSetStruct {
+  @scala.inline
+  def apply(
+    New: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    Old: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
+  ): WelcomeDynamicResultSetStruct = {
+    val __obj = js.Dynamic.literal(New = New, Old = Old)
+  
+    __obj.asInstanceOf[WelcomeDynamicResultSetStruct]
+  }
+}
+

@@ -24,3 +24,19 @@ trait IAttachElementDelta
   var newParentPropertyName: java.lang.String
 }
 
+object IAttachElementDelta {
+  @scala.inline
+  def apply(
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.ATTACH_ELEMENT,
+    elementId: java.lang.String,
+    newParentId: java.lang.String,
+    newParentPropertyName: java.lang.String,
+    unitId: java.lang.String,
+    newIndex: scala.Int | scala.Double = null
+  ): IAttachElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = deltaType, elementId = elementId, newParentId = newParentId, newParentPropertyName = newParentPropertyName, unitId = unitId)
+    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IAttachElementDelta]
+  }
+}
+

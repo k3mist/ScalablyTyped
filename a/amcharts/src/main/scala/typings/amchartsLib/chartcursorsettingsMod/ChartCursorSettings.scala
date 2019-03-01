@@ -82,3 +82,26 @@ trait ChartCursorSettings extends js.Object {
   var zoomable: scala.Boolean
 }
 
+object ChartCursorSettings {
+  @scala.inline
+  def apply(
+    bulletSize: scala.Double,
+    bulletsEnabled: scala.Boolean,
+    categoryBalloonAlpha: scala.Double,
+    categoryBalloonColor: java.lang.String,
+    categoryBalloonDateFormats: js.Array[_],
+    categoryBalloonEnabled: scala.Boolean,
+    cursorAlpha: scala.Double,
+    cursorColor: java.lang.String,
+    cursorPosition: java.lang.String,
+    enabled: scala.Boolean,
+    pan: scala.Boolean,
+    valueBalloonsEnabled: scala.Boolean,
+    zoomable: scala.Boolean
+  ): ChartCursorSettings = {
+    val __obj = js.Dynamic.literal(bulletSize = bulletSize, bulletsEnabled = bulletsEnabled, categoryBalloonAlpha = categoryBalloonAlpha, categoryBalloonColor = categoryBalloonColor, categoryBalloonDateFormats = categoryBalloonDateFormats, categoryBalloonEnabled = categoryBalloonEnabled, cursorAlpha = cursorAlpha, cursorColor = cursorColor, cursorPosition = cursorPosition, enabled = enabled, pan = pan, valueBalloonsEnabled = valueBalloonsEnabled, zoomable = zoomable)
+  
+    __obj.asInstanceOf[ChartCursorSettings]
+  }
+}
+

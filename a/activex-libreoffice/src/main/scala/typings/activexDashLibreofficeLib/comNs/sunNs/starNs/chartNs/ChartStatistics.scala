@@ -78,3 +78,51 @@ trait ChartStatistics
   var RegressionCurves: ChartRegressionCurveType
 }
 
+object ChartStatistics {
+  @scala.inline
+  def apply(
+    ConstantErrorHigh: scala.Double,
+    ConstantErrorLow: scala.Double,
+    ErrorBarRangeNegative: java.lang.String,
+    ErrorBarRangePositive: java.lang.String,
+    ErrorBarStyle: scala.Double,
+    ErrorCategory: ChartErrorCategory,
+    ErrorIndicator: ChartErrorIndicatorType,
+    ErrorMargin: scala.Double,
+    MeanValue: scala.Boolean,
+    PercentageError: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RegressionCurves: ChartRegressionCurveType,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ChartStatistics = {
+    val __obj = js.Dynamic.literal(ConstantErrorHigh = ConstantErrorHigh, ConstantErrorLow = ConstantErrorLow, ErrorBarRangeNegative = ErrorBarRangeNegative, ErrorBarRangePositive = ErrorBarRangePositive, ErrorBarStyle = ErrorBarStyle, ErrorCategory = ErrorCategory, ErrorIndicator = ErrorIndicator, ErrorMargin = ErrorMargin, MeanValue = MeanValue, PercentageError = PercentageError, PropertySetInfo = PropertySetInfo, RegressionCurves = RegressionCurves, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[ChartStatistics]
+  }
+}
+

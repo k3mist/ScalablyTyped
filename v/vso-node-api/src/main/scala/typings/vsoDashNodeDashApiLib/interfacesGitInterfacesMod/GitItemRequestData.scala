@@ -24,3 +24,17 @@ trait GitItemRequestData extends js.Object {
   var latestProcessedChange: scala.Boolean
 }
 
+object GitItemRequestData {
+  @scala.inline
+  def apply(
+    includeContentMetadata: scala.Boolean,
+    includeLinks: scala.Boolean,
+    itemDescriptors: js.Array[GitItemDescriptor],
+    latestProcessedChange: scala.Boolean
+  ): GitItemRequestData = {
+    val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata, includeLinks = includeLinks, itemDescriptors = itemDescriptors, latestProcessedChange = latestProcessedChange)
+  
+    __obj.asInstanceOf[GitItemRequestData]
+  }
+}
+

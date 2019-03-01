@@ -21,3 +21,17 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind | scala.Null
 }
 
+object Identifier {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    optional: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.Identifier,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): Identifier = {
+    val __obj = js.Dynamic.literal(name = name, optional = optional, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Identifier]
+  }
+}
+

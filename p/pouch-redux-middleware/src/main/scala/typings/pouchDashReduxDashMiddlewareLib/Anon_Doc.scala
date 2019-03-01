@@ -11,3 +11,25 @@ trait Anon_Doc extends js.Object {
   def update(doc: pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document): reduxLib.reduxMod.Action[_]
 }
 
+object Anon_Doc {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
+      reduxLib.reduxMod.Action[_]
+    ],
+    remove: js.Function1[
+      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
+      reduxLib.reduxMod.Action[_]
+    ],
+    update: js.Function1[
+      pouchDashReduxDashMiddlewareLib.pouchDashReduxDashMiddlewareMod.Document, 
+      reduxLib.reduxMod.Action[_]
+    ]
+  ): Anon_Doc = {
+    val __obj = js.Dynamic.literal(insert = insert, remove = remove, update = update)
+  
+    __obj.asInstanceOf[Anon_Doc]
+  }
+}
+

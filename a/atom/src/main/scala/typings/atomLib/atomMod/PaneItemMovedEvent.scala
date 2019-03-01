@@ -14,3 +14,12 @@ trait PaneItemMovedEvent extends js.Object {
   var oldIndex: scala.Double
 }
 
+object PaneItemMovedEvent {
+  @scala.inline
+  def apply(item: js.Object, newIndex: scala.Double, oldIndex: scala.Double): PaneItemMovedEvent = {
+    val __obj = js.Dynamic.literal(item = item, newIndex = newIndex, oldIndex = oldIndex)
+  
+    __obj.asInstanceOf[PaneItemMovedEvent]
+  }
+}
+

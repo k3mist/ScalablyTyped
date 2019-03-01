@@ -26,3 +26,18 @@ trait DOMContainerProperties extends js.Object {
   var ui: js.UndefOr[DefaultUIProperties] = js.undefined
 }
 
+object DOMContainerProperties {
+  @scala.inline
+  def apply(
+    container: stdLib.HTMLDivElement | java.lang.String = null,
+    popup: PopupProperties = null,
+    ui: DefaultUIProperties = null
+  ): DOMContainerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[DOMContainerProperties]
+  }
+}
+

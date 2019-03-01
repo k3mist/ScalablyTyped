@@ -22,3 +22,19 @@ trait GetBLEDeviceCharacteristicsOptions
   def success_MGetBLEDeviceCharacteristicsOptions(res: aliDashAppLib.Anon_Characteristics with ErrMsgResponse): scala.Unit
 }
 
+object GetBLEDeviceCharacteristicsOptions {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    success: js.Function1[aliDashAppLib.Anon_Characteristics with ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetBLEDeviceCharacteristicsOptions = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId, serviceId = serviceId, success = success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetBLEDeviceCharacteristicsOptions]
+  }
+}
+

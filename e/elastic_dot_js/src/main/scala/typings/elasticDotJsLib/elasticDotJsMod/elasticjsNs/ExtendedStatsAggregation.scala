@@ -38,3 +38,20 @@ trait ExtendedStatsAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object ExtendedStatsAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, ExtendedStatsAggregation],
+    lang: js.Function1[java.lang.String, ExtendedStatsAggregation],
+    params: js.Function1[js.Object, ExtendedStatsAggregation],
+    script: js.Function1[java.lang.String, ExtendedStatsAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, ExtendedStatsAggregation],
+    toJSON: js.Function0[js.Any]
+  ): ExtendedStatsAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[ExtendedStatsAggregation]
+  }
+}
+

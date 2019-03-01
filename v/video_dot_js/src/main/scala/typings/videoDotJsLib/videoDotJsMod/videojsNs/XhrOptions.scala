@@ -27,3 +27,42 @@ trait XhrOptions extends js.Object {
   var xhr: js.UndefOr[stdLib.XMLHttpRequest] = js.undefined
 }
 
+object XhrOptions {
+  @scala.inline
+  def apply(
+    beforeSend: js.Function1[/* xhrObject */ stdLib.XMLHttpRequest, scala.Unit] = null,
+    body: js.Any = null,
+    headers: js.Any = null,
+    json: js.UndefOr[scala.Boolean] = js.undefined,
+    method: videoDotJsLib.videoDotJsLibStrings.DELETE | videoDotJsLib.videoDotJsLibStrings.GET | videoDotJsLib.videoDotJsLibStrings.HEAD | videoDotJsLib.videoDotJsLibStrings.OPTIONS | videoDotJsLib.videoDotJsLibStrings.POST | videoDotJsLib.videoDotJsLibStrings.PUT = null,
+    password: java.lang.String = null,
+    responseType: videoDotJsLib.videoDotJsLibStrings.Empty | videoDotJsLib.videoDotJsLibStrings.arraybuffer | videoDotJsLib.videoDotJsLibStrings.blob | videoDotJsLib.videoDotJsLibStrings.document | videoDotJsLib.videoDotJsLibStrings.json | videoDotJsLib.videoDotJsLibStrings.text = null,
+    sync: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    uri: java.lang.String = null,
+    url: java.lang.String = null,
+    useXDR: js.UndefOr[scala.Boolean] = js.undefined,
+    username: java.lang.String = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    xhr: stdLib.XMLHttpRequest = null
+  ): XhrOptions = {
+    val __obj = js.Dynamic.literal()
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(useXDR)) __obj.updateDynamic("useXDR")(useXDR)
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[XhrOptions]
+  }
+}
+

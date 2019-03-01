@@ -44,3 +44,22 @@ trait GitRefUpdateResult extends js.Object {
   var updateStatus: GitRefUpdateStatus
 }
 
+object GitRefUpdateResult {
+  @scala.inline
+  def apply(
+    customMessage: java.lang.String,
+    isLocked: scala.Boolean,
+    name: java.lang.String,
+    newObjectId: java.lang.String,
+    oldObjectId: java.lang.String,
+    rejectedBy: java.lang.String,
+    repositoryId: java.lang.String,
+    success: scala.Boolean,
+    updateStatus: GitRefUpdateStatus
+  ): GitRefUpdateResult = {
+    val __obj = js.Dynamic.literal(customMessage = customMessage, isLocked = isLocked, name = name, newObjectId = newObjectId, oldObjectId = oldObjectId, rejectedBy = rejectedBy, repositoryId = repositoryId, success = success, updateStatus = updateStatus)
+  
+    __obj.asInstanceOf[GitRefUpdateResult]
+  }
+}
+

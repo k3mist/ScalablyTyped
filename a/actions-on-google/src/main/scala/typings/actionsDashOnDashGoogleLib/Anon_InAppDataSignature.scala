@@ -12,3 +12,12 @@ trait Anon_InAppDataSignature extends js.Object {
   var inAppPurchaseData: js.Object
 }
 
+object Anon_InAppDataSignature {
+  @scala.inline
+  def apply(inAppDataSignature: js.Object, inAppPurchaseData: js.Object): Anon_InAppDataSignature = {
+    val __obj = js.Dynamic.literal(inAppDataSignature = inAppDataSignature, inAppPurchaseData = inAppPurchaseData)
+  
+    __obj.asInstanceOf[Anon_InAppDataSignature]
+  }
+}
+

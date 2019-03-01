@@ -32,3 +32,18 @@ trait XUIConfiguration
   def removeConfigurationListener(Listener: XUIConfigurationListener): scala.Unit
 }
 
+object XUIConfiguration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit]
+  ): XUIConfiguration = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addConfigurationListener = addConfigurationListener, queryInterface = queryInterface, release = release, removeConfigurationListener = removeConfigurationListener)
+  
+    __obj.asInstanceOf[XUIConfiguration]
+  }
+}
+

@@ -13,3 +13,18 @@ trait CalendarDay extends js.Object {
   var properties: CalendarDayProperties
 }
 
+object CalendarDay {
+  @scala.inline
+  def apply(
+    classes: java.lang.String,
+    date: momentLib.momentMod.momentNs.Moment,
+    day: scala.Double,
+    events: js.Array[_],
+    properties: CalendarDayProperties
+  ): CalendarDay = {
+    val __obj = js.Dynamic.literal(classes = classes, date = date, day = day, events = events, properties = properties)
+  
+    __obj.asInstanceOf[CalendarDay]
+  }
+}
+

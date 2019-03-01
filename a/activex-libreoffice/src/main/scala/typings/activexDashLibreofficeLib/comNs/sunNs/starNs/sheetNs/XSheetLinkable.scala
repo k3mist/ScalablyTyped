@@ -67,3 +67,33 @@ trait XSheetLinkable
   def setLinkUrl(aLinkUrl: java.lang.String): scala.Unit
 }
 
+object XSheetLinkable {
+  @scala.inline
+  def apply(
+    LinkMode: SheetLinkMode,
+    LinkSheetName: java.lang.String,
+    LinkUrl: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getLinkMode: js.Function0[SheetLinkMode],
+    getLinkSheetName: js.Function0[java.lang.String],
+    getLinkUrl: js.Function0[java.lang.String],
+    link: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      SheetLinkMode, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLinkMode: js.Function1[SheetLinkMode, scala.Unit],
+    setLinkSheetName: js.Function1[java.lang.String, scala.Unit],
+    setLinkUrl: js.Function1[java.lang.String, scala.Unit]
+  ): XSheetLinkable = {
+    val __obj = js.Dynamic.literal(LinkMode = LinkMode, LinkSheetName = LinkSheetName, LinkUrl = LinkUrl, acquire = acquire, getLinkMode = getLinkMode, getLinkSheetName = getLinkSheetName, getLinkUrl = getLinkUrl, link = link, queryInterface = queryInterface, release = release, setLinkMode = setLinkMode, setLinkSheetName = setLinkSheetName, setLinkUrl = setLinkUrl)
+  
+    __obj.asInstanceOf[XSheetLinkable]
+  }
+}
+

@@ -55,3 +55,27 @@ trait LineItem extends GraphModel {
   var variant_title: java.lang.String
 }
 
+object LineItem {
+  @scala.inline
+  def apply(
+    compare_at_price: java.lang.String,
+    grams: scala.Double,
+    id: java.lang.String | scala.Double,
+    image: Image,
+    line_price: java.lang.String,
+    price: java.lang.String,
+    product_id: java.lang.String | scala.Double,
+    quantity: scala.Double,
+    title: java.lang.String,
+    variant_id: java.lang.String | scala.Double,
+    variant_title: java.lang.String,
+    attrs: js.Any = null,
+    onlineStoreUrl: java.lang.String = null
+  ): LineItem = {
+    val __obj = js.Dynamic.literal(compare_at_price = compare_at_price, grams = grams, id = id.asInstanceOf[js.Any], image = image, line_price = line_price, price = price, product_id = product_id.asInstanceOf[js.Any], quantity = quantity, title = title, variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    __obj.asInstanceOf[LineItem]
+  }
+}
+

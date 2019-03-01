@@ -10,3 +10,12 @@ trait InjectedAuthReduxProps
   var redirectPath: java.lang.String
 }
 
+object InjectedAuthReduxProps {
+  @scala.inline
+  def apply(isAuthenticated: scala.Boolean, isAuthenticating: scala.Boolean, redirectPath: java.lang.String): InjectedAuthReduxProps = {
+    val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated, isAuthenticating = isAuthenticating, redirectPath = redirectPath)
+  
+    __obj.asInstanceOf[InjectedAuthReduxProps]
+  }
+}
+

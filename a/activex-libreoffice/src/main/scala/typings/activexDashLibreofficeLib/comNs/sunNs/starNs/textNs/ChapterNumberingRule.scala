@@ -27,3 +27,27 @@ trait ChapterNumberingRule
   var HeadingStyleName: java.lang.String
 }
 
+object ChapterNumberingRule {
+  @scala.inline
+  def apply(
+    Alignment: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.HorizontalAlignment,
+    BulletFontName: java.lang.String,
+    BulletId: scala.Double,
+    CharStyleName: java.lang.String,
+    GraphicURL: java.lang.String,
+    HeadingStyleName: java.lang.String,
+    Insertion: scala.Double,
+    NumberingType: scala.Double,
+    ParentNumbering: scala.Double,
+    Prefix: java.lang.String,
+    StartWith: scala.Double,
+    Suffix: java.lang.String,
+    TextMarginDistance: scala.Double,
+    TextNumberingDistance: scala.Double
+  ): ChapterNumberingRule = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment, BulletFontName = BulletFontName, BulletId = BulletId, CharStyleName = CharStyleName, GraphicURL = GraphicURL, HeadingStyleName = HeadingStyleName, Insertion = Insertion, NumberingType = NumberingType, ParentNumbering = ParentNumbering, Prefix = Prefix, StartWith = StartWith, Suffix = Suffix, TextMarginDistance = TextMarginDistance, TextNumberingDistance = TextNumberingDistance)
+  
+    __obj.asInstanceOf[ChapterNumberingRule]
+  }
+}
+

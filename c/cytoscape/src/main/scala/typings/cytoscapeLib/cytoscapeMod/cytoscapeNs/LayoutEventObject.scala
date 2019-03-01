@@ -13,3 +13,19 @@ trait LayoutEventObject extends AbstractEventObject {
   var layout: js.Any
 }
 
+object LayoutEventObject {
+  @scala.inline
+  def apply(
+    cy: Core,
+    layout: js.Any,
+    namespace: java.lang.String,
+    timeStamp: scala.Double,
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
+    target: js.Any = null
+  ): LayoutEventObject = {
+    val __obj = js.Dynamic.literal(cy = cy, layout = layout, namespace = namespace, timeStamp = timeStamp, `type` = `type`.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[LayoutEventObject]
+  }
+}
+

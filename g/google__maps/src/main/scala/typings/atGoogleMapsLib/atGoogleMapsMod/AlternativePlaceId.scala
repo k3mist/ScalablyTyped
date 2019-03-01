@@ -18,3 +18,12 @@ trait AlternativePlaceId extends js.Object {
   var scope: atGoogleMapsLib.atGoogleMapsLibStrings.APP
 }
 
+object AlternativePlaceId {
+  @scala.inline
+  def apply(place_id: java.lang.String, scope: atGoogleMapsLib.atGoogleMapsLibStrings.APP): AlternativePlaceId = {
+    val __obj = js.Dynamic.literal(place_id = place_id, scope = scope)
+  
+    __obj.asInstanceOf[AlternativePlaceId]
+  }
+}
+

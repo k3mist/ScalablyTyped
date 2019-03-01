@@ -10,3 +10,12 @@ trait ImageProgressEventDataIOS extends js.Object {
   var total: scala.Double
 }
 
+object ImageProgressEventDataIOS {
+  @scala.inline
+  def apply(loaded: scala.Double, total: scala.Double): ImageProgressEventDataIOS = {
+    val __obj = js.Dynamic.literal(loaded = loaded, total = total)
+  
+    __obj.asInstanceOf[ImageProgressEventDataIOS]
+  }
+}
+

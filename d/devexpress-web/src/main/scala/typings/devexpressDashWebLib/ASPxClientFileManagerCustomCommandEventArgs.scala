@@ -16,3 +16,12 @@ trait ASPxClientFileManagerCustomCommandEventArgs extends ASPxClientEventArgs {
   var commandName: java.lang.String
 }
 
+object ASPxClientFileManagerCustomCommandEventArgs {
+  @scala.inline
+  def apply(commandName: java.lang.String): ASPxClientFileManagerCustomCommandEventArgs = {
+    val __obj = js.Dynamic.literal(commandName = commandName)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerCustomCommandEventArgs]
+  }
+}
+

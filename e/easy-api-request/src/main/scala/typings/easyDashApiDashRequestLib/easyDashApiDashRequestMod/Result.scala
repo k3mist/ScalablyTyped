@@ -12,3 +12,13 @@ trait Result extends js.Object {
   var response: nodeLib.httpMod.IncomingMessage
 }
 
+object Result {
+  @scala.inline
+  def apply(body: js.Any, response: nodeLib.httpMod.IncomingMessage, data: js.Any = null, err: js.Any = null): Result = {
+    val __obj = js.Dynamic.literal(body = body, response = response)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (err != null) __obj.updateDynamic("err")(err)
+    __obj.asInstanceOf[Result]
+  }
+}
+

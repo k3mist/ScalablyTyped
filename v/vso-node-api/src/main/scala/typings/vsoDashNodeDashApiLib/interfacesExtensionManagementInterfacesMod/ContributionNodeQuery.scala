@@ -20,3 +20,16 @@ trait ContributionNodeQuery extends js.Object {
   var queryOptions: ContributionQueryOptions
 }
 
+object ContributionNodeQuery {
+  @scala.inline
+  def apply(
+    contributionIds: js.Array[java.lang.String],
+    includeProviderDetails: scala.Boolean,
+    queryOptions: ContributionQueryOptions
+  ): ContributionNodeQuery = {
+    val __obj = js.Dynamic.literal(contributionIds = contributionIds, includeProviderDetails = includeProviderDetails, queryOptions = queryOptions)
+  
+    __obj.asInstanceOf[ContributionNodeQuery]
+  }
+}
+

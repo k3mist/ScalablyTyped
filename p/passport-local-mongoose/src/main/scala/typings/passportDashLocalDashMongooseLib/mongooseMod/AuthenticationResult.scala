@@ -10,3 +10,12 @@ trait AuthenticationResult extends js.Object {
   var user: js.Any
 }
 
+object AuthenticationResult {
+  @scala.inline
+  def apply(error: js.Any, user: js.Any): AuthenticationResult = {
+    val __obj = js.Dynamic.literal(error = error, user = user)
+  
+    __obj.asInstanceOf[AuthenticationResult]
+  }
+}
+

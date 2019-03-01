@@ -27,3 +27,17 @@ trait ISession extends js.Object {
   var renewalDate: scala.Double
 }
 
+object ISession {
+  @scala.inline
+  def apply(
+    acquisitionDate: scala.Double,
+    id: java.lang.String,
+    isFirst: scala.Boolean,
+    renewalDate: scala.Double
+  ): ISession = {
+    val __obj = js.Dynamic.literal(acquisitionDate = acquisitionDate, id = id, isFirst = isFirst, renewalDate = renewalDate)
+  
+    __obj.asInstanceOf[ISession]
+  }
+}
+

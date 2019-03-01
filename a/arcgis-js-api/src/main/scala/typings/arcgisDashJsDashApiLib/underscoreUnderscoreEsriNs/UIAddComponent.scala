@@ -27,3 +27,20 @@ trait UIAddComponent
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UIAddComponent {
+  @scala.inline
+  def apply(
+    component: Widget | stdLib.HTMLElement | java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    index: scala.Int | scala.Double = null,
+    position: java.lang.String = null
+  ): UIAddComponent = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[UIAddComponent]
+  }
+}
+

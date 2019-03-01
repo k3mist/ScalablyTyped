@@ -11,3 +11,12 @@ trait CellMetaSettings extends js.Object {
   var settings: Settings
 }
 
+object CellMetaSettings {
+  @scala.inline
+  def apply(col: scala.Double, row: scala.Double, settings: Settings): CellMetaSettings = {
+    val __obj = js.Dynamic.literal(col = col, row = row, settings = settings)
+  
+    __obj.asInstanceOf[CellMetaSettings]
+  }
+}
+

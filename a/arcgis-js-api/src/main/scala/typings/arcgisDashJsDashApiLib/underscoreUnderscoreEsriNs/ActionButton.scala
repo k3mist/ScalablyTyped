@@ -14,3 +14,22 @@ trait ActionButton extends ActionBase {
   var image: java.lang.String
 }
 
+object ActionButton {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    className: java.lang.String,
+    clone: js.Function0[ActionButton],
+    disabled: scala.Boolean,
+    id: java.lang.String,
+    image: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String,
+    visible: scala.Boolean
+  ): ActionButton = {
+    val __obj = js.Dynamic.literal(active = active, className = className, clone = clone, disabled = disabled, id = id, image = image, title = title, `type` = `type`, visible = visible)
+  
+    __obj.asInstanceOf[ActionButton]
+  }
+}
+

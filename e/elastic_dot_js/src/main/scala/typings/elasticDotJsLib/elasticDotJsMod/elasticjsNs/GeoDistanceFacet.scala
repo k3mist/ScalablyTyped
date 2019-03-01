@@ -102,3 +102,33 @@ trait GeoDistanceFacet extends Facet {
   def valueScript(scriptCode: java.lang.String): GeoDistanceFacet
 }
 
+object GeoDistanceFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    addRange: js.Function2[stdLib.Number, stdLib.Number, GeoDistanceFacet],
+    addUnboundedFrom: js.Function1[stdLib.Number, GeoDistanceFacet],
+    addUnboundedTo: js.Function1[stdLib.Number, GeoDistanceFacet],
+    cacheFilter: js.Function1[scala.Boolean, GeoDistanceFacet],
+    distanceType: js.Function1[java.lang.String, GeoDistanceFacet],
+    facetFilter: js.Function1[js.Object, GeoDistanceFacet],
+    field: js.Function1[java.lang.String, GeoDistanceFacet],
+    global: js.Function1[scala.Boolean, GeoDistanceFacet],
+    lang: js.Function1[java.lang.String, GeoDistanceFacet],
+    mode: js.Function1[java.lang.String, GeoDistanceFacet],
+    nested: js.Function1[java.lang.String, GeoDistanceFacet],
+    normalize: js.Function1[java.lang.String, GeoDistanceFacet],
+    params: js.Function1[js.Object, GeoDistanceFacet],
+    point: js.Function1[GeoPoint, GeoDistanceFacet],
+    scope: js.Function1[java.lang.String, GeoDistanceFacet],
+    toJSON: js.Function0[js.Any],
+    unit: js.Function1[java.lang.String, GeoDistanceFacet],
+    valueField: js.Function1[java.lang.String, GeoDistanceFacet],
+    valueScript: js.Function1[java.lang.String, GeoDistanceFacet]
+  ): GeoDistanceFacet = {
+    val __obj = js.Dynamic.literal(_type = _type, addRange = addRange, addUnboundedFrom = addUnboundedFrom, addUnboundedTo = addUnboundedTo, cacheFilter = cacheFilter, distanceType = distanceType, facetFilter = facetFilter, field = field, global = global, lang = lang, mode = mode, nested = nested, normalize = normalize, params = params, point = point, scope = scope, toJSON = toJSON, unit = unit, valueField = valueField, valueScript = valueScript)
+  
+    __obj.asInstanceOf[GeoDistanceFacet]
+  }
+}
+

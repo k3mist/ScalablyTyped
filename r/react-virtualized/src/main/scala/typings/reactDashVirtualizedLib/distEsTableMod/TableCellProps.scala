@@ -16,3 +16,23 @@ trait TableCellProps extends js.Object {
   var rowIndex: scala.Double
 }
 
+object TableCellProps {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Double,
+    dataKey: java.lang.String,
+    isScrolling: scala.Boolean,
+    rowData: js.Any,
+    rowIndex: scala.Double,
+    cellData: js.Any = null,
+    columnData: js.Any = null,
+    parent: js.Any = null
+  ): TableCellProps = {
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, dataKey = dataKey, isScrolling = isScrolling, rowData = rowData, rowIndex = rowIndex)
+    if (cellData != null) __obj.updateDynamic("cellData")(cellData)
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[TableCellProps]
+  }
+}
+

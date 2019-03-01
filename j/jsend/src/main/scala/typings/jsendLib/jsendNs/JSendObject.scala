@@ -12,3 +12,19 @@ trait JSendObject extends js.Object {
   var status: java.lang.String
 }
 
+object JSendObject {
+  @scala.inline
+  def apply(
+    status: java.lang.String,
+    code: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    message: java.lang.String = null
+  ): JSendObject = {
+    val __obj = js.Dynamic.literal(status = status)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[JSendObject]
+  }
+}
+

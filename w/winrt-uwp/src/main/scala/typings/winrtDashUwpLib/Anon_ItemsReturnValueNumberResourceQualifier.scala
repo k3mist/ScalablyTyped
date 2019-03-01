@@ -10,3 +10,15 @@ trait Anon_ItemsReturnValueNumberResourceQualifier extends js.Object {
   /** The number of objects returned. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumberResourceQualifier {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceQualifier,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueNumberResourceQualifier = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumberResourceQualifier]
+  }
+}
+

@@ -16,3 +16,12 @@ trait KeySchemaElement extends js.Object {
   var KeyType: KeyType
 }
 
+object KeySchemaElement {
+  @scala.inline
+  def apply(AttributeName: KeySchemaAttributeName, KeyType: KeyType): KeySchemaElement = {
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName, KeyType = KeyType.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[KeySchemaElement]
+  }
+}
+

@@ -14,3 +14,15 @@ trait Get[TResponse]
   var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
 }
 
+object Get {
+  @scala.inline
+  def apply[TResponse](
+    request: protractorDashHttpDashMockLib.Anon_Headers,
+    response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
+  ): Get[TResponse] = {
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
+    __obj.asInstanceOf[Get[TResponse]]
+  }
+}
+

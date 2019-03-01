@@ -60,3 +60,26 @@ trait ManualIntervention extends js.Object {
   var url: java.lang.String
 }
 
+object ManualIntervention {
+  @scala.inline
+  def apply(
+    approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    comments: java.lang.String,
+    createdOn: stdLib.Date,
+    id: scala.Double,
+    instructions: java.lang.String,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    release: ReleaseShallowReference,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseEnvironment: ReleaseEnvironmentShallowReference,
+    status: ManualInterventionStatus,
+    taskInstanceId: java.lang.String,
+    url: java.lang.String
+  ): ManualIntervention = {
+    val __obj = js.Dynamic.literal(approver = approver, comments = comments, createdOn = createdOn, id = id, instructions = instructions, modifiedOn = modifiedOn, name = name, release = release, releaseDefinition = releaseDefinition, releaseEnvironment = releaseEnvironment, status = status, taskInstanceId = taskInstanceId, url = url)
+  
+    __obj.asInstanceOf[ManualIntervention]
+  }
+}
+

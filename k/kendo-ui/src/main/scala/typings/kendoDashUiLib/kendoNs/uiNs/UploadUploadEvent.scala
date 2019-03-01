@@ -12,3 +12,23 @@ trait UploadUploadEvent extends UploadEvent {
   var formData: js.UndefOr[js.Any] = js.undefined
 }
 
+object UploadUploadEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Upload,
+    XMLHttpRequest: js.Any = null,
+    data: js.Any = null,
+    files: js.Array[_] = null,
+    formData: js.Any = null
+  ): UploadUploadEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    __obj.asInstanceOf[UploadUploadEvent]
+  }
+}
+

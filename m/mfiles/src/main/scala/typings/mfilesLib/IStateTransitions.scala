@@ -12,3 +12,17 @@ trait IStateTransitions extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IStateTransitions {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IStateTransition, scala.Unit],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IStateTransition],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IStateTransitions = {
+    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+  
+    __obj.asInstanceOf[IStateTransitions]
+  }
+}
+

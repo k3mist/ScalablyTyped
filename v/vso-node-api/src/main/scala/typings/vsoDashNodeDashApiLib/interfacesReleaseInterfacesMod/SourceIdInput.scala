@@ -10,3 +10,12 @@ trait SourceIdInput extends js.Object {
   var name: java.lang.String
 }
 
+object SourceIdInput {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String): SourceIdInput = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
+    __obj.asInstanceOf[SourceIdInput]
+  }
+}
+

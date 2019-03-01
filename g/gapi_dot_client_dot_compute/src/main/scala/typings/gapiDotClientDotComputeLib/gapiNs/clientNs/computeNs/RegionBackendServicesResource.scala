@@ -32,3 +32,41 @@ trait RegionBackendServicesResource extends js.Object {
   def update(request: gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RegionBackendServicesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackendService]
+    ],
+    getHealth: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceGroupHealth]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackendServiceList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendServiceFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RegionBackendServicesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, getHealth = getHealth, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[RegionBackendServicesResource]
+  }
+}
+

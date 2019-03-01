@@ -11,3 +11,12 @@ trait VisualQualityParam extends js.Object {
   var reason: java.lang.String
 }
 
+object VisualQualityParam {
+  @scala.inline
+  def apply(label: java.lang.String, mode: java.lang.String, reason: java.lang.String): VisualQualityParam = {
+    val __obj = js.Dynamic.literal(label = label, mode = mode, reason = reason)
+  
+    __obj.asInstanceOf[VisualQualityParam]
+  }
+}
+

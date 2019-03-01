@@ -35,3 +35,50 @@ trait EmbeddedChartBuilder extends js.Object {
   def setTransposeRowsAndColumns(transpose: scala.Boolean): EmbeddedChartBuilder
 }
 
+object EmbeddedChartBuilder {
+  @scala.inline
+  def apply(
+    addRange: js.Function1[Range, EmbeddedChartBuilder],
+    asAreaChart: js.Function0[EmbeddedAreaChartBuilder],
+    asBarChart: js.Function0[EmbeddedBarChartBuilder],
+    asColumnChart: js.Function0[EmbeddedColumnChartBuilder],
+    asComboChart: js.Function0[EmbeddedComboChartBuilder],
+    asHistogramChart: js.Function0[EmbeddedHistogramChartBuilder],
+    asLineChart: js.Function0[EmbeddedLineChartBuilder],
+    asPieChart: js.Function0[EmbeddedPieChartBuilder],
+    asScatterChart: js.Function0[EmbeddedScatterChartBuilder],
+    asTableChart: js.Function0[EmbeddedTableChartBuilder],
+    build: js.Function0[EmbeddedChart],
+    getChartType: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType],
+    getContainer: js.Function0[ContainerInfo],
+    getRanges: js.Function0[js.Array[Range]],
+    removeRange: js.Function1[Range, EmbeddedChartBuilder],
+    setChartType: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType, 
+      EmbeddedChartBuilder
+    ],
+    setHiddenDimensionStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setMergeStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setNumHeaders: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, EmbeddedChartBuilder],
+    setOption: js.Function2[java.lang.String, js.Object, EmbeddedChartBuilder],
+    setPosition: js.Function4[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      EmbeddedChartBuilder
+    ],
+    setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder]
+  ): EmbeddedChartBuilder = {
+    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, setChartType = setChartType, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPosition = setPosition, setTransposeRowsAndColumns = setTransposeRowsAndColumns)
+  
+    __obj.asInstanceOf[EmbeddedChartBuilder]
+  }
+}
+

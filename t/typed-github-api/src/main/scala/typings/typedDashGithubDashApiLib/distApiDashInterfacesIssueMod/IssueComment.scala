@@ -15,3 +15,20 @@ trait IssueComment extends js.Object {
   var user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
 }
 
+object IssueComment {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    created_at: stdLib.Date,
+    html_url: java.lang.String,
+    id: scala.Double,
+    updated_at: stdLib.Date,
+    url: java.lang.String,
+    user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
+  ): IssueComment = {
+    val __obj = js.Dynamic.literal(body = body, created_at = created_at, html_url = html_url, id = id, updated_at = updated_at, url = url, user = user)
+  
+    __obj.asInstanceOf[IssueComment]
+  }
+}
+

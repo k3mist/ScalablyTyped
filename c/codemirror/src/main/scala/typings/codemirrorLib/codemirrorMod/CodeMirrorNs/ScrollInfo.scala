@@ -14,3 +14,19 @@ trait ScrollInfo extends js.Object {
   var width: js.Any
 }
 
+object ScrollInfo {
+  @scala.inline
+  def apply(
+    clientHeight: js.Any,
+    clientWidth: js.Any,
+    height: js.Any,
+    left: js.Any,
+    top: js.Any,
+    width: js.Any
+  ): ScrollInfo = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, height = height, left = left, top = top, width = width)
+  
+    __obj.asInstanceOf[ScrollInfo]
+  }
+}
+

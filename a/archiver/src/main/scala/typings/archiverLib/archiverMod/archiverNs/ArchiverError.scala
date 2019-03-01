@@ -12,3 +12,12 @@ trait ArchiverError
   var data: js.Any
 }
 
+object ArchiverError {
+  @scala.inline
+  def apply(code: java.lang.String, data: js.Any, stack: java.lang.String = null): ArchiverError = {
+    val __obj = js.Dynamic.literal(code = code, data = data)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ArchiverError]
+  }
+}
+

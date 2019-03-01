@@ -28,3 +28,33 @@ trait SubscriptionsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object SubscriptionsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    defer: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchasesDeferResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionPurchase]
+    ],
+    refund: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    revoke: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): SubscriptionsResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, defer = defer, get = get, refund = refund, revoke = revoke)
+  
+    __obj.asInstanceOf[SubscriptionsResource]
+  }
+}
+

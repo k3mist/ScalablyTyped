@@ -35,3 +35,19 @@ trait ScaleEventInfo
   var yScale: scala.Double
 }
 
+object ScaleEventInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String,
+    xScale: scala.Double,
+    yScale: scala.Double
+  ): ScaleEventInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`, xScale = xScale, yScale = yScale)
+  
+    __obj.asInstanceOf[ScaleEventInfo]
+  }
+}
+

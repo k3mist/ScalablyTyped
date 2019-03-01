@@ -20,3 +20,27 @@ trait ReportOptions extends js.Object {
   var `text-summary`: Options
 }
 
+object ReportOptions {
+  @scala.inline
+  def apply(
+    clover: RootedOptions,
+    cobertura: RootedOptions,
+    html: HtmlOptions,
+    json: Options,
+    `json-summary`: Options,
+    lcov: scala.Nothing,
+    lcovonly: Options,
+    none: RootedOptions,
+    teamcity: Options with istanbulDashReportsLib.Anon_BlockName,
+    text: Options with istanbulDashReportsLib.Anon_MaxCols,
+    `text-lcov`: Options,
+    `text-summary`: Options
+  ): ReportOptions = {
+    val __obj = js.Dynamic.literal(clover = clover, cobertura = cobertura, html = html, json = json, lcov = lcov, lcovonly = lcovonly, none = none, teamcity = teamcity, text = text)
+    __obj.updateDynamic("json-summary")(`json-summary`)
+    __obj.updateDynamic("text-lcov")(`text-lcov`)
+    __obj.updateDynamic("text-summary")(`text-summary`)
+    __obj.asInstanceOf[ReportOptions]
+  }
+}
+

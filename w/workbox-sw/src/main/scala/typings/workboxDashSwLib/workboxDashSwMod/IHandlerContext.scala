@@ -15,3 +15,16 @@ trait IHandlerContext extends IMatchContext {
   var params: js.UndefOr[js.Object] = js.undefined
 }
 
+object IHandlerContext {
+  @scala.inline
+  def apply(
+    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any,
+    url: stdLib.URL,
+    params: js.Object = null
+  ): IHandlerContext = {
+    val __obj = js.Dynamic.literal(event = event, url = url)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[IHandlerContext]
+  }
+}
+

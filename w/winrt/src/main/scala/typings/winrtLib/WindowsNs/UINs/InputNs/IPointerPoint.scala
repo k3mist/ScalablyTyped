@@ -16,3 +16,21 @@ trait IPointerPoint extends js.Object {
   var timestamp: scala.Double
 }
 
+object IPointerPoint {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    isInContact: scala.Boolean,
+    pointerDevice: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDevice,
+    pointerId: scala.Double,
+    position: winrtLib.WindowsNs.FoundationNs.Point,
+    properties: PointerPointProperties,
+    rawPosition: winrtLib.WindowsNs.FoundationNs.Point,
+    timestamp: scala.Double
+  ): IPointerPoint = {
+    val __obj = js.Dynamic.literal(frameId = frameId, isInContact = isInContact, pointerDevice = pointerDevice, pointerId = pointerId, position = position, properties = properties, rawPosition = rawPosition, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IPointerPoint]
+  }
+}
+

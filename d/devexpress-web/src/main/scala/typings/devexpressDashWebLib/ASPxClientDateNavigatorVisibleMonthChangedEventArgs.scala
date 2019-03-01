@@ -10,3 +10,12 @@ trait ASPxClientDateNavigatorVisibleMonthChangedEventArgs extends ASPxClientEven
   var startDate: stdLib.Date
 }
 
+object ASPxClientDateNavigatorVisibleMonthChangedEventArgs {
+  @scala.inline
+  def apply(endDate: stdLib.Date, startDate: stdLib.Date): ASPxClientDateNavigatorVisibleMonthChangedEventArgs = {
+    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
+  
+    __obj.asInstanceOf[ASPxClientDateNavigatorVisibleMonthChangedEventArgs]
+  }
+}
+

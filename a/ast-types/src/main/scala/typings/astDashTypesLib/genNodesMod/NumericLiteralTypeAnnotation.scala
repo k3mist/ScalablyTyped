@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var value: scala.Double
 }
 
+object NumericLiteralTypeAnnotation {
+  @scala.inline
+  def apply(
+    raw: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.NumericLiteralTypeAnnotation,
+    value: scala.Double
+  ): NumericLiteralTypeAnnotation = {
+    val __obj = js.Dynamic.literal(raw = raw, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[NumericLiteralTypeAnnotation]
+  }
+}
+

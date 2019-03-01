@@ -15,3 +15,16 @@ trait BrokenPackageRequest
   var aName: java.lang.String
 }
 
+object BrokenPackageRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    aName: java.lang.String
+  ): BrokenPackageRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, aName = aName)
+  
+    __obj.asInstanceOf[BrokenPackageRequest]
+  }
+}
+

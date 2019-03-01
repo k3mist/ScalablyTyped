@@ -32,3 +32,26 @@ trait SafariExtensionSettingsChangeEvent extends SafariEvent {
   var target_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings
 }
 
+object SafariExtensionSettingsChangeEvent {
+  @scala.inline
+  def apply(
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    currentTarget: SafariExtensionSettings | SafariExtensionSecureSettings,
+    defaultPrevented: scala.Boolean,
+    eventPhase: scala.Double,
+    key: java.lang.String,
+    newValue: js.Any,
+    oldValue: js.Any,
+    preventDefault: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: SafariExtensionSettings | SafariExtensionSecureSettings,
+    timestamp: scala.Double,
+    `type`: java.lang.String
+  ): SafariExtensionSettingsChangeEvent = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented, eventPhase = eventPhase, key = key, newValue = newValue, oldValue = oldValue, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target.asInstanceOf[js.Any], timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[SafariExtensionSettingsChangeEvent]
+  }
+}
+

@@ -14,3 +14,16 @@ trait Identifier
   var type_Identifier: cssDashTreeLib.cssDashTreeLibStrings.Identifier
 }
 
+object Identifier {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Identifier,
+    loc: CssLocation = null
+  ): Identifier = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Identifier]
+  }
+}
+

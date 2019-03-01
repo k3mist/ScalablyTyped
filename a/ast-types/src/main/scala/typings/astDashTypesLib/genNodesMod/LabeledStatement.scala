@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.LabeledStatement
 }
 
+object LabeledStatement {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    label: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.LabeledStatement
+  ): LabeledStatement = {
+    val __obj = js.Dynamic.literal(body = body, label = label, `type` = `type`)
+  
+    __obj.asInstanceOf[LabeledStatement]
+  }
+}
+

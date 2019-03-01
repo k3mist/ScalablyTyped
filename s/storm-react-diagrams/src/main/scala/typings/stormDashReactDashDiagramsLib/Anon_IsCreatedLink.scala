@@ -10,3 +10,15 @@ trait Anon_IsCreatedLink extends js.Object {
   var link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
 }
 
+object Anon_IsCreatedLink {
+  @scala.inline
+  def apply(
+    isCreated: scala.Boolean,
+    link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
+  ): Anon_IsCreatedLink = {
+    val __obj = js.Dynamic.literal(isCreated = isCreated, link = link)
+  
+    __obj.asInstanceOf[Anon_IsCreatedLink]
+  }
+}
+

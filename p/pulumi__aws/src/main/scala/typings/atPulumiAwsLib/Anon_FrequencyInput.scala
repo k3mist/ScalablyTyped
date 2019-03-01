@@ -9,3 +9,12 @@ trait Anon_FrequencyInput extends js.Object {
   var frequency: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_FrequencyInput {
+  @scala.inline
+  def apply(frequency: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): Anon_FrequencyInput = {
+    val __obj = js.Dynamic.literal(frequency = frequency.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_FrequencyInput]
+  }
+}
+

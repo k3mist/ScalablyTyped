@@ -268,3 +268,43 @@ trait XAccessibleText
   def setSelection(nStartIndex: scala.Double, nEndIndex: scala.Double): scala.Boolean
 }
 
+object XAccessibleText {
+  @scala.inline
+  def apply(
+    CaretPosition: scala.Double,
+    CharacterCount: scala.Double,
+    SelectedText: java.lang.String,
+    SelectionEnd: scala.Double,
+    SelectionStart: scala.Double,
+    Text: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    copyText: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    getCaretPosition: js.Function0[scala.Double],
+    getCharacter: js.Function1[scala.Double, java.lang.String],
+    getCharacterAttributes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getCharacterBounds: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getCharacterCount: js.Function0[scala.Double],
+    getIndexAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Double],
+    getSelectedText: js.Function0[java.lang.String],
+    getSelectionEnd: js.Function0[scala.Double],
+    getSelectionStart: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    getTextAtIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextBeforeIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextBehindIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextRange: js.Function2[scala.Double, scala.Double, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCaretPosition: js.Function1[scala.Double, scala.Boolean],
+    setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean]
+  ): XAccessibleText = {
+    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, acquire = acquire, copyText = copyText, getCaretPosition = getCaretPosition, getCharacter = getCharacter, getCharacterAttributes = getCharacterAttributes, getCharacterBounds = getCharacterBounds, getCharacterCount = getCharacterCount, getIndexAtPoint = getIndexAtPoint, getSelectedText = getSelectedText, getSelectionEnd = getSelectionEnd, getSelectionStart = getSelectionStart, getText = getText, getTextAtIndex = getTextAtIndex, getTextBeforeIndex = getTextBeforeIndex, getTextBehindIndex = getTextBehindIndex, getTextRange = getTextRange, queryInterface = queryInterface, release = release, setCaretPosition = setCaretPosition, setSelection = setSelection)
+  
+    __obj.asInstanceOf[XAccessibleText]
+  }
+}
+

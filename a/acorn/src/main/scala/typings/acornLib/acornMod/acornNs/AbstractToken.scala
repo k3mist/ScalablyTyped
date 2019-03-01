@@ -12,3 +12,18 @@ trait AbstractToken extends js.Object {
   var start: scala.Double
 }
 
+object AbstractToken {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    start: scala.Double,
+    loc: SourceLocation = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): AbstractToken = {
+    val __obj = js.Dynamic.literal(end = end, start = start)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[AbstractToken]
+  }
+}
+

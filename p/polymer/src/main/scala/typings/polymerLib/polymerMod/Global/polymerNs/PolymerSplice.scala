@@ -13,3 +13,18 @@ trait PolymerSplice extends js.Object {
   var `type`: java.lang.String
 }
 
+object PolymerSplice {
+  @scala.inline
+  def apply(
+    addedCount: scala.Double,
+    index: scala.Double,
+    `object`: js.Array[js.Object],
+    removed: js.Array[js.Object],
+    `type`: java.lang.String
+  ): PolymerSplice = {
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, `object` = `object`, removed = removed, `type` = `type`)
+  
+    __obj.asInstanceOf[PolymerSplice]
+  }
+}
+

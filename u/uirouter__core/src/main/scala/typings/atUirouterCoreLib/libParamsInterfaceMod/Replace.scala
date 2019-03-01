@@ -22,3 +22,12 @@ trait Replace extends js.Object {
   var to: java.lang.String
 }
 
+object Replace {
+  @scala.inline
+  def apply(from: java.lang.String, to: java.lang.String): Replace = {
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
+    __obj.asInstanceOf[Replace]
+  }
+}
+

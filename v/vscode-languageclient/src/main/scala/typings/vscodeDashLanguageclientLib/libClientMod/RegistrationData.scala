@@ -10,3 +10,12 @@ trait RegistrationData[T] extends js.Object {
   var registerOptions: T
 }
 
+object RegistrationData {
+  @scala.inline
+  def apply[T](id: java.lang.String, registerOptions: T): RegistrationData[T] = {
+    val __obj = js.Dynamic.literal(id = id, registerOptions = registerOptions.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RegistrationData[T]]
+  }
+}
+

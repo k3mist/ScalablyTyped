@@ -16,3 +16,12 @@ trait ASPxClientReportDesignerTabEventArgs extends ASPxClientEventArgs {
   var Tab: ASPxDesignerNavigateTab
 }
 
+object ASPxClientReportDesignerTabEventArgs {
+  @scala.inline
+  def apply(Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabEventArgs = {
+    val __obj = js.Dynamic.literal(Tab = Tab)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerTabEventArgs]
+  }
+}
+

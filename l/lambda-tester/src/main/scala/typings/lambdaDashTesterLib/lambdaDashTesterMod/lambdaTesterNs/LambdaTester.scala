@@ -20,3 +20,25 @@ trait LambdaTester extends js.Object {
   def xray(): this.type
 }
 
+object LambdaTester {
+  @scala.inline
+  def apply(
+    clientContext: js.Function1[awsDashLambdaLib.awsDashLambdaMod.ClientContext, LambdaTester],
+    context: js.Function1[awsDashLambdaLib.awsDashLambdaMod.Context, LambdaTester],
+    event: js.Function1[js.Any, LambdaTester],
+    expectError: js.Function1[Verifier, js.Promise[_]],
+    expectFail: js.Function1[Verifier, js.Promise[_]],
+    expectReject: js.Function1[Verifier, js.Promise[_]],
+    expectResolve: js.Function1[Verifier, js.Promise[_]],
+    expectResult: js.Function1[Verifier, js.Promise[_]],
+    expectSucceed: js.Function1[Verifier, js.Promise[_]],
+    identity: js.Function2[java.lang.String, java.lang.String, LambdaTester],
+    timeout: js.Function1[scala.Double, LambdaTester],
+    xray: js.Function0[LambdaTester]
+  ): LambdaTester = {
+    val __obj = js.Dynamic.literal(clientContext = clientContext, context = context, event = event, expectError = expectError, expectFail = expectFail, expectReject = expectReject, expectResolve = expectResolve, expectResult = expectResult, expectSucceed = expectSucceed, identity = identity, timeout = timeout, xray = xray)
+  
+    __obj.asInstanceOf[LambdaTester]
+  }
+}
+

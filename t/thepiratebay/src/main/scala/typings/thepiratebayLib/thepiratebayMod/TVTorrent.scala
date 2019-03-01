@@ -11,3 +11,12 @@ trait TVTorrent extends js.Object {
   var title: java.lang.String
 }
 
+object TVTorrent {
+  @scala.inline
+  def apply(id: java.lang.String, link: java.lang.String, title: java.lang.String): TVTorrent = {
+    val __obj = js.Dynamic.literal(id = id, link = link, title = title)
+  
+    __obj.asInstanceOf[TVTorrent]
+  }
+}
+

@@ -34,3 +34,17 @@ trait VolumeAttachmentList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object VolumeAttachmentList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`,
+    items: js.Array[VolumeAttachment],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): VolumeAttachmentList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[VolumeAttachmentList]
+  }
+}
+

@@ -15,3 +15,16 @@ trait Atom extends Sentinel {
   var value: js.Any
 }
 
+object Atom {
+  @scala.inline
+  def apply(
+    $type: falcorDashJsonDashGraphLib.falcorDashJsonDashGraphLibStrings.atom,
+    value: js.Any,
+    $expires: scala.Int | scala.Double = null
+  ): Atom = {
+    val __obj = js.Dynamic.literal($type = $type, value = value)
+    if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Atom]
+  }
+}
+

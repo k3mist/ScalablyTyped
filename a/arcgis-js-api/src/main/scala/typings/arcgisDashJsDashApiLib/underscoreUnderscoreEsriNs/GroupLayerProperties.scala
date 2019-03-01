@@ -24,3 +24,30 @@ trait GroupLayerProperties
   var visibilityMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GroupLayerProperties {
+  @scala.inline
+  def apply(
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    layers: CollectionProperties[LayerProperties] | js.Array[LayerProperties] = null,
+    listMode: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    portalItem: PortalItemProperties = null,
+    title: java.lang.String = null,
+    visibilityMode: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): GroupLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (visibilityMode != null) __obj.updateDynamic("visibilityMode")(visibilityMode)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[GroupLayerProperties]
+  }
+}
+

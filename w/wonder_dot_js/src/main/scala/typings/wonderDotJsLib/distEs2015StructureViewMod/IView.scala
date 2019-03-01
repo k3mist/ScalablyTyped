@@ -18,3 +18,26 @@ trait IView extends js.Object {
   def initCanvas(): scala.Unit
 }
 
+object IView {
+  @scala.inline
+  def apply(
+    dom: js.Any,
+    getContext: js.Function1[
+      wonderDotJsLib.distEs2015CoreDataMainDataMod.ContextConfigData, 
+      stdLib.WebGLRenderingContext
+    ],
+    height: scala.Double,
+    initCanvas: js.Function0[scala.Unit],
+    offset: wonderDotJsLib.Anon_XY,
+    styleHeight: java.lang.String,
+    styleWidth: java.lang.String,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): IView = {
+    val __obj = js.Dynamic.literal(dom = dom, getContext = getContext, height = height, initCanvas = initCanvas, offset = offset, styleHeight = styleHeight, styleWidth = styleWidth, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[IView]
+  }
+}
+

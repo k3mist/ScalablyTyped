@@ -10,3 +10,15 @@ trait Anon_Key extends js.Object {
   var value: js.Array[vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColor]
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    value: js.Array[vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColor]
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

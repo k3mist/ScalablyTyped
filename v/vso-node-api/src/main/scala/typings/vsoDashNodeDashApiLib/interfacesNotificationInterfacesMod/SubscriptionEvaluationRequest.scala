@@ -16,3 +16,15 @@ trait SubscriptionEvaluationRequest extends js.Object {
   var subscriptionCreateParameters: NotificationSubscriptionCreateParameters
 }
 
+object SubscriptionEvaluationRequest {
+  @scala.inline
+  def apply(
+    minEventsCreatedDate: stdLib.Date,
+    subscriptionCreateParameters: NotificationSubscriptionCreateParameters
+  ): SubscriptionEvaluationRequest = {
+    val __obj = js.Dynamic.literal(minEventsCreatedDate = minEventsCreatedDate, subscriptionCreateParameters = subscriptionCreateParameters)
+  
+    __obj.asInstanceOf[SubscriptionEvaluationRequest]
+  }
+}
+

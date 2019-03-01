@@ -82,3 +82,33 @@ trait SinonFakeXMLHttpRequest extends js.Object {
   def setResponseHeaders(headers: js.Any): scala.Unit
 }
 
+object SinonFakeXMLHttpRequest {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    autoRespond: js.Function1[scala.Double, scala.Unit],
+    error: js.Function0[scala.Unit],
+    getAllResponseHeaders: js.Function0[js.Any],
+    getResponseHeader: js.Function1[java.lang.String, java.lang.String],
+    method: java.lang.String,
+    onerror: js.Function0[scala.Unit],
+    password: java.lang.String,
+    requestBody: java.lang.String,
+    requestHeaders: js.Any,
+    respond: js.Function3[scala.Double, js.Any, java.lang.String, scala.Unit],
+    responseXML: sinonLib.sinonMod.Document,
+    setResponseBody: js.Function1[java.lang.String, scala.Unit],
+    setResponseHeaders: js.Function1[js.Any, scala.Unit],
+    status: scala.Double,
+    statusText: java.lang.String,
+    upload: SinonFakeUploadProgress,
+    url: java.lang.String,
+    username: java.lang.String,
+    withCredentials: scala.Boolean
+  ): SinonFakeXMLHttpRequest = {
+    val __obj = js.Dynamic.literal(async = async, autoRespond = autoRespond, error = error, getAllResponseHeaders = getAllResponseHeaders, getResponseHeader = getResponseHeader, method = method, onerror = onerror, password = password, requestBody = requestBody, requestHeaders = requestHeaders, respond = respond, responseXML = responseXML, setResponseBody = setResponseBody, setResponseHeaders = setResponseHeaders, status = status, statusText = statusText, upload = upload, url = url, username = username, withCredentials = withCredentials)
+  
+    __obj.asInstanceOf[SinonFakeXMLHttpRequest]
+  }
+}
+

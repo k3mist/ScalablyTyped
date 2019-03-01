@@ -20,3 +20,12 @@ trait BehaviorCreateModel extends js.Object {
   var name: java.lang.String
 }
 
+object BehaviorCreateModel {
+  @scala.inline
+  def apply(color: java.lang.String, inherits: java.lang.String, name: java.lang.String): BehaviorCreateModel = {
+    val __obj = js.Dynamic.literal(color = color, inherits = inherits, name = name)
+  
+    __obj.asInstanceOf[BehaviorCreateModel]
+  }
+}
+

@@ -20,3 +20,17 @@ trait GlobalTableGlobalSecondaryIndexSettingsUpdate extends js.Object {
   var ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 
+object GlobalTableGlobalSecondaryIndexSettingsUpdate {
+  @scala.inline
+  def apply(
+    IndexName: IndexName,
+    ProvisionedWriteCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
+    ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  ): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
+    val __obj = js.Dynamic.literal(IndexName = IndexName)
+    if (ProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettingsUpdate")(ProvisionedWriteCapacityAutoScalingSettingsUpdate)
+    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits)
+    __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
+  }
+}
+

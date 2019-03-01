@@ -30,3 +30,26 @@ trait CFB$Entry extends js.Object {
   var `type`: scala.Double
 }
 
+object CFB$Entry {
+  @scala.inline
+  def apply(
+    clsid: java.lang.String,
+    color: scala.Double,
+    content: CFB$Blob,
+    name: java.lang.String,
+    size: scala.Double,
+    start: scala.Double,
+    state: scala.Double,
+    `type`: scala.Double,
+    ct: stdLib.Date = null,
+    mt: stdLib.Date = null,
+    storage: java.lang.String = null
+  ): CFB$Entry = {
+    val __obj = js.Dynamic.literal(clsid = clsid, color = color, content = content.asInstanceOf[js.Any], name = name, size = size, start = start, state = state, `type` = `type`)
+    if (ct != null) __obj.updateDynamic("ct")(ct)
+    if (mt != null) __obj.updateDynamic("mt")(mt)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    __obj.asInstanceOf[CFB$Entry]
+  }
+}
+

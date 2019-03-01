@@ -10,3 +10,12 @@ trait Anon_Random
   var random: js.Array[scala.Double]
 }
 
+object Anon_Random {
+  @scala.inline
+  def apply(random: js.Array[scala.Double]): Anon_Random = {
+    val __obj = js.Dynamic.literal(random = random)
+  
+    __obj.asInstanceOf[Anon_Random]
+  }
+}
+

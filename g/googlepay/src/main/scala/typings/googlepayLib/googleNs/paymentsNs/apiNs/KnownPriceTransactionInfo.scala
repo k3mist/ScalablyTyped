@@ -13,3 +13,16 @@ trait KnownPriceTransactionInfo
   var totalPriceStatus_KnownPriceTransactionInfo: googlepayLib.googlepayLibStrings.ESTIMATED | googlepayLib.googlepayLibStrings.FINAL
 }
 
+object KnownPriceTransactionInfo {
+  @scala.inline
+  def apply(
+    currencyCode: java.lang.String,
+    totalPrice: java.lang.String,
+    totalPriceStatus: googlepayLib.googlepayLibStrings.ESTIMATED | googlepayLib.googlepayLibStrings.FINAL
+  ): KnownPriceTransactionInfo = {
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, totalPrice = totalPrice, totalPriceStatus = totalPriceStatus.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[KnownPriceTransactionInfo]
+  }
+}
+

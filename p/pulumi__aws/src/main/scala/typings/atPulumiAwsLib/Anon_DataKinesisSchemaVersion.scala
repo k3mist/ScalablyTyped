@@ -12,3 +12,17 @@ trait Anon_DataKinesisSchemaVersion extends js.Object {
   var sequenceNumber: java.lang.String
 }
 
+object Anon_DataKinesisSchemaVersion {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    kinesisSchemaVersion: java.lang.String,
+    partitionKey: java.lang.String,
+    sequenceNumber: java.lang.String
+  ): Anon_DataKinesisSchemaVersion = {
+    val __obj = js.Dynamic.literal(data = data, kinesisSchemaVersion = kinesisSchemaVersion, partitionKey = partitionKey, sequenceNumber = sequenceNumber)
+  
+    __obj.asInstanceOf[Anon_DataKinesisSchemaVersion]
+  }
+}
+

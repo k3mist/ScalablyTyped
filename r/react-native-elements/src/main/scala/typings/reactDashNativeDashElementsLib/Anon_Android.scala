@@ -10,3 +10,12 @@ trait Anon_Android extends js.Object {
   var ios: Anon_Error
 }
 
+object Anon_Android {
+  @scala.inline
+  def apply(android: Anon_Error, ios: Anon_Error): Anon_Android = {
+    val __obj = js.Dynamic.literal(android = android, ios = ios)
+  
+    __obj.asInstanceOf[Anon_Android]
+  }
+}
+

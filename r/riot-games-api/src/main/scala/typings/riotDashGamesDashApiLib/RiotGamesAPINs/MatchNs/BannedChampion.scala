@@ -10,3 +10,12 @@ trait BannedChampion extends js.Object {
   var pickTurn: scala.Double
 }
 
+object BannedChampion {
+  @scala.inline
+  def apply(championId: scala.Double, pickTurn: scala.Double): BannedChampion = {
+    val __obj = js.Dynamic.literal(championId = championId, pickTurn = pickTurn)
+  
+    __obj.asInstanceOf[BannedChampion]
+  }
+}
+

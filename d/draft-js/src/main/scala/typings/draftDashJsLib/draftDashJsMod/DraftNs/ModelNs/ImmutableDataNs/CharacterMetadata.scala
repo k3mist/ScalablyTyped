@@ -11,3 +11,16 @@ trait CharacterMetadata extends js.Object {
   def hasStyle(style: java.lang.String): scala.Boolean
 }
 
+object CharacterMetadata {
+  @scala.inline
+  def apply(
+    getEntity: js.Function0[java.lang.String],
+    getStyle: js.Function0[DraftInlineStyle],
+    hasStyle: js.Function1[java.lang.String, scala.Boolean]
+  ): CharacterMetadata = {
+    val __obj = js.Dynamic.literal(getEntity = getEntity, getStyle = getStyle, hasStyle = hasStyle)
+  
+    __obj.asInstanceOf[CharacterMetadata]
+  }
+}
+

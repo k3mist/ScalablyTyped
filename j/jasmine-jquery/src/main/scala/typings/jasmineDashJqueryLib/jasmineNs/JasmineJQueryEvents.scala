@@ -20,3 +20,20 @@ trait JasmineJQueryEvents extends js.Object {
   ): scala.Boolean
 }
 
+object JasmineJQueryEvents {
+  @scala.inline
+  def apply(
+    args: js.Function2[java.lang.String, java.lang.String, js.Any],
+    cleanUp: js.Function0[scala.Unit],
+    spyOn: js.Function2[java.lang.String, java.lang.String, JQueryEventSpy],
+    wasPrevented: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    wasStopped: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    wasTriggered: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    wasTriggeredWith: js.Function4[java.lang.String, java.lang.String, js.Any, jasmineLib.jasmineNs.Env, scala.Boolean]
+  ): JasmineJQueryEvents = {
+    val __obj = js.Dynamic.literal(args = args, cleanUp = cleanUp, spyOn = spyOn, wasPrevented = wasPrevented, wasStopped = wasStopped, wasTriggered = wasTriggered, wasTriggeredWith = wasTriggeredWith)
+  
+    __obj.asInstanceOf[JasmineJQueryEvents]
+  }
+}
+

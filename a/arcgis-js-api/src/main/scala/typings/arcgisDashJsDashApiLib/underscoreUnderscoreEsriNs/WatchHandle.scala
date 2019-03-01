@@ -17,3 +17,17 @@ trait WatchHandle
   def remove(): scala.Unit
 }
 
+object WatchHandle {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    remove: js.Function0[scala.Unit]
+  ): WatchHandle = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, remove = remove)
+  
+    __obj.asInstanceOf[WatchHandle]
+  }
+}
+

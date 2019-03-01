@@ -11,3 +11,12 @@ trait ThemeSpacing extends js.Object {
   var menuGutter: scala.Double
 }
 
+object ThemeSpacing {
+  @scala.inline
+  def apply(baseUnit: scala.Double, controlHeight: scala.Double, menuGutter: scala.Double): ThemeSpacing = {
+    val __obj = js.Dynamic.literal(baseUnit = baseUnit, controlHeight = controlHeight, menuGutter = menuGutter)
+  
+    __obj.asInstanceOf[ThemeSpacing]
+  }
+}
+

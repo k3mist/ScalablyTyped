@@ -10,3 +10,12 @@ trait Anon_Position extends js.Object {
   var text: java.lang.String
 }
 
+object Anon_Position {
+  @scala.inline
+  def apply(position: java.lang.String, text: java.lang.String): Anon_Position = {
+    val __obj = js.Dynamic.literal(position = position, text = text)
+  
+    __obj.asInstanceOf[Anon_Position]
+  }
+}
+

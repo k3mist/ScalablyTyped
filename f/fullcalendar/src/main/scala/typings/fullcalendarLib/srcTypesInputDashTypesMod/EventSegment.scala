@@ -13,3 +13,18 @@ trait EventSegment extends js.Object {
   var start: momentLib.momentMod.momentNs.Moment
 }
 
+object EventSegment {
+  @scala.inline
+  def apply(
+    end: momentLib.momentMod.momentNs.Moment,
+    event: EventObjectInput,
+    isEnd: scala.Boolean,
+    isStart: scala.Boolean,
+    start: momentLib.momentMod.momentNs.Moment
+  ): EventSegment = {
+    val __obj = js.Dynamic.literal(end = end, event = event, isEnd = isEnd, isStart = isStart, start = start)
+  
+    __obj.asInstanceOf[EventSegment]
+  }
+}
+

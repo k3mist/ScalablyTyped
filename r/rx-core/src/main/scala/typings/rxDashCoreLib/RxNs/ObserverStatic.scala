@@ -14,3 +14,12 @@ trait ObserverStatic extends js.Object {
   def notifyOn[T](scheduler: IScheduler): Observer[T]
 }
 
+object ObserverStatic {
+  @scala.inline
+  def apply(notifyOn: js.Function1[IScheduler, Observer[js.Any]]): ObserverStatic = {
+    val __obj = js.Dynamic.literal(notifyOn = notifyOn)
+  
+    __obj.asInstanceOf[ObserverStatic]
+  }
+}
+

@@ -61,3 +61,29 @@ trait XInputStream
   def skipBytes(nBytesToSkip: scala.Double): scala.Unit
 }
 
+object XInputStream {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    available: js.Function0[scala.Double],
+    closeInput: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readBytes: js.Function2[
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      scala.Double, 
+      scala.Double
+    ],
+    readSomeBytes: js.Function2[
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      scala.Double, 
+      scala.Double
+    ],
+    release: js.Function0[scala.Unit],
+    skipBytes: js.Function1[scala.Double, scala.Unit]
+  ): XInputStream = {
+    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, skipBytes = skipBytes)
+  
+    __obj.asInstanceOf[XInputStream]
+  }
+}
+

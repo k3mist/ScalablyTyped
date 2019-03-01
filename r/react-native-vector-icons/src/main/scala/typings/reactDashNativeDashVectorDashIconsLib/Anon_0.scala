@@ -12,3 +12,17 @@ trait Anon_0 extends js.Object {
   var solid: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`2`
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    brand: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`3`,
+    light: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`1`,
+    regular: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`0`,
+    solid: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`2`
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal(brand = brand, light = light, regular = regular, solid = solid)
+  
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

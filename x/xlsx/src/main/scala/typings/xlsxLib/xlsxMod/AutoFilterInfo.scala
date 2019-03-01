@@ -10,3 +10,12 @@ trait AutoFilterInfo extends _WSKeys {
   var ref: java.lang.String
 }
 
+object AutoFilterInfo {
+  @scala.inline
+  def apply(ref: java.lang.String): AutoFilterInfo = {
+    val __obj = js.Dynamic.literal(ref = ref)
+  
+    __obj.asInstanceOf[AutoFilterInfo]
+  }
+}
+

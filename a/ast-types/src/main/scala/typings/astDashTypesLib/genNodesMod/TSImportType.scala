@@ -20,3 +20,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSImportType
 }
 
+object TSImportType {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.StringLiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSImportType,
+    qualifier: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
+  ): TSImportType = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSImportType]
+  }
+}
+

@@ -24,3 +24,17 @@ trait WorkItemStateInputModel extends js.Object {
   var stateCategory: java.lang.String
 }
 
+object WorkItemStateInputModel {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    name: java.lang.String,
+    order: scala.Double,
+    stateCategory: java.lang.String
+  ): WorkItemStateInputModel = {
+    val __obj = js.Dynamic.literal(color = color, name = name, order = order, stateCategory = stateCategory)
+  
+    __obj.asInstanceOf[WorkItemStateInputModel]
+  }
+}
+

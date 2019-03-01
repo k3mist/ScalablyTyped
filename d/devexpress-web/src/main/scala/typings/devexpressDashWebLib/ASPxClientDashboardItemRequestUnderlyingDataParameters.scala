@@ -31,3 +31,17 @@ trait ASPxClientDashboardItemRequestUnderlyingDataParameters extends js.Object {
   var ValuesByAxisName: js.Object
 }
 
+object ASPxClientDashboardItemRequestUnderlyingDataParameters {
+  @scala.inline
+  def apply(
+    AxisPoints: js.Array[ASPxClientDashboardItemDataAxisPoint],
+    DataMembers: js.Array[java.lang.String],
+    UniqueValuesByAxisName: js.Object,
+    ValuesByAxisName: js.Object
+  ): ASPxClientDashboardItemRequestUnderlyingDataParameters = {
+    val __obj = js.Dynamic.literal(AxisPoints = AxisPoints, DataMembers = DataMembers, UniqueValuesByAxisName = UniqueValuesByAxisName, ValuesByAxisName = ValuesByAxisName)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemRequestUnderlyingDataParameters]
+  }
+}
+

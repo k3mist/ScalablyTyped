@@ -21,3 +21,18 @@ trait Screenshot
   var dataUrl: java.lang.String
 }
 
+object Screenshot {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    data: stdLib.ImageData,
+    dataUrl: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): Screenshot = {
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, dataUrl = dataUrl, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[Screenshot]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Attributes extends js.Object {
   var attributes: Anon_Name
 }
 
+object Anon_Attributes {
+  @scala.inline
+  def apply(_class: sketchappLib.sketchappLibStrings.fontDescriptor, attributes: Anon_Name): Anon_Attributes = {
+    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
+  
+    __obj.asInstanceOf[Anon_Attributes]
+  }
+}
+

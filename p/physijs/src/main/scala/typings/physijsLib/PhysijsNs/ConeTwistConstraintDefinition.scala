@@ -16,3 +16,21 @@ trait ConeTwistConstraintDefinition extends js.Object {
   var `type`: java.lang.String
 }
 
+object ConeTwistConstraintDefinition {
+  @scala.inline
+  def apply(
+    axisa: threeLib.threeMod.Vector3,
+    axisb: threeLib.threeMod.Vector3,
+    id: scala.Double,
+    objecta: threeLib.threeMod.Object3D,
+    objectb: threeLib.threeMod.Object3D,
+    positiona: threeLib.threeMod.Vector3,
+    positionb: threeLib.threeMod.Vector3,
+    `type`: java.lang.String
+  ): ConeTwistConstraintDefinition = {
+    val __obj = js.Dynamic.literal(axisa = axisa, axisb = axisb, id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb, `type` = `type`)
+  
+    __obj.asInstanceOf[ConeTwistConstraintDefinition]
+  }
+}
+

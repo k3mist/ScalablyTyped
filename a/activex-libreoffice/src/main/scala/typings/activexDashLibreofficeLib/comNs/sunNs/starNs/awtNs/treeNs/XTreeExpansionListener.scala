@@ -34,3 +34,22 @@ trait XTreeExpansionListener
   def treeExpanding(Event: TreeExpansionEvent): scala.Unit
 }
 
+object XTreeExpansionListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    requestChildNodes: js.Function1[TreeExpansionEvent, scala.Unit],
+    treeCollapsed: js.Function1[TreeExpansionEvent, scala.Unit],
+    treeCollapsing: js.Function1[TreeExpansionEvent, scala.Unit],
+    treeExpanded: js.Function1[TreeExpansionEvent, scala.Unit],
+    treeExpanding: js.Function1[TreeExpansionEvent, scala.Unit]
+  ): XTreeExpansionListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, requestChildNodes = requestChildNodes, treeCollapsed = treeCollapsed, treeCollapsing = treeCollapsing, treeExpanded = treeExpanded, treeExpanding = treeExpanding)
+  
+    __obj.asInstanceOf[XTreeExpansionListener]
+  }
+}
+

@@ -11,3 +11,18 @@ trait StatusCodeResult
   var statusCode: js.Any
 }
 
+object StatusCodeResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ],
+    statusCode: js.Any
+  ): StatusCodeResult = {
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync, statusCode = statusCode)
+  
+    __obj.asInstanceOf[StatusCodeResult]
+  }
+}
+

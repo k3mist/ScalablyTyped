@@ -17,3 +17,16 @@ trait StructuredFormatting extends js.Object {
   var secondary_text: java.lang.String
 }
 
+object StructuredFormatting {
+  @scala.inline
+  def apply(
+    main_text: java.lang.String,
+    main_text_matched_substrings: js.Array[PredictionSubstring],
+    secondary_text: java.lang.String
+  ): StructuredFormatting = {
+    val __obj = js.Dynamic.literal(main_text = main_text, main_text_matched_substrings = main_text_matched_substrings, secondary_text = secondary_text)
+  
+    __obj.asInstanceOf[StructuredFormatting]
+  }
+}
+

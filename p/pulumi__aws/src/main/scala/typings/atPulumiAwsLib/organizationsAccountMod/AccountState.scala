@@ -31,3 +31,28 @@ trait AccountState extends js.Object {
   val status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object AccountState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    email: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    iamUserAccessToBilling: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    joinedMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    joinedTimestamp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    roleName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): AccountState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (iamUserAccessToBilling != null) __obj.updateDynamic("iamUserAccessToBilling")(iamUserAccessToBilling.asInstanceOf[js.Any])
+    if (joinedMethod != null) __obj.updateDynamic("joinedMethod")(joinedMethod.asInstanceOf[js.Any])
+    if (joinedTimestamp != null) __obj.updateDynamic("joinedTimestamp")(joinedTimestamp.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountState]
+  }
+}
+

@@ -21,3 +21,21 @@ trait EventsResource extends js.Object {
   def report(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object EventsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListEventsResponse]
+    ],
+    report: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): EventsResource = {
+    val __obj = js.Dynamic.literal(list = list, report = report)
+  
+    __obj.asInstanceOf[EventsResource]
+  }
+}
+

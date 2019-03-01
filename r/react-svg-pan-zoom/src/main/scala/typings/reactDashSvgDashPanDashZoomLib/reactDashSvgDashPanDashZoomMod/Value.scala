@@ -25,3 +25,33 @@ trait Value extends js.Object {
   var viewerWidth: scala.Double
 }
 
+object Value {
+  @scala.inline
+  def apply(
+    SVGHeight: scala.Double,
+    SVGWidth: scala.Double,
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    e: scala.Double,
+    f: scala.Double,
+    focus: scala.Boolean,
+    mode: Mode,
+    version: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibNumbers.`2`,
+    viewerHeight: scala.Double,
+    viewerWidth: scala.Double,
+    endX: scala.Int | scala.Double = null,
+    endY: scala.Int | scala.Double = null,
+    startX: scala.Int | scala.Double = null,
+    startY: scala.Int | scala.Double = null
+  ): Value = {
+    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight, SVGWidth = SVGWidth, a = a, b = b, c = c, d = d, e = e, f = f, focus = focus, mode = mode, version = version, viewerHeight = viewerHeight, viewerWidth = viewerWidth)
+    if (endX != null) __obj.updateDynamic("endX")(endX.asInstanceOf[js.Any])
+    if (endY != null) __obj.updateDynamic("endY")(endY.asInstanceOf[js.Any])
+    if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])
+    if (startY != null) __obj.updateDynamic("startY")(startY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Value]
+  }
+}
+

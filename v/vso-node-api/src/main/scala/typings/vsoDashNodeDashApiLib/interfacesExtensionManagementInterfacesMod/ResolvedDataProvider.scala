@@ -14,3 +14,12 @@ trait ResolvedDataProvider extends js.Object {
   var id: java.lang.String
 }
 
+object ResolvedDataProvider {
+  @scala.inline
+  def apply(duration: scala.Double, error: java.lang.String, id: java.lang.String): ResolvedDataProvider = {
+    val __obj = js.Dynamic.literal(duration = duration, error = error, id = id)
+  
+    __obj.asInstanceOf[ResolvedDataProvider]
+  }
+}
+

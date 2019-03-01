@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSExpressionWithTypeArguments
 }
 
+object TSExpressionWithTypeArguments {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSExpressionWithTypeArguments,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
+  ): TSExpressionWithTypeArguments = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], `type` = `type`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSExpressionWithTypeArguments]
+  }
+}
+

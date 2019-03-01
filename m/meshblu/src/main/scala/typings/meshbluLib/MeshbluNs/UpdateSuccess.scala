@@ -11,3 +11,12 @@ trait UpdateSuccess extends js.Object {
   var uuid: java.lang.String
 }
 
+object UpdateSuccess {
+  @scala.inline
+  def apply(status: java.lang.String, token: java.lang.String, uuid: java.lang.String): UpdateSuccess = {
+    val __obj = js.Dynamic.literal(status = status, token = token, uuid = uuid)
+  
+    __obj.asInstanceOf[UpdateSuccess]
+  }
+}
+

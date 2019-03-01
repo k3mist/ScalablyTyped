@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSParameterProperty
 }
 
+object TSParameterProperty {
+  @scala.inline
+  def apply(
+    parameter: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.AssignmentPatternKind,
+    readonly: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSParameterProperty,
+    accessibility: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null
+  ): TSParameterProperty = {
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], readonly = readonly, `type` = `type`)
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TSParameterProperty]
+  }
+}
+

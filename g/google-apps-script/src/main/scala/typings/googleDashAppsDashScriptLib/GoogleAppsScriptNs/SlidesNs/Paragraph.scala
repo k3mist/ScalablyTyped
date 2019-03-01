@@ -10,3 +10,15 @@ trait Paragraph extends js.Object {
   def getRange(): TextRange
 }
 
+object Paragraph {
+  @scala.inline
+  def apply(
+    getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getRange: js.Function0[TextRange]
+  ): Paragraph = {
+    val __obj = js.Dynamic.literal(getIndex = getIndex, getRange = getRange)
+  
+    __obj.asInstanceOf[Paragraph]
+  }
+}
+

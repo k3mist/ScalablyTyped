@@ -28,3 +28,16 @@ trait Graphic extends js.Object {
   def clipRectByRect(targetRect: ERectangle, rect: ERectangle): ERectangle
 }
 
+object Graphic {
+  @scala.inline
+  def apply(
+    LinearGradient: zrenderLib.zrenderNs.LinearGradient,
+    clipPointsByRect: js.Function2[js.Array[js.Array[scala.Double]], ERectangle, js.Array[js.Array[scala.Double]]],
+    clipRectByRect: js.Function2[ERectangle, ERectangle, ERectangle]
+  ): Graphic = {
+    val __obj = js.Dynamic.literal(LinearGradient = LinearGradient, clipPointsByRect = clipPointsByRect, clipRectByRect = clipRectByRect)
+  
+    __obj.asInstanceOf[Graphic]
+  }
+}
+

@@ -14,3 +14,19 @@ trait System[T /* <: js.Object */] extends js.Object {
   def play(): scala.Unit
 }
 
+object System {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    data: T,
+    init: js.Function0[scala.Unit],
+    pause: js.Function0[scala.Unit],
+    play: js.Function0[scala.Unit],
+    schema: Schema[T],
+    tick: js.Function2[/* t */ scala.Double, /* dt */ scala.Double, scala.Unit] = null
+  ): System[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], init = init, pause = pause, play = play, schema = schema.asInstanceOf[js.Any])
+    if (tick != null) __obj.updateDynamic("tick")(tick)
+    __obj.asInstanceOf[System[T]]
+  }
+}
+

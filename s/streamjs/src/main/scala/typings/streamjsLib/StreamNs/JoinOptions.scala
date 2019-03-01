@@ -11,3 +11,12 @@ trait JoinOptions extends js.Object {
   var suffix: java.lang.String
 }
 
+object JoinOptions {
+  @scala.inline
+  def apply(delimiter: java.lang.String, prefix: java.lang.String, suffix: java.lang.String): JoinOptions = {
+    val __obj = js.Dynamic.literal(delimiter = delimiter, prefix = prefix, suffix = suffix)
+  
+    __obj.asInstanceOf[JoinOptions]
+  }
+}
+

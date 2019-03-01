@@ -16,3 +16,21 @@ trait BindingTypeEnum extends js.Object {
   var Provider: BindingType
 }
 
+object BindingTypeEnum {
+  @scala.inline
+  def apply(
+    ConstantValue: BindingType,
+    Constructor: BindingType,
+    DynamicValue: BindingType,
+    Factory: BindingType,
+    Function: BindingType,
+    Instance: BindingType,
+    Invalid: BindingType,
+    Provider: BindingType
+  ): BindingTypeEnum = {
+    val __obj = js.Dynamic.literal(ConstantValue = ConstantValue, Constructor = Constructor, DynamicValue = DynamicValue, Factory = Factory, Function = Function, Instance = Instance, Invalid = Invalid, Provider = Provider)
+  
+    __obj.asInstanceOf[BindingTypeEnum]
+  }
+}
+

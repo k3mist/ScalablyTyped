@@ -18,3 +18,12 @@ trait LayoutSize extends js.Object {
   var Preferred: scala.Double
 }
 
+object LayoutSize {
+  @scala.inline
+  def apply(Maximum: scala.Double, Minimum: scala.Double, Preferred: scala.Double): LayoutSize = {
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum, Preferred = Preferred)
+  
+    __obj.asInstanceOf[LayoutSize]
+  }
+}
+

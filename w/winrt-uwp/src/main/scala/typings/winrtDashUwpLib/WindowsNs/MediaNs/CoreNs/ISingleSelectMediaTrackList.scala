@@ -11,3 +11,12 @@ trait ISingleSelectMediaTrackList extends js.Object {
   var selectedIndex: scala.Double
 }
 
+object ISingleSelectMediaTrackList {
+  @scala.inline
+  def apply(selectedIndex: scala.Double): ISingleSelectMediaTrackList = {
+    val __obj = js.Dynamic.literal(selectedIndex = selectedIndex)
+  
+    __obj.asInstanceOf[ISingleSelectMediaTrackList]
+  }
+}
+

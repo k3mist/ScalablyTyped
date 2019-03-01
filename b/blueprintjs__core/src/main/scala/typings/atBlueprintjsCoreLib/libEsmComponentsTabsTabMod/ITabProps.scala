@@ -34,3 +34,23 @@ trait ITabProps
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object ITabProps {
+  @scala.inline
+  def apply(
+    id: TabId,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    panel: reactLib.reactMod.Global.JSXNs.Element = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): ITabProps = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITabProps]
+  }
+}
+

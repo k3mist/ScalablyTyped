@@ -19,3 +19,24 @@ trait Bucket extends js.Object {
   var timeouts: scala.Double
 }
 
+object Bucket {
+  @scala.inline
+  def apply(
+    cacheHits: scala.Double,
+    cacheMisses: scala.Double,
+    failures: scala.Double,
+    fallbacks: scala.Double,
+    fires: scala.Double,
+    latencyTimes: js.Array[scala.Double],
+    percentiles: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    rejects: scala.Double,
+    semaphoreRejections: scala.Double,
+    successes: scala.Double,
+    timeouts: scala.Double
+  ): Bucket = {
+    val __obj = js.Dynamic.literal(cacheHits = cacheHits, cacheMisses = cacheMisses, failures = failures, fallbacks = fallbacks, fires = fires, latencyTimes = latencyTimes, percentiles = percentiles, rejects = rejects, semaphoreRejections = semaphoreRejections, successes = successes, timeouts = timeouts)
+  
+    __obj.asInstanceOf[Bucket]
+  }
+}
+

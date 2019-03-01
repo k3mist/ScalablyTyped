@@ -11,3 +11,12 @@ trait Anon_Marker extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Marker {
+  @scala.inline
+  def apply(marker: baidumapDashWebDashSdkLib.BMapNs.Marker, target: js.Any, `type`: java.lang.String): Anon_Marker = {
+    val __obj = js.Dynamic.literal(marker = marker, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Marker]
+  }
+}
+

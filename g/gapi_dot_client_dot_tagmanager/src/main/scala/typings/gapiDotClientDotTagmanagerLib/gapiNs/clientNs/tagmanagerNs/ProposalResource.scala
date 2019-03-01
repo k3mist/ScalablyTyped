@@ -12,3 +12,21 @@ trait ProposalResource extends js.Object {
   def delete(request: gapiDotClientDotTagmanagerLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object ProposalResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WorkspaceProposal]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): ProposalResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete)
+  
+    __obj.asInstanceOf[ProposalResource]
+  }
+}
+

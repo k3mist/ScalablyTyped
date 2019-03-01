@@ -10,3 +10,17 @@ trait IonVoicePlayEnd extends BaseParams {
   def success_MIonVoicePlayEnd(res: Resouce): scala.Unit
 }
 
+object IonVoicePlayEnd {
+  @scala.inline
+  def apply(
+    success: js.Function1[Resouce, scala.Unit],
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IonVoicePlayEnd = {
+    val __obj = js.Dynamic.literal(success = success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IonVoicePlayEnd]
+  }
+}
+

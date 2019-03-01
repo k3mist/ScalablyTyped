@@ -10,3 +10,19 @@ trait MapMarkerActivateEvent extends MapEvent {
   var marker: js.UndefOr[kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker] = js.undefined
 }
 
+object MapMarkerActivateEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Map,
+    layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null,
+    marker: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null
+  ): MapMarkerActivateEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    __obj.asInstanceOf[MapMarkerActivateEvent]
+  }
+}
+

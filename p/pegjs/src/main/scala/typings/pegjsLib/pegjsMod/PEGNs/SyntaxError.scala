@@ -16,3 +16,21 @@ trait SyntaxError extends js.Object {
   var offset: scala.Double
 }
 
+object SyntaxError {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    expected: js.Array[_],
+    found: js.Any,
+    line: scala.Double,
+    location: LocationRange,
+    message: java.lang.String,
+    name: java.lang.String,
+    offset: scala.Double
+  ): SyntaxError = {
+    val __obj = js.Dynamic.literal(column = column, expected = expected, found = found, line = line, location = location, message = message, name = name, offset = offset)
+  
+    __obj.asInstanceOf[SyntaxError]
+  }
+}
+

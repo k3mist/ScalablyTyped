@@ -10,3 +10,12 @@ trait ProgressData extends js.Object {
   var fs: archiverLib.Anon_ProcessedBytes
 }
 
+object ProgressData {
+  @scala.inline
+  def apply(entries: archiverLib.Anon_Processed, fs: archiverLib.Anon_ProcessedBytes): ProgressData = {
+    val __obj = js.Dynamic.literal(entries = entries, fs = fs)
+  
+    __obj.asInstanceOf[ProgressData]
+  }
+}
+

@@ -12,3 +12,18 @@ trait ReactFacebookLoginInfo extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReactFacebookLoginInfo {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    id: java.lang.String,
+    email: java.lang.String = null,
+    name: java.lang.String = null
+  ): ReactFacebookLoginInfo = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, id = id)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ReactFacebookLoginInfo]
+  }
+}
+

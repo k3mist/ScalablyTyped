@@ -10,3 +10,12 @@ trait `Anon_` extends js.Object {
   var value: scala.Double
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(`!`: amqplibLib.amqplibLibStrings.timestamp, value: scala.Double): `Anon_` = {
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("!")(`!`)
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

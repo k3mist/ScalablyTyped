@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.AssignmentPattern
 }
 
+object AssignmentPattern {
+  @scala.inline
+  def apply(
+    left: astDashTypesLib.genKindsMod.PatternKind,
+    right: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.AssignmentPattern
+  ): AssignmentPattern = {
+    val __obj = js.Dynamic.literal(left = left, right = right, `type` = `type`)
+  
+    __obj.asInstanceOf[AssignmentPattern]
+  }
+}
+

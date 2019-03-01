@@ -33,3 +33,26 @@ trait XTabListener
   def removed(ID: scala.Double): scala.Unit
 }
 
+object XTabListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    activated: js.Function1[scala.Double, scala.Unit],
+    changed: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ],
+    deactivated: js.Function1[scala.Double, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    inserted: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removed: js.Function1[scala.Double, scala.Unit]
+  ): XTabListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, activated = activated, changed = changed, deactivated = deactivated, disposing = disposing, inserted = inserted, queryInterface = queryInterface, release = release, removed = removed)
+  
+    __obj.asInstanceOf[XTabListener]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Topic extends js.Object {
   var name: java.lang.String
 }
 
+object Topic {
+  @scala.inline
+  def apply(description: java.lang.String, id: scala.Double, name: java.lang.String): Topic = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name)
+  
+    __obj.asInstanceOf[Topic]
+  }
+}
+

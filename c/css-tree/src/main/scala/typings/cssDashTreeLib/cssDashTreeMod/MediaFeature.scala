@@ -15,3 +15,18 @@ trait MediaFeature
   var value: Identifier | NumberNode | Dimension | Ratio | scala.Null
 }
 
+object MediaFeature {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.MediaFeature,
+    loc: CssLocation = null,
+    value: Identifier | NumberNode | Dimension | Ratio = null
+  ): MediaFeature = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaFeature]
+  }
+}
+

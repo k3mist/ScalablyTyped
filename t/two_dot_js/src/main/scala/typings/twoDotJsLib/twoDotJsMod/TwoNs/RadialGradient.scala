@@ -13,3 +13,19 @@ trait RadialGradient extends _Color {
   var stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
 }
 
+object RadialGradient {
+  @scala.inline
+  def apply(
+    center: Vector,
+    clone: js.Function0[RadialGradient],
+    focal: Vector,
+    radius: scala.Double,
+    spread: java.lang.String,
+    stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
+  ): RadialGradient = {
+    val __obj = js.Dynamic.literal(center = center, clone = clone, focal = focal, radius = radius, spread = spread, stops = stops)
+  
+    __obj.asInstanceOf[RadialGradient]
+  }
+}
+

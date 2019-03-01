@@ -10,3 +10,12 @@ trait ClientPointEvent extends js.Object {
   var clientY: scala.Double
 }
 
+object ClientPointEvent {
+  @scala.inline
+  def apply(clientX: scala.Double, clientY: scala.Double): ClientPointEvent = {
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY)
+  
+    __obj.asInstanceOf[ClientPointEvent]
+  }
+}
+

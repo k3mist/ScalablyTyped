@@ -17,3 +17,16 @@ trait ElevationResponse extends js.Object {
   var status: ElevationResponseStatus
 }
 
+object ElevationResponse {
+  @scala.inline
+  def apply(
+    error_message: java.lang.String,
+    results: js.Array[ElevationResult],
+    status: ElevationResponseStatus
+  ): ElevationResponse = {
+    val __obj = js.Dynamic.literal(error_message = error_message, results = results, status = status)
+  
+    __obj.asInstanceOf[ElevationResponse]
+  }
+}
+

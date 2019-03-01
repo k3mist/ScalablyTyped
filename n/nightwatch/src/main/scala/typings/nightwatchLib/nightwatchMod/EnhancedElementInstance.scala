@@ -26,3 +26,17 @@ trait EnhancedElementInstance extends js.Object {
   var selector: java.lang.String
 }
 
+object EnhancedElementInstance {
+  @scala.inline
+  def apply(
+    locateStrategy: java.lang.String,
+    name: java.lang.String,
+    parent: EnhancedPageObject,
+    selector: java.lang.String
+  ): EnhancedElementInstance = {
+    val __obj = js.Dynamic.literal(locateStrategy = locateStrategy, name = name, parent = parent, selector = selector)
+  
+    __obj.asInstanceOf[EnhancedElementInstance]
+  }
+}
+

@@ -28,3 +28,18 @@ trait Anon_BytesBytesDelta extends js.Object {
   var timeLeft: scala.Double
 }
 
+object Anon_BytesBytesDelta {
+  @scala.inline
+  def apply(
+    bytes: scala.Double,
+    bytesDelta: scala.Double,
+    bytesLeft: scala.Double,
+    speed: scala.Double,
+    timeLeft: scala.Double
+  ): Anon_BytesBytesDelta = {
+    val __obj = js.Dynamic.literal(bytes = bytes, bytesDelta = bytesDelta, bytesLeft = bytesLeft, speed = speed, timeLeft = timeLeft)
+  
+    __obj.asInstanceOf[Anon_BytesBytesDelta]
+  }
+}
+

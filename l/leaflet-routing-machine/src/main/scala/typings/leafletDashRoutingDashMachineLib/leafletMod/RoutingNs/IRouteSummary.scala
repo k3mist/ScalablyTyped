@@ -11,3 +11,12 @@ trait IRouteSummary extends js.Object {
   var totalTime: scala.Double
 }
 
+object IRouteSummary {
+  @scala.inline
+  def apply(totalDistance: scala.Double, totalTime: scala.Double): IRouteSummary = {
+    val __obj = js.Dynamic.literal(totalDistance = totalDistance, totalTime = totalTime)
+  
+    __obj.asInstanceOf[IRouteSummary]
+  }
+}
+

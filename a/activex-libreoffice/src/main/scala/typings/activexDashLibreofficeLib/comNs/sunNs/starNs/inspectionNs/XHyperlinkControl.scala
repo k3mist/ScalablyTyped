@@ -24,3 +24,22 @@ trait XHyperlinkControl extends XPropertyControl {
   def removeActionListener(listener: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XActionListener): scala.Unit
 }
 
+object XHyperlinkControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    addActionListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XActionListener, scala.Unit],
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit],
+    removeActionListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XActionListener, scala.Unit]
+  ): XHyperlinkControl = {
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, Value = Value, ValueType = ValueType, addActionListener = addActionListener, isModified = isModified, notifyModifiedValue = notifyModifiedValue, removeActionListener = removeActionListener)
+  
+    __obj.asInstanceOf[XHyperlinkControl]
+  }
+}
+

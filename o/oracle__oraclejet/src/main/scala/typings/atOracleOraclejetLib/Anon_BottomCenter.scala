@@ -18,3 +18,23 @@ trait Anon_BottomCenter extends js.Object {
   var selectedOuterColor: java.lang.String
 }
 
+object Anon_BottomCenter {
+  @scala.inline
+  def apply(
+    groupLabelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.node | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.header,
+    header: Anon_BackgroundColorBorderColor,
+    hoverColor: java.lang.String,
+    labelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.node,
+    labelHalign: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.center,
+    labelMinLength: scala.Double,
+    labelStyle: js.Object,
+    labelValign: atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.center,
+    selectedInnerColor: java.lang.String,
+    selectedOuterColor: java.lang.String
+  ): Anon_BottomCenter = {
+    val __obj = js.Dynamic.literal(groupLabelDisplay = groupLabelDisplay.asInstanceOf[js.Any], header = header, hoverColor = hoverColor, labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelMinLength = labelMinLength, labelStyle = labelStyle, labelValign = labelValign.asInstanceOf[js.Any], selectedInnerColor = selectedInnerColor, selectedOuterColor = selectedOuterColor)
+  
+    __obj.asInstanceOf[Anon_BottomCenter]
+  }
+}
+

@@ -20,3 +20,21 @@ trait Currency2 extends Currency {
   var LegacyOnly: scala.Boolean
 }
 
+object Currency2 {
+  @scala.inline
+  def apply(
+    BankSymbol: java.lang.String,
+    DecimalPlaces: scala.Double,
+    Default: scala.Boolean,
+    ID: java.lang.String,
+    LegacyOnly: scala.Boolean,
+    Name: java.lang.String,
+    Symbol: java.lang.String,
+    UsedInCompatibleFormatCodes: scala.Boolean
+  ): Currency2 = {
+    val __obj = js.Dynamic.literal(BankSymbol = BankSymbol, DecimalPlaces = DecimalPlaces, Default = Default, ID = ID, LegacyOnly = LegacyOnly, Name = Name, Symbol = Symbol, UsedInCompatibleFormatCodes = UsedInCompatibleFormatCodes)
+  
+    __obj.asInstanceOf[Currency2]
+  }
+}
+

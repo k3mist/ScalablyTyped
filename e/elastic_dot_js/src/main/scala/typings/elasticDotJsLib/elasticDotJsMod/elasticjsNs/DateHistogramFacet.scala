@@ -133,3 +133,36 @@ trait DateHistogramFacet extends Facet {
   def valueScript(scriptCode: java.lang.String): DateHistogramFacet
 }
 
+object DateHistogramFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, DateHistogramFacet],
+    facetFilter: js.Function1[js.Object, DateHistogramFacet],
+    factor: js.Function1[scala.Double, DateHistogramFacet],
+    field: js.Function1[java.lang.String, DateHistogramFacet],
+    global: js.Function1[scala.Boolean, DateHistogramFacet],
+    interval: js.Function1[java.lang.String, DateHistogramFacet],
+    keyField: js.Function1[java.lang.String, DateHistogramFacet],
+    lang: js.Function1[java.lang.String, DateHistogramFacet],
+    mode: js.Function1[java.lang.String, DateHistogramFacet],
+    nested: js.Function1[java.lang.String, DateHistogramFacet],
+    order: js.Function1[java.lang.String, DateHistogramFacet],
+    params: js.Function1[js.Object, DateHistogramFacet],
+    postOffset: js.Function1[java.lang.String, DateHistogramFacet],
+    postZone: js.Function1[scala.Double, DateHistogramFacet],
+    preOffset: js.Function1[java.lang.String, DateHistogramFacet],
+    preZone: js.Function1[scala.Double, DateHistogramFacet],
+    preZoneAdjustLargeInterval: js.Function1[scala.Boolean, DateHistogramFacet],
+    scope: js.Function1[java.lang.String, DateHistogramFacet],
+    timeZone: js.Function1[scala.Double, DateHistogramFacet],
+    toJSON: js.Function0[js.Any],
+    valueField: js.Function1[java.lang.String, DateHistogramFacet],
+    valueScript: js.Function1[java.lang.String, DateHistogramFacet]
+  ): DateHistogramFacet = {
+    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, factor = factor, field = field, global = global, interval = interval, keyField = keyField, lang = lang, mode = mode, nested = nested, order = order, params = params, postOffset = postOffset, postZone = postZone, preOffset = preOffset, preZone = preZone, preZoneAdjustLargeInterval = preZoneAdjustLargeInterval, scope = scope, timeZone = timeZone, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+  
+    __obj.asInstanceOf[DateHistogramFacet]
+  }
+}
+

@@ -27,3 +27,21 @@ trait Request extends js.Object {
   def respondWithTimeout(): js.Promise[Response]
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    config: axiosLib.axiosMod.AxiosRequestConfig,
+    headers: js.Any,
+    respondWith: js.Function1[Item, js.Promise[Response]],
+    respondWithTimeout: js.Function0[js.Promise[Response]],
+    responseType: java.lang.String,
+    timeout: scala.Double,
+    url: java.lang.String,
+    withCredentials: scala.Boolean
+  ): Request = {
+    val __obj = js.Dynamic.literal(config = config, headers = headers, respondWith = respondWith, respondWithTimeout = respondWithTimeout, responseType = responseType, timeout = timeout, url = url, withCredentials = withCredentials)
+  
+    __obj.asInstanceOf[Request]
+  }
+}
+

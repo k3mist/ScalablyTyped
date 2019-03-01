@@ -30,3 +30,19 @@ trait TwitchExtBitsTransaction extends js.Object {
   var userId: java.lang.String
 }
 
+object TwitchExtBitsTransaction {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    initiator: twitchDashExtLib.twitchDashExtLibStrings.CURRENT_USER | twitchDashExtLib.twitchDashExtLibStrings.OTHER,
+    product: TwitchExtBitsProduct,
+    transactionID: java.lang.String,
+    transactionReceipt: java.lang.String,
+    userId: java.lang.String
+  ): TwitchExtBitsTransaction = {
+    val __obj = js.Dynamic.literal(displayName = displayName, initiator = initiator.asInstanceOf[js.Any], product = product, transactionID = transactionID, transactionReceipt = transactionReceipt, userId = userId)
+  
+    __obj.asInstanceOf[TwitchExtBitsTransaction]
+  }
+}
+

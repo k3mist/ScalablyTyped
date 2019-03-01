@@ -27,3 +27,19 @@ trait SizeSliderStatistics
   var min: scala.Double
 }
 
+object SizeSliderStatistics {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    max: scala.Double,
+    min: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    avg: scala.Int | scala.Double = null
+  ): SizeSliderStatistics = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable)
+    if (avg != null) __obj.updateDynamic("avg")(avg.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SizeSliderStatistics]
+  }
+}
+

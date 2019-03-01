@@ -11,3 +11,12 @@ trait Anon_S extends js.Object {
   var V: Matrix
 }
 
+object Anon_S {
+  @scala.inline
+  def apply(S: Vector, U: Matrix, V: Matrix): Anon_S = {
+    val __obj = js.Dynamic.literal(S = S, U = U, V = V)
+  
+    __obj.asInstanceOf[Anon_S]
+  }
+}
+

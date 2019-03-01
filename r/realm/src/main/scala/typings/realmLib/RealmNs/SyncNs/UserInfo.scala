@@ -10,3 +10,12 @@ trait UserInfo extends js.Object {
   var isAdmin: scala.Boolean
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(id: java.lang.String, isAdmin: scala.Boolean): UserInfo = {
+    val __obj = js.Dynamic.literal(id = id, isAdmin = isAdmin)
+  
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

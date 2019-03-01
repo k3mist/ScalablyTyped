@@ -27,3 +27,32 @@ trait Config extends js.Object {
   var urlConfig: js.Array[Anon_Id]
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    altertitle: scala.Boolean,
+    autostart: scala.Boolean,
+    collapse: scala.Boolean,
+    current: js.Any,
+    filter: java.lang.String | stdLib.RegExp,
+    fixture: java.lang.String,
+    hidepassed: scala.Boolean,
+    maxDepth: scala.Double,
+    module: java.lang.String,
+    moduleId: js.Array[java.lang.String],
+    noglobals: scala.Boolean,
+    notrycatch: scala.Boolean,
+    reorder: scala.Boolean,
+    requireExpects: scala.Boolean,
+    scrolltop: scala.Boolean,
+    seed: java.lang.String,
+    testId: js.Array[java.lang.String],
+    testTimeout: scala.Double,
+    urlConfig: js.Array[Anon_Id]
+  ): Config = {
+    val __obj = js.Dynamic.literal(altertitle = altertitle, autostart = autostart, collapse = collapse, current = current, filter = filter.asInstanceOf[js.Any], fixture = fixture, hidepassed = hidepassed, maxDepth = maxDepth, module = module, moduleId = moduleId, noglobals = noglobals, notrycatch = notrycatch, reorder = reorder, requireExpects = requireExpects, scrolltop = scrolltop, seed = seed, testId = testId, testTimeout = testTimeout, urlConfig = urlConfig)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

@@ -32,3 +32,17 @@ trait INxDataPage extends js.Object {
   var qTails: js.Array[INxGroupTail]
 }
 
+object INxDataPage {
+  @scala.inline
+  def apply(
+    qArea: IRect,
+    qIsReduced: scala.Boolean,
+    qMatrix: js.Array[INxCellRows],
+    qTails: js.Array[INxGroupTail]
+  ): INxDataPage = {
+    val __obj = js.Dynamic.literal(qArea = qArea, qIsReduced = qIsReduced, qMatrix = qMatrix, qTails = qTails)
+  
+    __obj.asInstanceOf[INxDataPage]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_Alert
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Alert {
+  @scala.inline
+  def apply(
+    alert: nodeDashForgeLib.nodeDashForgeMod.tlsNs.AlertNs.Description = null,
+    message: java.lang.String = null
+  ): Anon_Alert = {
+    val __obj = js.Dynamic.literal()
+    if (alert != null) __obj.updateDynamic("alert")(alert)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Anon_Alert]
+  }
+}
+

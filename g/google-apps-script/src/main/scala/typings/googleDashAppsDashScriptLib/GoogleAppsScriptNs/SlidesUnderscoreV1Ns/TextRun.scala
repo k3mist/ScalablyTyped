@@ -14,3 +14,12 @@ trait TextRun extends js.Object {
   var style: TextStyle
 }
 
+object TextRun {
+  @scala.inline
+  def apply(content: java.lang.String, style: TextStyle): TextRun = {
+    val __obj = js.Dynamic.literal(content = content, style = style)
+  
+    __obj.asInstanceOf[TextRun]
+  }
+}
+

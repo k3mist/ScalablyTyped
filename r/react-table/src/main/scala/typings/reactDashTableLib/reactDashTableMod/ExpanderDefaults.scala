@@ -16,3 +16,12 @@ trait ExpanderDefaults extends js.Object {
   var width: scala.Double
 }
 
+object ExpanderDefaults {
+  @scala.inline
+  def apply(filterable: scala.Boolean, resizable: scala.Boolean, sortable: scala.Boolean, width: scala.Double): ExpanderDefaults = {
+    val __obj = js.Dynamic.literal(filterable = filterable, resizable = resizable, sortable = sortable, width = width)
+  
+    __obj.asInstanceOf[ExpanderDefaults]
+  }
+}
+

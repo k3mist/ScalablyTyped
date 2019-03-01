@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   extends PRGB
      with Alpha
 
+object PRGBA {
+  @scala.inline
+  def apply(a: scala.Double, b: java.lang.String, g: java.lang.String, r: java.lang.String): PRGBA = {
+    val __obj = js.Dynamic.literal(a = a, b = b, g = g, r = r)
+  
+    __obj.asInstanceOf[PRGBA]
+  }
+}
+

@@ -28,3 +28,33 @@ trait Primitive extends js.Object {
   def update(): scala.Unit
 }
 
+object Primitive {
+  @scala.inline
+  def apply(
+    allowPicking: scala.Boolean,
+    appearance: Appearance,
+    asynchronous: scala.Boolean,
+    compressVertices: scala.Boolean,
+    cull: scala.Boolean,
+    debugShowBoundingVolume: scala.Boolean,
+    depthFailAppearance: Appearance,
+    destroy: js.Function0[scala.Unit],
+    geometryInstances: js.Array[GeometryInstance] | GeometryInstance,
+    getGeometryInstanceAttributes: js.Function1[js.Any, js.Any],
+    interleave: scala.Boolean,
+    isDestroyed: js.Function0[scala.Boolean],
+    modelMatrix: Matrix4,
+    ready: scala.Boolean,
+    readyPromise: js.Promise[Primitive],
+    releaseGeometryInstances: scala.Boolean,
+    shadows: ShadowMode,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit],
+    vertexCacheOptimize: scala.Boolean
+  ): Primitive = {
+    val __obj = js.Dynamic.literal(allowPicking = allowPicking, appearance = appearance, asynchronous = asynchronous, compressVertices = compressVertices, cull = cull, debugShowBoundingVolume = debugShowBoundingVolume, depthFailAppearance = depthFailAppearance, destroy = destroy, geometryInstances = geometryInstances.asInstanceOf[js.Any], getGeometryInstanceAttributes = getGeometryInstanceAttributes, interleave = interleave, isDestroyed = isDestroyed, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, releaseGeometryInstances = releaseGeometryInstances, shadows = shadows, show = show, update = update, vertexCacheOptimize = vertexCacheOptimize)
+  
+    __obj.asInstanceOf[Primitive]
+  }
+}
+

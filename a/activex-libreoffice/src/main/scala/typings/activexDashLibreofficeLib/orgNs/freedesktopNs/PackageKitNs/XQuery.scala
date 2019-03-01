@@ -28,3 +28,24 @@ trait XQuery
   ): scala.Unit
 }
 
+object XQuery {
+  @scala.inline
+  def apply(
+    IsInstalled: js.Function3[java.lang.String, java.lang.String, js.Array[scala.Boolean], scala.Unit],
+    SearchFile: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      js.Array[scala.Boolean], 
+      js.Array[java.lang.String], 
+      scala.Unit
+    ],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XQuery = {
+    val __obj = js.Dynamic.literal(IsInstalled = IsInstalled, SearchFile = SearchFile, acquire = acquire, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XQuery]
+  }
+}
+

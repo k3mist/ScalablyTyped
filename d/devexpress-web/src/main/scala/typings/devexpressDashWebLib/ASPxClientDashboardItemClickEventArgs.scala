@@ -47,3 +47,24 @@ trait ASPxClientDashboardItemClickEventArgs extends ASPxClientEventArgs {
   ): scala.Unit
 }
 
+object ASPxClientDashboardItemClickEventArgs {
+  @scala.inline
+  def apply(
+    GetAxisPoint: js.Function1[java.lang.String, ASPxClientDashboardItemDataAxisPoint],
+    GetData: js.Function0[ASPxClientDashboardItemData],
+    GetDeltas: js.Function0[js.Array[ASPxClientDashboardItemDataDelta]],
+    GetDimensions: js.Function1[java.lang.String, js.Array[ASPxClientDashboardItemDataDimension]],
+    GetMeasures: js.Function0[js.Array[ASPxClientDashboardItemDataMeasure]],
+    ItemName: java.lang.String,
+    RequestUnderlyingData: js.Function2[
+      ASPxClientDashboardItemRequestUnderlyingDataCompleted, 
+      js.Array[java.lang.String], 
+      scala.Unit
+    ]
+  ): ASPxClientDashboardItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(GetAxisPoint = GetAxisPoint, GetData = GetData, GetDeltas = GetDeltas, GetDimensions = GetDimensions, GetMeasures = GetMeasures, ItemName = ItemName, RequestUnderlyingData = RequestUnderlyingData)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemClickEventArgs]
+  }
+}
+

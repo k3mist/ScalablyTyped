@@ -10,3 +10,12 @@ trait DrivingOptions extends js.Object {
   var trafficModel: js.UndefOr[TrafficModel] = js.undefined
 }
 
+object DrivingOptions {
+  @scala.inline
+  def apply(departureTime: stdLib.Date, trafficModel: TrafficModel = null): DrivingOptions = {
+    val __obj = js.Dynamic.literal(departureTime = departureTime)
+    if (trafficModel != null) __obj.updateDynamic("trafficModel")(trafficModel)
+    __obj.asInstanceOf[DrivingOptions]
+  }
+}
+

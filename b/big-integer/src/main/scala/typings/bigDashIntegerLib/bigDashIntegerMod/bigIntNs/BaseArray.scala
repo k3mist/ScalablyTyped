@@ -10,3 +10,12 @@ trait BaseArray extends js.Object {
   var value: js.Array[scala.Double]
 }
 
+object BaseArray {
+  @scala.inline
+  def apply(isNegative: scala.Boolean, value: js.Array[scala.Double]): BaseArray = {
+    val __obj = js.Dynamic.literal(isNegative = isNegative, value = value)
+  
+    __obj.asInstanceOf[BaseArray]
+  }
+}
+

@@ -74,3 +74,31 @@ trait GetGroupResult extends js.Object {
   val vpcZoneIdentifier: java.lang.String
 }
 
+object GetGroupResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    availabilityZones: js.Array[java.lang.String],
+    defaultCooldown: scala.Double,
+    desiredCapacity: scala.Double,
+    healthCheckGracePeriod: scala.Double,
+    healthCheckType: java.lang.String,
+    id: java.lang.String,
+    launchConfiguration: java.lang.String,
+    loadBalancers: js.Array[java.lang.String],
+    maxSize: scala.Double,
+    minSize: scala.Double,
+    newInstancesProtectedFromScaleIn: scala.Boolean,
+    placementGroup: java.lang.String,
+    serviceLinkedRoleArn: java.lang.String,
+    status: java.lang.String,
+    targetGroupArns: js.Array[java.lang.String],
+    terminationPolicies: js.Array[java.lang.String],
+    vpcZoneIdentifier: java.lang.String
+  ): GetGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, defaultCooldown = defaultCooldown, desiredCapacity = desiredCapacity, healthCheckGracePeriod = healthCheckGracePeriod, healthCheckType = healthCheckType, id = id, launchConfiguration = launchConfiguration, loadBalancers = loadBalancers, maxSize = maxSize, minSize = minSize, newInstancesProtectedFromScaleIn = newInstancesProtectedFromScaleIn, placementGroup = placementGroup, serviceLinkedRoleArn = serviceLinkedRoleArn, status = status, targetGroupArns = targetGroupArns, terminationPolicies = terminationPolicies, vpcZoneIdentifier = vpcZoneIdentifier)
+  
+    __obj.asInstanceOf[GetGroupResult]
+  }
+}
+

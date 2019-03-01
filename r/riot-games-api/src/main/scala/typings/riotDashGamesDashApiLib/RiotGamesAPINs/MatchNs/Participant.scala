@@ -18,3 +18,23 @@ trait Participant extends js.Object {
   var timeline: ParticipantTimeline
 }
 
+object Participant {
+  @scala.inline
+  def apply(
+    championId: scala.Double,
+    highestAchievedSeasonTier: java.lang.String,
+    masteries: js.Array[Mastery],
+    participantId: scala.Double,
+    runes: js.Array[Rune],
+    spell1Id: scala.Double,
+    spell2Id: scala.Double,
+    stats: ParticipantStats,
+    teamId: scala.Double,
+    timeline: ParticipantTimeline
+  ): Participant = {
+    val __obj = js.Dynamic.literal(championId = championId, highestAchievedSeasonTier = highestAchievedSeasonTier, masteries = masteries, participantId = participantId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, stats = stats, teamId = teamId, timeline = timeline)
+  
+    __obj.asInstanceOf[Participant]
+  }
+}
+

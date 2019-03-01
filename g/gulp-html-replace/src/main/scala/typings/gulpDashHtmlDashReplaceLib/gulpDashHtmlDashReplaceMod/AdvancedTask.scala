@@ -10,3 +10,12 @@ trait AdvancedTask extends js.Object {
   var tpl: java.lang.String
 }
 
+object AdvancedTask {
+  @scala.inline
+  def apply(src: java.lang.String | js.Array[java.lang.String], tpl: java.lang.String): AdvancedTask = {
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], tpl = tpl)
+  
+    __obj.asInstanceOf[AdvancedTask]
+  }
+}
+

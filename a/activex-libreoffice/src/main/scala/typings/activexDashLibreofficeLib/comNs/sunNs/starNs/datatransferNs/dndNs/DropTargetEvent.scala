@@ -16,3 +16,12 @@ trait DropTargetEvent
   var Dummy: scala.Double
 }
 
+object DropTargetEvent {
+  @scala.inline
+  def apply(Dummy: scala.Double, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): DropTargetEvent = {
+    val __obj = js.Dynamic.literal(Dummy = Dummy, Source = Source)
+  
+    __obj.asInstanceOf[DropTargetEvent]
+  }
+}
+

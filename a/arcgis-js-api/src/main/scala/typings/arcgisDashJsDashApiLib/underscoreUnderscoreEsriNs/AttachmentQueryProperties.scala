@@ -50,3 +50,26 @@ trait AttachmentQueryProperties extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AttachmentQueryProperties {
+  @scala.inline
+  def apply(
+    attachmentTypes: js.Array[java.lang.String] = null,
+    definitionExpression: java.lang.String = null,
+    globalIds: js.Array[scala.Double] = null,
+    num: scala.Int | scala.Double = null,
+    objectIds: js.Array[scala.Double] = null,
+    size: js.Array[scala.Double] = null,
+    start: scala.Int | scala.Double = null
+  ): AttachmentQueryProperties = {
+    val __obj = js.Dynamic.literal()
+    if (attachmentTypes != null) __obj.updateDynamic("attachmentTypes")(attachmentTypes)
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds)
+    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttachmentQueryProperties]
+  }
+}
+

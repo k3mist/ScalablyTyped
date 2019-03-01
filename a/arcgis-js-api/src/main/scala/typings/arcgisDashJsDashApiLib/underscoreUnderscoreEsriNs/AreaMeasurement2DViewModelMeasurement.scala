@@ -27,3 +27,19 @@ trait AreaMeasurement2DViewModelMeasurement
   var perimeter: scala.Double
 }
 
+object AreaMeasurement2DViewModelMeasurement {
+  @scala.inline
+  def apply(
+    area: scala.Double,
+    constructor: js.Function,
+    geometry: js.Any,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    perimeter: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): AreaMeasurement2DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, geometry = geometry, hasOwnProperty = hasOwnProperty, perimeter = perimeter, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurement]
+  }
+}
+

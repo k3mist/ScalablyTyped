@@ -11,3 +11,12 @@ trait Format extends js.Object {
   var description: java.lang.String
 }
 
+object Format {
+  @scala.inline
+  def apply(canDemux: scala.Boolean, canMux: scala.Boolean, description: java.lang.String): Format = {
+    val __obj = js.Dynamic.literal(canDemux = canDemux, canMux = canMux, description = description)
+  
+    __obj.asInstanceOf[Format]
+  }
+}
+

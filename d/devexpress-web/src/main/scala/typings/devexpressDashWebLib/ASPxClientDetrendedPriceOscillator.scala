@@ -21,3 +21,20 @@ trait ASPxClientDetrendedPriceOscillator extends ASPxSeparatePaneIndicator {
   var valueLevel: java.lang.String
 }
 
+object ASPxClientDetrendedPriceOscillator {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    pane: java.lang.String,
+    pointsCount: scala.Double,
+    series: ASPxClientSeries,
+    valueLevel: java.lang.String
+  ): ASPxClientDetrendedPriceOscillator = {
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, name = name, pane = pane, pointsCount = pointsCount, series = series, valueLevel = valueLevel)
+  
+    __obj.asInstanceOf[ASPxClientDetrendedPriceOscillator]
+  }
+}
+

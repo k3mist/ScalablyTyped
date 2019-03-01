@@ -123,3 +123,42 @@ trait ISemanticTextColors extends js.Object {
   var warningText: java.lang.String
 }
 
+object ISemanticTextColors {
+  @scala.inline
+  def apply(
+    accentButtonText: java.lang.String,
+    actionLink: java.lang.String,
+    actionLinkHovered: java.lang.String,
+    bodySubtext: java.lang.String,
+    bodyText: java.lang.String,
+    bodyTextChecked: java.lang.String,
+    buttonText: java.lang.String,
+    buttonTextChecked: java.lang.String,
+    buttonTextCheckedHovered: java.lang.String,
+    buttonTextDisabled: java.lang.String,
+    buttonTextHovered: java.lang.String,
+    buttonTextPressed: java.lang.String,
+    disabledBodySubtext: java.lang.String,
+    disabledBodyText: java.lang.String,
+    disabledSubtext: java.lang.String,
+    disabledText: java.lang.String,
+    errorText: java.lang.String,
+    inputPlaceholderText: java.lang.String,
+    inputText: java.lang.String,
+    inputTextHovered: java.lang.String,
+    link: java.lang.String,
+    linkHovered: java.lang.String,
+    listText: java.lang.String,
+    listTextColor: java.lang.String,
+    primaryButtonText: java.lang.String,
+    primaryButtonTextDisabled: java.lang.String,
+    primaryButtonTextHovered: java.lang.String,
+    primaryButtonTextPressed: java.lang.String,
+    warningText: java.lang.String
+  ): ISemanticTextColors = {
+    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledSubtext = disabledSubtext, disabledText = disabledText, errorText = errorText, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listText = listText, listTextColor = listTextColor, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, warningText = warningText)
+  
+    __obj.asInstanceOf[ISemanticTextColors]
+  }
+}
+

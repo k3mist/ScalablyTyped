@@ -29,3 +29,25 @@ trait XSingleComponentFactory
   def createInstanceWithContext(Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XSingleComponentFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInstanceWithArgumentsAndContext: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    createInstanceWithContext: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSingleComponentFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createInstanceWithArgumentsAndContext = createInstanceWithArgumentsAndContext, createInstanceWithContext = createInstanceWithContext, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSingleComponentFactory]
+  }
+}
+

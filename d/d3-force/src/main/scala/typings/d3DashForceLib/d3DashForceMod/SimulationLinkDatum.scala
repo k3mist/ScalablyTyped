@@ -28,3 +28,16 @@ trait SimulationLinkDatum[NodeDatum /* <: SimulationNodeDatum */] extends js.Obj
   var target: NodeDatum | java.lang.String | scala.Double
 }
 
+object SimulationLinkDatum {
+  @scala.inline
+  def apply[NodeDatum /* <: SimulationNodeDatum */](
+    source: NodeDatum | java.lang.String | scala.Double,
+    target: NodeDatum | java.lang.String | scala.Double,
+    index: scala.Int | scala.Double = null
+  ): SimulationLinkDatum[NodeDatum] = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimulationLinkDatum[NodeDatum]]
+  }
+}
+

@@ -14,3 +14,12 @@ trait DownloadProgressCallbackResult extends js.Object {
   var jobId: scala.Double
 }
 
+object DownloadProgressCallbackResult {
+  @scala.inline
+  def apply(bytesWritten: scala.Double, contentLength: scala.Double, jobId: scala.Double): DownloadProgressCallbackResult = {
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten, contentLength = contentLength, jobId = jobId)
+  
+    __obj.asInstanceOf[DownloadProgressCallbackResult]
+  }
+}
+

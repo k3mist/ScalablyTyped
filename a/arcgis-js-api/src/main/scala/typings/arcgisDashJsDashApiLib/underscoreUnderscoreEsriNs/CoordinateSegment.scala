@@ -27,3 +27,19 @@ trait CoordinateSegment
   var searchPattern: stdLib.RegExp
 }
 
+object CoordinateSegment {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    searchPattern: stdLib.RegExp
+  ): CoordinateSegment = {
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, searchPattern = searchPattern)
+  
+    __obj.asInstanceOf[CoordinateSegment]
+  }
+}
+

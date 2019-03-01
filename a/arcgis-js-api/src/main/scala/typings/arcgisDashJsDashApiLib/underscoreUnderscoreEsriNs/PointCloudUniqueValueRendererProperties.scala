@@ -34,3 +34,26 @@ trait PointCloudUniqueValueRendererProperties extends PointCloudRendererProperti
   var legendOptions: js.UndefOr[PointCloudUniqueValueRendererLegendOptions] = js.undefined
 }
 
+object PointCloudUniqueValueRendererProperties {
+  @scala.inline
+  def apply(
+    colorModulation: PointCloudRendererColorModulation = null,
+    colorUniqueValueInfos: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos] = null,
+    field: java.lang.String = null,
+    fieldTransformType: java.lang.String = null,
+    legendOptions: PointCloudUniqueValueRendererLegendOptions = null,
+    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
+    pointsPerInch: scala.Int | scala.Double = null
+  ): PointCloudUniqueValueRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
+    if (colorUniqueValueInfos != null) __obj.updateDynamic("colorUniqueValueInfos")(colorUniqueValueInfos)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointCloudUniqueValueRendererProperties]
+  }
+}
+

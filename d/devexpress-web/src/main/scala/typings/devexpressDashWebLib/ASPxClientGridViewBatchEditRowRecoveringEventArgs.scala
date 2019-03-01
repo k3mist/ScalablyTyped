@@ -21,3 +21,12 @@ trait ASPxClientGridViewBatchEditRowRecoveringEventArgs extends ASPxClientCancel
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewBatchEditRowRecoveringEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, rowValues: js.Object, visibleIndex: scala.Double): ASPxClientGridViewBatchEditRowRecoveringEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, rowValues = rowValues, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowRecoveringEventArgs]
+  }
+}
+

@@ -17,3 +17,22 @@ trait Anon_CidrBlockEgressOnlyGatewayIdGatewayId extends js.Object {
   var vpcPeeringConnectionId: java.lang.String
 }
 
+object Anon_CidrBlockEgressOnlyGatewayIdGatewayId {
+  @scala.inline
+  def apply(
+    cidrBlock: java.lang.String,
+    egressOnlyGatewayId: java.lang.String,
+    gatewayId: java.lang.String,
+    instanceId: java.lang.String,
+    ipv6CidrBlock: java.lang.String,
+    natGatewayId: java.lang.String,
+    networkInterfaceId: java.lang.String,
+    transitGatewayId: java.lang.String,
+    vpcPeeringConnectionId: java.lang.String
+  ): Anon_CidrBlockEgressOnlyGatewayIdGatewayId = {
+    val __obj = js.Dynamic.literal(cidrBlock = cidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, instanceId = instanceId, ipv6CidrBlock = ipv6CidrBlock, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
+  
+    __obj.asInstanceOf[Anon_CidrBlockEgressOnlyGatewayIdGatewayId]
+  }
+}
+

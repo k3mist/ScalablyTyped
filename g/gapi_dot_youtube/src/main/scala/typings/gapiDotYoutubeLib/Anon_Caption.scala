@@ -36,3 +36,20 @@ trait Anon_Caption extends js.Object {
   var regionRestriction: Anon_Allowed
 }
 
+object Anon_Caption {
+  @scala.inline
+  def apply(
+    caption: java.lang.String,
+    contentRating: Anon_AcbRating,
+    definition: java.lang.String,
+    dimension: java.lang.String,
+    duration: java.lang.String,
+    licensedContent: scala.Boolean,
+    regionRestriction: Anon_Allowed
+  ): Anon_Caption = {
+    val __obj = js.Dynamic.literal(caption = caption, contentRating = contentRating, definition = definition, dimension = dimension, duration = duration, licensedContent = licensedContent, regionRestriction = regionRestriction)
+  
+    __obj.asInstanceOf[Anon_Caption]
+  }
+}
+

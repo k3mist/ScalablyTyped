@@ -31,3 +31,17 @@ trait IDelimiterInfo extends js.Object {
   var qScriptCode: java.lang.String
 }
 
+object IDelimiterInfo {
+  @scala.inline
+  def apply(
+    qIsMultiple: scala.Boolean,
+    qName: java.lang.String,
+    qNumber: scala.Double,
+    qScriptCode: java.lang.String
+  ): IDelimiterInfo = {
+    val __obj = js.Dynamic.literal(qIsMultiple = qIsMultiple, qName = qName, qNumber = qNumber, qScriptCode = qScriptCode)
+  
+    __obj.asInstanceOf[IDelimiterInfo]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ShippingOption extends js.Object {
   var title: java.lang.String
 }
 
+object ShippingOption {
+  @scala.inline
+  def apply(id: java.lang.String, prices: js.Array[LabeledPrice], title: java.lang.String): ShippingOption = {
+    val __obj = js.Dynamic.literal(id = id, prices = prices, title = title)
+  
+    __obj.asInstanceOf[ShippingOption]
+  }
+}
+

@@ -154,3 +154,82 @@ trait ViewSettings
   var ZoomValue: scala.Double
 }
 
+object ViewSettings {
+  @scala.inline
+  def apply(
+    HideWhitespace: scala.Boolean,
+    HorizontalRulerMetric: scala.Double,
+    IsExecuteHyperlinks: scala.Boolean,
+    IsRasterVisible: scala.Boolean,
+    IsSnapToRaster: scala.Boolean,
+    IsVertRulerRightAligned: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RasterResolutionX: scala.Double,
+    RasterResolutionY: scala.Double,
+    RasterSubdivisionX: scala.Double,
+    RasterSubdivisionY: scala.Double,
+    ShowAnnotations: scala.Boolean,
+    ShowBreaks: scala.Boolean,
+    ShowContentTips: scala.Boolean,
+    ShowDrawings: scala.Boolean,
+    ShowFieldCommands: scala.Boolean,
+    ShowFootnoteBackground: scala.Boolean,
+    ShowGraphics: scala.Boolean,
+    ShowHiddenCharacters: scala.Boolean,
+    ShowHiddenParagraphs: scala.Boolean,
+    ShowHiddenText: scala.Boolean,
+    ShowHoriRuler: scala.Boolean,
+    ShowHoriScrollBar: scala.Boolean,
+    ShowIndexMarkBackground: scala.Boolean,
+    ShowNonprintingCharacters: scala.Boolean,
+    ShowOnlineLayout: scala.Boolean,
+    ShowParaBreaks: scala.Boolean,
+    ShowProtectedSpaces: scala.Boolean,
+    ShowRulers: scala.Boolean,
+    ShowScrollBarTips: scala.Boolean,
+    ShowSoftHyphens: scala.Boolean,
+    ShowSpaces: scala.Boolean,
+    ShowTableBoundaries: scala.Boolean,
+    ShowTables: scala.Boolean,
+    ShowTabstops: scala.Boolean,
+    ShowTextBoundaries: scala.Boolean,
+    ShowTextFieldBackground: scala.Boolean,
+    ShowVertRuler: scala.Boolean,
+    ShowVertScrollBar: scala.Boolean,
+    SmoothScrolling: scala.Boolean,
+    VerticalRulerMetric: scala.Double,
+    ZoomType: scala.Double,
+    ZoomValue: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ViewSettings = {
+    val __obj = js.Dynamic.literal(HideWhitespace = HideWhitespace, HorizontalRulerMetric = HorizontalRulerMetric, IsExecuteHyperlinks = IsExecuteHyperlinks, IsRasterVisible = IsRasterVisible, IsSnapToRaster = IsSnapToRaster, IsVertRulerRightAligned = IsVertRulerRightAligned, PropertySetInfo = PropertySetInfo, RasterResolutionX = RasterResolutionX, RasterResolutionY = RasterResolutionY, RasterSubdivisionX = RasterSubdivisionX, RasterSubdivisionY = RasterSubdivisionY, ShowAnnotations = ShowAnnotations, ShowBreaks = ShowBreaks, ShowContentTips = ShowContentTips, ShowDrawings = ShowDrawings, ShowFieldCommands = ShowFieldCommands, ShowFootnoteBackground = ShowFootnoteBackground, ShowGraphics = ShowGraphics, ShowHiddenCharacters = ShowHiddenCharacters, ShowHiddenParagraphs = ShowHiddenParagraphs, ShowHiddenText = ShowHiddenText, ShowHoriRuler = ShowHoriRuler, ShowHoriScrollBar = ShowHoriScrollBar, ShowIndexMarkBackground = ShowIndexMarkBackground, ShowNonprintingCharacters = ShowNonprintingCharacters, ShowOnlineLayout = ShowOnlineLayout, ShowParaBreaks = ShowParaBreaks, ShowProtectedSpaces = ShowProtectedSpaces, ShowRulers = ShowRulers, ShowScrollBarTips = ShowScrollBarTips, ShowSoftHyphens = ShowSoftHyphens, ShowSpaces = ShowSpaces, ShowTableBoundaries = ShowTableBoundaries, ShowTables = ShowTables, ShowTabstops = ShowTabstops, ShowTextBoundaries = ShowTextBoundaries, ShowTextFieldBackground = ShowTextFieldBackground, ShowVertRuler = ShowVertRuler, ShowVertScrollBar = ShowVertScrollBar, SmoothScrolling = SmoothScrolling, VerticalRulerMetric = VerticalRulerMetric, ZoomType = ZoomType, ZoomValue = ZoomValue, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[ViewSettings]
+  }
+}
+

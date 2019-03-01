@@ -11,3 +11,16 @@ trait LocalizedObservable extends js.Object {
   def resetToCurrent(): js.Any
 }
 
+object LocalizedObservable {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[js.Any],
+    observedValue: js.Function1[js.Any, js.Any],
+    resetToCurrent: js.Function0[js.Any]
+  ): LocalizedObservable = {
+    val __obj = js.Dynamic.literal(destroy = destroy, observedValue = observedValue, resetToCurrent = resetToCurrent)
+  
+    __obj.asInstanceOf[LocalizedObservable]
+  }
+}
+

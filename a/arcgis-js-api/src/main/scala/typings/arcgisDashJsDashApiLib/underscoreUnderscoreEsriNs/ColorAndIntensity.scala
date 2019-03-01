@@ -21,3 +21,18 @@ trait ColorAndIntensity
   var intensity: scala.Double
 }
 
+object ColorAndIntensity {
+  @scala.inline
+  def apply(
+    color: stdLib.ArrayLike[scala.Double],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    intensity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ColorAndIntensity = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, intensity = intensity, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ColorAndIntensity]
+  }
+}
+

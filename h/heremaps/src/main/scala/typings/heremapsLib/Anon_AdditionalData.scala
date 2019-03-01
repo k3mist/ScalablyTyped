@@ -18,3 +18,23 @@ trait Anon_AdditionalData extends js.Object {
   var Street: java.lang.String
 }
 
+object Anon_AdditionalData {
+  @scala.inline
+  def apply(
+    AdditionalData: js.Array[Anon_Key],
+    City: java.lang.String,
+    Country: java.lang.String,
+    County: java.lang.String,
+    District: java.lang.String,
+    HouseNumber: java.lang.String,
+    Label: java.lang.String,
+    PostalCode: java.lang.String,
+    State: java.lang.String,
+    Street: java.lang.String
+  ): Anon_AdditionalData = {
+    val __obj = js.Dynamic.literal(AdditionalData = AdditionalData, City = City, Country = Country, County = County, District = District, HouseNumber = HouseNumber, Label = Label, PostalCode = PostalCode, State = State, Street = Street)
+  
+    __obj.asInstanceOf[Anon_AdditionalData]
+  }
+}
+

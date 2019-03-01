@@ -18,3 +18,32 @@ trait WaveSurferUtil extends js.Object {
   def style(el: stdLib.HTMLElement, styles: org.scalablytyped.runtime.StringDictionary[java.lang.String]): stdLib.HTMLElement
 }
 
+object WaveSurferUtil {
+  @scala.inline
+  def apply(
+    Observer: wavesurferDotJsLib.wavesurferDotJsMod.Observer,
+    ajax: js.Function1[wavesurferDotJsLib.Anon_Xhr, wavesurferDotJsLib.wavesurferDotJsMod.Observer],
+    extend: js.Function2[js.Object, /* repeated */ js.Object, js.Object],
+    frame: js.Function1[
+      js.Function1[/* repeated */ js.Any, scala.Unit], 
+      js.Function1[/* repeated */ js.Any, scala.Double]
+    ],
+    getId: js.Function0[java.lang.String],
+    max: js.Function1[js.Array[scala.Double], scala.Double],
+    min: js.Function1[js.Array[scala.Double], scala.Double],
+    preventClick: js.Function0[scala.Unit],
+    requestAnimationFrame: js.Function0[
+      js.Function1[/* fn */ js.Function1[/* t */ scala.Double, scala.Unit], scala.Double]
+    ],
+    style: js.Function2[
+      stdLib.HTMLElement, 
+      org.scalablytyped.runtime.StringDictionary[java.lang.String], 
+      stdLib.HTMLElement
+    ]
+  ): WaveSurferUtil = {
+    val __obj = js.Dynamic.literal(Observer = Observer, ajax = ajax, extend = extend, frame = frame, getId = getId, max = max, min = min, preventClick = preventClick, requestAnimationFrame = requestAnimationFrame, style = style)
+  
+    __obj.asInstanceOf[WaveSurferUtil]
+  }
+}
+

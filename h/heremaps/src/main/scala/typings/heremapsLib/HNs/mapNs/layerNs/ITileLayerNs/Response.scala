@@ -15,3 +15,12 @@ trait Response extends js.Object {
   var total: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(tiles: js.Array[heremapsLib.HNs.mapNs.providerNs.Tile], total: scala.Double): Response = {
+    val __obj = js.Dynamic.literal(tiles = tiles, total = total)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

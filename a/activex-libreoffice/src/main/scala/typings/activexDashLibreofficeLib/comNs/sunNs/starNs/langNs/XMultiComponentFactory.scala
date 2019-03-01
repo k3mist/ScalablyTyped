@@ -46,3 +46,29 @@ trait XMultiComponentFactory
   def getAvailableServiceNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XMultiComponentFactory {
+  @scala.inline
+  def apply(
+    AvailableServiceNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    createInstanceWithArgumentsAndContext: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    createInstanceWithContext: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    getAvailableServiceNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMultiComponentFactory = {
+    val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames, acquire = acquire, createInstanceWithArgumentsAndContext = createInstanceWithArgumentsAndContext, createInstanceWithContext = createInstanceWithContext, getAvailableServiceNames = getAvailableServiceNames, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMultiComponentFactory]
+  }
+}
+

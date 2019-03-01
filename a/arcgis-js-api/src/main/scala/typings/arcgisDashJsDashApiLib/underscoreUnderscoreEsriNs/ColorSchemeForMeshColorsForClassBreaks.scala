@@ -21,3 +21,18 @@ trait ColorSchemeForMeshColorsForClassBreaks
   var numClasses: scala.Double
 }
 
+object ColorSchemeForMeshColorsForClassBreaks {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    numClasses: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ColorSchemeForMeshColorsForClassBreaks = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, numClasses = numClasses, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ColorSchemeForMeshColorsForClassBreaks]
+  }
+}
+

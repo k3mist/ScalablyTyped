@@ -89,3 +89,30 @@ trait AccWizardOptions extends js.Object {
   var todoClass: java.lang.String
 }
 
+object AccWizardOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String,
+    addButtons: scala.Boolean,
+    autoScrolling: scala.Boolean,
+    backClasses: java.lang.String,
+    backText: java.lang.String,
+    backType: java.lang.String,
+    completedClass: java.lang.String,
+    nextClasses: java.lang.String,
+    nextText: java.lang.String,
+    nextType: java.lang.String,
+    onBack: js.Function,
+    onDestroy: js.Function,
+    onInit: js.Function,
+    onNext: js.Function,
+    sidebar: java.lang.String,
+    stepClass: java.lang.String,
+    todoClass: java.lang.String
+  ): AccWizardOptions = {
+    val __obj = js.Dynamic.literal(activeClass = activeClass, addButtons = addButtons, autoScrolling = autoScrolling, backClasses = backClasses, backText = backText, backType = backType, completedClass = completedClass, nextClasses = nextClasses, nextText = nextText, nextType = nextType, onBack = onBack, onDestroy = onDestroy, onInit = onInit, onNext = onNext, sidebar = sidebar, stepClass = stepClass, todoClass = todoClass)
+  
+    __obj.asInstanceOf[AccWizardOptions]
+  }
+}
+

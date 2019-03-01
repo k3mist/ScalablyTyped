@@ -10,3 +10,12 @@ trait GroupStore extends js.Object {
   def ungroup(): scala.Unit
 }
 
+object GroupStore {
+  @scala.inline
+  def apply(group: js.Function1[js.Any, scala.Unit], ungroup: js.Function0[scala.Unit]): GroupStore = {
+    val __obj = js.Dynamic.literal(group = group, ungroup = ungroup)
+  
+    __obj.asInstanceOf[GroupStore]
+  }
+}
+

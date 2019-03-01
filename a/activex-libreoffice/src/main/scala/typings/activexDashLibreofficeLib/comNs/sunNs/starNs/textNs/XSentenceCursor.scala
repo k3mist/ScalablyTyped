@@ -33,3 +33,38 @@ trait XSentenceCursor extends XTextCursor {
   def isStartOfSentence(): scala.Boolean
 }
 
+object XSentenceCursor {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    collapseToEnd: js.Function0[scala.Unit],
+    collapseToStart: js.Function0[scala.Unit],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
+    gotoEndOfSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoNextSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoPreviousSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoRange: js.Function2[XTextRange, scala.Boolean, scala.Unit],
+    gotoStart: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfSentence: js.Function1[scala.Boolean, scala.Boolean],
+    isCollapsed: js.Function0[scala.Boolean],
+    isEndOfSentence: js.Function0[scala.Boolean],
+    isStartOfSentence: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XSentenceCursor = {
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoEndOfSentence = gotoEndOfSentence, gotoNextSentence = gotoNextSentence, gotoPreviousSentence = gotoPreviousSentence, gotoRange = gotoRange, gotoStart = gotoStart, gotoStartOfSentence = gotoStartOfSentence, isCollapsed = isCollapsed, isEndOfSentence = isEndOfSentence, isStartOfSentence = isStartOfSentence, queryInterface = queryInterface, release = release, setString = setString)
+  
+    __obj.asInstanceOf[XSentenceCursor]
+  }
+}
+

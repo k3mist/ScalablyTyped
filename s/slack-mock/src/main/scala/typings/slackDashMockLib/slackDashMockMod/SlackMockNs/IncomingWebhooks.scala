@@ -11,3 +11,16 @@ trait IncomingWebhooks[T] extends js.Object {
   def reset(): scala.Unit
 }
 
+object IncomingWebhooks {
+  @scala.inline
+  def apply[T](
+    addResponse: js.Function1[IncomingWebhookOptions[T], scala.Unit],
+    calls: js.Array[IncomingWebhookCall[T]],
+    reset: js.Function0[scala.Unit]
+  ): IncomingWebhooks[T] = {
+    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset)
+  
+    __obj.asInstanceOf[IncomingWebhooks[T]]
+  }
+}
+

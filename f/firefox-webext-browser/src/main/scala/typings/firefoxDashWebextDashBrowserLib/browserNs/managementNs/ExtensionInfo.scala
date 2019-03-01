@@ -48,3 +48,37 @@ trait ExtensionInfo extends js.Object {
   var versionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExtensionInfo {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    id: java.lang.String,
+    installType: ExtensionInstallType,
+    mayDisable: scala.Boolean,
+    name: java.lang.String,
+    optionsUrl: java.lang.String,
+    `type`: ExtensionType,
+    version: java.lang.String,
+    disabledReason: ExtensionDisabledReason = null,
+    homepageUrl: java.lang.String = null,
+    hostPermissions: js.Array[java.lang.String] = null,
+    icons: js.Array[IconInfo] = null,
+    permissions: js.Array[java.lang.String] = null,
+    shortName: java.lang.String = null,
+    updateUrl: java.lang.String = null,
+    versionName: java.lang.String = null
+  ): ExtensionInfo = {
+    val __obj = js.Dynamic.literal(description = description, enabled = enabled, id = id, installType = installType, mayDisable = mayDisable, name = name, optionsUrl = optionsUrl, `type` = `type`, version = version)
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
+    if (hostPermissions != null) __obj.updateDynamic("hostPermissions")(hostPermissions)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    __obj.asInstanceOf[ExtensionInfo]
+  }
+}
+

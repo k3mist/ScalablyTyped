@@ -11,3 +11,12 @@ trait ValuableEntry extends js.Object {
   var value: js.Any
 }
 
+object ValuableEntry {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String, value: js.Any): ValuableEntry = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ValuableEntry]
+  }
+}
+

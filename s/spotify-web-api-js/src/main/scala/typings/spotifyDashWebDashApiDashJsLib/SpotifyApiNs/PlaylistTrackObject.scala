@@ -16,3 +16,17 @@ trait PlaylistTrackObject extends js.Object {
   var track: TrackObjectFull
 }
 
+object PlaylistTrackObject {
+  @scala.inline
+  def apply(
+    added_at: java.lang.String,
+    added_by: UserObjectPublic,
+    is_local: scala.Boolean,
+    track: TrackObjectFull
+  ): PlaylistTrackObject = {
+    val __obj = js.Dynamic.literal(added_at = added_at, added_by = added_by, is_local = is_local, track = track)
+  
+    __obj.asInstanceOf[PlaylistTrackObject]
+  }
+}
+

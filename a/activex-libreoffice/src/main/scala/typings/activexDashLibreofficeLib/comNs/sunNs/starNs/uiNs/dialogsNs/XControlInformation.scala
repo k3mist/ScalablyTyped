@@ -44,3 +44,21 @@ trait XControlInformation
   def isControlSupported(aControlName: java.lang.String): scala.Boolean
 }
 
+object XControlInformation {
+  @scala.inline
+  def apply(
+    SupportedControls: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getSupportedControlProperties: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
+    getSupportedControls: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isControlPropertySupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    isControlSupported: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XControlInformation = {
+    val __obj = js.Dynamic.literal(SupportedControls = SupportedControls, acquire = acquire, getSupportedControlProperties = getSupportedControlProperties, getSupportedControls = getSupportedControls, isControlPropertySupported = isControlPropertySupported, isControlSupported = isControlSupported, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XControlInformation]
+  }
+}
+

@@ -11,3 +11,16 @@ trait OnDoubleTapListener extends js.Object {
   def onSingleTapConfirmed(e: androiduixLib.androidNs.viewNs.MotionEvent): scala.Boolean
 }
 
+object OnDoubleTapListener {
+  @scala.inline
+  def apply(
+    onDoubleTap: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
+    onDoubleTapEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
+    onSingleTapConfirmed: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean]
+  ): OnDoubleTapListener = {
+    val __obj = js.Dynamic.literal(onDoubleTap = onDoubleTap, onDoubleTapEvent = onDoubleTapEvent, onSingleTapConfirmed = onSingleTapConfirmed)
+  
+    __obj.asInstanceOf[OnDoubleTapListener]
+  }
+}
+

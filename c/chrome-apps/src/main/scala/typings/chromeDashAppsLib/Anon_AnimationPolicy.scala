@@ -66,3 +66,26 @@ trait Anon_AnimationPolicy extends js.Object {
   val virtualKeyboard: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
 }
 
+object Anon_AnimationPolicy {
+  @scala.inline
+  def apply(
+    animationPolicy: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    autoclick: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    caretHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    cursorHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    focusHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    highContrast: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    largeCursor: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    screenMagnifier: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    selectToSpeak: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    spokenFeedback: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    stickyKeys: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    switchAccess: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    virtualKeyboard: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
+  ): Anon_AnimationPolicy = {
+    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy, autoclick = autoclick, caretHighlight = caretHighlight, cursorHighlight = cursorHighlight, focusHighlight = focusHighlight, highContrast = highContrast, largeCursor = largeCursor, screenMagnifier = screenMagnifier, selectToSpeak = selectToSpeak, spokenFeedback = spokenFeedback, stickyKeys = stickyKeys, switchAccess = switchAccess, virtualKeyboard = virtualKeyboard)
+  
+    __obj.asInstanceOf[Anon_AnimationPolicy]
+  }
+}
+

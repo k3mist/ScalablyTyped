@@ -15,3 +15,17 @@ trait ASPxClientHtmlEditorTableDialogBase extends ASPxClientHtmlEditorDialogBase
   def GetBackgroundColorColorEdit(): ASPxClientColorEdit
 }
 
+object ASPxClientHtmlEditorTableDialogBase {
+  @scala.inline
+  def apply(
+    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetOkButton: js.Function0[ASPxClientButton]
+  ): ASPxClientHtmlEditorTableDialogBase = {
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableDialogBase]
+  }
+}
+

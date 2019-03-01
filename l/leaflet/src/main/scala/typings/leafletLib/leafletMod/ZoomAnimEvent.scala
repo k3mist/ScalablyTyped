@@ -11,3 +11,18 @@ trait ZoomAnimEvent extends LeafletEvent {
   var zoom: scala.Double
 }
 
+object ZoomAnimEvent {
+  @scala.inline
+  def apply(
+    center: LatLng,
+    noUpdate: scala.Boolean,
+    target: js.Any,
+    `type`: java.lang.String,
+    zoom: scala.Double
+  ): ZoomAnimEvent = {
+    val __obj = js.Dynamic.literal(center = center, noUpdate = noUpdate, target = target, `type` = `type`, zoom = zoom)
+  
+    __obj.asInstanceOf[ZoomAnimEvent]
+  }
+}
+

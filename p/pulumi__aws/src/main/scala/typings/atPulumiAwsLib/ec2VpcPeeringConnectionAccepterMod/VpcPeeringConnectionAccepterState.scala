@@ -56,3 +56,32 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
   val vpcPeeringConnectionId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcPeeringConnectionAccepterState {
+  @scala.inline
+  def apply(
+    acceptStatus: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    accepter: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    autoAccept: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    peerOwnerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    peerRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    peerVpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requester: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcPeeringConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): VpcPeeringConnectionAccepterState = {
+    val __obj = js.Dynamic.literal()
+    if (acceptStatus != null) __obj.updateDynamic("acceptStatus")(acceptStatus.asInstanceOf[js.Any])
+    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
+    if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
+    if (peerOwnerId != null) __obj.updateDynamic("peerOwnerId")(peerOwnerId.asInstanceOf[js.Any])
+    if (peerRegion != null) __obj.updateDynamic("peerRegion")(peerRegion.asInstanceOf[js.Any])
+    if (peerVpcId != null) __obj.updateDynamic("peerVpcId")(peerVpcId.asInstanceOf[js.Any])
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcPeeringConnectionAccepterState]
+  }
+}
+

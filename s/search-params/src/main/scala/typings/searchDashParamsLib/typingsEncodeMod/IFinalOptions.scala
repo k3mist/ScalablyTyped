@@ -11,3 +11,12 @@ trait IFinalOptions extends js.Object {
   var nullFormat: nullFormat
 }
 
+object IFinalOptions {
+  @scala.inline
+  def apply(arrayFormat: arrayFormat, booleanFormat: booleanFormat, nullFormat: nullFormat): IFinalOptions = {
+    val __obj = js.Dynamic.literal(arrayFormat = arrayFormat, booleanFormat = booleanFormat, nullFormat = nullFormat)
+  
+    __obj.asInstanceOf[IFinalOptions]
+  }
+}
+

@@ -12,3 +12,17 @@ trait GeometryInstanceAttribute extends js.Object {
   var value: js.Array[scala.Double]
 }
 
+object GeometryInstanceAttribute {
+  @scala.inline
+  def apply(
+    componentDatatype: ComponentDatatype,
+    componentsPerAttribute: scala.Double,
+    normalize: scala.Boolean,
+    value: js.Array[scala.Double]
+  ): GeometryInstanceAttribute = {
+    val __obj = js.Dynamic.literal(componentDatatype = componentDatatype, componentsPerAttribute = componentsPerAttribute, normalize = normalize, value = value)
+  
+    __obj.asInstanceOf[GeometryInstanceAttribute]
+  }
+}
+

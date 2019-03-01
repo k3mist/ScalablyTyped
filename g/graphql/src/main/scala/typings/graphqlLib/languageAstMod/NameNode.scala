@@ -11,3 +11,12 @@ trait NameNode extends ASTNode {
   val value: java.lang.String
 }
 
+object NameNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.Name, value: java.lang.String, loc: Location = null): NameNode = {
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NameNode]
+  }
+}
+

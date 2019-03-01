@@ -125,3 +125,55 @@ trait ActionBar
   def show(): scala.Unit
 }
 
+object ActionBar {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    backgroundImage: java.lang.String,
+    bubbleParent: scala.Boolean,
+    customView: titaniumLib.TitaniumNs.UINs.View,
+    displayHomeAsUp: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getCustomView: js.Function0[titaniumLib.TitaniumNs.UINs.View],
+    getNavigationMode: js.Function0[scala.Double],
+    getSubtitle: js.Function0[java.lang.String],
+    getTitle: js.Function0[java.lang.String],
+    hide: js.Function0[scala.Unit],
+    homeButtonEnabled: scala.Boolean,
+    icon: java.lang.String,
+    logo: java.lang.String,
+    navigationMode: scala.Double,
+    onHomeIconItemSelected: js.Function0[js.Any],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBackgroundImage: js.Function1[java.lang.String, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setCustomView: js.Function1[js.Any, scala.Unit],
+    setDisplayHomeAsUp: js.Function1[scala.Boolean, scala.Unit],
+    setDisplayShowHomeEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setDisplayShowTitleEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setHomeButtonEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setIcon: js.Function1[java.lang.String, scala.Unit],
+    setLogo: js.Function1[java.lang.String, scala.Unit],
+    setNavigationMode: js.Function1[scala.Double, scala.Unit],
+    setOnHomeIconItemSelected: js.Function1[js.Function0[_], scala.Unit],
+    setSubtitle: js.Function1[java.lang.String, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    show: js.Function0[scala.Unit],
+    subtitle: java.lang.String,
+    title: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): ActionBar = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, backgroundImage = backgroundImage, bubbleParent = bubbleParent, customView = customView, displayHomeAsUp = displayHomeAsUp, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getCustomView = getCustomView, getNavigationMode = getNavigationMode, getSubtitle = getSubtitle, getTitle = getTitle, hide = hide, homeButtonEnabled = homeButtonEnabled, icon = icon, logo = logo, navigationMode = navigationMode, onHomeIconItemSelected = onHomeIconItemSelected, removeEventListener = removeEventListener, setBackgroundImage = setBackgroundImage, setBubbleParent = setBubbleParent, setCustomView = setCustomView, setDisplayHomeAsUp = setDisplayHomeAsUp, setDisplayShowHomeEnabled = setDisplayShowHomeEnabled, setDisplayShowTitleEnabled = setDisplayShowTitleEnabled, setHomeButtonEnabled = setHomeButtonEnabled, setIcon = setIcon, setLogo = setLogo, setNavigationMode = setNavigationMode, setOnHomeIconItemSelected = setOnHomeIconItemSelected, setSubtitle = setSubtitle, setTitle = setTitle, show = show, subtitle = subtitle, title = title)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[ActionBar]
+  }
+}
+

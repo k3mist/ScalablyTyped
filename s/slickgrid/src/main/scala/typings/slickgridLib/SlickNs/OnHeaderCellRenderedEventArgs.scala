@@ -11,3 +11,12 @@ trait OnHeaderCellRenderedEventArgs[T /* <: SlickData */] extends GridEventArgs[
   var node: stdLib.HTMLElement
 }
 
+object OnHeaderCellRenderedEventArgs {
+  @scala.inline
+  def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T], node: stdLib.HTMLElement): OnHeaderCellRenderedEventArgs[T] = {
+    val __obj = js.Dynamic.literal(column = column, grid = grid, node = node)
+  
+    __obj.asInstanceOf[OnHeaderCellRenderedEventArgs[T]]
+  }
+}
+

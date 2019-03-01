@@ -15,3 +15,21 @@ trait File extends js.Object {
   def toJSON(): js.Object
 }
 
+object File {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    path: java.lang.String,
+    size: scala.Double,
+    toJSON: js.Function0[js.Object],
+    `type`: java.lang.String,
+    hash: java.lang.String = null,
+    lastModifiedDate: stdLib.Date = null
+  ): File = {
+    val __obj = js.Dynamic.literal(name = name, path = path, size = size, toJSON = toJSON, `type` = `type`)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
+    __obj.asInstanceOf[File]
+  }
+}
+

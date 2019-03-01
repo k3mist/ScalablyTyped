@@ -42,3 +42,19 @@ trait SliderStep extends js.Object {
   var visible: scala.Boolean
 }
 
+object SliderStep {
+  @scala.inline
+  def apply(
+    args: js.Array[_],
+    execute: scala.Boolean,
+    label: java.lang.String,
+    method: plotlyDotJsLib.plotlyDotJsLibStrings.animate | plotlyDotJsLib.plotlyDotJsLibStrings.relayout | plotlyDotJsLib.plotlyDotJsLibStrings.restyle | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.update,
+    value: java.lang.String,
+    visible: scala.Boolean
+  ): SliderStep = {
+    val __obj = js.Dynamic.literal(args = args, execute = execute, label = label, method = method.asInstanceOf[js.Any], value = value, visible = visible)
+  
+    __obj.asInstanceOf[SliderStep]
+  }
+}
+

@@ -12,3 +12,16 @@ trait Anon_FunctionName
   var `type`: eslintLib.eslintLibStrings.FunctionName
 }
 
+object Anon_FunctionName {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.FunctionDeclaration | estreeLib.estreeMod.FunctionExpression,
+    parent: scala.Null,
+    `type`: eslintLib.eslintLibStrings.FunctionName
+  ): Anon_FunctionName = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_FunctionName]
+  }
+}
+

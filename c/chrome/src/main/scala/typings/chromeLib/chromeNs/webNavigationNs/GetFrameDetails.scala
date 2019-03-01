@@ -18,3 +18,12 @@ trait GetFrameDetails extends js.Object {
   var tabId: scala.Double
 }
 
+object GetFrameDetails {
+  @scala.inline
+  def apply(frameId: scala.Double, tabId: scala.Double, processId: scala.Int | scala.Double = null): GetFrameDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetFrameDetails]
+  }
+}
+

@@ -46,3 +46,18 @@ trait MapProperties extends LayersMixinProperties {
   var ground: js.UndefOr[GroundProperties | java.lang.String] = js.undefined
 }
 
+object MapProperties {
+  @scala.inline
+  def apply(
+    basemap: BasemapProperties | java.lang.String = null,
+    ground: GroundProperties | java.lang.String = null,
+    layers: CollectionProperties[LayerProperties] | js.Array[LayerProperties] = null
+  ): MapProperties = {
+    val __obj = js.Dynamic.literal()
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapProperties]
+  }
+}
+

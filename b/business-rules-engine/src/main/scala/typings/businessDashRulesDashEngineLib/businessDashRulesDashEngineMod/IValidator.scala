@@ -11,3 +11,16 @@ trait IValidator extends js.Object {
   def ValidateAsync(context: js.Any): qLib.qMod.QNs.Promise[IValidationFailure]
 }
 
+object IValidator {
+  @scala.inline
+  def apply(
+    Error: IError,
+    Validate: js.Function1[js.Any, IValidationFailure],
+    ValidateAsync: js.Function1[js.Any, qLib.qMod.QNs.Promise[IValidationFailure]]
+  ): IValidator = {
+    val __obj = js.Dynamic.literal(Error = Error, Validate = Validate, ValidateAsync = ValidateAsync)
+  
+    __obj.asInstanceOf[IValidator]
+  }
+}
+

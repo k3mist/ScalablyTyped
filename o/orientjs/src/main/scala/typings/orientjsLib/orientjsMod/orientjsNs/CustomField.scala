@@ -30,3 +30,16 @@ trait CustomField extends js.Object {
   def unset(key: java.lang.String): CustomField
 }
 
+object CustomField {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, CustomField],
+    set: js.Function2[java.lang.String, js.Any, CustomField],
+    unset: js.Function1[java.lang.String, CustomField]
+  ): CustomField = {
+    val __obj = js.Dynamic.literal(get = get, set = set, unset = unset)
+  
+    __obj.asInstanceOf[CustomField]
+  }
+}
+

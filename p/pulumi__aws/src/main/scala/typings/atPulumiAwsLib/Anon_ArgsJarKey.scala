@@ -16,3 +16,19 @@ trait Anon_ArgsJarKey extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ArgsJarKey {
+  @scala.inline
+  def apply(
+    jar: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    args: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    mainClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    properties: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): Anon_ArgsJarKey = {
+    val __obj = js.Dynamic.literal(jar = jar.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ArgsJarKey]
+  }
+}
+

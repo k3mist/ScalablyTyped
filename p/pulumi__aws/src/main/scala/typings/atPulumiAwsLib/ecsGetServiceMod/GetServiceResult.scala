@@ -32,3 +32,19 @@ trait GetServiceResult extends js.Object {
   val taskDefinition: java.lang.String
 }
 
+object GetServiceResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    desiredCount: scala.Double,
+    id: java.lang.String,
+    launchType: java.lang.String,
+    schedulingStrategy: java.lang.String,
+    taskDefinition: java.lang.String
+  ): GetServiceResult = {
+    val __obj = js.Dynamic.literal(arn = arn, desiredCount = desiredCount, id = id, launchType = launchType, schedulingStrategy = schedulingStrategy, taskDefinition = taskDefinition)
+  
+    __obj.asInstanceOf[GetServiceResult]
+  }
+}
+

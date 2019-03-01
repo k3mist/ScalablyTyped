@@ -27,3 +27,19 @@ trait SunLight
   var direction: stdLib.ArrayLike[scala.Double]
 }
 
+object SunLight {
+  @scala.inline
+  def apply(
+    ambient: ColorAndIntensity,
+    constructor: js.Function,
+    diffuse: ColorAndIntensity,
+    direction: stdLib.ArrayLike[scala.Double],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): SunLight = {
+    val __obj = js.Dynamic.literal(ambient = ambient, constructor = constructor, diffuse = diffuse, direction = direction, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[SunLight]
+  }
+}
+

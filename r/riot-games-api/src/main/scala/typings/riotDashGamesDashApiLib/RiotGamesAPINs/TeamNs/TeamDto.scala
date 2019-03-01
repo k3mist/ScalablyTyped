@@ -22,3 +22,27 @@ trait TeamDto extends js.Object {
   var thirdLastJoinDate: scala.Double
 }
 
+object TeamDto {
+  @scala.inline
+  def apply(
+    createDate: scala.Double,
+    fullId: java.lang.String,
+    lastGameDate: scala.Double,
+    lastJoinDate: scala.Double,
+    lastJoinedRankedTeamQueueDate: scala.Double,
+    matchHistory: js.Array[MatchHistorySummaryDto],
+    modifyDate: scala.Double,
+    name: java.lang.String,
+    roster: RosterDto,
+    secondLastJoinDate: scala.Double,
+    status: java.lang.String,
+    tag: java.lang.String,
+    teamStatDetails: js.Array[TeamStatDetailDto],
+    thirdLastJoinDate: scala.Double
+  ): TeamDto = {
+    val __obj = js.Dynamic.literal(createDate = createDate, fullId = fullId, lastGameDate = lastGameDate, lastJoinDate = lastJoinDate, lastJoinedRankedTeamQueueDate = lastJoinedRankedTeamQueueDate, matchHistory = matchHistory, modifyDate = modifyDate, name = name, roster = roster, secondLastJoinDate = secondLastJoinDate, status = status, tag = tag, teamStatDetails = teamStatDetails, thirdLastJoinDate = thirdLastJoinDate)
+  
+    __obj.asInstanceOf[TeamDto]
+  }
+}
+

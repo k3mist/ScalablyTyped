@@ -13,3 +13,12 @@ trait IParameterizedQuery extends js.Object {
   var query: java.lang.String
 }
 
+object IParameterizedQuery {
+  @scala.inline
+  def apply(parameters: js.Array[IQueryParam], query: java.lang.String): IParameterizedQuery = {
+    val __obj = js.Dynamic.literal(parameters = parameters, query = query)
+  
+    __obj.asInstanceOf[IParameterizedQuery]
+  }
+}
+

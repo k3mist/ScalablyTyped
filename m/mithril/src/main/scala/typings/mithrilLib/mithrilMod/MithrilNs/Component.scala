@@ -17,3 +17,30 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
   def view(`this`: State, vnode: Vnode[Attrs, State]): Children | scala.Null | scala.Unit
 }
 
+object Component {
+  @scala.inline
+  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+    view: js.Function2[State, Vnode[Attrs, State], Children | scala.Null | scala.Unit],
+    onbeforeremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | scala.Unit] = null,
+    onbeforeupdate: js.ThisFunction2[
+      State, 
+      /* vnode */ Vnode[Attrs, State], 
+      /* old */ VnodeDOM[Attrs, State], 
+      scala.Boolean | scala.Unit
+    ] = null,
+    oncreate: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
+    oninit: js.ThisFunction1[State, /* vnode */ Vnode[Attrs, State], _] = null,
+    onremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
+    onupdate: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null
+  ): Component[Attrs, State] = {
+    val __obj = js.Dynamic.literal(view = view)
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
+    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
+    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    __obj.asInstanceOf[Component[Attrs, State]]
+  }
+}
+

@@ -799,7 +799,7 @@ object gmLibStrings {
     extends gmLib.gmMod.mNs.CompressionType
   
   @js.native
-  sealed trait `^`
+  sealed trait `_backtick^_backtick`
     extends gmLib.gmMod.mNs.ResizeOption
   
   @js.native
@@ -1291,7 +1291,7 @@ object gmLibStrings {
   @scala.inline
   def Zip: Zip = "Zip".asInstanceOf[Zip]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline

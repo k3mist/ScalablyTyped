@@ -43,3 +43,27 @@ trait TableBorder extends js.Object {
   var VerticalLine: BorderLine
 }
 
+object TableBorder {
+  @scala.inline
+  def apply(
+    BottomLine: BorderLine,
+    Distance: scala.Double,
+    HorizontalLine: BorderLine,
+    IsBottomLineValid: scala.Boolean,
+    IsDistanceValid: scala.Boolean,
+    IsHorizontalLineValid: scala.Boolean,
+    IsLeftLineValid: scala.Boolean,
+    IsRightLineValid: scala.Boolean,
+    IsTopLineValid: scala.Boolean,
+    IsVerticalLineValid: scala.Boolean,
+    LeftLine: BorderLine,
+    RightLine: BorderLine,
+    TopLine: BorderLine,
+    VerticalLine: BorderLine
+  ): TableBorder = {
+    val __obj = js.Dynamic.literal(BottomLine = BottomLine, Distance = Distance, HorizontalLine = HorizontalLine, IsBottomLineValid = IsBottomLineValid, IsDistanceValid = IsDistanceValid, IsHorizontalLineValid = IsHorizontalLineValid, IsLeftLineValid = IsLeftLineValid, IsRightLineValid = IsRightLineValid, IsTopLineValid = IsTopLineValid, IsVerticalLineValid = IsVerticalLineValid, LeftLine = LeftLine, RightLine = RightLine, TopLine = TopLine, VerticalLine = VerticalLine)
+  
+    __obj.asInstanceOf[TableBorder]
+  }
+}
+

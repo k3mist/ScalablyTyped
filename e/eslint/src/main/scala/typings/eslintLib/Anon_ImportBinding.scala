@@ -12,3 +12,16 @@ trait Anon_ImportBinding
   var `type`: eslintLib.eslintLibStrings.ImportBinding
 }
 
+object Anon_ImportBinding {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.ImportSpecifier | estreeLib.estreeMod.ImportDefaultSpecifier | estreeLib.estreeMod.ImportNamespaceSpecifier,
+    parent: estreeLib.estreeMod.ImportDeclaration,
+    `type`: eslintLib.eslintLibStrings.ImportBinding
+  ): Anon_ImportBinding = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ImportBinding]
+  }
+}
+

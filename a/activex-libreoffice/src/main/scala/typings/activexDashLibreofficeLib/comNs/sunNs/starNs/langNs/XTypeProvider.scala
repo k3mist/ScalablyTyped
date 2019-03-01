@@ -32,3 +32,20 @@ trait XTypeProvider
   def getTypes(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]
 }
 
+object XTypeProvider {
+  @scala.inline
+  def apply(
+    ImplementationId: activexDashInteropLib.SafeArray[scala.Double],
+    Types: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: js.Function0[scala.Unit],
+    getImplementationId: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getTypes: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTypeProvider = {
+    val __obj = js.Dynamic.literal(ImplementationId = ImplementationId, Types = Types, acquire = acquire, getImplementationId = getImplementationId, getTypes = getTypes, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTypeProvider]
+  }
+}
+

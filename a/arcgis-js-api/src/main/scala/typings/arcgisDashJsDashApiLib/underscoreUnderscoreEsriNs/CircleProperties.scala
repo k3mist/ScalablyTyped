@@ -46,3 +46,34 @@ trait CircleProperties extends PolygonProperties {
   var radiusUnit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CircleProperties {
+  @scala.inline
+  def apply(
+    center: PointProperties = null,
+    centroid: PointProperties = null,
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelfIntersecting: js.UndefOr[scala.Boolean] = js.undefined,
+    numberOfPoints: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    radiusUnit: java.lang.String = null,
+    rings: js.Array[js.Array[js.Array[scala.Double]]] = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): CircleProperties = {
+    val __obj = js.Dynamic.literal()
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (centroid != null) __obj.updateDynamic("centroid")(centroid)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting)
+    if (numberOfPoints != null) __obj.updateDynamic("numberOfPoints")(numberOfPoints.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit)
+    if (rings != null) __obj.updateDynamic("rings")(rings)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[CircleProperties]
+  }
+}
+

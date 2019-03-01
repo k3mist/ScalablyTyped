@@ -27,3 +27,24 @@ trait SearchOptions2 extends SearchOptions {
   var WildcardEscapeCharacter: scala.Double
 }
 
+object SearchOptions2 {
+  @scala.inline
+  def apply(
+    AlgorithmType2: scala.Double,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    WildcardEscapeCharacter: scala.Double,
+    algorithmType: SearchAlgorithms,
+    changedChars: scala.Double,
+    deletedChars: scala.Double,
+    insertedChars: scala.Double,
+    replaceString: java.lang.String,
+    searchFlag: scala.Double,
+    searchString: java.lang.String,
+    transliterateFlags: scala.Double
+  ): SearchOptions2 = {
+    val __obj = js.Dynamic.literal(AlgorithmType2 = AlgorithmType2, Locale = Locale, WildcardEscapeCharacter = WildcardEscapeCharacter, algorithmType = algorithmType, changedChars = changedChars, deletedChars = deletedChars, insertedChars = insertedChars, replaceString = replaceString, searchFlag = searchFlag, searchString = searchString, transliterateFlags = transliterateFlags)
+  
+    __obj.asInstanceOf[SearchOptions2]
+  }
+}
+

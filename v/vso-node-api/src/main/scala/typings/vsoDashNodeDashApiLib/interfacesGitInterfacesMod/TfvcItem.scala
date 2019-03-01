@@ -21,3 +21,26 @@ trait TfvcItem extends ItemModel {
   var version: scala.Double
 }
 
+object TfvcItem {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    changeDate: stdLib.Date,
+    contentMetadata: FileContentMetadata,
+    deletionId: scala.Double,
+    hashValue: java.lang.String,
+    isBranch: scala.Boolean,
+    isFolder: scala.Boolean,
+    isPendingChange: scala.Boolean,
+    isSymLink: scala.Boolean,
+    path: java.lang.String,
+    size: scala.Double,
+    url: java.lang.String,
+    version: scala.Double
+  ): TfvcItem = {
+    val __obj = js.Dynamic.literal(_links = _links, changeDate = changeDate, contentMetadata = contentMetadata, deletionId = deletionId, hashValue = hashValue, isBranch = isBranch, isFolder = isFolder, isPendingChange = isPendingChange, isSymLink = isSymLink, path = path, size = size, url = url, version = version)
+  
+    __obj.asInstanceOf[TfvcItem]
+  }
+}
+

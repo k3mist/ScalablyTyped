@@ -10,3 +10,15 @@ trait PushAction extends RouterActions {
   var `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_PUSH
 }
 
+object PushAction {
+  @scala.inline
+  def apply(
+    payload: Location,
+    `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_PUSH
+  ): PushAction = {
+    val __obj = js.Dynamic.literal(payload = payload, `type` = `type`)
+  
+    __obj.asInstanceOf[PushAction]
+  }
+}
+

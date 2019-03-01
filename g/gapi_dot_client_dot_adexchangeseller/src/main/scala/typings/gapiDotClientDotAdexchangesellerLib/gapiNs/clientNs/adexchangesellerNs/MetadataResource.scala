@@ -10,3 +10,12 @@ trait MetadataResource extends js.Object {
   var metrics: MetricsResource
 }
 
+object MetadataResource {
+  @scala.inline
+  def apply(dimensions: DimensionsResource, metrics: MetricsResource): MetadataResource = {
+    val __obj = js.Dynamic.literal(dimensions = dimensions, metrics = metrics)
+  
+    __obj.asInstanceOf[MetadataResource]
+  }
+}
+

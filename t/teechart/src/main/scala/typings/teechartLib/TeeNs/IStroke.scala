@@ -15,3 +15,20 @@ trait IStroke extends js.Object {
   var size: scala.Double
 }
 
+object IStroke {
+  @scala.inline
+  def apply(
+    cap: java.lang.String,
+    chart: IChart,
+    dash: js.Array[scala.Double],
+    fill: java.lang.String,
+    gradient: IGradient,
+    join: java.lang.String,
+    size: scala.Double
+  ): IStroke = {
+    val __obj = js.Dynamic.literal(cap = cap, chart = chart, dash = dash, fill = fill, gradient = gradient, join = join, size = size)
+  
+    __obj.asInstanceOf[IStroke]
+  }
+}
+

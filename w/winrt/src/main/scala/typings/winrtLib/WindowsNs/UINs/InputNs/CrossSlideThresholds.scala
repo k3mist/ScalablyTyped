@@ -12,3 +12,17 @@ trait CrossSlideThresholds extends js.Object {
   var speedBumpStart: scala.Double
 }
 
+object CrossSlideThresholds {
+  @scala.inline
+  def apply(
+    rearrangeStart: scala.Double,
+    selectionStart: scala.Double,
+    speedBumpEnd: scala.Double,
+    speedBumpStart: scala.Double
+  ): CrossSlideThresholds = {
+    val __obj = js.Dynamic.literal(rearrangeStart = rearrangeStart, selectionStart = selectionStart, speedBumpEnd = speedBumpEnd, speedBumpStart = speedBumpStart)
+  
+    __obj.asInstanceOf[CrossSlideThresholds]
+  }
+}
+

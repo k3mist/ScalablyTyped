@@ -10,3 +10,12 @@ trait IgImagePropertiesDialogMethods extends js.Object {
   def show(item: js.Object): scala.Unit
 }
 
+object IgImagePropertiesDialogMethods {
+  @scala.inline
+  def apply(hide: js.Function0[scala.Unit], show: js.Function1[js.Object, scala.Unit]): IgImagePropertiesDialogMethods = {
+    val __obj = js.Dynamic.literal(hide = hide, show = show)
+  
+    __obj.asInstanceOf[IgImagePropertiesDialogMethods]
+  }
+}
+

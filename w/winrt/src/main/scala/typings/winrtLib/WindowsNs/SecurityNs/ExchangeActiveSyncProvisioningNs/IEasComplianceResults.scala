@@ -17,3 +17,22 @@ trait IEasComplianceResults extends js.Object {
   var requireEncryptionResult: EasRequireEncryptionResult
 }
 
+object IEasComplianceResults {
+  @scala.inline
+  def apply(
+    compliant: scala.Boolean,
+    disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult,
+    maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult,
+    maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult,
+    minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult,
+    minPasswordLengthResult: EasMinPasswordLengthResult,
+    passwordExpirationResult: EasPasswordExpirationResult,
+    passwordHistoryResult: EasPasswordHistoryResult,
+    requireEncryptionResult: EasRequireEncryptionResult
+  ): IEasComplianceResults = {
+    val __obj = js.Dynamic.literal(compliant = compliant, disallowConvenienceLogonResult = disallowConvenienceLogonResult, maxInactivityTimeLockResult = maxInactivityTimeLockResult, maxPasswordFailedAttemptsResult = maxPasswordFailedAttemptsResult, minPasswordComplexCharactersResult = minPasswordComplexCharactersResult, minPasswordLengthResult = minPasswordLengthResult, passwordExpirationResult = passwordExpirationResult, passwordHistoryResult = passwordHistoryResult, requireEncryptionResult = requireEncryptionResult)
+  
+    __obj.asInstanceOf[IEasComplianceResults]
+  }
+}
+

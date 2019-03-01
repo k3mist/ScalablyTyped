@@ -36,3 +36,20 @@ trait ExtensionEventCallbackCollection extends js.Object {
   var versionCheck: ExtensionEventCallback
 }
 
+object ExtensionEventCallbackCollection {
+  @scala.inline
+  def apply(
+    postDisable: ExtensionEventCallback,
+    postEnable: ExtensionEventCallback,
+    postInstall: ExtensionEventCallback,
+    postUninstall: ExtensionEventCallback,
+    postUpdate: ExtensionEventCallback,
+    preInstall: ExtensionEventCallback,
+    versionCheck: ExtensionEventCallback
+  ): ExtensionEventCallbackCollection = {
+    val __obj = js.Dynamic.literal(postDisable = postDisable, postEnable = postEnable, postInstall = postInstall, postUninstall = postUninstall, postUpdate = postUpdate, preInstall = preInstall, versionCheck = versionCheck)
+  
+    __obj.asInstanceOf[ExtensionEventCallbackCollection]
+  }
+}
+

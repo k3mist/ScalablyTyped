@@ -10,3 +10,12 @@ trait ScrollToOptions extends js.Object {
   def easing(percent: scala.Double): scala.Double
 }
 
+object ScrollToOptions {
+  @scala.inline
+  def apply(callback: js.Function1[Scrollbar, scala.Unit], easing: js.Function1[scala.Double, scala.Double]): ScrollToOptions = {
+    val __obj = js.Dynamic.literal(callback = callback, easing = easing)
+  
+    __obj.asInstanceOf[ScrollToOptions]
+  }
+}
+

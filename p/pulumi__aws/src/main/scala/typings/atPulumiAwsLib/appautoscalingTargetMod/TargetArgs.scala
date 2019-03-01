@@ -33,3 +33,19 @@ trait TargetArgs extends js.Object {
   val serviceNamespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object TargetArgs {
+  @scala.inline
+  def apply(
+    maxCapacity: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    minCapacity: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    scalableDimension: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    serviceNamespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): TargetArgs = {
+    val __obj = js.Dynamic.literal(maxCapacity = maxCapacity.asInstanceOf[js.Any], minCapacity = minCapacity.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], scalableDimension = scalableDimension.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetArgs]
+  }
+}
+

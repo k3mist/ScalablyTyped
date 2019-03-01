@@ -30,3 +30,22 @@ trait WebAclArgs extends js.Object {
   ] = js.undefined
 }
 
+object WebAclArgs {
+  @scala.inline
+  def apply(
+    defaultAction: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeInput],
+    metricName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    rules: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionOverrideActionPriority]
+      ]
+    ] = null
+  ): WebAclArgs = {
+    val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAclArgs]
+  }
+}
+

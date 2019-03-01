@@ -18,3 +18,16 @@ trait AddressComponent extends js.Object {
   var types: js.Array[AddressType | GeocodingAddressComponentType]
 }
 
+object AddressComponent {
+  @scala.inline
+  def apply(
+    long_name: java.lang.String,
+    short_name: java.lang.String,
+    types: js.Array[AddressType | GeocodingAddressComponentType]
+  ): AddressComponent = {
+    val __obj = js.Dynamic.literal(long_name = long_name, short_name = short_name, types = types)
+  
+    __obj.asInstanceOf[AddressComponent]
+  }
+}
+

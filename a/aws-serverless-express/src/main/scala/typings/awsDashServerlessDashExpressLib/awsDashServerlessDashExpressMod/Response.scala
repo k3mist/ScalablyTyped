@@ -10,3 +10,12 @@ trait Response extends js.Object {
   var statusCode: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(body: java.lang.String, statusCode: scala.Double): Response = {
+    val __obj = js.Dynamic.literal(body = body, statusCode = statusCode)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

@@ -12,3 +12,17 @@ trait AzureSubscription extends js.Object {
   var subscriptionTenantName: java.lang.String
 }
 
+object AzureSubscription {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    subscriptionId: java.lang.String,
+    subscriptionTenantId: java.lang.String,
+    subscriptionTenantName: java.lang.String
+  ): AzureSubscription = {
+    val __obj = js.Dynamic.literal(displayName = displayName, subscriptionId = subscriptionId, subscriptionTenantId = subscriptionTenantId, subscriptionTenantName = subscriptionTenantName)
+  
+    __obj.asInstanceOf[AzureSubscription]
+  }
+}
+

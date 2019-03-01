@@ -126,3 +126,110 @@ trait Shape
   var WrapInfluenceOnPosition: scala.Double
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    AnchorFrame: XTextFrame,
+    AnchorPageNo: scala.Double,
+    AnchorType: TextContentAnchorType,
+    BottomMargin: scala.Double,
+    ContourOutside: scala.Boolean,
+    EndPositionInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    GluePoints: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    HoriOrient: scala.Double,
+    HoriOrientPosition: scala.Double,
+    HoriOrientRelation: scala.Double,
+    Hyperlink: java.lang.String,
+    InteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    LayerID: scala.Double,
+    LayerName: java.lang.String,
+    LeftMargin: scala.Double,
+    MoveProtect: scala.Boolean,
+    Name: java.lang.String,
+    NavigationOrder: scala.Double,
+    Opaque: scala.Boolean,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    PositionLayoutDir: scala.Double,
+    Printable: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RelativeHeight: scala.Double,
+    RelativeHeightRelation: scala.Double,
+    RelativeWidth: scala.Double,
+    RelativeWidthRelation: scala.Double,
+    RightMargin: scala.Double,
+    ShapeType: java.lang.String,
+    ShapeUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    SizeProtect: scala.Boolean,
+    StartPositionInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Style: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.XStyle,
+    Surround: WrapTextMode,
+    SurroundAnchorOnly: scala.Boolean,
+    SurroundContour: scala.Boolean,
+    TextRange: XTextRange,
+    TopMargin: scala.Double,
+    Transformation: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.HomogenMatrix3,
+    TransformationInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.HomogenMatrix3,
+    VertOrient: scala.Double,
+    VertOrientPosition: scala.Double,
+    VertOrientRelation: scala.Double,
+    Visible: scala.Boolean,
+    WrapInfluenceOnPosition: scala.Double,
+    ZOrder: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    getDirectPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetDirectPropertyTolerantResult
+      ]
+    ],
+    getGluePoints: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetPropertyTolerantResult]
+    ],
+    getShapeType: js.Function0[java.lang.String],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValuesTolerant: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.SetPropertyTolerantFailed]
+    ],
+    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+  ): Shape = {
+    val __obj = js.Dynamic.literal(AnchorFrame = AnchorFrame, AnchorPageNo = AnchorPageNo, AnchorType = AnchorType, BottomMargin = BottomMargin, ContourOutside = ContourOutside, EndPositionInHoriL2R = EndPositionInHoriL2R, GluePoints = GluePoints, HoriOrient = HoriOrient, HoriOrientPosition = HoriOrientPosition, HoriOrientRelation = HoriOrientRelation, Hyperlink = Hyperlink, InteropGrabBag = InteropGrabBag, LayerID = LayerID, LayerName = LayerName, LeftMargin = LeftMargin, MoveProtect = MoveProtect, Name = Name, NavigationOrder = NavigationOrder, Opaque = Opaque, Position = Position, PositionLayoutDir = PositionLayoutDir, Printable = Printable, PropertySetInfo = PropertySetInfo, RelativeHeight = RelativeHeight, RelativeHeightRelation = RelativeHeightRelation, RelativeWidth = RelativeWidth, RelativeWidthRelation = RelativeWidthRelation, RightMargin = RightMargin, ShapeType = ShapeType, ShapeUserDefinedAttributes = ShapeUserDefinedAttributes, Size = Size, SizeProtect = SizeProtect, StartPositionInHoriL2R = StartPositionInHoriL2R, Style = Style, Surround = Surround, SurroundAnchorOnly = SurroundAnchorOnly, SurroundContour = SurroundContour, TextRange = TextRange, TopMargin = TopMargin, Transformation = Transformation, TransformationInHoriL2R = TransformationInHoriL2R, VertOrient = VertOrient, VertOrientPosition = VertOrientPosition, VertOrientRelation = VertOrientRelation, Visible = Visible, WrapInfluenceOnPosition = WrapInfluenceOnPosition, ZOrder = ZOrder, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getDirectPropertyValuesTolerant = getDirectPropertyValuesTolerant, getGluePoints = getGluePoints, getPosition = getPosition, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValuesTolerant = getPropertyValuesTolerant, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPosition = setPosition, setPropertyValue = setPropertyValue, setPropertyValuesTolerant = setPropertyValuesTolerant, setSize = setSize)
+  
+    __obj.asInstanceOf[Shape]
+  }
+}
+

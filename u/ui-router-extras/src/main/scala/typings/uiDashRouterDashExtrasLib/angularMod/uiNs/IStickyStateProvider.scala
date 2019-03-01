@@ -15,3 +15,17 @@ trait IStickyStateProvider
   def registerStickyState(state: IStickyState): scala.Unit
 }
 
+object IStickyStateProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    debugMode: js.Function0[scala.Boolean],
+    enableDebug: js.Function1[scala.Boolean, scala.Boolean],
+    registerStickyState: js.Function1[IStickyState, scala.Unit]
+  ): IStickyStateProvider = {
+    val __obj = js.Dynamic.literal($get = $get, debugMode = debugMode, enableDebug = enableDebug, registerStickyState = registerStickyState)
+  
+    __obj.asInstanceOf[IStickyStateProvider]
+  }
+}
+

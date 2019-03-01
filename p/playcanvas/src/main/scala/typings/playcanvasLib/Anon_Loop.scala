@@ -11,3 +11,12 @@ trait Anon_Loop extends js.Object {
   var volume: scala.Double
 }
 
+object Anon_Loop {
+  @scala.inline
+  def apply(loop: scala.Boolean, pitch: scala.Double, volume: scala.Double): Anon_Loop = {
+    val __obj = js.Dynamic.literal(loop = loop, pitch = pitch, volume = volume)
+  
+    __obj.asInstanceOf[Anon_Loop]
+  }
+}
+

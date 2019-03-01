@@ -21,3 +21,20 @@ trait RequestRoute extends js.Object {
   var vhost: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object RequestRoute {
+  @scala.inline
+  def apply(
+    auth: hapiLib.Anon_Access,
+    fingerprint: java.lang.String,
+    method: hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL,
+    path: java.lang.String,
+    realm: ServerRealm,
+    settings: RouteOptions,
+    vhost: java.lang.String | js.Array[java.lang.String] = null
+  ): RequestRoute = {
+    val __obj = js.Dynamic.literal(auth = auth, fingerprint = fingerprint, method = method, path = path, realm = realm, settings = settings)
+    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestRoute]
+  }
+}
+

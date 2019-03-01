@@ -63,3 +63,68 @@ trait Anon_AggregatedDataForResultTrend extends js.Object {
   var TestSummaryForWorkItem: js.Any
 }
 
+object Anon_AggregatedDataForResultTrend {
+  @scala.inline
+  def apply(
+    AggregatedDataForResultTrend: js.Any,
+    AggregatedResultsAnalysis: js.Any,
+    AggregatedResultsByOutcome: js.Any,
+    AttachmentType: Anon_EnumValuesAnonAfnStrip,
+    BatchResponse: js.Any,
+    CloneOperationInformation: js.Any,
+    CloneOperationState: Anon_EnumValuesAnonFailedInProgressQueued,
+    CoverageQueryFlags: Anon_EnumValuesAnonBlockData,
+    CustomTestFieldDefinition: js.Any,
+    CustomTestFieldScope: Anon_EnumValuesAnonAllNone,
+    CustomTestFieldType: Anon_EnumValuesAnonBit,
+    FailingSince: js.Any,
+    LastResultDetails: js.Any,
+    Response: js.Any,
+    ResultDetails: Anon_EnumValuesAnonIterations,
+    ResultObjectType: Anon_EnumValuesAnonTestPlan,
+    ResultRetentionSettings: js.Any,
+    ResultUpdateRequestModel: js.Any,
+    ResultsFilter: js.Any,
+    RunUpdateModel: js.Any,
+    TestActionResultModel: js.Any,
+    TestAttachment: js.Any,
+    TestCaseResult: js.Any,
+    TestConfiguration: js.Any,
+    TestConfigurationState: Anon_EnumValuesAnonActiveInactive,
+    TestFailuresAnalysis: js.Any,
+    TestIterationDetailsModel: js.Any,
+    TestMessageLogDetails: js.Any,
+    TestOutcome: Anon_EnumValuesAnonAborted,
+    TestPlan: js.Any,
+    TestPlanCloneRequest: js.Any,
+    TestPlanHubData: js.Any,
+    TestPlansWithSelection: js.Any,
+    TestPoint: js.Any,
+    TestPointsQuery: js.Any,
+    TestResultHistory: js.Any,
+    TestResultHistoryDetailsForGroup: js.Any,
+    TestResultModelBase: js.Any,
+    TestResultSummary: js.Any,
+    TestResultTrendFilter: js.Any,
+    TestResultsContext: js.Any,
+    TestResultsContextType: Anon_EnumValuesAnonBuildRelease,
+    TestResultsDetails: js.Any,
+    TestResultsDetailsForGroup: js.Any,
+    TestResultsQuery: js.Any,
+    TestRun: js.Any,
+    TestRunPublishContext: Anon_EnumValuesAnonAllBuild,
+    TestRunState: Anon_EnumValuesAnonAbortedCompleted,
+    TestRunSubstate: Anon_EnumValuesAnonAbortedBySystem,
+    TestSession: js.Any,
+    TestSessionExploredWorkItemReference: js.Any,
+    TestSessionSource: Anon_EnumValuesAnonFeedbackDesktop,
+    TestSessionState: Anon_EnumValuesAnonCompletedDeclined,
+    TestSuite: js.Any,
+    TestSummaryForWorkItem: js.Any
+  ): Anon_AggregatedDataForResultTrend = {
+    val __obj = js.Dynamic.literal(AggregatedDataForResultTrend = AggregatedDataForResultTrend, AggregatedResultsAnalysis = AggregatedResultsAnalysis, AggregatedResultsByOutcome = AggregatedResultsByOutcome, AttachmentType = AttachmentType, BatchResponse = BatchResponse, CloneOperationInformation = CloneOperationInformation, CloneOperationState = CloneOperationState, CoverageQueryFlags = CoverageQueryFlags, CustomTestFieldDefinition = CustomTestFieldDefinition, CustomTestFieldScope = CustomTestFieldScope, CustomTestFieldType = CustomTestFieldType, FailingSince = FailingSince, LastResultDetails = LastResultDetails, Response = Response, ResultDetails = ResultDetails, ResultObjectType = ResultObjectType, ResultRetentionSettings = ResultRetentionSettings, ResultUpdateRequestModel = ResultUpdateRequestModel, ResultsFilter = ResultsFilter, RunUpdateModel = RunUpdateModel, TestActionResultModel = TestActionResultModel, TestAttachment = TestAttachment, TestCaseResult = TestCaseResult, TestConfiguration = TestConfiguration, TestConfigurationState = TestConfigurationState, TestFailuresAnalysis = TestFailuresAnalysis, TestIterationDetailsModel = TestIterationDetailsModel, TestMessageLogDetails = TestMessageLogDetails, TestOutcome = TestOutcome, TestPlan = TestPlan, TestPlanCloneRequest = TestPlanCloneRequest, TestPlanHubData = TestPlanHubData, TestPlansWithSelection = TestPlansWithSelection, TestPoint = TestPoint, TestPointsQuery = TestPointsQuery, TestResultHistory = TestResultHistory, TestResultHistoryDetailsForGroup = TestResultHistoryDetailsForGroup, TestResultModelBase = TestResultModelBase, TestResultSummary = TestResultSummary, TestResultTrendFilter = TestResultTrendFilter, TestResultsContext = TestResultsContext, TestResultsContextType = TestResultsContextType, TestResultsDetails = TestResultsDetails, TestResultsDetailsForGroup = TestResultsDetailsForGroup, TestResultsQuery = TestResultsQuery, TestRun = TestRun, TestRunPublishContext = TestRunPublishContext, TestRunState = TestRunState, TestRunSubstate = TestRunSubstate, TestSession = TestSession, TestSessionExploredWorkItemReference = TestSessionExploredWorkItemReference, TestSessionSource = TestSessionSource, TestSessionState = TestSessionState, TestSuite = TestSuite, TestSummaryForWorkItem = TestSummaryForWorkItem)
+  
+    __obj.asInstanceOf[Anon_AggregatedDataForResultTrend]
+  }
+}
+

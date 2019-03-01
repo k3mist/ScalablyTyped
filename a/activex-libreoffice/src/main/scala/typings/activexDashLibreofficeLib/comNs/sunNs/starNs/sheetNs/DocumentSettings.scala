@@ -45,3 +45,84 @@ trait DocumentSettings
   var ShowZeroValues: scala.Boolean
 }
 
+object DocumentSettings {
+  @scala.inline
+  def apply(
+    AddExternalLeading: scala.Boolean,
+    ApplyUserData: scala.Boolean,
+    AutoCalculate: scala.Boolean,
+    BitmapTableURL: java.lang.String,
+    CharacterCompressionType: scala.Double,
+    ColorTableURL: java.lang.String,
+    CurrentDatabaseCommand: java.lang.String,
+    CurrentDatabaseCommandType: scala.Double,
+    CurrentDatabaseDataSource: java.lang.String,
+    DashTableURL: java.lang.String,
+    DefaultTabStop: scala.Double,
+    EmbedFonts: scala.Boolean,
+    EmbedSystemFonts: scala.Boolean,
+    FieldAutoUpdate: scala.Boolean,
+    ForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XForbiddenCharacters,
+    GradientTableURL: java.lang.String,
+    GridColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HasColumnRowHeaders: scala.Boolean,
+    HasSheetTabs: scala.Boolean,
+    HatchTableURL: java.lang.String,
+    IsKernAsianPunctuation: scala.Boolean,
+    IsOutlineSymbolsSet: scala.Boolean,
+    IsPrintBooklet: scala.Boolean,
+    IsPrintBookletBack: scala.Boolean,
+    IsPrintBookletFront: scala.Boolean,
+    IsRasterAxisSynchronized: scala.Boolean,
+    IsSnapToRaster: scala.Boolean,
+    LineEndTableURL: java.lang.String,
+    LinkUpdateMode: scala.Double,
+    PrintQuality: scala.Double,
+    PrinterIndependentLayout: scala.Double,
+    PrinterName: java.lang.String,
+    PrinterSetup: activexDashInteropLib.SafeArray[scala.Double],
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RasterIsVisible: scala.Boolean,
+    RasterResolutionX: scala.Double,
+    RasterResolutionY: scala.Double,
+    RasterSubdivisionX: scala.Double,
+    RasterSubdivisionY: scala.Double,
+    SaveVersionOnClose: scala.Boolean,
+    ShowGrid: scala.Boolean,
+    ShowNotes: scala.Boolean,
+    ShowPageBreaks: scala.Boolean,
+    ShowZeroValues: scala.Boolean,
+    UpdateFromTemplate: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DocumentSettings = {
+    val __obj = js.Dynamic.literal(AddExternalLeading = AddExternalLeading, ApplyUserData = ApplyUserData, AutoCalculate = AutoCalculate, BitmapTableURL = BitmapTableURL, CharacterCompressionType = CharacterCompressionType, ColorTableURL = ColorTableURL, CurrentDatabaseCommand = CurrentDatabaseCommand, CurrentDatabaseCommandType = CurrentDatabaseCommandType, CurrentDatabaseDataSource = CurrentDatabaseDataSource, DashTableURL = DashTableURL, DefaultTabStop = DefaultTabStop, EmbedFonts = EmbedFonts, EmbedSystemFonts = EmbedSystemFonts, FieldAutoUpdate = FieldAutoUpdate, ForbiddenCharacters = ForbiddenCharacters, GradientTableURL = GradientTableURL, GridColor = GridColor, HasColumnRowHeaders = HasColumnRowHeaders, HasSheetTabs = HasSheetTabs, HatchTableURL = HatchTableURL, IsKernAsianPunctuation = IsKernAsianPunctuation, IsOutlineSymbolsSet = IsOutlineSymbolsSet, IsPrintBooklet = IsPrintBooklet, IsPrintBookletBack = IsPrintBookletBack, IsPrintBookletFront = IsPrintBookletFront, IsRasterAxisSynchronized = IsRasterAxisSynchronized, IsSnapToRaster = IsSnapToRaster, LineEndTableURL = LineEndTableURL, LinkUpdateMode = LinkUpdateMode, PrintQuality = PrintQuality, PrinterIndependentLayout = PrinterIndependentLayout, PrinterName = PrinterName, PrinterSetup = PrinterSetup, PropertySetInfo = PropertySetInfo, RasterIsVisible = RasterIsVisible, RasterResolutionX = RasterResolutionX, RasterResolutionY = RasterResolutionY, RasterSubdivisionX = RasterSubdivisionX, RasterSubdivisionY = RasterSubdivisionY, SaveVersionOnClose = SaveVersionOnClose, ShowGrid = ShowGrid, ShowNotes = ShowNotes, ShowPageBreaks = ShowPageBreaks, ShowZeroValues = ShowZeroValues, UpdateFromTemplate = UpdateFromTemplate, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[DocumentSettings]
+  }
+}
+

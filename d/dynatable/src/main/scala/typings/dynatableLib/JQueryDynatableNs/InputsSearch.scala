@@ -24,3 +24,17 @@ trait InputsSearch extends js.Object {
   def initOnLoad(): scala.Boolean
 }
 
+object InputsSearch {
+  @scala.inline
+  def apply(
+    attach: js.Function0[scala.Unit],
+    create: js.Function0[dynatableLib.JQuery],
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean]
+  ): InputsSearch = {
+    val __obj = js.Dynamic.literal(attach = attach, create = create, init = init, initOnLoad = initOnLoad)
+  
+    __obj.asInstanceOf[InputsSearch]
+  }
+}
+

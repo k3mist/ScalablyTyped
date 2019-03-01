@@ -11,3 +11,12 @@ trait WinRTEvent[TSender] extends js.Object {
   var `type`: java.lang.String
 }
 
+object WinRTEvent {
+  @scala.inline
+  def apply[TSender](detail: js.Array[_], target: TSender, `type`: java.lang.String): WinRTEvent[TSender] = {
+    val __obj = js.Dynamic.literal(detail = detail, target = target.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[WinRTEvent[TSender]]
+  }
+}
+

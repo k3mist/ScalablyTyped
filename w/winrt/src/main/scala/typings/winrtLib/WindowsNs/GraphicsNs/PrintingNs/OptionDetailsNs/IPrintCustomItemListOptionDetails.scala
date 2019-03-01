@@ -11,3 +11,22 @@ import scala.scalajs.js.annotation._
   def addItem(itemId: java.lang.String, displayName: java.lang.String): scala.Unit
 }
 
+object IPrintCustomItemListOptionDetails {
+  @scala.inline
+  def apply(
+    addItem: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    displayName: java.lang.String,
+    errorText: java.lang.String,
+    items: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_],
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintCustomItemListOptionDetails = {
+    val __obj = js.Dynamic.literal(addItem = addItem, displayName = displayName, errorText = errorText, items = items, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintCustomItemListOptionDetails]
+  }
+}
+

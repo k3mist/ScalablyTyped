@@ -37,3 +37,19 @@ trait ITextMacro extends js.Object {
   var qTag: java.lang.String
 }
 
+object ITextMacro {
+  @scala.inline
+  def apply(
+    qDisplayString: java.lang.String,
+    qIsReserved: scala.Boolean,
+    qIsSystem: scala.Boolean,
+    qRefSeqNo: scala.Double,
+    qSetSeqNo: scala.Double,
+    qTag: java.lang.String
+  ): ITextMacro = {
+    val __obj = js.Dynamic.literal(qDisplayString = qDisplayString, qIsReserved = qIsReserved, qIsSystem = qIsSystem, qRefSeqNo = qRefSeqNo, qSetSeqNo = qSetSeqNo, qTag = qTag)
+  
+    __obj.asInstanceOf[ITextMacro]
+  }
+}
+

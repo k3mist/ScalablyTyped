@@ -12,3 +12,12 @@ trait HTML
   var `type`: markedLib.markedLibStrings.html
 }
 
+object HTML {
+  @scala.inline
+  def apply(pre: scala.Boolean, text: java.lang.String, `type`: markedLib.markedLibStrings.html): HTML = {
+    val __obj = js.Dynamic.literal(pre = pre, text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[HTML]
+  }
+}
+

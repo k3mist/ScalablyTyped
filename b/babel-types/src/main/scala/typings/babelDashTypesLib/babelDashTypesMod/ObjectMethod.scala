@@ -31,3 +31,38 @@ trait ObjectMethod
   var value: Expression
 }
 
+object ObjectMethod {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    body: BlockStatement,
+    computed: scala.Boolean,
+    end: scala.Double,
+    generator: scala.Boolean,
+    id: Identifier,
+    key: Expression,
+    kind: babelDashTypesLib.babelDashTypesLibStrings.get | babelDashTypesLib.babelDashTypesLibStrings.set | babelDashTypesLib.babelDashTypesLibStrings.method,
+    loc: SourceLocation,
+    params: js.Array[LVal],
+    shorthand: scala.Boolean,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.ObjectMethod,
+    value: Expression,
+    decorators: js.Array[Decorator] = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    returnType: TypeAnnotation = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration = null
+  ): ObjectMethod = {
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, end = end, generator = generator, id = id, key = key, kind = kind.asInstanceOf[js.Any], loc = loc, params = params, shorthand = shorthand, start = start, `type` = `type`, value = value)
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[ObjectMethod]
+  }
+}
+

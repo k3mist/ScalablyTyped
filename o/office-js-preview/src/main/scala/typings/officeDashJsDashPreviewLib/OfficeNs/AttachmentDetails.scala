@@ -45,3 +45,19 @@ trait AttachmentDetails extends js.Object {
   var size: scala.Double
 }
 
+object AttachmentDetails {
+  @scala.inline
+  def apply(
+    attachmentType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentType,
+    contentType: java.lang.String,
+    id: java.lang.String,
+    isInline: scala.Boolean,
+    name: java.lang.String,
+    size: scala.Double
+  ): AttachmentDetails = {
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, contentType = contentType, id = id, isInline = isInline, name = name, size = size)
+  
+    __obj.asInstanceOf[AttachmentDetails]
+  }
+}
+

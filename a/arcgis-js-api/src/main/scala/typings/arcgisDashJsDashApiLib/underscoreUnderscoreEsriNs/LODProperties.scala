@@ -32,3 +32,20 @@ trait LODProperties extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LODProperties {
+  @scala.inline
+  def apply(
+    level: scala.Int | scala.Double = null,
+    levelValue: java.lang.String = null,
+    resolution: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): LODProperties = {
+    val __obj = js.Dynamic.literal()
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (levelValue != null) __obj.updateDynamic("levelValue")(levelValue)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LODProperties]
+  }
+}
+

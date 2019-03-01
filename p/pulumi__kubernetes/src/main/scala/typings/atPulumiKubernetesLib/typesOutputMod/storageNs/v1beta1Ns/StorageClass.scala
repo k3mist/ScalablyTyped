@@ -71,3 +71,23 @@ trait StorageClass extends js.Object {
   val volumeBindingMode: java.lang.String
 }
 
+object StorageClass {
+  @scala.inline
+  def apply(
+    allowVolumeExpansion: scala.Boolean,
+    allowedTopologies: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.TopologySelectorTerm],
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    mountOptions: js.Array[java.lang.String],
+    parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    provisioner: java.lang.String,
+    reclaimPolicy: java.lang.String,
+    volumeBindingMode: java.lang.String
+  ): StorageClass = {
+    val __obj = js.Dynamic.literal(allowVolumeExpansion = allowVolumeExpansion, allowedTopologies = allowedTopologies, apiVersion = apiVersion, kind = kind, metadata = metadata, mountOptions = mountOptions, parameters = parameters, provisioner = provisioner, reclaimPolicy = reclaimPolicy, volumeBindingMode = volumeBindingMode)
+  
+    __obj.asInstanceOf[StorageClass]
+  }
+}
+

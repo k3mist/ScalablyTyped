@@ -11,3 +11,12 @@ trait GeocoderAddressComponent extends js.Object {
   var types: js.Array[java.lang.String]
 }
 
+object GeocoderAddressComponent {
+  @scala.inline
+  def apply(long_name: java.lang.String, short_name: java.lang.String, types: js.Array[java.lang.String]): GeocoderAddressComponent = {
+    val __obj = js.Dynamic.literal(long_name = long_name, short_name = short_name, types = types)
+  
+    __obj.asInstanceOf[GeocoderAddressComponent]
+  }
+}
+

@@ -60,3 +60,26 @@ trait ReviewEventProperties extends js.Object {
   var userId: java.lang.String
 }
 
+object ReviewEventProperties {
+  @scala.inline
+  def apply(
+    eventOperation: ReviewEventOperation,
+    isAdminReply: scala.Boolean,
+    isIgnored: scala.Boolean,
+    rating: scala.Double,
+    replyDate: stdLib.Date,
+    replyText: java.lang.String,
+    replyUserId: java.lang.String,
+    resourceType: ReviewResourceType,
+    reviewDate: stdLib.Date,
+    reviewId: scala.Double,
+    reviewText: java.lang.String,
+    userDisplayName: java.lang.String,
+    userId: java.lang.String
+  ): ReviewEventProperties = {
+    val __obj = js.Dynamic.literal(eventOperation = eventOperation, isAdminReply = isAdminReply, isIgnored = isIgnored, rating = rating, replyDate = replyDate, replyText = replyText, replyUserId = replyUserId, resourceType = resourceType, reviewDate = reviewDate, reviewId = reviewId, reviewText = reviewText, userDisplayName = userDisplayName, userId = userId)
+  
+    __obj.asInstanceOf[ReviewEventProperties]
+  }
+}
+

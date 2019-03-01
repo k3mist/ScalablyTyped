@@ -11,3 +11,12 @@ trait Anon_ColorDiameter extends js.Object {
   var segments: scala.Double
 }
 
+object Anon_ColorDiameter {
+  @scala.inline
+  def apply(color: babylonjsLib.BABYLONNs.Color3, diameter: scala.Double, segments: scala.Double): Anon_ColorDiameter = {
+    val __obj = js.Dynamic.literal(color = color, diameter = diameter, segments = segments)
+  
+    __obj.asInstanceOf[Anon_ColorDiameter]
+  }
+}
+

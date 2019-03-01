@@ -24,3 +24,16 @@ trait IUtilArray extends js.Object {
   def min(array: js.Array[_], byProperty: java.lang.String): js.Any
 }
 
+object IUtilArray {
+  @scala.inline
+  def apply(
+    invoke: js.Function2[js.Array[_], java.lang.String, js.Array[_]],
+    max: js.Function2[js.Array[_], java.lang.String, js.Any],
+    min: js.Function2[js.Array[_], java.lang.String, js.Any]
+  ): IUtilArray = {
+    val __obj = js.Dynamic.literal(invoke = invoke, max = max, min = min)
+  
+    __obj.asInstanceOf[IUtilArray]
+  }
+}
+

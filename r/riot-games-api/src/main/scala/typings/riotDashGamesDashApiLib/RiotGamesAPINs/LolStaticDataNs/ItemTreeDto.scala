@@ -10,3 +10,12 @@ trait ItemTreeDto extends js.Object {
   var tags: js.Array[java.lang.String]
 }
 
+object ItemTreeDto {
+  @scala.inline
+  def apply(header: java.lang.String, tags: js.Array[java.lang.String]): ItemTreeDto = {
+    val __obj = js.Dynamic.literal(header = header, tags = tags)
+  
+    __obj.asInstanceOf[ItemTreeDto]
+  }
+}
+

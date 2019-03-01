@@ -23,3 +23,28 @@ trait Anon_ACTIONCHANNEL extends js.Object {
   var TAKE: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.TAKE
 }
 
+object Anon_ACTIONCHANNEL {
+  @scala.inline
+  def apply(
+    ACTION_CHANNEL: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.ACTION_CHANNEL,
+    ALL: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.ALL,
+    CALL: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.CALL,
+    CANCEL: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.CANCEL,
+    CANCELLED: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.CANCELLED,
+    CPS: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.CPS,
+    FLUSH: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.FLUSH,
+    FORK: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.FORK,
+    GET_CONTEXT: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.GET_CONTEXT,
+    JOIN: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.JOIN,
+    PUT: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.PUT,
+    RACE: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.RACE,
+    SELECT: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.SELECT,
+    SET_CONTEXT: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.SET_CONTEXT,
+    TAKE: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.TAKE
+  ): Anon_ACTIONCHANNEL = {
+    val __obj = js.Dynamic.literal(ACTION_CHANNEL = ACTION_CHANNEL, ALL = ALL, CALL = CALL, CANCEL = CANCEL, CANCELLED = CANCELLED, CPS = CPS, FLUSH = FLUSH, FORK = FORK, GET_CONTEXT = GET_CONTEXT, JOIN = JOIN, PUT = PUT, RACE = RACE, SELECT = SELECT, SET_CONTEXT = SET_CONTEXT, TAKE = TAKE)
+  
+    __obj.asInstanceOf[Anon_ACTIONCHANNEL]
+  }
+}
+

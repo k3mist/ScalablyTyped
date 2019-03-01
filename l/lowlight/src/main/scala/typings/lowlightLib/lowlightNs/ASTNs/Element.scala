@@ -14,3 +14,20 @@ trait Element
   var type_Element: lowlightLib.lowlightLibStrings.element
 }
 
+object Element {
+  @scala.inline
+  def apply(
+    children: js.Array[lowlightLib.lowlightNs.ASTNs.UnistNs.Node],
+    properties: Properties,
+    tagName: java.lang.String,
+    `type`: lowlightLib.lowlightLibStrings.element,
+    data: lowlightLib.lowlightNs.ASTNs.UnistNs.Data = null,
+    position: lowlightLib.lowlightNs.ASTNs.UnistNs.Location = null
+  ): Element = {
+    val __obj = js.Dynamic.literal(children = children, properties = properties, tagName = tagName, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Element]
+  }
+}
+

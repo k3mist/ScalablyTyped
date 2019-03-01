@@ -10,3 +10,12 @@ trait ImageCutter extends js.Object {
   def resetImage(img: java.lang.String): js.Any
 }
 
+object ImageCutter {
+  @scala.inline
+  def apply(getData: js.Function0[ImageData], resetImage: js.Function1[java.lang.String, js.Any]): ImageCutter = {
+    val __obj = js.Dynamic.literal(getData = getData, resetImage = resetImage)
+  
+    __obj.asInstanceOf[ImageCutter]
+  }
+}
+

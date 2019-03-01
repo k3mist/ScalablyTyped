@@ -25,3 +25,21 @@ trait AttributeMemberType
   var `type`: webidl2Lib.webidl2LibStrings.attribute
 }
 
+object AttributeMemberType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    inherit: scala.Boolean,
+    name: java.lang.String,
+    readonly: scala.Boolean,
+    static: scala.Boolean,
+    stringifier: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.attribute
+  ): AttributeMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, inherit = inherit, name = name, readonly = readonly, static = static, stringifier = stringifier, `type` = `type`)
+  
+    __obj.asInstanceOf[AttributeMemberType]
+  }
+}
+

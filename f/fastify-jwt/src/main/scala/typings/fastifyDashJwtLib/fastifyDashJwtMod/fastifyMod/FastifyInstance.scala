@@ -9,3 +9,12 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
   var jwt: Jwt
 }
 
+object FastifyInstance {
+  @scala.inline
+  def apply[HttpServer, HttpRequest, HttpResponse](jwt: Jwt): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = {
+    val __obj = js.Dynamic.literal(jwt = jwt)
+  
+    __obj.asInstanceOf[FastifyInstance[HttpServer, HttpRequest, HttpResponse]]
+  }
+}
+

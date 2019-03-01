@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.Super
 }
 
+object Super {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.Super): Super = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Super]
+  }
+}
+

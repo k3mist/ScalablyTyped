@@ -12,3 +12,17 @@ trait Anon_ActionCloseElementEndCallback
   def endCallback(): scala.Unit
 }
 
+object Anon_ActionCloseElementEndCallback {
+  @scala.inline
+  def apply(
+    action: atOracleOraclejetLib.atOracleOraclejetLibStrings.open | atOracleOraclejetLib.atOracleOraclejetLibStrings.close,
+    element: stdLib.Element,
+    endCallback: js.Function0[scala.Unit],
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_ActionCloseElementEndCallback = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element, endCallback = endCallback)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_ActionCloseElementEndCallback]
+  }
+}
+

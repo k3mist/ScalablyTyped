@@ -44,3 +44,19 @@ trait DaemonSetSpec extends js.Object {
   val updateStrategy: DaemonSetUpdateStrategy
 }
 
+object DaemonSetSpec {
+  @scala.inline
+  def apply(
+    minReadySeconds: scala.Double,
+    revisionHistoryLimit: scala.Double,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec,
+    templateGeneration: scala.Double,
+    updateStrategy: DaemonSetUpdateStrategy
+  ): DaemonSetSpec = {
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, revisionHistoryLimit = revisionHistoryLimit, selector = selector, template = template, templateGeneration = templateGeneration, updateStrategy = updateStrategy)
+  
+    __obj.asInstanceOf[DaemonSetSpec]
+  }
+}
+

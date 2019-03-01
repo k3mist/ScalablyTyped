@@ -231,3 +231,81 @@ trait Event
   def setTitle(title: java.lang.String): scala.Unit
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addRecurrenceRule: js.Function1[RecurrenceRule, scala.Unit],
+    alerts: js.Array[Alert],
+    allDay: scala.Boolean,
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    attendees: js.Array[Attendee],
+    availability: scala.Double,
+    begin: stdLib.Date,
+    bubbleParent: scala.Boolean,
+    createAlert: js.Function1[js.Any, Alert],
+    createRecurrenceRule: js.Function1[js.Any, RecurrenceRule],
+    createReminder: js.Function1[js.Any, Reminder],
+    description: java.lang.String,
+    end: stdLib.Date,
+    extendedProperties: js.Any,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getAlerts: js.Function0[js.Array[Alert]],
+    getAllDay: js.Function0[scala.Boolean],
+    getApiName: js.Function0[java.lang.String],
+    getAttendees: js.Function0[js.Array[Attendee]],
+    getAvailability: js.Function0[scala.Double],
+    getBegin: js.Function0[stdLib.Date],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDescription: js.Function0[java.lang.String],
+    getEnd: js.Function0[stdLib.Date],
+    getExtendedProperties: js.Function0[js.Any],
+    getExtendedProperty: js.Function1[java.lang.String, java.lang.String],
+    getHasAlarm: js.Function0[scala.Boolean],
+    getId: js.Function0[java.lang.String],
+    getIsDetached: js.Function0[scala.Boolean],
+    getLocation: js.Function0[java.lang.String],
+    getNotes: js.Function0[java.lang.String],
+    getRecurrenceRules: js.Function0[js.Array[RecurrenceRule]],
+    getReminders: js.Function0[js.Array[Reminder]],
+    getStatus: js.Function0[scala.Double],
+    getTitle: js.Function0[java.lang.String],
+    getVisibility: js.Function0[scala.Double],
+    hasAlarm: scala.Boolean,
+    id: java.lang.String,
+    isDetached: scala.Boolean,
+    location: java.lang.String,
+    notes: java.lang.String,
+    recurrenceRules: js.Array[RecurrenceRule],
+    refresh: js.Function0[scala.Boolean],
+    reminders: js.Array[Reminder],
+    remove: js.Function1[scala.Double, scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removeRecurrenceRule: js.Function1[RecurrenceRule, scala.Unit],
+    save: js.Function1[scala.Double, scala.Boolean],
+    setAlerts: js.Function1[js.Array[Alert], scala.Unit],
+    setAllDay: js.Function1[scala.Boolean, scala.Unit],
+    setBegin: js.Function1[stdLib.Date, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setEnd: js.Function1[stdLib.Date, scala.Unit],
+    setExtendedProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setLocation: js.Function1[java.lang.String, scala.Unit],
+    setNotes: js.Function1[java.lang.String, scala.Unit],
+    setRecurrenceRules: js.Function1[js.Array[RecurrenceRule], scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    status: scala.Double,
+    title: java.lang.String,
+    visibility: scala.Double,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Event = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, addRecurrenceRule = addRecurrenceRule, alerts = alerts, allDay = allDay, apiName = apiName, applyProperties = applyProperties, attendees = attendees, availability = availability, begin = begin, bubbleParent = bubbleParent, createAlert = createAlert, createRecurrenceRule = createRecurrenceRule, createReminder = createReminder, description = description, end = end, extendedProperties = extendedProperties, fireEvent = fireEvent, getAlerts = getAlerts, getAllDay = getAllDay, getApiName = getApiName, getAttendees = getAttendees, getAvailability = getAvailability, getBegin = getBegin, getBubbleParent = getBubbleParent, getDescription = getDescription, getEnd = getEnd, getExtendedProperties = getExtendedProperties, getExtendedProperty = getExtendedProperty, getHasAlarm = getHasAlarm, getId = getId, getIsDetached = getIsDetached, getLocation = getLocation, getNotes = getNotes, getRecurrenceRules = getRecurrenceRules, getReminders = getReminders, getStatus = getStatus, getTitle = getTitle, getVisibility = getVisibility, hasAlarm = hasAlarm, id = id, isDetached = isDetached, location = location, notes = notes, recurrenceRules = recurrenceRules, refresh = refresh, reminders = reminders, remove = remove, removeEventListener = removeEventListener, removeRecurrenceRule = removeRecurrenceRule, save = save, setAlerts = setAlerts, setAllDay = setAllDay, setBegin = setBegin, setBubbleParent = setBubbleParent, setEnd = setEnd, setExtendedProperty = setExtendedProperty, setLocation = setLocation, setNotes = setNotes, setRecurrenceRules = setRecurrenceRules, setTitle = setTitle, status = status, title = title, visibility = visibility)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Event]
+  }
+}
+

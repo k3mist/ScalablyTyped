@@ -13,3 +13,18 @@ trait ProjectionConfig extends js.Object {
   var yOffset: scala.Double
 }
 
+object ProjectionConfig {
+  @scala.inline
+  def apply(
+    precision: scala.Double,
+    rotation: js.Tuple3[scala.Double, scala.Double, scala.Double],
+    scale: scala.Double,
+    xOffset: scala.Double,
+    yOffset: scala.Double
+  ): ProjectionConfig = {
+    val __obj = js.Dynamic.literal(precision = precision, rotation = rotation, scale = scale, xOffset = xOffset, yOffset = yOffset)
+  
+    __obj.asInstanceOf[ProjectionConfig]
+  }
+}
+

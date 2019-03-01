@@ -15,3 +15,12 @@ trait WhereNested extends js.Object {
   var $or: js.Array[AnyWhereOptions | WhereLogic]
 }
 
+object WhereNested {
+  @scala.inline
+  def apply($and: js.Array[AnyWhereOptions | WhereLogic], $or: js.Array[AnyWhereOptions | WhereLogic]): WhereNested = {
+    val __obj = js.Dynamic.literal($and = $and, $or = $or)
+  
+    __obj.asInstanceOf[WhereNested]
+  }
+}
+

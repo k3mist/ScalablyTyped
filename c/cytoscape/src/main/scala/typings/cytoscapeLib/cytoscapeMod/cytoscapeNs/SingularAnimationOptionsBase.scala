@@ -18,3 +18,18 @@ trait SingularAnimationOptionsBase extends js.Object {
   var style: js.Any
 }
 
+object SingularAnimationOptionsBase {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    easing: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction,
+    position: Position,
+    renderedPosition: Position,
+    style: js.Any
+  ): SingularAnimationOptionsBase = {
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing, position = position, renderedPosition = renderedPosition, style = style)
+  
+    __obj.asInstanceOf[SingularAnimationOptionsBase]
+  }
+}
+

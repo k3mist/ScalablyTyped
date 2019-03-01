@@ -14,3 +14,12 @@ trait Anon_New extends js.Object {
   var unseen: scala.Double
 }
 
+object Anon_New {
+  @scala.inline
+  def apply(`new`: scala.Double, total: scala.Double, unseen: scala.Double): Anon_New = {
+    val __obj = js.Dynamic.literal(`new` = `new`, total = total, unseen = unseen)
+  
+    __obj.asInstanceOf[Anon_New]
+  }
+}
+

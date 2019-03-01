@@ -15,3 +15,20 @@ trait SortableUIParams extends js.Object {
   var sender: angularLib.angularMod.angularNs.IAugmentedJQuery
 }
 
+object SortableUIParams {
+  @scala.inline
+  def apply(
+    helper: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    item: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    offset: js.Any,
+    originalPosition: js.Any,
+    placeholder: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    position: js.Any,
+    sender: angularLib.angularMod.angularNs.IAugmentedJQuery
+  ): SortableUIParams = {
+    val __obj = js.Dynamic.literal(helper = helper, item = item, offset = offset, originalPosition = originalPosition, placeholder = placeholder, position = position, sender = sender)
+  
+    __obj.asInstanceOf[SortableUIParams]
+  }
+}
+

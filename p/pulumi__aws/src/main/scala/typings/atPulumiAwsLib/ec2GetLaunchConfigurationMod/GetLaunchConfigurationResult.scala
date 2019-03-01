@@ -76,3 +76,30 @@ trait GetLaunchConfigurationResult extends js.Object {
   val vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
 }
 
+object GetLaunchConfigurationResult {
+  @scala.inline
+  def apply(
+    associatePublicIpAddress: scala.Boolean,
+    ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncrypted],
+    ebsOptimized: scala.Boolean,
+    enableMonitoring: scala.Boolean,
+    ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceName],
+    iamInstanceProfile: java.lang.String,
+    id: java.lang.String,
+    imageId: java.lang.String,
+    instanceType: java.lang.String,
+    keyName: java.lang.String,
+    placementTenancy: java.lang.String,
+    rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSize],
+    securityGroups: js.Array[java.lang.String],
+    spotPrice: java.lang.String,
+    userData: java.lang.String,
+    vpcClassicLinkId: java.lang.String,
+    vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
+  ): GetLaunchConfigurationResult = {
+    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, enableMonitoring = enableMonitoring, ephemeralBlockDevices = ephemeralBlockDevices, iamInstanceProfile = iamInstanceProfile, id = id, imageId = imageId, instanceType = instanceType, keyName = keyName, placementTenancy = placementTenancy, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, spotPrice = spotPrice, userData = userData, vpcClassicLinkId = vpcClassicLinkId, vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups)
+  
+    __obj.asInstanceOf[GetLaunchConfigurationResult]
+  }
+}
+

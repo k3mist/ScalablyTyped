@@ -39,3 +39,16 @@ trait TableFilteredEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object TableFilteredEventArgs {
+  @scala.inline
+  def apply(
+    tableId: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableFiltered,
+    worksheetId: java.lang.String
+  ): TableFilteredEventArgs = {
+    val __obj = js.Dynamic.literal(tableId = tableId, `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[TableFilteredEventArgs]
+  }
+}
+

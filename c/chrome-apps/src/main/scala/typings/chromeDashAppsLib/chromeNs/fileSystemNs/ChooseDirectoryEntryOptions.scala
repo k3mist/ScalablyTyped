@@ -10,3 +10,19 @@ import scala.scalajs.js.annotation._
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.openDirectory
 }
 
+object ChooseDirectoryEntryOptions {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.openDirectory,
+    accepts: js.Array[AcceptOptions] = null,
+    acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    suggestedName: java.lang.String = null
+  ): ChooseDirectoryEntryOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    __obj.asInstanceOf[ChooseDirectoryEntryOptions]
+  }
+}
+

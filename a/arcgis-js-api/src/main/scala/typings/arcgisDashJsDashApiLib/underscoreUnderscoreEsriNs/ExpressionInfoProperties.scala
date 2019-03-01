@@ -32,3 +32,20 @@ trait ExpressionInfoProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExpressionInfoProperties {
+  @scala.inline
+  def apply(
+    expression: java.lang.String = null,
+    name: java.lang.String = null,
+    returnType: java.lang.String | scala.Double = null,
+    title: java.lang.String = null
+  ): ExpressionInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ExpressionInfoProperties]
+  }
+}
+

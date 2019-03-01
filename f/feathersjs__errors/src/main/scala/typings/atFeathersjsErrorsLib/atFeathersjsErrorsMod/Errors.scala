@@ -25,3 +25,30 @@ trait Errors extends js.Object {
   var Unprocessable: Unprocessable
 }
 
+object Errors {
+  @scala.inline
+  def apply(
+    BadGateway: BadGateway,
+    BadRequest: BadRequest,
+    Conflict: Conflict,
+    FeathersError: FeathersError,
+    Forbidden: Forbidden,
+    GeneralError: GeneralError,
+    LengthRequired: LengthRequired,
+    MethodNotAllowed: MethodNotAllowed,
+    NotAcceptable: NotAcceptable,
+    NotAuthenticated: NotAuthenticated,
+    NotFound: NotFound,
+    NotImplemented: NotImplemented,
+    PaymentError: PaymentError,
+    Timeout: Timeout,
+    TooManyRequests: TooManyRequests,
+    Unavailable: Unavailable,
+    Unprocessable: Unprocessable
+  ): Errors = {
+    val __obj = js.Dynamic.literal(BadGateway = BadGateway, BadRequest = BadRequest, Conflict = Conflict, FeathersError = FeathersError, Forbidden = Forbidden, GeneralError = GeneralError, LengthRequired = LengthRequired, MethodNotAllowed = MethodNotAllowed, NotAcceptable = NotAcceptable, NotAuthenticated = NotAuthenticated, NotFound = NotFound, NotImplemented = NotImplemented, PaymentError = PaymentError, Timeout = Timeout, TooManyRequests = TooManyRequests, Unavailable = Unavailable, Unprocessable = Unprocessable)
+  
+    __obj.asInstanceOf[Errors]
+  }
+}
+

@@ -17,3 +17,12 @@ trait PhysicsImpostorJoint extends js.Object {
   var mainImpostor: PhysicsImpostor
 }
 
+object PhysicsImpostorJoint {
+  @scala.inline
+  def apply(connectedImpostor: PhysicsImpostor, joint: PhysicsJoint, mainImpostor: PhysicsImpostor): PhysicsImpostorJoint = {
+    val __obj = js.Dynamic.literal(connectedImpostor = connectedImpostor, joint = joint, mainImpostor = mainImpostor)
+  
+    __obj.asInstanceOf[PhysicsImpostorJoint]
+  }
+}
+

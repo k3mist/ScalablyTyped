@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ArrayTypeAnnotation
 }
 
+object ArrayTypeAnnotation {
+  @scala.inline
+  def apply(
+    elementType: astDashTypesLib.genKindsMod.FlowTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ArrayTypeAnnotation
+  ): ArrayTypeAnnotation = {
+    val __obj = js.Dynamic.literal(elementType = elementType, `type` = `type`)
+  
+    __obj.asInstanceOf[ArrayTypeAnnotation]
+  }
+}
+

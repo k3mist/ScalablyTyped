@@ -19,3 +19,12 @@ trait ElementChange extends js.Object {
   var ReplacedElement: js.Any
 }
 
+object ElementChange {
+  @scala.inline
+  def apply(Accessor: js.Any, Element: js.Any, ReplacedElement: js.Any): ElementChange = {
+    val __obj = js.Dynamic.literal(Accessor = Accessor, Element = Element, ReplacedElement = ReplacedElement)
+  
+    __obj.asInstanceOf[ElementChange]
+  }
+}
+

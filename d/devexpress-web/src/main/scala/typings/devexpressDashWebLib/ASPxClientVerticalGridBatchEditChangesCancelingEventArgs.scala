@@ -26,3 +26,17 @@ trait ASPxClientVerticalGridBatchEditChangesCancelingEventArgs extends ASPxClien
   var updatedValues: js.Object
 }
 
+object ASPxClientVerticalGridBatchEditChangesCancelingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    deletedValues: js.Object,
+    insertedValues: js.Object,
+    updatedValues: js.Object
+  ): ASPxClientVerticalGridBatchEditChangesCancelingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, updatedValues = updatedValues)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditChangesCancelingEventArgs]
+  }
+}
+

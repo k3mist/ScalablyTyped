@@ -13,3 +13,12 @@ trait BitmapSize extends js.Object {
   var width: scala.Double
 }
 
+object BitmapSize {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): BitmapSize = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[BitmapSize]
+  }
+}
+

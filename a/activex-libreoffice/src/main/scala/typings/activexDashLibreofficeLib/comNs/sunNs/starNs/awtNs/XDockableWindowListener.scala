@@ -35,3 +35,24 @@ trait XDockableWindowListener
   def toggleFloatingMode(e: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XDockableWindowListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    closed: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    docking: js.Function1[DockingEvent, DockingData],
+    endDocking: js.Function1[EndDockingEvent, scala.Unit],
+    endPopupMode: js.Function1[EndPopupModeEvent, scala.Unit],
+    prepareToggleFloatingMode: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startDocking: js.Function1[DockingEvent, scala.Unit],
+    toggleFloatingMode: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
+  ): XDockableWindowListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, closed = closed, disposing = disposing, docking = docking, endDocking = endDocking, endPopupMode = endPopupMode, prepareToggleFloatingMode = prepareToggleFloatingMode, queryInterface = queryInterface, release = release, startDocking = startDocking, toggleFloatingMode = toggleFloatingMode)
+  
+    __obj.asInstanceOf[XDockableWindowListener]
+  }
+}
+

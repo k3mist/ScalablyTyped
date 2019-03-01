@@ -32,3 +32,20 @@ trait PortalQueryResultProperties extends js.Object {
   var total: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PortalQueryResultProperties {
+  @scala.inline
+  def apply(
+    nextQueryParams: PortalQueryParamsProperties = null,
+    queryParams: PortalQueryParamsProperties = null,
+    results: js.Array[_] = null,
+    total: scala.Int | scala.Double = null
+  ): PortalQueryResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (nextQueryParams != null) __obj.updateDynamic("nextQueryParams")(nextQueryParams)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (results != null) __obj.updateDynamic("results")(results)
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PortalQueryResultProperties]
+  }
+}
+

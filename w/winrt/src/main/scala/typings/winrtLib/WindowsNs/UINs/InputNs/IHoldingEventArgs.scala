@@ -11,3 +11,16 @@ trait IHoldingEventArgs extends js.Object {
   var position: winrtLib.WindowsNs.FoundationNs.Point
 }
 
+object IHoldingEventArgs {
+  @scala.inline
+  def apply(
+    holdingState: HoldingState,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point
+  ): IHoldingEventArgs = {
+    val __obj = js.Dynamic.literal(holdingState = holdingState, pointerDeviceType = pointerDeviceType, position = position)
+  
+    __obj.asInstanceOf[IHoldingEventArgs]
+  }
+}
+

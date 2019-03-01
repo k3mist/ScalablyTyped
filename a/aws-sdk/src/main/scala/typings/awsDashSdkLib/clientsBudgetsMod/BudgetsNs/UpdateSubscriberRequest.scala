@@ -28,3 +28,18 @@ trait UpdateSubscriberRequest extends js.Object {
   var OldSubscriber: Subscriber
 }
 
+object UpdateSubscriberRequest {
+  @scala.inline
+  def apply(
+    AccountId: AccountId,
+    BudgetName: BudgetName,
+    NewSubscriber: Subscriber,
+    Notification: Notification,
+    OldSubscriber: Subscriber
+  ): UpdateSubscriberRequest = {
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, NewSubscriber = NewSubscriber, Notification = Notification, OldSubscriber = OldSubscriber)
+  
+    __obj.asInstanceOf[UpdateSubscriberRequest]
+  }
+}
+

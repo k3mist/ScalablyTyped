@@ -12,3 +12,17 @@ trait JobInfo extends js.Object {
   var state: java.lang.String
 }
 
+object JobInfo {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    `object`: java.lang.String,
+    operation: java.lang.String,
+    state: java.lang.String
+  ): JobInfo = {
+    val __obj = js.Dynamic.literal(id = id, `object` = `object`, operation = operation, state = state)
+  
+    __obj.asInstanceOf[JobInfo]
+  }
+}
+

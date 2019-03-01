@@ -16,3 +16,12 @@ trait Anon_Details extends js.Object {
   var result: Anon_Args
 }
 
+object Anon_Details {
+  @scala.inline
+  def apply(details: js.Array[Anon_Args], result: Anon_Args): Anon_Details = {
+    val __obj = js.Dynamic.literal(details = details, result = result)
+  
+    __obj.asInstanceOf[Anon_Details]
+  }
+}
+

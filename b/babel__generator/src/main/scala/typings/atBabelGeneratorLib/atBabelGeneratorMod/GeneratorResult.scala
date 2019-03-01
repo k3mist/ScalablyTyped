@@ -10,3 +10,12 @@ trait GeneratorResult extends js.Object {
   var map: atBabelGeneratorLib.Anon_File | scala.Null
 }
 
+object GeneratorResult {
+  @scala.inline
+  def apply(code: java.lang.String, map: atBabelGeneratorLib.Anon_File = null): GeneratorResult = {
+    val __obj = js.Dynamic.literal(code = code)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[GeneratorResult]
+  }
+}
+

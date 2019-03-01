@@ -36,3 +36,19 @@ trait DataSetSelector extends js.Object {
   var width: scala.Double
 }
 
+object DataSetSelector {
+  @scala.inline
+  def apply(
+    comboBoxSelectText: java.lang.String,
+    compareText: java.lang.String,
+    listHeight: scala.Double,
+    position: java.lang.String,
+    selectText: java.lang.String,
+    width: scala.Double
+  ): DataSetSelector = {
+    val __obj = js.Dynamic.literal(comboBoxSelectText = comboBoxSelectText, compareText = compareText, listHeight = listHeight, position = position, selectText = selectText, width = width)
+  
+    __obj.asInstanceOf[DataSetSelector]
+  }
+}
+

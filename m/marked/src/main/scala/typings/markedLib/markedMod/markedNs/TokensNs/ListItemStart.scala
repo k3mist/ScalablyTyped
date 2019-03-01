@@ -10,3 +10,12 @@ trait ListItemStart
   var `type`: markedLib.markedLibStrings.list_item_start
 }
 
+object ListItemStart {
+  @scala.inline
+  def apply(`type`: markedLib.markedLibStrings.list_item_start): ListItemStart = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ListItemStart]
+  }
+}
+

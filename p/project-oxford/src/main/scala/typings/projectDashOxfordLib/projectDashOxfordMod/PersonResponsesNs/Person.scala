@@ -12,3 +12,17 @@ trait Person extends js.Object {
   var userData: java.lang.String
 }
 
+object Person {
+  @scala.inline
+  def apply(
+    faceIds: js.Array[java.lang.String],
+    name: java.lang.String,
+    personId: java.lang.String,
+    userData: java.lang.String
+  ): Person = {
+    val __obj = js.Dynamic.literal(faceIds = faceIds, name = name, personId = personId, userData = userData)
+  
+    __obj.asInstanceOf[Person]
+  }
+}
+

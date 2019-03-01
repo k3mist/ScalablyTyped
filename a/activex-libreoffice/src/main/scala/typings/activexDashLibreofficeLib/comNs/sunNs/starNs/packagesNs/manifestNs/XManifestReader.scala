@@ -17,3 +17,22 @@ trait XManifestReader
   ]
 }
 
+object XManifestReader {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readManifestSequence: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    release: js.Function0[scala.Unit]
+  ): XManifestReader = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readManifestSequence = readManifestSequence, release = release)
+  
+    __obj.asInstanceOf[XManifestReader]
+  }
+}
+

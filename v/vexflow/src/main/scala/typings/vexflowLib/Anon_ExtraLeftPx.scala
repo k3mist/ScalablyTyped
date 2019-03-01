@@ -22,3 +22,34 @@ trait Anon_Extraleftpx extends js.Object {
   var width: scala.Double
 }
 
+object Anon_ExtraLeftPx {
+  @scala.inline
+  def apply(
+    extraLeftPx: scala.Double,
+    extraRightPx: scala.Double,
+    left_shift: scala.Double,
+    modLeftPx: scala.Double,
+    modRightPx: scala.Double,
+    noteWidth: scala.Double,
+    width: scala.Double
+  ): Anon_ExtraLeftPx = {
+    val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx, extraRightPx = extraRightPx, left_shift = left_shift, modLeftPx = modLeftPx, modRightPx = modRightPx, noteWidth = noteWidth, width = width)
+  
+    __obj.asInstanceOf[Anon_ExtraLeftPx]
+  }
+}
+
+object Anon_Extraleftpx {
+  @scala.inline
+  def apply(
+    extra_left_px: scala.Double,
+    extra_right_px: scala.Double,
+    spacing: scala.Double,
+    width: scala.Double
+  ): Anon_Extraleftpx = {
+    val __obj = js.Dynamic.literal(extra_left_px = extra_left_px, extra_right_px = extra_right_px, spacing = spacing, width = width)
+  
+    __obj.asInstanceOf[Anon_Extraleftpx]
+  }
+}
+

@@ -26,3 +26,18 @@ trait XMapping2D
   def mapInverse(aPoint: RealPoint2D): RealPoint2D
 }
 
+object XMapping2D {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    map: js.Function1[RealPoint2D, RealPoint2D],
+    mapInverse: js.Function1[RealPoint2D, RealPoint2D],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMapping2D = {
+    val __obj = js.Dynamic.literal(acquire = acquire, map = map, mapInverse = mapInverse, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMapping2D]
+  }
+}
+

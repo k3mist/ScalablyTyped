@@ -17,3 +17,20 @@ trait MultiprocessAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.multiprocess
 }
 
+object MultiprocessAppender {
+  @scala.inline
+  def apply(
+    mode: log4jsLib.log4jsLibStrings.master | log4jsLib.log4jsLibStrings.worker,
+    `type`: log4jsLib.log4jsLibStrings.multiprocess,
+    appender: java.lang.String = null,
+    loggerHost: java.lang.String = null,
+    loggerPort: scala.Int | scala.Double = null
+  ): MultiprocessAppender = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], `type` = `type`)
+    if (appender != null) __obj.updateDynamic("appender")(appender)
+    if (loggerHost != null) __obj.updateDynamic("loggerHost")(loggerHost)
+    if (loggerPort != null) __obj.updateDynamic("loggerPort")(loggerPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiprocessAppender]
+  }
+}
+

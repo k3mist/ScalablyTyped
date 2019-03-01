@@ -16,3 +16,12 @@ trait LeakInformation extends js.Object {
   var reason: java.lang.String
 }
 
+object LeakInformation {
+  @scala.inline
+  def apply(growth: scala.Double, reason: java.lang.String): LeakInformation = {
+    val __obj = js.Dynamic.literal(growth = growth, reason = reason)
+  
+    __obj.asInstanceOf[LeakInformation]
+  }
+}
+

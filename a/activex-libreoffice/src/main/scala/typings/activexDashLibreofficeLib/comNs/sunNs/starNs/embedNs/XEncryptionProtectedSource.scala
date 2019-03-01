@@ -21,3 +21,18 @@ trait XEncryptionProtectedSource
   def setEncryptionPassword(sPassword: java.lang.String): scala.Unit
 }
 
+object XEncryptionProtectedSource {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEncryption: js.Function0[scala.Unit],
+    setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
+  ): XEncryptionProtectedSource = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionPassword = setEncryptionPassword)
+  
+    __obj.asInstanceOf[XEncryptionProtectedSource]
+  }
+}
+

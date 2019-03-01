@@ -61,3 +61,24 @@ trait PercentilesAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object PercentilesAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    compression: js.Function1[scala.Double, PercentilesAggregation],
+    field: js.Function1[java.lang.String, PercentilesAggregation],
+    keyed: js.Function1[scala.Boolean, PercentilesAggregation],
+    lang: js.Function1[java.lang.String, PercentilesAggregation],
+    params: js.Function1[js.Object, PercentilesAggregation],
+    percent: js.Function1[scala.Double, PercentilesAggregation],
+    percents: js.Function1[js.Array[scala.Double], PercentilesAggregation],
+    script: js.Function1[java.lang.String, PercentilesAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, PercentilesAggregation],
+    toJSON: js.Function0[js.Any]
+  ): PercentilesAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, compression = compression, field = field, keyed = keyed, lang = lang, params = params, percent = percent, percents = percents, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[PercentilesAggregation]
+  }
+}
+

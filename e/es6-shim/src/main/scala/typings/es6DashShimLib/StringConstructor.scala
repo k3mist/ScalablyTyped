@@ -21,3 +21,15 @@ trait StringConstructor extends js.Object {
   def raw(template: stdLib.TemplateStringsArray, substitutions: js.Any*): java.lang.String
 }
 
+object StringConstructor {
+  @scala.inline
+  def apply(
+    fromCodePoint: js.Function1[/* repeated */ scala.Double, java.lang.String],
+    raw: js.Function2[stdLib.TemplateStringsArray, /* repeated */ js.Any, java.lang.String]
+  ): StringConstructor = {
+    val __obj = js.Dynamic.literal(fromCodePoint = fromCodePoint, raw = raw)
+  
+    __obj.asInstanceOf[StringConstructor]
+  }
+}
+

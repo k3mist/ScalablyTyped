@@ -14,3 +14,18 @@ trait LineDataExtended extends LineData {
   var softWrapped: scala.Boolean
 }
 
+object LineDataExtended {
+  @scala.inline
+  def apply(
+    bufferRow: scala.Double,
+    foldable: scala.Boolean,
+    maxDigits: scala.Double,
+    screenRow: scala.Double,
+    softWrapped: scala.Boolean
+  ): LineDataExtended = {
+    val __obj = js.Dynamic.literal(bufferRow = bufferRow, foldable = foldable, maxDigits = maxDigits, screenRow = screenRow, softWrapped = softWrapped)
+  
+    __obj.asInstanceOf[LineDataExtended]
+  }
+}
+

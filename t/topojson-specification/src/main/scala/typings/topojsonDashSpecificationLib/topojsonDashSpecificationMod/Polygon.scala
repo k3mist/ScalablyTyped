@@ -13,3 +13,20 @@ trait Polygon[P /* <: Properties */]
   var type_Polygon: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Polygon
 }
 
+object Polygon {
+  @scala.inline
+  def apply[P /* <: Properties */](
+    arcs: js.Array[ArcIndexes],
+    `type`: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Polygon,
+    bbox: geojsonLib.geojsonMod.BBox = null,
+    id: scala.Double | java.lang.String = null,
+    properties: P = null
+  ): Polygon[P] = {
+    val __obj = js.Dynamic.literal(arcs = arcs, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Polygon[P]]
+  }
+}
+

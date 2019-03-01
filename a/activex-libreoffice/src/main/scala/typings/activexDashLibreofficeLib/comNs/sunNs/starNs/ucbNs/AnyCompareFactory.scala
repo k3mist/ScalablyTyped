@@ -13,3 +13,18 @@ trait AnyCompareFactory extends XAnyCompareFactory {
   def createWithLocale(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Unit
 }
 
+object AnyCompareFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createAnyCompareByName: js.Function1[java.lang.String, XAnyCompare],
+    createWithLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): AnyCompareFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createAnyCompareByName = createAnyCompareByName, createWithLocale = createWithLocale, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[AnyCompareFactory]
+  }
+}
+

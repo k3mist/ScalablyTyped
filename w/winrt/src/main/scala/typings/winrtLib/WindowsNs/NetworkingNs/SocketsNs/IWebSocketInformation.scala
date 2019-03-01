@@ -11,3 +11,16 @@ trait IWebSocketInformation extends js.Object {
   var protocol: java.lang.String
 }
 
+object IWebSocketInformation {
+  @scala.inline
+  def apply(
+    bandwidthStatistics: BandwidthStatistics,
+    localAddress: winrtLib.WindowsNs.NetworkingNs.HostName,
+    protocol: java.lang.String
+  ): IWebSocketInformation = {
+    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics, localAddress = localAddress, protocol = protocol)
+  
+    __obj.asInstanceOf[IWebSocketInformation]
+  }
+}
+

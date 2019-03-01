@@ -12,3 +12,12 @@ trait BitmapBounds extends js.Object {
   var y: scala.Double
 }
 
+object BitmapBounds {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double, x: scala.Double, y: scala.Double): BitmapBounds = {
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[BitmapBounds]
+  }
+}
+

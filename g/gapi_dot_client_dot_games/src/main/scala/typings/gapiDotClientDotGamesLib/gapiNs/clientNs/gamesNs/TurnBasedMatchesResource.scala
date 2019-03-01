@@ -43,3 +43,65 @@ trait TurnBasedMatchesResource extends js.Object {
   def takeTurn(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId): gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
 }
 
+object TurnBasedMatchesResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    create: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    decline: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    dismiss: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    finish: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeMatchData, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    join: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    leave: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    leaveTurn: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdMatchVersion, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeMatchDataKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchList]
+    ],
+    rematch: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchRematch]
+    ],
+    sync: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeMatchDataKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchSync]
+    ],
+    takeTurn: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMatchId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
+    ]
+  ): TurnBasedMatchesResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, decline = decline, dismiss = dismiss, finish = finish, get = get, join = join, leave = leave, leaveTurn = leaveTurn, list = list, rematch = rematch, sync = sync, takeTurn = takeTurn)
+  
+    __obj.asInstanceOf[TurnBasedMatchesResource]
+  }
+}
+

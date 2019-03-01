@@ -16,3 +16,21 @@ trait Anon_BevelEnabled extends js.Object {
   var size: scala.Double
 }
 
+object Anon_BevelEnabled {
+  @scala.inline
+  def apply(
+    bevelEnabled: scala.Boolean,
+    bevelSegments: scala.Double,
+    bevelSize: scala.Double,
+    bevelThickness: scala.Double,
+    curveSegments: scala.Double,
+    font: threeLib.threeDashCoreMod.Font,
+    height: scala.Double,
+    size: scala.Double
+  ): Anon_BevelEnabled = {
+    val __obj = js.Dynamic.literal(bevelEnabled = bevelEnabled, bevelSegments = bevelSegments, bevelSize = bevelSize, bevelThickness = bevelThickness, curveSegments = curveSegments, font = font, height = height, size = size)
+  
+    __obj.asInstanceOf[Anon_BevelEnabled]
+  }
+}
+

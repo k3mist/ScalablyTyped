@@ -26,3 +26,18 @@ trait FieldGroupConfigProperties extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldGroupConfigProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    fieldConfig: js.Array[FieldConfigProperties] = null,
+    label: java.lang.String = null
+  ): FieldGroupConfigProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[FieldGroupConfigProperties]
+  }
+}
+

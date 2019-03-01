@@ -21,3 +21,26 @@ trait Anon_D extends js.Object {
   var y: java.lang.String
 }
 
+object Anon_D {
+  @scala.inline
+  def apply(
+    D: java.lang.String,
+    F: java.lang.String,
+    G: java.lang.String,
+    M: java.lang.String,
+    T: java.lang.String,
+    Y: java.lang.String,
+    d: java.lang.String,
+    g: java.lang.String,
+    m: java.lang.String,
+    s: java.lang.String,
+    t: java.lang.String,
+    u: java.lang.String,
+    y: java.lang.String
+  ): Anon_D = {
+    val __obj = js.Dynamic.literal(D = D, F = F, G = G, M = M, T = T, Y = Y, d = d, g = g, m = m, s = s, t = t, u = u, y = y)
+  
+    __obj.asInstanceOf[Anon_D]
+  }
+}
+

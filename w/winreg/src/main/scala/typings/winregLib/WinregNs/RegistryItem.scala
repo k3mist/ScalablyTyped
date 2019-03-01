@@ -43,3 +43,20 @@ trait RegistryItem extends js.Object {
   var value: java.lang.String
 }
 
+object RegistryItem {
+  @scala.inline
+  def apply(
+    arch: java.lang.String,
+    hive: java.lang.String,
+    host: java.lang.String,
+    key: java.lang.String,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    value: java.lang.String
+  ): RegistryItem = {
+    val __obj = js.Dynamic.literal(arch = arch, hive = hive, host = host, key = key, name = name, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[RegistryItem]
+  }
+}
+

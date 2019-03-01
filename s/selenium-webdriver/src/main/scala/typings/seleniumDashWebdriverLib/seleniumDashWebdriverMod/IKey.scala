@@ -86,3 +86,74 @@ trait IKey extends js.Object {
   def chord(var_args: (java.lang.String | IKey)*): java.lang.String
 }
 
+object IKey {
+  @scala.inline
+  def apply(
+    ADD: java.lang.String,
+    ALT: java.lang.String,
+    ARROW_DOWN: java.lang.String,
+    ARROW_LEFT: java.lang.String,
+    ARROW_RIGHT: java.lang.String,
+    ARROW_UP: java.lang.String,
+    BACK_SPACE: java.lang.String,
+    CANCEL: java.lang.String,
+    CLEAR: java.lang.String,
+    COMMAND: java.lang.String,
+    CONTROL: java.lang.String,
+    DECIMAL: java.lang.String,
+    DELETE: java.lang.String,
+    DIVIDE: java.lang.String,
+    DOWN: java.lang.String,
+    END: java.lang.String,
+    ENTER: java.lang.String,
+    EQUALS: java.lang.String,
+    ESCAPE: java.lang.String,
+    F1: java.lang.String,
+    F10: java.lang.String,
+    F11: java.lang.String,
+    F12: java.lang.String,
+    F2: java.lang.String,
+    F3: java.lang.String,
+    F4: java.lang.String,
+    F5: java.lang.String,
+    F6: java.lang.String,
+    F7: java.lang.String,
+    F8: java.lang.String,
+    F9: java.lang.String,
+    HELP: java.lang.String,
+    HOME: java.lang.String,
+    INSERT: java.lang.String,
+    LEFT: java.lang.String,
+    META: java.lang.String,
+    MULTIPLY: java.lang.String,
+    NULL: java.lang.String,
+    NUMPAD0: java.lang.String,
+    NUMPAD1: java.lang.String,
+    NUMPAD2: java.lang.String,
+    NUMPAD3: java.lang.String,
+    NUMPAD4: java.lang.String,
+    NUMPAD5: java.lang.String,
+    NUMPAD6: java.lang.String,
+    NUMPAD7: java.lang.String,
+    NUMPAD8: java.lang.String,
+    NUMPAD9: java.lang.String,
+    PAGE_DOWN: java.lang.String,
+    PAGE_UP: java.lang.String,
+    PAUSE: java.lang.String,
+    RETURN: java.lang.String,
+    RIGHT: java.lang.String,
+    SEMICOLON: java.lang.String,
+    SEPARATOR: java.lang.String,
+    SHIFT: java.lang.String,
+    SPACE: java.lang.String,
+    SUBTRACT: java.lang.String,
+    TAB: java.lang.String,
+    UP: java.lang.String,
+    chord: js.Function1[/* repeated */ java.lang.String | IKey, java.lang.String]
+  ): IKey = {
+    val __obj = js.Dynamic.literal(ADD = ADD, ALT = ALT, ARROW_DOWN = ARROW_DOWN, ARROW_LEFT = ARROW_LEFT, ARROW_RIGHT = ARROW_RIGHT, ARROW_UP = ARROW_UP, BACK_SPACE = BACK_SPACE, CANCEL = CANCEL, CLEAR = CLEAR, COMMAND = COMMAND, CONTROL = CONTROL, DECIMAL = DECIMAL, DELETE = DELETE, DIVIDE = DIVIDE, DOWN = DOWN, END = END, ENTER = ENTER, EQUALS = EQUALS, ESCAPE = ESCAPE, F1 = F1, F10 = F10, F11 = F11, F12 = F12, F2 = F2, F3 = F3, F4 = F4, F5 = F5, F6 = F6, F7 = F7, F8 = F8, F9 = F9, HELP = HELP, HOME = HOME, INSERT = INSERT, LEFT = LEFT, META = META, MULTIPLY = MULTIPLY, NULL = NULL, NUMPAD0 = NUMPAD0, NUMPAD1 = NUMPAD1, NUMPAD2 = NUMPAD2, NUMPAD3 = NUMPAD3, NUMPAD4 = NUMPAD4, NUMPAD5 = NUMPAD5, NUMPAD6 = NUMPAD6, NUMPAD7 = NUMPAD7, NUMPAD8 = NUMPAD8, NUMPAD9 = NUMPAD9, PAGE_DOWN = PAGE_DOWN, PAGE_UP = PAGE_UP, PAUSE = PAUSE, RETURN = RETURN, RIGHT = RIGHT, SEMICOLON = SEMICOLON, SEPARATOR = SEPARATOR, SHIFT = SHIFT, SPACE = SPACE, SUBTRACT = SUBTRACT, TAB = TAB, UP = UP, chord = chord)
+  
+    __obj.asInstanceOf[IKey]
+  }
+}
+

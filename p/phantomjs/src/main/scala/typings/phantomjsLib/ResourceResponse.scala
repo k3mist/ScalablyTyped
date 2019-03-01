@@ -18,3 +18,24 @@ trait ResourceResponse extends js.Object {
   var url: java.lang.String
 }
 
+object ResourceResponse {
+  @scala.inline
+  def apply(
+    bodySize: scala.Double,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    id: scala.Double,
+    stage: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String,
+    time: stdLib.Date,
+    url: java.lang.String,
+    contentType: java.lang.String = null,
+    redirectURL: java.lang.String = null
+  ): ResourceResponse = {
+    val __obj = js.Dynamic.literal(bodySize = bodySize, headers = headers, id = id, stage = stage, status = status, statusText = statusText, time = time, url = url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    __obj.asInstanceOf[ResourceResponse]
+  }
+}
+

@@ -20,3 +20,13 @@ trait AttachmentsProperties extends ContentElementContentElementProperties {
   var displayType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttachmentsProperties {
+  @scala.inline
+  def apply(attachmentInfos: AttachmentInfoProperties = null, displayType: java.lang.String = null): AttachmentsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (attachmentInfos != null) __obj.updateDynamic("attachmentInfos")(attachmentInfos)
+    if (displayType != null) __obj.updateDynamic("displayType")(displayType)
+    __obj.asInstanceOf[AttachmentsProperties]
+  }
+}
+

@@ -22,3 +22,16 @@ trait ILockable extends js.Object {
   def unlock(): js.Promise[scala.Unit]
 }
 
+object ILockable {
+  @scala.inline
+  def apply(
+    lock: js.Function0[js.Promise[scala.Unit]],
+    try_lock: js.Function0[js.Promise[scala.Boolean]],
+    unlock: js.Function0[js.Promise[scala.Unit]]
+  ): ILockable = {
+    val __obj = js.Dynamic.literal(lock = lock, try_lock = try_lock, unlock = unlock)
+  
+    __obj.asInstanceOf[ILockable]
+  }
+}
+

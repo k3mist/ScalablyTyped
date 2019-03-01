@@ -55,3 +55,21 @@ trait XrmStatic extends js.Object {
   var WebApi: WebApi
 }
 
+object XrmStatic {
+  @scala.inline
+  def apply(
+    Device: Device,
+    Encoding: Encoding,
+    Mobile: Mobile,
+    Navigation: Navigation,
+    Page: Page,
+    Panel: Panel,
+    Utility: Utility,
+    WebApi: WebApi
+  ): XrmStatic = {
+    val __obj = js.Dynamic.literal(Device = Device, Encoding = Encoding, Mobile = Mobile, Navigation = Navigation, Page = Page, Panel = Panel, Utility = Utility, WebApi = WebApi)
+  
+    __obj.asInstanceOf[XrmStatic]
+  }
+}
+

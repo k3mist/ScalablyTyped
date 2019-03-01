@@ -21,3 +21,18 @@ trait PortalFeaturedGroups
   var title: java.lang.String
 }
 
+object PortalFeaturedGroups {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    owner: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String
+  ): PortalFeaturedGroups = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, owner = owner, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
+    __obj.asInstanceOf[PortalFeaturedGroups]
+  }
+}
+

@@ -127,3 +127,50 @@ trait XGraphicDevice
   def hasFullScreenMode(): scala.Boolean
 }
 
+object XGraphicDevice {
+  @scala.inline
+  def apply(
+    BufferController: XBufferController,
+    DeviceColorSpace: XColorSpace,
+    ParametricPolyPolygonFactory: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory,
+    PhysicalResolution: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D,
+    PhysicalSize: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D,
+    acquire: js.Function0[scala.Unit],
+    createCompatibleAlphaBitmap: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, XBitmap],
+    createCompatibleBezierPolyPolygon: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealBezierSegment2D]
+      ], 
+      XBezierPolyPolygon2D
+    ],
+    createCompatibleBitmap: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, XBitmap],
+    createCompatibleLinePolyPolygon: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+      ], 
+      XLinePolyPolygon2D
+    ],
+    createVolatileAlphaBitmap: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, 
+      XVolatileBitmap
+    ],
+    createVolatileBitmap: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, 
+      XVolatileBitmap
+    ],
+    enterFullScreenMode: js.Function1[scala.Boolean, scala.Boolean],
+    getBufferController: js.Function0[XBufferController],
+    getDeviceColorSpace: js.Function0[XColorSpace],
+    getParametricPolyPolygonFactory: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory],
+    getPhysicalResolution: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D],
+    getPhysicalSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D],
+    hasFullScreenMode: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGraphicDevice = {
+    val __obj = js.Dynamic.literal(BufferController = BufferController, DeviceColorSpace = DeviceColorSpace, ParametricPolyPolygonFactory = ParametricPolyPolygonFactory, PhysicalResolution = PhysicalResolution, PhysicalSize = PhysicalSize, acquire = acquire, createCompatibleAlphaBitmap = createCompatibleAlphaBitmap, createCompatibleBezierPolyPolygon = createCompatibleBezierPolyPolygon, createCompatibleBitmap = createCompatibleBitmap, createCompatibleLinePolyPolygon = createCompatibleLinePolyPolygon, createVolatileAlphaBitmap = createVolatileAlphaBitmap, createVolatileBitmap = createVolatileBitmap, enterFullScreenMode = enterFullScreenMode, getBufferController = getBufferController, getDeviceColorSpace = getDeviceColorSpace, getParametricPolyPolygonFactory = getParametricPolyPolygonFactory, getPhysicalResolution = getPhysicalResolution, getPhysicalSize = getPhysicalSize, hasFullScreenMode = hasFullScreenMode, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGraphicDevice]
+  }
+}
+

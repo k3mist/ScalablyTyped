@@ -28,3 +28,34 @@ trait ILoginAccount extends js.Object {
   ): scala.Unit
 }
 
+object ILoginAccount {
+  @scala.inline
+  def apply(
+    AccountName: java.lang.String,
+    AccountType: mfilesLib.MFilesNs.MFLoginAccountType,
+    Clone: js.Function0[ILoginAccount],
+    CloneFrom: js.Function1[ILoginAccount, scala.Unit],
+    DomainName: java.lang.String,
+    EmailAddress: java.lang.String,
+    Enabled: scala.Boolean,
+    FullName: java.lang.String,
+    LicenseType: mfilesLib.MFilesNs.MFLicenseType,
+    ServerRoles: mfilesLib.MFilesNs.MFLoginServerRole,
+    Set: js.Function7[
+      mfilesLib.MFilesNs.MFLoginAccountType, 
+      java.lang.String, 
+      java.lang.String, 
+      mfilesLib.MFilesNs.MFLoginServerRole, 
+      java.lang.String, 
+      java.lang.String, 
+      mfilesLib.MFilesNs.MFLicenseType, 
+      scala.Unit
+    ],
+    UserName: java.lang.String
+  ): ILoginAccount = {
+    val __obj = js.Dynamic.literal(AccountName = AccountName, AccountType = AccountType, Clone = Clone, CloneFrom = CloneFrom, DomainName = DomainName, EmailAddress = EmailAddress, Enabled = Enabled, FullName = FullName, LicenseType = LicenseType, ServerRoles = ServerRoles, Set = Set, UserName = UserName)
+  
+    __obj.asInstanceOf[ILoginAccount]
+  }
+}
+

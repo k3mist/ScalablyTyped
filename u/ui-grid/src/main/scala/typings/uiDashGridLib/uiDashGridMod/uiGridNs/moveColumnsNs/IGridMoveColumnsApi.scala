@@ -17,3 +17,15 @@ trait IGridMoveColumnsApi extends js.Object {
   def moveColumn(originalPosition: scala.Double, newPosition: scala.Double): scala.Unit
 }
 
+object IGridMoveColumnsApi {
+  @scala.inline
+  def apply(
+    moveColumn: js.Function2[scala.Double, scala.Double, scala.Unit],
+    on: uiDashGridLib.Anon_ColumnPositionChanged
+  ): IGridMoveColumnsApi = {
+    val __obj = js.Dynamic.literal(moveColumn = moveColumn, on = on)
+  
+    __obj.asInstanceOf[IGridMoveColumnsApi]
+  }
+}
+

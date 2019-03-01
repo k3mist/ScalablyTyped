@@ -21,3 +21,16 @@ trait XSidebarPanel extends js.Object {
   def getMinimalWidth(): scala.Double
 }
 
+object XSidebarPanel {
+  @scala.inline
+  def apply(
+    MinimalWidth: scala.Double,
+    getHeightForWidth: js.Function1[scala.Double, LayoutSize],
+    getMinimalWidth: js.Function0[scala.Double]
+  ): XSidebarPanel = {
+    val __obj = js.Dynamic.literal(MinimalWidth = MinimalWidth, getHeightForWidth = getHeightForWidth, getMinimalWidth = getMinimalWidth)
+  
+    __obj.asInstanceOf[XSidebarPanel]
+  }
+}
+

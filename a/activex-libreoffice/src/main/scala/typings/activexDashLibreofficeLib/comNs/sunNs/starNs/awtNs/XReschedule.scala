@@ -16,3 +16,17 @@ trait XReschedule
   def reschedule(): scala.Unit
 }
 
+object XReschedule {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reschedule: js.Function0[scala.Unit]
+  ): XReschedule = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, reschedule = reschedule)
+  
+    __obj.asInstanceOf[XReschedule]
+  }
+}
+

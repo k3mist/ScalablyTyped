@@ -10,3 +10,12 @@ trait Anon_Element extends js.Object {
   var item: js.Any
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(element: ckeditorLib.CKEDITORNs.domNs.element, item: js.Any): Anon_Element = {
+    val __obj = js.Dynamic.literal(element = element, item = item)
+  
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

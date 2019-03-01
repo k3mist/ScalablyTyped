@@ -22,3 +22,37 @@ trait ContainersResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[Container]
 }
 
+object ContainersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Container]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    environments: EnvironmentsResource,
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Container]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListContainersResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Container]
+    ],
+    version_headers: Version_headersResource,
+    versions: VersionsResource,
+    workspaces: WorkspacesResource
+  ): ContainersResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, environments = environments, get = get, list = list, update = update, version_headers = version_headers, versions = versions, workspaces = workspaces)
+  
+    __obj.asInstanceOf[ContainersResource]
+  }
+}
+

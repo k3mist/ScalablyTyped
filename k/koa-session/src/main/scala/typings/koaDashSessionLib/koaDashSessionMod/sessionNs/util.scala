@@ -17,3 +17,16 @@ trait util extends js.Object {
   def hash(sess: js.Any): java.lang.String
 }
 
+object util {
+  @scala.inline
+  def apply(
+    decode: js.Function1[java.lang.String, js.Object],
+    encode: js.Function1[js.Object, java.lang.String],
+    hash: js.Function1[js.Any, java.lang.String]
+  ): util = {
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, hash = hash)
+  
+    __obj.asInstanceOf[util]
+  }
+}
+

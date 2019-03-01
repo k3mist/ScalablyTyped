@@ -34,3 +34,16 @@ trait EndpointSubset extends js.Object {
   val ports: js.Array[EndpointPort]
 }
 
+object EndpointSubset {
+  @scala.inline
+  def apply(
+    addresses: js.Array[EndpointAddress],
+    notReadyAddresses: js.Array[EndpointAddress],
+    ports: js.Array[EndpointPort]
+  ): EndpointSubset = {
+    val __obj = js.Dynamic.literal(addresses = addresses, notReadyAddresses = notReadyAddresses, ports = ports)
+  
+    __obj.asInstanceOf[EndpointSubset]
+  }
+}
+

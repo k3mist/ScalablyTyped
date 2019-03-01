@@ -21,3 +21,26 @@ trait Sender extends js.Object {
   var TrackOpens: scala.Boolean
 }
 
+object Sender {
+  @scala.inline
+  def apply(
+    BounceHookUrl: scala.Boolean,
+    Color: java.lang.String,
+    DeliveryHookUrl: java.lang.String,
+    InboundDomain: java.lang.String,
+    InboundHookUrl: java.lang.String,
+    InboundSpamThreshold: scala.Double,
+    IncludeBounceContentInHook: scala.Boolean,
+    OpenHookUrl: scala.Boolean,
+    PostFirstOpenOnly: scala.Boolean,
+    RawEmailEnabled: scala.Boolean,
+    SmtpApiActivated: scala.Boolean,
+    TrackLinks: java.lang.String,
+    TrackOpens: scala.Boolean
+  ): Sender = {
+    val __obj = js.Dynamic.literal(BounceHookUrl = BounceHookUrl, Color = Color, DeliveryHookUrl = DeliveryHookUrl, InboundDomain = InboundDomain, InboundHookUrl = InboundHookUrl, InboundSpamThreshold = InboundSpamThreshold, IncludeBounceContentInHook = IncludeBounceContentInHook, OpenHookUrl = OpenHookUrl, PostFirstOpenOnly = PostFirstOpenOnly, RawEmailEnabled = RawEmailEnabled, SmtpApiActivated = SmtpApiActivated, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
+  
+    __obj.asInstanceOf[Sender]
+  }
+}
+

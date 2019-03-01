@@ -12,3 +12,12 @@ trait NavigationSetParamsActionPayload extends js.Object {
   var params: js.UndefOr[NavigationParams] = js.undefined
 }
 
+object NavigationSetParamsActionPayload {
+  @scala.inline
+  def apply(key: java.lang.String, params: NavigationParams = null): NavigationSetParamsActionPayload = {
+    val __obj = js.Dynamic.literal(key = key)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationSetParamsActionPayload]
+  }
+}
+

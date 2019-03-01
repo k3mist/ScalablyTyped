@@ -27,3 +27,18 @@ trait XDTDHandler
   ): scala.Unit
 }
 
+object XDTDHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    notationDecl: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unparsedEntityDecl: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit]
+  ): XDTDHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, notationDecl = notationDecl, queryInterface = queryInterface, release = release, unparsedEntityDecl = unparsedEntityDecl)
+  
+    __obj.asInstanceOf[XDTDHandler]
+  }
+}
+

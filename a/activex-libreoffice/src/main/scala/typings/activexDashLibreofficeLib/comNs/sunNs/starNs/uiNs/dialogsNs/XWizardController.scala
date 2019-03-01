@@ -39,3 +39,23 @@ trait XWizardController extends js.Object {
   def onDeactivatePage(PageId: scala.Double): scala.Unit
 }
 
+object XWizardController {
+  @scala.inline
+  def apply(
+    canAdvance: js.Function0[scala.Boolean],
+    confirmFinish: js.Function0[scala.Boolean],
+    createPage: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      scala.Double, 
+      XWizardPage
+    ],
+    getPageTitle: js.Function1[scala.Double, java.lang.String],
+    onActivatePage: js.Function1[scala.Double, scala.Unit],
+    onDeactivatePage: js.Function1[scala.Double, scala.Unit]
+  ): XWizardController = {
+    val __obj = js.Dynamic.literal(canAdvance = canAdvance, confirmFinish = confirmFinish, createPage = createPage, getPageTitle = getPageTitle, onActivatePage = onActivatePage, onDeactivatePage = onDeactivatePage)
+  
+    __obj.asInstanceOf[XWizardController]
+  }
+}
+

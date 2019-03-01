@@ -10,3 +10,12 @@ trait Navigator extends js.Object {
   var globalization: Globalization
 }
 
+object Navigator {
+  @scala.inline
+  def apply(globalization: Globalization): Navigator = {
+    val __obj = js.Dynamic.literal(globalization = globalization)
+  
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

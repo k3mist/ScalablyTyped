@@ -169,3 +169,51 @@ trait XSlideShowController extends js.Object {
   def stopSound(): scala.Unit
 }
 
+object XSlideShowController {
+  @scala.inline
+  def apply(
+    AlwaysOnTop: scala.Boolean,
+    CurrentSlide: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
+    CurrentSlideIndex: scala.Double,
+    MouseVisible: scala.Boolean,
+    NextSlideIndex: scala.Double,
+    PenColor: scala.Double,
+    PenWidth: scala.Double,
+    SlideCount: scala.Double,
+    SlideShow: XSlideShow,
+    UsePen: scala.Boolean,
+    activate: js.Function0[scala.Unit],
+    addSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    blankScreen: js.Function1[scala.Double, scala.Unit],
+    deactivate: js.Function0[scala.Unit],
+    getCurrentSlide: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    getCurrentSlideIndex: js.Function0[scala.Double],
+    getNextSlideIndex: js.Function0[scala.Double],
+    getSlideByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    getSlideCount: js.Function0[scala.Double],
+    getSlideShow: js.Function0[XSlideShow],
+    gotoBookmark: js.Function1[java.lang.String, scala.Unit],
+    gotoFirstSlide: js.Function0[scala.Unit],
+    gotoLastSlide: js.Function0[scala.Unit],
+    gotoNextEffect: js.Function0[scala.Unit],
+    gotoNextSlide: js.Function0[scala.Unit],
+    gotoPreviousEffect: js.Function0[scala.Unit],
+    gotoPreviousSlide: js.Function0[scala.Unit],
+    gotoSlide: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, scala.Unit],
+    gotoSlideIndex: js.Function1[scala.Double, scala.Unit],
+    isActive: js.Function0[scala.Boolean],
+    isEndless: js.Function0[scala.Boolean],
+    isFullScreen: js.Function0[scala.Boolean],
+    isPaused: js.Function0[scala.Boolean],
+    isRunning: js.Function0[scala.Boolean],
+    pause: js.Function0[scala.Unit],
+    removeSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    resume: js.Function0[scala.Unit],
+    stopSound: js.Function0[scala.Unit]
+  ): XSlideShowController = {
+    val __obj = js.Dynamic.literal(AlwaysOnTop = AlwaysOnTop, CurrentSlide = CurrentSlide, CurrentSlideIndex = CurrentSlideIndex, MouseVisible = MouseVisible, NextSlideIndex = NextSlideIndex, PenColor = PenColor, PenWidth = PenWidth, SlideCount = SlideCount, SlideShow = SlideShow, UsePen = UsePen, activate = activate, addSlideShowListener = addSlideShowListener, blankScreen = blankScreen, deactivate = deactivate, getCurrentSlide = getCurrentSlide, getCurrentSlideIndex = getCurrentSlideIndex, getNextSlideIndex = getNextSlideIndex, getSlideByIndex = getSlideByIndex, getSlideCount = getSlideCount, getSlideShow = getSlideShow, gotoBookmark = gotoBookmark, gotoFirstSlide = gotoFirstSlide, gotoLastSlide = gotoLastSlide, gotoNextEffect = gotoNextEffect, gotoNextSlide = gotoNextSlide, gotoPreviousEffect = gotoPreviousEffect, gotoPreviousSlide = gotoPreviousSlide, gotoSlide = gotoSlide, gotoSlideIndex = gotoSlideIndex, isActive = isActive, isEndless = isEndless, isFullScreen = isFullScreen, isPaused = isPaused, isRunning = isRunning, pause = pause, removeSlideShowListener = removeSlideShowListener, resume = resume, stopSound = stopSound)
+  
+    __obj.asInstanceOf[XSlideShowController]
+  }
+}
+

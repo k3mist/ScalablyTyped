@@ -11,3 +11,12 @@ trait TableCellDataGetterParams extends js.Object {
   var rowData: js.Any
 }
 
+object TableCellDataGetterParams {
+  @scala.inline
+  def apply(dataKey: java.lang.String, rowData: js.Any, columnData: js.Any = null): TableCellDataGetterParams = {
+    val __obj = js.Dynamic.literal(dataKey = dataKey, rowData = rowData)
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
+    __obj.asInstanceOf[TableCellDataGetterParams]
+  }
+}
+

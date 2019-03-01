@@ -16,3 +16,15 @@ trait TargetProperties extends js.Object {
   var Target: js.Any
 }
 
+object TargetProperties {
+  @scala.inline
+  def apply(
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    Target: js.Any
+  ): TargetProperties = {
+    val __obj = js.Dynamic.literal(Properties = Properties, Target = Target)
+  
+    __obj.asInstanceOf[TargetProperties]
+  }
+}
+

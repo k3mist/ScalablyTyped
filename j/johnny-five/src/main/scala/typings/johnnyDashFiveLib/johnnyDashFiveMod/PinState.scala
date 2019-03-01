@@ -13,3 +13,18 @@ trait PinState extends js.Object {
   var value: scala.Double
 }
 
+object PinState {
+  @scala.inline
+  def apply(
+    analogChannel: scala.Double,
+    mode: scala.Double,
+    report: scala.Double,
+    supportedModes: js.Array[scala.Double],
+    value: scala.Double
+  ): PinState = {
+    val __obj = js.Dynamic.literal(analogChannel = analogChannel, mode = mode, report = report, supportedModes = supportedModes, value = value)
+  
+    __obj.asInstanceOf[PinState]
+  }
+}
+

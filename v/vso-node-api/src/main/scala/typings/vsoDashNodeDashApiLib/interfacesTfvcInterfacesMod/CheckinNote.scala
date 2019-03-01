@@ -10,3 +10,12 @@ trait CheckinNote extends js.Object {
   var value: java.lang.String
 }
 
+object CheckinNote {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): CheckinNote = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[CheckinNote]
+  }
+}
+

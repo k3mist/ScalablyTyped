@@ -14,3 +14,12 @@ trait ErrorDetails extends js.Object {
   var fatal: scala.Boolean
 }
 
+object ErrorDetails {
+  @scala.inline
+  def apply(details: java.lang.String, error: java.lang.String, fatal: scala.Boolean): ErrorDetails = {
+    val __obj = js.Dynamic.literal(details = details, error = error, fatal = fatal)
+  
+    __obj.asInstanceOf[ErrorDetails]
+  }
+}
+

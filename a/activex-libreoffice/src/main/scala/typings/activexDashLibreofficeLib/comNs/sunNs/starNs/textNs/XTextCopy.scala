@@ -15,3 +15,17 @@ trait XTextCopy
   def copyText(xSource: XTextCopy): scala.Unit
 }
 
+object XTextCopy {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    copyText: js.Function1[XTextCopy, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextCopy = {
+    val __obj = js.Dynamic.literal(acquire = acquire, copyText = copyText, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextCopy]
+  }
+}
+

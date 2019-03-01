@@ -13,3 +13,18 @@ trait ViewModel extends js.Object {
   def propertyChanged(param0: PropertyChangedContext): scala.Unit
 }
 
+object ViewModel {
+  @scala.inline
+  def apply(
+    activated: js.Function1[ViewModelContext, js.Promise[_] | scala.Unit],
+    bindingsApplied: js.Function1[ViewModelContext, scala.Unit],
+    connected: js.Function1[ViewModelContext, scala.Unit],
+    disconnected: js.Function1[stdLib.Element, scala.Unit],
+    propertyChanged: js.Function1[PropertyChangedContext, scala.Unit]
+  ): ViewModel = {
+    val __obj = js.Dynamic.literal(activated = activated, bindingsApplied = bindingsApplied, connected = connected, disconnected = disconnected, propertyChanged = propertyChanged)
+  
+    __obj.asInstanceOf[ViewModel]
+  }
+}
+

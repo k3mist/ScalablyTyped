@@ -20,3 +20,25 @@ trait IPanorama extends js.Object {
   def getTileSize(): js.Array[scala.Double]
 }
 
+object IPanorama {
+  @scala.inline
+  def apply(
+    getAngularBBox: js.Function0[js.Array[scala.Double]],
+    getConnectionArrows: js.Function0[js.Array[IPanoramaConnectionArrow]],
+    getConnectionMarkers: js.Function0[js.Array[IPanoramaConnectionMarker]],
+    getCoordSystem: js.Function0[ICoordSystem],
+    getDefaultDirection: js.Function0[js.Array[scala.Double]],
+    getDefaultSpan: js.Function0[js.Array[scala.Double]],
+    getGraph: js.Function0[IPanoramaGraph | scala.Null],
+    getMarkers: js.Function0[js.Array[IPanoramaMarker]],
+    getName: js.Function0[java.lang.String],
+    getPosition: js.Function0[js.Array[scala.Double]],
+    getTileLevels: js.Function0[js.Array[IPanoramaTileLevel]],
+    getTileSize: js.Function0[js.Array[scala.Double]]
+  ): IPanorama = {
+    val __obj = js.Dynamic.literal(getAngularBBox = getAngularBBox, getConnectionArrows = getConnectionArrows, getConnectionMarkers = getConnectionMarkers, getCoordSystem = getCoordSystem, getDefaultDirection = getDefaultDirection, getDefaultSpan = getDefaultSpan, getGraph = getGraph, getMarkers = getMarkers, getName = getName, getPosition = getPosition, getTileLevels = getTileLevels, getTileSize = getTileSize)
+  
+    __obj.asInstanceOf[IPanorama]
+  }
+}
+

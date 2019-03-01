@@ -262,3 +262,67 @@ trait GaugeAxis extends js.Object {
   def value2angle(value: scala.Double): scala.Unit
 }
 
+object GaugeAxis {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[java.lang.String, js.Any, scala.Unit],
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    bandAlpha: scala.Double,
+    bandGradientRatio: js.Array[scala.Double],
+    bandOutlineAlpha: scala.Double,
+    bandOutlineColor: java.lang.String,
+    bandOutlineThickness: scala.Double,
+    bands: js.Array[amchartsLib.gaugebandMod.default],
+    bottomText: java.lang.String,
+    bottomTextBold: scala.Boolean,
+    bottomTextColor: java.lang.String,
+    bottomTextFontSize: scala.Double,
+    bottomTextYOffset: scala.Double,
+    centerX: js.Any,
+    centerY: js.Any,
+    color: java.lang.String,
+    endAngle: scala.Double,
+    endValue: scala.Double,
+    fontSize: scala.Double,
+    gridCount: scala.Double,
+    gridInside: scala.Boolean,
+    id: js.Any,
+    inside: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelFunction: js.Function1[scala.Double, java.lang.String],
+    labelOffset: scala.Double,
+    labelsEnabled: scala.Boolean,
+    listeners: js.Array[js.Object],
+    minorTickInterval: scala.Double,
+    minorTickLength: scala.Double,
+    radius: js.Any,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    setBottomText: js.Function1[java.lang.String, scala.Unit],
+    setTopText: js.Function1[java.lang.String, scala.Unit],
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    startAngle: scala.Double,
+    startValue: scala.Double,
+    tickAlpha: scala.Double,
+    tickColor: java.lang.String,
+    tickLength: scala.Double,
+    tickThickness: scala.Double,
+    topText: java.lang.String,
+    topTextBold: scala.Boolean,
+    topTextColor: java.lang.String,
+    topTextFontSize: scala.Double,
+    topTextYOffset: scala.Double,
+    unit: java.lang.String,
+    unitPosition: java.lang.String,
+    usePrefixes: scala.Boolean,
+    value2angle: js.Function1[scala.Double, scala.Unit],
+    valueInterval: scala.Double
+  ): GaugeAxis = {
+    val __obj = js.Dynamic.literal(addListener = addListener, axisAlpha = axisAlpha, axisColor = axisColor, axisThickness = axisThickness, bandAlpha = bandAlpha, bandGradientRatio = bandGradientRatio, bandOutlineAlpha = bandOutlineAlpha, bandOutlineColor = bandOutlineColor, bandOutlineThickness = bandOutlineThickness, bands = bands, bottomText = bottomText, bottomTextBold = bottomTextBold, bottomTextColor = bottomTextColor, bottomTextFontSize = bottomTextFontSize, bottomTextYOffset = bottomTextYOffset, centerX = centerX, centerY = centerY, color = color, endAngle = endAngle, endValue = endValue, fontSize = fontSize, gridCount = gridCount, gridInside = gridInside, id = id, inside = inside, labelFrequency = labelFrequency, labelFunction = labelFunction, labelOffset = labelOffset, labelsEnabled = labelsEnabled, listeners = listeners, minorTickInterval = minorTickInterval, minorTickLength = minorTickLength, radius = radius, removeListener = removeListener, setBottomText = setBottomText, setTopText = setTopText, showFirstLabel = showFirstLabel, showLastLabel = showLastLabel, startAngle = startAngle, startValue = startValue, tickAlpha = tickAlpha, tickColor = tickColor, tickLength = tickLength, tickThickness = tickThickness, topText = topText, topTextBold = topTextBold, topTextColor = topTextColor, topTextFontSize = topTextFontSize, topTextYOffset = topTextYOffset, unit = unit, unitPosition = unitPosition, usePrefixes = usePrefixes, value2angle = value2angle, valueInterval = valueInterval)
+  
+    __obj.asInstanceOf[GaugeAxis]
+  }
+}
+

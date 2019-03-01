@@ -17,3 +17,20 @@ trait MacroExpander
   extends XMacroExpander
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 
+object MacroExpander {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    expandMacros: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): MacroExpander = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, expandMacros = expandMacros, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[MacroExpander]
+  }
+}
+

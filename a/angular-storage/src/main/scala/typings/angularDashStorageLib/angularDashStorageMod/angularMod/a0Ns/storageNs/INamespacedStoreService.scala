@@ -28,3 +28,16 @@ trait INamespacedStoreService extends js.Object {
   def set(name: java.lang.String, value: js.Any): scala.Unit
 }
 
+object INamespacedStoreService {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.Any],
+    remove: js.Function1[java.lang.String, scala.Unit],
+    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): INamespacedStoreService = {
+    val __obj = js.Dynamic.literal(get = get, remove = remove, set = set)
+  
+    __obj.asInstanceOf[INamespacedStoreService]
+  }
+}
+

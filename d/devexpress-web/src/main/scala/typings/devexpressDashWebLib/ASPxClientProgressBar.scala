@@ -57,3 +57,44 @@ trait ASPxClientProgressBar extends ASPxClientEditBase {
   def SetPosition(position: scala.Double): scala.Unit
 }
 
+object ASPxClientProgressBar {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    GetCaption: js.Function0[java.lang.String],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetDisplayText: js.Function0[java.lang.String],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetMaximum: js.Function0[scala.Double],
+    GetMinimum: js.Function0[scala.Double],
+    GetParentControl: js.Function0[js.Object],
+    GetPercent: js.Function0[scala.Double],
+    GetPosition: js.Function0[scala.Double],
+    GetValue: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetCaption: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetCustomDisplayFormat: js.Function1[java.lang.String, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetMaximum: js.Function1[scala.Double, scala.Unit],
+    SetMinMaxValues: js.Function2[scala.Double, scala.Double, scala.Unit],
+    SetMinimum: js.Function1[scala.Double, scala.Unit],
+    SetPosition: js.Function1[scala.Double, scala.Unit],
+    SetValue: js.Function1[js.Object, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientProgressBar = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetCaption = GetCaption, GetClientVisible = GetClientVisible, GetDisplayText = GetDisplayText, GetEnabled = GetEnabled, GetHeight = GetHeight, GetMainElement = GetMainElement, GetMaximum = GetMaximum, GetMinimum = GetMinimum, GetParentControl = GetParentControl, GetPercent = GetPercent, GetPosition = GetPosition, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetCaption = SetCaption, SetClientVisible = SetClientVisible, SetCustomDisplayFormat = SetCustomDisplayFormat, SetEnabled = SetEnabled, SetHeight = SetHeight, SetMaximum = SetMaximum, SetMinMaxValues = SetMinMaxValues, SetMinimum = SetMinimum, SetPosition = SetPosition, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
+    __obj.asInstanceOf[ASPxClientProgressBar]
+  }
+}
+

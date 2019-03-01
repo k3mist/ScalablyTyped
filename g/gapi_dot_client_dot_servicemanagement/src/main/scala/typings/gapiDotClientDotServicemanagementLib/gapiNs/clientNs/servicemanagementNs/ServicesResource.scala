@@ -111,3 +111,64 @@ trait ServicesResource extends js.Object {
   def undelete(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ServicesResource {
+  @scala.inline
+  def apply(
+    configs: ConfigsResource,
+    consumers: ConsumersResource,
+    create: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    disable: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    enable: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    generateConfigReport: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GenerateConfigReportResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedService]
+    ],
+    getConfig: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackConfigId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Service]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackConsumerId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
+    ],
+    rollouts: RolloutsResource,
+    setIamPolicy: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ServicesResource = {
+    val __obj = js.Dynamic.literal(configs = configs, consumers = consumers, create = create, delete = delete, disable = disable, enable = enable, generateConfigReport = generateConfigReport, get = get, getConfig = getConfig, getIamPolicy = getIamPolicy, list = list, rollouts = rollouts, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, undelete = undelete)
+  
+    __obj.asInstanceOf[ServicesResource]
+  }
+}
+

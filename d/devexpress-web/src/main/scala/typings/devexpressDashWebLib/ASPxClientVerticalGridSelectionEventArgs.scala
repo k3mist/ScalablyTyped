@@ -31,3 +31,18 @@ trait ASPxClientVerticalGridSelectionEventArgs extends ASPxClientProcessingModeE
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridSelectionEventArgs {
+  @scala.inline
+  def apply(
+    isAllRecordsOnPage: scala.Boolean,
+    isChangedOnServer: scala.Boolean,
+    isSelected: scala.Boolean,
+    processOnServer: scala.Boolean,
+    visibleIndex: scala.Double
+  ): ASPxClientVerticalGridSelectionEventArgs = {
+    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridSelectionEventArgs]
+  }
+}
+

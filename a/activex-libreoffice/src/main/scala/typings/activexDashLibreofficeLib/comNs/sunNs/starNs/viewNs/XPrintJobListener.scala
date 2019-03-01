@@ -23,3 +23,18 @@ trait XPrintJobListener
   def printJobEvent(Event: PrintJobEvent): scala.Unit
 }
 
+object XPrintJobListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    printJobEvent: js.Function1[PrintJobEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPrintJobListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, printJobEvent = printJobEvent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPrintJobListener]
+  }
+}
+

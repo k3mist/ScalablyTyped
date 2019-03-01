@@ -13,3 +13,18 @@ trait LexGenericAttachment extends js.Object {
   var title: java.lang.String
 }
 
+object LexGenericAttachment {
+  @scala.inline
+  def apply(
+    attachmentLinkUrl: java.lang.String,
+    buttons: js.Array[awsDashLambdaLib.Anon_Text],
+    imageUrl: java.lang.String,
+    subTitle: java.lang.String,
+    title: java.lang.String
+  ): LexGenericAttachment = {
+    val __obj = js.Dynamic.literal(attachmentLinkUrl = attachmentLinkUrl, buttons = buttons, imageUrl = imageUrl, subTitle = subTitle, title = title)
+  
+    __obj.asInstanceOf[LexGenericAttachment]
+  }
+}
+

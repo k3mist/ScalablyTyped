@@ -12,3 +12,18 @@ trait GraphQLInterfaceTypeConfig extends js.Object {
   var resolveType: js.UndefOr[GraphQLTypeResolveFn] = js.undefined
 }
 
+object GraphQLInterfaceTypeConfig {
+  @scala.inline
+  def apply(
+    fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap,
+    name: java.lang.String,
+    description: java.lang.String = null,
+    resolveType: GraphQLTypeResolveFn = null
+  ): GraphQLInterfaceTypeConfig = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
+    __obj.asInstanceOf[GraphQLInterfaceTypeConfig]
+  }
+}
+

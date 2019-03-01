@@ -34,3 +34,36 @@ trait IHarness extends js.Object {
   def start(descriptors: js.Any*): scala.Unit
 }
 
+object IHarness {
+  @scala.inline
+  def apply(
+    alsoPreload: js.Array[_],
+    autoCheckGlobals: scala.Boolean,
+    cachePreload: scala.Boolean,
+    configure: js.Function1[js.Any, scala.Unit],
+    defaultTimeout: scala.Boolean,
+    disableColoring: scala.Boolean,
+    expectedGlobals: js.Array[java.lang.String],
+    isReadyTimeout: scala.Double,
+    keepNLastResults: scala.Double,
+    keepResults: scala.Boolean,
+    listenters: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ stdLib.Event, /* repeated */ js.Any, scala.Unit]],
+    maxThreads: scala.Double,
+    needDone: scala.Boolean,
+    overrideSetTimeout: scala.Boolean,
+    pauseBetweenTests: scala.Double,
+    preload: js.Array[_],
+    runCore: java.lang.String,
+    start: js.Function1[/* repeated */ js.Any, scala.Unit],
+    subTestTimeout: scala.Double,
+    testClass: ITest,
+    title: java.lang.String,
+    transparentEx: scala.Boolean,
+    waitForTimeout: scala.Double
+  ): IHarness = {
+    val __obj = js.Dynamic.literal(alsoPreload = alsoPreload, autoCheckGlobals = autoCheckGlobals, cachePreload = cachePreload, configure = configure, defaultTimeout = defaultTimeout, disableColoring = disableColoring, expectedGlobals = expectedGlobals, isReadyTimeout = isReadyTimeout, keepNLastResults = keepNLastResults, keepResults = keepResults, listenters = listenters, maxThreads = maxThreads, needDone = needDone, overrideSetTimeout = overrideSetTimeout, pauseBetweenTests = pauseBetweenTests, preload = preload, runCore = runCore, start = start, subTestTimeout = subTestTimeout, testClass = testClass, title = title, transparentEx = transparentEx, waitForTimeout = waitForTimeout)
+  
+    __obj.asInstanceOf[IHarness]
+  }
+}
+

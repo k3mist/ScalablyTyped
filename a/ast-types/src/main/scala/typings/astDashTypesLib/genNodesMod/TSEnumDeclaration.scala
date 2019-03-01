@@ -20,3 +20,19 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumDeclaration
 }
 
+object TSEnumDeclaration {
+  @scala.inline
+  def apply(
+    const: scala.Boolean,
+    declare: scala.Boolean,
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    members: js.Array[astDashTypesLib.genKindsMod.TSEnumMemberKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumDeclaration,
+    initializer: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): TSEnumDeclaration = {
+    val __obj = js.Dynamic.literal(const = const, declare = declare, id = id, members = members, `type` = `type`)
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
+    __obj.asInstanceOf[TSEnumDeclaration]
+  }
+}
+

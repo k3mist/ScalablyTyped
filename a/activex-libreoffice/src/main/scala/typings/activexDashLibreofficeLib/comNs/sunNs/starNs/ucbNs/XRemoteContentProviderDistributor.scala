@@ -32,3 +32,19 @@ trait XRemoteContentProviderDistributor
   def disconnectFromRemoteAcceptor(Url: java.lang.String): scala.Boolean
 }
 
+object XRemoteContentProviderDistributor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    connectToRemoteAcceptor: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    disconnectFromAll: js.Function0[scala.Unit],
+    disconnectFromRemoteAcceptor: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRemoteContentProviderDistributor = {
+    val __obj = js.Dynamic.literal(acquire = acquire, connectToRemoteAcceptor = connectToRemoteAcceptor, disconnectFromAll = disconnectFromAll, disconnectFromRemoteAcceptor = disconnectFromRemoteAcceptor, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XRemoteContentProviderDistributor]
+  }
+}
+

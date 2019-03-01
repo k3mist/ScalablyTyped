@@ -26,3 +26,17 @@ trait Anon_Dueby extends js.Object {
   var submission_count: scala.Double
 }
 
+object Anon_Dueby {
+  @scala.inline
+  def apply(
+    due_by: scala.Double,
+    has_evidence: scala.Boolean,
+    past_due: scala.Boolean,
+    submission_count: scala.Double
+  ): Anon_Dueby = {
+    val __obj = js.Dynamic.literal(due_by = due_by, has_evidence = has_evidence, past_due = past_due, submission_count = submission_count)
+  
+    __obj.asInstanceOf[Anon_Dueby]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Anon_Altitude extends js.Object {
   var speed: scala.Double
 }
 
+object Anon_Altitude {
+  @scala.inline
+  def apply(
+    altitude: scala.Double,
+    heading: scala.Double,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    speed: scala.Double
+  ): Anon_Altitude = {
+    val __obj = js.Dynamic.literal(altitude = altitude, heading = heading, latitude = latitude, longitude = longitude, speed = speed)
+  
+    __obj.asInstanceOf[Anon_Altitude]
+  }
+}
+

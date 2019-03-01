@@ -44,3 +44,21 @@ trait XSubToolbarController
   def updateImage(): scala.Unit
 }
 
+object XSubToolbarController {
+  @scala.inline
+  def apply(
+    SubToolbarName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    functionSelected: js.Function1[java.lang.String, scala.Unit],
+    getSubToolbarName: js.Function0[java.lang.String],
+    opensSubToolbar: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateImage: js.Function0[scala.Unit]
+  ): XSubToolbarController = {
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, updateImage = updateImage)
+  
+    __obj.asInstanceOf[XSubToolbarController]
+  }
+}
+

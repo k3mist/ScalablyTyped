@@ -20,3 +20,12 @@ trait XamlBuildControllerReference extends js.Object {
   var url: java.lang.String
 }
 
+object XamlBuildControllerReference {
+  @scala.inline
+  def apply(id: scala.Double, name: java.lang.String, url: java.lang.String): XamlBuildControllerReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[XamlBuildControllerReference]
+  }
+}
+

@@ -11,3 +11,16 @@ trait IPnpObjectUpdate extends js.Object {
   var `type`: PnpObjectType
 }
 
+object IPnpObjectUpdate {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _],
+    `type`: PnpObjectType
+  ): IPnpObjectUpdate = {
+    val __obj = js.Dynamic.literal(id = id, properties = properties, `type` = `type`)
+  
+    __obj.asInstanceOf[IPnpObjectUpdate]
+  }
+}
+

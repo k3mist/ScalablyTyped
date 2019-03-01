@@ -19,3 +19,17 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | scala.Null
 }
 
+object TypeAlias {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    right: astDashTypesLib.genKindsMod.FlowTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TypeAlias,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
+  ): TypeAlias = {
+    val __obj = js.Dynamic.literal(id = id, right = right, `type` = `type`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TypeAlias]
+  }
+}
+

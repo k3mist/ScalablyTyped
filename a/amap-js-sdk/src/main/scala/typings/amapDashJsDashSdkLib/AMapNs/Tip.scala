@@ -11,3 +11,12 @@ trait Tip extends js.Object {
   var name: java.lang.String
 }
 
+object Tip {
+  @scala.inline
+  def apply(adcode: java.lang.String, district: java.lang.String, name: java.lang.String): Tip = {
+    val __obj = js.Dynamic.literal(adcode = adcode, district = district, name = name)
+  
+    __obj.asInstanceOf[Tip]
+  }
+}
+

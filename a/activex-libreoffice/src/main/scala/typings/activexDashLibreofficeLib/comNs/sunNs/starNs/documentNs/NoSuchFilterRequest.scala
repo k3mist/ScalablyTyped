@@ -24,3 +24,16 @@ trait NoSuchFilterRequest
   var URL: java.lang.String
 }
 
+object NoSuchFilterRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    URL: java.lang.String
+  ): NoSuchFilterRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, URL = URL)
+  
+    __obj.asInstanceOf[NoSuchFilterRequest]
+  }
+}
+

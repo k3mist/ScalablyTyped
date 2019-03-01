@@ -12,3 +12,18 @@ trait DirectiveNode extends ASTNode {
   val name: NameNode
 }
 
+object DirectiveNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.Directive,
+    name: NameNode,
+    arguments: js.Array[ArgumentNode] = null,
+    loc: Location = null
+  ): DirectiveNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[DirectiveNode]
+  }
+}
+

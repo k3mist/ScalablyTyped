@@ -11,3 +11,12 @@ trait ColumnDef extends js.Object {
   var foreignKey: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnDef {
+  @scala.inline
+  def apply(constraints: java.lang.String, foreignKey: js.Any = null): ColumnDef = {
+    val __obj = js.Dynamic.literal(constraints = constraints)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
+    __obj.asInstanceOf[ColumnDef]
+  }
+}
+

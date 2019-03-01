@@ -10,3 +10,12 @@ trait Anon_RecordColumnDelimiter extends js.Object {
   var recordRowDelimiter: java.lang.String
 }
 
+object Anon_RecordColumnDelimiter {
+  @scala.inline
+  def apply(recordColumnDelimiter: java.lang.String, recordRowDelimiter: java.lang.String): Anon_RecordColumnDelimiter = {
+    val __obj = js.Dynamic.literal(recordColumnDelimiter = recordColumnDelimiter, recordRowDelimiter = recordRowDelimiter)
+  
+    __obj.asInstanceOf[Anon_RecordColumnDelimiter]
+  }
+}
+

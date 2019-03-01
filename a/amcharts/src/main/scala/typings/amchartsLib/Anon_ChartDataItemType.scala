@@ -12,3 +12,16 @@ trait Anon_ChartDataItemType extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_ChartDataItemType {
+  @scala.inline
+  def apply(
+    chart: amchartsLib.amchartMod.default,
+    dataItem: amchartsLib.sliceMod.default,
+    `type`: java.lang.String
+  ): Anon_ChartDataItemType = {
+    val __obj = js.Dynamic.literal(chart = chart, dataItem = dataItem, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ChartDataItemType]
+  }
+}
+

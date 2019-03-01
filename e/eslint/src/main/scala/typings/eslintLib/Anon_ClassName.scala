@@ -12,3 +12,16 @@ trait Anon_ClassName
   var `type`: eslintLib.eslintLibStrings.ClassName
 }
 
+object Anon_ClassName {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.ClassDeclaration | estreeLib.estreeMod.ClassExpression,
+    parent: scala.Null,
+    `type`: eslintLib.eslintLibStrings.ClassName
+  ): Anon_ClassName = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ClassName]
+  }
+}
+

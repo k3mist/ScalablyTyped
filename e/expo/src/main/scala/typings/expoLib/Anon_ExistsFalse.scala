@@ -11,3 +11,12 @@ trait Anon_ExistsFalse
   var isDirectory: expoLib.expoLibNumbers.`false`
 }
 
+object Anon_ExistsFalse {
+  @scala.inline
+  def apply(exists: expoLib.expoLibNumbers.`false`, isDirectory: expoLib.expoLibNumbers.`false`): Anon_ExistsFalse = {
+    val __obj = js.Dynamic.literal(exists = exists, isDirectory = isDirectory)
+  
+    __obj.asInstanceOf[Anon_ExistsFalse]
+  }
+}
+

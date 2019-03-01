@@ -28,3 +28,18 @@ trait SubscriptionRequest
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.SubscriptionRequestType
 }
 
+object SubscriptionRequest {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.SubscriptionRequestType,
+    message: java.lang.String = null,
+    resource: java.lang.String = null
+  ): SubscriptionRequest = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[SubscriptionRequest]
+  }
+}
+

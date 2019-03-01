@@ -13,3 +13,18 @@ trait SmoothQuadraticCurveToCommand extends js.Object {
   var y: scala.Double
 }
 
+object SmoothQuadraticCurveToCommand {
+  @scala.inline
+  def apply(
+    code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.t | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.T,
+    command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`smooth quadratic curveto`,
+    x: scala.Double,
+    y: scala.Double,
+    relative: js.UndefOr[scala.Boolean] = js.undefined
+  ): SmoothQuadraticCurveToCommand = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command, x = x, y = y)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    __obj.asInstanceOf[SmoothQuadraticCurveToCommand]
+  }
+}
+

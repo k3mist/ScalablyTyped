@@ -19,3 +19,24 @@ trait AttachmentCardOptions extends js.Object {
   def previewOnClick(event: PreviewClickEvent): scala.Unit
 }
 
+object AttachmentCardOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor],
+    description: java.lang.String,
+    failoverPreviewIconUrl: java.lang.String,
+    fileIconImageUrl: java.lang.String,
+    previewOnClick: js.Function1[PreviewClickEvent, scala.Unit],
+    previewThumbnailUrl: java.lang.String,
+    previewUrl: java.lang.String,
+    title: java.lang.String,
+    foldColor: java.lang.String = null,
+    mimeType: java.lang.String = null
+  ): AttachmentCardOptions = {
+    val __obj = js.Dynamic.literal(buttons = buttons, description = description, failoverPreviewIconUrl = failoverPreviewIconUrl, fileIconImageUrl = fileIconImageUrl, previewOnClick = previewOnClick, previewThumbnailUrl = previewThumbnailUrl, previewUrl = previewUrl, title = title)
+    if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[AttachmentCardOptions]
+  }
+}
+

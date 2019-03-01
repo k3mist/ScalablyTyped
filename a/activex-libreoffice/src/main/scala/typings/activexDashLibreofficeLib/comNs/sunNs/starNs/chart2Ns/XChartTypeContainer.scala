@@ -22,3 +22,21 @@ trait XChartTypeContainer
   def setChartTypes(aChartTypes: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType]): scala.Unit
 }
 
+object XChartTypeContainer {
+  @scala.inline
+  def apply(
+    ChartTypes: activexDashInteropLib.SafeArray[XChartType],
+    acquire: js.Function0[scala.Unit],
+    addChartType: js.Function1[XChartType, scala.Unit],
+    getChartTypes: js.Function0[activexDashInteropLib.SafeArray[XChartType]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChartType: js.Function1[XChartType, scala.Unit],
+    setChartTypes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], scala.Unit]
+  ): XChartTypeContainer = {
+    val __obj = js.Dynamic.literal(ChartTypes = ChartTypes, acquire = acquire, addChartType = addChartType, getChartTypes = getChartTypes, queryInterface = queryInterface, release = release, removeChartType = removeChartType, setChartTypes = setChartTypes)
+  
+    __obj.asInstanceOf[XChartTypeContainer]
+  }
+}
+

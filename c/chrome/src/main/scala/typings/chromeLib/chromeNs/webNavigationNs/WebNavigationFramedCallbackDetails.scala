@@ -15,3 +15,18 @@ trait WebNavigationFramedCallbackDetails extends WebNavigationUrlCallbackDetails
   var processId: scala.Double
 }
 
+object WebNavigationFramedCallbackDetails {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    processId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String
+  ): WebNavigationFramedCallbackDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, processId = processId, tabId = tabId, timeStamp = timeStamp, url = url)
+  
+    __obj.asInstanceOf[WebNavigationFramedCallbackDetails]
+  }
+}
+

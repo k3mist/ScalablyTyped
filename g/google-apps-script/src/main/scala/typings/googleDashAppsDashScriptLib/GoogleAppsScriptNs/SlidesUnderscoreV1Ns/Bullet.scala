@@ -17,3 +17,17 @@ trait Bullet extends js.Object {
   var nesting_level: scala.Double
 }
 
+object Bullet {
+  @scala.inline
+  def apply(
+    bullet_style: TextStyle,
+    glyph: java.lang.String,
+    list_id: java.lang.String,
+    nesting_level: scala.Double
+  ): Bullet = {
+    val __obj = js.Dynamic.literal(bullet_style = bullet_style, glyph = glyph, list_id = list_id, nesting_level = nesting_level)
+  
+    __obj.asInstanceOf[Bullet]
+  }
+}
+

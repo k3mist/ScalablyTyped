@@ -12,3 +12,17 @@ trait Bundle extends js.Object {
   var publicPath: java.lang.String
 }
 
+object Bundle {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    id: java.lang.String,
+    publicPath: java.lang.String,
+    name: java.lang.String = null
+  ): Bundle = {
+    val __obj = js.Dynamic.literal(file = file, id = id, publicPath = publicPath)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Bundle]
+  }
+}
+

@@ -12,3 +12,12 @@ trait CropboxArea extends js.Object {
   var cropY: scala.Double
 }
 
+object CropboxArea {
+  @scala.inline
+  def apply(cropH: scala.Double, cropW: scala.Double, cropX: scala.Double, cropY: scala.Double): CropboxArea = {
+    val __obj = js.Dynamic.literal(cropH = cropH, cropW = cropW, cropX = cropX, cropY = cropY)
+  
+    __obj.asInstanceOf[CropboxArea]
+  }
+}
+

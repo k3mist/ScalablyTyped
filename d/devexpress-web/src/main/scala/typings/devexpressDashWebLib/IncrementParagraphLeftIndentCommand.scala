@@ -15,3 +15,12 @@ trait IncrementParagraphLeftIndentCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object IncrementParagraphLeftIndentCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): IncrementParagraphLeftIndentCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[IncrementParagraphLeftIndentCommand]
+  }
+}
+

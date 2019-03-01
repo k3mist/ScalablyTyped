@@ -33,3 +33,20 @@ trait CompositeDraftDecorator extends js.Object {
   def getPropsForKey(key: java.lang.String): js.Object
 }
 
+object CompositeDraftDecorator {
+  @scala.inline
+  def apply(
+    getComponentForKey: js.Function1[java.lang.String, js.Function],
+    getDecorations: js.Function2[
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState, 
+      immutableLib.immutableMod.List[java.lang.String]
+    ],
+    getPropsForKey: js.Function1[java.lang.String, js.Object]
+  ): CompositeDraftDecorator = {
+    val __obj = js.Dynamic.literal(getComponentForKey = getComponentForKey, getDecorations = getDecorations, getPropsForKey = getPropsForKey)
+  
+    __obj.asInstanceOf[CompositeDraftDecorator]
+  }
+}
+

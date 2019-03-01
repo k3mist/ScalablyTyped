@@ -13,3 +13,12 @@ trait ReceivedMessageFromWorkerEventDataType extends js.Object {
   var sessionId: SessionID
 }
 
+object ReceivedMessageFromWorkerEventDataType {
+  @scala.inline
+  def apply(message: java.lang.String, sessionId: SessionID): ReceivedMessageFromWorkerEventDataType = {
+    val __obj = js.Dynamic.literal(message = message, sessionId = sessionId)
+  
+    __obj.asInstanceOf[ReceivedMessageFromWorkerEventDataType]
+  }
+}
+

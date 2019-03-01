@@ -16,3 +16,20 @@ trait cssClasses
   var SCROLL_LOCK: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog-scroll-lock`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    ACCEPT_BTN: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog__footer__button--accept`,
+    ANIMATING: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog--animating`,
+    BACKDROP: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog__backdrop`,
+    CANCEL_BTN: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog__footer__button--cancel`,
+    OPEN: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog--open`,
+    ROOT: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog`,
+    SCROLL_LOCK: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog-scroll-lock`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(ACCEPT_BTN = ACCEPT_BTN, ANIMATING = ANIMATING, BACKDROP = BACKDROP, CANCEL_BTN = CANCEL_BTN, OPEN = OPEN, ROOT = ROOT, SCROLL_LOCK = SCROLL_LOCK)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

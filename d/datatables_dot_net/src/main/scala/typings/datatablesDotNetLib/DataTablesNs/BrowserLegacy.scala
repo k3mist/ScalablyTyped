@@ -12,3 +12,17 @@ trait BrowserLegacy extends js.Object {
   var barWidth: scala.Double
 }
 
+object BrowserLegacy {
+  @scala.inline
+  def apply(
+    bBounding: scala.Boolean,
+    bScrollOversize: scala.Boolean,
+    bScrollbarLeft: scala.Boolean,
+    barWidth: scala.Double
+  ): BrowserLegacy = {
+    val __obj = js.Dynamic.literal(bBounding = bBounding, bScrollOversize = bScrollOversize, bScrollbarLeft = bScrollbarLeft, barWidth = barWidth)
+  
+    __obj.asInstanceOf[BrowserLegacy]
+  }
+}
+

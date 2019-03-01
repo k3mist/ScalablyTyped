@@ -11,3 +11,13 @@ trait BrowserRouterArgs extends js.Object {
   var routes: Routes
 }
 
+object BrowserRouterArgs {
+  @scala.inline
+  def apply(routes: Routes, basename: java.lang.String = null, history: History = null): BrowserRouterArgs = {
+    val __obj = js.Dynamic.literal(routes = routes)
+    if (basename != null) __obj.updateDynamic("basename")(basename)
+    if (history != null) __obj.updateDynamic("history")(history)
+    __obj.asInstanceOf[BrowserRouterArgs]
+  }
+}
+

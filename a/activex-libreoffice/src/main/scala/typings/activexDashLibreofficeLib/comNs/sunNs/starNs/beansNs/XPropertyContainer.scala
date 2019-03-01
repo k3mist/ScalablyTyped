@@ -30,3 +30,18 @@ trait XPropertyContainer
   def removeProperty(Name: java.lang.String): scala.Unit
 }
 
+object XPropertyContainer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addProperty: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeProperty: js.Function1[java.lang.String, scala.Unit]
+  ): XPropertyContainer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addProperty = addProperty, queryInterface = queryInterface, release = release, removeProperty = removeProperty)
+  
+    __obj.asInstanceOf[XPropertyContainer]
+  }
+}
+

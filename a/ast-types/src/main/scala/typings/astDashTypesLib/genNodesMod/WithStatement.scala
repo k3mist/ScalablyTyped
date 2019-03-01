@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.WithStatement
 }
 
+object WithStatement {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.WithStatement
+  ): WithStatement = {
+    val __obj = js.Dynamic.literal(body = body, `object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[WithStatement]
+  }
+}
+

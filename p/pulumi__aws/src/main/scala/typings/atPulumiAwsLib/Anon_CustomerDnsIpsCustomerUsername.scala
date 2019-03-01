@@ -12,3 +12,17 @@ trait Anon_CustomerDnsIpsCustomerUsername extends js.Object {
   var vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_CustomerDnsIpsCustomerUsername {
+  @scala.inline
+  def apply(
+    customerDnsIps: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    customerUsername: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): Anon_CustomerDnsIpsCustomerUsername = {
+    val __obj = js.Dynamic.literal(customerDnsIps = customerDnsIps.asInstanceOf[js.Any], customerUsername = customerUsername.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_CustomerDnsIpsCustomerUsername]
+  }
+}
+

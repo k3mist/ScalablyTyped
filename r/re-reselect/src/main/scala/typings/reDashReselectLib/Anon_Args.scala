@@ -12,3 +12,21 @@ trait Anon_Args[S, R, C, D] extends js.Object {
   def removeMatchingSelector(state: S, args: js.Any*): scala.Unit
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply[S, R, C, D](
+    cache: reDashReselectLib.reDashReselectMod.ICacheObject,
+    clearCache: js.Function0[scala.Unit],
+    getMatchingSelector: js.Function2[
+      S, 
+      /* repeated */ js.Any, 
+      reDashReselectLib.reDashReselectMod.OutputSelector[S, R, C, D]
+    ],
+    removeMatchingSelector: js.Function2[S, /* repeated */ js.Any, scala.Unit]
+  ): Anon_Args[S, R, C, D] = {
+    val __obj = js.Dynamic.literal(cache = cache, clearCache = clearCache, getMatchingSelector = getMatchingSelector, removeMatchingSelector = removeMatchingSelector)
+  
+    __obj.asInstanceOf[Anon_Args[S, R, C, D]]
+  }
+}
+

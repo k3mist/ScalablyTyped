@@ -19,3 +19,12 @@ trait IMeasure extends js.Object {
   var low: IPoint
 }
 
+object IMeasure {
+  @scala.inline
+  def apply(high: IPoint, low: IPoint): IMeasure = {
+    val __obj = js.Dynamic.literal(high = high, low = low)
+  
+    __obj.asInstanceOf[IMeasure]
+  }
+}
+

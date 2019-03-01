@@ -16,3 +16,12 @@ trait Versions extends js.Object {
   var software: java.lang.String
 }
 
+object Versions {
+  @scala.inline
+  def apply(protocol: java.lang.String, software: java.lang.String): Versions = {
+    val __obj = js.Dynamic.literal(protocol = protocol, software = software)
+  
+    __obj.asInstanceOf[Versions]
+  }
+}
+

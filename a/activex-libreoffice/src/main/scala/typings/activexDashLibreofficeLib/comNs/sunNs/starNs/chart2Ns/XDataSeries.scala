@@ -23,3 +23,19 @@ trait XDataSeries
   def resetDataPoint(nIndex: scala.Double): scala.Unit
 }
 
+object XDataSeries {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDataPointByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetAllDataPoints: js.Function0[scala.Unit],
+    resetDataPoint: js.Function1[scala.Double, scala.Unit]
+  ): XDataSeries = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getDataPointByIndex = getDataPointByIndex, queryInterface = queryInterface, release = release, resetAllDataPoints = resetAllDataPoints, resetDataPoint = resetDataPoint)
+  
+    __obj.asInstanceOf[XDataSeries]
+  }
+}
+

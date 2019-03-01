@@ -37,3 +37,26 @@ trait Response extends js.Object {
   def url(): java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    buffer: js.Function0[js.Promise[nodeLib.Buffer]],
+    frame: js.Function0[Frame | scala.Null],
+    fromCache: js.Function0[scala.Boolean],
+    fromServiceWorker: js.Function0[scala.Boolean],
+    headers: js.Function0[Headers],
+    json: js.Function0[js.Promise[_]],
+    ok: js.Function0[scala.Boolean],
+    remoteAddress: js.Function0[RemoteInfo],
+    request: js.Function0[Request],
+    status: js.Function0[scala.Double],
+    statusText: js.Function0[java.lang.String],
+    text: js.Function0[js.Promise[java.lang.String]],
+    url: js.Function0[java.lang.String]
+  ): Response = {
+    val __obj = js.Dynamic.literal(buffer = buffer, frame = frame, fromCache = fromCache, fromServiceWorker = fromServiceWorker, headers = headers, json = json, ok = ok, remoteAddress = remoteAddress, request = request, status = status, statusText = statusText, text = text, url = url)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

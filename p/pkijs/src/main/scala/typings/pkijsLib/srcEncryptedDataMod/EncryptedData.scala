@@ -25,3 +25,21 @@ trait EncryptedData extends js.Object {
   def toSchema(): js.Any
 }
 
+object EncryptedData {
+  @scala.inline
+  def apply(
+    decrypt: js.Function1[pkijsLib.Anon_Password, js.Thenable[stdLib.ArrayBuffer]],
+    encrypt: js.Function1[pkijsLib.Anon_ContentEncryptionAlgorithm, js.Thenable[stdLib.ArrayBuffer]],
+    encryptedContentInfo: pkijsLib.srcEncryptedContentInfoMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    unprotectedAttrs: js.Array[pkijsLib.srcAttributeMod.default],
+    version: scala.Double
+  ): EncryptedData = {
+    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt, encryptedContentInfo = encryptedContentInfo, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, unprotectedAttrs = unprotectedAttrs, version = version)
+  
+    __obj.asInstanceOf[EncryptedData]
+  }
+}
+

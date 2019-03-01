@@ -28,3 +28,12 @@ trait RecurrenceTimeZone extends js.Object {
   var offset: scala.Double
 }
 
+object RecurrenceTimeZone {
+  @scala.inline
+  def apply(name: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceTimeZone, offset: scala.Double): RecurrenceTimeZone = {
+    val __obj = js.Dynamic.literal(name = name, offset = offset)
+  
+    __obj.asInstanceOf[RecurrenceTimeZone]
+  }
+}
+

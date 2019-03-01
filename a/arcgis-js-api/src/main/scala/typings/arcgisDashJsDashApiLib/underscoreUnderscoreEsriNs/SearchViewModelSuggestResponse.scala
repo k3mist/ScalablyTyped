@@ -39,3 +39,21 @@ trait SearchViewModelSuggestResponse
   var searchTerm: java.lang.String
 }
 
+object SearchViewModelSuggestResponse {
+  @scala.inline
+  def apply(
+    activeSourceIndex: scala.Double,
+    constructor: js.Function,
+    errors: js.Array[Error],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    numResults: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    results: js.Array[SearchViewModelSuggestResponseResults],
+    searchTerm: java.lang.String
+  ): SearchViewModelSuggestResponse = {
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, constructor = constructor, errors = errors, hasOwnProperty = hasOwnProperty, numResults = numResults, propertyIsEnumerable = propertyIsEnumerable, results = results, searchTerm = searchTerm)
+  
+    __obj.asInstanceOf[SearchViewModelSuggestResponse]
+  }
+}
+

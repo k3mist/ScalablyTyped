@@ -15,3 +15,20 @@ trait IStrings extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IStrings {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    Clone: js.Function0[IStrings],
+    CloneFrom: js.Function1[IStrings, scala.Unit],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, java.lang.String],
+    Join: js.Function1[java.lang.String, java.lang.String],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IStrings = {
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, CloneFrom = CloneFrom, Count = Count, Item = Item, Join = Join, Remove = Remove)
+  
+    __obj.asInstanceOf[IStrings]
+  }
+}
+

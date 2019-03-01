@@ -18,3 +18,23 @@ trait ISettings extends js.Object {
   var warning: IAnimation
 }
 
+object ISettings {
+  @scala.inline
+  def apply(
+    custom: IAnimation,
+    details: scala.Boolean,
+    error: IAnimation,
+    html5DefaultIcon: java.lang.String,
+    html5Mode: scala.Boolean,
+    info: IAnimation,
+    localStorage: scala.Boolean,
+    progress: IAnimation,
+    success: IAnimation,
+    warning: IAnimation
+  ): ISettings = {
+    val __obj = js.Dynamic.literal(custom = custom, details = details, error = error, html5DefaultIcon = html5DefaultIcon, html5Mode = html5Mode, info = info, localStorage = localStorage, progress = progress, success = success, warning = warning)
+  
+    __obj.asInstanceOf[ISettings]
+  }
+}
+

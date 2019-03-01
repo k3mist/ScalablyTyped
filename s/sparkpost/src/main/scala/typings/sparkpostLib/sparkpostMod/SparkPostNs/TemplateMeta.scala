@@ -16,3 +16,17 @@ trait TemplateMeta extends js.Object {
   var published: scala.Boolean
 }
 
+object TemplateMeta {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    published: scala.Boolean
+  ): TemplateMeta = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, published = published)
+  
+    __obj.asInstanceOf[TemplateMeta]
+  }
+}
+

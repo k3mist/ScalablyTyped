@@ -15,3 +15,12 @@ trait BasicGeoposition extends js.Object {
   var longitude: scala.Double
 }
 
+object BasicGeoposition {
+  @scala.inline
+  def apply(altitude: scala.Double, latitude: scala.Double, longitude: scala.Double): BasicGeoposition = {
+    val __obj = js.Dynamic.literal(altitude = altitude, latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[BasicGeoposition]
+  }
+}
+

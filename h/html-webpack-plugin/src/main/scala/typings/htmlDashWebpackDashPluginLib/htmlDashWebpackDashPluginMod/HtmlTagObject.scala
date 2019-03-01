@@ -26,3 +26,17 @@ trait HtmlTagObject extends js.Object {
   var voidTag: scala.Boolean
 }
 
+object HtmlTagObject {
+  @scala.inline
+  def apply(
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean],
+    tagName: java.lang.String,
+    voidTag: scala.Boolean,
+    innerHTML: java.lang.String = null
+  ): HtmlTagObject = {
+    val __obj = js.Dynamic.literal(attributes = attributes, tagName = tagName, voidTag = voidTag)
+    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
+    __obj.asInstanceOf[HtmlTagObject]
+  }
+}
+

@@ -28,3 +28,12 @@ trait ChatRoomInfo
   var room_name: java.lang.String
 }
 
+object ChatRoomInfo {
+  @scala.inline
+  def apply(features: scala.Double, info: ChatRoomInfo, room: java.lang.String, room_name: java.lang.String): ChatRoomInfo = {
+    val __obj = js.Dynamic.literal(features = features, info = info, room = room, room_name = room_name)
+  
+    __obj.asInstanceOf[ChatRoomInfo]
+  }
+}
+

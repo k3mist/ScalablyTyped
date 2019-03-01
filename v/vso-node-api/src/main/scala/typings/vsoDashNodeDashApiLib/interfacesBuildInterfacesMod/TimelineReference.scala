@@ -20,3 +20,12 @@ trait TimelineReference extends js.Object {
   var url: java.lang.String
 }
 
+object TimelineReference {
+  @scala.inline
+  def apply(changeId: scala.Double, id: java.lang.String, url: java.lang.String): TimelineReference = {
+    val __obj = js.Dynamic.literal(changeId = changeId, id = id, url = url)
+  
+    __obj.asInstanceOf[TimelineReference]
+  }
+}
+

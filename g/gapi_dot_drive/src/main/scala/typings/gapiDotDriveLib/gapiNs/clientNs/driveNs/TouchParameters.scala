@@ -10,3 +10,12 @@ trait TouchParameters extends js.Object {
   var supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TouchParameters {
+  @scala.inline
+  def apply(fileId: java.lang.String, supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined): TouchParameters = {
+    val __obj = js.Dynamic.literal(fileId = fileId)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    __obj.asInstanceOf[TouchParameters]
+  }
+}
+

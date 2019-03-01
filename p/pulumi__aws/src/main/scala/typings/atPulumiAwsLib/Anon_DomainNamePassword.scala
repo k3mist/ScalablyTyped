@@ -11,3 +11,12 @@ trait Anon_DomainNamePassword extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_DomainNamePassword {
+  @scala.inline
+  def apply(domainName: java.lang.String, password: java.lang.String, username: java.lang.String): Anon_DomainNamePassword = {
+    val __obj = js.Dynamic.literal(domainName = domainName, password = password, username = username)
+  
+    __obj.asInstanceOf[Anon_DomainNamePassword]
+  }
+}
+

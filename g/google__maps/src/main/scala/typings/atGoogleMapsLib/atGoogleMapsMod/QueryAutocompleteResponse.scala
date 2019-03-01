@@ -17,3 +17,16 @@ trait QueryAutocompleteResponse extends js.Object {
   var status: QueryAutocompleteResponseStatus
 }
 
+object QueryAutocompleteResponse {
+  @scala.inline
+  def apply(
+    error_message: java.lang.String,
+    predictions: js.Array[QueryAutocompleteResult],
+    status: QueryAutocompleteResponseStatus
+  ): QueryAutocompleteResponse = {
+    val __obj = js.Dynamic.literal(error_message = error_message, predictions = predictions, status = status)
+  
+    __obj.asInstanceOf[QueryAutocompleteResponse]
+  }
+}
+

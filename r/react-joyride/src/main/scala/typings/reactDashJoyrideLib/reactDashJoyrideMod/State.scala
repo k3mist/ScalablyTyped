@@ -19,3 +19,21 @@ trait State extends js.Object {
   var `type`: EventType
 }
 
+object State {
+  @scala.inline
+  def apply(
+    action: Action,
+    controlled: scala.Boolean,
+    index: scala.Double,
+    lifecycle: Lifecycle,
+    size: scala.Double,
+    status: Status,
+    step: Step,
+    `type`: EventType
+  ): State = {
+    val __obj = js.Dynamic.literal(action = action, controlled = controlled, index = index, lifecycle = lifecycle, size = size, status = status, step = step, `type` = `type`)
+  
+    __obj.asInstanceOf[State]
+  }
+}
+

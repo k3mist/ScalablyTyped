@@ -11,3 +11,12 @@ trait Anon_ErrorClass
   var errorMessage: java.lang.String
 }
 
+object Anon_ErrorClass {
+  @scala.inline
+  def apply(errorClass: java.lang.String, errorMessage: java.lang.String): Anon_ErrorClass = {
+    val __obj = js.Dynamic.literal(errorClass = errorClass, errorMessage = errorMessage)
+  
+    __obj.asInstanceOf[Anon_ErrorClass]
+  }
+}
+

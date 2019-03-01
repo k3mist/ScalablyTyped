@@ -34,3 +34,18 @@ trait FilterAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object FilterAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, FilterAggregation],
+    aggregation: js.Function1[Aggregation, FilterAggregation],
+    filter: js.Function1[Filter, FilterAggregation],
+    toJSON: js.Function0[js.Any]
+  ): FilterAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, filter = filter, toJSON = toJSON)
+  
+    __obj.asInstanceOf[FilterAggregation]
+  }
+}
+

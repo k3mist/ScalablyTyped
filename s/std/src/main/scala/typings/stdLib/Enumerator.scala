@@ -30,3 +30,17 @@ trait Enumerator[T] extends js.Object {
   def moveNext(): scala.Unit
 }
 
+object Enumerator {
+  @scala.inline
+  def apply[T](
+    atEnd: js.Function0[scala.Boolean],
+    item: js.Function0[T],
+    moveFirst: js.Function0[scala.Unit],
+    moveNext: js.Function0[scala.Unit]
+  ): Enumerator[T] = {
+    val __obj = js.Dynamic.literal(atEnd = atEnd, item = item, moveFirst = moveFirst, moveNext = moveNext)
+  
+    __obj.asInstanceOf[Enumerator[T]]
+  }
+}
+

@@ -14,3 +14,19 @@ trait IDataPlanStatus extends js.Object {
   var outboundBitsPerSecond: scala.Double
 }
 
+object IDataPlanStatus {
+  @scala.inline
+  def apply(
+    dataLimitInMegabytes: scala.Double,
+    dataPlanUsage: DataPlanUsage,
+    inboundBitsPerSecond: scala.Double,
+    maxTransferSizeInMegabytes: scala.Double,
+    nextBillingCycle: stdLib.Date,
+    outboundBitsPerSecond: scala.Double
+  ): IDataPlanStatus = {
+    val __obj = js.Dynamic.literal(dataLimitInMegabytes = dataLimitInMegabytes, dataPlanUsage = dataPlanUsage, inboundBitsPerSecond = inboundBitsPerSecond, maxTransferSizeInMegabytes = maxTransferSizeInMegabytes, nextBillingCycle = nextBillingCycle, outboundBitsPerSecond = outboundBitsPerSecond)
+  
+    __obj.asInstanceOf[IDataPlanStatus]
+  }
+}
+

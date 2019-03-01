@@ -36,3 +36,20 @@ trait GetBucketResult extends js.Object {
   val websiteEndpoint: java.lang.String
 }
 
+object GetBucketResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    bucketDomainName: java.lang.String,
+    hostedZoneId: java.lang.String,
+    id: java.lang.String,
+    region: java.lang.String,
+    websiteDomain: java.lang.String,
+    websiteEndpoint: java.lang.String
+  ): GetBucketResult = {
+    val __obj = js.Dynamic.literal(arn = arn, bucketDomainName = bucketDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
+  
+    __obj.asInstanceOf[GetBucketResult]
+  }
+}
+

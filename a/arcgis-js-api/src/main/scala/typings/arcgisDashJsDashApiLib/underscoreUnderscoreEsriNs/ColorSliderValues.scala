@@ -27,3 +27,19 @@ trait ColorSliderValues
   var value: scala.Double
 }
 
+object ColorSliderValues {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: scala.Double
+  ): ColorSliderValues = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, label = label, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
+    __obj.asInstanceOf[ColorSliderValues]
+  }
+}
+

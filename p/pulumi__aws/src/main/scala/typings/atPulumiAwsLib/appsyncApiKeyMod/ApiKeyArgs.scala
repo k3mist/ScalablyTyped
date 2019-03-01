@@ -20,3 +20,17 @@ trait ApiKeyArgs extends js.Object {
   val expires: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApiKeyArgs {
+  @scala.inline
+  def apply(
+    apiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    expires: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ApiKeyArgs = {
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiKeyArgs]
+  }
+}
+

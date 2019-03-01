@@ -28,3 +28,16 @@ trait PodDisruptionBudgetSpec extends js.Object {
   val selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
 }
 
+object PodDisruptionBudgetSpec {
+  @scala.inline
+  def apply(
+    maxUnavailable: scala.Double | java.lang.String,
+    minAvailable: scala.Double | java.lang.String,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
+  ): PodDisruptionBudgetSpec = {
+    val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any], minAvailable = minAvailable.asInstanceOf[js.Any], selector = selector)
+  
+    __obj.asInstanceOf[PodDisruptionBudgetSpec]
+  }
+}
+

@@ -16,3 +16,12 @@ trait UpdateGlobalTableInput extends js.Object {
   var ReplicaUpdates: ReplicaUpdateList
 }
 
+object UpdateGlobalTableInput {
+  @scala.inline
+  def apply(GlobalTableName: TableName, ReplicaUpdates: ReplicaUpdateList): UpdateGlobalTableInput = {
+    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName, ReplicaUpdates = ReplicaUpdates)
+  
+    __obj.asInstanceOf[UpdateGlobalTableInput]
+  }
+}
+

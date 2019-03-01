@@ -12,3 +12,12 @@ trait FirehoseTransformationResultRecord extends js.Object {
   var result: FirehoseRecordTransformationStatus
 }
 
+object FirehoseTransformationResultRecord {
+  @scala.inline
+  def apply(data: java.lang.String, recordId: java.lang.String, result: FirehoseRecordTransformationStatus): FirehoseTransformationResultRecord = {
+    val __obj = js.Dynamic.literal(data = data, recordId = recordId, result = result)
+  
+    __obj.asInstanceOf[FirehoseTransformationResultRecord]
+  }
+}
+

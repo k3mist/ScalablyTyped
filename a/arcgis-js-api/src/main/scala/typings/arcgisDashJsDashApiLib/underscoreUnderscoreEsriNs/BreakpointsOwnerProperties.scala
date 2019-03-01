@@ -47,3 +47,18 @@ trait BreakpointsOwnerProperties extends js.Object {
   var widthBreakpoint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BreakpointsOwnerProperties {
+  @scala.inline
+  def apply(
+    breakpoints: BreakpointsOwnerBreakpoints = null,
+    heightBreakpoint: java.lang.String = null,
+    widthBreakpoint: java.lang.String = null
+  ): BreakpointsOwnerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    __obj.asInstanceOf[BreakpointsOwnerProperties]
+  }
+}
+

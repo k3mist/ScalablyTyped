@@ -14,3 +14,18 @@ trait CheckboxOptionType extends js.Object {
   var value: CheckboxValueType
 }
 
+object CheckboxOptionType {
+  @scala.inline
+  def apply(
+    label: reactLib.reactMod.ReactNs.ReactNode,
+    value: CheckboxValueType,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function1[/* e */ antdLib.libCheckboxCheckboxMod.CheckboxChangeEvent, scala.Unit] = null
+  ): CheckboxOptionType = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    __obj.asInstanceOf[CheckboxOptionType]
+  }
+}
+

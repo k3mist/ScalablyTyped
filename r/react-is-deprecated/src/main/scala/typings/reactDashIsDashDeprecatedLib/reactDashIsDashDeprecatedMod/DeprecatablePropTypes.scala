@@ -25,3 +25,40 @@ trait DeprecatablePropTypes extends js.Object {
   def shape(`type`: reactLib.reactMod.ReactNs.ValidationMap[_]): reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
 }
 
+object DeprecatablePropTypes {
+  @scala.inline
+  def apply(
+    any: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    array: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    arrayOf: js.Function1[
+      reactLib.reactMod.ReactNs.Validator[_], 
+      reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
+    ],
+    bool: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    element: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    func: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    instanceOf: js.Function1[js.Object, reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]],
+    node: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    number: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    `object`: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_],
+    objectOf: js.Function1[
+      reactLib.reactMod.ReactNs.Validator[_], 
+      reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
+    ],
+    oneOf: js.Function1[js.Array[_], reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]],
+    oneOfType: js.Function1[
+      js.Array[reactLib.reactMod.ReactNs.Validator[_]], 
+      reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
+    ],
+    shape: js.Function1[
+      reactLib.reactMod.ReactNs.ValidationMap[_], 
+      reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
+    ],
+    string: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
+  ): DeprecatablePropTypes = {
+    val __obj = js.Dynamic.literal(any = any, array = array, arrayOf = arrayOf, bool = bool, element = element, func = func, instanceOf = instanceOf, node = node, number = number, `object` = `object`, objectOf = objectOf, oneOf = oneOf, oneOfType = oneOfType, shape = shape, string = string)
+  
+    __obj.asInstanceOf[DeprecatablePropTypes]
+  }
+}
+

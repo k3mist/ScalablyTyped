@@ -20,3 +20,17 @@ trait DisplayLayout extends js.Object {
   var position: chromeLib.chromeLibStrings.top | chromeLib.chromeLibStrings.right | chromeLib.chromeLibStrings.bottom | chromeLib.chromeLibStrings.left
 }
 
+object DisplayLayout {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    offset: scala.Double,
+    parentId: java.lang.String,
+    position: chromeLib.chromeLibStrings.top | chromeLib.chromeLibStrings.right | chromeLib.chromeLibStrings.bottom | chromeLib.chromeLibStrings.left
+  ): DisplayLayout = {
+    val __obj = js.Dynamic.literal(id = id, offset = offset, parentId = parentId, position = position.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DisplayLayout]
+  }
+}
+

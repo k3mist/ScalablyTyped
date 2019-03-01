@@ -54,3 +54,34 @@ trait VersionsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object VersionsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Version]
+    ],
+    instances: InstancesResource,
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPageSizePageToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListVersionsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserServicesId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): VersionsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, instances = instances, list = list, patch = patch)
+  
+    __obj.asInstanceOf[VersionsResource]
+  }
+}
+

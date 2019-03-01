@@ -61,3 +61,27 @@ trait TaskAgentPoolMaintenanceJob extends js.Object {
   var warningCount: scala.Double
 }
 
+object TaskAgentPoolMaintenanceJob {
+  @scala.inline
+  def apply(
+    definitionId: scala.Double,
+    errorCount: scala.Double,
+    finishTime: stdLib.Date,
+    jobId: scala.Double,
+    logsDownloadUrl: java.lang.String,
+    orchestrationId: java.lang.String,
+    pool: TaskAgentPoolReference,
+    queueTime: stdLib.Date,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    result: TaskAgentPoolMaintenanceJobResult,
+    startTime: stdLib.Date,
+    status: TaskAgentPoolMaintenanceJobStatus,
+    targetAgents: js.Array[TaskAgentReference],
+    warningCount: scala.Double
+  ): TaskAgentPoolMaintenanceJob = {
+    val __obj = js.Dynamic.literal(definitionId = definitionId, errorCount = errorCount, finishTime = finishTime, jobId = jobId, logsDownloadUrl = logsDownloadUrl, orchestrationId = orchestrationId, pool = pool, queueTime = queueTime, requestedBy = requestedBy, result = result, startTime = startTime, status = status, targetAgents = targetAgents, warningCount = warningCount)
+  
+    __obj.asInstanceOf[TaskAgentPoolMaintenanceJob]
+  }
+}
+

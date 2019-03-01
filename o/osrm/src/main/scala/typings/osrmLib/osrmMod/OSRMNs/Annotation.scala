@@ -37,3 +37,19 @@ trait Annotation extends js.Object {
   var weight: js.Array[scala.Double]
 }
 
+object Annotation {
+  @scala.inline
+  def apply(
+    datasources: js.Array[scala.Double],
+    distance: js.Array[scala.Double],
+    duration: js.Array[scala.Double],
+    nodes: js.Array[scala.Double],
+    speed: js.Array[scala.Double],
+    weight: js.Array[scala.Double]
+  ): Annotation = {
+    val __obj = js.Dynamic.literal(datasources = datasources, distance = distance, duration = duration, nodes = nodes, speed = speed, weight = weight)
+  
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

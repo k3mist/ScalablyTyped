@@ -13,3 +13,16 @@ trait Comment
   var type_Comment: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.comment
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.comment,
+    parent: NodeBase = null
+  ): Comment = {
+    val __obj = js.Dynamic.literal(content = content, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

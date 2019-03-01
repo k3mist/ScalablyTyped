@@ -10,3 +10,12 @@ trait TabbarRenderTab extends js.Object {
   var tab: reactLib.reactMod.Global.JSXNs.Element
 }
 
+object TabbarRenderTab {
+  @scala.inline
+  def apply(content: reactLib.reactMod.Global.JSXNs.Element, tab: reactLib.reactMod.Global.JSXNs.Element): TabbarRenderTab = {
+    val __obj = js.Dynamic.literal(content = content, tab = tab)
+  
+    __obj.asInstanceOf[TabbarRenderTab]
+  }
+}
+

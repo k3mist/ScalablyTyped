@@ -21,3 +21,17 @@ trait ASPxClientDockManagerProcessingModeCancelEventArgs extends ASPxClientProce
   var zone: ASPxClientDockZone
 }
 
+object ASPxClientDockManagerProcessingModeCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    panel: ASPxClientDockPanel,
+    processOnServer: scala.Boolean,
+    zone: ASPxClientDockZone
+  ): ASPxClientDockManagerProcessingModeCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, panel = panel, processOnServer = processOnServer, zone = zone)
+  
+    __obj.asInstanceOf[ASPxClientDockManagerProcessingModeCancelEventArgs]
+  }
+}
+

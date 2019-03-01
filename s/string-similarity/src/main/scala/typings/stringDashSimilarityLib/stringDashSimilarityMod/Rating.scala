@@ -10,3 +10,12 @@ trait Rating extends js.Object {
   var target: java.lang.String
 }
 
+object Rating {
+  @scala.inline
+  def apply(rating: scala.Double, target: java.lang.String): Rating = {
+    val __obj = js.Dynamic.literal(rating = rating, target = target)
+  
+    __obj.asInstanceOf[Rating]
+  }
+}
+

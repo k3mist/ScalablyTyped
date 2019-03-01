@@ -10,3 +10,12 @@ trait ShiftRegisterOption extends js.Object {
   var pins: js.Any
 }
 
+object ShiftRegisterOption {
+  @scala.inline
+  def apply(pins: js.Any, isAnode: js.UndefOr[scala.Boolean] = js.undefined): ShiftRegisterOption = {
+    val __obj = js.Dynamic.literal(pins = pins)
+    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode)
+    __obj.asInstanceOf[ShiftRegisterOption]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Monad[T] extends js.Object {
   def unit[U](t: U): Monad[U]
 }
 
+object Monad {
+  @scala.inline
+  def apply[T](
+    bind: js.Function1[js.Function1[/* t */ T, Monad[js.Any]], Monad[js.Any]],
+    chain: js.Function1[js.Function1[/* t */ T, Monad[js.Any]], Monad[js.Any]],
+    of: js.Function1[js.Any, Monad[js.Any]],
+    unit: js.Function1[js.Any, Monad[js.Any]]
+  ): Monad[T] = {
+    val __obj = js.Dynamic.literal(bind = bind, chain = chain, of = of, unit = unit)
+  
+    __obj.asInstanceOf[Monad[T]]
+  }
+}
+

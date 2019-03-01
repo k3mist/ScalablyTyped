@@ -15,3 +15,20 @@ trait IObjectTemplateSelector extends js.Object {
   def SelectItem(itemID: java.lang.String): scala.Unit
 }
 
+object IObjectTemplateSelector {
+  @scala.inline
+  def apply(
+    ClassSelector: IMetadataCardControl,
+    Events: IEvents,
+    GetObjectTypeIconURL: js.Function0[java.lang.String],
+    GetObjectTypeId: js.Function0[scala.Double],
+    GetObjectTypeName: js.Function0[java.lang.String],
+    GetTemplateItems: js.Function0[js.Any],
+    SelectItem: js.Function1[java.lang.String, scala.Unit]
+  ): IObjectTemplateSelector = {
+    val __obj = js.Dynamic.literal(ClassSelector = ClassSelector, Events = Events, GetObjectTypeIconURL = GetObjectTypeIconURL, GetObjectTypeId = GetObjectTypeId, GetObjectTypeName = GetObjectTypeName, GetTemplateItems = GetTemplateItems, SelectItem = SelectItem)
+  
+    __obj.asInstanceOf[IObjectTemplateSelector]
+  }
+}
+

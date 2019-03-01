@@ -11,3 +11,16 @@ trait Document extends NodeBase {
   var type_Document: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.document
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    children: js.Array[NodeBase],
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.document,
+    parent: NodeBase = null
+  ): Document = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Document]
+  }
+}
+

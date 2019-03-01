@@ -13,3 +13,12 @@ trait FloatValueNode
   val value: java.lang.String
 }
 
+object FloatValueNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.FloatValue, value: java.lang.String, loc: Location = null): FloatValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[FloatValueNode]
+  }
+}
+

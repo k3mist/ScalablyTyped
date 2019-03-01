@@ -136,3 +136,31 @@ trait IHyperCubeDef extends js.Object {
   var qSuppressZero: scala.Boolean
 }
 
+object IHyperCubeDef {
+  @scala.inline
+  def apply(
+    qAlwaysFullyExpanded: scala.Boolean,
+    qDimensions: js.Array[INxDimension],
+    qIndentMode: scala.Boolean,
+    qInitialDataFetch: js.Array[INxPage],
+    qInterColumnSortOrder: js.Array[scala.Double],
+    qMaxStackedCells: scala.Double,
+    qMeasures: js.Array[INxMeasure],
+    qMode: NxHypercubeMode,
+    qNoOfLeftDims: scala.Double,
+    qPopulateMissing: scala.Boolean,
+    qPseudoDimPos: scala.Double,
+    qReductionMode: ReductionModeType,
+    qShowTotalsAbove: scala.Boolean,
+    qSortbyYValue: java.lang.String,
+    qStateName: java.lang.String,
+    qSuppressMissing: scala.Boolean,
+    qSuppressZero: scala.Boolean,
+    qCalcCond: IValueExpr = null
+  ): IHyperCubeDef = {
+    val __obj = js.Dynamic.literal(qAlwaysFullyExpanded = qAlwaysFullyExpanded, qDimensions = qDimensions, qIndentMode = qIndentMode, qInitialDataFetch = qInitialDataFetch, qInterColumnSortOrder = qInterColumnSortOrder, qMaxStackedCells = qMaxStackedCells, qMeasures = qMeasures, qMode = qMode, qNoOfLeftDims = qNoOfLeftDims, qPopulateMissing = qPopulateMissing, qPseudoDimPos = qPseudoDimPos, qReductionMode = qReductionMode, qShowTotalsAbove = qShowTotalsAbove, qSortbyYValue = qSortbyYValue, qStateName = qStateName, qSuppressMissing = qSuppressMissing, qSuppressZero = qSuppressZero)
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
+    __obj.asInstanceOf[IHyperCubeDef]
+  }
+}
+

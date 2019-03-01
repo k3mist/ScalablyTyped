@@ -10,3 +10,12 @@ trait IShimFactory extends js.Object {
   def unregisterShim(shim: IShim): scala.Unit
 }
 
+object IShimFactory {
+  @scala.inline
+  def apply(registerShim: js.Function1[IShim, scala.Unit], unregisterShim: js.Function1[IShim, scala.Unit]): IShimFactory = {
+    val __obj = js.Dynamic.literal(registerShim = registerShim, unregisterShim = unregisterShim)
+  
+    __obj.asInstanceOf[IShimFactory]
+  }
+}
+

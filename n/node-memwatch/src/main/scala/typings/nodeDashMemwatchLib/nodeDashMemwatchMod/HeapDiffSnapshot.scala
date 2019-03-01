@@ -11,3 +11,12 @@ trait HeapDiffSnapshot extends js.Object {
   var size_bytes: scala.Double
 }
 
+object HeapDiffSnapshot {
+  @scala.inline
+  def apply(nodes: scala.Double, size: java.lang.String, size_bytes: scala.Double): HeapDiffSnapshot = {
+    val __obj = js.Dynamic.literal(nodes = nodes, size = size, size_bytes = size_bytes)
+  
+    __obj.asInstanceOf[HeapDiffSnapshot]
+  }
+}
+

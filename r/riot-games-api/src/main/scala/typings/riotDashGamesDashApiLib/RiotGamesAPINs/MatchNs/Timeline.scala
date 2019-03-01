@@ -10,3 +10,12 @@ trait Timeline extends js.Object {
   var frames: js.Array[Frame]
 }
 
+object Timeline {
+  @scala.inline
+  def apply(frameInverval: scala.Double, frames: js.Array[Frame]): Timeline = {
+    val __obj = js.Dynamic.literal(frameInverval = frameInverval, frames = frames)
+  
+    __obj.asInstanceOf[Timeline]
+  }
+}
+

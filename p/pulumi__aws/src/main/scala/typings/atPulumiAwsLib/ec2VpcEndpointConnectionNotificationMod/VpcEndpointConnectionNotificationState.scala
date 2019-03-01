@@ -34,3 +34,24 @@ trait VpcEndpointConnectionNotificationState extends js.Object {
   val vpcEndpointServiceId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcEndpointConnectionNotificationState {
+  @scala.inline
+  def apply(
+    connectionEvents: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    connectionNotificationArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notificationType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    state: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcEndpointId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcEndpointServiceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): VpcEndpointConnectionNotificationState = {
+    val __obj = js.Dynamic.literal()
+    if (connectionEvents != null) __obj.updateDynamic("connectionEvents")(connectionEvents.asInstanceOf[js.Any])
+    if (connectionNotificationArn != null) __obj.updateDynamic("connectionNotificationArn")(connectionNotificationArn.asInstanceOf[js.Any])
+    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
+    if (vpcEndpointServiceId != null) __obj.updateDynamic("vpcEndpointServiceId")(vpcEndpointServiceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointConnectionNotificationState]
+  }
+}
+

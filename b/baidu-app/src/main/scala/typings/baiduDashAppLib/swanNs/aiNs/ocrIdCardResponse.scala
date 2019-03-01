@@ -22,3 +22,21 @@ trait ocrIdCardResponse extends js.Object {
   var words_result_num: scala.Double
 }
 
+object ocrIdCardResponse {
+  @scala.inline
+  def apply(
+    direction: scala.Double,
+    edit_tool: java.lang.String,
+    image_status: java.lang.String,
+    log_id: java.lang.String,
+    risk_type: java.lang.String,
+    words_result: // 定位和识别结果
+  org.scalablytyped.runtime.StringDictionary[baiduDashAppLib.Anon_Location],
+    words_result_num: scala.Double
+  ): ocrIdCardResponse = {
+    val __obj = js.Dynamic.literal(direction = direction, edit_tool = edit_tool, image_status = image_status, log_id = log_id, risk_type = risk_type, words_result = words_result, words_result_num = words_result_num)
+  
+    __obj.asInstanceOf[ocrIdCardResponse]
+  }
+}
+

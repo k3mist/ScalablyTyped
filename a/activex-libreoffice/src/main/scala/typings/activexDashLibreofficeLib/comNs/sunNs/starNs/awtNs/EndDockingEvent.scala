@@ -16,3 +16,17 @@ trait EndDockingEvent
   var bFloating: scala.Boolean
 }
 
+object EndDockingEvent {
+  @scala.inline
+  def apply(
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    WindowRectangle: Rectangle,
+    bCancelled: scala.Boolean,
+    bFloating: scala.Boolean
+  ): EndDockingEvent = {
+    val __obj = js.Dynamic.literal(Source = Source, WindowRectangle = WindowRectangle, bCancelled = bCancelled, bFloating = bFloating)
+  
+    __obj.asInstanceOf[EndDockingEvent]
+  }
+}
+

@@ -20,3 +20,25 @@ trait LocalResultPoi extends js.Object {
   var url: java.lang.String
 }
 
+object LocalResultPoi {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    city: java.lang.String,
+    detailUrl: java.lang.String,
+    isAccurate: scala.Boolean,
+    phoneNumber: java.lang.String,
+    point: Point,
+    postcode: java.lang.String,
+    province: java.lang.String,
+    tags: js.Array[java.lang.String],
+    title: java.lang.String,
+    `type`: PoiType,
+    url: java.lang.String
+  ): LocalResultPoi = {
+    val __obj = js.Dynamic.literal(address = address, city = city, detailUrl = detailUrl, isAccurate = isAccurate, phoneNumber = phoneNumber, point = point, postcode = postcode, province = province, tags = tags, title = title, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[LocalResultPoi]
+  }
+}
+

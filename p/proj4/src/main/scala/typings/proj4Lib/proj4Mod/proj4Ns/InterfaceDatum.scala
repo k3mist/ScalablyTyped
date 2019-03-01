@@ -13,3 +13,12 @@ trait InterfaceDatum extends js.Object {
   var es: scala.Double
 }
 
+object InterfaceDatum {
+  @scala.inline
+  def apply(a: scala.Double, b: scala.Double, datum_type: scala.Double, ep2: scala.Double, es: scala.Double): InterfaceDatum = {
+    val __obj = js.Dynamic.literal(a = a, b = b, datum_type = datum_type, ep2 = ep2, es = es)
+  
+    __obj.asInstanceOf[InterfaceDatum]
+  }
+}
+

@@ -29,3 +29,34 @@ trait Model extends js.Object {
   def update(): scala.Unit
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    activeAnimations: ModelAnimationCollection,
+    allowPicking: scala.Boolean,
+    asynchronous: scala.Boolean,
+    basePath: java.lang.String,
+    boundingSphere: BoundingSphere,
+    debugShowBoundingVolume: scala.Boolean,
+    debugWireframe: scala.Boolean,
+    destroy: js.Function0[scala.Unit],
+    getMaterial: js.Function1[java.lang.String, ModelMaterial],
+    getMesh: js.Function1[java.lang.String, ModelMesh],
+    getNode: js.Function1[java.lang.String, ModelNode],
+    gltf: js.Any,
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    minimumPixelSize: scala.Double,
+    modelMatrix: Matrix4,
+    ready: scala.Boolean,
+    readyPromise: js.Promise[Model],
+    scale: scala.Double,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): Model = {
+    val __obj = js.Dynamic.literal(activeAnimations = activeAnimations, allowPicking = allowPicking, asynchronous = asynchronous, basePath = basePath, boundingSphere = boundingSphere, debugShowBoundingVolume = debugShowBoundingVolume, debugWireframe = debugWireframe, destroy = destroy, getMaterial = getMaterial, getMesh = getMesh, getNode = getNode, gltf = gltf, id = id, isDestroyed = isDestroyed, minimumPixelSize = minimumPixelSize, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, scale = scale, show = show, update = update)
+  
+    __obj.asInstanceOf[Model]
+  }
+}
+

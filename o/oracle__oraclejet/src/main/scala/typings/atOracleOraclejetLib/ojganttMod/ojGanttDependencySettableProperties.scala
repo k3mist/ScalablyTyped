@@ -15,3 +15,19 @@ trait ojGanttDependencySettableProperties
   var `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish
 }
 
+object ojGanttDependencySettableProperties {
+  @scala.inline
+  def apply(
+    predecessorTaskId: js.Any,
+    successorTaskId: js.Any,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish,
+    shortDesc: java.lang.String = null
+  ): ojGanttDependencySettableProperties = {
+    val __obj = js.Dynamic.literal(predecessorTaskId = predecessorTaskId, successorTaskId = successorTaskId, svgClassName = svgClassName, svgStyle = svgStyle, `type` = `type`.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    __obj.asInstanceOf[ojGanttDependencySettableProperties]
+  }
+}
+

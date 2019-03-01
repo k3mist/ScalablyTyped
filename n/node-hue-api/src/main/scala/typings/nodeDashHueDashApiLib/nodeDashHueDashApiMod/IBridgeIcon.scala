@@ -13,3 +13,18 @@ trait IBridgeIcon extends js.Object {
   var width: java.lang.String
 }
 
+object IBridgeIcon {
+  @scala.inline
+  def apply(
+    depth: java.lang.String,
+    height: java.lang.String,
+    mimetype: java.lang.String,
+    url: java.lang.String,
+    width: java.lang.String
+  ): IBridgeIcon = {
+    val __obj = js.Dynamic.literal(depth = depth, height = height, mimetype = mimetype, url = url, width = width)
+  
+    __obj.asInstanceOf[IBridgeIcon]
+  }
+}
+

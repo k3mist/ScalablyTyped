@@ -17,3 +17,12 @@ trait GeoPoint extends js.Object {
   def isEqual(other: GeoPoint): scala.Boolean
 }
 
+object GeoPoint {
+  @scala.inline
+  def apply(isEqual: js.Function1[GeoPoint, scala.Boolean], latitude: scala.Double, longitude: scala.Double): GeoPoint = {
+    val __obj = js.Dynamic.literal(isEqual = isEqual, latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[GeoPoint]
+  }
+}
+

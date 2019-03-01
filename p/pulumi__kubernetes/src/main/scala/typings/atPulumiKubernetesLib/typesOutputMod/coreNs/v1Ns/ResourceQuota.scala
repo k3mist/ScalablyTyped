@@ -40,3 +40,18 @@ trait ResourceQuota extends js.Object {
   val status: ResourceQuotaStatus
 }
 
+object ResourceQuota {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuota,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: ResourceQuotaSpec,
+    status: ResourceQuotaStatus
+  ): ResourceQuota = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[ResourceQuota]
+  }
+}
+

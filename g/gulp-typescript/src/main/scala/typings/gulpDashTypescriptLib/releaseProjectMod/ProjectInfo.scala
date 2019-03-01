@@ -17,3 +17,22 @@ trait ProjectInfo extends js.Object {
   var typescript: gulpDashTypescriptLib.Anon_08
 }
 
+object ProjectInfo {
+  @scala.inline
+  def apply(
+    compiler: gulpDashTypescriptLib.releaseCompilerMod.ICompiler,
+    directory: java.lang.String,
+    input: gulpDashTypescriptLib.releaseInputMod.FileCache,
+    options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    output: gulpDashTypescriptLib.releaseOutputMod.Output,
+    projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference],
+    reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter,
+    singleOutput: scala.Boolean,
+    typescript: gulpDashTypescriptLib.Anon_08
+  ): ProjectInfo = {
+    val __obj = js.Dynamic.literal(compiler = compiler, directory = directory, input = input, options = options, output = output, projectReferences = projectReferences, reporter = reporter, singleOutput = singleOutput, typescript = typescript)
+  
+    __obj.asInstanceOf[ProjectInfo]
+  }
+}
+

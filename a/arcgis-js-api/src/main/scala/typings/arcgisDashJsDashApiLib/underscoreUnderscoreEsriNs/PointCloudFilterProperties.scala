@@ -14,3 +14,12 @@ trait PointCloudFilterProperties extends js.Object {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PointCloudFilterProperties {
+  @scala.inline
+  def apply(field: java.lang.String = null): PointCloudFilterProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[PointCloudFilterProperties]
+  }
+}
+

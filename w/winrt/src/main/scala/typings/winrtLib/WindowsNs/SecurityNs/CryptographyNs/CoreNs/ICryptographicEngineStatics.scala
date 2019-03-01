@@ -38,3 +38,57 @@ trait ICryptographicEngineStatics extends js.Object {
   ): scala.Boolean
 }
 
+object ICryptographicEngineStatics {
+  @scala.inline
+  def apply(
+    decrypt: js.Function3[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
+    ],
+    decryptAndAuthenticate: js.Function5[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
+    ],
+    deriveKeyMaterial: js.Function3[
+      CryptographicKey, 
+      KeyDerivationParameters, 
+      scala.Double, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
+    ],
+    encrypt: js.Function3[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
+    ],
+    encryptAndAuthenticate: js.Function4[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      EncryptedAndAuthenticatedData
+    ],
+    sign: js.Function2[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
+    ],
+    verifySignature: js.Function3[
+      CryptographicKey, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, 
+      scala.Boolean
+    ]
+  ): ICryptographicEngineStatics = {
+    val __obj = js.Dynamic.literal(decrypt = decrypt, decryptAndAuthenticate = decryptAndAuthenticate, deriveKeyMaterial = deriveKeyMaterial, encrypt = encrypt, encryptAndAuthenticate = encryptAndAuthenticate, sign = sign, verifySignature = verifySignature)
+  
+    __obj.asInstanceOf[ICryptographicEngineStatics]
+  }
+}
+

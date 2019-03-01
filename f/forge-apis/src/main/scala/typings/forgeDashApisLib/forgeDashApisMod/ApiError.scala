@@ -10,3 +10,12 @@ trait ApiError extends js.Object {
   var statusMessage: java.lang.String
 }
 
+object ApiError {
+  @scala.inline
+  def apply(statusCode: scala.Double, statusMessage: java.lang.String): ApiError = {
+    val __obj = js.Dynamic.literal(statusCode = statusCode, statusMessage = statusMessage)
+  
+    __obj.asInstanceOf[ApiError]
+  }
+}
+

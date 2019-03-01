@@ -87,3 +87,22 @@ trait BaseLayerView2D extends js.Object {
   def tilesChanged(added: js.Array[Tile], removed: js.Array[Tile]): scala.Unit
 }
 
+object BaseLayerView2D {
+  @scala.inline
+  def apply(
+    attach: js.Function0[scala.Unit],
+    detach: js.Function0[scala.Unit],
+    hitTest: js.Function2[scala.Double, scala.Double, arcgisDashJsDashApiLib.IPromise[Graphic]],
+    layer: Layer,
+    render: js.Function1[BaseLayerView2DRenderRenderParameters, scala.Unit],
+    requestRender: js.Function0[scala.Unit],
+    tiles: js.Array[Tile],
+    tilesChanged: js.Function2[js.Array[Tile], js.Array[Tile], scala.Unit],
+    view: MapView
+  ): BaseLayerView2D = {
+    val __obj = js.Dynamic.literal(attach = attach, detach = detach, hitTest = hitTest, layer = layer, render = render, requestRender = requestRender, tiles = tiles, tilesChanged = tilesChanged, view = view)
+  
+    __obj.asInstanceOf[BaseLayerView2D]
+  }
+}
+

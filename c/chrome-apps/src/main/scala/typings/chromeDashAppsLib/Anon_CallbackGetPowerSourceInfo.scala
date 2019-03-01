@@ -32,3 +32,27 @@ trait Anon_CallbackGetPowerSourceInfo extends js.Object {
   def requestStatusUpdate(): scala.Unit
 }
 
+object Anon_CallbackGetPowerSourceInfo {
+  @scala.inline
+  def apply(
+    getPowerSourceInfo: js.Function1[
+      js.Function1[
+        /* powerSourceInfo */ js.UndefOr[js.Array[chromeDashAppsLib.chromeNs.systemNs.powerSourceNs.PowerSourceInfo]], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    onPowerChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function1[
+        /* powerSourceInfo */ js.Array[chromeDashAppsLib.chromeNs.systemNs.powerSourceNs.PowerSourceInfo], 
+        scala.Unit
+      ]
+    ],
+    requestStatusUpdate: js.Function0[scala.Unit]
+  ): Anon_CallbackGetPowerSourceInfo = {
+    val __obj = js.Dynamic.literal(getPowerSourceInfo = getPowerSourceInfo, onPowerChanged = onPowerChanged, requestStatusUpdate = requestStatusUpdate)
+  
+    __obj.asInstanceOf[Anon_CallbackGetPowerSourceInfo]
+  }
+}
+

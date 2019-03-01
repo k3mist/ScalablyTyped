@@ -15,3 +15,17 @@ trait Dimension
   var value: java.lang.String
 }
 
+object Dimension {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Dimension,
+    unit: java.lang.String,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): Dimension = {
+    val __obj = js.Dynamic.literal(`type` = `type`, unit = unit, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Dimension]
+  }
+}
+

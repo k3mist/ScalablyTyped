@@ -10,3 +10,12 @@ trait Context extends js.Object {
   def main(): scala.Unit
 }
 
+object Context {
+  @scala.inline
+  def apply(init: js.Function0[scala.Unit], main: js.Function0[scala.Unit]): Context = {
+    val __obj = js.Dynamic.literal(init = init, main = main)
+  
+    __obj.asInstanceOf[Context]
+  }
+}
+

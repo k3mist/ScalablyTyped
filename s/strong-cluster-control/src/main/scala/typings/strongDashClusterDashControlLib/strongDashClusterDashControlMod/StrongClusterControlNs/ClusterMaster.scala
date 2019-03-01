@@ -11,3 +11,12 @@ trait ClusterMaster extends js.Object {
   var startTime: scala.Double
 }
 
+object ClusterMaster {
+  @scala.inline
+  def apply(pid: scala.Double, startTime: scala.Double, setSize: scala.Int | scala.Double = null): ClusterMaster = {
+    val __obj = js.Dynamic.literal(pid = pid, startTime = startTime)
+    if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterMaster]
+  }
+}
+

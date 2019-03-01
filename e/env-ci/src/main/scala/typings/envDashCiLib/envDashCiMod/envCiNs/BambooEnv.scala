@@ -18,3 +18,22 @@ trait BambooEnv
   var service: envDashCiLib.envDashCiLibStrings.bamboo
 }
 
+object BambooEnv {
+  @scala.inline
+  def apply(
+    branch: java.lang.String,
+    build: java.lang.String,
+    buildUrl: java.lang.String,
+    commit: java.lang.String,
+    isCi: envDashCiLib.envDashCiLibNumbers.`true`,
+    job: java.lang.String,
+    name: envDashCiLib.envDashCiLibStrings.Bamboo,
+    root: java.lang.String,
+    service: envDashCiLib.envDashCiLibStrings.bamboo
+  ): BambooEnv = {
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, job = job, name = name, root = root, service = service)
+  
+    __obj.asInstanceOf[BambooEnv]
+  }
+}
+

@@ -23,3 +23,18 @@ trait ASPxClientRadarDiagram extends ASPxClientXYDiagramBase {
   def PointToDiagram(x: scala.Double, y: scala.Double): ASPxClientDiagramCoordinates
 }
 
+object ASPxClientRadarDiagram {
+  @scala.inline
+  def apply(
+    DiagramToPoint: js.Function2[js.Object, js.Object, ASPxClientControlCoordinates],
+    PointToDiagram: js.Function2[scala.Double, scala.Double, ASPxClientDiagramCoordinates],
+    axisX: ASPxClientAxisBase,
+    axisY: ASPxClientAxisBase,
+    chart: ASPxClientWebChart
+  ): ASPxClientRadarDiagram = {
+    val __obj = js.Dynamic.literal(DiagramToPoint = DiagramToPoint, PointToDiagram = PointToDiagram, axisX = axisX, axisY = axisY, chart = chart)
+  
+    __obj.asInstanceOf[ASPxClientRadarDiagram]
+  }
+}
+

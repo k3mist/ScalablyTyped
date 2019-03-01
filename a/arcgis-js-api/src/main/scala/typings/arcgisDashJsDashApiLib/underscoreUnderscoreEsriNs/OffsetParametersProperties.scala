@@ -45,3 +45,22 @@ trait OffsetParametersProperties extends js.Object {
   var offsetUnit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OffsetParametersProperties {
+  @scala.inline
+  def apply(
+    bevelRatio: scala.Int | scala.Double = null,
+    geometries: js.Array[GeometryProperties] = null,
+    offsetDistance: scala.Int | scala.Double = null,
+    offsetHow: java.lang.String = null,
+    offsetUnit: java.lang.String = null
+  ): OffsetParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (bevelRatio != null) __obj.updateDynamic("bevelRatio")(bevelRatio.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (offsetDistance != null) __obj.updateDynamic("offsetDistance")(offsetDistance.asInstanceOf[js.Any])
+    if (offsetHow != null) __obj.updateDynamic("offsetHow")(offsetHow)
+    if (offsetUnit != null) __obj.updateDynamic("offsetUnit")(offsetUnit)
+    __obj.asInstanceOf[OffsetParametersProperties]
+  }
+}
+

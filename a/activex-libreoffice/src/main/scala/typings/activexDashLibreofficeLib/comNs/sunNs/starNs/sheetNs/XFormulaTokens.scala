@@ -15,3 +15,16 @@ trait XFormulaTokens extends js.Object {
   def setTokens(aTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken]): scala.Unit
 }
 
+object XFormulaTokens {
+  @scala.inline
+  def apply(
+    Tokens: activexDashInteropLib.SafeArray[FormulaToken],
+    getTokens: js.Function0[activexDashInteropLib.SafeArray[FormulaToken]],
+    setTokens: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], scala.Unit]
+  ): XFormulaTokens = {
+    val __obj = js.Dynamic.literal(Tokens = Tokens, getTokens = getTokens, setTokens = setTokens)
+  
+    __obj.asInstanceOf[XFormulaTokens]
+  }
+}
+

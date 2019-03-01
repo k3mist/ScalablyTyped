@@ -10,3 +10,12 @@ trait VectorTileLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object VectorTileLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): VectorTileLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[VectorTileLayerLayerviewDestroyEvent]
+  }
+}
+

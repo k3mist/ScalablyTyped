@@ -68,3 +68,28 @@ trait TestSession extends js.Object {
   var url: java.lang.String
 }
 
+object TestSession {
+  @scala.inline
+  def apply(
+    area: ShallowReference,
+    comment: java.lang.String,
+    endDate: stdLib.Date,
+    id: scala.Double,
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    project: ShallowReference,
+    propertyBag: PropertyBag,
+    revision: scala.Double,
+    source: TestSessionSource,
+    startDate: stdLib.Date,
+    state: TestSessionState,
+    title: java.lang.String,
+    url: java.lang.String
+  ): TestSession = {
+    val __obj = js.Dynamic.literal(area = area, comment = comment, endDate = endDate, id = id, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, owner = owner, project = project, propertyBag = propertyBag, revision = revision, source = source, startDate = startDate, state = state, title = title, url = url)
+  
+    __obj.asInstanceOf[TestSession]
+  }
+}
+

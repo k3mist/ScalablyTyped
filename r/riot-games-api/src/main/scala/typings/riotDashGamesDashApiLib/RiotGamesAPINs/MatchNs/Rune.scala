@@ -10,3 +10,12 @@ trait Rune extends js.Object {
   var runeId: scala.Double
 }
 
+object Rune {
+  @scala.inline
+  def apply(rank: scala.Double, runeId: scala.Double): Rune = {
+    val __obj = js.Dynamic.literal(rank = rank, runeId = runeId)
+  
+    __obj.asInstanceOf[Rune]
+  }
+}
+

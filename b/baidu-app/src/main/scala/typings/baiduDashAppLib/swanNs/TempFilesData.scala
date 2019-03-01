@@ -15,3 +15,12 @@ trait TempFilesData extends js.Object {
   var tempFiles: js.Array[TempFile]
 }
 
+object TempFilesData {
+  @scala.inline
+  def apply(tempFilePaths: java.lang.String, tempFiles: js.Array[TempFile]): TempFilesData = {
+    val __obj = js.Dynamic.literal(tempFilePaths = tempFilePaths, tempFiles = tempFiles)
+  
+    __obj.asInstanceOf[TempFilesData]
+  }
+}
+

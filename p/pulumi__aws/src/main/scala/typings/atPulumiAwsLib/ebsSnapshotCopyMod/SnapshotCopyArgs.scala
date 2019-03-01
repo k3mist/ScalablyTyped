@@ -30,3 +30,22 @@ trait SnapshotCopyArgs extends js.Object {
   ] = js.undefined
 }
 
+object SnapshotCopyArgs {
+  @scala.inline
+  def apply(
+    sourceRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    sourceSnapshotId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotCopyArgs = {
+    val __obj = js.Dynamic.literal(sourceRegion = sourceRegion.asInstanceOf[js.Any], sourceSnapshotId = sourceSnapshotId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCopyArgs]
+  }
+}
+

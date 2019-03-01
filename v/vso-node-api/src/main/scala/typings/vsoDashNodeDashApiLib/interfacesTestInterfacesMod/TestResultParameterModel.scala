@@ -17,3 +17,19 @@ trait TestResultParameterModel extends js.Object {
   var value: java.lang.String
 }
 
+object TestResultParameterModel {
+  @scala.inline
+  def apply(
+    actionPath: java.lang.String,
+    iterationId: scala.Double,
+    parameterName: java.lang.String,
+    stepIdentifier: java.lang.String,
+    url: java.lang.String,
+    value: java.lang.String
+  ): TestResultParameterModel = {
+    val __obj = js.Dynamic.literal(actionPath = actionPath, iterationId = iterationId, parameterName = parameterName, stepIdentifier = stepIdentifier, url = url, value = value)
+  
+    __obj.asInstanceOf[TestResultParameterModel]
+  }
+}
+

@@ -16,3 +16,16 @@ trait PathEditor extends BaseEditor {
   def reset(): scala.Unit
 }
 
+object PathEditor {
+  @scala.inline
+  def apply(
+    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
+    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
+    reset: js.Function0[scala.Unit]
+  ): PathEditor = {
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, reset = reset)
+  
+    __obj.asInstanceOf[PathEditor]
+  }
+}
+

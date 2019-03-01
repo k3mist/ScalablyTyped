@@ -21,3 +21,19 @@ trait HttpProgress extends js.Object {
   var totalBytesToSend: scala.Double
 }
 
+object HttpProgress {
+  @scala.inline
+  def apply(
+    bytesReceived: scala.Double,
+    bytesSent: scala.Double,
+    retries: scala.Double,
+    stage: HttpProgressStage,
+    totalBytesToReceive: scala.Double,
+    totalBytesToSend: scala.Double
+  ): HttpProgress = {
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, bytesSent = bytesSent, retries = retries, stage = stage, totalBytesToReceive = totalBytesToReceive, totalBytesToSend = totalBytesToSend)
+  
+    __obj.asInstanceOf[HttpProgress]
+  }
+}
+

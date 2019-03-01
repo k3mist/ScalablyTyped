@@ -12,3 +12,12 @@ trait GetVpcLinkResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetVpcLinkResult {
+  @scala.inline
+  def apply(id: java.lang.String): GetVpcLinkResult = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[GetVpcLinkResult]
+  }
+}
+

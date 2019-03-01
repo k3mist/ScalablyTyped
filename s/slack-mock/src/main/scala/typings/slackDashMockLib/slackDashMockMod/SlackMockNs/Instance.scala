@@ -16,3 +16,21 @@ trait Instance extends js.Object {
   def reset(): scala.Unit
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    events: Events[_],
+    incomingWebhooks: IncomingWebhooks[_],
+    interactiveButtons: InteractiveButtons[_],
+    outgoingWebhooks: OutgoingWebhooks[_],
+    reset: js.Function0[scala.Unit],
+    rtm: Rtm[_],
+    slashCommands: SlashCommands[_],
+    web: Web[_]
+  ): Instance = {
+    val __obj = js.Dynamic.literal(events = events, incomingWebhooks = incomingWebhooks, interactiveButtons = interactiveButtons, outgoingWebhooks = outgoingWebhooks, reset = reset, rtm = rtm, slashCommands = slashCommands, web = web)
+  
+    __obj.asInstanceOf[Instance]
+  }
+}
+

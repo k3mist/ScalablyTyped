@@ -10,3 +10,12 @@ trait DeliveryStats extends js.Object {
   var InactiveMails: scala.Double
 }
 
+object DeliveryStats {
+  @scala.inline
+  def apply(Bounces: js.Array[BounceStats], InactiveMails: scala.Double): DeliveryStats = {
+    val __obj = js.Dynamic.literal(Bounces = Bounces, InactiveMails = InactiveMails)
+  
+    __obj.asInstanceOf[DeliveryStats]
+  }
+}
+

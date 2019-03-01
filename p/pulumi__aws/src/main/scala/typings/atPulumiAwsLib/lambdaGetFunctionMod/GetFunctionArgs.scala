@@ -16,3 +16,12 @@ trait GetFunctionArgs extends js.Object {
   val qualifier: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetFunctionArgs {
+  @scala.inline
+  def apply(functionName: java.lang.String, qualifier: java.lang.String = null): GetFunctionArgs = {
+    val __obj = js.Dynamic.literal(functionName = functionName)
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier)
+    __obj.asInstanceOf[GetFunctionArgs]
+  }
+}
+

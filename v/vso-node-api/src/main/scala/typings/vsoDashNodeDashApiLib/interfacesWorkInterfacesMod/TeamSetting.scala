@@ -32,3 +32,21 @@ trait TeamSetting extends TeamSettingsDataContractBase {
   var workingDays: js.Array[vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek]
 }
 
+object TeamSetting {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    backlogIteration: TeamSettingsIteration,
+    backlogVisibilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    bugsBehavior: BugsBehavior,
+    defaultIteration: TeamSettingsIteration,
+    defaultIterationMacro: java.lang.String,
+    url: java.lang.String,
+    workingDays: js.Array[vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek]
+  ): TeamSetting = {
+    val __obj = js.Dynamic.literal(_links = _links, backlogIteration = backlogIteration, backlogVisibilities = backlogVisibilities, bugsBehavior = bugsBehavior, defaultIteration = defaultIteration, defaultIterationMacro = defaultIterationMacro, url = url, workingDays = workingDays)
+  
+    __obj.asInstanceOf[TeamSetting]
+  }
+}
+

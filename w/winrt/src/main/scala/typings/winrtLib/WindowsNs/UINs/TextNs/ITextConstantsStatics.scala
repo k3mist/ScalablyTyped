@@ -16,3 +16,21 @@ trait ITextConstantsStatics extends js.Object {
   var undefinedInt32Value: scala.Double
 }
 
+object ITextConstantsStatics {
+  @scala.inline
+  def apply(
+    autoColor: winrtLib.WindowsNs.UINs.Color,
+    maxUnitCount: scala.Double,
+    minUnitCount: scala.Double,
+    undefinedColor: winrtLib.WindowsNs.UINs.Color,
+    undefinedFloatValue: scala.Double,
+    undefinedFontStretch: FontStretch,
+    undefinedFontStyle: FontStyle,
+    undefinedInt32Value: scala.Double
+  ): ITextConstantsStatics = {
+    val __obj = js.Dynamic.literal(autoColor = autoColor, maxUnitCount = maxUnitCount, minUnitCount = minUnitCount, undefinedColor = undefinedColor, undefinedFloatValue = undefinedFloatValue, undefinedFontStretch = undefinedFontStretch, undefinedFontStyle = undefinedFontStyle, undefinedInt32Value = undefinedInt32Value)
+  
+    __obj.asInstanceOf[ITextConstantsStatics]
+  }
+}
+

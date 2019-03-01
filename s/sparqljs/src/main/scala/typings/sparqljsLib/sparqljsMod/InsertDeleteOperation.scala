@@ -13,3 +13,21 @@ trait InsertDeleteOperation extends UpdateOperation {
   var where: js.UndefOr[js.Array[Pattern]] = js.undefined
 }
 
+object InsertDeleteOperation {
+  @scala.inline
+  def apply(
+    updateType: sparqljsLib.sparqljsLibStrings.insert | sparqljsLib.sparqljsLibStrings.delete | sparqljsLib.sparqljsLibStrings.deletewhere | sparqljsLib.sparqljsLibStrings.insertdelete,
+    delete: js.Array[Quads] = null,
+    graph: java.lang.String = null,
+    insert: js.Array[Quads] = null,
+    where: js.Array[Pattern] = null
+  ): InsertDeleteOperation = {
+    val __obj = js.Dynamic.literal(updateType = updateType.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (graph != null) __obj.updateDynamic("graph")(graph)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[InsertDeleteOperation]
+  }
+}
+

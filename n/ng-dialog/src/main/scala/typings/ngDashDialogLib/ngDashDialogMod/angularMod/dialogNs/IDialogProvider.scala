@@ -28,3 +28,17 @@ trait IDialogProvider
   def setForceHtmlReload(force: scala.Boolean): scala.Unit
 }
 
+object IDialogProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    setDefaults: js.Function1[IDialogOptions, scala.Unit],
+    setForceBodyReload: js.Function1[scala.Boolean, scala.Unit],
+    setForceHtmlReload: js.Function1[scala.Boolean, scala.Unit]
+  ): IDialogProvider = {
+    val __obj = js.Dynamic.literal($get = $get, setDefaults = setDefaults, setForceBodyReload = setForceBodyReload, setForceHtmlReload = setForceHtmlReload)
+  
+    __obj.asInstanceOf[IDialogProvider]
+  }
+}
+

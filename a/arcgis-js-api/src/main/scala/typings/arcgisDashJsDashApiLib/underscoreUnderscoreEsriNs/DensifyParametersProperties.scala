@@ -32,3 +32,20 @@ trait DensifyParametersProperties extends js.Object {
   var maxSegmentLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DensifyParametersProperties {
+  @scala.inline
+  def apply(
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    geometries: js.Array[GeometryProperties] = null,
+    lengthUnit: java.lang.String = null,
+    maxSegmentLength: scala.Int | scala.Double = null
+  ): DensifyParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit)
+    if (maxSegmentLength != null) __obj.updateDynamic("maxSegmentLength")(maxSegmentLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DensifyParametersProperties]
+  }
+}
+

@@ -50,3 +50,56 @@ trait XLinePolyPolygon2D extends XPolyPolygon2D {
   ): scala.Unit
 }
 
+object XLinePolyPolygon2D {
+  @scala.inline
+  def apply(
+    FillRule: FillRule,
+    NumberOfPolygons: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPolyPolygon: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      XPolyPolygon2D, 
+      scala.Unit
+    ],
+    getFillRule: js.Function0[FillRule],
+    getNumberOfPolygonPoints: js.Function1[scala.Double, scala.Double],
+    getNumberOfPolygons: js.Function0[scala.Double],
+    getPoint: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D
+    ],
+    getPoints: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+      ]
+    ],
+    isClosed: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setClosed: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    setFillRule: js.Function1[FillRule, scala.Unit],
+    setPoint: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    setPoints: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+      ], 
+      scala.Double, 
+      scala.Unit
+    ]
+  ): XLinePolyPolygon2D = {
+    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = acquire, addPolyPolygon = addPolyPolygon, getFillRule = getFillRule, getNumberOfPolygonPoints = getNumberOfPolygonPoints, getNumberOfPolygons = getNumberOfPolygons, getPoint = getPoint, getPoints = getPoints, isClosed = isClosed, queryInterface = queryInterface, release = release, setClosed = setClosed, setFillRule = setFillRule, setPoint = setPoint, setPoints = setPoints)
+  
+    __obj.asInstanceOf[XLinePolyPolygon2D]
+  }
+}
+

@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSLiteralType
 }
 
+object TSLiteralType {
+  @scala.inline
+  def apply(
+    literal: astDashTypesLib.genKindsMod.NumericLiteralKind | astDashTypesLib.genKindsMod.StringLiteralKind | astDashTypesLib.genKindsMod.BooleanLiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSLiteralType
+  ): TSLiteralType = {
+    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[TSLiteralType]
+  }
+}
+

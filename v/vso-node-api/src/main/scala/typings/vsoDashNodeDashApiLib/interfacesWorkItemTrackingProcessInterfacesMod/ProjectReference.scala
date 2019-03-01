@@ -24,3 +24,12 @@ trait ProjectReference extends js.Object {
   var url: java.lang.String
 }
 
+object ProjectReference {
+  @scala.inline
+  def apply(description: java.lang.String, id: java.lang.String, name: java.lang.String, url: java.lang.String): ProjectReference = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[ProjectReference]
+  }
+}
+

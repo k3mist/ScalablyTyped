@@ -67,3 +67,24 @@ trait XScriptContext
   def getInvocationContext(): activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext
 }
 
+object XScriptContext {
+  @scala.inline
+  def apply(
+    ComponentContext: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext,
+    Desktop: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDesktop,
+    Document: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    InvocationContext: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext,
+    acquire: js.Function0[scala.Unit],
+    getComponentContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XComponentContext],
+    getDesktop: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDesktop],
+    getDocument: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel],
+    getInvocationContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XScriptInvocationContext],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScriptContext = {
+    val __obj = js.Dynamic.literal(ComponentContext = ComponentContext, Desktop = Desktop, Document = Document, InvocationContext = InvocationContext, acquire = acquire, getComponentContext = getComponentContext, getDesktop = getDesktop, getDocument = getDocument, getInvocationContext = getInvocationContext, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScriptContext]
+  }
+}
+

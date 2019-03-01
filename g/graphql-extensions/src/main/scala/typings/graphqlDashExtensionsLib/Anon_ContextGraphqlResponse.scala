@@ -10,3 +10,15 @@ trait Anon_ContextGraphqlResponse[TContext] extends js.Object {
   var graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
 }
 
+object Anon_ContextGraphqlResponse {
+  @scala.inline
+  def apply[TContext](
+    context: TContext,
+    graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
+  ): Anon_ContextGraphqlResponse[TContext] = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], graphqlResponse = graphqlResponse)
+  
+    __obj.asInstanceOf[Anon_ContextGraphqlResponse[TContext]]
+  }
+}
+

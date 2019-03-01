@@ -12,3 +12,12 @@ trait RgbaObj extends js.Object {
   var red: scala.Double
 }
 
+object RgbaObj {
+  @scala.inline
+  def apply(alpha: scala.Double, blue: scala.Double, green: scala.Double, red: scala.Double): RgbaObj = {
+    val __obj = js.Dynamic.literal(alpha = alpha, blue = blue, green = green, red = red)
+  
+    __obj.asInstanceOf[RgbaObj]
+  }
+}
+

@@ -39,3 +39,25 @@ trait RequestResponse
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestResponse {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    data: js.Any = null,
+    getHeader: GetHeader = null,
+    requestOptions: RequestOptions = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null
+  ): RequestResponse = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (getHeader != null) __obj.updateDynamic("getHeader")(getHeader)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[RequestResponse]
+  }
+}
+

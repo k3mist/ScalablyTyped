@@ -81,3 +81,27 @@ trait IGenericBookmark extends js.Object {
   def unPublish(): js.Promise[scala.Unit]
 }
 
+object IGenericBookmark {
+  @scala.inline
+  def apply(
+    apply: js.Function0[js.Promise[scala.Boolean]],
+    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
+    getFieldValues: js.Function3[
+      java.lang.String, 
+      scala.Boolean, 
+      qlikDashEngineapiLib.Anon_QEndIndex, 
+      js.Promise[qlikDashEngineapiLib.Anon_QFieldValues]
+    ],
+    getInfo: js.Function0[js.Promise[INxInfo]],
+    getLayout: js.Function0[js.Promise[IGenericBookmarkLayout]],
+    getProperties: js.Function0[js.Promise[IGenericBookmarkProperties]],
+    publish: js.Function0[js.Promise[scala.Unit]],
+    setProperties: js.Function1[IGenericBookmarkProperties, js.Promise[scala.Unit]],
+    unPublish: js.Function0[js.Promise[scala.Unit]]
+  ): IGenericBookmark = {
+    val __obj = js.Dynamic.literal(apply = apply, applyPatches = applyPatches, getFieldValues = getFieldValues, getInfo = getInfo, getLayout = getLayout, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+  
+    __obj.asInstanceOf[IGenericBookmark]
+  }
+}
+

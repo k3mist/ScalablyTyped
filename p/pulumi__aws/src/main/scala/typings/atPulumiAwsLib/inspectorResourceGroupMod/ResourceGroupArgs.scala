@@ -12,3 +12,12 @@ trait ResourceGroupArgs extends js.Object {
   val tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
 }
 
+object ResourceGroupArgs {
+  @scala.inline
+  def apply(tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]): ResourceGroupArgs = {
+    val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ResourceGroupArgs]
+  }
+}
+

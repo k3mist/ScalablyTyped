@@ -22,3 +22,22 @@ trait XLibraryContainerExport
   ): scala.Unit
 }
 
+object XLibraryContainerExport {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    exportLibrary: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLibraryContainerExport = {
+    val __obj = js.Dynamic.literal(acquire = acquire, exportLibrary = exportLibrary, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLibraryContainerExport]
+  }
+}
+

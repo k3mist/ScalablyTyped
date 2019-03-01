@@ -39,3 +39,25 @@ trait EnhancedCustomShapePath extends js.Object {
   var TextPathAllowed: scala.Boolean
 }
 
+object EnhancedCustomShapePath {
+  @scala.inline
+  def apply(
+    ConcentricGradientFillAllowed: scala.Boolean,
+    Coordinates: activexDashInteropLib.SafeArray[EnhancedCustomShapeParameterPair],
+    ExtrusionAllowed: scala.Boolean,
+    GluePointLeavingDirections: activexDashInteropLib.SafeArray[scala.Double],
+    GluePointType: scala.Double,
+    GluePoints: activexDashInteropLib.SafeArray[EnhancedCustomShapeParameterPair],
+    Segments: activexDashInteropLib.SafeArray[EnhancedCustomShapeSegment],
+    StretchX: scala.Double,
+    StretchY: scala.Double,
+    SubViewSize: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    TextFrames: activexDashInteropLib.SafeArray[EnhancedCustomShapeTextFrame],
+    TextPathAllowed: scala.Boolean
+  ): EnhancedCustomShapePath = {
+    val __obj = js.Dynamic.literal(ConcentricGradientFillAllowed = ConcentricGradientFillAllowed, Coordinates = Coordinates, ExtrusionAllowed = ExtrusionAllowed, GluePointLeavingDirections = GluePointLeavingDirections, GluePointType = GluePointType, GluePoints = GluePoints, Segments = Segments, StretchX = StretchX, StretchY = StretchY, SubViewSize = SubViewSize, TextFrames = TextFrames, TextPathAllowed = TextPathAllowed)
+  
+    __obj.asInstanceOf[EnhancedCustomShapePath]
+  }
+}
+

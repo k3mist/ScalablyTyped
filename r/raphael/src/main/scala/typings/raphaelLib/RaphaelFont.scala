@@ -11,3 +11,12 @@ trait RaphaelFont extends js.Object {
   var w: scala.Double
 }
 
+object RaphaelFont {
+  @scala.inline
+  def apply(face: js.Any, glyphs: js.Any, w: scala.Double): RaphaelFont = {
+    val __obj = js.Dynamic.literal(face = face, glyphs = glyphs, w = w)
+  
+    __obj.asInstanceOf[RaphaelFont]
+  }
+}
+

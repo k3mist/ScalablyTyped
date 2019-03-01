@@ -15,3 +15,12 @@ trait InsertFooterCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object InsertFooterCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertFooterCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[InsertFooterCommand]
+  }
+}
+

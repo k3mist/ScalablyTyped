@@ -88,3 +88,33 @@ trait sizeCreateAgeRendererParams
   var view: View
 }
 
+object sizeCreateAgeRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    endTime: stdLib.Date | java.lang.String | scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    startTime: stdLib.Date | java.lang.String | scala.Double,
+    view: View,
+    basemap: java.lang.String | Basemap = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    legendOptions: sizeCreateAgeRendererParamsLegendOptions = null,
+    sizeScheme: SizeScheme = null,
+    statistics: SummaryStatisticsResult = null,
+    symbolType: java.lang.String = null,
+    unit: java.lang.String = null
+  ): sizeCreateAgeRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, startTime = startTime.asInstanceOf[js.Any], view = view)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[sizeCreateAgeRendererParams]
+  }
+}
+

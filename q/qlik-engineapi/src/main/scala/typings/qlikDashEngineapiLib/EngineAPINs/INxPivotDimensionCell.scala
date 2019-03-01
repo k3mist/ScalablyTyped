@@ -73,3 +73,24 @@ trait INxPivotDimensionCell extends js.Object {
   var qValue: scala.Double
 }
 
+object INxPivotDimensionCell {
+  @scala.inline
+  def apply(
+    qAttrDims: js.Array[INxAttributeDimValues],
+    qAttrExps: js.Array[INxAttributeExpressionValues],
+    qCanCollapse: scala.Boolean,
+    qCanExpand: scala.Boolean,
+    qDown: scala.Double,
+    qElemNo: scala.Double,
+    qSubNodes: js.Array[INxPivotDimensionCell],
+    qText: java.lang.String,
+    qType: NxCellType,
+    qUp: scala.Double,
+    qValue: scala.Double
+  ): INxPivotDimensionCell = {
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qCanCollapse = qCanCollapse, qCanExpand = qCanExpand, qDown = qDown, qElemNo = qElemNo, qSubNodes = qSubNodes, qText = qText, qType = qType, qUp = qUp, qValue = qValue)
+  
+    __obj.asInstanceOf[INxPivotDimensionCell]
+  }
+}
+

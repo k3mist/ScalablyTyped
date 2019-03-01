@@ -17,3 +17,12 @@ trait ExternalParameter extends js.Object {
   var `type`: java.lang.String
 }
 
+object ExternalParameter {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String): ExternalParameter = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[ExternalParameter]
+  }
+}
+

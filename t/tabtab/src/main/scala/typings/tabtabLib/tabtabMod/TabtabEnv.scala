@@ -40,3 +40,21 @@ trait TabtabEnv extends js.Object {
   var words: scala.Double
 }
 
+object TabtabEnv {
+  @scala.inline
+  def apply(
+    complete: scala.Boolean,
+    last: java.lang.String,
+    lastPartial: java.lang.String,
+    line: java.lang.String,
+    partial: java.lang.String,
+    point: scala.Double,
+    prev: java.lang.String,
+    words: scala.Double
+  ): TabtabEnv = {
+    val __obj = js.Dynamic.literal(complete = complete, last = last, lastPartial = lastPartial, line = line, partial = partial, point = point, prev = prev, words = words)
+  
+    __obj.asInstanceOf[TabtabEnv]
+  }
+}
+

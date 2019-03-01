@@ -36,3 +36,19 @@ trait PieArcDatum[T] extends js.Object {
   var value: scala.Double
 }
 
+object PieArcDatum {
+  @scala.inline
+  def apply[T](
+    data: T,
+    endAngle: scala.Double,
+    index: scala.Double,
+    padAngle: scala.Double,
+    startAngle: scala.Double,
+    value: scala.Double
+  ): PieArcDatum[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], endAngle = endAngle, index = index, padAngle = padAngle, startAngle = startAngle, value = value)
+  
+    __obj.asInstanceOf[PieArcDatum[T]]
+  }
+}
+

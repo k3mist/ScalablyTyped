@@ -15,3 +15,16 @@ trait Binding extends js.Object {
   def unbind(): scala.Unit
 }
 
+object Binding {
+  @scala.inline
+  def apply(
+    collaborativeObject: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeObject,
+    domElement: stdLib.Element,
+    unbind: js.Function0[scala.Unit]
+  ): Binding = {
+    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject, domElement = domElement, unbind = unbind)
+  
+    __obj.asInstanceOf[Binding]
+  }
+}
+

@@ -16,3 +16,21 @@ trait PaneState extends js.Object {
   var size: scala.Double
 }
 
+object PaneState {
+  @scala.inline
+  def apply(
+    isClosed: scala.Boolean,
+    isHidden: scala.Boolean,
+    isResizing: scala.Boolean,
+    isSliding: scala.Boolean,
+    maxSize: scala.Double,
+    minSize: scala.Double,
+    noRoom: scala.Boolean,
+    size: scala.Double
+  ): PaneState = {
+    val __obj = js.Dynamic.literal(isClosed = isClosed, isHidden = isHidden, isResizing = isResizing, isSliding = isSliding, maxSize = maxSize, minSize = minSize, noRoom = noRoom, size = size)
+  
+    __obj.asInstanceOf[PaneState]
+  }
+}
+

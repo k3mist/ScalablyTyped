@@ -31,3 +31,19 @@ trait XViewDataSupplier
   def setViewData(Data: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess): scala.Unit
 }
 
+object XViewDataSupplier {
+  @scala.inline
+  def apply(
+    ViewData: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getViewData: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setViewData: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit]
+  ): XViewDataSupplier = {
+    val __obj = js.Dynamic.literal(ViewData = ViewData, acquire = acquire, getViewData = getViewData, queryInterface = queryInterface, release = release, setViewData = setViewData)
+  
+    __obj.asInstanceOf[XViewDataSupplier]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_AVAILABLE extends js.Object {
   var UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
 }
 
+object Anon_AVAILABLE {
+  @scala.inline
+  def apply(
+    AVAILABLE: chromeDashAppsLib.chromeDashAppsLibStrings.available,
+    ENABLED: chromeDashAppsLib.chromeDashAppsLibStrings.enabled,
+    UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
+  ): Anon_AVAILABLE = {
+    val __obj = js.Dynamic.literal(AVAILABLE = AVAILABLE, ENABLED = ENABLED, UNKNOWN = UNKNOWN)
+  
+    __obj.asInstanceOf[Anon_AVAILABLE]
+  }
+}
+

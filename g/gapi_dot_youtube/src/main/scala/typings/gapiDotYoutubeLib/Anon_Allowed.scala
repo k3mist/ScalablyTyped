@@ -16,3 +16,12 @@ trait Anon_Allowed extends js.Object {
   var blocked: js.Array[java.lang.String]
 }
 
+object Anon_Allowed {
+  @scala.inline
+  def apply(allowed: js.Array[java.lang.String], blocked: js.Array[java.lang.String]): Anon_Allowed = {
+    val __obj = js.Dynamic.literal(allowed = allowed, blocked = blocked)
+  
+    __obj.asInstanceOf[Anon_Allowed]
+  }
+}
+

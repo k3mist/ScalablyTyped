@@ -16,3 +16,12 @@ trait UntagResourceInput extends js.Object {
   var TagKeys: TagKeyList
 }
 
+object UntagResourceInput {
+  @scala.inline
+  def apply(ResourceArn: ResourceArnString, TagKeys: TagKeyList): UntagResourceInput = {
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn, TagKeys = TagKeys)
+  
+    __obj.asInstanceOf[UntagResourceInput]
+  }
+}
+

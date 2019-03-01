@@ -32,3 +32,20 @@ trait DefaultTreeElement extends DefaultTreeParentNode {
   var tagName: java.lang.String
 }
 
+object DefaultTreeElement {
+  @scala.inline
+  def apply(
+    attrs: js.Array[Attribute],
+    childNodes: js.Array[DefaultTreeNode],
+    namespaceURI: java.lang.String,
+    nodeName: java.lang.String,
+    parentNode: DefaultTreeParentNode,
+    tagName: java.lang.String,
+    sourceCodeLocation: ElementLocation = null
+  ): DefaultTreeElement = {
+    val __obj = js.Dynamic.literal(attrs = attrs, childNodes = childNodes, namespaceURI = namespaceURI, nodeName = nodeName, parentNode = parentNode, tagName = tagName)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[DefaultTreeElement]
+  }
+}
+

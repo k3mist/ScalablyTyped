@@ -30,3 +30,34 @@ trait BootstrapChartEventMap extends ControlEventMap {
   var zoomStart: BootstrapChartEventArgsBase
 }
 
+object BootstrapChartEventMap {
+  @scala.inline
+  def apply(
+    argumentAxisClick: BootstrapChartElementClickEventArgs,
+    disposing: BootstrapChartEventArgsBase,
+    done: BootstrapChartEventArgsBase,
+    drawn: BootstrapChartEventArgsBase,
+    exported: BootstrapChartEventArgsBase,
+    exporting: BootstrapChartExportEventArgs,
+    fileSaving: BootstrapChartExportEventArgs,
+    incidentOccurred: BootstrapChartErrorEventArgs,
+    init: BootstrapChartEventArgsBase,
+    legendClick: BootstrapChartElementClickEventArgs,
+    optionChanged: BootstrapChartOptionChangedEventArgs,
+    pointClick: BootstrapChartElementClickEventArgs,
+    pointHoverChanged: BootstrapChartElementActionEventArgs,
+    pointSelectionChanged: BootstrapChartElementActionEventArgs,
+    seriesClick: BootstrapChartElementClickEventArgs,
+    seriesHoverChanged: BootstrapChartElementActionEventArgs,
+    seriesSelectionChanged: BootstrapChartElementActionEventArgs,
+    tooltipHidden: BootstrapChartElementActionEventArgs,
+    tooltipShown: BootstrapChartElementActionEventArgs,
+    zoomEnd: BootstrapChartZoomEndEventArgs,
+    zoomStart: BootstrapChartEventArgsBase
+  ): BootstrapChartEventMap = {
+    val __obj = js.Dynamic.literal(argumentAxisClick = argumentAxisClick, disposing = disposing, done = done, drawn = drawn, exported = exported, exporting = exporting, fileSaving = fileSaving, incidentOccurred = incidentOccurred, init = init, legendClick = legendClick, optionChanged = optionChanged, pointClick = pointClick, pointHoverChanged = pointHoverChanged, pointSelectionChanged = pointSelectionChanged, seriesClick = seriesClick, seriesHoverChanged = seriesHoverChanged, seriesSelectionChanged = seriesSelectionChanged, tooltipHidden = tooltipHidden, tooltipShown = tooltipShown, zoomEnd = zoomEnd, zoomStart = zoomStart)
+  
+    __obj.asInstanceOf[BootstrapChartEventMap]
+  }
+}
+

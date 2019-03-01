@@ -10,3 +10,12 @@ trait UsageIntermediary extends js.Object {
   var triggers: UsageTriggerResource
 }
 
+object UsageIntermediary {
+  @scala.inline
+  def apply(records: UsageRecordResource, triggers: UsageTriggerResource): UsageIntermediary = {
+    val __obj = js.Dynamic.literal(records = records, triggers = triggers)
+  
+    __obj.asInstanceOf[UsageIntermediary]
+  }
+}
+

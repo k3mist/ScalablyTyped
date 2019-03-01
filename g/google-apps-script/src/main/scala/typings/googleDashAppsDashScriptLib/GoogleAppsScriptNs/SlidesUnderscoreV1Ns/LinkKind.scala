@@ -20,3 +20,17 @@ trait LinkKind extends js.Object {
   var url: java.lang.String
 }
 
+object LinkKind {
+  @scala.inline
+  def apply(
+    page_object_id: java.lang.String,
+    relative_link: RelativeSlideLinkLink,
+    slide_index: scala.Double,
+    url: java.lang.String
+  ): LinkKind = {
+    val __obj = js.Dynamic.literal(page_object_id = page_object_id, relative_link = relative_link, slide_index = slide_index, url = url)
+  
+    __obj.asInstanceOf[LinkKind]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientEditClickEventArgs extends ASPxClientEventArgs {
   var htmlEvent: js.Object
 }
 
+object ASPxClientEditClickEventArgs {
+  @scala.inline
+  def apply(htmlElement: js.Object, htmlEvent: js.Object): ASPxClientEditClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent)
+  
+    __obj.asInstanceOf[ASPxClientEditClickEventArgs]
+  }
+}
+

@@ -23,3 +23,21 @@ trait XMenuBarMergingAcceptor
   def setMergedMenuBar(xMergedMenuBar: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess): scala.Boolean
 }
 
+object XMenuBarMergingAcceptor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeMergedMenuBar: js.Function0[scala.Unit],
+    setMergedMenuBar: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
+      scala.Boolean
+    ]
+  ): XMenuBarMergingAcceptor = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, removeMergedMenuBar = removeMergedMenuBar, setMergedMenuBar = setMergedMenuBar)
+  
+    __obj.asInstanceOf[XMenuBarMergingAcceptor]
+  }
+}
+

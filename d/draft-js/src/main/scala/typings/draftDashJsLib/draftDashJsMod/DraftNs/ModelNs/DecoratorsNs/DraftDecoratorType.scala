@@ -31,3 +31,20 @@ trait DraftDecoratorType extends js.Object {
   def getPropsForKey(key: java.lang.String): js.Any
 }
 
+object DraftDecoratorType {
+  @scala.inline
+  def apply(
+    getComponentForKey: js.Function1[java.lang.String, js.Function],
+    getDecorations: js.Function2[
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState, 
+      immutableLib.immutableMod.List[java.lang.String]
+    ],
+    getPropsForKey: js.Function1[java.lang.String, js.Any]
+  ): DraftDecoratorType = {
+    val __obj = js.Dynamic.literal(getComponentForKey = getComponentForKey, getDecorations = getDecorations, getPropsForKey = getPropsForKey)
+  
+    __obj.asInstanceOf[DraftDecoratorType]
+  }
+}
+

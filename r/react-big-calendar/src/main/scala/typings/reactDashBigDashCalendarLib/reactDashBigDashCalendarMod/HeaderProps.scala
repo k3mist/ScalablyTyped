@@ -11,3 +11,12 @@ trait HeaderProps extends js.Object {
   var localizer: DateLocalizer
 }
 
+object HeaderProps {
+  @scala.inline
+  def apply(date: stdLib.Date, label: java.lang.String, localizer: DateLocalizer): HeaderProps = {
+    val __obj = js.Dynamic.literal(date = date, label = label, localizer = localizer)
+  
+    __obj.asInstanceOf[HeaderProps]
+  }
+}
+

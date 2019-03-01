@@ -24,3 +24,29 @@ trait Date extends js.Object {
   def yearStart(date: js.Any): js.Any
 }
 
+object Date {
+  @scala.inline
+  def apply(
+    add: js.Function4[js.Any, scala.Double, java.lang.String, scala.Boolean, js.Any],
+    copy: js.Function1[js.Any, js.Any],
+    datePart: js.Function2[js.Any, scala.Boolean, js.Any],
+    dateToStr: js.Function2[java.lang.String, scala.Boolean, webixLib.WebixCallback],
+    dayStart: js.Function1[js.Any, js.Any],
+    equal: js.Function2[js.Any, js.Any, scala.Boolean],
+    getISOWeek: js.Function1[js.Any, scala.Double],
+    getUTCISOWeek: js.Function1[js.Any, scala.Double],
+    isHoliday: js.Function1[js.Any, scala.Boolean],
+    monthStart: js.Function1[js.Any, js.Any],
+    startOnMonday: scala.Boolean,
+    strToDate: js.Function2[java.lang.String, scala.Boolean, webixLib.WebixCallback],
+    timePart: js.Function1[js.Any, scala.Double],
+    toFixed: js.Function1[scala.Double, scala.Double],
+    weekStart: js.Function1[js.Any, js.Any],
+    yearStart: js.Function1[js.Any, js.Any]
+  ): Date = {
+    val __obj = js.Dynamic.literal(add = add, copy = copy, datePart = datePart, dateToStr = dateToStr, dayStart = dayStart, equal = equal, getISOWeek = getISOWeek, getUTCISOWeek = getUTCISOWeek, isHoliday = isHoliday, monthStart = monthStart, startOnMonday = startOnMonday, strToDate = strToDate, timePart = timePart, toFixed = toFixed, weekStart = weekStart, yearStart = yearStart)
+  
+    __obj.asInstanceOf[Date]
+  }
+}
+

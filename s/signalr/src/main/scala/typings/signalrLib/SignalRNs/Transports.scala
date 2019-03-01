@@ -12,3 +12,17 @@ trait Transports extends js.Object {
   var webSockets: Transport
 }
 
+object Transports {
+  @scala.inline
+  def apply(
+    foreverFrame: Transport,
+    longPolling: Transport,
+    serverSentEvents: Transport,
+    webSockets: Transport
+  ): Transports = {
+    val __obj = js.Dynamic.literal(foreverFrame = foreverFrame, longPolling = longPolling, serverSentEvents = serverSentEvents, webSockets = webSockets)
+  
+    __obj.asInstanceOf[Transports]
+  }
+}
+

@@ -14,3 +14,19 @@ trait XKeyListener
   def keyReleased(e: KeyEvent): scala.Unit
 }
 
+object XKeyListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    keyPressed: js.Function1[KeyEvent, scala.Unit],
+    keyReleased: js.Function1[KeyEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XKeyListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, keyPressed = keyPressed, keyReleased = keyReleased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XKeyListener]
+  }
+}
+

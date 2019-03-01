@@ -10,3 +10,12 @@ trait _PermissionConditionMetadata extends PermissionCondition {
   var metadataValue: java.lang.String
 }
 
+object _PermissionConditionMetadata {
+  @scala.inline
+  def apply(metadataKey: java.lang.String, metadataValue: java.lang.String): _PermissionConditionMetadata = {
+    val __obj = js.Dynamic.literal(metadataKey = metadataKey, metadataValue = metadataValue)
+  
+    __obj.asInstanceOf[_PermissionConditionMetadata]
+  }
+}
+

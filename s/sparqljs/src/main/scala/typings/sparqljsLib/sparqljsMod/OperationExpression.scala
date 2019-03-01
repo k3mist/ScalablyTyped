@@ -14,3 +14,17 @@ trait OperationExpression
   var type_OperationExpression: sparqljsLib.sparqljsLibStrings.operation
 }
 
+object OperationExpression {
+  @scala.inline
+  def apply(
+    args: js.Array[Expression],
+    operator: java.lang.String,
+    `type`: sparqljsLib.sparqljsLibStrings.operation,
+    distinct: js.UndefOr[scala.Boolean] = js.undefined
+  ): OperationExpression = {
+    val __obj = js.Dynamic.literal(args = args, operator = operator, `type` = `type`)
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    __obj.asInstanceOf[OperationExpression]
+  }
+}
+

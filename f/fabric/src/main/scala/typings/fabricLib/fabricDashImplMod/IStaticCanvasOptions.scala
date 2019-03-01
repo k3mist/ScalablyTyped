@@ -145,3 +145,50 @@ trait IStaticCanvasOptions extends js.Object {
   var vptCoords: js.UndefOr[fabricLib.Anon_BlBrTl] = js.undefined
 }
 
+object IStaticCanvasOptions {
+  @scala.inline
+  def apply(
+    allowTouchScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String | Pattern = null,
+    backgroundImage: Image | java.lang.String = null,
+    backgroundVpt: js.UndefOr[scala.Boolean] = js.undefined,
+    clipPath: Object = null,
+    clipTo: js.Function1[/* context */ stdLib.CanvasRenderingContext2D, scala.Unit] = null,
+    controlsAboveOverlay: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRetinaScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    imageSmoothingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined,
+    overlayColor: java.lang.String | Pattern = null,
+    overlayImage: Image = null,
+    overlayVpt: js.UndefOr[scala.Boolean] = js.undefined,
+    renderOnAddRemove: js.UndefOr[scala.Boolean] = js.undefined,
+    skipOffscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    stateful: js.UndefOr[scala.Boolean] = js.undefined,
+    svgViewportTransformation: js.UndefOr[scala.Boolean] = js.undefined,
+    viewportTransform: js.Array[scala.Double] = null,
+    vptCoords: fabricLib.Anon_BlBrTl = null
+  ): IStaticCanvasOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTouchScrolling)) __obj.updateDynamic("allowTouchScrolling")(allowTouchScrolling)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundVpt)) __obj.updateDynamic("backgroundVpt")(backgroundVpt)
+    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
+    if (clipTo != null) __obj.updateDynamic("clipTo")(clipTo)
+    if (!js.isUndefined(controlsAboveOverlay)) __obj.updateDynamic("controlsAboveOverlay")(controlsAboveOverlay)
+    if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling)
+    if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled)
+    if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues)
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
+    if (overlayImage != null) __obj.updateDynamic("overlayImage")(overlayImage)
+    if (!js.isUndefined(overlayVpt)) __obj.updateDynamic("overlayVpt")(overlayVpt)
+    if (!js.isUndefined(renderOnAddRemove)) __obj.updateDynamic("renderOnAddRemove")(renderOnAddRemove)
+    if (!js.isUndefined(skipOffscreen)) __obj.updateDynamic("skipOffscreen")(skipOffscreen)
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful)
+    if (!js.isUndefined(svgViewportTransformation)) __obj.updateDynamic("svgViewportTransformation")(svgViewportTransformation)
+    if (viewportTransform != null) __obj.updateDynamic("viewportTransform")(viewportTransform)
+    if (vptCoords != null) __obj.updateDynamic("vptCoords")(vptCoords)
+    __obj.asInstanceOf[IStaticCanvasOptions]
+  }
+}
+

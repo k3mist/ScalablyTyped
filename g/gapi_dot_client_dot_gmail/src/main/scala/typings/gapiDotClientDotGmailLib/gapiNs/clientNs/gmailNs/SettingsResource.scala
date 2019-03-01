@@ -31,3 +31,48 @@ trait SettingsResource extends js.Object {
   def updateVacation(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
 }
 
+object SettingsResource {
+  @scala.inline
+  def apply(
+    filters: FiltersResource,
+    forwardingAddresses: ForwardingAddressesResource,
+    getAutoForwarding: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AutoForwarding]
+    ],
+    getImap: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImapSettings]
+    ],
+    getPop: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PopSettings]
+    ],
+    getVacation: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
+    ],
+    sendAs: SendAsResource,
+    updateAutoForwarding: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AutoForwarding]
+    ],
+    updateImap: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImapSettings]
+    ],
+    updatePop: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PopSettings]
+    ],
+    updateVacation: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
+    ]
+  ): SettingsResource = {
+    val __obj = js.Dynamic.literal(filters = filters, forwardingAddresses = forwardingAddresses, getAutoForwarding = getAutoForwarding, getImap = getImap, getPop = getPop, getVacation = getVacation, sendAs = sendAs, updateAutoForwarding = updateAutoForwarding, updateImap = updateImap, updatePop = updatePop, updateVacation = updateVacation)
+  
+    __obj.asInstanceOf[SettingsResource]
+  }
+}
+

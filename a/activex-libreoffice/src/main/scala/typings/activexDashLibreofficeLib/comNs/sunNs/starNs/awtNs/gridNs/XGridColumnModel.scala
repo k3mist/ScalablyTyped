@@ -79,3 +79,37 @@ trait XGridColumnModel
   def setDefaultColumns(elements: scala.Double): scala.Unit
 }
 
+object XGridColumnModel {
+  @scala.inline
+  def apply(
+    ColumnCount: scala.Double,
+    Columns: activexDashInteropLib.SafeArray[XGridColumn],
+    acquire: js.Function0[scala.Unit],
+    addColumn: js.Function1[XGridColumn, scala.Double],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    createColumn: js.Function0[XGridColumn],
+    dispose: js.Function0[scala.Unit],
+    getColumn: js.Function1[scala.Double, XGridColumn],
+    getColumnCount: js.Function0[scala.Double],
+    getColumns: js.Function0[activexDashInteropLib.SafeArray[XGridColumn]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeColumn: js.Function1[scala.Double, scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setDefaultColumns: js.Function1[scala.Double, scala.Unit]
+  ): XGridColumnModel = {
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, acquire = acquire, addColumn = addColumn, addContainerListener = addContainerListener, addEventListener = addEventListener, createClone = createClone, createColumn = createColumn, dispose = dispose, getColumn = getColumn, getColumnCount = getColumnCount, getColumns = getColumns, queryInterface = queryInterface, release = release, removeColumn = removeColumn, removeContainerListener = removeContainerListener, removeEventListener = removeEventListener, setDefaultColumns = setDefaultColumns)
+  
+    __obj.asInstanceOf[XGridColumnModel]
+  }
+}
+

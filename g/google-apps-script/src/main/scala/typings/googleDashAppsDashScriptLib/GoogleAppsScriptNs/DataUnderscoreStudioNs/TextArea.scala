@@ -13,3 +13,18 @@ trait TextArea extends js.Object {
   def setPlaceholder(placeholder: java.lang.String): TextArea
 }
 
+object TextArea {
+  @scala.inline
+  def apply(
+    setAllowOverride: js.Function1[scala.Boolean, TextArea],
+    setHelpText: js.Function1[java.lang.String, TextArea],
+    setId: js.Function1[java.lang.String, TextArea],
+    setName: js.Function1[java.lang.String, TextArea],
+    setPlaceholder: js.Function1[java.lang.String, TextArea]
+  ): TextArea = {
+    val __obj = js.Dynamic.literal(setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName, setPlaceholder = setPlaceholder)
+  
+    __obj.asInstanceOf[TextArea]
+  }
+}
+

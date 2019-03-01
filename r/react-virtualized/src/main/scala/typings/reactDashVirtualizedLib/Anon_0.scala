@@ -13,3 +13,18 @@ trait Anon_0 extends js.Object {
   var scrollToRow: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    disabled: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
+    isControlled: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
+    mode: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.edges,
+    scrollToColumn: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
+    scrollToRow: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal(disabled = disabled, isControlled = isControlled, mode = mode, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+  
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

@@ -14,3 +14,21 @@ trait QuickInfo extends js.Object {
   var textSpan: TextSpan
 }
 
+object QuickInfo {
+  @scala.inline
+  def apply(
+    kind: ScriptElementKind,
+    kindModifiers: java.lang.String,
+    textSpan: TextSpan,
+    displayParts: js.Array[SymbolDisplayPart] = null,
+    documentation: js.Array[SymbolDisplayPart] = null,
+    tags: js.Array[JSDocTagInfo] = null
+  ): QuickInfo = {
+    val __obj = js.Dynamic.literal(kind = kind, kindModifiers = kindModifiers, textSpan = textSpan)
+    if (displayParts != null) __obj.updateDynamic("displayParts")(displayParts)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[QuickInfo]
+  }
+}
+

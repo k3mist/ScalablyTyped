@@ -11,3 +11,12 @@ trait DecoratedResult[T] extends js.Object {
   var value: T
 }
 
+object DecoratedResult {
+  @scala.inline
+  def apply[T](cached: PolicyGetCachedOptions[T], report: PolicyGetReportLog, value: T): DecoratedResult[T] = {
+    val __obj = js.Dynamic.literal(cached = cached, report = report, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DecoratedResult[T]]
+  }
+}
+

@@ -32,3 +32,29 @@ trait XAxis
   def setScaleData(aScale: ScaleData): scala.Unit
 }
 
+object XAxis {
+  @scala.inline
+  def apply(
+    GridProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ScaleData: ScaleData,
+    SubGridProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    SubTickProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    acquire: js.Function0[scala.Unit],
+    getGridProperties: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getScaleData: js.Function0[ScaleData],
+    getSubGridProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+    ],
+    getSubTickProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setScaleData: js.Function1[ScaleData, scala.Unit]
+  ): XAxis = {
+    val __obj = js.Dynamic.literal(GridProperties = GridProperties, ScaleData = ScaleData, SubGridProperties = SubGridProperties, SubTickProperties = SubTickProperties, acquire = acquire, getGridProperties = getGridProperties, getScaleData = getScaleData, getSubGridProperties = getSubGridProperties, getSubTickProperties = getSubTickProperties, queryInterface = queryInterface, release = release, setScaleData = setScaleData)
+  
+    __obj.asInstanceOf[XAxis]
+  }
+}
+

@@ -66,3 +66,32 @@ trait DirectionsViewModelProperties extends GoToProperties {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object DirectionsViewModelProperties {
+  @scala.inline
+  def apply(
+    goToOverride: GoToOverride = null,
+    impedanceAttribute: java.lang.String = null,
+    maxStops: scala.Int | scala.Double = null,
+    routeParameters: RouteParametersProperties = null,
+    routeServiceUrl: java.lang.String = null,
+    routeSymbol: SimpleLineSymbolProperties = null,
+    stopSymbols: DirectionsViewModelStopSymbols = null,
+    stops: CollectionProperties[GraphicProperties] = null,
+    timeAttribute: DirectionsViewModelTimeAttribute = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): DirectionsViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters)
+    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
+    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)
+    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DirectionsViewModelProperties]
+  }
+}
+

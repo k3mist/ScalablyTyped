@@ -24,3 +24,19 @@ trait XFocusListener
   def focusLost(e: FocusEvent): scala.Unit
 }
 
+object XFocusListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    focusGained: js.Function1[FocusEvent, scala.Unit],
+    focusLost: js.Function1[FocusEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFocusListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, focusGained = focusGained, focusLost = focusLost, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFocusListener]
+  }
+}
+

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   extends HSL
      with Alpha
 
+object HSLA {
+  @scala.inline
+  def apply(a: scala.Double, h: scala.Double, l: scala.Double, s: scala.Double): HSLA = {
+    val __obj = js.Dynamic.literal(a = a, h = h, l = l, s = s)
+  
+    __obj.asInstanceOf[HSLA]
+  }
+}
+

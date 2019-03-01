@@ -11,3 +11,12 @@ trait IError extends js.Object {
   var kwargs: js.Any
 }
 
+object IError {
+  @scala.inline
+  def apply(args: js.Array[_], error: java.lang.String, kwargs: js.Any): IError = {
+    val __obj = js.Dynamic.literal(args = args, error = error, kwargs = kwargs)
+  
+    __obj.asInstanceOf[IError]
+  }
+}
+

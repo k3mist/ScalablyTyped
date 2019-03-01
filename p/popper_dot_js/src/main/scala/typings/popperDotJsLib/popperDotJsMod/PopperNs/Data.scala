@@ -19,3 +19,24 @@ trait Data extends js.Object {
   var styles: stdLib.CSSStyleDeclaration
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    arrowElement: stdLib.Element,
+    arrowStyles: stdLib.CSSStyleDeclaration,
+    attributes: Attributes,
+    boundaries: js.Object,
+    flipped: scala.Boolean,
+    hide: scala.Boolean,
+    instance: popperDotJsLib.popperDotJsMod.Popper,
+    offsets: popperDotJsLib.Anon_Arrow,
+    originalPlacement: Placement,
+    placement: Placement,
+    styles: stdLib.CSSStyleDeclaration
+  ): Data = {
+    val __obj = js.Dynamic.literal(arrowElement = arrowElement, arrowStyles = arrowStyles, attributes = attributes, boundaries = boundaries, flipped = flipped, hide = hide, instance = instance, offsets = offsets, originalPlacement = originalPlacement, placement = placement, styles = styles)
+  
+    __obj.asInstanceOf[Data]
+  }
+}
+

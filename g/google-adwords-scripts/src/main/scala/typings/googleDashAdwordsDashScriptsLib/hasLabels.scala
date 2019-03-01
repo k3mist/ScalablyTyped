@@ -11,3 +11,16 @@ trait hasLabels extends js.Object {
   def removeLabel(name: java.lang.String): scala.Unit
 }
 
+object hasLabels {
+  @scala.inline
+  def apply(
+    applyLabel: js.Function1[java.lang.String, scala.Unit],
+    labels: js.Function0[AdWordsSelector[Label]],
+    removeLabel: js.Function1[java.lang.String, scala.Unit]
+  ): hasLabels = {
+    val __obj = js.Dynamic.literal(applyLabel = applyLabel, labels = labels, removeLabel = removeLabel)
+  
+    __obj.asInstanceOf[hasLabels]
+  }
+}
+

@@ -16,3 +16,15 @@ trait DatabaseDeleteEvent
   var Bookmarks: activexDashInteropLib.SafeArray[_]
 }
 
+object DatabaseDeleteEvent {
+  @scala.inline
+  def apply(
+    Bookmarks: activexDashInteropLib.SafeArray[_],
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): DatabaseDeleteEvent = {
+    val __obj = js.Dynamic.literal(Bookmarks = Bookmarks, Source = Source)
+  
+    __obj.asInstanceOf[DatabaseDeleteEvent]
+  }
+}
+

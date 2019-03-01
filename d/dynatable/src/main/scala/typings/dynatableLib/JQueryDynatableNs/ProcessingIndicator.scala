@@ -28,3 +28,19 @@ trait ProcessingIndicator extends js.Object {
   def show(): scala.Unit
 }
 
+object ProcessingIndicator {
+  @scala.inline
+  def apply(
+    attach: js.Function0[scala.Unit],
+    create: js.Function0[dynatableLib.JQuery],
+    hide: js.Function0[scala.Unit],
+    init: js.Function0[scala.Unit],
+    position: js.Function0[dynatableLib.JQuery],
+    show: js.Function0[scala.Unit]
+  ): ProcessingIndicator = {
+    val __obj = js.Dynamic.literal(attach = attach, create = create, hide = hide, init = init, position = position, show = show)
+  
+    __obj.asInstanceOf[ProcessingIndicator]
+  }
+}
+

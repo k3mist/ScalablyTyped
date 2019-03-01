@@ -28,3 +28,21 @@ trait TestResult extends js.Object {
   var strong: scala.Boolean
 }
 
+object TestResult {
+  @scala.inline
+  def apply(
+    errors: js.Array[java.lang.String],
+    failedTests: js.Array[scala.Double],
+    isPassphrase: scala.Boolean,
+    optionalTestErrors: js.Array[java.lang.String],
+    optionalTestsPassed: scala.Double,
+    passedTests: js.Array[scala.Double],
+    requiredTestErrors: js.Array[java.lang.String],
+    strong: scala.Boolean
+  ): TestResult = {
+    val __obj = js.Dynamic.literal(errors = errors, failedTests = failedTests, isPassphrase = isPassphrase, optionalTestErrors = optionalTestErrors, optionalTestsPassed = optionalTestsPassed, passedTests = passedTests, requiredTestErrors = requiredTestErrors, strong = strong)
+  
+    __obj.asInstanceOf[TestResult]
+  }
+}
+

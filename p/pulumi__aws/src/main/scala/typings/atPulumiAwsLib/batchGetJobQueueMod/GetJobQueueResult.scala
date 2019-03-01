@@ -41,3 +41,20 @@ trait GetJobQueueResult extends js.Object {
   val statusReason: java.lang.String
 }
 
+object GetJobQueueResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    computeEnvironmentOrders: js.Array[atPulumiAwsLib.Anon_ComputeEnvironment],
+    id: java.lang.String,
+    priority: scala.Double,
+    state: java.lang.String,
+    status: java.lang.String,
+    statusReason: java.lang.String
+  ): GetJobQueueResult = {
+    val __obj = js.Dynamic.literal(arn = arn, computeEnvironmentOrders = computeEnvironmentOrders, id = id, priority = priority, state = state, status = status, statusReason = statusReason)
+  
+    __obj.asInstanceOf[GetJobQueueResult]
+  }
+}
+

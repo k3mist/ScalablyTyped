@@ -21,3 +21,26 @@ trait CodefreshEnv
   var slug: java.lang.String
 }
 
+object CodefreshEnv {
+  @scala.inline
+  def apply(
+    branch: java.lang.String,
+    build: java.lang.String,
+    buildUrl: java.lang.String,
+    commit: java.lang.String,
+    isCi: envDashCiLib.envDashCiLibNumbers.`true`,
+    isPr: scala.Boolean,
+    name: envDashCiLib.envDashCiLibStrings.Codefresh,
+    root: java.lang.String,
+    service: envDashCiLib.envDashCiLibStrings.codefresh,
+    slug: java.lang.String,
+    pr: java.lang.String = null,
+    prBranch: java.lang.String = null
+  ): CodefreshEnv = {
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, name = name, root = root, service = service, slug = slug)
+    if (pr != null) __obj.updateDynamic("pr")(pr)
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
+    __obj.asInstanceOf[CodefreshEnv]
+  }
+}
+

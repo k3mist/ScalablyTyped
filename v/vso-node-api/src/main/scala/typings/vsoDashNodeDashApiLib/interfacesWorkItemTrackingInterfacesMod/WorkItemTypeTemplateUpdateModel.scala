@@ -24,3 +24,17 @@ trait WorkItemTypeTemplateUpdateModel extends js.Object {
   var templateType: TemplateType
 }
 
+object WorkItemTypeTemplateUpdateModel {
+  @scala.inline
+  def apply(
+    actionType: ProvisioningActionType,
+    methodology: java.lang.String,
+    template: java.lang.String,
+    templateType: TemplateType
+  ): WorkItemTypeTemplateUpdateModel = {
+    val __obj = js.Dynamic.literal(actionType = actionType, methodology = methodology, template = template, templateType = templateType)
+  
+    __obj.asInstanceOf[WorkItemTypeTemplateUpdateModel]
+  }
+}
+

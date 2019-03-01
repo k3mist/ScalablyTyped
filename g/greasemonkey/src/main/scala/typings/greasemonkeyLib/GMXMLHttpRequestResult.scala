@@ -16,3 +16,20 @@ trait GMXMLHttpRequestResult
   override def abort(): scala.Unit
 }
 
+object GMXMLHttpRequestResult {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    finalUrl: java.lang.String,
+    readyState: scala.Double,
+    responseHeaders: java.lang.String,
+    responseText: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): GMXMLHttpRequestResult = {
+    val __obj = js.Dynamic.literal(abort = abort, finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[GMXMLHttpRequestResult]
+  }
+}
+

@@ -13,3 +13,18 @@ trait ProjectLanguageAnalytics extends js.Object {
   var url: java.lang.String
 }
 
+object ProjectLanguageAnalytics {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    languageBreakdown: js.Array[LanguageStatistics],
+    repositoryLanguageAnalytics: js.Array[RepositoryLanguageAnalytics],
+    resultPhase: ResultPhase,
+    url: java.lang.String
+  ): ProjectLanguageAnalytics = {
+    val __obj = js.Dynamic.literal(id = id, languageBreakdown = languageBreakdown, repositoryLanguageAnalytics = repositoryLanguageAnalytics, resultPhase = resultPhase, url = url)
+  
+    __obj.asInstanceOf[ProjectLanguageAnalytics]
+  }
+}
+

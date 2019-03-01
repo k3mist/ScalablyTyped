@@ -32,3 +32,18 @@ trait CreateDiffAsBufferOptions extends js.Object {
   var tolerance: scala.Double
 }
 
+object CreateDiffAsBufferOptions {
+  @scala.inline
+  def apply(
+    current: java.lang.String,
+    highlightColor: java.lang.String,
+    reference: java.lang.String,
+    strict: scala.Boolean,
+    tolerance: scala.Double
+  ): CreateDiffAsBufferOptions = {
+    val __obj = js.Dynamic.literal(current = current, highlightColor = highlightColor, reference = reference, strict = strict, tolerance = tolerance)
+  
+    __obj.asInstanceOf[CreateDiffAsBufferOptions]
+  }
+}
+

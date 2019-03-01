@@ -12,3 +12,17 @@ trait Anon_Billion extends js.Object {
   var trillion: java.lang.String
 }
 
+object Anon_Billion {
+  @scala.inline
+  def apply(
+    billion: java.lang.String,
+    million: java.lang.String,
+    thousand: java.lang.String,
+    trillion: java.lang.String
+  ): Anon_Billion = {
+    val __obj = js.Dynamic.literal(billion = billion, million = million, thousand = thousand, trillion = trillion)
+  
+    __obj.asInstanceOf[Anon_Billion]
+  }
+}
+

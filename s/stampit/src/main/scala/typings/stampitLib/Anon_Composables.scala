@@ -10,3 +10,15 @@ trait Anon_Composables extends js.Object {
   var stamp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify stampit.Stamp */ js.Any
 }
 
+object Anon_Composables {
+  @scala.inline
+  def apply(
+    composables: js.Array[Composable],
+    stamp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify stampit.Stamp */ js.Any
+  ): Anon_Composables = {
+    val __obj = js.Dynamic.literal(composables = composables, stamp = stamp)
+  
+    __obj.asInstanceOf[Anon_Composables]
+  }
+}
+

@@ -352,3 +352,48 @@ trait Body extends js.Object {
   var vertices: js.Array[Vector]
 }
 
+object Body {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    angularSpeed: scala.Double,
+    angularVelocity: scala.Double,
+    area: scala.Double,
+    axes: js.Array[Vector],
+    bounds: Bounds,
+    collisionFilter: ICollisionFilter,
+    density: scala.Double,
+    force: Vector,
+    friction: scala.Double,
+    frictionAir: scala.Double,
+    frictionStatic: scala.Double,
+    id: scala.Double,
+    inertia: scala.Double,
+    inverseInertia: scala.Double,
+    inverseMass: scala.Double,
+    isSensor: scala.Boolean,
+    isSleeping: scala.Boolean,
+    isStatic: scala.Boolean,
+    label: java.lang.String,
+    mass: scala.Double,
+    motion: scala.Double,
+    parent: Body,
+    parts: js.Array[Body],
+    position: Vector,
+    render: IBodyRenderOptions,
+    restitution: scala.Double,
+    sleepThreshold: scala.Double,
+    slop: scala.Double,
+    speed: scala.Double,
+    timeScale: scala.Double,
+    torque: scala.Double,
+    `type`: java.lang.String,
+    velocity: Vector,
+    vertices: js.Array[Vector]
+  ): Body = {
+    val __obj = js.Dynamic.literal(angle = angle, angularSpeed = angularSpeed, angularVelocity = angularVelocity, area = area, axes = axes, bounds = bounds, collisionFilter = collisionFilter, density = density, force = force, friction = friction, frictionAir = frictionAir, frictionStatic = frictionStatic, id = id, inertia = inertia, inverseInertia = inverseInertia, inverseMass = inverseMass, isSensor = isSensor, isSleeping = isSleeping, isStatic = isStatic, label = label, mass = mass, motion = motion, parent = parent, parts = parts, position = position, render = render, restitution = restitution, sleepThreshold = sleepThreshold, slop = slop, speed = speed, timeScale = timeScale, torque = torque, `type` = `type`, velocity = velocity, vertices = vertices)
+  
+    __obj.asInstanceOf[Body]
+  }
+}
+

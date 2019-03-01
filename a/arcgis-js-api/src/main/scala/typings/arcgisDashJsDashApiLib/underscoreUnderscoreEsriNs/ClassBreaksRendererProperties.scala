@@ -85,3 +85,38 @@ trait ClassBreaksRendererProperties
   var valueExpressionTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClassBreaksRendererProperties {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfoProperties = null,
+    backgroundFillSymbol: FillSymbolProperties | PolygonSymbol3DProperties = null,
+    classBreakInfos: js.Array[ClassBreaksRendererClassBreakInfos] = null,
+    defaultLabel: java.lang.String = null,
+    defaultSymbol: SymbolProperties = null,
+    field: java.lang.String = null,
+    legendOptions: ClassBreaksRendererLegendOptions = null,
+    normalizationField: java.lang.String = null,
+    normalizationTotal: scala.Int | scala.Double = null,
+    normalizationType: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    visualVariables: js.Array[VisualVariableProperties] = null
+  ): ClassBreaksRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (backgroundFillSymbol != null) __obj.updateDynamic("backgroundFillSymbol")(backgroundFillSymbol.asInstanceOf[js.Any])
+    if (classBreakInfos != null) __obj.updateDynamic("classBreakInfos")(classBreakInfos)
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel)
+    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
+    if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[ClassBreaksRendererProperties]
+  }
+}
+

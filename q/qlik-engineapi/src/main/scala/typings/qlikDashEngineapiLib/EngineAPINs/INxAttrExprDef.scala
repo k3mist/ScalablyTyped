@@ -21,3 +21,12 @@ trait INxAttrExprDef extends js.Object {
   var `qLibraryId_`: java.lang.String
 }
 
+object INxAttrExprDef {
+  @scala.inline
+  def apply(qExpression: java.lang.String, `qLibraryId_`: java.lang.String): INxAttrExprDef = {
+    val __obj = js.Dynamic.literal(qExpression = qExpression, `qLibraryId_` = `qLibraryId_`)
+  
+    __obj.asInstanceOf[INxAttrExprDef]
+  }
+}
+

@@ -30,3 +30,57 @@ trait DeploymentsResource extends js.Object {
   def update(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object DeploymentsResource {
+  @scala.inline
+  def apply(
+    cancelPreview: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltDeletePolicy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Deployment]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeploymentsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    stop: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDeploymentmanagerLib.Anon_AltCreatePolicy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): DeploymentsResource = {
+    val __obj = js.Dynamic.literal(cancelPreview = cancelPreview, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, setIamPolicy = setIamPolicy, stop = stop, testIamPermissions = testIamPermissions, update = update)
+  
+    __obj.asInstanceOf[DeploymentsResource]
+  }
+}
+

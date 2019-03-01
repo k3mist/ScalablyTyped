@@ -12,3 +12,17 @@ trait Anon_Next extends js.Object {
   var total_pages: scala.Double
 }
 
+object Anon_Next {
+  @scala.inline
+  def apply(
+    page: scala.Double,
+    per_page: scala.Double,
+    total_pages: scala.Double,
+    next: java.lang.String = null
+  ): Anon_Next = {
+    val __obj = js.Dynamic.literal(page = page, per_page = per_page, total_pages = total_pages)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Anon_Next]
+  }
+}
+

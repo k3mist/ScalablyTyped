@@ -15,3 +15,19 @@ trait PDFTreeNode extends js.Object {
   var title: java.lang.String
 }
 
+object PDFTreeNode {
+  @scala.inline
+  def apply(
+    bold: scala.Boolean,
+    color: js.Array[scala.Double],
+    dest: js.Any,
+    italic: scala.Boolean,
+    items: js.Array[PDFTreeNode],
+    title: java.lang.String
+  ): PDFTreeNode = {
+    val __obj = js.Dynamic.literal(bold = bold, color = color, dest = dest, italic = italic, items = items, title = title)
+  
+    __obj.asInstanceOf[PDFTreeNode]
+  }
+}
+

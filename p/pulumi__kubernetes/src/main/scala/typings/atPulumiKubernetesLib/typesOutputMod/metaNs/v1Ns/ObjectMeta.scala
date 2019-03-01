@@ -154,3 +154,29 @@ trait ObjectMeta extends js.Object {
   val uid: java.lang.String
 }
 
+object ObjectMeta {
+  @scala.inline
+  def apply(
+    annotations: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    clusterName: java.lang.String,
+    creationTimestamp: java.lang.String,
+    deletionGracePeriodSeconds: scala.Double,
+    deletionTimestamp: java.lang.String,
+    finalizers: js.Array[java.lang.String],
+    generateName: java.lang.String,
+    generation: scala.Double,
+    initializers: Initializers,
+    labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    name: java.lang.String,
+    namespace: java.lang.String,
+    ownerReferences: js.Array[OwnerReference],
+    resourceVersion: java.lang.String,
+    selfLink: java.lang.String,
+    uid: java.lang.String
+  ): ObjectMeta = {
+    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, initializers = initializers, labels = labels, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
+  
+    __obj.asInstanceOf[ObjectMeta]
+  }
+}
+

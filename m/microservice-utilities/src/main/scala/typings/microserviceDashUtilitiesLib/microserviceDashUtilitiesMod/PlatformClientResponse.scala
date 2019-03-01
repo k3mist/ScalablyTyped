@@ -14,3 +14,20 @@ trait PlatformClientResponse[T] extends js.Object {
   var statusText: java.lang.String
 }
 
+object PlatformClientResponse {
+  @scala.inline
+  def apply[T](
+    config: js.Object,
+    headers: js.Any,
+    status: scala.Double,
+    statusText: java.lang.String,
+    data: T = null,
+    request: js.Any = null
+  ): PlatformClientResponse[T] = {
+    val __obj = js.Dynamic.literal(config = config, headers = headers, status = status, statusText = statusText)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[PlatformClientResponse[T]]
+  }
+}
+

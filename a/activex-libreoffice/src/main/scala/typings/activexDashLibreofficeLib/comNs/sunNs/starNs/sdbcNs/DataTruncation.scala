@@ -27,3 +27,23 @@ trait DataTruncation extends SQLException {
   var TransferSize: scala.Double
 }
 
+object DataTruncation {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DataSize: scala.Double,
+    DuringRead: scala.Boolean,
+    ErrorCode: scala.Double,
+    Index: scala.Double,
+    IsParameter: scala.Boolean,
+    Message: java.lang.String,
+    NextException: js.Any,
+    SQLState: java.lang.String,
+    TransferSize: scala.Double
+  ): DataTruncation = {
+    val __obj = js.Dynamic.literal(Context = Context, DataSize = DataSize, DuringRead = DuringRead, ErrorCode = ErrorCode, Index = Index, IsParameter = IsParameter, Message = Message, NextException = NextException, SQLState = SQLState, TransferSize = TransferSize)
+  
+    __obj.asInstanceOf[DataTruncation]
+  }
+}
+

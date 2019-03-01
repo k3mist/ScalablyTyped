@@ -10,3 +10,12 @@ trait BoundedMeetSemilattice[A]
   val one: A
 }
 
+object BoundedMeetSemilattice {
+  @scala.inline
+  def apply[A](meet: js.Function2[A, A, A], one: A): BoundedMeetSemilattice[A] = {
+    val __obj = js.Dynamic.literal(meet = meet, one = one.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BoundedMeetSemilattice[A]]
+  }
+}
+

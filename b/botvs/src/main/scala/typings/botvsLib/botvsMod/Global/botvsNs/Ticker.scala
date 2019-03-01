@@ -36,3 +36,20 @@ trait Ticker extends js.Object {
   var Volume: scala.Double
 }
 
+object Ticker {
+  @scala.inline
+  def apply(
+    Buy: scala.Double,
+    High: scala.Double,
+    Last: scala.Double,
+    Low: scala.Double,
+    Sell: scala.Double,
+    Time: scala.Double,
+    Volume: scala.Double
+  ): Ticker = {
+    val __obj = js.Dynamic.literal(Buy = Buy, High = High, Last = Last, Low = Low, Sell = Sell, Time = Time, Volume = Volume)
+  
+    __obj.asInstanceOf[Ticker]
+  }
+}
+

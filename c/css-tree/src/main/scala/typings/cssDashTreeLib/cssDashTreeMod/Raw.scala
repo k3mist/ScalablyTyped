@@ -14,3 +14,12 @@ trait Raw
   var value: java.lang.String
 }
 
+object Raw {
+  @scala.inline
+  def apply(`type`: cssDashTreeLib.cssDashTreeLibStrings.Raw, value: java.lang.String, loc: CssLocation = null): Raw = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Raw]
+  }
+}
+

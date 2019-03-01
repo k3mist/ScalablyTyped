@@ -22,3 +22,27 @@ trait Anon_AndroidStudio extends js.Object {
   var webStorm: scala.Double
 }
 
+object Anon_AndroidStudio {
+  @scala.inline
+  def apply(
+    androidStudio: scala.Double,
+    appCode: scala.Double,
+    cLion: scala.Double,
+    dataGrip: scala.Double,
+    eclipse: scala.Double,
+    intelliJ: scala.Double,
+    mPS: scala.Double,
+    phpStorm: scala.Double,
+    pyCharm: scala.Double,
+    rubyMine: scala.Double,
+    tower: scala.Double,
+    unknown: scala.Double,
+    visualStudio: scala.Double,
+    webStorm: scala.Double
+  ): Anon_AndroidStudio = {
+    val __obj = js.Dynamic.literal(androidStudio = androidStudio, appCode = appCode, cLion = cLion, dataGrip = dataGrip, eclipse = eclipse, intelliJ = intelliJ, mPS = mPS, phpStorm = phpStorm, pyCharm = pyCharm, rubyMine = rubyMine, tower = tower, unknown = unknown, visualStudio = visualStudio, webStorm = webStorm)
+  
+    __obj.asInstanceOf[Anon_AndroidStudio]
+  }
+}
+

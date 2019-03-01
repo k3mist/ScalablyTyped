@@ -40,3 +40,17 @@ trait APIVersions extends js.Object {
   val versions: js.Array[java.lang.String]
 }
 
+object APIVersions {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    kind: java.lang.String,
+    serverAddressByClientCIDRs: js.Array[ServerAddressByClientCIDR],
+    versions: js.Array[java.lang.String]
+  ): APIVersions = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, serverAddressByClientCIDRs = serverAddressByClientCIDRs, versions = versions)
+  
+    __obj.asInstanceOf[APIVersions]
+  }
+}
+

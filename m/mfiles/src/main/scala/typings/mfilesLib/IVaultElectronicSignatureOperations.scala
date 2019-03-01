@@ -18,3 +18,19 @@ trait IVaultElectronicSignatureOperations extends js.Object {
   def DisconnectSignaturesEx(ObjVer: IObjVer, InvalidateDisconnectedSignatures: scala.Boolean): IObjectVersionAndProperties
 }
 
+object IVaultElectronicSignatureOperations {
+  @scala.inline
+  def apply(
+    AddEmptySignature: js.Function2[IObjVer, java.lang.String, IObjectVersionAndProperties],
+    AddEmptySignatures: js.Function1[IObjVer, IObjectVersionAndProperties],
+    DisconnectSignature: js.Function2[IObjVer, java.lang.String, IObjectVersionAndProperties],
+    DisconnectSignatureEx: js.Function3[IObjVer, java.lang.String, scala.Boolean, IObjectVersionAndProperties],
+    DisconnectSignatures: js.Function1[IObjVer, IObjectVersionAndProperties],
+    DisconnectSignaturesEx: js.Function2[IObjVer, scala.Boolean, IObjectVersionAndProperties]
+  ): IVaultElectronicSignatureOperations = {
+    val __obj = js.Dynamic.literal(AddEmptySignature = AddEmptySignature, AddEmptySignatures = AddEmptySignatures, DisconnectSignature = DisconnectSignature, DisconnectSignatureEx = DisconnectSignatureEx, DisconnectSignatures = DisconnectSignatures, DisconnectSignaturesEx = DisconnectSignaturesEx)
+  
+    __obj.asInstanceOf[IVaultElectronicSignatureOperations]
+  }
+}
+

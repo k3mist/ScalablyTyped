@@ -25,3 +25,32 @@ trait Model extends js.Object {
   var y: scala.Double
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    base: scala.Double,
+    borderColor: java.lang.String,
+    controlPointNextX: scala.Double,
+    controlPointNextY: scala.Double,
+    controlPointPreviousX: scala.Double,
+    controlPointPreviousY: scala.Double,
+    head: scala.Double,
+    hitRadius: scala.Double,
+    pointStyle: java.lang.String,
+    radius: java.lang.String,
+    tension: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    borderWidth: scala.Int | scala.Double = null,
+    skip: js.UndefOr[scala.Boolean] = js.undefined,
+    steppedLine: js.UndefOr[scala.Nothing] = js.undefined
+  ): Model = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, base = base, borderColor = borderColor, controlPointNextX = controlPointNextX, controlPointNextY = controlPointNextY, controlPointPreviousX = controlPointPreviousX, controlPointPreviousY = controlPointPreviousY, head = head, hitRadius = hitRadius, pointStyle = pointStyle, radius = radius, tension = tension, x = x, y = y)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (!js.isUndefined(steppedLine)) __obj.updateDynamic("steppedLine")(steppedLine)
+    __obj.asInstanceOf[Model]
+  }
+}
+

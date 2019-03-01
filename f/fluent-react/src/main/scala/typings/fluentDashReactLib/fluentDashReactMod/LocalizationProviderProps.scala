@@ -10,3 +10,15 @@ trait LocalizationProviderProps extends js.Object {
   var parseMarkup: js.UndefOr[MarkupParser] = js.undefined
 }
 
+object LocalizationProviderProps {
+  @scala.inline
+  def apply(
+    bundles: stdLib.IterableIterator[fluentLib.fluentMod.FluentBundle],
+    parseMarkup: MarkupParser = null
+  ): LocalizationProviderProps = {
+    val __obj = js.Dynamic.literal(bundles = bundles)
+    if (parseMarkup != null) __obj.updateDynamic("parseMarkup")(parseMarkup)
+    __obj.asInstanceOf[LocalizationProviderProps]
+  }
+}
+

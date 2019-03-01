@@ -10,3 +10,15 @@ trait ShareSharedAction extends ShareAction {
   var activityType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShareSharedAction {
+  @scala.inline
+  def apply(
+    action: reactDashNativeLib.reactDashNativeLibStrings.sharedAction,
+    activityType: java.lang.String = null
+  ): ShareSharedAction = {
+    val __obj = js.Dynamic.literal(action = action)
+    if (activityType != null) __obj.updateDynamic("activityType")(activityType)
+    __obj.asInstanceOf[ShareSharedAction]
+  }
+}
+

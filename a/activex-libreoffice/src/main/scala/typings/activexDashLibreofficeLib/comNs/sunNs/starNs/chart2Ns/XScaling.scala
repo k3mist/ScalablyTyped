@@ -26,3 +26,19 @@ trait XScaling
   def getInverseScaling(): XScaling
 }
 
+object XScaling {
+  @scala.inline
+  def apply(
+    InverseScaling: XScaling,
+    acquire: js.Function0[scala.Unit],
+    doScaling: js.Function1[scala.Double, scala.Double],
+    getInverseScaling: js.Function0[XScaling],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScaling = {
+    val __obj = js.Dynamic.literal(InverseScaling = InverseScaling, acquire = acquire, doScaling = doScaling, getInverseScaling = getInverseScaling, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScaling]
+  }
+}
+

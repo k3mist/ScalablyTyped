@@ -19,3 +19,24 @@ trait RESTResponseV2 extends js.Object {
   def waitForResponse(timeoutSecs: scala.Double): scala.Unit
 }
 
+object RESTResponseV2 {
+  @scala.inline
+  def apply(
+    getBody: js.Function0[java.lang.String],
+    getCookies: js.Function0[servicenowLib.Anon_Get],
+    getErrorCode: js.Function0[scala.Double],
+    getErrorMessage: js.Function0[java.lang.String],
+    getHeader: js.Function1[java.lang.String, java.lang.String],
+    getHeaders: js.Function0[js.Object],
+    getQueryString: js.Function0[java.lang.String],
+    getResponseAttachmentSysid: js.Function0[java.lang.String],
+    getStatusCode: js.Function0[scala.Double],
+    haveError: js.Function0[scala.Boolean],
+    waitForResponse: js.Function1[scala.Double, scala.Unit]
+  ): RESTResponseV2 = {
+    val __obj = js.Dynamic.literal(getBody = getBody, getCookies = getCookies, getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getHeader = getHeader, getHeaders = getHeaders, getQueryString = getQueryString, getResponseAttachmentSysid = getResponseAttachmentSysid, getStatusCode = getStatusCode, haveError = haveError, waitForResponse = waitForResponse)
+  
+    __obj.asInstanceOf[RESTResponseV2]
+  }
+}
+

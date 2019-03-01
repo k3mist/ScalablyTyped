@@ -11,3 +11,18 @@ trait ExceptionResult
   var error: js.Any
 }
 
+object ExceptionResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    error: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ]
+  ): ExceptionResult = {
+    val __obj = js.Dynamic.literal(apiController = apiController, error = error, executeAsync = executeAsync)
+  
+    __obj.asInstanceOf[ExceptionResult]
+  }
+}
+

@@ -15,3 +15,19 @@ trait SplitterHandle
   var outerBorderColor: js.Any
 }
 
+object SplitterHandle {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any,
+    gripLowerColor: js.Any,
+    gripUpperColor: js.Any,
+    innerBorderColor: js.Any,
+    leftInnerBorderColor: js.Any,
+    outerBorderColor: js.Any
+  ): SplitterHandle = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, gripLowerColor = gripLowerColor, gripUpperColor = gripUpperColor, innerBorderColor = innerBorderColor, leftInnerBorderColor = leftInnerBorderColor, outerBorderColor = outerBorderColor)
+  
+    __obj.asInstanceOf[SplitterHandle]
+  }
+}
+

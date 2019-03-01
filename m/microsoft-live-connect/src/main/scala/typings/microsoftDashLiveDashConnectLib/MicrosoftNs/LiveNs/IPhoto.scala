@@ -147,3 +147,43 @@ trait IPhoto extends js.Object {
   var width: scala.Double
 }
 
+object IPhoto {
+  @scala.inline
+  def apply(
+    camera_make: java.lang.String,
+    camera_model: java.lang.String,
+    comments_count: scala.Double,
+    comments_enabled: scala.Boolean,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    exposure_denominator: scala.Double,
+    exposure_numerator: scala.Double,
+    focal_length: scala.Double,
+    focal_ratio: scala.Double,
+    from: IUserInfo,
+    height: scala.Double,
+    id: java.lang.String,
+    images: js.Array[IImageInfo],
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    location: ILocation,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    picture: java.lang.String,
+    shared_with: ISharedWith,
+    size: scala.Double,
+    source: java.lang.String,
+    tags_count: scala.Double,
+    tags_enabled: scala.Boolean,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String,
+    when_taken: java.lang.String,
+    width: scala.Double
+  ): IPhoto = {
+    val __obj = js.Dynamic.literal(camera_make = camera_make, camera_model = camera_model, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, exposure_denominator = exposure_denominator, exposure_numerator = exposure_numerator, focal_length = focal_length, focal_ratio = focal_ratio, from = from, height = height, id = id, images = images, is_embeddable = is_embeddable, link = link, location = location, name = name, parent_id = parent_id, picture = picture, shared_with = shared_with, size = size, source = source, tags_count = tags_count, tags_enabled = tags_enabled, `type` = `type`, updated_time = updated_time, upload_location = upload_location, when_taken = when_taken, width = width)
+  
+    __obj.asInstanceOf[IPhoto]
+  }
+}
+

@@ -31,3 +31,17 @@ trait ASPxClientFileManagerErrorEventArgs extends ASPxClientEventArgs {
   var showAlert: scala.Boolean
 }
 
+object ASPxClientFileManagerErrorEventArgs {
+  @scala.inline
+  def apply(
+    commandName: java.lang.String,
+    errorCode: scala.Double,
+    errorText: java.lang.String,
+    showAlert: scala.Boolean
+  ): ASPxClientFileManagerErrorEventArgs = {
+    val __obj = js.Dynamic.literal(commandName = commandName, errorCode = errorCode, errorText = errorText, showAlert = showAlert)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerErrorEventArgs]
+  }
+}
+

@@ -16,3 +16,12 @@ trait GitImportGitSource extends js.Object {
   var url: java.lang.String
 }
 
+object GitImportGitSource {
+  @scala.inline
+  def apply(overwrite: scala.Boolean, url: java.lang.String): GitImportGitSource = {
+    val __obj = js.Dynamic.literal(overwrite = overwrite, url = url)
+  
+    __obj.asInstanceOf[GitImportGitSource]
+  }
+}
+

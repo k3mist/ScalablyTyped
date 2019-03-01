@@ -12,3 +12,12 @@ trait ClusterConstructorOptions extends js.Object {
   var certpath: java.lang.String
 }
 
+object ClusterConstructorOptions {
+  @scala.inline
+  def apply(certpath: java.lang.String): ClusterConstructorOptions = {
+    val __obj = js.Dynamic.literal(certpath = certpath)
+  
+    __obj.asInstanceOf[ClusterConstructorOptions]
+  }
+}
+

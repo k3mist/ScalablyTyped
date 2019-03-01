@@ -20,3 +20,25 @@ trait ChangeList[T] extends js.Object {
   var version: java.lang.String
 }
 
+object ChangeList {
+  @scala.inline
+  def apply[T](
+    allChangesIncluded: scala.Boolean,
+    changeCounts: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    changes: js.Array[Change[T]],
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    creationDate: stdLib.Date,
+    notes: js.Array[CheckinNote],
+    owner: java.lang.String,
+    ownerDisplayName: java.lang.String,
+    ownerId: java.lang.String,
+    sortDate: stdLib.Date,
+    version: java.lang.String
+  ): ChangeList[T] = {
+    val __obj = js.Dynamic.literal(allChangesIncluded = allChangesIncluded, changeCounts = changeCounts, changes = changes, comment = comment, commentTruncated = commentTruncated, creationDate = creationDate, notes = notes, owner = owner, ownerDisplayName = ownerDisplayName, ownerId = ownerId, sortDate = sortDate, version = version)
+  
+    __obj.asInstanceOf[ChangeList[T]]
+  }
+}
+

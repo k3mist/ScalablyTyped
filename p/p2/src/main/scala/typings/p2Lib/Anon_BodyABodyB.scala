@@ -14,3 +14,19 @@ trait Anon_BodyABodyB extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_BodyABodyB {
+  @scala.inline
+  def apply(
+    bodyA: p2Lib.p2Mod.p2Ns.Body,
+    bodyB: p2Lib.p2Mod.p2Ns.Body,
+    contactEquations: js.Array[p2Lib.p2Mod.p2Ns.ContactEquation],
+    shapeA: p2Lib.p2Mod.p2Ns.Shape,
+    shapeB: p2Lib.p2Mod.p2Ns.Shape,
+    `type`: java.lang.String
+  ): Anon_BodyABodyB = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, contactEquations = contactEquations, shapeA = shapeA, shapeB = shapeB, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_BodyABodyB]
+  }
+}
+

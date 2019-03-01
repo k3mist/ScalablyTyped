@@ -43,3 +43,21 @@ trait Queries extends js.Object {
   def setupInputs(): scala.Unit
 }
 
+object Queries {
+  @scala.inline
+  def apply(
+    add: js.Function2[java.lang.String, js.Any, Dynatable],
+    functions: QueriesFunctions,
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean],
+    remove: js.Function1[java.lang.String, Dynatable],
+    run: js.Function0[js.Any],
+    runSearch: js.Function1[js.Any, scala.Unit],
+    setupInputs: js.Function0[scala.Unit]
+  ): Queries = {
+    val __obj = js.Dynamic.literal(add = add, functions = functions, init = init, initOnLoad = initOnLoad, remove = remove, run = run, runSearch = runSearch, setupInputs = setupInputs)
+  
+    __obj.asInstanceOf[Queries]
+  }
+}
+

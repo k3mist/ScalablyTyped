@@ -10,3 +10,12 @@ trait Anon_Gradient
   var gradient: vegaDashTypingsLib.typesSpecEncodeMod.Field
 }
 
+object Anon_Gradient {
+  @scala.inline
+  def apply(gradient: vegaDashTypingsLib.typesSpecEncodeMod.Field): Anon_Gradient = {
+    val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Gradient]
+  }
+}
+

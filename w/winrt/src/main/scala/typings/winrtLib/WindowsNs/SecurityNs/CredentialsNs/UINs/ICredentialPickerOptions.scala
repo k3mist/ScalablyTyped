@@ -18,3 +18,23 @@ trait ICredentialPickerOptions extends js.Object {
   var targetName: java.lang.String
 }
 
+object ICredentialPickerOptions {
+  @scala.inline
+  def apply(
+    alwaysDisplayDialog: scala.Boolean,
+    authenticationProtocol: AuthenticationProtocol,
+    callerSavesCredential: scala.Boolean,
+    caption: java.lang.String,
+    credentialSaveOption: CredentialSaveOption,
+    customAuthenticationProtocol: java.lang.String,
+    errorCode: scala.Double,
+    message: java.lang.String,
+    previousCredential: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    targetName: java.lang.String
+  ): ICredentialPickerOptions = {
+    val __obj = js.Dynamic.literal(alwaysDisplayDialog = alwaysDisplayDialog, authenticationProtocol = authenticationProtocol, callerSavesCredential = callerSavesCredential, caption = caption, credentialSaveOption = credentialSaveOption, customAuthenticationProtocol = customAuthenticationProtocol, errorCode = errorCode, message = message, previousCredential = previousCredential, targetName = targetName)
+  
+    __obj.asInstanceOf[ICredentialPickerOptions]
+  }
+}
+

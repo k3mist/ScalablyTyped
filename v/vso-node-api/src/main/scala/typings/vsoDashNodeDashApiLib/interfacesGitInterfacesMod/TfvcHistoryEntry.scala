@@ -16,3 +16,18 @@ trait TfvcHistoryEntry extends HistoryEntry[TfvcItem] {
   var fileId: scala.Double
 }
 
+object TfvcHistoryEntry {
+  @scala.inline
+  def apply(
+    changeList: ChangeList[TfvcItem],
+    encoding: scala.Double,
+    fileId: scala.Double,
+    itemChangeType: VersionControlChangeType,
+    serverItem: java.lang.String
+  ): TfvcHistoryEntry = {
+    val __obj = js.Dynamic.literal(changeList = changeList, encoding = encoding, fileId = fileId, itemChangeType = itemChangeType, serverItem = serverItem)
+  
+    __obj.asInstanceOf[TfvcHistoryEntry]
+  }
+}
+

@@ -9,3 +9,12 @@ trait OutputStreamOption extends _StreamOptions {
   var output: nodeLib.NodeJSNs.WriteStream
 }
 
+object OutputStreamOption {
+  @scala.inline
+  def apply(output: nodeLib.NodeJSNs.WriteStream): OutputStreamOption = {
+    val __obj = js.Dynamic.literal(output = output)
+  
+    __obj.asInstanceOf[OutputStreamOption]
+  }
+}
+

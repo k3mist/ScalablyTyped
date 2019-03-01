@@ -13,3 +13,18 @@ trait ProgressData extends js.Object {
   var written: scala.Double
 }
 
+object ProgressData {
+  @scala.inline
+  def apply(
+    dest: java.lang.String,
+    percent: scala.Double,
+    size: scala.Double,
+    src: java.lang.String,
+    written: scala.Double
+  ): ProgressData = {
+    val __obj = js.Dynamic.literal(dest = dest, percent = percent, size = size, src = src, written = written)
+  
+    __obj.asInstanceOf[ProgressData]
+  }
+}
+

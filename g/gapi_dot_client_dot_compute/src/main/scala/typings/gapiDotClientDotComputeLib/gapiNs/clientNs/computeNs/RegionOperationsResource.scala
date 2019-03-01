@@ -14,3 +14,25 @@ trait RegionOperationsResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_AltFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
 }
 
+object RegionOperationsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperationPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenOperationPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
+    ]
+  ): RegionOperationsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[RegionOperationsResource]
+  }
+}
+

@@ -44,3 +44,30 @@ trait OptionsAnimationProperties extends js.Object {
   var y: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
 }
 
+object OptionsAnimationProperties {
+  @scala.inline
+  def apply(
+    alpha: OptionsAnimationPropertyConfig = null,
+    rotation: OptionsAnimationPropertyConfig = null,
+    rotationX: OptionsAnimationPropertyConfig = null,
+    rotationY: OptionsAnimationPropertyConfig = null,
+    scaleX: OptionsAnimationPropertyConfig = null,
+    scaleY: OptionsAnimationPropertyConfig = null,
+    waitForRender: js.UndefOr[scala.Boolean] = js.undefined,
+    x: OptionsAnimationPropertyConfig = null,
+    y: OptionsAnimationPropertyConfig = null
+  ): OptionsAnimationProperties = {
+    val __obj = js.Dynamic.literal()
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation)
+    if (rotationX != null) __obj.updateDynamic("rotationX")(rotationX)
+    if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY)
+    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX)
+    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY)
+    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[OptionsAnimationProperties]
+  }
+}
+

@@ -15,3 +15,20 @@ trait AsObject extends js.Object {
   var syntax: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    optionsList: js.Array[googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.OptionNs.AsObject],
+    requestStreaming: scala.Boolean,
+    requestTypeUrl: java.lang.String,
+    responseStreaming: scala.Boolean,
+    responseTypeUrl: java.lang.String,
+    syntax: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax
+  ): AsObject = {
+    val __obj = js.Dynamic.literal(name = name, optionsList = optionsList, requestStreaming = requestStreaming, requestTypeUrl = requestTypeUrl, responseStreaming = responseStreaming, responseTypeUrl = responseTypeUrl, syntax = syntax)
+  
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

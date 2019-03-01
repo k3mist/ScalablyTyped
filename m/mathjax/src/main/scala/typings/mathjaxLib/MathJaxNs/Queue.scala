@@ -49,3 +49,22 @@ trait Queue extends js.Object {
   def wait(callback: js.Function): js.Function
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    Process: js.Function0[scala.Unit],
+    Push: js.Function1[js.Array[_], CallbackObject],
+    Resume: js.Function0[scala.Unit],
+    Suspend: js.Function0[scala.Unit],
+    call: js.Function0[scala.Unit],
+    pending: scala.Double,
+    queue: js.Array[_],
+    running: scala.Double,
+    wait: js.Function1[js.Function, js.Function]
+  ): Queue = {
+    val __obj = js.Dynamic.literal(Process = Process, Push = Push, Resume = Resume, Suspend = Suspend, call = call, pending = pending, queue = queue, running = running, wait = wait)
+  
+    __obj.asInstanceOf[Queue]
+  }
+}
+

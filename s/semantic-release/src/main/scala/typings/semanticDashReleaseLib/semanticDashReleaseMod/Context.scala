@@ -16,3 +16,19 @@ trait Context extends js.Object {
   var options: js.UndefOr[GlobalConfig] = js.undefined
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    logger: semanticDashReleaseLib.Anon_Error,
+    lastRelease: LastRelease = null,
+    nextRelease: NextRelease = null,
+    options: GlobalConfig = null
+  ): Context = {
+    val __obj = js.Dynamic.literal(logger = logger)
+    if (lastRelease != null) __obj.updateDynamic("lastRelease")(lastRelease)
+    if (nextRelease != null) __obj.updateDynamic("nextRelease")(nextRelease)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Context]
+  }
+}
+

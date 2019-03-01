@@ -81,3 +81,34 @@ trait ClusterArgs extends js.Object {
   ] = js.undefined
 }
 
+object ClusterArgs {
+  @scala.inline
+  def apply(
+    clusterName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    iamRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    nodeType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    replicationFactor: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    availabilityZones: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    maintenanceWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notificationTopicArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    parameterGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    securityGroupIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    serverSideEncryption: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput] = null,
+    subnetGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ClusterArgs = {
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], iamRoleArn = iamRoleArn.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], replicationFactor = replicationFactor.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
+    if (notificationTopicArn != null) __obj.updateDynamic("notificationTopicArn")(notificationTopicArn.asInstanceOf[js.Any])
+    if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
+    if (subnetGroupName != null) __obj.updateDynamic("subnetGroupName")(subnetGroupName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterArgs]
+  }
+}
+

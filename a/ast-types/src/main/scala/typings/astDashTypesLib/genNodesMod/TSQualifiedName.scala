@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSQualifiedName
 }
 
+object TSQualifiedName {
+  @scala.inline
+  def apply(
+    left: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    right: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSQualifiedName
+  ): TSQualifiedName = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[TSQualifiedName]
+  }
+}
+

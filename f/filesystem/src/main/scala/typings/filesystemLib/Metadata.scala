@@ -18,3 +18,12 @@ trait Metadata extends js.Object {
   var size: scala.Double
 }
 
+object Metadata {
+  @scala.inline
+  def apply(modificationTime: stdLib.Date, size: scala.Double): Metadata = {
+    val __obj = js.Dynamic.literal(modificationTime = modificationTime, size = size)
+  
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

@@ -15,3 +15,17 @@ trait AngularFireSimpleObject
   var $value: js.Any
 }
 
+object AngularFireSimpleObject {
+  @scala.inline
+  def apply(
+    $id: java.lang.String,
+    $priority: scala.Double,
+    $value: js.Any,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): AngularFireSimpleObject = {
+    val __obj = js.Dynamic.literal($id = $id, $priority = $priority, $value = $value)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[AngularFireSimpleObject]
+  }
+}
+

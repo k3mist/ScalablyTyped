@@ -56,3 +56,24 @@ trait SocketInfo extends js.Object {
   var uuid: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SocketInfo {
+  @scala.inline
+  def apply(
+    connected: scala.Boolean,
+    paused: scala.Boolean,
+    persistent: scala.Boolean,
+    socketId: chromeDashAppsLib.chromeNs.integer,
+    address: java.lang.String = null,
+    bufferSize: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    name: java.lang.String = null,
+    uuid: java.lang.String = null
+  ): SocketInfo = {
+    val __obj = js.Dynamic.literal(connected = connected, paused = paused, persistent = persistent, socketId = socketId)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[SocketInfo]
+  }
+}
+

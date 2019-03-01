@@ -15,3 +15,16 @@ trait IMembershipSPWeb extends js.Object {
   def Users(): IExpression
 }
 
+object IMembershipSPWeb {
+  @scala.inline
+  def apply(
+    AllUsers: js.Function0[IExpression],
+    Groups: js.Function0[IExpression],
+    Users: js.Function0[IExpression]
+  ): IMembershipSPWeb = {
+    val __obj = js.Dynamic.literal(AllUsers = AllUsers, Groups = Groups, Users = Users)
+  
+    __obj.asInstanceOf[IMembershipSPWeb]
+  }
+}
+

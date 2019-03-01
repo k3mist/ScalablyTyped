@@ -10,3 +10,15 @@ trait Anon_Factory extends js.Object {
   var statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
 }
 
+object Anon_Factory {
+  @scala.inline
+  def apply(
+    factory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
+  ): Anon_Factory = {
+    val __obj = js.Dynamic.literal(factory = factory, statements = statements)
+  
+    __obj.asInstanceOf[Anon_Factory]
+  }
+}
+

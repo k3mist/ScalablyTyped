@@ -13,3 +13,18 @@ trait Status extends js.Object {
   var text: java.lang.String
 }
 
+object Status {
+  @scala.inline
+  def apply(
+    author: asanaLib.asanaMod.asanaNs.resourcesNs.Resource,
+    color: java.lang.String,
+    html_text: java.lang.String,
+    modified_at: java.lang.String,
+    text: java.lang.String
+  ): Status = {
+    val __obj = js.Dynamic.literal(author = author, color = color, html_text = html_text, modified_at = modified_at, text = text)
+  
+    __obj.asInstanceOf[Status]
+  }
+}
+

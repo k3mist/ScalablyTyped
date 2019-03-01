@@ -11,3 +11,16 @@ trait CustomLogger extends js.Object {
   def warn(args: js.Any*): js.Any
 }
 
+object CustomLogger {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* repeated */ js.Any, js.Any],
+    log: js.Function1[/* repeated */ js.Any, js.Any],
+    warn: js.Function1[/* repeated */ js.Any, js.Any]
+  ): CustomLogger = {
+    val __obj = js.Dynamic.literal(error = error, log = log, warn = warn)
+  
+    __obj.asInstanceOf[CustomLogger]
+  }
+}
+

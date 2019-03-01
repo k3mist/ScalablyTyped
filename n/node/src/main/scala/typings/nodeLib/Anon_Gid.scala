@@ -13,3 +13,18 @@ trait Anon_Gid extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_Gid {
+  @scala.inline
+  def apply(
+    gid: scala.Double,
+    homedir: java.lang.String,
+    shell: js.Any,
+    uid: scala.Double,
+    username: java.lang.String
+  ): Anon_Gid = {
+    val __obj = js.Dynamic.literal(gid = gid, homedir = homedir, shell = shell, uid = uid, username = username)
+  
+    __obj.asInstanceOf[Anon_Gid]
+  }
+}
+

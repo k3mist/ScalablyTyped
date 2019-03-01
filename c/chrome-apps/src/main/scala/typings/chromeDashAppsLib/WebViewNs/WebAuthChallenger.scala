@@ -10,3 +10,12 @@ trait WebAuthChallenger extends js.Object {
   var port: chromeDashAppsLib.chromeNs.integer
 }
 
+object WebAuthChallenger {
+  @scala.inline
+  def apply(host: java.lang.String, port: chromeDashAppsLib.chromeNs.integer): WebAuthChallenger = {
+    val __obj = js.Dynamic.literal(host = host, port = port)
+  
+    __obj.asInstanceOf[WebAuthChallenger]
+  }
+}
+

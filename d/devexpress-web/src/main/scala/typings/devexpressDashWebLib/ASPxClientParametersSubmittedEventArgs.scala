@@ -21,3 +21,12 @@ trait ASPxClientParametersSubmittedEventArgs extends ASPxClientEventArgs {
   var ParametersViewModel: js.Object
 }
 
+object ASPxClientParametersSubmittedEventArgs {
+  @scala.inline
+  def apply(Parameters: org.scalablytyped.runtime.StringDictionary[js.Object], ParametersViewModel: js.Object): ASPxClientParametersSubmittedEventArgs = {
+    val __obj = js.Dynamic.literal(Parameters = Parameters, ParametersViewModel = ParametersViewModel)
+  
+    __obj.asInstanceOf[ASPxClientParametersSubmittedEventArgs]
+  }
+}
+

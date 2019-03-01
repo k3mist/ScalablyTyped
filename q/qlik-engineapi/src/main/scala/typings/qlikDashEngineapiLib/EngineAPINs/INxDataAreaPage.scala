@@ -35,3 +35,12 @@ trait INxDataAreaPage extends js.Object {
   var qWidth: scala.Double
 }
 
+object INxDataAreaPage {
+  @scala.inline
+  def apply(qHeight: scala.Double, qLeft: scala.Double, qTop: scala.Double, qWidth: scala.Double): INxDataAreaPage = {
+    val __obj = js.Dynamic.literal(qHeight = qHeight, qLeft = qLeft, qTop = qTop, qWidth = qWidth)
+  
+    __obj.asInstanceOf[INxDataAreaPage]
+  }
+}
+

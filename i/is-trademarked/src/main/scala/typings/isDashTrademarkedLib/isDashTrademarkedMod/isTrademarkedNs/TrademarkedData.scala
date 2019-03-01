@@ -13,3 +13,18 @@ trait TrademarkedData extends js.Object {
   var wordmark: java.lang.String
 }
 
+object TrademarkedData {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    reg: stdLib.Date,
+    serviceCode: java.lang.String,
+    sn: java.lang.String,
+    wordmark: java.lang.String
+  ): TrademarkedData = {
+    val __obj = js.Dynamic.literal(description = description, reg = reg, serviceCode = serviceCode, sn = sn, wordmark = wordmark)
+  
+    __obj.asInstanceOf[TrademarkedData]
+  }
+}
+

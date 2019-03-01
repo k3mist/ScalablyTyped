@@ -14,3 +14,15 @@ trait Options extends js.Object {
   var mapTypes: heremapsLib.HNs.serviceNs.MapType
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    mapTypes: heremapsLib.HNs.serviceNs.MapType,
+    alignment: heremapsLib.HNs.uiNs.LayoutAlignment = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(mapTypes = mapTypes)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    __obj.asInstanceOf[Options]
+  }
+}
+

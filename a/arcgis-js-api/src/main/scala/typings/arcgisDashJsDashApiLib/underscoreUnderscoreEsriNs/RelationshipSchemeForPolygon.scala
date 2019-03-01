@@ -40,3 +40,21 @@ trait RelationshipSchemeForPolygon
   var outline: RelationshipSchemeForPolygonOutline
 }
 
+object RelationshipSchemeForPolygon {
+  @scala.inline
+  def apply(
+    colorsForClassBreaks: js.Array[RelationshipSchemeForPolygonColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: RelationshipSchemeForPolygonOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): RelationshipSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[RelationshipSchemeForPolygon]
+  }
+}
+

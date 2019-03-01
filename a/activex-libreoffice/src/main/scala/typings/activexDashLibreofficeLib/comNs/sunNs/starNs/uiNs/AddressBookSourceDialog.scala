@@ -20,3 +20,26 @@ trait AddressBookSourceDialog
   ): scala.Unit
 }
 
+object AddressBookSourceDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createWithDataSource: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): AddressBookSourceDialog = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createWithDataSource = createWithDataSource, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
+    __obj.asInstanceOf[AddressBookSourceDialog]
+  }
+}
+

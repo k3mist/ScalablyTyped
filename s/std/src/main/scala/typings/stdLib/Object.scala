@@ -20,3 +20,20 @@ trait Object extends js.Object {
   def propertyIsEnumerable(v: PropertyKey): scala.Boolean
 }
 
+object Object {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[PropertyKey, scala.Boolean],
+    isPrototypeOf: js.Function1[js.Object, scala.Boolean],
+    propertyIsEnumerable: js.Function1[PropertyKey, scala.Boolean],
+    toLocaleString: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    valueOf: js.Function0[js.Object]
+  ): Object = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isPrototypeOf = isPrototypeOf, propertyIsEnumerable = propertyIsEnumerable, toLocaleString = toLocaleString, toString = toString, valueOf = valueOf)
+  
+    __obj.asInstanceOf[Object]
+  }
+}
+

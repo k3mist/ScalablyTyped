@@ -48,3 +48,18 @@ trait MouseConstraint extends js.Object {
   var `type`: java.lang.String
 }
 
+object MouseConstraint {
+  @scala.inline
+  def apply(
+    body: Body,
+    collisionFilter: ICollisionFilter,
+    constraint: Constraint,
+    mouse: Mouse,
+    `type`: java.lang.String
+  ): MouseConstraint = {
+    val __obj = js.Dynamic.literal(body = body, collisionFilter = collisionFilter, constraint = constraint, mouse = mouse, `type` = `type`)
+  
+    __obj.asInstanceOf[MouseConstraint]
+  }
+}
+

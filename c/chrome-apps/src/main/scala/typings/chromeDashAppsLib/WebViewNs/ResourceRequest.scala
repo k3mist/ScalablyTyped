@@ -27,3 +27,21 @@ trait ResourceRequest extends js.Object {
   var url: java.lang.String
 }
 
+object ResourceRequest {
+  @scala.inline
+  def apply(
+    frameId: chromeDashAppsLib.chromeNs.integer,
+    parentFrameId: chromeDashAppsLib.chromeNs.integer,
+    requestId: java.lang.String,
+    tabId: chromeDashAppsLib.chromeNs.integer,
+    timeStamp: chromeDashAppsLib.chromeNs.double,
+    `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null
+  ): ResourceRequest = {
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    __obj.asInstanceOf[ResourceRequest]
+  }
+}
+

@@ -17,3 +17,17 @@ trait LockedDocumentRequest
   var UserInfo: java.lang.String
 }
 
+object LockedDocumentRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DocumentURL: java.lang.String,
+    Message: java.lang.String,
+    UserInfo: java.lang.String
+  ): LockedDocumentRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, DocumentURL = DocumentURL, Message = Message, UserInfo = UserInfo)
+  
+    __obj.asInstanceOf[LockedDocumentRequest]
+  }
+}
+

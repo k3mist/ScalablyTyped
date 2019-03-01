@@ -10,3 +10,15 @@ trait Anon_ItemsReturnValueIPlayReadyLicense extends js.Object {
   /** The number of items in the collection. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueIPlayReadyLicense {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadyLicense,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueIPlayReadyLicense = {
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadyLicense]
+  }
+}
+

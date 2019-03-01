@@ -16,3 +16,21 @@ trait AvailableEvents extends js.Object {
   var onStateChanged: java.lang.String
 }
 
+object AvailableEvents {
+  @scala.inline
+  def apply(
+    onConnectionSlow: java.lang.String,
+    onDisconnect: java.lang.String,
+    onError: java.lang.String,
+    onReceived: java.lang.String,
+    onReconnect: java.lang.String,
+    onStart: java.lang.String,
+    onStarting: java.lang.String,
+    onStateChanged: java.lang.String
+  ): AvailableEvents = {
+    val __obj = js.Dynamic.literal(onConnectionSlow = onConnectionSlow, onDisconnect = onDisconnect, onError = onError, onReceived = onReceived, onReconnect = onReconnect, onStart = onStart, onStarting = onStarting, onStateChanged = onStateChanged)
+  
+    __obj.asInstanceOf[AvailableEvents]
+  }
+}
+

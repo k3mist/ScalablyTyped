@@ -224,3 +224,58 @@ trait _Impl extends js.Object {
   ): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    checkOnRefresh: scala.Boolean,
+    className: semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ClassNameSettings,
+    context: java.lang.String | semanticDashUiDashVisibilityLib.JQuery,
+    continuous: scala.Boolean,
+    debug: scala.Boolean,
+    duration: scala.Double,
+    error: semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ErrorSettings,
+    includeMargin: scala.Boolean,
+    initialCheck: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    onAllLoaded: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomPassed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomPassedReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomVisible: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomVisibleReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onFixed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onLoad: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onOffScreen: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onOnScreen: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onPassing: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onPassingReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onRefresh: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopPassed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopPassedReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopVisible: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopVisibleReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onUnfixed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onUpdate: js.Function2[
+      semanticDashUiDashVisibilityLib.JQuery, 
+      semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ElementCalculations, 
+      scala.Unit
+    ],
+    once: scala.Boolean,
+    performance: scala.Boolean,
+    refreshOnLoad: scala.Boolean,
+    refreshOnResize: scala.Boolean,
+    silent: scala.Boolean,
+    throttle: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | scala.Double,
+    transition: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | java.lang.String,
+    `type`: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibStrings.image | semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibStrings.fixed,
+    verbose: scala.Boolean,
+    zIndex: scala.Double
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh, className = className, context = context.asInstanceOf[js.Any], continuous = continuous, debug = debug, duration = duration, error = error, includeMargin = includeMargin, initialCheck = initialCheck, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onAllLoaded = onAllLoaded, onBottomPassed = onBottomPassed, onBottomPassedReverse = onBottomPassedReverse, onBottomVisible = onBottomVisible, onBottomVisibleReverse = onBottomVisibleReverse, onFixed = onFixed, onLoad = onLoad, onOffScreen = onOffScreen, onOnScreen = onOnScreen, onPassing = onPassing, onPassingReverse = onPassingReverse, onRefresh = onRefresh, onTopPassed = onTopPassed, onTopPassedReverse = onTopPassedReverse, onTopVisible = onTopVisible, onTopVisibleReverse = onTopVisibleReverse, onUnfixed = onUnfixed, onUpdate = onUpdate, once = once, performance = performance, refreshOnLoad = refreshOnLoad, refreshOnResize = refreshOnResize, silent = silent, throttle = throttle.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any], verbose = verbose, zIndex = zIndex)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

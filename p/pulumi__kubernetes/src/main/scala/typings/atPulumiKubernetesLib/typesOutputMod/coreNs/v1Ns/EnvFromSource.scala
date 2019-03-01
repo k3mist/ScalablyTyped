@@ -23,3 +23,12 @@ trait EnvFromSource extends js.Object {
   val secretRef: SecretEnvSource
 }
 
+object EnvFromSource {
+  @scala.inline
+  def apply(configMapRef: ConfigMapEnvSource, prefix: java.lang.String, secretRef: SecretEnvSource): EnvFromSource = {
+    val __obj = js.Dynamic.literal(configMapRef = configMapRef, prefix = prefix, secretRef = secretRef)
+  
+    __obj.asInstanceOf[EnvFromSource]
+  }
+}
+

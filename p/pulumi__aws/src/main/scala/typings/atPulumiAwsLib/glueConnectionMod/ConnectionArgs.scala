@@ -40,3 +40,25 @@ trait ConnectionArgs extends js.Object {
   ] = js.undefined
 }
 
+object ConnectionArgs {
+  @scala.inline
+  def apply(
+    connectionProperties: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]],
+    catalogId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    matchCriterias: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    physicalConnectionRequirements: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdListsSubnetId] = null
+  ): ConnectionArgs = {
+    val __obj = js.Dynamic.literal(connectionProperties = connectionProperties.asInstanceOf[js.Any])
+    if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])
+    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (matchCriterias != null) __obj.updateDynamic("matchCriterias")(matchCriterias.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (physicalConnectionRequirements != null) __obj.updateDynamic("physicalConnectionRequirements")(physicalConnectionRequirements.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectionArgs]
+  }
+}
+

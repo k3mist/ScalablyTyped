@@ -32,3 +32,22 @@ trait Contribution extends ContributionBase {
   var `type`: java.lang.String
 }
 
+object Contribution {
+  @scala.inline
+  def apply(
+    constraints: js.Array[ContributionConstraint],
+    description: java.lang.String,
+    id: java.lang.String,
+    includes: js.Array[java.lang.String],
+    properties: js.Any,
+    restrictedTo: js.Array[java.lang.String],
+    targets: js.Array[java.lang.String],
+    `type`: java.lang.String,
+    visibleTo: js.Array[java.lang.String]
+  ): Contribution = {
+    val __obj = js.Dynamic.literal(constraints = constraints, description = description, id = id, includes = includes, properties = properties, restrictedTo = restrictedTo, targets = targets, `type` = `type`, visibleTo = visibleTo)
+  
+    __obj.asInstanceOf[Contribution]
+  }
+}
+

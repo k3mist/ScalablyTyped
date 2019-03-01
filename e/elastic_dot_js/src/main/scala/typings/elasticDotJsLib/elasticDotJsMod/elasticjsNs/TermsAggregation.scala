@@ -101,3 +101,31 @@ trait TermsAggregation extends Aggregation {
   def valueType(v: java.lang.String): TermsAggregation
 }
 
+object TermsAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, TermsAggregation],
+    aggregation: js.Function1[Aggregation, TermsAggregation],
+    exclude: js.Function2[java.lang.String, java.lang.String, TermsAggregation],
+    executionHint: js.Function1[java.lang.String, TermsAggregation],
+    field: js.Function1[java.lang.String, TermsAggregation],
+    format: js.Function1[java.lang.String, TermsAggregation],
+    include: js.Function2[java.lang.String, java.lang.String, TermsAggregation],
+    lang: js.Function1[java.lang.String, TermsAggregation],
+    minDocCount: js.Function1[scala.Double, TermsAggregation],
+    order: js.Function2[java.lang.String, java.lang.String, TermsAggregation],
+    params: js.Function1[js.Object, TermsAggregation],
+    script: js.Function1[java.lang.String, TermsAggregation],
+    scriptValuesUnique: js.Function1[scala.Boolean, TermsAggregation],
+    shardSize: js.Function1[scala.Double, TermsAggregation],
+    size: js.Function1[scala.Double, TermsAggregation],
+    toJSON: js.Function0[js.Any],
+    valueType: js.Function1[java.lang.String, TermsAggregation]
+  ): TermsAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, exclude = exclude, executionHint = executionHint, field = field, format = format, include = include, lang = lang, minDocCount = minDocCount, order = order, params = params, script = script, scriptValuesUnique = scriptValuesUnique, shardSize = shardSize, size = size, toJSON = toJSON, valueType = valueType)
+  
+    __obj.asInstanceOf[TermsAggregation]
+  }
+}
+

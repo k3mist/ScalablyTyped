@@ -39,3 +39,38 @@ trait XWordCursor extends XTextCursor {
   def isStartOfWord(): scala.Boolean
 }
 
+object XWordCursor {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    collapseToEnd: js.Function0[scala.Unit],
+    collapseToStart: js.Function0[scala.Unit],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
+    gotoEndOfWord: js.Function1[scala.Boolean, scala.Boolean],
+    gotoNextWord: js.Function1[scala.Boolean, scala.Boolean],
+    gotoPreviousWord: js.Function1[scala.Boolean, scala.Boolean],
+    gotoRange: js.Function2[XTextRange, scala.Boolean, scala.Unit],
+    gotoStart: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfWord: js.Function1[scala.Boolean, scala.Boolean],
+    isCollapsed: js.Function0[scala.Boolean],
+    isEndOfWord: js.Function0[scala.Boolean],
+    isStartOfWord: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XWordCursor = {
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoEndOfWord = gotoEndOfWord, gotoNextWord = gotoNextWord, gotoPreviousWord = gotoPreviousWord, gotoRange = gotoRange, gotoStart = gotoStart, gotoStartOfWord = gotoStartOfWord, isCollapsed = isCollapsed, isEndOfWord = isEndOfWord, isStartOfWord = isStartOfWord, queryInterface = queryInterface, release = release, setString = setString)
+  
+    __obj.asInstanceOf[XWordCursor]
+  }
+}
+

@@ -29,3 +29,18 @@ trait GetRegionResult extends js.Object {
   val name: java.lang.String
 }
 
+object GetRegionResult {
+  @scala.inline
+  def apply(
+    current: scala.Boolean,
+    description: java.lang.String,
+    endpoint: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String
+  ): GetRegionResult = {
+    val __obj = js.Dynamic.literal(current = current, description = description, endpoint = endpoint, id = id, name = name)
+  
+    __obj.asInstanceOf[GetRegionResult]
+  }
+}
+

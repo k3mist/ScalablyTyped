@@ -10,3 +10,15 @@ trait Anon_Host extends js.Object {
   var platform: officeDashJsDashPreviewLib.OfficeNs.PlatformType
 }
 
+object Anon_Host {
+  @scala.inline
+  def apply(
+    host: officeDashJsDashPreviewLib.OfficeNs.HostType,
+    platform: officeDashJsDashPreviewLib.OfficeNs.PlatformType
+  ): Anon_Host = {
+    val __obj = js.Dynamic.literal(host = host, platform = platform)
+  
+    __obj.asInstanceOf[Anon_Host]
+  }
+}
+

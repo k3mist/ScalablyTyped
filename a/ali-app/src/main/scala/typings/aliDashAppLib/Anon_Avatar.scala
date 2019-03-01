@@ -17,3 +17,18 @@ trait Anon_Avatar extends js.Object {
   var userId: java.lang.String
 }
 
+object Anon_Avatar {
+  @scala.inline
+  def apply(
+    avatar: java.lang.String,
+    email: java.lang.String,
+    mobile: java.lang.String,
+    realName: java.lang.String,
+    userId: java.lang.String
+  ): Anon_Avatar = {
+    val __obj = js.Dynamic.literal(avatar = avatar, email = email, mobile = mobile, realName = realName, userId = userId)
+  
+    __obj.asInstanceOf[Anon_Avatar]
+  }
+}
+

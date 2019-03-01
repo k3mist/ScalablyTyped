@@ -54,3 +54,22 @@ trait HasChildQuery extends Query {
   def `type`(t: java.lang.String): HasChildQuery
 }
 
+object HasChildQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, HasChildQuery],
+    query: js.Function1[js.Object, HasChildQuery],
+    scope: js.Function1[java.lang.String, HasChildQuery],
+    scoreMode: js.Function1[java.lang.String, HasChildQuery],
+    scoreType: js.Function1[java.lang.String, HasChildQuery],
+    shortCircuitCutoff: js.Function1[scala.Double, HasChildQuery],
+    toJSON: js.Function0[js.Any],
+    `type`: js.Function1[java.lang.String, HasChildQuery]
+  ): HasChildQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON, `type` = `type`)
+  
+    __obj.asInstanceOf[HasChildQuery]
+  }
+}
+

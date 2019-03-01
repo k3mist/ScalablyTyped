@@ -18,3 +18,23 @@ trait MapViewPointerUpEvent extends js.Object {
   var y: scala.Double
 }
 
+object MapViewPointerUpEvent {
+  @scala.inline
+  def apply(
+    button: scala.Double,
+    buttons: scala.Double,
+    native: js.Any,
+    pointerId: scala.Double,
+    pointerType: java.lang.String,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): MapViewPointerUpEvent = {
+    val __obj = js.Dynamic.literal(button = button, buttons = buttons, native = native, pointerId = pointerId, pointerType = pointerType, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[MapViewPointerUpEvent]
+  }
+}
+

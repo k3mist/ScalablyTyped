@@ -33,3 +33,20 @@ trait JobQueryContainer
   var queries: js.Array[JobQuery]
 }
 
+object JobQueryContainer {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    containers: js.Array[JobQueryContainer],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    queries: js.Array[JobQuery]
+  ): JobQueryContainer = {
+    val __obj = js.Dynamic.literal(constructor = constructor, containers = containers, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, queries = queries)
+  
+    __obj.asInstanceOf[JobQueryContainer]
+  }
+}
+

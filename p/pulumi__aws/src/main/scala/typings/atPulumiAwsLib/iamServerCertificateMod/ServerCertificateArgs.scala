@@ -44,3 +44,24 @@ trait ServerCertificateArgs extends js.Object {
   val privateKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ServerCertificateArgs {
+  @scala.inline
+  def apply(
+    certificateBody: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    privateKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateChain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ServerCertificateArgs = {
+    val __obj = js.Dynamic.literal(certificateBody = certificateBody.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerCertificateArgs]
+  }
+}
+

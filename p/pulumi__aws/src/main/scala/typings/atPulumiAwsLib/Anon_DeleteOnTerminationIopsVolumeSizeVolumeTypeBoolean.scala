@@ -12,3 +12,20 @@ trait Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean extends js.Object 
   var volumeType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean {
+  @scala.inline
+  def apply(
+    deleteOnTermination: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    iops: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    volumeSize: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    volumeType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean = {
+    val __obj = js.Dynamic.literal()
+    if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
+    if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
+    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]
+  }
+}
+

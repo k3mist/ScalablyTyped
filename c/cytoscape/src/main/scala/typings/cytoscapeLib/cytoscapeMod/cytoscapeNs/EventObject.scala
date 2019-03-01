@@ -21,3 +21,22 @@ import scala.scalajs.js.annotation._
   var layout: js.Any
 }
 
+object EventObject {
+  @scala.inline
+  def apply(
+    cy: Core,
+    layout: js.Any,
+    namespace: java.lang.String,
+    originalEvent: EventObject,
+    position: Position,
+    renderedPosition: Position,
+    timeStamp: scala.Double,
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
+    target: js.Any = null
+  ): EventObject = {
+    val __obj = js.Dynamic.literal(cy = cy, layout = layout, namespace = namespace, originalEvent = originalEvent, position = position, renderedPosition = renderedPosition, timeStamp = timeStamp, `type` = `type`.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[EventObject]
+  }
+}
+

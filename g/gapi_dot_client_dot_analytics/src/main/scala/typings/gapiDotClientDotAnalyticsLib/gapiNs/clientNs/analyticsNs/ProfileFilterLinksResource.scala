@@ -20,3 +20,37 @@ trait ProfileFilterLinksResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId): gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
 }
 
+object ProfileFilterLinksResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLinks]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyLinkId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProfileFilterLink]
+    ]
+  ): ProfileFilterLinksResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[ProfileFilterLinksResource]
+  }
+}
+

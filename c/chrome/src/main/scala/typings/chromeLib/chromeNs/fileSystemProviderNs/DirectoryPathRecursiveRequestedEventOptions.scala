@@ -10,3 +10,17 @@ trait DirectoryPathRecursiveRequestedEventOptions extends DirectoryPathRequested
   var recursive: scala.Boolean
 }
 
+object DirectoryPathRecursiveRequestedEventOptions {
+  @scala.inline
+  def apply(
+    directoryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    recursive: scala.Boolean,
+    requestId: scala.Double
+  ): DirectoryPathRecursiveRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(directoryPath = directoryPath, fileSystemId = fileSystemId, recursive = recursive, requestId = requestId)
+  
+    __obj.asInstanceOf[DirectoryPathRecursiveRequestedEventOptions]
+  }
+}
+

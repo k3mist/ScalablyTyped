@@ -16,3 +16,12 @@ trait _Impl extends js.Object {
   var mobile: stdLib.RegExp
 }
 
+object _Impl {
+  @scala.inline
+  def apply(ios: stdLib.RegExp, mobile: stdLib.RegExp): _Impl = {
+    val __obj = js.Dynamic.literal(ios = ios, mobile = mobile)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

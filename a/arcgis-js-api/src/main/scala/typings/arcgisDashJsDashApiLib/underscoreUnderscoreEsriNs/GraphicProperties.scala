@@ -47,3 +47,24 @@ trait GraphicProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GraphicProperties {
+  @scala.inline
+  def apply(
+    attributes: js.Any = null,
+    geometry: GeometryProperties = null,
+    layer: LayerProperties = null,
+    popupTemplate: PopupTemplateProperties = null,
+    symbol: SymbolProperties = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): GraphicProperties = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[GraphicProperties]
+  }
+}
+

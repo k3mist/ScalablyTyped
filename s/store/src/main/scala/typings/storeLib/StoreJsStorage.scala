@@ -14,3 +14,22 @@ trait StoreJsStorage extends js.Object {
   def write(key: java.lang.String, data: java.lang.String): scala.Unit
 }
 
+object StoreJsStorage {
+  @scala.inline
+  def apply(
+    clearAll: js.Function0[scala.Unit],
+    each: js.Function1[
+      js.Function2[/* val */ java.lang.String, /* key */ java.lang.String, _], 
+      scala.Unit
+    ],
+    name: java.lang.String,
+    read: js.Function1[java.lang.String, java.lang.String | scala.Null],
+    remove: js.Function1[java.lang.String, scala.Unit],
+    write: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): StoreJsStorage = {
+    val __obj = js.Dynamic.literal(clearAll = clearAll, each = each, name = name, read = read, remove = remove, write = write)
+  
+    __obj.asInstanceOf[StoreJsStorage]
+  }
+}
+

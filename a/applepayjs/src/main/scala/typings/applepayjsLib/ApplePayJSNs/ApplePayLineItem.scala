@@ -23,3 +23,12 @@ trait ApplePayLineItem extends js.Object {
   var `type`: js.UndefOr[ApplePayLineItemType] = js.undefined
 }
 
+object ApplePayLineItem {
+  @scala.inline
+  def apply(amount: java.lang.String, label: java.lang.String, `type`: ApplePayLineItemType = null): ApplePayLineItem = {
+    val __obj = js.Dynamic.literal(amount = amount, label = label)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ApplePayLineItem]
+  }
+}
+

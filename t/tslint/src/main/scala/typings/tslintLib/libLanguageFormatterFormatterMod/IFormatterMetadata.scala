@@ -28,3 +28,18 @@ trait IFormatterMetadata extends js.Object {
   var sample: java.lang.String
 }
 
+object IFormatterMetadata {
+  @scala.inline
+  def apply(
+    consumer: ConsumerType,
+    description: java.lang.String,
+    formatterName: java.lang.String,
+    sample: java.lang.String,
+    descriptionDetails: java.lang.String = null
+  ): IFormatterMetadata = {
+    val __obj = js.Dynamic.literal(consumer = consumer, description = description, formatterName = formatterName, sample = sample)
+    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)
+    __obj.asInstanceOf[IFormatterMetadata]
+  }
+}
+

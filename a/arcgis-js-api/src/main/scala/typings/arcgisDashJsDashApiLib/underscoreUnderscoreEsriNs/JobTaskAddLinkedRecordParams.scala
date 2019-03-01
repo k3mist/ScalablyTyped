@@ -27,3 +27,19 @@ trait JobTaskAddLinkedRecordParams
   var user: java.lang.String
 }
 
+object JobTaskAddLinkedRecordParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    tableName: java.lang.String,
+    user: java.lang.String
+  ): JobTaskAddLinkedRecordParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, tableName = tableName, user = user)
+  
+    __obj.asInstanceOf[JobTaskAddLinkedRecordParams]
+  }
+}
+

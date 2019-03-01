@@ -12,3 +12,16 @@ trait ModuleSizeExceededRequest
   var Names: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object ModuleSizeExceededRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Names: activexDashInteropLib.SafeArray[java.lang.String]
+  ): ModuleSizeExceededRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Names = Names)
+  
+    __obj.asInstanceOf[ModuleSizeExceededRequest]
+  }
+}
+

@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ImportNamespaceSpecifier
 }
 
+object ImportNamespaceSpecifier {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ImportNamespaceSpecifier): ImportNamespaceSpecifier = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ImportNamespaceSpecifier]
+  }
+}
+

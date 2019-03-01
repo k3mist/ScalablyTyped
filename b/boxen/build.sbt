@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "boxen"
-version := "2.1-dt-20181231Z-2c399a"
+version := "2.1-dt-20181231Z-69d33b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "cli-boxes" % "1.0-dt-20181231Z-7da839",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
+  "org.scalablytyped" %%% "cli-boxes" % "1.0-dt-20181231Z-787d08",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

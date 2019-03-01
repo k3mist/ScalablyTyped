@@ -12,3 +12,17 @@ trait SubsystemChannelRequest extends ChannelRequest {
   var wantReply: scala.Boolean
 }
 
+object SubsystemChannelRequest {
+  @scala.inline
+  def apply(
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.subsystem,
+    subsystem: java.lang.String,
+    wantReply: scala.Boolean
+  ): SubsystemChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, subsystem = subsystem, wantReply = wantReply)
+  
+    __obj.asInstanceOf[SubsystemChannelRequest]
+  }
+}
+

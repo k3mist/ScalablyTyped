@@ -15,3 +15,20 @@ trait IZoom extends js.Object {
   def reset(): scala.Unit
 }
 
+object IZoom {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    chart: IChart,
+    direction: java.lang.String,
+    enabled: scala.Boolean,
+    format: IFormat,
+    mouseButton: scala.Double,
+    reset: js.Function0[scala.Unit]
+  ): IZoom = {
+    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, format = format, mouseButton = mouseButton, reset = reset)
+  
+    __obj.asInstanceOf[IZoom]
+  }
+}
+

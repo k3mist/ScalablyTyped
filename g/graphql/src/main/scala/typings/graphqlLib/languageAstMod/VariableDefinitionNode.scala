@@ -14,3 +14,21 @@ trait VariableDefinitionNode extends ASTNode {
   val variable: VariableNode
 }
 
+object VariableDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.VariableDefinition,
+    `type`: TypeNode,
+    variable: VariableNode,
+    defaultValue: ValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): VariableDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`, variable = variable)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[VariableDefinitionNode]
+  }
+}
+

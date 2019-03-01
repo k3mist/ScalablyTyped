@@ -28,3 +28,20 @@ trait HTML extends js.Object {
   def setScript(script: java.lang.String, text: java.lang.String): scala.Unit
 }
 
+object HTML {
+  @scala.inline
+  def apply(
+    Element: js.Function3[java.lang.String, js.Any, js.Any, js.Any],
+    TextNode: js.Function1[java.lang.String, js.Any],
+    addElement: js.Function4[js.Any, java.lang.String, js.Any, js.Any, js.Any],
+    addText: js.Function2[js.Any, java.lang.String, js.Any],
+    getScript: js.Function1[java.lang.String, java.lang.String],
+    setScript: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    Cookie: Cookie = null
+  ): HTML = {
+    val __obj = js.Dynamic.literal(Element = Element, TextNode = TextNode, addElement = addElement, addText = addText, getScript = getScript, setScript = setScript)
+    if (Cookie != null) __obj.updateDynamic("Cookie")(Cookie)
+    __obj.asInstanceOf[HTML]
+  }
+}
+

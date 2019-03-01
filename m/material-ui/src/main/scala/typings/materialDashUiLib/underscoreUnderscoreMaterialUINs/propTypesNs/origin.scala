@@ -10,3 +10,12 @@ trait origin extends js.Object {
   var vertical: vertical
 }
 
+object origin {
+  @scala.inline
+  def apply(horizontal: horizontal, vertical: vertical): origin = {
+    val __obj = js.Dynamic.literal(horizontal = horizontal, vertical = vertical)
+  
+    __obj.asInstanceOf[origin]
+  }
+}
+

@@ -14,3 +14,19 @@ trait KikUser extends js.Object {
   var username: java.lang.String
 }
 
+object KikUser {
+  @scala.inline
+  def apply(
+    firstName: java.lang.String,
+    fullName: java.lang.String,
+    lastName: java.lang.String,
+    pic: java.lang.String,
+    thumbnail: java.lang.String,
+    username: java.lang.String
+  ): KikUser = {
+    val __obj = js.Dynamic.literal(firstName = firstName, fullName = fullName, lastName = lastName, pic = pic, thumbnail = thumbnail, username = username)
+  
+    __obj.asInstanceOf[KikUser]
+  }
+}
+

@@ -14,3 +14,19 @@ trait RouteComponentProps[Params /* <: /* import warning: ImportType.apply c Uns
   var staticContext: js.UndefOr[C] = js.undefined
 }
 
+object RouteComponentProps {
+  @scala.inline
+  def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterLib.reactDashRouterLibStrings.RouteComponentProps with js.Any */, C /* <: StaticContext */, S](
+    history: historyLib.historyMod.History[historyLib.historyMod.LocationState],
+    location: historyLib.historyMod.Location[S],
+    `match`: `match`[Params],
+    staticContext: C = null
+  ): RouteComponentProps[Params, C, S] = {
+    val __obj = js.Dynamic.literal(history = history, location = location, `match` = `match`)
+    if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteComponentProps[Params, C, S]]
+  }
+}
+

@@ -16,3 +16,12 @@ trait EventActor extends js.Object {
   var role: java.lang.String
 }
 
+object EventActor {
+  @scala.inline
+  def apply(id: java.lang.String, role: java.lang.String): EventActor = {
+    val __obj = js.Dynamic.literal(id = id, role = role)
+  
+    __obj.asInstanceOf[EventActor]
+  }
+}
+

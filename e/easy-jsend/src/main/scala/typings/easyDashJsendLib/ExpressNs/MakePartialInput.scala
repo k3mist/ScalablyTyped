@@ -12,3 +12,12 @@ trait MakePartialInput extends js.Object {
   var search: js.Object
 }
 
+object MakePartialInput {
+  @scala.inline
+  def apply(model: js.Any, opts: easyDashJsendLib.Anon_Limit, result: js.Any, search: js.Object): MakePartialInput = {
+    val __obj = js.Dynamic.literal(model = model, opts = opts, result = result, search = search)
+  
+    __obj.asInstanceOf[MakePartialInput]
+  }
+}
+

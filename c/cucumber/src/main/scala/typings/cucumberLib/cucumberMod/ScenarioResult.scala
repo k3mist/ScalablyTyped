@@ -10,3 +10,12 @@ trait ScenarioResult extends js.Object {
   var status: Status
 }
 
+object ScenarioResult {
+  @scala.inline
+  def apply(duration: scala.Double, status: Status): ScenarioResult = {
+    val __obj = js.Dynamic.literal(duration = duration, status = status)
+  
+    __obj.asInstanceOf[ScenarioResult]
+  }
+}
+

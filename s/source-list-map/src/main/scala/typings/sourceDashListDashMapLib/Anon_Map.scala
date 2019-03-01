@@ -10,3 +10,12 @@ trait Anon_Map extends js.Object {
   var source: java.lang.String
 }
 
+object Anon_Map {
+  @scala.inline
+  def apply(map: Anon_FileMappings, source: java.lang.String): Anon_Map = {
+    val __obj = js.Dynamic.literal(map = map, source = source)
+  
+    __obj.asInstanceOf[Anon_Map]
+  }
+}
+

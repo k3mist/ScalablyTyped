@@ -13,3 +13,18 @@ trait Anon_Address extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    netType: java.lang.String,
+    sessionId: java.lang.String | scala.Double,
+    sessionVersion: scala.Double,
+    username: java.lang.String
+  ): Anon_Address = {
+    val __obj = js.Dynamic.literal(address = address, netType = netType, sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion, username = username)
+  
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

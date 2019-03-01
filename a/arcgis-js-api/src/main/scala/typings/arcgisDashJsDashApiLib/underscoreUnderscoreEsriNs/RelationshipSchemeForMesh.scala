@@ -34,3 +34,20 @@ trait RelationshipSchemeForMesh
   var opacity: scala.Double
 }
 
+object RelationshipSchemeForMesh {
+  @scala.inline
+  def apply(
+    colorsForClassBreaks: js.Array[RelationshipSchemeForMeshColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): RelationshipSchemeForMesh = {
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[RelationshipSchemeForMesh]
+  }
+}
+

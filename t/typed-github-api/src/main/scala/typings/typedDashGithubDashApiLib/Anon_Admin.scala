@@ -11,3 +11,12 @@ trait Anon_Admin extends js.Object {
   var push: scala.Boolean
 }
 
+object Anon_Admin {
+  @scala.inline
+  def apply(admin: scala.Boolean, pull: scala.Boolean, push: scala.Boolean): Anon_Admin = {
+    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+  
+    __obj.asInstanceOf[Anon_Admin]
+  }
+}
+

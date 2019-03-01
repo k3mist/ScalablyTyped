@@ -24,3 +24,17 @@ trait CreateGlobalSecondaryIndexAction extends js.Object {
   var ProvisionedThroughput: js.UndefOr[ProvisionedThroughput] = js.undefined
 }
 
+object CreateGlobalSecondaryIndexAction {
+  @scala.inline
+  def apply(
+    IndexName: IndexName,
+    KeySchema: KeySchema,
+    Projection: Projection,
+    ProvisionedThroughput: ProvisionedThroughput = null
+  ): CreateGlobalSecondaryIndexAction = {
+    val __obj = js.Dynamic.literal(IndexName = IndexName, KeySchema = KeySchema, Projection = Projection)
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    __obj.asInstanceOf[CreateGlobalSecondaryIndexAction]
+  }
+}
+

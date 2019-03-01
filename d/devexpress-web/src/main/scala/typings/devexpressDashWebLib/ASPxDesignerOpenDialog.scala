@@ -16,3 +16,25 @@ trait ASPxDesignerOpenDialog extends ASPxDesignerReportDialogBase {
   def open(url: java.lang.String): scala.Unit
 }
 
+object ASPxDesignerOpenDialog {
+  @scala.inline
+  def apply(
+    buttons: js.Array[js.Object],
+    cancel: js.Function0[scala.Unit],
+    customize: js.Function2[java.lang.String, ASPxDesignerDialogModel, scala.Unit],
+    height: js.Any,
+    model: js.Any,
+    open: js.Function1[java.lang.String, scala.Unit],
+    show: js.Function1[ASPxDesignerNavigateTab, scala.Unit],
+    tab: js.Any,
+    template: js.Any,
+    title: java.lang.String,
+    visible: js.Any,
+    width: js.Any
+  ): ASPxDesignerOpenDialog = {
+    val __obj = js.Dynamic.literal(buttons = buttons, cancel = cancel, customize = customize, height = height, model = model, open = open, show = show, tab = tab, template = template, title = title, visible = visible, width = width)
+  
+    __obj.asInstanceOf[ASPxDesignerOpenDialog]
+  }
+}
+

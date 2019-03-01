@@ -14,3 +14,12 @@ trait InputFieldGroupProperties extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InputFieldGroupProperties {
+  @scala.inline
+  def apply(description: java.lang.String = null): InputFieldGroupProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[InputFieldGroupProperties]
+  }
+}
+

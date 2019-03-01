@@ -83,3 +83,40 @@ trait XLinguServiceManager
   ): scala.Unit
 }
 
+object XLinguServiceManager {
+  @scala.inline
+  def apply(
+    Hyphenator: XHyphenator,
+    SpellChecker: XSpellChecker,
+    Thesaurus: XThesaurus,
+    acquire: js.Function0[scala.Unit],
+    addLinguServiceManagerListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Boolean],
+    getAvailableServices: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getConfiguredServices: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getHyphenator: js.Function0[XHyphenator],
+    getSpellChecker: js.Function0[XSpellChecker],
+    getThesaurus: js.Function0[XThesaurus],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeLinguServiceManagerListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Boolean],
+    setConfiguredServices: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ]
+  ): XLinguServiceManager = {
+    val __obj = js.Dynamic.literal(Hyphenator = Hyphenator, SpellChecker = SpellChecker, Thesaurus = Thesaurus, acquire = acquire, addLinguServiceManagerListener = addLinguServiceManagerListener, getAvailableServices = getAvailableServices, getConfiguredServices = getConfiguredServices, getHyphenator = getHyphenator, getSpellChecker = getSpellChecker, getThesaurus = getThesaurus, queryInterface = queryInterface, release = release, removeLinguServiceManagerListener = removeLinguServiceManagerListener, setConfiguredServices = setConfiguredServices)
+  
+    __obj.asInstanceOf[XLinguServiceManager]
+  }
+}
+

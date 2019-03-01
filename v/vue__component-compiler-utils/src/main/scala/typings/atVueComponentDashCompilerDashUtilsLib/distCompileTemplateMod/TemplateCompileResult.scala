@@ -16,3 +16,21 @@ trait TemplateCompileResult extends js.Object {
   ]
 }
 
+object TemplateCompileResult {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    errors: js.Array[
+      java.lang.String | atVueComponentDashCompilerDashUtilsLib.distTypesMod.ErrorWithRange
+    ],
+    source: java.lang.String,
+    tips: js.Array[
+      java.lang.String | atVueComponentDashCompilerDashUtilsLib.distTypesMod.ErrorWithRange
+    ]
+  ): TemplateCompileResult = {
+    val __obj = js.Dynamic.literal(code = code, errors = errors, source = source, tips = tips)
+  
+    __obj.asInstanceOf[TemplateCompileResult]
+  }
+}
+

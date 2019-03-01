@@ -10,3 +10,12 @@ trait IDatagramSocketControl extends js.Object {
   var qualityOfService: SocketQualityOfService
 }
 
+object IDatagramSocketControl {
+  @scala.inline
+  def apply(outboundUnicastHopLimit: scala.Double, qualityOfService: SocketQualityOfService): IDatagramSocketControl = {
+    val __obj = js.Dynamic.literal(outboundUnicastHopLimit = outboundUnicastHopLimit, qualityOfService = qualityOfService)
+  
+    __obj.asInstanceOf[IDatagramSocketControl]
+  }
+}
+

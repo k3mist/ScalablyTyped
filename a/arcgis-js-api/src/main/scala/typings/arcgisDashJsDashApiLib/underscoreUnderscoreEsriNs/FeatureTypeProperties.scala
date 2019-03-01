@@ -32,3 +32,20 @@ trait FeatureTypeProperties extends js.Object {
   var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
 }
 
+object FeatureTypeProperties {
+  @scala.inline
+  def apply(
+    domains: js.Any = null,
+    id: scala.Double | java.lang.String = null,
+    name: java.lang.String = null,
+    templates: js.Array[FeatureTemplateProperties] = null
+  ): FeatureTypeProperties = {
+    val __obj = js.Dynamic.literal()
+    if (domains != null) __obj.updateDynamic("domains")(domains)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (templates != null) __obj.updateDynamic("templates")(templates)
+    __obj.asInstanceOf[FeatureTypeProperties]
+  }
+}
+

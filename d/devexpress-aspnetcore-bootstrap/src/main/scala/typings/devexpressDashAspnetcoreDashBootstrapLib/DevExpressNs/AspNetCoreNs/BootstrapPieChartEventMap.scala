@@ -24,3 +24,28 @@ trait BootstrapPieChartEventMap extends ControlEventMap {
   var tooltipShown: BootstrapChartElementActionEventArgs
 }
 
+object BootstrapPieChartEventMap {
+  @scala.inline
+  def apply(
+    disposing: BootstrapChartEventArgsBase,
+    done: BootstrapChartEventArgsBase,
+    drawn: BootstrapChartEventArgsBase,
+    exported: BootstrapChartEventArgsBase,
+    exporting: BootstrapChartExportEventArgs,
+    fileSaving: BootstrapChartExportEventArgs,
+    incidentOccurred: BootstrapChartErrorEventArgs,
+    init: BootstrapChartEventArgsBase,
+    legendClick: BootstrapChartElementClickEventArgs,
+    optionChanged: BootstrapChartOptionChangedEventArgs,
+    pointClick: BootstrapChartElementClickEventArgs,
+    pointHoverChanged: BootstrapChartElementActionEventArgs,
+    pointSelectionChanged: BootstrapChartElementActionEventArgs,
+    tooltipHidden: BootstrapChartElementActionEventArgs,
+    tooltipShown: BootstrapChartElementActionEventArgs
+  ): BootstrapPieChartEventMap = {
+    val __obj = js.Dynamic.literal(disposing = disposing, done = done, drawn = drawn, exported = exported, exporting = exporting, fileSaving = fileSaving, incidentOccurred = incidentOccurred, init = init, legendClick = legendClick, optionChanged = optionChanged, pointClick = pointClick, pointHoverChanged = pointHoverChanged, pointSelectionChanged = pointSelectionChanged, tooltipHidden = tooltipHidden, tooltipShown = tooltipShown)
+  
+    __obj.asInstanceOf[BootstrapPieChartEventMap]
+  }
+}
+

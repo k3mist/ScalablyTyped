@@ -18,3 +18,33 @@ trait GlobalForwardingRulesResource extends js.Object {
   def setTarget(request: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object GlobalForwardingRulesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList]
+    ],
+    setTarget: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): GlobalForwardingRulesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setTarget = setTarget)
+  
+    __obj.asInstanceOf[GlobalForwardingRulesResource]
+  }
+}
+

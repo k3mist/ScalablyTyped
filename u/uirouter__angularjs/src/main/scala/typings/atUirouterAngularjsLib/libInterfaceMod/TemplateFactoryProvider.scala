@@ -30,3 +30,12 @@ trait TemplateFactoryProvider extends js.Object {
   def useHttpService(useUnsafeHttpService: scala.Boolean): js.Any
 }
 
+object TemplateFactoryProvider {
+  @scala.inline
+  def apply(useHttpService: js.Function1[scala.Boolean, js.Any]): TemplateFactoryProvider = {
+    val __obj = js.Dynamic.literal(useHttpService = useHttpService)
+  
+    __obj.asInstanceOf[TemplateFactoryProvider]
+  }
+}
+

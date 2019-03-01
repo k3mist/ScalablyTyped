@@ -30,3 +30,35 @@ trait ReadableState extends js.Object {
   var sync: scala.Boolean
 }
 
+object ReadableState {
+  @scala.inline
+  def apply(
+    awaitDrain: scala.Double,
+    buffer: BufferList[_],
+    defaultEncoding: java.lang.String,
+    destroyed: scala.Boolean,
+    emittedReadable: scala.Boolean,
+    endEmitted: scala.Boolean,
+    ended: scala.Boolean,
+    flowing: js.Any,
+    highWaterMark: scala.Double,
+    length: scala.Double,
+    needReadable: scala.Boolean,
+    objectMode: scala.Boolean,
+    pipes: js.Any,
+    pipesCount: scala.Double,
+    readableListening: scala.Boolean,
+    reading: scala.Boolean,
+    readingMore: scala.Boolean,
+    resumeScheduled: scala.Boolean,
+    sync: scala.Boolean,
+    decoder: nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder = null,
+    encoding: java.lang.String = null
+  ): ReadableState = {
+    val __obj = js.Dynamic.literal(awaitDrain = awaitDrain, buffer = buffer, defaultEncoding = defaultEncoding, destroyed = destroyed, emittedReadable = emittedReadable, endEmitted = endEmitted, ended = ended, flowing = flowing, highWaterMark = highWaterMark, length = length, needReadable = needReadable, objectMode = objectMode, pipes = pipes, pipesCount = pipesCount, readableListening = readableListening, reading = reading, readingMore = readingMore, resumeScheduled = resumeScheduled, sync = sync)
+    if (decoder != null) __obj.updateDynamic("decoder")(decoder)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    __obj.asInstanceOf[ReadableState]
+  }
+}
+

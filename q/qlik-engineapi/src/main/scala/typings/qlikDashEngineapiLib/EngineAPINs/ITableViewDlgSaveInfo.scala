@@ -27,3 +27,12 @@ trait ITableViewDlgSaveInfo extends js.Object {
   var qPos: IRect
 }
 
+object ITableViewDlgSaveInfo {
+  @scala.inline
+  def apply(qCtlInfo: ITableViewCtlSaveInfo, qMode: scala.Double, qPos: IRect): ITableViewDlgSaveInfo = {
+    val __obj = js.Dynamic.literal(qCtlInfo = qCtlInfo, qMode = qMode, qPos = qPos)
+  
+    __obj.asInstanceOf[ITableViewDlgSaveInfo]
+  }
+}
+

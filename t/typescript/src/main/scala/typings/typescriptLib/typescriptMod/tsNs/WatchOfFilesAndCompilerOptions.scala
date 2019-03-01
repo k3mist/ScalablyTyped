@@ -13,3 +13,15 @@ trait WatchOfFilesAndCompilerOptions[T] extends Watch[T] {
   def updateRootFileNames(fileNames: js.Array[java.lang.String]): scala.Unit
 }
 
+object WatchOfFilesAndCompilerOptions {
+  @scala.inline
+  def apply[T](
+    getProgram: js.Function0[T],
+    updateRootFileNames: js.Function1[js.Array[java.lang.String], scala.Unit]
+  ): WatchOfFilesAndCompilerOptions[T] = {
+    val __obj = js.Dynamic.literal(getProgram = getProgram, updateRootFileNames = updateRootFileNames)
+  
+    __obj.asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
+  }
+}
+

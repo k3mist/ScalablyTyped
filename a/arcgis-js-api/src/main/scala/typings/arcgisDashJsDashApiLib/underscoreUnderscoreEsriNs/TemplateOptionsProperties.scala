@@ -107,3 +107,36 @@ trait TemplateOptionsProperties extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TemplateOptionsProperties {
+  @scala.inline
+  def apply(
+    attributionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    author: java.lang.String = null,
+    copyright: java.lang.String = null,
+    dpi: java.lang.String = null,
+    forceFeatureAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    layout: java.lang.String = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    scaleEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): TemplateOptionsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attributionEnabled)) __obj.updateDynamic("attributionEnabled")(attributionEnabled)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi)
+    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TemplateOptionsProperties]
+  }
+}
+

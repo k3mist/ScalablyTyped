@@ -50,3 +50,32 @@ trait WebMapProperties extends MapProperties {
   var widgets: js.UndefOr[js.Any] = js.undefined
 }
 
+object WebMapProperties {
+  @scala.inline
+  def apply(
+    applicationProperties: js.Any = null,
+    basemap: BasemapProperties | java.lang.String = null,
+    bookmarks: CollectionProperties[BookmarkProperties] = null,
+    ground: GroundProperties | java.lang.String = null,
+    initialViewProperties: InitialViewPropertiesProperties = null,
+    layers: CollectionProperties[LayerProperties] | js.Array[LayerProperties] = null,
+    portalItem: PortalItemProperties = null,
+    presentation: js.Any = null,
+    tables: js.Array[_] = null,
+    widgets: js.Any = null
+  ): WebMapProperties = {
+    val __obj = js.Dynamic.literal()
+    if (applicationProperties != null) __obj.updateDynamic("applicationProperties")(applicationProperties)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
+    if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
+    if (initialViewProperties != null) __obj.updateDynamic("initialViewProperties")(initialViewProperties)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (presentation != null) __obj.updateDynamic("presentation")(presentation)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (widgets != null) __obj.updateDynamic("widgets")(widgets)
+    __obj.asInstanceOf[WebMapProperties]
+  }
+}
+

@@ -31,3 +31,12 @@ trait ReportOpenParameters extends js.Object {
   var id: java.lang.String
 }
 
+object ReportOpenParameters {
+  @scala.inline
+  def apply(action: ReportAction, id: java.lang.String, helpID: java.lang.String = null): ReportOpenParameters = {
+    val __obj = js.Dynamic.literal(action = action, id = id)
+    if (helpID != null) __obj.updateDynamic("helpID")(helpID)
+    __obj.asInstanceOf[ReportOpenParameters]
+  }
+}
+

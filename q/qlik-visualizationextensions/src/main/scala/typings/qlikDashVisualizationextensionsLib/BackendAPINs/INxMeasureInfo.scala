@@ -61,3 +61,25 @@ trait INxMeasureInfo extends js.Object {
   var qSortIndicator: SortIndicatorType
 }
 
+object INxMeasureInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: js.Array[INxMeasureInfo],
+    qAttrExprInfo: js.Array[INxAttrExprInfo],
+    qCardinal: scala.Double,
+    qError: INxValidationError,
+    qFallbackTitle: java.lang.String,
+    qIsAutoFormat: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qNumFormat: IFieldAttributes,
+    qReverseSort: scala.Boolean,
+    qSortIndicator: SortIndicatorType
+  ): INxMeasureInfo = {
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qError = qError, qFallbackTitle = qFallbackTitle, qIsAutoFormat = qIsAutoFormat, qMax = qMax, qMin = qMin, qNumFormat = qNumFormat, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator)
+  
+    __obj.asInstanceOf[INxMeasureInfo]
+  }
+}
+

@@ -14,3 +14,18 @@ trait Anon_Allowedextensions
   var `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.pkcs11 | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.stdio
 }
 
+object Anon_Allowedextensions {
+  @scala.inline
+  def apply(
+    allowed_extensions: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID],
+    description: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String,
+    `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.pkcs11 | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.stdio
+  ): Anon_Allowedextensions = {
+    val __obj = js.Dynamic.literal(allowed_extensions = allowed_extensions, description = description, name = name, path = path, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Allowedextensions]
+  }
+}
+

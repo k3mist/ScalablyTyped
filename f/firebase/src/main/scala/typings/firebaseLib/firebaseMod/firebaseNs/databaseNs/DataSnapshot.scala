@@ -20,3 +20,25 @@ trait DataSnapshot extends js.Object {
   def `val`(): js.Any
 }
 
+object DataSnapshot {
+  @scala.inline
+  def apply(
+    child: js.Function1[java.lang.String, DataSnapshot],
+    exists: js.Function0[scala.Boolean],
+    exportVal: js.Function0[js.Any],
+    forEach: js.Function1[js.Function1[DataSnapshot, scala.Boolean | scala.Unit], scala.Boolean],
+    getPriority: js.Function0[java.lang.String | scala.Double | scala.Null],
+    hasChild: js.Function1[java.lang.String, scala.Boolean],
+    hasChildren: js.Function0[scala.Boolean],
+    numChildren: js.Function0[scala.Double],
+    ref: Reference,
+    toJSON: js.Function0[coreDashJsLib.Object | scala.Null],
+    `val`: js.Function0[js.Any],
+    key: java.lang.String = null
+  ): DataSnapshot = {
+    val __obj = js.Dynamic.literal(child = child, exists = exists, exportVal = exportVal, forEach = forEach, getPriority = getPriority, hasChild = hasChild, hasChildren = hasChildren, numChildren = numChildren, ref = ref, toJSON = toJSON, `val` = `val`)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[DataSnapshot]
+  }
+}
+

@@ -33,3 +33,18 @@ trait HorizontalPodAutoscalerStatus extends js.Object {
   val observedGeneration: scala.Double
 }
 
+object HorizontalPodAutoscalerStatus {
+  @scala.inline
+  def apply(
+    currentCPUUtilizationPercentage: scala.Double,
+    currentReplicas: scala.Double,
+    desiredReplicas: scala.Double,
+    lastScaleTime: java.lang.String,
+    observedGeneration: scala.Double
+  ): HorizontalPodAutoscalerStatus = {
+    val __obj = js.Dynamic.literal(currentCPUUtilizationPercentage = currentCPUUtilizationPercentage, currentReplicas = currentReplicas, desiredReplicas = desiredReplicas, lastScaleTime = lastScaleTime, observedGeneration = observedGeneration)
+  
+    __obj.asInstanceOf[HorizontalPodAutoscalerStatus]
+  }
+}
+

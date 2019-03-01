@@ -10,3 +10,12 @@ trait WidgetPosition extends js.Object {
   var row: scala.Double
 }
 
+object WidgetPosition {
+  @scala.inline
+  def apply(column: scala.Double, row: scala.Double): WidgetPosition = {
+    val __obj = js.Dynamic.literal(column = column, row = row)
+  
+    __obj.asInstanceOf[WidgetPosition]
+  }
+}
+

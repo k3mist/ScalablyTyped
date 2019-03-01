@@ -37,3 +37,22 @@ trait IPrioritySignal
   def addWithPriority(listener: js.Function, priority: scala.Double): signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot
 }
 
+object IPrioritySignal {
+  @scala.inline
+  def apply(
+    add: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    addOnce: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    addOnceWithPriority: js.Function2[js.Function, scala.Double, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    addWithPriority: js.Function2[js.Function, scala.Double, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    numListeners: scala.Double,
+    remove: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    removeAll: js.Function0[scala.Unit],
+    valueClasses: js.Array[_]
+  ): IPrioritySignal = {
+    val __obj = js.Dynamic.literal(add = add, addOnce = addOnce, addOnceWithPriority = addOnceWithPriority, addWithPriority = addWithPriority, dispatch = dispatch, numListeners = numListeners, remove = remove, removeAll = removeAll, valueClasses = valueClasses)
+  
+    __obj.asInstanceOf[IPrioritySignal]
+  }
+}
+

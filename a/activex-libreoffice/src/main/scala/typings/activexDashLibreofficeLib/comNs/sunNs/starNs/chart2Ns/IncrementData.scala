@@ -41,3 +41,17 @@ trait IncrementData extends js.Object {
   var SubIncrements: activexDashInteropLib.SafeArray[SubIncrement]
 }
 
+object IncrementData {
+  @scala.inline
+  def apply(
+    BaseValue: js.Any,
+    Distance: js.Any,
+    PostEquidistant: js.Any,
+    SubIncrements: activexDashInteropLib.SafeArray[SubIncrement]
+  ): IncrementData = {
+    val __obj = js.Dynamic.literal(BaseValue = BaseValue, Distance = Distance, PostEquidistant = PostEquidistant, SubIncrements = SubIncrements)
+  
+    __obj.asInstanceOf[IncrementData]
+  }
+}
+

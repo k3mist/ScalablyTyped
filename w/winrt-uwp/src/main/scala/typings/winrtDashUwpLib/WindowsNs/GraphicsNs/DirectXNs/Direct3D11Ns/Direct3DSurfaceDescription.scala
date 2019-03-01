@@ -17,3 +17,17 @@ trait Direct3DSurfaceDescription extends js.Object {
   var width: scala.Double
 }
 
+object Direct3DSurfaceDescription {
+  @scala.inline
+  def apply(
+    format: winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.DirectXPixelFormat,
+    height: scala.Double,
+    multisampleDescription: Direct3DMultisampleDescription,
+    width: scala.Double
+  ): Direct3DSurfaceDescription = {
+    val __obj = js.Dynamic.literal(format = format, height = height, multisampleDescription = multisampleDescription, width = width)
+  
+    __obj.asInstanceOf[Direct3DSurfaceDescription]
+  }
+}
+

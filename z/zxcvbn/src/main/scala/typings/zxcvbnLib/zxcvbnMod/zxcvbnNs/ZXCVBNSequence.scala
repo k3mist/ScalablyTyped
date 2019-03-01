@@ -88,3 +88,33 @@ trait ZXCVBNSequence extends js.Object {
   var uppercase_variations: scala.Double
 }
 
+object ZXCVBNSequence {
+  @scala.inline
+  def apply(
+    ascending: scala.Boolean,
+    base_guesses: scala.Double,
+    base_matches: java.lang.String,
+    base_token: java.lang.String,
+    dictionary_name: java.lang.String,
+    guesses: scala.Double,
+    guesses_log10: scala.Double,
+    i: scala.Double,
+    j: scala.Double,
+    l33t: scala.Boolean,
+    l33t_variations: scala.Double,
+    matched_word: java.lang.String,
+    pattern: java.lang.String,
+    rank: scala.Double,
+    repeat_count: scala.Double,
+    reversed: scala.Boolean,
+    sequence_name: java.lang.String,
+    sequence_space: scala.Double,
+    token: java.lang.String,
+    uppercase_variations: scala.Double
+  ): ZXCVBNSequence = {
+    val __obj = js.Dynamic.literal(ascending = ascending, base_guesses = base_guesses, base_matches = base_matches, base_token = base_token, dictionary_name = dictionary_name, guesses = guesses, guesses_log10 = guesses_log10, i = i, j = j, l33t = l33t, l33t_variations = l33t_variations, matched_word = matched_word, pattern = pattern, rank = rank, repeat_count = repeat_count, reversed = reversed, sequence_name = sequence_name, sequence_space = sequence_space, token = token, uppercase_variations = uppercase_variations)
+  
+    __obj.asInstanceOf[ZXCVBNSequence]
+  }
+}
+

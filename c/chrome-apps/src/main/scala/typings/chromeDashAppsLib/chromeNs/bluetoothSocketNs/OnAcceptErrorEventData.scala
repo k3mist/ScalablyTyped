@@ -21,3 +21,16 @@ trait OnAcceptErrorEventData extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object OnAcceptErrorEventData {
+  @scala.inline
+  def apply(
+    error: OnAcceptErrorCode,
+    errorMessage: java.lang.String,
+    socketId: chromeDashAppsLib.chromeNs.integer
+  ): OnAcceptErrorEventData = {
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, socketId = socketId)
+  
+    __obj.asInstanceOf[OnAcceptErrorEventData]
+  }
+}
+

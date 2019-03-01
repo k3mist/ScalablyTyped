@@ -10,3 +10,12 @@ trait ResizableBoxState extends js.Object {
   var width: scala.Double
 }
 
+object ResizableBoxState {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): ResizableBoxState = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[ResizableBoxState]
+  }
+}
+

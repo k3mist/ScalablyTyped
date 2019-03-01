@@ -11,3 +11,16 @@ trait Update extends SparqlQuery {
   var updates: js.Array[UpdateOperation]
 }
 
+object Update {
+  @scala.inline
+  def apply(
+    prefixes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `type`: sparqljsLib.sparqljsLibStrings.update,
+    updates: js.Array[UpdateOperation]
+  ): Update = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes, `type` = `type`, updates = updates)
+  
+    __obj.asInstanceOf[Update]
+  }
+}
+

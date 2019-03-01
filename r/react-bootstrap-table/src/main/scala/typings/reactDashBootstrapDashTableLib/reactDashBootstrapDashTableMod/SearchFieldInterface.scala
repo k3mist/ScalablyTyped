@@ -16,3 +16,12 @@ trait SearchFieldInterface extends js.Object {
   def setValue(search: java.lang.String): scala.Unit
 }
 
+object SearchFieldInterface {
+  @scala.inline
+  def apply(getValue: js.Function0[java.lang.String], setValue: js.Function1[java.lang.String, scala.Unit]): SearchFieldInterface = {
+    val __obj = js.Dynamic.literal(getValue = getValue, setValue = setValue)
+  
+    __obj.asInstanceOf[SearchFieldInterface]
+  }
+}
+

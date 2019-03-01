@@ -22,3 +22,18 @@ trait DocumentSaveRequest
   var Name: java.lang.String
 }
 
+object DocumentSaveRequest {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Content: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Name: java.lang.String
+  ): DocumentSaveRequest = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Content = Content, Context = Context, Message = Message, Name = Name)
+  
+    __obj.asInstanceOf[DocumentSaveRequest]
+  }
+}
+

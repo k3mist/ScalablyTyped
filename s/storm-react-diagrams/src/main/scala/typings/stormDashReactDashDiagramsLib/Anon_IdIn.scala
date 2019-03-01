@@ -17,3 +17,22 @@ trait Anon_IdIn extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_IdIn {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    in: scala.Boolean,
+    label: java.lang.String,
+    links: js.Array[java.lang.String],
+    maximumLinks: scala.Double,
+    name: java.lang.String,
+    parentNode: java.lang.String,
+    selected: scala.Boolean,
+    `type`: java.lang.String
+  ): Anon_IdIn = {
+    val __obj = js.Dynamic.literal(id = id, in = in, label = label, links = links, maximumLinks = maximumLinks, name = name, parentNode = parentNode, selected = selected, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_IdIn]
+  }
+}
+

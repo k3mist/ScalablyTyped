@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSExportAssignment
 }
 
+object TSExportAssignment {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSExportAssignment
+  ): TSExportAssignment = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+  
+    __obj.asInstanceOf[TSExportAssignment]
+  }
+}
+

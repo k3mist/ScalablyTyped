@@ -73,3 +73,46 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
   var wrapDirectivesAndPipesInClosure: scala.Boolean
 }
 
+object R3ComponentMetadata {
+  @scala.inline
+  def apply(
+    directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelectorString],
+    encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation,
+    host: atAngularCompilerLib.Anon_Attributes,
+    i18nUseExternalIds: scala.Boolean,
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])],
+    interpolation: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig,
+    lifecycle: atAngularCompilerLib.Anon_UsesOnChanges,
+    name: java.lang.String,
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    pipes: stdLib.Map[java.lang.String, atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
+    queries: js.Array[R3QueryMetadata],
+    relativeContextFilePath: java.lang.String,
+    styles: js.Array[java.lang.String],
+    template: atAngularCompilerLib.Anon_Nodes,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    typeArgumentCount: scala.Double,
+    typeSourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    usesInheritance: scala.Boolean,
+    viewQueries: js.Array[R3QueryMetadata],
+    wrapDirectivesAndPipesInClosure: scala.Boolean,
+    animations: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    changeDetection: atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy = null,
+    deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
+    exportAs: java.lang.String = null,
+    providers: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    selector: java.lang.String = null,
+    viewProviders: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null
+  ): R3ComponentMetadata = {
+    val __obj = js.Dynamic.literal(directives = directives, encapsulation = encapsulation, host = host, i18nUseExternalIds = i18nUseExternalIds, inputs = inputs, interpolation = interpolation, lifecycle = lifecycle, name = name, outputs = outputs, pipes = pipes, queries = queries, relativeContextFilePath = relativeContextFilePath, styles = styles, template = template, `type` = `type`, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance, viewQueries = viewQueries, wrapDirectivesAndPipesInClosure = wrapDirectivesAndPipesInClosure)
+    if (animations != null) __obj.updateDynamic("animations")(animations)
+    if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (viewProviders != null) __obj.updateDynamic("viewProviders")(viewProviders)
+    __obj.asInstanceOf[R3ComponentMetadata]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_Derivatives extends js.Object {
   var shaderTextureLOD: scala.Boolean
 }
 
+object Anon_Derivatives {
+  @scala.inline
+  def apply(
+    derivatives: scala.Boolean,
+    drawBuffers: scala.Boolean,
+    fragDepth: scala.Boolean,
+    shaderTextureLOD: scala.Boolean
+  ): Anon_Derivatives = {
+    val __obj = js.Dynamic.literal(derivatives = derivatives, drawBuffers = drawBuffers, fragDepth = fragDepth, shaderTextureLOD = shaderTextureLOD)
+  
+    __obj.asInstanceOf[Anon_Derivatives]
+  }
+}
+

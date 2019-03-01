@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind | scala.Null
 }
 
+object JSXAttribute {
+  @scala.inline
+  def apply(
+    name: astDashTypesLib.genKindsMod.JSXIdentifierKind | astDashTypesLib.genKindsMod.JSXNamespacedNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXAttribute,
+    value: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind = null
+  ): JSXAttribute = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], `type` = `type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSXAttribute]
+  }
+}
+

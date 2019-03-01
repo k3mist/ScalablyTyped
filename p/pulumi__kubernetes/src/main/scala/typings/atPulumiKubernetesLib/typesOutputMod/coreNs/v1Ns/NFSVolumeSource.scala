@@ -27,3 +27,12 @@ trait NFSVolumeSource extends js.Object {
   val server: java.lang.String
 }
 
+object NFSVolumeSource {
+  @scala.inline
+  def apply(path: java.lang.String, readOnly: scala.Boolean, server: java.lang.String): NFSVolumeSource = {
+    val __obj = js.Dynamic.literal(path = path, readOnly = readOnly, server = server)
+  
+    __obj.asInstanceOf[NFSVolumeSource]
+  }
+}
+

@@ -22,3 +22,24 @@ trait XPropertyTypeDescription extends XTypeDescription {
   def getPropertyTypeDescription(): XTypeDescription
 }
 
+object XPropertyTypeDescription {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    PropertyFlags: scala.Double,
+    PropertyTypeDescription: XTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getPropertyFlags: js.Function0[scala.Double],
+    getPropertyTypeDescription: js.Function0[XTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertyTypeDescription = {
+    val __obj = js.Dynamic.literal(Name = Name, PropertyFlags = PropertyFlags, PropertyTypeDescription = PropertyTypeDescription, TypeClass = TypeClass, acquire = acquire, getName = getName, getPropertyFlags = getPropertyFlags, getPropertyTypeDescription = getPropertyTypeDescription, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPropertyTypeDescription]
+  }
+}
+

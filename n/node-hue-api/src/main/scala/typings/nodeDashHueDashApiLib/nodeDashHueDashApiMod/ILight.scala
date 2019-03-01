@@ -17,3 +17,23 @@ trait ILight extends js.Object {
   var uniqueid: java.lang.String
 }
 
+object ILight {
+  @scala.inline
+  def apply(
+    manufacturername: java.lang.String,
+    modelid: java.lang.String,
+    name: java.lang.String,
+    state: nodeDashHueDashApiLib.Anon_Alert,
+    swversion: java.lang.String,
+    `type`: java.lang.String,
+    uniqueid: java.lang.String,
+    id: java.lang.String = null,
+    pointsymbol: nodeDashHueDashApiLib.Anon_1 = null
+  ): ILight = {
+    val __obj = js.Dynamic.literal(manufacturername = manufacturername, modelid = modelid, name = name, state = state, swversion = swversion, `type` = `type`, uniqueid = uniqueid)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (pointsymbol != null) __obj.updateDynamic("pointsymbol")(pointsymbol)
+    __obj.asInstanceOf[ILight]
+  }
+}
+

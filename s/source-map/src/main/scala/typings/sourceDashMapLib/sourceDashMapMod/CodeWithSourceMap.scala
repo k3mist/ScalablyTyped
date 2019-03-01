@@ -10,3 +10,12 @@ trait CodeWithSourceMap extends js.Object {
   var map: SourceMapGenerator
 }
 
+object CodeWithSourceMap {
+  @scala.inline
+  def apply(code: java.lang.String, map: SourceMapGenerator): CodeWithSourceMap = {
+    val __obj = js.Dynamic.literal(code = code, map = map)
+  
+    __obj.asInstanceOf[CodeWithSourceMap]
+  }
+}
+

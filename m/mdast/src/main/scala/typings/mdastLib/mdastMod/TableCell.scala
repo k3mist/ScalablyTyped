@@ -12,3 +12,18 @@ trait TableCell extends Parent {
   var type_TableCell: mdastLib.mdastLibStrings.tableCell
 }
 
+object TableCell {
+  @scala.inline
+  def apply(
+    children: js.Array[PhrasingContent],
+    `type`: mdastLib.mdastLibStrings.tableCell,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null
+  ): TableCell = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[TableCell]
+  }
+}
+

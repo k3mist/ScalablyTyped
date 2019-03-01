@@ -10,3 +10,12 @@ trait Anon_Map extends js.Object {
   var maps: js.Any
 }
 
+object Anon_Map {
+  @scala.inline
+  def apply(map: js.Any, maps: js.Any): Anon_Map = {
+    val __obj = js.Dynamic.literal(map = map, maps = maps)
+  
+    __obj.asInstanceOf[Anon_Map]
+  }
+}
+

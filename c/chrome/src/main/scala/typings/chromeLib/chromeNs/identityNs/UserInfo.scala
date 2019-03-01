@@ -12,3 +12,12 @@ trait UserInfo extends js.Object {
   var id: java.lang.String
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(email: java.lang.String, id: java.lang.String): UserInfo = {
+    val __obj = js.Dynamic.literal(email = email, id = id)
+  
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

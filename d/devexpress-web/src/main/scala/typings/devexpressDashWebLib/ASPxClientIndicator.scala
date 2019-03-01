@@ -16,3 +16,12 @@ trait ASPxClientIndicator extends ASPxClientWebChartElementNamed {
   var series: ASPxClientSeries
 }
 
+object ASPxClientIndicator {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart, name: java.lang.String, series: ASPxClientSeries): ASPxClientIndicator = {
+    val __obj = js.Dynamic.literal(chart = chart, name = name, series = series)
+  
+    __obj.asInstanceOf[ASPxClientIndicator]
+  }
+}
+

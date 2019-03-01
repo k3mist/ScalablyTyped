@@ -10,3 +10,12 @@ trait ClassifiedSpan extends js.Object {
   var textSpan: TextSpan
 }
 
+object ClassifiedSpan {
+  @scala.inline
+  def apply(classificationType: ClassificationTypeNames, textSpan: TextSpan): ClassifiedSpan = {
+    val __obj = js.Dynamic.literal(classificationType = classificationType, textSpan = textSpan)
+  
+    __obj.asInstanceOf[ClassifiedSpan]
+  }
+}
+

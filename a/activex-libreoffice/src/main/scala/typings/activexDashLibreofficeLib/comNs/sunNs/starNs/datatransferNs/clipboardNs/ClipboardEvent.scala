@@ -15,3 +15,15 @@ trait ClipboardEvent
   var Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
 }
 
+object ClipboardEvent {
+  @scala.inline
+  def apply(
+    Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ClipboardEvent = {
+    val __obj = js.Dynamic.literal(Contents = Contents, Source = Source)
+  
+    __obj.asInstanceOf[ClipboardEvent]
+  }
+}
+

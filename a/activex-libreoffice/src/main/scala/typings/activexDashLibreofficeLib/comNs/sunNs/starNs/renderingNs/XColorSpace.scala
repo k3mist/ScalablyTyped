@@ -147,3 +147,52 @@ trait XColorSpace extends js.Object {
   def getType(): scala.Double
 }
 
+object XColorSpace {
+  @scala.inline
+  def apply(
+    ComponentTags: activexDashInteropLib.SafeArray[scala.Double],
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    RenderingIntent: scala.Double,
+    Type: scala.Double,
+    convertColorSpace: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      XColorSpace, 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertToARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[RGBColor]
+    ],
+    getComponentTags: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRenderingIntent: js.Function0[scala.Double],
+    getType: js.Function0[scala.Double]
+  ): XColorSpace = {
+    val __obj = js.Dynamic.literal(ComponentTags = ComponentTags, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = convertColorSpace, convertFromARGB = convertFromARGB, convertFromPARGB = convertFromPARGB, convertFromRGB = convertFromRGB, convertToARGB = convertToARGB, convertToPARGB = convertToPARGB, convertToRGB = convertToRGB, getComponentTags = getComponentTags, getProperties = getProperties, getRenderingIntent = getRenderingIntent, getType = getType)
+  
+    __obj.asInstanceOf[XColorSpace]
+  }
+}
+

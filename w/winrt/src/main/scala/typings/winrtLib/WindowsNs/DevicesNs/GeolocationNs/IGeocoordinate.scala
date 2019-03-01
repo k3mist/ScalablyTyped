@@ -16,3 +16,21 @@ trait IGeocoordinate extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object IGeocoordinate {
+  @scala.inline
+  def apply(
+    accuracy: scala.Double,
+    altitude: scala.Double,
+    altitudeAccuracy: scala.Double,
+    heading: scala.Double,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    speed: scala.Double,
+    timestamp: stdLib.Date
+  ): IGeocoordinate = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, altitudeAccuracy = altitudeAccuracy, heading = heading, latitude = latitude, longitude = longitude, speed = speed, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IGeocoordinate]
+  }
+}
+

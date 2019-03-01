@@ -51,3 +51,56 @@ trait XLinguProperties
   var IsWrapReverse: scala.Boolean
 }
 
+object XLinguProperties {
+  @scala.inline
+  def apply(
+    DefaultLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultLocale_CJK: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultLocale_CTL: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    HyphMinLeading: scala.Double,
+    HyphMinTrailing: scala.Double,
+    HyphMinWordLength: scala.Double,
+    IsHyphAuto: scala.Boolean,
+    IsHyphSpecial: scala.Boolean,
+    IsIgnoreControlCharacters: scala.Boolean,
+    IsSpellAuto: scala.Boolean,
+    IsSpellCapitalization: scala.Boolean,
+    IsSpellSpecial: scala.Boolean,
+    IsSpellUpperCase: scala.Boolean,
+    IsSpellWithDigits: scala.Boolean,
+    IsUseDictionaryList: scala.Boolean,
+    IsWrapReverse: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XLinguProperties = {
+    val __obj = js.Dynamic.literal(DefaultLocale = DefaultLocale, DefaultLocale_CJK = DefaultLocale_CJK, DefaultLocale_CTL = DefaultLocale_CTL, HyphMinLeading = HyphMinLeading, HyphMinTrailing = HyphMinTrailing, HyphMinWordLength = HyphMinWordLength, IsHyphAuto = IsHyphAuto, IsHyphSpecial = IsHyphSpecial, IsIgnoreControlCharacters = IsIgnoreControlCharacters, IsSpellAuto = IsSpellAuto, IsSpellCapitalization = IsSpellCapitalization, IsSpellSpecial = IsSpellSpecial, IsSpellUpperCase = IsSpellUpperCase, IsSpellWithDigits = IsSpellWithDigits, IsUseDictionaryList = IsUseDictionaryList, IsWrapReverse = IsWrapReverse, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[XLinguProperties]
+  }
+}
+

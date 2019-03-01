@@ -11,3 +11,12 @@ trait ChallengehandlerInvocationData extends js.Object {
   var procedure: java.lang.String
 }
 
+object ChallengehandlerInvocationData {
+  @scala.inline
+  def apply(adapter: java.lang.String, parameters: js.Array[_], procedure: java.lang.String): ChallengehandlerInvocationData = {
+    val __obj = js.Dynamic.literal(adapter = adapter, parameters = parameters, procedure = procedure)
+  
+    __obj.asInstanceOf[ChallengehandlerInvocationData]
+  }
+}
+

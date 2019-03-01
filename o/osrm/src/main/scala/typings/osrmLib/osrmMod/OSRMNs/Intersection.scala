@@ -52,3 +52,20 @@ trait Intersection extends js.Object {
   var out: scala.Double
 }
 
+object Intersection {
+  @scala.inline
+  def apply(
+    bearings: js.Array[scala.Double],
+    classes: js.Array[java.lang.String],
+    entry: js.Array[java.lang.String],
+    in: scala.Double,
+    lanes: Lane,
+    location: Coordinate,
+    out: scala.Double
+  ): Intersection = {
+    val __obj = js.Dynamic.literal(bearings = bearings, classes = classes, entry = entry, in = in, lanes = lanes, location = location, out = out)
+  
+    __obj.asInstanceOf[Intersection]
+  }
+}
+

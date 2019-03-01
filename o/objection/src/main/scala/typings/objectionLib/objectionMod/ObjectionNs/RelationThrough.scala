@@ -15,3 +15,20 @@ trait RelationThrough extends js.Object {
   var to: java.lang.String | Reference | (js.Array[java.lang.String | Reference])
 }
 
+object RelationThrough {
+  @scala.inline
+  def apply(
+    from: java.lang.String | Reference | (js.Array[java.lang.String | Reference]),
+    to: java.lang.String | Reference | (js.Array[java.lang.String | Reference]),
+    beforeInsert: js.Function2[/* model */ Model, /* context */ QueryContext, js.Promise[scala.Unit] | scala.Unit] = null,
+    extra: js.Array[java.lang.String] | js.Object = null,
+    modelClass: ModelClass[_] | java.lang.String = null
+  ): RelationThrough = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (modelClass != null) __obj.updateDynamic("modelClass")(modelClass.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RelationThrough]
+  }
+}
+

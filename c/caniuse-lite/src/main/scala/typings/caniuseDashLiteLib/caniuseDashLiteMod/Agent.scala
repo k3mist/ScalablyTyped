@@ -32,3 +32,19 @@ trait Agent extends js.Object {
   var versions: js.Array[js.Any]
 }
 
+object Agent {
+  @scala.inline
+  def apply(
+    browser: java.lang.String,
+    prefix: java.lang.String,
+    release_date: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]],
+    usage_global: UsageByVersion,
+    versions: js.Array[js.Any],
+    prefix_exceptions: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null
+  ): Agent = {
+    val __obj = js.Dynamic.literal(browser = browser, prefix = prefix, release_date = release_date, usage_global = usage_global, versions = versions)
+    if (prefix_exceptions != null) __obj.updateDynamic("prefix_exceptions")(prefix_exceptions)
+    __obj.asInstanceOf[Agent]
+  }
+}
+

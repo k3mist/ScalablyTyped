@@ -12,3 +12,17 @@ trait ICompass extends js.Object {
   def getCurrentReading(): CompassReading
 }
 
+object ICompass {
+  @scala.inline
+  def apply(
+    getCurrentReading: js.Function0[CompassReading],
+    minimumReportInterval: scala.Double,
+    onreadingchanged: js.Any,
+    reportInterval: scala.Double
+  ): ICompass = {
+    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading, minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
+  
+    __obj.asInstanceOf[ICompass]
+  }
+}
+

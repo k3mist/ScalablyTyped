@@ -11,3 +11,15 @@ trait ResultPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object ResultPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    source: java.lang.String
+  ): ResultPlugin = {
+    val __obj = js.Dynamic.literal(apply = apply, source = source)
+  
+    __obj.asInstanceOf[ResultPlugin]
+  }
+}
+

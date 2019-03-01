@@ -32,3 +32,26 @@ trait ByteMatchSetState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ByteMatchSetState {
+  @scala.inline
+  def apply(
+    byteMatchTuples: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
+      ]
+    ] = null,
+    byte_match_tuple: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
+      ]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ByteMatchSetState = {
+    val __obj = js.Dynamic.literal()
+    if (byteMatchTuples != null) __obj.updateDynamic("byteMatchTuples")(byteMatchTuples.asInstanceOf[js.Any])
+    if (byte_match_tuple != null) __obj.updateDynamic("byte_match_tuple")(byte_match_tuple.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ByteMatchSetState]
+  }
+}
+

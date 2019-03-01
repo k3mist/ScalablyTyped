@@ -67,3 +67,78 @@ trait BaseOptions extends js.Object {
   def parseDate(date: java.lang.String, format: java.lang.String): stdLib.Date
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    allowInput: scala.Boolean,
+    altFormat: java.lang.String,
+    altInput: scala.Boolean,
+    altInputClass: java.lang.String,
+    animate: scala.Boolean,
+    appendTo: stdLib.HTMLElement,
+    ariaDateFormat: java.lang.String,
+    clickOpens: scala.Boolean,
+    closeOnSelect: scala.Boolean,
+    conjunction: java.lang.String,
+    dateFormat: java.lang.String,
+    defaultDate: DateOption | js.Array[DateOption],
+    defaultHour: scala.Double,
+    defaultMinute: scala.Double,
+    defaultSeconds: scala.Double,
+    disable: js.Array[DateLimit[DateOption]],
+    disableMobile: scala.Boolean,
+    enable: js.Array[DateLimit[DateOption]],
+    enableSeconds: scala.Boolean,
+    enableTime: scala.Boolean,
+    errorHandler: js.Function1[stdLib.Error, scala.Unit],
+    formatDate: js.Function3[
+      stdLib.Date, 
+      java.lang.String, 
+      flatpickrLib.distTypesLocaleMod.Locale, 
+      java.lang.String
+    ],
+    getWeek: js.Function1[stdLib.Date, java.lang.String | scala.Double],
+    hourIncrement: scala.Double,
+    ignoredFocusElements: js.Array[stdLib.HTMLElement],
+    `inline`: scala.Boolean,
+    locale: flatpickrLib.distTypesLocaleMod.key | flatpickrLib.distTypesLocaleMod.CustomLocale,
+    maxDate: DateOption,
+    maxTime: DateOption,
+    minDate: DateOption,
+    minTime: DateOption,
+    minuteIncrement: scala.Double,
+    mode: flatpickrLib.flatpickrLibStrings.single | flatpickrLib.flatpickrLibStrings.multiple | flatpickrLib.flatpickrLibStrings.range | flatpickrLib.flatpickrLibStrings.time,
+    nextArrow: java.lang.String,
+    noCalendar: scala.Boolean,
+    onChange: Hook | js.Array[Hook],
+    onClose: Hook | js.Array[Hook],
+    onDayCreate: Hook | js.Array[Hook],
+    onDestroy: Hook | js.Array[Hook],
+    onKeyDown: Hook | js.Array[Hook],
+    onMonthChange: Hook | js.Array[Hook],
+    onOpen: Hook | js.Array[Hook],
+    onParseConfig: Hook | js.Array[Hook],
+    onPreCalendarPosition: Hook | js.Array[Hook],
+    onReady: Hook | js.Array[Hook],
+    onValueUpdate: Hook | js.Array[Hook],
+    onYearChange: Hook | js.Array[Hook],
+    parseDate: js.Function2[java.lang.String, java.lang.String, stdLib.Date],
+    plugins: js.Array[Plugin[js.Object]],
+    position: flatpickrLib.flatpickrLibStrings.auto | flatpickrLib.flatpickrLibStrings.above | flatpickrLib.flatpickrLibStrings.below,
+    positionElement: stdLib.Element,
+    prevArrow: java.lang.String,
+    shorthandCurrentMonth: scala.Boolean,
+    static: scala.Boolean,
+    time_24hr: scala.Boolean,
+    weekNumbers: scala.Boolean,
+    wrap: scala.Boolean,
+    now: DateOption = null,
+    showMonths: scala.Int | scala.Double = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal(allowInput = allowInput, altFormat = altFormat, altInput = altInput, altInputClass = altInputClass, animate = animate, appendTo = appendTo, ariaDateFormat = ariaDateFormat, clickOpens = clickOpens, closeOnSelect = closeOnSelect, conjunction = conjunction, dateFormat = dateFormat, defaultDate = defaultDate.asInstanceOf[js.Any], defaultHour = defaultHour, defaultMinute = defaultMinute, defaultSeconds = defaultSeconds, disable = disable, disableMobile = disableMobile, enable = enable, enableSeconds = enableSeconds, enableTime = enableTime, errorHandler = errorHandler, formatDate = formatDate, getWeek = getWeek, hourIncrement = hourIncrement, ignoredFocusElements = ignoredFocusElements, `inline` = `inline`, locale = locale.asInstanceOf[js.Any], maxDate = maxDate.asInstanceOf[js.Any], maxTime = maxTime.asInstanceOf[js.Any], minDate = minDate.asInstanceOf[js.Any], minTime = minTime.asInstanceOf[js.Any], minuteIncrement = minuteIncrement, mode = mode.asInstanceOf[js.Any], nextArrow = nextArrow, noCalendar = noCalendar, onChange = onChange.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any], onDayCreate = onDayCreate.asInstanceOf[js.Any], onDestroy = onDestroy.asInstanceOf[js.Any], onKeyDown = onKeyDown.asInstanceOf[js.Any], onMonthChange = onMonthChange.asInstanceOf[js.Any], onOpen = onOpen.asInstanceOf[js.Any], onParseConfig = onParseConfig.asInstanceOf[js.Any], onPreCalendarPosition = onPreCalendarPosition.asInstanceOf[js.Any], onReady = onReady.asInstanceOf[js.Any], onValueUpdate = onValueUpdate.asInstanceOf[js.Any], onYearChange = onYearChange.asInstanceOf[js.Any], parseDate = parseDate, plugins = plugins, position = position.asInstanceOf[js.Any], positionElement = positionElement, prevArrow = prevArrow, shorthandCurrentMonth = shorthandCurrentMonth, static = static, time_24hr = time_24hr, weekNumbers = weekNumbers, wrap = wrap)
+    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    if (showMonths != null) __obj.updateDynamic("showMonths")(showMonths.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

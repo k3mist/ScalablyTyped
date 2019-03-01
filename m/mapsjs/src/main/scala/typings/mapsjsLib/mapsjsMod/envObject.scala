@@ -24,3 +24,12 @@ trait envObject extends js.Object {
   var minY: scala.Double
 }
 
+object envObject {
+  @scala.inline
+  def apply(maxX: scala.Double, maxY: scala.Double, minX: scala.Double, minY: scala.Double): envObject = {
+    val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, minX = minX, minY = minY)
+  
+    __obj.asInstanceOf[envObject]
+  }
+}
+

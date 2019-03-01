@@ -14,3 +14,12 @@ trait FollowersObject extends js.Object {
   var total: scala.Double
 }
 
+object FollowersObject {
+  @scala.inline
+  def apply(href: java.lang.String, total: scala.Double): FollowersObject = {
+    val __obj = js.Dynamic.literal(href = href, total = total)
+  
+    __obj.asInstanceOf[FollowersObject]
+  }
+}
+

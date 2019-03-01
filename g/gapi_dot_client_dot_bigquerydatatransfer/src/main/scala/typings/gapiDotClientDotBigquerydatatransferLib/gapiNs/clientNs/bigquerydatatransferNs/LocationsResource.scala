@@ -16,3 +16,23 @@ trait LocationsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
 }
 
+object LocationsResource {
+  @scala.inline
+  def apply(
+    dataSources: DataSourcesResource,
+    get: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Location]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
+    ],
+    transferConfigs: TransferConfigsResource
+  ): LocationsResource = {
+    val __obj = js.Dynamic.literal(dataSources = dataSources, get = get, list = list, transferConfigs = transferConfigs)
+  
+    __obj.asInstanceOf[LocationsResource]
+  }
+}
+

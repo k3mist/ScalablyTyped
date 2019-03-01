@@ -25,3 +25,30 @@ trait TinderMatch extends js.Object {
   var person: TinderPerson
 }
 
+object TinderMatch {
+  @scala.inline
+  def apply(
+    _id: java.lang.String,
+    closed: scala.Boolean,
+    common_friend_count: scala.Double,
+    common_like_count: scala.Double,
+    created_date: java.lang.String,
+    dead: scala.Boolean,
+    following: scala.Boolean,
+    following_moments: scala.Boolean,
+    id: java.lang.String,
+    is_super_like: scala.Boolean,
+    last_activity_date: java.lang.String,
+    message_count: scala.Double,
+    messages: js.Array[TinderMessage],
+    muted: scala.Boolean,
+    participants: js.Array[java.lang.String],
+    pending: scala.Boolean,
+    person: TinderPerson
+  ): TinderMatch = {
+    val __obj = js.Dynamic.literal(_id = _id, closed = closed, common_friend_count = common_friend_count, common_like_count = common_like_count, created_date = created_date, dead = dead, following = following, following_moments = following_moments, id = id, is_super_like = is_super_like, last_activity_date = last_activity_date, message_count = message_count, messages = messages, muted = muted, participants = participants, pending = pending, person = person)
+  
+    __obj.asInstanceOf[TinderMatch]
+  }
+}
+

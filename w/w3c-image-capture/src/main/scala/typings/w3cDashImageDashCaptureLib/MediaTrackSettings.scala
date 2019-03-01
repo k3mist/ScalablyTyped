@@ -22,3 +22,27 @@ trait MediaTrackSettings extends js.Object {
   var zoom: scala.Double
 }
 
+object MediaTrackSettings {
+  @scala.inline
+  def apply(
+    brightness: scala.Double,
+    colorTemperature: scala.Double,
+    contrast: scala.Double,
+    exposureCompensation: scala.Double,
+    exposureMode: MeteringMode,
+    focusDistance: scala.Double,
+    focusMode: MeteringMode,
+    iso: scala.Double,
+    pointsOfInterest: js.Array[Point2D],
+    saturation: scala.Double,
+    sharpness: scala.Double,
+    torch: scala.Boolean,
+    whiteBalanceMode: MeteringMode,
+    zoom: scala.Double
+  ): MediaTrackSettings = {
+    val __obj = js.Dynamic.literal(brightness = brightness, colorTemperature = colorTemperature, contrast = contrast, exposureCompensation = exposureCompensation, exposureMode = exposureMode, focusDistance = focusDistance, focusMode = focusMode, iso = iso, pointsOfInterest = pointsOfInterest, saturation = saturation, sharpness = sharpness, torch = torch, whiteBalanceMode = whiteBalanceMode, zoom = zoom)
+  
+    __obj.asInstanceOf[MediaTrackSettings]
+  }
+}
+

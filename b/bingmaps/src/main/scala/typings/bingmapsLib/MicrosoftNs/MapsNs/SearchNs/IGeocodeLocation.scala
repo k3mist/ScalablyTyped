@@ -19,3 +19,17 @@ trait IGeocodeLocation extends js.Object {
   var precision: java.lang.String
 }
 
+object IGeocodeLocation {
+  @scala.inline
+  def apply(
+    latitude: scala.Double,
+    longitude: scala.Double,
+    name: java.lang.String,
+    precision: java.lang.String
+  ): IGeocodeLocation = {
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, name = name, precision = precision)
+  
+    __obj.asInstanceOf[IGeocodeLocation]
+  }
+}
+

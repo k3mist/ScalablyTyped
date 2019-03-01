@@ -39,3 +39,18 @@ trait Deployment extends js.Object {
   val status: DeploymentStatus
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: DeploymentSpec,
+    status: DeploymentStatus
+  ): Deployment = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

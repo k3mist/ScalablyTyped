@@ -14,3 +14,12 @@ trait SurroundingTextInfo extends js.Object {
   var text: java.lang.String
 }
 
+object SurroundingTextInfo {
+  @scala.inline
+  def apply(anchor: scala.Double, focus: scala.Double, text: java.lang.String): SurroundingTextInfo = {
+    val __obj = js.Dynamic.literal(anchor = anchor, focus = focus, text = text)
+  
+    __obj.asInstanceOf[SurroundingTextInfo]
+  }
+}
+

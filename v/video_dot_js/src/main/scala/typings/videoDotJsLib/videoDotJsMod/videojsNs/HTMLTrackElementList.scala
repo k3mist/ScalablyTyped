@@ -16,3 +16,15 @@ trait HTMLTrackElementList
   var length: scala.Double
 }
 
+object HTMLTrackElementList {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[stdLib.HTMLTrackElement] = null
+  ): HTMLTrackElementList = {
+    val __obj = js.Dynamic.literal(length = length)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[HTMLTrackElementList]
+  }
+}
+

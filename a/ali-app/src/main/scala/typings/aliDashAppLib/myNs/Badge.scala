@@ -22,3 +22,16 @@ trait Badge extends js.Object {
   var `type`: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.point | aliDashAppLib.aliDashAppLibStrings.num | aliDashAppLib.aliDashAppLibStrings.text | aliDashAppLib.aliDashAppLibStrings.more | java.lang.String
 }
 
+object Badge {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    text: java.lang.String,
+    `type`: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.point | aliDashAppLib.aliDashAppLibStrings.num | aliDashAppLib.aliDashAppLibStrings.text | aliDashAppLib.aliDashAppLibStrings.more | java.lang.String
+  ): Badge = {
+    val __obj = js.Dynamic.literal(index = index, text = text, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Badge]
+  }
+}
+

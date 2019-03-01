@@ -16,3 +16,16 @@ trait SearchBetweennessResult extends js.Object {
   def betweennessNormalized(node: NodeSingular): scala.Double
 }
 
+object SearchBetweennessResult {
+  @scala.inline
+  def apply(
+    betweenness: js.Function1[NodeSingular, scala.Double],
+    betweennessNormalised: js.Function1[NodeSingular, scala.Double],
+    betweennessNormalized: js.Function1[NodeSingular, scala.Double]
+  ): SearchBetweennessResult = {
+    val __obj = js.Dynamic.literal(betweenness = betweenness, betweennessNormalised = betweennessNormalised, betweennessNormalized = betweennessNormalized)
+  
+    __obj.asInstanceOf[SearchBetweennessResult]
+  }
+}
+

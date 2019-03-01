@@ -11,3 +11,19 @@ trait Shape extends Node {
   var size: flowdocLib.FlowNs.Size
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    position: flowdocLib.FlowNs.Point,
+    size: flowdocLib.FlowNs.Size,
+    `type`: NodeType,
+    connections: js.Array[flowdocLib.FlowNs.Connection] = null
+  ): Shape = {
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size, `type` = `type`)
+    if (connections != null) __obj.updateDynamic("connections")(connections)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

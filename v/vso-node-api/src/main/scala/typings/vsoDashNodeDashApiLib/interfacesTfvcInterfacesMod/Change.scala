@@ -28,3 +28,18 @@ trait Change[T] extends js.Object {
   var url: java.lang.String
 }
 
+object Change {
+  @scala.inline
+  def apply[T](
+    changeType: VersionControlChangeType,
+    item: T,
+    newContent: ItemContent,
+    sourceServerItem: java.lang.String,
+    url: java.lang.String
+  ): Change[T] = {
+    val __obj = js.Dynamic.literal(changeType = changeType, item = item.asInstanceOf[js.Any], newContent = newContent, sourceServerItem = sourceServerItem, url = url)
+  
+    __obj.asInstanceOf[Change[T]]
+  }
+}
+

@@ -14,3 +14,19 @@ trait DataSourceDisplay extends js.Object {
   def update(time: JulianDate): scala.Boolean
 }
 
+object DataSourceDisplay {
+  @scala.inline
+  def apply(
+    dataSources: DataSourceCollection,
+    defaultDataSource: CustomDataSource,
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    scene: Scene,
+    update: js.Function1[JulianDate, scala.Boolean]
+  ): DataSourceDisplay = {
+    val __obj = js.Dynamic.literal(dataSources = dataSources, defaultDataSource = defaultDataSource, destroy = destroy, isDestroyed = isDestroyed, scene = scene, update = update)
+  
+    __obj.asInstanceOf[DataSourceDisplay]
+  }
+}
+

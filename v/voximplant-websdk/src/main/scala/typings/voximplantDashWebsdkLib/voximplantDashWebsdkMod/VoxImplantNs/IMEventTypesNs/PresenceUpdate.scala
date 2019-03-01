@@ -28,3 +28,17 @@ trait PresenceUpdate
   var resource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PresenceUpdate {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    message: java.lang.String,
+    presence: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.UserStatuses,
+    resource: java.lang.String = null
+  ): PresenceUpdate = {
+    val __obj = js.Dynamic.literal(id = id, message = message, presence = presence)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[PresenceUpdate]
+  }
+}
+

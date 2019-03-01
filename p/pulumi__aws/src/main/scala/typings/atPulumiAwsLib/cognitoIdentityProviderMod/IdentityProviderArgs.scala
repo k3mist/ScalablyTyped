@@ -36,3 +36,20 @@ trait IdentityProviderArgs extends js.Object {
   val userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object IdentityProviderArgs {
+  @scala.inline
+  def apply(
+    providerDetails: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]],
+    providerName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    providerType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    attributeMapping: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    idpIdentifiers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): IdentityProviderArgs = {
+    val __obj = js.Dynamic.literal(providerDetails = providerDetails.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any], providerType = providerType.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
+    if (attributeMapping != null) __obj.updateDynamic("attributeMapping")(attributeMapping.asInstanceOf[js.Any])
+    if (idpIdentifiers != null) __obj.updateDynamic("idpIdentifiers")(idpIdentifiers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentityProviderArgs]
+  }
+}
+

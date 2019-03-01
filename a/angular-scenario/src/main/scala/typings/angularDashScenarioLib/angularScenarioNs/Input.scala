@@ -12,3 +12,17 @@ trait Input extends js.Object {
   def `val`(): Future
 }
 
+object Input {
+  @scala.inline
+  def apply(
+    check: js.Function0[js.Any],
+    enter: js.Function1[js.Any, js.Any],
+    select: js.Function1[js.Any, js.Any],
+    `val`: js.Function0[Future]
+  ): Input = {
+    val __obj = js.Dynamic.literal(check = check, enter = enter, select = select, `val` = `val`)
+  
+    __obj.asInstanceOf[Input]
+  }
+}
+

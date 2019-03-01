@@ -10,3 +10,12 @@ trait BrowserstackAuth extends js.Object {
   var username: java.lang.String
 }
 
+object BrowserstackAuth {
+  @scala.inline
+  def apply(password: java.lang.String, username: java.lang.String): BrowserstackAuth = {
+    val __obj = js.Dynamic.literal(password = password, username = username)
+  
+    __obj.asInstanceOf[BrowserstackAuth]
+  }
+}
+

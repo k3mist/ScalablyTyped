@@ -22,3 +22,22 @@ trait XSystemChildFactory
   ): XWindowPeer
 }
 
+object XSystemChildFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createSystemChild: js.Function3[
+      js.Any, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      XWindowPeer
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSystemChildFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createSystemChild = createSystemChild, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSystemChildFactory]
+  }
+}
+

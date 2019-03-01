@@ -16,3 +16,12 @@ trait RealSize2D extends js.Object {
   var Width: scala.Double
 }
 
+object RealSize2D {
+  @scala.inline
+  def apply(Height: scala.Double, Width: scala.Double): RealSize2D = {
+    val __obj = js.Dynamic.literal(Height = Height, Width = Width)
+  
+    __obj.asInstanceOf[RealSize2D]
+  }
+}
+

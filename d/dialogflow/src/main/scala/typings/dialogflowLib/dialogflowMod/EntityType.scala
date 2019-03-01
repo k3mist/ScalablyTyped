@@ -13,3 +13,18 @@ trait EntityType extends js.Object {
   var name: java.lang.String
 }
 
+object EntityType {
+  @scala.inline
+  def apply(
+    autoExpansionMode: EntityAutoExpansionMode,
+    displayName: java.lang.String,
+    entities: js.Array[EntitySynonyms],
+    kind: EntityKind,
+    name: java.lang.String
+  ): EntityType = {
+    val __obj = js.Dynamic.literal(autoExpansionMode = autoExpansionMode, displayName = displayName, entities = entities, kind = kind, name = name)
+  
+    __obj.asInstanceOf[EntityType]
+  }
+}
+

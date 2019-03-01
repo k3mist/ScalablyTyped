@@ -11,3 +11,16 @@ trait BlockList extends js.Object {
   var UncommittedBlocks: js.Array[java.lang.String]
 }
 
+object BlockList {
+  @scala.inline
+  def apply(
+    CommittedBlocks: js.Array[java.lang.String],
+    LatestBlocks: js.Array[java.lang.String],
+    UncommittedBlocks: js.Array[java.lang.String]
+  ): BlockList = {
+    val __obj = js.Dynamic.literal(CommittedBlocks = CommittedBlocks, LatestBlocks = LatestBlocks, UncommittedBlocks = UncommittedBlocks)
+  
+    __obj.asInstanceOf[BlockList]
+  }
+}
+

@@ -12,3 +12,16 @@ trait IEnumerator[T] extends js.Object {
   def reset(): scala.Unit
 }
 
+object IEnumerator {
+  @scala.inline
+  def apply[T](
+    get_current: js.Function0[T],
+    moveNext: js.Function0[scala.Boolean],
+    reset: js.Function0[scala.Unit]
+  ): IEnumerator[T] = {
+    val __obj = js.Dynamic.literal(get_current = get_current, moveNext = moveNext, reset = reset)
+  
+    __obj.asInstanceOf[IEnumerator[T]]
+  }
+}
+

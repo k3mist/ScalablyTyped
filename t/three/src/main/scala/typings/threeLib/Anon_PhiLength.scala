@@ -12,3 +12,17 @@ trait Anon_PhiLength extends js.Object {
   var segments: scala.Double
 }
 
+object Anon_PhiLength {
+  @scala.inline
+  def apply(
+    phiLength: scala.Double,
+    phiStart: scala.Double,
+    points: js.Array[threeLib.threeDashCoreMod.Vector2],
+    segments: scala.Double
+  ): Anon_PhiLength = {
+    val __obj = js.Dynamic.literal(phiLength = phiLength, phiStart = phiStart, points = points, segments = segments)
+  
+    __obj.asInstanceOf[Anon_PhiLength]
+  }
+}
+

@@ -67,3 +67,21 @@ trait XAccessController
   def getContext(): XAccessControlContext
 }
 
+object XAccessController {
+  @scala.inline
+  def apply(
+    Context: XAccessControlContext,
+    acquire: js.Function0[scala.Unit],
+    checkPermission: js.Function1[js.Any, scala.Unit],
+    doPrivileged: js.Function2[XAction, XAccessControlContext, js.Any],
+    doRestricted: js.Function2[XAction, XAccessControlContext, js.Any],
+    getContext: js.Function0[XAccessControlContext],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessController = {
+    val __obj = js.Dynamic.literal(Context = Context, acquire = acquire, checkPermission = checkPermission, doPrivileged = doPrivileged, doRestricted = doRestricted, getContext = getContext, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessController]
+  }
+}
+

@@ -10,3 +10,12 @@ trait S3ArtifactStore extends js.Object {
   var `type`: awsDashLambdaLib.awsDashLambdaLibStrings.S3
 }
 
+object S3ArtifactStore {
+  @scala.inline
+  def apply(s3Location: S3ArtifactLocation, `type`: awsDashLambdaLib.awsDashLambdaLibStrings.S3): S3ArtifactStore = {
+    val __obj = js.Dynamic.literal(s3Location = s3Location, `type` = `type`)
+  
+    __obj.asInstanceOf[S3ArtifactStore]
+  }
+}
+

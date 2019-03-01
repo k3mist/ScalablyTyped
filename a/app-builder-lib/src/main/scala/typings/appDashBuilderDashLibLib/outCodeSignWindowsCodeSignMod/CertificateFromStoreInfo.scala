@@ -12,3 +12,17 @@ trait CertificateFromStoreInfo extends js.Object {
   var thumbprint: java.lang.String
 }
 
+object CertificateFromStoreInfo {
+  @scala.inline
+  def apply(
+    isLocalMachineStore: scala.Boolean,
+    store: java.lang.String,
+    subject: java.lang.String,
+    thumbprint: java.lang.String
+  ): CertificateFromStoreInfo = {
+    val __obj = js.Dynamic.literal(isLocalMachineStore = isLocalMachineStore, store = store, subject = subject, thumbprint = thumbprint)
+  
+    __obj.asInstanceOf[CertificateFromStoreInfo]
+  }
+}
+

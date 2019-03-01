@@ -14,3 +14,18 @@ trait Anon_DefaultValue extends js.Object {
   var required: scala.Boolean
 }
 
+object Anon_DefaultValue {
+  @scala.inline
+  def apply(
+    defaultValue: js.Any,
+    description: java.lang.String,
+    propType: js.Object | java.lang.String,
+    property: java.lang.String,
+    required: scala.Boolean
+  ): Anon_DefaultValue = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, description = description, propType = propType.asInstanceOf[js.Any], property = property, required = required)
+  
+    __obj.asInstanceOf[Anon_DefaultValue]
+  }
+}
+

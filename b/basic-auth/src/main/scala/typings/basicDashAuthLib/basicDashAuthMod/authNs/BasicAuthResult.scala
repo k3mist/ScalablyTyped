@@ -10,3 +10,12 @@ trait BasicAuthResult extends js.Object {
   var pass: java.lang.String
 }
 
+object BasicAuthResult {
+  @scala.inline
+  def apply(name: java.lang.String, pass: java.lang.String): BasicAuthResult = {
+    val __obj = js.Dynamic.literal(name = name, pass = pass)
+  
+    __obj.asInstanceOf[BasicAuthResult]
+  }
+}
+

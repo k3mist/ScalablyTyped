@@ -12,3 +12,18 @@ trait LogRecordOptions extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LogRecordOptions {
+  @scala.inline
+  def apply(
+    level: java.lang.String,
+    msg: java.lang.String,
+    meta: js.Any = null,
+    tags: js.Array[java.lang.String] = null
+  ): LogRecordOptions = {
+    val __obj = js.Dynamic.literal(level = level, msg = msg)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[LogRecordOptions]
+  }
+}
+

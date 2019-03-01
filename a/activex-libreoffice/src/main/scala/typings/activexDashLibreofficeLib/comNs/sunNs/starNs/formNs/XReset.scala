@@ -26,3 +26,19 @@ trait XReset
   def reset(): scala.Unit
 }
 
+object XReset {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addResetListener: js.Function1[XResetListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeResetListener: js.Function1[XResetListener, scala.Unit],
+    reset: js.Function0[scala.Unit]
+  ): XReset = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addResetListener = addResetListener, queryInterface = queryInterface, release = release, removeResetListener = removeResetListener, reset = reset)
+  
+    __obj.asInstanceOf[XReset]
+  }
+}
+

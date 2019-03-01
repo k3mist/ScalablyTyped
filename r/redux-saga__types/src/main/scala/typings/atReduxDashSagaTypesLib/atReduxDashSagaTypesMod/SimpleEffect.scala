@@ -12,3 +12,17 @@ trait SimpleEffect[T, P] extends js.Object {
   var `type`: T
 }
 
+object SimpleEffect {
+  @scala.inline
+  def apply[T, P](
+    `@@redux-saga/IO`: atReduxDashSagaTypesLib.atReduxDashSagaTypesLibNumbers.`true`,
+    combinator: atReduxDashSagaTypesLib.atReduxDashSagaTypesLibNumbers.`false`,
+    payload: P,
+    `type`: T
+  ): SimpleEffect[T, P] = {
+    val __obj = js.Dynamic.literal(combinator = combinator, payload = payload.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@redux-saga/IO")(`@@redux-saga/IO`)
+    __obj.asInstanceOf[SimpleEffect[T, P]]
+  }
+}
+

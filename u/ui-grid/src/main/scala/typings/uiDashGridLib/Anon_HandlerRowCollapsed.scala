@@ -31,3 +31,23 @@ trait Anon_HandlerRowCollapsed[TEntity] extends js.Object {
   ): scala.Unit
 }
 
+object Anon_HandlerRowCollapsed {
+  @scala.inline
+  def apply[TEntity](
+    rowCollapsed: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowCollapsedHandler[TEntity], 
+      scala.Unit
+    ],
+    rowExpanded: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowExpandedHandler[TEntity], 
+      scala.Unit
+    ]
+  ): Anon_HandlerRowCollapsed[TEntity] = {
+    val __obj = js.Dynamic.literal(rowCollapsed = rowCollapsed, rowExpanded = rowExpanded)
+  
+    __obj.asInstanceOf[Anon_HandlerRowCollapsed[TEntity]]
+  }
+}
+

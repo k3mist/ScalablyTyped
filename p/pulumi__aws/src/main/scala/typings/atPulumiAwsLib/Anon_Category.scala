@@ -18,3 +18,26 @@ trait Anon_Category extends js.Object {
   var version: java.lang.String
 }
 
+object Anon_Category {
+  @scala.inline
+  def apply(
+    category: java.lang.String,
+    name: java.lang.String,
+    owner: java.lang.String,
+    provider: java.lang.String,
+    runOrder: scala.Double,
+    version: java.lang.String,
+    configuration: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    inputArtifacts: js.Array[java.lang.String] = null,
+    outputArtifacts: js.Array[java.lang.String] = null,
+    roleArn: java.lang.String = null
+  ): Anon_Category = {
+    val __obj = js.Dynamic.literal(category = category, name = name, owner = owner, provider = provider, runOrder = runOrder, version = version)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts)
+    if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts)
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
+    __obj.asInstanceOf[Anon_Category]
+  }
+}
+

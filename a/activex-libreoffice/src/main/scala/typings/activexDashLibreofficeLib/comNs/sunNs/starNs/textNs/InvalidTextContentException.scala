@@ -12,3 +12,16 @@ trait InvalidTextContentException
   var TextContent: XTextContent
 }
 
+object InvalidTextContentException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    TextContent: XTextContent
+  ): InvalidTextContentException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TextContent = TextContent)
+  
+    __obj.asInstanceOf[InvalidTextContentException]
+  }
+}
+

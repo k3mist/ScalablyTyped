@@ -10,3 +10,12 @@ trait Entry extends js.Object {
   var value: java.lang.String
 }
 
+object Entry {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): Entry = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[Entry]
+  }
+}
+

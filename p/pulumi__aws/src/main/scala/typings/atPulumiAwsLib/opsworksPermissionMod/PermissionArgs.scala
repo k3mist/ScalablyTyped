@@ -28,3 +28,21 @@ trait PermissionArgs extends js.Object {
   val userArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object PermissionArgs {
+  @scala.inline
+  def apply(
+    userArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    allowSsh: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    allowSudo: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    level: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    stackId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PermissionArgs = {
+    val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
+    if (allowSsh != null) __obj.updateDynamic("allowSsh")(allowSsh.asInstanceOf[js.Any])
+    if (allowSudo != null) __obj.updateDynamic("allowSudo")(allowSudo.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PermissionArgs]
+  }
+}
+

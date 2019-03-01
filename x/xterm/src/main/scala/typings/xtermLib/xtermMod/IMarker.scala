@@ -11,3 +11,12 @@ trait IMarker extends IDisposable {
   val line: scala.Double
 }
 
+object IMarker {
+  @scala.inline
+  def apply(dispose: js.Function0[scala.Unit], id: scala.Double, isDisposed: scala.Boolean, line: scala.Double): IMarker = {
+    val __obj = js.Dynamic.literal(dispose = dispose, id = id, isDisposed = isDisposed, line = line)
+  
+    __obj.asInstanceOf[IMarker]
+  }
+}
+

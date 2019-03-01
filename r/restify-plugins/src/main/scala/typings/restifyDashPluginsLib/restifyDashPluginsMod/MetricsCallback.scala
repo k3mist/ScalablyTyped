@@ -19,3 +19,18 @@ trait MetricsCallback extends js.Object {
   var route: restifyLib.restifyMod.Route
 }
 
+object MetricsCallback {
+  @scala.inline
+  def apply(
+    err: nodeLib.Error,
+    metrics: MetricsCallbackOptions,
+    req: restifyLib.restifyMod.Request,
+    res: restifyLib.restifyMod.Response,
+    route: restifyLib.restifyMod.Route
+  ): MetricsCallback = {
+    val __obj = js.Dynamic.literal(err = err, metrics = metrics, req = req, res = res, route = route)
+  
+    __obj.asInstanceOf[MetricsCallback]
+  }
+}
+

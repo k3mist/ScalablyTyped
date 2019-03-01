@@ -12,3 +12,21 @@ trait LiveChatBansResource extends js.Object {
   def insert(request: gapiDotClientDotYoutubeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[LiveChatBan]
 }
 
+object LiveChatBansResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveChatBan]
+    ]
+  ): LiveChatBansResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert)
+  
+    __obj.asInstanceOf[LiveChatBansResource]
+  }
+}
+

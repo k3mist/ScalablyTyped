@@ -325,3 +325,59 @@ trait MediaDescriptor extends js.Object {
   var ViewId: scala.Double
 }
 
+object MediaDescriptor {
+  @scala.inline
+  def apply(
+    Aborted: scala.Boolean,
+    AsTemplate: scala.Boolean,
+    Author: java.lang.String,
+    CharacterSet: java.lang.String,
+    Comment: java.lang.String,
+    ComponentData: js.Any,
+    DocumentBaseURL: java.lang.String,
+    DocumentTitle: java.lang.String,
+    EncryptionData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    FileName: java.lang.String,
+    FilterData: js.Any,
+    FilterFlags: java.lang.String,
+    FilterName: java.lang.String,
+    FilterOptions: java.lang.String,
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    Hidden: scala.Boolean,
+    HierarchicalDocumentName: java.lang.String,
+    InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    InteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
+    JumpMark: java.lang.String,
+    MacroExecutionMode: scala.Double,
+    MediaType: java.lang.String,
+    OpenFlags: java.lang.String,
+    OpenNewView: scala.Boolean,
+    OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
+    Overwrite: scala.Boolean,
+    Password: java.lang.String,
+    PostData: activexDashInteropLib.SafeArray[scala.Double],
+    PostString: java.lang.String,
+    Preview: scala.Boolean,
+    ReadOnly: scala.Boolean,
+    Referer: java.lang.String,
+    RepairPackage: scala.Boolean,
+    StartPresentation: scala.Boolean,
+    StatusIndicator: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XStatusIndicator,
+    SuggestedSaveAsDir: java.lang.String,
+    SuggestedSaveAsName: java.lang.String,
+    TemplateName: java.lang.String,
+    TemplateRegionName: java.lang.String,
+    URL: java.lang.String,
+    Unpacked: scala.Boolean,
+    UpdateDocMode: scala.Double,
+    Version: scala.Double,
+    ViewControllerName: java.lang.String,
+    ViewData: js.Any,
+    ViewId: scala.Double
+  ): MediaDescriptor = {
+    val __obj = js.Dynamic.literal(Aborted = Aborted, AsTemplate = AsTemplate, Author = Author, CharacterSet = CharacterSet, Comment = Comment, ComponentData = ComponentData, DocumentBaseURL = DocumentBaseURL, DocumentTitle = DocumentTitle, EncryptionData = EncryptionData, FileName = FileName, FilterData = FilterData, FilterFlags = FilterFlags, FilterName = FilterName, FilterOptions = FilterOptions, Frame = Frame, Hidden = Hidden, HierarchicalDocumentName = HierarchicalDocumentName, InputStream = InputStream, InteractionHandler = InteractionHandler, JumpMark = JumpMark, MacroExecutionMode = MacroExecutionMode, MediaType = MediaType, OpenFlags = OpenFlags, OpenNewView = OpenNewView, OutputStream = OutputStream, Overwrite = Overwrite, Password = Password, PostData = PostData, PostString = PostString, Preview = Preview, ReadOnly = ReadOnly, Referer = Referer, RepairPackage = RepairPackage, StartPresentation = StartPresentation, StatusIndicator = StatusIndicator, SuggestedSaveAsDir = SuggestedSaveAsDir, SuggestedSaveAsName = SuggestedSaveAsName, TemplateName = TemplateName, TemplateRegionName = TemplateRegionName, URL = URL, Unpacked = Unpacked, UpdateDocMode = UpdateDocMode, Version = Version, ViewControllerName = ViewControllerName, ViewData = ViewData, ViewId = ViewId)
+  
+    __obj.asInstanceOf[MediaDescriptor]
+  }
+}
+

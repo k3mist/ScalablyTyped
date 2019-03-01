@@ -59,3 +59,25 @@ trait PDFDocumentProxy extends js.Object {
   def isEncrypted(): PDFPromise[scala.Boolean]
 }
 
+object PDFDocumentProxy {
+  @scala.inline
+  def apply(
+    dataLoaded: js.Function0[PDFPromise[js.Array[_]]],
+    destroy: js.Function0[scala.Unit],
+    embeddedFontsUsed: js.Function0[scala.Boolean],
+    fingerprint: java.lang.String,
+    getData: js.Function0[PDFPromise[stdLib.Uint8Array]],
+    getDestinations: js.Function0[PDFPromise[js.Array[_]]],
+    getJavaScript: js.Function0[PDFPromise[js.Array[java.lang.String]]],
+    getMetadata: js.Function0[PDFPromise[pdfjsDashDistLib.Anon_Info]],
+    getOutline: js.Function0[PDFPromise[js.Array[PDFTreeNode]]],
+    getPage: js.Function1[scala.Double, PDFPromise[PDFPageProxy]],
+    isEncrypted: js.Function0[PDFPromise[scala.Boolean]],
+    numPages: scala.Double
+  ): PDFDocumentProxy = {
+    val __obj = js.Dynamic.literal(dataLoaded = dataLoaded, destroy = destroy, embeddedFontsUsed = embeddedFontsUsed, fingerprint = fingerprint, getData = getData, getDestinations = getDestinations, getJavaScript = getJavaScript, getMetadata = getMetadata, getOutline = getOutline, getPage = getPage, isEncrypted = isEncrypted, numPages = numPages)
+  
+    __obj.asInstanceOf[PDFDocumentProxy]
+  }
+}
+

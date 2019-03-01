@@ -52,3 +52,26 @@ trait VpcPeeringConnectionArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpcPeeringConnectionArgs {
+  @scala.inline
+  def apply(
+    peerVpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    accepter: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    autoAccept: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    peerOwnerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    peerRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requester: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): VpcPeeringConnectionArgs = {
+    val __obj = js.Dynamic.literal(peerVpcId = peerVpcId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
+    if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
+    if (peerOwnerId != null) __obj.updateDynamic("peerOwnerId")(peerOwnerId.asInstanceOf[js.Any])
+    if (peerRegion != null) __obj.updateDynamic("peerRegion")(peerRegion.asInstanceOf[js.Any])
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcPeeringConnectionArgs]
+  }
+}
+

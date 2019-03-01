@@ -11,3 +11,12 @@ trait ReplacementJson extends js.Object {
   var innerText: java.lang.String
 }
 
+object ReplacementJson {
+  @scala.inline
+  def apply(innerLength: scala.Double, innerStart: scala.Double, innerText: java.lang.String): ReplacementJson = {
+    val __obj = js.Dynamic.literal(innerLength = innerLength, innerStart = innerStart, innerText = innerText)
+  
+    __obj.asInstanceOf[ReplacementJson]
+  }
+}
+

@@ -31,3 +31,17 @@ trait FloatingObjectRelativePositionSettings extends js.Object {
   var verticalRelativePosition: scala.Double
 }
 
+object FloatingObjectRelativePositionSettings {
+  @scala.inline
+  def apply(
+    horizontalPositionType: js.Any,
+    horizontalRelativePosition: scala.Double,
+    verticalPositionType: js.Any,
+    verticalRelativePosition: scala.Double
+  ): FloatingObjectRelativePositionSettings = {
+    val __obj = js.Dynamic.literal(horizontalPositionType = horizontalPositionType, horizontalRelativePosition = horizontalRelativePosition, verticalPositionType = verticalPositionType, verticalRelativePosition = verticalRelativePosition)
+  
+    __obj.asInstanceOf[FloatingObjectRelativePositionSettings]
+  }
+}
+

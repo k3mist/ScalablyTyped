@@ -10,3 +10,12 @@ trait Anon_Data extends js.Object {
   var meta: Anon_Link
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(data: Anon_Id, meta: Anon_Link): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, meta = meta)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

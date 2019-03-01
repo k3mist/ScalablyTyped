@@ -13,3 +13,20 @@ trait MultiPoint[P /* <: Properties */]
   var type_MultiPoint: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.MultiPoint
 }
 
+object MultiPoint {
+  @scala.inline
+  def apply[P /* <: Properties */](
+    coordinates: js.Array[Positions],
+    `type`: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.MultiPoint,
+    bbox: geojsonLib.geojsonMod.BBox = null,
+    id: scala.Double | java.lang.String = null,
+    properties: P = null
+  ): MultiPoint[P] = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiPoint[P]]
+  }
+}
+

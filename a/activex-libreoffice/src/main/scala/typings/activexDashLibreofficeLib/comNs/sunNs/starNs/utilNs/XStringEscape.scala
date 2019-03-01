@@ -28,3 +28,18 @@ trait XStringEscape
   def unescapeString(aEscapedString: java.lang.String): java.lang.String
 }
 
+object XStringEscape {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    escapeString: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unescapeString: js.Function1[java.lang.String, java.lang.String]
+  ): XStringEscape = {
+    val __obj = js.Dynamic.literal(acquire = acquire, escapeString = escapeString, queryInterface = queryInterface, release = release, unescapeString = unescapeString)
+  
+    __obj.asInstanceOf[XStringEscape]
+  }
+}
+

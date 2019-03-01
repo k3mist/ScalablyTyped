@@ -13,3 +13,12 @@ trait BatchGetItemInput extends js.Object {
   var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
 }
 
+object BatchGetItemInput {
+  @scala.inline
+  def apply(RequestItems: BatchGetRequestMap, ReturnConsumedCapacity: ReturnConsumedCapacity = null): BatchGetItemInput = {
+    val __obj = js.Dynamic.literal(RequestItems = RequestItems)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchGetItemInput]
+  }
+}
+

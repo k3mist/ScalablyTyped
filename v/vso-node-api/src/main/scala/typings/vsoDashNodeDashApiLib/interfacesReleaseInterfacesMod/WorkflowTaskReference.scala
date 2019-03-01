@@ -11,3 +11,12 @@ trait WorkflowTaskReference extends js.Object {
   var version: java.lang.String
 }
 
+object WorkflowTaskReference {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, version: java.lang.String): WorkflowTaskReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name, version = version)
+  
+    __obj.asInstanceOf[WorkflowTaskReference]
+  }
+}
+

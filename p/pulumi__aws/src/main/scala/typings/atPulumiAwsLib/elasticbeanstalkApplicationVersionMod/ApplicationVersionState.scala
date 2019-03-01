@@ -37,3 +37,24 @@ trait ApplicationVersionState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApplicationVersionState {
+  @scala.inline
+  def apply(
+    application: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = null,
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.s3BucketMod.Bucket] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    forceDelete: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    key: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ApplicationVersionState = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (forceDelete != null) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationVersionState]
+  }
+}
+

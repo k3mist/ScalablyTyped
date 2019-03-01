@@ -15,3 +15,12 @@ trait DhtResult extends js.Object {
   var temperature: scala.Double
 }
 
+object DhtResult {
+  @scala.inline
+  def apply(humidity: scala.Double, temperature: scala.Double): DhtResult = {
+    val __obj = js.Dynamic.literal(humidity = humidity, temperature = temperature)
+  
+    __obj.asInstanceOf[DhtResult]
+  }
+}
+

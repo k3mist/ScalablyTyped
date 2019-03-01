@@ -10,3 +10,15 @@ trait ArrayFilterData extends FilterValue {
   var value: js.Array[java.lang.String] | js.Array[scala.Double]
 }
 
+object ArrayFilterData {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.ArrayFilter,
+    value: js.Array[java.lang.String] | js.Array[scala.Double]
+  ): ArrayFilterData = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ArrayFilterData]
+  }
+}
+

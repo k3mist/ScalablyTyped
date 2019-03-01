@@ -11,3 +11,12 @@ trait ErrorWithRange extends js.Object {
   var start: scala.Double
 }
 
+object ErrorWithRange {
+  @scala.inline
+  def apply(end: scala.Double, msg: java.lang.String, start: scala.Double): ErrorWithRange = {
+    val __obj = js.Dynamic.literal(end = end, msg = msg, start = start)
+  
+    __obj.asInstanceOf[ErrorWithRange]
+  }
+}
+

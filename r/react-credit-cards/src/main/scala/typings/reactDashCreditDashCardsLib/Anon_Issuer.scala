@@ -10,3 +10,12 @@ trait Anon_Issuer extends js.Object {
   var maxLength: scala.Double
 }
 
+object Anon_Issuer {
+  @scala.inline
+  def apply(issuer: java.lang.String, maxLength: scala.Double): Anon_Issuer = {
+    val __obj = js.Dynamic.literal(issuer = issuer, maxLength = maxLength)
+  
+    __obj.asInstanceOf[Anon_Issuer]
+  }
+}
+

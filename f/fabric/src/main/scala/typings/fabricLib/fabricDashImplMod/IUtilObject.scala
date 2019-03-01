@@ -19,3 +19,12 @@ trait IUtilObject extends js.Object {
   def extend(destination: js.Any, source: js.Any): js.Any
 }
 
+object IUtilObject {
+  @scala.inline
+  def apply(clone: js.Function1[js.Any, js.Any], extend: js.Function2[js.Any, js.Any, js.Any]): IUtilObject = {
+    val __obj = js.Dynamic.literal(clone = clone, extend = extend)
+  
+    __obj.asInstanceOf[IUtilObject]
+  }
+}
+

@@ -20,3 +20,12 @@ trait TemplateIdentifier extends js.Object {
   var Name: java.lang.String
 }
 
+object TemplateIdentifier {
+  @scala.inline
+  def apply(Component: java.lang.String, Name: java.lang.String): TemplateIdentifier = {
+    val __obj = js.Dynamic.literal(Component = Component, Name = Name)
+  
+    __obj.asInstanceOf[TemplateIdentifier]
+  }
+}
+

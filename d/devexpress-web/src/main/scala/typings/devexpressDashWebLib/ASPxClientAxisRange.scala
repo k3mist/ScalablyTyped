@@ -36,3 +36,19 @@ trait ASPxClientAxisRange extends ASPxClientWebChartElement {
   var minValueInternal: scala.Double
 }
 
+object ASPxClientAxisRange {
+  @scala.inline
+  def apply(
+    axis: ASPxClientAxisBase,
+    chart: ASPxClientWebChart,
+    maxValue: js.Object,
+    maxValueInternal: scala.Double,
+    minValue: js.Object,
+    minValueInternal: scala.Double
+  ): ASPxClientAxisRange = {
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, maxValue = maxValue, maxValueInternal = maxValueInternal, minValue = minValue, minValueInternal = minValueInternal)
+  
+    __obj.asInstanceOf[ASPxClientAxisRange]
+  }
+}
+

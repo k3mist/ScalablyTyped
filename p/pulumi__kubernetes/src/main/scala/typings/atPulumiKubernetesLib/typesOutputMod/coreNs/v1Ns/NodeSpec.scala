@@ -39,3 +39,19 @@ trait NodeSpec extends js.Object {
   val unschedulable: scala.Boolean
 }
 
+object NodeSpec {
+  @scala.inline
+  def apply(
+    configSource: NodeConfigSource,
+    externalID: java.lang.String,
+    podCIDR: java.lang.String,
+    providerID: java.lang.String,
+    taints: js.Array[Taint],
+    unschedulable: scala.Boolean
+  ): NodeSpec = {
+    val __obj = js.Dynamic.literal(configSource = configSource, externalID = externalID, podCIDR = podCIDR, providerID = providerID, taints = taints, unschedulable = unschedulable)
+  
+    __obj.asInstanceOf[NodeSpec]
+  }
+}
+

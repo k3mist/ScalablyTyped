@@ -48,3 +48,23 @@ trait Group extends js.Object {
   var visible: scala.Boolean
 }
 
+object Group {
+  @scala.inline
+  def apply(
+    contribution: WitContribution,
+    controls: js.Array[Control],
+    height: scala.Double,
+    id: java.lang.String,
+    inherited: scala.Boolean,
+    isContribution: scala.Boolean,
+    label: java.lang.String,
+    order: scala.Double,
+    overridden: scala.Boolean,
+    visible: scala.Boolean
+  ): Group = {
+    val __obj = js.Dynamic.literal(contribution = contribution, controls = controls, height = height, id = id, inherited = inherited, isContribution = isContribution, label = label, order = order, overridden = overridden, visible = visible)
+  
+    __obj.asInstanceOf[Group]
+  }
+}
+

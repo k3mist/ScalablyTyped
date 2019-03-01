@@ -23,3 +23,18 @@ trait ShadowProperties extends js.Object {
   var ShadowYDistance: scala.Double
 }
 
+object ShadowProperties {
+  @scala.inline
+  def apply(
+    Shadow: scala.Boolean,
+    ShadowColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ShadowTransparence: scala.Double,
+    ShadowXDistance: scala.Double,
+    ShadowYDistance: scala.Double
+  ): ShadowProperties = {
+    val __obj = js.Dynamic.literal(Shadow = Shadow, ShadowColor = ShadowColor, ShadowTransparence = ShadowTransparence, ShadowXDistance = ShadowXDistance, ShadowYDistance = ShadowYDistance)
+  
+    __obj.asInstanceOf[ShadowProperties]
+  }
+}
+

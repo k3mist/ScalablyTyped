@@ -24,3 +24,29 @@ trait DeploymentQueryParameters extends js.Object {
   var sourceBranch: java.lang.String
 }
 
+object DeploymentQueryParameters {
+  @scala.inline
+  def apply(
+    artifactSourceId: java.lang.String,
+    artifactTypeId: java.lang.String,
+    artifactVersions: js.Array[java.lang.String],
+    deploymentStatus: DeploymentStatus,
+    deploymentsPerEnvironment: scala.Double,
+    environments: js.Array[DefinitionEnvironmentReference],
+    expands: DeploymentExpands,
+    isDeleted: scala.Boolean,
+    latestDeploymentsOnly: scala.Boolean,
+    maxDeploymentsPerEnvironment: scala.Double,
+    maxModifiedTime: stdLib.Date,
+    minModifiedTime: stdLib.Date,
+    operationStatus: DeploymentOperationStatus,
+    queryOrder: ReleaseQueryOrder,
+    queryType: DeploymentsQueryType,
+    sourceBranch: java.lang.String
+  ): DeploymentQueryParameters = {
+    val __obj = js.Dynamic.literal(artifactSourceId = artifactSourceId, artifactTypeId = artifactTypeId, artifactVersions = artifactVersions, deploymentStatus = deploymentStatus, deploymentsPerEnvironment = deploymentsPerEnvironment, environments = environments, expands = expands, isDeleted = isDeleted, latestDeploymentsOnly = latestDeploymentsOnly, maxDeploymentsPerEnvironment = maxDeploymentsPerEnvironment, maxModifiedTime = maxModifiedTime, minModifiedTime = minModifiedTime, operationStatus = operationStatus, queryOrder = queryOrder, queryType = queryType, sourceBranch = sourceBranch)
+  
+    __obj.asInstanceOf[DeploymentQueryParameters]
+  }
+}
+

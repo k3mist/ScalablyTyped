@@ -23,3 +23,12 @@ trait OnRowExpandToggle extends js.Object {
   var shouldExpand: scala.Boolean
 }
 
+object OnRowExpandToggle {
+  @scala.inline
+  def apply(columnGroupName: java.lang.String, name: java.lang.String, shouldExpand: scala.Boolean): OnRowExpandToggle = {
+    val __obj = js.Dynamic.literal(columnGroupName = columnGroupName, name = name, shouldExpand = shouldExpand)
+  
+    __obj.asInstanceOf[OnRowExpandToggle]
+  }
+}
+

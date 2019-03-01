@@ -10,3 +10,12 @@ trait Presets extends js.Object {
   var options: Options
 }
 
+object Presets {
+  @scala.inline
+  def apply(components: org.scalablytyped.runtime.StringDictionary[remarkableLib.Anon_Rules], options: Options): Presets = {
+    val __obj = js.Dynamic.literal(components = components, options = options)
+  
+    __obj.asInstanceOf[Presets]
+  }
+}
+

@@ -17,3 +17,18 @@ trait ImageView2Options extends js.Object {
   var w: scala.Double
 }
 
+object ImageView2Options {
+  @scala.inline
+  def apply(
+    format: qiniuDashJsLib.qiniuDashJsLibStrings.jpg | qiniuDashJsLib.qiniuDashJsLibStrings.gif | qiniuDashJsLib.qiniuDashJsLibStrings.png | qiniuDashJsLib.qiniuDashJsLibStrings.webp | java.lang.String,
+    h: scala.Double,
+    mode: qiniuDashJsLib.qiniuDashJsLibNumbers.`0` | qiniuDashJsLib.qiniuDashJsLibNumbers.`1` | qiniuDashJsLib.qiniuDashJsLibNumbers.`2` | qiniuDashJsLib.qiniuDashJsLibNumbers.`3` | qiniuDashJsLib.qiniuDashJsLibNumbers.`4` | qiniuDashJsLib.qiniuDashJsLibNumbers.`5`,
+    q: scala.Double,
+    w: scala.Double
+  ): ImageView2Options = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], h = h, mode = mode.asInstanceOf[js.Any], q = q, w = w)
+  
+    __obj.asInstanceOf[ImageView2Options]
+  }
+}
+

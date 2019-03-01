@@ -20,3 +20,29 @@ trait TransferJobsResource extends js.Object {
   def patch(request: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
 }
 
+object TransferJobsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTransferJobsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferJob]
+    ]
+  ): TransferJobsResource = {
+    val __obj = js.Dynamic.literal(create = create, get = get, list = list, patch = patch)
+  
+    __obj.asInstanceOf[TransferJobsResource]
+  }
+}
+

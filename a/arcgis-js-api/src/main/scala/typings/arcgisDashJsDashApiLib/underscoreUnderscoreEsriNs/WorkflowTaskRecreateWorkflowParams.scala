@@ -21,3 +21,18 @@ trait WorkflowTaskRecreateWorkflowParams
   var user: java.lang.String
 }
 
+object WorkflowTaskRecreateWorkflowParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): WorkflowTaskRecreateWorkflowParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[WorkflowTaskRecreateWorkflowParams]
+  }
+}
+

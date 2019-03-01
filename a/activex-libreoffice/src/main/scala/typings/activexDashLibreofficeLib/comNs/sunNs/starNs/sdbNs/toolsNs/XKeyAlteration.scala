@@ -36,3 +36,28 @@ trait XKeyAlteration extends XConnectionSupplier {
   ): scala.Unit
 }
 
+object XKeyAlteration {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    acquire: js.Function0[scala.Unit],
+    addKey: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    dropKey: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XKeyAlteration = {
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, addKey = addKey, dropKey = dropKey, initialize = initialize, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XKeyAlteration]
+  }
+}
+

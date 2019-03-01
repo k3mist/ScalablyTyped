@@ -13,3 +13,18 @@ trait DigestInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object DigestInfo {
+  @scala.inline
+  def apply(
+    digest: asn1jsLib.asn1jsMod.OctetString,
+    digestAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): DigestInfo = {
+    val __obj = js.Dynamic.literal(digest = digest, digestAlgorithm = digestAlgorithm, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[DigestInfo]
+  }
+}
+

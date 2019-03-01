@@ -12,3 +12,16 @@ trait DataViewScopeWildcard extends DataRepetitionSelector {
   var kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
 }
 
+object DataViewScopeWildcard {
+  @scala.inline
+  def apply(
+    exprs: js.Array[ISQExpr],
+    key: java.lang.String,
+    kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
+  ): DataViewScopeWildcard = {
+    val __obj = js.Dynamic.literal(exprs = exprs, key = key, kind = kind)
+  
+    __obj.asInstanceOf[DataViewScopeWildcard]
+  }
+}
+

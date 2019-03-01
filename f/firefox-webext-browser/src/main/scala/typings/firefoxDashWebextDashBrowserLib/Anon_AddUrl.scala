@@ -44,3 +44,33 @@ trait Anon_AddUrl extends js.Object {
   def search(query: Anon_EndTime): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]]
 }
 
+object Anon_AddUrl {
+  @scala.inline
+  def apply(
+    addUrl: js.Function1[Anon_TitleTransition, js.Promise[scala.Unit]],
+    deleteAll: js.Function0[js.Promise[scala.Unit]],
+    deleteRange: js.Function1[Anon_EndTimeStartTime, js.Promise[scala.Unit]],
+    deleteUrl: js.Function1[Anon_Url, js.Promise[scala.Unit]],
+    getVisits: js.Function1[
+      Anon_Url, 
+      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.VisitItem]]
+    ],
+    onTitleChanged: WebExtEvent[js.Function1[/* changed */ Anon_TitleUrlString, scala.Unit]],
+    onVisitRemoved: WebExtEvent[js.Function1[/* removed */ Anon_AllHistory, scala.Unit]],
+    onVisited: WebExtEvent[
+      js.Function1[
+        /* result */ firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem, 
+        scala.Unit
+      ]
+    ],
+    search: js.Function1[
+      Anon_EndTime, 
+      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]]
+    ]
+  ): Anon_AddUrl = {
+    val __obj = js.Dynamic.literal(addUrl = addUrl, deleteAll = deleteAll, deleteRange = deleteRange, deleteUrl = deleteUrl, getVisits = getVisits, onTitleChanged = onTitleChanged, onVisitRemoved = onVisitRemoved, onVisited = onVisited, search = search)
+  
+    __obj.asInstanceOf[Anon_AddUrl]
+  }
+}
+

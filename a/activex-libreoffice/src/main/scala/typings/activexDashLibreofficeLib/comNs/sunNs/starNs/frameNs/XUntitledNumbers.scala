@@ -51,3 +51,21 @@ trait XUntitledNumbers
   def releaseNumberForComponent(xComponent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): scala.Unit
 }
 
+object XUntitledNumbers {
+  @scala.inline
+  def apply(
+    UntitledPrefix: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getUntitledPrefix: js.Function0[java.lang.String],
+    leaseNumber: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    releaseNumber: js.Function1[scala.Double, scala.Unit],
+    releaseNumberForComponent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XUntitledNumbers = {
+    val __obj = js.Dynamic.literal(UntitledPrefix = UntitledPrefix, acquire = acquire, getUntitledPrefix = getUntitledPrefix, leaseNumber = leaseNumber, queryInterface = queryInterface, release = release, releaseNumber = releaseNumber, releaseNumberForComponent = releaseNumberForComponent)
+  
+    __obj.asInstanceOf[XUntitledNumbers]
+  }
+}
+

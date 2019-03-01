@@ -12,3 +12,18 @@ trait Fragment[TVariables] extends js.Object {
   var variables: js.UndefOr[TVariables] = js.undefined
 }
 
+object Fragment {
+  @scala.inline
+  def apply[TVariables](
+    fragment: graphqlLib.languageAstMod.DocumentNode,
+    id: java.lang.String,
+    fragmentName: java.lang.String = null,
+    variables: TVariables = null
+  ): Fragment[TVariables] = {
+    val __obj = js.Dynamic.literal(fragment = fragment, id = id)
+    if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Fragment[TVariables]]
+  }
+}
+

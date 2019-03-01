@@ -54,3 +54,27 @@ trait IBalanceTransaction
   var `type`: java.lang.String
 }
 
+object IBalanceTransaction {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    available_on: scala.Double,
+    created: scala.Double,
+    currency: java.lang.String,
+    fee: scala.Double,
+    fee_details: js.Array[stripeLib.Anon_Amount],
+    id: java.lang.String,
+    net: scala.Double,
+    `object`: java.lang.String,
+    source: java.lang.String | stripeLib.stripeMod.StripeNs.IResourceObject,
+    source_transfers: stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer],
+    status: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null
+  ): IBalanceTransaction = {
+    val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, `object` = `object`, source = source.asInstanceOf[js.Any], source_transfers = source_transfers, status = status, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IBalanceTransaction]
+  }
+}
+

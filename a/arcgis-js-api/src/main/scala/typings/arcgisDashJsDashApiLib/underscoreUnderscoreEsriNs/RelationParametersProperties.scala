@@ -48,3 +48,20 @@ trait RelationParametersProperties extends js.Object {
   var relationParameter: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RelationParametersProperties {
+  @scala.inline
+  def apply(
+    geometries1: js.Array[GeometryProperties] = null,
+    geometries2: js.Array[GeometryProperties] = null,
+    relation: java.lang.String = null,
+    relationParameter: java.lang.String = null
+  ): RelationParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (geometries1 != null) __obj.updateDynamic("geometries1")(geometries1)
+    if (geometries2 != null) __obj.updateDynamic("geometries2")(geometries2)
+    if (relation != null) __obj.updateDynamic("relation")(relation)
+    if (relationParameter != null) __obj.updateDynamic("relationParameter")(relationParameter)
+    __obj.asInstanceOf[RelationParametersProperties]
+  }
+}
+

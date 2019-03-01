@@ -11,3 +11,16 @@ trait NavigationSetParamsAction
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/SET_PARAMS`
 }
 
+object NavigationSetParamsAction {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/SET_PARAMS`,
+    params: NavigationParams = null
+  ): NavigationSetParamsAction = {
+    val __obj = js.Dynamic.literal(key = key, `type` = `type`)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationSetParamsAction]
+  }
+}
+

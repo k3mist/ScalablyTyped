@@ -11,3 +11,12 @@ trait AnyMxRecord
   var `type`: nodeLib.nodeLibStrings.MX
 }
 
+object AnyMxRecord {
+  @scala.inline
+  def apply(exchange: java.lang.String, priority: scala.Double, `type`: nodeLib.nodeLibStrings.MX): AnyMxRecord = {
+    val __obj = js.Dynamic.literal(exchange = exchange, priority = priority, `type` = `type`)
+  
+    __obj.asInstanceOf[AnyMxRecord]
+  }
+}
+

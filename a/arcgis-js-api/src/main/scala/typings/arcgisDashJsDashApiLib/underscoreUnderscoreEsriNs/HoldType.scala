@@ -27,3 +27,19 @@ trait HoldType
   var name: java.lang.String
 }
 
+object HoldType {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): HoldType = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[HoldType]
+  }
+}
+

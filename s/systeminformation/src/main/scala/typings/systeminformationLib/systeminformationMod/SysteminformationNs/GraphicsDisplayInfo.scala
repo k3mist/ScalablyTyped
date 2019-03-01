@@ -17,3 +17,22 @@ trait GraphicsDisplayInfo extends js.Object {
   var sizey: scala.Double
 }
 
+object GraphicsDisplayInfo {
+  @scala.inline
+  def apply(
+    builtin: scala.Boolean,
+    connection: java.lang.String,
+    main: scala.Boolean,
+    model: java.lang.String,
+    pixeldepth: scala.Double,
+    resolutionx: scala.Double,
+    resolutiony: scala.Double,
+    sizex: scala.Double,
+    sizey: scala.Double
+  ): GraphicsDisplayInfo = {
+    val __obj = js.Dynamic.literal(builtin = builtin, connection = connection, main = main, model = model, pixeldepth = pixeldepth, resolutionx = resolutionx, resolutiony = resolutiony, sizex = sizex, sizey = sizey)
+  
+    __obj.asInstanceOf[GraphicsDisplayInfo]
+  }
+}
+

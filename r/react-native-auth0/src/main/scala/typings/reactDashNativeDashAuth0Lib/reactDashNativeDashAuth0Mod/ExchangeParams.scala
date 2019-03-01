@@ -11,3 +11,12 @@ trait ExchangeParams extends js.Object {
   var verifier: java.lang.String
 }
 
+object ExchangeParams {
+  @scala.inline
+  def apply(code: java.lang.String, redirectUri: java.lang.String, verifier: java.lang.String): ExchangeParams = {
+    val __obj = js.Dynamic.literal(code = code, redirectUri = redirectUri, verifier = verifier)
+  
+    __obj.asInstanceOf[ExchangeParams]
+  }
+}
+

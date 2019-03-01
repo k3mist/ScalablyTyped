@@ -27,3 +27,19 @@ trait VersionInfo
   var parent: java.lang.String
 }
 
+object VersionInfo {
+  @scala.inline
+  def apply(
+    access: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    parent: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): VersionInfo = {
+    val __obj = js.Dynamic.literal(access = access, constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[VersionInfo]
+  }
+}
+

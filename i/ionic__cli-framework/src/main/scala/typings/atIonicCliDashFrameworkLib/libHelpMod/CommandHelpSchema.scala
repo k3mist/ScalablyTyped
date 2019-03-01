@@ -18,3 +18,23 @@ trait CommandHelpSchema extends js.Object {
   val summary: java.lang.String
 }
 
+object CommandHelpSchema {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String],
+    description: java.lang.String,
+    exampleCommands: js.Array[java.lang.String],
+    footnotes: js.Array[CommandHelpSchemaFootnote],
+    groups: js.Array[java.lang.String],
+    inputs: js.Array[CommandHelpSchemaInput],
+    name: java.lang.String,
+    namespace: js.Array[java.lang.String],
+    options: js.Array[CommandHelpSchemaOption],
+    summary: java.lang.String
+  ): CommandHelpSchema = {
+    val __obj = js.Dynamic.literal(aliases = aliases, description = description, exampleCommands = exampleCommands, footnotes = footnotes, groups = groups, inputs = inputs, name = name, namespace = namespace, options = options, summary = summary)
+  
+    __obj.asInstanceOf[CommandHelpSchema]
+  }
+}
+

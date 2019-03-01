@@ -22,3 +22,22 @@ trait XSortedDynamicResultSetFactory
   ): XDynamicResultSet
 }
 
+object XSortedDynamicResultSetFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createSortedDynamicResultSet: js.Function3[
+      XDynamicResultSet, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[NumberedSortingInfo], 
+      XAnyCompareFactory, 
+      XDynamicResultSet
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSortedDynamicResultSetFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createSortedDynamicResultSet = createSortedDynamicResultSet, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSortedDynamicResultSetFactory]
+  }
+}
+

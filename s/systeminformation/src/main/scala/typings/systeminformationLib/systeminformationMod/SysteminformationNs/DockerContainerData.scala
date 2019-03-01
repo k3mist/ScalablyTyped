@@ -17,3 +17,22 @@ trait DockerContainerData extends js.Object {
   var state: java.lang.String
 }
 
+object DockerContainerData {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    created: scala.Double,
+    id: java.lang.String,
+    image: java.lang.String,
+    imageID: java.lang.String,
+    mounts: js.Array[DockerContainerMountData],
+    name: java.lang.String,
+    ports: js.Array[scala.Double],
+    state: java.lang.String
+  ): DockerContainerData = {
+    val __obj = js.Dynamic.literal(command = command, created = created, id = id, image = image, imageID = imageID, mounts = mounts, name = name, ports = ports, state = state)
+  
+    __obj.asInstanceOf[DockerContainerData]
+  }
+}
+

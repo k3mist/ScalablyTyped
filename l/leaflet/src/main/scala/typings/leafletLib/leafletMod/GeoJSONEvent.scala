@@ -12,3 +12,19 @@ trait GeoJSONEvent extends LeafletEvent {
   var properties: js.Any
 }
 
+object GeoJSONEvent {
+  @scala.inline
+  def apply(
+    geometryType: java.lang.String,
+    id: java.lang.String,
+    layer: Layer,
+    properties: js.Any,
+    target: js.Any,
+    `type`: java.lang.String
+  ): GeoJSONEvent = {
+    val __obj = js.Dynamic.literal(geometryType = geometryType, id = id, layer = layer, properties = properties, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[GeoJSONEvent]
+  }
+}
+

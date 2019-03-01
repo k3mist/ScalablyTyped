@@ -21,3 +21,12 @@ trait StyleBase extends js.Object {
   var name: java.lang.String
 }
 
+object StyleBase {
+  @scala.inline
+  def apply(isDeleted: scala.Boolean, name: java.lang.String): StyleBase = {
+    val __obj = js.Dynamic.literal(isDeleted = isDeleted, name = name)
+  
+    __obj.asInstanceOf[StyleBase]
+  }
+}
+

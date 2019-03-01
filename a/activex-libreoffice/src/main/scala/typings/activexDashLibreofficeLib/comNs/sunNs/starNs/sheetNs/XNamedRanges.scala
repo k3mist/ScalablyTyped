@@ -49,3 +49,37 @@ trait XNamedRanges
   def removeByName(aName: java.lang.String): scala.Unit
 }
 
+object XNamedRanges {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addNewByName: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      scala.Double, 
+      scala.Unit
+    ],
+    addNewFromTitles: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      Border, 
+      scala.Unit
+    ],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    outputList: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByName: js.Function1[java.lang.String, scala.Unit]
+  ): XNamedRanges = {
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addNewByName = addNewByName, addNewFromTitles = addNewFromTitles, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, outputList = outputList, queryInterface = queryInterface, release = release, removeByName = removeByName)
+  
+    __obj.asInstanceOf[XNamedRanges]
+  }
+}
+

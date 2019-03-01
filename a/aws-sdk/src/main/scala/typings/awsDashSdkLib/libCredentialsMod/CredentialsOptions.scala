@@ -20,3 +20,16 @@ trait CredentialsOptions extends js.Object {
   var sessionToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CredentialsOptions {
+  @scala.inline
+  def apply(
+    accessKeyId: java.lang.String,
+    secretAccessKey: java.lang.String,
+    sessionToken: java.lang.String = null
+  ): CredentialsOptions = {
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, secretAccessKey = secretAccessKey)
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    __obj.asInstanceOf[CredentialsOptions]
+  }
+}
+

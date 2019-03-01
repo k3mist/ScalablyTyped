@@ -18,3 +18,12 @@ trait TerritoryPattern extends js.Object {
   var children: scala.Double
 }
 
+object TerritoryPattern {
+  @scala.inline
+  def apply(children: scala.Double): TerritoryPattern = {
+    val __obj = js.Dynamic.literal(children = children)
+  
+    __obj.asInstanceOf[TerritoryPattern]
+  }
+}
+

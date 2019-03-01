@@ -22,3 +22,22 @@ trait XGoalSeek
   ): GoalResult
 }
 
+object XGoalSeek {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    seekGoal: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      java.lang.String, 
+      GoalResult
+    ]
+  ): XGoalSeek = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, seekGoal = seekGoal)
+  
+    __obj.asInstanceOf[XGoalSeek]
+  }
+}
+

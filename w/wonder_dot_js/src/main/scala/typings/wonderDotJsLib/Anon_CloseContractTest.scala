@@ -10,3 +10,12 @@ trait Anon_CloseContractTest extends js.Object {
   var isCompileTest: scala.Boolean
 }
 
+object Anon_CloseContractTest {
+  @scala.inline
+  def apply(closeContractTest: scala.Boolean, isCompileTest: scala.Boolean): Anon_CloseContractTest = {
+    val __obj = js.Dynamic.literal(closeContractTest = closeContractTest, isCompileTest = isCompileTest)
+  
+    __obj.asInstanceOf[Anon_CloseContractTest]
+  }
+}
+

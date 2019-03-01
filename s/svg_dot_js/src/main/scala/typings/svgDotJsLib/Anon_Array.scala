@@ -13,3 +13,18 @@ trait Anon_Array extends js.Object {
   def radians(d: scala.Double): scala.Double
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    degrees: js.Function1[scala.Double, scala.Double],
+    filter: js.Function2[js.Array[_], js.Function, js.Any],
+    filterSVGElements: js.Array[stdLib.HTMLElement],
+    map: js.Function2[js.Array[_], js.Function, js.Any],
+    radians: js.Function1[scala.Double, scala.Double]
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(degrees = degrees, filter = filter, filterSVGElements = filterSVGElements, map = map, radians = radians)
+  
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

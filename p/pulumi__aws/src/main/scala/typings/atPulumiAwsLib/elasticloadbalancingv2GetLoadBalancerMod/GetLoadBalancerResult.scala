@@ -27,3 +27,29 @@ trait GetLoadBalancerResult extends js.Object {
   val zoneId: java.lang.String
 }
 
+object GetLoadBalancerResult {
+  @scala.inline
+  def apply(
+    accessLogs: atPulumiAwsLib.Anon_Bucket,
+    arn: java.lang.String,
+    arnSuffix: java.lang.String,
+    dnsName: java.lang.String,
+    enableDeletionProtection: scala.Boolean,
+    id: java.lang.String,
+    idleTimeout: scala.Double,
+    internal: scala.Boolean,
+    loadBalancerType: java.lang.String,
+    name: java.lang.String,
+    securityGroups: js.Array[java.lang.String],
+    subnetMappings: js.Array[atPulumiAwsLib.Anon_AllocationId],
+    subnets: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String,
+    zoneId: java.lang.String
+  ): GetLoadBalancerResult = {
+    val __obj = js.Dynamic.literal(accessLogs = accessLogs, arn = arn, arnSuffix = arnSuffix, dnsName = dnsName, enableDeletionProtection = enableDeletionProtection, id = id, idleTimeout = idleTimeout, internal = internal, loadBalancerType = loadBalancerType, name = name, securityGroups = securityGroups, subnetMappings = subnetMappings, subnets = subnets, tags = tags, vpcId = vpcId, zoneId = zoneId)
+  
+    __obj.asInstanceOf[GetLoadBalancerResult]
+  }
+}
+

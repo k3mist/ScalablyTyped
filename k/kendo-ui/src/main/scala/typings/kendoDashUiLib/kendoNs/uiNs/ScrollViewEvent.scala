@@ -11,3 +11,12 @@ trait ScrollViewEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object ScrollViewEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: ScrollView): ScrollViewEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[ScrollViewEvent]
+  }
+}
+

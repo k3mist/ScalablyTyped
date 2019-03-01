@@ -85,3 +85,33 @@ trait XGridColumn
   def removeGridColumnListener(Listener: XGridColumnListener): scala.Unit
 }
 
+object XGridColumn {
+  @scala.inline
+  def apply(
+    ColumnWidth: scala.Double,
+    DataColumnIndex: scala.Double,
+    Flexibility: scala.Double,
+    HelpText: java.lang.String,
+    HorizontalAlign: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.HorizontalAlignment,
+    Identifier: js.Any,
+    Index: scala.Double,
+    MaxWidth: scala.Double,
+    MinWidth: scala.Double,
+    Resizeable: scala.Boolean,
+    Title: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addGridColumnListener: js.Function1[XGridColumnListener, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeGridColumnListener: js.Function1[XGridColumnListener, scala.Unit]
+  ): XGridColumn = {
+    val __obj = js.Dynamic.literal(ColumnWidth = ColumnWidth, DataColumnIndex = DataColumnIndex, Flexibility = Flexibility, HelpText = HelpText, HorizontalAlign = HorizontalAlign, Identifier = Identifier, Index = Index, MaxWidth = MaxWidth, MinWidth = MinWidth, Resizeable = Resizeable, Title = Title, acquire = acquire, addEventListener = addEventListener, addGridColumnListener = addGridColumnListener, createClone = createClone, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeGridColumnListener = removeGridColumnListener)
+  
+    __obj.asInstanceOf[XGridColumn]
+  }
+}
+

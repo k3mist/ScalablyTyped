@@ -18,3 +18,25 @@ trait VoiceSettings extends js.Object {
   var silenceWarning: scala.Boolean
 }
 
+object VoiceSettings {
+  @scala.inline
+  def apply(
+    automaticGainControl: scala.Boolean,
+    deaf: scala.Boolean,
+    echoCancellation: scala.Boolean,
+    mute: scala.Boolean,
+    noiseSuppression: scala.Boolean,
+    qos: scala.Boolean,
+    silenceWarning: scala.Boolean,
+    input: discordDashRpcLib.Anon_Device = null,
+    mode: discordDashRpcLib.Anon_AutoThreshold = null,
+    output: discordDashRpcLib.Anon_Device = null
+  ): VoiceSettings = {
+    val __obj = js.Dynamic.literal(automaticGainControl = automaticGainControl, deaf = deaf, echoCancellation = echoCancellation, mute = mute, noiseSuppression = noiseSuppression, qos = qos, silenceWarning = silenceWarning)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[VoiceSettings]
+  }
+}
+

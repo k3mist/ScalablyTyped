@@ -16,3 +16,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.Program
 }
 
+object Program {
+  @scala.inline
+  def apply(
+    body: js.Array[astDashTypesLib.genKindsMod.StatementKind],
+    directives: js.Array[astDashTypesLib.genKindsMod.DirectiveKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.Program,
+    interpreter: astDashTypesLib.genKindsMod.InterpreterDirectiveKind = null
+  ): Program = {
+    val __obj = js.Dynamic.literal(body = body, directives = directives, `type` = `type`)
+    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)
+    __obj.asInstanceOf[Program]
+  }
+}
+

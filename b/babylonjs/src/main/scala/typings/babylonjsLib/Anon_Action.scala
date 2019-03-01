@@ -11,3 +11,12 @@ trait Anon_Action[T /* <: js.Function */] extends js.Object {
   var index: scala.Double
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply[T /* <: js.Function */](action: T, component: babylonjsLib.BABYLONNs.ISceneComponent, index: scala.Double): Anon_Action[T] = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component, index = index)
+  
+    __obj.asInstanceOf[Anon_Action[T]]
+  }
+}
+

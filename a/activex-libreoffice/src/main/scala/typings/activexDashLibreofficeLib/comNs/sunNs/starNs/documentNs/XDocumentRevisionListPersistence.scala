@@ -25,3 +25,25 @@ trait XDocumentRevisionListPersistence
   ): scala.Unit
 }
 
+object XDocumentRevisionListPersistence {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    load: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    store: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.RevisionTag], 
+      scala.Unit
+    ]
+  ): XDocumentRevisionListPersistence = {
+    val __obj = js.Dynamic.literal(acquire = acquire, load = load, queryInterface = queryInterface, release = release, store = store)
+  
+    __obj.asInstanceOf[XDocumentRevisionListPersistence]
+  }
+}
+

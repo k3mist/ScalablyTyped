@@ -43,3 +43,26 @@ trait XNumberFormatter
   def queryColorForString(nKey: scala.Double, aString: java.lang.String, aDefaultColor: Color): Color
 }
 
+object XNumberFormatter {
+  @scala.inline
+  def apply(
+    NumberFormatsSupplier: XNumberFormatsSupplier,
+    acquire: js.Function0[scala.Unit],
+    attachNumberFormatsSupplier: js.Function1[XNumberFormatsSupplier, scala.Unit],
+    convertNumberToString: js.Function2[scala.Double, scala.Double, java.lang.String],
+    convertStringToNumber: js.Function2[scala.Double, java.lang.String, scala.Double],
+    detectNumberFormat: js.Function2[scala.Double, java.lang.String, scala.Double],
+    formatString: js.Function2[scala.Double, java.lang.String, java.lang.String],
+    getInputString: js.Function2[scala.Double, scala.Double, java.lang.String],
+    getNumberFormatsSupplier: js.Function0[XNumberFormatsSupplier],
+    queryColorForNumber: js.Function3[scala.Double, scala.Double, Color, Color],
+    queryColorForString: js.Function3[scala.Double, java.lang.String, Color, Color],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumberFormatter = {
+    val __obj = js.Dynamic.literal(NumberFormatsSupplier = NumberFormatsSupplier, acquire = acquire, attachNumberFormatsSupplier = attachNumberFormatsSupplier, convertNumberToString = convertNumberToString, convertStringToNumber = convertStringToNumber, detectNumberFormat = detectNumberFormat, formatString = formatString, getInputString = getInputString, getNumberFormatsSupplier = getNumberFormatsSupplier, queryColorForNumber = queryColorForNumber, queryColorForString = queryColorForString, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XNumberFormatter]
+  }
+}
+

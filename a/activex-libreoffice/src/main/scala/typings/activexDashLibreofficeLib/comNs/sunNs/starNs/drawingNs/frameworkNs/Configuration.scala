@@ -20,3 +20,27 @@ trait Configuration extends XConfiguration {
   def create(): scala.Unit
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addResource: js.Function1[XResourceId, scala.Unit],
+    create: js.Function0[scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    getResources: js.Function3[
+      XResourceId, 
+      java.lang.String, 
+      AnchorBindingMode, 
+      activexDashInteropLib.SafeArray[XResourceId]
+    ],
+    hasResource: js.Function1[XResourceId, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeResource: js.Function1[XResourceId, scala.Unit]
+  ): Configuration = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addResource = addResource, create = create, createClone = createClone, getResources = getResources, hasResource = hasResource, queryInterface = queryInterface, release = release, removeResource = removeResource)
+  
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

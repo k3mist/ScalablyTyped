@@ -14,3 +14,12 @@ trait ApplicationPropertiesProperties extends js.Object {
   var viewing: js.UndefOr[ViewingProperties] = js.undefined
 }
 
+object ApplicationPropertiesProperties {
+  @scala.inline
+  def apply(viewing: ViewingProperties = null): ApplicationPropertiesProperties = {
+    val __obj = js.Dynamic.literal()
+    if (viewing != null) __obj.updateDynamic("viewing")(viewing)
+    __obj.asInstanceOf[ApplicationPropertiesProperties]
+  }
+}
+

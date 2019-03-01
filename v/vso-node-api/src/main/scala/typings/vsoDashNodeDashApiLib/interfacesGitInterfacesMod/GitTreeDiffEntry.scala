@@ -28,3 +28,18 @@ trait GitTreeDiffEntry extends js.Object {
   var targetObjectId: java.lang.String
 }
 
+object GitTreeDiffEntry {
+  @scala.inline
+  def apply(
+    baseObjectId: java.lang.String,
+    changeType: VersionControlChangeType,
+    objectType: GitObjectType,
+    path: java.lang.String,
+    targetObjectId: java.lang.String
+  ): GitTreeDiffEntry = {
+    val __obj = js.Dynamic.literal(baseObjectId = baseObjectId, changeType = changeType, objectType = objectType, path = path, targetObjectId = targetObjectId)
+  
+    __obj.asInstanceOf[GitTreeDiffEntry]
+  }
+}
+

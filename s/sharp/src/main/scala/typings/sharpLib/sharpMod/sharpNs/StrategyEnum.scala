@@ -10,3 +10,12 @@ trait StrategyEnum extends js.Object {
   var entropy: scala.Double
 }
 
+object StrategyEnum {
+  @scala.inline
+  def apply(attention: scala.Double, entropy: scala.Double): StrategyEnum = {
+    val __obj = js.Dynamic.literal(attention = attention, entropy = entropy)
+  
+    __obj.asInstanceOf[StrategyEnum]
+  }
+}
+

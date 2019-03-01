@@ -12,3 +12,17 @@ trait GroupObj extends js.Object {
   val `type`: atlassianDashCrowdDashClientLib.atlassianDashCrowdDashClientLibStrings.GROUP
 }
 
+object GroupObj {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    description: java.lang.String,
+    name: java.lang.String,
+    `type`: atlassianDashCrowdDashClientLib.atlassianDashCrowdDashClientLibStrings.GROUP
+  ): GroupObj = {
+    val __obj = js.Dynamic.literal(active = active, description = description, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[GroupObj]
+  }
+}
+

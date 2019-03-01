@@ -10,3 +10,12 @@ trait Anon_Index extends js.Object {
   var version: java.lang.String
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(index: java.lang.String, version: java.lang.String): Anon_Index = {
+    val __obj = js.Dynamic.literal(index = index, version = version)
+  
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

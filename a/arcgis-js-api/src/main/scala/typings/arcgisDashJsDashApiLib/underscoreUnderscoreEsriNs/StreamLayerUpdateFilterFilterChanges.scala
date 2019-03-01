@@ -21,3 +21,18 @@ trait StreamLayerUpdateFilterFilterChanges
   var where: java.lang.String
 }
 
+object StreamLayerUpdateFilterFilterChanges {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    geometry: Extent,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    where: java.lang.String
+  ): StreamLayerUpdateFilterFilterChanges = {
+    val __obj = js.Dynamic.literal(constructor = constructor, geometry = geometry, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, where = where)
+  
+    __obj.asInstanceOf[StreamLayerUpdateFilterFilterChanges]
+  }
+}
+

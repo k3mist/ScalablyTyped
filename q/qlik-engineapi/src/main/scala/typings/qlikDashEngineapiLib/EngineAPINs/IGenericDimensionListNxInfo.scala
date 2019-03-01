@@ -13,3 +13,15 @@ trait IGenericDimensionListNxInfo extends INxInfo {
   var qType_IGenericDimensionListNxInfo: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.DimensionList
 }
 
+object IGenericDimensionListNxInfo {
+  @scala.inline
+  def apply(
+    qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.DimensionList,
+    qId: java.lang.String = null
+  ): IGenericDimensionListNxInfo = {
+    val __obj = js.Dynamic.literal(qType = qType)
+    if (qId != null) __obj.updateDynamic("qId")(qId)
+    __obj.asInstanceOf[IGenericDimensionListNxInfo]
+  }
+}
+

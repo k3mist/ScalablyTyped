@@ -10,3 +10,12 @@ trait ComposeButtonClickEvent extends js.Object {
   var dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView
 }
 
+object ComposeButtonClickEvent {
+  @scala.inline
+  def apply(composeView: ComposeView, dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView): ComposeButtonClickEvent = {
+    val __obj = js.Dynamic.literal(composeView = composeView, dropdown = dropdown)
+  
+    __obj.asInstanceOf[ComposeButtonClickEvent]
+  }
+}
+

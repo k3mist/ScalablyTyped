@@ -16,3 +16,15 @@ trait AwareTimeStruct extends js.Object {
   var zone: js.UndefOr[timezonecompleteLib.distLibTimezoneMod.TimeZone]
 }
 
+object AwareTimeStruct {
+  @scala.inline
+  def apply(
+    time: timezonecompleteLib.distLibBasicsMod.TimeStruct,
+    zone: timezonecompleteLib.distLibTimezoneMod.TimeZone = null
+  ): AwareTimeStruct = {
+    val __obj = js.Dynamic.literal(time = time)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[AwareTimeStruct]
+  }
+}
+

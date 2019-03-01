@@ -23,3 +23,28 @@ trait Encoder extends js.Object {
   def write(chunk: js.Any): scala.Unit
 }
 
+object Encoder {
+  @scala.inline
+  def apply(
+    bufferish: js.Any,
+    encode: js.Function1[js.Any, scala.Unit],
+    end: js.Function1[js.Any, scala.Unit],
+    fetch: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    maxBufferSize: scala.Double,
+    minBufferSize: scala.Double,
+    offset: scala.Double,
+    pull: js.Function0[scala.Double],
+    push: js.Function1[js.Any, scala.Unit],
+    read: js.Function0[scala.Double],
+    reserve: js.Function1[scala.Double, scala.Double],
+    send: js.Function1[nodeLib.Buffer, scala.Unit],
+    start: scala.Double,
+    write: js.Function1[js.Any, scala.Unit]
+  ): Encoder = {
+    val __obj = js.Dynamic.literal(bufferish = bufferish, encode = encode, end = end, fetch = fetch, flush = flush, maxBufferSize = maxBufferSize, minBufferSize = minBufferSize, offset = offset, pull = pull, push = push, read = read, reserve = reserve, send = send, start = start, write = write)
+  
+    __obj.asInstanceOf[Encoder]
+  }
+}
+

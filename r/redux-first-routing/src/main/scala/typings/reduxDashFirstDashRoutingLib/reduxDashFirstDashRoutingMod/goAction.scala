@@ -10,3 +10,12 @@ trait goAction[T /* <: scala.Double */]
   var payload: T
 }
 
+object goAction {
+  @scala.inline
+  def apply[T /* <: scala.Double */](payload: T, `type`: reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/GO`): goAction[T] = {
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[goAction[T]]
+  }
+}
+

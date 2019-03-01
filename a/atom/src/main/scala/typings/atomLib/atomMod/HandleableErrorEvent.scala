@@ -15,3 +15,12 @@ trait HandleableErrorEvent extends js.Object {
   def handle(): scala.Unit
 }
 
+object HandleableErrorEvent {
+  @scala.inline
+  def apply(error: nodeLib.Error, handle: js.Function0[scala.Unit]): HandleableErrorEvent = {
+    val __obj = js.Dynamic.literal(error = error, handle = handle)
+  
+    __obj.asInstanceOf[HandleableErrorEvent]
+  }
+}
+

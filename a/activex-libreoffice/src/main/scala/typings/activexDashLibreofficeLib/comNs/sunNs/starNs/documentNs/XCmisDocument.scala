@@ -26,3 +26,27 @@ trait XCmisDocument
   def updateCmisProperties(cmisProperties: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty]): scala.Unit
 }
 
+object XCmisDocument {
+  @scala.inline
+  def apply(
+    AllVersions: activexDashInteropLib.SafeArray[CmisVersion],
+    CmisProperties: activexDashInteropLib.SafeArray[CmisProperty],
+    acquire: js.Function0[scala.Unit],
+    canCancelCheckOut: js.Function0[scala.Boolean],
+    canCheckIn: js.Function0[scala.Boolean],
+    canCheckOut: js.Function0[scala.Boolean],
+    cancelCheckOut: js.Function0[scala.Unit],
+    checkIn: js.Function2[scala.Boolean, java.lang.String, scala.Unit],
+    checkOut: js.Function0[scala.Unit],
+    getAllVersions: js.Function0[activexDashInteropLib.SafeArray[CmisVersion]],
+    isVersionable: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateCmisProperties: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty], scala.Unit]
+  ): XCmisDocument = {
+    val __obj = js.Dynamic.literal(AllVersions = AllVersions, CmisProperties = CmisProperties, acquire = acquire, canCancelCheckOut = canCancelCheckOut, canCheckIn = canCheckIn, canCheckOut = canCheckOut, cancelCheckOut = cancelCheckOut, checkIn = checkIn, checkOut = checkOut, getAllVersions = getAllVersions, isVersionable = isVersionable, queryInterface = queryInterface, release = release, updateCmisProperties = updateCmisProperties)
+  
+    __obj.asInstanceOf[XCmisDocument]
+  }
+}
+

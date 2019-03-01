@@ -16,3 +16,12 @@ trait TaskAgentSessionKey extends js.Object {
   var value: js.Array[scala.Double]
 }
 
+object TaskAgentSessionKey {
+  @scala.inline
+  def apply(encrypted: scala.Boolean, value: js.Array[scala.Double]): TaskAgentSessionKey = {
+    val __obj = js.Dynamic.literal(encrypted = encrypted, value = value)
+  
+    __obj.asInstanceOf[TaskAgentSessionKey]
+  }
+}
+

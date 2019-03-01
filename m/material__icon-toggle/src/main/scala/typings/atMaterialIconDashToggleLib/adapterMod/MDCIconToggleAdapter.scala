@@ -19,3 +19,24 @@ trait MDCIconToggleAdapter extends js.Object {
   def setText(text: java.lang.String): scala.Unit
 }
 
+object MDCIconToggleAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    getAttr: js.Function1[java.lang.String, java.lang.String],
+    getTabIndex: js.Function0[scala.Double],
+    notifyChange: js.Function1[IconToggleEvent, scala.Unit],
+    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    rmAttr: js.Function1[java.lang.String, scala.Unit],
+    setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setTabIndex: js.Function1[scala.Double, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit]
+  ): MDCIconToggleAdapter = {
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, getTabIndex = getTabIndex, notifyChange = notifyChange, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, rmAttr = rmAttr, setAttr = setAttr, setTabIndex = setTabIndex, setText = setText)
+  
+    __obj.asInstanceOf[MDCIconToggleAdapter]
+  }
+}
+

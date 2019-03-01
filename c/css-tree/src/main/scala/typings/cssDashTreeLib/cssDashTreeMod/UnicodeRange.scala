@@ -14,3 +14,16 @@ trait UnicodeRange
   var value: java.lang.String
 }
 
+object UnicodeRange {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.UnicodeRange,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): UnicodeRange = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[UnicodeRange]
+  }
+}
+

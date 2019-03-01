@@ -13,3 +13,18 @@ trait Font extends js.Object {
   var pages: coreDashJsLib.Array[java.lang.String]
 }
 
+object Font {
+  @scala.inline
+  def apply(
+    chars: org.scalablytyped.runtime.StringDictionary[FontChar],
+    common: FontCommon,
+    info: FontInfo,
+    kernings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]],
+    pages: coreDashJsLib.Array[java.lang.String]
+  ): Font = {
+    val __obj = js.Dynamic.literal(chars = chars, common = common, info = info, kernings = kernings, pages = pages)
+  
+    __obj.asInstanceOf[Font]
+  }
+}
+

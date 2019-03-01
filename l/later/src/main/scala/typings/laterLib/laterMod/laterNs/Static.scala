@@ -95,3 +95,31 @@ trait Static extends js.Object {
   def setTimeout(callback: js.Function0[scala.Unit], time: ScheduleData): Timer
 }
 
+object Static {
+  @scala.inline
+  def apply(
+    date: DateProvider,
+    day: TimePeriod,
+    dayOfWeek: TimePeriod,
+    dayOfWeekCount: TimePeriod,
+    dayOfYear: TimePeriod,
+    hour: TimePeriod,
+    minute: TimePeriod,
+    modifier: ModifierStatic,
+    month: TimePeriod,
+    parse: ParseStatic,
+    schedule: js.Function1[js.Any, Schedule],
+    second: TimePeriod,
+    setInterval: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
+    setTimeout: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
+    time: TimePeriod,
+    weekOfMonth: TimePeriod,
+    weekOfYear: TimePeriod,
+    year: TimePeriod
+  ): Static = {
+    val __obj = js.Dynamic.literal(date = date, day = day, dayOfWeek = dayOfWeek, dayOfWeekCount = dayOfWeekCount, dayOfYear = dayOfYear, hour = hour, minute = minute, modifier = modifier, month = month, parse = parse, schedule = schedule, second = second, setInterval = setInterval, setTimeout = setTimeout, time = time, weekOfMonth = weekOfMonth, weekOfYear = weekOfYear, year = year)
+  
+    __obj.asInstanceOf[Static]
+  }
+}
+

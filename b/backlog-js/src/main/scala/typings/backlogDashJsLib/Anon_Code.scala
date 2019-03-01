@@ -11,3 +11,12 @@ trait Anon_Code extends js.Object {
   var redirectUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(code: java.lang.String, host: java.lang.String, redirectUri: java.lang.String = null): Anon_Code = {
+    val __obj = js.Dynamic.literal(code = code, host = host)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

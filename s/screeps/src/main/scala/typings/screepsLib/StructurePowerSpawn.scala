@@ -39,3 +39,30 @@ trait StructurePowerSpawn
   def processPower(): ScreepsReturnCode
 }
 
+object StructurePowerSpawn {
+  @scala.inline
+  def apply(
+    createPowerCreep: js.Function1[java.lang.String, ScreepsReturnCode],
+    destroy: js.Function0[ScreepsReturnCode],
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    power: scala.Double,
+    powerCapacity: scala.Double,
+    processPower: js.Function0[ScreepsReturnCode],
+    room: Room,
+    structureType: STRUCTURE_POWER_SPAWN
+  ): StructurePowerSpawn = {
+    val __obj = js.Dynamic.literal(createPowerCreep = createPowerCreep, destroy = destroy, energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, power = power, powerCapacity = powerCapacity, processPower = processPower, room = room, structureType = structureType)
+  
+    __obj.asInstanceOf[StructurePowerSpawn]
+  }
+}
+

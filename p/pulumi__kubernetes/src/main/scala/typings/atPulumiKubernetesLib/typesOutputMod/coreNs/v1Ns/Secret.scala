@@ -48,3 +48,19 @@ trait Secret extends js.Object {
   val `type`: java.lang.String
 }
 
+object Secret {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    data: js.Object,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Secret,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    stringData: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `type`: java.lang.String
+  ): Secret = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, data = data, kind = kind, metadata = metadata, stringData = stringData, `type` = `type`)
+  
+    __obj.asInstanceOf[Secret]
+  }
+}
+

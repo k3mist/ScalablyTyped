@@ -42,3 +42,17 @@ trait ChartDeletedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object ChartDeletedEventArgs {
+  @scala.inline
+  def apply(
+    chartId: java.lang.String,
+    source: EventSource | officeDashJsLib.officeDashJsLibStrings.Local | officeDashJsLib.officeDashJsLibStrings.Remote,
+    `type`: officeDashJsLib.officeDashJsLibStrings.ChartDeleted,
+    worksheetId: java.lang.String
+  ): ChartDeletedEventArgs = {
+    val __obj = js.Dynamic.literal(chartId = chartId, source = source.asInstanceOf[js.Any], `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[ChartDeletedEventArgs]
+  }
+}
+

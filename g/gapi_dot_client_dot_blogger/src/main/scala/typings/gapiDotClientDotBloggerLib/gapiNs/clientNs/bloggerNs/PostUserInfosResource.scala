@@ -18,3 +18,21 @@ trait PostUserInfosResource extends js.Object {
   def list(request: gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFields): gapiDotClientLib.gapiNs.clientNs.Request[PostUserInfosList]
 }
 
+object PostUserInfosResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyMaxComments, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostUserInfo]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostUserInfosList]
+    ]
+  ): PostUserInfosResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[PostUserInfosResource]
+  }
+}
+

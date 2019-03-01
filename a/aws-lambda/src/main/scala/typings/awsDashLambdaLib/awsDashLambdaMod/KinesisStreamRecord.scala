@@ -16,3 +16,21 @@ trait KinesisStreamRecord extends js.Object {
   var kinesis: KinesisStreamRecordPayload
 }
 
+object KinesisStreamRecord {
+  @scala.inline
+  def apply(
+    awsRegion: java.lang.String,
+    eventID: java.lang.String,
+    eventName: java.lang.String,
+    eventSource: java.lang.String,
+    eventSourceARN: java.lang.String,
+    eventVersion: java.lang.String,
+    invokeIdentityArn: java.lang.String,
+    kinesis: KinesisStreamRecordPayload
+  ): KinesisStreamRecord = {
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, eventID = eventID, eventName = eventName, eventSource = eventSource, eventSourceARN = eventSourceARN, eventVersion = eventVersion, invokeIdentityArn = invokeIdentityArn, kinesis = kinesis)
+  
+    __obj.asInstanceOf[KinesisStreamRecord]
+  }
+}
+

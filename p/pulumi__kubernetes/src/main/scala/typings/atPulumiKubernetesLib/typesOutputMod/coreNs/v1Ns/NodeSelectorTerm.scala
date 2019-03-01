@@ -20,3 +20,15 @@ trait NodeSelectorTerm extends js.Object {
   val matchFields: js.Array[NodeSelectorRequirement]
 }
 
+object NodeSelectorTerm {
+  @scala.inline
+  def apply(
+    matchExpressions: js.Array[NodeSelectorRequirement],
+    matchFields: js.Array[NodeSelectorRequirement]
+  ): NodeSelectorTerm = {
+    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions, matchFields = matchFields)
+  
+    __obj.asInstanceOf[NodeSelectorTerm]
+  }
+}
+

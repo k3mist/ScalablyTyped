@@ -47,3 +47,25 @@ trait BreakpointsOwnerBreakpoints
   var xsmall: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BreakpointsOwnerBreakpoints {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    large: scala.Int | scala.Double = null,
+    medium: scala.Int | scala.Double = null,
+    small: scala.Int | scala.Double = null,
+    xlarge: scala.Int | scala.Double = null,
+    xsmall: scala.Int | scala.Double = null
+  ): BreakpointsOwnerBreakpoints = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
+    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BreakpointsOwnerBreakpoints]
+  }
+}
+

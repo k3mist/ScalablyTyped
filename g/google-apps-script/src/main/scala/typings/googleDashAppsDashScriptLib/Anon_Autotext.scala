@@ -26,3 +26,16 @@ trait Anon_Autotext extends js.Object {
   var text_run: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.TextRun
 }
 
+object Anon_Autotext {
+  @scala.inline
+  def apply(
+    auto_text: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.AutoText,
+    paragraph_marker: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ParagraphMarker,
+    text_run: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.TextRun
+  ): Anon_Autotext = {
+    val __obj = js.Dynamic.literal(auto_text = auto_text, paragraph_marker = paragraph_marker, text_run = text_run)
+  
+    __obj.asInstanceOf[Anon_Autotext]
+  }
+}
+

@@ -14,3 +14,19 @@ trait BasicProfile extends js.Object {
   def getName(): java.lang.String
 }
 
+object BasicProfile {
+  @scala.inline
+  def apply(
+    getEmail: js.Function0[java.lang.String],
+    getFamilyName: js.Function0[java.lang.String],
+    getGivenName: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getImageUrl: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String]
+  ): BasicProfile = {
+    val __obj = js.Dynamic.literal(getEmail = getEmail, getFamilyName = getFamilyName, getGivenName = getGivenName, getId = getId, getImageUrl = getImageUrl, getName = getName)
+  
+    __obj.asInstanceOf[BasicProfile]
+  }
+}
+

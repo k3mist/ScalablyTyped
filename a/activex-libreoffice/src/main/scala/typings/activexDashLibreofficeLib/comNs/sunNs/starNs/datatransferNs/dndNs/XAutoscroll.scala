@@ -41,3 +41,19 @@ trait XAutoscroll
   def getAutoscrollRegion(): js.Any
 }
 
+object XAutoscroll {
+  @scala.inline
+  def apply(
+    AutoscrollRegion: js.Any,
+    acquire: js.Function0[scala.Unit],
+    autoscroll: js.Function2[scala.Double, scala.Double, scala.Unit],
+    getAutoscrollRegion: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAutoscroll = {
+    val __obj = js.Dynamic.literal(AutoscrollRegion = AutoscrollRegion, acquire = acquire, autoscroll = autoscroll, getAutoscrollRegion = getAutoscrollRegion, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAutoscroll]
+  }
+}
+

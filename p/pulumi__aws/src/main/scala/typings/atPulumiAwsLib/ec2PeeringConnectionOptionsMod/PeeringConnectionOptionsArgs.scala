@@ -28,3 +28,17 @@ trait PeeringConnectionOptionsArgs extends js.Object {
   val vpcPeeringConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object PeeringConnectionOptionsArgs {
+  @scala.inline
+  def apply(
+    vpcPeeringConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    accepter: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    requester: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null
+  ): PeeringConnectionOptionsArgs = {
+    val __obj = js.Dynamic.literal(vpcPeeringConnectionId = vpcPeeringConnectionId.asInstanceOf[js.Any])
+    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PeeringConnectionOptionsArgs]
+  }
+}
+

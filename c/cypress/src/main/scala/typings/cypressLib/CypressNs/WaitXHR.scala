@@ -21,3 +21,26 @@ trait WaitXHR extends js.Object {
   var xhr: stdLib.XMLHttpRequest
 }
 
+object WaitXHR {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    id: java.lang.String,
+    method: HttpMethod,
+    request: cypressLib.Anon_Body,
+    requestBody: java.lang.String | ObjectLike,
+    requestHeaders: ObjectLike,
+    response: cypressLib.Anon_Body,
+    responseBody: java.lang.String | ObjectLike,
+    responseHeaders: ObjectLike,
+    status: scala.Double,
+    statusMessage: java.lang.String,
+    url: java.lang.String,
+    xhr: stdLib.XMLHttpRequest
+  ): WaitXHR = {
+    val __obj = js.Dynamic.literal(duration = duration, id = id, method = method, request = request, requestBody = requestBody.asInstanceOf[js.Any], requestHeaders = requestHeaders, response = response, responseBody = responseBody.asInstanceOf[js.Any], responseHeaders = responseHeaders, status = status, statusMessage = statusMessage, url = url, xhr = xhr)
+  
+    __obj.asInstanceOf[WaitXHR]
+  }
+}
+

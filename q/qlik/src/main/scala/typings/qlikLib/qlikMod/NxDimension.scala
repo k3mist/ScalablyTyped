@@ -18,3 +18,23 @@ trait NxDimension extends js.Object {
   var qTotalLabel: java.lang.String
 }
 
+object NxDimension {
+  @scala.inline
+  def apply(
+    qAttributeDimensions: js.Array[NxAttrDimDef],
+    qAttributeExpressions: js.Array[NxAttrExprDef],
+    qCalcCond: ValueExpr,
+    qDef: NxInlineDimensionDef,
+    qLibraryId: java.lang.String,
+    qNullSuppression: scala.Boolean,
+    qOtherLabel: java.lang.String,
+    qOtherTotalSpec: OtherTotalSpecProp,
+    qShowAll: scala.Boolean,
+    qTotalLabel: java.lang.String
+  ): NxDimension = {
+    val __obj = js.Dynamic.literal(qAttributeDimensions = qAttributeDimensions, qAttributeExpressions = qAttributeExpressions, qCalcCond = qCalcCond, qDef = qDef, qLibraryId = qLibraryId, qNullSuppression = qNullSuppression, qOtherLabel = qOtherLabel, qOtherTotalSpec = qOtherTotalSpec, qShowAll = qShowAll, qTotalLabel = qTotalLabel)
+  
+    __obj.asInstanceOf[NxDimension]
+  }
+}
+

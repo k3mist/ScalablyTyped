@@ -24,3 +24,26 @@ trait XInteractionPassword2 extends XInteractionPassword {
   def setRecommendReadOnly(bReadOnly: scala.Boolean): scala.Unit
 }
 
+object XInteractionPassword2 {
+  @scala.inline
+  def apply(
+    Password: java.lang.String,
+    PasswordToModify: java.lang.String,
+    RecommendReadOnly: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    getPassword: js.Function0[java.lang.String],
+    getPasswordToModify: js.Function0[java.lang.String],
+    getRecommendReadOnly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setPassword: js.Function1[java.lang.String, scala.Unit],
+    setPasswordToModify: js.Function1[java.lang.String, scala.Unit],
+    setRecommendReadOnly: js.Function1[scala.Boolean, scala.Unit]
+  ): XInteractionPassword2 = {
+    val __obj = js.Dynamic.literal(Password = Password, PasswordToModify = PasswordToModify, RecommendReadOnly = RecommendReadOnly, acquire = acquire, getPassword = getPassword, getPasswordToModify = getPasswordToModify, getRecommendReadOnly = getRecommendReadOnly, queryInterface = queryInterface, release = release, select = select, setPassword = setPassword, setPasswordToModify = setPasswordToModify, setRecommendReadOnly = setRecommendReadOnly)
+  
+    __obj.asInstanceOf[XInteractionPassword2]
+  }
+}
+

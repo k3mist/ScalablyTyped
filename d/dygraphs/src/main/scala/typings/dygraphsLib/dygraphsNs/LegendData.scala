@@ -24,3 +24,17 @@ trait LegendData extends js.Object {
   var xHTML: java.lang.String
 }
 
+object LegendData {
+  @scala.inline
+  def apply(
+    dygraph: dygraphsLib.Dygraph,
+    series: js.Array[SeriesLegendData],
+    x: scala.Double,
+    xHTML: java.lang.String
+  ): LegendData = {
+    val __obj = js.Dynamic.literal(dygraph = dygraph, series = series, x = x, xHTML = xHTML)
+  
+    __obj.asInstanceOf[LegendData]
+  }
+}
+

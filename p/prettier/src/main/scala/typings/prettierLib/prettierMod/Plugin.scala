@@ -13,3 +13,19 @@ trait Plugin extends js.Object {
   var printers: org.scalablytyped.runtime.StringDictionary[Printer]
 }
 
+object Plugin {
+  @scala.inline
+  def apply(
+    languages: js.Array[SupportLanguage],
+    parsers: org.scalablytyped.runtime.StringDictionary[Parser],
+    printers: org.scalablytyped.runtime.StringDictionary[Printer],
+    defaultOptions: stdLib.Partial[RequiredOptions] = null,
+    options: js.Array[SupportOption] = null
+  ): Plugin = {
+    val __obj = js.Dynamic.literal(languages = languages, parsers = parsers, printers = printers)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Plugin]
+  }
+}
+

@@ -12,3 +12,17 @@ trait ReplaceRetWithRet extends js.Object {
   def `with`(collection: js.Any): ReplaceRetWithRet
 }
 
+object ReplaceRetWithRet {
+  @scala.inline
+  def apply(
+    in: js.Function1[/* collection */ js.Any, ReplaceExpression],
+    `in_`: js.Function1[/* collection */ js.Any, ReplaceExpression],
+    into: js.Function1[js.Any, ReplaceExpression],
+    `with`: js.Function1[js.Any, ReplaceRetWithRet]
+  ): ReplaceRetWithRet = {
+    val __obj = js.Dynamic.literal(in = in, `in_` = `in_`, into = into, `with` = `with`)
+  
+    __obj.asInstanceOf[ReplaceRetWithRet]
+  }
+}
+

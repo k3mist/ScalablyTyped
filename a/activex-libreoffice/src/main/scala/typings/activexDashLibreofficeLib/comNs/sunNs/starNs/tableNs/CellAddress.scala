@@ -15,3 +15,12 @@ trait CellAddress extends js.Object {
   var Sheet: scala.Double
 }
 
+object CellAddress {
+  @scala.inline
+  def apply(Column: scala.Double, Row: scala.Double, Sheet: scala.Double): CellAddress = {
+    val __obj = js.Dynamic.literal(Column = Column, Row = Row, Sheet = Sheet)
+  
+    __obj.asInstanceOf[CellAddress]
+  }
+}
+

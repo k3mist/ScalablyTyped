@@ -38,3 +38,21 @@ trait XRecentFunctions
   def setRecentFunctionIds(aRecentFunctionIds: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XRecentFunctions {
+  @scala.inline
+  def apply(
+    MaxRecentFunctions: scala.Double,
+    RecentFunctionIds: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getMaxRecentFunctions: js.Function0[scala.Double],
+    getRecentFunctionIds: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setRecentFunctionIds: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XRecentFunctions = {
+    val __obj = js.Dynamic.literal(MaxRecentFunctions = MaxRecentFunctions, RecentFunctionIds = RecentFunctionIds, acquire = acquire, getMaxRecentFunctions = getMaxRecentFunctions, getRecentFunctionIds = getRecentFunctionIds, queryInterface = queryInterface, release = release, setRecentFunctionIds = setRecentFunctionIds)
+  
+    __obj.asInstanceOf[XRecentFunctions]
+  }
+}
+

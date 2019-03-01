@@ -64,3 +64,24 @@ trait WorkflowPathDisplayDetails
   var sourceStepID: scala.Double
 }
 
+object WorkflowPathDisplayDetails {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    destStepId: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String,
+    labelColor: Color,
+    labelX: scala.Double,
+    labelY: scala.Double,
+    lineColor: Color,
+    pathObject: js.Any,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sourceStepID: scala.Double
+  ): WorkflowPathDisplayDetails = {
+    val __obj = js.Dynamic.literal(constructor = constructor, destStepId = destStepId, hasOwnProperty = hasOwnProperty, label = label, labelColor = labelColor, labelX = labelX, labelY = labelY, lineColor = lineColor, pathObject = pathObject, propertyIsEnumerable = propertyIsEnumerable, sourceStepID = sourceStepID)
+  
+    __obj.asInstanceOf[WorkflowPathDisplayDetails]
+  }
+}
+

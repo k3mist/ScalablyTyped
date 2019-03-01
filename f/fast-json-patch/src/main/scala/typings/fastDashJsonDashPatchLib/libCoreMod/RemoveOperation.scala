@@ -11,3 +11,12 @@ trait RemoveOperation
   var op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.remove
 }
 
+object RemoveOperation {
+  @scala.inline
+  def apply(op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.remove, path: java.lang.String): RemoveOperation = {
+    val __obj = js.Dynamic.literal(op = op, path = path)
+  
+    __obj.asInstanceOf[RemoveOperation]
+  }
+}
+

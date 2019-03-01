@@ -24,3 +24,43 @@ trait ReportsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Report]
 }
 
+object ReportsResource {
+  @scala.inline
+  def apply(
+    compatibleFields: CompatibleFieldsResource,
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    files: FilesResource,
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyMaxResultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReportList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    run: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[File]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ]
+  ): ReportsResource = {
+    val __obj = js.Dynamic.literal(compatibleFields = compatibleFields, delete = delete, files = files, get = get, insert = insert, list = list, patch = patch, run = run, update = update)
+  
+    __obj.asInstanceOf[ReportsResource]
+  }
+}
+

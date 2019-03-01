@@ -16,3 +16,20 @@ trait ObserveResponse extends js.Object {
   var time: scala.Double
 }
 
+object ObserveResponse {
+  @scala.inline
+  def apply(
+    boundingClientRect: RectArea,
+    dataset: js.Any,
+    id: java.lang.String,
+    intersectionRatio: scala.Double,
+    intersectionRect: RectArea,
+    relativeRect: RectArea,
+    time: scala.Double
+  ): ObserveResponse = {
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect, dataset = dataset, id = id, intersectionRatio = intersectionRatio, intersectionRect = intersectionRect, relativeRect = relativeRect, time = time)
+  
+    __obj.asInstanceOf[ObserveResponse]
+  }
+}
+

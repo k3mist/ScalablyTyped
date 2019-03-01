@@ -20,3 +20,24 @@ trait Web3 extends js.Object {
   def setProvider(provider: web3Lib.providersMod.Provider): scala.Unit
 }
 
+object Web3 {
+  @scala.inline
+  def apply(
+    BatchRequest: org.scalablytyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest],
+    bzz: web3Lib.typesMod.Bzz,
+    currentProvider: web3Lib.providersMod.Provider,
+    eth: web3Lib.ethMod.Eth,
+    extend: js.Function1[js.Any, js.Any],
+    givenProvider: web3Lib.providersMod.Provider,
+    providers: web3Lib.providersMod.Providers,
+    setProvider: js.Function1[web3Lib.providersMod.Provider, scala.Unit],
+    shh: web3Lib.typesMod.Shh,
+    utils: web3Lib.utilsMod.Utils,
+    version: java.lang.String
+  ): Web3 = {
+    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest, bzz = bzz, currentProvider = currentProvider, eth = eth, extend = extend, givenProvider = givenProvider, providers = providers, setProvider = setProvider, shh = shh, utils = utils, version = version)
+  
+    __obj.asInstanceOf[Web3]
+  }
+}
+

@@ -66,3 +66,30 @@ trait RowSet
   var User: java.lang.String
 }
 
+object RowSet {
+  @scala.inline
+  def apply(
+    Command: java.lang.String,
+    DataSourceName: java.lang.String,
+    EscapeProcessing: scala.Boolean,
+    MaxFieldSize: scala.Double,
+    MaxRows: scala.Double,
+    Password: java.lang.String,
+    QueryTimeOut: scala.Double,
+    ResultSet: ResultSet = null,
+    ResultSetType: scala.Double,
+    TransactionIsolation: scala.Double,
+    TypeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    URL: java.lang.String,
+    User: java.lang.String,
+    XParameters: XParameters = null,
+    XRowSet: XRowSet = null
+  ): RowSet = {
+    val __obj = js.Dynamic.literal(Command = Command, DataSourceName = DataSourceName, EscapeProcessing = EscapeProcessing, MaxFieldSize = MaxFieldSize, MaxRows = MaxRows, Password = Password, QueryTimeOut = QueryTimeOut, ResultSetType = ResultSetType, TransactionIsolation = TransactionIsolation, TypeMap = TypeMap, URL = URL, User = User)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ResultSet)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParameters)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XRowSet)
+    __obj.asInstanceOf[RowSet]
+  }
+}
+

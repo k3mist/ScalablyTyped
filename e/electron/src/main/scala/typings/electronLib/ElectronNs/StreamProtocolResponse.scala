@@ -21,3 +21,12 @@ trait StreamProtocolResponse extends js.Object {
   var statusCode: scala.Double
 }
 
+object StreamProtocolResponse {
+  @scala.inline
+  def apply(data: nodeLib.NodeJSNs.ReadableStream, headers: Headers, statusCode: scala.Double): StreamProtocolResponse = {
+    val __obj = js.Dynamic.literal(data = data, headers = headers, statusCode = statusCode)
+  
+    __obj.asInstanceOf[StreamProtocolResponse]
+  }
+}
+

@@ -55,3 +55,23 @@ trait ASPxClientControlBase extends js.Object {
   def SetVisible(visible: scala.Boolean): scala.Unit
 }
 
+object ASPxClientControlBase {
+  @scala.inline
+  def apply(
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientControlBase = {
+    val __obj = js.Dynamic.literal(GetClientVisible = GetClientVisible, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetVisible = SetVisible, name = name)
+  
+    __obj.asInstanceOf[ASPxClientControlBase]
+  }
+}
+

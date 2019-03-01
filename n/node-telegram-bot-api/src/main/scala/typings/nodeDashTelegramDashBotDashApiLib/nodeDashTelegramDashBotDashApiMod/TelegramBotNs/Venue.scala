@@ -12,3 +12,17 @@ trait Venue extends js.Object {
   var title: java.lang.String
 }
 
+object Venue {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    location: Location,
+    title: java.lang.String,
+    foursquare_id: java.lang.String = null
+  ): Venue = {
+    val __obj = js.Dynamic.literal(address = address, location = location, title = title)
+    if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id)
+    __obj.asInstanceOf[Venue]
+  }
+}
+

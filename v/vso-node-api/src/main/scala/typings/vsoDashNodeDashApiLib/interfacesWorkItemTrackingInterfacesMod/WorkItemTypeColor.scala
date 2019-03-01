@@ -20,3 +20,16 @@ trait WorkItemTypeColor extends js.Object {
   var workItemTypeName: java.lang.String
 }
 
+object WorkItemTypeColor {
+  @scala.inline
+  def apply(
+    primaryColor: java.lang.String,
+    secondaryColor: java.lang.String,
+    workItemTypeName: java.lang.String
+  ): WorkItemTypeColor = {
+    val __obj = js.Dynamic.literal(primaryColor = primaryColor, secondaryColor = secondaryColor, workItemTypeName = workItemTypeName)
+  
+    __obj.asInstanceOf[WorkItemTypeColor]
+  }
+}
+

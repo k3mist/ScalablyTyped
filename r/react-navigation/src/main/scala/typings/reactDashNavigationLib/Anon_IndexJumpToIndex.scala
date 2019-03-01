@@ -11,3 +11,16 @@ trait Anon_IndexJumpToIndex extends js.Object {
   def jumpToIndex(index: scala.Double): scala.Unit
 }
 
+object Anon_IndexJumpToIndex {
+  @scala.inline
+  def apply(
+    jumpToIndex: js.Function1[scala.Double, scala.Unit],
+    previousScene: reactDashNavigationLib.reactDashNavigationMod.NavigationRoute[reactDashNavigationLib.reactDashNavigationMod.NavigationParams],
+    scene: reactDashNavigationLib.reactDashNavigationMod.TabScene
+  ): Anon_IndexJumpToIndex = {
+    val __obj = js.Dynamic.literal(jumpToIndex = jumpToIndex, previousScene = previousScene.asInstanceOf[js.Any], scene = scene)
+  
+    __obj.asInstanceOf[Anon_IndexJumpToIndex]
+  }
+}
+

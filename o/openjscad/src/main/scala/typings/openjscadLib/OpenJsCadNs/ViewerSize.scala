@@ -24,3 +24,18 @@ trait ViewerSize extends js.Object {
   var widthDefault: java.lang.String
 }
 
+object ViewerSize {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    heightDefault: java.lang.String,
+    heightratio: scala.Double,
+    width: scala.Double,
+    widthDefault: java.lang.String
+  ): ViewerSize = {
+    val __obj = js.Dynamic.literal(height = height, heightDefault = heightDefault, heightratio = heightratio, width = width, widthDefault = widthDefault)
+  
+    __obj.asInstanceOf[ViewerSize]
+  }
+}
+

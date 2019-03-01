@@ -68,3 +68,28 @@ trait GraphDataItem extends js.Object {
   var y: scala.Double
 }
 
+object GraphDataItem {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    bullet: java.lang.String,
+    bulletSize: scala.Double,
+    category: java.lang.String,
+    color: java.lang.String,
+    customBullet: java.lang.String,
+    dataContext: js.Object,
+    description: java.lang.String,
+    fillColors: js.Array[_],
+    percents: js.Object,
+    serialDataItem: amchartsLib.serialdataitemMod.default,
+    url: java.lang.String,
+    values: js.Object,
+    x: scala.Double,
+    y: scala.Double
+  ): GraphDataItem = {
+    val __obj = js.Dynamic.literal(alpha = alpha, bullet = bullet, bulletSize = bulletSize, category = category, color = color, customBullet = customBullet, dataContext = dataContext, description = description, fillColors = fillColors, percents = percents, serialDataItem = serialDataItem, url = url, values = values, x = x, y = y)
+  
+    __obj.asInstanceOf[GraphDataItem]
+  }
+}
+

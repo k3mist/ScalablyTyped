@@ -18,3 +18,15 @@ trait XRowsChangeBroadcaster extends js.Object {
   def removeRowsChangeListener(listener: XRowsChangeListener): scala.Unit
 }
 
+object XRowsChangeBroadcaster {
+  @scala.inline
+  def apply(
+    addRowsChangeListener: js.Function1[XRowsChangeListener, scala.Unit],
+    removeRowsChangeListener: js.Function1[XRowsChangeListener, scala.Unit]
+  ): XRowsChangeBroadcaster = {
+    val __obj = js.Dynamic.literal(addRowsChangeListener = addRowsChangeListener, removeRowsChangeListener = removeRowsChangeListener)
+  
+    __obj.asInstanceOf[XRowsChangeBroadcaster]
+  }
+}
+

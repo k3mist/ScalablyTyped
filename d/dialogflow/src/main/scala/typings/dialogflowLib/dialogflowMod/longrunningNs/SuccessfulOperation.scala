@@ -13,3 +13,17 @@ trait SuccessfulOperation
   var response: js.Any
 }
 
+object SuccessfulOperation {
+  @scala.inline
+  def apply(
+    done: dialogflowLib.dialogflowLibNumbers.`true`,
+    metadata: js.Any,
+    name: java.lang.String,
+    response: js.Any
+  ): SuccessfulOperation = {
+    val __obj = js.Dynamic.literal(done = done, metadata = metadata, name = name, response = response)
+  
+    __obj.asInstanceOf[SuccessfulOperation]
+  }
+}
+

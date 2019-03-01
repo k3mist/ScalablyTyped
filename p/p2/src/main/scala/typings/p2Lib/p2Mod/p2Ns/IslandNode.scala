@@ -13,3 +13,18 @@ trait IslandNode extends js.Object {
   def reset(): scala.Unit
 }
 
+object IslandNode {
+  @scala.inline
+  def apply(
+    body: Body,
+    equations: js.Array[Equation],
+    neighbors: js.Array[IslandNode],
+    reset: js.Function0[scala.Unit],
+    visited: scala.Boolean
+  ): IslandNode = {
+    val __obj = js.Dynamic.literal(body = body, equations = equations, neighbors = neighbors, reset = reset, visited = visited)
+  
+    __obj.asInstanceOf[IslandNode]
+  }
+}
+

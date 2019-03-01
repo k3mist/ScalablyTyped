@@ -27,3 +27,12 @@ trait LinguServiceEvent
   var nEvent: scala.Double
 }
 
+object LinguServiceEvent {
+  @scala.inline
+  def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, nEvent: scala.Double): LinguServiceEvent = {
+    val __obj = js.Dynamic.literal(Source = Source, nEvent = nEvent)
+  
+    __obj.asInstanceOf[LinguServiceEvent]
+  }
+}
+

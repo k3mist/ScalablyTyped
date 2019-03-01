@@ -12,3 +12,12 @@ trait ImapMessageBodyInfo extends js.Object {
   var which: java.lang.String
 }
 
+object ImapMessageBodyInfo {
+  @scala.inline
+  def apply(size: scala.Double, which: java.lang.String): ImapMessageBodyInfo = {
+    val __obj = js.Dynamic.literal(size = size, which = which)
+  
+    __obj.asInstanceOf[ImapMessageBodyInfo]
+  }
+}
+

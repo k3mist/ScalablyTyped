@@ -34,3 +34,24 @@ trait AcceleratorState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object AcceleratorState {
+  @scala.inline
+  def apply(
+    attributes: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FlowLogsEnabledFlowLogsS3Bucket] = null,
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    ipAddressType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ipSets: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IpAddressesIpFamily]]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): AcceleratorState = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (ipAddressType != null) __obj.updateDynamic("ipAddressType")(ipAddressType.asInstanceOf[js.Any])
+    if (ipSets != null) __obj.updateDynamic("ipSets")(ipSets.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AcceleratorState]
+  }
+}
+

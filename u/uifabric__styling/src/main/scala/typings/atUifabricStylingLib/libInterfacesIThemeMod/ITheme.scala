@@ -21,3 +21,23 @@ trait ITheme extends IScheme {
   ] = js.undefined
 }
 
+object ITheme {
+  @scala.inline
+  def apply(
+    disableGlobalClassNames: scala.Boolean,
+    effects: atUifabricStylingLib.libInterfacesIEffectsMod.IEffects,
+    fonts: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles,
+    isInverted: scala.Boolean,
+    palette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette,
+    semanticColors: atUifabricStylingLib.libInterfacesISemanticColorsMod.ISemanticColors,
+    spacing: atUifabricStylingLib.libInterfacesISpacingMod.ISpacing,
+    schemes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
+    */ atUifabricStylingLib.atUifabricStylingLibStrings.ITheme with js.Any = null
+  ): ITheme = {
+    val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
+    if (schemes != null) __obj.updateDynamic("schemes")(schemes)
+    __obj.asInstanceOf[ITheme]
+  }
+}
+

@@ -13,3 +13,18 @@ trait LintResult extends js.Object {
   var rule: Rule
 }
 
+object LintResult {
+  @scala.inline
+  def apply(
+    col: scala.Double,
+    evidence: java.lang.String,
+    line: scala.Double,
+    message: java.lang.String,
+    rule: Rule
+  ): LintResult = {
+    val __obj = js.Dynamic.literal(col = col, evidence = evidence, line = line, message = message, rule = rule)
+  
+    __obj.asInstanceOf[LintResult]
+  }
+}
+

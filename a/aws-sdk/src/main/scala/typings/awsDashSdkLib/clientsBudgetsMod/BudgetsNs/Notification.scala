@@ -28,3 +28,19 @@ trait Notification extends js.Object {
   var ThresholdType: js.UndefOr[ThresholdType] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    ComparisonOperator: ComparisonOperator,
+    NotificationType: NotificationType,
+    Threshold: NotificationThreshold,
+    NotificationState: NotificationState = null,
+    ThresholdType: ThresholdType = null
+  ): Notification = {
+    val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], NotificationType = NotificationType.asInstanceOf[js.Any], Threshold = Threshold)
+    if (NotificationState != null) __obj.updateDynamic("NotificationState")(NotificationState.asInstanceOf[js.Any])
+    if (ThresholdType != null) __obj.updateDynamic("ThresholdType")(ThresholdType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Notification]
+  }
+}
+

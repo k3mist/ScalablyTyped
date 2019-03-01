@@ -19,3 +19,21 @@ trait RendererProps extends js.Object {
   var render: js.UndefOr[RenderCallback] = js.undefined
 }
 
+object RendererProps {
+  @scala.inline
+  def apply(
+    Container: RelayContainerClass[_],
+    environment: Store,
+    queryConfig: Route,
+    forceFetch: js.UndefOr[scala.Boolean] = js.undefined,
+    onReadyStateChange: OnReadyStateChange = null,
+    render: RenderCallback = null
+  ): RendererProps = {
+    val __obj = js.Dynamic.literal(Container = Container, environment = environment, queryConfig = queryConfig)
+    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch)
+    if (onReadyStateChange != null) __obj.updateDynamic("onReadyStateChange")(onReadyStateChange)
+    if (render != null) __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[RendererProps]
+  }
+}
+

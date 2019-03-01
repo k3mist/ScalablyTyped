@@ -13,3 +13,17 @@ trait Websites extends js.Object {
   var thirdPartyCookiesAllowed: chromeLib.chromeNs.typesNs.ChromeSetting
 }
 
+object Websites {
+  @scala.inline
+  def apply(
+    hyperlinkAuditingEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    protectedContentEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    referrersEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    thirdPartyCookiesAllowed: chromeLib.chromeNs.typesNs.ChromeSetting
+  ): Websites = {
+    val __obj = js.Dynamic.literal(hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+  
+    __obj.asInstanceOf[Websites]
+  }
+}
+

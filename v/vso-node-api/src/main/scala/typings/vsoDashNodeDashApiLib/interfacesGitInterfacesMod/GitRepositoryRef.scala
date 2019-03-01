@@ -22,3 +22,21 @@ trait GitRepositoryRef extends js.Object {
   var url: java.lang.String
 }
 
+object GitRepositoryRef {
+  @scala.inline
+  def apply(
+    collection: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectCollectionReference,
+    id: java.lang.String,
+    isFork: scala.Boolean,
+    name: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    remoteUrl: java.lang.String,
+    sshUrl: java.lang.String,
+    url: java.lang.String
+  ): GitRepositoryRef = {
+    val __obj = js.Dynamic.literal(collection = collection, id = id, isFork = isFork, name = name, project = project, remoteUrl = remoteUrl, sshUrl = sshUrl, url = url)
+  
+    __obj.asInstanceOf[GitRepositoryRef]
+  }
+}
+

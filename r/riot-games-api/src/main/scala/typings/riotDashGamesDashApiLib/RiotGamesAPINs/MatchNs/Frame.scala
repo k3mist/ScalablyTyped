@@ -11,3 +11,16 @@ trait Frame extends js.Object {
   var timestamp: scala.Double
 }
 
+object Frame {
+  @scala.inline
+  def apply(
+    events: js.Array[Event],
+    participanFrames: js.Array[org.scalablytyped.runtime.StringDictionary[ParticipantFrame]],
+    timestamp: scala.Double
+  ): Frame = {
+    val __obj = js.Dynamic.literal(events = events, participanFrames = participanFrames, timestamp = timestamp)
+  
+    __obj.asInstanceOf[Frame]
+  }
+}
+

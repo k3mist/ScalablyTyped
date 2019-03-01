@@ -10,3 +10,12 @@ trait Defaults extends js.Object {
   var fontPath: java.lang.String
 }
 
+object Defaults {
+  @scala.inline
+  def apply(font: Fonts, fontPath: java.lang.String): Defaults = {
+    val __obj = js.Dynamic.literal(font = font, fontPath = fontPath)
+  
+    __obj.asInstanceOf[Defaults]
+  }
+}
+

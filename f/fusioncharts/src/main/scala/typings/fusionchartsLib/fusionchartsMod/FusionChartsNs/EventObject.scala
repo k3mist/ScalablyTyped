@@ -17,3 +17,22 @@ trait EventObject extends js.Object {
   def stopPropagation(): scala.Unit
 }
 
+object EventObject {
+  @scala.inline
+  def apply(
+    cancelled: scala.Boolean,
+    detachHandler: js.Function0[scala.Unit],
+    detached: scala.Boolean,
+    eventId: scala.Double,
+    preventDefault: js.Function0[scala.Unit],
+    prevented: scala.Boolean,
+    sender: FusionCharts,
+    stopPropagation: js.Function0[scala.Unit],
+    `type`: java.lang.String
+  ): EventObject = {
+    val __obj = js.Dynamic.literal(cancelled = cancelled, detachHandler = detachHandler, detached = detached, eventId = eventId, preventDefault = preventDefault, prevented = prevented, sender = sender, stopPropagation = stopPropagation, `type` = `type`)
+  
+    __obj.asInstanceOf[EventObject]
+  }
+}
+

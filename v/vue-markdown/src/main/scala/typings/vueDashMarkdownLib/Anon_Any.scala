@@ -13,3 +13,12 @@ trait Anon_Any extends js.Object {
   var Z: stdLib.RegExp
 }
 
+object Anon_Any {
+  @scala.inline
+  def apply(Any: stdLib.RegExp, Cc: stdLib.RegExp, Cf: stdLib.RegExp, P: stdLib.RegExp, Z: stdLib.RegExp): Anon_Any = {
+    val __obj = js.Dynamic.literal(Any = Any, Cc = Cc, Cf = Cf, P = P, Z = Z)
+  
+    __obj.asInstanceOf[Anon_Any]
+  }
+}
+

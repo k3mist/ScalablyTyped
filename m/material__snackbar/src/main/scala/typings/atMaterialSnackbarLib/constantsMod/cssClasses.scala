@@ -16,3 +16,20 @@ trait cssClasses
   var TEXT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__text`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    ACTION_BUTTON: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__action-button`,
+    ACTION_ON_BOTTOM: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar--action-on-bottom`,
+    ACTION_WRAPPER: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__action-wrapper`,
+    ACTIVE: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar--active`,
+    MULTILINE: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar--multiline`,
+    ROOT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar`,
+    TEXT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__text`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(ACTION_BUTTON = ACTION_BUTTON, ACTION_ON_BOTTOM = ACTION_ON_BOTTOM, ACTION_WRAPPER = ACTION_WRAPPER, ACTIVE = ACTIVE, MULTILINE = MULTILINE, ROOT = ROOT, TEXT = TEXT)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

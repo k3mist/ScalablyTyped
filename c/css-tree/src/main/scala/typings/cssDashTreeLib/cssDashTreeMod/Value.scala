@@ -13,3 +13,16 @@ trait Value
   var type_Value: cssDashTreeLib.cssDashTreeLibStrings.Value
 }
 
+object Value {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Value,
+    loc: CssLocation = null
+  ): Value = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Value]
+  }
+}
+

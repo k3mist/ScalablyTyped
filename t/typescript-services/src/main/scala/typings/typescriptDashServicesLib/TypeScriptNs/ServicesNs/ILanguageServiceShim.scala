@@ -54,3 +54,40 @@ trait ILanguageServiceShim extends IShim {
   def refresh(throwOnError: scala.Boolean): scala.Unit
 }
 
+object ILanguageServiceShim {
+  @scala.inline
+  def apply(
+    cleanupSemanticCache: js.Function0[scala.Unit],
+    dispose: js.Function1[js.Any, scala.Unit],
+    getBraceMatchingAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getBreakpointStatementAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getCompilerOptionsDiagnostics: js.Function0[java.lang.String],
+    getCompletionEntryDetails: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    getCompletionsAtPosition: js.Function3[java.lang.String, scala.Double, scala.Boolean, java.lang.String],
+    getDefinitionAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getEmitOutput: js.Function1[java.lang.String, java.lang.String],
+    getFormattingEditsAfterKeystroke: js.Function4[java.lang.String, scala.Double, java.lang.String, java.lang.String, java.lang.String],
+    getFormattingEditsForDocument: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getFormattingEditsForRange: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getFormattingEditsOnPaste: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getImplementorsAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getIndentationAtPosition: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    getNameOrDottedNameSpan: js.Function3[java.lang.String, scala.Double, scala.Double, java.lang.String],
+    getNavigateToItems: js.Function1[java.lang.String, java.lang.String],
+    getOccurrencesAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getOutliningRegions: js.Function1[java.lang.String, java.lang.String],
+    getReferencesAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getScriptLexicalStructure: js.Function1[java.lang.String, java.lang.String],
+    getSemanticDiagnostics: js.Function1[java.lang.String, java.lang.String],
+    getSignatureAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getSyntacticDiagnostics: js.Function1[java.lang.String, java.lang.String],
+    getTypeAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    languageService: ILanguageService,
+    refresh: js.Function1[scala.Boolean, scala.Unit]
+  ): ILanguageServiceShim = {
+    val __obj = js.Dynamic.literal(cleanupSemanticCache = cleanupSemanticCache, dispose = dispose, getBraceMatchingAtPosition = getBraceMatchingAtPosition, getBreakpointStatementAtPosition = getBreakpointStatementAtPosition, getCompilerOptionsDiagnostics = getCompilerOptionsDiagnostics, getCompletionEntryDetails = getCompletionEntryDetails, getCompletionsAtPosition = getCompletionsAtPosition, getDefinitionAtPosition = getDefinitionAtPosition, getEmitOutput = getEmitOutput, getFormattingEditsAfterKeystroke = getFormattingEditsAfterKeystroke, getFormattingEditsForDocument = getFormattingEditsForDocument, getFormattingEditsForRange = getFormattingEditsForRange, getFormattingEditsOnPaste = getFormattingEditsOnPaste, getImplementorsAtPosition = getImplementorsAtPosition, getIndentationAtPosition = getIndentationAtPosition, getNameOrDottedNameSpan = getNameOrDottedNameSpan, getNavigateToItems = getNavigateToItems, getOccurrencesAtPosition = getOccurrencesAtPosition, getOutliningRegions = getOutliningRegions, getReferencesAtPosition = getReferencesAtPosition, getScriptLexicalStructure = getScriptLexicalStructure, getSemanticDiagnostics = getSemanticDiagnostics, getSignatureAtPosition = getSignatureAtPosition, getSyntacticDiagnostics = getSyntacticDiagnostics, getTypeAtPosition = getTypeAtPosition, languageService = languageService, refresh = refresh)
+  
+    __obj.asInstanceOf[ILanguageServiceShim]
+  }
+}
+

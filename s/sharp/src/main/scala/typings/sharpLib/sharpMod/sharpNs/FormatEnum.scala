@@ -23,3 +23,28 @@ trait FormatEnum extends js.Object {
   var webp: AvailableFormatInfo
 }
 
+object FormatEnum {
+  @scala.inline
+  def apply(
+    dz: AvailableFormatInfo,
+    fits: AvailableFormatInfo,
+    gif: AvailableFormatInfo,
+    input: AvailableFormatInfo,
+    jpeg: AvailableFormatInfo,
+    magick: AvailableFormatInfo,
+    openslide: AvailableFormatInfo,
+    pdf: AvailableFormatInfo,
+    png: AvailableFormatInfo,
+    ppm: AvailableFormatInfo,
+    raw: AvailableFormatInfo,
+    svg: AvailableFormatInfo,
+    tiff: AvailableFormatInfo,
+    v: AvailableFormatInfo,
+    webp: AvailableFormatInfo
+  ): FormatEnum = {
+    val __obj = js.Dynamic.literal(dz = dz, fits = fits, gif = gif, input = input, jpeg = jpeg, magick = magick, openslide = openslide, pdf = pdf, png = png, ppm = ppm, raw = raw, svg = svg, tiff = tiff, v = v, webp = webp)
+  
+    __obj.asInstanceOf[FormatEnum]
+  }
+}
+

@@ -29,3 +29,34 @@ trait AFrame extends js.Object {
   def registerSystem[T /* <: js.Object */](name: java.lang.String, definition: SystemDefinition[T]): SystemConstructor[T]
 }
 
+object AFrame {
+  @scala.inline
+  def apply(
+    AComponent: Component[_, System[_]],
+    AEntity: Entity[ObjectMap[Component[_, System[_]]]],
+    ANode: ANode,
+    AScene: Scene,
+    THREE: ThreeLib,
+    TWEEN: TweenLib,
+    components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]],
+    geometries: ObjectMap[GeometryDescriptor[Geometry[_]]],
+    primitives: aframeLib.Anon_GetMeshMixin,
+    registerComponent: js.Function2[java.lang.String, ComponentDefinition[js.Any], ComponentConstructor[js.Any]],
+    registerElement: js.Function2[java.lang.String, js.Object, scala.Unit],
+    registerGeometry: js.Function2[java.lang.String, GeometryDefinition[js.Any, _], GeometryConstructor[js.Any]],
+    registerPrimitive: js.Function2[java.lang.String, PrimitiveDefinition, scala.Unit],
+    registerShader: js.Function2[java.lang.String, ShaderDefinition[js.Any], ShaderConstructor[js.Any]],
+    registerSystem: js.Function2[java.lang.String, SystemDefinition[js.Any], SystemConstructor[js.Any]],
+    scenes: js.Array[Scene],
+    schema: SchemaUtils,
+    shaders: ObjectMap[ShaderDescriptor[Shader]],
+    systems: ObjectMap[SystemConstructor[js.Object]],
+    utils: Utils,
+    version: java.lang.String
+  ): AFrame = {
+    val __obj = js.Dynamic.literal(AComponent = AComponent, AEntity = AEntity, ANode = ANode, AScene = AScene, THREE = THREE, TWEEN = TWEEN, components = components, geometries = geometries, primitives = primitives, registerComponent = registerComponent, registerElement = registerElement, registerGeometry = registerGeometry, registerPrimitive = registerPrimitive, registerShader = registerShader, registerSystem = registerSystem, scenes = scenes, schema = schema, shaders = shaders, systems = systems, utils = utils, version = version)
+  
+    __obj.asInstanceOf[AFrame]
+  }
+}
+

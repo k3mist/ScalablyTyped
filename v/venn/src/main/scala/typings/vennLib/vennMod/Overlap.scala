@@ -11,3 +11,12 @@ trait Overlap extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Overlap {
+  @scala.inline
+  def apply(sets: js.Array[java.lang.String], size: scala.Double, weight: scala.Int | scala.Double = null): Overlap = {
+    val __obj = js.Dynamic.literal(sets = sets, size = size)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Overlap]
+  }
+}
+

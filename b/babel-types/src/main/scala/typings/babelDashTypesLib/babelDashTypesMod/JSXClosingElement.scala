@@ -14,3 +14,23 @@ trait JSXClosingElement
   var type_JSXClosingElement: babelDashTypesLib.babelDashTypesLibStrings.JSXClosingElement
 }
 
+object JSXClosingElement {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    name: JSXIdentifier | JSXMemberExpression,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.JSXClosingElement,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSXClosingElement = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, name = name.asInstanceOf[js.Any], start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[JSXClosingElement]
+  }
+}
+

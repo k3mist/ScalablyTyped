@@ -13,3 +13,18 @@ trait AgentChangeEvent extends js.Object {
   var timeStamp: stdLib.Date
 }
 
+object AgentChangeEvent {
+  @scala.inline
+  def apply(
+    agent: TaskAgent,
+    eventType: java.lang.String,
+    pool: TaskAgentPoolReference,
+    poolId: scala.Double,
+    timeStamp: stdLib.Date
+  ): AgentChangeEvent = {
+    val __obj = js.Dynamic.literal(agent = agent, eventType = eventType, pool = pool, poolId = poolId, timeStamp = timeStamp)
+  
+    __obj.asInstanceOf[AgentChangeEvent]
+  }
+}
+

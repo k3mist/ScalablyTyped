@@ -53,3 +53,24 @@ trait Margin extends js.Object {
   def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): Margin
 }
 
+object Margin {
+  @scala.inline
+  def apply(
+    bottom: scala.Double,
+    copy: js.Function0[Margin],
+    equalTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
+    equals: js.Function1[Margin, scala.Boolean],
+    equalsApprox: js.Function1[Margin, scala.Boolean],
+    isReal: js.Function0[scala.Boolean],
+    left: scala.Double,
+    right: scala.Double,
+    set: js.Function1[Margin, Margin],
+    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Margin],
+    top: scala.Double
+  ): Margin = {
+    val __obj = js.Dynamic.literal(bottom = bottom, copy = copy, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, isReal = isReal, left = left, right = right, set = set, setTo = setTo, top = top)
+  
+    __obj.asInstanceOf[Margin]
+  }
+}
+

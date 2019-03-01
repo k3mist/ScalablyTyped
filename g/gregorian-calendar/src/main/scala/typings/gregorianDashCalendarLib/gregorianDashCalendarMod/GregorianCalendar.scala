@@ -172,3 +172,61 @@ trait GregorianCalendar extends js.Object {
   def setYear(year: stdLib.Number): scala.Unit
 }
 
+object GregorianCalendar {
+  @scala.inline
+  def apply(
+    addDayOfMonth: js.Function1[stdLib.Number, scala.Unit],
+    addHourOfDay: js.Function1[stdLib.Number, scala.Unit],
+    addMilliSecond: js.Function1[stdLib.Number, scala.Unit],
+    addMinute: js.Function1[stdLib.Number, scala.Unit],
+    addMonth: js.Function1[stdLib.Number, scala.Unit],
+    addSecond: js.Function1[stdLib.Number, scala.Unit],
+    addYear: js.Function1[stdLib.Number, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    clone: js.Function0[GregorianCalendar],
+    compareToDay: js.Function1[GregorianCalendar, stdLib.Number],
+    equals: js.Function1[GregorianCalendar, scala.Boolean],
+    getDayOfMonth: js.Function0[stdLib.Number],
+    getDayOfWeek: js.Function0[stdLib.Number],
+    getDayOfWeekInMonth: js.Function0[stdLib.Number],
+    getDayOfYear: js.Function0[stdLib.Number],
+    getHourOfDay: js.Function0[stdLib.Number],
+    getMilliSeconds: js.Function0[stdLib.Number],
+    getMinutes: js.Function0[stdLib.Number],
+    getMonth: js.Function0[stdLib.Number],
+    getSeconds: js.Function0[stdLib.Number],
+    getTime: js.Function0[stdLib.Number],
+    getTimezoneOffset: js.Function0[stdLib.Number],
+    getWeekOfMonth: js.Function0[stdLib.Number],
+    getWeekOfYear: js.Function0[stdLib.Number],
+    getWeekYear: js.Function0[stdLib.Number],
+    getWeeksInWeekYear: js.Function0[stdLib.Number],
+    getYear: js.Function0[stdLib.Number],
+    rollSetMonth: js.Function1[stdLib.Number, scala.Unit],
+    set: js.Function7[
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      scala.Unit
+    ],
+    setDayOfMonth: js.Function1[stdLib.Number, scala.Unit],
+    setHourOfDay: js.Function1[stdLib.Number, scala.Unit],
+    setMilliSeconds: js.Function1[stdLib.Number, scala.Unit],
+    setMinutes: js.Function1[stdLib.Number, scala.Unit],
+    setMonth: js.Function1[stdLib.Number, scala.Unit],
+    setSeconds: js.Function1[stdLib.Number, scala.Unit],
+    setTime: js.Function1[stdLib.Number, scala.Unit],
+    setTimezoneOffset: js.Function1[stdLib.Number, scala.Unit],
+    setWeekDate: js.Function3[stdLib.Number, stdLib.Number, stdLib.Number, scala.Unit],
+    setYear: js.Function1[stdLib.Number, scala.Unit]
+  ): GregorianCalendar = {
+    val __obj = js.Dynamic.literal(addDayOfMonth = addDayOfMonth, addHourOfDay = addHourOfDay, addMilliSecond = addMilliSecond, addMinute = addMinute, addMonth = addMonth, addSecond = addSecond, addYear = addYear, clear = clear, clone = clone, compareToDay = compareToDay, equals = equals, getDayOfMonth = getDayOfMonth, getDayOfWeek = getDayOfWeek, getDayOfWeekInMonth = getDayOfWeekInMonth, getDayOfYear = getDayOfYear, getHourOfDay = getHourOfDay, getMilliSeconds = getMilliSeconds, getMinutes = getMinutes, getMonth = getMonth, getSeconds = getSeconds, getTime = getTime, getTimezoneOffset = getTimezoneOffset, getWeekOfMonth = getWeekOfMonth, getWeekOfYear = getWeekOfYear, getWeekYear = getWeekYear, getWeeksInWeekYear = getWeeksInWeekYear, getYear = getYear, rollSetMonth = rollSetMonth, set = set, setDayOfMonth = setDayOfMonth, setHourOfDay = setHourOfDay, setMilliSeconds = setMilliSeconds, setMinutes = setMinutes, setMonth = setMonth, setSeconds = setSeconds, setTime = setTime, setTimezoneOffset = setTimezoneOffset, setWeekDate = setWeekDate, setYear = setYear)
+  
+    __obj.asInstanceOf[GregorianCalendar]
+  }
+}
+

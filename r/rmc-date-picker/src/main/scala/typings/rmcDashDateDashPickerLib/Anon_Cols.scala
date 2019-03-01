@@ -10,3 +10,12 @@ trait Anon_Cols extends js.Object {
   var selMinute: js.Any
 }
 
+object Anon_Cols {
+  @scala.inline
+  def apply(cols: js.Array[Anon_Key], selMinute: js.Any): Anon_Cols = {
+    val __obj = js.Dynamic.literal(cols = cols, selMinute = selMinute)
+  
+    __obj.asInstanceOf[Anon_Cols]
+  }
+}
+

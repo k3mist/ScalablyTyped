@@ -35,3 +35,18 @@ trait Keyboard extends js.Object {
   def show(): scala.Unit
 }
 
+object Keyboard {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    disableScroll: js.Function1[scala.Boolean, scala.Unit],
+    hideKeyboardAccessoryBar: js.Function1[scala.Boolean, scala.Unit],
+    isVisible: scala.Boolean,
+    show: js.Function0[scala.Unit]
+  ): Keyboard = {
+    val __obj = js.Dynamic.literal(close = close, disableScroll = disableScroll, hideKeyboardAccessoryBar = hideKeyboardAccessoryBar, isVisible = isVisible, show = show)
+  
+    __obj.asInstanceOf[Keyboard]
+  }
+}
+

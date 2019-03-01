@@ -11,3 +11,13 @@ trait HttpsError
   val details: js.UndefOr[js.Any] = js.undefined
 }
 
+object HttpsError {
+  @scala.inline
+  def apply(code: ErrorStatus, details: js.Any = null, stack: java.lang.String = null): HttpsError = {
+    val __obj = js.Dynamic.literal(code = code)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[HttpsError]
+  }
+}
+

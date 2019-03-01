@@ -40,3 +40,21 @@ trait TeamProjectReference extends js.Object {
   var visibility: ProjectVisibility
 }
 
+object TeamProjectReference {
+  @scala.inline
+  def apply(
+    abbreviation: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    revision: scala.Double,
+    state: js.Any,
+    url: java.lang.String,
+    visibility: ProjectVisibility
+  ): TeamProjectReference = {
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation, description = description, id = id, name = name, revision = revision, state = state, url = url, visibility = visibility)
+  
+    __obj.asInstanceOf[TeamProjectReference]
+  }
+}
+

@@ -16,3 +16,22 @@ trait ElementLocation extends StartTagLocation {
   var startTag: StartTagLocation
 }
 
+object ElementLocation {
+  @scala.inline
+  def apply(
+    attrs: AttributesLocation,
+    endCol: scala.Double,
+    endLine: scala.Double,
+    endOffset: scala.Double,
+    endTag: Location,
+    startCol: scala.Double,
+    startLine: scala.Double,
+    startOffset: scala.Double,
+    startTag: StartTagLocation
+  ): ElementLocation = {
+    val __obj = js.Dynamic.literal(attrs = attrs, endCol = endCol, endLine = endLine, endOffset = endOffset, endTag = endTag, startCol = startCol, startLine = startLine, startOffset = startOffset, startTag = startTag)
+  
+    __obj.asInstanceOf[ElementLocation]
+  }
+}
+

@@ -12,3 +12,12 @@ trait WorkerInfo extends js.Object {
   var workerId: WorkerID
 }
 
+object WorkerInfo {
+  @scala.inline
+  def apply(title: java.lang.String, `type`: java.lang.String, url: java.lang.String, workerId: WorkerID): WorkerInfo = {
+    val __obj = js.Dynamic.literal(title = title, `type` = `type`, url = url, workerId = workerId)
+  
+    __obj.asInstanceOf[WorkerInfo]
+  }
+}
+

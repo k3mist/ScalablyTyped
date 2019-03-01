@@ -112,3 +112,39 @@ trait _Impl extends js.Object {
   var url: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    checked: java.lang.String,
+    contain: java.lang.String,
+    containExactly: java.lang.String,
+    creditCard: java.lang.String,
+    decimal: java.lang.String,
+    different: java.lang.String,
+    doesntContain: java.lang.String,
+    doesntContainExactly: java.lang.String,
+    email: java.lang.String,
+    empty: java.lang.String,
+    exactCount: java.lang.String,
+    exactLength: java.lang.String,
+    integer: java.lang.String,
+    is: java.lang.String,
+    isExactly: java.lang.String,
+    length: java.lang.String,
+    `match`: java.lang.String,
+    maxCount: java.lang.String,
+    maxLength: java.lang.String,
+    minCount: java.lang.String,
+    minLength: java.lang.String,
+    not: java.lang.String,
+    notExactly: java.lang.String,
+    number: java.lang.String,
+    regExp: java.lang.String,
+    url: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(checked = checked, contain = contain, containExactly = containExactly, creditCard = creditCard, decimal = decimal, different = different, doesntContain = doesntContain, doesntContainExactly = doesntContainExactly, email = email, empty = empty, exactCount = exactCount, exactLength = exactLength, integer = integer, is = is, isExactly = isExactly, length = length, `match` = `match`, maxCount = maxCount, maxLength = maxLength, minCount = minCount, minLength = minLength, not = not, notExactly = notExactly, number = number, regExp = regExp, url = url)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

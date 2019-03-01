@@ -23,3 +23,16 @@ trait ASPxClientHtmlEditorDialogBase extends js.Object {
   def GetOkButton(): ASPxClientButton
 }
 
+object ASPxClientHtmlEditorDialogBase {
+  @scala.inline
+  def apply(
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetOkButton: js.Function0[ASPxClientButton]
+  ): ASPxClientHtmlEditorDialogBase = {
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorDialogBase]
+  }
+}
+

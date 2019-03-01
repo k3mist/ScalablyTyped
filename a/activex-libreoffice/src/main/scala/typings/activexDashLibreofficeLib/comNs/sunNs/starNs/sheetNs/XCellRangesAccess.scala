@@ -51,3 +51,34 @@ trait XCellRangesAccess
   def getCellRangesByName(aRange: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange]
 }
 
+object XCellRangesAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCellByPosition: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
+    ],
+    getCellRangeByPosition: js.Function5[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
+    ],
+    getCellRangesByName: js.Function1[
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellRangesAccess = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByPosition = getCellRangeByPosition, getCellRangesByName = getCellRangesByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCellRangesAccess]
+  }
+}
+

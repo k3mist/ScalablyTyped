@@ -77,3 +77,52 @@ trait XImageManager
   def reset(): scala.Unit
 }
 
+object XImageManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAllImageNames: js.Function1[scala.Double, activexDashInteropLib.SafeArray[java.lang.String]],
+    getImages: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
+    ],
+    hasImage: js.Function2[scala.Double, java.lang.String, scala.Boolean],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    insertImages: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic], 
+      scala.Unit
+    ],
+    isModified: js.Function0[scala.Boolean],
+    isReadOnly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function0[scala.Unit],
+    removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeImages: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ],
+    replaceImages: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic], 
+      scala.Unit
+    ],
+    reset: js.Function0[scala.Unit],
+    store: js.Function0[scala.Unit],
+    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+  ): XImageManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addConfigurationListener = addConfigurationListener, addEventListener = addEventListener, dispose = dispose, getAllImageNames = getAllImageNames, getImages = getImages, hasImage = hasImage, initialize = initialize, insertImages = insertImages, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeConfigurationListener = removeConfigurationListener, removeEventListener = removeEventListener, removeImages = removeImages, replaceImages = replaceImages, reset = reset, store = store, storeToStorage = storeToStorage)
+  
+    __obj.asInstanceOf[XImageManager]
+  }
+}
+

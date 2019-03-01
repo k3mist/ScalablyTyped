@@ -10,3 +10,15 @@ trait Anon_DataRes extends js.Object {
   var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
 }
 
+object Anon_DataRes {
+  @scala.inline
+  def apply(
+    data: aliDashOssLib.aliDashOssMod.OSSNs.StyleData,
+    res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  ): Anon_DataRes = {
+    val __obj = js.Dynamic.literal(data = data, res = res)
+  
+    __obj.asInstanceOf[Anon_DataRes]
+  }
+}
+

@@ -14,3 +14,19 @@ trait MapViewKeyDownEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object MapViewKeyDownEvent {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    native: js.Any,
+    repeat: scala.Boolean,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String
+  ): MapViewKeyDownEvent = {
+    val __obj = js.Dynamic.literal(key = key, native = native, repeat = repeat, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[MapViewKeyDownEvent]
+  }
+}
+

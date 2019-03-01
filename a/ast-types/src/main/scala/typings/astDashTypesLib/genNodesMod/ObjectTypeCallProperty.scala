@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.FunctionTypeAnnotationKind
 }
 
+object ObjectTypeCallProperty {
+  @scala.inline
+  def apply(
+    static: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeCallProperty,
+    value: astDashTypesLib.genKindsMod.FunctionTypeAnnotationKind
+  ): ObjectTypeCallProperty = {
+    val __obj = js.Dynamic.literal(static = static, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ObjectTypeCallProperty]
+  }
+}
+

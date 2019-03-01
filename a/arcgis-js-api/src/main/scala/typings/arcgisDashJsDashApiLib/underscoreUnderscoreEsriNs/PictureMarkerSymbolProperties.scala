@@ -33,3 +33,26 @@ trait PictureMarkerSymbolProperties extends MarkerSymbolProperties {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object PictureMarkerSymbolProperties {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    xoffset: scala.Double | java.lang.String = null,
+    yoffset: scala.Double | java.lang.String = null
+  ): PictureMarkerSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
+    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PictureMarkerSymbolProperties]
+  }
+}
+

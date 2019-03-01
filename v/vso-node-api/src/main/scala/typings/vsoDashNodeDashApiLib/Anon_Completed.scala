@@ -11,3 +11,12 @@ trait Anon_Completed extends js.Object {
   var pending: scala.Double
 }
 
+object Anon_Completed {
+  @scala.inline
+  def apply(completed: scala.Double, inProgress: scala.Double, pending: scala.Double): Anon_Completed = {
+    val __obj = js.Dynamic.literal(completed = completed, inProgress = inProgress, pending = pending)
+  
+    __obj.asInstanceOf[Anon_Completed]
+  }
+}
+

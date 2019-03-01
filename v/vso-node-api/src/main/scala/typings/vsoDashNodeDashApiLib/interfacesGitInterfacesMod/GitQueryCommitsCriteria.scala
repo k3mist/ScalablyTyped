@@ -74,3 +74,29 @@ trait GitQueryCommitsCriteria extends js.Object {
   var user: java.lang.String
 }
 
+object GitQueryCommitsCriteria {
+  @scala.inline
+  def apply(
+    $skip: scala.Double,
+    $top: scala.Double,
+    author: java.lang.String,
+    compareVersion: GitVersionDescriptor,
+    excludeDeletes: scala.Boolean,
+    fromCommitId: java.lang.String,
+    fromDate: java.lang.String,
+    historyMode: GitHistoryMode,
+    ids: js.Array[java.lang.String],
+    includeLinks: scala.Boolean,
+    includeWorkItems: scala.Boolean,
+    itemPath: java.lang.String,
+    itemVersion: GitVersionDescriptor,
+    toCommitId: java.lang.String,
+    toDate: java.lang.String,
+    user: java.lang.String
+  ): GitQueryCommitsCriteria = {
+    val __obj = js.Dynamic.literal($skip = $skip, $top = $top, author = author, compareVersion = compareVersion, excludeDeletes = excludeDeletes, fromCommitId = fromCommitId, fromDate = fromDate, historyMode = historyMode, ids = ids, includeLinks = includeLinks, includeWorkItems = includeWorkItems, itemPath = itemPath, itemVersion = itemVersion, toCommitId = toCommitId, toDate = toDate, user = user)
+  
+    __obj.asInstanceOf[GitQueryCommitsCriteria]
+  }
+}
+

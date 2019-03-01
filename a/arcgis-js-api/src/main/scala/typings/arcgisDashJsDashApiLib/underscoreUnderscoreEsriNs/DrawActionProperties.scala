@@ -14,3 +14,12 @@ trait DrawActionProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 
+object DrawActionProperties {
+  @scala.inline
+  def apply(view: MapViewProperties = null): DrawActionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DrawActionProperties]
+  }
+}
+

@@ -20,3 +20,23 @@ trait Datum extends js.Object {
 
 trait datum extends js.Object
 
+object Datum {
+  @scala.inline
+  def apply(
+    ellipsoid: Ellipsoid,
+    transform: js.Tuple7[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double
+    ]
+  ): Datum = {
+    val __obj = js.Dynamic.literal(ellipsoid = ellipsoid, transform = transform)
+  
+    __obj.asInstanceOf[Datum]
+  }
+}
+

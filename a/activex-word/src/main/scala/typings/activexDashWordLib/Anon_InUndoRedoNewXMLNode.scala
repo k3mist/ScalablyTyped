@@ -10,3 +10,12 @@ trait Anon_InUndoRedoNewXMLNode extends js.Object {
   val NewXMLNode: activexDashWordLib.WordNs.XMLNode
 }
 
+object Anon_InUndoRedoNewXMLNode {
+  @scala.inline
+  def apply(InUndoRedo: scala.Boolean, NewXMLNode: activexDashWordLib.WordNs.XMLNode): Anon_InUndoRedoNewXMLNode = {
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, NewXMLNode = NewXMLNode)
+  
+    __obj.asInstanceOf[Anon_InUndoRedoNewXMLNode]
+  }
+}
+

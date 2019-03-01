@@ -12,3 +12,12 @@ trait Anon_TitleUrlString extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_TitleUrlString {
+  @scala.inline
+  def apply(title: java.lang.String, url: java.lang.String): Anon_TitleUrlString = {
+    val __obj = js.Dynamic.literal(title = title, url = url)
+  
+    __obj.asInstanceOf[Anon_TitleUrlString]
+  }
+}
+

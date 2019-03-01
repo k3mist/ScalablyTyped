@@ -69,3 +69,66 @@ trait XPathSettings
   var Work: java.lang.String
 }
 
+object XPathSettings {
+  @scala.inline
+  def apply(
+    Addin: java.lang.String,
+    AutoCorrect: java.lang.String,
+    AutoText: java.lang.String,
+    Backup: java.lang.String,
+    BasePathShareLayer: java.lang.String,
+    BasePathUserLayer: java.lang.String,
+    Basic: java.lang.String,
+    Bitmap: java.lang.String,
+    Config: java.lang.String,
+    Dictionary: java.lang.String,
+    Favorite: java.lang.String,
+    Filter: java.lang.String,
+    Gallery: java.lang.String,
+    Graphic: java.lang.String,
+    Help: java.lang.String,
+    Linguistic: java.lang.String,
+    Module: java.lang.String,
+    Palette: java.lang.String,
+    Plugin: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Storage: java.lang.String,
+    Temp: java.lang.String,
+    Template: java.lang.String,
+    UIConfig: java.lang.String,
+    UserConfig: java.lang.String,
+    UserDictionary: java.lang.String,
+    Work: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XPathSettings = {
+    val __obj = js.Dynamic.literal(Addin = Addin, AutoCorrect = AutoCorrect, AutoText = AutoText, Backup = Backup, BasePathShareLayer = BasePathShareLayer, BasePathUserLayer = BasePathUserLayer, Basic = Basic, Bitmap = Bitmap, Config = Config, Dictionary = Dictionary, Favorite = Favorite, Filter = Filter, Gallery = Gallery, Graphic = Graphic, Help = Help, Linguistic = Linguistic, Module = Module, Palette = Palette, Plugin = Plugin, PropertySetInfo = PropertySetInfo, Storage = Storage, Temp = Temp, Template = Template, UIConfig = UIConfig, UserConfig = UserConfig, UserDictionary = UserDictionary, Work = Work, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[XPathSettings]
+  }
+}
+

@@ -11,3 +11,12 @@ trait DeviceResponse extends js.Object {
   var uuid: java.lang.String
 }
 
+object DeviceResponse {
+  @scala.inline
+  def apply(color: java.lang.String, online: scala.Boolean, uuid: java.lang.String): DeviceResponse = {
+    val __obj = js.Dynamic.literal(color = color, online = online, uuid = uuid)
+  
+    __obj.asInstanceOf[DeviceResponse]
+  }
+}
+

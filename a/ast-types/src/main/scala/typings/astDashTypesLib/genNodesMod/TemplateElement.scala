@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.Anon_Cooked
 }
 
+object TemplateElement {
+  @scala.inline
+  def apply(
+    tail: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TemplateElement,
+    value: astDashTypesLib.Anon_Cooked
+  ): TemplateElement = {
+    val __obj = js.Dynamic.literal(tail = tail, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[TemplateElement]
+  }
+}
+

@@ -21,3 +21,18 @@ trait DynamicDataLayerFields
   var name: java.lang.String
 }
 
+object DynamicDataLayerFields {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): DynamicDataLayerFields = {
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[DynamicDataLayerFields]
+  }
+}
+

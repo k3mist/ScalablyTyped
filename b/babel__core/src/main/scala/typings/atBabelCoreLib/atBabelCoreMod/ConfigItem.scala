@@ -29,3 +29,20 @@ trait ConfigItem extends js.Object {
   var value: js.Object | (js.Function1[/* repeated */ js.Any, _])
 }
 
+object ConfigItem {
+  @scala.inline
+  def apply(
+    dirname: java.lang.String,
+    value: js.Object | (js.Function1[/* repeated */ js.Any, _]),
+    file: atBabelCoreLib.Anon_Request = null,
+    name: java.lang.String = null,
+    options: js.Object | atBabelCoreLib.atBabelCoreLibNumbers.`false` = null
+  ): ConfigItem = {
+    val __obj = js.Dynamic.literal(dirname = dirname, value = value.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigItem]
+  }
+}
+

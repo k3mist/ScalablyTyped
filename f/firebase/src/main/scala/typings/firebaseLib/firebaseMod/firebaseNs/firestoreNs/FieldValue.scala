@@ -15,3 +15,12 @@ trait FieldValue extends js.Object {
   def isEqual(other: FieldValue): scala.Boolean
 }
 
+object FieldValue {
+  @scala.inline
+  def apply(isEqual: js.Function1[FieldValue, scala.Boolean]): FieldValue = {
+    val __obj = js.Dynamic.literal(isEqual = isEqual)
+  
+    __obj.asInstanceOf[FieldValue]
+  }
+}
+

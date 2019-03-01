@@ -32,3 +32,23 @@ trait TextFilter extends _Filter {
   var `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.TextFilter
 }
 
+object TextFilter {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.TextFilter,
+    condition: FilterCondition = null,
+    defaultValue: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    placeholder: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): TextFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TextFilter]
+  }
+}
+

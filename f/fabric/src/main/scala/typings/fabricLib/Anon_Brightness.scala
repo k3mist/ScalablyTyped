@@ -13,3 +13,12 @@ trait Anon_Brightness extends js.Object {
   var brightness: scala.Double
 }
 
+object Anon_Brightness {
+  @scala.inline
+  def apply(brightness: scala.Double): Anon_Brightness = {
+    val __obj = js.Dynamic.literal(brightness = brightness)
+  
+    __obj.asInstanceOf[Anon_Brightness]
+  }
+}
+

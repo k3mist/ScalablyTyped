@@ -10,3 +10,12 @@ trait Metadata extends js.Object {
   var percent: scala.Double
 }
 
+object Metadata {
+  @scala.inline
+  def apply(currentFile: java.lang.String, percent: scala.Double): Metadata = {
+    val __obj = js.Dynamic.literal(currentFile = currentFile, percent = percent)
+  
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

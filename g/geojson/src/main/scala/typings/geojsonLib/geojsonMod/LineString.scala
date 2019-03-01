@@ -13,3 +13,16 @@ trait LineString
   var type_LineString: geojsonLib.geojsonLibStrings.LineString
 }
 
+object LineString {
+  @scala.inline
+  def apply(
+    coordinates: js.Array[Position],
+    `type`: geojsonLib.geojsonLibStrings.LineString,
+    bbox: BBox = null
+  ): LineString = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineString]
+  }
+}
+

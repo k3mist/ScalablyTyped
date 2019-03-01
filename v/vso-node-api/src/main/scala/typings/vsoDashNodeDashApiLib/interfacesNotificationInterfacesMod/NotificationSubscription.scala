@@ -80,3 +80,31 @@ trait NotificationSubscription extends js.Object {
   var userSettings: SubscriptionUserSettings
 }
 
+object NotificationSubscription {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    adminSettings: SubscriptionAdminSettings,
+    channel: ISubscriptionChannel,
+    description: java.lang.String,
+    diagnostics: SubscriptionDiagnostics,
+    extendedProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    filter: ISubscriptionFilter,
+    flags: SubscriptionFlags,
+    id: java.lang.String,
+    lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedDate: stdLib.Date,
+    permissions: SubscriptionPermissions,
+    scope: SubscriptionScope,
+    status: SubscriptionStatus,
+    statusMessage: java.lang.String,
+    subscriber: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    url: java.lang.String,
+    userSettings: SubscriptionUserSettings
+  ): NotificationSubscription = {
+    val __obj = js.Dynamic.literal(_links = _links, adminSettings = adminSettings, channel = channel, description = description, diagnostics = diagnostics, extendedProperties = extendedProperties, filter = filter, flags = flags, id = id, lastModifiedBy = lastModifiedBy, modifiedDate = modifiedDate, permissions = permissions, scope = scope, status = status, statusMessage = statusMessage, subscriber = subscriber, url = url, userSettings = userSettings)
+  
+    __obj.asInstanceOf[NotificationSubscription]
+  }
+}
+

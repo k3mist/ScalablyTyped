@@ -36,3 +36,20 @@ trait ViewpointProperties extends js.Object {
   var targetGeometry: js.UndefOr[GeometryProperties] = js.undefined
 }
 
+object ViewpointProperties {
+  @scala.inline
+  def apply(
+    camera: CameraProperties = null,
+    rotation: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    targetGeometry: GeometryProperties = null
+  ): ViewpointProperties = {
+    val __obj = js.Dynamic.literal()
+    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (targetGeometry != null) __obj.updateDynamic("targetGeometry")(targetGeometry)
+    __obj.asInstanceOf[ViewpointProperties]
+  }
+}
+

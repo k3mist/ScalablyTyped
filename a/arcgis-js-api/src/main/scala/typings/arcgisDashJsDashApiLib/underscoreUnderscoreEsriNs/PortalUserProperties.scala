@@ -98,3 +98,42 @@ trait PortalUserProperties extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortalUserProperties {
+  @scala.inline
+  def apply(
+    access: java.lang.String = null,
+    created: DateProperties = null,
+    culture: java.lang.String = null,
+    description: java.lang.String = null,
+    email: java.lang.String = null,
+    fullName: java.lang.String = null,
+    modified: DateProperties = null,
+    orgId: java.lang.String = null,
+    portal: PortalProperties = null,
+    preferredView: java.lang.String = null,
+    region: java.lang.String = null,
+    role: java.lang.String = null,
+    roleId: java.lang.String = null,
+    units: java.lang.String = null,
+    username: java.lang.String = null
+  ): PortalUserProperties = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
+    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (orgId != null) __obj.updateDynamic("orgId")(orgId)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (preferredView != null) __obj.updateDynamic("preferredView")(preferredView)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (roleId != null) __obj.updateDynamic("roleId")(roleId)
+    if (units != null) __obj.updateDynamic("units")(units)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[PortalUserProperties]
+  }
+}
+

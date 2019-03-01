@@ -11,3 +11,12 @@ trait DashboardSelectionModeStatic extends js.Object {
   var Single: java.lang.String
 }
 
+object DashboardSelectionModeStatic {
+  @scala.inline
+  def apply(Multiple: java.lang.String, None: java.lang.String, Single: java.lang.String): DashboardSelectionModeStatic = {
+    val __obj = js.Dynamic.literal(Multiple = Multiple, None = None, Single = Single)
+  
+    __obj.asInstanceOf[DashboardSelectionModeStatic]
+  }
+}
+

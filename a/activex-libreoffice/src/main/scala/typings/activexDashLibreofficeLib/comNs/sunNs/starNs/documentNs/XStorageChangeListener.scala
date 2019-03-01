@@ -19,3 +19,22 @@ trait XStorageChangeListener
   ): scala.Unit
 }
 
+object XStorageChangeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notifyStorageChange: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStorageChangeListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notifyStorageChange = notifyStorageChange, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStorageChangeListener]
+  }
+}
+

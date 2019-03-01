@@ -16,3 +16,12 @@ trait ASPxClientSplitterPaneCancelEventArgs extends ASPxClientSplitterPaneEventA
   var cancel: scala.Boolean
 }
 
+object ASPxClientSplitterPaneCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, pane: ASPxClientSplitterPane): ASPxClientSplitterPaneCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, pane = pane)
+  
+    __obj.asInstanceOf[ASPxClientSplitterPaneCancelEventArgs]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Update extends AST {
   var where: js.Any
 }
 
+object Update {
+  @scala.inline
+  def apply(
+    set: js.Array[SetList],
+    table: java.lang.String,
+    `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.udpate,
+    where: js.Any,
+    db: java.lang.String = null
+  ): Update = {
+    val __obj = js.Dynamic.literal(set = set, table = table, `type` = `type`, where = where)
+    if (db != null) __obj.updateDynamic("db")(db)
+    __obj.asInstanceOf[Update]
+  }
+}
+

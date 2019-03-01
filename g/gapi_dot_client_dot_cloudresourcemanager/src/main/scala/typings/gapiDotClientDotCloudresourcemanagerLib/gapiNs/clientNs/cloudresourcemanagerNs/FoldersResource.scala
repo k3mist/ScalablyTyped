@@ -37,3 +37,37 @@ trait FoldersResource extends js.Object {
   def setOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
 }
 
+object FoldersResource {
+  @scala.inline
+  def apply(
+    clearOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    getEffectiveOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    getOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    listAvailableOrgPolicyConstraints: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
+    ],
+    listOrgPolicies: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
+    ],
+    setOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ]
+  ): FoldersResource = {
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, setOrgPolicy = setOrgPolicy)
+  
+    __obj.asInstanceOf[FoldersResource]
+  }
+}
+

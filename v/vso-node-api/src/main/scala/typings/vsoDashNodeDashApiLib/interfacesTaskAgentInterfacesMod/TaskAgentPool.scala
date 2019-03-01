@@ -41,3 +41,27 @@ trait TaskAgentPool extends TaskAgentPoolReference {
   var size: scala.Double
 }
 
+object TaskAgentPool {
+  @scala.inline
+  def apply(
+    administratorsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    autoProvision: scala.Boolean,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    groupScopeId: java.lang.String,
+    id: scala.Double,
+    isHosted: scala.Boolean,
+    name: java.lang.String,
+    poolType: TaskAgentPoolType,
+    properties: js.Any,
+    provisioned: scala.Boolean,
+    scope: java.lang.String,
+    serviceAccountsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    size: scala.Double
+  ): TaskAgentPool = {
+    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup, autoProvision = autoProvision, createdBy = createdBy, createdOn = createdOn, groupScopeId = groupScopeId, id = id, isHosted = isHosted, name = name, poolType = poolType, properties = properties, provisioned = provisioned, scope = scope, serviceAccountsGroup = serviceAccountsGroup, size = size)
+  
+    __obj.asInstanceOf[TaskAgentPool]
+  }
+}
+

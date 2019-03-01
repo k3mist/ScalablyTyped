@@ -10,3 +10,12 @@ trait W2Event extends js.Object {
   def onComplete(): scala.Unit
 }
 
+object W2Event {
+  @scala.inline
+  def apply(onComplete: js.Function0[scala.Unit], target: java.lang.String): W2Event = {
+    val __obj = js.Dynamic.literal(onComplete = onComplete, target = target)
+  
+    __obj.asInstanceOf[W2Event]
+  }
+}
+

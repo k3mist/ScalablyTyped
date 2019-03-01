@@ -17,3 +17,12 @@ trait lang extends js.Object {
   def clone(elem: js.Any): js.Any
 }
 
+object lang {
+  @scala.inline
+  def apply(clone: js.Function1[js.Any, js.Any]): lang = {
+    val __obj = js.Dynamic.literal(clone = clone)
+  
+    __obj.asInstanceOf[lang]
+  }
+}
+

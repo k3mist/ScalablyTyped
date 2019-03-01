@@ -16,3 +16,29 @@ trait FiltersResource extends js.Object {
   def list(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ListFiltersResponse]
 }
 
+object FiltersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListFiltersResponse]
+    ]
+  ): FiltersResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[FiltersResource]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Container extends js.Object {
   var job: scala.Double
 }
 
+object Anon_Container {
+  @scala.inline
+  def apply(container: scala.Double, job: scala.Double): Anon_Container = {
+    val __obj = js.Dynamic.literal(container = container, job = job)
+  
+    __obj.asInstanceOf[Anon_Container]
+  }
+}
+

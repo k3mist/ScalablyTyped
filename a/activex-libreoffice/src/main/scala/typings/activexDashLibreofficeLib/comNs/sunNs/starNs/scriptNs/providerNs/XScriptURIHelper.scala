@@ -34,3 +34,20 @@ trait XScriptURIHelper
   def getStorageURI(scriptURI: java.lang.String): java.lang.String
 }
 
+object XScriptURIHelper {
+  @scala.inline
+  def apply(
+    RootStorageURI: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getRootStorageURI: js.Function0[java.lang.String],
+    getScriptURI: js.Function1[java.lang.String, java.lang.String],
+    getStorageURI: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScriptURIHelper = {
+    val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI, acquire = acquire, getRootStorageURI = getRootStorageURI, getScriptURI = getScriptURI, getStorageURI = getStorageURI, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScriptURIHelper]
+  }
+}
+

@@ -20,3 +20,12 @@ trait MessageReceived
   var text: java.lang.String
 }
 
+object MessageReceived {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call, text: java.lang.String): MessageReceived = {
+    val __obj = js.Dynamic.literal(call = call, text = text)
+  
+    __obj.asInstanceOf[MessageReceived]
+  }
+}
+

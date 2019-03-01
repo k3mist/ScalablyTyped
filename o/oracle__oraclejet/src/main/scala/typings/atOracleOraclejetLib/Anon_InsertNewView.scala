@@ -17,3 +17,22 @@ trait Anon_InsertNewView extends js.Object {
   def removeOldView(): js.UndefOr[scala.Nothing]
 }
 
+object Anon_InsertNewView {
+  @scala.inline
+  def apply(
+    insertNewView: js.Function0[js.UndefOr[scala.Nothing]],
+    isInitial: scala.Boolean,
+    newViewModel: js.Object,
+    newViewParent: stdLib.Node,
+    node: stdLib.Node,
+    oldDomNodes: js.Array[_],
+    oldViewModel: js.Object,
+    oldViewParent: stdLib.Node,
+    removeOldView: js.Function0[js.UndefOr[scala.Nothing]]
+  ): Anon_InsertNewView = {
+    val __obj = js.Dynamic.literal(insertNewView = insertNewView, isInitial = isInitial, newViewModel = newViewModel, newViewParent = newViewParent, node = node, oldDomNodes = oldDomNodes, oldViewModel = oldViewModel, oldViewParent = oldViewParent, removeOldView = removeOldView)
+  
+    __obj.asInstanceOf[Anon_InsertNewView]
+  }
+}
+

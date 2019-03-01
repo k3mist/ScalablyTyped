@@ -116,3 +116,53 @@ trait DynamicItemBehavior
   def setResistance(resistance: scala.Double): scala.Unit
 }
 
+object DynamicItemBehavior {
+  @scala.inline
+  def apply(
+    addAngularVelocityForItem: js.Function2[js.Any, scala.Double, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addItem: js.Function1[js.Any, scala.Unit],
+    addLinearVelocityForItem: js.Function2[js.Any, titaniumLib.Point, scala.Unit],
+    allowsRotation: scala.Boolean,
+    angularResistance: scala.Double,
+    angularVelocityForItem: js.Function1[js.Any, scala.Double],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    density: scala.Double,
+    elasticity: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    friction: scala.Double,
+    getAllowsRotation: js.Function0[scala.Boolean],
+    getAngularResistance: js.Function0[scala.Double],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDensity: js.Function0[scala.Double],
+    getElasticity: js.Function0[scala.Double],
+    getFriction: js.Function0[scala.Double],
+    getItems: js.Function0[js.Array[titaniumLib.TitaniumNs.UINs.View]],
+    getResistance: js.Function0[scala.Double],
+    items: js.Array[titaniumLib.TitaniumNs.UINs.View],
+    linearVelocityForItem: js.Function1[js.Any, titaniumLib.Point],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removeItem: js.Function1[js.Any, scala.Unit],
+    resistance: scala.Double,
+    setAllowsRotation: js.Function1[scala.Boolean, scala.Unit],
+    setAngularResistance: js.Function1[scala.Double, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setDensity: js.Function1[scala.Double, scala.Unit],
+    setElasticity: js.Function1[scala.Double, scala.Unit],
+    setFriction: js.Function1[scala.Double, scala.Unit],
+    setResistance: js.Function1[scala.Double, scala.Unit],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): DynamicItemBehavior = {
+    val __obj = js.Dynamic.literal(addAngularVelocityForItem = addAngularVelocityForItem, addEventListener = addEventListener, addItem = addItem, addLinearVelocityForItem = addLinearVelocityForItem, allowsRotation = allowsRotation, angularResistance = angularResistance, angularVelocityForItem = angularVelocityForItem, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, density = density, elasticity = elasticity, fireEvent = fireEvent, friction = friction, getAllowsRotation = getAllowsRotation, getAngularResistance = getAngularResistance, getApiName = getApiName, getBubbleParent = getBubbleParent, getDensity = getDensity, getElasticity = getElasticity, getFriction = getFriction, getItems = getItems, getResistance = getResistance, items = items, linearVelocityForItem = linearVelocityForItem, removeEventListener = removeEventListener, removeItem = removeItem, resistance = resistance, setAllowsRotation = setAllowsRotation, setAngularResistance = setAngularResistance, setBubbleParent = setBubbleParent, setDensity = setDensity, setElasticity = setElasticity, setFriction = setFriction, setResistance = setResistance)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[DynamicItemBehavior]
+  }
+}
+

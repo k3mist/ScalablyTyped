@@ -13,3 +13,18 @@ trait IToken extends js.Object {
   var `val`: js.Any
 }
 
+object IToken {
+  @scala.inline
+  def apply(
+    `match`: java.lang.String,
+    otherVal: js.Any,
+    regex: stdLib.RegExp,
+    `type`: java.lang.String,
+    `val`: js.Any
+  ): IToken = {
+    val __obj = js.Dynamic.literal(`match` = `match`, otherVal = otherVal, regex = regex, `type` = `type`, `val` = `val`)
+  
+    __obj.asInstanceOf[IToken]
+  }
+}
+

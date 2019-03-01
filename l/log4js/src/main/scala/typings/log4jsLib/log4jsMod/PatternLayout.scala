@@ -13,3 +13,16 @@ trait PatternLayout extends Layout {
   var `type`: log4jsLib.log4jsLibStrings.pattern
 }
 
+object PatternLayout {
+  @scala.inline
+  def apply(
+    pattern: java.lang.String,
+    `type`: log4jsLib.log4jsLibStrings.pattern,
+    tokens: org.scalablytyped.runtime.StringDictionary[Token] = null
+  ): PatternLayout = {
+    val __obj = js.Dynamic.literal(pattern = pattern, `type` = `type`)
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[PatternLayout]
+  }
+}
+

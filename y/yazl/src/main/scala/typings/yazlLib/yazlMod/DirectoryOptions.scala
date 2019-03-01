@@ -10,3 +10,12 @@ trait DirectoryOptions extends js.Object {
   var mtime: stdLib.Date
 }
 
+object DirectoryOptions {
+  @scala.inline
+  def apply(mode: scala.Double, mtime: stdLib.Date): DirectoryOptions = {
+    val __obj = js.Dynamic.literal(mode = mode, mtime = mtime)
+  
+    __obj.asInstanceOf[DirectoryOptions]
+  }
+}
+

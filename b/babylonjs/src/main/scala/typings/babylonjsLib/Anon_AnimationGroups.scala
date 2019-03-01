@@ -12,3 +12,17 @@ trait Anon_AnimationGroups extends js.Object {
   var skeletons: js.Array[babylonjsLib.BABYLONNs.Skeleton]
 }
 
+object Anon_AnimationGroups {
+  @scala.inline
+  def apply(
+    animationGroups: js.Array[babylonjsLib.BABYLONNs.AnimationGroup],
+    meshes: js.Array[babylonjsLib.BABYLONNs.AbstractMesh],
+    particleSystems: js.Array[babylonjsLib.BABYLONNs.IParticleSystem],
+    skeletons: js.Array[babylonjsLib.BABYLONNs.Skeleton]
+  ): Anon_AnimationGroups = {
+    val __obj = js.Dynamic.literal(animationGroups = animationGroups, meshes = meshes, particleSystems = particleSystems, skeletons = skeletons)
+  
+    __obj.asInstanceOf[Anon_AnimationGroups]
+  }
+}
+

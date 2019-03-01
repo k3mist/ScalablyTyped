@@ -11,3 +11,16 @@ trait IUICommandFactory extends js.Object {
   def createWithHandlerAndId(label: java.lang.String, action: UICommandInvokedHandler, commandId: js.Any): UICommand
 }
 
+object IUICommandFactory {
+  @scala.inline
+  def apply(
+    create: js.Function1[java.lang.String, UICommand],
+    createWithHandler: js.Function2[java.lang.String, UICommandInvokedHandler, UICommand],
+    createWithHandlerAndId: js.Function3[java.lang.String, UICommandInvokedHandler, js.Any, UICommand]
+  ): IUICommandFactory = {
+    val __obj = js.Dynamic.literal(create = create, createWithHandler = createWithHandler, createWithHandlerAndId = createWithHandlerAndId)
+  
+    __obj.asInstanceOf[IUICommandFactory]
+  }
+}
+

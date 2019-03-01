@@ -21,3 +21,18 @@ trait PortalItemFetchRelatedItemsParams
   var relationshipType: java.lang.String
 }
 
+object PortalItemFetchRelatedItemsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    relationshipType: java.lang.String,
+    direction: java.lang.String = null
+  ): PortalItemFetchRelatedItemsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, relationshipType = relationshipType)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
+  }
+}
+

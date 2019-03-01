@@ -10,3 +10,12 @@ trait Anon_Digest extends js.Object {
   var size: scala.Double
 }
 
+object Anon_Digest {
+  @scala.inline
+  def apply(digest: java.lang.String, size: scala.Double): Anon_Digest = {
+    val __obj = js.Dynamic.literal(digest = digest, size = size)
+  
+    __obj.asInstanceOf[Anon_Digest]
+  }
+}
+

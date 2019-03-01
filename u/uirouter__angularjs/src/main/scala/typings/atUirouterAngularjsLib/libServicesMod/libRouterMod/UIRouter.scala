@@ -12,3 +12,15 @@ trait UIRouter extends js.Object {
   var urlRouterProvider: atUirouterAngularjsLib.libUrlRouterProviderMod.UrlRouterProvider
 }
 
+object UIRouter {
+  @scala.inline
+  def apply(
+    stateProvider: atUirouterAngularjsLib.libStateProviderMod.StateProvider,
+    urlRouterProvider: atUirouterAngularjsLib.libUrlRouterProviderMod.UrlRouterProvider
+  ): UIRouter = {
+    val __obj = js.Dynamic.literal(stateProvider = stateProvider, urlRouterProvider = urlRouterProvider)
+  
+    __obj.asInstanceOf[UIRouter]
+  }
+}
+

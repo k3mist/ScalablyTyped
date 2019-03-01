@@ -10,3 +10,12 @@ trait ListIndexesAction extends Action {
   var `type`: ActionTypes
 }
 
+object ListIndexesAction {
+  @scala.inline
+  def apply(args: js.Array[_], `type`: ActionTypes): ListIndexesAction = {
+    val __obj = js.Dynamic.literal(args = args, `type` = `type`)
+  
+    __obj.asInstanceOf[ListIndexesAction]
+  }
+}
+

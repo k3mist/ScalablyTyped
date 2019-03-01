@@ -22,3 +22,16 @@ trait Anon_Artifacts extends js.Object {
   var strategy: java.lang.String
 }
 
+object Anon_Artifacts {
+  @scala.inline
+  def apply(
+    credentials: hapiLib.hapiMod.AuthCredentials,
+    strategy: java.lang.String,
+    artifacts: js.Object = null
+  ): Anon_Artifacts = {
+    val __obj = js.Dynamic.literal(credentials = credentials, strategy = strategy)
+    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
+    __obj.asInstanceOf[Anon_Artifacts]
+  }
+}
+

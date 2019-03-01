@@ -45,3 +45,50 @@ trait Anon_AccountMyWorkResult extends js.Object {
   var WorkItemUpdate: js.Any
 }
 
+object Anon_AccountMyWorkResult {
+  @scala.inline
+  def apply(
+    AccountMyWorkResult: js.Any,
+    AccountRecentActivityWorkItemModel: js.Any,
+    AccountRecentMentionWorkItemModel: js.Any,
+    AccountWorkWorkItemModel: js.Any,
+    CommentSortOrder: Anon_EnumValuesAnonAsc,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuid,
+    FieldUsage: Anon_EnumValuesAnonNoneTree,
+    GetFieldsExpand: Anon_EnumValuesAnonExtensionFields,
+    LinkChangeType: Anon_EnumValuesAnonCreateRemove,
+    LinkQueryMode: Anon_EnumValuesAnonLinksOneHopDoesNotContain,
+    LogicalOperation: Anon_EnumValuesAnonAND,
+    ProvisioningActionType: Anon_EnumValuesAnonImport,
+    QueryExpand: Anon_EnumValuesAnonAllClauses,
+    QueryHierarchyItem: js.Any,
+    QueryHierarchyItemsResult: js.Any,
+    QueryOption: Anon_EnumValuesAnonDoing,
+    QueryRecursionOption: Anon_EnumValuesAnonChildFirst,
+    QueryResultType: Anon_EnumValuesAnonWorkItem,
+    QueryType: Anon_EnumValuesAnonFlat,
+    ReportingRevisionsExpand: Anon_EnumValuesAnonFieldsNone,
+    ReportingWorkItemLink: js.Any,
+    TemplateType: Anon_EnumValuesAnonGlobalWorkflow,
+    TreeNodeStructureType: Anon_EnumValuesAnonArea,
+    TreeStructureGroup: Anon_EnumValuesAnonAreas,
+    WorkItemClassificationNode: js.Any,
+    WorkItemComment: js.Any,
+    WorkItemComments: js.Any,
+    WorkItemErrorPolicy: Anon_EnumValuesAnonFail,
+    WorkItemExpand: Anon_EnumValuesAnonAllFields,
+    WorkItemField: js.Any,
+    WorkItemHistory: js.Any,
+    WorkItemQueryClause: js.Any,
+    WorkItemQueryResult: js.Any,
+    WorkItemRecentActivityType: Anon_EnumValuesAnonDeleted,
+    WorkItemTypeFieldsExpandLevel: Anon_EnumValuesAnonAllAllowedValues,
+    WorkItemTypeTemplateUpdateModel: js.Any,
+    WorkItemUpdate: js.Any
+  ): Anon_AccountMyWorkResult = {
+    val __obj = js.Dynamic.literal(AccountMyWorkResult = AccountMyWorkResult, AccountRecentActivityWorkItemModel = AccountRecentActivityWorkItemModel, AccountRecentMentionWorkItemModel = AccountRecentMentionWorkItemModel, AccountWorkWorkItemModel = AccountWorkWorkItemModel, CommentSortOrder = CommentSortOrder, FieldType = FieldType, FieldUsage = FieldUsage, GetFieldsExpand = GetFieldsExpand, LinkChangeType = LinkChangeType, LinkQueryMode = LinkQueryMode, LogicalOperation = LogicalOperation, ProvisioningActionType = ProvisioningActionType, QueryExpand = QueryExpand, QueryHierarchyItem = QueryHierarchyItem, QueryHierarchyItemsResult = QueryHierarchyItemsResult, QueryOption = QueryOption, QueryRecursionOption = QueryRecursionOption, QueryResultType = QueryResultType, QueryType = QueryType, ReportingRevisionsExpand = ReportingRevisionsExpand, ReportingWorkItemLink = ReportingWorkItemLink, TemplateType = TemplateType, TreeNodeStructureType = TreeNodeStructureType, TreeStructureGroup = TreeStructureGroup, WorkItemClassificationNode = WorkItemClassificationNode, WorkItemComment = WorkItemComment, WorkItemComments = WorkItemComments, WorkItemErrorPolicy = WorkItemErrorPolicy, WorkItemExpand = WorkItemExpand, WorkItemField = WorkItemField, WorkItemHistory = WorkItemHistory, WorkItemQueryClause = WorkItemQueryClause, WorkItemQueryResult = WorkItemQueryResult, WorkItemRecentActivityType = WorkItemRecentActivityType, WorkItemTypeFieldsExpandLevel = WorkItemTypeFieldsExpandLevel, WorkItemTypeTemplateUpdateModel = WorkItemTypeTemplateUpdateModel, WorkItemUpdate = WorkItemUpdate)
+  
+    __obj.asInstanceOf[Anon_AccountMyWorkResult]
+  }
+}
+

@@ -12,3 +12,17 @@ trait DataSourceDetails extends js.Object {
   var resultSelector: java.lang.String
 }
 
+object DataSourceDetails {
+  @scala.inline
+  def apply(
+    dataSourceName: java.lang.String,
+    dataSourceUrl: java.lang.String,
+    parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    resultSelector: java.lang.String
+  ): DataSourceDetails = {
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName, dataSourceUrl = dataSourceUrl, parameters = parameters, resultSelector = resultSelector)
+  
+    __obj.asInstanceOf[DataSourceDetails]
+  }
+}
+

@@ -24,3 +24,12 @@ trait ChunkData extends js.Object {
   var totalParts: scala.Double
 }
 
+object ChunkData {
+  @scala.inline
+  def apply(endByte: scala.Double, partIndex: scala.Double, startByte: scala.Double, totalParts: scala.Double): ChunkData = {
+    val __obj = js.Dynamic.literal(endByte = endByte, partIndex = partIndex, startByte = startByte, totalParts = totalParts)
+  
+    __obj.asInstanceOf[ChunkData]
+  }
+}
+

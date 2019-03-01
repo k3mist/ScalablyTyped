@@ -11,3 +11,16 @@ trait ILauncherUIOptions extends js.Object {
   var selectionRect: winrtLib.WindowsNs.FoundationNs.Rect
 }
 
+object ILauncherUIOptions {
+  @scala.inline
+  def apply(
+    invocationPoint: winrtLib.WindowsNs.FoundationNs.Point,
+    preferredPlacement: winrtLib.WindowsNs.UINs.PopupsNs.Placement,
+    selectionRect: winrtLib.WindowsNs.FoundationNs.Rect
+  ): ILauncherUIOptions = {
+    val __obj = js.Dynamic.literal(invocationPoint = invocationPoint, preferredPlacement = preferredPlacement, selectionRect = selectionRect)
+  
+    __obj.asInstanceOf[ILauncherUIOptions]
+  }
+}
+

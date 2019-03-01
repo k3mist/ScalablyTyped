@@ -37,3 +37,19 @@ trait XKeyHandler
   def keyReleased(aEvent: KeyEvent): scala.Boolean
 }
 
+object XKeyHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    keyPressed: js.Function1[KeyEvent, scala.Boolean],
+    keyReleased: js.Function1[KeyEvent, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XKeyHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, keyPressed = keyPressed, keyReleased = keyReleased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XKeyHandler]
+  }
+}
+

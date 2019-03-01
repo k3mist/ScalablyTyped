@@ -12,3 +12,17 @@ trait IAccelerometerReading extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object IAccelerometerReading {
+  @scala.inline
+  def apply(
+    accelerationX: scala.Double,
+    accelerationY: scala.Double,
+    accelerationZ: scala.Double,
+    timestamp: stdLib.Date
+  ): IAccelerometerReading = {
+    val __obj = js.Dynamic.literal(accelerationX = accelerationX, accelerationY = accelerationY, accelerationZ = accelerationZ, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IAccelerometerReading]
+  }
+}
+

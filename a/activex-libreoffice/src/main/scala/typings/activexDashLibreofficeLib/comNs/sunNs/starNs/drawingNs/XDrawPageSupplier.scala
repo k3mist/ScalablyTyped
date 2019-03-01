@@ -20,3 +20,18 @@ trait XDrawPageSupplier
   def getDrawPage(): XDrawPage
 }
 
+object XDrawPageSupplier {
+  @scala.inline
+  def apply(
+    DrawPage: XDrawPage,
+    acquire: js.Function0[scala.Unit],
+    getDrawPage: js.Function0[XDrawPage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDrawPageSupplier = {
+    val __obj = js.Dynamic.literal(DrawPage = DrawPage, acquire = acquire, getDrawPage = getDrawPage, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDrawPageSupplier]
+  }
+}
+

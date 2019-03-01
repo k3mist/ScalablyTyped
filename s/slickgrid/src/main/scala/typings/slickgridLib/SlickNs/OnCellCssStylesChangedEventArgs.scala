@@ -10,3 +10,12 @@ trait OnCellCssStylesChangedEventArgs[T /* <: SlickData */] extends GridEventArg
   var key: java.lang.String
 }
 
+object OnCellCssStylesChangedEventArgs {
+  @scala.inline
+  def apply[T /* <: SlickData */](grid: Grid[T], hash: CellCssStylesHash, key: java.lang.String): OnCellCssStylesChangedEventArgs[T] = {
+    val __obj = js.Dynamic.literal(grid = grid, hash = hash, key = key)
+  
+    __obj.asInstanceOf[OnCellCssStylesChangedEventArgs[T]]
+  }
+}
+

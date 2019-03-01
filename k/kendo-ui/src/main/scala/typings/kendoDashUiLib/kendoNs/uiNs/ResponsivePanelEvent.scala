@@ -11,3 +11,16 @@ trait ResponsivePanelEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object ResponsivePanelEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ResponsivePanel
+  ): ResponsivePanelEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[ResponsivePanelEvent]
+  }
+}
+

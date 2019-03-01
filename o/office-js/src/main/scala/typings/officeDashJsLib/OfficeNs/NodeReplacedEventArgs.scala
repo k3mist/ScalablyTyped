@@ -43,3 +43,12 @@ trait NodeReplacedEventArgs extends js.Object {
   var oldNode: CustomXmlNode
 }
 
+object NodeReplacedEventArgs {
+  @scala.inline
+  def apply(isUndoRedo: scala.Boolean, newNode: CustomXmlNode, oldNode: CustomXmlNode): NodeReplacedEventArgs = {
+    val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo, newNode = newNode, oldNode = oldNode)
+  
+    __obj.asInstanceOf[NodeReplacedEventArgs]
+  }
+}
+

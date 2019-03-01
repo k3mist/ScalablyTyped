@@ -35,3 +35,28 @@ trait TaskAgent extends TaskAgentReference {
   var userCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object TaskAgent {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    assignedRequest: TaskAgentJobRequest,
+    authorization: TaskAgentAuthorization,
+    createdOn: stdLib.Date,
+    enabled: scala.Boolean,
+    id: scala.Double,
+    maxParallelism: scala.Double,
+    name: java.lang.String,
+    pendingUpdate: TaskAgentUpdate,
+    properties: js.Any,
+    status: TaskAgentStatus,
+    statusChangedOn: stdLib.Date,
+    systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    userCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    version: java.lang.String
+  ): TaskAgent = {
+    val __obj = js.Dynamic.literal(_links = _links, assignedRequest = assignedRequest, authorization = authorization, createdOn = createdOn, enabled = enabled, id = id, maxParallelism = maxParallelism, name = name, pendingUpdate = pendingUpdate, properties = properties, status = status, statusChangedOn = statusChangedOn, systemCapabilities = systemCapabilities, userCapabilities = userCapabilities, version = version)
+  
+    __obj.asInstanceOf[TaskAgent]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Exited extends js.Object {
   var exiting: js.Any
 }
 
+object Anon_Exited {
+  @scala.inline
+  def apply(exited: js.Any, exiting: js.Any): Anon_Exited = {
+    val __obj = js.Dynamic.literal(exited = exited, exiting = exiting)
+  
+    __obj.asInstanceOf[Anon_Exited]
+  }
+}
+

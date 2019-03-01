@@ -13,3 +13,18 @@ trait openssh_DirectStreamLocalChannelInfo extends ChannelOpenInfo {
   var window: scala.Double
 }
 
+object openssh_DirectStreamLocalChannelInfo {
+  @scala.inline
+  def apply(
+    data: SocketChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`direct-streamlocal@opensshDOTcom`,
+    window: scala.Double
+  ): openssh_DirectStreamLocalChannelInfo = {
+    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, `type` = `type`, window = window)
+  
+    __obj.asInstanceOf[openssh_DirectStreamLocalChannelInfo]
+  }
+}
+

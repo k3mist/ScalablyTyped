@@ -14,3 +14,24 @@ trait RendererInterface extends CommonInterface {
   var webviewTag: WebviewTag
 }
 
+object RendererInterface {
+  @scala.inline
+  def apply(
+    BrowserWindowProxy: org.scalablytyped.runtime.Instantiable0[BrowserWindowProxy],
+    clipboard: Clipboard,
+    crashReporter: CrashReporter,
+    desktopCapturer: DesktopCapturer,
+    ipcRenderer: IpcRenderer,
+    nativeImage: electronLib.Anon_Buffer,
+    remote: Remote,
+    screen: Screen,
+    shell: Shell,
+    webFrame: WebFrame,
+    webviewTag: WebviewTag
+  ): RendererInterface = {
+    val __obj = js.Dynamic.literal(BrowserWindowProxy = BrowserWindowProxy, clipboard = clipboard, crashReporter = crashReporter, desktopCapturer = desktopCapturer, ipcRenderer = ipcRenderer, nativeImage = nativeImage, remote = remote, screen = screen, shell = shell, webFrame = webFrame, webviewTag = webviewTag)
+  
+    __obj.asInstanceOf[RendererInterface]
+  }
+}
+

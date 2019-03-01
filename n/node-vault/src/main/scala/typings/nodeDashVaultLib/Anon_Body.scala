@@ -11,3 +11,16 @@ trait Anon_Body extends js.Object {
   var statusCode: scala.Double
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(
+    body: js.Any,
+    request: nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option,
+    statusCode: scala.Double
+  ): Anon_Body = {
+    val __obj = js.Dynamic.literal(body = body, request = request, statusCode = statusCode)
+  
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

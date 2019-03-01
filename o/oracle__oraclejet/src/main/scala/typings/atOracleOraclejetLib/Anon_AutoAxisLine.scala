@@ -30,3 +30,35 @@ trait Anon_AutoAxisLine extends js.Object {
   var viewportMin: scala.Double
 }
 
+object Anon_AutoAxisLine {
+  @scala.inline
+  def apply(
+    axisLine: Anon_AutoLineColor,
+    baselineScaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.min | atOracleOraclejetLib.atOracleOraclejetLibStrings.zero,
+    dataMax: scala.Double,
+    dataMin: scala.Double,
+    majorTick: Anon_AutoBaselineColor,
+    max: scala.Double,
+    maxSize: java.lang.String,
+    min: scala.Double,
+    minStep: scala.Double,
+    minorStep: scala.Double,
+    minorTick: Anon_AutoDashed,
+    position: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    referenceObjects: js.Array[Anon_AreaBack],
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on,
+    scale: atOracleOraclejetLib.atOracleOraclejetLibStrings.log | atOracleOraclejetLib.atOracleOraclejetLibStrings.linear,
+    size: java.lang.String,
+    step: scala.Double,
+    tickLabel: Anon_AutoBillionConverterInside,
+    title: java.lang.String,
+    titleStyle: js.Object,
+    viewportMax: scala.Double,
+    viewportMin: scala.Double
+  ): Anon_AutoAxisLine = {
+    val __obj = js.Dynamic.literal(axisLine = axisLine, baselineScaling = baselineScaling.asInstanceOf[js.Any], dataMax = dataMax, dataMin = dataMin, majorTick = majorTick, max = max, maxSize = maxSize, min = min, minStep = minStep, minorStep = minorStep, minorTick = minorTick, position = position.asInstanceOf[js.Any], referenceObjects = referenceObjects, rendered = rendered.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size, step = step, tickLabel = tickLabel, title = title, titleStyle = titleStyle, viewportMax = viewportMax, viewportMin = viewportMin)
+  
+    __obj.asInstanceOf[Anon_AutoAxisLine]
+  }
+}
+

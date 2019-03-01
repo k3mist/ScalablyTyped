@@ -35,3 +35,19 @@ trait PlaceAutocompleteResult extends js.Object {
   var types: js.Array[AddressType]
 }
 
+object PlaceAutocompleteResult {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    matched_substrings: js.Array[PredictionSubstring],
+    place_id: java.lang.String,
+    structured_formatting: StructuredFormatting,
+    terms: js.Array[PredictionTerm],
+    types: js.Array[AddressType]
+  ): PlaceAutocompleteResult = {
+    val __obj = js.Dynamic.literal(description = description, matched_substrings = matched_substrings, place_id = place_id, structured_formatting = structured_formatting, terms = terms, types = types)
+  
+    __obj.asInstanceOf[PlaceAutocompleteResult]
+  }
+}
+

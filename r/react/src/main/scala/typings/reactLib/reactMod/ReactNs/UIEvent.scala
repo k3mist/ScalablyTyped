@@ -11,3 +11,30 @@ trait UIEvent[T]
   var view: AbstractView
 }
 
+object UIEvent {
+  @scala.inline
+  def apply[T](
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    currentTarget: reactLib.EventTarget with T,
+    defaultPrevented: scala.Boolean,
+    detail: scala.Double,
+    eventPhase: scala.Double,
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    isTrusted: scala.Boolean,
+    nativeEvent: reactLib.NativeUIEvent,
+    persist: js.Function0[scala.Unit],
+    preventDefault: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: reactLib.EventTarget,
+    timeStamp: scala.Double,
+    `type`: java.lang.String,
+    view: AbstractView
+  ): UIEvent[T] = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, detail = detail, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, `type` = `type`, view = view)
+  
+    __obj.asInstanceOf[UIEvent[T]]
+  }
+}
+

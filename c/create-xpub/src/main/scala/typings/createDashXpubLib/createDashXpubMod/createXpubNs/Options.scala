@@ -29,3 +29,18 @@ trait Options extends js.Object {
   var publicKey: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    chainCode: java.lang.String,
+    childNumber: scala.Double,
+    depth: scala.Double,
+    publicKey: java.lang.String,
+    networkVersion: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(chainCode = chainCode, childNumber = childNumber, depth = depth, publicKey = publicKey)
+    if (networkVersion != null) __obj.updateDynamic("networkVersion")(networkVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

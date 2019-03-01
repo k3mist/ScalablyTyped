@@ -40,3 +40,21 @@ trait TfvcChangesetSearchCriteria extends js.Object {
   var toId: scala.Double
 }
 
+object TfvcChangesetSearchCriteria {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    followRenames: scala.Boolean,
+    fromDate: java.lang.String,
+    fromId: scala.Double,
+    includeLinks: scala.Boolean,
+    itemPath: java.lang.String,
+    toDate: java.lang.String,
+    toId: scala.Double
+  ): TfvcChangesetSearchCriteria = {
+    val __obj = js.Dynamic.literal(author = author, followRenames = followRenames, fromDate = fromDate, fromId = fromId, includeLinks = includeLinks, itemPath = itemPath, toDate = toDate, toId = toId)
+  
+    __obj.asInstanceOf[TfvcChangesetSearchCriteria]
+  }
+}
+

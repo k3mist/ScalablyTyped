@@ -12,3 +12,17 @@ trait Anon_Loaded extends js.Object {
   var playedSeconds: scala.Double
 }
 
+object Anon_Loaded {
+  @scala.inline
+  def apply(
+    loaded: scala.Double,
+    loadedSeconds: scala.Double,
+    played: scala.Double,
+    playedSeconds: scala.Double
+  ): Anon_Loaded = {
+    val __obj = js.Dynamic.literal(loaded = loaded, loadedSeconds = loadedSeconds, played = played, playedSeconds = playedSeconds)
+  
+    __obj.asInstanceOf[Anon_Loaded]
+  }
+}
+

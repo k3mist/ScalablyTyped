@@ -15,3 +15,20 @@ trait BasicReq extends js.Object {
   val userid: java.lang.String
 }
 
+object BasicReq {
+  @scala.inline
+  def apply(
+    isLogging: scala.Boolean,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    userEmail: java.lang.String,
+    userToken: java.lang.String,
+    userid: java.lang.String
+  ): BasicReq = {
+    val __obj = js.Dynamic.literal(isLogging = isLogging, params = params, systemKey = systemKey, systemSecret = systemSecret, userEmail = userEmail, userToken = userToken, userid = userid)
+  
+    __obj.asInstanceOf[BasicReq]
+  }
+}
+

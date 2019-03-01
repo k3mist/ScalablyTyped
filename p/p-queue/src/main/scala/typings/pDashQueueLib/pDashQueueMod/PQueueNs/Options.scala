@@ -38,3 +38,24 @@ trait Options[TEnqueueOptions /* <: QueueAddOptions */] extends js.Object {
   var queueClass: js.UndefOr[QueueClassConstructor[TEnqueueOptions]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[TEnqueueOptions /* <: QueueAddOptions */](
+    autoStart: js.UndefOr[scala.Boolean] = js.undefined,
+    carryoverConcurrencyCount: js.UndefOr[scala.Boolean] = js.undefined,
+    concurrency: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    intervalCap: scala.Int | scala.Double = null,
+    queueClass: QueueClassConstructor[TEnqueueOptions] = null
+  ): Options[TEnqueueOptions] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (!js.isUndefined(carryoverConcurrencyCount)) __obj.updateDynamic("carryoverConcurrencyCount")(carryoverConcurrencyCount)
+    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (intervalCap != null) __obj.updateDynamic("intervalCap")(intervalCap.asInstanceOf[js.Any])
+    if (queueClass != null) __obj.updateDynamic("queueClass")(queueClass)
+    __obj.asInstanceOf[Options[TEnqueueOptions]]
+  }
+}
+

@@ -25,3 +25,18 @@ trait OnSelectProps extends js.Object {
   var value: js.Object | java.lang.String | scala.Double | scala.Boolean | scala.Null
 }
 
+object OnSelectProps {
+  @scala.inline
+  def apply(
+    namespace: js.Array[java.lang.String | scala.Null],
+    `type`: java.lang.String,
+    name: java.lang.String = null,
+    value: js.Object | java.lang.String | scala.Double | scala.Boolean = null
+  ): OnSelectProps = {
+    val __obj = js.Dynamic.literal(namespace = namespace, `type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnSelectProps]
+  }
+}
+

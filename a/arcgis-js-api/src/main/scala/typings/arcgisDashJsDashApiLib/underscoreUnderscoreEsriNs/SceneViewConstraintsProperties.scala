@@ -33,3 +33,23 @@ trait SceneViewConstraintsProperties
   var tilt: js.UndefOr[SceneViewConstraintsTiltProperties] = js.undefined
 }
 
+object SceneViewConstraintsProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    altitude: SceneViewConstraintsAltitudeProperties = null,
+    clipDistance: SceneViewConstraintsClipDistanceProperties = null,
+    collision: SceneViewConstraintsCollision = null,
+    tilt: SceneViewConstraintsTiltProperties = null
+  ): SceneViewConstraintsProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude)
+    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance)
+    if (collision != null) __obj.updateDynamic("collision")(collision)
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt)
+    __obj.asInstanceOf[SceneViewConstraintsProperties]
+  }
+}
+

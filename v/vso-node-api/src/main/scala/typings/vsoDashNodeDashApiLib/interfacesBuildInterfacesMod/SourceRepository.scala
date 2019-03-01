@@ -33,3 +33,20 @@ trait SourceRepository extends js.Object {
   var url: java.lang.String
 }
 
+object SourceRepository {
+  @scala.inline
+  def apply(
+    defaultBranch: java.lang.String,
+    fullName: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    sourceProviderName: java.lang.String,
+    url: java.lang.String
+  ): SourceRepository = {
+    val __obj = js.Dynamic.literal(defaultBranch = defaultBranch, fullName = fullName, id = id, name = name, properties = properties, sourceProviderName = sourceProviderName, url = url)
+  
+    __obj.asInstanceOf[SourceRepository]
+  }
+}
+

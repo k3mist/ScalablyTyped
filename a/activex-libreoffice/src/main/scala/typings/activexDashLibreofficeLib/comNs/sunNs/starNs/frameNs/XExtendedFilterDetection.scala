@@ -21,3 +21,21 @@ trait XExtendedFilterDetection
   ): java.lang.String
 }
 
+object XExtendedFilterDetection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    detect: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      java.lang.String
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExtendedFilterDetection = {
+    val __obj = js.Dynamic.literal(acquire = acquire, detect = detect, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XExtendedFilterDetection]
+  }
+}
+

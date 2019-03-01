@@ -20,3 +20,19 @@ trait IBooleanFieldExpression extends js.Object {
   def NotEqualTo(value: scala.Boolean): IExpression
 }
 
+object IBooleanFieldExpression {
+  @scala.inline
+  def apply(
+    EqualTo: js.Function1[scala.Boolean, IExpression],
+    IsFalse: js.Function0[IExpression],
+    IsNotNull: js.Function0[IExpression],
+    IsNull: js.Function0[IExpression],
+    IsTrue: js.Function0[IExpression],
+    NotEqualTo: js.Function1[scala.Boolean, IExpression]
+  ): IBooleanFieldExpression = {
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, IsFalse = IsFalse, IsNotNull = IsNotNull, IsNull = IsNull, IsTrue = IsTrue, NotEqualTo = NotEqualTo)
+  
+    __obj.asInstanceOf[IBooleanFieldExpression]
+  }
+}
+

@@ -29,3 +29,49 @@ trait NodePoolsResource extends js.Object {
   def update(request: gapiDotClientDotContainerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object NodePoolsResource {
+  @scala.inline
+  def apply(
+    autoscaling: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    create: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[NodePool]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListNodePoolsResponse]
+    ],
+    rollback: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setManagement: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setSize: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): NodePoolsResource = {
+    val __obj = js.Dynamic.literal(autoscaling = autoscaling, create = create, delete = delete, get = get, list = list, rollback = rollback, setManagement = setManagement, setSize = setSize, update = update)
+  
+    __obj.asInstanceOf[NodePoolsResource]
+  }
+}
+

@@ -20,3 +20,12 @@ trait HeaderNameOptions extends js.Object {
   var total: java.lang.String
 }
 
+object HeaderNameOptions {
+  @scala.inline
+  def apply(remaining: java.lang.String, reset: java.lang.String, total: java.lang.String): HeaderNameOptions = {
+    val __obj = js.Dynamic.literal(remaining = remaining, reset = reset, total = total)
+  
+    __obj.asInstanceOf[HeaderNameOptions]
+  }
+}
+

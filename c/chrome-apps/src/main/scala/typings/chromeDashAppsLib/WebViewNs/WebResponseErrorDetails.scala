@@ -10,3 +10,30 @@ trait WebResponseErrorDetails extends WebResponseCacheDetails {
   var error: java.lang.String
 }
 
+object WebResponseErrorDetails {
+  @scala.inline
+  def apply(
+    error: java.lang.String,
+    frameId: chromeDashAppsLib.chromeNs.integer,
+    fromCache: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: chromeDashAppsLib.chromeNs.integer,
+    requestId: java.lang.String,
+    statusCode: chromeDashAppsLib.chromeNs.integer,
+    statusLine: java.lang.String,
+    tabId: chromeDashAppsLib.chromeNs.integer,
+    timeStamp: chromeDashAppsLib.chromeNs.double,
+    `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null,
+    ip: java.lang.String = null,
+    responseHeaders: js.Array[HttpHeader] = null
+  ): WebResponseErrorDetails = {
+    val __obj = js.Dynamic.literal(error = error, frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[WebResponseErrorDetails]
+  }
+}
+

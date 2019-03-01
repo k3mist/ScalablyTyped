@@ -43,3 +43,19 @@ trait XCellRange
   def getCellRangeByPosition(nLeft: scala.Double, nTop: scala.Double, nRight: scala.Double, nBottom: scala.Double): XCellRange
 }
 
+object XCellRange {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCellByPosition: js.Function2[scala.Double, scala.Double, XCell],
+    getCellRangeByName: js.Function1[java.lang.String, XCellRange],
+    getCellRangeByPosition: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XCellRange],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellRange = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCellRange]
+  }
+}
+

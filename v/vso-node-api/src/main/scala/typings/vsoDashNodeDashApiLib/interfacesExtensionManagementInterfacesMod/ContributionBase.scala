@@ -20,3 +20,12 @@ trait ContributionBase extends js.Object {
   var visibleTo: js.Array[java.lang.String]
 }
 
+object ContributionBase {
+  @scala.inline
+  def apply(description: java.lang.String, id: java.lang.String, visibleTo: js.Array[java.lang.String]): ContributionBase = {
+    val __obj = js.Dynamic.literal(description = description, id = id, visibleTo = visibleTo)
+  
+    __obj.asInstanceOf[ContributionBase]
+  }
+}
+

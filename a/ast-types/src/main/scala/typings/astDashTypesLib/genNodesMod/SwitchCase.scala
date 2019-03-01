@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.SwitchCase
 }
 
+object SwitchCase {
+  @scala.inline
+  def apply(
+    consequent: js.Array[astDashTypesLib.genKindsMod.StatementKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.SwitchCase,
+    test: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): SwitchCase = {
+    val __obj = js.Dynamic.literal(consequent = consequent, `type` = `type`)
+    if (test != null) __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[SwitchCase]
+  }
+}
+

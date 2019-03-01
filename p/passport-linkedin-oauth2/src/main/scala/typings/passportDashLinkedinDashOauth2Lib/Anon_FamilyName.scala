@@ -10,3 +10,12 @@ trait Anon_FamilyName extends js.Object {
   var givenName: java.lang.String
 }
 
+object Anon_FamilyName {
+  @scala.inline
+  def apply(familyName: java.lang.String, givenName: java.lang.String): Anon_FamilyName = {
+    val __obj = js.Dynamic.literal(familyName = familyName, givenName = givenName)
+  
+    __obj.asInstanceOf[Anon_FamilyName]
+  }
+}
+

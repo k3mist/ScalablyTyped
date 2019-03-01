@@ -17,3 +17,12 @@ trait List extends js.Object {
   var nesting_level: stdLib.Map[scala.Double, NestingLevel]
 }
 
+object List {
+  @scala.inline
+  def apply(list_id: java.lang.String, nesting_level: stdLib.Map[scala.Double, NestingLevel]): List = {
+    val __obj = js.Dynamic.literal(list_id = list_id, nesting_level = nesting_level)
+  
+    __obj.asInstanceOf[List]
+  }
+}
+

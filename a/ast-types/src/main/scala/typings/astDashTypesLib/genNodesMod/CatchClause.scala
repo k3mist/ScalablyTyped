@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.CatchClause
 }
 
+object CatchClause {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.CatchClause,
+    guard: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    param: astDashTypesLib.genKindsMod.PatternKind = null
+  ): CatchClause = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+    if (guard != null) __obj.updateDynamic("guard")(guard)
+    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.asInstanceOf[CatchClause]
+  }
+}
+

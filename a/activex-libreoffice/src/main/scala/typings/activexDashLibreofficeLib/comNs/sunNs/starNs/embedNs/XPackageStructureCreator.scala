@@ -20,3 +20,21 @@ trait XPackageStructureCreator
   ): scala.Unit
 }
 
+object XPackageStructureCreator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertToPackage: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPackageStructureCreator = {
+    val __obj = js.Dynamic.literal(acquire = acquire, convertToPackage = convertToPackage, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPackageStructureCreator]
+  }
+}
+

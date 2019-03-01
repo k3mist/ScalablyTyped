@@ -10,3 +10,12 @@ trait Anon_ChLine extends js.Object {
   var line: scala.Double
 }
 
+object Anon_ChLine {
+  @scala.inline
+  def apply(ch: scala.Double, line: scala.Double): Anon_ChLine = {
+    val __obj = js.Dynamic.literal(ch = ch, line = line)
+  
+    __obj.asInstanceOf[Anon_ChLine]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_DataTypeUrl extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_DataTypeUrl {
+  @scala.inline
+  def apply(data: js.Any, `type`: java.lang.String, url: java.lang.String): Anon_DataTypeUrl = {
+    val __obj = js.Dynamic.literal(data = data, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[Anon_DataTypeUrl]
+  }
+}
+

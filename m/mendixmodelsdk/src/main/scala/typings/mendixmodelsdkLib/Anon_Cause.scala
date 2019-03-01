@@ -13,3 +13,18 @@ trait Anon_Cause
   var `type`: mendixmodelsdkLib.mendixmodelsdkLibStrings.fail
 }
 
+object Anon_Cause {
+  @scala.inline
+  def apply(
+    state: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState,
+    `type`: mendixmodelsdkLib.mendixmodelsdkLibStrings.fail,
+    cause: java.lang.String = null,
+    message: java.lang.String = null
+  ): Anon_Cause = {
+    val __obj = js.Dynamic.literal(state = state, `type` = `type`)
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Anon_Cause]
+  }
+}
+

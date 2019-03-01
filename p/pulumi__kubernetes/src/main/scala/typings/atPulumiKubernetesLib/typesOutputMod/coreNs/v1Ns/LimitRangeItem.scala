@@ -38,3 +38,19 @@ trait LimitRangeItem extends js.Object {
   val `type`: java.lang.String
 }
 
+object LimitRangeItem {
+  @scala.inline
+  def apply(
+    default: js.Object,
+    defaultRequest: js.Object,
+    max: js.Object,
+    maxLimitRequestRatio: js.Object,
+    min: js.Object,
+    `type`: java.lang.String
+  ): LimitRangeItem = {
+    val __obj = js.Dynamic.literal(default = default, defaultRequest = defaultRequest, max = max, maxLimitRequestRatio = maxLimitRequestRatio, min = min, `type` = `type`)
+  
+    __obj.asInstanceOf[LimitRangeItem]
+  }
+}
+

@@ -16,3 +16,15 @@ trait LogStreamArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object LogStreamArgs {
+  @scala.inline
+  def apply(
+    logGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): LogStreamArgs = {
+    val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogStreamArgs]
+  }
+}
+

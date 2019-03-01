@@ -40,3 +40,21 @@ trait Anon_Braces extends js.Object {
   var negated: scala.Boolean
 }
 
+object Anon_Braces {
+  @scala.inline
+  def apply(
+    braces: scala.Boolean,
+    brackets: scala.Boolean,
+    dotdir: scala.Boolean,
+    dotfile: scala.Boolean,
+    extglob: scala.Boolean,
+    glob: scala.Boolean,
+    globstar: scala.Boolean,
+    negated: scala.Boolean
+  ): Anon_Braces = {
+    val __obj = js.Dynamic.literal(braces = braces, brackets = brackets, dotdir = dotdir, dotfile = dotfile, extglob = extglob, glob = glob, globstar = globstar, negated = negated)
+  
+    __obj.asInstanceOf[Anon_Braces]
+  }
+}
+

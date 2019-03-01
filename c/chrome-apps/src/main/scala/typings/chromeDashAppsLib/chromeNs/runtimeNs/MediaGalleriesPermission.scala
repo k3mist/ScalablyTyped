@@ -11,3 +11,16 @@ trait MediaGalleriesPermission extends Permission {
   ]
 }
 
+object MediaGalleriesPermission {
+  @scala.inline
+  def apply(
+    mediaGalleries: js.Array[
+      chromeDashAppsLib.chromeDashAppsLibStrings.read | chromeDashAppsLib.chromeDashAppsLibStrings.allAutoDetected
+    ]
+  ): MediaGalleriesPermission = {
+    val __obj = js.Dynamic.literal(mediaGalleries = mediaGalleries)
+  
+    __obj.asInstanceOf[MediaGalleriesPermission]
+  }
+}
+

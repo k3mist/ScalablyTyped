@@ -24,3 +24,18 @@ trait UserProfileArgs extends js.Object {
   val userArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UserProfileArgs {
+  @scala.inline
+  def apply(
+    sshUsername: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    userArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    allowSelfManagement: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    sshPublicKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): UserProfileArgs = {
+    val __obj = js.Dynamic.literal(sshUsername = sshUsername.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
+    if (allowSelfManagement != null) __obj.updateDynamic("allowSelfManagement")(allowSelfManagement.asInstanceOf[js.Any])
+    if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserProfileArgs]
+  }
+}
+

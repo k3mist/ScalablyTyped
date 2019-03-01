@@ -157,3 +157,92 @@ trait XIntegerBitmapColorSpace extends XColorSpace {
   def getEndianness(): scala.Double
 }
 
+object XIntegerBitmapColorSpace {
+  @scala.inline
+  def apply(
+    BitsPerPixel: scala.Double,
+    ComponentBitCounts: activexDashInteropLib.SafeArray[scala.Double],
+    ComponentTags: activexDashInteropLib.SafeArray[scala.Double],
+    Endianness: scala.Double,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    RenderingIntent: scala.Double,
+    Type: scala.Double,
+    convertColorSpace: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      XColorSpace, 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromIntegerColorSpace: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XColorSpace, 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertIntegerFromARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    convertIntegerFromPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    convertIntegerFromRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    convertIntegerToARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertIntegerToPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertIntegerToRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[RGBColor]
+    ],
+    convertToARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToIntegerColorSpace: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XIntegerBitmapColorSpace, 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    convertToPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[RGBColor]
+    ],
+    getBitsPerPixel: js.Function0[scala.Double],
+    getComponentBitCounts: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getComponentTags: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getEndianness: js.Function0[scala.Double],
+    getProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRenderingIntent: js.Function0[scala.Double],
+    getType: js.Function0[scala.Double]
+  ): XIntegerBitmapColorSpace = {
+    val __obj = js.Dynamic.literal(BitsPerPixel = BitsPerPixel, ComponentBitCounts = ComponentBitCounts, ComponentTags = ComponentTags, Endianness = Endianness, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = convertColorSpace, convertFromARGB = convertFromARGB, convertFromIntegerColorSpace = convertFromIntegerColorSpace, convertFromPARGB = convertFromPARGB, convertFromRGB = convertFromRGB, convertIntegerFromARGB = convertIntegerFromARGB, convertIntegerFromPARGB = convertIntegerFromPARGB, convertIntegerFromRGB = convertIntegerFromRGB, convertIntegerToARGB = convertIntegerToARGB, convertIntegerToPARGB = convertIntegerToPARGB, convertIntegerToRGB = convertIntegerToRGB, convertToARGB = convertToARGB, convertToIntegerColorSpace = convertToIntegerColorSpace, convertToPARGB = convertToPARGB, convertToRGB = convertToRGB, getBitsPerPixel = getBitsPerPixel, getComponentBitCounts = getComponentBitCounts, getComponentTags = getComponentTags, getEndianness = getEndianness, getProperties = getProperties, getRenderingIntent = getRenderingIntent, getType = getType)
+  
+    __obj.asInstanceOf[XIntegerBitmapColorSpace]
+  }
+}
+

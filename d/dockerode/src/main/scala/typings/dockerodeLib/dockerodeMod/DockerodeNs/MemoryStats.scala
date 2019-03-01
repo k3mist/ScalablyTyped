@@ -13,3 +13,18 @@ trait MemoryStats extends js.Object {
   var usage: scala.Double
 }
 
+object MemoryStats {
+  @scala.inline
+  def apply(
+    failcnt: scala.Double,
+    limit: scala.Double,
+    max_usage: scala.Double,
+    stats: dockerodeLib.Anon_Activeanon,
+    usage: scala.Double
+  ): MemoryStats = {
+    val __obj = js.Dynamic.literal(failcnt = failcnt, limit = limit, max_usage = max_usage, stats = stats, usage = usage)
+  
+    __obj.asInstanceOf[MemoryStats]
+  }
+}
+

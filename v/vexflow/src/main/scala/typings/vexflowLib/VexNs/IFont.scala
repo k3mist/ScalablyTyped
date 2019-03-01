@@ -26,3 +26,25 @@ trait IFont extends js.Object {
   var underlineThickness: scala.Double
 }
 
+object IFont {
+  @scala.inline
+  def apply(
+    ascender: scala.Double,
+    boundingBox: vexflowLib.Anon_XMax,
+    cssFontStyle: java.lang.String,
+    cssFontWeight: java.lang.String,
+    descender: scala.Double,
+    familyName: java.lang.String,
+    glyphs: js.Array[vexflowLib.Anon_Ha],
+    lineHeight: scala.Double,
+    resolution: scala.Double,
+    underlinePosition: scala.Double,
+    underlineThickness: scala.Double,
+    original_font_information: vexflowLib.Anon_Copyright = null
+  ): IFont = {
+    val __obj = js.Dynamic.literal(ascender = ascender, boundingBox = boundingBox, cssFontStyle = cssFontStyle, cssFontWeight = cssFontWeight, descender = descender, familyName = familyName, glyphs = glyphs, lineHeight = lineHeight, resolution = resolution, underlinePosition = underlinePosition, underlineThickness = underlineThickness)
+    if (original_font_information != null) __obj.updateDynamic("original_font_information")(original_font_information)
+    __obj.asInstanceOf[IFont]
+  }
+}
+

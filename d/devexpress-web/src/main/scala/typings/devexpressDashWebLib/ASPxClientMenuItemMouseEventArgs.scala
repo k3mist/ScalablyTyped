@@ -16,3 +16,12 @@ trait ASPxClientMenuItemMouseEventArgs extends ASPxClientMenuItemEventArgs {
   var htmlElement: js.Object
 }
 
+object ASPxClientMenuItemMouseEventArgs {
+  @scala.inline
+  def apply(htmlElement: js.Object, item: ASPxClientMenuItem): ASPxClientMenuItemMouseEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, item = item)
+  
+    __obj.asInstanceOf[ASPxClientMenuItemMouseEventArgs]
+  }
+}
+

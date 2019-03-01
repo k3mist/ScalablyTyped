@@ -16,3 +16,15 @@ trait TemplateAst extends js.Object {
   def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any
 }
 
+object TemplateAst {
+  @scala.inline
+  def apply(
+    sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    visit: js.Function2[TemplateAstVisitor, js.Any, js.Any]
+  ): TemplateAst = {
+    val __obj = js.Dynamic.literal(sourceSpan = sourceSpan, visit = visit)
+  
+    __obj.asInstanceOf[TemplateAst]
+  }
+}
+

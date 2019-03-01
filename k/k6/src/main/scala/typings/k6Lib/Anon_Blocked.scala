@@ -16,3 +16,21 @@ trait Anon_Blocked extends js.Object {
   var waiting: scala.Double
 }
 
+object Anon_Blocked {
+  @scala.inline
+  def apply(
+    blocked: scala.Double,
+    connecting: scala.Double,
+    duration: scala.Double,
+    looking_up: scala.Double,
+    receiving: scala.Double,
+    sending: scala.Double,
+    tls_handshaking: scala.Double,
+    waiting: scala.Double
+  ): Anon_Blocked = {
+    val __obj = js.Dynamic.literal(blocked = blocked, connecting = connecting, duration = duration, looking_up = looking_up, receiving = receiving, sending = sending, tls_handshaking = tls_handshaking, waiting = waiting)
+  
+    __obj.asInstanceOf[Anon_Blocked]
+  }
+}
+

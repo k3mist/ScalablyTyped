@@ -13,3 +13,18 @@ trait ParsedQuery extends js.Object {
   var parsed: scala.Boolean
 }
 
+object ParsedQuery {
+  @scala.inline
+  def apply(
+    ast: js.Array[QueryAstNode],
+    bindVars: js.Array[java.lang.String],
+    collections: js.Array[java.lang.String],
+    parameters: js.Array[java.lang.String],
+    parsed: scala.Boolean
+  ): ParsedQuery = {
+    val __obj = js.Dynamic.literal(ast = ast, bindVars = bindVars, collections = collections, parameters = parameters, parsed = parsed)
+  
+    __obj.asInstanceOf[ParsedQuery]
+  }
+}
+

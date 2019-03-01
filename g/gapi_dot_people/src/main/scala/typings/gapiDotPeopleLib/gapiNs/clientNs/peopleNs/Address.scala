@@ -20,3 +20,25 @@ trait Address extends js.Object {
   var `type`: java.lang.String
 }
 
+object Address {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    country: java.lang.String,
+    countryCode: java.lang.String,
+    extendedAddress: java.lang.String,
+    formattedType: java.lang.String,
+    formattedValue: java.lang.String,
+    metadata: FieldMetadata,
+    poBox: java.lang.String,
+    postalCode: java.lang.String,
+    region: java.lang.String,
+    streetAddress: java.lang.String,
+    `type`: java.lang.String
+  ): Address = {
+    val __obj = js.Dynamic.literal(city = city, country = country, countryCode = countryCode, extendedAddress = extendedAddress, formattedType = formattedType, formattedValue = formattedValue, metadata = metadata, poBox = poBox, postalCode = postalCode, region = region, streetAddress = streetAddress, `type` = `type`)
+  
+    __obj.asInstanceOf[Address]
+  }
+}
+

@@ -14,3 +14,19 @@ trait Anon_Exceptions extends js.Object {
   var ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
 }
 
+object Anon_Exceptions {
+  @scala.inline
+  def apply(
+    exceptions: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    handledAt: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    measurements: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    properties: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    severityLevel: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
+  ): Anon_Exceptions = {
+    val __obj = js.Dynamic.literal(exceptions = exceptions, handledAt = handledAt, measurements = measurements, properties = properties, severityLevel = severityLevel, ver = ver)
+  
+    __obj.asInstanceOf[Anon_Exceptions]
+  }
+}
+

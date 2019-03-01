@@ -10,3 +10,12 @@ trait SuccessResult extends RecordResult {
   var success: jsforceLib.jsforceLibNumbers.`true`
 }
 
+object SuccessResult {
+  @scala.inline
+  def apply(id: jsforceLib.salesforceDashIdMod.SalesforceId, success: jsforceLib.jsforceLibNumbers.`true`): SuccessResult = {
+    val __obj = js.Dynamic.literal(id = id, success = success)
+  
+    __obj.asInstanceOf[SuccessResult]
+  }
+}
+

@@ -32,3 +32,18 @@ trait LightingProperties extends js.Object {
   var displayUTCOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LightingProperties {
+  @scala.inline
+  def apply(
+    date: DateProperties = null,
+    directShadowsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayUTCOffset: scala.Int | scala.Double = null
+  ): LightingProperties = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled)
+    if (displayUTCOffset != null) __obj.updateDynamic("displayUTCOffset")(displayUTCOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LightingProperties]
+  }
+}
+

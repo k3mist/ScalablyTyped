@@ -13,3 +13,13 @@ trait InputValueDefinition extends Node {
   var `type`: Type
 }
 
+object InputValueDefinition {
+  @scala.inline
+  def apply(kind: java.lang.String, name: Name, `type`: Type, defaultValue: Value = null, loc: Location = null): InputValueDefinition = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, `type` = `type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[InputValueDefinition]
+  }
+}
+

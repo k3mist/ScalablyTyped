@@ -11,3 +11,16 @@ trait DropdownToggleRenderProps extends js.Object {
   def toggle(show: scala.Boolean): scala.Unit
 }
 
+object DropdownToggleRenderProps {
+  @scala.inline
+  def apply(
+    props: reactDashOverlaysLib.Anon_Ariaexpanded,
+    show: scala.Boolean,
+    toggle: js.Function1[scala.Boolean, scala.Unit]
+  ): DropdownToggleRenderProps = {
+    val __obj = js.Dynamic.literal(props = props, show = show, toggle = toggle)
+  
+    __obj.asInstanceOf[DropdownToggleRenderProps]
+  }
+}
+

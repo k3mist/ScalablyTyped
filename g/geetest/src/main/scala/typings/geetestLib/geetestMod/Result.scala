@@ -11,3 +11,12 @@ trait Result extends js.Object {
   var validate: java.lang.String
 }
 
+object Result {
+  @scala.inline
+  def apply(challenge: java.lang.String, seccode: java.lang.String, validate: java.lang.String): Result = {
+    val __obj = js.Dynamic.literal(challenge = challenge, seccode = seccode, validate = validate)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

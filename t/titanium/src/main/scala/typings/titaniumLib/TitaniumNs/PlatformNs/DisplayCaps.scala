@@ -71,3 +71,41 @@ trait DisplayCaps
   def getYdpi(): scala.Double
 }
 
+object DisplayCaps {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    density: java.lang.String,
+    dpi: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDensity: js.Function0[java.lang.String],
+    getDpi: js.Function0[scala.Double],
+    getLogicalDensityFactor: js.Function0[scala.Double],
+    getPlatformHeight: js.Function0[scala.Double],
+    getPlatformWidth: js.Function0[scala.Double],
+    getXdpi: js.Function0[scala.Double],
+    getYdpi: js.Function0[scala.Double],
+    logicalDensityFactor: scala.Double,
+    platformHeight: scala.Double,
+    platformWidth: scala.Double,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    xdpi: scala.Double,
+    ydpi: scala.Double,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): DisplayCaps = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, density = density, dpi = dpi, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDensity = getDensity, getDpi = getDpi, getLogicalDensityFactor = getLogicalDensityFactor, getPlatformHeight = getPlatformHeight, getPlatformWidth = getPlatformWidth, getXdpi = getXdpi, getYdpi = getYdpi, logicalDensityFactor = logicalDensityFactor, platformHeight = platformHeight, platformWidth = platformWidth, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent, xdpi = xdpi, ydpi = ydpi)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[DisplayCaps]
+  }
+}
+

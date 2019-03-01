@@ -20,3 +20,17 @@ trait XToolbarControllerListener
   def functionSelected(aToolbarRes: java.lang.String, aCommand: java.lang.String): scala.Unit
 }
 
+object XToolbarControllerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    functionSelected: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XToolbarControllerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, functionSelected = functionSelected, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XToolbarControllerListener]
+  }
+}
+

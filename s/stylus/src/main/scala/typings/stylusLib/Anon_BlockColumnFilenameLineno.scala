@@ -13,3 +13,18 @@ trait Anon_BlockColumnFilenameLineno extends js.Object {
   var lineno: scala.Double
 }
 
+object Anon_BlockColumnFilenameLineno {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    block: stylusLib.stylusMod.StylusNs.NodesNs.Block,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double
+  ): Anon_BlockColumnFilenameLineno = {
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno)
+  
+    __obj.asInstanceOf[Anon_BlockColumnFilenameLineno]
+  }
+}
+

@@ -19,3 +19,19 @@ trait XMenuProxyListener
   def menuItemDeleted(ID: scala.Double): scala.Unit
 }
 
+object XMenuProxyListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    menuChangedMultiple: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuMultipleChange], scala.Unit],
+    menuChangedSingle: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[MenuSingleChange], scala.Unit],
+    menuItemDeleted: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMenuProxyListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, menuChangedMultiple = menuChangedMultiple, menuChangedSingle = menuChangedSingle, menuItemDeleted = menuItemDeleted, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMenuProxyListener]
+  }
+}
+

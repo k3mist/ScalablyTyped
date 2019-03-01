@@ -12,3 +12,17 @@ trait Anon_Pixel extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Pixel {
+  @scala.inline
+  def apply(
+    pixel: baidumapDashWebDashSdkLib.BMapNs.Pixel,
+    point: baidumapDashWebDashSdkLib.BMapNs.Point,
+    target: js.Any,
+    `type`: java.lang.String
+  ): Anon_Pixel = {
+    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Pixel]
+  }
+}
+

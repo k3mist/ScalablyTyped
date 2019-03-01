@@ -10,3 +10,12 @@ trait CoercedValue extends js.Object {
   val value: js.Any
 }
 
+object CoercedValue {
+  @scala.inline
+  def apply(value: js.Any, errors: js.Array[graphqlLib.errorGraphQLErrorMod.GraphQLError] = null): CoercedValue = {
+    val __obj = js.Dynamic.literal(value = value)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    __obj.asInstanceOf[CoercedValue]
+  }
+}
+

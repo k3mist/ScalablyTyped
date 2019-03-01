@@ -33,3 +33,18 @@ trait StepManeuver extends js.Object {
   var `type`: StepManeuverTypes
 }
 
+object StepManeuver {
+  @scala.inline
+  def apply(
+    bearing_after: scala.Double,
+    bearing_before: scala.Double,
+    location: Coordinate,
+    modifier: Indication,
+    `type`: StepManeuverTypes
+  ): StepManeuver = {
+    val __obj = js.Dynamic.literal(bearing_after = bearing_after, bearing_before = bearing_before, location = location, modifier = modifier, `type` = `type`)
+  
+    __obj.asInstanceOf[StepManeuver]
+  }
+}
+

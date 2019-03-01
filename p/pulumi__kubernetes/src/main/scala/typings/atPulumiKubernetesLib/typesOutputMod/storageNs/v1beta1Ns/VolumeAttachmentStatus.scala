@@ -32,3 +32,17 @@ trait VolumeAttachmentStatus extends js.Object {
   val detachError: VolumeError
 }
 
+object VolumeAttachmentStatus {
+  @scala.inline
+  def apply(
+    attachError: VolumeError,
+    attached: scala.Boolean,
+    attachmentMetadata: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    detachError: VolumeError
+  ): VolumeAttachmentStatus = {
+    val __obj = js.Dynamic.literal(attachError = attachError, attached = attached, attachmentMetadata = attachmentMetadata, detachError = detachError)
+  
+    __obj.asInstanceOf[VolumeAttachmentStatus]
+  }
+}
+

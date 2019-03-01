@@ -10,3 +10,12 @@ trait CommandBindKey extends js.Object {
   var win: java.lang.String
 }
 
+object CommandBindKey {
+  @scala.inline
+  def apply(mac: java.lang.String, win: java.lang.String): CommandBindKey = {
+    val __obj = js.Dynamic.literal(mac = mac, win = win)
+  
+    __obj.asInstanceOf[CommandBindKey]
+  }
+}
+

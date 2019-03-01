@@ -12,3 +12,12 @@ trait DidChangeWatchedFilesRegistrationOptions extends js.Object {
   var watchers: js.Array[FileSystemWatcher]
 }
 
+object DidChangeWatchedFilesRegistrationOptions {
+  @scala.inline
+  def apply(watchers: js.Array[FileSystemWatcher]): DidChangeWatchedFilesRegistrationOptions = {
+    val __obj = js.Dynamic.literal(watchers = watchers)
+  
+    __obj.asInstanceOf[DidChangeWatchedFilesRegistrationOptions]
+  }
+}
+

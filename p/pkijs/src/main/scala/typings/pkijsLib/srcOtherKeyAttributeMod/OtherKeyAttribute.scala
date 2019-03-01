@@ -13,3 +13,18 @@ trait OtherKeyAttribute extends js.Object {
   def toSchema(): js.Any
 }
 
+object OtherKeyAttribute {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    keyAttr: js.Any,
+    keyAttrId: java.lang.String,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OtherKeyAttribute = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyAttr = keyAttr, keyAttrId = keyAttrId, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[OtherKeyAttribute]
+  }
+}
+

@@ -41,3 +41,19 @@ trait Table extends js.Object {
   var styleName: java.lang.String
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    interval: Interval,
+    length: scala.Double,
+    rows: js.Array[TableRow],
+    start: scala.Double,
+    styleName: java.lang.String
+  ): Table = {
+    val __obj = js.Dynamic.literal(index = index, interval = interval, length = length, rows = rows, start = start, styleName = styleName)
+  
+    __obj.asInstanceOf[Table]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Annotation extends js.Object {
   var `type`: java.lang.String
 }
 
+object Annotation {
+  @scala.inline
+  def apply(column: scala.Double, row: scala.Double, text: java.lang.String, `type`: java.lang.String): Annotation = {
+    val __obj = js.Dynamic.literal(column = column, row = row, text = text, `type` = `type`)
+  
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

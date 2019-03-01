@@ -174,3 +174,60 @@ trait HexoConfig
   val url: java.lang.String
 }
 
+object HexoConfig {
+  @scala.inline
+  def apply(
+    archive_dir: java.lang.String,
+    author: java.lang.String,
+    category_dir: java.lang.String,
+    category_map: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    code_dir: java.lang.String,
+    date_format: java.lang.String,
+    default_category: java.lang.String,
+    default_layout: java.lang.String,
+    description: java.lang.String,
+    external_link: scala.Boolean,
+    filename_case: scala.Double,
+    future: scala.Boolean,
+    highlight: hexoLib.Anon_Autodetect,
+    i18n_dir: java.lang.String,
+    ignore: js.Array[java.lang.String],
+    language: java.lang.String,
+    new_post_name: java.lang.String,
+    pagination_dir: java.lang.String,
+    per_page: scala.Double,
+    permalink: java.lang.String,
+    post_asset_folder: scala.Boolean,
+    public_dir: java.lang.String,
+    relative_link: scala.Boolean,
+    render_drafts: scala.Boolean,
+    root: java.lang.String,
+    source_dir: java.lang.String,
+    subtitle: java.lang.String,
+    tag_dir: java.lang.String,
+    tag_map: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    theme: java.lang.String | hexoLib.hexoLibNumbers.`false`,
+    theme_config: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    time_format: java.lang.String,
+    timezone: java.lang.String,
+    title: java.lang.String,
+    titlecase: scala.Boolean,
+    url: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    deploy: hexoLib.hexoMod.HexoNs.extendNs.DeployerNs.Config = null,
+    exclude: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    permalink_defaults: java.lang.String = null,
+    skip_render: java.lang.String | js.Array[java.lang.String] = null
+  ): HexoConfig = {
+    val __obj = js.Dynamic.literal(archive_dir = archive_dir, author = author, category_dir = category_dir, category_map = category_map, code_dir = code_dir, date_format = date_format, default_category = default_category, default_layout = default_layout, description = description, external_link = external_link, filename_case = filename_case, future = future, highlight = highlight, i18n_dir = i18n_dir, ignore = ignore, language = language, new_post_name = new_post_name, pagination_dir = pagination_dir, per_page = per_page, permalink = permalink, post_asset_folder = post_asset_folder, public_dir = public_dir, relative_link = relative_link, render_drafts = render_drafts, root = root, source_dir = source_dir, subtitle = subtitle, tag_dir = tag_dir, tag_map = tag_map, theme = theme.asInstanceOf[js.Any], theme_config = theme_config, time_format = time_format, timezone = timezone, title = title, titlecase = titlecase, url = url)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (deploy != null) __obj.updateDynamic("deploy")(deploy)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (permalink_defaults != null) __obj.updateDynamic("permalink_defaults")(permalink_defaults)
+    if (skip_render != null) __obj.updateDynamic("skip_render")(skip_render.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HexoConfig]
+  }
+}
+

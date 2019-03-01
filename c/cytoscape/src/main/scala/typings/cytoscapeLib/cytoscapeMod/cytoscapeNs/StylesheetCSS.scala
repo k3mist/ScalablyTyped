@@ -13,3 +13,15 @@ trait StylesheetCSS extends Stylesheet {
   var selector: java.lang.String
 }
 
+object StylesheetCSS {
+  @scala.inline
+  def apply(
+    css: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge,
+    selector: java.lang.String
+  ): StylesheetCSS = {
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], selector = selector)
+  
+    __obj.asInstanceOf[StylesheetCSS]
+  }
+}
+

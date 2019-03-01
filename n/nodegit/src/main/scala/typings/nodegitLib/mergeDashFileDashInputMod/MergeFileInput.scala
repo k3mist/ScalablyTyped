@@ -13,3 +13,18 @@ trait MergeFileInput extends js.Object {
   var version: scala.Double
 }
 
+object MergeFileInput {
+  @scala.inline
+  def apply(
+    mode: scala.Double,
+    path: java.lang.String,
+    ptr: java.lang.String,
+    size: scala.Double,
+    version: scala.Double
+  ): MergeFileInput = {
+    val __obj = js.Dynamic.literal(mode = mode, path = path, ptr = ptr, size = size, version = version)
+  
+    __obj.asInstanceOf[MergeFileInput]
+  }
+}
+

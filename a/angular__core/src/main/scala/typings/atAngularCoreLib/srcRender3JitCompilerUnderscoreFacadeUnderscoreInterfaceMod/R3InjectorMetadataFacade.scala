@@ -13,3 +13,18 @@ trait R3InjectorMetadataFacade extends js.Object {
   var `type`: js.Any
 }
 
+object R3InjectorMetadataFacade {
+  @scala.inline
+  def apply(
+    imports: js.Array[_],
+    name: java.lang.String,
+    providers: js.Array[_],
+    `type`: js.Any,
+    deps: js.Array[R3DependencyMetadataFacade] = null
+  ): R3InjectorMetadataFacade = {
+    val __obj = js.Dynamic.literal(imports = imports, name = name, providers = providers, `type` = `type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3InjectorMetadataFacade]
+  }
+}
+

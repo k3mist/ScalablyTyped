@@ -11,3 +11,16 @@ trait BugReportingStatic extends js.Object {
   def setShakingThresholdForiPhone(shakingThreshold: scala.Double): scala.Unit
 }
 
+object BugReportingStatic {
+  @scala.inline
+  def apply(
+    setShakingThresholdForAndroid: js.Function1[scala.Double, scala.Unit],
+    setShakingThresholdForiPad: js.Function1[scala.Double, scala.Unit],
+    setShakingThresholdForiPhone: js.Function1[scala.Double, scala.Unit]
+  ): BugReportingStatic = {
+    val __obj = js.Dynamic.literal(setShakingThresholdForAndroid = setShakingThresholdForAndroid, setShakingThresholdForiPad = setShakingThresholdForiPad, setShakingThresholdForiPhone = setShakingThresholdForiPhone)
+  
+    __obj.asInstanceOf[BugReportingStatic]
+  }
+}
+

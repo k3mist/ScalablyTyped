@@ -15,3 +15,20 @@ trait DefaultMapPanes extends js.Object {
   var tooltipPane: stdLib.HTMLElement
 }
 
+object DefaultMapPanes {
+  @scala.inline
+  def apply(
+    mapPane: stdLib.HTMLElement,
+    markerPane: stdLib.HTMLElement,
+    overlayPane: stdLib.HTMLElement,
+    popupPane: stdLib.HTMLElement,
+    shadowPane: stdLib.HTMLElement,
+    tilePane: stdLib.HTMLElement,
+    tooltipPane: stdLib.HTMLElement
+  ): DefaultMapPanes = {
+    val __obj = js.Dynamic.literal(mapPane = mapPane, markerPane = markerPane, overlayPane = overlayPane, popupPane = popupPane, shadowPane = shadowPane, tilePane = tilePane, tooltipPane = tooltipPane)
+  
+    __obj.asInstanceOf[DefaultMapPanes]
+  }
+}
+

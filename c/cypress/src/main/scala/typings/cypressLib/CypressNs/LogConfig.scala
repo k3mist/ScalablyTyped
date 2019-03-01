@@ -18,3 +18,18 @@ trait LogConfig extends js.Object {
   def consoleProps(): ObjectLike
 }
 
+object LogConfig {
+  @scala.inline
+  def apply(
+    $el: jqueryLib.JQuery[stdLib.HTMLElement],
+    consoleProps: js.Function0[ObjectLike],
+    displayName: java.lang.String,
+    message: js.Array[_],
+    name: java.lang.String
+  ): LogConfig = {
+    val __obj = js.Dynamic.literal($el = $el, consoleProps = consoleProps, displayName = displayName, message = message, name = name)
+  
+    __obj.asInstanceOf[LogConfig]
+  }
+}
+

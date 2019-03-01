@@ -13,3 +13,18 @@ trait NavigationLayout extends js.Object {
   var width: AnimatedValue
 }
 
+object NavigationLayout {
+  @scala.inline
+  def apply(
+    height: AnimatedValue,
+    initHeight: scala.Double,
+    initWidth: scala.Double,
+    isMeasured: scala.Boolean,
+    width: AnimatedValue
+  ): NavigationLayout = {
+    val __obj = js.Dynamic.literal(height = height, initHeight = initHeight, initWidth = initWidth, isMeasured = isMeasured, width = width)
+  
+    __obj.asInstanceOf[NavigationLayout]
+  }
+}
+

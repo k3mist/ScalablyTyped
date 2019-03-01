@@ -16,3 +16,12 @@ trait ManualInterventionUpdateMetadata extends js.Object {
   var status: ManualInterventionStatus
 }
 
+object ManualInterventionUpdateMetadata {
+  @scala.inline
+  def apply(comment: java.lang.String, status: ManualInterventionStatus): ManualInterventionUpdateMetadata = {
+    val __obj = js.Dynamic.literal(comment = comment, status = status)
+  
+    __obj.asInstanceOf[ManualInterventionUpdateMetadata]
+  }
+}
+

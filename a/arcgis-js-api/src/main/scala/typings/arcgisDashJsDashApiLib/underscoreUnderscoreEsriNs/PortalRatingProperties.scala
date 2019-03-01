@@ -20,3 +20,13 @@ trait PortalRatingProperties extends js.Object {
   var rating: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PortalRatingProperties {
+  @scala.inline
+  def apply(created: DateProperties = null, rating: scala.Int | scala.Double = null): PortalRatingProperties = {
+    val __obj = js.Dynamic.literal()
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PortalRatingProperties]
+  }
+}
+

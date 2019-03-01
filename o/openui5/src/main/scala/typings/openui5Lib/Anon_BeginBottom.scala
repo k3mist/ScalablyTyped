@@ -53,3 +53,28 @@ trait Anon_BeginBottom extends js.Object {
   var RightTop: js.Any
 }
 
+object Anon_BeginBottom {
+  @scala.inline
+  def apply(
+    BeginBottom: js.Any,
+    BeginCenter: js.Any,
+    BeginTop: js.Any,
+    CenterBottom: js.Any,
+    CenterCenter: js.Any,
+    CenterTop: js.Any,
+    EndBottom: js.Any,
+    EndCenter: js.Any,
+    EndTop: js.Any,
+    LeftBottom: js.Any,
+    LeftCenter: js.Any,
+    LeftTop: js.Any,
+    RightBottom: js.Any,
+    RightCenter: js.Any,
+    RightTop: js.Any
+  ): Anon_BeginBottom = {
+    val __obj = js.Dynamic.literal(BeginBottom = BeginBottom, BeginCenter = BeginCenter, BeginTop = BeginTop, CenterBottom = CenterBottom, CenterCenter = CenterCenter, CenterTop = CenterTop, EndBottom = EndBottom, EndCenter = EndCenter, EndTop = EndTop, LeftBottom = LeftBottom, LeftCenter = LeftCenter, LeftTop = LeftTop, RightBottom = RightBottom, RightCenter = RightCenter, RightTop = RightTop)
+  
+    __obj.asInstanceOf[Anon_BeginBottom]
+  }
+}
+

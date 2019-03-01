@@ -19,3 +19,18 @@ trait TimedTextPadding extends js.Object {
   var unit: TimedTextUnit
 }
 
+object TimedTextPadding {
+  @scala.inline
+  def apply(
+    after: scala.Double,
+    before: scala.Double,
+    end: scala.Double,
+    start: scala.Double,
+    unit: TimedTextUnit
+  ): TimedTextPadding = {
+    val __obj = js.Dynamic.literal(after = after, before = before, end = end, start = start, unit = unit)
+  
+    __obj.asInstanceOf[TimedTextPadding]
+  }
+}
+

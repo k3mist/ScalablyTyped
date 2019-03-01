@@ -49,3 +49,17 @@ trait NetworkPolicySpec extends js.Object {
   val policyTypes: js.Array[java.lang.String]
 }
 
+object NetworkPolicySpec {
+  @scala.inline
+  def apply(
+    egress: js.Array[NetworkPolicyEgressRule],
+    ingress: js.Array[NetworkPolicyIngressRule],
+    podSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    policyTypes: js.Array[java.lang.String]
+  ): NetworkPolicySpec = {
+    val __obj = js.Dynamic.literal(egress = egress, ingress = ingress, podSelector = podSelector, policyTypes = policyTypes)
+  
+    __obj.asInstanceOf[NetworkPolicySpec]
+  }
+}
+

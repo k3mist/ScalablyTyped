@@ -38,3 +38,29 @@ trait StructureTower
   def repair(target: Structure[StructureConstant]): ScreepsReturnCode
 }
 
+object StructureTower {
+  @scala.inline
+  def apply(
+    attack: js.Function1[Creep, ScreepsReturnCode],
+    destroy: js.Function0[ScreepsReturnCode],
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    heal: js.Function1[Creep, ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    repair: js.Function1[Structure[StructureConstant], ScreepsReturnCode],
+    room: Room,
+    structureType: STRUCTURE_TOWER
+  ): StructureTower = {
+    val __obj = js.Dynamic.literal(attack = attack, destroy = destroy, energy = energy, energyCapacity = energyCapacity, heal = heal, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, repair = repair, room = room, structureType = structureType)
+  
+    __obj.asInstanceOf[StructureTower]
+  }
+}
+

@@ -13,3 +13,23 @@ trait TSArrayType
   var type_TSArrayType: babelDashTypesLib.babelDashTypesLibStrings.TSArrayType
 }
 
+object TSArrayType {
+  @scala.inline
+  def apply(
+    elementType: TSType,
+    end: scala.Double,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.TSArrayType,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): TSArrayType = {
+    val __obj = js.Dynamic.literal(elementType = elementType, end = end, loc = loc, start = start, `type` = `type`)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[TSArrayType]
+  }
+}
+

@@ -10,3 +10,15 @@ trait ColorDescriptor extends js.Object {
   var value: Color
 }
 
+object ColorDescriptor {
+  @scala.inline
+  def apply(
+    model: colorDashStringLib.colorDashStringLibStrings.rgb | colorDashStringLib.colorDashStringLibStrings.hsl | colorDashStringLib.colorDashStringLibStrings.hwb,
+    value: Color
+  ): ColorDescriptor = {
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], value = value)
+  
+    __obj.asInstanceOf[ColorDescriptor]
+  }
+}
+

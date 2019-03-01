@@ -31,3 +31,17 @@ trait HyperlinkSettings extends js.Object {
   var url: java.lang.String
 }
 
+object HyperlinkSettings {
+  @scala.inline
+  def apply(
+    bookmark: java.lang.String,
+    text: java.lang.String,
+    tooltip: java.lang.String,
+    url: java.lang.String
+  ): HyperlinkSettings = {
+    val __obj = js.Dynamic.literal(bookmark = bookmark, text = text, tooltip = tooltip, url = url)
+  
+    __obj.asInstanceOf[HyperlinkSettings]
+  }
+}
+

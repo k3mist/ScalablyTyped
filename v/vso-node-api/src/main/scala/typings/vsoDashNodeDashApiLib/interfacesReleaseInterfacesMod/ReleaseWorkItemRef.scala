@@ -14,3 +14,19 @@ trait ReleaseWorkItemRef extends js.Object {
   var url: java.lang.String
 }
 
+object ReleaseWorkItemRef {
+  @scala.inline
+  def apply(
+    assignee: java.lang.String,
+    id: java.lang.String,
+    state: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): ReleaseWorkItemRef = {
+    val __obj = js.Dynamic.literal(assignee = assignee, id = id, state = state, title = title, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[ReleaseWorkItemRef]
+  }
+}
+

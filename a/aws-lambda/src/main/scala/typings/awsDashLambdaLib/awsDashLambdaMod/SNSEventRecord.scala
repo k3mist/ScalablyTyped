@@ -12,3 +12,17 @@ trait SNSEventRecord extends js.Object {
   var Sns: SNSMessage
 }
 
+object SNSEventRecord {
+  @scala.inline
+  def apply(
+    EventSource: java.lang.String,
+    EventSubscriptionArn: java.lang.String,
+    EventVersion: java.lang.String,
+    Sns: SNSMessage
+  ): SNSEventRecord = {
+    val __obj = js.Dynamic.literal(EventSource = EventSource, EventSubscriptionArn = EventSubscriptionArn, EventVersion = EventVersion, Sns = Sns)
+  
+    __obj.asInstanceOf[SNSEventRecord]
+  }
+}
+

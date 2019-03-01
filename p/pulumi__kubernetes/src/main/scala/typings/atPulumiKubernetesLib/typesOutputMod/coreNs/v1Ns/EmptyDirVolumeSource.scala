@@ -26,3 +26,12 @@ trait EmptyDirVolumeSource extends js.Object {
   val sizeLimit: java.lang.String
 }
 
+object EmptyDirVolumeSource {
+  @scala.inline
+  def apply(medium: java.lang.String, sizeLimit: java.lang.String): EmptyDirVolumeSource = {
+    val __obj = js.Dynamic.literal(medium = medium, sizeLimit = sizeLimit)
+  
+    __obj.asInstanceOf[EmptyDirVolumeSource]
+  }
+}
+

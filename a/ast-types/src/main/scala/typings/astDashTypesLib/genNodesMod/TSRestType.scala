@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object TSRestType {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSRestType,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
+  ): TSRestType = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[TSRestType]
+  }
+}
+

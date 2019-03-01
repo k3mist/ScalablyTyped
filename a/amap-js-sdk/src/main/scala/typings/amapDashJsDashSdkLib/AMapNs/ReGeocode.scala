@@ -13,3 +13,18 @@ trait ReGeocode extends js.Object {
   var roads: js.Array[Road]
 }
 
+object ReGeocode {
+  @scala.inline
+  def apply(
+    addressComponent: AddressComponent,
+    crosses: js.Array[Cross],
+    formattedAddress: java.lang.String,
+    pois: js.Array[ReGeocodePoi],
+    roads: js.Array[Road]
+  ): ReGeocode = {
+    val __obj = js.Dynamic.literal(addressComponent = addressComponent, crosses = crosses, formattedAddress = formattedAddress, pois = pois, roads = roads)
+  
+    __obj.asInstanceOf[ReGeocode]
+  }
+}
+

@@ -14,3 +14,12 @@ trait Symbol3DLayerProperties extends js.Object {
   var material: js.UndefOr[js.Any] = js.undefined
 }
 
+object Symbol3DLayerProperties {
+  @scala.inline
+  def apply(material: js.Any = null): Symbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (material != null) __obj.updateDynamic("material")(material)
+    __obj.asInstanceOf[Symbol3DLayerProperties]
+  }
+}
+

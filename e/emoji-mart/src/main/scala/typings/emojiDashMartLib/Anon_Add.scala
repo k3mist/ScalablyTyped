@@ -16,3 +16,21 @@ trait Anon_Add extends js.Object {
   def get(perLine: scala.Double): js.Array[java.lang.String]
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(
+    add_id: js.Function1[
+      stdLib.Pick[
+        emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
+        emojiDashMartLib.emojiDashMartLibStrings.id
+      ], 
+      scala.Unit
+    ],
+    get: js.Function1[scala.Double, js.Array[java.lang.String]]
+  ): Anon_Add = {
+    val __obj = js.Dynamic.literal(add_id = add_id, get = get)
+  
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

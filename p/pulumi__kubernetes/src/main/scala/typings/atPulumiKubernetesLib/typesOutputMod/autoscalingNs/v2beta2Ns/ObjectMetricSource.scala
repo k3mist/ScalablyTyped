@@ -21,3 +21,12 @@ trait ObjectMetricSource extends js.Object {
   val target: MetricTarget
 }
 
+object ObjectMetricSource {
+  @scala.inline
+  def apply(describedObject: CrossVersionObjectReference, metric: MetricIdentifier, target: MetricTarget): ObjectMetricSource = {
+    val __obj = js.Dynamic.literal(describedObject = describedObject, metric = metric, target = target)
+  
+    __obj.asInstanceOf[ObjectMetricSource]
+  }
+}
+

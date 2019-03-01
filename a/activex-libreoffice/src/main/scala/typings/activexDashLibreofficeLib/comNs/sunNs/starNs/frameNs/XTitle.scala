@@ -25,3 +25,19 @@ trait XTitle
   def setTitle(sTitle: java.lang.String): scala.Unit
 }
 
+object XTitle {
+  @scala.inline
+  def apply(
+    Title: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getTitle: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XTitle = {
+    val __obj = js.Dynamic.literal(Title = Title, acquire = acquire, getTitle = getTitle, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
+    __obj.asInstanceOf[XTitle]
+  }
+}
+

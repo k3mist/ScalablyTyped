@@ -63,3 +63,29 @@ trait Point extends js.Object {
   def traverse(other: PointCompatible): Point
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    compare: js.Function1[PointCompatible, scala.Double],
+    copy: js.Function0[Point],
+    freeze: js.Function0[stdLib.Readonly[Point]],
+    isEqual: js.Function1[PointCompatible, scala.Boolean],
+    isGreaterThan: js.Function1[PointCompatible, scala.Boolean],
+    isGreaterThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
+    isLessThan: js.Function1[PointCompatible, scala.Boolean],
+    isLessThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
+    negate: js.Function0[Point],
+    row: scala.Double,
+    serialize: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    toArray: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    toString: js.Function0[java.lang.String],
+    translate: js.Function1[PointCompatible, Point],
+    traverse: js.Function1[PointCompatible, Point]
+  ): Point = {
+    val __obj = js.Dynamic.literal(column = column, compare = compare, copy = copy, freeze = freeze, isEqual = isEqual, isGreaterThan = isGreaterThan, isGreaterThanOrEqual = isGreaterThanOrEqual, isLessThan = isLessThan, isLessThanOrEqual = isLessThanOrEqual, negate = negate, row = row, serialize = serialize, toArray = toArray, toString = toString, translate = translate, traverse = traverse)
+  
+    __obj.asInstanceOf[Point]
+  }
+}
+

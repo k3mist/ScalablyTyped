@@ -44,3 +44,30 @@ trait EventDestinationState extends js.Object {
   val snsDestination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TopicArnInput]] = js.undefined
 }
 
+object EventDestinationState {
+  @scala.inline
+  def apply(
+    cloudwatchDestinations: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueDimensionNameValueSource]
+      ]
+    ] = null,
+    configurationSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kinesisDestination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnStreamArnInput] = null,
+    matchingTypes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    snsDestination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TopicArnInput] = null
+  ): EventDestinationState = {
+    val __obj = js.Dynamic.literal()
+    if (cloudwatchDestinations != null) __obj.updateDynamic("cloudwatchDestinations")(cloudwatchDestinations.asInstanceOf[js.Any])
+    if (configurationSetName != null) __obj.updateDynamic("configurationSetName")(configurationSetName.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (kinesisDestination != null) __obj.updateDynamic("kinesisDestination")(kinesisDestination.asInstanceOf[js.Any])
+    if (matchingTypes != null) __obj.updateDynamic("matchingTypes")(matchingTypes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (snsDestination != null) __obj.updateDynamic("snsDestination")(snsDestination.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventDestinationState]
+  }
+}
+

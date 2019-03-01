@@ -13,3 +13,18 @@ trait Anon_Cmyk extends js.Object {
   var rgb: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.RGB
 }
 
+object Anon_Cmyk {
+  @scala.inline
+  def apply(
+    cmyk: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.CMYK,
+    hsl: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.HSL,
+    hsv: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.HSV,
+    lab: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.LAB,
+    rgb: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.RGB
+  ): Anon_Cmyk = {
+    val __obj = js.Dynamic.literal(cmyk = cmyk, hsl = hsl, hsv = hsv, lab = lab, rgb = rgb)
+  
+    __obj.asInstanceOf[Anon_Cmyk]
+  }
+}
+

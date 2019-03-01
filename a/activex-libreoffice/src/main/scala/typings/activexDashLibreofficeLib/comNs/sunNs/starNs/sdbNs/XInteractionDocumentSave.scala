@@ -21,3 +21,22 @@ trait XInteractionDocumentSave
   def setName(Name: java.lang.String, Content: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent): scala.Unit
 }
 
+object XInteractionDocumentSave {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setName: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XContent, 
+      scala.Unit
+    ]
+  ): XInteractionDocumentSave = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, select = select, setName = setName)
+  
+    __obj.asInstanceOf[XInteractionDocumentSave]
+  }
+}
+

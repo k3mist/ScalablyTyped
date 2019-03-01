@@ -242,3 +242,158 @@ import scala.scalajs.js.annotation._
   override def getPropertySetInfo(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BreakType: BreakType,
+    Category: scala.Double,
+    CharDiffHeight: scala.Double,
+    CharDiffHeightAsian: scala.Double,
+    CharDiffHeightComplex: scala.Double,
+    CharPropHeight: scala.Double,
+    CharPropHeightAsian: scala.Double,
+    CharPropHeightComplex: scala.Double,
+    DisplayName: java.lang.String,
+    DropCapCharStyleName: java.lang.String,
+    DropCapFormat: DropCapFormat,
+    DropCapWholeWord: scala.Boolean,
+    FollowStyle: java.lang.String,
+    Hidden: scala.Boolean,
+    IsAutoUpdate: java.lang.String,
+    IsPhysical: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    ListId: java.lang.String,
+    Name: java.lang.String,
+    NumberingIsNumber: scala.Boolean,
+    NumberingLevel: scala.Double,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    NumberingStartValue: scala.Double,
+    NumberingStyleName: java.lang.String,
+    OutlineLevel: scala.Double,
+    PageDescName: java.lang.String,
+    PageNumberOffset: scala.Double,
+    PageStyleName: java.lang.String,
+    ParaAdjust: ParagraphAdjust,
+    ParaBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ParaBackGraphicFilter: java.lang.String,
+    ParaBackGraphicLocation: GraphicLocation,
+    ParaBackGraphicURL: java.lang.String,
+    ParaBackTransparent: scala.Boolean,
+    ParaBottomMargin: scala.Double,
+    ParaBottomMarginRelative: scala.Double,
+    ParaContextMargin: scala.Boolean,
+    ParaExpandSingleWord: scala.Boolean,
+    ParaFirstLineIndent: scala.Double,
+    ParaHyphenationMaxHyphens: scala.Double,
+    ParaHyphenationMaxLeadingChars: scala.Double,
+    ParaHyphenationMaxTrailingChars: scala.Double,
+    ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ParaIsAutoFirstLineIndent: scala.Boolean,
+    ParaIsConnectBorder: scala.Boolean,
+    ParaIsHyphenation: scala.Boolean,
+    ParaIsNumberingRestart: scala.Boolean,
+    ParaKeepTogether: scala.Boolean,
+    ParaLastLineAdjust: scala.Double,
+    ParaLeftMargin: scala.Double,
+    ParaLeftMarginRelative: scala.Double,
+    ParaLineNumberCount: scala.Boolean,
+    ParaLineNumberStartValue: scala.Double,
+    ParaLineSpacing: LineSpacing,
+    ParaOrphans: scala.Double,
+    ParaRegisterModeActive: scala.Boolean,
+    ParaRightMargin: scala.Double,
+    ParaRightMarginRelative: scala.Double,
+    ParaShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ParaSplit: scala.Boolean,
+    ParaStyleConditions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    ParaStyleName: java.lang.String,
+    ParaTabStops: activexDashInteropLib.SafeArray[TabStop],
+    ParaTopMargin: scala.Double,
+    ParaTopMarginRelative: scala.Double,
+    ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    ParaVertAlignment: scala.Double,
+    ParaWidows: scala.Double,
+    ParentStyle: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    StyleInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getName: js.Function0[java.lang.String],
+    getParentStyle: js.Function0[java.lang.String],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    isInUse: js.Function0[scala.Boolean],
+    isUserDefined: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParentStyle: js.Function1[java.lang.String, scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ]
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal(BorderDistance = BorderDistance, BottomBorder = BottomBorder, BottomBorderDistance = BottomBorderDistance, BreakType = BreakType, Category = Category, CharDiffHeight = CharDiffHeight, CharDiffHeightAsian = CharDiffHeightAsian, CharDiffHeightComplex = CharDiffHeightComplex, CharPropHeight = CharPropHeight, CharPropHeightAsian = CharPropHeightAsian, CharPropHeightComplex = CharPropHeightComplex, DisplayName = DisplayName, DropCapCharStyleName = DropCapCharStyleName, DropCapFormat = DropCapFormat, DropCapWholeWord = DropCapWholeWord, FollowStyle = FollowStyle, Hidden = Hidden, IsAutoUpdate = IsAutoUpdate, IsPhysical = IsPhysical, LeftBorder = LeftBorder, LeftBorderDistance = LeftBorderDistance, ListId = ListId, Name = Name, NumberingIsNumber = NumberingIsNumber, NumberingLevel = NumberingLevel, NumberingRules = NumberingRules, NumberingStartValue = NumberingStartValue, NumberingStyleName = NumberingStyleName, OutlineLevel = OutlineLevel, PageDescName = PageDescName, PageNumberOffset = PageNumberOffset, PageStyleName = PageStyleName, ParaAdjust = ParaAdjust, ParaBackColor = ParaBackColor, ParaBackGraphicFilter = ParaBackGraphicFilter, ParaBackGraphicLocation = ParaBackGraphicLocation, ParaBackGraphicURL = ParaBackGraphicURL, ParaBackTransparent = ParaBackTransparent, ParaBottomMargin = ParaBottomMargin, ParaBottomMarginRelative = ParaBottomMarginRelative, ParaContextMargin = ParaContextMargin, ParaExpandSingleWord = ParaExpandSingleWord, ParaFirstLineIndent = ParaFirstLineIndent, ParaHyphenationMaxHyphens = ParaHyphenationMaxHyphens, ParaHyphenationMaxLeadingChars = ParaHyphenationMaxLeadingChars, ParaHyphenationMaxTrailingChars = ParaHyphenationMaxTrailingChars, ParaInteropGrabBag = ParaInteropGrabBag, ParaIsAutoFirstLineIndent = ParaIsAutoFirstLineIndent, ParaIsConnectBorder = ParaIsConnectBorder, ParaIsHyphenation = ParaIsHyphenation, ParaIsNumberingRestart = ParaIsNumberingRestart, ParaKeepTogether = ParaKeepTogether, ParaLastLineAdjust = ParaLastLineAdjust, ParaLeftMargin = ParaLeftMargin, ParaLeftMarginRelative = ParaLeftMarginRelative, ParaLineNumberCount = ParaLineNumberCount, ParaLineNumberStartValue = ParaLineNumberStartValue, ParaLineSpacing = ParaLineSpacing, ParaOrphans = ParaOrphans, ParaRegisterModeActive = ParaRegisterModeActive, ParaRightMargin = ParaRightMargin, ParaRightMarginRelative = ParaRightMarginRelative, ParaShadowFormat = ParaShadowFormat, ParaSplit = ParaSplit, ParaStyleConditions = ParaStyleConditions, ParaStyleName = ParaStyleName, ParaTabStops = ParaTabStops, ParaTopMargin = ParaTopMargin, ParaTopMarginRelative = ParaTopMarginRelative, ParaUserDefinedAttributes = ParaUserDefinedAttributes, ParaVertAlignment = ParaVertAlignment, ParaWidows = ParaWidows, ParentStyle = ParentStyle, PropertySetInfo = PropertySetInfo, RightBorder = RightBorder, RightBorderDistance = RightBorderDistance, StyleInteropGrabBag = StyleInteropGrabBag, TopBorder = TopBorder, TopBorderDistance = TopBorderDistance, UserDefinedAttributes = UserDefinedAttributes, acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, firePropertiesChangeEvent = firePropertiesChangeEvent, getName = getName, getParentStyle = getParentStyle, getPropertyDefaults = getPropertyDefaults, getPropertySetInfo = getPropertySetInfo, getPropertyStates = getPropertyStates, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, isInUse = isInUse, isUserDefined = isUserDefined, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setAllPropertiesToDefault = setAllPropertiesToDefault, setName = setName, setParentStyle = setParentStyle, setPropertiesToDefault = setPropertiesToDefault, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues)
+  
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

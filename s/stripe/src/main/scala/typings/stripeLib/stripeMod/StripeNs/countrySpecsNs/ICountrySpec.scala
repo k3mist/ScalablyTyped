@@ -32,3 +32,19 @@ trait ICountrySpec
   var verification_fields: stripeLib.Anon_Company
 }
 
+object ICountrySpec {
+  @scala.inline
+  def apply(
+    default_currency: java.lang.String,
+    id: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.country_spec,
+    supported_payment_currencies: js.Array[java.lang.String],
+    supported_payment_methods: js.Array[java.lang.String],
+    verification_fields: stripeLib.Anon_Company
+  ): ICountrySpec = {
+    val __obj = js.Dynamic.literal(default_currency = default_currency, id = id, `object` = `object`, supported_payment_currencies = supported_payment_currencies, supported_payment_methods = supported_payment_methods, verification_fields = verification_fields)
+  
+    __obj.asInstanceOf[ICountrySpec]
+  }
+}
+

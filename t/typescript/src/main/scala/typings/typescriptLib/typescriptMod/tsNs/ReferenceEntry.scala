@@ -11,3 +11,22 @@ trait ReferenceEntry extends DocumentSpan {
   var isWriteAccess: scala.Boolean
 }
 
+object ReferenceEntry {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    isDefinition: scala.Boolean,
+    isWriteAccess: scala.Boolean,
+    textSpan: TextSpan,
+    isInString: typescriptLib.typescriptLibNumbers.`true` = null,
+    originalFileName: java.lang.String = null,
+    originalTextSpan: TextSpan = null
+  ): ReferenceEntry = {
+    val __obj = js.Dynamic.literal(fileName = fileName, isDefinition = isDefinition, isWriteAccess = isWriteAccess, textSpan = textSpan)
+    if (isInString != null) __obj.updateDynamic("isInString")(isInString)
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
+    __obj.asInstanceOf[ReferenceEntry]
+  }
+}
+

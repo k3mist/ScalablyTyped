@@ -17,3 +17,12 @@ trait PropertyCommandArgument extends js.Object {
   var Property: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property
 }
 
+object PropertyCommandArgument {
+  @scala.inline
+  def apply(DefaultValue: js.Any, Property: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property): PropertyCommandArgument = {
+    val __obj = js.Dynamic.literal(DefaultValue = DefaultValue, Property = Property)
+  
+    __obj.asInstanceOf[PropertyCommandArgument]
+  }
+}
+

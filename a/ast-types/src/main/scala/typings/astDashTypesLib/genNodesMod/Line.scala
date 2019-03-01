@@ -13,3 +13,18 @@ trait Line
   var `type`: astDashTypesLib.astDashTypesLibStrings.Line
 }
 
+object Line {
+  @scala.inline
+  def apply(
+    leading: scala.Boolean,
+    trailing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.Line,
+    value: java.lang.String,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Line = {
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, `type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Line]
+  }
+}
+

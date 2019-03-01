@@ -18,3 +18,20 @@ trait LegendColor extends js.Object {
   var overflow: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LegendColor {
+  @scala.inline
+  def apply(
+    max: java.lang.String,
+    min: java.lang.String,
+    base: java.lang.String = null,
+    empty: java.lang.String = null,
+    overflow: java.lang.String = null
+  ): LegendColor = {
+    val __obj = js.Dynamic.literal(max = max, min = min)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow)
+    __obj.asInstanceOf[LegendColor]
+  }
+}
+

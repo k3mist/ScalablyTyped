@@ -16,3 +16,18 @@ trait SignatureHelpItems extends js.Object {
   var selectedItemIndex: scala.Double
 }
 
+object SignatureHelpItems {
+  @scala.inline
+  def apply(
+    applicableSpan: TextSpan,
+    argumentCount: scala.Double,
+    argumentIndex: scala.Double,
+    items: js.Array[SignatureHelpItem],
+    selectedItemIndex: scala.Double
+  ): SignatureHelpItems = {
+    val __obj = js.Dynamic.literal(applicableSpan = applicableSpan, argumentCount = argumentCount, argumentIndex = argumentIndex, items = items, selectedItemIndex = selectedItemIndex)
+  
+    __obj.asInstanceOf[SignatureHelpItems]
+  }
+}
+

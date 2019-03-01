@@ -41,3 +41,21 @@ trait Handshake extends js.Object {
   var xdomain: scala.Boolean
 }
 
+object Handshake {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    headers: js.Any,
+    issued: scala.Double,
+    query: js.Any,
+    secure: scala.Boolean,
+    time: java.lang.String,
+    url: java.lang.String,
+    xdomain: scala.Boolean
+  ): Handshake = {
+    val __obj = js.Dynamic.literal(address = address, headers = headers, issued = issued, query = query, secure = secure, time = time, url = url, xdomain = xdomain)
+  
+    __obj.asInstanceOf[Handshake]
+  }
+}
+

@@ -27,3 +27,19 @@ trait JobTaskDeleteJobsParams
   var user: java.lang.String
 }
 
+object JobTaskDeleteJobsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobIds: js.Array[scala.Double],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String,
+    deleteHistory: js.UndefOr[scala.Boolean] = js.undefined
+  ): JobTaskDeleteJobsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobIds = jobIds, propertyIsEnumerable = propertyIsEnumerable, user = user)
+    if (!js.isUndefined(deleteHistory)) __obj.updateDynamic("deleteHistory")(deleteHistory)
+    __obj.asInstanceOf[JobTaskDeleteJobsParams]
+  }
+}
+

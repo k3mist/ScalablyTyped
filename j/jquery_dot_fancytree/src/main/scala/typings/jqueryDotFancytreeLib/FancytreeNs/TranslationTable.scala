@@ -24,3 +24,17 @@ trait TranslationTable extends js.Object {
   var noData: java.lang.String
 }
 
+object TranslationTable {
+  @scala.inline
+  def apply(
+    loadError: java.lang.String,
+    loading: java.lang.String,
+    moreData: java.lang.String,
+    noData: java.lang.String
+  ): TranslationTable = {
+    val __obj = js.Dynamic.literal(loadError = loadError, loading = loading, moreData = moreData, noData = noData)
+  
+    __obj.asInstanceOf[TranslationTable]
+  }
+}
+

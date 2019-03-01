@@ -10,3 +10,12 @@ trait Anon_ControlIndex extends js.Object {
   val Index: scala.Double
 }
 
+object Anon_ControlIndex {
+  @scala.inline
+  def apply(Control: activexDashMsformsLib.MSFormsNs.Control, Index: scala.Double): Anon_ControlIndex = {
+    val __obj = js.Dynamic.literal(Control = Control, Index = Index)
+  
+    __obj.asInstanceOf[Anon_ControlIndex]
+  }
+}
+

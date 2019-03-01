@@ -16,3 +16,12 @@ trait MoveContentCommand extends CommandWithSimpleStateBase {
   def execute(position: scala.Double): scala.Boolean
 }
 
+object MoveContentCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[SimpleCommandState]): MoveContentCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[MoveContentCommand]
+  }
+}
+

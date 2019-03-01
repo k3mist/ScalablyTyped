@@ -21,3 +21,18 @@ trait TrackRect extends js.Object {
   var y: scala.Double
 }
 
+object TrackRect {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    color: java.lang.String = null
+  ): TrackRect = {
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[TrackRect]
+  }
+}
+

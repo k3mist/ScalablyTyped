@@ -21,3 +21,17 @@ trait BootstrapClientTabControlTabCancelEventArgs extends ASPxClientProcessingMo
   var tab: BootstrapClientTab
 }
 
+object BootstrapClientTabControlTabCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    processOnServer: scala.Boolean,
+    reloadContentOnCallback: scala.Boolean,
+    tab: BootstrapClientTab
+  ): BootstrapClientTabControlTabCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, tab = tab)
+  
+    __obj.asInstanceOf[BootstrapClientTabControlTabCancelEventArgs]
+  }
+}
+

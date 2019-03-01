@@ -66,3 +66,37 @@ trait XEngine
   def setRoot(xRoot: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): scala.Unit
 }
 
+object XEngine {
+  @scala.inline
+  def apply(
+    Root: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    acquire: js.Function0[scala.Unit],
+    addEngineListener: js.Function1[XEngineListener, scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    compile: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
+    getRoot: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEngineListener: js.Function1[XEngineListener, scala.Unit],
+    run: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      js.Any
+    ],
+    runAsync: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      XEngineListener, 
+      scala.Unit
+    ],
+    setLibraryAccess: js.Function1[XLibraryAccess, scala.Unit],
+    setRoot: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XEngine = {
+    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEngineListener = addEngineListener, cancel = cancel, compile = compile, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEngineListener = removeEngineListener, run = run, runAsync = runAsync, setLibraryAccess = setLibraryAccess, setRoot = setRoot)
+  
+    __obj.asInstanceOf[XEngine]
+  }
+}
+

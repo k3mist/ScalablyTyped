@@ -13,3 +13,17 @@ trait Widget extends VTree {
   def update(previous: Widget, domNode: stdLib.Element): scala.Unit
 }
 
+object Widget {
+  @scala.inline
+  def apply(
+    destroy: js.Function1[stdLib.Element, scala.Unit],
+    init: js.Function0[stdLib.Element],
+    `type`: java.lang.String,
+    update: js.Function2[Widget, stdLib.Element, scala.Unit]
+  ): Widget = {
+    val __obj = js.Dynamic.literal(destroy = destroy, init = init, `type` = `type`, update = update)
+  
+    __obj.asInstanceOf[Widget]
+  }
+}
+

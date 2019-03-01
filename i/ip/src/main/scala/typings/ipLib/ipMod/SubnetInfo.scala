@@ -17,3 +17,22 @@ trait SubnetInfo extends js.Object {
   def contains(ip: java.lang.String): scala.Boolean
 }
 
+object SubnetInfo {
+  @scala.inline
+  def apply(
+    broadcastAddress: java.lang.String,
+    contains: js.Function1[java.lang.String, scala.Boolean],
+    firstAddress: java.lang.String,
+    lastAddress: java.lang.String,
+    length: scala.Double,
+    networkAddress: java.lang.String,
+    numHosts: scala.Double,
+    subnetMask: java.lang.String,
+    subnetMaskLength: scala.Double
+  ): SubnetInfo = {
+    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress, contains = contains, firstAddress = firstAddress, lastAddress = lastAddress, length = length, networkAddress = networkAddress, numHosts = numHosts, subnetMask = subnetMask, subnetMaskLength = subnetMaskLength)
+  
+    __obj.asInstanceOf[SubnetInfo]
+  }
+}
+

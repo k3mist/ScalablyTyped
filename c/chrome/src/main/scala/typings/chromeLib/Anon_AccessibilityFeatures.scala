@@ -478,3 +478,73 @@ trait Anon_AccessibilityFeatures extends js.Object {
   val windowsNs: Anon_CallbackCreateCreateData
 }
 
+object Anon_AccessibilityFeatures {
+  @scala.inline
+  def apply(
+    accessibilityFeaturesNs: Anon_AnimationPolicy,
+    alarmsNs: Anon_Alarm,
+    bookmarksNs: Anon_Bookmark,
+    browserActionNs: Anon_CallbackDetails,
+    browserNs: Anon_Callback,
+    browsingDataNs: Anon_CallbackDataToRemove,
+    castNs: Anon_AddReceiverActionListener,
+    commandsNs: Anon_CallbackCommands,
+    contentSettingsNs: Anon_AutomaticDownloads,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    cookiesNs: Anon_CallbackCookie,
+    declarativeContentNs: Anon_OnPageChanged,
+    declarativeWebRequestNs: Anon_OnRequest,
+    desktopCaptureNs: Anon_CallbackCancelChooseDesktopMedia,
+    devtoolsNs: Anon_InspectedWindow,
+    documentScanNs: Anon_CallbackOptions,
+    downloadsNs: Anon_AcceptDanger,
+    enterpriseNs: Anon_DeviceAttributes,
+    eventsNs: js.Any,
+    extensionNs: Anon_CallbackData,
+    fileBrowserHandlerNs: Anon_CallbackOnExecute,
+    fileSystemProviderNs: Anon_CallbackFileSystem,
+    fontSettingsNs: Anon_CallbackClearDefaultFixedFontSize,
+    gcmNs: Anon_CallbackMAXMESSAGESIZE,
+    historyNs: Anon_AddUrl,
+    i18nNs: Anon_CallbackDetectLanguage,
+    identityNs: Anon_Accounts,
+    idleNs: Anon_CallbackDetectionIntervalInSeconds,
+    inputNs: Anon_Ime,
+    managementNs: Anon_CallbackCreateAppShortcut,
+    networkingNs: Anon_Config,
+    notificationsNs: Anon_CallbackClear,
+    omniboxNs: Anon_OnDeleteSuggestion,
+    pageActionNs: Anon_CallbackDetailsGetPopup,
+    pageCaptureNs: Anon_CallbackDetailsMhtmlData,
+    permissionsNs: Anon_CallbackContains,
+    platformKeysNs: Anon_CallbackCertificateDetails,
+    powerNs: Anon_Level,
+    printerProviderNs: Anon_OnGetCapabilityRequested,
+    privacyNs: Anon_Network,
+    proxyNs: Anon_OnProxyError,
+    runtimeNs: Anon_Application,
+    scriptBadgeNs: Anon_CallbackDetailsGetAttention,
+    sessionsNs: Anon_CallbackDevices,
+    socketNs: Anon_Accept,
+    storageNs: Anon_Local,
+    systemNs: Anon_Cpu,
+    tabCaptureNs: Anon_CallbackCapture,
+    tabsNs: Anon_1,
+    topSitesNs: Anon_CallbackDataGet,
+    ttsEngineNs: Anon_OnPause,
+    ttsNs: Anon_CallbackGetVoices,
+    typesNs: js.Any,
+    underscoreDebuggerNs: Anon_Attach,
+    vpnProviderNs: Anon_CallbackCreateConfig,
+    wallpaperNs: Anon_CallbackDetailsSetWallpaper,
+    webNavigationNs: Anon_CallbackDetailsGetAllFrames,
+    webRequestNs: Anon_CallbackHandlerBehaviorChanged,
+    webstoreNs: Anon_Error,
+    windowsNs: Anon_CallbackCreateCreateData
+  ): Anon_AccessibilityFeatures = {
+    val __obj = js.Dynamic.literal(accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, bookmarksNs = bookmarksNs, browserActionNs = browserActionNs, browserNs = browserNs, browsingDataNs = browsingDataNs, castNs = castNs, commandsNs = commandsNs, contentSettingsNs = contentSettingsNs, contextMenusNs = contextMenusNs, cookiesNs = cookiesNs, declarativeContentNs = declarativeContentNs, declarativeWebRequestNs = declarativeWebRequestNs, desktopCaptureNs = desktopCaptureNs, devtoolsNs = devtoolsNs, documentScanNs = documentScanNs, downloadsNs = downloadsNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, extensionNs = extensionNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemProviderNs = fileSystemProviderNs, fontSettingsNs = fontSettingsNs, gcmNs = gcmNs, historyNs = historyNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, inputNs = inputNs, managementNs = managementNs, networkingNs = networkingNs, notificationsNs = notificationsNs, omniboxNs = omniboxNs, pageActionNs = pageActionNs, pageCaptureNs = pageCaptureNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, privacyNs = privacyNs, proxyNs = proxyNs, runtimeNs = runtimeNs, scriptBadgeNs = scriptBadgeNs, sessionsNs = sessionsNs, socketNs = socketNs, storageNs = storageNs, systemNs = systemNs, tabCaptureNs = tabCaptureNs, tabsNs = tabsNs, topSitesNs = topSitesNs, ttsEngineNs = ttsEngineNs, ttsNs = ttsNs, typesNs = typesNs, underscoreDebuggerNs = underscoreDebuggerNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webNavigationNs = webNavigationNs, webRequestNs = webRequestNs, webstoreNs = webstoreNs, windowsNs = windowsNs)
+  
+    __obj.asInstanceOf[Anon_AccessibilityFeatures]
+  }
+}
+

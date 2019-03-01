@@ -22,3 +22,42 @@ trait keyword extends js.Object {
   def xyz(from: colorDashConvertLib.conversionsMod.KEYWORD): colorDashConvertLib.conversionsMod.XYZ
 }
 
+object keyword {
+  @scala.inline
+  def apply(
+    ansi16: js.Function1[
+      colorDashConvertLib.conversionsMod.KEYWORD, 
+      colorDashConvertLib.conversionsMod.ANSI16
+    ],
+    ansi256: js.Function1[
+      colorDashConvertLib.conversionsMod.KEYWORD, 
+      colorDashConvertLib.conversionsMod.ANSI256
+    ],
+    apple: js.Function1[
+      colorDashConvertLib.conversionsMod.KEYWORD, 
+      colorDashConvertLib.conversionsMod.APPLE
+    ],
+    cmyk: js.Function1[
+      colorDashConvertLib.conversionsMod.KEYWORD, 
+      colorDashConvertLib.conversionsMod.CMYK
+    ],
+    gray: js.Function1[
+      colorDashConvertLib.conversionsMod.KEYWORD, 
+      colorDashConvertLib.conversionsMod.GRAY
+    ],
+    hcg: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HCG],
+    hex: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HEX],
+    hsl: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HSL],
+    hsv: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HSV],
+    hwb: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.HWB],
+    lab: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.LAB],
+    lch: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.LCH],
+    rgb: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.RGB],
+    xyz: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.XYZ]
+  ): keyword = {
+    val __obj = js.Dynamic.literal(ansi16 = ansi16, ansi256 = ansi256, apple = apple, cmyk = cmyk, gray = gray, hcg = hcg, hex = hex, hsl = hsl, hsv = hsv, hwb = hwb, lab = lab, lch = lch, rgb = rgb, xyz = xyz)
+  
+    __obj.asInstanceOf[keyword]
+  }
+}
+

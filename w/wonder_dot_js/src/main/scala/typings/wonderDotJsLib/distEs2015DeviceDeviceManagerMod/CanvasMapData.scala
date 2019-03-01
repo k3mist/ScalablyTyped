@@ -10,3 +10,12 @@ trait CanvasMapData extends js.Object {
   var context: stdLib.CanvasRenderingContext2D
 }
 
+object CanvasMapData {
+  @scala.inline
+  def apply(canvas: stdLib.HTMLCanvasElement, context: stdLib.CanvasRenderingContext2D): CanvasMapData = {
+    val __obj = js.Dynamic.literal(canvas = canvas, context = context)
+  
+    __obj.asInstanceOf[CanvasMapData]
+  }
+}
+

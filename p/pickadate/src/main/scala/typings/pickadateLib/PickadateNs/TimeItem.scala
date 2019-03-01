@@ -16,3 +16,12 @@ trait TimeItem extends Item {
   var mins: scala.Double
 }
 
+object TimeItem {
+  @scala.inline
+  def apply(hour: scala.Double, mins: scala.Double, pick: scala.Double): TimeItem = {
+    val __obj = js.Dynamic.literal(hour = hour, mins = mins, pick = pick)
+  
+    __obj.asInstanceOf[TimeItem]
+  }
+}
+

@@ -21,3 +21,25 @@ trait Anon_Ascender extends js.Object {
   var underlineThickness: scala.Double
 }
 
+object Anon_Ascender {
+  @scala.inline
+  def apply(
+    ascender: scala.Double,
+    boundingBox: Anon_XMax,
+    cssFontStyle: java.lang.String,
+    cssFontWeight: java.lang.String,
+    descender: scala.Double,
+    familyName: java.lang.String,
+    glyphs: js.Array[Anon_Ha],
+    lineHeight: scala.Double,
+    original_font_information: Anon_Copyright,
+    resolution: scala.Double,
+    underlinePosition: scala.Double,
+    underlineThickness: scala.Double
+  ): Anon_Ascender = {
+    val __obj = js.Dynamic.literal(ascender = ascender, boundingBox = boundingBox, cssFontStyle = cssFontStyle, cssFontWeight = cssFontWeight, descender = descender, familyName = familyName, glyphs = glyphs, lineHeight = lineHeight, original_font_information = original_font_information, resolution = resolution, underlinePosition = underlinePosition, underlineThickness = underlineThickness)
+  
+    __obj.asInstanceOf[Anon_Ascender]
+  }
+}
+

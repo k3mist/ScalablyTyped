@@ -18,3 +18,15 @@ trait CertificateValidationArgs extends js.Object {
   ] = js.undefined
 }
 
+object CertificateValidationArgs {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    validationRecordFqdns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): CertificateValidationArgs = {
+    val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
+    if (validationRecordFqdns != null) __obj.updateDynamic("validationRecordFqdns")(validationRecordFqdns.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateValidationArgs]
+  }
+}
+

@@ -43,3 +43,17 @@ trait GridEntity extends js.Object {
   def getPrimaryAttributeValue(): java.lang.String
 }
 
+object GridEntity {
+  @scala.inline
+  def apply(
+    getEntityName: js.Function0[java.lang.String],
+    getEntityReference: js.Function0[xrmLib.XrmNs.LookupValue],
+    getId: js.Function0[java.lang.String],
+    getPrimaryAttributeValue: js.Function0[java.lang.String]
+  ): GridEntity = {
+    val __obj = js.Dynamic.literal(getEntityName = getEntityName, getEntityReference = getEntityReference, getId = getId, getPrimaryAttributeValue = getPrimaryAttributeValue)
+  
+    __obj.asInstanceOf[GridEntity]
+  }
+}
+

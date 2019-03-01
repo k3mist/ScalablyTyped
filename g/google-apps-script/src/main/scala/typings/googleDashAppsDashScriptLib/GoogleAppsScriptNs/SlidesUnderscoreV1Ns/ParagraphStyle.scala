@@ -48,3 +48,22 @@ trait ParagraphStyle extends js.Object {
   var spacing_mode: ParagraphStyleSpacingMode
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    alignment: ParagraphStyleAlignment,
+    direction: ParagraphStyleTextDirection,
+    indent_end: Dimension,
+    indent_first_line: Dimension,
+    indent_start: Dimension,
+    line_spacing: scala.Double,
+    space_above: Dimension,
+    space_below: Dimension,
+    spacing_mode: ParagraphStyleSpacingMode
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal(alignment = alignment, direction = direction, indent_end = indent_end, indent_first_line = indent_first_line, indent_start = indent_start, line_spacing = line_spacing, space_above = space_above, space_below = space_below, spacing_mode = spacing_mode)
+  
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

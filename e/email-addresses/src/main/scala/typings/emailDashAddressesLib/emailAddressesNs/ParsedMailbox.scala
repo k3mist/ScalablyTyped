@@ -15,3 +15,20 @@ trait ParsedMailbox extends js.Object {
   var `type`: java.lang.String
 }
 
+object ParsedMailbox {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    domain: java.lang.String,
+    local: java.lang.String,
+    name: java.lang.String,
+    parts: emailDashAddressesLib.Anon_Address,
+    `type`: java.lang.String,
+    node: ASTNode = null
+  ): ParsedMailbox = {
+    val __obj = js.Dynamic.literal(address = address, domain = domain, local = local, name = name, parts = parts, `type` = `type`)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[ParsedMailbox]
+  }
+}
+

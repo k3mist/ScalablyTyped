@@ -54,3 +54,59 @@ trait TestCaseResult extends js.Object {
   var url: java.lang.String
 }
 
+object TestCaseResult {
+  @scala.inline
+  def apply(
+    afnStripId: scala.Double,
+    area: ShallowReference,
+    associatedBugs: js.Array[ShallowReference],
+    automatedTestId: java.lang.String,
+    automatedTestName: java.lang.String,
+    automatedTestStorage: java.lang.String,
+    automatedTestType: java.lang.String,
+    automatedTestTypeId: java.lang.String,
+    build: ShallowReference,
+    buildReference: BuildReference,
+    comment: java.lang.String,
+    completedDate: stdLib.Date,
+    computerName: java.lang.String,
+    configuration: ShallowReference,
+    createdDate: stdLib.Date,
+    customFields: js.Array[CustomTestField],
+    durationInMs: scala.Double,
+    errorMessage: java.lang.String,
+    failingSince: FailingSince,
+    failureType: java.lang.String,
+    id: scala.Double,
+    iterationDetails: js.Array[TestIterationDetailsModel],
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    outcome: java.lang.String,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    priority: scala.Double,
+    project: ShallowReference,
+    release: ShallowReference,
+    releaseReference: ReleaseReference,
+    resetCount: scala.Double,
+    resolutionState: java.lang.String,
+    resolutionStateId: scala.Double,
+    revision: scala.Double,
+    runBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    stackTrace: java.lang.String,
+    startedDate: stdLib.Date,
+    state: java.lang.String,
+    testCase: ShallowReference,
+    testCaseReferenceId: scala.Double,
+    testCaseTitle: java.lang.String,
+    testPlan: ShallowReference,
+    testPoint: ShallowReference,
+    testRun: ShallowReference,
+    testSuite: ShallowReference,
+    url: java.lang.String
+  ): TestCaseResult = {
+    val __obj = js.Dynamic.literal(afnStripId = afnStripId, area = area, associatedBugs = associatedBugs, automatedTestId = automatedTestId, automatedTestName = automatedTestName, automatedTestStorage = automatedTestStorage, automatedTestType = automatedTestType, automatedTestTypeId = automatedTestTypeId, build = build, buildReference = buildReference, comment = comment, completedDate = completedDate, computerName = computerName, configuration = configuration, createdDate = createdDate, customFields = customFields, durationInMs = durationInMs, errorMessage = errorMessage, failingSince = failingSince, failureType = failureType, id = id, iterationDetails = iterationDetails, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, outcome = outcome, owner = owner, priority = priority, project = project, release = release, releaseReference = releaseReference, resetCount = resetCount, resolutionState = resolutionState, resolutionStateId = resolutionStateId, revision = revision, runBy = runBy, stackTrace = stackTrace, startedDate = startedDate, state = state, testCase = testCase, testCaseReferenceId = testCaseReferenceId, testCaseTitle = testCaseTitle, testPlan = testPlan, testPoint = testPoint, testRun = testRun, testSuite = testSuite, url = url)
+  
+    __obj.asInstanceOf[TestCaseResult]
+  }
+}
+

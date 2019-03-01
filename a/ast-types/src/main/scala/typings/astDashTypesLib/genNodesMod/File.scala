@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.File
 }
 
+object File {
+  @scala.inline
+  def apply(
+    program: astDashTypesLib.genKindsMod.ProgramKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.File,
+    name: java.lang.String = null
+  ): File = {
+    val __obj = js.Dynamic.literal(program = program, `type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[File]
+  }
+}
+

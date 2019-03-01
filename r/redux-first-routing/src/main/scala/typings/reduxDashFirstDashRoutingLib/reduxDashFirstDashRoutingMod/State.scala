@@ -12,3 +12,17 @@ trait State extends js.Object {
   var search: historyLib.historyMod.Search
 }
 
+object State {
+  @scala.inline
+  def apply(
+    hash: historyLib.historyMod.Hash,
+    pathname: historyLib.historyMod.Pathname,
+    queries: js.Any,
+    search: historyLib.historyMod.Search
+  ): State = {
+    val __obj = js.Dynamic.literal(hash = hash, pathname = pathname, queries = queries, search = search)
+  
+    __obj.asInstanceOf[State]
+  }
+}
+

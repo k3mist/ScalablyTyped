@@ -16,3 +16,12 @@ trait GetRulesPackagesResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetRulesPackagesResult {
+  @scala.inline
+  def apply(arns: js.Array[java.lang.String], id: java.lang.String): GetRulesPackagesResult = {
+    val __obj = js.Dynamic.literal(arns = arns, id = id)
+  
+    __obj.asInstanceOf[GetRulesPackagesResult]
+  }
+}
+

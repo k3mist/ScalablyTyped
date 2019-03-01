@@ -14,3 +14,19 @@ trait IdTokenResult extends js.Object {
   var token: java.lang.String
 }
 
+object IdTokenResult {
+  @scala.inline
+  def apply(
+    authTime: java.lang.String,
+    claims: org.scalablytyped.runtime.StringDictionary[js.Any],
+    expirationTime: java.lang.String,
+    issuedAtTime: java.lang.String,
+    token: java.lang.String,
+    signInProvider: java.lang.String = null
+  ): IdTokenResult = {
+    val __obj = js.Dynamic.literal(authTime = authTime, claims = claims, expirationTime = expirationTime, issuedAtTime = issuedAtTime, token = token)
+    if (signInProvider != null) __obj.updateDynamic("signInProvider")(signInProvider)
+    __obj.asInstanceOf[IdTokenResult]
+  }
+}
+

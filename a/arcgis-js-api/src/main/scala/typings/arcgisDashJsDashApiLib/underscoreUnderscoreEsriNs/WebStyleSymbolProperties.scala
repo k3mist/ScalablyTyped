@@ -32,3 +32,22 @@ trait WebStyleSymbolProperties extends SymbolProperties {
   var styleUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebStyleSymbolProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    name: java.lang.String = null,
+    portal: PortalProperties = null,
+    styleName: java.lang.String = null,
+    styleUrl: java.lang.String = null
+  ): WebStyleSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
+    if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl)
+    __obj.asInstanceOf[WebStyleSymbolProperties]
+  }
+}
+

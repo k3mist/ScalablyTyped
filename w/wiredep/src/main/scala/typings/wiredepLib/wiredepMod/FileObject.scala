@@ -20,3 +20,12 @@ trait FileObject extends js.Object {
   var path: java.lang.String
 }
 
+object FileObject {
+  @scala.inline
+  def apply(block: java.lang.String, file: java.lang.String, path: java.lang.String): FileObject = {
+    val __obj = js.Dynamic.literal(block = block, file = file, path = path)
+  
+    __obj.asInstanceOf[FileObject]
+  }
+}
+

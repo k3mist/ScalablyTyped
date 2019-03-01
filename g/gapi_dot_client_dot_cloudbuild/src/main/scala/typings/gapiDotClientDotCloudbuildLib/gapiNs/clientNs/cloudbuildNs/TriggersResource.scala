@@ -38,3 +38,33 @@ trait TriggersResource extends js.Object {
   def patch(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
 }
 
+object TriggersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListBuildTriggersResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+    ]
+  ): TriggersResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+  
+    __obj.asInstanceOf[TriggersResource]
+  }
+}
+

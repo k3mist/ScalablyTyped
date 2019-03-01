@@ -11,3 +11,12 @@ trait RuleConditionModel extends js.Object {
   var value: java.lang.String
 }
 
+object RuleConditionModel {
+  @scala.inline
+  def apply(conditionType: java.lang.String, field: java.lang.String, value: java.lang.String): RuleConditionModel = {
+    val __obj = js.Dynamic.literal(conditionType = conditionType, field = field, value = value)
+  
+    __obj.asInstanceOf[RuleConditionModel]
+  }
+}
+

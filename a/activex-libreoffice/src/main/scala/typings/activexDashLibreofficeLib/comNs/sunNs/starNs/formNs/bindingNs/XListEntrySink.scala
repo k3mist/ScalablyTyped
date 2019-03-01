@@ -21,3 +21,19 @@ trait XListEntrySink
   def setListEntrySource(Source: XListEntrySource): scala.Unit
 }
 
+object XListEntrySink {
+  @scala.inline
+  def apply(
+    ListEntrySource: XListEntrySource,
+    acquire: js.Function0[scala.Unit],
+    getListEntrySource: js.Function0[XListEntrySource],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setListEntrySource: js.Function1[XListEntrySource, scala.Unit]
+  ): XListEntrySink = {
+    val __obj = js.Dynamic.literal(ListEntrySource = ListEntrySource, acquire = acquire, getListEntrySource = getListEntrySource, queryInterface = queryInterface, release = release, setListEntrySource = setListEntrySource)
+  
+    __obj.asInstanceOf[XListEntrySink]
+  }
+}
+

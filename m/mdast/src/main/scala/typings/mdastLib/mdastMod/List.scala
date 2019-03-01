@@ -17,3 +17,24 @@ trait List
   var type_List: mdastLib.mdastLibStrings.list
 }
 
+object List {
+  @scala.inline
+  def apply(
+    children: js.Array[ListContent],
+    `type`: mdastLib.mdastLibStrings.list,
+    data: unistLib.unistMod.Data = null,
+    ordered: js.UndefOr[scala.Boolean] = js.undefined,
+    position: unistLib.unistMod.Position = null,
+    spread: js.UndefOr[scala.Boolean] = js.undefined,
+    start: scala.Int | scala.Double = null
+  ): List = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[List]
+  }
+}
+

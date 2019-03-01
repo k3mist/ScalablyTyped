@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.IfStatement
 }
 
+object IfStatement {
+  @scala.inline
+  def apply(
+    consequent: astDashTypesLib.genKindsMod.StatementKind,
+    test: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.IfStatement,
+    alternate: astDashTypesLib.genKindsMod.StatementKind = null
+  ): IfStatement = {
+    val __obj = js.Dynamic.literal(consequent = consequent, test = test, `type` = `type`)
+    if (alternate != null) __obj.updateDynamic("alternate")(alternate)
+    __obj.asInstanceOf[IfStatement]
+  }
+}
+

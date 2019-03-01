@@ -15,3 +15,15 @@ trait IMatchContext extends IURLContext {
   var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
 }
 
+object IMatchContext {
+  @scala.inline
+  def apply(
+    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any,
+    url: stdLib.URL
+  ): IMatchContext = {
+    val __obj = js.Dynamic.literal(event = event, url = url)
+  
+    __obj.asInstanceOf[IMatchContext]
+  }
+}
+

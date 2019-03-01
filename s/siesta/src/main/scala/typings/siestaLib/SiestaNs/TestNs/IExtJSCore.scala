@@ -20,3 +20,22 @@ trait IExtJSCore extends js.Object {
   def requireOk(args: js.Any*): scala.Unit
 }
 
+object IExtJSCore {
+  @scala.inline
+  def apply(
+    Ext: js.Function0[js.Any],
+    clickCQ: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
+    clickComponentQuery: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
+    compositeQuery: js.Function3[java.lang.String, js.Any, scala.Boolean, js.Array[stdLib.HTMLElement]],
+    cq: js.Function1[java.lang.String, js.Any],
+    cq1: js.Function1[java.lang.String, js.Any],
+    getExt: js.Function0[js.Any],
+    knownBugIn: js.Function3[java.lang.String, js.Function, java.lang.String, js.Any],
+    requireOk: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): IExtJSCore = {
+    val __obj = js.Dynamic.literal(Ext = Ext, clickCQ = clickCQ, clickComponentQuery = clickComponentQuery, compositeQuery = compositeQuery, cq = cq, cq1 = cq1, getExt = getExt, knownBugIn = knownBugIn, requireOk = requireOk)
+  
+    __obj.asInstanceOf[IExtJSCore]
+  }
+}
+

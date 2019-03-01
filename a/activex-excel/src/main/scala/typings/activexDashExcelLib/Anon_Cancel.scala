@@ -11,3 +11,16 @@ trait Anon_Cancel extends js.Object {
   val Reason: activexDashExcelLib.ExcelNs.XlProtectedViewCloseReason
 }
 
+object Anon_Cancel {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    Pvw: activexDashExcelLib.ExcelNs.ProtectedViewWindow,
+    Reason: activexDashExcelLib.ExcelNs.XlProtectedViewCloseReason
+  ): Anon_Cancel = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Pvw = Pvw, Reason = Reason)
+  
+    __obj.asInstanceOf[Anon_Cancel]
+  }
+}
+

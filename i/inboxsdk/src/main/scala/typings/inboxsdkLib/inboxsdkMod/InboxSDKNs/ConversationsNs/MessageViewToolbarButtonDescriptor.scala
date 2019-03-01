@@ -14,3 +14,19 @@ trait MessageViewToolbarButtonDescriptor extends js.Object {
   def onClick(): scala.Unit
 }
 
+object MessageViewToolbarButtonDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function0[scala.Unit],
+    orderHint: scala.Double,
+    section: inboxsdkLib.inboxsdkLibStrings.MORE,
+    title: java.lang.String,
+    iconClass: java.lang.String = null
+  ): MessageViewToolbarButtonDescriptor = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, orderHint = orderHint, section = section, title = title)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    __obj.asInstanceOf[MessageViewToolbarButtonDescriptor]
+  }
+}
+

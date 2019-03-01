@@ -68,3 +68,20 @@ trait IntegerBitmapLayout extends js.Object {
   var ScanLines: scala.Double
 }
 
+object IntegerBitmapLayout {
+  @scala.inline
+  def apply(
+    ColorSpace: XIntegerBitmapColorSpace,
+    IsMsbFirst: scala.Boolean,
+    Palette: XBitmapPalette,
+    PlaneStride: scala.Double,
+    ScanLineBytes: scala.Double,
+    ScanLineStride: scala.Double,
+    ScanLines: scala.Double
+  ): IntegerBitmapLayout = {
+    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, IsMsbFirst = IsMsbFirst, Palette = Palette, PlaneStride = PlaneStride, ScanLineBytes = ScanLineBytes, ScanLineStride = ScanLineStride, ScanLines = ScanLines)
+  
+    __obj.asInstanceOf[IntegerBitmapLayout]
+  }
+}
+

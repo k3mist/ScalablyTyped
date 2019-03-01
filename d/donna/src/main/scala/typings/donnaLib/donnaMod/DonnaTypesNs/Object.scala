@@ -16,3 +16,24 @@ trait Object extends js.Object {
   var `type`: java.lang.String
 }
 
+object Object {
+  @scala.inline
+  def apply(
+    bindingType: java.lang.String,
+    name: java.lang.String,
+    range: js.Array[js.Array[scala.Double]],
+    `type`: java.lang.String,
+    classProperties: js.Array[_] = null,
+    doc: java.lang.String = null,
+    paramNames: js.Array[java.lang.String] = null,
+    prototypeProperties: js.Array[js.Array[scala.Double]] = null
+  ): Object = {
+    val __obj = js.Dynamic.literal(bindingType = bindingType, name = name, range = range, `type` = `type`)
+    if (classProperties != null) __obj.updateDynamic("classProperties")(classProperties)
+    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (prototypeProperties != null) __obj.updateDynamic("prototypeProperties")(prototypeProperties)
+    __obj.asInstanceOf[Object]
+  }
+}
+

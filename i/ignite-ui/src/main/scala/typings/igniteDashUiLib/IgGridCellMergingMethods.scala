@@ -42,3 +42,22 @@ trait IgGridCellMergingMethods extends js.Object {
   def unmergeRow(id: js.Object, index: js.Object): scala.Unit
 }
 
+object IgGridCellMergingMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    isMerged: js.Function1[js.Object, scala.Boolean],
+    mergeColumn: js.Function2[js.Object, scala.Boolean, java.lang.String],
+    mergeRow: js.Function2[js.Object, js.Object, scala.Unit],
+    unmergeColumn: js.Function1[js.Object, java.lang.String],
+    unmergeRow: js.Function2[js.Object, js.Object, scala.Unit]
+  ): IgGridCellMergingMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, isMerged = isMerged, mergeColumn = mergeColumn, mergeRow = mergeRow, unmergeColumn = unmergeColumn, unmergeRow = unmergeRow)
+  
+    __obj.asInstanceOf[IgGridCellMergingMethods]
+  }
+}
+

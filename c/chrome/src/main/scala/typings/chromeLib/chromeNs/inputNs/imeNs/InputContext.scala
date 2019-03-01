@@ -27,3 +27,18 @@ trait InputContext extends js.Object {
   var `type`: java.lang.String
 }
 
+object InputContext {
+  @scala.inline
+  def apply(
+    autoComplete: scala.Boolean,
+    autoCorrect: scala.Boolean,
+    contextID: scala.Double,
+    spellCheck: scala.Boolean,
+    `type`: java.lang.String
+  ): InputContext = {
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, autoCorrect = autoCorrect, contextID = contextID, spellCheck = spellCheck, `type` = `type`)
+  
+    __obj.asInstanceOf[InputContext]
+  }
+}
+

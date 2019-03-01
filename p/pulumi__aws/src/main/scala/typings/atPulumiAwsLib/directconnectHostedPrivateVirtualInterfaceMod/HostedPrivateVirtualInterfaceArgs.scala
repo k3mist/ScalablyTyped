@@ -48,3 +48,27 @@ trait HostedPrivateVirtualInterfaceArgs extends js.Object {
   val vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double]
 }
 
+object HostedPrivateVirtualInterfaceArgs {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ownerAccountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    amazonAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    bgpAuthKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    mtu: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): HostedPrivateVirtualInterfaceArgs = {
+    val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], ownerAccountId = ownerAccountId.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HostedPrivateVirtualInterfaceArgs]
+  }
+}
+

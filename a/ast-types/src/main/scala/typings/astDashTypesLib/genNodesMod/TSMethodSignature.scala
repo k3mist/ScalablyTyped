@@ -25,3 +25,23 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSMethodSignature
 }
 
+object TSMethodSignature {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    optional: scala.Boolean,
+    parameters: js.Array[
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSMethodSignature,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSMethodSignature = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key, optional = optional, parameters = parameters, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSMethodSignature]
+  }
+}
+

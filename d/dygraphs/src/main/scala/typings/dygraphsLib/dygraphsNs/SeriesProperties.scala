@@ -13,3 +13,18 @@ trait SeriesProperties extends js.Object {
   var visible: scala.Boolean
 }
 
+object SeriesProperties {
+  @scala.inline
+  def apply(
+    axis: scala.Double,
+    color: java.lang.String,
+    column: scala.Double,
+    name: java.lang.String,
+    visible: scala.Boolean
+  ): SeriesProperties = {
+    val __obj = js.Dynamic.literal(axis = axis, color = color, column = column, name = name, visible = visible)
+  
+    __obj.asInstanceOf[SeriesProperties]
+  }
+}
+

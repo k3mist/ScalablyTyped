@@ -12,3 +12,12 @@ trait Anon_Room extends js.Object {
   var y: scala.Double
 }
 
+object Anon_Room {
+  @scala.inline
+  def apply(room: java.lang.String, x: scala.Double, y: scala.Double): Anon_Room = {
+    val __obj = js.Dynamic.literal(room = room, x = x, y = y)
+  
+    __obj.asInstanceOf[Anon_Room]
+  }
+}
+

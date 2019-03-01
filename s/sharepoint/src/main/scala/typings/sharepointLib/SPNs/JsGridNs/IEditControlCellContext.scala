@@ -18,3 +18,29 @@ trait IEditControlCellContext extends IEditActorCellContext {
   def Show(element: stdLib.HTMLElement): scala.Unit
 }
 
+object IEditControlCellContext {
+  @scala.inline
+  def apply(
+    Hide: js.Function1[stdLib.HTMLElement, scala.Unit],
+    NotifyEditComplete: js.Function0[scala.Unit],
+    NotifyExpandControl: js.Function0[scala.Unit],
+    SetCurrentValue: js.Function1[js.Any, scala.Unit],
+    Show: js.Function1[stdLib.HTMLElement, scala.Unit],
+    cellExpandSpace: sharepointLib.Anon_Bottom,
+    cellHeight: scala.Double,
+    cellRect: js.Any,
+    cellStyle: js.Any,
+    cellWidth: scala.Double,
+    column: ColumnInfo,
+    field: GridField,
+    fieldKey: java.lang.String,
+    originalValue: IValue,
+    propType: IPropertyType,
+    record: IRecord
+  ): IEditControlCellContext = {
+    val __obj = js.Dynamic.literal(Hide = Hide, NotifyEditComplete = NotifyEditComplete, NotifyExpandControl = NotifyExpandControl, SetCurrentValue = SetCurrentValue, Show = Show, cellExpandSpace = cellExpandSpace, cellHeight = cellHeight, cellRect = cellRect, cellStyle = cellStyle, cellWidth = cellWidth, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
+  
+    __obj.asInstanceOf[IEditControlCellContext]
+  }
+}
+

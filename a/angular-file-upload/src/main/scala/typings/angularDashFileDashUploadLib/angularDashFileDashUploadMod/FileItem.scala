@@ -112,3 +112,39 @@ trait FileItem extends js.Object {
   def upload(): scala.Unit
 }
 
+object FileItem {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    cancel: js.Function0[scala.Unit],
+    file: FileLikeObject,
+    formData: js.Array[stdLib.FormData],
+    headers: stdLib.Headers,
+    index: scala.Double,
+    isCancel: scala.Boolean,
+    isError: scala.Boolean,
+    isReady: scala.Boolean,
+    isSuccess: scala.Boolean,
+    isUploaded: scala.Boolean,
+    isUploading: scala.Boolean,
+    method: java.lang.String,
+    onBeforeUpload: js.Function0[scala.Unit],
+    onCancel: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onComplete: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onError: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onProgress: js.Function1[scala.Double, scala.Unit],
+    onSuccess: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    progress: scala.Double,
+    remove: js.Function0[scala.Unit],
+    removeAfterUpload: scala.Boolean,
+    upload: js.Function0[scala.Unit],
+    uploader: FileUploader,
+    url: java.lang.String,
+    withCredentials: scala.Boolean
+  ): FileItem = {
+    val __obj = js.Dynamic.literal(alias = alias, cancel = cancel, file = file, formData = formData, headers = headers, index = index, isCancel = isCancel, isError = isError, isReady = isReady, isSuccess = isSuccess, isUploaded = isUploaded, isUploading = isUploading, method = method, onBeforeUpload = onBeforeUpload, onCancel = onCancel, onComplete = onComplete, onError = onError, onProgress = onProgress, onSuccess = onSuccess, progress = progress, remove = remove, removeAfterUpload = removeAfterUpload, upload = upload, uploader = uploader, url = url, withCredentials = withCredentials)
+  
+    __obj.asInstanceOf[FileItem]
+  }
+}
+

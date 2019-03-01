@@ -28,3 +28,18 @@ trait WorkspaceTemplate extends js.Object {
   var workspaceId: scala.Double
 }
 
+object WorkspaceTemplate {
+  @scala.inline
+  def apply(
+    definitionUri: java.lang.String,
+    lastModifiedBy: java.lang.String,
+    lastModifiedDate: stdLib.Date,
+    mappings: js.Array[WorkspaceMapping],
+    workspaceId: scala.Double
+  ): WorkspaceTemplate = {
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, mappings = mappings, workspaceId = workspaceId)
+  
+    __obj.asInstanceOf[WorkspaceTemplate]
+  }
+}
+

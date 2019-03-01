@@ -35,3 +35,16 @@ trait WorksheetDeletedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object WorksheetDeletedEventArgs {
+  @scala.inline
+  def apply(
+    source: EventSource | officeDashJsLib.officeDashJsLibStrings.Local | officeDashJsLib.officeDashJsLibStrings.Remote,
+    `type`: officeDashJsLib.officeDashJsLibStrings.WorksheetDeleted,
+    worksheetId: java.lang.String
+  ): WorksheetDeletedEventArgs = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[WorksheetDeletedEventArgs]
+  }
+}
+

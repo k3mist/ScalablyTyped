@@ -12,3 +12,17 @@ trait Anon_KeepBothFiles extends js.Object {
   var undecided: scala.Double
 }
 
+object Anon_KeepBothFiles {
+  @scala.inline
+  def apply(
+    keepBothFiles: scala.Double,
+    keepSourcePath: scala.Double,
+    keepTargetPath: scala.Double,
+    undecided: scala.Double
+  ): Anon_KeepBothFiles = {
+    val __obj = js.Dynamic.literal(keepBothFiles = keepBothFiles, keepSourcePath = keepSourcePath, keepTargetPath = keepTargetPath, undecided = undecided)
+  
+    __obj.asInstanceOf[Anon_KeepBothFiles]
+  }
+}
+

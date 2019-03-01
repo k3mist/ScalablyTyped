@@ -24,3 +24,12 @@ trait SecretKeySelector extends js.Object {
   val optional: scala.Boolean
 }
 
+object SecretKeySelector {
+  @scala.inline
+  def apply(key: java.lang.String, name: java.lang.String, optional: scala.Boolean): SecretKeySelector = {
+    val __obj = js.Dynamic.literal(key = key, name = name, optional = optional)
+  
+    __obj.asInstanceOf[SecretKeySelector]
+  }
+}
+

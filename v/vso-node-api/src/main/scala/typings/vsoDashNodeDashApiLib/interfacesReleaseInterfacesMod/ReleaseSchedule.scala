@@ -28,3 +28,18 @@ trait ReleaseSchedule extends js.Object {
   var timeZoneId: java.lang.String
 }
 
+object ReleaseSchedule {
+  @scala.inline
+  def apply(
+    daysToRelease: ScheduleDays,
+    jobId: java.lang.String,
+    startHours: scala.Double,
+    startMinutes: scala.Double,
+    timeZoneId: java.lang.String
+  ): ReleaseSchedule = {
+    val __obj = js.Dynamic.literal(daysToRelease = daysToRelease, jobId = jobId, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+  
+    __obj.asInstanceOf[ReleaseSchedule]
+  }
+}
+

@@ -16,3 +16,21 @@ trait KnockoutVirtualElements extends js.Object {
   def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Anon_Index): scala.Unit
 }
 
+object KnockoutVirtualElements {
+  @scala.inline
+  def apply(
+    allowedBindings: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    childNodes: js.Function1[KnockoutVirtualElement, js.Array[stdLib.Node]],
+    emptyNode: js.Function1[KnockoutVirtualElement, scala.Unit],
+    firstChild: js.Function1[KnockoutVirtualElement, KnockoutVirtualElement],
+    insertAfter: js.Function3[KnockoutVirtualElement, stdLib.Node, stdLib.Node, scala.Unit],
+    nextSibling: js.Function1[KnockoutVirtualElement, stdLib.Node],
+    prepend: js.Function2[KnockoutVirtualElement, stdLib.Node, scala.Unit],
+    setDomNodeChildren: js.Function2[KnockoutVirtualElement, Anon_Index, scala.Unit]
+  ): KnockoutVirtualElements = {
+    val __obj = js.Dynamic.literal(allowedBindings = allowedBindings, childNodes = childNodes, emptyNode = emptyNode, firstChild = firstChild, insertAfter = insertAfter, nextSibling = nextSibling, prepend = prepend, setDomNodeChildren = setDomNodeChildren)
+  
+    __obj.asInstanceOf[KnockoutVirtualElements]
+  }
+}
+

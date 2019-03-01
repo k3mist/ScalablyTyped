@@ -14,3 +14,18 @@ trait XRowSetApproveBroadcaster
   def removeRowSetApproveListener(listener: XRowSetApproveListener): scala.Unit
 }
 
+object XRowSetApproveBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addRowSetApproveListener: js.Function1[XRowSetApproveListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRowSetApproveListener: js.Function1[XRowSetApproveListener, scala.Unit]
+  ): XRowSetApproveBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addRowSetApproveListener = addRowSetApproveListener, queryInterface = queryInterface, release = release, removeRowSetApproveListener = removeRowSetApproveListener)
+  
+    __obj.asInstanceOf[XRowSetApproveBroadcaster]
+  }
+}
+

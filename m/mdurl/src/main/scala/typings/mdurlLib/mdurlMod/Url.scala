@@ -16,3 +16,21 @@ trait Url extends js.Object {
   var slashes: java.lang.String
 }
 
+object Url {
+  @scala.inline
+  def apply(
+    auth: java.lang.String,
+    hash: java.lang.String,
+    hostname: java.lang.String,
+    pathname: java.lang.String,
+    port: java.lang.String,
+    protocol: java.lang.String,
+    search: java.lang.String,
+    slashes: java.lang.String
+  ): Url = {
+    val __obj = js.Dynamic.literal(auth = auth, hash = hash, hostname = hostname, pathname = pathname, port = port, protocol = protocol, search = search, slashes = slashes)
+  
+    __obj.asInstanceOf[Url]
+  }
+}
+

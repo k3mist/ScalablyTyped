@@ -10,3 +10,15 @@ trait MultiPeriodMarkingProps extends _CalendarMarkingProps {
   var markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-period`
 }
 
+object MultiPeriodMarkingProps {
+  @scala.inline
+  def apply(
+    markedDates: org.scalablytyped.runtime.StringDictionary[MultiPeriodMarking],
+    markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-period`
+  ): MultiPeriodMarkingProps = {
+    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+  
+    __obj.asInstanceOf[MultiPeriodMarkingProps]
+  }
+}
+

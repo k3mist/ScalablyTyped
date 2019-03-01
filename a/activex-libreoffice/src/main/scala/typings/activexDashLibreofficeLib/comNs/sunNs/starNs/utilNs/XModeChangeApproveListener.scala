@@ -21,3 +21,18 @@ trait XModeChangeApproveListener
   def approveModeChange(rSource: ModeChangeEvent): scala.Unit
 }
 
+object XModeChangeApproveListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveModeChange: js.Function1[ModeChangeEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XModeChangeApproveListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, approveModeChange = approveModeChange, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XModeChangeApproveListener]
+  }
+}
+

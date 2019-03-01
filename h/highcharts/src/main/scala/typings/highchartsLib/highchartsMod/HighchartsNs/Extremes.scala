@@ -26,3 +26,12 @@ trait Extremes extends js.Object {
   var min: scala.Double
 }
 
+object Extremes {
+  @scala.inline
+  def apply(dataMax: scala.Double, dataMin: scala.Double, max: scala.Double, min: scala.Double): Extremes = {
+    val __obj = js.Dynamic.literal(dataMax = dataMax, dataMin = dataMin, max = max, min = min)
+  
+    __obj.asInstanceOf[Extremes]
+  }
+}
+

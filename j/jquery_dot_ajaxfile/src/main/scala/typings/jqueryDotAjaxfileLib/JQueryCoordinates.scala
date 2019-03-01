@@ -13,3 +13,12 @@ trait JQueryCoordinates extends js.Object {
   var top: scala.Double
 }
 
+object JQueryCoordinates {
+  @scala.inline
+  def apply(left: scala.Double, top: scala.Double): JQueryCoordinates = {
+    val __obj = js.Dynamic.literal(left = left, top = top)
+  
+    __obj.asInstanceOf[JQueryCoordinates]
+  }
+}
+

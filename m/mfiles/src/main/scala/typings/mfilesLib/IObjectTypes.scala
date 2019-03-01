@@ -11,3 +11,16 @@ trait IObjectTypes extends js.Object {
   def Item(Index: scala.Double): IObjectType
 }
 
+object IObjectTypes {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IObjectTypes],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IObjectType]
+  ): IObjectTypes = {
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[IObjectTypes]
+  }
+}
+

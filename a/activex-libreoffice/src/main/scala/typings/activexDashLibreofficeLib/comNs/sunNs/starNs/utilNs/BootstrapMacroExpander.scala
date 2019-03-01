@@ -20,3 +20,21 @@ trait BootstrapMacroExpander
   extends MacroExpander
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XInitialization
 
+object BootstrapMacroExpander {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    expandMacros: js.Function1[java.lang.String, java.lang.String],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): BootstrapMacroExpander = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, expandMacros = expandMacros, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[BootstrapMacroExpander]
+  }
+}
+

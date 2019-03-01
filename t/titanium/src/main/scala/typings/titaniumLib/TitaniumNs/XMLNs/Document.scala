@@ -260,3 +260,85 @@ trait Document
   def replaceChild(newChild: Node, oldChild: Node): Node
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    ATTRIBUTE_NODE: scala.Double,
+    CDATA_SECTION_NODE: scala.Double,
+    COMMENT_NODE: scala.Double,
+    DOCUMENT_FRAGMENT_NODE: scala.Double,
+    DOCUMENT_NODE: scala.Double,
+    DOCUMENT_TYPE_NODE: scala.Double,
+    ELEMENT_NODE: scala.Double,
+    ENTITY_NODE: scala.Double,
+    ENTITY_REFERENCE_NODE: scala.Double,
+    NOTATION_NODE: scala.Double,
+    PROCESSING_INSTRUCTION_NODE: scala.Double,
+    TEXT_NODE: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    appendChild: js.Function1[Node, Node],
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    attributes: NamedNodeMap,
+    bubbleParent: scala.Boolean,
+    childNodes: NodeList,
+    cloneNode: js.Function1[scala.Boolean, Node],
+    createAttribute: js.Function1[java.lang.String, Attr],
+    createAttributeNS: js.Function2[java.lang.String, java.lang.String, Attr],
+    createCDATASection: js.Function1[java.lang.String, CDATASection],
+    createComment: js.Function1[java.lang.String, Comment],
+    createDocumentFragment: js.Function0[DocumentFragment],
+    createElement: js.Function1[java.lang.String, Element],
+    createElementNS: js.Function2[java.lang.String, java.lang.String, Element],
+    createEntityReference: js.Function1[java.lang.String, EntityReference],
+    createProcessingInstruction: js.Function2[java.lang.String, java.lang.String, ProcessingInstruction],
+    createTextNode: js.Function1[java.lang.String, Text],
+    doctype: DocumentType,
+    documentElement: Element,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    firstChild: Node,
+    getApiName: js.Function0[java.lang.String],
+    getAttributes: js.Function0[NamedNodeMap],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDoctype: js.Function0[DocumentType],
+    getDocumentElement: js.Function0[Element],
+    getElementById: js.Function1[java.lang.String, Element],
+    getElementsByTagName: js.Function1[java.lang.String, NodeList],
+    getElementsByTagNameNS: js.Function2[java.lang.String, java.lang.String, NodeList],
+    getImplementation: js.Function0[DOMImplementation],
+    hasAttributes: js.Function0[scala.Boolean],
+    hasChildNodes: js.Function0[scala.Boolean],
+    implementation: DOMImplementation,
+    importNode: js.Function2[Node, scala.Boolean, Node],
+    insertBefore: js.Function2[Node, Node, Node],
+    isSupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    lastChild: Node,
+    localName: java.lang.String,
+    namespaceURI: java.lang.String,
+    nextSibling: Node,
+    nodeName: java.lang.String,
+    nodeType: scala.Double,
+    nodeValue: java.lang.String,
+    normalize: js.Function0[scala.Unit],
+    ownerDocument: Document,
+    parentNode: Node,
+    prefix: java.lang.String,
+    previousSibling: Node,
+    removeChild: js.Function1[Node, Node],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    replaceChild: js.Function2[Node, Node, Node],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    text: java.lang.String,
+    textContent: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Document = {
+    val __obj = js.Dynamic.literal(ATTRIBUTE_NODE = ATTRIBUTE_NODE, CDATA_SECTION_NODE = CDATA_SECTION_NODE, COMMENT_NODE = COMMENT_NODE, DOCUMENT_FRAGMENT_NODE = DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE = DOCUMENT_NODE, DOCUMENT_TYPE_NODE = DOCUMENT_TYPE_NODE, ELEMENT_NODE = ELEMENT_NODE, ENTITY_NODE = ENTITY_NODE, ENTITY_REFERENCE_NODE = ENTITY_REFERENCE_NODE, NOTATION_NODE = NOTATION_NODE, PROCESSING_INSTRUCTION_NODE = PROCESSING_INSTRUCTION_NODE, TEXT_NODE = TEXT_NODE, addEventListener = addEventListener, apiName = apiName, appendChild = appendChild, applyProperties = applyProperties, attributes = attributes, bubbleParent = bubbleParent, childNodes = childNodes, cloneNode = cloneNode, createAttribute = createAttribute, createAttributeNS = createAttributeNS, createCDATASection = createCDATASection, createComment = createComment, createDocumentFragment = createDocumentFragment, createElement = createElement, createElementNS = createElementNS, createEntityReference = createEntityReference, createProcessingInstruction = createProcessingInstruction, createTextNode = createTextNode, doctype = doctype, documentElement = documentElement, fireEvent = fireEvent, firstChild = firstChild, getApiName = getApiName, getAttributes = getAttributes, getBubbleParent = getBubbleParent, getDoctype = getDoctype, getDocumentElement = getDocumentElement, getElementById = getElementById, getElementsByTagName = getElementsByTagName, getElementsByTagNameNS = getElementsByTagNameNS, getImplementation = getImplementation, hasAttributes = hasAttributes, hasChildNodes = hasChildNodes, implementation = implementation, importNode = importNode, insertBefore = insertBefore, isSupported = isSupported, lastChild = lastChild, localName = localName, namespaceURI = namespaceURI, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = normalize, ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = removeChild, removeEventListener = removeEventListener, replaceChild = replaceChild, setBubbleParent = setBubbleParent, text = text, textContent = textContent)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Document]
+  }
+}
+

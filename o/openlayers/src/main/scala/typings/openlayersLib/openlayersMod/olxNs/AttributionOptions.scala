@@ -9,3 +9,12 @@ trait AttributionOptions extends js.Object {
   var html: java.lang.String
 }
 
+object AttributionOptions {
+  @scala.inline
+  def apply(html: java.lang.String): AttributionOptions = {
+    val __obj = js.Dynamic.literal(html = html)
+  
+    __obj.asInstanceOf[AttributionOptions]
+  }
+}
+

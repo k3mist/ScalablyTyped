@@ -22,3 +22,33 @@ trait ScoresResource extends js.Object {
   def submitMultiple(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreListResponse]
 }
 
+object ScoresResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsIncludeRankType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerLeaderboardScoreListResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores]
+    ],
+    listWindow: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltCollectionConsistencyTokenFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores]
+    ],
+    submit: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageLeaderboardId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreResponse]
+    ],
+    submitMultiple: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreListResponse]
+    ]
+  ): ScoresResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list, listWindow = listWindow, submit = submit, submitMultiple = submitMultiple)
+  
+    __obj.asInstanceOf[ScoresResource]
+  }
+}
+

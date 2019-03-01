@@ -15,3 +15,23 @@ trait ISyndicationClient extends js.Object {
   def setRequestHeader(name: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object ISyndicationClient {
+  @scala.inline
+  def apply(
+    bypassCacheOnRetrieve: scala.Boolean,
+    maxResponseBufferSize: scala.Double,
+    proxyCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
+    retrieveFeedAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress]
+    ],
+    serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
+    setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    timeout: scala.Double
+  ): ISyndicationClient = {
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve, maxResponseBufferSize = maxResponseBufferSize, proxyCredential = proxyCredential, retrieveFeedAsync = retrieveFeedAsync, serverCredential = serverCredential, setRequestHeader = setRequestHeader, timeout = timeout)
+  
+    __obj.asInstanceOf[ISyndicationClient]
+  }
+}
+

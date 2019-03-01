@@ -21,3 +21,18 @@ trait ContinuousRendererResultSize
   var visualVariables: js.Array[SizeVariable]
 }
 
+object ContinuousRendererResultSize {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sizeScheme: SizeScheme,
+    visualVariables: js.Array[SizeVariable]
+  ): ContinuousRendererResultSize = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, visualVariables = visualVariables)
+  
+    __obj.asInstanceOf[ContinuousRendererResultSize]
+  }
+}
+

@@ -21,3 +21,18 @@ trait FeatureEditResultError
   var name: java.lang.String
 }
 
+object FeatureEditResultError {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    message: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): FeatureEditResultError = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, message = message, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[FeatureEditResultError]
+  }
+}
+

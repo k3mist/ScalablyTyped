@@ -14,3 +14,15 @@ trait TableCellProperties extends js.Object {
   var table_cell_background_fill: TableCellPropertiesTableCellBackgroundFill
 }
 
+object TableCellProperties {
+  @scala.inline
+  def apply(
+    content_alignment: ContentAlignment,
+    table_cell_background_fill: TableCellPropertiesTableCellBackgroundFill
+  ): TableCellProperties = {
+    val __obj = js.Dynamic.literal(content_alignment = content_alignment, table_cell_background_fill = table_cell_background_fill)
+  
+    __obj.asInstanceOf[TableCellProperties]
+  }
+}
+

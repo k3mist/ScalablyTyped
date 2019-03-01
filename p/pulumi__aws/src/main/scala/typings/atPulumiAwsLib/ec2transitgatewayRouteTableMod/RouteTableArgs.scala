@@ -20,3 +20,17 @@ trait RouteTableArgs extends js.Object {
   val transitGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RouteTableArgs {
+  @scala.inline
+  def apply(
+    transitGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null
+  ): RouteTableArgs = {
+    val __obj = js.Dynamic.literal(transitGatewayId = transitGatewayId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteTableArgs]
+  }
+}
+

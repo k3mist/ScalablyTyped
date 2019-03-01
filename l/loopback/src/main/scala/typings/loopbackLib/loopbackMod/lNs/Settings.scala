@@ -10,3 +10,12 @@ trait Settings extends js.Object {
   var http: loopbackLib.Anon_Path
 }
 
+object Settings {
+  @scala.inline
+  def apply(acls: js.Array[ACL], http: loopbackLib.Anon_Path): Settings = {
+    val __obj = js.Dynamic.literal(acls = acls, http = http)
+  
+    __obj.asInstanceOf[Settings]
+  }
+}
+

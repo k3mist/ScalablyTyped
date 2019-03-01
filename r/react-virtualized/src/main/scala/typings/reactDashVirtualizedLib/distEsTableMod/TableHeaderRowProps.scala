@@ -14,3 +14,19 @@ trait TableHeaderRowProps extends js.Object {
   var width: scala.Double
 }
 
+object TableHeaderRowProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    columns: js.Array[reactLib.reactMod.ReactNs.ReactNode],
+    height: scala.Double,
+    scrollbarWidth: scala.Double,
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    width: scala.Double
+  ): TableHeaderRowProps = {
+    val __obj = js.Dynamic.literal(className = className, columns = columns, height = height, scrollbarWidth = scrollbarWidth, style = style, width = width)
+  
+    __obj.asInstanceOf[TableHeaderRowProps]
+  }
+}
+

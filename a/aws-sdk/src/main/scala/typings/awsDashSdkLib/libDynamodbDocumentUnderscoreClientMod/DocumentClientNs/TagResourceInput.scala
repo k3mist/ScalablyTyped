@@ -16,3 +16,12 @@ trait TagResourceInput extends js.Object {
   var Tags: TagList
 }
 
+object TagResourceInput {
+  @scala.inline
+  def apply(ResourceArn: ResourceArnString, Tags: TagList): TagResourceInput = {
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn, Tags = Tags)
+  
+    __obj.asInstanceOf[TagResourceInput]
+  }
+}
+

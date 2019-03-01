@@ -23,3 +23,16 @@ trait CookiesOnChangedCallbackChangeInfo extends js.Object {
   var removed: scala.Boolean
 }
 
+object CookiesOnChangedCallbackChangeInfo {
+  @scala.inline
+  def apply(
+    cause: java.lang.String | nwDotJsLib.nwDotJsLibStrings.evicted | nwDotJsLib.nwDotJsLibStrings.expired | nwDotJsLib.nwDotJsLibStrings.explicit | nwDotJsLib.nwDotJsLibStrings.expired_overwrite | nwDotJsLib.nwDotJsLibStrings.overwrite,
+    cookie: Cookie,
+    removed: scala.Boolean
+  ): CookiesOnChangedCallbackChangeInfo = {
+    val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie, removed = removed)
+  
+    __obj.asInstanceOf[CookiesOnChangedCallbackChangeInfo]
+  }
+}
+

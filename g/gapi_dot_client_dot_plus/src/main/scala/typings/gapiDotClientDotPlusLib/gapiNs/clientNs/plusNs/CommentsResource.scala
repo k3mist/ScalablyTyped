@@ -12,3 +12,21 @@ trait CommentsResource extends js.Object {
   def list(request: gapiDotClientDotPlusLib.Anon_ActivityIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
 }
 
+object CommentsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlusLib.Anon_AltCommentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlusLib.Anon_ActivityIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
+    ]
+  ): CommentsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[CommentsResource]
+  }
+}
+

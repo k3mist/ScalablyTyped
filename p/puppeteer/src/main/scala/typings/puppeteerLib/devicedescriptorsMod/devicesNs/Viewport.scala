@@ -14,3 +14,19 @@ trait Viewport extends js.Object {
   var width: scala.Double
 }
 
+object Viewport {
+  @scala.inline
+  def apply(
+    deviceScaleFactor: scala.Double,
+    hasTouch: scala.Boolean,
+    height: scala.Double,
+    isLandscape: scala.Boolean,
+    isMobile: scala.Boolean,
+    width: scala.Double
+  ): Viewport = {
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, hasTouch = hasTouch, height = height, isLandscape = isLandscape, isMobile = isMobile, width = width)
+  
+    __obj.asInstanceOf[Viewport]
+  }
+}
+

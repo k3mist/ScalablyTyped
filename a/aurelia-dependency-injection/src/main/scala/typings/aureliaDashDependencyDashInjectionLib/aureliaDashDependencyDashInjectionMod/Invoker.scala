@@ -28,3 +28,15 @@ trait Invoker extends js.Object {
   ): js.Any
 }
 
+object Invoker {
+  @scala.inline
+  def apply(
+    invoke: js.Function3[Container, js.Function, js.Array[_], js.Any],
+    invokeWithDynamicDependencies: js.Function4[Container, js.Function, js.Array[_], js.Array[_], js.Any]
+  ): Invoker = {
+    val __obj = js.Dynamic.literal(invoke = invoke, invokeWithDynamicDependencies = invokeWithDynamicDependencies)
+  
+    __obj.asInstanceOf[Invoker]
+  }
+}
+

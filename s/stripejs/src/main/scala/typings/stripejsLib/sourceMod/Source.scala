@@ -91,3 +91,38 @@ trait Source
   var usage: stripejsLib.stripejsLibStrings.reusable
 }
 
+object Source {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    client_secret: java.lang.String,
+    created: scala.Double,
+    currency: java.lang.String,
+    flow: stripejsLib.stripejsLibStrings.redirect | stripejsLib.stripejsLibStrings.receiver | stripejsLib.stripejsLibStrings.code_verification | stripejsLib.stripejsLibStrings.none,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `object`: stripejsLib.stripejsLibStrings.source,
+    owner: stripejsLib.customerMod.Customer,
+    statement_descriptor: java.lang.String,
+    status: stripejsLib.stripejsLibStrings.pending | stripejsLib.stripejsLibStrings.canceled | stripejsLib.stripejsLibStrings.failed | stripejsLib.stripejsLibStrings.consumed | stripejsLib.stripejsLibStrings.chargeable,
+    `type`: paymentOptions,
+    usage: stripejsLib.stripejsLibStrings.reusable,
+    StringDictionary: /**
+    * A matching name to the type with extra information about the payment method
+    * @see type
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    code_verification: CodeVerification = null,
+    receiver: Receiver = null,
+    redirect: Redirect = null
+  ): Source = {
+    val __obj = js.Dynamic.literal(amount = amount, client_secret = client_secret, created = created, currency = currency, flow = flow.asInstanceOf[js.Any], id = id, livemode = livemode, metadata = metadata, `object` = `object`, owner = owner, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], `type` = `type`, usage = usage)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification)
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    __obj.asInstanceOf[Source]
+  }
+}
+

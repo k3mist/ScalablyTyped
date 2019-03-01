@@ -27,3 +27,21 @@ trait EventData extends js.Object {
   var widget: js.Any
 }
 
+object EventData {
+  @scala.inline
+  def apply(
+    node: FancytreeNode,
+    options: FancytreeOptions,
+    originalEvent: jqueryLib.JQueryEventObject,
+    response: js.Any,
+    result: js.Any,
+    targetType: java.lang.String,
+    tree: Fancytree,
+    widget: js.Any
+  ): EventData = {
+    val __obj = js.Dynamic.literal(node = node, options = options, originalEvent = originalEvent, response = response, result = result, targetType = targetType, tree = tree, widget = widget)
+  
+    __obj.asInstanceOf[EventData]
+  }
+}
+

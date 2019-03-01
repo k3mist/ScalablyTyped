@@ -10,3 +10,15 @@ trait GoAction extends RouterActions {
   var `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_GO
 }
 
+object GoAction {
+  @scala.inline
+  def apply(
+    payload: scala.Double,
+    `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_GO
+  ): GoAction = {
+    val __obj = js.Dynamic.literal(payload = payload, `type` = `type`)
+  
+    __obj.asInstanceOf[GoAction]
+  }
+}
+

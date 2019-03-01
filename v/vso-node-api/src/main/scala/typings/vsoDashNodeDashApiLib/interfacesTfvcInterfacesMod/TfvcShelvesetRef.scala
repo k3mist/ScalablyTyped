@@ -16,3 +16,21 @@ trait TfvcShelvesetRef extends js.Object {
   var url: java.lang.String
 }
 
+object TfvcShelvesetRef {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    createdDate: stdLib.Date,
+    id: java.lang.String,
+    name: java.lang.String,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    url: java.lang.String
+  ): TfvcShelvesetRef = {
+    val __obj = js.Dynamic.literal(_links = _links, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, id = id, name = name, owner = owner, url = url)
+  
+    __obj.asInstanceOf[TfvcShelvesetRef]
+  }
+}
+

@@ -62,3 +62,48 @@ trait WMTSLayerProperties
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WMTSLayerProperties {
+  @scala.inline
+  def apply(
+    activeLayer: WMTSSublayerProperties = null,
+    copyright: java.lang.String = null,
+    customLayerParameters: js.Any = null,
+    customParameters: js.Any = null,
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    listMode: java.lang.String = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    portalItem: PortalItemProperties = null,
+    refreshInterval: scala.Int | scala.Double = null,
+    serviceMode: java.lang.String = null,
+    sublayers: CollectionProperties[WMTSSublayerProperties] = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    version: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): WMTSLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (activeLayer != null) __obj.updateDynamic("activeLayer")(activeLayer)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (customLayerParameters != null) __obj.updateDynamic("customLayerParameters")(customLayerParameters)
+    if (customParameters != null) __obj.updateDynamic("customParameters")(customParameters)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (serviceMode != null) __obj.updateDynamic("serviceMode")(serviceMode)
+    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[WMTSLayerProperties]
+  }
+}
+

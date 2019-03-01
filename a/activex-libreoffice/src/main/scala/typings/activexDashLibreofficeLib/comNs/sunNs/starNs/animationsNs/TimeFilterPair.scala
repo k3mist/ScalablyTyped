@@ -10,3 +10,12 @@ trait TimeFilterPair extends js.Object {
   var Time: scala.Double
 }
 
+object TimeFilterPair {
+  @scala.inline
+  def apply(Progress: scala.Double, Time: scala.Double): TimeFilterPair = {
+    val __obj = js.Dynamic.literal(Progress = Progress, Time = Time)
+  
+    __obj.asInstanceOf[TimeFilterPair]
+  }
+}
+

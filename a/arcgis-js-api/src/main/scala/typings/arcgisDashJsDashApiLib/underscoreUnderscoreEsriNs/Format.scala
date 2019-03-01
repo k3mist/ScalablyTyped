@@ -60,3 +60,20 @@ trait Format extends js.Object {
   var viewModel: CoordinateConversionViewModel
 }
 
+object Format {
+  @scala.inline
+  def apply(
+    conversionInfo: ConversionInfo,
+    coordinateSegments: js.Array[CoordinateSegment],
+    currentPattern: java.lang.String,
+    defaultPattern: java.lang.String,
+    name: java.lang.String,
+    spatialReference: SpatialReference,
+    viewModel: CoordinateConversionViewModel
+  ): Format = {
+    val __obj = js.Dynamic.literal(conversionInfo = conversionInfo, coordinateSegments = coordinateSegments, currentPattern = currentPattern, defaultPattern = defaultPattern, name = name, spatialReference = spatialReference, viewModel = viewModel)
+  
+    __obj.asInstanceOf[Format]
+  }
+}
+

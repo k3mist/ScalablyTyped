@@ -37,3 +37,19 @@ trait ReplicaSetStatus extends js.Object {
   val replicas: scala.Double
 }
 
+object ReplicaSetStatus {
+  @scala.inline
+  def apply(
+    availableReplicas: scala.Double,
+    conditions: js.Array[ReplicaSetCondition],
+    fullyLabeledReplicas: scala.Double,
+    observedGeneration: scala.Double,
+    readyReplicas: scala.Double,
+    replicas: scala.Double
+  ): ReplicaSetStatus = {
+    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas, conditions = conditions, fullyLabeledReplicas = fullyLabeledReplicas, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas)
+  
+    __obj.asInstanceOf[ReplicaSetStatus]
+  }
+}
+

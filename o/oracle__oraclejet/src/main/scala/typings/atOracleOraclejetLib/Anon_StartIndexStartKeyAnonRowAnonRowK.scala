@@ -11,3 +11,12 @@ trait Anon_StartIndexStartKeyAnonRowAnonRowK[K]
   var startKey: Anon_RowK[K]
 }
 
+object Anon_StartIndexStartKeyAnonRowAnonRowK {
+  @scala.inline
+  def apply[K](startKey: Anon_RowK[K], startIndex: Anon_Row = null): Anon_StartIndexStartKeyAnonRowAnonRowK[K] = {
+    val __obj = js.Dynamic.literal(startKey = startKey)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex)
+    __obj.asInstanceOf[Anon_StartIndexStartKeyAnonRowAnonRowK[K]]
+  }
+}
+

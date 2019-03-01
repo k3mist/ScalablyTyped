@@ -99,3 +99,36 @@ trait ITransfer
   var `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.stripe_account
 }
 
+object ITransfer {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    amount_reversed: scala.Double,
+    application_fee: java.lang.String,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    date: scala.Double,
+    description: java.lang.String,
+    destination: java.lang.String | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount | stripeLib.stripeMod.StripeNs.cardsNs.ICardHash | stripeLib.stripeMod.StripeNs.accountsNs.IAccount,
+    destination_payment: java.lang.String,
+    failure_code: java.lang.String,
+    failure_message: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.transfer,
+    reversals: ITransferReversals,
+    reversed: scala.Boolean,
+    source_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    source_type: SourceTypes,
+    statement_descriptor: java.lang.String,
+    status: Statuses,
+    `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.stripe_account
+  ): ITransfer = {
+    val __obj = js.Dynamic.literal(amount = amount, amount_reversed = amount_reversed, application_fee = application_fee, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, date = date, description = description, destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment, failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, `object` = `object`, reversals = reversals, reversed = reversed, source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type, statement_descriptor = statement_descriptor, status = status, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ITransfer]
+  }
+}
+

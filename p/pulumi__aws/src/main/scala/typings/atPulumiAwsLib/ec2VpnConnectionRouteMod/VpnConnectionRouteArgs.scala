@@ -16,3 +16,15 @@ trait VpnConnectionRouteArgs extends js.Object {
   val vpnConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpnConnectionRouteArgs {
+  @scala.inline
+  def apply(
+    destinationCidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpnConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): VpnConnectionRouteArgs = {
+    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock.asInstanceOf[js.Any], vpnConnectionId = vpnConnectionId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VpnConnectionRouteArgs]
+  }
+}
+

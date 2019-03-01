@@ -10,3 +10,12 @@ trait LatLngLiteralVerbose extends _LatLng {
   var longitude: scala.Double
 }
 
+object LatLngLiteralVerbose {
+  @scala.inline
+  def apply(latitude: scala.Double, longitude: scala.Double): LatLngLiteralVerbose = {
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[LatLngLiteralVerbose]
+  }
+}
+

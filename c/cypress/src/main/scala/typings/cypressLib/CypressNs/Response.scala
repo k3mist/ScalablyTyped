@@ -17,3 +17,22 @@ trait Response extends js.Object {
   var statusText: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    allRequestResponses: js.Array[_],
+    body: js.Any,
+    duration: scala.Double,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    isOkStatusCode: scala.Boolean,
+    redirectedToUrl: java.lang.String,
+    requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    status: scala.Double,
+    statusText: java.lang.String
+  ): Response = {
+    val __obj = js.Dynamic.literal(allRequestResponses = allRequestResponses, body = body, duration = duration, headers = headers, isOkStatusCode = isOkStatusCode, redirectedToUrl = redirectedToUrl, requestHeaders = requestHeaders, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

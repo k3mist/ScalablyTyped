@@ -25,3 +25,38 @@ trait PrismaticConstraint extends Constraint {
   def setLimits(lower: scala.Double, upper: scala.Double): scala.Unit
 }
 
+object PrismaticConstraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    collideConnected: scala.Boolean,
+    disableMotor: js.Function0[scala.Unit],
+    enableMotor: js.Function0[scala.Unit],
+    equeations: js.Array[Equation],
+    localAnchorA: js.Tuple2[scala.Double, scala.Double],
+    localAnchorB: js.Tuple2[scala.Double, scala.Double],
+    localAxisA: js.Tuple2[scala.Double, scala.Double],
+    lowerLimit: scala.Double,
+    lowerLimitEnabled: scala.Boolean,
+    lowerLimitEquation: ContactEquation,
+    motorEnabled: scala.Boolean,
+    motorEquation: Equation,
+    motorSpeed: scala.Double,
+    position: scala.Double,
+    setLimits: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setRelaxation: js.Function1[scala.Double, scala.Unit],
+    setStiffness: js.Function1[scala.Double, scala.Unit],
+    `type`: scala.Double,
+    update: js.Function0[scala.Unit],
+    upperLimit: scala.Double,
+    upperLimitEnabled: scala.Boolean,
+    upperLimitEquation: ContactEquation,
+    velocity: scala.Double
+  ): PrismaticConstraint = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, disableMotor = disableMotor, enableMotor = enableMotor, equeations = equeations, localAnchorA = localAnchorA, localAnchorB = localAnchorB, localAxisA = localAxisA, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, lowerLimitEquation = lowerLimitEquation, motorEnabled = motorEnabled, motorEquation = motorEquation, motorSpeed = motorSpeed, position = position, setLimits = setLimits, setRelaxation = setRelaxation, setStiffness = setStiffness, `type` = `type`, update = update, upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled, upperLimitEquation = upperLimitEquation, velocity = velocity)
+  
+    __obj.asInstanceOf[PrismaticConstraint]
+  }
+}
+

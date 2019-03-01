@@ -23,3 +23,28 @@ trait XSSOAcceptorContext extends XSSOContext {
   def accept(Token: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XSSOAcceptorContext {
+  @scala.inline
+  def apply(
+    Mechanism: java.lang.String,
+    Mutual: scala.Boolean,
+    Source: java.lang.String,
+    Target: java.lang.String,
+    accept: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    acquire: js.Function0[scala.Unit],
+    getMechanism: js.Function0[java.lang.String],
+    getMutual: js.Function0[scala.Boolean],
+    getSource: js.Function0[java.lang.String],
+    getTarget: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSSOAcceptorContext = {
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, accept = accept, acquire = acquire, getMechanism = getMechanism, getMutual = getMutual, getSource = getSource, getTarget = getTarget, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSSOAcceptorContext]
+  }
+}
+

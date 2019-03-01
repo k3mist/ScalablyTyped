@@ -25,3 +25,18 @@ trait XContentProviderSupplier
   def getContentProvider(): XContentProvider
 }
 
+object XContentProviderSupplier {
+  @scala.inline
+  def apply(
+    ContentProvider: XContentProvider,
+    acquire: js.Function0[scala.Unit],
+    getContentProvider: js.Function0[XContentProvider],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentProviderSupplier = {
+    val __obj = js.Dynamic.literal(ContentProvider = ContentProvider, acquire = acquire, getContentProvider = getContentProvider, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContentProviderSupplier]
+  }
+}
+

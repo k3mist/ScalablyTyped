@@ -16,3 +16,12 @@ trait ASPxClientPopupWindowResizeEventArgs extends ASPxClientPopupWindowEventArg
   var resizeState: scala.Double
 }
 
+object ASPxClientPopupWindowResizeEventArgs {
+  @scala.inline
+  def apply(resizeState: scala.Double, window: ASPxClientPopupWindow): ASPxClientPopupWindowResizeEventArgs = {
+    val __obj = js.Dynamic.literal(resizeState = resizeState, window = window)
+  
+    __obj.asInstanceOf[ASPxClientPopupWindowResizeEventArgs]
+  }
+}
+

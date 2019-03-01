@@ -33,3 +33,17 @@ trait IFieldScores extends js.Object {
   var qSymbolScore: scala.Double
 }
 
+object IFieldScores {
+  @scala.inline
+  def apply(
+    qCardinalRatio: scala.Double,
+    qFieldName: java.lang.String,
+    qRowScore: scala.Double,
+    qSymbolScore: scala.Double
+  ): IFieldScores = {
+    val __obj = js.Dynamic.literal(qCardinalRatio = qCardinalRatio, qFieldName = qFieldName, qRowScore = qRowScore, qSymbolScore = qSymbolScore)
+  
+    __obj.asInstanceOf[IFieldScores]
+  }
+}
+

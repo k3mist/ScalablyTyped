@@ -32,3 +32,19 @@ trait Anon_IconClass extends js.Object {
   var textClass: java.lang.String
 }
 
+object Anon_IconClass {
+  @scala.inline
+  def apply(
+    iconClass: java.lang.String,
+    loadingClass: java.lang.String,
+    loadingText: java.lang.String,
+    overlayClass: java.lang.String,
+    spinnerClass: java.lang.String,
+    textClass: java.lang.String
+  ): Anon_IconClass = {
+    val __obj = js.Dynamic.literal(iconClass = iconClass, loadingClass = loadingClass, loadingText = loadingText, overlayClass = overlayClass, spinnerClass = spinnerClass, textClass = textClass)
+  
+    __obj.asInstanceOf[Anon_IconClass]
+  }
+}
+

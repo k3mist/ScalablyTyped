@@ -10,3 +10,15 @@ trait Anon_Qk extends js.Object {
   var qtr: js.Array[qlikDashEngineapiLib.EngineAPINs.ITableRecord]
 }
 
+object Anon_Qk {
+  @scala.inline
+  def apply(
+    qk: js.Array[qlikDashEngineapiLib.EngineAPINs.ISourceKeyRecord],
+    qtr: js.Array[qlikDashEngineapiLib.EngineAPINs.ITableRecord]
+  ): Anon_Qk = {
+    val __obj = js.Dynamic.literal(qk = qk, qtr = qtr)
+  
+    __obj.asInstanceOf[Anon_Qk]
+  }
+}
+

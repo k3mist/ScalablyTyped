@@ -11,3 +11,16 @@ trait Anon_Close extends js.Object {
   def close(): scala.Unit
 }
 
+object Anon_Close {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    options: webpackDashHotDashClientLib.webpackDashHotDashClientMod.WebpackHotClientNs.Options,
+    server: js.Any
+  ): Anon_Close = {
+    val __obj = js.Dynamic.literal(close = close, options = options, server = server)
+  
+    __obj.asInstanceOf[Anon_Close]
+  }
+}
+

@@ -13,3 +13,18 @@ trait DeveloperMetadataLocation extends js.Object {
   def getSpreadsheet(): Spreadsheet
 }
 
+object DeveloperMetadataLocation {
+  @scala.inline
+  def apply(
+    getColumn: js.Function0[Range],
+    getLocationType: js.Function0[DeveloperMetadataLocationType],
+    getRow: js.Function0[Range],
+    getSheet: js.Function0[Sheet],
+    getSpreadsheet: js.Function0[Spreadsheet]
+  ): DeveloperMetadataLocation = {
+    val __obj = js.Dynamic.literal(getColumn = getColumn, getLocationType = getLocationType, getRow = getRow, getSheet = getSheet, getSpreadsheet = getSpreadsheet)
+  
+    __obj.asInstanceOf[DeveloperMetadataLocation]
+  }
+}
+

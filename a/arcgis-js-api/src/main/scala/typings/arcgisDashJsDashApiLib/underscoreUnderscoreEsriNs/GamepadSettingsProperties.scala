@@ -25,3 +25,14 @@ trait GamepadSettingsProperties extends js.Object {
   ] = js.undefined
 }
 
+object GamepadSettingsProperties {
+  @scala.inline
+  def apply(
+    enabledFocusMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.document | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.view | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none = null
+  ): GamepadSettingsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (enabledFocusMode != null) __obj.updateDynamic("enabledFocusMode")(enabledFocusMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamepadSettingsProperties]
+  }
+}
+

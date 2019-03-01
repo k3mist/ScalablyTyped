@@ -19,3 +19,17 @@ trait XReferenceResolvedListener
   def referenceResolved(referenceId: scala.Double): scala.Unit
 }
 
+object XReferenceResolvedListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    referenceResolved: js.Function1[scala.Double, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XReferenceResolvedListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release)
+  
+    __obj.asInstanceOf[XReferenceResolvedListener]
+  }
+}
+

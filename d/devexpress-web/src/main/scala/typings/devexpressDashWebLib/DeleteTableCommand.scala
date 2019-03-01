@@ -15,3 +15,12 @@ trait DeleteTableCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object DeleteTableCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): DeleteTableCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[DeleteTableCommand]
+  }
+}
+

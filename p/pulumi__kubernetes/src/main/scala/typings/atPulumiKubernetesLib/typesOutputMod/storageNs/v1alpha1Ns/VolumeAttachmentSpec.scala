@@ -24,3 +24,12 @@ trait VolumeAttachmentSpec extends js.Object {
   val source: VolumeAttachmentSource
 }
 
+object VolumeAttachmentSpec {
+  @scala.inline
+  def apply(attacher: java.lang.String, nodeName: java.lang.String, source: VolumeAttachmentSource): VolumeAttachmentSpec = {
+    val __obj = js.Dynamic.literal(attacher = attacher, nodeName = nodeName, source = source)
+  
+    __obj.asInstanceOf[VolumeAttachmentSpec]
+  }
+}
+

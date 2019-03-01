@@ -11,3 +11,12 @@ trait Anon_Protocol extends js.Object {
   var slashes: scala.Boolean
 }
 
+object Anon_Protocol {
+  @scala.inline
+  def apply(protocol: java.lang.String, rest: java.lang.String, slashes: scala.Boolean): Anon_Protocol = {
+    val __obj = js.Dynamic.literal(protocol = protocol, rest = rest, slashes = slashes)
+  
+    __obj.asInstanceOf[Anon_Protocol]
+  }
+}
+

@@ -53,3 +53,29 @@ trait LineProperties extends js.Object {
   var LineWidth: scala.Double
 }
 
+object LineProperties {
+  @scala.inline
+  def apply(
+    LineCap: LineCap,
+    LineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    LineDash: LineDash,
+    LineDashName: java.lang.String,
+    LineEnd: PolyPolygonBezierCoords,
+    LineEndCenter: scala.Boolean,
+    LineEndName: java.lang.String,
+    LineEndWidth: scala.Double,
+    LineJoint: LineJoint,
+    LineStart: PolyPolygonBezierCoords,
+    LineStartCenter: scala.Boolean,
+    LineStartName: java.lang.String,
+    LineStartWidth: scala.Double,
+    LineStyle: LineStyle,
+    LineTransparence: scala.Double,
+    LineWidth: scala.Double
+  ): LineProperties = {
+    val __obj = js.Dynamic.literal(LineCap = LineCap, LineColor = LineColor, LineDash = LineDash, LineDashName = LineDashName, LineEnd = LineEnd, LineEndCenter = LineEndCenter, LineEndName = LineEndName, LineEndWidth = LineEndWidth, LineJoint = LineJoint, LineStart = LineStart, LineStartCenter = LineStartCenter, LineStartName = LineStartName, LineStartWidth = LineStartWidth, LineStyle = LineStyle, LineTransparence = LineTransparence, LineWidth = LineWidth)
+  
+    __obj.asInstanceOf[LineProperties]
+  }
+}
+

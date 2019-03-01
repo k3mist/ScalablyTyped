@@ -12,3 +12,20 @@ trait I18nextSprintfPostProcessor extends js.Object {
   def process(value: js.Any, key: java.lang.String, options: js.Any): js.Any
 }
 
+object I18nextSprintfPostProcessor {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    overloadTranslationOptionHandler: js.Function1[
+      js.Array[java.lang.String], 
+      i18nextDashSprintfDashPostprocessorLib.Anon_PostProcess
+    ],
+    process: js.Function3[js.Any, java.lang.String, js.Any, js.Any],
+    `type`: java.lang.String
+  ): I18nextSprintfPostProcessor = {
+    val __obj = js.Dynamic.literal(name = name, overloadTranslationOptionHandler = overloadTranslationOptionHandler, process = process, `type` = `type`)
+  
+    __obj.asInstanceOf[I18nextSprintfPostProcessor]
+  }
+}
+

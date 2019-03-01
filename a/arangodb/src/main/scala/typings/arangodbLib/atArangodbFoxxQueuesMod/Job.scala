@@ -25,3 +25,31 @@ trait Job extends js.Object {
   def abort(): scala.Unit
 }
 
+object Job {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    created: scala.Double,
+    data: js.Any,
+    delayUntil: scala.Double,
+    failures: js.Array[js.Object],
+    maxFailures: scala.Double,
+    modified: scala.Double,
+    queue: java.lang.String,
+    repeatDelay: scala.Double,
+    repeatTimes: scala.Double,
+    repeatUntil: scala.Double,
+    runFailures: scala.Double,
+    runs: scala.Double,
+    status: java.lang.String,
+    `type`: Script,
+    failure: java.lang.String = null,
+    success: java.lang.String = null
+  ): Job = {
+    val __obj = js.Dynamic.literal(abort = abort, created = created, data = data, delayUntil = delayUntil, failures = failures, maxFailures = maxFailures, modified = modified, queue = queue, repeatDelay = repeatDelay, repeatTimes = repeatTimes, repeatUntil = repeatUntil, runFailures = runFailures, runs = runs, status = status, `type` = `type`)
+    if (failure != null) __obj.updateDynamic("failure")(failure)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Job]
+  }
+}
+

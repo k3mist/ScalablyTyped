@@ -15,3 +15,20 @@ trait SkillsResponseObject extends ResponseObject {
   var `type`: scala.Double
 }
 
+object SkillsResponseObject {
+  @scala.inline
+  def apply(
+    attempts: scala.Double,
+    program: java.lang.String,
+    rank: scala.Double,
+    score: scala.Double,
+    sku: java.lang.String,
+    team: java.lang.String,
+    `type`: scala.Double
+  ): SkillsResponseObject = {
+    val __obj = js.Dynamic.literal(attempts = attempts, program = program, rank = rank, score = score, sku = sku, team = team, `type` = `type`)
+  
+    __obj.asInstanceOf[SkillsResponseObject]
+  }
+}
+

@@ -20,3 +20,18 @@ trait TestSessionExploredWorkItemReference extends TestSessionWorkItemReference 
   var startTime: stdLib.Date
 }
 
+object TestSessionExploredWorkItemReference {
+  @scala.inline
+  def apply(
+    associatedWorkItems: js.Array[TestSessionWorkItemReference],
+    endTime: stdLib.Date,
+    id: scala.Double,
+    startTime: stdLib.Date,
+    `type`: java.lang.String
+  ): TestSessionExploredWorkItemReference = {
+    val __obj = js.Dynamic.literal(associatedWorkItems = associatedWorkItems, endTime = endTime, id = id, startTime = startTime, `type` = `type`)
+  
+    __obj.asInstanceOf[TestSessionExploredWorkItemReference]
+  }
+}
+

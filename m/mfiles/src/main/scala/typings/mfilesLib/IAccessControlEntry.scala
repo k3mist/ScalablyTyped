@@ -14,3 +14,19 @@ trait IAccessControlEntry extends js.Object {
   def Clone(): IAccessControlEntry
 }
 
+object IAccessControlEntry {
+  @scala.inline
+  def apply(
+    ChangePermissionsPermission: mfilesLib.MFilesNs.MFPermission,
+    Clone: js.Function0[IAccessControlEntry],
+    EditPermission: mfilesLib.MFilesNs.MFPermission,
+    IsGroup: scala.Boolean,
+    ReadPermission: mfilesLib.MFilesNs.MFPermission,
+    UserOrGroupID: scala.Double
+  ): IAccessControlEntry = {
+    val __obj = js.Dynamic.literal(ChangePermissionsPermission = ChangePermissionsPermission, Clone = Clone, EditPermission = EditPermission, IsGroup = IsGroup, ReadPermission = ReadPermission, UserOrGroupID = UserOrGroupID)
+  
+    __obj.asInstanceOf[IAccessControlEntry]
+  }
+}
+

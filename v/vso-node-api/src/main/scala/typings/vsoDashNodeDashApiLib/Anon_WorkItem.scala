@@ -10,3 +10,12 @@ trait Anon_WorkItem extends js.Object {
   var workItemLink: scala.Double
 }
 
+object Anon_WorkItem {
+  @scala.inline
+  def apply(workItem: scala.Double, workItemLink: scala.Double): Anon_WorkItem = {
+    val __obj = js.Dynamic.literal(workItem = workItem, workItemLink = workItemLink)
+  
+    __obj.asInstanceOf[Anon_WorkItem]
+  }
+}
+

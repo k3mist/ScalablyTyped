@@ -21,3 +21,17 @@ trait Issue extends js.Object {
   var `type`: IssueType
 }
 
+object Issue {
+  @scala.inline
+  def apply(
+    category: java.lang.String,
+    data: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    message: java.lang.String,
+    `type`: IssueType
+  ): Issue = {
+    val __obj = js.Dynamic.literal(category = category, data = data, message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[Issue]
+  }
+}
+

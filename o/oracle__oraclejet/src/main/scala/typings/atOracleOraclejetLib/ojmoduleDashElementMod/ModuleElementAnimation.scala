@@ -11,3 +11,16 @@ trait ModuleElementAnimation extends js.Object {
   def prepareAnimation(context: atOracleOraclejetLib.Anon_IsInitial): js.Object
 }
 
+object ModuleElementAnimation {
+  @scala.inline
+  def apply(
+    animate: js.Function1[atOracleOraclejetLib.Anon_InsertNewView, js.Promise[_]],
+    canAnimate: js.Function1[atOracleOraclejetLib.Anon_IsInitial, scala.Boolean],
+    prepareAnimation: js.Function1[atOracleOraclejetLib.Anon_IsInitial, js.Object]
+  ): ModuleElementAnimation = {
+    val __obj = js.Dynamic.literal(animate = animate, canAnimate = canAnimate, prepareAnimation = prepareAnimation)
+  
+    __obj.asInstanceOf[ModuleElementAnimation]
+  }
+}
+

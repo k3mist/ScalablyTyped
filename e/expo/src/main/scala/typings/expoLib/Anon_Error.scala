@@ -13,3 +13,17 @@ trait Anon_Error
   var `type`: expoLib.expoLibStrings.error
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String,
+    event: expoLib.expoMod.HashMap,
+    params: expoLib.expoMod.HashMap,
+    `type`: expoLib.expoLibStrings.error
+  ): Anon_Error = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode, event = event, params = params, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

@@ -12,3 +12,12 @@ trait NumberOptions extends js.Object {
   var step: scala.Double
 }
 
+object NumberOptions {
+  @scala.inline
+  def apply(max: scala.Double, min: scala.Double, range: scala.Boolean, step: scala.Double): NumberOptions = {
+    val __obj = js.Dynamic.literal(max = max, min = min, range = range, step = step)
+  
+    __obj.asInstanceOf[NumberOptions]
+  }
+}
+

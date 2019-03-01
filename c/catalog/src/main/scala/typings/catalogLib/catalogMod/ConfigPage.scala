@@ -15,3 +15,24 @@ trait ConfigPage extends ConfigPageOrGroup {
   var title: java.lang.String
 }
 
+object ConfigPage {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    title: java.lang.String,
+    content: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    hideFromMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    imports: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    scripts: js.Array[java.lang.String] = null,
+    styles: js.Array[java.lang.String] = null
+  ): ConfigPage = {
+    val __obj = js.Dynamic.literal(path = path, title = title)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFromMenu)) __obj.updateDynamic("hideFromMenu")(hideFromMenu)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[ConfigPage]
+  }
+}
+

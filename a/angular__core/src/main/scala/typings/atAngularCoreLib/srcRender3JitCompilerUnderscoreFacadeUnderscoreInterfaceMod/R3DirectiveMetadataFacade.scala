@@ -23,3 +23,31 @@ trait R3DirectiveMetadataFacade extends js.Object {
   var usesInheritance: scala.Boolean
 }
 
+object R3DirectiveMetadataFacade {
+  @scala.inline
+  def apply(
+    host: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inputs: js.Array[java.lang.String],
+    lifecycle: atAngularCoreLib.Anon_UsesOnChanges,
+    name: java.lang.String,
+    outputs: js.Array[java.lang.String],
+    propMetadata: org.scalablytyped.runtime.StringDictionary[js.Array[_]],
+    queries: js.Array[R3QueryMetadataFacade],
+    `type`: js.Any,
+    typeArgumentCount: scala.Double,
+    typeSourceSpan: scala.Null,
+    usesInheritance: scala.Boolean,
+    deps: js.Array[R3DependencyMetadataFacade] = null,
+    exportAs: java.lang.String = null,
+    providers: js.Array[Provider] = null,
+    selector: java.lang.String = null
+  ): R3DirectiveMetadataFacade = {
+    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, propMetadata = propMetadata, queries = queries, `type` = `type`, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[R3DirectiveMetadataFacade]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientHitObject extends js.Object {
   var Object: ASPxClientWebChartElement
 }
 
+object ASPxClientHitObject {
+  @scala.inline
+  def apply(AdditionalObject: ASPxClientWebChartElement, Object: ASPxClientWebChartElement): ASPxClientHitObject = {
+    val __obj = js.Dynamic.literal(AdditionalObject = AdditionalObject, Object = Object)
+  
+    __obj.asInstanceOf[ASPxClientHitObject]
+  }
+}
+

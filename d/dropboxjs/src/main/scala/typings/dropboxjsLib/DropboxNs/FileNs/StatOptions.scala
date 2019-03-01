@@ -17,3 +17,22 @@ trait StatOptions extends js.Object {
   var versionTag: java.lang.String
 }
 
+object StatOptions {
+  @scala.inline
+  def apply(
+    contentHash: java.lang.String,
+    deleted: scala.Boolean,
+    hash: java.lang.String,
+    httpCache: scala.Boolean,
+    readDir: scala.Boolean,
+    removed: scala.Boolean,
+    rev: java.lang.String,
+    version: scala.Double,
+    versionTag: java.lang.String
+  ): StatOptions = {
+    val __obj = js.Dynamic.literal(contentHash = contentHash, deleted = deleted, hash = hash, httpCache = httpCache, readDir = readDir, removed = removed, rev = rev, version = version, versionTag = versionTag)
+  
+    __obj.asInstanceOf[StatOptions]
+  }
+}
+

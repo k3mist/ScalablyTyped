@@ -27,3 +27,19 @@ trait AreaMeasurement3DViewModelMeasurement
   var perimeterLength: MeasurementValue
 }
 
+object AreaMeasurement3DViewModelMeasurement {
+  @scala.inline
+  def apply(
+    area: MeasurementValue,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    measurementMode: java.lang.String,
+    perimeterLength: MeasurementValue,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): AreaMeasurement3DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = hasOwnProperty, measurementMode = measurementMode, perimeterLength = perimeterLength, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[AreaMeasurement3DViewModelMeasurement]
+  }
+}
+

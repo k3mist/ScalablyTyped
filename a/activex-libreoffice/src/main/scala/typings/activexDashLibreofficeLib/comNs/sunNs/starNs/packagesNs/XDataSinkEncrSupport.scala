@@ -79,3 +79,24 @@ trait XDataSinkEncrSupport
   def setRawStream(aStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream): scala.Unit
 }
 
+object XDataSinkEncrSupport {
+  @scala.inline
+  def apply(
+    DataStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    PlainRawStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    RawStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getDataStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getPlainRawStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getRawStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDataStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
+    setRawStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
+  ): XDataSinkEncrSupport = {
+    val __obj = js.Dynamic.literal(DataStream = DataStream, PlainRawStream = PlainRawStream, RawStream = RawStream, acquire = acquire, getDataStream = getDataStream, getPlainRawStream = getPlainRawStream, getRawStream = getRawStream, queryInterface = queryInterface, release = release, setDataStream = setDataStream, setRawStream = setRawStream)
+  
+    __obj.asInstanceOf[XDataSinkEncrSupport]
+  }
+}
+

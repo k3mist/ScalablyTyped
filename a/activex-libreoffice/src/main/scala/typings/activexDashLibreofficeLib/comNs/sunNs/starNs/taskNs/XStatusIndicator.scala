@@ -52,3 +52,21 @@ trait XStatusIndicator
   def start(Text: java.lang.String, Range: scala.Double): scala.Unit
 }
 
+object XStatusIndicator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    end: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reset: js.Function0[scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit],
+    start: js.Function2[java.lang.String, scala.Double, scala.Unit]
+  ): XStatusIndicator = {
+    val __obj = js.Dynamic.literal(acquire = acquire, end = end, queryInterface = queryInterface, release = release, reset = reset, setText = setText, setValue = setValue, start = start)
+  
+    __obj.asInstanceOf[XStatusIndicator]
+  }
+}
+

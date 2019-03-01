@@ -43,3 +43,34 @@ trait XController2 extends XController {
   def getSidebar(): activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XSidebarProvider
 }
 
+object XController2 {
+  @scala.inline
+  def apply(
+    ComponentWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    CreationArguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Frame: XFrame,
+    Model: XModel,
+    Sidebar: activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XSidebarProvider,
+    ViewControllerName: java.lang.String,
+    ViewData: js.Any,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attachFrame: js.Function1[XFrame, scala.Unit],
+    attachModel: js.Function1[XModel, scala.Boolean],
+    dispose: js.Function0[scala.Unit],
+    getFrame: js.Function0[XFrame],
+    getModel: js.Function0[XModel],
+    getSidebar: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.XSidebarProvider],
+    getViewData: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    restoreViewData: js.Function1[js.Any, scala.Unit],
+    suspend: js.Function1[scala.Boolean, scala.Boolean]
+  ): XController2 = {
+    val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow, CreationArguments = CreationArguments, Frame = Frame, Model = Model, Sidebar = Sidebar, ViewControllerName = ViewControllerName, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getSidebar = getSidebar, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+  
+    __obj.asInstanceOf[XController2]
+  }
+}
+

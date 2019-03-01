@@ -99,3 +99,30 @@ trait IgFinancialChartMethods extends js.Object {
   def setItem(index: scala.Double, item: js.Object): js.Object
 }
 
+object IgFinancialChartMethods {
+  @scala.inline
+  def apply(
+    addItem: js.Function1[js.Object, js.Object],
+    chart: js.Function0[js.Object],
+    dataBind: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[scala.Unit],
+    findIndexOfItem: js.Function1[js.Object, scala.Double],
+    flush: js.Function0[scala.Unit],
+    getData: js.Function0[js.Array[_]],
+    getDataItem: js.Function1[js.Object, js.Object],
+    id: js.Function0[scala.Unit],
+    insertItem: js.Function2[js.Object, scala.Double, js.Object],
+    notifyClearItems: js.Function1[js.Object, js.Object],
+    notifyInsertItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifyRemoveItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifySetItem: js.Function4[js.Object, scala.Double, js.Object, js.Object, js.Object],
+    removeItem: js.Function1[scala.Double, js.Object],
+    setItem: js.Function2[scala.Double, js.Object, js.Object]
+  ): IgFinancialChartMethods = {
+    val __obj = js.Dynamic.literal(addItem = addItem, chart = chart, dataBind = dataBind, destroy = destroy, exportVisualData = exportVisualData, findIndexOfItem = findIndexOfItem, flush = flush, getData = getData, getDataItem = getDataItem, id = id, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, setItem = setItem)
+  
+    __obj.asInstanceOf[IgFinancialChartMethods]
+  }
+}
+

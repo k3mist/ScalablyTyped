@@ -15,3 +15,17 @@ trait WebSceneSaveOptions
   var ignoreUnsupported: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WebSceneSaveOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    ignoreUnsupported: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebSceneSaveOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(ignoreUnsupported)) __obj.updateDynamic("ignoreUnsupported")(ignoreUnsupported)
+    __obj.asInstanceOf[WebSceneSaveOptions]
+  }
+}
+

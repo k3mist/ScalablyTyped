@@ -14,3 +14,20 @@ trait ICurrencyFormatterFactory extends js.Object {
   ): CurrencyFormatter
 }
 
+object ICurrencyFormatterFactory {
+  @scala.inline
+  def apply(
+    createCurrencyFormatterCode: js.Function1[java.lang.String, CurrencyFormatter],
+    createCurrencyFormatterCodeContext: js.Function3[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      java.lang.String, 
+      CurrencyFormatter
+    ]
+  ): ICurrencyFormatterFactory = {
+    val __obj = js.Dynamic.literal(createCurrencyFormatterCode = createCurrencyFormatterCode, createCurrencyFormatterCodeContext = createCurrencyFormatterCodeContext)
+  
+    __obj.asInstanceOf[ICurrencyFormatterFactory]
+  }
+}
+

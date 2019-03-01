@@ -11,3 +11,12 @@ trait CpuTemperatureData extends js.Object {
   var max: java.lang.String
 }
 
+object CpuTemperatureData {
+  @scala.inline
+  def apply(cores: java.lang.String, main: java.lang.String, max: java.lang.String): CpuTemperatureData = {
+    val __obj = js.Dynamic.literal(cores = cores, main = main, max = max)
+  
+    __obj.asInstanceOf[CpuTemperatureData]
+  }
+}
+

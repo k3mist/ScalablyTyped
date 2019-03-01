@@ -238,3 +238,75 @@ trait _Impl extends js.Object {
   def successTest(response: js.Any): scala.Boolean
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    action: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    api: /* import warning: ImportType.apply Failed type conversion: {[action: string] : string, [action: string] : string} */ js.Any,
+    beforeSend: js.Function1[semanticDashUiDashApiLib.SemanticUINs.ApiSettings, js.Any],
+    beforeXHR: js.Function1[jqueryLib.JQueryNs.jqXHR[_], js.Any],
+    cache: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.local | scala.Boolean,
+    className: semanticDashUiDashApiLib.SemanticUINs.ApiNs.ClassNameSettings,
+    data: js.Any,
+    dataType: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.xml | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.json | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.jsonp | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.script | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.html | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.text,
+    debug: scala.Boolean,
+    defaultData: scala.Boolean,
+    encodeParameters: scala.Boolean,
+    error: semanticDashUiDashApiLib.SemanticUINs.ApiNs.ErrorSettings,
+    errorDuration: semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`true` | scala.Double,
+    hideError: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.auto | scala.Boolean,
+    interruptRequests: scala.Boolean,
+    loadingDuration: scala.Double,
+    metadata: semanticDashUiDashApiLib.SemanticUINs.ApiNs.MetadataSettings,
+    method: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.post | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.get | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.put | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.delete | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.head | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.options | semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.patch,
+    mockResponse: js.Any | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    mockResponseAsync: (js.Function2[
+      /* settings */ semanticDashUiDashApiLib.SemanticUINs.ApiSettings, 
+      /* callback */ js.Function1[/* response */ js.Any, scala.Unit], 
+      scala.Unit
+    ]) | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    on: java.lang.String,
+    onAbort: js.Function3[
+      java.lang.String, 
+      semanticDashUiDashApiLib.JQuery, 
+      jqueryLib.JQueryNs.jqXHR[_], 
+      scala.Unit
+    ],
+    onComplete: js.Function3[js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
+    onError: js.Function3[
+      java.lang.String, 
+      semanticDashUiDashApiLib.JQuery, 
+      jqueryLib.JQueryNs.jqXHR[_], 
+      scala.Unit
+    ],
+    onFailure: js.Function2[js.Any, semanticDashUiDashApiLib.JQuery, scala.Unit],
+    onRequest: js.Function2[jqueryLib.JQueryNs.Deferred[_, _, _], jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
+    onResponse: js.Function1[js.Any, scala.Unit],
+    onSuccess: js.Function3[js.Any, semanticDashUiDashApiLib.JQuery, jqueryLib.JQueryNs.jqXHR[_], scala.Unit],
+    performance: scala.Boolean,
+    regExp: semanticDashUiDashApiLib.SemanticUINs.ApiNs.RegExpSettings,
+    response: js.Any | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    responseAsync: (js.Function2[
+      /* settings */ semanticDashUiDashApiLib.SemanticUINs.ApiSettings, 
+      /* callback */ js.Function1[/* response */ js.Any, scala.Unit], 
+      scala.Unit
+    ]) | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    selector: semanticDashUiDashApiLib.SemanticUINs.ApiNs.SelectorSettings,
+    serializeForm: scala.Boolean,
+    silent: scala.Boolean,
+    stateContext: java.lang.String | semanticDashUiDashApiLib.JQuery,
+    successTest: js.Function1[js.Any, scala.Boolean],
+    throttle: scala.Double,
+    throttleFirstRequest: scala.Boolean,
+    url: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    urlData: js.Any | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], api = api, beforeSend = beforeSend, beforeXHR = beforeXHR, cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], data = data, dataType = dataType.asInstanceOf[js.Any], debug = debug, defaultData = defaultData, encodeParameters = encodeParameters, error = error.asInstanceOf[js.Any], errorDuration = errorDuration.asInstanceOf[js.Any], hideError = hideError.asInstanceOf[js.Any], interruptRequests = interruptRequests, loadingDuration = loadingDuration, metadata = metadata.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], mockResponse = mockResponse.asInstanceOf[js.Any], mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any], name = name, namespace = namespace, on = on, onAbort = onAbort, onComplete = onComplete, onError = onError, onFailure = onFailure, onRequest = onRequest, onResponse = onResponse, onSuccess = onSuccess, performance = performance, regExp = regExp.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseAsync = responseAsync.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], serializeForm = serializeForm, silent = silent, stateContext = stateContext.asInstanceOf[js.Any], successTest = successTest, throttle = throttle, throttleFirstRequest = throttleFirstRequest, url = url.asInstanceOf[js.Any], urlData = urlData.asInstanceOf[js.Any], verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

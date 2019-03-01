@@ -58,3 +58,19 @@ trait loopback extends js.Object {
   var version: java.lang.String
 }
 
+object loopback {
+  @scala.inline
+  def apply(
+    faviconFile: java.lang.String,
+    isBrowser: scala.Boolean,
+    isServer: scala.Boolean,
+    mime: java.lang.String,
+    registry: Registry,
+    version: java.lang.String
+  ): loopback = {
+    val __obj = js.Dynamic.literal(faviconFile = faviconFile, isBrowser = isBrowser, isServer = isServer, mime = mime, registry = registry, version = version)
+  
+    __obj.asInstanceOf[loopback]
+  }
+}
+

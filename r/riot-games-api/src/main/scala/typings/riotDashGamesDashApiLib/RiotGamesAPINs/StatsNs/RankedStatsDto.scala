@@ -11,3 +11,12 @@ trait RankedStatsDto extends js.Object {
   var summonerId: scala.Double
 }
 
+object RankedStatsDto {
+  @scala.inline
+  def apply(champions: js.Array[ChampionStatsDto], modifyDate: scala.Double, summonerId: scala.Double): RankedStatsDto = {
+    val __obj = js.Dynamic.literal(champions = champions, modifyDate = modifyDate, summonerId = summonerId)
+  
+    __obj.asInstanceOf[RankedStatsDto]
+  }
+}
+

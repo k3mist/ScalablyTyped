@@ -10,3 +10,12 @@ trait DelBatch[K, V] extends AbstractBatch[K, V] {
   val `type`: abstractDashLeveldownLib.abstractDashLeveldownLibStrings.del
 }
 
+object DelBatch {
+  @scala.inline
+  def apply[K, V](key: K, `type`: abstractDashLeveldownLib.abstractDashLeveldownLibStrings.del): DelBatch[K, V] = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[DelBatch[K, V]]
+  }
+}
+

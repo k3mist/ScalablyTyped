@@ -20,3 +20,16 @@ trait _ISharedLockable extends js.Object {
   def unlock_shared(): js.Promise[scala.Unit]
 }
 
+object _ISharedLockable {
+  @scala.inline
+  def apply(
+    lock_shared: js.Function0[js.Promise[scala.Unit]],
+    try_lock_shared: js.Function0[js.Promise[scala.Boolean]],
+    unlock_shared: js.Function0[js.Promise[scala.Unit]]
+  ): _ISharedLockable = {
+    val __obj = js.Dynamic.literal(lock_shared = lock_shared, try_lock_shared = try_lock_shared, unlock_shared = unlock_shared)
+  
+    __obj.asInstanceOf[_ISharedLockable]
+  }
+}
+

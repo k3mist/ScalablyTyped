@@ -14,3 +14,21 @@ trait LocationsResource extends js.Object {
   def list(request: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
 }
 
+object LocationsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyLocationsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Location]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
+    ]
+  ): LocationsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[LocationsResource]
+  }
+}
+

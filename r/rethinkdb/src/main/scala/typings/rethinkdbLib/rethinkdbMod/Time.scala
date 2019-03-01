@@ -12,3 +12,16 @@ trait Time extends ReqlType {
   var timezone: java.lang.String
 }
 
+object Time {
+  @scala.inline
+  def apply(
+    $reql_type$: rethinkdbLib.rethinkdbLibStrings.TIME,
+    epoch_time: scala.Double,
+    timezone: java.lang.String
+  ): Time = {
+    val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+  
+    __obj.asInstanceOf[Time]
+  }
+}
+

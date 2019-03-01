@@ -15,3 +15,20 @@ trait HingeConstraintDefinition extends js.Object {
   var `type`: java.lang.String
 }
 
+object HingeConstraintDefinition {
+  @scala.inline
+  def apply(
+    axis: threeLib.threeMod.Vector3,
+    id: scala.Double,
+    objecta: threeLib.threeMod.Object3D,
+    objectb: threeLib.threeMod.Object3D,
+    positiona: threeLib.threeMod.Vector3,
+    positionb: threeLib.threeMod.Vector3,
+    `type`: java.lang.String
+  ): HingeConstraintDefinition = {
+    val __obj = js.Dynamic.literal(axis = axis, id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb, `type` = `type`)
+  
+    __obj.asInstanceOf[HingeConstraintDefinition]
+  }
+}
+

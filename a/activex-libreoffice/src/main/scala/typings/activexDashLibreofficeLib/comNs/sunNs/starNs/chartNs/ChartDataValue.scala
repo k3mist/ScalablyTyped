@@ -20,3 +20,12 @@ trait ChartDataValue extends js.Object {
   var Value: scala.Double
 }
 
+object ChartDataValue {
+  @scala.inline
+  def apply(HighError: scala.Double, LowError: scala.Double, Value: scala.Double): ChartDataValue = {
+    val __obj = js.Dynamic.literal(HighError = HighError, LowError = LowError, Value = Value)
+  
+    __obj.asInstanceOf[ChartDataValue]
+  }
+}
+

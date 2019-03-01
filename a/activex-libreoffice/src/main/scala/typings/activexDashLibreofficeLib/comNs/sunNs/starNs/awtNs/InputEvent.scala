@@ -21,3 +21,12 @@ trait InputEvent
   var Modifiers: scala.Double
 }
 
+object InputEvent {
+  @scala.inline
+  def apply(Modifiers: scala.Double, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): InputEvent = {
+    val __obj = js.Dynamic.literal(Modifiers = Modifiers, Source = Source)
+  
+    __obj.asInstanceOf[InputEvent]
+  }
+}
+

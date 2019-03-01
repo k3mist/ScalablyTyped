@@ -10,3 +10,12 @@ trait IComponentLoadFailedEventArgs extends js.Object {
   var information: RevocationAndRenewalInformation
 }
 
+object IComponentLoadFailedEventArgs {
+  @scala.inline
+  def apply(completion: MediaProtectionServiceCompletion, information: RevocationAndRenewalInformation): IComponentLoadFailedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion, information = information)
+  
+    __obj.asInstanceOf[IComponentLoadFailedEventArgs]
+  }
+}
+

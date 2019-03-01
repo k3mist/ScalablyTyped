@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ThrowStatement
 }
 
+object ThrowStatement {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ThrowStatement
+  ): ThrowStatement = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+  
+    __obj.asInstanceOf[ThrowStatement]
+  }
+}
+

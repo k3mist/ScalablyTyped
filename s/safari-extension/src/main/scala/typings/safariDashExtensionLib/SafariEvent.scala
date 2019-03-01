@@ -54,3 +54,23 @@ trait SafariEvent extends js.Object {
   def stopPropagation(): scala.Unit
 }
 
+object SafariEvent {
+  @scala.inline
+  def apply(
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    currentTarget: SafariEventTarget,
+    defaultPrevented: scala.Boolean,
+    eventPhase: scala.Double,
+    preventDefault: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: SafariEventTarget,
+    timestamp: scala.Double,
+    `type`: java.lang.String
+  ): SafariEvent = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[SafariEvent]
+  }
+}
+

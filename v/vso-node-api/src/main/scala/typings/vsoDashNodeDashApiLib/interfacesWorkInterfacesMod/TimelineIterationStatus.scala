@@ -10,3 +10,12 @@ trait TimelineIterationStatus extends js.Object {
   var `type`: TimelineIterationStatusCode
 }
 
+object TimelineIterationStatus {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: TimelineIterationStatusCode): TimelineIterationStatus = {
+    val __obj = js.Dynamic.literal(message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[TimelineIterationStatus]
+  }
+}
+

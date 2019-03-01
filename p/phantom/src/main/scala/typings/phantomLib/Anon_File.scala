@@ -11,3 +11,12 @@ trait Anon_File extends js.Object {
   var line: java.lang.String
 }
 
+object Anon_File {
+  @scala.inline
+  def apply(file: java.lang.String, function: java.lang.String, line: java.lang.String): Anon_File = {
+    val __obj = js.Dynamic.literal(file = file, function = function, line = line)
+  
+    __obj.asInstanceOf[Anon_File]
+  }
+}
+

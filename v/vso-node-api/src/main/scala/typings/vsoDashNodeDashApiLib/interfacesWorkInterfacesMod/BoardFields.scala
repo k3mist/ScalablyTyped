@@ -11,3 +11,12 @@ trait BoardFields extends js.Object {
   var rowField: FieldReference
 }
 
+object BoardFields {
+  @scala.inline
+  def apply(columnField: FieldReference, doneField: FieldReference, rowField: FieldReference): BoardFields = {
+    val __obj = js.Dynamic.literal(columnField = columnField, doneField = doneField, rowField = rowField)
+  
+    __obj.asInstanceOf[BoardFields]
+  }
+}
+

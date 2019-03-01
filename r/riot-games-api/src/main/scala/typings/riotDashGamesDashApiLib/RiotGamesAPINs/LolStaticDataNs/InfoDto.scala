@@ -12,3 +12,12 @@ trait InfoDto extends js.Object {
   var magic: scala.Double
 }
 
+object InfoDto {
+  @scala.inline
+  def apply(attack: scala.Double, defense: scala.Double, difficulty: scala.Double, magic: scala.Double): InfoDto = {
+    val __obj = js.Dynamic.literal(attack = attack, defense = defense, difficulty = difficulty, magic = magic)
+  
+    __obj.asInstanceOf[InfoDto]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_ActionClose
   var element: stdLib.Element
 }
 
+object Anon_ActionClose {
+  @scala.inline
+  def apply(
+    action: atOracleOraclejetLib.atOracleOraclejetLibStrings.open | atOracleOraclejetLib.atOracleOraclejetLibStrings.close,
+    element: stdLib.Element,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_ActionClose = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_ActionClose]
+  }
+}
+

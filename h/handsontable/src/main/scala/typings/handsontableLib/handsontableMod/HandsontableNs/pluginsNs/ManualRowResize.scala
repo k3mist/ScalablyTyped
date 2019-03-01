@@ -34,3 +34,52 @@ trait ManualRowResize extends Base {
   def setupHandlePosition(TH: stdLib.HTMLElement): scala.Boolean | scala.Unit
 }
 
+object ManualRowResize {
+  @scala.inline
+  def apply(
+    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    autoresizeTimeout: js.Function0[scala.Unit] | scala.Unit,
+    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    checkIfRowHeader: js.Function1[stdLib.HTMLElement, scala.Boolean],
+    clearHooks: js.Function0[scala.Unit],
+    clearManualSize: js.Function1[scala.Double, scala.Unit],
+    currentRow: scala.Double | scala.Unit,
+    currentTH: stdLib.HTMLElement | scala.Unit,
+    currentWidth: scala.Double | scala.Unit,
+    dblclick: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    disablePlugin: js.Function0[scala.Unit],
+    enablePlugin: js.Function0[scala.Unit],
+    enabled: scala.Boolean,
+    eventManager: EventManager,
+    getTHFromTargetElement: js.Function1[stdLib.HTMLElement, stdLib.HTMLElement],
+    guide: stdLib.HTMLElement,
+    handle: stdLib.HTMLElement,
+    hideHandleAndGuide: js.Function0[scala.Unit],
+    init: js.Function0[scala.Unit],
+    initialized: scala.Boolean,
+    isPluginsReady: scala.Boolean,
+    loadManualRowHeights: js.Function0[scala.Unit],
+    manualRowHeights: js.Array[_],
+    newSize: scala.Double | scala.Unit,
+    pluginName: java.lang.String,
+    pluginsInitializedCallback: js.Array[_],
+    pressed: handsontableLib.handsontableMod.underscoreHandsontableNs.Core | scala.Unit,
+    refreshGuidePosition: js.Function0[scala.Unit],
+    refreshHandlePosition: js.Function0[scala.Unit],
+    removeHook: js.Function1[java.lang.String, scala.Unit],
+    saveManualRowHeights: js.Function0[scala.Unit],
+    selectedRows: js.Array[_],
+    setManualSize: js.Function2[scala.Double, scala.Double, scala.Double],
+    setupGuidePosition: js.Function0[scala.Unit],
+    setupHandlePosition: js.Function1[stdLib.HTMLElement, scala.Boolean | scala.Unit],
+    startOffset: scala.Double | scala.Unit,
+    startWidth: scala.Double | scala.Unit,
+    startY: scala.Double | scala.Unit
+  ): ManualRowResize = {
+    val __obj = js.Dynamic.literal(addHook = addHook, autoresizeTimeout = autoresizeTimeout.asInstanceOf[js.Any], callOnPluginsReady = callOnPluginsReady, checkIfRowHeader = checkIfRowHeader, clearHooks = clearHooks, clearManualSize = clearManualSize, currentRow = currentRow.asInstanceOf[js.Any], currentTH = currentTH.asInstanceOf[js.Any], currentWidth = currentWidth.asInstanceOf[js.Any], dblclick = dblclick, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, getTHFromTargetElement = getTHFromTargetElement, guide = guide, handle = handle, hideHandleAndGuide = hideHandleAndGuide, init = init, initialized = initialized, isPluginsReady = isPluginsReady, loadManualRowHeights = loadManualRowHeights, manualRowHeights = manualRowHeights, newSize = newSize.asInstanceOf[js.Any], pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, pressed = pressed.asInstanceOf[js.Any], refreshGuidePosition = refreshGuidePosition, refreshHandlePosition = refreshHandlePosition, removeHook = removeHook, saveManualRowHeights = saveManualRowHeights, selectedRows = selectedRows, setManualSize = setManualSize, setupGuidePosition = setupGuidePosition, setupHandlePosition = setupHandlePosition, startOffset = startOffset.asInstanceOf[js.Any], startWidth = startWidth.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ManualRowResize]
+  }
+}
+

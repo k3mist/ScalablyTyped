@@ -24,3 +24,29 @@ trait Anon_Aborted extends js.Object {
   var warning: scala.Double
 }
 
+object Anon_Aborted {
+  @scala.inline
+  def apply(
+    aborted: scala.Double,
+    blocked: scala.Double,
+    error: scala.Double,
+    failed: scala.Double,
+    inProgress: scala.Double,
+    inconclusive: scala.Double,
+    maxValue: scala.Double,
+    none: scala.Double,
+    notApplicable: scala.Double,
+    notExecuted: scala.Double,
+    notImpacted: scala.Double,
+    passed: scala.Double,
+    paused: scala.Double,
+    timeout: scala.Double,
+    unspecified: scala.Double,
+    warning: scala.Double
+  ): Anon_Aborted = {
+    val __obj = js.Dynamic.literal(aborted = aborted, blocked = blocked, error = error, failed = failed, inProgress = inProgress, inconclusive = inconclusive, maxValue = maxValue, none = none, notApplicable = notApplicable, notExecuted = notExecuted, notImpacted = notImpacted, passed = passed, paused = paused, timeout = timeout, unspecified = unspecified, warning = warning)
+  
+    __obj.asInstanceOf[Anon_Aborted]
+  }
+}
+

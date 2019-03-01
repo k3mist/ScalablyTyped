@@ -11,3 +11,12 @@ trait MovieImages extends js.Object {
   var posters: js.Array[MovieImage]
 }
 
+object MovieImages {
+  @scala.inline
+  def apply(backdrops: js.Array[MovieImage], id: scala.Double, posters: js.Array[MovieImage]): MovieImages = {
+    val __obj = js.Dynamic.literal(backdrops = backdrops, id = id, posters = posters)
+  
+    __obj.asInstanceOf[MovieImages]
+  }
+}
+

@@ -24,3 +24,17 @@ trait VaultLockArgs extends js.Object {
   val vaultName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VaultLockArgs {
+  @scala.inline
+  def apply(
+    completeLock: atPulumiPulumiLib.resourceMod.Input[scala.Boolean],
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vaultName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ignoreDeletionError: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): VaultLockArgs = {
+    val __obj = js.Dynamic.literal(completeLock = completeLock.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if (ignoreDeletionError != null) __obj.updateDynamic("ignoreDeletionError")(ignoreDeletionError.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VaultLockArgs]
+  }
+}
+

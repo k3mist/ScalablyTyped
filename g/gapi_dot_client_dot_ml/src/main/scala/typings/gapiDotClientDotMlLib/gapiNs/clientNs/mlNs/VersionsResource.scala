@@ -63,3 +63,37 @@ trait VersionsResource extends js.Object {
   def setDefault(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
 }
 
+object VersionsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListVersionsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    setDefault: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
+    ]
+  ): VersionsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, setDefault = setDefault)
+  
+    __obj.asInstanceOf[VersionsResource]
+  }
+}
+

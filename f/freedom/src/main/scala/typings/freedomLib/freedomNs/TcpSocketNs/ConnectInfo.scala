@@ -11,3 +11,12 @@ trait ConnectInfo extends js.Object {
   var socket: scala.Double
 }
 
+object ConnectInfo {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Double, socket: scala.Double): ConnectInfo = {
+    val __obj = js.Dynamic.literal(host = host, port = port, socket = socket)
+  
+    __obj.asInstanceOf[ConnectInfo]
+  }
+}
+

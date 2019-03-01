@@ -18,3 +18,33 @@ trait ConversionResource extends js.Object {
   def updateAvailability(request: gapiDotClientDotDoubleclicksearchLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[UpdateAvailabilityResponse]
 }
 
+object ConversionResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_AdGroupIdAdId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionList]
+    ],
+    updateAvailability: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UpdateAvailabilityResponse]
+    ]
+  ): ConversionResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, update = update, updateAvailability = updateAvailability)
+  
+    __obj.asInstanceOf[ConversionResource]
+  }
+}
+

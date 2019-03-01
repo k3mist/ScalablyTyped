@@ -15,3 +15,20 @@ trait bookmark2 extends js.Object {
   var startOffset: scala.Double
 }
 
+object bookmark2 {
+  @scala.inline
+  def apply(
+    collapsed: scala.Boolean,
+    end: js.Array[scala.Double],
+    endOffset: scala.Double,
+    is2: scala.Boolean,
+    normalized: scala.Boolean,
+    start: js.Array[scala.Double],
+    startOffset: scala.Double
+  ): bookmark2 = {
+    val __obj = js.Dynamic.literal(collapsed = collapsed, end = end, endOffset = endOffset, is2 = is2, normalized = normalized, start = start, startOffset = startOffset)
+  
+    __obj.asInstanceOf[bookmark2]
+  }
+}
+

@@ -24,3 +24,37 @@ trait IElement
   def updateCustomWidgets(): js.Any
 }
 
+object IElement {
+  @scala.inline
+  def apply(
+    clearIncorrectValues: js.Function0[js.Any],
+    getLayoutType: js.Function0[java.lang.String],
+    getPanel: js.Function0[IPanel],
+    getType: js.Function0[java.lang.String],
+    isLayoutTypeSupported: js.Function1[java.lang.String, scala.Boolean],
+    isPage: scala.Boolean,
+    isPanel: scala.Boolean,
+    isVisible: scala.Boolean,
+    locStrsChanged: js.Function0[js.Any],
+    name: java.lang.String,
+    onAnyValueChanged: js.Function1[java.lang.String, js.Any],
+    onFirstRendering: js.Function0[js.Any],
+    onSurveyLoad: js.Function0[js.Any],
+    parent: IPanel,
+    removeElement: js.Function1[IElement, scala.Boolean],
+    renderWidth: java.lang.String,
+    rightIndent: scala.Double,
+    runCondition: js.Function2[HashTable[_], HashTable[_], js.Any],
+    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
+    setVisibleIndex: js.Function1[scala.Double, scala.Double],
+    startWithNewLine: scala.Boolean,
+    updateCustomWidgets: js.Function0[js.Any],
+    visible: scala.Boolean,
+    width: java.lang.String
+  ): IElement = {
+    val __obj = js.Dynamic.literal(clearIncorrectValues = clearIncorrectValues, getLayoutType = getLayoutType, getPanel = getPanel, getType = getType, isLayoutTypeSupported = isLayoutTypeSupported, isPage = isPage, isPanel = isPanel, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onAnyValueChanged = onAnyValueChanged, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, renderWidth = renderWidth, rightIndent = rightIndent, runCondition = runCondition, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex, startWithNewLine = startWithNewLine, updateCustomWidgets = updateCustomWidgets, visible = visible, width = width)
+  
+    __obj.asInstanceOf[IElement]
+  }
+}
+

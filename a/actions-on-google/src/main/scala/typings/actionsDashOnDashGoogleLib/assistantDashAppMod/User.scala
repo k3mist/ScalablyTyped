@@ -28,3 +28,18 @@ trait User extends js.Object {
   var userStorage: java.lang.String
 }
 
+object User {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    lastSeen: java.lang.String,
+    userId: java.lang.String,
+    userName: UserName,
+    userStorage: java.lang.String
+  ): User = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, lastSeen = lastSeen, userId = userId, userName = userName, userStorage = userStorage)
+  
+    __obj.asInstanceOf[User]
+  }
+}
+

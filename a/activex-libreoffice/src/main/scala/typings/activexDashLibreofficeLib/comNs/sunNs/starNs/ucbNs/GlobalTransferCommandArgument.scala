@@ -28,3 +28,18 @@ trait GlobalTransferCommandArgument extends js.Object {
   var TargetURL: java.lang.String
 }
 
+object GlobalTransferCommandArgument {
+  @scala.inline
+  def apply(
+    NameClash: scala.Double,
+    NewTitle: java.lang.String,
+    Operation: TransferCommandOperation,
+    SourceURL: java.lang.String,
+    TargetURL: java.lang.String
+  ): GlobalTransferCommandArgument = {
+    val __obj = js.Dynamic.literal(NameClash = NameClash, NewTitle = NewTitle, Operation = Operation, SourceURL = SourceURL, TargetURL = TargetURL)
+  
+    __obj.asInstanceOf[GlobalTransferCommandArgument]
+  }
+}
+

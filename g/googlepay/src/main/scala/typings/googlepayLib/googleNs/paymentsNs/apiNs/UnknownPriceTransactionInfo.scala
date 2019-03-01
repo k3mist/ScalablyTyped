@@ -12,3 +12,15 @@ trait UnknownPriceTransactionInfo
   var totalPriceStatus_UnknownPriceTransactionInfo: googlepayLib.googlepayLibStrings.NOT_CURRENTLY_KNOWN
 }
 
+object UnknownPriceTransactionInfo {
+  @scala.inline
+  def apply(
+    currencyCode: java.lang.String,
+    totalPriceStatus: googlepayLib.googlepayLibStrings.NOT_CURRENTLY_KNOWN
+  ): UnknownPriceTransactionInfo = {
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, totalPriceStatus = totalPriceStatus)
+  
+    __obj.asInstanceOf[UnknownPriceTransactionInfo]
+  }
+}
+

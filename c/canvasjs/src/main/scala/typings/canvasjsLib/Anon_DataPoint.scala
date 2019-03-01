@@ -10,3 +10,15 @@ trait Anon_DataPoint extends js.Object {
   var dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions
 }
 
+object Anon_DataPoint {
+  @scala.inline
+  def apply(
+    dataPoint: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataPoint,
+    dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions
+  ): Anon_DataPoint = {
+    val __obj = js.Dynamic.literal(dataPoint = dataPoint, dataSeries = dataSeries)
+  
+    __obj.asInstanceOf[Anon_DataPoint]
+  }
+}
+

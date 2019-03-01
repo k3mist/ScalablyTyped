@@ -15,3 +15,12 @@ trait StackTraceId extends js.Object {
   var id: java.lang.String
 }
 
+object StackTraceId {
+  @scala.inline
+  def apply(id: java.lang.String, debuggerId: UniqueDebuggerId = null): StackTraceId = {
+    val __obj = js.Dynamic.literal(id = id)
+    if (debuggerId != null) __obj.updateDynamic("debuggerId")(debuggerId)
+    __obj.asInstanceOf[StackTraceId]
+  }
+}
+

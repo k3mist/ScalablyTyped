@@ -26,3 +26,18 @@ trait XCommandInfoChangeNotifier
   def removeCommandInfoChangeListener(Listener: XCommandInfoChangeListener): scala.Unit
 }
 
+object XCommandInfoChangeNotifier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addCommandInfoChangeListener: js.Function1[XCommandInfoChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCommandInfoChangeListener: js.Function1[XCommandInfoChangeListener, scala.Unit]
+  ): XCommandInfoChangeNotifier = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addCommandInfoChangeListener = addCommandInfoChangeListener, queryInterface = queryInterface, release = release, removeCommandInfoChangeListener = removeCommandInfoChangeListener)
+  
+    __obj.asInstanceOf[XCommandInfoChangeNotifier]
+  }
+}
+

@@ -27,3 +27,32 @@ trait KramedRenderer extends js.Object {
   def text(text: java.lang.String): java.lang.String
 }
 
+object KramedRenderer {
+  @scala.inline
+  def apply(
+    blockquote: js.Function1[java.lang.String, java.lang.String],
+    br: js.Function0[java.lang.String],
+    code: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    codespan: js.Function1[java.lang.String, java.lang.String],
+    del: js.Function1[java.lang.String, java.lang.String],
+    em: js.Function1[java.lang.String, java.lang.String],
+    heading: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    hr: js.Function0[java.lang.String],
+    html: js.Function1[java.lang.String, java.lang.String],
+    image: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    link: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    list: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
+    listitem: js.Function1[java.lang.String, java.lang.String],
+    paragraph: js.Function1[java.lang.String, java.lang.String],
+    strong: js.Function1[java.lang.String, java.lang.String],
+    table: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    tablecell: js.Function2[java.lang.String, kramedLib.Anon_Align, java.lang.String],
+    tablerow: js.Function1[java.lang.String, java.lang.String],
+    text: js.Function1[java.lang.String, java.lang.String]
+  ): KramedRenderer = {
+    val __obj = js.Dynamic.literal(blockquote = blockquote, br = br, code = code, codespan = codespan, del = del, em = em, heading = heading, hr = hr, html = html, image = image, link = link, list = list, listitem = listitem, paragraph = paragraph, strong = strong, table = table, tablecell = tablecell, tablerow = tablerow, text = text)
+  
+    __obj.asInstanceOf[KramedRenderer]
+  }
+}
+

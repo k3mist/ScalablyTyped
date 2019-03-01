@@ -15,3 +15,17 @@ trait XCloseable
   def close(): scala.Unit
 }
 
+object XCloseable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    close: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCloseable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, close = close, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCloseable]
+  }
+}
+

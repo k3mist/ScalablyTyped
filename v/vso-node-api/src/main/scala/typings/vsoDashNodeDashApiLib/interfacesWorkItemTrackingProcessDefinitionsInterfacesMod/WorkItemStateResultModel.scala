@@ -36,3 +36,20 @@ trait WorkItemStateResultModel extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemStateResultModel {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    hidden: scala.Boolean,
+    id: java.lang.String,
+    name: java.lang.String,
+    order: scala.Double,
+    stateCategory: java.lang.String,
+    url: java.lang.String
+  ): WorkItemStateResultModel = {
+    val __obj = js.Dynamic.literal(color = color, hidden = hidden, id = id, name = name, order = order, stateCategory = stateCategory, url = url)
+  
+    __obj.asInstanceOf[WorkItemStateResultModel]
+  }
+}
+

@@ -10,3 +10,12 @@ trait StaticRendererResult extends js.Object {
   var html: java.lang.String
 }
 
+object StaticRendererResult {
+  @scala.inline
+  def apply(css: aphroditeLib.Anon_Content, html: java.lang.String): StaticRendererResult = {
+    val __obj = js.Dynamic.literal(css = css, html = html)
+  
+    __obj.asInstanceOf[StaticRendererResult]
+  }
+}
+

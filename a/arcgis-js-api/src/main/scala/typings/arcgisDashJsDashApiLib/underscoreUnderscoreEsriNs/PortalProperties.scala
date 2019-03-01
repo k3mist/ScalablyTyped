@@ -379,3 +379,126 @@ trait PortalProperties extends LoadableProperties {
   var vectorBasemapGalleryGroupQuery: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortalProperties {
+  @scala.inline
+  def apply(
+    access: java.lang.String = null,
+    allSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    authMode: java.lang.String = null,
+    authorizedCrossOriginDomains: js.Array[java.lang.String] = null,
+    basemapGalleryGroupQuery: java.lang.String = null,
+    bingKey: java.lang.String = null,
+    canListApps: js.UndefOr[scala.Boolean] = js.undefined,
+    canListData: js.UndefOr[scala.Boolean] = js.undefined,
+    canListPreProvisionedItems: js.UndefOr[scala.Boolean] = js.undefined,
+    canProvisionDirectPurchase: js.UndefOr[scala.Boolean] = js.undefined,
+    canSearchPublic: js.UndefOr[scala.Boolean] = js.undefined,
+    canShareBingPublic: js.UndefOr[scala.Boolean] = js.undefined,
+    canSharePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    canSignInArcGIS: js.UndefOr[scala.Boolean] = js.undefined,
+    canSignInIDP: js.UndefOr[scala.Boolean] = js.undefined,
+    colorSetsGroupQuery: java.lang.String = null,
+    commentsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    created: DateProperties = null,
+    culture: java.lang.String = null,
+    customBaseUrl: java.lang.String = null,
+    defaultBasemap: BasemapProperties = null,
+    defaultExtent: ExtentProperties = null,
+    defaultVectorBasemap: BasemapProperties = null,
+    description: java.lang.String = null,
+    eueiEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    featuredGroups: js.Array[PortalFeaturedGroups] = null,
+    featuredItemsGroupQuery: java.lang.String = null,
+    galleryTemplatesGroupQuery: java.lang.String = null,
+    hasCategorySchema: js.UndefOr[scala.Boolean] = js.undefined,
+    helperServices: js.Any = null,
+    homePageFeaturedContent: java.lang.String = null,
+    homePageFeaturedContentCount: scala.Int | scala.Double = null,
+    httpPort: scala.Int | scala.Double = null,
+    httpsPort: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    ipCntryCode: java.lang.String = null,
+    isPortal: js.UndefOr[scala.Boolean] = js.undefined,
+    layerTemplatesGroupQuery: java.lang.String = null,
+    maxTokenExpirationMinutes: scala.Int | scala.Double = null,
+    modified: DateProperties = null,
+    name: java.lang.String = null,
+    portalHostname: java.lang.String = null,
+    portalMode: java.lang.String = null,
+    portalProperties: js.Any = null,
+    region: java.lang.String = null,
+    rotatorPanels: js.Array[_] = null,
+    showHomePageDescription: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsHostedServices: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolSetsGroupQuery: java.lang.String = null,
+    templatesGroupQuery: java.lang.String = null,
+    units: java.lang.String = null,
+    url: java.lang.String = null,
+    urlKey: java.lang.String = null,
+    useStandardizedQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    useVectorBasemaps: js.UndefOr[scala.Boolean] = js.undefined,
+    user: PortalUserProperties = null,
+    vectorBasemapGalleryGroupQuery: java.lang.String = null
+  ): PortalProperties = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (!js.isUndefined(allSSL)) __obj.updateDynamic("allSSL")(allSSL)
+    if (authMode != null) __obj.updateDynamic("authMode")(authMode)
+    if (authorizedCrossOriginDomains != null) __obj.updateDynamic("authorizedCrossOriginDomains")(authorizedCrossOriginDomains)
+    if (basemapGalleryGroupQuery != null) __obj.updateDynamic("basemapGalleryGroupQuery")(basemapGalleryGroupQuery)
+    if (bingKey != null) __obj.updateDynamic("bingKey")(bingKey)
+    if (!js.isUndefined(canListApps)) __obj.updateDynamic("canListApps")(canListApps)
+    if (!js.isUndefined(canListData)) __obj.updateDynamic("canListData")(canListData)
+    if (!js.isUndefined(canListPreProvisionedItems)) __obj.updateDynamic("canListPreProvisionedItems")(canListPreProvisionedItems)
+    if (!js.isUndefined(canProvisionDirectPurchase)) __obj.updateDynamic("canProvisionDirectPurchase")(canProvisionDirectPurchase)
+    if (!js.isUndefined(canSearchPublic)) __obj.updateDynamic("canSearchPublic")(canSearchPublic)
+    if (!js.isUndefined(canShareBingPublic)) __obj.updateDynamic("canShareBingPublic")(canShareBingPublic)
+    if (!js.isUndefined(canSharePublic)) __obj.updateDynamic("canSharePublic")(canSharePublic)
+    if (!js.isUndefined(canSignInArcGIS)) __obj.updateDynamic("canSignInArcGIS")(canSignInArcGIS)
+    if (!js.isUndefined(canSignInIDP)) __obj.updateDynamic("canSignInIDP")(canSignInIDP)
+    if (colorSetsGroupQuery != null) __obj.updateDynamic("colorSetsGroupQuery")(colorSetsGroupQuery)
+    if (!js.isUndefined(commentsEnabled)) __obj.updateDynamic("commentsEnabled")(commentsEnabled)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (customBaseUrl != null) __obj.updateDynamic("customBaseUrl")(customBaseUrl)
+    if (defaultBasemap != null) __obj.updateDynamic("defaultBasemap")(defaultBasemap)
+    if (defaultExtent != null) __obj.updateDynamic("defaultExtent")(defaultExtent)
+    if (defaultVectorBasemap != null) __obj.updateDynamic("defaultVectorBasemap")(defaultVectorBasemap)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(eueiEnabled)) __obj.updateDynamic("eueiEnabled")(eueiEnabled)
+    if (featuredGroups != null) __obj.updateDynamic("featuredGroups")(featuredGroups)
+    if (featuredItemsGroupQuery != null) __obj.updateDynamic("featuredItemsGroupQuery")(featuredItemsGroupQuery)
+    if (galleryTemplatesGroupQuery != null) __obj.updateDynamic("galleryTemplatesGroupQuery")(galleryTemplatesGroupQuery)
+    if (!js.isUndefined(hasCategorySchema)) __obj.updateDynamic("hasCategorySchema")(hasCategorySchema)
+    if (helperServices != null) __obj.updateDynamic("helperServices")(helperServices)
+    if (homePageFeaturedContent != null) __obj.updateDynamic("homePageFeaturedContent")(homePageFeaturedContent)
+    if (homePageFeaturedContentCount != null) __obj.updateDynamic("homePageFeaturedContentCount")(homePageFeaturedContentCount.asInstanceOf[js.Any])
+    if (httpPort != null) __obj.updateDynamic("httpPort")(httpPort.asInstanceOf[js.Any])
+    if (httpsPort != null) __obj.updateDynamic("httpsPort")(httpsPort.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ipCntryCode != null) __obj.updateDynamic("ipCntryCode")(ipCntryCode)
+    if (!js.isUndefined(isPortal)) __obj.updateDynamic("isPortal")(isPortal)
+    if (layerTemplatesGroupQuery != null) __obj.updateDynamic("layerTemplatesGroupQuery")(layerTemplatesGroupQuery)
+    if (maxTokenExpirationMinutes != null) __obj.updateDynamic("maxTokenExpirationMinutes")(maxTokenExpirationMinutes.asInstanceOf[js.Any])
+    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (portalHostname != null) __obj.updateDynamic("portalHostname")(portalHostname)
+    if (portalMode != null) __obj.updateDynamic("portalMode")(portalMode)
+    if (portalProperties != null) __obj.updateDynamic("portalProperties")(portalProperties)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (rotatorPanels != null) __obj.updateDynamic("rotatorPanels")(rotatorPanels)
+    if (!js.isUndefined(showHomePageDescription)) __obj.updateDynamic("showHomePageDescription")(showHomePageDescription)
+    if (!js.isUndefined(supportsHostedServices)) __obj.updateDynamic("supportsHostedServices")(supportsHostedServices)
+    if (symbolSetsGroupQuery != null) __obj.updateDynamic("symbolSetsGroupQuery")(symbolSetsGroupQuery)
+    if (templatesGroupQuery != null) __obj.updateDynamic("templatesGroupQuery")(templatesGroupQuery)
+    if (units != null) __obj.updateDynamic("units")(units)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey)
+    if (!js.isUndefined(useStandardizedQuery)) __obj.updateDynamic("useStandardizedQuery")(useStandardizedQuery)
+    if (!js.isUndefined(useVectorBasemaps)) __obj.updateDynamic("useVectorBasemaps")(useVectorBasemaps)
+    if (user != null) __obj.updateDynamic("user")(user)
+    if (vectorBasemapGalleryGroupQuery != null) __obj.updateDynamic("vectorBasemapGalleryGroupQuery")(vectorBasemapGalleryGroupQuery)
+    __obj.asInstanceOf[PortalProperties]
+  }
+}
+

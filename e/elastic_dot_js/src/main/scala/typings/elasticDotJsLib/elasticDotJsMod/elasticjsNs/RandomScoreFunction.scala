@@ -25,3 +25,17 @@ trait RandomScoreFunction extends ScoreFunction {
   def toJSON(): js.Any
 }
 
+object RandomScoreFunction {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    filter: js.Function1[Filter, RandomScoreFunction],
+    seed: js.Function1[scala.Double, RandomScoreFunction],
+    toJSON: js.Function0[js.Any]
+  ): RandomScoreFunction = {
+    val __obj = js.Dynamic.literal(_type = _type, filter = filter, seed = seed, toJSON = toJSON)
+  
+    __obj.asInstanceOf[RandomScoreFunction]
+  }
+}
+

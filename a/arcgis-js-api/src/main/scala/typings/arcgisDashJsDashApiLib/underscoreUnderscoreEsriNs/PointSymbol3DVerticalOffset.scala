@@ -26,3 +26,31 @@ trait PointSymbol3DVerticalOffset extends AnonymousAccessor {
   var screenLength: scala.Double
 }
 
+object PointSymbol3DVerticalOffset {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    screenLength: scala.Double,
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    maxWorldLength: scala.Int | scala.Double = null,
+    minWorldLength: scala.Int | scala.Double = null,
+    set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, PointSymbol3DVerticalOffset]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], PointSymbol3DVerticalOffset]) = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): PointSymbol3DVerticalOffset = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, screenLength = screenLength)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (maxWorldLength != null) __obj.updateDynamic("maxWorldLength")(maxWorldLength.asInstanceOf[js.Any])
+    if (minWorldLength != null) __obj.updateDynamic("minWorldLength")(minWorldLength.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[PointSymbol3DVerticalOffset]
+  }
+}
+

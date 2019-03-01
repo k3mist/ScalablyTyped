@@ -13,3 +13,18 @@ trait Pickle extends js.Object {
   var tags: js.Array[Tag]
 }
 
+object Pickle {
+  @scala.inline
+  def apply(
+    language: java.lang.String,
+    locations: js.Array[Location],
+    name: java.lang.String,
+    steps: js.Array[Step],
+    tags: js.Array[Tag]
+  ): Pickle = {
+    val __obj = js.Dynamic.literal(language = language, locations = locations, name = name, steps = steps, tags = tags)
+  
+    __obj.asInstanceOf[Pickle]
+  }
+}
+

@@ -17,3 +17,21 @@ trait PageletData extends js.Object {
   var styles: js.Array[java.lang.String]
 }
 
+object PageletData {
+  @scala.inline
+  def apply(
+    container: java.lang.String,
+    css: js.Array[java.lang.String],
+    html: java.lang.String,
+    id: java.lang.String,
+    `js_`: js.Array[java.lang.String],
+    reqID: java.lang.String,
+    scripts: js.Array[java.lang.String],
+    styles: js.Array[java.lang.String]
+  ): PageletData = {
+    val __obj = js.Dynamic.literal(container = container, css = css, html = html, id = id, `js_` = `js_`, reqID = reqID, scripts = scripts, styles = styles)
+  
+    __obj.asInstanceOf[PageletData]
+  }
+}
+

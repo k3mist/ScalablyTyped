@@ -11,3 +11,12 @@ trait IFilterOrderByItem extends js.Object {
   var value: js.Any
 }
 
+object IFilterOrderByItem {
+  @scala.inline
+  def apply(index: js.Any, `type`: java.lang.String, value: js.Any): IFilterOrderByItem = {
+    val __obj = js.Dynamic.literal(index = index, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[IFilterOrderByItem]
+  }
+}
+

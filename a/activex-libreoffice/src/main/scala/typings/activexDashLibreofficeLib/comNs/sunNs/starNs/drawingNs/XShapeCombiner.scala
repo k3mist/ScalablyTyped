@@ -21,3 +21,18 @@ trait XShapeCombiner
   def split(Group: XShape): scala.Unit
 }
 
+object XShapeCombiner {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    combine: js.Function1[XShapes, XShape],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    split: js.Function1[XShape, scala.Unit]
+  ): XShapeCombiner = {
+    val __obj = js.Dynamic.literal(acquire = acquire, combine = combine, queryInterface = queryInterface, release = release, split = split)
+  
+    __obj.asInstanceOf[XShapeCombiner]
+  }
+}
+

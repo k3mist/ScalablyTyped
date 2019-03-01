@@ -11,3 +11,12 @@ trait OpensshCipherInfo extends js.Object {
   var opensslName: java.lang.String
 }
 
+object OpensshCipherInfo {
+  @scala.inline
+  def apply(blockSize: scala.Double, keySize: scala.Double, opensslName: java.lang.String): OpensshCipherInfo = {
+    val __obj = js.Dynamic.literal(blockSize = blockSize, keySize = keySize, opensslName = opensslName)
+  
+    __obj.asInstanceOf[OpensshCipherInfo]
+  }
+}
+

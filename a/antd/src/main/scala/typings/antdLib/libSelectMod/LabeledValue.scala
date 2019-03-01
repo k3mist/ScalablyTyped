@@ -10,3 +10,12 @@ trait LabeledValue extends js.Object {
   var label: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object LabeledValue {
+  @scala.inline
+  def apply(key: java.lang.String, label: reactLib.reactMod.ReactNs.ReactNode): LabeledValue = {
+    val __obj = js.Dynamic.literal(key = key, label = label.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[LabeledValue]
+  }
+}
+

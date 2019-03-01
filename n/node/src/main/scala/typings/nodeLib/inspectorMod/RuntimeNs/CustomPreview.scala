@@ -16,3 +16,18 @@ trait CustomPreview extends js.Object {
   var header: java.lang.String
 }
 
+object CustomPreview {
+  @scala.inline
+  def apply(
+    bindRemoteObjectFunctionId: RemoteObjectId,
+    formatterObjectId: RemoteObjectId,
+    hasBody: scala.Boolean,
+    header: java.lang.String,
+    configObjectId: RemoteObjectId = null
+  ): CustomPreview = {
+    val __obj = js.Dynamic.literal(bindRemoteObjectFunctionId = bindRemoteObjectFunctionId, formatterObjectId = formatterObjectId, hasBody = hasBody, header = header)
+    if (configObjectId != null) __obj.updateDynamic("configObjectId")(configObjectId)
+    __obj.asInstanceOf[CustomPreview]
+  }
+}
+

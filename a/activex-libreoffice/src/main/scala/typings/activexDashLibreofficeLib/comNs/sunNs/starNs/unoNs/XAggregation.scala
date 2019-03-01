@@ -43,3 +43,18 @@ trait XAggregation extends XInterface {
   def setDelegator(pDelegator: XInterface): scala.Unit
 }
 
+object XAggregation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryAggregation: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDelegator: js.Function1[XInterface, scala.Unit]
+  ): XAggregation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryAggregation = queryAggregation, queryInterface = queryInterface, release = release, setDelegator = setDelegator)
+  
+    __obj.asInstanceOf[XAggregation]
+  }
+}
+

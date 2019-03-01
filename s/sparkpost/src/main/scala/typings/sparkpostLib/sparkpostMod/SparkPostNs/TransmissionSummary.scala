@@ -18,3 +18,18 @@ trait TransmissionSummary extends js.Object {
   var state: sparkpostLib.sparkpostLibStrings.submitted | sparkpostLib.sparkpostLibStrings.Generating | sparkpostLib.sparkpostLibStrings.Success | sparkpostLib.sparkpostLibStrings.Canceled
 }
 
+object TransmissionSummary {
+  @scala.inline
+  def apply(
+    campaign_id: java.lang.String,
+    content: sparkpostLib.Anon_TemplateidString,
+    description: java.lang.String,
+    id: java.lang.String,
+    state: sparkpostLib.sparkpostLibStrings.submitted | sparkpostLib.sparkpostLibStrings.Generating | sparkpostLib.sparkpostLibStrings.Success | sparkpostLib.sparkpostLibStrings.Canceled
+  ): TransmissionSummary = {
+    val __obj = js.Dynamic.literal(campaign_id = campaign_id, content = content, description = description, id = id, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[TransmissionSummary]
+  }
+}
+

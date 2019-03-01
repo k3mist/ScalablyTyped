@@ -11,3 +11,17 @@ trait Term extends js.Object {
   def coefficient(): algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction
 }
 
+object Term {
+  @scala.inline
+  def apply(
+    coefficient: js.Function0[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction],
+    coefficients: js.Array[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction],
+    toString: js.Function0[java.lang.String],
+    variables: js.Array[Variable]
+  ): Term = {
+    val __obj = js.Dynamic.literal(coefficient = coefficient, coefficients = coefficients, toString = toString, variables = variables)
+  
+    __obj.asInstanceOf[Term]
+  }
+}
+

@@ -16,3 +16,12 @@ trait TaskOrchestrationPlanReference extends js.Object {
   var planId: java.lang.String
 }
 
+object TaskOrchestrationPlanReference {
+  @scala.inline
+  def apply(orchestrationType: scala.Double, planId: java.lang.String): TaskOrchestrationPlanReference = {
+    val __obj = js.Dynamic.literal(orchestrationType = orchestrationType, planId = planId)
+  
+    __obj.asInstanceOf[TaskOrchestrationPlanReference]
+  }
+}
+

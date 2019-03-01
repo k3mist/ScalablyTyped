@@ -18,3 +18,21 @@ trait XSpinListener
   def up(rEvent: SpinEvent): scala.Unit
 }
 
+object XSpinListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    down: js.Function1[SpinEvent, scala.Unit],
+    first: js.Function1[SpinEvent, scala.Unit],
+    last: js.Function1[SpinEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    up: js.Function1[SpinEvent, scala.Unit]
+  ): XSpinListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, down = down, first = first, last = last, queryInterface = queryInterface, release = release, up = up)
+  
+    __obj.asInstanceOf[XSpinListener]
+  }
+}
+

@@ -10,3 +10,16 @@ trait GriddleRenderProperties extends js.Object {
   var rowProperties: js.UndefOr[RowRenderProperties] = js.undefined
 }
 
+object GriddleRenderProperties {
+  @scala.inline
+  def apply(
+    columnProperties: PropertyBag[ColumnRenderProperties] = null,
+    rowProperties: RowRenderProperties = null
+  ): GriddleRenderProperties = {
+    val __obj = js.Dynamic.literal()
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
+    if (rowProperties != null) __obj.updateDynamic("rowProperties")(rowProperties)
+    __obj.asInstanceOf[GriddleRenderProperties]
+  }
+}
+

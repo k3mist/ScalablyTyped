@@ -32,3 +32,19 @@ trait ReaddirpEntry extends js.Object {
   var stat: Stats
 }
 
+object ReaddirpEntry {
+  @scala.inline
+  def apply(
+    fullParentDir: java.lang.String,
+    fullPath: java.lang.String,
+    name: java.lang.String,
+    parentDir: java.lang.String,
+    path: java.lang.String,
+    stat: Stats
+  ): ReaddirpEntry = {
+    val __obj = js.Dynamic.literal(fullParentDir = fullParentDir, fullPath = fullPath, name = name, parentDir = parentDir, path = path, stat = stat)
+  
+    __obj.asInstanceOf[ReaddirpEntry]
+  }
+}
+

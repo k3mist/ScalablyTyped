@@ -34,3 +34,21 @@ trait UserArgs extends js.Object {
   val userName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UserArgs {
+  @scala.inline
+  def apply(
+    role: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    serverId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    userName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    homeDirectory: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): UserArgs = {
+    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserArgs]
+  }
+}
+

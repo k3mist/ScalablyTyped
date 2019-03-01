@@ -11,3 +11,12 @@ trait ASPxClientFloatingActionButtonCollapseReason extends js.Object {
   var CollapseButton: java.lang.String
 }
 
+object ASPxClientFloatingActionButtonCollapseReason {
+  @scala.inline
+  def apply(API: java.lang.String, ActionItem: java.lang.String, CollapseButton: java.lang.String): ASPxClientFloatingActionButtonCollapseReason = {
+    val __obj = js.Dynamic.literal(API = API, ActionItem = ActionItem, CollapseButton = CollapseButton)
+  
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonCollapseReason]
+  }
+}
+

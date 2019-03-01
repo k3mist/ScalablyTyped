@@ -20,3 +20,20 @@ trait ImageProperties extends MediaMediaProperties {
   var value: js.UndefOr[ImageValueProperties] = js.undefined
 }
 
+object ImageProperties {
+  @scala.inline
+  def apply(
+    caption: java.lang.String = null,
+    refreshInterval: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    value: ImageValueProperties = null
+  ): ImageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ImageProperties]
+  }
+}
+

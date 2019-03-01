@@ -18,3 +18,23 @@ trait IObjectTemplateSelectorItem extends js.Object {
   def IsDefaultTemplateForClass(): scala.Boolean
 }
 
+object IObjectTemplateSelectorItem {
+  @scala.inline
+  def apply(
+    GetClassID: js.Function0[scala.Double],
+    GetClassName: js.Function0[java.lang.String],
+    GetGroupID: js.Function0[scala.Double],
+    GetGroupName: js.Function0[java.lang.String],
+    GetID: js.Function0[java.lang.String],
+    GetIconURL: js.Function0[java.lang.String],
+    GetName: js.Function0[java.lang.String],
+    GetTemplateID: js.Function0[scala.Double],
+    IsBlankItem: js.Function0[scala.Boolean],
+    IsDefaultTemplateForClass: js.Function0[scala.Boolean]
+  ): IObjectTemplateSelectorItem = {
+    val __obj = js.Dynamic.literal(GetClassID = GetClassID, GetClassName = GetClassName, GetGroupID = GetGroupID, GetGroupName = GetGroupName, GetID = GetID, GetIconURL = GetIconURL, GetName = GetName, GetTemplateID = GetTemplateID, IsBlankItem = IsBlankItem, IsDefaultTemplateForClass = IsDefaultTemplateForClass)
+  
+    __obj.asInstanceOf[IObjectTemplateSelectorItem]
+  }
+}
+

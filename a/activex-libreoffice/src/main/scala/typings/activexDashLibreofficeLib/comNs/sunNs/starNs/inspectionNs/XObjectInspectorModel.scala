@@ -96,3 +96,20 @@ trait XObjectInspectorModel extends js.Object {
   def getPropertyOrderIndex(PropertyName: java.lang.String): scala.Double
 }
 
+object XObjectInspectorModel {
+  @scala.inline
+  def apply(
+    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HasHelpSection: scala.Boolean,
+    IsReadOnly: scala.Boolean,
+    MaxHelpTextLines: scala.Double,
+    MinHelpTextLines: scala.Double,
+    describeCategories: js.Function0[activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]],
+    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+  ): XObjectInspectorModel = {
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+  
+    __obj.asInstanceOf[XObjectInspectorModel]
+  }
+}
+

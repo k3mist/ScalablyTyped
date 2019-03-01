@@ -23,3 +23,12 @@ trait IAssetsProgressEvent extends js.Object {
   var totalCount: scala.Double
 }
 
+object IAssetsProgressEvent {
+  @scala.inline
+  def apply(remainingCount: scala.Double, task: AbstractAssetTask, totalCount: scala.Double): IAssetsProgressEvent = {
+    val __obj = js.Dynamic.literal(remainingCount = remainingCount, task = task, totalCount = totalCount)
+  
+    __obj.asInstanceOf[IAssetsProgressEvent]
+  }
+}
+

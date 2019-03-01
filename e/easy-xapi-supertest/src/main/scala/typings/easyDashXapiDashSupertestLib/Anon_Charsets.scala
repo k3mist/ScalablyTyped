@@ -13,3 +13,18 @@ trait Anon_Charsets extends js.Object {
   def lookup(path: java.lang.String): java.lang.String
 }
 
+object Anon_Charsets {
+  @scala.inline
+  def apply(
+    charsets: easyDashXapiDashSupertestLib.mimeMod.Charsets,
+    define: js.Function1[js.Object, scala.Unit],
+    extension: js.Function1[java.lang.String, java.lang.String],
+    load: js.Function1[java.lang.String, scala.Unit],
+    lookup: js.Function1[java.lang.String, java.lang.String]
+  ): Anon_Charsets = {
+    val __obj = js.Dynamic.literal(charsets = charsets, define = define, extension = extension, load = load, lookup = lookup)
+  
+    __obj.asInstanceOf[Anon_Charsets]
+  }
+}
+

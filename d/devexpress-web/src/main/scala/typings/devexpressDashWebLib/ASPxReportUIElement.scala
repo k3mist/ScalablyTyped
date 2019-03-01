@@ -21,3 +21,12 @@ trait ASPxReportUIElement extends js.Object {
   var templateName: java.lang.String
 }
 
+object ASPxReportUIElement {
+  @scala.inline
+  def apply(model: js.Object, templateName: java.lang.String): ASPxReportUIElement = {
+    val __obj = js.Dynamic.literal(model = model, templateName = templateName)
+  
+    __obj.asInstanceOf[ASPxReportUIElement]
+  }
+}
+

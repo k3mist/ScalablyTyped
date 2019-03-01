@@ -15,3 +15,20 @@ trait Meta extends js.Object {
   var quallity: java.lang.String
 }
 
+object Meta {
+  @scala.inline
+  def apply(
+    colorSpace: java.lang.String,
+    compression: java.lang.String,
+    fileSize: java.lang.String,
+    format: java.lang.String,
+    imageSize: imageSize,
+    orientation: java.lang.String,
+    quallity: java.lang.String
+  ): Meta = {
+    val __obj = js.Dynamic.literal(colorSpace = colorSpace, compression = compression, fileSize = fileSize, format = format, imageSize = imageSize, orientation = orientation, quallity = quallity)
+  
+    __obj.asInstanceOf[Meta]
+  }
+}
+

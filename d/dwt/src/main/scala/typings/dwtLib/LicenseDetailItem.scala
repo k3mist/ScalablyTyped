@@ -18,3 +18,20 @@ trait LicenseDetailItem extends js.Object {
   val Version: java.lang.String
 }
 
+object LicenseDetailItem {
+  @scala.inline
+  def apply(
+    Browser: java.lang.String,
+    EnumLicenseType: java.lang.String,
+    ExpireDate: java.lang.String,
+    LicenseType: java.lang.String,
+    OS: java.lang.String,
+    Trial: java.lang.String,
+    Version: java.lang.String
+  ): LicenseDetailItem = {
+    val __obj = js.Dynamic.literal(Browser = Browser, EnumLicenseType = EnumLicenseType, ExpireDate = ExpireDate, LicenseType = LicenseType, OS = OS, Trial = Trial, Version = Version)
+  
+    __obj.asInstanceOf[LicenseDetailItem]
+  }
+}
+

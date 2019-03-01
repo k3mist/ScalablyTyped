@@ -38,3 +38,20 @@ trait MinAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object MinAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, MinAggregation],
+    lang: js.Function1[java.lang.String, MinAggregation],
+    params: js.Function1[js.Object, MinAggregation],
+    script: js.Function1[java.lang.String, MinAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, MinAggregation],
+    toJSON: js.Function0[js.Any]
+  ): MinAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[MinAggregation]
+  }
+}
+

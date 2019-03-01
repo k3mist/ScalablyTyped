@@ -12,3 +12,17 @@ trait Anon_DeviceNameEbs extends js.Object {
   var virtualName: java.lang.String
 }
 
+object Anon_DeviceNameEbs {
+  @scala.inline
+  def apply(
+    deviceName: java.lang.String,
+    ebs: js.Array[Anon_DeleteOnTerminationEncrypted],
+    noDevice: java.lang.String,
+    virtualName: java.lang.String
+  ): Anon_DeviceNameEbs = {
+    val __obj = js.Dynamic.literal(deviceName = deviceName, ebs = ebs, noDevice = noDevice, virtualName = virtualName)
+  
+    __obj.asInstanceOf[Anon_DeviceNameEbs]
+  }
+}
+

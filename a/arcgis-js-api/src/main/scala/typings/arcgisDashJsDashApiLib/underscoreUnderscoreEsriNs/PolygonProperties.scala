@@ -34,3 +34,24 @@ trait PolygonProperties extends GeometryProperties {
   var rings: js.UndefOr[js.Array[js.Array[js.Array[scala.Double]]]] = js.undefined
 }
 
+object PolygonProperties {
+  @scala.inline
+  def apply(
+    centroid: PointProperties = null,
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelfIntersecting: js.UndefOr[scala.Boolean] = js.undefined,
+    rings: js.Array[js.Array[js.Array[scala.Double]]] = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): PolygonProperties = {
+    val __obj = js.Dynamic.literal()
+    if (centroid != null) __obj.updateDynamic("centroid")(centroid)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting)
+    if (rings != null) __obj.updateDynamic("rings")(rings)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[PolygonProperties]
+  }
+}
+

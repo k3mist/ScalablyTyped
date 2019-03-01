@@ -20,3 +20,12 @@ trait _Impl extends js.Object {
   var play: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(embed: java.lang.String, placeholder: java.lang.String, play: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal(embed = embed, placeholder = placeholder, play = play)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

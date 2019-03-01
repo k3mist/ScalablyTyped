@@ -26,3 +26,21 @@ trait XBridge
   def getName(): java.lang.String
 }
 
+object XBridge {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDescription: js.Function0[java.lang.String],
+    getInstance: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBridge = {
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, acquire = acquire, getDescription = getDescription, getInstance = getInstance, getName = getName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBridge]
+  }
+}
+

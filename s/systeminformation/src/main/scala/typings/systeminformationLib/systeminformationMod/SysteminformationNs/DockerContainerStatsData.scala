@@ -19,3 +19,24 @@ trait DockerContainerStatsData extends js.Object {
   var precpu_stats: systeminformationLib.Anon_Cpuusage
 }
 
+object DockerContainerStatsData {
+  @scala.inline
+  def apply(
+    blockIO: systeminformationLib.Anon_R,
+    cpu_percent: scala.Double,
+    cpu_stats: systeminformationLib.Anon_Cpuusage,
+    id: java.lang.String,
+    mem_limit: scala.Double,
+    mem_percent: scala.Double,
+    mem_usage: scala.Double,
+    memory_stats: systeminformationLib.Anon_Limit,
+    netIO: systeminformationLib.Anon_Rx,
+    networks: js.Any,
+    precpu_stats: systeminformationLib.Anon_Cpuusage
+  ): DockerContainerStatsData = {
+    val __obj = js.Dynamic.literal(blockIO = blockIO, cpu_percent = cpu_percent, cpu_stats = cpu_stats, id = id, mem_limit = mem_limit, mem_percent = mem_percent, mem_usage = mem_usage, memory_stats = memory_stats, netIO = netIO, networks = networks, precpu_stats = precpu_stats)
+  
+    __obj.asInstanceOf[DockerContainerStatsData]
+  }
+}
+

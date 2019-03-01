@@ -46,3 +46,16 @@ trait ContentInfo extends js.Object {
   var Type: java.lang.String
 }
 
+object ContentInfo {
+  @scala.inline
+  def apply(
+    Attributes: scala.Double,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Type: java.lang.String
+  ): ContentInfo = {
+    val __obj = js.Dynamic.literal(Attributes = Attributes, Properties = Properties, Type = Type)
+  
+    __obj.asInstanceOf[ContentInfo]
+  }
+}
+

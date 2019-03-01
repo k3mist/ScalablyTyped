@@ -13,3 +13,12 @@ trait PublicKeyCredentialParameters extends js.Object {
   var `type`: PublicKeyCredentialType
 }
 
+object PublicKeyCredentialParameters {
+  @scala.inline
+  def apply(alg: scala.Double, `type`: PublicKeyCredentialType): PublicKeyCredentialParameters = {
+    val __obj = js.Dynamic.literal(alg = alg, `type` = `type`)
+  
+    __obj.asInstanceOf[PublicKeyCredentialParameters]
+  }
+}
+

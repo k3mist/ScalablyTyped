@@ -12,3 +12,17 @@ trait AuthToken extends js.Object {
   var token_type: java.lang.String
 }
 
+object AuthToken {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    expires_in: scala.Double,
+    token_type: java.lang.String,
+    refresh_token: java.lang.String = null
+  ): AuthToken = {
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in, token_type = token_type)
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
+    __obj.asInstanceOf[AuthToken]
+  }
+}
+

@@ -13,3 +13,17 @@ trait Anon_Name
   var uri: java.lang.String
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    size: scala.Double,
+    `type`: expoLib.expoLibStrings.success,
+    uri: java.lang.String
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal(name = name, size = size, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

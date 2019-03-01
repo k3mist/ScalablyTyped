@@ -10,3 +10,15 @@ trait NavigationOpenDrawerAction extends NavigationDrawerAction {
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/OPEN_DRAWER`
 }
 
+object NavigationOpenDrawerAction {
+  @scala.inline
+  def apply(
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/OPEN_DRAWER`,
+    key: java.lang.String = null
+  ): NavigationOpenDrawerAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[NavigationOpenDrawerAction]
+  }
+}
+

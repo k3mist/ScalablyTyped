@@ -31,3 +31,12 @@ trait ASPxClientCardViewColumn extends ASPxClientGridColumnBase {
   var visible: scala.Boolean
 }
 
+object ASPxClientCardViewColumn {
+  @scala.inline
+  def apply(fieldName: java.lang.String, index: scala.Double, name: java.lang.String, visible: scala.Boolean): ASPxClientCardViewColumn = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName, index = index, name = name, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientCardViewColumn]
+  }
+}
+

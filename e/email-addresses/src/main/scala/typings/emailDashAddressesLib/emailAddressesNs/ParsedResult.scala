@@ -10,3 +10,12 @@ trait ParsedResult extends js.Object {
   var ast: ASTNode
 }
 
+object ParsedResult {
+  @scala.inline
+  def apply(addresses: js.Array[ParsedMailbox | ParsedGroup], ast: ASTNode): ParsedResult = {
+    val __obj = js.Dynamic.literal(addresses = addresses, ast = ast)
+  
+    __obj.asInstanceOf[ParsedResult]
+  }
+}
+

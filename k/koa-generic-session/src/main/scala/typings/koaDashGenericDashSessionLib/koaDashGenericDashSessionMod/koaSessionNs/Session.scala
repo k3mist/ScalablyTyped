@@ -10,3 +10,15 @@ trait Session
   var cookie: js.Any
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    cookie: js.Any,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Session = {
+    val __obj = js.Dynamic.literal(cookie = cookie)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Session]
+  }
+}
+

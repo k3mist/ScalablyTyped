@@ -12,3 +12,12 @@ trait Anon_ErrMsgLocalIds extends js.Object {
   var sourceType: java.lang.String
 }
 
+object Anon_ErrMsgLocalIds {
+  @scala.inline
+  def apply(errMsg: java.lang.String, localIds: js.Array[java.lang.String], sourceType: java.lang.String): Anon_ErrMsgLocalIds = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg, localIds = localIds, sourceType = sourceType)
+  
+    __obj.asInstanceOf[Anon_ErrMsgLocalIds]
+  }
+}
+

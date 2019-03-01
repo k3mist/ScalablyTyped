@@ -32,3 +32,20 @@ trait TfvcBranchRef extends TfvcShallowBranchRef {
   var url: java.lang.String
 }
 
+object TfvcBranchRef {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    isDeleted: scala.Boolean,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    path: java.lang.String,
+    url: java.lang.String
+  ): TfvcBranchRef = {
+    val __obj = js.Dynamic.literal(_links = _links, createdDate = createdDate, description = description, isDeleted = isDeleted, owner = owner, path = path, url = url)
+  
+    __obj.asInstanceOf[TfvcBranchRef]
+  }
+}
+

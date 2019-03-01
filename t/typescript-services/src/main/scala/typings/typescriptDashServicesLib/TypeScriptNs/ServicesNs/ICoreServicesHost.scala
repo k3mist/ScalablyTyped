@@ -9,3 +9,12 @@ trait ICoreServicesHost extends js.Object {
   var logger: typescriptDashServicesLib.TypeScriptNs.ILogger
 }
 
+object ICoreServicesHost {
+  @scala.inline
+  def apply(logger: typescriptDashServicesLib.TypeScriptNs.ILogger): ICoreServicesHost = {
+    val __obj = js.Dynamic.literal(logger = logger)
+  
+    __obj.asInstanceOf[ICoreServicesHost]
+  }
+}
+

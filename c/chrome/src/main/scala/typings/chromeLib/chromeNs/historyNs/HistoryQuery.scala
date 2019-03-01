@@ -16,3 +16,19 @@ trait HistoryQuery extends js.Object {
   var text: java.lang.String
 }
 
+object HistoryQuery {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    endTime: scala.Int | scala.Double = null,
+    maxResults: scala.Int | scala.Double = null,
+    startTime: scala.Int | scala.Double = null
+  ): HistoryQuery = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HistoryQuery]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_CONNECTED extends js.Object {
   var DISCONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.Disconnected
 }
 
+object Anon_CONNECTED {
+  @scala.inline
+  def apply(
+    CONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.Connected,
+    CONNECTING: chromeDashAppsLib.chromeDashAppsLibStrings.Connecting,
+    DISCONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.Disconnected
+  ): Anon_CONNECTED = {
+    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED, CONNECTING = CONNECTING, DISCONNECTED = DISCONNECTED)
+  
+    __obj.asInstanceOf[Anon_CONNECTED]
+  }
+}
+

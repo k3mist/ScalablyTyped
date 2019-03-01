@@ -29,3 +29,23 @@ trait GlobalClusterArgs extends js.Object {
   val storageEncrypted: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object GlobalClusterArgs {
+  @scala.inline
+  def apply(
+    globalClusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    databaseName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deletionProtection: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    engine: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    storageEncrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): GlobalClusterArgs = {
+    val __obj = js.Dynamic.literal(globalClusterIdentifier = globalClusterIdentifier.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GlobalClusterArgs]
+  }
+}
+

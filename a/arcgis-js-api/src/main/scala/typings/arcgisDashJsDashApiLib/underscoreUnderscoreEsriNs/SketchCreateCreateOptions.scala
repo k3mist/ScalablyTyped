@@ -22,3 +22,17 @@ trait SketchCreateCreateOptions
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SketchCreateCreateOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mode: java.lang.String = null
+  ): SketchCreateCreateOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[SketchCreateCreateOptions]
+  }
+}
+

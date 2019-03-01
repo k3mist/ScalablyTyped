@@ -10,3 +10,12 @@ trait PostmarkMessageHeader extends js.Object {
   var Value: java.lang.String
 }
 
+object PostmarkMessageHeader {
+  @scala.inline
+  def apply(Name: java.lang.String, Value: java.lang.String): PostmarkMessageHeader = {
+    val __obj = js.Dynamic.literal(Name = Name, Value = Value)
+  
+    __obj.asInstanceOf[PostmarkMessageHeader]
+  }
+}
+

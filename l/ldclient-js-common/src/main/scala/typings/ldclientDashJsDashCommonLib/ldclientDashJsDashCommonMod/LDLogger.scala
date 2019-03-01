@@ -12,3 +12,17 @@ trait LDLogger extends js.Object {
   def warn(message: java.lang.String): scala.Unit
 }
 
+object LDLogger {
+  @scala.inline
+  def apply(
+    debug: js.Function1[java.lang.String, scala.Unit],
+    error: js.Function1[java.lang.String, scala.Unit],
+    info: js.Function1[java.lang.String, scala.Unit],
+    warn: js.Function1[java.lang.String, scala.Unit]
+  ): LDLogger = {
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, warn = warn)
+  
+    __obj.asInstanceOf[LDLogger]
+  }
+}
+

@@ -31,3 +31,17 @@ trait TextBoxRelativeSizeSettings extends js.Object {
   var relativeWidthType: js.Any
 }
 
+object TextBoxRelativeSizeSettings {
+  @scala.inline
+  def apply(
+    relativeHeight: scala.Double,
+    relativeHeightType: js.Any,
+    relativeWidth: scala.Double,
+    relativeWidthType: js.Any
+  ): TextBoxRelativeSizeSettings = {
+    val __obj = js.Dynamic.literal(relativeHeight = relativeHeight, relativeHeightType = relativeHeightType, relativeWidth = relativeWidth, relativeWidthType = relativeWidthType)
+  
+    __obj.asInstanceOf[TextBoxRelativeSizeSettings]
+  }
+}
+

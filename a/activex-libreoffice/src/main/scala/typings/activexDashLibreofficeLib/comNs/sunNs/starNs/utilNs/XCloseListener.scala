@@ -52,3 +52,23 @@ trait XCloseListener
   ): scala.Unit
 }
 
+object XCloseListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notifyClosing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryClosing: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCloseListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notifyClosing = notifyClosing, queryClosing = queryClosing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCloseListener]
+  }
+}
+

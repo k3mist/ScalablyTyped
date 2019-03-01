@@ -20,3 +20,22 @@ trait MeshProperties extends GeometryProperties {
   var vertexAttributes: js.UndefOr[MeshVertexAttributesProperties] = js.undefined
 }
 
+object MeshProperties {
+  @scala.inline
+  def apply(
+    components: js.Array[MeshComponentProperties] = null,
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialReference: SpatialReferenceProperties = null,
+    vertexAttributes: MeshVertexAttributesProperties = null
+  ): MeshProperties = {
+    val __obj = js.Dynamic.literal()
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (vertexAttributes != null) __obj.updateDynamic("vertexAttributes")(vertexAttributes)
+    __obj.asInstanceOf[MeshProperties]
+  }
+}
+

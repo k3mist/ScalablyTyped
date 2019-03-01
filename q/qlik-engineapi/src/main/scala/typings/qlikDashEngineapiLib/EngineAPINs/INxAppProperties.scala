@@ -35,3 +35,18 @@ trait INxAppProperties extends js.Object {
   var qTitle: java.lang.String
 }
 
+object INxAppProperties {
+  @scala.inline
+  def apply(
+    qLastReloadTime: java.lang.String,
+    qMigrationHash: java.lang.String,
+    qSavedInProductVersion: java.lang.String,
+    qThumbnail: IStaticContentUrlDef,
+    qTitle: java.lang.String
+  ): INxAppProperties = {
+    val __obj = js.Dynamic.literal(qLastReloadTime = qLastReloadTime, qMigrationHash = qMigrationHash, qSavedInProductVersion = qSavedInProductVersion, qThumbnail = qThumbnail, qTitle = qTitle)
+  
+    __obj.asInstanceOf[INxAppProperties]
+  }
+}
+

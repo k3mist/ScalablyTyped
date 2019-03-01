@@ -14,3 +14,20 @@ trait ExpectationResult extends Result {
   def passed(): scala.Boolean
 }
 
+object ExpectationResult {
+  @scala.inline
+  def apply(
+    actual: js.Any,
+    expected: js.Any,
+    matcherName: java.lang.String,
+    message: java.lang.String,
+    passed: js.Function0[scala.Boolean],
+    trace: Trace,
+    `type`: java.lang.String
+  ): ExpectationResult = {
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, matcherName = matcherName, message = message, passed = passed, trace = trace, `type` = `type`)
+  
+    __obj.asInstanceOf[ExpectationResult]
+  }
+}
+

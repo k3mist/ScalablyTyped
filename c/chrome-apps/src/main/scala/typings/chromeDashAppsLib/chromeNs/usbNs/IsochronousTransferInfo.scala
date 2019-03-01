@@ -18,3 +18,16 @@ trait IsochronousTransferInfo extends js.Object {
   var transferInfo: GenericTransferInfo
 }
 
+object IsochronousTransferInfo {
+  @scala.inline
+  def apply(
+    packetLength: chromeDashAppsLib.chromeNs.integer,
+    packets: chromeDashAppsLib.chromeNs.integer,
+    transferInfo: GenericTransferInfo
+  ): IsochronousTransferInfo = {
+    val __obj = js.Dynamic.literal(packetLength = packetLength, packets = packets, transferInfo = transferInfo)
+  
+    __obj.asInstanceOf[IsochronousTransferInfo]
+  }
+}
+

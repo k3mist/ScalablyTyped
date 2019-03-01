@@ -31,3 +31,21 @@ trait SocketInfo extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object SocketInfo {
+  @scala.inline
+  def apply(
+    paused: scala.Boolean,
+    persistent: scala.Boolean,
+    socketId: chromeDashAppsLib.chromeNs.integer,
+    localAddress: java.lang.String = null,
+    localPort: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    name: java.lang.String = null
+  ): SocketInfo = {
+    val __obj = js.Dynamic.literal(paused = paused, persistent = persistent, socketId = socketId)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SocketInfo]
+  }
+}
+

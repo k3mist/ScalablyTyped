@@ -11,3 +11,16 @@ trait Yayson extends js.Object {
   var Store: org.scalablytyped.runtime.Instantiable0[Store]
 }
 
+object Yayson {
+  @scala.inline
+  def apply(
+    Adapter: Adapter,
+    Presenter: yaysonLib.Anon_Adapter,
+    Store: org.scalablytyped.runtime.Instantiable0[Store]
+  ): Yayson = {
+    val __obj = js.Dynamic.literal(Adapter = Adapter, Presenter = Presenter, Store = Store)
+  
+    __obj.asInstanceOf[Yayson]
+  }
+}
+

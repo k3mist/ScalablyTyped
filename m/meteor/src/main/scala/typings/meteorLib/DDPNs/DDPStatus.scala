@@ -13,3 +13,19 @@ trait DDPStatus extends js.Object {
   var status: Status
 }
 
+object DDPStatus {
+  @scala.inline
+  def apply(
+    connected: scala.Boolean,
+    retryCount: scala.Double,
+    status: Status,
+    reason: java.lang.String = null,
+    retryTime: scala.Int | scala.Double = null
+  ): DDPStatus = {
+    val __obj = js.Dynamic.literal(connected = connected, retryCount = retryCount, status = status)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (retryTime != null) __obj.updateDynamic("retryTime")(retryTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DDPStatus]
+  }
+}
+

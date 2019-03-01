@@ -21,3 +21,12 @@ trait ASPxClientVerticalGridBatchEditEndEditingEventArgs extends ASPxClientCance
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridBatchEditEndEditingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, recordValues: js.Object, visibleIndex: scala.Double): ASPxClientVerticalGridBatchEditEndEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, recordValues = recordValues, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditEndEditingEventArgs]
+  }
+}
+

@@ -37,3 +37,19 @@ trait IgColorPickerMethods extends js.Object {
   def standardColorsTable(): js.Object
 }
 
+object IgColorPickerMethods {
+  @scala.inline
+  def apply(
+    colorFromElement: js.Function1[js.Object, java.lang.String],
+    colorTable: js.Function0[js.Object],
+    customColorTable: js.Function0[js.Object],
+    selectColor: js.Function1[java.lang.String, js.Object],
+    selectedColor: js.Function0[java.lang.String],
+    standardColorsTable: js.Function0[js.Object]
+  ): IgColorPickerMethods = {
+    val __obj = js.Dynamic.literal(colorFromElement = colorFromElement, colorTable = colorTable, customColorTable = customColorTable, selectColor = selectColor, selectedColor = selectedColor, standardColorsTable = standardColorsTable)
+  
+    __obj.asInstanceOf[IgColorPickerMethods]
+  }
+}
+

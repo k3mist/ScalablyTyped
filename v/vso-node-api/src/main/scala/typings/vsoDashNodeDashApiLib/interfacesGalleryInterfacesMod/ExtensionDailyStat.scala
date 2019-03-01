@@ -24,3 +24,17 @@ trait ExtensionDailyStat extends js.Object {
   var version: java.lang.String
 }
 
+object ExtensionDailyStat {
+  @scala.inline
+  def apply(
+    counts: EventCounts,
+    extendedStats: org.scalablytyped.runtime.StringDictionary[js.Any],
+    statisticDate: stdLib.Date,
+    version: java.lang.String
+  ): ExtensionDailyStat = {
+    val __obj = js.Dynamic.literal(counts = counts, extendedStats = extendedStats, statisticDate = statisticDate, version = version)
+  
+    __obj.asInstanceOf[ExtensionDailyStat]
+  }
+}
+

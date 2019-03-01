@@ -48,3 +48,20 @@ trait ITransformableScale extends js.Object {
   def zoom(magnifyAmount: scala.Double, centerValue: scala.Double): scala.Unit
 }
 
+object ITransformableScale {
+  @scala.inline
+  def apply(
+    getTransformationDomain: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    getTransformationExtent: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    invertedTransformation: js.Function1[scala.Double, scala.Double],
+    pan: js.Function1[scala.Double, scala.Unit],
+    scaleTransformation: js.Function1[scala.Double, scala.Double],
+    setTransformationDomain: js.Function1[js.Tuple2[scala.Double, scala.Double], scala.Unit],
+    zoom: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): ITransformableScale = {
+    val __obj = js.Dynamic.literal(getTransformationDomain = getTransformationDomain, getTransformationExtent = getTransformationExtent, invertedTransformation = invertedTransformation, pan = pan, scaleTransformation = scaleTransformation, setTransformationDomain = setTransformationDomain, zoom = zoom)
+  
+    __obj.asInstanceOf[ITransformableScale]
+  }
+}
+

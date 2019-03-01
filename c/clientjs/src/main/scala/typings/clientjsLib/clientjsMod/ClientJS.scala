@@ -153,3 +153,75 @@ trait ClientJS extends js.Object {
   def isWindows(): scala.Boolean
 }
 
+object ClientJS {
+  @scala.inline
+  def apply(
+    getAvailableResolution: js.Function0[java.lang.String],
+    getBrowser: js.Function0[java.lang.String],
+    getBrowserMajorVersion: js.Function0[java.lang.String],
+    getBrowserVersion: js.Function0[java.lang.String],
+    getCPU: js.Function0[java.lang.String],
+    getCanvasPrint: js.Function0[java.lang.String],
+    getColorDepth: js.Function0[java.lang.String],
+    getCurrentResolution: js.Function0[java.lang.String],
+    getCustomFingerprint: js.Function1[/* repeated */ java.lang.String | scala.Double, scala.Double],
+    getDevice: js.Function0[java.lang.String],
+    getDeviceType: js.Function0[java.lang.String],
+    getDeviceVendor: js.Function0[java.lang.String],
+    getDeviceXDPI: js.Function0[java.lang.String],
+    getDeviceYDPI: js.Function0[java.lang.String],
+    getEngine: js.Function0[java.lang.String],
+    getEngineVersion: js.Function0[java.lang.String],
+    getFingerprint: js.Function0[scala.Double],
+    getFlashVersion: js.Function0[java.lang.String],
+    getFonts: js.Function0[java.lang.String],
+    getJavaVersion: js.Function0[java.lang.String],
+    getLanguage: js.Function0[java.lang.String],
+    getMimeTypes: js.Function0[java.lang.String],
+    getOS: js.Function0[java.lang.String],
+    getOSVersion: js.Function0[java.lang.String],
+    getPlugins: js.Function0[java.lang.String],
+    getScreenPrint: js.Function0[java.lang.String],
+    getSilverlightVersion: js.Function0[java.lang.String],
+    getSoftwareVersion: js.Function0[java.lang.String],
+    getSystemLanguage: js.Function0[java.lang.String],
+    getTimeZone: js.Function0[java.lang.String],
+    getUserAgent: js.Function0[java.lang.String],
+    getUserAgentLowerCase: js.Function0[java.lang.String],
+    isCanvas: js.Function0[scala.Boolean],
+    isChrome: js.Function0[scala.Boolean],
+    isCookie: js.Function0[scala.Boolean],
+    isFirefox: js.Function0[scala.Boolean],
+    isFlash: js.Function0[scala.Boolean],
+    isFont: js.Function1[java.lang.String, scala.Boolean],
+    isIE: js.Function0[scala.Boolean],
+    isIpad: js.Function0[scala.Boolean],
+    isIphone: js.Function0[scala.Boolean],
+    isIpod: js.Function0[scala.Boolean],
+    isJava: js.Function0[scala.Boolean],
+    isLinux: js.Function0[scala.Boolean],
+    isLocalStorage: js.Function0[scala.Boolean],
+    isMac: js.Function0[scala.Boolean],
+    isMimeTypes: js.Function0[scala.Boolean],
+    isMobile: js.Function0[scala.Boolean],
+    isMobileAndroid: js.Function0[scala.Boolean],
+    isMobileBlackBerry: js.Function0[scala.Boolean],
+    isMobileIOS: js.Function0[scala.Boolean],
+    isMobileMajor: js.Function0[scala.Boolean],
+    isMobileOpera: js.Function0[scala.Boolean],
+    isMobileSafari: js.Function0[scala.Boolean],
+    isMobileWindows: js.Function0[scala.Boolean],
+    isOpera: js.Function0[scala.Boolean],
+    isSafari: js.Function0[scala.Boolean],
+    isSessionStorage: js.Function0[scala.Boolean],
+    isSilverlight: js.Function0[scala.Boolean],
+    isSolaris: js.Function0[scala.Boolean],
+    isUbuntu: js.Function0[scala.Boolean],
+    isWindows: js.Function0[scala.Boolean]
+  ): ClientJS = {
+    val __obj = js.Dynamic.literal(getAvailableResolution = getAvailableResolution, getBrowser = getBrowser, getBrowserMajorVersion = getBrowserMajorVersion, getBrowserVersion = getBrowserVersion, getCPU = getCPU, getCanvasPrint = getCanvasPrint, getColorDepth = getColorDepth, getCurrentResolution = getCurrentResolution, getCustomFingerprint = getCustomFingerprint, getDevice = getDevice, getDeviceType = getDeviceType, getDeviceVendor = getDeviceVendor, getDeviceXDPI = getDeviceXDPI, getDeviceYDPI = getDeviceYDPI, getEngine = getEngine, getEngineVersion = getEngineVersion, getFingerprint = getFingerprint, getFlashVersion = getFlashVersion, getFonts = getFonts, getJavaVersion = getJavaVersion, getLanguage = getLanguage, getMimeTypes = getMimeTypes, getOS = getOS, getOSVersion = getOSVersion, getPlugins = getPlugins, getScreenPrint = getScreenPrint, getSilverlightVersion = getSilverlightVersion, getSoftwareVersion = getSoftwareVersion, getSystemLanguage = getSystemLanguage, getTimeZone = getTimeZone, getUserAgent = getUserAgent, getUserAgentLowerCase = getUserAgentLowerCase, isCanvas = isCanvas, isChrome = isChrome, isCookie = isCookie, isFirefox = isFirefox, isFlash = isFlash, isFont = isFont, isIE = isIE, isIpad = isIpad, isIphone = isIphone, isIpod = isIpod, isJava = isJava, isLinux = isLinux, isLocalStorage = isLocalStorage, isMac = isMac, isMimeTypes = isMimeTypes, isMobile = isMobile, isMobileAndroid = isMobileAndroid, isMobileBlackBerry = isMobileBlackBerry, isMobileIOS = isMobileIOS, isMobileMajor = isMobileMajor, isMobileOpera = isMobileOpera, isMobileSafari = isMobileSafari, isMobileWindows = isMobileWindows, isOpera = isOpera, isSafari = isSafari, isSessionStorage = isSessionStorage, isSilverlight = isSilverlight, isSolaris = isSolaris, isUbuntu = isUbuntu, isWindows = isWindows)
+  
+    __obj.asInstanceOf[ClientJS]
+  }
+}
+

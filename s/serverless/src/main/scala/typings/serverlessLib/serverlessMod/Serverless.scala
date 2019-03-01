@@ -21,3 +21,30 @@ trait Serverless extends js.Object {
   def setProvider(name: java.lang.String, provider: serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced): scala.Null
 }
 
+object Serverless {
+  @scala.inline
+  def apply(
+    cli: serverlessLib.Anon_Log,
+    config: serverlessLib.serverlessMod.ServerlessNs.Config,
+    getProvider: js.Function1[java.lang.String, serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced],
+    getVersion: js.Function0[java.lang.String],
+    init: js.Function0[js.Promise[_]],
+    pluginManager: serverlessLib.classesPluginManagerMod.namespaced,
+    run: js.Function0[js.Promise[_]],
+    serverlessDirPath: java.lang.String,
+    service: serverlessLib.classesServiceMod.namespaced,
+    setProvider: js.Function2[
+      java.lang.String, 
+      serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced, 
+      scala.Null
+    ],
+    utils: serverlessLib.classesUtilsMod.namespaced,
+    version: java.lang.String,
+    yamlParser: serverlessLib.classesYamlParserMod.namespaced
+  ): Serverless = {
+    val __obj = js.Dynamic.literal(cli = cli, config = config, getProvider = getProvider, getVersion = getVersion, init = init, pluginManager = pluginManager, run = run, serverlessDirPath = serverlessDirPath, service = service, setProvider = setProvider, utils = utils, version = version, yamlParser = yamlParser)
+  
+    __obj.asInstanceOf[Serverless]
+  }
+}
+

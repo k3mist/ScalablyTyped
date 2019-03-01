@@ -49,3 +49,21 @@ trait XDragSourceContext
   def transferablesFlavorsChanged(): scala.Unit
 }
 
+object XDragSourceContext {
+  @scala.inline
+  def apply(
+    CurrentCursor: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getCurrentCursor: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCursor: js.Function1[scala.Double, scala.Unit],
+    setImage: js.Function1[scala.Double, scala.Unit],
+    transferablesFlavorsChanged: js.Function0[scala.Unit]
+  ): XDragSourceContext = {
+    val __obj = js.Dynamic.literal(CurrentCursor = CurrentCursor, acquire = acquire, getCurrentCursor = getCurrentCursor, queryInterface = queryInterface, release = release, setCursor = setCursor, setImage = setImage, transferablesFlavorsChanged = transferablesFlavorsChanged)
+  
+    __obj.asInstanceOf[XDragSourceContext]
+  }
+}
+

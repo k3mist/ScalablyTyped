@@ -16,3 +16,12 @@ trait ASPxClientTextAnnotation extends ASPxClientWebChartElementNamed {
   var lines: js.Array[java.lang.String]
 }
 
+object ASPxClientTextAnnotation {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart, lines: js.Array[java.lang.String], name: java.lang.String): ASPxClientTextAnnotation = {
+    val __obj = js.Dynamic.literal(chart = chart, lines = lines, name = name)
+  
+    __obj.asInstanceOf[ASPxClientTextAnnotation]
+  }
+}
+

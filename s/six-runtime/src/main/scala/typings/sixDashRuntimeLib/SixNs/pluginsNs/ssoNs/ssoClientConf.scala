@@ -15,3 +15,20 @@ trait ssoClientConf extends js.Object {
   def errorHook(error: stdLib.Error): scala.Unit
 }
 
+object ssoClientConf {
+  @scala.inline
+  def apply(
+    callbackUrl: java.lang.String,
+    clientId: java.lang.String,
+    env: java.lang.String,
+    errorHook: js.Function1[stdLib.Error, scala.Unit],
+    protocol: java.lang.String,
+    secret: java.lang.String,
+    token: token
+  ): ssoClientConf = {
+    val __obj = js.Dynamic.literal(callbackUrl = callbackUrl, clientId = clientId, env = env, errorHook = errorHook, protocol = protocol, secret = secret, token = token)
+  
+    __obj.asInstanceOf[ssoClientConf]
+  }
+}
+

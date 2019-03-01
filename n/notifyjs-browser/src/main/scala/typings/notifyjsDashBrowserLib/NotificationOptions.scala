@@ -37,3 +37,28 @@ trait NotificationOptions extends js.Object {
   var style: java.lang.String
 }
 
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    arrowShow: scala.Boolean,
+    arrowSize: scala.Double,
+    autoHide: scala.Boolean,
+    autoHideDelay: scala.Double,
+    className: java.lang.String,
+    clickToHide: scala.Boolean,
+    elementPosition: java.lang.String,
+    gap: scala.Double,
+    globalPosition: java.lang.String,
+    hideAnimation: java.lang.String,
+    hideDuration: scala.Double,
+    position: java.lang.String,
+    showAnimation: java.lang.String,
+    showDuration: scala.Double,
+    style: java.lang.String
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal(arrowShow = arrowShow, arrowSize = arrowSize, autoHide = autoHide, autoHideDelay = autoHideDelay, className = className, clickToHide = clickToHide, elementPosition = elementPosition, gap = gap, globalPosition = globalPosition, hideAnimation = hideAnimation, hideDuration = hideDuration, position = position, showAnimation = showAnimation, showDuration = showDuration, style = style)
+  
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

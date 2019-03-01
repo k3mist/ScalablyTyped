@@ -11,3 +11,16 @@ trait IApplicationLanguagesStatics extends js.Object {
   var primaryLanguageOverride: java.lang.String
 }
 
+object IApplicationLanguagesStatics {
+  @scala.inline
+  def apply(
+    languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    manifestLanguages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    primaryLanguageOverride: java.lang.String
+  ): IApplicationLanguagesStatics = {
+    val __obj = js.Dynamic.literal(languages = languages, manifestLanguages = manifestLanguages, primaryLanguageOverride = primaryLanguageOverride)
+  
+    __obj.asInstanceOf[IApplicationLanguagesStatics]
+  }
+}
+

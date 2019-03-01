@@ -13,3 +13,18 @@ trait TransformError
   var response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse
 }
 
+object TransformError {
+  @scala.inline
+  def apply(
+    cause: js.Any,
+    error: js.Any,
+    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options,
+    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse,
+    stack: java.lang.String = null
+  ): TransformError = {
+    val __obj = js.Dynamic.literal(cause = cause, error = error, options = options.asInstanceOf[js.Any], response = response)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[TransformError]
+  }
+}
+

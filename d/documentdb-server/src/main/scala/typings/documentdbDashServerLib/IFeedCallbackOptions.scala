@@ -15,3 +15,16 @@ trait IFeedCallbackOptions extends js.Object {
   var maxCollectionSizeInMB: java.lang.String
 }
 
+object IFeedCallbackOptions {
+  @scala.inline
+  def apply(
+    continuation: java.lang.String,
+    currentCollectionSizeInMB: java.lang.String,
+    maxCollectionSizeInMB: java.lang.String
+  ): IFeedCallbackOptions = {
+    val __obj = js.Dynamic.literal(continuation = continuation, currentCollectionSizeInMB = currentCollectionSizeInMB, maxCollectionSizeInMB = maxCollectionSizeInMB)
+  
+    __obj.asInstanceOf[IFeedCallbackOptions]
+  }
+}
+

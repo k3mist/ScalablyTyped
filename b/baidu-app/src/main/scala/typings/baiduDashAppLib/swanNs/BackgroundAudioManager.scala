@@ -52,3 +52,40 @@ trait BackgroundAudioManager extends js.Object {
   def stop(): scala.Unit
 }
 
+object BackgroundAudioManager {
+  @scala.inline
+  def apply(
+    buffered: scala.Double,
+    currentTime: scala.Double,
+    duration: scala.Double,
+    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    paused: scala.Boolean,
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    coverImgUrl: java.lang.String = null,
+    epname: java.lang.String = null,
+    singer: java.lang.String = null,
+    src: java.lang.String = null,
+    startTime: scala.Int | scala.Double = null,
+    title: java.lang.String = null
+  ): BackgroundAudioManager = {
+    val __obj = js.Dynamic.literal(buffered = buffered, currentTime = currentTime, duration = duration, onCanplay = onCanplay, onEnded = onEnded, onError = onError, onPause = onPause, onPlay = onPlay, onStop = onStop, onTimeUpdate = onTimeUpdate, onWaiting = onWaiting, pause = pause, paused = paused, play = play, seek = seek, stop = stop)
+    if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl)
+    if (epname != null) __obj.updateDynamic("epname")(epname)
+    if (singer != null) __obj.updateDynamic("singer")(singer)
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[BackgroundAudioManager]
+  }
+}
+

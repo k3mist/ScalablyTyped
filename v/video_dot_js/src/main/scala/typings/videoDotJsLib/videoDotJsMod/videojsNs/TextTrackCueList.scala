@@ -32,3 +32,24 @@ trait TextTrackCueList
   def getCueById(id: java.lang.String): videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue
 }
 
+object TextTrackCueList {
+  @scala.inline
+  def apply(
+    getCueById: js.Function1[
+      java.lang.String, 
+      videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue
+    ],
+    length: scala.Double,
+    NumberDictionary: /**
+  		 * Index getters for the cues.
+  		 *
+  		 * @param index
+  		 */
+  /* index */ org.scalablytyped.runtime.NumberDictionary[videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue] = null
+  ): TextTrackCueList = {
+    val __obj = js.Dynamic.literal(getCueById = getCueById, length = length)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[TextTrackCueList]
+  }
+}
+

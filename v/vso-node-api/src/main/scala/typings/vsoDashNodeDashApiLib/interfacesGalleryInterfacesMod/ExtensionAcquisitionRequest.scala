@@ -36,3 +36,20 @@ trait ExtensionAcquisitionRequest extends js.Object {
   var targets: js.Array[java.lang.String]
 }
 
+object ExtensionAcquisitionRequest {
+  @scala.inline
+  def apply(
+    assignmentType: AcquisitionAssignmentType,
+    billingId: java.lang.String,
+    itemId: java.lang.String,
+    operationType: AcquisitionOperationType,
+    properties: js.Any,
+    quantity: scala.Double,
+    targets: js.Array[java.lang.String]
+  ): ExtensionAcquisitionRequest = {
+    val __obj = js.Dynamic.literal(assignmentType = assignmentType, billingId = billingId, itemId = itemId, operationType = operationType, properties = properties, quantity = quantity, targets = targets)
+  
+    __obj.asInstanceOf[ExtensionAcquisitionRequest]
+  }
+}
+

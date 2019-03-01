@@ -10,3 +10,15 @@ trait ModuleInfo extends js.Object {
   var ModuleType: scala.Double
 }
 
+object ModuleInfo {
+  @scala.inline
+  def apply(
+    ModuleObject: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ModuleType: scala.Double
+  ): ModuleInfo = {
+    val __obj = js.Dynamic.literal(ModuleObject = ModuleObject, ModuleType = ModuleType)
+  
+    __obj.asInstanceOf[ModuleInfo]
+  }
+}
+

@@ -32,3 +32,23 @@ trait XLinkCreator
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XLinkCreator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInstanceLink: js.Function4[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLinkCreator = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createInstanceLink = createInstanceLink, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLinkCreator]
+  }
+}
+

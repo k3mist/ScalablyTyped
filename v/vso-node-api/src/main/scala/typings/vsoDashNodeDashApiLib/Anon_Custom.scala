@@ -11,3 +11,12 @@ trait Anon_Custom extends js.Object {
   var latestOnQueue: scala.Double
 }
 
+object Anon_Custom {
+  @scala.inline
+  def apply(custom: scala.Double, latestOnBuild: scala.Double, latestOnQueue: scala.Double): Anon_Custom = {
+    val __obj = js.Dynamic.literal(custom = custom, latestOnBuild = latestOnBuild, latestOnQueue = latestOnQueue)
+  
+    __obj.asInstanceOf[Anon_Custom]
+  }
+}
+

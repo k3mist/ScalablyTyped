@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.BreakStatement
 }
 
+object BreakStatement {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.BreakStatement,
+    label: astDashTypesLib.genKindsMod.IdentifierKind = null
+  ): BreakStatement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[BreakStatement]
+  }
+}
+

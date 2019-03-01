@@ -14,3 +14,12 @@ trait Anon_Buffer extends js.Object {
   var position: scala.Double
 }
 
+object Anon_Buffer {
+  @scala.inline
+  def apply(buffer: nodeLib.Buffer, bytesRead: scala.Double, position: scala.Double): Anon_Buffer = {
+    val __obj = js.Dynamic.literal(buffer = buffer, bytesRead = bytesRead, position = position)
+  
+    __obj.asInstanceOf[Anon_Buffer]
+  }
+}
+

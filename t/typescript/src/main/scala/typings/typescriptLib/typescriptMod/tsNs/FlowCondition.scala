@@ -12,3 +12,17 @@ trait FlowCondition
   var expression: Expression
 }
 
+object FlowCondition {
+  @scala.inline
+  def apply(
+    antecedent: FlowNode,
+    expression: Expression,
+    flags: FlowFlags,
+    id: scala.Int | scala.Double = null
+  ): FlowCondition = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent, expression = expression, flags = flags)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowCondition]
+  }
+}
+

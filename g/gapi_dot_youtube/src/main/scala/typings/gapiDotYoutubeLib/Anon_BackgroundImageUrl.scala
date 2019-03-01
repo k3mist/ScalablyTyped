@@ -84,3 +84,32 @@ trait Anon_BackgroundImageUrl extends js.Object {
   var watchIconImageUrl: java.lang.String
 }
 
+object Anon_BackgroundImageUrl {
+  @scala.inline
+  def apply(
+    backgroundImageUrl: Anon_Default,
+    bannerExternalUrl: java.lang.String,
+    bannerImageUrl: java.lang.String,
+    bannerMobileExtraHdImageUrl: java.lang.String,
+    bannerMobileHdImageUrl: java.lang.String,
+    bannerMobileImageUrl: java.lang.String,
+    bannerMobileLowImageUrl: java.lang.String,
+    bannerMobileMediumImageUrl: java.lang.String,
+    bannerTabletExtraHdImageUrl: java.lang.String,
+    bannerTabletHdImageUrl: java.lang.String,
+    bannerTabletImageUrl: java.lang.String,
+    bannerTabletLowImageUrl: java.lang.String,
+    bannerTvImageUrl: java.lang.String,
+    largeBrandedBannerImageImapScript: Anon_Default,
+    largeBrandedBannerImageUrl: Anon_Default,
+    smallBrandedBannerImageImapScript: Anon_Default,
+    smallBrandedBannerImageUrl: Anon_Default,
+    trackingImageUrl: java.lang.String,
+    watchIconImageUrl: java.lang.String
+  ): Anon_BackgroundImageUrl = {
+    val __obj = js.Dynamic.literal(backgroundImageUrl = backgroundImageUrl, bannerExternalUrl = bannerExternalUrl, bannerImageUrl = bannerImageUrl, bannerMobileExtraHdImageUrl = bannerMobileExtraHdImageUrl, bannerMobileHdImageUrl = bannerMobileHdImageUrl, bannerMobileImageUrl = bannerMobileImageUrl, bannerMobileLowImageUrl = bannerMobileLowImageUrl, bannerMobileMediumImageUrl = bannerMobileMediumImageUrl, bannerTabletExtraHdImageUrl = bannerTabletExtraHdImageUrl, bannerTabletHdImageUrl = bannerTabletHdImageUrl, bannerTabletImageUrl = bannerTabletImageUrl, bannerTabletLowImageUrl = bannerTabletLowImageUrl, bannerTvImageUrl = bannerTvImageUrl, largeBrandedBannerImageImapScript = largeBrandedBannerImageImapScript, largeBrandedBannerImageUrl = largeBrandedBannerImageUrl, smallBrandedBannerImageImapScript = smallBrandedBannerImageImapScript, smallBrandedBannerImageUrl = smallBrandedBannerImageUrl, trackingImageUrl = trackingImageUrl, watchIconImageUrl = watchIconImageUrl)
+  
+    __obj.asInstanceOf[Anon_BackgroundImageUrl]
+  }
+}
+

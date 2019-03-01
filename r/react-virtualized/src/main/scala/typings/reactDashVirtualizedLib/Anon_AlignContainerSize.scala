@@ -12,3 +12,17 @@ trait Anon_AlignContainerSize extends js.Object {
   var targetIndex: scala.Double
 }
 
+object Anon_AlignContainerSize {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    containerSize: scala.Double,
+    currentOffset: scala.Double,
+    targetIndex: scala.Double
+  ): Anon_AlignContainerSize = {
+    val __obj = js.Dynamic.literal(align = align, containerSize = containerSize, currentOffset = currentOffset, targetIndex = targetIndex)
+  
+    __obj.asInstanceOf[Anon_AlignContainerSize]
+  }
+}
+

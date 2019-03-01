@@ -16,3 +16,20 @@ trait XPropertyMatcherFactory
   def createPropertyMatcher(Criteria: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SearchCriterium]): XPropertyMatcher
 }
 
+object XPropertyMatcherFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createPropertyMatcher: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SearchCriterium], 
+      XPropertyMatcher
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertyMatcherFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createPropertyMatcher = createPropertyMatcher, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPropertyMatcherFactory]
+  }
+}
+

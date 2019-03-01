@@ -16,3 +16,15 @@ trait WebhookArgs extends js.Object {
   val projectName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object WebhookArgs {
+  @scala.inline
+  def apply(
+    projectName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    branchFilter: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): WebhookArgs = {
+    val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
+    if (branchFilter != null) __obj.updateDynamic("branchFilter")(branchFilter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebhookArgs]
+  }
+}
+

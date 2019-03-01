@@ -28,3 +28,18 @@ trait File extends js.Object {
   var size: scala.Double
 }
 
+object File {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String,
+    headers: js.Any,
+    originalFilename: java.lang.String,
+    path: java.lang.String,
+    size: scala.Double
+  ): File = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName, headers = headers, originalFilename = originalFilename, path = path, size = size)
+  
+    __obj.asInstanceOf[File]
+  }
+}
+

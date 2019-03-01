@@ -10,3 +10,12 @@ trait Anon_HashId extends js.Object {
   var id: js.Any
 }
 
+object Anon_HashId {
+  @scala.inline
+  def apply(hash: js.Any, id: js.Any): Anon_HashId = {
+    val __obj = js.Dynamic.literal(hash = hash, id = id)
+  
+    __obj.asInstanceOf[Anon_HashId]
+  }
+}
+

@@ -15,3 +15,17 @@ trait WebTileLayerFetchTileOptions
   var timestamp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WebTileLayerFetchTileOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    timestamp: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebTileLayerFetchTileOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[WebTileLayerFetchTileOptions]
+  }
+}
+

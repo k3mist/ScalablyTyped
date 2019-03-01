@@ -15,3 +15,16 @@ trait INDRegistrationCompletedEventArgs extends js.Object {
   var transmitterProperties: INDTransmitterProperties
 }
 
+object INDRegistrationCompletedEventArgs {
+  @scala.inline
+  def apply(
+    responseCustomData: INDCustomData,
+    transmitterCertificateAccepted: scala.Boolean,
+    transmitterProperties: INDTransmitterProperties
+  ): INDRegistrationCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(responseCustomData = responseCustomData, transmitterCertificateAccepted = transmitterCertificateAccepted, transmitterProperties = transmitterProperties)
+  
+    __obj.asInstanceOf[INDRegistrationCompletedEventArgs]
+  }
+}
+

@@ -18,3 +18,15 @@ trait ReplaceAllCommand extends CommandWithSimpleStateBase {
   def execute(text: java.lang.String, replaceText: java.lang.String, matchCase: scala.Boolean): scala.Boolean
 }
 
+object ReplaceAllCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): ReplaceAllCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ReplaceAllCommand]
+  }
+}
+

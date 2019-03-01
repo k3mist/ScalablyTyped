@@ -34,3 +34,22 @@ trait INDDownloadEngine extends js.Object {
   def seek(startPosition: scala.Double): scala.Unit
 }
 
+object INDDownloadEngine {
+  @scala.inline
+  def apply(
+    bufferFullMaxThresholdInSamples: scala.Double,
+    bufferFullMinThresholdInSamples: scala.Double,
+    canSeek: scala.Boolean,
+    close: js.Function0[scala.Unit],
+    notifier: NDDownloadEngineNotifier,
+    open: js.Function2[winrtDashUwpLib.WindowsNs.FoundationNs.Uri, js.Array[scala.Double], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    resume: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit]
+  ): INDDownloadEngine = {
+    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples, bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples, canSeek = canSeek, close = close, notifier = notifier, open = open, pause = pause, resume = resume, seek = seek)
+  
+    __obj.asInstanceOf[INDDownloadEngine]
+  }
+}
+

@@ -41,3 +41,18 @@ trait XPooledConnection
   def getConnection(): XConnection
 }
 
+object XPooledConnection {
+  @scala.inline
+  def apply(
+    Connection: XConnection,
+    acquire: js.Function0[scala.Unit],
+    getConnection: js.Function0[XConnection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPooledConnection = {
+    val __obj = js.Dynamic.literal(Connection = Connection, acquire = acquire, getConnection = getConnection, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPooledConnection]
+  }
+}
+

@@ -57,3 +57,21 @@ trait XStatement
   def getConnection(): XConnection
 }
 
+object XStatement {
+  @scala.inline
+  def apply(
+    Connection: XConnection,
+    acquire: js.Function0[scala.Unit],
+    execute: js.Function1[java.lang.String, scala.Boolean],
+    executeQuery: js.Function1[java.lang.String, XResultSet],
+    executeUpdate: js.Function1[java.lang.String, scala.Double],
+    getConnection: js.Function0[XConnection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStatement = {
+    val __obj = js.Dynamic.literal(Connection = Connection, acquire = acquire, execute = execute, executeQuery = executeQuery, executeUpdate = executeUpdate, getConnection = getConnection, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStatement]
+  }
+}
+

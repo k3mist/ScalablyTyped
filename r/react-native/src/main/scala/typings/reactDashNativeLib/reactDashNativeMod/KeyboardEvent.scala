@@ -13,3 +13,18 @@ trait KeyboardEvent extends js.Object {
   var startCoordinates: reactDashNativeLib.ScreenRect
 }
 
+object KeyboardEvent {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    easing: KeyboardEventEasing,
+    endCoordinates: reactDashNativeLib.ScreenRect,
+    isEventFromThisApp: scala.Boolean,
+    startCoordinates: reactDashNativeLib.ScreenRect
+  ): KeyboardEvent = {
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing, endCoordinates = endCoordinates, isEventFromThisApp = isEventFromThisApp, startCoordinates = startCoordinates)
+  
+    __obj.asInstanceOf[KeyboardEvent]
+  }
+}
+

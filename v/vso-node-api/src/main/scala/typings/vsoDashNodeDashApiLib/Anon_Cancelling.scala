@@ -12,3 +12,12 @@ trait Anon_Cancelling extends js.Object {
   var queued: scala.Double
 }
 
+object Anon_Cancelling {
+  @scala.inline
+  def apply(cancelling: scala.Double, completed: scala.Double, inProgress: scala.Double, queued: scala.Double): Anon_Cancelling = {
+    val __obj = js.Dynamic.literal(cancelling = cancelling, completed = completed, inProgress = inProgress, queued = queued)
+  
+    __obj.asInstanceOf[Anon_Cancelling]
+  }
+}
+

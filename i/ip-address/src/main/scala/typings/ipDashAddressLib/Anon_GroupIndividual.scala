@@ -12,3 +12,17 @@ trait Anon_GroupIndividual extends js.Object {
   var universalLocal: scala.Boolean
 }
 
+object Anon_GroupIndividual {
+  @scala.inline
+  def apply(
+    groupIndividual: scala.Boolean,
+    nonce: java.lang.String,
+    reserved: scala.Boolean,
+    universalLocal: scala.Boolean
+  ): Anon_GroupIndividual = {
+    val __obj = js.Dynamic.literal(groupIndividual = groupIndividual, nonce = nonce, reserved = reserved, universalLocal = universalLocal)
+  
+    __obj.asInstanceOf[Anon_GroupIndividual]
+  }
+}
+

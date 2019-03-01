@@ -35,3 +35,18 @@ trait ImageResizeModeStatic extends js.Object {
   var stretch: ImageResizeMode
 }
 
+object ImageResizeModeStatic {
+  @scala.inline
+  def apply(
+    center: ImageResizeMode,
+    contain: ImageResizeMode,
+    cover: ImageResizeMode,
+    repeat: ImageResizeMode,
+    stretch: ImageResizeMode
+  ): ImageResizeModeStatic = {
+    val __obj = js.Dynamic.literal(center = center, contain = contain, cover = cover, repeat = repeat, stretch = stretch)
+  
+    __obj.asInstanceOf[ImageResizeModeStatic]
+  }
+}
+

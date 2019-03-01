@@ -19,3 +19,23 @@ trait HeaderContext[K, D] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object HeaderContext {
+  @scala.inline
+  def apply[K, D](
+    axis: atOracleOraclejetLib.atOracleOraclejetLibStrings.column | atOracleOraclejetLib.atOracleOraclejetLibStrings.columnEnd | atOracleOraclejetLib.atOracleOraclejetLibStrings.row | atOracleOraclejetLib.atOracleOraclejetLibStrings.rowEnd,
+    componentElement: stdLib.Element,
+    data: D,
+    depth: scala.Double,
+    extent: scala.Double,
+    index: scala.Double,
+    key: K,
+    level: scala.Double,
+    parentElement: stdLib.Element,
+    datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
+  ): HeaderContext[K, D] = {
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement, data = data.asInstanceOf[js.Any], depth = depth, extent = extent, index = index, key = key.asInstanceOf[js.Any], level = level, parentElement = parentElement)
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    __obj.asInstanceOf[HeaderContext[K, D]]
+  }
+}
+

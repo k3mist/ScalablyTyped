@@ -21,3 +21,17 @@ trait Instance extends js.Object {
   def setSizes(sizes: js.Array[scala.Double]): scala.Unit
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    collapse: js.Function1[scala.Double, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getSizes: js.Function0[js.Array[scala.Double]],
+    setSizes: js.Function1[js.Array[scala.Double], scala.Unit]
+  ): Instance = {
+    val __obj = js.Dynamic.literal(collapse = collapse, destroy = destroy, getSizes = getSizes, setSizes = setSizes)
+  
+    __obj.asInstanceOf[Instance]
+  }
+}
+

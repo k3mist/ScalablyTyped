@@ -16,3 +16,15 @@ trait Anon_ComparatorDate extends js.Object {
   var date: stdLib.Date | java.lang.String
 }
 
+object Anon_ComparatorDate {
+  @scala.inline
+  def apply(
+    comparator: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator,
+    date: stdLib.Date | java.lang.String
+  ): Anon_ComparatorDate = {
+    val __obj = js.Dynamic.literal(comparator = comparator, date = date.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_ComparatorDate]
+  }
+}
+

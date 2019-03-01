@@ -32,3 +32,19 @@ trait ExtensionRequestEvent extends js.Object {
   var updateType: ExtensionRequestUpdateType
 }
 
+object ExtensionRequestEvent {
+  @scala.inline
+  def apply(
+    extension: vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublishedExtension,
+    host: ExtensionHost,
+    hostName: java.lang.String,
+    links: ExtensionRequestUrls,
+    request: ExtensionRequest,
+    updateType: ExtensionRequestUpdateType
+  ): ExtensionRequestEvent = {
+    val __obj = js.Dynamic.literal(extension = extension, host = host, hostName = hostName, links = links, request = request, updateType = updateType)
+  
+    __obj.asInstanceOf[ExtensionRequestEvent]
+  }
+}
+

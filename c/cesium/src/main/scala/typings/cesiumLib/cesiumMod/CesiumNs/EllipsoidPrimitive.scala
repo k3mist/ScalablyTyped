@@ -18,3 +18,23 @@ trait EllipsoidPrimitive extends js.Object {
   def update(): scala.Unit
 }
 
+object EllipsoidPrimitive {
+  @scala.inline
+  def apply(
+    center: Cartesian3,
+    debugShowBoundingVolume: scala.Boolean,
+    destroy: js.Function0[scala.Unit],
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    material: Material,
+    modelMatrix: Matrix4,
+    radii: Cartesian3,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): EllipsoidPrimitive = {
+    val __obj = js.Dynamic.literal(center = center, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, id = id, isDestroyed = isDestroyed, material = material, modelMatrix = modelMatrix, radii = radii, show = show, update = update)
+  
+    __obj.asInstanceOf[EllipsoidPrimitive]
+  }
+}
+

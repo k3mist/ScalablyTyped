@@ -16,3 +16,21 @@ trait PathPayment
   var sendMax: java.lang.String
 }
 
+object PathPayment {
+  @scala.inline
+  def apply(
+    destAmount: java.lang.String,
+    destAsset: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    destination: java.lang.String,
+    sendAsset: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    sendMax: java.lang.String,
+    path: js.Array[stellarDashBaseLib.stellarDashBaseMod.Asset] = null,
+    source: java.lang.String = null
+  ): PathPayment = {
+    val __obj = js.Dynamic.literal(destAmount = destAmount, destAsset = destAsset, destination = destination, sendAsset = sendAsset, sendMax = sendMax)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[PathPayment]
+  }
+}
+

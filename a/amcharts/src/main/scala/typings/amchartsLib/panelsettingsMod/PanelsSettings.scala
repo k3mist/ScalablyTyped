@@ -145,3 +145,38 @@ trait PanelsSettings extends js.Object {
   var usePrefixes: scala.Boolean
 }
 
+object PanelsSettings {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    columnSpacing: scala.Double,
+    columnWidth: scala.Double,
+    depth3D: scala.Double,
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    marginBottom: scala.Double,
+    marginLeft: scala.Double,
+    marginRight: scala.Double,
+    marginTop: scala.Double,
+    panEventsEnabled: scala.Boolean,
+    panelSpacing: scala.Double,
+    plotAreaBorderAlpha: scala.Double,
+    plotAreaBorderColor: java.lang.String,
+    plotAreaFillAlphas: scala.Double,
+    plotAreaFillColors: js.Any,
+    prefixesOfBigNumbers: js.Array[_],
+    prefixesOfSmallNumbers: js.Array[_],
+    sequencedAnimation: scala.Boolean,
+    startAlpha: scala.Double,
+    startDuration: scala.Double,
+    startEffect: java.lang.String,
+    usePrefixes: scala.Boolean
+  ): PanelsSettings = {
+    val __obj = js.Dynamic.literal(angle = angle, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, columnSpacing = columnSpacing, columnWidth = columnWidth, depth3D = depth3D, fontFamily = fontFamily, fontSize = fontSize, marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, panEventsEnabled = panEventsEnabled, panelSpacing = panelSpacing, plotAreaBorderAlpha = plotAreaBorderAlpha, plotAreaBorderColor = plotAreaBorderColor, plotAreaFillAlphas = plotAreaFillAlphas, plotAreaFillColors = plotAreaFillColors, prefixesOfBigNumbers = prefixesOfBigNumbers, prefixesOfSmallNumbers = prefixesOfSmallNumbers, sequencedAnimation = sequencedAnimation, startAlpha = startAlpha, startDuration = startDuration, startEffect = startEffect, usePrefixes = usePrefixes)
+  
+    __obj.asInstanceOf[PanelsSettings]
+  }
+}
+

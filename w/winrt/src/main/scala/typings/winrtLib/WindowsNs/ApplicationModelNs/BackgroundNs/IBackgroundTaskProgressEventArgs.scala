@@ -10,3 +10,12 @@ trait IBackgroundTaskProgressEventArgs extends js.Object {
   var progress: scala.Double
 }
 
+object IBackgroundTaskProgressEventArgs {
+  @scala.inline
+  def apply(instanceId: java.lang.String, progress: scala.Double): IBackgroundTaskProgressEventArgs = {
+    val __obj = js.Dynamic.literal(instanceId = instanceId, progress = progress)
+  
+    __obj.asInstanceOf[IBackgroundTaskProgressEventArgs]
+  }
+}
+

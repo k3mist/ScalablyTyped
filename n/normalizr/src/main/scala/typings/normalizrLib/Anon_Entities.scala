@@ -10,3 +10,12 @@ trait Anon_Entities extends js.Object {
   var result: js.Any
 }
 
+object Anon_Entities {
+  @scala.inline
+  def apply(entities: js.Any, result: js.Any): Anon_Entities = {
+    val __obj = js.Dynamic.literal(entities = entities, result = result)
+  
+    __obj.asInstanceOf[Anon_Entities]
+  }
+}
+

@@ -19,3 +19,18 @@ trait DatabaseReplicateResponse extends js.Object {
   var source_last_seq: scala.Double
 }
 
+object DatabaseReplicateResponse {
+  @scala.inline
+  def apply(
+    history: js.Array[DatabaseReplicationHistoryItem],
+    ok: scala.Boolean,
+    replication_id_version: scala.Double,
+    session_id: java.lang.String,
+    source_last_seq: scala.Double
+  ): DatabaseReplicateResponse = {
+    val __obj = js.Dynamic.literal(history = history, ok = ok, replication_id_version = replication_id_version, session_id = session_id, source_last_seq = source_last_seq)
+  
+    __obj.asInstanceOf[DatabaseReplicateResponse]
+  }
+}
+

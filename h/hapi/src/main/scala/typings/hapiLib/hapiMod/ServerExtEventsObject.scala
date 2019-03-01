@@ -24,3 +24,16 @@ trait ServerExtEventsObject extends js.Object {
   var `type`: ServerExtType
 }
 
+object ServerExtEventsObject {
+  @scala.inline
+  def apply(
+    method: ServerExtPointFunction | js.Array[ServerExtPointFunction],
+    `type`: ServerExtType,
+    options: ServerExtOptions = null
+  ): ServerExtEventsObject = {
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ServerExtEventsObject]
+  }
+}
+

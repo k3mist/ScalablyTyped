@@ -14,3 +14,16 @@ trait FullKeybindingMatch extends js.Object {
   var keystrokes: java.lang.String
 }
 
+object FullKeybindingMatch {
+  @scala.inline
+  def apply(
+    binding: atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.KeyBinding,
+    keyboardEventTarget: stdLib.Element,
+    keystrokes: java.lang.String
+  ): FullKeybindingMatch = {
+    val __obj = js.Dynamic.literal(binding = binding, keyboardEventTarget = keyboardEventTarget, keystrokes = keystrokes)
+  
+    __obj.asInstanceOf[FullKeybindingMatch]
+  }
+}
+

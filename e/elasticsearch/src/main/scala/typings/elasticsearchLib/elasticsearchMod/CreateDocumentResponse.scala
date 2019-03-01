@@ -15,3 +15,20 @@ trait CreateDocumentResponse extends js.Object {
   var result: java.lang.String
 }
 
+object CreateDocumentResponse {
+  @scala.inline
+  def apply(
+    _id: java.lang.String,
+    _index: java.lang.String,
+    _shards: ShardsResponse,
+    _type: java.lang.String,
+    _version: scala.Double,
+    created: scala.Boolean,
+    result: java.lang.String
+  ): CreateDocumentResponse = {
+    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _shards = _shards, _type = _type, _version = _version, created = created, result = result)
+  
+    __obj.asInstanceOf[CreateDocumentResponse]
+  }
+}
+

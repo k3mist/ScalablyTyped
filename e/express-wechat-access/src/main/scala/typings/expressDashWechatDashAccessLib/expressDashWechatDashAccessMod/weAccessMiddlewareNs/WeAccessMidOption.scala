@@ -13,3 +13,20 @@ trait WeAccessMidOption extends js.Object {
   var ticketUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WeAccessMidOption {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    appSecret: java.lang.String,
+    accessTokenUrl: java.lang.String = null,
+    https: js.UndefOr[scala.Boolean] = js.undefined,
+    ticketUrl: java.lang.String = null
+  ): WeAccessMidOption = {
+    val __obj = js.Dynamic.literal(appId = appId, appSecret = appSecret)
+    if (accessTokenUrl != null) __obj.updateDynamic("accessTokenUrl")(accessTokenUrl)
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
+    if (ticketUrl != null) __obj.updateDynamic("ticketUrl")(ticketUrl)
+    __obj.asInstanceOf[WeAccessMidOption]
+  }
+}
+

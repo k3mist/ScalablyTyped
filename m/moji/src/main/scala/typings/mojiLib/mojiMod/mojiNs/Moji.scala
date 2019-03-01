@@ -12,3 +12,18 @@ trait Moji extends js.Object {
   def trim(): Moji
 }
 
+object Moji {
+  @scala.inline
+  def apply(
+    convert: js.Function2[Mojisyu, Mojisyu, Moji],
+    filter: js.Function1[Mojisyu, Moji],
+    reject: js.Function1[Mojisyu, Moji],
+    toString: js.Function0[java.lang.String],
+    trim: js.Function0[Moji]
+  ): Moji = {
+    val __obj = js.Dynamic.literal(convert = convert, filter = filter, reject = reject, toString = toString, trim = trim)
+  
+    __obj.asInstanceOf[Moji]
+  }
+}
+

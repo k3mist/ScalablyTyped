@@ -30,3 +30,19 @@ trait XTreeEditListener
   def nodeEditing(Node: XTreeNode): scala.Unit
 }
 
+object XTreeEditListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    nodeEdited: js.Function2[XTreeNode, java.lang.String, scala.Unit],
+    nodeEditing: js.Function1[XTreeNode, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTreeEditListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, nodeEdited = nodeEdited, nodeEditing = nodeEditing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTreeEditListener]
+  }
+}
+

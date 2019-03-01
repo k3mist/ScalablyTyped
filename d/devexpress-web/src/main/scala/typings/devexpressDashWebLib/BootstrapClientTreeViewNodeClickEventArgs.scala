@@ -21,3 +21,17 @@ trait BootstrapClientTreeViewNodeClickEventArgs extends BootstrapClientTreeViewN
   var htmlEvent: js.Object
 }
 
+object BootstrapClientTreeViewNodeClickEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    node: BootstrapClientTreeViewNode,
+    processOnServer: scala.Boolean
+  ): BootstrapClientTreeViewNodeClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, node = node, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
+  }
+}
+

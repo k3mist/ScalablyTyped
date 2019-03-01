@@ -22,3 +22,12 @@ trait TilePoint extends js.Object {
   var y: scala.Double
 }
 
+object TilePoint {
+  @scala.inline
+  def apply(count: scala.Double, value: scala.Double, x: scala.Double, y: scala.Double, data: Row = null): TilePoint = {
+    val __obj = js.Dynamic.literal(count = count, value = value, x = x, y = y)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[TilePoint]
+  }
+}
+

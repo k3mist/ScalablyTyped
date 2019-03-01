@@ -11,3 +11,16 @@ trait Anon_HLH extends js.Object {
   var U: screepsLib.screepsLibStrings.UL
 }
 
+object Anon_HLH {
+  @scala.inline
+  def apply(
+    H: screepsLib.screepsLibStrings.LH,
+    O: screepsLib.screepsLibStrings.LO,
+    U: screepsLib.screepsLibStrings.UL
+  ): Anon_HLH = {
+    val __obj = js.Dynamic.literal(H = H, O = O, U = U)
+  
+    __obj.asInstanceOf[Anon_HLH]
+  }
+}
+

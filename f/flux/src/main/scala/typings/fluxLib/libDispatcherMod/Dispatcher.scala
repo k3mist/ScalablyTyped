@@ -31,3 +31,18 @@ trait Dispatcher[TPayload] extends js.Object {
   def waitFor(IDs: js.Array[java.lang.String]): scala.Unit
 }
 
+object Dispatcher {
+  @scala.inline
+  def apply[TPayload](
+    dispatch: js.Function1[TPayload, scala.Unit],
+    isDispatching: js.Function0[scala.Boolean],
+    register: js.Function1[js.Function1[/* payload */ TPayload, scala.Unit], java.lang.String],
+    unregister: js.Function1[java.lang.String, scala.Unit],
+    waitFor: js.Function1[js.Array[java.lang.String], scala.Unit]
+  ): Dispatcher[TPayload] = {
+    val __obj = js.Dynamic.literal(dispatch = dispatch, isDispatching = isDispatching, register = register, unregister = unregister, waitFor = waitFor)
+  
+    __obj.asInstanceOf[Dispatcher[TPayload]]
+  }
+}
+

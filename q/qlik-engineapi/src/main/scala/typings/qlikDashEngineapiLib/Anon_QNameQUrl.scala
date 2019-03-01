@@ -16,3 +16,12 @@ trait Anon_QNameQUrl extends js.Object {
   var qUrl: java.lang.String
 }
 
+object Anon_QNameQUrl {
+  @scala.inline
+  def apply(qName: java.lang.String, qUrl: java.lang.String): Anon_QNameQUrl = {
+    val __obj = js.Dynamic.literal(qName = qName, qUrl = qUrl)
+  
+    __obj.asInstanceOf[Anon_QNameQUrl]
+  }
+}
+

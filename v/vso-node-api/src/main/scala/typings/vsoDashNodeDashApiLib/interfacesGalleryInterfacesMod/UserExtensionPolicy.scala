@@ -20,3 +20,12 @@ trait UserExtensionPolicy extends js.Object {
   var userId: java.lang.String
 }
 
+object UserExtensionPolicy {
+  @scala.inline
+  def apply(displayName: java.lang.String, permissions: ExtensionPolicy, userId: java.lang.String): UserExtensionPolicy = {
+    val __obj = js.Dynamic.literal(displayName = displayName, permissions = permissions, userId = userId)
+  
+    __obj.asInstanceOf[UserExtensionPolicy]
+  }
+}
+

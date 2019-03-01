@@ -10,3 +10,12 @@ trait DefaultOps extends js.Object {
   var numClients: scala.Double
 }
 
+object DefaultOps {
+  @scala.inline
+  def apply(autoUpgrade: scala.Boolean, numClients: scala.Double): DefaultOps = {
+    val __obj = js.Dynamic.literal(autoUpgrade = autoUpgrade, numClients = numClients)
+  
+    __obj.asInstanceOf[DefaultOps]
+  }
+}
+

@@ -24,3 +24,12 @@ trait SubscriptionEvaluationSettings extends js.Object {
   var timeOut: scala.Double
 }
 
+object SubscriptionEvaluationSettings {
+  @scala.inline
+  def apply(enabled: scala.Boolean, interval: scala.Double, threshold: scala.Double, timeOut: scala.Double): SubscriptionEvaluationSettings = {
+    val __obj = js.Dynamic.literal(enabled = enabled, interval = interval, threshold = threshold, timeOut = timeOut)
+  
+    __obj.asInstanceOf[SubscriptionEvaluationSettings]
+  }
+}
+

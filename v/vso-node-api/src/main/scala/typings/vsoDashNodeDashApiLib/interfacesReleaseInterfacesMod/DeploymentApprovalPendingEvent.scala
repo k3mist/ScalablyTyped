@@ -17,3 +17,22 @@ trait DeploymentApprovalPendingEvent extends js.Object {
   var release: Release
 }
 
+object DeploymentApprovalPendingEvent {
+  @scala.inline
+  def apply(
+    approval: ReleaseApproval,
+    approvalOptions: ApprovalOptions,
+    completedApprovals: js.Array[ReleaseApproval],
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    deployment: Deployment,
+    isMultipleRankApproval: scala.Boolean,
+    pendingApprovals: js.Array[ReleaseApproval],
+    project: ProjectReference,
+    release: Release
+  ): DeploymentApprovalPendingEvent = {
+    val __obj = js.Dynamic.literal(approval = approval, approvalOptions = approvalOptions, completedApprovals = completedApprovals, data = data, deployment = deployment, isMultipleRankApproval = isMultipleRankApproval, pendingApprovals = pendingApprovals, project = project, release = release)
+  
+    __obj.asInstanceOf[DeploymentApprovalPendingEvent]
+  }
+}
+

@@ -11,3 +11,12 @@ trait IRoutesMatch extends js.Object {
   var route: scala.Boolean
 }
 
+object IRoutesMatch {
+  @scala.inline
+  def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: scala.Boolean): IRoutesMatch = {
+    val __obj = js.Dynamic.literal(path = path, pathAndMethod = pathAndMethod, route = route)
+  
+    __obj.asInstanceOf[IRoutesMatch]
+  }
+}
+

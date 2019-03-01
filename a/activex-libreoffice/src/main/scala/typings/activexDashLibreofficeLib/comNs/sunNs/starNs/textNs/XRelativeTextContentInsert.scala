@@ -25,3 +25,18 @@ trait XRelativeTextContentInsert
   def insertTextContentBefore(xNewContent: XTextContent, xSuccessor: XTextContent): scala.Unit
 }
 
+object XRelativeTextContentInsert {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    insertTextContentAfter: js.Function2[XTextContent, XTextContent, scala.Unit],
+    insertTextContentBefore: js.Function2[XTextContent, XTextContent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRelativeTextContentInsert = {
+    val __obj = js.Dynamic.literal(acquire = acquire, insertTextContentAfter = insertTextContentAfter, insertTextContentBefore = insertTextContentBefore, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XRelativeTextContentInsert]
+  }
+}
+

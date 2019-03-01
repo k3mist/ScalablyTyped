@@ -36,3 +36,20 @@ trait PointCloudLayerElevationInfo
   var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PointCloudLayerElevationInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mode: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    offset: scala.Int | scala.Double = null,
+    unit: java.lang.String = null
+  ): PointCloudLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, mode = mode, propertyIsEnumerable = propertyIsEnumerable)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[PointCloudLayerElevationInfo]
+  }
+}
+

@@ -16,3 +16,12 @@ trait LowHighBits extends _Longable {
   var low: scala.Double
 }
 
+object LowHighBits {
+  @scala.inline
+  def apply(high: scala.Double, low: scala.Double): LowHighBits = {
+    val __obj = js.Dynamic.literal(high = high, low = low)
+  
+    __obj.asInstanceOf[LowHighBits]
+  }
+}
+

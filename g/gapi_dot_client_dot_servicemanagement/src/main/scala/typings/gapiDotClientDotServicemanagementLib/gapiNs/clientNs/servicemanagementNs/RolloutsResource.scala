@@ -30,3 +30,25 @@ trait RolloutsResource extends js.Object {
   def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
 }
 
+object RolloutsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Rollout]
+    ],
+    list: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
+    ]
+  ): RolloutsResource = {
+    val __obj = js.Dynamic.literal(create = create, get = get, list = list)
+  
+    __obj.asInstanceOf[RolloutsResource]
+  }
+}
+

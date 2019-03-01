@@ -44,3 +44,23 @@ trait SymbolDescriptor extends js.Object {
   var sSymbolSet: java.lang.String
 }
 
+object SymbolDescriptor {
+  @scala.inline
+  def apply(
+    nCharSet: scala.Double,
+    nCharacter: scala.Double,
+    nFamily: scala.Double,
+    nItalic: scala.Double,
+    nPitch: scala.Double,
+    nWeight: scala.Double,
+    sExportName: java.lang.String,
+    sFontName: java.lang.String,
+    sName: java.lang.String,
+    sSymbolSet: java.lang.String
+  ): SymbolDescriptor = {
+    val __obj = js.Dynamic.literal(nCharSet = nCharSet, nCharacter = nCharacter, nFamily = nFamily, nItalic = nItalic, nPitch = nPitch, nWeight = nWeight, sExportName = sExportName, sFontName = sFontName, sName = sName, sSymbolSet = sSymbolSet)
+  
+    __obj.asInstanceOf[SymbolDescriptor]
+  }
+}
+

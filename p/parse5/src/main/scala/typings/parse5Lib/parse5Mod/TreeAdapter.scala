@@ -204,3 +204,43 @@ trait TreeAdapter extends js.Object {
   def setTemplateContent(templateElement: Element, contentElement: DocumentFragment): scala.Unit
 }
 
+object TreeAdapter {
+  @scala.inline
+  def apply(
+    adoptAttributes: js.Function2[Element, js.Array[Attribute], scala.Unit],
+    appendChild: js.Function2[ParentNode, Node, scala.Unit],
+    createCommentNode: js.Function1[java.lang.String, CommentNode],
+    createDocument: js.Function0[Document],
+    createDocumentFragment: js.Function0[DocumentFragment],
+    createElement: js.Function3[java.lang.String, java.lang.String, js.Array[Attribute], Element],
+    detachNode: js.Function1[Node, scala.Unit],
+    getAttrList: js.Function1[Element, js.Array[Attribute]],
+    getChildNodes: js.Function1[ParentNode, js.Array[Node]],
+    getCommentNodeContent: js.Function1[CommentNode, java.lang.String],
+    getDocumentMode: js.Function1[Document, DocumentMode],
+    getDocumentTypeNodeName: js.Function1[DocumentType, java.lang.String],
+    getDocumentTypeNodePublicId: js.Function1[DocumentType, java.lang.String],
+    getDocumentTypeNodeSystemId: js.Function1[DocumentType, java.lang.String],
+    getFirstChild: js.Function1[ParentNode, Node],
+    getNamespaceURI: js.Function1[Element, java.lang.String],
+    getParentNode: js.Function1[Node, ParentNode],
+    getTagName: js.Function1[Element, java.lang.String],
+    getTemplateContent: js.Function1[Element, DocumentFragment],
+    getTextNodeContent: js.Function1[TextNode, java.lang.String],
+    insertBefore: js.Function3[ParentNode, Node, Node, scala.Unit],
+    insertText: js.Function2[ParentNode, java.lang.String, scala.Unit],
+    insertTextBefore: js.Function3[ParentNode, java.lang.String, Node, scala.Unit],
+    isCommentNode: js.Function1[Node, scala.Boolean],
+    isDocumentTypeNode: js.Function1[Node, scala.Boolean],
+    isElementNode: js.Function1[Node, scala.Boolean],
+    isTextNode: js.Function1[Node, scala.Boolean],
+    setDocumentMode: js.Function2[Document, DocumentMode, scala.Unit],
+    setDocumentType: js.Function4[Document, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    setTemplateContent: js.Function2[Element, DocumentFragment, scala.Unit]
+  ): TreeAdapter = {
+    val __obj = js.Dynamic.literal(adoptAttributes = adoptAttributes, appendChild = appendChild, createCommentNode = createCommentNode, createDocument = createDocument, createDocumentFragment = createDocumentFragment, createElement = createElement, detachNode = detachNode, getAttrList = getAttrList, getChildNodes = getChildNodes, getCommentNodeContent = getCommentNodeContent, getDocumentMode = getDocumentMode, getDocumentTypeNodeName = getDocumentTypeNodeName, getDocumentTypeNodePublicId = getDocumentTypeNodePublicId, getDocumentTypeNodeSystemId = getDocumentTypeNodeSystemId, getFirstChild = getFirstChild, getNamespaceURI = getNamespaceURI, getParentNode = getParentNode, getTagName = getTagName, getTemplateContent = getTemplateContent, getTextNodeContent = getTextNodeContent, insertBefore = insertBefore, insertText = insertText, insertTextBefore = insertTextBefore, isCommentNode = isCommentNode, isDocumentTypeNode = isDocumentTypeNode, isElementNode = isElementNode, isTextNode = isTextNode, setDocumentMode = setDocumentMode, setDocumentType = setDocumentType, setTemplateContent = setTemplateContent)
+  
+    __obj.asInstanceOf[TreeAdapter]
+  }
+}
+

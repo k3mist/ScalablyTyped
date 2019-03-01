@@ -48,3 +48,21 @@ trait FunctionScoreQuery extends Query {
   def toJSON(): js.Any
 }
 
+object FunctionScoreQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, FunctionScoreQuery],
+    boostMode: js.Function1[java.lang.String, FunctionScoreQuery],
+    filter: js.Function1[Filter, FunctionScoreQuery],
+    functions: js.Function1[js.Array[ScoreFunction], FunctionScoreQuery],
+    query: js.Function1[Query, FunctionScoreQuery],
+    scoreMode: js.Function1[java.lang.String, FunctionScoreQuery],
+    toJSON: js.Function0[js.Any]
+  ): FunctionScoreQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, boostMode = boostMode, filter = filter, functions = functions, query = query, scoreMode = scoreMode, toJSON = toJSON)
+  
+    __obj.asInstanceOf[FunctionScoreQuery]
+  }
+}
+

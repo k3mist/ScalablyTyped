@@ -32,3 +32,38 @@ trait DecoratorPanel extends js.Object {
   def setWidth(width: java.lang.String): DecoratorPanel
 }
 
+object DecoratorPanel {
+  @scala.inline
+  def apply(
+    add: js.Function1[Widget, DecoratorPanel],
+    addStyleDependentName: js.Function1[java.lang.String, DecoratorPanel],
+    addStyleName: js.Function1[java.lang.String, DecoratorPanel],
+    clear: js.Function0[DecoratorPanel],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setHeight: js.Function1[java.lang.String, DecoratorPanel],
+    setId: js.Function1[java.lang.String, DecoratorPanel],
+    setLayoutData: js.Function1[js.Object, DecoratorPanel],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      DecoratorPanel
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, DecoratorPanel],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DecoratorPanel],
+    setStyleAttributes: js.Function1[js.Object, DecoratorPanel],
+    setStyleName: js.Function1[java.lang.String, DecoratorPanel],
+    setStylePrimaryName: js.Function1[java.lang.String, DecoratorPanel],
+    setTag: js.Function1[java.lang.String, DecoratorPanel],
+    setTitle: js.Function1[java.lang.String, DecoratorPanel],
+    setVisible: js.Function1[scala.Boolean, DecoratorPanel],
+    setWidget: js.Function1[Widget, DecoratorPanel],
+    setWidth: js.Function1[java.lang.String, DecoratorPanel]
+  ): DecoratorPanel = {
+    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+  
+    __obj.asInstanceOf[DecoratorPanel]
+  }
+}
+

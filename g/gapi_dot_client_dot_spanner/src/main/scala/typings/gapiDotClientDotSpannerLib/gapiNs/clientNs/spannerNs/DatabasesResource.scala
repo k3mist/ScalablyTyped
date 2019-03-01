@@ -68,3 +68,51 @@ trait DatabasesResource extends js.Object {
   def updateDdl(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object DatabasesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    dropDatabase: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Database]
+    ],
+    getDdl: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetDatabaseDdlResponse]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDatabasesResponse]
+    ],
+    operations: OperationsResource,
+    sessions: SessionsResource,
+    setIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    updateDdl: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): DatabasesResource = {
+    val __obj = js.Dynamic.literal(create = create, dropDatabase = dropDatabase, get = get, getDdl = getDdl, getIamPolicy = getIamPolicy, list = list, operations = operations, sessions = sessions, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, updateDdl = updateDdl)
+  
+    __obj.asInstanceOf[DatabasesResource]
+  }
+}
+

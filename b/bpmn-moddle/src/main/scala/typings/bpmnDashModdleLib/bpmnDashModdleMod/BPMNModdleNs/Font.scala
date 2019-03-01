@@ -14,3 +14,20 @@ trait Font extends TypeDerived {
   var size: scala.Double
 }
 
+object Font {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    isBold: scala.Boolean,
+    isItalic: scala.Boolean,
+    isStrikeThrough: scala.Boolean,
+    isUnderline: scala.Boolean,
+    name: java.lang.String,
+    size: scala.Double
+  ): Font = {
+    val __obj = js.Dynamic.literal($type = $type, isBold = isBold, isItalic = isItalic, isStrikeThrough = isStrikeThrough, isUnderline = isUnderline, name = name, size = size)
+  
+    __obj.asInstanceOf[Font]
+  }
+}
+

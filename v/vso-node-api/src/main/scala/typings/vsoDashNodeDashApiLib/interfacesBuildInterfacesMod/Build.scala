@@ -164,3 +164,55 @@ trait Build extends js.Object {
   var validationResults: js.Array[BuildRequestValidationResult]
 }
 
+object Build {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    buildNumber: java.lang.String,
+    buildNumberRevision: scala.Double,
+    controller: BuildController,
+    definition: DefinitionReference,
+    deleted: scala.Boolean,
+    deletedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    deletedDate: stdLib.Date,
+    deletedReason: java.lang.String,
+    demands: js.Array[_],
+    finishTime: stdLib.Date,
+    id: scala.Double,
+    keepForever: scala.Boolean,
+    lastChangedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastChangedDate: stdLib.Date,
+    logs: BuildLogReference,
+    orchestrationPlan: TaskOrchestrationPlanReference,
+    parameters: java.lang.String,
+    plans: js.Array[TaskOrchestrationPlanReference],
+    priority: QueuePriority,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    properties: js.Any,
+    quality: java.lang.String,
+    queue: AgentPoolQueue,
+    queueOptions: QueueOptions,
+    queuePosition: scala.Double,
+    queueTime: stdLib.Date,
+    reason: BuildReason,
+    repository: BuildRepository,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    result: BuildResult,
+    retainedByRelease: scala.Boolean,
+    sourceBranch: java.lang.String,
+    sourceVersion: java.lang.String,
+    startTime: stdLib.Date,
+    status: BuildStatus,
+    tags: js.Array[java.lang.String],
+    triggerInfo: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    uri: java.lang.String,
+    url: java.lang.String,
+    validationResults: js.Array[BuildRequestValidationResult]
+  ): Build = {
+    val __obj = js.Dynamic.literal(_links = _links, buildNumber = buildNumber, buildNumberRevision = buildNumberRevision, controller = controller, definition = definition, deleted = deleted, deletedBy = deletedBy, deletedDate = deletedDate, deletedReason = deletedReason, demands = demands, finishTime = finishTime, id = id, keepForever = keepForever, lastChangedBy = lastChangedBy, lastChangedDate = lastChangedDate, logs = logs, orchestrationPlan = orchestrationPlan, parameters = parameters, plans = plans, priority = priority, project = project, properties = properties, quality = quality, queue = queue, queueOptions = queueOptions, queuePosition = queuePosition, queueTime = queueTime, reason = reason, repository = repository, requestedBy = requestedBy, requestedFor = requestedFor, result = result, retainedByRelease = retainedByRelease, sourceBranch = sourceBranch, sourceVersion = sourceVersion, startTime = startTime, status = status, tags = tags, triggerInfo = triggerInfo, uri = uri, url = url, validationResults = validationResults)
+  
+    __obj.asInstanceOf[Build]
+  }
+}
+

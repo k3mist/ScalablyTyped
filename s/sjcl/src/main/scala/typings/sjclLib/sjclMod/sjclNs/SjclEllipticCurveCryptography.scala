@@ -16,3 +16,20 @@ trait SjclEllipticCurveCryptography extends js.Object {
   var pointJac: SjclPointJacobianStatic
 }
 
+object SjclEllipticCurveCryptography {
+  @scala.inline
+  def apply(
+    basicKey: SjclECCBasic,
+    curve: SjclEllipticalCurveStatic,
+    curves: sjclLib.Anon_C192,
+    ecdsa: SjclEcdsa,
+    elGamal: SjclElGamal,
+    point: SjclEllipticalPointStatic,
+    pointJac: SjclPointJacobianStatic
+  ): SjclEllipticCurveCryptography = {
+    val __obj = js.Dynamic.literal(basicKey = basicKey, curve = curve, curves = curves, ecdsa = ecdsa, elGamal = elGamal, point = point, pointJac = pointJac)
+  
+    __obj.asInstanceOf[SjclEllipticCurveCryptography]
+  }
+}
+

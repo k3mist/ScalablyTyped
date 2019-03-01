@@ -62,3 +62,30 @@ trait AuthoringInfoVisualVariableProperties extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthoringInfoVisualVariableProperties {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String | scala.Double = null,
+    field: java.lang.String = null,
+    maxSliderValue: scala.Int | scala.Double = null,
+    minSliderValue: scala.Int | scala.Double = null,
+    startTime: java.lang.String | scala.Double = null,
+    style: java.lang.String = null,
+    theme: java.lang.String = null,
+    `type`: java.lang.String = null,
+    units: java.lang.String = null
+  ): AuthoringInfoVisualVariableProperties = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
+    if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[AuthoringInfoVisualVariableProperties]
+  }
+}
+

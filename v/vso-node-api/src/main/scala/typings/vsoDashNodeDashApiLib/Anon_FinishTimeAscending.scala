@@ -14,3 +14,19 @@ trait Anon_FinishTimeAscending extends js.Object {
   var startTimeDescending: scala.Double
 }
 
+object Anon_FinishTimeAscending {
+  @scala.inline
+  def apply(
+    finishTimeAscending: scala.Double,
+    finishTimeDescending: scala.Double,
+    queueTimeAscending: scala.Double,
+    queueTimeDescending: scala.Double,
+    startTimeAscending: scala.Double,
+    startTimeDescending: scala.Double
+  ): Anon_FinishTimeAscending = {
+    val __obj = js.Dynamic.literal(finishTimeAscending = finishTimeAscending, finishTimeDescending = finishTimeDescending, queueTimeAscending = queueTimeAscending, queueTimeDescending = queueTimeDescending, startTimeAscending = startTimeAscending, startTimeDescending = startTimeDescending)
+  
+    __obj.asInstanceOf[Anon_FinishTimeAscending]
+  }
+}
+

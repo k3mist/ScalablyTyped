@@ -13,3 +13,12 @@ trait _Impl extends js.Object {
   var utilities: js.Any
 }
 
+object _Impl {
+  @scala.inline
+  def apply(cache: js.Any, config: js.Any, section: js.Any, sections: js.Any, utilities: js.Any): _Impl = {
+    val __obj = js.Dynamic.literal(cache = cache, config = config, section = section, sections = sections, utilities = utilities)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

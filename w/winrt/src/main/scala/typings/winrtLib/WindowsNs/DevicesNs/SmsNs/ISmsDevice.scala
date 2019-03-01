@@ -16,3 +16,21 @@ trait ISmsDevice extends js.Object {
   def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation
 }
 
+object ISmsDevice {
+  @scala.inline
+  def apply(
+    accountPhoneNumber: java.lang.String,
+    calculateLength: js.Function1[SmsTextMessage, SmsEncodedLength],
+    cellularClass: CellularClass,
+    deviceStatus: SmsDeviceStatus,
+    messageStore: SmsDeviceMessageStore,
+    onsmsdevicestatuschanged: js.Any,
+    onsmsmessagereceived: js.Any,
+    sendMessageAsync: js.Function1[ISmsMessage, SendSmsMessageOperation]
+  ): ISmsDevice = {
+    val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber, calculateLength = calculateLength, cellularClass = cellularClass, deviceStatus = deviceStatus, messageStore = messageStore, onsmsdevicestatuschanged = onsmsdevicestatuschanged, onsmsmessagereceived = onsmsmessagereceived, sendMessageAsync = sendMessageAsync)
+  
+    __obj.asInstanceOf[ISmsDevice]
+  }
+}
+

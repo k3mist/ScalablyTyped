@@ -28,3 +28,17 @@ trait InfoReceived
   var mimeType: java.lang.String
 }
 
+object InfoReceived {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call,
+    mimeType: java.lang.String,
+    headers: js.Object = null
+  ): InfoReceived = {
+    val __obj = js.Dynamic.literal(body = body, call = call, mimeType = mimeType)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[InfoReceived]
+  }
+}
+

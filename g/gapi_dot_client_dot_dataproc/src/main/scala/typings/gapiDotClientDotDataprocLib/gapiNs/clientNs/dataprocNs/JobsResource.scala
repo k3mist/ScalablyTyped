@@ -20,3 +20,37 @@ trait JobsResource extends js.Object {
   def submit(request: gapiDotClientDotDataprocLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Job]
 }
 
+object JobsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallbackClusterName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListJobsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_AccesstokenAltBearertokenCallbackFieldsJobId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    submit: js.Function1[
+      gapiDotClientDotDataprocLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ]
+  ): JobsResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list, patch = patch, submit = submit)
+  
+    __obj.asInstanceOf[JobsResource]
+  }
+}
+

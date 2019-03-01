@@ -32,3 +32,19 @@ trait DashboardExportPaperKindStatic extends js.Object {
   var Letter: java.lang.String
 }
 
+object DashboardExportPaperKindStatic {
+  @scala.inline
+  def apply(
+    A3: java.lang.String,
+    A4: java.lang.String,
+    A5: java.lang.String,
+    Executive: java.lang.String,
+    Legal: java.lang.String,
+    Letter: java.lang.String
+  ): DashboardExportPaperKindStatic = {
+    val __obj = js.Dynamic.literal(A3 = A3, A4 = A4, A5 = A5, Executive = Executive, Legal = Legal, Letter = Letter)
+  
+    __obj.asInstanceOf[DashboardExportPaperKindStatic]
+  }
+}
+

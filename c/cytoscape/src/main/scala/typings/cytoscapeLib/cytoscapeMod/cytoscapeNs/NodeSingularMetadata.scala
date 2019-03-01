@@ -26,3 +26,16 @@ trait NodeSingularMetadata extends js.Object {
   def outdegree(includeLoops: scala.Boolean): scala.Double
 }
 
+object NodeSingularMetadata {
+  @scala.inline
+  def apply(
+    degree: js.Function1[scala.Boolean, scala.Double],
+    indegree: js.Function1[scala.Boolean, scala.Double],
+    outdegree: js.Function1[scala.Boolean, scala.Double]
+  ): NodeSingularMetadata = {
+    val __obj = js.Dynamic.literal(degree = degree, indegree = indegree, outdegree = outdegree)
+  
+    __obj.asInstanceOf[NodeSingularMetadata]
+  }
+}
+

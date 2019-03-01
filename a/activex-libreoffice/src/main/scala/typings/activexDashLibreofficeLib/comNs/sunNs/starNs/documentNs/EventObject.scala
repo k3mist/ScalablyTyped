@@ -22,3 +22,12 @@ trait EventObject
   var EventName: java.lang.String
 }
 
+object EventObject {
+  @scala.inline
+  def apply(EventName: java.lang.String, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): EventObject = {
+    val __obj = js.Dynamic.literal(EventName = EventName, Source = Source)
+  
+    __obj.asInstanceOf[EventObject]
+  }
+}
+

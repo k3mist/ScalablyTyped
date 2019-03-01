@@ -76,3 +76,28 @@ trait IUser extends js.Object {
   var work: js.Array[IWorkInfo]
 }
 
+object IUser {
+  @scala.inline
+  def apply(
+    addresses: microsoftDashLiveDashConnectLib.Anon_BusinessPersonal,
+    birth_day: scala.Double,
+    birth_month: scala.Double,
+    birth_year: scala.Double,
+    emails: microsoftDashLiveDashConnectLib.Anon_Account,
+    first_name: java.lang.String,
+    gender: java.lang.String,
+    id: java.lang.String,
+    last_name: java.lang.String,
+    link: java.lang.String,
+    locale: java.lang.String,
+    name: java.lang.String,
+    phones: microsoftDashLiveDashConnectLib.Anon_BusinessMobile,
+    updated_time: java.lang.String,
+    work: js.Array[IWorkInfo]
+  ): IUser = {
+    val __obj = js.Dynamic.literal(addresses = addresses, birth_day = birth_day, birth_month = birth_month, birth_year = birth_year, emails = emails, first_name = first_name, gender = gender, id = id, last_name = last_name, link = link, locale = locale, name = name, phones = phones, updated_time = updated_time, work = work)
+  
+    __obj.asInstanceOf[IUser]
+  }
+}
+

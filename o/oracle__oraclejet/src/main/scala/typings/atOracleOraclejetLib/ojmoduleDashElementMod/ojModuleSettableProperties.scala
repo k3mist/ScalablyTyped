@@ -11,3 +11,12 @@ trait ojModuleSettableProperties
   var config: atOracleOraclejetLib.Anon_CleanupMode
 }
 
+object ojModuleSettableProperties {
+  @scala.inline
+  def apply(animation: js.Object, config: atOracleOraclejetLib.Anon_CleanupMode): ojModuleSettableProperties = {
+    val __obj = js.Dynamic.literal(animation = animation, config = config)
+  
+    __obj.asInstanceOf[ojModuleSettableProperties]
+  }
+}
+

@@ -96,3 +96,32 @@ trait PopupTemplateProperties extends js.Object {
   var title: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
+object PopupTemplateProperties {
+  @scala.inline
+  def apply(
+    actions: CollectionProperties[ActionButton | ActionToggle] = null,
+    content: ContentElementContentElementProperties | js.Array[ContentElementContentElementProperties] | java.lang.String | js.Function | arcgisDashJsDashApiLib.IPromise[_] = null,
+    expressionInfos: js.Array[ExpressionInfoProperties] = null,
+    fieldInfos: js.Array[FieldInfoProperties] = null,
+    lastEditInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    layerOptions: LayerOptionsProperties = null,
+    outFields: js.Array[java.lang.String] = null,
+    overwriteActions: js.UndefOr[scala.Boolean] = js.undefined,
+    relatedRecordsInfo: RelatedRecordsInfoProperties = null,
+    title: java.lang.String | js.Function = null
+  ): PopupTemplateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (expressionInfos != null) __obj.updateDynamic("expressionInfos")(expressionInfos)
+    if (fieldInfos != null) __obj.updateDynamic("fieldInfos")(fieldInfos)
+    if (!js.isUndefined(lastEditInfoEnabled)) __obj.updateDynamic("lastEditInfoEnabled")(lastEditInfoEnabled)
+    if (layerOptions != null) __obj.updateDynamic("layerOptions")(layerOptions)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
+    if (!js.isUndefined(overwriteActions)) __obj.updateDynamic("overwriteActions")(overwriteActions)
+    if (relatedRecordsInfo != null) __obj.updateDynamic("relatedRecordsInfo")(relatedRecordsInfo)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopupTemplateProperties]
+  }
+}
+

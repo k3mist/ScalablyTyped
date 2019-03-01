@@ -16,3 +16,12 @@ trait ASPxClientGridViewBatchEditConfirmShowingEventArgs extends ASPxClientCance
   var requestTriggerID: java.lang.String
 }
 
+object ASPxClientGridViewBatchEditConfirmShowingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, requestTriggerID: java.lang.String): ASPxClientGridViewBatchEditConfirmShowingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, requestTriggerID = requestTriggerID)
+  
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditConfirmShowingEventArgs]
+  }
+}
+

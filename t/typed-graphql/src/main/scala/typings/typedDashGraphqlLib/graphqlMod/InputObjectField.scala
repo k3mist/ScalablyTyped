@@ -12,3 +12,18 @@ trait InputObjectField extends js.Object {
   var `type`: GraphQLInputType
 }
 
+object InputObjectField {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: GraphQLInputType,
+    defaultValue: js.Any = null,
+    description: java.lang.String = null
+  ): InputObjectField = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[InputObjectField]
+  }
+}
+

@@ -87,3 +87,31 @@ trait XDriver
   ): activexDashInteropLib.SafeArray[DriverPropertyInfo]
 }
 
+object XDriver {
+  @scala.inline
+  def apply(
+    MajorVersion: scala.Double,
+    MinorVersion: scala.Double,
+    acceptsURL: js.Function1[java.lang.String, scala.Boolean],
+    acquire: js.Function0[scala.Unit],
+    connect: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XConnection
+    ],
+    getMajorVersion: js.Function0[scala.Double],
+    getMinorVersion: js.Function0[scala.Double],
+    getPropertyInfo: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[DriverPropertyInfo]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDriver = {
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = acceptsURL, acquire = acquire, connect = connect, getMajorVersion = getMajorVersion, getMinorVersion = getMinorVersion, getPropertyInfo = getPropertyInfo, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDriver]
+  }
+}
+

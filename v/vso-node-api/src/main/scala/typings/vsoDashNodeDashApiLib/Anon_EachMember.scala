@@ -13,3 +13,18 @@ trait Anon_EachMember extends js.Object {
   var preferredEmailAddress: scala.Double
 }
 
+object Anon_EachMember {
+  @scala.inline
+  def apply(
+    eachMember: scala.Double,
+    noDelivery: scala.Double,
+    none: scala.Double,
+    notSet: scala.Double,
+    preferredEmailAddress: scala.Double
+  ): Anon_EachMember = {
+    val __obj = js.Dynamic.literal(eachMember = eachMember, noDelivery = noDelivery, none = none, notSet = notSet, preferredEmailAddress = preferredEmailAddress)
+  
+    __obj.asInstanceOf[Anon_EachMember]
+  }
+}
+

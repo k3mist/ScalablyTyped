@@ -38,3 +38,22 @@ trait ServerInfoProperties extends js.Object {
   var tokenServiceUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServerInfoProperties {
+  @scala.inline
+  def apply(
+    adminTokenServiceUrl: java.lang.String = null,
+    currentVersion: scala.Int | scala.Double = null,
+    server: java.lang.String = null,
+    shortLivedTokenValidity: scala.Int | scala.Double = null,
+    tokenServiceUrl: java.lang.String = null
+  ): ServerInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (adminTokenServiceUrl != null) __obj.updateDynamic("adminTokenServiceUrl")(adminTokenServiceUrl)
+    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server)
+    if (shortLivedTokenValidity != null) __obj.updateDynamic("shortLivedTokenValidity")(shortLivedTokenValidity.asInstanceOf[js.Any])
+    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl)
+    __obj.asInstanceOf[ServerInfoProperties]
+  }
+}
+

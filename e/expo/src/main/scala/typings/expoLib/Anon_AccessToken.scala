@@ -15,3 +15,21 @@ trait Anon_AccessToken
   var user: Anon_Email
 }
 
+object Anon_AccessToken {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    `type`: expoLib.expoLibStrings.success,
+    user: Anon_Email,
+    idToken: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    serverAuthCode: java.lang.String = null
+  ): Anon_AccessToken = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, `type` = `type`, user = user)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (serverAuthCode != null) __obj.updateDynamic("serverAuthCode")(serverAuthCode)
+    __obj.asInstanceOf[Anon_AccessToken]
+  }
+}
+

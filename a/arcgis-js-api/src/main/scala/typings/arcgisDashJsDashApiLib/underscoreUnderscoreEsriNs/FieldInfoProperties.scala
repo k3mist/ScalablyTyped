@@ -62,3 +62,28 @@ trait FieldInfoProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FieldInfoProperties {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String = null,
+    format: FieldInfoFormatProperties = null,
+    isEditable: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    statisticType: java.lang.String = null,
+    stringFieldOption: java.lang.String = null,
+    tooltip: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): FieldInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(isEditable)) __obj.updateDynamic("isEditable")(isEditable)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (statisticType != null) __obj.updateDynamic("statisticType")(statisticType)
+    if (stringFieldOption != null) __obj.updateDynamic("stringFieldOption")(stringFieldOption)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[FieldInfoProperties]
+  }
+}
+

@@ -26,3 +26,22 @@ trait ExecutableSpecification extends js.Object {
   var sql: js.Any
 }
 
+object ExecutableSpecification {
+  @scala.inline
+  def apply(
+    db: Database,
+    enhancedFunctions: scala.Boolean,
+    isVariadic: scala.Boolean,
+    name: java.lang.String,
+    paramCount: scala.Double,
+    schema: java.lang.String,
+    singleRow: scala.Boolean,
+    singleValue: scala.Boolean,
+    sql: js.Any
+  ): ExecutableSpecification = {
+    val __obj = js.Dynamic.literal(db = db, enhancedFunctions = enhancedFunctions, isVariadic = isVariadic, name = name, paramCount = paramCount, schema = schema, singleRow = singleRow, singleValue = singleValue, sql = sql)
+  
+    __obj.asInstanceOf[ExecutableSpecification]
+  }
+}
+

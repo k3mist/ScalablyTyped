@@ -9,3 +9,12 @@ trait AccountsResource extends js.Object {
   var products: ProductsResource
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(products: ProductsResource): AccountsResource = {
+    val __obj = js.Dynamic.literal(products = products)
+  
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

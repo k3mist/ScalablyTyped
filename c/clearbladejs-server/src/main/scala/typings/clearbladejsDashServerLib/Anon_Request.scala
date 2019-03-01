@@ -9,3 +9,12 @@ trait Anon_Request extends js.Object {
   var request: clearbladejsDashServerLib.CbServerNs.BasicReq
 }
 
+object Anon_Request {
+  @scala.inline
+  def apply(request: clearbladejsDashServerLib.CbServerNs.BasicReq): Anon_Request = {
+    val __obj = js.Dynamic.literal(request = request)
+  
+    __obj.asInstanceOf[Anon_Request]
+  }
+}
+

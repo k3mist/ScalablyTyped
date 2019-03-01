@@ -16,3 +16,12 @@ trait ChangedIdentities extends js.Object {
   var sequenceContext: ChangedIdentitiesContext
 }
 
+object ChangedIdentities {
+  @scala.inline
+  def apply(identities: js.Array[Identity], sequenceContext: ChangedIdentitiesContext): ChangedIdentities = {
+    val __obj = js.Dynamic.literal(identities = identities, sequenceContext = sequenceContext)
+  
+    __obj.asInstanceOf[ChangedIdentities]
+  }
+}
+

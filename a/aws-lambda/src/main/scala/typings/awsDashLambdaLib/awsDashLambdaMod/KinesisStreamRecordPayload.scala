@@ -13,3 +13,18 @@ trait KinesisStreamRecordPayload extends js.Object {
   var sequenceNumber: java.lang.String
 }
 
+object KinesisStreamRecordPayload {
+  @scala.inline
+  def apply(
+    approximateArrivalTimestamp: scala.Double,
+    data: java.lang.String,
+    kinesisSchemaVersion: java.lang.String,
+    partitionKey: java.lang.String,
+    sequenceNumber: java.lang.String
+  ): KinesisStreamRecordPayload = {
+    val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp, data = data, kinesisSchemaVersion = kinesisSchemaVersion, partitionKey = partitionKey, sequenceNumber = sequenceNumber)
+  
+    __obj.asInstanceOf[KinesisStreamRecordPayload]
+  }
+}
+

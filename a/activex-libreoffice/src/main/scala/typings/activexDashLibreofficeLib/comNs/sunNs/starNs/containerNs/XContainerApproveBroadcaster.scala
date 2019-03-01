@@ -13,3 +13,15 @@ trait XContainerApproveBroadcaster extends js.Object {
   def removeContainerApproveListener(Listener: XContainerApproveListener): scala.Unit
 }
 
+object XContainerApproveBroadcaster {
+  @scala.inline
+  def apply(
+    addContainerApproveListener: js.Function1[XContainerApproveListener, scala.Unit],
+    removeContainerApproveListener: js.Function1[XContainerApproveListener, scala.Unit]
+  ): XContainerApproveBroadcaster = {
+    val __obj = js.Dynamic.literal(addContainerApproveListener = addContainerApproveListener, removeContainerApproveListener = removeContainerApproveListener)
+  
+    __obj.asInstanceOf[XContainerApproveBroadcaster]
+  }
+}
+

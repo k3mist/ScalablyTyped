@@ -16,3 +16,24 @@ trait KeyFrames
   var vendor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyFrames {
+  @scala.inline
+  def apply(
+    keyframes: js.Array[KeyFrame | Comment] = null,
+    name: java.lang.String = null,
+    parent: Node = null,
+    position: cssLib.Anon_Content = null,
+    `type`: java.lang.String = null,
+    vendor: java.lang.String = null
+  ): KeyFrames = {
+    val __obj = js.Dynamic.literal()
+    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[KeyFrames]
+  }
+}
+

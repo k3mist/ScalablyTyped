@@ -28,3 +28,17 @@ trait INxPivotPage extends js.Object {
   var qTop: js.Array[INxPivotDimensionCell]
 }
 
+object INxPivotPage {
+  @scala.inline
+  def apply(
+    qArea: IRect,
+    qData: js.Array[INxPivotValuePoint],
+    qLeft: js.Array[INxPivotDimensionCell],
+    qTop: js.Array[INxPivotDimensionCell]
+  ): INxPivotPage = {
+    val __obj = js.Dynamic.literal(qArea = qArea, qData = qData, qLeft = qLeft, qTop = qTop)
+  
+    __obj.asInstanceOf[INxPivotPage]
+  }
+}
+

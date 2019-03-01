@@ -10,3 +10,12 @@ trait EncryptOptions extends js.Object {
   var text: java.lang.String
 }
 
+object EncryptOptions {
+  @scala.inline
+  def apply(key: java.lang.String, text: java.lang.String): EncryptOptions = {
+    val __obj = js.Dynamic.literal(key = key, text = text)
+  
+    __obj.asInstanceOf[EncryptOptions]
+  }
+}
+

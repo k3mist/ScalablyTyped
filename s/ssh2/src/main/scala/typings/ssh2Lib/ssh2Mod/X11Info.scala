@@ -16,3 +16,12 @@ trait X11Info extends js.Object {
   var single: scala.Boolean
 }
 
+object X11Info {
+  @scala.inline
+  def apply(cookie: java.lang.String, protocol: java.lang.String, screen: scala.Double, single: scala.Boolean): X11Info = {
+    val __obj = js.Dynamic.literal(cookie = cookie, protocol = protocol, screen = screen, single = single)
+  
+    __obj.asInstanceOf[X11Info]
+  }
+}
+

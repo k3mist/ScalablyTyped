@@ -23,3 +23,28 @@ trait Wizard extends js.Object {
   def show(index: scala.Double): js.Any
 }
 
+object Wizard {
+  @scala.inline
+  def apply(
+    activeTab: js.Function0[js.Any],
+    currentIndex: js.Function0[scala.Double],
+    first: js.Function0[scala.Unit],
+    firstIndex: js.Function0[scala.Double],
+    getIndex: js.Function1[js.Any, scala.Double],
+    last: js.Function0[scala.Unit],
+    lastIndex: js.Function0[scala.Double],
+    navigationLength: js.Function0[scala.Double],
+    next: js.Function0[scala.Unit],
+    nextIndex: js.Function0[scala.Double],
+    nextTab: js.Function0[js.Any],
+    previous: js.Function0[scala.Unit],
+    previousIndex: js.Function0[scala.Double],
+    previousTab: js.Function0[js.Any],
+    show: js.Function1[scala.Double, js.Any]
+  ): Wizard = {
+    val __obj = js.Dynamic.literal(activeTab = activeTab, currentIndex = currentIndex, first = first, firstIndex = firstIndex, getIndex = getIndex, last = last, lastIndex = lastIndex, navigationLength = navigationLength, next = next, nextIndex = nextIndex, nextTab = nextTab, previous = previous, previousIndex = previousIndex, previousTab = previousTab, show = show)
+  
+    __obj.asInstanceOf[Wizard]
+  }
+}
+

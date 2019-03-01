@@ -169,3 +169,54 @@ trait SearchViewModelProperties extends GoToProperties {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object SearchViewModelProperties {
+  @scala.inline
+  def apply(
+    activeSourceIndex: scala.Int | scala.Double = null,
+    allPlaceholder: java.lang.String = null,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultSymbol: SymbolProperties = null,
+    goToOverride: GoToOverride = null,
+    includeDefaultSources: scala.Boolean | js.Function = null,
+    locationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxInputLength: scala.Int | scala.Double = null,
+    maxResults: scala.Int | scala.Double = null,
+    maxSuggestions: scala.Int | scala.Double = null,
+    minSuggestCharacters: scala.Int | scala.Double = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplateProperties = null,
+    portal: PortalProperties = null,
+    resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    searchTerm: java.lang.String = null,
+    sources: CollectionProperties[FeatureLayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
+    suggestionDelay: scala.Int | scala.Double = null,
+    suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    view: MapViewProperties | SceneViewProperties = null
+  ): SearchViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
+    if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (includeDefaultSources != null) __obj.updateDynamic("includeDefaultSources")(includeDefaultSources.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled)
+    if (maxInputLength != null) __obj.updateDynamic("maxInputLength")(maxInputLength.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
+    if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled)
+    if (!js.isUndefined(searchAllEnabled)) __obj.updateDynamic("searchAllEnabled")(searchAllEnabled)
+    if (searchTerm != null) __obj.updateDynamic("searchTerm")(searchTerm)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (suggestionDelay != null) __obj.updateDynamic("suggestionDelay")(suggestionDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchViewModelProperties]
+  }
+}
+

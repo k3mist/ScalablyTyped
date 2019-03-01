@@ -28,3 +28,33 @@ trait StatStatic extends js.Object {
   def wifi(callback: Callback[js.Array[Wifi]]): scala.Nothing
 }
 
+object StatStatic {
+  @scala.inline
+  def apply(
+    argv: js.Function1[Callback[js.Array[java.lang.String]], scala.Nothing],
+    cpu: js.Function1[Callback[Cpu], scala.Nothing],
+    cwd: js.Function1[Callback[java.lang.String], scala.Nothing],
+    disk: js.Function1[Callback[js.Array[DiskStat]], scala.Nothing],
+    env: js.Function1[Callback[js.Array[java.lang.String]], scala.Nothing],
+    fd: js.Function2[java.lang.String, Callback[FileDescriptor], scala.Nothing],
+    fds: js.Function1[Callback[js.Array[java.lang.String]], scala.Nothing],
+    io: js.Function1[Callback[Io], scala.Nothing],
+    meminfo: js.Function1[Callback[MemoryInfo], scala.Nothing],
+    net: js.Function1[Callback[js.Array[Net]], scala.Nothing],
+    stat: js.Function1[Callback[Stat], scala.Nothing],
+    statm: js.Function1[Callback[MemoryStat], scala.Nothing],
+    status: js.Function1[Callback[Status], scala.Nothing],
+    tcp: js.Function1[Callback[js.Array[Tcp]], scala.Nothing],
+    thread: js.Function1[scala.Double, Stat],
+    threads: js.Function1[Callback[js.Array[java.lang.String]], scala.Nothing],
+    udp: js.Function1[Callback[js.Array[Udp]], scala.Nothing],
+    unix: js.Function1[Callback[js.Array[UnixSocket]], scala.Nothing],
+    wifi: js.Function1[Callback[js.Array[Wifi]], scala.Nothing],
+    works: scala.Boolean
+  ): StatStatic = {
+    val __obj = js.Dynamic.literal(argv = argv, cpu = cpu, cwd = cwd, disk = disk, env = env, fd = fd, fds = fds, io = io, meminfo = meminfo, net = net, stat = stat, statm = statm, status = status, tcp = tcp, thread = thread, threads = threads, udp = udp, unix = unix, wifi = wifi, works = works)
+  
+    __obj.asInstanceOf[StatStatic]
+  }
+}
+

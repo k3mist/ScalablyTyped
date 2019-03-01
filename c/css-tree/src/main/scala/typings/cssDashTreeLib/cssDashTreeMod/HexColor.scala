@@ -14,3 +14,16 @@ trait HexColor
   var value: java.lang.String
 }
 
+object HexColor {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.HexColor,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): HexColor = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[HexColor]
+  }
+}
+

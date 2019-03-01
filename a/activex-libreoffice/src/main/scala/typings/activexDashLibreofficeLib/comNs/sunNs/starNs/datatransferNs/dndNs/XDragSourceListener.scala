@@ -43,3 +43,22 @@ trait XDragSourceListener
   def dropActionChanged(dsde: DragSourceDragEvent): scala.Unit
 }
 
+object XDragSourceListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    dragDropEnd: js.Function1[DragSourceDropEvent, scala.Unit],
+    dragEnter: js.Function1[DragSourceDragEvent, scala.Unit],
+    dragExit: js.Function1[DragSourceEvent, scala.Unit],
+    dragOver: js.Function1[DragSourceDragEvent, scala.Unit],
+    dropActionChanged: js.Function1[DragSourceDragEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDragSourceListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, dragDropEnd = dragDropEnd, dragEnter = dragEnter, dragExit = dragExit, dragOver = dragOver, dropActionChanged = dropActionChanged, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDragSourceListener]
+  }
+}
+

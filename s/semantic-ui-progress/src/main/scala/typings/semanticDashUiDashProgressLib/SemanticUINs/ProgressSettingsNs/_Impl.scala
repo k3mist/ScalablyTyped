@@ -137,3 +137,44 @@ trait _Impl extends js.Object {
   def onWarning(`this`: semanticDashUiDashProgressLib.JQuery, value: scala.Double, total: scala.Double): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    autoSuccess: scala.Boolean,
+    className: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.ClassNameSettings,
+    debug: scala.Boolean,
+    error: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.ErrorSettings,
+    label: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibStrings.percent | semanticDashUiDashProgressLib.semanticDashUiDashProgressLibStrings.ratio,
+    limitValues: scala.Boolean,
+    metadata: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.MetadataSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onActive: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
+    onChange: js.Function4[
+      semanticDashUiDashProgressLib.JQuery, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    onError: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
+    onSuccess: js.Function2[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Unit],
+    onWarning: js.Function3[semanticDashUiDashProgressLib.JQuery, scala.Double, scala.Double, scala.Unit],
+    performance: scala.Boolean,
+    precision: scala.Double,
+    random: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.RandomSettings,
+    regExp: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.RegExpSettings,
+    selector: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.SelectorSettings,
+    showActivity: scala.Boolean,
+    silent: scala.Boolean,
+    text: semanticDashUiDashProgressLib.SemanticUINs.ProgressNs.TextSettings,
+    total: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | scala.Double,
+    value: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | scala.Double,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess, className = className.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onActive = onActive, onChange = onChange, onError = onError, onSuccess = onSuccess, onWarning = onWarning, performance = performance, precision = precision, random = random.asInstanceOf[js.Any], regExp = regExp, selector = selector.asInstanceOf[js.Any], showActivity = showActivity, silent = silent, text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

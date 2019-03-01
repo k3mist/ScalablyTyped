@@ -17,3 +17,12 @@ trait FileUploadResult extends js.Object {
   var responseCode: scala.Double
 }
 
+object FileUploadResult {
+  @scala.inline
+  def apply(bytesSent: scala.Double, headers: js.Any, response: java.lang.String, responseCode: scala.Double): FileUploadResult = {
+    val __obj = js.Dynamic.literal(bytesSent = bytesSent, headers = headers, response = response, responseCode = responseCode)
+  
+    __obj.asInstanceOf[FileUploadResult]
+  }
+}
+

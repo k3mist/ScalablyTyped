@@ -10,3 +10,12 @@ trait WMSLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object WMSLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): WMSLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[WMSLayerLayerviewDestroyEvent]
+  }
+}
+

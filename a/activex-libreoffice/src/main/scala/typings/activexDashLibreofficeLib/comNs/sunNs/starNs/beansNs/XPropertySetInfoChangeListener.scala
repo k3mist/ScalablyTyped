@@ -16,3 +16,18 @@ trait XPropertySetInfoChangeListener
   def propertySetInfoChange(evt: PropertySetInfoChangeEvent): scala.Unit
 }
 
+object XPropertySetInfoChangeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    propertySetInfoChange: js.Function1[PropertySetInfoChangeEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertySetInfoChangeListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, propertySetInfoChange = propertySetInfoChange, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPropertySetInfoChangeListener]
+  }
+}
+

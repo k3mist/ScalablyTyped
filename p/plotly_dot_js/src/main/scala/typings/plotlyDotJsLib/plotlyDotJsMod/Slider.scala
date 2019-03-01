@@ -94,3 +94,34 @@ trait Slider extends js.Object {
   var yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom
 }
 
+object Slider {
+  @scala.inline
+  def apply(
+    active: scala.Double,
+    activebgcolor: Color,
+    bgcolor: Color,
+    bordercolor: Color,
+    borderwidth: scala.Double,
+    currentvalue: plotlyDotJsLib.Anon_Center,
+    font: Font,
+    len: scala.Double,
+    lenmode: plotlyDotJsLib.plotlyDotJsLibStrings.fraction | plotlyDotJsLib.plotlyDotJsLibStrings.pixels,
+    minorticklen: scala.Double,
+    pad: stdLib.Partial[Padding],
+    steps: js.Array[stdLib.Partial[SliderStep]],
+    tickcolor: Color,
+    ticklen: scala.Double,
+    tickwidth: scala.Double,
+    transition: Transition,
+    visible: scala.Boolean,
+    x: scala.Double,
+    xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right,
+    y: scala.Double,
+    yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom
+  ): Slider = {
+    val __obj = js.Dynamic.literal(active = active, activebgcolor = activebgcolor.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth, currentvalue = currentvalue, font = font, len = len, lenmode = lenmode.asInstanceOf[js.Any], minorticklen = minorticklen, pad = pad, steps = steps, tickcolor = tickcolor.asInstanceOf[js.Any], ticklen = ticklen, tickwidth = tickwidth, transition = transition, visible = visible, x = x, xanchor = xanchor.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Slider]
+  }
+}
+

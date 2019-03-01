@@ -50,3 +50,26 @@ trait CredentialProperties extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CredentialProperties {
+  @scala.inline
+  def apply(
+    expires: scala.Int | scala.Double = null,
+    isAdmin: js.UndefOr[scala.Boolean] = js.undefined,
+    oAuthState: js.Any = null,
+    server: java.lang.String = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    token: java.lang.String = null,
+    userId: java.lang.String = null
+  ): CredentialProperties = {
+    val __obj = js.Dynamic.literal()
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin)
+    if (oAuthState != null) __obj.updateDynamic("oAuthState")(oAuthState)
+    if (server != null) __obj.updateDynamic("server")(server)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[CredentialProperties]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_NoneSuspendUnprocessed extends js.Object {
   var suspendUnprocessed: scala.Double
 }
 
+object Anon_NoneSuspendUnprocessed {
+  @scala.inline
+  def apply(none: scala.Double, suspendUnprocessed: scala.Double): Anon_NoneSuspendUnprocessed = {
+    val __obj = js.Dynamic.literal(none = none, suspendUnprocessed = suspendUnprocessed)
+  
+    __obj.asInstanceOf[Anon_NoneSuspendUnprocessed]
+  }
+}
+

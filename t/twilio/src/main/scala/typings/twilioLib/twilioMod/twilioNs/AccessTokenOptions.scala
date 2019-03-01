@@ -11,3 +11,12 @@ trait AccessTokenOptions extends js.Object {
   var ttl: scala.Double
 }
 
+object AccessTokenOptions {
+  @scala.inline
+  def apply(identity: java.lang.String, nbf: scala.Double, ttl: scala.Double): AccessTokenOptions = {
+    val __obj = js.Dynamic.literal(identity = identity, nbf = nbf, ttl = ttl)
+  
+    __obj.asInstanceOf[AccessTokenOptions]
+  }
+}
+

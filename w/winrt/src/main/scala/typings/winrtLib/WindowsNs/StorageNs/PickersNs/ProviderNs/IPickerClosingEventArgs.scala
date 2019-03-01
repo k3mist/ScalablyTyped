@@ -10,3 +10,12 @@ trait IPickerClosingEventArgs extends js.Object {
   var isCanceled: scala.Boolean
 }
 
+object IPickerClosingEventArgs {
+  @scala.inline
+  def apply(closingOperation: PickerClosingOperation, isCanceled: scala.Boolean): IPickerClosingEventArgs = {
+    val __obj = js.Dynamic.literal(closingOperation = closingOperation, isCanceled = isCanceled)
+  
+    __obj.asInstanceOf[IPickerClosingEventArgs]
+  }
+}
+

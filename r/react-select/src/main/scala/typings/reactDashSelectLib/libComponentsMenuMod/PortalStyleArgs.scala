@@ -11,3 +11,16 @@ trait PortalStyleArgs extends js.Object {
   var rect: reactDashSelectLib.libUtilsMod.RectType
 }
 
+object PortalStyleArgs {
+  @scala.inline
+  def apply(
+    offset: scala.Double,
+    position: reactDashSelectLib.libTypesMod.MenuPosition,
+    rect: reactDashSelectLib.libUtilsMod.RectType
+  ): PortalStyleArgs = {
+    val __obj = js.Dynamic.literal(offset = offset, position = position, rect = rect)
+  
+    __obj.asInstanceOf[PortalStyleArgs]
+  }
+}
+

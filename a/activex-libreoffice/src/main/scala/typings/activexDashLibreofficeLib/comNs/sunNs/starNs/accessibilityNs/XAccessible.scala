@@ -44,3 +44,18 @@ trait XAccessible
   def getAccessibleContext(): XAccessibleContext
 }
 
+object XAccessible {
+  @scala.inline
+  def apply(
+    AccessibleContext: XAccessibleContext,
+    acquire: js.Function0[scala.Unit],
+    getAccessibleContext: js.Function0[XAccessibleContext],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessible = {
+    val __obj = js.Dynamic.literal(AccessibleContext = AccessibleContext, acquire = acquire, getAccessibleContext = getAccessibleContext, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessible]
+  }
+}
+

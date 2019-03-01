@@ -14,3 +14,12 @@ trait FieldsProperties extends ContentElementContentElementProperties {
   var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.undefined
 }
 
+object FieldsProperties {
+  @scala.inline
+  def apply(fieldInfos: js.Array[FieldInfoProperties] = null): FieldsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (fieldInfos != null) __obj.updateDynamic("fieldInfos")(fieldInfos)
+    __obj.asInstanceOf[FieldsProperties]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Android extends js.Object {
   var tablet: scala.Boolean
 }
 
+object Android {
+  @scala.inline
+  def apply(device: scala.Boolean, phone: scala.Boolean, tablet: scala.Boolean): Android = {
+    val __obj = js.Dynamic.literal(device = device, phone = phone, tablet = tablet)
+  
+    __obj.asInstanceOf[Android]
+  }
+}
+

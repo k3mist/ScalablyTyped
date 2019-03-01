@@ -15,3 +15,20 @@ trait Anon_GapDegree extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_GapDegree {
+  @scala.inline
+  def apply(
+    gapDegree: scala.Double,
+    percent: scala.Double,
+    showInfo: scala.Boolean,
+    size: java.lang.String,
+    strokeLinecap: java.lang.String,
+    trailColor: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_GapDegree = {
+    val __obj = js.Dynamic.literal(gapDegree = gapDegree, percent = percent, showInfo = showInfo, size = size, strokeLinecap = strokeLinecap, trailColor = trailColor, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_GapDegree]
+  }
+}
+

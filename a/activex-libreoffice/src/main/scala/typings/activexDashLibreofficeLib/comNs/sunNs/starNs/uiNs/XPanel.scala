@@ -52,3 +52,30 @@ trait XPanel extends js.Object {
   def setTitle(newTitle: java.lang.String): scala.Unit
 }
 
+object XPanel {
+  @scala.inline
+  def apply(
+    Dialog: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    Id: java.lang.String,
+    OrderIndex: scala.Double,
+    Title: java.lang.String,
+    collapse: js.Function0[scala.Unit],
+    expand: js.Function1[scala.Boolean, scala.Unit],
+    getDialog: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
+    getId: js.Function0[java.lang.String],
+    getOrderIndex: js.Function0[scala.Double],
+    getTitle: js.Function0[java.lang.String],
+    isExpanded: js.Function0[scala.Boolean],
+    moveDown: js.Function0[scala.Unit],
+    moveFirst: js.Function0[scala.Unit],
+    moveLast: js.Function0[scala.Unit],
+    moveUp: js.Function0[scala.Unit],
+    setOrderIndex: js.Function1[scala.Double, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XPanel = {
+    val __obj = js.Dynamic.literal(Dialog = Dialog, Id = Id, OrderIndex = OrderIndex, Title = Title, collapse = collapse, expand = expand, getDialog = getDialog, getId = getId, getOrderIndex = getOrderIndex, getTitle = getTitle, isExpanded = isExpanded, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+  
+    __obj.asInstanceOf[XPanel]
+  }
+}
+

@@ -63,3 +63,25 @@ trait FeatureLayerCapabilitiesEditing
   var supportsUploadWithItemId: scala.Boolean
 }
 
+object FeatureLayerCapabilitiesEditing {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    supportsDeleteByAnonymous: scala.Boolean,
+    supportsDeleteByOthers: scala.Boolean,
+    supportsGeometryUpdate: scala.Boolean,
+    supportsGlobalId: scala.Boolean,
+    supportsRollbackOnFailure: scala.Boolean,
+    supportsUpdateByAnonymous: scala.Boolean,
+    supportsUpdateByOthers: scala.Boolean,
+    supportsUpdateWithoutM: scala.Boolean,
+    supportsUploadWithItemId: scala.Boolean
+  ): FeatureLayerCapabilitiesEditing = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsDeleteByAnonymous = supportsDeleteByAnonymous, supportsDeleteByOthers = supportsDeleteByOthers, supportsGeometryUpdate = supportsGeometryUpdate, supportsGlobalId = supportsGlobalId, supportsRollbackOnFailure = supportsRollbackOnFailure, supportsUpdateByAnonymous = supportsUpdateByAnonymous, supportsUpdateByOthers = supportsUpdateByOthers, supportsUpdateWithoutM = supportsUpdateWithoutM, supportsUploadWithItemId = supportsUploadWithItemId)
+  
+    __obj.asInstanceOf[FeatureLayerCapabilitiesEditing]
+  }
+}
+

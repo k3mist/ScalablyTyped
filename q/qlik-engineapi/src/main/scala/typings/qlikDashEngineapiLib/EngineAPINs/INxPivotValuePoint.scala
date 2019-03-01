@@ -42,3 +42,18 @@ trait INxPivotValuePoint extends js.Object {
   var qType: NxCellType
 }
 
+object INxPivotValuePoint {
+  @scala.inline
+  def apply(
+    qAttrExps: INxAttributeExpressionValues,
+    qNum: scala.Double,
+    qText: java.lang.String,
+    qType: NxCellType,
+    qLabel: java.lang.String = null
+  ): INxPivotValuePoint = {
+    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps, qNum = qNum, qText = qText, qType = qType)
+    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
+    __obj.asInstanceOf[INxPivotValuePoint]
+  }
+}
+

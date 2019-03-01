@@ -13,3 +13,18 @@ trait AuthInfo extends js.Object {
   var scheme: java.lang.String
 }
 
+object AuthInfo {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    isProxy: scala.Boolean,
+    port: scala.Double,
+    realm: java.lang.String,
+    scheme: java.lang.String
+  ): AuthInfo = {
+    val __obj = js.Dynamic.literal(host = host, isProxy = isProxy, port = port, realm = realm, scheme = scheme)
+  
+    __obj.asInstanceOf[AuthInfo]
+  }
+}
+

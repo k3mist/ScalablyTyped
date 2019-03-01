@@ -19,3 +19,12 @@ trait INxStackPage extends js.Object {
   var qData: js.Array[INxStackedPivotCell]
 }
 
+object INxStackPage {
+  @scala.inline
+  def apply(qArea: IRect, qData: js.Array[INxStackedPivotCell]): INxStackPage = {
+    val __obj = js.Dynamic.literal(qArea = qArea, qData = qData)
+  
+    __obj.asInstanceOf[INxStackPage]
+  }
+}
+

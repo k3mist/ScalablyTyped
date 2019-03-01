@@ -31,3 +31,19 @@ trait BootstrapUIWidgetExportEventArgs extends BootstrapUIWidgetEventArgsBase {
   var format: java.lang.String
 }
 
+object BootstrapUIWidgetExportEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    component: js.Object,
+    data: js.Object,
+    element: js.Object,
+    fileName: java.lang.String,
+    format: java.lang.String
+  ): BootstrapUIWidgetExportEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, component = component, data = data, element = element, fileName = fileName, format = format)
+  
+    __obj.asInstanceOf[BootstrapUIWidgetExportEventArgs]
+  }
+}
+

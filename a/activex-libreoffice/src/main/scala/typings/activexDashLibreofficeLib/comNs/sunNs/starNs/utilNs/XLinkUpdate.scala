@@ -12,3 +12,17 @@ trait XLinkUpdate
   def updateLinks(): scala.Unit
 }
 
+object XLinkUpdate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateLinks: js.Function0[scala.Unit]
+  ): XLinkUpdate = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateLinks = updateLinks)
+  
+    __obj.asInstanceOf[XLinkUpdate]
+  }
+}
+

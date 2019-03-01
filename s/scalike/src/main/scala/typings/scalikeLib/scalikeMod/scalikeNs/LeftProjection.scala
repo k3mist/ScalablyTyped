@@ -18,3 +18,24 @@ trait LeftProjection[A, B] extends js.Object {
   def toOptional(): Optional[A]
 }
 
+object LeftProjection {
+  @scala.inline
+  def apply[A, B](
+    exists: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
+    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Optional[Either[A, B]]],
+    flatMap: js.Function1[js.Function1[/* a */ A, Either[js.Any, B]], Either[js.Any | A, B]],
+    forall: js.Function1[js.Function1[/* a */ A, scala.Boolean], scala.Boolean],
+    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
+    get: js.Function0[A],
+    getOrElse: js.Function1[js.Any, A],
+    map: js.Function1[js.Function1[/* a */ A, js.Any], Either[js.Any | A, B]],
+    self: js.Any,
+    toOptional: js.Function0[Optional[A]],
+    toString: js.Function0[java.lang.String]
+  ): LeftProjection[A, B] = {
+    val __obj = js.Dynamic.literal(exists = exists, filter = filter, flatMap = flatMap, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, map = map, self = self, toOptional = toOptional, toString = toString)
+  
+    __obj.asInstanceOf[LeftProjection[A, B]]
+  }
+}
+

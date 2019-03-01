@@ -24,3 +24,21 @@ trait Calls extends js.Object {
   def reset(): scala.Unit
 }
 
+object Calls {
+  @scala.inline
+  def apply(
+    all: js.Function0[js.Array[CallInfo]],
+    allArgs: js.Function0[js.Array[_]],
+    any: js.Function0[scala.Boolean],
+    argsFor: js.Function1[scala.Double, js.Array[_]],
+    count: js.Function0[scala.Double],
+    first: js.Function0[CallInfo],
+    mostRecent: js.Function0[CallInfo],
+    reset: js.Function0[scala.Unit]
+  ): Calls = {
+    val __obj = js.Dynamic.literal(all = all, allArgs = allArgs, any = any, argsFor = argsFor, count = count, first = first, mostRecent = mostRecent, reset = reset)
+  
+    __obj.asInstanceOf[Calls]
+  }
+}
+

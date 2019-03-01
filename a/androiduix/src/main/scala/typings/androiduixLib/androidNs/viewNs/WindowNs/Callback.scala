@@ -16,3 +16,21 @@ trait Callback extends js.Object {
   def onWindowFocusChanged(hasFocus: scala.Boolean): scala.Unit
 }
 
+object Callback {
+  @scala.inline
+  def apply(
+    dispatchGenericMotionEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
+    dispatchKeyEvent: js.Function1[androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean],
+    dispatchTouchEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
+    onAttachedToWindow: js.Function0[scala.Unit],
+    onContentChanged: js.Function0[scala.Unit],
+    onDetachedFromWindow: js.Function0[scala.Unit],
+    onWindowAttributesChanged: js.Function1[androiduixLib.androidNs.viewNs.WindowManagerNs.LayoutParams, scala.Unit],
+    onWindowFocusChanged: js.Function1[scala.Boolean, scala.Unit]
+  ): Callback = {
+    val __obj = js.Dynamic.literal(dispatchGenericMotionEvent = dispatchGenericMotionEvent, dispatchKeyEvent = dispatchKeyEvent, dispatchTouchEvent = dispatchTouchEvent, onAttachedToWindow = onAttachedToWindow, onContentChanged = onContentChanged, onDetachedFromWindow = onDetachedFromWindow, onWindowAttributesChanged = onWindowAttributesChanged, onWindowFocusChanged = onWindowFocusChanged)
+  
+    __obj.asInstanceOf[Callback]
+  }
+}
+

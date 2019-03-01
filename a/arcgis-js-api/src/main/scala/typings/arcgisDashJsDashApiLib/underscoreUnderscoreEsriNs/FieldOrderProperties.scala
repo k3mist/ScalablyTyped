@@ -20,3 +20,13 @@ trait FieldOrderProperties extends js.Object {
   var order: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldOrderProperties {
+  @scala.inline
+  def apply(field: java.lang.String = null, order: java.lang.String = null): FieldOrderProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (order != null) __obj.updateDynamic("order")(order)
+    __obj.asInstanceOf[FieldOrderProperties]
+  }
+}
+

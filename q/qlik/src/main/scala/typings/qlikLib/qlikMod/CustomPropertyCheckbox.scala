@@ -13,3 +13,21 @@ trait CustomPropertyCheckbox
   var type_CustomPropertyCheckbox: qlikLib.qlikLibStrings.boolean
 }
 
+object CustomPropertyCheckbox {
+  @scala.inline
+  def apply(
+    `type`: qlikLib.qlikLibStrings.boolean,
+    defaultValue: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    ref: java.lang.String = null,
+    show: scala.Boolean | ShowFunction = null
+  ): CustomPropertyCheckbox = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CustomPropertyCheckbox]
+  }
+}
+

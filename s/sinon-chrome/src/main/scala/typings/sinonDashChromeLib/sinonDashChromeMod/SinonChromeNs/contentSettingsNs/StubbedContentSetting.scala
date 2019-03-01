@@ -12,3 +12,17 @@ trait StubbedContentSetting extends js.Object {
   var set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
 }
 
+object StubbedContentSetting {
+  @scala.inline
+  def apply(
+    clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    getResourceIdentifiers: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
+  ): StubbedContentSetting = {
+    val __obj = js.Dynamic.literal(clear = clear, get = get, getResourceIdentifiers = getResourceIdentifiers, set = set)
+  
+    __obj.asInstanceOf[StubbedContentSetting]
+  }
+}
+

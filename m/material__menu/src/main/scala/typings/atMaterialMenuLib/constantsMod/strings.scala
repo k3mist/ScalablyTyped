@@ -13,3 +13,17 @@ trait strings
   var SELECTED_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:selected`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    ARIA_DISABLED_ATTR: atMaterialMenuLib.atMaterialMenuLibStrings.`aria-disabled`,
+    CANCEL_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:cancel`,
+    ITEMS_SELECTOR: atMaterialMenuLib.atMaterialMenuLibStrings.`DOTmdc-menu__items`,
+    SELECTED_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:selected`
+  ): strings = {
+    val __obj = js.Dynamic.literal(ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR, CANCEL_EVENT = CANCEL_EVENT, ITEMS_SELECTOR = ITEMS_SELECTOR, SELECTED_EVENT = SELECTED_EVENT)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

@@ -12,3 +12,17 @@ trait CodePathSegment extends js.Object {
   var reachable: scala.Boolean
 }
 
+object CodePathSegment {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    nextSegments: js.Array[CodePathSegment],
+    prevSegments: js.Array[CodePathSegment],
+    reachable: scala.Boolean
+  ): CodePathSegment = {
+    val __obj = js.Dynamic.literal(id = id, nextSegments = nextSegments, prevSegments = prevSegments, reachable = reachable)
+  
+    __obj.asInstanceOf[CodePathSegment]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Application extends js.Object {
   var brand: java.lang.String
 }
 
+object Anon_Application {
+  @scala.inline
+  def apply(application: java.lang.String, brand: java.lang.String): Anon_Application = {
+    val __obj = js.Dynamic.literal(application = application, brand = brand)
+  
+    __obj.asInstanceOf[Anon_Application]
+  }
+}
+

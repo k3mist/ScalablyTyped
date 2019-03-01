@@ -40,3 +40,21 @@ trait _Impl extends js.Object {
   var transition: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    active: java.lang.String,
+    dimmable: java.lang.String,
+    dimmed: java.lang.String,
+    disabled: java.lang.String,
+    hide: java.lang.String,
+    pageDimmer: java.lang.String,
+    show: java.lang.String,
+    transition: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(active = active, dimmable = dimmable, dimmed = dimmed, disabled = disabled, hide = hide, pageDimmer = pageDimmer, show = show, transition = transition)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

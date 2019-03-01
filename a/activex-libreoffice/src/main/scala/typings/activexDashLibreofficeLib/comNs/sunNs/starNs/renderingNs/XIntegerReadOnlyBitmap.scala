@@ -65,3 +65,36 @@ trait XIntegerReadOnlyBitmap extends XBitmap {
   ): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XIntegerReadOnlyBitmap {
+  @scala.inline
+  def apply(
+    MemoryLayout: IntegerBitmapLayout,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    acquire: js.Function0[scala.Unit],
+    getData: js.Function2[
+      js.Array[IntegerBitmapLayout], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerRectangle2D, 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    getMemoryLayout: js.Function0[IntegerBitmapLayout],
+    getPixel: js.Function2[
+      js.Array[IntegerBitmapLayout], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerPoint2D, 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    getScaledBitmap: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, 
+      scala.Boolean, 
+      XBitmap
+    ],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
+    hasAlpha: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIntegerReadOnlyBitmap = {
+    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = acquire, getData = getData, getMemoryLayout = getMemoryLayout, getPixel = getPixel, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIntegerReadOnlyBitmap]
+  }
+}
+

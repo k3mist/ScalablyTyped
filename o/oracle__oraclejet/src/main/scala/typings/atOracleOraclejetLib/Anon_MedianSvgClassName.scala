@@ -15,3 +15,20 @@ trait Anon_MedianSvgClassName extends js.Object {
   var whiskerSvgStyle: js.Object
 }
 
+object Anon_MedianSvgClassName {
+  @scala.inline
+  def apply(
+    medianSvgClassName: java.lang.String,
+    medianSvgStyle: js.Object,
+    whiskerEndLength: java.lang.String,
+    whiskerEndSvgClassName: java.lang.String,
+    whiskerEndSvgStyle: js.Object,
+    whiskerSvgClassName: java.lang.String,
+    whiskerSvgStyle: js.Object
+  ): Anon_MedianSvgClassName = {
+    val __obj = js.Dynamic.literal(medianSvgClassName = medianSvgClassName, medianSvgStyle = medianSvgStyle, whiskerEndLength = whiskerEndLength, whiskerEndSvgClassName = whiskerEndSvgClassName, whiskerEndSvgStyle = whiskerEndSvgStyle, whiskerSvgClassName = whiskerSvgClassName, whiskerSvgStyle = whiskerSvgStyle)
+  
+    __obj.asInstanceOf[Anon_MedianSvgClassName]
+  }
+}
+

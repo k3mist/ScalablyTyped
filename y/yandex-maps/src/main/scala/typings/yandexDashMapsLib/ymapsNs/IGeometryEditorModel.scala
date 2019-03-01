@@ -10,3 +10,16 @@ trait IGeometryEditorModel extends IEventEmitter {
   def getPixels(): js.Array[scala.Double]
 }
 
+object IGeometryEditorModel {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    events: IEventManager,
+    getPixels: js.Function0[js.Array[scala.Double]]
+  ): IGeometryEditorModel = {
+    val __obj = js.Dynamic.literal(destroy = destroy, events = events, getPixels = getPixels)
+  
+    __obj.asInstanceOf[IGeometryEditorModel]
+  }
+}
+

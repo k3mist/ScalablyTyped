@@ -24,3 +24,17 @@ trait GetDocumentResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetDocumentResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    content: java.lang.String,
+    documentType: java.lang.String,
+    id: java.lang.String
+  ): GetDocumentResult = {
+    val __obj = js.Dynamic.literal(arn = arn, content = content, documentType = documentType, id = id)
+  
+    __obj.asInstanceOf[GetDocumentResult]
+  }
+}
+

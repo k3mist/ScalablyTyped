@@ -22,3 +22,27 @@ trait Anon_Basic
   var standard: threeLib.threeDashCoreMod.Shader
 }
 
+object Anon_Basic {
+  @scala.inline
+  def apply(
+    basic: threeLib.threeDashCoreMod.Shader,
+    cube: threeLib.threeDashCoreMod.Shader,
+    dashed: threeLib.threeDashCoreMod.Shader,
+    depth: threeLib.threeDashCoreMod.Shader,
+    depthRGBA: threeLib.threeDashCoreMod.Shader,
+    distanceRGBA: threeLib.threeDashCoreMod.Shader,
+    equirect: threeLib.threeDashCoreMod.Shader,
+    lambert: threeLib.threeDashCoreMod.Shader,
+    normal: threeLib.threeDashCoreMod.Shader,
+    phong: threeLib.threeDashCoreMod.Shader,
+    physical: threeLib.threeDashCoreMod.Shader,
+    points: threeLib.threeDashCoreMod.Shader,
+    standard: threeLib.threeDashCoreMod.Shader,
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.Shader] = null
+  ): Anon_Basic = {
+    val __obj = js.Dynamic.literal(basic = basic, cube = cube, dashed = dashed, depth = depth, depthRGBA = depthRGBA, distanceRGBA = distanceRGBA, equirect = equirect, lambert = lambert, normal = normal, phong = phong, physical = physical, points = points, standard = standard)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Basic]
+  }
+}
+

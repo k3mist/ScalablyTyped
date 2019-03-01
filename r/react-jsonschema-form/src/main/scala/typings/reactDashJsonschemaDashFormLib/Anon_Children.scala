@@ -19,3 +19,24 @@ trait Anon_Children extends js.Object {
   def onReorderClick(index: scala.Double, newIndex: scala.Double): js.Function1[/* event */ js.Any, scala.Unit]
 }
 
+object Anon_Children {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    className: java.lang.String,
+    disabled: scala.Boolean,
+    hasMoveDown: scala.Boolean,
+    hasMoveUp: scala.Boolean,
+    hasRemove: scala.Boolean,
+    hasToolbar: scala.Boolean,
+    index: scala.Double,
+    onDropIndexClick: js.Function1[scala.Double, js.Function1[/* event */ js.Any, scala.Unit]],
+    onReorderClick: js.Function2[scala.Double, scala.Double, js.Function1[/* event */ js.Any, scala.Unit]],
+    readonly: scala.Boolean
+  ): Anon_Children = {
+    val __obj = js.Dynamic.literal(children = children, className = className, disabled = disabled, hasMoveDown = hasMoveDown, hasMoveUp = hasMoveUp, hasRemove = hasRemove, hasToolbar = hasToolbar, index = index, onDropIndexClick = onDropIndexClick, onReorderClick = onReorderClick, readonly = readonly)
+  
+    __obj.asInstanceOf[Anon_Children]
+  }
+}
+

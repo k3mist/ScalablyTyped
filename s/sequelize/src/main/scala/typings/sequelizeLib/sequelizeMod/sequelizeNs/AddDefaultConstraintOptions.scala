@@ -11,3 +11,17 @@ trait AddDefaultConstraintOptions extends AddConstraintOptions {
   var `type`: sequelizeLib.sequelizeLibStrings.default
 }
 
+object AddDefaultConstraintOptions {
+  @scala.inline
+  def apply(
+    `type`: sequelizeLib.sequelizeLibStrings.default,
+    defaultValue: js.Any = null,
+    name: java.lang.String = null
+  ): AddDefaultConstraintOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AddDefaultConstraintOptions]
+  }
+}
+

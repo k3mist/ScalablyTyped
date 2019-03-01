@@ -15,3 +15,12 @@ trait AutoText extends js.Object {
   var `type`: AutoTextType
 }
 
+object AutoText {
+  @scala.inline
+  def apply(content: java.lang.String, style: TextStyle, `type`: AutoTextType): AutoText = {
+    val __obj = js.Dynamic.literal(content = content, style = style, `type` = `type`)
+  
+    __obj.asInstanceOf[AutoText]
+  }
+}
+

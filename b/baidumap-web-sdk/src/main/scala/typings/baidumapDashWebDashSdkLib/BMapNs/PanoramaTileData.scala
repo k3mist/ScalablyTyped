@@ -11,3 +11,12 @@ trait PanoramaTileData extends js.Object {
   var worldSize: Size
 }
 
+object PanoramaTileData {
+  @scala.inline
+  def apply(centerHeading: scala.Double, tileSize: Size, worldSize: Size): PanoramaTileData = {
+    val __obj = js.Dynamic.literal(centerHeading = centerHeading, tileSize = tileSize, worldSize = worldSize)
+  
+    __obj.asInstanceOf[PanoramaTileData]
+  }
+}
+

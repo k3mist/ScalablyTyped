@@ -17,3 +17,22 @@ trait Anon_CurrentLocale extends js.Object {
   def getString(strName: java.lang.String): js.Any
 }
 
+object Anon_CurrentLocale {
+  @scala.inline
+  def apply(
+    currentLocale: java.lang.String,
+    currentLocaleValue: java.lang.String,
+    defaultLocale: java.lang.String,
+    defaultLocaleValue: java.lang.String,
+    getLocales: js.Function0[js.Array[java.lang.String]],
+    getString: js.Function1[java.lang.String, js.Any],
+    localeNames: org.scalablytyped.runtime.StringDictionary[js.Any],
+    locales: org.scalablytyped.runtime.StringDictionary[js.Any],
+    supportedLocales: js.Array[_]
+  ): Anon_CurrentLocale = {
+    val __obj = js.Dynamic.literal(currentLocale = currentLocale, currentLocaleValue = currentLocaleValue, defaultLocale = defaultLocale, defaultLocaleValue = defaultLocaleValue, getLocales = getLocales, getString = getString, localeNames = localeNames, locales = locales, supportedLocales = supportedLocales)
+  
+    __obj.asInstanceOf[Anon_CurrentLocale]
+  }
+}
+

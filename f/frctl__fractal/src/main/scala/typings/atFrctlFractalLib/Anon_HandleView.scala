@@ -10,3 +10,12 @@ trait Anon_HandleView extends js.Object {
   var view: java.lang.String
 }
 
+object Anon_HandleView {
+  @scala.inline
+  def apply(handle: java.lang.String, view: java.lang.String): Anon_HandleView = {
+    val __obj = js.Dynamic.literal(handle = handle, view = view)
+  
+    __obj.asInstanceOf[Anon_HandleView]
+  }
+}
+

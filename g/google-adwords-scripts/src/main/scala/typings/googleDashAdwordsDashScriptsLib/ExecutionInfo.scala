@@ -12,3 +12,17 @@ trait ExecutionInfo extends js.Object {
   def isPreview(): scala.Boolean
 }
 
+object ExecutionInfo {
+  @scala.inline
+  def apply(
+    getRemainingCreateQuota: js.Function0[scala.Double],
+    getRemainingGetQuota: js.Function0[scala.Double],
+    getRemainingTime: js.Function0[scala.Double],
+    isPreview: js.Function0[scala.Boolean]
+  ): ExecutionInfo = {
+    val __obj = js.Dynamic.literal(getRemainingCreateQuota = getRemainingCreateQuota, getRemainingGetQuota = getRemainingGetQuota, getRemainingTime = getRemainingTime, isPreview = isPreview)
+  
+    __obj.asInstanceOf[ExecutionInfo]
+  }
+}
+

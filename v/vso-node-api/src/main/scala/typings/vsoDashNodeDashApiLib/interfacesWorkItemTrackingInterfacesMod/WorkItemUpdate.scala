@@ -36,3 +36,22 @@ trait WorkItemUpdate extends WorkItemTrackingResource {
   var workItemId: scala.Double
 }
 
+object WorkItemUpdate {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    fields: org.scalablytyped.runtime.StringDictionary[WorkItemFieldUpdate],
+    id: scala.Double,
+    relations: WorkItemRelationUpdates,
+    rev: scala.Double,
+    revisedBy: IdentityReference,
+    revisedDate: stdLib.Date,
+    url: java.lang.String,
+    workItemId: scala.Double
+  ): WorkItemUpdate = {
+    val __obj = js.Dynamic.literal(_links = _links, fields = fields, id = id, relations = relations, rev = rev, revisedBy = revisedBy, revisedDate = revisedDate, url = url, workItemId = workItemId)
+  
+    __obj.asInstanceOf[WorkItemUpdate]
+  }
+}
+

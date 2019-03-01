@@ -16,3 +16,19 @@ trait XElementAccess
   def hasElements(): scala.Boolean
 }
 
+object XElementAccess {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XElementAccess = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XElementAccess]
+  }
+}
+

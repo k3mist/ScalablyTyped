@@ -14,3 +14,19 @@ trait Anon_ErrorFailed extends js.Object {
   var succeeded: scala.Double
 }
 
+object Anon_ErrorFailed {
+  @scala.inline
+  def apply(
+    error: scala.Double,
+    failed: scala.Double,
+    notApplicable: scala.Double,
+    notSet: scala.Double,
+    pending: scala.Double,
+    succeeded: scala.Double
+  ): Anon_ErrorFailed = {
+    val __obj = js.Dynamic.literal(error = error, failed = failed, notApplicable = notApplicable, notSet = notSet, pending = pending, succeeded = succeeded)
+  
+    __obj.asInstanceOf[Anon_ErrorFailed]
+  }
+}
+

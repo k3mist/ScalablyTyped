@@ -14,3 +14,18 @@ trait XScriptEventsSupplier
   def getEvents(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
 }
 
+object XScriptEventsSupplier {
+  @scala.inline
+  def apply(
+    Events: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    getEvents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScriptEventsSupplier = {
+    val __obj = js.Dynamic.literal(Events = Events, acquire = acquire, getEvents = getEvents, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XScriptEventsSupplier]
+  }
+}
+

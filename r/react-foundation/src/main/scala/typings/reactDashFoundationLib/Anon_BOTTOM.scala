@@ -12,3 +12,17 @@ trait Anon_BOTTOM extends js.Object {
   var TOP: reactDashFoundationLib.enumsMod.VerticalAlignments
 }
 
+object Anon_BOTTOM {
+  @scala.inline
+  def apply(
+    BOTTOM: reactDashFoundationLib.enumsMod.VerticalAlignments,
+    MIDDLE: reactDashFoundationLib.enumsMod.VerticalAlignments,
+    STRETCH: reactDashFoundationLib.enumsMod.VerticalAlignments,
+    TOP: reactDashFoundationLib.enumsMod.VerticalAlignments
+  ): Anon_BOTTOM = {
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, MIDDLE = MIDDLE, STRETCH = STRETCH, TOP = TOP)
+  
+    __obj.asInstanceOf[Anon_BOTTOM]
+  }
+}
+

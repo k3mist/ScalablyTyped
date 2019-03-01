@@ -16,3 +16,12 @@ trait AtomDescription extends js.Object {
   var description: java.lang.String
 }
 
+object AtomDescription {
+  @scala.inline
+  def apply(atom: scala.Double, description: java.lang.String): AtomDescription = {
+    val __obj = js.Dynamic.literal(atom = atom, description = description)
+  
+    __obj.asInstanceOf[AtomDescription]
+  }
+}
+

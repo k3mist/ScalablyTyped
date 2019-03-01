@@ -27,3 +27,12 @@ trait VPatch extends js.Object {
   var version: java.lang.String
 }
 
+object VPatch {
+  @scala.inline
+  def apply(patch: js.Any, `type`: scala.Double, vNode: VNode, version: java.lang.String): VPatch = {
+    val __obj = js.Dynamic.literal(patch = patch, `type` = `type`, vNode = vNode, version = version)
+  
+    __obj.asInstanceOf[VPatch]
+  }
+}
+

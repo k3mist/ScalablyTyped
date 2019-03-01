@@ -11,3 +11,16 @@ trait ServiceEndpointRequest extends js.Object {
   var serviceEndpointDetails: ServiceEndpointDetails
 }
 
+object ServiceEndpointRequest {
+  @scala.inline
+  def apply(
+    dataSourceDetails: DataSourceDetails,
+    resultTransformationDetails: ResultTransformationDetails,
+    serviceEndpointDetails: ServiceEndpointDetails
+  ): ServiceEndpointRequest = {
+    val __obj = js.Dynamic.literal(dataSourceDetails = dataSourceDetails, resultTransformationDetails = resultTransformationDetails, serviceEndpointDetails = serviceEndpointDetails)
+  
+    __obj.asInstanceOf[ServiceEndpointRequest]
+  }
+}
+

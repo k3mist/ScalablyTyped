@@ -28,3 +28,18 @@ trait ProcessProperties extends js.Object {
   var version: java.lang.String
 }
 
+object ProcessProperties {
+  @scala.inline
+  def apply(
+    `class`: ProcessClass,
+    isDefault: scala.Boolean,
+    isEnabled: scala.Boolean,
+    parentProcessTypeId: java.lang.String,
+    version: java.lang.String
+  ): ProcessProperties = {
+    val __obj = js.Dynamic.literal(`class` = `class`, isDefault = isDefault, isEnabled = isEnabled, parentProcessTypeId = parentProcessTypeId, version = version)
+  
+    __obj.asInstanceOf[ProcessProperties]
+  }
+}
+

@@ -18,3 +18,18 @@ trait IModStatFieldExpression extends js.Object {
   def ValueAsText(): ITextFieldExpression
 }
 
+object IModStatFieldExpression {
+  @scala.inline
+  def apply(
+    IsApproved: js.Function0[IExpression],
+    IsPending: js.Function0[IExpression],
+    IsRejected: js.Function0[IExpression],
+    ModStatId: js.Function0[INumberFieldExpression],
+    ValueAsText: js.Function0[ITextFieldExpression]
+  ): IModStatFieldExpression = {
+    val __obj = js.Dynamic.literal(IsApproved = IsApproved, IsPending = IsPending, IsRejected = IsRejected, ModStatId = ModStatId, ValueAsText = ValueAsText)
+  
+    __obj.asInstanceOf[IModStatFieldExpression]
+  }
+}
+

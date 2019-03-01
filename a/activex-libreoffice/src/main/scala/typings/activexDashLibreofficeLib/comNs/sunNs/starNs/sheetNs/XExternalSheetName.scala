@@ -25,3 +25,17 @@ trait XExternalSheetName
   def setExternalName(aUrl: java.lang.String, aSheetName: java.lang.String): scala.Unit
 }
 
+object XExternalSheetName {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setExternalName: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XExternalSheetName = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setExternalName = setExternalName)
+  
+    __obj.asInstanceOf[XExternalSheetName]
+  }
+}
+

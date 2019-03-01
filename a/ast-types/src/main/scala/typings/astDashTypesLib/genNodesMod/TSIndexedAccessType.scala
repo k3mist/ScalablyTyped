@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexedAccessType
 }
 
+object TSIndexedAccessType {
+  @scala.inline
+  def apply(
+    indexType: astDashTypesLib.genKindsMod.TSTypeKind,
+    objectType: astDashTypesLib.genKindsMod.TSTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexedAccessType
+  ): TSIndexedAccessType = {
+    val __obj = js.Dynamic.literal(indexType = indexType, objectType = objectType, `type` = `type`)
+  
+    __obj.asInstanceOf[TSIndexedAccessType]
+  }
+}
+

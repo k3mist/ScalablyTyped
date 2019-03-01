@@ -10,3 +10,12 @@ trait UpdateData extends js.Object {
   var uuid: java.lang.String
 }
 
+object UpdateData {
+  @scala.inline
+  def apply(color: java.lang.String, uuid: java.lang.String): UpdateData = {
+    val __obj = js.Dynamic.literal(color = color, uuid = uuid)
+  
+    __obj.asInstanceOf[UpdateData]
+  }
+}
+

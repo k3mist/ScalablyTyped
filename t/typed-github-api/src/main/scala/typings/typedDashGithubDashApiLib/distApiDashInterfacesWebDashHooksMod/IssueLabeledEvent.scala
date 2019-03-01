@@ -11,3 +11,16 @@ trait IssueLabeledEvent extends IssueEvent {
   var label: typedDashGithubDashApiLib.distApiDashInterfacesLabelMod.Label
 }
 
+object IssueLabeledEvent {
+  @scala.inline
+  def apply(
+    action: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.labeled | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.unlabeled,
+    issue: typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.Issue,
+    label: typedDashGithubDashApiLib.distApiDashInterfacesLabelMod.Label
+  ): IssueLabeledEvent = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue, label = label)
+  
+    __obj.asInstanceOf[IssueLabeledEvent]
+  }
+}
+

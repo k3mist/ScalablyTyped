@@ -117,3 +117,46 @@ trait univariateColorSizeCreateContinuousRendererParams
   var view: js.UndefOr[View] = js.undefined
 }
 
+object univariateColorSizeCreateContinuousRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    basemap: java.lang.String | Basemap = null,
+    colorOptions: univariateColorSizeCreateContinuousRendererParamsColorOptions = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    sizeOptions: univariateColorSizeCreateContinuousRendererParamsSizeOptions = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    statistics: SummaryStatisticsResult = null,
+    symbolType: java.lang.String = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    view: View = null
+  ): univariateColorSizeCreateContinuousRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (sizeOptions != null) __obj.updateDynamic("sizeOptions")(sizeOptions)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParams]
+  }
+}
+

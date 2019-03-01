@@ -9,3 +9,12 @@ trait RemovedAction extends Action {
   var `type`: ActionTypes
 }
 
+object RemovedAction {
+  @scala.inline
+  def apply(`type`: ActionTypes): RemovedAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[RemovedAction]
+  }
+}
+

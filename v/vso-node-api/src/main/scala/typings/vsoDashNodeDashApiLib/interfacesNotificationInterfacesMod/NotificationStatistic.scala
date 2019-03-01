@@ -13,3 +13,18 @@ trait NotificationStatistic extends js.Object {
   var user: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object NotificationStatistic {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    hitCount: scala.Double,
+    path: java.lang.String,
+    `type`: NotificationStatisticType,
+    user: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): NotificationStatistic = {
+    val __obj = js.Dynamic.literal(date = date, hitCount = hitCount, path = path, `type` = `type`, user = user)
+  
+    __obj.asInstanceOf[NotificationStatistic]
+  }
+}
+

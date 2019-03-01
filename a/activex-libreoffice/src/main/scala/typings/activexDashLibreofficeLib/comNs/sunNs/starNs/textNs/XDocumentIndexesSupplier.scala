@@ -18,3 +18,18 @@ trait XDocumentIndexesSupplier
   def getDocumentIndexes(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XDocumentIndexesSupplier {
+  @scala.inline
+  def apply(
+    DocumentIndexes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getDocumentIndexes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDocumentIndexesSupplier = {
+    val __obj = js.Dynamic.literal(DocumentIndexes = DocumentIndexes, acquire = acquire, getDocumentIndexes = getDocumentIndexes, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDocumentIndexesSupplier]
+  }
+}
+

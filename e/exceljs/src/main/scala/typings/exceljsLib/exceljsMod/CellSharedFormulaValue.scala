@@ -11,3 +11,16 @@ trait CellSharedFormulaValue extends _CellValue {
   var sharedFormula: java.lang.String
 }
 
+object CellSharedFormulaValue {
+  @scala.inline
+  def apply(
+    result: scala.Double | java.lang.String | stdLib.Date,
+    sharedFormula: java.lang.String,
+    formula: java.lang.String = null
+  ): CellSharedFormulaValue = {
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], sharedFormula = sharedFormula)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    __obj.asInstanceOf[CellSharedFormulaValue]
+  }
+}
+

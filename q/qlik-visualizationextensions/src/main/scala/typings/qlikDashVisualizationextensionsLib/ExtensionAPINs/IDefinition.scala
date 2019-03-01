@@ -12,3 +12,16 @@ trait IDefinition extends js.Object {
   var `type`: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.items
 }
 
+object IDefinition {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.accordion,
+    items: IItems,
+    `type`: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.items
+  ): IDefinition = {
+    val __obj = js.Dynamic.literal(component = component, items = items, `type` = `type`)
+  
+    __obj.asInstanceOf[IDefinition]
+  }
+}
+

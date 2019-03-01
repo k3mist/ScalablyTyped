@@ -54,3 +54,22 @@ trait BoolQuery extends Query {
   def toJSON(): js.Any
 }
 
+object BoolQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    adjustPureNegative: js.Function1[java.lang.String, BoolQuery],
+    boost: js.Function1[scala.Double, BoolQuery],
+    disableCoord: js.Function1[java.lang.String, BoolQuery],
+    minimumNumberShouldMatch: js.Function1[scala.Double, BoolQuery],
+    must: js.Function1[js.Object, BoolQuery],
+    mustNot: js.Function1[js.Object, BoolQuery],
+    should: js.Function1[js.Object, BoolQuery],
+    toJSON: js.Function0[js.Any]
+  ): BoolQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, adjustPureNegative = adjustPureNegative, boost = boost, disableCoord = disableCoord, minimumNumberShouldMatch = minimumNumberShouldMatch, must = must, mustNot = mustNot, should = should, toJSON = toJSON)
+  
+    __obj.asInstanceOf[BoolQuery]
+  }
+}
+

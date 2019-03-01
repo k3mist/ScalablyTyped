@@ -34,3 +34,22 @@ trait LinkAggregationGroupArgs extends js.Object {
   ] = js.undefined
 }
 
+object LinkAggregationGroupArgs {
+  @scala.inline
+  def apply(
+    connectionsBandwidth: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    location: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    forceDestroy: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    numberOfConnections: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): LinkAggregationGroupArgs = {
+    val __obj = js.Dynamic.literal(connectionsBandwidth = connectionsBandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkAggregationGroupArgs]
+  }
+}
+

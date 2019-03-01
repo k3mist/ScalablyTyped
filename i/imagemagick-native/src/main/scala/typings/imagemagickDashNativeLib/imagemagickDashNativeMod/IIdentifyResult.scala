@@ -14,3 +14,19 @@ trait IIdentifyResult extends js.Object {
   var width: scala.Double
 }
 
+object IIdentifyResult {
+  @scala.inline
+  def apply(
+    density: imagemagickDashNativeLib.Anon_Height,
+    depth: scala.Double,
+    exif: imagemagickDashNativeLib.Anon_Orientation,
+    format: java.lang.String,
+    height: scala.Double,
+    width: scala.Double
+  ): IIdentifyResult = {
+    val __obj = js.Dynamic.literal(density = density, depth = depth, exif = exif, format = format, height = height, width = width)
+  
+    __obj.asInstanceOf[IIdentifyResult]
+  }
+}
+

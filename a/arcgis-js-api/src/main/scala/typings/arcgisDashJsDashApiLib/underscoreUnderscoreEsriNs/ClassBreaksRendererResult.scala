@@ -39,3 +39,21 @@ trait ClassBreaksRendererResult
   var renderer: ClassBreaksRenderer
 }
 
+object ClassBreaksRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    classBreaksResult: ClassBreaksResult,
+    colorScheme: ColorScheme,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer
+  ): ClassBreaksRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+  
+    __obj.asInstanceOf[ClassBreaksRendererResult]
+  }
+}
+

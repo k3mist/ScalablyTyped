@@ -17,3 +17,12 @@ trait BitmapPlaneDescription extends js.Object {
   var width: scala.Double
 }
 
+object BitmapPlaneDescription {
+  @scala.inline
+  def apply(height: scala.Double, startIndex: scala.Double, stride: scala.Double, width: scala.Double): BitmapPlaneDescription = {
+    val __obj = js.Dynamic.literal(height = height, startIndex = startIndex, stride = stride, width = width)
+  
+    __obj.asInstanceOf[BitmapPlaneDescription]
+  }
+}
+

@@ -14,3 +14,19 @@ trait Anon_ColumnFilenameLinenoTypeVal extends js.Object {
   var `val`: scala.Double
 }
 
+object Anon_ColumnFilenameLinenoTypeVal {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    `type`: java.lang.String,
+    `val`: scala.Double
+  ): Anon_ColumnFilenameLinenoTypeVal = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, `type` = `type`, `val` = `val`)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameLinenoTypeVal]
+  }
+}
+

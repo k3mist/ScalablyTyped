@@ -29,3 +29,18 @@ trait TestConfig extends js.Object {
   var minPhraseLength: scala.Double
 }
 
+object TestConfig {
+  @scala.inline
+  def apply(
+    allowPassphrases: scala.Boolean,
+    maxLength: scala.Double,
+    minLength: scala.Double,
+    minOptionalTestsToPass: scala.Double,
+    minPhraseLength: scala.Double
+  ): TestConfig = {
+    val __obj = js.Dynamic.literal(allowPassphrases = allowPassphrases, maxLength = maxLength, minLength = minLength, minOptionalTestsToPass = minOptionalTestsToPass, minPhraseLength = minPhraseLength)
+  
+    __obj.asInstanceOf[TestConfig]
+  }
+}
+

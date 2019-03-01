@@ -20,3 +20,25 @@ trait ContainerInfo extends js.Object {
   var Status: java.lang.String
 }
 
+object ContainerInfo {
+  @scala.inline
+  def apply(
+    Command: java.lang.String,
+    Created: scala.Double,
+    HostConfig: dockerodeLib.Anon_NetworkMode,
+    Id: java.lang.String,
+    Image: java.lang.String,
+    ImageID: java.lang.String,
+    Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    Names: js.Array[java.lang.String],
+    NetworkSettings: dockerodeLib.Anon_NetworkType,
+    Ports: js.Array[Port],
+    State: java.lang.String,
+    Status: java.lang.String
+  ): ContainerInfo = {
+    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
+  
+    __obj.asInstanceOf[ContainerInfo]
+  }
+}
+

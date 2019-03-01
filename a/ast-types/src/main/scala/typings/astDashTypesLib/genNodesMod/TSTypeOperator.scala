@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object TSTypeOperator {
+  @scala.inline
+  def apply(
+    operator: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeOperator,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
+  ): TSTypeOperator = {
+    val __obj = js.Dynamic.literal(operator = operator, `type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[TSTypeOperator]
+  }
+}
+

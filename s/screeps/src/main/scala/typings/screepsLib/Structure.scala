@@ -46,3 +46,22 @@ trait Structure[T /* <: StructureConstant */] extends RoomObject {
   def notifyWhenAttacked(enabled: scala.Boolean): ScreepsReturnCode
 }
 
+object Structure {
+  @scala.inline
+  def apply[T /* <: StructureConstant */](
+    destroy: js.Function0[ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    pos: RoomPosition,
+    room: Room,
+    structureType: T
+  ): Structure[T] = {
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Structure[T]]
+  }
+}
+

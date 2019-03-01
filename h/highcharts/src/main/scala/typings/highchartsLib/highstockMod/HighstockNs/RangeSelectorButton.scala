@@ -15,3 +15,20 @@ trait RangeSelectorButton extends js.Object {
   var `type`: java.lang.String
 }
 
+object RangeSelectorButton {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: java.lang.String,
+    count: scala.Int | scala.Double = null,
+    dataGrouping: js.Any = null,
+    events: RangeSelectorButtonEvent = null
+  ): RangeSelectorButton = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
+    if (events != null) __obj.updateDynamic("events")(events)
+    __obj.asInstanceOf[RangeSelectorButton]
+  }
+}
+

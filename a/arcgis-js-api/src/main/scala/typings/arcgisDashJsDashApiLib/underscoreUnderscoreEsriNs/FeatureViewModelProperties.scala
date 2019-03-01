@@ -24,3 +24,13 @@ trait FeatureViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object FeatureViewModelProperties {
+  @scala.inline
+  def apply(graphic: GraphicProperties = null, view: MapViewProperties | SceneViewProperties = null): FeatureViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FeatureViewModelProperties]
+  }
+}
+

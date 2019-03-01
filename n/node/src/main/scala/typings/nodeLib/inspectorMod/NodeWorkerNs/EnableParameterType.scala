@@ -13,3 +13,12 @@ trait EnableParameterType extends js.Object {
   var waitForDebuggerOnStart: scala.Boolean
 }
 
+object EnableParameterType {
+  @scala.inline
+  def apply(waitForDebuggerOnStart: scala.Boolean): EnableParameterType = {
+    val __obj = js.Dynamic.literal(waitForDebuggerOnStart = waitForDebuggerOnStart)
+  
+    __obj.asInstanceOf[EnableParameterType]
+  }
+}
+

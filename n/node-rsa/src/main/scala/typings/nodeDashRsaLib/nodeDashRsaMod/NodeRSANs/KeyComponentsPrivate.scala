@@ -16,3 +16,21 @@ trait KeyComponentsPrivate extends _Key {
   var q: nodeLib.Buffer
 }
 
+object KeyComponentsPrivate {
+  @scala.inline
+  def apply(
+    coeff: nodeLib.Buffer,
+    d: nodeLib.Buffer,
+    dmp1: nodeLib.Buffer,
+    dmq1: nodeLib.Buffer,
+    e: nodeLib.Buffer | scala.Double,
+    n: nodeLib.Buffer,
+    p: nodeLib.Buffer,
+    q: nodeLib.Buffer
+  ): KeyComponentsPrivate = {
+    val __obj = js.Dynamic.literal(coeff = coeff, d = d, dmp1 = dmp1, dmq1 = dmq1, e = e.asInstanceOf[js.Any], n = n, p = p, q = q)
+  
+    __obj.asInstanceOf[KeyComponentsPrivate]
+  }
+}
+

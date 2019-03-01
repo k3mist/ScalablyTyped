@@ -10,3 +10,12 @@ trait OffsetArg extends ArgType {
   var offset: js.Array[scala.Double]
 }
 
+object OffsetArg {
+  @scala.inline
+  def apply(array: scala.Double, offset: js.Array[scala.Double]): OffsetArg = {
+    val __obj = js.Dynamic.literal(array = array, offset = offset)
+  
+    __obj.asInstanceOf[OffsetArg]
+  }
+}
+

@@ -36,3 +36,24 @@ trait ShareVideoContent extends ShareContent {
   var video: ShareVideo
 }
 
+object ShareVideoContent {
+  @scala.inline
+  def apply(
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.video,
+    video: ShareVideo,
+    commonParameters: ShareContentCommonParameters = null,
+    contentDescription: java.lang.String = null,
+    contentTitle: java.lang.String = null,
+    contentUrl: java.lang.String = null,
+    previewPhoto: SharePhoto = null
+  ): ShareVideoContent = {
+    val __obj = js.Dynamic.literal(contentType = contentType, video = video)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (previewPhoto != null) __obj.updateDynamic("previewPhoto")(previewPhoto)
+    __obj.asInstanceOf[ShareVideoContent]
+  }
+}
+

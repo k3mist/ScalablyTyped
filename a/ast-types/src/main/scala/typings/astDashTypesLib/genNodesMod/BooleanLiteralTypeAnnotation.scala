@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var value: scala.Boolean
 }
 
+object BooleanLiteralTypeAnnotation {
+  @scala.inline
+  def apply(
+    raw: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.BooleanLiteralTypeAnnotation,
+    value: scala.Boolean
+  ): BooleanLiteralTypeAnnotation = {
+    val __obj = js.Dynamic.literal(raw = raw, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[BooleanLiteralTypeAnnotation]
+  }
+}
+

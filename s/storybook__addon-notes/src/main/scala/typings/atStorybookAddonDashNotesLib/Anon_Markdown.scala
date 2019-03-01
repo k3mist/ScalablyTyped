@@ -11,3 +11,12 @@ trait Anon_Markdown
   var markdownOptions: js.UndefOr[markedLib.markedMod.markedNs.MarkedOptions] = js.undefined
 }
 
+object Anon_Markdown {
+  @scala.inline
+  def apply(markdown: java.lang.String, markdownOptions: markedLib.markedMod.markedNs.MarkedOptions = null): Anon_Markdown = {
+    val __obj = js.Dynamic.literal(markdown = markdown)
+    if (markdownOptions != null) __obj.updateDynamic("markdownOptions")(markdownOptions)
+    __obj.asInstanceOf[Anon_Markdown]
+  }
+}
+

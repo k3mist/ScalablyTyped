@@ -67,3 +67,29 @@ trait AttachmentsResource extends js.Object {
   def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
 }
 
+object AttachmentsResource {
+  @scala.inline
+  def apply(
+    batchDelete: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeleteAttachmentsResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BeaconAttachment]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltAttachmentName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
+    ]
+  ): AttachmentsResource = {
+    val __obj = js.Dynamic.literal(batchDelete = batchDelete, create = create, delete = delete, list = list)
+  
+    __obj.asInstanceOf[AttachmentsResource]
+  }
+}
+

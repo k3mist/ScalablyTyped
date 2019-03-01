@@ -22,3 +22,20 @@ trait ResponseObject extends js.Object {
   var trailers: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object ResponseObject {
+  @scala.inline
+  def apply(
+    headers: Headers,
+    payload: java.lang.String,
+    raw: shotLib.Anon_Req,
+    rawPayload: nodeLib.Buffer,
+    statusCode: scala.Double,
+    statusMessage: java.lang.String,
+    trailers: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): ResponseObject = {
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, raw = raw, rawPayload = rawPayload, statusCode = statusCode, statusMessage = statusMessage, trailers = trailers)
+  
+    __obj.asInstanceOf[ResponseObject]
+  }
+}
+

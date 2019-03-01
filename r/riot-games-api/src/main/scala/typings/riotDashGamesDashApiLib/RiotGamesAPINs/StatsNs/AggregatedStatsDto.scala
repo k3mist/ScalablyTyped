@@ -64,3 +64,69 @@ trait AggregatedStatsDto extends js.Object {
   var totalUnrealKills: scala.Double
 }
 
+object AggregatedStatsDto {
+  @scala.inline
+  def apply(
+    averageAssists: scala.Double,
+    averageChampionsKilled: scala.Double,
+    averageCombatPlayerScore: scala.Double,
+    averageNodeCapture: scala.Double,
+    averageNodeCaptureAssist: scala.Double,
+    averageNodeNeutralize: scala.Double,
+    averageNodeNeutralizeAssist: scala.Double,
+    averageNumDeaths: scala.Double,
+    averageObjectivePlayerScore: scala.Double,
+    averageTeamObjective: scala.Double,
+    averageTotalPlayerScore: scala.Double,
+    botGamesPlayed: scala.Double,
+    killingSpree: scala.Double,
+    maxAssists: scala.Double,
+    maxChampionsKilled: scala.Double,
+    maxCombatPlayerScore: scala.Double,
+    maxLargestCriticalStrike: scala.Double,
+    maxLargestKillingSpree: scala.Double,
+    maxNodeCapture: scala.Double,
+    maxNodeCaptureAssist: scala.Double,
+    maxNodeNeutralize: scala.Double,
+    maxNodeNeutralizeAssist: scala.Double,
+    maxNumDeaths: scala.Double,
+    maxObjectivePlayerScore: scala.Double,
+    maxTeamObjective: scala.Double,
+    maxTimePlayed: scala.Double,
+    maxTimeSpentLiving: scala.Double,
+    maxTotalPlayerScore: scala.Double,
+    mostChampionKillsPerSession: scala.Double,
+    mostSpellsCast: scala.Double,
+    normalGamesPlayed: scala.Double,
+    rankedPremadeGamesPlayed: scala.Double,
+    rankedSoloGamesPlayed: scala.Double,
+    totalAssists: scala.Double,
+    totalChampionKills: scala.Double,
+    totalDamageDealt: scala.Double,
+    totalDamageTaken: scala.Double,
+    totalDeathsPerSession: scala.Double,
+    totalDoubleKills: scala.Double,
+    totalFirstBlood: scala.Double,
+    totalGoldEarned: scala.Double,
+    totalHeal: scala.Double,
+    totalMagicDamageDealt: scala.Double,
+    totalMinionsKills: scala.Double,
+    totalNeutralMinionsKilled: scala.Double,
+    totalNodeCapture: scala.Double,
+    totalNodeNeutralize: scala.Double,
+    totalPentaKills: scala.Double,
+    totalPhysicalDamageDealt: scala.Double,
+    totalQuadraKills: scala.Double,
+    totalSessionsLost: scala.Double,
+    totalSessionsPlayed: scala.Double,
+    totalSessionsWon: scala.Double,
+    totalTripleKills: scala.Double,
+    totalTurretsKilleds: scala.Double,
+    totalUnrealKills: scala.Double
+  ): AggregatedStatsDto = {
+    val __obj = js.Dynamic.literal(averageAssists = averageAssists, averageChampionsKilled = averageChampionsKilled, averageCombatPlayerScore = averageCombatPlayerScore, averageNodeCapture = averageNodeCapture, averageNodeCaptureAssist = averageNodeCaptureAssist, averageNodeNeutralize = averageNodeNeutralize, averageNodeNeutralizeAssist = averageNodeNeutralizeAssist, averageNumDeaths = averageNumDeaths, averageObjectivePlayerScore = averageObjectivePlayerScore, averageTeamObjective = averageTeamObjective, averageTotalPlayerScore = averageTotalPlayerScore, botGamesPlayed = botGamesPlayed, killingSpree = killingSpree, maxAssists = maxAssists, maxChampionsKilled = maxChampionsKilled, maxCombatPlayerScore = maxCombatPlayerScore, maxLargestCriticalStrike = maxLargestCriticalStrike, maxLargestKillingSpree = maxLargestKillingSpree, maxNodeCapture = maxNodeCapture, maxNodeCaptureAssist = maxNodeCaptureAssist, maxNodeNeutralize = maxNodeNeutralize, maxNodeNeutralizeAssist = maxNodeNeutralizeAssist, maxNumDeaths = maxNumDeaths, maxObjectivePlayerScore = maxObjectivePlayerScore, maxTeamObjective = maxTeamObjective, maxTimePlayed = maxTimePlayed, maxTimeSpentLiving = maxTimeSpentLiving, maxTotalPlayerScore = maxTotalPlayerScore, mostChampionKillsPerSession = mostChampionKillsPerSession, mostSpellsCast = mostSpellsCast, normalGamesPlayed = normalGamesPlayed, rankedPremadeGamesPlayed = rankedPremadeGamesPlayed, rankedSoloGamesPlayed = rankedSoloGamesPlayed, totalAssists = totalAssists, totalChampionKills = totalChampionKills, totalDamageDealt = totalDamageDealt, totalDamageTaken = totalDamageTaken, totalDeathsPerSession = totalDeathsPerSession, totalDoubleKills = totalDoubleKills, totalFirstBlood = totalFirstBlood, totalGoldEarned = totalGoldEarned, totalHeal = totalHeal, totalMagicDamageDealt = totalMagicDamageDealt, totalMinionsKills = totalMinionsKills, totalNeutralMinionsKilled = totalNeutralMinionsKilled, totalNodeCapture = totalNodeCapture, totalNodeNeutralize = totalNodeNeutralize, totalPentaKills = totalPentaKills, totalPhysicalDamageDealt = totalPhysicalDamageDealt, totalQuadraKills = totalQuadraKills, totalSessionsLost = totalSessionsLost, totalSessionsPlayed = totalSessionsPlayed, totalSessionsWon = totalSessionsWon, totalTripleKills = totalTripleKills, totalTurretsKilleds = totalTurretsKilleds, totalUnrealKills = totalUnrealKills)
+  
+    __obj.asInstanceOf[AggregatedStatsDto]
+  }
+}
+

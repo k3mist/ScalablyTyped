@@ -16,3 +16,17 @@ trait ProcessorUsage extends js.Object {
   var user: chromeDashAppsLib.chromeNs.double
 }
 
+object ProcessorUsage {
+  @scala.inline
+  def apply(
+    idle: chromeDashAppsLib.chromeNs.double,
+    kernel: chromeDashAppsLib.chromeNs.double,
+    total: chromeDashAppsLib.chromeNs.double,
+    user: chromeDashAppsLib.chromeNs.double
+  ): ProcessorUsage = {
+    val __obj = js.Dynamic.literal(idle = idle, kernel = kernel, total = total, user = user)
+  
+    __obj.asInstanceOf[ProcessorUsage]
+  }
+}
+

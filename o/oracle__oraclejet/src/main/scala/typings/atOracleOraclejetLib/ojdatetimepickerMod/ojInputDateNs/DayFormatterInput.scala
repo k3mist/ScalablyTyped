@@ -12,3 +12,12 @@ trait DayFormatterInput extends js.Object {
   var month: scala.Double
 }
 
+object DayFormatterInput {
+  @scala.inline
+  def apply(date: scala.Double, fullYear: scala.Double, month: scala.Double): DayFormatterInput = {
+    val __obj = js.Dynamic.literal(date = date, fullYear = fullYear, month = month)
+  
+    __obj.asInstanceOf[DayFormatterInput]
+  }
+}
+

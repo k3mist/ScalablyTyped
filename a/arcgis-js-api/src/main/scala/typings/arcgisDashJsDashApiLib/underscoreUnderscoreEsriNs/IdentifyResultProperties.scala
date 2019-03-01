@@ -32,3 +32,20 @@ trait IdentifyResultProperties extends js.Object {
   var layerName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentifyResultProperties {
+  @scala.inline
+  def apply(
+    displayFieldName: java.lang.String = null,
+    feature: GraphicProperties = null,
+    layerId: scala.Int | scala.Double = null,
+    layerName: java.lang.String = null
+  ): IdentifyResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
+    if (feature != null) __obj.updateDynamic("feature")(feature)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
+    __obj.asInstanceOf[IdentifyResultProperties]
+  }
+}
+

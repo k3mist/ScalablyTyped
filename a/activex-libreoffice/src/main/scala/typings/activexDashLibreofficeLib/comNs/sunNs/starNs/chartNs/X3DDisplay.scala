@@ -33,3 +33,20 @@ trait X3DDisplay
   def getWall(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object X3DDisplay {
+  @scala.inline
+  def apply(
+    Floor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): X3DDisplay = {
+    val __obj = js.Dynamic.literal(Floor = Floor, Wall = Wall, acquire = acquire, getFloor = getFloor, getWall = getWall, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[X3DDisplay]
+  }
+}
+

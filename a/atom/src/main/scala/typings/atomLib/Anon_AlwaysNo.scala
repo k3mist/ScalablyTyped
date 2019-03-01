@@ -10,3 +10,15 @@ trait Anon_AlwaysNo extends js.Object {
   var value: atomLib.atomLibStrings.no | atomLib.atomLibStrings.yes | atomLib.atomLibStrings.always
 }
 
+object Anon_AlwaysNo {
+  @scala.inline
+  def apply(
+    scopeDescriptor: atomLib.atomMod.ScopeDescriptor,
+    value: atomLib.atomLibStrings.no | atomLib.atomLibStrings.yes | atomLib.atomLibStrings.always
+  ): Anon_AlwaysNo = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_AlwaysNo]
+  }
+}
+

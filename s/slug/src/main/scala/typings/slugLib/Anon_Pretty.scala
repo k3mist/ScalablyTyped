@@ -10,3 +10,12 @@ trait Anon_Pretty extends js.Object {
   var rfc3986: slugLib.slugMod.Mode
 }
 
+object Anon_Pretty {
+  @scala.inline
+  def apply(pretty: slugLib.slugMod.Mode, rfc3986: slugLib.slugMod.Mode): Anon_Pretty = {
+    val __obj = js.Dynamic.literal(pretty = pretty, rfc3986 = rfc3986)
+  
+    __obj.asInstanceOf[Anon_Pretty]
+  }
+}
+

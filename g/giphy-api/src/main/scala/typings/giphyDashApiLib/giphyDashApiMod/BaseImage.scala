@@ -11,3 +11,12 @@ trait BaseImage extends js.Object {
   var width: java.lang.String
 }
 
+object BaseImage {
+  @scala.inline
+  def apply(height: java.lang.String, url: java.lang.String, width: java.lang.String): BaseImage = {
+    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+  
+    __obj.asInstanceOf[BaseImage]
+  }
+}
+

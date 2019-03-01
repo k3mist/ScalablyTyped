@@ -18,3 +18,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSConditionalType
 }
 
+object TSConditionalType {
+  @scala.inline
+  def apply(
+    checkType: astDashTypesLib.genKindsMod.TSTypeKind,
+    extendsType: astDashTypesLib.genKindsMod.TSTypeKind,
+    falseType: astDashTypesLib.genKindsMod.TSTypeKind,
+    trueType: astDashTypesLib.genKindsMod.TSTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSConditionalType
+  ): TSConditionalType = {
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, trueType = trueType, `type` = `type`)
+  
+    __obj.asInstanceOf[TSConditionalType]
+  }
+}
+

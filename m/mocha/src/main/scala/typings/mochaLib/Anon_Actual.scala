@@ -62,3 +62,22 @@ trait Anon_Actual extends js.Object {
   def list(failures: js.Array[mochaLib.MochaNs.Test]): scala.Unit
 }
 
+object Anon_Actual {
+  @scala.inline
+  def apply(
+    color: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    colors: mochaLib.MochaNs.reportersNs.BaseNs.ColorMap,
+    cursorNs: Anon_BeginningOfLine,
+    generateDiff: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    inlineDiffs: scala.Boolean,
+    list: js.Function1[js.Array[mochaLib.MochaNs.Test], scala.Unit],
+    symbols: mochaLib.MochaNs.reportersNs.BaseNs.SymbolMap,
+    useColors: scala.Boolean,
+    window: Anon_Width
+  ): Anon_Actual = {
+    val __obj = js.Dynamic.literal(color = color, colors = colors, cursorNs = cursorNs, generateDiff = generateDiff, inlineDiffs = inlineDiffs, list = list, symbols = symbols, useColors = useColors, window = window)
+  
+    __obj.asInstanceOf[Anon_Actual]
+  }
+}
+

@@ -18,3 +18,23 @@ trait Forecast extends js.Object {
   var week: java.lang.String
 }
 
+object Forecast {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    dayTemp: scala.Double,
+    dayWeather: java.lang.String,
+    dayWindDir: java.lang.String,
+    dayWindPower: java.lang.String,
+    nightTemp: scala.Double,
+    nightWeather: java.lang.String,
+    nightWindDir: java.lang.String,
+    nightWindPower: java.lang.String,
+    week: java.lang.String
+  ): Forecast = {
+    val __obj = js.Dynamic.literal(date = date, dayTemp = dayTemp, dayWeather = dayWeather, dayWindDir = dayWindDir, dayWindPower = dayWindPower, nightTemp = nightTemp, nightWeather = nightWeather, nightWindDir = nightWindDir, nightWindPower = nightWindPower, week = week)
+  
+    __obj.asInstanceOf[Forecast]
+  }
+}
+

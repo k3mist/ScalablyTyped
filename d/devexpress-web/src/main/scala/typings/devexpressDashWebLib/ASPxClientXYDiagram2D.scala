@@ -58,3 +58,30 @@ trait ASPxClientXYDiagram2D extends ASPxClientXYDiagramBase {
   def ShowCrosshair(screenX: scala.Double, screenY: scala.Double): scala.Unit
 }
 
+object ASPxClientXYDiagram2D {
+  @scala.inline
+  def apply(
+    DiagramToPoint: js.Function5[
+      js.Object, 
+      js.Object, 
+      ASPxClientAxis2D, 
+      ASPxClientAxis2D, 
+      ASPxClientXYDiagramPane, 
+      ASPxClientControlCoordinates
+    ],
+    PointToDiagram: js.Function2[scala.Double, scala.Double, ASPxClientDiagramCoordinates],
+    ShowCrosshair: js.Function2[scala.Double, scala.Double, scala.Unit],
+    axisX: ASPxClientAxisBase,
+    axisY: ASPxClientAxisBase,
+    chart: ASPxClientWebChart,
+    defaultPane: ASPxClientXYDiagramPane,
+    panes: js.Array[ASPxClientXYDiagramPane],
+    secondaryAxesX: js.Array[ASPxClientAxis],
+    secondaryAxesY: js.Array[ASPxClientAxis]
+  ): ASPxClientXYDiagram2D = {
+    val __obj = js.Dynamic.literal(DiagramToPoint = DiagramToPoint, PointToDiagram = PointToDiagram, ShowCrosshair = ShowCrosshair, axisX = axisX, axisY = axisY, chart = chart, defaultPane = defaultPane, panes = panes, secondaryAxesX = secondaryAxesX, secondaryAxesY = secondaryAxesY)
+  
+    __obj.asInstanceOf[ASPxClientXYDiagram2D]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Config extends js.Object {
   var SP_MONEY_URL: java.lang.String
 }
 
+object Config {
+  @scala.inline
+  def apply(MONEY_URL: java.lang.String, SP_MONEY_URL: java.lang.String): Config = {
+    val __obj = js.Dynamic.literal(MONEY_URL = MONEY_URL, SP_MONEY_URL = SP_MONEY_URL)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

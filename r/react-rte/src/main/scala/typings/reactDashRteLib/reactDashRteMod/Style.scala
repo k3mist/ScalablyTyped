@@ -10,3 +10,12 @@ trait Style extends js.Object {
   var `type`: reactDashRteLib.reactDashRteLibStrings.STYLE
 }
 
+object Style {
+  @scala.inline
+  def apply(style: java.lang.String, `type`: reactDashRteLib.reactDashRteLibStrings.STYLE): Style = {
+    val __obj = js.Dynamic.literal(style = style, `type` = `type`)
+  
+    __obj.asInstanceOf[Style]
+  }
+}
+

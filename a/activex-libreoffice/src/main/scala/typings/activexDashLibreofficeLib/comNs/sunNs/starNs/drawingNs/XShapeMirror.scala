@@ -17,3 +17,18 @@ trait XShapeMirror
   def mirrorAtAxis(aShapes: js.Array[XShapes], aLine: XShape): scala.Unit
 }
 
+object XShapeMirror {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    mirror: js.Function2[js.Array[XShapes], MirrorAxis, scala.Unit],
+    mirrorAtAxis: js.Function2[js.Array[XShapes], XShape, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XShapeMirror = {
+    val __obj = js.Dynamic.literal(acquire = acquire, mirror = mirror, mirrorAtAxis = mirrorAtAxis, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XShapeMirror]
+  }
+}
+

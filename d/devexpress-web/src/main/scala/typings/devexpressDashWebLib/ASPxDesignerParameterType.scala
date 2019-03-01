@@ -36,3 +36,18 @@ trait ASPxDesignerParameterType extends js.Object {
   def valueConverter(`val`: js.Object): js.Object
 }
 
+object ASPxDesignerParameterType {
+  @scala.inline
+  def apply(
+    defaultVal: js.Object,
+    displayValue: java.lang.String,
+    specifics: java.lang.String,
+    value: java.lang.String,
+    valueConverter: js.Function1[js.Object, js.Object]
+  ): ASPxDesignerParameterType = {
+    val __obj = js.Dynamic.literal(defaultVal = defaultVal, displayValue = displayValue, specifics = specifics, value = value, valueConverter = valueConverter)
+  
+    __obj.asInstanceOf[ASPxDesignerParameterType]
+  }
+}
+

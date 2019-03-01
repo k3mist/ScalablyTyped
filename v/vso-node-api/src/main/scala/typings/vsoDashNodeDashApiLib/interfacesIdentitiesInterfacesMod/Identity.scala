@@ -29,3 +29,28 @@ trait Identity extends js.Object {
   var uniqueUserId: scala.Double
 }
 
+object Identity {
+  @scala.inline
+  def apply(
+    customDisplayName: java.lang.String,
+    descriptor: IdentityDescriptor,
+    id: java.lang.String,
+    isActive: scala.Boolean,
+    isContainer: scala.Boolean,
+    masterId: java.lang.String,
+    memberIds: js.Array[java.lang.String],
+    memberOf: js.Array[IdentityDescriptor],
+    members: js.Array[IdentityDescriptor],
+    metaTypeId: scala.Double,
+    properties: js.Any,
+    providerDisplayName: java.lang.String,
+    resourceVersion: scala.Double,
+    subjectDescriptor: java.lang.String,
+    uniqueUserId: scala.Double
+  ): Identity = {
+    val __obj = js.Dynamic.literal(customDisplayName = customDisplayName, descriptor = descriptor, id = id, isActive = isActive, isContainer = isContainer, masterId = masterId, memberIds = memberIds, memberOf = memberOf, members = members, metaTypeId = metaTypeId, properties = properties, providerDisplayName = providerDisplayName, resourceVersion = resourceVersion, subjectDescriptor = subjectDescriptor, uniqueUserId = uniqueUserId)
+  
+    __obj.asInstanceOf[Identity]
+  }
+}
+

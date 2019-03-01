@@ -30,3 +30,35 @@ trait ISCEService extends js.Object {
   def trustAsUrl(value: js.Any): js.Any
 }
 
+object ISCEService {
+  @scala.inline
+  def apply(
+    getTrusted: js.Function2[java.lang.String, js.Any, js.Any],
+    getTrustedCss: js.Function1[js.Any, js.Any],
+    getTrustedHtml: js.Function1[js.Any, js.Any],
+    getTrustedJs: js.Function1[js.Any, js.Any],
+    getTrustedResourceUrl: js.Function1[js.Any, js.Any],
+    getTrustedUrl: js.Function1[js.Any, js.Any],
+    isEnabled: js.Function0[scala.Boolean],
+    parse: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function2[/* context */ js.Any, /* locals */ js.Any, _]
+    ],
+    parseAsCss: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
+    parseAsHtml: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
+    parseAsJs: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
+    parseAsResourceUrl: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
+    parseAsUrl: js.Function1[java.lang.String, js.Function2[/* context */ js.Any, /* locals */ js.Any, _]],
+    trustAs: js.Function2[java.lang.String, js.Any, js.Any],
+    trustAsHtml: js.Function1[js.Any, js.Any],
+    trustAsJs: js.Function1[js.Any, js.Any],
+    trustAsResourceUrl: js.Function1[js.Any, js.Any],
+    trustAsUrl: js.Function1[js.Any, js.Any]
+  ): ISCEService = {
+    val __obj = js.Dynamic.literal(getTrusted = getTrusted, getTrustedCss = getTrustedCss, getTrustedHtml = getTrustedHtml, getTrustedJs = getTrustedJs, getTrustedResourceUrl = getTrustedResourceUrl, getTrustedUrl = getTrustedUrl, isEnabled = isEnabled, parse = parse, parseAsCss = parseAsCss, parseAsHtml = parseAsHtml, parseAsJs = parseAsJs, parseAsResourceUrl = parseAsResourceUrl, parseAsUrl = parseAsUrl, trustAs = trustAs, trustAsHtml = trustAsHtml, trustAsJs = trustAsJs, trustAsResourceUrl = trustAsResourceUrl, trustAsUrl = trustAsUrl)
+  
+    __obj.asInstanceOf[ISCEService]
+  }
+}
+

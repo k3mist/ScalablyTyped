@@ -15,3 +15,17 @@ trait Snapshot extends js.Object {
   var zone_uuid: java.lang.String
 }
 
+object Snapshot {
+  @scala.inline
+  def apply(
+    change_time: java.lang.String,
+    serial: scala.Double,
+    zone_data: js.Array[ZoneRecord],
+    zone_uuid: java.lang.String
+  ): Snapshot = {
+    val __obj = js.Dynamic.literal(change_time = change_time, serial = serial, zone_data = zone_data, zone_uuid = zone_uuid)
+  
+    __obj.asInstanceOf[Snapshot]
+  }
+}
+

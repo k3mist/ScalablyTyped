@@ -16,3 +16,30 @@ trait HelloJSEvent extends js.Object {
   def on(event: java.lang.String, callback: js.Function1[/* auth */ HelloJSEventArgument, scala.Unit]): HelloJSStatic
 }
 
+object HelloJSEvent {
+  @scala.inline
+  def apply(
+    emit: js.Function2[java.lang.String, js.Any, HelloJSStatic],
+    emitAfter: js.Function0[HelloJSStatic],
+    findEvents: js.Function2[
+      java.lang.String, 
+      js.Function2[/* name */ java.lang.String, /* index */ scala.Double, scala.Unit], 
+      scala.Unit
+    ],
+    off: js.Function2[
+      java.lang.String, 
+      js.Function1[/* auth */ HelloJSEventArgument, scala.Unit], 
+      HelloJSStatic
+    ],
+    on: js.Function2[
+      java.lang.String, 
+      js.Function1[/* auth */ HelloJSEventArgument, scala.Unit], 
+      HelloJSStatic
+    ]
+  ): HelloJSEvent = {
+    val __obj = js.Dynamic.literal(emit = emit, emitAfter = emitAfter, findEvents = findEvents, off = off, on = on)
+  
+    __obj.asInstanceOf[HelloJSEvent]
+  }
+}
+

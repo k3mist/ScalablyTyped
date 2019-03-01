@@ -66,3 +66,22 @@ trait XClob
   def positionOfClob(pattern: XClob, start: scala.Double): scala.Double
 }
 
+object XClob {
+  @scala.inline
+  def apply(
+    CharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getSubString: js.Function2[scala.Double, scala.Double, java.lang.String],
+    length: js.Function0[scala.Double],
+    position: js.Function2[java.lang.String, scala.Double, scala.Double],
+    positionOfClob: js.Function2[XClob, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XClob = {
+    val __obj = js.Dynamic.literal(CharacterStream = CharacterStream, acquire = acquire, getCharacterStream = getCharacterStream, getSubString = getSubString, length = length, position = position, positionOfClob = positionOfClob, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XClob]
+  }
+}
+

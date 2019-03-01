@@ -13,3 +13,29 @@ trait Chain2[F /* <: fpDashTsLib.libHKTMod.URIS2 */]
   ): fpDashTsLib.libHKTMod.Type2[F, L, B]
 }
 
+object Chain2 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */](
+    URI: F,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
+    ],
+    chain: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
+    ]
+  ): Chain2[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, map = map)
+  
+    __obj.asInstanceOf[Chain2[F]]
+  }
+}
+

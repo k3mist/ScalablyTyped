@@ -16,3 +16,12 @@ trait _Impl extends js.Object {
   var animating: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(active: java.lang.String, animating: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal(active = active, animating = animating)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

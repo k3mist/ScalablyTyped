@@ -20,3 +20,16 @@ trait NotificationsData extends js.Object {
   var `type`: NotificationTemplateType
 }
 
+object NotificationsData {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    identities: org.scalablytyped.runtime.StringDictionary[js.Any],
+    `type`: NotificationTemplateType
+  ): NotificationsData = {
+    val __obj = js.Dynamic.literal(data = data, identities = identities, `type` = `type`)
+  
+    __obj.asInstanceOf[NotificationsData]
+  }
+}
+

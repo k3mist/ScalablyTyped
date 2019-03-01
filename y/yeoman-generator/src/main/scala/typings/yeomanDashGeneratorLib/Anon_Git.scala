@@ -10,3 +10,12 @@ trait Anon_Git extends js.Object {
   val github: Anon_Username
 }
 
+object Anon_Git {
+  @scala.inline
+  def apply(git: Anon_Email, github: Anon_Username): Anon_Git = {
+    val __obj = js.Dynamic.literal(git = git, github = github)
+  
+    __obj.asInstanceOf[Anon_Git]
+  }
+}
+

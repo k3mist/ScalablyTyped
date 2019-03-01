@@ -20,3 +20,20 @@ trait XCompletedConnection
   def connectWithCompletion(handler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler): activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
 }
 
+object XCompletedConnection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    connectWithCompletion: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCompletedConnection = {
+    val __obj = js.Dynamic.literal(acquire = acquire, connectWithCompletion = connectWithCompletion, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCompletedConnection]
+  }
+}
+

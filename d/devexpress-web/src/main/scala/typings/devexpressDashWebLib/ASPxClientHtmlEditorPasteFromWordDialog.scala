@@ -15,3 +15,17 @@ trait ASPxClientHtmlEditorPasteFromWordDialog extends ASPxClientHtmlEditorDialog
   def GetRemoveFontFamilyCheckBox(): ASPxClientCheckBox
 }
 
+object ASPxClientHtmlEditorPasteFromWordDialog {
+  @scala.inline
+  def apply(
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetRemoveFontFamilyCheckBox: js.Function0[ASPxClientCheckBox]
+  ): ASPxClientHtmlEditorPasteFromWordDialog = {
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton, GetRemoveFontFamilyCheckBox = GetRemoveFontFamilyCheckBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorPasteFromWordDialog]
+  }
+}
+

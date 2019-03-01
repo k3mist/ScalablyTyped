@@ -18,3 +18,23 @@ trait ArtifactContributionDefinition extends js.Object {
   var uniqueSourceIdentifier: java.lang.String
 }
 
+object ArtifactContributionDefinition {
+  @scala.inline
+  def apply(
+    artifactType: java.lang.String,
+    artifactTypeStreamMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    browsableArtifactTypeMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    dataSourceBindings: js.Array[DataSourceBinding],
+    displayName: java.lang.String,
+    downloadTaskId: java.lang.String,
+    endpointTypeId: java.lang.String,
+    inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
+    name: java.lang.String,
+    uniqueSourceIdentifier: java.lang.String
+  ): ArtifactContributionDefinition = {
+    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactTypeStreamMapping = artifactTypeStreamMapping, browsableArtifactTypeMapping = browsableArtifactTypeMapping, dataSourceBindings = dataSourceBindings, displayName = displayName, downloadTaskId = downloadTaskId, endpointTypeId = endpointTypeId, inputDescriptors = inputDescriptors, name = name, uniqueSourceIdentifier = uniqueSourceIdentifier)
+  
+    __obj.asInstanceOf[ArtifactContributionDefinition]
+  }
+}
+

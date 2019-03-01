@@ -27,3 +27,18 @@ trait NpmCredentials extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NpmCredentials {
+  @scala.inline
+  def apply(
+    token: java.lang.String,
+    `type`: registryDashAuthDashTokenLib.registryDashAuthDashTokenLibStrings.Basic | registryDashAuthDashTokenLib.registryDashAuthDashTokenLibStrings.Bearer,
+    password: java.lang.String = null,
+    username: java.lang.String = null
+  ): NpmCredentials = {
+    val __obj = js.Dynamic.literal(token = token, `type` = `type`.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[NpmCredentials]
+  }
+}
+

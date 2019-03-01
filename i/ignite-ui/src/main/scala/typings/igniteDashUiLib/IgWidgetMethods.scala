@@ -30,3 +30,17 @@ trait IgWidgetMethods extends js.Object {
   def destroy(): scala.Unit
 }
 
+object IgWidgetMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit]
+  ): IgWidgetMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy)
+  
+    __obj.asInstanceOf[IgWidgetMethods]
+  }
+}
+

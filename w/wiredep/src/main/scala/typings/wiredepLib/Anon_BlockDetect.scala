@@ -15,3 +15,12 @@ trait Anon_BlockDetect extends js.Object {
   var replace: Anon_CssJs
 }
 
+object Anon_BlockDetect {
+  @scala.inline
+  def apply(block: stdLib.RegExp, detect: Anon_Css, replace: Anon_CssJs): Anon_BlockDetect = {
+    val __obj = js.Dynamic.literal(block = block, detect = detect, replace = replace)
+  
+    __obj.asInstanceOf[Anon_BlockDetect]
+  }
+}
+

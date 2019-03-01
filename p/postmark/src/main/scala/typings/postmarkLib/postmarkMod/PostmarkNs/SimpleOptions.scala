@@ -10,3 +10,12 @@ trait SimpleOptions extends js.Object {
   var ssl: scala.Boolean
 }
 
+object SimpleOptions {
+  @scala.inline
+  def apply(requestHost: java.lang.String, ssl: scala.Boolean): SimpleOptions = {
+    val __obj = js.Dynamic.literal(requestHost = requestHost, ssl = ssl)
+  
+    __obj.asInstanceOf[SimpleOptions]
+  }
+}
+

@@ -60,3 +60,34 @@ trait TrackProperties
   var viewModel: js.UndefOr[TrackViewModelProperties] = js.undefined
 }
 
+object TrackProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    geolocationOptions: js.Any = null,
+    goToLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    goToOverride: GoToOverride = null,
+    graphic: GraphicProperties = null,
+    id: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    useHeadingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: TrackViewModelProperties = null
+  ): TrackProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions)
+    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHeadingEnabled)) __obj.updateDynamic("useHeadingEnabled")(useHeadingEnabled)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[TrackProperties]
+  }
+}
+

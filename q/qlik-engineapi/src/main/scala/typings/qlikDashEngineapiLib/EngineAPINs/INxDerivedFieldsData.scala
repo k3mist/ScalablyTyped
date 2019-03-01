@@ -27,3 +27,17 @@ trait INxDerivedFieldsData extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object INxDerivedFieldsData {
+  @scala.inline
+  def apply(
+    qDerivedDefinitionName: java.lang.String,
+    qFieldDefs: js.Array[INxDerivedField],
+    qGroupDefs: js.Array[INxDerivedGroup],
+    qTags: js.Array[java.lang.String]
+  ): INxDerivedFieldsData = {
+    val __obj = js.Dynamic.literal(qDerivedDefinitionName = qDerivedDefinitionName, qFieldDefs = qFieldDefs, qGroupDefs = qGroupDefs, qTags = qTags)
+  
+    __obj.asInstanceOf[INxDerivedFieldsData]
+  }
+}
+

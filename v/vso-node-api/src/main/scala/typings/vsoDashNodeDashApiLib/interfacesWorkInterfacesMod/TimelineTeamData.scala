@@ -64,3 +64,27 @@ trait TimelineTeamData extends js.Object {
   var workItemTypeColors: js.Array[WorkItemColor]
 }
 
+object TimelineTeamData {
+  @scala.inline
+  def apply(
+    backlog: BacklogLevel,
+    fieldReferenceNames: js.Array[java.lang.String],
+    id: java.lang.String,
+    isExpanded: scala.Boolean,
+    iterations: js.Array[TimelineTeamIteration],
+    name: java.lang.String,
+    orderByField: java.lang.String,
+    partiallyPagedFieldReferenceNames: js.Array[java.lang.String],
+    projectId: java.lang.String,
+    status: TimelineTeamStatus,
+    teamFieldDefaultValue: java.lang.String,
+    teamFieldName: java.lang.String,
+    teamFieldValues: js.Array[TeamFieldValue],
+    workItemTypeColors: js.Array[WorkItemColor]
+  ): TimelineTeamData = {
+    val __obj = js.Dynamic.literal(backlog = backlog, fieldReferenceNames = fieldReferenceNames, id = id, isExpanded = isExpanded, iterations = iterations, name = name, orderByField = orderByField, partiallyPagedFieldReferenceNames = partiallyPagedFieldReferenceNames, projectId = projectId, status = status, teamFieldDefaultValue = teamFieldDefaultValue, teamFieldName = teamFieldName, teamFieldValues = teamFieldValues, workItemTypeColors = workItemTypeColors)
+  
+    __obj.asInstanceOf[TimelineTeamData]
+  }
+}
+

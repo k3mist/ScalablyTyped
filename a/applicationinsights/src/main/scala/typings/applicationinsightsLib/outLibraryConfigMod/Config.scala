@@ -38,3 +38,30 @@ trait Config extends js.Object {
   var setCorrelationId: js.Any
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    _profileQueryEndpoint: js.Any,
+    correlationHeaderExcludedDomains: js.Array[java.lang.String],
+    correlationId: java.lang.String,
+    correlationIdRetryIntervalMs: scala.Double,
+    disableAppInsights: scala.Boolean,
+    endpointBase: js.Any,
+    endpointUrl: java.lang.String,
+    httpAgent: nodeLib.httpMod.Agent,
+    httpsAgent: nodeLib.httpsMod.Agent,
+    instrumentationKey: java.lang.String,
+    maxBatchIntervalMs: scala.Double,
+    maxBatchSize: scala.Double,
+    profileQueryEndpoint: java.lang.String,
+    proxyHttpUrl: java.lang.String,
+    proxyHttpsUrl: java.lang.String,
+    samplingPercentage: scala.Double,
+    setCorrelationId: js.Any
+  ): Config = {
+    val __obj = js.Dynamic.literal(_profileQueryEndpoint = _profileQueryEndpoint, correlationHeaderExcludedDomains = correlationHeaderExcludedDomains, correlationId = correlationId, correlationIdRetryIntervalMs = correlationIdRetryIntervalMs, disableAppInsights = disableAppInsights, endpointBase = endpointBase, endpointUrl = endpointUrl, httpAgent = httpAgent, httpsAgent = httpsAgent, instrumentationKey = instrumentationKey, maxBatchIntervalMs = maxBatchIntervalMs, maxBatchSize = maxBatchSize, profileQueryEndpoint = profileQueryEndpoint, proxyHttpUrl = proxyHttpUrl, proxyHttpsUrl = proxyHttpsUrl, samplingPercentage = samplingPercentage, setCorrelationId = setCorrelationId)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

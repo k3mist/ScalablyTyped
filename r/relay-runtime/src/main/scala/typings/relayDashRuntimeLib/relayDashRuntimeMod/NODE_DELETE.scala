@@ -13,3 +13,20 @@ trait NODE_DELETE extends RelayMutationConfig {
   var `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.NODE_DELETE
 }
 
+object NODE_DELETE {
+  @scala.inline
+  def apply(
+    deletedIDFieldName: java.lang.String,
+    `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.NODE_DELETE,
+    connectionName: java.lang.String = null,
+    parentID: java.lang.String = null,
+    parentName: java.lang.String = null
+  ): NODE_DELETE = {
+    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName, `type` = `type`)
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
+    if (parentID != null) __obj.updateDynamic("parentID")(parentID)
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    __obj.asInstanceOf[NODE_DELETE]
+  }
+}
+

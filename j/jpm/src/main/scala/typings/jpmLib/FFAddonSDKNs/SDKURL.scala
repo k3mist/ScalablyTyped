@@ -21,3 +21,27 @@ trait SDKURL extends js.Object {
   def toJSON(): java.lang.String
 }
 
+object SDKURL {
+  @scala.inline
+  def apply(
+    hash: java.lang.String,
+    host: java.lang.String,
+    hostname: java.lang.String,
+    href: java.lang.String,
+    origin: java.lang.String,
+    path: java.lang.String,
+    pathname: java.lang.String,
+    port: java.lang.String,
+    protocol: java.lang.String,
+    scheme: java.lang.String,
+    search: java.lang.String,
+    toJSON: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    userPass: java.lang.String
+  ): SDKURL = {
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, path = path, pathname = pathname, port = port, protocol = protocol, scheme = scheme, search = search, toJSON = toJSON, toString = toString, userPass = userPass)
+  
+    __obj.asInstanceOf[SDKURL]
+  }
+}
+

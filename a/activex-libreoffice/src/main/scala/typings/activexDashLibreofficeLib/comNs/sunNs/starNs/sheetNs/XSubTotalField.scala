@@ -26,3 +26,22 @@ trait XSubTotalField
   def setSubTotalColumns(aSubTotalColumns: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn]): scala.Unit
 }
 
+object XSubTotalField {
+  @scala.inline
+  def apply(
+    GroupColumn: scala.Double,
+    SubTotalColumns: activexDashInteropLib.SafeArray[SubTotalColumn],
+    acquire: js.Function0[scala.Unit],
+    getGroupColumn: js.Function0[scala.Double],
+    getSubTotalColumns: js.Function0[activexDashInteropLib.SafeArray[SubTotalColumn]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setGroupColumn: js.Function1[scala.Double, scala.Unit],
+    setSubTotalColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn], scala.Unit]
+  ): XSubTotalField = {
+    val __obj = js.Dynamic.literal(GroupColumn = GroupColumn, SubTotalColumns = SubTotalColumns, acquire = acquire, getGroupColumn = getGroupColumn, getSubTotalColumns = getSubTotalColumns, queryInterface = queryInterface, release = release, setGroupColumn = setGroupColumn, setSubTotalColumns = setSubTotalColumns)
+  
+    __obj.asInstanceOf[XSubTotalField]
+  }
+}
+

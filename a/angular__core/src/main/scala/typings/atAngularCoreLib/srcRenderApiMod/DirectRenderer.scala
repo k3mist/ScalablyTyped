@@ -13,3 +13,18 @@ trait DirectRenderer extends js.Object {
   def remove(node: js.Any): scala.Unit
 }
 
+object DirectRenderer {
+  @scala.inline
+  def apply(
+    appendChild: js.Function2[js.Any, js.Any, scala.Unit],
+    insertBefore: js.Function2[js.Any, js.Any, scala.Unit],
+    nextSibling: js.Function1[js.Any, js.Any],
+    parentElement: js.Function1[js.Any, js.Any],
+    remove: js.Function1[js.Any, scala.Unit]
+  ): DirectRenderer = {
+    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, nextSibling = nextSibling, parentElement = parentElement, remove = remove)
+  
+    __obj.asInstanceOf[DirectRenderer]
+  }
+}
+

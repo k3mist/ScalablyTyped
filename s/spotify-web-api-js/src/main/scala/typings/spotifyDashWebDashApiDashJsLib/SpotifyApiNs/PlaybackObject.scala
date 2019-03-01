@@ -10,3 +10,12 @@ trait PlaybackObject extends js.Object {
   var shuffle_state: scala.Boolean
 }
 
+object PlaybackObject {
+  @scala.inline
+  def apply(repeat_state: PlaybackRepeatState, shuffle_state: scala.Boolean): PlaybackObject = {
+    val __obj = js.Dynamic.literal(repeat_state = repeat_state, shuffle_state = shuffle_state)
+  
+    __obj.asInstanceOf[PlaybackObject]
+  }
+}
+

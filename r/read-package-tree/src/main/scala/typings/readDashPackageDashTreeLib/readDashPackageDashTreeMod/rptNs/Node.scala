@@ -17,3 +17,23 @@ trait Node extends js.Object {
   var realpath: java.lang.String
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    children: js.Array[Node],
+    id: scala.Double,
+    isLink: scala.Boolean,
+    name: java.lang.String,
+    `package`: js.Any,
+    path: java.lang.String,
+    realpath: java.lang.String,
+    error: stdLib.Error = null,
+    parent: Node = null
+  ): Node = {
+    val __obj = js.Dynamic.literal(children = children, id = id, isLink = isLink, name = name, `package` = `package`, path = path, realpath = realpath)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Node]
+  }
+}
+

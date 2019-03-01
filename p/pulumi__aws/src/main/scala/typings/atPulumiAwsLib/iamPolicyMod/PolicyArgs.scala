@@ -29,3 +29,21 @@ trait PolicyArgs extends js.Object {
   val policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object PolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PolicyArgs = {
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyArgs]
+  }
+}
+

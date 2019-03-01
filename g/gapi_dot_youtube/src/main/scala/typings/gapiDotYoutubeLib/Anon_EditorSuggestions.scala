@@ -28,3 +28,18 @@ trait Anon_EditorSuggestions extends js.Object {
   var tagSuggestions: js.Array[Anon_CategoryRestricts]
 }
 
+object Anon_EditorSuggestions {
+  @scala.inline
+  def apply(
+    editorSuggestions: js.Array[java.lang.String],
+    processingErrors: js.Array[java.lang.String],
+    processingHints: js.Array[java.lang.String],
+    processingWarnings: js.Array[java.lang.String],
+    tagSuggestions: js.Array[Anon_CategoryRestricts]
+  ): Anon_EditorSuggestions = {
+    val __obj = js.Dynamic.literal(editorSuggestions = editorSuggestions, processingErrors = processingErrors, processingHints = processingHints, processingWarnings = processingWarnings, tagSuggestions = tagSuggestions)
+  
+    __obj.asInstanceOf[Anon_EditorSuggestions]
+  }
+}
+

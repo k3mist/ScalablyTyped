@@ -15,3 +15,17 @@ trait Ratio
   var type_Ratio: cssDashTreeLib.cssDashTreeLibStrings.Ratio
 }
 
+object Ratio {
+  @scala.inline
+  def apply(
+    left: java.lang.String,
+    right: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Ratio,
+    loc: CssLocation = null
+  ): Ratio = {
+    val __obj = js.Dynamic.literal(left = left, right = right, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Ratio]
+  }
+}
+

@@ -15,3 +15,19 @@ trait ObjectTypeDefinition
   var name: Name
 }
 
+object ObjectTypeDefinition {
+  @scala.inline
+  def apply(
+    fields: js.Array[FieldDefinition],
+    kind: java.lang.String,
+    name: Name,
+    interfaces: js.Array[NamedType] = null,
+    loc: Location = null
+  ): ObjectTypeDefinition = {
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name)
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ObjectTypeDefinition]
+  }
+}
+

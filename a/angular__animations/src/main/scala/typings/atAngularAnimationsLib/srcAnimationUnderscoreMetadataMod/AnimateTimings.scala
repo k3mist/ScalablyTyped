@@ -28,3 +28,12 @@ trait AnimateTimings extends js.Object {
   var easing: java.lang.String | scala.Null
 }
 
+object AnimateTimings {
+  @scala.inline
+  def apply(delay: scala.Double, duration: scala.Double, easing: java.lang.String = null): AnimateTimings = {
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    __obj.asInstanceOf[AnimateTimings]
+  }
+}
+

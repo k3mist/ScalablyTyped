@@ -77,3 +77,23 @@ trait RedlinePortion extends TextPortion {
   var RedlineType: java.lang.String
 }
 
+object RedlinePortion {
+  @scala.inline
+  def apply(
+    IsInHeaderFooter: scala.Boolean,
+    MergeLastPara: scala.Boolean,
+    RedlineAuthor: java.lang.String,
+    RedlineComment: java.lang.String,
+    RedlineDateTime: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    RedlineIdentifier: java.lang.String,
+    RedlineSuccessorData: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    RedlineText: XText,
+    RedlineType: java.lang.String,
+    TextPortion: TextPortion = null
+  ): RedlinePortion = {
+    val __obj = js.Dynamic.literal(IsInHeaderFooter = IsInHeaderFooter, MergeLastPara = MergeLastPara, RedlineAuthor = RedlineAuthor, RedlineComment = RedlineComment, RedlineDateTime = RedlineDateTime, RedlineIdentifier = RedlineIdentifier, RedlineSuccessorData = RedlineSuccessorData.asInstanceOf[js.Any], RedlineText = RedlineText, RedlineType = RedlineType)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, TextPortion)
+    __obj.asInstanceOf[RedlinePortion]
+  }
+}
+

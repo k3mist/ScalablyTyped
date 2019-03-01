@@ -36,3 +36,18 @@ trait ASPxClientGridViewColumn extends ASPxClientGridColumnBase {
   var visible: scala.Boolean
 }
 
+object ASPxClientGridViewColumn {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String,
+    id: java.lang.String,
+    index: scala.Double,
+    name: java.lang.String,
+    visible: scala.Boolean
+  ): ASPxClientGridViewColumn = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName, id = id, index = index, name = name, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientGridViewColumn]
+  }
+}
+

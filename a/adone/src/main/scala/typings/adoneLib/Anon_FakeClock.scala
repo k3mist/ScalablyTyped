@@ -10,3 +10,15 @@ trait Anon_FakeClock extends js.Object {
   val fakeClockNs: js.Any
 }
 
+object Anon_FakeClock {
+  @scala.inline
+  def apply(
+    Sorter: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.utilNs.INs.Sorter],
+    fakeClockNs: js.Any
+  ): Anon_FakeClock = {
+    val __obj = js.Dynamic.literal(Sorter = Sorter, fakeClockNs = fakeClockNs)
+  
+    __obj.asInstanceOf[Anon_FakeClock]
+  }
+}
+

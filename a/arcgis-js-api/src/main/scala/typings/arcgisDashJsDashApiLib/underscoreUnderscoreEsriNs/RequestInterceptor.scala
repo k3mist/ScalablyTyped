@@ -45,3 +45,27 @@ trait RequestInterceptor
   var urls: js.UndefOr[java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])] = js.undefined
 }
 
+object RequestInterceptor {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    after: AfterInterceptorCallback = null,
+    before: BeforeInterceptorCallback = null,
+    headers: js.Any = null,
+    query: js.Any = null,
+    responseData: js.Any = null,
+    urls: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
+  ): RequestInterceptor = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (responseData != null) __obj.updateDynamic("responseData")(responseData)
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestInterceptor]
+  }
+}
+

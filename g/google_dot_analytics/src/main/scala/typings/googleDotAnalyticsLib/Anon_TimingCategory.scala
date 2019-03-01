@@ -11,3 +11,12 @@ trait Anon_TimingCategory extends js.Object {
   var timingVar: java.lang.String
 }
 
+object Anon_TimingCategory {
+  @scala.inline
+  def apply(timingCategory: java.lang.String, timingValue: scala.Double, timingVar: java.lang.String): Anon_TimingCategory = {
+    val __obj = js.Dynamic.literal(timingCategory = timingCategory, timingValue = timingValue, timingVar = timingVar)
+  
+    __obj.asInstanceOf[Anon_TimingCategory]
+  }
+}
+

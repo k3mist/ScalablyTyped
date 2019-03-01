@@ -16,3 +16,21 @@ trait RenderContext[Props] extends js.Object {
   def slots(): js.Any
 }
 
+object RenderContext {
+  @scala.inline
+  def apply[Props](
+    children: js.Array[vueLib.typesVnodeMod.VNode],
+    data: vueLib.typesVnodeMod.VNodeData,
+    injections: js.Any,
+    listeners: org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]],
+    parent: vueLib.typesVueMod.Vue,
+    props: Props,
+    scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.ScopedSlot],
+    slots: js.Function0[js.Any]
+  ): RenderContext[Props] = {
+    val __obj = js.Dynamic.literal(children = children, data = data, injections = injections, listeners = listeners, parent = parent, props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots, slots = slots)
+  
+    __obj.asInstanceOf[RenderContext[Props]]
+  }
+}
+

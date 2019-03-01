@@ -17,3 +17,16 @@ trait Anon_IncognitoSpecific extends js.Object {
   var value: js.Any
 }
 
+object Anon_IncognitoSpecific {
+  @scala.inline
+  def apply(
+    levelOfControl: firefoxDashWebextDashBrowserLib.browserNs.typesNs.LevelOfControl,
+    value: js.Any,
+    incognitoSpecific: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_IncognitoSpecific = {
+    val __obj = js.Dynamic.literal(levelOfControl = levelOfControl, value = value)
+    if (!js.isUndefined(incognitoSpecific)) __obj.updateDynamic("incognitoSpecific")(incognitoSpecific)
+    __obj.asInstanceOf[Anon_IncognitoSpecific]
+  }
+}
+

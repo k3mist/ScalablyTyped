@@ -16,3 +16,15 @@ trait VpnGatewayRoutePropagationArgs extends js.Object {
   val vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpnGatewayRoutePropagationArgs {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): VpnGatewayRoutePropagationArgs = {
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VpnGatewayRoutePropagationArgs]
+  }
+}
+

@@ -52,3 +52,37 @@ trait XDateField
   def setStrictFormat(bStrict: scala.Boolean): scala.Unit
 }
 
+object XDateField {
+  @scala.inline
+  def apply(
+    Date: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    First: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Last: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Max: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Min: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    acquire: js.Function0[scala.Unit],
+    getDate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getFirst: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getLast: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getMax: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getMin: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    isEmpty: js.Function0[scala.Boolean],
+    isLongFormat: js.Function0[scala.Boolean],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setEmpty: js.Function0[scala.Unit],
+    setFirst: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setLast: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setLongFormat: js.Function1[scala.Boolean, scala.Unit],
+    setMax: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setMin: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit]
+  ): XDateField = {
+    val __obj = js.Dynamic.literal(Date = Date, First = First, Last = Last, Max = Max, Min = Min, acquire = acquire, getDate = getDate, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, isEmpty = isEmpty, isLongFormat = isLongFormat, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDate = setDate, setEmpty = setEmpty, setFirst = setFirst, setLast = setLast, setLongFormat = setLongFormat, setMax = setMax, setMin = setMin, setStrictFormat = setStrictFormat)
+  
+    __obj.asInstanceOf[XDateField]
+  }
+}
+

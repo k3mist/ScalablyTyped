@@ -40,3 +40,21 @@ trait PredominanceSchemeForPoint
   var sizeScheme: SizeSchemeForPoint
 }
 
+object PredominanceSchemeForPoint {
+  @scala.inline
+  def apply(
+    colors: js.Array[Color],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    noDataColor: Color,
+    opacity: scala.Double,
+    outline: PredominanceSchemeForPointOutline,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sizeScheme: SizeSchemeForPoint
+  ): PredominanceSchemeForPoint = {
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme)
+  
+    __obj.asInstanceOf[PredominanceSchemeForPoint]
+  }
+}
+

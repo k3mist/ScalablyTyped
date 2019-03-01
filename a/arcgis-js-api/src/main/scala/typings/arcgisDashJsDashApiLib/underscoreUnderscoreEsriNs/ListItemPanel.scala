@@ -56,3 +56,20 @@ trait ListItemPanel extends js.Object {
   var visible: scala.Boolean
 }
 
+object ListItemPanel {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    content: Widget | stdLib.HTMLElement | java.lang.String | js.Array[_],
+    image: java.lang.String,
+    listItem: ListItem,
+    open: scala.Boolean,
+    title: java.lang.String,
+    visible: scala.Boolean
+  ): ListItemPanel = {
+    val __obj = js.Dynamic.literal(className = className, content = content.asInstanceOf[js.Any], image = image, listItem = listItem, open = open, title = title, visible = visible)
+  
+    __obj.asInstanceOf[ListItemPanel]
+  }
+}
+

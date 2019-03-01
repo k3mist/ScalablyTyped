@@ -52,3 +52,91 @@ trait EmbeddedScatterChartBuilder extends js.Object {
   def setYAxisTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
 }
 
+object EmbeddedScatterChartBuilder {
+  @scala.inline
+  def apply(
+    addRange: js.Function1[Range, EmbeddedChartBuilder],
+    asAreaChart: js.Function0[EmbeddedAreaChartBuilder],
+    asBarChart: js.Function0[EmbeddedBarChartBuilder],
+    asColumnChart: js.Function0[EmbeddedColumnChartBuilder],
+    asComboChart: js.Function0[EmbeddedComboChartBuilder],
+    asHistogramChart: js.Function0[EmbeddedHistogramChartBuilder],
+    asLineChart: js.Function0[EmbeddedLineChartBuilder],
+    asPieChart: js.Function0[EmbeddedPieChartBuilder],
+    asScatterChart: js.Function0[EmbeddedScatterChartBuilder],
+    asTableChart: js.Function0[EmbeddedTableChartBuilder],
+    build: js.Function0[EmbeddedChart],
+    getChartType: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType],
+    getContainer: js.Function0[ContainerInfo],
+    getRanges: js.Function0[js.Array[Range]],
+    removeRange: js.Function1[Range, EmbeddedChartBuilder],
+    setBackgroundColor: js.Function1[java.lang.String, EmbeddedScatterChartBuilder],
+    setChartType: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType, 
+      EmbeddedChartBuilder
+    ],
+    setColors: js.Function1[js.Array[java.lang.String], EmbeddedScatterChartBuilder],
+    setHiddenDimensionStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setLegendPosition: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position, 
+      EmbeddedScatterChartBuilder
+    ],
+    setLegendTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setMergeStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setNumHeaders: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, EmbeddedChartBuilder],
+    setOption: js.Function2[java.lang.String, js.Object, EmbeddedChartBuilder],
+    setPointStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setPosition: js.Function4[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      EmbeddedChartBuilder
+    ],
+    setTitle: js.Function1[java.lang.String, EmbeddedScatterChartBuilder],
+    setTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder],
+    setXAxisLogScale: js.Function0[EmbeddedScatterChartBuilder],
+    setXAxisRange: js.Function2[stdLib.Number, stdLib.Number, EmbeddedScatterChartBuilder],
+    setXAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setXAxisTitle: js.Function1[java.lang.String, EmbeddedScatterChartBuilder],
+    setXAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setYAxisLogScale: js.Function0[EmbeddedScatterChartBuilder],
+    setYAxisRange: js.Function2[stdLib.Number, stdLib.Number, EmbeddedScatterChartBuilder],
+    setYAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ],
+    setYAxisTitle: js.Function1[java.lang.String, EmbeddedScatterChartBuilder],
+    setYAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedScatterChartBuilder
+    ]
+  ): EmbeddedScatterChartBuilder = {
+    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, setBackgroundColor = setBackgroundColor, setChartType = setChartType, setColors = setColors, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setLegendPosition = setLegendPosition, setLegendTextStyle = setLegendTextStyle, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPointStyle = setPointStyle, setPosition = setPosition, setTitle = setTitle, setTitleTextStyle = setTitleTextStyle, setTransposeRowsAndColumns = setTransposeRowsAndColumns, setXAxisLogScale = setXAxisLogScale, setXAxisRange = setXAxisRange, setXAxisTextStyle = setXAxisTextStyle, setXAxisTitle = setXAxisTitle, setXAxisTitleTextStyle = setXAxisTitleTextStyle, setYAxisLogScale = setYAxisLogScale, setYAxisRange = setYAxisRange, setYAxisTextStyle = setYAxisTextStyle, setYAxisTitle = setYAxisTitle, setYAxisTitleTextStyle = setYAxisTitleTextStyle)
+  
+    __obj.asInstanceOf[EmbeddedScatterChartBuilder]
+  }
+}
+

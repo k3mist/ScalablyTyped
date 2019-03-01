@@ -28,3 +28,12 @@ trait ShapeMouseEnterEventArgs extends js.Object {
   var shapeName: java.lang.String
 }
 
+object ShapeMouseEnterEventArgs {
+  @scala.inline
+  def apply(pageName: java.lang.String, shapeName: java.lang.String): ShapeMouseEnterEventArgs = {
+    val __obj = js.Dynamic.literal(pageName = pageName, shapeName = shapeName)
+  
+    __obj.asInstanceOf[ShapeMouseEnterEventArgs]
+  }
+}
+

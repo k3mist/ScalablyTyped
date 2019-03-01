@@ -14,3 +14,19 @@ trait Client extends js.Object {
   def fetchNextPage[T /* <: GraphModel */](nextArray: js.Array[T]): js.Array[T]
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    checkout: CheckoutResource,
+    collection: CollectionResource,
+    fetchNextPage: js.Function1[js.Array[js.Any], js.Array[js.Any]],
+    image: Image,
+    product: ProductResource,
+    shop: ShopResource
+  ): Client = {
+    val __obj = js.Dynamic.literal(checkout = checkout, collection = collection, fetchNextPage = fetchNextPage, image = image, product = product, shop = shop)
+  
+    __obj.asInstanceOf[Client]
+  }
+}
+

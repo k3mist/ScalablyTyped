@@ -50,3 +50,33 @@ trait OptionalProps extends js.Object {
   def onMouseUp[T](event: ViewerMouseEvent[T]): scala.Unit
 }
 
+object OptionalProps {
+  @scala.inline
+  def apply(
+    SVGBackground: java.lang.String,
+    background: java.lang.String,
+    className: java.lang.String,
+    customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_],
+    detectAutoPan: scala.Boolean,
+    detectWheel: scala.Boolean,
+    modifierKeys: js.Array[java.lang.String],
+    onChangeTool: js.Function1[Tool, scala.Unit],
+    onChangeValue: js.Function1[Value, scala.Unit],
+    onClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onDoubleClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseDown: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseMove: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseUp: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    preventPanOutside: scala.Boolean,
+    scaleFactor: scala.Double,
+    style: js.Object,
+    tool: Tool,
+    toolbarPosition: ToolbarPosition,
+    value: Value = null
+  ): OptionalProps = {
+    val __obj = js.Dynamic.literal(SVGBackground = SVGBackground, background = background, className = className, customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan, detectWheel = detectWheel, modifierKeys = modifierKeys, onChangeTool = onChangeTool, onChangeValue = onChangeValue, onClick = onClick, onDoubleClick = onDoubleClick, onMouseDown = onMouseDown, onMouseMove = onMouseMove, onMouseUp = onMouseUp, preventPanOutside = preventPanOutside, scaleFactor = scaleFactor, style = style, tool = tool, toolbarPosition = toolbarPosition)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OptionalProps]
+  }
+}
+

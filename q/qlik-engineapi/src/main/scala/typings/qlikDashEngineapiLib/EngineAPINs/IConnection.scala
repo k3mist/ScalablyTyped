@@ -76,3 +76,23 @@ trait IConnection extends js.Object {
   var qUserName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IConnection {
+  @scala.inline
+  def apply(
+    qConnectionString: java.lang.String,
+    qId: java.lang.String,
+    qLogOn: LogonType,
+    qMeta: INxMeta,
+    qModifiedDate: java.lang.String,
+    qName: java.lang.String,
+    qType: java.lang.String,
+    qPassword: java.lang.String = null,
+    qUserName: java.lang.String = null
+  ): IConnection = {
+    val __obj = js.Dynamic.literal(qConnectionString = qConnectionString, qId = qId, qLogOn = qLogOn, qMeta = qMeta, qModifiedDate = qModifiedDate, qName = qName, qType = qType)
+    if (qPassword != null) __obj.updateDynamic("qPassword")(qPassword)
+    if (qUserName != null) __obj.updateDynamic("qUserName")(qUserName)
+    __obj.asInstanceOf[IConnection]
+  }
+}
+

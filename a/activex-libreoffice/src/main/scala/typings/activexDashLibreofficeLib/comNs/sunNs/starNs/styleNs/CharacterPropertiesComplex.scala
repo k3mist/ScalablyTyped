@@ -41,3 +41,22 @@ trait CharacterPropertiesComplex extends js.Object {
   var CharWeightComplex: scala.Double
 }
 
+object CharacterPropertiesComplex {
+  @scala.inline
+  def apply(
+    CharFontCharSetComplex: scala.Double,
+    CharFontFamilyComplex: scala.Double,
+    CharFontNameComplex: java.lang.String,
+    CharFontPitchComplex: scala.Double,
+    CharFontStyleNameComplex: java.lang.String,
+    CharHeightComplex: scala.Double,
+    CharLocaleComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharPostureComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharWeightComplex: scala.Double
+  ): CharacterPropertiesComplex = {
+    val __obj = js.Dynamic.literal(CharFontCharSetComplex = CharFontCharSetComplex, CharFontFamilyComplex = CharFontFamilyComplex, CharFontNameComplex = CharFontNameComplex, CharFontPitchComplex = CharFontPitchComplex, CharFontStyleNameComplex = CharFontStyleNameComplex, CharHeightComplex = CharHeightComplex, CharLocaleComplex = CharLocaleComplex, CharPostureComplex = CharPostureComplex, CharWeightComplex = CharWeightComplex)
+  
+    __obj.asInstanceOf[CharacterPropertiesComplex]
+  }
+}
+

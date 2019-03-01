@@ -10,3 +10,12 @@ trait ExtensionDraftPatch extends js.Object {
   var operation: DraftPatchOperation
 }
 
+object ExtensionDraftPatch {
+  @scala.inline
+  def apply(extensionData: UnpackagedExtensionData, operation: DraftPatchOperation): ExtensionDraftPatch = {
+    val __obj = js.Dynamic.literal(extensionData = extensionData, operation = operation)
+  
+    __obj.asInstanceOf[ExtensionDraftPatch]
+  }
+}
+

@@ -40,3 +40,21 @@ trait RelationshipSchemeForPolyline
   var width: scala.Double
 }
 
+object RelationshipSchemeForPolyline {
+  @scala.inline
+  def apply(
+    colorsForClassBreaks: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: java.lang.String,
+    noDataColor: Color,
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    width: scala.Double
+  ): RelationshipSchemeForPolyline = {
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
+    __obj.asInstanceOf[RelationshipSchemeForPolyline]
+  }
+}
+

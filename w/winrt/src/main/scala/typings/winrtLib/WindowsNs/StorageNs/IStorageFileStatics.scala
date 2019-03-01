@@ -30,3 +30,42 @@ trait IStorageFileStatics extends js.Object {
   ): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
 }
 
+object IStorageFileStatics {
+  @scala.inline
+  def apply(
+    createStreamedFileAsync: js.Function3[
+      java.lang.String, 
+      StreamedFileDataRequestedHandler, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
+    ],
+    createStreamedFileFromUriAsync: js.Function3[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
+    ],
+    getFileFromApplicationUriAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
+    ],
+    getFileFromPathAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]],
+    replaceWithStreamedFileAsync: js.Function3[
+      IStorageFile, 
+      StreamedFileDataRequestedHandler, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
+    ],
+    replaceWithStreamedFileFromUriAsync: js.Function3[
+      IStorageFile, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
+    ]
+  ): IStorageFileStatics = {
+    val __obj = js.Dynamic.literal(createStreamedFileAsync = createStreamedFileAsync, createStreamedFileFromUriAsync = createStreamedFileFromUriAsync, getFileFromApplicationUriAsync = getFileFromApplicationUriAsync, getFileFromPathAsync = getFileFromPathAsync, replaceWithStreamedFileAsync = replaceWithStreamedFileAsync, replaceWithStreamedFileFromUriAsync = replaceWithStreamedFileFromUriAsync)
+  
+    __obj.asInstanceOf[IStorageFileStatics]
+  }
+}
+

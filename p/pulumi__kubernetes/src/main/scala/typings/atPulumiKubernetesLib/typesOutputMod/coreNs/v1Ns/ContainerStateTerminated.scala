@@ -39,3 +39,20 @@ trait ContainerStateTerminated extends js.Object {
   val startedAt: java.lang.String
 }
 
+object ContainerStateTerminated {
+  @scala.inline
+  def apply(
+    containerID: java.lang.String,
+    exitCode: scala.Double,
+    finishedAt: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    signal: scala.Double,
+    startedAt: java.lang.String
+  ): ContainerStateTerminated = {
+    val __obj = js.Dynamic.literal(containerID = containerID, exitCode = exitCode, finishedAt = finishedAt, message = message, reason = reason, signal = signal, startedAt = startedAt)
+  
+    __obj.asInstanceOf[ContainerStateTerminated]
+  }
+}
+

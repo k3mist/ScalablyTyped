@@ -19,3 +19,25 @@ trait XUIObject extends js.Object {
   def getType(): java.lang.String
 }
 
+object XUIObject {
+  @scala.inline
+  def apply(
+    Children: activexDashInteropLib.SafeArray[java.lang.String],
+    State: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    Type: java.lang.String,
+    executeAction: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      scala.Unit
+    ],
+    getChild: js.Function1[java.lang.String, XUIObject],
+    getChildren: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getState: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
+    getType: js.Function0[java.lang.String]
+  ): XUIObject = {
+    val __obj = js.Dynamic.literal(Children = Children, State = State.asInstanceOf[js.Any], Type = Type, executeAction = executeAction, getChild = getChild, getChildren = getChildren, getState = getState, getType = getType)
+  
+    __obj.asInstanceOf[XUIObject]
+  }
+}
+

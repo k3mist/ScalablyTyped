@@ -11,3 +11,12 @@ trait AccessControlObject extends js.Object {
   var role: java.lang.String
 }
 
+object AccessControlObject {
+  @scala.inline
+  def apply(entity: java.lang.String, projectTeam: java.lang.String, role: java.lang.String): AccessControlObject = {
+    val __obj = js.Dynamic.literal(entity = entity, projectTeam = projectTeam, role = role)
+  
+    __obj.asInstanceOf[AccessControlObject]
+  }
+}
+

@@ -11,3 +11,12 @@ trait IPanel extends js.Object {
   var transparent: scala.Boolean
 }
 
+object IPanel {
+  @scala.inline
+  def apply(format: IFormat, margins: IMargins, transparent: scala.Boolean): IPanel = {
+    val __obj = js.Dynamic.literal(format = format, margins = margins, transparent = transparent)
+  
+    __obj.asInstanceOf[IPanel]
+  }
+}
+

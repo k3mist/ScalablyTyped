@@ -10,3 +10,12 @@ trait EqualsKind extends js.Object {
   var isStrict: scala.Boolean
 }
 
+object EqualsKind {
+  @scala.inline
+  def apply(isPositive: scala.Boolean, isStrict: scala.Boolean): EqualsKind = {
+    val __obj = js.Dynamic.literal(isPositive = isPositive, isStrict = isStrict)
+  
+    __obj.asInstanceOf[EqualsKind]
+  }
+}
+

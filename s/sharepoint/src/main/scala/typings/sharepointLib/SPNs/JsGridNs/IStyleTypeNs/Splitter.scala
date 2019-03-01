@@ -13,3 +13,17 @@ trait Splitter
   var outerBorderColor: js.Any
 }
 
+object Splitter {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any,
+    innerBorderColor: js.Any,
+    leftInnerBorderColor: js.Any,
+    outerBorderColor: js.Any
+  ): Splitter = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, innerBorderColor = innerBorderColor, leftInnerBorderColor = leftInnerBorderColor, outerBorderColor = outerBorderColor)
+  
+    __obj.asInstanceOf[Splitter]
+  }
+}
+

@@ -11,3 +11,12 @@ trait RGBColor extends js.Object {
   var Red: ColorComponent
 }
 
+object RGBColor {
+  @scala.inline
+  def apply(Blue: ColorComponent, Green: ColorComponent, Red: ColorComponent): RGBColor = {
+    val __obj = js.Dynamic.literal(Blue = Blue, Green = Green, Red = Red)
+  
+    __obj.asInstanceOf[RGBColor]
+  }
+}
+

@@ -16,3 +16,12 @@ trait ASPxClientGridViewRowClickEventArgs extends ASPxClientGridViewRowCancelEve
   var htmlEvent: js.Object
 }
 
+object ASPxClientGridViewRowClickEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Object, visibleIndex: scala.Double): ASPxClientGridViewRowClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientGridViewRowClickEventArgs]
+  }
+}
+

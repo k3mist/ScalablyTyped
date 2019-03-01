@@ -24,3 +24,29 @@ trait ImageInspectInfo extends js.Object {
   var VirtualSize: scala.Double
 }
 
+object ImageInspectInfo {
+  @scala.inline
+  def apply(
+    Architecture: java.lang.String,
+    Author: java.lang.String,
+    Comment: java.lang.String,
+    Config: dockerodeLib.Anon_ArgsEscapedAttachStderr,
+    Container: java.lang.String,
+    ContainerConfig: dockerodeLib.Anon_ArgsEscaped,
+    Created: java.lang.String,
+    DockerVersion: java.lang.String,
+    GraphDriver: dockerodeLib.Anon_Data,
+    Id: java.lang.String,
+    Os: java.lang.String,
+    Parent: java.lang.String,
+    RepoDigests: js.Array[java.lang.String],
+    RepoTags: js.Array[java.lang.String],
+    Size: scala.Double,
+    VirtualSize: scala.Double
+  ): ImageInspectInfo = {
+    val __obj = js.Dynamic.literal(Architecture = Architecture, Author = Author, Comment = Comment, Config = Config, Container = Container, ContainerConfig = ContainerConfig, Created = Created, DockerVersion = DockerVersion, GraphDriver = GraphDriver, Id = Id, Os = Os, Parent = Parent, RepoDigests = RepoDigests, RepoTags = RepoTags, Size = Size, VirtualSize = VirtualSize)
+  
+    __obj.asInstanceOf[ImageInspectInfo]
+  }
+}
+

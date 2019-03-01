@@ -12,3 +12,16 @@ trait Anon_Label
   var `type`: trezorDashConnectLib.trezorDashConnectLibStrings.unacquired
 }
 
+object Anon_Label {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    path: java.lang.String,
+    `type`: trezorDashConnectLib.trezorDashConnectLibStrings.unacquired
+  ): Anon_Label = {
+    val __obj = js.Dynamic.literal(label = label, path = path, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Label]
+  }
+}
+

@@ -14,3 +14,19 @@ trait Anon_Duplex extends js.Object {
   var Writable: nodeLib.streamMod.Writable
 }
 
+object Anon_Duplex {
+  @scala.inline
+  def apply(
+    Duplex: nodeLib.streamMod.Duplex,
+    PassThrough: nodeLib.streamMod.PassThrough,
+    Readable: nodeLib.streamMod.Readable,
+    Stream: nodeLib.streamMod.namespaced,
+    Transform: nodeLib.streamMod.Transform,
+    Writable: nodeLib.streamMod.Writable
+  ): Anon_Duplex = {
+    val __obj = js.Dynamic.literal(Duplex = Duplex, PassThrough = PassThrough, Readable = Readable, Stream = Stream, Transform = Transform, Writable = Writable)
+  
+    __obj.asInstanceOf[Anon_Duplex]
+  }
+}
+

@@ -12,3 +12,17 @@ trait SummaryMailSection extends js.Object {
   var title: java.lang.String
 }
 
+object SummaryMailSection {
+  @scala.inline
+  def apply(
+    htmlContent: java.lang.String,
+    rank: scala.Double,
+    sectionType: MailSectionType,
+    title: java.lang.String
+  ): SummaryMailSection = {
+    val __obj = js.Dynamic.literal(htmlContent = htmlContent, rank = rank, sectionType = sectionType, title = title)
+  
+    __obj.asInstanceOf[SummaryMailSection]
+  }
+}
+

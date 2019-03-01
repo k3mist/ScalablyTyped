@@ -12,3 +12,12 @@ trait Response extends BasicResponse {
   var rev: RevisionId
 }
 
+object Response {
+  @scala.inline
+  def apply(id: DocumentId, ok: scala.Boolean, rev: RevisionId): Response = {
+    val __obj = js.Dynamic.literal(id = id, ok = ok, rev = rev)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

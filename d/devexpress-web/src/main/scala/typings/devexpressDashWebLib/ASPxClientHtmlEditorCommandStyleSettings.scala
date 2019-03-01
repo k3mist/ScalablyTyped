@@ -76,3 +76,26 @@ trait ASPxClientHtmlEditorCommandStyleSettings extends js.Object {
   var width: java.lang.String
 }
 
+object ASPxClientHtmlEditorCommandStyleSettings {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    borderColor: java.lang.String,
+    borderStyle: java.lang.String,
+    borderWidth: java.lang.String,
+    className: java.lang.String,
+    height: java.lang.String,
+    marginBottom: java.lang.String,
+    marginLeft: java.lang.String,
+    marginRight: java.lang.String,
+    marginTop: java.lang.String,
+    textAlign: java.lang.String,
+    verticalAlign: java.lang.String,
+    width: java.lang.String
+  ): ASPxClientHtmlEditorCommandStyleSettings = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderStyle = borderStyle, borderWidth = borderWidth, className = className, height = height, marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, textAlign = textAlign, verticalAlign = verticalAlign, width = width)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandStyleSettings]
+  }
+}
+

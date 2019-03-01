@@ -80,3 +80,28 @@ trait ASPxClientTab extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientTab {
+  @scala.inline
+  def apply(
+    GetActiveImageUrl: js.Function0[java.lang.String],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetActiveImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    tabControl: ASPxClientTabControlBase
+  ): ASPxClientTab = {
+    val __obj = js.Dynamic.literal(GetActiveImageUrl = GetActiveImageUrl, GetEnabled = GetEnabled, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetActiveImageUrl = SetActiveImageUrl, SetEnabled = SetEnabled, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, tabControl = tabControl)
+  
+    __obj.asInstanceOf[ASPxClientTab]
+  }
+}
+

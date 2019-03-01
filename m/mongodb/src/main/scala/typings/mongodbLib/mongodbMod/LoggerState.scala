@@ -13,3 +13,18 @@ trait LoggerState extends js.Object {
   var `type`: java.lang.String
 }
 
+object LoggerState {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    date: scala.Double,
+    message: java.lang.String,
+    pid: scala.Double,
+    `type`: java.lang.String
+  ): LoggerState = {
+    val __obj = js.Dynamic.literal(className = className, date = date, message = message, pid = pid, `type` = `type`)
+  
+    __obj.asInstanceOf[LoggerState]
+  }
+}
+

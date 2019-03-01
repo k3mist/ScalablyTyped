@@ -29,3 +29,25 @@ trait XSingletonTypeDescription2 extends XSingletonTypeDescription {
   def isInterfaceBased(): scala.Boolean
 }
 
+object XSingletonTypeDescription2 {
+  @scala.inline
+  def apply(
+    Interface: XTypeDescription,
+    Name: java.lang.String,
+    Service: XServiceTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getInterface: js.Function0[XTypeDescription],
+    getName: js.Function0[java.lang.String],
+    getService: js.Function0[XServiceTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    isInterfaceBased: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSingletonTypeDescription2 = {
+    val __obj = js.Dynamic.literal(Interface = Interface, Name = Name, Service = Service, TypeClass = TypeClass, acquire = acquire, getInterface = getInterface, getName = getName, getService = getService, getTypeClass = getTypeClass, isInterfaceBased = isInterfaceBased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSingletonTypeDescription2]
+  }
+}
+

@@ -32,3 +32,19 @@ trait GetClusterResult extends js.Object {
   val status: java.lang.String
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    id: java.lang.String,
+    pendingTasksCount: scala.Double,
+    registeredContainerInstancesCount: scala.Double,
+    runningTasksCount: scala.Double,
+    status: java.lang.String
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal(arn = arn, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, status = status)
+  
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

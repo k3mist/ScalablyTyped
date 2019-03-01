@@ -51,3 +51,87 @@ trait EmbeddedColumnChartBuilder extends js.Object {
   def useLogScale(): EmbeddedColumnChartBuilder
 }
 
+object EmbeddedColumnChartBuilder {
+  @scala.inline
+  def apply(
+    addRange: js.Function1[Range, EmbeddedChartBuilder],
+    asAreaChart: js.Function0[EmbeddedAreaChartBuilder],
+    asBarChart: js.Function0[EmbeddedBarChartBuilder],
+    asColumnChart: js.Function0[EmbeddedColumnChartBuilder],
+    asComboChart: js.Function0[EmbeddedComboChartBuilder],
+    asHistogramChart: js.Function0[EmbeddedHistogramChartBuilder],
+    asLineChart: js.Function0[EmbeddedLineChartBuilder],
+    asPieChart: js.Function0[EmbeddedPieChartBuilder],
+    asScatterChart: js.Function0[EmbeddedScatterChartBuilder],
+    asTableChart: js.Function0[EmbeddedTableChartBuilder],
+    build: js.Function0[EmbeddedChart],
+    getChartType: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType],
+    getContainer: js.Function0[ContainerInfo],
+    getRanges: js.Function0[js.Array[Range]],
+    removeRange: js.Function1[Range, EmbeddedChartBuilder],
+    reverseCategories: js.Function0[EmbeddedColumnChartBuilder],
+    setBackgroundColor: js.Function1[java.lang.String, EmbeddedColumnChartBuilder],
+    setChartType: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType, 
+      EmbeddedChartBuilder
+    ],
+    setColors: js.Function1[js.Array[java.lang.String], EmbeddedColumnChartBuilder],
+    setHiddenDimensionStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setLegendPosition: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position, 
+      EmbeddedColumnChartBuilder
+    ],
+    setLegendTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    setMergeStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setNumHeaders: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, EmbeddedChartBuilder],
+    setOption: js.Function2[java.lang.String, js.Object, EmbeddedChartBuilder],
+    setPosition: js.Function4[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      EmbeddedChartBuilder
+    ],
+    setRange: js.Function2[stdLib.Number, stdLib.Number, EmbeddedColumnChartBuilder],
+    setStacked: js.Function0[EmbeddedColumnChartBuilder],
+    setTitle: js.Function1[java.lang.String, EmbeddedColumnChartBuilder],
+    setTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder],
+    setXAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    setXAxisTitle: js.Function1[java.lang.String, EmbeddedColumnChartBuilder],
+    setXAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    setYAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    setYAxisTitle: js.Function1[java.lang.String, EmbeddedColumnChartBuilder],
+    setYAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedColumnChartBuilder
+    ],
+    useLogScale: js.Function0[EmbeddedColumnChartBuilder]
+  ): EmbeddedColumnChartBuilder = {
+    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, reverseCategories = reverseCategories, setBackgroundColor = setBackgroundColor, setChartType = setChartType, setColors = setColors, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setLegendPosition = setLegendPosition, setLegendTextStyle = setLegendTextStyle, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPosition = setPosition, setRange = setRange, setStacked = setStacked, setTitle = setTitle, setTitleTextStyle = setTitleTextStyle, setTransposeRowsAndColumns = setTransposeRowsAndColumns, setXAxisTextStyle = setXAxisTextStyle, setXAxisTitle = setXAxisTitle, setXAxisTitleTextStyle = setXAxisTitleTextStyle, setYAxisTextStyle = setYAxisTextStyle, setYAxisTitle = setYAxisTitle, setYAxisTitleTextStyle = setYAxisTitleTextStyle, useLogScale = useLogScale)
+  
+    __obj.asInstanceOf[EmbeddedColumnChartBuilder]
+  }
+}
+

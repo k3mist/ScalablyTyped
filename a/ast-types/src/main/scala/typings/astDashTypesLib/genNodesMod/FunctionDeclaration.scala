@@ -18,3 +18,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.FunctionDeclaration
 }
 
+object FunctionDeclaration {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.FunctionDeclaration
+  ): FunctionDeclaration = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+  
+    __obj.asInstanceOf[FunctionDeclaration]
+  }
+}
+

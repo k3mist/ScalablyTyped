@@ -17,3 +17,22 @@ trait Team extends js.Object {
   var url: java.lang.String
 }
 
+object Team {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: scala.Double,
+    members_url: java.lang.String,
+    name: java.lang.String,
+    permission: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.admin,
+    privacy: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
+    repositories_url: java.lang.String,
+    slug: java.lang.String,
+    url: java.lang.String
+  ): Team = {
+    val __obj = js.Dynamic.literal(description = description, id = id, members_url = members_url, name = name, permission = permission, privacy = privacy, repositories_url = repositories_url, slug = slug, url = url)
+  
+    __obj.asInstanceOf[Team]
+  }
+}
+

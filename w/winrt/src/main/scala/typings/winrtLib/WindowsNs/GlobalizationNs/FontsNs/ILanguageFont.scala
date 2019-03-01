@@ -13,3 +13,18 @@ trait ILanguageFont extends js.Object {
   var scaleFactor: scala.Double
 }
 
+object ILanguageFont {
+  @scala.inline
+  def apply(
+    fontFamily: java.lang.String,
+    fontStretch: winrtLib.WindowsNs.UINs.TextNs.FontStretch,
+    fontStyle: winrtLib.WindowsNs.UINs.TextNs.FontStyle,
+    fontWeight: winrtLib.WindowsNs.UINs.TextNs.FontWeight,
+    scaleFactor: scala.Double
+  ): ILanguageFont = {
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontStretch = fontStretch, fontStyle = fontStyle, fontWeight = fontWeight, scaleFactor = scaleFactor)
+  
+    __obj.asInstanceOf[ILanguageFont]
+  }
+}
+

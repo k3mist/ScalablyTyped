@@ -65,3 +65,22 @@ trait MediaError extends js.Object {
   var status: js.Array[_]
 }
 
+object MediaError {
+  @scala.inline
+  def apply(
+    MEDIA_ERR_ABORTED: videoDotJsLib.videoDotJsLibNumbers.`1`,
+    MEDIA_ERR_CUSTOM: videoDotJsLib.videoDotJsLibNumbers.`0`,
+    MEDIA_ERR_DECODE: videoDotJsLib.videoDotJsLibNumbers.`3`,
+    MEDIA_ERR_ENCRYPTED: videoDotJsLib.videoDotJsLibNumbers.`5`,
+    MEDIA_ERR_NETWORK: videoDotJsLib.videoDotJsLibNumbers.`2`,
+    MEDIA_ERR_SRC_NOT_SUPPORTED: videoDotJsLib.videoDotJsLibNumbers.`4`,
+    code: scala.Double,
+    message: java.lang.String,
+    status: js.Array[_]
+  ): MediaError = {
+    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = MEDIA_ERR_ABORTED, MEDIA_ERR_CUSTOM = MEDIA_ERR_CUSTOM, MEDIA_ERR_DECODE = MEDIA_ERR_DECODE, MEDIA_ERR_ENCRYPTED = MEDIA_ERR_ENCRYPTED, MEDIA_ERR_NETWORK = MEDIA_ERR_NETWORK, MEDIA_ERR_SRC_NOT_SUPPORTED = MEDIA_ERR_SRC_NOT_SUPPORTED, code = code, message = message, status = status)
+  
+    __obj.asInstanceOf[MediaError]
+  }
+}
+

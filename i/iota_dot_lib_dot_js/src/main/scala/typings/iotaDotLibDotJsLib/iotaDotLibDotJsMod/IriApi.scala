@@ -70,3 +70,92 @@ trait IriApi extends js.Object {
   ): scala.Unit
 }
 
+object IriApi {
+  @scala.inline
+  def apply(
+    addNeighbors: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* addedNeighbors */ scala.Double, scala.Unit], 
+      scala.Unit
+    ],
+    attachToTangle: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      scala.Double, 
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* trytes */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    broadcastTransactions: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* response */ js.Object, scala.Unit], 
+      scala.Unit
+    ],
+    findTransactions: js.Function2[
+      iotaDotLibDotJsLib.Anon_Addresses, 
+      js.Function2[/* error */ stdLib.Error, /* hashes */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    getBalances: js.Function3[
+      js.Array[java.lang.String], 
+      scala.Double, 
+      js.Function2[
+        /* error */ stdLib.Error, 
+        /* response */ iotaDotLibDotJsLib.Anon_Balances, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getInclusionStates: js.Function3[
+      js.Array[java.lang.String], 
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* states */ js.Array[scala.Boolean], scala.Unit], 
+      scala.Unit
+    ],
+    getNeighbors: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* neighbors */ js.Array[Neighbor], scala.Unit], 
+      scala.Unit
+    ],
+    getNodeInfo: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* info */ NodeInfo, scala.Unit], 
+      scala.Unit
+    ],
+    getTips: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* hashes */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    getTransactionsToApprove: js.Function2[
+      scala.Double, 
+      js.Function2[
+        /* error */ stdLib.Error, 
+        /* response */ iotaDotLibDotJsLib.Anon_BranchTransaction, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getTrytes: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* trytes */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    interruptAttachingToTangle: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* response */ js.Object, scala.Unit], 
+      scala.Unit
+    ],
+    removeNeighbors: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* removedNeighbors */ js.Array[scala.Double], scala.Unit], 
+      scala.Unit
+    ],
+    storeTransactions: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ stdLib.Error, /* response */ js.Object, scala.Unit], 
+      scala.Unit
+    ]
+  ): IriApi = {
+    val __obj = js.Dynamic.literal(addNeighbors = addNeighbors, attachToTangle = attachToTangle, broadcastTransactions = broadcastTransactions, findTransactions = findTransactions, getBalances = getBalances, getInclusionStates = getInclusionStates, getNeighbors = getNeighbors, getNodeInfo = getNodeInfo, getTips = getTips, getTransactionsToApprove = getTransactionsToApprove, getTrytes = getTrytes, interruptAttachingToTangle = interruptAttachingToTangle, removeNeighbors = removeNeighbors, storeTransactions = storeTransactions)
+  
+    __obj.asInstanceOf[IriApi]
+  }
+}
+

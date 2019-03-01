@@ -10,3 +10,17 @@ trait ColumnsResource extends js.Object {
   def list(request: gapiDotClientDotAnalyticsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Columns]
 }
 
+object ColumnsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Columns]
+    ]
+  ): ColumnsResource = {
+    val __obj = js.Dynamic.literal(list = list)
+  
+    __obj.asInstanceOf[ColumnsResource]
+  }
+}
+

@@ -47,3 +47,18 @@ trait EdgeSingularPoints extends js.Object {
   def targetEndpoint(): Position
 }
 
+object EdgeSingularPoints {
+  @scala.inline
+  def apply(
+    controlPoints: js.Function0[js.Array[Position]],
+    midpoint: js.Function0[Position],
+    segmentPoints: js.Function0[js.Array[Position]],
+    sourceEndpoint: js.Function0[Position],
+    targetEndpoint: js.Function0[Position]
+  ): EdgeSingularPoints = {
+    val __obj = js.Dynamic.literal(controlPoints = controlPoints, midpoint = midpoint, segmentPoints = segmentPoints, sourceEndpoint = sourceEndpoint, targetEndpoint = targetEndpoint)
+  
+    __obj.asInstanceOf[EdgeSingularPoints]
+  }
+}
+

@@ -37,3 +37,55 @@ trait XInternalDataProvider
   def swapDataPointWithNextOneForAllSequences(nAtIndex: scala.Double): scala.Unit
 }
 
+object XInternalDataProvider {
+  @scala.inline
+  def apply(
+    RangeSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
+    acquire: js.Function0[scala.Unit],
+    appendSequence: js.Function0[scala.Unit],
+    createDataSequenceByRangeRepresentation: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence
+    ],
+    createDataSequenceByRangeRepresentationPossible: js.Function1[java.lang.String, scala.Boolean],
+    createDataSequenceByValueArray: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence
+    ],
+    createDataSource: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource
+    ],
+    createDataSourcePossible: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    deleteComplexCategoryLevel: js.Function1[scala.Double, scala.Unit],
+    deleteDataPointForAllSequences: js.Function1[scala.Double, scala.Unit],
+    deleteSequence: js.Function1[scala.Double, scala.Unit],
+    detectArguments: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getDataByRangeRepresentation: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[_]],
+    getRangeSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection],
+    hasDataByRangeRepresentation: js.Function1[java.lang.String, scala.Boolean],
+    insertComplexCategoryLevel: js.Function1[scala.Double, scala.Unit],
+    insertDataPointForAllSequences: js.Function1[scala.Double, scala.Unit],
+    insertSequence: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerDataSequenceForChanges: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSequence, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    setDataByRangeRepresentation: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    swapDataPointWithNextOneForAllSequences: js.Function1[scala.Double, scala.Unit]
+  ): XInternalDataProvider = {
+    val __obj = js.Dynamic.literal(RangeSelection = RangeSelection, acquire = acquire, appendSequence = appendSequence, createDataSequenceByRangeRepresentation = createDataSequenceByRangeRepresentation, createDataSequenceByRangeRepresentationPossible = createDataSequenceByRangeRepresentationPossible, createDataSequenceByValueArray = createDataSequenceByValueArray, createDataSource = createDataSource, createDataSourcePossible = createDataSourcePossible, deleteComplexCategoryLevel = deleteComplexCategoryLevel, deleteDataPointForAllSequences = deleteDataPointForAllSequences, deleteSequence = deleteSequence, detectArguments = detectArguments, getDataByRangeRepresentation = getDataByRangeRepresentation, getRangeSelection = getRangeSelection, hasDataByRangeRepresentation = hasDataByRangeRepresentation, insertComplexCategoryLevel = insertComplexCategoryLevel, insertDataPointForAllSequences = insertDataPointForAllSequences, insertSequence = insertSequence, queryInterface = queryInterface, registerDataSequenceForChanges = registerDataSequenceForChanges, release = release, setDataByRangeRepresentation = setDataByRangeRepresentation, swapDataPointWithNextOneForAllSequences = swapDataPointWithNextOneForAllSequences)
+  
+    __obj.asInstanceOf[XInternalDataProvider]
+  }
+}
+

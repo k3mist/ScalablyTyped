@@ -48,3 +48,36 @@ trait InstalledExtension extends ExtensionManifest {
   var version: java.lang.String
 }
 
+object InstalledExtension {
+  @scala.inline
+  def apply(
+    baseUri: java.lang.String,
+    constraints: js.Array[ContributionConstraint],
+    contributionTypes: js.Array[ContributionType],
+    contributions: js.Array[Contribution],
+    demands: js.Array[java.lang.String],
+    eventCallbacks: ExtensionEventCallbackCollection,
+    extensionId: java.lang.String,
+    extensionName: java.lang.String,
+    fallbackBaseUri: java.lang.String,
+    files: js.Array[vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionFile],
+    flags: ExtensionFlags,
+    installState: InstalledExtensionState,
+    language: java.lang.String,
+    lastPublished: stdLib.Date,
+    licensing: ExtensionLicensing,
+    manifestVersion: scala.Double,
+    publisherId: java.lang.String,
+    publisherName: java.lang.String,
+    registrationId: java.lang.String,
+    restrictedTo: js.Array[java.lang.String],
+    scopes: js.Array[java.lang.String],
+    serviceInstanceType: java.lang.String,
+    version: java.lang.String
+  ): InstalledExtension = {
+    val __obj = js.Dynamic.literal(baseUri = baseUri, constraints = constraints, contributionTypes = contributionTypes, contributions = contributions, demands = demands, eventCallbacks = eventCallbacks, extensionId = extensionId, extensionName = extensionName, fallbackBaseUri = fallbackBaseUri, files = files, flags = flags, installState = installState, language = language, lastPublished = lastPublished, licensing = licensing, manifestVersion = manifestVersion, publisherId = publisherId, publisherName = publisherName, registrationId = registrationId, restrictedTo = restrictedTo, scopes = scopes, serviceInstanceType = serviceInstanceType, version = version)
+  
+    __obj.asInstanceOf[InstalledExtension]
+  }
+}
+

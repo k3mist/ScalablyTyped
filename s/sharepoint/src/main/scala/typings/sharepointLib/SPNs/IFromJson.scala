@@ -11,3 +11,12 @@ trait IFromJson extends js.Object {
   def fromJson(initValue: js.Any): scala.Unit
 }
 
+object IFromJson {
+  @scala.inline
+  def apply(customFromJson: js.Function1[js.Any, scala.Boolean], fromJson: js.Function1[js.Any, scala.Unit]): IFromJson = {
+    val __obj = js.Dynamic.literal(customFromJson = customFromJson, fromJson = fromJson)
+  
+    __obj.asInstanceOf[IFromJson]
+  }
+}
+

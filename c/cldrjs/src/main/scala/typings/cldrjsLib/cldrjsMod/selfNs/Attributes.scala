@@ -101,3 +101,20 @@ trait Attributes extends js.Object {
   var territory: js.Any
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    language: js.Any,
+    languageId: js.Any,
+    maxLanguageId: js.Any,
+    minLanguageId: js.Any,
+    region: js.Any,
+    script: js.Any,
+    territory: js.Any
+  ): Attributes = {
+    val __obj = js.Dynamic.literal(language = language, languageId = languageId, maxLanguageId = maxLanguageId, minLanguageId = minLanguageId, region = region, script = script, territory = territory)
+  
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

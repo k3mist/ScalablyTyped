@@ -10,3 +10,17 @@ trait XDocumentEvent
   def createEvent(eventType: java.lang.String): XEvent
 }
 
+object XDocumentEvent {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createEvent: js.Function1[java.lang.String, XEvent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDocumentEvent = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createEvent = createEvent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDocumentEvent]
+  }
+}
+

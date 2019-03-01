@@ -57,3 +57,25 @@ trait CarouselSlideRenderControlProps extends js.Object {
   def previousSlide(): scala.Unit
 }
 
+object CarouselSlideRenderControlProps {
+  @scala.inline
+  def apply(
+    cellAlign: CarouselCellAlignProp,
+    cellSpacing: scala.Double,
+    currentSlide: scala.Double,
+    frameWidth: scala.Double,
+    goToSlide: js.Function1[scala.Double, scala.Unit],
+    nextSlide: js.Function0[scala.Unit],
+    previousSlide: js.Function0[scala.Unit],
+    slideCount: scala.Double,
+    slideWidth: scala.Double,
+    slidesToScroll: scala.Double,
+    slidesToShow: scala.Double,
+    wrapAround: scala.Boolean
+  ): CarouselSlideRenderControlProps = {
+    val __obj = js.Dynamic.literal(cellAlign = cellAlign, cellSpacing = cellSpacing, currentSlide = currentSlide, frameWidth = frameWidth, goToSlide = goToSlide, nextSlide = nextSlide, previousSlide = previousSlide, slideCount = slideCount, slideWidth = slideWidth, slidesToScroll = slidesToScroll, slidesToShow = slidesToShow, wrapAround = wrapAround)
+  
+    __obj.asInstanceOf[CarouselSlideRenderControlProps]
+  }
+}
+

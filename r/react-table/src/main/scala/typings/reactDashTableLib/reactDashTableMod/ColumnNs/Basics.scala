@@ -31,3 +31,28 @@ trait Basics extends js.Object {
   var sortable: js.UndefOr[scala.Boolean]
 }
 
+object Basics {
+  @scala.inline
+  def apply(
+    Aggregated: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+    Expander: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+    Pivot: reactDashTableLib.reactDashTableMod.PivotRenderer,
+    PivotValue: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+    minWidth: scala.Double,
+    show: scala.Boolean,
+    defaultSortDesc: js.UndefOr[scala.Boolean] = js.undefined,
+    filterable: js.UndefOr[scala.Boolean] = js.undefined,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortMethod: reactDashTableLib.reactDashTableMod.SortFunction = null,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined
+  ): Basics = {
+    val __obj = js.Dynamic.literal(Aggregated = Aggregated.asInstanceOf[js.Any], Expander = Expander.asInstanceOf[js.Any], Pivot = Pivot.asInstanceOf[js.Any], PivotValue = PivotValue.asInstanceOf[js.Any], minWidth = minWidth, show = show)
+    if (!js.isUndefined(defaultSortDesc)) __obj.updateDynamic("defaultSortDesc")(defaultSortDesc)
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (sortMethod != null) __obj.updateDynamic("sortMethod")(sortMethod)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    __obj.asInstanceOf[Basics]
+  }
+}
+

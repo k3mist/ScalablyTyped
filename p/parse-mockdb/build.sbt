@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "parse-mockdb"
-version := "v0.1.14-dt-20181114Z-905ac6"
+version := "v0.1.14-dt-20181114Z-ac4e2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-9b48fa",
-  "org.scalablytyped" %%% "parse" % "2.1.0-dt-20190123Z-4129b2",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd")
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-050272",
+  "org.scalablytyped" %%% "parse" % "2.1.0-dt-20190123Z-db9bea",
+  "org.scalablytyped" %%% "std" % "3.3-bea17e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

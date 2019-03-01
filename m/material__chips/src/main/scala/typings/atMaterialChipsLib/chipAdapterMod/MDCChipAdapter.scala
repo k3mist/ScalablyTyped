@@ -55,3 +55,28 @@ trait MDCChipAdapter extends js.Object {
   def setStyleProperty(propertyName: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object MDCChipAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    addClassToLeadingIcon: js.Function1[java.lang.String, scala.Unit],
+    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    deregisterTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    eventTargetHasClass: js.Function2[stdLib.EventTarget, java.lang.String, scala.Boolean],
+    getComputedStyleValue: js.Function1[java.lang.String, java.lang.String],
+    hasClass: js.Function1[java.lang.String, scala.Boolean],
+    notifyInteraction: js.Function0[scala.Unit],
+    notifyRemoval: js.Function0[scala.Unit],
+    notifyTrailingIconInteraction: js.Function0[scala.Unit],
+    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    removeClassFromLeadingIcon: js.Function1[java.lang.String, scala.Unit],
+    setStyleProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): MDCChipAdapter = {
+    val __obj = js.Dynamic.literal(addClass = addClass, addClassToLeadingIcon = addClassToLeadingIcon, deregisterEventHandler = deregisterEventHandler, deregisterTrailingIconInteractionHandler = deregisterTrailingIconInteractionHandler, eventTargetHasClass = eventTargetHasClass, getComputedStyleValue = getComputedStyleValue, hasClass = hasClass, notifyInteraction = notifyInteraction, notifyRemoval = notifyRemoval, notifyTrailingIconInteraction = notifyTrailingIconInteraction, registerEventHandler = registerEventHandler, registerTrailingIconInteractionHandler = registerTrailingIconInteractionHandler, removeClass = removeClass, removeClassFromLeadingIcon = removeClassFromLeadingIcon, setStyleProperty = setStyleProperty)
+  
+    __obj.asInstanceOf[MDCChipAdapter]
+  }
+}
+

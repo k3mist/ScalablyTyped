@@ -12,3 +12,17 @@ trait PassiveDto extends js.Object {
   var sanitizedDescription: java.lang.String
 }
 
+object PassiveDto {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    image: ImageDto,
+    name: java.lang.String,
+    sanitizedDescription: java.lang.String
+  ): PassiveDto = {
+    val __obj = js.Dynamic.literal(description = description, image = image, name = name, sanitizedDescription = sanitizedDescription)
+  
+    __obj.asInstanceOf[PassiveDto]
+  }
+}
+

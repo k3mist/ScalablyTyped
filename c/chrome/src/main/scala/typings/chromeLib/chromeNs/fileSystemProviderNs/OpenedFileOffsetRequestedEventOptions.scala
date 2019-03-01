@@ -12,3 +12,18 @@ trait OpenedFileOffsetRequestedEventOptions extends OpenedFileRequestedEventOpti
   var offset: scala.Double
 }
 
+object OpenedFileOffsetRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    length: scala.Double,
+    offset: scala.Double,
+    openRequestId: scala.Double,
+    requestId: scala.Double
+  ): OpenedFileOffsetRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, length = length, offset = offset, openRequestId = openRequestId, requestId = requestId)
+  
+    __obj.asInstanceOf[OpenedFileOffsetRequestedEventOptions]
+  }
+}
+

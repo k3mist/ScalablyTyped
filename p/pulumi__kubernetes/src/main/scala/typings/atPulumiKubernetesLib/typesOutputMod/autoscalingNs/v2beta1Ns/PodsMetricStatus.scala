@@ -28,3 +28,16 @@ trait PodsMetricStatus extends js.Object {
   val selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
 }
 
+object PodsMetricStatus {
+  @scala.inline
+  def apply(
+    currentAverageValue: java.lang.String,
+    metricName: java.lang.String,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
+  ): PodsMetricStatus = {
+    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue, metricName = metricName, selector = selector)
+  
+    __obj.asInstanceOf[PodsMetricStatus]
+  }
+}
+

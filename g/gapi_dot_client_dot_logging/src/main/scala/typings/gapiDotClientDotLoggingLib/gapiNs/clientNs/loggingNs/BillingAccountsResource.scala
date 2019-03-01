@@ -11,3 +11,12 @@ trait BillingAccountsResource extends js.Object {
   var sinks: SinksResource
 }
 
+object BillingAccountsResource {
+  @scala.inline
+  def apply(exclusions: ExclusionsResource, logs: LogsResource, sinks: SinksResource): BillingAccountsResource = {
+    val __obj = js.Dynamic.literal(exclusions = exclusions, logs = logs, sinks = sinks)
+  
+    __obj.asInstanceOf[BillingAccountsResource]
+  }
+}
+

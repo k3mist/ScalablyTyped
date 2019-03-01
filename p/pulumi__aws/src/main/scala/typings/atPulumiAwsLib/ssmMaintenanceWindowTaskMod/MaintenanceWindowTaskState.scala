@@ -63,3 +63,40 @@ trait MaintenanceWindowTaskState extends js.Object {
   val windowId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object MaintenanceWindowTaskState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    loggingInfo: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefixS3Region] = null,
+    maxConcurrency: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    maxErrors: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    priority: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    serviceRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    targets: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
+    ] = null,
+    taskArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    taskParameters: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]
+    ] = null,
+    taskType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MaintenanceWindowTaskState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
+    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    if (maxErrors != null) __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
+    if (taskParameters != null) __obj.updateDynamic("taskParameters")(taskParameters.asInstanceOf[js.Any])
+    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowTaskState]
+  }
+}
+

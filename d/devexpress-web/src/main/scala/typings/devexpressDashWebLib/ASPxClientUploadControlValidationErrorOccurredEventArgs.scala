@@ -31,3 +31,17 @@ trait ASPxClientUploadControlValidationErrorOccurredEventArgs extends ASPxClient
   var validationSettings: ASPxClientUploadControlValidationSettings
 }
 
+object ASPxClientUploadControlValidationErrorOccurredEventArgs {
+  @scala.inline
+  def apply(
+    errorText: java.lang.String,
+    invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo],
+    showAlert: scala.Boolean,
+    validationSettings: ASPxClientUploadControlValidationSettings
+  ): ASPxClientUploadControlValidationErrorOccurredEventArgs = {
+    val __obj = js.Dynamic.literal(errorText = errorText, invalidFiles = invalidFiles, showAlert = showAlert, validationSettings = validationSettings)
+  
+    __obj.asInstanceOf[ASPxClientUploadControlValidationErrorOccurredEventArgs]
+  }
+}
+

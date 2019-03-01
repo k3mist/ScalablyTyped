@@ -11,3 +11,12 @@ trait Anon_BeforeName extends js.Object {
   var beforeProps: gaeaDashModelLib.FitGaeaNs.ComponentProps
 }
 
+object Anon_BeforeName {
+  @scala.inline
+  def apply(beforeName: java.lang.String, beforeProps: gaeaDashModelLib.FitGaeaNs.ComponentProps): Anon_BeforeName = {
+    val __obj = js.Dynamic.literal(beforeName = beforeName, beforeProps = beforeProps)
+  
+    __obj.asInstanceOf[Anon_BeforeName]
+  }
+}
+

@@ -36,3 +36,17 @@ trait HorizontalPodAutoscalerSpec extends js.Object {
   val scaleTargetRef: CrossVersionObjectReference
 }
 
+object HorizontalPodAutoscalerSpec {
+  @scala.inline
+  def apply(
+    maxReplicas: scala.Double,
+    metrics: js.Array[MetricSpec],
+    minReplicas: scala.Double,
+    scaleTargetRef: CrossVersionObjectReference
+  ): HorizontalPodAutoscalerSpec = {
+    val __obj = js.Dynamic.literal(maxReplicas = maxReplicas, metrics = metrics, minReplicas = minReplicas, scaleTargetRef = scaleTargetRef)
+  
+    __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
+  }
+}
+

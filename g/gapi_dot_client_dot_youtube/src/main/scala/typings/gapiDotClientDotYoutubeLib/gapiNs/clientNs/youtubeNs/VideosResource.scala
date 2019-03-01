@@ -24,3 +24,41 @@ trait VideosResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner): gapiDotClientLib.gapiNs.clientNs.Request[Video]
 }
 
+object VideosResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    getRating: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VideoGetRatingResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltAutoLevels, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Video]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChart, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VideoListResponse]
+    ],
+    rate: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    reportAbuse: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Video]
+    ]
+  ): VideosResource = {
+    val __obj = js.Dynamic.literal(delete = delete, getRating = getRating, insert = insert, list = list, rate = rate, reportAbuse = reportAbuse, update = update)
+  
+    __obj.asInstanceOf[VideosResource]
+  }
+}
+

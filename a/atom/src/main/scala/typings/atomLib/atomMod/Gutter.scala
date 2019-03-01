@@ -29,3 +29,20 @@ trait Gutter extends js.Object {
   def show(): scala.Unit
 }
 
+object Gutter {
+  @scala.inline
+  def apply(
+    decorateMarker: js.Function2[DisplayMarker, DecorationOptions, Decoration],
+    destroy: js.Function0[scala.Unit],
+    hide: js.Function0[scala.Unit],
+    isVisible: js.Function0[scala.Boolean],
+    onDidChangeVisible: js.Function1[js.Function1[Gutter, scala.Unit], Disposable],
+    onDidDestroy: js.Function1[js.Function0[scala.Unit], Disposable],
+    show: js.Function0[scala.Unit]
+  ): Gutter = {
+    val __obj = js.Dynamic.literal(decorateMarker = decorateMarker, destroy = destroy, hide = hide, isVisible = isVisible, onDidChangeVisible = onDidChangeVisible, onDidDestroy = onDidDestroy, show = show)
+  
+    __obj.asInstanceOf[Gutter]
+  }
+}
+

@@ -28,3 +28,44 @@ trait MouseEvent[T, E]
   def getModifierState(key: java.lang.String): scala.Boolean
 }
 
+object MouseEvent {
+  @scala.inline
+  def apply[T, E](
+    altKey: scala.Boolean,
+    bubbles: scala.Boolean,
+    button: scala.Double,
+    buttons: scala.Double,
+    cancelable: scala.Boolean,
+    clientX: scala.Double,
+    clientY: scala.Double,
+    ctrlKey: scala.Boolean,
+    currentTarget: reactLib.EventTarget with T,
+    defaultPrevented: scala.Boolean,
+    eventPhase: scala.Double,
+    getModifierState: js.Function1[java.lang.String, scala.Boolean],
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    isTrusted: scala.Boolean,
+    metaKey: scala.Boolean,
+    movementX: scala.Double,
+    movementY: scala.Double,
+    nativeEvent: E,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    persist: js.Function0[scala.Unit],
+    preventDefault: js.Function0[scala.Unit],
+    relatedTarget: reactLib.EventTarget,
+    screenX: scala.Double,
+    screenY: scala.Double,
+    shiftKey: scala.Boolean,
+    stopPropagation: js.Function0[scala.Unit],
+    target: reactLib.EventTarget,
+    timeStamp: scala.Double,
+    `type`: java.lang.String
+  ): MouseEvent[T, E] = {
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, metaKey = metaKey, movementX = movementX, movementY = movementY, nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX, pageY = pageY, persist = persist, preventDefault = preventDefault, relatedTarget = relatedTarget, screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp, `type` = `type`)
+  
+    __obj.asInstanceOf[MouseEvent[T, E]]
+  }
+}
+

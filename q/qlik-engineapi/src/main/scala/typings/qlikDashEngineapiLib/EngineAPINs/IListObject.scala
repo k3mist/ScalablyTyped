@@ -40,3 +40,19 @@ trait IListObject extends js.Object {
   var qStateName: java.lang.String
 }
 
+object IListObject {
+  @scala.inline
+  def apply(
+    qDataPages: js.Array[INxDataPage],
+    qDimensionInfo: INxDimensionInfo,
+    qExpressions: js.Array[INxListObjectExpression],
+    qSize: ISize,
+    qStateName: java.lang.String,
+    qError: INxValidationError = null
+  ): IListObject = {
+    val __obj = js.Dynamic.literal(qDataPages = qDataPages, qDimensionInfo = qDimensionInfo, qExpressions = qExpressions, qSize = qSize, qStateName = qStateName)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    __obj.asInstanceOf[IListObject]
+  }
+}
+

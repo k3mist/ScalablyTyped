@@ -13,3 +13,12 @@ trait ExistingSansProvider
   var useExisting: js.Any
 }
 
+object ExistingSansProvider {
+  @scala.inline
+  def apply(useExisting: js.Any): ExistingSansProvider = {
+    val __obj = js.Dynamic.literal(useExisting = useExisting)
+  
+    __obj.asInstanceOf[ExistingSansProvider]
+  }
+}
+

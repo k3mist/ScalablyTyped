@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
 }
 
+object NullableTypeAnnotation {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.NullableTypeAnnotation,
+    typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
+  ): NullableTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[NullableTypeAnnotation]
+  }
+}
+

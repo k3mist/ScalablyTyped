@@ -26,3 +26,18 @@ trait SearchProperties extends js.Object {
   var layers: js.UndefOr[CollectionProperties[SearchLayerProperties]] = js.undefined
 }
 
+object SearchProperties {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hintText: java.lang.String = null,
+    layers: CollectionProperties[SearchLayerProperties] = null
+  ): SearchProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (hintText != null) __obj.updateDynamic("hintText")(hintText)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchProperties]
+  }
+}
+

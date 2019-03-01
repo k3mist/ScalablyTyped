@@ -34,3 +34,20 @@ trait websceneInitialViewPropertiesProperties extends js.Object {
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 
+object websceneInitialViewPropertiesProperties {
+  @scala.inline
+  def apply(
+    environment: EnvironmentProperties = null,
+    spatialReference: SpatialReferenceProperties = null,
+    viewingMode: java.lang.String = null,
+    viewpoint: ViewpointProperties = null
+  ): websceneInitialViewPropertiesProperties = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    __obj.asInstanceOf[websceneInitialViewPropertiesProperties]
+  }
+}
+

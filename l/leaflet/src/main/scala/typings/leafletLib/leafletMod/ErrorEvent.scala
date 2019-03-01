@@ -10,3 +10,12 @@ trait ErrorEvent extends LeafletEvent {
   var message: java.lang.String
 }
 
+object ErrorEvent {
+  @scala.inline
+  def apply(code: scala.Double, message: java.lang.String, target: js.Any, `type`: java.lang.String): ErrorEvent = {
+    val __obj = js.Dynamic.literal(code = code, message = message, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[ErrorEvent]
+  }
+}
+

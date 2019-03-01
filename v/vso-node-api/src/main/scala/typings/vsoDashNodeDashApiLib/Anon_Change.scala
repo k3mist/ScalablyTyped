@@ -16,3 +16,21 @@ trait Anon_Change extends js.Object {
   var tip: scala.Double
 }
 
+object Anon_Change {
+  @scala.inline
+  def apply(
+    change: scala.Double,
+    changeset: scala.Double,
+    date: scala.Double,
+    latest: scala.Double,
+    mergeSource: scala.Double,
+    none: scala.Double,
+    shelveset: scala.Double,
+    tip: scala.Double
+  ): Anon_Change = {
+    val __obj = js.Dynamic.literal(change = change, changeset = changeset, date = date, latest = latest, mergeSource = mergeSource, none = none, shelveset = shelveset, tip = tip)
+  
+    __obj.asInstanceOf[Anon_Change]
+  }
+}
+

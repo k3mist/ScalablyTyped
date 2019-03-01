@@ -14,3 +14,12 @@ trait GetActionsRequestedOptions extends js.Object {
   var requestId: scala.Double
 }
 
+object GetActionsRequestedOptions {
+  @scala.inline
+  def apply(entryPath: java.lang.String, fileSystemId: java.lang.String, requestId: scala.Double): GetActionsRequestedOptions = {
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[GetActionsRequestedOptions]
+  }
+}
+

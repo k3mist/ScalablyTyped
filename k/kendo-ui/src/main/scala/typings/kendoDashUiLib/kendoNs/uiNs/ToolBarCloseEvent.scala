@@ -9,3 +9,17 @@ trait ToolBarCloseEvent extends ToolBarEvent {
   var SplitButton: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object ToolBarCloseEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ToolBar,
+    SplitButton: kendoDashUiLib.JQuery = null
+  ): ToolBarCloseEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (SplitButton != null) __obj.updateDynamic("SplitButton")(SplitButton)
+    __obj.asInstanceOf[ToolBarCloseEvent]
+  }
+}
+

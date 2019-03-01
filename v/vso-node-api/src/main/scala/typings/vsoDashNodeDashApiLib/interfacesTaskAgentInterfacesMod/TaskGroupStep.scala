@@ -15,3 +15,20 @@ trait TaskGroupStep extends js.Object {
   var timeoutInMinutes: scala.Double
 }
 
+object TaskGroupStep {
+  @scala.inline
+  def apply(
+    alwaysRun: scala.Boolean,
+    continueOnError: scala.Boolean,
+    displayName: java.lang.String,
+    enabled: scala.Boolean,
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    task: TaskDefinitionReference,
+    timeoutInMinutes: scala.Double
+  ): TaskGroupStep = {
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, continueOnError = continueOnError, displayName = displayName, enabled = enabled, inputs = inputs, task = task, timeoutInMinutes = timeoutInMinutes)
+  
+    __obj.asInstanceOf[TaskGroupStep]
+  }
+}
+

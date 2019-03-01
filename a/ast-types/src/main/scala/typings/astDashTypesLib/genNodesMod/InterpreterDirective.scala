@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
   var value: java.lang.String
 }
 
+object InterpreterDirective {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.InterpreterDirective, value: java.lang.String): InterpreterDirective = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[InterpreterDirective]
+  }
+}
+

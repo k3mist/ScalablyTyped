@@ -35,3 +35,18 @@ trait Anon_Elem extends js.Object {
   def restrictNumeric(elem: stdLib.HTMLInputElement): stdLib.HTMLInputElement
 }
 
+object Anon_Elem {
+  @scala.inline
+  def apply(
+    fns: paymentLib.paymentMod.Fns,
+    formatCardCVC: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
+    formatCardExpiry: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
+    formatCardNumber: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
+    restrictNumeric: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement]
+  ): Anon_Elem = {
+    val __obj = js.Dynamic.literal(fns = fns, formatCardCVC = formatCardCVC, formatCardExpiry = formatCardExpiry, formatCardNumber = formatCardNumber, restrictNumeric = restrictNumeric)
+  
+    __obj.asInstanceOf[Anon_Elem]
+  }
+}
+

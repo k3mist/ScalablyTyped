@@ -20,3 +20,12 @@ trait FontHeight extends js.Object {
   var Prop: scala.Double
 }
 
+object FontHeight {
+  @scala.inline
+  def apply(Diff: scala.Double, Height: scala.Double, Prop: scala.Double): FontHeight = {
+    val __obj = js.Dynamic.literal(Diff = Diff, Height = Height, Prop = Prop)
+  
+    __obj.asInstanceOf[FontHeight]
+  }
+}
+

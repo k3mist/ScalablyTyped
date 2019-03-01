@@ -24,3 +24,12 @@ trait SearchBellmanFordOptions extends js.Object {
   var weight: js.UndefOr[WeightFn] = js.undefined
 }
 
+object SearchBellmanFordOptions {
+  @scala.inline
+  def apply(directed: scala.Boolean, root: js.Any, weight: WeightFn = null): SearchBellmanFordOptions = {
+    val __obj = js.Dynamic.literal(directed = directed, root = root)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchBellmanFordOptions]
+  }
+}
+

@@ -13,3 +13,18 @@ trait KnockstrapModalDefaults extends js.Object {
   var headerTemplate: KnockstrapDefaultsTemplateBase
 }
 
+object KnockstrapModalDefaults {
+  @scala.inline
+  def apply(
+    attributes: KnockstrapModalDefaultsAttributes,
+    bodyTemplate: KnockstrapDefaultsTemplateBase,
+    css: java.lang.String,
+    footerTemplate: KnockstrapModalDefaultsFooterTemplate,
+    headerTemplate: KnockstrapDefaultsTemplateBase
+  ): KnockstrapModalDefaults = {
+    val __obj = js.Dynamic.literal(attributes = attributes, bodyTemplate = bodyTemplate, css = css, footerTemplate = footerTemplate, headerTemplate = headerTemplate)
+  
+    __obj.asInstanceOf[KnockstrapModalDefaults]
+  }
+}
+

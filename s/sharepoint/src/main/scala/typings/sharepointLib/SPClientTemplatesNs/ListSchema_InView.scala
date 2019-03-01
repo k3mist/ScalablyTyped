@@ -78,3 +78,53 @@ trait ListSchema_InView extends ListSchema {
   var group2: java.lang.String
 }
 
+object ListSchema_InView {
+  @scala.inline
+  def apply(
+    Aggregate: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    Collapse: java.lang.String,
+    DefaultItemOpen: java.lang.String,
+    Direction: java.lang.String,
+    EffectivePresenceEnabled: java.lang.String,
+    Field: js.Array[FieldSchema],
+    FieldSortParam: java.lang.String,
+    Filter: js.Any,
+    ForceCheckout: java.lang.String,
+    HasTitle: java.lang.String,
+    HttpVDir: java.lang.String,
+    InplaceSearchEnabled: java.lang.String,
+    IsDocLib: java.lang.String,
+    LCID: java.lang.String,
+    ListRight_AddListItems: java.lang.String,
+    NoListItem: java.lang.String,
+    NoListItemHowTo: java.lang.String,
+    PagePath: java.lang.String,
+    ParentHierarchyDisplayField: java.lang.String,
+    PresenceAlt: java.lang.String,
+    PropertyBag: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    RenderSaveAsNewViewButton: java.lang.String,
+    RenderViewSelectorPivotMenu: java.lang.String,
+    RenderViewSelectorPivotMenuAsync: java.lang.String,
+    RootFolderParam: java.lang.String,
+    SelectedID: java.lang.String,
+    ShowWebPart: java.lang.String,
+    StrikeThroughOnCompletedEnabled: java.lang.String,
+    TabularView: java.lang.String,
+    Toolbar: java.lang.String,
+    UIVersion: java.lang.String,
+    UseParentHierarchy: java.lang.String,
+    UserDispUrl: java.lang.String,
+    UserVanilla: js.Any,
+    Userid: java.lang.String,
+    View: java.lang.String,
+    ViewSelectorPivotMenuOptions: java.lang.String,
+    ViewSelector_ViewParameters: java.lang.String,
+    group1: java.lang.String,
+    group2: java.lang.String
+  ): ListSchema_InView = {
+    val __obj = js.Dynamic.literal(Aggregate = Aggregate, Collapse = Collapse, DefaultItemOpen = DefaultItemOpen, Direction = Direction, EffectivePresenceEnabled = EffectivePresenceEnabled, Field = Field, FieldSortParam = FieldSortParam, Filter = Filter, ForceCheckout = ForceCheckout, HasTitle = HasTitle, HttpVDir = HttpVDir, InplaceSearchEnabled = InplaceSearchEnabled, IsDocLib = IsDocLib, LCID = LCID, ListRight_AddListItems = ListRight_AddListItems, NoListItem = NoListItem, NoListItemHowTo = NoListItemHowTo, PagePath = PagePath, ParentHierarchyDisplayField = ParentHierarchyDisplayField, PresenceAlt = PresenceAlt, PropertyBag = PropertyBag, RenderSaveAsNewViewButton = RenderSaveAsNewViewButton, RenderViewSelectorPivotMenu = RenderViewSelectorPivotMenu, RenderViewSelectorPivotMenuAsync = RenderViewSelectorPivotMenuAsync, RootFolderParam = RootFolderParam, SelectedID = SelectedID, ShowWebPart = ShowWebPart, StrikeThroughOnCompletedEnabled = StrikeThroughOnCompletedEnabled, TabularView = TabularView, Toolbar = Toolbar, UIVersion = UIVersion, UseParentHierarchy = UseParentHierarchy, UserDispUrl = UserDispUrl, UserVanilla = UserVanilla, Userid = Userid, View = View, ViewSelectorPivotMenuOptions = ViewSelectorPivotMenuOptions, ViewSelector_ViewParameters = ViewSelector_ViewParameters, group1 = group1, group2 = group2)
+  
+    __obj.asInstanceOf[ListSchema_InView]
+  }
+}
+

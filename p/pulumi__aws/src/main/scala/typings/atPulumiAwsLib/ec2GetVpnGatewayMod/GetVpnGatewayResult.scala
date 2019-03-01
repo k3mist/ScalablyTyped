@@ -14,3 +14,19 @@ trait GetVpnGatewayResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetVpnGatewayResult {
+  @scala.inline
+  def apply(
+    amazonSideAsn: java.lang.String,
+    attachedVpcId: java.lang.String,
+    availabilityZone: java.lang.String,
+    id: java.lang.String,
+    state: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetVpnGatewayResult = {
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, attachedVpcId = attachedVpcId, availabilityZone = availabilityZone, id = id, state = state, tags = tags)
+  
+    __obj.asInstanceOf[GetVpnGatewayResult]
+  }
+}
+

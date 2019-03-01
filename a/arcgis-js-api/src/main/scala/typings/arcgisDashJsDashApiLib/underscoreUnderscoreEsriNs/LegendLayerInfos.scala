@@ -21,3 +21,18 @@ trait LegendLayerInfos
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LegendLayerInfos {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: Layer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String = null
+  ): LegendLayerInfos = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[LegendLayerInfos]
+  }
+}
+

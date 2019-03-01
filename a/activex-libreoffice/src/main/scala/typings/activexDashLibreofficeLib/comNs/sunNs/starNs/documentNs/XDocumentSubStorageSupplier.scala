@@ -31,3 +31,23 @@ trait XDocumentSubStorageSupplier
   def getDocumentSubStoragesNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XDocumentSubStorageSupplier {
+  @scala.inline
+  def apply(
+    DocumentSubStoragesNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getDocumentSubStorage: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage
+    ],
+    getDocumentSubStoragesNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDocumentSubStorageSupplier = {
+    val __obj = js.Dynamic.literal(DocumentSubStoragesNames = DocumentSubStoragesNames, acquire = acquire, getDocumentSubStorage = getDocumentSubStorage, getDocumentSubStoragesNames = getDocumentSubStoragesNames, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDocumentSubStorageSupplier]
+  }
+}
+

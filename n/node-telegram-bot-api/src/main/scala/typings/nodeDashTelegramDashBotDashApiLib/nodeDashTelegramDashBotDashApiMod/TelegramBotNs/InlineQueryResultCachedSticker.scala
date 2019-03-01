@@ -13,3 +13,19 @@ trait InlineQueryResultCachedSticker
   var `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.sticker
 }
 
+object InlineQueryResultCachedSticker {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    sticker_file_id: java.lang.String,
+    `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.sticker,
+    input_message_content: InputMessageContent = null,
+    reply_markup: InlineKeyboardMarkup = null
+  ): InlineQueryResultCachedSticker = {
+    val __obj = js.Dynamic.literal(id = id, sticker_file_id = sticker_file_id, `type` = `type`)
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    __obj.asInstanceOf[InlineQueryResultCachedSticker]
+  }
+}
+

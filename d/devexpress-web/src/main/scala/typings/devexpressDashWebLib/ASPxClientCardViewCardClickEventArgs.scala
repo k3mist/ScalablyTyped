@@ -21,3 +21,12 @@ trait ASPxClientCardViewCardClickEventArgs extends ASPxClientCancelEventArgs {
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewCardClickEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Object, visibleIndex: scala.Double): ASPxClientCardViewCardClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientCardViewCardClickEventArgs]
+  }
+}
+

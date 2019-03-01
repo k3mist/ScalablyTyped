@@ -22,3 +22,41 @@ trait LicenseAssignmentsResource extends js.Object {
   def update(request: gapiDotClientDotLicensingLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
 }
 
+object LicenseAssignmentsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+    ],
+    listForProduct: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_AltCustomerId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
+    ],
+    listForProductAndSku: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+    ],
+    update: js.Function1[
+      gapiDotClientDotLicensingLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+    ]
+  ): LicenseAssignmentsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, listForProduct = listForProduct, listForProductAndSku = listForProductAndSku, patch = patch, update = update)
+  
+    __obj.asInstanceOf[LicenseAssignmentsResource]
+  }
+}
+

@@ -19,3 +19,12 @@ trait ISize extends js.Object {
   var qcy: scala.Double
 }
 
+object ISize {
+  @scala.inline
+  def apply(qcx: scala.Double, qcy: scala.Double): ISize = {
+    val __obj = js.Dynamic.literal(qcx = qcx, qcy = qcy)
+  
+    __obj.asInstanceOf[ISize]
+  }
+}
+

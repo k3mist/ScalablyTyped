@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSNamespaceExportDeclaration
 }
 
+object TSNamespaceExportDeclaration {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSNamespaceExportDeclaration
+  ): TSNamespaceExportDeclaration = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+  
+    __obj.asInstanceOf[TSNamespaceExportDeclaration]
+  }
+}
+

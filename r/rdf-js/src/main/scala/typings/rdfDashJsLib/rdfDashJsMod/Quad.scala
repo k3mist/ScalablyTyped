@@ -32,3 +32,18 @@ trait Quad extends BaseQuad {
   var subject_Quad: Quad_Subject
 }
 
+object Quad {
+  @scala.inline
+  def apply(
+    equals: js.Function1[BaseQuad, scala.Boolean],
+    graph: Quad_Graph,
+    `object`: Quad_Object,
+    predicate: Quad_Predicate,
+    subject: Quad_Subject
+  ): Quad = {
+    val __obj = js.Dynamic.literal(equals = equals, graph = graph, `object` = `object`, predicate = predicate, subject = subject)
+  
+    __obj.asInstanceOf[Quad]
+  }
+}
+

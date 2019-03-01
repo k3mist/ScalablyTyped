@@ -20,3 +20,25 @@ trait ScrollSpy extends js.Object {
   def updateStates(): scala.Unit
 }
 
+object ScrollSpy {
+  @scala.inline
+  def apply(
+    addSpyHandler: js.Function2[js.Any, js.Any, scala.Unit],
+    addStateHandler: js.Function1[js.Any, scala.Unit],
+    currentPositionY: js.Function1[js.Any, scala.Double],
+    isMounted: js.Function1[js.Any, scala.Boolean],
+    mount: js.Function1[js.Any, scala.Unit],
+    scrollHandler: js.Function1[js.Any, scala.Unit],
+    scrollSpyContainers: js.Array[_],
+    spyCallbacks: js.Array[_],
+    spySetState: js.Array[_],
+    unmount: js.Function2[js.Any, js.Any, scala.Unit],
+    update: js.Function0[scala.Unit],
+    updateStates: js.Function0[scala.Unit]
+  ): ScrollSpy = {
+    val __obj = js.Dynamic.literal(addSpyHandler = addSpyHandler, addStateHandler = addStateHandler, currentPositionY = currentPositionY, isMounted = isMounted, mount = mount, scrollHandler = scrollHandler, scrollSpyContainers = scrollSpyContainers, spyCallbacks = spyCallbacks, spySetState = spySetState, unmount = unmount, update = update, updateStates = updateStates)
+  
+    __obj.asInstanceOf[ScrollSpy]
+  }
+}
+

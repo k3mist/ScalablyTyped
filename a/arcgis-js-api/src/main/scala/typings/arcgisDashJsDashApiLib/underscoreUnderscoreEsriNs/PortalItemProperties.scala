@@ -166,3 +166,64 @@ trait PortalItemProperties extends LoadableProperties {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortalItemProperties {
+  @scala.inline
+  def apply(
+    access: java.lang.String = null,
+    accessInformation: java.lang.String = null,
+    avgRating: scala.Int | scala.Double = null,
+    categories: js.Array[java.lang.String] = null,
+    created: DateProperties = null,
+    culture: java.lang.String = null,
+    description: java.lang.String = null,
+    extent: ExtentProperties = null,
+    groupCategories: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    licenseInfo: java.lang.String = null,
+    modified: DateProperties = null,
+    name: java.lang.String = null,
+    numComments: scala.Int | scala.Double = null,
+    numRatings: scala.Int | scala.Double = null,
+    numViews: scala.Int | scala.Double = null,
+    owner: java.lang.String = null,
+    portal: PortalProperties = null,
+    screenshots: js.Array[java.lang.String] = null,
+    size: scala.Int | scala.Double = null,
+    snippet: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null,
+    typeKeywords: js.Array[java.lang.String] = null,
+    url: java.lang.String = null
+  ): PortalItemProperties = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (accessInformation != null) __obj.updateDynamic("accessInformation")(accessInformation)
+    if (avgRating != null) __obj.updateDynamic("avgRating")(avgRating.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (groupCategories != null) __obj.updateDynamic("groupCategories")(groupCategories)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (licenseInfo != null) __obj.updateDynamic("licenseInfo")(licenseInfo)
+    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numComments != null) __obj.updateDynamic("numComments")(numComments.asInstanceOf[js.Any])
+    if (numRatings != null) __obj.updateDynamic("numRatings")(numRatings.asInstanceOf[js.Any])
+    if (numViews != null) __obj.updateDynamic("numViews")(numViews.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (typeKeywords != null) __obj.updateDynamic("typeKeywords")(typeKeywords)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PortalItemProperties]
+  }
+}
+

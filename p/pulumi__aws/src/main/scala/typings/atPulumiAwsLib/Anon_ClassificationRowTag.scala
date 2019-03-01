@@ -10,3 +10,12 @@ trait Anon_ClassificationRowTag extends js.Object {
   var rowTag: java.lang.String
 }
 
+object Anon_ClassificationRowTag {
+  @scala.inline
+  def apply(classification: java.lang.String, rowTag: java.lang.String): Anon_ClassificationRowTag = {
+    val __obj = js.Dynamic.literal(classification = classification, rowTag = rowTag)
+  
+    __obj.asInstanceOf[Anon_ClassificationRowTag]
+  }
+}
+

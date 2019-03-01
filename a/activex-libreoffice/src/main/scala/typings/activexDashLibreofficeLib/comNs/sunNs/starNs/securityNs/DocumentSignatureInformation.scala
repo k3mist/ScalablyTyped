@@ -19,3 +19,19 @@ trait DocumentSignatureInformation extends js.Object {
   var Signer: XCertificate
 }
 
+object DocumentSignatureInformation {
+  @scala.inline
+  def apply(
+    CertificateStatus: scala.Double,
+    PartialDocumentSignature: scala.Boolean,
+    SignatureDate: scala.Double,
+    SignatureIsValid: scala.Boolean,
+    SignatureTime: scala.Double,
+    Signer: XCertificate
+  ): DocumentSignatureInformation = {
+    val __obj = js.Dynamic.literal(CertificateStatus = CertificateStatus, PartialDocumentSignature = PartialDocumentSignature, SignatureDate = SignatureDate, SignatureIsValid = SignatureIsValid, SignatureTime = SignatureTime, Signer = Signer)
+  
+    __obj.asInstanceOf[DocumentSignatureInformation]
+  }
+}
+

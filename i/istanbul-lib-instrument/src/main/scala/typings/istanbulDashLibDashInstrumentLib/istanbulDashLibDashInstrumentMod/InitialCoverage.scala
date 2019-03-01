@@ -12,3 +12,12 @@ trait InitialCoverage extends js.Object {
   var path: java.lang.String
 }
 
+object InitialCoverage {
+  @scala.inline
+  def apply(coverageData: js.Any, gcv: js.Any, hash: java.lang.String, path: java.lang.String): InitialCoverage = {
+    val __obj = js.Dynamic.literal(coverageData = coverageData, gcv = gcv, hash = hash, path = path)
+  
+    __obj.asInstanceOf[InitialCoverage]
+  }
+}
+

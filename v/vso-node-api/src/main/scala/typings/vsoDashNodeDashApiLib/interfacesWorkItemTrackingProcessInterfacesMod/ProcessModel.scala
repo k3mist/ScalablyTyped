@@ -32,3 +32,19 @@ trait ProcessModel extends js.Object {
   var typeId: java.lang.String
 }
 
+object ProcessModel {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    name: java.lang.String,
+    projects: js.Array[ProjectReference],
+    properties: ProcessProperties,
+    referenceName: java.lang.String,
+    typeId: java.lang.String
+  ): ProcessModel = {
+    val __obj = js.Dynamic.literal(description = description, name = name, projects = projects, properties = properties, referenceName = referenceName, typeId = typeId)
+  
+    __obj.asInstanceOf[ProcessModel]
+  }
+}
+

@@ -18,3 +18,23 @@ trait Navigator extends js.Object {
   var splashscreen: Splashscreen
 }
 
+object Navigator {
+  @scala.inline
+  def apply(
+    accelerometer: Accelerometer,
+    camera: Camera,
+    capture: Capture,
+    compass: Compass,
+    connection: Connection,
+    contacts: Contacts,
+    device: Device,
+    globalization: Globalization,
+    notification: PhonegapNotification,
+    splashscreen: Splashscreen
+  ): Navigator = {
+    val __obj = js.Dynamic.literal(accelerometer = accelerometer, camera = camera, capture = capture, compass = compass, connection = connection, contacts = contacts, device = device, globalization = globalization, notification = notification, splashscreen = splashscreen)
+  
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

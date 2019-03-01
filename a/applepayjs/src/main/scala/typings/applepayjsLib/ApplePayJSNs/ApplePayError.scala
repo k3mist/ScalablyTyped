@@ -23,3 +23,12 @@ trait ApplePayError extends js.Object {
   var message: java.lang.String
 }
 
+object ApplePayError {
+  @scala.inline
+  def apply(code: ApplePayErrorCode, message: java.lang.String, contactField: ApplePayErrorContactField = null): ApplePayError = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+    if (contactField != null) __obj.updateDynamic("contactField")(contactField)
+    __obj.asInstanceOf[ApplePayError]
+  }
+}
+

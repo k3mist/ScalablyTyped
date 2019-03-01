@@ -37,3 +37,20 @@ trait XClipboardManager
   def removeClipboard(aName: java.lang.String): scala.Unit
 }
 
+object XClipboardManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addClipboard: js.Function1[XClipboard, scala.Unit],
+    getClipboard: js.Function1[java.lang.String, XClipboard],
+    listClipboardNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeClipboard: js.Function1[java.lang.String, scala.Unit]
+  ): XClipboardManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addClipboard = addClipboard, getClipboard = getClipboard, listClipboardNames = listClipboardNames, queryInterface = queryInterface, release = release, removeClipboard = removeClipboard)
+  
+    __obj.asInstanceOf[XClipboardManager]
+  }
+}
+

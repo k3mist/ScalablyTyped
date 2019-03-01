@@ -42,3 +42,47 @@ trait TimePickerProps extends js.Object {
   def onOpen(state: rcDashTimeDashPickerLib.Anon_Open): scala.Unit
 }
 
+object TimePickerProps {
+  @scala.inline
+  def apply(
+    addon: js.Function1[TimePicker, reactLib.reactMod.Global.JSXNs.Element],
+    allowEmpty: scala.Boolean,
+    className: java.lang.String,
+    clearIcon: reactLib.reactMod.ReactNs.ReactNode,
+    clearText: java.lang.String,
+    defaultOpenValue: momentLib.momentMod.momentNs.Moment,
+    defaultValue: momentLib.momentMod.momentNs.Moment,
+    disabled: scala.Boolean,
+    disabledHours: js.Function0[js.Array[scala.Double]],
+    disabledMinutes: js.Function1[scala.Double, js.Array[scala.Double]],
+    disabledSeconds: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    focusOnOpen: scala.Boolean,
+    format: java.lang.String,
+    hideDisabledOptions: scala.Boolean,
+    hourStep: scala.Double,
+    id: java.lang.String,
+    inputIcon: reactLib.reactMod.ReactNs.ReactNode,
+    inputReadOnly: scala.Boolean,
+    minuteStep: scala.Double,
+    onChange: js.Function1[momentLib.momentMod.momentNs.Moment, scala.Unit],
+    onClose: js.Function1[rcDashTimeDashPickerLib.Anon_Open, scala.Unit],
+    onOpen: js.Function1[rcDashTimeDashPickerLib.Anon_Open, scala.Unit],
+    open: scala.Boolean,
+    placeholder: java.lang.String,
+    placement: java.lang.String,
+    popupClassName: java.lang.String,
+    prefixCls: java.lang.String,
+    secondStep: scala.Double,
+    showHour: scala.Boolean,
+    showMinute: scala.Boolean,
+    showSecond: scala.Boolean,
+    transitionName: java.lang.String,
+    use12Hours: scala.Boolean,
+    value: momentLib.momentMod.momentNs.Moment
+  ): TimePickerProps = {
+    val __obj = js.Dynamic.literal(addon = addon, allowEmpty = allowEmpty, className = className, clearIcon = clearIcon.asInstanceOf[js.Any], clearText = clearText, defaultOpenValue = defaultOpenValue, defaultValue = defaultValue, disabled = disabled, disabledHours = disabledHours, disabledMinutes = disabledMinutes, disabledSeconds = disabledSeconds, focusOnOpen = focusOnOpen, format = format, hideDisabledOptions = hideDisabledOptions, hourStep = hourStep, id = id, inputIcon = inputIcon.asInstanceOf[js.Any], inputReadOnly = inputReadOnly, minuteStep = minuteStep, onChange = onChange, onClose = onClose, onOpen = onOpen, open = open, placeholder = placeholder, placement = placement, popupClassName = popupClassName, prefixCls = prefixCls, secondStep = secondStep, showHour = showHour, showMinute = showMinute, showSecond = showSecond, transitionName = transitionName, use12Hours = use12Hours, value = value)
+  
+    __obj.asInstanceOf[TimePickerProps]
+  }
+}
+

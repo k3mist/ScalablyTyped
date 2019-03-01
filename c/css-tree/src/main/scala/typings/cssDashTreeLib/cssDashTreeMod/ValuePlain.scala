@@ -13,3 +13,16 @@ trait ValuePlain
   var type_ValuePlain: cssDashTreeLib.cssDashTreeLibStrings.Value
 }
 
+object ValuePlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Value,
+    loc: CssLocation = null
+  ): ValuePlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ValuePlain]
+  }
+}
+

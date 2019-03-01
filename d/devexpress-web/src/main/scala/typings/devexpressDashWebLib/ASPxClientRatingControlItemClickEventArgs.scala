@@ -16,3 +16,12 @@ trait ASPxClientRatingControlItemClickEventArgs extends ASPxClientProcessingMode
   var index: scala.Double
 }
 
+object ASPxClientRatingControlItemClickEventArgs {
+  @scala.inline
+  def apply(index: scala.Double, processOnServer: scala.Boolean): ASPxClientRatingControlItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(index = index, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientRatingControlItemClickEventArgs]
+  }
+}
+

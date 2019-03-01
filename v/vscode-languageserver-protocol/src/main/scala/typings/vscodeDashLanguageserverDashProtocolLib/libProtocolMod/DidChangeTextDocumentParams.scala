@@ -22,3 +22,17 @@ trait DidChangeTextDocumentParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier
 }
 
+object DidChangeTextDocumentParams {
+  @scala.inline
+  def apply(
+    contentChanges: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentContentChangeEvent
+    ],
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier
+  ): DidChangeTextDocumentParams = {
+    val __obj = js.Dynamic.literal(contentChanges = contentChanges, textDocument = textDocument)
+  
+    __obj.asInstanceOf[DidChangeTextDocumentParams]
+  }
+}
+

@@ -26,3 +26,17 @@ trait IFutureState
   var url: java.lang.String
 }
 
+object IFutureState {
+  @scala.inline
+  def apply(
+    stateName: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): IFutureState = {
+    val __obj = js.Dynamic.literal(stateName = stateName, `type` = `type`, url = url)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IFutureState]
+  }
+}
+

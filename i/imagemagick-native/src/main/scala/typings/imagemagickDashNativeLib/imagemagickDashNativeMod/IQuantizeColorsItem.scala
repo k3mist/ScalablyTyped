@@ -12,3 +12,12 @@ trait IQuantizeColorsItem extends js.Object {
   var r: scala.Double
 }
 
+object IQuantizeColorsItem {
+  @scala.inline
+  def apply(b: scala.Double, g: scala.Double, hex: java.lang.String, r: scala.Double): IQuantizeColorsItem = {
+    val __obj = js.Dynamic.literal(b = b, g = g, hex = hex, r = r)
+  
+    __obj.asInstanceOf[IQuantizeColorsItem]
+  }
+}
+

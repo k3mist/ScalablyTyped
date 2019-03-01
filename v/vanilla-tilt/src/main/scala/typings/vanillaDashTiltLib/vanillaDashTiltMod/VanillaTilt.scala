@@ -28,3 +28,18 @@ trait VanillaTilt extends js.Object {
   def reset(): scala.Unit
 }
 
+object VanillaTilt {
+  @scala.inline
+  def apply(
+    addEventListeners: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getValues: js.Function0[TiltValues],
+    removeEventListener: js.Function0[scala.Unit],
+    reset: js.Function0[scala.Unit]
+  ): VanillaTilt = {
+    val __obj = js.Dynamic.literal(addEventListeners = addEventListeners, destroy = destroy, getValues = getValues, removeEventListener = removeEventListener, reset = reset)
+  
+    __obj.asInstanceOf[VanillaTilt]
+  }
+}
+

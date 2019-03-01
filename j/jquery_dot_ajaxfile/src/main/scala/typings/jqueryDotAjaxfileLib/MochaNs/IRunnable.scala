@@ -14,3 +14,18 @@ trait IRunnable extends js.Object {
   var title: java.lang.String
 }
 
+object IRunnable {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    fn: js.Function,
+    sync: scala.Boolean,
+    timedOut: scala.Boolean,
+    title: java.lang.String
+  ): IRunnable = {
+    val __obj = js.Dynamic.literal(async = async, fn = fn, sync = sync, timedOut = timedOut, title = title)
+  
+    __obj.asInstanceOf[IRunnable]
+  }
+}
+

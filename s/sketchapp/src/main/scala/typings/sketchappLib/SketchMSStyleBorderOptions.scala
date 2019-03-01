@@ -14,3 +14,19 @@ trait SketchMSStyleBorderOptions extends js.Object {
   var lineJoinStyle: scala.Double
 }
 
+object SketchMSStyleBorderOptions {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.styleBorderOptions,
+    dashPattern: js.Array[_],
+    isEnabled: scala.Double,
+    lineCapStyle: scala.Double,
+    lineJoinStyle: scala.Double,
+    do_objectID: java.lang.String = null
+  ): SketchMSStyleBorderOptions = {
+    val __obj = js.Dynamic.literal(_class = _class, dashPattern = dashPattern, isEnabled = isEnabled, lineCapStyle = lineCapStyle, lineJoinStyle = lineJoinStyle)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSStyleBorderOptions]
+  }
+}
+

@@ -12,3 +12,17 @@ trait CacheRules extends js.Object {
   var default: java.lang.String
 }
 
+object CacheRules {
+  @scala.inline
+  def apply(
+    cacheAlways: js.Array[RegexRule],
+    cacheMaxAge: js.Array[MaxAgeRegexRule],
+    cacheNever: js.Array[RegexRule],
+    default: java.lang.String
+  ): CacheRules = {
+    val __obj = js.Dynamic.literal(cacheAlways = cacheAlways, cacheMaxAge = cacheMaxAge, cacheNever = cacheNever, default = default)
+  
+    __obj.asInstanceOf[CacheRules]
+  }
+}
+

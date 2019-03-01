@@ -14,3 +14,17 @@ trait PublishStatus extends js.Object {
   var operation: java.lang.String
 }
 
+object PublishStatus {
+  @scala.inline
+  def apply(
+    category: java.lang.String,
+    error: scala.Boolean,
+    errorData: stdLib.Error,
+    operation: java.lang.String
+  ): PublishStatus = {
+    val __obj = js.Dynamic.literal(category = category, error = error, errorData = errorData, operation = operation)
+  
+    __obj.asInstanceOf[PublishStatus]
+  }
+}
+

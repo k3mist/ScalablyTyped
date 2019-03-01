@@ -30,3 +30,18 @@ trait KeyValueChanges[K, V] extends js.Object {
   def forEachRemovedItem(fn: js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit]): scala.Unit
 }
 
+object KeyValueChanges {
+  @scala.inline
+  def apply[K, V](
+    forEachAddedItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit],
+    forEachChangedItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit],
+    forEachItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit],
+    forEachPreviousItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit],
+    forEachRemovedItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit]
+  ): KeyValueChanges[K, V] = {
+    val __obj = js.Dynamic.literal(forEachAddedItem = forEachAddedItem, forEachChangedItem = forEachChangedItem, forEachItem = forEachItem, forEachPreviousItem = forEachPreviousItem, forEachRemovedItem = forEachRemovedItem)
+  
+    __obj.asInstanceOf[KeyValueChanges[K, V]]
+  }
+}
+

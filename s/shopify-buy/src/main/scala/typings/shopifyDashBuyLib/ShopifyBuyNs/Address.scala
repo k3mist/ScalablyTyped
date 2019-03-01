@@ -18,3 +18,23 @@ trait Address extends js.Object {
   var zip: java.lang.String
 }
 
+object Address {
+  @scala.inline
+  def apply(
+    address1: java.lang.String,
+    address2: java.lang.String,
+    city: java.lang.String,
+    company: java.lang.String,
+    country: java.lang.String,
+    firstName: java.lang.String,
+    lastName: java.lang.String,
+    phone: java.lang.String,
+    province: java.lang.String,
+    zip: java.lang.String
+  ): Address = {
+    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, company = company, country = country, firstName = firstName, lastName = lastName, phone = phone, province = province, zip = zip)
+  
+    __obj.asInstanceOf[Address]
+  }
+}
+

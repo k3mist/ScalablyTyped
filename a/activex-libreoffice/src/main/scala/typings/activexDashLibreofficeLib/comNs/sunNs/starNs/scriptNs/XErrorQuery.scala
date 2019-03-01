@@ -14,3 +14,17 @@ trait XErrorQuery
   def hasError(): scala.Boolean
 }
 
+object XErrorQuery {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasError: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XErrorQuery = {
+    val __obj = js.Dynamic.literal(acquire = acquire, hasError = hasError, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XErrorQuery]
+  }
+}
+

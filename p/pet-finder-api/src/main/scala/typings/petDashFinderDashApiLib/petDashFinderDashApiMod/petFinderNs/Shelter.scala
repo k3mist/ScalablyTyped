@@ -21,3 +21,26 @@ trait Shelter extends js.Object {
   var zip: java.lang.String
 }
 
+object Shelter {
+  @scala.inline
+  def apply(
+    address1: java.lang.String,
+    address2: java.lang.String,
+    city: java.lang.String,
+    country: java.lang.String,
+    email: java.lang.String,
+    fax: java.lang.String,
+    id: java.lang.String,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    name: java.lang.String,
+    phone: java.lang.String,
+    state: java.lang.String,
+    zip: java.lang.String
+  ): Shelter = {
+    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, country = country, email = email, fax = fax, id = id, latitude = latitude, longitude = longitude, name = name, phone = phone, state = state, zip = zip)
+  
+    __obj.asInstanceOf[Shelter]
+  }
+}
+

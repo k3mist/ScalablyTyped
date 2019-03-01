@@ -57,3 +57,58 @@ trait Diagram
   var StartingAngle: scala.Double
 }
 
+object Diagram {
+  @scala.inline
+  def apply(
+    ConnectBars: scala.Boolean,
+    CoordinateSystems: activexDashInteropLib.SafeArray[XCoordinateSystem],
+    DataTableHBorder: scala.Boolean,
+    DataTableOutline: scala.Boolean,
+    DataTableVBorder: scala.Boolean,
+    DefaultColorScheme: XColorScheme,
+    ExternalData: java.lang.String,
+    Floor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    GroupBarsPerAxis: scala.Boolean,
+    Legend: XLegend,
+    MissingValueTreatment: scala.Double,
+    Perspective: scala.Double,
+    PosSizeExcludeLabels: scala.Boolean,
+    RelativePosition: RelativePosition,
+    RelativeSize: RelativeSize,
+    RightAngledAxes: scala.Boolean,
+    RotationHorizontal: scala.Double,
+    RotationVertical: scala.Double,
+    SortByXValues: scala.Boolean,
+    StartingAngle: scala.Double,
+    TitleObject: XTitle,
+    Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    addCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
+    getCoordinateSystems: js.Function0[activexDashInteropLib.SafeArray[XCoordinateSystem]],
+    getDefaultColorScheme: js.Function0[XColorScheme],
+    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getLegend: js.Function0[XLegend],
+    getTitleObject: js.Function0[XTitle],
+    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
+    set3DSettingsToDefault: js.Function0[scala.Unit],
+    setCoordinateSystems: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem], scala.Unit],
+    setDefaultColorScheme: js.Function1[XColorScheme, scala.Unit],
+    setDefaultIllumination: js.Function0[scala.Unit],
+    setDefaultRotation: js.Function0[scala.Unit],
+    setDiagramData: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    setLegend: js.Function1[XLegend, scala.Unit],
+    setTitleObject: js.Function1[XTitle, scala.Unit]
+  ): Diagram = {
+    val __obj = js.Dynamic.literal(ConnectBars = ConnectBars, CoordinateSystems = CoordinateSystems, DataTableHBorder = DataTableHBorder, DataTableOutline = DataTableOutline, DataTableVBorder = DataTableVBorder, DefaultColorScheme = DefaultColorScheme, ExternalData = ExternalData, Floor = Floor, GroupBarsPerAxis = GroupBarsPerAxis, Legend = Legend, MissingValueTreatment = MissingValueTreatment, Perspective = Perspective, PosSizeExcludeLabels = PosSizeExcludeLabels, RelativePosition = RelativePosition, RelativeSize = RelativeSize, RightAngledAxes = RightAngledAxes, RotationHorizontal = RotationHorizontal, RotationVertical = RotationVertical, SortByXValues = SortByXValues, StartingAngle = StartingAngle, TitleObject = TitleObject, Wall = Wall, acquire = acquire, addCoordinateSystem = addCoordinateSystem, getCoordinateSystems = getCoordinateSystems, getDefaultColorScheme = getDefaultColorScheme, getFloor = getFloor, getLegend = getLegend, getTitleObject = getTitleObject, getWall = getWall, queryInterface = queryInterface, release = release, removeCoordinateSystem = removeCoordinateSystem, set3DSettingsToDefault = set3DSettingsToDefault, setCoordinateSystems = setCoordinateSystems, setDefaultColorScheme = setDefaultColorScheme, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation, setDiagramData = setDiagramData, setLegend = setLegend, setTitleObject = setTitleObject)
+  
+    __obj.asInstanceOf[Diagram]
+  }
+}
+

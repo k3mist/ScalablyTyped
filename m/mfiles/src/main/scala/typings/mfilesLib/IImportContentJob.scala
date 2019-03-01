@@ -23,3 +23,28 @@ trait IImportContentJob extends js.Object {
   def Clone(): IImportContentJob
 }
 
+object IImportContentJob {
+  @scala.inline
+  def apply(
+    ActivateAutomaticPermissionsForNewOrChangedDefinitions: scala.Boolean,
+    Clone: js.Function0[IImportContentJob],
+    DisableImportedExternalObjectTypeConnections: scala.Boolean,
+    DisableImportedExternalUserGroups: scala.Boolean,
+    DisableImportedVaultEventHandlers: scala.Boolean,
+    Flags: mfilesLib.MFilesNs.MFImportContentFlag,
+    IgnoreAutomaticPermissionsDefinedByObjects: scala.Boolean,
+    Impersonation: IImpersonation,
+    MetadataStructureSelectors: IMetadataStructureSelectors,
+    Permissions: IAccessControlList,
+    ResetExportTimestamps: scala.Boolean,
+    SourceLocation: java.lang.String,
+    UseDefaultObjectTypePermissions: scala.Boolean,
+    UseNamesAsAliases: scala.Boolean,
+    UsePermissions: scala.Boolean
+  ): IImportContentJob = {
+    val __obj = js.Dynamic.literal(ActivateAutomaticPermissionsForNewOrChangedDefinitions = ActivateAutomaticPermissionsForNewOrChangedDefinitions, Clone = Clone, DisableImportedExternalObjectTypeConnections = DisableImportedExternalObjectTypeConnections, DisableImportedExternalUserGroups = DisableImportedExternalUserGroups, DisableImportedVaultEventHandlers = DisableImportedVaultEventHandlers, Flags = Flags, IgnoreAutomaticPermissionsDefinedByObjects = IgnoreAutomaticPermissionsDefinedByObjects, Impersonation = Impersonation, MetadataStructureSelectors = MetadataStructureSelectors, Permissions = Permissions, ResetExportTimestamps = ResetExportTimestamps, SourceLocation = SourceLocation, UseDefaultObjectTypePermissions = UseDefaultObjectTypePermissions, UseNamesAsAliases = UseNamesAsAliases, UsePermissions = UsePermissions)
+  
+    __obj.asInstanceOf[IImportContentJob]
+  }
+}
+

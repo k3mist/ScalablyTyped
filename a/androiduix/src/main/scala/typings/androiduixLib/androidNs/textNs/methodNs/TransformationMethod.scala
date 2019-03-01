@@ -16,3 +16,22 @@ trait TransformationMethod extends js.Object {
   ): scala.Unit
 }
 
+object TransformationMethod {
+  @scala.inline
+  def apply(
+    getTransformation: js.Function2[java.lang.String, androiduixLib.androidNs.viewNs.View, java.lang.String],
+    onFocusChanged: js.Function5[
+      androiduixLib.androidNs.viewNs.View, 
+      java.lang.String, 
+      scala.Boolean, 
+      scala.Double, 
+      androiduixLib.androidNs.graphicsNs.Rect, 
+      scala.Unit
+    ]
+  ): TransformationMethod = {
+    val __obj = js.Dynamic.literal(getTransformation = getTransformation, onFocusChanged = onFocusChanged)
+  
+    __obj.asInstanceOf[TransformationMethod]
+  }
+}
+

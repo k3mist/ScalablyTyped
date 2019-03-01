@@ -33,3 +33,21 @@ trait Anon_ActionType extends js.Object {
   val onRestarted: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
 }
 
+object Anon_ActionType {
+  @scala.inline
+  def apply(
+    ActionType: Anon_NEWNOTE,
+    LaunchSource: Anon_ABOUTPAGE,
+    PlayStoreStatus: Anon_AVAILABLE,
+    onEmbedRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* request */ chromeDashAppsLib.AppViewNs.EmbedRequest, scala.Unit]],
+    onLaunched: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function1[/* launchData */ chromeDashAppsLib.chromeNs.appNs.runtimeNs.LaunchData, scala.Unit]
+    ],
+    onRestarted: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
+  ): Anon_ActionType = {
+    val __obj = js.Dynamic.literal(ActionType = ActionType, LaunchSource = LaunchSource, PlayStoreStatus = PlayStoreStatus, onEmbedRequested = onEmbedRequested, onLaunched = onLaunched, onRestarted = onRestarted)
+  
+    __obj.asInstanceOf[Anon_ActionType]
+  }
+}
+

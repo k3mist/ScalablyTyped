@@ -17,3 +17,12 @@ trait CrossReference extends js.Object {
   var Id: scala.Double
 }
 
+object CrossReference {
+  @scala.inline
+  def apply(Group: java.lang.String, Id: scala.Double): CrossReference = {
+    val __obj = js.Dynamic.literal(Group = Group, Id = Id)
+  
+    __obj.asInstanceOf[CrossReference]
+  }
+}
+

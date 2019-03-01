@@ -17,3 +17,26 @@ trait Selectors
   var `:`: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunctions
 }
 
+object Selectors {
+  @scala.inline
+  def apply(
+    `:`: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunctions,
+    attrHandle: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.AttrHandleFunctions,
+    cacheLength: scala.Double,
+    createPseudo: js.Function1[
+      sizzleLib.sizzleMod.SizzleNs.SelectorsNs.CreatePseudoFunction, 
+      sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunction
+    ],
+    filter: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.FilterFunctions,
+    find: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.FindFunctions,
+    `match`: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.Matches,
+    preFilter: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PreFilterFunctions,
+    pseudos: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunctions,
+    setFilters: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.SetFilterFunctions
+  ): Selectors = {
+    val __obj = js.Dynamic.literal(attrHandle = attrHandle, cacheLength = cacheLength, createPseudo = createPseudo, filter = filter, find = find, `match` = `match`, preFilter = preFilter, pseudos = pseudos, setFilters = setFilters)
+    __obj.updateDynamic(":")(`:`)
+    __obj.asInstanceOf[Selectors]
+  }
+}
+

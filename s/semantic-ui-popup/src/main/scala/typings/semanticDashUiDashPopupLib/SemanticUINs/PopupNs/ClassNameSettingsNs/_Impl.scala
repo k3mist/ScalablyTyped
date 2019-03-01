@@ -28,3 +28,18 @@ trait _Impl extends js.Object {
   var visible: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    loading: java.lang.String,
+    popup: java.lang.String,
+    popupVisible: java.lang.String,
+    position: java.lang.String,
+    visible: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(loading = loading, popup = popup, popupVisible = popupVisible, position = position, visible = visible)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

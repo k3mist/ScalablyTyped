@@ -12,3 +12,12 @@ trait ExtensionLicensing extends js.Object {
   var overrides: js.Array[LicensingOverride]
 }
 
+object ExtensionLicensing {
+  @scala.inline
+  def apply(overrides: js.Array[LicensingOverride]): ExtensionLicensing = {
+    val __obj = js.Dynamic.literal(overrides = overrides)
+  
+    __obj.asInstanceOf[ExtensionLicensing]
+  }
+}
+

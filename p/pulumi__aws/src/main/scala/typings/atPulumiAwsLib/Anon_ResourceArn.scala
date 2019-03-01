@@ -10,3 +10,12 @@ trait Anon_ResourceArn extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_ResourceArn {
+  @scala.inline
+  def apply(resourceArn: java.lang.String, roleArn: java.lang.String): Anon_ResourceArn = {
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn, roleArn = roleArn)
+  
+    __obj.asInstanceOf[Anon_ResourceArn]
+  }
+}
+

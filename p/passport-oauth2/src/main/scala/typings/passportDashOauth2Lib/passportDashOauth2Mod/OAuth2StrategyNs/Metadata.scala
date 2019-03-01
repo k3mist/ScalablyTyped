@@ -11,3 +11,12 @@ trait Metadata extends js.Object {
   var tokenURL: java.lang.String
 }
 
+object Metadata {
+  @scala.inline
+  def apply(authorizationURL: java.lang.String, clientID: java.lang.String, tokenURL: java.lang.String): Metadata = {
+    val __obj = js.Dynamic.literal(authorizationURL = authorizationURL, clientID = clientID, tokenURL = tokenURL)
+  
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

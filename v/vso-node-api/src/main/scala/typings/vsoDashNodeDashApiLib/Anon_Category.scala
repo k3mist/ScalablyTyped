@@ -25,3 +25,30 @@ trait Anon_Category extends js.Object {
   var vsixMetadata: scala.Double
 }
 
+object Anon_Category {
+  @scala.inline
+  def apply(
+    category: scala.Double,
+    contributionType: scala.Double,
+    displayName: scala.Double,
+    excludeWithFlags: scala.Double,
+    featured: scala.Double,
+    featuredInCategory: scala.Double,
+    id: scala.Double,
+    includeWithFlags: scala.Double,
+    installationTarget: scala.Double,
+    installationTargetVersion: scala.Double,
+    installationTargetVersionRange: scala.Double,
+    lcid: scala.Double,
+    name: scala.Double,
+    `private`: scala.Double,
+    searchText: scala.Double,
+    tag: scala.Double,
+    vsixMetadata: scala.Double
+  ): Anon_Category = {
+    val __obj = js.Dynamic.literal(category = category, contributionType = contributionType, displayName = displayName, excludeWithFlags = excludeWithFlags, featured = featured, featuredInCategory = featuredInCategory, id = id, includeWithFlags = includeWithFlags, installationTarget = installationTarget, installationTargetVersion = installationTargetVersion, installationTargetVersionRange = installationTargetVersionRange, lcid = lcid, name = name, `private` = `private`, searchText = searchText, tag = tag, vsixMetadata = vsixMetadata)
+  
+    __obj.asInstanceOf[Anon_Category]
+  }
+}
+

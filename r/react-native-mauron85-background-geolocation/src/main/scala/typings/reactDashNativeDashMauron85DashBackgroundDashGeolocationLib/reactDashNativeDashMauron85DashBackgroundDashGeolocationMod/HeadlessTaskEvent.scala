@@ -15,3 +15,12 @@ trait HeadlessTaskEvent extends js.Object {
   var params: js.Any
 }
 
+object HeadlessTaskEvent {
+  @scala.inline
+  def apply(name: HeadlessTaskEventName, params: js.Any): HeadlessTaskEvent = {
+    val __obj = js.Dynamic.literal(name = name, params = params)
+  
+    __obj.asInstanceOf[HeadlessTaskEvent]
+  }
+}
+

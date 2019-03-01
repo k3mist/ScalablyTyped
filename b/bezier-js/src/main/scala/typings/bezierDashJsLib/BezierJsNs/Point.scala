@@ -11,3 +11,12 @@ trait Point extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double, z: scala.Int | scala.Double = null): Point = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Point]
+  }
+}
+

@@ -18,3 +18,16 @@ trait AnimationSequenceMetadata extends AnimationMetadata {
   var steps: js.Array[AnimationMetadata]
 }
 
+object AnimationSequenceMetadata {
+  @scala.inline
+  def apply(
+    steps: js.Array[AnimationMetadata],
+    `type`: AnimationMetadataType,
+    options: AnimationOptions = null
+  ): AnimationSequenceMetadata = {
+    val __obj = js.Dynamic.literal(steps = steps, `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationSequenceMetadata]
+  }
+}
+

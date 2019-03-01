@@ -28,3 +28,18 @@ trait TaskAgentPoolMaintenanceSchedule extends js.Object {
   var timeZoneId: java.lang.String
 }
 
+object TaskAgentPoolMaintenanceSchedule {
+  @scala.inline
+  def apply(
+    daysToBuild: TaskAgentPoolMaintenanceScheduleDays,
+    scheduleJobId: java.lang.String,
+    startHours: scala.Double,
+    startMinutes: scala.Double,
+    timeZoneId: java.lang.String
+  ): TaskAgentPoolMaintenanceSchedule = {
+    val __obj = js.Dynamic.literal(daysToBuild = daysToBuild, scheduleJobId = scheduleJobId, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+  
+    __obj.asInstanceOf[TaskAgentPoolMaintenanceSchedule]
+  }
+}
+

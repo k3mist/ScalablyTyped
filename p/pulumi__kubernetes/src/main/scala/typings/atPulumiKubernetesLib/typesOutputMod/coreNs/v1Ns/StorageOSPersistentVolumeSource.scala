@@ -39,3 +39,18 @@ trait StorageOSPersistentVolumeSource extends js.Object {
   val volumeNamespace: java.lang.String
 }
 
+object StorageOSPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    readOnly: scala.Boolean,
+    secretRef: ObjectReference,
+    volumeName: java.lang.String,
+    volumeNamespace: java.lang.String
+  ): StorageOSPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, readOnly = readOnly, secretRef = secretRef, volumeName = volumeName, volumeNamespace = volumeNamespace)
+  
+    __obj.asInstanceOf[StorageOSPersistentVolumeSource]
+  }
+}
+

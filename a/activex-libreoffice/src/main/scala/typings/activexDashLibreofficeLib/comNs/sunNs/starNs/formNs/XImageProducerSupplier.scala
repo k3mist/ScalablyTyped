@@ -23,3 +23,18 @@ trait XImageProducerSupplier
   def getImageProducer(): activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer
 }
 
+object XImageProducerSupplier {
+  @scala.inline
+  def apply(
+    ImageProducer: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer,
+    acquire: js.Function0[scala.Unit],
+    getImageProducer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XImageProducer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XImageProducerSupplier = {
+    val __obj = js.Dynamic.literal(ImageProducer = ImageProducer, acquire = acquire, getImageProducer = getImageProducer, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XImageProducerSupplier]
+  }
+}
+

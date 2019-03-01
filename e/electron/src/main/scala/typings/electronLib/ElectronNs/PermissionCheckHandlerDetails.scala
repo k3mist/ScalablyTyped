@@ -16,3 +16,15 @@ trait PermissionCheckHandlerDetails extends js.Object {
   var securityOrigin: java.lang.String
 }
 
+object PermissionCheckHandlerDetails {
+  @scala.inline
+  def apply(
+    mediaType: electronLib.electronLibStrings.video | electronLib.electronLibStrings.audio | electronLib.electronLibStrings.unknown,
+    securityOrigin: java.lang.String
+  ): PermissionCheckHandlerDetails = {
+    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], securityOrigin = securityOrigin)
+  
+    __obj.asInstanceOf[PermissionCheckHandlerDetails]
+  }
+}
+

@@ -48,3 +48,17 @@ trait ISearchCombinationOptions extends js.Object {
   var qSearchFields: js.Array[java.lang.String]
 }
 
+object ISearchCombinationOptions {
+  @scala.inline
+  def apply(
+    qCharEncoding: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.Utf8 | qlikDashEngineapiLib.qlikDashEngineapiLibStrings.Utf16,
+    qContext: ContextType,
+    qSearchFields: js.Array[java.lang.String],
+    qAttributes: js.Array[java.lang.String] = null
+  ): ISearchCombinationOptions = {
+    val __obj = js.Dynamic.literal(qCharEncoding = qCharEncoding.asInstanceOf[js.Any], qContext = qContext, qSearchFields = qSearchFields)
+    if (qAttributes != null) __obj.updateDynamic("qAttributes")(qAttributes)
+    __obj.asInstanceOf[ISearchCombinationOptions]
+  }
+}
+

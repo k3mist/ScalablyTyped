@@ -12,3 +12,17 @@ trait IThumbnailProperties extends js.Object {
   var `type`: ThumbnailType
 }
 
+object IThumbnailProperties {
+  @scala.inline
+  def apply(
+    originalHeight: scala.Double,
+    originalWidth: scala.Double,
+    returnedSmallerCachedSize: scala.Boolean,
+    `type`: ThumbnailType
+  ): IThumbnailProperties = {
+    val __obj = js.Dynamic.literal(originalHeight = originalHeight, originalWidth = originalWidth, returnedSmallerCachedSize = returnedSmallerCachedSize, `type` = `type`)
+  
+    __obj.asInstanceOf[IThumbnailProperties]
+  }
+}
+

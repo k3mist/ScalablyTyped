@@ -12,3 +12,17 @@ trait IPathHistory extends js.Object {
   def pushState(state: js.Any, title: java.lang.String, path: java.lang.String): scala.Unit
 }
 
+object IPathHistory {
+  @scala.inline
+  def apply(
+    initial: js.Any,
+    listen: js.Function1[js.Any, scala.Unit],
+    popState: js.Function1[js.Any, scala.Unit],
+    pushState: js.Function3[js.Any, java.lang.String, java.lang.String, scala.Unit]
+  ): IPathHistory = {
+    val __obj = js.Dynamic.literal(initial = initial, listen = listen, popState = popState, pushState = pushState)
+  
+    __obj.asInstanceOf[IPathHistory]
+  }
+}
+

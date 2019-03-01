@@ -63,3 +63,22 @@ trait CheckUtil extends js.Object {
   def isWritable(obj: js.Any, key: java.lang.String): scala.Boolean
 }
 
+object CheckUtil {
+  @scala.inline
+  def apply(
+    isArray: js.Function1[js.Any, scala.Boolean],
+    isBlank: js.Function1[js.Any, scala.Boolean],
+    isBoolAttr: js.Function1[java.lang.String, scala.Boolean],
+    isFunction: js.Function1[js.Any, scala.Boolean],
+    isObject: js.Function1[js.Any, scala.Boolean],
+    isReservedName: js.Function1[java.lang.String, scala.Boolean],
+    isString: js.Function1[js.Any, /* is string */ scala.Boolean],
+    isUndefined: js.Function1[js.Any, scala.Boolean],
+    isWritable: js.Function2[js.Any, java.lang.String, scala.Boolean]
+  ): CheckUtil = {
+    val __obj = js.Dynamic.literal(isArray = isArray, isBlank = isBlank, isBoolAttr = isBoolAttr, isFunction = isFunction, isObject = isObject, isReservedName = isReservedName, isString = isString, isUndefined = isUndefined, isWritable = isWritable)
+  
+    __obj.asInstanceOf[CheckUtil]
+  }
+}
+

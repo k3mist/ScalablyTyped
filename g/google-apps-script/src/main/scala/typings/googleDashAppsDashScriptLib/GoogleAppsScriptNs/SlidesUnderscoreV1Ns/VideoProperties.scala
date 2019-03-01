@@ -29,3 +29,18 @@ trait VideoProperties extends js.Object {
   var start: scala.Double
 }
 
+object VideoProperties {
+  @scala.inline
+  def apply(
+    auto_play: scala.Boolean,
+    end: scala.Double,
+    mute: scala.Boolean,
+    outline: Outline,
+    start: scala.Double
+  ): VideoProperties = {
+    val __obj = js.Dynamic.literal(auto_play = auto_play, end = end, mute = mute, outline = outline, start = start)
+  
+    __obj.asInstanceOf[VideoProperties]
+  }
+}
+

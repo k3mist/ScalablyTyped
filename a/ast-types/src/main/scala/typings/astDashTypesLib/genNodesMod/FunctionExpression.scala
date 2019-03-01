@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.FunctionExpression
 }
 
+object FunctionExpression {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.FunctionExpression): FunctionExpression = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[FunctionExpression]
+  }
+}
+

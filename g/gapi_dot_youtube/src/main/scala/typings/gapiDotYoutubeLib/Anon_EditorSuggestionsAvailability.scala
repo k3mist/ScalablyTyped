@@ -37,3 +37,21 @@ trait Anon_EditorSuggestionsAvailability extends js.Object {
   var thumbnailsAvailability: java.lang.String
 }
 
+object Anon_EditorSuggestionsAvailability {
+  @scala.inline
+  def apply(
+    editorSuggestionsAvailability: java.lang.String,
+    fileDetailsAvailability: java.lang.String,
+    processingFailureReason: java.lang.String,
+    processingIssuesAvailability: java.lang.String,
+    processingProgress: Anon_PartsProcessed,
+    processingStatus: java.lang.String,
+    tagSuggestionsAvailability: java.lang.String,
+    thumbnailsAvailability: java.lang.String
+  ): Anon_EditorSuggestionsAvailability = {
+    val __obj = js.Dynamic.literal(editorSuggestionsAvailability = editorSuggestionsAvailability, fileDetailsAvailability = fileDetailsAvailability, processingFailureReason = processingFailureReason, processingIssuesAvailability = processingIssuesAvailability, processingProgress = processingProgress, processingStatus = processingStatus, tagSuggestionsAvailability = tagSuggestionsAvailability, thumbnailsAvailability = thumbnailsAvailability)
+  
+    __obj.asInstanceOf[Anon_EditorSuggestionsAvailability]
+  }
+}
+

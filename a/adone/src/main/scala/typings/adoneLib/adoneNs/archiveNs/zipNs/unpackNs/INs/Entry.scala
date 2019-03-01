@@ -42,3 +42,34 @@ trait Entry[StringType] extends js.Object {
   def isEncrypted(): scala.Boolean
 }
 
+object Entry {
+  @scala.inline
+  def apply[StringType](
+    compressedSize: scala.Double,
+    compressionMethod: scala.Double,
+    crc32: scala.Double,
+    externalFileAttributes: scala.Double,
+    extraFieldLength: scala.Double,
+    extraFields: js.Array[ExtraField],
+    fileComment: StringType,
+    fileCommentLength: scala.Double,
+    fileName: StringType,
+    fileNameLength: scala.Double,
+    generalPurposeBitFlag: scala.Double,
+    getLastModDate: js.Function0[adoneLib.adoneNs.INs.datetimeNs.Datetime],
+    internalFileAttributes: scala.Double,
+    isCompressed: js.Function0[scala.Boolean],
+    isEncrypted: js.Function0[scala.Boolean],
+    lastModFileDate: scala.Double,
+    lastModFileTime: scala.Double,
+    relativeOffsetOfLocalHeader: scala.Double,
+    uncompressedSize: scala.Double,
+    versionMadeBy: scala.Double,
+    versionNeededToExtract: scala.Double
+  ): Entry[StringType] = {
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, externalFileAttributes = externalFileAttributes, extraFieldLength = extraFieldLength, extraFields = extraFields, fileComment = fileComment.asInstanceOf[js.Any], fileCommentLength = fileCommentLength, fileName = fileName.asInstanceOf[js.Any], fileNameLength = fileNameLength, generalPurposeBitFlag = generalPurposeBitFlag, getLastModDate = getLastModDate, internalFileAttributes = internalFileAttributes, isCompressed = isCompressed, isEncrypted = isEncrypted, lastModFileDate = lastModFileDate, lastModFileTime = lastModFileTime, relativeOffsetOfLocalHeader = relativeOffsetOfLocalHeader, uncompressedSize = uncompressedSize, versionMadeBy = versionMadeBy, versionNeededToExtract = versionNeededToExtract)
+  
+    __obj.asInstanceOf[Entry[StringType]]
+  }
+}
+

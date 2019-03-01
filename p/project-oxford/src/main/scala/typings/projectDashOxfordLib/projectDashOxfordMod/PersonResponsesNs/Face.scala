@@ -10,3 +10,12 @@ trait Face extends js.Object {
   var userData: java.lang.String
 }
 
+object Face {
+  @scala.inline
+  def apply(faceId: java.lang.String, userData: java.lang.String): Face = {
+    val __obj = js.Dynamic.literal(faceId = faceId, userData = userData)
+  
+    __obj.asInstanceOf[Face]
+  }
+}
+

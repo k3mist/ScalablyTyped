@@ -10,3 +10,12 @@ trait IProvisionFromXmlDocumentResults extends js.Object {
   var provisionResultsXml: java.lang.String
 }
 
+object IProvisionFromXmlDocumentResults {
+  @scala.inline
+  def apply(allElementsProvisioned: scala.Boolean, provisionResultsXml: java.lang.String): IProvisionFromXmlDocumentResults = {
+    val __obj = js.Dynamic.literal(allElementsProvisioned = allElementsProvisioned, provisionResultsXml = provisionResultsXml)
+  
+    __obj.asInstanceOf[IProvisionFromXmlDocumentResults]
+  }
+}
+

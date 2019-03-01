@@ -24,3 +24,18 @@ trait BuildArgs extends js.Object {
   val version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object BuildArgs {
+  @scala.inline
+  def apply(
+    operatingSystem: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    storageLocation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketKeyRoleArn],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    version: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): BuildArgs = {
+    val __obj = js.Dynamic.literal(operatingSystem = operatingSystem.asInstanceOf[js.Any], storageLocation = storageLocation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BuildArgs]
+  }
+}
+

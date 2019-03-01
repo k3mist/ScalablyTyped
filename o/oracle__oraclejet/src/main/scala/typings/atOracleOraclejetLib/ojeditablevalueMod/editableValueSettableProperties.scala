@@ -18,3 +18,24 @@ trait editableValueSettableProperties[V, SV, RV]
   var value: SV
 }
 
+object editableValueSettableProperties {
+  @scala.inline
+  def apply[V, SV, RV](
+    disabled: scala.Boolean,
+    displayOptions: atOracleOraclejetLib.Anon_ConverterHint,
+    help: atOracleOraclejetLib.Anon_Instruction,
+    helpHints: atOracleOraclejetLib.Anon_Definition,
+    labelHint: java.lang.String,
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
+    value: SV,
+    describedBy: java.lang.String = null,
+    translations: js.Object = null
+  ): editableValueSettableProperties[V, SV, RV] = {
+    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
+    if (translations != null) __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[editableValueSettableProperties[V, SV, RV]]
+  }
+}
+

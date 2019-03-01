@@ -10,3 +10,12 @@ trait Anon_CheckResult extends js.Object {
   var errMsg: Anon_Msg
 }
 
+object Anon_CheckResult {
+  @scala.inline
+  def apply(checkResult: org.scalablytyped.runtime.StringDictionary[scala.Boolean], errMsg: Anon_Msg): Anon_CheckResult = {
+    val __obj = js.Dynamic.literal(checkResult = checkResult, errMsg = errMsg)
+  
+    __obj.asInstanceOf[Anon_CheckResult]
+  }
+}
+

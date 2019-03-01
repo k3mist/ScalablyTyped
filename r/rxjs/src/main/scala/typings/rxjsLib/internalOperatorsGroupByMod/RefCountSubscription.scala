@@ -12,3 +12,17 @@ trait RefCountSubscription extends js.Object {
   def unsubscribe(): scala.Unit
 }
 
+object RefCountSubscription {
+  @scala.inline
+  def apply(
+    attemptedToUnsubscribe: scala.Boolean,
+    closed: scala.Boolean,
+    count: scala.Double,
+    unsubscribe: js.Function0[scala.Unit]
+  ): RefCountSubscription = {
+    val __obj = js.Dynamic.literal(attemptedToUnsubscribe = attemptedToUnsubscribe, closed = closed, count = count, unsubscribe = unsubscribe)
+  
+    __obj.asInstanceOf[RefCountSubscription]
+  }
+}
+

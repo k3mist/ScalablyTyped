@@ -14,3 +14,12 @@ trait WriteError extends js.Object {
   var index: scala.Double
 }
 
+object WriteError {
+  @scala.inline
+  def apply(code: scala.Double, errmsg: java.lang.String, index: scala.Double): WriteError = {
+    val __obj = js.Dynamic.literal(code = code, errmsg = errmsg, index = index)
+  
+    __obj.asInstanceOf[WriteError]
+  }
+}
+

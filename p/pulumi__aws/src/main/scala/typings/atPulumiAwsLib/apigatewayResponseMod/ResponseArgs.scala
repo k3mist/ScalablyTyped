@@ -36,3 +36,24 @@ trait ResponseArgs extends js.Object {
   val statusCode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ResponseArgs {
+  @scala.inline
+  def apply(
+    responseType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApiId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    responseParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    responseTemplates: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    statusCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ResponseArgs = {
+    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
+    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
+    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResponseArgs]
+  }
+}
+

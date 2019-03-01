@@ -38,3 +38,18 @@ trait XUniqueCellFormatRangesSupplier
   def getUniqueCellFormatRanges(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XUniqueCellFormatRangesSupplier {
+  @scala.inline
+  def apply(
+    UniqueCellFormatRanges: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getUniqueCellFormatRanges: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUniqueCellFormatRangesSupplier = {
+    val __obj = js.Dynamic.literal(UniqueCellFormatRanges = UniqueCellFormatRanges, acquire = acquire, getUniqueCellFormatRanges = getUniqueCellFormatRanges, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUniqueCellFormatRangesSupplier]
+  }
+}
+

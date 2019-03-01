@@ -22,3 +22,40 @@ trait TeamsRequestObject extends RequestObject {
   var team_name: js.UndefOr[StringRequest] = js.undefined
 }
 
+object TeamsRequestObject {
+  @scala.inline
+  def apply(
+    city: StringRequest = null,
+    country: StringRequest = null,
+    grade: StringRequest = null,
+    is_registered: NumberRequest = null,
+    limit_number: scala.Int | scala.Double = null,
+    limit_start: scala.Int | scala.Double = null,
+    number: StringRequest = null,
+    organisation: StringRequest = null,
+    program: StringRequest = null,
+    region: StringRequest = null,
+    robot_name: StringRequest = null,
+    sku: StringRequest = null,
+    team: StringRequest = null,
+    team_name: StringRequest = null
+  ): TeamsRequestObject = {
+    val __obj = js.Dynamic.literal()
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
+    if (is_registered != null) __obj.updateDynamic("is_registered")(is_registered.asInstanceOf[js.Any])
+    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
+    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (organisation != null) __obj.updateDynamic("organisation")(organisation.asInstanceOf[js.Any])
+    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
+    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
+    if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TeamsRequestObject]
+  }
+}
+

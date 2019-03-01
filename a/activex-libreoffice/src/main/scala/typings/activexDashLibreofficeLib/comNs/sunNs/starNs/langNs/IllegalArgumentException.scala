@@ -16,3 +16,16 @@ trait IllegalArgumentException
   var ArgumentPosition: scala.Double
 }
 
+object IllegalArgumentException {
+  @scala.inline
+  def apply(
+    ArgumentPosition: scala.Double,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): IllegalArgumentException = {
+    val __obj = js.Dynamic.literal(ArgumentPosition = ArgumentPosition, Context = Context, Message = Message)
+  
+    __obj.asInstanceOf[IllegalArgumentException]
+  }
+}
+

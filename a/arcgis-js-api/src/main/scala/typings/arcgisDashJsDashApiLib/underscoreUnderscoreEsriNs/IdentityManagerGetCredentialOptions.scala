@@ -29,3 +29,21 @@ trait IdentityManagerGetCredentialOptions
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentityManagerGetCredentialOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    error: Error = null,
+    oAuthPopupConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
+    token: java.lang.String = null
+  ): IdentityManagerGetCredentialOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(oAuthPopupConfirmation)) __obj.updateDynamic("oAuthPopupConfirmation")(oAuthPopupConfirmation)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[IdentityManagerGetCredentialOptions]
+  }
+}
+

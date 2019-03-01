@@ -14,3 +14,20 @@ trait Toastr extends js.Object {
   var `type`: toastType
 }
 
+object Toastr {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    options: BasicToastrOptions | LightToastrOptions,
+    position: positionType,
+    `type`: toastType,
+    message: java.lang.String = null,
+    title: java.lang.String = null
+  ): Toastr = {
+    val __obj = js.Dynamic.literal(id = id, options = options.asInstanceOf[js.Any], position = position, `type` = `type`)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Toastr]
+  }
+}
+

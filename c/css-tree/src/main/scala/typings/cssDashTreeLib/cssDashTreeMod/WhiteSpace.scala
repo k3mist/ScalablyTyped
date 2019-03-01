@@ -14,3 +14,16 @@ trait WhiteSpace
   var value: java.lang.String
 }
 
+object WhiteSpace {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.WhiteSpace,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): WhiteSpace = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[WhiteSpace]
+  }
+}
+

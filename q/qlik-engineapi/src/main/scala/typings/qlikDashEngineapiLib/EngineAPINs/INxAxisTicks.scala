@@ -23,3 +23,12 @@ trait INxAxisTicks extends js.Object {
   var qTicks: js.Array[INxTickCell]
 }
 
+object INxAxisTicks {
+  @scala.inline
+  def apply(qName: java.lang.String, qTags: js.Array[java.lang.String], qTicks: js.Array[INxTickCell]): INxAxisTicks = {
+    val __obj = js.Dynamic.literal(qName = qName, qTags = qTags, qTicks = qTicks)
+  
+    __obj.asInstanceOf[INxAxisTicks]
+  }
+}
+

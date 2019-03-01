@@ -16,3 +16,12 @@ trait ASPxClientRatingControlItemMouseEventArgs extends ASPxClientEventArgs {
   var index: scala.Double
 }
 
+object ASPxClientRatingControlItemMouseEventArgs {
+  @scala.inline
+  def apply(index: scala.Double): ASPxClientRatingControlItemMouseEventArgs = {
+    val __obj = js.Dynamic.literal(index = index)
+  
+    __obj.asInstanceOf[ASPxClientRatingControlItemMouseEventArgs]
+  }
+}
+

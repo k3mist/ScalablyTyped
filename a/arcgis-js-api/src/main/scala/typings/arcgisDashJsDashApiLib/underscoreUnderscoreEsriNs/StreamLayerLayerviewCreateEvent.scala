@@ -10,3 +10,12 @@ trait StreamLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object StreamLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): StreamLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[StreamLayerLayerviewCreateEvent]
+  }
+}
+

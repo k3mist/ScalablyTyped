@@ -50,3 +50,30 @@ trait EndpointState extends js.Object {
   val transportProtocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object EndpointState {
+  @scala.inline
+  def apply(
+    authenticationOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActiveDirectoryIdRootCertificateChainArn] = null,
+    clientCidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionLogOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupCloudwatchLogStream] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsServers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    serverCertificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    transportProtocol: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): EndpointState = {
+    val __obj = js.Dynamic.literal()
+    if (authenticationOptions != null) __obj.updateDynamic("authenticationOptions")(authenticationOptions.asInstanceOf[js.Any])
+    if (clientCidrBlock != null) __obj.updateDynamic("clientCidrBlock")(clientCidrBlock.asInstanceOf[js.Any])
+    if (connectionLogOptions != null) __obj.updateDynamic("connectionLogOptions")(connectionLogOptions.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
+    if (serverCertificateArn != null) __obj.updateDynamic("serverCertificateArn")(serverCertificateArn.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EndpointState]
+  }
+}
+

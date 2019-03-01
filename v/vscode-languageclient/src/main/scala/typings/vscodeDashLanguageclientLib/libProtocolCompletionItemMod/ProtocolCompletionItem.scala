@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
   var originalItemKind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
 }
 
+object ProtocolCompletionItem {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    deprecated: scala.Boolean,
+    documentationFormat: java.lang.String,
+    fromEdit: scala.Boolean,
+    originalItemKind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+  ): ProtocolCompletionItem = {
+    val __obj = js.Dynamic.literal(data = data, deprecated = deprecated, documentationFormat = documentationFormat, fromEdit = fromEdit, originalItemKind = originalItemKind)
+  
+    __obj.asInstanceOf[ProtocolCompletionItem]
+  }
+}
+

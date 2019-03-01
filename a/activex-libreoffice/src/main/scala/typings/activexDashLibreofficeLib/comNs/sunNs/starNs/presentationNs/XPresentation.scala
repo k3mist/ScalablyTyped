@@ -16,3 +16,19 @@ trait XPresentation
   def start(): scala.Unit
 }
 
+object XPresentation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    end: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    rehearseTimings: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit],
+    start: js.Function0[scala.Unit]
+  ): XPresentation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, end = end, queryInterface = queryInterface, rehearseTimings = rehearseTimings, release = release, start = start)
+  
+    __obj.asInstanceOf[XPresentation]
+  }
+}
+

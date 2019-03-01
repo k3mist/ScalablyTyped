@@ -167,3 +167,55 @@ trait XSlideShow
   def update(nNextTimeout: js.Array[scala.Double]): scala.Boolean
 }
 
+object XSlideShow {
+  @scala.inline
+  def apply(
+    CurrentSlide: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
+    acquire: js.Function0[scala.Unit],
+    addShapeEventListener: js.Function2[
+      XShapeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
+      scala.Unit
+    ],
+    addSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    addView: js.Function1[XSlideShowView, scala.Boolean],
+    displaySlide: js.Function4[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPagesSupplier, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.animationsNs.XAnimationNode, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    getCurrentSlide: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    nextEffect: js.Function0[scala.Boolean],
+    pause: js.Function1[scala.Boolean, scala.Boolean],
+    previousEffect: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerUserPaintPolygons: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    removeShapeEventListener: js.Function2[
+      XShapeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
+      scala.Unit
+    ],
+    removeSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    removeView: js.Function1[XSlideShowView, scala.Boolean],
+    setProperty: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue, scala.Boolean],
+    setShapeCursor: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
+      scala.Double, 
+      scala.Unit
+    ],
+    startShapeActivity: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Boolean],
+    stopShapeActivity: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Boolean],
+    update: js.Function1[js.Array[scala.Double], scala.Boolean]
+  ): XSlideShow = {
+    val __obj = js.Dynamic.literal(CurrentSlide = CurrentSlide, acquire = acquire, addShapeEventListener = addShapeEventListener, addSlideShowListener = addSlideShowListener, addView = addView, displaySlide = displaySlide, getCurrentSlide = getCurrentSlide, nextEffect = nextEffect, pause = pause, previousEffect = previousEffect, queryInterface = queryInterface, registerUserPaintPolygons = registerUserPaintPolygons, release = release, removeShapeEventListener = removeShapeEventListener, removeSlideShowListener = removeSlideShowListener, removeView = removeView, setProperty = setProperty, setShapeCursor = setShapeCursor, startShapeActivity = startShapeActivity, stopShapeActivity = stopShapeActivity, update = update)
+  
+    __obj.asInstanceOf[XSlideShow]
+  }
+}
+

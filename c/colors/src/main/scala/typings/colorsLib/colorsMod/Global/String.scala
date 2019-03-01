@@ -43,3 +43,47 @@ trait String extends js.Object {
   var zebra: java.lang.String
 }
 
+object String {
+  @scala.inline
+  def apply(
+    america: java.lang.String,
+    bgBlack: java.lang.String,
+    bgBlue: java.lang.String,
+    bgCyan: java.lang.String,
+    bgGreen: java.lang.String,
+    bgMagenta: java.lang.String,
+    bgRed: java.lang.String,
+    bgWhite: java.lang.String,
+    bgYellow: java.lang.String,
+    black: java.lang.String,
+    blue: java.lang.String,
+    bold: java.lang.String,
+    cyan: java.lang.String,
+    dim: java.lang.String,
+    gray: java.lang.String,
+    green: java.lang.String,
+    grey: java.lang.String,
+    hidden: java.lang.String,
+    inverse: java.lang.String,
+    italic: java.lang.String,
+    magenta: java.lang.String,
+    rainbow: java.lang.String,
+    random: java.lang.String,
+    red: java.lang.String,
+    reset: java.lang.String,
+    strikethrough: java.lang.String,
+    strip: java.lang.String,
+    stripColors: java.lang.String,
+    trap: java.lang.String,
+    underline: java.lang.String,
+    white: java.lang.String,
+    yellow: java.lang.String,
+    zalgo: java.lang.String,
+    zebra: java.lang.String
+  ): String = {
+    val __obj = js.Dynamic.literal(america = america, bgBlack = bgBlack, bgBlue = bgBlue, bgCyan = bgCyan, bgGreen = bgGreen, bgMagenta = bgMagenta, bgRed = bgRed, bgWhite = bgWhite, bgYellow = bgYellow, black = black, blue = blue, bold = bold, cyan = cyan, dim = dim, gray = gray, green = green, grey = grey, hidden = hidden, inverse = inverse, italic = italic, magenta = magenta, rainbow = rainbow, random = random, red = red, reset = reset, strikethrough = strikethrough, strip = strip, stripColors = stripColors, trap = trap, underline = underline, white = white, yellow = yellow, zalgo = zalgo, zebra = zebra)
+  
+    __obj.asInstanceOf[String]
+  }
+}
+

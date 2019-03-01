@@ -24,3 +24,29 @@ trait DevicesResource extends js.Object {
   def setState(request: gapiDotClientDotAndroidenterpriseLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
 }
 
+object DevicesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    getState: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DevicesListResponse]
+    ],
+    setState: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
+    ]
+  ): DevicesResource = {
+    val __obj = js.Dynamic.literal(get = get, getState = getState, list = list, setState = setState)
+  
+    __obj.asInstanceOf[DevicesResource]
+  }
+}
+

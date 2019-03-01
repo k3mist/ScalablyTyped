@@ -36,3 +36,18 @@ trait ASPxClientAppointmentResizingEventArgs extends ASPxClientEventArgs {
   var oldInterval: ASPxClientTimeInterval
 }
 
+object ASPxClientAppointmentResizingEventArgs {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    appointmentId: java.lang.String,
+    mouseEvent: js.Object,
+    newInterval: ASPxClientTimeInterval,
+    oldInterval: ASPxClientTimeInterval
+  ): ASPxClientAppointmentResizingEventArgs = {
+    val __obj = js.Dynamic.literal(allow = allow, appointmentId = appointmentId, mouseEvent = mouseEvent, newInterval = newInterval, oldInterval = oldInterval)
+  
+    __obj.asInstanceOf[ASPxClientAppointmentResizingEventArgs]
+  }
+}
+

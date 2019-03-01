@@ -44,3 +44,35 @@ trait ASPxClientLoadingPanel extends ASPxClientControl {
   def ShowInElementByID(id: java.lang.String): scala.Unit
 }
 
+object ASPxClientLoadingPanel {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    Hide: js.Function0[scala.Unit],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    Show: js.Function0[scala.Unit],
+    ShowAtPos: js.Function2[scala.Double, scala.Double, scala.Unit],
+    ShowInElement: js.Function1[js.Object, scala.Unit],
+    ShowInElementByID: js.Function1[java.lang.String, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientLoadingPanel = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetText = GetText, GetVisible = GetVisible, GetWidth = GetWidth, Hide = Hide, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetText = SetText, SetVisible = SetVisible, SetWidth = SetWidth, Show = Show, ShowAtPos = ShowAtPos, ShowInElement = ShowInElement, ShowInElementByID = ShowInElementByID, name = name)
+  
+    __obj.asInstanceOf[ASPxClientLoadingPanel]
+  }
+}
+

@@ -12,3 +12,18 @@ trait Guild extends js.Object {
   var name: java.lang.String
 }
 
+object Guild {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    icon_url: java.lang.String = null,
+    members: js.Array[_] = null
+  ): Guild = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    if (icon_url != null) __obj.updateDynamic("icon_url")(icon_url)
+    if (members != null) __obj.updateDynamic("members")(members)
+    __obj.asInstanceOf[Guild]
+  }
+}
+

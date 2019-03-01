@@ -19,3 +19,19 @@ trait DocumentPasswordRequest2 extends DocumentPasswordRequest {
   var IsRequestPasswordToModify: scala.Boolean
 }
 
+object DocumentPasswordRequest2 {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    IsRequestPasswordToModify: scala.Boolean,
+    Message: java.lang.String,
+    Mode: PasswordRequestMode,
+    Name: java.lang.String
+  ): DocumentPasswordRequest2 = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, IsRequestPasswordToModify = IsRequestPasswordToModify, Message = Message, Mode = Mode, Name = Name)
+  
+    __obj.asInstanceOf[DocumentPasswordRequest2]
+  }
+}
+

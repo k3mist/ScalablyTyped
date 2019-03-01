@@ -17,3 +17,20 @@ trait KnockoutBindingProvider extends js.Object {
   def nodeHasBindings(node: stdLib.Node): scala.Boolean
 }
 
+object KnockoutBindingProvider {
+  @scala.inline
+  def apply(
+    getBindings: js.Function2[stdLib.Node, KnockoutBindingContext, js.Object],
+    nodeHasBindings: js.Function1[stdLib.Node, scala.Boolean],
+    getBindingAccessors: js.Function2[
+      /* node */ stdLib.Node, 
+      /* bindingContext */ KnockoutBindingContext, 
+      org.scalablytyped.runtime.StringDictionary[java.lang.String]
+    ] = null
+  ): KnockoutBindingProvider = {
+    val __obj = js.Dynamic.literal(getBindings = getBindings, nodeHasBindings = nodeHasBindings)
+    if (getBindingAccessors != null) __obj.updateDynamic("getBindingAccessors")(getBindingAccessors)
+    __obj.asInstanceOf[KnockoutBindingProvider]
+  }
+}
+

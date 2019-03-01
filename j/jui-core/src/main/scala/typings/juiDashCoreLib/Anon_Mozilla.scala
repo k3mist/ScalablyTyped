@@ -14,3 +14,12 @@ trait Anon_Mozilla extends js.Object {
   var webkit: scala.Boolean
 }
 
+object Anon_Mozilla {
+  @scala.inline
+  def apply(mozilla: scala.Boolean, msie: scala.Boolean, webkit: scala.Boolean): Anon_Mozilla = {
+    val __obj = js.Dynamic.literal(mozilla = mozilla, msie = msie, webkit = webkit)
+  
+    __obj.asInstanceOf[Anon_Mozilla]
+  }
+}
+

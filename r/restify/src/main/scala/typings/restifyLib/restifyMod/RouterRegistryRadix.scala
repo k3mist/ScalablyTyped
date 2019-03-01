@@ -24,3 +24,18 @@ trait RouterRegistryRadix extends js.Object {
   def remove(name: java.lang.String): js.UndefOr[Route]
 }
 
+object RouterRegistryRadix {
+  @scala.inline
+  def apply(
+    add: js.Function1[Route, scala.Boolean],
+    get: js.Function0[js.Array[Route]],
+    lookup: js.Function2[java.lang.String, java.lang.String, js.UndefOr[Chain]],
+    remove: js.Function1[java.lang.String, js.UndefOr[Route]],
+    toString: js.Function0[java.lang.String]
+  ): RouterRegistryRadix = {
+    val __obj = js.Dynamic.literal(add = add, get = get, lookup = lookup, remove = remove, toString = toString)
+  
+    __obj.asInstanceOf[RouterRegistryRadix]
+  }
+}
+

@@ -48,3 +48,23 @@ trait Anon_Bulletin extends js.Object {
   var upload: Anon_VideoId
 }
 
+object Anon_Bulletin {
+  @scala.inline
+  def apply(
+    bulletin: Anon_ResourceIdAnonChannelIdKindPlaylistId,
+    channelItem: Anon_ResourceId_447743794,
+    comment: Anon_ResourceIdAnonChannelIdKind,
+    favorite: Anon_ResourceId,
+    like: Anon_ResourceId,
+    playlistItem: Anon_PlaylistId,
+    recommendation: Anon_Reason,
+    social: Anon_Author,
+    subscription: Anon_ResourceIdAnonChannelIdKindString,
+    upload: Anon_VideoId
+  ): Anon_Bulletin = {
+    val __obj = js.Dynamic.literal(bulletin = bulletin, channelItem = channelItem, comment = comment, favorite = favorite, like = like, playlistItem = playlistItem, recommendation = recommendation, social = social, subscription = subscription, upload = upload)
+  
+    __obj.asInstanceOf[Anon_Bulletin]
+  }
+}
+

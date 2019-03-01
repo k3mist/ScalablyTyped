@@ -10,3 +10,12 @@ trait LastSeenObjectIdEventDataType extends js.Object {
   var timestamp: scala.Double
 }
 
+object LastSeenObjectIdEventDataType {
+  @scala.inline
+  def apply(lastSeenObjectId: scala.Double, timestamp: scala.Double): LastSeenObjectIdEventDataType = {
+    val __obj = js.Dynamic.literal(lastSeenObjectId = lastSeenObjectId, timestamp = timestamp)
+  
+    __obj.asInstanceOf[LastSeenObjectIdEventDataType]
+  }
+}
+

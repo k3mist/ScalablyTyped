@@ -32,3 +32,19 @@ trait WorkspaceMapping extends js.Object {
   var workspaceId: scala.Double
 }
 
+object WorkspaceMapping {
+  @scala.inline
+  def apply(
+    definitionUri: java.lang.String,
+    depth: scala.Double,
+    localItem: java.lang.String,
+    mappingType: WorkspaceMappingType,
+    serverItem: java.lang.String,
+    workspaceId: scala.Double
+  ): WorkspaceMapping = {
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri, depth = depth, localItem = localItem, mappingType = mappingType, serverItem = serverItem, workspaceId = workspaceId)
+  
+    __obj.asInstanceOf[WorkspaceMapping]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_CHROMEUPDATE extends js.Object {
   var UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.update
 }
 
+object Anon_CHROMEUPDATE {
+  @scala.inline
+  def apply(
+    CHROME_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.chrome_update,
+    INSTALL: chromeDashAppsLib.chromeDashAppsLibStrings.install,
+    SHARED_MODULE_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.shared_module_update,
+    UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.update
+  ): Anon_CHROMEUPDATE = {
+    val __obj = js.Dynamic.literal(CHROME_UPDATE = CHROME_UPDATE, INSTALL = INSTALL, SHARED_MODULE_UPDATE = SHARED_MODULE_UPDATE, UPDATE = UPDATE)
+  
+    __obj.asInstanceOf[Anon_CHROMEUPDATE]
+  }
+}
+

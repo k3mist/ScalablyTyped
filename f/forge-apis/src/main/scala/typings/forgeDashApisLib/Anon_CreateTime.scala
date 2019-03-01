@@ -19,3 +19,24 @@ trait Anon_CreateTime extends js.Object {
   var versionNumber: scala.Double
 }
 
+object Anon_CreateTime {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String,
+    createUserId: java.lang.String,
+    displayName: java.lang.String,
+    extension: js.Object,
+    fileType: java.lang.String,
+    lastModifiedTime: java.lang.String,
+    lastModifiedUserId: java.lang.String,
+    mimeType: java.lang.String,
+    name: java.lang.String,
+    storageSize: scala.Double,
+    versionNumber: scala.Double
+  ): Anon_CreateTime = {
+    val __obj = js.Dynamic.literal(createTime = createTime, createUserId = createUserId, displayName = displayName, extension = extension, fileType = fileType, lastModifiedTime = lastModifiedTime, lastModifiedUserId = lastModifiedUserId, mimeType = mimeType, name = name, storageSize = storageSize, versionNumber = versionNumber)
+  
+    __obj.asInstanceOf[Anon_CreateTime]
+  }
+}
+

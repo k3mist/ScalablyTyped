@@ -13,3 +13,18 @@ trait Block extends js.Object {
   var oldStartLine2: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Block {
+  @scala.inline
+  def apply(
+    header: java.lang.String,
+    lines: js.Array[Line],
+    newStartLine: scala.Double,
+    oldStartLine: scala.Double,
+    oldStartLine2: scala.Int | scala.Double = null
+  ): Block = {
+    val __obj = js.Dynamic.literal(header = header, lines = lines, newStartLine = newStartLine, oldStartLine = oldStartLine)
+    if (oldStartLine2 != null) __obj.updateDynamic("oldStartLine2")(oldStartLine2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Block]
+  }
+}
+

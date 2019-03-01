@@ -21,3 +21,17 @@ trait RouteArgs extends js.Object {
   val virtualRouterName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RouteArgs {
+  @scala.inline
+  def apply(
+    meshName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch],
+    virtualRouterName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): RouteArgs = {
+    val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteArgs]
+  }
+}
+

@@ -65,3 +65,34 @@ trait CachePolicy extends js.Object {
   def toObject(): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
 }
 
+object CachePolicy {
+  @scala.inline
+  def apply(
+    responseHeaders: js.Function0[
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
+    ],
+    revalidatedPolicy: js.Function2[
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Response, 
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.RevalidationPolicy
+    ],
+    revalidationHeaders: js.Function1[
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
+    ],
+    satisfiesWithoutRevalidation: js.Function1[
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, 
+      scala.Boolean
+    ],
+    storable: js.Function0[scala.Boolean],
+    timeToLive: js.Function0[scala.Double],
+    toObject: js.Function0[
+      httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
+    ]
+  ): CachePolicy = {
+    val __obj = js.Dynamic.literal(responseHeaders = responseHeaders, revalidatedPolicy = revalidatedPolicy, revalidationHeaders = revalidationHeaders, satisfiesWithoutRevalidation = satisfiesWithoutRevalidation, storable = storable, timeToLive = timeToLive, toObject = toObject)
+  
+    __obj.asInstanceOf[CachePolicy]
+  }
+}
+

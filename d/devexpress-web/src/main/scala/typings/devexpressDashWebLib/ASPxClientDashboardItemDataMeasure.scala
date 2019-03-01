@@ -36,3 +36,18 @@ trait ASPxClientDashboardItemDataMeasure extends js.Object {
   def Format(value: js.Object): java.lang.String
 }
 
+object ASPxClientDashboardItemDataMeasure {
+  @scala.inline
+  def apply(
+    DataMember: java.lang.String,
+    Format: js.Function1[js.Object, java.lang.String],
+    Id: java.lang.String,
+    Name: java.lang.String,
+    SummaryType: java.lang.String
+  ): ASPxClientDashboardItemDataMeasure = {
+    val __obj = js.Dynamic.literal(DataMember = DataMember, Format = Format, Id = Id, Name = Name, SummaryType = SummaryType)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemDataMeasure]
+  }
+}
+

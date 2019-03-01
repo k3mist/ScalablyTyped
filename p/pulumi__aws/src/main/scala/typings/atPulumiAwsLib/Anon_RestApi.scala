@@ -10,3 +10,12 @@ trait Anon_RestApi extends js.Object {
   var stageName: java.lang.String
 }
 
+object Anon_RestApi {
+  @scala.inline
+  def apply(restApi: atPulumiAwsLib.apigatewayRestApiMod.RestApi, stageName: java.lang.String): Anon_RestApi = {
+    val __obj = js.Dynamic.literal(restApi = restApi, stageName = stageName)
+  
+    __obj.asInstanceOf[Anon_RestApi]
+  }
+}
+

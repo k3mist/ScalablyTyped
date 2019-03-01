@@ -17,3 +17,22 @@ trait Anon_AllFriday extends js.Object {
   var wednesday: scala.Double
 }
 
+object Anon_AllFriday {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    friday: scala.Double,
+    monday: scala.Double,
+    none: scala.Double,
+    saturday: scala.Double,
+    sunday: scala.Double,
+    thursday: scala.Double,
+    tuesday: scala.Double,
+    wednesday: scala.Double
+  ): Anon_AllFriday = {
+    val __obj = js.Dynamic.literal(all = all, friday = friday, monday = monday, none = none, saturday = saturday, sunday = sunday, thursday = thursday, tuesday = tuesday, wednesday = wednesday)
+  
+    __obj.asInstanceOf[Anon_AllFriday]
+  }
+}
+

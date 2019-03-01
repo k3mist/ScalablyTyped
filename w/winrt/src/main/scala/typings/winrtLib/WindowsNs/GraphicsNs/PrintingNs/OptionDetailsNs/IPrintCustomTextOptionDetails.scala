@@ -9,3 +9,21 @@ trait IPrintCustomTextOptionDetails extends IPrintCustomOptionDetails {
   var maxCharacters: scala.Double
 }
 
+object IPrintCustomTextOptionDetails {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    errorText: java.lang.String,
+    maxCharacters: scala.Double,
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintCustomTextOptionDetails = {
+    val __obj = js.Dynamic.literal(displayName = displayName, errorText = errorText, maxCharacters = maxCharacters, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintCustomTextOptionDetails]
+  }
+}
+

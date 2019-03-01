@@ -28,3 +28,18 @@ trait ArcGISMapServiceProperties extends js.Object {
   var legendEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ArcGISMapServiceProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): ArcGISMapServiceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    __obj.asInstanceOf[ArcGISMapServiceProperties]
+  }
+}
+

@@ -28,3 +28,22 @@ trait MaintenanceWindowTargetState extends js.Object {
   val windowId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object MaintenanceWindowTargetState {
+  @scala.inline
+  def apply(
+    ownerInformation: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    targets: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
+    ] = null,
+    windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MaintenanceWindowTargetState = {
+    val __obj = js.Dynamic.literal()
+    if (ownerInformation != null) __obj.updateDynamic("ownerInformation")(ownerInformation.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowTargetState]
+  }
+}
+

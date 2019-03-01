@@ -23,3 +23,26 @@ trait StructureExtension
   var energyCapacity: scala.Double
 }
 
+object StructureExtension {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[ScreepsReturnCode],
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_EXTENSION
+  ): StructureExtension = {
+    val __obj = js.Dynamic.literal(destroy = destroy, energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, structureType = structureType)
+  
+    __obj.asInstanceOf[StructureExtension]
+  }
+}
+

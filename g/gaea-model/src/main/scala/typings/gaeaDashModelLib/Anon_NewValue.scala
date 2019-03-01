@@ -10,3 +10,15 @@ trait Anon_NewValue extends js.Object {
   var oldValue: gaeaDashModelLib.FitGaeaNs.ComponentProps
 }
 
+object Anon_NewValue {
+  @scala.inline
+  def apply(
+    newValue: gaeaDashModelLib.FitGaeaNs.ComponentProps,
+    oldValue: gaeaDashModelLib.FitGaeaNs.ComponentProps
+  ): Anon_NewValue = {
+    val __obj = js.Dynamic.literal(newValue = newValue, oldValue = oldValue)
+  
+    __obj.asInstanceOf[Anon_NewValue]
+  }
+}
+

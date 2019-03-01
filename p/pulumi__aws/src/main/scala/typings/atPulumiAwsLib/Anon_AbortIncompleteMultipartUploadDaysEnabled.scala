@@ -23,3 +23,29 @@ trait Anon_AbortIncompleteMultipartUploadDaysEnabled extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AbortIncompleteMultipartUploadDaysEnabled {
+  @scala.inline
+  def apply(
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean],
+    abortIncompleteMultipartUploadDays: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    expiration: atPulumiPulumiLib.resourceMod.Input[Anon_DateDaysExpiredObjectDeleteMarker] = null,
+    id: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    noncurrentVersionExpiration: atPulumiPulumiLib.resourceMod.Input[Anon_DaysInput] = null,
+    noncurrentVersionTransitions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_DaysStorageClassInput]]] = null,
+    prefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    transitions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_DateDaysStorageClass]]] = null
+  ): Anon_AbortIncompleteMultipartUploadDaysEnabled = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+    if (abortIncompleteMultipartUploadDays != null) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (noncurrentVersionExpiration != null) __obj.updateDynamic("noncurrentVersionExpiration")(noncurrentVersionExpiration.asInstanceOf[js.Any])
+    if (noncurrentVersionTransitions != null) __obj.updateDynamic("noncurrentVersionTransitions")(noncurrentVersionTransitions.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitions != null) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AbortIncompleteMultipartUploadDaysEnabled]
+  }
+}
+

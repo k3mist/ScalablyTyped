@@ -21,3 +21,20 @@ trait XVclContainer
   def removeVclContainerListener(l: XVclContainerListener): scala.Unit
 }
 
+object XVclContainer {
+  @scala.inline
+  def apply(
+    Windows: activexDashInteropLib.SafeArray[XWindow],
+    acquire: js.Function0[scala.Unit],
+    addVclContainerListener: js.Function1[XVclContainerListener, scala.Unit],
+    getWindows: js.Function0[activexDashInteropLib.SafeArray[XWindow]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeVclContainerListener: js.Function1[XVclContainerListener, scala.Unit]
+  ): XVclContainer = {
+    val __obj = js.Dynamic.literal(Windows = Windows, acquire = acquire, addVclContainerListener = addVclContainerListener, getWindows = getWindows, queryInterface = queryInterface, release = release, removeVclContainerListener = removeVclContainerListener)
+  
+    __obj.asInstanceOf[XVclContainer]
+  }
+}
+

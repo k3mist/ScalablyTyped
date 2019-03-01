@@ -10,3 +10,12 @@ trait Anon_Sql extends js.Object {
   var values: js.Array[_]
 }
 
+object Anon_Sql {
+  @scala.inline
+  def apply(sql: java.lang.String, values: js.Array[_]): Anon_Sql = {
+    val __obj = js.Dynamic.literal(sql = sql, values = values)
+  
+    __obj.asInstanceOf[Anon_Sql]
+  }
+}
+

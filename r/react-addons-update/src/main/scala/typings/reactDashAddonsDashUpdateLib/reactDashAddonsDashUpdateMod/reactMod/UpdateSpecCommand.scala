@@ -14,3 +14,14 @@ trait UpdateSpecCommand extends _UpdateSpec {
   var $set: js.UndefOr[js.Any] = js.undefined
 }
 
+object UpdateSpecCommand {
+  @scala.inline
+  def apply($apply: js.Function1[/* value */ js.Any, _] = null, $merge: js.Object = null, $set: js.Any = null): UpdateSpecCommand = {
+    val __obj = js.Dynamic.literal()
+    if ($apply != null) __obj.updateDynamic("$apply")($apply)
+    if ($merge != null) __obj.updateDynamic("$merge")($merge)
+    if ($set != null) __obj.updateDynamic("$set")($set)
+    __obj.asInstanceOf[UpdateSpecCommand]
+  }
+}
+

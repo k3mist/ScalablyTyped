@@ -26,3 +26,16 @@ trait ChangesEvent
   var Changes: ChangesSet
 }
 
+object ChangesEvent {
+  @scala.inline
+  def apply(
+    Base: js.Any,
+    Changes: ChangesSet,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ChangesEvent = {
+    val __obj = js.Dynamic.literal(Base = Base, Changes = Changes.asInstanceOf[js.Any], Source = Source)
+  
+    __obj.asInstanceOf[ChangesEvent]
+  }
+}
+

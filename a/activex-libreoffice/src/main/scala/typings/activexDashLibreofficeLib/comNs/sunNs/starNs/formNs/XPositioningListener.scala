@@ -18,3 +18,18 @@ trait XPositioningListener
   def positioned(aEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XPositioningListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    positioned: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPositioningListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, positioned = positioned, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPositioningListener]
+  }
+}
+

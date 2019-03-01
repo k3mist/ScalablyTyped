@@ -117,3 +117,37 @@ trait colorCreateAgeRendererParams
   var view: View
 }
 
+object colorCreateAgeRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    endTime: stdLib.Date | java.lang.String | scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    startTime: stdLib.Date | java.lang.String | scala.Double,
+    view: View,
+    basemap: java.lang.String | Basemap = null,
+    colorMixMode: java.lang.String = null,
+    colorScheme: ColorScheme = null,
+    defaultSymbolEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    legendOptions: colorCreateAgeRendererParamsLegendOptions = null,
+    statistics: SummaryStatisticsResult = null,
+    symbolType: java.lang.String = null,
+    theme: java.lang.String = null,
+    unit: java.lang.String = null
+  ): colorCreateAgeRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, startTime = startTime.asInstanceOf[js.Any], view = view)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
+    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
+    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[colorCreateAgeRendererParams]
+  }
+}
+

@@ -74,3 +74,16 @@ trait Diagnostics extends js.Object {
   var hostVersion: java.lang.String
 }
 
+object Diagnostics {
+  @scala.inline
+  def apply(
+    OWAView: officeDashJsLib.OfficeNs.MailboxEnumsNs.OWAView | officeDashJsLib.officeDashJsLibStrings.OneColumn | officeDashJsLib.officeDashJsLibStrings.TwoColumns | officeDashJsLib.officeDashJsLibStrings.ThreeColumns,
+    hostName: java.lang.String,
+    hostVersion: java.lang.String
+  ): Diagnostics = {
+    val __obj = js.Dynamic.literal(OWAView = OWAView.asInstanceOf[js.Any], hostName = hostName, hostVersion = hostVersion)
+  
+    __obj.asInstanceOf[Diagnostics]
+  }
+}
+

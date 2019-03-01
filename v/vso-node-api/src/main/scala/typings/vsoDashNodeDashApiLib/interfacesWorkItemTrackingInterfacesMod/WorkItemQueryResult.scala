@@ -36,3 +36,20 @@ trait WorkItemQueryResult extends js.Object {
   var workItems: js.Array[WorkItemReference]
 }
 
+object WorkItemQueryResult {
+  @scala.inline
+  def apply(
+    asOf: stdLib.Date,
+    columns: js.Array[WorkItemFieldReference],
+    queryResultType: QueryResultType,
+    queryType: QueryType,
+    sortColumns: js.Array[WorkItemQuerySortColumn],
+    workItemRelations: js.Array[WorkItemLink],
+    workItems: js.Array[WorkItemReference]
+  ): WorkItemQueryResult = {
+    val __obj = js.Dynamic.literal(asOf = asOf, columns = columns, queryResultType = queryResultType, queryType = queryType, sortColumns = sortColumns, workItemRelations = workItemRelations, workItems = workItems)
+  
+    __obj.asInstanceOf[WorkItemQueryResult]
+  }
+}
+

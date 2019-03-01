@@ -74,3 +74,42 @@ trait Anon_CallbackCertificates extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackCertificates {
+  @scala.inline
+  def apply(
+    PinRequestErrorType: Anon_INVALIDPIN,
+    PinRequestType: Anon_PIN,
+    onCertificatesRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* certificates */ js.Array[chromeDashAppsLib.chromeNs.certificateProviderNs.CertificateInfo], 
+        /* callback */ js.Function1[/* rejectedCertificates */ js.Array[stdLib.ArrayBuffer], scala.Unit], 
+        _
+      ]
+    ],
+    onSignDigestRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* signRequest */ chromeDashAppsLib.chromeNs.certificateProviderNs.SignRequest, 
+        /* signCallback */ js.Function1[/* signature */ js.UndefOr[stdLib.ArrayBuffer], scala.Unit], 
+        _
+      ]
+    ],
+    requestPin: js.Function2[
+      chromeDashAppsLib.chromeNs.certificateProviderNs.RequestPinDetails, 
+      js.Function1[
+        /* details */ js.UndefOr[chromeDashAppsLib.chromeNs.certificateProviderNs.PinResponseDetails], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    stopPinRequest: js.Function2[
+      chromeDashAppsLib.chromeNs.certificateProviderNs.StopRequestPinDetails, 
+      js.Function0[scala.Unit], 
+      scala.Unit
+    ]
+  ): Anon_CallbackCertificates = {
+    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType, PinRequestType = PinRequestType, onCertificatesRequested = onCertificatesRequested, onSignDigestRequested = onSignDigestRequested, requestPin = requestPin, stopPinRequest = stopPinRequest)
+  
+    __obj.asInstanceOf[Anon_CallbackCertificates]
+  }
+}
+

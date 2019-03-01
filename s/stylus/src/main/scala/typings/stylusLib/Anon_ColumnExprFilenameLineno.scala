@@ -13,3 +13,18 @@ trait Anon_ColumnExprFilenameLineno extends js.Object {
   var lineno: scala.Double
 }
 
+object Anon_ColumnExprFilenameLineno {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    expr: stylusLib.stylusMod.StylusNs.NodesNs.Expression,
+    filename: java.lang.String,
+    lineno: scala.Double
+  ): Anon_ColumnExprFilenameLineno = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, expr = expr, filename = filename, lineno = lineno)
+  
+    __obj.asInstanceOf[Anon_ColumnExprFilenameLineno]
+  }
+}
+

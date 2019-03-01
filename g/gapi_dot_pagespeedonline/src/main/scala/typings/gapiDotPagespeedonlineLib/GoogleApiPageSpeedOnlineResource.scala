@@ -44,3 +44,22 @@ trait GoogleApiPageSpeedOnlineResource extends js.Object {
   var version: Anon_Major
 }
 
+object GoogleApiPageSpeedOnlineResource {
+  @scala.inline
+  def apply(
+    formattedResults: Anon_Locale,
+    id: java.lang.String,
+    invalidRules: js.Array[java.lang.String],
+    kind: java.lang.String,
+    pageStats: Anon_CssResponsebytes,
+    responseCode: scala.Double,
+    score: scala.Double,
+    title: java.lang.String,
+    version: Anon_Major
+  ): GoogleApiPageSpeedOnlineResource = {
+    val __obj = js.Dynamic.literal(formattedResults = formattedResults, id = id, invalidRules = invalidRules, kind = kind, pageStats = pageStats, responseCode = responseCode, score = score, title = title, version = version)
+  
+    __obj.asInstanceOf[GoogleApiPageSpeedOnlineResource]
+  }
+}
+

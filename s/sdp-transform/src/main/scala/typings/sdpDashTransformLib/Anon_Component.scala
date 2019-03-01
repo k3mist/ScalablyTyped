@@ -11,3 +11,12 @@ trait Anon_Component extends js.Object {
   var port: scala.Double
 }
 
+object Anon_Component {
+  @scala.inline
+  def apply(component: scala.Double, ip: java.lang.String, port: scala.Double): Anon_Component = {
+    val __obj = js.Dynamic.literal(component = component, ip = ip, port = port)
+  
+    __obj.asInstanceOf[Anon_Component]
+  }
+}
+

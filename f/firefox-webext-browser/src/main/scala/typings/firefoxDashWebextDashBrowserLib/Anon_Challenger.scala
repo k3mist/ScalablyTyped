@@ -52,3 +52,33 @@ trait Anon_Challenger extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Challenger {
+  @scala.inline
+  def apply(
+    challenger: Anon_Host,
+    frameId: scala.Double,
+    isProxy: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    scheme: java.lang.String,
+    statusCode: scala.Double,
+    statusLine: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    documentUrl: java.lang.String = null,
+    originUrl: java.lang.String = null,
+    realm: java.lang.String = null,
+    responseHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
+  ): Anon_Challenger = {
+    val __obj = js.Dynamic.literal(challenger = challenger, frameId = frameId, isProxy = isProxy, method = method, parentFrameId = parentFrameId, requestId = requestId, scheme = scheme, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
+    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[Anon_Challenger]
+  }
+}
+

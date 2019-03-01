@@ -18,3 +18,18 @@ trait XDocumentEventListener
   def documentEventOccured(Event: DocumentEvent): scala.Unit
 }
 
+object XDocumentEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    documentEventOccured: js.Function1[DocumentEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDocumentEventListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, documentEventOccured = documentEventOccured, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDocumentEventListener]
+  }
+}
+

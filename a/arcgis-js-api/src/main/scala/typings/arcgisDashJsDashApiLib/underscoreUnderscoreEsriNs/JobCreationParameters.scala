@@ -111,3 +111,33 @@ trait JobCreationParameters
   var user: java.lang.String
 }
 
+object JobCreationParameters {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    assignedType: java.lang.String,
+    autoCommitWorkflow: scala.Boolean,
+    autoExecute: scala.Boolean,
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    description: java.lang.String,
+    dueDate: stdLib.Date,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobTypeId: scala.Double,
+    loi: Geometry,
+    name: java.lang.String,
+    numJobs: java.lang.String,
+    ownedBy: java.lang.String,
+    parentJobId: scala.Double,
+    parentVersion: java.lang.String,
+    priority: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    startDate: stdLib.Date,
+    user: java.lang.String
+  ): JobCreationParameters = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, autoCommitWorkflow = autoCommitWorkflow, autoExecute = autoExecute, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = hasOwnProperty, jobTypeId = jobTypeId, loi = loi, name = name, numJobs = numJobs, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, priority = priority, propertyIsEnumerable = propertyIsEnumerable, startDate = startDate, user = user)
+  
+    __obj.asInstanceOf[JobCreationParameters]
+  }
+}
+

@@ -43,3 +43,20 @@ trait Options extends js.Object {
   var minValue: js.Array[scala.Double]
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    damping: scala.Double,
+    errorTolerance: scala.Double,
+    gradientDifference: scala.Double,
+    initialValues: js.Array[scala.Double],
+    maxIterations: scala.Double,
+    maxValue: js.Array[scala.Double],
+    minValue: js.Array[scala.Double]
+  ): Options = {
+    val __obj = js.Dynamic.literal(damping = damping, errorTolerance = errorTolerance, gradientDifference = gradientDifference, initialValues = initialValues, maxIterations = maxIterations, maxValue = maxValue, minValue = minValue)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

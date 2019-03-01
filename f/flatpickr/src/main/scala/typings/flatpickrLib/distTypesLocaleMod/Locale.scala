@@ -32,3 +32,37 @@ trait Locale extends js.Object {
   def ordinal(nth: scala.Double): java.lang.String
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    amPM: js.Tuple2[java.lang.String, java.lang.String],
+    daysInMonth: js.Tuple12[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double
+    ],
+    firstDayOfWeek: scala.Double,
+    months: flatpickrLib.Anon_LonghandShorthand,
+    ordinal: js.Function1[scala.Double, java.lang.String],
+    rangeSeparator: java.lang.String,
+    scrollTitle: java.lang.String,
+    toggleTitle: java.lang.String,
+    weekAbbreviation: java.lang.String,
+    weekdays: flatpickrLib.Anon_Longhand,
+    yearAriaLabel: java.lang.String
+  ): Locale = {
+    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, months = months, ordinal = ordinal, rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
+  
+    __obj.asInstanceOf[Locale]
+  }
+}
+

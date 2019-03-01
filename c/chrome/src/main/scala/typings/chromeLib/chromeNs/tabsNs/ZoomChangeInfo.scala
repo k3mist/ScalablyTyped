@@ -12,3 +12,17 @@ trait ZoomChangeInfo extends js.Object {
   var zoomSettings: ZoomSettings
 }
 
+object ZoomChangeInfo {
+  @scala.inline
+  def apply(
+    newZoomFactor: scala.Double,
+    oldZoomFactor: scala.Double,
+    tabId: scala.Double,
+    zoomSettings: ZoomSettings
+  ): ZoomChangeInfo = {
+    val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor, oldZoomFactor = oldZoomFactor, tabId = tabId, zoomSettings = zoomSettings)
+  
+    __obj.asInstanceOf[ZoomChangeInfo]
+  }
+}
+

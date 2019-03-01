@@ -17,3 +17,22 @@ trait IServerLoginAccountOperations extends js.Object {
   def UpdateLoginPassword(AccountName: java.lang.String, NewPassword: java.lang.String): scala.Unit
 }
 
+object IServerLoginAccountOperations {
+  @scala.inline
+  def apply(
+    AddLoginAccount: js.Function2[ILoginAccount, java.lang.String, scala.Unit],
+    ForceLogout: js.Function1[IStrings, scala.Unit],
+    GetLoginAccount: js.Function1[java.lang.String, ILoginAccount],
+    GetLoginAccounts: js.Function0[ILoginAccounts],
+    GetLoginAccountsWithSessions: js.Function0[ILoginAccounts],
+    GetPersonalInformationFromDomain: js.Function1[java.lang.String, ILoginAccountPersonalInformation],
+    ModifyLoginAccount: js.Function1[ILoginAccount, scala.Unit],
+    RemoveLoginAccount: js.Function1[java.lang.String, scala.Unit],
+    UpdateLoginPassword: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): IServerLoginAccountOperations = {
+    val __obj = js.Dynamic.literal(AddLoginAccount = AddLoginAccount, ForceLogout = ForceLogout, GetLoginAccount = GetLoginAccount, GetLoginAccounts = GetLoginAccounts, GetLoginAccountsWithSessions = GetLoginAccountsWithSessions, GetPersonalInformationFromDomain = GetPersonalInformationFromDomain, ModifyLoginAccount = ModifyLoginAccount, RemoveLoginAccount = RemoveLoginAccount, UpdateLoginPassword = UpdateLoginPassword)
+  
+    __obj.asInstanceOf[IServerLoginAccountOperations]
+  }
+}
+

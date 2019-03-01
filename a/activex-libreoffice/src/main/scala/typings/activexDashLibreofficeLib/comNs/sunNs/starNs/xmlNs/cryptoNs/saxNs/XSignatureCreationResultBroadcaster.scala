@@ -28,3 +28,18 @@ trait XSignatureCreationResultBroadcaster
   def removeSignatureCreationResultListener(listener: XSignatureCreationResultListener): scala.Unit
 }
 
+object XSignatureCreationResultBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSignatureCreationResultListener: js.Function1[XSignatureCreationResultListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSignatureCreationResultListener: js.Function1[XSignatureCreationResultListener, scala.Unit]
+  ): XSignatureCreationResultBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSignatureCreationResultListener = addSignatureCreationResultListener, queryInterface = queryInterface, release = release, removeSignatureCreationResultListener = removeSignatureCreationResultListener)
+  
+    __obj.asInstanceOf[XSignatureCreationResultBroadcaster]
+  }
+}
+

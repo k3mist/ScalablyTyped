@@ -21,3 +21,12 @@ trait GetPrefixListResult extends js.Object {
   val name: java.lang.String
 }
 
+object GetPrefixListResult {
+  @scala.inline
+  def apply(cidrBlocks: js.Array[java.lang.String], id: java.lang.String, name: java.lang.String): GetPrefixListResult = {
+    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, id = id, name = name)
+  
+    __obj.asInstanceOf[GetPrefixListResult]
+  }
+}
+

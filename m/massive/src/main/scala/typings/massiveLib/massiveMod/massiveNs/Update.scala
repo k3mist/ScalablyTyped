@@ -11,3 +11,12 @@ trait Update extends js.Object {
   def format(): java.lang.String
 }
 
+object Update {
+  @scala.inline
+  def apply(format: js.Function0[java.lang.String]): Update = {
+    val __obj = js.Dynamic.literal(format = format)
+  
+    __obj.asInstanceOf[Update]
+  }
+}
+

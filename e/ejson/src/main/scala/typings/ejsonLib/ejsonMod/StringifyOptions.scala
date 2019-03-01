@@ -10,3 +10,12 @@ trait StringifyOptions extends js.Object {
   var indent: scala.Boolean | scala.Double | java.lang.String
 }
 
+object StringifyOptions {
+  @scala.inline
+  def apply(canonical: scala.Boolean, indent: scala.Boolean | scala.Double | java.lang.String): StringifyOptions = {
+    val __obj = js.Dynamic.literal(canonical = canonical, indent = indent.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StringifyOptions]
+  }
+}
+

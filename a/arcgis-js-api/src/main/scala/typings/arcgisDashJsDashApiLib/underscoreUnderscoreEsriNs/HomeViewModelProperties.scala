@@ -25,3 +25,18 @@ trait HomeViewModelProperties extends GoToProperties {
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 
+object HomeViewModelProperties {
+  @scala.inline
+  def apply(
+    goToOverride: GoToOverride = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewpoint: ViewpointProperties = null
+  ): HomeViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    __obj.asInstanceOf[HomeViewModelProperties]
+  }
+}
+

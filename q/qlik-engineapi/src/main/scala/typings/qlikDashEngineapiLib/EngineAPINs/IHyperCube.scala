@@ -116,3 +116,30 @@ trait IHyperCube extends js.Object {
   var qStateName: java.lang.String
 }
 
+object IHyperCube {
+  @scala.inline
+  def apply(
+    qDataPages: js.Array[INxDataPage],
+    qDimensionInfo: js.Array[INxDimensionInfo],
+    qEffectiveInterColumnSortOrder: js.Array[scala.Double],
+    qGrandTotalRow: js.Array[INxCell],
+    qHasOtherValues: scala.Boolean,
+    qMeasureInfo: js.Array[INxMeasureInfo],
+    qMode: NxHypercubeMode,
+    qNoOfLeftDims: scala.Double,
+    qPivotDataPages: js.Array[INxPivotPage],
+    qSize: ISize,
+    qStackedDataPages: js.Array[INxStackPage],
+    qStateName: java.lang.String,
+    qError: INxValidationError = null,
+    qIndentMode: js.UndefOr[scala.Boolean] = js.undefined,
+    qLastExpandedPos: INxCellPosition = null
+  ): IHyperCube = {
+    val __obj = js.Dynamic.literal(qDataPages = qDataPages, qDimensionInfo = qDimensionInfo, qEffectiveInterColumnSortOrder = qEffectiveInterColumnSortOrder, qGrandTotalRow = qGrandTotalRow, qHasOtherValues = qHasOtherValues, qMeasureInfo = qMeasureInfo, qMode = qMode, qNoOfLeftDims = qNoOfLeftDims, qPivotDataPages = qPivotDataPages, qSize = qSize, qStackedDataPages = qStackedDataPages, qStateName = qStateName)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    if (!js.isUndefined(qIndentMode)) __obj.updateDynamic("qIndentMode")(qIndentMode)
+    if (qLastExpandedPos != null) __obj.updateDynamic("qLastExpandedPos")(qLastExpandedPos)
+    __obj.asInstanceOf[IHyperCube]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Entry extends js.Object {
   var sourceText: java.lang.String
 }
 
+object Entry {
+  @scala.inline
+  def apply(
+    license: java.lang.String,
+    repository: java.lang.String,
+    source: java.lang.String,
+    sourceText: java.lang.String
+  ): Entry = {
+    val __obj = js.Dynamic.literal(license = license, repository = repository, source = source, sourceText = sourceText)
+  
+    __obj.asInstanceOf[Entry]
+  }
+}
+

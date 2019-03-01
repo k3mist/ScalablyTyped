@@ -27,3 +27,32 @@ trait FlashFilter extends js.Object {
   var `type`: java.lang.String
 }
 
+object FlashFilter {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    blurX: scala.Double,
+    blurY: scala.Double,
+    brightness: scala.Double,
+    color: js.Any,
+    contrast: scala.Double,
+    distance: scala.Double,
+    enabled: scala.Boolean,
+    hideObject: scala.Boolean,
+    highlightColor: js.Any,
+    hue: scala.Double,
+    inner: scala.Boolean,
+    knockout: scala.Boolean,
+    name: java.lang.String,
+    quality: java.lang.String,
+    saturation: scala.Double,
+    shadowColor: js.Any,
+    strength: scala.Double,
+    `type`: java.lang.String
+  ): FlashFilter = {
+    val __obj = js.Dynamic.literal(angle = angle, blurX = blurX, blurY = blurY, brightness = brightness, color = color, contrast = contrast, distance = distance, enabled = enabled, hideObject = hideObject, highlightColor = highlightColor, hue = hue, inner = inner, knockout = knockout, name = name, quality = quality, saturation = saturation, shadowColor = shadowColor, strength = strength, `type` = `type`)
+  
+    __obj.asInstanceOf[FlashFilter]
+  }
+}
+

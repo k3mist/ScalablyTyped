@@ -14,3 +14,20 @@ trait MultipointProperties extends GeometryProperties {
   var points: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined
 }
 
+object MultipointProperties {
+  @scala.inline
+  def apply(
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    points: js.Array[js.Array[scala.Double]] = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): MultipointProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[MultipointProperties]
+  }
+}
+

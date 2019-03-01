@@ -11,3 +11,12 @@ trait Anon_Data extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(data: js.Any, target: uwsLib.uwsMod.WebSocket, `type`: java.lang.String): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_Measure extends js.Object {
   var tuple: js.Array[java.lang.String]
 }
 
+object Anon_Measure {
+  @scala.inline
+  def apply(
+    tuple: js.Array[java.lang.String],
+    measure: flexmonsterLib.flexmonsterMod.FlexmonsterNs.MeasureObject = null
+  ): Anon_Measure = {
+    val __obj = js.Dynamic.literal(tuple = tuple)
+    if (measure != null) __obj.updateDynamic("measure")(measure)
+    __obj.asInstanceOf[Anon_Measure]
+  }
+}
+

@@ -10,3 +10,15 @@ trait FIELDS_CHANGE extends RelayMutationConfig {
   var `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.FIELDS_CHANGE
 }
 
+object FIELDS_CHANGE {
+  @scala.inline
+  def apply(
+    fieldIDs: org.scalablytyped.runtime.StringDictionary[DataID | js.Array[DataID]],
+    `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.FIELDS_CHANGE
+  ): FIELDS_CHANGE = {
+    val __obj = js.Dynamic.literal(fieldIDs = fieldIDs, `type` = `type`)
+  
+    __obj.asInstanceOf[FIELDS_CHANGE]
+  }
+}
+

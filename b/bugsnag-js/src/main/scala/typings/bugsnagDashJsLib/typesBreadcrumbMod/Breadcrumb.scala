@@ -12,3 +12,12 @@ trait Breadcrumb extends js.Object {
   var `type`: java.lang.String
 }
 
+object Breadcrumb {
+  @scala.inline
+  def apply(metaData: js.Object, name: java.lang.String, timestamp: java.lang.String, `type`: java.lang.String): Breadcrumb = {
+    val __obj = js.Dynamic.literal(metaData = metaData, name = name, timestamp = timestamp, `type` = `type`)
+  
+    __obj.asInstanceOf[Breadcrumb]
+  }
+}
+

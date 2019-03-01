@@ -28,3 +28,12 @@ trait IEngineTimingOptions extends js.Object {
   var timestamp: scala.Double
 }
 
+object IEngineTimingOptions {
+  @scala.inline
+  def apply(timeScale: scala.Double, timestamp: scala.Double): IEngineTimingOptions = {
+    val __obj = js.Dynamic.literal(timeScale = timeScale, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IEngineTimingOptions]
+  }
+}
+

@@ -19,3 +19,12 @@ trait DateWithTimezone extends js.Object {
   var Timezone: scala.Double
 }
 
+object DateWithTimezone {
+  @scala.inline
+  def apply(DateInTZ: Date, Timezone: scala.Double): DateWithTimezone = {
+    val __obj = js.Dynamic.literal(DateInTZ = DateInTZ, Timezone = Timezone)
+  
+    __obj.asInstanceOf[DateWithTimezone]
+  }
+}
+

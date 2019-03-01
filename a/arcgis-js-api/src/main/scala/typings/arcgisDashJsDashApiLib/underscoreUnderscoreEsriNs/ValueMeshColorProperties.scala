@@ -14,3 +14,12 @@ trait ValueMeshColorProperties extends js.Object {
   var value: js.UndefOr[Color | js.Array[scala.Double] | java.lang.String] = js.undefined
 }
 
+object ValueMeshColorProperties {
+  @scala.inline
+  def apply(value: Color | js.Array[scala.Double] | java.lang.String = null): ValueMeshColorProperties = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueMeshColorProperties]
+  }
+}
+

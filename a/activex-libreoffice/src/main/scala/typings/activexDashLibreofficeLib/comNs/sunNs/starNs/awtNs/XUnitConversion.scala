@@ -41,3 +41,20 @@ trait XUnitConversion
   def convertSizeToPixel(Size: Size, SourceUnit: scala.Double): Size
 }
 
+object XUnitConversion {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertPointToLogic: js.Function2[Point, scala.Double, Point],
+    convertPointToPixel: js.Function2[Point, scala.Double, Point],
+    convertSizeToLogic: js.Function2[Size, scala.Double, Size],
+    convertSizeToPixel: js.Function2[Size, scala.Double, Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUnitConversion = {
+    val __obj = js.Dynamic.literal(acquire = acquire, convertPointToLogic = convertPointToLogic, convertPointToPixel = convertPointToPixel, convertSizeToLogic = convertSizeToLogic, convertSizeToPixel = convertSizeToPixel, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUnitConversion]
+  }
+}
+

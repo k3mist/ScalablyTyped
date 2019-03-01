@@ -23,3 +23,25 @@ trait ContentResource extends js.Object {
   def redact(request: gapiDotClientDotDlpLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1RedactContentResponse]
 }
 
+object ContentResource {
+  @scala.inline
+  def apply(
+    deidentify: js.Function1[
+      gapiDotClientDotDlpLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1DeidentifyContentResponse]
+    ],
+    inspect: js.Function1[
+      gapiDotClientDotDlpLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1InspectContentResponse]
+    ],
+    redact: js.Function1[
+      gapiDotClientDotDlpLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1RedactContentResponse]
+    ]
+  ): ContentResource = {
+    val __obj = js.Dynamic.literal(deidentify = deidentify, inspect = inspect, redact = redact)
+  
+    __obj.asInstanceOf[ContentResource]
+  }
+}
+

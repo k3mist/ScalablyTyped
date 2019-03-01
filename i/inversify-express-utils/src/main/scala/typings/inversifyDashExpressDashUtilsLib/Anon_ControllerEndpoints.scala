@@ -10,3 +10,12 @@ trait Anon_ControllerEndpoints extends js.Object {
   var endpoints: js.Array[Anon_Args]
 }
 
+object Anon_ControllerEndpoints {
+  @scala.inline
+  def apply(controller: js.Any, endpoints: js.Array[Anon_Args]): Anon_ControllerEndpoints = {
+    val __obj = js.Dynamic.literal(controller = controller, endpoints = endpoints)
+  
+    __obj.asInstanceOf[Anon_ControllerEndpoints]
+  }
+}
+

@@ -21,3 +21,18 @@ trait ContinuousRendererResultColor
   var visualVariable: ColorVariable
 }
 
+object ContinuousRendererResultColor {
+  @scala.inline
+  def apply(
+    colorScheme: ColorScheme,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    visualVariable: ColorVariable
+  ): ContinuousRendererResultColor = {
+    val __obj = js.Dynamic.literal(colorScheme = colorScheme, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, visualVariable = visualVariable)
+  
+    __obj.asInstanceOf[ContinuousRendererResultColor]
+  }
+}
+

@@ -12,3 +12,17 @@ trait IELangDBEvents extends js.Object {
   var select: jqueryLib.JQueryDeferred[_]
 }
 
+object IELangDBEvents {
+  @scala.inline
+  def apply(
+    insert: jqueryLib.JQueryDeferred[_],
+    modify: jqueryLib.JQueryDeferred[_],
+    remove: jqueryLib.JQueryDeferred[_],
+    select: jqueryLib.JQueryDeferred[_]
+  ): IELangDBEvents = {
+    val __obj = js.Dynamic.literal(insert = insert, modify = modify, remove = remove, select = select)
+  
+    __obj.asInstanceOf[IELangDBEvents]
+  }
+}
+

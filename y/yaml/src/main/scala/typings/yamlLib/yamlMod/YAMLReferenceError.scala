@@ -13,3 +13,17 @@ trait YAMLReferenceError
   var source: yamlLib.yamlMod.cstNs.Node
 }
 
+object YAMLReferenceError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: yamlLib.yamlLibStrings.YAMLReferenceError,
+    source: yamlLib.yamlMod.cstNs.Node,
+    stack: java.lang.String = null
+  ): YAMLReferenceError = {
+    val __obj = js.Dynamic.literal(message = message, name = name, source = source)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[YAMLReferenceError]
+  }
+}
+

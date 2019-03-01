@@ -17,3 +17,18 @@ trait DocumentMSPasswordRequest extends PasswordRequest {
   var Name: java.lang.String
 }
 
+object DocumentMSPasswordRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Mode: PasswordRequestMode,
+    Name: java.lang.String
+  ): DocumentMSPasswordRequest = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Message = Message, Mode = Mode, Name = Name)
+  
+    __obj.asInstanceOf[DocumentMSPasswordRequest]
+  }
+}
+

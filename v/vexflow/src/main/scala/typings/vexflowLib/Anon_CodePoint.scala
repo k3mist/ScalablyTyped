@@ -12,3 +12,12 @@ trait Anon_CodePoint extends js.Object {
   var y_shift: scala.Double
 }
 
+object Anon_CodePoint {
+  @scala.inline
+  def apply(code: java.lang.String, point: scala.Double, x_shift: scala.Double, y_shift: scala.Double): Anon_CodePoint = {
+    val __obj = js.Dynamic.literal(code = code, point = point, x_shift = x_shift, y_shift = y_shift)
+  
+    __obj.asInstanceOf[Anon_CodePoint]
+  }
+}
+

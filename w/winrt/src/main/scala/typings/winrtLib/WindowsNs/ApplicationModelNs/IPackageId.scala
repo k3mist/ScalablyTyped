@@ -16,3 +16,21 @@ trait IPackageId extends js.Object {
   var version: PackageVersion
 }
 
+object IPackageId {
+  @scala.inline
+  def apply(
+    architecture: winrtLib.WindowsNs.SystemNs.ProcessorArchitecture,
+    familyName: java.lang.String,
+    fullName: java.lang.String,
+    name: java.lang.String,
+    publisher: java.lang.String,
+    publisherId: java.lang.String,
+    resourceId: java.lang.String,
+    version: PackageVersion
+  ): IPackageId = {
+    val __obj = js.Dynamic.literal(architecture = architecture, familyName = familyName, fullName = fullName, name = name, publisher = publisher, publisherId = publisherId, resourceId = resourceId, version = version)
+  
+    __obj.asInstanceOf[IPackageId]
+  }
+}
+

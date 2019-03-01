@@ -18,3 +18,16 @@ trait OrganizationArgs extends js.Object {
   val featureSet: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object OrganizationArgs {
+  @scala.inline
+  def apply(
+    awsServiceAccessPrincipals: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    featureSet: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): OrganizationArgs = {
+    val __obj = js.Dynamic.literal()
+    if (awsServiceAccessPrincipals != null) __obj.updateDynamic("awsServiceAccessPrincipals")(awsServiceAccessPrincipals.asInstanceOf[js.Any])
+    if (featureSet != null) __obj.updateDynamic("featureSet")(featureSet.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrganizationArgs]
+  }
+}
+

@@ -20,3 +20,13 @@ trait GPMessageProperties extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GPMessageProperties {
+  @scala.inline
+  def apply(description: java.lang.String = null, `type`: java.lang.String = null): GPMessageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GPMessageProperties]
+  }
+}
+

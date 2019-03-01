@@ -10,3 +10,19 @@ trait ListViewCancelEvent extends ListViewEvent {
   var model: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.Model] = js.undefined
 }
 
+object ListViewCancelEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ListView,
+    container: kendoDashUiLib.JQuery = null,
+    model: kendoDashUiLib.kendoNs.dataNs.Model = null
+  ): ListViewCancelEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (model != null) __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[ListViewCancelEvent]
+  }
+}
+

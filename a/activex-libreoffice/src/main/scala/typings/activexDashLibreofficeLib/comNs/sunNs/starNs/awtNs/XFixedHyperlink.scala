@@ -36,3 +36,27 @@ trait XFixedHyperlink
   def setURL(URL: java.lang.String): scala.Unit
 }
 
+object XFixedHyperlink {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    Text: java.lang.String,
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addActionListener: js.Function1[XActionListener, scala.Unit],
+    getAlignment: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    getURL: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActionListener: js.Function1[XActionListener, scala.Unit],
+    setAlignment: js.Function1[scala.Double, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit],
+    setURL: js.Function1[java.lang.String, scala.Unit]
+  ): XFixedHyperlink = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, URL = URL, acquire = acquire, addActionListener = addActionListener, getAlignment = getAlignment, getText = getText, getURL = getURL, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, setAlignment = setAlignment, setText = setText, setURL = setURL)
+  
+    __obj.asInstanceOf[XFixedHyperlink]
+  }
+}
+

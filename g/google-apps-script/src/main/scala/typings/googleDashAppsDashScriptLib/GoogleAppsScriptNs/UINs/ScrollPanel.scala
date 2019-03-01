@@ -36,3 +36,42 @@ trait ScrollPanel extends js.Object {
   def setWidth(width: java.lang.String): ScrollPanel
 }
 
+object ScrollPanel {
+  @scala.inline
+  def apply(
+    add: js.Function1[Widget, ScrollPanel],
+    addScrollHandler: js.Function1[Handler, ScrollPanel],
+    addStyleDependentName: js.Function1[java.lang.String, ScrollPanel],
+    addStyleName: js.Function1[java.lang.String, ScrollPanel],
+    clear: js.Function0[ScrollPanel],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setAlwaysShowScrollBars: js.Function1[scala.Boolean, ScrollPanel],
+    setHeight: js.Function1[java.lang.String, ScrollPanel],
+    setHorizontalScrollPosition: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ScrollPanel],
+    setId: js.Function1[java.lang.String, ScrollPanel],
+    setLayoutData: js.Function1[js.Object, ScrollPanel],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      ScrollPanel
+    ],
+    setScrollPosition: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ScrollPanel],
+    setSize: js.Function2[java.lang.String, java.lang.String, ScrollPanel],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, ScrollPanel],
+    setStyleAttributes: js.Function1[js.Object, ScrollPanel],
+    setStyleName: js.Function1[java.lang.String, ScrollPanel],
+    setStylePrimaryName: js.Function1[java.lang.String, ScrollPanel],
+    setTag: js.Function1[java.lang.String, ScrollPanel],
+    setTitle: js.Function1[java.lang.String, ScrollPanel],
+    setVisible: js.Function1[scala.Boolean, ScrollPanel],
+    setWidget: js.Function1[Widget, ScrollPanel],
+    setWidth: js.Function1[java.lang.String, ScrollPanel]
+  ): ScrollPanel = {
+    val __obj = js.Dynamic.literal(add = add, addScrollHandler = addScrollHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setAlwaysShowScrollBars = setAlwaysShowScrollBars, setHeight = setHeight, setHorizontalScrollPosition = setHorizontalScrollPosition, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setScrollPosition = setScrollPosition, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+  
+    __obj.asInstanceOf[ScrollPanel]
+  }
+}
+

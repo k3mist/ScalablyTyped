@@ -88,3 +88,36 @@ trait XPrintAreas
   def setTitleRows(aTitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress): scala.Unit
 }
 
+object XPrintAreas {
+  @scala.inline
+  def apply(
+    PrintAreas: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    PrintTitleColumns: scala.Boolean,
+    PrintTitleRows: scala.Boolean,
+    TitleColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    TitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getPrintAreas: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+    ],
+    getPrintTitleColumns: js.Function0[scala.Boolean],
+    getPrintTitleRows: js.Function0[scala.Boolean],
+    getTitleColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getTitleRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPrintAreas: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Unit
+    ],
+    setPrintTitleColumns: js.Function1[scala.Boolean, scala.Unit],
+    setPrintTitleRows: js.Function1[scala.Boolean, scala.Unit],
+    setTitleColumns: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    setTitleRows: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+  ): XPrintAreas = {
+    val __obj = js.Dynamic.literal(PrintAreas = PrintAreas, PrintTitleColumns = PrintTitleColumns, PrintTitleRows = PrintTitleRows, TitleColumns = TitleColumns, TitleRows = TitleRows, acquire = acquire, getPrintAreas = getPrintAreas, getPrintTitleColumns = getPrintTitleColumns, getPrintTitleRows = getPrintTitleRows, getTitleColumns = getTitleColumns, getTitleRows = getTitleRows, queryInterface = queryInterface, release = release, setPrintAreas = setPrintAreas, setPrintTitleColumns = setPrintTitleColumns, setPrintTitleRows = setPrintTitleRows, setTitleColumns = setTitleColumns, setTitleRows = setTitleRows)
+  
+    __obj.asInstanceOf[XPrintAreas]
+  }
+}
+

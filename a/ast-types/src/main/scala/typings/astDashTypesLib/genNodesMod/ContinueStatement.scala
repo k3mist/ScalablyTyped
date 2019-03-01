@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ContinueStatement
 }
 
+object ContinueStatement {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.ContinueStatement,
+    label: astDashTypesLib.genKindsMod.IdentifierKind = null
+  ): ContinueStatement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[ContinueStatement]
+  }
+}
+

@@ -28,3 +28,30 @@ trait Color extends js.Object {
   var yellowBright: CodePair
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    black: CodePair,
+    blue: CodePair,
+    blueBright: CodePair,
+    cyan: CodePair,
+    cyanBright: CodePair,
+    gray: CodePair,
+    green: CodePair,
+    greenBright: CodePair,
+    grey: CodePair,
+    magenta: CodePair,
+    magentaBright: CodePair,
+    red: CodePair,
+    redBright: CodePair,
+    white: CodePair,
+    whiteBright: CodePair,
+    yellow: CodePair,
+    yellowBright: CodePair
+  ): Color = {
+    val __obj = js.Dynamic.literal(black = black, blue = blue, blueBright = blueBright, cyan = cyan, cyanBright = cyanBright, gray = gray, green = green, greenBright = greenBright, grey = grey, magenta = magenta, magentaBright = magentaBright, red = red, redBright = redBright, white = white, whiteBright = whiteBright, yellow = yellow, yellowBright = yellowBright)
+  
+    __obj.asInstanceOf[Color]
+  }
+}
+

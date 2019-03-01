@@ -40,3 +40,29 @@ trait TfvcChangeset extends TfvcChangesetRef {
   var workItems: js.Array[AssociatedWorkItem]
 }
 
+object TfvcChangeset {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    accountId: java.lang.String,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changes: js.Array[TfvcChange],
+    changesetId: scala.Double,
+    checkedInBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    checkinNotes: js.Array[CheckinNote],
+    collectionId: java.lang.String,
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    createdDate: stdLib.Date,
+    hasMoreChanges: scala.Boolean,
+    policyOverride: TfvcPolicyOverrideInfo,
+    teamProjectIds: js.Array[java.lang.String],
+    url: java.lang.String,
+    workItems: js.Array[AssociatedWorkItem]
+  ): TfvcChangeset = {
+    val __obj = js.Dynamic.literal(_links = _links, accountId = accountId, author = author, changes = changes, changesetId = changesetId, checkedInBy = checkedInBy, checkinNotes = checkinNotes, collectionId = collectionId, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, hasMoreChanges = hasMoreChanges, policyOverride = policyOverride, teamProjectIds = teamProjectIds, url = url, workItems = workItems)
+  
+    __obj.asInstanceOf[TfvcChangeset]
+  }
+}
+

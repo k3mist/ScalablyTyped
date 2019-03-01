@@ -10,3 +10,15 @@ trait Anon_OptionsValue extends js.Object {
   var value: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable
 }
 
+object Anon_OptionsValue {
+  @scala.inline
+  def apply(
+    options: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.FormValueOptions,
+    value: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable
+  ): Anon_OptionsValue = {
+    val __obj = js.Dynamic.literal(options = options, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_OptionsValue]
+  }
+}
+

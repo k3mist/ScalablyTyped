@@ -21,3 +21,18 @@ trait ConfigurationTaskGetUserJobQueryDetailsParams
   var user: java.lang.String
 }
 
+object ConfigurationTaskGetUserJobQueryDetailsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    queryId: scala.Double,
+    user: java.lang.String
+  ): ConfigurationTaskGetUserJobQueryDetailsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, queryId = queryId, user = user)
+  
+    __obj.asInstanceOf[ConfigurationTaskGetUserJobQueryDetailsParams]
+  }
+}
+

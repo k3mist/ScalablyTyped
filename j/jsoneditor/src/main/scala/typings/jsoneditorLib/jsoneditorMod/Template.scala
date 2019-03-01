@@ -13,3 +13,18 @@ trait Template extends js.Object {
   var value: js.Any
 }
 
+object Template {
+  @scala.inline
+  def apply(
+    field: java.lang.String,
+    text: java.lang.String,
+    title: java.lang.String,
+    value: js.Any,
+    className: java.lang.String = null
+  ): Template = {
+    val __obj = js.Dynamic.literal(field = field, text = text, title = title, value = value)
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[Template]
+  }
+}
+

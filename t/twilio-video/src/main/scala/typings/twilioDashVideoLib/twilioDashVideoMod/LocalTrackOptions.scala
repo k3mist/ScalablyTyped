@@ -10,3 +10,12 @@ trait LocalTrackOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocalTrackOptions {
+  @scala.inline
+  def apply(logLevel: LogLevel | LogLevels, name: java.lang.String = null): LocalTrackOptions = {
+    val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[LocalTrackOptions]
+  }
+}
+

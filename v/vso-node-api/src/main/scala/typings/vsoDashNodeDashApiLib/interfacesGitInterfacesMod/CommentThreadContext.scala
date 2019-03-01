@@ -28,3 +28,18 @@ trait CommentThreadContext extends js.Object {
   var rightFileStart: CommentPosition
 }
 
+object CommentThreadContext {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    leftFileEnd: CommentPosition,
+    leftFileStart: CommentPosition,
+    rightFileEnd: CommentPosition,
+    rightFileStart: CommentPosition
+  ): CommentThreadContext = {
+    val __obj = js.Dynamic.literal(filePath = filePath, leftFileEnd = leftFileEnd, leftFileStart = leftFileStart, rightFileEnd = rightFileEnd, rightFileStart = rightFileStart)
+  
+    __obj.asInstanceOf[CommentThreadContext]
+  }
+}
+

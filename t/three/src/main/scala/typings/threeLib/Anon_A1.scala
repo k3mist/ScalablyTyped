@@ -28,3 +28,33 @@ trait Anon_A1 extends js.Object {
   def smoothstep(x: scala.Double, min: scala.Double, max: scala.Double): scala.Double
 }
 
+object Anon_A1 {
+  @scala.inline
+  def apply(
+    DEG2RAD: scala.Double,
+    RAD2DEG: scala.Double,
+    ceilPowerOfTwo: js.Function1[scala.Double, scala.Double],
+    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    degToRad: js.Function1[scala.Double, scala.Double],
+    euclideanModulo: js.Function2[scala.Double, scala.Double, scala.Double],
+    floorPowerOfTwo: js.Function1[scala.Double, scala.Double],
+    generateUUID: js.Function0[java.lang.String],
+    isPowerOfTwo: js.Function1[scala.Double, scala.Boolean],
+    lerp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    mapLinear: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    nearestPowerOfTwo: js.Function1[scala.Double, scala.Double],
+    nextPowerOfTwo: js.Function1[scala.Double, scala.Double],
+    radToDeg: js.Function1[scala.Double, scala.Double],
+    randFloat: js.Function2[scala.Double, scala.Double, scala.Double],
+    randFloatSpread: js.Function1[scala.Double, scala.Double],
+    randInt: js.Function2[scala.Double, scala.Double, scala.Double],
+    random16: js.Function0[scala.Double],
+    smootherstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    smoothstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+  ): Anon_A1 = {
+    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD, RAD2DEG = RAD2DEG, ceilPowerOfTwo = ceilPowerOfTwo, clamp = clamp, degToRad = degToRad, euclideanModulo = euclideanModulo, floorPowerOfTwo = floorPowerOfTwo, generateUUID = generateUUID, isPowerOfTwo = isPowerOfTwo, lerp = lerp, mapLinear = mapLinear, nearestPowerOfTwo = nearestPowerOfTwo, nextPowerOfTwo = nextPowerOfTwo, radToDeg = radToDeg, randFloat = randFloat, randFloatSpread = randFloatSpread, randInt = randInt, random16 = random16, smootherstep = smootherstep, smoothstep = smoothstep)
+  
+    __obj.asInstanceOf[Anon_A1]
+  }
+}
+

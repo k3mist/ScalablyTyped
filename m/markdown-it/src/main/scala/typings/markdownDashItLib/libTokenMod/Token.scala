@@ -26,3 +26,31 @@ trait Token extends js.Object {
   def attrSet(name: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    attrGet: js.Function1[java.lang.String, java.lang.String | scala.Null],
+    attrIndex: js.Function1[java.lang.String, scala.Double],
+    attrJoin: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    attrPush: js.Function1[js.Array[java.lang.String], scala.Unit],
+    attrSet: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    attrs: js.Array[js.Array[java.lang.String]],
+    block: scala.Boolean,
+    children: js.Array[Token],
+    content: java.lang.String,
+    hidden: scala.Boolean,
+    info: java.lang.String,
+    level: scala.Double,
+    map: js.Array[scala.Double],
+    markup: java.lang.String,
+    meta: js.Any,
+    nesting: scala.Double,
+    tag: java.lang.String,
+    `type`: java.lang.String
+  ): Token = {
+    val __obj = js.Dynamic.literal(attrGet = attrGet, attrIndex = attrIndex, attrJoin = attrJoin, attrPush = attrPush, attrSet = attrSet, attrs = attrs, block = block, children = children, content = content, hidden = hidden, info = info, level = level, map = map, markup = markup, meta = meta, nesting = nesting, tag = tag, `type` = `type`)
+  
+    __obj.asInstanceOf[Token]
+  }
+}
+

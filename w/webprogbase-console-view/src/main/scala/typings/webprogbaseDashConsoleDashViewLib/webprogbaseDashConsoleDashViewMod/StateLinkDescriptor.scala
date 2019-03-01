@@ -10,3 +10,12 @@ trait StateLinkDescriptor extends js.Object {
   var description: java.lang.String
 }
 
+object StateLinkDescriptor {
+  @scala.inline
+  def apply(data: BasicObject[_], description: java.lang.String): StateLinkDescriptor = {
+    val __obj = js.Dynamic.literal(data = data, description = description)
+  
+    __obj.asInstanceOf[StateLinkDescriptor]
+  }
+}
+

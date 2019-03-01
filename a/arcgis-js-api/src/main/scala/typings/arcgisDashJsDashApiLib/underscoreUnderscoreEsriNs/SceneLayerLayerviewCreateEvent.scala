@@ -10,3 +10,12 @@ trait SceneLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object SceneLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): SceneLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[SceneLayerLayerviewCreateEvent]
+  }
+}
+

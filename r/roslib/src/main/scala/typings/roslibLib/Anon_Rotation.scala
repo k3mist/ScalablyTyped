@@ -10,3 +10,15 @@ trait Anon_Rotation extends js.Object {
   var translation: roslibLib.roslibMod.ROSLIBNs.Vector3
 }
 
+object Anon_Rotation {
+  @scala.inline
+  def apply(
+    rotation: roslibLib.roslibMod.ROSLIBNs.Quaternion,
+    translation: roslibLib.roslibMod.ROSLIBNs.Vector3
+  ): Anon_Rotation = {
+    val __obj = js.Dynamic.literal(rotation = rotation, translation = translation)
+  
+    __obj.asInstanceOf[Anon_Rotation]
+  }
+}
+

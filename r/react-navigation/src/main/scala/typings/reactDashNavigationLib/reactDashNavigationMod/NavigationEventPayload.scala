@@ -12,3 +12,17 @@ trait NavigationEventPayload extends js.Object {
   var `type`: EventType
 }
 
+object NavigationEventPayload {
+  @scala.inline
+  def apply(
+    action: NavigationAction,
+    state: NavigationState,
+    `type`: EventType,
+    lastState: NavigationState = null
+  ): NavigationEventPayload = {
+    val __obj = js.Dynamic.literal(action = action, state = state, `type` = `type`)
+    if (lastState != null) __obj.updateDynamic("lastState")(lastState)
+    __obj.asInstanceOf[NavigationEventPayload]
+  }
+}
+

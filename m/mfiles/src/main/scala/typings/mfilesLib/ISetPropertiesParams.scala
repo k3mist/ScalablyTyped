@@ -28,3 +28,34 @@ trait ISetPropertiesParams extends js.Object {
   ): scala.Unit
 }
 
+object ISetPropertiesParams {
+  @scala.inline
+  def apply(
+    AccessControlListEnforcingMode: mfilesLib.MFilesNs.MFACLEnforcingMode,
+    AccessControlListProvidedForEnforcing: IAccessControlList,
+    AllowModifyingCheckedInObject: scala.Boolean,
+    Clone: js.Function0[ISetPropertiesParams],
+    FailIfNotLatestCheckedInVersion: scala.Boolean,
+    FullSet: scala.Boolean,
+    ObjVer: IObjVer,
+    PropertyValuesToRemove: IIDs,
+    PropertyValuesToSet: IPropertyValues,
+    SetWithPermissions: js.Function9[
+      IObjVer, 
+      scala.Boolean, 
+      scala.Boolean, 
+      IPropertyValues, 
+      scala.Boolean, 
+      IIDs, 
+      mfilesLib.MFilesNs.MFObjectOperationFlags, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      scala.Unit
+    ]
+  ): ISetPropertiesParams = {
+    val __obj = js.Dynamic.literal(AccessControlListEnforcingMode = AccessControlListEnforcingMode, AccessControlListProvidedForEnforcing = AccessControlListProvidedForEnforcing, AllowModifyingCheckedInObject = AllowModifyingCheckedInObject, Clone = Clone, FailIfNotLatestCheckedInVersion = FailIfNotLatestCheckedInVersion, FullSet = FullSet, ObjVer = ObjVer, PropertyValuesToRemove = PropertyValuesToRemove, PropertyValuesToSet = PropertyValuesToSet, SetWithPermissions = SetWithPermissions)
+  
+    __obj.asInstanceOf[ISetPropertiesParams]
+  }
+}
+

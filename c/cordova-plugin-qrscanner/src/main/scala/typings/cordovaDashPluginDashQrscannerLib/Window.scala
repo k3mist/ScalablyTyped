@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var QRScanner: QRScanner
 }
 
+object Window {
+  @scala.inline
+  def apply(QRScanner: QRScanner): Window = {
+    val __obj = js.Dynamic.literal(QRScanner = QRScanner)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

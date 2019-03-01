@@ -49,3 +49,19 @@ trait SceneService extends js.Object {
   val version: SceneServiceVersion
 }
 
+object SceneService {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String,
+    layerId: scala.Double,
+    spatialReference: SpatialReference,
+    token: java.lang.String,
+    url: java.lang.String,
+    version: SceneServiceVersion
+  ): SceneService = {
+    val __obj = js.Dynamic.literal(copyright = copyright, layerId = layerId, spatialReference = spatialReference, token = token, url = url, version = version)
+  
+    __obj.asInstanceOf[SceneService]
+  }
+}
+

@@ -13,3 +13,18 @@ trait ParsedGroup extends js.Object {
   var `type`: java.lang.String
 }
 
+object ParsedGroup {
+  @scala.inline
+  def apply(
+    addresses: js.Array[ParsedMailbox],
+    name: java.lang.String,
+    parts: emailDashAddressesLib.Anon_Name,
+    `type`: java.lang.String,
+    node: ASTNode = null
+  ): ParsedGroup = {
+    val __obj = js.Dynamic.literal(addresses = addresses, name = name, parts = parts, `type` = `type`)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[ParsedGroup]
+  }
+}
+

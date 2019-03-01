@@ -66,3 +66,41 @@ trait ASPxClientSplitter extends ASPxClientControl {
   def SetAllowResize(allowResize: scala.Boolean): scala.Unit
 }
 
+object ASPxClientSplitter {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetLayoutData: js.Function0[java.lang.String],
+    GetMainElement: js.Function0[js.Object],
+    GetPane: js.Function1[scala.Double, ASPxClientSplitterPane],
+    GetPaneByName: js.Function1[java.lang.String, ASPxClientSplitterPane],
+    GetPaneCount: js.Function0[scala.Double],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    PaneCollapsed: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
+    PaneCollapsing: ASPxClientEvent[ASPxClientSplitterPaneCancelEventHandler[ASPxClientSplitter]],
+    PaneContentUrlLoaded: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
+    PaneExpanded: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
+    PaneExpanding: ASPxClientEvent[ASPxClientSplitterPaneCancelEventHandler[ASPxClientSplitter]],
+    PaneResizeCompleted: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
+    PaneResized: ASPxClientEvent[ASPxClientSplitterPaneEventHandler[ASPxClientSplitter]],
+    PaneResizing: ASPxClientEvent[ASPxClientSplitterPaneCancelEventHandler[ASPxClientSplitter]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetAllowResize: js.Function1[scala.Boolean, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientSplitter = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetLayoutData = GetLayoutData, GetMainElement = GetMainElement, GetPane = GetPane, GetPaneByName = GetPaneByName, GetPaneCount = GetPaneCount, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, PaneCollapsed = PaneCollapsed, PaneCollapsing = PaneCollapsing, PaneContentUrlLoaded = PaneContentUrlLoaded, PaneExpanded = PaneExpanded, PaneExpanding = PaneExpanding, PaneResizeCompleted = PaneResizeCompleted, PaneResized = PaneResized, PaneResizing = PaneResizing, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetAllowResize = SetAllowResize, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
+    __obj.asInstanceOf[ASPxClientSplitter]
+  }
+}
+

@@ -72,3 +72,20 @@ trait NativeMethodsMixinStatic extends js.Object {
   def setNativeProps(nativeProps: js.Object): scala.Unit
 }
 
+object NativeMethodsMixinStatic {
+  @scala.inline
+  def apply(
+    blur: js.Function0[scala.Unit],
+    focus: js.Function0[scala.Unit],
+    measure: js.Function1[MeasureOnSuccessCallback, scala.Unit],
+    measureInWindow: js.Function1[MeasureInWindowOnSuccessCallback, scala.Unit],
+    measureLayout: js.Function3[scala.Double, MeasureLayoutOnSuccessCallback, js.Function0[scala.Unit], scala.Unit],
+    refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Component[_, _, _]],
+    setNativeProps: js.Function1[js.Object, scala.Unit]
+  ): NativeMethodsMixinStatic = {
+    val __obj = js.Dynamic.literal(blur = blur, focus = focus, measure = measure, measureInWindow = measureInWindow, measureLayout = measureLayout, refs = refs, setNativeProps = setNativeProps)
+  
+    __obj.asInstanceOf[NativeMethodsMixinStatic]
+  }
+}
+

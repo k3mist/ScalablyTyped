@@ -244,3 +244,80 @@ trait ClosestFacilityParametersProperties extends js.Object {
   var useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClosestFacilityParametersProperties {
+  @scala.inline
+  def apply(
+    accumulateAttributes: js.Array[java.lang.String] = null,
+    attributeParameterValues: js.Array[ClosestFacilityParametersAttributeParameterValues] = null,
+    defaultCutoff: scala.Int | scala.Double = null,
+    defaultTargetFacilityCount: scala.Int | scala.Double = null,
+    directionsLanguage: java.lang.String = null,
+    directionsLengthUnits: java.lang.String = null,
+    directionsOutputType: java.lang.String = null,
+    directionsStyleName: java.lang.String = null,
+    directionsTimeAttribute: java.lang.String = null,
+    doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined,
+    facilities: DataLayerProperties | FeatureSetProperties = null,
+    impedanceAttribute: java.lang.String = null,
+    incidents: DataLayerProperties | FeatureSetProperties = null,
+    outSpatialReference: SpatialReferenceProperties | java.lang.String = null,
+    outputGeometryPrecision: scala.Int | scala.Double = null,
+    outputGeometryPrecisionUnits: java.lang.String = null,
+    outputLines: java.lang.String = null,
+    pointBarriers: DataLayerProperties | FeatureSetProperties = null,
+    polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
+    polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
+    restrictUTurns: java.lang.String = null,
+    restrictionAttributes: js.Array[java.lang.String] = null,
+    returnDirections: js.UndefOr[scala.Boolean] = js.undefined,
+    returnFacilities: js.UndefOr[scala.Boolean] = js.undefined,
+    returnIncidents: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPointBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolygonBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnPolylineBarriers: js.UndefOr[scala.Boolean] = js.undefined,
+    returnRoutes: js.UndefOr[scala.Boolean] = js.undefined,
+    timeOfDay: DateProperties = null,
+    timeOfDayUsage: java.lang.String = null,
+    travelDirection: java.lang.String = null,
+    travelMode: js.Any = null,
+    useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClosestFacilityParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (accumulateAttributes != null) __obj.updateDynamic("accumulateAttributes")(accumulateAttributes)
+    if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues)
+    if (defaultCutoff != null) __obj.updateDynamic("defaultCutoff")(defaultCutoff.asInstanceOf[js.Any])
+    if (defaultTargetFacilityCount != null) __obj.updateDynamic("defaultTargetFacilityCount")(defaultTargetFacilityCount.asInstanceOf[js.Any])
+    if (directionsLanguage != null) __obj.updateDynamic("directionsLanguage")(directionsLanguage)
+    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits)
+    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType)
+    if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName)
+    if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute)
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements)
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (incidents != null) __obj.updateDynamic("incidents")(incidents.asInstanceOf[js.Any])
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
+    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections)
+    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities)
+    if (!js.isUndefined(returnIncidents)) __obj.updateDynamic("returnIncidents")(returnIncidents)
+    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers)
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers)
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers)
+    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes)
+    if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
+    if (timeOfDayUsage != null) __obj.updateDynamic("timeOfDayUsage")(timeOfDayUsage)
+    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection)
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy)
+    __obj.asInstanceOf[ClosestFacilityParametersProperties]
+  }
+}
+

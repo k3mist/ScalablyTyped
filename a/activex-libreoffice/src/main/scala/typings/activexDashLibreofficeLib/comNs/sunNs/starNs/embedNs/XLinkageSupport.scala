@@ -48,3 +48,27 @@ trait XLinkageSupport extends XCommonEmbedPersist {
   def isLink(): scala.Boolean
 }
 
+object XLinkageSupport {
+  @scala.inline
+  def apply(
+    LinkURL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    breakLink: js.Function2[XStorage, java.lang.String, scala.Unit],
+    getLinkURL: js.Function0[java.lang.String],
+    isLink: js.Function0[scala.Boolean],
+    isReadonly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeOwn: js.Function0[scala.Unit]
+  ): XLinkageSupport = {
+    val __obj = js.Dynamic.literal(LinkURL = LinkURL, acquire = acquire, breakLink = breakLink, getLinkURL = getLinkURL, isLink = isLink, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, storeOwn = storeOwn)
+  
+    __obj.asInstanceOf[XLinkageSupport]
+  }
+}
+

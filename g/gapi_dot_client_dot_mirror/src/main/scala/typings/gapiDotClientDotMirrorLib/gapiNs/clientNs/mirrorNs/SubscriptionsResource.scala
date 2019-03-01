@@ -16,3 +16,29 @@ trait SubscriptionsResource extends js.Object {
   def update(request: gapiDotClientDotMirrorLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
 }
 
+object SubscriptionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionsListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ]
+  ): SubscriptionsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
+    __obj.asInstanceOf[SubscriptionsResource]
+  }
+}
+

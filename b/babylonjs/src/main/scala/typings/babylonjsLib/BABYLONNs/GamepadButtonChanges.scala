@@ -27,3 +27,17 @@ trait GamepadButtonChanges extends js.Object {
   var valueChanged: scala.Boolean
 }
 
+object GamepadButtonChanges {
+  @scala.inline
+  def apply(
+    changed: scala.Boolean,
+    pressChanged: scala.Boolean,
+    touchChanged: scala.Boolean,
+    valueChanged: scala.Boolean
+  ): GamepadButtonChanges = {
+    val __obj = js.Dynamic.literal(changed = changed, pressChanged = pressChanged, touchChanged = touchChanged, valueChanged = valueChanged)
+  
+    __obj.asInstanceOf[GamepadButtonChanges]
+  }
+}
+

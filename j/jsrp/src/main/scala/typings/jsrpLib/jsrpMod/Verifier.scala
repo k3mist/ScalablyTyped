@@ -10,3 +10,12 @@ trait Verifier extends js.Object {
   var verifier: java.lang.String
 }
 
+object Verifier {
+  @scala.inline
+  def apply(salt: java.lang.String, verifier: java.lang.String): Verifier = {
+    val __obj = js.Dynamic.literal(salt = salt, verifier = verifier)
+  
+    __obj.asInstanceOf[Verifier]
+  }
+}
+

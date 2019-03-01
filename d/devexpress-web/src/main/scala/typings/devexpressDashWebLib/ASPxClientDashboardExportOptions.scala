@@ -106,3 +106,32 @@ trait ASPxClientDashboardExportOptions extends js.Object {
   var TreemapOptions: TreemapExportOptions
 }
 
+object ASPxClientDashboardExportOptions {
+  @scala.inline
+  def apply(
+    AutoFitPageCount: scala.Double,
+    CardOptions: CardExportOptions,
+    ChartOptions: ChartExportOptions,
+    ExcelOptions: ExcelFormatOptions,
+    FilterState: java.lang.String,
+    GaugeOptions: GaugeExportOptions,
+    GridOptions: GridExportOptions,
+    ImageOptions: ImageFormatOptions,
+    MapOptions: MapExportOptions,
+    PageLayout: java.lang.String,
+    PaperKind: java.lang.String,
+    PieOptions: PieExportOptions,
+    PivotOptions: PivotExportOptions,
+    RangeFilterOptions: RangeFilterExportOptions,
+    ScaleFactor: scala.Double,
+    ScaleMode: java.lang.String,
+    ShowTitle: scala.Boolean,
+    Title: java.lang.String,
+    TreemapOptions: TreemapExportOptions
+  ): ASPxClientDashboardExportOptions = {
+    val __obj = js.Dynamic.literal(AutoFitPageCount = AutoFitPageCount, CardOptions = CardOptions, ChartOptions = ChartOptions, ExcelOptions = ExcelOptions, FilterState = FilterState, GaugeOptions = GaugeOptions, GridOptions = GridOptions, ImageOptions = ImageOptions, MapOptions = MapOptions, PageLayout = PageLayout, PaperKind = PaperKind, PieOptions = PieOptions, PivotOptions = PivotOptions, RangeFilterOptions = RangeFilterOptions, ScaleFactor = ScaleFactor, ScaleMode = ScaleMode, ShowTitle = ShowTitle, Title = Title, TreemapOptions = TreemapOptions)
+  
+    __obj.asInstanceOf[ASPxClientDashboardExportOptions]
+  }
+}
+

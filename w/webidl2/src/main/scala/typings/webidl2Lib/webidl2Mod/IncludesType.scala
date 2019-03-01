@@ -15,3 +15,17 @@ trait IncludesType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.includes
 }
 
+object IncludesType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    includes: java.lang.String,
+    target: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.includes
+  ): IncludesType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, includes = includes, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[IncludesType]
+  }
+}
+

@@ -13,3 +13,12 @@ trait Extra extends js.Object {
   var params: js.Any
 }
 
+object Extra {
+  @scala.inline
+  def apply(fname: java.lang.String, params: js.Any, mimeType: js.Array[java.lang.String] = null): Extra = {
+    val __obj = js.Dynamic.literal(fname = fname, params = params)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[Extra]
+  }
+}
+

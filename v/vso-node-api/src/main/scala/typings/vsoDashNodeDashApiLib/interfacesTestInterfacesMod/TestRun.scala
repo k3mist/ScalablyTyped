@@ -51,3 +51,56 @@ trait TestRun extends js.Object {
   var webAccessUrl: java.lang.String
 }
 
+object TestRun {
+  @scala.inline
+  def apply(
+    build: ShallowReference,
+    buildConfiguration: BuildConfiguration,
+    comment: java.lang.String,
+    completedDate: stdLib.Date,
+    controller: java.lang.String,
+    createdDate: stdLib.Date,
+    customFields: js.Array[CustomTestField],
+    dropLocation: java.lang.String,
+    dtlAutEnvironment: ShallowReference,
+    dtlEnvironment: ShallowReference,
+    dtlEnvironmentCreationDetails: DtlEnvironmentDetails,
+    dueDate: stdLib.Date,
+    errorMessage: java.lang.String,
+    filter: RunFilter,
+    id: scala.Double,
+    incompleteTests: scala.Double,
+    isAutomated: scala.Boolean,
+    iteration: java.lang.String,
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    name: java.lang.String,
+    notApplicableTests: scala.Double,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    passedTests: scala.Double,
+    phase: java.lang.String,
+    plan: ShallowReference,
+    postProcessState: java.lang.String,
+    project: ShallowReference,
+    release: ReleaseReference,
+    releaseEnvironmentUri: java.lang.String,
+    releaseUri: java.lang.String,
+    revision: scala.Double,
+    runStatistics: js.Array[RunStatistic],
+    startedDate: stdLib.Date,
+    state: java.lang.String,
+    substate: TestRunSubstate,
+    testEnvironment: TestEnvironment,
+    testMessageLogId: scala.Double,
+    testSettings: ShallowReference,
+    totalTests: scala.Double,
+    unanalyzedTests: scala.Double,
+    url: java.lang.String,
+    webAccessUrl: java.lang.String
+  ): TestRun = {
+    val __obj = js.Dynamic.literal(build = build, buildConfiguration = buildConfiguration, comment = comment, completedDate = completedDate, controller = controller, createdDate = createdDate, customFields = customFields, dropLocation = dropLocation, dtlAutEnvironment = dtlAutEnvironment, dtlEnvironment = dtlEnvironment, dtlEnvironmentCreationDetails = dtlEnvironmentCreationDetails, dueDate = dueDate, errorMessage = errorMessage, filter = filter, id = id, incompleteTests = incompleteTests, isAutomated = isAutomated, iteration = iteration, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, name = name, notApplicableTests = notApplicableTests, owner = owner, passedTests = passedTests, phase = phase, plan = plan, postProcessState = postProcessState, project = project, release = release, releaseEnvironmentUri = releaseEnvironmentUri, releaseUri = releaseUri, revision = revision, runStatistics = runStatistics, startedDate = startedDate, state = state, substate = substate, testEnvironment = testEnvironment, testMessageLogId = testMessageLogId, testSettings = testSettings, totalTests = totalTests, unanalyzedTests = unanalyzedTests, url = url, webAccessUrl = webAccessUrl)
+  
+    __obj.asInstanceOf[TestRun]
+  }
+}
+

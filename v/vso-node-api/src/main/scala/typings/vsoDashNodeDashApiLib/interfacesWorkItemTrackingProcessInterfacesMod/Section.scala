@@ -17,3 +17,12 @@ trait Section extends js.Object {
   var overridden: scala.Boolean
 }
 
+object Section {
+  @scala.inline
+  def apply(groups: js.Array[Group], id: java.lang.String, overridden: scala.Boolean): Section = {
+    val __obj = js.Dynamic.literal(groups = groups, id = id, overridden = overridden)
+  
+    __obj.asInstanceOf[Section]
+  }
+}
+

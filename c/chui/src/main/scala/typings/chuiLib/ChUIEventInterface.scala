@@ -21,3 +21,26 @@ trait ChUIEventInterface extends js.Object {
   var tap: java.lang.String
 }
 
+object ChUIEventInterface {
+  @scala.inline
+  def apply(
+    doubletap: java.lang.String,
+    eventCancel: java.lang.String,
+    eventEnd: java.lang.String,
+    eventMove: java.lang.String,
+    eventStart: java.lang.String,
+    longtap: java.lang.String,
+    singletap: java.lang.String,
+    swipe: java.lang.String,
+    swipedown: java.lang.String,
+    swipeleft: java.lang.String,
+    swiperight: java.lang.String,
+    swipeup: java.lang.String,
+    tap: java.lang.String
+  ): ChUIEventInterface = {
+    val __obj = js.Dynamic.literal(doubletap = doubletap, eventCancel = eventCancel, eventEnd = eventEnd, eventMove = eventMove, eventStart = eventStart, longtap = longtap, singletap = singletap, swipe = swipe, swipedown = swipedown, swipeleft = swipeleft, swiperight = swiperight, swipeup = swipeup, tap = tap)
+  
+    __obj.asInstanceOf[ChUIEventInterface]
+  }
+}
+

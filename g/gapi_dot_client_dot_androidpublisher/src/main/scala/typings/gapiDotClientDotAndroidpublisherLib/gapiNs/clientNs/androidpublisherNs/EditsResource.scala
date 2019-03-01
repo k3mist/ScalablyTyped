@@ -30,3 +30,42 @@ trait EditsResource extends js.Object {
   def validate(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId): gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
 }
 
+object EditsResource {
+  @scala.inline
+  def apply(
+    apklistings: ApklistingsResource,
+    apks: ApksResource,
+    commit: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    deobfuscationfiles: DeobfuscationfilesResource,
+    details: DetailsResource,
+    expansionfiles: ExpansionfilesResource,
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    images: ImagesResource,
+    insert: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    listings: ListingsResource,
+    testers: TestersResource,
+    tracks: TracksResource,
+    validate: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ]
+  ): EditsResource = {
+    val __obj = js.Dynamic.literal(apklistings = apklistings, apks = apks, commit = commit, delete = delete, deobfuscationfiles = deobfuscationfiles, details = details, expansionfiles = expansionfiles, get = get, images = images, insert = insert, listings = listings, testers = testers, tracks = tracks, validate = validate)
+  
+    __obj.asInstanceOf[EditsResource]
+  }
+}
+

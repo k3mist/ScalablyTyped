@@ -33,3 +33,19 @@ trait LocatorAddressesToLocationsParams
   var countryCode: java.lang.String
 }
 
+object LocatorAddressesToLocationsParams {
+  @scala.inline
+  def apply(
+    addresses: js.Array[_],
+    categories: js.Array[java.lang.String],
+    constructor: js.Function,
+    countryCode: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): LocatorAddressesToLocationsParams = {
+    val __obj = js.Dynamic.literal(addresses = addresses, categories = categories, constructor = constructor, countryCode = countryCode, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[LocatorAddressesToLocationsParams]
+  }
+}
+

@@ -31,3 +31,21 @@ trait Anon_Close extends js.Object {
   def setTitle(details: Anon_TabIdTitle): js.Promise[scala.Unit]
 }
 
+object Anon_Close {
+  @scala.inline
+  def apply(
+    close: js.Function0[js.Promise[scala.Unit]],
+    getPanel: js.Function1[Anon_TabIdWindowId, js.Promise[java.lang.String]],
+    getTitle: js.Function1[Anon_TabIdWindowId, js.Promise[java.lang.String]],
+    isOpen: js.Function1[Anon_WindowId, js.Promise[scala.Boolean]],
+    open: js.Function0[js.Promise[scala.Unit]],
+    setIcon: js.Function1[Anon_ImageDataKeyPathTabId, js.Promise[scala.Unit]],
+    setPanel: js.Function1[Anon_Panel, js.Promise[scala.Unit]],
+    setTitle: js.Function1[Anon_TabIdTitle, js.Promise[scala.Unit]]
+  ): Anon_Close = {
+    val __obj = js.Dynamic.literal(close = close, getPanel = getPanel, getTitle = getTitle, isOpen = isOpen, open = open, setIcon = setIcon, setPanel = setPanel, setTitle = setTitle)
+  
+    __obj.asInstanceOf[Anon_Close]
+  }
+}
+

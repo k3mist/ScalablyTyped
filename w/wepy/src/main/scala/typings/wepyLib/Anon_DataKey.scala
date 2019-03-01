@@ -10,3 +10,12 @@ trait Anon_DataKey extends js.Object {
   var key: java.lang.String
 }
 
+object Anon_DataKey {
+  @scala.inline
+  def apply(data: java.lang.String | js.Object, key: java.lang.String): Anon_DataKey = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key)
+  
+    __obj.asInstanceOf[Anon_DataKey]
+  }
+}
+

@@ -10,3 +10,12 @@ trait PlaceSearchPagination extends js.Object {
   def nextPage(): scala.Unit
 }
 
+object PlaceSearchPagination {
+  @scala.inline
+  def apply(hasNextPage: scala.Boolean, nextPage: js.Function0[scala.Unit]): PlaceSearchPagination = {
+    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage, nextPage = nextPage)
+  
+    __obj.asInstanceOf[PlaceSearchPagination]
+  }
+}
+

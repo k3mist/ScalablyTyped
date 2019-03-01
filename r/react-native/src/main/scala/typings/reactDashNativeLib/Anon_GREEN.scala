@@ -11,3 +11,12 @@ trait Anon_GREEN extends js.Object {
   var RED: java.lang.String
 }
 
+object Anon_GREEN {
+  @scala.inline
+  def apply(GREEN: java.lang.String, PURPLE: java.lang.String, RED: java.lang.String): Anon_GREEN = {
+    val __obj = js.Dynamic.literal(GREEN = GREEN, PURPLE = PURPLE, RED = RED)
+  
+    __obj.asInstanceOf[Anon_GREEN]
+  }
+}
+

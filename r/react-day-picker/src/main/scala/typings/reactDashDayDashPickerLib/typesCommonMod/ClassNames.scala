@@ -31,3 +31,36 @@ trait ClassNames extends js.Object {
   var wrapper: java.lang.String
 }
 
+object ClassNames {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    caption: java.lang.String,
+    container: java.lang.String,
+    day: java.lang.String,
+    disabled: java.lang.String,
+    footer: java.lang.String,
+    interactionDisabled: java.lang.String,
+    month: java.lang.String,
+    months: java.lang.String,
+    navBar: java.lang.String,
+    navButtonInteractionDisabled: java.lang.String,
+    navButtonNext: java.lang.String,
+    navButtonPrev: java.lang.String,
+    outside: java.lang.String,
+    selected: java.lang.String,
+    today: java.lang.String,
+    todayButton: java.lang.String,
+    week: java.lang.String,
+    weekNumber: java.lang.String,
+    weekday: java.lang.String,
+    weekdays: java.lang.String,
+    weekdaysRow: java.lang.String,
+    wrapper: java.lang.String
+  ): ClassNames = {
+    val __obj = js.Dynamic.literal(body = body, caption = caption, container = container, day = day, disabled = disabled, footer = footer, interactionDisabled = interactionDisabled, month = month, months = months, navBar = navBar, navButtonInteractionDisabled = navButtonInteractionDisabled, navButtonNext = navButtonNext, navButtonPrev = navButtonPrev, outside = outside, selected = selected, today = today, todayButton = todayButton, week = week, weekNumber = weekNumber, weekday = weekday, weekdays = weekdays, weekdaysRow = weekdaysRow, wrapper = wrapper)
+  
+    __obj.asInstanceOf[ClassNames]
+  }
+}
+

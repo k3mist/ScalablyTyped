@@ -14,3 +14,19 @@ trait Server extends js.Object {
   def use(middleware: Middleware): this.type
 }
 
+object Server {
+  @scala.inline
+  def apply(
+    app: App,
+    listen: js.Function1[wsLib.wsMod.WebSocketNs.ServerOptions, wsLib.wsMod.Server],
+    middleware: js.Array[Middleware],
+    onConnection: js.Function2[wsLib.wsMod.namespaced, nodeLib.httpMod.IncomingMessage, scala.Unit],
+    use: js.Function1[Middleware, Server],
+    server: wsLib.wsMod.Server = null
+  ): Server = {
+    val __obj = js.Dynamic.literal(app = app, listen = listen, middleware = middleware, onConnection = onConnection, use = use)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[Server]
+  }
+}
+

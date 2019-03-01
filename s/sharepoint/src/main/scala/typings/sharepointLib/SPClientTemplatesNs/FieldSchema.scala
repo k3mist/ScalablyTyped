@@ -17,3 +17,17 @@ trait FieldSchema extends js.Object {
   var Type: java.lang.String
 }
 
+object FieldSchema {
+  @scala.inline
+  def apply(
+    AllowGridEditing: scala.Boolean,
+    FieldType: java.lang.String,
+    Name: java.lang.String,
+    Type: java.lang.String
+  ): FieldSchema = {
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, FieldType = FieldType, Name = Name, Type = Type)
+  
+    __obj.asInstanceOf[FieldSchema]
+  }
+}
+

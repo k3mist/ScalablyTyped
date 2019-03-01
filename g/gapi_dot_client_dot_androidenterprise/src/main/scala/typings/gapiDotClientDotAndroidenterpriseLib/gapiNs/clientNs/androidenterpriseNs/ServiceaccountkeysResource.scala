@@ -26,3 +26,25 @@ trait ServiceaccountkeysResource extends js.Object {
   def list(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields): gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKeysListResponse]
 }
 
+object ServiceaccountkeysResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyKeyId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKey]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccountKeysListResponse]
+    ]
+  ): ServiceaccountkeysResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+  
+    __obj.asInstanceOf[ServiceaccountkeysResource]
+  }
+}
+

@@ -13,3 +13,12 @@ trait IQueryParam extends js.Object {
   var value: js.Any
 }
 
+object IQueryParam {
+  @scala.inline
+  def apply(name: java.lang.String, value: js.Any): IQueryParam = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[IQueryParam]
+  }
+}
+

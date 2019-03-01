@@ -20,3 +20,12 @@ trait DashboardExportImageFormatStatic extends js.Object {
   var Png: java.lang.String
 }
 
+object DashboardExportImageFormatStatic {
+  @scala.inline
+  def apply(Gif: java.lang.String, Jpg: java.lang.String, Png: java.lang.String): DashboardExportImageFormatStatic = {
+    val __obj = js.Dynamic.literal(Gif = Gif, Jpg = Jpg, Png = Png)
+  
+    __obj.asInstanceOf[DashboardExportImageFormatStatic]
+  }
+}
+

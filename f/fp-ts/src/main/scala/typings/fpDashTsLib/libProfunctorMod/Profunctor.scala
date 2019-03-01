@@ -15,3 +15,25 @@ trait Profunctor[F] extends js.Object {
   ): fpDashTsLib.libHKTMod.HKT2[F, A, D]
 }
 
+object Profunctor {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
+    ],
+    promap: js.Function3[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
+    ]
+  ): Profunctor[F] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, promap = promap)
+  
+    __obj.asInstanceOf[Profunctor[F]]
+  }
+}
+

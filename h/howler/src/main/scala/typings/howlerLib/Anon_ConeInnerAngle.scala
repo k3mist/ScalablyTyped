@@ -16,3 +16,23 @@ trait Anon_ConeInnerAngle extends js.Object {
   var rolloffFactor: scala.Double
 }
 
+object Anon_ConeInnerAngle {
+  @scala.inline
+  def apply(
+    distanceModel: howlerLib.howlerLibStrings.inverse | howlerLib.howlerLibStrings.linear,
+    maxDistance: scala.Double,
+    panningModel: howlerLib.howlerLibStrings.HRTF | howlerLib.howlerLibStrings.equalpower,
+    refDistance: scala.Double,
+    rolloffFactor: scala.Double,
+    coneInnerAngle: scala.Int | scala.Double = null,
+    coneOuterAngle: scala.Int | scala.Double = null,
+    coneOuterGain: scala.Int | scala.Double = null
+  ): Anon_ConeInnerAngle = {
+    val __obj = js.Dynamic.literal(distanceModel = distanceModel.asInstanceOf[js.Any], maxDistance = maxDistance, panningModel = panningModel.asInstanceOf[js.Any], refDistance = refDistance, rolloffFactor = rolloffFactor)
+    if (coneInnerAngle != null) __obj.updateDynamic("coneInnerAngle")(coneInnerAngle.asInstanceOf[js.Any])
+    if (coneOuterAngle != null) __obj.updateDynamic("coneOuterAngle")(coneOuterAngle.asInstanceOf[js.Any])
+    if (coneOuterGain != null) __obj.updateDynamic("coneOuterGain")(coneOuterGain.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ConeInnerAngle]
+  }
+}
+

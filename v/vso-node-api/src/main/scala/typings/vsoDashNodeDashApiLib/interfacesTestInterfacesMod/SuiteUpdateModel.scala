@@ -14,3 +14,19 @@ trait SuiteUpdateModel extends js.Object {
   var queryString: java.lang.String
 }
 
+object SuiteUpdateModel {
+  @scala.inline
+  def apply(
+    defaultConfigurations: js.Array[ShallowReference],
+    defaultTesters: js.Array[ShallowReference],
+    inheritDefaultConfigurations: scala.Boolean,
+    name: java.lang.String,
+    parent: ShallowReference,
+    queryString: java.lang.String
+  ): SuiteUpdateModel = {
+    val __obj = js.Dynamic.literal(defaultConfigurations = defaultConfigurations, defaultTesters = defaultTesters, inheritDefaultConfigurations = inheritDefaultConfigurations, name = name, parent = parent, queryString = queryString)
+  
+    __obj.asInstanceOf[SuiteUpdateModel]
+  }
+}
+

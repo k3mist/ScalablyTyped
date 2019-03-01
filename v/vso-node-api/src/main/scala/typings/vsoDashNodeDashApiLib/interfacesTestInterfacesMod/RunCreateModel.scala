@@ -39,3 +39,44 @@ trait RunCreateModel extends js.Object {
   var `type`: java.lang.String
 }
 
+object RunCreateModel {
+  @scala.inline
+  def apply(
+    automated: scala.Boolean,
+    build: ShallowReference,
+    buildDropLocation: java.lang.String,
+    buildFlavor: java.lang.String,
+    buildPlatform: java.lang.String,
+    comment: java.lang.String,
+    completeDate: java.lang.String,
+    configurationIds: js.Array[scala.Double],
+    controller: java.lang.String,
+    customTestFields: js.Array[CustomTestField],
+    dtlAutEnvironment: ShallowReference,
+    dtlTestEnvironment: ShallowReference,
+    dueDate: java.lang.String,
+    environmentDetails: DtlEnvironmentDetails,
+    errorMessage: java.lang.String,
+    filter: RunFilter,
+    iteration: java.lang.String,
+    name: java.lang.String,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    plan: ShallowReference,
+    pointIds: js.Array[scala.Double],
+    releaseEnvironmentUri: java.lang.String,
+    releaseUri: java.lang.String,
+    runTimeout: js.Any,
+    sourceWorkflow: java.lang.String,
+    startDate: java.lang.String,
+    state: java.lang.String,
+    testConfigurationsMapping: java.lang.String,
+    testEnvironmentId: java.lang.String,
+    testSettings: ShallowReference,
+    `type`: java.lang.String
+  ): RunCreateModel = {
+    val __obj = js.Dynamic.literal(automated = automated, build = build, buildDropLocation = buildDropLocation, buildFlavor = buildFlavor, buildPlatform = buildPlatform, comment = comment, completeDate = completeDate, configurationIds = configurationIds, controller = controller, customTestFields = customTestFields, dtlAutEnvironment = dtlAutEnvironment, dtlTestEnvironment = dtlTestEnvironment, dueDate = dueDate, environmentDetails = environmentDetails, errorMessage = errorMessage, filter = filter, iteration = iteration, name = name, owner = owner, plan = plan, pointIds = pointIds, releaseEnvironmentUri = releaseEnvironmentUri, releaseUri = releaseUri, runTimeout = runTimeout, sourceWorkflow = sourceWorkflow, startDate = startDate, state = state, testConfigurationsMapping = testConfigurationsMapping, testEnvironmentId = testEnvironmentId, testSettings = testSettings, `type` = `type`)
+  
+    __obj.asInstanceOf[RunCreateModel]
+  }
+}
+

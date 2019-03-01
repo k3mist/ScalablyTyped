@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
 }
 
+object TSTypePredicate {
+  @scala.inline
+  def apply(
+    parameterName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSThisTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypePredicate,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): TSTypePredicate = {
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], `type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[TSTypePredicate]
+  }
+}
+

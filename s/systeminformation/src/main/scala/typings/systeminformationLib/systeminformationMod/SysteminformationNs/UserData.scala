@@ -14,3 +14,19 @@ trait UserData extends js.Object {
   var user: java.lang.String
 }
 
+object UserData {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    date: java.lang.String,
+    ip: java.lang.String,
+    time: java.lang.String,
+    tty: java.lang.String,
+    user: java.lang.String
+  ): UserData = {
+    val __obj = js.Dynamic.literal(command = command, date = date, ip = ip, time = time, tty = tty, user = user)
+  
+    __obj.asInstanceOf[UserData]
+  }
+}
+

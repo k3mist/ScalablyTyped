@@ -16,3 +16,21 @@ trait IUserIdentity extends js.Object {
   var tickets: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[OnlineIdServiceTicket]
 }
 
+object IUserIdentity {
+  @scala.inline
+  def apply(
+    firstName: java.lang.String,
+    id: java.lang.String,
+    isBetaAccount: scala.Boolean,
+    isConfirmedPC: scala.Boolean,
+    lastName: java.lang.String,
+    safeCustomerId: java.lang.String,
+    signInName: java.lang.String,
+    tickets: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[OnlineIdServiceTicket]
+  ): IUserIdentity = {
+    val __obj = js.Dynamic.literal(firstName = firstName, id = id, isBetaAccount = isBetaAccount, isConfirmedPC = isConfirmedPC, lastName = lastName, safeCustomerId = safeCustomerId, signInName = signInName, tickets = tickets)
+  
+    __obj.asInstanceOf[IUserIdentity]
+  }
+}
+

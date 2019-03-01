@@ -24,3 +24,17 @@ trait PopoverParams extends js.Object {
   var view: titaniumLib.TitaniumNs.UINs.View
 }
 
+object PopoverParams {
+  @scala.inline
+  def apply(
+    view: titaniumLib.TitaniumNs.UINs.View,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    rect: Dimension = null
+  ): PopoverParams = {
+    val __obj = js.Dynamic.literal(view = view)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (rect != null) __obj.updateDynamic("rect")(rect)
+    __obj.asInstanceOf[PopoverParams]
+  }
+}
+

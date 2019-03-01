@@ -19,3 +19,15 @@ trait MapContext extends js.Object {
   def moveToLocation(): scala.Unit
 }
 
+object MapContext {
+  @scala.inline
+  def apply(
+    getCenterLocation: js.Function1[GetCenterLocationOptions, OpenLocationOptions],
+    moveToLocation: js.Function0[scala.Unit]
+  ): MapContext = {
+    val __obj = js.Dynamic.literal(getCenterLocation = getCenterLocation, moveToLocation = moveToLocation)
+  
+    __obj.asInstanceOf[MapContext]
+  }
+}
+

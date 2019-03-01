@@ -26,3 +26,17 @@ trait ASPxClientCardViewBatchEditStartEditingEventArgs extends ASPxClientCancelE
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewBatchEditStartEditingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    cardValues: js.Object,
+    focusedColumn: ASPxClientCardViewColumn,
+    visibleIndex: scala.Double
+  ): ASPxClientCardViewBatchEditStartEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, focusedColumn = focusedColumn, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditStartEditingEventArgs]
+  }
+}
+

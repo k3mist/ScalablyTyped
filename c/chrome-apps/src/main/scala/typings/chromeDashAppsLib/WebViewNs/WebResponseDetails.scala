@@ -15,3 +15,23 @@ trait WebResponseDetails extends ResourceRequest {
   var statusLine: java.lang.String
 }
 
+object WebResponseDetails {
+  @scala.inline
+  def apply(
+    frameId: chromeDashAppsLib.chromeNs.integer,
+    parentFrameId: chromeDashAppsLib.chromeNs.integer,
+    requestId: java.lang.String,
+    statusCode: chromeDashAppsLib.chromeNs.integer,
+    statusLine: java.lang.String,
+    tabId: chromeDashAppsLib.chromeNs.integer,
+    timeStamp: chromeDashAppsLib.chromeNs.double,
+    `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null
+  ): WebResponseDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    __obj.asInstanceOf[WebResponseDetails]
+  }
+}
+

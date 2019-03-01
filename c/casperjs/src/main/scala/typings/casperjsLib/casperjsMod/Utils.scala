@@ -34,3 +34,39 @@ trait Utils extends js.Object {
   def unique(array: js.Array[_]): js.Any
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    betterTypeOf: js.Function1[js.Any, js.Any],
+    dump: js.Function1[js.Any, js.Any],
+    fileExt: js.Function1[java.lang.String, js.Any],
+    fillBlanks: js.Function2[java.lang.String, scala.Double, js.Any],
+    format: js.Function2[java.lang.String, /* repeated */ js.Any, js.Any],
+    getPropertyPath: js.Function2[js.Any, java.lang.String, js.Any],
+    inherits: js.Function2[js.Any, js.Any, js.Any],
+    isArray: js.Function1[js.Any, js.Any],
+    isCasperObject: js.Function1[js.Any, js.Any],
+    isClipRect: js.Function1[js.Any, js.Any],
+    isFalsy: js.Function1[js.Any, js.Any],
+    isFunction: js.Function1[js.Any, js.Any],
+    isJsFile: js.Function1[java.lang.String, js.Any],
+    isNull: js.Function1[js.Any, js.Any],
+    isNumber: js.Function1[js.Any, js.Any],
+    isObject: js.Function1[js.Any, js.Any],
+    isRegExp: js.Function1[js.Any, js.Any],
+    isString: js.Function1[js.Any, js.Any],
+    isTruthy: js.Function1[js.Any, js.Any],
+    isType: js.Function2[js.Any, java.lang.String, js.Any],
+    isUndefined: js.Function1[js.Any, js.Any],
+    isWebPage: js.Function1[js.Any, js.Any],
+    mergeObjects: js.Function2[js.Any, js.Any, js.Any],
+    node: js.Function2[java.lang.String, js.Any, js.Any],
+    serialize: js.Function1[js.Any, js.Any],
+    unique: js.Function1[js.Array[_], js.Any]
+  ): Utils = {
+    val __obj = js.Dynamic.literal(betterTypeOf = betterTypeOf, dump = dump, fileExt = fileExt, fillBlanks = fillBlanks, format = format, getPropertyPath = getPropertyPath, inherits = inherits, isArray = isArray, isCasperObject = isCasperObject, isClipRect = isClipRect, isFalsy = isFalsy, isFunction = isFunction, isJsFile = isJsFile, isNull = isNull, isNumber = isNumber, isObject = isObject, isRegExp = isRegExp, isString = isString, isTruthy = isTruthy, isType = isType, isUndefined = isUndefined, isWebPage = isWebPage, mergeObjects = mergeObjects, node = node, serialize = serialize, unique = unique)
+  
+    __obj.asInstanceOf[Utils]
+  }
+}
+

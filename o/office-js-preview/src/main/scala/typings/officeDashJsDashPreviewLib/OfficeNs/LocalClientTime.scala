@@ -52,3 +52,21 @@ trait LocalClientTime extends js.Object {
   var year: scala.Double
 }
 
+object LocalClientTime {
+  @scala.inline
+  def apply(
+    date: scala.Double,
+    hours: scala.Double,
+    milliseconds: scala.Double,
+    minutes: scala.Double,
+    month: scala.Double,
+    seconds: scala.Double,
+    timezoneOffset: scala.Double,
+    year: scala.Double
+  ): LocalClientTime = {
+    val __obj = js.Dynamic.literal(date = date, hours = hours, milliseconds = milliseconds, minutes = minutes, month = month, seconds = seconds, timezoneOffset = timezoneOffset, year = year)
+  
+    __obj.asInstanceOf[LocalClientTime]
+  }
+}
+

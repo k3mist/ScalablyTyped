@@ -12,3 +12,17 @@ trait ParameterMetadata extends js.Object {
   var `type`: inversifyDashExpressDashUtilsLib.dtsConstantsMod.PARAMETER_TYPE
 }
 
+object ParameterMetadata {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    injectRoot: scala.Boolean,
+    `type`: inversifyDashExpressDashUtilsLib.dtsConstantsMod.PARAMETER_TYPE,
+    parameterName: java.lang.String = null
+  ): ParameterMetadata = {
+    val __obj = js.Dynamic.literal(index = index, injectRoot = injectRoot, `type` = `type`)
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    __obj.asInstanceOf[ParameterMetadata]
+  }
+}
+

@@ -24,3 +24,29 @@ trait AliasesMap extends js.Object {
   var windows: scala.Double
 }
 
+object AliasesMap {
+  @scala.inline
+  def apply(
+    break: scala.Double,
+    caps: scala.Double,
+    cmd: scala.Double,
+    control: scala.Double,
+    ctl: scala.Double,
+    del: scala.Double,
+    escape: scala.Double,
+    ins: scala.Double,
+    option: scala.Double,
+    pause: scala.Double,
+    pgdn: scala.Double,
+    pgup: scala.Double,
+    `return`: scala.Double,
+    spacebar: scala.Double,
+    spc: scala.Double,
+    windows: scala.Double
+  ): AliasesMap = {
+    val __obj = js.Dynamic.literal(break = break, caps = caps, cmd = cmd, control = control, ctl = ctl, del = del, escape = escape, ins = ins, option = option, pause = pause, pgdn = pgdn, pgup = pgup, `return` = `return`, spacebar = spacebar, spc = spc, windows = windows)
+  
+    __obj.asInstanceOf[AliasesMap]
+  }
+}
+

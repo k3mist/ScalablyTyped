@@ -21,3 +21,15 @@ trait Events extends js.Object {
   var `text-events`: cytoscapeLib.cytoscapeLibStrings.yes | cytoscapeLib.cytoscapeLibStrings.no
 }
 
+object Events {
+  @scala.inline
+  def apply(
+    events: cytoscapeLib.cytoscapeLibStrings.yes | cytoscapeLib.cytoscapeLibStrings.no,
+    `text-events`: cytoscapeLib.cytoscapeLibStrings.yes | cytoscapeLib.cytoscapeLibStrings.no
+  ): Events = {
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-events")(`text-events`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Events]
+  }
+}
+

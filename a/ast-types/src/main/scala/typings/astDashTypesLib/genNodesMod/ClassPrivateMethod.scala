@@ -27,3 +27,29 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ClassPrivateMethod
 }
 
+object ClassPrivateMethod {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.PrivateNameKind,
+    kind: astDashTypesLib.astDashTypesLibStrings.get | astDashTypesLib.astDashTypesLibStrings.set | astDashTypesLib.astDashTypesLibStrings.method | astDashTypesLib.astDashTypesLibStrings.constructor,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassPrivateMethod,
+    `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
+    access: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null,
+    accessibility: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    static: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClassPrivateMethod = {
+    val __obj = js.Dynamic.literal(body = body, computed = computed, key = key, kind = kind.asInstanceOf[js.Any], `type` = `type`)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    __obj.asInstanceOf[ClassPrivateMethod]
+  }
+}
+

@@ -14,3 +14,19 @@ trait ErrorOptions extends js.Object {
   var width: scala.Double
 }
 
+object ErrorOptions {
+  @scala.inline
+  def apply(
+    color: Color,
+    opacity: scala.Double,
+    symmetric: scala.Boolean,
+    thickness: scala.Double,
+    visible: scala.Boolean,
+    width: scala.Double
+  ): ErrorOptions = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], opacity = opacity, symmetric = symmetric, thickness = thickness, visible = visible, width = width)
+  
+    __obj.asInstanceOf[ErrorOptions]
+  }
+}
+

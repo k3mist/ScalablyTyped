@@ -19,3 +19,41 @@ trait Anon_Authscheme extends js.Object {
   def fromUrlQueryParameter(param_name: java.lang.String): atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
 }
 
+object Anon_Authscheme {
+  @scala.inline
+  def apply(
+    fromAuthHeader: js.Function0[
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromAuthHeaderAsBearerToken: js.Function0[
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromAuthHeaderWithScheme: js.Function1[
+      java.lang.String, 
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromBodyField: js.Function1[
+      java.lang.String, 
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromExtractors: js.Function1[
+      js.Array[
+        atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+      ], 
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromHeader: js.Function1[
+      java.lang.String, 
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ],
+    fromUrlQueryParameter: js.Function1[
+      java.lang.String, 
+      atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
+    ]
+  ): Anon_Authscheme = {
+    val __obj = js.Dynamic.literal(fromAuthHeader = fromAuthHeader, fromAuthHeaderAsBearerToken = fromAuthHeaderAsBearerToken, fromAuthHeaderWithScheme = fromAuthHeaderWithScheme, fromBodyField = fromBodyField, fromExtractors = fromExtractors, fromHeader = fromHeader, fromUrlQueryParameter = fromUrlQueryParameter)
+  
+    __obj.asInstanceOf[Anon_Authscheme]
+  }
+}
+

@@ -27,3 +27,22 @@ trait ResourceServerArgs extends js.Object {
   val userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ResourceServerArgs {
+  @scala.inline
+  def apply(
+    identifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    userPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    scopes: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ScopeDescriptionScopeName]
+      ]
+    ] = null
+  ): ResourceServerArgs = {
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceServerArgs]
+  }
+}
+

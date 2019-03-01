@@ -11,3 +11,12 @@ trait ResourceAreaInfo extends js.Object {
   var name: java.lang.String
 }
 
+object ResourceAreaInfo {
+  @scala.inline
+  def apply(id: java.lang.String, locationUrl: java.lang.String, name: java.lang.String): ResourceAreaInfo = {
+    val __obj = js.Dynamic.literal(id = id, locationUrl = locationUrl, name = name)
+  
+    __obj.asInstanceOf[ResourceAreaInfo]
+  }
+}
+

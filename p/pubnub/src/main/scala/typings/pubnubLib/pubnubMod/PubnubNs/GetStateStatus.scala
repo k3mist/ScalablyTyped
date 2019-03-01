@@ -11,3 +11,12 @@ trait GetStateStatus extends js.Object {
   var statusCode: scala.Double
 }
 
+object GetStateStatus {
+  @scala.inline
+  def apply(error: scala.Boolean, operation: java.lang.String, statusCode: scala.Double): GetStateStatus = {
+    val __obj = js.Dynamic.literal(error = error, operation = operation, statusCode = statusCode)
+  
+    __obj.asInstanceOf[GetStateStatus]
+  }
+}
+

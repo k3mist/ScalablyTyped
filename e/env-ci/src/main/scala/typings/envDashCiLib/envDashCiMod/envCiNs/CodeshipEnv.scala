@@ -17,3 +17,21 @@ trait CodeshipEnv
   var slug: java.lang.String
 }
 
+object CodeshipEnv {
+  @scala.inline
+  def apply(
+    branch: java.lang.String,
+    build: java.lang.String,
+    buildUrl: java.lang.String,
+    commit: java.lang.String,
+    isCi: envDashCiLib.envDashCiLibNumbers.`true`,
+    name: envDashCiLib.envDashCiLibStrings.Codeship,
+    service: envDashCiLib.envDashCiLibStrings.codeship,
+    slug: java.lang.String
+  ): CodeshipEnv = {
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, name = name, service = service, slug = slug)
+  
+    __obj.asInstanceOf[CodeshipEnv]
+  }
+}
+

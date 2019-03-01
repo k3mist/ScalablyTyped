@@ -16,3 +16,17 @@ trait ASPxClientHtmlEditorDialogClosingEventArgs extends ASPxClientHtmlEditorDia
   var cancel: scala.Boolean
 }
 
+object ASPxClientHtmlEditorDialogClosingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    dialog: ASPxClientHtmlEditorDialogBase,
+    dialogName: java.lang.String,
+    parameter: js.Object
+  ): ASPxClientHtmlEditorDialogClosingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, dialog = dialog, dialogName = dialogName, parameter = parameter)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorDialogClosingEventArgs]
+  }
+}
+

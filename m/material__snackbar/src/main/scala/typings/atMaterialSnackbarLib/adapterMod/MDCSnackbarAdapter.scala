@@ -30,3 +30,35 @@ trait MDCSnackbarAdapter extends js.Object {
   def visibilityIsHidden(): scala.Boolean
 }
 
+object MDCSnackbarAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    deregisterActionClickHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    deregisterCapturedBlurHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    deregisterCapturedInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    deregisterTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    deregisterVisibilityChangeHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    notifyHide: js.Function0[scala.Unit],
+    notifyShow: js.Function0[scala.Unit],
+    registerActionClickHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    registerCapturedBlurHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    registerCapturedInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerTransitionEndHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    registerVisibilityChangeHandler: js.Function1[stdLib.EventListener, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    setActionAriaHidden: js.Function0[scala.Unit],
+    setActionText: js.Function1[java.lang.String, scala.Unit],
+    setAriaHidden: js.Function0[scala.Unit],
+    setFocus: js.Function0[scala.Unit],
+    setMessageText: js.Function1[java.lang.String, scala.Unit],
+    unsetActionAriaHidden: js.Function0[scala.Unit],
+    unsetAriaHidden: js.Function0[scala.Unit],
+    visibilityIsHidden: js.Function0[scala.Boolean]
+  ): MDCSnackbarAdapter = {
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterActionClickHandler = deregisterActionClickHandler, deregisterCapturedBlurHandler = deregisterCapturedBlurHandler, deregisterCapturedInteractionHandler = deregisterCapturedInteractionHandler, deregisterTransitionEndHandler = deregisterTransitionEndHandler, deregisterVisibilityChangeHandler = deregisterVisibilityChangeHandler, notifyHide = notifyHide, notifyShow = notifyShow, registerActionClickHandler = registerActionClickHandler, registerCapturedBlurHandler = registerCapturedBlurHandler, registerCapturedInteractionHandler = registerCapturedInteractionHandler, registerTransitionEndHandler = registerTransitionEndHandler, registerVisibilityChangeHandler = registerVisibilityChangeHandler, removeClass = removeClass, setActionAriaHidden = setActionAriaHidden, setActionText = setActionText, setAriaHidden = setAriaHidden, setFocus = setFocus, setMessageText = setMessageText, unsetActionAriaHidden = unsetActionAriaHidden, unsetAriaHidden = unsetAriaHidden, visibilityIsHidden = visibilityIsHidden)
+  
+    __obj.asInstanceOf[MDCSnackbarAdapter]
+  }
+}
+

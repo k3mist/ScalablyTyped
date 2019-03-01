@@ -12,3 +12,12 @@ trait TableBorderCell extends js.Object {
   var table_border_properties: TableBorderProperties
 }
 
+object TableBorderCell {
+  @scala.inline
+  def apply(location: TableCellLocation, table_border_properties: TableBorderProperties): TableBorderCell = {
+    val __obj = js.Dynamic.literal(location = location, table_border_properties = table_border_properties)
+  
+    __obj.asInstanceOf[TableBorderCell]
+  }
+}
+

@@ -17,3 +17,20 @@ trait XAvailableLocales
   def getAvailableLocales(aServiceName: java.lang.String): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
 }
 
+object XAvailableLocales {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getAvailableLocales: js.Function1[
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAvailableLocales = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getAvailableLocales = getAvailableLocales, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAvailableLocales]
+  }
+}
+

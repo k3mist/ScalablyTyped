@@ -27,3 +27,19 @@ trait JobTaskListMultiLevelFieldValuesParams
   var user: java.lang.String
 }
 
+object JobTaskListMultiLevelFieldValuesParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    previousSelectedValues: js.Array[java.lang.String],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskListMultiLevelFieldValuesParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, previousSelectedValues = previousSelectedValues, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskListMultiLevelFieldValuesParams]
+  }
+}
+

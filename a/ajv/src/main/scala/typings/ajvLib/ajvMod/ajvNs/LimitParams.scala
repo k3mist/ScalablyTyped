@@ -9,3 +9,12 @@ trait LimitParams extends ErrorParameters {
   var limit: scala.Double
 }
 
+object LimitParams {
+  @scala.inline
+  def apply(limit: scala.Double): LimitParams = {
+    val __obj = js.Dynamic.literal(limit = limit)
+  
+    __obj.asInstanceOf[LimitParams]
+  }
+}
+

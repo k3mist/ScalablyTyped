@@ -28,3 +28,18 @@ trait IToSVGOptions extends js.Object {
   var width: scala.Double
 }
 
+object IToSVGOptions {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String,
+    height: scala.Double,
+    suppressPreamble: scala.Boolean,
+    viewBox: IViewBox,
+    width: scala.Double
+  ): IToSVGOptions = {
+    val __obj = js.Dynamic.literal(encoding = encoding, height = height, suppressPreamble = suppressPreamble, viewBox = viewBox, width = width)
+  
+    __obj.asInstanceOf[IToSVGOptions]
+  }
+}
+

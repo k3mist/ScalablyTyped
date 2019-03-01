@@ -13,3 +13,18 @@ trait Anon_ALERT extends js.Object {
   var WARNING: reactDashFoundationLib.enumsMod.BadgeColors
 }
 
+object Anon_ALERT {
+  @scala.inline
+  def apply(
+    ALERT: reactDashFoundationLib.enumsMod.BadgeColors,
+    INFO: reactDashFoundationLib.enumsMod.BadgeColors,
+    SECONDARY: reactDashFoundationLib.enumsMod.BadgeColors,
+    SUCCESS: reactDashFoundationLib.enumsMod.BadgeColors,
+    WARNING: reactDashFoundationLib.enumsMod.BadgeColors
+  ): Anon_ALERT = {
+    val __obj = js.Dynamic.literal(ALERT = ALERT, INFO = INFO, SECONDARY = SECONDARY, SUCCESS = SUCCESS, WARNING = WARNING)
+  
+    __obj.asInstanceOf[Anon_ALERT]
+  }
+}
+

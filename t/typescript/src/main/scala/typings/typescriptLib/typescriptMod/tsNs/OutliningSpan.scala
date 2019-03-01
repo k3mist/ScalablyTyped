@@ -23,3 +23,18 @@ trait OutliningSpan extends js.Object {
   var textSpan: TextSpan
 }
 
+object OutliningSpan {
+  @scala.inline
+  def apply(
+    autoCollapse: scala.Boolean,
+    bannerText: java.lang.String,
+    hintSpan: TextSpan,
+    kind: OutliningSpanKind,
+    textSpan: TextSpan
+  ): OutliningSpan = {
+    val __obj = js.Dynamic.literal(autoCollapse = autoCollapse, bannerText = bannerText, hintSpan = hintSpan, kind = kind, textSpan = textSpan)
+  
+    __obj.asInstanceOf[OutliningSpan]
+  }
+}
+

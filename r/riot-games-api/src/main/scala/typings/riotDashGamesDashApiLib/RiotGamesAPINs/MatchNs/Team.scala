@@ -22,3 +22,27 @@ trait Team extends js.Object {
   var winner: scala.Boolean
 }
 
+object Team {
+  @scala.inline
+  def apply(
+    bans: js.Array[BannedChampion],
+    baronKills: scala.Double,
+    dominionVictoryScore: scala.Double,
+    dragonKills: scala.Double,
+    firstBaron: scala.Boolean,
+    firstBlood: scala.Boolean,
+    firstDragon: scala.Boolean,
+    firstInhibitor: scala.Boolean,
+    firstTower: scala.Boolean,
+    inhibitorKills: scala.Double,
+    teamId: scala.Double,
+    towerKills: scala.Double,
+    vilemawKills: scala.Double,
+    winner: scala.Boolean
+  ): Team = {
+    val __obj = js.Dynamic.literal(bans = bans, baronKills = baronKills, dominionVictoryScore = dominionVictoryScore, dragonKills = dragonKills, firstBaron = firstBaron, firstBlood = firstBlood, firstDragon = firstDragon, firstInhibitor = firstInhibitor, firstTower = firstTower, inhibitorKills = inhibitorKills, teamId = teamId, towerKills = towerKills, vilemawKills = vilemawKills, winner = winner)
+  
+    __obj.asInstanceOf[Team]
+  }
+}
+

@@ -14,3 +14,12 @@ trait IGenericDimensionsListProperties extends IGenericProperties {
   var qInfo_IGenericDimensionsListProperties: IGenericDimensionListNxInfo
 }
 
+object IGenericDimensionsListProperties {
+  @scala.inline
+  def apply(qDimensionListDef: IDimensionListDef, qInfo: IGenericDimensionListNxInfo): IGenericDimensionsListProperties = {
+    val __obj = js.Dynamic.literal(qDimensionListDef = qDimensionListDef, qInfo = qInfo)
+  
+    __obj.asInstanceOf[IGenericDimensionsListProperties]
+  }
+}
+

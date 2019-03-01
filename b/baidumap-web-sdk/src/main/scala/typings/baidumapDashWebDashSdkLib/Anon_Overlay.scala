@@ -13,3 +13,18 @@ trait Anon_Overlay extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Overlay {
+  @scala.inline
+  def apply(
+    overlay: baidumapDashWebDashSdkLib.BMapNs.Overlay,
+    pixel: baidumapDashWebDashSdkLib.BMapNs.Pixel,
+    point: baidumapDashWebDashSdkLib.BMapNs.Point,
+    target: js.Any,
+    `type`: java.lang.String
+  ): Anon_Overlay = {
+    val __obj = js.Dynamic.literal(overlay = overlay, pixel = pixel, point = point, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Overlay]
+  }
+}
+

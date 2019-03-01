@@ -10,3 +10,12 @@ trait FetchByKeysResults[K, D] extends js.Object {
   var results: stdLib.Map[K, Item[K, D]]
 }
 
+object FetchByKeysResults {
+  @scala.inline
+  def apply[K, D](fetchParameters: FetchByKeysParameters[K], results: stdLib.Map[K, Item[K, D]]): FetchByKeysResults[K, D] = {
+    val __obj = js.Dynamic.literal(fetchParameters = fetchParameters, results = results)
+  
+    __obj.asInstanceOf[FetchByKeysResults[K, D]]
+  }
+}
+

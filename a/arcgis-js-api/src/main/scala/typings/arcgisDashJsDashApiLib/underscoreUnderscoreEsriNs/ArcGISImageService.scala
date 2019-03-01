@@ -167,3 +167,37 @@ trait ArcGISImageService extends js.Object {
   def fetchImage(extent: Extent, width: scala.Double, height: scala.Double): arcgisDashJsDashApiLib.IPromise[_]
 }
 
+object ArcGISImageService {
+  @scala.inline
+  def apply(
+    compressionQuality: scala.Double,
+    compressionTolerance: scala.Double,
+    copyright: java.lang.String,
+    definitionExpression: java.lang.String,
+    domainFields: js.Array[Field],
+    fetchImage: js.Function3[Extent, scala.Double, scala.Double, arcgisDashJsDashApiLib.IPromise[_]],
+    fields: js.Array[Field],
+    format: java.lang.String,
+    fullExtent: Extent,
+    hasMultidimensions: scala.Boolean,
+    hasRasterAttributeTable: scala.Boolean,
+    imageMaxHeight: scala.Double,
+    imageMaxWidth: scala.Double,
+    mosaicRule: MosaicRule,
+    multidimensionalInfo: js.Any,
+    pixelType: java.lang.String,
+    popupTemplate: PopupTemplate,
+    rasterAttributeTable: js.Any,
+    rasterAttributeTableFieldPrefix: java.lang.String,
+    rasterFields: js.Array[Field],
+    renderingRule: RasterFunction,
+    spatialReference: SpatialReference,
+    url: java.lang.String,
+    version: scala.Double
+  ): ArcGISImageService = {
+    val __obj = js.Dynamic.literal(compressionQuality = compressionQuality, compressionTolerance = compressionTolerance, copyright = copyright, definitionExpression = definitionExpression, domainFields = domainFields, fetchImage = fetchImage, fields = fields, format = format, fullExtent = fullExtent, hasMultidimensions = hasMultidimensions, hasRasterAttributeTable = hasRasterAttributeTable, imageMaxHeight = imageMaxHeight, imageMaxWidth = imageMaxWidth, mosaicRule = mosaicRule, multidimensionalInfo = multidimensionalInfo, pixelType = pixelType, popupTemplate = popupTemplate, rasterAttributeTable = rasterAttributeTable, rasterAttributeTableFieldPrefix = rasterAttributeTableFieldPrefix, rasterFields = rasterFields, renderingRule = renderingRule, spatialReference = spatialReference, url = url, version = version)
+  
+    __obj.asInstanceOf[ArcGISImageService]
+  }
+}
+

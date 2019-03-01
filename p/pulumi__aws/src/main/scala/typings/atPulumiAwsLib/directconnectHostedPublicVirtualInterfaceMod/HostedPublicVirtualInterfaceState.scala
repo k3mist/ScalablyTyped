@@ -54,3 +54,34 @@ trait HostedPublicVirtualInterfaceState extends js.Object {
   val vlan: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object HostedPublicVirtualInterfaceState {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    amazonAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    bgpAuthKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ownerAccountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    routeFilterPrefixes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): HostedPublicVirtualInterfaceState = {
+    val __obj = js.Dynamic.literal()
+    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
+    if (routeFilterPrefixes != null) __obj.updateDynamic("routeFilterPrefixes")(routeFilterPrefixes.asInstanceOf[js.Any])
+    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HostedPublicVirtualInterfaceState]
+  }
+}
+

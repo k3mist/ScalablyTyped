@@ -15,3 +15,12 @@ trait MenuSingleChange extends js.Object {
   var ID: scala.Double
 }
 
+object MenuSingleChange {
+  @scala.inline
+  def apply(Change: js.Any, ChangeID: scala.Double, ID: scala.Double): MenuSingleChange = {
+    val __obj = js.Dynamic.literal(Change = Change, ChangeID = ChangeID, ID = ID)
+  
+    __obj.asInstanceOf[MenuSingleChange]
+  }
+}
+

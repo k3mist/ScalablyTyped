@@ -12,3 +12,17 @@ trait Params extends js.Object {
   var hash: java.lang.String
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    N: bignumLib.bignumMod.namespaced,
+    N_length_bits: scala.Double,
+    g: bignumLib.bignumMod.namespaced,
+    hash: java.lang.String
+  ): Params = {
+    val __obj = js.Dynamic.literal(N = N, N_length_bits = N_length_bits, g = g, hash = hash)
+  
+    __obj.asInstanceOf[Params]
+  }
+}
+

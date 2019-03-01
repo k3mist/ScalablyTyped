@@ -14,3 +14,20 @@ trait GraphQLFieldDefinition extends js.Object {
   var `type`: GraphQLOutputType
 }
 
+object GraphQLFieldDefinition {
+  @scala.inline
+  def apply(
+    args: js.Array[GraphQLArgument],
+    description: java.lang.String,
+    name: java.lang.String,
+    `type`: GraphQLOutputType,
+    deprecationReason: java.lang.String = null,
+    resolve: GraphQLFieldResolveFn = null
+  ): GraphQLFieldDefinition = {
+    val __obj = js.Dynamic.literal(args = args, description = description, name = name, `type` = `type`)
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[GraphQLFieldDefinition]
+  }
+}
+

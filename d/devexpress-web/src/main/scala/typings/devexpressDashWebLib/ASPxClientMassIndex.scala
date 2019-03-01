@@ -21,3 +21,20 @@ trait ASPxClientMassIndex extends ASPxSeparatePaneIndicator {
   var sumPointsCount: scala.Double
 }
 
+object ASPxClientMassIndex {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    movingAveragePointsCount: scala.Double,
+    name: java.lang.String,
+    pane: java.lang.String,
+    series: ASPxClientSeries,
+    sumPointsCount: scala.Double
+  ): ASPxClientMassIndex = {
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, movingAveragePointsCount = movingAveragePointsCount, name = name, pane = pane, series = series, sumPointsCount = sumPointsCount)
+  
+    __obj.asInstanceOf[ASPxClientMassIndex]
+  }
+}
+

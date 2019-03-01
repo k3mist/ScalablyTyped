@@ -35,3 +35,27 @@ trait XTextContentAppend
   ): XTextRange
 }
 
+object XTextContentAppend {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    appendTextContent: js.Function2[
+      XTextContent, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange
+    ],
+    insertTextContentWithProperties: js.Function3[
+      XTextContent, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextContentAppend = {
+    val __obj = js.Dynamic.literal(acquire = acquire, appendTextContent = appendTextContent, insertTextContentWithProperties = insertTextContentWithProperties, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextContentAppend]
+  }
+}
+

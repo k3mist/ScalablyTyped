@@ -19,3 +19,23 @@ trait cssClasses
   var UPGRADED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--upgraded`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    ANIM_CHECKED_INDETERMINATE: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-checked-indeterminate`,
+    ANIM_CHECKED_UNCHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-checked-unchecked`,
+    ANIM_INDETERMINATE_CHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-indeterminate-checked`,
+    ANIM_INDETERMINATE_UNCHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-indeterminate-unchecked`,
+    ANIM_UNCHECKED_CHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-unchecked-checked`,
+    ANIM_UNCHECKED_INDETERMINATE: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--anim-unchecked-indeterminate`,
+    CHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--checked`,
+    DISABLED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--disabled`,
+    INDETERMINATE: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--indeterminate`,
+    UPGRADED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--upgraded`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(ANIM_CHECKED_INDETERMINATE = ANIM_CHECKED_INDETERMINATE, ANIM_CHECKED_UNCHECKED = ANIM_CHECKED_UNCHECKED, ANIM_INDETERMINATE_CHECKED = ANIM_INDETERMINATE_CHECKED, ANIM_INDETERMINATE_UNCHECKED = ANIM_INDETERMINATE_UNCHECKED, ANIM_UNCHECKED_CHECKED = ANIM_UNCHECKED_CHECKED, ANIM_UNCHECKED_INDETERMINATE = ANIM_UNCHECKED_INDETERMINATE, CHECKED = CHECKED, DISABLED = DISABLED, INDETERMINATE = INDETERMINATE, UPGRADED = UPGRADED)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

@@ -41,3 +41,49 @@ trait RoutersResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RoutersResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Router]
+    ],
+    getRouterStatus: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterStatusResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    preview: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RoutersPreviewResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RoutersResource = {
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, getRouterStatus = getRouterStatus, insert = insert, list = list, patch = patch, preview = preview, update = update)
+  
+    __obj.asInstanceOf[RoutersResource]
+  }
+}
+

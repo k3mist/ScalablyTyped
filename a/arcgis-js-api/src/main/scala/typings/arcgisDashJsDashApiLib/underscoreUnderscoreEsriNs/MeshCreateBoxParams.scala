@@ -33,3 +33,23 @@ trait MeshCreateBoxParams
   var size: js.UndefOr[scala.Double | MeshCreateBoxParamsSize] = js.undefined
 }
 
+object MeshCreateBoxParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    geographic: js.UndefOr[scala.Boolean] = js.undefined,
+    imageFace: java.lang.String = null,
+    material: MeshCreateBoxParamsMaterial = null,
+    size: scala.Double | MeshCreateBoxParamsSize = null
+  ): MeshCreateBoxParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
+    if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshCreateBoxParams]
+  }
+}
+

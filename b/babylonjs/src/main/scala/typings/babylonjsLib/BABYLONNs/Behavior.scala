@@ -26,3 +26,17 @@ trait Behavior[T] extends js.Object {
   def init(): scala.Unit
 }
 
+object Behavior {
+  @scala.inline
+  def apply[T](
+    attach: js.Function1[T, scala.Unit],
+    detach: js.Function0[scala.Unit],
+    init: js.Function0[scala.Unit],
+    name: java.lang.String
+  ): Behavior[T] = {
+    val __obj = js.Dynamic.literal(attach = attach, detach = detach, init = init, name = name)
+  
+    __obj.asInstanceOf[Behavior[T]]
+  }
+}
+

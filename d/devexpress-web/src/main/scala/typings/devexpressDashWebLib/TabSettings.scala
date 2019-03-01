@@ -31,3 +31,12 @@ trait TabSettings extends js.Object {
   var position: scala.Double
 }
 
+object TabSettings {
+  @scala.inline
+  def apply(alignment: js.Any, deleted: scala.Boolean, leader: js.Any, position: scala.Double): TabSettings = {
+    val __obj = js.Dynamic.literal(alignment = alignment, deleted = deleted, leader = leader, position = position)
+  
+    __obj.asInstanceOf[TabSettings]
+  }
+}
+

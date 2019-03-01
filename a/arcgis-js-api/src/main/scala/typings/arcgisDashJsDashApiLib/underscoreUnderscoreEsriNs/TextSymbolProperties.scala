@@ -118,3 +118,42 @@ trait TextSymbolProperties extends SymbolProperties {
   var yoffset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object TextSymbolProperties {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    backgroundColor: Color | js.Array[scala.Double] | java.lang.String = null,
+    borderLineColor: Color | js.Array[scala.Double] | java.lang.String = null,
+    borderLineSize: scala.Int | scala.Double = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    font: FontProperties = null,
+    haloColor: Color | js.Array[scala.Double] | java.lang.String = null,
+    haloSize: scala.Double | java.lang.String = null,
+    horizontalAlignment: java.lang.String = null,
+    kerning: js.UndefOr[scala.Boolean] = js.undefined,
+    rotated: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    verticalAlignment: java.lang.String = null,
+    xoffset: scala.Double | java.lang.String = null,
+    yoffset: scala.Double | java.lang.String = null
+  ): TextSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor.asInstanceOf[js.Any])
+    if (borderLineSize != null) __obj.updateDynamic("borderLineSize")(borderLineSize.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
+    if (haloSize != null) __obj.updateDynamic("haloSize")(haloSize.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning)
+    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
+    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextSymbolProperties]
+  }
+}
+

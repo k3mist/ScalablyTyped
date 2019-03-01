@@ -14,3 +14,19 @@ trait Attributes extends js.Object {
   var uid: scala.Double
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    atime: scala.Double,
+    gid: scala.Double,
+    mode: scala.Double,
+    mtime: scala.Double,
+    size: scala.Double,
+    uid: scala.Double
+  ): Attributes = {
+    val __obj = js.Dynamic.literal(atime = atime, gid = gid, mode = mode, mtime = mtime, size = size, uid = uid)
+  
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

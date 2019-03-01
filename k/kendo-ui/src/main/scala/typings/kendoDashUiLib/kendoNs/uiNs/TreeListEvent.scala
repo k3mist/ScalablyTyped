@@ -11,3 +11,12 @@ trait TreeListEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object TreeListEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: TreeList): TreeListEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[TreeListEvent]
+  }
+}
+

@@ -11,3 +11,16 @@ trait GraphQLNodeDefinitions extends js.Object {
   var nodesField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
 }
 
+object GraphQLNodeDefinitions {
+  @scala.inline
+  def apply(
+    nodeField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]],
+    nodeInterface: graphqlLib.graphqlMod.GraphQLInterfaceType,
+    nodesField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ): GraphQLNodeDefinitions = {
+    val __obj = js.Dynamic.literal(nodeField = nodeField, nodeInterface = nodeInterface, nodesField = nodesField)
+  
+    __obj.asInstanceOf[GraphQLNodeDefinitions]
+  }
+}
+

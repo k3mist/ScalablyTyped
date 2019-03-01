@@ -12,3 +12,19 @@ trait ResponseObject extends Response {
   var schema: js.UndefOr[Schema] = js.undefined
 }
 
+object ResponseObject {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    examples: ExampleObject = null,
+    headers: HeadersObject = null,
+    schema: Schema = null
+  ): ResponseObject = {
+    val __obj = js.Dynamic.literal(description = description)
+    if (examples != null) __obj.updateDynamic("examples")(examples)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[ResponseObject]
+  }
+}
+

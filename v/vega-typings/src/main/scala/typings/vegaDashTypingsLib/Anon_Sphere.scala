@@ -10,3 +10,12 @@ trait Anon_Sphere
   var sphere: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
 }
 
+object Anon_Sphere {
+  @scala.inline
+  def apply(sphere: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef): Anon_Sphere = {
+    val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Sphere]
+  }
+}
+

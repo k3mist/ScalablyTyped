@@ -9,3 +9,12 @@ trait Anon_On extends js.Object {
   var on: scala.Boolean
 }
 
+object Anon_On {
+  @scala.inline
+  def apply(on: scala.Boolean): Anon_On = {
+    val __obj = js.Dynamic.literal(on = on)
+  
+    __obj.asInstanceOf[Anon_On]
+  }
+}
+

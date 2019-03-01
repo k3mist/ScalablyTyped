@@ -12,3 +12,12 @@ trait GetSecretResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetSecretResult {
+  @scala.inline
+  def apply(id: java.lang.String): GetSecretResult = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[GetSecretResult]
+  }
+}
+

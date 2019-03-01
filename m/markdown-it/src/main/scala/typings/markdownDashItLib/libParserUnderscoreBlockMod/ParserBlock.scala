@@ -15,3 +15,21 @@ trait ParserBlock extends js.Object {
   ): scala.Unit
 }
 
+object ParserBlock {
+  @scala.inline
+  def apply(
+    parse: js.Function4[
+      java.lang.String, 
+      markdownDashItLib.libMod.MarkdownIt, 
+      js.Any, 
+      js.Array[markdownDashItLib.libTokenMod.namespaced], 
+      scala.Unit
+    ],
+    ruler: markdownDashItLib.libMod.MarkdownItNs.RulerBlock
+  ): ParserBlock = {
+    val __obj = js.Dynamic.literal(parse = parse, ruler = ruler)
+  
+    __obj.asInstanceOf[ParserBlock]
+  }
+}
+

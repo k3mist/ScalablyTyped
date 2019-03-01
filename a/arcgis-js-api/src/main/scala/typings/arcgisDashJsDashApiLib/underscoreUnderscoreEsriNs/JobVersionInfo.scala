@@ -39,3 +39,21 @@ trait JobVersionInfo
   var parent: java.lang.String
 }
 
+object JobVersionInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    created: scala.Boolean,
+    dataWorkspaceId: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    owner: java.lang.String,
+    parent: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): JobVersionInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, created = created, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = hasOwnProperty, name = name, owner = owner, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[JobVersionInfo]
+  }
+}
+

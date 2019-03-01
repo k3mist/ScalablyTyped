@@ -10,3 +10,12 @@ trait GitRef extends js.Object {
   var url: java.lang.String
 }
 
+object GitRef {
+  @scala.inline
+  def apply(sha: java.lang.String, url: java.lang.String): GitRef = {
+    val __obj = js.Dynamic.literal(sha = sha, url = url)
+  
+    __obj.asInstanceOf[GitRef]
+  }
+}
+

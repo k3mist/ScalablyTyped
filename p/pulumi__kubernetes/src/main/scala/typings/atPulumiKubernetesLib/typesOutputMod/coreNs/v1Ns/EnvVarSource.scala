@@ -30,3 +30,17 @@ trait EnvVarSource extends js.Object {
   val secretKeyRef: SecretKeySelector
 }
 
+object EnvVarSource {
+  @scala.inline
+  def apply(
+    configMapKeyRef: ConfigMapKeySelector,
+    fieldRef: ObjectFieldSelector,
+    resourceFieldRef: ResourceFieldSelector,
+    secretKeyRef: SecretKeySelector
+  ): EnvVarSource = {
+    val __obj = js.Dynamic.literal(configMapKeyRef = configMapKeyRef, fieldRef = fieldRef, resourceFieldRef = resourceFieldRef, secretKeyRef = secretKeyRef)
+  
+    __obj.asInstanceOf[EnvVarSource]
+  }
+}
+

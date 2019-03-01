@@ -11,3 +11,16 @@ trait Anon_Complete[T] extends js.Object {
   def success(res: T): scala.Unit
 }
 
+object Anon_Complete {
+  @scala.inline
+  def apply[T](
+    complete: js.Function0[scala.Unit],
+    fail: js.Function0[scala.Unit],
+    success: js.Function1[T, scala.Unit]
+  ): Anon_Complete[T] = {
+    val __obj = js.Dynamic.literal(complete = complete, fail = fail, success = success)
+  
+    __obj.asInstanceOf[Anon_Complete[T]]
+  }
+}
+

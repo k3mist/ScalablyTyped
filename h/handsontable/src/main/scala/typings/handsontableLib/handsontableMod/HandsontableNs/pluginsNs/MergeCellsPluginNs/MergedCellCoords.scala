@@ -22,3 +22,27 @@ trait MergedCellCoords extends js.Object {
   def shift(shiftVector: js.Array[scala.Double], indexOfChange: scala.Double): scala.Boolean
 }
 
+object MergedCellCoords {
+  @scala.inline
+  def apply(
+    col: scala.Double,
+    colspan: scala.Double,
+    getLastColumn: js.Function0[scala.Double],
+    getLastRow: js.Function0[scala.Double],
+    getRange: js.Function0[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange],
+    includes: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    includesHorizontally: js.Function1[scala.Double, scala.Boolean],
+    includesVertically: js.Function1[scala.Double, scala.Boolean],
+    isFarther: js.Function2[MergedCellCoords, java.lang.String, scala.Boolean | scala.Unit],
+    normalize: js.Function1[handsontableLib.handsontableMod.underscoreHandsontableNs.Core, scala.Unit],
+    removed: scala.Boolean,
+    row: scala.Double,
+    rowspan: scala.Double,
+    shift: js.Function2[js.Array[scala.Double], scala.Double, scala.Boolean]
+  ): MergedCellCoords = {
+    val __obj = js.Dynamic.literal(col = col, colspan = colspan, getLastColumn = getLastColumn, getLastRow = getLastRow, getRange = getRange, includes = includes, includesHorizontally = includesHorizontally, includesVertically = includesVertically, isFarther = isFarther, normalize = normalize, removed = removed, row = row, rowspan = rowspan, shift = shift)
+  
+    __obj.asInstanceOf[MergedCellCoords]
+  }
+}
+

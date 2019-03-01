@@ -61,3 +61,24 @@ trait IgToolbarMethods extends js.Object {
   def widget(): scala.Unit
 }
 
+object IgToolbarMethods {
+  @scala.inline
+  def apply(
+    activateItem: js.Function2[js.Object, js.Object, scala.Unit],
+    addItem: js.Function1[js.Object, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    deactivateAll: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    disableItem: js.Function2[js.Object, js.Object, scala.Unit],
+    getItem: js.Function1[js.Object, js.Object],
+    removeItem: js.Function1[js.Object, js.Object],
+    widget: js.Function0[scala.Unit]
+  ): IgToolbarMethods = {
+    val __obj = js.Dynamic.literal(activateItem = activateItem, addItem = addItem, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, deactivateAll = deactivateAll, destroy = destroy, disableItem = disableItem, getItem = getItem, removeItem = removeItem, widget = widget)
+  
+    __obj.asInstanceOf[IgToolbarMethods]
+  }
+}
+

@@ -34,3 +34,42 @@ trait IDomUtilityService extends js.Object {
   def setStyleText(grid: ngDashGridLib.ngGridNs.IGridInstance, css: java.lang.String): scala.Unit
 }
 
+object IDomUtilityService {
+  @scala.inline
+  def apply(
+    AssignGridContainers: js.Function3[
+      ngDashGridLib.ngGridNs.IGridScope, 
+      angularLib.angularMod.angularNs.IAugmentedJQuery, 
+      ngDashGridLib.ngGridNs.IGridInstance, 
+      scala.Unit
+    ],
+    BuildStyles: js.Function3[
+      ngDashGridLib.ngGridNs.IGridScope, 
+      ngDashGridLib.ngGridNs.IGridInstance, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    LetterW: scala.Double,
+    RebuildGrid: js.Function2[ngDashGridLib.ngGridNs.IGridScope, ngDashGridLib.ngGridNs.IGridInstance, scala.Unit],
+    ScrollH: scala.Double,
+    ScrollW: scala.Double,
+    UpdateGridLayout: js.Function2[ngDashGridLib.ngGridNs.IGridScope, ngDashGridLib.ngGridNs.IGridInstance, scala.Unit],
+    digest: js.Function1[ngDashGridLib.ngGridNs.IGridScope, scala.Unit],
+    eventStorage: js.Any,
+    getRealWidth: js.Function1[ngDashGridLib.ngGridNs.IDimension, scala.Double],
+    immediate: scala.Double,
+    numberOfGrids: scala.Double,
+    setColLeft: js.Function3[
+      ngDashGridLib.ngGridNs.IColumn, 
+      scala.Double, 
+      ngDashGridLib.ngGridNs.IGridInstance, 
+      scala.Unit
+    ],
+    setStyleText: js.Function2[ngDashGridLib.ngGridNs.IGridInstance, java.lang.String, scala.Unit]
+  ): IDomUtilityService = {
+    val __obj = js.Dynamic.literal(AssignGridContainers = AssignGridContainers, BuildStyles = BuildStyles, LetterW = LetterW, RebuildGrid = RebuildGrid, ScrollH = ScrollH, ScrollW = ScrollW, UpdateGridLayout = UpdateGridLayout, digest = digest, eventStorage = eventStorage, getRealWidth = getRealWidth, immediate = immediate, numberOfGrids = numberOfGrids, setColLeft = setColLeft, setStyleText = setStyleText)
+  
+    __obj.asInstanceOf[IDomUtilityService]
+  }
+}
+

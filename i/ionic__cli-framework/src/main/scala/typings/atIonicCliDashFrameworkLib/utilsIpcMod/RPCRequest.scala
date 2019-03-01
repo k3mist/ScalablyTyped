@@ -12,3 +12,17 @@ trait RPCRequest[P /* <: java.lang.String */, A /* <: js.Array[_] */] extends js
   var `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-request`
 }
 
+object RPCRequest {
+  @scala.inline
+  def apply[P /* <: java.lang.String */, A /* <: js.Array[_] */](
+    args: A,
+    id: java.lang.String,
+    procedure: P,
+    `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-request`
+  ): RPCRequest[P, A] = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id, procedure = procedure.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[RPCRequest[P, A]]
+  }
+}
+

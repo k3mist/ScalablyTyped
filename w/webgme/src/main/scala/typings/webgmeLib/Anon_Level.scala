@@ -10,3 +10,12 @@ trait Anon_Level extends js.Object {
   var name: webgmeLib.GmeCommonNs.DefStringObject
 }
 
+object Anon_Level {
+  @scala.inline
+  def apply(level: webgmeLib.GmeCommonNs.DefIntegerObject, name: webgmeLib.GmeCommonNs.DefStringObject): Anon_Level = {
+    val __obj = js.Dynamic.literal(level = level, name = name)
+  
+    __obj.asInstanceOf[Anon_Level]
+  }
+}
+

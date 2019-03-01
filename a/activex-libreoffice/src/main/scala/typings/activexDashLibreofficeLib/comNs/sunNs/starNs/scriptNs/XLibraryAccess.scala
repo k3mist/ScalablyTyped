@@ -46,3 +46,24 @@ trait XLibraryAccess
   def isValidPath(aPathName: java.lang.String): scala.Boolean
 }
 
+object XLibraryAccess {
+  @scala.inline
+  def apply(
+    ModuleNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getFunctionCode: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
+    getFunctionSource: js.Function1[java.lang.String, java.lang.String],
+    getModuleCode: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
+    getModuleNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getModuleSource: js.Function1[java.lang.String, java.lang.String],
+    isFunction: js.Function1[java.lang.String, scala.Boolean],
+    isValidPath: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLibraryAccess = {
+    val __obj = js.Dynamic.literal(ModuleNames = ModuleNames, acquire = acquire, getFunctionCode = getFunctionCode, getFunctionSource = getFunctionSource, getModuleCode = getModuleCode, getModuleNames = getModuleNames, getModuleSource = getModuleSource, isFunction = isFunction, isValidPath = isValidPath, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLibraryAccess]
+  }
+}
+

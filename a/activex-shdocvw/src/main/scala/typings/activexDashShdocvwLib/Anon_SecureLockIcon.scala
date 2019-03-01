@@ -9,3 +9,12 @@ trait Anon_SecureLockIcon extends js.Object {
   val SecureLockIcon: scala.Double
 }
 
+object Anon_SecureLockIcon {
+  @scala.inline
+  def apply(SecureLockIcon: scala.Double): Anon_SecureLockIcon = {
+    val __obj = js.Dynamic.literal(SecureLockIcon = SecureLockIcon)
+  
+    __obj.asInstanceOf[Anon_SecureLockIcon]
+  }
+}
+

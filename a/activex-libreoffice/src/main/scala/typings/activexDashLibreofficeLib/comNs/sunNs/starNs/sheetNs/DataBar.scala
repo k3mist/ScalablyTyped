@@ -29,3 +29,28 @@ trait DataBar extends XConditionEntry {
   var UseNegativeColor: scala.Boolean
 }
 
+object DataBar {
+  @scala.inline
+  def apply(
+    AxisColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    AxisPosition: scala.Double,
+    Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DataBarEntries: activexDashInteropLib.SafeArray[XDataBarEntry],
+    MaximumLength: scala.Double,
+    MinimumLength: scala.Double,
+    NegativeColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ShowValue: scala.Boolean,
+    Type: scala.Double,
+    UseGradient: scala.Boolean,
+    UseNegativeColor: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    getType: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): DataBar = {
+    val __obj = js.Dynamic.literal(AxisColor = AxisColor, AxisPosition = AxisPosition, Color = Color, DataBarEntries = DataBarEntries, MaximumLength = MaximumLength, MinimumLength = MinimumLength, NegativeColor = NegativeColor, ShowValue = ShowValue, Type = Type, UseGradient = UseGradient, UseNegativeColor = UseNegativeColor, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[DataBar]
+  }
+}
+

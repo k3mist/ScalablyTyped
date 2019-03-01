@@ -54,3 +54,34 @@ trait PatchBaselineState extends js.Object {
   ] = js.undefined
 }
 
+object PatchBaselineState {
+  @scala.inline
+  def apply(
+    approvalRules: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ApproveAfterDaysComplianceLevel]
+      ]
+    ] = null,
+    approvedPatches: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    approvedPatchesComplianceLevel: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    globalFilters: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    operatingSystem: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    rejectedPatches: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): PatchBaselineState = {
+    val __obj = js.Dynamic.literal()
+    if (approvalRules != null) __obj.updateDynamic("approvalRules")(approvalRules.asInstanceOf[js.Any])
+    if (approvedPatches != null) __obj.updateDynamic("approvedPatches")(approvedPatches.asInstanceOf[js.Any])
+    if (approvedPatchesComplianceLevel != null) __obj.updateDynamic("approvedPatchesComplianceLevel")(approvedPatchesComplianceLevel.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (globalFilters != null) __obj.updateDynamic("globalFilters")(globalFilters.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
+    if (rejectedPatches != null) __obj.updateDynamic("rejectedPatches")(rejectedPatches.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PatchBaselineState]
+  }
+}
+

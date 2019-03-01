@@ -12,3 +12,12 @@ trait Anon_Organization extends js.Object {
   var unchanged: scala.Double
 }
 
+object Anon_Organization {
+  @scala.inline
+  def apply(organization: scala.Double, `private`: scala.Double, public: scala.Double, unchanged: scala.Double): Anon_Organization = {
+    val __obj = js.Dynamic.literal(organization = organization, `private` = `private`, public = public, unchanged = unchanged)
+  
+    __obj.asInstanceOf[Anon_Organization]
+  }
+}
+

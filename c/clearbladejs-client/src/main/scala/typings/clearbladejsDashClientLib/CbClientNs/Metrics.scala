@@ -16,3 +16,21 @@ trait Metrics extends js.Object {
   def setQuery(query: Query): scala.Unit
 }
 
+object Metrics {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    getDBConnections: js.Function1[CbCallback, scala.Unit],
+    getLogs: js.Function1[CbCallback, scala.Unit],
+    getStatistics: js.Function1[CbCallback, scala.Unit],
+    getStatisticsHistory: js.Function1[CbCallback, scala.Unit],
+    setQuery: js.Function1[Query, scala.Unit],
+    systemKey: java.lang.String,
+    user: APIUser
+  ): Metrics = {
+    val __obj = js.Dynamic.literal(URI = URI, getDBConnections = getDBConnections, getLogs = getLogs, getStatistics = getStatistics, getStatisticsHistory = getStatisticsHistory, setQuery = setQuery, systemKey = systemKey, user = user)
+  
+    __obj.asInstanceOf[Metrics]
+  }
+}
+

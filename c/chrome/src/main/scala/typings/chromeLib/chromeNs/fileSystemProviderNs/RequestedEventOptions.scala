@@ -12,3 +12,12 @@ trait RequestedEventOptions extends js.Object {
   var requestId: scala.Double
 }
 
+object RequestedEventOptions {
+  @scala.inline
+  def apply(fileSystemId: java.lang.String, requestId: scala.Double): RequestedEventOptions = {
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, requestId = requestId)
+  
+    __obj.asInstanceOf[RequestedEventOptions]
+  }
+}
+

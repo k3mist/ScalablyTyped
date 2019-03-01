@@ -72,3 +72,27 @@ trait Map[T] extends js.Object {
   def values(): js.Array[T]
 }
 
+object Map {
+  @scala.inline
+  def apply[T](
+    clear: js.Function0[scala.Unit],
+    each: js.Function1[
+      js.Function3[/* value */ T, /* key */ java.lang.String, /* map */ Map[T], scala.Unit], 
+      scala.Unit
+    ],
+    empty: js.Function0[scala.Boolean],
+    entries: js.Function0[js.Array[d3DashCollectionLib.Anon_Key[T]]],
+    get: js.Function1[java.lang.String, js.UndefOr[T]],
+    has: js.Function1[java.lang.String, scala.Boolean],
+    keys: js.Function0[js.Array[java.lang.String]],
+    remove: js.Function1[java.lang.String, scala.Boolean],
+    set: js.Function2[java.lang.String, T, Map[T]],
+    size: js.Function0[scala.Double],
+    values: js.Function0[js.Array[T]]
+  ): Map[T] = {
+    val __obj = js.Dynamic.literal(clear = clear, each = each, empty = empty, entries = entries, get = get, has = has, keys = keys, remove = remove, set = set, size = size, values = values)
+  
+    __obj.asInstanceOf[Map[T]]
+  }
+}
+

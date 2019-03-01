@@ -12,3 +12,16 @@ trait IWebSocketMessageHandler extends js.Object {
   def fn(evt: stdLib.MessageEvent): scala.Unit
 }
 
+object IWebSocketMessageHandler {
+  @scala.inline
+  def apply(
+    autoApply: scala.Boolean,
+    fn: js.Function1[stdLib.MessageEvent, scala.Unit],
+    pattern: java.lang.String | stdLib.RegExp = null
+  ): IWebSocketMessageHandler = {
+    val __obj = js.Dynamic.literal(autoApply = autoApply, fn = fn)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IWebSocketMessageHandler]
+  }
+}
+

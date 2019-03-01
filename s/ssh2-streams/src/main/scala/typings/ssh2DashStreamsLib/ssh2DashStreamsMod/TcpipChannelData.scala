@@ -12,3 +12,12 @@ trait TcpipChannelData extends js.Object {
   var srcPort: scala.Double
 }
 
+object TcpipChannelData {
+  @scala.inline
+  def apply(destIP: java.lang.String, destPort: scala.Double, srcIP: java.lang.String, srcPort: scala.Double): TcpipChannelData = {
+    val __obj = js.Dynamic.literal(destIP = destIP, destPort = destPort, srcIP = srcIP, srcPort = srcPort)
+  
+    __obj.asInstanceOf[TcpipChannelData]
+  }
+}
+

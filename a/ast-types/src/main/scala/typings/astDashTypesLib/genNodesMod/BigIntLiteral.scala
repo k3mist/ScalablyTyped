@@ -18,3 +18,16 @@ import scala.scalajs.js.annotation._
   var value: java.lang.String | scala.Double
 }
 
+object BigIntLiteral {
+  @scala.inline
+  def apply(
+    extra: astDashTypesLib.Anon_RawRawValue,
+    `type`: astDashTypesLib.astDashTypesLibStrings.BigIntLiteral,
+    value: java.lang.String | scala.Double
+  ): BigIntLiteral = {
+    val __obj = js.Dynamic.literal(extra = extra, `type` = `type`, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BigIntLiteral]
+  }
+}
+

@@ -43,3 +43,25 @@ trait AffineMatrix3D extends js.Object {
   var m23: scala.Double
 }
 
+object AffineMatrix3D {
+  @scala.inline
+  def apply(
+    m00: scala.Double,
+    m01: scala.Double,
+    m02: scala.Double,
+    m03: scala.Double,
+    m10: scala.Double,
+    m11: scala.Double,
+    m12: scala.Double,
+    m13: scala.Double,
+    m20: scala.Double,
+    m21: scala.Double,
+    m22: scala.Double,
+    m23: scala.Double
+  ): AffineMatrix3D = {
+    val __obj = js.Dynamic.literal(m00 = m00, m01 = m01, m02 = m02, m03 = m03, m10 = m10, m11 = m11, m12 = m12, m13 = m13, m20 = m20, m21 = m21, m22 = m22, m23 = m23)
+  
+    __obj.asInstanceOf[AffineMatrix3D]
+  }
+}
+

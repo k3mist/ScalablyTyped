@@ -28,3 +28,20 @@ trait ModelArgs extends js.Object {
   val schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ModelArgs {
+  @scala.inline
+  def apply(
+    contentType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    schema: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ModelArgs = {
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModelArgs]
+  }
+}
+

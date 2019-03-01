@@ -9,3 +9,12 @@ trait Anon_DefaultRetentionAnonDaysModeYears extends js.Object {
   var defaultRetention: atPulumiPulumiLib.resourceMod.Input[Anon_DaysModeYears]
 }
 
+object Anon_DefaultRetentionAnonDaysModeYears {
+  @scala.inline
+  def apply(defaultRetention: atPulumiPulumiLib.resourceMod.Input[Anon_DaysModeYears]): Anon_DefaultRetentionAnonDaysModeYears = {
+    val __obj = js.Dynamic.literal(defaultRetention = defaultRetention.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_DefaultRetentionAnonDaysModeYears]
+  }
+}
+

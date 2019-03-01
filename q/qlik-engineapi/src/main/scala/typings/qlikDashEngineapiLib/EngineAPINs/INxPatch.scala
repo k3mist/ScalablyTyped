@@ -26,3 +26,12 @@ trait INxPatch extends js.Object {
   var qValue: java.lang.String
 }
 
+object INxPatch {
+  @scala.inline
+  def apply(qOp: NxPatchOpType, qPath: java.lang.String, qValue: java.lang.String): INxPatch = {
+    val __obj = js.Dynamic.literal(qOp = qOp, qPath = qPath, qValue = qValue)
+  
+    __obj.asInstanceOf[INxPatch]
+  }
+}
+

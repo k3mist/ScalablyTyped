@@ -12,3 +12,17 @@ trait DragRotateHandler extends js.Object {
   def isEnabled(): scala.Boolean
 }
 
+object DragRotateHandler {
+  @scala.inline
+  def apply(
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    isActive: js.Function0[scala.Boolean],
+    isEnabled: js.Function0[scala.Boolean]
+  ): DragRotateHandler = {
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isActive = isActive, isEnabled = isEnabled)
+  
+    __obj.asInstanceOf[DragRotateHandler]
+  }
+}
+

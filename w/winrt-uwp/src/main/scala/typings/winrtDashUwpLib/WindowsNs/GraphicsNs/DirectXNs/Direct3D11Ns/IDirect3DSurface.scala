@@ -12,3 +12,12 @@ trait IDirect3DSurface
   var description: Direct3DSurfaceDescription
 }
 
+object IDirect3DSurface {
+  @scala.inline
+  def apply(close: js.Function0[scala.Unit], description: Direct3DSurfaceDescription): IDirect3DSurface = {
+    val __obj = js.Dynamic.literal(close = close, description = description)
+  
+    __obj.asInstanceOf[IDirect3DSurface]
+  }
+}
+

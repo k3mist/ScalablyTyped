@@ -80,3 +80,28 @@ trait IFolder extends js.Object {
   var upload_location: java.lang.String
 }
 
+object IFolder {
+  @scala.inline
+  def apply(
+    client_updated_time: java.lang.String,
+    count: scala.Double,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    from: IUserInfo,
+    id: java.lang.String,
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    shared_with: ISharedWith,
+    sort_by: java.lang.String,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String
+  ): IFolder = {
+    val __obj = js.Dynamic.literal(client_updated_time = client_updated_time, count = count, created_time = created_time, description = description, from = from, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, shared_with = shared_with, sort_by = sort_by, `type` = `type`, updated_time = updated_time, upload_location = upload_location)
+  
+    __obj.asInstanceOf[IFolder]
+  }
+}
+

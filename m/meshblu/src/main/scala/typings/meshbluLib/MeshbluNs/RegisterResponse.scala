@@ -11,3 +11,12 @@ trait RegisterResponse extends js.Object {
   var uuid: java.lang.String
 }
 
+object RegisterResponse {
+  @scala.inline
+  def apply(token: java.lang.String, `type`: java.lang.String, uuid: java.lang.String): RegisterResponse = {
+    val __obj = js.Dynamic.literal(token = token, `type` = `type`, uuid = uuid)
+  
+    __obj.asInstanceOf[RegisterResponse]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_CancelIsRefreshMap extends js.Object {
   val Url: java.lang.String
 }
 
+object Anon_CancelIsRefreshMap {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    IsRefresh: scala.Boolean,
+    Map: activexDashExcelLib.ExcelNs.XmlMap,
+    Url: java.lang.String
+  ): Anon_CancelIsRefreshMap = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, IsRefresh = IsRefresh, Map = Map, Url = Url)
+  
+    __obj.asInstanceOf[Anon_CancelIsRefreshMap]
+  }
+}
+

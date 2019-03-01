@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var types: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]
 }
 
+object TSUnionType {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSUnionType,
+    types: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]
+  ): TSUnionType = {
+    val __obj = js.Dynamic.literal(`type` = `type`, types = types)
+  
+    __obj.asInstanceOf[TSUnionType]
+  }
+}
+

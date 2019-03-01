@@ -33,3 +33,17 @@ trait XControllerManager extends js.Object {
   def getModuleController(): XModuleController
 }
 
+object XControllerManager {
+  @scala.inline
+  def apply(
+    ConfigurationController: XConfigurationController,
+    ModuleController: XModuleController,
+    getConfigurationController: js.Function0[XConfigurationController],
+    getModuleController: js.Function0[XModuleController]
+  ): XControllerManager = {
+    val __obj = js.Dynamic.literal(ConfigurationController = ConfigurationController, ModuleController = ModuleController, getConfigurationController = getConfigurationController, getModuleController = getModuleController)
+  
+    __obj.asInstanceOf[XControllerManager]
+  }
+}
+

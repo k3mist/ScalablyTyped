@@ -12,3 +12,21 @@ trait ActivitiesResource extends js.Object {
   def watch(request: gapiDotClientDotAdminLib.Anon_ActorIpAddress): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object ActivitiesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdminLib.Anon_ActorIpAddress, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Activities]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotAdminLib.Anon_ActorIpAddress, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): ActivitiesResource = {
+    val __obj = js.Dynamic.literal(list = list, watch = watch)
+  
+    __obj.asInstanceOf[ActivitiesResource]
+  }
+}
+

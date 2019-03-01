@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DeclareModule
 }
 
+object DeclareModule {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.DeclareModule
+  ): DeclareModule = {
+    val __obj = js.Dynamic.literal(body = body, id = id.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[DeclareModule]
+  }
+}
+

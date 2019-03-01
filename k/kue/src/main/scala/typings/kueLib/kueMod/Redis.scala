@@ -14,3 +14,19 @@ trait Redis extends js.Object {
   def reset(): scala.Unit
 }
 
+object Redis {
+  @scala.inline
+  def apply(
+    client: js.Function0[redisLib.redisMod.RedisClient],
+    configureFactory: js.Function2[js.Object, Queue, scala.Unit],
+    createClient: js.Function0[redisLib.redisMod.RedisClient],
+    createClientFactory: js.Function1[js.Object, redisLib.redisMod.RedisClient],
+    pubsubClient: js.Function0[redisLib.redisMod.RedisClient],
+    reset: js.Function0[scala.Unit]
+  ): Redis = {
+    val __obj = js.Dynamic.literal(client = client, configureFactory = configureFactory, createClient = createClient, createClientFactory = createClientFactory, pubsubClient = pubsubClient, reset = reset)
+  
+    __obj.asInstanceOf[Redis]
+  }
+}
+

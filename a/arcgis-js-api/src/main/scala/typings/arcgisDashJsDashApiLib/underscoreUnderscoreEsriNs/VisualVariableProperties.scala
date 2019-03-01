@@ -38,3 +38,22 @@ trait VisualVariableProperties extends js.Object {
   var valueExpressionTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VisualVariableProperties {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    index: java.lang.String | scala.Double = null,
+    legendOptions: VisualVariableLegendOptions = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null
+  ): VisualVariableProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    __obj.asInstanceOf[VisualVariableProperties]
+  }
+}
+

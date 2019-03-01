@@ -12,3 +12,12 @@ trait SuiteOrSpec extends js.Object {
   var queue: Queue
 }
 
+object SuiteOrSpec {
+  @scala.inline
+  def apply(description: java.lang.String, env: Env, id: scala.Double, queue: Queue): SuiteOrSpec = {
+    val __obj = js.Dynamic.literal(description = description, env = env, id = id, queue = queue)
+  
+    __obj.asInstanceOf[SuiteOrSpec]
+  }
+}
+

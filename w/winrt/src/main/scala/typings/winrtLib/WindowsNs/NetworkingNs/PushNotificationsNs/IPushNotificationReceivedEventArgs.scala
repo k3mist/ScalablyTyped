@@ -14,3 +14,19 @@ trait IPushNotificationReceivedEventArgs extends js.Object {
   var toastNotification: winrtLib.WindowsNs.UINs.NotificationsNs.ToastNotification
 }
 
+object IPushNotificationReceivedEventArgs {
+  @scala.inline
+  def apply(
+    badgeNotification: winrtLib.WindowsNs.UINs.NotificationsNs.BadgeNotification,
+    cancel: scala.Boolean,
+    notificationType: PushNotificationType,
+    rawNotification: RawNotification,
+    tileNotification: winrtLib.WindowsNs.UINs.NotificationsNs.TileNotification,
+    toastNotification: winrtLib.WindowsNs.UINs.NotificationsNs.ToastNotification
+  ): IPushNotificationReceivedEventArgs = {
+    val __obj = js.Dynamic.literal(badgeNotification = badgeNotification, cancel = cancel, notificationType = notificationType, rawNotification = rawNotification, tileNotification = tileNotification, toastNotification = toastNotification)
+  
+    __obj.asInstanceOf[IPushNotificationReceivedEventArgs]
+  }
+}
+

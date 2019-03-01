@@ -29,3 +29,34 @@ trait Anon_Contains extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Contains {
+  @scala.inline
+  def apply(
+    contains: java.lang.String,
+    creditcard: java.lang.String,
+    custom: java.lang.String,
+    date: java.lang.String,
+    dateISO: java.lang.String,
+    digits: java.lang.String,
+    email: java.lang.String,
+    equalTo: java.lang.String,
+    mask: java.lang.String,
+    max: java.lang.String,
+    maxlength: java.lang.String,
+    min: java.lang.String,
+    minlength: java.lang.String,
+    number: java.lang.String,
+    range: java.lang.String,
+    rangelength: java.lang.String,
+    remote: java.lang.String,
+    required: java.lang.String,
+    signedDigits: java.lang.String,
+    step: java.lang.String,
+    url: java.lang.String
+  ): Anon_Contains = {
+    val __obj = js.Dynamic.literal(contains = contains, creditcard = creditcard, custom = custom, date = date, dateISO = dateISO, digits = digits, email = email, equalTo = equalTo, mask = mask, max = max, maxlength = maxlength, min = min, minlength = minlength, number = number, range = range, rangelength = rangelength, remote = remote, required = required, signedDigits = signedDigits, step = step, url = url)
+  
+    __obj.asInstanceOf[Anon_Contains]
+  }
+}
+

@@ -12,3 +12,17 @@ trait ElementData extends js.Object {
   var viewContainer: ViewContainerData | scala.Null
 }
 
+object ElementData {
+  @scala.inline
+  def apply(
+    componentView: ViewData,
+    renderElement: js.Any,
+    template: TemplateData,
+    viewContainer: ViewContainerData = null
+  ): ElementData = {
+    val __obj = js.Dynamic.literal(componentView = componentView, renderElement = renderElement, template = template)
+    if (viewContainer != null) __obj.updateDynamic("viewContainer")(viewContainer)
+    __obj.asInstanceOf[ElementData]
+  }
+}
+

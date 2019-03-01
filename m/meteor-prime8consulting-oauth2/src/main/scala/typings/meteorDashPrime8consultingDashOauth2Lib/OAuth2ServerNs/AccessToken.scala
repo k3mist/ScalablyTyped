@@ -12,3 +12,17 @@ trait AccessToken extends js.Object {
   var userId: java.lang.String
 }
 
+object AccessToken {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    clientId: java.lang.String,
+    expires: stdLib.Date,
+    userId: java.lang.String
+  ): AccessToken = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, clientId = clientId, expires = expires, userId = userId)
+  
+    __obj.asInstanceOf[AccessToken]
+  }
+}
+

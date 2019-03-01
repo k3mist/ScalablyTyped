@@ -28,3 +28,15 @@ trait XCertificateContainer extends js.Object {
   def hasCertificate(url: java.lang.String, cert: java.lang.String): CertificateContainerStatus
 }
 
+object XCertificateContainer {
+  @scala.inline
+  def apply(
+    addCertificate: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
+    hasCertificate: js.Function2[java.lang.String, java.lang.String, CertificateContainerStatus]
+  ): XCertificateContainer = {
+    val __obj = js.Dynamic.literal(addCertificate = addCertificate, hasCertificate = hasCertificate)
+  
+    __obj.asInstanceOf[XCertificateContainer]
+  }
+}
+

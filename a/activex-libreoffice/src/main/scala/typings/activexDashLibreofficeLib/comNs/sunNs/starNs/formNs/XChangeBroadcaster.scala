@@ -28,3 +28,18 @@ trait XChangeBroadcaster
   def removeChangeListener(aListener: XChangeListener): scala.Unit
 }
 
+object XChangeBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addChangeListener: js.Function1[XChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChangeListener: js.Function1[XChangeListener, scala.Unit]
+  ): XChangeBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addChangeListener = addChangeListener, queryInterface = queryInterface, release = release, removeChangeListener = removeChangeListener)
+  
+    __obj.asInstanceOf[XChangeBroadcaster]
+  }
+}
+

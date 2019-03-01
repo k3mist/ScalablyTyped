@@ -16,3 +16,17 @@ trait PublicKeyCredential
   val `type`: PublicKeyCredentialType
 }
 
+object PublicKeyCredential {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    rawId: stdLib.ArrayBuffer,
+    response: AuthenticatorAttestationResponse | AuthenticatorAssertionResponse,
+    `type`: PublicKeyCredentialType
+  ): PublicKeyCredential = {
+    val __obj = js.Dynamic.literal(id = id, rawId = rawId, response = response.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[PublicKeyCredential]
+  }
+}
+

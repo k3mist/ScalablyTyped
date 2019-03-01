@@ -10,3 +10,12 @@ trait Cell extends js.Object {
   var value: java.lang.String
 }
 
+object Cell {
+  @scala.inline
+  def apply(location: Location, value: java.lang.String): Cell = {
+    val __obj = js.Dynamic.literal(location = location, value = value)
+  
+    __obj.asInstanceOf[Cell]
+  }
+}
+

@@ -11,3 +11,12 @@ trait SPFRecord extends js.Object {
   var SPFVerified: scala.Boolean
 }
 
+object SPFRecord {
+  @scala.inline
+  def apply(SPFHost: java.lang.String, SPFTextValue: java.lang.String, SPFVerified: scala.Boolean): SPFRecord = {
+    val __obj = js.Dynamic.literal(SPFHost = SPFHost, SPFTextValue = SPFTextValue, SPFVerified = SPFVerified)
+  
+    __obj.asInstanceOf[SPFRecord]
+  }
+}
+

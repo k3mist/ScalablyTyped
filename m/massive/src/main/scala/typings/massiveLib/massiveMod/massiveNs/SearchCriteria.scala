@@ -10,3 +10,12 @@ trait SearchCriteria extends js.Object {
   var term: java.lang.String
 }
 
+object SearchCriteria {
+  @scala.inline
+  def apply(fields: js.Array[java.lang.String], term: java.lang.String): SearchCriteria = {
+    val __obj = js.Dynamic.literal(fields = fields, term = term)
+  
+    __obj.asInstanceOf[SearchCriteria]
+  }
+}
+

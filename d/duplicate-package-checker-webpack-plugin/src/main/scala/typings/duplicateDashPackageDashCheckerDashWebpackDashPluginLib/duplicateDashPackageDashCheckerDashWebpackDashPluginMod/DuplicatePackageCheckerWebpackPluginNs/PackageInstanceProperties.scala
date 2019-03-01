@@ -17,3 +17,17 @@ trait PackageInstanceProperties extends js.Object {
   var version: java.lang.String
 }
 
+object PackageInstanceProperties {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    path: java.lang.String,
+    version: java.lang.String,
+    issuer: java.lang.String = null
+  ): PackageInstanceProperties = {
+    val __obj = js.Dynamic.literal(name = name, path = path, version = version)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    __obj.asInstanceOf[PackageInstanceProperties]
+  }
+}
+

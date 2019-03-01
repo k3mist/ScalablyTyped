@@ -15,3 +15,21 @@ trait LeadsResource extends js.Object {
   def list(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListLeadsResponse]
 }
 
+object LeadsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateLeadResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLeadsResponse]
+    ]
+  ): LeadsResource = {
+    val __obj = js.Dynamic.literal(create = create, list = list)
+  
+    __obj.asInstanceOf[LeadsResource]
+  }
+}
+

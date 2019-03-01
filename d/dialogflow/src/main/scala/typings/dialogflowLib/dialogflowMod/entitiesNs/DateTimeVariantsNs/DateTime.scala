@@ -10,3 +10,12 @@ trait DateTime
   var date_time: java.lang.String
 }
 
+object DateTime {
+  @scala.inline
+  def apply(date_time: java.lang.String): DateTime = {
+    val __obj = js.Dynamic.literal(date_time = date_time)
+  
+    __obj.asInstanceOf[DateTime]
+  }
+}
+

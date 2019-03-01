@@ -37,3 +37,19 @@ trait XContentAccess
   def queryContentIdentifierString(): java.lang.String
 }
 
+object XContentAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryContent: js.Function0[XContent],
+    queryContentIdentifier: js.Function0[XContentIdentifier],
+    queryContentIdentifierString: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentAccess = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryContent = queryContent, queryContentIdentifier = queryContentIdentifier, queryContentIdentifierString = queryContentIdentifierString, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContentAccess]
+  }
+}
+

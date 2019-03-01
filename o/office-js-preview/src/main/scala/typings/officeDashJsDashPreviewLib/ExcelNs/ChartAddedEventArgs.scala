@@ -42,3 +42,17 @@ trait ChartAddedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object ChartAddedEventArgs {
+  @scala.inline
+  def apply(
+    chartId: java.lang.String,
+    source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ChartAdded,
+    worksheetId: java.lang.String
+  ): ChartAddedEventArgs = {
+    val __obj = js.Dynamic.literal(chartId = chartId, source = source.asInstanceOf[js.Any], `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[ChartAddedEventArgs]
+  }
+}
+

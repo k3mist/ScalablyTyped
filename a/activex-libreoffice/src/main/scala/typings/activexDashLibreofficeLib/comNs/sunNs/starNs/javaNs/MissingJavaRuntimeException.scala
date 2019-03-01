@@ -17,3 +17,16 @@ trait MissingJavaRuntimeException
   var URLRuntimeLib: java.lang.String
 }
 
+object MissingJavaRuntimeException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    URLRuntimeLib: java.lang.String
+  ): MissingJavaRuntimeException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, URLRuntimeLib = URLRuntimeLib)
+  
+    __obj.asInstanceOf[MissingJavaRuntimeException]
+  }
+}
+

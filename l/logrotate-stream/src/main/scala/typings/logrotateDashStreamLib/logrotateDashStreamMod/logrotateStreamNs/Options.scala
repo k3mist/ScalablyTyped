@@ -24,3 +24,17 @@ trait Options extends js.Object {
   var size: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    keep: scala.Double,
+    size: java.lang.String,
+    compress: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal(file = file, keep = keep, size = size)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    __obj.asInstanceOf[Options]
+  }
+}
+

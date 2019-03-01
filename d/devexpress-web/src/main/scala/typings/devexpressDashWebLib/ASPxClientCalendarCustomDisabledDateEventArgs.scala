@@ -21,3 +21,12 @@ trait ASPxClientCalendarCustomDisabledDateEventArgs extends ASPxClientEventArgs 
   var isDisabled: scala.Boolean
 }
 
+object ASPxClientCalendarCustomDisabledDateEventArgs {
+  @scala.inline
+  def apply(date: stdLib.Date, isDisabled: scala.Boolean): ASPxClientCalendarCustomDisabledDateEventArgs = {
+    val __obj = js.Dynamic.literal(date = date, isDisabled = isDisabled)
+  
+    __obj.asInstanceOf[ASPxClientCalendarCustomDisabledDateEventArgs]
+  }
+}
+

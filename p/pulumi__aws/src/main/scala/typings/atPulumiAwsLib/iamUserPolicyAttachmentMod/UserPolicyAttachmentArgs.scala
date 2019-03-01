@@ -16,3 +16,15 @@ trait UserPolicyAttachmentArgs extends js.Object {
   val user: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamUserMod.User]
 }
 
+object UserPolicyAttachmentArgs {
+  @scala.inline
+  def apply(
+    policyArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN],
+    user: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamUserMod.User]
+  ): UserPolicyAttachmentArgs = {
+    val __obj = js.Dynamic.literal(policyArn = policyArn.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UserPolicyAttachmentArgs]
+  }
+}
+

@@ -16,3 +16,21 @@ trait FaxAccount_Invoke_Parameter extends js.Object {
   val wFlags: scala.Double
 }
 
+object FaxAccount_Invoke_Parameter {
+  @scala.inline
+  def apply(
+    dispidMember: scala.Double,
+    lcid: scala.Double,
+    pdispparams: activexDashStdoleLib.stdoleNs.DISPPARAMS,
+    pexcepinfo: activexDashStdoleLib.stdoleNs.EXCEPINFO,
+    puArgErr: scala.Double,
+    pvarResult: js.Any,
+    riid: activexDashStdoleLib.stdoleNs.GUID,
+    wFlags: scala.Double
+  ): FaxAccount_Invoke_Parameter = {
+    val __obj = js.Dynamic.literal(dispidMember = dispidMember, lcid = lcid, pdispparams = pdispparams, pexcepinfo = pexcepinfo, puArgErr = puArgErr, pvarResult = pvarResult, riid = riid, wFlags = wFlags)
+  
+    __obj.asInstanceOf[FaxAccount_Invoke_Parameter]
+  }
+}
+

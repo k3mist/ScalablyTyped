@@ -21,3 +21,23 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind | scala.Null
 }
 
+object ClassDeclaration {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.ClassBodyKind,
+    implements: js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassDeclaration,
+    id: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    superClass: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    superTypeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): ClassDeclaration = {
+    val __obj = js.Dynamic.literal(body = body, implements = implements.asInstanceOf[js.Any], `type` = `type`)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass)
+    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassDeclaration]
+  }
+}
+

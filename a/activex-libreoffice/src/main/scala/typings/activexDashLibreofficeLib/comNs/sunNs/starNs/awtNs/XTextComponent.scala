@@ -42,3 +42,32 @@ trait XTextComponent
   def setText(aText: java.lang.String): scala.Unit
 }
 
+object XTextComponent {
+  @scala.inline
+  def apply(
+    MaxTextLen: scala.Double,
+    SelectedText: java.lang.String,
+    Selection: Selection,
+    Text: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addTextListener: js.Function1[XTextListener, scala.Unit],
+    getMaxTextLen: js.Function0[scala.Double],
+    getSelectedText: js.Function0[java.lang.String],
+    getSelection: js.Function0[Selection],
+    getText: js.Function0[java.lang.String],
+    insertText: js.Function2[Selection, java.lang.String, scala.Unit],
+    isEditable: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextListener: js.Function1[XTextListener, scala.Unit],
+    setEditable: js.Function1[scala.Boolean, scala.Unit],
+    setMaxTextLen: js.Function1[scala.Double, scala.Unit],
+    setSelection: js.Function1[Selection, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit]
+  ): XTextComponent = {
+    val __obj = js.Dynamic.literal(MaxTextLen = MaxTextLen, SelectedText = SelectedText, Selection = Selection, Text = Text, acquire = acquire, addTextListener = addTextListener, getMaxTextLen = getMaxTextLen, getSelectedText = getSelectedText, getSelection = getSelection, getText = getText, insertText = insertText, isEditable = isEditable, queryInterface = queryInterface, release = release, removeTextListener = removeTextListener, setEditable = setEditable, setMaxTextLen = setMaxTextLen, setSelection = setSelection, setText = setText)
+  
+    __obj.asInstanceOf[XTextComponent]
+  }
+}
+

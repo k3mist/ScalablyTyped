@@ -68,3 +68,21 @@ trait JobSpec extends js.Object {
   val ttlSecondsAfterFinished: scala.Double
 }
 
+object JobSpec {
+  @scala.inline
+  def apply(
+    activeDeadlineSeconds: scala.Double,
+    backoffLimit: scala.Double,
+    completions: scala.Double,
+    manualSelector: scala.Boolean,
+    parallelism: scala.Double,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec,
+    ttlSecondsAfterFinished: scala.Double
+  ): JobSpec = {
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, backoffLimit = backoffLimit, completions = completions, manualSelector = manualSelector, parallelism = parallelism, selector = selector, template = template, ttlSecondsAfterFinished = ttlSecondsAfterFinished)
+  
+    __obj.asInstanceOf[JobSpec]
+  }
+}
+

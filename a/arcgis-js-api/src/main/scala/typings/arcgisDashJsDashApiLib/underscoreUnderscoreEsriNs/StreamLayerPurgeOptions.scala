@@ -21,3 +21,18 @@ trait StreamLayerPurgeOptions
   var displayCount: scala.Double
 }
 
+object StreamLayerPurgeOptions {
+  @scala.inline
+  def apply(
+    age: scala.Double,
+    constructor: js.Function,
+    displayCount: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): StreamLayerPurgeOptions = {
+    val __obj = js.Dynamic.literal(age = age, constructor = constructor, displayCount = displayCount, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[StreamLayerPurgeOptions]
+  }
+}
+

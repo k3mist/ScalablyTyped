@@ -11,3 +11,12 @@ trait StandardErrorAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.stderr
 }
 
+object StandardErrorAppender {
+  @scala.inline
+  def apply(`type`: log4jsLib.log4jsLibStrings.stderr, layout: Layout = null): StandardErrorAppender = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    __obj.asInstanceOf[StandardErrorAppender]
+  }
+}
+

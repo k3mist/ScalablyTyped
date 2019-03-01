@@ -13,3 +13,18 @@ trait Spring extends js.Object {
   def applyForce(): scala.Unit
 }
 
+object Spring {
+  @scala.inline
+  def apply(
+    applyForce: js.Function0[scala.Unit],
+    bodyA: Body,
+    bodyB: Body,
+    damping: scala.Double,
+    stiffness: scala.Double
+  ): Spring = {
+    val __obj = js.Dynamic.literal(applyForce = applyForce, bodyA = bodyA, bodyB = bodyB, damping = damping, stiffness = stiffness)
+  
+    __obj.asInstanceOf[Spring]
+  }
+}
+

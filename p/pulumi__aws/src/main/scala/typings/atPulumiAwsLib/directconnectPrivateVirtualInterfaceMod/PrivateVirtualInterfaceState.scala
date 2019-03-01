@@ -67,3 +67,40 @@ trait PrivateVirtualInterfaceState extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object PrivateVirtualInterfaceState {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    amazonAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    bgpAsn: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    bgpAuthKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dxGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    jumboFrameCapable: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    mtu: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vlan: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PrivateVirtualInterfaceState = {
+    val __obj = js.Dynamic.literal()
+    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (dxGatewayId != null) __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
+    if (jumboFrameCapable != null) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrivateVirtualInterfaceState]
+  }
+}
+

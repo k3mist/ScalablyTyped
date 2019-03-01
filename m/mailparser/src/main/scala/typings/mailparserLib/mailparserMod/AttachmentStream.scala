@@ -20,3 +20,28 @@ trait AttachmentStream extends AttachmentCommon {
   def release(): scala.Unit
 }
 
+object AttachmentStream {
+  @scala.inline
+  def apply(
+    checksum: java.lang.String,
+    content: nodeLib.streamMod.Stream,
+    contentDisposition: java.lang.String,
+    contentType: java.lang.String,
+    headers: Headers,
+    release: js.Function0[scala.Unit],
+    size: scala.Double,
+    `type`: mailparserLib.mailparserLibStrings.attachment,
+    cid: java.lang.String = null,
+    contentId: java.lang.String = null,
+    filename: java.lang.String = null,
+    related: js.UndefOr[scala.Boolean] = js.undefined
+  ): AttachmentStream = {
+    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, release = release, size = size, `type` = `type`)
+    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related)
+    __obj.asInstanceOf[AttachmentStream]
+  }
+}
+

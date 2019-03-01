@@ -11,3 +11,16 @@ trait DbJsStatic extends js.Object {
   def open(options: OpenOptions): js.Promise[Server]
 }
 
+object DbJsStatic {
+  @scala.inline
+  def apply(
+    cmp: js.Function2[js.Any, js.Any, scala.Double],
+    delete: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    open: js.Function1[OpenOptions, js.Promise[Server]]
+  ): DbJsStatic = {
+    val __obj = js.Dynamic.literal(cmp = cmp, delete = delete, open = open)
+  
+    __obj.asInstanceOf[DbJsStatic]
+  }
+}
+

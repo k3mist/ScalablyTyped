@@ -41,3 +41,22 @@ trait BuildRepository extends js.Object {
   var url: java.lang.String
 }
 
+object BuildRepository {
+  @scala.inline
+  def apply(
+    checkoutSubmodules: scala.Boolean,
+    clean: java.lang.String,
+    defaultBranch: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    rootFolder: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): BuildRepository = {
+    val __obj = js.Dynamic.literal(checkoutSubmodules = checkoutSubmodules, clean = clean, defaultBranch = defaultBranch, id = id, name = name, properties = properties, rootFolder = rootFolder, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[BuildRepository]
+  }
+}
+

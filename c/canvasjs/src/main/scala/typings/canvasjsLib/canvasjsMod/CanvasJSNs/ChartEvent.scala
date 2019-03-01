@@ -36,3 +36,20 @@ trait ChartEvent extends js.Object {
   var y: scala.Double
 }
 
+object ChartEvent {
+  @scala.inline
+  def apply(
+    chart: Chart,
+    dataPoint: ChartDataPoint,
+    dataPointIndex: scala.Double,
+    dataSeries: ChartDataSeriesOptions,
+    dataSeriesIndex: scala.Double,
+    x: js.Any,
+    y: scala.Double
+  ): ChartEvent = {
+    val __obj = js.Dynamic.literal(chart = chart, dataPoint = dataPoint, dataPointIndex = dataPointIndex, dataSeries = dataSeries, dataSeriesIndex = dataSeriesIndex, x = x, y = y)
+  
+    __obj.asInstanceOf[ChartEvent]
+  }
+}
+

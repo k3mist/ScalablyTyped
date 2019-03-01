@@ -80,3 +80,43 @@ trait TrailArgs extends js.Object {
   ] = js.undefined
 }
 
+object TrailArgs {
+  @scala.inline
+  def apply(
+    s3BucketName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    cloudWatchLogsGroupArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    cloudWatchLogsRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enableLogFileValidation: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    enableLogging: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    eventSelectors: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataResourcesIncludeManagementEvents]
+      ]
+    ] = null,
+    includeGlobalServiceEvents: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    isMultiRegionTrail: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    isOrganizationTrail: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    s3KeyPrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    snsTopicName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): TrailArgs = {
+    val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
+    if (cloudWatchLogsGroupArn != null) __obj.updateDynamic("cloudWatchLogsGroupArn")(cloudWatchLogsGroupArn.asInstanceOf[js.Any])
+    if (cloudWatchLogsRoleArn != null) __obj.updateDynamic("cloudWatchLogsRoleArn")(cloudWatchLogsRoleArn.asInstanceOf[js.Any])
+    if (enableLogFileValidation != null) __obj.updateDynamic("enableLogFileValidation")(enableLogFileValidation.asInstanceOf[js.Any])
+    if (enableLogging != null) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (eventSelectors != null) __obj.updateDynamic("eventSelectors")(eventSelectors.asInstanceOf[js.Any])
+    if (includeGlobalServiceEvents != null) __obj.updateDynamic("includeGlobalServiceEvents")(includeGlobalServiceEvents.asInstanceOf[js.Any])
+    if (isMultiRegionTrail != null) __obj.updateDynamic("isMultiRegionTrail")(isMultiRegionTrail.asInstanceOf[js.Any])
+    if (isOrganizationTrail != null) __obj.updateDynamic("isOrganizationTrail")(isOrganizationTrail.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
+    if (snsTopicName != null) __obj.updateDynamic("snsTopicName")(snsTopicName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TrailArgs]
+  }
+}
+

@@ -19,3 +19,19 @@ trait DictionaryType extends IDLRootType {
   var `type`: webidl2Lib.webidl2LibStrings.dictionary
 }
 
+object DictionaryType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    members: js.Array[DictionaryMemberType],
+    name: java.lang.String,
+    partial: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.dictionary,
+    inheritance: java.lang.String = null
+  ): DictionaryType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial, `type` = `type`)
+    if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance)
+    __obj.asInstanceOf[DictionaryType]
+  }
+}
+

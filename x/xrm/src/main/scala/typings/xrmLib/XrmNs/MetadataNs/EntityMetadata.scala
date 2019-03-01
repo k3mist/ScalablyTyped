@@ -69,3 +69,68 @@ trait EntityMetadata extends js.Object {
   var RecurrenceBaseEntityLogicalName: java.lang.String
 }
 
+object EntityMetadata {
+  @scala.inline
+  def apply(
+    ActivityTypeMask: scala.Double,
+    Attributes: xrmLib.XrmNs.CollectionNs.StringIndexableItemCollection[AttributeMetadata],
+    AutoRouteToOwnerQueue: scala.Boolean,
+    CanBeInManyToMany: scala.Boolean,
+    CanBePrimaryEntityInRelationship: scala.Boolean,
+    CanBeRelatedEntityInRelationship: scala.Boolean,
+    CanCreateAttributes: scala.Boolean,
+    CanCreateCharts: scala.Boolean,
+    CanCreateForms: scala.Boolean,
+    CanCreateViews: scala.Boolean,
+    CanEnableSyncToExternalSearchIndex: scala.Boolean,
+    CanModifyAdditionalSettings: scala.Boolean,
+    CanTriggerWorkflow: scala.Boolean,
+    Description: Label,
+    DisplayCollectionName: Label,
+    DisplayName: Label,
+    EntityColor: java.lang.String,
+    EntitySetName: java.lang.String,
+    IconLargeName: java.lang.String,
+    IconMediumName: java.lang.String,
+    IconSmallName: java.lang.String,
+    IsActivity: scala.Boolean,
+    IsActivityParty: scala.Boolean,
+    IsAuditEnabled: scala.Boolean,
+    IsAvailableOffline: scala.Boolean,
+    IsBPFEntity: scala.Boolean,
+    IsChildEntity: scala.Boolean,
+    IsConnectionsEnabled: scala.Boolean,
+    IsCustomEntity: scala.Boolean,
+    IsCustomizable: scala.Boolean,
+    IsDocumentManagementEnabled: scala.Boolean,
+    IsDuplicateDetectionEnabled: scala.Boolean,
+    IsEnabledForCharts: scala.Boolean,
+    IsImportable: scala.Boolean,
+    IsIntersect: scala.Boolean,
+    IsMailMergeEnabled: scala.Boolean,
+    IsManaged: scala.Boolean,
+    IsMappable: scala.Boolean,
+    IsOneNotIntegrationEnabled: scala.Boolean,
+    IsOptimisitcConcurrencyEnabled: scala.Boolean,
+    IsQuickCreateEnabled: scala.Boolean,
+    IsReadingPaneEnabled: scala.Boolean,
+    IsRenameable: scala.Boolean,
+    IsStateModelAware: scala.Boolean,
+    IsValidForAdvancedFind: scala.Boolean,
+    IsValidForQueue: scala.Boolean,
+    IsVisibleInMobileClient: scala.Boolean,
+    LogicalCollectionName: java.lang.String,
+    LogicalName: java.lang.String,
+    ObjectTypeCode: scala.Double,
+    OwnershipTypeCode: scala.Double,
+    PrimaryIdAttribute: java.lang.String,
+    PrimaryImageAttribute: java.lang.String,
+    PrimaryNameAttribute: java.lang.String,
+    RecurrenceBaseEntityLogicalName: java.lang.String
+  ): EntityMetadata = {
+    val __obj = js.Dynamic.literal(ActivityTypeMask = ActivityTypeMask, Attributes = Attributes, AutoRouteToOwnerQueue = AutoRouteToOwnerQueue, CanBeInManyToMany = CanBeInManyToMany, CanBePrimaryEntityInRelationship = CanBePrimaryEntityInRelationship, CanBeRelatedEntityInRelationship = CanBeRelatedEntityInRelationship, CanCreateAttributes = CanCreateAttributes, CanCreateCharts = CanCreateCharts, CanCreateForms = CanCreateForms, CanCreateViews = CanCreateViews, CanEnableSyncToExternalSearchIndex = CanEnableSyncToExternalSearchIndex, CanModifyAdditionalSettings = CanModifyAdditionalSettings, CanTriggerWorkflow = CanTriggerWorkflow, Description = Description, DisplayCollectionName = DisplayCollectionName, DisplayName = DisplayName, EntityColor = EntityColor, EntitySetName = EntitySetName, IconLargeName = IconLargeName, IconMediumName = IconMediumName, IconSmallName = IconSmallName, IsActivity = IsActivity, IsActivityParty = IsActivityParty, IsAuditEnabled = IsAuditEnabled, IsAvailableOffline = IsAvailableOffline, IsBPFEntity = IsBPFEntity, IsChildEntity = IsChildEntity, IsConnectionsEnabled = IsConnectionsEnabled, IsCustomEntity = IsCustomEntity, IsCustomizable = IsCustomizable, IsDocumentManagementEnabled = IsDocumentManagementEnabled, IsDuplicateDetectionEnabled = IsDuplicateDetectionEnabled, IsEnabledForCharts = IsEnabledForCharts, IsImportable = IsImportable, IsIntersect = IsIntersect, IsMailMergeEnabled = IsMailMergeEnabled, IsManaged = IsManaged, IsMappable = IsMappable, IsOneNotIntegrationEnabled = IsOneNotIntegrationEnabled, IsOptimisitcConcurrencyEnabled = IsOptimisitcConcurrencyEnabled, IsQuickCreateEnabled = IsQuickCreateEnabled, IsReadingPaneEnabled = IsReadingPaneEnabled, IsRenameable = IsRenameable, IsStateModelAware = IsStateModelAware, IsValidForAdvancedFind = IsValidForAdvancedFind, IsValidForQueue = IsValidForQueue, IsVisibleInMobileClient = IsVisibleInMobileClient, LogicalCollectionName = LogicalCollectionName, LogicalName = LogicalName, ObjectTypeCode = ObjectTypeCode, OwnershipTypeCode = OwnershipTypeCode, PrimaryIdAttribute = PrimaryIdAttribute, PrimaryImageAttribute = PrimaryImageAttribute, PrimaryNameAttribute = PrimaryNameAttribute, RecurrenceBaseEntityLogicalName = RecurrenceBaseEntityLogicalName)
+  
+    __obj.asInstanceOf[EntityMetadata]
+  }
+}
+

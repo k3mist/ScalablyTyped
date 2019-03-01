@@ -22,3 +22,16 @@ trait IUtilDomEvent extends js.Object {
   def removeListener(element: stdLib.HTMLElement, eventName: java.lang.String, handler: js.Function): scala.Unit
 }
 
+object IUtilDomEvent {
+  @scala.inline
+  def apply(
+    addListener: js.Function3[stdLib.HTMLElement, java.lang.String, js.Function, scala.Unit],
+    getPointer: js.Function2[stdLib.Event, stdLib.HTMLCanvasElement, Point],
+    removeListener: js.Function3[stdLib.HTMLElement, java.lang.String, js.Function, scala.Unit]
+  ): IUtilDomEvent = {
+    val __obj = js.Dynamic.literal(addListener = addListener, getPointer = getPointer, removeListener = removeListener)
+  
+    __obj.asInstanceOf[IUtilDomEvent]
+  }
+}
+

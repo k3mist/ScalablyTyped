@@ -36,3 +36,20 @@ trait TestVariable extends js.Object {
   var values: js.Array[java.lang.String]
 }
 
+object TestVariable {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String,
+    project: ShallowReference,
+    revision: scala.Double,
+    url: java.lang.String,
+    values: js.Array[java.lang.String]
+  ): TestVariable = {
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, project = project, revision = revision, url = url, values = values)
+  
+    __obj.asInstanceOf[TestVariable]
+  }
+}
+

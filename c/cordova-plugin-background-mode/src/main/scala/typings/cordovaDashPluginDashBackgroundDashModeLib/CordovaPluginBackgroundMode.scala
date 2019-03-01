@@ -44,3 +44,22 @@ trait CordovaPluginBackgroundMode extends js.Object {
   def setDefaults(item: ICordovaPluginBackgroundModeNotificationItem): scala.Unit
 }
 
+object CordovaPluginBackgroundMode {
+  @scala.inline
+  def apply(
+    configure: js.Function1[ICordovaPluginBackgroundModeNotificationItem, scala.Unit],
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    isActivated: js.Function0[scala.Boolean],
+    isEnabled: js.Function0[scala.Boolean],
+    onactivate: js.Function0[scala.Unit],
+    ondeactivate: js.Function0[scala.Unit],
+    onfailure: js.Function1[js.Function1[/* errorCode */ scala.Double, scala.Unit], scala.Unit],
+    setDefaults: js.Function1[ICordovaPluginBackgroundModeNotificationItem, scala.Unit]
+  ): CordovaPluginBackgroundMode = {
+    val __obj = js.Dynamic.literal(configure = configure, disable = disable, enable = enable, isActivated = isActivated, isEnabled = isEnabled, onactivate = onactivate, ondeactivate = ondeactivate, onfailure = onfailure, setDefaults = setDefaults)
+  
+    __obj.asInstanceOf[CordovaPluginBackgroundMode]
+  }
+}
+

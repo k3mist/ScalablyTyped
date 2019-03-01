@@ -101,3 +101,61 @@ trait XPopupMenu extends XMenu {
   ): scala.Unit
 }
 
+object XPopupMenu {
+  @scala.inline
+  def apply(
+    DefaultItem: scala.Double,
+    ItemCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addMenuListener: js.Function1[XMenuListener, scala.Unit],
+    checkItem: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    enableAutoMnemonics: js.Function1[scala.Boolean, scala.Unit],
+    enableItem: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    endExecute: js.Function0[scala.Unit],
+    execute: js.Function3[XWindowPeer, Rectangle, scala.Double, scala.Double],
+    getAcceleratorKeyEvent: js.Function1[scala.Double, KeyEvent],
+    getCommand: js.Function1[scala.Double, java.lang.String],
+    getDefaultItem: js.Function0[scala.Double],
+    getHelpCommand: js.Function1[scala.Double, java.lang.String],
+    getHelpText: js.Function1[scala.Double, java.lang.String],
+    getItemCount: js.Function0[scala.Double],
+    getItemId: js.Function1[scala.Double, scala.Double],
+    getItemImage: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic],
+    getItemPos: js.Function1[scala.Double, scala.Double],
+    getItemText: js.Function1[scala.Double, java.lang.String],
+    getItemType: js.Function1[scala.Double, MenuItemType],
+    getPopupMenu: js.Function1[scala.Double, XPopupMenu],
+    getTipHelpText: js.Function1[scala.Double, java.lang.String],
+    hideDisabledEntries: js.Function1[scala.Boolean, scala.Unit],
+    insertItem: js.Function4[scala.Double, java.lang.String, scala.Double, scala.Double, scala.Unit],
+    insertSeparator: js.Function1[scala.Double, scala.Unit],
+    isInExecute: js.Function0[scala.Boolean],
+    isItemChecked: js.Function1[scala.Double, scala.Boolean],
+    isItemEnabled: js.Function1[scala.Double, scala.Boolean],
+    isPopupMenu: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeItem: js.Function2[scala.Double, scala.Double, scala.Unit],
+    removeMenuListener: js.Function1[XMenuListener, scala.Unit],
+    setAcceleratorKeyEvent: js.Function2[scala.Double, KeyEvent, scala.Unit],
+    setCommand: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setDefaultItem: js.Function1[scala.Double, scala.Unit],
+    setHelpCommand: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setHelpText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemImage: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setPopupMenu: js.Function2[scala.Double, XPopupMenu, scala.Unit],
+    setTipHelpText: js.Function2[scala.Double, java.lang.String, scala.Unit]
+  ): XPopupMenu = {
+    val __obj = js.Dynamic.literal(DefaultItem = DefaultItem, ItemCount = ItemCount, acquire = acquire, addMenuListener = addMenuListener, checkItem = checkItem, clear = clear, enableAutoMnemonics = enableAutoMnemonics, enableItem = enableItem, endExecute = endExecute, execute = execute, getAcceleratorKeyEvent = getAcceleratorKeyEvent, getCommand = getCommand, getDefaultItem = getDefaultItem, getHelpCommand = getHelpCommand, getHelpText = getHelpText, getItemCount = getItemCount, getItemId = getItemId, getItemImage = getItemImage, getItemPos = getItemPos, getItemText = getItemText, getItemType = getItemType, getPopupMenu = getPopupMenu, getTipHelpText = getTipHelpText, hideDisabledEntries = hideDisabledEntries, insertItem = insertItem, insertSeparator = insertSeparator, isInExecute = isInExecute, isItemChecked = isItemChecked, isItemEnabled = isItemEnabled, isPopupMenu = isPopupMenu, queryInterface = queryInterface, release = release, removeItem = removeItem, removeMenuListener = removeMenuListener, setAcceleratorKeyEvent = setAcceleratorKeyEvent, setCommand = setCommand, setDefaultItem = setDefaultItem, setHelpCommand = setHelpCommand, setHelpText = setHelpText, setItemImage = setItemImage, setItemText = setItemText, setPopupMenu = setPopupMenu, setTipHelpText = setTipHelpText)
+  
+    __obj.asInstanceOf[XPopupMenu]
+  }
+}
+

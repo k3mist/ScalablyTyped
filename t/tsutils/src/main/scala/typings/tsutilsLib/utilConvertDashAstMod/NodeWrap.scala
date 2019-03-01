@@ -14,3 +14,21 @@ trait NodeWrap extends js.Object {
   var skip: js.UndefOr[NodeWrap] = js.undefined
 }
 
+object NodeWrap {
+  @scala.inline
+  def apply(
+    children: js.Array[NodeWrap],
+    kind: typescriptLib.typescriptMod.tsNs.SyntaxKind,
+    node: typescriptLib.typescriptMod.tsNs.Node,
+    next: NodeWrap = null,
+    parent: NodeWrap = null,
+    skip: NodeWrap = null
+  ): NodeWrap = {
+    val __obj = js.Dynamic.literal(children = children, kind = kind, node = node)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (skip != null) __obj.updateDynamic("skip")(skip)
+    __obj.asInstanceOf[NodeWrap]
+  }
+}
+

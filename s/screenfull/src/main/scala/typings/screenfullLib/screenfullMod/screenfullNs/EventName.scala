@@ -1,9 +1,9 @@
 package typings
-package screenfullLib
+package screenfullLib.screenfullMod.screenfullNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EventNameMap extends js.Object
+trait EventName extends js.Object
 

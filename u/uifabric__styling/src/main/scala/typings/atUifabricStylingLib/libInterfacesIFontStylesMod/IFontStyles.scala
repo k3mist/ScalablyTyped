@@ -19,3 +19,24 @@ trait IFontStyles extends js.Object {
   var xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
 }
 
+object IFontStyles {
+  @scala.inline
+  def apply(
+    large: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    medium: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    mediumPlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    mega: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    small: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    smallPlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    superLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    tiny: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xSmall: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
+  ): IFontStyles = {
+    val __obj = js.Dynamic.literal(large = large, medium = medium, mediumPlus = mediumPlus, mega = mega, small = small, smallPlus = smallPlus, superLarge = superLarge, tiny = tiny, xLarge = xLarge, xSmall = xSmall, xxLarge = xxLarge)
+  
+    __obj.asInstanceOf[IFontStyles]
+  }
+}
+

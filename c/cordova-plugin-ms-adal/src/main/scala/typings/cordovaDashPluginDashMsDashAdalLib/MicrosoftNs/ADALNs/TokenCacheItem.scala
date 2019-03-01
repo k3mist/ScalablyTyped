@@ -17,3 +17,22 @@ trait TokenCacheItem extends js.Object {
   var userInfo: UserInfo
 }
 
+object TokenCacheItem {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    authority: java.lang.String,
+    clientId: java.lang.String,
+    displayableId: java.lang.String,
+    expiresOn: stdLib.Date,
+    isMultipleResourceRefreshToken: scala.Boolean,
+    resource: java.lang.String,
+    tenantId: java.lang.String,
+    userInfo: UserInfo
+  ): TokenCacheItem = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, authority = authority, clientId = clientId, displayableId = displayableId, expiresOn = expiresOn, isMultipleResourceRefreshToken = isMultipleResourceRefreshToken, resource = resource, tenantId = tenantId, userInfo = userInfo)
+  
+    __obj.asInstanceOf[TokenCacheItem]
+  }
+}
+

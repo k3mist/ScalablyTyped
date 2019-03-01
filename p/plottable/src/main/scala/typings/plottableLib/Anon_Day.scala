@@ -15,3 +15,20 @@ trait Anon_Day extends js.Object {
   var year: plottableLib.plottableLibStrings.year
 }
 
+object Anon_Day {
+  @scala.inline
+  def apply(
+    day: plottableLib.plottableLibStrings.day,
+    hour: plottableLib.plottableLibStrings.hour,
+    minute: plottableLib.plottableLibStrings.minute,
+    month: plottableLib.plottableLibStrings.month,
+    second: plottableLib.plottableLibStrings.second,
+    week: plottableLib.plottableLibStrings.week,
+    year: plottableLib.plottableLibStrings.year
+  ): Anon_Day = {
+    val __obj = js.Dynamic.literal(day = day, hour = hour, minute = minute, month = month, second = second, week = week, year = year)
+  
+    __obj.asInstanceOf[Anon_Day]
+  }
+}
+

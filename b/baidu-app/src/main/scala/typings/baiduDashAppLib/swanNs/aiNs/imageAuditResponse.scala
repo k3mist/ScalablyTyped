@@ -15,3 +15,17 @@ trait imageAuditResponse extends js.Object {
   var log_id: java.lang.String
 }
 
+object imageAuditResponse {
+  @scala.inline
+  def apply(
+    conclusion: java.lang.String,
+    conclusionType: scala.Double,
+    data: js.Array[imageAuditdata],
+    log_id: java.lang.String
+  ): imageAuditResponse = {
+    val __obj = js.Dynamic.literal(conclusion = conclusion, conclusionType = conclusionType, data = data, log_id = log_id)
+  
+    __obj.asInstanceOf[imageAuditResponse]
+  }
+}
+

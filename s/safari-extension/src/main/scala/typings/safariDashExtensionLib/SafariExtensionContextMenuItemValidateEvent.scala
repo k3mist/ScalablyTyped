@@ -22,3 +22,16 @@ trait SafariExtensionContextMenuItemValidateEvent extends js.Object {
   var userInfo: js.Any
 }
 
+object SafariExtensionContextMenuItemValidateEvent {
+  @scala.inline
+  def apply(
+    currentTarget: SafariExtensionContextMenuItem,
+    target: SafariExtensionContextMenuItem,
+    userInfo: js.Any
+  ): SafariExtensionContextMenuItemValidateEvent = {
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, target = target, userInfo = userInfo)
+  
+    __obj.asInstanceOf[SafariExtensionContextMenuItemValidateEvent]
+  }
+}
+

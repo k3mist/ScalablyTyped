@@ -80,3 +80,75 @@ trait XDocument extends XNode {
   def importNode(importedNode: XNode, deep: scala.Boolean): XNode
 }
 
+object XDocument {
+  @scala.inline
+  def apply(
+    Attributes: XNamedNodeMap,
+    ChildNodes: XNodeList,
+    Doctype: XDocumentType,
+    DocumentElement: XElement,
+    FirstChild: XNode,
+    Implementation: XDOMImplementation,
+    LastChild: XNode,
+    LocalName: java.lang.String,
+    NamespaceURI: java.lang.String,
+    NextSibling: XNode,
+    NodeName: java.lang.String,
+    NodeType: NodeType,
+    NodeValue: java.lang.String,
+    OwnerDocument: XDocument,
+    ParentNode: XNode,
+    Prefix: java.lang.String,
+    PreviousSibling: XNode,
+    acquire: js.Function0[scala.Unit],
+    appendChild: js.Function1[XNode, XNode],
+    cloneNode: js.Function1[scala.Boolean, XNode],
+    createAttribute: js.Function1[java.lang.String, XAttr],
+    createAttributeNS: js.Function2[java.lang.String, java.lang.String, XAttr],
+    createCDATASection: js.Function1[java.lang.String, XCDATASection],
+    createComment: js.Function1[java.lang.String, XComment],
+    createDocumentFragment: js.Function0[XDocumentFragment],
+    createElement: js.Function1[java.lang.String, XElement],
+    createElementNS: js.Function2[java.lang.String, java.lang.String, XElement],
+    createEntityReference: js.Function1[java.lang.String, XEntityReference],
+    createProcessingInstruction: js.Function2[java.lang.String, java.lang.String, XProcessingInstruction],
+    createTextNode: js.Function1[java.lang.String, XText],
+    getAttributes: js.Function0[XNamedNodeMap],
+    getChildNodes: js.Function0[XNodeList],
+    getDoctype: js.Function0[XDocumentType],
+    getDocumentElement: js.Function0[XElement],
+    getElementById: js.Function1[java.lang.String, XElement],
+    getElementsByTagName: js.Function1[java.lang.String, XNodeList],
+    getElementsByTagNameNS: js.Function2[java.lang.String, java.lang.String, XNodeList],
+    getFirstChild: js.Function0[XNode],
+    getImplementation: js.Function0[XDOMImplementation],
+    getLastChild: js.Function0[XNode],
+    getLocalName: js.Function0[java.lang.String],
+    getNamespaceURI: js.Function0[java.lang.String],
+    getNextSibling: js.Function0[XNode],
+    getNodeName: js.Function0[java.lang.String],
+    getNodeType: js.Function0[NodeType],
+    getNodeValue: js.Function0[java.lang.String],
+    getOwnerDocument: js.Function0[XDocument],
+    getParentNode: js.Function0[XNode],
+    getPrefix: js.Function0[java.lang.String],
+    getPreviousSibling: js.Function0[XNode],
+    hasAttributes: js.Function0[scala.Boolean],
+    hasChildNodes: js.Function0[scala.Boolean],
+    importNode: js.Function2[XNode, scala.Boolean, XNode],
+    insertBefore: js.Function2[XNode, XNode, XNode],
+    isSupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    normalize: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChild: js.Function1[XNode, XNode],
+    replaceChild: js.Function2[XNode, XNode, XNode],
+    setNodeValue: js.Function1[java.lang.String, scala.Unit],
+    setPrefix: js.Function1[java.lang.String, scala.Unit]
+  ): XDocument = {
+    val __obj = js.Dynamic.literal(Attributes = Attributes, ChildNodes = ChildNodes, Doctype = Doctype, DocumentElement = DocumentElement, FirstChild = FirstChild, Implementation = Implementation, LastChild = LastChild, LocalName = LocalName, NamespaceURI = NamespaceURI, NextSibling = NextSibling, NodeName = NodeName, NodeType = NodeType, NodeValue = NodeValue, OwnerDocument = OwnerDocument, ParentNode = ParentNode, Prefix = Prefix, PreviousSibling = PreviousSibling, acquire = acquire, appendChild = appendChild, cloneNode = cloneNode, createAttribute = createAttribute, createAttributeNS = createAttributeNS, createCDATASection = createCDATASection, createComment = createComment, createDocumentFragment = createDocumentFragment, createElement = createElement, createElementNS = createElementNS, createEntityReference = createEntityReference, createProcessingInstruction = createProcessingInstruction, createTextNode = createTextNode, getAttributes = getAttributes, getChildNodes = getChildNodes, getDoctype = getDoctype, getDocumentElement = getDocumentElement, getElementById = getElementById, getElementsByTagName = getElementsByTagName, getElementsByTagNameNS = getElementsByTagNameNS, getFirstChild = getFirstChild, getImplementation = getImplementation, getLastChild = getLastChild, getLocalName = getLocalName, getNamespaceURI = getNamespaceURI, getNextSibling = getNextSibling, getNodeName = getNodeName, getNodeType = getNodeType, getNodeValue = getNodeValue, getOwnerDocument = getOwnerDocument, getParentNode = getParentNode, getPrefix = getPrefix, getPreviousSibling = getPreviousSibling, hasAttributes = hasAttributes, hasChildNodes = hasChildNodes, importNode = importNode, insertBefore = insertBefore, isSupported = isSupported, normalize = normalize, queryInterface = queryInterface, release = release, removeChild = removeChild, replaceChild = replaceChild, setNodeValue = setNodeValue, setPrefix = setPrefix)
+  
+    __obj.asInstanceOf[XDocument]
+  }
+}
+

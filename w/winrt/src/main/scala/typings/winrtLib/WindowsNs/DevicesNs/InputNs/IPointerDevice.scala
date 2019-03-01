@@ -14,3 +14,19 @@ trait IPointerDevice extends js.Object {
   var supportedUsages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDeviceUsage]
 }
 
+object IPointerDevice {
+  @scala.inline
+  def apply(
+    isIntegrated: scala.Boolean,
+    maxContacts: scala.Double,
+    physicalDeviceRect: winrtLib.WindowsNs.FoundationNs.Rect,
+    pointerDeviceType: PointerDeviceType,
+    screenRect: winrtLib.WindowsNs.FoundationNs.Rect,
+    supportedUsages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDeviceUsage]
+  ): IPointerDevice = {
+    val __obj = js.Dynamic.literal(isIntegrated = isIntegrated, maxContacts = maxContacts, physicalDeviceRect = physicalDeviceRect, pointerDeviceType = pointerDeviceType, screenRect = screenRect, supportedUsages = supportedUsages)
+  
+    __obj.asInstanceOf[IPointerDevice]
+  }
+}
+

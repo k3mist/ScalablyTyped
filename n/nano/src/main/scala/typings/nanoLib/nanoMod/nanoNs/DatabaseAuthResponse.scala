@@ -15,3 +15,12 @@ trait DatabaseAuthResponse extends js.Object {
   var roles: js.Array[java.lang.String]
 }
 
+object DatabaseAuthResponse {
+  @scala.inline
+  def apply(name: java.lang.String, ok: scala.Boolean, roles: js.Array[java.lang.String]): DatabaseAuthResponse = {
+    val __obj = js.Dynamic.literal(name = name, ok = ok, roles = roles)
+  
+    __obj.asInstanceOf[DatabaseAuthResponse]
+  }
+}
+

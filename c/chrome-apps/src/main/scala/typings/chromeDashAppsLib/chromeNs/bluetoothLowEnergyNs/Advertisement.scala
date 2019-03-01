@@ -18,3 +18,20 @@ trait Advertisement extends js.Object {
   var `type`: AdvertisementType
 }
 
+object Advertisement {
+  @scala.inline
+  def apply(
+    serviceData: chromeDashAppsLib.Anon_DataUuid,
+    `type`: AdvertisementType,
+    manufacturerData: chromeDashAppsLib.Anon_Data = null,
+    serviceUuids: js.Array[java.lang.String] = null,
+    solicitUuids: js.Array[java.lang.String] = null
+  ): Advertisement = {
+    val __obj = js.Dynamic.literal(serviceData = serviceData, `type` = `type`)
+    if (manufacturerData != null) __obj.updateDynamic("manufacturerData")(manufacturerData)
+    if (serviceUuids != null) __obj.updateDynamic("serviceUuids")(serviceUuids)
+    if (solicitUuids != null) __obj.updateDynamic("solicitUuids")(solicitUuids)
+    __obj.asInstanceOf[Advertisement]
+  }
+}
+

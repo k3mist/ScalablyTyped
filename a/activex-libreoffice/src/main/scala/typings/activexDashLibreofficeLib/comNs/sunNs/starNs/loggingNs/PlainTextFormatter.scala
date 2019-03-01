@@ -16,3 +16,19 @@ trait PlainTextFormatter extends XLogFormatter {
   def create(): scala.Unit
 }
 
+object PlainTextFormatter {
+  @scala.inline
+  def apply(
+    Head: java.lang.String,
+    Tail: java.lang.String,
+    create: js.Function0[scala.Unit],
+    format: js.Function1[LogRecord, java.lang.String],
+    getHead: js.Function0[java.lang.String],
+    getTail: js.Function0[java.lang.String]
+  ): PlainTextFormatter = {
+    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, create = create, format = format, getHead = getHead, getTail = getTail)
+  
+    __obj.asInstanceOf[PlainTextFormatter]
+  }
+}
+

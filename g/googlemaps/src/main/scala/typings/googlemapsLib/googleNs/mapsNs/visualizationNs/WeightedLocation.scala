@@ -10,3 +10,12 @@ trait WeightedLocation extends js.Object {
   var weight: scala.Double
 }
 
+object WeightedLocation {
+  @scala.inline
+  def apply(location: googlemapsLib.googleNs.mapsNs.LatLng, weight: scala.Double): WeightedLocation = {
+    val __obj = js.Dynamic.literal(location = location, weight = weight)
+  
+    __obj.asInstanceOf[WeightedLocation]
+  }
+}
+

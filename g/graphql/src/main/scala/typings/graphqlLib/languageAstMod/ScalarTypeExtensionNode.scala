@@ -14,3 +14,18 @@ trait ScalarTypeExtensionNode
   val name: NameNode
 }
 
+object ScalarTypeExtensionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.ScalarTypeExtension,
+    name: NameNode,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): ScalarTypeExtensionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ScalarTypeExtensionNode]
+  }
+}
+

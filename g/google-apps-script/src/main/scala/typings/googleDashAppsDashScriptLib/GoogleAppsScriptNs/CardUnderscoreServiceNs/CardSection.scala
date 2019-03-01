@@ -12,3 +12,17 @@ trait CardSection extends js.Object {
   def setNumUncollapsibleWidgets(numUncollapsibleWidgets: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): CardSection
 }
 
+object CardSection {
+  @scala.inline
+  def apply(
+    addWidget: js.Function1[Widget, CardSection],
+    setCollapsible: js.Function1[scala.Boolean, CardSection],
+    setHeader: js.Function1[java.lang.String, CardSection],
+    setNumUncollapsibleWidgets: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CardSection]
+  ): CardSection = {
+    val __obj = js.Dynamic.literal(addWidget = addWidget, setCollapsible = setCollapsible, setHeader = setHeader, setNumUncollapsibleWidgets = setNumUncollapsibleWidgets)
+  
+    __obj.asInstanceOf[CardSection]
+  }
+}
+

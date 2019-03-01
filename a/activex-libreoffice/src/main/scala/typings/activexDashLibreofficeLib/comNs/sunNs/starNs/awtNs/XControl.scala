@@ -54,3 +54,33 @@ trait XControl
   def setModel(Model: XControlModel): scala.Boolean
 }
 
+object XControl {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Model: XControlModel,
+    Peer: XWindowPeer,
+    View: XView,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createPeer: js.Function2[XToolkit, XWindowPeer, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getModel: js.Function0[XControlModel],
+    getPeer: js.Function0[XWindowPeer],
+    getView: js.Function0[XView],
+    isDesignMode: js.Function0[scala.Boolean],
+    isTransparent: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setContext: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setDesignMode: js.Function1[scala.Boolean, scala.Unit],
+    setModel: js.Function1[XControlModel, scala.Boolean]
+  ): XControl = {
+    val __obj = js.Dynamic.literal(Context = Context, Model = Model, Peer = Peer, View = View, acquire = acquire, addEventListener = addEventListener, createPeer = createPeer, dispose = dispose, getContext = getContext, getModel = getModel, getPeer = getPeer, getView = getView, isDesignMode = isDesignMode, isTransparent = isTransparent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setContext = setContext, setDesignMode = setDesignMode, setModel = setModel)
+  
+    __obj.asInstanceOf[XControl]
+  }
+}
+

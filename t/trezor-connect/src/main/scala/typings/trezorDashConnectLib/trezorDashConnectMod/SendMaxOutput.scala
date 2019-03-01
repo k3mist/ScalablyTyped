@@ -10,3 +10,12 @@ trait SendMaxOutput extends Output {
   var `type`: trezorDashConnectLib.trezorDashConnectLibStrings.`send-max`
 }
 
+object SendMaxOutput {
+  @scala.inline
+  def apply(address: java.lang.String, `type`: trezorDashConnectLib.trezorDashConnectLibStrings.`send-max`): SendMaxOutput = {
+    val __obj = js.Dynamic.literal(address = address, `type` = `type`)
+  
+    __obj.asInstanceOf[SendMaxOutput]
+  }
+}
+

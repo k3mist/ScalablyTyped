@@ -12,3 +12,17 @@ trait TopicExchange extends Exchange {
   var type_TopicExchange: rabbitmqDashSchemaLib.rabbitmqDashSchemaLibStrings.topic
 }
 
+object TopicExchange {
+  @scala.inline
+  def apply(
+    bindings: js.Array[TopicBinding],
+    exchange: java.lang.String,
+    `type`: rabbitmqDashSchemaLib.rabbitmqDashSchemaLibStrings.topic,
+    options: js.Object = null
+  ): TopicExchange = {
+    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange, `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[TopicExchange]
+  }
+}
+

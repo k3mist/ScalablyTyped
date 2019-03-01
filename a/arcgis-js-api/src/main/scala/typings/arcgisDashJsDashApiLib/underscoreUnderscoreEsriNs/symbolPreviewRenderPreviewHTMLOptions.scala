@@ -51,3 +51,29 @@ trait symbolPreviewRenderPreviewHTMLOptions
   var symbolConfig: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object symbolPreviewRenderPreviewHTMLOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    disableUpsampling: js.UndefOr[scala.Boolean] = js.undefined,
+    maxSize: scala.Int | scala.Double = null,
+    node: stdLib.HTMLElement = null,
+    opacity: scala.Int | scala.Double = null,
+    scale: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    symbolConfig: java.lang.String = null
+  ): symbolPreviewRenderPreviewHTMLOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (symbolConfig != null) __obj.updateDynamic("symbolConfig")(symbolConfig)
+    __obj.asInstanceOf[symbolPreviewRenderPreviewHTMLOptions]
+  }
+}
+

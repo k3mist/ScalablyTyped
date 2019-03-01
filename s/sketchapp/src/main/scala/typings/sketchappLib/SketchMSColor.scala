@@ -19,3 +19,20 @@ trait SketchMSColor extends js.Object {
   var value: java.lang.String
 }
 
+object SketchMSColor {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.color,
+    alpha: scala.Double,
+    blue: scala.Double,
+    green: scala.Double,
+    red: scala.Double,
+    value: java.lang.String,
+    do_objectID: java.lang.String = null
+  ): SketchMSColor = {
+    val __obj = js.Dynamic.literal(_class = _class, alpha = alpha, blue = blue, green = green, red = red, value = value)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSColor]
+  }
+}
+

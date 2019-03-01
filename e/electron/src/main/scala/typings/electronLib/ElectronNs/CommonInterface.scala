@@ -13,3 +13,18 @@ trait CommonInterface extends js.Object {
   var shell: Shell
 }
 
+object CommonInterface {
+  @scala.inline
+  def apply(
+    clipboard: Clipboard,
+    crashReporter: CrashReporter,
+    nativeImage: electronLib.Anon_Buffer,
+    screen: Screen,
+    shell: Shell
+  ): CommonInterface = {
+    val __obj = js.Dynamic.literal(clipboard = clipboard, crashReporter = crashReporter, nativeImage = nativeImage, screen = screen, shell = shell)
+  
+    __obj.asInstanceOf[CommonInterface]
+  }
+}
+

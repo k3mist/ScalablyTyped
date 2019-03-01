@@ -37,3 +37,15 @@ trait AttachmentContent extends js.Object {
   var format: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat
 }
 
+object AttachmentContent {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    format: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat
+  ): AttachmentContent = {
+    val __obj = js.Dynamic.literal(content = content, format = format)
+  
+    __obj.asInstanceOf[AttachmentContent]
+  }
+}
+

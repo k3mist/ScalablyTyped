@@ -10,3 +10,15 @@ trait Anon_End extends js.Object {
   var start: reactDashSimpleDashMapsLib.reactDashSimpleDashMapsMod.Point
 }
 
+object Anon_End {
+  @scala.inline
+  def apply(
+    end: reactDashSimpleDashMapsLib.reactDashSimpleDashMapsMod.Point,
+    start: reactDashSimpleDashMapsLib.reactDashSimpleDashMapsMod.Point
+  ): Anon_End = {
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
+    __obj.asInstanceOf[Anon_End]
+  }
+}
+

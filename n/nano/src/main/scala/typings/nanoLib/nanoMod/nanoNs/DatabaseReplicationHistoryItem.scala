@@ -31,3 +31,24 @@ trait DatabaseReplicationHistoryItem extends js.Object {
   var start_time: java.lang.String
 }
 
+object DatabaseReplicationHistoryItem {
+  @scala.inline
+  def apply(
+    doc_write_failures: scala.Double,
+    docs_read: scala.Double,
+    docs_written: scala.Double,
+    end_last_seq: scala.Double,
+    end_time: java.lang.String,
+    missing_checked: scala.Double,
+    missing_found: scala.Double,
+    recorded_seq: scala.Double,
+    session_id: java.lang.String,
+    start_last_seq: scala.Double,
+    start_time: java.lang.String
+  ): DatabaseReplicationHistoryItem = {
+    val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures, docs_read = docs_read, docs_written = docs_written, end_last_seq = end_last_seq, end_time = end_time, missing_checked = missing_checked, missing_found = missing_found, recorded_seq = recorded_seq, session_id = session_id, start_last_seq = start_last_seq, start_time = start_time)
+  
+    __obj.asInstanceOf[DatabaseReplicationHistoryItem]
+  }
+}
+

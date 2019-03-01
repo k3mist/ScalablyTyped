@@ -11,3 +11,16 @@ trait ITransportStateListener extends js.Object {
   def onOpen(): scala.Unit
 }
 
+object ITransportStateListener {
+  @scala.inline
+  def apply(
+    onClose: js.Function0[scala.Unit],
+    onError: js.Function1[java.lang.String, scala.Unit],
+    onOpen: js.Function0[scala.Unit]
+  ): ITransportStateListener = {
+    val __obj = js.Dynamic.literal(onClose = onClose, onError = onError, onOpen = onOpen)
+  
+    __obj.asInstanceOf[ITransportStateListener]
+  }
+}
+

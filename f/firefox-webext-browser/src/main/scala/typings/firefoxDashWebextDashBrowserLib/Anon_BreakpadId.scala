@@ -36,3 +36,21 @@ trait Anon_BreakpadId extends js.Object {
   def stop(): js.Promise[_]
 }
 
+object Anon_BreakpadId {
+  @scala.inline
+  def apply(
+    getProfile: js.Function0[js.Promise[_]],
+    getProfileAsArrayBuffer: js.Function0[js.Promise[_]],
+    getSymbols: js.Function2[java.lang.String, java.lang.String, js.Promise[_]],
+    onRunning: WebExtEvent[js.Function1[/* isRunning */ scala.Boolean, scala.Unit]],
+    pause: js.Function0[js.Promise[_]],
+    resume: js.Function0[js.Promise[_]],
+    start: js.Function1[Anon_BufferSize, js.Promise[_]],
+    stop: js.Function0[js.Promise[_]]
+  ): Anon_BreakpadId = {
+    val __obj = js.Dynamic.literal(getProfile = getProfile, getProfileAsArrayBuffer = getProfileAsArrayBuffer, getSymbols = getSymbols, onRunning = onRunning, pause = pause, resume = resume, start = start, stop = stop)
+  
+    __obj.asInstanceOf[Anon_BreakpadId]
+  }
+}
+

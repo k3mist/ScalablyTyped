@@ -27,3 +27,21 @@ trait PhaseCallbacks
   var update: js.UndefOr[PhaseCallback] = js.undefined
 }
 
+object PhaseCallbacks {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    prepare: PhaseCallback = null,
+    render: PhaseCallback = null,
+    update: PhaseCallback = null
+  ): PhaseCallbacks = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PhaseCallbacks]
+  }
+}
+

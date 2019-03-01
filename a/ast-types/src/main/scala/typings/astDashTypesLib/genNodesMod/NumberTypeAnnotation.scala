@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.NumberTypeAnnotation
 }
 
+object NumberTypeAnnotation {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.NumberTypeAnnotation): NumberTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[NumberTypeAnnotation]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Error extends js.Object {
   var path: java.lang.String
 }
 
+object Error {
+  @scala.inline
+  def apply(errors: js.Array[Error], message: java.lang.String, name: java.lang.String, path: java.lang.String): Error = {
+    val __obj = js.Dynamic.literal(errors = errors, message = message, name = name, path = path)
+  
+    __obj.asInstanceOf[Error]
+  }
+}
+

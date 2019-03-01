@@ -89,3 +89,45 @@ trait NotificationOptions extends js.Object {
   ]
 }
 
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    message: java.lang.String,
+    title: java.lang.String,
+    `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_BASIC, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BASIC[keyof chrome-apps.Anon_BASIC] */ js.Any
+      ]
+    ],
+    appIconMaskUrl: java.lang.String = null,
+    buttons: js.Array[ButtonOptions] = null,
+    contextMessage: java.lang.String = null,
+    eventTime: js.UndefOr[chromeDashAppsLib.chromeNs.double] = js.undefined,
+    imageUrl: java.lang.String = null,
+    isClickable: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[ItemOptions] = null,
+    priority: chromeDashAppsLib.chromeDashAppsLibNumbers.`-2` | chromeDashAppsLib.chromeDashAppsLibNumbers.`-1` | chromeDashAppsLib.chromeDashAppsLibNumbers.`0` | chromeDashAppsLib.chromeDashAppsLibNumbers.`1` | chromeDashAppsLib.chromeDashAppsLibNumbers.`2` = null,
+    progress: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, message = message, title = title, `type` = `type`.asInstanceOf[js.Any])
+    if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage)
+    if (!js.isUndefined(eventTime)) __obj.updateDynamic("eventTime")(eventTime)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress)
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

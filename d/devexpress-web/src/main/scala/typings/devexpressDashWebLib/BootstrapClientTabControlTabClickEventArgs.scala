@@ -21,3 +21,19 @@ trait BootstrapClientTabControlTabClickEventArgs extends BootstrapClientTabContr
   var htmlEvent: js.Object
 }
 
+object BootstrapClientTabControlTabClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    processOnServer: scala.Boolean,
+    reloadContentOnCallback: scala.Boolean,
+    tab: BootstrapClientTab
+  ): BootstrapClientTabControlTabClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, tab = tab)
+  
+    __obj.asInstanceOf[BootstrapClientTabControlTabClickEventArgs]
+  }
+}
+

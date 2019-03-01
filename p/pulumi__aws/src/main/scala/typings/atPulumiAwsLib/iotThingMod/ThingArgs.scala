@@ -22,3 +22,18 @@ trait ThingArgs extends js.Object {
   val thingTypeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ThingArgs {
+  @scala.inline
+  def apply(
+    attributes: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    thingTypeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ThingArgs = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThingArgs]
+  }
+}
+

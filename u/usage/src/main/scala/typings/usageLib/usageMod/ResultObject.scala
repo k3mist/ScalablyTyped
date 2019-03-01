@@ -11,3 +11,12 @@ trait ResultObject extends js.Object {
   var memoryInfo: usageLib.Anon_Rss
 }
 
+object ResultObject {
+  @scala.inline
+  def apply(cpu: scala.Double, memory: scala.Double, memoryInfo: usageLib.Anon_Rss): ResultObject = {
+    val __obj = js.Dynamic.literal(cpu = cpu, memory = memory, memoryInfo = memoryInfo)
+  
+    __obj.asInstanceOf[ResultObject]
+  }
+}
+

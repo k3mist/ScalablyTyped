@@ -16,3 +16,24 @@ trait MapStore extends js.Object {
   def transformCoverage(coverageMap: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap): istanbulDashLibDashSourceDashMapsLib.Anon_Map
 }
 
+object MapStore {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[istanbulDashLibDashSourceDashMapsLib.Anon_Data],
+    dispose: js.Function0[scala.Unit],
+    registerMap: js.Function2[java.lang.String, sourceDashMapLib.sourceDashMapMod.RawSourceMap, scala.Unit],
+    registerURL: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    sourceStore: SourceStore,
+    transformCoverage: js.Function1[
+      istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap, 
+      istanbulDashLibDashSourceDashMapsLib.Anon_Map
+    ],
+    verbose: scala.Boolean,
+    baseDir: java.lang.String = null
+  ): MapStore = {
+    val __obj = js.Dynamic.literal(data = data, dispose = dispose, registerMap = registerMap, registerURL = registerURL, sourceStore = sourceStore, transformCoverage = transformCoverage, verbose = verbose)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
+    __obj.asInstanceOf[MapStore]
+  }
+}
+

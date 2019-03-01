@@ -48,3 +48,21 @@ trait GeoHashGridAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object GeoHashGridAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, GeoHashGridAggregation],
+    aggregation: js.Function1[Aggregation, GeoHashGridAggregation],
+    field: js.Function1[java.lang.String, GeoHashGridAggregation],
+    precision: js.Function1[scala.Double, GeoHashGridAggregation],
+    shardSize: js.Function1[scala.Double, GeoHashGridAggregation],
+    size: js.Function1[scala.Double, GeoHashGridAggregation],
+    toJSON: js.Function0[js.Any]
+  ): GeoHashGridAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, precision = precision, shardSize = shardSize, size = size, toJSON = toJSON)
+  
+    __obj.asInstanceOf[GeoHashGridAggregation]
+  }
+}
+

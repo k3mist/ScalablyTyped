@@ -12,3 +12,12 @@ trait Level extends js.Object {
   var width: scala.Double
 }
 
+object Level {
+  @scala.inline
+  def apply(bitrate: scala.Double, height: scala.Double, label: java.lang.String, width: scala.Double): Level = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate, height = height, label = label, width = width)
+  
+    __obj.asInstanceOf[Level]
+  }
+}
+

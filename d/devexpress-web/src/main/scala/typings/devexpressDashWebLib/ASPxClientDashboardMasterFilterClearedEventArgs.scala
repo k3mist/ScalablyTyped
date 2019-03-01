@@ -16,3 +16,12 @@ trait ASPxClientDashboardMasterFilterClearedEventArgs extends ASPxClientEventArg
   var ItemName: java.lang.String
 }
 
+object ASPxClientDashboardMasterFilterClearedEventArgs {
+  @scala.inline
+  def apply(ItemName: java.lang.String): ASPxClientDashboardMasterFilterClearedEventArgs = {
+    val __obj = js.Dynamic.literal(ItemName = ItemName)
+  
+    __obj.asInstanceOf[ASPxClientDashboardMasterFilterClearedEventArgs]
+  }
+}
+

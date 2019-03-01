@@ -12,3 +12,17 @@ trait Anon_Item extends js.Object {
   var root: java.lang.String
 }
 
+object Anon_Item {
+  @scala.inline
+  def apply(
+    item: java.lang.String,
+    label: java.lang.String,
+    materialDecorator: java.lang.String,
+    root: java.lang.String
+  ): Anon_Item = {
+    val __obj = js.Dynamic.literal(item = item, label = label, materialDecorator = materialDecorator, root = root)
+  
+    __obj.asInstanceOf[Anon_Item]
+  }
+}
+

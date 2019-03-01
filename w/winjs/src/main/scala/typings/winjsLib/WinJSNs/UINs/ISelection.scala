@@ -64,3 +64,23 @@ trait ISelection[T] extends js.Object {
   def set(items: js.Any): winjsLib.WinJSNs.Promise[_]
 }
 
+object ISelection {
+  @scala.inline
+  def apply[T](
+    add: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]],
+    clear: js.Function0[winjsLib.WinJSNs.Promise[_]],
+    count: js.Function0[scala.Double],
+    getIndices: js.Function0[js.Array[scala.Double]],
+    getItems: js.Function0[winjsLib.WinJSNs.Promise[js.Array[IItem[T]]]],
+    getRanges: js.Function0[js.Array[ISelectionRange]],
+    isEverything: js.Function0[scala.Boolean],
+    remove: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]],
+    selectAll: js.Function0[scala.Unit],
+    set: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]]
+  ): ISelection[T] = {
+    val __obj = js.Dynamic.literal(add = add, clear = clear, count = count, getIndices = getIndices, getItems = getItems, getRanges = getRanges, isEverything = isEverything, remove = remove, selectAll = selectAll, set = set)
+  
+    __obj.asInstanceOf[ISelection[T]]
+  }
+}
+

@@ -22,3 +22,19 @@ trait Anon_SourceFrameId extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_SourceFrameId {
+  @scala.inline
+  def apply(
+    sourceFrameId: scala.Double,
+    sourceProcessId: scala.Double,
+    sourceTabId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String
+  ): Anon_SourceFrameId = {
+    val __obj = js.Dynamic.literal(sourceFrameId = sourceFrameId, sourceProcessId = sourceProcessId, sourceTabId = sourceTabId, tabId = tabId, timeStamp = timeStamp, url = url)
+  
+    __obj.asInstanceOf[Anon_SourceFrameId]
+  }
+}
+

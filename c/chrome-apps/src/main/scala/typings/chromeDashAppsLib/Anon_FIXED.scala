@@ -11,3 +11,16 @@ trait Anon_FIXED extends js.Object {
   var UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
 }
 
+object Anon_FIXED {
+  @scala.inline
+  def apply(
+    FIXED: chromeDashAppsLib.chromeDashAppsLibStrings.fixed,
+    REMOVABLE: chromeDashAppsLib.chromeDashAppsLibStrings.removable,
+    UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
+  ): Anon_FIXED = {
+    val __obj = js.Dynamic.literal(FIXED = FIXED, REMOVABLE = REMOVABLE, UNKNOWN = UNKNOWN)
+  
+    __obj.asInstanceOf[Anon_FIXED]
+  }
+}
+

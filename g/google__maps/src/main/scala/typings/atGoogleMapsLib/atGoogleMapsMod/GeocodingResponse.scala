@@ -22,3 +22,12 @@ trait GeocodingResponse[STATUSES] extends js.Object {
   var status: STATUSES
 }
 
+object GeocodingResponse {
+  @scala.inline
+  def apply[STATUSES](error_message: java.lang.String, results: js.Array[GeocodingResult], status: STATUSES): GeocodingResponse[STATUSES] = {
+    val __obj = js.Dynamic.literal(error_message = error_message, results = results, status = status.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeocodingResponse[STATUSES]]
+  }
+}
+

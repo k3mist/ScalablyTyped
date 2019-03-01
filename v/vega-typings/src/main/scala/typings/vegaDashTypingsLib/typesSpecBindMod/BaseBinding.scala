@@ -12,3 +12,20 @@ trait BaseBinding extends Binding {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BaseBinding {
+  @scala.inline
+  def apply(
+    debounce: scala.Int | scala.Double = null,
+    element: Element = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): BaseBinding = {
+    val __obj = js.Dynamic.literal()
+    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BaseBinding]
+  }
+}
+

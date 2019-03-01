@@ -16,3 +16,15 @@ trait AttachmentArgs extends js.Object {
   val instance: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object AttachmentArgs {
+  @scala.inline
+  def apply(
+    elb: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    instance: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): AttachmentArgs = {
+    val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AttachmentArgs]
+  }
+}
+

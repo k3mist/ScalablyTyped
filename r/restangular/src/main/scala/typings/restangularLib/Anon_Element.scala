@@ -11,3 +11,12 @@ trait Anon_Element extends js.Object {
   var params: js.Any
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(element: js.Any, headers: js.Any, params: js.Any): Anon_Element = {
+    val __obj = js.Dynamic.literal(element = element, headers = headers, params = params)
+  
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

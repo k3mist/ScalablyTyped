@@ -13,3 +13,20 @@ trait WindowsSignOptions extends js.Object {
   val site: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object WindowsSignOptions {
+  @scala.inline
+  def apply(
+    options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration,
+    path: java.lang.String,
+    cscInfo: FileCodeSigningInfo | CertificateFromStoreInfo = null,
+    name: java.lang.String = null,
+    site: java.lang.String = null
+  ): WindowsSignOptions = {
+    val __obj = js.Dynamic.literal(options = options, path = path)
+    if (cscInfo != null) __obj.updateDynamic("cscInfo")(cscInfo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (site != null) __obj.updateDynamic("site")(site)
+    __obj.asInstanceOf[WindowsSignOptions]
+  }
+}
+

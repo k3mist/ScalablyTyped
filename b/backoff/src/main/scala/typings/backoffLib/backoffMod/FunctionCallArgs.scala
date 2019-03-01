@@ -61,3 +61,49 @@ trait FunctionCallArgs[E, R1, R2, R3] extends js.Object {
   ): this.type
 }
 
+object FunctionCallArgs {
+  @scala.inline
+  def apply[E, R1, R2, R3](
+    addListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    emit_callback: js.Function2[backoffLib.backoffLibStrings.callback, js.Tuple4[E, R1, R2, R3], scala.Boolean],
+    getLastResult: js.Function0[js.Tuple4[E, R1, R2, R3]],
+    listeners_callback: js.Function1[
+      backoffLib.backoffLibStrings.callback, 
+      js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit]]
+    ],
+    on_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    once_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    prependListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    prependOnceListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    removeListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ]
+  ): FunctionCallArgs[E, R1, R2, R3] = {
+    val __obj = js.Dynamic.literal(addListener_callback = addListener_callback, emit_callback = emit_callback, getLastResult = getLastResult, listeners_callback = listeners_callback, on_callback = on_callback, once_callback = once_callback, prependListener_callback = prependListener_callback, prependOnceListener_callback = prependOnceListener_callback, removeListener_callback = removeListener_callback)
+  
+    __obj.asInstanceOf[FunctionCallArgs[E, R1, R2, R3]]
+  }
+}
+

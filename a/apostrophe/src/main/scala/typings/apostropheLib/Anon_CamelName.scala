@@ -12,3 +12,17 @@ trait Anon_CamelName extends js.Object {
   def generateId(): java.lang.String
 }
 
+object Anon_CamelName {
+  @scala.inline
+  def apply(
+    camelName: js.Function1[java.lang.String, java.lang.String],
+    capitalizeFirst: js.Function1[java.lang.String, java.lang.String],
+    error: js.Function1[java.lang.String, scala.Unit],
+    generateId: js.Function0[java.lang.String]
+  ): Anon_CamelName = {
+    val __obj = js.Dynamic.literal(camelName = camelName, capitalizeFirst = capitalizeFirst, error = error, generateId = generateId)
+  
+    __obj.asInstanceOf[Anon_CamelName]
+  }
+}
+

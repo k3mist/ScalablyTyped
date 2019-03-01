@@ -14,3 +14,12 @@ trait RendererProperties extends js.Object {
   var authoringInfo: js.UndefOr[AuthoringInfoProperties] = js.undefined
 }
 
+object RendererProperties {
+  @scala.inline
+  def apply(authoringInfo: AuthoringInfoProperties = null): RendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    __obj.asInstanceOf[RendererProperties]
+  }
+}
+

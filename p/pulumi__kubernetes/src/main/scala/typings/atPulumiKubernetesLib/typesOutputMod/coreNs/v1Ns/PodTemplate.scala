@@ -35,3 +35,17 @@ trait PodTemplate extends js.Object {
   val template: PodTemplateSpec
 }
 
+object PodTemplate {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplate,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    template: PodTemplateSpec
+  ): PodTemplate = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, template = template)
+  
+    __obj.asInstanceOf[PodTemplate]
+  }
+}
+

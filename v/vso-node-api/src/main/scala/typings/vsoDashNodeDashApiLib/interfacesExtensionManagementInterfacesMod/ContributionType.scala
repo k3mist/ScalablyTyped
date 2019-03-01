@@ -20,3 +20,19 @@ trait ContributionType extends ContributionBase {
   var properties: org.scalablytyped.runtime.StringDictionary[ContributionPropertyDescription]
 }
 
+object ContributionType {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    indexed: scala.Boolean,
+    name: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[ContributionPropertyDescription],
+    visibleTo: js.Array[java.lang.String]
+  ): ContributionType = {
+    val __obj = js.Dynamic.literal(description = description, id = id, indexed = indexed, name = name, properties = properties, visibleTo = visibleTo)
+  
+    __obj.asInstanceOf[ContributionType]
+  }
+}
+

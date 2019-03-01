@@ -24,3 +24,17 @@ trait RoleAssignment extends js.Object {
   var role: SecurityRole
 }
 
+object RoleAssignment {
+  @scala.inline
+  def apply(
+    access: RoleAccess,
+    accessDisplayName: java.lang.String,
+    identity: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    role: SecurityRole
+  ): RoleAssignment = {
+    val __obj = js.Dynamic.literal(access = access, accessDisplayName = accessDisplayName, identity = identity, role = role)
+  
+    __obj.asInstanceOf[RoleAssignment]
+  }
+}
+

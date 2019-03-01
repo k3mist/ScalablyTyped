@@ -19,3 +19,24 @@ trait Anon_AutoUpgradeError extends js.Object {
   var warning: scala.Double
 }
 
+object Anon_AutoUpgradeError {
+  @scala.inline
+  def apply(
+    autoUpgradeError: scala.Double,
+    builtIn: scala.Double,
+    disabled: scala.Double,
+    error: scala.Double,
+    multiVersion: scala.Double,
+    needsReauthorization: scala.Double,
+    none: scala.Double,
+    trusted: scala.Double,
+    unInstalled: scala.Double,
+    versionCheckError: scala.Double,
+    warning: scala.Double
+  ): Anon_AutoUpgradeError = {
+    val __obj = js.Dynamic.literal(autoUpgradeError = autoUpgradeError, builtIn = builtIn, disabled = disabled, error = error, multiVersion = multiVersion, needsReauthorization = needsReauthorization, none = none, trusted = trusted, unInstalled = unInstalled, versionCheckError = versionCheckError, warning = warning)
+  
+    __obj.asInstanceOf[Anon_AutoUpgradeError]
+  }
+}
+

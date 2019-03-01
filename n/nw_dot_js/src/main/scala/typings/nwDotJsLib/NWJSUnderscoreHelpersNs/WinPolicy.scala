@@ -37,3 +37,19 @@ trait WinPolicy extends js.Object {
   def setNewWindowManifest(m: WindowOption): scala.Unit
 }
 
+object WinPolicy {
+  @scala.inline
+  def apply(
+    forceCurrent: js.Function0[scala.Unit],
+    forceDownload: js.Function0[scala.Unit],
+    forceNewPopup: js.Function0[scala.Unit],
+    forceNewWindow: js.Function0[scala.Unit],
+    ignore: js.Function0[scala.Unit],
+    setNewWindowManifest: js.Function1[WindowOption, scala.Unit]
+  ): WinPolicy = {
+    val __obj = js.Dynamic.literal(forceCurrent = forceCurrent, forceDownload = forceDownload, forceNewPopup = forceNewPopup, forceNewWindow = forceNewWindow, ignore = ignore, setNewWindowManifest = setNewWindowManifest)
+  
+    __obj.asInstanceOf[WinPolicy]
+  }
+}
+

@@ -60,3 +60,25 @@ trait GaugeBand extends js.Object {
   def setStartValue(value: scala.Double): scala.Unit
 }
 
+object GaugeBand {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    balloonText: java.lang.String,
+    color: java.lang.String,
+    endValue: scala.Double,
+    gradientRatio: js.Array[scala.Double],
+    id: java.lang.String,
+    innerRadius: js.Any,
+    radius: js.Any,
+    setEndValue: js.Function1[scala.Double, scala.Unit],
+    setStartValue: js.Function1[scala.Double, scala.Unit],
+    startValue: scala.Double,
+    url: java.lang.String
+  ): GaugeBand = {
+    val __obj = js.Dynamic.literal(alpha = alpha, balloonText = balloonText, color = color, endValue = endValue, gradientRatio = gradientRatio, id = id, innerRadius = innerRadius, radius = radius, setEndValue = setEndValue, setStartValue = setStartValue, startValue = startValue, url = url)
+  
+    __obj.asInstanceOf[GaugeBand]
+  }
+}
+

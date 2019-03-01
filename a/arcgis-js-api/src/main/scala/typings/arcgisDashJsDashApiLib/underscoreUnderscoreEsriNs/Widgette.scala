@@ -40,3 +40,17 @@ trait Widgette extends js.Object {
   def on(`type`: java.lang.String, listener: js.Function): js.Any
 }
 
+object Widgette {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement,
+    destroy: js.Function0[scala.Unit],
+    on: js.Function2[java.lang.String, js.Function, js.Any],
+    visible: scala.Boolean
+  ): Widgette = {
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], destroy = destroy, on = on, visible = visible)
+  
+    __obj.asInstanceOf[Widgette]
+  }
+}
+

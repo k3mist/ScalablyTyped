@@ -10,3 +10,12 @@ trait Anon_Extension extends js.Object {
   var self: SafariContentWebPage
 }
 
+object Anon_Extension {
+  @scala.inline
+  def apply(extension: SafariContentExtension, self: SafariContentWebPage): Anon_Extension = {
+    val __obj = js.Dynamic.literal(extension = extension, self = self)
+  
+    __obj.asInstanceOf[Anon_Extension]
+  }
+}
+

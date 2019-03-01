@@ -14,3 +14,19 @@ trait ContextByNode[K] extends js.Object {
   var subId: java.lang.String
 }
 
+object ContextByNode {
+  @scala.inline
+  def apply[K](
+    index: scala.Double,
+    key: K,
+    subId: java.lang.String,
+    group: js.UndefOr[scala.Boolean] = js.undefined,
+    parent: stdLib.Element = null
+  ): ContextByNode[K] = {
+    val __obj = js.Dynamic.literal(index = index, key = key.asInstanceOf[js.Any], subId = subId)
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[ContextByNode[K]]
+  }
+}
+

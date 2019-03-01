@@ -22,3 +22,16 @@ trait BasemapToggleViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object BasemapToggleViewModelProperties {
+  @scala.inline
+  def apply(
+    nextBasemap: BasemapProperties | java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): BasemapToggleViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (nextBasemap != null) __obj.updateDynamic("nextBasemap")(nextBasemap.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BasemapToggleViewModelProperties]
+  }
+}
+

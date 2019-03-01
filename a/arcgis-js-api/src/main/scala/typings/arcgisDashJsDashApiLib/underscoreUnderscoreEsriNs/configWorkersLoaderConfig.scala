@@ -39,3 +39,25 @@ trait configWorkersLoaderConfig
   var paths: js.UndefOr[js.Any] = js.undefined
 }
 
+object configWorkersLoaderConfig {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    baseUrl: java.lang.String = null,
+    has: js.Any = null,
+    map: js.Any = null,
+    packages: js.Array[_] = null,
+    paths: js.Any = null
+  ): configWorkersLoaderConfig = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (has != null) __obj.updateDynamic("has")(has)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (packages != null) __obj.updateDynamic("packages")(packages)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    __obj.asInstanceOf[configWorkersLoaderConfig]
+  }
+}
+

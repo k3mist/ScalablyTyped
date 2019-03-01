@@ -10,3 +10,12 @@ trait Anon_Array extends js.Object {
   var `object`: Anon_Options
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(array: Anon_OptionsJSONEditorArrayOptions, `object`: Anon_Options): Anon_Array = {
+    val __obj = js.Dynamic.literal(array = array, `object` = `object`)
+  
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

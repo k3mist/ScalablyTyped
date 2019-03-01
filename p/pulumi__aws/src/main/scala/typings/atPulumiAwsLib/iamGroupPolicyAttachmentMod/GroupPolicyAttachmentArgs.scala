@@ -16,3 +16,15 @@ trait GroupPolicyAttachmentArgs extends js.Object {
   val policyArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
 }
 
+object GroupPolicyAttachmentArgs {
+  @scala.inline
+  def apply(
+    group: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamGroupMod.Group],
+    policyArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
+  ): GroupPolicyAttachmentArgs = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], policyArn = policyArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GroupPolicyAttachmentArgs]
+  }
+}
+

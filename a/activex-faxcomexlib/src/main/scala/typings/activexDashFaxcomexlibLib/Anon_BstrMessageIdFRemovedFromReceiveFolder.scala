@@ -11,3 +11,16 @@ trait Anon_BstrMessageIdFRemovedFromReceiveFolder extends js.Object {
   val pFaxAccount: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount
 }
 
+object Anon_BstrMessageIdFRemovedFromReceiveFolder {
+  @scala.inline
+  def apply(
+    bstrMessageId: java.lang.String,
+    fRemovedFromReceiveFolder: scala.Boolean,
+    pFaxAccount: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount
+  ): Anon_BstrMessageIdFRemovedFromReceiveFolder = {
+    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId, fRemovedFromReceiveFolder = fRemovedFromReceiveFolder, pFaxAccount = pFaxAccount)
+  
+    __obj.asInstanceOf[Anon_BstrMessageIdFRemovedFromReceiveFolder]
+  }
+}
+

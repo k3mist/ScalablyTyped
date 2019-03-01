@@ -50,3 +50,25 @@ trait ReleaseReference extends js.Object {
   var webAccessUri: java.lang.String
 }
 
+object ReleaseReference {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    artifacts: js.Array[Artifact],
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    description: java.lang.String,
+    id: scala.Double,
+    modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    name: java.lang.String,
+    reason: ReleaseReason,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    url: java.lang.String,
+    webAccessUri: java.lang.String
+  ): ReleaseReference = {
+    val __obj = js.Dynamic.literal(_links = _links, artifacts = artifacts, createdBy = createdBy, createdOn = createdOn, description = description, id = id, modifiedBy = modifiedBy, name = name, reason = reason, releaseDefinition = releaseDefinition, url = url, webAccessUri = webAccessUri)
+  
+    __obj.asInstanceOf[ReleaseReference]
+  }
+}
+

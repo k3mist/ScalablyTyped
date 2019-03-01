@@ -10,3 +10,17 @@ trait GridViewCustomButtonEventArgs extends ProcessingModeEventArgs {
   val visibleIndex: scala.Double
 }
 
+object GridViewCustomButtonEventArgs {
+  @scala.inline
+  def apply(
+    buttonID: java.lang.String,
+    processOnServer: scala.Boolean,
+    sender: Control,
+    visibleIndex: scala.Double
+  ): GridViewCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID, processOnServer = processOnServer, sender = sender, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[GridViewCustomButtonEventArgs]
+  }
+}
+

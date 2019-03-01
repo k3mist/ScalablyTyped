@@ -23,3 +23,25 @@ trait RequestOptions
   var url: java.lang.String
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    auth: js.Object,
+    body: RequestBody,
+    failOnStatusCode: scala.Boolean,
+    followRedirect: scala.Boolean,
+    form: scala.Boolean,
+    gzip: scala.Boolean,
+    headers: js.Object,
+    log: scala.Boolean,
+    method: HttpMethod,
+    qs: js.Object,
+    timeout: scala.Double,
+    url: java.lang.String
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal(auth = auth, body = body.asInstanceOf[js.Any], failOnStatusCode = failOnStatusCode, followRedirect = followRedirect, form = form, gzip = gzip, headers = headers, log = log, method = method, qs = qs, timeout = timeout, url = url)
+  
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

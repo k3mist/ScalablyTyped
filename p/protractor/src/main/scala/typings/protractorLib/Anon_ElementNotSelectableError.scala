@@ -138,3 +138,57 @@ trait Anon_ElementNotSelectableError extends js.Object {
   var WebDriverError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.WebDriverError]
 }
 
+object Anon_ElementNotSelectableError {
+  @scala.inline
+  def apply(
+    ElementNotSelectableError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotSelectableError
+    ],
+    ElementNotVisibleError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotVisibleError],
+    IError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.IError],
+    InvalidArgumentError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidArgumentError],
+    InvalidCookieDomainError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidCookieDomainError
+    ],
+    InvalidElementCoordinatesError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidElementCoordinatesError
+    ],
+    InvalidElementStateError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidElementStateError
+    ],
+    InvalidSelectorError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidSelectorError],
+    JavascriptError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.JavascriptError],
+    MoveTargetOutOfBoundsError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.MoveTargetOutOfBoundsError
+    ],
+    NoSuchAlertError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchAlertError],
+    NoSuchElementError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchElementError],
+    NoSuchFrameError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchFrameError],
+    NoSuchSessionError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchSessionError],
+    NoSuchWindowError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchWindowError],
+    ScriptTimeoutError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ScriptTimeoutError],
+    SessionNotCreatedError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.SessionNotCreatedError],
+    StaleElementReferenceError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.StaleElementReferenceError
+    ],
+    TimeoutError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.TimeoutError],
+    UnableToCaptureScreenError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnableToCaptureScreenError
+    ],
+    UnableToSetCookieError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnableToSetCookieError],
+    UnexpectedAlertOpenError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnexpectedAlertOpenError
+    ],
+    UnknownCommandError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnknownCommandError],
+    UnknownMethodError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnknownMethodError],
+    UnsupportedOperationError: org.scalablytyped.runtime.Instantiable0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnsupportedOperationError
+    ],
+    WebDriverError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.WebDriverError]
+  ): Anon_ElementNotSelectableError = {
+    val __obj = js.Dynamic.literal(ElementNotSelectableError = ElementNotSelectableError, ElementNotVisibleError = ElementNotVisibleError, IError = IError, InvalidArgumentError = InvalidArgumentError, InvalidCookieDomainError = InvalidCookieDomainError, InvalidElementCoordinatesError = InvalidElementCoordinatesError, InvalidElementStateError = InvalidElementStateError, InvalidSelectorError = InvalidSelectorError, JavascriptError = JavascriptError, MoveTargetOutOfBoundsError = MoveTargetOutOfBoundsError, NoSuchAlertError = NoSuchAlertError, NoSuchElementError = NoSuchElementError, NoSuchFrameError = NoSuchFrameError, NoSuchSessionError = NoSuchSessionError, NoSuchWindowError = NoSuchWindowError, ScriptTimeoutError = ScriptTimeoutError, SessionNotCreatedError = SessionNotCreatedError, StaleElementReferenceError = StaleElementReferenceError, TimeoutError = TimeoutError, UnableToCaptureScreenError = UnableToCaptureScreenError, UnableToSetCookieError = UnableToSetCookieError, UnexpectedAlertOpenError = UnexpectedAlertOpenError, UnknownCommandError = UnknownCommandError, UnknownMethodError = UnknownMethodError, UnsupportedOperationError = UnsupportedOperationError, WebDriverError = WebDriverError)
+  
+    __obj.asInstanceOf[Anon_ElementNotSelectableError]
+  }
+}
+

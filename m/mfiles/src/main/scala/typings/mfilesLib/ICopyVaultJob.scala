@@ -30,3 +30,35 @@ trait ICopyVaultJob extends js.Object {
   def Clone(): ICopyVaultJob
 }
 
+object ICopyVaultJob {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ICopyVaultJob],
+    CopyflagAllData: scala.Boolean,
+    CopyflagAllExceptData: scala.Boolean,
+    CopyflagApplications: scala.Boolean,
+    CopyflagDataSets: scala.Boolean,
+    CopyflagDocumentProfiles: scala.Boolean,
+    CopyflagDocuments: scala.Boolean,
+    CopyflagEventLog: scala.Boolean,
+    CopyflagExternalLocations: scala.Boolean,
+    CopyflagFiles: scala.Boolean,
+    CopyflagInternalEventHandlers: scala.Boolean,
+    CopyflagLanguagesAndTranslations: scala.Boolean,
+    CopyflagPropertyDefinitions: scala.Boolean,
+    CopyflagScheduledExportAndImportJobs: scala.Boolean,
+    CopyflagUseTargetGUID: scala.Boolean,
+    CopyflagUserAccounts: scala.Boolean,
+    CopyflagValueListContent: scala.Boolean,
+    CopyflagValueLists: scala.Boolean,
+    CopyflagViews: scala.Boolean,
+    CopyflagWorkflows: scala.Boolean,
+    VaultGUID: java.lang.String,
+    VaultProperties: IVaultProperties
+  ): ICopyVaultJob = {
+    val __obj = js.Dynamic.literal(Clone = Clone, CopyflagAllData = CopyflagAllData, CopyflagAllExceptData = CopyflagAllExceptData, CopyflagApplications = CopyflagApplications, CopyflagDataSets = CopyflagDataSets, CopyflagDocumentProfiles = CopyflagDocumentProfiles, CopyflagDocuments = CopyflagDocuments, CopyflagEventLog = CopyflagEventLog, CopyflagExternalLocations = CopyflagExternalLocations, CopyflagFiles = CopyflagFiles, CopyflagInternalEventHandlers = CopyflagInternalEventHandlers, CopyflagLanguagesAndTranslations = CopyflagLanguagesAndTranslations, CopyflagPropertyDefinitions = CopyflagPropertyDefinitions, CopyflagScheduledExportAndImportJobs = CopyflagScheduledExportAndImportJobs, CopyflagUseTargetGUID = CopyflagUseTargetGUID, CopyflagUserAccounts = CopyflagUserAccounts, CopyflagValueListContent = CopyflagValueListContent, CopyflagValueLists = CopyflagValueLists, CopyflagViews = CopyflagViews, CopyflagWorkflows = CopyflagWorkflows, VaultGUID = VaultGUID, VaultProperties = VaultProperties)
+  
+    __obj.asInstanceOf[ICopyVaultJob]
+  }
+}
+

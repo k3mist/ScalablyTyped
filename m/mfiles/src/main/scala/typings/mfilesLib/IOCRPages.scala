@@ -13,3 +13,18 @@ trait IOCRPages extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IOCRPages {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IOCRPage, scala.Unit],
+    Clone: js.Function0[IOCRPages],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IOCRPage],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IOCRPages = {
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+  
+    __obj.asInstanceOf[IOCRPages]
+  }
+}
+

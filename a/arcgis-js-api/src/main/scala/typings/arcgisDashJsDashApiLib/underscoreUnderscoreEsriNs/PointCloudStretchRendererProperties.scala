@@ -34,3 +34,26 @@ trait PointCloudStretchRendererProperties extends PointCloudRendererProperties {
   var stops: js.UndefOr[js.Array[PointCloudStretchRendererStops]] = js.undefined
 }
 
+object PointCloudStretchRendererProperties {
+  @scala.inline
+  def apply(
+    colorModulation: PointCloudRendererColorModulation = null,
+    field: java.lang.String = null,
+    fieldTransformType: java.lang.String = null,
+    legendOptions: PointCloudStretchRendererLegendOptions = null,
+    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
+    pointsPerInch: scala.Int | scala.Double = null,
+    stops: js.Array[PointCloudStretchRendererStops] = null
+  ): PointCloudStretchRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[PointCloudStretchRendererProperties]
+  }
+}
+

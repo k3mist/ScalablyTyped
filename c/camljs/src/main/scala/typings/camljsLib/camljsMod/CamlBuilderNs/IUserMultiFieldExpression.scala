@@ -22,3 +22,20 @@ trait IUserMultiFieldExpression extends js.Object {
   def NotIncludes(value: js.Any): IExpression
 }
 
+object IUserMultiFieldExpression {
+  @scala.inline
+  def apply(
+    EqualTo: js.Function1[js.Any, IExpression],
+    Includes: js.Function1[js.Any, IExpression],
+    IncludesSuchItemThat: js.Function0[IUserFieldExpression],
+    IsNotNull: js.Function0[IExpression],
+    IsNull: js.Function0[IExpression],
+    NotEqualTo: js.Function1[js.Any, IExpression],
+    NotIncludes: js.Function1[js.Any, IExpression]
+  ): IUserMultiFieldExpression = {
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, Includes = Includes, IncludesSuchItemThat = IncludesSuchItemThat, IsNotNull = IsNotNull, IsNull = IsNull, NotEqualTo = NotEqualTo, NotIncludes = NotIncludes)
+  
+    __obj.asInstanceOf[IUserMultiFieldExpression]
+  }
+}
+

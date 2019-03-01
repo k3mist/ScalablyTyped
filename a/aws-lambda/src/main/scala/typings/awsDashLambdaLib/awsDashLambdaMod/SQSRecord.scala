@@ -17,3 +17,22 @@ trait SQSRecord extends js.Object {
   var receiptHandle: java.lang.String
 }
 
+object SQSRecord {
+  @scala.inline
+  def apply(
+    attributes: SQSRecordAttributes,
+    awsRegion: java.lang.String,
+    body: java.lang.String,
+    eventSource: java.lang.String,
+    eventSourceARN: java.lang.String,
+    md5OfBody: java.lang.String,
+    messageAttributes: SQSMessageAttributes,
+    messageId: java.lang.String,
+    receiptHandle: java.lang.String
+  ): SQSRecord = {
+    val __obj = js.Dynamic.literal(attributes = attributes, awsRegion = awsRegion, body = body, eventSource = eventSource, eventSourceARN = eventSourceARN, md5OfBody = md5OfBody, messageAttributes = messageAttributes, messageId = messageId, receiptHandle = receiptHandle)
+  
+    __obj.asInstanceOf[SQSRecord]
+  }
+}
+

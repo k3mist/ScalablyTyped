@@ -50,3 +50,12 @@ trait RawExtension extends js.Object {
   var Raw: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RawExtension {
+  @scala.inline
+  def apply(Raw: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): RawExtension = {
+    val __obj = js.Dynamic.literal(Raw = Raw.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RawExtension]
+  }
+}
+

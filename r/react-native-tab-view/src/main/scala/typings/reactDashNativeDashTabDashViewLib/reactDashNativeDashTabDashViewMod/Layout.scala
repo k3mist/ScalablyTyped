@@ -10,3 +10,12 @@ trait Layout extends js.Object {
   var width: scala.Double
 }
 
+object Layout {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): Layout = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[Layout]
+  }
+}
+

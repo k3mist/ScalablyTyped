@@ -30,3 +30,24 @@ trait DisplayLayout extends js.Object {
   ]
 }
 
+object DisplayLayout {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    offset: chromeDashAppsLib.chromeNs.integer,
+    parentId: java.lang.String,
+    position: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_BOTTOM, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BOTTOM[keyof chrome-apps.Anon_BOTTOM] */ js.Any
+      ]
+    ]
+  ): DisplayLayout = {
+    val __obj = js.Dynamic.literal(id = id, offset = offset, parentId = parentId, position = position.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DisplayLayout]
+  }
+}
+

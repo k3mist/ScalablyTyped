@@ -28,3 +28,18 @@ trait SubscriptionQueryCondition extends js.Object {
   var subscriptionId: java.lang.String
 }
 
+object SubscriptionQueryCondition {
+  @scala.inline
+  def apply(
+    filter: ISubscriptionFilter,
+    flags: SubscriptionFlags,
+    scope: java.lang.String,
+    subscriberId: java.lang.String,
+    subscriptionId: java.lang.String
+  ): SubscriptionQueryCondition = {
+    val __obj = js.Dynamic.literal(filter = filter, flags = flags, scope = scope, subscriberId = subscriberId, subscriptionId = subscriptionId)
+  
+    __obj.asInstanceOf[SubscriptionQueryCondition]
+  }
+}
+

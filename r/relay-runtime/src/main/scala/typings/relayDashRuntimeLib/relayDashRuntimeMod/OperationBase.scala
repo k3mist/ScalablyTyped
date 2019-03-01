@@ -10,3 +10,12 @@ trait OperationBase extends js.Object {
   var variables: js.Object
 }
 
+object OperationBase {
+  @scala.inline
+  def apply(response: js.Object, variables: js.Object): OperationBase = {
+    val __obj = js.Dynamic.literal(response = response, variables = variables)
+  
+    __obj.asInstanceOf[OperationBase]
+  }
+}
+

@@ -33,3 +33,20 @@ trait Currency extends js.Object {
   var UsedInCompatibleFormatCodes: scala.Boolean
 }
 
+object Currency {
+  @scala.inline
+  def apply(
+    BankSymbol: java.lang.String,
+    DecimalPlaces: scala.Double,
+    Default: scala.Boolean,
+    ID: java.lang.String,
+    Name: java.lang.String,
+    Symbol: java.lang.String,
+    UsedInCompatibleFormatCodes: scala.Boolean
+  ): Currency = {
+    val __obj = js.Dynamic.literal(BankSymbol = BankSymbol, DecimalPlaces = DecimalPlaces, Default = Default, ID = ID, Name = Name, Symbol = Symbol, UsedInCompatibleFormatCodes = UsedInCompatibleFormatCodes)
+  
+    __obj.asInstanceOf[Currency]
+  }
+}
+

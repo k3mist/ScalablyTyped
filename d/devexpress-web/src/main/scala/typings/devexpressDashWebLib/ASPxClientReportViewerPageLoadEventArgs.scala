@@ -29,3 +29,17 @@ trait ASPxClientReportViewerPageLoadEventArgs extends ASPxClientEventArgs {
   def IsLastPage(): scala.Boolean
 }
 
+object ASPxClientReportViewerPageLoadEventArgs {
+  @scala.inline
+  def apply(
+    IsFirstPage: js.Function0[scala.Boolean],
+    IsLastPage: js.Function0[scala.Boolean],
+    PageCount: scala.Double,
+    PageIndex: scala.Double
+  ): ASPxClientReportViewerPageLoadEventArgs = {
+    val __obj = js.Dynamic.literal(IsFirstPage = IsFirstPage, IsLastPage = IsLastPage, PageCount = PageCount, PageIndex = PageIndex)
+  
+    __obj.asInstanceOf[ASPxClientReportViewerPageLoadEventArgs]
+  }
+}
+

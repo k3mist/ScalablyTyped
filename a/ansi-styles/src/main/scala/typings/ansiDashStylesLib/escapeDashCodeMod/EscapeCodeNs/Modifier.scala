@@ -22,3 +22,21 @@ trait Modifier extends js.Object {
   var underline: CodePair
 }
 
+object Modifier {
+  @scala.inline
+  def apply(
+    bold: CodePair,
+    dim: CodePair,
+    hidden: CodePair,
+    inverse: CodePair,
+    italic: CodePair,
+    reset: CodePair,
+    strikethrough: CodePair,
+    underline: CodePair
+  ): Modifier = {
+    val __obj = js.Dynamic.literal(bold = bold, dim = dim, hidden = hidden, inverse = inverse, italic = italic, reset = reset, strikethrough = strikethrough, underline = underline)
+  
+    __obj.asInstanceOf[Modifier]
+  }
+}
+

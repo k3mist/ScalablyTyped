@@ -21,3 +21,26 @@ trait LocaleMessages extends js.Object {
   var editNode: java.lang.String
 }
 
+object LocaleMessages {
+  @scala.inline
+  def apply(
+    addDescription: java.lang.String,
+    addEdge: java.lang.String,
+    addNode: java.lang.String,
+    back: java.lang.String,
+    createEdgeError: java.lang.String,
+    del: java.lang.String,
+    deleteClusterError: java.lang.String,
+    edgeDescription: java.lang.String,
+    edit: java.lang.String,
+    editClusterError: java.lang.String,
+    editEdge: java.lang.String,
+    editEdgeDescription: java.lang.String,
+    editNode: java.lang.String
+  ): LocaleMessages = {
+    val __obj = js.Dynamic.literal(addDescription = addDescription, addEdge = addEdge, addNode = addNode, back = back, createEdgeError = createEdgeError, del = del, deleteClusterError = deleteClusterError, edgeDescription = edgeDescription, edit = edit, editClusterError = editClusterError, editEdge = editEdge, editEdgeDescription = editEdgeDescription, editNode = editNode)
+  
+    __obj.asInstanceOf[LocaleMessages]
+  }
+}
+

@@ -20,3 +20,25 @@ trait HttpQueryRequest extends js.Object {
   ]
 }
 
+object HttpQueryRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    options: (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]) | (js.Function1[
+      /* repeated */ js.Any, 
+      (js.Promise[
+        apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
+      ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
+    ]),
+    query: (stdLib.Record[java.lang.String, _]) | (apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[stdLib.Record[java.lang.String, _]]),
+    request: stdLib.Pick[
+      apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
+      apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.url | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.method | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.headers
+    ]
+  ): HttpQueryRequest = {
+    val __obj = js.Dynamic.literal(method = method, options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request)
+  
+    __obj.asInstanceOf[HttpQueryRequest]
+  }
+}
+

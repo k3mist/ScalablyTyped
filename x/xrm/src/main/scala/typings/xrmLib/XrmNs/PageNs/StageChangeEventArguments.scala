@@ -12,3 +12,15 @@ import scala.scalajs.js.annotation._
 trait StageChangeEventArguments
   extends xrmLib.XrmNs.EventsNs.StageChangeEventArguments
 
+object StageChangeEventArguments {
+  @scala.inline
+  def apply(
+    getDirection: js.Function0[xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection],
+    getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]
+  ): StageChangeEventArguments = {
+    val __obj = js.Dynamic.literal(getDirection = getDirection, getStage = getStage)
+  
+    __obj.asInstanceOf[StageChangeEventArguments]
+  }
+}
+

@@ -47,3 +47,22 @@ trait Fragment extends js.Object {
   var url: java.lang.String
 }
 
+object Fragment {
+  @scala.inline
+  def apply(
+    cc: scala.Double,
+    duration: scala.Double,
+    level: scala.Double,
+    programDateTime: stdLib.Date,
+    sn: scala.Double,
+    start: scala.Double,
+    tagList: js.Array[js.Array[java.lang.String]],
+    title: java.lang.String,
+    url: java.lang.String
+  ): Fragment = {
+    val __obj = js.Dynamic.literal(cc = cc, duration = duration, level = level, programDateTime = programDateTime, sn = sn, start = start, tagList = tagList, title = title, url = url)
+  
+    __obj.asInstanceOf[Fragment]
+  }
+}
+

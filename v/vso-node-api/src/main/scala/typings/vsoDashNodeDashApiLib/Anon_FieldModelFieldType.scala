@@ -21,3 +21,26 @@ trait Anon_FieldModelFieldType extends js.Object {
   var WorkItemTypeModel: js.Any
 }
 
+object Anon_FieldModelFieldType {
+  @scala.inline
+  def apply(
+    FieldModel: js.Any,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory,
+    FormLayout: js.Any,
+    GetBehaviorsExpand: Anon_EnumValuesAnonFieldsNone,
+    GetProcessExpandLevel: Anon_EnumValuesAnonNoneProjects,
+    GetWorkItemTypeExpand: Anon_EnumValuesAnonBehaviors,
+    Page: js.Any,
+    PageType: Anon_EnumValuesAnonAttachments,
+    ProcessClass: Anon_EnumValuesAnonCustomDerived,
+    ProcessModel: js.Any,
+    ProcessProperties: js.Any,
+    WorkItemTypeClass: Anon_EnumValuesAnonCustomDerived,
+    WorkItemTypeModel: js.Any
+  ): Anon_FieldModelFieldType = {
+    val __obj = js.Dynamic.literal(FieldModel = FieldModel, FieldType = FieldType, FormLayout = FormLayout, GetBehaviorsExpand = GetBehaviorsExpand, GetProcessExpandLevel = GetProcessExpandLevel, GetWorkItemTypeExpand = GetWorkItemTypeExpand, Page = Page, PageType = PageType, ProcessClass = ProcessClass, ProcessModel = ProcessModel, ProcessProperties = ProcessProperties, WorkItemTypeClass = WorkItemTypeClass, WorkItemTypeModel = WorkItemTypeModel)
+  
+    __obj.asInstanceOf[Anon_FieldModelFieldType]
+  }
+}
+

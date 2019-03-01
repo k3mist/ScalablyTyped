@@ -17,3 +17,17 @@ trait FlashOval extends js.Object {
   var startAngle: scala.Double
 }
 
+object FlashOval {
+  @scala.inline
+  def apply(
+    closePath: scala.Boolean,
+    endAngle: scala.Double,
+    innerRadius: scala.Double,
+    startAngle: scala.Double
+  ): FlashOval = {
+    val __obj = js.Dynamic.literal(closePath = closePath, endAngle = endAngle, innerRadius = innerRadius, startAngle = startAngle)
+  
+    __obj.asInstanceOf[FlashOval]
+  }
+}
+

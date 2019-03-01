@@ -66,3 +66,22 @@ trait IGenericMeasure
   def unPublish(): js.Promise[scala.Unit]
 }
 
+object IGenericMeasure {
+  @scala.inline
+  def apply(
+    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
+    getInfo: js.Function0[js.Promise[INxInfo]],
+    getLayout: js.Function0[js.Promise[IGenericMeasureLayout]],
+    getLinkedObjects: js.Function0[js.Promise[INxLinkedObjectInfo]],
+    getMeasure: js.Function0[js.Promise[IGenericMeasureProperties]],
+    getProperties: js.Function0[js.Promise[IGenericMeasureProperties]],
+    publish: js.Function0[js.Promise[scala.Unit]],
+    setProperties: js.Function1[IGenericMeasureProperties, js.Promise[scala.Unit]],
+    unPublish: js.Function0[js.Promise[scala.Unit]]
+  ): IGenericMeasure = {
+    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getInfo = getInfo, getLayout = getLayout, getLinkedObjects = getLinkedObjects, getMeasure = getMeasure, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+  
+    __obj.asInstanceOf[IGenericMeasure]
+  }
+}
+

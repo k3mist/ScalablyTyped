@@ -9,3 +9,20 @@ trait IPrintCustomOptionDetails extends IPrintOptionDetails {
   var displayName: java.lang.String
 }
 
+object IPrintCustomOptionDetails {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    errorText: java.lang.String,
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintCustomOptionDetails = {
+    val __obj = js.Dynamic.literal(displayName = displayName, errorText = errorText, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintCustomOptionDetails]
+  }
+}
+

@@ -12,3 +12,12 @@ trait SqlFunction extends _SqlExpression {
   var sequence: SequenceSqlFunction
 }
 
+object SqlFunction {
+  @scala.inline
+  def apply(abs: AbsSqlFunction, avg: AbsSqlFunction, db: Db, sequence: SequenceSqlFunction): SqlFunction = {
+    val __obj = js.Dynamic.literal(abs = abs, avg = avg, db = db, sequence = sequence)
+  
+    __obj.asInstanceOf[SqlFunction]
+  }
+}
+

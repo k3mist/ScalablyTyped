@@ -13,3 +13,16 @@ trait GeometryCollection
   var type_GeometryCollection: geojsonLib.geojsonLibStrings.GeometryCollection
 }
 
+object GeometryCollection {
+  @scala.inline
+  def apply(
+    geometries: js.Array[Geometry],
+    `type`: geojsonLib.geojsonLibStrings.GeometryCollection,
+    bbox: BBox = null
+  ): GeometryCollection = {
+    val __obj = js.Dynamic.literal(geometries = geometries, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeometryCollection]
+  }
+}
+

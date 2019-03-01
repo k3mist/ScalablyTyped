@@ -15,3 +15,20 @@ trait Anon_Bools extends js.Object {
   var strings: js.Any
 }
 
+object Anon_Bools {
+  @scala.inline
+  def apply(
+    bools: js.Any,
+    desc: java.lang.String,
+    header: Anon_BoolCountDataSize,
+    name: java.lang.String,
+    names: js.Array[java.lang.String],
+    numbers: js.Any,
+    strings: js.Any
+  ): Anon_Bools = {
+    val __obj = js.Dynamic.literal(bools = bools, desc = desc, header = header, name = name, names = names, numbers = numbers, strings = strings)
+  
+    __obj.asInstanceOf[Anon_Bools]
+  }
+}
+

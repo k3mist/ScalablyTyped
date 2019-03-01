@@ -59,3 +59,20 @@ trait PermissionStore extends js.Object {
   def removePermissionDefinition(permissionName: java.lang.String): scala.Unit
 }
 
+object PermissionStore {
+  @scala.inline
+  def apply(
+    clearStore: js.Function0[scala.Unit],
+    defineManyPermissions: js.Function2[js.Array[java.lang.String], PermissionValidationFunction, scala.Unit],
+    definePermission: js.Function2[java.lang.String, PermissionValidationFunction, scala.Unit],
+    getPermissionDefinition: js.Function1[java.lang.String, Permission],
+    getStore: js.Function0[org.scalablytyped.runtime.StringDictionary[Permission]],
+    hasPermissionDefinition: js.Function1[java.lang.String, scala.Boolean],
+    removePermissionDefinition: js.Function1[java.lang.String, scala.Unit]
+  ): PermissionStore = {
+    val __obj = js.Dynamic.literal(clearStore = clearStore, defineManyPermissions = defineManyPermissions, definePermission = definePermission, getPermissionDefinition = getPermissionDefinition, getStore = getStore, hasPermissionDefinition = hasPermissionDefinition, removePermissionDefinition = removePermissionDefinition)
+  
+    __obj.asInstanceOf[PermissionStore]
+  }
+}
+

@@ -16,3 +16,24 @@ trait Program
   var tokens: js.Array[Token]
 }
 
+object Program {
+  @scala.inline
+  def apply(
+    body: js.Array[estreeLib.estreeMod.Statement | estreeLib.estreeMod.ModuleDeclaration],
+    comments: js.Array[estreeLib.estreeMod.Comment],
+    loc: SourceLocation,
+    range: Range,
+    sourceType: estreeLib.estreeLibStrings.script | estreeLib.estreeLibStrings.module,
+    tokens: js.Array[Token],
+    `type`: java.lang.String,
+    type_Program: estreeLib.estreeLibStrings.Program,
+    leadingComments: js.Array[estreeLib.estreeMod.Comment] = null,
+    trailingComments: js.Array[estreeLib.estreeMod.Comment] = null
+  ): Program = {
+    val __obj = js.Dynamic.literal(body = body, comments = comments, loc = loc, range = range, sourceType = sourceType.asInstanceOf[js.Any], tokens = tokens, `type` = `type`, type_Program = type_Program)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[Program]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Stats extends js.Object {
   var variance: scala.Double
 }
 
+object Stats {
+  @scala.inline
+  def apply(
+    deviation: scala.Double,
+    mean: scala.Double,
+    moe: scala.Double,
+    rme: scala.Double,
+    sample: js.Array[_],
+    sem: scala.Double,
+    variance: scala.Double
+  ): Stats = {
+    val __obj = js.Dynamic.literal(deviation = deviation, mean = mean, moe = moe, rme = rme, sample = sample, sem = sem, variance = variance)
+  
+    __obj.asInstanceOf[Stats]
+  }
+}
+

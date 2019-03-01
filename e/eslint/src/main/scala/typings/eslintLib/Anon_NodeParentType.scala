@@ -12,3 +12,16 @@ trait Anon_NodeParentType
   var `type`: eslintLib.eslintLibStrings.Variable
 }
 
+object Anon_NodeParentType {
+  @scala.inline
+  def apply(
+    node: estreeLib.estreeMod.VariableDeclarator,
+    parent: estreeLib.estreeMod.VariableDeclaration,
+    `type`: eslintLib.eslintLibStrings.Variable
+  ): Anon_NodeParentType = {
+    val __obj = js.Dynamic.literal(node = node, parent = parent, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_NodeParentType]
+  }
+}
+

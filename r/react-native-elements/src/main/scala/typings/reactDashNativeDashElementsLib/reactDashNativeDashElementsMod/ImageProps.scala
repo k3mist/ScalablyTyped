@@ -33,3 +33,20 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object ImageProps {
+  @scala.inline
+  def apply(
+    ImageComponent: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    PlaceholderContent: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): ImageProps = {
+    val __obj = js.Dynamic.literal()
+    if (ImageComponent != null) __obj.updateDynamic("ImageComponent")(ImageComponent)
+    if (PlaceholderContent != null) __obj.updateDynamic("PlaceholderContent")(PlaceholderContent.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageProps]
+  }
+}
+

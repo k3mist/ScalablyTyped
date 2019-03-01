@@ -27,3 +27,19 @@ trait SuggestionResult
   var text: java.lang.String
 }
 
+object SuggestionResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    isCollection: scala.Boolean,
+    magicKey: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    text: java.lang.String
+  ): SuggestionResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isCollection = isCollection, magicKey = magicKey, propertyIsEnumerable = propertyIsEnumerable, text = text)
+  
+    __obj.asInstanceOf[SuggestionResult]
+  }
+}
+

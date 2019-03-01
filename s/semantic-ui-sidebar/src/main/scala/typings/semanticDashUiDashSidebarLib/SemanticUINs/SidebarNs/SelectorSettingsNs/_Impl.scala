@@ -24,3 +24,17 @@ trait _Impl extends js.Object {
   var sidebar: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    fixed: java.lang.String,
+    omitted: java.lang.String,
+    pusher: java.lang.String,
+    sidebar: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(fixed = fixed, omitted = omitted, pusher = pusher, sidebar = sidebar)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

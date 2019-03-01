@@ -147,3 +147,39 @@ trait XIntrospectionAccess
   def queryAdapter(aInterfaceType: activexDashLibreofficeLib.`type`): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XIntrospectionAccess {
+  @scala.inline
+  def apply(
+    SuppliedMethodConcepts: scala.Double,
+    SuppliedPropertyConcepts: scala.Double,
+    SupportedListeners: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: js.Function0[scala.Unit],
+    getMethod: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod
+    ],
+    getMethods: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod]
+    ],
+    getProperties: js.Function1[scala.Double, activexDashInteropLib.SafeArray[Property]],
+    getProperty: js.Function2[java.lang.String, scala.Double, Property],
+    getSuppliedMethodConcepts: js.Function0[scala.Double],
+    getSuppliedPropertyConcepts: js.Function0[scala.Double],
+    getSupportedListeners: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
+    hasMethod: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    hasProperty: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    queryAdapter: js.Function1[
+      activexDashLibreofficeLib.`type`, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIntrospectionAccess = {
+    val __obj = js.Dynamic.literal(SuppliedMethodConcepts = SuppliedMethodConcepts, SuppliedPropertyConcepts = SuppliedPropertyConcepts, SupportedListeners = SupportedListeners, acquire = acquire, getMethod = getMethod, getMethods = getMethods, getProperties = getProperties, getProperty = getProperty, getSuppliedMethodConcepts = getSuppliedMethodConcepts, getSuppliedPropertyConcepts = getSuppliedPropertyConcepts, getSupportedListeners = getSupportedListeners, hasMethod = hasMethod, hasProperty = hasProperty, queryAdapter = queryAdapter, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIntrospectionAccess]
+  }
+}
+

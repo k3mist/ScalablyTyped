@@ -35,3 +35,26 @@ trait DefaultFormComponentInspectorModel
   def createWithHelpSection(minHelpTextLines: scala.Double, maxHelpTextLines: scala.Double): scala.Unit
 }
 
+object DefaultFormComponentInspectorModel {
+  @scala.inline
+  def apply(
+    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HasHelpSection: scala.Boolean,
+    IsReadOnly: scala.Boolean,
+    MaxHelpTextLines: scala.Double,
+    MinHelpTextLines: scala.Double,
+    createDefault: js.Function0[scala.Unit],
+    createWithHelpSection: js.Function2[scala.Double, scala.Double, scala.Unit],
+    describeCategories: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.inspectionNs.PropertyCategoryDescriptor
+      ]
+    ],
+    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+  ): DefaultFormComponentInspectorModel = {
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = createDefault, createWithHelpSection = createWithHelpSection, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+  
+    __obj.asInstanceOf[DefaultFormComponentInspectorModel]
+  }
+}
+

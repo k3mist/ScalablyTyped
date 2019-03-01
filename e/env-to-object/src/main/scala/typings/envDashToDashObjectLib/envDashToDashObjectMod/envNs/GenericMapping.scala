@@ -12,3 +12,17 @@ trait GenericMapping
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GenericMapping {
+  @scala.inline
+  def apply(
+    keypath: java.lang.String,
+    StringDictionary: /* opt */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    `type`: java.lang.String = null
+  ): GenericMapping = {
+    val __obj = js.Dynamic.literal(keypath = keypath)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GenericMapping]
+  }
+}
+

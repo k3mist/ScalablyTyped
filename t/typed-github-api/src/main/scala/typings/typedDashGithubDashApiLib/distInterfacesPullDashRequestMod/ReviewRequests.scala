@@ -10,3 +10,15 @@ trait ReviewRequests extends js.Object {
   var users: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary]
 }
 
+object ReviewRequests {
+  @scala.inline
+  def apply(
+    teams: js.Array[Team],
+    users: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary]
+  ): ReviewRequests = {
+    val __obj = js.Dynamic.literal(teams = teams, users = users)
+  
+    __obj.asInstanceOf[ReviewRequests]
+  }
+}
+

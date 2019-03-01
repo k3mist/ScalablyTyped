@@ -26,3 +26,16 @@ trait IQueueCallback extends js.Object {
   def requestWillReplay(request: StorableRequest): scala.Unit
 }
 
+object IQueueCallback {
+  @scala.inline
+  def apply(
+    queueDidReplay: js.Function1[js.Array[StorableRequest], scala.Unit],
+    requestWillEnqueue: js.Function1[StorableRequest, scala.Unit],
+    requestWillReplay: js.Function1[StorableRequest, scala.Unit]
+  ): IQueueCallback = {
+    val __obj = js.Dynamic.literal(queueDidReplay = queueDidReplay, requestWillEnqueue = requestWillEnqueue, requestWillReplay = requestWillReplay)
+  
+    __obj.asInstanceOf[IQueueCallback]
+  }
+}
+

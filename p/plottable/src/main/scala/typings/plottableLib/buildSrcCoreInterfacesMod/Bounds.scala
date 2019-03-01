@@ -10,3 +10,12 @@ trait Bounds extends js.Object {
   var topLeft: Point
 }
 
+object Bounds {
+  @scala.inline
+  def apply(bottomRight: Point, topLeft: Point): Bounds = {
+    val __obj = js.Dynamic.literal(bottomRight = bottomRight, topLeft = topLeft)
+  
+    __obj.asInstanceOf[Bounds]
+  }
+}
+

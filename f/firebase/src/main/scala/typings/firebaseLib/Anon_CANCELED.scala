@@ -13,3 +13,18 @@ trait Anon_CANCELED extends js.Object {
   var SUCCESS: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState
 }
 
+object Anon_CANCELED {
+  @scala.inline
+  def apply(
+    CANCELED: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState,
+    ERROR: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState,
+    PAUSED: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState,
+    RUNNING: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState,
+    SUCCESS: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState
+  ): Anon_CANCELED = {
+    val __obj = js.Dynamic.literal(CANCELED = CANCELED, ERROR = ERROR, PAUSED = PAUSED, RUNNING = RUNNING, SUCCESS = SUCCESS)
+  
+    __obj.asInstanceOf[Anon_CANCELED]
+  }
+}
+

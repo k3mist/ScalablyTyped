@@ -117,3 +117,30 @@ trait SearchSource extends JSONSupport {
   var zoomScale: scala.Double
 }
 
+object SearchSource {
+  @scala.inline
+  def apply(
+    autoNavigate: scala.Boolean,
+    filter: SearchSourceFilter,
+    maxResults: scala.Double,
+    maxSuggestions: scala.Double,
+    minSuggestCharacters: scala.Double,
+    outFields: js.Array[java.lang.String],
+    placeholder: java.lang.String,
+    popupEnabled: scala.Boolean,
+    popupTemplate: PopupTemplate,
+    prefix: java.lang.String,
+    resultGraphicEnabled: scala.Boolean,
+    resultSymbol: Symbol,
+    suffix: java.lang.String,
+    suggestionsEnabled: scala.Boolean,
+    toJSON: js.Function0[js.Any],
+    withinViewEnabled: scala.Boolean,
+    zoomScale: scala.Double
+  ): SearchSource = {
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+  
+    __obj.asInstanceOf[SearchSource]
+  }
+}
+

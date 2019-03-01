@@ -10,3 +10,12 @@ trait Anon_Node extends js.Object {
   var state: ternLib.libInferMod.Scope
 }
 
+object Anon_Node {
+  @scala.inline
+  def apply(node: estreeLib.estreeMod.Node, state: ternLib.libInferMod.Scope): Anon_Node = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], state = state)
+  
+    __obj.asInstanceOf[Anon_Node]
+  }
+}
+

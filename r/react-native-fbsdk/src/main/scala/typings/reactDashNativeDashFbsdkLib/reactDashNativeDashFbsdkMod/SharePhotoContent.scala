@@ -24,3 +24,18 @@ trait SharePhotoContent extends ShareContent {
   var photos: js.Array[SharePhoto]
 }
 
+object SharePhotoContent {
+  @scala.inline
+  def apply(
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.photo,
+    photos: js.Array[SharePhoto],
+    commonParameters: ShareContentCommonParameters = null,
+    contentUrl: java.lang.String = null
+  ): SharePhotoContent = {
+    val __obj = js.Dynamic.literal(contentType = contentType, photos = photos)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    __obj.asInstanceOf[SharePhotoContent]
+  }
+}
+

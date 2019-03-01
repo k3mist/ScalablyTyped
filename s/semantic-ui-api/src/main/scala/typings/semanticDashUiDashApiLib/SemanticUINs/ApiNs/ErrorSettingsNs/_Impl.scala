@@ -60,3 +60,26 @@ trait _Impl extends js.Object {
   var timeout: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    JSONParse: java.lang.String,
+    beforeSend: java.lang.String,
+    error: java.lang.String,
+    exitConditions: java.lang.String,
+    legacyParameters: java.lang.String,
+    missingAction: java.lang.String,
+    missingSerialize: java.lang.String,
+    missingURL: java.lang.String,
+    noReturnedValue: java.lang.String,
+    parseError: java.lang.String,
+    requiredParameter: java.lang.String,
+    statusMessage: java.lang.String,
+    timeout: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(JSONParse = JSONParse, beforeSend = beforeSend, error = error, exitConditions = exitConditions, legacyParameters = legacyParameters, missingAction = missingAction, missingSerialize = missingSerialize, missingURL = missingURL, noReturnedValue = noReturnedValue, parseError = parseError, requiredParameter = requiredParameter, statusMessage = statusMessage, timeout = timeout)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Sizes extends js.Object {
   var width: scala.Double
 }
 
+object Sizes {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    realZoom: scala.Double,
+    viewBox: svgDashPanDashZoomLib.Anon_Height,
+    width: scala.Double
+  ): Sizes = {
+    val __obj = js.Dynamic.literal(height = height, realZoom = realZoom, viewBox = viewBox, width = width)
+  
+    __obj.asInstanceOf[Sizes]
+  }
+}
+

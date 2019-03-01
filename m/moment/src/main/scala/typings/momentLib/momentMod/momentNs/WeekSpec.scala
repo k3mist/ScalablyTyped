@@ -10,3 +10,12 @@ trait WeekSpec extends js.Object {
   var doy: scala.Double
 }
 
+object WeekSpec {
+  @scala.inline
+  def apply(dow: scala.Double, doy: scala.Double): WeekSpec = {
+    val __obj = js.Dynamic.literal(dow = dow, doy = doy)
+  
+    __obj.asInstanceOf[WeekSpec]
+  }
+}
+

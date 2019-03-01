@@ -16,3 +16,21 @@ trait GregorianDate extends js.Object {
   var year: scala.Double
 }
 
+object GregorianDate {
+  @scala.inline
+  def apply(
+    day: scala.Double,
+    hour: scala.Double,
+    isLeapSecond: scala.Boolean,
+    millisecond: scala.Double,
+    minute: scala.Double,
+    month: scala.Double,
+    second: scala.Double,
+    year: scala.Double
+  ): GregorianDate = {
+    val __obj = js.Dynamic.literal(day = day, hour = hour, isLeapSecond = isLeapSecond, millisecond = millisecond, minute = minute, month = month, second = second, year = year)
+  
+    __obj.asInstanceOf[GregorianDate]
+  }
+}
+

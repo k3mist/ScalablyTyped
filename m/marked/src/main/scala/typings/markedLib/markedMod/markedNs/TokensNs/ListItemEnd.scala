@@ -10,3 +10,12 @@ trait ListItemEnd
   var `type`: markedLib.markedLibStrings.list_item_end
 }
 
+object ListItemEnd {
+  @scala.inline
+  def apply(`type`: markedLib.markedLibStrings.list_item_end): ListItemEnd = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ListItemEnd]
+  }
+}
+

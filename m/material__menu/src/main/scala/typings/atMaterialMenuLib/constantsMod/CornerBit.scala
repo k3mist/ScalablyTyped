@@ -13,3 +13,17 @@ trait CornerBit
   var RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`4`
 }
 
+object CornerBit {
+  @scala.inline
+  def apply(
+    BOTTOM: atMaterialMenuLib.atMaterialMenuLibNumbers.`1`,
+    CENTER: atMaterialMenuLib.atMaterialMenuLibNumbers.`2`,
+    FLIP_RTL: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`,
+    RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`4`
+  ): CornerBit = {
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, CENTER = CENTER, FLIP_RTL = FLIP_RTL, RIGHT = RIGHT)
+  
+    __obj.asInstanceOf[CornerBit]
+  }
+}
+

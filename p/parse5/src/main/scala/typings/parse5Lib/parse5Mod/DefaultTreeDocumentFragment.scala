@@ -12,3 +12,12 @@ trait DefaultTreeDocumentFragment extends DefaultTreeParentNode {
   var nodeName: parse5Lib.parse5LibStrings.`#document-fragment`
 }
 
+object DefaultTreeDocumentFragment {
+  @scala.inline
+  def apply(childNodes: js.Array[DefaultTreeNode], nodeName: parse5Lib.parse5LibStrings.`#document-fragment`): DefaultTreeDocumentFragment = {
+    val __obj = js.Dynamic.literal(childNodes = childNodes, nodeName = nodeName)
+  
+    __obj.asInstanceOf[DefaultTreeDocumentFragment]
+  }
+}
+

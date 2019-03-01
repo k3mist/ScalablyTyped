@@ -10,3 +10,12 @@ trait TList extends js.Object {
   var size: scala.Double
 }
 
+object TList {
+  @scala.inline
+  def apply(etype: thriftLib.thriftMod.ThriftNs.Type, size: scala.Double): TList = {
+    val __obj = js.Dynamic.literal(etype = etype, size = size)
+  
+    __obj.asInstanceOf[TList]
+  }
+}
+

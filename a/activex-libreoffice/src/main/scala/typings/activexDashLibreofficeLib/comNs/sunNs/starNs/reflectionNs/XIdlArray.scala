@@ -43,3 +43,20 @@ trait XIdlArray
   def set(aArray: js.Array[_], nIndex: scala.Double, aNewValue: js.Any): scala.Unit
 }
 
+object XIdlArray {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    get: js.Function2[js.Any, scala.Double, js.Any],
+    getLen: js.Function1[js.Any, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    realloc: js.Function2[js.Array[_], scala.Double, scala.Unit],
+    release: js.Function0[scala.Unit],
+    set: js.Function3[js.Array[_], scala.Double, js.Any, scala.Unit]
+  ): XIdlArray = {
+    val __obj = js.Dynamic.literal(acquire = acquire, get = get, getLen = getLen, queryInterface = queryInterface, realloc = realloc, release = release, set = set)
+  
+    __obj.asInstanceOf[XIdlArray]
+  }
+}
+

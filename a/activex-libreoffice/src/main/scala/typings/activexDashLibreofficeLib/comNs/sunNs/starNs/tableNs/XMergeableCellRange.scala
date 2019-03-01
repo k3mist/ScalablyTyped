@@ -25,3 +25,19 @@ trait XMergeableCellRange
   def split(Columns: scala.Double, Rows: scala.Double): scala.Unit
 }
 
+object XMergeableCellRange {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    isMergeable: js.Function0[scala.Boolean],
+    merge: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    split: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XMergeableCellRange = {
+    val __obj = js.Dynamic.literal(acquire = acquire, isMergeable = isMergeable, merge = merge, queryInterface = queryInterface, release = release, split = split)
+  
+    __obj.asInstanceOf[XMergeableCellRange]
+  }
+}
+

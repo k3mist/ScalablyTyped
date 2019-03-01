@@ -147,3 +147,40 @@ trait NumberingLevel extends js.Object {
   var VertOrient: scala.Double
 }
 
+object NumberingLevel {
+  @scala.inline
+  def apply(
+    Adjust: scala.Double,
+    BulletChar: java.lang.String,
+    BulletColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BulletFont: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor,
+    BulletFontName: java.lang.String,
+    BulletId: scala.Double,
+    BulletRelSize: scala.Double,
+    CharStyleName: java.lang.String,
+    FirstLineIndent: scala.Double,
+    FirstLineOffset: scala.Double,
+    GraphicBitmap: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    GraphicSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    GraphicURL: java.lang.String,
+    HeadingStyleName: java.lang.String,
+    IndentAt: scala.Double,
+    LabelFollowedBy: scala.Double,
+    LeftMargin: scala.Double,
+    ListtabStopPosition: scala.Double,
+    NumberingType: scala.Double,
+    ParagraphStyleName: java.lang.String,
+    ParentNumbering: scala.Double,
+    PositionAndSpaceMode: scala.Double,
+    Prefix: java.lang.String,
+    StartWith: scala.Double,
+    Suffix: java.lang.String,
+    SymbolTextDistance: scala.Double,
+    VertOrient: scala.Double
+  ): NumberingLevel = {
+    val __obj = js.Dynamic.literal(Adjust = Adjust, BulletChar = BulletChar, BulletColor = BulletColor, BulletFont = BulletFont, BulletFontName = BulletFontName, BulletId = BulletId, BulletRelSize = BulletRelSize, CharStyleName = CharStyleName, FirstLineIndent = FirstLineIndent, FirstLineOffset = FirstLineOffset, GraphicBitmap = GraphicBitmap, GraphicSize = GraphicSize, GraphicURL = GraphicURL, HeadingStyleName = HeadingStyleName, IndentAt = IndentAt, LabelFollowedBy = LabelFollowedBy, LeftMargin = LeftMargin, ListtabStopPosition = ListtabStopPosition, NumberingType = NumberingType, ParagraphStyleName = ParagraphStyleName, ParentNumbering = ParentNumbering, PositionAndSpaceMode = PositionAndSpaceMode, Prefix = Prefix, StartWith = StartWith, Suffix = Suffix, SymbolTextDistance = SymbolTextDistance, VertOrient = VertOrient)
+  
+    __obj.asInstanceOf[NumberingLevel]
+  }
+}
+

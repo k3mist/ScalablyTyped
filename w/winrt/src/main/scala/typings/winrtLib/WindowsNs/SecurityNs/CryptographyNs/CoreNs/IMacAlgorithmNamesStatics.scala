@@ -14,3 +14,19 @@ trait IMacAlgorithmNamesStatics extends js.Object {
   var hmacSha512: java.lang.String
 }
 
+object IMacAlgorithmNamesStatics {
+  @scala.inline
+  def apply(
+    aesCmac: java.lang.String,
+    hmacMd5: java.lang.String,
+    hmacSha1: java.lang.String,
+    hmacSha256: java.lang.String,
+    hmacSha384: java.lang.String,
+    hmacSha512: java.lang.String
+  ): IMacAlgorithmNamesStatics = {
+    val __obj = js.Dynamic.literal(aesCmac = aesCmac, hmacMd5 = hmacMd5, hmacSha1 = hmacSha1, hmacSha256 = hmacSha256, hmacSha384 = hmacSha384, hmacSha512 = hmacSha512)
+  
+    __obj.asInstanceOf[IMacAlgorithmNamesStatics]
+  }
+}
+

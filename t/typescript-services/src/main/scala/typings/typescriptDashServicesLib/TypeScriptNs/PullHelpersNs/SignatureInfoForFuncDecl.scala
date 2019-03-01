@@ -10,3 +10,15 @@ trait SignatureInfoForFuncDecl extends js.Object {
   var signature: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol
 }
 
+object SignatureInfoForFuncDecl {
+  @scala.inline
+  def apply(
+    allSignatures: js.Array[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol],
+    signature: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol
+  ): SignatureInfoForFuncDecl = {
+    val __obj = js.Dynamic.literal(allSignatures = allSignatures, signature = signature)
+  
+    __obj.asInstanceOf[SignatureInfoForFuncDecl]
+  }
+}
+

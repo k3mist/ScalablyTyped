@@ -20,3 +20,17 @@ trait XRecycler
   def trashContent(Properties: XCommandProcessor, Identifier: XContentIdentifier): scala.Unit
 }
 
+object XRecycler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    trashContent: js.Function2[XCommandProcessor, XContentIdentifier, scala.Unit]
+  ): XRecycler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, trashContent = trashContent)
+  
+    __obj.asInstanceOf[XRecycler]
+  }
+}
+

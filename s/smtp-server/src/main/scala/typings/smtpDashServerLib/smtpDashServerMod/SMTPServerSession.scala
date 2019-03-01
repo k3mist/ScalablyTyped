@@ -50,3 +50,25 @@ trait SMTPServerSession extends js.Object {
   var transmissionType: java.lang.String
 }
 
+object SMTPServerSession {
+  @scala.inline
+  def apply(
+    clientHostname: java.lang.String,
+    envelope: SMTPServerEnvelope,
+    hostNameAppearsAs: java.lang.String,
+    id: java.lang.String,
+    localAddress: java.lang.String,
+    localPort: scala.Double,
+    openingCommand: java.lang.String,
+    remoteAddress: java.lang.String,
+    remotePort: scala.Double,
+    secure: scala.Boolean,
+    tlsOptions: nodeLib.tlsMod.TlsOptions,
+    transmissionType: java.lang.String
+  ): SMTPServerSession = {
+    val __obj = js.Dynamic.literal(clientHostname = clientHostname, envelope = envelope, hostNameAppearsAs = hostNameAppearsAs, id = id, localAddress = localAddress, localPort = localPort, openingCommand = openingCommand, remoteAddress = remoteAddress, remotePort = remotePort, secure = secure, tlsOptions = tlsOptions, transmissionType = transmissionType)
+  
+    __obj.asInstanceOf[SMTPServerSession]
+  }
+}
+

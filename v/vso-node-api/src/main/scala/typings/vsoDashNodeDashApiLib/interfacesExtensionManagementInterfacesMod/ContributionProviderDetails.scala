@@ -24,3 +24,17 @@ trait ContributionProviderDetails extends js.Object {
   var version: java.lang.String
 }
 
+object ContributionProviderDetails {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    name: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    version: java.lang.String
+  ): ContributionProviderDetails = {
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name, properties = properties, version = version)
+  
+    __obj.asInstanceOf[ContributionProviderDetails]
+  }
+}
+

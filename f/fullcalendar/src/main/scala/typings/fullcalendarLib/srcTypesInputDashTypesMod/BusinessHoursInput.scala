@@ -11,3 +11,14 @@ trait BusinessHoursInput extends ConstraintInput {
   var start: js.UndefOr[MomentInput] = js.undefined
 }
 
+object BusinessHoursInput {
+  @scala.inline
+  def apply(dow: js.Array[scala.Double] = null, end: MomentInput = null, start: MomentInput = null): BusinessHoursInput = {
+    val __obj = js.Dynamic.literal()
+    if (dow != null) __obj.updateDynamic("dow")(dow)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BusinessHoursInput]
+  }
+}
+

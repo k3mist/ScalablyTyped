@@ -52,3 +52,24 @@ trait FeathersAuthenticationOAuth1Options extends js.Object {
   var session: scala.Boolean
 }
 
+object FeathersAuthenticationOAuth1Options {
+  @scala.inline
+  def apply(
+    Verifier: OAuth1Verifier,
+    callbackPath: java.lang.String,
+    callbackURL: java.lang.String,
+    entity: java.lang.String,
+    formatter: js.Any,
+    handler: js.Any,
+    idField: java.lang.String,
+    passReqToCallback: scala.Boolean,
+    path: java.lang.String,
+    service: java.lang.String,
+    session: scala.Boolean
+  ): FeathersAuthenticationOAuth1Options = {
+    val __obj = js.Dynamic.literal(Verifier = Verifier, callbackPath = callbackPath, callbackURL = callbackURL, entity = entity, formatter = formatter, handler = handler, idField = idField, passReqToCallback = passReqToCallback, path = path, service = service, session = session)
+  
+    __obj.asInstanceOf[FeathersAuthenticationOAuth1Options]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_Horizontal extends js.Object {
   var vertical: plottableLib.plottableLibStrings.vertical
 }
 
+object Anon_Horizontal {
+  @scala.inline
+  def apply(
+    horizontal: plottableLib.plottableLibStrings.horizontal,
+    vertical: plottableLib.plottableLibStrings.vertical
+  ): Anon_Horizontal = {
+    val __obj = js.Dynamic.literal(horizontal = horizontal, vertical = vertical)
+  
+    __obj.asInstanceOf[Anon_Horizontal]
+  }
+}
+

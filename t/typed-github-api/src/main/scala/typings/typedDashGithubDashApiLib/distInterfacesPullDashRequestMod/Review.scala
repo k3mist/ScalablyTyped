@@ -14,3 +14,19 @@ trait Review extends js.Object {
   var state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED
 }
 
+object Review {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    commitSha: java.lang.String,
+    createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary,
+    htmlUri: java.lang.String,
+    id: scala.Double,
+    state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED
+  ): Review = {
+    val __obj = js.Dynamic.literal(body = body, commitSha = commitSha, createdBy = createdBy, htmlUri = htmlUri, id = id, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Review]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Status extends js.Object {
   var ONLINE: scala.Double
 }
 
+object Status {
+  @scala.inline
+  def apply(OFFLINE: scala.Double, ONLINE: scala.Double): Status = {
+    val __obj = js.Dynamic.literal(OFFLINE = OFFLINE, ONLINE = ONLINE)
+  
+    __obj.asInstanceOf[Status]
+  }
+}
+

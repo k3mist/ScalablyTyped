@@ -10,3 +10,15 @@ trait TestOptions extends js.Object {
   def testFn(data: java.lang.String, status: scala.Double, headers: Headers): scala.Unit
 }
 
+object TestOptions {
+  @scala.inline
+  def apply(
+    testFn: js.Function3[java.lang.String, scala.Double, Headers, scala.Unit],
+    testUrl: java.lang.String
+  ): TestOptions = {
+    val __obj = js.Dynamic.literal(testFn = testFn, testUrl = testUrl)
+  
+    __obj.asInstanceOf[TestOptions]
+  }
+}
+

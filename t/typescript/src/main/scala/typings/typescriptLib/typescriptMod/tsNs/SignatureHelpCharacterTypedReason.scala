@@ -17,3 +17,15 @@ trait SignatureHelpCharacterTypedReason extends SignatureHelpTriggerReason {
   var triggerCharacter: SignatureHelpTriggerCharacter
 }
 
+object SignatureHelpCharacterTypedReason {
+  @scala.inline
+  def apply(
+    kind: typescriptLib.typescriptLibStrings.characterTyped,
+    triggerCharacter: SignatureHelpTriggerCharacter
+  ): SignatureHelpCharacterTypedReason = {
+    val __obj = js.Dynamic.literal(kind = kind, triggerCharacter = triggerCharacter)
+  
+    __obj.asInstanceOf[SignatureHelpCharacterTypedReason]
+  }
+}
+

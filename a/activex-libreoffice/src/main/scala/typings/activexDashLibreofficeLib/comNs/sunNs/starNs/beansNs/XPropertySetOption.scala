@@ -11,3 +11,17 @@ trait XPropertySetOption
   def enableChangeListenerNotification(bEnable: scala.Boolean): scala.Unit
 }
 
+object XPropertySetOption {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    enableChangeListenerNotification: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertySetOption = {
+    val __obj = js.Dynamic.literal(acquire = acquire, enableChangeListenerNotification = enableChangeListenerNotification, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPropertySetOption]
+  }
+}
+

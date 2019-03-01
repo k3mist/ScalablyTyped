@@ -30,3 +30,27 @@ trait XFileDialog
   def setPath(Path: java.lang.String): scala.Unit
 }
 
+object XFileDialog {
+  @scala.inline
+  def apply(
+    CurrentFilter: java.lang.String,
+    Path: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getCurrentFilter: js.Function0[java.lang.String],
+    getPath: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCurrentFilter: js.Function1[java.lang.String, scala.Unit],
+    setFilters: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ],
+    setPath: js.Function1[java.lang.String, scala.Unit]
+  ): XFileDialog = {
+    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, Path = Path, acquire = acquire, getCurrentFilter = getCurrentFilter, getPath = getPath, queryInterface = queryInterface, release = release, setCurrentFilter = setCurrentFilter, setFilters = setFilters, setPath = setPath)
+  
+    __obj.asInstanceOf[XFileDialog]
+  }
+}
+

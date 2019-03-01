@@ -11,3 +11,15 @@ trait strings
   var PATH_SELECTOR: atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineLibStrings.`DOTmdc-notched-outline__path`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    IDLE_OUTLINE_SELECTOR: atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineLibStrings.`DOTmdc-notched-outline__idle`,
+    PATH_SELECTOR: atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineLibStrings.`DOTmdc-notched-outline__path`
+  ): strings = {
+    val __obj = js.Dynamic.literal(IDLE_OUTLINE_SELECTOR = IDLE_OUTLINE_SELECTOR, PATH_SELECTOR = PATH_SELECTOR)
+  
+    __obj.asInstanceOf[strings]
+  }
+}
+

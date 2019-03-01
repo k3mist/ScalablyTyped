@@ -22,3 +22,18 @@ trait XGalleryItem
   def getType(): scala.Double
 }
 
+object XGalleryItem {
+  @scala.inline
+  def apply(
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getType: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGalleryItem = {
+    val __obj = js.Dynamic.literal(Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGalleryItem]
+  }
+}
+

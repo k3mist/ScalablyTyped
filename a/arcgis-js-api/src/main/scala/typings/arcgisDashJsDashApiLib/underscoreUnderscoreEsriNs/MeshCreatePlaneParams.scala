@@ -33,3 +33,23 @@ trait MeshCreatePlaneParams
   var size: js.UndefOr[scala.Double | MeshCreatePlaneParamsSize] = js.undefined
 }
 
+object MeshCreatePlaneParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    facing: java.lang.String = null,
+    geographic: js.UndefOr[scala.Boolean] = js.undefined,
+    material: MeshCreatePlaneParamsMaterial = null,
+    size: scala.Double | MeshCreatePlaneParamsSize = null
+  ): MeshCreatePlaneParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (facing != null) __obj.updateDynamic("facing")(facing)
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MeshCreatePlaneParams]
+  }
+}
+

@@ -13,3 +13,18 @@ trait R3PipeMetadata extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
 }
 
+object R3PipeMetadata {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    pipeName: java.lang.String,
+    pure: scala.Boolean,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null
+  ): R3PipeMetadata = {
+    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure, `type` = `type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3PipeMetadata]
+  }
+}
+

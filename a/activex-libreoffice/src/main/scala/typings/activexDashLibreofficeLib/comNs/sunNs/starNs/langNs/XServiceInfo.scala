@@ -36,3 +36,21 @@ trait XServiceInfo
   def supportsService(ServiceName: java.lang.String): scala.Boolean
 }
 
+object XServiceInfo {
+  @scala.inline
+  def apply(
+    ImplementationName: java.lang.String,
+    SupportedServiceNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getImplementationName: js.Function0[java.lang.String],
+    getSupportedServiceNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    supportsService: js.Function1[java.lang.String, scala.Boolean]
+  ): XServiceInfo = {
+    val __obj = js.Dynamic.literal(ImplementationName = ImplementationName, SupportedServiceNames = SupportedServiceNames, acquire = acquire, getImplementationName = getImplementationName, getSupportedServiceNames = getSupportedServiceNames, queryInterface = queryInterface, release = release, supportsService = supportsService)
+  
+    __obj.asInstanceOf[XServiceInfo]
+  }
+}
+

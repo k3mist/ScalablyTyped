@@ -28,3 +28,18 @@ trait GetRepositoryResult extends js.Object {
   val repositoryId: java.lang.String
 }
 
+object GetRepositoryResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    cloneUrlHttp: java.lang.String,
+    cloneUrlSsh: java.lang.String,
+    id: java.lang.String,
+    repositoryId: java.lang.String
+  ): GetRepositoryResult = {
+    val __obj = js.Dynamic.literal(arn = arn, cloneUrlHttp = cloneUrlHttp, cloneUrlSsh = cloneUrlSsh, id = id, repositoryId = repositoryId)
+  
+    __obj.asInstanceOf[GetRepositoryResult]
+  }
+}
+

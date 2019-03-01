@@ -10,3 +10,12 @@ trait IPostgresResult extends js.Object {
   var rowCount: scala.Double
 }
 
+object IPostgresResult {
+  @scala.inline
+  def apply(command: java.lang.String, rowCount: scala.Double): IPostgresResult = {
+    val __obj = js.Dynamic.literal(command = command, rowCount = rowCount)
+  
+    __obj.asInstanceOf[IPostgresResult]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Beacon extends js.Object {
   var uuid: java.lang.String
 }
 
+object Beacon {
+  @scala.inline
+  def apply(
+    accuracy: scala.Double,
+    major: java.lang.String,
+    minor: java.lang.String,
+    proximity: java.lang.String,
+    rssi: scala.Double,
+    tx: scala.Double,
+    uuid: java.lang.String
+  ): Beacon = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy, major = major, minor = minor, proximity = proximity, rssi = rssi, tx = tx, uuid = uuid)
+  
+    __obj.asInstanceOf[Beacon]
+  }
+}
+

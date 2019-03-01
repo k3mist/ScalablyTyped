@@ -69,3 +69,38 @@ trait MethodState extends js.Object {
   val restApi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]] = js.undefined
 }
 
+object MethodState {
+  @scala.inline
+  def apply(
+    apiKeyRequired: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    authorization: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    authorizationScopes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    authorizerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    httpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestModels: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    requestParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]]
+    ] = null,
+    requestParametersInJson: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    requestValidatorId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null
+  ): MethodState = {
+    val __obj = js.Dynamic.literal()
+    if (apiKeyRequired != null) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
+    if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (requestModels != null) __obj.updateDynamic("requestModels")(requestModels.asInstanceOf[js.Any])
+    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
+    if (requestParametersInJson != null) __obj.updateDynamic("requestParametersInJson")(requestParametersInJson.asInstanceOf[js.Any])
+    if (requestValidatorId != null) __obj.updateDynamic("requestValidatorId")(requestValidatorId.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MethodState]
+  }
+}
+

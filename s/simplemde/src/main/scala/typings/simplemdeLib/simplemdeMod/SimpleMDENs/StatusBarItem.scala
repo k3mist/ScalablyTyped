@@ -11,3 +11,16 @@ trait StatusBarItem extends js.Object {
   def onUpdate(element: stdLib.HTMLElement): scala.Unit
 }
 
+object StatusBarItem {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    defaultValue: js.Function1[stdLib.HTMLElement, scala.Unit],
+    onUpdate: js.Function1[stdLib.HTMLElement, scala.Unit]
+  ): StatusBarItem = {
+    val __obj = js.Dynamic.literal(className = className, defaultValue = defaultValue, onUpdate = onUpdate)
+  
+    __obj.asInstanceOf[StatusBarItem]
+  }
+}
+

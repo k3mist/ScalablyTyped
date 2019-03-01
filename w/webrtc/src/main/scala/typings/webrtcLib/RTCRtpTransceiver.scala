@@ -17,3 +17,21 @@ trait RTCRtpTransceiver extends js.Object {
   def stop(): scala.Unit
 }
 
+object RTCRtpTransceiver {
+  @scala.inline
+  def apply(
+    direction: stdLib.RTCRtpTransceiverDirection,
+    receiver: RTCRtpReceiver,
+    sender: RTCRtpSender,
+    setCodecPreferences: js.Function1[js.Array[RTCRtpCodecCapability], scala.Unit],
+    setDirection: js.Function1[stdLib.RTCRtpTransceiverDirection, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    stopped: scala.Boolean,
+    mid: java.lang.String = null
+  ): RTCRtpTransceiver = {
+    val __obj = js.Dynamic.literal(direction = direction, receiver = receiver, sender = sender, setCodecPreferences = setCodecPreferences, setDirection = setDirection, stop = stop, stopped = stopped)
+    if (mid != null) __obj.updateDynamic("mid")(mid)
+    __obj.asInstanceOf[RTCRtpTransceiver]
+  }
+}
+

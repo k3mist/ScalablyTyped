@@ -24,3 +24,17 @@ trait WitContribution extends js.Object {
   var showOnDeletedWorkItem: scala.Boolean
 }
 
+object WitContribution {
+  @scala.inline
+  def apply(
+    contributionId: java.lang.String,
+    height: scala.Double,
+    inputs: org.scalablytyped.runtime.StringDictionary[js.Any],
+    showOnDeletedWorkItem: scala.Boolean
+  ): WitContribution = {
+    val __obj = js.Dynamic.literal(contributionId = contributionId, height = height, inputs = inputs, showOnDeletedWorkItem = showOnDeletedWorkItem)
+  
+    __obj.asInstanceOf[WitContribution]
+  }
+}
+

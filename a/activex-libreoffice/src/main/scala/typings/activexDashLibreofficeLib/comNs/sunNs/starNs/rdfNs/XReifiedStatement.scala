@@ -14,3 +14,12 @@ trait XReifiedStatement extends XNode {
   var Statement: Statement
 }
 
+object XReifiedStatement {
+  @scala.inline
+  def apply(Statement: Statement, StringValue: java.lang.String): XReifiedStatement = {
+    val __obj = js.Dynamic.literal(Statement = Statement, StringValue = StringValue)
+  
+    __obj.asInstanceOf[XReifiedStatement]
+  }
+}
+

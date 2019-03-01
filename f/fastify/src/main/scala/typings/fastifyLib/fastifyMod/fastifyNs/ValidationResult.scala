@@ -13,3 +13,18 @@ trait ValidationResult extends js.Object {
   var schemaPath: java.lang.String
 }
 
+object ValidationResult {
+  @scala.inline
+  def apply(
+    dataPath: java.lang.String,
+    keyword: java.lang.String,
+    message: java.lang.String,
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    schemaPath: java.lang.String
+  ): ValidationResult = {
+    val __obj = js.Dynamic.literal(dataPath = dataPath, keyword = keyword, message = message, params = params, schemaPath = schemaPath)
+  
+    __obj.asInstanceOf[ValidationResult]
+  }
+}
+

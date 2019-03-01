@@ -27,3 +27,21 @@ trait PrintTemplateExportOptions
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PrintTemplateExportOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    dpi: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): PrintTemplateExportOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTemplateExportOptions]
+  }
+}
+

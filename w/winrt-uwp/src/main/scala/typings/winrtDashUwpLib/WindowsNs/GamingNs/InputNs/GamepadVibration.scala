@@ -17,3 +17,17 @@ trait GamepadVibration extends js.Object {
   var rightTrigger: scala.Double
 }
 
+object GamepadVibration {
+  @scala.inline
+  def apply(
+    leftMotor: scala.Double,
+    leftTrigger: scala.Double,
+    rightMotor: scala.Double,
+    rightTrigger: scala.Double
+  ): GamepadVibration = {
+    val __obj = js.Dynamic.literal(leftMotor = leftMotor, leftTrigger = leftTrigger, rightMotor = rightMotor, rightTrigger = rightTrigger)
+  
+    __obj.asInstanceOf[GamepadVibration]
+  }
+}
+

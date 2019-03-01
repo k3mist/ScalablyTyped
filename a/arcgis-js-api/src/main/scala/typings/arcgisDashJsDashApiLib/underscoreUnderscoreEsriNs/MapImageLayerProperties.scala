@@ -79,3 +79,52 @@ import scala.scalajs.js.annotation._
   var sublayers: js.UndefOr[CollectionProperties[SublayerProperties]] = js.undefined
 }
 
+object MapImageLayerProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    dpi: scala.Int | scala.Double = null,
+    fullExtent: ExtentProperties = null,
+    gdbVersion: java.lang.String = null,
+    id: java.lang.String = null,
+    imageFormat: java.lang.String = null,
+    imageMaxHeight: scala.Int | scala.Double = null,
+    imageMaxWidth: scala.Int | scala.Double = null,
+    imageTransparency: js.UndefOr[scala.Boolean] = js.undefined,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    listMode: java.lang.String = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    portalItem: PortalItemProperties = null,
+    refreshInterval: scala.Int | scala.Double = null,
+    sublayers: CollectionProperties[SublayerProperties] = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapImageLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat)
+    if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
+    if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageTransparency)) __obj.updateDynamic("imageTransparency")(imageTransparency)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[MapImageLayerProperties]
+  }
+}
+

@@ -13,3 +13,15 @@ trait ICacheableResponseOptions extends js.Object {
   var statuses: js.Array[scala.Double]
 }
 
+object ICacheableResponseOptions {
+  @scala.inline
+  def apply(
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    statuses: js.Array[scala.Double]
+  ): ICacheableResponseOptions = {
+    val __obj = js.Dynamic.literal(headers = headers, statuses = statuses)
+  
+    __obj.asInstanceOf[ICacheableResponseOptions]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ResourceIdentifier extends js.Object {
   var id: java.lang.String
 }
 
+object ResourceIdentifier {
+  @scala.inline
+  def apply(id: java.lang.String, description: java.lang.String = null): ResourceIdentifier = {
+    val __obj = js.Dynamic.literal(id = id)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[ResourceIdentifier]
+  }
+}
+

@@ -214,3 +214,43 @@ trait XUndoManager
   def undo(): scala.Unit
 }
 
+object XUndoManager {
+  @scala.inline
+  def apply(
+    AllRedoActionTitles: activexDashInteropLib.SafeArray[java.lang.String],
+    AllUndoActionTitles: activexDashInteropLib.SafeArray[java.lang.String],
+    CurrentRedoActionTitle: java.lang.String,
+    CurrentUndoActionTitle: java.lang.String,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    acquire: js.Function0[scala.Unit],
+    addUndoAction: js.Function1[XUndoAction, scala.Unit],
+    addUndoManagerListener: js.Function1[XUndoManagerListener, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    clearRedo: js.Function0[scala.Unit],
+    enterHiddenUndoContext: js.Function0[scala.Unit],
+    enterUndoContext: js.Function1[java.lang.String, scala.Unit],
+    getAllRedoActionTitles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getAllUndoActionTitles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getCurrentRedoActionTitle: js.Function0[java.lang.String],
+    getCurrentUndoActionTitle: js.Function0[java.lang.String],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    isLocked: js.Function0[scala.Boolean],
+    isRedoPossible: js.Function0[scala.Boolean],
+    isUndoPossible: js.Function0[scala.Boolean],
+    leaveUndoContext: js.Function0[scala.Unit],
+    lock: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    redo: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeUndoManagerListener: js.Function1[XUndoManagerListener, scala.Unit],
+    reset: js.Function0[scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    undo: js.Function0[scala.Unit],
+    unlock: js.Function0[scala.Unit]
+  ): XUndoManager = {
+    val __obj = js.Dynamic.literal(AllRedoActionTitles = AllRedoActionTitles, AllUndoActionTitles = AllUndoActionTitles, CurrentRedoActionTitle = CurrentRedoActionTitle, CurrentUndoActionTitle = CurrentUndoActionTitle, Parent = Parent, acquire = acquire, addUndoAction = addUndoAction, addUndoManagerListener = addUndoManagerListener, clear = clear, clearRedo = clearRedo, enterHiddenUndoContext = enterHiddenUndoContext, enterUndoContext = enterUndoContext, getAllRedoActionTitles = getAllRedoActionTitles, getAllUndoActionTitles = getAllUndoActionTitles, getCurrentRedoActionTitle = getCurrentRedoActionTitle, getCurrentUndoActionTitle = getCurrentUndoActionTitle, getParent = getParent, isLocked = isLocked, isRedoPossible = isRedoPossible, isUndoPossible = isUndoPossible, leaveUndoContext = leaveUndoContext, lock = lock, queryInterface = queryInterface, redo = redo, release = release, removeUndoManagerListener = removeUndoManagerListener, reset = reset, setParent = setParent, undo = undo, unlock = unlock)
+  
+    __obj.asInstanceOf[XUndoManager]
+  }
+}
+

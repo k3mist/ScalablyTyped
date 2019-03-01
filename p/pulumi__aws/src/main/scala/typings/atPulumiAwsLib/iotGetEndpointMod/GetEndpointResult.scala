@@ -21,3 +21,12 @@ trait GetEndpointResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetEndpointResult {
+  @scala.inline
+  def apply(endpointAddress: java.lang.String, id: java.lang.String): GetEndpointResult = {
+    val __obj = js.Dynamic.literal(endpointAddress = endpointAddress, id = id)
+  
+    __obj.asInstanceOf[GetEndpointResult]
+  }
+}
+

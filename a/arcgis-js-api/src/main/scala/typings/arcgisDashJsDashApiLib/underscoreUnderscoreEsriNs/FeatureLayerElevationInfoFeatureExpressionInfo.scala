@@ -15,3 +15,17 @@ trait FeatureLayerElevationInfoFeatureExpressionInfo
   var expression: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FeatureLayerElevationInfoFeatureExpressionInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    expression: java.lang.String = null
+  ): FeatureLayerElevationInfoFeatureExpressionInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    __obj.asInstanceOf[FeatureLayerElevationInfoFeatureExpressionInfo]
+  }
+}
+

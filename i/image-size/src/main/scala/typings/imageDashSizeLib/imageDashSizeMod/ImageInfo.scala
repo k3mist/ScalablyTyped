@@ -12,3 +12,17 @@ trait ImageInfo extends js.Object {
   var width: scala.Double
 }
 
+object ImageInfo {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    `type`: java.lang.String,
+    width: scala.Double,
+    orientation: scala.Int | scala.Double = null
+  ): ImageInfo = {
+    val __obj = js.Dynamic.literal(height = height, `type` = `type`, width = width)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageInfo]
+  }
+}
+

@@ -16,3 +16,29 @@ trait MarketplacedealsResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[EditAllOrderDealsResponse]
 }
 
+object MarketplacedealsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeleteOrderDealsResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AddOrderDealsResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetOrderDealsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EditAllOrderDealsResponse]
+    ]
+  ): MarketplacedealsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
+    __obj.asInstanceOf[MarketplacedealsResource]
+  }
+}
+

@@ -17,3 +17,22 @@ trait Anon_DescriptionState extends js.Object {
   ]
 }
 
+object Anon_DescriptionState {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      Anon_AUTHENTICATIONREQUIRED, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_AUTHENTICATIONREQUIRED[keyof chrome-apps.Anon_AUTHENTICATIONREQUIRED] */ js.Any
+      ]
+    ]
+  ): Anon_DescriptionState = {
+    val __obj = js.Dynamic.literal(description = description, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_DescriptionState]
+  }
+}
+

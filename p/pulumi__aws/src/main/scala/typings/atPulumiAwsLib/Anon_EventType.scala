@@ -11,3 +11,16 @@ trait Anon_EventType extends js.Object {
   var lambdaArn: java.lang.String
 }
 
+object Anon_EventType {
+  @scala.inline
+  def apply(
+    eventType: java.lang.String,
+    lambdaArn: java.lang.String,
+    includeBody: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_EventType = {
+    val __obj = js.Dynamic.literal(eventType = eventType, lambdaArn = lambdaArn)
+    if (!js.isUndefined(includeBody)) __obj.updateDynamic("includeBody")(includeBody)
+    __obj.asInstanceOf[Anon_EventType]
+  }
+}
+

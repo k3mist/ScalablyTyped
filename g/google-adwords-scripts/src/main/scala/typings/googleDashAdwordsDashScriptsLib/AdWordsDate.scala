@@ -12,3 +12,12 @@ trait AdWordsDate extends js.Object {
   var year: scala.Double
 }
 
+object AdWordsDate {
+  @scala.inline
+  def apply(day: scala.Double, month: scala.Double, year: scala.Double): AdWordsDate = {
+    val __obj = js.Dynamic.literal(day = day, month = month, year = year)
+  
+    __obj.asInstanceOf[AdWordsDate]
+  }
+}
+

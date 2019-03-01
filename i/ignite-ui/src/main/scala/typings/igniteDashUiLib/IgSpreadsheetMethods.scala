@@ -103,3 +103,33 @@ trait IgSpreadsheetMethods extends js.Object {
   def styleUpdated(): scala.Unit
 }
 
+object IgSpreadsheetMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    executeAction: js.Function1[js.Object, scala.Boolean],
+    exportVisualData: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    getActivePane: js.Function0[js.Object],
+    getActiveSelection: js.Function0[js.Object],
+    getActiveSelectionCellRangeFormat: js.Function0[js.Object],
+    getActiveTable: js.Function0[js.Object],
+    getCellEditMode: js.Function0[js.Object],
+    getIsInEditMode: js.Function0[scala.Boolean],
+    getIsRenamingWorksheet: js.Function0[scala.Boolean],
+    getPanes: js.Function0[scala.Unit],
+    showFilterDialogForTable: js.Function2[js.Object, js.Object, scala.Unit],
+    showFilterDialogForWorksheet: js.Function2[scala.Double, js.Object, scala.Unit],
+    showTopOrBottomDialogForTable: js.Function1[js.Object, scala.Unit],
+    showTopOrBottomDialogForWorksheet: js.Function1[scala.Double, scala.Unit],
+    styleUpdated: js.Function0[scala.Unit]
+  ): IgSpreadsheetMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, executeAction = executeAction, exportVisualData = exportVisualData, flush = flush, getActivePane = getActivePane, getActiveSelection = getActiveSelection, getActiveSelectionCellRangeFormat = getActiveSelectionCellRangeFormat, getActiveTable = getActiveTable, getCellEditMode = getCellEditMode, getIsInEditMode = getIsInEditMode, getIsRenamingWorksheet = getIsRenamingWorksheet, getPanes = getPanes, showFilterDialogForTable = showFilterDialogForTable, showFilterDialogForWorksheet = showFilterDialogForWorksheet, showTopOrBottomDialogForTable = showTopOrBottomDialogForTable, showTopOrBottomDialogForWorksheet = showTopOrBottomDialogForWorksheet, styleUpdated = styleUpdated)
+  
+    __obj.asInstanceOf[IgSpreadsheetMethods]
+  }
+}
+

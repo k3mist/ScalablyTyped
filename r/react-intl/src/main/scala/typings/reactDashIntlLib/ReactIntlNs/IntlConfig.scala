@@ -14,3 +14,19 @@ trait IntlConfig extends js.Object {
   var onError: reactLib.reactMod.ReactNs.Requireable[_]
 }
 
+object IntlConfig {
+  @scala.inline
+  def apply(
+    defaultFormats: reactLib.reactMod.ReactNs.Requireable[_],
+    defaultLocale: reactLib.reactMod.ReactNs.Requireable[_],
+    formats: reactLib.reactMod.ReactNs.Requireable[_],
+    locale: reactLib.reactMod.ReactNs.Requireable[_],
+    messages: reactLib.reactMod.ReactNs.Requireable[_],
+    onError: reactLib.reactMod.ReactNs.Requireable[_]
+  ): IntlConfig = {
+    val __obj = js.Dynamic.literal(defaultFormats = defaultFormats, defaultLocale = defaultLocale, formats = formats, locale = locale, messages = messages, onError = onError)
+  
+    __obj.asInstanceOf[IntlConfig]
+  }
+}
+

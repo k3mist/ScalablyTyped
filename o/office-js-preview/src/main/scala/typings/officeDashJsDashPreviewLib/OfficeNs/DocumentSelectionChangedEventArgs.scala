@@ -19,3 +19,12 @@ trait DocumentSelectionChangedEventArgs extends js.Object {
   var `type`: EventType
 }
 
+object DocumentSelectionChangedEventArgs {
+  @scala.inline
+  def apply(document: Document, `type`: EventType): DocumentSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(document = document, `type` = `type`)
+  
+    __obj.asInstanceOf[DocumentSelectionChangedEventArgs]
+  }
+}
+

@@ -16,3 +16,12 @@ trait RunFilter extends js.Object {
   var testCaseFilter: java.lang.String
 }
 
+object RunFilter {
+  @scala.inline
+  def apply(sourceFilter: java.lang.String, testCaseFilter: java.lang.String): RunFilter = {
+    val __obj = js.Dynamic.literal(sourceFilter = sourceFilter, testCaseFilter = testCaseFilter)
+  
+    __obj.asInstanceOf[RunFilter]
+  }
+}
+

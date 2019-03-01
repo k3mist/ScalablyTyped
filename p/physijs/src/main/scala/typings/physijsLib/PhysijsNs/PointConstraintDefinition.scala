@@ -14,3 +14,19 @@ trait PointConstraintDefinition extends js.Object {
   var `type`: java.lang.String
 }
 
+object PointConstraintDefinition {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    objecta: threeLib.threeMod.Object3D,
+    objectb: threeLib.threeMod.Object3D,
+    positiona: threeLib.threeMod.Vector3,
+    positionb: threeLib.threeMod.Vector3,
+    `type`: java.lang.String
+  ): PointConstraintDefinition = {
+    val __obj = js.Dynamic.literal(id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb, `type` = `type`)
+  
+    __obj.asInstanceOf[PointConstraintDefinition]
+  }
+}
+

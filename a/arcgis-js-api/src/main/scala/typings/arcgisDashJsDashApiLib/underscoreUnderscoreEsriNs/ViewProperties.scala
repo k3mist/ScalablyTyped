@@ -62,3 +62,32 @@ trait ViewProperties extends DOMContainerProperties {
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 
+object ViewProperties {
+  @scala.inline
+  def apply(
+    allLayerViews: CollectionProperties[LayerViewProperties] = null,
+    animation: ViewAnimationProperties = null,
+    container: stdLib.HTMLDivElement | java.lang.String = null,
+    graphics: CollectionProperties[GraphicProperties] = null,
+    layerViews: CollectionProperties[LayerViewProperties] = null,
+    map: MapProperties = null,
+    padding: ViewPadding = null,
+    popup: PopupProperties = null,
+    spatialReference: SpatialReferenceProperties = null,
+    ui: DefaultUIProperties = null
+  ): ViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
+    if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[ViewProperties]
+  }
+}
+

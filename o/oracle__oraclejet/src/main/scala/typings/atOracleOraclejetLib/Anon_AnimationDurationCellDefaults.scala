@@ -16,3 +16,21 @@ trait Anon_AnimationDurationCellDefaults extends js.Object {
   var rowsTitleStyle: js.Object
 }
 
+object Anon_AnimationDurationCellDefaults {
+  @scala.inline
+  def apply(
+    animationDuration: scala.Double,
+    cellDefaults: Anon_AutoCenterEnd,
+    columnLabelStyle: js.Object,
+    columnsTitleStyle: js.Object,
+    hoverBehaviorDelay: scala.Double,
+    nodeDefaults: Anon_BorderColorBorderWidth,
+    rowLabelStyle: js.Object,
+    rowsTitleStyle: js.Object
+  ): Anon_AnimationDurationCellDefaults = {
+    val __obj = js.Dynamic.literal(animationDuration = animationDuration, cellDefaults = cellDefaults, columnLabelStyle = columnLabelStyle, columnsTitleStyle = columnsTitleStyle, hoverBehaviorDelay = hoverBehaviorDelay, nodeDefaults = nodeDefaults, rowLabelStyle = rowLabelStyle, rowsTitleStyle = rowsTitleStyle)
+  
+    __obj.asInstanceOf[Anon_AnimationDurationCellDefaults]
+  }
+}
+

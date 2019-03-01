@@ -92,3 +92,34 @@ trait GetFunctionResult extends js.Object {
   val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 
+object GetFunctionResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    deadLetterConfig: atPulumiAwsLib.Anon_TargetArn,
+    description: java.lang.String,
+    environment: atPulumiAwsLib.Anon_KeyVariablesString,
+    handler: java.lang.String,
+    id: java.lang.String,
+    invokeArn: java.lang.String,
+    kmsKeyArn: java.lang.String,
+    lastModified: java.lang.String,
+    layers: js.Array[java.lang.String],
+    memorySize: scala.Double,
+    qualifiedArn: java.lang.String,
+    reservedConcurrentExecutions: scala.Double,
+    role: java.lang.String,
+    runtime: java.lang.String,
+    sourceCodeHash: java.lang.String,
+    sourceCodeSize: scala.Double,
+    timeout: scala.Double,
+    tracingConfig: atPulumiAwsLib.Anon_Mode,
+    version: java.lang.String,
+    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+  ): GetFunctionResult = {
+    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
+  
+    __obj.asInstanceOf[GetFunctionResult]
+  }
+}
+

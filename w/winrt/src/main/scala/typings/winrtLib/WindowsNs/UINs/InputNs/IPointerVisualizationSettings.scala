@@ -10,3 +10,12 @@ trait IPointerVisualizationSettings extends js.Object {
   var isContactFeedbackEnabled: scala.Boolean
 }
 
+object IPointerVisualizationSettings {
+  @scala.inline
+  def apply(isBarrelButtonFeedbackEnabled: scala.Boolean, isContactFeedbackEnabled: scala.Boolean): IPointerVisualizationSettings = {
+    val __obj = js.Dynamic.literal(isBarrelButtonFeedbackEnabled = isBarrelButtonFeedbackEnabled, isContactFeedbackEnabled = isContactFeedbackEnabled)
+  
+    __obj.asInstanceOf[IPointerVisualizationSettings]
+  }
+}
+

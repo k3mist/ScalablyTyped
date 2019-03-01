@@ -18,3 +18,12 @@ trait NumberedSortingInfo extends js.Object {
   var ColumnIndex: scala.Double
 }
 
+object NumberedSortingInfo {
+  @scala.inline
+  def apply(Ascending: scala.Boolean, ColumnIndex: scala.Double): NumberedSortingInfo = {
+    val __obj = js.Dynamic.literal(Ascending = Ascending, ColumnIndex = ColumnIndex)
+  
+    __obj.asInstanceOf[NumberedSortingInfo]
+  }
+}
+

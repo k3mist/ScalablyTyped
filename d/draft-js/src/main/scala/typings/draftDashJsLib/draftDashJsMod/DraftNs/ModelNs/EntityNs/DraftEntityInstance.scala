@@ -22,3 +22,16 @@ trait DraftEntityInstance extends js.Object {
   def getType(): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType
 }
 
+object DraftEntityInstance {
+  @scala.inline
+  def apply(
+    getData: js.Function0[js.Any],
+    getMutability: js.Function0[draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityMutability],
+    getType: js.Function0[draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType]
+  ): DraftEntityInstance = {
+    val __obj = js.Dynamic.literal(getData = getData, getMutability = getMutability, getType = getType)
+  
+    __obj.asInstanceOf[DraftEntityInstance]
+  }
+}
+

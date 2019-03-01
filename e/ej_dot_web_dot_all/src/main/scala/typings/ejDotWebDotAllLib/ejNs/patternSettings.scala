@@ -17,3 +17,22 @@ trait patternSettings extends js.Object {
   var t: java.lang.String
 }
 
+object patternSettings {
+  @scala.inline
+  def apply(
+    D: java.lang.String,
+    F: java.lang.String,
+    M: java.lang.String,
+    S: java.lang.String,
+    T: java.lang.String,
+    Y: java.lang.String,
+    d: java.lang.String,
+    f: java.lang.String,
+    t: java.lang.String
+  ): patternSettings = {
+    val __obj = js.Dynamic.literal(D = D, F = F, M = M, S = S, T = T, Y = Y, d = d, f = f, t = t)
+  
+    __obj.asInstanceOf[patternSettings]
+  }
+}
+

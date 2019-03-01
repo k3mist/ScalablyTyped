@@ -19,3 +19,18 @@ trait IIOControlCode extends js.Object {
   var function: scala.Double
 }
 
+object IIOControlCode {
+  @scala.inline
+  def apply(
+    accessMode: IOControlAccessMode,
+    bufferingMethod: IOControlBufferingMethod,
+    controlCode: scala.Double,
+    deviceType: scala.Double,
+    function: scala.Double
+  ): IIOControlCode = {
+    val __obj = js.Dynamic.literal(accessMode = accessMode, bufferingMethod = bufferingMethod, controlCode = controlCode, deviceType = deviceType, function = function)
+  
+    __obj.asInstanceOf[IIOControlCode]
+  }
+}
+

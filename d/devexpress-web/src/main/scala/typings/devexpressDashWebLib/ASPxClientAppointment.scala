@@ -163,3 +163,46 @@ trait ASPxClientAppointment extends js.Object {
   def SetSubject(subject: java.lang.String): scala.Unit
 }
 
+object ASPxClientAppointment {
+  @scala.inline
+  def apply(
+    AddResource: js.Function1[java.lang.String, scala.Unit],
+    GetAllDay: js.Function0[scala.Boolean],
+    GetAppointmentType: js.Function0[ASPxAppointmentType],
+    GetDescription: js.Function0[java.lang.String],
+    GetDuration: js.Function0[scala.Double],
+    GetEnd: js.Function0[stdLib.Date],
+    GetId: js.Function0[java.lang.String],
+    GetLabelId: js.Function0[scala.Double],
+    GetLocation: js.Function0[java.lang.String],
+    GetRecurrenceInfo: js.Function0[ASPxClientRecurrenceInfo],
+    GetRecurrencePattern: js.Function0[ASPxClientAppointment],
+    GetResource: js.Function1[scala.Double, java.lang.String],
+    GetStart: js.Function0[stdLib.Date],
+    GetStatusId: js.Function0[scala.Double],
+    GetSubject: js.Function0[java.lang.String],
+    SetAllDay: js.Function1[scala.Boolean, scala.Unit],
+    SetAppointmentType: js.Function1[ASPxAppointmentType, scala.Unit],
+    SetDescription: js.Function1[java.lang.String, scala.Unit],
+    SetDuration: js.Function1[js.Any, scala.Unit],
+    SetEnd: js.Function1[stdLib.Date, scala.Unit],
+    SetId: js.Function1[java.lang.String, scala.Unit],
+    SetLabelId: js.Function1[scala.Double, scala.Unit],
+    SetLocation: js.Function1[java.lang.String, scala.Unit],
+    SetRecurrenceInfo: js.Function1[ASPxClientRecurrenceInfo, scala.Unit],
+    SetStart: js.Function1[stdLib.Date, scala.Unit],
+    SetStatusId: js.Function1[scala.Double, scala.Unit],
+    SetSubject: js.Function1[java.lang.String, scala.Unit],
+    appointmentId: java.lang.String,
+    appointmentType: ASPxAppointmentType,
+    interval: ASPxClientTimeInterval,
+    labelIndex: scala.Double,
+    resources: js.Array[java.lang.String],
+    statusIndex: scala.Double
+  ): ASPxClientAppointment = {
+    val __obj = js.Dynamic.literal(AddResource = AddResource, GetAllDay = GetAllDay, GetAppointmentType = GetAppointmentType, GetDescription = GetDescription, GetDuration = GetDuration, GetEnd = GetEnd, GetId = GetId, GetLabelId = GetLabelId, GetLocation = GetLocation, GetRecurrenceInfo = GetRecurrenceInfo, GetRecurrencePattern = GetRecurrencePattern, GetResource = GetResource, GetStart = GetStart, GetStatusId = GetStatusId, GetSubject = GetSubject, SetAllDay = SetAllDay, SetAppointmentType = SetAppointmentType, SetDescription = SetDescription, SetDuration = SetDuration, SetEnd = SetEnd, SetId = SetId, SetLabelId = SetLabelId, SetLocation = SetLocation, SetRecurrenceInfo = SetRecurrenceInfo, SetStart = SetStart, SetStatusId = SetStatusId, SetSubject = SetSubject, appointmentId = appointmentId, appointmentType = appointmentType, interval = interval, labelIndex = labelIndex, resources = resources, statusIndex = statusIndex)
+  
+    __obj.asInstanceOf[ASPxClientAppointment]
+  }
+}
+

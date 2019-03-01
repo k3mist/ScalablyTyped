@@ -15,3 +15,12 @@ trait AddSpacingBeforeParagraphCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object AddSpacingBeforeParagraphCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): AddSpacingBeforeParagraphCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[AddSpacingBeforeParagraphCommand]
+  }
+}
+

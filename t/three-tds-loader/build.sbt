@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "three-tds-loader"
-version := "1.1-dt-20181204Z-e01852"
+version := "1.1-dt-20181204Z-d5f0d8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.3-73c9dd",
-  "org.scalablytyped" %%% "three" % "0.93-dt-20190227Z-6fa3db")
+  "org.scalablytyped" %%% "std" % "3.3-bea17e",
+  "org.scalablytyped" %%% "three" % "0.93-dt-20190227Z-ea96b5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

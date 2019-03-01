@@ -13,3 +13,12 @@ trait ComplexReference extends js.Object {
   var Reference2: SingleReference
 }
 
+object ComplexReference {
+  @scala.inline
+  def apply(Reference1: SingleReference, Reference2: SingleReference): ComplexReference = {
+    val __obj = js.Dynamic.literal(Reference1 = Reference1, Reference2 = Reference2)
+  
+    __obj.asInstanceOf[ComplexReference]
+  }
+}
+

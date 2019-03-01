@@ -46,3 +46,24 @@ trait XTypeDetection
   def queryTypeByURL(URL: java.lang.String): java.lang.String
 }
 
+object XTypeDetection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryTypeByDescriptor: js.Function2[
+      js.Array[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ], 
+      scala.Boolean, 
+      java.lang.String
+    ],
+    queryTypeByURL: js.Function1[java.lang.String, java.lang.String],
+    release: js.Function0[scala.Unit]
+  ): XTypeDetection = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryTypeByDescriptor = queryTypeByDescriptor, queryTypeByURL = queryTypeByURL, release = release)
+  
+    __obj.asInstanceOf[XTypeDetection]
+  }
+}
+

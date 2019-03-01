@@ -65,3 +65,26 @@ trait locationCreateRendererParams
   var view: js.UndefOr[SceneView] = js.undefined
 }
 
+object locationCreateRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    basemap: java.lang.String | Basemap = null,
+    colorMixMode: java.lang.String = null,
+    locationScheme: LocationScheme = null,
+    symbolType: java.lang.String = null,
+    view: SceneView = null
+  ): locationCreateRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
+    if (locationScheme != null) __obj.updateDynamic("locationScheme")(locationScheme)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[locationCreateRendererParams]
+  }
+}
+

@@ -12,3 +12,17 @@ trait LoadOperation extends ManagementOperation {
   var `type`: sparqljsLib.sparqljsLibStrings.load
 }
 
+object LoadOperation {
+  @scala.inline
+  def apply(
+    destination: java.lang.String | sparqljsLib.sparqljsLibNumbers.`false`,
+    silent: scala.Boolean,
+    source: java.lang.String,
+    `type`: sparqljsLib.sparqljsLibStrings.load
+  ): LoadOperation = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent, source = source, `type` = `type`)
+  
+    __obj.asInstanceOf[LoadOperation]
+  }
+}
+

@@ -27,3 +27,19 @@ trait XHierarchicalName
   def getHierarchicalName(): java.lang.String
 }
 
+object XHierarchicalName {
+  @scala.inline
+  def apply(
+    HierarchicalName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    composeHierarchicalName: js.Function1[java.lang.String, java.lang.String],
+    getHierarchicalName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHierarchicalName = {
+    val __obj = js.Dynamic.literal(HierarchicalName = HierarchicalName, acquire = acquire, composeHierarchicalName = composeHierarchicalName, getHierarchicalName = getHierarchicalName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XHierarchicalName]
+  }
+}
+

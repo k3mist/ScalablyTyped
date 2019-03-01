@@ -24,3 +24,17 @@ trait ExtensionAuditLogEntry extends js.Object {
   var updatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object ExtensionAuditLogEntry {
+  @scala.inline
+  def apply(
+    auditAction: java.lang.String,
+    auditDate: stdLib.Date,
+    comment: java.lang.String,
+    updatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): ExtensionAuditLogEntry = {
+    val __obj = js.Dynamic.literal(auditAction = auditAction, auditDate = auditDate, comment = comment, updatedBy = updatedBy)
+  
+    __obj.asInstanceOf[ExtensionAuditLogEntry]
+  }
+}
+

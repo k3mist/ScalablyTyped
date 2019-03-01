@@ -84,3 +84,49 @@ trait XAccessibleMultiLineText extends XAccessibleText {
   def getTextAtLineWithCaret(): TextSegment
 }
 
+object XAccessibleMultiLineText {
+  @scala.inline
+  def apply(
+    CaretPosition: scala.Double,
+    CharacterCount: scala.Double,
+    NumberOfLineWithCaret: scala.Double,
+    SelectedText: java.lang.String,
+    SelectionEnd: scala.Double,
+    SelectionStart: scala.Double,
+    Text: java.lang.String,
+    TextAtLineWithCaret: TextSegment,
+    acquire: js.Function0[scala.Unit],
+    copyText: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    getCaretPosition: js.Function0[scala.Double],
+    getCharacter: js.Function1[scala.Double, java.lang.String],
+    getCharacterAttributes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getCharacterBounds: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getCharacterCount: js.Function0[scala.Double],
+    getIndexAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Double],
+    getLineNumberAtIndex: js.Function1[scala.Double, scala.Double],
+    getNumberOfLineWithCaret: js.Function0[scala.Double],
+    getSelectedText: js.Function0[java.lang.String],
+    getSelectionEnd: js.Function0[scala.Double],
+    getSelectionStart: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    getTextAtIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextAtLineNumber: js.Function1[scala.Double, TextSegment],
+    getTextAtLineWithCaret: js.Function0[TextSegment],
+    getTextBeforeIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextBehindIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextRange: js.Function2[scala.Double, scala.Double, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCaretPosition: js.Function1[scala.Double, scala.Boolean],
+    setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean]
+  ): XAccessibleMultiLineText = {
+    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, NumberOfLineWithCaret = NumberOfLineWithCaret, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, TextAtLineWithCaret = TextAtLineWithCaret, acquire = acquire, copyText = copyText, getCaretPosition = getCaretPosition, getCharacter = getCharacter, getCharacterAttributes = getCharacterAttributes, getCharacterBounds = getCharacterBounds, getCharacterCount = getCharacterCount, getIndexAtPoint = getIndexAtPoint, getLineNumberAtIndex = getLineNumberAtIndex, getNumberOfLineWithCaret = getNumberOfLineWithCaret, getSelectedText = getSelectedText, getSelectionEnd = getSelectionEnd, getSelectionStart = getSelectionStart, getText = getText, getTextAtIndex = getTextAtIndex, getTextAtLineNumber = getTextAtLineNumber, getTextAtLineWithCaret = getTextAtLineWithCaret, getTextBeforeIndex = getTextBeforeIndex, getTextBehindIndex = getTextBehindIndex, getTextRange = getTextRange, queryInterface = queryInterface, release = release, setCaretPosition = setCaretPosition, setSelection = setSelection)
+  
+    __obj.asInstanceOf[XAccessibleMultiLineText]
+  }
+}
+

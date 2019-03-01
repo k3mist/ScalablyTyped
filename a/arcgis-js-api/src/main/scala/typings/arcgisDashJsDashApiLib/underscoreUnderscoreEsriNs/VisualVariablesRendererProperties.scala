@@ -62,3 +62,12 @@ trait VisualVariablesRendererProperties extends js.Object {
   var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 
+object VisualVariablesRendererProperties {
+  @scala.inline
+  def apply(visualVariables: js.Array[VisualVariableProperties] = null): VisualVariablesRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[VisualVariablesRendererProperties]
+  }
+}
+

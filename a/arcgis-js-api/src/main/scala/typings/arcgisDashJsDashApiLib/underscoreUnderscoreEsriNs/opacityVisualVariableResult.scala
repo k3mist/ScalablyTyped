@@ -33,3 +33,20 @@ trait opacityVisualVariableResult
   var visualVariable: OpacityVariable
 }
 
+object opacityVisualVariableResult {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfo,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    statistics: SummaryStatisticsResult,
+    visualVariable: OpacityVariable
+  ): opacityVisualVariableResult = {
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, statistics = statistics, visualVariable = visualVariable)
+  
+    __obj.asInstanceOf[opacityVisualVariableResult]
+  }
+}
+

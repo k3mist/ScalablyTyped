@@ -15,3 +15,12 @@ trait ActivationEvent
   var ActiveSheet: XSpreadsheet
 }
 
+object ActivationEvent {
+  @scala.inline
+  def apply(ActiveSheet: XSpreadsheet, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): ActivationEvent = {
+    val __obj = js.Dynamic.literal(ActiveSheet = ActiveSheet, Source = Source)
+  
+    __obj.asInstanceOf[ActivationEvent]
+  }
+}
+

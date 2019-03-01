@@ -12,3 +12,21 @@ trait LineitemsResource extends js.Object {
   def uploadlineitems(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
 }
 
+object LineitemsResource {
+  @scala.inline
+  def apply(
+    downloadlineitems: js.Function1[
+      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DownloadLineItemsResponse]
+    ],
+    uploadlineitems: js.Function1[
+      gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
+    ]
+  ): LineitemsResource = {
+    val __obj = js.Dynamic.literal(downloadlineitems = downloadlineitems, uploadlineitems = uploadlineitems)
+  
+    __obj.asInstanceOf[LineitemsResource]
+  }
+}
+

@@ -13,3 +13,18 @@ trait IStreamSocketControl extends js.Object {
   var qualityOfService: SocketQualityOfService
 }
 
+object IStreamSocketControl {
+  @scala.inline
+  def apply(
+    keepAlive: scala.Boolean,
+    noDelay: scala.Boolean,
+    outboundBufferSizeInBytes: scala.Double,
+    outboundUnicastHopLimit: scala.Double,
+    qualityOfService: SocketQualityOfService
+  ): IStreamSocketControl = {
+    val __obj = js.Dynamic.literal(keepAlive = keepAlive, noDelay = noDelay, outboundBufferSizeInBytes = outboundBufferSizeInBytes, outboundUnicastHopLimit = outboundUnicastHopLimit, qualityOfService = qualityOfService)
+  
+    __obj.asInstanceOf[IStreamSocketControl]
+  }
+}
+

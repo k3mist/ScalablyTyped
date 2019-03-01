@@ -11,3 +11,16 @@ trait NextAppContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extend
   var router: nextDashServerLib.routerMod.RouterProps[Q]
 }
 
+object NextAppContext {
+  @scala.inline
+  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
+    Component: nextLib.nextMod.nextNs.NextComponentType[_, _, nextLib.nextMod.nextNs.NextContext[Q]],
+    ctx: nextLib.nextMod.nextNs.NextContext[Q],
+    router: nextDashServerLib.routerMod.RouterProps[Q]
+  ): NextAppContext[Q] = {
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], ctx = ctx, router = router)
+  
+    __obj.asInstanceOf[NextAppContext[Q]]
+  }
+}
+

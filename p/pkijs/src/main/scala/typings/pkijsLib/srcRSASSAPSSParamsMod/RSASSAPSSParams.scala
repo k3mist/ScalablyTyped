@@ -39,3 +39,20 @@ trait RSASSAPSSParams extends js.Object {
   def toSchema(): js.Any
 }
 
+object RSASSAPSSParams {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    maskGenAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    saltLength: scala.Double,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    trailerField: scala.Double
+  ): RSASSAPSSParams = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, maskGenAlgorithm = maskGenAlgorithm, saltLength = saltLength, toJSON = toJSON, toSchema = toSchema, trailerField = trailerField)
+  
+    __obj.asInstanceOf[RSASSAPSSParams]
+  }
+}
+

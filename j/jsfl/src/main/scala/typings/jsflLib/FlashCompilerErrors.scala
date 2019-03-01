@@ -10,3 +10,12 @@ trait FlashCompilerErrors extends js.Object {
   def save(): js.Any
 }
 
+object FlashCompilerErrors {
+  @scala.inline
+  def apply(clear: js.Function0[js.Any], save: js.Function0[js.Any]): FlashCompilerErrors = {
+    val __obj = js.Dynamic.literal(clear = clear, save = save)
+  
+    __obj.asInstanceOf[FlashCompilerErrors]
+  }
+}
+

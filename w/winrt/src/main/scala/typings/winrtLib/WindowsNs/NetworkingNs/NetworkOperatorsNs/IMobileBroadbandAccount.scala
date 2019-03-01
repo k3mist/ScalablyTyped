@@ -13,3 +13,18 @@ trait IMobileBroadbandAccount extends js.Object {
   var serviceProviderName: java.lang.String
 }
 
+object IMobileBroadbandAccount {
+  @scala.inline
+  def apply(
+    currentDeviceInformation: MobileBroadbandDeviceInformation,
+    currentNetwork: MobileBroadbandNetwork,
+    networkAccountId: java.lang.String,
+    serviceProviderGuid: java.lang.String,
+    serviceProviderName: java.lang.String
+  ): IMobileBroadbandAccount = {
+    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation, currentNetwork = currentNetwork, networkAccountId = networkAccountId, serviceProviderGuid = serviceProviderGuid, serviceProviderName = serviceProviderName)
+  
+    __obj.asInstanceOf[IMobileBroadbandAccount]
+  }
+}
+

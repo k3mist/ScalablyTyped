@@ -68,3 +68,29 @@ trait Anon_Array extends js.Object {
   var String: Anon_Key
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    Array: Anon_Cast,
+    Boolean: Anon_Options,
+    Buffer: Anon_KeyOptionsSchemaNameAnyBuffer,
+    Date: Anon_KeyOptionsSchemaNameAny,
+    Decimal128: Anon_KeyOptionsSchemaNameAnyDecimal128,
+    DocumentArray: Anon_KeyOptions,
+    Embedded: org.scalablytyped.runtime.Instantiable3[
+      /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
+      /* key */ java.lang.String, 
+      /* options */ js.UndefOr[/* options */ js.Any], 
+      mongooseLib.mongooseMod.SchemaNs.TypesNs.Embedded
+    ],
+    Mixed: Anon_OptionsPath,
+    Number: Anon_KeyOptionsSchemaName,
+    ObjectId: Anon_KeyOptionsSchemaNameAnyObjectId,
+    String: Anon_Key
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(Array = Array, Boolean = Boolean, Buffer = Buffer, Date = Date, Decimal128 = Decimal128, DocumentArray = DocumentArray, Embedded = Embedded, Mixed = Mixed, Number = Number, ObjectId = ObjectId, String = String)
+  
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

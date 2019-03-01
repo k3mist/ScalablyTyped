@@ -30,3 +30,17 @@ trait ITableViewSaveInfo extends js.Object {
   var qZoomFactor: scala.Double
 }
 
+object ITableViewSaveInfo {
+  @scala.inline
+  def apply(
+    qBroomPoints: js.Array[ITableViewBroomPointSaveInfo],
+    qConnectionPoints: js.Array[ITableViewConnectionPointSaveInfo],
+    qTables: js.Array[ITableViewTableWinSaveInfo],
+    qZoomFactor: scala.Double
+  ): ITableViewSaveInfo = {
+    val __obj = js.Dynamic.literal(qBroomPoints = qBroomPoints, qConnectionPoints = qConnectionPoints, qTables = qTables, qZoomFactor = qZoomFactor)
+  
+    __obj.asInstanceOf[ITableViewSaveInfo]
+  }
+}
+

@@ -49,3 +49,34 @@ trait SnapshotCopyState extends js.Object {
   val volumeSize: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object SnapshotCopyState {
+  @scala.inline
+  def apply(
+    dataEncryptionKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ownerAlias: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ownerId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceSnapshotId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    volumeId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    volumeSize: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): SnapshotCopyState = {
+    val __obj = js.Dynamic.literal()
+    if (dataEncryptionKeyId != null) __obj.updateDynamic("dataEncryptionKeyId")(dataEncryptionKeyId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (ownerAlias != null) __obj.updateDynamic("ownerAlias")(ownerAlias.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (sourceRegion != null) __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
+    if (sourceSnapshotId != null) __obj.updateDynamic("sourceSnapshotId")(sourceSnapshotId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
+    if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCopyState]
+  }
+}
+

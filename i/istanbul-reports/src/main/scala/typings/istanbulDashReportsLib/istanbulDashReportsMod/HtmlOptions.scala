@@ -11,3 +11,12 @@ trait HtmlOptions extends js.Object {
   var verbose: scala.Boolean
 }
 
+object HtmlOptions {
+  @scala.inline
+  def apply(linkMapper: LinkMapper, subdir: java.lang.String, verbose: scala.Boolean): HtmlOptions = {
+    val __obj = js.Dynamic.literal(linkMapper = linkMapper, subdir = subdir, verbose = verbose)
+  
+    __obj.asInstanceOf[HtmlOptions]
+  }
+}
+

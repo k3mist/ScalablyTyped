@@ -28,3 +28,50 @@ trait XAnnotation
   var TextRange: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText
 }
 
+object XAnnotation {
+  @scala.inline
+  def apply(
+    Anchor: js.Any,
+    Author: java.lang.String,
+    DateTime: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    Initials: java.lang.String,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D,
+    TextRange: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XAnnotation = {
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Author = Author, DateTime = DateTime, Initials = Initials, Position = Position, PropertySetInfo = PropertySetInfo, Size = Size, TextRange = TextRange, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[XAnnotation]
+  }
+}
+

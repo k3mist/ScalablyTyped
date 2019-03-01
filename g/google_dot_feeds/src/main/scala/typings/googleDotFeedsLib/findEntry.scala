@@ -12,3 +12,17 @@ trait findEntry extends js.Object {
   var url: java.lang.String
 }
 
+object findEntry {
+  @scala.inline
+  def apply(
+    contentSnippet: java.lang.String,
+    link: java.lang.String,
+    title: java.lang.String,
+    url: java.lang.String
+  ): findEntry = {
+    val __obj = js.Dynamic.literal(contentSnippet = contentSnippet, link = link, title = title, url = url)
+  
+    __obj.asInstanceOf[findEntry]
+  }
+}
+

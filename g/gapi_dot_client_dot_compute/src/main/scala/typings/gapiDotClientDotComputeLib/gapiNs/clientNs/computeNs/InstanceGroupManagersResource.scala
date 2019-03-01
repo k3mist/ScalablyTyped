@@ -88,3 +88,61 @@ trait InstanceGroupManagersResource extends js.Object {
   def setTargetPools(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object InstanceGroupManagersResource {
+  @scala.inline
+  def apply(
+    abandonInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    deleteInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManager]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagerList]
+    ],
+    listManagedInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManagersListManagedInstancesResponse]
+    ],
+    recreateInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    resize: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setInstanceTemplate: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setTargetPools: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManager, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): InstanceGroupManagersResource = {
+    val __obj = js.Dynamic.literal(abandonInstances = abandonInstances, aggregatedList = aggregatedList, delete = delete, deleteInstances = deleteInstances, get = get, insert = insert, list = list, listManagedInstances = listManagedInstances, recreateInstances = recreateInstances, resize = resize, setInstanceTemplate = setInstanceTemplate, setTargetPools = setTargetPools)
+  
+    __obj.asInstanceOf[InstanceGroupManagersResource]
+  }
+}
+

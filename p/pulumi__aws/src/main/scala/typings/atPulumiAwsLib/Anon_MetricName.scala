@@ -14,3 +14,19 @@ trait Anon_MetricName extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_MetricName {
+  @scala.inline
+  def apply(
+    metricName: java.lang.String,
+    metricNamespace: java.lang.String,
+    metricUnit: java.lang.String,
+    metricValue: java.lang.String,
+    roleArn: java.lang.String,
+    metricTimestamp: java.lang.String = null
+  ): Anon_MetricName = {
+    val __obj = js.Dynamic.literal(metricName = metricName, metricNamespace = metricNamespace, metricUnit = metricUnit, metricValue = metricValue, roleArn = roleArn)
+    if (metricTimestamp != null) __obj.updateDynamic("metricTimestamp")(metricTimestamp)
+    __obj.asInstanceOf[Anon_MetricName]
+  }
+}
+

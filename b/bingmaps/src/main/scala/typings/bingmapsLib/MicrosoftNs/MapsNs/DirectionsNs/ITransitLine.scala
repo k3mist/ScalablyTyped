@@ -24,3 +24,21 @@ trait ITransitLine extends js.Object {
   var verboseName: java.lang.String
 }
 
+object ITransitLine {
+  @scala.inline
+  def apply(
+    abbreviatedName: java.lang.String,
+    agencyId: scala.Double,
+    agencyName: java.lang.String,
+    agencyUrl: java.lang.String,
+    phoneNumber: java.lang.String,
+    providerInfo: java.lang.String,
+    uri: java.lang.String,
+    verboseName: java.lang.String
+  ): ITransitLine = {
+    val __obj = js.Dynamic.literal(abbreviatedName = abbreviatedName, agencyId = agencyId, agencyName = agencyName, agencyUrl = agencyUrl, phoneNumber = phoneNumber, providerInfo = providerInfo, uri = uri, verboseName = verboseName)
+  
+    __obj.asInstanceOf[ITransitLine]
+  }
+}
+

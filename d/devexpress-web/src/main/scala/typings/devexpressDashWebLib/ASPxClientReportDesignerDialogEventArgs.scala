@@ -21,3 +21,12 @@ trait ASPxClientReportDesignerDialogEventArgs extends ASPxClientEventArgs {
   var Url: java.lang.String
 }
 
+object ASPxClientReportDesignerDialogEventArgs {
+  @scala.inline
+  def apply(Report: js.Object, Url: java.lang.String): ASPxClientReportDesignerDialogEventArgs = {
+    val __obj = js.Dynamic.literal(Report = Report, Url = Url)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerDialogEventArgs]
+  }
+}
+

@@ -33,3 +33,20 @@ trait QueryFieldInfo
   var `type`: java.lang.String
 }
 
+object QueryFieldInfo {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    length: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): QueryFieldInfo = {
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, hasOwnProperty = hasOwnProperty, length = length, name = name, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[QueryFieldInfo]
+  }
+}
+

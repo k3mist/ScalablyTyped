@@ -13,3 +13,15 @@ trait IVideoEffectDefinition extends js.Object {
   var properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
 }
 
+object IVideoEffectDefinition {
+  @scala.inline
+  def apply(
+    activatableClassId: java.lang.String,
+    properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
+  ): IVideoEffectDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId, properties = properties)
+  
+    __obj.asInstanceOf[IVideoEffectDefinition]
+  }
+}
+

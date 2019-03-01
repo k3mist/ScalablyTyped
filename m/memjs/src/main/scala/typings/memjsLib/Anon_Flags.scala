@@ -10,3 +10,12 @@ trait Anon_Flags extends js.Object {
   var value: nodeLib.Buffer
 }
 
+object Anon_Flags {
+  @scala.inline
+  def apply(flags: nodeLib.Buffer, value: nodeLib.Buffer): Anon_Flags = {
+    val __obj = js.Dynamic.literal(flags = flags, value = value)
+  
+    __obj.asInstanceOf[Anon_Flags]
+  }
+}
+

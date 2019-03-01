@@ -16,3 +16,21 @@ trait Device extends js.Object {
   var version: java.lang.String
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    capture: Capture,
+    cordova: java.lang.String,
+    model: java.lang.String,
+    name: java.lang.String,
+    platform: java.lang.String,
+    uuid: java.lang.String,
+    version: java.lang.String
+  ): Device = {
+    val __obj = js.Dynamic.literal(available = available, capture = capture, cordova = cordova, model = model, name = name, platform = platform, uuid = uuid, version = version)
+  
+    __obj.asInstanceOf[Device]
+  }
+}
+

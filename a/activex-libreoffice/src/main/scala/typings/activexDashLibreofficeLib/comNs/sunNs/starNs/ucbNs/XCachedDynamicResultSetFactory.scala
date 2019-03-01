@@ -24,3 +24,17 @@ trait XCachedDynamicResultSetFactory
   def createCachedDynamicResultSet(SourceStub: XDynamicResultSet, ContentIdentifierMapping: XContentIdentifierMapping): XDynamicResultSet
 }
 
+object XCachedDynamicResultSetFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createCachedDynamicResultSet: js.Function2[XDynamicResultSet, XContentIdentifierMapping, XDynamicResultSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCachedDynamicResultSetFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createCachedDynamicResultSet = createCachedDynamicResultSet, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCachedDynamicResultSetFactory]
+  }
+}
+

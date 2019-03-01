@@ -15,3 +15,20 @@ trait Anon_AUDIO extends js.Object {
   var XML: scala.Double
 }
 
+object Anon_AUDIO {
+  @scala.inline
+  def apply(
+    AUDIO: scala.Double,
+    IMAGE: scala.Double,
+    JSON: scala.Double,
+    TEXT: scala.Double,
+    UNKNOWN: scala.Double,
+    VIDEO: scala.Double,
+    XML: scala.Double
+  ): Anon_AUDIO = {
+    val __obj = js.Dynamic.literal(AUDIO = AUDIO, IMAGE = IMAGE, JSON = JSON, TEXT = TEXT, UNKNOWN = UNKNOWN, VIDEO = VIDEO, XML = XML)
+  
+    __obj.asInstanceOf[Anon_AUDIO]
+  }
+}
+

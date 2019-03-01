@@ -24,3 +24,12 @@ trait JsonPatchOperation extends js.Object {
   var value: js.Any
 }
 
+object JsonPatchOperation {
+  @scala.inline
+  def apply(from: java.lang.String, op: Operation, path: java.lang.String, value: js.Any): JsonPatchOperation = {
+    val __obj = js.Dynamic.literal(from = from, op = op, path = path, value = value)
+  
+    __obj.asInstanceOf[JsonPatchOperation]
+  }
+}
+

@@ -18,3 +18,13 @@ trait PointCloudReturnFilterProperties extends PointCloudFilterProperties {
   var includedReturns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PointCloudReturnFilterProperties {
+  @scala.inline
+  def apply(field: java.lang.String = null, includedReturns: js.Array[java.lang.String] = null): PointCloudReturnFilterProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (includedReturns != null) __obj.updateDynamic("includedReturns")(includedReturns)
+    __obj.asInstanceOf[PointCloudReturnFilterProperties]
+  }
+}
+

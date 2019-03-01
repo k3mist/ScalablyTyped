@@ -20,3 +20,23 @@ trait XManifestWriter
   ): scala.Unit
 }
 
+object XManifestWriter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeManifestSequence: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ], 
+      scala.Unit
+    ]
+  ): XManifestWriter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, writeManifestSequence = writeManifestSequence)
+  
+    __obj.asInstanceOf[XManifestWriter]
+  }
+}
+

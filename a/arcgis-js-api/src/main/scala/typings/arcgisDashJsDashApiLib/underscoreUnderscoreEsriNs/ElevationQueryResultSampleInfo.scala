@@ -21,3 +21,18 @@ trait ElevationQueryResultSampleInfo
   var source: ElevationLayer
 }
 
+object ElevationQueryResultSampleInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    demResolution: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    source: ElevationLayer
+  ): ElevationQueryResultSampleInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, demResolution = demResolution, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, source = source)
+  
+    __obj.asInstanceOf[ElevationQueryResultSampleInfo]
+  }
+}
+

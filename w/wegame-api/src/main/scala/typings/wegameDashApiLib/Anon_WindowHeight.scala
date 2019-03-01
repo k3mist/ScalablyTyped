@@ -10,3 +10,12 @@ trait Anon_WindowHeight extends js.Object {
   var windowWidth: scala.Double
 }
 
+object Anon_WindowHeight {
+  @scala.inline
+  def apply(windowHeight: scala.Double, windowWidth: scala.Double): Anon_WindowHeight = {
+    val __obj = js.Dynamic.literal(windowHeight = windowHeight, windowWidth = windowWidth)
+  
+    __obj.asInstanceOf[Anon_WindowHeight]
+  }
+}
+

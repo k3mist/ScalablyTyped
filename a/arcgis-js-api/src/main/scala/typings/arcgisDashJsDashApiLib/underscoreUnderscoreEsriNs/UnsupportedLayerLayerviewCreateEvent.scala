@@ -10,3 +10,12 @@ trait UnsupportedLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object UnsupportedLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): UnsupportedLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[UnsupportedLayerLayerviewCreateEvent]
+  }
+}
+

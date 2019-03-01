@@ -33,3 +33,18 @@ trait TypeOptions
   var release: scala.Boolean
 }
 
+object TypeOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Double,
+    force: scala.Boolean,
+    log: scala.Boolean,
+    release: scala.Boolean,
+    timeout: scala.Double
+  ): TypeOptions = {
+    val __obj = js.Dynamic.literal(delay = delay, force = force, log = log, release = release, timeout = timeout)
+  
+    __obj.asInstanceOf[TypeOptions]
+  }
+}
+

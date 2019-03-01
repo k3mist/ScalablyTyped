@@ -19,3 +19,23 @@ trait XFormulaParser extends js.Object {
   ): java.lang.String
 }
 
+object XFormulaParser {
+  @scala.inline
+  def apply(
+    parseFormula: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashInteropLib.SafeArray[FormulaToken]
+    ],
+    printFormula: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      java.lang.String
+    ]
+  ): XFormulaParser = {
+    val __obj = js.Dynamic.literal(parseFormula = parseFormula, printFormula = printFormula)
+  
+    __obj.asInstanceOf[XFormulaParser]
+  }
+}
+

@@ -14,3 +14,12 @@ trait ViewingProperties extends js.Object {
   var search: js.UndefOr[SearchProperties] = js.undefined
 }
 
+object ViewingProperties {
+  @scala.inline
+  def apply(search: SearchProperties = null): ViewingProperties = {
+    val __obj = js.Dynamic.literal()
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ViewingProperties]
+  }
+}
+

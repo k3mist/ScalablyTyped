@@ -19,3 +19,23 @@ trait IELangEditDelegates extends js.Object {
   var selectHandler: js.Function
 }
 
+object IELangEditDelegates {
+  @scala.inline
+  def apply(
+    btnAddClickHandler: js.Function,
+    btnAddHandler: js.Function,
+    insertCallback: js.Function,
+    insertHandler: js.Function,
+    modifyCallback: js.Function,
+    modifyHandler: js.Function,
+    removeCallback: js.Function,
+    removeHandler: js.Function,
+    selectCallback: js.Function,
+    selectHandler: js.Function
+  ): IELangEditDelegates = {
+    val __obj = js.Dynamic.literal(btnAddClickHandler = btnAddClickHandler, btnAddHandler = btnAddHandler, insertCallback = insertCallback, insertHandler = insertHandler, modifyCallback = modifyCallback, modifyHandler = modifyHandler, removeCallback = removeCallback, removeHandler = removeHandler, selectCallback = selectCallback, selectHandler = selectHandler)
+  
+    __obj.asInstanceOf[IELangEditDelegates]
+  }
+}
+

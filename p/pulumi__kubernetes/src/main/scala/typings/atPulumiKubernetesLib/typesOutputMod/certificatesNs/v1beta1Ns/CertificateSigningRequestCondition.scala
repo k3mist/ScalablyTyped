@@ -24,3 +24,17 @@ trait CertificateSigningRequestCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object CertificateSigningRequestCondition {
+  @scala.inline
+  def apply(
+    lastUpdateTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    `type`: java.lang.String
+  ): CertificateSigningRequestCondition = {
+    val __obj = js.Dynamic.literal(lastUpdateTime = lastUpdateTime, message = message, reason = reason, `type` = `type`)
+  
+    __obj.asInstanceOf[CertificateSigningRequestCondition]
+  }
+}
+

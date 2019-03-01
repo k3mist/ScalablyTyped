@@ -10,3 +10,15 @@ trait Anon_Taglist extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.tagDOTlist
 }
 
+object Anon_Taglist {
+  @scala.inline
+  def apply(
+    tags: js.Array[intercomDashClientLib.userMod.Tag],
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.tagDOTlist
+  ): Anon_Taglist = {
+    val __obj = js.Dynamic.literal(tags = tags, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Taglist]
+  }
+}
+

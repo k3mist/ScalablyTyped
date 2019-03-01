@@ -15,3 +15,20 @@ trait PluginOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PluginOptions {
+  @scala.inline
+  def apply(
+    decorators: fastifyDashPluginLib.Anon_Fastify = null,
+    dependencies: js.Array[java.lang.String] = null,
+    fastify: java.lang.String = null,
+    name: java.lang.String = null
+  ): PluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    if (fastify != null) __obj.updateDynamic("fastify")(fastify)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[PluginOptions]
+  }
+}
+

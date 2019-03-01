@@ -241,3 +241,71 @@ trait BaseFrameProperties
   var WrapInfluenceOnPosition: scala.Double
 }
 
+object BaseFrameProperties {
+  @scala.inline
+  def apply(
+    AnchorFrame: XTextFrame,
+    AnchorPageNo: scala.Double,
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BottomMargin: scala.Double,
+    ContentProtected: scala.Boolean,
+    Description: java.lang.String,
+    FillGradient: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Gradient,
+    FillGradientName: java.lang.String,
+    FillStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.FillStyle,
+    FrameInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Height: scala.Double,
+    HoriOrient: scala.Double,
+    HoriOrientPosition: scala.Double,
+    HoriOrientRelation: scala.Double,
+    HyperLinkName: java.lang.String,
+    HyperLinkTarget: java.lang.String,
+    HyperLinkURL: java.lang.String,
+    IsSyncHeightToWidth: scala.Boolean,
+    IsSyncWidthToHeight: scala.Boolean,
+    LayoutSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    LeftMargin: scala.Double,
+    Opaque: scala.Boolean,
+    PageToggle: scala.Boolean,
+    PositionProtected: scala.Boolean,
+    Print: scala.Boolean,
+    RelativeHeight: scala.Double,
+    RelativeHeightRelation: scala.Double,
+    RelativeWidth: scala.Double,
+    RelativeWidthRelation: scala.Double,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    RightMargin: scala.Double,
+    ServerMap: scala.Boolean,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ShadowTransparence: scala.Double,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    SizeProtected: scala.Boolean,
+    Surround: WrapTextMode,
+    SurroundAnchorOnly: scala.Boolean,
+    Title: java.lang.String,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    TopMargin: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    VertOrient: scala.Double,
+    VertOrientPosition: scala.Double,
+    VertOrientRelation: scala.Double,
+    Width: scala.Double,
+    WrapInfluenceOnPosition: scala.Double
+  ): BaseFrameProperties = {
+    val __obj = js.Dynamic.literal(AnchorFrame = AnchorFrame, AnchorPageNo = AnchorPageNo, BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BorderDistance = BorderDistance, BottomBorder = BottomBorder, BottomBorderDistance = BottomBorderDistance, BottomMargin = BottomMargin, ContentProtected = ContentProtected, Description = Description, FillGradient = FillGradient, FillGradientName = FillGradientName, FillStyle = FillStyle, FrameInteropGrabBag = FrameInteropGrabBag, Height = Height, HoriOrient = HoriOrient, HoriOrientPosition = HoriOrientPosition, HoriOrientRelation = HoriOrientRelation, HyperLinkName = HyperLinkName, HyperLinkTarget = HyperLinkTarget, HyperLinkURL = HyperLinkURL, IsSyncHeightToWidth = IsSyncHeightToWidth, IsSyncWidthToHeight = IsSyncWidthToHeight, LayoutSize = LayoutSize, LeftBorder = LeftBorder, LeftBorderDistance = LeftBorderDistance, LeftMargin = LeftMargin, Opaque = Opaque, PageToggle = PageToggle, PositionProtected = PositionProtected, Print = Print, RelativeHeight = RelativeHeight, RelativeHeightRelation = RelativeHeightRelation, RelativeWidth = RelativeWidth, RelativeWidthRelation = RelativeWidthRelation, RightBorder = RightBorder, RightBorderDistance = RightBorderDistance, RightMargin = RightMargin, ServerMap = ServerMap, ShadowFormat = ShadowFormat, ShadowTransparence = ShadowTransparence, Size = Size, SizeProtected = SizeProtected, Surround = Surround, SurroundAnchorOnly = SurroundAnchorOnly, Title = Title, TopBorder = TopBorder, TopBorderDistance = TopBorderDistance, TopMargin = TopMargin, UserDefinedAttributes = UserDefinedAttributes, VertOrient = VertOrient, VertOrientPosition = VertOrientPosition, VertOrientRelation = VertOrientRelation, Width = Width, WrapInfluenceOnPosition = WrapInfluenceOnPosition)
+  
+    __obj.asInstanceOf[BaseFrameProperties]
+  }
+}
+

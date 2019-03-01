@@ -63,3 +63,23 @@ trait CubeMapInfo extends js.Object {
   var up: Nullable[stdLib.ArrayBufferView]
 }
 
+object CubeMapInfo {
+  @scala.inline
+  def apply(
+    back: Nullable[stdLib.ArrayBufferView],
+    down: Nullable[stdLib.ArrayBufferView],
+    format: scala.Double,
+    front: Nullable[stdLib.ArrayBufferView],
+    gammaSpace: scala.Boolean,
+    left: Nullable[stdLib.ArrayBufferView],
+    right: Nullable[stdLib.ArrayBufferView],
+    size: scala.Double,
+    `type`: scala.Double,
+    up: Nullable[stdLib.ArrayBufferView]
+  ): CubeMapInfo = {
+    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], format = format, front = front.asInstanceOf[js.Any], gammaSpace = gammaSpace, left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], size = size, `type` = `type`, up = up.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CubeMapInfo]
+  }
+}
+

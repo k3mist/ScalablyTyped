@@ -42,3 +42,18 @@ trait ReplicaSet extends js.Object {
   val status: ReplicaSetStatus
 }
 
+object ReplicaSet {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: ReplicaSetSpec,
+    status: ReplicaSetStatus
+  ): ReplicaSet = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[ReplicaSet]
+  }
+}
+

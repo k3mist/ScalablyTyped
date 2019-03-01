@@ -10,3 +10,12 @@ trait Anon_RenderedEl extends js.Object {
   var renderedText: js.Any
 }
 
+object Anon_RenderedEl {
+  @scala.inline
+  def apply(renderedEl: js.Any, renderedText: js.Any): Anon_RenderedEl = {
+    val __obj = js.Dynamic.literal(renderedEl = renderedEl, renderedText = renderedText)
+  
+    __obj.asInstanceOf[Anon_RenderedEl]
+  }
+}
+

@@ -112,3 +112,39 @@ trait AXNode extends js.Object {
   var valuetext: java.lang.String
 }
 
+object AXNode {
+  @scala.inline
+  def apply(
+    autocomplete: java.lang.String,
+    checked: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed,
+    children: js.Array[AXNode],
+    description: java.lang.String,
+    disabled: scala.Boolean,
+    expanded: scala.Boolean,
+    focused: scala.Boolean,
+    haspopup: java.lang.String,
+    invalid: java.lang.String,
+    keyshortcuts: java.lang.String,
+    level: scala.Double,
+    modal: scala.Boolean,
+    multiline: scala.Boolean,
+    multiselectable: scala.Boolean,
+    name: java.lang.String,
+    orientation: java.lang.String,
+    pressed: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed,
+    readonly: scala.Boolean,
+    required: scala.Boolean,
+    role: java.lang.String,
+    roledescription: java.lang.String,
+    selected: scala.Boolean,
+    value: java.lang.String | scala.Double,
+    valuemax: scala.Double,
+    valuemin: scala.Double,
+    valuetext: java.lang.String
+  ): AXNode = {
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, checked = checked.asInstanceOf[js.Any], children = children, description = description, disabled = disabled, expanded = expanded, focused = focused, haspopup = haspopup, invalid = invalid, keyshortcuts = keyshortcuts, level = level, modal = modal, multiline = multiline, multiselectable = multiselectable, name = name, orientation = orientation, pressed = pressed.asInstanceOf[js.Any], readonly = readonly, required = required, role = role, roledescription = roledescription, selected = selected, value = value.asInstanceOf[js.Any], valuemax = valuemax, valuemin = valuemin, valuetext = valuetext)
+  
+    __obj.asInstanceOf[AXNode]
+  }
+}
+

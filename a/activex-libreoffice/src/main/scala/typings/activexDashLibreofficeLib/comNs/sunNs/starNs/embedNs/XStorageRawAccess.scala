@@ -63,3 +63,20 @@ trait XStorageRawAccess extends js.Object {
   ): scala.Unit
 }
 
+object XStorageRawAccess {
+  @scala.inline
+  def apply(
+    getPlainRawStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getRawEncrStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    insertRawEncrStreamElement: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Unit
+    ]
+  ): XStorageRawAccess = {
+    val __obj = js.Dynamic.literal(getPlainRawStreamElement = getPlainRawStreamElement, getRawEncrStreamElement = getRawEncrStreamElement, insertRawEncrStreamElement = insertRawEncrStreamElement)
+  
+    __obj.asInstanceOf[XStorageRawAccess]
+  }
+}
+

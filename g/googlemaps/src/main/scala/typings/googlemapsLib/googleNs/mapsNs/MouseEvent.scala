@@ -15,3 +15,12 @@ trait MouseEvent extends js.Object {
   def stop(): scala.Unit
 }
 
+object MouseEvent {
+  @scala.inline
+  def apply(latLng: LatLng, stop: js.Function0[scala.Unit]): MouseEvent = {
+    val __obj = js.Dynamic.literal(latLng = latLng, stop = stop)
+  
+    __obj.asInstanceOf[MouseEvent]
+  }
+}
+

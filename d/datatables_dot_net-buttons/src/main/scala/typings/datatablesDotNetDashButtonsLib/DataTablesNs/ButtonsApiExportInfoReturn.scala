@@ -12,3 +12,17 @@ trait ButtonsApiExportInfoReturn extends js.Object {
   var title: java.lang.String
 }
 
+object ButtonsApiExportInfoReturn {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    messageBottom: java.lang.String,
+    messageTop: java.lang.String,
+    title: java.lang.String
+  ): ButtonsApiExportInfoReturn = {
+    val __obj = js.Dynamic.literal(filename = filename, messageBottom = messageBottom, messageTop = messageTop, title = title)
+  
+    __obj.asInstanceOf[ButtonsApiExportInfoReturn]
+  }
+}
+

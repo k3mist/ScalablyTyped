@@ -13,3 +13,18 @@ trait Anon_AllowInInput extends js.Object {
   var stopPropagation: scala.Boolean
 }
 
+object Anon_AllowInInput {
+  @scala.inline
+  def apply(
+    allowInInput: scala.Boolean,
+    disabled: scala.Boolean,
+    global: scala.Boolean,
+    preventDefault: scala.Boolean,
+    stopPropagation: scala.Boolean
+  ): Anon_AllowInInput = {
+    val __obj = js.Dynamic.literal(allowInInput = allowInInput, disabled = disabled, global = global, preventDefault = preventDefault, stopPropagation = stopPropagation)
+  
+    __obj.asInstanceOf[Anon_AllowInInput]
+  }
+}
+

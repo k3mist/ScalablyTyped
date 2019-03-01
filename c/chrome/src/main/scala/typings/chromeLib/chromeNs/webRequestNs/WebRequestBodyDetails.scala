@@ -13,3 +13,23 @@ trait WebRequestBodyDetails extends WebRequestDetails {
   var requestBody: WebRequestBody
 }
 
+object WebRequestBodyDetails {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestBody: WebRequestBody,
+    requestId: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null
+  ): WebRequestBodyDetails = {
+    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestBody = requestBody, requestId = requestId, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    __obj.asInstanceOf[WebRequestBodyDetails]
+  }
+}
+

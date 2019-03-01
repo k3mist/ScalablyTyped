@@ -16,3 +16,21 @@ trait Anon_Cookie extends js.Object {
   var timeout: scala.Double
 }
 
+object Anon_Cookie {
+  @scala.inline
+  def apply(
+    cookie: java.lang.String,
+    entity: java.lang.String,
+    header: java.lang.String,
+    jwtStrategy: java.lang.String,
+    path: java.lang.String,
+    service: java.lang.String,
+    storageKey: java.lang.String,
+    timeout: scala.Double
+  ): Anon_Cookie = {
+    val __obj = js.Dynamic.literal(cookie = cookie, entity = entity, header = header, jwtStrategy = jwtStrategy, path = path, service = service, storageKey = storageKey, timeout = timeout)
+  
+    __obj.asInstanceOf[Anon_Cookie]
+  }
+}
+

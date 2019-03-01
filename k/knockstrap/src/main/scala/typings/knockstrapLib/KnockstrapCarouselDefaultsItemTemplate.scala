@@ -9,3 +9,16 @@ trait KnockstrapCarouselDefaultsItemTemplate extends KnockstrapDefaultsTemplateB
   def converter(value: js.Any): js.Any
 }
 
+object KnockstrapCarouselDefaultsItemTemplate {
+  @scala.inline
+  def apply(
+    converter: js.Function1[js.Any, js.Any],
+    name: java.lang.String,
+    templateEngine: KnockstrapStringTemplateEngine
+  ): KnockstrapCarouselDefaultsItemTemplate = {
+    val __obj = js.Dynamic.literal(converter = converter, name = name, templateEngine = templateEngine)
+  
+    __obj.asInstanceOf[KnockstrapCarouselDefaultsItemTemplate]
+  }
+}
+

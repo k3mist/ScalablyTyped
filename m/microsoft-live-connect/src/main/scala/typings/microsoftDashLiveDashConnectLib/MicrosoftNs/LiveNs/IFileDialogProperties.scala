@@ -30,3 +30,13 @@ trait IFileDialogProperties extends js.Object {
   var select: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFileDialogProperties {
+  @scala.inline
+  def apply(mode: java.lang.String, lightbox: java.lang.String = null, select: java.lang.String = null): IFileDialogProperties = {
+    val __obj = js.Dynamic.literal(mode = mode)
+    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox)
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[IFileDialogProperties]
+  }
+}
+

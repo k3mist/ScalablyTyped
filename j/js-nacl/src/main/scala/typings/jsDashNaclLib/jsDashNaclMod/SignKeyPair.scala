@@ -10,3 +10,12 @@ trait SignKeyPair extends js.Object {
   var signSk: SignerSecretKey
 }
 
+object SignKeyPair {
+  @scala.inline
+  def apply(signPk: SignerPublicKey, signSk: SignerSecretKey): SignKeyPair = {
+    val __obj = js.Dynamic.literal(signPk = signPk, signSk = signSk)
+  
+    __obj.asInstanceOf[SignKeyPair]
+  }
+}
+

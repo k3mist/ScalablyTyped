@@ -20,3 +20,16 @@ trait Anon_PageList extends js.Object {
   var totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object Anon_PageList {
+  @scala.inline
+  def apply(
+    pageList: reactLib.HTMLUListElement,
+    sizePerPageDropDown: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDown,
+    totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+  ): Anon_PageList = {
+    val __obj = js.Dynamic.literal(pageList = pageList, sizePerPageDropDown = sizePerPageDropDown, totalText = totalText.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_PageList]
+  }
+}
+

@@ -15,3 +15,20 @@ trait AccountInfo extends js.Object {
   var `type`: java.lang.String
 }
 
+object AccountInfo {
+  @scala.inline
+  def apply(
+    downloadBandwidthTotal: scala.Double,
+    downloadBandwidthUsed: scala.Double,
+    sharedBandwidthLimit: scala.Double,
+    sharedBandwidthUsed: scala.Double,
+    spaceTotal: scala.Double,
+    spaceUsed: scala.Double,
+    `type`: java.lang.String
+  ): AccountInfo = {
+    val __obj = js.Dynamic.literal(downloadBandwidthTotal = downloadBandwidthTotal, downloadBandwidthUsed = downloadBandwidthUsed, sharedBandwidthLimit = sharedBandwidthLimit, sharedBandwidthUsed = sharedBandwidthUsed, spaceTotal = spaceTotal, spaceUsed = spaceUsed, `type` = `type`)
+  
+    __obj.asInstanceOf[AccountInfo]
+  }
+}
+

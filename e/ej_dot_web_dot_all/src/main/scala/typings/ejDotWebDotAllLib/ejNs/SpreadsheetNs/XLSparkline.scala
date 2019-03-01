@@ -37,3 +37,16 @@ trait XLSparkline extends js.Object {
   ): scala.Unit
 }
 
+object XLSparkline {
+  @scala.inline
+  def apply(
+    changePointColor: js.Function3[java.lang.String, js.Any, scala.Double, scala.Unit],
+    changeType: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
+    createSparkline: js.Function5[java.lang.String, java.lang.String, java.lang.String, js.Any, scala.Double, scala.Unit]
+  ): XLSparkline = {
+    val __obj = js.Dynamic.literal(changePointColor = changePointColor, changeType = changeType, createSparkline = createSparkline)
+  
+    __obj.asInstanceOf[XLSparkline]
+  }
+}
+

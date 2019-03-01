@@ -13,3 +13,18 @@ trait Response extends js.Object {
   def onclose(): scala.Unit
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    body: qDashIoLib.QioNs.Reader,
+    headers: Headers,
+    node: js.Any,
+    onclose: js.Function0[scala.Unit],
+    status: scala.Double
+  ): Response = {
+    val __obj = js.Dynamic.literal(body = body, headers = headers, node = node, onclose = onclose, status = status)
+  
+    __obj.asInstanceOf[Response]
+  }
+}
+

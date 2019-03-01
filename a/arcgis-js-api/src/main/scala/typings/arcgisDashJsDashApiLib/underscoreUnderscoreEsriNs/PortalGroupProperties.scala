@@ -76,3 +76,34 @@ trait PortalGroupProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortalGroupProperties {
+  @scala.inline
+  def apply(
+    access: java.lang.String = null,
+    created: DateProperties = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    isInvitationOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    modified: DateProperties = null,
+    owner: java.lang.String = null,
+    portal: PortalProperties = null,
+    snippet: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null,
+    title: java.lang.String = null
+  ): PortalGroupProperties = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isInvitationOnly)) __obj.updateDynamic("isInvitationOnly")(isInvitationOnly)
+    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PortalGroupProperties]
+  }
+}
+

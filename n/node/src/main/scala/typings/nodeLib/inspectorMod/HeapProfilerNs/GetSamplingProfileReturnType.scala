@@ -12,3 +12,12 @@ trait GetSamplingProfileReturnType extends js.Object {
   var profile: SamplingHeapProfile
 }
 
+object GetSamplingProfileReturnType {
+  @scala.inline
+  def apply(profile: SamplingHeapProfile): GetSamplingProfileReturnType = {
+    val __obj = js.Dynamic.literal(profile = profile)
+  
+    __obj.asInstanceOf[GetSamplingProfileReturnType]
+  }
+}
+

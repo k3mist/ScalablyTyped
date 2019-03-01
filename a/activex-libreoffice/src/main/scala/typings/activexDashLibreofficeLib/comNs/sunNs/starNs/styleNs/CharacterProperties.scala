@@ -280,3 +280,77 @@ trait CharacterProperties extends js.Object {
   var VisitedCharStyleName: java.lang.String
 }
 
+object CharacterProperties {
+  @scala.inline
+  def apply(
+    CharAutoKerning: scala.Boolean,
+    CharBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharBackTransparent: scala.Boolean,
+    CharBorderDistance: scala.Double,
+    CharBottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharBottomBorderDistance: scala.Double,
+    CharCaseMap: scala.Double,
+    CharColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharCombineIsOn: scala.Boolean,
+    CharCombinePrefix: java.lang.String,
+    CharCombineSuffix: java.lang.String,
+    CharContoured: scala.Boolean,
+    CharCrossedOut: scala.Boolean,
+    CharEmphasis: scala.Double,
+    CharEscapement: scala.Double,
+    CharEscapementHeight: scala.Double,
+    CharFlash: scala.Boolean,
+    CharFontCharSet: scala.Double,
+    CharFontFamily: scala.Double,
+    CharFontName: java.lang.String,
+    CharFontPitch: scala.Double,
+    CharFontStyleName: java.lang.String,
+    CharFontType: scala.Double,
+    CharHeight: scala.Double,
+    CharHidden: scala.Boolean,
+    CharHighlight: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CharKeepTogether: scala.Boolean,
+    CharKerning: scala.Double,
+    CharLeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharLeftBorderDistance: scala.Double,
+    CharLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharNoHyphenation: scala.Boolean,
+    CharNoLineBreak: scala.Boolean,
+    CharPosture: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharRelief: scala.Double,
+    CharRightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharRightBorderDistance: scala.Double,
+    CharRotation: scala.Double,
+    CharRotationIsFitToLine: scala.Boolean,
+    CharScaleWidth: scala.Double,
+    CharShadingValue: scala.Double,
+    CharShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    CharShadowed: scala.Boolean,
+    CharStrikeout: scala.Double,
+    CharStyleName: java.lang.String,
+    CharStyleNames: activexDashInteropLib.SafeArray[java.lang.String],
+    CharTopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharTopBorderDistance: scala.Double,
+    CharUnderline: scala.Double,
+    CharUnderlineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharUnderlineHasColor: scala.Boolean,
+    CharWeight: scala.Double,
+    CharWordMode: scala.Boolean,
+    HyperLinkName: java.lang.String,
+    HyperLinkTarget: java.lang.String,
+    HyperLinkURL: java.lang.String,
+    RubyAdjust: scala.Double,
+    RubyCharStyleName: java.lang.String,
+    RubyIsAbove: scala.Boolean,
+    RubyText: java.lang.String,
+    TextUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    UnvisitedCharStyleName: java.lang.String,
+    VisitedCharStyleName: java.lang.String
+  ): CharacterProperties = {
+    val __obj = js.Dynamic.literal(CharAutoKerning = CharAutoKerning, CharBackColor = CharBackColor, CharBackTransparent = CharBackTransparent, CharBorderDistance = CharBorderDistance, CharBottomBorder = CharBottomBorder, CharBottomBorderDistance = CharBottomBorderDistance, CharCaseMap = CharCaseMap, CharColor = CharColor, CharCombineIsOn = CharCombineIsOn, CharCombinePrefix = CharCombinePrefix, CharCombineSuffix = CharCombineSuffix, CharContoured = CharContoured, CharCrossedOut = CharCrossedOut, CharEmphasis = CharEmphasis, CharEscapement = CharEscapement, CharEscapementHeight = CharEscapementHeight, CharFlash = CharFlash, CharFontCharSet = CharFontCharSet, CharFontFamily = CharFontFamily, CharFontName = CharFontName, CharFontPitch = CharFontPitch, CharFontStyleName = CharFontStyleName, CharFontType = CharFontType, CharHeight = CharHeight, CharHidden = CharHidden, CharHighlight = CharHighlight, CharInteropGrabBag = CharInteropGrabBag, CharKeepTogether = CharKeepTogether, CharKerning = CharKerning, CharLeftBorder = CharLeftBorder, CharLeftBorderDistance = CharLeftBorderDistance, CharLocale = CharLocale, CharNoHyphenation = CharNoHyphenation, CharNoLineBreak = CharNoLineBreak, CharPosture = CharPosture, CharRelief = CharRelief, CharRightBorder = CharRightBorder, CharRightBorderDistance = CharRightBorderDistance, CharRotation = CharRotation, CharRotationIsFitToLine = CharRotationIsFitToLine, CharScaleWidth = CharScaleWidth, CharShadingValue = CharShadingValue, CharShadowFormat = CharShadowFormat, CharShadowed = CharShadowed, CharStrikeout = CharStrikeout, CharStyleName = CharStyleName, CharStyleNames = CharStyleNames, CharTopBorder = CharTopBorder, CharTopBorderDistance = CharTopBorderDistance, CharUnderline = CharUnderline, CharUnderlineColor = CharUnderlineColor, CharUnderlineHasColor = CharUnderlineHasColor, CharWeight = CharWeight, CharWordMode = CharWordMode, HyperLinkName = HyperLinkName, HyperLinkTarget = HyperLinkTarget, HyperLinkURL = HyperLinkURL, RubyAdjust = RubyAdjust, RubyCharStyleName = RubyCharStyleName, RubyIsAbove = RubyIsAbove, RubyText = RubyText, TextUserDefinedAttributes = TextUserDefinedAttributes, UnvisitedCharStyleName = UnvisitedCharStyleName, VisitedCharStyleName = VisitedCharStyleName)
+  
+    __obj.asInstanceOf[CharacterProperties]
+  }
+}
+

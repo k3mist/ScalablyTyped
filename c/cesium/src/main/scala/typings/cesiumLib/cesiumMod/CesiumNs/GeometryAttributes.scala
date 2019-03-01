@@ -14,3 +14,19 @@ trait GeometryAttributes extends js.Object {
   var tangent: GeometryAttribute
 }
 
+object GeometryAttributes {
+  @scala.inline
+  def apply(
+    binormal: GeometryAttribute,
+    color: GeometryAttribute,
+    normal: GeometryAttribute,
+    position: GeometryAttribute,
+    st: GeometryAttribute,
+    tangent: GeometryAttribute
+  ): GeometryAttributes = {
+    val __obj = js.Dynamic.literal(binormal = binormal, color = color, normal = normal, position = position, st = st, tangent = tangent)
+  
+    __obj.asInstanceOf[GeometryAttributes]
+  }
+}
+

@@ -56,3 +56,39 @@ trait XCurrencyField
   def setValue(Value: scala.Double): scala.Unit
 }
 
+object XCurrencyField {
+  @scala.inline
+  def apply(
+    DecimalDigits: scala.Double,
+    First: scala.Double,
+    Last: scala.Double,
+    Max: scala.Double,
+    Min: scala.Double,
+    SpinSize: scala.Double,
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getDecimalDigits: js.Function0[scala.Double],
+    getFirst: js.Function0[scala.Double],
+    getLast: js.Function0[scala.Double],
+    getMax: js.Function0[scala.Double],
+    getMin: js.Function0[scala.Double],
+    getSpinSize: js.Function0[scala.Double],
+    getValue: js.Function0[scala.Double],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDecimalDigits: js.Function1[scala.Double, scala.Unit],
+    setFirst: js.Function1[scala.Double, scala.Unit],
+    setLast: js.Function1[scala.Double, scala.Unit],
+    setMax: js.Function1[scala.Double, scala.Unit],
+    setMin: js.Function1[scala.Double, scala.Unit],
+    setSpinSize: js.Function1[scala.Double, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): XCurrencyField = {
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, First = First, Last = Last, Max = Max, Min = Min, SpinSize = SpinSize, Value = Value, acquire = acquire, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setValue = setValue)
+  
+    __obj.asInstanceOf[XCurrencyField]
+  }
+}
+

@@ -25,3 +25,12 @@ trait Exception extends js.Object {
   var Message: java.lang.String
 }
 
+object Exception {
+  @scala.inline
+  def apply(Context: XInterface, Message: java.lang.String): Exception = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message)
+  
+    __obj.asInstanceOf[Exception]
+  }
+}
+

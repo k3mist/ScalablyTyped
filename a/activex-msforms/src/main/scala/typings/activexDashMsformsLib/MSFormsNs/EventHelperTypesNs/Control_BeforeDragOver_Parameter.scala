@@ -15,3 +15,20 @@ trait Control_BeforeDragOver_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object Control_BeforeDragOver_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    DragState: activexDashMsformsLib.MSFormsNs.fmDragState,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Shift: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): Control_BeforeDragOver_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Data = Data, DragState = DragState, Effect = Effect, Shift = Shift, X = X, Y = Y)
+  
+    __obj.asInstanceOf[Control_BeforeDragOver_Parameter]
+  }
+}
+

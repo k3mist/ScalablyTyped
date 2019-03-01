@@ -12,3 +12,12 @@ trait Direction3D extends js.Object {
   var DirectionZ: scala.Double
 }
 
+object Direction3D {
+  @scala.inline
+  def apply(DirectionX: scala.Double, DirectionY: scala.Double, DirectionZ: scala.Double): Direction3D = {
+    val __obj = js.Dynamic.literal(DirectionX = DirectionX, DirectionY = DirectionY, DirectionZ = DirectionZ)
+  
+    __obj.asInstanceOf[Direction3D]
+  }
+}
+

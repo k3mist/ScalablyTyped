@@ -20,3 +20,12 @@ trait HostPortRange extends js.Object {
   val min: scala.Double
 }
 
+object HostPortRange {
+  @scala.inline
+  def apply(max: scala.Double, min: scala.Double): HostPortRange = {
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
+    __obj.asInstanceOf[HostPortRange]
+  }
+}
+

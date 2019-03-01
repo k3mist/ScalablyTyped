@@ -38,3 +38,34 @@ trait ASPxClientRecurrenceRangeControl extends ASPxClientControl {
   def SetRange(range: ASPxClientRecurrenceRange): scala.Unit
 }
 
+object ASPxClientRecurrenceRangeControl {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetEndDate: js.Function0[stdLib.Date],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetOccurrenceCount: js.Function0[scala.Double],
+    GetParentControl: js.Function0[js.Object],
+    GetRange: js.Function0[ASPxClientRecurrenceRange],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetEndDate: js.Function1[stdLib.Date, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetOccurrenceCount: js.Function1[scala.Double, scala.Unit],
+    SetRange: js.Function1[ASPxClientRecurrenceRange, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientRecurrenceRangeControl = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetEndDate = GetEndDate, GetHeight = GetHeight, GetMainElement = GetMainElement, GetOccurrenceCount = GetOccurrenceCount, GetParentControl = GetParentControl, GetRange = GetRange, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetEndDate = SetEndDate, SetHeight = SetHeight, SetOccurrenceCount = SetOccurrenceCount, SetRange = SetRange, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
+    __obj.asInstanceOf[ASPxClientRecurrenceRangeControl]
+  }
+}
+

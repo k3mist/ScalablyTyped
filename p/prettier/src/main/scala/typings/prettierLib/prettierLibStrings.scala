@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object prettierLibStrings {
   @js.native
-  sealed trait `'` extends js.Object
+  sealed trait _quote extends js.Object
   
   @js.native
   sealed trait BACKSLASH extends js.Object
@@ -173,7 +173,7 @@ object prettierLibStrings {
     extends prettierLib.prettierMod.BuiltInParserName
   
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
   @scala.inline

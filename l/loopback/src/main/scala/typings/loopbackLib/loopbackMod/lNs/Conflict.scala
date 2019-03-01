@@ -106,3 +106,42 @@ trait Conflict extends js.Object {
   def `type`(callback: js.Function2[/* err */ nodeLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit
 }
 
+object Conflict {
+  @scala.inline
+  def apply(
+    changes: js.Function1[
+      js.Function3[
+        /* err */ nodeLib.Error, 
+        /* sourceChange */ Change, 
+        /* targetChange */ Change, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    models: js.Function1[
+      js.Function3[
+        /* err */ nodeLib.Error, 
+        /* source */ PersistedModel, 
+        /* target */ PersistedModel, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    resolve: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
+    resolveManually: js.Function2[js.Any, js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
+    resolveUsingSource: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
+    resolveUsingTarget: js.Function1[js.Function1[/* err */ nodeLib.Error, scala.Unit], scala.Unit],
+    source: js.Any,
+    swapParties: js.Function0[Conflict],
+    target: js.Any,
+    `type`: js.Function1[
+      js.Function2[/* err */ nodeLib.Error, /* type */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ]
+  ): Conflict = {
+    val __obj = js.Dynamic.literal(changes = changes, models = models, resolve = resolve, resolveManually = resolveManually, resolveUsingSource = resolveUsingSource, resolveUsingTarget = resolveUsingTarget, source = source, swapParties = swapParties, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Conflict]
+  }
+}
+

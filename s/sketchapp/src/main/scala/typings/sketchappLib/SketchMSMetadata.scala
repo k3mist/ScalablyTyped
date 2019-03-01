@@ -20,3 +20,25 @@ trait SketchMSMetadata extends js.Object {
   var version: scala.Double
 }
 
+object SketchMSMetadata {
+  @scala.inline
+  def apply(
+    app: java.lang.String,
+    appVersion: java.lang.String,
+    autosaved: scala.Double,
+    build: scala.Double,
+    commit: java.lang.String,
+    compatibilityVersion: scala.Double,
+    created: Anon_App,
+    fonts: js.Array[java.lang.String],
+    pagesAndArtboards: SketchMSPagesAndArtboards,
+    saveHistory: js.Array[java.lang.String],
+    variant: java.lang.String,
+    version: scala.Double
+  ): SketchMSMetadata = {
+    val __obj = js.Dynamic.literal(app = app, appVersion = appVersion, autosaved = autosaved, build = build, commit = commit, compatibilityVersion = compatibilityVersion, created = created, fonts = fonts, pagesAndArtboards = pagesAndArtboards, saveHistory = saveHistory, variant = variant, version = version)
+  
+    __obj.asInstanceOf[SketchMSMetadata]
+  }
+}
+

@@ -18,3 +18,18 @@ trait Restrictions extends js.Object {
   def maxTVShowRatingForCountry(countryCode: java.lang.String): java.lang.String
 }
 
+object Restrictions {
+  @scala.inline
+  def apply(
+    allowsExplicit: scala.Boolean,
+    maxMovieRank: scala.Double,
+    maxMovieRatingForCountry: js.Function1[java.lang.String, java.lang.String],
+    maxTVShowRank: scala.Double,
+    maxTVShowRatingForCountry: js.Function1[java.lang.String, java.lang.String]
+  ): Restrictions = {
+    val __obj = js.Dynamic.literal(allowsExplicit = allowsExplicit, maxMovieRank = maxMovieRank, maxMovieRatingForCountry = maxMovieRatingForCountry, maxTVShowRank = maxTVShowRank, maxTVShowRatingForCountry = maxTVShowRatingForCountry)
+  
+    __obj.asInstanceOf[Restrictions]
+  }
+}
+

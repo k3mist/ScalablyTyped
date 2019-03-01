@@ -32,3 +32,20 @@ trait PrintParametersProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 
+object PrintParametersProperties {
+  @scala.inline
+  def apply(
+    extraParameters: js.Any = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    template: PrintTemplateProperties = null,
+    view: MapViewProperties = null
+  ): PrintParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (extraParameters != null) __obj.updateDynamic("extraParameters")(extraParameters)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[PrintParametersProperties]
+  }
+}
+

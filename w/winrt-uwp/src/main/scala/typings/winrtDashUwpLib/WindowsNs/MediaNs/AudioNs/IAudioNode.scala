@@ -34,3 +34,23 @@ trait IAudioNode
   def stop(): scala.Unit
 }
 
+object IAudioNode {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    consumeInput: scala.Boolean,
+    disableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    effectDefinitions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition],
+    enableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties,
+    outgoingGain: scala.Double,
+    reset: js.Function0[scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): IAudioNode = {
+    val __obj = js.Dynamic.literal(close = close, consumeInput = consumeInput, disableEffectsByDefinition = disableEffectsByDefinition, effectDefinitions = effectDefinitions, enableEffectsByDefinition = enableEffectsByDefinition, encodingProperties = encodingProperties, outgoingGain = outgoingGain, reset = reset, start = start, stop = stop)
+  
+    __obj.asInstanceOf[IAudioNode]
+  }
+}
+

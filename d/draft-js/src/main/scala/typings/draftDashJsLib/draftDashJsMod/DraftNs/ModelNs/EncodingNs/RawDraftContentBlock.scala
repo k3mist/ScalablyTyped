@@ -19,3 +19,20 @@ trait RawDraftContentBlock extends js.Object {
   var `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
 }
 
+object RawDraftContentBlock {
+  @scala.inline
+  def apply(
+    depth: scala.Double,
+    entityRanges: js.Array[RawDraftEntityRange],
+    inlineStyleRanges: js.Array[RawDraftInlineStyleRange],
+    key: java.lang.String,
+    text: java.lang.String,
+    `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType,
+    data: js.Object = null
+  ): RawDraftContentBlock = {
+    val __obj = js.Dynamic.literal(depth = depth, entityRanges = entityRanges, inlineStyleRanges = inlineStyleRanges, key = key, text = text, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[RawDraftContentBlock]
+  }
+}
+

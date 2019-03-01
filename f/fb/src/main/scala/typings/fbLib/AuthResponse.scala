@@ -12,3 +12,17 @@ trait AuthResponse extends js.Object {
   var userID: java.lang.String
 }
 
+object AuthResponse {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    expiresIn: scala.Double,
+    signedRequest: java.lang.String,
+    userID: java.lang.String
+  ): AuthResponse = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, signedRequest = signedRequest, userID = userID)
+  
+    __obj.asInstanceOf[AuthResponse]
+  }
+}
+

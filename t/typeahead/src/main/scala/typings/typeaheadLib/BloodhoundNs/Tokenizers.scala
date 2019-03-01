@@ -23,3 +23,16 @@ trait Tokenizers extends js.Object {
   def whitespace(str: java.lang.String): js.Array[java.lang.String]
 }
 
+object Tokenizers {
+  @scala.inline
+  def apply(
+    nonword: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    obj: ObjTokenizer,
+    whitespace: js.Function1[java.lang.String, js.Array[java.lang.String]]
+  ): Tokenizers = {
+    val __obj = js.Dynamic.literal(nonword = nonword, obj = obj, whitespace = whitespace)
+  
+    __obj.asInstanceOf[Tokenizers]
+  }
+}
+

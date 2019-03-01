@@ -32,3 +32,22 @@ trait AudioTrackOptions extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AudioTrackOptions {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackNs.Kind = null,
+    label: java.lang.String = null,
+    language: java.lang.String = null
+  ): AudioTrackOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (language != null) __obj.updateDynamic("language")(language)
+    __obj.asInstanceOf[AudioTrackOptions]
+  }
+}
+

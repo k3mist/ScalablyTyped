@@ -53,3 +53,22 @@ trait ASPxClientRibbonItem extends js.Object {
   def SetValue(value: js.Object): scala.Unit
 }
 
+object ASPxClientRibbonItem {
+  @scala.inline
+  def apply(
+    GetEnabled: js.Function0[scala.Boolean],
+    GetValue: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetValue: js.Function1[js.Object, scala.Unit],
+    group: ASPxClientRibbonGroup,
+    index: scala.Double,
+    name: java.lang.String,
+    ribbon: ASPxClientRibbon
+  ): ASPxClientRibbonItem = {
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetValue = GetValue, GetVisible = GetVisible, SetEnabled = SetEnabled, SetValue = SetValue, group = group, index = index, name = name, ribbon = ribbon)
+  
+    __obj.asInstanceOf[ASPxClientRibbonItem]
+  }
+}
+

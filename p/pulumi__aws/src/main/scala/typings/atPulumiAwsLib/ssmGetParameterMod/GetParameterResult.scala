@@ -15,3 +15,12 @@ trait GetParameterResult extends js.Object {
   val value: java.lang.String
 }
 
+object GetParameterResult {
+  @scala.inline
+  def apply(arn: java.lang.String, id: java.lang.String, `type`: java.lang.String, value: java.lang.String): GetParameterResult = {
+    val __obj = js.Dynamic.literal(arn = arn, id = id, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[GetParameterResult]
+  }
+}
+

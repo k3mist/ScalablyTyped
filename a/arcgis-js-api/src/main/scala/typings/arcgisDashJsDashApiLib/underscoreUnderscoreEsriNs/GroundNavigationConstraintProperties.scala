@@ -22,3 +22,17 @@ trait GroundNavigationConstraintProperties
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GroundNavigationConstraintProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String = null
+  ): GroundNavigationConstraintProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GroundNavigationConstraintProperties]
+  }
+}
+

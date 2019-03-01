@@ -12,3 +12,16 @@ trait DataViewRoleWildcard extends DataRepetitionSelector {
   var roles: js.Array[java.lang.String]
 }
 
+object DataViewRoleWildcard {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind,
+    roles: js.Array[java.lang.String]
+  ): DataViewRoleWildcard = {
+    val __obj = js.Dynamic.literal(key = key, kind = kind, roles = roles)
+  
+    __obj.asInstanceOf[DataViewRoleWildcard]
+  }
+}
+

@@ -30,3 +30,23 @@ trait ITemplateScope extends js.Object {
   var to: ITemplateOptions
 }
 
+object ITemplateScope {
+  @scala.inline
+  def apply(
+    fc: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController],
+    fields: IFieldArray,
+    form: js.Any,
+    formState: js.Object,
+    id: java.lang.String,
+    index: scala.Double,
+    options: ITemplateScopeOptions,
+    showError: scala.Boolean,
+    to: ITemplateOptions,
+    model: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ITemplateScope = {
+    val __obj = js.Dynamic.literal(fc = fc.asInstanceOf[js.Any], fields = fields, form = form, formState = formState, id = id, index = index, options = options, showError = showError, to = to)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITemplateScope]
+  }
+}
+

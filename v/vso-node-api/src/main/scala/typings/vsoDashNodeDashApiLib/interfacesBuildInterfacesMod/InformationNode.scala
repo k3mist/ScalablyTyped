@@ -32,3 +32,19 @@ trait InformationNode extends js.Object {
   var `type`: java.lang.String
 }
 
+object InformationNode {
+  @scala.inline
+  def apply(
+    fields: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    lastModifiedBy: java.lang.String,
+    lastModifiedDate: stdLib.Date,
+    nodeId: scala.Double,
+    parentId: scala.Double,
+    `type`: java.lang.String
+  ): InformationNode = {
+    val __obj = js.Dynamic.literal(fields = fields, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, nodeId = nodeId, parentId = parentId, `type` = `type`)
+  
+    __obj.asInstanceOf[InformationNode]
+  }
+}
+

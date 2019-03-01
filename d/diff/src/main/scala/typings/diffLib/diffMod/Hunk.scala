@@ -13,3 +13,18 @@ trait Hunk extends js.Object {
   var oldStart: scala.Double
 }
 
+object Hunk {
+  @scala.inline
+  def apply(
+    lines: js.Array[java.lang.String],
+    newLines: scala.Double,
+    newStart: scala.Double,
+    oldLines: scala.Double,
+    oldStart: scala.Double
+  ): Hunk = {
+    val __obj = js.Dynamic.literal(lines = lines, newLines = newLines, newStart = newStart, oldLines = oldLines, oldStart = oldStart)
+  
+    __obj.asInstanceOf[Hunk]
+  }
+}
+

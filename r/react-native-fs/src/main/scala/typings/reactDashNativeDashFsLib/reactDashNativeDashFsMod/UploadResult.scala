@@ -16,3 +16,12 @@ trait UploadResult extends js.Object {
   var statusCode: scala.Double
 }
 
+object UploadResult {
+  @scala.inline
+  def apply(body: java.lang.String, headers: Headers, jobId: scala.Double, statusCode: scala.Double): UploadResult = {
+    val __obj = js.Dynamic.literal(body = body, headers = headers, jobId = jobId, statusCode = statusCode)
+  
+    __obj.asInstanceOf[UploadResult]
+  }
+}
+

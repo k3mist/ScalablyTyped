@@ -9,3 +9,12 @@ trait RiskAnalysisResource extends js.Object {
   var operations: OperationsResource
 }
 
+object RiskAnalysisResource {
+  @scala.inline
+  def apply(operations: OperationsResource): RiskAnalysisResource = {
+    val __obj = js.Dynamic.literal(operations = operations)
+  
+    __obj.asInstanceOf[RiskAnalysisResource]
+  }
+}
+

@@ -13,3 +13,12 @@ trait CoreTextRange extends js.Object {
   var startCaretPosition: scala.Double
 }
 
+object CoreTextRange {
+  @scala.inline
+  def apply(endCaretPosition: scala.Double, startCaretPosition: scala.Double): CoreTextRange = {
+    val __obj = js.Dynamic.literal(endCaretPosition = endCaretPosition, startCaretPosition = startCaretPosition)
+  
+    __obj.asInstanceOf[CoreTextRange]
+  }
+}
+

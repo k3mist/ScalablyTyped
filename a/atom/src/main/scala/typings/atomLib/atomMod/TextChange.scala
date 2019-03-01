@@ -15,3 +15,20 @@ trait TextChange extends js.Object {
   var start: Point
 }
 
+object TextChange {
+  @scala.inline
+  def apply(
+    newExtent: Point,
+    newRange: Range,
+    newText: java.lang.String,
+    oldExtent: Point,
+    oldRange: Range,
+    oldText: java.lang.String,
+    start: Point
+  ): TextChange = {
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newRange = newRange, newText = newText, oldExtent = oldExtent, oldRange = oldRange, oldText = oldText, start = start)
+  
+    __obj.asInstanceOf[TextChange]
+  }
+}
+

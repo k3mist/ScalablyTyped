@@ -20,3 +20,12 @@ trait Anon_PathPatternIndex extends js.Object {
   var stat: adoneLib.adoneNs.fsNs.INs.Stats
 }
 
+object Anon_PathPatternIndex {
+  @scala.inline
+  def apply(path: java.lang.String, patternIndex: scala.Double, stat: adoneLib.adoneNs.fsNs.INs.Stats): Anon_PathPatternIndex = {
+    val __obj = js.Dynamic.literal(path = path, patternIndex = patternIndex, stat = stat)
+  
+    __obj.asInstanceOf[Anon_PathPatternIndex]
+  }
+}
+

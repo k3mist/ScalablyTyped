@@ -13,3 +13,18 @@ trait EventListener extends js.Object {
   var ListenerType: java.lang.String
 }
 
+object EventListener {
+  @scala.inline
+  def apply(
+    AddListenerParam: java.lang.String,
+    AllListener: XAllListener,
+    EventMethod: java.lang.String,
+    Helper: js.Any,
+    ListenerType: java.lang.String
+  ): EventListener = {
+    val __obj = js.Dynamic.literal(AddListenerParam = AddListenerParam, AllListener = AllListener, EventMethod = EventMethod, Helper = Helper, ListenerType = ListenerType)
+  
+    __obj.asInstanceOf[EventListener]
+  }
+}
+

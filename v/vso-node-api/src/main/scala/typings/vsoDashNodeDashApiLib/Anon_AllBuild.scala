@@ -11,3 +11,12 @@ trait Anon_AllBuild extends js.Object {
   var release: scala.Double
 }
 
+object Anon_AllBuild {
+  @scala.inline
+  def apply(all: scala.Double, build: scala.Double, release: scala.Double): Anon_AllBuild = {
+    val __obj = js.Dynamic.literal(all = all, build = build, release = release)
+  
+    __obj.asInstanceOf[Anon_AllBuild]
+  }
+}
+

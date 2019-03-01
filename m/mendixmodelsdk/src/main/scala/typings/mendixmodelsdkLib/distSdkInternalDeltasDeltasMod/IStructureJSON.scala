@@ -15,3 +15,18 @@ trait IStructureJSON
   var $Type: java.lang.String
 }
 
+object IStructureJSON {
+  @scala.inline
+  def apply(
+    $ID: java.lang.String,
+    $Type: java.lang.String,
+    StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[
+      PrimitiveValue | js.Array[PrimitiveValue] | IStructureJSON | js.Array[IStructureJSON] | scala.Null
+    ] = null
+  ): IStructureJSON = {
+    val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IStructureJSON]
+  }
+}
+

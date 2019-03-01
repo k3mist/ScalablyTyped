@@ -11,3 +11,12 @@ trait FfprobeData extends js.Object {
   var streams: js.Array[_]
 }
 
+object FfprobeData {
+  @scala.inline
+  def apply(chapters: js.Array[_], format: js.Any, streams: js.Array[_]): FfprobeData = {
+    val __obj = js.Dynamic.literal(chapters = chapters, format = format, streams = streams)
+  
+    __obj.asInstanceOf[FfprobeData]
+  }
+}
+

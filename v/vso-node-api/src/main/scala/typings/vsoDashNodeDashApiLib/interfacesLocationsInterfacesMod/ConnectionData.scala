@@ -36,3 +36,20 @@ trait ConnectionData extends js.Object {
   var webApplicationRelativeDirectory: java.lang.String
 }
 
+object ConnectionData {
+  @scala.inline
+  def apply(
+    authenticatedUser: vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.Identity,
+    authorizedUser: vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.Identity,
+    deploymentId: java.lang.String,
+    instanceId: java.lang.String,
+    lastUserAccess: stdLib.Date,
+    locationServiceData: LocationServiceData,
+    webApplicationRelativeDirectory: java.lang.String
+  ): ConnectionData = {
+    val __obj = js.Dynamic.literal(authenticatedUser = authenticatedUser, authorizedUser = authorizedUser, deploymentId = deploymentId, instanceId = instanceId, lastUserAccess = lastUserAccess, locationServiceData = locationServiceData, webApplicationRelativeDirectory = webApplicationRelativeDirectory)
+  
+    __obj.asInstanceOf[ConnectionData]
+  }
+}
+

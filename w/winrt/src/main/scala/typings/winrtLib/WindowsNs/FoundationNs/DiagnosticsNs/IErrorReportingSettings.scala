@@ -10,3 +10,15 @@ trait IErrorReportingSettings extends js.Object {
   def setErrorOptions(value: ErrorOptions): scala.Unit
 }
 
+object IErrorReportingSettings {
+  @scala.inline
+  def apply(
+    getErrorOptions: js.Function0[ErrorOptions],
+    setErrorOptions: js.Function1[ErrorOptions, scala.Unit]
+  ): IErrorReportingSettings = {
+    val __obj = js.Dynamic.literal(getErrorOptions = getErrorOptions, setErrorOptions = setErrorOptions)
+  
+    __obj.asInstanceOf[IErrorReportingSettings]
+  }
+}
+

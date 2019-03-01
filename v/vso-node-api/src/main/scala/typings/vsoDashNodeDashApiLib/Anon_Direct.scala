@@ -13,3 +13,18 @@ trait Anon_Direct extends js.Object {
   var none: scala.Double
 }
 
+object Anon_Direct {
+  @scala.inline
+  def apply(
+    direct: scala.Double,
+    expanded: scala.Double,
+    expandedDown: scala.Double,
+    expandedUp: scala.Double,
+    none: scala.Double
+  ): Anon_Direct = {
+    val __obj = js.Dynamic.literal(direct = direct, expanded = expanded, expandedDown = expandedDown, expandedUp = expandedUp, none = none)
+  
+    __obj.asInstanceOf[Anon_Direct]
+  }
+}
+

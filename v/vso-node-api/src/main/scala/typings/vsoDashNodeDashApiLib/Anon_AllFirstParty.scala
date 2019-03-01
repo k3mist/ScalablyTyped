@@ -15,3 +15,20 @@ trait Anon_AllFirstParty extends js.Object {
   var released: scala.Double
 }
 
+object Anon_AllFirstParty {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    firstParty: scala.Double,
+    none: scala.Double,
+    preview: scala.Double,
+    `private`: scala.Double,
+    public: scala.Double,
+    released: scala.Double
+  ): Anon_AllFirstParty = {
+    val __obj = js.Dynamic.literal(all = all, firstParty = firstParty, none = none, preview = preview, `private` = `private`, public = public, released = released)
+  
+    __obj.asInstanceOf[Anon_AllFirstParty]
+  }
+}
+

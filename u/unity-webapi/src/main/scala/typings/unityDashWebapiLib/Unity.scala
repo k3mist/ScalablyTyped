@@ -16,3 +16,21 @@ trait Unity extends js.Object {
   def removeActions(): js.Any
 }
 
+object Unity {
+  @scala.inline
+  def apply(
+    Launcher: UnityLauncher,
+    MediaPlayer: UnityMediaPlayer,
+    MessagingIndicator: UnityMessagingIndicator,
+    Notification: UnityNotification,
+    addAction: js.Function2[java.lang.String, js.Function, js.Any],
+    init: js.Function1[UnitySettings, js.Any],
+    removeAction: js.Function1[java.lang.String, js.Any],
+    removeActions: js.Function0[js.Any]
+  ): Unity = {
+    val __obj = js.Dynamic.literal(Launcher = Launcher, MediaPlayer = MediaPlayer, MessagingIndicator = MessagingIndicator, Notification = Notification, addAction = addAction, init = init, removeAction = removeAction, removeActions = removeActions)
+  
+    __obj.asInstanceOf[Unity]
+  }
+}
+

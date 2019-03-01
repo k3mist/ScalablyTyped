@@ -21,3 +21,12 @@ trait ASPxClientVerticalGridCustomButtonEventArgs extends ASPxClientProcessingMo
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridCustomButtonEventArgs {
+  @scala.inline
+  def apply(buttonID: java.lang.String, processOnServer: scala.Boolean, visibleIndex: scala.Double): ASPxClientVerticalGridCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID, processOnServer = processOnServer, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridCustomButtonEventArgs]
+  }
+}
+

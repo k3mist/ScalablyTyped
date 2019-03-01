@@ -25,3 +25,17 @@ trait FlagData extends js.Object {
   var name: java.lang.String
 }
 
+object FlagData {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    description: java.lang.String,
+    key: java.lang.String,
+    name: java.lang.String
+  ): FlagData = {
+    val __obj = js.Dynamic.literal(active = active, description = description, key = key, name = name)
+  
+    __obj.asInstanceOf[FlagData]
+  }
+}
+

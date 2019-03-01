@@ -15,3 +15,12 @@ trait Position3D extends js.Object {
   var PositionZ: scala.Double
 }
 
+object Position3D {
+  @scala.inline
+  def apply(PositionX: scala.Double, PositionY: scala.Double, PositionZ: scala.Double): Position3D = {
+    val __obj = js.Dynamic.literal(PositionX = PositionX, PositionY = PositionY, PositionZ = PositionZ)
+  
+    __obj.asInstanceOf[Position3D]
+  }
+}
+

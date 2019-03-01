@@ -10,3 +10,15 @@ trait QueryMatch extends js.Object {
   var value: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTokenMetadata
 }
 
+object QueryMatch {
+  @scala.inline
+  def apply(
+    queryId: scala.Double,
+    value: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTokenMetadata
+  ): QueryMatch = {
+    val __obj = js.Dynamic.literal(queryId = queryId, value = value)
+  
+    __obj.asInstanceOf[QueryMatch]
+  }
+}
+

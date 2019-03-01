@@ -9,3 +9,12 @@ trait Anon_LambdaAnonResourceArn extends js.Object {
   var lambda: Anon_ResourceArn
 }
 
+object Anon_LambdaAnonResourceArn {
+  @scala.inline
+  def apply(lambda: Anon_ResourceArn): Anon_LambdaAnonResourceArn = {
+    val __obj = js.Dynamic.literal(lambda = lambda)
+  
+    __obj.asInstanceOf[Anon_LambdaAnonResourceArn]
+  }
+}
+

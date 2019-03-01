@@ -27,3 +27,32 @@ trait Field extends js.Object {
   def setType(`type`: FieldType): Field
 }
 
+object Field {
+  @scala.inline
+  def apply(
+    getAggregation: js.Function0[AggregationType],
+    getDescription: js.Function0[java.lang.String],
+    getFormula: js.Function0[java.lang.String],
+    getGroup: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getType: js.Function0[FieldType],
+    isDefault: js.Function0[scala.Boolean],
+    isDimension: js.Function0[scala.Boolean],
+    isHidden: js.Function0[scala.Boolean],
+    isMetric: js.Function0[scala.Boolean],
+    setAggregation: js.Function1[AggregationType, Field],
+    setDescription: js.Function1[java.lang.String, Field],
+    setFormula: js.Function1[java.lang.String, Field],
+    setGroup: js.Function1[java.lang.String, Field],
+    setId: js.Function1[java.lang.String, Field],
+    setIsHidden: js.Function1[scala.Boolean, Field],
+    setName: js.Function1[java.lang.String, Field],
+    setType: js.Function1[FieldType, Field]
+  ): Field = {
+    val __obj = js.Dynamic.literal(getAggregation = getAggregation, getDescription = getDescription, getFormula = getFormula, getGroup = getGroup, getId = getId, getName = getName, getType = getType, isDefault = isDefault, isDimension = isDimension, isHidden = isHidden, isMetric = isMetric, setAggregation = setAggregation, setDescription = setDescription, setFormula = setFormula, setGroup = setGroup, setId = setId, setIsHidden = setIsHidden, setName = setName, setType = setType)
+  
+    __obj.asInstanceOf[Field]
+  }
+}
+

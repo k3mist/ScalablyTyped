@@ -16,3 +16,21 @@ trait positionValues extends js.Object {
   var top: scala.Double
 }
 
+object positionValues {
+  @scala.inline
+  def apply(
+    clientHeight: scala.Double,
+    clientWidth: scala.Double,
+    left: scala.Double,
+    scrollHeight: scala.Double,
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double,
+    scrollWidth: scala.Double,
+    top: scala.Double
+  ): positionValues = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, left = left, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth, top = top)
+  
+    __obj.asInstanceOf[positionValues]
+  }
+}
+

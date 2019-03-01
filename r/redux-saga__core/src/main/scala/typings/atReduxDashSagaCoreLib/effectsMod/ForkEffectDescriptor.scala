@@ -9,3 +9,17 @@ trait ForkEffectDescriptor extends CallEffectDescriptor {
   var detached: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ForkEffectDescriptor {
+  @scala.inline
+  def apply(
+    args: js.Array[_],
+    context: js.Any,
+    fn: js.Function,
+    detached: js.UndefOr[scala.Boolean] = js.undefined
+  ): ForkEffectDescriptor = {
+    val __obj = js.Dynamic.literal(args = args, context = context, fn = fn)
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
+    __obj.asInstanceOf[ForkEffectDescriptor]
+  }
+}
+

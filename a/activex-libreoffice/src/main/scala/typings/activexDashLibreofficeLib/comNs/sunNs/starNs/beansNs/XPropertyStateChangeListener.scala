@@ -15,3 +15,18 @@ trait XPropertyStateChangeListener
   def propertyStateChange(aEvent: PropertyStateChangeEvent): scala.Unit
 }
 
+object XPropertyStateChangeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    propertyStateChange: js.Function1[PropertyStateChangeEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertyStateChangeListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, propertyStateChange = propertyStateChange, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPropertyStateChangeListener]
+  }
+}
+

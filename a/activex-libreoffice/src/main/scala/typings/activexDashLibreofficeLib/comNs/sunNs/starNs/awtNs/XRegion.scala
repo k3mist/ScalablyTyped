@@ -38,3 +38,30 @@ trait XRegion
   def xOrRegion(Region: XRegion): scala.Unit
 }
 
+object XRegion {
+  @scala.inline
+  def apply(
+    Bounds: Rectangle,
+    Rectangles: activexDashInteropLib.SafeArray[Rectangle],
+    acquire: js.Function0[scala.Unit],
+    clear: js.Function0[scala.Unit],
+    excludeRectangle: js.Function1[Rectangle, scala.Unit],
+    excludeRegion: js.Function1[XRegion, scala.Unit],
+    getBounds: js.Function0[Rectangle],
+    getRectangles: js.Function0[activexDashInteropLib.SafeArray[Rectangle]],
+    intersectRectangle: js.Function1[Rectangle, scala.Unit],
+    intersectRegion: js.Function1[XRegion, scala.Unit],
+    move: js.Function2[scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unionRectangle: js.Function1[Rectangle, scala.Unit],
+    unionRegion: js.Function1[XRegion, scala.Unit],
+    xOrRectangle: js.Function1[Rectangle, scala.Unit],
+    xOrRegion: js.Function1[XRegion, scala.Unit]
+  ): XRegion = {
+    val __obj = js.Dynamic.literal(Bounds = Bounds, Rectangles = Rectangles, acquire = acquire, clear = clear, excludeRectangle = excludeRectangle, excludeRegion = excludeRegion, getBounds = getBounds, getRectangles = getRectangles, intersectRectangle = intersectRectangle, intersectRegion = intersectRegion, move = move, queryInterface = queryInterface, release = release, unionRectangle = unionRectangle, unionRegion = unionRegion, xOrRectangle = xOrRectangle, xOrRegion = xOrRegion)
+  
+    __obj.asInstanceOf[XRegion]
+  }
+}
+

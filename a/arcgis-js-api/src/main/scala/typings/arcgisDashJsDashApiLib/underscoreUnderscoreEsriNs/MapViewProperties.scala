@@ -70,3 +70,56 @@ trait MapViewProperties
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapViewProperties {
+  @scala.inline
+  def apply(
+    allLayerViews: CollectionProperties[LayerViewProperties] = null,
+    animation: ViewAnimationProperties = null,
+    breakpoints: BreakpointsOwnerBreakpoints = null,
+    center: PointProperties | js.Array[scala.Double] = null,
+    constraints: MapViewConstraints = null,
+    container: stdLib.HTMLDivElement | java.lang.String = null,
+    extent: ExtentProperties = null,
+    graphics: CollectionProperties[GraphicProperties] = null,
+    heightBreakpoint: java.lang.String = null,
+    highlightOptions: MapViewHighlightOptionsProperties = null,
+    layerViews: CollectionProperties[LayerViewProperties] = null,
+    map: MapProperties = null,
+    padding: ViewPadding = null,
+    popup: PopupProperties = null,
+    resizeAlign: java.lang.String = null,
+    rotation: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    spatialReference: SpatialReferenceProperties = null,
+    ui: DefaultUIProperties = null,
+    viewpoint: ViewpointProperties = null,
+    widthBreakpoint: java.lang.String = null,
+    zoom: scala.Int | scala.Double = null
+  ): MapViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
+    if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
+    if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (resizeAlign != null) __obj.updateDynamic("resizeAlign")(resizeAlign)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapViewProperties]
+  }
+}
+

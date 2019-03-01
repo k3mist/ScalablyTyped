@@ -11,3 +11,16 @@ trait RangeFilterOption extends js.Object {
   var start: java.lang.String | scala.Double | stdLib.Date
 }
 
+object RangeFilterOption {
+  @scala.inline
+  def apply(
+    end: java.lang.String | scala.Double | stdLib.Date,
+    field: java.lang.String,
+    start: java.lang.String | scala.Double | stdLib.Date
+  ): RangeFilterOption = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field, start = start.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RangeFilterOption]
+  }
+}
+

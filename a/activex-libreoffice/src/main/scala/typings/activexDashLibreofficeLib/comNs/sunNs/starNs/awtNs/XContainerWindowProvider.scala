@@ -26,3 +26,23 @@ trait XContainerWindowProvider
   ): XWindow
 }
 
+object XContainerWindowProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createContainerWindow: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      XWindowPeer, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      XWindow
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContainerWindowProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createContainerWindow = createContainerWindow, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContainerWindowProvider]
+  }
+}
+

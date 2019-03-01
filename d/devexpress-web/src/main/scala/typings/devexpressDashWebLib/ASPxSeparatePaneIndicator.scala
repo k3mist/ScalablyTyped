@@ -21,3 +21,18 @@ trait ASPxSeparatePaneIndicator extends ASPxClientIndicator {
   var pane: java.lang.String
 }
 
+object ASPxSeparatePaneIndicator {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    pane: java.lang.String,
+    series: ASPxClientSeries
+  ): ASPxSeparatePaneIndicator = {
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, name = name, pane = pane, series = series)
+  
+    __obj.asInstanceOf[ASPxSeparatePaneIndicator]
+  }
+}
+

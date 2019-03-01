@@ -13,3 +13,12 @@ trait Card extends js.Object {
   var cardId: java.lang.String
 }
 
+object Card {
+  @scala.inline
+  def apply(cardExt: java.lang.String, cardId: java.lang.String): Card = {
+    val __obj = js.Dynamic.literal(cardExt = cardExt, cardId = cardId)
+  
+    __obj.asInstanceOf[Card]
+  }
+}
+

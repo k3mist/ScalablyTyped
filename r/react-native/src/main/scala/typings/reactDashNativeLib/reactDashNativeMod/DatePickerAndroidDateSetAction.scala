@@ -12,3 +12,17 @@ trait DatePickerAndroidDateSetAction extends DatePickerAndroidOpenReturn {
   var year: scala.Double
 }
 
+object DatePickerAndroidDateSetAction {
+  @scala.inline
+  def apply(
+    action: reactDashNativeLib.reactDashNativeLibStrings.dateSetAction,
+    day: scala.Double,
+    month: scala.Double,
+    year: scala.Double
+  ): DatePickerAndroidDateSetAction = {
+    val __obj = js.Dynamic.literal(action = action, day = day, month = month, year = year)
+  
+    __obj.asInstanceOf[DatePickerAndroidDateSetAction]
+  }
+}
+

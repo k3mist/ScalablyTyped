@@ -35,3 +35,23 @@ trait MapViewGoToTarget
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapViewGoToTarget {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    center: js.Array[scala.Double] = null,
+    scale: scala.Int | scala.Double = null,
+    target: js.Array[scala.Double] | Geometry | js.Array[Geometry] | Graphic | js.Array[Graphic] | Viewpoint = null,
+    zoom: scala.Int | scala.Double = null
+  ): MapViewGoToTarget = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapViewGoToTarget]
+  }
+}
+

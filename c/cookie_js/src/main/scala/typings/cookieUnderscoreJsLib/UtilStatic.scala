@@ -15,3 +15,20 @@ trait UtilStatic extends js.Object {
   def toArray(args: js.Any*): js.Array[_]
 }
 
+object UtilStatic {
+  @scala.inline
+  def apply(
+    decode: js.Function1[java.lang.String, java.lang.String],
+    encode: js.Function1[java.lang.String, java.lang.String],
+    getKeys: js.Function1[js.Object, js.Array[_]],
+    isArray: js.Function1[js.Any, scala.Boolean],
+    isObject: js.Function1[js.Any, scala.Boolean],
+    retrieve: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    toArray: js.Function1[/* repeated */ js.Any, js.Array[_]]
+  ): UtilStatic = {
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, getKeys = getKeys, isArray = isArray, isObject = isObject, retrieve = retrieve, toArray = toArray)
+  
+    __obj.asInstanceOf[UtilStatic]
+  }
+}
+

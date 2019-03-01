@@ -52,3 +52,20 @@ trait ArcGISMapService extends js.Object {
   val version: scala.Double
 }
 
+object ArcGISMapService {
+  @scala.inline
+  def apply(
+    capabilities: ArcGISMapServiceCapabilities,
+    copyright: java.lang.String,
+    fullExtent: Extent,
+    legendEnabled: scala.Boolean,
+    spatialReference: SpatialReference,
+    token: java.lang.String,
+    version: scala.Double
+  ): ArcGISMapService = {
+    val __obj = js.Dynamic.literal(capabilities = capabilities, copyright = copyright, fullExtent = fullExtent, legendEnabled = legendEnabled, spatialReference = spatialReference, token = token, version = version)
+  
+    __obj.asInstanceOf[ArcGISMapService]
+  }
+}
+

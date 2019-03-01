@@ -10,3 +10,18 @@ import scala.scalajs.js.annotation._
   var expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
 }
 
+object R3ExpressionFactoryMetadata {
+  @scala.inline
+  def apply(
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
+    name: java.lang.String,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    deps: js.Array[R3DependencyMetadata] = null
+  ): R3ExpressionFactoryMetadata = {
+    val __obj = js.Dynamic.literal(expression = expression, injectFn = injectFn, name = name, `type` = `type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3ExpressionFactoryMetadata]
+  }
+}
+

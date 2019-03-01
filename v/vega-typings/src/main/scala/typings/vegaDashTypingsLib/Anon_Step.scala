@@ -10,3 +10,12 @@ trait Anon_Step
   var step: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
 }
 
+object Anon_Step {
+  @scala.inline
+  def apply(step: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef): Anon_Step = {
+    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Step]
+  }
+}
+

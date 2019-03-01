@@ -21,3 +21,23 @@ trait GetRouteResult extends js.Object {
   val vpcPeeringConnectionId: java.lang.String
 }
 
+object GetRouteResult {
+  @scala.inline
+  def apply(
+    destinationCidrBlock: java.lang.String,
+    destinationIpv6CidrBlock: java.lang.String,
+    egressOnlyGatewayId: java.lang.String,
+    gatewayId: java.lang.String,
+    id: java.lang.String,
+    instanceId: java.lang.String,
+    natGatewayId: java.lang.String,
+    networkInterfaceId: java.lang.String,
+    transitGatewayId: java.lang.String,
+    vpcPeeringConnectionId: java.lang.String
+  ): GetRouteResult = {
+    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock, destinationIpv6CidrBlock = destinationIpv6CidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, id = id, instanceId = instanceId, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
+  
+    __obj.asInstanceOf[GetRouteResult]
+  }
+}
+

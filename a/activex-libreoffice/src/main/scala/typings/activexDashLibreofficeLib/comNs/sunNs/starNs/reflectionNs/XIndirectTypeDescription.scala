@@ -19,3 +19,22 @@ trait XIndirectTypeDescription extends XTypeDescription {
   def getReferencedType(): XTypeDescription
 }
 
+object XIndirectTypeDescription {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    ReferencedType: XTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getReferencedType: js.Function0[XTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIndirectTypeDescription = {
+    val __obj = js.Dynamic.literal(Name = Name, ReferencedType = ReferencedType, TypeClass = TypeClass, acquire = acquire, getName = getName, getReferencedType = getReferencedType, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIndirectTypeDescription]
+  }
+}
+

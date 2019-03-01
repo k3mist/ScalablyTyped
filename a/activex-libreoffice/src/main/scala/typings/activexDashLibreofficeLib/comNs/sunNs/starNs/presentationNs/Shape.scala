@@ -63,3 +63,28 @@ trait Shape extends js.Object {
   var Verb: scala.Double
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    Bookmark: java.lang.String,
+    DimColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DimHide: scala.Boolean,
+    DimPrevious: scala.Boolean,
+    Effect: AnimationEffect,
+    IsEmptyPresentationObject: scala.Boolean,
+    IsPresentationObject: scala.Boolean,
+    OnClick: ClickAction,
+    PlayFull: scala.Boolean,
+    PresentationOrder: scala.Double,
+    Sound: java.lang.String,
+    SoundOn: scala.Boolean,
+    Speed: AnimationSpeed,
+    TextEffect: AnimationEffect,
+    Verb: scala.Double
+  ): Shape = {
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, DimColor = DimColor, DimHide = DimHide, DimPrevious = DimPrevious, Effect = Effect, IsEmptyPresentationObject = IsEmptyPresentationObject, IsPresentationObject = IsPresentationObject, OnClick = OnClick, PlayFull = PlayFull, PresentationOrder = PresentationOrder, Sound = Sound, SoundOn = SoundOn, Speed = Speed, TextEffect = TextEffect, Verb = Verb)
+  
+    __obj.asInstanceOf[Shape]
+  }
+}
+

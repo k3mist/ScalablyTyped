@@ -11,3 +11,16 @@ trait SIPIntermediary extends js.Object {
   var ipAccessControlLists: IPAccessControlListResource
 }
 
+object SIPIntermediary {
+  @scala.inline
+  def apply(
+    credentialLists: CredentialListResource,
+    domains: DomainResource,
+    ipAccessControlLists: IPAccessControlListResource
+  ): SIPIntermediary = {
+    val __obj = js.Dynamic.literal(credentialLists = credentialLists, domains = domains, ipAccessControlLists = ipAccessControlLists)
+  
+    __obj.asInstanceOf[SIPIntermediary]
+  }
+}
+

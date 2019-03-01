@@ -14,3 +14,19 @@ trait MUIDataTableTextLabels extends js.Object {
   var viewColumns: MUIDataTableTextLabelsViewColumns
 }
 
+object MUIDataTableTextLabels {
+  @scala.inline
+  def apply(
+    body: MUIDataTableTextLabelsBody,
+    filter: MUIDataTableTextLabelsFilter,
+    pagination: MUIDataTableTextLabelsPagination,
+    selectedRows: MUIDataTableTextLabelsSelectedRows,
+    toolbar: MUIDataTableTextLabelsToolbar,
+    viewColumns: MUIDataTableTextLabelsViewColumns
+  ): MUIDataTableTextLabels = {
+    val __obj = js.Dynamic.literal(body = body, filter = filter, pagination = pagination, selectedRows = selectedRows, toolbar = toolbar, viewColumns = viewColumns)
+  
+    __obj.asInstanceOf[MUIDataTableTextLabels]
+  }
+}
+

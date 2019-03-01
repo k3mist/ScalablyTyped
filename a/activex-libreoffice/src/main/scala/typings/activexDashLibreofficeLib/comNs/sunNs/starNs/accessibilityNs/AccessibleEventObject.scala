@@ -34,3 +34,17 @@ trait AccessibleEventObject
   var OldValue: js.Any
 }
 
+object AccessibleEventObject {
+  @scala.inline
+  def apply(
+    EventId: scala.Double,
+    NewValue: js.Any,
+    OldValue: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): AccessibleEventObject = {
+    val __obj = js.Dynamic.literal(EventId = EventId, NewValue = NewValue, OldValue = OldValue, Source = Source)
+  
+    __obj.asInstanceOf[AccessibleEventObject]
+  }
+}
+

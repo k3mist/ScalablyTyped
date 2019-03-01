@@ -19,3 +19,18 @@ trait BackgroundAudioPlayerState extends js.Object {
   var status: scala.Double
 }
 
+object BackgroundAudioPlayerState {
+  @scala.inline
+  def apply(
+    currentPosition: scala.Double,
+    dataUrl: java.lang.String,
+    downloadPercent: scala.Double,
+    duration: scala.Double,
+    status: scala.Double
+  ): BackgroundAudioPlayerState = {
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition, dataUrl = dataUrl, downloadPercent = downloadPercent, duration = duration, status = status)
+  
+    __obj.asInstanceOf[BackgroundAudioPlayerState]
+  }
+}
+

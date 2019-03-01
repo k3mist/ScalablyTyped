@@ -22,3 +22,18 @@ trait XTabPageModel extends js.Object {
   var ToolTip: java.lang.String
 }
 
+object XTabPageModel {
+  @scala.inline
+  def apply(
+    Enabled: scala.Boolean,
+    ImageURL: java.lang.String,
+    TabPageID: scala.Double,
+    Title: java.lang.String,
+    ToolTip: java.lang.String
+  ): XTabPageModel = {
+    val __obj = js.Dynamic.literal(Enabled = Enabled, ImageURL = ImageURL, TabPageID = TabPageID, Title = Title, ToolTip = ToolTip)
+  
+    __obj.asInstanceOf[XTabPageModel]
+  }
+}
+

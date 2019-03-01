@@ -17,3 +17,12 @@ trait ZeptoEffects extends js.Object {
   var speeds: ZeptoEffectsSpeeds
 }
 
+object ZeptoEffects {
+  @scala.inline
+  def apply(off: scala.Boolean, speeds: ZeptoEffectsSpeeds): ZeptoEffects = {
+    val __obj = js.Dynamic.literal(off = off, speeds = speeds)
+  
+    __obj.asInstanceOf[ZeptoEffects]
+  }
+}
+

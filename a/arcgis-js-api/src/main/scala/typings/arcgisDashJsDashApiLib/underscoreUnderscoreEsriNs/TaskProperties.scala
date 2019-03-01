@@ -20,3 +20,13 @@ trait TaskProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TaskProperties {
+  @scala.inline
+  def apply(requestOptions: js.Any = null, url: java.lang.String = null): TaskProperties = {
+    val __obj = js.Dynamic.literal()
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TaskProperties]
+  }
+}
+

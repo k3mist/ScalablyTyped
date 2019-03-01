@@ -66,3 +66,23 @@ trait FuzzyQuery extends Query {
   def value(s: java.lang.String): FuzzyQuery
 }
 
+object FuzzyQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, FuzzyQuery],
+    field: js.Function1[java.lang.String, FuzzyQuery],
+    maxExpansions: js.Function1[scala.Double, FuzzyQuery],
+    minSimilarity: js.Function1[scala.Double, FuzzyQuery],
+    prefixLength: js.Function1[scala.Double, FuzzyQuery],
+    rewrite: js.Function1[java.lang.String, FuzzyQuery],
+    toJSON: js.Function0[js.Any],
+    transpositions: js.Function1[scala.Boolean, FuzzyQuery],
+    value: js.Function1[java.lang.String, FuzzyQuery]
+  ): FuzzyQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, maxExpansions = maxExpansions, minSimilarity = minSimilarity, prefixLength = prefixLength, rewrite = rewrite, toJSON = toJSON, transpositions = transpositions, value = value)
+  
+    __obj.asInstanceOf[FuzzyQuery]
+  }
+}
+

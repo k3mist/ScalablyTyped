@@ -32,3 +32,21 @@ trait MemberArgs extends js.Object {
   val invite: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object MemberArgs {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    detectorId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    email: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    disableEmailNotification: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    invitationMessage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    invite: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): MemberArgs = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], detectorId = detectorId.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
+    if (disableEmailNotification != null) __obj.updateDynamic("disableEmailNotification")(disableEmailNotification.asInstanceOf[js.Any])
+    if (invitationMessage != null) __obj.updateDynamic("invitationMessage")(invitationMessage.asInstanceOf[js.Any])
+    if (invite != null) __obj.updateDynamic("invite")(invite.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemberArgs]
+  }
+}
+

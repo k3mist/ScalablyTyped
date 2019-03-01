@@ -11,3 +11,12 @@ trait Anon_Email extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Email {
+  @scala.inline
+  def apply(email: java.lang.String, groups: js.Array[java.lang.String], name: java.lang.String): Anon_Email = {
+    val __obj = js.Dynamic.literal(email = email, groups = groups, name = name)
+  
+    __obj.asInstanceOf[Anon_Email]
+  }
+}
+

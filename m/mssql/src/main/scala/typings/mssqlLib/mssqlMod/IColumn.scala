@@ -11,3 +11,12 @@ trait IColumn extends ISqlType {
   var primary: scala.Boolean
 }
 
+object IColumn {
+  @scala.inline
+  def apply(name: java.lang.String, nullable: scala.Boolean, primary: scala.Boolean, `type`: ISqlTypeFactory): IColumn = {
+    val __obj = js.Dynamic.literal(name = name, nullable = nullable, primary = primary, `type` = `type`)
+  
+    __obj.asInstanceOf[IColumn]
+  }
+}
+

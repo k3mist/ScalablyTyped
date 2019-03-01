@@ -51,3 +51,24 @@ trait HeatmapRendererProperties extends RendererProperties {
   var minPixelIntensity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HeatmapRendererProperties {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfoProperties = null,
+    blurRadius: scala.Int | scala.Double = null,
+    colorStops: js.Array[HeatmapColorStopProperties] = null,
+    field: java.lang.String = null,
+    maxPixelIntensity: scala.Int | scala.Double = null,
+    minPixelIntensity: scala.Int | scala.Double = null
+  ): HeatmapRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
+    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (maxPixelIntensity != null) __obj.updateDynamic("maxPixelIntensity")(maxPixelIntensity.asInstanceOf[js.Any])
+    if (minPixelIntensity != null) __obj.updateDynamic("minPixelIntensity")(minPixelIntensity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatmapRendererProperties]
+  }
+}
+

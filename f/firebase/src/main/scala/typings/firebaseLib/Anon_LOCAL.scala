@@ -11,3 +11,16 @@ trait Anon_LOCAL extends js.Object {
   var SESSION: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence
 }
 
+object Anon_LOCAL {
+  @scala.inline
+  def apply(
+    LOCAL: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence,
+    NONE: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence,
+    SESSION: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence
+  ): Anon_LOCAL = {
+    val __obj = js.Dynamic.literal(LOCAL = LOCAL, NONE = NONE, SESSION = SESSION)
+  
+    __obj.asInstanceOf[Anon_LOCAL]
+  }
+}
+

@@ -23,3 +23,12 @@ trait CookiesGetDetails extends js.Object {
   var url: java.lang.String
 }
 
+object CookiesGetDetails {
+  @scala.inline
+  def apply(name: java.lang.String, storeId: java.lang.String, url: java.lang.String): CookiesGetDetails = {
+    val __obj = js.Dynamic.literal(name = name, storeId = storeId, url = url)
+  
+    __obj.asInstanceOf[CookiesGetDetails]
+  }
+}
+

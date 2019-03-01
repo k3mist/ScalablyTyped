@@ -32,3 +32,18 @@ trait ASPxClientPivotMenuItemClickEventArgs extends ASPxClientEventArgs {
   var MenuType: java.lang.String
 }
 
+object ASPxClientPivotMenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    Area: java.lang.String,
+    FieldID: java.lang.String,
+    FieldValueIndex: scala.Double,
+    MenuItemName: java.lang.String,
+    MenuType: java.lang.String
+  ): ASPxClientPivotMenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(Area = Area, FieldID = FieldID, FieldValueIndex = FieldValueIndex, MenuItemName = MenuItemName, MenuType = MenuType)
+  
+    __obj.asInstanceOf[ASPxClientPivotMenuItemClickEventArgs]
+  }
+}
+

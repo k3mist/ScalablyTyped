@@ -79,3 +79,28 @@ trait MemcachedStoreOptions extends js.Object {
   var timeout: scala.Double
 }
 
+object MemcachedStoreOptions {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String,
+    failOverServers: js.Array[_],
+    failures: scala.Double,
+    idle: scala.Double,
+    keyCompression: scala.Boolean,
+    maxExpiration: scala.Double,
+    maxKeySize: scala.Double,
+    maxValue: scala.Double,
+    poolSize: scala.Double,
+    prefix: java.lang.String,
+    reconnect: scala.Double,
+    remove: scala.Boolean,
+    retries: scala.Double,
+    retry: scala.Double,
+    timeout: scala.Double
+  ): MemcachedStoreOptions = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm, failOverServers = failOverServers, failures = failures, idle = idle, keyCompression = keyCompression, maxExpiration = maxExpiration, maxKeySize = maxKeySize, maxValue = maxValue, poolSize = poolSize, prefix = prefix, reconnect = reconnect, remove = remove, retries = retries, retry = retry, timeout = timeout)
+  
+    __obj.asInstanceOf[MemcachedStoreOptions]
+  }
+}
+

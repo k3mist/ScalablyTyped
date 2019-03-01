@@ -12,3 +12,17 @@ trait ConnectionStates extends js.Object {
   var reconnecting: scala.Double
 }
 
+object ConnectionStates {
+  @scala.inline
+  def apply(
+    connected: scala.Double,
+    connecting: scala.Double,
+    disconnected: scala.Double,
+    reconnecting: scala.Double
+  ): ConnectionStates = {
+    val __obj = js.Dynamic.literal(connected = connected, connecting = connecting, disconnected = disconnected, reconnecting = reconnecting)
+  
+    __obj.asInstanceOf[ConnectionStates]
+  }
+}
+

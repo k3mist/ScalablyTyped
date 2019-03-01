@@ -15,3 +15,18 @@ trait XGridColumnListener
   def columnChanged(event: GridColumnEvent): scala.Unit
 }
 
+object XGridColumnListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    columnChanged: js.Function1[GridColumnEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGridColumnListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, columnChanged = columnChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGridColumnListener]
+  }
+}
+

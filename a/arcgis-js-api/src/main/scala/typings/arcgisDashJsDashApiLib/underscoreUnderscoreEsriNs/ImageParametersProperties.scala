@@ -74,3 +74,32 @@ trait ImageParametersProperties extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageParametersProperties {
+  @scala.inline
+  def apply(
+    dpi: scala.Int | scala.Double = null,
+    extent: ExtentProperties = null,
+    format: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    imageSpatialReference: SpatialReferenceProperties = null,
+    layerDefinitions: js.Array[java.lang.String] = null,
+    layerIds: js.Array[scala.Double] = null,
+    layerOption: java.lang.String = null,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): ImageParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (imageSpatialReference != null) __obj.updateDynamic("imageSpatialReference")(imageSpatialReference)
+    if (layerDefinitions != null) __obj.updateDynamic("layerDefinitions")(layerDefinitions)
+    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
+    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageParametersProperties]
+  }
+}
+

@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ExportBatchSpecifier
 }
 
+object ExportBatchSpecifier {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ExportBatchSpecifier): ExportBatchSpecifier = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ExportBatchSpecifier]
+  }
+}
+

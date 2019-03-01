@@ -33,3 +33,20 @@ trait ArcGISMapServiceCapabilitiesOperations
   var supportsTileMap: scala.Boolean
 }
 
+object ArcGISMapServiceCapabilitiesOperations {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    supportsExportMap: scala.Boolean,
+    supportsExportTiles: scala.Boolean,
+    supportsQuery: scala.Boolean,
+    supportsTileMap: scala.Boolean
+  ): ArcGISMapServiceCapabilitiesOperations = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsExportMap = supportsExportMap, supportsExportTiles = supportsExportTiles, supportsQuery = supportsQuery, supportsTileMap = supportsTileMap)
+  
+    __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
+  }
+}
+

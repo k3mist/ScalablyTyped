@@ -14,3 +14,19 @@ trait Location extends js.Object {
   var location: java.lang.String
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    Browsers: java.lang.String,
+    Label: java.lang.String,
+    PendingTests: org.scalablytyped.runtime.StringDictionary[scala.Double],
+    id: java.lang.String,
+    labelShort: java.lang.String,
+    location: java.lang.String
+  ): Location = {
+    val __obj = js.Dynamic.literal(Browsers = Browsers, Label = Label, PendingTests = PendingTests, id = id, labelShort = labelShort, location = location)
+  
+    __obj.asInstanceOf[Location]
+  }
+}
+

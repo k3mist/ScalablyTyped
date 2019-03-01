@@ -10,3 +10,12 @@ trait OnDragLeaveData extends js.Object {
   var node: InternalTreeNode
 }
 
+object OnDragLeaveData {
+  @scala.inline
+  def apply(event: reactLib.Event, node: InternalTreeNode): OnDragLeaveData = {
+    val __obj = js.Dynamic.literal(event = event, node = node)
+  
+    __obj.asInstanceOf[OnDragLeaveData]
+  }
+}
+

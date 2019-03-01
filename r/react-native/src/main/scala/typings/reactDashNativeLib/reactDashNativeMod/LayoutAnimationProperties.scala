@@ -10,3 +10,12 @@ trait LayoutAnimationProperties extends js.Object {
   var scaleXY: java.lang.String
 }
 
+object LayoutAnimationProperties {
+  @scala.inline
+  def apply(opacity: java.lang.String, scaleXY: java.lang.String): LayoutAnimationProperties = {
+    val __obj = js.Dynamic.literal(opacity = opacity, scaleXY = scaleXY)
+  
+    __obj.asInstanceOf[LayoutAnimationProperties]
+  }
+}
+

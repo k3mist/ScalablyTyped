@@ -32,3 +32,37 @@ trait Maps extends js.Object {
   var ZoomControlStyle: js.Any
 }
 
+object Maps {
+  @scala.inline
+  def apply(
+    Animation: js.Any,
+    ControlPosition: js.Any,
+    DirectionsStatus: js.Any,
+    DirectionsTravelMode: js.Any,
+    DirectionsUnitSystem: js.Any,
+    DistanceMatrixElementStatus: js.Any,
+    DistanceMatrixStatus: js.Any,
+    ElevationStatus: js.Any,
+    GeocoderLocationType: js.Any,
+    GeocoderStatus: js.Any,
+    KmlLayerStats: js.Any,
+    MapTypeControlStyle: js.Any,
+    MapTypeId: js.Any,
+    MaxZoomStatus: js.Any,
+    NavigationControlStyle: js.Any,
+    ScaleControlStyle: js.Any,
+    StreetViewStatus: js.Any,
+    StrokePosition: js.Any,
+    SymbolPath: js.Any,
+    TransitMode: js.Any,
+    TransitRoutePreference: js.Any,
+    TravelMode: js.Any,
+    UnitSystem: js.Any,
+    ZoomControlStyle: js.Any
+  ): Maps = {
+    val __obj = js.Dynamic.literal(Animation = Animation, ControlPosition = ControlPosition, DirectionsStatus = DirectionsStatus, DirectionsTravelMode = DirectionsTravelMode, DirectionsUnitSystem = DirectionsUnitSystem, DistanceMatrixElementStatus = DistanceMatrixElementStatus, DistanceMatrixStatus = DistanceMatrixStatus, ElevationStatus = ElevationStatus, GeocoderLocationType = GeocoderLocationType, GeocoderStatus = GeocoderStatus, KmlLayerStats = KmlLayerStats, MapTypeControlStyle = MapTypeControlStyle, MapTypeId = MapTypeId, MaxZoomStatus = MaxZoomStatus, NavigationControlStyle = NavigationControlStyle, ScaleControlStyle = ScaleControlStyle, StreetViewStatus = StreetViewStatus, StrokePosition = StrokePosition, SymbolPath = SymbolPath, TransitMode = TransitMode, TransitRoutePreference = TransitRoutePreference, TravelMode = TravelMode, UnitSystem = UnitSystem, ZoomControlStyle = ZoomControlStyle)
+  
+    __obj.asInstanceOf[Maps]
+  }
+}
+

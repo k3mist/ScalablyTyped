@@ -14,3 +14,19 @@ trait Image extends js.Object {
   var width: scala.Double
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    size: scala.Double,
+    thumbnail: googleDashImagesLib.Anon_Height,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    width: scala.Double
+  ): Image = {
+    val __obj = js.Dynamic.literal(height = height, size = size, thumbnail = thumbnail, `type` = `type`, url = url, width = width)
+  
+    __obj.asInstanceOf[Image]
+  }
+}
+

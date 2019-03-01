@@ -23,3 +23,21 @@ trait Config extends js.Object {
   var useCdnDomain: scala.Boolean
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    checkByMD5: scala.Boolean,
+    concurrentRequestLimit: scala.Double,
+    disableStatisticsReport: scala.Boolean,
+    forceDirect: scala.Boolean,
+    region: Region | java.lang.String,
+    retryCount: scala.Double,
+    uphost: java.lang.String,
+    useCdnDomain: scala.Boolean
+  ): Config = {
+    val __obj = js.Dynamic.literal(checkByMD5 = checkByMD5, concurrentRequestLimit = concurrentRequestLimit, disableStatisticsReport = disableStatisticsReport, forceDirect = forceDirect, region = region.asInstanceOf[js.Any], retryCount = retryCount, uphost = uphost, useCdnDomain = useCdnDomain)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

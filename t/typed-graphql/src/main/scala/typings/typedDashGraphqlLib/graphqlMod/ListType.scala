@@ -13,3 +13,12 @@ trait ListType
   var `type`: Type
 }
 
+object ListType {
+  @scala.inline
+  def apply(kind: java.lang.String, `type`: Type, loc: Location = null): ListType = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ListType]
+  }
+}
+

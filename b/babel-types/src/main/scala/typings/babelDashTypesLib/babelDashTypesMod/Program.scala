@@ -18,3 +18,26 @@ trait Program
   var type_Program: babelDashTypesLib.babelDashTypesLibStrings.Program
 }
 
+object Program {
+  @scala.inline
+  def apply(
+    body: js.Array[Statement | ModuleDeclaration],
+    end: scala.Double,
+    loc: SourceLocation,
+    sourceType: babelDashTypesLib.babelDashTypesLibStrings.script | babelDashTypesLib.babelDashTypesLibStrings.module,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.Program,
+    directives: js.Array[Directive] = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Program = {
+    val __obj = js.Dynamic.literal(body = body, end = end, loc = loc, sourceType = sourceType.asInstanceOf[js.Any], start = start, `type` = `type`)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[Program]
+  }
+}
+

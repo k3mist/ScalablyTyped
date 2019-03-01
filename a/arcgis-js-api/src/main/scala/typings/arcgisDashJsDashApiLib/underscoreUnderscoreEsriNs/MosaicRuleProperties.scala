@@ -74,3 +74,32 @@ trait MosaicRuleProperties extends js.Object {
   var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MosaicRuleProperties {
+  @scala.inline
+  def apply(
+    ascending: js.UndefOr[scala.Boolean] = js.undefined,
+    lockRasterIds: js.Array[scala.Double] = null,
+    method: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.center | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.nadir | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.viewpoint | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.attribute | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`lock-raster` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.northwest | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.seamline = null,
+    multidimensionalDefinition: js.Array[DimensionalDefinitionProperties] = null,
+    objectIds: js.Array[scala.Double] = null,
+    operation: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.first | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.last | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.min | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.max | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.mean | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.blend = null,
+    sortField: java.lang.String = null,
+    sortValue: java.lang.String = null,
+    viewpoint: PointProperties = null,
+    where: java.lang.String = null
+  ): MosaicRuleProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (lockRasterIds != null) __obj.updateDynamic("lockRasterIds")(lockRasterIds)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (multidimensionalDefinition != null) __obj.updateDynamic("multidimensionalDefinition")(multidimensionalDefinition)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
+    if (sortValue != null) __obj.updateDynamic("sortValue")(sortValue)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[MosaicRuleProperties]
+  }
+}
+

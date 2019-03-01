@@ -16,3 +16,12 @@ trait Navigator extends js.Object {
   var network: Anon_Connection
 }
 
+object Navigator {
+  @scala.inline
+  def apply(connection: Connection, network: Anon_Connection): Navigator = {
+    val __obj = js.Dynamic.literal(connection = connection, network = network)
+  
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

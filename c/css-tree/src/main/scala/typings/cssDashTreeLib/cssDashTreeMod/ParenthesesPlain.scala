@@ -13,3 +13,16 @@ trait ParenthesesPlain
   var type_ParenthesesPlain: cssDashTreeLib.cssDashTreeLibStrings.Parentheses
 }
 
+object ParenthesesPlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Parentheses,
+    loc: CssLocation = null
+  ): ParenthesesPlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ParenthesesPlain]
+  }
+}
+

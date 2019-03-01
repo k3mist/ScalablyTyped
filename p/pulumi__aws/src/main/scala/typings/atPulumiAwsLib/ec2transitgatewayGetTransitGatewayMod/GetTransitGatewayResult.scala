@@ -56,3 +56,25 @@ trait GetTransitGatewayResult extends js.Object {
   val vpnEcmpSupport: java.lang.String
 }
 
+object GetTransitGatewayResult {
+  @scala.inline
+  def apply(
+    amazonSideAsn: scala.Double,
+    arn: java.lang.String,
+    associationDefaultRouteTableId: java.lang.String,
+    autoAcceptSharedAttachments: java.lang.String,
+    defaultRouteTableAssociation: java.lang.String,
+    defaultRouteTablePropagation: java.lang.String,
+    description: java.lang.String,
+    dnsSupport: java.lang.String,
+    ownerId: java.lang.String,
+    propagationDefaultRouteTableId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpnEcmpSupport: java.lang.String
+  ): GetTransitGatewayResult = {
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, arn = arn, associationDefaultRouteTableId = associationDefaultRouteTableId, autoAcceptSharedAttachments = autoAcceptSharedAttachments, defaultRouteTableAssociation = defaultRouteTableAssociation, defaultRouteTablePropagation = defaultRouteTablePropagation, description = description, dnsSupport = dnsSupport, ownerId = ownerId, propagationDefaultRouteTableId = propagationDefaultRouteTableId, tags = tags, vpnEcmpSupport = vpnEcmpSupport)
+  
+    __obj.asInstanceOf[GetTransitGatewayResult]
+  }
+}
+

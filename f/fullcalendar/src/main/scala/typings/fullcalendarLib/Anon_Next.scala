@@ -12,3 +12,17 @@ trait Anon_Next extends js.Object {
   var prevYear: java.lang.String
 }
 
+object Anon_Next {
+  @scala.inline
+  def apply(
+    next: java.lang.String,
+    nextYear: java.lang.String,
+    prev: java.lang.String,
+    prevYear: java.lang.String
+  ): Anon_Next = {
+    val __obj = js.Dynamic.literal(next = next, nextYear = nextYear, prev = prev, prevYear = prevYear)
+  
+    __obj.asInstanceOf[Anon_Next]
+  }
+}
+

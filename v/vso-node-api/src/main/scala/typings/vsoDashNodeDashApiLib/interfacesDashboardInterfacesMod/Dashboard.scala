@@ -42,3 +42,23 @@ trait Dashboard extends js.Object {
   var widgets: js.Array[Widget]
 }
 
+object Dashboard {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    description: java.lang.String,
+    eTag: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    ownerId: java.lang.String,
+    position: scala.Double,
+    refreshInterval: scala.Double,
+    url: java.lang.String,
+    widgets: js.Array[Widget]
+  ): Dashboard = {
+    val __obj = js.Dynamic.literal(_links = _links, description = description, eTag = eTag, id = id, name = name, ownerId = ownerId, position = position, refreshInterval = refreshInterval, url = url, widgets = widgets)
+  
+    __obj.asInstanceOf[Dashboard]
+  }
+}
+

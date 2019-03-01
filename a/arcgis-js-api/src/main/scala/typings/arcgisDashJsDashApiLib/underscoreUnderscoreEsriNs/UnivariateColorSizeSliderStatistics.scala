@@ -33,3 +33,20 @@ trait UnivariateColorSizeSliderStatistics
   var stddev: scala.Double
 }
 
+object UnivariateColorSizeSliderStatistics {
+  @scala.inline
+  def apply(
+    avg: scala.Double,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    max: scala.Double,
+    min: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stddev: scala.Double
+  ): UnivariateColorSizeSliderStatistics = {
+    val __obj = js.Dynamic.literal(avg = avg, constructor = constructor, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable, stddev = stddev)
+  
+    __obj.asInstanceOf[UnivariateColorSizeSliderStatistics]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ThreadRowDraftLabelDescriptor extends js.Object {
   var text: java.lang.String
 }
 
+object ThreadRowDraftLabelDescriptor {
+  @scala.inline
+  def apply(text: java.lang.String, count: java.lang.String = null): ThreadRowDraftLabelDescriptor = {
+    val __obj = js.Dynamic.literal(text = text)
+    if (count != null) __obj.updateDynamic("count")(count)
+    __obj.asInstanceOf[ThreadRowDraftLabelDescriptor]
+  }
+}
+

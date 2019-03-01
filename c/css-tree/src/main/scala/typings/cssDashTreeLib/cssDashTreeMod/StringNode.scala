@@ -14,3 +14,16 @@ trait StringNode
   var value: java.lang.String
 }
 
+object StringNode {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.String,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): StringNode = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[StringNode]
+  }
+}
+

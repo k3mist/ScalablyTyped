@@ -56,3 +56,40 @@ trait DirectionsFeatureSetProperties extends FeatureSetProperties {
   var totalTime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DirectionsFeatureSetProperties {
+  @scala.inline
+  def apply(
+    displayFieldName: java.lang.String = null,
+    exceededTransferLimit: js.UndefOr[scala.Boolean] = js.undefined,
+    extent: ExtentProperties = null,
+    features: js.Array[GraphicProperties] = null,
+    fields: js.Array[FieldProperties] = null,
+    geometryType: java.lang.String = null,
+    mergedGeometry: PolylineProperties = null,
+    routeId: java.lang.String = null,
+    routeName: java.lang.String = null,
+    spatialReference: SpatialReferenceProperties = null,
+    strings: js.Array[_] = null,
+    totalDriveTime: scala.Int | scala.Double = null,
+    totalLength: scala.Int | scala.Double = null,
+    totalTime: scala.Int | scala.Double = null
+  ): DirectionsFeatureSetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
+    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (mergedGeometry != null) __obj.updateDynamic("mergedGeometry")(mergedGeometry)
+    if (routeId != null) __obj.updateDynamic("routeId")(routeId)
+    if (routeName != null) __obj.updateDynamic("routeName")(routeName)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (strings != null) __obj.updateDynamic("strings")(strings)
+    if (totalDriveTime != null) __obj.updateDynamic("totalDriveTime")(totalDriveTime.asInstanceOf[js.Any])
+    if (totalLength != null) __obj.updateDynamic("totalLength")(totalLength.asInstanceOf[js.Any])
+    if (totalTime != null) __obj.updateDynamic("totalTime")(totalTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DirectionsFeatureSetProperties]
+  }
+}
+

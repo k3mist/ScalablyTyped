@@ -112,3 +112,29 @@ trait ListItem extends js.Object {
   val visibleAtCurrentScale: scala.Boolean
 }
 
+object ListItem {
+  @scala.inline
+  def apply(
+    actionsOpen: scala.Boolean,
+    actionsSections: Collection[Collection[ActionButton | ActionToggle]],
+    children: Collection[ListItem],
+    clone: js.Function0[ListItem],
+    error: Error,
+    layer: Layer,
+    layerView: LayerView,
+    open: scala.Boolean,
+    panel: ListItemPanel,
+    parent: ListItem,
+    title: java.lang.String,
+    updating: scala.Boolean,
+    view: MapView | SceneView,
+    visibilityMode: java.lang.String,
+    visible: scala.Boolean,
+    visibleAtCurrentScale: scala.Boolean
+  ): ListItem = {
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen, actionsSections = actionsSections, children = children, clone = clone, error = error, layer = layer, layerView = layerView, open = open, panel = panel, parent = parent, title = title, updating = updating, view = view.asInstanceOf[js.Any], visibilityMode = visibilityMode, visible = visible, visibleAtCurrentScale = visibleAtCurrentScale)
+  
+    __obj.asInstanceOf[ListItem]
+  }
+}
+

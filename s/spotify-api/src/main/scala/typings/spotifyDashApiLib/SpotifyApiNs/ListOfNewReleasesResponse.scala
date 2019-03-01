@@ -16,3 +16,12 @@ trait ListOfNewReleasesResponse extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListOfNewReleasesResponse {
+  @scala.inline
+  def apply(albums: PagingObject[AlbumObjectSimplified], message: java.lang.String = null): ListOfNewReleasesResponse = {
+    val __obj = js.Dynamic.literal(albums = albums)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ListOfNewReleasesResponse]
+  }
+}
+

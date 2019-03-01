@@ -49,3 +49,23 @@ trait Request extends js.Object {
   var rawHeaders: js.Array[java.lang.String]
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String,
+    body: nodeLib.Buffer,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
+    hostname: java.lang.String,
+    method: java.lang.String,
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    path: java.lang.String,
+    protocol: java.lang.String,
+    query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
+    rawHeaders: js.Array[java.lang.String]
+  ): Request = {
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, body = body, headers = headers, hostname = hostname, method = method, params = params, path = path, protocol = protocol, query = query, rawHeaders = rawHeaders)
+  
+    __obj.asInstanceOf[Request]
+  }
+}
+

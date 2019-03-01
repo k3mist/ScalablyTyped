@@ -32,3 +32,28 @@ trait XSheetAnnotations
   def removeByIndex(nIndex: scala.Double): scala.Unit
 }
 
+object XSheetAnnotations {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    insertNew: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByIndex: js.Function1[scala.Double, scala.Unit]
+  ): XSheetAnnotations = {
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, insertNew = insertNew, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex)
+  
+    __obj.asInstanceOf[XSheetAnnotations]
+  }
+}
+

@@ -29,3 +29,17 @@ trait Switchery extends js.Object {
   def isDisabled(): scala.Boolean
 }
 
+object Switchery {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    isDisabled: js.Function0[scala.Boolean]
+  ): Switchery = {
+    val __obj = js.Dynamic.literal(destroy = destroy, disable = disable, enable = enable, isDisabled = isDisabled)
+  
+    __obj.asInstanceOf[Switchery]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ISyndicationGenerator extends js.Object {
   var version: java.lang.String
 }
 
+object ISyndicationGenerator {
+  @scala.inline
+  def apply(text: java.lang.String, uri: winrtLib.WindowsNs.FoundationNs.Uri, version: java.lang.String): ISyndicationGenerator = {
+    val __obj = js.Dynamic.literal(text = text, uri = uri, version = version)
+  
+    __obj.asInstanceOf[ISyndicationGenerator]
+  }
+}
+

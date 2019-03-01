@@ -14,3 +14,19 @@ trait FieldModel extends js.Object {
   var url: java.lang.String
 }
 
+object FieldModel {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    isIdentity: scala.Boolean,
+    name: java.lang.String,
+    `type`: FieldType,
+    url: java.lang.String
+  ): FieldModel = {
+    val __obj = js.Dynamic.literal(description = description, id = id, isIdentity = isIdentity, name = name, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[FieldModel]
+  }
+}
+

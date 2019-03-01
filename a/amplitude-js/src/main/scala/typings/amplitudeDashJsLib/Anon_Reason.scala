@@ -9,3 +9,12 @@ trait Anon_Reason extends js.Object {
   var reason: java.lang.String
 }
 
+object Anon_Reason {
+  @scala.inline
+  def apply(reason: java.lang.String): Anon_Reason = {
+    val __obj = js.Dynamic.literal(reason = reason)
+  
+    __obj.asInstanceOf[Anon_Reason]
+  }
+}
+

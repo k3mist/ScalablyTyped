@@ -36,3 +36,18 @@ trait ASPxSchedulerDateTimeHelperStatic extends js.Object {
   def TruncToDate(date: stdLib.Date): stdLib.Date
 }
 
+object ASPxSchedulerDateTimeHelperStatic {
+  @scala.inline
+  def apply(
+    AddDays: js.Function2[stdLib.Date, scala.Double, stdLib.Date],
+    AddTimeSpan: js.Function2[stdLib.Date, js.Any, stdLib.Date],
+    CeilDateTime: js.Function2[stdLib.Date, js.Any, stdLib.Date],
+    ToDayTime: js.Function1[stdLib.Date, js.Any],
+    TruncToDate: js.Function1[stdLib.Date, stdLib.Date]
+  ): ASPxSchedulerDateTimeHelperStatic = {
+    val __obj = js.Dynamic.literal(AddDays = AddDays, AddTimeSpan = AddTimeSpan, CeilDateTime = CeilDateTime, ToDayTime = ToDayTime, TruncToDate = TruncToDate)
+  
+    __obj.asInstanceOf[ASPxSchedulerDateTimeHelperStatic]
+  }
+}
+

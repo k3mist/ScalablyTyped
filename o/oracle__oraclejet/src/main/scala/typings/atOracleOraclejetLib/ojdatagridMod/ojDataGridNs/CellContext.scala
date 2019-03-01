@@ -18,3 +18,22 @@ trait CellContext[K, D] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object CellContext {
+  @scala.inline
+  def apply[K, D](
+    cell: D,
+    componentElement: stdLib.Element,
+    data: D,
+    extents: atOracleOraclejetLib.Anon_ColumnRow,
+    indexes: atOracleOraclejetLib.Anon_ColumnRow,
+    keys: atOracleOraclejetLib.Anon_ColumnRowK[K],
+    mode: atOracleOraclejetLib.atOracleOraclejetLibStrings.edit | atOracleOraclejetLib.atOracleOraclejetLibStrings.navigation,
+    parentElement: stdLib.Element,
+    datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
+  ): CellContext[K, D] = {
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement, data = data.asInstanceOf[js.Any], extents = extents, indexes = indexes, keys = keys, mode = mode.asInstanceOf[js.Any], parentElement = parentElement)
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    __obj.asInstanceOf[CellContext[K, D]]
+  }
+}
+

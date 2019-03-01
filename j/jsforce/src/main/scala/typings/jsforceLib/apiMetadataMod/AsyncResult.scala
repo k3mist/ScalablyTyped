@@ -13,3 +13,19 @@ trait AsyncResult extends js.Object {
   var statusCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AsyncResult {
+  @scala.inline
+  def apply(
+    done: scala.Boolean,
+    id: java.lang.String,
+    state: java.lang.String,
+    message: java.lang.String = null,
+    statusCode: java.lang.String = null
+  ): AsyncResult = {
+    val __obj = js.Dynamic.literal(done = done, id = id, state = state)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[AsyncResult]
+  }
+}
+

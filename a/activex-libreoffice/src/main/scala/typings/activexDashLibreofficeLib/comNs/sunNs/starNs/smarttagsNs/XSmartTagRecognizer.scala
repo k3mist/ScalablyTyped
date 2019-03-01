@@ -79,3 +79,40 @@ trait XSmartTagRecognizer
   ): scala.Unit
 }
 
+object XSmartTagRecognizer {
+  @scala.inline
+  def apply(
+    SmartTagCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    displayPropertyPage: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    getDescription: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getName: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getSmartTagDownloadURL: js.Function1[scala.Double, java.lang.String],
+    getSmartTagName: js.Function1[scala.Double, java.lang.String],
+    hasPropertyPage: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    recognize: js.Function9[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      SmartTagRecognizerMode, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextMarkup, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XBreakIterator, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit]
+  ): XSmartTagRecognizer = {
+    val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount, acquire = acquire, displayPropertyPage = displayPropertyPage, getDescription = getDescription, getName = getName, getSmartTagDownloadURL = getSmartTagDownloadURL, getSmartTagName = getSmartTagName, hasPropertyPage = hasPropertyPage, initialize = initialize, queryInterface = queryInterface, recognize = recognize, release = release)
+  
+    __obj.asInstanceOf[XSmartTagRecognizer]
+  }
+}
+

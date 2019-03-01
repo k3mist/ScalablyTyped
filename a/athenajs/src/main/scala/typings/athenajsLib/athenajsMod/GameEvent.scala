@@ -10,3 +10,12 @@ trait GameEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object GameEvent {
+  @scala.inline
+  def apply(data: JSObject, `type`: java.lang.String): GameEvent = {
+    val __obj = js.Dynamic.literal(data = data, `type` = `type`)
+  
+    __obj.asInstanceOf[GameEvent]
+  }
+}
+

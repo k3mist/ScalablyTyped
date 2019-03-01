@@ -22,3 +22,12 @@ trait LoadBalancerIngress extends js.Object {
   val ip: java.lang.String
 }
 
+object LoadBalancerIngress {
+  @scala.inline
+  def apply(hostname: java.lang.String, ip: java.lang.String): LoadBalancerIngress = {
+    val __obj = js.Dynamic.literal(hostname = hostname, ip = ip)
+  
+    __obj.asInstanceOf[LoadBalancerIngress]
+  }
+}
+

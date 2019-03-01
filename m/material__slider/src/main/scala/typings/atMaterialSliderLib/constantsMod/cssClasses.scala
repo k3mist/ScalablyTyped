@@ -16,3 +16,20 @@ trait cssClasses
   var IS_DISCRETE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--discrete`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    ACTIVE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--active`,
+    DISABLED: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--disabled`,
+    DISCRETE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--discrete`,
+    FOCUS: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--focus`,
+    HAS_TRACK_MARKER: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--display-markers`,
+    IN_TRANSIT: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--in-transit`,
+    IS_DISCRETE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--discrete`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, DISABLED = DISABLED, DISCRETE = DISCRETE, FOCUS = FOCUS, HAS_TRACK_MARKER = HAS_TRACK_MARKER, IN_TRANSIT = IN_TRANSIT, IS_DISCRETE = IS_DISCRETE)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

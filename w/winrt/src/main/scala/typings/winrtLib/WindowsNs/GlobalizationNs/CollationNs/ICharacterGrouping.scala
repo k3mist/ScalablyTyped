@@ -10,3 +10,12 @@ trait ICharacterGrouping extends js.Object {
   var label: java.lang.String
 }
 
+object ICharacterGrouping {
+  @scala.inline
+  def apply(first: java.lang.String, label: java.lang.String): ICharacterGrouping = {
+    val __obj = js.Dynamic.literal(first = first, label = label)
+  
+    __obj.asInstanceOf[ICharacterGrouping]
+  }
+}
+

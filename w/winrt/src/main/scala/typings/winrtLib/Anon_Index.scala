@@ -10,3 +10,12 @@ trait Anon_Index extends js.Object {
   var returnValue: scala.Boolean
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(index: scala.Double, returnValue: scala.Boolean): Anon_Index = {
+    val __obj = js.Dynamic.literal(index = index, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

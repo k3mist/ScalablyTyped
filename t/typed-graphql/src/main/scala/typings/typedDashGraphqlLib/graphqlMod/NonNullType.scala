@@ -13,3 +13,12 @@ trait NonNullType
   var `type`: NamedType | ListType
 }
 
+object NonNullType {
+  @scala.inline
+  def apply(kind: java.lang.String, `type`: NamedType | ListType, loc: Location = null): NonNullType = {
+    val __obj = js.Dynamic.literal(kind = kind, `type` = `type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NonNullType]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_1Ansi256 extends js.Object {
   def rgb(ansi256: colorDashConvertLib.conversionsMod.ANSI256): colorDashConvertLib.conversionsMod.RGB
 }
 
+object Anon_1Ansi256 {
+  @scala.inline
+  def apply(
+    channels: colorDashConvertLib.colorDashConvertLibNumbers.`1`,
+    labels: js.Array[colorDashConvertLib.colorDashConvertLibStrings.ansi256],
+    rgb: js.Function1[colorDashConvertLib.conversionsMod.ANSI256, colorDashConvertLib.conversionsMod.RGB]
+  ): Anon_1Ansi256 = {
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = rgb)
+  
+    __obj.asInstanceOf[Anon_1Ansi256]
+  }
+}
+

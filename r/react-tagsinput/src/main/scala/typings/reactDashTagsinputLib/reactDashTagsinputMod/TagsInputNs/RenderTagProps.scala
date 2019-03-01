@@ -12,3 +12,17 @@ trait RenderTagProps extends TagProps {
   def onRemove(tagIndex: scala.Double): scala.Unit
 }
 
+object RenderTagProps {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    getTagDisplayValue: js.Function1[reactDashTagsinputLib.Tag, java.lang.String],
+    onRemove: js.Function1[scala.Double, scala.Unit],
+    tag: reactDashTagsinputLib.Tag
+  ): RenderTagProps = {
+    val __obj = js.Dynamic.literal(disabled = disabled, getTagDisplayValue = getTagDisplayValue, onRemove = onRemove, tag = tag)
+  
+    __obj.asInstanceOf[RenderTagProps]
+  }
+}
+

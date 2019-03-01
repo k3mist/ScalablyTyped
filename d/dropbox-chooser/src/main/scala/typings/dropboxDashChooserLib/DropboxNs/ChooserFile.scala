@@ -24,3 +24,20 @@ trait ChooserFile extends js.Object {
   var thumbnailLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChooserFile {
+  @scala.inline
+  def apply(
+    bytes: scala.Double,
+    icon: java.lang.String,
+    id: java.lang.String,
+    isDir: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    thumbnailLink: java.lang.String = null
+  ): ChooserFile = {
+    val __obj = js.Dynamic.literal(bytes = bytes, icon = icon, id = id, isDir = isDir, link = link, name = name)
+    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink)
+    __obj.asInstanceOf[ChooserFile]
+  }
+}
+

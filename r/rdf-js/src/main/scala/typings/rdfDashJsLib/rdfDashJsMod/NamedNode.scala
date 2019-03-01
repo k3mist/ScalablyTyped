@@ -26,3 +26,16 @@ trait NamedNode
   def equals(other: Term): scala.Boolean
 }
 
+object NamedNode {
+  @scala.inline
+  def apply(
+    equals: js.Function1[Term, scala.Boolean],
+    termType: rdfDashJsLib.rdfDashJsLibStrings.NamedNode,
+    value: java.lang.String
+  ): NamedNode = {
+    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+  
+    __obj.asInstanceOf[NamedNode]
+  }
+}
+

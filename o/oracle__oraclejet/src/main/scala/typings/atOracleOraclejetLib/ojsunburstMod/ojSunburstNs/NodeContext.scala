@@ -11,3 +11,12 @@ trait NodeContext extends js.Object {
   var subId: java.lang.String
 }
 
+object NodeContext {
+  @scala.inline
+  def apply(indexPath: js.Array[scala.Double], subId: java.lang.String): NodeContext = {
+    val __obj = js.Dynamic.literal(indexPath = indexPath, subId = subId)
+  
+    __obj.asInstanceOf[NodeContext]
+  }
+}
+

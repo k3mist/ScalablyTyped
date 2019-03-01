@@ -15,3 +15,20 @@ trait LogDescriptor
   var v: scala.Double
 }
 
+object LogDescriptor {
+  @scala.inline
+  def apply(
+    hostname: java.lang.String,
+    level: scala.Double,
+    msg: java.lang.String,
+    pid: scala.Double,
+    time: java.lang.String,
+    v: scala.Double,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): LogDescriptor = {
+    val __obj = js.Dynamic.literal(hostname = hostname, level = level, msg = msg, pid = pid, time = time, v = v)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[LogDescriptor]
+  }
+}
+

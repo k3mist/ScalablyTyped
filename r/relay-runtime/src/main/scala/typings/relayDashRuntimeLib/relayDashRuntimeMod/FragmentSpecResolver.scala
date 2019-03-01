@@ -26,3 +26,17 @@ trait FragmentSpecResolver extends js.Object {
   def setVariables(variables: Variables): scala.Unit
 }
 
+object FragmentSpecResolver {
+  @scala.inline
+  def apply(
+    dispose: js.Function0[scala.Unit],
+    resolve: js.Function0[FragmentSpecResults],
+    setProps: js.Function1[Props, scala.Unit],
+    setVariables: js.Function1[Variables, scala.Unit]
+  ): FragmentSpecResolver = {
+    val __obj = js.Dynamic.literal(dispose = dispose, resolve = resolve, setProps = setProps, setVariables = setVariables)
+  
+    __obj.asInstanceOf[FragmentSpecResolver]
+  }
+}
+

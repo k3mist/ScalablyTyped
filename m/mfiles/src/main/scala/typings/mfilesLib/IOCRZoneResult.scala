@@ -17,3 +17,22 @@ trait IOCRZoneResult extends js.Object {
   val Width: scala.Double
 }
 
+object IOCRZoneResult {
+  @scala.inline
+  def apply(
+    Confidence: scala.Double,
+    DimensionUnit: mfilesLib.MFilesNs.MFOCRDimensionUnit,
+    Height: scala.Double,
+    ID: scala.Double,
+    Left: scala.Double,
+    RecognizedOnPage: scala.Double,
+    ResultValue: ITypedValue,
+    Top: scala.Double,
+    Width: scala.Double
+  ): IOCRZoneResult = {
+    val __obj = js.Dynamic.literal(Confidence = Confidence, DimensionUnit = DimensionUnit, Height = Height, ID = ID, Left = Left, RecognizedOnPage = RecognizedOnPage, ResultValue = ResultValue, Top = Top, Width = Width)
+  
+    __obj.asInstanceOf[IOCRZoneResult]
+  }
+}
+

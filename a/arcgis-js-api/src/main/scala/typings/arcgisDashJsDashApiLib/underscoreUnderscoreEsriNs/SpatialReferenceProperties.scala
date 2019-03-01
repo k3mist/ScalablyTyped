@@ -20,3 +20,13 @@ trait SpatialReferenceProperties extends js.Object {
   var wkt: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpatialReferenceProperties {
+  @scala.inline
+  def apply(wkid: scala.Int | scala.Double = null, wkt: java.lang.String = null): SpatialReferenceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
+    if (wkt != null) __obj.updateDynamic("wkt")(wkt)
+    __obj.asInstanceOf[SpatialReferenceProperties]
+  }
+}
+

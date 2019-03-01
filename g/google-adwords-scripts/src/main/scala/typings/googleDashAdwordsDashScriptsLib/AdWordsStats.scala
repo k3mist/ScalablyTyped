@@ -23,3 +23,28 @@ trait AdWordsStats extends js.Object {
   def getViews(): scala.Double
 }
 
+object AdWordsStats {
+  @scala.inline
+  def apply(
+    getAverageCpc: js.Function0[scala.Double],
+    getAverageCpm: js.Function0[scala.Double],
+    getAverageCpv: js.Function0[scala.Double],
+    getAveragePageviews: js.Function0[scala.Double],
+    getAveragePosition: js.Function0[scala.Double],
+    getAverageTimeOnSite: js.Function0[scala.Double],
+    getBounceRage: js.Function0[scala.Double],
+    getClicks: js.Function0[scala.Double],
+    getConversionRate: js.Function0[scala.Double],
+    getConversions: js.Function0[scala.Double],
+    getCost: js.Function0[scala.Double],
+    getCtr: js.Function0[scala.Double],
+    getImpressions: js.Function0[scala.Double],
+    getViewRate: js.Function0[scala.Double],
+    getViews: js.Function0[scala.Double]
+  ): AdWordsStats = {
+    val __obj = js.Dynamic.literal(getAverageCpc = getAverageCpc, getAverageCpm = getAverageCpm, getAverageCpv = getAverageCpv, getAveragePageviews = getAveragePageviews, getAveragePosition = getAveragePosition, getAverageTimeOnSite = getAverageTimeOnSite, getBounceRage = getBounceRage, getClicks = getClicks, getConversionRate = getConversionRate, getConversions = getConversions, getCost = getCost, getCtr = getCtr, getImpressions = getImpressions, getViewRate = getViewRate, getViews = getViews)
+  
+    __obj.asInstanceOf[AdWordsStats]
+  }
+}
+

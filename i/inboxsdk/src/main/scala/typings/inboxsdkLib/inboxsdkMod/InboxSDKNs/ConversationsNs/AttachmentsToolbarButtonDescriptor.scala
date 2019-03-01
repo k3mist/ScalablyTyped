@@ -11,3 +11,16 @@ trait AttachmentsToolbarButtonDescriptor extends js.Object {
   def onClick(event: AttachmentsToolbarButtonEvent): scala.Unit
 }
 
+object AttachmentsToolbarButtonDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function1[AttachmentsToolbarButtonEvent, scala.Unit],
+    tooltip: java.lang.String
+  ): AttachmentsToolbarButtonDescriptor = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, tooltip = tooltip)
+  
+    __obj.asInstanceOf[AttachmentsToolbarButtonDescriptor]
+  }
+}
+

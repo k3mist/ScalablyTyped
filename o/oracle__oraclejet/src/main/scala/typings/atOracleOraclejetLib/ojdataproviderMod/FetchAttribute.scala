@@ -10,3 +10,12 @@ trait FetchAttribute extends js.Object {
   var name: java.lang.String
 }
 
+object FetchAttribute {
+  @scala.inline
+  def apply(name: java.lang.String, attributes: js.Array[java.lang.String | FetchAttribute] = null): FetchAttribute = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    __obj.asInstanceOf[FetchAttribute]
+  }
+}
+

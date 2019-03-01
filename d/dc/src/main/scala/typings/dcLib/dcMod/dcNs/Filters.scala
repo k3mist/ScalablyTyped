@@ -11,3 +11,16 @@ trait Filters extends js.Object {
   def TwoDimensionalFilter(arr: js.Array[_]): Filter
 }
 
+object Filters {
+  @scala.inline
+  def apply(
+    RangedFilter: js.Function2[js.Any, js.Any, Filter],
+    RangedTwoDimensionalFilter: js.Function1[js.Array[_], Filter],
+    TwoDimensionalFilter: js.Function1[js.Array[_], Filter]
+  ): Filters = {
+    val __obj = js.Dynamic.literal(RangedFilter = RangedFilter, RangedTwoDimensionalFilter = RangedTwoDimensionalFilter, TwoDimensionalFilter = TwoDimensionalFilter)
+  
+    __obj.asInstanceOf[Filters]
+  }
+}
+

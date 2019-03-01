@@ -28,3 +28,16 @@ trait PodDNSConfig extends js.Object {
   val searches: js.Array[java.lang.String]
 }
 
+object PodDNSConfig {
+  @scala.inline
+  def apply(
+    nameservers: js.Array[java.lang.String],
+    options: js.Array[PodDNSConfigOption],
+    searches: js.Array[java.lang.String]
+  ): PodDNSConfig = {
+    val __obj = js.Dynamic.literal(nameservers = nameservers, options = options, searches = searches)
+  
+    __obj.asInstanceOf[PodDNSConfig]
+  }
+}
+

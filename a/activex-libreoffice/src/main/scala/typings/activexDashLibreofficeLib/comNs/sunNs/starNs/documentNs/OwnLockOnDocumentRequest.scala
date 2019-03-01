@@ -19,3 +19,18 @@ trait OwnLockOnDocumentRequest
   var TimeInfo: java.lang.String
 }
 
+object OwnLockOnDocumentRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DocumentURL: java.lang.String,
+    IsStoring: scala.Boolean,
+    Message: java.lang.String,
+    TimeInfo: java.lang.String
+  ): OwnLockOnDocumentRequest = {
+    val __obj = js.Dynamic.literal(Context = Context, DocumentURL = DocumentURL, IsStoring = IsStoring, Message = Message, TimeInfo = TimeInfo)
+  
+    __obj.asInstanceOf[OwnLockOnDocumentRequest]
+  }
+}
+

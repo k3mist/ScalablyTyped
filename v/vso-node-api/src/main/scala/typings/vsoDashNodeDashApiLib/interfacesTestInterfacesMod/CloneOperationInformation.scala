@@ -61,3 +61,27 @@ trait CloneOperationInformation extends js.Object {
   var url: java.lang.String
 }
 
+object CloneOperationInformation {
+  @scala.inline
+  def apply(
+    cloneStatistics: CloneStatistics,
+    completionDate: stdLib.Date,
+    creationDate: stdLib.Date,
+    destinationObject: ShallowReference,
+    destinationPlan: ShallowReference,
+    destinationProject: ShallowReference,
+    message: java.lang.String,
+    opId: scala.Double,
+    resultObjectType: ResultObjectType,
+    sourceObject: ShallowReference,
+    sourcePlan: ShallowReference,
+    sourceProject: ShallowReference,
+    state: CloneOperationState,
+    url: java.lang.String
+  ): CloneOperationInformation = {
+    val __obj = js.Dynamic.literal(cloneStatistics = cloneStatistics, completionDate = completionDate, creationDate = creationDate, destinationObject = destinationObject, destinationPlan = destinationPlan, destinationProject = destinationProject, message = message, opId = opId, resultObjectType = resultObjectType, sourceObject = sourceObject, sourcePlan = sourcePlan, sourceProject = sourceProject, state = state, url = url)
+  
+    __obj.asInstanceOf[CloneOperationInformation]
+  }
+}
+

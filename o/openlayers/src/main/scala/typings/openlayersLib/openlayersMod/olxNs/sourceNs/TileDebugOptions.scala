@@ -11,3 +11,17 @@ trait TileDebugOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TileDebugOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    tileGrid: openlayersLib.openlayersMod.tilegridNs.TileGrid = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): TileDebugOptions = {
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
+    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[TileDebugOptions]
+  }
+}
+

@@ -25,3 +25,21 @@ trait XMouseListener
   def mouseReleased(e: MouseEvent): scala.Unit
 }
 
+object XMouseListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    mouseEntered: js.Function1[MouseEvent, scala.Unit],
+    mouseExited: js.Function1[MouseEvent, scala.Unit],
+    mousePressed: js.Function1[MouseEvent, scala.Unit],
+    mouseReleased: js.Function1[MouseEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMouseListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, mouseEntered = mouseEntered, mouseExited = mouseExited, mousePressed = mousePressed, mouseReleased = mouseReleased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMouseListener]
+  }
+}
+

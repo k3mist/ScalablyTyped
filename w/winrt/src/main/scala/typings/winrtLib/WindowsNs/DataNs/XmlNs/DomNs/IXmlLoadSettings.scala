@@ -13,3 +13,18 @@ trait IXmlLoadSettings extends js.Object {
   var validateOnParse: scala.Boolean
 }
 
+object IXmlLoadSettings {
+  @scala.inline
+  def apply(
+    elementContentWhiteSpace: scala.Boolean,
+    maxElementDepth: scala.Double,
+    prohibitDtd: scala.Boolean,
+    resolveExternals: scala.Boolean,
+    validateOnParse: scala.Boolean
+  ): IXmlLoadSettings = {
+    val __obj = js.Dynamic.literal(elementContentWhiteSpace = elementContentWhiteSpace, maxElementDepth = maxElementDepth, prohibitDtd = prohibitDtd, resolveExternals = resolveExternals, validateOnParse = validateOnParse)
+  
+    __obj.asInstanceOf[IXmlLoadSettings]
+  }
+}
+

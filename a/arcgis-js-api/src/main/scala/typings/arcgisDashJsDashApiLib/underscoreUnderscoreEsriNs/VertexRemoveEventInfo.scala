@@ -22,3 +22,18 @@ trait VertexRemoveEventInfo
   var `type`: java.lang.String
 }
 
+object VertexRemoveEventInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    removed: js.Array[Graphic],
+    `type`: java.lang.String
+  ): VertexRemoveEventInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, removed = removed, `type` = `type`)
+  
+    __obj.asInstanceOf[VertexRemoveEventInfo]
+  }
+}
+

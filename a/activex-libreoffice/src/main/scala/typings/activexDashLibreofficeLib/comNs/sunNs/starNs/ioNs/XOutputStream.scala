@@ -31,3 +31,19 @@ trait XOutputStream
   def writeBytes(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XOutputStream {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    closeOutput: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XOutputStream = {
+    val __obj = js.Dynamic.literal(acquire = acquire, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, release = release, writeBytes = writeBytes)
+  
+    __obj.asInstanceOf[XOutputStream]
+  }
+}
+

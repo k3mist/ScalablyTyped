@@ -11,3 +11,21 @@ trait XComponentEnumerationAccess extends XEnumerationAccess {
   def createComponentEnumeration(): XComponentEnumeration
 }
 
+object XComponentEnumerationAccess {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    createComponentEnumeration: js.Function0[XComponentEnumeration],
+    createEnumeration: js.Function0[XEnumeration],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XComponentEnumerationAccess = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, createComponentEnumeration = createComponentEnumeration, createEnumeration = createEnumeration, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XComponentEnumerationAccess]
+  }
+}
+

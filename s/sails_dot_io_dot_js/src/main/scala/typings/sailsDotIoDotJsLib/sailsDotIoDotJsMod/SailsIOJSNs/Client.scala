@@ -10,3 +10,12 @@ trait Client extends js.Object {
   var socket: Socket
 }
 
+object Client {
+  @scala.inline
+  def apply(sails: ClientSails, socket: Socket): Client = {
+    val __obj = js.Dynamic.literal(sails = sails, socket = socket)
+  
+    __obj.asInstanceOf[Client]
+  }
+}
+

@@ -26,3 +26,17 @@ trait Service extends js.Object {
   def set(environment: java.lang.String): scala.Unit
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    get: js.Function0[java.lang.String],
+    is: js.Function1[java.lang.String, scala.Boolean],
+    read: js.Function1[java.lang.String, js.Any],
+    set: js.Function1[java.lang.String, scala.Unit]
+  ): Service = {
+    val __obj = js.Dynamic.literal(get = get, is = is, read = read, set = set)
+  
+    __obj.asInstanceOf[Service]
+  }
+}
+

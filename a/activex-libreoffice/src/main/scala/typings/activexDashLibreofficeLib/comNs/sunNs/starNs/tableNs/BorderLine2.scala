@@ -24,3 +24,19 @@ trait BorderLine2 extends BorderLine {
   var LineWidth: scala.Double
 }
 
+object BorderLine2 {
+  @scala.inline
+  def apply(
+    Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    InnerLineWidth: scala.Double,
+    LineDistance: scala.Double,
+    LineStyle: scala.Double,
+    LineWidth: scala.Double,
+    OuterLineWidth: scala.Double
+  ): BorderLine2 = {
+    val __obj = js.Dynamic.literal(Color = Color, InnerLineWidth = InnerLineWidth, LineDistance = LineDistance, LineStyle = LineStyle, LineWidth = LineWidth, OuterLineWidth = OuterLineWidth)
+  
+    __obj.asInstanceOf[BorderLine2]
+  }
+}
+

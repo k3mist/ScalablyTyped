@@ -25,3 +25,30 @@ trait Expect extends js.Object {
   def toThrowError(errType: js.Any): scala.Unit
 }
 
+object Expect {
+  @scala.inline
+  def apply(
+    not: Expect,
+    toBe: js.Function1[js.Any, scala.Unit],
+    toBeDefined: js.Function0[scala.Unit],
+    toBeFalsy: js.Function0[scala.Unit],
+    toBeGreaterThan: js.Function1[scala.Double, scala.Unit],
+    toBeLessThan: js.Function1[scala.Double, scala.Unit],
+    toBeNull: js.Function0[scala.Unit],
+    toBeTruthy: js.Function0[scala.Unit],
+    toBeUndefined: js.Function0[scala.Unit],
+    toContain: js.Function1[js.Any, scala.Unit],
+    toEqual: js.Function1[js.Any, scala.Unit],
+    toHaveBeenCalled: js.Function0[scala.Unit],
+    toHaveBeenCalledTimes: js.Function1[scala.Double, scala.Unit],
+    toHaveBeenCalledWith: js.Function1[/* repeated */ js.Any, scala.Unit],
+    toMatch: js.Function1[js.Any, scala.Unit],
+    toThrow: js.Function0[scala.Unit],
+    toThrowError: js.Function1[js.Any, scala.Unit]
+  ): Expect = {
+    val __obj = js.Dynamic.literal(not = not, toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toBeUndefined = toBeUndefined, toContain = toContain, toEqual = toEqual, toHaveBeenCalled = toHaveBeenCalled, toHaveBeenCalledTimes = toHaveBeenCalledTimes, toHaveBeenCalledWith = toHaveBeenCalledWith, toMatch = toMatch, toThrow = toThrow, toThrowError = toThrowError)
+  
+    __obj.asInstanceOf[Expect]
+  }
+}
+

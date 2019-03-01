@@ -10,3 +10,12 @@ trait ProvidedProps extends js.Object {
   var loaded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ProvidedProps {
+  @scala.inline
+  def apply(google: GoogleAPI, loaded: js.UndefOr[scala.Boolean] = js.undefined): ProvidedProps = {
+    val __obj = js.Dynamic.literal(google = google)
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded)
+    __obj.asInstanceOf[ProvidedProps]
+  }
+}
+

@@ -13,3 +13,15 @@ trait GiffferOptions extends js.Object {
   var playButtonStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object GiffferOptions {
+  @scala.inline
+  def apply(
+    playButtonIconStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    playButtonStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): GiffferOptions = {
+    val __obj = js.Dynamic.literal(playButtonIconStyles = playButtonIconStyles, playButtonStyles = playButtonStyles)
+  
+    __obj.asInstanceOf[GiffferOptions]
+  }
+}
+

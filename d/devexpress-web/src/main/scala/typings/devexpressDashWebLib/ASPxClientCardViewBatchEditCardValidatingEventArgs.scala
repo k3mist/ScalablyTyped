@@ -21,3 +21,12 @@ trait ASPxClientCardViewBatchEditCardValidatingEventArgs extends ASPxClientEvent
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewBatchEditCardValidatingEventArgs {
+  @scala.inline
+  def apply(validationInfo: js.Object, visibleIndex: scala.Double): ASPxClientCardViewBatchEditCardValidatingEventArgs = {
+    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditCardValidatingEventArgs]
+  }
+}
+

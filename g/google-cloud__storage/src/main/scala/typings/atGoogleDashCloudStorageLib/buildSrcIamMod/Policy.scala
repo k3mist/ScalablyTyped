@@ -10,3 +10,12 @@ trait Policy extends js.Object {
   var etag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Policy {
+  @scala.inline
+  def apply(bindings: js.Array[PolicyBinding], etag: java.lang.String = null): Policy = {
+    val __obj = js.Dynamic.literal(bindings = bindings)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    __obj.asInstanceOf[Policy]
+  }
+}
+

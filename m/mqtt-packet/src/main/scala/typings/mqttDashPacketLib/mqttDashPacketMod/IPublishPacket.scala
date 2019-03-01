@@ -17,3 +17,22 @@ trait IPublishPacket
   var topic: java.lang.String
 }
 
+object IPublishPacket {
+  @scala.inline
+  def apply(
+    cmd: mqttDashPacketLib.mqttDashPacketLibStrings.publish,
+    dup: scala.Boolean,
+    payload: java.lang.String | nodeLib.Buffer,
+    qos: QoS,
+    retain: scala.Boolean,
+    topic: java.lang.String,
+    length: scala.Int | scala.Double = null,
+    messageId: scala.Int | scala.Double = null
+  ): IPublishPacket = {
+    val __obj = js.Dynamic.literal(cmd = cmd, dup = dup, payload = payload.asInstanceOf[js.Any], qos = qos, retain = retain, topic = topic)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPublishPacket]
+  }
+}
+

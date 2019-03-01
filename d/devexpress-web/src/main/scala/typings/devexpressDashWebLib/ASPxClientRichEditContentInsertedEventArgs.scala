@@ -21,3 +21,12 @@ trait ASPxClientRichEditContentInsertedEventArgs extends ASPxClientEventArgs {
   var subDocumentId: scala.Double
 }
 
+object ASPxClientRichEditContentInsertedEventArgs {
+  @scala.inline
+  def apply(interval: Interval, subDocumentId: scala.Double): ASPxClientRichEditContentInsertedEventArgs = {
+    val __obj = js.Dynamic.literal(interval = interval, subDocumentId = subDocumentId)
+  
+    __obj.asInstanceOf[ASPxClientRichEditContentInsertedEventArgs]
+  }
+}
+

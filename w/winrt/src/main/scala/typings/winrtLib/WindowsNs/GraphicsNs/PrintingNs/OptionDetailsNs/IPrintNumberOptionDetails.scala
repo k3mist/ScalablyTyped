@@ -10,3 +10,21 @@ trait IPrintNumberOptionDetails extends IPrintOptionDetails {
   var minValue: scala.Double
 }
 
+object IPrintNumberOptionDetails {
+  @scala.inline
+  def apply(
+    errorText: java.lang.String,
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintNumberOptionDetails = {
+    val __obj = js.Dynamic.literal(errorText = errorText, maxValue = maxValue, minValue = minValue, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintNumberOptionDetails]
+  }
+}
+

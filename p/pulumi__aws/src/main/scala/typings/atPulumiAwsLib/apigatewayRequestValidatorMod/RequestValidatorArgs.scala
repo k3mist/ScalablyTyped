@@ -24,3 +24,19 @@ trait RequestValidatorArgs extends js.Object {
   val validateRequestParameters: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object RequestValidatorArgs {
+  @scala.inline
+  def apply(
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    validateRequestBody: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    validateRequestParameters: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): RequestValidatorArgs = {
+    val __obj = js.Dynamic.literal(restApi = restApi.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (validateRequestBody != null) __obj.updateDynamic("validateRequestBody")(validateRequestBody.asInstanceOf[js.Any])
+    if (validateRequestParameters != null) __obj.updateDynamic("validateRequestParameters")(validateRequestParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestValidatorArgs]
+  }
+}
+

@@ -53,3 +53,22 @@ trait $Refs extends js.Object {
   def values(types: java.lang.String*): org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
 }
 
+object $Refs {
+  @scala.inline
+  def apply(
+    circular: scala.Boolean,
+    exists: js.Function1[java.lang.String, scala.Boolean],
+    get: js.Function1[java.lang.String, jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4Type],
+    paths: js.Function1[/* repeated */ java.lang.String, js.Array[java.lang.String]],
+    set: js.Function2[java.lang.String, jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4Type, scala.Unit],
+    values: js.Function1[
+      /* repeated */ java.lang.String, 
+      org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
+    ]
+  ): $Refs = {
+    val __obj = js.Dynamic.literal(circular = circular, exists = exists, get = get, paths = paths, set = set, values = values)
+  
+    __obj.asInstanceOf[$Refs]
+  }
+}
+

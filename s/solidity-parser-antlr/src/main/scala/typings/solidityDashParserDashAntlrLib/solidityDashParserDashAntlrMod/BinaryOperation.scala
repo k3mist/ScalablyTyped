@@ -15,3 +15,20 @@ trait BinaryOperation
   var type_BinaryOperation: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.BinaryOperation
 }
 
+object BinaryOperation {
+  @scala.inline
+  def apply(
+    left: ASTNode,
+    operator: BinOp,
+    right: ASTNode,
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.BinaryOperation,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): BinaryOperation = {
+    val __obj = js.Dynamic.literal(left = left, operator = operator, right = right, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[BinaryOperation]
+  }
+}
+

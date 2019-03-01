@@ -18,3 +18,18 @@ trait XDirectInvocation
   def hasMember(aName: java.lang.String): scala.Boolean
 }
 
+object XDirectInvocation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    directInvoke: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Any],
+    hasMember: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDirectInvocation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, directInvoke = directInvoke, hasMember = hasMember, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDirectInvocation]
+  }
+}
+

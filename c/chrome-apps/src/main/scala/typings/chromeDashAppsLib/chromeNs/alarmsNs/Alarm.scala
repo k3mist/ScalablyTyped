@@ -14,3 +14,16 @@ trait Alarm extends js.Object {
   var scheduledTime: chromeDashAppsLib.chromeNs.integer
 }
 
+object Alarm {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    scheduledTime: chromeDashAppsLib.chromeNs.integer,
+    periodInMinutes: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): Alarm = {
+    val __obj = js.Dynamic.literal(name = name, scheduledTime = scheduledTime)
+    if (!js.isUndefined(periodInMinutes)) __obj.updateDynamic("periodInMinutes")(periodInMinutes)
+    __obj.asInstanceOf[Alarm]
+  }
+}
+

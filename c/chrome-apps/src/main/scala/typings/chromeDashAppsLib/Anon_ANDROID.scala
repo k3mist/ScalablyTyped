@@ -14,3 +14,19 @@ trait Anon_ANDROID extends js.Object {
   var WIN: chromeDashAppsLib.chromeDashAppsLibStrings.win
 }
 
+object Anon_ANDROID {
+  @scala.inline
+  def apply(
+    ANDROID: chromeDashAppsLib.chromeDashAppsLibStrings.android,
+    CROS: chromeDashAppsLib.chromeDashAppsLibStrings.cros,
+    LINUX: chromeDashAppsLib.chromeDashAppsLibStrings.linux,
+    MAC: chromeDashAppsLib.chromeDashAppsLibStrings.mac,
+    OPENBSD: chromeDashAppsLib.chromeDashAppsLibStrings.openbsd,
+    WIN: chromeDashAppsLib.chromeDashAppsLibStrings.win
+  ): Anon_ANDROID = {
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID, CROS = CROS, LINUX = LINUX, MAC = MAC, OPENBSD = OPENBSD, WIN = WIN)
+  
+    __obj.asInstanceOf[Anon_ANDROID]
+  }
+}
+

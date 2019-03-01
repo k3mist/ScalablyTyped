@@ -10,3 +10,16 @@ trait StringWriter extends js.Object {
   def write(what: java.lang.String): StringWriter
 }
 
+object StringWriter {
+  @scala.inline
+  def apply(
+    end: js.Function0[scala.Unit],
+    toString: js.Function0[java.lang.String],
+    write: js.Function1[java.lang.String, StringWriter]
+  ): StringWriter = {
+    val __obj = js.Dynamic.literal(end = end, toString = toString, write = write)
+  
+    __obj.asInstanceOf[StringWriter]
+  }
+}
+

@@ -11,3 +11,12 @@ trait IInputPane extends js.Object {
   var onshowing: js.Any
 }
 
+object IInputPane {
+  @scala.inline
+  def apply(occludedRect: winrtLib.WindowsNs.FoundationNs.Rect, onhiding: js.Any, onshowing: js.Any): IInputPane = {
+    val __obj = js.Dynamic.literal(occludedRect = occludedRect, onhiding = onhiding, onshowing = onshowing)
+  
+    __obj.asInstanceOf[IInputPane]
+  }
+}
+

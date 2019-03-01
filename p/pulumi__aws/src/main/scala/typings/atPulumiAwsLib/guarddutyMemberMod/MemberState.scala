@@ -36,3 +36,26 @@ trait MemberState extends js.Object {
   val relationshipStatus: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object MemberState {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    detectorId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    disableEmailNotification: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    email: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    invitationMessage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    invite: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    relationshipStatus: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MemberState = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (detectorId != null) __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
+    if (disableEmailNotification != null) __obj.updateDynamic("disableEmailNotification")(disableEmailNotification.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (invitationMessage != null) __obj.updateDynamic("invitationMessage")(invitationMessage.asInstanceOf[js.Any])
+    if (invite != null) __obj.updateDynamic("invite")(invite.asInstanceOf[js.Any])
+    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemberState]
+  }
+}
+

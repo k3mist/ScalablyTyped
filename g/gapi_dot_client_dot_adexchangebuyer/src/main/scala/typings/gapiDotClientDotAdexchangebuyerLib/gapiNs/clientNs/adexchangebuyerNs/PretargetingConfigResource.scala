@@ -20,3 +20,37 @@ trait PretargetingConfigResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId): gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
 }
 
+object PretargetingConfigResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfigList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAltConfigId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PretargetingConfig]
+    ]
+  ): PretargetingConfigResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[PretargetingConfigResource]
+  }
+}
+

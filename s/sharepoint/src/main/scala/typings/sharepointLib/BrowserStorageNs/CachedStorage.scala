@@ -14,3 +14,18 @@ trait CachedStorage extends js.Object {
   def setItem(key: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object CachedStorage {
+  @scala.inline
+  def apply(
+    clead: js.Function0[scala.Unit],
+    getItem: js.Function1[java.lang.String, java.lang.String],
+    length: scala.Double,
+    removeItem: js.Function1[java.lang.String, scala.Unit],
+    setItem: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): CachedStorage = {
+    val __obj = js.Dynamic.literal(clead = clead, getItem = getItem, length = length, removeItem = removeItem, setItem = setItem)
+  
+    __obj.asInstanceOf[CachedStorage]
+  }
+}
+

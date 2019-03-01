@@ -16,3 +16,21 @@ trait IAxes extends js.Object {
   def add(horizontal: scala.Boolean, otherSide: scala.Boolean): IAxis
 }
 
+object IAxes {
+  @scala.inline
+  def apply(
+    add: js.Function2[scala.Boolean, scala.Boolean, IAxis],
+    bottom: IAxis,
+    chart: IChart,
+    items: js.Array[IAxis],
+    left: IAxis,
+    right: IAxis,
+    top: IAxis,
+    visible: scala.Boolean
+  ): IAxes = {
+    val __obj = js.Dynamic.literal(add = add, bottom = bottom, chart = chart, items = items, left = left, right = right, top = top, visible = visible)
+  
+    __obj.asInstanceOf[IAxes]
+  }
+}
+

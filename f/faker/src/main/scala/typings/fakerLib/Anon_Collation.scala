@@ -12,3 +12,17 @@ trait Anon_Collation extends js.Object {
   def `type`(): java.lang.String
 }
 
+object Anon_Collation {
+  @scala.inline
+  def apply(
+    collation: js.Function0[java.lang.String],
+    column: js.Function0[java.lang.String],
+    engine: js.Function0[java.lang.String],
+    `type`: js.Function0[java.lang.String]
+  ): Anon_Collation = {
+    val __obj = js.Dynamic.literal(collation = collation, column = column, engine = engine, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Collation]
+  }
+}
+

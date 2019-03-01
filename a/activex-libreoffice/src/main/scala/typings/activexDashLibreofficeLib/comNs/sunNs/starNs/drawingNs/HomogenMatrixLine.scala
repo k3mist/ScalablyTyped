@@ -13,3 +13,12 @@ trait HomogenMatrixLine extends js.Object {
   var Column4: scala.Double
 }
 
+object HomogenMatrixLine {
+  @scala.inline
+  def apply(Column1: scala.Double, Column2: scala.Double, Column3: scala.Double, Column4: scala.Double): HomogenMatrixLine = {
+    val __obj = js.Dynamic.literal(Column1 = Column1, Column2 = Column2, Column3 = Column3, Column4 = Column4)
+  
+    __obj.asInstanceOf[HomogenMatrixLine]
+  }
+}
+

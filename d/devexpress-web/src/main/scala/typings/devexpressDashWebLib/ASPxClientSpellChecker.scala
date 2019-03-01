@@ -51,3 +51,37 @@ trait ASPxClientSpellChecker extends ASPxClientControl {
   def CheckElementsInContainerById(containerId: java.lang.String): scala.Unit
 }
 
+object ASPxClientSpellChecker {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    AfterCheck: ASPxClientEvent[ASPxClientAfterCheckEventHandler[ASPxClientSpellChecker]],
+    BeforeCheck: ASPxClientEvent[ASPxClientBeforeCheckEventHandler[ASPxClientSpellChecker]],
+    Check: js.Function0[scala.Unit],
+    CheckCompleteFormShowing: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]],
+    CheckElement: js.Function1[js.Object, scala.Unit],
+    CheckElementById: js.Function1[java.lang.String, scala.Unit],
+    CheckElementsInContainer: js.Function1[js.Object, scala.Unit],
+    CheckElementsInContainerById: js.Function1[java.lang.String, scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    WordChanged: ASPxClientEvent[ASPxClientWordChangedEventHandler[ASPxClientSpellChecker]],
+    name: java.lang.String
+  ): ASPxClientSpellChecker = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, AfterCheck = AfterCheck, BeforeCheck = BeforeCheck, Check = Check, CheckCompleteFormShowing = CheckCompleteFormShowing, CheckElement = CheckElement, CheckElementById = CheckElementById, CheckElementsInContainer = CheckElementsInContainer, CheckElementsInContainerById = CheckElementsInContainerById, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, WordChanged = WordChanged, name = name)
+  
+    __obj.asInstanceOf[ASPxClientSpellChecker]
+  }
+}
+

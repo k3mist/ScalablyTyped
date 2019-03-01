@@ -10,3 +10,12 @@ trait ISecurity extends js.Object {
   def toXML(): java.lang.String
 }
 
+object ISecurity {
+  @scala.inline
+  def apply(addOptions: js.Function1[js.Any, scala.Unit], toXML: js.Function0[java.lang.String]): ISecurity = {
+    val __obj = js.Dynamic.literal(addOptions = addOptions, toXML = toXML)
+  
+    __obj.asInstanceOf[ISecurity]
+  }
+}
+

@@ -13,3 +13,18 @@ trait CellInfo extends js.Object {
   var segs: js.Array[EventSegment]
 }
 
+object CellInfo {
+  @scala.inline
+  def apply(
+    date: momentLib.momentMod.momentNs.Moment,
+    dayEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery,
+    hiddenSegs: js.Array[EventSegment],
+    moreEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery,
+    segs: js.Array[EventSegment]
+  ): CellInfo = {
+    val __obj = js.Dynamic.literal(date = date, dayEl = dayEl, hiddenSegs = hiddenSegs, moreEl = moreEl, segs = segs)
+  
+    __obj.asInstanceOf[CellInfo]
+  }
+}
+

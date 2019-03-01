@@ -14,3 +14,21 @@ trait Anon_IopsMountPoint extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IopsMountPoint {
+  @scala.inline
+  def apply(
+    mountPoint: java.lang.String,
+    numberOfDisks: scala.Double,
+    size: scala.Double,
+    iops: scala.Int | scala.Double = null,
+    raidLevel: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Anon_IopsMountPoint = {
+    val __obj = js.Dynamic.literal(mountPoint = mountPoint, numberOfDisks = numberOfDisks, size = size)
+    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
+    if (raidLevel != null) __obj.updateDynamic("raidLevel")(raidLevel)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_IopsMountPoint]
+  }
+}
+

@@ -38,3 +38,19 @@ trait SchemaErrorDetail extends js.Object {
   var path: java.lang.String
 }
 
+object SchemaErrorDetail {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    description: java.lang.String,
+    inner: js.Array[SchemaErrorDetail],
+    message: java.lang.String,
+    params: js.Array[java.lang.String],
+    path: java.lang.String
+  ): SchemaErrorDetail = {
+    val __obj = js.Dynamic.literal(code = code, description = description, inner = inner, message = message, params = params, path = path)
+  
+    __obj.asInstanceOf[SchemaErrorDetail]
+  }
+}
+

@@ -10,3 +10,14 @@ trait Anon_Color
   var color: vegaDashTypingsLib.typesSpecEncodeMod.ColorRGB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHSL | vegaDashTypingsLib.typesSpecEncodeMod.ColorLAB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHCL
 }
 
+object Anon_Color {
+  @scala.inline
+  def apply(
+    color: vegaDashTypingsLib.typesSpecEncodeMod.ColorRGB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHSL | vegaDashTypingsLib.typesSpecEncodeMod.ColorLAB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHCL
+  ): Anon_Color = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Color]
+  }
+}
+

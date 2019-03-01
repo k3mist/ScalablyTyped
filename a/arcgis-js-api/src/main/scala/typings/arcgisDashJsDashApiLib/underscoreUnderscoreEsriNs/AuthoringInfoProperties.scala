@@ -68,3 +68,32 @@ trait AuthoringInfoProperties extends js.Object {
   var visualVariables: js.UndefOr[js.Array[AuthoringInfoVisualVariableProperties]] = js.undefined
 }
 
+object AuthoringInfoProperties {
+  @scala.inline
+  def apply(
+    classificationMethod: java.lang.String = null,
+    field1: AuthoringInfoField1 = null,
+    field2: AuthoringInfoField2 = null,
+    fields: js.Array[java.lang.String] = null,
+    focus: java.lang.String = null,
+    lengthUnit: java.lang.String = null,
+    numClasses: scala.Int | scala.Double = null,
+    standardDeviationInterval: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    visualVariables: js.Array[AuthoringInfoVisualVariableProperties] = null
+  ): AuthoringInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (field1 != null) __obj.updateDynamic("field1")(field1)
+    if (field2 != null) __obj.updateDynamic("field2")(field2)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit)
+    if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
+    if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[AuthoringInfoProperties]
+  }
+}
+

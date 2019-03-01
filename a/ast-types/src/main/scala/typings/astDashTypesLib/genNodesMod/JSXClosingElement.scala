@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXClosingElement
 }
 
+object JSXClosingElement {
+  @scala.inline
+  def apply(
+    name: astDashTypesLib.genKindsMod.JSXIdentifierKind | astDashTypesLib.genKindsMod.JSXNamespacedNameKind | astDashTypesLib.genKindsMod.JSXMemberExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXClosingElement
+  ): JSXClosingElement = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[JSXClosingElement]
+  }
+}
+

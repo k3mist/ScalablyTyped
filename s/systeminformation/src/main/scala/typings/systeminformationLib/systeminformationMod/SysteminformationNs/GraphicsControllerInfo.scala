@@ -13,3 +13,18 @@ trait GraphicsControllerInfo extends js.Object {
   var vramDynamic: scala.Boolean
 }
 
+object GraphicsControllerInfo {
+  @scala.inline
+  def apply(
+    bus: java.lang.String,
+    model: java.lang.String,
+    vendor: java.lang.String,
+    vram: scala.Double,
+    vramDynamic: scala.Boolean
+  ): GraphicsControllerInfo = {
+    val __obj = js.Dynamic.literal(bus = bus, model = model, vendor = vendor, vram = vram, vramDynamic = vramDynamic)
+  
+    __obj.asInstanceOf[GraphicsControllerInfo]
+  }
+}
+

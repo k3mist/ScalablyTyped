@@ -156,3 +156,12 @@ trait AsyncResult[T] extends js.Object {
   var value: T
 }
 
+object AsyncResult {
+  @scala.inline
+  def apply[T](asyncContext: js.Any, diagnostics: js.Any, error: Error, status: AsyncResultStatus, value: T): AsyncResult[T] = {
+    val __obj = js.Dynamic.literal(asyncContext = asyncContext, diagnostics = diagnostics, error = error, status = status, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AsyncResult[T]]
+  }
+}
+

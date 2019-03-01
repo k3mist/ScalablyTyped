@@ -20,3 +20,21 @@ trait Shop extends js.Object {
   var termsOfService: js.Any
 }
 
+object Shop {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    moneyFormat: java.lang.String,
+    name: java.lang.String,
+    paymentSettings: js.Any,
+    primaryDomain: js.Any,
+    privacyPolicy: js.Any,
+    refundPolicy: js.Any,
+    termsOfService: js.Any
+  ): Shop = {
+    val __obj = js.Dynamic.literal(description = description, moneyFormat = moneyFormat, name = name, paymentSettings = paymentSettings, primaryDomain = primaryDomain, privacyPolicy = privacyPolicy, refundPolicy = refundPolicy, termsOfService = termsOfService)
+  
+    __obj.asInstanceOf[Shop]
+  }
+}
+

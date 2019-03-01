@@ -11,3 +11,16 @@ trait PurchasesResource extends js.Object {
   var voidedpurchases: VoidedpurchasesResource
 }
 
+object PurchasesResource {
+  @scala.inline
+  def apply(
+    products: ProductsResource,
+    subscriptions: SubscriptionsResource,
+    voidedpurchases: VoidedpurchasesResource
+  ): PurchasesResource = {
+    val __obj = js.Dynamic.literal(products = products, subscriptions = subscriptions, voidedpurchases = voidedpurchases)
+  
+    __obj.asInstanceOf[PurchasesResource]
+  }
+}
+

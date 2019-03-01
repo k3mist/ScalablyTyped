@@ -10,3 +10,12 @@ trait AnyPtrRecord extends AnyRecord {
   var value: java.lang.String
 }
 
+object AnyPtrRecord {
+  @scala.inline
+  def apply(`type`: nodeLib.nodeLibStrings.PTR, value: java.lang.String): AnyPtrRecord = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[AnyPtrRecord]
+  }
+}
+

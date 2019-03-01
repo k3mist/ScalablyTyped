@@ -44,3 +44,24 @@ trait BasemapProperties extends LoadableProperties {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BasemapProperties {
+  @scala.inline
+  def apply(
+    baseLayers: CollectionProperties[LayerProperties] = null,
+    id: java.lang.String = null,
+    portalItem: PortalItemProperties = null,
+    referenceLayers: CollectionProperties[LayerProperties] = null,
+    thumbnailUrl: java.lang.String = null,
+    title: java.lang.String = null
+  ): BasemapProperties = {
+    val __obj = js.Dynamic.literal()
+    if (baseLayers != null) __obj.updateDynamic("baseLayers")(baseLayers.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (referenceLayers != null) __obj.updateDynamic("referenceLayers")(referenceLayers.asInstanceOf[js.Any])
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[BasemapProperties]
+  }
+}
+

@@ -13,3 +13,12 @@ trait Vector2 extends js.Object {
   var y: scala.Double
 }
 
+object Vector2 {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Vector2 = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[Vector2]
+  }
+}
+

@@ -10,3 +10,12 @@ trait IPropertyValuesForDisplay extends js.Object {
   def Item(Index: scala.Double): IPropertyValueForDisplay
 }
 
+object IPropertyValuesForDisplay {
+  @scala.inline
+  def apply(Count: scala.Double, Item: js.Function1[scala.Double, IPropertyValueForDisplay]): IPropertyValuesForDisplay = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[IPropertyValuesForDisplay]
+  }
+}
+

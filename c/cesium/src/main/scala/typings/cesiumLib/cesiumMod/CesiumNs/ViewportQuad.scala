@@ -14,3 +14,19 @@ trait ViewportQuad extends js.Object {
   def update(): scala.Unit
 }
 
+object ViewportQuad {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    material: Material,
+    rectangle: BoundingRectangle,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): ViewportQuad = {
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, material = material, rectangle = rectangle, show = show, update = update)
+  
+    __obj.asInstanceOf[ViewportQuad]
+  }
+}
+

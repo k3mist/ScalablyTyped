@@ -20,3 +20,25 @@ trait IEmailMessageInformation extends js.Object {
   def CloneFrom(EmailMessageInformation: IEmailMessageInformation): scala.Unit
 }
 
+object IEmailMessageInformation {
+  @scala.inline
+  def apply(
+    Cc: IStrings,
+    Clone: js.Function0[IEmailMessageInformation],
+    CloneFrom: js.Function1[IEmailMessageInformation, scala.Unit],
+    From: java.lang.String,
+    Importance: mfilesLib.MFilesNs.MFEmailImportance,
+    InReplyTo: java.lang.String,
+    MessageID: java.lang.String,
+    Received: ITimestamp,
+    Sensitivity: mfilesLib.MFilesNs.MFEmailSensitivity,
+    Sent: ITimestamp,
+    Subject: java.lang.String,
+    To: IStrings
+  ): IEmailMessageInformation = {
+    val __obj = js.Dynamic.literal(Cc = Cc, Clone = Clone, CloneFrom = CloneFrom, From = From, Importance = Importance, InReplyTo = InReplyTo, MessageID = MessageID, Received = Received, Sensitivity = Sensitivity, Sent = Sent, Subject = Subject, To = To)
+  
+    __obj.asInstanceOf[IEmailMessageInformation]
+  }
+}
+

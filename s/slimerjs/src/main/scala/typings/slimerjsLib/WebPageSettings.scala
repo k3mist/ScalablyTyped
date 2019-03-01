@@ -17,3 +17,22 @@ trait WebPageSettings extends js.Object {
   var webSecurityEnabled: scala.Boolean
 }
 
+object WebPageSettings {
+  @scala.inline
+  def apply(
+    XSSAuditingEnabled: scala.Boolean,
+    javascriptEnabled: scala.Boolean,
+    loadImages: scala.Boolean,
+    localToRemoteUrlAccessEnabled: scala.Boolean,
+    password: java.lang.String,
+    resourceTimeout: scala.Double,
+    userAgent: java.lang.String,
+    userName: java.lang.String,
+    webSecurityEnabled: scala.Boolean
+  ): WebPageSettings = {
+    val __obj = js.Dynamic.literal(XSSAuditingEnabled = XSSAuditingEnabled, javascriptEnabled = javascriptEnabled, loadImages = loadImages, localToRemoteUrlAccessEnabled = localToRemoteUrlAccessEnabled, password = password, resourceTimeout = resourceTimeout, userAgent = userAgent, userName = userName, webSecurityEnabled = webSecurityEnabled)
+  
+    __obj.asInstanceOf[WebPageSettings]
+  }
+}
+

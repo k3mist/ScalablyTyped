@@ -16,3 +16,15 @@ trait DocumentFormattingParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object DocumentFormattingParams {
+  @scala.inline
+  def apply(
+    options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FormattingOptions,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): DocumentFormattingParams = {
+    val __obj = js.Dynamic.literal(options = options, textDocument = textDocument)
+  
+    __obj.asInstanceOf[DocumentFormattingParams]
+  }
+}
+

@@ -12,3 +12,12 @@ trait WikidataClaim extends js.Object {
   var `type`: java.lang.String
 }
 
+object WikidataClaim {
+  @scala.inline
+  def apply(id: java.lang.String, mainsnak: WikidataMainSnak, rank: java.lang.String, `type`: java.lang.String): WikidataClaim = {
+    val __obj = js.Dynamic.literal(id = id, mainsnak = mainsnak, rank = rank, `type` = `type`)
+  
+    __obj.asInstanceOf[WikidataClaim]
+  }
+}
+

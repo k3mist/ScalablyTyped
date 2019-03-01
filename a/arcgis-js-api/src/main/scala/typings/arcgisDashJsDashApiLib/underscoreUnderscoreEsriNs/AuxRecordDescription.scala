@@ -27,3 +27,19 @@ trait AuxRecordDescription
   var tableName: java.lang.String
 }
 
+object AuxRecordDescription {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    properties: js.Any,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    recordId: scala.Double,
+    tableName: java.lang.String
+  ): AuxRecordDescription = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, properties = properties, propertyIsEnumerable = propertyIsEnumerable, recordId = recordId, tableName = tableName)
+  
+    __obj.asInstanceOf[AuxRecordDescription]
+  }
+}
+

@@ -25,3 +25,18 @@ trait INxTreeValue extends js.Object {
   var qValue: scala.Double
 }
 
+object INxTreeValue {
+  @scala.inline
+  def apply(
+    qText: java.lang.String,
+    qValue: scala.Double,
+    qAttrDims: INxAttributeDimValues = null,
+    qAttrExps: INxAttributeExpressionValues = null
+  ): INxTreeValue = {
+    val __obj = js.Dynamic.literal(qText = qText, qValue = qValue)
+    if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims)
+    if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps)
+    __obj.asInstanceOf[INxTreeValue]
+  }
+}
+

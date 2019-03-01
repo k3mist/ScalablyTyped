@@ -19,3 +19,18 @@ trait MediaFileData extends js.Object {
   var width: scala.Double
 }
 
+object MediaFileData {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    codecs: java.lang.String,
+    duration: scala.Double,
+    height: scala.Double,
+    width: scala.Double
+  ): MediaFileData = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate, codecs = codecs, duration = duration, height = height, width = width)
+  
+    __obj.asInstanceOf[MediaFileData]
+  }
+}
+

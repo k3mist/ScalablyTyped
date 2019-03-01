@@ -10,3 +10,12 @@ trait ContentStatement extends Node {
   var value: java.lang.String
 }
 
+object ContentStatement {
+  @scala.inline
+  def apply(loc: SourceLocation, original: StripFlags, `type`: java.lang.String, value: java.lang.String): ContentStatement = {
+    val __obj = js.Dynamic.literal(loc = loc, original = original, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ContentStatement]
+  }
+}
+

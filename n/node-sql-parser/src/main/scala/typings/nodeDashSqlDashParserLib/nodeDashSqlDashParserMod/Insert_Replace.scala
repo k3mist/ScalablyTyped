@@ -13,3 +13,19 @@ trait Insert_Replace extends AST {
   var values: js.Array[InsertReplaceValue]
 }
 
+object Insert_Replace {
+  @scala.inline
+  def apply(
+    table: java.lang.String,
+    `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.replace | nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.insert,
+    values: js.Array[InsertReplaceValue],
+    columns: js.Array[java.lang.String] = null,
+    db: java.lang.String = null
+  ): Insert_Replace = {
+    val __obj = js.Dynamic.literal(table = table, `type` = `type`.asInstanceOf[js.Any], values = values)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (db != null) __obj.updateDynamic("db")(db)
+    __obj.asInstanceOf[Insert_Replace]
+  }
+}
+

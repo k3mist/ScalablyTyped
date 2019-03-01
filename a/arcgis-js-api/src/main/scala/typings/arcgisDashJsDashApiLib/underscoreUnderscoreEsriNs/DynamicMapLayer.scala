@@ -27,3 +27,19 @@ trait DynamicMapLayer
   var `type`: java.lang.String
 }
 
+object DynamicMapLayer {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    gdbVersion: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mapLayerId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): DynamicMapLayer = {
+    val __obj = js.Dynamic.literal(constructor = constructor, gdbVersion = gdbVersion, hasOwnProperty = hasOwnProperty, mapLayerId = mapLayerId, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[DynamicMapLayer]
+  }
+}
+

@@ -53,3 +53,38 @@ trait FeatureLayerSearchSource extends SearchSource {
   var suggestionTemplate: java.lang.String
 }
 
+object FeatureLayerSearchSource {
+  @scala.inline
+  def apply(
+    autoNavigate: scala.Boolean,
+    clone: js.Function0[FeatureLayerSearchSource],
+    displayField: java.lang.String,
+    exactMatch: scala.Boolean,
+    featureLayer: FeatureLayer,
+    filter: SearchSourceFilter,
+    maxResults: scala.Double,
+    maxSuggestions: scala.Double,
+    minSuggestCharacters: scala.Double,
+    name: java.lang.String,
+    outFields: js.Array[java.lang.String],
+    placeholder: java.lang.String,
+    popupEnabled: scala.Boolean,
+    popupTemplate: PopupTemplate,
+    prefix: java.lang.String,
+    resultGraphicEnabled: scala.Boolean,
+    resultSymbol: Symbol,
+    searchFields: js.Array[java.lang.String],
+    searchTemplate: java.lang.String,
+    suffix: java.lang.String,
+    suggestionTemplate: java.lang.String,
+    suggestionsEnabled: scala.Boolean,
+    toJSON: js.Function0[js.Any],
+    withinViewEnabled: scala.Boolean,
+    zoomScale: scala.Double
+  ): FeatureLayerSearchSource = {
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, clone = clone, displayField = displayField, exactMatch = exactMatch, featureLayer = featureLayer, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchFields = searchFields, searchTemplate = searchTemplate, suffix = suffix, suggestionTemplate = suggestionTemplate, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+  
+    __obj.asInstanceOf[FeatureLayerSearchSource]
+  }
+}
+

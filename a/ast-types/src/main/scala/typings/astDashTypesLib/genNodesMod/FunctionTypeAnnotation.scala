@@ -19,3 +19,19 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | scala.Null
 }
 
+object FunctionTypeAnnotation {
+  @scala.inline
+  def apply(
+    params: js.Array[astDashTypesLib.genKindsMod.FunctionTypeParamKind],
+    returnType: astDashTypesLib.genKindsMod.FlowTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.FunctionTypeAnnotation,
+    rest: astDashTypesLib.genKindsMod.FunctionTypeParamKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
+  ): FunctionTypeAnnotation = {
+    val __obj = js.Dynamic.literal(params = params, returnType = returnType, `type` = `type`)
+    if (rest != null) __obj.updateDynamic("rest")(rest)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[FunctionTypeAnnotation]
+  }
+}
+

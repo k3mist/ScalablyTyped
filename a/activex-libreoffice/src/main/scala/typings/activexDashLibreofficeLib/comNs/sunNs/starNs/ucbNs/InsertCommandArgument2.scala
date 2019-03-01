@@ -13,3 +13,17 @@ trait InsertCommandArgument2 extends InsertCommandArgument {
   var MimeType: java.lang.String
 }
 
+object InsertCommandArgument2 {
+  @scala.inline
+  def apply(
+    Data: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    DocumentId: java.lang.String,
+    MimeType: java.lang.String,
+    ReplaceExisting: scala.Boolean
+  ): InsertCommandArgument2 = {
+    val __obj = js.Dynamic.literal(Data = Data, DocumentId = DocumentId, MimeType = MimeType, ReplaceExisting = ReplaceExisting)
+  
+    __obj.asInstanceOf[InsertCommandArgument2]
+  }
+}
+

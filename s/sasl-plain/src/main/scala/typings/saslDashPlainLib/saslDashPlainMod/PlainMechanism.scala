@@ -13,3 +13,17 @@ trait PlainMechanism
   def response(cred: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials): java.lang.String
 }
 
+object PlainMechanism {
+  @scala.inline
+  def apply(
+    challenge: js.Function1[java.lang.String, PlainMechanism],
+    clientFirst: saslDashPlainLib.saslDashPlainLibNumbers.`true`,
+    name: saslDashPlainLib.saslDashPlainLibStrings.PLAIN,
+    response: js.Function1[saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials, java.lang.String]
+  ): PlainMechanism = {
+    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+  
+    __obj.asInstanceOf[PlainMechanism]
+  }
+}
+

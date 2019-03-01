@@ -29,3 +29,34 @@ trait Event extends js.Object {
   var wardType: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    ascendedType: java.lang.String,
+    assistingParticipantIds: js.Array[scala.Double],
+    buildingType: java.lang.String,
+    creatorId: scala.Double,
+    eventType: java.lang.String,
+    itemAfter: scala.Double,
+    itemBefore: scala.Double,
+    itemId: scala.Double,
+    killerId: scala.Double,
+    laneType: java.lang.String,
+    levelUpType: java.lang.String,
+    monsterType: java.lang.String,
+    participantId: scala.Double,
+    pointCaptured: java.lang.String,
+    position: Position,
+    skillSlot: scala.Double,
+    teamId: scala.Double,
+    timestamp: scala.Double,
+    towerType: java.lang.String,
+    victimId: scala.Double,
+    wardType: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(ascendedType = ascendedType, assistingParticipantIds = assistingParticipantIds, buildingType = buildingType, creatorId = creatorId, eventType = eventType, itemAfter = itemAfter, itemBefore = itemBefore, itemId = itemId, killerId = killerId, laneType = laneType, levelUpType = levelUpType, monsterType = monsterType, participantId = participantId, pointCaptured = pointCaptured, position = position, skillSlot = skillSlot, teamId = teamId, timestamp = timestamp, towerType = towerType, victimId = victimId, wardType = wardType)
+  
+    __obj.asInstanceOf[Event]
+  }
+}
+

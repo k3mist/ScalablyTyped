@@ -10,3 +10,12 @@ trait AuthData extends js.Object {
   var refresh_token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthData {
+  @scala.inline
+  def apply(access_token: java.lang.String, refresh_token: java.lang.String = null): AuthData = {
+    val __obj = js.Dynamic.literal(access_token = access_token)
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
+    __obj.asInstanceOf[AuthData]
+  }
+}
+

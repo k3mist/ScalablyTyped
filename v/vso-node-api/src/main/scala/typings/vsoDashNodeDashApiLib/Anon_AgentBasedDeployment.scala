@@ -12,3 +12,17 @@ trait Anon_AgentBasedDeployment extends js.Object {
   var undefined: scala.Double
 }
 
+object Anon_AgentBasedDeployment {
+  @scala.inline
+  def apply(
+    agentBasedDeployment: scala.Double,
+    machineGroupBasedDeployment: scala.Double,
+    runOnServer: scala.Double,
+    undefined: scala.Double
+  ): Anon_AgentBasedDeployment = {
+    val __obj = js.Dynamic.literal(agentBasedDeployment = agentBasedDeployment, machineGroupBasedDeployment = machineGroupBasedDeployment, runOnServer = runOnServer, undefined = undefined)
+  
+    __obj.asInstanceOf[Anon_AgentBasedDeployment]
+  }
+}
+

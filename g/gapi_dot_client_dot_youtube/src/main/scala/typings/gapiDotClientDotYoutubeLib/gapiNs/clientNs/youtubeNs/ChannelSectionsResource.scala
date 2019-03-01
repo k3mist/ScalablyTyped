@@ -16,3 +16,29 @@ trait ChannelSectionsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner): gapiDotClientLib.gapiNs.clientNs.Request[ChannelSection]
 }
 
+object ChannelSectionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ChannelSection]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsHl, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ChannelSectionListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ChannelSection]
+    ]
+  ): ChannelSectionsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
+    __obj.asInstanceOf[ChannelSectionsResource]
+  }
+}
+

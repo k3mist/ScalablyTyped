@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ExportDefaultDeclaration
 }
 
+object ExportDefaultDeclaration {
+  @scala.inline
+  def apply(
+    declaration: astDashTypesLib.genKindsMod.DeclarationKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ExportDefaultDeclaration
+  ): ExportDefaultDeclaration = {
+    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[ExportDefaultDeclaration]
+  }
+}
+

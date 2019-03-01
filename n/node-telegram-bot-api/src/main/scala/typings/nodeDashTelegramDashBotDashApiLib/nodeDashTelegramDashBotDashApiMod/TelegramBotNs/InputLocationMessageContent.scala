@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
   var longitude: scala.Double
 }
 
+object InputLocationMessageContent {
+  @scala.inline
+  def apply(latitude: scala.Double, longitude: scala.Double): InputLocationMessageContent = {
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
+    __obj.asInstanceOf[InputLocationMessageContent]
+  }
+}
+

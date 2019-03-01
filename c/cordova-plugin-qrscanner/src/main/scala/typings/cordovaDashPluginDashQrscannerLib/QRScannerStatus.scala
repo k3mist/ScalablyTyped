@@ -69,3 +69,24 @@ trait QRScannerStatus extends js.Object {
   var webviewBackgroundIsTransparent: scala.Boolean
 }
 
+object QRScannerStatus {
+  @scala.inline
+  def apply(
+    authorized: scala.Boolean,
+    canEnableLight: scala.Boolean,
+    canOpenSettings: scala.Boolean,
+    currentCamera: scala.Double,
+    denied: scala.Boolean,
+    lightEnabled: scala.Boolean,
+    prepared: scala.Boolean,
+    previewing: scala.Boolean,
+    restricted: scala.Boolean,
+    scanning: scala.Boolean,
+    webviewBackgroundIsTransparent: scala.Boolean
+  ): QRScannerStatus = {
+    val __obj = js.Dynamic.literal(authorized = authorized, canEnableLight = canEnableLight, canOpenSettings = canOpenSettings, currentCamera = currentCamera, denied = denied, lightEnabled = lightEnabled, prepared = prepared, previewing = previewing, restricted = restricted, scanning = scanning, webviewBackgroundIsTransparent = webviewBackgroundIsTransparent)
+  
+    __obj.asInstanceOf[QRScannerStatus]
+  }
+}
+

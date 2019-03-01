@@ -18,3 +18,16 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.ExpressionKind | scala.Null
 }
 
+object ClassPrivateProperty {
+  @scala.inline
+  def apply(
+    key: astDashTypesLib.genKindsMod.PrivateNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassPrivateProperty,
+    value: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): ClassPrivateProperty = {
+    val __obj = js.Dynamic.literal(key = key, `type` = `type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ClassPrivateProperty]
+  }
+}
+

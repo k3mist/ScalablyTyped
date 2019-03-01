@@ -13,3 +13,16 @@ trait MultiPolygon
   var type_MultiPolygon: geojsonLib.geojsonLibStrings.MultiPolygon
 }
 
+object MultiPolygon {
+  @scala.inline
+  def apply(
+    coordinates: js.Array[js.Array[js.Array[Position]]],
+    `type`: geojsonLib.geojsonLibStrings.MultiPolygon,
+    bbox: BBox = null
+  ): MultiPolygon = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiPolygon]
+  }
+}
+

@@ -21,3 +21,12 @@ trait DispatchInformation extends js.Object {
   var GroupId: scala.Double
 }
 
+object DispatchInformation {
+  @scala.inline
+  def apply(Command: java.lang.String, GroupId: scala.Double): DispatchInformation = {
+    val __obj = js.Dynamic.literal(Command = Command, GroupId = GroupId)
+  
+    __obj.asInstanceOf[DispatchInformation]
+  }
+}
+

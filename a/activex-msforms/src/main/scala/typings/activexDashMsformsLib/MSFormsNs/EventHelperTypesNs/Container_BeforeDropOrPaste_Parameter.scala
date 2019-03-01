@@ -16,3 +16,21 @@ trait Container_BeforeDropOrPaste_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object Container_BeforeDropOrPaste_Parameter {
+  @scala.inline
+  def apply(
+    Action: activexDashMsformsLib.MSFormsNs.fmAction,
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Control: activexDashMsformsLib.MSFormsNs.Control,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Shift: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): Container_BeforeDropOrPaste_Parameter = {
+    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Shift = Shift, X = X, Y = Y)
+  
+    __obj.asInstanceOf[Container_BeforeDropOrPaste_Parameter]
+  }
+}
+

@@ -15,3 +15,17 @@ trait XBookmarkInsertTool
   def insertNewBookmark(xTextRange: XTextRange, aName: java.lang.String): XTextContent
 }
 
+object XBookmarkInsertTool {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    insertNewBookmark: js.Function2[XTextRange, java.lang.String, XTextContent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBookmarkInsertTool = {
+    val __obj = js.Dynamic.literal(acquire = acquire, insertNewBookmark = insertNewBookmark, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBookmarkInsertTool]
+  }
+}
+

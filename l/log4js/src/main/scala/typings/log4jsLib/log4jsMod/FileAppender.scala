@@ -25,3 +25,32 @@ trait FileAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.file
 }
 
+object FileAppender {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    `type`: log4jsLib.log4jsLibStrings.file,
+    backups: scala.Int | scala.Double = null,
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    flags: java.lang.String = null,
+    keepFileExt: js.UndefOr[scala.Boolean] = js.undefined,
+    layout: Layout = null,
+    maxLogSize: scala.Double | java.lang.String = null,
+    mode: scala.Int | scala.Double = null,
+    numBackups: scala.Int | scala.Double = null
+  ): FileAppender = {
+    val __obj = js.Dynamic.literal(filename = filename, `type` = `type`)
+    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (numBackups != null) __obj.updateDynamic("numBackups")(numBackups.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileAppender]
+  }
+}
+

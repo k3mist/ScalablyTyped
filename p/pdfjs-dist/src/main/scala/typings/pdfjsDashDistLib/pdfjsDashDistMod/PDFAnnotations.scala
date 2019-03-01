@@ -18,3 +18,20 @@ trait PDFAnnotations extends js.Object {
   def loadResources(keys: js.Any): PDFPromise[_]
 }
 
+object PDFAnnotations {
+  @scala.inline
+  def apply(
+    getData: js.Function0[PDFAnnotationData],
+    getEmptyContainer: js.Function2[java.lang.String, js.Array[scala.Double], stdLib.HTMLElement],
+    getHtmlElement: js.Function1[js.Any, stdLib.HTMLElement],
+    getOperatorList: js.Function1[js.Any, PDFPromise[_]],
+    hasHtml: js.Function0[scala.Boolean],
+    isViewable: js.Function0[scala.Boolean],
+    loadResources: js.Function1[js.Any, PDFPromise[_]]
+  ): PDFAnnotations = {
+    val __obj = js.Dynamic.literal(getData = getData, getEmptyContainer = getEmptyContainer, getHtmlElement = getHtmlElement, getOperatorList = getOperatorList, hasHtml = hasHtml, isViewable = isViewable, loadResources = loadResources)
+  
+    __obj.asInstanceOf[PDFAnnotations]
+  }
+}
+

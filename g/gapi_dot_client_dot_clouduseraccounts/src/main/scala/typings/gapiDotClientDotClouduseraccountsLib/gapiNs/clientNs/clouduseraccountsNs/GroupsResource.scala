@@ -26,3 +26,49 @@ trait GroupsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
 }
 
+object GroupsResource {
+  @scala.inline
+  def apply(
+    addMember: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Group]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupList]
+    ],
+    removeMember: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
+    ]
+  ): GroupsResource = {
+    val __obj = js.Dynamic.literal(addMember = addMember, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, removeMember = removeMember, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[GroupsResource]
+  }
+}
+

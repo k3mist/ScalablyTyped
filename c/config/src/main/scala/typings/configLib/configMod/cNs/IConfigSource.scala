@@ -11,3 +11,12 @@ trait IConfigSource extends js.Object {
   var parsed: js.Any
 }
 
+object IConfigSource {
+  @scala.inline
+  def apply(name: java.lang.String, parsed: js.Any, original: java.lang.String = null): IConfigSource = {
+    val __obj = js.Dynamic.literal(name = name, parsed = parsed)
+    if (original != null) __obj.updateDynamic("original")(original)
+    __obj.asInstanceOf[IConfigSource]
+  }
+}
+

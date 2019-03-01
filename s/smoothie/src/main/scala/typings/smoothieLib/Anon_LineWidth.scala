@@ -10,3 +10,12 @@ trait Anon_LineWidth extends js.Object {
   var strokeStyle: java.lang.String
 }
 
+object Anon_LineWidth {
+  @scala.inline
+  def apply(lineWidth: scala.Double, strokeStyle: java.lang.String): Anon_LineWidth = {
+    val __obj = js.Dynamic.literal(lineWidth = lineWidth, strokeStyle = strokeStyle)
+  
+    __obj.asInstanceOf[Anon_LineWidth]
+  }
+}
+

@@ -26,3 +26,18 @@ trait CameraPopoverOptions extends js.Object {
   var y: scala.Double
 }
 
+object CameraPopoverOptions {
+  @scala.inline
+  def apply(
+    arrowDir: scala.Double,
+    height: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): CameraPopoverOptions = {
+    val __obj = js.Dynamic.literal(arrowDir = arrowDir, height = height, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[CameraPopoverOptions]
+  }
+}
+

@@ -75,3 +75,57 @@ trait OrganizationsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object OrganizationsResource {
+  @scala.inline
+  def apply(
+    clearOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Organization]
+    ],
+    getEffectiveOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    getOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    listAvailableOrgPolicyConstraints: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
+    ],
+    listOrgPolicies: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
+    ],
+    search: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchOrganizationsResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    setOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): OrganizationsResource = {
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, get = get, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getIamPolicy = getIamPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, search = search, setIamPolicy = setIamPolicy, setOrgPolicy = setOrgPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[OrganizationsResource]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Continent extends js.Object {
   val regions: js.Array[java.lang.String]
 }
 
+object Continent {
+  @scala.inline
+  def apply(countries: js.Array[Country], name: java.lang.String, regions: js.Array[java.lang.String]): Continent = {
+    val __obj = js.Dynamic.literal(countries = countries, name = name, regions = regions)
+  
+    __obj.asInstanceOf[Continent]
+  }
+}
+

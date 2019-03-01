@@ -31,3 +31,19 @@ trait XImageProducer
   def startProduction(): scala.Unit
 }
 
+object XImageProducer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addConsumer: js.Function1[XImageConsumer, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeConsumer: js.Function1[XImageConsumer, scala.Unit],
+    startProduction: js.Function0[scala.Unit]
+  ): XImageProducer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addConsumer = addConsumer, queryInterface = queryInterface, release = release, removeConsumer = removeConsumer, startProduction = startProduction)
+  
+    __obj.asInstanceOf[XImageProducer]
+  }
+}
+

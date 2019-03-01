@@ -90,3 +90,20 @@ trait IContentEditingHelper extends js.Object {
   def redirectToCreatedContent(id: scala.Double, modelState: js.Any): scala.Unit
 }
 
+object IContentEditingHelper {
+  @scala.inline
+  def apply(
+    getAllProps: js.Function1[js.Any, js.Any],
+    getAllowedActions: js.Function2[js.Any, js.Any, js.Array[java.lang.String]],
+    getButtonFromAction: js.Function1[java.lang.String, js.Any],
+    handleSaveError: js.Function1[/* repeated */ js.Any, scala.Unit],
+    handleSuccessfulSave: js.Function1[/* repeated */ js.Any, scala.Unit],
+    reBindChangedProperties: js.Function2[js.Any, js.Any, scala.Unit],
+    redirectToCreatedContent: js.Function2[scala.Double, js.Any, scala.Unit]
+  ): IContentEditingHelper = {
+    val __obj = js.Dynamic.literal(getAllProps = getAllProps, getAllowedActions = getAllowedActions, getButtonFromAction = getButtonFromAction, handleSaveError = handleSaveError, handleSuccessfulSave = handleSuccessfulSave, reBindChangedProperties = reBindChangedProperties, redirectToCreatedContent = redirectToCreatedContent)
+  
+    __obj.asInstanceOf[IContentEditingHelper]
+  }
+}
+

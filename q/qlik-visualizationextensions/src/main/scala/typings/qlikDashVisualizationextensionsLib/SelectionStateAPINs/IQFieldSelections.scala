@@ -59,3 +59,25 @@ trait IQFieldSelections extends js.Object {
   var totalCount: scala.Double
 }
 
+object IQFieldSelections {
+  @scala.inline
+  def apply(
+    field: qlikDashVisualizationextensionsLib.FieldAPINs.IQField,
+    fieldName: java.lang.String,
+    isNumeric: scala.Boolean,
+    locked: scala.Boolean,
+    notSelectedValues: js.Array[scala.Double],
+    qSelected: java.lang.String,
+    qSelectionThreshold: scala.Double,
+    qSortIndex: scala.Double,
+    qStateCounts: js.Any,
+    selectedCount: scala.Double,
+    selectedValues: js.Array[scala.Double],
+    totalCount: scala.Double
+  ): IQFieldSelections = {
+    val __obj = js.Dynamic.literal(field = field, fieldName = fieldName, isNumeric = isNumeric, locked = locked, notSelectedValues = notSelectedValues, qSelected = qSelected, qSelectionThreshold = qSelectionThreshold, qSortIndex = qSortIndex, qStateCounts = qStateCounts, selectedCount = selectedCount, selectedValues = selectedValues, totalCount = totalCount)
+  
+    __obj.asInstanceOf[IQFieldSelections]
+  }
+}
+

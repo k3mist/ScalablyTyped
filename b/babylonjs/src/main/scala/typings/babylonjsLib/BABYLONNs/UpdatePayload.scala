@@ -13,3 +13,17 @@ trait UpdatePayload extends js.Object {
   var updatedMeshes: org.scalablytyped.runtime.NumberDictionary[SerializedMesh]
 }
 
+object UpdatePayload {
+  @scala.inline
+  def apply(
+    removedGeometries: js.Array[java.lang.String],
+    removedMeshes: js.Array[scala.Double],
+    updatedGeometries: org.scalablytyped.runtime.StringDictionary[SerializedGeometry],
+    updatedMeshes: org.scalablytyped.runtime.NumberDictionary[SerializedMesh]
+  ): UpdatePayload = {
+    val __obj = js.Dynamic.literal(removedGeometries = removedGeometries, removedMeshes = removedMeshes, updatedGeometries = updatedGeometries, updatedMeshes = updatedMeshes)
+  
+    __obj.asInstanceOf[UpdatePayload]
+  }
+}
+

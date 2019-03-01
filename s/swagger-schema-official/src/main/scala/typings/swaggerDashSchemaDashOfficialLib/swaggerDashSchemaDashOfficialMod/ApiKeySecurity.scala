@@ -12,3 +12,17 @@ trait ApiKeySecurity
   var name: java.lang.String
 }
 
+object ApiKeySecurity {
+  @scala.inline
+  def apply(
+    in: java.lang.String,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null
+  ): ApiKeySecurity = {
+    val __obj = js.Dynamic.literal(in = in, name = name, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[ApiKeySecurity]
+  }
+}
+

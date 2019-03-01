@@ -16,3 +16,12 @@ trait GetAccountAliasResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetAccountAliasResult {
+  @scala.inline
+  def apply(accountAlias: java.lang.String, id: java.lang.String): GetAccountAliasResult = {
+    val __obj = js.Dynamic.literal(accountAlias = accountAlias, id = id)
+  
+    __obj.asInstanceOf[GetAccountAliasResult]
+  }
+}
+

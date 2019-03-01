@@ -10,3 +10,12 @@ trait Anon_Machines extends js.Object {
   var none: scala.Double
 }
 
+object Anon_Machines {
+  @scala.inline
+  def apply(machines: scala.Double, none: scala.Double): Anon_Machines = {
+    val __obj = js.Dynamic.literal(machines = machines, none = none)
+  
+    __obj.asInstanceOf[Anon_Machines]
+  }
+}
+

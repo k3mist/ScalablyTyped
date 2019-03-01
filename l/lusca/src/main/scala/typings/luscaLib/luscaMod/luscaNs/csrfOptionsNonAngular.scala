@@ -13,3 +13,22 @@ trait csrfOptionsNonAngular extends csrfOptions {
   var secret: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object csrfOptionsNonAngular {
+  @scala.inline
+  def apply(
+    angular: luscaLib.luscaLibNumbers.`false` = null,
+    cookie: java.lang.String | luscaLib.Anon_Name = null,
+    impl: js.Function0[_] = null,
+    key: java.lang.String = null,
+    secret: java.lang.String = null
+  ): csrfOptionsNonAngular = {
+    val __obj = js.Dynamic.literal()
+    if (angular != null) __obj.updateDynamic("angular")(angular)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (impl != null) __obj.updateDynamic("impl")(impl)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (secret != null) __obj.updateDynamic("secret")(secret)
+    __obj.asInstanceOf[csrfOptionsNonAngular]
+  }
+}
+

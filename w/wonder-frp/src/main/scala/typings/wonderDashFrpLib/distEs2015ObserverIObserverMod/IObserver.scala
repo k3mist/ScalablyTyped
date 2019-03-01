@@ -12,3 +12,17 @@ trait IObserver
   def next(value: js.Any): js.Any
 }
 
+object IObserver {
+  @scala.inline
+  def apply(
+    completed: js.Function0[js.Any],
+    dispose: js.Function0[scala.Unit],
+    error: js.Function1[js.Any, js.Any],
+    next: js.Function1[js.Any, js.Any]
+  ): IObserver = {
+    val __obj = js.Dynamic.literal(completed = completed, dispose = dispose, error = error, next = next)
+  
+    __obj.asInstanceOf[IObserver]
+  }
+}
+

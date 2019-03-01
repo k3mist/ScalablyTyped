@@ -92,7 +92,7 @@ object mapboxDashGlLibStrings {
     extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait `^`
+  sealed trait `_backtick^_backtick`
     extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
@@ -713,7 +713,7 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def abs: abs = "abs".asInstanceOf[abs]
   @scala.inline

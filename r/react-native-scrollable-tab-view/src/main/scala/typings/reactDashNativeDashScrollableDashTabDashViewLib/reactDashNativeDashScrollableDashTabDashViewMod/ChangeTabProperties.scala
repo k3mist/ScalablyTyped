@@ -14,3 +14,12 @@ trait ChangeTabProperties extends js.Object {
   var ref: reactLib.reactMod.Global.JSXNs.Element
 }
 
+object ChangeTabProperties {
+  @scala.inline
+  def apply(from: scala.Double, i: scala.Double, ref: reactLib.reactMod.Global.JSXNs.Element): ChangeTabProperties = {
+    val __obj = js.Dynamic.literal(from = from, i = i, ref = ref)
+  
+    __obj.asInstanceOf[ChangeTabProperties]
+  }
+}
+

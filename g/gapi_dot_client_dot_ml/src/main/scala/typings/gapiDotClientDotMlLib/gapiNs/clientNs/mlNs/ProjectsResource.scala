@@ -24,3 +24,24 @@ trait ProjectsResource extends js.Object {
   def predict(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    getConfig: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__GetConfigResponse]
+    ],
+    jobs: JobsResource,
+    models: ModelsResource,
+    operations: OperationsResource,
+    predict: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(getConfig = getConfig, jobs = jobs, models = models, operations = operations, predict = predict)
+  
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

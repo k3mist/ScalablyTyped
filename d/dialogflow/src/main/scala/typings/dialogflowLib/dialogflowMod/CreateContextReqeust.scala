@@ -10,3 +10,12 @@ trait CreateContextReqeust extends js.Object {
   var parent: java.lang.String
 }
 
+object CreateContextReqeust {
+  @scala.inline
+  def apply(context: Context[java.lang.String, _], parent: java.lang.String): CreateContextReqeust = {
+    val __obj = js.Dynamic.literal(context = context, parent = parent)
+  
+    __obj.asInstanceOf[CreateContextReqeust]
+  }
+}
+

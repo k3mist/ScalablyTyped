@@ -11,3 +11,12 @@ trait IncomingWebhookCall[T] extends js.Object {
   var url: IncomingWebhookUrl
 }
 
+object IncomingWebhookCall {
+  @scala.inline
+  def apply[T](headers: IncomingWebhookHttpHeaders, params: T, url: IncomingWebhookUrl): IncomingWebhookCall[T] = {
+    val __obj = js.Dynamic.literal(headers = headers, params = params.asInstanceOf[js.Any], url = url)
+  
+    __obj.asInstanceOf[IncomingWebhookCall[T]]
+  }
+}
+

@@ -16,3 +16,17 @@ trait PolygonEditor extends PathEditor {
   def newHole(latlng: leafletLib.leafletMod.LatLng): scala.Unit
 }
 
+object PolygonEditor {
+  @scala.inline
+  def apply(
+    disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
+    enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
+    newHole: js.Function1[leafletLib.leafletMod.LatLng, scala.Unit],
+    reset: js.Function0[scala.Unit]
+  ): PolygonEditor = {
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, newHole = newHole, reset = reset)
+  
+    __obj.asInstanceOf[PolygonEditor]
+  }
+}
+

@@ -20,3 +20,16 @@ trait ResourceArgs extends js.Object {
   val restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]
 }
 
+object ResourceArgs {
+  @scala.inline
+  def apply(
+    parentId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    pathPart: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]
+  ): ResourceArgs = {
+    val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ResourceArgs]
+  }
+}
+

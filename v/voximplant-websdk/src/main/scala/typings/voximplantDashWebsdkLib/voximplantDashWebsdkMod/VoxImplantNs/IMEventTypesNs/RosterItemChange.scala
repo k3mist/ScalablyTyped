@@ -32,3 +32,18 @@ trait RosterItemChange
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItemEvent
 }
 
+object RosterItemChange {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    groups: js.Array[java.lang.String],
+    id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItemEvent,
+    resource: java.lang.String = null
+  ): RosterItemChange = {
+    val __obj = js.Dynamic.literal(displayName = displayName, groups = groups, id = id, `type` = `type`)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[RosterItemChange]
+  }
+}
+

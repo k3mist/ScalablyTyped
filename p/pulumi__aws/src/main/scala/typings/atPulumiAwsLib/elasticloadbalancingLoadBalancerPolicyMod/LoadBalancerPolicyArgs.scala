@@ -28,3 +28,19 @@ trait LoadBalancerPolicyArgs extends js.Object {
   val policyTypeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object LoadBalancerPolicyArgs {
+  @scala.inline
+  def apply(
+    loadBalancerName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    policyName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    policyTypeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    policyAttributes: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValueInput]]
+    ] = null
+  ): LoadBalancerPolicyArgs = {
+    val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any], policyTypeName = policyTypeName.asInstanceOf[js.Any])
+    if (policyAttributes != null) __obj.updateDynamic("policyAttributes")(policyAttributes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerPolicyArgs]
+  }
+}
+

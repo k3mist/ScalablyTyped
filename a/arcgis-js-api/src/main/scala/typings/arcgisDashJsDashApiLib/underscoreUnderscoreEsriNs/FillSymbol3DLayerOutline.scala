@@ -20,3 +20,28 @@ trait FillSymbol3DLayerOutline extends AnonymousAccessor {
   var size: scala.Double
 }
 
+object FillSymbol3DLayerOutline {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    size: scala.Double,
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, FillSymbol3DLayerOutline]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], FillSymbol3DLayerOutline]) = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): FillSymbol3DLayerOutline = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, size = size)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[FillSymbol3DLayerOutline]
+  }
+}
+

@@ -12,3 +12,17 @@ trait IProjection extends js.Object {
   def toGlobalPixels(coordPoint: js.Array[scala.Double], zoom: scala.Double): js.Array[scala.Double]
 }
 
+object IProjection {
+  @scala.inline
+  def apply(
+    fromGlobalPixels: js.Function2[js.Array[scala.Double], scala.Double, js.Array[scala.Double]],
+    getCoordSystem: js.Function0[ICoordSystem],
+    isCycled: js.Function0[js.Array[scala.Boolean]],
+    toGlobalPixels: js.Function2[js.Array[scala.Double], scala.Double, js.Array[scala.Double]]
+  ): IProjection = {
+    val __obj = js.Dynamic.literal(fromGlobalPixels = fromGlobalPixels, getCoordSystem = getCoordSystem, isCycled = isCycled, toGlobalPixels = toGlobalPixels)
+  
+    __obj.asInstanceOf[IProjection]
+  }
+}
+

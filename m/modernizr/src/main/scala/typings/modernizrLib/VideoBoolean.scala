@@ -11,3 +11,12 @@ trait VideoBoolean extends js.Object {
   var webm: java.lang.String
 }
 
+object VideoBoolean {
+  @scala.inline
+  def apply(h264: java.lang.String, ogg: java.lang.String, webm: java.lang.String): VideoBoolean = {
+    val __obj = js.Dynamic.literal(h264 = h264, ogg = ogg, webm = webm)
+  
+    __obj.asInstanceOf[VideoBoolean]
+  }
+}
+

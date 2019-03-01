@@ -23,3 +23,28 @@ trait RankingsResponseObject extends ResponseObject {
   var wp: scala.Double
 }
 
+object RankingsResponseObject {
+  @scala.inline
+  def apply(
+    ap: scala.Double,
+    ccwm: scala.Double,
+    division: java.lang.String,
+    dpr: scala.Double,
+    losses: scala.Double,
+    max_score: scala.Double,
+    opr: scala.Double,
+    rank: scala.Double,
+    sku: java.lang.String,
+    sp: scala.Double,
+    team: java.lang.String,
+    ties: scala.Double,
+    trsp: scala.Double,
+    wins: scala.Double,
+    wp: scala.Double
+  ): RankingsResponseObject = {
+    val __obj = js.Dynamic.literal(ap = ap, ccwm = ccwm, division = division, dpr = dpr, losses = losses, max_score = max_score, opr = opr, rank = rank, sku = sku, sp = sp, team = team, ties = ties, trsp = trsp, wins = wins, wp = wp)
+  
+    __obj.asInstanceOf[RankingsResponseObject]
+  }
+}
+

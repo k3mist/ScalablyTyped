@@ -64,3 +64,27 @@ trait SchedulerSizes extends js.Object {
   var scroll_width: scala.Double
 }
 
+object SchedulerSizes {
+  @scala.inline
+  def apply(
+    bar_height: scala.Double,
+    editor_width: scala.Double,
+    lightbox_additional_height: scala.Double,
+    map_date_width: scala.Double,
+    map_description_width: scala.Double,
+    margin_left: scala.Double,
+    margin_top: scala.Double,
+    menu_width: scala.Double,
+    min_event_height: scala.Double,
+    month_scale_height: scala.Double,
+    nav_height: scala.Double,
+    scale_height: scala.Double,
+    scale_width: scala.Double,
+    scroll_width: scala.Double
+  ): SchedulerSizes = {
+    val __obj = js.Dynamic.literal(bar_height = bar_height, editor_width = editor_width, lightbox_additional_height = lightbox_additional_height, map_date_width = map_date_width, map_description_width = map_description_width, margin_left = margin_left, margin_top = margin_top, menu_width = menu_width, min_event_height = min_event_height, month_scale_height = month_scale_height, nav_height = nav_height, scale_height = scale_height, scale_width = scale_width, scroll_width = scroll_width)
+  
+    __obj.asInstanceOf[SchedulerSizes]
+  }
+}
+

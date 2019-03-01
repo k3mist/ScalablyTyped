@@ -18,3 +18,23 @@ trait Menu extends ItemMenuSeparator {
   def removeItem(item: ItemMenuSeparator): scala.Unit
 }
 
+object Menu {
+  @scala.inline
+  def apply(
+    addItem: js.Function1[ItemMenuSeparator, scala.Unit],
+    contentScript: java.lang.String | js.Array[java.lang.String],
+    contentScriptFile: java.lang.String | js.Array[java.lang.String],
+    context: ItemContext,
+    destroy: js.Function0[scala.Unit],
+    image: java.lang.String | stdLib.URL,
+    items: js.Array[ItemMenuSeparator],
+    label: java.lang.String,
+    removeItem: js.Function1[ItemMenuSeparator, scala.Unit],
+    parentMenu: Menu = null
+  ): Menu = {
+    val __obj = js.Dynamic.literal(addItem = addItem, contentScript = contentScript.asInstanceOf[js.Any], contentScriptFile = contentScriptFile.asInstanceOf[js.Any], context = context, destroy = destroy, image = image.asInstanceOf[js.Any], items = items, label = label, removeItem = removeItem)
+    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
+    __obj.asInstanceOf[Menu]
+  }
+}
+

@@ -16,3 +16,21 @@ trait WebfontFamily extends js.Object {
   var version: java.lang.String
 }
 
+object WebfontFamily {
+  @scala.inline
+  def apply(
+    family: java.lang.String,
+    files: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    kind: java.lang.String,
+    lastModified: java.lang.String,
+    subsets: js.Array[java.lang.String],
+    variants: js.Array[java.lang.String],
+    version: java.lang.String,
+    category: java.lang.String = null
+  ): WebfontFamily = {
+    val __obj = js.Dynamic.literal(family = family, files = files, kind = kind, lastModified = lastModified, subsets = subsets, variants = variants, version = version)
+    if (category != null) __obj.updateDynamic("category")(category)
+    __obj.asInstanceOf[WebfontFamily]
+  }
+}
+

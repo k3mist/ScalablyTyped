@@ -12,3 +12,12 @@ trait ProductSubscriptionArgs extends js.Object {
   val productArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ProductSubscriptionArgs {
+  @scala.inline
+  def apply(productArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): ProductSubscriptionArgs = {
+    val __obj = js.Dynamic.literal(productArn = productArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ProductSubscriptionArgs]
+  }
+}
+

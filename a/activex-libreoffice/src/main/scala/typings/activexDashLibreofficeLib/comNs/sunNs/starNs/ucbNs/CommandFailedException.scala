@@ -19,3 +19,16 @@ trait CommandFailedException
   var Reason: js.Any
 }
 
+object CommandFailedException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Reason: js.Any
+  ): CommandFailedException = {
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Reason = Reason)
+  
+    __obj.asInstanceOf[CommandFailedException]
+  }
+}
+

@@ -27,3 +27,12 @@ trait TextColumn extends js.Object {
   var Width: scala.Double
 }
 
+object TextColumn {
+  @scala.inline
+  def apply(LeftMargin: scala.Double, RightMargin: scala.Double, Width: scala.Double): TextColumn = {
+    val __obj = js.Dynamic.literal(LeftMargin = LeftMargin, RightMargin = RightMargin, Width = Width)
+  
+    __obj.asInstanceOf[TextColumn]
+  }
+}
+

@@ -10,3 +10,12 @@ trait MasteryDto extends js.Object {
   var rank: scala.Double
 }
 
+object MasteryDto {
+  @scala.inline
+  def apply(id: scala.Double, rank: scala.Double): MasteryDto = {
+    val __obj = js.Dynamic.literal(id = id, rank = rank)
+  
+    __obj.asInstanceOf[MasteryDto]
+  }
+}
+

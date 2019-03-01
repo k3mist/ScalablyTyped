@@ -43,3 +43,48 @@ trait Anon_ActorNotificationReason extends js.Object {
   var SubscriptionTemplateType: Anon_EnumValuesAnonBoth
 }
 
+object Anon_ActorNotificationReason {
+  @scala.inline
+  def apply(
+    ActorNotificationReason: js.Any,
+    BatchNotificationOperation: js.Any,
+    EvaluationOperationStatus: Anon_EnumValuesAnonCancelledFailed,
+    EventPublisherQueryFlags: Anon_EnumValuesAnonIncludeRemoteServices,
+    EventTypeQueryFlags: Anon_EnumValuesAnonIncludeFields,
+    NotificationEventField: js.Any,
+    NotificationEventFieldType: js.Any,
+    NotificationEventType: js.Any,
+    NotificationOperation: Anon_EnumValuesAnonNoneSuspendUnprocessed,
+    NotificationReason: js.Any,
+    NotificationReasonType: Anon_EnumValuesAnonAliasMemberGroupRole,
+    NotificationStatistic: js.Any,
+    NotificationStatisticType: Anon_EnumValuesAnonDelayRangeStart,
+    NotificationStatisticsQuery: js.Any,
+    NotificationStatisticsQueryConditions: js.Any,
+    NotificationSubscriber: js.Any,
+    NotificationSubscriberDeliveryPreference: Anon_EnumValuesAnonEachMember,
+    NotificationSubscriberUpdateParameters: js.Any,
+    NotificationSubscription: js.Any,
+    NotificationSubscriptionTemplate: js.Any,
+    NotificationSubscriptionUpdateParameters: js.Any,
+    NotificationTracing: js.Any,
+    SubscriberFlags: Anon_EnumValuesAnonDeliveryPreferencesEditable,
+    SubscriptionDiagnostics: js.Any,
+    SubscriptionEvaluationRequest: js.Any,
+    SubscriptionEvaluationResult: js.Any,
+    SubscriptionFieldType: Anon_EnumValuesAnonBooleanDateTime,
+    SubscriptionFlags: Anon_EnumValuesAnonCanOptOut,
+    SubscriptionPermissions: Anon_EnumValuesAnonDelete,
+    SubscriptionQuery: js.Any,
+    SubscriptionQueryCondition: js.Any,
+    SubscriptionQueryFlags: Anon_EnumValuesAnonAlwaysReturnBasicInformation,
+    SubscriptionStatus: Anon_EnumValuesAnonDisabledDisabledAsDuplicateOfDefault,
+    SubscriptionTemplateQueryFlags: Anon_EnumValuesAnonIncludeEventTypeInformation,
+    SubscriptionTemplateType: Anon_EnumValuesAnonBoth
+  ): Anon_ActorNotificationReason = {
+    val __obj = js.Dynamic.literal(ActorNotificationReason = ActorNotificationReason, BatchNotificationOperation = BatchNotificationOperation, EvaluationOperationStatus = EvaluationOperationStatus, EventPublisherQueryFlags = EventPublisherQueryFlags, EventTypeQueryFlags = EventTypeQueryFlags, NotificationEventField = NotificationEventField, NotificationEventFieldType = NotificationEventFieldType, NotificationEventType = NotificationEventType, NotificationOperation = NotificationOperation, NotificationReason = NotificationReason, NotificationReasonType = NotificationReasonType, NotificationStatistic = NotificationStatistic, NotificationStatisticType = NotificationStatisticType, NotificationStatisticsQuery = NotificationStatisticsQuery, NotificationStatisticsQueryConditions = NotificationStatisticsQueryConditions, NotificationSubscriber = NotificationSubscriber, NotificationSubscriberDeliveryPreference = NotificationSubscriberDeliveryPreference, NotificationSubscriberUpdateParameters = NotificationSubscriberUpdateParameters, NotificationSubscription = NotificationSubscription, NotificationSubscriptionTemplate = NotificationSubscriptionTemplate, NotificationSubscriptionUpdateParameters = NotificationSubscriptionUpdateParameters, NotificationTracing = NotificationTracing, SubscriberFlags = SubscriberFlags, SubscriptionDiagnostics = SubscriptionDiagnostics, SubscriptionEvaluationRequest = SubscriptionEvaluationRequest, SubscriptionEvaluationResult = SubscriptionEvaluationResult, SubscriptionFieldType = SubscriptionFieldType, SubscriptionFlags = SubscriptionFlags, SubscriptionPermissions = SubscriptionPermissions, SubscriptionQuery = SubscriptionQuery, SubscriptionQueryCondition = SubscriptionQueryCondition, SubscriptionQueryFlags = SubscriptionQueryFlags, SubscriptionStatus = SubscriptionStatus, SubscriptionTemplateQueryFlags = SubscriptionTemplateQueryFlags, SubscriptionTemplateType = SubscriptionTemplateType)
+  
+    __obj.asInstanceOf[Anon_ActorNotificationReason]
+  }
+}
+

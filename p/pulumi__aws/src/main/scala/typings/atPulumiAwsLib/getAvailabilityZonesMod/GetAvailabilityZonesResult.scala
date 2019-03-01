@@ -20,3 +20,12 @@ trait GetAvailabilityZonesResult extends js.Object {
   val zoneIds: js.Array[java.lang.String]
 }
 
+object GetAvailabilityZonesResult {
+  @scala.inline
+  def apply(id: java.lang.String, names: js.Array[java.lang.String], zoneIds: js.Array[java.lang.String]): GetAvailabilityZonesResult = {
+    val __obj = js.Dynamic.literal(id = id, names = names, zoneIds = zoneIds)
+  
+    __obj.asInstanceOf[GetAvailabilityZonesResult]
+  }
+}
+

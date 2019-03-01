@@ -86,3 +86,31 @@ trait OptionsLB extends js.Object {
   var normalization: java.lang.String | scala.Boolean | js.Any
 }
 
+object OptionsLB {
+  @scala.inline
+  def apply(
+    appConfigRootDir: java.lang.String,
+    appRootDir: java.lang.String,
+    bootDirs: js.Array[java.lang.String],
+    bootScripts: js.Array[java.lang.String],
+    componentRootDir: java.lang.String,
+    components: js.Any,
+    dataSources: js.Any,
+    dsRootDir: java.lang.String,
+    env: java.lang.String,
+    middleware: js.Any,
+    middlewareRootDir: java.lang.String,
+    mixinDirs: js.Array[java.lang.String],
+    mixinSources: js.Array[java.lang.String],
+    modelDefinitions: js.Array[_],
+    modelSources: js.Array[java.lang.String],
+    models: js.Any,
+    modelsRootDir: java.lang.String,
+    normalization: java.lang.String | scala.Boolean | js.Any
+  ): OptionsLB = {
+    val __obj = js.Dynamic.literal(appConfigRootDir = appConfigRootDir, appRootDir = appRootDir, bootDirs = bootDirs, bootScripts = bootScripts, componentRootDir = componentRootDir, components = components, dataSources = dataSources, dsRootDir = dsRootDir, env = env, middleware = middleware, middlewareRootDir = middlewareRootDir, mixinDirs = mixinDirs, mixinSources = mixinSources, modelDefinitions = modelDefinitions, modelSources = modelSources, models = models, modelsRootDir = modelsRootDir, normalization = normalization.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[OptionsLB]
+  }
+}
+

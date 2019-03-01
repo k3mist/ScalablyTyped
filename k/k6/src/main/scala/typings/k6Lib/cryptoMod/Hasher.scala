@@ -10,3 +10,15 @@ trait Hasher extends js.Object {
   def update(input: java.lang.String): scala.Unit
 }
 
+object Hasher {
+  @scala.inline
+  def apply(
+    digest: js.Function1[OutputEncoding, java.lang.String],
+    update: js.Function1[java.lang.String, scala.Unit]
+  ): Hasher = {
+    val __obj = js.Dynamic.literal(digest = digest, update = update)
+  
+    __obj.asInstanceOf[Hasher]
+  }
+}
+

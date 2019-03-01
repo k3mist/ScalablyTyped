@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object typescriptLibStrings {
   @js.native
-  sealed trait `'`
+  sealed trait _quote
     extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
   
   @js.native
@@ -135,7 +135,7 @@ object typescriptLibStrings {
   sealed trait typesRegistry extends js.Object
   
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def `(`: `(` = "(".asInstanceOf[`(`]
   @scala.inline

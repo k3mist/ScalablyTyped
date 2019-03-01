@@ -12,3 +12,16 @@ trait CopyOperation
   var op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.copy
 }
 
+object CopyOperation {
+  @scala.inline
+  def apply(
+    from: java.lang.String,
+    op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.copy,
+    path: java.lang.String
+  ): CopyOperation = {
+    val __obj = js.Dynamic.literal(from = from, op = op, path = path)
+  
+    __obj.asInstanceOf[CopyOperation]
+  }
+}
+

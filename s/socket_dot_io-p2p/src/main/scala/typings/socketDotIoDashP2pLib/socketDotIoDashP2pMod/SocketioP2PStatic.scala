@@ -32,3 +32,28 @@ trait SocketioP2PStatic extends js.Object {
   def upgrade(): scala.Unit
 }
 
+object SocketioP2PStatic {
+  @scala.inline
+  def apply(
+    binarySlice: js.Function3[js.Array[_], scala.Double, js.Function0[scala.Unit], scala.Unit],
+    cb: js.Function0[scala.Unit],
+    decoder: js.Any,
+    defaultOps: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.DefaultOps,
+    disconnect: js.Function0[scala.Unit],
+    emit: js.Function2[js.Any, js.Any, scala.Unit],
+    numConnectedClients: scala.Double,
+    on: js.Function2[java.lang.String, js.Function1[/* data */ js.Any, scala.Unit], scala.Unit],
+    opts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.P2POptions,
+    peerOpts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.PeerOpts,
+    setupPeerEvents: js.Function1[js.Any, scala.Unit],
+    socket: js.Any,
+    upgrade: js.Function0[scala.Unit],
+    usePeerConnection: scala.Boolean,
+    useSockets: scala.Boolean
+  ): SocketioP2PStatic = {
+    val __obj = js.Dynamic.literal(binarySlice = binarySlice, cb = cb, decoder = decoder, defaultOps = defaultOps, disconnect = disconnect, emit = emit, numConnectedClients = numConnectedClients, on = on, opts = opts, peerOpts = peerOpts, setupPeerEvents = setupPeerEvents, socket = socket, upgrade = upgrade, usePeerConnection = usePeerConnection, useSockets = useSockets)
+  
+    __obj.asInstanceOf[SocketioP2PStatic]
+  }
+}
+

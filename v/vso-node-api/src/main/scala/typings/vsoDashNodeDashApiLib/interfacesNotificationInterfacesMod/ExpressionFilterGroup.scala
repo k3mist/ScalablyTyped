@@ -20,3 +20,12 @@ trait ExpressionFilterGroup extends js.Object {
   var start: scala.Double
 }
 
+object ExpressionFilterGroup {
+  @scala.inline
+  def apply(end: scala.Double, level: scala.Double, start: scala.Double): ExpressionFilterGroup = {
+    val __obj = js.Dynamic.literal(end = end, level = level, start = start)
+  
+    __obj.asInstanceOf[ExpressionFilterGroup]
+  }
+}
+

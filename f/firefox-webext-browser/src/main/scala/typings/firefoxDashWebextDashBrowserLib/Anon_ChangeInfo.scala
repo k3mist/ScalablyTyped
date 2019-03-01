@@ -54,3 +54,49 @@ trait Anon_ChangeInfo extends js.Object {
   ]
 }
 
+object Anon_ChangeInfo {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      Anon_Color, 
+      js.Promise[
+        firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+      ]
+    ],
+    get: js.Function1[
+      java.lang.String, 
+      js.Promise[
+        firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+      ]
+    ],
+    onCreated: WebExtEvent[js.Function1[/* changeInfo */ Anon_ContextualIdentity, scala.Unit]],
+    onRemoved: WebExtEvent[js.Function1[/* changeInfo */ Anon_ContextualIdentity, scala.Unit]],
+    onUpdated: WebExtEvent[js.Function1[/* changeInfo */ Anon_ContextualIdentity, scala.Unit]],
+    query: js.Function1[
+      Anon_Name, 
+      js.Promise[
+        js.Array[
+          firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+        ]
+      ]
+    ],
+    remove: js.Function1[
+      java.lang.String, 
+      js.Promise[
+        firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+      ]
+    ],
+    update: js.Function2[
+      java.lang.String, 
+      Anon_ColorIcon, 
+      js.Promise[
+        firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+      ]
+    ]
+  ): Anon_ChangeInfo = {
+    val __obj = js.Dynamic.literal(create = create, get = get, onCreated = onCreated, onRemoved = onRemoved, onUpdated = onUpdated, query = query, remove = remove, update = update)
+  
+    __obj.asInstanceOf[Anon_ChangeInfo]
+  }
+}
+

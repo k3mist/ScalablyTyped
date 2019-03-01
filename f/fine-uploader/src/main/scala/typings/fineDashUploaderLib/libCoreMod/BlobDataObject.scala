@@ -16,3 +16,12 @@ trait BlobDataObject extends js.Object {
   var size: scala.Double
 }
 
+object BlobDataObject {
+  @scala.inline
+  def apply(name: java.lang.String, size: scala.Double): BlobDataObject = {
+    val __obj = js.Dynamic.literal(name = name, size = size)
+  
+    __obj.asInstanceOf[BlobDataObject]
+  }
+}
+

@@ -306,3 +306,61 @@ trait UrbanAirshipStatic extends js.Object {
   def setVibrateEnabled(enabled: scala.Boolean, callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object UrbanAirshipStatic {
+  @scala.inline
+  def apply(
+    clearNotifications: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    editChannelTagGroups: js.Function0[EditChannelTagGroupsApi],
+    editNamedUserTagGroups: js.Function0[EditNamedUserTagGroupsApi],
+    getAlias: js.Function1[js.Function1[/* alias */ java.lang.String, scala.Unit], scala.Unit],
+    getBadgeNumber: js.Function1[js.Function1[/* badgeNumber */ scala.Double, scala.Unit], scala.Unit],
+    getChannelID: js.Function1[js.Function1[/* id */ java.lang.String, scala.Unit], scala.Unit],
+    getLaunchNotification: js.Function2[scala.Boolean, js.Function1[/* push */ PushEvent, scala.Unit], scala.Unit],
+    getNamedUser: js.Function1[js.Function1[/* namedUserId */ java.lang.String, scala.Unit], scala.Unit],
+    getQuietTime: js.Function1[js.Function1[/* quietTime */ QuietTimeTimeSpan, scala.Unit], scala.Unit],
+    getTags: js.Function1[js.Function1[/* tags */ js.Array[java.lang.String], scala.Unit], scala.Unit],
+    isAnalyticsEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    isBackgroundLocationEnabled: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    isInQuietTime: js.Function1[js.Function1[/* inQuietTime */ scala.Boolean, scala.Unit], scala.Unit],
+    isLocationEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    isQuietTimeEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    isSoundEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    isUserNotificationsEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    isVibrateEnabled: js.Function1[js.Function1[/* enabled */ scala.Boolean, scala.Unit], scala.Unit],
+    notificationType: urbanairshipDashCordovaLib.Anon_Alert,
+    recordCurrentLocation: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    resetBadge: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    runAction: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function1[/* result */ RunActionResult, scala.Unit], 
+      scala.Unit
+    ],
+    setAlias: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    setAnalyticsEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setAutobadgeEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setBackgroundLocationEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setBadgeNumber: js.Function2[scala.Double, js.Function0[scala.Unit], scala.Unit],
+    setLocationEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setNamedUser: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    setNotificationTypes: js.Function2[scala.Double, js.Function0[scala.Unit], scala.Unit],
+    setQuietTime: js.Function5[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Function0[scala.Unit], 
+      scala.Unit
+    ],
+    setQuietTimeEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setSoundEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit],
+    setTags: js.Function2[js.Array[java.lang.String], js.Function0[scala.Unit], scala.Unit],
+    setUserNotificationsEnabled: js.Function2[scala.Boolean, js.Function1[/* status */ java.lang.String, scala.Unit], scala.Unit],
+    setVibrateEnabled: js.Function2[scala.Boolean, js.Function0[scala.Unit], scala.Unit]
+  ): UrbanAirshipStatic = {
+    val __obj = js.Dynamic.literal(clearNotifications = clearNotifications, editChannelTagGroups = editChannelTagGroups, editNamedUserTagGroups = editNamedUserTagGroups, getAlias = getAlias, getBadgeNumber = getBadgeNumber, getChannelID = getChannelID, getLaunchNotification = getLaunchNotification, getNamedUser = getNamedUser, getQuietTime = getQuietTime, getTags = getTags, isAnalyticsEnabled = isAnalyticsEnabled, isBackgroundLocationEnabled = isBackgroundLocationEnabled, isInQuietTime = isInQuietTime, isLocationEnabled = isLocationEnabled, isQuietTimeEnabled = isQuietTimeEnabled, isSoundEnabled = isSoundEnabled, isUserNotificationsEnabled = isUserNotificationsEnabled, isVibrateEnabled = isVibrateEnabled, notificationType = notificationType, recordCurrentLocation = recordCurrentLocation, resetBadge = resetBadge, runAction = runAction, setAlias = setAlias, setAnalyticsEnabled = setAnalyticsEnabled, setAutobadgeEnabled = setAutobadgeEnabled, setBackgroundLocationEnabled = setBackgroundLocationEnabled, setBadgeNumber = setBadgeNumber, setLocationEnabled = setLocationEnabled, setNamedUser = setNamedUser, setNotificationTypes = setNotificationTypes, setQuietTime = setQuietTime, setQuietTimeEnabled = setQuietTimeEnabled, setSoundEnabled = setSoundEnabled, setTags = setTags, setUserNotificationsEnabled = setUserNotificationsEnabled, setVibrateEnabled = setVibrateEnabled)
+  
+    __obj.asInstanceOf[UrbanAirshipStatic]
+  }
+}
+

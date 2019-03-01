@@ -15,3 +15,16 @@ trait XArrayFormulaTokens extends js.Object {
   def setArrayTokens(aTokens: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken]): scala.Unit
 }
 
+object XArrayFormulaTokens {
+  @scala.inline
+  def apply(
+    ArrayTokens: activexDashInteropLib.SafeArray[FormulaToken],
+    getArrayTokens: js.Function0[activexDashInteropLib.SafeArray[FormulaToken]],
+    setArrayTokens: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], scala.Unit]
+  ): XArrayFormulaTokens = {
+    val __obj = js.Dynamic.literal(ArrayTokens = ArrayTokens, getArrayTokens = getArrayTokens, setArrayTokens = setArrayTokens)
+  
+    __obj.asInstanceOf[XArrayFormulaTokens]
+  }
+}
+

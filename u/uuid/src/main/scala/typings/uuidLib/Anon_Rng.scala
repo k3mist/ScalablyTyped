@@ -10,3 +10,12 @@ trait Anon_Rng
   def rng(): js.Array[scala.Double]
 }
 
+object Anon_Rng {
+  @scala.inline
+  def apply(rng: js.Function0[js.Array[scala.Double]]): Anon_Rng = {
+    val __obj = js.Dynamic.literal(rng = rng)
+  
+    __obj.asInstanceOf[Anon_Rng]
+  }
+}
+

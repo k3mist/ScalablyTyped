@@ -46,3 +46,27 @@ trait EventSubscriptionArgs extends js.Object {
   ] = js.undefined
 }
 
+object EventSubscriptionArgs {
+  @scala.inline
+  def apply(
+    snsTopicArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    eventCategories: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    severity: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    sourceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): EventSubscriptionArgs = {
+    val __obj = js.Dynamic.literal(snsTopicArn = snsTopicArn.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (sourceIds != null) __obj.updateDynamic("sourceIds")(sourceIds.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventSubscriptionArgs]
+  }
+}
+

@@ -26,3 +26,18 @@ trait GeneralizeParametersProperties extends js.Object {
   var maxDeviation: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GeneralizeParametersProperties {
+  @scala.inline
+  def apply(
+    deviationUnit: java.lang.String = null,
+    geometries: js.Array[GeometryProperties] = null,
+    maxDeviation: scala.Int | scala.Double = null
+  ): GeneralizeParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (deviationUnit != null) __obj.updateDynamic("deviationUnit")(deviationUnit)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (maxDeviation != null) __obj.updateDynamic("maxDeviation")(maxDeviation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeneralizeParametersProperties]
+  }
+}
+

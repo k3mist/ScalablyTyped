@@ -17,3 +17,12 @@ trait CreateClientGrant extends js.Object {
   var scope: js.Array[java.lang.String]
 }
 
+object CreateClientGrant {
+  @scala.inline
+  def apply(audience: java.lang.String, client_id: java.lang.String, scope: js.Array[java.lang.String]): CreateClientGrant = {
+    val __obj = js.Dynamic.literal(audience = audience, client_id = client_id, scope = scope)
+  
+    __obj.asInstanceOf[CreateClientGrant]
+  }
+}
+

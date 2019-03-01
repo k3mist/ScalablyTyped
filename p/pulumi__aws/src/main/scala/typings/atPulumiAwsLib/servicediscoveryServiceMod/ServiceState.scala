@@ -34,3 +34,24 @@ trait ServiceState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ServiceState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dnsConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DnsRecordsNamespaceId] = null,
+    healthCheckConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FailureThresholdResourcePath] = null,
+    healthCheckCustomConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FailureThresholdInput] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ServiceState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsConfig != null) __obj.updateDynamic("dnsConfig")(dnsConfig.asInstanceOf[js.Any])
+    if (healthCheckConfig != null) __obj.updateDynamic("healthCheckConfig")(healthCheckConfig.asInstanceOf[js.Any])
+    if (healthCheckCustomConfig != null) __obj.updateDynamic("healthCheckCustomConfig")(healthCheckCustomConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceState]
+  }
+}
+

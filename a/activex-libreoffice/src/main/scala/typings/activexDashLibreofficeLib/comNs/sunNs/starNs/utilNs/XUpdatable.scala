@@ -12,3 +12,17 @@ trait XUpdatable
   def update(): scala.Unit
 }
 
+object XUpdatable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XUpdatable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update)
+  
+    __obj.asInstanceOf[XUpdatable]
+  }
+}
+

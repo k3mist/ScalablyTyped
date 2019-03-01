@@ -69,3 +69,30 @@ trait XDebugging
   def stop(): scala.Unit
 }
 
+object XDebugging {
+  @scala.inline
+  def apply(
+    StackTrace: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    clearAllBreakPoints: js.Function1[java.lang.String, scala.Unit],
+    doContinue: js.Function0[scala.Unit],
+    dumpVariable: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    eval: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getContextInformation: js.Function1[scala.Double, ContextInformation],
+    getStackTrace: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isVariable: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setBreakPoint: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Double],
+    setVariable: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
+    stepIn: js.Function0[scala.Unit],
+    stepOut: js.Function0[scala.Unit],
+    stepOver: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): XDebugging = {
+    val __obj = js.Dynamic.literal(StackTrace = StackTrace, acquire = acquire, clearAllBreakPoints = clearAllBreakPoints, doContinue = doContinue, dumpVariable = dumpVariable, eval = eval, getContextInformation = getContextInformation, getStackTrace = getStackTrace, isVariable = isVariable, queryInterface = queryInterface, release = release, setBreakPoint = setBreakPoint, setVariable = setVariable, stepIn = stepIn, stepOut = stepOut, stepOver = stepOver, stop = stop)
+  
+    __obj.asInstanceOf[XDebugging]
+  }
+}
+

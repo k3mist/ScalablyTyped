@@ -28,3 +28,17 @@ trait State extends js.Object {
   def push(data: js.Object): scala.Unit
 }
 
+object State {
+  @scala.inline
+  def apply(
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean],
+    pop: js.Function1[stdLib.Event, scala.Unit],
+    push: js.Function1[js.Object, scala.Unit]
+  ): State = {
+    val __obj = js.Dynamic.literal(init = init, initOnLoad = initOnLoad, pop = pop, push = push)
+  
+    __obj.asInstanceOf[State]
+  }
+}
+

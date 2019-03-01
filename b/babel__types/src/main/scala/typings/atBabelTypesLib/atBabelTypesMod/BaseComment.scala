@@ -13,3 +13,18 @@ trait BaseComment extends js.Object {
   var value: java.lang.String
 }
 
+object BaseComment {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: atBabelTypesLib.atBabelTypesLibStrings.CommentBlock | atBabelTypesLib.atBabelTypesLibStrings.CommentLine,
+    value: java.lang.String
+  ): BaseComment = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start, `type` = `type`.asInstanceOf[js.Any], value = value)
+  
+    __obj.asInstanceOf[BaseComment]
+  }
+}
+

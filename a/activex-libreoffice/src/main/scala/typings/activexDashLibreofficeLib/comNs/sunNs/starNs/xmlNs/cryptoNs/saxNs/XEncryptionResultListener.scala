@@ -23,3 +23,21 @@ trait XEncryptionResultListener
   ): scala.Unit
 }
 
+object XEncryptionResultListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    encrypted: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityOperationStatus, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEncryptionResultListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, encrypted = encrypted, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XEncryptionResultListener]
+  }
+}
+

@@ -11,3 +11,19 @@ import scala.scalajs.js.annotation._
   var delegateType: R3FactoryDelegateType
 }
 
+object R3DelegatedFactoryMetadata {
+  @scala.inline
+  def apply(
+    delegate: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    delegateType: R3FactoryDelegateType,
+    injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
+    name: java.lang.String,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    deps: js.Array[R3DependencyMetadata] = null
+  ): R3DelegatedFactoryMetadata = {
+    val __obj = js.Dynamic.literal(delegate = delegate, delegateType = delegateType, injectFn = injectFn, name = name, `type` = `type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3DelegatedFactoryMetadata]
+  }
+}
+

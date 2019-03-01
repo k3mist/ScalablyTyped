@@ -9,3 +9,12 @@ trait Anon_Json extends js.Object {
   var responseType: adoneLib.adoneLibStrings.json
 }
 
+object Anon_Json {
+  @scala.inline
+  def apply(responseType: adoneLib.adoneLibStrings.json): Anon_Json = {
+    val __obj = js.Dynamic.literal(responseType = responseType)
+  
+    __obj.asInstanceOf[Anon_Json]
+  }
+}
+

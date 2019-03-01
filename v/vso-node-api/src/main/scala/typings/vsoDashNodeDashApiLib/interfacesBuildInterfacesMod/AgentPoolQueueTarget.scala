@@ -21,3 +21,18 @@ trait AgentPoolQueueTarget extends PhaseTarget {
   var queue: AgentPoolQueue
 }
 
+object AgentPoolQueueTarget {
+  @scala.inline
+  def apply(
+    allowScriptsAuthAccessOption: scala.Boolean,
+    demands: js.Array[_],
+    executionOptions: AgentTargetExecutionOptions,
+    queue: AgentPoolQueue,
+    `type`: scala.Double
+  ): AgentPoolQueueTarget = {
+    val __obj = js.Dynamic.literal(allowScriptsAuthAccessOption = allowScriptsAuthAccessOption, demands = demands, executionOptions = executionOptions, queue = queue, `type` = `type`)
+  
+    __obj.asInstanceOf[AgentPoolQueueTarget]
+  }
+}
+

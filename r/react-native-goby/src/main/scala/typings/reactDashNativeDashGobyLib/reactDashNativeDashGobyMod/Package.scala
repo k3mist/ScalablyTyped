@@ -50,3 +50,23 @@ trait Package extends js.Object {
   var packageSize: scala.Double
 }
 
+object Package {
+  @scala.inline
+  def apply(
+    appVersion: java.lang.String,
+    deploymentKey: java.lang.String,
+    description: java.lang.String,
+    failedInstall: scala.Boolean,
+    isFirstRun: scala.Boolean,
+    isMandatory: scala.Boolean,
+    isPending: scala.Boolean,
+    label: java.lang.String,
+    packageHash: java.lang.String,
+    packageSize: scala.Double
+  ): Package = {
+    val __obj = js.Dynamic.literal(appVersion = appVersion, deploymentKey = deploymentKey, description = description, failedInstall = failedInstall, isFirstRun = isFirstRun, isMandatory = isMandatory, isPending = isPending, label = label, packageHash = packageHash, packageSize = packageSize)
+  
+    __obj.asInstanceOf[Package]
+  }
+}
+

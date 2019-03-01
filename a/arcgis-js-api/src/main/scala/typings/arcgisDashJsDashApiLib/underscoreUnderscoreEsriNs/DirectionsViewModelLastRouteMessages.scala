@@ -33,3 +33,18 @@ trait DirectionsViewModelLastRouteMessages
   var `type`: scala.Double
 }
 
+object DirectionsViewModelLastRouteMessages {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: scala.Double
+  ): DirectionsViewModelLastRouteMessages = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[DirectionsViewModelLastRouteMessages]
+  }
+}
+

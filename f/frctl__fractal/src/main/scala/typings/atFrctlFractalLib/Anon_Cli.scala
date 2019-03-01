@@ -10,3 +10,12 @@ trait Anon_Cli extends js.Object {
   var local: java.lang.String
 }
 
+object Anon_Cli {
+  @scala.inline
+  def apply(cli: java.lang.String, local: java.lang.String): Anon_Cli = {
+    val __obj = js.Dynamic.literal(cli = cli, local = local)
+  
+    __obj.asInstanceOf[Anon_Cli]
+  }
+}
+

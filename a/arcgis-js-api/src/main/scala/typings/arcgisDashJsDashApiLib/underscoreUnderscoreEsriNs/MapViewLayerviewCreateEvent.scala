@@ -10,3 +10,12 @@ trait MapViewLayerviewCreateEvent extends js.Object {
   var layerView: LayerView
 }
 
+object MapViewLayerviewCreateEvent {
+  @scala.inline
+  def apply(layer: Layer, layerView: LayerView): MapViewLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layer = layer, layerView = layerView)
+  
+    __obj.asInstanceOf[MapViewLayerviewCreateEvent]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_Href extends js.Object {
   var size: js.Array[scala.Double]
 }
 
+object Anon_Href {
+  @scala.inline
+  def apply(
+    href: java.lang.String,
+    ooffset: js.Array[scala.Double],
+    size: js.Array[scala.Double],
+    shape: yandexDashMapsLib.ymapsNs.IShape | yandexDashMapsLib.ymapsNs.IGeometryJson = null
+  ): Anon_Href = {
+    val __obj = js.Dynamic.literal(href = href, ooffset = ooffset, size = size)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Href]
+  }
+}
+

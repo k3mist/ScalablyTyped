@@ -14,3 +14,19 @@ trait FiveArrowsGraySet
   var grayUpInclineArrow: Icon
 }
 
+object FiveArrowsGraySet {
+  @scala.inline
+  def apply(
+    grayDownArrow: Icon,
+    grayDownInclineArrow: Icon,
+    graySideArrow: Icon,
+    grayUpArrow: Icon,
+    grayUpInclineArrow: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): FiveArrowsGraySet = {
+    val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow, grayDownInclineArrow = grayDownInclineArrow, graySideArrow = graySideArrow, grayUpArrow = grayUpArrow, grayUpInclineArrow = grayUpInclineArrow)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FiveArrowsGraySet]
+  }
+}
+

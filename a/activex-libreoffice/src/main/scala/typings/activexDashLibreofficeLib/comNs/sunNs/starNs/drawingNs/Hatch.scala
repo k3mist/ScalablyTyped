@@ -21,3 +21,17 @@ trait Hatch extends js.Object {
   var Style: HatchStyle
 }
 
+object Hatch {
+  @scala.inline
+  def apply(
+    Angle: scala.Double,
+    Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Distance: scala.Double,
+    Style: HatchStyle
+  ): Hatch = {
+    val __obj = js.Dynamic.literal(Angle = Angle, Color = Color, Distance = Distance, Style = Style)
+  
+    __obj.asInstanceOf[Hatch]
+  }
+}
+

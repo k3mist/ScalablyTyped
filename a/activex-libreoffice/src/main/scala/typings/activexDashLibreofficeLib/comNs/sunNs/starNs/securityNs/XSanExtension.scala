@@ -15,3 +15,20 @@ trait XSanExtension extends XCertificateExtension {
   var AlternativeNames: activexDashInteropLib.SafeArray[CertAltNameEntry]
 }
 
+object XSanExtension {
+  @scala.inline
+  def apply(
+    AlternativeNames: activexDashInteropLib.SafeArray[CertAltNameEntry],
+    ExtensionId: activexDashInteropLib.SafeArray[scala.Double],
+    ExtensionValue: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    isCritical: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSanExtension = {
+    val __obj = js.Dynamic.literal(AlternativeNames = AlternativeNames, ExtensionId = ExtensionId, ExtensionValue = ExtensionValue, acquire = acquire, isCritical = isCritical, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSanExtension]
+  }
+}
+

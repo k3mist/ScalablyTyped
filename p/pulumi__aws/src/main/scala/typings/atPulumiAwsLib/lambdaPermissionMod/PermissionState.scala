@@ -55,3 +55,30 @@ trait PermissionState extends js.Object {
   val statementIdPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object PermissionState {
+  @scala.inline
+  def apply(
+    action: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    eventSourceToken: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    function: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.lambdaFunctionMod.Function] = null,
+    principal: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    qualifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceAccount: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    statementId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    statementIdPrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PermissionState = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (eventSourceToken != null) __obj.updateDynamic("eventSourceToken")(eventSourceToken.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
+    if (sourceAccount != null) __obj.updateDynamic("sourceAccount")(sourceAccount.asInstanceOf[js.Any])
+    if (sourceArn != null) __obj.updateDynamic("sourceArn")(sourceArn.asInstanceOf[js.Any])
+    if (statementId != null) __obj.updateDynamic("statementId")(statementId.asInstanceOf[js.Any])
+    if (statementIdPrefix != null) __obj.updateDynamic("statementIdPrefix")(statementIdPrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PermissionState]
+  }
+}
+

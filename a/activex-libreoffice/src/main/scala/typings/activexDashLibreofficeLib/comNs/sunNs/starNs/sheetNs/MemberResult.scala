@@ -28,3 +28,12 @@ trait MemberResult extends js.Object {
   var Value: scala.Double
 }
 
+object MemberResult {
+  @scala.inline
+  def apply(Caption: java.lang.String, Flags: scala.Double, Name: java.lang.String, Value: scala.Double): MemberResult = {
+    val __obj = js.Dynamic.literal(Caption = Caption, Flags = Flags, Name = Name, Value = Value)
+  
+    __obj.asInstanceOf[MemberResult]
+  }
+}
+

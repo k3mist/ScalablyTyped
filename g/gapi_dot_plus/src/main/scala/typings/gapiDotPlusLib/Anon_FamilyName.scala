@@ -14,3 +14,19 @@ trait Anon_FamilyName extends js.Object {
   var middleName: java.lang.String
 }
 
+object Anon_FamilyName {
+  @scala.inline
+  def apply(
+    familyName: java.lang.String,
+    formatted: java.lang.String,
+    givenName: java.lang.String,
+    honorificPrefix: java.lang.String,
+    honorificSuffix: java.lang.String,
+    middleName: java.lang.String
+  ): Anon_FamilyName = {
+    val __obj = js.Dynamic.literal(familyName = familyName, formatted = formatted, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, middleName = middleName)
+  
+    __obj.asInstanceOf[Anon_FamilyName]
+  }
+}
+

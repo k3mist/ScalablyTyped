@@ -12,3 +12,17 @@ trait browserInfoOptions extends js.Object {
   var version: java.lang.String
 }
 
+object browserInfoOptions {
+  @scala.inline
+  def apply(
+    culture: js.Any,
+    isMSPointerEnabled: scala.Boolean,
+    name: java.lang.String,
+    version: java.lang.String
+  ): browserInfoOptions = {
+    val __obj = js.Dynamic.literal(culture = culture, isMSPointerEnabled = isMSPointerEnabled, name = name, version = version)
+  
+    __obj.asInstanceOf[browserInfoOptions]
+  }
+}
+

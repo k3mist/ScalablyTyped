@@ -33,3 +33,20 @@ trait UniqueValueInfo
   var value: java.lang.String | scala.Double
 }
 
+object UniqueValueInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    count: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    symbol: Symbol,
+    value: java.lang.String | scala.Double
+  ): UniqueValueInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, label = label, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UniqueValueInfo]
+  }
+}
+

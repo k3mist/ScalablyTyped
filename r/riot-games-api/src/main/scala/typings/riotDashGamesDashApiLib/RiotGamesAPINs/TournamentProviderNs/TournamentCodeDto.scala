@@ -21,3 +21,26 @@ trait TournamentCodeDto extends js.Object {
   var tournamentId: scala.Double
 }
 
+object TournamentCodeDto {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    id: scala.Double,
+    lobbyName: java.lang.String,
+    map: java.lang.String,
+    metaData: java.lang.String,
+    participants: js.Array[scala.Double],
+    password: java.lang.String,
+    pickType: java.lang.String,
+    providerId: scala.Double,
+    region: java.lang.String,
+    spectators: java.lang.String,
+    teamSize: scala.Double,
+    tournamentId: scala.Double
+  ): TournamentCodeDto = {
+    val __obj = js.Dynamic.literal(code = code, id = id, lobbyName = lobbyName, map = map, metaData = metaData, participants = participants, password = password, pickType = pickType, providerId = providerId, region = region, spectators = spectators, teamSize = teamSize, tournamentId = tournamentId)
+  
+    __obj.asInstanceOf[TournamentCodeDto]
+  }
+}
+

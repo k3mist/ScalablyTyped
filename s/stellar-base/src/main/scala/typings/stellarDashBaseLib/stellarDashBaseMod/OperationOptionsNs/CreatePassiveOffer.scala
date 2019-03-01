@@ -14,3 +14,18 @@ trait CreatePassiveOffer
   var selling: stellarDashBaseLib.stellarDashBaseMod.Asset
 }
 
+object CreatePassiveOffer {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    buying: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    price: scala.Double | java.lang.String | js.Object,
+    selling: stellarDashBaseLib.stellarDashBaseMod.Asset,
+    source: java.lang.String = null
+  ): CreatePassiveOffer = {
+    val __obj = js.Dynamic.literal(amount = amount, buying = buying, price = price.asInstanceOf[js.Any], selling = selling)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[CreatePassiveOffer]
+  }
+}
+

@@ -16,3 +16,15 @@ trait AmiLaunchPermissionArgs extends js.Object {
   val imageId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object AmiLaunchPermissionArgs {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    imageId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): AmiLaunchPermissionArgs = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AmiLaunchPermissionArgs]
+  }
+}
+

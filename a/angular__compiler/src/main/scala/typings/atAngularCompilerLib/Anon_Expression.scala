@@ -11,3 +11,16 @@ trait Anon_Expression extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExpressionType
 }
 
+object Anon_Expression {
+  @scala.inline
+  def apply(
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.InvokeFunctionExpr,
+    statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExpressionType
+  ): Anon_Expression = {
+    val __obj = js.Dynamic.literal(expression = expression, statements = statements, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Expression]
+  }
+}
+

@@ -21,3 +21,12 @@ trait INewCalendarSubscription extends js.Object {
   var subscription_location: java.lang.String
 }
 
+object INewCalendarSubscription {
+  @scala.inline
+  def apply(name: java.lang.String, subscription_location: java.lang.String): INewCalendarSubscription = {
+    val __obj = js.Dynamic.literal(name = name, subscription_location = subscription_location)
+  
+    __obj.asInstanceOf[INewCalendarSubscription]
+  }
+}
+

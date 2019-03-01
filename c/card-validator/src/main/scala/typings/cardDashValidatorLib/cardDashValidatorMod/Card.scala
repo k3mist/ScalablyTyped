@@ -15,3 +15,20 @@ trait Card extends js.Object {
   var `type`: java.lang.String
 }
 
+object Card {
+  @scala.inline
+  def apply(
+    code: cardDashValidatorLib.Anon_Name,
+    gaps: js.Array[scala.Double],
+    isAmex: scala.Boolean,
+    lengths: js.Array[scala.Double],
+    niceType: java.lang.String,
+    pattern: java.lang.String,
+    `type`: java.lang.String
+  ): Card = {
+    val __obj = js.Dynamic.literal(code = code, gaps = gaps, isAmex = isAmex, lengths = lengths, niceType = niceType, pattern = pattern, `type` = `type`)
+  
+    __obj.asInstanceOf[Card]
+  }
+}
+

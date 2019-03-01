@@ -22,3 +22,41 @@ trait FloodlightActivitiesResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
 }
 
+object FloodlightActivitiesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    generatetag: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsFloodlightActivityId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesGenerateTagResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+    ]
+  ): FloodlightActivitiesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, generatetag = generatetag, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[FloodlightActivitiesResource]
+  }
+}
+

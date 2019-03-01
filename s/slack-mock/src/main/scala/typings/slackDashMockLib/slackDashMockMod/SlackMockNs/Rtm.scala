@@ -15,3 +15,19 @@ trait Rtm[T] extends js.Object {
   def stopServer(token: java.lang.String): scala.Unit
 }
 
+object Rtm {
+  @scala.inline
+  def apply[T](
+    calls: js.Array[RtmCall[T]],
+    clients: js.Array[wsLib.wsMod.namespaced],
+    reset: js.Function0[scala.Unit],
+    send: js.Function2[java.lang.String, T, js.Promise[scala.Unit]],
+    startServer: js.Function1[java.lang.String, scala.Unit],
+    stopServer: js.Function1[java.lang.String, scala.Unit]
+  ): Rtm[T] = {
+    val __obj = js.Dynamic.literal(calls = calls, clients = clients, reset = reset, send = send, startServer = startServer, stopServer = stopServer)
+  
+    __obj.asInstanceOf[Rtm[T]]
+  }
+}
+

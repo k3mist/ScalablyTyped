@@ -56,3 +56,28 @@ trait ClosestFacilitySolveResultProperties extends js.Object {
   var routes: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
 
+object ClosestFacilitySolveResultProperties {
+  @scala.inline
+  def apply(
+    directions: DirectionsFeatureSetProperties = null,
+    facilities: js.Array[PointProperties] = null,
+    incidents: js.Array[PointProperties] = null,
+    messages: js.Array[NAMessageProperties] = null,
+    pointBarriers: js.Array[PointProperties] = null,
+    polygonBarriers: js.Array[PolygonProperties] = null,
+    polylineBarriers: js.Array[PolylineProperties] = null,
+    routes: js.Array[GraphicProperties] = null
+  ): ClosestFacilitySolveResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (directions != null) __obj.updateDynamic("directions")(directions)
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities)
+    if (incidents != null) __obj.updateDynamic("incidents")(incidents)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers)
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers)
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    __obj.asInstanceOf[ClosestFacilitySolveResultProperties]
+  }
+}
+

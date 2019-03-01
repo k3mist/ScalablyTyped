@@ -20,3 +20,16 @@ trait ConditionalForwaderArgs extends js.Object {
   val remoteDomainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ConditionalForwaderArgs {
+  @scala.inline
+  def apply(
+    directoryId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    dnsIps: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    remoteDomainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): ConditionalForwaderArgs = {
+    val __obj = js.Dynamic.literal(directoryId = directoryId.asInstanceOf[js.Any], dnsIps = dnsIps.asInstanceOf[js.Any], remoteDomainName = remoteDomainName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ConditionalForwaderArgs]
+  }
+}
+

@@ -120,3 +120,35 @@ trait XFormOperations
   def isModifiedRow(): scala.Boolean
 }
 
+object XFormOperations {
+  @scala.inline
+  def apply(
+    Controller: XFormController,
+    Cursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
+    FeatureInvalidation: XFeatureInvalidation,
+    UpdateCursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSetUpdate,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    commitCurrentControl: js.Function0[scala.Boolean],
+    commitCurrentRecord: js.Function1[js.Array[scala.Boolean], scala.Boolean],
+    dispose: js.Function0[scala.Unit],
+    execute: js.Function1[scala.Double, scala.Unit],
+    executeWithArguments: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ],
+    getState: js.Function1[scala.Double, FeatureState],
+    isEnabled: js.Function1[scala.Double, scala.Boolean],
+    isInsertionRow: js.Function0[scala.Boolean],
+    isModifiedRow: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XFormOperations = {
+    val __obj = js.Dynamic.literal(Controller = Controller, Cursor = Cursor, FeatureInvalidation = FeatureInvalidation, UpdateCursor = UpdateCursor, acquire = acquire, addEventListener = addEventListener, commitCurrentControl = commitCurrentControl, commitCurrentRecord = commitCurrentRecord, dispose = dispose, execute = execute, executeWithArguments = executeWithArguments, getState = getState, isEnabled = isEnabled, isInsertionRow = isInsertionRow, isModifiedRow = isModifiedRow, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[XFormOperations]
+  }
+}
+

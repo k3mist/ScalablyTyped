@@ -13,3 +13,12 @@ trait MathConfig extends js.Object {
   var mathjax: java.lang.String
 }
 
+object MathConfig {
+  @scala.inline
+  def apply(config: java.lang.String, mathjax: java.lang.String): MathConfig = {
+    val __obj = js.Dynamic.literal(config = config, mathjax = mathjax)
+  
+    __obj.asInstanceOf[MathConfig]
+  }
+}
+

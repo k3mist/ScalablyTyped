@@ -12,3 +12,16 @@ trait Anon_Eol
   var text: java.lang.String
 }
 
+object Anon_Eol {
+  @scala.inline
+  def apply(
+    range: monacoDashEditorLib.monacoDashEditorMod.IRange,
+    text: java.lang.String,
+    eol: monacoDashEditorLib.monacoDashEditorMod.editorNs.EndOfLineSequence = null
+  ): Anon_Eol = {
+    val __obj = js.Dynamic.literal(range = range, text = text)
+    if (eol != null) __obj.updateDynamic("eol")(eol)
+    __obj.asInstanceOf[Anon_Eol]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ResizeCallbackData extends js.Object {
   var size: reactDashResizableLib.Anon_Height
 }
 
+object ResizeCallbackData {
+  @scala.inline
+  def apply(node: reactLib.HTMLElement, size: reactDashResizableLib.Anon_Height): ResizeCallbackData = {
+    val __obj = js.Dynamic.literal(node = node, size = size)
+  
+    __obj.asInstanceOf[ResizeCallbackData]
+  }
+}
+

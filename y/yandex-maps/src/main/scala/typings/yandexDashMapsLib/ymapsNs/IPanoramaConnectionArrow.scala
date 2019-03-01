@@ -11,3 +11,17 @@ trait IPanoramaConnectionArrow extends IPanoramaConnection {
   def getPanorama(): IPanorama
 }
 
+object IPanoramaConnectionArrow {
+  @scala.inline
+  def apply(
+    getConnectedPanorama: js.Function0[js.Promise[IPanorama]],
+    getDirection: js.Function0[js.Array[scala.Double]],
+    getPanorama: js.Function0[IPanorama],
+    properties: yandexDashMapsLib.ymapsNs.dataNs.Manager
+  ): IPanoramaConnectionArrow = {
+    val __obj = js.Dynamic.literal(getConnectedPanorama = getConnectedPanorama, getDirection = getDirection, getPanorama = getPanorama, properties = properties)
+  
+    __obj.asInstanceOf[IPanoramaConnectionArrow]
+  }
+}
+

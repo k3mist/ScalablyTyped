@@ -13,3 +13,18 @@ trait CommentLine
   var `type`: astDashTypesLib.astDashTypesLibStrings.CommentLine
 }
 
+object CommentLine {
+  @scala.inline
+  def apply(
+    leading: scala.Boolean,
+    trailing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.CommentLine,
+    value: java.lang.String,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): CommentLine = {
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, `type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[CommentLine]
+  }
+}
+

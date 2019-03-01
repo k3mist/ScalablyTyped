@@ -24,3 +24,19 @@ trait TeamSettingsIteration extends TeamSettingsDataContractBase {
   var path: java.lang.String
 }
 
+object TeamSettingsIteration {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    attributes: TeamIterationAttributes,
+    id: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String,
+    url: java.lang.String
+  ): TeamSettingsIteration = {
+    val __obj = js.Dynamic.literal(_links = _links, attributes = attributes, id = id, name = name, path = path, url = url)
+  
+    __obj.asInstanceOf[TeamSettingsIteration]
+  }
+}
+

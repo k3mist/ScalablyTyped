@@ -10,3 +10,12 @@ trait CommentStatement extends Node {
   var value: java.lang.String
 }
 
+object CommentStatement {
+  @scala.inline
+  def apply(loc: SourceLocation, strip: StripFlags, `type`: java.lang.String, value: java.lang.String): CommentStatement = {
+    val __obj = js.Dynamic.literal(loc = loc, strip = strip, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[CommentStatement]
+  }
+}
+

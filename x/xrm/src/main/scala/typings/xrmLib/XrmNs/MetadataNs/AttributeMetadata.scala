@@ -24,3 +24,20 @@ trait AttributeMetadata extends js.Object {
   var options: js.Array[java.lang.String]
 }
 
+object AttributeMetadata {
+  @scala.inline
+  def apply(
+    attributeType: xrmLib.XrmEnumNs.AttributeTypeCode,
+    defaultFormValue: scala.Double,
+    displayName: java.lang.String,
+    entityLogicalName: java.lang.String,
+    logicalName: java.lang.String,
+    optionSet: js.Array[OptionMetadata],
+    options: js.Array[java.lang.String]
+  ): AttributeMetadata = {
+    val __obj = js.Dynamic.literal(attributeType = attributeType, defaultFormValue = defaultFormValue, displayName = displayName, entityLogicalName = entityLogicalName, logicalName = logicalName, optionSet = optionSet, options = options)
+  
+    __obj.asInstanceOf[AttributeMetadata]
+  }
+}
+

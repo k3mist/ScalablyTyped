@@ -23,3 +23,20 @@ trait ToastAndroidStatic extends js.Object {
   def showWithGravity(message: java.lang.String, duration: scala.Double, gravity: scala.Double): scala.Unit
 }
 
+object ToastAndroidStatic {
+  @scala.inline
+  def apply(
+    BOTTOM: scala.Double,
+    CENTER: scala.Double,
+    LONG: scala.Double,
+    SHORT: scala.Double,
+    TOP: scala.Double,
+    show: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    showWithGravity: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
+  ): ToastAndroidStatic = {
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, CENTER = CENTER, LONG = LONG, SHORT = SHORT, TOP = TOP, show = show, showWithGravity = showWithGravity)
+  
+    __obj.asInstanceOf[ToastAndroidStatic]
+  }
+}
+

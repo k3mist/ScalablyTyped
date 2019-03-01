@@ -12,3 +12,17 @@ trait StyleCompileResults extends js.Object {
   var rawResult: postcssLib.postcssMod.postcssNs.LazyResult | scala.Unit
 }
 
+object StyleCompileResults {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    errors: js.Array[java.lang.String],
+    map: js.Any | scala.Unit,
+    rawResult: postcssLib.postcssMod.postcssNs.LazyResult | scala.Unit
+  ): StyleCompileResults = {
+    val __obj = js.Dynamic.literal(code = code, errors = errors, map = map.asInstanceOf[js.Any], rawResult = rawResult.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StyleCompileResults]
+  }
+}
+

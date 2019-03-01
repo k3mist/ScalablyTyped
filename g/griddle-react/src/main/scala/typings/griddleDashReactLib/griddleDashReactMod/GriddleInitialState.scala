@@ -21,3 +21,29 @@ trait GriddleInitialState
   var textProperties: js.UndefOr[griddleDashReactLib.Anon_FilterPlaceholder] = js.undefined
 }
 
+object GriddleInitialState {
+  @scala.inline
+  def apply(
+    StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    enableSettings: js.UndefOr[scala.Boolean] = js.undefined,
+    pageProperties: GriddlePageProperties = null,
+    sortMethod: js.Function3[
+      /* data */ js.Array[_], 
+      /* column */ java.lang.String, 
+      /* sortAscending */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    sortProperties: js.Array[GriddleSortKey] = null,
+    textProperties: griddleDashReactLib.Anon_FilterPlaceholder = null
+  ): GriddleInitialState = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings)
+    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties)
+    if (sortMethod != null) __obj.updateDynamic("sortMethod")(sortMethod)
+    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties)
+    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties)
+    __obj.asInstanceOf[GriddleInitialState]
+  }
+}
+

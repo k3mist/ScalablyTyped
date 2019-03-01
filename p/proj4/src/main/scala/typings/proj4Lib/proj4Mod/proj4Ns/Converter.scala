@@ -10,3 +10,12 @@ trait Converter extends js.Object {
   def inverse[T /* <: TemplateCoordinates */](coordinates: T): T
 }
 
+object Converter {
+  @scala.inline
+  def apply(forward: js.Function1[js.Any, js.Any], inverse: js.Function1[js.Any, js.Any]): Converter = {
+    val __obj = js.Dynamic.literal(forward = forward, inverse = inverse)
+  
+    __obj.asInstanceOf[Converter]
+  }
+}
+

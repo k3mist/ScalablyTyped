@@ -148,3 +148,42 @@ trait ConfigOptions extends js.Object {
   var watchForFileChanges: scala.Boolean
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    animationDistanceThreshold: scala.Double,
+    chromeWebSecurity: scala.Boolean,
+    defaultCommandTimeout: scala.Double,
+    env: org.scalablytyped.runtime.StringDictionary[js.Any],
+    execTimeout: scala.Double,
+    fileServerFolder: java.lang.String,
+    fixturesFolder: java.lang.String,
+    ignoreTestFiles: java.lang.String | js.Array[java.lang.String],
+    integrationFolder: java.lang.String,
+    numTestsKeptInMemory: scala.Double,
+    pageLoadTimeout: scala.Double,
+    pluginsFile: java.lang.String,
+    reporter: java.lang.String,
+    requestTimeout: scala.Double,
+    responseTimeout: scala.Double,
+    screenshotsFolder: java.lang.String,
+    supportFile: java.lang.String,
+    trashAssetsBeforeRuns: scala.Boolean,
+    video: scala.Boolean,
+    videoCompression: scala.Double,
+    videoUploadOnPasses: scala.Boolean,
+    videosFolder: java.lang.String,
+    viewportHeight: scala.Double,
+    viewportWidth: scala.Double,
+    waitForAnimations: scala.Boolean,
+    watchForFileChanges: scala.Boolean,
+    baseUrl: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold, chromeWebSecurity = chromeWebSecurity, defaultCommandTimeout = defaultCommandTimeout, env = env, execTimeout = execTimeout, fileServerFolder = fileServerFolder, fixturesFolder = fixturesFolder, ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder, numTestsKeptInMemory = numTestsKeptInMemory, pageLoadTimeout = pageLoadTimeout, pluginsFile = pluginsFile, reporter = reporter, requestTimeout = requestTimeout, responseTimeout = responseTimeout, screenshotsFolder = screenshotsFolder, supportFile = supportFile, trashAssetsBeforeRuns = trashAssetsBeforeRuns, video = video, videoCompression = videoCompression, videoUploadOnPasses = videoUploadOnPasses, videosFolder = videosFolder, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAnimations = waitForAnimations, watchForFileChanges = watchForFileChanges)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

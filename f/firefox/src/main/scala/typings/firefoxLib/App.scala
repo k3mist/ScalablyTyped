@@ -16,3 +16,21 @@ trait App extends js.Object {
   def launch(): scala.Unit
 }
 
+object App {
+  @scala.inline
+  def apply(
+    checkForUpdate: js.Function0[DOMRequest[_]],
+    installOrigin: java.lang.String,
+    installTime: scala.Double,
+    launch: js.Function0[scala.Unit],
+    manifest: js.Any,
+    manifestURL: java.lang.String,
+    origin: java.lang.String,
+    receipts: js.Array[_]
+  ): App = {
+    val __obj = js.Dynamic.literal(checkForUpdate = checkForUpdate, installOrigin = installOrigin, installTime = installTime, launch = launch, manifest = manifest, manifestURL = manifestURL, origin = origin, receipts = receipts)
+  
+    __obj.asInstanceOf[App]
+  }
+}
+

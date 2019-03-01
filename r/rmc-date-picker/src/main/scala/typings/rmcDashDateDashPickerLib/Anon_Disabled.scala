@@ -16,3 +16,21 @@ trait Anon_Disabled extends js.Object {
   def onDateChange(): scala.Unit
 }
 
+object Anon_Disabled {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    locale: Anon_Am,
+    minuteStep: scala.Double,
+    mode: java.lang.String,
+    onDateChange: js.Function0[scala.Unit],
+    pickerPrefixCls: java.lang.String,
+    prefixCls: java.lang.String,
+    use12Hours: scala.Boolean
+  ): Anon_Disabled = {
+    val __obj = js.Dynamic.literal(disabled = disabled, locale = locale, minuteStep = minuteStep, mode = mode, onDateChange = onDateChange, pickerPrefixCls = pickerPrefixCls, prefixCls = prefixCls, use12Hours = use12Hours)
+  
+    __obj.asInstanceOf[Anon_Disabled]
+  }
+}
+

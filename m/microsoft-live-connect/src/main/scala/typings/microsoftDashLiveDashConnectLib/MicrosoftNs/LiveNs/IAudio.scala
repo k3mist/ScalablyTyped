@@ -113,3 +113,36 @@ trait IAudio extends js.Object {
   var upload_location: java.lang.String
 }
 
+object IAudio {
+  @scala.inline
+  def apply(
+    album: java.lang.String,
+    album_artist: java.lang.String,
+    artist: java.lang.String,
+    comments_count: scala.Double,
+    comments_enabled: scala.Boolean,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    duration: scala.Double,
+    from: IUserInfo,
+    genre: java.lang.String,
+    id: java.lang.String,
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    picture: java.lang.String,
+    shared_with: ISharedWith,
+    size: scala.Double,
+    source: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String
+  ): IAudio = {
+    val __obj = js.Dynamic.literal(album = album, album_artist = album_artist, artist = artist, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, duration = duration, from = from, genre = genre, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, picture = picture, shared_with = shared_with, size = size, source = source, title = title, `type` = `type`, updated_time = updated_time, upload_location = upload_location)
+  
+    __obj.asInstanceOf[IAudio]
+  }
+}
+

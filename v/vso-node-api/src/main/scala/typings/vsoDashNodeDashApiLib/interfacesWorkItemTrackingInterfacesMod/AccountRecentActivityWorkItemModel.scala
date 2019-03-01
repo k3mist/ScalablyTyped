@@ -48,3 +48,23 @@ trait AccountRecentActivityWorkItemModel extends js.Object {
   var workItemType: java.lang.String
 }
 
+object AccountRecentActivityWorkItemModel {
+  @scala.inline
+  def apply(
+    activityDate: stdLib.Date,
+    activityType: WorkItemRecentActivityType,
+    assignedTo: java.lang.String,
+    changedDate: stdLib.Date,
+    id: scala.Double,
+    identityId: java.lang.String,
+    state: java.lang.String,
+    teamProject: java.lang.String,
+    title: java.lang.String,
+    workItemType: java.lang.String
+  ): AccountRecentActivityWorkItemModel = {
+    val __obj = js.Dynamic.literal(activityDate = activityDate, activityType = activityType, assignedTo = assignedTo, changedDate = changedDate, id = id, identityId = identityId, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+  
+    __obj.asInstanceOf[AccountRecentActivityWorkItemModel]
+  }
+}
+

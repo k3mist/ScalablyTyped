@@ -35,3 +35,28 @@ trait Events extends js.Object {
   def typeAt(file: File, end: Position, expr: estreeLib.estreeMod.Node, `type`: ternLib.libInferMod.Type): ternLib.libInferMod.Type | scala.Unit
 }
 
+object Events {
+  @scala.inline
+  def apply(
+    afterLoad: js.Function1[File, scala.Unit],
+    beforeLoad: js.Function1[File, scala.Unit],
+    completion: js.Function2[File, Query, CompletionsQueryResult | scala.Unit],
+    postInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
+    postParse: js.Function2[estreeLib.estreeMod.Program, java.lang.String, scala.Unit],
+    preInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
+    preParse: js.Function2[java.lang.String, js.Object, java.lang.String | scala.Unit],
+    reset: js.Function0[scala.Unit],
+    typeAt: js.Function4[
+      File, 
+      Position, 
+      estreeLib.estreeMod.Node, 
+      ternLib.libInferMod.Type, 
+      ternLib.libInferMod.Type | scala.Unit
+    ]
+  ): Events = {
+    val __obj = js.Dynamic.literal(afterLoad = afterLoad, beforeLoad = beforeLoad, completion = completion, postInfer = postInfer, postParse = postParse, preInfer = preInfer, preParse = preParse, reset = reset, typeAt = typeAt)
+  
+    __obj.asInstanceOf[Events]
+  }
+}
+

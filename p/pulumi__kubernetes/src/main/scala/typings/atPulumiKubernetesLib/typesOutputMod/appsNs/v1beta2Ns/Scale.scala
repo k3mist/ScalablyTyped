@@ -41,3 +41,18 @@ trait Scale extends js.Object {
   val status: ScaleStatus
 }
 
+object Scale {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    kind: java.lang.String,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: ScaleSpec,
+    status: ScaleStatus
+  ): Scale = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[Scale]
+  }
+}
+

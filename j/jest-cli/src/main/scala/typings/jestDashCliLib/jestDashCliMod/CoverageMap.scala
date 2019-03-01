@@ -14,3 +14,19 @@ trait CoverageMap extends js.Object {
   def merge(data: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit
 }
 
+object CoverageMap {
+  @scala.inline
+  def apply(
+    addFileCoverage: js.Function1[RawFileCoverage, scala.Unit],
+    data: RawCoverage,
+    fileCoverageFor: js.Function1[java.lang.String, FileCoverage],
+    files: js.Function0[js.Array[java.lang.String]],
+    getCoverageSummary: js.Function0[FileCoverage],
+    merge: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
+  ): CoverageMap = {
+    val __obj = js.Dynamic.literal(addFileCoverage = addFileCoverage, data = data, fileCoverageFor = fileCoverageFor, files = files, getCoverageSummary = getCoverageSummary, merge = merge)
+  
+    __obj.asInstanceOf[CoverageMap]
+  }
+}
+

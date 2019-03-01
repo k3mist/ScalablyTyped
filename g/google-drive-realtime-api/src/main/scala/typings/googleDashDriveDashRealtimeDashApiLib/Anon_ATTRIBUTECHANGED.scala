@@ -49,3 +49,26 @@ trait Anon_ATTRIBUTECHANGED extends js.Object {
   var VALUE_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.value_changed
 }
 
+object Anon_ATTRIBUTECHANGED {
+  @scala.inline
+  def apply(
+    ATTRIBUTE_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.attribute_changed,
+    COLLABORATOR_JOINED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.collaborator_joined,
+    COLLABORATOR_LEFT: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.collaborator_left,
+    DOCUMENT_SAVE_STATE_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.document_save_state_changed,
+    OBJECT_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.object_changed,
+    REFERENCE_SHIFTED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.reference_shifted,
+    TEXT_DELETED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.text_deleted,
+    TEXT_INSERTED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.text_inserted,
+    UNDO_REDO_STATE_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.undo_redo_state_changed,
+    VALUES_ADDED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.values_added,
+    VALUES_REMOVED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.values_removed,
+    VALUES_SET: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.values_set,
+    VALUE_CHANGED: googleDashDriveDashRealtimeDashApiLib.googleDashDriveDashRealtimeDashApiLibStrings.value_changed
+  ): Anon_ATTRIBUTECHANGED = {
+    val __obj = js.Dynamic.literal(ATTRIBUTE_CHANGED = ATTRIBUTE_CHANGED, COLLABORATOR_JOINED = COLLABORATOR_JOINED, COLLABORATOR_LEFT = COLLABORATOR_LEFT, DOCUMENT_SAVE_STATE_CHANGED = DOCUMENT_SAVE_STATE_CHANGED, OBJECT_CHANGED = OBJECT_CHANGED, REFERENCE_SHIFTED = REFERENCE_SHIFTED, TEXT_DELETED = TEXT_DELETED, TEXT_INSERTED = TEXT_INSERTED, UNDO_REDO_STATE_CHANGED = UNDO_REDO_STATE_CHANGED, VALUES_ADDED = VALUES_ADDED, VALUES_REMOVED = VALUES_REMOVED, VALUES_SET = VALUES_SET, VALUE_CHANGED = VALUE_CHANGED)
+  
+    __obj.asInstanceOf[Anon_ATTRIBUTECHANGED]
+  }
+}
+

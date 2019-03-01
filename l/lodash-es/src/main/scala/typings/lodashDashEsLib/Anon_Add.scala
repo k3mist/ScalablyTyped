@@ -23,3 +23,28 @@ trait Anon_Add extends js.Object {
   var sumBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sumBy */ js.Any
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(
+    add: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof add */ js.Any,
+    ceil: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ceil */ js.Any,
+    divide: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof divide */ js.Any,
+    floor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof floor */ js.Any,
+    max: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof max */ js.Any,
+    maxBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof maxBy */ js.Any,
+    mean: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mean */ js.Any,
+    meanBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof meanBy */ js.Any,
+    min: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof min */ js.Any,
+    minBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof minBy */ js.Any,
+    multiply: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof multiply */ js.Any,
+    round: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof round */ js.Any,
+    subtract: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof subtract */ js.Any,
+    sum: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sum */ js.Any,
+    sumBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sumBy */ js.Any
+  ): Anon_Add = {
+    val __obj = js.Dynamic.literal(add = add, ceil = ceil, divide = divide, floor = floor, max = max, maxBy = maxBy, mean = mean, meanBy = meanBy, min = min, minBy = minBy, multiply = multiply, round = round, subtract = subtract, sum = sum, sumBy = sumBy)
+  
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

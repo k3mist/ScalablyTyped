@@ -21,3 +21,12 @@ trait GridExportOptions extends js.Object {
   var PrintHeadersOnEveryPage: scala.Boolean
 }
 
+object GridExportOptions {
+  @scala.inline
+  def apply(FitToPageWidth: scala.Boolean, PrintHeadersOnEveryPage: scala.Boolean): GridExportOptions = {
+    val __obj = js.Dynamic.literal(FitToPageWidth = FitToPageWidth, PrintHeadersOnEveryPage = PrintHeadersOnEveryPage)
+  
+    __obj.asInstanceOf[GridExportOptions]
+  }
+}
+

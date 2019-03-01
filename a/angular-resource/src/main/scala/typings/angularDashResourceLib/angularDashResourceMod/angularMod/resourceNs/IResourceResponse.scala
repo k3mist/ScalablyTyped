@@ -14,3 +14,19 @@ trait IResourceResponse extends js.Object {
   var statusText: java.lang.String
 }
 
+object IResourceResponse {
+  @scala.inline
+  def apply(
+    config: js.Any,
+    data: js.Any,
+    headers: js.Any,
+    resource: js.Any,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): IResourceResponse = {
+    val __obj = js.Dynamic.literal(config = config, data = data, headers = headers, resource = resource, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[IResourceResponse]
+  }
+}
+

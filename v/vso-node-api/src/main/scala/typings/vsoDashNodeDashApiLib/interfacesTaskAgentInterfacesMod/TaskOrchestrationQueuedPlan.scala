@@ -17,3 +17,22 @@ trait TaskOrchestrationQueuedPlan extends js.Object {
   var scopeIdentifier: java.lang.String
 }
 
+object TaskOrchestrationQueuedPlan {
+  @scala.inline
+  def apply(
+    assignTime: stdLib.Date,
+    definition: TaskOrchestrationOwner,
+    owner: TaskOrchestrationOwner,
+    planGroup: java.lang.String,
+    planId: java.lang.String,
+    poolId: scala.Double,
+    queuePosition: scala.Double,
+    queueTime: stdLib.Date,
+    scopeIdentifier: java.lang.String
+  ): TaskOrchestrationQueuedPlan = {
+    val __obj = js.Dynamic.literal(assignTime = assignTime, definition = definition, owner = owner, planGroup = planGroup, planId = planId, poolId = poolId, queuePosition = queuePosition, queueTime = queueTime, scopeIdentifier = scopeIdentifier)
+  
+    __obj.asInstanceOf[TaskOrchestrationQueuedPlan]
+  }
+}
+

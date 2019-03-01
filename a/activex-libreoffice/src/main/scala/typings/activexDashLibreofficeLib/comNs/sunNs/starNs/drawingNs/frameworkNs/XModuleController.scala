@@ -16,3 +16,12 @@ trait XModuleController extends js.Object {
   def requestResource(sResourceTypeURL: java.lang.String): scala.Unit
 }
 
+object XModuleController {
+  @scala.inline
+  def apply(requestResource: js.Function1[java.lang.String, scala.Unit]): XModuleController = {
+    val __obj = js.Dynamic.literal(requestResource = requestResource)
+  
+    __obj.asInstanceOf[XModuleController]
+  }
+}
+

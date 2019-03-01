@@ -10,3 +10,12 @@ trait IDataLayer extends ILayer {
   def clear(): scala.Unit
 }
 
+object IDataLayer {
+  @scala.inline
+  def apply(clear: js.Function0[scala.Unit]): IDataLayer = {
+    val __obj = js.Dynamic.literal(clear = clear)
+  
+    __obj.asInstanceOf[IDataLayer]
+  }
+}
+

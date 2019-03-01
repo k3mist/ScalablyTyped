@@ -14,3 +14,12 @@ trait IQueryListState[T] extends js.Object {
   var query: java.lang.String
 }
 
+object IQueryListState {
+  @scala.inline
+  def apply[T](filteredItems: js.Array[T], query: java.lang.String, activeItem: T = null): IQueryListState[T] = {
+    val __obj = js.Dynamic.literal(filteredItems = filteredItems, query = query)
+    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IQueryListState[T]]
+  }
+}
+

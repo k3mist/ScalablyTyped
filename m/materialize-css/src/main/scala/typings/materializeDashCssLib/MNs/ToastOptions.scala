@@ -40,3 +40,20 @@ trait ToastOptions extends js.Object {
   def completeCallback(): scala.Unit
 }
 
+object ToastOptions {
+  @scala.inline
+  def apply(
+    activationPercent: scala.Double,
+    classes: java.lang.String,
+    completeCallback: js.Function0[scala.Unit],
+    displayLength: scala.Double,
+    html: java.lang.String,
+    inDuration: scala.Double,
+    outDuration: scala.Double
+  ): ToastOptions = {
+    val __obj = js.Dynamic.literal(activationPercent = activationPercent, classes = classes, completeCallback = completeCallback, displayLength = displayLength, html = html, inDuration = inDuration, outDuration = outDuration)
+  
+    __obj.asInstanceOf[ToastOptions]
+  }
+}
+

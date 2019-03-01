@@ -18,3 +18,23 @@ trait SearchResult extends js.Object {
   var vote_count: scala.Double
 }
 
+object SearchResult {
+  @scala.inline
+  def apply(
+    adult: scala.Boolean,
+    backdrop_path: java.lang.String,
+    id: scala.Double,
+    original_title: java.lang.String,
+    popularity: scala.Double,
+    poster_path: java.lang.String,
+    release_date: stdLib.Date,
+    title: java.lang.String,
+    vote_average: scala.Double,
+    vote_count: scala.Double
+  ): SearchResult = {
+    val __obj = js.Dynamic.literal(adult = adult, backdrop_path = backdrop_path, id = id, original_title = original_title, popularity = popularity, poster_path = poster_path, release_date = release_date, title = title, vote_average = vote_average, vote_count = vote_count)
+  
+    __obj.asInstanceOf[SearchResult]
+  }
+}
+

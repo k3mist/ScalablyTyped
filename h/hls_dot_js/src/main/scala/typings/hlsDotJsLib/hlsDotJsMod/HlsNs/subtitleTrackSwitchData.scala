@@ -9,3 +9,12 @@ trait subtitleTrackSwitchData extends js.Object {
   var id: java.lang.String
 }
 
+object subtitleTrackSwitchData {
+  @scala.inline
+  def apply(id: java.lang.String): subtitleTrackSwitchData = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[subtitleTrackSwitchData]
+  }
+}
+

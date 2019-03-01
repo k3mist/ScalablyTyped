@@ -26,3 +26,16 @@ trait Queue extends js.Object {
   def replayRequests(): js.Promise[scala.Unit]
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    addRequest: js.Function1[stdLib.Request, js.Promise[scala.Unit]],
+    name: java.lang.String,
+    replayRequests: js.Function0[js.Promise[scala.Unit]]
+  ): Queue = {
+    val __obj = js.Dynamic.literal(addRequest = addRequest, name = name, replayRequests = replayRequests)
+  
+    __obj.asInstanceOf[Queue]
+  }
+}
+

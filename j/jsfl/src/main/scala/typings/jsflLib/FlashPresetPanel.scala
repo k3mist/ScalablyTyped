@@ -21,3 +21,26 @@ trait FlashPresetPanel extends js.Object {
   def selectItem(): js.Any
 }
 
+object FlashPresetPanel {
+  @scala.inline
+  def apply(
+    addNewItem: js.Function0[js.Any],
+    applyPreset: js.Function0[js.Any],
+    deleteFolder: js.Function0[js.Any],
+    deleteItem: js.Function0[js.Any],
+    expandFolder: js.Function0[js.Any],
+    exportItem: js.Function0[js.Any],
+    findItemIndex: js.Function0[js.Any],
+    getSelectedItems: js.Function0[js.Any],
+    importItem: js.Function0[js.Any],
+    moveToFolder: js.Function0[js.Any],
+    newFolder: js.Function0[js.Any],
+    renameItem: js.Function0[js.Any],
+    selectItem: js.Function0[js.Any]
+  ): FlashPresetPanel = {
+    val __obj = js.Dynamic.literal(addNewItem = addNewItem, applyPreset = applyPreset, deleteFolder = deleteFolder, deleteItem = deleteItem, expandFolder = expandFolder, exportItem = exportItem, findItemIndex = findItemIndex, getSelectedItems = getSelectedItems, importItem = importItem, moveToFolder = moveToFolder, newFolder = newFolder, renameItem = renameItem, selectItem = selectItem)
+  
+    __obj.asInstanceOf[FlashPresetPanel]
+  }
+}
+

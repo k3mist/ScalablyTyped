@@ -17,3 +17,22 @@ trait BucketRecord extends js.Object {
   var userIdentity: atPulumiAwsLib.Anon_PrincipalIdString
 }
 
+object BucketRecord {
+  @scala.inline
+  def apply(
+    awsRegion: java.lang.String,
+    eventName: java.lang.String,
+    eventSource: java.lang.String,
+    eventTime: java.lang.String,
+    eventVersion: java.lang.String,
+    requestParameters: atPulumiAwsLib.Anon_SourceIPAddress,
+    responseElements: atPulumiAwsLib.Anon_Xamzid2,
+    s3: atPulumiAwsLib.Anon_BucketConfigurationId,
+    userIdentity: atPulumiAwsLib.Anon_PrincipalIdString
+  ): BucketRecord = {
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, eventName = eventName, eventSource = eventSource, eventTime = eventTime, eventVersion = eventVersion, requestParameters = requestParameters, responseElements = responseElements, s3 = s3, userIdentity = userIdentity)
+  
+    __obj.asInstanceOf[BucketRecord]
+  }
+}
+

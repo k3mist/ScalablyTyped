@@ -30,3 +30,19 @@ trait workersOpenOptions
   var strategy: js.UndefOr[js.Any] = js.undefined
 }
 
+object workersOpenOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    client: js.Any = null,
+    strategy: js.Any = null
+  ): workersOpenOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    __obj.asInstanceOf[workersOpenOptions]
+  }
+}
+

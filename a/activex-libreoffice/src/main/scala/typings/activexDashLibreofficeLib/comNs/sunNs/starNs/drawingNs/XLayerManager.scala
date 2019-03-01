@@ -36,3 +36,26 @@ trait XLayerManager
   def remove(xLayer: XLayer): scala.Unit
 }
 
+object XLayerManager {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    attachShapeToLayer: js.Function2[XShape, XLayer, scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getLayerForShape: js.Function1[XShape, XLayer],
+    hasElements: js.Function0[scala.Boolean],
+    insertNewByIndex: js.Function1[scala.Double, XLayer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[XLayer, scala.Unit]
+  ): XLayerManager = {
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, attachShapeToLayer = attachShapeToLayer, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getLayerForShape = getLayerForShape, hasElements = hasElements, insertNewByIndex = insertNewByIndex, queryInterface = queryInterface, release = release, remove = remove)
+  
+    __obj.asInstanceOf[XLayerManager]
+  }
+}
+

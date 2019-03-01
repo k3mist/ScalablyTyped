@@ -10,3 +10,12 @@ trait Throughput extends js.Object {
   var writeCapacity: scala.Double
 }
 
+object Throughput {
+  @scala.inline
+  def apply(readCapacity: scala.Double, writeCapacity: scala.Double): Throughput = {
+    val __obj = js.Dynamic.literal(readCapacity = readCapacity, writeCapacity = writeCapacity)
+  
+    __obj.asInstanceOf[Throughput]
+  }
+}
+

@@ -47,3 +47,46 @@ trait IAxis extends js.Object {
   def setMinMax(minimum: scala.Double, maximum: scala.Double): scala.Unit
 }
 
+object IAxis {
+  @scala.inline
+  def apply(
+    automatic: scala.Boolean,
+    axisSize: scala.Double,
+    bounds: IRectangle,
+    calc: js.Function1[scala.Double, scala.Double],
+    chart: IChart,
+    custom: scala.Boolean,
+    end: scala.Double,
+    endPos: scala.Double,
+    format: IFormat,
+    fromPos: js.Function1[scala.Double, scala.Double],
+    fromSize: js.Function1[scala.Double, scala.Double],
+    grid: IGrid,
+    hasAnySeries: js.Function0[scala.Boolean],
+    horizontal: scala.Boolean,
+    increm: scala.Double,
+    increment: scala.Double,
+    innerTicks: ITicks,
+    inverted: scala.Boolean,
+    labels: IAxisLabels,
+    log: scala.Boolean,
+    maximum: scala.Double,
+    minimum: scala.Double,
+    minorTicks: IMinorTicks,
+    otherSize: scala.Boolean,
+    position: scala.Double,
+    scale: scala.Double,
+    scroll: js.Function1[scala.Double, scala.Unit],
+    setMinMax: js.Function2[scala.Double, scala.Double, scala.Unit],
+    start: scala.Double,
+    startPos: scala.Double,
+    ticks: ITicks,
+    title: IAxisTitle,
+    visible: scala.Boolean
+  ): IAxis = {
+    val __obj = js.Dynamic.literal(automatic = automatic, axisSize = axisSize, bounds = bounds, calc = calc, chart = chart, custom = custom, end = end, endPos = endPos, format = format, fromPos = fromPos, fromSize = fromSize, grid = grid, hasAnySeries = hasAnySeries, horizontal = horizontal, increm = increm, increment = increment, innerTicks = innerTicks, inverted = inverted, labels = labels, log = log, maximum = maximum, minimum = minimum, minorTicks = minorTicks, otherSize = otherSize, position = position, scale = scale, scroll = scroll, setMinMax = setMinMax, start = start, startPos = startPos, ticks = ticks, title = title, visible = visible)
+  
+    __obj.asInstanceOf[IAxis]
+  }
+}
+

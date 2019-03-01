@@ -57,3 +57,24 @@ trait EmailNotifier
   var `type`: java.lang.String
 }
 
+object EmailNotifier {
+  @scala.inline
+  def apply(
+    attachJobAttachments: scala.Boolean,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    message: java.lang.String,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    senderEmail: java.lang.String,
+    senderName: java.lang.String,
+    subject: java.lang.String,
+    subscribers: js.Array[java.lang.String],
+    `type`: java.lang.String
+  ): EmailNotifier = {
+    val __obj = js.Dynamic.literal(attachJobAttachments = attachJobAttachments, constructor = constructor, hasOwnProperty = hasOwnProperty, message = message, name = name, propertyIsEnumerable = propertyIsEnumerable, senderEmail = senderEmail, senderName = senderName, subject = subject, subscribers = subscribers, `type` = `type`)
+  
+    __obj.asInstanceOf[EmailNotifier]
+  }
+}
+

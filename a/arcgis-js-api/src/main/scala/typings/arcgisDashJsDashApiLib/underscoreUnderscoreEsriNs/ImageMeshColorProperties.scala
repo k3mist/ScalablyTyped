@@ -28,3 +28,18 @@ trait ImageMeshColorProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageMeshColorProperties {
+  @scala.inline
+  def apply(
+    data: stdLib.HTMLImageElement | stdLib.HTMLCanvasElement | stdLib.ImageData = null,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null
+  ): ImageMeshColorProperties = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ImageMeshColorProperties]
+  }
+}
+

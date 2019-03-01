@@ -19,3 +19,24 @@ trait Anon_ActiveUnzonedRange extends js.Object {
   var validUnzonedRange: js.Any
 }
 
+object Anon_ActiveUnzonedRange {
+  @scala.inline
+  def apply(
+    activeUnzonedRange: js.Any,
+    currentRangeUnit: js.Any,
+    currentUnzonedRange: js.Any,
+    date: js.Any,
+    dateIncrement: js.Any,
+    isRangeAllDay: js.Any,
+    isValid: js.Any,
+    maxTime: js.Any,
+    minTime: js.Any,
+    renderUnzonedRange: js.Any,
+    validUnzonedRange: js.Any
+  ): Anon_ActiveUnzonedRange = {
+    val __obj = js.Dynamic.literal(activeUnzonedRange = activeUnzonedRange, currentRangeUnit = currentRangeUnit, currentUnzonedRange = currentUnzonedRange, date = date, dateIncrement = dateIncrement, isRangeAllDay = isRangeAllDay, isValid = isValid, maxTime = maxTime, minTime = minTime, renderUnzonedRange = renderUnzonedRange, validUnzonedRange = validUnzonedRange)
+  
+    __obj.asInstanceOf[Anon_ActiveUnzonedRange]
+  }
+}
+

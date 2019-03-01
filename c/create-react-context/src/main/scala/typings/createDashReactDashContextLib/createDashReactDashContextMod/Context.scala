@@ -10,3 +10,15 @@ trait Context[T] extends js.Object {
   var Provider: reactLib.reactMod.ReactNs.ComponentClass[ProviderProps[T], reactLib.reactMod.ReactNs.ComponentState]
 }
 
+object Context {
+  @scala.inline
+  def apply[T](
+    Consumer: reactLib.reactMod.ReactNs.ComponentClass[ConsumerProps[T], reactLib.reactMod.ReactNs.ComponentState],
+    Provider: reactLib.reactMod.ReactNs.ComponentClass[ProviderProps[T], reactLib.reactMod.ReactNs.ComponentState]
+  ): Context[T] = {
+    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider)
+  
+    __obj.asInstanceOf[Context[T]]
+  }
+}
+

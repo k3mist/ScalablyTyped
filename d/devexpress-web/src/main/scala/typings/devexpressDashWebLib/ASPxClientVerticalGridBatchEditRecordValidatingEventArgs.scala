@@ -21,3 +21,12 @@ trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs extends ASPxClien
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridBatchEditRecordValidatingEventArgs {
+  @scala.inline
+  def apply(validationInfo: js.Object, visibleIndex: scala.Double): ASPxClientVerticalGridBatchEditRecordValidatingEventArgs = {
+    val __obj = js.Dynamic.literal(validationInfo = validationInfo, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordValidatingEventArgs]
+  }
+}
+

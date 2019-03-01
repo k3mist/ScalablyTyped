@@ -24,3 +24,19 @@ trait ArrayMatcher extends Matcher {
   def startsWith(expected: js.Array[_]): Matcher
 }
 
+object ArrayMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[Matcher, Matcher],
+    contains: js.Function1[js.Array[_], Matcher],
+    deepEquals: js.Function1[js.Array[_], Matcher],
+    endsWith: js.Function1[js.Array[_], Matcher],
+    or: js.Function1[Matcher, Matcher],
+    startsWith: js.Function1[js.Array[_], Matcher]
+  ): ArrayMatcher = {
+    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, endsWith = endsWith, or = or, startsWith = startsWith)
+  
+    __obj.asInstanceOf[ArrayMatcher]
+  }
+}
+

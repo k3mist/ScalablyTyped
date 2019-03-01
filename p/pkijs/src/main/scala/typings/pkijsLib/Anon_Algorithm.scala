@@ -10,3 +10,12 @@ trait Anon_Algorithm extends js.Object {
   var usages: js.Array[java.lang.String]
 }
 
+object Anon_Algorithm {
+  @scala.inline
+  def apply(algorithm: stdLib.Algorithm, usages: js.Array[java.lang.String]): Anon_Algorithm = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm, usages = usages)
+  
+    __obj.asInstanceOf[Anon_Algorithm]
+  }
+}
+

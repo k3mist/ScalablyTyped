@@ -10,3 +10,12 @@ trait Resource[Input, Value] extends js.Object {
   def read(key: Input): Value
 }
 
+object Resource {
+  @scala.inline
+  def apply[Input, Value](preload: js.Function1[Input, scala.Unit], read: js.Function1[Input, Value]): Resource[Input, Value] = {
+    val __obj = js.Dynamic.literal(preload = preload, read = read)
+  
+    __obj.asInstanceOf[Resource[Input, Value]]
+  }
+}
+

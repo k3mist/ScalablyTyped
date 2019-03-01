@@ -31,3 +31,26 @@ trait LoaderOptions extends js.Object {
   def registerTypes(): scala.Unit
 }
 
+object LoaderOptions {
+  @scala.inline
+  def apply(
+    afterAuth: js.Function0[scala.Unit],
+    appId: java.lang.String,
+    authButtonElementId: java.lang.String,
+    autoCreate: scala.Boolean,
+    clientId: java.lang.String,
+    defaultTitle: java.lang.String,
+    initializeModel: js.Function1[googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Model, scala.Unit],
+    newFileMimeType: java.lang.String,
+    onFileLoaded: js.Function1[
+      googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.Document, 
+      scala.Unit
+    ],
+    registerTypes: js.Function0[scala.Unit]
+  ): LoaderOptions = {
+    val __obj = js.Dynamic.literal(afterAuth = afterAuth, appId = appId, authButtonElementId = authButtonElementId, autoCreate = autoCreate, clientId = clientId, defaultTitle = defaultTitle, initializeModel = initializeModel, newFileMimeType = newFileMimeType, onFileLoaded = onFileLoaded, registerTypes = registerTypes)
+  
+    __obj.asInstanceOf[LoaderOptions]
+  }
+}
+

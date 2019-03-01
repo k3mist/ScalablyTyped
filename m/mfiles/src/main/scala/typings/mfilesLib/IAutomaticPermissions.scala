@@ -15,3 +15,20 @@ trait IAutomaticPermissions extends js.Object {
   def SetNamedACL(NamedACL: INamedACL): scala.Unit
 }
 
+object IAutomaticPermissions {
+  @scala.inline
+  def apply(
+    CanDeactivate: scala.Boolean,
+    Clone: js.Function0[IAutomaticPermissions],
+    IsBasedOnObjectACL: scala.Boolean,
+    IsDefault: scala.Boolean,
+    NamedACL: INamedACL,
+    SetBasedOnObjectACL: js.Function0[scala.Unit],
+    SetNamedACL: js.Function1[INamedACL, scala.Unit]
+  ): IAutomaticPermissions = {
+    val __obj = js.Dynamic.literal(CanDeactivate = CanDeactivate, Clone = Clone, IsBasedOnObjectACL = IsBasedOnObjectACL, IsDefault = IsDefault, NamedACL = NamedACL, SetBasedOnObjectACL = SetBasedOnObjectACL, SetNamedACL = SetNamedACL)
+  
+    __obj.asInstanceOf[IAutomaticPermissions]
+  }
+}
+

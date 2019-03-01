@@ -14,3 +14,19 @@ trait Key extends js.Object {
   var repeat: scala.Boolean
 }
 
+object Key {
+  @scala.inline
+  def apply(
+    delimiter: java.lang.String,
+    name: java.lang.String | scala.Double,
+    optional: scala.Boolean,
+    pattern: java.lang.String,
+    prefix: java.lang.String,
+    repeat: scala.Boolean
+  ): Key = {
+    val __obj = js.Dynamic.literal(delimiter = delimiter, name = name.asInstanceOf[js.Any], optional = optional, pattern = pattern, prefix = prefix, repeat = repeat)
+  
+    __obj.asInstanceOf[Key]
+  }
+}
+

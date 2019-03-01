@@ -18,3 +18,17 @@ trait XFetchProvider
   def fetch(nRowStartPosition: scala.Double, nRowCount: scala.Double, bDirection: scala.Boolean): FetchResult
 }
 
+object XFetchProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    fetch: js.Function3[scala.Double, scala.Double, scala.Boolean, FetchResult],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFetchProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, fetch = fetch, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFetchProvider]
+  }
+}
+

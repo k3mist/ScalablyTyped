@@ -11,3 +11,16 @@ trait DirtyFlagResult extends js.Object {
   def reset(): scala.Unit
 }
 
+object DirtyFlagResult {
+  @scala.inline
+  def apply(
+    forceDirty: js.Function0[scala.Unit],
+    isDirty: knockoutLib.KnockoutComputed[scala.Boolean],
+    reset: js.Function0[scala.Unit]
+  ): DirtyFlagResult = {
+    val __obj = js.Dynamic.literal(forceDirty = forceDirty, isDirty = isDirty, reset = reset)
+  
+    __obj.asInstanceOf[DirtyFlagResult]
+  }
+}
+

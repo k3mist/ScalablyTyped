@@ -16,3 +16,12 @@ trait ASPxClientCardViewFocusEventArgs extends ASPxClientProcessingModeEventArgs
   var isChangedOnServer: scala.Boolean
 }
 
+object ASPxClientCardViewFocusEventArgs {
+  @scala.inline
+  def apply(isChangedOnServer: scala.Boolean, processOnServer: scala.Boolean): ASPxClientCardViewFocusEventArgs = {
+    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientCardViewFocusEventArgs]
+  }
+}
+

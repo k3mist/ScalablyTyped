@@ -22,3 +22,20 @@ trait SentMessageInfo extends js.Object {
   var response: java.lang.String
 }
 
+object SentMessageInfo {
+  @scala.inline
+  def apply(
+    accepted: js.Array[java.lang.String],
+    envelopeTime: scala.Double,
+    messageSize: scala.Double,
+    messageTime: scala.Double,
+    rejected: js.Array[java.lang.String],
+    response: java.lang.String,
+    rejectedErrors: js.Array[SMTPError] = null
+  ): SentMessageInfo = {
+    val __obj = js.Dynamic.literal(accepted = accepted, envelopeTime = envelopeTime, messageSize = messageSize, messageTime = messageTime, rejected = rejected, response = response)
+    if (rejectedErrors != null) __obj.updateDynamic("rejectedErrors")(rejectedErrors)
+    __obj.asInstanceOf[SentMessageInfo]
+  }
+}
+

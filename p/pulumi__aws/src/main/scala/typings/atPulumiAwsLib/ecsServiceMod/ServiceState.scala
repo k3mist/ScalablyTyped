@@ -122,3 +122,66 @@ trait ServiceState extends js.Object {
   val waitForSteadyState: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object ServiceState {
+  @scala.inline
+  def apply(
+    cluster: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deploymentController: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeInputString] = null,
+    deploymentMaximumPercent: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    deploymentMinimumHealthyPercent: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    desiredCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    enableEcsManagedTags: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    healthCheckGracePeriodSeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    iamRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    launchType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    loadBalancers: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerNameContainerPortElbName]
+      ]
+    ] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    networkConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AssignPublicIpSecurityGroups] = null,
+    orderedPlacementStrategies: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]
+    ] = null,
+    placementConstraints: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExpressionType]]
+    ] = null,
+    placementStrategies: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]
+    ] = null,
+    platformVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    propagateTags: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    schedulingStrategy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    serviceRegistries: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerNameContainerPortPort] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    taskDefinition: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    waitForSteadyState: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): ServiceState = {
+    val __obj = js.Dynamic.literal()
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController.asInstanceOf[js.Any])
+    if (deploymentMaximumPercent != null) __obj.updateDynamic("deploymentMaximumPercent")(deploymentMaximumPercent.asInstanceOf[js.Any])
+    if (deploymentMinimumHealthyPercent != null) __obj.updateDynamic("deploymentMinimumHealthyPercent")(deploymentMinimumHealthyPercent.asInstanceOf[js.Any])
+    if (desiredCount != null) __obj.updateDynamic("desiredCount")(desiredCount.asInstanceOf[js.Any])
+    if (enableEcsManagedTags != null) __obj.updateDynamic("enableEcsManagedTags")(enableEcsManagedTags.asInstanceOf[js.Any])
+    if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
+    if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole.asInstanceOf[js.Any])
+    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
+    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
+    if (orderedPlacementStrategies != null) __obj.updateDynamic("orderedPlacementStrategies")(orderedPlacementStrategies.asInstanceOf[js.Any])
+    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
+    if (placementStrategies != null) __obj.updateDynamic("placementStrategies")(placementStrategies.asInstanceOf[js.Any])
+    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
+    if (propagateTags != null) __obj.updateDynamic("propagateTags")(propagateTags.asInstanceOf[js.Any])
+    if (schedulingStrategy != null) __obj.updateDynamic("schedulingStrategy")(schedulingStrategy.asInstanceOf[js.Any])
+    if (serviceRegistries != null) __obj.updateDynamic("serviceRegistries")(serviceRegistries.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
+    if (waitForSteadyState != null) __obj.updateDynamic("waitForSteadyState")(waitForSteadyState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceState]
+  }
+}
+

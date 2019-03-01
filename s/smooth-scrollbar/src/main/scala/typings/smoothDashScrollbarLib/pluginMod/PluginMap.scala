@@ -10,3 +10,15 @@ trait PluginMap extends js.Object {
   var order: nodeLib.Set[java.lang.String]
 }
 
+object PluginMap {
+  @scala.inline
+  def apply(
+    constructors: org.scalablytyped.runtime.StringDictionary[smoothDashScrollbarLib.Anon_DefaultOptions],
+    order: nodeLib.Set[java.lang.String]
+  ): PluginMap = {
+    val __obj = js.Dynamic.literal(constructors = constructors, order = order)
+  
+    __obj.asInstanceOf[PluginMap]
+  }
+}
+

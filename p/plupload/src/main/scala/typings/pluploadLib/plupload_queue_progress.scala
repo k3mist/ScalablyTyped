@@ -16,3 +16,21 @@ trait plupload_queue_progress extends js.Object {
   def reset(): scala.Unit
 }
 
+object plupload_queue_progress {
+  @scala.inline
+  def apply(
+    bytesPerSec: scala.Double,
+    failed: scala.Double,
+    loaded: scala.Double,
+    percent: scala.Double,
+    queued: scala.Double,
+    reset: js.Function0[scala.Unit],
+    size: scala.Double,
+    uploaded: scala.Double
+  ): plupload_queue_progress = {
+    val __obj = js.Dynamic.literal(bytesPerSec = bytesPerSec, failed = failed, loaded = loaded, percent = percent, queued = queued, reset = reset, size = size, uploaded = uploaded)
+  
+    __obj.asInstanceOf[plupload_queue_progress]
+  }
+}
+

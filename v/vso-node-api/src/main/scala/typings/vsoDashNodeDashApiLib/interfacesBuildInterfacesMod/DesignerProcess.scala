@@ -9,3 +9,12 @@ trait DesignerProcess extends BuildProcess {
   var phases: js.Array[Phase]
 }
 
+object DesignerProcess {
+  @scala.inline
+  def apply(phases: js.Array[Phase], `type`: scala.Double): DesignerProcess = {
+    val __obj = js.Dynamic.literal(phases = phases, `type` = `type`)
+  
+    __obj.asInstanceOf[DesignerProcess]
+  }
+}
+

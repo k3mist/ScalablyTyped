@@ -48,3 +48,23 @@ trait Queue extends js.Object {
   def defer(task: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): this.type
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    abort: js.Function0[Queue],
+    await: js.Function1[
+      js.Function2[/* error */ js.Any | scala.Null, /* repeated */ js.Any, scala.Unit], 
+      Queue
+    ],
+    awaitAll: js.Function1[
+      js.Function2[/* error */ js.Any | scala.Null, /* results */ js.UndefOr[js.Array[_]], scala.Unit], 
+      Queue
+    ],
+    defer: js.Function2[js.Function1[/* repeated */ js.Any, scala.Unit], /* repeated */ js.Any, Queue]
+  ): Queue = {
+    val __obj = js.Dynamic.literal(abort = abort, await = await, awaitAll = awaitAll, defer = defer)
+  
+    __obj.asInstanceOf[Queue]
+  }
+}
+

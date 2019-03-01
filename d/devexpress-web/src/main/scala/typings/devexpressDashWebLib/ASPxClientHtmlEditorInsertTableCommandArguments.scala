@@ -26,3 +26,24 @@ trait ASPxClientHtmlEditorInsertTableCommandArguments extends ASPxClientHtmlEdit
   var rows: scala.Double
 }
 
+object ASPxClientHtmlEditorInsertTableCommandArguments {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    caption: java.lang.String,
+    cellPadding: scala.Double,
+    cellSpacing: scala.Double,
+    columns: scala.Double,
+    headers: java.lang.String,
+    isEqualColumnWidth: scala.Boolean,
+    rows: scala.Double,
+    selectedElement: js.Object,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    summary: java.lang.String
+  ): ASPxClientHtmlEditorInsertTableCommandArguments = {
+    val __obj = js.Dynamic.literal(align = align, caption = caption, cellPadding = cellPadding, cellSpacing = cellSpacing, columns = columns, headers = headers, isEqualColumnWidth = isEqualColumnWidth, rows = rows, selectedElement = selectedElement, styleSettings = styleSettings, summary = summary)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableCommandArguments]
+  }
+}
+

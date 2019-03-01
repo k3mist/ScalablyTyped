@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
   var type_IntegerMapping: envDashToDashObjectLib.envDashToDashObjectLibStrings.integer
 }
 
+object IntegerMapping {
+  @scala.inline
+  def apply(
+    keypath: java.lang.String,
+    radix: scala.Double,
+    `type`: envDashToDashObjectLib.envDashToDashObjectLibStrings.integer
+  ): IntegerMapping = {
+    val __obj = js.Dynamic.literal(keypath = keypath, radix = radix, `type` = `type`)
+  
+    __obj.asInstanceOf[IntegerMapping]
+  }
+}
+

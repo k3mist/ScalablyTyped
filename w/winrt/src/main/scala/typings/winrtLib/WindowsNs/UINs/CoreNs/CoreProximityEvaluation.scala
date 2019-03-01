@@ -10,3 +10,12 @@ trait CoreProximityEvaluation extends js.Object {
   var score: scala.Double
 }
 
+object CoreProximityEvaluation {
+  @scala.inline
+  def apply(adjustedPoint: winrtLib.WindowsNs.FoundationNs.Point, score: scala.Double): CoreProximityEvaluation = {
+    val __obj = js.Dynamic.literal(adjustedPoint = adjustedPoint, score = score)
+  
+    __obj.asInstanceOf[CoreProximityEvaluation]
+  }
+}
+

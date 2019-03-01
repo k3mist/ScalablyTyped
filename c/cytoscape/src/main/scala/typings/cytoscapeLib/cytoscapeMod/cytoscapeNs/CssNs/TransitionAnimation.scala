@@ -27,3 +27,20 @@ trait TransitionAnimation extends js.Object {
   var `transition-timing-function`: TransitionTimingFunction
 }
 
+object TransitionAnimation {
+  @scala.inline
+  def apply(
+    `transition-delay`: scala.Double,
+    `transition-duration`: scala.Double,
+    `transition-property`: java.lang.String,
+    `transition-timing-function`: TransitionTimingFunction
+  ): TransitionAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transition-delay")(`transition-delay`)
+    __obj.updateDynamic("transition-duration")(`transition-duration`)
+    __obj.updateDynamic("transition-property")(`transition-property`)
+    __obj.updateDynamic("transition-timing-function")(`transition-timing-function`)
+    __obj.asInstanceOf[TransitionAnimation]
+  }
+}
+

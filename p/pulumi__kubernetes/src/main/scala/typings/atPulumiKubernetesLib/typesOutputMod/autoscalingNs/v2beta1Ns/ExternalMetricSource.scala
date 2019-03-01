@@ -31,3 +31,17 @@ trait ExternalMetricSource extends js.Object {
   val targetValue: java.lang.String
 }
 
+object ExternalMetricSource {
+  @scala.inline
+  def apply(
+    metricName: java.lang.String,
+    metricSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    targetAverageValue: java.lang.String,
+    targetValue: java.lang.String
+  ): ExternalMetricSource = {
+    val __obj = js.Dynamic.literal(metricName = metricName, metricSelector = metricSelector, targetAverageValue = targetAverageValue, targetValue = targetValue)
+  
+    __obj.asInstanceOf[ExternalMetricSource]
+  }
+}
+

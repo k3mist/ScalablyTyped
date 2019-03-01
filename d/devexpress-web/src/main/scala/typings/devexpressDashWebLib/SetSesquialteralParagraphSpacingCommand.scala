@@ -15,3 +15,12 @@ trait SetSesquialteralParagraphSpacingCommand extends CommandWithBooleanStateBas
   def execute(): scala.Boolean
 }
 
+object SetSesquialteralParagraphSpacingCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): SetSesquialteralParagraphSpacingCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[SetSesquialteralParagraphSpacingCommand]
+  }
+}
+

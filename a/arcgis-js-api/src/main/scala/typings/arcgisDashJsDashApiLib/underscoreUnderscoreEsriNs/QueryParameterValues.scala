@@ -21,3 +21,18 @@ trait QueryParameterValues
   var value: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.Date | js.Array[stdLib.Date]
 }
 
+object QueryParameterValues {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.Date | js.Array[stdLib.Date]
+  ): QueryParameterValues = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[QueryParameterValues]
+  }
+}
+

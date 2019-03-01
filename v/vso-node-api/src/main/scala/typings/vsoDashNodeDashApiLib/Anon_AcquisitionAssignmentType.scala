@@ -40,3 +40,45 @@ trait Anon_AcquisitionAssignmentType extends js.Object {
   var RequestedExtension: js.Any
 }
 
+object Anon_AcquisitionAssignmentType {
+  @scala.inline
+  def apply(
+    AcquisitionAssignmentType: Anon_EnumValuesAnonAllMe,
+    AcquisitionOperation: js.Any,
+    AcquisitionOperationState: Anon_EnumValuesAnonAllow,
+    AcquisitionOperationType: Anon_EnumValuesAnonBuy,
+    AcquisitionOptions: js.Any,
+    ContributionLicensingBehaviorType: Anon_EnumValuesAnonAlwaysInclude,
+    ContributionNodeQuery: js.Any,
+    ContributionPropertyDescription: js.Any,
+    ContributionPropertyType: Anon_EnumValuesAnonArray,
+    ContributionQueryOptions: Anon_EnumValuesAnonIgnoreConstraints,
+    ContributionType: js.Any,
+    ExtensionAcquisitionRequest: js.Any,
+    ExtensionAuditLog: js.Any,
+    ExtensionAuditLogEntry: js.Any,
+    ExtensionEvent: js.Any,
+    ExtensionFlags: Anon_EnumValuesAnonBuiltIn,
+    ExtensionLicensing: js.Any,
+    ExtensionManifest: js.Any,
+    ExtensionRequest: js.Any,
+    ExtensionRequestEvent: js.Any,
+    ExtensionRequestState: Anon_EnumValuesAnonAccepted,
+    ExtensionRequestUpdateType: Anon_EnumValuesAnonApproved,
+    ExtensionRequestsEvent: js.Any,
+    ExtensionState: js.Any,
+    ExtensionStateFlags: Anon_EnumValuesAnonAutoUpgradeError,
+    ExtensionUpdateType: Anon_EnumValuesAnonActionRequired,
+    InstalledExtension: js.Any,
+    InstalledExtensionState: js.Any,
+    InstalledExtensionStateIssue: js.Any,
+    InstalledExtensionStateIssueType: Anon_EnumValuesAnonErrorWarning,
+    LicensingOverride: js.Any,
+    RequestedExtension: js.Any
+  ): Anon_AcquisitionAssignmentType = {
+    val __obj = js.Dynamic.literal(AcquisitionAssignmentType = AcquisitionAssignmentType, AcquisitionOperation = AcquisitionOperation, AcquisitionOperationState = AcquisitionOperationState, AcquisitionOperationType = AcquisitionOperationType, AcquisitionOptions = AcquisitionOptions, ContributionLicensingBehaviorType = ContributionLicensingBehaviorType, ContributionNodeQuery = ContributionNodeQuery, ContributionPropertyDescription = ContributionPropertyDescription, ContributionPropertyType = ContributionPropertyType, ContributionQueryOptions = ContributionQueryOptions, ContributionType = ContributionType, ExtensionAcquisitionRequest = ExtensionAcquisitionRequest, ExtensionAuditLog = ExtensionAuditLog, ExtensionAuditLogEntry = ExtensionAuditLogEntry, ExtensionEvent = ExtensionEvent, ExtensionFlags = ExtensionFlags, ExtensionLicensing = ExtensionLicensing, ExtensionManifest = ExtensionManifest, ExtensionRequest = ExtensionRequest, ExtensionRequestEvent = ExtensionRequestEvent, ExtensionRequestState = ExtensionRequestState, ExtensionRequestUpdateType = ExtensionRequestUpdateType, ExtensionRequestsEvent = ExtensionRequestsEvent, ExtensionState = ExtensionState, ExtensionStateFlags = ExtensionStateFlags, ExtensionUpdateType = ExtensionUpdateType, InstalledExtension = InstalledExtension, InstalledExtensionState = InstalledExtensionState, InstalledExtensionStateIssue = InstalledExtensionStateIssue, InstalledExtensionStateIssueType = InstalledExtensionStateIssueType, LicensingOverride = LicensingOverride, RequestedExtension = RequestedExtension)
+  
+    __obj.asInstanceOf[Anon_AcquisitionAssignmentType]
+  }
+}
+

@@ -50,3 +50,31 @@ trait ExecutionsResource extends js.Object {
   def patch(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
 }
 
+object ExecutionsResource {
+  @scala.inline
+  def apply(
+    clusters: ClustersResource,
+    create: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+    ],
+    get: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListExecutionsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+    ],
+    steps: StepsResource
+  ): ExecutionsResource = {
+    val __obj = js.Dynamic.literal(clusters = clusters, create = create, get = get, list = list, patch = patch, steps = steps)
+  
+    __obj.asInstanceOf[ExecutionsResource]
+  }
+}
+

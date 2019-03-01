@@ -125,3 +125,38 @@ trait FillProperties extends js.Object {
   var GraphicCrop: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.GraphicCrop
 }
 
+object FillProperties {
+  @scala.inline
+  def apply(
+    FillBackground: scala.Boolean,
+    FillBitmap: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    FillBitmapLogicalSize: scala.Boolean,
+    FillBitmapMode: BitmapMode,
+    FillBitmapName: java.lang.String,
+    FillBitmapOffsetX: scala.Double,
+    FillBitmapOffsetY: scala.Double,
+    FillBitmapPositionOffsetX: scala.Double,
+    FillBitmapPositionOffsetY: scala.Double,
+    FillBitmapRectanglePoint: RectanglePoint,
+    FillBitmapSizeX: scala.Double,
+    FillBitmapSizeY: scala.Double,
+    FillBitmapStretch: scala.Boolean,
+    FillBitmapTile: scala.Boolean,
+    FillBitmapURL: java.lang.String,
+    FillColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FillGradient: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Gradient,
+    FillGradientName: java.lang.String,
+    FillHatch: Hatch,
+    FillHatchName: java.lang.String,
+    FillStyle: FillStyle,
+    FillTransparence: scala.Double,
+    FillTransparenceGradient: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Gradient,
+    FillTransparenceGradientName: java.lang.String,
+    GraphicCrop: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.GraphicCrop
+  ): FillProperties = {
+    val __obj = js.Dynamic.literal(FillBackground = FillBackground, FillBitmap = FillBitmap, FillBitmapLogicalSize = FillBitmapLogicalSize, FillBitmapMode = FillBitmapMode, FillBitmapName = FillBitmapName, FillBitmapOffsetX = FillBitmapOffsetX, FillBitmapOffsetY = FillBitmapOffsetY, FillBitmapPositionOffsetX = FillBitmapPositionOffsetX, FillBitmapPositionOffsetY = FillBitmapPositionOffsetY, FillBitmapRectanglePoint = FillBitmapRectanglePoint, FillBitmapSizeX = FillBitmapSizeX, FillBitmapSizeY = FillBitmapSizeY, FillBitmapStretch = FillBitmapStretch, FillBitmapTile = FillBitmapTile, FillBitmapURL = FillBitmapURL, FillColor = FillColor, FillGradient = FillGradient, FillGradientName = FillGradientName, FillHatch = FillHatch, FillHatchName = FillHatchName, FillStyle = FillStyle, FillTransparence = FillTransparence, FillTransparenceGradient = FillTransparenceGradient, FillTransparenceGradientName = FillTransparenceGradientName, GraphicCrop = GraphicCrop)
+  
+    __obj.asInstanceOf[FillProperties]
+  }
+}
+

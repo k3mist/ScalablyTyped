@@ -11,3 +11,12 @@ trait Resource extends js.Object {
   var url: java.lang.String
 }
 
+object Resource {
+  @scala.inline
+  def apply(assets: js.Array[Resource], filename: java.lang.String, url: java.lang.String): Resource = {
+    val __obj = js.Dynamic.literal(assets = assets, filename = filename, url = url)
+  
+    __obj.asInstanceOf[Resource]
+  }
+}
+

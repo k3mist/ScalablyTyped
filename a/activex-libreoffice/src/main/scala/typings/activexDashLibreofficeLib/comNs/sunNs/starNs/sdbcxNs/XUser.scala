@@ -16,3 +16,21 @@ trait XUser extends XAuthorizable {
   def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String): scala.Unit
 }
 
+object XUser {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    changePassword: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    getGrantablePrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getPrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
+    grantPrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    revokePrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
+  ): XUser = {
+    val __obj = js.Dynamic.literal(acquire = acquire, changePassword = changePassword, getGrantablePrivileges = getGrantablePrivileges, getPrivileges = getPrivileges, grantPrivileges = grantPrivileges, queryInterface = queryInterface, release = release, revokePrivileges = revokePrivileges)
+  
+    __obj.asInstanceOf[XUser]
+  }
+}
+

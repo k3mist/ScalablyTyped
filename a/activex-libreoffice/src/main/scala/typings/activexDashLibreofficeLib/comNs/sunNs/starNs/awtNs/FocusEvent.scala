@@ -28,3 +28,17 @@ trait FocusEvent
   var Temporary: scala.Boolean
 }
 
+object FocusEvent {
+  @scala.inline
+  def apply(
+    FocusFlags: scala.Double,
+    NextFocus: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Temporary: scala.Boolean
+  ): FocusEvent = {
+    val __obj = js.Dynamic.literal(FocusFlags = FocusFlags, NextFocus = NextFocus, Source = Source, Temporary = Temporary)
+  
+    __obj.asInstanceOf[FocusEvent]
+  }
+}
+

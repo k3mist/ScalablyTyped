@@ -11,3 +11,16 @@ trait Shader extends js.Object {
   var vertexShader: java.lang.String
 }
 
+object Shader {
+  @scala.inline
+  def apply(
+    fragmentShader: java.lang.String,
+    uniforms: org.scalablytyped.runtime.StringDictionary[IUniform],
+    vertexShader: java.lang.String
+  ): Shader = {
+    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader, uniforms = uniforms, vertexShader = vertexShader)
+  
+    __obj.asInstanceOf[Shader]
+  }
+}
+

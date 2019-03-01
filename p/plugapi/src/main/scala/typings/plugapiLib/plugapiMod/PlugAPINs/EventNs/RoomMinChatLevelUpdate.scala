@@ -11,3 +11,12 @@ trait RoomMinChatLevelUpdate extends js.Object {
   var user: plugapiLib.plugapiMod.PlugAPINs.UserNs.User
 }
 
+object RoomMinChatLevelUpdate {
+  @scala.inline
+  def apply(id: scala.Double, level: scala.Double, user: plugapiLib.plugapiMod.PlugAPINs.UserNs.User): RoomMinChatLevelUpdate = {
+    val __obj = js.Dynamic.literal(id = id, level = level, user = user)
+  
+    __obj.asInstanceOf[RoomMinChatLevelUpdate]
+  }
+}
+

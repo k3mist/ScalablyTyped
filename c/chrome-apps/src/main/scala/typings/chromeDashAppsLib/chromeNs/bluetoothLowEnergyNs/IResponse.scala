@@ -14,3 +14,16 @@ trait IResponse extends js.Object {
   var value: js.UndefOr[stdLib.ArrayBuffer] = js.undefined
 }
 
+object IResponse {
+  @scala.inline
+  def apply(
+    isError: scala.Boolean,
+    requestId: chromeDashAppsLib.chromeNs.integer,
+    value: stdLib.ArrayBuffer = null
+  ): IResponse = {
+    val __obj = js.Dynamic.literal(isError = isError, requestId = requestId)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IResponse]
+  }
+}
+

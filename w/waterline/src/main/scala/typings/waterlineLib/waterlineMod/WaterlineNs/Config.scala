@@ -10,3 +10,15 @@ trait Config extends js.Object {
   var connections: org.scalablytyped.runtime.StringDictionary[Connection]
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    adapters: org.scalablytyped.runtime.StringDictionary[Adapter],
+    connections: org.scalablytyped.runtime.StringDictionary[Connection]
+  ): Config = {
+    val __obj = js.Dynamic.literal(adapters = adapters, connections = connections)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

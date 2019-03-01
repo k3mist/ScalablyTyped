@@ -12,3 +12,17 @@ trait RegisterFileProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object RegisterFileProtocolRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): RegisterFileProtocolRequest = {
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
+    __obj.asInstanceOf[RegisterFileProtocolRequest]
+  }
+}
+

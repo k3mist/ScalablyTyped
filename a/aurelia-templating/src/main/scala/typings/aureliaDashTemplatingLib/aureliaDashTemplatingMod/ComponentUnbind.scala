@@ -12,3 +12,12 @@ trait ComponentUnbind extends js.Object {
   def unbind(): scala.Unit
 }
 
+object ComponentUnbind {
+  @scala.inline
+  def apply(unbind: js.Function0[scala.Unit]): ComponentUnbind = {
+    val __obj = js.Dynamic.literal(unbind = unbind)
+  
+    __obj.asInstanceOf[ComponentUnbind]
+  }
+}
+

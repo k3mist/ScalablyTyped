@@ -21,3 +21,12 @@ trait ExcelFormatOptions extends js.Object {
   var Format: java.lang.String
 }
 
+object ExcelFormatOptions {
+  @scala.inline
+  def apply(CsvValueSeparator: java.lang.String, Format: java.lang.String): ExcelFormatOptions = {
+    val __obj = js.Dynamic.literal(CsvValueSeparator = CsvValueSeparator, Format = Format)
+  
+    __obj.asInstanceOf[ExcelFormatOptions]
+  }
+}
+

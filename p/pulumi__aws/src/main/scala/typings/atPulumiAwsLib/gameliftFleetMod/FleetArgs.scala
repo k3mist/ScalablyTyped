@@ -56,3 +56,32 @@ trait FleetArgs extends js.Object {
   ] = js.undefined
 }
 
+object FleetArgs {
+  @scala.inline
+  def apply(
+    buildId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    ec2InstanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ec2InboundPermissions: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FromPortIpRange]]
+    ] = null,
+    metricGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    newGameSessionProtectionPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceCreationLimitPolicy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes] = null,
+    runtimeConfiguration: atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations
+    ] = null
+  ): FleetArgs = {
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], ec2InstanceType = ec2InstanceType.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (ec2InboundPermissions != null) __obj.updateDynamic("ec2InboundPermissions")(ec2InboundPermissions.asInstanceOf[js.Any])
+    if (metricGroups != null) __obj.updateDynamic("metricGroups")(metricGroups.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (newGameSessionProtectionPolicy != null) __obj.updateDynamic("newGameSessionProtectionPolicy")(newGameSessionProtectionPolicy.asInstanceOf[js.Any])
+    if (resourceCreationLimitPolicy != null) __obj.updateDynamic("resourceCreationLimitPolicy")(resourceCreationLimitPolicy.asInstanceOf[js.Any])
+    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FleetArgs]
+  }
+}
+

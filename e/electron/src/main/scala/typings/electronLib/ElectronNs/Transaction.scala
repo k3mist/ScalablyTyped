@@ -35,3 +35,20 @@ trait Transaction extends js.Object {
   var transactionState: electronLib.electronLibStrings.purchasing | electronLib.electronLibStrings.purchased | electronLib.electronLibStrings.failed | electronLib.electronLibStrings.restored | electronLib.electronLibStrings.deferred
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    errorCode: scala.Double,
+    errorMessage: java.lang.String,
+    originalTransactionIdentifier: java.lang.String,
+    payment: Payment,
+    transactionDate: java.lang.String,
+    transactionIdentifier: java.lang.String,
+    transactionState: electronLib.electronLibStrings.purchasing | electronLib.electronLibStrings.purchased | electronLib.electronLibStrings.failed | electronLib.electronLibStrings.restored | electronLib.electronLibStrings.deferred
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage, originalTransactionIdentifier = originalTransactionIdentifier, payment = payment, transactionDate = transactionDate, transactionIdentifier = transactionIdentifier, transactionState = transactionState.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

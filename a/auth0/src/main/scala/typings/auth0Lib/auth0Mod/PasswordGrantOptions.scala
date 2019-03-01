@@ -11,3 +11,12 @@ trait PasswordGrantOptions extends js.Object {
   var username: java.lang.String
 }
 
+object PasswordGrantOptions {
+  @scala.inline
+  def apply(password: java.lang.String, username: java.lang.String, realm: java.lang.String = null): PasswordGrantOptions = {
+    val __obj = js.Dynamic.literal(password = password, username = username)
+    if (realm != null) __obj.updateDynamic("realm")(realm)
+    __obj.asInstanceOf[PasswordGrantOptions]
+  }
+}
+

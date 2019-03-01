@@ -40,3 +40,21 @@ trait ReviewReply extends js.Object {
   var userId: java.lang.String
 }
 
+object ReviewReply {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    isDeleted: scala.Boolean,
+    productVersion: java.lang.String,
+    replyText: java.lang.String,
+    reviewId: scala.Double,
+    title: java.lang.String,
+    updatedDate: stdLib.Date,
+    userId: java.lang.String
+  ): ReviewReply = {
+    val __obj = js.Dynamic.literal(id = id, isDeleted = isDeleted, productVersion = productVersion, replyText = replyText, reviewId = reviewId, title = title, updatedDate = updatedDate, userId = userId)
+  
+    __obj.asInstanceOf[ReviewReply]
+  }
+}
+

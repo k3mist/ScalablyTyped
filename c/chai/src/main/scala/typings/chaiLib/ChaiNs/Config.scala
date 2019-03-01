@@ -20,3 +20,12 @@ trait Config extends js.Object {
   var truncateThreshold: scala.Double
 }
 
+object Config {
+  @scala.inline
+  def apply(includeStack: scala.Boolean, showDiff: scala.Boolean, truncateThreshold: scala.Double): Config = {
+    val __obj = js.Dynamic.literal(includeStack = includeStack, showDiff = showDiff, truncateThreshold = truncateThreshold)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

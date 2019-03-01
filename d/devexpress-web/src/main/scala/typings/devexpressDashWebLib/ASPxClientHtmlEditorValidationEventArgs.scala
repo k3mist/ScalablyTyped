@@ -26,3 +26,12 @@ trait ASPxClientHtmlEditorValidationEventArgs extends ASPxClientEventArgs {
   var isValid: scala.Boolean
 }
 
+object ASPxClientHtmlEditorValidationEventArgs {
+  @scala.inline
+  def apply(errorText: java.lang.String, html: java.lang.String, isValid: scala.Boolean): ASPxClientHtmlEditorValidationEventArgs = {
+    val __obj = js.Dynamic.literal(errorText = errorText, html = html, isValid = isValid)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorValidationEventArgs]
+  }
+}
+

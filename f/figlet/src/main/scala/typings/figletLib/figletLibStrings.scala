@@ -783,7 +783,7 @@ object figletLibStrings {
     extends figletLib.figletMod.figletNs.Fonts
   
   @js.native
-  sealed trait `Patorjk's Cheese`
+  sealed trait `Patorjk_quotes Cheese`
     extends figletLib.figletMod.figletNs.Fonts
   
   @js.native
@@ -1563,7 +1563,7 @@ object figletLibStrings {
   @scala.inline
   def `Old Banner`: `Old Banner` = "Old Banner".asInstanceOf[`Old Banner`]
   @scala.inline
-  def `Patorjk's Cheese`: `Patorjk's Cheese` = "Patorjk's Cheese".asInstanceOf[`Patorjk's Cheese`]
+  def `Patorjk_quotes Cheese`: `Patorjk_quotes Cheese` = "Patorjk's Cheese".asInstanceOf[`Patorjk_quotes Cheese`]
   @scala.inline
   def `Patorjk-HeX`: `Patorjk-HeX` = "Patorjk-HeX".asInstanceOf[`Patorjk-HeX`]
   @scala.inline

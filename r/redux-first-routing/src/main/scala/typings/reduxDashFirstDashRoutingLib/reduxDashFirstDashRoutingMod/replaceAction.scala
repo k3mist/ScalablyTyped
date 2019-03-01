@@ -12,3 +12,15 @@ trait replaceAction[T /* <: historyLib.historyMod.Path | historyLib.historyMod.L
   var payload: T
 }
 
+object replaceAction {
+  @scala.inline
+  def apply[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](
+    payload: T,
+    `type`: reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/REPLACE`
+  ): replaceAction[T] = {
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[replaceAction[T]]
+  }
+}
+

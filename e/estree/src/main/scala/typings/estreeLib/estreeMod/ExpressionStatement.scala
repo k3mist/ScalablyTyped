@@ -13,3 +13,22 @@ trait ExpressionStatement
   var type_ExpressionStatement: estreeLib.estreeLibStrings.ExpressionStatement
 }
 
+object ExpressionStatement {
+  @scala.inline
+  def apply(
+    expression: estreeLib.Expression,
+    `type`: estreeLib.estreeLibStrings.ExpressionStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): ExpressionStatement = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[ExpressionStatement]
+  }
+}
+

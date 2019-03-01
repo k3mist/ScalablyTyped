@@ -31,3 +31,63 @@ trait FilterableComposition22C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: f
   ]
 }
 
+object FilterableComposition22C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[
+        F, 
+        js.Any, 
+        fpDashTsLib.libHKTMod.Type2[G, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
+      ], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]]
+    ],
+    filter: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+    ],
+    filterMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]]
+    ],
+    partition: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+      ]
+    ],
+    partitionMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      js.Function1[js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+      ]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[
+        F, 
+        js.Any, 
+        fpDashTsLib.libHKTMod.Type2[G, js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
+      ], 
+      fpDashTsLib.libCompactableMod.Separated[
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]], 
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]]
+      ]
+    ]
+  ): FilterableComposition22C[F, G, LG] = {
+    val __obj = js.Dynamic.literal(compact = compact, filter = filter, filterMap = filterMap, map = map, partition = partition, partitionMap = partitionMap, separate = separate)
+  
+    __obj.asInstanceOf[FilterableComposition22C[F, G, LG]]
+  }
+}
+

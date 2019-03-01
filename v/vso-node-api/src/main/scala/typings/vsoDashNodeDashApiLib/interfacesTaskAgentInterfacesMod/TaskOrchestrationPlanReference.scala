@@ -16,3 +16,21 @@ trait TaskOrchestrationPlanReference extends js.Object {
   var version: scala.Double
 }
 
+object TaskOrchestrationPlanReference {
+  @scala.inline
+  def apply(
+    artifactLocation: java.lang.String,
+    artifactUri: java.lang.String,
+    definition: TaskOrchestrationOwner,
+    owner: TaskOrchestrationOwner,
+    planId: java.lang.String,
+    planType: java.lang.String,
+    scopeIdentifier: java.lang.String,
+    version: scala.Double
+  ): TaskOrchestrationPlanReference = {
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation, artifactUri = artifactUri, definition = definition, owner = owner, planId = planId, planType = planType, scopeIdentifier = scopeIdentifier, version = version)
+  
+    __obj.asInstanceOf[TaskOrchestrationPlanReference]
+  }
+}
+

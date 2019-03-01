@@ -12,3 +12,12 @@ trait DiffDeleted[LHS]
   var path: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DiffDeleted {
+  @scala.inline
+  def apply[LHS](kind: deepDashDiffLib.deepDashDiffLibStrings.D, lhs: LHS, path: js.Array[_] = null): DiffDeleted[LHS] = {
+    val __obj = js.Dynamic.literal(kind = kind, lhs = lhs.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[DiffDeleted[LHS]]
+  }
+}
+

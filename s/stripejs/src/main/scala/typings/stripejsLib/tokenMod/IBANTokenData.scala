@@ -21,3 +21,16 @@ trait IBANTokenData extends js.Object {
   var currency: java.lang.String
 }
 
+object IBANTokenData {
+  @scala.inline
+  def apply(
+    account_holder_name: java.lang.String,
+    account_holder_type: stripejsLib.stripejsLibStrings.individual | stripejsLib.stripejsLibStrings.company,
+    currency: java.lang.String
+  ): IBANTokenData = {
+    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name, account_holder_type = account_holder_type.asInstanceOf[js.Any], currency = currency)
+  
+    __obj.asInstanceOf[IBANTokenData]
+  }
+}
+

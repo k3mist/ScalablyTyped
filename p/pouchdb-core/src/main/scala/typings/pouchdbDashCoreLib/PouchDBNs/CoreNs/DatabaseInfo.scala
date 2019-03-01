@@ -14,3 +14,12 @@ trait DatabaseInfo extends js.Object {
   var update_seq: scala.Double | java.lang.String
 }
 
+object DatabaseInfo {
+  @scala.inline
+  def apply(db_name: java.lang.String, doc_count: scala.Double, update_seq: scala.Double | java.lang.String): DatabaseInfo = {
+    val __obj = js.Dynamic.literal(db_name = db_name, doc_count = doc_count, update_seq = update_seq.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DatabaseInfo]
+  }
+}
+

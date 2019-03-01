@@ -44,3 +44,27 @@ trait VpcAttachmentArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpcAttachmentArgs {
+  @scala.inline
+  def apply(
+    subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    transitGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    dnsSupport: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ipv6Support: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    transitGatewayDefaultRouteTableAssociation: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    transitGatewayDefaultRouteTablePropagation: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): VpcAttachmentArgs = {
+    val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any], transitGatewayId = transitGatewayId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
+    if (ipv6Support != null) __obj.updateDynamic("ipv6Support")(ipv6Support.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitGatewayDefaultRouteTableAssociation != null) __obj.updateDynamic("transitGatewayDefaultRouteTableAssociation")(transitGatewayDefaultRouteTableAssociation.asInstanceOf[js.Any])
+    if (transitGatewayDefaultRouteTablePropagation != null) __obj.updateDynamic("transitGatewayDefaultRouteTablePropagation")(transitGatewayDefaultRouteTablePropagation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcAttachmentArgs]
+  }
+}
+

@@ -56,3 +56,62 @@ trait FindTypes
   var `7`: RoomPosition
 }
 
+object FindTypes {
+  @scala.inline
+  def apply(
+    `1`: RoomPosition,
+    `10`: RoomPosition,
+    `101`: Creep,
+    `102`: Creep,
+    `103`: Creep,
+    `104`: Source,
+    `105`: Source,
+    `106`: Resource[ResourceConstant],
+    `107`: AnyStructure,
+    `108`: AnyOwnedStructure,
+    `109`: AnyOwnedStructure,
+    `110`: Flag,
+    `111`: ConstructionSite[BuildableStructureConstant],
+    `112`: StructureSpawn,
+    `113`: StructureSpawn,
+    `114`: ConstructionSite[BuildableStructureConstant],
+    `115`: ConstructionSite[BuildableStructureConstant],
+    `116`: Mineral[MineralConstant],
+    `117`: Nuke,
+    `118`: Tombstone,
+    `3`: RoomPosition,
+    `5`: RoomPosition,
+    `7`: RoomPosition,
+    NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[
+      RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+    ] = null
+  ): FindTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("10")(`10`)
+    __obj.updateDynamic("101")(`101`)
+    __obj.updateDynamic("102")(`102`)
+    __obj.updateDynamic("103")(`103`)
+    __obj.updateDynamic("104")(`104`)
+    __obj.updateDynamic("105")(`105`)
+    __obj.updateDynamic("106")(`106`)
+    __obj.updateDynamic("107")(`107`)
+    __obj.updateDynamic("108")(`108`)
+    __obj.updateDynamic("109")(`109`)
+    __obj.updateDynamic("110")(`110`)
+    __obj.updateDynamic("111")(`111`)
+    __obj.updateDynamic("112")(`112`)
+    __obj.updateDynamic("113")(`113`)
+    __obj.updateDynamic("114")(`114`)
+    __obj.updateDynamic("115")(`115`)
+    __obj.updateDynamic("116")(`116`)
+    __obj.updateDynamic("117")(`117`)
+    __obj.updateDynamic("118")(`118`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("7")(`7`)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FindTypes]
+  }
+}
+

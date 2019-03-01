@@ -22,3 +22,16 @@ trait RenameParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object RenameParams {
+  @scala.inline
+  def apply(
+    newName: java.lang.String,
+    position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): RenameParams = {
+    val __obj = js.Dynamic.literal(newName = newName, position = position, textDocument = textDocument)
+  
+    __obj.asInstanceOf[RenameParams]
+  }
+}
+

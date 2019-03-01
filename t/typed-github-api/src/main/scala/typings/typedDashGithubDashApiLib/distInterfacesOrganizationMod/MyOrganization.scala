@@ -17,3 +17,22 @@ trait MyOrganization extends js.Object {
   var privateReposTotal: scala.Double
 }
 
+object MyOrganization {
+  @scala.inline
+  def apply(
+    billingEmail: java.lang.String,
+    collaborators: scala.Double,
+    defaultRepositorySettings: java.lang.String,
+    diskUsage: scala.Double,
+    membersCanCreateRepositories: scala.Boolean,
+    plan: typedDashGithubDashApiLib.Anon_CollaboratorsName,
+    privateGists: scala.Double,
+    privateReposOwned: scala.Double,
+    privateReposTotal: scala.Double
+  ): MyOrganization = {
+    val __obj = js.Dynamic.literal(billingEmail = billingEmail, collaborators = collaborators, defaultRepositorySettings = defaultRepositorySettings, diskUsage = diskUsage, membersCanCreateRepositories = membersCanCreateRepositories, plan = plan, privateGists = privateGists, privateReposOwned = privateReposOwned, privateReposTotal = privateReposTotal)
+  
+    __obj.asInstanceOf[MyOrganization]
+  }
+}
+

@@ -32,3 +32,17 @@ trait _Impl extends js.Object {
   var values: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    remoteValues: java.lang.String,
+    value: java.lang.String,
+    values: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(name = name, remoteValues = remoteValues, value = value, values = values)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

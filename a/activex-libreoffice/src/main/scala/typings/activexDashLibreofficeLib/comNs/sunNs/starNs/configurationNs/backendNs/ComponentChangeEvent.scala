@@ -15,3 +15,12 @@ trait ComponentChangeEvent
   var Component: java.lang.String
 }
 
+object ComponentChangeEvent {
+  @scala.inline
+  def apply(Component: java.lang.String, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): ComponentChangeEvent = {
+    val __obj = js.Dynamic.literal(Component = Component, Source = Source)
+  
+    __obj.asInstanceOf[ComponentChangeEvent]
+  }
+}
+

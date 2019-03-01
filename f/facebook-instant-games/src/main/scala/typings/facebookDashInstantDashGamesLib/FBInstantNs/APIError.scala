@@ -19,3 +19,12 @@ trait APIError extends js.Object {
   var message: java.lang.String
 }
 
+object APIError {
+  @scala.inline
+  def apply(code: ErrorCodeType, message: java.lang.String): APIError = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
+    __obj.asInstanceOf[APIError]
+  }
+}
+

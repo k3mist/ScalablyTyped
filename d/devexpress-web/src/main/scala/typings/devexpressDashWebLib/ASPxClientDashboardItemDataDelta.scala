@@ -31,3 +31,17 @@ trait ASPxClientDashboardItemDataDelta extends js.Object {
   var TargetMeasureId: java.lang.String
 }
 
+object ASPxClientDashboardItemDataDelta {
+  @scala.inline
+  def apply(
+    ActualMeasureId: java.lang.String,
+    Id: java.lang.String,
+    Name: java.lang.String,
+    TargetMeasureId: java.lang.String
+  ): ASPxClientDashboardItemDataDelta = {
+    val __obj = js.Dynamic.literal(ActualMeasureId = ActualMeasureId, Id = Id, Name = Name, TargetMeasureId = TargetMeasureId)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemDataDelta]
+  }
+}
+

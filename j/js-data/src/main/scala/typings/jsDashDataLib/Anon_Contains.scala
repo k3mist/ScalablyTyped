@@ -22,3 +22,34 @@ trait Anon_Contains extends js.Object {
   def notIn(value: js.Any, predicate: js.Any): scala.Boolean
 }
 
+object Anon_Contains {
+  @scala.inline
+  def apply(
+    `!=`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `!==`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `<`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `<=`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `==`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `===`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `>`: js.Function2[js.Any, js.Any, scala.Boolean],
+    `>=`: js.Function2[js.Any, js.Any, scala.Boolean],
+    contains: js.Function2[js.Any, js.Any, scala.Boolean],
+    in: js.Function2[js.Any, js.Any, scala.Boolean],
+    isectEmpty: js.Function2[js.Any, js.Any, scala.Boolean],
+    isectNotEmpty: js.Function2[js.Any, js.Any, scala.Double],
+    notContains: js.Function2[js.Any, js.Any, scala.Boolean],
+    notIn: js.Function2[js.Any, js.Any, scala.Boolean]
+  ): Anon_Contains = {
+    val __obj = js.Dynamic.literal(contains = contains, in = in, isectEmpty = isectEmpty, isectNotEmpty = isectNotEmpty, notContains = notContains, notIn = notIn)
+    __obj.updateDynamic("!=")(`!=`)
+    __obj.updateDynamic("!==")(`!==`)
+    __obj.updateDynamic("<")(`<`)
+    __obj.updateDynamic("<=")(`<=`)
+    __obj.updateDynamic("==")(`==`)
+    __obj.updateDynamic("===")(`===`)
+    __obj.updateDynamic(">")(`>`)
+    __obj.updateDynamic(">=")(`>=`)
+    __obj.asInstanceOf[Anon_Contains]
+  }
+}
+

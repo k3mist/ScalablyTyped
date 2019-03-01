@@ -15,3 +15,17 @@ trait XDataDescriptorFactory
   def createDataDescriptor(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XDataDescriptorFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDataDescriptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataDescriptorFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createDataDescriptor = createDataDescriptor, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDataDescriptorFactory]
+  }
+}
+

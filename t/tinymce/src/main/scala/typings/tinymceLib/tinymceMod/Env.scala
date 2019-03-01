@@ -22,3 +22,27 @@ trait Env extends js.Object {
   var webKit: scala.Boolean
 }
 
+object Env {
+  @scala.inline
+  def apply(
+    android: scala.Boolean,
+    ceFalse: scala.Boolean,
+    contentEditable: scala.Boolean,
+    documentMode: scala.Boolean,
+    fileApi: scala.Boolean,
+    gecko: scala.Boolean,
+    iOS: scala.Boolean,
+    ie: scala.Boolean,
+    mac: scala.Boolean,
+    noCaretAfter: scala.Boolean,
+    opera: scala.Boolean,
+    range: scala.Boolean,
+    transparentSrc: scala.Boolean,
+    webKit: scala.Boolean
+  ): Env = {
+    val __obj = js.Dynamic.literal(android = android, ceFalse = ceFalse, contentEditable = contentEditable, documentMode = documentMode, fileApi = fileApi, gecko = gecko, iOS = iOS, ie = ie, mac = mac, noCaretAfter = noCaretAfter, opera = opera, range = range, transparentSrc = transparentSrc, webKit = webKit)
+  
+    __obj.asInstanceOf[Env]
+  }
+}
+

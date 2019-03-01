@@ -128,3 +128,59 @@ trait DistributionArgs extends js.Object {
   val webAclId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object DistributionArgs {
+  @scala.inline
+  def apply(
+    defaultCacheBehavior: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl],
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean],
+    origins: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomHeadersCustomOriginConfig]
+      ]
+    ],
+    restrictions: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType],
+    viewerCertificate: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate],
+    aliases: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    cacheBehaviors: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    comment: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customErrorResponses: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ErrorCachingMinTtlErrorCode]
+      ]
+    ] = null,
+    defaultRootObject: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    httpVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    isIpv6Enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    loggingConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix] = null,
+    orderedCacheBehaviors: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    priceClass: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    retainOnDelete: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    webAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DistributionArgs = {
+    val __obj = js.Dynamic.literal(defaultCacheBehavior = defaultCacheBehavior.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], viewerCertificate = viewerCertificate.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])
+    if (defaultRootObject != null) __obj.updateDynamic("defaultRootObject")(defaultRootObject.asInstanceOf[js.Any])
+    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
+    if (isIpv6Enabled != null) __obj.updateDynamic("isIpv6Enabled")(isIpv6Enabled.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
+    if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
+    if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
+    if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistributionArgs]
+  }
+}
+

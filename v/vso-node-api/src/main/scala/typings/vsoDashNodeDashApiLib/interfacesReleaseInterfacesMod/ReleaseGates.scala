@@ -15,3 +15,20 @@ trait ReleaseGates extends js.Object {
   var status: GateStatus
 }
 
+object ReleaseGates {
+  @scala.inline
+  def apply(
+    deploymentJobs: js.Array[DeploymentJob],
+    id: scala.Double,
+    lastModifiedOn: stdLib.Date,
+    runPlanId: java.lang.String,
+    stabilizationCompletedOn: stdLib.Date,
+    startedOn: stdLib.Date,
+    status: GateStatus
+  ): ReleaseGates = {
+    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs, id = id, lastModifiedOn = lastModifiedOn, runPlanId = runPlanId, stabilizationCompletedOn = stabilizationCompletedOn, startedOn = startedOn, status = status)
+  
+    __obj.asInstanceOf[ReleaseGates]
+  }
+}
+

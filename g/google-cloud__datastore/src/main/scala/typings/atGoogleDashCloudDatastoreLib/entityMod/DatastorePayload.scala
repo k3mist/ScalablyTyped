@@ -12,3 +12,12 @@ trait DatastorePayload[T] extends js.Object {
   var key: DatastoreKey
 }
 
+object DatastorePayload {
+  @scala.inline
+  def apply[T](data: T | js.Object, key: DatastoreKey, excludeFromIndexes: js.Array[java.lang.String] = null): DatastorePayload[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key)
+    if (excludeFromIndexes != null) __obj.updateDynamic("excludeFromIndexes")(excludeFromIndexes)
+    __obj.asInstanceOf[DatastorePayload[T]]
+  }
+}
+

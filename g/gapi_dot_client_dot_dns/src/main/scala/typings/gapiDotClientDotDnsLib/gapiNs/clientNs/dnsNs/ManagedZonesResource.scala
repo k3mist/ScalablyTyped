@@ -16,3 +16,29 @@ trait ManagedZonesResource extends js.Object {
   def list(request: gapiDotClientDotDnsLib.Anon_AltDnsName): gapiDotClientLib.gapiNs.clientNs.Request[ManagedZonesListResponse]
 }
 
+object ManagedZonesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotDnsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDnsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDnsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDnsLib.Anon_AltDnsName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedZonesListResponse]
+    ]
+  ): ManagedZonesResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[ManagedZonesResource]
+  }
+}
+

@@ -18,3 +18,16 @@ trait NativeNumberXmlAttributes extends js.Object {
   var Style: java.lang.String
 }
 
+object NativeNumberXmlAttributes {
+  @scala.inline
+  def apply(
+    Format: java.lang.String,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Style: java.lang.String
+  ): NativeNumberXmlAttributes = {
+    val __obj = js.Dynamic.literal(Format = Format, Locale = Locale, Style = Style)
+  
+    __obj.asInstanceOf[NativeNumberXmlAttributes]
+  }
+}
+

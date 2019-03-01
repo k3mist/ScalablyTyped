@@ -10,3 +10,12 @@ trait OpaqueColor extends js.Object {
   var kind: googleDashAppsDashScriptLib.Anon_Rgbcolor
 }
 
+object OpaqueColor {
+  @scala.inline
+  def apply(kind: googleDashAppsDashScriptLib.Anon_Rgbcolor): OpaqueColor = {
+    val __obj = js.Dynamic.literal(kind = kind)
+  
+    __obj.asInstanceOf[OpaqueColor]
+  }
+}
+

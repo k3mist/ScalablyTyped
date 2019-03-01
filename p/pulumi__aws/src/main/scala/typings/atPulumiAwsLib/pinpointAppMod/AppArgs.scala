@@ -28,3 +28,22 @@ trait AppArgs extends js.Object {
   val quietTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EndStart]] = js.undefined
 }
 
+object AppArgs {
+  @scala.inline
+  def apply(
+    campaignHook: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LambdaFunctionNameMode] = null,
+    limits: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DailyMaximumDuration] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    quietTime: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EndStart] = null
+  ): AppArgs = {
+    val __obj = js.Dynamic.literal()
+    if (campaignHook != null) __obj.updateDynamic("campaignHook")(campaignHook.asInstanceOf[js.Any])
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (quietTime != null) __obj.updateDynamic("quietTime")(quietTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppArgs]
+  }
+}
+

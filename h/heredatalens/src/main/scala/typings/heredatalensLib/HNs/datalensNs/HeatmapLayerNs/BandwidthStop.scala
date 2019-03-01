@@ -18,3 +18,12 @@ trait BandwidthStop extends js.Object {
   var zoomIncrementFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BandwidthStop {
+  @scala.inline
+  def apply(value: scala.Double, zoom: scala.Double, zoomIncrementFactor: scala.Int | scala.Double = null): BandwidthStop = {
+    val __obj = js.Dynamic.literal(value = value, zoom = zoom)
+    if (zoomIncrementFactor != null) __obj.updateDynamic("zoomIncrementFactor")(zoomIncrementFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BandwidthStop]
+  }
+}
+

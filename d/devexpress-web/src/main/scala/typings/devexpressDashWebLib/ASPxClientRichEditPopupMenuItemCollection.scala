@@ -50,3 +50,21 @@ trait ASPxClientRichEditPopupMenuItemCollection extends js.Object {
   def RemoveByName(name: java.lang.String): scala.Unit
 }
 
+object ASPxClientRichEditPopupMenuItemCollection {
+  @scala.inline
+  def apply(
+    Add: js.Function1[ASPxClientRichEditPopupMenuItem, scala.Unit],
+    Clear: js.Function0[scala.Unit],
+    Get: js.Function1[scala.Double, ASPxClientRichEditPopupMenuItem],
+    GetByName: js.Function1[java.lang.String, ASPxClientRichEditPopupMenuItem],
+    GetCount: js.Function0[scala.Double],
+    Insert: js.Function2[scala.Double, ASPxClientRichEditPopupMenuItem, scala.Unit],
+    Remove: js.Function1[scala.Double, scala.Unit],
+    RemoveByName: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientRichEditPopupMenuItemCollection = {
+    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Get = Get, GetByName = GetByName, GetCount = GetCount, Insert = Insert, Remove = Remove, RemoveByName = RemoveByName)
+  
+    __obj.asInstanceOf[ASPxClientRichEditPopupMenuItemCollection]
+  }
+}
+

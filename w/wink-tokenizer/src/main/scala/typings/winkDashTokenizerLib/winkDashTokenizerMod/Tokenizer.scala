@@ -33,3 +33,19 @@ trait Tokenizer extends js.Object {
   def tokenize(sentence: java.lang.String): js.Array[winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Token]
 }
 
+object Tokenizer {
+  @scala.inline
+  def apply(
+    defineConfig: js.Function1[winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Config, scala.Double],
+    getTokensFP: js.Function0[java.lang.String],
+    tokenize: js.Function1[
+      java.lang.String, 
+      js.Array[winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Token]
+    ]
+  ): Tokenizer = {
+    val __obj = js.Dynamic.literal(defineConfig = defineConfig, getTokensFP = getTokensFP, tokenize = tokenize)
+  
+    __obj.asInstanceOf[Tokenizer]
+  }
+}
+

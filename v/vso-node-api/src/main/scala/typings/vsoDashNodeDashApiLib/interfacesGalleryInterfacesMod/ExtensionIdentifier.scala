@@ -16,3 +16,12 @@ trait ExtensionIdentifier extends js.Object {
   var publisherName: java.lang.String
 }
 
+object ExtensionIdentifier {
+  @scala.inline
+  def apply(extensionName: java.lang.String, publisherName: java.lang.String): ExtensionIdentifier = {
+    val __obj = js.Dynamic.literal(extensionName = extensionName, publisherName = publisherName)
+  
+    __obj.asInstanceOf[ExtensionIdentifier]
+  }
+}
+

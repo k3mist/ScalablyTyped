@@ -47,3 +47,57 @@ trait IVaultObjectSearchOperations extends js.Object {
   ): IObjectSearchResults
 }
 
+object IVaultObjectSearchOperations {
+  @scala.inline
+  def apply(
+    FindFile: js.Function2[java.lang.String, scala.Boolean, IObjectFileAndVersion],
+    FindObjectVersionAndProperties: js.Function2[java.lang.String, scala.Boolean, IObjectVersionAndProperties],
+    GetFacetValues: js.Function4[
+      ISearchConditions, 
+      IExpressions, 
+      scala.Double, 
+      mfilesLib.MFilesNs.MFFacetSearchFlags, 
+      IStringData
+    ],
+    GetFacetValuesByPath: js.Function4[
+      java.lang.String, 
+      IExpressions, 
+      scala.Double, 
+      mfilesLib.MFilesNs.MFFacetSearchFlags, 
+      IStringData
+    ],
+    GetObjectCountInSearch: js.Function2[ISearchConditions, mfilesLib.MFilesNs.MFSearchFlags, scala.Double],
+    GetObjectsInPath: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, IObjectSearchResults],
+    GetSearchHits: js.Function2[java.lang.String, ISearchCondition, IStrings],
+    IsObjectPathInMFiles: js.Function1[java.lang.String, scala.Boolean],
+    SearchForObjectsByCondition: js.Function2[ISearchCondition, scala.Boolean, IObjectSearchResults],
+    SearchForObjectsByConditions: js.Function3[
+      ISearchConditions, 
+      mfilesLib.MFilesNs.MFSearchFlags, 
+      scala.Boolean, 
+      IObjectSearchResults
+    ],
+    SearchForObjectsByConditionsEx: js.Function5[
+      ISearchConditions, 
+      mfilesLib.MFilesNs.MFSearchFlags, 
+      scala.Boolean, 
+      scala.Double, 
+      scala.Double, 
+      IObjectSearchResults
+    ],
+    SearchForObjectsByConditionsXML: js.Function2[ISearchConditions, scala.Boolean, IXMLSearchResult],
+    SearchForObjectsByExportedSearchConditions: js.Function2[java.lang.String, scala.Boolean, IObjectSearchResults],
+    SearchForObjectsByExportedSearchConditionsXML: js.Function2[java.lang.String, scala.Boolean, IXMLSearchResult],
+    SearchForObjectsByString: js.Function3[
+      java.lang.String, 
+      scala.Boolean, 
+      mfilesLib.MFilesNs.MFFullTextSearchFlags, 
+      IObjectSearchResults
+    ]
+  ): IVaultObjectSearchOperations = {
+    val __obj = js.Dynamic.literal(FindFile = FindFile, FindObjectVersionAndProperties = FindObjectVersionAndProperties, GetFacetValues = GetFacetValues, GetFacetValuesByPath = GetFacetValuesByPath, GetObjectCountInSearch = GetObjectCountInSearch, GetObjectsInPath = GetObjectsInPath, GetSearchHits = GetSearchHits, IsObjectPathInMFiles = IsObjectPathInMFiles, SearchForObjectsByCondition = SearchForObjectsByCondition, SearchForObjectsByConditions = SearchForObjectsByConditions, SearchForObjectsByConditionsEx = SearchForObjectsByConditionsEx, SearchForObjectsByConditionsXML = SearchForObjectsByConditionsXML, SearchForObjectsByExportedSearchConditions = SearchForObjectsByExportedSearchConditions, SearchForObjectsByExportedSearchConditionsXML = SearchForObjectsByExportedSearchConditionsXML, SearchForObjectsByString = SearchForObjectsByString)
+  
+    __obj.asInstanceOf[IVaultObjectSearchOperations]
+  }
+}
+

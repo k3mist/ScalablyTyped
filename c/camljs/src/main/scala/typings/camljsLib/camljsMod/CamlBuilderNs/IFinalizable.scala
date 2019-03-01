@@ -10,3 +10,12 @@ trait IFinalizable extends IFinalizableToString {
   def ToCamlQuery(): js.Any
 }
 
+object IFinalizable {
+  @scala.inline
+  def apply(ToCamlQuery: js.Function0[js.Any], ToString: js.Function0[java.lang.String]): IFinalizable = {
+    val __obj = js.Dynamic.literal(ToCamlQuery = ToCamlQuery, ToString = ToString)
+  
+    __obj.asInstanceOf[IFinalizable]
+  }
+}
+

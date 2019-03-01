@@ -23,3 +23,12 @@ trait Option extends js.Object {
   var values: js.Array[OptionValue]
 }
 
+object Option {
+  @scala.inline
+  def apply(name: java.lang.String, selected: java.lang.String, values: js.Array[OptionValue]): Option = {
+    val __obj = js.Dynamic.literal(name = name, selected = selected, values = values)
+  
+    __obj.asInstanceOf[Option]
+  }
+}
+

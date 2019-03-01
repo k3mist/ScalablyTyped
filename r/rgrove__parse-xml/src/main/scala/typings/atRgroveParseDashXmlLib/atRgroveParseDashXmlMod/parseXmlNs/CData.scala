@@ -13,3 +13,16 @@ trait CData
   var type_CData: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.cdata
 }
 
+object CData {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.cdata,
+    parent: NodeBase = null
+  ): CData = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[CData]
+  }
+}
+

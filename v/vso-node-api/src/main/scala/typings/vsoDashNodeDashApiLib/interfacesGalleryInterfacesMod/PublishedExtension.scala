@@ -31,3 +31,30 @@ trait PublishedExtension extends js.Object {
   var versions: js.Array[ExtensionVersion]
 }
 
+object PublishedExtension {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    deploymentType: ExtensionDeploymentTechnology,
+    displayName: java.lang.String,
+    extensionId: java.lang.String,
+    extensionName: java.lang.String,
+    flags: PublishedExtensionFlags,
+    installationTargets: js.Array[InstallationTarget],
+    lastUpdated: stdLib.Date,
+    longDescription: java.lang.String,
+    publishedDate: stdLib.Date,
+    publisher: PublisherFacts,
+    releaseDate: stdLib.Date,
+    sharedWith: js.Array[ExtensionShare],
+    shortDescription: java.lang.String,
+    statistics: js.Array[ExtensionStatistic],
+    tags: js.Array[java.lang.String],
+    versions: js.Array[ExtensionVersion]
+  ): PublishedExtension = {
+    val __obj = js.Dynamic.literal(categories = categories, deploymentType = deploymentType, displayName = displayName, extensionId = extensionId, extensionName = extensionName, flags = flags, installationTargets = installationTargets, lastUpdated = lastUpdated, longDescription = longDescription, publishedDate = publishedDate, publisher = publisher, releaseDate = releaseDate, sharedWith = sharedWith, shortDescription = shortDescription, statistics = statistics, tags = tags, versions = versions)
+  
+    __obj.asInstanceOf[PublishedExtension]
+  }
+}
+

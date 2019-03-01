@@ -10,3 +10,12 @@ trait Anon_ColModel extends js.Object {
   var rowId: js.Any
 }
 
+object Anon_ColModel {
+  @scala.inline
+  def apply(colModel: js.Any, rowId: js.Any): Anon_ColModel = {
+    val __obj = js.Dynamic.literal(colModel = colModel, rowId = rowId)
+  
+    __obj.asInstanceOf[Anon_ColModel]
+  }
+}
+

@@ -26,3 +26,12 @@ trait ASPxClientDocumentPreviewTabPanel extends js.Object {
   var width: js.Any
 }
 
+object ASPxClientDocumentPreviewTabPanel {
+  @scala.inline
+  def apply(collapsed: js.Any, tabs: js.Array[ASPxClientDocumentPreviewTab], width: js.Any): ASPxClientDocumentPreviewTabPanel = {
+    val __obj = js.Dynamic.literal(collapsed = collapsed, tabs = tabs, width = width)
+  
+    __obj.asInstanceOf[ASPxClientDocumentPreviewTabPanel]
+  }
+}
+

@@ -21,3 +21,33 @@ trait WebpropertiesResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Webproperty]
 }
 
+object WebpropertiesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Webproperty]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Webproperty]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Webproperties]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Webproperty]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Webproperty]
+    ]
+  ): WebpropertiesResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[WebpropertiesResource]
+  }
+}
+

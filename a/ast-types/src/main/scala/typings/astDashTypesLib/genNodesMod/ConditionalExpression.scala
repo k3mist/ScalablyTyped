@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ConditionalExpression
 }
 
+object ConditionalExpression {
+  @scala.inline
+  def apply(
+    alternate: astDashTypesLib.genKindsMod.ExpressionKind,
+    consequent: astDashTypesLib.genKindsMod.ExpressionKind,
+    test: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ConditionalExpression
+  ): ConditionalExpression = {
+    val __obj = js.Dynamic.literal(alternate = alternate, consequent = consequent, test = test, `type` = `type`)
+  
+    __obj.asInstanceOf[ConditionalExpression]
+  }
+}
+

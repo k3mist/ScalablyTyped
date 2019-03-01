@@ -30,3 +30,16 @@ trait Shell extends js.Object {
   def showItemInFolder(file_path: java.lang.String): scala.Unit
 }
 
+object Shell {
+  @scala.inline
+  def apply(
+    openExternal: js.Function1[java.lang.String, scala.Unit],
+    openItem: js.Function1[java.lang.String, scala.Unit],
+    showItemInFolder: js.Function1[java.lang.String, scala.Unit]
+  ): Shell = {
+    val __obj = js.Dynamic.literal(openExternal = openExternal, openItem = openItem, showItemInFolder = showItemInFolder)
+  
+    __obj.asInstanceOf[Shell]
+  }
+}
+

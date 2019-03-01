@@ -56,3 +56,25 @@ trait GetSnapshotResult extends js.Object {
   val volumeSize: scala.Double
 }
 
+object GetSnapshotResult {
+  @scala.inline
+  def apply(
+    dataEncryptionKeyId: java.lang.String,
+    description: java.lang.String,
+    encrypted: scala.Boolean,
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    ownerAlias: java.lang.String,
+    ownerId: java.lang.String,
+    snapshotId: java.lang.String,
+    state: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    volumeId: java.lang.String,
+    volumeSize: scala.Double
+  ): GetSnapshotResult = {
+    val __obj = js.Dynamic.literal(dataEncryptionKeyId = dataEncryptionKeyId, description = description, encrypted = encrypted, id = id, kmsKeyId = kmsKeyId, ownerAlias = ownerAlias, ownerId = ownerId, snapshotId = snapshotId, state = state, tags = tags, volumeId = volumeId, volumeSize = volumeSize)
+  
+    __obj.asInstanceOf[GetSnapshotResult]
+  }
+}
+

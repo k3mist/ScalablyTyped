@@ -12,3 +12,17 @@ trait ChannelOpenFailureInfo extends js.Object {
   var recipient: scala.Double
 }
 
+object ChannelOpenFailureInfo {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    reason: java.lang.String,
+    reasonCode: scala.Double,
+    recipient: scala.Double
+  ): ChannelOpenFailureInfo = {
+    val __obj = js.Dynamic.literal(description = description, reason = reason, reasonCode = reasonCode, recipient = recipient)
+  
+    __obj.asInstanceOf[ChannelOpenFailureInfo]
+  }
+}
+

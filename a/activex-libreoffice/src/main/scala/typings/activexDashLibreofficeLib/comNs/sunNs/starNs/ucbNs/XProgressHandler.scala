@@ -23,3 +23,19 @@ trait XProgressHandler
   def update(Status: js.Any): scala.Unit
 }
 
+object XProgressHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    pop: js.Function0[scala.Unit],
+    push: js.Function1[js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    update: js.Function1[js.Any, scala.Unit]
+  ): XProgressHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, pop = pop, push = push, queryInterface = queryInterface, release = release, update = update)
+  
+    __obj.asInstanceOf[XProgressHandler]
+  }
+}
+

@@ -24,3 +24,16 @@ trait ChatStateUpdate
   var state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType
 }
 
+object ChatStateUpdate {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType,
+    resource: java.lang.String = null
+  ): ChatStateUpdate = {
+    val __obj = js.Dynamic.literal(id = id, state = state)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[ChatStateUpdate]
+  }
+}
+

@@ -17,3 +17,21 @@ trait IEditActorCellContext extends js.Object {
   def SetCurrentValue(value: js.Any): scala.Unit
 }
 
+object IEditActorCellContext {
+  @scala.inline
+  def apply(
+    SetCurrentValue: js.Function1[js.Any, scala.Unit],
+    cellExpandSpace: sharepointLib.Anon_Bottom,
+    column: ColumnInfo,
+    field: GridField,
+    fieldKey: java.lang.String,
+    originalValue: IValue,
+    propType: IPropertyType,
+    record: IRecord
+  ): IEditActorCellContext = {
+    val __obj = js.Dynamic.literal(SetCurrentValue = SetCurrentValue, cellExpandSpace = cellExpandSpace, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
+  
+    __obj.asInstanceOf[IEditActorCellContext]
+  }
+}
+

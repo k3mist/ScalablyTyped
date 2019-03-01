@@ -35,3 +35,25 @@ trait XSidebarProvider
   def showDecks(bVisible: scala.Boolean): scala.Unit
 }
 
+object XSidebarProvider {
+  @scala.inline
+  def apply(
+    Decks: XDecks,
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    Sidebar: XSidebar,
+    acquire: js.Function0[scala.Unit],
+    getDecks: js.Function0[XDecks],
+    getFrame: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame],
+    getSidebar: js.Function0[XSidebar],
+    isVisible: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setVisible: js.Function1[scala.Boolean, scala.Unit],
+    showDecks: js.Function1[scala.Boolean, scala.Unit]
+  ): XSidebarProvider = {
+    val __obj = js.Dynamic.literal(Decks = Decks, Frame = Frame, Sidebar = Sidebar, acquire = acquire, getDecks = getDecks, getFrame = getFrame, getSidebar = getSidebar, isVisible = isVisible, queryInterface = queryInterface, release = release, setVisible = setVisible, showDecks = showDecks)
+  
+    __obj.asInstanceOf[XSidebarProvider]
+  }
+}
+

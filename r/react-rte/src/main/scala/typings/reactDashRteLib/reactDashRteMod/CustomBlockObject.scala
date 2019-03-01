@@ -10,3 +10,13 @@ trait CustomBlockObject extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomBlockObject {
+  @scala.inline
+  def apply(data: js.Object = null, `type`: java.lang.String = null): CustomBlockObject = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CustomBlockObject]
+  }
+}
+

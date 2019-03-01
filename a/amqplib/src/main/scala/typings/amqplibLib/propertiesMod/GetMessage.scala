@@ -10,3 +10,12 @@ trait GetMessage extends Message {
   var fields_GetMessage: GetMessageFields
 }
 
+object GetMessage {
+  @scala.inline
+  def apply(content: nodeLib.Buffer, fields: GetMessageFields, properties: MessageProperties): GetMessage = {
+    val __obj = js.Dynamic.literal(content = content, fields = fields, properties = properties)
+  
+    __obj.asInstanceOf[GetMessage]
+  }
+}
+

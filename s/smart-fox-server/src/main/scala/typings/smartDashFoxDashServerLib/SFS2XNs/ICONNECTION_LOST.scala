@@ -9,3 +9,12 @@ trait ICONNECTION_LOST extends js.Object {
   var reason: java.lang.String
 }
 
+object ICONNECTION_LOST {
+  @scala.inline
+  def apply(reason: java.lang.String): ICONNECTION_LOST = {
+    val __obj = js.Dynamic.literal(reason = reason)
+  
+    __obj.asInstanceOf[ICONNECTION_LOST]
+  }
+}
+

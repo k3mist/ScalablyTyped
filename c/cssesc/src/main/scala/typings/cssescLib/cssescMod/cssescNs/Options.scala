@@ -12,3 +12,17 @@ trait Options extends js.Object {
   var wrap: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    escapeEverything: scala.Boolean,
+    isIdentifier: scala.Boolean,
+    quotes: java.lang.String,
+    wrap: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal(escapeEverything = escapeEverything, isIdentifier = isIdentifier, quotes = quotes, wrap = wrap)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

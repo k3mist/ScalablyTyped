@@ -10,3 +10,12 @@ trait Anon_CancelCommand extends js.Object {
   val Command: js.Any
 }
 
+object Anon_CancelCommand {
+  @scala.inline
+  def apply(Cancel: js.Any, Command: js.Any): Anon_CancelCommand = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Command = Command)
+  
+    __obj.asInstanceOf[Anon_CancelCommand]
+  }
+}
+

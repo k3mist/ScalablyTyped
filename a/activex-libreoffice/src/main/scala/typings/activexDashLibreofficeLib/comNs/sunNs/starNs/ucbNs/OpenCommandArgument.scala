@@ -34,3 +34,17 @@ trait OpenCommandArgument extends js.Object {
   var Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object OpenCommandArgument {
+  @scala.inline
+  def apply(
+    Mode: scala.Double,
+    Priority: scala.Double,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): OpenCommandArgument = {
+    val __obj = js.Dynamic.literal(Mode = Mode, Priority = Priority, Properties = Properties, Sink = Sink)
+  
+    __obj.asInstanceOf[OpenCommandArgument]
+  }
+}
+

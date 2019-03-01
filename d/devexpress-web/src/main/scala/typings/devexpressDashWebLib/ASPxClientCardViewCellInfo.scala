@@ -21,3 +21,12 @@ trait ASPxClientCardViewCellInfo extends js.Object {
   var column: ASPxClientCardViewColumn
 }
 
+object ASPxClientCardViewCellInfo {
+  @scala.inline
+  def apply(cardVisibleIndex: scala.Double, column: ASPxClientCardViewColumn): ASPxClientCardViewCellInfo = {
+    val __obj = js.Dynamic.literal(cardVisibleIndex = cardVisibleIndex, column = column)
+  
+    __obj.asInstanceOf[ASPxClientCardViewCellInfo]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_Auto extends js.Object {
   var touchAction: reactDashPointableLib.reactDashPointableLibStrings.auto
 }
 
+object Anon_Auto {
+  @scala.inline
+  def apply(
+    tagName: reactDashPointableLib.reactDashPointableLibStrings.div,
+    touchAction: reactDashPointableLib.reactDashPointableLibStrings.auto
+  ): Anon_Auto = {
+    val __obj = js.Dynamic.literal(tagName = tagName, touchAction = touchAction)
+  
+    __obj.asInstanceOf[Anon_Auto]
+  }
+}
+

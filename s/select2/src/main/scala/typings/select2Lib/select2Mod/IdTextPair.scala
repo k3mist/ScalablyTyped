@@ -12,3 +12,18 @@ trait IdTextPair extends js.Object {
   var text: java.lang.String
 }
 
+object IdTextPair {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    text: java.lang.String,
+    element: js.UndefOr[scala.Nothing] = js.undefined,
+    loading: js.UndefOr[scala.Nothing] = js.undefined
+  ): IdTextPair = {
+    val __obj = js.Dynamic.literal(id = id, text = text)
+    if (!js.isUndefined(element)) __obj.updateDynamic("element")(element)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    __obj.asInstanceOf[IdTextPair]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientRichEditPointerUpEventArgs extends ASPxClientEventArgs {
   var htmlEvent: js.Object
 }
 
+object ASPxClientRichEditPointerUpEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, htmlEvent: js.Object): ASPxClientRichEditPointerUpEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent)
+  
+    __obj.asInstanceOf[ASPxClientRichEditPointerUpEventArgs]
+  }
+}
+

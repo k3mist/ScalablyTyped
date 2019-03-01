@@ -98,3 +98,37 @@ trait XConversionDictionary
   def setActive(bActivate: scala.Boolean): scala.Unit
 }
 
+object XConversionDictionary {
+  @scala.inline
+  def apply(
+    ConversionType: scala.Double,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEntry: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    getConversionEntries: js.Function1[ConversionDirection, activexDashInteropLib.SafeArray[java.lang.String]],
+    getConversionType: js.Function0[scala.Double],
+    getConversions: js.Function5[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      ConversionDirection, 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getMaxCharCount: js.Function1[ConversionDirection, scala.Double],
+    getName: js.Function0[java.lang.String],
+    isActive: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEntry: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setActive: js.Function1[scala.Boolean, scala.Unit]
+  ): XConversionDictionary = {
+    val __obj = js.Dynamic.literal(ConversionType = ConversionType, Locale = Locale, Name = Name, acquire = acquire, addEntry = addEntry, clear = clear, getConversionEntries = getConversionEntries, getConversionType = getConversionType, getConversions = getConversions, getLocale = getLocale, getMaxCharCount = getMaxCharCount, getName = getName, isActive = isActive, queryInterface = queryInterface, release = release, removeEntry = removeEntry, setActive = setActive)
+  
+    __obj.asInstanceOf[XConversionDictionary]
+  }
+}
+

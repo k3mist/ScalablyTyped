@@ -21,3 +21,17 @@ trait CharacterStyle extends StyleBase {
   var parent: CharacterStyle
 }
 
+object CharacterStyle {
+  @scala.inline
+  def apply(
+    isDeleted: scala.Boolean,
+    linkedStyle: ParagraphStyle,
+    name: java.lang.String,
+    parent: CharacterStyle
+  ): CharacterStyle = {
+    val __obj = js.Dynamic.literal(isDeleted = isDeleted, linkedStyle = linkedStyle, name = name, parent = parent)
+  
+    __obj.asInstanceOf[CharacterStyle]
+  }
+}
+

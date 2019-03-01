@@ -49,3 +49,49 @@ trait JSONSchemaProps extends js.Object {
   val uniqueItems: scala.Boolean
 }
 
+object JSONSchemaProps {
+  @scala.inline
+  def apply(
+    $ref: java.lang.String,
+    $schema: java.lang.String,
+    additionalItems: JSONSchemaProps | scala.Boolean,
+    additionalProperties: JSONSchemaProps | scala.Boolean,
+    allOf: js.Array[JSONSchemaProps],
+    anyOf: js.Array[JSONSchemaProps],
+    default: js.Any,
+    definitions: js.Object,
+    dependencies: js.Object,
+    description: java.lang.String,
+    enum: js.Array[_],
+    example: js.Any,
+    exclusiveMaximum: scala.Boolean,
+    exclusiveMinimum: scala.Boolean,
+    externalDocs: ExternalDocumentation,
+    format: java.lang.String,
+    id: java.lang.String,
+    items: JSONSchemaProps | js.Array[_],
+    maxItems: scala.Double,
+    maxLength: scala.Double,
+    maxProperties: scala.Double,
+    maximum: scala.Double,
+    minItems: scala.Double,
+    minLength: scala.Double,
+    minProperties: scala.Double,
+    minimum: scala.Double,
+    multipleOf: scala.Double,
+    not: JSONSchemaProps,
+    oneOf: js.Array[JSONSchemaProps],
+    pattern: java.lang.String,
+    patternProperties: js.Object,
+    properties: js.Object,
+    required: js.Array[java.lang.String],
+    title: java.lang.String,
+    `type`: java.lang.String,
+    uniqueItems: scala.Boolean
+  ): JSONSchemaProps = {
+    val __obj = js.Dynamic.literal($ref = $ref, $schema = $schema, additionalItems = additionalItems.asInstanceOf[js.Any], additionalProperties = additionalProperties.asInstanceOf[js.Any], allOf = allOf, anyOf = anyOf, default = default, definitions = definitions, dependencies = dependencies, description = description, enum = enum, example = example, exclusiveMaximum = exclusiveMaximum, exclusiveMinimum = exclusiveMinimum, externalDocs = externalDocs, format = format, id = id, items = items.asInstanceOf[js.Any], maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, oneOf = oneOf, pattern = pattern, patternProperties = patternProperties, properties = properties, required = required, title = title, `type` = `type`, uniqueItems = uniqueItems)
+  
+    __obj.asInstanceOf[JSONSchemaProps]
+  }
+}
+

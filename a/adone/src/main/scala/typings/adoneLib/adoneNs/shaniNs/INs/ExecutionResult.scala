@@ -16,3 +16,12 @@ trait ExecutionResult extends js.Object {
   var err: js.Any
 }
 
+object ExecutionResult {
+  @scala.inline
+  def apply(elapsed: scala.Double, err: js.Any): ExecutionResult = {
+    val __obj = js.Dynamic.literal(elapsed = elapsed, err = err)
+  
+    __obj.asInstanceOf[ExecutionResult]
+  }
+}
+

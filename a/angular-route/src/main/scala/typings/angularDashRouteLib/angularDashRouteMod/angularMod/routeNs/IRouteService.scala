@@ -26,3 +26,17 @@ trait IRouteService extends js.Object {
   def updateParams(newParams: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit
 }
 
+object IRouteService {
+  @scala.inline
+  def apply(
+    reload: js.Function0[scala.Unit],
+    routes: js.Any,
+    updateParams: js.Function1[org.scalablytyped.runtime.StringDictionary[java.lang.String], scala.Unit],
+    current: ICurrentRoute = null
+  ): IRouteService = {
+    val __obj = js.Dynamic.literal(reload = reload, routes = routes, updateParams = updateParams)
+    if (current != null) __obj.updateDynamic("current")(current)
+    __obj.asInstanceOf[IRouteService]
+  }
+}
+

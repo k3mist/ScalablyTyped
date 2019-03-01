@@ -25,3 +25,19 @@ trait IPrintOptionDetails extends js.Object {
   def trySetValue(value: js.Any): scala.Boolean
 }
 
+object IPrintOptionDetails {
+  @scala.inline
+  def apply(
+    errorText: java.lang.String,
+    optionId: java.lang.String,
+    optionType: PrintOptionType,
+    state: PrintOptionStates,
+    trySetValue: js.Function1[js.Any, scala.Boolean],
+    value: js.Any
+  ): IPrintOptionDetails = {
+    val __obj = js.Dynamic.literal(errorText = errorText, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
+    __obj.asInstanceOf[IPrintOptionDetails]
+  }
+}
+

@@ -32,3 +32,19 @@ trait ToastrResponse extends js.Object {
   var toastId: scala.Double
 }
 
+object ToastrResponse {
+  @scala.inline
+  def apply(
+    map: ToastMap,
+    options: ToastrOptions,
+    startTime: stdLib.Date,
+    state: toastrLib.toastrLibStrings.visible | toastrLib.toastrLibStrings.hidden,
+    toastId: scala.Double,
+    endTime: stdLib.Date = null
+  ): ToastrResponse = {
+    val __obj = js.Dynamic.literal(map = map, options = options, startTime = startTime, state = state.asInstanceOf[js.Any], toastId = toastId)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    __obj.asInstanceOf[ToastrResponse]
+  }
+}
+

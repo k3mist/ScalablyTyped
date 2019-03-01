@@ -16,3 +16,24 @@ trait Room extends Default {
   var sub: scala.Double
 }
 
+object Room {
+  @scala.inline
+  def apply(
+    avatarID: java.lang.String,
+    badge: java.lang.String,
+    gRole: scala.Double,
+    id: scala.Double,
+    joined: java.lang.String,
+    language: java.lang.String,
+    level: scala.Double,
+    role: scala.Double,
+    slug: java.lang.String,
+    sub: scala.Double,
+    username: java.lang.String
+  ): Room = {
+    val __obj = js.Dynamic.literal(avatarID = avatarID, badge = badge, gRole = gRole, id = id, joined = joined, language = language, level = level, role = role, slug = slug, sub = sub, username = username)
+  
+    __obj.asInstanceOf[Room]
+  }
+}
+

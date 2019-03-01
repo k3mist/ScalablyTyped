@@ -21,3 +21,20 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSConstructorType
 }
 
+object TSConstructorType {
+  @scala.inline
+  def apply(
+    parameters: js.Array[
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSConstructorType,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSConstructorType = {
+    val __obj = js.Dynamic.literal(parameters = parameters, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSConstructorType]
+  }
+}
+

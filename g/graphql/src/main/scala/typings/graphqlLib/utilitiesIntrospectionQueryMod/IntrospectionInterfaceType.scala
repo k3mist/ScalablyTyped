@@ -15,3 +15,18 @@ trait IntrospectionInterfaceType
   val possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]]
 }
 
+object IntrospectionInterfaceType {
+  @scala.inline
+  def apply(
+    fields: js.Array[IntrospectionField],
+    kind: graphqlLib.graphqlLibStrings.INTERFACE,
+    name: java.lang.String,
+    possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): IntrospectionInterfaceType = {
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name, possibleTypes = possibleTypes)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionInterfaceType]
+  }
+}
+

@@ -22,3 +22,18 @@ trait XDrop
   def dropByName(elementName: java.lang.String): scala.Unit
 }
 
+object XDrop {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dropByIndex: js.Function1[scala.Double, scala.Unit],
+    dropByName: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDrop = {
+    val __obj = js.Dynamic.literal(acquire = acquire, dropByIndex = dropByIndex, dropByName = dropByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDrop]
+  }
+}
+

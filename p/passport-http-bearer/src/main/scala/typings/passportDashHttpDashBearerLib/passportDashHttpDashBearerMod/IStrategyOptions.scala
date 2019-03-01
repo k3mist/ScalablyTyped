@@ -11,3 +11,16 @@ trait IStrategyOptions extends js.Object {
   var scope: java.lang.String | js.Array[java.lang.String]
 }
 
+object IStrategyOptions {
+  @scala.inline
+  def apply(
+    passReqToCallback: scala.Boolean,
+    realm: java.lang.String,
+    scope: java.lang.String | js.Array[java.lang.String]
+  ): IStrategyOptions = {
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback, realm = realm, scope = scope.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IStrategyOptions]
+  }
+}
+

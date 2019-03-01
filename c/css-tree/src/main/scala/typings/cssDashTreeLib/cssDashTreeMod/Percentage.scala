@@ -14,3 +14,16 @@ trait Percentage
   var value: java.lang.String
 }
 
+object Percentage {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Percentage,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): Percentage = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Percentage]
+  }
+}
+

@@ -22,3 +22,23 @@ trait XDataExporter
   ): scala.Unit
 }
 
+object XDataExporter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    exportData: js.Function3[
+      XOutputStream, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
+      XDataTransferEventListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataExporter = {
+    val __obj = js.Dynamic.literal(acquire = acquire, cancel = cancel, exportData = exportData, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDataExporter]
+  }
+}
+

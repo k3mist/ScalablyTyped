@@ -23,3 +23,12 @@ trait TextStyleWeightedFontFamily extends js.Object {
   var weight: scala.Double
 }
 
+object TextStyleWeightedFontFamily {
+  @scala.inline
+  def apply(font_family: java.lang.String, weight: scala.Double): TextStyleWeightedFontFamily = {
+    val __obj = js.Dynamic.literal(font_family = font_family, weight = weight)
+  
+    __obj.asInstanceOf[TextStyleWeightedFontFamily]
+  }
+}
+

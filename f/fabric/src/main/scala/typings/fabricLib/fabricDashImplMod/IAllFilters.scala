@@ -29,3 +29,31 @@ trait IAllFilters extends js.Object {
   var Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
 }
 
+object IAllFilters {
+  @scala.inline
+  def apply(
+    BaseFilter: fabricLib.Anon_Options,
+    BlendColor: fabricLib.Anon_FromObject,
+    BlendImage: fabricLib.Anon_FromObjectObject,
+    Brightness: fabricLib.Anon_FromObjectObjectOptions,
+    ColorMatrix: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix,
+    Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrixOpaque,
+    GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold,
+    Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny,
+    Invert: fabricLib.Anon_FromObjectObjectOptionsAnyIInvertFilter,
+    Mask: fabricLib.Anon_FromObjectObjectOptionsAnonChannel,
+    Multiply: fabricLib.Anon_FromObjectObjectOptionsAnonColor,
+    Noise: fabricLib.Anon_FromObjectObjectOptionsAnonNoise,
+    Pixelate: fabricLib.Anon_FromObjectObjectOptionsAnonBlocksize,
+    RemoveWhite: fabricLib.Anon_FromObjectObjectOptionsAnonDistance,
+    Resize: fabricLib.Anon_FromObjectObjectOptionsAnyIResizeFilter,
+    Sepia: fabricLib.Anon_FromObjectObjectOptionsAnyISepiaFilter,
+    Sepia2: fabricLib.Anon_FromObjectObjectOptionsAnyISepia2Filter,
+    Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
+  ): IAllFilters = {
+    val __obj = js.Dynamic.literal(BaseFilter = BaseFilter, BlendColor = BlendColor, BlendImage = BlendImage, Brightness = Brightness, ColorMatrix = ColorMatrix, Convolute = Convolute, GradientTransparency = GradientTransparency, Grayscale = Grayscale, Invert = Invert, Mask = Mask, Multiply = Multiply, Noise = Noise, Pixelate = Pixelate, RemoveWhite = RemoveWhite, Resize = Resize, Sepia = Sepia, Sepia2 = Sepia2, Tint = Tint)
+  
+    __obj.asInstanceOf[IAllFilters]
+  }
+}
+

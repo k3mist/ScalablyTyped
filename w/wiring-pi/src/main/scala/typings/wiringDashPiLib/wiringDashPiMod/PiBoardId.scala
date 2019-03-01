@@ -13,3 +13,18 @@ trait PiBoardId extends js.Object {
   var rev: scala.Double
 }
 
+object PiBoardId {
+  @scala.inline
+  def apply(
+    maker: scala.Double,
+    mem: scala.Double,
+    model: scala.Double,
+    overvolted: scala.Double,
+    rev: scala.Double
+  ): PiBoardId = {
+    val __obj = js.Dynamic.literal(maker = maker, mem = mem, model = model, overvolted = overvolted, rev = rev)
+  
+    __obj.asInstanceOf[PiBoardId]
+  }
+}
+

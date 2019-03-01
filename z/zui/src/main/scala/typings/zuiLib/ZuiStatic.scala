@@ -16,3 +16,20 @@ trait ZuiStatic extends js.Object {
   var store: StoreStatic
 }
 
+object ZuiStatic {
+  @scala.inline
+  def apply(
+    Color: ColorStatic,
+    Messager: MessagerStatic,
+    ModalTrigger: ModalTriggerStatic,
+    colorset: ColorSet,
+    messager: Messager,
+    modalTrigger: ModalTrigger,
+    store: StoreStatic
+  ): ZuiStatic = {
+    val __obj = js.Dynamic.literal(Color = Color, Messager = Messager, ModalTrigger = ModalTrigger, colorset = colorset, messager = messager, modalTrigger = modalTrigger, store = store)
+  
+    __obj.asInstanceOf[ZuiStatic]
+  }
+}
+

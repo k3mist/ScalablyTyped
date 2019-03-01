@@ -13,3 +13,17 @@ trait ModuleAppendPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object ModuleAppendPlugin {
+  @scala.inline
+  def apply(
+    appending: java.lang.String,
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    source: java.lang.String,
+    target: java.lang.String
+  ): ModuleAppendPlugin = {
+    val __obj = js.Dynamic.literal(appending = appending, apply = apply, source = source, target = target)
+  
+    __obj.asInstanceOf[ModuleAppendPlugin]
+  }
+}
+

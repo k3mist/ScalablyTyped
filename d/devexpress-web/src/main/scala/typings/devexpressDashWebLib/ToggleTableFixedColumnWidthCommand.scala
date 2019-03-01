@@ -15,3 +15,12 @@ trait ToggleTableFixedColumnWidthCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object ToggleTableFixedColumnWidthCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): ToggleTableFixedColumnWidthCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ToggleTableFixedColumnWidthCommand]
+  }
+}
+

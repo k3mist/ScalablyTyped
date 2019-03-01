@@ -32,3 +32,38 @@ trait FileUpload extends js.Object {
   def setWidth(width: java.lang.String): FileUpload
 }
 
+object FileUpload {
+  @scala.inline
+  def apply(
+    addChangeHandler: js.Function1[Handler, FileUpload],
+    addStyleDependentName: js.Function1[java.lang.String, FileUpload],
+    addStyleName: js.Function1[java.lang.String, FileUpload],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setEnabled: js.Function1[scala.Boolean, FileUpload],
+    setHeight: js.Function1[java.lang.String, FileUpload],
+    setId: js.Function1[java.lang.String, FileUpload],
+    setLayoutData: js.Function1[js.Object, FileUpload],
+    setName: js.Function1[java.lang.String, FileUpload],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      FileUpload
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, FileUpload],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, FileUpload],
+    setStyleAttributes: js.Function1[js.Object, FileUpload],
+    setStyleName: js.Function1[java.lang.String, FileUpload],
+    setStylePrimaryName: js.Function1[java.lang.String, FileUpload],
+    setTag: js.Function1[java.lang.String, FileUpload],
+    setTitle: js.Function1[java.lang.String, FileUpload],
+    setVisible: js.Function1[scala.Boolean, FileUpload],
+    setWidth: js.Function1[java.lang.String, FileUpload]
+  ): FileUpload = {
+    val __obj = js.Dynamic.literal(addChangeHandler = addChangeHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setEnabled = setEnabled, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
+    __obj.asInstanceOf[FileUpload]
+  }
+}
+

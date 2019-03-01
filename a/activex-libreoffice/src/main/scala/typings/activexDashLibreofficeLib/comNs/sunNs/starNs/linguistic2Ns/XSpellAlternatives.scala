@@ -42,3 +42,26 @@ trait XSpellAlternatives
   def getWord(): java.lang.String
 }
 
+object XSpellAlternatives {
+  @scala.inline
+  def apply(
+    Alternatives: activexDashInteropLib.SafeArray[java.lang.String],
+    AlternativesCount: scala.Double,
+    FailureType: scala.Double,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Word: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAlternatives: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getAlternativesCount: js.Function0[scala.Double],
+    getFailureType: js.Function0[scala.Double],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getWord: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSpellAlternatives = {
+    val __obj = js.Dynamic.literal(Alternatives = Alternatives, AlternativesCount = AlternativesCount, FailureType = FailureType, Locale = Locale, Word = Word, acquire = acquire, getAlternatives = getAlternatives, getAlternativesCount = getAlternativesCount, getFailureType = getFailureType, getLocale = getLocale, getWord = getWord, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSpellAlternatives]
+  }
+}
+

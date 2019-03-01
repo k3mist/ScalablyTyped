@@ -111,3 +111,33 @@ trait Step
   var stepType: StepType
 }
 
+object Step {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    assignedType: java.lang.String,
+    async: scala.Boolean,
+    autoRun: scala.Boolean,
+    canSkip: scala.Boolean,
+    canSpawnConcurrency: scala.Boolean,
+    commonId: scala.Double,
+    constructor: js.Function,
+    defaultPercentComplete: scala.Double,
+    hasBeenExecuted: scala.Boolean,
+    hasBeenStarted: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    name: java.lang.String,
+    notificationType: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    selfCheck: scala.Boolean,
+    statusId: scala.Double,
+    stepPercentComplete: scala.Double,
+    stepType: StepType
+  ): Step = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, async = async, autoRun = autoRun, canSkip = canSkip, canSpawnConcurrency = canSpawnConcurrency, commonId = commonId, constructor = constructor, defaultPercentComplete = defaultPercentComplete, hasBeenExecuted = hasBeenExecuted, hasBeenStarted = hasBeenStarted, hasOwnProperty = hasOwnProperty, id = id, name = name, notificationType = notificationType, propertyIsEnumerable = propertyIsEnumerable, selfCheck = selfCheck, statusId = statusId, stepPercentComplete = stepPercentComplete, stepType = stepType)
+  
+    __obj.asInstanceOf[Step]
+  }
+}
+

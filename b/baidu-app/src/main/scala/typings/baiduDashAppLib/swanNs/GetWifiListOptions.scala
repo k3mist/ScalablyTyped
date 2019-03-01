@@ -10,3 +10,12 @@ trait GetWifiListOptions extends js.Object {
   var wifiList: js.Array[WiFi]
 }
 
+object GetWifiListOptions {
+  @scala.inline
+  def apply(wifiList: js.Array[WiFi]): GetWifiListOptions = {
+    val __obj = js.Dynamic.literal(wifiList = wifiList)
+  
+    __obj.asInstanceOf[GetWifiListOptions]
+  }
+}
+

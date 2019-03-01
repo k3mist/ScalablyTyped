@@ -182,3 +182,30 @@ trait DataAccessDescriptor extends js.Object {
   var Selection: activexDashInteropLib.SafeArray[_]
 }
 
+object DataAccessDescriptor {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    BookmarkSelection: scala.Boolean,
+    Column: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ColumnName: java.lang.String,
+    Command: java.lang.String,
+    CommandType: scala.Double,
+    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectionResource: java.lang.String,
+    DataSourceName: java.lang.String,
+    DatabaseLocation: java.lang.String,
+    EscapeProcessing: scala.Boolean,
+    Filter: java.lang.String,
+    GroupBy: java.lang.String,
+    HavingClause: java.lang.String,
+    Order: java.lang.String,
+    ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    Selection: activexDashInteropLib.SafeArray[_]
+  ): DataAccessDescriptor = {
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, BookmarkSelection = BookmarkSelection, Column = Column, ColumnName = ColumnName, Command = Command, CommandType = CommandType, ConnectionInfo = ConnectionInfo, ConnectionResource = ConnectionResource, DataSourceName = DataSourceName, DatabaseLocation = DatabaseLocation, EscapeProcessing = EscapeProcessing, Filter = Filter, GroupBy = GroupBy, HavingClause = HavingClause, Order = Order, ResultSet = ResultSet, Selection = Selection)
+  
+    __obj.asInstanceOf[DataAccessDescriptor]
+  }
+}
+

@@ -19,3 +19,19 @@ trait XArrayFormulaRange
   def setArrayFormula(aFormula: java.lang.String): scala.Unit
 }
 
+object XArrayFormulaRange {
+  @scala.inline
+  def apply(
+    ArrayFormula: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getArrayFormula: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setArrayFormula: js.Function1[java.lang.String, scala.Unit]
+  ): XArrayFormulaRange = {
+    val __obj = js.Dynamic.literal(ArrayFormula = ArrayFormula, acquire = acquire, getArrayFormula = getArrayFormula, queryInterface = queryInterface, release = release, setArrayFormula = setArrayFormula)
+  
+    __obj.asInstanceOf[XArrayFormulaRange]
+  }
+}
+

@@ -12,3 +12,17 @@ trait CacheDidUpdatePluginContext extends js.Object {
   val request: stdLib.Request
 }
 
+object CacheDidUpdatePluginContext {
+  @scala.inline
+  def apply(
+    cacheName: java.lang.String,
+    newResponse: stdLib.Response,
+    oldResponse: stdLib.Response,
+    request: stdLib.Request
+  ): CacheDidUpdatePluginContext = {
+    val __obj = js.Dynamic.literal(cacheName = cacheName, newResponse = newResponse, oldResponse = oldResponse, request = request)
+  
+    __obj.asInstanceOf[CacheDidUpdatePluginContext]
+  }
+}
+

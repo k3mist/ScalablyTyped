@@ -23,3 +23,27 @@ trait IObservable extends IDepTreeNode {
   def onBecomeUnobserved(): scala.Unit
 }
 
+object IObservable {
+  @scala.inline
+  def apply(
+    diffValue: scala.Double,
+    isBeingObserved: scala.Boolean,
+    isPendingUnobservation: scala.Boolean,
+    lastAccessedBy: scala.Double,
+    lowestObserverState: mobxLib.libCoreDerivationMod.IDerivationState,
+    name: java.lang.String,
+    observers: stdLib.Set[mobxLib.libCoreDerivationMod.IDerivation],
+    onBecomeObserved: js.Function0[scala.Unit],
+    onBecomeUnobserved: js.Function0[scala.Unit],
+    observing: js.Array[IObservable] = null,
+    onBecomeObservedListeners: stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda] = null,
+    onBecomeUnobservedListeners: stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda] = null
+  ): IObservable = {
+    val __obj = js.Dynamic.literal(diffValue = diffValue, isBeingObserved = isBeingObserved, isPendingUnobservation = isPendingUnobservation, lastAccessedBy = lastAccessedBy, lowestObserverState = lowestObserverState, name = name, observers = observers, onBecomeObserved = onBecomeObserved, onBecomeUnobserved = onBecomeUnobserved)
+    if (observing != null) __obj.updateDynamic("observing")(observing)
+    if (onBecomeObservedListeners != null) __obj.updateDynamic("onBecomeObservedListeners")(onBecomeObservedListeners)
+    if (onBecomeUnobservedListeners != null) __obj.updateDynamic("onBecomeUnobservedListeners")(onBecomeUnobservedListeners)
+    __obj.asInstanceOf[IObservable]
+  }
+}
+

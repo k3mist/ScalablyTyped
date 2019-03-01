@@ -13,3 +13,18 @@ trait MailComposerOptions extends js.Object {
   var keepBcc: scala.Boolean
 }
 
+object MailComposerOptions {
+  @scala.inline
+  def apply(
+    charset: java.lang.String,
+    encoding: java.lang.String,
+    escapeSMTP: scala.Boolean,
+    forceEmbeddedImages: scala.Boolean,
+    keepBcc: scala.Boolean
+  ): MailComposerOptions = {
+    val __obj = js.Dynamic.literal(charset = charset, encoding = encoding, escapeSMTP = escapeSMTP, forceEmbeddedImages = forceEmbeddedImages, keepBcc = keepBcc)
+  
+    __obj.asInstanceOf[MailComposerOptions]
+  }
+}
+

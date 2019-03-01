@@ -14,3 +14,19 @@ trait Anon_Bindingsversion extends js.Object {
   var uname: java.lang.String
 }
 
+object Anon_Bindingsversion {
+  @scala.inline
+  def apply(
+    bindings_version: java.lang.String,
+    lang: java.lang.String,
+    lang_version: java.lang.String,
+    platform: java.lang.String,
+    publisher: java.lang.String,
+    uname: java.lang.String
+  ): Anon_Bindingsversion = {
+    val __obj = js.Dynamic.literal(bindings_version = bindings_version, lang = lang, lang_version = lang_version, platform = platform, publisher = publisher, uname = uname)
+  
+    __obj.asInstanceOf[Anon_Bindingsversion]
+  }
+}
+

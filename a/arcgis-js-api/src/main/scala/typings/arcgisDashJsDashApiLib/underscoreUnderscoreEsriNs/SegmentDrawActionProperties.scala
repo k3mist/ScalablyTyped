@@ -22,3 +22,13 @@ trait SegmentDrawActionProperties extends DrawActionProperties {
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SegmentDrawActionProperties {
+  @scala.inline
+  def apply(mode: java.lang.String = null, view: MapViewProperties = null): SegmentDrawActionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[SegmentDrawActionProperties]
+  }
+}
+

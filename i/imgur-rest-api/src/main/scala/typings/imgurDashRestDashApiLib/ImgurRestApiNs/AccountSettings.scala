@@ -18,3 +18,22 @@ trait AccountSettings extends js.Object {
   var public_images: scala.Boolean
 }
 
+object AccountSettings {
+  @scala.inline
+  def apply(
+    accepted_gallery_terms: scala.Boolean,
+    active_emails: js.Array[java.lang.String],
+    album_privacy: java.lang.String,
+    blocked_users: js.Array[BlockedUser],
+    email: java.lang.String,
+    high_quality: scala.Boolean,
+    messaging_enabled: scala.Boolean,
+    pro_expiration: js.Any,
+    public_images: scala.Boolean
+  ): AccountSettings = {
+    val __obj = js.Dynamic.literal(accepted_gallery_terms = accepted_gallery_terms, active_emails = active_emails, album_privacy = album_privacy, blocked_users = blocked_users, email = email, high_quality = high_quality, messaging_enabled = messaging_enabled, pro_expiration = pro_expiration, public_images = public_images)
+  
+    __obj.asInstanceOf[AccountSettings]
+  }
+}
+

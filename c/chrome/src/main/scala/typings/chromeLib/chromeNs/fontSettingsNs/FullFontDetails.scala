@@ -16,3 +16,17 @@ trait FullFontDetails extends js.Object {
   var script: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FullFontDetails {
+  @scala.inline
+  def apply(
+    fontId: java.lang.String,
+    genericFamily: java.lang.String,
+    levelOfControl: java.lang.String,
+    script: java.lang.String = null
+  ): FullFontDetails = {
+    val __obj = js.Dynamic.literal(fontId = fontId, genericFamily = genericFamily, levelOfControl = levelOfControl)
+    if (script != null) __obj.updateDynamic("script")(script)
+    __obj.asInstanceOf[FullFontDetails]
+  }
+}
+

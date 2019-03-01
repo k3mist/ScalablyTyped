@@ -126,3 +126,45 @@ trait Card extends js.Object {
   var tokenization_method: stripejsLib.stripejsLibStrings.apple_pay | stripejsLib.stripejsLibStrings.android_pay
 }
 
+object Card {
+  @scala.inline
+  def apply(
+    address_city: java.lang.String,
+    address_country: java.lang.String,
+    address_line1: java.lang.String,
+    address_line1_check: checkStatus,
+    address_line2: java.lang.String,
+    address_state: java.lang.String,
+    address_zip: java.lang.String,
+    address_zip_check: checkStatus,
+    available_payout_methods: js.Array[stripejsLib.stripejsLibStrings.standard] | (js.Tuple2[stripejsLib.stripejsLibStrings.standard, stripejsLib.stripejsLibStrings.instant]),
+    brand: (stripejsLib.stripejsLibStrings.`American Express`) | (stripejsLib.stripejsLibStrings.`Diners Club`) | stripejsLib.stripejsLibStrings.Discover | stripejsLib.stripejsLibStrings.JCB | stripejsLib.stripejsLibStrings.MasterCard | stripejsLib.stripejsLibStrings.UnionPay | stripejsLib.stripejsLibStrings.Visa | stripejsLib.stripejsLibStrings.Unknown,
+    country: java.lang.String,
+    cvc_check: checkStatus,
+    dynamic_last4: java.lang.String,
+    exp_month: scala.Double,
+    exp_year: scala.Double,
+    fingerprint: java.lang.String,
+    funding: stripejsLib.stripejsLibStrings.credit | stripejsLib.stripejsLibStrings.debit | stripejsLib.stripejsLibStrings.prepaid | stripejsLib.stripejsLibStrings.unknown,
+    id: java.lang.String,
+    last4: java.lang.String,
+    metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    name: java.lang.String,
+    `object`: stripejsLib.stripejsLibStrings.card,
+    tokenization_method: stripejsLib.stripejsLibStrings.apple_pay | stripejsLib.stripejsLibStrings.android_pay,
+    account: java.lang.String = null,
+    currency: java.lang.String = null,
+    customer: js.Any = null,
+    default_for_currency: js.UndefOr[scala.Boolean] = js.undefined,
+    recipient: java.lang.String = null
+  ): Card = {
+    val __obj = js.Dynamic.literal(address_city = address_city, address_country = address_country, address_line1 = address_line1, address_line1_check = address_line1_check, address_line2 = address_line2, address_state = address_state, address_zip = address_zip, address_zip_check = address_zip_check, available_payout_methods = available_payout_methods.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], country = country, cvc_check = cvc_check, dynamic_last4 = dynamic_last4, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding.asInstanceOf[js.Any], id = id, last4 = last4, metadata = metadata, name = name, `object` = `object`, tokenization_method = tokenization_method.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
+    __obj.asInstanceOf[Card]
+  }
+}
+

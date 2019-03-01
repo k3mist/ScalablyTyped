@@ -50,3 +50,26 @@ trait KMLSublayerProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KMLSublayerProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    layer: KMLLayerProperties = null,
+    networkLink: js.Any = null,
+    sublayers: CollectionProperties[KMLSublayerProperties] = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): KMLSublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (networkLink != null) __obj.updateDynamic("networkLink")(networkLink)
+    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[KMLSublayerProperties]
+  }
+}
+

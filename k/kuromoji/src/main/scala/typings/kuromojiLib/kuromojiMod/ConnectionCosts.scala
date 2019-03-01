@@ -12,3 +12,17 @@ trait ConnectionCosts extends js.Object {
   def put(forward_id: scala.Double, backward_id: scala.Double, cost: scala.Double): scala.Unit
 }
 
+object ConnectionCosts {
+  @scala.inline
+  def apply(
+    buffer: stdLib.Int16Array,
+    get: js.Function2[scala.Double, scala.Double, scala.Double],
+    loadConnectionCosts: js.Function1[stdLib.Int16Array, scala.Unit],
+    put: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
+  ): ConnectionCosts = {
+    val __obj = js.Dynamic.literal(buffer = buffer, get = get, loadConnectionCosts = loadConnectionCosts, put = put)
+  
+    __obj.asInstanceOf[ConnectionCosts]
+  }
+}
+

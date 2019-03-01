@@ -34,3 +34,26 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
   var viewModel: js.UndefOr[DistanceMeasurement2DViewModel] = js.undefined
 }
 
+object DistanceMeasurement2DProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    unit: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.metric | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.imperial | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`us-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers = null,
+    unitOptions: js.Array[java.lang.String] = null,
+    view: MapViewProperties = null,
+    viewModel: DistanceMeasurement2DViewModel = null
+  ): DistanceMeasurement2DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[DistanceMeasurement2DProperties]
+  }
+}
+

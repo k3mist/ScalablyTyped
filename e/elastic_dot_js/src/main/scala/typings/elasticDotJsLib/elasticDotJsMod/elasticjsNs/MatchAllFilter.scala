@@ -28,3 +28,18 @@ trait MatchAllFilter extends Filter {
   def toJSON(): MatchAllFilter
 }
 
+object MatchAllFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, MatchAllFilter],
+    cacheKey: js.Function1[java.lang.String, MatchAllFilter],
+    name: js.Function1[java.lang.String, MatchAllFilter],
+    toJSON: js.Function0[MatchAllFilter]
+  ): MatchAllFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON)
+  
+    __obj.asInstanceOf[MatchAllFilter]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_ColumnFilenameLinenoNodesPredicate extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_ColumnFilenameLinenoNodesPredicate {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.QueryExpr],
+    predicate: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_ColumnFilenameLinenoNodesPredicate = {
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, nodes = nodes, predicate = predicate, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ColumnFilenameLinenoNodesPredicate]
+  }
+}
+

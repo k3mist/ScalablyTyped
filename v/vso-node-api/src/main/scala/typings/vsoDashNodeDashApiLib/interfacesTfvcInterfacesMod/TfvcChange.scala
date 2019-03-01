@@ -16,3 +16,20 @@ trait TfvcChange extends Change[TfvcItem] {
   var pendingVersion: scala.Double
 }
 
+object TfvcChange {
+  @scala.inline
+  def apply(
+    changeType: VersionControlChangeType,
+    item: TfvcItem,
+    mergeSources: js.Array[TfvcMergeSource],
+    newContent: ItemContent,
+    pendingVersion: scala.Double,
+    sourceServerItem: java.lang.String,
+    url: java.lang.String
+  ): TfvcChange = {
+    val __obj = js.Dynamic.literal(changeType = changeType, item = item, mergeSources = mergeSources, newContent = newContent, pendingVersion = pendingVersion, sourceServerItem = sourceServerItem, url = url)
+  
+    __obj.asInstanceOf[TfvcChange]
+  }
+}
+

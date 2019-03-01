@@ -30,3 +30,21 @@ trait NavigationTransitionProps extends js.Object {
   var screenProps: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object NavigationTransitionProps {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    layout: NavigationLayout,
+    navigation: NavigationScreenProp[NavigationState, NavigationParams],
+    position: AnimatedValue,
+    progress: AnimatedValue,
+    scene: NavigationScene,
+    scenes: js.Array[NavigationScene],
+    screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): NavigationTransitionProps = {
+    val __obj = js.Dynamic.literal(index = index, layout = layout, navigation = navigation, position = position, progress = progress, scene = scene, scenes = scenes)
+    if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
+    __obj.asInstanceOf[NavigationTransitionProps]
+  }
+}
+

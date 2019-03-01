@@ -9,3 +9,12 @@ trait Anon_TargetArnInput extends js.Object {
   var targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_TargetArnInput {
+  @scala.inline
+  def apply(targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): Anon_TargetArnInput = {
+    val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_TargetArnInput]
+  }
+}
+

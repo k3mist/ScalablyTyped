@@ -145,3 +145,36 @@ trait XSQLOutput
   def writeTimestamp(x: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime): scala.Unit
 }
 
+object XSQLOutput {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeArray: js.Function1[XArray, scala.Unit],
+    writeBinaryStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
+    writeBlob: js.Function1[XBlob, scala.Unit],
+    writeBoolean: js.Function1[scala.Boolean, scala.Unit],
+    writeByte: js.Function1[scala.Double, scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    writeCharacterStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
+    writeClob: js.Function1[XClob, scala.Unit],
+    writeDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    writeDouble: js.Function1[scala.Double, scala.Unit],
+    writeFloat: js.Function1[scala.Double, scala.Unit],
+    writeInt: js.Function1[scala.Double, scala.Unit],
+    writeLong: js.Function1[scala.Double, scala.Unit],
+    writeObject: js.Function1[XSQLData, scala.Unit],
+    writeRef: js.Function1[XRef, scala.Unit],
+    writeShort: js.Function1[scala.Double, scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit],
+    writeStruct: js.Function1[XStruct, scala.Unit],
+    writeTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    writeTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
+  ): XSQLOutput = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, writeArray = writeArray, writeBinaryStream = writeBinaryStream, writeBlob = writeBlob, writeBoolean = writeBoolean, writeByte = writeByte, writeBytes = writeBytes, writeCharacterStream = writeCharacterStream, writeClob = writeClob, writeDate = writeDate, writeDouble = writeDouble, writeFloat = writeFloat, writeInt = writeInt, writeLong = writeLong, writeObject = writeObject, writeRef = writeRef, writeShort = writeShort, writeString = writeString, writeStruct = writeStruct, writeTime = writeTime, writeTimestamp = writeTimestamp)
+  
+    __obj.asInstanceOf[XSQLOutput]
+  }
+}
+

@@ -20,3 +20,16 @@ trait AssertionsResult extends js.Object {
   def message(): java.lang.String
 }
 
+object AssertionsResult {
+  @scala.inline
+  def apply(
+    actual: js.Array[axeDashCoreLib.axeDashCoreMod.axeNs.Result],
+    message: js.Function0[java.lang.String],
+    pass: scala.Boolean
+  ): AssertionsResult = {
+    val __obj = js.Dynamic.literal(actual = actual, message = message, pass = pass)
+  
+    __obj.asInstanceOf[AssertionsResult]
+  }
+}
+

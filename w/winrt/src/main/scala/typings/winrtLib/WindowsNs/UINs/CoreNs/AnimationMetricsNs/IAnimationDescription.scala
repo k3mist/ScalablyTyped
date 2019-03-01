@@ -13,3 +13,18 @@ trait IAnimationDescription extends js.Object {
   var zOrder: scala.Double
 }
 
+object IAnimationDescription {
+  @scala.inline
+  def apply(
+    animations: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IPropertyAnimation],
+    delayLimit: scala.Double,
+    staggerDelay: scala.Double,
+    staggerDelayFactor: scala.Double,
+    zOrder: scala.Double
+  ): IAnimationDescription = {
+    val __obj = js.Dynamic.literal(animations = animations, delayLimit = delayLimit, staggerDelay = staggerDelay, staggerDelayFactor = staggerDelayFactor, zOrder = zOrder)
+  
+    __obj.asInstanceOf[IAnimationDescription]
+  }
+}
+

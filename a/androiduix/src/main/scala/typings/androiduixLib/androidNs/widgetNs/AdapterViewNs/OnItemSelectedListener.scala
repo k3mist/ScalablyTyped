@@ -15,3 +15,21 @@ trait OnItemSelectedListener extends js.Object {
   def onNothingSelected(parent: androiduixLib.androidNs.widgetNs.AdapterView[_]): scala.Unit
 }
 
+object OnItemSelectedListener {
+  @scala.inline
+  def apply(
+    onItemSelected: js.Function4[
+      androiduixLib.androidNs.widgetNs.AdapterView[_], 
+      androiduixLib.androidNs.viewNs.View, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    onNothingSelected: js.Function1[androiduixLib.androidNs.widgetNs.AdapterView[_], scala.Unit]
+  ): OnItemSelectedListener = {
+    val __obj = js.Dynamic.literal(onItemSelected = onItemSelected, onNothingSelected = onNothingSelected)
+  
+    __obj.asInstanceOf[OnItemSelectedListener]
+  }
+}
+

@@ -43,3 +43,18 @@ trait VolumeAttachment extends js.Object {
   val status: VolumeAttachmentStatus
 }
 
+object VolumeAttachment {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: VolumeAttachmentSpec,
+    status: VolumeAttachmentStatus
+  ): VolumeAttachment = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
+    __obj.asInstanceOf[VolumeAttachment]
+  }
+}
+

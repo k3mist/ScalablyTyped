@@ -24,3 +24,12 @@ trait RoadmapItem extends js.Object {
   var Label: java.lang.String
 }
 
+object RoadmapItem {
+  @scala.inline
+  def apply(Enabled: scala.Boolean, ID: scala.Double, Interactive: scala.Boolean, Label: java.lang.String): RoadmapItem = {
+    val __obj = js.Dynamic.literal(Enabled = Enabled, ID = ID, Interactive = Interactive, Label = Label)
+  
+    __obj.asInstanceOf[RoadmapItem]
+  }
+}
+

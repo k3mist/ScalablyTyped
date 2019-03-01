@@ -13,3 +13,18 @@ trait IBackgroundTaskRegistration extends js.Object {
   def unregister(cancelTask: scala.Boolean): scala.Unit
 }
 
+object IBackgroundTaskRegistration {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    oncompleted: js.Any,
+    onprogress: js.Any,
+    taskId: java.lang.String,
+    unregister: js.Function1[scala.Boolean, scala.Unit]
+  ): IBackgroundTaskRegistration = {
+    val __obj = js.Dynamic.literal(name = name, oncompleted = oncompleted, onprogress = onprogress, taskId = taskId, unregister = unregister)
+  
+    __obj.asInstanceOf[IBackgroundTaskRegistration]
+  }
+}
+

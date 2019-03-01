@@ -36,3 +36,20 @@ trait Order extends js.Object {
   var Type: VOrderType
 }
 
+object Order {
+  @scala.inline
+  def apply(
+    Amount: scala.Double,
+    DealAmount: scala.Double,
+    Id: java.lang.String,
+    Price: scala.Double,
+    Status: VOrderState,
+    Time: scala.Double,
+    Type: VOrderType
+  ): Order = {
+    val __obj = js.Dynamic.literal(Amount = Amount, DealAmount = DealAmount, Id = Id, Price = Price, Status = Status, Time = Time, Type = Type)
+  
+    __obj.asInstanceOf[Order]
+  }
+}
+

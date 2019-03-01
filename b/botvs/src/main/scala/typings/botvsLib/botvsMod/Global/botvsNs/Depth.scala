@@ -20,3 +20,12 @@ trait Depth extends js.Object {
   var Time: scala.Double
 }
 
+object Depth {
+  @scala.inline
+  def apply(Asks: js.Array[MarketOrder], Bids: js.Array[MarketOrder], Time: scala.Double): Depth = {
+    val __obj = js.Dynamic.literal(Asks = Asks, Bids = Bids, Time = Time)
+  
+    __obj.asInstanceOf[Depth]
+  }
+}
+

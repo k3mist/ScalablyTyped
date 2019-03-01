@@ -23,3 +23,18 @@ trait XGraphicObject
   var UniqueID: java.lang.String
 }
 
+object XGraphicObject {
+  @scala.inline
+  def apply(
+    Graphic: XGraphic,
+    UniqueID: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGraphicObject = {
+    val __obj = js.Dynamic.literal(Graphic = Graphic, UniqueID = UniqueID, acquire = acquire, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGraphicObject]
+  }
+}
+

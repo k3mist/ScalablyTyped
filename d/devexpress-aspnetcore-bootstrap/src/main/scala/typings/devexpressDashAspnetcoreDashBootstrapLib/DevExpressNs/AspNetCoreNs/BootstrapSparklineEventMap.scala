@@ -19,3 +19,23 @@ trait BootstrapSparklineEventMap extends ControlEventMap {
   var tooltipShown: BootstrapChartEventArgsBase
 }
 
+object BootstrapSparklineEventMap {
+  @scala.inline
+  def apply(
+    disposing: BootstrapChartEventArgsBase,
+    drawn: BootstrapChartEventArgsBase,
+    exported: BootstrapChartEventArgsBase,
+    exporting: BootstrapChartExportEventArgs,
+    fileSaving: BootstrapChartExportEventArgs,
+    incidentOccurred: BootstrapChartErrorEventArgs,
+    init: BootstrapChartEventArgsBase,
+    optionChanged: BootstrapChartOptionChangedEventArgs,
+    tooltipHidden: BootstrapChartEventArgsBase,
+    tooltipShown: BootstrapChartEventArgsBase
+  ): BootstrapSparklineEventMap = {
+    val __obj = js.Dynamic.literal(disposing = disposing, drawn = drawn, exported = exported, exporting = exporting, fileSaving = fileSaving, incidentOccurred = incidentOccurred, init = init, optionChanged = optionChanged, tooltipHidden = tooltipHidden, tooltipShown = tooltipShown)
+  
+    __obj.asInstanceOf[BootstrapSparklineEventMap]
+  }
+}
+

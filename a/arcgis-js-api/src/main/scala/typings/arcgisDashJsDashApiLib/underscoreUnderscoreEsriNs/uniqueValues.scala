@@ -30,3 +30,17 @@ trait uniqueValues extends js.Object {
   def uniqueValues(params: uniqueValuesUniqueValuesParams): arcgisDashJsDashApiLib.IPromise[UniqueValuesResult]
 }
 
+object uniqueValues {
+  @scala.inline
+  def apply(
+    uniqueValues: js.Function1[
+      uniqueValuesUniqueValuesParams, 
+      arcgisDashJsDashApiLib.IPromise[UniqueValuesResult]
+    ]
+  ): uniqueValues = {
+    val __obj = js.Dynamic.literal(uniqueValues = uniqueValues)
+  
+    __obj.asInstanceOf[uniqueValues]
+  }
+}
+

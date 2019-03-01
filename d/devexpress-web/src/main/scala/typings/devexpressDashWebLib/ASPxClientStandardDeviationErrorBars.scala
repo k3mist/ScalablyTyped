@@ -16,3 +16,17 @@ trait ASPxClientStandardDeviationErrorBars extends ASPxClientIndicator {
   var multiplier: scala.Double
 }
 
+object ASPxClientStandardDeviationErrorBars {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    multiplier: scala.Double,
+    name: java.lang.String,
+    series: ASPxClientSeries
+  ): ASPxClientStandardDeviationErrorBars = {
+    val __obj = js.Dynamic.literal(chart = chart, multiplier = multiplier, name = name, series = series)
+  
+    __obj.asInstanceOf[ASPxClientStandardDeviationErrorBars]
+  }
+}
+

@@ -11,3 +11,12 @@ trait EnhancedCustomShapeParameterPair extends js.Object {
   var Second: EnhancedCustomShapeParameter
 }
 
+object EnhancedCustomShapeParameterPair {
+  @scala.inline
+  def apply(First: EnhancedCustomShapeParameter, Second: EnhancedCustomShapeParameter): EnhancedCustomShapeParameterPair = {
+    val __obj = js.Dynamic.literal(First = First, Second = Second)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeParameterPair]
+  }
+}
+

@@ -11,3 +11,12 @@ trait UsersResource extends js.Object {
   var sessions: SessionsResource
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(dataSources: DataSourcesResource, dataset: DatasetResource, sessions: SessionsResource): UsersResource = {
+    val __obj = js.Dynamic.literal(dataSources = dataSources, dataset = dataset, sessions = sessions)
+  
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

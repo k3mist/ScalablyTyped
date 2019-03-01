@@ -42,3 +42,23 @@ trait BuildDefinitionStep extends js.Object {
   var timeoutInMinutes: scala.Double
 }
 
+object BuildDefinitionStep {
+  @scala.inline
+  def apply(
+    alwaysRun: scala.Boolean,
+    condition: java.lang.String,
+    continueOnError: scala.Boolean,
+    displayName: java.lang.String,
+    enabled: scala.Boolean,
+    environment: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    refName: java.lang.String,
+    task: TaskDefinitionReference,
+    timeoutInMinutes: scala.Double
+  ): BuildDefinitionStep = {
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, displayName = displayName, enabled = enabled, environment = environment, inputs = inputs, refName = refName, task = task, timeoutInMinutes = timeoutInMinutes)
+  
+    __obj.asInstanceOf[BuildDefinitionStep]
+  }
+}
+

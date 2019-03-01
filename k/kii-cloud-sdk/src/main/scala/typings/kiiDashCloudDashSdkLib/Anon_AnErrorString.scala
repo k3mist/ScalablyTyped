@@ -13,3 +13,15 @@ trait Anon_AnErrorString extends js.Object {
   ): js.Any
 }
 
+object Anon_AnErrorString {
+  @scala.inline
+  def apply(
+    failure: js.Function1[java.lang.String, js.Any],
+    success: js.Function2[js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic], java.lang.String, js.Any]
+  ): Anon_AnErrorString = {
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
+    __obj.asInstanceOf[Anon_AnErrorString]
+  }
+}
+

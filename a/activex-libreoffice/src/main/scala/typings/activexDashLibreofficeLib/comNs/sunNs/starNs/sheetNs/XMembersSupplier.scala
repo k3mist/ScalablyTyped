@@ -24,3 +24,18 @@ trait XMembersSupplier
   def getMembers(): XMembersAccess
 }
 
+object XMembersSupplier {
+  @scala.inline
+  def apply(
+    Members: XMembersAccess,
+    acquire: js.Function0[scala.Unit],
+    getMembers: js.Function0[XMembersAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMembersSupplier = {
+    val __obj = js.Dynamic.literal(Members = Members, acquire = acquire, getMembers = getMembers, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMembersSupplier]
+  }
+}
+

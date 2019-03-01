@@ -11,3 +11,12 @@ trait SaveResult extends js.Object {
   var keyMappings: js.Array[KeyMapping]
 }
 
+object SaveResult {
+  @scala.inline
+  def apply(XHR: stdLib.XMLHttpRequest, entities: js.Array[Entity], keyMappings: js.Array[KeyMapping]): SaveResult = {
+    val __obj = js.Dynamic.literal(XHR = XHR, entities = entities, keyMappings = keyMappings)
+  
+    __obj.asInstanceOf[SaveResult]
+  }
+}
+

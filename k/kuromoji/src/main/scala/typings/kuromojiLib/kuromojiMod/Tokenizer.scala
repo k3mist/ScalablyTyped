@@ -15,3 +15,20 @@ trait Tokenizer[T] extends js.Object {
   def tokenize(text: java.lang.String): js.Array[T]
 }
 
+object Tokenizer {
+  @scala.inline
+  def apply[T](
+    formatter: Formatter[T],
+    getLattice: js.Function1[java.lang.String, ViterbiLattice],
+    token_info_dictionary: TokenInfoDictionary,
+    tokenize: js.Function1[java.lang.String, js.Array[T]],
+    unknown_dictionary: UnknownDictionary,
+    viterbi_builder: ViterbiBuilder,
+    viterbi_searcher: ViterbiSearcher
+  ): Tokenizer[T] = {
+    val __obj = js.Dynamic.literal(formatter = formatter, getLattice = getLattice, token_info_dictionary = token_info_dictionary, tokenize = tokenize, unknown_dictionary = unknown_dictionary, viterbi_builder = viterbi_builder, viterbi_searcher = viterbi_searcher)
+  
+    __obj.asInstanceOf[Tokenizer[T]]
+  }
+}
+

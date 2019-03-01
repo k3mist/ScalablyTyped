@@ -34,3 +34,21 @@ trait PathFigure extends js.Object {
   def equalsApprox(f: PathFigure): scala.Boolean
 }
 
+object PathFigure {
+  @scala.inline
+  def apply(
+    add: js.Function1[PathSegment, PathFigure],
+    copy: js.Function0[PathFigure],
+    equalsApprox: js.Function1[PathFigure, scala.Boolean],
+    isFilled: scala.Boolean,
+    isShadowed: scala.Boolean,
+    segments: List[PathSegment],
+    startX: scala.Double,
+    startY: scala.Double
+  ): PathFigure = {
+    val __obj = js.Dynamic.literal(add = add, copy = copy, equalsApprox = equalsApprox, isFilled = isFilled, isShadowed = isShadowed, segments = segments, startX = startX, startY = startY)
+  
+    __obj.asInstanceOf[PathFigure]
+  }
+}
+

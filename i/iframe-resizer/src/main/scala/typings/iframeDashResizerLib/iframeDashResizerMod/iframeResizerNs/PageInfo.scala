@@ -40,3 +40,21 @@ trait PageInfo extends js.Object {
   var scrollTop: scala.Double
 }
 
+object PageInfo {
+  @scala.inline
+  def apply(
+    clientHeight: scala.Double,
+    clientWidth: scala.Double,
+    iframeHeight: scala.Double,
+    iframeWidth: scala.Double,
+    offsetLeft: scala.Double,
+    offsetTop: scala.Double,
+    scrollLeft: scala.Double,
+    scrollTop: scala.Double
+  ): PageInfo = {
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, iframeHeight = iframeHeight, iframeWidth = iframeWidth, offsetLeft = offsetLeft, offsetTop = offsetTop, scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
+    __obj.asInstanceOf[PageInfo]
+  }
+}
+

@@ -19,3 +19,24 @@ trait DockerVersion extends js.Object {
   var Version: java.lang.String
 }
 
+object DockerVersion {
+  @scala.inline
+  def apply(
+    ApiVersion: java.lang.String,
+    Arch: java.lang.String,
+    BuildTime: stdLib.Date,
+    Components: js.Array[dockerodeLib.Anon_Details],
+    GitCommit: java.lang.String,
+    GoVersion: java.lang.String,
+    KernelVersion: java.lang.String,
+    MinAPIVersion: java.lang.String,
+    Os: java.lang.String,
+    Platform: dockerodeLib.Anon_Name,
+    Version: java.lang.String
+  ): DockerVersion = {
+    val __obj = js.Dynamic.literal(ApiVersion = ApiVersion, Arch = Arch, BuildTime = BuildTime, Components = Components, GitCommit = GitCommit, GoVersion = GoVersion, KernelVersion = KernelVersion, MinAPIVersion = MinAPIVersion, Os = Os, Platform = Platform, Version = Version)
+  
+    __obj.asInstanceOf[DockerVersion]
+  }
+}
+

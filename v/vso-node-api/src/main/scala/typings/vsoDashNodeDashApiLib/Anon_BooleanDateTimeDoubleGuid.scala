@@ -22,3 +22,27 @@ trait Anon_BooleanDateTimeDoubleGuid extends js.Object {
   var treePath: scala.Double
 }
 
+object Anon_BooleanDateTimeDoubleGuid {
+  @scala.inline
+  def apply(
+    boolean: scala.Double,
+    dateTime: scala.Double,
+    double: scala.Double,
+    guid: scala.Double,
+    history: scala.Double,
+    html: scala.Double,
+    identity: scala.Double,
+    integer: scala.Double,
+    picklistDouble: scala.Double,
+    picklistInteger: scala.Double,
+    picklistString: scala.Double,
+    plainText: scala.Double,
+    string: scala.Double,
+    treePath: scala.Double
+  ): Anon_BooleanDateTimeDoubleGuid = {
+    val __obj = js.Dynamic.literal(boolean = boolean, dateTime = dateTime, double = double, guid = guid, history = history, html = html, identity = identity, integer = integer, picklistDouble = picklistDouble, picklistInteger = picklistInteger, picklistString = picklistString, plainText = plainText, string = string, treePath = treePath)
+  
+    __obj.asInstanceOf[Anon_BooleanDateTimeDoubleGuid]
+  }
+}
+

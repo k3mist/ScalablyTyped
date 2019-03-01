@@ -14,3 +14,13 @@ trait BookmarksViewModelProperties extends GoToProperties {
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 
+object BookmarksViewModelProperties {
+  @scala.inline
+  def apply(goToOverride: GoToOverride = null, view: MapViewProperties = null): BookmarksViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[BookmarksViewModelProperties]
+  }
+}
+

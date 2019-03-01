@@ -10,3 +10,12 @@ trait Anon_RoleAccess extends js.Object {
   var RoleAssignment: js.Any
 }
 
+object Anon_RoleAccess {
+  @scala.inline
+  def apply(RoleAccess: Anon_EnumValuesAnonAssigned, RoleAssignment: js.Any): Anon_RoleAccess = {
+    val __obj = js.Dynamic.literal(RoleAccess = RoleAccess, RoleAssignment = RoleAssignment)
+  
+    __obj.asInstanceOf[Anon_RoleAccess]
+  }
+}
+

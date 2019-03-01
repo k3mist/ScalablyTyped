@@ -19,3 +19,12 @@ trait IInternalTextureTracker extends js.Object {
   var previous: Nullable[IInternalTextureTracker]
 }
 
+object IInternalTextureTracker {
+  @scala.inline
+  def apply(next: Nullable[IInternalTextureTracker], previous: Nullable[IInternalTextureTracker]): IInternalTextureTracker = {
+    val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IInternalTextureTracker]
+  }
+}
+

@@ -16,3 +16,21 @@ trait ExtensionPayload extends js.Object {
   var `type`: ExtensionDeploymentTechnology
 }
 
+object ExtensionPayload {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    displayName: java.lang.String,
+    fileName: java.lang.String,
+    installationTargets: js.Array[InstallationTarget],
+    isSignedByMicrosoft: scala.Boolean,
+    isValid: scala.Boolean,
+    metadata: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString],
+    `type`: ExtensionDeploymentTechnology
+  ): ExtensionPayload = {
+    val __obj = js.Dynamic.literal(description = description, displayName = displayName, fileName = fileName, installationTargets = installationTargets, isSignedByMicrosoft = isSignedByMicrosoft, isValid = isValid, metadata = metadata, `type` = `type`)
+  
+    __obj.asInstanceOf[ExtensionPayload]
+  }
+}
+

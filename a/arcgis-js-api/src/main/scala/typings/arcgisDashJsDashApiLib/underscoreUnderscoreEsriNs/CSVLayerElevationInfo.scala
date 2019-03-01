@@ -41,3 +41,22 @@ trait CSVLayerElevationInfo
   var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CSVLayerElevationInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mode: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    featureExpressionInfo: CSVLayerElevationInfoFeatureExpressionInfo = null,
+    offset: scala.Int | scala.Double = null,
+    unit: java.lang.String = null
+  ): CSVLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, mode = mode, propertyIsEnumerable = propertyIsEnumerable)
+    if (featureExpressionInfo != null) __obj.updateDynamic("featureExpressionInfo")(featureExpressionInfo)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[CSVLayerElevationInfo]
+  }
+}
+

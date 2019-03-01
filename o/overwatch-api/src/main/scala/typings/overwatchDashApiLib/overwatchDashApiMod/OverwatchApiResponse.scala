@@ -12,3 +12,17 @@ trait OverwatchApiResponse extends js.Object {
   var username: java.lang.String
 }
 
+object OverwatchApiResponse {
+  @scala.inline
+  def apply(
+    level: scala.Double,
+    portrait: java.lang.String,
+    `private`: scala.Boolean,
+    username: java.lang.String
+  ): OverwatchApiResponse = {
+    val __obj = js.Dynamic.literal(level = level, portrait = portrait, `private` = `private`, username = username)
+  
+    __obj.asInstanceOf[OverwatchApiResponse]
+  }
+}
+

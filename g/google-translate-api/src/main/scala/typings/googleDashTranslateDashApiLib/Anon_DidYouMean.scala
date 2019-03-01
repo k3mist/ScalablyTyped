@@ -10,3 +10,12 @@ trait Anon_DidYouMean extends js.Object {
   var iso: java.lang.String
 }
 
+object Anon_DidYouMean {
+  @scala.inline
+  def apply(didYouMean: scala.Boolean, iso: java.lang.String): Anon_DidYouMean = {
+    val __obj = js.Dynamic.literal(didYouMean = didYouMean, iso = iso)
+  
+    __obj.asInstanceOf[Anon_DidYouMean]
+  }
+}
+

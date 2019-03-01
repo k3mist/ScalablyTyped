@@ -67,3 +67,26 @@ trait CallSite extends js.Object {
   def isToplevel(): scala.Boolean
 }
 
+object CallSite {
+  @scala.inline
+  def apply(
+    getColumnNumber: js.Function0[scala.Double | scala.Null],
+    getEvalOrigin: js.Function0[js.UndefOr[java.lang.String]],
+    getFileName: js.Function0[java.lang.String | scala.Null],
+    getFunction: js.Function0[js.UndefOr[js.Function]],
+    getFunctionName: js.Function0[java.lang.String | scala.Null],
+    getLineNumber: js.Function0[scala.Double | scala.Null],
+    getMethodName: js.Function0[java.lang.String | scala.Null],
+    getThis: js.Function0[js.Any],
+    getTypeName: js.Function0[java.lang.String | scala.Null],
+    isConstructor: js.Function0[scala.Boolean],
+    isEval: js.Function0[scala.Boolean],
+    isNative: js.Function0[scala.Boolean],
+    isToplevel: js.Function0[scala.Boolean]
+  ): CallSite = {
+    val __obj = js.Dynamic.literal(getColumnNumber = getColumnNumber, getEvalOrigin = getEvalOrigin, getFileName = getFileName, getFunction = getFunction, getFunctionName = getFunctionName, getLineNumber = getLineNumber, getMethodName = getMethodName, getThis = getThis, getTypeName = getTypeName, isConstructor = isConstructor, isEval = isEval, isNative = isNative, isToplevel = isToplevel)
+  
+    __obj.asInstanceOf[CallSite]
+  }
+}
+

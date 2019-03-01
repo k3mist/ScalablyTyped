@@ -18,3 +18,28 @@ trait CsvLogFormatter extends XCsvLogFormatter {
   def create(): scala.Unit
 }
 
+object CsvLogFormatter {
+  @scala.inline
+  def apply(
+    Columnnames: activexDashInteropLib.SafeArray[java.lang.String],
+    Head: java.lang.String,
+    LogEventNo: scala.Boolean,
+    LogSource: scala.Boolean,
+    LogThread: scala.Boolean,
+    LogTimestamp: scala.Boolean,
+    Tail: java.lang.String,
+    create: js.Function0[scala.Unit],
+    format: js.Function1[LogRecord, java.lang.String],
+    formatMultiColumn: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String
+    ],
+    getHead: js.Function0[java.lang.String],
+    getTail: js.Function0[java.lang.String]
+  ): CsvLogFormatter = {
+    val __obj = js.Dynamic.literal(Columnnames = Columnnames, Head = Head, LogEventNo = LogEventNo, LogSource = LogSource, LogThread = LogThread, LogTimestamp = LogTimestamp, Tail = Tail, create = create, format = format, formatMultiColumn = formatMultiColumn, getHead = getHead, getTail = getTail)
+  
+    __obj.asInstanceOf[CsvLogFormatter]
+  }
+}
+

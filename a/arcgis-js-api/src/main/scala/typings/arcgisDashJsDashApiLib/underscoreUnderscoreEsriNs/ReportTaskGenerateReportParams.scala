@@ -21,3 +21,18 @@ trait ReportTaskGenerateReportParams
   var user: java.lang.String
 }
 
+object ReportTaskGenerateReportParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    reportId: scala.Double,
+    user: java.lang.String
+  ): ReportTaskGenerateReportParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, reportId = reportId, user = user)
+  
+    __obj.asInstanceOf[ReportTaskGenerateReportParams]
+  }
+}
+

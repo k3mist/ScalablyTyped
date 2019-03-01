@@ -12,3 +12,12 @@ trait RoundTripTimeStatistics extends js.Object {
   var variance: scala.Double
 }
 
+object RoundTripTimeStatistics {
+  @scala.inline
+  def apply(max: scala.Double, min: scala.Double, sum: scala.Double, variance: scala.Double): RoundTripTimeStatistics = {
+    val __obj = js.Dynamic.literal(max = max, min = min, sum = sum, variance = variance)
+  
+    __obj.asInstanceOf[RoundTripTimeStatistics]
+  }
+}
+

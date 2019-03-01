@@ -89,3 +89,28 @@ trait DirectGenerator extends Generator {
   def toJSON(): js.Any
 }
 
+object DirectGenerator {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    accuracy: js.Function1[scala.Double, DirectGenerator],
+    field: js.Function1[java.lang.String, DirectGenerator],
+    maxEdits: js.Function1[scala.Double, DirectGenerator],
+    maxInspections: js.Function1[scala.Double, DirectGenerator],
+    maxTermFreq: js.Function1[scala.Double, DirectGenerator],
+    minDocFreq: js.Function1[scala.Double, DirectGenerator],
+    minWordLen: js.Function1[scala.Double, DirectGenerator],
+    postFilter: js.Function1[java.lang.String, DirectGenerator],
+    preFilter: js.Function1[java.lang.String, DirectGenerator],
+    size: js.Function1[scala.Double, DirectGenerator],
+    sort: js.Function1[java.lang.String, DirectGenerator],
+    stringDistance: js.Function1[java.lang.String, DirectGenerator],
+    suggestMode: js.Function1[java.lang.String, DirectGenerator],
+    toJSON: js.Function0[js.Any]
+  ): DirectGenerator = {
+    val __obj = js.Dynamic.literal(_type = _type, accuracy = accuracy, field = field, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, postFilter = postFilter, preFilter = preFilter, size = size, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode, toJSON = toJSON)
+  
+    __obj.asInstanceOf[DirectGenerator]
+  }
+}
+

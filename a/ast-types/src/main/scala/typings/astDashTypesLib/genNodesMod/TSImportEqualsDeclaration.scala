@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSImportEqualsDeclaration
 }
 
+object TSImportEqualsDeclaration {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    isExport: scala.Boolean,
+    moduleReference: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind | astDashTypesLib.genKindsMod.TSExternalModuleReferenceKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSImportEqualsDeclaration
+  ): TSImportEqualsDeclaration = {
+    val __obj = js.Dynamic.literal(id = id, isExport = isExport, moduleReference = moduleReference.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[TSImportEqualsDeclaration]
+  }
+}
+

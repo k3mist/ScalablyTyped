@@ -50,3 +50,36 @@ trait XMetricField
   def setValue(Value: scala.Double, FieldUnit: scala.Double): scala.Unit
 }
 
+object XMetricField {
+  @scala.inline
+  def apply(
+    DecimalDigits: scala.Double,
+    SpinSize: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getCorrectedValue: js.Function1[scala.Double, scala.Double],
+    getDecimalDigits: js.Function0[scala.Double],
+    getFirst: js.Function1[scala.Double, scala.Double],
+    getLast: js.Function1[scala.Double, scala.Double],
+    getMax: js.Function1[scala.Double, scala.Double],
+    getMin: js.Function1[scala.Double, scala.Double],
+    getSpinSize: js.Function0[scala.Double],
+    getValue: js.Function1[scala.Double, scala.Double],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDecimalDigits: js.Function1[scala.Double, scala.Unit],
+    setFirst: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setLast: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setMax: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setMin: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setSpinSize: js.Function1[scala.Double, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
+    setUserValue: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setValue: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XMetricField = {
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, SpinSize = SpinSize, acquire = acquire, getCorrectedValue = getCorrectedValue, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setUserValue = setUserValue, setValue = setValue)
+  
+    __obj.asInstanceOf[XMetricField]
+  }
+}
+

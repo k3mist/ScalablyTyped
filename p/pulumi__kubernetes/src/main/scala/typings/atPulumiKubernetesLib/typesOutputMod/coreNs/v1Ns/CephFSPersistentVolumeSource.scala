@@ -42,3 +42,19 @@ trait CephFSPersistentVolumeSource extends js.Object {
   val user: java.lang.String
 }
 
+object CephFSPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    monitors: js.Array[java.lang.String],
+    path: java.lang.String,
+    readOnly: scala.Boolean,
+    secretFile: java.lang.String,
+    secretRef: SecretReference,
+    user: java.lang.String
+  ): CephFSPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal(monitors = monitors, path = path, readOnly = readOnly, secretFile = secretFile, secretRef = secretRef, user = user)
+  
+    __obj.asInstanceOf[CephFSPersistentVolumeSource]
+  }
+}
+

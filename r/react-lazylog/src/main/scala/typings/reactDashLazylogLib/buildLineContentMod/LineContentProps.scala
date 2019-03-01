@@ -12,3 +12,18 @@ trait LineContentProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object LineContentProps {
+  @scala.inline
+  def apply(
+    data: js.Array[reactDashLazylogLib.Anon_Text],
+    number: scala.Double,
+    formatPart: js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): LineContentProps = {
+    val __obj = js.Dynamic.literal(data = data, number = number)
+    if (formatPart != null) __obj.updateDynamic("formatPart")(formatPart)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LineContentProps]
+  }
+}
+

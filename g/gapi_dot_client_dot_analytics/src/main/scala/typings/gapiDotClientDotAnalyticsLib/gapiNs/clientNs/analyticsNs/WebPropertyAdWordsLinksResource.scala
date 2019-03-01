@@ -28,3 +28,37 @@ trait WebPropertyAdWordsLinksResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLink]
 }
 
+object WebPropertyAdWordsLinksResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLink]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLink]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLinks]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLink]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntityAdWordsLink]
+    ]
+  ): WebPropertyAdWordsLinksResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[WebPropertyAdWordsLinksResource]
+  }
+}
+

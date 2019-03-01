@@ -32,3 +32,19 @@ trait Anon_CloseInsertModal extends js.Object {
   def showOnlyToogle(): scala.Unit
 }
 
+object Anon_CloseInsertModal {
+  @scala.inline
+  def apply(
+    closeInsertModal: js.Function0[scala.Unit],
+    dropRow: js.Function0[scala.Unit],
+    exportCSV: js.Function0[scala.Unit],
+    openInsertModal: js.Function0[scala.Unit],
+    search: js.Function0[scala.Unit],
+    showOnlyToogle: js.Function0[scala.Unit]
+  ): Anon_CloseInsertModal = {
+    val __obj = js.Dynamic.literal(closeInsertModal = closeInsertModal, dropRow = dropRow, exportCSV = exportCSV, openInsertModal = openInsertModal, search = search, showOnlyToogle = showOnlyToogle)
+  
+    __obj.asInstanceOf[Anon_CloseInsertModal]
+  }
+}
+

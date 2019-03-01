@@ -13,3 +13,18 @@ trait EncapsulatedContentInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object EncapsulatedContentInfo {
+  @scala.inline
+  def apply(
+    eContent: asn1jsLib.asn1jsMod.OctetString,
+    eContentType: java.lang.String,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): EncapsulatedContentInfo = {
+    val __obj = js.Dynamic.literal(eContent = eContent, eContentType = eContentType, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[EncapsulatedContentInfo]
+  }
+}
+

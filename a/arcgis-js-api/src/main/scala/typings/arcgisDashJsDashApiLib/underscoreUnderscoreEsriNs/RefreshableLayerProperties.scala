@@ -16,3 +16,12 @@ trait RefreshableLayerProperties extends js.Object {
   var refreshInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RefreshableLayerProperties {
+  @scala.inline
+  def apply(refreshInterval: scala.Int | scala.Double = null): RefreshableLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefreshableLayerProperties]
+  }
+}
+

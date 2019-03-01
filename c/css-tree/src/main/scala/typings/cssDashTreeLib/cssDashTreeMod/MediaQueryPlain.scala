@@ -13,3 +13,16 @@ trait MediaQueryPlain
   var type_MediaQueryPlain: cssDashTreeLib.cssDashTreeLibStrings.MediaQuery
 }
 
+object MediaQueryPlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.MediaQuery,
+    loc: CssLocation = null
+  ): MediaQueryPlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[MediaQueryPlain]
+  }
+}
+

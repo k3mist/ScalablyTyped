@@ -15,3 +15,20 @@ trait SpawnSyncReturns[T] extends js.Object {
   var stdout: T
 }
 
+object SpawnSyncReturns {
+  @scala.inline
+  def apply[T](
+    error: nodeLib.Error,
+    output: js.Array[java.lang.String],
+    pid: scala.Double,
+    signal: java.lang.String,
+    status: scala.Double,
+    stderr: T,
+    stdout: T
+  ): SpawnSyncReturns[T] = {
+    val __obj = js.Dynamic.literal(error = error, output = output, pid = pid, signal = signal, status = status, stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SpawnSyncReturns[T]]
+  }
+}
+

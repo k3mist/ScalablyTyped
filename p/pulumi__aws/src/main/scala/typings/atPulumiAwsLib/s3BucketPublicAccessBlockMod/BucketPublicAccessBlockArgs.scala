@@ -33,3 +33,21 @@ trait BucketPublicAccessBlockArgs extends js.Object {
   val restrictPublicBuckets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object BucketPublicAccessBlockArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    blockPublicAcls: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    blockPublicPolicy: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    ignorePublicAcls: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    restrictPublicBuckets: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): BucketPublicAccessBlockArgs = {
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
+    if (blockPublicAcls != null) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.asInstanceOf[js.Any])
+    if (blockPublicPolicy != null) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.asInstanceOf[js.Any])
+    if (ignorePublicAcls != null) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.asInstanceOf[js.Any])
+    if (restrictPublicBuckets != null) __obj.updateDynamic("restrictPublicBuckets")(restrictPublicBuckets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketPublicAccessBlockArgs]
+  }
+}
+

@@ -10,3 +10,12 @@ trait valid extends js.Object {
   var isValid: scala.Boolean
 }
 
+object valid {
+  @scala.inline
+  def apply(isPotentiallyValid: scala.Boolean, isValid: scala.Boolean): valid = {
+    val __obj = js.Dynamic.literal(isPotentiallyValid = isPotentiallyValid, isValid = isValid)
+  
+    __obj.asInstanceOf[valid]
+  }
+}
+

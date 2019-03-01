@@ -20,3 +20,12 @@ trait Anon_Error extends js.Object {
   var valid: scala.Boolean
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(error: java.lang.String, error_number: scala.Double, valid: scala.Boolean): Anon_Error = {
+    val __obj = js.Dynamic.literal(error = error, error_number = error_number, valid = valid)
+  
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

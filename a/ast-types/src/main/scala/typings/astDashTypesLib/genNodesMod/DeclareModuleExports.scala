@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
 }
 
+object DeclareModuleExports {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.DeclareModuleExports,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): DeclareModuleExports = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[DeclareModuleExports]
+  }
+}
+

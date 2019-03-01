@@ -48,3 +48,35 @@ trait XTimeField
   def setTime(Time: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time): scala.Unit
 }
 
+object XTimeField {
+  @scala.inline
+  def apply(
+    First: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    Last: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    Max: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    Min: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    Time: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    acquire: js.Function0[scala.Unit],
+    getFirst: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getLast: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getMax: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getMin: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getTime: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    isEmpty: js.Function0[scala.Boolean],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEmpty: js.Function0[scala.Unit],
+    setFirst: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    setLast: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    setMax: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    setMin: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
+    setTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit]
+  ): XTimeField = {
+    val __obj = js.Dynamic.literal(First = First, Last = Last, Max = Max, Min = Min, Time = Time, acquire = acquire, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getTime = getTime, isEmpty = isEmpty, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setEmpty = setEmpty, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setStrictFormat = setStrictFormat, setTime = setTime)
+  
+    __obj.asInstanceOf[XTimeField]
+  }
+}
+

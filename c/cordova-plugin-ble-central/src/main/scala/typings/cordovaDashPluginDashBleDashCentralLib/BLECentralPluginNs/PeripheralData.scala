@@ -12,3 +12,17 @@ trait PeripheralData extends js.Object {
   var rssi: scala.Double
 }
 
+object PeripheralData {
+  @scala.inline
+  def apply(
+    advertising: stdLib.ArrayBuffer | js.Any,
+    id: java.lang.String,
+    name: java.lang.String,
+    rssi: scala.Double
+  ): PeripheralData = {
+    val __obj = js.Dynamic.literal(advertising = advertising.asInstanceOf[js.Any], id = id, name = name, rssi = rssi)
+  
+    __obj.asInstanceOf[PeripheralData]
+  }
+}
+

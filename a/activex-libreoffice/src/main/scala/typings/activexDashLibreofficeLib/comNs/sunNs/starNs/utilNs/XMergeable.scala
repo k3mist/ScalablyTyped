@@ -16,3 +16,19 @@ trait XMergeable
   def merge(bMerge: scala.Boolean): scala.Unit
 }
 
+object XMergeable {
+  @scala.inline
+  def apply(
+    IsMerged: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    getIsMerged: js.Function0[scala.Boolean],
+    merge: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMergeable = {
+    val __obj = js.Dynamic.literal(IsMerged = IsMerged, acquire = acquire, getIsMerged = getIsMerged, merge = merge, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMergeable]
+  }
+}
+

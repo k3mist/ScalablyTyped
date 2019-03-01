@@ -29,3 +29,18 @@ trait XRestartManager
   def requestRestart(xInteractionHandler: XInteractionHandler): scala.Unit
 }
 
+object XRestartManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    isRestartRequested: js.Function1[scala.Boolean, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    requestRestart: js.Function1[XInteractionHandler, scala.Unit]
+  ): XRestartManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, isRestartRequested = isRestartRequested, queryInterface = queryInterface, release = release, requestRestart = requestRestart)
+  
+    __obj.asInstanceOf[XRestartManager]
+  }
+}
+

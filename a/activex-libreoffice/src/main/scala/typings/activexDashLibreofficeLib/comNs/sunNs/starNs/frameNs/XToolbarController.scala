@@ -38,3 +38,24 @@ trait XToolbarController
   def execute(KeyModifier: scala.Double): scala.Unit
 }
 
+object XToolbarController {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    click: js.Function0[scala.Unit],
+    createItemWindow: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
+    ],
+    createPopupWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
+    doubleClick: js.Function0[scala.Unit],
+    execute: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XToolbarController = {
+    val __obj = js.Dynamic.literal(acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, doubleClick = doubleClick, execute = execute, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XToolbarController]
+  }
+}
+

@@ -45,3 +45,27 @@ trait ISku
   var updated: scala.Double
 }
 
+object ISku {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    attributes: ISkuAttributes,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    image: java.lang.String,
+    inventory: IInventory,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.sku,
+    package_dimensions: stripeLib.stripeMod.StripeNs.productsNs.IPackageDimensions,
+    price: scala.Double,
+    product: java.lang.String | stripeLib.stripeMod.StripeNs.productsNs.IProduct,
+    updated: scala.Double
+  ): ISku = {
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, created = created, currency = currency, id = id, image = image, inventory = inventory, livemode = livemode, metadata = metadata, `object` = `object`, package_dimensions = package_dimensions, price = price, product = product.asInstanceOf[js.Any], updated = updated)
+  
+    __obj.asInstanceOf[ISku]
+  }
+}
+

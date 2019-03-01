@@ -14,3 +14,19 @@ trait MouseEvent extends js.Object {
   var webkitMovementY: scala.Double
 }
 
+object MouseEvent {
+  @scala.inline
+  def apply(
+    mozMovementX: scala.Double,
+    mozMovementY: scala.Double,
+    msMovementX: scala.Double,
+    msMovementY: scala.Double,
+    webkitMovementX: scala.Double,
+    webkitMovementY: scala.Double
+  ): MouseEvent = {
+    val __obj = js.Dynamic.literal(mozMovementX = mozMovementX, mozMovementY = mozMovementY, msMovementX = msMovementX, msMovementY = msMovementY, webkitMovementX = webkitMovementX, webkitMovementY = webkitMovementY)
+  
+    __obj.asInstanceOf[MouseEvent]
+  }
+}
+

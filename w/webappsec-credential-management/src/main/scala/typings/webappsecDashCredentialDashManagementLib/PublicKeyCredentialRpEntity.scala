@@ -13,3 +13,12 @@ trait PublicKeyCredentialRpEntity extends js.Object {
   var name: java.lang.String
 }
 
+object PublicKeyCredentialRpEntity {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String): PublicKeyCredentialRpEntity = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
+    __obj.asInstanceOf[PublicKeyCredentialRpEntity]
+  }
+}
+

@@ -12,3 +12,12 @@ trait HSLColor extends _Color {
   var s: scala.Double
 }
 
+object HSLColor {
+  @scala.inline
+  def apply(h: scala.Double, l: scala.Double, s: scala.Double, a: scala.Int | scala.Double = null): HSLColor = {
+    val __obj = js.Dynamic.literal(h = h, l = l, s = s)
+    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HSLColor]
+  }
+}
+

@@ -31,3 +31,17 @@ trait IKeepAliveService extends js.Object {
   def stop(): scala.Unit
 }
 
+object IKeepAliveService {
+  @scala.inline
+  def apply(
+    ping: js.Function0[scala.Unit],
+    setInterval: js.Function1[scala.Double, scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): IKeepAliveService = {
+    val __obj = js.Dynamic.literal(ping = ping, setInterval = setInterval, start = start, stop = stop)
+  
+    __obj.asInstanceOf[IKeepAliveService]
+  }
+}
+

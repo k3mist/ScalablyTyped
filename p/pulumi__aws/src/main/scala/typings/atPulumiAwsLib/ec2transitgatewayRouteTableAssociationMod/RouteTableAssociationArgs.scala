@@ -16,3 +16,15 @@ trait RouteTableAssociationArgs extends js.Object {
   val transitGatewayRouteTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RouteTableAssociationArgs {
+  @scala.inline
+  def apply(
+    transitGatewayAttachmentId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    transitGatewayRouteTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): RouteTableAssociationArgs = {
+    val __obj = js.Dynamic.literal(transitGatewayAttachmentId = transitGatewayAttachmentId.asInstanceOf[js.Any], transitGatewayRouteTableId = transitGatewayRouteTableId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RouteTableAssociationArgs]
+  }
+}
+

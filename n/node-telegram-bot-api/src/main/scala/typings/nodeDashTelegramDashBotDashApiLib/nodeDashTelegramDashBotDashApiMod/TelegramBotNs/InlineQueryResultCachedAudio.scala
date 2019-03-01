@@ -14,3 +14,21 @@ trait InlineQueryResultCachedAudio
   var `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.audio
 }
 
+object InlineQueryResultCachedAudio {
+  @scala.inline
+  def apply(
+    audio_file_id: java.lang.String,
+    id: java.lang.String,
+    `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.audio,
+    caption: java.lang.String = null,
+    input_message_content: InputMessageContent = null,
+    reply_markup: InlineKeyboardMarkup = null
+  ): InlineQueryResultCachedAudio = {
+    val __obj = js.Dynamic.literal(audio_file_id = audio_file_id, id = id, `type` = `type`)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    __obj.asInstanceOf[InlineQueryResultCachedAudio]
+  }
+}
+

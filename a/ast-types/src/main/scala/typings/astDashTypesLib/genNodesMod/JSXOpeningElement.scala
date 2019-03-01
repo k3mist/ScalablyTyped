@@ -18,3 +18,19 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXOpeningElement
 }
 
+object JSXOpeningElement {
+  @scala.inline
+  def apply(
+    attributes: js.Array[
+      astDashTypesLib.genKindsMod.JSXAttributeKind | astDashTypesLib.genKindsMod.JSXSpreadAttributeKind
+    ],
+    name: astDashTypesLib.genKindsMod.JSXIdentifierKind | astDashTypesLib.genKindsMod.JSXNamespacedNameKind | astDashTypesLib.genKindsMod.JSXMemberExpressionKind,
+    selfClosing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXOpeningElement
+  ): JSXOpeningElement = {
+    val __obj = js.Dynamic.literal(attributes = attributes, name = name.asInstanceOf[js.Any], selfClosing = selfClosing, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXOpeningElement]
+  }
+}
+

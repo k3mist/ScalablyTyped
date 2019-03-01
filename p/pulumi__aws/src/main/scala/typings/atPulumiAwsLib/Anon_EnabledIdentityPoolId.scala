@@ -12,3 +12,17 @@ trait Anon_EnabledIdentityPoolId extends js.Object {
   var userPoolId: java.lang.String
 }
 
+object Anon_EnabledIdentityPoolId {
+  @scala.inline
+  def apply(
+    identityPoolId: java.lang.String,
+    roleArn: java.lang.String,
+    userPoolId: java.lang.String,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_EnabledIdentityPoolId = {
+    val __obj = js.Dynamic.literal(identityPoolId = identityPoolId, roleArn = roleArn, userPoolId = userPoolId)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[Anon_EnabledIdentityPoolId]
+  }
+}
+

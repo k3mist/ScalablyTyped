@@ -31,3 +31,22 @@ trait XDDELinkResults
   ): scala.Unit
 }
 
+object XDDELinkResults {
+  @scala.inline
+  def apply(
+    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    acquire: js.Function0[scala.Unit],
+    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setResults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      scala.Unit
+    ]
+  ): XDDELinkResults = {
+    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getResults = getResults, queryInterface = queryInterface, release = release, setResults = setResults)
+  
+    __obj.asInstanceOf[XDDELinkResults]
+  }
+}
+

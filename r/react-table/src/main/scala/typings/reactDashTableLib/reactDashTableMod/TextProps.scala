@@ -22,3 +22,20 @@ trait TextProps extends js.Object {
   var rowsText: java.lang.String
 }
 
+object TextProps {
+  @scala.inline
+  def apply(
+    loadingText: reactLib.reactMod.ReactNs.ReactNode,
+    nextText: reactLib.reactMod.ReactNs.ReactNode,
+    noDataText: reactLib.reactMod.ReactNs.ReactNode | reactLib.reactMod.ReactNs.ComponentType[js.Object],
+    ofText: reactLib.reactMod.ReactNs.ReactNode,
+    pageText: reactLib.reactMod.ReactNs.ReactNode,
+    previousText: reactLib.reactMod.ReactNs.ReactNode,
+    rowsText: java.lang.String
+  ): TextProps = {
+    val __obj = js.Dynamic.literal(loadingText = loadingText.asInstanceOf[js.Any], nextText = nextText.asInstanceOf[js.Any], noDataText = noDataText.asInstanceOf[js.Any], ofText = ofText.asInstanceOf[js.Any], pageText = pageText.asInstanceOf[js.Any], previousText = previousText.asInstanceOf[js.Any], rowsText = rowsText)
+  
+    __obj.asInstanceOf[TextProps]
+  }
+}
+

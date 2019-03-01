@@ -32,3 +32,15 @@ trait symbologyPredominance extends js.Object {
   def getSchemes(params: predominanceGetSchemesParams): PredominanceSchemes
 }
 
+object symbologyPredominance {
+  @scala.inline
+  def apply(
+    cloneScheme: js.Function1[PredominanceScheme, PredominanceScheme],
+    getSchemes: js.Function1[predominanceGetSchemesParams, PredominanceSchemes]
+  ): symbologyPredominance = {
+    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+  
+    __obj.asInstanceOf[symbologyPredominance]
+  }
+}
+

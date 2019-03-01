@@ -69,3 +69,26 @@ trait Split extends js.Object {
   def setTheme(theme: java.lang.String): scala.Unit
 }
 
+object Split {
+  @scala.inline
+  def apply(
+    blur: js.Function0[scala.Unit],
+    focus: js.Function0[scala.Unit],
+    forEach: js.Function2[js.Function, java.lang.String, scala.Unit],
+    getCurrentEditor: js.Function0[Editor],
+    getEditor: js.Function1[scala.Double, scala.Unit],
+    getOrientation: js.Function0[scala.Double],
+    getSplits: js.Function0[scala.Double],
+    resize: js.Function0[scala.Unit],
+    setFontSize: js.Function1[scala.Double, scala.Unit],
+    setKeyboardHandler: js.Function1[java.lang.String, scala.Unit],
+    setOrientation: js.Function1[scala.Double, scala.Unit],
+    setSession: js.Function2[IEditSession, scala.Double, scala.Unit],
+    setTheme: js.Function1[java.lang.String, scala.Unit]
+  ): Split = {
+    val __obj = js.Dynamic.literal(blur = blur, focus = focus, forEach = forEach, getCurrentEditor = getCurrentEditor, getEditor = getEditor, getOrientation = getOrientation, getSplits = getSplits, resize = resize, setFontSize = setFontSize, setKeyboardHandler = setKeyboardHandler, setOrientation = setOrientation, setSession = setSession, setTheme = setTheme)
+  
+    __obj.asInstanceOf[Split]
+  }
+}
+

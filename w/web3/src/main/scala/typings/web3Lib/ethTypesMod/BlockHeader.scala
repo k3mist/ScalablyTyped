@@ -22,3 +22,27 @@ trait BlockHeader extends js.Object {
   var transactionRoot: java.lang.String
 }
 
+object BlockHeader {
+  @scala.inline
+  def apply(
+    extraData: java.lang.String,
+    gasLimit: scala.Double,
+    gasUsed: scala.Double,
+    hash: java.lang.String,
+    logsBloom: java.lang.String,
+    miner: java.lang.String,
+    nonce: java.lang.String,
+    number: scala.Double,
+    parentHash: java.lang.String,
+    receiptRoot: java.lang.String,
+    sha3Uncles: java.lang.String,
+    stateRoot: java.lang.String,
+    timestamp: scala.Double,
+    transactionRoot: java.lang.String
+  ): BlockHeader = {
+    val __obj = js.Dynamic.literal(extraData = extraData, gasLimit = gasLimit, gasUsed = gasUsed, hash = hash, logsBloom = logsBloom, miner = miner, nonce = nonce, number = number, parentHash = parentHash, receiptRoot = receiptRoot, sha3Uncles = sha3Uncles, stateRoot = stateRoot, timestamp = timestamp, transactionRoot = transactionRoot)
+  
+    __obj.asInstanceOf[BlockHeader]
+  }
+}
+

@@ -13,3 +13,16 @@ trait StyleSheet
   var type_StyleSheet: cssDashTreeLib.cssDashTreeLibStrings.StyleSheet
 }
 
+object StyleSheet {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.StyleSheet,
+    loc: CssLocation = null
+  ): StyleSheet = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[StyleSheet]
+  }
+}
+

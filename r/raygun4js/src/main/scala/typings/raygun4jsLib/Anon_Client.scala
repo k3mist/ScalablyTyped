@@ -17,3 +17,22 @@ trait Anon_Client extends js.Object {
   var Version: java.lang.String
 }
 
+object Anon_Client {
+  @scala.inline
+  def apply(
+    Client: Anon_Name,
+    Environment: Anon_Browser,
+    Error: Anon_ClassName,
+    Request: Anon_Headers,
+    Tags: js.Array[java.lang.String],
+    User: Anon_Email,
+    UserCustomData: js.Any,
+    Version: java.lang.String,
+    GroupingKey: java.lang.String = null
+  ): Anon_Client = {
+    val __obj = js.Dynamic.literal(Client = Client, Environment = Environment, Error = Error, Request = Request, Tags = Tags, User = User, UserCustomData = UserCustomData, Version = Version)
+    if (GroupingKey != null) __obj.updateDynamic("GroupingKey")(GroupingKey)
+    __obj.asInstanceOf[Anon_Client]
+  }
+}
+

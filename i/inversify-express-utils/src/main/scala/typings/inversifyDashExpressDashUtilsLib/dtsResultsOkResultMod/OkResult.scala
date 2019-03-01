@@ -10,3 +10,17 @@ trait OkResult
   var apiController: js.Any
 }
 
+object OkResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ]
+  ): OkResult = {
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync)
+  
+    __obj.asInstanceOf[OkResult]
+  }
+}
+

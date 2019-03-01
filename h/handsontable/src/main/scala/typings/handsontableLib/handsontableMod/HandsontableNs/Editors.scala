@@ -29,3 +29,34 @@ trait Editors extends js.Object {
   def registerEditor(editorName: java.lang.String, editorClass: js.Any): scala.Unit
 }
 
+object Editors {
+  @scala.inline
+  def apply(
+    AutocompleteEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete],
+    BaseEditor: org.scalablytyped.runtime.Instantiable6[
+      /* hotInstance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
+      /* row */ scala.Double, 
+      /* col */ scala.Double, 
+      /* prop */ java.lang.String | scala.Double, 
+      /* TD */ stdLib.HTMLElement, 
+      /* cellProperties */ GridSettings, 
+      handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
+    ],
+    CheckboxEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Checkbox],
+    DateEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Date],
+    DropdownEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Dropdown],
+    HandsontableEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Handsontable],
+    MobileEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Mobile],
+    NumericEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric],
+    PasswordEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password],
+    SelectEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Select],
+    TextEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
+    getEditor: js.Function2[java.lang.String, handsontableLib.handsontableMod.Handsontable, js.Any],
+    registerEditor: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): Editors = {
+    val __obj = js.Dynamic.literal(AutocompleteEditor = AutocompleteEditor, BaseEditor = BaseEditor, CheckboxEditor = CheckboxEditor, DateEditor = DateEditor, DropdownEditor = DropdownEditor, HandsontableEditor = HandsontableEditor, MobileEditor = MobileEditor, NumericEditor = NumericEditor, PasswordEditor = PasswordEditor, SelectEditor = SelectEditor, TextEditor = TextEditor, getEditor = getEditor, registerEditor = registerEditor)
+  
+    __obj.asInstanceOf[Editors]
+  }
+}
+

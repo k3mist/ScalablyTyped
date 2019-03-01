@@ -40,3 +40,21 @@ trait Anon_AspectRatio extends js.Object {
   var widthPixels: scala.Double
 }
 
+object Anon_AspectRatio {
+  @scala.inline
+  def apply(
+    aspectRatio: scala.Double,
+    bitrateBps: scala.Double,
+    codec: java.lang.String,
+    frameRateFps: scala.Double,
+    heightPixels: scala.Double,
+    rotation: java.lang.String,
+    vender: java.lang.String,
+    widthPixels: scala.Double
+  ): Anon_AspectRatio = {
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, bitrateBps = bitrateBps, codec = codec, frameRateFps = frameRateFps, heightPixels = heightPixels, rotation = rotation, vender = vender, widthPixels = widthPixels)
+  
+    __obj.asInstanceOf[Anon_AspectRatio]
+  }
+}
+

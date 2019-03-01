@@ -20,3 +20,37 @@ trait ProposalsResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId): gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
 }
 
+object ProposalsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateOrdersResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
+    ],
+    search: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPqlQuery, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetOrdersResponse]
+    ],
+    setupcomplete: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProposalId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
+    ]
+  ): ProposalsResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, search = search, setupcomplete = setupcomplete, update = update)
+  
+    __obj.asInstanceOf[ProposalsResource]
+  }
+}
+

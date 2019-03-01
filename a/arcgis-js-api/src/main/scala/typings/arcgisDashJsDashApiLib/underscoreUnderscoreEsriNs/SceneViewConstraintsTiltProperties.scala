@@ -23,3 +23,19 @@ trait SceneViewConstraintsTiltProperties
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SceneViewConstraintsTiltProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    max: scala.Int | scala.Double = null,
+    mode: java.lang.String = null
+  ): SceneViewConstraintsTiltProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[SceneViewConstraintsTiltProperties]
+  }
+}
+

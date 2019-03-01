@@ -21,3 +21,29 @@ trait ViewData extends js.Object {
   var viewContainerParent: ViewData | scala.Null
 }
 
+object ViewData {
+  @scala.inline
+  def apply(
+    component: js.Any,
+    context: js.Any,
+    `def`: ViewDefinition,
+    initIndex: scala.Double,
+    nodes: org.scalablytyped.runtime.NumberDictionary[NodeData],
+    oldValues: js.Array[_],
+    renderer: atAngularCoreLib.srcRenderApiMod.Renderer2,
+    root: RootData,
+    state: ViewState,
+    disposables: js.Array[DisposableFn] = null,
+    parent: ViewData = null,
+    parentNodeDef: NodeDef = null,
+    viewContainerParent: ViewData = null
+  ): ViewData = {
+    val __obj = js.Dynamic.literal(component = component, context = context, `def` = `def`, initIndex = initIndex, nodes = nodes, oldValues = oldValues, renderer = renderer, root = root, state = state)
+    if (disposables != null) __obj.updateDynamic("disposables")(disposables)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parentNodeDef != null) __obj.updateDynamic("parentNodeDef")(parentNodeDef)
+    if (viewContainerParent != null) __obj.updateDynamic("viewContainerParent")(viewContainerParent)
+    __obj.asInstanceOf[ViewData]
+  }
+}
+

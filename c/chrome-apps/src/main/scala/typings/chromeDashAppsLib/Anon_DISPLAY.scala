@@ -10,3 +10,15 @@ trait Anon_DISPLAY extends js.Object {
   var SYSTEM: chromeDashAppsLib.chromeDashAppsLibStrings.system
 }
 
+object Anon_DISPLAY {
+  @scala.inline
+  def apply(
+    DISPLAY: chromeDashAppsLib.chromeDashAppsLibStrings.display,
+    SYSTEM: chromeDashAppsLib.chromeDashAppsLibStrings.system
+  ): Anon_DISPLAY = {
+    val __obj = js.Dynamic.literal(DISPLAY = DISPLAY, SYSTEM = SYSTEM)
+  
+    __obj.asInstanceOf[Anon_DISPLAY]
+  }
+}
+

@@ -23,3 +23,28 @@ trait Colors extends js.Object {
   val warning: java.lang.String
 }
 
+object Colors {
+  @scala.inline
+  def apply(
+    disabled: java.lang.String,
+    error: java.lang.String,
+    grey0: java.lang.String,
+    grey1: java.lang.String,
+    grey2: java.lang.String,
+    grey3: java.lang.String,
+    grey4: java.lang.String,
+    grey5: java.lang.String,
+    greyOutline: java.lang.String,
+    platform: reactDashNativeDashElementsLib.Anon_Android,
+    primary: java.lang.String,
+    searchBg: java.lang.String,
+    secondary: java.lang.String,
+    success: java.lang.String,
+    warning: java.lang.String
+  ): Colors = {
+    val __obj = js.Dynamic.literal(disabled = disabled, error = error, grey0 = grey0, grey1 = grey1, grey2 = grey2, grey3 = grey3, grey4 = grey4, grey5 = grey5, greyOutline = greyOutline, platform = platform, primary = primary, searchBg = searchBg, secondary = secondary, success = success, warning = warning)
+  
+    __obj.asInstanceOf[Colors]
+  }
+}
+

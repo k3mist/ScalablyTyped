@@ -12,3 +12,17 @@ trait Moment extends js.Object {
   def time(): fullcalendarLib.srcMomentDashExtMod.MomentExtDuration
 }
 
+object Moment {
+  @scala.inline
+  def apply(
+    hasTime: js.Function0[scala.Boolean],
+    stripTime: js.Function0[js.Any],
+    stripZone: js.Function0[js.Any],
+    time: js.Function0[fullcalendarLib.srcMomentDashExtMod.MomentExtDuration]
+  ): Moment = {
+    val __obj = js.Dynamic.literal(hasTime = hasTime, stripTime = stripTime, stripZone = stripZone, time = time)
+  
+    __obj.asInstanceOf[Moment]
+  }
+}
+

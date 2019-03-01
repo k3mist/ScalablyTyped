@@ -11,3 +11,19 @@ trait RequestFullScreenOptions
   var direction: scala.Double
 }
 
+object RequestFullScreenOptions {
+  @scala.inline
+  def apply(
+    direction: scala.Double,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): RequestFullScreenOptions = {
+    val __obj = js.Dynamic.literal(direction = direction)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RequestFullScreenOptions]
+  }
+}
+

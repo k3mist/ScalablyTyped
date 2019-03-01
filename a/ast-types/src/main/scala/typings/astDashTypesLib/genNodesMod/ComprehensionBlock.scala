@@ -16,3 +16,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ComprehensionBlock
 }
 
+object ComprehensionBlock {
+  @scala.inline
+  def apply(
+    each: scala.Boolean,
+    left: astDashTypesLib.genKindsMod.PatternKind,
+    right: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ComprehensionBlock
+  ): ComprehensionBlock = {
+    val __obj = js.Dynamic.literal(each = each, left = left, right = right, `type` = `type`)
+  
+    __obj.asInstanceOf[ComprehensionBlock]
+  }
+}
+

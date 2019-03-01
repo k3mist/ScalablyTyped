@@ -23,3 +23,25 @@ trait WorkItemTypeModel extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemTypeModel {
+  @scala.inline
+  def apply(
+    behaviors: js.Array[WorkItemTypeBehavior],
+    `class`: WorkItemTypeClass,
+    color: java.lang.String,
+    description: java.lang.String,
+    icon: java.lang.String,
+    id: java.lang.String,
+    inherits: java.lang.String,
+    isDisabled: scala.Boolean,
+    layout: FormLayout,
+    name: java.lang.String,
+    states: js.Array[WorkItemStateResultModel],
+    url: java.lang.String
+  ): WorkItemTypeModel = {
+    val __obj = js.Dynamic.literal(behaviors = behaviors, `class` = `class`, color = color, description = description, icon = icon, id = id, inherits = inherits, isDisabled = isDisabled, layout = layout, name = name, states = states, url = url)
+  
+    __obj.asInstanceOf[WorkItemTypeModel]
+  }
+}
+

@@ -20,3 +20,21 @@ trait SpeechResource extends js.Object {
   def recognize(request: gapiDotClientDotSpeechLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[RecognizeResponse]
 }
 
+object SpeechResource {
+  @scala.inline
+  def apply(
+    longrunningrecognize: js.Function1[
+      gapiDotClientDotSpeechLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    recognize: js.Function1[
+      gapiDotClientDotSpeechLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RecognizeResponse]
+    ]
+  ): SpeechResource = {
+    val __obj = js.Dynamic.literal(longrunningrecognize = longrunningrecognize, recognize = recognize)
+  
+    __obj.asInstanceOf[SpeechResource]
+  }
+}
+

@@ -54,3 +54,26 @@ trait MapImageProperties extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapImageProperties {
+  @scala.inline
+  def apply(
+    extent: ExtentProperties = null,
+    height: scala.Int | scala.Double = null,
+    href: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): MapImageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapImageProperties]
+  }
+}
+

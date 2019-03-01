@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXNamespacedName
 }
 
+object JSXNamespacedName {
+  @scala.inline
+  def apply(
+    name: astDashTypesLib.genKindsMod.JSXIdentifierKind,
+    namespace: astDashTypesLib.genKindsMod.JSXIdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.JSXNamespacedName
+  ): JSXNamespacedName = {
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXNamespacedName]
+  }
+}
+

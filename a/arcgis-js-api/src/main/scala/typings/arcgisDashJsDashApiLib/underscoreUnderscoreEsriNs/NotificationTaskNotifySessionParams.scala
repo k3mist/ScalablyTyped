@@ -27,3 +27,19 @@ trait NotificationTaskNotifySessionParams
   var user: java.lang.String
 }
 
+object NotificationTaskNotifySessionParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    deleteAfter: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sessionid: java.lang.String,
+    user: java.lang.String
+  ): NotificationTaskNotifySessionParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, deleteAfter = deleteAfter, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sessionid = sessionid, user = user)
+  
+    __obj.asInstanceOf[NotificationTaskNotifySessionParams]
+  }
+}
+

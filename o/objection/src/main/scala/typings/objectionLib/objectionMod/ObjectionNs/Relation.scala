@@ -17,3 +17,22 @@ trait Relation extends js.Object {
   var relatedProp: RelationProperty
 }
 
+object Relation {
+  @scala.inline
+  def apply(
+    joinModelClass: ModelClass[_],
+    joinTable: java.lang.String,
+    joinTableOwnerProp: RelationProperty,
+    joinTableRelatedProp: RelationProperty,
+    name: java.lang.String,
+    ownerModelClass: ModelClass[_],
+    ownerProp: RelationProperty,
+    relatedModelClass: ModelClass[_],
+    relatedProp: RelationProperty
+  ): Relation = {
+    val __obj = js.Dynamic.literal(joinModelClass = joinModelClass, joinTable = joinTable, joinTableOwnerProp = joinTableOwnerProp, joinTableRelatedProp = joinTableRelatedProp, name = name, ownerModelClass = ownerModelClass, ownerProp = ownerProp, relatedModelClass = relatedModelClass, relatedProp = relatedProp)
+  
+    __obj.asInstanceOf[Relation]
+  }
+}
+

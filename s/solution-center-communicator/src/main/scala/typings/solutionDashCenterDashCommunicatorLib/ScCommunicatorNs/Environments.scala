@@ -32,3 +32,19 @@ trait Environments extends js.Object {
   var TESTING: Environment
 }
 
+object Environments {
+  @scala.inline
+  def apply(
+    DEVELOPMENT: Environment,
+    INTEGRATION: Environment,
+    LOCAL: Environment,
+    PRODUCTION: Environment,
+    STAGE: Environment,
+    TESTING: Environment
+  ): Environments = {
+    val __obj = js.Dynamic.literal(DEVELOPMENT = DEVELOPMENT, INTEGRATION = INTEGRATION, LOCAL = LOCAL, PRODUCTION = PRODUCTION, STAGE = STAGE, TESTING = TESTING)
+  
+    __obj.asInstanceOf[Environments]
+  }
+}
+

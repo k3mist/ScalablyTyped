@@ -11,3 +11,12 @@ trait Anon_Host extends js.Object {
   var secure: scala.Boolean
 }
 
+object Anon_Host {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Double, secure: scala.Boolean): Anon_Host = {
+    val __obj = js.Dynamic.literal(host = host, port = port, secure = secure)
+  
+    __obj.asInstanceOf[Anon_Host]
+  }
+}
+

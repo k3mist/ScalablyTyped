@@ -23,3 +23,20 @@ trait Cell
   var textColor: js.Any
 }
 
+object Cell {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any,
+    font: js.Any,
+    fontSize: js.Any,
+    fontStyle: js.Any,
+    fontWeight: js.Any,
+    textAlign: js.Any,
+    textColor: js.Any
+  ): Cell = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, font = font, fontSize = fontSize, fontStyle = fontStyle, fontWeight = fontWeight, textAlign = textAlign, textColor = textColor)
+  
+    __obj.asInstanceOf[Cell]
+  }
+}
+

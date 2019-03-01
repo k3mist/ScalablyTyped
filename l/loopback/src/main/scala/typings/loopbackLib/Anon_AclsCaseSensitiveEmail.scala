@@ -18,3 +18,23 @@ trait Anon_AclsCaseSensitiveEmail extends js.Object {
   var ttl: scala.Double
 }
 
+object Anon_AclsCaseSensitiveEmail {
+  @scala.inline
+  def apply(
+    acls: js.Array[loopbackLib.loopbackMod.lNs.ACL],
+    caseSensitiveEmail: scala.Boolean,
+    emailVerificationRequired: scala.Boolean,
+    http: Anon_Path,
+    maxTTL: scala.Double,
+    realmDelimiter: java.lang.String,
+    realmRequired: scala.Boolean,
+    resetPasswordTokenTTL: scala.Double,
+    saltWorkFactor: scala.Double,
+    ttl: scala.Double
+  ): Anon_AclsCaseSensitiveEmail = {
+    val __obj = js.Dynamic.literal(acls = acls, caseSensitiveEmail = caseSensitiveEmail, emailVerificationRequired = emailVerificationRequired, http = http, maxTTL = maxTTL, realmDelimiter = realmDelimiter, realmRequired = realmRequired, resetPasswordTokenTTL = resetPasswordTokenTTL, saltWorkFactor = saltWorkFactor, ttl = ttl)
+  
+    __obj.asInstanceOf[Anon_AclsCaseSensitiveEmail]
+  }
+}
+

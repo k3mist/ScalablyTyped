@@ -14,3 +14,19 @@ trait Signature extends js.Object {
   def toSchema(): js.Any
 }
 
+object Signature {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    signature: asn1jsLib.asn1jsMod.BitString,
+    signatureAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    certs: js.Array[pkijsLib.srcCertificateMod.default] = null
+  ): Signature = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, signature = signature, signatureAlgorithm = signatureAlgorithm, toJSON = toJSON, toSchema = toSchema)
+    if (certs != null) __obj.updateDynamic("certs")(certs)
+    __obj.asInstanceOf[Signature]
+  }
+}
+

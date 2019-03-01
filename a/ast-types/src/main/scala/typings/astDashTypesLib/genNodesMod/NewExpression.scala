@@ -19,3 +19,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.NewExpression
 }
 
+object NewExpression {
+  @scala.inline
+  def apply(
+    arguments: js.Array[
+      astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind
+    ],
+    callee: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.NewExpression
+  ): NewExpression = {
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee, `type` = `type`)
+  
+    __obj.asInstanceOf[NewExpression]
+  }
+}
+

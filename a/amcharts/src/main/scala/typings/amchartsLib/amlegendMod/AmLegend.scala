@@ -236,3 +236,63 @@ trait AmLegend extends js.Object {
   def removeListener(chart: amchartsLib.amchartMod.default, `type`: java.lang.String, handler: js.Any): scala.Unit
 }
 
+object AmLegend {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* e */ amchartsLib.Anon_ChartDataItem, scala.Unit], 
+      scala.Unit
+    ],
+    align: java.lang.String,
+    autoMargins: scala.Boolean,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    borderAlpha: scala.Double,
+    borderColor: java.lang.String,
+    bottom: scala.Double,
+    color: java.lang.String,
+    data: js.Array[_],
+    equalWidths: scala.Boolean,
+    fontSize: java.lang.String,
+    horizontalGap: scala.Double,
+    labelText: java.lang.String,
+    left: scala.Double,
+    marginBottom: scala.Double,
+    marginLeft: scala.Double,
+    marginRight: scala.Double,
+    marginTop: scala.Double,
+    markerBorderAlpha: scala.Double,
+    markerBorderColor: java.lang.String,
+    markerBorderThickness: scala.Double,
+    markerDisabledColor: java.lang.String,
+    markerLabelGap: scala.Double,
+    markerSize: scala.Double,
+    markerType: java.lang.String,
+    maxColumns: scala.Double,
+    position: java.lang.String,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    reversedOrder: scala.Boolean,
+    right: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverGraphAlpha: scala.Double,
+    showEntries: scala.Boolean,
+    spacing: scala.Double,
+    switchColor: java.lang.String,
+    switchType: java.lang.String,
+    switchable: scala.Boolean,
+    textClickEnabled: scala.Boolean,
+    top: scala.Double,
+    useGraphSettings: scala.Boolean,
+    useMarkerColorForLabels: scala.Boolean,
+    valueAlign: java.lang.String,
+    valueText: java.lang.String,
+    valueWidth: scala.Double,
+    verticalGap: scala.Double
+  ): AmLegend = {
+    val __obj = js.Dynamic.literal(addListener = addListener, align = align, autoMargins = autoMargins, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, borderAlpha = borderAlpha, borderColor = borderColor, bottom = bottom, color = color, data = data, equalWidths = equalWidths, fontSize = fontSize, horizontalGap = horizontalGap, labelText = labelText, left = left, marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, markerBorderAlpha = markerBorderAlpha, markerBorderColor = markerBorderColor, markerBorderThickness = markerBorderThickness, markerDisabledColor = markerDisabledColor, markerLabelGap = markerLabelGap, markerSize = markerSize, markerType = markerType, maxColumns = maxColumns, position = position, removeListener = removeListener, reversedOrder = reversedOrder, right = right, rollOverColor = rollOverColor, rollOverGraphAlpha = rollOverGraphAlpha, showEntries = showEntries, spacing = spacing, switchColor = switchColor, switchType = switchType, switchable = switchable, textClickEnabled = textClickEnabled, top = top, useGraphSettings = useGraphSettings, useMarkerColorForLabels = useMarkerColorForLabels, valueAlign = valueAlign, valueText = valueText, valueWidth = valueWidth, verticalGap = verticalGap)
+  
+    __obj.asInstanceOf[AmLegend]
+  }
+}
+

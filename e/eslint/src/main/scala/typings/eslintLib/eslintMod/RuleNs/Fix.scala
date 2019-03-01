@@ -10,3 +10,12 @@ trait Fix extends js.Object {
   var text: java.lang.String
 }
 
+object Fix {
+  @scala.inline
+  def apply(range: eslintLib.eslintMod.ASTNs.Range, text: java.lang.String): Fix = {
+    val __obj = js.Dynamic.literal(range = range, text = text)
+  
+    __obj.asInstanceOf[Fix]
+  }
+}
+

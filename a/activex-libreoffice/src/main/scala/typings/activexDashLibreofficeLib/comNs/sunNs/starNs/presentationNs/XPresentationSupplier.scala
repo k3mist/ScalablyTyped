@@ -14,3 +14,18 @@ trait XPresentationSupplier
   def getPresentation(): XPresentation
 }
 
+object XPresentationSupplier {
+  @scala.inline
+  def apply(
+    Presentation: XPresentation,
+    acquire: js.Function0[scala.Unit],
+    getPresentation: js.Function0[XPresentation],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPresentationSupplier = {
+    val __obj = js.Dynamic.literal(Presentation = Presentation, acquire = acquire, getPresentation = getPresentation, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPresentationSupplier]
+  }
+}
+

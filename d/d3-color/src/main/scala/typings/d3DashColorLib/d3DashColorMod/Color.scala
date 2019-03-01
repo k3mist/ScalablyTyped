@@ -19,3 +19,16 @@ trait Color extends js.Object {
   def hex(): java.lang.String
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    displayable: js.Function0[scala.Boolean],
+    hex: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String]
+  ): Color = {
+    val __obj = js.Dynamic.literal(displayable = displayable, hex = hex, toString = toString)
+  
+    __obj.asInstanceOf[Color]
+  }
+}
+

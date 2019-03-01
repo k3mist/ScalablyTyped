@@ -17,3 +17,17 @@ trait Anon_BackgroundColorExcludeComponents extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_BackgroundColorExcludeComponents {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    pixelRatio: scala.Double,
+    `type`: java.lang.String,
+    excludeComponents: js.Array[java.lang.String] = null
+  ): Anon_BackgroundColorExcludeComponents = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, pixelRatio = pixelRatio, `type` = `type`)
+    if (excludeComponents != null) __obj.updateDynamic("excludeComponents")(excludeComponents)
+    __obj.asInstanceOf[Anon_BackgroundColorExcludeComponents]
+  }
+}
+

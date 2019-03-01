@@ -12,3 +12,12 @@ trait ProfileAttributeBase[T] extends js.Object {
   var value: T
 }
 
+object ProfileAttributeBase {
+  @scala.inline
+  def apply[T](descriptor: AttributeDescriptor, revision: scala.Double, timeStamp: stdLib.Date, value: T): ProfileAttributeBase[T] = {
+    val __obj = js.Dynamic.literal(descriptor = descriptor, revision = revision, timeStamp = timeStamp, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ProfileAttributeBase[T]]
+  }
+}
+

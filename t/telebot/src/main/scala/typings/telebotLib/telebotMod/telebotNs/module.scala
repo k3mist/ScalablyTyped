@@ -11,3 +11,16 @@ trait module extends js.Object {
   def plugin(args: js.Any*): scala.Unit
 }
 
+object module {
+  @scala.inline
+  def apply(
+    defaultConfig: js.Any,
+    id: java.lang.String,
+    plugin: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): module = {
+    val __obj = js.Dynamic.literal(defaultConfig = defaultConfig, id = id, plugin = plugin)
+  
+    __obj.asInstanceOf[module]
+  }
+}
+

@@ -13,3 +13,18 @@ trait DistanceMatrixResponseElement extends js.Object {
   var status: DistanceMatrixElementStatus
 }
 
+object DistanceMatrixResponseElement {
+  @scala.inline
+  def apply(
+    distance: Distance,
+    duration: Duration,
+    duration_in_traffic: Duration,
+    fare: TransitFare,
+    status: DistanceMatrixElementStatus
+  ): DistanceMatrixResponseElement = {
+    val __obj = js.Dynamic.literal(distance = distance, duration = duration, duration_in_traffic = duration_in_traffic, fare = fare, status = status)
+  
+    __obj.asInstanceOf[DistanceMatrixResponseElement]
+  }
+}
+

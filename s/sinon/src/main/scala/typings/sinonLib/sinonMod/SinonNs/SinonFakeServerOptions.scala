@@ -30,3 +30,17 @@ trait SinonFakeServerOptions extends js.Object {
   var respondImmediately: scala.Boolean
 }
 
+object SinonFakeServerOptions {
+  @scala.inline
+  def apply(
+    autoRespond: scala.Boolean,
+    autoRespondAfter: scala.Double,
+    fakeHTTPMethods: scala.Boolean,
+    respondImmediately: scala.Boolean
+  ): SinonFakeServerOptions = {
+    val __obj = js.Dynamic.literal(autoRespond = autoRespond, autoRespondAfter = autoRespondAfter, fakeHTTPMethods = fakeHTTPMethods, respondImmediately = respondImmediately)
+  
+    __obj.asInstanceOf[SinonFakeServerOptions]
+  }
+}
+

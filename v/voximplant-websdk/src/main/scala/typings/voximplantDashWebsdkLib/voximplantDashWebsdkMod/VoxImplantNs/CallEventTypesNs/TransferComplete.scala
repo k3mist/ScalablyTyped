@@ -16,3 +16,12 @@ trait TransferComplete
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
 }
 
+object TransferComplete {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): TransferComplete = {
+    val __obj = js.Dynamic.literal(call = call)
+  
+    __obj.asInstanceOf[TransferComplete]
+  }
+}
+

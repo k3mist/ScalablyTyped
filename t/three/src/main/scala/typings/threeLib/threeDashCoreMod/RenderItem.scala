@@ -16,3 +16,21 @@ trait RenderItem extends js.Object {
   var z: scala.Double
 }
 
+object RenderItem {
+  @scala.inline
+  def apply(
+    geometry: Geometry | BufferGeometry,
+    group: Group,
+    id: scala.Double,
+    material: Material,
+    `object`: Object3D,
+    program: WebGLProgram,
+    renderOrder: scala.Double,
+    z: scala.Double
+  ): RenderItem = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], group = group, id = id, material = material, `object` = `object`, program = program, renderOrder = renderOrder, z = z)
+  
+    __obj.asInstanceOf[RenderItem]
+  }
+}
+

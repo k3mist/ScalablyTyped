@@ -12,3 +12,17 @@ trait PasswordlessAuthOptions extends js.Object {
   var verificationCode: java.lang.String
 }
 
+object PasswordlessAuthOptions {
+  @scala.inline
+  def apply(
+    connection: java.lang.String,
+    email: java.lang.String,
+    phoneNumber: java.lang.String,
+    verificationCode: java.lang.String
+  ): PasswordlessAuthOptions = {
+    val __obj = js.Dynamic.literal(connection = connection, email = email, phoneNumber = phoneNumber, verificationCode = verificationCode)
+  
+    __obj.asInstanceOf[PasswordlessAuthOptions]
+  }
+}
+

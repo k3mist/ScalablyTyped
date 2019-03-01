@@ -20,3 +20,37 @@ trait ColumnResource extends js.Object {
   def update(request: gapiDotClientDotFusiontablesLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Column]
 }
 
+object ColumnResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Column]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Column]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ColumnList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Column]
+    ],
+    update: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Column]
+    ]
+  ): ColumnResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[ColumnResource]
+  }
+}
+

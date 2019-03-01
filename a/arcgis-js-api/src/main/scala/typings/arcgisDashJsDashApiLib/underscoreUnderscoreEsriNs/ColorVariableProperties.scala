@@ -20,3 +20,26 @@ trait ColorVariableProperties extends VisualVariableProperties {
   var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 
+object ColorVariableProperties {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    index: java.lang.String | scala.Double = null,
+    legendOptions: VisualVariableLegendOptions = null,
+    normalizationField: java.lang.String = null,
+    stops: js.Array[ColorStopProperties] = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null
+  ): ColorVariableProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    __obj.asInstanceOf[ColorVariableProperties]
+  }
+}
+

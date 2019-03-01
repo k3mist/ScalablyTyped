@@ -80,3 +80,48 @@ trait XCollator
   ): scala.Double
 }
 
+object XCollator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    compareString: js.Function2[java.lang.String, java.lang.String, scala.Double],
+    compareSubstring: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double
+    ],
+    listCollatorAlgorithms: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    listCollatorOptions: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[scala.Double]],
+    loadCollatorAlgorithm: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    loadCollatorAlgorithmWithEndUserOption: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    loadDefaultCollator: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCollator = {
+    val __obj = js.Dynamic.literal(acquire = acquire, compareString = compareString, compareSubstring = compareSubstring, listCollatorAlgorithms = listCollatorAlgorithms, listCollatorOptions = listCollatorOptions, loadCollatorAlgorithm = loadCollatorAlgorithm, loadCollatorAlgorithmWithEndUserOption = loadCollatorAlgorithmWithEndUserOption, loadDefaultCollator = loadDefaultCollator, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCollator]
+  }
+}
+

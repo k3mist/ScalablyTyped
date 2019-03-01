@@ -36,3 +36,17 @@ trait GeographicTransformationStep extends js.Object {
   def getInverse(): GeographicTransformationStep
 }
 
+object GeographicTransformationStep {
+  @scala.inline
+  def apply(
+    getInverse: js.Function0[GeographicTransformationStep],
+    isInverse: scala.Boolean,
+    wkid: scala.Double,
+    wkt: java.lang.String
+  ): GeographicTransformationStep = {
+    val __obj = js.Dynamic.literal(getInverse = getInverse, isInverse = isInverse, wkid = wkid, wkt = wkt)
+  
+    __obj.asInstanceOf[GeographicTransformationStep]
+  }
+}
+

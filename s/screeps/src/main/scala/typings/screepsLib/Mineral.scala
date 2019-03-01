@@ -32,3 +32,20 @@ trait Mineral[T /* <: MineralConstant */] extends RoomObject {
   var ticksToRegeneration: scala.Double
 }
 
+object Mineral {
+  @scala.inline
+  def apply[T /* <: MineralConstant */](
+    density: scala.Double,
+    id: java.lang.String,
+    mineralAmount: scala.Double,
+    mineralType: T,
+    pos: RoomPosition,
+    ticksToRegeneration: scala.Double,
+    room: Room = null
+  ): Mineral[T] = {
+    val __obj = js.Dynamic.literal(density = density, id = id, mineralAmount = mineralAmount, mineralType = mineralType.asInstanceOf[js.Any], pos = pos, ticksToRegeneration = ticksToRegeneration)
+    if (room != null) __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[Mineral[T]]
+  }
+}
+

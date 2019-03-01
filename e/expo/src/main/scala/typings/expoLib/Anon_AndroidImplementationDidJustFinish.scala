@@ -26,3 +26,31 @@ trait Anon_AndroidImplementationDidJustFinish
   var volume: scala.Double
 }
 
+object Anon_AndroidImplementationDidJustFinish {
+  @scala.inline
+  def apply(
+    didJustFinish: scala.Boolean,
+    isBuffering: scala.Boolean,
+    isLoaded: expoLib.expoLibNumbers.`true`,
+    isLooping: scala.Boolean,
+    isMuted: scala.Boolean,
+    isPlaying: scala.Boolean,
+    positionMillis: scala.Double,
+    progressUpdateIntervalMillis: scala.Double,
+    rate: scala.Double,
+    shouldCorrectPitch: scala.Boolean,
+    shouldPlay: scala.Boolean,
+    uri: java.lang.String,
+    volume: scala.Double,
+    androidImplementation: java.lang.String = null,
+    durationMillis: scala.Int | scala.Double = null,
+    playableDurationMillis: scala.Int | scala.Double = null
+  ): Anon_AndroidImplementationDidJustFinish = {
+    val __obj = js.Dynamic.literal(didJustFinish = didJustFinish, isBuffering = isBuffering, isLoaded = isLoaded, isLooping = isLooping, isMuted = isMuted, isPlaying = isPlaying, positionMillis = positionMillis, progressUpdateIntervalMillis = progressUpdateIntervalMillis, rate = rate, shouldCorrectPitch = shouldCorrectPitch, shouldPlay = shouldPlay, uri = uri, volume = volume)
+    if (androidImplementation != null) __obj.updateDynamic("androidImplementation")(androidImplementation)
+    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
+    if (playableDurationMillis != null) __obj.updateDynamic("playableDurationMillis")(playableDurationMillis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AndroidImplementationDidJustFinish]
+  }
+}
+

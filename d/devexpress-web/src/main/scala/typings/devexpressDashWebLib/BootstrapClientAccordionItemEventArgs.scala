@@ -26,3 +26,17 @@ trait BootstrapClientAccordionItemEventArgs extends ASPxClientProcessingModeEven
   var item: BootstrapClientAccordionItem
 }
 
+object BootstrapClientAccordionItemEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    item: BootstrapClientAccordionItem,
+    processOnServer: scala.Boolean
+  ): BootstrapClientAccordionItemEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[BootstrapClientAccordionItemEventArgs]
+  }
+}
+

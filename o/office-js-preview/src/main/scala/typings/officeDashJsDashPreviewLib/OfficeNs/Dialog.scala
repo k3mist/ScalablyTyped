@@ -27,3 +27,16 @@ trait Dialog extends js.Object {
   def sendMessage(name: java.lang.String): scala.Unit
 }
 
+object Dialog {
+  @scala.inline
+  def apply(
+    addEventHandler: js.Function2[EventType, js.Function, scala.Unit],
+    close: js.Function0[scala.Unit],
+    sendMessage: js.Function1[java.lang.String, scala.Unit]
+  ): Dialog = {
+    val __obj = js.Dynamic.literal(addEventHandler = addEventHandler, close = close, sendMessage = sendMessage)
+  
+    __obj.asInstanceOf[Dialog]
+  }
+}
+

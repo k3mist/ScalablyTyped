@@ -10,3 +10,12 @@ trait Widget extends js.Object {
   def getType(): java.lang.String
 }
 
+object Widget {
+  @scala.inline
+  def apply(getId: js.Function0[java.lang.String], getType: js.Function0[java.lang.String]): Widget = {
+    val __obj = js.Dynamic.literal(getId = getId, getType = getType)
+  
+    __obj.asInstanceOf[Widget]
+  }
+}
+

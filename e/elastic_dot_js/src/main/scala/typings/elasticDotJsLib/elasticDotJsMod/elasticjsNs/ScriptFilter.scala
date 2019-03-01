@@ -41,3 +41,21 @@ trait ScriptFilter extends Filter {
   def toJSON(): ScriptFilter
 }
 
+object ScriptFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, ScriptFilter],
+    cacheKey: js.Function1[java.lang.String, ScriptFilter],
+    lang: js.Function1[java.lang.String, ScriptFilter],
+    name: js.Function1[java.lang.String, ScriptFilter],
+    params: js.Function1[js.Object, ScriptFilter],
+    script: js.Function1[java.lang.String, ScriptFilter],
+    toJSON: js.Function0[ScriptFilter]
+  ): ScriptFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, lang = lang, name = name, params = params, script = script, toJSON = toJSON)
+  
+    __obj.asInstanceOf[ScriptFilter]
+  }
+}
+

@@ -10,3 +10,12 @@ trait AddPrimaryKeyConstraintOptions extends AddConstraintOptions {
   var `type`: sequelizeLib.sequelizeLibStrings.`primary key`
 }
 
+object AddPrimaryKeyConstraintOptions {
+  @scala.inline
+  def apply(`type`: sequelizeLib.sequelizeLibStrings.`primary key`, name: java.lang.String = null): AddPrimaryKeyConstraintOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AddPrimaryKeyConstraintOptions]
+  }
+}
+

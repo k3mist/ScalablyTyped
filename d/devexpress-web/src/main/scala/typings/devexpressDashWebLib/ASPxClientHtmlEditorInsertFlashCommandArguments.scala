@@ -36,3 +36,24 @@ trait ASPxClientHtmlEditorInsertFlashCommandArguments extends ASPxClientHtmlEdit
   var quality: java.lang.String
 }
 
+object ASPxClientHtmlEditorInsertFlashCommandArguments {
+  @scala.inline
+  def apply(
+    GetCommandName: js.Function0[java.lang.String],
+    align: java.lang.String,
+    allowFullscreen: scala.Boolean,
+    autoPlay: scala.Boolean,
+    enableFlashMenu: scala.Boolean,
+    id: java.lang.String,
+    loop: scala.Boolean,
+    quality: java.lang.String,
+    selectedElement: js.Object,
+    src: java.lang.String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorInsertFlashCommandArguments = {
+    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, allowFullscreen = allowFullscreen, autoPlay = autoPlay, enableFlashMenu = enableFlashMenu, id = id, loop = loop, quality = quality, selectedElement = selectedElement, src = src, styleSettings = styleSettings)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertFlashCommandArguments]
+  }
+}
+

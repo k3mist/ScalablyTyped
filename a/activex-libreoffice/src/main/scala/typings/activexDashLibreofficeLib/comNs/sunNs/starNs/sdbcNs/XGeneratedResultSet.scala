@@ -30,3 +30,18 @@ trait XGeneratedResultSet
   def getGeneratedValues(): XResultSet
 }
 
+object XGeneratedResultSet {
+  @scala.inline
+  def apply(
+    GeneratedValues: XResultSet,
+    acquire: js.Function0[scala.Unit],
+    getGeneratedValues: js.Function0[XResultSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGeneratedResultSet = {
+    val __obj = js.Dynamic.literal(GeneratedValues = GeneratedValues, acquire = acquire, getGeneratedValues = getGeneratedValues, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XGeneratedResultSet]
+  }
+}
+

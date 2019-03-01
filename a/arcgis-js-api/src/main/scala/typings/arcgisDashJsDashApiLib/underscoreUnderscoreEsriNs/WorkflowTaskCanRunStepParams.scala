@@ -27,3 +27,19 @@ trait WorkflowTaskCanRunStepParams
   var user: java.lang.String
 }
 
+object WorkflowTaskCanRunStepParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    stepId: scala.Double,
+    user: java.lang.String
+  ): WorkflowTaskCanRunStepParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stepId = stepId, user = user)
+  
+    __obj.asInstanceOf[WorkflowTaskCanRunStepParams]
+  }
+}
+

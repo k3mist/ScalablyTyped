@@ -14,3 +14,20 @@ trait Anon_ActionConfiguration extends js.Object {
   var outputArtifacts: js.Array[awsDashLambdaLib.awsDashLambdaMod.Artifact]
 }
 
+object Anon_ActionConfiguration {
+  @scala.inline
+  def apply(
+    actionConfiguration: Anon_Configuration,
+    artifactCredentials: awsDashLambdaLib.awsDashLambdaMod.Credentials,
+    inputArtifacts: js.Array[awsDashLambdaLib.awsDashLambdaMod.Artifact],
+    outputArtifacts: js.Array[awsDashLambdaLib.awsDashLambdaMod.Artifact],
+    continuationToken: java.lang.String = null,
+    encryptionKey: awsDashLambdaLib.awsDashLambdaMod.EncryptionKey with Anon_KMS = null
+  ): Anon_ActionConfiguration = {
+    val __obj = js.Dynamic.literal(actionConfiguration = actionConfiguration, artifactCredentials = artifactCredentials, inputArtifacts = inputArtifacts, outputArtifacts = outputArtifacts)
+    if (continuationToken != null) __obj.updateDynamic("continuationToken")(continuationToken)
+    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey)
+    __obj.asInstanceOf[Anon_ActionConfiguration]
+  }
+}
+

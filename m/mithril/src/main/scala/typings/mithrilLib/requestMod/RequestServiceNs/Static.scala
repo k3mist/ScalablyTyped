@@ -10,3 +10,15 @@ trait Static extends js.Object {
   var request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
 }
 
+object Static {
+  @scala.inline
+  def apply(
+    jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any,
+    request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
+  ): Static = {
+    val __obj = js.Dynamic.literal(jsonp = jsonp, request = request)
+  
+    __obj.asInstanceOf[Static]
+  }
+}
+

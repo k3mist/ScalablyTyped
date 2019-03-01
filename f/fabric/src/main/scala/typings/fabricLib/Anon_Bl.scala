@@ -12,3 +12,17 @@ trait Anon_Bl extends js.Object {
   var tr: fabricLib.fabricDashImplMod.Point
 }
 
+object Anon_Bl {
+  @scala.inline
+  def apply(
+    bl: fabricLib.fabricDashImplMod.Point,
+    br: fabricLib.fabricDashImplMod.Point,
+    tl: fabricLib.fabricDashImplMod.Point,
+    tr: fabricLib.fabricDashImplMod.Point
+  ): Anon_Bl = {
+    val __obj = js.Dynamic.literal(bl = bl, br = br, tl = tl, tr = tr)
+  
+    __obj.asInstanceOf[Anon_Bl]
+  }
+}
+

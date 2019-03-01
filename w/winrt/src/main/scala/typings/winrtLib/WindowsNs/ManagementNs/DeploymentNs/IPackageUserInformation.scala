@@ -10,3 +10,12 @@ trait IPackageUserInformation extends js.Object {
   var userSecurityId: java.lang.String
 }
 
+object IPackageUserInformation {
+  @scala.inline
+  def apply(installState: PackageInstallState, userSecurityId: java.lang.String): IPackageUserInformation = {
+    val __obj = js.Dynamic.literal(installState = installState, userSecurityId = userSecurityId)
+  
+    __obj.asInstanceOf[IPackageUserInformation]
+  }
+}
+

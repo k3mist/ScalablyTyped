@@ -20,3 +20,16 @@ trait RecurrenceSpecDateRange extends js.Object {
   var start: stdLib.Date | java.lang.String | scala.Double
 }
 
+object RecurrenceSpecDateRange {
+  @scala.inline
+  def apply(
+    end: stdLib.Date | java.lang.String | scala.Double,
+    rule: java.lang.String,
+    start: stdLib.Date | java.lang.String | scala.Double
+  ): RecurrenceSpecDateRange = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], rule = rule, start = start.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RecurrenceSpecDateRange]
+  }
+}
+

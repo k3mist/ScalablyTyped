@@ -49,3 +49,67 @@ trait XAnyDescriptionAccess
   ): scala.Unit
 }
 
+object XAnyDescriptionAccess {
+  @scala.inline
+  def apply(
+    AnyColumnDescriptions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    AnyRowDescriptions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    ColumnDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    ComplexColumnDescriptions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    ComplexRowDescriptions: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    Data: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]],
+    NotANumber: scala.Double,
+    RowDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    addChartDataChangeEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
+      scala.Unit
+    ],
+    getAnyColumnDescriptions: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
+    getAnyRowDescriptions: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
+    getColumnDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getComplexColumnDescriptions: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ],
+    getComplexRowDescriptions: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ],
+    getData: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]]],
+    getNotANumber: js.Function0[scala.Double],
+    getRowDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isNotANumber: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChartDataChangeEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
+      scala.Unit
+    ],
+    setAnyColumnDescriptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      scala.Unit
+    ],
+    setAnyRowDescriptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      scala.Unit
+    ],
+    setColumnDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setComplexColumnDescriptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
+      scala.Unit
+    ],
+    setComplexRowDescriptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
+      scala.Unit
+    ],
+    setData: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      scala.Unit
+    ],
+    setRowDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
+  ): XAnyDescriptionAccess = {
+    val __obj = js.Dynamic.literal(AnyColumnDescriptions = AnyColumnDescriptions, AnyRowDescriptions = AnyRowDescriptions, ColumnDescriptions = ColumnDescriptions, ComplexColumnDescriptions = ComplexColumnDescriptions, ComplexRowDescriptions = ComplexRowDescriptions, Data = Data, NotANumber = NotANumber, RowDescriptions = RowDescriptions, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, getAnyColumnDescriptions = getAnyColumnDescriptions, getAnyRowDescriptions = getAnyRowDescriptions, getColumnDescriptions = getColumnDescriptions, getComplexColumnDescriptions = getComplexColumnDescriptions, getComplexRowDescriptions = getComplexRowDescriptions, getData = getData, getNotANumber = getNotANumber, getRowDescriptions = getRowDescriptions, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener, setAnyColumnDescriptions = setAnyColumnDescriptions, setAnyRowDescriptions = setAnyRowDescriptions, setColumnDescriptions = setColumnDescriptions, setComplexColumnDescriptions = setComplexColumnDescriptions, setComplexRowDescriptions = setComplexRowDescriptions, setData = setData, setRowDescriptions = setRowDescriptions)
+  
+    __obj.asInstanceOf[XAnyDescriptionAccess]
+  }
+}
+

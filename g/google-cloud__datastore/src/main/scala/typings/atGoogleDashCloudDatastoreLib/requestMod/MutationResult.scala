@@ -11,3 +11,16 @@ trait MutationResult extends js.Object {
   var version: scala.Double
 }
 
+object MutationResult {
+  @scala.inline
+  def apply(
+    conflictDetected: scala.Boolean,
+    key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey,
+    version: scala.Double
+  ): MutationResult = {
+    val __obj = js.Dynamic.literal(conflictDetected = conflictDetected, key = key, version = version)
+  
+    __obj.asInstanceOf[MutationResult]
+  }
+}
+

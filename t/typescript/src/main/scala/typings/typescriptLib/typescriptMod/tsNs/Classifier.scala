@@ -30,3 +30,15 @@ trait Classifier extends js.Object {
   def getEncodedLexicalClassifications(text: java.lang.String, endOfLineState: EndOfLineState, syntacticClassifierAbsent: scala.Boolean): Classifications
 }
 
+object Classifier {
+  @scala.inline
+  def apply(
+    getClassificationsForLine: js.Function3[java.lang.String, EndOfLineState, scala.Boolean, ClassificationResult],
+    getEncodedLexicalClassifications: js.Function3[java.lang.String, EndOfLineState, scala.Boolean, Classifications]
+  ): Classifier = {
+    val __obj = js.Dynamic.literal(getClassificationsForLine = getClassificationsForLine, getEncodedLexicalClassifications = getEncodedLexicalClassifications)
+  
+    __obj.asInstanceOf[Classifier]
+  }
+}
+

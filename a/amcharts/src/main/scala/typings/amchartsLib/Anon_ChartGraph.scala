@@ -13,3 +13,18 @@ trait Anon_ChartGraph extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_ChartGraph {
+  @scala.inline
+  def apply(
+    chart: amchartsLib.amchartMod.default,
+    graph: amchartsLib.amgraphMod.default,
+    index: scala.Double,
+    item: amchartsLib.graphdataitemMod.default,
+    `type`: java.lang.String
+  ): Anon_ChartGraph = {
+    val __obj = js.Dynamic.literal(chart = chart, graph = graph, index = index, item = item, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ChartGraph]
+  }
+}
+

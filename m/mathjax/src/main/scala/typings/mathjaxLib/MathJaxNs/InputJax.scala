@@ -47,3 +47,21 @@ trait InputJax extends js.Object {
   def needsUpdate(element: js.Any): scala.Boolean
 }
 
+object InputJax {
+  @scala.inline
+  def apply(
+    Process: js.Function2[js.Any, js.Any, js.Any],
+    Register: js.Function1[java.lang.String, scala.Unit],
+    Translate: js.Function2[js.Any, js.Any, ElementJax],
+    directory: java.lang.String,
+    elementJax: java.lang.String,
+    id: java.lang.String,
+    needsUpdate: js.Function1[js.Any, scala.Boolean],
+    version: java.lang.String
+  ): InputJax = {
+    val __obj = js.Dynamic.literal(Process = Process, Register = Register, Translate = Translate, directory = directory, elementJax = elementJax, id = id, needsUpdate = needsUpdate, version = version)
+  
+    __obj.asInstanceOf[InputJax]
+  }
+}
+

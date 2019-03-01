@@ -17,3 +17,18 @@ trait ViewConfig extends js.Object {
   def load(): js.Promise[ViewConfig]
 }
 
+object ViewConfig {
+  @scala.inline
+  def apply(
+    $id: scala.Double,
+    load: js.Function0[js.Promise[ViewConfig]],
+    loaded: scala.Boolean,
+    path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
+    viewDecl: atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration
+  ): ViewConfig = {
+    val __obj = js.Dynamic.literal($id = $id, load = load, loaded = loaded, path = path, viewDecl = viewDecl)
+  
+    __obj.asInstanceOf[ViewConfig]
+  }
+}
+

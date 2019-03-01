@@ -12,3 +12,12 @@ trait Anon_Bottom extends js.Object {
   var top: scala.Double
 }
 
+object Anon_Bottom {
+  @scala.inline
+  def apply(bottom: scala.Double, fight: scala.Double, left: scala.Double, top: scala.Double): Anon_Bottom = {
+    val __obj = js.Dynamic.literal(bottom = bottom, fight = fight, left = left, top = top)
+  
+    __obj.asInstanceOf[Anon_Bottom]
+  }
+}
+

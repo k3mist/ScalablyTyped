@@ -22,3 +22,16 @@ trait Twitter extends js.Object {
   def ready(callback: js.Function1[/* twttr */ this.type, scala.Unit]): scala.Unit
 }
 
+object Twitter {
+  @scala.inline
+  def apply(
+    events: TwitterEvents,
+    ready: js.Function1[js.Function1[Twitter, scala.Unit], scala.Unit],
+    widgets: TwitterWidgets
+  ): Twitter = {
+    val __obj = js.Dynamic.literal(events = events, ready = ready, widgets = widgets)
+  
+    __obj.asInstanceOf[Twitter]
+  }
+}
+

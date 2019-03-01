@@ -13,3 +13,12 @@ trait DefaultAddOptions extends js.Object {
   var priority: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DefaultAddOptions {
+  @scala.inline
+  def apply(priority: scala.Int | scala.Double = null): DefaultAddOptions = {
+    val __obj = js.Dynamic.literal()
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultAddOptions]
+  }
+}
+

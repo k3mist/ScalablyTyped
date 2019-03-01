@@ -14,3 +14,19 @@ trait IAutomaticValue extends js.Object {
   def Clone(): IAutomaticValue
 }
 
+object IAutomaticValue {
+  @scala.inline
+  def apply(
+    ANSIncrement: scala.Double,
+    ANVCode: java.lang.String,
+    CVSExpression: java.lang.String,
+    CVVCode: java.lang.String,
+    CalculationOrderNumber: scala.Double,
+    Clone: js.Function0[IAutomaticValue]
+  ): IAutomaticValue = {
+    val __obj = js.Dynamic.literal(ANSIncrement = ANSIncrement, ANVCode = ANVCode, CVSExpression = CVSExpression, CVVCode = CVVCode, CalculationOrderNumber = CalculationOrderNumber, Clone = Clone)
+  
+    __obj.asInstanceOf[IAutomaticValue]
+  }
+}
+

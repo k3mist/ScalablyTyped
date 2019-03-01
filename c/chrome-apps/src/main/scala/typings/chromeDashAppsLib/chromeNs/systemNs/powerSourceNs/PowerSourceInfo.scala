@@ -20,3 +20,16 @@ trait PowerSourceInfo extends js.Object {
   var `type`: java.lang.String
 }
 
+object PowerSourceInfo {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    `type`: java.lang.String,
+    maxPower: js.UndefOr[chromeDashAppsLib.chromeNs.double] = js.undefined
+  ): PowerSourceInfo = {
+    val __obj = js.Dynamic.literal(active = active, `type` = `type`)
+    if (!js.isUndefined(maxPower)) __obj.updateDynamic("maxPower")(maxPower)
+    __obj.asInstanceOf[PowerSourceInfo]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_ALERT extends js.Object {
   var WARNING: java.lang.String
 }
 
+object Anon_ALERT {
+  @scala.inline
+  def apply(
+    ALERT: java.lang.String,
+    CRITICAL: java.lang.String,
+    DEBUG: java.lang.String,
+    EMERGENCY: java.lang.String,
+    ERROR: java.lang.String,
+    INFO: java.lang.String,
+    NOTICE: java.lang.String,
+    WARNING: java.lang.String
+  ): Anon_ALERT = {
+    val __obj = js.Dynamic.literal(ALERT = ALERT, CRITICAL = CRITICAL, DEBUG = DEBUG, EMERGENCY = EMERGENCY, ERROR = ERROR, INFO = INFO, NOTICE = NOTICE, WARNING = WARNING)
+  
+    __obj.asInstanceOf[Anon_ALERT]
+  }
+}
+

@@ -25,3 +25,22 @@ trait IDerivation
   def onBecomeStale(): scala.Unit
 }
 
+object IDerivation {
+  @scala.inline
+  def apply(
+    __mapid: java.lang.String,
+    dependenciesState: IDerivationState,
+    isTracing: TraceMode,
+    name: java.lang.String,
+    observing: js.Array[mobxLib.libCoreObservableMod.IObservable],
+    onBecomeStale: js.Function0[scala.Unit],
+    runId: scala.Double,
+    unboundDepsCount: scala.Double,
+    newObserving: js.Array[mobxLib.libCoreObservableMod.IObservable] = null
+  ): IDerivation = {
+    val __obj = js.Dynamic.literal(__mapid = __mapid, dependenciesState = dependenciesState, isTracing = isTracing, name = name, observing = observing, onBecomeStale = onBecomeStale, runId = runId, unboundDepsCount = unboundDepsCount)
+    if (newObserving != null) __obj.updateDynamic("newObserving")(newObserving)
+    __obj.asInstanceOf[IDerivation]
+  }
+}
+

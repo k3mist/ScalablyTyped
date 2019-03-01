@@ -10,3 +10,15 @@ trait Anon_ContentRangeHeaderValue extends js.Object {
   /** true if input is valid HttpContentRangeHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_ContentRangeHeaderValue {
+  @scala.inline
+  def apply(
+    contentRangeHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentRangeHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_ContentRangeHeaderValue = {
+    val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_ContentRangeHeaderValue]
+  }
+}
+

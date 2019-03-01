@@ -20,3 +20,17 @@ trait XInputStreamProvider
   def createInputStream(): XInputStream
 }
 
+object XInputStreamProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInputStream: js.Function0[XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInputStreamProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createInputStream = createInputStream, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInputStreamProvider]
+  }
+}
+

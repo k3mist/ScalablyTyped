@@ -12,3 +12,18 @@ trait IAppearance extends js.Object {
   var uses: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.settings
 }
 
+object IAppearance {
+  @scala.inline
+  def apply(
+    items: js.Any,
+    uses: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.settings,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null
+  ): IAppearance = {
+    val __obj = js.Dynamic.literal(items = items, uses = uses)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IAppearance]
+  }
+}
+

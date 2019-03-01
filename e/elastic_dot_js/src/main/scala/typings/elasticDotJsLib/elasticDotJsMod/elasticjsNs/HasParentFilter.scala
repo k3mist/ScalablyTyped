@@ -45,3 +45,22 @@ trait HasParentFilter extends Filter {
   def toJSON(): HasParentFilter
 }
 
+object HasParentFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, HasParentFilter],
+    cacheKey: js.Function1[java.lang.String, HasParentFilter],
+    filter: js.Function1[js.Object, HasParentFilter],
+    name: js.Function1[java.lang.String, HasParentFilter],
+    parentType: js.Function1[java.lang.String, HasParentFilter],
+    query: js.Function1[js.Object, HasParentFilter],
+    scope: js.Function1[java.lang.String, HasParentFilter],
+    toJSON: js.Function0[HasParentFilter]
+  ): HasParentFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, parentType = parentType, query = query, scope = scope, toJSON = toJSON)
+  
+    __obj.asInstanceOf[HasParentFilter]
+  }
+}
+

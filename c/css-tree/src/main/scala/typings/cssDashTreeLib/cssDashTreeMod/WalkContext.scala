@@ -17,3 +17,22 @@ trait WalkContext extends js.Object {
   var stylesheet: StyleSheet
 }
 
+object WalkContext {
+  @scala.inline
+  def apply(
+    atrule: Atrule,
+    atrulePrelude: AtrulePrelude,
+    block: Block,
+    declaration: Declaration,
+    function: FunctionNode | PseudoClassSelector | PseudoElementSelector,
+    root: CssNode,
+    rule: Rule,
+    selector: SelectorList,
+    stylesheet: StyleSheet
+  ): WalkContext = {
+    val __obj = js.Dynamic.literal(atrule = atrule, atrulePrelude = atrulePrelude, block = block, declaration = declaration, function = function.asInstanceOf[js.Any], root = root, rule = rule, selector = selector, stylesheet = stylesheet)
+  
+    __obj.asInstanceOf[WalkContext]
+  }
+}
+

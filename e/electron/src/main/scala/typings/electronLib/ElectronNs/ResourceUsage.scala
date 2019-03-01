@@ -14,3 +14,19 @@ trait ResourceUsage extends js.Object {
   var xslStyleSheets: MemoryUsageDetails
 }
 
+object ResourceUsage {
+  @scala.inline
+  def apply(
+    cssStyleSheets: MemoryUsageDetails,
+    fonts: MemoryUsageDetails,
+    images: MemoryUsageDetails,
+    other: MemoryUsageDetails,
+    scripts: MemoryUsageDetails,
+    xslStyleSheets: MemoryUsageDetails
+  ): ResourceUsage = {
+    val __obj = js.Dynamic.literal(cssStyleSheets = cssStyleSheets, fonts = fonts, images = images, other = other, scripts = scripts, xslStyleSheets = xslStyleSheets)
+  
+    __obj.asInstanceOf[ResourceUsage]
+  }
+}
+

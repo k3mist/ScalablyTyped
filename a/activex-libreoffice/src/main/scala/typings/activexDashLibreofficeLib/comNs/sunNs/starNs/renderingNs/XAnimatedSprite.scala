@@ -78,3 +78,41 @@ trait XAnimatedSprite extends XSprite {
   def updateAnimation(): scala.Unit
 }
 
+object XAnimatedSprite {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    clip: js.Function1[XPolyPolygon2D, scala.Unit],
+    hide: js.Function0[scala.Unit],
+    move: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      ViewState, 
+      RenderState, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetAnimation: js.Function0[scala.Unit],
+    setAll: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      ViewState, 
+      RenderState, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    setAlpha: js.Function1[scala.Double, scala.Unit],
+    setPriority: js.Function1[scala.Double, scala.Unit],
+    setViewState: js.Function1[ViewState, scala.Unit],
+    show: js.Function0[scala.Unit],
+    startAnimation: js.Function1[scala.Double, scala.Unit],
+    stopAnimation: js.Function0[scala.Unit],
+    transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit],
+    updateAnimation: js.Function0[scala.Unit]
+  ): XAnimatedSprite = {
+    val __obj = js.Dynamic.literal(acquire = acquire, clip = clip, hide = hide, move = move, queryInterface = queryInterface, release = release, resetAnimation = resetAnimation, setAll = setAll, setAlpha = setAlpha, setPriority = setPriority, setViewState = setViewState, show = show, startAnimation = startAnimation, stopAnimation = stopAnimation, transform = transform, updateAnimation = updateAnimation)
+  
+    __obj.asInstanceOf[XAnimatedSprite]
+  }
+}
+

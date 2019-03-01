@@ -10,3 +10,15 @@ trait Range extends js.Object {
   def getSelectedElements(): js.Array[RangeElement]
 }
 
+object Range {
+  @scala.inline
+  def apply(
+    getRangeElements: js.Function0[js.Array[RangeElement]],
+    getSelectedElements: js.Function0[js.Array[RangeElement]]
+  ): Range = {
+    val __obj = js.Dynamic.literal(getRangeElements = getRangeElements, getSelectedElements = getSelectedElements)
+  
+    __obj.asInstanceOf[Range]
+  }
+}
+

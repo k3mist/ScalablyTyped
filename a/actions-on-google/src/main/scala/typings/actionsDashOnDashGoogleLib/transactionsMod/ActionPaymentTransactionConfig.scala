@@ -15,3 +15,17 @@ trait ActionPaymentTransactionConfig extends js.Object {
   var `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
 }
 
+object ActionPaymentTransactionConfig {
+  @scala.inline
+  def apply(
+    deliveryAddressRequired: scala.Boolean,
+    displayName: java.lang.String,
+    `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType,
+    customerInfoOptions: CustomerInfoOptions = null
+  ): ActionPaymentTransactionConfig = {
+    val __obj = js.Dynamic.literal(deliveryAddressRequired = deliveryAddressRequired, displayName = displayName, `type` = `type`)
+    if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions)
+    __obj.asInstanceOf[ActionPaymentTransactionConfig]
+  }
+}
+

@@ -13,3 +13,18 @@ trait TracekitStack extends js.Object {
   var url: java.lang.String
 }
 
+object TracekitStack {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    context: js.Any,
+    func: java.lang.String,
+    line: scala.Double,
+    url: java.lang.String
+  ): TracekitStack = {
+    val __obj = js.Dynamic.literal(column = column, context = context, func = func, line = line, url = url)
+  
+    __obj.asInstanceOf[TracekitStack]
+  }
+}
+

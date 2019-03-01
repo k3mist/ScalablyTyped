@@ -27,3 +27,19 @@ trait JobTaskAddEmbeddedAttachmentParams
   var user: java.lang.String
 }
 
+object JobTaskAddEmbeddedAttachmentParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    form: js.Any,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskAddEmbeddedAttachmentParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, form = form, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskAddEmbeddedAttachmentParams]
+  }
+}
+

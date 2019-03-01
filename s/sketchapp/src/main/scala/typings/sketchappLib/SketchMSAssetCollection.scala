@@ -14,3 +14,19 @@ trait SketchMSAssetCollection extends js.Object {
   var images: js.Array[_]
 }
 
+object SketchMSAssetCollection {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.assetCollection,
+    colors: js.Array[_],
+    gradients: js.Array[_],
+    imageCollection: SketchMSImageCollection,
+    images: js.Array[_],
+    do_objectID: java.lang.String = null
+  ): SketchMSAssetCollection = {
+    val __obj = js.Dynamic.literal(_class = _class, colors = colors, gradients = gradients, imageCollection = imageCollection, images = images)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSAssetCollection]
+  }
+}
+

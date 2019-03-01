@@ -15,3 +15,20 @@ trait Logger extends js.Object {
   def warn(params: js.Any*): scala.Unit
 }
 
+object Logger {
+  @scala.inline
+  def apply(
+    debug: js.Function1[/* repeated */ js.Any, scala.Unit],
+    error: js.Function1[/* repeated */ js.Any, scala.Unit],
+    fatal: js.Function1[/* repeated */ js.Any, scala.Unit],
+    info: js.Function1[/* repeated */ js.Any, scala.Unit],
+    level: js.Function1[LoggerLevel, scala.Unit],
+    trace: js.Function1[/* repeated */ js.Any, scala.Unit],
+    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): Logger = {
+    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, info = info, level = level, trace = trace, warn = warn)
+  
+    __obj.asInstanceOf[Logger]
+  }
+}
+

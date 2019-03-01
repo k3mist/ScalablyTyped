@@ -51,3 +51,23 @@ trait sizeAgeRendererResult
   var visualVariables: js.Array[SizeVariable]
 }
 
+object sizeAgeRendererResult {
+  @scala.inline
+  def apply(
+    basemapId: java.lang.String,
+    constructor: js.Function,
+    defaultValuesUsed: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: ClassBreaksRenderer,
+    sizeScheme: SizeScheme,
+    statistics: SummaryStatisticsResult,
+    unit: java.lang.String,
+    visualVariables: js.Array[SizeVariable]
+  ): sizeAgeRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme, statistics = statistics, unit = unit, visualVariables = visualVariables)
+  
+    __obj.asInstanceOf[sizeAgeRendererResult]
+  }
+}
+

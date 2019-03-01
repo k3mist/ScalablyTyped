@@ -37,3 +37,20 @@ trait IFileUpdate
   var url: java.lang.String
 }
 
+object IFileUpdate {
+  @scala.inline
+  def apply(
+    created: scala.Double,
+    id: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.file_upload,
+    purpose: IPurpose,
+    size: scala.Double,
+    `type`: stripeLib.stripeLibStrings.pdf | stripeLib.stripeLibStrings.jpg | stripeLib.stripeLibStrings.png,
+    url: java.lang.String
+  ): IFileUpdate = {
+    val __obj = js.Dynamic.literal(created = created, id = id, `object` = `object`, purpose = purpose, size = size, `type` = `type`.asInstanceOf[js.Any], url = url)
+  
+    __obj.asInstanceOf[IFileUpdate]
+  }
+}
+

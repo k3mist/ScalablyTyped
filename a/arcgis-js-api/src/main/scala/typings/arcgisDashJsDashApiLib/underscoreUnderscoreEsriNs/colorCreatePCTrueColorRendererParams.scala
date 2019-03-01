@@ -31,3 +31,20 @@ trait colorCreatePCTrueColorRendererParams
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object colorCreatePCTrueColorRendererParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: PointCloudLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    density: scala.Int | scala.Double = null,
+    size: java.lang.String = null
+  ): colorCreatePCTrueColorRendererParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[colorCreatePCTrueColorRendererParams]
+  }
+}
+

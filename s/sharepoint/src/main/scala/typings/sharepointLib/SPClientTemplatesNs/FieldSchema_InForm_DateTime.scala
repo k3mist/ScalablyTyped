@@ -28,3 +28,42 @@ trait FieldSchema_InForm_DateTime extends FieldSchema_InForm {
   var WorkWeek: java.lang.String
 }
 
+object FieldSchema_InForm_DateTime {
+  @scala.inline
+  def apply(
+    AllowGridEditing: scala.Boolean,
+    CalendarType: DateTimeCalendarType,
+    Description: java.lang.String,
+    Direction: java.lang.String,
+    DisplayFormat: DateTimeDisplayFormat,
+    FieldType: java.lang.String,
+    FirstDayOfWeek: scala.Double,
+    FirstWeekOfYear: scala.Double,
+    Hidden: scala.Boolean,
+    HijriAdjustment: scala.Double,
+    HoursMode24: scala.Boolean,
+    HoursOptions: js.Array[java.lang.String],
+    IMEMode: js.Any,
+    Id: java.lang.String,
+    LanguageId: java.lang.String,
+    LocaleId: java.lang.String,
+    MaxJDay: scala.Double,
+    MinJDay: scala.Double,
+    Name: java.lang.String,
+    ReadOnlyField: scala.Boolean,
+    Required: scala.Boolean,
+    RestrictedMode: scala.Boolean,
+    ShowWeekNumber: scala.Boolean,
+    TimeSeparator: java.lang.String,
+    TimeZoneDifference: java.lang.String,
+    Title: java.lang.String,
+    Type: java.lang.String,
+    UseMinWidth: scala.Boolean,
+    WorkWeek: java.lang.String
+  ): FieldSchema_InForm_DateTime = {
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, CalendarType = CalendarType, Description = Description, Direction = Direction, DisplayFormat = DisplayFormat, FieldType = FieldType, FirstDayOfWeek = FirstDayOfWeek, FirstWeekOfYear = FirstWeekOfYear, Hidden = Hidden, HijriAdjustment = HijriAdjustment, HoursMode24 = HoursMode24, HoursOptions = HoursOptions, IMEMode = IMEMode, Id = Id, LanguageId = LanguageId, LocaleId = LocaleId, MaxJDay = MaxJDay, MinJDay = MinJDay, Name = Name, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, ShowWeekNumber = ShowWeekNumber, TimeSeparator = TimeSeparator, TimeZoneDifference = TimeZoneDifference, Title = Title, Type = Type, UseMinWidth = UseMinWidth, WorkWeek = WorkWeek)
+  
+    __obj.asInstanceOf[FieldSchema_InForm_DateTime]
+  }
+}
+

@@ -15,3 +15,19 @@ trait RowAxisLabelRendererContext[K2, D2] extends js.Object {
   var rowData: Row[K2]
 }
 
+object RowAxisLabelRendererContext {
+  @scala.inline
+  def apply[K2, D2](
+    componentElement: stdLib.Element,
+    itemData: js.Array[D2],
+    maxHeight: scala.Double,
+    maxWidth: scala.Double,
+    parentElement: stdLib.Element,
+    rowData: Row[K2]
+  ): RowAxisLabelRendererContext[K2, D2] = {
+    val __obj = js.Dynamic.literal(componentElement = componentElement, itemData = itemData, maxHeight = maxHeight, maxWidth = maxWidth, parentElement = parentElement, rowData = rowData)
+  
+    __obj.asInstanceOf[RowAxisLabelRendererContext[K2, D2]]
+  }
+}
+

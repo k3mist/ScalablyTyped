@@ -12,3 +12,17 @@ trait Session extends js.Object {
   def toCrowd(): SessionObj
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    createdAt: stdLib.Date,
+    expiresAt: stdLib.Date,
+    toCrowd: js.Function0[SessionObj],
+    token: java.lang.String
+  ): Session = {
+    val __obj = js.Dynamic.literal(createdAt = createdAt, expiresAt = expiresAt, toCrowd = toCrowd, token = token)
+  
+    __obj.asInstanceOf[Session]
+  }
+}
+

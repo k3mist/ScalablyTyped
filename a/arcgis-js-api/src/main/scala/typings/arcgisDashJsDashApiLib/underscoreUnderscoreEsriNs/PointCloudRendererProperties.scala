@@ -28,3 +28,18 @@ trait PointCloudRendererProperties extends js.Object {
   var pointsPerInch: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PointCloudRendererProperties {
+  @scala.inline
+  def apply(
+    colorModulation: PointCloudRendererColorModulation = null,
+    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
+    pointsPerInch: scala.Int | scala.Double = null
+  ): PointCloudRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointCloudRendererProperties]
+  }
+}
+

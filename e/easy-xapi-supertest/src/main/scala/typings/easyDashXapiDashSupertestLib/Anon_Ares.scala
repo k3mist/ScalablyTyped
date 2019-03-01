@@ -15,3 +15,20 @@ trait Anon_Ares extends js.Object {
   var zlib: java.lang.String
 }
 
+object Anon_Ares {
+  @scala.inline
+  def apply(
+    ares: java.lang.String,
+    http_parser: java.lang.String,
+    node: java.lang.String,
+    openssl: java.lang.String,
+    uv: java.lang.String,
+    v8: java.lang.String,
+    zlib: java.lang.String
+  ): Anon_Ares = {
+    val __obj = js.Dynamic.literal(ares = ares, http_parser = http_parser, node = node, openssl = openssl, uv = uv, v8 = v8, zlib = zlib)
+  
+    __obj.asInstanceOf[Anon_Ares]
+  }
+}
+

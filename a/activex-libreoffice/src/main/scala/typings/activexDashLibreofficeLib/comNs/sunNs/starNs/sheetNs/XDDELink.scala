@@ -26,3 +26,22 @@ trait XDDELink
   def getTopic(): java.lang.String
 }
 
+object XDDELink {
+  @scala.inline
+  def apply(
+    Application: java.lang.String,
+    Item: java.lang.String,
+    Topic: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getApplication: js.Function0[java.lang.String],
+    getItem: js.Function0[java.lang.String],
+    getTopic: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDDELink = {
+    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Topic = Topic, acquire = acquire, getApplication = getApplication, getItem = getItem, getTopic = getTopic, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDDELink]
+  }
+}
+

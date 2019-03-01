@@ -37,3 +37,24 @@ trait GetRoleResult extends js.Object {
   val uniqueId: java.lang.String
 }
 
+object GetRoleResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    assumeRolePolicy: java.lang.String,
+    assumeRolePolicyDocument: java.lang.String,
+    createDate: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    maxSessionDuration: scala.Double,
+    path: java.lang.String,
+    permissionsBoundary: java.lang.String,
+    roleId: java.lang.String,
+    uniqueId: java.lang.String
+  ): GetRoleResult = {
+    val __obj = js.Dynamic.literal(arn = arn, assumeRolePolicy = assumeRolePolicy, assumeRolePolicyDocument = assumeRolePolicyDocument, createDate = createDate, description = description, id = id, maxSessionDuration = maxSessionDuration, path = path, permissionsBoundary = permissionsBoundary, roleId = roleId, uniqueId = uniqueId)
+  
+    __obj.asInstanceOf[GetRoleResult]
+  }
+}
+

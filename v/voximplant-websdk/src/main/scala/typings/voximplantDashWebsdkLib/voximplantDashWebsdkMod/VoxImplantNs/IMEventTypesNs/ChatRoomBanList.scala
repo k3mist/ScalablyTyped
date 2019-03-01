@@ -20,3 +20,15 @@ trait ChatRoomBanList
   var room: java.lang.String
 }
 
+object ChatRoomBanList {
+  @scala.inline
+  def apply(
+    participants: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatRoomParticipant],
+    room: java.lang.String
+  ): ChatRoomBanList = {
+    val __obj = js.Dynamic.literal(participants = participants, room = room)
+  
+    __obj.asInstanceOf[ChatRoomBanList]
+  }
+}
+

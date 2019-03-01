@@ -16,3 +16,17 @@ trait XAutoFormattable
   def autoFormat(aName: java.lang.String): scala.Unit
 }
 
+object XAutoFormattable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    autoFormat: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAutoFormattable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, autoFormat = autoFormat, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAutoFormattable]
+  }
+}
+

@@ -32,3 +32,17 @@ trait R3ConstructorFactoryMetadata extends R3FactoryMetadata {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
 }
 
+object R3ConstructorFactoryMetadata {
+  @scala.inline
+  def apply(
+    injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
+    name: java.lang.String,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    deps: js.Array[R3DependencyMetadata] = null
+  ): R3ConstructorFactoryMetadata = {
+    val __obj = js.Dynamic.literal(injectFn = injectFn, name = name, `type` = `type`)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3ConstructorFactoryMetadata]
+  }
+}
+

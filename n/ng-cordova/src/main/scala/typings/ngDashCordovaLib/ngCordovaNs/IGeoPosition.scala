@@ -10,3 +10,12 @@ trait IGeoPosition extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object IGeoPosition {
+  @scala.inline
+  def apply(coords: IGeoCoordinates, timestamp: stdLib.Date): IGeoPosition = {
+    val __obj = js.Dynamic.literal(coords = coords, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IGeoPosition]
+  }
+}
+

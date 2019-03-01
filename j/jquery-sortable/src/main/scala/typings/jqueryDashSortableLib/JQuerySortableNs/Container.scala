@@ -16,3 +16,21 @@ trait Container extends js.Object {
   var target: jqueryDashSortableLib.JQuery
 }
 
+object Container {
+  @scala.inline
+  def apply(
+    el: jqueryDashSortableLib.JQuery,
+    group: ContainerGroup,
+    handle: java.lang.String,
+    itemDimensions: js.Array[Dimensions],
+    items: js.Array[stdLib.HTMLElement],
+    options: Options,
+    rootGroup: ContainerGroup,
+    target: jqueryDashSortableLib.JQuery
+  ): Container = {
+    val __obj = js.Dynamic.literal(el = el, group = group, handle = handle, itemDimensions = itemDimensions, items = items, options = options, rootGroup = rootGroup, target = target)
+  
+    __obj.asInstanceOf[Container]
+  }
+}
+

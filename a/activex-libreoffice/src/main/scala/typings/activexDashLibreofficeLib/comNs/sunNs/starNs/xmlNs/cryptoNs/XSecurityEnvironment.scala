@@ -50,3 +50,45 @@ trait XSecurityEnvironment
   ): scala.Double
 }
 
+object XSecurityEnvironment {
+  @scala.inline
+  def apply(
+    PersonalCertificates: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
+    SecurityEnvironmentInformation: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    buildCertificatePath: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+    ],
+    createCertificateFromAscii: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    createCertificateFromRaw: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    getCertificate: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    getCertificateCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, scala.Double],
+    getPersonalCertificates: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+    ],
+    getSecurityEnvironmentInformation: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    verifyCertificate: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate], 
+      scala.Double
+    ]
+  ): XSecurityEnvironment = {
+    val __obj = js.Dynamic.literal(PersonalCertificates = PersonalCertificates, SecurityEnvironmentInformation = SecurityEnvironmentInformation, acquire = acquire, buildCertificatePath = buildCertificatePath, createCertificateFromAscii = createCertificateFromAscii, createCertificateFromRaw = createCertificateFromRaw, getCertificate = getCertificate, getCertificateCharacters = getCertificateCharacters, getPersonalCertificates = getPersonalCertificates, getSecurityEnvironmentInformation = getSecurityEnvironmentInformation, queryInterface = queryInterface, release = release, verifyCertificate = verifyCertificate)
+  
+    __obj.asInstanceOf[XSecurityEnvironment]
+  }
+}
+

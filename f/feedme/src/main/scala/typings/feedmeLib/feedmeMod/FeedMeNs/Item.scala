@@ -22,3 +22,27 @@ trait Item
   var title: java.lang.String
 }
 
+object Item {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    categories: js.Array[java.lang.String],
+    comments: java.lang.String,
+    date: java.lang.String,
+    description: java.lang.String,
+    enclosures: js.Array[java.lang.String],
+    guid: java.lang.String | Guid,
+    image: Image,
+    link: java.lang.String,
+    origlink: java.lang.String,
+    pubdate: java.lang.String,
+    summary: java.lang.String,
+    title: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Item = {
+    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, date = date, description = description, enclosures = enclosures, guid = guid.asInstanceOf[js.Any], image = image, link = link, origlink = origlink, pubdate = pubdate, summary = summary, title = title)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Item]
+  }
+}
+

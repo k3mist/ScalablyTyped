@@ -10,3 +10,12 @@ trait Navigator extends js.Object {
   var notification: Notification
 }
 
+object Navigator {
+  @scala.inline
+  def apply(notification: Notification): Navigator = {
+    val __obj = js.Dynamic.literal(notification = notification)
+  
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

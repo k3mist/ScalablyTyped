@@ -38,3 +38,20 @@ trait AvgAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object AvgAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, AvgAggregation],
+    lang: js.Function1[java.lang.String, AvgAggregation],
+    params: js.Function1[js.Object, AvgAggregation],
+    script: js.Function1[java.lang.String, AvgAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, AvgAggregation],
+    toJSON: js.Function0[js.Any]
+  ): AvgAggregation = {
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
+    __obj.asInstanceOf[AvgAggregation]
+  }
+}
+

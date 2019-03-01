@@ -21,3 +21,18 @@ trait UniqueValuesResultUniqueValueInfos
   var value: java.lang.String | scala.Double
 }
 
+object UniqueValuesResultUniqueValueInfos {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    count: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: java.lang.String | scala.Double
+  ): UniqueValuesResultUniqueValueInfos = {
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
+  }
+}
+

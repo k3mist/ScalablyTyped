@@ -10,3 +10,12 @@ trait UrlWithIndices extends EntityWithIndices {
   var url: java.lang.String
 }
 
+object UrlWithIndices {
+  @scala.inline
+  def apply(indices: js.Tuple2[scala.Double, scala.Double], url: java.lang.String): UrlWithIndices = {
+    val __obj = js.Dynamic.literal(indices = indices, url = url)
+  
+    __obj.asInstanceOf[UrlWithIndices]
+  }
+}
+

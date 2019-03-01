@@ -14,3 +14,21 @@ trait ApolloCurrentResult[T] extends js.Object {
   var partial: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ApolloCurrentResult {
+  @scala.inline
+  def apply[T](
+    data: T | js.Object,
+    loading: scala.Boolean,
+    networkStatus: apolloDashClientLib.coreNetworkStatusMod.NetworkStatus,
+    error: apolloDashClientLib.errorsApolloErrorMod.ApolloError = null,
+    errors: js.Array[graphqlLib.graphqlMod.GraphQLError] = null,
+    partial: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApolloCurrentResult[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading, networkStatus = networkStatus)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    __obj.asInstanceOf[ApolloCurrentResult[T]]
+  }
+}
+

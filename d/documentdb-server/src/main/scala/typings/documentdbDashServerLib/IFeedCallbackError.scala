@@ -13,3 +13,12 @@ trait IFeedCallbackError extends js.Object {
   var number: scala.Double
 }
 
+object IFeedCallbackError {
+  @scala.inline
+  def apply(body: java.lang.String, number: scala.Double): IFeedCallbackError = {
+    val __obj = js.Dynamic.literal(body = body, number = number)
+  
+    __obj.asInstanceOf[IFeedCallbackError]
+  }
+}
+

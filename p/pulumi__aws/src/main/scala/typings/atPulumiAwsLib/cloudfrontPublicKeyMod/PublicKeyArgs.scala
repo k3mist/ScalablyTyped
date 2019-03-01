@@ -24,3 +24,19 @@ trait PublicKeyArgs extends js.Object {
   val namePrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object PublicKeyArgs {
+  @scala.inline
+  def apply(
+    encodedKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    comment: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): PublicKeyArgs = {
+    val __obj = js.Dynamic.literal(encodedKey = encodedKey.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublicKeyArgs]
+  }
+}
+

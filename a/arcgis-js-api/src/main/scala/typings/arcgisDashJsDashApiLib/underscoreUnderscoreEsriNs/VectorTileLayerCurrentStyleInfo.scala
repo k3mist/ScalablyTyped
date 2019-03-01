@@ -45,3 +45,22 @@ trait VectorTileLayerCurrentStyleInfo
   var styleUrl: java.lang.String
 }
 
+object VectorTileLayerCurrentStyleInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    glyphsUrl: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layerDefinition: js.Any,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    serviceUrl: java.lang.String,
+    spriteUrl: java.lang.String,
+    style: js.Any,
+    styleUrl: java.lang.String
+  ): VectorTileLayerCurrentStyleInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, glyphsUrl = glyphsUrl, hasOwnProperty = hasOwnProperty, layerDefinition = layerDefinition, propertyIsEnumerable = propertyIsEnumerable, serviceUrl = serviceUrl, spriteUrl = spriteUrl, style = style, styleUrl = styleUrl)
+  
+    __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
+  }
+}
+

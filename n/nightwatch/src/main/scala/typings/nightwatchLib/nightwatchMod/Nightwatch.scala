@@ -10,3 +10,12 @@ trait Nightwatch extends js.Object {
   var client: NightwatchClient
 }
 
+object Nightwatch {
+  @scala.inline
+  def apply(api: NightwatchAPI, client: NightwatchClient): Nightwatch = {
+    val __obj = js.Dynamic.literal(api = api, client = client)
+  
+    __obj.asInstanceOf[Nightwatch]
+  }
+}
+

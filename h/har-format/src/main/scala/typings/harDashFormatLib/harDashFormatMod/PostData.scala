@@ -24,3 +24,17 @@ trait PostData extends js.Object {
   var text: java.lang.String
 }
 
+object PostData {
+  @scala.inline
+  def apply(
+    mimeType: java.lang.String,
+    params: js.Array[Param],
+    text: java.lang.String,
+    comment: java.lang.String = null
+  ): PostData = {
+    val __obj = js.Dynamic.literal(mimeType = mimeType, params = params, text = text)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    __obj.asInstanceOf[PostData]
+  }
+}
+

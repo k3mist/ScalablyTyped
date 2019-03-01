@@ -39,3 +39,51 @@ trait IAnalyticsServiceProvider
   def withBase(value: scala.Boolean): scala.Unit
 }
 
+object IAnalyticsServiceProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    developerMode: js.Function1[scala.Boolean, scala.Unit],
+    excludeRoutes: js.Function1[js.Array[java.lang.String], scala.Unit],
+    firstPageview: js.Function1[scala.Boolean, scala.Unit],
+    queryKeysBlacklist: js.Function1[js.Array[java.lang.String], scala.Unit],
+    queryKeysWhitelist: js.Function1[js.Array[java.lang.String], scala.Unit],
+    registerClearCookies: js.Function1[js.Any, scala.Unit],
+    registerEventTrack: js.Function1[
+      js.Function2[/* eventName */ java.lang.String, /* properties */ js.UndefOr[js.Any], _], 
+      scala.Unit
+    ],
+    registerIncrementProperty: js.Function1[
+      js.Function2[/* property */ java.lang.String, /* value */ js.UndefOr[js.Any], _], 
+      scala.Unit
+    ],
+    registerPageTrack: js.Function1[
+      js.Function2[
+        /* path */ java.lang.String, 
+        /* location */ js.UndefOr[angularLib.angularMod.angularNs.ILocationService], 
+        _
+      ], 
+      scala.Unit
+    ],
+    registerSetAlias: js.Function1[js.Function1[/* alias */ java.lang.String, _], scala.Unit],
+    registerSetSuperProperties: js.Function1[js.Function1[/* superProperties */ js.Any, _], scala.Unit],
+    registerSetSuperPropertiesOnce: js.Function1[js.Function1[/* superProperties */ js.Any, _], scala.Unit],
+    registerSetUserProperties: js.Function1[js.Function1[/* userProperties */ js.Any, _], scala.Unit],
+    registerSetUserPropertiesOnce: js.Function1[js.Function1[/* userProperties */ js.Any, _], scala.Unit],
+    registerSetUsername: js.Function1[js.Function1[/* username */ java.lang.String, _], scala.Unit],
+    registerTransactionTrack: js.Function1[js.Any, scala.Unit],
+    registerUserTimings: js.Function1[js.Function1[/* properties */ js.Any, _], scala.Unit],
+    settings: angularticsLib.Anon_BufferFlushDelay,
+    trackExceptions: js.Function1[scala.Boolean, scala.Unit],
+    trackRoutes: js.Function1[scala.Boolean, scala.Unit],
+    trackStates: js.Function1[scala.Boolean, scala.Unit],
+    virtualPageviews: js.Function1[scala.Boolean, scala.Unit],
+    withAutoBase: js.Function1[scala.Boolean, scala.Unit],
+    withBase: js.Function1[scala.Boolean, scala.Unit]
+  ): IAnalyticsServiceProvider = {
+    val __obj = js.Dynamic.literal($get = $get, developerMode = developerMode, excludeRoutes = excludeRoutes, firstPageview = firstPageview, queryKeysBlacklist = queryKeysBlacklist, queryKeysWhitelist = queryKeysWhitelist, registerClearCookies = registerClearCookies, registerEventTrack = registerEventTrack, registerIncrementProperty = registerIncrementProperty, registerPageTrack = registerPageTrack, registerSetAlias = registerSetAlias, registerSetSuperProperties = registerSetSuperProperties, registerSetSuperPropertiesOnce = registerSetSuperPropertiesOnce, registerSetUserProperties = registerSetUserProperties, registerSetUserPropertiesOnce = registerSetUserPropertiesOnce, registerSetUsername = registerSetUsername, registerTransactionTrack = registerTransactionTrack, registerUserTimings = registerUserTimings, settings = settings, trackExceptions = trackExceptions, trackRoutes = trackRoutes, trackStates = trackStates, virtualPageviews = virtualPageviews, withAutoBase = withAutoBase, withBase = withBase)
+  
+    __obj.asInstanceOf[IAnalyticsServiceProvider]
+  }
+}
+

@@ -14,3 +14,12 @@ trait ErrorObject extends js.Object {
   var statusText: java.lang.String
 }
 
+object ErrorObject {
+  @scala.inline
+  def apply(response: java.lang.String, status: scala.Double, statusText: java.lang.String): ErrorObject = {
+    val __obj = js.Dynamic.literal(response = response, status = status, statusText = statusText)
+  
+    __obj.asInstanceOf[ErrorObject]
+  }
+}
+

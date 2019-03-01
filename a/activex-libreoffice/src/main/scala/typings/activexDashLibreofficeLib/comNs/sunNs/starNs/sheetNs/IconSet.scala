@@ -13,3 +13,22 @@ trait IconSet extends XConditionEntry {
   var ShowValue: scala.Boolean
 }
 
+object IconSet {
+  @scala.inline
+  def apply(
+    IconSetEntries: activexDashInteropLib.SafeArray[XIconSetEntry],
+    Icons: scala.Double,
+    Reverse: scala.Boolean,
+    ShowValue: scala.Boolean,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getType: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): IconSet = {
+    val __obj = js.Dynamic.literal(IconSetEntries = IconSetEntries, Icons = Icons, Reverse = Reverse, ShowValue = ShowValue, Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[IconSet]
+  }
+}
+

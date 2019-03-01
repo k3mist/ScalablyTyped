@@ -11,3 +11,12 @@ trait Index extends js.Object {
   var Precision: scala.Double
 }
 
+object Index {
+  @scala.inline
+  def apply(DataType: java.lang.String, Kind: IndexKind, Precision: scala.Double): Index = {
+    val __obj = js.Dynamic.literal(DataType = DataType, Kind = Kind, Precision = Precision)
+  
+    __obj.asInstanceOf[Index]
+  }
+}
+

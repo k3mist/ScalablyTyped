@@ -13,3 +13,18 @@ trait SketchMSSharedStyle extends js.Object {
   var value: SketchMSStyle
 }
 
+object SketchMSSharedStyle {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.sharedStyle,
+    name: java.lang.String,
+    objectID: java.lang.String,
+    value: SketchMSStyle,
+    do_objectID: java.lang.String = null
+  ): SketchMSSharedStyle = {
+    val __obj = js.Dynamic.literal(_class = _class, name = name, objectID = objectID, value = value)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSSharedStyle]
+  }
+}
+

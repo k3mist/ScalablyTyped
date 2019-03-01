@@ -26,3 +26,16 @@ trait ASPxClientAppointmentDropEventArgs extends ASPxClientEventArgs {
   var operation: ASPxClientAppointmentOperation
 }
 
+object ASPxClientAppointmentDropEventArgs {
+  @scala.inline
+  def apply(
+    dragInformation: js.Array[ASPxClientAppointmentDragInfo],
+    handled: scala.Boolean,
+    operation: ASPxClientAppointmentOperation
+  ): ASPxClientAppointmentDropEventArgs = {
+    val __obj = js.Dynamic.literal(dragInformation = dragInformation, handled = handled, operation = operation)
+  
+    __obj.asInstanceOf[ASPxClientAppointmentDropEventArgs]
+  }
+}
+

@@ -22,3 +22,17 @@ trait RuleArgs extends js.Object {
   ] = js.undefined
 }
 
+object RuleArgs {
+  @scala.inline
+  def apply(
+    metricName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    predicates: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]] = null
+  ): RuleArgs = {
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (predicates != null) __obj.updateDynamic("predicates")(predicates.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleArgs]
+  }
+}
+

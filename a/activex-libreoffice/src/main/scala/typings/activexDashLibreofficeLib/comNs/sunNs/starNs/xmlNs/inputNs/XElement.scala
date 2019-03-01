@@ -76,3 +76,29 @@ trait XElement
   def startChildElement(uid: scala.Double, localName: java.lang.String, xAttributes: XAttributes): XElement
 }
 
+object XElement {
+  @scala.inline
+  def apply(
+    Attributes: XAttributes,
+    LocalName: java.lang.String,
+    Parent: XElement,
+    Uid: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    characters: js.Function1[java.lang.String, scala.Unit],
+    endElement: js.Function0[scala.Unit],
+    getAttributes: js.Function0[XAttributes],
+    getLocalName: js.Function0[java.lang.String],
+    getParent: js.Function0[XElement],
+    getUid: js.Function0[scala.Double],
+    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
+    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startChildElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
+  ): XElement = {
+    val __obj = js.Dynamic.literal(Attributes = Attributes, LocalName = LocalName, Parent = Parent, Uid = Uid, acquire = acquire, characters = characters, endElement = endElement, getAttributes = getAttributes, getLocalName = getLocalName, getParent = getParent, getUid = getUid, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, startChildElement = startChildElement)
+  
+    __obj.asInstanceOf[XElement]
+  }
+}
+

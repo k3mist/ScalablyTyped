@@ -16,3 +16,21 @@ trait Anon_AnimationPolicy extends js.Object {
   var virtualKeyboard: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
 }
 
+object Anon_AnimationPolicy {
+  @scala.inline
+  def apply(
+    animationPolicy: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    autoclick: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    highContrast: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    largeCursor: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    screenMagnifier: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    spokenFeedback: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    stickyKeys: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    virtualKeyboard: chromeLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
+  ): Anon_AnimationPolicy = {
+    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy, autoclick = autoclick, highContrast = highContrast, largeCursor = largeCursor, screenMagnifier = screenMagnifier, spokenFeedback = spokenFeedback, stickyKeys = stickyKeys, virtualKeyboard = virtualKeyboard)
+  
+    __obj.asInstanceOf[Anon_AnimationPolicy]
+  }
+}
+

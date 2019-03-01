@@ -38,3 +38,53 @@ trait Wallet extends js.Object {
   ): scala.Unit
 }
 
+object Wallet {
+  @scala.inline
+  def apply(
+    accountInfo: js.Function1[
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.AccountInfoResult], 
+      scala.Unit
+    ],
+    incomingTransferAccept: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferAcceptResult], 
+      scala.Unit
+    ],
+    incomingTransferReject: js.Function2[
+      java.lang.String, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferRejectResult], 
+      scala.Unit
+    ],
+    operationDetails: js.Function2[
+      java.lang.String, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationDetailsResult], 
+      scala.Unit
+    ],
+    operationHistory: js.Function2[
+      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryOptions, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryResult], 
+      scala.Unit
+    ],
+    processPayment: js.Function2[
+      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentOptions, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentResult], 
+      scala.Unit
+    ],
+    requestPayment: js.Function2[
+      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentOptions, 
+      ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentResult], 
+      scala.Unit
+    ],
+    sendAuthenticatedRequest: js.Function2[
+      yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.SendAuthenticatedRequestParams, 
+      ResponseCallback[_], 
+      scala.Unit
+    ]
+  ): Wallet = {
+    val __obj = js.Dynamic.literal(accountInfo = accountInfo, incomingTransferAccept = incomingTransferAccept, incomingTransferReject = incomingTransferReject, operationDetails = operationDetails, operationHistory = operationHistory, processPayment = processPayment, requestPayment = requestPayment, sendAuthenticatedRequest = sendAuthenticatedRequest)
+  
+    __obj.asInstanceOf[Wallet]
+  }
+}
+

@@ -26,3 +26,18 @@ trait RolePolicyArgs extends js.Object {
   val role: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iamRoleMod.Role]
 }
 
+object RolePolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument],
+    role: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iamRoleMod.Role],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): RolePolicyArgs = {
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RolePolicyArgs]
+  }
+}
+

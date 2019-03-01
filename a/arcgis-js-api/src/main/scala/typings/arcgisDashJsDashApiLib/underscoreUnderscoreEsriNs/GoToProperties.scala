@@ -14,3 +14,12 @@ trait GoToProperties extends js.Object {
   var goToOverride: js.UndefOr[GoToOverride] = js.undefined
 }
 
+object GoToProperties {
+  @scala.inline
+  def apply(goToOverride: GoToOverride = null): GoToProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    __obj.asInstanceOf[GoToProperties]
+  }
+}
+

@@ -40,3 +40,21 @@ trait PublisherLinks extends js.Object {
   var twitter: Link
 }
 
+object PublisherLinks {
+  @scala.inline
+  def apply(
+    company: Link,
+    fallbackLogo: Link,
+    linkedIn: Link,
+    logo: Link,
+    profile: Link,
+    sourceCode: Link,
+    support: Link,
+    twitter: Link
+  ): PublisherLinks = {
+    val __obj = js.Dynamic.literal(company = company, fallbackLogo = fallbackLogo, linkedIn = linkedIn, logo = logo, profile = profile, sourceCode = sourceCode, support = support, twitter = twitter)
+  
+    __obj.asInstanceOf[PublisherLinks]
+  }
+}
+

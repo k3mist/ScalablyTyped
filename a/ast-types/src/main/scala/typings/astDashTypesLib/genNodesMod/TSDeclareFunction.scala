@@ -23,3 +23,23 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSDeclareFunction
 }
 
+object TSDeclareFunction {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    declare: scala.Boolean,
+    generator: scala.Boolean,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSDeclareFunction,
+    id: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.NoopKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSDeclareFunction = {
+    val __obj = js.Dynamic.literal(async = async, declare = declare, generator = generator, params = params, `type` = `type`)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSDeclareFunction]
+  }
+}
+

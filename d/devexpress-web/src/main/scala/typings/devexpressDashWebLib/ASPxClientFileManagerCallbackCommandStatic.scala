@@ -28,3 +28,33 @@ trait ASPxClientFileManagerCallbackCommandStatic extends js.Object {
   var VirtualScrolling: java.lang.String
 }
 
+object ASPxClientFileManagerCallbackCommandStatic {
+  @scala.inline
+  def apply(
+    ChangeFolder: java.lang.String,
+    ChangeFolderInTreeView: java.lang.String,
+    CopyItems: java.lang.String,
+    CreateFolder: java.lang.String,
+    CustomCallback: java.lang.String,
+    DeleteItems: java.lang.String,
+    Download: java.lang.String,
+    FolderBrowserTreeView: java.lang.String,
+    FoldersTreeView: java.lang.String,
+    GetAllItems: java.lang.String,
+    GetFileList: java.lang.String,
+    GridView: java.lang.String,
+    GridViewVirtualScrolling: java.lang.String,
+    MoveItems: java.lang.String,
+    Refresh: java.lang.String,
+    RenameItem: java.lang.String,
+    SelectedFileOpened: java.lang.String,
+    ShowCreateFolderEditorInTreeView: java.lang.String,
+    ShowFolderBrowserDialog: java.lang.String,
+    VirtualScrolling: java.lang.String
+  ): ASPxClientFileManagerCallbackCommandStatic = {
+    val __obj = js.Dynamic.literal(ChangeFolder = ChangeFolder, ChangeFolderInTreeView = ChangeFolderInTreeView, CopyItems = CopyItems, CreateFolder = CreateFolder, CustomCallback = CustomCallback, DeleteItems = DeleteItems, Download = Download, FolderBrowserTreeView = FolderBrowserTreeView, FoldersTreeView = FoldersTreeView, GetAllItems = GetAllItems, GetFileList = GetFileList, GridView = GridView, GridViewVirtualScrolling = GridViewVirtualScrolling, MoveItems = MoveItems, Refresh = Refresh, RenameItem = RenameItem, SelectedFileOpened = SelectedFileOpened, ShowCreateFolderEditorInTreeView = ShowCreateFolderEditorInTreeView, ShowFolderBrowserDialog = ShowFolderBrowserDialog, VirtualScrolling = VirtualScrolling)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerCallbackCommandStatic]
+  }
+}
+

@@ -27,3 +27,12 @@ trait EnvVar extends js.Object {
   val valueFrom: EnvVarSource
 }
 
+object EnvVar {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String, valueFrom: EnvVarSource): EnvVar = {
+    val __obj = js.Dynamic.literal(name = name, value = value, valueFrom = valueFrom)
+  
+    __obj.asInstanceOf[EnvVar]
+  }
+}
+

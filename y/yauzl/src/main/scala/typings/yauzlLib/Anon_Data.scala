@@ -10,3 +10,12 @@ trait Anon_Data extends js.Object {
   var id: scala.Double
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(data: nodeLib.Buffer, id: scala.Double): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, id = id)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

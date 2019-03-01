@@ -30,3 +30,17 @@ trait AuditSink extends js.Object {
   val spec: AuditSinkSpec
 }
 
+object AuditSink {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: AuditSinkSpec
+  ): AuditSink = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec)
+  
+    __obj.asInstanceOf[AuditSink]
+  }
+}
+

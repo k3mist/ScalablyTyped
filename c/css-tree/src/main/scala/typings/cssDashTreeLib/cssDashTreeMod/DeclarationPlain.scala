@@ -15,3 +15,18 @@ trait DeclarationPlain
   var value: ValuePlain | Raw
 }
 
+object DeclarationPlain {
+  @scala.inline
+  def apply(
+    important: scala.Boolean | java.lang.String,
+    property: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Declaration,
+    value: ValuePlain | Raw,
+    loc: CssLocation = null
+  ): DeclarationPlain = {
+    val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property, `type` = `type`, value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[DeclarationPlain]
+  }
+}
+

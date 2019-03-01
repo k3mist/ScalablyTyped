@@ -87,3 +87,30 @@ trait Event extends js.Object {
   val `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    count: scala.Double,
+    eventTime: java.lang.String,
+    firstTimestamp: java.lang.String,
+    involvedObject: ObjectReference,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event,
+    lastTimestamp: java.lang.String,
+    message: java.lang.String,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    reason: java.lang.String,
+    related: ObjectReference,
+    reportingComponent: java.lang.String,
+    reportingInstance: java.lang.String,
+    series: EventSeries,
+    source: EventSource,
+    `type`: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(action = action, apiVersion = apiVersion, count = count, eventTime = eventTime, firstTimestamp = firstTimestamp, involvedObject = involvedObject, kind = kind, lastTimestamp = lastTimestamp, message = message, metadata = metadata, reason = reason, related = related, reportingComponent = reportingComponent, reportingInstance = reportingInstance, series = series, source = source, `type` = `type`)
+  
+    __obj.asInstanceOf[Event]
+  }
+}
+

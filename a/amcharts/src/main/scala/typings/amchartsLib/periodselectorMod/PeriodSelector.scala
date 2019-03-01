@@ -79,3 +79,30 @@ trait PeriodSelector extends js.Object {
   def removeListener(chart: amchartsLib.amchartMod.default, `type`: java.lang.String, handler: js.Any): scala.Unit
 }
 
+object PeriodSelector {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* e */ amchartsLib.Anon_Count, scala.Unit], 
+      scala.Unit
+    ],
+    dateFormat: java.lang.String,
+    fromText: java.lang.String,
+    hideOutOfScopePeriods: scala.Boolean,
+    inputFieldWidth: scala.Double,
+    inputFieldsEnabled: scala.Boolean,
+    periods: js.Array[_],
+    periodsText: java.lang.String,
+    position: java.lang.String,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    selectFromStart: scala.Boolean,
+    toText: java.lang.String,
+    width: scala.Double
+  ): PeriodSelector = {
+    val __obj = js.Dynamic.literal(addListener = addListener, dateFormat = dateFormat, fromText = fromText, hideOutOfScopePeriods = hideOutOfScopePeriods, inputFieldWidth = inputFieldWidth, inputFieldsEnabled = inputFieldsEnabled, periods = periods, periodsText = periodsText, position = position, removeListener = removeListener, selectFromStart = selectFromStart, toText = toText, width = width)
+  
+    __obj.asInstanceOf[PeriodSelector]
+  }
+}
+

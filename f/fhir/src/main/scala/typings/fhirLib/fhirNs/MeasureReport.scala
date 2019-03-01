@@ -64,3 +64,60 @@ import scala.scalajs.js.annotation._
   var `type`: code
 }
 
+object MeasureReport {
+  @scala.inline
+  def apply(
+    measure: Reference,
+    period: Period,
+    status: code,
+    `type`: code,
+    _date: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _type: Element = null,
+    contained: js.Array[Resource] = null,
+    date: dateTime = null,
+    evaluatedResources: Reference = null,
+    extension: js.Array[Extension] = null,
+    group: js.Array[MeasureReportGroup] = null,
+    id: id = null,
+    identifier: Identifier = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    patient: Reference = null,
+    reportingOrganization: Reference = null,
+    resourceType: code = null,
+    text: Narrative = null
+  ): MeasureReport = {
+    val __obj = js.Dynamic.literal(measure = measure, period = period, status = status, `type` = `type`)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (evaluatedResources != null) __obj.updateDynamic("evaluatedResources")(evaluatedResources)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (reportingOrganization != null) __obj.updateDynamic("reportingOrganization")(reportingOrganization)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[MeasureReport]
+  }
+}
+

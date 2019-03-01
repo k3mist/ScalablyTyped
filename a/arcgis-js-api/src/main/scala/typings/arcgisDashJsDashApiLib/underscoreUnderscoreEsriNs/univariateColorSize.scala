@@ -70,3 +70,21 @@ trait univariateColorSize extends js.Object {
   def createVisualVariables(params: univariateColorSizeCreateVisualVariablesParams): arcgisDashJsDashApiLib.IPromise[VisualVariablesResult]
 }
 
+object univariateColorSize {
+  @scala.inline
+  def apply(
+    createContinuousRenderer: js.Function1[
+      univariateColorSizeCreateContinuousRendererParams, 
+      arcgisDashJsDashApiLib.IPromise[univariateColorSizeContinuousRendererResult]
+    ],
+    createVisualVariables: js.Function1[
+      univariateColorSizeCreateVisualVariablesParams, 
+      arcgisDashJsDashApiLib.IPromise[VisualVariablesResult]
+    ]
+  ): univariateColorSize = {
+    val __obj = js.Dynamic.literal(createContinuousRenderer = createContinuousRenderer, createVisualVariables = createVisualVariables)
+  
+    __obj.asInstanceOf[univariateColorSize]
+  }
+}
+

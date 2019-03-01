@@ -35,3 +35,19 @@ trait XDispatchInformationProvider
   def getSupportedCommandGroups(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XDispatchInformationProvider {
+  @scala.inline
+  def apply(
+    SupportedCommandGroups: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getConfigurableDispatchInformation: js.Function1[scala.Double, activexDashInteropLib.SafeArray[DispatchInformation]],
+    getSupportedCommandGroups: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDispatchInformationProvider = {
+    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = acquire, getConfigurableDispatchInformation = getConfigurableDispatchInformation, getSupportedCommandGroups = getSupportedCommandGroups, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDispatchInformationProvider]
+  }
+}
+

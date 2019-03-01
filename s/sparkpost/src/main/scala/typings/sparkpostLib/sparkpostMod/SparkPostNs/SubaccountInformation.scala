@@ -17,3 +17,18 @@ trait SubaccountInformation extends js.Object {
   var status: sparkpostLib.sparkpostLibStrings.active | sparkpostLib.sparkpostLibStrings.suspended | sparkpostLib.sparkpostLibStrings.terminated
 }
 
+object SubaccountInformation {
+  @scala.inline
+  def apply(
+    compliance_status: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String,
+    status: sparkpostLib.sparkpostLibStrings.active | sparkpostLib.sparkpostLibStrings.suspended | sparkpostLib.sparkpostLibStrings.terminated,
+    ip_pool: java.lang.String = null
+  ): SubaccountInformation = {
+    val __obj = js.Dynamic.literal(compliance_status = compliance_status, id = id, name = name, status = status.asInstanceOf[js.Any])
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
+    __obj.asInstanceOf[SubaccountInformation]
+  }
+}
+

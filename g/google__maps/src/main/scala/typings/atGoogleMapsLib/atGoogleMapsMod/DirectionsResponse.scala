@@ -37,3 +37,17 @@ trait DirectionsResponse extends js.Object {
   var status: DirectionsReponseStatus
 }
 
+object DirectionsResponse {
+  @scala.inline
+  def apply(
+    available_travel_modes: js.Array[java.lang.String],
+    geocoded_waypoints: js.Array[GeocodedWaypoint],
+    routes: js.Array[DirectionsRoute],
+    status: DirectionsReponseStatus
+  ): DirectionsResponse = {
+    val __obj = js.Dynamic.literal(available_travel_modes = available_travel_modes, geocoded_waypoints = geocoded_waypoints, routes = routes, status = status)
+  
+    __obj.asInstanceOf[DirectionsResponse]
+  }
+}
+

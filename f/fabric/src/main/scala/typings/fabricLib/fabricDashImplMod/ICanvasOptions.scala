@@ -197,3 +197,114 @@ trait ICanvasOptions extends IStaticCanvasOptions {
   var uniScaleTransform: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICanvasOptions {
+  @scala.inline
+  def apply(
+    allowTouchScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    altActionKey: java.lang.String = null,
+    altSelectionKey: java.lang.String = null,
+    backgroundColor: java.lang.String | Pattern = null,
+    backgroundImage: Image | java.lang.String = null,
+    backgroundVpt: js.UndefOr[scala.Boolean] = js.undefined,
+    centeredKey: java.lang.String = null,
+    centeredRotation: js.UndefOr[scala.Boolean] = js.undefined,
+    centeredScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    clipPath: Object = null,
+    clipTo: js.Function1[/* context */ stdLib.CanvasRenderingContext2D, scala.Unit] = null,
+    containerClass: java.lang.String = null,
+    controlsAboveOverlay: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultCursor: java.lang.String = null,
+    enableRetinaScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    fireMiddleClick: js.UndefOr[scala.Boolean] = js.undefined,
+    fireRightClick: js.UndefOr[scala.Boolean] = js.undefined,
+    freeDrawingCursor: java.lang.String = null,
+    hoverCursor: java.lang.String = null,
+    imageSmoothingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    isDrawingMode: js.UndefOr[scala.Boolean] = js.undefined,
+    moveCursor: java.lang.String = null,
+    notAllowedCursor: java.lang.String = null,
+    overlayColor: java.lang.String | Pattern = null,
+    overlayImage: Image = null,
+    overlayVpt: js.UndefOr[scala.Boolean] = js.undefined,
+    perPixelTargetFind: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveObjectStacking: js.UndefOr[scala.Boolean] = js.undefined,
+    renderOnAddRemove: js.UndefOr[scala.Boolean] = js.undefined,
+    rotationCursor: java.lang.String = null,
+    selection: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionBorderColor: java.lang.String = null,
+    selectionColor: java.lang.String = null,
+    selectionDashArray: js.Array[scala.Double] = null,
+    selectionFullyContained: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionKey: java.lang.String | js.Array[java.lang.String] = null,
+    selectionLineWidth: scala.Int | scala.Double = null,
+    skipOffscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    skipTargetFind: js.UndefOr[scala.Boolean] = js.undefined,
+    snapAngle: scala.Int | scala.Double = null,
+    snapThreshold: scala.Int | scala.Double = null,
+    stateful: js.UndefOr[scala.Boolean] = js.undefined,
+    stopContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    svgViewportTransformation: js.UndefOr[scala.Boolean] = js.undefined,
+    targetFindTolerance: scala.Int | scala.Double = null,
+    uniScaleKey: java.lang.String = null,
+    uniScaleTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    viewportTransform: js.Array[scala.Double] = null,
+    vptCoords: fabricLib.Anon_BlBrTl = null
+  ): ICanvasOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTouchScrolling)) __obj.updateDynamic("allowTouchScrolling")(allowTouchScrolling)
+    if (altActionKey != null) __obj.updateDynamic("altActionKey")(altActionKey)
+    if (altSelectionKey != null) __obj.updateDynamic("altSelectionKey")(altSelectionKey)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundVpt)) __obj.updateDynamic("backgroundVpt")(backgroundVpt)
+    if (centeredKey != null) __obj.updateDynamic("centeredKey")(centeredKey)
+    if (!js.isUndefined(centeredRotation)) __obj.updateDynamic("centeredRotation")(centeredRotation)
+    if (!js.isUndefined(centeredScaling)) __obj.updateDynamic("centeredScaling")(centeredScaling)
+    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
+    if (clipTo != null) __obj.updateDynamic("clipTo")(clipTo)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (!js.isUndefined(controlsAboveOverlay)) __obj.updateDynamic("controlsAboveOverlay")(controlsAboveOverlay)
+    if (defaultCursor != null) __obj.updateDynamic("defaultCursor")(defaultCursor)
+    if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling)
+    if (!js.isUndefined(fireMiddleClick)) __obj.updateDynamic("fireMiddleClick")(fireMiddleClick)
+    if (!js.isUndefined(fireRightClick)) __obj.updateDynamic("fireRightClick")(fireRightClick)
+    if (freeDrawingCursor != null) __obj.updateDynamic("freeDrawingCursor")(freeDrawingCursor)
+    if (hoverCursor != null) __obj.updateDynamic("hoverCursor")(hoverCursor)
+    if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled)
+    if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (!js.isUndefined(isDrawingMode)) __obj.updateDynamic("isDrawingMode")(isDrawingMode)
+    if (moveCursor != null) __obj.updateDynamic("moveCursor")(moveCursor)
+    if (notAllowedCursor != null) __obj.updateDynamic("notAllowedCursor")(notAllowedCursor)
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
+    if (overlayImage != null) __obj.updateDynamic("overlayImage")(overlayImage)
+    if (!js.isUndefined(overlayVpt)) __obj.updateDynamic("overlayVpt")(overlayVpt)
+    if (!js.isUndefined(perPixelTargetFind)) __obj.updateDynamic("perPixelTargetFind")(perPixelTargetFind)
+    if (!js.isUndefined(preserveObjectStacking)) __obj.updateDynamic("preserveObjectStacking")(preserveObjectStacking)
+    if (!js.isUndefined(renderOnAddRemove)) __obj.updateDynamic("renderOnAddRemove")(renderOnAddRemove)
+    if (rotationCursor != null) __obj.updateDynamic("rotationCursor")(rotationCursor)
+    if (!js.isUndefined(selection)) __obj.updateDynamic("selection")(selection)
+    if (selectionBorderColor != null) __obj.updateDynamic("selectionBorderColor")(selectionBorderColor)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (selectionDashArray != null) __obj.updateDynamic("selectionDashArray")(selectionDashArray)
+    if (!js.isUndefined(selectionFullyContained)) __obj.updateDynamic("selectionFullyContained")(selectionFullyContained)
+    if (selectionKey != null) __obj.updateDynamic("selectionKey")(selectionKey.asInstanceOf[js.Any])
+    if (selectionLineWidth != null) __obj.updateDynamic("selectionLineWidth")(selectionLineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOffscreen)) __obj.updateDynamic("skipOffscreen")(skipOffscreen)
+    if (!js.isUndefined(skipTargetFind)) __obj.updateDynamic("skipTargetFind")(skipTargetFind)
+    if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
+    if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful)
+    if (!js.isUndefined(stopContextMenu)) __obj.updateDynamic("stopContextMenu")(stopContextMenu)
+    if (!js.isUndefined(svgViewportTransformation)) __obj.updateDynamic("svgViewportTransformation")(svgViewportTransformation)
+    if (targetFindTolerance != null) __obj.updateDynamic("targetFindTolerance")(targetFindTolerance.asInstanceOf[js.Any])
+    if (uniScaleKey != null) __obj.updateDynamic("uniScaleKey")(uniScaleKey)
+    if (!js.isUndefined(uniScaleTransform)) __obj.updateDynamic("uniScaleTransform")(uniScaleTransform)
+    if (viewportTransform != null) __obj.updateDynamic("viewportTransform")(viewportTransform)
+    if (vptCoords != null) __obj.updateDynamic("vptCoords")(vptCoords)
+    __obj.asInstanceOf[ICanvasOptions]
+  }
+}
+

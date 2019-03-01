@@ -26,3 +26,12 @@ trait Conversion extends js.Object {
   var position: ConversionPosition
 }
 
+object Conversion {
+  @scala.inline
+  def apply(displayCoordinate: java.lang.String, format: Format, position: ConversionPosition): Conversion = {
+    val __obj = js.Dynamic.literal(displayCoordinate = displayCoordinate, format = format, position = position)
+  
+    __obj.asInstanceOf[Conversion]
+  }
+}
+

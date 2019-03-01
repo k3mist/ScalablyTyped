@@ -49,3 +49,19 @@ trait WildcardQuery extends Query {
   def value(v: java.lang.String): WildcardQuery
 }
 
+object WildcardQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[stdLib.Number, WildcardQuery],
+    field: js.Function1[java.lang.String, WildcardQuery],
+    rewrite: js.Function1[java.lang.String, WildcardQuery],
+    toJSON: js.Function0[js.Any],
+    value: js.Function1[java.lang.String, WildcardQuery]
+  ): WildcardQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, rewrite = rewrite, toJSON = toJSON, value = value)
+  
+    __obj.asInstanceOf[WildcardQuery]
+  }
+}
+

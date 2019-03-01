@@ -50,3 +50,26 @@ trait AttachmentInfoProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttachmentInfoProperties {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    keywords: java.lang.String = null,
+    name: java.lang.String = null,
+    parentObjectId: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): AttachmentInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[AttachmentInfoProperties]
+  }
+}
+

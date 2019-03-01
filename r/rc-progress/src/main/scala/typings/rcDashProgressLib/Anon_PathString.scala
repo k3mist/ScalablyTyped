@@ -11,3 +11,16 @@ trait Anon_PathString extends js.Object {
   var trailPathStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object Anon_PathString {
+  @scala.inline
+  def apply(
+    pathString: java.lang.String,
+    strokePathStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties,
+    trailPathStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
+  ): Anon_PathString = {
+    val __obj = js.Dynamic.literal(pathString = pathString, strokePathStyle = strokePathStyle.asInstanceOf[js.Any], trailPathStyle = trailPathStyle.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_PathString]
+  }
+}
+

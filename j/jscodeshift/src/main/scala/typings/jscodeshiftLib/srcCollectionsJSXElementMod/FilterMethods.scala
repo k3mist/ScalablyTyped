@@ -16,3 +16,15 @@ trait FilterMethods extends js.Object {
   def hasChildren(name: java.lang.String): Filter
 }
 
+object FilterMethods {
+  @scala.inline
+  def apply(
+    hasAttributes: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], Filter],
+    hasChildren: js.Function1[java.lang.String, Filter]
+  ): FilterMethods = {
+    val __obj = js.Dynamic.literal(hasAttributes = hasAttributes, hasChildren = hasChildren)
+  
+    __obj.asInstanceOf[FilterMethods]
+  }
+}
+

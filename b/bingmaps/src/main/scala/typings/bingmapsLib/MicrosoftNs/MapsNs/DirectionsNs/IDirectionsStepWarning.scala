@@ -18,3 +18,18 @@ trait IDirectionsStepWarning extends js.Object {
   var warningType: java.lang.String
 }
 
+object IDirectionsStepWarning {
+  @scala.inline
+  def apply(
+    origin: java.lang.String,
+    severity: java.lang.String,
+    text: java.lang.String,
+    to: java.lang.String,
+    warningType: java.lang.String
+  ): IDirectionsStepWarning = {
+    val __obj = js.Dynamic.literal(origin = origin, severity = severity, text = text, to = to, warningType = warningType)
+  
+    __obj.asInstanceOf[IDirectionsStepWarning]
+  }
+}
+

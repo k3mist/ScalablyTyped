@@ -14,3 +14,19 @@ trait FiveQuartersSet
   var whiteCircleAllWhiteQuarters: Icon
 }
 
+object FiveQuartersSet {
+  @scala.inline
+  def apply(
+    blackCircle: Icon,
+    circleWithOneWhiteQuarter: Icon,
+    circleWithThreeWhiteQuarters: Icon,
+    circleWithTwoWhiteQuarters: Icon,
+    whiteCircleAllWhiteQuarters: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): FiveQuartersSet = {
+    val __obj = js.Dynamic.literal(blackCircle = blackCircle, circleWithOneWhiteQuarter = circleWithOneWhiteQuarter, circleWithThreeWhiteQuarters = circleWithThreeWhiteQuarters, circleWithTwoWhiteQuarters = circleWithTwoWhiteQuarters, whiteCircleAllWhiteQuarters = whiteCircleAllWhiteQuarters)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FiveQuartersSet]
+  }
+}
+

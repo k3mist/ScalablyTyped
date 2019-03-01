@@ -12,3 +12,12 @@ trait VertexStructure extends js.Object {
   var parent: Vertex
 }
 
+object VertexStructure {
+  @scala.inline
+  def apply(data: jugLib.VertexData, edge: js.Array[Vertex], level: scala.Double, parent: Vertex): VertexStructure = {
+    val __obj = js.Dynamic.literal(data = data, edge = edge, level = level, parent = parent)
+  
+    __obj.asInstanceOf[VertexStructure]
+  }
+}
+

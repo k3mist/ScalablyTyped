@@ -66,3 +66,24 @@ trait ASPxDesignerReportDialogBase extends js.Object {
   def show(tab: ASPxDesignerNavigateTab): scala.Unit
 }
 
+object ASPxDesignerReportDialogBase {
+  @scala.inline
+  def apply(
+    buttons: js.Array[js.Object],
+    cancel: js.Function0[scala.Unit],
+    customize: js.Function2[java.lang.String, ASPxDesignerDialogModel, scala.Unit],
+    height: js.Any,
+    model: js.Any,
+    show: js.Function1[ASPxDesignerNavigateTab, scala.Unit],
+    tab: js.Any,
+    template: js.Any,
+    title: java.lang.String,
+    visible: js.Any,
+    width: js.Any
+  ): ASPxDesignerReportDialogBase = {
+    val __obj = js.Dynamic.literal(buttons = buttons, cancel = cancel, customize = customize, height = height, model = model, show = show, tab = tab, template = template, title = title, visible = visible, width = width)
+  
+    __obj.asInstanceOf[ASPxDesignerReportDialogBase]
+  }
+}
+

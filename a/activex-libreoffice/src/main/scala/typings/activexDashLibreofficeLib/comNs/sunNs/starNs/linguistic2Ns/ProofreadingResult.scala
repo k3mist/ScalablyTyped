@@ -22,3 +22,23 @@ trait ProofreadingResult extends js.Object {
   var xProofreader: XProofreader
 }
 
+object ProofreadingResult {
+  @scala.inline
+  def apply(
+    aDocumentIdentifier: java.lang.String,
+    aErrors: activexDashInteropLib.SafeArray[SingleProofreadingError],
+    aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aText: java.lang.String,
+    nBehindEndOfSentencePosition: scala.Double,
+    nStartOfNextSentencePosition: scala.Double,
+    nStartOfSentencePosition: scala.Double,
+    xFlatParagraph: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XFlatParagraph,
+    xProofreader: XProofreader
+  ): ProofreadingResult = {
+    val __obj = js.Dynamic.literal(aDocumentIdentifier = aDocumentIdentifier, aErrors = aErrors, aLocale = aLocale, aProperties = aProperties, aText = aText, nBehindEndOfSentencePosition = nBehindEndOfSentencePosition, nStartOfNextSentencePosition = nStartOfNextSentencePosition, nStartOfSentencePosition = nStartOfSentencePosition, xFlatParagraph = xFlatParagraph, xProofreader = xProofreader)
+  
+    __obj.asInstanceOf[ProofreadingResult]
+  }
+}
+

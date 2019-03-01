@@ -14,3 +14,19 @@ trait PlacementArgs extends js.Object {
   var shouldScroll: scala.Boolean
 }
 
+object PlacementArgs {
+  @scala.inline
+  def apply(
+    isFixedPosition: scala.Boolean,
+    maxHeight: scala.Double,
+    menuEl: reactLib.reactMod.ReactNs.Ref[_],
+    minHeight: scala.Double,
+    placement: reactDashSelectLib.reactDashSelectLibStrings.bottom | reactDashSelectLib.reactDashSelectLibStrings.top | reactDashSelectLib.reactDashSelectLibStrings.auto,
+    shouldScroll: scala.Boolean
+  ): PlacementArgs = {
+    val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition, maxHeight = maxHeight, menuEl = menuEl.asInstanceOf[js.Any], minHeight = minHeight, placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll)
+  
+    __obj.asInstanceOf[PlacementArgs]
+  }
+}
+

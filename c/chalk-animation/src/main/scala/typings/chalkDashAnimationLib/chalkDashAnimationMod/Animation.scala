@@ -13,3 +13,18 @@ trait Animation extends js.Object {
   def stop(): scala.Unit
 }
 
+object Animation {
+  @scala.inline
+  def apply(
+    frame: js.Function0[java.lang.String],
+    render: js.Function0[scala.Unit],
+    replace: js.Function1[java.lang.String, scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): Animation = {
+    val __obj = js.Dynamic.literal(frame = frame, render = render, replace = replace, start = start, stop = stop)
+  
+    __obj.asInstanceOf[Animation]
+  }
+}
+

@@ -30,3 +30,24 @@ trait IRecord extends js.Object {
   def key(): scala.Double
 }
 
+object IRecord {
+  @scala.inline
+  def apply(
+    AddFieldValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    GetDataValue: js.Function1[java.lang.String, js.Any],
+    GetLocalizedValue: js.Function1[java.lang.String, java.lang.String],
+    GetProp: js.Function1[java.lang.String, IPropertyBase],
+    HasDataValue: js.Function1[java.lang.String, scala.Boolean],
+    HasLocalizedValue: js.Function1[java.lang.String, scala.Boolean],
+    RemoveFieldValue: js.Function1[java.lang.String, scala.Unit],
+    SetProp: js.Function2[java.lang.String, IPropertyBase, scala.Unit],
+    bIsNewRow: scala.Boolean,
+    key: js.Function0[scala.Double],
+    properties: org.scalablytyped.runtime.StringDictionary[IPropertyBase]
+  ): IRecord = {
+    val __obj = js.Dynamic.literal(AddFieldValue = AddFieldValue, GetDataValue = GetDataValue, GetLocalizedValue = GetLocalizedValue, GetProp = GetProp, HasDataValue = HasDataValue, HasLocalizedValue = HasLocalizedValue, RemoveFieldValue = RemoveFieldValue, SetProp = SetProp, bIsNewRow = bIsNewRow, key = key, properties = properties)
+  
+    __obj.asInstanceOf[IRecord]
+  }
+}
+

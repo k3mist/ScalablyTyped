@@ -17,3 +17,35 @@ trait ClientChannel extends Channel {
   def startNewSession(): scala.Unit
 }
 
+object ClientChannel {
+  @scala.inline
+  def apply(
+    authenticateSession: js.Function3[java.lang.String, Authentication, java.lang.String, scala.Unit],
+    localNode: java.lang.String,
+    negotiateSession: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    onCommand: js.Function1[Command, scala.Unit],
+    onMessage: js.Function1[Message, scala.Unit],
+    onNotification: js.Function1[Notification, scala.Unit],
+    onSession: js.Function1[Session, scala.Unit],
+    onSessionAuthenticating: js.Function1[Session, scala.Unit],
+    onSessionEstablished: js.Function1[Session, scala.Unit],
+    onSessionFailed: js.Function1[Session, scala.Unit],
+    onSessionFinished: js.Function1[Session, scala.Unit],
+    onSessionNegotiating: js.Function1[Session, scala.Unit],
+    remoteNode: java.lang.String,
+    sendCommand: js.Function1[Command, scala.Unit],
+    sendFinishingSession: js.Function0[scala.Unit],
+    sendMessage: js.Function1[Message, scala.Unit],
+    sendNotification: js.Function1[Notification, scala.Unit],
+    sendSession: js.Function1[Session, scala.Unit],
+    sessionId: java.lang.String,
+    startNewSession: js.Function0[scala.Unit],
+    state: java.lang.String,
+    transport: Transport
+  ): ClientChannel = {
+    val __obj = js.Dynamic.literal(authenticateSession = authenticateSession, localNode = localNode, negotiateSession = negotiateSession, onCommand = onCommand, onMessage = onMessage, onNotification = onNotification, onSession = onSession, onSessionAuthenticating = onSessionAuthenticating, onSessionEstablished = onSessionEstablished, onSessionFailed = onSessionFailed, onSessionFinished = onSessionFinished, onSessionNegotiating = onSessionNegotiating, remoteNode = remoteNode, sendCommand = sendCommand, sendFinishingSession = sendFinishingSession, sendMessage = sendMessage, sendNotification = sendNotification, sendSession = sendSession, sessionId = sessionId, startNewSession = startNewSession, state = state, transport = transport)
+  
+    __obj.asInstanceOf[ClientChannel]
+  }
+}
+

@@ -31,3 +31,17 @@ trait ICommandInfo extends js.Object {
   def resultKey(key: java.lang.String): js.Any
 }
 
+object ICommandInfo {
+  @scala.inline
+  def apply(
+    canceled: js.Function0[scala.Boolean],
+    commandExecuted: js.Function0[scala.Boolean],
+    dataPassed: js.Function1[java.lang.String, js.Any],
+    resultKey: js.Function1[java.lang.String, js.Any]
+  ): ICommandInfo = {
+    val __obj = js.Dynamic.literal(canceled = canceled, commandExecuted = commandExecuted, dataPassed = dataPassed, resultKey = resultKey)
+  
+    __obj.asInstanceOf[ICommandInfo]
+  }
+}
+

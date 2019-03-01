@@ -10,3 +10,15 @@ trait FeathersAuthCredentials
   var strategy: java.lang.String
 }
 
+object FeathersAuthCredentials {
+  @scala.inline
+  def apply(
+    strategy: java.lang.String,
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): FeathersAuthCredentials = {
+    val __obj = js.Dynamic.literal(strategy = strategy)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[FeathersAuthCredentials]
+  }
+}
+

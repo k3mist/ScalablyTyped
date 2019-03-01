@@ -76,3 +76,26 @@ trait ListLevelSettings extends js.Object {
   var start: scala.Double
 }
 
+object ListLevelSettings {
+  @scala.inline
+  def apply(
+    alignment: js.Any,
+    displayFormatString: java.lang.String,
+    firstLineIndent: scala.Double,
+    firstLineIndentType: js.Any,
+    fontBold: scala.Boolean,
+    fontColor: java.lang.String,
+    fontItalic: scala.Boolean,
+    fontName: java.lang.String,
+    fontSize: scala.Double,
+    format: js.Any,
+    leftIndent: scala.Double,
+    separator: java.lang.String,
+    start: scala.Double
+  ): ListLevelSettings = {
+    val __obj = js.Dynamic.literal(alignment = alignment, displayFormatString = displayFormatString, firstLineIndent = firstLineIndent, firstLineIndentType = firstLineIndentType, fontBold = fontBold, fontColor = fontColor, fontItalic = fontItalic, fontName = fontName, fontSize = fontSize, format = format, leftIndent = leftIndent, separator = separator, start = start)
+  
+    __obj.asInstanceOf[ListLevelSettings]
+  }
+}
+

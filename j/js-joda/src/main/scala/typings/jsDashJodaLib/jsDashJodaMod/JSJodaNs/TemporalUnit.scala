@@ -15,3 +15,20 @@ trait TemporalUnit extends js.Object {
   def isTimeBased(): scala.Boolean
 }
 
+object TemporalUnit {
+  @scala.inline
+  def apply(
+    addTo: js.Function2[js.Any, scala.Double, js.Any],
+    between: js.Function2[Temporal, Temporal, scala.Double],
+    duration: js.Function0[Duration],
+    isDateBased: js.Function0[scala.Boolean],
+    isDurationEstimated: js.Function0[scala.Boolean],
+    isSupportedBy: js.Function1[Temporal, scala.Boolean],
+    isTimeBased: js.Function0[scala.Boolean]
+  ): TemporalUnit = {
+    val __obj = js.Dynamic.literal(addTo = addTo, between = between, duration = duration, isDateBased = isDateBased, isDurationEstimated = isDurationEstimated, isSupportedBy = isSupportedBy, isTimeBased = isTimeBased)
+  
+    __obj.asInstanceOf[TemporalUnit]
+  }
+}
+

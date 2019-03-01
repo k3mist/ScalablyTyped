@@ -27,3 +27,17 @@ trait ChatRoomInfo extends js.Object {
   var subject: java.lang.String
 }
 
+object ChatRoomInfo {
+  @scala.inline
+  def apply(
+    creationdate: java.lang.String,
+    description: java.lang.String,
+    occupants: scala.Double,
+    subject: java.lang.String
+  ): ChatRoomInfo = {
+    val __obj = js.Dynamic.literal(creationdate = creationdate, description = description, occupants = occupants, subject = subject)
+  
+    __obj.asInstanceOf[ChatRoomInfo]
+  }
+}
+

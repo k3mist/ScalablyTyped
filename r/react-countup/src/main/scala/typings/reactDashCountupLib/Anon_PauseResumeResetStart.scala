@@ -11,3 +11,16 @@ trait Anon_PauseResumeResetStart extends js.Object {
   def start(): scala.Unit
 }
 
+object Anon_PauseResumeResetStart {
+  @scala.inline
+  def apply(
+    pauseResume: js.Function0[scala.Unit],
+    reset: js.Function0[scala.Unit],
+    start: js.Function0[scala.Unit]
+  ): Anon_PauseResumeResetStart = {
+    val __obj = js.Dynamic.literal(pauseResume = pauseResume, reset = reset, start = start)
+  
+    __obj.asInstanceOf[Anon_PauseResumeResetStart]
+  }
+}
+

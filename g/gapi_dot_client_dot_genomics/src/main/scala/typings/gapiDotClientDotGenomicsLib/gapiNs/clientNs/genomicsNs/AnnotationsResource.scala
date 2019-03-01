@@ -75,3 +75,37 @@ trait AnnotationsResource extends js.Object {
   def update(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationId): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
 }
 
+object AnnotationsResource {
+  @scala.inline
+  def apply(
+    batchCreate: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchCreateAnnotationsResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+    ]
+  ): AnnotationsResource = {
+    val __obj = js.Dynamic.literal(batchCreate = batchCreate, create = create, delete = delete, get = get, search = search, update = update)
+  
+    __obj.asInstanceOf[AnnotationsResource]
+  }
+}
+

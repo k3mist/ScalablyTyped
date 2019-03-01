@@ -16,3 +16,12 @@ trait CertificateTrustDialogOptions extends js.Object {
   var message: java.lang.String
 }
 
+object CertificateTrustDialogOptions {
+  @scala.inline
+  def apply(certificate: Certificate, message: java.lang.String): CertificateTrustDialogOptions = {
+    val __obj = js.Dynamic.literal(certificate = certificate, message = message)
+  
+    __obj.asInstanceOf[CertificateTrustDialogOptions]
+  }
+}
+

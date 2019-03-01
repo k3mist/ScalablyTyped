@@ -9,3 +9,12 @@ trait IMatrixData extends js.Object {
   def onMatrixRowChanged(row: MatrixRowModel): scala.Unit
 }
 
+object IMatrixData {
+  @scala.inline
+  def apply(onMatrixRowChanged: js.Function1[MatrixRowModel, scala.Unit]): IMatrixData = {
+    val __obj = js.Dynamic.literal(onMatrixRowChanged = onMatrixRowChanged)
+  
+    __obj.asInstanceOf[IMatrixData]
+  }
+}
+

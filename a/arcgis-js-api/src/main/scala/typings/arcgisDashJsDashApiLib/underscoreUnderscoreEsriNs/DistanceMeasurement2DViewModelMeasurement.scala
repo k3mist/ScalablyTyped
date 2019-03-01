@@ -21,3 +21,18 @@ trait DistanceMeasurement2DViewModelMeasurement
   var length: scala.Double
 }
 
+object DistanceMeasurement2DViewModelMeasurement {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    geometry: js.Any,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    length: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): DistanceMeasurement2DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(constructor = constructor, geometry = geometry, hasOwnProperty = hasOwnProperty, length = length, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
+  }
+}
+

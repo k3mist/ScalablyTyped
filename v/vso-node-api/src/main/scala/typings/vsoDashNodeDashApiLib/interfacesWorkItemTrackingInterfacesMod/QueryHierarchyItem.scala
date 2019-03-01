@@ -108,3 +108,40 @@ trait QueryHierarchyItem extends WorkItemTrackingResource {
   var wiql: java.lang.String
 }
 
+object QueryHierarchyItem {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    children: js.Array[QueryHierarchyItem],
+    clauses: WorkItemQueryClause,
+    columns: js.Array[WorkItemFieldReference],
+    createdBy: IdentityReference,
+    createdDate: stdLib.Date,
+    filterOptions: LinkQueryMode,
+    hasChildren: scala.Boolean,
+    id: java.lang.String,
+    isDeleted: scala.Boolean,
+    isFolder: scala.Boolean,
+    isInvalidSyntax: scala.Boolean,
+    isPublic: scala.Boolean,
+    lastExecutedBy: IdentityReference,
+    lastExecutedDate: stdLib.Date,
+    lastModifiedBy: IdentityReference,
+    lastModifiedDate: stdLib.Date,
+    linkClauses: WorkItemQueryClause,
+    name: java.lang.String,
+    path: java.lang.String,
+    queryRecursionOption: QueryRecursionOption,
+    queryType: QueryType,
+    sortColumns: js.Array[WorkItemQuerySortColumn],
+    sourceClauses: WorkItemQueryClause,
+    targetClauses: WorkItemQueryClause,
+    url: java.lang.String,
+    wiql: java.lang.String
+  ): QueryHierarchyItem = {
+    val __obj = js.Dynamic.literal(_links = _links, children = children, clauses = clauses, columns = columns, createdBy = createdBy, createdDate = createdDate, filterOptions = filterOptions, hasChildren = hasChildren, id = id, isDeleted = isDeleted, isFolder = isFolder, isInvalidSyntax = isInvalidSyntax, isPublic = isPublic, lastExecutedBy = lastExecutedBy, lastExecutedDate = lastExecutedDate, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, linkClauses = linkClauses, name = name, path = path, queryRecursionOption = queryRecursionOption, queryType = queryType, sortColumns = sortColumns, sourceClauses = sourceClauses, targetClauses = targetClauses, url = url, wiql = wiql)
+  
+    __obj.asInstanceOf[QueryHierarchyItem]
+  }
+}
+

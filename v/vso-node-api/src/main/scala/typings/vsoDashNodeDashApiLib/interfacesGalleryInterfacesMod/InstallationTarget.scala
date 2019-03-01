@@ -10,3 +10,12 @@ trait InstallationTarget extends js.Object {
   var targetVersion: java.lang.String
 }
 
+object InstallationTarget {
+  @scala.inline
+  def apply(target: java.lang.String, targetVersion: java.lang.String): InstallationTarget = {
+    val __obj = js.Dynamic.literal(target = target, targetVersion = targetVersion)
+  
+    __obj.asInstanceOf[InstallationTarget]
+  }
+}
+

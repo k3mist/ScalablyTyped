@@ -11,3 +11,17 @@ trait TruncateRequestedEventOptions
   var length: chromeDashAppsLib.chromeNs.double
 }
 
+object TruncateRequestedEventOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    fileSystemId: java.lang.String,
+    length: chromeDashAppsLib.chromeNs.double,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): TruncateRequestedEventOptions = {
+    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, length = length, requestId = requestId)
+  
+    __obj.asInstanceOf[TruncateRequestedEventOptions]
+  }
+}
+

@@ -39,3 +39,17 @@ trait GCEPersistentDiskVolumeSource extends js.Object {
   val readOnly: scala.Boolean
 }
 
+object GCEPersistentDiskVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    partition: scala.Double,
+    pdName: java.lang.String,
+    readOnly: scala.Boolean
+  ): GCEPersistentDiskVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, partition = partition, pdName = pdName, readOnly = readOnly)
+  
+    __obj.asInstanceOf[GCEPersistentDiskVolumeSource]
+  }
+}
+

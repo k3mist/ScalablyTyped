@@ -9,3 +9,12 @@ trait IVisualHost extends js.Object {
   var instanceId: java.lang.String
 }
 
+object IVisualHost {
+  @scala.inline
+  def apply(instanceId: java.lang.String): IVisualHost = {
+    val __obj = js.Dynamic.literal(instanceId = instanceId)
+  
+    __obj.asInstanceOf[IVisualHost]
+  }
+}
+

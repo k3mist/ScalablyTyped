@@ -10,3 +10,12 @@ trait IROOM_CAPACITY_CHANGE_ERROR extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object IROOM_CAPACITY_CHANGE_ERROR {
+  @scala.inline
+  def apply(errorCode: scala.Double, errorMessage: java.lang.String): IROOM_CAPACITY_CHANGE_ERROR = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage)
+  
+    __obj.asInstanceOf[IROOM_CAPACITY_CHANGE_ERROR]
+  }
+}
+

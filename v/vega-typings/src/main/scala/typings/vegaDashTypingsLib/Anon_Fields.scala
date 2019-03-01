@@ -12,3 +12,16 @@ trait Anon_Fields
   ]
 }
 
+object Anon_Fields {
+  @scala.inline
+  def apply(
+    fields: js.Array[
+      (js.Array[java.lang.String | scala.Double | scala.Boolean]) | vegaDashTypingsLib.typesSpecScaleMod.DataRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+    ]
+  ): Anon_Fields = {
+    val __obj = js.Dynamic.literal(fields = fields)
+  
+    __obj.asInstanceOf[Anon_Fields]
+  }
+}
+

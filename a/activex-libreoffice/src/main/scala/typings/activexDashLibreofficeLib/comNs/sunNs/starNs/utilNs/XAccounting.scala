@@ -15,3 +15,17 @@ trait XAccounting
   def estimateUsage(): scala.Double
 }
 
+object XAccounting {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    estimateUsage: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccounting = {
+    val __obj = js.Dynamic.literal(acquire = acquire, estimateUsage = estimateUsage, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccounting]
+  }
+}
+

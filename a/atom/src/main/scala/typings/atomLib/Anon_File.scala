@@ -12,3 +12,12 @@ trait Anon_File extends js.Object {
   var position: atomLib.atomMod.Range
 }
 
+object Anon_File {
+  @scala.inline
+  def apply(file: java.lang.String, position: atomLib.atomMod.Range): Anon_File = {
+    val __obj = js.Dynamic.literal(file = file, position = position)
+  
+    __obj.asInstanceOf[Anon_File]
+  }
+}
+

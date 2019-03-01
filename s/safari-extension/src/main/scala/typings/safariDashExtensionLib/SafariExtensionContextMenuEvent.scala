@@ -28,3 +28,25 @@ trait SafariExtensionContextMenuEvent extends SafariEvent {
   var userInfo: js.Any
 }
 
+object SafariExtensionContextMenuEvent {
+  @scala.inline
+  def apply(
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    contextMenu: SafariExtensionContextMenu,
+    currentTarget: SafariExtensionContextMenuItem,
+    defaultPrevented: scala.Boolean,
+    eventPhase: scala.Double,
+    preventDefault: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: SafariExtensionContextMenuItem,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    userInfo: js.Any
+  ): SafariExtensionContextMenuEvent = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, contextMenu = contextMenu, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp, `type` = `type`, userInfo = userInfo)
+  
+    __obj.asInstanceOf[SafariExtensionContextMenuEvent]
+  }
+}
+

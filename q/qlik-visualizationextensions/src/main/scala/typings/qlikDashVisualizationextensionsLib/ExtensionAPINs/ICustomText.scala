@@ -11,3 +11,16 @@ trait ICustomText extends js.Object {
   var `type`: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.text
 }
 
+object ICustomText {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.text,
+    label: java.lang.String,
+    `type`: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.text
+  ): ICustomText = {
+    val __obj = js.Dynamic.literal(component = component, label = label, `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomText]
+  }
+}
+

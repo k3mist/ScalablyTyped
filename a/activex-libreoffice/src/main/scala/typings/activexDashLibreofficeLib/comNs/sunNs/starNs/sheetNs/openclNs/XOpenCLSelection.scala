@@ -61,3 +61,33 @@ trait XOpenCLSelection
   def setFormulaCellNumberLimit(number: scala.Double): scala.Unit
 }
 
+object XOpenCLSelection {
+  @scala.inline
+  def apply(
+    DeviceID: scala.Double,
+    FormulaCellNumberLimit: scala.Double,
+    OpenCLPlatforms: activexDashInteropLib.SafeArray[OpenCLPlatform],
+    PlatformID: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    disableAutomaticDeviceSelection: js.Function0[scala.Unit],
+    disableOpcodeSubsetTest: js.Function0[scala.Unit],
+    enableAutomaticDeviceSelection: js.Function1[scala.Boolean, scala.Unit],
+    enableOpcodeSubsetTest: js.Function0[scala.Unit],
+    enableOpenCL: js.Function1[scala.Boolean, scala.Unit],
+    getDeviceID: js.Function0[scala.Double],
+    getFormulaCellNumberLimit: js.Function0[scala.Double],
+    getOpenCLPlatforms: js.Function0[activexDashInteropLib.SafeArray[OpenCLPlatform]],
+    getPlatformID: js.Function0[scala.Double],
+    isOpcodeSubsetTested: js.Function0[scala.Boolean],
+    isOpenCLEnabled: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectOpenCLDevice: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setFormulaCellNumberLimit: js.Function1[scala.Double, scala.Unit]
+  ): XOpenCLSelection = {
+    val __obj = js.Dynamic.literal(DeviceID = DeviceID, FormulaCellNumberLimit = FormulaCellNumberLimit, OpenCLPlatforms = OpenCLPlatforms, PlatformID = PlatformID, acquire = acquire, disableAutomaticDeviceSelection = disableAutomaticDeviceSelection, disableOpcodeSubsetTest = disableOpcodeSubsetTest, enableAutomaticDeviceSelection = enableAutomaticDeviceSelection, enableOpcodeSubsetTest = enableOpcodeSubsetTest, enableOpenCL = enableOpenCL, getDeviceID = getDeviceID, getFormulaCellNumberLimit = getFormulaCellNumberLimit, getOpenCLPlatforms = getOpenCLPlatforms, getPlatformID = getPlatformID, isOpcodeSubsetTested = isOpcodeSubsetTested, isOpenCLEnabled = isOpenCLEnabled, queryInterface = queryInterface, release = release, selectOpenCLDevice = selectOpenCLDevice, setFormulaCellNumberLimit = setFormulaCellNumberLimit)
+  
+    __obj.asInstanceOf[XOpenCLSelection]
+  }
+}
+

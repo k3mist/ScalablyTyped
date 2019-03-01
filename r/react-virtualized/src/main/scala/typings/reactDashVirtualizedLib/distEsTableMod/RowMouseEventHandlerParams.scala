@@ -11,3 +11,16 @@ trait RowMouseEventHandlerParams extends js.Object {
   var rowData: reactDashVirtualizedLib.Anon_ColumnData
 }
 
+object RowMouseEventHandlerParams {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent],
+    index: scala.Double,
+    rowData: reactDashVirtualizedLib.Anon_ColumnData
+  ): RowMouseEventHandlerParams = {
+    val __obj = js.Dynamic.literal(event = event, index = index, rowData = rowData)
+  
+    __obj.asInstanceOf[RowMouseEventHandlerParams]
+  }
+}
+

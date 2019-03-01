@@ -16,3 +16,12 @@ trait ImportCertificateOptions extends js.Object {
   var password: java.lang.String
 }
 
+object ImportCertificateOptions {
+  @scala.inline
+  def apply(certificate: java.lang.String, password: java.lang.String): ImportCertificateOptions = {
+    val __obj = js.Dynamic.literal(certificate = certificate, password = password)
+  
+    __obj.asInstanceOf[ImportCertificateOptions]
+  }
+}
+

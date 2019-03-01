@@ -16,3 +16,18 @@ trait PrintTaskProperties extends TaskProperties {
   var updateDelay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PrintTaskProperties {
+  @scala.inline
+  def apply(
+    requestOptions: js.Any = null,
+    updateDelay: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): PrintTaskProperties = {
+    val __obj = js.Dynamic.literal()
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PrintTaskProperties]
+  }
+}
+

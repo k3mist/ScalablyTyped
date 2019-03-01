@@ -20,3 +20,20 @@ trait CompositionParameters extends js.Object {
   var text: java.lang.String
 }
 
+object CompositionParameters {
+  @scala.inline
+  def apply(
+    contextID: scala.Double,
+    cursor: scala.Double,
+    segments: js.Array[CompositionParameterSegment],
+    text: java.lang.String,
+    selectionEnd: scala.Int | scala.Double = null,
+    selectionStart: scala.Int | scala.Double = null
+  ): CompositionParameters = {
+    val __obj = js.Dynamic.literal(contextID = contextID, cursor = cursor, segments = segments, text = text)
+    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
+    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompositionParameters]
+  }
+}
+

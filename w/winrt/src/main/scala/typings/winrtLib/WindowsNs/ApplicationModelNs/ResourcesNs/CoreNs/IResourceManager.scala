@@ -17,3 +17,24 @@ trait IResourceManager extends js.Object {
   ): scala.Unit
 }
 
+object IResourceManager {
+  @scala.inline
+  def apply(
+    allResourceMaps: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ResourceMap],
+    defaultContext: ResourceContext,
+    loadPriFiles: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.StorageNs.IStorageFile], 
+      scala.Unit
+    ],
+    mainResourceMap: ResourceMap,
+    unloadPriFiles: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtLib.WindowsNs.StorageNs.IStorageFile], 
+      scala.Unit
+    ]
+  ): IResourceManager = {
+    val __obj = js.Dynamic.literal(allResourceMaps = allResourceMaps, defaultContext = defaultContext, loadPriFiles = loadPriFiles, mainResourceMap = mainResourceMap, unloadPriFiles = unloadPriFiles)
+  
+    __obj.asInstanceOf[IResourceManager]
+  }
+}
+

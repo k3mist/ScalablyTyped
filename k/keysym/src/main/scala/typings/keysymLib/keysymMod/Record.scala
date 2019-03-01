@@ -12,3 +12,17 @@ trait Record extends js.Object {
   var unicode: scala.Double
 }
 
+object Record {
+  @scala.inline
+  def apply(
+    keysym: scala.Double,
+    names: js.Array[java.lang.String],
+    status: java.lang.String,
+    unicode: scala.Double
+  ): Record = {
+    val __obj = js.Dynamic.literal(keysym = keysym, names = names, status = status, unicode = unicode)
+  
+    __obj.asInstanceOf[Record]
+  }
+}
+

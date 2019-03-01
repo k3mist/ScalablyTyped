@@ -10,3 +10,15 @@ trait ReplaceAction extends RouterActions {
   var `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_REPLACE
 }
 
+object ReplaceAction {
+  @scala.inline
+  def apply(
+    payload: Location,
+    `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_REPLACE
+  ): ReplaceAction = {
+    val __obj = js.Dynamic.literal(payload = payload, `type` = `type`)
+  
+    __obj.asInstanceOf[ReplaceAction]
+  }
+}
+

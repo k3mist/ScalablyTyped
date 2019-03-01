@@ -26,3 +26,17 @@ trait Anon_BtnGroup extends js.Object {
   var searchPanel: reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object Anon_BtnGroup {
+  @scala.inline
+  def apply(
+    btnGroup: reactLib.reactMod.ReactNs.ReactElement[_],
+    clearBtn: reactLib.reactMod.ReactNs.ReactElement[_],
+    searchField: reactLib.reactMod.ReactNs.ReactElement[_],
+    searchPanel: reactLib.reactMod.ReactNs.ReactElement[_]
+  ): Anon_BtnGroup = {
+    val __obj = js.Dynamic.literal(btnGroup = btnGroup, clearBtn = clearBtn, searchField = searchField, searchPanel = searchPanel)
+  
+    __obj.asInstanceOf[Anon_BtnGroup]
+  }
+}
+

@@ -31,3 +31,28 @@ trait PackageManagerDialog
   def createDefault(): scala.Unit
 }
 
+object PackageManagerDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    createAndInstall: js.Function1[java.lang.String, scala.Unit],
+    createDefault: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDialogTitle: js.Function1[java.lang.String, scala.Unit],
+    startExecuteModal: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.dialogsNs.XDialogClosedListener, 
+      scala.Unit
+    ]
+  ): PackageManagerDialog = {
+    val __obj = js.Dynamic.literal(acquire = acquire, create = create, createAndInstall = createAndInstall, createDefault = createDefault, queryInterface = queryInterface, release = release, setDialogTitle = setDialogTitle, startExecuteModal = startExecuteModal)
+  
+    __obj.asInstanceOf[PackageManagerDialog]
+  }
+}
+

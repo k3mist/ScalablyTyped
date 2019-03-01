@@ -11,3 +11,16 @@ trait SketchMSPath extends js.Object {
   var points: js.Array[SketchMSCurvePoint]
 }
 
+object SketchMSPath {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.path,
+    isClosed: scala.Boolean,
+    points: js.Array[SketchMSCurvePoint]
+  ): SketchMSPath = {
+    val __obj = js.Dynamic.literal(_class = _class, isClosed = isClosed, points = points)
+  
+    __obj.asInstanceOf[SketchMSPath]
+  }
+}
+

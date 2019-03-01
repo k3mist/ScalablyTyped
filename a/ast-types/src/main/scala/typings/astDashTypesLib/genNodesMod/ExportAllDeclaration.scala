@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ExportAllDeclaration
 }
 
+object ExportAllDeclaration {
+  @scala.inline
+  def apply(
+    source: astDashTypesLib.genKindsMod.LiteralKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ExportAllDeclaration,
+    exported: astDashTypesLib.genKindsMod.IdentifierKind = null
+  ): ExportAllDeclaration = {
+    val __obj = js.Dynamic.literal(source = source, `type` = `type`)
+    if (exported != null) __obj.updateDynamic("exported")(exported)
+    __obj.asInstanceOf[ExportAllDeclaration]
+  }
+}
+

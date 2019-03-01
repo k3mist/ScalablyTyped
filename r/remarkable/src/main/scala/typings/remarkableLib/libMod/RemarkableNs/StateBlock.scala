@@ -36,3 +36,34 @@ trait StateBlock extends js.Object {
   def skipSpaces(pos: scala.Double): scala.Double
 }
 
+object StateBlock {
+  @scala.inline
+  def apply(
+    bMarks: js.Array[scala.Double],
+    blkIndent: scala.Double,
+    ddIndent: scala.Double,
+    eMarks: js.Array[scala.Double],
+    env: Env,
+    getLines: js.Function4[scala.Double, scala.Double, scala.Double, scala.Boolean, java.lang.String],
+    isEmpty: js.Function1[scala.Double, scala.Boolean],
+    level: scala.Double,
+    line: scala.Double,
+    lineMax: scala.Double,
+    options: Options,
+    parentType: remarkableLib.remarkableLibStrings.root | remarkableLib.remarkableLibStrings.list,
+    parser: remarkableLib.libMod.ParserBlock,
+    result: java.lang.String,
+    skipChars: js.Function2[scala.Double, scala.Double, scala.Double],
+    skipEmptyLines: js.Function1[scala.Double, scala.Double],
+    skipSpaces: js.Function1[scala.Double, scala.Double],
+    src: java.lang.String,
+    tShift: js.Array[scala.Double],
+    tight: scala.Boolean,
+    tokens: js.Array[ContentToken]
+  ): StateBlock = {
+    val __obj = js.Dynamic.literal(bMarks = bMarks, blkIndent = blkIndent, ddIndent = ddIndent, eMarks = eMarks, env = env, getLines = getLines, isEmpty = isEmpty, level = level, line = line, lineMax = lineMax, options = options, parentType = parentType.asInstanceOf[js.Any], parser = parser, result = result, skipChars = skipChars, skipEmptyLines = skipEmptyLines, skipSpaces = skipSpaces, src = src, tShift = tShift, tight = tight, tokens = tokens)
+  
+    __obj.asInstanceOf[StateBlock]
+  }
+}
+

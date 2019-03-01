@@ -11,3 +11,12 @@ trait DataItem extends js.Object {
   var `type`: java.lang.String
 }
 
+object DataItem {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String, components: js.Array[DataItem] = null): DataItem = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (components != null) __obj.updateDynamic("components")(components)
+    __obj.asInstanceOf[DataItem]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Number extends js.Object {
   var value: java.lang.String
 }
 
+object Number {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): Number = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[Number]
+  }
+}
+

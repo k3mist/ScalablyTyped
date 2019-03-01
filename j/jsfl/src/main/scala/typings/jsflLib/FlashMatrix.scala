@@ -14,3 +14,19 @@ trait FlashMatrix extends js.Object {
   var ty: scala.Double
 }
 
+object FlashMatrix {
+  @scala.inline
+  def apply(
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    tx: scala.Double,
+    ty: scala.Double
+  ): FlashMatrix = {
+    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, tx = tx, ty = ty)
+  
+    __obj.asInstanceOf[FlashMatrix]
+  }
+}
+

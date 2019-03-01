@@ -11,3 +11,12 @@ trait Anon_Large extends js.Object {
   var small: scala.Double
 }
 
+object Anon_Large {
+  @scala.inline
+  def apply(large: scala.Double, medium: scala.Double, small: scala.Double): Anon_Large = {
+    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small)
+  
+    __obj.asInstanceOf[Anon_Large]
+  }
+}
+

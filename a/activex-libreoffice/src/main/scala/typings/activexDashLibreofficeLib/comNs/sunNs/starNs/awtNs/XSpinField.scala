@@ -24,3 +24,23 @@ trait XSpinField
   def up(): scala.Unit
 }
 
+object XSpinField {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSpinListener: js.Function1[XSpinListener, scala.Unit],
+    down: js.Function0[scala.Unit],
+    enableRepeat: js.Function1[scala.Boolean, scala.Unit],
+    first: js.Function0[scala.Unit],
+    last: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSpinListener: js.Function1[XSpinListener, scala.Unit],
+    up: js.Function0[scala.Unit]
+  ): XSpinField = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSpinListener = addSpinListener, down = down, enableRepeat = enableRepeat, first = first, last = last, queryInterface = queryInterface, release = release, removeSpinListener = removeSpinListener, up = up)
+  
+    __obj.asInstanceOf[XSpinField]
+  }
+}
+

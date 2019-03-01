@@ -24,3 +24,17 @@ trait SuiteEntry extends js.Object {
   var testCaseId: scala.Double
 }
 
+object SuiteEntry {
+  @scala.inline
+  def apply(
+    childSuiteId: scala.Double,
+    sequenceNumber: scala.Double,
+    suiteId: scala.Double,
+    testCaseId: scala.Double
+  ): SuiteEntry = {
+    val __obj = js.Dynamic.literal(childSuiteId = childSuiteId, sequenceNumber = sequenceNumber, suiteId = suiteId, testCaseId = testCaseId)
+  
+    __obj.asInstanceOf[SuiteEntry]
+  }
+}
+

@@ -28,3 +28,19 @@ trait LocationSchemeForPolyline
   var width: scala.Double
 }
 
+object LocationSchemeForPolyline {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    opacity: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    width: scala.Double
+  ): LocationSchemeForPolyline = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
+    __obj.asInstanceOf[LocationSchemeForPolyline]
+  }
+}
+

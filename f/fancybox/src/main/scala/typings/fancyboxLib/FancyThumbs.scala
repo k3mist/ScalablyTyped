@@ -25,3 +25,29 @@ trait FancyThumbs extends js.Object {
   def update(): scala.Unit
 }
 
+object FancyThumbs {
+  @scala.inline
+  def apply(
+    create: js.Function0[scala.Unit],
+    focus: js.Function1[scala.Double, scala.Unit],
+    hide: js.Function0[scala.Unit],
+    init: js.Function1[FancyBoxInstance, scala.Unit],
+    instance: FancyBoxInstance,
+    isActive: scala.Boolean,
+    isVisible: scala.Boolean,
+    opts: FancyThumbsOptions,
+    show: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit],
+    $button: JQuery = null,
+    $grid: JQuery = null,
+    $list: JQuery = null
+  ): FancyThumbs = {
+    val __obj = js.Dynamic.literal(create = create, focus = focus, hide = hide, init = init, instance = instance, isActive = isActive, isVisible = isVisible, opts = opts, show = show, toggle = toggle, update = update)
+    if ($button != null) __obj.updateDynamic("$button")($button)
+    if ($grid != null) __obj.updateDynamic("$grid")($grid)
+    if ($list != null) __obj.updateDynamic("$list")($list)
+    __obj.asInstanceOf[FancyThumbs]
+  }
+}
+

@@ -22,3 +22,12 @@ trait LDEvaluationDetail extends js.Object {
   var variationIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LDEvaluationDetail {
+  @scala.inline
+  def apply(reason: LDEvaluationReason, value: LDFlagValue, variationIndex: scala.Int | scala.Double = null): LDEvaluationDetail = {
+    val __obj = js.Dynamic.literal(reason = reason, value = value)
+    if (variationIndex != null) __obj.updateDynamic("variationIndex")(variationIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LDEvaluationDetail]
+  }
+}
+

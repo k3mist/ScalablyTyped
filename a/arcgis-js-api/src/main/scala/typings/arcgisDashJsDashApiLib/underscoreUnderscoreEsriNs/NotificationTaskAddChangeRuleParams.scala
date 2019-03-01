@@ -21,3 +21,18 @@ trait NotificationTaskAddChangeRuleParams
   var user: java.lang.String
 }
 
+object NotificationTaskAddChangeRuleParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    rule: ChangeRule,
+    user: java.lang.String
+  ): NotificationTaskAddChangeRuleParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, rule = rule, user = user)
+  
+    __obj.asInstanceOf[NotificationTaskAddChangeRuleParams]
+  }
+}
+

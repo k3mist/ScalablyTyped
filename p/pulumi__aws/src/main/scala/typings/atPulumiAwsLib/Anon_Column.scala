@@ -10,3 +10,12 @@ trait Anon_Column extends js.Object {
   var sortOrder: scala.Double
 }
 
+object Anon_Column {
+  @scala.inline
+  def apply(column: java.lang.String, sortOrder: scala.Double): Anon_Column = {
+    val __obj = js.Dynamic.literal(column = column, sortOrder = sortOrder)
+  
+    __obj.asInstanceOf[Anon_Column]
+  }
+}
+

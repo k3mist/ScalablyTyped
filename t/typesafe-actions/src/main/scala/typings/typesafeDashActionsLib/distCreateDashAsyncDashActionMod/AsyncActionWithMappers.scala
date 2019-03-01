@@ -26,3 +26,31 @@ trait AsyncActionWithMappers[T1 /* <: typesafeDashActionsLib.distTypesMod.String
   ]
 }
 
+object AsyncActionWithMappers {
+  @scala.inline
+  def apply[T1 /* <: typesafeDashActionsLib.distTypesMod.StringType */, T2 /* <: typesafeDashActionsLib.distTypesMod.StringType */, T3 /* <: typesafeDashActionsLib.distTypesMod.StringType */, A1, P1, A2, P2, A3, P3](
+    failure: typesafeDashActionsLib.distTypesMod.FsaMapBuilder[
+      T3, 
+      typesafeDashActionsLib.distTypesMod.Box[A3], 
+      typesafeDashActionsLib.distTypesMod.Box[P3], 
+      typesafeDashActionsLib.distTypesMod.Box[scala.Unit]
+    ],
+    request: typesafeDashActionsLib.distTypesMod.FsaMapBuilder[
+      T1, 
+      typesafeDashActionsLib.distTypesMod.Box[A1], 
+      typesafeDashActionsLib.distTypesMod.Box[P1], 
+      typesafeDashActionsLib.distTypesMod.Box[scala.Unit]
+    ],
+    success: typesafeDashActionsLib.distTypesMod.FsaMapBuilder[
+      T2, 
+      typesafeDashActionsLib.distTypesMod.Box[A2], 
+      typesafeDashActionsLib.distTypesMod.Box[P2], 
+      typesafeDashActionsLib.distTypesMod.Box[scala.Unit]
+    ]
+  ): AsyncActionWithMappers[T1, T2, T3, A1, P1, A2, P2, A3, P3] = {
+    val __obj = js.Dynamic.literal(failure = failure.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AsyncActionWithMappers[T1, T2, T3, A1, P1, A2, P2, A3, P3]]
+  }
+}
+

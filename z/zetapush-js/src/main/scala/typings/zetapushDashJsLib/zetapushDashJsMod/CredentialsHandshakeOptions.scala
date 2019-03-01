@@ -12,3 +12,17 @@ trait CredentialsHandshakeOptions extends js.Object {
   var password: java.lang.String
 }
 
+object CredentialsHandshakeOptions {
+  @scala.inline
+  def apply(
+    authType: java.lang.String,
+    deploymentId: java.lang.String,
+    login: java.lang.String,
+    password: java.lang.String
+  ): CredentialsHandshakeOptions = {
+    val __obj = js.Dynamic.literal(authType = authType, deploymentId = deploymentId, login = login, password = password)
+  
+    __obj.asInstanceOf[CredentialsHandshakeOptions]
+  }
+}
+

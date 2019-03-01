@@ -51,3 +51,32 @@ trait XContextChangeEventMultiplexer
   ): scala.Unit
 }
 
+object XContextChangeEventMultiplexer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addContextChangeEventListener: js.Function2[
+      XContextChangeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    broadcastContextChangeEvent: js.Function2[
+      ContextChangeEventObject, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAllContextChangeEventListeners: js.Function1[XContextChangeEventListener, scala.Unit],
+    removeContextChangeEventListener: js.Function2[
+      XContextChangeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ]
+  ): XContextChangeEventMultiplexer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addContextChangeEventListener = addContextChangeEventListener, broadcastContextChangeEvent = broadcastContextChangeEvent, queryInterface = queryInterface, release = release, removeAllContextChangeEventListeners = removeAllContextChangeEventListeners, removeContextChangeEventListener = removeContextChangeEventListener)
+  
+    __obj.asInstanceOf[XContextChangeEventMultiplexer]
+  }
+}
+

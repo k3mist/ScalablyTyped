@@ -24,3 +24,18 @@ trait NamedQueryArgs extends js.Object {
   val query: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object NamedQueryArgs {
+  @scala.inline
+  def apply(
+    database: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    query: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): NamedQueryArgs = {
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NamedQueryArgs]
+  }
+}
+

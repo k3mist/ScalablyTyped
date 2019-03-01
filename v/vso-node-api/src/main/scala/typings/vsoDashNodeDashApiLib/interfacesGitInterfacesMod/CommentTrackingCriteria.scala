@@ -36,3 +36,20 @@ trait CommentTrackingCriteria extends js.Object {
   var secondComparingIteration: scala.Double
 }
 
+object CommentTrackingCriteria {
+  @scala.inline
+  def apply(
+    firstComparingIteration: scala.Double,
+    origFilePath: java.lang.String,
+    origLeftFileEnd: CommentPosition,
+    origLeftFileStart: CommentPosition,
+    origRightFileEnd: CommentPosition,
+    origRightFileStart: CommentPosition,
+    secondComparingIteration: scala.Double
+  ): CommentTrackingCriteria = {
+    val __obj = js.Dynamic.literal(firstComparingIteration = firstComparingIteration, origFilePath = origFilePath, origLeftFileEnd = origLeftFileEnd, origLeftFileStart = origLeftFileStart, origRightFileEnd = origRightFileEnd, origRightFileStart = origRightFileStart, secondComparingIteration = secondComparingIteration)
+  
+    __obj.asInstanceOf[CommentTrackingCriteria]
+  }
+}
+

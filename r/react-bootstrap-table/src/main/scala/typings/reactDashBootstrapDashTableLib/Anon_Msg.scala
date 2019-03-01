@@ -20,3 +20,16 @@ trait Anon_Msg extends js.Object {
   var `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditValidatorType
 }
 
+object Anon_Msg {
+  @scala.inline
+  def apply(
+    msg: java.lang.String,
+    title: java.lang.String,
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditValidatorType
+  ): Anon_Msg = {
+    val __obj = js.Dynamic.literal(msg = msg, title = title, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Msg]
+  }
+}
+

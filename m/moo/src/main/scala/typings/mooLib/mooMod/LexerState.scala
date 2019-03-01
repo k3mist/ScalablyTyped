@@ -11,3 +11,12 @@ trait LexerState extends js.Object {
   var state: java.lang.String
 }
 
+object LexerState {
+  @scala.inline
+  def apply(col: scala.Double, line: scala.Double, state: java.lang.String): LexerState = {
+    val __obj = js.Dynamic.literal(col = col, line = line, state = state)
+  
+    __obj.asInstanceOf[LexerState]
+  }
+}
+

@@ -11,3 +11,16 @@ trait NetworkLayer extends js.Object {
   def supports(options: java.lang.String*): scala.Boolean
 }
 
+object NetworkLayer {
+  @scala.inline
+  def apply(
+    sendMutation: js.Function1[RelayMutationRequest, js.Promise[_] | scala.Null],
+    sendQueries: js.Function1[js.Array[RelayQueryRequest], js.Promise[_] | scala.Null],
+    supports: js.Function1[/* repeated */ java.lang.String, scala.Boolean]
+  ): NetworkLayer = {
+    val __obj = js.Dynamic.literal(sendMutation = sendMutation, sendQueries = sendQueries, supports = supports)
+  
+    __obj.asInstanceOf[NetworkLayer]
+  }
+}
+

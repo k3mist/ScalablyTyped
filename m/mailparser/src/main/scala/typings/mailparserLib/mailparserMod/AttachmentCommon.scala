@@ -58,3 +58,27 @@ trait AttachmentCommon extends js.Object {
   var `type`: mailparserLib.mailparserLibStrings.attachment
 }
 
+object AttachmentCommon {
+  @scala.inline
+  def apply(
+    checksum: java.lang.String,
+    content: js.Any,
+    contentDisposition: java.lang.String,
+    contentType: java.lang.String,
+    headers: Headers,
+    size: scala.Double,
+    `type`: mailparserLib.mailparserLibStrings.attachment,
+    cid: java.lang.String = null,
+    contentId: java.lang.String = null,
+    filename: java.lang.String = null,
+    related: js.UndefOr[scala.Boolean] = js.undefined
+  ): AttachmentCommon = {
+    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, size = size, `type` = `type`)
+    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related)
+    __obj.asInstanceOf[AttachmentCommon]
+  }
+}
+

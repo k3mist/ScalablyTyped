@@ -43,3 +43,48 @@ trait ActionTypes extends js.Object {
   var UPDATE_SYNC_WARNINGS: java.lang.String
 }
 
+object ActionTypes {
+  @scala.inline
+  def apply(
+    ARRAY_INSERT: java.lang.String,
+    ARRAY_MOVE: java.lang.String,
+    ARRAY_POP: java.lang.String,
+    ARRAY_PUSH: java.lang.String,
+    ARRAY_REMOVE: java.lang.String,
+    ARRAY_REMOVE_ALL: java.lang.String,
+    ARRAY_SHIFT: java.lang.String,
+    ARRAY_SPLICE: java.lang.String,
+    ARRAY_SWAP: java.lang.String,
+    ARRAY_UNSHIFT: java.lang.String,
+    AUTOFILL: java.lang.String,
+    BLUR: java.lang.String,
+    CHANGE: java.lang.String,
+    CLEAR_ASYNC_ERROR: java.lang.String,
+    CLEAR_FIELDS: java.lang.String,
+    CLEAR_SUBMIT: java.lang.String,
+    CLEAR_SUBMIT_ERRORS: java.lang.String,
+    DESTROY: java.lang.String,
+    FOCUS: java.lang.String,
+    INITIALIZE: java.lang.String,
+    REGISTER_FIELD: java.lang.String,
+    RESET: java.lang.String,
+    RESET_SECTION: java.lang.String,
+    SET_SUBMIT_FAILED: java.lang.String,
+    SET_SUBMIT_SUCCEEDED: java.lang.String,
+    START_ASYNC_VALIDATION: java.lang.String,
+    START_SUBMIT: java.lang.String,
+    STOP_ASYNC_VALIDATION: java.lang.String,
+    STOP_SUBMIT: java.lang.String,
+    SUBMIT: java.lang.String,
+    TOUCH: java.lang.String,
+    UNREGISTER_FIELD: java.lang.String,
+    UNTOUCH: java.lang.String,
+    UPDATE_SYNC_ERRORS: java.lang.String,
+    UPDATE_SYNC_WARNINGS: java.lang.String
+  ): ActionTypes = {
+    val __obj = js.Dynamic.literal(ARRAY_INSERT = ARRAY_INSERT, ARRAY_MOVE = ARRAY_MOVE, ARRAY_POP = ARRAY_POP, ARRAY_PUSH = ARRAY_PUSH, ARRAY_REMOVE = ARRAY_REMOVE, ARRAY_REMOVE_ALL = ARRAY_REMOVE_ALL, ARRAY_SHIFT = ARRAY_SHIFT, ARRAY_SPLICE = ARRAY_SPLICE, ARRAY_SWAP = ARRAY_SWAP, ARRAY_UNSHIFT = ARRAY_UNSHIFT, AUTOFILL = AUTOFILL, BLUR = BLUR, CHANGE = CHANGE, CLEAR_ASYNC_ERROR = CLEAR_ASYNC_ERROR, CLEAR_FIELDS = CLEAR_FIELDS, CLEAR_SUBMIT = CLEAR_SUBMIT, CLEAR_SUBMIT_ERRORS = CLEAR_SUBMIT_ERRORS, DESTROY = DESTROY, FOCUS = FOCUS, INITIALIZE = INITIALIZE, REGISTER_FIELD = REGISTER_FIELD, RESET = RESET, RESET_SECTION = RESET_SECTION, SET_SUBMIT_FAILED = SET_SUBMIT_FAILED, SET_SUBMIT_SUCCEEDED = SET_SUBMIT_SUCCEEDED, START_ASYNC_VALIDATION = START_ASYNC_VALIDATION, START_SUBMIT = START_SUBMIT, STOP_ASYNC_VALIDATION = STOP_ASYNC_VALIDATION, STOP_SUBMIT = STOP_SUBMIT, SUBMIT = SUBMIT, TOUCH = TOUCH, UNREGISTER_FIELD = UNREGISTER_FIELD, UNTOUCH = UNTOUCH, UPDATE_SYNC_ERRORS = UPDATE_SYNC_ERRORS, UPDATE_SYNC_WARNINGS = UPDATE_SYNC_WARNINGS)
+  
+    __obj.asInstanceOf[ActionTypes]
+  }
+}
+

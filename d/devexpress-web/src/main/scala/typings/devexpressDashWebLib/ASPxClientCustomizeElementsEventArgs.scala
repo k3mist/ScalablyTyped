@@ -21,3 +21,15 @@ trait ASPxClientCustomizeElementsEventArgs extends ASPxClientEventArgs {
   def GetById(templateId: java.lang.String): js.Array[ASPxReportUIElement]
 }
 
+object ASPxClientCustomizeElementsEventArgs {
+  @scala.inline
+  def apply(
+    Elements: js.Array[ASPxReportUIElement],
+    GetById: js.Function1[java.lang.String, js.Array[ASPxReportUIElement]]
+  ): ASPxClientCustomizeElementsEventArgs = {
+    val __obj = js.Dynamic.literal(Elements = Elements, GetById = GetById)
+  
+    __obj.asInstanceOf[ASPxClientCustomizeElementsEventArgs]
+  }
+}
+

@@ -61,3 +61,23 @@ trait TableFormattingSettings extends js.Object {
   var spacingBetweenCells: scala.Double
 }
 
+object TableFormattingSettings {
+  @scala.inline
+  def apply(
+    alignment: js.Any,
+    allowSpacingBetweenCells: scala.Boolean,
+    defaultCellMarginBottom: scala.Double,
+    defaultCellMarginLeft: scala.Double,
+    defaultCellMarginRight: scala.Double,
+    defaultCellMarginTop: scala.Double,
+    indent: scala.Double,
+    preferredWidth: TableWidthUnit,
+    resizeToFitContent: scala.Boolean,
+    spacingBetweenCells: scala.Double
+  ): TableFormattingSettings = {
+    val __obj = js.Dynamic.literal(alignment = alignment, allowSpacingBetweenCells = allowSpacingBetweenCells, defaultCellMarginBottom = defaultCellMarginBottom, defaultCellMarginLeft = defaultCellMarginLeft, defaultCellMarginRight = defaultCellMarginRight, defaultCellMarginTop = defaultCellMarginTop, indent = indent, preferredWidth = preferredWidth, resizeToFitContent = resizeToFitContent, spacingBetweenCells = spacingBetweenCells)
+  
+    __obj.asInstanceOf[TableFormattingSettings]
+  }
+}
+

@@ -20,3 +20,13 @@ trait DataFileProperties extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataFileProperties {
+  @scala.inline
+  def apply(itemId: java.lang.String = null, url: java.lang.String = null): DataFileProperties = {
+    val __obj = js.Dynamic.literal()
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DataFileProperties]
+  }
+}
+

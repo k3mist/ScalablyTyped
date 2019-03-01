@@ -36,3 +36,17 @@ trait DocumentEvent
   var ViewController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2
 }
 
+object DocumentEvent {
+  @scala.inline
+  def apply(
+    EventName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Supplement: js.Any,
+    ViewController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2
+  ): DocumentEvent = {
+    val __obj = js.Dynamic.literal(EventName = EventName, Source = Source, Supplement = Supplement, ViewController = ViewController)
+  
+    __obj.asInstanceOf[DocumentEvent]
+  }
+}
+

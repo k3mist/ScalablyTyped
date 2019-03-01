@@ -15,3 +15,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ImportDefaultSpecifier
 }
 
+object ImportDefaultSpecifier {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ImportDefaultSpecifier): ImportDefaultSpecifier = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ImportDefaultSpecifier]
+  }
+}
+

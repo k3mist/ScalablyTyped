@@ -11,3 +11,16 @@ trait ClientOptions extends js.Object {
   var username: java.lang.String
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    username: java.lang.String,
+    length: jsrpLib.jsrpLibNumbers.`2048` | jsrpLib.jsrpLibNumbers.`4096` = null
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal(password = password, username = username)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

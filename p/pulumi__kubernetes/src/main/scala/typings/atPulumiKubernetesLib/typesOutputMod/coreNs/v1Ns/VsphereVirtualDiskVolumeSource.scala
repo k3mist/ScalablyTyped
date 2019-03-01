@@ -28,3 +28,17 @@ trait VsphereVirtualDiskVolumeSource extends js.Object {
   val volumePath: java.lang.String
 }
 
+object VsphereVirtualDiskVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    storagePolicyID: java.lang.String,
+    storagePolicyName: java.lang.String,
+    volumePath: java.lang.String
+  ): VsphereVirtualDiskVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, storagePolicyID = storagePolicyID, storagePolicyName = storagePolicyName, volumePath = volumePath)
+  
+    __obj.asInstanceOf[VsphereVirtualDiskVolumeSource]
+  }
+}
+

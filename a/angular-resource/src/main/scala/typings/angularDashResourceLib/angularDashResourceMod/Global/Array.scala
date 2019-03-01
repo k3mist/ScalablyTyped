@@ -13,3 +13,12 @@ trait Array[T] extends js.Object {
   var $resolved: scala.Boolean
 }
 
+object Array {
+  @scala.inline
+  def apply[T]($promise: angularLib.angularMod.angularNs.IPromise[Array[T]], $resolved: scala.Boolean): Array[T] = {
+    val __obj = js.Dynamic.literal($promise = $promise, $resolved = $resolved)
+  
+    __obj.asInstanceOf[Array[T]]
+  }
+}
+

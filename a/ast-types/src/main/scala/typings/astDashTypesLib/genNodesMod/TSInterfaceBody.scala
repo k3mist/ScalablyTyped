@@ -16,3 +16,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSInterfaceBody
 }
 
+object TSInterfaceBody {
+  @scala.inline
+  def apply(
+    body: js.Array[
+      astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSInterfaceBody
+  ): TSInterfaceBody = {
+    val __obj = js.Dynamic.literal(body = body, `type` = `type`)
+  
+    __obj.asInstanceOf[TSInterfaceBody]
+  }
+}
+

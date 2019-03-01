@@ -10,3 +10,12 @@ trait CameraEncodingTypeObject extends js.Object {
   var PNG: scala.Double
 }
 
+object CameraEncodingTypeObject {
+  @scala.inline
+  def apply(JPEG: scala.Double, PNG: scala.Double): CameraEncodingTypeObject = {
+    val __obj = js.Dynamic.literal(JPEG = JPEG, PNG = PNG)
+  
+    __obj.asInstanceOf[CameraEncodingTypeObject]
+  }
+}
+

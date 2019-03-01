@@ -29,3 +29,34 @@ trait ChampionSpellDto extends js.Object {
   var vars: js.Array[SpellVarsDto]
 }
 
+object ChampionSpellDto {
+  @scala.inline
+  def apply(
+    altimages: js.Array[ImageDto],
+    cooldown: js.Array[scala.Double],
+    cooldownBurn: java.lang.String,
+    cost: js.Array[scala.Double],
+    costBurn: java.lang.String,
+    costType: java.lang.String,
+    description: java.lang.String,
+    effect: js.Array[js.Array[scala.Double]],
+    effectBurn: js.Array[java.lang.String],
+    image: ImageDto,
+    key: java.lang.String,
+    leveltip: LevelTipDto,
+    maxrank: scala.Double,
+    name: java.lang.String,
+    range: js.Array[scala.Double] | java.lang.String,
+    rangeBurn: java.lang.String,
+    resource: java.lang.String,
+    sanitizedDescription: java.lang.String,
+    sanitizedTooltip: java.lang.String,
+    tooltip: java.lang.String,
+    vars: js.Array[SpellVarsDto]
+  ): ChampionSpellDto = {
+    val __obj = js.Dynamic.literal(altimages = altimages, cooldown = cooldown, cooldownBurn = cooldownBurn, cost = cost, costBurn = costBurn, costType = costType, description = description, effect = effect, effectBurn = effectBurn, image = image, key = key, leveltip = leveltip, maxrank = maxrank, name = name, range = range.asInstanceOf[js.Any], rangeBurn = rangeBurn, resource = resource, sanitizedDescription = sanitizedDescription, sanitizedTooltip = sanitizedTooltip, tooltip = tooltip, vars = vars)
+  
+    __obj.asInstanceOf[ChampionSpellDto]
+  }
+}
+

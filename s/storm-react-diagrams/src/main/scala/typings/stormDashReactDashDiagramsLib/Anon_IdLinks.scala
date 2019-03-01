@@ -15,3 +15,20 @@ trait Anon_IdLinks extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_IdLinks {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    links: js.Array[java.lang.String],
+    maximumLinks: scala.Double,
+    name: java.lang.String,
+    parentNode: java.lang.String,
+    selected: scala.Boolean,
+    `type`: java.lang.String
+  ): Anon_IdLinks = {
+    val __obj = js.Dynamic.literal(id = id, links = links, maximumLinks = maximumLinks, name = name, parentNode = parentNode, selected = selected, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_IdLinks]
+  }
+}
+

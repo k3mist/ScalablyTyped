@@ -16,3 +16,12 @@ trait IMapTypeChangeEventArgs extends js.Object {
   var targetType: java.lang.String
 }
 
+object IMapTypeChangeEventArgs {
+  @scala.inline
+  def apply(newMapTypeId: MapTypeId, oldMapTypeId: MapTypeId, target: Map, targetType: java.lang.String): IMapTypeChangeEventArgs = {
+    val __obj = js.Dynamic.literal(newMapTypeId = newMapTypeId, oldMapTypeId = oldMapTypeId, target = target, targetType = targetType)
+  
+    __obj.asInstanceOf[IMapTypeChangeEventArgs]
+  }
+}
+

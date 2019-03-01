@@ -22,3 +22,12 @@ trait Font extends js.Object {
   var size: scala.Double
 }
 
+object Font {
+  @scala.inline
+  def apply(color: Color, family: java.lang.String, size: scala.Double): Font = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], family = family, size = size)
+  
+    __obj.asInstanceOf[Font]
+  }
+}
+

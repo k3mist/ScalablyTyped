@@ -27,3 +27,17 @@ trait ICalenderStrings extends js.Object {
   var qMonthNames: js.Array[java.lang.String]
 }
 
+object ICalenderStrings {
+  @scala.inline
+  def apply(
+    qDayNames: js.Array[java.lang.String],
+    qLongDayNames: js.Array[java.lang.String],
+    qLongMonthNames: js.Array[java.lang.String],
+    qMonthNames: js.Array[java.lang.String]
+  ): ICalenderStrings = {
+    val __obj = js.Dynamic.literal(qDayNames = qDayNames, qLongDayNames = qLongDayNames, qLongMonthNames = qLongMonthNames, qMonthNames = qMonthNames)
+  
+    __obj.asInstanceOf[ICalenderStrings]
+  }
+}
+

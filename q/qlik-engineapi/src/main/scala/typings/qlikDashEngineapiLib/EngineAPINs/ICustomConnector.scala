@@ -27,3 +27,17 @@ trait ICustomConnector extends js.Object {
   var qProvider: java.lang.String
 }
 
+object ICustomConnector {
+  @scala.inline
+  def apply(
+    qDisplayName: java.lang.String,
+    qMachineMode: MachineModeType,
+    qParent: java.lang.String,
+    qProvider: java.lang.String
+  ): ICustomConnector = {
+    val __obj = js.Dynamic.literal(qDisplayName = qDisplayName, qMachineMode = qMachineMode, qParent = qParent, qProvider = qProvider)
+  
+    __obj.asInstanceOf[ICustomConnector]
+  }
+}
+

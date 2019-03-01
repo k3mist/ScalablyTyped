@@ -42,3 +42,21 @@ trait NestedQuery extends Query {
   def toJSON(): js.Any
 }
 
+object NestedQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, NestedQuery],
+    filter: js.Function1[js.Object, NestedQuery],
+    path: js.Function1[java.lang.String, NestedQuery],
+    query: js.Function1[js.Object, NestedQuery],
+    scope: js.Function1[java.lang.String, NestedQuery],
+    scoreMode: js.Function1[java.lang.String, NestedQuery],
+    toJSON: js.Function0[js.Any]
+  ): NestedQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, filter = filter, path = path, query = query, scope = scope, scoreMode = scoreMode, toJSON = toJSON)
+  
+    __obj.asInstanceOf[NestedQuery]
+  }
+}
+

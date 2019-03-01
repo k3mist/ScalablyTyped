@@ -69,3 +69,27 @@ trait NumericRangeFilter extends Filter {
   def toJSON(): NumericRangeFilter
 }
 
+object NumericRangeFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, NumericRangeFilter],
+    cacheKey: js.Function1[java.lang.String, NumericRangeFilter],
+    field: js.Function1[java.lang.String, NumericRangeFilter],
+    from: js.Function1[stdLib.Number, NumericRangeFilter],
+    gt: js.Function1[js.Any, NumericRangeFilter],
+    gte: js.Function1[js.Any, NumericRangeFilter],
+    includeLower: js.Function1[scala.Boolean, NumericRangeFilter],
+    includeUpper: js.Function1[scala.Boolean, NumericRangeFilter],
+    lt: js.Function1[js.Any, NumericRangeFilter],
+    lte: js.Function1[js.Any, NumericRangeFilter],
+    name: js.Function1[java.lang.String, NumericRangeFilter],
+    to: js.Function1[stdLib.Number, NumericRangeFilter],
+    toJSON: js.Function0[NumericRangeFilter]
+  ): NumericRangeFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, from = from, gt = gt, gte = gte, includeLower = includeLower, includeUpper = includeUpper, lt = lt, lte = lte, name = name, to = to, toJSON = toJSON)
+  
+    __obj.asInstanceOf[NumericRangeFilter]
+  }
+}
+

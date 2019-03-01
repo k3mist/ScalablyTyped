@@ -13,3 +13,12 @@ trait GraphData extends js.Object {
   var nodes: js.Array[GraphNode]
 }
 
+object GraphData {
+  @scala.inline
+  def apply(links: js.Array[GraphLink], nodes: js.Array[GraphNode]): GraphData = {
+    val __obj = js.Dynamic.literal(links = links, nodes = nodes)
+  
+    __obj.asInstanceOf[GraphData]
+  }
+}
+

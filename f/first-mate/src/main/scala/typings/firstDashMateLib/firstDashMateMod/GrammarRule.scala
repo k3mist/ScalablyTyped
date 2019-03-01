@@ -13,3 +13,12 @@ trait GrammarRule extends js.Object {
   var scopeName: java.lang.String
 }
 
+object GrammarRule {
+  @scala.inline
+  def apply(contentScopeName: java.lang.String, rule: js.Object, scopeName: java.lang.String): GrammarRule = {
+    val __obj = js.Dynamic.literal(contentScopeName = contentScopeName, rule = rule, scopeName = scopeName)
+  
+    __obj.asInstanceOf[GrammarRule]
+  }
+}
+

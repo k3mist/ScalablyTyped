@@ -11,3 +11,20 @@ trait AnyNaptrRecord
   var `type`: nodeLib.nodeLibStrings.NAPTR
 }
 
+object AnyNaptrRecord {
+  @scala.inline
+  def apply(
+    flags: java.lang.String,
+    order: scala.Double,
+    preference: scala.Double,
+    regexp: java.lang.String,
+    replacement: java.lang.String,
+    service: java.lang.String,
+    `type`: nodeLib.nodeLibStrings.NAPTR
+  ): AnyNaptrRecord = {
+    val __obj = js.Dynamic.literal(flags = flags, order = order, preference = preference, regexp = regexp, replacement = replacement, service = service, `type` = `type`)
+  
+    __obj.asInstanceOf[AnyNaptrRecord]
+  }
+}
+

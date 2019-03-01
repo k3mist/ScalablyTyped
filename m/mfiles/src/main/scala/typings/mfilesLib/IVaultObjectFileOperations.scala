@@ -119,3 +119,93 @@ trait IVaultObjectFileOperations extends js.Object {
   def UploadTemporaryFileCommit_32bit(UploadID: scala.Double, LogicalSize: scala.Double): scala.Unit
 }
 
+object IVaultObjectFileOperations {
+  @scala.inline
+  def apply(
+    AddEmptyFile: js.Function3[IObjVer, java.lang.String, java.lang.String, IFileVer],
+    AddFile: js.Function4[IObjVer, java.lang.String, java.lang.String, java.lang.String, IFileVer],
+    CloseUploadSession: js.Function1[scala.Double, scala.Unit],
+    ConvertToPDF: js.Function6[
+      IObjVer, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      IObjectVersion
+    ],
+    DownloadFile: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
+    DownloadFileAsDataURI: js.Function3[IObjVer, scala.Double, scala.Double, java.lang.String],
+    DownloadFileEx: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      mfilesLib.MFilesNs.MFFileFormat, 
+      scala.Unit
+    ],
+    DownloadFileInBlocks_Begin: js.Function2[scala.Double, scala.Double, IFileDownloadSession],
+    DownloadFileInBlocks_BeginEx: js.Function3[scala.Double, scala.Double, mfilesLib.MFilesNs.MFFileFormat, IFileDownloadSession],
+    DownloadFileInBlocks_BeginEx_32bit: js.Function3[scala.Double, scala.Double, mfilesLib.MFilesNs.MFFileFormat, IFileDownloadSession],
+    DownloadFileInBlocks_Begin_32bit: js.Function2[scala.Double, scala.Double, IFileDownloadSession],
+    DownloadFileInBlocks_ReadBlock: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    DownloadFileInBlocks_ReadBlock_32bit: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    GetFileSize: js.Function1[IFileVer, scala.Double],
+    GetFileSize_32bit: js.Function1[IFileVer, scala.Double],
+    GetFiles: js.Function1[IObjVer, IObjectFiles],
+    GetFilesForModificationInEventHandler: js.Function1[IObjVer, IObjectFiles],
+    GetLatestFileVersion: js.Function2[scala.Double, scala.Boolean, IFileVer],
+    GetObjIDOfFile: js.Function1[scala.Double, IObjID],
+    GetPathInDefaultView: js.Function6[
+      IObjID, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      mfilesLib.MFilesNs.MFLatestSpecificBehavior, 
+      scala.Boolean, 
+      java.lang.String
+    ],
+    GetPathInDefaultViewEx: js.Function7[
+      IObjID, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      mfilesLib.MFilesNs.MFLatestSpecificBehavior, 
+      scala.Boolean, 
+      scala.Boolean, 
+      java.lang.String
+    ],
+    OpenFileInDefaultApplication: js.Function4[scala.Double, IObjVer, IFileVer, mfilesLib.MFilesNs.MFFileOpenMethod, scala.Unit],
+    PerformOCROperation: js.Function6[
+      IObjVer, 
+      IFileVer, 
+      IOCROptions, 
+      mfilesLib.MFilesNs.MFOCRZoneRecognitionMode, 
+      IOCRPages, 
+      scala.Boolean, 
+      IOCRPageResults
+    ],
+    RemoveFile: js.Function2[IObjVer, IFileVer, IObjectVersion],
+    RenameFile: js.Function5[IObjVer, IFileVer, java.lang.String, java.lang.String, scala.Boolean, IObjectVersion],
+    UpdateMetadataInFile: js.Function3[IObjVer, scala.Double, scala.Boolean, IObjectVersion],
+    UploadFile: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
+    UploadFileBlock: js.Function4[scala.Double, scala.Double, scala.Double, js.Array[scala.Double], scala.Unit],
+    UploadFileBlockBegin: js.Function0[scala.Double],
+    UploadFileBlockBegin_32bit: js.Function0[scala.Double],
+    UploadFileBlock_32bit: js.Function4[scala.Double, scala.Double, scala.Double, js.Array[scala.Double], scala.Unit],
+    UploadFileCommit: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    UploadFileCommit_32bit: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    UploadFromDataURI: js.Function4[IObjVer, scala.Double, scala.Double, java.lang.String, scala.Unit],
+    UploadTemporaryFile: js.Function1[java.lang.String, scala.Double],
+    UploadTemporaryFileBlock: js.Function4[scala.Double, scala.Double, scala.Double, js.Array[scala.Double], scala.Unit],
+    UploadTemporaryFileBlockBegin: js.Function1[java.lang.String, scala.Double],
+    UploadTemporaryFileBlockBegin_32bit: js.Function1[java.lang.String, scala.Double],
+    UploadTemporaryFileBlock_32bit: js.Function4[scala.Double, scala.Double, scala.Double, js.Array[scala.Double], scala.Unit],
+    UploadTemporaryFileCommit: js.Function2[scala.Double, scala.Double, scala.Unit],
+    UploadTemporaryFileCommit_32bit: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): IVaultObjectFileOperations = {
+    val __obj = js.Dynamic.literal(AddEmptyFile = AddEmptyFile, AddFile = AddFile, CloseUploadSession = CloseUploadSession, ConvertToPDF = ConvertToPDF, DownloadFile = DownloadFile, DownloadFileAsDataURI = DownloadFileAsDataURI, DownloadFileEx = DownloadFileEx, DownloadFileInBlocks_Begin = DownloadFileInBlocks_Begin, DownloadFileInBlocks_BeginEx = DownloadFileInBlocks_BeginEx, DownloadFileInBlocks_BeginEx_32bit = DownloadFileInBlocks_BeginEx_32bit, DownloadFileInBlocks_Begin_32bit = DownloadFileInBlocks_Begin_32bit, DownloadFileInBlocks_ReadBlock = DownloadFileInBlocks_ReadBlock, DownloadFileInBlocks_ReadBlock_32bit = DownloadFileInBlocks_ReadBlock_32bit, GetFileSize = GetFileSize, GetFileSize_32bit = GetFileSize_32bit, GetFiles = GetFiles, GetFilesForModificationInEventHandler = GetFilesForModificationInEventHandler, GetLatestFileVersion = GetLatestFileVersion, GetObjIDOfFile = GetObjIDOfFile, GetPathInDefaultView = GetPathInDefaultView, GetPathInDefaultViewEx = GetPathInDefaultViewEx, OpenFileInDefaultApplication = OpenFileInDefaultApplication, PerformOCROperation = PerformOCROperation, RemoveFile = RemoveFile, RenameFile = RenameFile, UpdateMetadataInFile = UpdateMetadataInFile, UploadFile = UploadFile, UploadFileBlock = UploadFileBlock, UploadFileBlockBegin = UploadFileBlockBegin, UploadFileBlockBegin_32bit = UploadFileBlockBegin_32bit, UploadFileBlock_32bit = UploadFileBlock_32bit, UploadFileCommit = UploadFileCommit, UploadFileCommit_32bit = UploadFileCommit_32bit, UploadFromDataURI = UploadFromDataURI, UploadTemporaryFile = UploadTemporaryFile, UploadTemporaryFileBlock = UploadTemporaryFileBlock, UploadTemporaryFileBlockBegin = UploadTemporaryFileBlockBegin, UploadTemporaryFileBlockBegin_32bit = UploadTemporaryFileBlockBegin_32bit, UploadTemporaryFileBlock_32bit = UploadTemporaryFileBlock_32bit, UploadTemporaryFileCommit = UploadTemporaryFileCommit, UploadTemporaryFileCommit_32bit = UploadTemporaryFileCommit_32bit)
+  
+    __obj.asInstanceOf[IVaultObjectFileOperations]
+  }
+}
+

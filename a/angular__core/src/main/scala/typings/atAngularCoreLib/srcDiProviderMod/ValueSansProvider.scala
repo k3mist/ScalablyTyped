@@ -13,3 +13,12 @@ trait ValueSansProvider
   var useValue: js.Any
 }
 
+object ValueSansProvider {
+  @scala.inline
+  def apply(useValue: js.Any): ValueSansProvider = {
+    val __obj = js.Dynamic.literal(useValue = useValue)
+  
+    __obj.asInstanceOf[ValueSansProvider]
+  }
+}
+

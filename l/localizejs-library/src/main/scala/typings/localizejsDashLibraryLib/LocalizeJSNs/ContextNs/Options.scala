@@ -98,3 +98,33 @@ trait Options extends js.Object {
   var translateTitle: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autodetectLanguage: scala.Boolean,
+    basePath: java.lang.String,
+    blockedClasses: js.Array[java.lang.String],
+    defaultLanguage: java.lang.String,
+    enhancedContentSecurity: scala.Boolean,
+    fetchTranslations: scala.Boolean,
+    key: java.lang.String,
+    prefetch: scala.Boolean,
+    rememberLanguage: scala.Boolean,
+    retranslateOnNewPhrases: scala.Boolean,
+    saveNewPhrases: scala.Boolean,
+    saveNewPhrasesFromSource: scala.Boolean,
+    targetLanguage: java.lang.String,
+    translateAlt: scala.Boolean,
+    translateBody: scala.Boolean,
+    translateClasses: js.Array[java.lang.String],
+    translateMetaTags: scala.Boolean,
+    translateNumbers: scala.Boolean,
+    translateTimeElement: scala.Boolean,
+    translateTitle: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal(autodetectLanguage = autodetectLanguage, basePath = basePath, blockedClasses = blockedClasses, defaultLanguage = defaultLanguage, enhancedContentSecurity = enhancedContentSecurity, fetchTranslations = fetchTranslations, key = key, prefetch = prefetch, rememberLanguage = rememberLanguage, retranslateOnNewPhrases = retranslateOnNewPhrases, saveNewPhrases = saveNewPhrases, saveNewPhrasesFromSource = saveNewPhrasesFromSource, targetLanguage = targetLanguage, translateAlt = translateAlt, translateBody = translateBody, translateClasses = translateClasses, translateMetaTags = translateMetaTags, translateNumbers = translateNumbers, translateTimeElement = translateTimeElement, translateTitle = translateTitle)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

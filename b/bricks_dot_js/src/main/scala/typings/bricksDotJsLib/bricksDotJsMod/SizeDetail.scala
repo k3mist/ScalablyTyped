@@ -11,3 +11,12 @@ trait SizeDetail extends js.Object {
   var mq: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SizeDetail {
+  @scala.inline
+  def apply(columns: scala.Double, gutter: scala.Double, mq: java.lang.String = null): SizeDetail = {
+    val __obj = js.Dynamic.literal(columns = columns, gutter = gutter)
+    if (mq != null) __obj.updateDynamic("mq")(mq)
+    __obj.asInstanceOf[SizeDetail]
+  }
+}
+

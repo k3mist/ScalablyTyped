@@ -11,3 +11,12 @@ trait ExtentEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object ExtentEvent {
+  @scala.inline
+  def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Extent): ExtentEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[ExtentEvent]
+  }
+}
+

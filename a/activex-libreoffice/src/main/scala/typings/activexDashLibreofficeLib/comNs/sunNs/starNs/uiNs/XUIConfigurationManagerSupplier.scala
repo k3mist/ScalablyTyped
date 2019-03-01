@@ -23,3 +23,18 @@ trait XUIConfigurationManagerSupplier
   def getUIConfigurationManager(): XUIConfigurationManager
 }
 
+object XUIConfigurationManagerSupplier {
+  @scala.inline
+  def apply(
+    UIConfigurationManager: XUIConfigurationManager,
+    acquire: js.Function0[scala.Unit],
+    getUIConfigurationManager: js.Function0[XUIConfigurationManager],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUIConfigurationManagerSupplier = {
+    val __obj = js.Dynamic.literal(UIConfigurationManager = UIConfigurationManager, acquire = acquire, getUIConfigurationManager = getUIConfigurationManager, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUIConfigurationManagerSupplier]
+  }
+}
+

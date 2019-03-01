@@ -47,3 +47,28 @@ trait FileSystemArgs extends js.Object {
   val throughputMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object FileSystemArgs {
+  @scala.inline
+  def apply(
+    creationToken: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    performanceMode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    provisionedThroughputInMibps: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    referenceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    throughputMode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): FileSystemArgs = {
+    val __obj = js.Dynamic.literal()
+    if (creationToken != null) __obj.updateDynamic("creationToken")(creationToken.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (performanceMode != null) __obj.updateDynamic("performanceMode")(performanceMode.asInstanceOf[js.Any])
+    if (provisionedThroughputInMibps != null) __obj.updateDynamic("provisionedThroughputInMibps")(provisionedThroughputInMibps.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (throughputMode != null) __obj.updateDynamic("throughputMode")(throughputMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileSystemArgs]
+  }
+}
+

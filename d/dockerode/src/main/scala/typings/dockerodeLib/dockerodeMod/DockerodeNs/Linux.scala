@@ -11,3 +11,16 @@ trait Linux extends js.Object {
   var Devices: js.Array[PluginDevice]
 }
 
+object Linux {
+  @scala.inline
+  def apply(
+    AllowAllDevices: scala.Boolean,
+    Capabilities: js.Array[java.lang.String],
+    Devices: js.Array[PluginDevice]
+  ): Linux = {
+    val __obj = js.Dynamic.literal(AllowAllDevices = AllowAllDevices, Capabilities = Capabilities, Devices = Devices)
+  
+    __obj.asInstanceOf[Linux]
+  }
+}
+

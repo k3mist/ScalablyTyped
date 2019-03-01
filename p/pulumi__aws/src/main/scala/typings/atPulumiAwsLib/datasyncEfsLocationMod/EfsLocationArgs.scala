@@ -28,3 +28,20 @@ trait EfsLocationArgs extends js.Object {
   ] = js.undefined
 }
 
+object EfsLocationArgs {
+  @scala.inline
+  def apply(
+    ec2Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupArnsSubnetArn],
+    efsFileSystemArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN],
+    subdirectory: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null
+  ): EfsLocationArgs = {
+    val __obj = js.Dynamic.literal(ec2Config = ec2Config.asInstanceOf[js.Any], efsFileSystemArn = efsFileSystemArn.asInstanceOf[js.Any])
+    if (subdirectory != null) __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EfsLocationArgs]
+  }
+}
+

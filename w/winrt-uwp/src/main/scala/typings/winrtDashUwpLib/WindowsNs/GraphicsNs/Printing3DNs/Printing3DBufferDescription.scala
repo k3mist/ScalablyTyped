@@ -13,3 +13,12 @@ trait Printing3DBufferDescription extends js.Object {
   var stride: scala.Double
 }
 
+object Printing3DBufferDescription {
+  @scala.inline
+  def apply(format: Printing3DBufferFormat, stride: scala.Double): Printing3DBufferDescription = {
+    val __obj = js.Dynamic.literal(format = format, stride = stride)
+  
+    __obj.asInstanceOf[Printing3DBufferDescription]
+  }
+}
+

@@ -16,3 +16,21 @@ trait CommitSummary extends js.Object {
   var url: java.lang.String
 }
 
+object CommitSummary {
+  @scala.inline
+  def apply(
+    author: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary,
+    comments_url: java.lang.String,
+    commit: GitCommitSummary,
+    committer: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary,
+    html_url: java.lang.String,
+    parents: js.Array[CommitRef],
+    sha: java.lang.String,
+    url: java.lang.String
+  ): CommitSummary = {
+    val __obj = js.Dynamic.literal(author = author, comments_url = comments_url, commit = commit, committer = committer, html_url = html_url, parents = parents, sha = sha, url = url)
+  
+    __obj.asInstanceOf[CommitSummary]
+  }
+}
+

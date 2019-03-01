@@ -12,3 +12,12 @@ trait IDonutData extends js.Object {
   var value: scala.Double
 }
 
+object IDonutData {
+  @scala.inline
+  def apply(label: java.lang.String, value: scala.Double): IDonutData = {
+    val __obj = js.Dynamic.literal(label = label, value = value)
+  
+    __obj.asInstanceOf[IDonutData]
+  }
+}
+

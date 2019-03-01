@@ -10,3 +10,12 @@ trait SMSIntermediary extends js.Object {
   var shortCodes: SMSShortCodeResource
 }
 
+object SMSIntermediary {
+  @scala.inline
+  def apply(messages: SMSMessageResource, shortCodes: SMSShortCodeResource): SMSIntermediary = {
+    val __obj = js.Dynamic.literal(messages = messages, shortCodes = shortCodes)
+  
+    __obj.asInstanceOf[SMSIntermediary]
+  }
+}
+

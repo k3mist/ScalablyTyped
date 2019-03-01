@@ -17,3 +17,22 @@ trait File extends js.Object {
   var uploadDate: stdLib.Date
 }
 
+object File {
+  @scala.inline
+  def apply(
+    bucketName: java.lang.String,
+    chunkSize: scala.Double,
+    contentType: java.lang.String,
+    filename: java.lang.String,
+    id: js.Any,
+    md5: java.lang.String,
+    metadata: js.Any,
+    size: scala.Double,
+    uploadDate: stdLib.Date
+  ): File = {
+    val __obj = js.Dynamic.literal(bucketName = bucketName, chunkSize = chunkSize, contentType = contentType, filename = filename, id = id, md5 = md5, metadata = metadata, size = size, uploadDate = uploadDate)
+  
+    __obj.asInstanceOf[File]
+  }
+}
+

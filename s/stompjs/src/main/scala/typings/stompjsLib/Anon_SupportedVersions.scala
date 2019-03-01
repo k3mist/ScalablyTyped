@@ -12,3 +12,17 @@ trait Anon_SupportedVersions extends js.Object {
   def supportedVersions(): js.Array[java.lang.String]
 }
 
+object Anon_SupportedVersions {
+  @scala.inline
+  def apply(
+    V1_0: java.lang.String,
+    V1_1: java.lang.String,
+    V1_2: java.lang.String,
+    supportedVersions: js.Function0[js.Array[java.lang.String]]
+  ): Anon_SupportedVersions = {
+    val __obj = js.Dynamic.literal(V1_0 = V1_0, V1_1 = V1_1, V1_2 = V1_2, supportedVersions = supportedVersions)
+  
+    __obj.asInstanceOf[Anon_SupportedVersions]
+  }
+}
+

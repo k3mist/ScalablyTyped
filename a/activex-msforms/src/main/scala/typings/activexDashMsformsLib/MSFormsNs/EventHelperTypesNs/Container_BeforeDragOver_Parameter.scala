@@ -16,3 +16,21 @@ trait Container_BeforeDragOver_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object Container_BeforeDragOver_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Control: activexDashMsformsLib.MSFormsNs.Control,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Shift: scala.Double,
+    State: activexDashMsformsLib.MSFormsNs.fmDragState,
+    X: scala.Double,
+    Y: scala.Double
+  ): Container_BeforeDragOver_Parameter = {
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Shift = Shift, State = State, X = X, Y = Y)
+  
+    __obj.asInstanceOf[Container_BeforeDragOver_Parameter]
+  }
+}
+

@@ -10,3 +10,12 @@ trait PendingDescriptor
   var state: whenLib.whenLibStrings.pending
 }
 
+object PendingDescriptor {
+  @scala.inline
+  def apply(state: whenLib.whenLibStrings.pending): PendingDescriptor = {
+    val __obj = js.Dynamic.literal(state = state)
+  
+    __obj.asInstanceOf[PendingDescriptor]
+  }
+}
+

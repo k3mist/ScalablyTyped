@@ -13,3 +13,12 @@ trait BooleanValue
   var value: scala.Boolean
 }
 
+object BooleanValue {
+  @scala.inline
+  def apply(kind: java.lang.String, value: scala.Boolean, loc: Location = null): BooleanValue = {
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[BooleanValue]
+  }
+}
+

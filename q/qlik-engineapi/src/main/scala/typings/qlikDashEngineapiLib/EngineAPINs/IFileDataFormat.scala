@@ -76,3 +76,24 @@ trait IFileDataFormat extends js.Object {
   var qType: FileDataFormatType
 }
 
+object IFileDataFormat {
+  @scala.inline
+  def apply(
+    qCodePage: scala.Double,
+    qComment: java.lang.String,
+    qDelimiter: IDelimiterInfo,
+    qFixedWidthDelimiters: java.lang.String,
+    qHeaderSize: scala.Double,
+    qIgnoreEOF: scala.Boolean,
+    qLabel: java.lang.String,
+    qQuote: java.lang.String,
+    qRecordSize: scala.Double,
+    qTabSize: scala.Double,
+    qType: FileDataFormatType
+  ): IFileDataFormat = {
+    val __obj = js.Dynamic.literal(qCodePage = qCodePage, qComment = qComment, qDelimiter = qDelimiter, qFixedWidthDelimiters = qFixedWidthDelimiters, qHeaderSize = qHeaderSize, qIgnoreEOF = qIgnoreEOF, qLabel = qLabel, qQuote = qQuote, qRecordSize = qRecordSize, qTabSize = qTabSize, qType = qType)
+  
+    __obj.asInstanceOf[IFileDataFormat]
+  }
+}
+

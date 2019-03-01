@@ -11,3 +11,16 @@ trait Anon_Bounds extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Bounds {
+  @scala.inline
+  def apply(
+    bounds: js.Array[baidumapDashWebDashSdkLib.BMapNs.Bounds],
+    target: js.Any,
+    `type`: java.lang.String
+  ): Anon_Bounds = {
+    val __obj = js.Dynamic.literal(bounds = bounds, target = target, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Bounds]
+  }
+}
+

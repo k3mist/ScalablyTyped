@@ -42,3 +42,20 @@ trait Rescore extends js.Object {
   def windowSize(size: stdLib.Number): Rescore
 }
 
+object Rescore {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    queryWeight: js.Function1[stdLib.Number, Rescore],
+    rescoreQuery: js.Function1[Query, Rescore],
+    rescoreQueryWeight: js.Function1[stdLib.Number, Rescore],
+    scoreMode: js.Function1[java.lang.String, Rescore],
+    toJSON: js.Function0[js.Any],
+    windowSize: js.Function1[stdLib.Number, Rescore]
+  ): Rescore = {
+    val __obj = js.Dynamic.literal(_type = _type, queryWeight = queryWeight, rescoreQuery = rescoreQuery, rescoreQueryWeight = rescoreQueryWeight, scoreMode = scoreMode, toJSON = toJSON, windowSize = windowSize)
+  
+    __obj.asInstanceOf[Rescore]
+  }
+}
+

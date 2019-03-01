@@ -10,3 +10,12 @@ trait Anon_Count extends js.Object {
   var result: js.Any
 }
 
+object Anon_Count {
+  @scala.inline
+  def apply(count: scala.Double, result: js.Any): Anon_Count = {
+    val __obj = js.Dynamic.literal(count = count, result = result)
+  
+    __obj.asInstanceOf[Anon_Count]
+  }
+}
+

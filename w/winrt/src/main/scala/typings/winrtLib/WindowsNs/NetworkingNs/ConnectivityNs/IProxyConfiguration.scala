@@ -10,3 +10,15 @@ trait IProxyConfiguration extends js.Object {
   var proxyUris: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.FoundationNs.Uri]
 }
 
+object IProxyConfiguration {
+  @scala.inline
+  def apply(
+    canConnectDirectly: scala.Boolean,
+    proxyUris: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.FoundationNs.Uri]
+  ): IProxyConfiguration = {
+    val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly, proxyUris = proxyUris)
+  
+    __obj.asInstanceOf[IProxyConfiguration]
+  }
+}
+

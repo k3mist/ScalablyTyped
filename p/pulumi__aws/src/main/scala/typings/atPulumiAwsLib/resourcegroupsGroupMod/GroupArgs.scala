@@ -20,3 +20,17 @@ trait GroupArgs extends js.Object {
   val resourceQuery: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_QueryType]
 }
 
+object GroupArgs {
+  @scala.inline
+  def apply(
+    resourceQuery: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_QueryType],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): GroupArgs = {
+    val __obj = js.Dynamic.literal(resourceQuery = resourceQuery.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupArgs]
+  }
+}
+

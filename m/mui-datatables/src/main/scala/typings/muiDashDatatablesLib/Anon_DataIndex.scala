@@ -10,3 +10,12 @@ trait Anon_DataIndex extends js.Object {
   var rowIndex: scala.Double
 }
 
+object Anon_DataIndex {
+  @scala.inline
+  def apply(dataIndex: scala.Double, rowIndex: scala.Double): Anon_DataIndex = {
+    val __obj = js.Dynamic.literal(dataIndex = dataIndex, rowIndex = rowIndex)
+  
+    __obj.asInstanceOf[Anon_DataIndex]
+  }
+}
+

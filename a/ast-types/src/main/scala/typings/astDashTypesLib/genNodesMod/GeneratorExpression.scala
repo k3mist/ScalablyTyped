@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.GeneratorExpression
 }
 
+object GeneratorExpression {
+  @scala.inline
+  def apply(
+    blocks: js.Array[astDashTypesLib.genKindsMod.ComprehensionBlockKind],
+    body: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.GeneratorExpression,
+    filter: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): GeneratorExpression = {
+    val __obj = js.Dynamic.literal(blocks = blocks, body = body, `type` = `type`)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[GeneratorExpression]
+  }
+}
+

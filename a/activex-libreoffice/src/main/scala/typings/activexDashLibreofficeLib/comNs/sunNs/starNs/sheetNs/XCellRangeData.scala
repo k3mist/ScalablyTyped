@@ -35,3 +35,22 @@ trait XCellRangeData
   ): scala.Unit
 }
 
+object XCellRangeData {
+  @scala.inline
+  def apply(
+    DataArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    acquire: js.Function0[scala.Unit],
+    getDataArray: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDataArray: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      scala.Unit
+    ]
+  ): XCellRangeData = {
+    val __obj = js.Dynamic.literal(DataArray = DataArray, acquire = acquire, getDataArray = getDataArray, queryInterface = queryInterface, release = release, setDataArray = setDataArray)
+  
+    __obj.asInstanceOf[XCellRangeData]
+  }
+}
+

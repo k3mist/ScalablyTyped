@@ -27,3 +27,17 @@ trait IErrorData extends js.Object {
   var qLineEnd: java.lang.String
 }
 
+object IErrorData {
+  @scala.inline
+  def apply(
+    qErrorDataCode: ErrorDataCodeType,
+    qErrorString: java.lang.String,
+    qLine: java.lang.String,
+    qLineEnd: java.lang.String
+  ): IErrorData = {
+    val __obj = js.Dynamic.literal(qErrorDataCode = qErrorDataCode, qErrorString = qErrorString, qLine = qLine, qLineEnd = qLineEnd)
+  
+    __obj.asInstanceOf[IErrorData]
+  }
+}
+

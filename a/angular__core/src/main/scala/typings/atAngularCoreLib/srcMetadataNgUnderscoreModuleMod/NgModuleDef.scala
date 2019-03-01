@@ -27,3 +27,19 @@ trait NgModuleDef[T] extends js.Object {
   var `type`: T
 }
 
+object NgModuleDef {
+  @scala.inline
+  def apply[T](
+    bootstrap: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
+    declarations: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
+    exports: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
+    imports: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
+    `type`: T,
+    transitiveCompileScopes: NgModuleTransitiveScopes = null
+  ): NgModuleDef[T] = {
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap, declarations = declarations, exports = exports, imports = imports, `type` = `type`.asInstanceOf[js.Any])
+    if (transitiveCompileScopes != null) __obj.updateDynamic("transitiveCompileScopes")(transitiveCompileScopes)
+    __obj.asInstanceOf[NgModuleDef[T]]
+  }
+}
+

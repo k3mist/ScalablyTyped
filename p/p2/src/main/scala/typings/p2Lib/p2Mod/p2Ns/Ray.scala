@@ -21,3 +21,26 @@ trait Ray extends js.Object {
   def update(): scala.Unit
 }
 
+object Ray {
+  @scala.inline
+  def apply(
+    callback: js.Function1[RaycastResult, scala.Unit],
+    checkCollisionResponse: scala.Boolean,
+    collisionGroup: scala.Double,
+    collisionMask: scala.Double,
+    direction: js.Tuple2[scala.Double, scala.Double],
+    from: js.Tuple2[scala.Double, scala.Double],
+    getAABB: js.Function0[AABB],
+    intersectBodies: js.Function2[RaycastResult, js.Array[Body], scala.Unit],
+    length: scala.Double,
+    mode: scala.Double,
+    skipBackfaces: scala.Boolean,
+    to: js.Tuple2[scala.Double, scala.Double],
+    update: js.Function0[scala.Unit]
+  ): Ray = {
+    val __obj = js.Dynamic.literal(callback = callback, checkCollisionResponse = checkCollisionResponse, collisionGroup = collisionGroup, collisionMask = collisionMask, direction = direction, from = from, getAABB = getAABB, intersectBodies = intersectBodies, length = length, mode = mode, skipBackfaces = skipBackfaces, to = to, update = update)
+  
+    __obj.asInstanceOf[Ray]
+  }
+}
+

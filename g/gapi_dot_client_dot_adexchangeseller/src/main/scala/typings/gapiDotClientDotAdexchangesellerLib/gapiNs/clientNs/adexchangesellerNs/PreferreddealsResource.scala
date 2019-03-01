@@ -12,3 +12,21 @@ trait PreferreddealsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields): gapiDotClientLib.gapiNs.clientNs.Request[PreferredDeals]
 }
 
+object PreferreddealsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltDealId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PreferredDeal]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PreferredDeals]
+    ]
+  ): PreferreddealsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[PreferreddealsResource]
+  }
+}
+

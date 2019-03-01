@@ -10,3 +10,15 @@ trait Anon_CredentialsHeaderValue extends js.Object {
   /** true if input is valid HttpCredentialsHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_CredentialsHeaderValue {
+  @scala.inline
+  def apply(
+    credentialsHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCredentialsHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_CredentialsHeaderValue = {
+    val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_CredentialsHeaderValue]
+  }
+}
+

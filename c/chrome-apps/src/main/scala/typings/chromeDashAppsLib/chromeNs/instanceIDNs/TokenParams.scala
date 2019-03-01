@@ -23,3 +23,16 @@ trait TokenParams extends js.Object {
   var scope: java.lang.String
 }
 
+object TokenParams {
+  @scala.inline
+  def apply(
+    authorizedEntity: java.lang.String,
+    scope: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): TokenParams = {
+    val __obj = js.Dynamic.literal(authorizedEntity = authorizedEntity, scope = scope)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[TokenParams]
+  }
+}
+

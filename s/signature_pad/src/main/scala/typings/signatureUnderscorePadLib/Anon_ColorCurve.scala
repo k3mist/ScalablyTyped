@@ -10,3 +10,15 @@ trait Anon_ColorCurve extends js.Object {
   var curve: signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Bezier
 }
 
+object Anon_ColorCurve {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    curve: signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Bezier
+  ): Anon_ColorCurve = {
+    val __obj = js.Dynamic.literal(color = color, curve = curve)
+  
+    __obj.asInstanceOf[Anon_ColorCurve]
+  }
+}
+

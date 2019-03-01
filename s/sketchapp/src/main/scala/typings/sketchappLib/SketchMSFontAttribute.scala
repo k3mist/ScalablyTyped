@@ -11,3 +11,16 @@ trait SketchMSFontAttribute extends js.Object {
   var attributes: Anon_Name
 }
 
+object SketchMSFontAttribute {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.fontDescriptor,
+    attributes: Anon_Name,
+    _archive: java.lang.String = null
+  ): SketchMSFontAttribute = {
+    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
+    if (_archive != null) __obj.updateDynamic("_archive")(_archive)
+    __obj.asInstanceOf[SketchMSFontAttribute]
+  }
+}
+

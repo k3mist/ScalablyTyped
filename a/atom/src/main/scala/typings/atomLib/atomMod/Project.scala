@@ -65,3 +65,37 @@ trait Project extends js.Object {
   def setPaths(projectPaths: js.Array[java.lang.String]): scala.Unit
 }
 
+object Project {
+  @scala.inline
+  def apply(
+    addPath: js.Function1[java.lang.String, scala.Unit],
+    contains: js.Function1[java.lang.String, scala.Boolean],
+    getDirectories: js.Function0[js.Array[Directory]],
+    getPaths: js.Function0[js.Array[java.lang.String]],
+    getRepositories: js.Function0[js.Array[GitRepository]],
+    getWatcherPromise: js.Function1[java.lang.String, js.Promise[PathWatcher]],
+    observeBuffers: js.Function1[js.Function1[/* buffer */ TextBuffer, scala.Unit], Disposable],
+    observeRepositories: js.Function1[js.Function1[/* repository */ GitRepository, scala.Unit], Disposable],
+    onDidAddBuffer: js.Function1[js.Function1[/* buffer */ TextBuffer, scala.Unit], Disposable],
+    onDidAddRepository: js.Function1[js.Function1[/* repository */ GitRepository, scala.Unit], Disposable],
+    onDidChangeFiles: js.Function1[js.Function1[/* events */ FilesystemChangeEvent, scala.Unit], Disposable],
+    onDidChangePaths: js.Function1[
+      js.Function1[/* projectPaths */ js.Array[java.lang.String], scala.Unit], 
+      Disposable
+    ],
+    onDidReplace: js.Function1[
+      js.Function1[/* projectSpec */ js.UndefOr[ProjectSpecification | scala.Null], scala.Unit], 
+      Disposable
+    ],
+    relativize: js.Function1[java.lang.String, java.lang.String],
+    relativizePath: js.Function1[java.lang.String, js.Tuple2[java.lang.String | scala.Null, java.lang.String]],
+    removePath: js.Function1[java.lang.String, scala.Unit],
+    repositoryForDirectory: js.Function1[Directory, js.Promise[GitRepository | scala.Null]],
+    setPaths: js.Function1[js.Array[java.lang.String], scala.Unit]
+  ): Project = {
+    val __obj = js.Dynamic.literal(addPath = addPath, contains = contains, getDirectories = getDirectories, getPaths = getPaths, getRepositories = getRepositories, getWatcherPromise = getWatcherPromise, observeBuffers = observeBuffers, observeRepositories = observeRepositories, onDidAddBuffer = onDidAddBuffer, onDidAddRepository = onDidAddRepository, onDidChangeFiles = onDidChangeFiles, onDidChangePaths = onDidChangePaths, onDidReplace = onDidReplace, relativize = relativize, relativizePath = relativizePath, removePath = removePath, repositoryForDirectory = repositoryForDirectory, setPaths = setPaths)
+  
+    __obj.asInstanceOf[Project]
+  }
+}
+

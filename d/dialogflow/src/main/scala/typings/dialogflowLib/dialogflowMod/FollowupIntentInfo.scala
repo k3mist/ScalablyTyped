@@ -10,3 +10,12 @@ trait FollowupIntentInfo extends js.Object {
   var parentFollowupIntentName: java.lang.String
 }
 
+object FollowupIntentInfo {
+  @scala.inline
+  def apply(followupIntentName: java.lang.String, parentFollowupIntentName: java.lang.String): FollowupIntentInfo = {
+    val __obj = js.Dynamic.literal(followupIntentName = followupIntentName, parentFollowupIntentName = parentFollowupIntentName)
+  
+    __obj.asInstanceOf[FollowupIntentInfo]
+  }
+}
+

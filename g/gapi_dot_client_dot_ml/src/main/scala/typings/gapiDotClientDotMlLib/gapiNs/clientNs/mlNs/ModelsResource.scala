@@ -66,3 +66,46 @@ trait ModelsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
 }
 
+object ModelsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Model]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Model]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListModelsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
+    ],
+    versions: VersionsResource
+  ): ModelsResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, versions = versions)
+  
+    __obj.asInstanceOf[ModelsResource]
+  }
+}
+

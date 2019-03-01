@@ -10,3 +10,12 @@ trait WebTileLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object WebTileLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): WebTileLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[WebTileLayerLayerviewCreateEvent]
+  }
+}
+

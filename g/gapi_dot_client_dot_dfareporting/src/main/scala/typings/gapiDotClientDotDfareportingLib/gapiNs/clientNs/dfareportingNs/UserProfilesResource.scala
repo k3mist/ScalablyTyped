@@ -12,3 +12,21 @@ trait UserProfilesResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[UserProfileList]
 }
 
+object UserProfilesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserProfileList]
+    ]
+  ): UserProfilesResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[UserProfilesResource]
+  }
+}
+

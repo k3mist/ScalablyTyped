@@ -19,3 +19,17 @@ trait PasswordRequest extends ClassifiedInteractionRequest {
   var Mode: PasswordRequestMode
 }
 
+object PasswordRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Mode: PasswordRequestMode
+  ): PasswordRequest = {
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Message = Message, Mode = Mode)
+  
+    __obj.asInstanceOf[PasswordRequest]
+  }
+}
+

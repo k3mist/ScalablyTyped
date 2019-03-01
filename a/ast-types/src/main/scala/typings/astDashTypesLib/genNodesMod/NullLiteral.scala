@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
   var value: scala.Null
 }
 
+object NullLiteral {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.NullLiteral, value: scala.Null): NullLiteral = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[NullLiteral]
+  }
+}
+

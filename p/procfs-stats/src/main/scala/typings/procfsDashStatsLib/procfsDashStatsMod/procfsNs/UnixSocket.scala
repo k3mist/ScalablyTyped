@@ -16,3 +16,21 @@ trait UnixSocket extends js.Object {
   var Type: java.lang.String
 }
 
+object UnixSocket {
+  @scala.inline
+  def apply(
+    Flags: java.lang.String,
+    Inode: java.lang.String,
+    Num: java.lang.String,
+    Path: java.lang.String,
+    Protocol: java.lang.String,
+    RefCount: java.lang.String,
+    St: java.lang.String,
+    Type: java.lang.String
+  ): UnixSocket = {
+    val __obj = js.Dynamic.literal(Flags = Flags, Inode = Inode, Num = Num, Path = Path, Protocol = Protocol, RefCount = RefCount, St = St, Type = Type)
+  
+    __obj.asInstanceOf[UnixSocket]
+  }
+}
+

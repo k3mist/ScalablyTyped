@@ -17,3 +17,19 @@ trait XUpdatable2 extends XUpdatable {
   def updateSoft(): scala.Unit
 }
 
+object XUpdatable2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit],
+    updateHard: js.Function0[scala.Unit],
+    updateSoft: js.Function0[scala.Unit]
+  ): XUpdatable2 = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update, updateHard = updateHard, updateSoft = updateSoft)
+  
+    __obj.asInstanceOf[XUpdatable2]
+  }
+}
+

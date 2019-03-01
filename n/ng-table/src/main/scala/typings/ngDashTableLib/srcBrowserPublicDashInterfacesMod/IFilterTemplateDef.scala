@@ -16,3 +16,12 @@ trait IFilterTemplateDef extends js.Object {
   var placeholder: java.lang.String
 }
 
+object IFilterTemplateDef {
+  @scala.inline
+  def apply(id: java.lang.String, placeholder: java.lang.String): IFilterTemplateDef = {
+    val __obj = js.Dynamic.literal(id = id, placeholder = placeholder)
+  
+    __obj.asInstanceOf[IFilterTemplateDef]
+  }
+}
+

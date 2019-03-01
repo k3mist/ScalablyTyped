@@ -11,3 +11,16 @@ trait WorkflowConfiguration extends js.Object {
   def toJSON(): java.lang.String
 }
 
+object WorkflowConfiguration {
+  @scala.inline
+  def apply(
+    taskRouting: TaskRoutingConfiguration,
+    task_routing: TaskRoutingConfiguration,
+    toJSON: js.Function0[java.lang.String]
+  ): WorkflowConfiguration = {
+    val __obj = js.Dynamic.literal(taskRouting = taskRouting, task_routing = task_routing, toJSON = toJSON)
+  
+    __obj.asInstanceOf[WorkflowConfiguration]
+  }
+}
+

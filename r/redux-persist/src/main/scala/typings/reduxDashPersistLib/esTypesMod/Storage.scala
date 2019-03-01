@@ -11,3 +11,16 @@ trait Storage extends js.Object {
   def setItem(key: java.lang.String, value: js.Any, args: js.Any*): js.Any
 }
 
+object Storage {
+  @scala.inline
+  def apply(
+    getItem: js.Function2[java.lang.String, /* repeated */ js.Any, js.Any],
+    removeItem: js.Function2[java.lang.String, /* repeated */ js.Any, js.Any],
+    setItem: js.Function3[java.lang.String, js.Any, /* repeated */ js.Any, js.Any]
+  ): Storage = {
+    val __obj = js.Dynamic.literal(getItem = getItem, removeItem = removeItem, setItem = setItem)
+  
+    __obj.asInstanceOf[Storage]
+  }
+}
+

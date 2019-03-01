@@ -36,3 +36,18 @@ trait Section extends js.Object {
   var start: scala.Double
 }
 
+object Section {
+  @scala.inline
+  def apply(
+    footers: js.Array[HeaderFooter],
+    headers: js.Array[HeaderFooter],
+    interval: Interval,
+    length: scala.Double,
+    start: scala.Double
+  ): Section = {
+    val __obj = js.Dynamic.literal(footers = footers, headers = headers, interval = interval, length = length, start = start)
+  
+    __obj.asInstanceOf[Section]
+  }
+}
+

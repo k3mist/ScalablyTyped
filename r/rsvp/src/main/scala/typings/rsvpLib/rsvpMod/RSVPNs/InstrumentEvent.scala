@@ -19,3 +19,19 @@ trait InstrumentEvent extends js.Object {
   var timeStamp: scala.Double
 }
 
+object InstrumentEvent {
+  @scala.inline
+  def apply(
+    childGuid: java.lang.String,
+    detail: js.Any,
+    eventName: java.lang.String,
+    guid: java.lang.String,
+    label: java.lang.String,
+    timeStamp: scala.Double
+  ): InstrumentEvent = {
+    val __obj = js.Dynamic.literal(childGuid = childGuid, detail = detail, eventName = eventName, guid = guid, label = label, timeStamp = timeStamp)
+  
+    __obj.asInstanceOf[InstrumentEvent]
+  }
+}
+

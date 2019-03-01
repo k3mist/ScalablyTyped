@@ -24,3 +24,17 @@ trait _Impl extends js.Object {
   var noResults: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    addResult: java.lang.String,
+    count: java.lang.String,
+    maxSelections: java.lang.String,
+    noResults: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(addResult = addResult, count = count, maxSelections = maxSelections, noResults = noResults)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

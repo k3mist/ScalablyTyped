@@ -10,3 +10,12 @@ trait Resize extends js.Object {
   var value: js.Any
 }
 
+object Resize {
+  @scala.inline
+  def apply(id: java.lang.String, value: js.Any): Resize = {
+    val __obj = js.Dynamic.literal(id = id, value = value)
+  
+    __obj.asInstanceOf[Resize]
+  }
+}
+

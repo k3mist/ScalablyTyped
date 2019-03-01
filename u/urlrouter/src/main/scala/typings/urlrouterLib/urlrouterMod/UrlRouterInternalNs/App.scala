@@ -35,3 +35,39 @@ trait App extends js.Object {
   def unsubscribe(urlpattern: java.lang.String, handler: HttpHandler): scala.Unit
 }
 
+object App {
+  @scala.inline
+  def apply(
+    all: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    checkout: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    copy: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    delete: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    get: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    head: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    lock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    `m-search`: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    merge: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    mkactivity: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    mkcol: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    move: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    notify: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    options: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    patch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    post: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    propfind: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    proppatch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    put: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    redirect: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    report: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    search: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    subscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    trace: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    unlock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    unsubscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit]
+  ): App = {
+    val __obj = js.Dynamic.literal(all = all, checkout = checkout, copy = copy, delete = delete, get = get, head = head, lock = lock, merge = merge, mkactivity = mkactivity, mkcol = mkcol, move = move, notify = notify, options = options, patch = patch, post = post, propfind = propfind, proppatch = proppatch, put = put, redirect = redirect, report = report, search = search, subscribe = subscribe, trace = trace, unlock = unlock, unsubscribe = unsubscribe)
+    __obj.updateDynamic("m-search")(`m-search`)
+    __obj.asInstanceOf[App]
+  }
+}
+

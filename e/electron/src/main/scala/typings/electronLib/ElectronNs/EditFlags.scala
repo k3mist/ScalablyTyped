@@ -36,3 +36,20 @@ trait EditFlags extends js.Object {
   var canUndo: scala.Boolean
 }
 
+object EditFlags {
+  @scala.inline
+  def apply(
+    canCopy: scala.Boolean,
+    canCut: scala.Boolean,
+    canDelete: scala.Boolean,
+    canPaste: scala.Boolean,
+    canRedo: scala.Boolean,
+    canSelectAll: scala.Boolean,
+    canUndo: scala.Boolean
+  ): EditFlags = {
+    val __obj = js.Dynamic.literal(canCopy = canCopy, canCut = canCut, canDelete = canDelete, canPaste = canPaste, canRedo = canRedo, canSelectAll = canSelectAll, canUndo = canUndo)
+  
+    __obj.asInstanceOf[EditFlags]
+  }
+}
+

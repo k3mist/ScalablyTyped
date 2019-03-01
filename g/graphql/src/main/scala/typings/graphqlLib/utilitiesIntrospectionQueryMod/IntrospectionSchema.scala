@@ -13,3 +13,18 @@ trait IntrospectionSchema extends js.Object {
   val types: js.Array[IntrospectionType]
 }
 
+object IntrospectionSchema {
+  @scala.inline
+  def apply(
+    directives: js.Array[IntrospectionDirective],
+    mutationType: graphqlLib.tsutilsMaybeMod.Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]],
+    queryType: IntrospectionNamedTypeRef[IntrospectionObjectType],
+    subscriptionType: graphqlLib.tsutilsMaybeMod.Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]],
+    types: js.Array[IntrospectionType]
+  ): IntrospectionSchema = {
+    val __obj = js.Dynamic.literal(directives = directives, mutationType = mutationType.asInstanceOf[js.Any], queryType = queryType, subscriptionType = subscriptionType.asInstanceOf[js.Any], types = types)
+  
+    __obj.asInstanceOf[IntrospectionSchema]
+  }
+}
+

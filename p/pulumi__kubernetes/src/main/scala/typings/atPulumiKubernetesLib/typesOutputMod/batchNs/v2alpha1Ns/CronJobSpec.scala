@@ -46,3 +46,20 @@ trait CronJobSpec extends js.Object {
   val suspend: scala.Boolean
 }
 
+object CronJobSpec {
+  @scala.inline
+  def apply(
+    concurrencyPolicy: java.lang.String,
+    failedJobsHistoryLimit: scala.Double,
+    jobTemplate: JobTemplateSpec,
+    schedule: java.lang.String,
+    startingDeadlineSeconds: scala.Double,
+    successfulJobsHistoryLimit: scala.Double,
+    suspend: scala.Boolean
+  ): CronJobSpec = {
+    val __obj = js.Dynamic.literal(concurrencyPolicy = concurrencyPolicy, failedJobsHistoryLimit = failedJobsHistoryLimit, jobTemplate = jobTemplate, schedule = schedule, startingDeadlineSeconds = startingDeadlineSeconds, successfulJobsHistoryLimit = successfulJobsHistoryLimit, suspend = suspend)
+  
+    __obj.asInstanceOf[CronJobSpec]
+  }
+}
+

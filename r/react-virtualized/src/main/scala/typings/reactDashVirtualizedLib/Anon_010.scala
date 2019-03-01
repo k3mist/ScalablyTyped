@@ -11,3 +11,16 @@ trait Anon_010 extends js.Object {
   var threshold: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`15`
 }
 
+object Anon_010 {
+  @scala.inline
+  def apply(
+    minimumBatchSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10`,
+    rowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
+    threshold: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`15`
+  ): Anon_010 = {
+    val __obj = js.Dynamic.literal(minimumBatchSize = minimumBatchSize, rowCount = rowCount, threshold = threshold)
+  
+    __obj.asInstanceOf[Anon_010]
+  }
+}
+

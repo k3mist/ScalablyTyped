@@ -11,3 +11,16 @@ trait ISearchPaneQueryLinguisticDetails extends js.Object {
   var queryTextCompositionStart: scala.Double
 }
 
+object ISearchPaneQueryLinguisticDetails {
+  @scala.inline
+  def apply(
+    queryTextAlternatives: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    queryTextCompositionLength: scala.Double,
+    queryTextCompositionStart: scala.Double
+  ): ISearchPaneQueryLinguisticDetails = {
+    val __obj = js.Dynamic.literal(queryTextAlternatives = queryTextAlternatives, queryTextCompositionLength = queryTextCompositionLength, queryTextCompositionStart = queryTextCompositionStart)
+  
+    __obj.asInstanceOf[ISearchPaneQueryLinguisticDetails]
+  }
+}
+

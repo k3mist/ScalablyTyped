@@ -13,3 +13,18 @@ trait AjaxDefaults extends js.Object {
   var timeout: scala.Double
 }
 
+object AjaxDefaults {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    cache: scala.Boolean,
+    global: scala.Boolean,
+    processData: scala.Boolean,
+    timeout: scala.Double
+  ): AjaxDefaults = {
+    val __obj = js.Dynamic.literal(async = async, cache = cache, global = global, processData = processData, timeout = timeout)
+  
+    __obj.asInstanceOf[AjaxDefaults]
+  }
+}
+

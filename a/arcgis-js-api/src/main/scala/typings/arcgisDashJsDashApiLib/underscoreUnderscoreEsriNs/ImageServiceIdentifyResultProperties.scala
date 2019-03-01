@@ -50,3 +50,26 @@ trait ImageServiceIdentifyResultProperties extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageServiceIdentifyResultProperties {
+  @scala.inline
+  def apply(
+    catalogItemVisibilities: js.Array[scala.Double] = null,
+    catalogItems: FeatureSetProperties = null,
+    location: PointProperties = null,
+    name: java.lang.String = null,
+    objectId: scala.Int | scala.Double = null,
+    properties: js.Any = null,
+    value: java.lang.String = null
+  ): ImageServiceIdentifyResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (catalogItemVisibilities != null) __obj.updateDynamic("catalogItemVisibilities")(catalogItemVisibilities)
+    if (catalogItems != null) __obj.updateDynamic("catalogItems")(catalogItems)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ImageServiceIdentifyResultProperties]
+  }
+}
+

@@ -14,3 +14,12 @@ trait TabEvent extends js.Object {
   var length: scala.Double
 }
 
+object TabEvent {
+  @scala.inline
+  def apply(header: js.Array[homeworksLib.JQuery], index: scala.Double, length: scala.Double): TabEvent = {
+    val __obj = js.Dynamic.literal(header = header, index = index, length = length)
+  
+    __obj.asInstanceOf[TabEvent]
+  }
+}
+

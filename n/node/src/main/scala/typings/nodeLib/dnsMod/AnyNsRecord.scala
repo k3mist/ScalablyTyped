@@ -10,3 +10,12 @@ trait AnyNsRecord extends AnyRecord {
   var value: java.lang.String
 }
 
+object AnyNsRecord {
+  @scala.inline
+  def apply(`type`: nodeLib.nodeLibStrings.NS, value: java.lang.String): AnyNsRecord = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[AnyNsRecord]
+  }
+}
+

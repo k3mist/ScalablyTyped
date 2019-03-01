@@ -12,3 +12,17 @@ trait MapBoxZoomEvent
   var type_MapBoxZoomEvent: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel
 }
 
+object MapBoxZoomEvent {
+  @scala.inline
+  def apply(
+    boxZoomBounds: LngLatBounds,
+    originalEvent: stdLib.MouseEvent,
+    target: Map,
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel
+  ): MapBoxZoomEvent = {
+    val __obj = js.Dynamic.literal(boxZoomBounds = boxZoomBounds, originalEvent = originalEvent, target = target, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[MapBoxZoomEvent]
+  }
+}
+

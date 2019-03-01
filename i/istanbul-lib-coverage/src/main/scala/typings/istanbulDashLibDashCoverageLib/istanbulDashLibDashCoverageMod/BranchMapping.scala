@@ -12,3 +12,12 @@ trait BranchMapping extends js.Object {
   var `type`: java.lang.String
 }
 
+object BranchMapping {
+  @scala.inline
+  def apply(line: scala.Double, loc: Range, locations: js.Array[Range], `type`: java.lang.String): BranchMapping = {
+    val __obj = js.Dynamic.literal(line = line, loc = loc, locations = locations, `type` = `type`)
+  
+    __obj.asInstanceOf[BranchMapping]
+  }
+}
+

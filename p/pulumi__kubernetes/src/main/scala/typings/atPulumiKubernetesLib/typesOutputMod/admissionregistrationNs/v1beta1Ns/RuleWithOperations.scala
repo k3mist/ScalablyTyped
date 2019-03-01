@@ -40,3 +40,17 @@ trait RuleWithOperations extends js.Object {
   val resources: js.Array[java.lang.String]
 }
 
+object RuleWithOperations {
+  @scala.inline
+  def apply(
+    apiGroups: js.Array[java.lang.String],
+    apiVersions: js.Array[java.lang.String],
+    operations: js.Array[java.lang.String],
+    resources: js.Array[java.lang.String]
+  ): RuleWithOperations = {
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, operations = operations, resources = resources)
+  
+    __obj.asInstanceOf[RuleWithOperations]
+  }
+}
+

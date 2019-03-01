@@ -19,3 +19,17 @@ trait XMissionTaker
   def endMission(): scala.Boolean
 }
 
+object XMissionTaker {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    endMission: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMissionTaker = {
+    val __obj = js.Dynamic.literal(acquire = acquire, endMission = endMission, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMissionTaker]
+  }
+}
+

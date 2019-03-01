@@ -25,3 +25,16 @@ trait ASPxClientFormBase extends js.Object {
   def SetVisibleCore(element: js.Object, isVisible: scala.Boolean): scala.Unit
 }
 
+object ASPxClientFormBase {
+  @scala.inline
+  def apply(
+    Close: js.Function0[scala.Unit],
+    FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]],
+    SetVisibleCore: js.Function2[js.Object, scala.Boolean, scala.Unit]
+  ): ASPxClientFormBase = {
+    val __obj = js.Dynamic.literal(Close = Close, FormClosed = FormClosed, SetVisibleCore = SetVisibleCore)
+  
+    __obj.asInstanceOf[ASPxClientFormBase]
+  }
+}
+

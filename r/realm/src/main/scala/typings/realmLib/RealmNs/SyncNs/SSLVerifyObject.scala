@@ -13,3 +13,18 @@ trait SSLVerifyObject extends js.Object {
   var serverPort: scala.Double
 }
 
+object SSLVerifyObject {
+  @scala.inline
+  def apply(
+    acceptedByOpenSSL: scala.Boolean,
+    depth: scala.Double,
+    pemCertificate: java.lang.String,
+    serverAddress: java.lang.String,
+    serverPort: scala.Double
+  ): SSLVerifyObject = {
+    val __obj = js.Dynamic.literal(acceptedByOpenSSL = acceptedByOpenSSL, depth = depth, pemCertificate = pemCertificate, serverAddress = serverAddress, serverPort = serverPort)
+  
+    __obj.asInstanceOf[SSLVerifyObject]
+  }
+}
+

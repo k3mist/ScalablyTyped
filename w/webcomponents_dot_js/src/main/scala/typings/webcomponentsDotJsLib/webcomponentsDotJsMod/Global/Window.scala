@@ -12,3 +12,17 @@ trait Window extends js.Object {
   var customElements: CustomElementRegistry
 }
 
+object Window {
+  @scala.inline
+  def apply(
+    CustomElements: webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementsPolyfill,
+    HTMLImports: webcomponentsDotJsLib.webcomponentsDotJsMod.HTMLImportsPolyfill,
+    WebComponents: webcomponentsDotJsLib.webcomponentsDotJsMod.Polyfill,
+    customElements: CustomElementRegistry
+  ): Window = {
+    val __obj = js.Dynamic.literal(CustomElements = CustomElements, HTMLImports = HTMLImports, WebComponents = WebComponents, customElements = customElements)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

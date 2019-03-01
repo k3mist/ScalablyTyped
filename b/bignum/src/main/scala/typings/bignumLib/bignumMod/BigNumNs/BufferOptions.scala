@@ -12,3 +12,12 @@ trait BufferOptions extends js.Object {
   var size: scala.Double | java.lang.String
 }
 
+object BufferOptions {
+  @scala.inline
+  def apply(endian: java.lang.String | scala.Double, size: scala.Double | java.lang.String): BufferOptions = {
+    val __obj = js.Dynamic.literal(endian = endian.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BufferOptions]
+  }
+}
+

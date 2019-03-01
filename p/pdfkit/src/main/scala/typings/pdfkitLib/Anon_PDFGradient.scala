@@ -11,3 +11,16 @@ trait Anon_PDFGradient extends js.Object {
   var PDFRadialGradiant: pdfkitLib.PDFKitNs.PDFRadialGradient
 }
 
+object Anon_PDFGradient {
+  @scala.inline
+  def apply(
+    PDFGradient: pdfkitLib.PDFKitNs.PDFGradient,
+    PDFLinearGradient: pdfkitLib.PDFKitNs.PDFLinearGradient,
+    PDFRadialGradiant: pdfkitLib.PDFKitNs.PDFRadialGradient
+  ): Anon_PDFGradient = {
+    val __obj = js.Dynamic.literal(PDFGradient = PDFGradient, PDFLinearGradient = PDFLinearGradient, PDFRadialGradiant = PDFRadialGradiant)
+  
+    __obj.asInstanceOf[Anon_PDFGradient]
+  }
+}
+

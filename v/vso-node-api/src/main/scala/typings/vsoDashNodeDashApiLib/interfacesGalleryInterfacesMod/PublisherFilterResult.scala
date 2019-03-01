@@ -12,3 +12,12 @@ trait PublisherFilterResult extends js.Object {
   var publishers: js.Array[Publisher]
 }
 
+object PublisherFilterResult {
+  @scala.inline
+  def apply(publishers: js.Array[Publisher]): PublisherFilterResult = {
+    val __obj = js.Dynamic.literal(publishers = publishers)
+  
+    __obj.asInstanceOf[PublisherFilterResult]
+  }
+}
+

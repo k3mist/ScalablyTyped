@@ -11,3 +11,12 @@ trait Anon_Flat extends js.Object {
   var tree: scala.Double
 }
 
+object Anon_Flat {
+  @scala.inline
+  def apply(flat: scala.Double, oneHop: scala.Double, tree: scala.Double): Anon_Flat = {
+    val __obj = js.Dynamic.literal(flat = flat, oneHop = oneHop, tree = tree)
+  
+    __obj.asInstanceOf[Anon_Flat]
+  }
+}
+

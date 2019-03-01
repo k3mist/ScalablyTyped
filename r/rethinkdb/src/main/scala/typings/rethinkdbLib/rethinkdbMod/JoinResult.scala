@@ -10,3 +10,12 @@ trait JoinResult extends js.Object {
   var right: js.Any
 }
 
+object JoinResult {
+  @scala.inline
+  def apply(left: js.Any, right: js.Any): JoinResult = {
+    val __obj = js.Dynamic.literal(left = left, right = right)
+  
+    __obj.asInstanceOf[JoinResult]
+  }
+}
+

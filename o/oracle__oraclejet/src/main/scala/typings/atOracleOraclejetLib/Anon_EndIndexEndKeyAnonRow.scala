@@ -11,3 +11,12 @@ trait Anon_EndIndexEndKeyAnonRow[K]
   var endKey: js.UndefOr[Anon_RowK[K]] = js.undefined
 }
 
+object Anon_EndIndexEndKeyAnonRow {
+  @scala.inline
+  def apply[K](endIndex: Anon_Row, endKey: Anon_RowK[K] = null): Anon_EndIndexEndKeyAnonRow[K] = {
+    val __obj = js.Dynamic.literal(endIndex = endIndex)
+    if (endKey != null) __obj.updateDynamic("endKey")(endKey)
+    __obj.asInstanceOf[Anon_EndIndexEndKeyAnonRow[K]]
+  }
+}
+

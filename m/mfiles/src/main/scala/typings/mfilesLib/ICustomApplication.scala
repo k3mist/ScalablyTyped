@@ -20,3 +20,25 @@ trait ICustomApplication extends js.Object {
   def Clone(): ICustomApplication
 }
 
+object ICustomApplication {
+  @scala.inline
+  def apply(
+    ApplicationType: mfilesLib.MFilesNs.MFCustomApplicationType,
+    ChecksumHash: java.lang.String,
+    Clone: js.Function0[ICustomApplication],
+    Description: java.lang.String,
+    Enabled: scala.Boolean,
+    ID: java.lang.String,
+    MasterApplication: java.lang.String,
+    Name: java.lang.String,
+    Optional: scala.Boolean,
+    Publisher: java.lang.String,
+    RequireSystemAccess: scala.Boolean,
+    Version: java.lang.String
+  ): ICustomApplication = {
+    val __obj = js.Dynamic.literal(ApplicationType = ApplicationType, ChecksumHash = ChecksumHash, Clone = Clone, Description = Description, Enabled = Enabled, ID = ID, MasterApplication = MasterApplication, Name = Name, Optional = Optional, Publisher = Publisher, RequireSystemAccess = RequireSystemAccess, Version = Version)
+  
+    __obj.asInstanceOf[ICustomApplication]
+  }
+}
+

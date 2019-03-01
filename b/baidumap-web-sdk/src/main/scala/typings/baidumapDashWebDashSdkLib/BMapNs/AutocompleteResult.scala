@@ -11,3 +11,16 @@ trait AutocompleteResult extends js.Object {
   def getPoi(i: scala.Double): AutocompleteResultPoi
 }
 
+object AutocompleteResult {
+  @scala.inline
+  def apply(
+    getNumPois: js.Function0[scala.Double],
+    getPoi: js.Function1[scala.Double, AutocompleteResultPoi],
+    keyword: java.lang.String
+  ): AutocompleteResult = {
+    val __obj = js.Dynamic.literal(getNumPois = getNumPois, getPoi = getPoi, keyword = keyword)
+  
+    __obj.asInstanceOf[AutocompleteResult]
+  }
+}
+

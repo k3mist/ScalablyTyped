@@ -12,3 +12,12 @@ trait SpinEvent
   var dummy1: scala.Double
 }
 
+object SpinEvent {
+  @scala.inline
+  def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, dummy1: scala.Double): SpinEvent = {
+    val __obj = js.Dynamic.literal(Source = Source, dummy1 = dummy1)
+  
+    __obj.asInstanceOf[SpinEvent]
+  }
+}
+

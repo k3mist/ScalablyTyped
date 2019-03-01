@@ -86,3 +86,31 @@ trait ContextMenuParams extends js.Object {
   var y: scala.Double
 }
 
+object ContextMenuParams {
+  @scala.inline
+  def apply(
+    editFlags: EditFlags,
+    frameCharset: java.lang.String,
+    frameURL: java.lang.String,
+    hasImageContents: scala.Boolean,
+    inputFieldType: java.lang.String,
+    isEditable: scala.Boolean,
+    linkText: java.lang.String,
+    linkURL: java.lang.String,
+    mediaFlags: MediaFlags,
+    mediaType: electronLib.electronLibStrings.none | electronLib.electronLibStrings.image | electronLib.electronLibStrings.audio | electronLib.electronLibStrings.video | electronLib.electronLibStrings.canvas | electronLib.electronLibStrings.file | electronLib.electronLibStrings.plugin,
+    menuSourceType: electronLib.electronLibStrings.none | electronLib.electronLibStrings.mouse | electronLib.electronLibStrings.keyboard | electronLib.electronLibStrings.touch | electronLib.electronLibStrings.touchMenu,
+    misspelledWord: java.lang.String,
+    pageURL: java.lang.String,
+    selectionText: java.lang.String,
+    srcURL: java.lang.String,
+    titleText: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): ContextMenuParams = {
+    val __obj = js.Dynamic.literal(editFlags = editFlags, frameCharset = frameCharset, frameURL = frameURL, hasImageContents = hasImageContents, inputFieldType = inputFieldType, isEditable = isEditable, linkText = linkText, linkURL = linkURL, mediaFlags = mediaFlags, mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord, pageURL = pageURL, selectionText = selectionText, srcURL = srcURL, titleText = titleText, x = x, y = y)
+  
+    __obj.asInstanceOf[ContextMenuParams]
+  }
+}
+

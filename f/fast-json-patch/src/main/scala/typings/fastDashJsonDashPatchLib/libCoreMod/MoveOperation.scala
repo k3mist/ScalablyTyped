@@ -12,3 +12,16 @@ trait MoveOperation
   var op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.move
 }
 
+object MoveOperation {
+  @scala.inline
+  def apply(
+    from: java.lang.String,
+    op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.move,
+    path: java.lang.String
+  ): MoveOperation = {
+    val __obj = js.Dynamic.literal(from = from, op = op, path = path)
+  
+    __obj.asInstanceOf[MoveOperation]
+  }
+}
+

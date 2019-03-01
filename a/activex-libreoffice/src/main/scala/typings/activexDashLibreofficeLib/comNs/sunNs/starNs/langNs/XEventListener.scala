@@ -19,3 +19,17 @@ trait XEventListener
   def disposing(Source: EventObject): scala.Unit
 }
 
+object XEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEventListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XEventListener]
+  }
+}
+

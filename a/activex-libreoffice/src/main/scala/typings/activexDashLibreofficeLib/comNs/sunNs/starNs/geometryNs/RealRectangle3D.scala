@@ -35,3 +35,19 @@ trait RealRectangle3D extends js.Object {
   var Z2: scala.Double
 }
 
+object RealRectangle3D {
+  @scala.inline
+  def apply(
+    X1: scala.Double,
+    X2: scala.Double,
+    Y1: scala.Double,
+    Y2: scala.Double,
+    Z1: scala.Double,
+    Z2: scala.Double
+  ): RealRectangle3D = {
+    val __obj = js.Dynamic.literal(X1 = X1, X2 = X2, Y1 = Y1, Y2 = Y2, Z1 = Z1, Z2 = Z2)
+  
+    __obj.asInstanceOf[RealRectangle3D]
+  }
+}
+

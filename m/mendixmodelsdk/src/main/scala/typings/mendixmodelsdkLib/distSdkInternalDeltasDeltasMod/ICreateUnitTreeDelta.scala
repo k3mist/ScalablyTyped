@@ -29,3 +29,19 @@ trait ICreateUnitTreeDelta
   var unitTree: IStructureJSON
 }
 
+object ICreateUnitTreeDelta {
+  @scala.inline
+  def apply(
+    containerId: java.lang.String,
+    containmentName: java.lang.String,
+    contentType: java.lang.String,
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.CREATE_UNIT_TREE,
+    unitId: java.lang.String,
+    unitTree: IStructureJSON
+  ): ICreateUnitTreeDelta = {
+    val __obj = js.Dynamic.literal(containerId = containerId, containmentName = containmentName, contentType = contentType, deltaType = deltaType, unitId = unitId, unitTree = unitTree)
+  
+    __obj.asInstanceOf[ICreateUnitTreeDelta]
+  }
+}
+

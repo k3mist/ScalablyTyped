@@ -14,3 +14,22 @@ trait IdPMetadataOptions extends js.Object {
   var redirectEndpointPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdPMetadataOptions {
+  @scala.inline
+  def apply(
+    cert: java.lang.String | nodeLib.Buffer,
+    issuer: java.lang.String,
+    logoutEndpointPaths: samlpLib.Anon_Post = null,
+    postEndpointPath: java.lang.String = null,
+    profileMapper: ProfileMapperConstructor = null,
+    redirectEndpointPath: java.lang.String = null
+  ): IdPMetadataOptions = {
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], issuer = issuer)
+    if (logoutEndpointPaths != null) __obj.updateDynamic("logoutEndpointPaths")(logoutEndpointPaths)
+    if (postEndpointPath != null) __obj.updateDynamic("postEndpointPath")(postEndpointPath)
+    if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper)
+    if (redirectEndpointPath != null) __obj.updateDynamic("redirectEndpointPath")(redirectEndpointPath)
+    __obj.asInstanceOf[IdPMetadataOptions]
+  }
+}
+

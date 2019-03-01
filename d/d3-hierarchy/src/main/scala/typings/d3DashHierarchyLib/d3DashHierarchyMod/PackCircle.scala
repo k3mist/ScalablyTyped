@@ -20,3 +20,12 @@ trait PackCircle extends js.Object {
   var y: scala.Double
 }
 
+object PackCircle {
+  @scala.inline
+  def apply(r: scala.Double, x: scala.Double, y: scala.Double): PackCircle = {
+    val __obj = js.Dynamic.literal(r = r, x = x, y = y)
+  
+    __obj.asInstanceOf[PackCircle]
+  }
+}
+

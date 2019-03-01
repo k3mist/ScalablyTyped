@@ -22,3 +22,21 @@ trait DialogInstance extends js.Object {
   var options: DialogOptions
 }
 
+object DialogInstance {
+  @scala.inline
+  def apply(
+    $modal: jqueryLib.JQuery[stdLib.HTMLElement],
+    $modalBody: jqueryLib.JQuery[stdLib.HTMLElement],
+    $modalContent: jqueryLib.JQuery[stdLib.HTMLElement],
+    $modalDialog: jqueryLib.JQuery[stdLib.HTMLElement],
+    $modalFooter: jqueryLib.JQuery[stdLib.HTMLElement],
+    $modalHeader: jqueryLib.JQuery[stdLib.HTMLElement],
+    opened: scala.Boolean,
+    options: DialogOptions
+  ): DialogInstance = {
+    val __obj = js.Dynamic.literal($modal = $modal, $modalBody = $modalBody, $modalContent = $modalContent, $modalDialog = $modalDialog, $modalFooter = $modalFooter, $modalHeader = $modalHeader, opened = opened, options = options)
+  
+    __obj.asInstanceOf[DialogInstance]
+  }
+}
+

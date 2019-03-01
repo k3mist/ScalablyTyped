@@ -16,3 +16,12 @@ trait BackgroundRange extends js.Object {
   var lower: scala.Double
 }
 
+object BackgroundRange {
+  @scala.inline
+  def apply(higher: scala.Double, lower: scala.Double): BackgroundRange = {
+    val __obj = js.Dynamic.literal(higher = higher, lower = lower)
+  
+    __obj.asInstanceOf[BackgroundRange]
+  }
+}
+

@@ -10,3 +10,12 @@ trait BooleanLiteral extends Node {
   var value: scala.Boolean
 }
 
+object BooleanLiteral {
+  @scala.inline
+  def apply(loc: SourceLocation, original: scala.Boolean, `type`: java.lang.String, value: scala.Boolean): BooleanLiteral = {
+    val __obj = js.Dynamic.literal(loc = loc, original = original, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[BooleanLiteral]
+  }
+}
+

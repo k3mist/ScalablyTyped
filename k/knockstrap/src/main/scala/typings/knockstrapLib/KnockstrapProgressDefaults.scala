@@ -14,3 +14,19 @@ trait KnockstrapProgressDefaults extends js.Object {
   var `type`: java.lang.String
 }
 
+object KnockstrapProgressDefaults {
+  @scala.inline
+  def apply(
+    animated: scala.Boolean,
+    css: java.lang.String,
+    striped: scala.Boolean,
+    text: java.lang.String,
+    textHidden: scala.Boolean,
+    `type`: java.lang.String
+  ): KnockstrapProgressDefaults = {
+    val __obj = js.Dynamic.literal(animated = animated, css = css, striped = striped, text = text, textHidden = textHidden, `type` = `type`)
+  
+    __obj.asInstanceOf[KnockstrapProgressDefaults]
+  }
+}
+

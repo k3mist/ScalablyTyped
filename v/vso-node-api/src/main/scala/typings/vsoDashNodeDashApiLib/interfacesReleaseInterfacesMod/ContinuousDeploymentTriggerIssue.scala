@@ -11,3 +11,21 @@ trait ContinuousDeploymentTriggerIssue extends AutoTriggerIssue {
   var sourceId: java.lang.String
 }
 
+object ContinuousDeploymentTriggerIssue {
+  @scala.inline
+  def apply(
+    artifactType: java.lang.String,
+    artifactVersionId: java.lang.String,
+    issue: Issue,
+    issueSource: IssueSource,
+    project: ProjectReference,
+    releaseDefinitionReference: ReleaseDefinitionShallowReference,
+    releaseTriggerType: ReleaseTriggerType,
+    sourceId: java.lang.String
+  ): ContinuousDeploymentTriggerIssue = {
+    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactVersionId = artifactVersionId, issue = issue, issueSource = issueSource, project = project, releaseDefinitionReference = releaseDefinitionReference, releaseTriggerType = releaseTriggerType, sourceId = sourceId)
+  
+    __obj.asInstanceOf[ContinuousDeploymentTriggerIssue]
+  }
+}
+

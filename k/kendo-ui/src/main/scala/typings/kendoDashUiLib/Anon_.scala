@@ -17,3 +17,23 @@ trait `Anon_` extends js.Object {
   var twoDigitYearMax: scala.Double
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(
+    `/`: java.lang.String,
+    `:`: java.lang.String,
+    AM: js.Array[java.lang.String],
+    PM: js.Array[java.lang.String],
+    days: Anon_Names,
+    firstDay: scala.Double,
+    months: Anon_NamesNamesAbbr,
+    patterns: Anon_D,
+    twoDigitYearMax: scala.Double
+  ): `Anon_` = {
+    val __obj = js.Dynamic.literal(AM = AM, PM = PM, days = days, firstDay = firstDay, months = months, patterns = patterns, twoDigitYearMax = twoDigitYearMax)
+    __obj.updateDynamic("/")(`/`)
+    __obj.updateDynamic(":")(`:`)
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

@@ -122,3 +122,60 @@ trait UserPoolState extends js.Object {
   ] = js.undefined
 }
 
+object UserPoolState {
+  @scala.inline
+  def apply(
+    adminCreateUserConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowAdminCreateUserOnlyInviteMessageTemplate] = null,
+    aliasAttributes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    autoVerifiedAttributes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    creationDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deviceConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ChallengeRequiredOnNewDeviceDeviceOnlyRememberedOnUserPrompt] = null,
+    emailConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ReplyToEmailAddressSourceArn] = null,
+    emailVerificationMessage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    emailVerificationSubject: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    endpoint: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    lambdaConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CreateAuthChallengeCustomMessage] = null,
+    lastModifiedDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    mfaConfiguration: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    passwordPolicy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MinimumLengthRequireLowercase] = null,
+    schemas: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttributeDataTypeDeveloperOnlyAttribute]
+      ]
+    ] = null,
+    smsAuthenticationMessage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    smsConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExternalIdSnsCallerArn] = null,
+    smsVerificationMessage: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    usernameAttributes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    verificationMessageTemplate: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultEmailOptionEmailMessage] = null
+  ): UserPoolState = {
+    val __obj = js.Dynamic.literal()
+    if (adminCreateUserConfig != null) __obj.updateDynamic("adminCreateUserConfig")(adminCreateUserConfig.asInstanceOf[js.Any])
+    if (aliasAttributes != null) __obj.updateDynamic("aliasAttributes")(aliasAttributes.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (autoVerifiedAttributes != null) __obj.updateDynamic("autoVerifiedAttributes")(autoVerifiedAttributes.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (deviceConfiguration != null) __obj.updateDynamic("deviceConfiguration")(deviceConfiguration.asInstanceOf[js.Any])
+    if (emailConfiguration != null) __obj.updateDynamic("emailConfiguration")(emailConfiguration.asInstanceOf[js.Any])
+    if (emailVerificationMessage != null) __obj.updateDynamic("emailVerificationMessage")(emailVerificationMessage.asInstanceOf[js.Any])
+    if (emailVerificationSubject != null) __obj.updateDynamic("emailVerificationSubject")(emailVerificationSubject.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (lambdaConfig != null) __obj.updateDynamic("lambdaConfig")(lambdaConfig.asInstanceOf[js.Any])
+    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
+    if (mfaConfiguration != null) __obj.updateDynamic("mfaConfiguration")(mfaConfiguration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (passwordPolicy != null) __obj.updateDynamic("passwordPolicy")(passwordPolicy.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
+    if (smsAuthenticationMessage != null) __obj.updateDynamic("smsAuthenticationMessage")(smsAuthenticationMessage.asInstanceOf[js.Any])
+    if (smsConfiguration != null) __obj.updateDynamic("smsConfiguration")(smsConfiguration.asInstanceOf[js.Any])
+    if (smsVerificationMessage != null) __obj.updateDynamic("smsVerificationMessage")(smsVerificationMessage.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (usernameAttributes != null) __obj.updateDynamic("usernameAttributes")(usernameAttributes.asInstanceOf[js.Any])
+    if (verificationMessageTemplate != null) __obj.updateDynamic("verificationMessageTemplate")(verificationMessageTemplate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserPoolState]
+  }
+}
+

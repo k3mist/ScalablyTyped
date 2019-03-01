@@ -12,3 +12,17 @@ trait TrainingPhrase extends js.Object {
   var `type`: java.lang.String
 }
 
+object TrainingPhrase {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    parts: js.Array[Part],
+    `type`: java.lang.String,
+    timesAddedCount: scala.Int | scala.Double = null
+  ): TrainingPhrase = {
+    val __obj = js.Dynamic.literal(name = name, parts = parts, `type` = `type`)
+    if (timesAddedCount != null) __obj.updateDynamic("timesAddedCount")(timesAddedCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TrainingPhrase]
+  }
+}
+

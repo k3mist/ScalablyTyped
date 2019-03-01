@@ -31,3 +31,29 @@ trait ChartAxisZSupplier extends XAxisZSupplier {
   var HasZAxisTitle: scala.Boolean
 }
 
+object ChartAxisZSupplier {
+  @scala.inline
+  def apply(
+    HasZAxis: scala.Boolean,
+    HasZAxisDescription: scala.Boolean,
+    HasZAxisGrid: scala.Boolean,
+    HasZAxisHelpGrid: scala.Boolean,
+    HasZAxisTitle: scala.Boolean,
+    ZAxis: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ZAxisTitle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    ZHelpGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ZMainGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getZAxis: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getZAxisTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
+    getZHelpGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getZMainGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): ChartAxisZSupplier = {
+    val __obj = js.Dynamic.literal(HasZAxis = HasZAxis, HasZAxisDescription = HasZAxisDescription, HasZAxisGrid = HasZAxisGrid, HasZAxisHelpGrid = HasZAxisHelpGrid, HasZAxisTitle = HasZAxisTitle, ZAxis = ZAxis, ZAxisTitle = ZAxisTitle, ZHelpGrid = ZHelpGrid, ZMainGrid = ZMainGrid, acquire = acquire, getZAxis = getZAxis, getZAxisTitle = getZAxisTitle, getZHelpGrid = getZHelpGrid, getZMainGrid = getZMainGrid, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[ChartAxisZSupplier]
+  }
+}
+

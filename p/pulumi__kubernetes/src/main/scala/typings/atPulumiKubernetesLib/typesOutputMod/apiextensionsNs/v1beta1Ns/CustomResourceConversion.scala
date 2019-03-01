@@ -24,3 +24,12 @@ trait CustomResourceConversion extends js.Object {
   val webhookClientConfig: WebhookClientConfig
 }
 
+object CustomResourceConversion {
+  @scala.inline
+  def apply(strategy: java.lang.String, webhookClientConfig: WebhookClientConfig): CustomResourceConversion = {
+    val __obj = js.Dynamic.literal(strategy = strategy, webhookClientConfig = webhookClientConfig)
+  
+    __obj.asInstanceOf[CustomResourceConversion]
+  }
+}
+

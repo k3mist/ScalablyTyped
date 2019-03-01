@@ -10,3 +10,12 @@ trait _xjsfl extends js.Object {
   def init(_this: js.Any): scala.Unit
 }
 
+object _xjsfl {
+  @scala.inline
+  def apply(init: js.Function1[js.Any, scala.Unit], uri: java.lang.String): _xjsfl = {
+    val __obj = js.Dynamic.literal(init = init, uri = uri)
+  
+    __obj.asInstanceOf[_xjsfl]
+  }
+}
+

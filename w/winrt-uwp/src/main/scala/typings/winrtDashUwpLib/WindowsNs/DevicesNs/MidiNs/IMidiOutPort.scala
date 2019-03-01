@@ -22,3 +22,17 @@ trait IMidiOutPort
   def sendMessage(midiMessage: IMidiMessage): scala.Unit
 }
 
+object IMidiOutPort {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    deviceId: java.lang.String,
+    sendBuffer: js.Function1[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Unit],
+    sendMessage: js.Function1[IMidiMessage, scala.Unit]
+  ): IMidiOutPort = {
+    val __obj = js.Dynamic.literal(close = close, deviceId = deviceId, sendBuffer = sendBuffer, sendMessage = sendMessage)
+  
+    __obj.asInstanceOf[IMidiOutPort]
+  }
+}
+

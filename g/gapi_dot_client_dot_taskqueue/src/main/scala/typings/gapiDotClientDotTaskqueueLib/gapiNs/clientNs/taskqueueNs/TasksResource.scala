@@ -22,3 +22,41 @@ trait TasksResource extends js.Object {
   def update(request: gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds): gapiDotClientLib.gapiNs.clientNs.Request[Task]
 }
 
+object TasksResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    lease: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFieldsGroupByTag, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Tasks]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Tasks2]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTaskqueueLib.Anon_AltFieldsKeyNewLeaseSeconds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ]
+  ): TasksResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, lease = lease, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[TasksResource]
+  }
+}
+

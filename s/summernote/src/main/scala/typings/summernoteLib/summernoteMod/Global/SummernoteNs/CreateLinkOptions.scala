@@ -11,3 +11,12 @@ trait CreateLinkOptions extends js.Object {
   var url: java.lang.String
 }
 
+object CreateLinkOptions {
+  @scala.inline
+  def apply(newWindow: scala.Boolean, text: java.lang.String, url: java.lang.String): CreateLinkOptions = {
+    val __obj = js.Dynamic.literal(newWindow = newWindow, text = text, url = url)
+  
+    __obj.asInstanceOf[CreateLinkOptions]
+  }
+}
+

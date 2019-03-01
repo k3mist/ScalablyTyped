@@ -12,3 +12,17 @@ trait IPushNotificationChannel extends js.Object {
   def close(): scala.Unit
 }
 
+object IPushNotificationChannel {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    expirationTime: stdLib.Date,
+    onpushnotificationreceived: js.Any,
+    uri: java.lang.String
+  ): IPushNotificationChannel = {
+    val __obj = js.Dynamic.literal(close = close, expirationTime = expirationTime, onpushnotificationreceived = onpushnotificationreceived, uri = uri)
+  
+    __obj.asInstanceOf[IPushNotificationChannel]
+  }
+}
+

@@ -11,3 +11,12 @@ trait KeygenOptions extends js.Object {
   var salt: java.lang.String
 }
 
+object KeygenOptions {
+  @scala.inline
+  def apply(iterations: scala.Double, password: java.lang.String, salt: java.lang.String): KeygenOptions = {
+    val __obj = js.Dynamic.literal(iterations = iterations, password = password, salt = salt)
+  
+    __obj.asInstanceOf[KeygenOptions]
+  }
+}
+

@@ -72,3 +72,32 @@ trait IProduct
   var url: java.lang.String
 }
 
+object IProduct {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    attributes: js.Array[java.lang.String],
+    caption: java.lang.String,
+    created: scala.Double,
+    deactivated_on: js.Array[java.lang.String],
+    description: java.lang.String,
+    id: java.lang.String,
+    images: js.Array[java.lang.String],
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    name: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.product,
+    package_dimensions: IPackageDimensions,
+    shippable: scala.Boolean,
+    skus: stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.skusNs.ISku],
+    statement_descriptor: java.lang.String,
+    `type`: ProductType,
+    updated: scala.Double,
+    url: java.lang.String
+  ): IProduct = {
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, caption = caption, created = created, deactivated_on = deactivated_on, description = description, id = id, images = images, livemode = livemode, metadata = metadata, name = name, `object` = `object`, package_dimensions = package_dimensions, shippable = shippable, skus = skus, statement_descriptor = statement_descriptor, `type` = `type`, updated = updated, url = url)
+  
+    __obj.asInstanceOf[IProduct]
+  }
+}
+

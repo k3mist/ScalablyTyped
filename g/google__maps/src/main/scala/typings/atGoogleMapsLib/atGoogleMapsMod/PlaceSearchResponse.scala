@@ -30,3 +30,18 @@ trait PlaceSearchResponse extends js.Object {
   var status: SearchResponseStatus
 }
 
+object PlaceSearchResponse {
+  @scala.inline
+  def apply(
+    error_message: java.lang.String,
+    html_attributions: js.Array[java.lang.String],
+    next_page_token: java.lang.String,
+    results: js.Array[PlaceSearchResult],
+    status: SearchResponseStatus
+  ): PlaceSearchResponse = {
+    val __obj = js.Dynamic.literal(error_message = error_message, html_attributions = html_attributions, next_page_token = next_page_token, results = results, status = status)
+  
+    __obj.asInstanceOf[PlaceSearchResponse]
+  }
+}
+

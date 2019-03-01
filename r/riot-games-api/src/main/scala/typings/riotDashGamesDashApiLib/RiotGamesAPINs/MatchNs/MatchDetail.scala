@@ -22,3 +22,27 @@ trait MatchDetail extends js.Object {
   var timeline: Timeline
 }
 
+object MatchDetail {
+  @scala.inline
+  def apply(
+    mapId: scala.Double,
+    matchCreation: scala.Double,
+    matchId: scala.Double,
+    matchMode: java.lang.String,
+    matchType: java.lang.String,
+    matchVersion: java.lang.String,
+    participantIdentities: js.Array[ParticipantIdentity],
+    participants: js.Array[Participant],
+    plateformId: java.lang.String,
+    queueType: java.lang.String,
+    region: java.lang.String,
+    season: java.lang.String,
+    teams: js.Array[Team],
+    timeline: Timeline
+  ): MatchDetail = {
+    val __obj = js.Dynamic.literal(mapId = mapId, matchCreation = matchCreation, matchId = matchId, matchMode = matchMode, matchType = matchType, matchVersion = matchVersion, participantIdentities = participantIdentities, participants = participants, plateformId = plateformId, queueType = queueType, region = region, season = season, teams = teams, timeline = timeline)
+  
+    __obj.asInstanceOf[MatchDetail]
+  }
+}
+

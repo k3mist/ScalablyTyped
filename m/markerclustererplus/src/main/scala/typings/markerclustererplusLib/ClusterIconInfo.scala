@@ -18,3 +18,12 @@ trait ClusterIconInfo extends js.Object {
   var title: java.lang.String
 }
 
+object ClusterIconInfo {
+  @scala.inline
+  def apply(index: scala.Double, text: java.lang.String, title: java.lang.String): ClusterIconInfo = {
+    val __obj = js.Dynamic.literal(index = index, text = text, title = title)
+  
+    __obj.asInstanceOf[ClusterIconInfo]
+  }
+}
+

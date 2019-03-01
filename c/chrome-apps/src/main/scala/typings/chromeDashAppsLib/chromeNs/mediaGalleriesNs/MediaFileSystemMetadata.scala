@@ -20,3 +20,19 @@ trait MediaFileSystemMetadata extends js.Object {
   var name: java.lang.String
 }
 
+object MediaFileSystemMetadata {
+  @scala.inline
+  def apply(
+    galleryId: java.lang.String,
+    isAvailable: scala.Boolean,
+    isMediaDevice: scala.Boolean,
+    isRemovable: scala.Boolean,
+    name: java.lang.String,
+    deviceId: java.lang.String = null
+  ): MediaFileSystemMetadata = {
+    val __obj = js.Dynamic.literal(galleryId = galleryId, isAvailable = isAvailable, isMediaDevice = isMediaDevice, isRemovable = isRemovable, name = name)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    __obj.asInstanceOf[MediaFileSystemMetadata]
+  }
+}
+

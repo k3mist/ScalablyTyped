@@ -16,3 +16,12 @@ trait IQDownloadInfo extends js.Object {
   var qUrl: java.lang.String
 }
 
+object IQDownloadInfo {
+  @scala.inline
+  def apply(qFileSize: scala.Double, qUrl: java.lang.String): IQDownloadInfo = {
+    val __obj = js.Dynamic.literal(qFileSize = qFileSize, qUrl = qUrl)
+  
+    __obj.asInstanceOf[IQDownloadInfo]
+  }
+}
+

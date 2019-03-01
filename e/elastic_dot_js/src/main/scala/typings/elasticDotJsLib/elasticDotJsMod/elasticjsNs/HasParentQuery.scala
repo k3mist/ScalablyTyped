@@ -46,3 +46,21 @@ trait HasParentQuery extends Query {
   def toJSON(): js.Any
 }
 
+object HasParentQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, HasParentQuery],
+    parentType: js.Function1[java.lang.String, HasParentQuery],
+    query: js.Function1[js.Object, HasParentQuery],
+    scope: js.Function1[java.lang.String, HasParentQuery],
+    scoreMode: js.Function1[java.lang.String, HasParentQuery],
+    scoreType: js.Function1[java.lang.String, HasParentQuery],
+    toJSON: js.Function0[js.Any]
+  ): HasParentQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, parentType = parentType, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, toJSON = toJSON)
+  
+    __obj.asInstanceOf[HasParentQuery]
+  }
+}
+

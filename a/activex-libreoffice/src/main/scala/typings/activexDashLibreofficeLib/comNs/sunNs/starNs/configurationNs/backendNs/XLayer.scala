@@ -21,3 +21,17 @@ trait XLayer
   def readData(aHandler: XLayerHandler): scala.Unit
 }
 
+object XLayer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readData: js.Function1[XLayerHandler, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XLayer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readData = readData, release = release)
+  
+    __obj.asInstanceOf[XLayer]
+  }
+}
+

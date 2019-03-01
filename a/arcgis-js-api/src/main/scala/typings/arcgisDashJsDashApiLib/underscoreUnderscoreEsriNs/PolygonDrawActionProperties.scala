@@ -23,3 +23,13 @@ trait PolygonDrawActionProperties extends DrawActionProperties {
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PolygonDrawActionProperties {
+  @scala.inline
+  def apply(mode: java.lang.String = null, view: MapViewProperties = null): PolygonDrawActionProperties = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[PolygonDrawActionProperties]
+  }
+}
+

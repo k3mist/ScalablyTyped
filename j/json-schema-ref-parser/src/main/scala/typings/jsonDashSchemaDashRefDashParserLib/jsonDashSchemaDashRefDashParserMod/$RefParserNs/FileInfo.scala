@@ -20,3 +20,12 @@ trait FileInfo extends js.Object {
   var url: java.lang.String
 }
 
+object FileInfo {
+  @scala.inline
+  def apply(data: java.lang.String | nodeLib.Buffer, extension: java.lang.String, url: java.lang.String): FileInfo = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension, url = url)
+  
+    __obj.asInstanceOf[FileInfo]
+  }
+}
+

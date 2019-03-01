@@ -15,3 +15,15 @@ trait ListEvent
   var Changes: activexDashInteropLib.SafeArray[ListAction]
 }
 
+object ListEvent {
+  @scala.inline
+  def apply(
+    Changes: activexDashInteropLib.SafeArray[ListAction],
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ListEvent = {
+    val __obj = js.Dynamic.literal(Changes = Changes, Source = Source)
+  
+    __obj.asInstanceOf[ListEvent]
+  }
+}
+

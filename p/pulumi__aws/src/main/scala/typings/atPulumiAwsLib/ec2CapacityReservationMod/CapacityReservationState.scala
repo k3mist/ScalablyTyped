@@ -58,3 +58,34 @@ trait CapacityReservationState extends js.Object {
   val tenancy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2TenancyMod.Tenancy]] = js.undefined
 }
 
+object CapacityReservationState {
+  @scala.inline
+  def apply(
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ebsOptimized: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    endDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    endDateType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ephemeralStorage: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    instanceCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    instanceMatchCriteria: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    instancePlatform: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform] = null,
+    instanceType: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2InstanceTypeMod.InstanceType] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    tenancy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2TenancyMod.Tenancy] = null
+  ): CapacityReservationState = {
+    val __obj = js.Dynamic.literal()
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (endDateType != null) __obj.updateDynamic("endDateType")(endDateType.asInstanceOf[js.Any])
+    if (ephemeralStorage != null) __obj.updateDynamic("ephemeralStorage")(ephemeralStorage.asInstanceOf[js.Any])
+    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (instanceMatchCriteria != null) __obj.updateDynamic("instanceMatchCriteria")(instanceMatchCriteria.asInstanceOf[js.Any])
+    if (instancePlatform != null) __obj.updateDynamic("instancePlatform")(instancePlatform.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CapacityReservationState]
+  }
+}
+

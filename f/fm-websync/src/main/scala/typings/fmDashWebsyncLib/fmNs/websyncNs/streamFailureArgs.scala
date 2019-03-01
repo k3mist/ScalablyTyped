@@ -16,3 +16,19 @@ trait streamFailureArgs extends baseResponseArgs {
   var willReconnect: scala.Boolean
 }
 
+object streamFailureArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    error: java.lang.String,
+    meta: js.Any,
+    timestamp: stdLib.Date,
+    willReconnect: scala.Boolean
+  ): streamFailureArgs = {
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, meta = meta, timestamp = timestamp, willReconnect = willReconnect)
+  
+    __obj.asInstanceOf[streamFailureArgs]
+  }
+}
+

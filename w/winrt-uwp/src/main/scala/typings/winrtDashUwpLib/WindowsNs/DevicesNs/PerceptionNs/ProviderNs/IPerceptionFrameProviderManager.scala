@@ -16,3 +16,15 @@ trait IPerceptionFrameProviderManager
   def getFrameProvider(frameProviderInfo: PerceptionFrameProviderInfo): IPerceptionFrameProvider
 }
 
+object IPerceptionFrameProviderManager {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    getFrameProvider: js.Function1[PerceptionFrameProviderInfo, IPerceptionFrameProvider]
+  ): IPerceptionFrameProviderManager = {
+    val __obj = js.Dynamic.literal(close = close, getFrameProvider = getFrameProvider)
+  
+    __obj.asInstanceOf[IPerceptionFrameProviderManager]
+  }
+}
+

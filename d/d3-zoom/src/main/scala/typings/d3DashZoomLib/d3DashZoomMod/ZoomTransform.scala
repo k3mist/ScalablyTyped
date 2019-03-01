@@ -108,3 +108,27 @@ trait ZoomTransform extends js.Object {
   def translate(x: scala.Double, y: scala.Double): ZoomTransform
 }
 
+object ZoomTransform {
+  @scala.inline
+  def apply(
+    apply: js.Function1[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]],
+    applyX: js.Function1[scala.Double, scala.Double],
+    applyY: js.Function1[scala.Double, scala.Double],
+    invert: js.Function1[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]],
+    invertX: js.Function1[scala.Double, scala.Double],
+    invertY: js.Function1[scala.Double, scala.Double],
+    k: scala.Double,
+    rescaleX: js.Function1[js.Any, js.Any],
+    rescaleY: js.Function1[js.Any, js.Any],
+    scale: js.Function1[scala.Double, ZoomTransform],
+    toString: js.Function0[java.lang.String],
+    translate: js.Function2[scala.Double, scala.Double, ZoomTransform],
+    x: scala.Double,
+    y: scala.Double
+  ): ZoomTransform = {
+    val __obj = js.Dynamic.literal(apply = apply, applyX = applyX, applyY = applyY, invert = invert, invertX = invertX, invertY = invertY, k = k, rescaleX = rescaleX, rescaleY = rescaleY, scale = scale, toString = toString, translate = translate, x = x, y = y)
+  
+    __obj.asInstanceOf[ZoomTransform]
+  }
+}
+

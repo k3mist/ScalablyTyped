@@ -15,3 +15,20 @@ trait Encoder extends js.Object {
   var `type`: java.lang.String
 }
 
+object Encoder {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    directRendering: scala.Boolean,
+    drawHorizBand: scala.Boolean,
+    experimental: scala.Boolean,
+    frameMT: scala.Boolean,
+    sliceMT: scala.Boolean,
+    `type`: java.lang.String
+  ): Encoder = {
+    val __obj = js.Dynamic.literal(description = description, directRendering = directRendering, drawHorizBand = drawHorizBand, experimental = experimental, frameMT = frameMT, sliceMT = sliceMT, `type` = `type`)
+  
+    __obj.asInstanceOf[Encoder]
+  }
+}
+

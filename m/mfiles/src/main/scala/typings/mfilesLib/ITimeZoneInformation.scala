@@ -11,3 +11,16 @@ trait ITimeZoneInformation extends js.Object {
   def LoadWithCurrentTimeZone(): scala.Unit
 }
 
+object ITimeZoneInformation {
+  @scala.inline
+  def apply(
+    LoadTimeZoneByName: js.Function1[java.lang.String, scala.Unit],
+    LoadWithCurrentTimeZone: js.Function0[scala.Unit],
+    StandardName: java.lang.String
+  ): ITimeZoneInformation = {
+    val __obj = js.Dynamic.literal(LoadTimeZoneByName = LoadTimeZoneByName, LoadWithCurrentTimeZone = LoadWithCurrentTimeZone, StandardName = StandardName)
+  
+    __obj.asInstanceOf[ITimeZoneInformation]
+  }
+}
+

@@ -14,3 +14,19 @@ trait ReleaseApprovalHistory extends js.Object {
   var revision: scala.Double
 }
 
+object ReleaseApprovalHistory {
+  @scala.inline
+  def apply(
+    approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    comments: java.lang.String,
+    createdOn: stdLib.Date,
+    modifiedOn: stdLib.Date,
+    revision: scala.Double
+  ): ReleaseApprovalHistory = {
+    val __obj = js.Dynamic.literal(approver = approver, changedBy = changedBy, comments = comments, createdOn = createdOn, modifiedOn = modifiedOn, revision = revision)
+  
+    __obj.asInstanceOf[ReleaseApprovalHistory]
+  }
+}
+

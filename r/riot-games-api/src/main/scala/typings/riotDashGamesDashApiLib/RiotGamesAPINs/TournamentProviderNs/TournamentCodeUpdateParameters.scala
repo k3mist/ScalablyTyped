@@ -12,3 +12,17 @@ trait TournamentCodeUpdateParameters extends js.Object {
   var spectatorType: java.lang.String
 }
 
+object TournamentCodeUpdateParameters {
+  @scala.inline
+  def apply(
+    allowedParticipants: java.lang.String,
+    mapType: java.lang.String,
+    pickType: java.lang.String,
+    spectatorType: java.lang.String
+  ): TournamentCodeUpdateParameters = {
+    val __obj = js.Dynamic.literal(allowedParticipants = allowedParticipants, mapType = mapType, pickType = pickType, spectatorType = spectatorType)
+  
+    __obj.asInstanceOf[TournamentCodeUpdateParameters]
+  }
+}
+

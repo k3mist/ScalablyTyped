@@ -35,3 +35,25 @@ trait XNumericControl extends XPropertyControl {
   var ValueUnit: scala.Double
 }
 
+object XNumericControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    DecimalDigits: scala.Double,
+    DisplayUnit: scala.Double,
+    MaxValue: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[scala.Double],
+    MinValue: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[scala.Double],
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    ValueUnit: scala.Double,
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit]
+  ): XNumericControl = {
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, DecimalDigits = DecimalDigits, DisplayUnit = DisplayUnit, MaxValue = MaxValue, MinValue = MinValue, Value = Value, ValueType = ValueType, ValueUnit = ValueUnit, isModified = isModified, notifyModifiedValue = notifyModifiedValue)
+  
+    __obj.asInstanceOf[XNumericControl]
+  }
+}
+

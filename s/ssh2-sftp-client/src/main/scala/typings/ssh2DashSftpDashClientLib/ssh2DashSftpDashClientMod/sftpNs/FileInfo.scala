@@ -16,3 +16,21 @@ trait FileInfo extends js.Object {
   var `type`: java.lang.String
 }
 
+object FileInfo {
+  @scala.inline
+  def apply(
+    accessTime: scala.Double,
+    group: scala.Double,
+    modifyTime: scala.Double,
+    name: java.lang.String,
+    owner: scala.Double,
+    rights: ssh2DashSftpDashClientLib.Anon_Group,
+    size: scala.Double,
+    `type`: java.lang.String
+  ): FileInfo = {
+    val __obj = js.Dynamic.literal(accessTime = accessTime, group = group, modifyTime = modifyTime, name = name, owner = owner, rights = rights, size = size, `type` = `type`)
+  
+    __obj.asInstanceOf[FileInfo]
+  }
+}
+

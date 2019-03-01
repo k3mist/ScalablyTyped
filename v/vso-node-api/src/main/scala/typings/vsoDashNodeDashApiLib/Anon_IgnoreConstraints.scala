@@ -14,3 +14,19 @@ trait Anon_IgnoreConstraints extends js.Object {
   var none: scala.Double
 }
 
+object Anon_IgnoreConstraints {
+  @scala.inline
+  def apply(
+    ignoreConstraints: scala.Double,
+    includeAll: scala.Double,
+    includeChildren: scala.Double,
+    includeSelf: scala.Double,
+    includeSubTree: scala.Double,
+    none: scala.Double
+  ): Anon_IgnoreConstraints = {
+    val __obj = js.Dynamic.literal(ignoreConstraints = ignoreConstraints, includeAll = includeAll, includeChildren = includeChildren, includeSelf = includeSelf, includeSubTree = includeSubTree, none = none)
+  
+    __obj.asInstanceOf[Anon_IgnoreConstraints]
+  }
+}
+

@@ -13,3 +13,16 @@ trait ButtonInformation extends js.Object {
   var title: java.lang.String
 }
 
+object ButtonInformation {
+  @scala.inline
+  def apply(
+    icon: java.lang.String,
+    title: java.lang.String,
+    buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): ButtonInformation = {
+    val __obj = js.Dynamic.literal(icon = icon, title = title)
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ButtonInformation]
+  }
+}
+

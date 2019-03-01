@@ -11,3 +11,16 @@ trait Anon_SecurityGroupIdsSubnetIds extends js.Object {
   var vpcId: java.lang.String
 }
 
+object Anon_SecurityGroupIdsSubnetIds {
+  @scala.inline
+  def apply(
+    subnetIds: js.Array[java.lang.String],
+    vpcId: java.lang.String,
+    securityGroupIds: js.Array[java.lang.String] = null
+  ): Anon_SecurityGroupIdsSubnetIds = {
+    val __obj = js.Dynamic.literal(subnetIds = subnetIds, vpcId = vpcId)
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds)
+    __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetIds]
+  }
+}
+

@@ -21,3 +21,26 @@ trait CpuData extends js.Object {
   var vendor: java.lang.String
 }
 
+object CpuData {
+  @scala.inline
+  def apply(
+    brand: java.lang.String,
+    cache: CpuCacheData,
+    cores: scala.Double,
+    family: java.lang.String,
+    flags: java.lang.String,
+    manufacturer: java.lang.String,
+    model: java.lang.String,
+    revision: java.lang.String,
+    speed: java.lang.String,
+    speedmax: java.lang.String,
+    speedmin: java.lang.String,
+    stepping: java.lang.String,
+    vendor: java.lang.String
+  ): CpuData = {
+    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, flags = flags, manufacturer = manufacturer, model = model, revision = revision, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor)
+  
+    __obj.asInstanceOf[CpuData]
+  }
+}
+

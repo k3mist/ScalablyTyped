@@ -26,3 +26,31 @@ trait GridPane extends js.Object {
   var visitedLinkColor: js.Any
 }
 
+object GridPane {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any,
+    changeHighlightCellBgColor: js.Any,
+    columnDropIndicatorColor: js.Any,
+    copyRectBackBorderColor: js.Any,
+    copyRectForeBorderColor: js.Any,
+    errorRectBorderColor: js.Any,
+    fillRectBorderColor: js.Any,
+    focusRectBorderColor: js.Any,
+    horizontalBorderColor: js.Any,
+    horizontalBorderStyle: js.Any,
+    linkColor: js.Any,
+    readonlySelectionRectBorderColor: js.Any,
+    rowDropIndicatorColor: js.Any,
+    selectedCellBgColor: js.Any,
+    selectionRectBorderColor: js.Any,
+    verticalBorderColor: js.Any,
+    verticalBorderStyle: js.Any,
+    visitedLinkColor: js.Any
+  ): GridPane = {
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, changeHighlightCellBgColor = changeHighlightCellBgColor, columnDropIndicatorColor = columnDropIndicatorColor, copyRectBackBorderColor = copyRectBackBorderColor, copyRectForeBorderColor = copyRectForeBorderColor, errorRectBorderColor = errorRectBorderColor, fillRectBorderColor = fillRectBorderColor, focusRectBorderColor = focusRectBorderColor, horizontalBorderColor = horizontalBorderColor, horizontalBorderStyle = horizontalBorderStyle, linkColor = linkColor, readonlySelectionRectBorderColor = readonlySelectionRectBorderColor, rowDropIndicatorColor = rowDropIndicatorColor, selectedCellBgColor = selectedCellBgColor, selectionRectBorderColor = selectionRectBorderColor, verticalBorderColor = verticalBorderColor, verticalBorderStyle = verticalBorderStyle, visitedLinkColor = visitedLinkColor)
+  
+    __obj.asInstanceOf[GridPane]
+  }
+}
+

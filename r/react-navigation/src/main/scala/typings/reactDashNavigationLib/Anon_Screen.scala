@@ -10,3 +10,12 @@ trait Anon_Screen
   var screen: reactDashNavigationLib.reactDashNavigationMod.NavigationComponent
 }
 
+object Anon_Screen {
+  @scala.inline
+  def apply(screen: reactDashNavigationLib.reactDashNavigationMod.NavigationComponent): Anon_Screen = {
+    val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Screen]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ColorAction extends js.Object {
   var params: js.Any
 }
 
+object ColorAction {
+  @scala.inline
+  def apply(apply: ColorActionName, params: js.Any): ColorAction = {
+    val __obj = js.Dynamic.literal(apply = apply, params = params)
+  
+    __obj.asInstanceOf[ColorAction]
+  }
+}
+

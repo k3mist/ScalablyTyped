@@ -30,3 +30,18 @@ trait SlowDownRequestAugmentation extends js.Object {
   var resetTime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SlowDownRequestAugmentation {
+  @scala.inline
+  def apply(
+    current: scala.Double,
+    delay: scala.Double,
+    limit: scala.Double,
+    remaining: scala.Double,
+    resetTime: scala.Int | scala.Double = null
+  ): SlowDownRequestAugmentation = {
+    val __obj = js.Dynamic.literal(current = current, delay = delay, limit = limit, remaining = remaining)
+    if (resetTime != null) __obj.updateDynamic("resetTime")(resetTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlowDownRequestAugmentation]
+  }
+}
+

@@ -17,3 +17,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.SwitchStatement
 }
 
+object SwitchStatement {
+  @scala.inline
+  def apply(
+    cases: js.Array[astDashTypesLib.genKindsMod.SwitchCaseKind],
+    discriminant: astDashTypesLib.genKindsMod.ExpressionKind,
+    lexical: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.SwitchStatement
+  ): SwitchStatement = {
+    val __obj = js.Dynamic.literal(cases = cases, discriminant = discriminant, lexical = lexical, `type` = `type`)
+  
+    __obj.asInstanceOf[SwitchStatement]
+  }
+}
+

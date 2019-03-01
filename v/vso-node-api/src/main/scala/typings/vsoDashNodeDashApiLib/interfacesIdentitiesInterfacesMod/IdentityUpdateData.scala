@@ -11,3 +11,12 @@ trait IdentityUpdateData extends js.Object {
   var updated: scala.Boolean
 }
 
+object IdentityUpdateData {
+  @scala.inline
+  def apply(id: java.lang.String, index: scala.Double, updated: scala.Boolean): IdentityUpdateData = {
+    val __obj = js.Dynamic.literal(id = id, index = index, updated = updated)
+  
+    __obj.asInstanceOf[IdentityUpdateData]
+  }
+}
+

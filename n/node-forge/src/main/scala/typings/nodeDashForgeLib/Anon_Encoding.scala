@@ -11,3 +11,16 @@ trait Anon_Encoding extends js.Object {
   var privateKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
 }
 
+object Anon_Encoding {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String,
+    message: java.lang.String,
+    privateKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
+  ): Anon_Encoding = {
+    val __obj = js.Dynamic.literal(encoding = encoding, message = message, privateKey = privateKey.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Encoding]
+  }
+}
+

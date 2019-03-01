@@ -10,3 +10,12 @@ trait ITabService extends js.Object {
   var defaults: ITabOptions
 }
 
+object ITabService {
+  @scala.inline
+  def apply(controller: js.Any, defaults: ITabOptions): ITabService = {
+    val __obj = js.Dynamic.literal(controller = controller, defaults = defaults)
+  
+    __obj.asInstanceOf[ITabService]
+  }
+}
+

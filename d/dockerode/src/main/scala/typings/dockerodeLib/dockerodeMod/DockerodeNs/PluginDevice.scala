@@ -12,3 +12,17 @@ trait PluginDevice extends js.Object {
   var Settable: js.Array[java.lang.String]
 }
 
+object PluginDevice {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    Name: java.lang.String,
+    Path: java.lang.String,
+    Settable: js.Array[java.lang.String]
+  ): PluginDevice = {
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, Path = Path, Settable = Settable)
+  
+    __obj.asInstanceOf[PluginDevice]
+  }
+}
+

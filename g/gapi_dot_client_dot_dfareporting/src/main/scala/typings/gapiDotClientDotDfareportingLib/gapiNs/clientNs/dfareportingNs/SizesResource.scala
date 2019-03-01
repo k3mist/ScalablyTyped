@@ -14,3 +14,25 @@ trait SizesResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsHeight): gapiDotClientLib.gapiNs.clientNs.Request[SizesListResponse]
 }
 
+object SizesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Size]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Size]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsHeight, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SizesListResponse]
+    ]
+  ): SizesResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+  
+    __obj.asInstanceOf[SizesResource]
+  }
+}
+

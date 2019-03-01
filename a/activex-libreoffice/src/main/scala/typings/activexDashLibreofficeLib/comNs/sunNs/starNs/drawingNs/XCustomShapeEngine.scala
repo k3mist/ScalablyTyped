@@ -24,3 +24,23 @@ trait XCustomShapeEngine
   def render(): XShape
 }
 
+object XCustomShapeEngine {
+  @scala.inline
+  def apply(
+    Interaction: activexDashInteropLib.SafeArray[XCustomShapeHandle],
+    LineGeometry: PolyPolygonBezierCoords,
+    TextBounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    acquire: js.Function0[scala.Unit],
+    getInteraction: js.Function0[activexDashInteropLib.SafeArray[XCustomShapeHandle]],
+    getLineGeometry: js.Function0[PolyPolygonBezierCoords],
+    getTextBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    render: js.Function0[XShape]
+  ): XCustomShapeEngine = {
+    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = acquire, getInteraction = getInteraction, getLineGeometry = getLineGeometry, getTextBounds = getTextBounds, queryInterface = queryInterface, release = release, render = render)
+  
+    __obj.asInstanceOf[XCustomShapeEngine]
+  }
+}
+

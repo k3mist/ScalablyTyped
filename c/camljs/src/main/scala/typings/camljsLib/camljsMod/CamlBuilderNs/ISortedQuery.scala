@@ -12,3 +12,17 @@ trait ISortedQuery extends IFinalizable {
   def ThenByDesc(fieldInternalName: java.lang.String): js.Any
 }
 
+object ISortedQuery {
+  @scala.inline
+  def apply(
+    ThenBy: js.Function1[java.lang.String, js.Any],
+    ThenByDesc: js.Function1[java.lang.String, js.Any],
+    ToCamlQuery: js.Function0[js.Any],
+    ToString: js.Function0[java.lang.String]
+  ): ISortedQuery = {
+    val __obj = js.Dynamic.literal(ThenBy = ThenBy, ThenByDesc = ThenByDesc, ToCamlQuery = ToCamlQuery, ToString = ToString)
+  
+    __obj.asInstanceOf[ISortedQuery]
+  }
+}
+

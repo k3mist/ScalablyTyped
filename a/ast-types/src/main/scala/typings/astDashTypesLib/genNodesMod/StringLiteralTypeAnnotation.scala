@@ -17,3 +17,16 @@ import scala.scalajs.js.annotation._
   var value: java.lang.String
 }
 
+object StringLiteralTypeAnnotation {
+  @scala.inline
+  def apply(
+    raw: java.lang.String,
+    `type`: astDashTypesLib.astDashTypesLibStrings.StringLiteralTypeAnnotation,
+    value: java.lang.String
+  ): StringLiteralTypeAnnotation = {
+    val __obj = js.Dynamic.literal(raw = raw, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[StringLiteralTypeAnnotation]
+  }
+}
+

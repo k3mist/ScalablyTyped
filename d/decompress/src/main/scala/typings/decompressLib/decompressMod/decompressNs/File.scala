@@ -13,3 +13,18 @@ trait File extends js.Object {
   var `type`: java.lang.String
 }
 
+object File {
+  @scala.inline
+  def apply(
+    data: nodeLib.Buffer,
+    mode: scala.Double,
+    mtime: java.lang.String,
+    path: java.lang.String,
+    `type`: java.lang.String
+  ): File = {
+    val __obj = js.Dynamic.literal(data = data, mode = mode, mtime = mtime, path = path, `type` = `type`)
+  
+    __obj.asInstanceOf[File]
+  }
+}
+

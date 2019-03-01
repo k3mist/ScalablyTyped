@@ -20,3 +20,29 @@ trait HTTPInjectOptions extends js.Object {
   var validate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HTTPInjectOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    authority: java.lang.String = null,
+    headers: DefaultHeaders = null,
+    method: HTTPMethod = null,
+    payload: java.lang.String | js.Object | nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream = null,
+    query: DefaultQuery = null,
+    remoteAddress: java.lang.String = null,
+    simulate: fastifyLib.Anon_Close = null,
+    validate: js.UndefOr[scala.Boolean] = js.undefined
+  ): HTTPInjectOptions = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[HTTPInjectOptions]
+  }
+}
+

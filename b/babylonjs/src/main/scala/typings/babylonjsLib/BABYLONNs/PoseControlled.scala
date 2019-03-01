@@ -42,3 +42,20 @@ trait PoseControlled extends js.Object {
   def updateFromDevice(poseData: DevicePose): scala.Unit
 }
 
+object PoseControlled {
+  @scala.inline
+  def apply(
+    deviceRotationQuaternion: Quaternion,
+    deviceScaleFactor: scala.Double,
+    position: Vector3,
+    rawPose: Nullable[DevicePose],
+    rotationQuaternion: Quaternion,
+    updateFromDevice: js.Function1[DevicePose, scala.Unit],
+    devicePosition: Vector3 = null
+  ): PoseControlled = {
+    val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion, deviceScaleFactor = deviceScaleFactor, position = position, rawPose = rawPose.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion, updateFromDevice = updateFromDevice)
+    if (devicePosition != null) __obj.updateDynamic("devicePosition")(devicePosition)
+    __obj.asInstanceOf[PoseControlled]
+  }
+}
+

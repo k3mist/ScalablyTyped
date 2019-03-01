@@ -16,3 +16,12 @@ trait PageProperties extends js.Object {
   var page_background_fill: PagePropertiesPageBackgroundFill
 }
 
+object PageProperties {
+  @scala.inline
+  def apply(color_scheme: ColorScheme, page_background_fill: PagePropertiesPageBackgroundFill): PageProperties = {
+    val __obj = js.Dynamic.literal(color_scheme = color_scheme, page_background_fill = page_background_fill)
+  
+    __obj.asInstanceOf[PageProperties]
+  }
+}
+

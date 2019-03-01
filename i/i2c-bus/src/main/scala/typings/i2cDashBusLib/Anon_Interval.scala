@@ -10,3 +10,15 @@ trait Anon_Interval extends js.Object {
   var times: scala.Double
 }
 
+object Anon_Interval {
+  @scala.inline
+  def apply(
+    interval: scala.Double | (js.Function1[/* retryCount */ scala.Double, scala.Double]),
+    times: scala.Double
+  ): Anon_Interval = {
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], times = times)
+  
+    __obj.asInstanceOf[Anon_Interval]
+  }
+}
+

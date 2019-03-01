@@ -20,3 +20,12 @@ trait ChangeParagraphFormattingCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeParagraphFormattingCommand {
+  @scala.inline
+  def apply(execute: js.Function1[ParagraphFormattingSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeParagraphFormattingCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ChangeParagraphFormattingCommand]
+  }
+}
+

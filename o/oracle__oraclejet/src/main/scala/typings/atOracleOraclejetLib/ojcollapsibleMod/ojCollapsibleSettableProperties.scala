@@ -12,3 +12,17 @@ trait ojCollapsibleSettableProperties
   var expanded: scala.Boolean
 }
 
+object ojCollapsibleSettableProperties {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    expandArea: atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.disclosureIcon,
+    expanded: scala.Boolean,
+    translations: js.Object = null
+  ): ojCollapsibleSettableProperties = {
+    val __obj = js.Dynamic.literal(disabled = disabled, expandArea = expandArea.asInstanceOf[js.Any], expanded = expanded)
+    if (translations != null) __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[ojCollapsibleSettableProperties]
+  }
+}
+

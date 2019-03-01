@@ -28,3 +28,16 @@ trait ObjectConstructor extends js.Object {
   def setPrototypeOf(o: js.Any, proto: js.Any): js.Any
 }
 
+object ObjectConstructor {
+  @scala.inline
+  def apply(
+    assign: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
+    is: js.Function2[js.Any, js.Any, scala.Boolean],
+    setPrototypeOf: js.Function2[js.Any, js.Any, js.Any]
+  ): ObjectConstructor = {
+    val __obj = js.Dynamic.literal(assign = assign, is = is, setPrototypeOf = setPrototypeOf)
+  
+    __obj.asInstanceOf[ObjectConstructor]
+  }
+}
+

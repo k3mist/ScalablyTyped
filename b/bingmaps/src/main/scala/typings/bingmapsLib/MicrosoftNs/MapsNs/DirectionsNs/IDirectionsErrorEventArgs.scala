@@ -12,3 +12,12 @@ trait IDirectionsErrorEventArgs extends js.Object {
   var responseCode: RouteResponseCode
 }
 
+object IDirectionsErrorEventArgs {
+  @scala.inline
+  def apply(message: java.lang.String, responseCode: RouteResponseCode): IDirectionsErrorEventArgs = {
+    val __obj = js.Dynamic.literal(message = message, responseCode = responseCode)
+  
+    __obj.asInstanceOf[IDirectionsErrorEventArgs]
+  }
+}
+

@@ -16,3 +16,21 @@ trait ListenerDefaults extends js.Object {
   var prevent_repeat: scala.Boolean
 }
 
+object ListenerDefaults {
+  @scala.inline
+  def apply(
+    is_counting: scala.Boolean,
+    is_exclusive: scala.Boolean,
+    is_sequence: scala.Boolean,
+    is_solitary: scala.Boolean,
+    is_unordered: scala.Boolean,
+    keys: java.lang.String,
+    prevent_default: scala.Boolean,
+    prevent_repeat: scala.Boolean
+  ): ListenerDefaults = {
+    val __obj = js.Dynamic.literal(is_counting = is_counting, is_exclusive = is_exclusive, is_sequence = is_sequence, is_solitary = is_solitary, is_unordered = is_unordered, keys = keys, prevent_default = prevent_default, prevent_repeat = prevent_repeat)
+  
+    __obj.asInstanceOf[ListenerDefaults]
+  }
+}
+

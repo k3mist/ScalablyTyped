@@ -15,3 +15,26 @@ trait XFastDocumentHandler extends XFastContextHandler {
   def startDocument(): scala.Unit
 }
 
+object XFastDocumentHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    characters: js.Function1[java.lang.String, scala.Unit],
+    createFastChildContext: js.Function2[scala.Double, XFastAttributeList, XFastContextHandler],
+    createUnknownChildContext: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, XFastContextHandler],
+    endDocument: js.Function0[scala.Unit],
+    endFastElement: js.Function1[scala.Double, scala.Unit],
+    endUnknownElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDocumentLocator: js.Function1[XLocator, scala.Unit],
+    startDocument: js.Function0[scala.Unit],
+    startFastElement: js.Function2[scala.Double, XFastAttributeList, scala.Unit],
+    startUnknownElement: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, scala.Unit]
+  ): XFastDocumentHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, characters = characters, createFastChildContext = createFastChildContext, createUnknownChildContext = createUnknownChildContext, endDocument = endDocument, endFastElement = endFastElement, endUnknownElement = endUnknownElement, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startFastElement = startFastElement, startUnknownElement = startUnknownElement)
+  
+    __obj.asInstanceOf[XFastDocumentHandler]
+  }
+}
+

@@ -26,3 +26,12 @@ trait ASPxClientListEditItemFilteringEventArgs extends ASPxClientEventArgs {
   var item: ASPxClientListEditItem
 }
 
+object ASPxClientListEditItemFilteringEventArgs {
+  @scala.inline
+  def apply(filter: java.lang.String, isFit: scala.Boolean, item: ASPxClientListEditItem): ASPxClientListEditItemFilteringEventArgs = {
+    val __obj = js.Dynamic.literal(filter = filter, isFit = isFit, item = item)
+  
+    __obj.asInstanceOf[ASPxClientListEditItemFilteringEventArgs]
+  }
+}
+

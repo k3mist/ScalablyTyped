@@ -13,3 +13,18 @@ trait Anon_IncludeInheritedDefinitionsOnly extends js.Object {
   var none: scala.Double
 }
 
+object Anon_IncludeInheritedDefinitionsOnly {
+  @scala.inline
+  def apply(
+    includeInheritedDefinitionsOnly: scala.Double,
+    includeLastUserAccess: scala.Double,
+    includeNonInheritedDefinitionsOnly: scala.Double,
+    includeServices: scala.Double,
+    none: scala.Double
+  ): Anon_IncludeInheritedDefinitionsOnly = {
+    val __obj = js.Dynamic.literal(includeInheritedDefinitionsOnly = includeInheritedDefinitionsOnly, includeLastUserAccess = includeLastUserAccess, includeNonInheritedDefinitionsOnly = includeNonInheritedDefinitionsOnly, includeServices = includeServices, none = none)
+  
+    __obj.asInstanceOf[Anon_IncludeInheritedDefinitionsOnly]
+  }
+}
+

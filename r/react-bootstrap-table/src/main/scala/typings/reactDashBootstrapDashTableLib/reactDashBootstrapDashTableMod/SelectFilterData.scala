@@ -10,3 +10,15 @@ trait SelectFilterData extends FilterValue {
   var value: java.lang.String
 }
 
+object SelectFilterData {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.SelectFilter,
+    value: java.lang.String
+  ): SelectFilterData = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[SelectFilterData]
+  }
+}
+

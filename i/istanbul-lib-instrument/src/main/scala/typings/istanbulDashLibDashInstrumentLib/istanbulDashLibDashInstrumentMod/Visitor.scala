@@ -10,3 +10,15 @@ trait Visitor extends js.Object {
   def exit(path: java.lang.String): istanbulDashLibDashInstrumentLib.Anon_FileCoverage
 }
 
+object Visitor {
+  @scala.inline
+  def apply(
+    enter: js.Function1[java.lang.String, scala.Unit],
+    exit: js.Function1[java.lang.String, istanbulDashLibDashInstrumentLib.Anon_FileCoverage]
+  ): Visitor = {
+    val __obj = js.Dynamic.literal(enter = enter, exit = exit)
+  
+    __obj.asInstanceOf[Visitor]
+  }
+}
+

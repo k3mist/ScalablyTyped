@@ -18,3 +18,21 @@ trait XMenuListener
   def itemSelected(aEvent: MenuEvent): scala.Unit
 }
 
+object XMenuListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    itemActivated: js.Function1[MenuEvent, scala.Unit],
+    itemDeactivated: js.Function1[MenuEvent, scala.Unit],
+    itemHighlighted: js.Function1[MenuEvent, scala.Unit],
+    itemSelected: js.Function1[MenuEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMenuListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, itemActivated = itemActivated, itemDeactivated = itemDeactivated, itemHighlighted = itemHighlighted, itemSelected = itemSelected, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMenuListener]
+  }
+}
+

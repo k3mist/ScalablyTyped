@@ -13,3 +13,12 @@ trait StringPair extends js.Object {
   var Second: java.lang.String
 }
 
+object StringPair {
+  @scala.inline
+  def apply(First: java.lang.String, Second: java.lang.String): StringPair = {
+    val __obj = js.Dynamic.literal(First = First, Second = Second)
+  
+    __obj.asInstanceOf[StringPair]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Options extends js.Object {
   var start: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    end: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords,
+    start: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords
+  ): Options = {
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

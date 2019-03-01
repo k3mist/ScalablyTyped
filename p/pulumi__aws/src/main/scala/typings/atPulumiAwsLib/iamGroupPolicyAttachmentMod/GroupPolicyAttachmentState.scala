@@ -16,3 +16,16 @@ trait GroupPolicyAttachmentState extends js.Object {
   val policyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
 }
 
+object GroupPolicyAttachmentState {
+  @scala.inline
+  def apply(
+    group: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamGroupMod.Group] = null,
+    policyArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN] = null
+  ): GroupPolicyAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (policyArn != null) __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupPolicyAttachmentState]
+  }
+}
+

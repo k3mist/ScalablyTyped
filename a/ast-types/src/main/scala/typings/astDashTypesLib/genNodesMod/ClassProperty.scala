@@ -22,3 +22,22 @@ import scala.scalajs.js.annotation._
   var variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus | scala.Null
 }
 
+object ClassProperty {
+  @scala.inline
+  def apply(
+    computed: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    static: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassProperty,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    value: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
+  ): ClassProperty = {
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], static = static, `type` = `type`)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassProperty]
+  }
+}
+

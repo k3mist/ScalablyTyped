@@ -28,3 +28,21 @@ trait VNode extends js.Object {
   val vnodeSelector: java.lang.String
 }
 
+object VNode {
+  @scala.inline
+  def apply(
+    vnodeSelector: java.lang.String,
+    children: js.Array[VNode] = null,
+    domNode: stdLib.Node = null,
+    properties: VNodeProperties = null,
+    text: java.lang.String = null
+  ): VNode = {
+    val __obj = js.Dynamic.literal(vnodeSelector = vnodeSelector)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (domNode != null) __obj.updateDynamic("domNode")(domNode)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[VNode]
+  }
+}
+

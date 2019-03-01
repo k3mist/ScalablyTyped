@@ -12,3 +12,12 @@ trait ValidationError extends js.Object {
   var value: js.Any
 }
 
+object ValidationError {
+  @scala.inline
+  def apply(field: java.lang.String, message: java.lang.String, `type`: java.lang.String, value: js.Any): ValidationError = {
+    val __obj = js.Dynamic.literal(field = field, message = message, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ValidationError]
+  }
+}
+

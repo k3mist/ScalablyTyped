@@ -41,3 +41,25 @@ trait SceneViewEnvironmentProperties
   var starsEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SceneViewEnvironmentProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    atmosphere: SceneViewEnvironmentAtmosphereProperties = null,
+    atmosphereEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    background: BackgroundProperties = null,
+    lighting: SceneViewEnvironmentLightingProperties = null,
+    starsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): SceneViewEnvironmentProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere)
+    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (lighting != null) __obj.updateDynamic("lighting")(lighting)
+    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled)
+    __obj.asInstanceOf[SceneViewEnvironmentProperties]
+  }
+}
+

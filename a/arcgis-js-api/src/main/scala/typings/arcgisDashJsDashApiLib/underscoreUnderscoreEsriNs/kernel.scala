@@ -21,3 +21,12 @@ trait kernel extends js.Object {
   val version: java.lang.String
 }
 
+object kernel {
+  @scala.inline
+  def apply(version: java.lang.String): kernel = {
+    val __obj = js.Dynamic.literal(version = version)
+  
+    __obj.asInstanceOf[kernel]
+  }
+}
+

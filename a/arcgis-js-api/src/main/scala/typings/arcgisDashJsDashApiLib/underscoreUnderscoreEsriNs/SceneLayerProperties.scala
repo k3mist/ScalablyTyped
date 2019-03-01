@@ -100,3 +100,60 @@ trait SceneLayerProperties
   var screenSizePerspectiveEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SceneLayerProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    definitionExpression: java.lang.String = null,
+    elevationInfo: SceneLayerElevationInfo = null,
+    featureReduction: SceneLayerFeatureReduction = null,
+    fields: js.Array[FieldProperties] = null,
+    fullExtent: ExtentProperties = null,
+    geometryType: java.lang.String = null,
+    id: java.lang.String = null,
+    labelingInfo: js.Array[LabelClassProperties] = null,
+    labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    layerId: scala.Int | scala.Double = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    listMode: java.lang.String = null,
+    objectIdField: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplateProperties = null,
+    portalItem: PortalItemProperties = null,
+    renderer: RendererProperties = null,
+    screenSizePerspectiveEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    spatialReference: SpatialReferenceProperties = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SceneLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
+    if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
+    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SceneLayerProperties]
+  }
+}
+

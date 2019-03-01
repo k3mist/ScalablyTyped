@@ -50,3 +50,22 @@ trait XCommandInfo
   def hasCommandByName(Name: java.lang.String): scala.Boolean
 }
 
+object XCommandInfo {
+  @scala.inline
+  def apply(
+    Commands: activexDashInteropLib.SafeArray[CommandInfo],
+    acquire: js.Function0[scala.Unit],
+    getCommandInfoByHandle: js.Function1[scala.Double, CommandInfo],
+    getCommandInfoByName: js.Function1[java.lang.String, CommandInfo],
+    getCommands: js.Function0[activexDashInteropLib.SafeArray[CommandInfo]],
+    hasCommandByHandle: js.Function1[scala.Double, scala.Boolean],
+    hasCommandByName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCommandInfo = {
+    val __obj = js.Dynamic.literal(Commands = Commands, acquire = acquire, getCommandInfoByHandle = getCommandInfoByHandle, getCommandInfoByName = getCommandInfoByName, getCommands = getCommands, hasCommandByHandle = hasCommandByHandle, hasCommandByName = hasCommandByName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCommandInfo]
+  }
+}
+

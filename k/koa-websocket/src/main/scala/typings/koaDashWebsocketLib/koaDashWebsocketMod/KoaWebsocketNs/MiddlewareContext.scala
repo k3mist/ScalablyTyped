@@ -12,3 +12,12 @@ trait MiddlewareContext
   var app: App
 }
 
+object MiddlewareContext {
+  @scala.inline
+  def apply(app: App, path: java.lang.String, websocket: wsLib.wsMod.namespaced): MiddlewareContext = {
+    val __obj = js.Dynamic.literal(app = app, path = path, websocket = websocket)
+  
+    __obj.asInstanceOf[MiddlewareContext]
+  }
+}
+

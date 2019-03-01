@@ -28,3 +28,18 @@ trait SupportedIde extends js.Object {
   var supportedPlatforms: js.Array[java.lang.String]
 }
 
+object SupportedIde {
+  @scala.inline
+  def apply(
+    downloadUrl: java.lang.String,
+    ideType: SupportedIdeType,
+    name: java.lang.String,
+    protocolHandlerUrl: java.lang.String,
+    supportedPlatforms: js.Array[java.lang.String]
+  ): SupportedIde = {
+    val __obj = js.Dynamic.literal(downloadUrl = downloadUrl, ideType = ideType, name = name, protocolHandlerUrl = protocolHandlerUrl, supportedPlatforms = supportedPlatforms)
+  
+    __obj.asInstanceOf[SupportedIde]
+  }
+}
+

@@ -36,3 +36,18 @@ trait Anon_AllowBrowserExecution extends js.Object {
   var serverResultTimeout: scala.Double
 }
 
+object Anon_AllowBrowserExecution {
+  @scala.inline
+  def apply(
+    allowBrowserExecution: scala.Boolean,
+    allowServerExecution: scala.Boolean,
+    basePaths: js.Array[java.lang.String],
+    displayAll: scala.Boolean,
+    serverResultTimeout: scala.Double
+  ): Anon_AllowBrowserExecution = {
+    val __obj = js.Dynamic.literal(allowBrowserExecution = allowBrowserExecution, allowServerExecution = allowServerExecution, basePaths = basePaths, displayAll = displayAll, serverResultTimeout = serverResultTimeout)
+  
+    __obj.asInstanceOf[Anon_AllowBrowserExecution]
+  }
+}
+

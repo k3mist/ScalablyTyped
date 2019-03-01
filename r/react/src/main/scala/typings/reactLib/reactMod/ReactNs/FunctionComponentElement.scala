@@ -9,3 +9,18 @@ trait FunctionComponentElement[P] extends ReactElement[P] {
   var ref: js.UndefOr[js.Any] = js.undefined
 }
 
+object FunctionComponentElement {
+  @scala.inline
+  def apply[P](
+    props: P,
+    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any,
+    key: Key = null,
+    ref: js.Any = null
+  ): FunctionComponentElement[P] = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], `type` = `type`)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[FunctionComponentElement[P]]
+  }
+}
+

@@ -40,3 +40,28 @@ trait ServiceLinkedRoleState extends js.Object {
   val uniqueId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ServiceLinkedRoleState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    awsServiceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    createDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    customSuffix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    uniqueId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ServiceLinkedRoleState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (awsServiceName != null) __obj.updateDynamic("awsServiceName")(awsServiceName.asInstanceOf[js.Any])
+    if (createDate != null) __obj.updateDynamic("createDate")(createDate.asInstanceOf[js.Any])
+    if (customSuffix != null) __obj.updateDynamic("customSuffix")(customSuffix.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceLinkedRoleState]
+  }
+}
+

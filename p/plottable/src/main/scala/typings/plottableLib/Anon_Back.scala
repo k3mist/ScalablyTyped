@@ -45,3 +45,50 @@ trait Anon_Back extends js.Object {
   var sinOut: plottableLib.plottableLibStrings.sinOut
 }
 
+object Anon_Back {
+  @scala.inline
+  def apply(
+    back: plottableLib.plottableLibStrings.back,
+    backIn: plottableLib.plottableLibStrings.backIn,
+    backInOut: plottableLib.plottableLibStrings.backInOut,
+    backOut: plottableLib.plottableLibStrings.backOut,
+    bounce: plottableLib.plottableLibStrings.bounce,
+    bounceIn: plottableLib.plottableLibStrings.bounceIn,
+    bounceInOut: plottableLib.plottableLibStrings.bounceInOut,
+    bounceOut: plottableLib.plottableLibStrings.bounceOut,
+    circle: plottableLib.plottableLibStrings.circle,
+    circleIn: plottableLib.plottableLibStrings.circleIn,
+    circleInOut: plottableLib.plottableLibStrings.circleInOut,
+    circleOut: plottableLib.plottableLibStrings.circleOut,
+    cubic: plottableLib.plottableLibStrings.cubic,
+    cubicIn: plottableLib.plottableLibStrings.cubicIn,
+    cubicInOut: plottableLib.plottableLibStrings.cubicInOut,
+    cubicOut: plottableLib.plottableLibStrings.cubicOut,
+    elastic: plottableLib.plottableLibStrings.elastic,
+    elasticIn: plottableLib.plottableLibStrings.elasticIn,
+    elasticInOut: plottableLib.plottableLibStrings.elasticInOut,
+    elasticOut: plottableLib.plottableLibStrings.elasticOut,
+    exp: plottableLib.plottableLibStrings.exp,
+    expIn: plottableLib.plottableLibStrings.expIn,
+    expInOut: plottableLib.plottableLibStrings.expInOut,
+    expOut: plottableLib.plottableLibStrings.expOut,
+    linear: plottableLib.plottableLibStrings.linear,
+    poly: plottableLib.plottableLibStrings.poly,
+    polyIn: plottableLib.plottableLibStrings.polyIn,
+    polyInOut: plottableLib.plottableLibStrings.polyInOut,
+    polyOut: plottableLib.plottableLibStrings.polyOut,
+    quad: plottableLib.plottableLibStrings.quad,
+    quadIn: plottableLib.plottableLibStrings.quadIn,
+    quadInOut: plottableLib.plottableLibStrings.quadInOut,
+    quadOut: plottableLib.plottableLibStrings.quadOut,
+    sin: plottableLib.plottableLibStrings.sin,
+    sinIn: plottableLib.plottableLibStrings.sinIn,
+    sinInOut: plottableLib.plottableLibStrings.sinInOut,
+    sinOut: plottableLib.plottableLibStrings.sinOut
+  ): Anon_Back = {
+    val __obj = js.Dynamic.literal(back = back, backIn = backIn, backInOut = backInOut, backOut = backOut, bounce = bounce, bounceIn = bounceIn, bounceInOut = bounceInOut, bounceOut = bounceOut, circle = circle, circleIn = circleIn, circleInOut = circleInOut, circleOut = circleOut, cubic = cubic, cubicIn = cubicIn, cubicInOut = cubicInOut, cubicOut = cubicOut, elastic = elastic, elasticIn = elasticIn, elasticInOut = elasticInOut, elasticOut = elasticOut, exp = exp, expIn = expIn, expInOut = expInOut, expOut = expOut, linear = linear, poly = poly, polyIn = polyIn, polyInOut = polyInOut, polyOut = polyOut, quad = quad, quadIn = quadIn, quadInOut = quadInOut, quadOut = quadOut, sin = sin, sinIn = sinIn, sinInOut = sinInOut, sinOut = sinOut)
+  
+    __obj.asInstanceOf[Anon_Back]
+  }
+}
+

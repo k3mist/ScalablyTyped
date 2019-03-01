@@ -22,3 +22,16 @@ trait VpcEndpointServiceArgs extends js.Object {
   val networkLoadBalancerArns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
 }
 
+object VpcEndpointServiceArgs {
+  @scala.inline
+  def apply(
+    acceptanceRequired: atPulumiPulumiLib.resourceMod.Input[scala.Boolean],
+    networkLoadBalancerArns: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    allowedPrincipals: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): VpcEndpointServiceArgs = {
+    val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired.asInstanceOf[js.Any], networkLoadBalancerArns = networkLoadBalancerArns.asInstanceOf[js.Any])
+    if (allowedPrincipals != null) __obj.updateDynamic("allowedPrincipals")(allowedPrincipals.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointServiceArgs]
+  }
+}
+

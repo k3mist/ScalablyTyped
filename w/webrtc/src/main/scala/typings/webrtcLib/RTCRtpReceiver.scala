@@ -14,3 +14,15 @@ trait RTCRtpReceiver extends js.Object {
   def getParameters(): RTCRtpParameters
 }
 
+object RTCRtpReceiver {
+  @scala.inline
+  def apply(
+    getContributingSources: js.Function0[js.Array[RTCRtpContributingSource]],
+    getParameters: js.Function0[RTCRtpParameters]
+  ): RTCRtpReceiver = {
+    val __obj = js.Dynamic.literal(getContributingSources = getContributingSources, getParameters = getParameters)
+  
+    __obj.asInstanceOf[RTCRtpReceiver]
+  }
+}
+

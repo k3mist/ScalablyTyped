@@ -10,3 +10,15 @@ trait Anon_Hidden extends js.Object {
   var vertical: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden
 }
 
+object Anon_Hidden {
+  @scala.inline
+  def apply(
+    horizontal: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden,
+    vertical: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden
+  ): Anon_Hidden = {
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Hidden]
+  }
+}
+

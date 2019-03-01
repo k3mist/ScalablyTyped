@@ -35,3 +35,17 @@ trait ReplicaSetList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object ReplicaSetList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`,
+    items: js.Array[ReplicaSet],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): ReplicaSetList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[ReplicaSetList]
+  }
+}
+

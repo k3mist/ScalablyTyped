@@ -21,3 +21,19 @@ trait sizeCreateVisualVariablesParamsLegendOptions
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object sizeCreateVisualVariablesParamsLegendOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    showLegend: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null
+  ): sizeCreateVisualVariablesParamsLegendOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[sizeCreateVisualVariablesParamsLegendOptions]
+  }
+}
+

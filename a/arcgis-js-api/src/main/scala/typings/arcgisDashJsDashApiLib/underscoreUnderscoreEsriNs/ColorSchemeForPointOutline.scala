@@ -21,3 +21,18 @@ trait ColorSchemeForPointOutline
   var width: scala.Double
 }
 
+object ColorSchemeForPointOutline {
+  @scala.inline
+  def apply(
+    color: Color,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    width: scala.Double
+  ): ColorSchemeForPointOutline = {
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
+    __obj.asInstanceOf[ColorSchemeForPointOutline]
+  }
+}
+

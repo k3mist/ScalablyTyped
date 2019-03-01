@@ -21,3 +21,28 @@ trait IFileSavePicker extends js.Object {
   def pickSaveFileAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
 }
 
+object IFileSavePicker {
+  @scala.inline
+  def apply(
+    commitButtonText: java.lang.String,
+    continuationData: winrtLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet,
+    defaultFileExtension: java.lang.String,
+    fileTypeChoices: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMap[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
+    ],
+    pickSaveFileAndContinue: js.Function0[scala.Unit],
+    pickSaveFileAsync: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
+    ],
+    settingsIdentifier: java.lang.String,
+    suggestedFileName: java.lang.String,
+    suggestedSaveFile: winrtLib.WindowsNs.StorageNs.StorageFile,
+    suggestedStartLocation: PickerLocationId
+  ): IFileSavePicker = {
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, defaultFileExtension = defaultFileExtension, fileTypeChoices = fileTypeChoices, pickSaveFileAndContinue = pickSaveFileAndContinue, pickSaveFileAsync = pickSaveFileAsync, settingsIdentifier = settingsIdentifier, suggestedFileName = suggestedFileName, suggestedSaveFile = suggestedSaveFile, suggestedStartLocation = suggestedStartLocation)
+  
+    __obj.asInstanceOf[IFileSavePicker]
+  }
+}
+

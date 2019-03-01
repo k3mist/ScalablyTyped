@@ -24,3 +24,19 @@ trait TableFilterField extends js.Object {
   var StringValue: java.lang.String
 }
 
+object TableFilterField {
+  @scala.inline
+  def apply(
+    Connection: FilterConnection,
+    Field: scala.Double,
+    IsNumeric: scala.Boolean,
+    NumericValue: scala.Double,
+    Operator: FilterOperator,
+    StringValue: java.lang.String
+  ): TableFilterField = {
+    val __obj = js.Dynamic.literal(Connection = Connection, Field = Field, IsNumeric = IsNumeric, NumericValue = NumericValue, Operator = Operator, StringValue = StringValue)
+  
+    __obj.asInstanceOf[TableFilterField]
+  }
+}
+

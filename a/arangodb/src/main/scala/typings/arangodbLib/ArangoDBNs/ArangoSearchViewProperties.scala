@@ -15,3 +15,20 @@ trait ArangoSearchViewProperties extends js.Object {
   var `type`: arangodbLib.arangodbLibStrings.arangosearch
 }
 
+object ArangoSearchViewProperties {
+  @scala.inline
+  def apply(
+    cleanupIntervalStep: scala.Double,
+    consolidationIntervalMsec: scala.Double,
+    consolidationPolicy: arangodbLib.Anon_SegmentThreshold,
+    id: java.lang.String,
+    links: org.scalablytyped.runtime.StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]],
+    name: java.lang.String,
+    `type`: arangodbLib.arangodbLibStrings.arangosearch
+  ): ArangoSearchViewProperties = {
+    val __obj = js.Dynamic.literal(cleanupIntervalStep = cleanupIntervalStep, consolidationIntervalMsec = consolidationIntervalMsec, consolidationPolicy = consolidationPolicy, id = id, links = links, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[ArangoSearchViewProperties]
+  }
+}
+

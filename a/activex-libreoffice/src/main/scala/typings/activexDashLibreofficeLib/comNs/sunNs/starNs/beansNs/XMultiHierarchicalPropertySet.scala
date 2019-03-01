@@ -54,3 +54,27 @@ trait XMultiHierarchicalPropertySet
   ): scala.Unit
 }
 
+object XMultiHierarchicalPropertySet {
+  @scala.inline
+  def apply(
+    HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    getHierarchicalPropertySetInfo: js.Function0[XHierarchicalPropertySetInfo],
+    getHierarchicalPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setHierarchicalPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ]
+  ): XMultiHierarchicalPropertySet = {
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = acquire, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValues = getHierarchicalPropertyValues, queryInterface = queryInterface, release = release, setHierarchicalPropertyValues = setHierarchicalPropertyValues)
+  
+    __obj.asInstanceOf[XMultiHierarchicalPropertySet]
+  }
+}
+

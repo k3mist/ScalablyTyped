@@ -14,3 +14,19 @@ trait NamespaceHelpSchema extends js.Object {
   val summary: java.lang.String
 }
 
+object NamespaceHelpSchema {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String],
+    commands: js.Array[CommandHelpSchema],
+    description: java.lang.String,
+    groups: js.Array[java.lang.String],
+    name: java.lang.String,
+    summary: java.lang.String
+  ): NamespaceHelpSchema = {
+    val __obj = js.Dynamic.literal(aliases = aliases, commands = commands, description = description, groups = groups, name = name, summary = summary)
+  
+    __obj.asInstanceOf[NamespaceHelpSchema]
+  }
+}
+

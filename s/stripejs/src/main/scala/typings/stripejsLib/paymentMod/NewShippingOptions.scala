@@ -17,3 +17,15 @@ trait NewShippingOptions extends js.Object {
   def updateWith(dataToUpdate: UpdateOptions): scala.Unit
 }
 
+object NewShippingOptions {
+  @scala.inline
+  def apply(
+    shippingOption: stripejsLib.shippingMod.ShippingOption,
+    updateWith: js.Function1[UpdateOptions, scala.Unit]
+  ): NewShippingOptions = {
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = updateWith)
+  
+    __obj.asInstanceOf[NewShippingOptions]
+  }
+}
+

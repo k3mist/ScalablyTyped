@@ -12,3 +12,17 @@ trait Entities extends js.Object {
   var user_mentions: js.Array[UserMentionEntity]
 }
 
+object Entities {
+  @scala.inline
+  def apply(
+    hashtags: js.Array[HashtagEntity],
+    media: js.Array[MediaEntity],
+    urls: js.Array[UrlEntity],
+    user_mentions: js.Array[UserMentionEntity]
+  ): Entities = {
+    val __obj = js.Dynamic.literal(hashtags = hashtags, media = media, urls = urls, user_mentions = user_mentions)
+  
+    __obj.asInstanceOf[Entities]
+  }
+}
+

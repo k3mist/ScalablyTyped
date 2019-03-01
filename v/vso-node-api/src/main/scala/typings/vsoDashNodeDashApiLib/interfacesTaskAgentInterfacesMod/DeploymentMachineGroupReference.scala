@@ -12,3 +12,12 @@ trait DeploymentMachineGroupReference extends js.Object {
   var project: ProjectReference
 }
 
+object DeploymentMachineGroupReference {
+  @scala.inline
+  def apply(id: scala.Double, name: java.lang.String, pool: TaskAgentPoolReference, project: ProjectReference): DeploymentMachineGroupReference = {
+    val __obj = js.Dynamic.literal(id = id, name = name, pool = pool, project = project)
+  
+    __obj.asInstanceOf[DeploymentMachineGroupReference]
+  }
+}
+

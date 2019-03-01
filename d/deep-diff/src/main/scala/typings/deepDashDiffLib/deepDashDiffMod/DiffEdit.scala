@@ -12,3 +12,12 @@ trait DiffEdit[LHS, RHS] extends Diff[LHS, RHS] {
   var rhs: RHS
 }
 
+object DiffEdit {
+  @scala.inline
+  def apply[LHS, RHS](kind: deepDashDiffLib.deepDashDiffLibStrings.E, lhs: LHS, rhs: RHS, path: js.Array[_] = null): DiffEdit[LHS, RHS] = {
+    val __obj = js.Dynamic.literal(kind = kind, lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[DiffEdit[LHS, RHS]]
+  }
+}
+

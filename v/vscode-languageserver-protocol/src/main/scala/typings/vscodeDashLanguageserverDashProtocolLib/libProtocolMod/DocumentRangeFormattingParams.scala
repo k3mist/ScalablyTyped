@@ -20,3 +20,16 @@ trait DocumentRangeFormattingParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object DocumentRangeFormattingParams {
+  @scala.inline
+  def apply(
+    options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FormattingOptions,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): DocumentRangeFormattingParams = {
+    val __obj = js.Dynamic.literal(options = options, range = range, textDocument = textDocument)
+  
+    __obj.asInstanceOf[DocumentRangeFormattingParams]
+  }
+}
+

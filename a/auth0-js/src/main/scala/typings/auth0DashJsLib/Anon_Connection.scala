@@ -14,3 +14,12 @@ trait Anon_Connection extends js.Object {
   var password: java.lang.String
 }
 
+object Anon_Connection {
+  @scala.inline
+  def apply(connection: java.lang.String, email: java.lang.String, password: java.lang.String): Anon_Connection = {
+    val __obj = js.Dynamic.literal(connection = connection, email = email, password = password)
+  
+    __obj.asInstanceOf[Anon_Connection]
+  }
+}
+

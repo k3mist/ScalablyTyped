@@ -16,3 +16,12 @@ trait RelativeDateFilterOptions extends js.Object {
   var rangeType: DateRangeType
 }
 
+object RelativeDateFilterOptions {
+  @scala.inline
+  def apply(anchorDate: stdLib.Date, periodType: PeriodType, rangeN: scala.Double, rangeType: DateRangeType): RelativeDateFilterOptions = {
+    val __obj = js.Dynamic.literal(anchorDate = anchorDate, periodType = periodType, rangeN = rangeN, rangeType = rangeType)
+  
+    __obj.asInstanceOf[RelativeDateFilterOptions]
+  }
+}
+

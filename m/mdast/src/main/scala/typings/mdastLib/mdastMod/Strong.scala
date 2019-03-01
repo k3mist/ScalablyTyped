@@ -14,3 +14,18 @@ trait Strong
   var type_Strong: mdastLib.mdastLibStrings.strong
 }
 
+object Strong {
+  @scala.inline
+  def apply(
+    children: js.Array[PhrasingContent],
+    `type`: mdastLib.mdastLibStrings.strong,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null
+  ): Strong = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Strong]
+  }
+}
+

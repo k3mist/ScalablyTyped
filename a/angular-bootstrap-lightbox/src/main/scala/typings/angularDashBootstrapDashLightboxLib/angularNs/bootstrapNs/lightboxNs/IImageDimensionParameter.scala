@@ -12,3 +12,17 @@ trait IImageDimensionParameter extends js.Object {
   var windowWidth: scala.Double
 }
 
+object IImageDimensionParameter {
+  @scala.inline
+  def apply(
+    imageHeight: scala.Double,
+    imageWidth: scala.Double,
+    windowHeight: scala.Double,
+    windowWidth: scala.Double
+  ): IImageDimensionParameter = {
+    val __obj = js.Dynamic.literal(imageHeight = imageHeight, imageWidth = imageWidth, windowHeight = windowHeight, windowWidth = windowWidth)
+  
+    __obj.asInstanceOf[IImageDimensionParameter]
+  }
+}
+

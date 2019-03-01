@@ -26,3 +26,19 @@ trait XGrid
   def setCurrentColumnPosition(nPos: scala.Double): scala.Unit
 }
 
+object XGrid {
+  @scala.inline
+  def apply(
+    CurrentColumnPosition: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getCurrentColumnPosition: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCurrentColumnPosition: js.Function1[scala.Double, scala.Unit]
+  ): XGrid = {
+    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = acquire, getCurrentColumnPosition = getCurrentColumnPosition, queryInterface = queryInterface, release = release, setCurrentColumnPosition = setCurrentColumnPosition)
+  
+    __obj.asInstanceOf[XGrid]
+  }
+}
+

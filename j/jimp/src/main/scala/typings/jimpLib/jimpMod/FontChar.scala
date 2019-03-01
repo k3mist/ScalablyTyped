@@ -18,3 +18,23 @@ trait FontChar extends js.Object {
   var yoffset: scala.Double
 }
 
+object FontChar {
+  @scala.inline
+  def apply(
+    chnl: scala.Double,
+    height: scala.Double,
+    id: scala.Double,
+    page: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    xadvance: scala.Double,
+    xoffset: scala.Double,
+    y: scala.Double,
+    yoffset: scala.Double
+  ): FontChar = {
+    val __obj = js.Dynamic.literal(chnl = chnl, height = height, id = id, page = page, width = width, x = x, xadvance = xadvance, xoffset = xoffset, y = y, yoffset = yoffset)
+  
+    __obj.asInstanceOf[FontChar]
+  }
+}
+

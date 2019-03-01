@@ -17,3 +17,23 @@ trait FieldArrayMetaProps extends js.Object {
   var warning: js.UndefOr[js.Any] = js.undefined
 }
 
+object FieldArrayMetaProps {
+  @scala.inline
+  def apply(
+    dirty: scala.Boolean,
+    form: java.lang.String,
+    invalid: scala.Boolean,
+    pristine: scala.Boolean,
+    submitFailed: scala.Boolean,
+    submitting: scala.Boolean,
+    valid: scala.Boolean,
+    error: js.Any = null,
+    warning: js.Any = null
+  ): FieldArrayMetaProps = {
+    val __obj = js.Dynamic.literal(dirty = dirty, form = form, invalid = invalid, pristine = pristine, submitFailed = submitFailed, submitting = submitting, valid = valid)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[FieldArrayMetaProps]
+  }
+}
+

@@ -66,3 +66,24 @@ trait ModalOptions extends js.Object {
   def onOpenStart(`this`: Modal, el: stdLib.Element): scala.Unit
 }
 
+object ModalOptions {
+  @scala.inline
+  def apply(
+    dismissible: scala.Boolean,
+    endingTop: java.lang.String,
+    inDuration: scala.Double,
+    onCloseEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Modal, stdLib.Element, scala.Unit],
+    opacity: scala.Double,
+    outDuration: scala.Double,
+    preventScrolling: scala.Boolean,
+    startingTop: java.lang.String
+  ): ModalOptions = {
+    val __obj = js.Dynamic.literal(dismissible = dismissible, endingTop = endingTop, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, opacity = opacity, outDuration = outDuration, preventScrolling = preventScrolling, startingTop = startingTop)
+  
+    __obj.asInstanceOf[ModalOptions]
+  }
+}
+

@@ -20,3 +20,12 @@ trait GitImportStatusDetail extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object GitImportStatusDetail {
+  @scala.inline
+  def apply(allSteps: js.Array[java.lang.String], currentStep: scala.Double, errorMessage: java.lang.String): GitImportStatusDetail = {
+    val __obj = js.Dynamic.literal(allSteps = allSteps, currentStep = currentStep, errorMessage = errorMessage)
+  
+    __obj.asInstanceOf[GitImportStatusDetail]
+  }
+}
+

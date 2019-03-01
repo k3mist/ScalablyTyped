@@ -121,3 +121,40 @@ trait Guide extends js.Object {
   var valueAxis: amchartsLib.valueaxisMod.default
 }
 
+object Guide {
+  @scala.inline
+  def apply(
+    above: scala.Boolean,
+    angle: scala.Double,
+    balloonColor: java.lang.String,
+    balloonText: java.lang.String,
+    boldLabel: scala.Boolean,
+    category: java.lang.String,
+    dashLength: scala.Double,
+    date: stdLib.Date,
+    expand: scala.Boolean,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    id: java.lang.String,
+    inside: scala.Boolean,
+    label: java.lang.String,
+    labelRotation: scala.Double,
+    lineAlpha: scala.Double,
+    lineColor: java.lang.String,
+    lineThickness: scala.Double,
+    position: java.lang.String,
+    tickLength: scala.Double,
+    toAngle: scala.Double,
+    toCategory: java.lang.String,
+    toDate: stdLib.Date,
+    toValue: scala.Double,
+    value: scala.Double,
+    valueAxis: amchartsLib.valueaxisMod.default
+  ): Guide = {
+    val __obj = js.Dynamic.literal(above = above, angle = angle, balloonColor = balloonColor, balloonText = balloonText, boldLabel = boldLabel, category = category, dashLength = dashLength, date = date, expand = expand, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, id = id, inside = inside, label = label, labelRotation = labelRotation, lineAlpha = lineAlpha, lineColor = lineColor, lineThickness = lineThickness, position = position, tickLength = tickLength, toAngle = toAngle, toCategory = toCategory, toDate = toDate, toValue = toValue, value = value, valueAxis = valueAxis)
+  
+    __obj.asInstanceOf[Guide]
+  }
+}
+

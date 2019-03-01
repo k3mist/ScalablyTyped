@@ -12,3 +12,12 @@ trait HandleGeneratorInfo extends js.Object {
   var value: scala.Double
 }
 
+object HandleGeneratorInfo {
+  @scala.inline
+  def apply(dragging: scala.Boolean, index: scala.Double, rest: js.Array[_], value: scala.Double): HandleGeneratorInfo = {
+    val __obj = js.Dynamic.literal(dragging = dragging, index = index, rest = rest, value = value)
+  
+    __obj.asInstanceOf[HandleGeneratorInfo]
+  }
+}
+

@@ -10,3 +10,18 @@ trait Window extends js.Object {
   def browserReportSync(): ReportResult
 }
 
+object Window {
+  @scala.inline
+  def apply(
+    browserReport: js.Function1[
+      js.Function2[/* error */ stdLib.ErrorEvent, /* report */ ReportResult, _], 
+      scala.Unit
+    ],
+    browserReportSync: js.Function0[ReportResult]
+  ): Window = {
+    val __obj = js.Dynamic.literal(browserReport = browserReport, browserReportSync = browserReportSync)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

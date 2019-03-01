@@ -10,3 +10,12 @@ trait Anon_AndroidWriteKey extends js.Object {
   var iosWriteKey: java.lang.String
 }
 
+object Anon_AndroidWriteKey {
+  @scala.inline
+  def apply(androidWriteKey: java.lang.String, iosWriteKey: java.lang.String): Anon_AndroidWriteKey = {
+    val __obj = js.Dynamic.literal(androidWriteKey = androidWriteKey, iosWriteKey = iosWriteKey)
+  
+    __obj.asInstanceOf[Anon_AndroidWriteKey]
+  }
+}
+

@@ -96,3 +96,28 @@ trait PlaceSearchResult extends js.Object {
   var vicinity: scala.Double
 }
 
+object PlaceSearchResult {
+  @scala.inline
+  def apply(
+    alt_ids: js.Array[AlternativePlaceId],
+    formatted_address: java.lang.String,
+    geometry: AddressGeometry,
+    icon: java.lang.String,
+    name: java.lang.String,
+    opening_hours: OpeningHours,
+    permanently_closed: scala.Boolean,
+    photos: js.Array[PlacePhoto],
+    place_id: java.lang.String,
+    plus_code: PlusCode,
+    price_level: scala.Double,
+    rating: scala.Double,
+    scope: PlaceIdScope,
+    types: js.Array[PlaceType1 | PlaceType2],
+    vicinity: scala.Double
+  ): PlaceSearchResult = {
+    val __obj = js.Dynamic.literal(alt_ids = alt_ids, formatted_address = formatted_address, geometry = geometry, icon = icon, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, scope = scope, types = types, vicinity = vicinity)
+  
+    __obj.asInstanceOf[PlaceSearchResult]
+  }
+}
+

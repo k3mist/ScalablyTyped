@@ -11,3 +11,12 @@ trait CallAction extends Action {
   var `type`: ActionTypes
 }
 
+object CallAction {
+  @scala.inline
+  def apply(args: js.Array[mongoritoLib.Anon_Args], method: java.lang.String, `type`: ActionTypes): CallAction = {
+    val __obj = js.Dynamic.literal(args = args, method = method, `type` = `type`)
+  
+    __obj.asInstanceOf[CallAction]
+  }
+}
+

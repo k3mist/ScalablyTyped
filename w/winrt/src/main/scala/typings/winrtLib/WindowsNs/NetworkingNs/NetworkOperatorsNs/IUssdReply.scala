@@ -10,3 +10,12 @@ trait IUssdReply extends js.Object {
   var resultCode: UssdResultCode
 }
 
+object IUssdReply {
+  @scala.inline
+  def apply(message: UssdMessage, resultCode: UssdResultCode): IUssdReply = {
+    val __obj = js.Dynamic.literal(message = message, resultCode = resultCode)
+  
+    __obj.asInstanceOf[IUssdReply]
+  }
+}
+

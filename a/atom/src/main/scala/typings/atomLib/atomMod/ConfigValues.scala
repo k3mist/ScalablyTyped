@@ -201,3 +201,121 @@ trait ConfigValues
   var `editor.zoomFontWhenCtrlScrolling`: scala.Boolean
 }
 
+object ConfigValues {
+  @scala.inline
+  def apply(
+    `core.allowPendingPaneItems`: scala.Boolean,
+    `core.audioBeep`: scala.Boolean,
+    `core.automaticallyUpdate`: scala.Boolean,
+    `core.closeDeletedFileTabs`: scala.Boolean,
+    `core.closeEmptyWindows`: scala.Boolean,
+    `core.colorProfile`: atomLib.atomLibStrings.default | atomLib.atomLibStrings.srgb,
+    `core.customFileTypes`: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
+    `core.destroyEmptyPanes`: scala.Boolean,
+    `core.disabledPackages`: js.Array[java.lang.String],
+    `core.excludeVcsIgnoredPaths`: scala.Boolean,
+    `core.fileEncoding`: FileEncoding,
+    `core.fileSystemWatcher`: atomLib.atomLibStrings.native | atomLib.atomLibStrings.experimental | atomLib.atomLibStrings.poll | atomLib.atomLibStrings.atom,
+    `core.followSymlinks`: scala.Boolean,
+    `core.ignoredNames`: js.Array[java.lang.String],
+    `core.openEmptyEditorOnStart`: scala.Boolean,
+    `core.reopenProjectMenuCount`: scala.Double,
+    `core.restorePreviousWindowsOnStart`: atomLib.atomLibStrings.no | atomLib.atomLibStrings.yes | atomLib.atomLibStrings.always,
+    `core.telemetryConsent`: atomLib.atomLibStrings.limited | atomLib.atomLibStrings.no | atomLib.atomLibStrings.undecided,
+    `core.themes`: js.Array[java.lang.String],
+    `core.useProxySettingsWhenCallingApm`: scala.Boolean,
+    `core.useTreeSitterParsers`: scala.Boolean,
+    `core.versionPinnedPackages`: js.Array[java.lang.String],
+    `core.warnOnLargeFileLimit`: scala.Double,
+    `editor.atomicSoftTabs`: scala.Boolean,
+    `editor.autoIndent`: scala.Boolean,
+    `editor.autoIndentOnPaste`: scala.Boolean,
+    `editor.confirmCheckoutHeadRevision`: scala.Boolean,
+    `editor.fontFamily`: java.lang.String,
+    `editor.fontSize`: scala.Double,
+    `editor.invisibles`: Invisibles,
+    `editor.lineHeight`: java.lang.String | scala.Double,
+    `editor.maxScreenLineLength`: scala.Double,
+    `editor.nonWordCharacters`: java.lang.String,
+    `editor.preferredLineLength`: scala.Double,
+    `editor.scrollPastEnd`: scala.Boolean,
+    `editor.scrollSensitivity`: scala.Double,
+    `editor.showCursorOnSelection`: scala.Boolean,
+    `editor.showIndentGuide`: scala.Boolean,
+    `editor.showInvisibles`: scala.Boolean,
+    `editor.showLineNumbers`: scala.Boolean,
+    `editor.softTabs`: scala.Boolean,
+    `editor.softWrap`: scala.Boolean,
+    `editor.softWrapAtPreferredLineLength`: scala.Boolean,
+    `editor.softWrapHangingIndent`: scala.Double,
+    `editor.tabLength`: scala.Double,
+    `editor.tabType`: atomLib.atomLibStrings.auto | atomLib.atomLibStrings.soft | atomLib.atomLibStrings.hard,
+    `editor.undoGroupingInterval`: scala.Double,
+    `editor.zoomFontWhenCtrlScrolling`: scala.Boolean,
+    StringDictionary: // tslint:disable-next-line:no-any
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    `editor.commentEnd`: java.lang.String = null,
+    `editor.commentStart`: java.lang.String = null,
+    `editor.decreaseIndentPattern`: java.lang.String = null,
+    `editor.foldEndPattern`: java.lang.String = null,
+    `editor.increaseIndentPattern`: java.lang.String = null
+  ): ConfigValues = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("core.allowPendingPaneItems")(`core.allowPendingPaneItems`)
+    __obj.updateDynamic("core.audioBeep")(`core.audioBeep`)
+    __obj.updateDynamic("core.automaticallyUpdate")(`core.automaticallyUpdate`)
+    __obj.updateDynamic("core.closeDeletedFileTabs")(`core.closeDeletedFileTabs`)
+    __obj.updateDynamic("core.closeEmptyWindows")(`core.closeEmptyWindows`)
+    __obj.updateDynamic("core.colorProfile")(`core.colorProfile`.asInstanceOf[js.Any])
+    __obj.updateDynamic("core.customFileTypes")(`core.customFileTypes`)
+    __obj.updateDynamic("core.destroyEmptyPanes")(`core.destroyEmptyPanes`)
+    __obj.updateDynamic("core.disabledPackages")(`core.disabledPackages`)
+    __obj.updateDynamic("core.excludeVcsIgnoredPaths")(`core.excludeVcsIgnoredPaths`)
+    __obj.updateDynamic("core.fileEncoding")(`core.fileEncoding`)
+    __obj.updateDynamic("core.fileSystemWatcher")(`core.fileSystemWatcher`.asInstanceOf[js.Any])
+    __obj.updateDynamic("core.followSymlinks")(`core.followSymlinks`)
+    __obj.updateDynamic("core.ignoredNames")(`core.ignoredNames`)
+    __obj.updateDynamic("core.openEmptyEditorOnStart")(`core.openEmptyEditorOnStart`)
+    __obj.updateDynamic("core.reopenProjectMenuCount")(`core.reopenProjectMenuCount`)
+    __obj.updateDynamic("core.restorePreviousWindowsOnStart")(`core.restorePreviousWindowsOnStart`.asInstanceOf[js.Any])
+    __obj.updateDynamic("core.telemetryConsent")(`core.telemetryConsent`.asInstanceOf[js.Any])
+    __obj.updateDynamic("core.themes")(`core.themes`)
+    __obj.updateDynamic("core.useProxySettingsWhenCallingApm")(`core.useProxySettingsWhenCallingApm`)
+    __obj.updateDynamic("core.useTreeSitterParsers")(`core.useTreeSitterParsers`)
+    __obj.updateDynamic("core.versionPinnedPackages")(`core.versionPinnedPackages`)
+    __obj.updateDynamic("core.warnOnLargeFileLimit")(`core.warnOnLargeFileLimit`)
+    __obj.updateDynamic("editor.atomicSoftTabs")(`editor.atomicSoftTabs`)
+    __obj.updateDynamic("editor.autoIndent")(`editor.autoIndent`)
+    __obj.updateDynamic("editor.autoIndentOnPaste")(`editor.autoIndentOnPaste`)
+    __obj.updateDynamic("editor.confirmCheckoutHeadRevision")(`editor.confirmCheckoutHeadRevision`)
+    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`)
+    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`)
+    __obj.updateDynamic("editor.invisibles")(`editor.invisibles`)
+    __obj.updateDynamic("editor.lineHeight")(`editor.lineHeight`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.maxScreenLineLength")(`editor.maxScreenLineLength`)
+    __obj.updateDynamic("editor.nonWordCharacters")(`editor.nonWordCharacters`)
+    __obj.updateDynamic("editor.preferredLineLength")(`editor.preferredLineLength`)
+    __obj.updateDynamic("editor.scrollPastEnd")(`editor.scrollPastEnd`)
+    __obj.updateDynamic("editor.scrollSensitivity")(`editor.scrollSensitivity`)
+    __obj.updateDynamic("editor.showCursorOnSelection")(`editor.showCursorOnSelection`)
+    __obj.updateDynamic("editor.showIndentGuide")(`editor.showIndentGuide`)
+    __obj.updateDynamic("editor.showInvisibles")(`editor.showInvisibles`)
+    __obj.updateDynamic("editor.showLineNumbers")(`editor.showLineNumbers`)
+    __obj.updateDynamic("editor.softTabs")(`editor.softTabs`)
+    __obj.updateDynamic("editor.softWrap")(`editor.softWrap`)
+    __obj.updateDynamic("editor.softWrapAtPreferredLineLength")(`editor.softWrapAtPreferredLineLength`)
+    __obj.updateDynamic("editor.softWrapHangingIndent")(`editor.softWrapHangingIndent`)
+    __obj.updateDynamic("editor.tabLength")(`editor.tabLength`)
+    __obj.updateDynamic("editor.tabType")(`editor.tabType`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.undoGroupingInterval")(`editor.undoGroupingInterval`)
+    __obj.updateDynamic("editor.zoomFontWhenCtrlScrolling")(`editor.zoomFontWhenCtrlScrolling`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`editor.commentEnd` != null) __obj.updateDynamic("editor.commentEnd")(`editor.commentEnd`)
+    if (`editor.commentStart` != null) __obj.updateDynamic("editor.commentStart")(`editor.commentStart`)
+    if (`editor.decreaseIndentPattern` != null) __obj.updateDynamic("editor.decreaseIndentPattern")(`editor.decreaseIndentPattern`)
+    if (`editor.foldEndPattern` != null) __obj.updateDynamic("editor.foldEndPattern")(`editor.foldEndPattern`)
+    if (`editor.increaseIndentPattern` != null) __obj.updateDynamic("editor.increaseIndentPattern")(`editor.increaseIndentPattern`)
+    __obj.asInstanceOf[ConfigValues]
+  }
+}
+

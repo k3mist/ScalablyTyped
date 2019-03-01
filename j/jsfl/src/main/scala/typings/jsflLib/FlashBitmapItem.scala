@@ -18,3 +18,23 @@ trait FlashBitmapItem extends js.Object {
   def exportToFile(fileURI: java.lang.String): scala.Boolean
 }
 
+object FlashBitmapItem {
+  @scala.inline
+  def apply(
+    allowSmoothing: scala.Boolean,
+    compressionType: java.lang.String,
+    exportToFile: js.Function1[java.lang.String, scala.Boolean],
+    fileLastModifiedDate: java.lang.String,
+    originalCompressionType: java.lang.String,
+    sourceFileExists: scala.Boolean,
+    sourceFileIsCurrent: scala.Boolean,
+    sourceFilePath: java.lang.String,
+    useDeblocking: scala.Boolean,
+    useImportedJPEGQuality: scala.Boolean
+  ): FlashBitmapItem = {
+    val __obj = js.Dynamic.literal(allowSmoothing = allowSmoothing, compressionType = compressionType, exportToFile = exportToFile, fileLastModifiedDate = fileLastModifiedDate, originalCompressionType = originalCompressionType, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, useDeblocking = useDeblocking, useImportedJPEGQuality = useImportedJPEGQuality)
+  
+    __obj.asInstanceOf[FlashBitmapItem]
+  }
+}
+

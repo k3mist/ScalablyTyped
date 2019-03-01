@@ -21,3 +21,26 @@ trait Callback extends js.Object {
   ): scala.Unit
 }
 
+object Callback {
+  @scala.inline
+  def apply(
+    invalidateDrawable: js.Function1[androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, scala.Unit],
+    scheduleDrawable: js.Function3[
+      androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, 
+      androiduixLib.javaNs.langNs.Runnable, 
+      scala.Double, 
+      scala.Unit
+    ],
+    unscheduleDrawable: js.Function2[
+      androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, 
+      androiduixLib.javaNs.langNs.Runnable, 
+      scala.Unit
+    ],
+    drawableSizeChange: js.Function1[/* who */ androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, scala.Unit] = null
+  ): Callback = {
+    val __obj = js.Dynamic.literal(invalidateDrawable = invalidateDrawable, scheduleDrawable = scheduleDrawable, unscheduleDrawable = unscheduleDrawable)
+    if (drawableSizeChange != null) __obj.updateDynamic("drawableSizeChange")(drawableSizeChange)
+    __obj.asInstanceOf[Callback]
+  }
+}
+

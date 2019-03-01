@@ -23,3 +23,19 @@ trait RealBezierSegment2D extends js.Object {
   var Py: scala.Double
 }
 
+object RealBezierSegment2D {
+  @scala.inline
+  def apply(
+    C1x: scala.Double,
+    C1y: scala.Double,
+    C2x: scala.Double,
+    C2y: scala.Double,
+    Px: scala.Double,
+    Py: scala.Double
+  ): RealBezierSegment2D = {
+    val __obj = js.Dynamic.literal(C1x = C1x, C1y = C1y, C2x = C2x, C2y = C2y, Px = Px, Py = Py)
+  
+    __obj.asInstanceOf[RealBezierSegment2D]
+  }
+}
+

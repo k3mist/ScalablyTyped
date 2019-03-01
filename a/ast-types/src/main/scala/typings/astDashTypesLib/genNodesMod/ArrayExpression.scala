@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ArrayExpression
 }
 
+object ArrayExpression {
+  @scala.inline
+  def apply(
+    elements: js.Array[
+      astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind | astDashTypesLib.genKindsMod.RestElementKind | scala.Null
+    ],
+    `type`: astDashTypesLib.astDashTypesLibStrings.ArrayExpression
+  ): ArrayExpression = {
+    val __obj = js.Dynamic.literal(elements = elements, `type` = `type`)
+  
+    __obj.asInstanceOf[ArrayExpression]
+  }
+}
+

@@ -29,3 +29,21 @@ trait SceneViewConstraintsClipDistanceProperties
   var near: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SceneViewConstraintsClipDistanceProperties {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    far: scala.Int | scala.Double = null,
+    mode: java.lang.String = null,
+    near: scala.Int | scala.Double = null
+  ): SceneViewConstraintsClipDistanceProperties = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (far != null) __obj.updateDynamic("far")(far.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (near != null) __obj.updateDynamic("near")(near.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneViewConstraintsClipDistanceProperties]
+  }
+}
+

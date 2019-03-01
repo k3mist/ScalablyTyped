@@ -24,3 +24,17 @@ trait XCachedPrimitive
   def redraw(aState: ViewState): scala.Double
 }
 
+object XCachedPrimitive {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    redraw: js.Function1[ViewState, scala.Double],
+    release: js.Function0[scala.Unit]
+  ): XCachedPrimitive = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, redraw = redraw, release = release)
+  
+    __obj.asInstanceOf[XCachedPrimitive]
+  }
+}
+

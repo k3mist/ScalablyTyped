@@ -10,3 +10,12 @@ trait Anon_EAGER extends js.Object {
   var LAZY: java.lang.String
 }
 
+object Anon_EAGER {
+  @scala.inline
+  def apply(EAGER: java.lang.String, LAZY: java.lang.String): Anon_EAGER = {
+    val __obj = js.Dynamic.literal(EAGER = EAGER, LAZY = LAZY)
+  
+    __obj.asInstanceOf[Anon_EAGER]
+  }
+}
+

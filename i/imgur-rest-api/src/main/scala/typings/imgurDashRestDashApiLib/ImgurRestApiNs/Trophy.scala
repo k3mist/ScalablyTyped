@@ -16,3 +16,21 @@ trait Trophy extends js.Object {
   var name_clean: java.lang.String
 }
 
+object Trophy {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    data_link: java.lang.String,
+    datetime: scala.Double,
+    description: java.lang.String,
+    id: scala.Double,
+    image: java.lang.String,
+    name: java.lang.String,
+    name_clean: java.lang.String
+  ): Trophy = {
+    val __obj = js.Dynamic.literal(data = data, data_link = data_link, datetime = datetime, description = description, id = id, image = image, name = name, name_clean = name_clean)
+  
+    __obj.asInstanceOf[Trophy]
+  }
+}
+

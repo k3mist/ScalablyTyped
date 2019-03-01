@@ -45,3 +45,24 @@ trait ShareLinkContent extends ShareContent {
   var quote: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShareLinkContent {
+  @scala.inline
+  def apply(
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.link,
+    contentUrl: java.lang.String,
+    commonParameters: ShareContentCommonParameters = null,
+    contentDescription: java.lang.String = null,
+    contentTitle: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    quote: java.lang.String = null
+  ): ShareLinkContent = {
+    val __obj = js.Dynamic.literal(contentType = contentType, contentUrl = contentUrl)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    __obj.asInstanceOf[ShareLinkContent]
+  }
+}
+

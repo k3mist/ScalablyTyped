@@ -10,3 +10,12 @@ trait Catalog extends js.Object {
   var messages: Messages
 }
 
+object Catalog {
+  @scala.inline
+  def apply(messages: Messages, languageData: LanguageData = null): Catalog = {
+    val __obj = js.Dynamic.literal(messages = messages)
+    if (languageData != null) __obj.updateDynamic("languageData")(languageData)
+    __obj.asInstanceOf[Catalog]
+  }
+}
+

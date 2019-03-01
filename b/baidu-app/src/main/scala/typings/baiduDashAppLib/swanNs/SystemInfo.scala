@@ -39,3 +39,27 @@ trait SystemInfo extends js.Object {
   var windowWidth: scala.Double
 }
 
+object SystemInfo {
+  @scala.inline
+  def apply(
+    SDKVersion: java.lang.String,
+    brand: java.lang.String,
+    fontSizeSetting: scala.Double,
+    language: java.lang.String,
+    model: java.lang.String,
+    pixelRatio: scala.Double,
+    platform: java.lang.String,
+    screenHeight: scala.Double,
+    screenWidth: scala.Double,
+    statusBarHeight: scala.Double,
+    system: java.lang.String,
+    version: java.lang.String,
+    windowHeight: scala.Double,
+    windowWidth: scala.Double
+  ): SystemInfo = {
+    val __obj = js.Dynamic.literal(SDKVersion = SDKVersion, brand = brand, fontSizeSetting = fontSizeSetting, language = language, model = model, pixelRatio = pixelRatio, platform = platform, screenHeight = screenHeight, screenWidth = screenWidth, statusBarHeight = statusBarHeight, system = system, version = version, windowHeight = windowHeight, windowWidth = windowWidth)
+  
+    __obj.asInstanceOf[SystemInfo]
+  }
+}
+

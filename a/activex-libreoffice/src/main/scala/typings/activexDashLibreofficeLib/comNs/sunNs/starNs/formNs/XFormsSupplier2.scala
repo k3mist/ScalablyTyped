@@ -19,3 +19,19 @@ trait XFormsSupplier2 extends XFormsSupplier {
   def hasForms(): scala.Boolean
 }
 
+object XFormsSupplier2 {
+  @scala.inline
+  def apply(
+    Forms: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    getForms: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    hasForms: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFormsSupplier2 = {
+    val __obj = js.Dynamic.literal(Forms = Forms, acquire = acquire, getForms = getForms, hasForms = hasForms, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFormsSupplier2]
+  }
+}
+

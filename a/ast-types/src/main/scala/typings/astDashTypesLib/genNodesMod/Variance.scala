@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.Variance
 }
 
+object Variance {
+  @scala.inline
+  def apply(
+    kind: astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus,
+    `type`: astDashTypesLib.astDashTypesLibStrings.Variance
+  ): Variance = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[Variance]
+  }
+}
+

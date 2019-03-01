@@ -24,3 +24,19 @@ trait WorkItemTemplateReference extends WorkItemTrackingResource {
   var workItemTypeName: java.lang.String
 }
 
+object WorkItemTemplateReference {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    url: java.lang.String,
+    workItemTypeName: java.lang.String
+  ): WorkItemTemplateReference = {
+    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, name = name, url = url, workItemTypeName = workItemTypeName)
+  
+    __obj.asInstanceOf[WorkItemTemplateReference]
+  }
+}
+

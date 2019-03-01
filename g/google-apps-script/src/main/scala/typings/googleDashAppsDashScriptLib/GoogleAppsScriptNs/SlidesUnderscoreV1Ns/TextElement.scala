@@ -22,3 +22,16 @@ trait TextElement extends js.Object {
   var start_index: scala.Double
 }
 
+object TextElement {
+  @scala.inline
+  def apply(
+    end_index: scala.Double,
+    kind: googleDashAppsDashScriptLib.Anon_Autotext,
+    start_index: scala.Double
+  ): TextElement = {
+    val __obj = js.Dynamic.literal(end_index = end_index, kind = kind, start_index = start_index)
+  
+    __obj.asInstanceOf[TextElement]
+  }
+}
+

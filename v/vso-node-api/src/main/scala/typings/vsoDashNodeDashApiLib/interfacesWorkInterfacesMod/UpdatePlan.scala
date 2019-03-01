@@ -28,3 +28,18 @@ trait UpdatePlan extends js.Object {
   var `type`: PlanType
 }
 
+object UpdatePlan {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    name: java.lang.String,
+    properties: js.Any,
+    revision: scala.Double,
+    `type`: PlanType
+  ): UpdatePlan = {
+    val __obj = js.Dynamic.literal(description = description, name = name, properties = properties, revision = revision, `type` = `type`)
+  
+    __obj.asInstanceOf[UpdatePlan]
+  }
+}
+

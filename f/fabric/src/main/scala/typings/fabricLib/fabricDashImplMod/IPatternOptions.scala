@@ -36,3 +36,23 @@ trait IPatternOptions extends js.Object {
   var source: java.lang.String | stdLib.HTMLImageElement
 }
 
+object IPatternOptions {
+  @scala.inline
+  def apply(
+    source: java.lang.String | stdLib.HTMLImageElement,
+    crossOrigin: fabricLib.fabricLibStrings.Empty | fabricLib.fabricLibStrings.anonymous | fabricLib.fabricLibStrings.`use-credentials` = null,
+    offsetX: scala.Int | scala.Double = null,
+    offsetY: scala.Int | scala.Double = null,
+    patternTransform: js.Array[scala.Double] = null,
+    repeat: java.lang.String = null
+  ): IPatternOptions = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
+    __obj.asInstanceOf[IPatternOptions]
+  }
+}
+

@@ -11,3 +11,12 @@ trait LoadingImage extends js.Object {
   var isLoaded: scala.Boolean
 }
 
+object LoadingImage {
+  @scala.inline
+  def apply(img: stdLib.HTMLImageElement, isLoaded: scala.Boolean): LoadingImage = {
+    val __obj = js.Dynamic.literal(img = img, isLoaded = isLoaded)
+  
+    __obj.asInstanceOf[LoadingImage]
+  }
+}
+

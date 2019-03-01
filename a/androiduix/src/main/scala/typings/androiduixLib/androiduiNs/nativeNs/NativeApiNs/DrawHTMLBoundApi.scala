@@ -16,3 +16,15 @@ trait DrawHTMLBoundApi extends js.Object {
   ): scala.Unit
 }
 
+object DrawHTMLBoundApi {
+  @scala.inline
+  def apply(
+    hideDrawHTMLBound: js.Function1[scala.Double, scala.Unit],
+    showDrawHTMLBound: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
+  ): DrawHTMLBoundApi = {
+    val __obj = js.Dynamic.literal(hideDrawHTMLBound = hideDrawHTMLBound, showDrawHTMLBound = showDrawHTMLBound)
+  
+    __obj.asInstanceOf[DrawHTMLBoundApi]
+  }
+}
+

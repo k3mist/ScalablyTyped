@@ -15,3 +15,20 @@ trait RecommendedDto extends js.Object {
   var `type`: java.lang.String
 }
 
+object RecommendedDto {
+  @scala.inline
+  def apply(
+    block: js.Array[BlockDto],
+    champion: java.lang.String,
+    map: java.lang.String,
+    mode: java.lang.String,
+    priority: scala.Boolean,
+    title: java.lang.String,
+    `type`: java.lang.String
+  ): RecommendedDto = {
+    val __obj = js.Dynamic.literal(block = block, champion = champion, map = map, mode = mode, priority = priority, title = title, `type` = `type`)
+  
+    __obj.asInstanceOf[RecommendedDto]
+  }
+}
+

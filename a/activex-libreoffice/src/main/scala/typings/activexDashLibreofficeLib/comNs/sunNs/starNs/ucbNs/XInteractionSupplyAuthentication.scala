@@ -78,3 +78,35 @@ trait XInteractionSupplyAuthentication
   def setUserName(UserName: java.lang.String): scala.Unit
 }
 
+object XInteractionSupplyAuthentication {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    canSetAccount: js.Function0[scala.Boolean],
+    canSetPassword: js.Function0[scala.Boolean],
+    canSetRealm: js.Function0[scala.Boolean],
+    canSetUserName: js.Function0[scala.Boolean],
+    getRememberAccountModes: js.Function1[
+      js.Array[RememberAuthentication], 
+      activexDashInteropLib.SafeArray[RememberAuthentication]
+    ],
+    getRememberPasswordModes: js.Function1[
+      js.Array[RememberAuthentication], 
+      activexDashInteropLib.SafeArray[RememberAuthentication]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setAccount: js.Function1[java.lang.String, scala.Unit],
+    setPassword: js.Function1[java.lang.String, scala.Unit],
+    setRealm: js.Function1[java.lang.String, scala.Unit],
+    setRememberAccount: js.Function1[RememberAuthentication, scala.Unit],
+    setRememberPassword: js.Function1[RememberAuthentication, scala.Unit],
+    setUserName: js.Function1[java.lang.String, scala.Unit]
+  ): XInteractionSupplyAuthentication = {
+    val __obj = js.Dynamic.literal(acquire = acquire, canSetAccount = canSetAccount, canSetPassword = canSetPassword, canSetRealm = canSetRealm, canSetUserName = canSetUserName, getRememberAccountModes = getRememberAccountModes, getRememberPasswordModes = getRememberPasswordModes, queryInterface = queryInterface, release = release, select = select, setAccount = setAccount, setPassword = setPassword, setRealm = setRealm, setRememberAccount = setRememberAccount, setRememberPassword = setRememberPassword, setUserName = setUserName)
+  
+    __obj.asInstanceOf[XInteractionSupplyAuthentication]
+  }
+}
+

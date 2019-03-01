@@ -11,3 +11,27 @@ trait Monoidal3C[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L]
   def unit(): fpDashTsLib.libHKTMod.Type3[F, U, L, scala.Unit]
 }
 
+object Monoidal3C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](
+    URI: F,
+    _L: L,
+    _U: U,
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
+    ],
+    mult: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Tuple2[js.Any, js.Any]]
+    ],
+    unit: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, L, scala.Unit]]
+  ): Monoidal3C[F, U, L] = {
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], map = map, mult = mult, unit = unit)
+  
+    __obj.asInstanceOf[Monoidal3C[F, U, L]]
+  }
+}
+

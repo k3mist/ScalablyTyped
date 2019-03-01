@@ -14,3 +14,24 @@ trait AsyncJob
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable
      with XAsyncJob
 
+object AsyncJob {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
+    close: js.Function1[scala.Boolean, scala.Unit],
+    executeAsync: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XJobListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit]
+  ): AsyncJob = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addCloseListener = addCloseListener, close = close, executeAsync = executeAsync, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener)
+  
+    __obj.asInstanceOf[AsyncJob]
+  }
+}
+

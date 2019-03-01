@@ -20,3 +20,22 @@ trait Info extends js.Object {
   var platform: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Info {
+  @scala.inline
+  def apply(
+    buildDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    compiler: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    gitCommit: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    gitTreeState: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    gitVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    goVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    major: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    minor: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    platform: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): Info = {
+    val __obj = js.Dynamic.literal(buildDate = buildDate.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], gitCommit = gitCommit.asInstanceOf[js.Any], gitTreeState = gitTreeState.asInstanceOf[js.Any], gitVersion = gitVersion.asInstanceOf[js.Any], goVersion = goVersion.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Info]
+  }
+}
+

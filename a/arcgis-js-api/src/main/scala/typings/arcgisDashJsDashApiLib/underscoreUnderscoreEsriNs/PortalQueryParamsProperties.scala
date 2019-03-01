@@ -83,3 +83,26 @@ trait PortalQueryParamsProperties extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PortalQueryParamsProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
+    extent: ExtentProperties = null,
+    num: scala.Int | scala.Double = null,
+    query: java.lang.String = null,
+    sortField: java.lang.String = null,
+    sortOrder: java.lang.String = null,
+    start: scala.Int | scala.Double = null
+  ): PortalQueryParamsProperties = {
+    val __obj = js.Dynamic.literal()
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PortalQueryParamsProperties]
+  }
+}
+

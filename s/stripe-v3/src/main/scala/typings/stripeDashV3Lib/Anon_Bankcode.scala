@@ -13,3 +13,19 @@ trait Anon_Bankcode extends js.Object {
   var mandate_reference: java.lang.String
 }
 
+object Anon_Bankcode {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    last4: java.lang.String,
+    mandate_reference: java.lang.String,
+    bank_code: java.lang.String = null,
+    country: java.lang.String = null
+  ): Anon_Bankcode = {
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint, last4 = last4, mandate_reference = mandate_reference)
+    if (bank_code != null) __obj.updateDynamic("bank_code")(bank_code)
+    if (country != null) __obj.updateDynamic("country")(country)
+    __obj.asInstanceOf[Anon_Bankcode]
+  }
+}
+

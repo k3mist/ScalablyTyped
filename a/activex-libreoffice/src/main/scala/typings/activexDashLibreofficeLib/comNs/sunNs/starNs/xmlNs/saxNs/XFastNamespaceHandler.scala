@@ -12,3 +12,18 @@ trait XFastNamespaceHandler
   def registerNamespace(NamespacePrefix: java.lang.String, NamespaceURI: java.lang.String): scala.Unit
 }
 
+object XFastNamespaceHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getNamespaceURI: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerNamespace: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XFastNamespaceHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getNamespaceURI = getNamespaceURI, queryInterface = queryInterface, registerNamespace = registerNamespace, release = release)
+  
+    __obj.asInstanceOf[XFastNamespaceHandler]
+  }
+}
+

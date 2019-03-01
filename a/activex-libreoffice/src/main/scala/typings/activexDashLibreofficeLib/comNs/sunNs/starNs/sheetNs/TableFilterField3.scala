@@ -17,3 +17,17 @@ trait TableFilterField3 extends js.Object {
   var Values: activexDashInteropLib.SafeArray[FilterFieldValue]
 }
 
+object TableFilterField3 {
+  @scala.inline
+  def apply(
+    Connection: FilterConnection,
+    Field: scala.Double,
+    Operator: scala.Double,
+    Values: activexDashInteropLib.SafeArray[FilterFieldValue]
+  ): TableFilterField3 = {
+    val __obj = js.Dynamic.literal(Connection = Connection, Field = Field, Operator = Operator, Values = Values)
+  
+    __obj.asInstanceOf[TableFilterField3]
+  }
+}
+

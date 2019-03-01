@@ -20,3 +20,20 @@ trait connectFailureArgs extends baseResponseArgs {
   var reconnect: scala.Boolean
 }
 
+object connectFailureArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    error: java.lang.String,
+    isReconnect: scala.Boolean,
+    meta: js.Any,
+    reconnect: scala.Boolean,
+    timestamp: stdLib.Date
+  ): connectFailureArgs = {
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, isReconnect = isReconnect, meta = meta, reconnect = reconnect, timestamp = timestamp)
+  
+    __obj.asInstanceOf[connectFailureArgs]
+  }
+}
+

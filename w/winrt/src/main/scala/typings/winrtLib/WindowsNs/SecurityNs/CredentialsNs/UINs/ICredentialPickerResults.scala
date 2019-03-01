@@ -15,3 +15,20 @@ trait ICredentialPickerResults extends js.Object {
   var errorCode: scala.Double
 }
 
+object ICredentialPickerResults {
+  @scala.inline
+  def apply(
+    credential: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    credentialDomainName: java.lang.String,
+    credentialPassword: java.lang.String,
+    credentialSaveOption: CredentialSaveOption,
+    credentialSaved: scala.Boolean,
+    credentialUserName: java.lang.String,
+    errorCode: scala.Double
+  ): ICredentialPickerResults = {
+    val __obj = js.Dynamic.literal(credential = credential, credentialDomainName = credentialDomainName, credentialPassword = credentialPassword, credentialSaveOption = credentialSaveOption, credentialSaved = credentialSaved, credentialUserName = credentialUserName, errorCode = errorCode)
+  
+    __obj.asInstanceOf[ICredentialPickerResults]
+  }
+}
+

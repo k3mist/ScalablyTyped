@@ -35,3 +35,38 @@ trait WebTileLayerProperties
   var urlTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebTileLayerProperties {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    fullExtent: ExtentProperties = null,
+    id: java.lang.String = null,
+    listMode: java.lang.String = null,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    refreshInterval: scala.Int | scala.Double = null,
+    subDomains: js.Array[java.lang.String] = null,
+    tileInfo: TileInfoProperties = null,
+    title: java.lang.String = null,
+    urlTemplate: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebTileLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (subDomains != null) __obj.updateDynamic("subDomains")(subDomains)
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[WebTileLayerProperties]
+  }
+}
+

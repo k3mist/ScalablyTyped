@@ -10,3 +10,12 @@ trait Filter extends js.Object {
   var name: java.lang.String
 }
 
+object Filter {
+  @scala.inline
+  def apply(fn: SyncFilter | AsyncFilter, name: java.lang.String): Filter = {
+    val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name)
+  
+    __obj.asInstanceOf[Filter]
+  }
+}
+

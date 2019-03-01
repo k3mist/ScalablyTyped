@@ -14,3 +14,12 @@ trait PresentationProperties extends js.Object {
   var slides: js.UndefOr[CollectionProperties[SlideProperties]] = js.undefined
 }
 
+object PresentationProperties {
+  @scala.inline
+  def apply(slides: CollectionProperties[SlideProperties] = null): PresentationProperties = {
+    val __obj = js.Dynamic.literal()
+    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PresentationProperties]
+  }
+}
+

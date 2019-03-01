@@ -80,3 +80,24 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SimpleLineSymbolProperties {
+  @scala.inline
+  def apply(
+    cap: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.butt | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.round | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.square = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    join: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miter | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.round | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.bevel = null,
+    miterLimit: scala.Double | java.lang.String = null,
+    style: java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): SimpleLineSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
+    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimpleLineSymbolProperties]
+  }
+}
+

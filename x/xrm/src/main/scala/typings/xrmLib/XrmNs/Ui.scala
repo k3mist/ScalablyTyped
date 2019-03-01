@@ -94,3 +94,26 @@ trait Ui extends js.Object {
   def setFormNotification(message: java.lang.String, level: FormNotificationLevel, uniqueId: java.lang.String): scala.Boolean
 }
 
+object Ui {
+  @scala.inline
+  def apply(
+    clearFormNotification: js.Function1[java.lang.String, scala.Boolean],
+    close: js.Function0[scala.Unit],
+    controls: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Control],
+    formSelector: xrmLib.XrmNs.ControlsNs.FormSelector,
+    getFormType: js.Function0[xrmLib.XrmEnumNs.FormType],
+    getViewPortHeight: js.Function0[scala.Double],
+    getViewPortWidth: js.Function0[scala.Double],
+    navigation: xrmLib.XrmNs.ControlsNs.Navigation,
+    process: xrmLib.XrmNs.ControlsNs.ProcessControl,
+    quickForms: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.QuickFormControl],
+    refreshRibbon: js.Function0[scala.Unit],
+    setFormNotification: js.Function3[java.lang.String, FormNotificationLevel, java.lang.String, scala.Boolean],
+    tabs: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Tab]
+  ): Ui = {
+    val __obj = js.Dynamic.literal(clearFormNotification = clearFormNotification, close = close, controls = controls, formSelector = formSelector, getFormType = getFormType, getViewPortHeight = getViewPortHeight, getViewPortWidth = getViewPortWidth, navigation = navigation, process = process, quickForms = quickForms, refreshRibbon = refreshRibbon, setFormNotification = setFormNotification, tabs = tabs)
+  
+    __obj.asInstanceOf[Ui]
+  }
+}
+

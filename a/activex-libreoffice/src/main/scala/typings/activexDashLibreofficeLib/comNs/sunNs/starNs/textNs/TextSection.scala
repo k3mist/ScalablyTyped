@@ -105,3 +105,96 @@ trait TextSection
   var TextColumns: XTextColumns
 }
 
+object TextSection {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    AnchorType: TextContentAnchorType,
+    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    ChildSections: activexDashInteropLib.SafeArray[XTextSection],
+    Condition: java.lang.String,
+    DDECommandElement: java.lang.String,
+    DDECommandFile: java.lang.String,
+    DDECommandType: java.lang.String,
+    EndnoteIsCollectAtTextEnd: scala.Boolean,
+    EndnoteIsOwnNumbering: scala.Boolean,
+    EndnoteIsRestartNumbering: scala.Boolean,
+    EndnoteNumberingPrefix: java.lang.String,
+    EndnoteNumberingSuffix: java.lang.String,
+    EndnoteNumberingType: scala.Double,
+    EndnoteRestartNumberingAt: scala.Double,
+    FileLink: SectionFileLink,
+    FootnoteIsCollectAtTextEnd: scala.Boolean,
+    FootnoteIsOwnNumbering: scala.Boolean,
+    FootnoteIsRestartNumbering: scala.Boolean,
+    FootnoteNumberingPrefix: java.lang.String,
+    FootnoteNumberingSuffix: java.lang.String,
+    FootnoteNumberingType: scala.Double,
+    FootnoteRestartNumberingAt: scala.Double,
+    IsAutomaticUpdate: scala.Boolean,
+    IsProtected: scala.Boolean,
+    IsVisible: scala.Boolean,
+    LinkRegion: java.lang.String,
+    Name: java.lang.String,
+    ParentSection: XTextSection,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    SectionLeftMargin: scala.Double,
+    SectionRightMargin: scala.Double,
+    TextColumns: XTextColumns,
+    TextWrap: WrapTextMode,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    attach: js.Function1[XTextRange, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getChildSections: js.Function0[activexDashInteropLib.SafeArray[XTextSection]],
+    getName: js.Function0[java.lang.String],
+    getParentSection: js.Function0[XTextSection],
+    getPropertyDefault: js.Function1[java.lang.String, js.Any],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyState: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
+    ],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setPropertyToDefault: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): TextSection = {
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, ChildSections = ChildSections, Condition = Condition, DDECommandElement = DDECommandElement, DDECommandFile = DDECommandFile, DDECommandType = DDECommandType, EndnoteIsCollectAtTextEnd = EndnoteIsCollectAtTextEnd, EndnoteIsOwnNumbering = EndnoteIsOwnNumbering, EndnoteIsRestartNumbering = EndnoteIsRestartNumbering, EndnoteNumberingPrefix = EndnoteNumberingPrefix, EndnoteNumberingSuffix = EndnoteNumberingSuffix, EndnoteNumberingType = EndnoteNumberingType, EndnoteRestartNumberingAt = EndnoteRestartNumberingAt, FileLink = FileLink, FootnoteIsCollectAtTextEnd = FootnoteIsCollectAtTextEnd, FootnoteIsOwnNumbering = FootnoteIsOwnNumbering, FootnoteIsRestartNumbering = FootnoteIsRestartNumbering, FootnoteNumberingPrefix = FootnoteNumberingPrefix, FootnoteNumberingSuffix = FootnoteNumberingSuffix, FootnoteNumberingType = FootnoteNumberingType, FootnoteRestartNumberingAt = FootnoteRestartNumberingAt, IsAutomaticUpdate = IsAutomaticUpdate, IsProtected = IsProtected, IsVisible = IsVisible, LinkRegion = LinkRegion, Name = Name, ParentSection = ParentSection, PropertySetInfo = PropertySetInfo, SectionLeftMargin = SectionLeftMargin, SectionRightMargin = SectionRightMargin, TextColumns = TextColumns, TextWrap = TextWrap, UserDefinedAttributes = UserDefinedAttributes, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getChildSections = getChildSections, getName = getName, getParentSection = getParentSection, getPropertyDefault = getPropertyDefault, getPropertySetInfo = getPropertySetInfo, getPropertyState = getPropertyState, getPropertyStates = getPropertyStates, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyToDefault = setPropertyToDefault, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[TextSection]
+  }
+}
+

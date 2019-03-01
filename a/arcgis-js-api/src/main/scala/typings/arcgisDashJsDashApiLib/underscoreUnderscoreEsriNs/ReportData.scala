@@ -33,3 +33,20 @@ trait ReportData
   var title: java.lang.String
 }
 
+object ReportData {
+  @scala.inline
+  def apply(
+    columns: js.Array[java.lang.String],
+    constructor: js.Function,
+    description: java.lang.String,
+    groups: js.Array[ReportDataGroup],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String
+  ): ReportData = {
+    val __obj = js.Dynamic.literal(columns = columns, constructor = constructor, description = description, groups = groups, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
+    __obj.asInstanceOf[ReportData]
+  }
+}
+

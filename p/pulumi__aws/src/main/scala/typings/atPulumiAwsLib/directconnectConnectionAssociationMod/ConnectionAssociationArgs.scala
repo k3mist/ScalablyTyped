@@ -16,3 +16,15 @@ trait ConnectionAssociationArgs extends js.Object {
   val lagId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ConnectionAssociationArgs {
+  @scala.inline
+  def apply(
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    lagId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): ConnectionAssociationArgs = {
+    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ConnectionAssociationArgs]
+  }
+}
+

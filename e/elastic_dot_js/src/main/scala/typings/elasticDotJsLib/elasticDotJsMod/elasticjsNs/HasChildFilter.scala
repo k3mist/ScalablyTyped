@@ -49,3 +49,23 @@ trait HasChildFilter extends Filter {
   def `type`(t: java.lang.String): HasChildFilter
 }
 
+object HasChildFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, HasChildFilter],
+    cacheKey: js.Function1[java.lang.String, HasChildFilter],
+    filter: js.Function1[Query, HasChildFilter],
+    name: js.Function1[java.lang.String, HasChildFilter],
+    query: js.Function1[Query, HasChildFilter],
+    scope: js.Function1[java.lang.String, HasChildFilter],
+    shortCircuitCutoff: js.Function1[scala.Double, HasChildFilter],
+    toJSON: js.Function0[HasChildFilter],
+    `type`: js.Function1[java.lang.String, HasChildFilter]
+  ): HasChildFilter = {
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, query = query, scope = scope, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON, `type` = `type`)
+  
+    __obj.asInstanceOf[HasChildFilter]
+  }
+}
+

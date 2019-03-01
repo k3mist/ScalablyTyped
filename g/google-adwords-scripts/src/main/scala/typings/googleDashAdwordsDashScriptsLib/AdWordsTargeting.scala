@@ -10,3 +10,12 @@ trait AdWordsTargeting[A, E] extends js.Object {
   def exculdedAudiences(): AdWordsSelector[E]
 }
 
+object AdWordsTargeting {
+  @scala.inline
+  def apply[A, E](audiences: js.Function0[AdWordsSelector[A]], exculdedAudiences: js.Function0[AdWordsSelector[E]]): AdWordsTargeting[A, E] = {
+    val __obj = js.Dynamic.literal(audiences = audiences, exculdedAudiences = exculdedAudiences)
+  
+    __obj.asInstanceOf[AdWordsTargeting[A, E]]
+  }
+}
+

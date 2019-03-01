@@ -39,3 +39,18 @@ trait JQueryFingerOptions extends js.Object {
   var preventDefault: scala.Boolean
 }
 
+object JQueryFingerOptions {
+  @scala.inline
+  def apply(
+    doubleTapInterval: scala.Double,
+    flickDuration: scala.Double,
+    motionThreshhold: scala.Double,
+    pressDuration: scala.Double,
+    preventDefault: scala.Boolean
+  ): JQueryFingerOptions = {
+    val __obj = js.Dynamic.literal(doubleTapInterval = doubleTapInterval, flickDuration = flickDuration, motionThreshhold = motionThreshhold, pressDuration = pressDuration, preventDefault = preventDefault)
+  
+    __obj.asInstanceOf[JQueryFingerOptions]
+  }
+}
+

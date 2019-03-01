@@ -18,3 +18,33 @@ trait CustomDimensionsResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
 }
 
+object CustomDimensionsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimensions]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDimensionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]
+    ]
+  ): CustomDimensionsResource = {
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[CustomDimensionsResource]
+  }
+}
+

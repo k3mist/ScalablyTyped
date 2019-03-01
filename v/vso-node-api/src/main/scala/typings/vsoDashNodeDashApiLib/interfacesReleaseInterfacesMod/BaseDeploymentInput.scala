@@ -18,3 +18,17 @@ trait BaseDeploymentInput extends js.Object {
   var timeoutInMinutes: scala.Double
 }
 
+object BaseDeploymentInput {
+  @scala.inline
+  def apply(
+    condition: java.lang.String,
+    jobCancelTimeoutInMinutes: scala.Double,
+    overrideInputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    timeoutInMinutes: scala.Double
+  ): BaseDeploymentInput = {
+    val __obj = js.Dynamic.literal(condition = condition, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, timeoutInMinutes = timeoutInMinutes)
+  
+    __obj.asInstanceOf[BaseDeploymentInput]
+  }
+}
+

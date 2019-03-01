@@ -20,3 +20,17 @@ trait XClipboardFactory
   def createClipboard(aName: java.lang.String): XClipboard
 }
 
+object XClipboardFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createClipboard: js.Function1[java.lang.String, XClipboard],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XClipboardFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createClipboard = createClipboard, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XClipboardFactory]
+  }
+}
+

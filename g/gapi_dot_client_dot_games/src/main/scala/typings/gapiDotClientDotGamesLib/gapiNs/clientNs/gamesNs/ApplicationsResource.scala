@@ -17,3 +17,25 @@ trait ApplicationsResource extends js.Object {
   def verify(request: gapiDotClientDotGamesLib.Anon_AltApplicationIdConsistencyToken): gapiDotClientLib.gapiNs.clientNs.Request[ApplicationVerifyResponse]
 }
 
+object ApplicationsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltApplicationId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Application]
+    ],
+    played: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    verify: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltApplicationIdConsistencyToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApplicationVerifyResponse]
+    ]
+  ): ApplicationsResource = {
+    val __obj = js.Dynamic.literal(get = get, played = played, verify = verify)
+  
+    __obj.asInstanceOf[ApplicationsResource]
+  }
+}
+

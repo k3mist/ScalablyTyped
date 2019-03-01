@@ -10,3 +10,12 @@ trait Anon_Stdev
   var stdev: java.lang.String
 }
 
+object Anon_Stdev {
+  @scala.inline
+  def apply(stdev: java.lang.String): Anon_Stdev = {
+    val __obj = js.Dynamic.literal(stdev = stdev)
+  
+    __obj.asInstanceOf[Anon_Stdev]
+  }
+}
+

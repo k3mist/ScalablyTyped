@@ -20,3 +20,25 @@ trait XSolver
   def solve(): scala.Unit
 }
 
+object XSolver {
+  @scala.inline
+  def apply(
+    Constraints: activexDashInteropLib.SafeArray[SolverConstraint],
+    Document: XSpreadsheetDocument,
+    Maximize: scala.Boolean,
+    Objective: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    ResultValue: scala.Double,
+    Solution: activexDashInteropLib.SafeArray[scala.Double],
+    Success: scala.Boolean,
+    Variables: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    solve: js.Function0[scala.Unit]
+  ): XSolver = {
+    val __obj = js.Dynamic.literal(Constraints = Constraints, Document = Document, Maximize = Maximize, Objective = Objective, ResultValue = ResultValue, Solution = Solution, Success = Success, Variables = Variables, acquire = acquire, queryInterface = queryInterface, release = release, solve = solve)
+  
+    __obj.asInstanceOf[XSolver]
+  }
+}
+

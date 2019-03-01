@@ -12,3 +12,17 @@ trait Watermarks extends js.Object {
   var statements: js.Array[scala.Double]
 }
 
+object Watermarks {
+  @scala.inline
+  def apply(
+    branches: js.Array[scala.Double],
+    functions: js.Array[scala.Double],
+    lines: js.Array[scala.Double],
+    statements: js.Array[scala.Double]
+  ): Watermarks = {
+    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, statements = statements)
+  
+    __obj.asInstanceOf[Watermarks]
+  }
+}
+

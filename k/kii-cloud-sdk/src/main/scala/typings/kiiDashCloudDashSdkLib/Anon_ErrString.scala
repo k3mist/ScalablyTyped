@@ -10,3 +10,12 @@ trait Anon_ErrString extends js.Object {
   def success(): js.Any
 }
 
+object Anon_ErrString {
+  @scala.inline
+  def apply(failure: js.Function1[java.lang.String, js.Any], success: js.Function0[js.Any]): Anon_ErrString = {
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
+    __obj.asInstanceOf[Anon_ErrString]
+  }
+}
+

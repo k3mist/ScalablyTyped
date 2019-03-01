@@ -10,3 +10,12 @@ trait PortWrapper extends js.Object {
   var port: scala.Double
 }
 
+object PortWrapper {
+  @scala.inline
+  def apply(enabled: scala.Boolean, port: scala.Double): PortWrapper = {
+    val __obj = js.Dynamic.literal(enabled = enabled, port = port)
+  
+    __obj.asInstanceOf[PortWrapper]
+  }
+}
+

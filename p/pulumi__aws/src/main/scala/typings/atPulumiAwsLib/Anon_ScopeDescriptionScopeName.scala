@@ -10,3 +10,15 @@ trait Anon_ScopeDescriptionScopeName extends js.Object {
   var scopeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object Anon_ScopeDescriptionScopeName {
+  @scala.inline
+  def apply(
+    scopeDescription: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    scopeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): Anon_ScopeDescriptionScopeName = {
+    val __obj = js.Dynamic.literal(scopeDescription = scopeDescription.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_ScopeDescriptionScopeName]
+  }
+}
+

@@ -28,3 +28,17 @@ trait Settings extends js.Object {
   var skipAnonymousTags: scala.Boolean
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    asyncRenderTimeout: scala.Double,
+    autoUpdate: scala.Boolean,
+    brackets: java.lang.String,
+    skipAnonymousTags: scala.Boolean
+  ): Settings = {
+    val __obj = js.Dynamic.literal(asyncRenderTimeout = asyncRenderTimeout, autoUpdate = autoUpdate, brackets = brackets, skipAnonymousTags = skipAnonymousTags)
+  
+    __obj.asInstanceOf[Settings]
+  }
+}
+

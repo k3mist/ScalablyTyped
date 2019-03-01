@@ -46,3 +46,21 @@ trait ASPxClientTrackBarPositionChangingEventArgs extends ASPxClientProcessingMo
   var newPositionStart: scala.Double
 }
 
+object ASPxClientTrackBarPositionChangingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    currentPosition: scala.Double,
+    currentPositionEnd: scala.Double,
+    currentPositionStart: scala.Double,
+    newPosition: scala.Double,
+    newPositionEnd: scala.Double,
+    newPositionStart: scala.Double,
+    processOnServer: scala.Boolean
+  ): ASPxClientTrackBarPositionChangingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, currentPosition = currentPosition, currentPositionEnd = currentPositionEnd, currentPositionStart = currentPositionStart, newPosition = newPosition, newPositionEnd = newPositionEnd, newPositionStart = newPositionStart, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[ASPxClientTrackBarPositionChangingEventArgs]
+  }
+}
+

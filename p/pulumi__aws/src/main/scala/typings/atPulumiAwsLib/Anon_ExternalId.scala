@@ -10,3 +10,12 @@ trait Anon_ExternalId extends js.Object {
   var snsCallerArn: java.lang.String
 }
 
+object Anon_ExternalId {
+  @scala.inline
+  def apply(externalId: java.lang.String, snsCallerArn: java.lang.String): Anon_ExternalId = {
+    val __obj = js.Dynamic.literal(externalId = externalId, snsCallerArn = snsCallerArn)
+  
+    __obj.asInstanceOf[Anon_ExternalId]
+  }
+}
+

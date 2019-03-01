@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.JSXIdentifier
 }
 
+object JSXIdentifier {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: astDashTypesLib.astDashTypesLibStrings.JSXIdentifier): JSXIdentifier = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[JSXIdentifier]
+  }
+}
+

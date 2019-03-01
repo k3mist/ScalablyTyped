@@ -12,3 +12,12 @@ trait ContainerState extends js.Object {
   var isRtl: scala.Boolean
 }
 
+object ContainerState {
+  @scala.inline
+  def apply(isDisabled: scala.Boolean, isRtl: scala.Boolean): ContainerState = {
+    val __obj = js.Dynamic.literal(isDisabled = isDisabled, isRtl = isRtl)
+  
+    __obj.asInstanceOf[ContainerState]
+  }
+}
+

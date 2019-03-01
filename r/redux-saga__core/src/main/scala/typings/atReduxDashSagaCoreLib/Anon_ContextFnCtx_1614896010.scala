@@ -10,3 +10,12 @@ trait Anon_ContextFnCtx_1614896010[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx
   var fn: Fn
 }
 
+object Anon_ContextFnCtx_1614896010 {
+  @scala.inline
+  def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, scala.Unit] */](context: Ctx, fn: Fn): Anon_ContextFnCtx_1614896010[Ctx, Fn] = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_ContextFnCtx_1614896010[Ctx, Fn]]
+  }
+}
+

@@ -11,3 +11,12 @@ trait IDeleteConfirmation extends js.Object {
   var `object`: java.lang.String
 }
 
+object IDeleteConfirmation {
+  @scala.inline
+  def apply(deleted: scala.Boolean, id: java.lang.String, `object`: java.lang.String): IDeleteConfirmation = {
+    val __obj = js.Dynamic.literal(deleted = deleted, id = id, `object` = `object`)
+  
+    __obj.asInstanceOf[IDeleteConfirmation]
+  }
+}
+

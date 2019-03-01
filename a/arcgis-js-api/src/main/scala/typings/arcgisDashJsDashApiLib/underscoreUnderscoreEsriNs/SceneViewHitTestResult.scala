@@ -15,3 +15,17 @@ trait SceneViewHitTestResult
   var results: js.Array[SceneViewHitTestResultResults]
 }
 
+object SceneViewHitTestResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    results: js.Array[SceneViewHitTestResultResults]
+  ): SceneViewHitTestResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, results = results)
+  
+    __obj.asInstanceOf[SceneViewHitTestResult]
+  }
+}
+

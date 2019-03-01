@@ -10,3 +10,12 @@ trait XHRRequestHeader extends js.Object {
   var value: java.lang.String
 }
 
+object XHRRequestHeader {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): XHRRequestHeader = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[XHRRequestHeader]
+  }
+}
+

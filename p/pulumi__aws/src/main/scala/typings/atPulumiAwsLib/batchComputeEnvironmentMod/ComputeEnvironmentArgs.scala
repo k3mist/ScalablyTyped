@@ -30,3 +30,19 @@ trait ComputeEnvironmentArgs extends js.Object {
   val `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ComputeEnvironmentArgs {
+  @scala.inline
+  def apply(
+    computeEnvironmentName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    serviceRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    computeResources: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus] = null,
+    state: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ComputeEnvironmentArgs = {
+    val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComputeEnvironmentArgs]
+  }
+}
+

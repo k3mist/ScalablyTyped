@@ -19,3 +19,19 @@ trait ASPxClientHtmlEditorTableElementPropertiesDialog extends ASPxClientHtmlEdi
   def GetVerticalAlignmentComboBox(): ASPxClientComboBox
 }
 
+object ASPxClientHtmlEditorTableElementPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+  ): ASPxClientHtmlEditorTableElementPropertiesDialog = {
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableElementPropertiesDialog]
+  }
+}
+

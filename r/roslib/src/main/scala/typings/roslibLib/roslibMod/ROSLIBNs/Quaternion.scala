@@ -34,3 +34,23 @@ trait Quaternion extends js.Object {
   def normalize(): scala.Unit
 }
 
+object Quaternion {
+  @scala.inline
+  def apply(
+    clone: js.Function0[Quaternion],
+    conjugate: js.Function0[scala.Unit],
+    invert: js.Function0[scala.Unit],
+    multiply: js.Function1[Quaternion, scala.Unit],
+    norm: js.Function0[scala.Double],
+    normalize: js.Function0[scala.Unit],
+    w: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    z: scala.Double
+  ): Quaternion = {
+    val __obj = js.Dynamic.literal(clone = clone, conjugate = conjugate, invert = invert, multiply = multiply, norm = norm, normalize = normalize, w = w, x = x, y = y, z = z)
+  
+    __obj.asInstanceOf[Quaternion]
+  }
+}
+

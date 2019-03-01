@@ -18,3 +18,18 @@ trait GetBLEDeviceServicesOptions
   def success_MGetBLEDeviceServicesOptions(res: baiduDashAppLib.Anon_Services with ErrMsgResponse): scala.Unit
 }
 
+object GetBLEDeviceServicesOptions {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String,
+    success: js.Function1[baiduDashAppLib.Anon_Services with ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetBLEDeviceServicesOptions = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId, success = success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetBLEDeviceServicesOptions]
+  }
+}
+

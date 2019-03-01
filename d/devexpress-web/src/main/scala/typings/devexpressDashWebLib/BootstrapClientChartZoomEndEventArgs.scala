@@ -21,3 +21,12 @@ trait BootstrapClientChartZoomEndEventArgs extends BootstrapUIWidgetEventArgsBas
   var rangeStart: js.Object
 }
 
+object BootstrapClientChartZoomEndEventArgs {
+  @scala.inline
+  def apply(component: js.Object, element: js.Object, rangeEnd: js.Object, rangeStart: js.Object): BootstrapClientChartZoomEndEventArgs = {
+    val __obj = js.Dynamic.literal(component = component, element = element, rangeEnd = rangeEnd, rangeStart = rangeStart)
+  
+    __obj.asInstanceOf[BootstrapClientChartZoomEndEventArgs]
+  }
+}
+

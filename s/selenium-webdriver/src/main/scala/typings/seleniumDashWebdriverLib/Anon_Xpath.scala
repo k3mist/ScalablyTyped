@@ -10,3 +10,12 @@ trait Anon_Xpath
   var xpath: java.lang.String
 }
 
+object Anon_Xpath {
+  @scala.inline
+  def apply(xpath: java.lang.String): Anon_Xpath = {
+    val __obj = js.Dynamic.literal(xpath = xpath)
+  
+    __obj.asInstanceOf[Anon_Xpath]
+  }
+}
+

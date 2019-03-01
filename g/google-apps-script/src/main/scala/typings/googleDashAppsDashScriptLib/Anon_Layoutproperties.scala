@@ -16,3 +16,17 @@ trait Anon_Layoutproperties extends js.Object {
   var slide_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SlideProperties
 }
 
+object Anon_Layoutproperties {
+  @scala.inline
+  def apply(
+    layout_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.LayoutProperties,
+    master_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.MasterProperties,
+    notes_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.NotesProperties,
+    slide_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SlideProperties
+  ): Anon_Layoutproperties = {
+    val __obj = js.Dynamic.literal(layout_properties = layout_properties, master_properties = master_properties, notes_properties = notes_properties, slide_properties = slide_properties)
+  
+    __obj.asInstanceOf[Anon_Layoutproperties]
+  }
+}
+

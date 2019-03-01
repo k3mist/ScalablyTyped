@@ -23,3 +23,28 @@ trait LanguageChains extends js.Object {
   var `with`: Assertion
 }
 
+object LanguageChains {
+  @scala.inline
+  def apply(
+    and: Assertion,
+    at: Assertion,
+    be: Assertion,
+    been: Assertion,
+    but: Assertion,
+    does: Assertion,
+    has: Assertion,
+    have: Assertion,
+    is: Assertion,
+    of: Assertion,
+    same: Assertion,
+    that: Assertion,
+    to: Assertion,
+    which: Assertion,
+    `with`: Assertion
+  ): LanguageChains = {
+    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, but = but, does = does, has = has, have = have, is = is, of = of, same = same, that = that, to = to, which = which, `with` = `with`)
+  
+    __obj.asInstanceOf[LanguageChains]
+  }
+}
+

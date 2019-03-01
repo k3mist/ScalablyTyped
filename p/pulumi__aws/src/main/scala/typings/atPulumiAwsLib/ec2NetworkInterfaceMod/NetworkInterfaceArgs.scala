@@ -53,3 +53,33 @@ trait NetworkInterfaceArgs extends js.Object {
   ] = js.undefined
 }
 
+object NetworkInterfaceArgs {
+  @scala.inline
+  def apply(
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    attachments: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttachmentIdDeviceIndexInstance]
+      ]
+    ] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    privateIps: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    privateIpsCount: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    securityGroups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    sourceDestCheck: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): NetworkInterfaceArgs = {
+    val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (privateIps != null) __obj.updateDynamic("privateIps")(privateIps.asInstanceOf[js.Any])
+    if (privateIpsCount != null) __obj.updateDynamic("privateIpsCount")(privateIpsCount.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkInterfaceArgs]
+  }
+}
+

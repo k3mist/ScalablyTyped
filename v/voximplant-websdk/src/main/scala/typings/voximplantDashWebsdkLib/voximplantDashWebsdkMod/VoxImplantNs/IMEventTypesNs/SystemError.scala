@@ -20,3 +20,15 @@ trait SystemError
   var errorType: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMErrorType
 }
 
+object SystemError {
+  @scala.inline
+  def apply(
+    errorData: js.Object,
+    errorType: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMErrorType
+  ): SystemError = {
+    val __obj = js.Dynamic.literal(errorData = errorData, errorType = errorType)
+  
+    __obj.asInstanceOf[SystemError]
+  }
+}
+

@@ -14,3 +14,17 @@ trait InitMultipartUploadResult extends js.Object {
   var uploadId: java.lang.String
 }
 
+object InitMultipartUploadResult {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    name: java.lang.String,
+    res: aliDashOssLib.Anon_Headers,
+    uploadId: java.lang.String
+  ): InitMultipartUploadResult = {
+    val __obj = js.Dynamic.literal(bucket = bucket, name = name, res = res, uploadId = uploadId)
+  
+    __obj.asInstanceOf[InitMultipartUploadResult]
+  }
+}
+

@@ -20,3 +20,12 @@ trait _Impl extends js.Object {
   var value: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(percent: java.lang.String, total: java.lang.String, value: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal(percent = percent, total = total, value = value)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

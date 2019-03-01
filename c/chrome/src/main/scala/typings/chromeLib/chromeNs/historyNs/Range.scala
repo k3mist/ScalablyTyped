@@ -12,3 +12,12 @@ trait Range extends js.Object {
   var startTime: scala.Double
 }
 
+object Range {
+  @scala.inline
+  def apply(endTime: scala.Double, startTime: scala.Double): Range = {
+    val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
+  
+    __obj.asInstanceOf[Range]
+  }
+}
+

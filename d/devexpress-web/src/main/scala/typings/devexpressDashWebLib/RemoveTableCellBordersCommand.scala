@@ -15,3 +15,12 @@ trait RemoveTableCellBordersCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object RemoveTableCellBordersCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): RemoveTableCellBordersCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[RemoveTableCellBordersCommand]
+  }
+}
+

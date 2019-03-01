@@ -29,3 +29,29 @@ trait Errors extends js.Object {
   var ValidationErrorItem: ValidationErrorItem
 }
 
+object Errors {
+  @scala.inline
+  def apply(
+    AccessDeniedError: AccessDeniedError,
+    ConnectionError: ConnectionError,
+    ConnectionRefusedError: ConnectionRefusedError,
+    ConnectionTimedOutError: ConnectionTimedOutError,
+    DatabaseError: DatabaseError,
+    EmptyResultError: EmptyResultError,
+    Error: BaseError,
+    ExclusionConstraintError: ExclusionConstraintError,
+    ForeignKeyConstraintError: ForeignKeyConstraintError,
+    HostNotFoundError: HostNotFoundError,
+    HostNotReachableError: HostNotReachableError,
+    InvalidConnectionError: InvalidConnectionError,
+    TimeoutError: TimeoutError,
+    UniqueConstraintError: UniqueConstraintError,
+    ValidationError: ValidationError,
+    ValidationErrorItem: ValidationErrorItem
+  ): Errors = {
+    val __obj = js.Dynamic.literal(AccessDeniedError = AccessDeniedError, ConnectionError = ConnectionError, ConnectionRefusedError = ConnectionRefusedError, ConnectionTimedOutError = ConnectionTimedOutError, DatabaseError = DatabaseError, EmptyResultError = EmptyResultError, Error = Error, ExclusionConstraintError = ExclusionConstraintError, ForeignKeyConstraintError = ForeignKeyConstraintError, HostNotFoundError = HostNotFoundError, HostNotReachableError = HostNotReachableError, InvalidConnectionError = InvalidConnectionError, TimeoutError = TimeoutError, UniqueConstraintError = UniqueConstraintError, ValidationError = ValidationError, ValidationErrorItem = ValidationErrorItem)
+  
+    __obj.asInstanceOf[Errors]
+  }
+}
+

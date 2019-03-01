@@ -13,3 +13,16 @@ trait SelectorListPlain
   var type_SelectorListPlain: cssDashTreeLib.cssDashTreeLibStrings.SelectorList
 }
 
+object SelectorListPlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.SelectorList,
+    loc: CssLocation = null
+  ): SelectorListPlain = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[SelectorListPlain]
+  }
+}
+

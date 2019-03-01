@@ -31,3 +31,12 @@ trait ASPxClientTreeListContextMenuEventArgs extends ASPxClientEventArgs {
   var objectType: java.lang.String
 }
 
+object ASPxClientTreeListContextMenuEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Object, objectKey: js.Object, objectType: java.lang.String): ASPxClientTreeListContextMenuEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, objectKey = objectKey, objectType = objectType)
+  
+    __obj.asInstanceOf[ASPxClientTreeListContextMenuEventArgs]
+  }
+}
+

@@ -32,3 +32,17 @@ trait NodeSingularCompound extends js.Object {
   def isParent(): scala.Boolean
 }
 
+object NodeSingularCompound {
+  @scala.inline
+  def apply(
+    isChild: js.Function0[scala.Boolean],
+    isChildless: js.Function0[scala.Boolean],
+    isOrphan: js.Function0[scala.Boolean],
+    isParent: js.Function0[scala.Boolean]
+  ): NodeSingularCompound = {
+    val __obj = js.Dynamic.literal(isChild = isChild, isChildless = isChildless, isOrphan = isOrphan, isParent = isParent)
+  
+    __obj.asInstanceOf[NodeSingularCompound]
+  }
+}
+

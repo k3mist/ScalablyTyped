@@ -13,3 +13,12 @@ trait VictoryThemeInterface extends js.Object {
   var material: VictoryThemeDefinition
 }
 
+object VictoryThemeInterface {
+  @scala.inline
+  def apply(grayscale: VictoryThemeDefinition, material: VictoryThemeDefinition): VictoryThemeInterface = {
+    val __obj = js.Dynamic.literal(grayscale = grayscale, material = material)
+  
+    __obj.asInstanceOf[VictoryThemeInterface]
+  }
+}
+

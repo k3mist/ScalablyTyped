@@ -11,3 +11,12 @@ trait IHighlightResultBase extends js.Object {
   var value: java.lang.String
 }
 
+object IHighlightResultBase {
+  @scala.inline
+  def apply(language: java.lang.String, relevance: scala.Double, value: java.lang.String): IHighlightResultBase = {
+    val __obj = js.Dynamic.literal(language = language, relevance = relevance, value = value)
+  
+    __obj.asInstanceOf[IHighlightResultBase]
+  }
+}
+

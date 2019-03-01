@@ -67,3 +67,26 @@ trait XMimeContentType
   def hasParameter(aName: java.lang.String): scala.Boolean
 }
 
+object XMimeContentType {
+  @scala.inline
+  def apply(
+    FullMediaType: java.lang.String,
+    MediaSubtype: java.lang.String,
+    MediaType: java.lang.String,
+    Parameters: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getFullMediaType: js.Function0[java.lang.String],
+    getMediaSubtype: js.Function0[java.lang.String],
+    getMediaType: js.Function0[java.lang.String],
+    getParameterValue: js.Function1[java.lang.String, java.lang.String],
+    getParameters: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasParameter: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMimeContentType = {
+    val __obj = js.Dynamic.literal(FullMediaType = FullMediaType, MediaSubtype = MediaSubtype, MediaType = MediaType, Parameters = Parameters, acquire = acquire, getFullMediaType = getFullMediaType, getMediaSubtype = getMediaSubtype, getMediaType = getMediaType, getParameterValue = getParameterValue, getParameters = getParameters, hasParameter = hasParameter, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMimeContentType]
+  }
+}
+

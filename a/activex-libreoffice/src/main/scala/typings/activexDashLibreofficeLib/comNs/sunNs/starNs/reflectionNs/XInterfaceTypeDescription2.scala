@@ -34,3 +34,30 @@ trait XInterfaceTypeDescription2 extends XInterfaceTypeDescription {
   def getOptionalBaseTypes(): activexDashInteropLib.SafeArray[XTypeDescription]
 }
 
+object XInterfaceTypeDescription2 {
+  @scala.inline
+  def apply(
+    BaseType: XTypeDescription,
+    BaseTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    Members: activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription],
+    Name: java.lang.String,
+    OptionalBaseTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    acquire: js.Function0[scala.Unit],
+    getBaseType: js.Function0[XTypeDescription],
+    getBaseTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getMembers: js.Function0[activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getOptionalBaseTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceTypeDescription2 = {
+    val __obj = js.Dynamic.literal(BaseType = BaseType, BaseTypes = BaseTypes, Members = Members, Name = Name, OptionalBaseTypes = OptionalBaseTypes, TypeClass = TypeClass, Uik = Uik, acquire = acquire, getBaseType = getBaseType, getBaseTypes = getBaseTypes, getMembers = getMembers, getName = getName, getOptionalBaseTypes = getOptionalBaseTypes, getTypeClass = getTypeClass, getUik = getUik, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInterfaceTypeDescription2]
+  }
+}
+

@@ -118,3 +118,84 @@ trait TableAutoFormatField
   var VertJustify: scala.Double
 }
 
+object TableAutoFormatField {
+  @scala.inline
+  def apply(
+    CellBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharContoured: scala.Boolean,
+    CharCrossedOut: scala.Boolean,
+    CharFontCharSet: java.lang.String,
+    CharFontCharSetAsian: java.lang.String,
+    CharFontCharSetComplex: java.lang.String,
+    CharFontFamily: java.lang.String,
+    CharFontFamilyAsian: java.lang.String,
+    CharFontFamilyComplex: java.lang.String,
+    CharFontName: java.lang.String,
+    CharFontNameAsian: java.lang.String,
+    CharFontNameComplex: java.lang.String,
+    CharFontPitch: java.lang.String,
+    CharFontPitchAsian: java.lang.String,
+    CharFontPitchComplex: java.lang.String,
+    CharFontStyleName: java.lang.String,
+    CharFontStyleNameAsian: java.lang.String,
+    CharFontStyleNameComplex: java.lang.String,
+    CharHeight: scala.Double,
+    CharHeightAsian: scala.Double,
+    CharHeightComplex: scala.Double,
+    CharPosture: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharPostureAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharPostureComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharShadowed: scala.Boolean,
+    CharUnderline: scala.Double,
+    CharWeight: scala.Double,
+    CharWeightAsian: scala.Double,
+    CharWeightComplex: scala.Double,
+    HoriJustify: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellHoriJustify,
+    IsCellBackgroundTransparent: scala.Boolean,
+    IsTextWrapped: scala.Boolean,
+    Orientation: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellOrientation,
+    ParaBottomMargin: scala.Double,
+    ParaLeftMargin: scala.Double,
+    ParaRightMargin: scala.Double,
+    ParaTopMargin: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RotateAngle: scala.Double,
+    RotateReference: scala.Double,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    TableBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder,
+    TableBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder2,
+    VertJustify: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): TableAutoFormatField = {
+    val __obj = js.Dynamic.literal(CellBackColor = CellBackColor, CharColor = CharColor, CharContoured = CharContoured, CharCrossedOut = CharCrossedOut, CharFontCharSet = CharFontCharSet, CharFontCharSetAsian = CharFontCharSetAsian, CharFontCharSetComplex = CharFontCharSetComplex, CharFontFamily = CharFontFamily, CharFontFamilyAsian = CharFontFamilyAsian, CharFontFamilyComplex = CharFontFamilyComplex, CharFontName = CharFontName, CharFontNameAsian = CharFontNameAsian, CharFontNameComplex = CharFontNameComplex, CharFontPitch = CharFontPitch, CharFontPitchAsian = CharFontPitchAsian, CharFontPitchComplex = CharFontPitchComplex, CharFontStyleName = CharFontStyleName, CharFontStyleNameAsian = CharFontStyleNameAsian, CharFontStyleNameComplex = CharFontStyleNameComplex, CharHeight = CharHeight, CharHeightAsian = CharHeightAsian, CharHeightComplex = CharHeightComplex, CharPosture = CharPosture, CharPostureAsian = CharPostureAsian, CharPostureComplex = CharPostureComplex, CharShadowed = CharShadowed, CharUnderline = CharUnderline, CharWeight = CharWeight, CharWeightAsian = CharWeightAsian, CharWeightComplex = CharWeightComplex, HoriJustify = HoriJustify, IsCellBackgroundTransparent = IsCellBackgroundTransparent, IsTextWrapped = IsTextWrapped, Orientation = Orientation, ParaBottomMargin = ParaBottomMargin, ParaLeftMargin = ParaLeftMargin, ParaRightMargin = ParaRightMargin, ParaTopMargin = ParaTopMargin, PropertySetInfo = PropertySetInfo, RotateAngle = RotateAngle, RotateReference = RotateReference, ShadowFormat = ShadowFormat, TableBorder = TableBorder, TableBorder2 = TableBorder2, VertJustify = VertJustify, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
+    __obj.asInstanceOf[TableAutoFormatField]
+  }
+}
+

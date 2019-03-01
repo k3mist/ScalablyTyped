@@ -16,3 +16,21 @@ trait TaskAttachment extends js.Object {
   var `type`: java.lang.String
 }
 
+object TaskAttachment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    createdOn: stdLib.Date,
+    lastChangedBy: java.lang.String,
+    lastChangedOn: stdLib.Date,
+    name: java.lang.String,
+    recordId: java.lang.String,
+    timelineId: java.lang.String,
+    `type`: java.lang.String
+  ): TaskAttachment = {
+    val __obj = js.Dynamic.literal(_links = _links, createdOn = createdOn, lastChangedBy = lastChangedBy, lastChangedOn = lastChangedOn, name = name, recordId = recordId, timelineId = timelineId, `type` = `type`)
+  
+    __obj.asInstanceOf[TaskAttachment]
+  }
+}
+

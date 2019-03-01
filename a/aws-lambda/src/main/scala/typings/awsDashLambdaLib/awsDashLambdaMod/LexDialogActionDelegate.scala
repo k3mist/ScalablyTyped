@@ -10,3 +10,15 @@ trait LexDialogActionDelegate extends LexDialogAction {
   var `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Delegate
 }
 
+object LexDialogActionDelegate {
+  @scala.inline
+  def apply(
+    slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Delegate
+  ): LexDialogActionDelegate = {
+    val __obj = js.Dynamic.literal(slots = slots, `type` = `type`)
+  
+    __obj.asInstanceOf[LexDialogActionDelegate]
+  }
+}
+

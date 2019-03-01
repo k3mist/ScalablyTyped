@@ -19,3 +19,19 @@ trait ConstantMemberType extends IDLInterfaceMemberType {
   var value: ValueDescription
 }
 
+object ConstantMemberType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    nullable: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.const,
+    value: ValueDescription
+  ): ConstantMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, nullable = nullable, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ConstantMemberType]
+  }
+}
+

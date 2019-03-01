@@ -15,3 +15,26 @@ trait RunsResource extends js.Object {
   def list(request: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListTransferRunsResponse]
 }
 
+object RunsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferRun]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTransferRunsResponse]
+    ],
+    transferLogs: TransferLogsResource
+  ): RunsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, transferLogs = transferLogs)
+  
+    __obj.asInstanceOf[RunsResource]
+  }
+}
+

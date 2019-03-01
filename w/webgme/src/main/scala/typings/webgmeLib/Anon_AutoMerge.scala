@@ -81,3 +81,25 @@ trait Anon_AutoMerge extends js.Object {
   var requireHashesToMatch: scala.Boolean
 }
 
+object Anon_AutoMerge {
+  @scala.inline
+  def apply(
+    autoMerge: Anon_Enable,
+    broadcastProjectEvents: scala.Boolean,
+    cache: scala.Double,
+    clientCache: scala.Double,
+    database: Anon_Memory,
+    disableHashChecks: scala.Boolean,
+    keyType: webgmeLib.webgmeLibStrings.plainSHA1 | webgmeLib.webgmeLibStrings.rand160Bits | webgmeLib.webgmeLibStrings.ZSSHA,
+    loadBucketSize: scala.Double,
+    loadBucketTimer: scala.Double,
+    maxEmittedCoreObjects: scala.Double,
+    options: java.lang.String,
+    requireHashesToMatch: scala.Boolean
+  ): Anon_AutoMerge = {
+    val __obj = js.Dynamic.literal(autoMerge = autoMerge, broadcastProjectEvents = broadcastProjectEvents, cache = cache, clientCache = clientCache, database = database, disableHashChecks = disableHashChecks, keyType = keyType.asInstanceOf[js.Any], loadBucketSize = loadBucketSize, loadBucketTimer = loadBucketTimer, maxEmittedCoreObjects = maxEmittedCoreObjects, options = options, requireHashesToMatch = requireHashesToMatch)
+  
+    __obj.asInstanceOf[Anon_AutoMerge]
+  }
+}
+

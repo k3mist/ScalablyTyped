@@ -73,3 +73,78 @@ trait BasicDataStatsDto extends js.Object {
   var rPercentTimeDeadModPerLevel: scala.Double
 }
 
+object BasicDataStatsDto {
+  @scala.inline
+  def apply(
+    FlatArmorMod: scala.Double,
+    FlatAttackSpeedMod: scala.Double,
+    FlatBlockMod: scala.Double,
+    FlatCritChanceMod: scala.Double,
+    FlatCritDamageMod: scala.Double,
+    FlatEXPBonus: scala.Double,
+    FlatEnergyPoolMod: scala.Double,
+    FlatEnergyRegenMod: scala.Double,
+    FlatHPPoolMod: scala.Double,
+    FlatHPRegenMod: scala.Double,
+    FlatMPPoolMod: scala.Double,
+    FlatMPRegenMod: scala.Double,
+    FlatMagicDamageMod: scala.Double,
+    FlatMovementSpeedMod: scala.Double,
+    FlatPhysicalDamageMod: scala.Double,
+    FlatSpellBlockMod: scala.Double,
+    PercentArmorMod: scala.Double,
+    PercentAttackSpeedMod: scala.Double,
+    PercentBlockMod: scala.Double,
+    PercentCritChanceMod: scala.Double,
+    PercentCritDamageMod: scala.Double,
+    PercentDodgeMod: scala.Double,
+    PercentEXPBonus: scala.Double,
+    PercentHPPoolMod: scala.Double,
+    PercentHPRegenMod: scala.Double,
+    PercentLifeStealMod: scala.Double,
+    PercentMPPoolMod: scala.Double,
+    PercentMPRegenMod: scala.Double,
+    PercentMagicDamageMod: scala.Double,
+    PercentMovementSpeedMod: scala.Double,
+    PercentPhysicalDamageMod: scala.Double,
+    PercentSpellBlockMod: scala.Double,
+    PercentSpellVampMod: scala.Double,
+    rFlatArmorModPerLevel: scala.Double,
+    rFlatArmorPenetrationMod: scala.Double,
+    rFlatArmorPenetrationModPerLevel: scala.Double,
+    rFlatCritChanceModPerLevel: scala.Double,
+    rFlatCritDamageModPerLevel: scala.Double,
+    rFlatDodgeMod: scala.Double,
+    rFlatDodgeModPerLevel: scala.Double,
+    rFlatEnergyModPerLevel: scala.Double,
+    rFlatEnergyRegenModPerLevel: scala.Double,
+    rFlatGoldPer10Mod: scala.Double,
+    rFlatHPModPerLevel: scala.Double,
+    rFlatHPRegenModPerLevel: scala.Double,
+    rFlatMPModPerLevel: scala.Double,
+    rFlatMPRegenModPerLevel: scala.Double,
+    rFlatMagicDamageModPerLevel: scala.Double,
+    rFlatMagicPenetrationMod: scala.Double,
+    rFlatMagicPenetrationModPerLevel: scala.Double,
+    rFlatMovementSpeedModPerLevel: scala.Double,
+    rFlatPhysicalDamageModPerLevel: scala.Double,
+    rFlatSpellBlockModPerLevel: scala.Double,
+    rFlatTimeDeadMod: scala.Double,
+    rFlatTimeDeadModPerLevel: scala.Double,
+    rPercentArmorPenetrationMod: scala.Double,
+    rPercentArmorPenetrationModPerLevel: scala.Double,
+    rPercentAttackSpeedModPerLevel: scala.Double,
+    rPercentCooldownMod: scala.Double,
+    rPercentCooldownModPerLevel: scala.Double,
+    rPercentMagicPenetrationMod: scala.Double,
+    rPercentMagicPenetrationModPerLevel: scala.Double,
+    rPercentMovementSpeedModPerLevel: scala.Double,
+    rPercentTimeDeadMod: scala.Double,
+    rPercentTimeDeadModPerLevel: scala.Double
+  ): BasicDataStatsDto = {
+    val __obj = js.Dynamic.literal(FlatArmorMod = FlatArmorMod, FlatAttackSpeedMod = FlatAttackSpeedMod, FlatBlockMod = FlatBlockMod, FlatCritChanceMod = FlatCritChanceMod, FlatCritDamageMod = FlatCritDamageMod, FlatEXPBonus = FlatEXPBonus, FlatEnergyPoolMod = FlatEnergyPoolMod, FlatEnergyRegenMod = FlatEnergyRegenMod, FlatHPPoolMod = FlatHPPoolMod, FlatHPRegenMod = FlatHPRegenMod, FlatMPPoolMod = FlatMPPoolMod, FlatMPRegenMod = FlatMPRegenMod, FlatMagicDamageMod = FlatMagicDamageMod, FlatMovementSpeedMod = FlatMovementSpeedMod, FlatPhysicalDamageMod = FlatPhysicalDamageMod, FlatSpellBlockMod = FlatSpellBlockMod, PercentArmorMod = PercentArmorMod, PercentAttackSpeedMod = PercentAttackSpeedMod, PercentBlockMod = PercentBlockMod, PercentCritChanceMod = PercentCritChanceMod, PercentCritDamageMod = PercentCritDamageMod, PercentDodgeMod = PercentDodgeMod, PercentEXPBonus = PercentEXPBonus, PercentHPPoolMod = PercentHPPoolMod, PercentHPRegenMod = PercentHPRegenMod, PercentLifeStealMod = PercentLifeStealMod, PercentMPPoolMod = PercentMPPoolMod, PercentMPRegenMod = PercentMPRegenMod, PercentMagicDamageMod = PercentMagicDamageMod, PercentMovementSpeedMod = PercentMovementSpeedMod, PercentPhysicalDamageMod = PercentPhysicalDamageMod, PercentSpellBlockMod = PercentSpellBlockMod, PercentSpellVampMod = PercentSpellVampMod, rFlatArmorModPerLevel = rFlatArmorModPerLevel, rFlatArmorPenetrationMod = rFlatArmorPenetrationMod, rFlatArmorPenetrationModPerLevel = rFlatArmorPenetrationModPerLevel, rFlatCritChanceModPerLevel = rFlatCritChanceModPerLevel, rFlatCritDamageModPerLevel = rFlatCritDamageModPerLevel, rFlatDodgeMod = rFlatDodgeMod, rFlatDodgeModPerLevel = rFlatDodgeModPerLevel, rFlatEnergyModPerLevel = rFlatEnergyModPerLevel, rFlatEnergyRegenModPerLevel = rFlatEnergyRegenModPerLevel, rFlatGoldPer10Mod = rFlatGoldPer10Mod, rFlatHPModPerLevel = rFlatHPModPerLevel, rFlatHPRegenModPerLevel = rFlatHPRegenModPerLevel, rFlatMPModPerLevel = rFlatMPModPerLevel, rFlatMPRegenModPerLevel = rFlatMPRegenModPerLevel, rFlatMagicDamageModPerLevel = rFlatMagicDamageModPerLevel, rFlatMagicPenetrationMod = rFlatMagicPenetrationMod, rFlatMagicPenetrationModPerLevel = rFlatMagicPenetrationModPerLevel, rFlatMovementSpeedModPerLevel = rFlatMovementSpeedModPerLevel, rFlatPhysicalDamageModPerLevel = rFlatPhysicalDamageModPerLevel, rFlatSpellBlockModPerLevel = rFlatSpellBlockModPerLevel, rFlatTimeDeadMod = rFlatTimeDeadMod, rFlatTimeDeadModPerLevel = rFlatTimeDeadModPerLevel, rPercentArmorPenetrationMod = rPercentArmorPenetrationMod, rPercentArmorPenetrationModPerLevel = rPercentArmorPenetrationModPerLevel, rPercentAttackSpeedModPerLevel = rPercentAttackSpeedModPerLevel, rPercentCooldownMod = rPercentCooldownMod, rPercentCooldownModPerLevel = rPercentCooldownModPerLevel, rPercentMagicPenetrationMod = rPercentMagicPenetrationMod, rPercentMagicPenetrationModPerLevel = rPercentMagicPenetrationModPerLevel, rPercentMovementSpeedModPerLevel = rPercentMovementSpeedModPerLevel, rPercentTimeDeadMod = rPercentTimeDeadMod, rPercentTimeDeadModPerLevel = rPercentTimeDeadModPerLevel)
+  
+    __obj.asInstanceOf[BasicDataStatsDto]
+  }
+}
+

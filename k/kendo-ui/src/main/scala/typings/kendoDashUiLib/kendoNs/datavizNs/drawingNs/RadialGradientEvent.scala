@@ -11,3 +11,16 @@ trait RadialGradientEvent extends js.Object {
   def isDefaultPrevented(): scala.Boolean
 }
 
+object RadialGradientEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: RadialGradient
+  ): RadialGradientEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
+    __obj.asInstanceOf[RadialGradientEvent]
+  }
+}
+

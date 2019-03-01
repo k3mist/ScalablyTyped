@@ -11,3 +11,16 @@ trait IStorageStreamTransaction
   def commitAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object IStorageStreamTransaction {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    commitAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncAction],
+    stream: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream
+  ): IStorageStreamTransaction = {
+    val __obj = js.Dynamic.literal(close = close, commitAsync = commitAsync, stream = stream)
+  
+    __obj.asInstanceOf[IStorageStreamTransaction]
+  }
+}
+

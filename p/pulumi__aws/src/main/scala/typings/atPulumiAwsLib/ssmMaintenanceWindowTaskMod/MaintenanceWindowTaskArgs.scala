@@ -61,3 +61,33 @@ trait MaintenanceWindowTaskArgs extends js.Object {
   val windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object MaintenanceWindowTaskArgs {
+  @scala.inline
+  def apply(
+    maxConcurrency: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    maxErrors: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    serviceRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    targets: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
+    ],
+    taskArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    taskType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    windowId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    loggingInfo: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefixS3Region] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    priority: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    taskParameters: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]
+    ] = null
+  ): MaintenanceWindowTaskArgs = {
+    val __obj = js.Dynamic.literal(maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxErrors = maxErrors.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], taskArn = taskArn.asInstanceOf[js.Any], taskType = taskType.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (taskParameters != null) __obj.updateDynamic("taskParameters")(taskParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowTaskArgs]
+  }
+}
+

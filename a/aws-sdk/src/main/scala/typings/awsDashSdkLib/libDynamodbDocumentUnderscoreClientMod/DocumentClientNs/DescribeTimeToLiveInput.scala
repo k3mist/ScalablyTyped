@@ -12,3 +12,12 @@ trait DescribeTimeToLiveInput extends js.Object {
   var TableName: TableName
 }
 
+object DescribeTimeToLiveInput {
+  @scala.inline
+  def apply(TableName: TableName): DescribeTimeToLiveInput = {
+    val __obj = js.Dynamic.literal(TableName = TableName)
+  
+    __obj.asInstanceOf[DescribeTimeToLiveInput]
+  }
+}
+

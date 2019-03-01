@@ -13,3 +13,16 @@ trait MultiLineString
   var type_MultiLineString: geojsonLib.geojsonLibStrings.MultiLineString
 }
 
+object MultiLineString {
+  @scala.inline
+  def apply(
+    coordinates: js.Array[js.Array[Position]],
+    `type`: geojsonLib.geojsonLibStrings.MultiLineString,
+    bbox: BBox = null
+  ): MultiLineString = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates, `type` = `type`)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiLineString]
+  }
+}
+

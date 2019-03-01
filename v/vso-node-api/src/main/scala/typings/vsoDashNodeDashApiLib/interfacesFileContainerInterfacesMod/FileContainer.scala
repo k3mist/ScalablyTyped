@@ -64,3 +64,27 @@ trait FileContainer extends js.Object {
   var size: scala.Double
 }
 
+object FileContainer {
+  @scala.inline
+  def apply(
+    artifactUri: java.lang.String,
+    contentLocation: java.lang.String,
+    createdBy: java.lang.String,
+    dateCreated: stdLib.Date,
+    description: java.lang.String,
+    id: scala.Double,
+    itemLocation: java.lang.String,
+    locatorPath: java.lang.String,
+    name: java.lang.String,
+    options: ContainerOptions,
+    scopeIdentifier: java.lang.String,
+    securityToken: java.lang.String,
+    signingKeyId: java.lang.String,
+    size: scala.Double
+  ): FileContainer = {
+    val __obj = js.Dynamic.literal(artifactUri = artifactUri, contentLocation = contentLocation, createdBy = createdBy, dateCreated = dateCreated, description = description, id = id, itemLocation = itemLocation, locatorPath = locatorPath, name = name, options = options, scopeIdentifier = scopeIdentifier, securityToken = securityToken, signingKeyId = signingKeyId, size = size)
+  
+    __obj.asInstanceOf[FileContainer]
+  }
+}
+

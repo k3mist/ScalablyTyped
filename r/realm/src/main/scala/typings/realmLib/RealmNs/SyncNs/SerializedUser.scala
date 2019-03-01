@@ -12,3 +12,17 @@ trait SerializedUser extends js.Object {
   var server: java.lang.String
 }
 
+object SerializedUser {
+  @scala.inline
+  def apply(
+    identity: java.lang.String,
+    isAdmin: scala.Boolean,
+    refreshToken: java.lang.String,
+    server: java.lang.String
+  ): SerializedUser = {
+    val __obj = js.Dynamic.literal(identity = identity, isAdmin = isAdmin, refreshToken = refreshToken, server = server)
+  
+    __obj.asInstanceOf[SerializedUser]
+  }
+}
+

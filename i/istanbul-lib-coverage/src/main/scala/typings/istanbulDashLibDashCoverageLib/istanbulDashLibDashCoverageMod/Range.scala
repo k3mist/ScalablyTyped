@@ -10,3 +10,12 @@ trait Range extends js.Object {
   var start: Location
 }
 
+object Range {
+  @scala.inline
+  def apply(end: Location, start: Location): Range = {
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
+    __obj.asInstanceOf[Range]
+  }
+}
+

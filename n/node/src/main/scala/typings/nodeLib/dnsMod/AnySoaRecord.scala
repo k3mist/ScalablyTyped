@@ -11,3 +11,21 @@ trait AnySoaRecord
   var `type`: nodeLib.nodeLibStrings.SOA
 }
 
+object AnySoaRecord {
+  @scala.inline
+  def apply(
+    expire: scala.Double,
+    hostmaster: java.lang.String,
+    minttl: scala.Double,
+    nsname: java.lang.String,
+    refresh: scala.Double,
+    retry: scala.Double,
+    serial: scala.Double,
+    `type`: nodeLib.nodeLibStrings.SOA
+  ): AnySoaRecord = {
+    val __obj = js.Dynamic.literal(expire = expire, hostmaster = hostmaster, minttl = minttl, nsname = nsname, refresh = refresh, retry = retry, serial = serial, `type` = `type`)
+  
+    __obj.asInstanceOf[AnySoaRecord]
+  }
+}
+

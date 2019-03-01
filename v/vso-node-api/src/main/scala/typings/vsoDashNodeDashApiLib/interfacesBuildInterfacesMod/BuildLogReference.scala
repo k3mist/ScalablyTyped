@@ -20,3 +20,12 @@ trait BuildLogReference extends js.Object {
   var url: java.lang.String
 }
 
+object BuildLogReference {
+  @scala.inline
+  def apply(id: scala.Double, `type`: java.lang.String, url: java.lang.String): BuildLogReference = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[BuildLogReference]
+  }
+}
+

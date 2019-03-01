@@ -19,3 +19,12 @@ trait OptionSetValue extends js.Object {
   var value: scala.Double
 }
 
+object OptionSetValue {
+  @scala.inline
+  def apply(text: java.lang.String, value: scala.Double): OptionSetValue = {
+    val __obj = js.Dynamic.literal(text = text, value = value)
+  
+    __obj.asInstanceOf[OptionSetValue]
+  }
+}
+

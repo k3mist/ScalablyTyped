@@ -15,3 +15,12 @@ trait INxLayoutErrors extends js.Object {
   var ErrorCode: scala.Double
 }
 
+object INxLayoutErrors {
+  @scala.inline
+  def apply(ErrorCode: scala.Double): INxLayoutErrors = {
+    val __obj = js.Dynamic.literal(ErrorCode = ErrorCode)
+  
+    __obj.asInstanceOf[INxLayoutErrors]
+  }
+}
+

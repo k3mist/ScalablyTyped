@@ -15,3 +15,26 @@ trait ISettings extends js.Object {
   var `tracing.hideTracingResponse`: scala.Boolean
 }
 
+object ISettings {
+  @scala.inline
+  def apply(
+    `editor.fontFamily`: java.lang.String,
+    `editor.fontSize`: scala.Double,
+    `editor.reuseHeaders`: scala.Boolean,
+    `editor.theme`: Theme,
+    `general.betaUpdates`: scala.Boolean,
+    `request.credentials`: java.lang.String,
+    `tracing.hideTracingResponse`: scala.Boolean
+  ): ISettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`)
+    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`)
+    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
+    __obj.updateDynamic("editor.theme")(`editor.theme`)
+    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
+    __obj.updateDynamic("request.credentials")(`request.credentials`)
+    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
+    __obj.asInstanceOf[ISettings]
+  }
+}
+

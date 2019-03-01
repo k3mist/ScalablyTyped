@@ -34,3 +34,24 @@ trait StateMachineState extends js.Object {
   ] = js.undefined
 }
 
+object StateMachineState {
+  @scala.inline
+  def apply(
+    creationDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    definition: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): StateMachineState = {
+    val __obj = js.Dynamic.literal()
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StateMachineState]
+  }
+}
+

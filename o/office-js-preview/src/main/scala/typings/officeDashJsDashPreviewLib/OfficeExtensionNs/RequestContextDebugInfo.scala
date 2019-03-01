@@ -15,3 +15,12 @@ trait RequestContextDebugInfo extends js.Object {
   var pendingStatements: js.Array[java.lang.String]
 }
 
+object RequestContextDebugInfo {
+  @scala.inline
+  def apply(pendingStatements: js.Array[java.lang.String]): RequestContextDebugInfo = {
+    val __obj = js.Dynamic.literal(pendingStatements = pendingStatements)
+  
+    __obj.asInstanceOf[RequestContextDebugInfo]
+  }
+}
+

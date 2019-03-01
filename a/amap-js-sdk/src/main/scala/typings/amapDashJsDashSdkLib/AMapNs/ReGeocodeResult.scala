@@ -10,3 +10,12 @@ trait ReGeocodeResult extends js.Object {
   var regeocode: ReGeocode
 }
 
+object ReGeocodeResult {
+  @scala.inline
+  def apply(info: java.lang.String, regeocode: ReGeocode): ReGeocodeResult = {
+    val __obj = js.Dynamic.literal(info = info, regeocode = regeocode)
+  
+    __obj.asInstanceOf[ReGeocodeResult]
+  }
+}
+

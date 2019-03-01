@@ -15,3 +15,20 @@ trait DefaultUIProperties extends UIProperties {
   var components: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DefaultUIProperties {
+  @scala.inline
+  def apply(
+    components: js.Array[java.lang.String] = null,
+    container: stdLib.HTMLElement = null,
+    padding: js.Any | scala.Double = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): DefaultUIProperties = {
+    val __obj = js.Dynamic.literal()
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultUIProperties]
+  }
+}
+

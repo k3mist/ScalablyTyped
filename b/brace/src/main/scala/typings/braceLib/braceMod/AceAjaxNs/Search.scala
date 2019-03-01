@@ -40,3 +40,19 @@ trait Search extends js.Object {
   def setOptions(An: js.Any): scala.Unit
 }
 
+object Search {
+  @scala.inline
+  def apply(
+    find: js.Function1[IEditSession, Range],
+    findAll: js.Function1[IEditSession, js.Array[Range]],
+    getOptions: js.Function0[js.Any],
+    replace: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    set: js.Function1[js.Any, Search],
+    setOptions: js.Function1[js.Any, scala.Unit]
+  ): Search = {
+    val __obj = js.Dynamic.literal(find = find, findAll = findAll, getOptions = getOptions, replace = replace, set = set, setOptions = setOptions)
+  
+    __obj.asInstanceOf[Search]
+  }
+}
+

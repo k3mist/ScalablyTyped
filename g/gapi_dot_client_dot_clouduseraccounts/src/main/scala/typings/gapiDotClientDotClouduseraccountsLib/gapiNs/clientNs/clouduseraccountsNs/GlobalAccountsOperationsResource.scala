@@ -14,3 +14,25 @@ trait GlobalAccountsOperationsResource extends js.Object {
   def list(request: gapiDotClientDotClouduseraccountsLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
 }
 
+object GlobalAccountsOperationsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
+    ]
+  ): GlobalAccountsOperationsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[GlobalAccountsOperationsResource]
+  }
+}
+

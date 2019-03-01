@@ -12,3 +12,17 @@ trait Sql extends js.Object {
   var sql: java.lang.String
 }
 
+object Sql {
+  @scala.inline
+  def apply(
+    bindings: js.Array[knexLib.Value],
+    method: java.lang.String,
+    options: js.Any,
+    sql: java.lang.String
+  ): Sql = {
+    val __obj = js.Dynamic.literal(bindings = bindings, method = method, options = options, sql = sql)
+  
+    __obj.asInstanceOf[Sql]
+  }
+}
+

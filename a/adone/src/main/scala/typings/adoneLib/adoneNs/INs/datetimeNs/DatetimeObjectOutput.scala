@@ -17,3 +17,20 @@ trait DatetimeObjectOutput extends js.Object {
   var years: scala.Double
 }
 
+object DatetimeObjectOutput {
+  @scala.inline
+  def apply(
+    date: scala.Double,
+    hours: scala.Double,
+    milliseconds: scala.Double,
+    minutes: scala.Double,
+    months: scala.Double,
+    seconds: scala.Double,
+    years: scala.Double
+  ): DatetimeObjectOutput = {
+    val __obj = js.Dynamic.literal(date = date, hours = hours, milliseconds = milliseconds, minutes = minutes, months = months, seconds = seconds, years = years)
+  
+    __obj.asInstanceOf[DatetimeObjectOutput]
+  }
+}
+

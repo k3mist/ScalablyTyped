@@ -29,3 +29,34 @@ trait AstVisitor extends js.Object {
   def visitSafePropertyRead(ast: SafePropertyRead, context: js.Any): js.Any
 }
 
+object AstVisitor {
+  @scala.inline
+  def apply(
+    visitBinary: js.Function2[Binary, js.Any, js.Any],
+    visitChain: js.Function2[Chain, js.Any, js.Any],
+    visitConditional: js.Function2[Conditional, js.Any, js.Any],
+    visitFunctionCall: js.Function2[FunctionCall, js.Any, js.Any],
+    visitImplicitReceiver: js.Function2[ImplicitReceiver, js.Any, js.Any],
+    visitInterpolation: js.Function2[Interpolation, js.Any, js.Any],
+    visitKeyedRead: js.Function2[KeyedRead, js.Any, js.Any],
+    visitKeyedWrite: js.Function2[KeyedWrite, js.Any, js.Any],
+    visitLiteralArray: js.Function2[LiteralArray, js.Any, js.Any],
+    visitLiteralMap: js.Function2[LiteralMap, js.Any, js.Any],
+    visitLiteralPrimitive: js.Function2[LiteralPrimitive, js.Any, js.Any],
+    visitMethodCall: js.Function2[MethodCall, js.Any, js.Any],
+    visitNonNullAssert: js.Function2[NonNullAssert, js.Any, js.Any],
+    visitPipe: js.Function2[BindingPipe, js.Any, js.Any],
+    visitPrefixNot: js.Function2[PrefixNot, js.Any, js.Any],
+    visitPropertyRead: js.Function2[PropertyRead, js.Any, js.Any],
+    visitPropertyWrite: js.Function2[PropertyWrite, js.Any, js.Any],
+    visitQuote: js.Function2[Quote, js.Any, js.Any],
+    visitSafeMethodCall: js.Function2[SafeMethodCall, js.Any, js.Any],
+    visitSafePropertyRead: js.Function2[SafePropertyRead, js.Any, js.Any],
+    visit: js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], _] = null
+  ): AstVisitor = {
+    val __obj = js.Dynamic.literal(visitBinary = visitBinary, visitChain = visitChain, visitConditional = visitConditional, visitFunctionCall = visitFunctionCall, visitImplicitReceiver = visitImplicitReceiver, visitInterpolation = visitInterpolation, visitKeyedRead = visitKeyedRead, visitKeyedWrite = visitKeyedWrite, visitLiteralArray = visitLiteralArray, visitLiteralMap = visitLiteralMap, visitLiteralPrimitive = visitLiteralPrimitive, visitMethodCall = visitMethodCall, visitNonNullAssert = visitNonNullAssert, visitPipe = visitPipe, visitPrefixNot = visitPrefixNot, visitPropertyRead = visitPropertyRead, visitPropertyWrite = visitPropertyWrite, visitQuote = visitQuote, visitSafeMethodCall = visitSafeMethodCall, visitSafePropertyRead = visitSafePropertyRead)
+    if (visit != null) __obj.updateDynamic("visit")(visit)
+    __obj.asInstanceOf[AstVisitor]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_TypeT[T /* <: typesafeDashActionsLib.distTypesMod.StringType */]
   var `type`: T
 }
 
+object Anon_TypeT {
+  @scala.inline
+  def apply[T /* <: typesafeDashActionsLib.distTypesMod.StringType */](`type`: T): Anon_TypeT[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_TypeT[T]]
+  }
+}
+

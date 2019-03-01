@@ -27,3 +27,32 @@ trait FieldTemplateProps extends js.Object {
   var uiSchema: UiSchema
 }
 
+object FieldTemplateProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    classNames: java.lang.String,
+    description: reactLib.reactMod.ReactNs.ReactElement[_],
+    disabled: scala.Boolean,
+    displayLabel: scala.Boolean,
+    errors: reactLib.reactMod.ReactNs.ReactElement[_],
+    fields: js.Array[Field],
+    formContext: js.Any,
+    help: reactLib.reactMod.ReactNs.ReactElement[_],
+    hidden: scala.Boolean,
+    id: java.lang.String,
+    label: java.lang.String,
+    rawDescription: java.lang.String,
+    rawErrors: js.Array[java.lang.String],
+    rawHelp: java.lang.String,
+    readonly: scala.Boolean,
+    required: scala.Boolean,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    uiSchema: UiSchema
+  ): FieldTemplateProps = {
+    val __obj = js.Dynamic.literal(children = children, classNames = classNames, description = description, disabled = disabled, displayLabel = displayLabel, errors = errors, fields = fields, formContext = formContext, help = help, hidden = hidden, id = id, label = label, rawDescription = rawDescription, rawErrors = rawErrors, rawHelp = rawHelp, readonly = readonly, required = required, schema = schema, uiSchema = uiSchema)
+  
+    __obj.asInstanceOf[FieldTemplateProps]
+  }
+}
+

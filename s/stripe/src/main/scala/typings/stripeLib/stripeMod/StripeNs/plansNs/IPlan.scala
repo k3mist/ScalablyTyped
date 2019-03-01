@@ -86,3 +86,37 @@ trait IPlan
   var usage_type: stripeLib.stripeLibStrings.metered | stripeLib.stripeLibStrings.licensed
 }
 
+object IPlan {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    amount: scala.Double,
+    billing_scheme: stripeLib.stripeLibStrings.per_unit | stripeLib.stripeLibStrings.tiered,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    interval: IntervalUnit,
+    interval_count: scala.Double,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.plan,
+    trial_period_days: scala.Double,
+    usage_type: stripeLib.stripeLibStrings.metered | stripeLib.stripeLibStrings.licensed,
+    aggregate_usage: stripeLib.stripeLibStrings.sum | stripeLib.stripeLibStrings.last_during_period | stripeLib.stripeLibStrings.last_ever | stripeLib.stripeLibStrings.max = null,
+    nickname: java.lang.String = null,
+    product: java.lang.String | stripeLib.stripeMod.StripeNs.productsNs.IProduct = null,
+    tiers: js.Array[ITier] = null,
+    tiers_mode: stripeLib.stripeLibStrings.graduated | stripeLib.stripeLibStrings.volume = null,
+    transform_usage: ITransformUsage = null
+  ): IPlan = {
+    val __obj = js.Dynamic.literal(active = active, amount = amount, billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created, currency = currency, id = id, interval = interval, interval_count = interval_count, livemode = livemode, metadata = metadata, `object` = `object`, trial_period_days = trial_period_days, usage_type = usage_type.asInstanceOf[js.Any])
+    if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (tiers != null) __obj.updateDynamic("tiers")(tiers)
+    if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
+    if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage)
+    __obj.asInstanceOf[IPlan]
+  }
+}
+

@@ -34,3 +34,19 @@ trait BoostingQuery extends Query {
   def toJSON(): js.Any
 }
 
+object BoostingQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, BoostingQuery],
+    negative: js.Function1[js.Object, BoostingQuery],
+    negativeBoost: js.Function1[scala.Double, BoostingQuery],
+    positive: js.Function1[js.Object, BoostingQuery],
+    toJSON: js.Function0[js.Any]
+  ): BoostingQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, negative = negative, negativeBoost = negativeBoost, positive = positive, toJSON = toJSON)
+  
+    __obj.asInstanceOf[BoostingQuery]
+  }
+}
+

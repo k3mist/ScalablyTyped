@@ -39,3 +39,32 @@ trait XInterfaceAttributeTypeDescription2 extends XInterfaceAttributeTypeDescrip
   def isBound(): scala.Boolean
 }
 
+object XInterfaceAttributeTypeDescription2 {
+  @scala.inline
+  def apply(
+    GetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription],
+    MemberName: java.lang.String,
+    Name: java.lang.String,
+    Position: scala.Double,
+    SetExceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription],
+    Type: XTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getGetExceptions: js.Function0[activexDashInteropLib.SafeArray[XCompoundTypeDescription]],
+    getMemberName: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPosition: js.Function0[scala.Double],
+    getSetExceptions: js.Function0[activexDashInteropLib.SafeArray[XCompoundTypeDescription]],
+    getType: js.Function0[XTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    isBound: js.Function0[scala.Boolean],
+    isReadOnly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceAttributeTypeDescription2 = {
+    val __obj = js.Dynamic.literal(GetExceptions = GetExceptions, MemberName = MemberName, Name = Name, Position = Position, SetExceptions = SetExceptions, Type = Type, TypeClass = TypeClass, acquire = acquire, getGetExceptions = getGetExceptions, getMemberName = getMemberName, getName = getName, getPosition = getPosition, getSetExceptions = getSetExceptions, getType = getType, getTypeClass = getTypeClass, isBound = isBound, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XInterfaceAttributeTypeDescription2]
+  }
+}
+

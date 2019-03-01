@@ -28,3 +28,18 @@ trait XSAXEventKeeperStatusChangeBroadcaster
   def removeSAXEventKeeperStatusChangeListener(listener: XSAXEventKeeperStatusChangeListener): scala.Unit
 }
 
+object XSAXEventKeeperStatusChangeBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSAXEventKeeperStatusChangeListener: js.Function1[XSAXEventKeeperStatusChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSAXEventKeeperStatusChangeListener: js.Function1[XSAXEventKeeperStatusChangeListener, scala.Unit]
+  ): XSAXEventKeeperStatusChangeBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addSAXEventKeeperStatusChangeListener = addSAXEventKeeperStatusChangeListener, queryInterface = queryInterface, release = release, removeSAXEventKeeperStatusChangeListener = removeSAXEventKeeperStatusChangeListener)
+  
+    __obj.asInstanceOf[XSAXEventKeeperStatusChangeBroadcaster]
+  }
+}
+

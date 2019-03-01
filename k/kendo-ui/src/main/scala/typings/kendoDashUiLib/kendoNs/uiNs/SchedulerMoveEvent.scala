@@ -10,3 +10,19 @@ trait SchedulerMoveEvent extends SchedulerEvent {
   var slot: js.UndefOr[js.Any] = js.undefined
 }
 
+object SchedulerMoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Scheduler,
+    event: kendoDashUiLib.kendoNs.dataNs.SchedulerEvent = null,
+    slot: js.Any = null
+  ): SchedulerMoveEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (slot != null) __obj.updateDynamic("slot")(slot)
+    __obj.asInstanceOf[SchedulerMoveEvent]
+  }
+}
+

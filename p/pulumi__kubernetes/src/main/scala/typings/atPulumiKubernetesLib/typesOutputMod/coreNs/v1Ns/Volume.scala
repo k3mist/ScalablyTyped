@@ -148,3 +148,41 @@ trait Volume extends js.Object {
   val vsphereVolume: VsphereVirtualDiskVolumeSource
 }
 
+object Volume {
+  @scala.inline
+  def apply(
+    awsElasticBlockStore: AWSElasticBlockStoreVolumeSource,
+    azureDisk: AzureDiskVolumeSource,
+    azureFile: AzureFileVolumeSource,
+    cephfs: CephFSVolumeSource,
+    cinder: CinderVolumeSource,
+    configMap: ConfigMapVolumeSource,
+    downwardAPI: DownwardAPIVolumeSource,
+    emptyDir: EmptyDirVolumeSource,
+    fc: FCVolumeSource,
+    flexVolume: FlexVolumeSource,
+    flocker: FlockerVolumeSource,
+    gcePersistentDisk: GCEPersistentDiskVolumeSource,
+    gitRepo: GitRepoVolumeSource,
+    glusterfs: GlusterfsVolumeSource,
+    hostPath: HostPathVolumeSource,
+    iscsi: ISCSIVolumeSource,
+    name: java.lang.String,
+    nfs: NFSVolumeSource,
+    persistentVolumeClaim: PersistentVolumeClaimVolumeSource,
+    photonPersistentDisk: PhotonPersistentDiskVolumeSource,
+    portworxVolume: PortworxVolumeSource,
+    projected: ProjectedVolumeSource,
+    quobyte: QuobyteVolumeSource,
+    rbd: RBDVolumeSource,
+    scaleIO: ScaleIOVolumeSource,
+    secret: SecretVolumeSource,
+    storageos: StorageOSVolumeSource,
+    vsphereVolume: VsphereVirtualDiskVolumeSource
+  ): Volume = {
+    val __obj = js.Dynamic.literal(awsElasticBlockStore = awsElasticBlockStore, azureDisk = azureDisk, azureFile = azureFile, cephfs = cephfs, cinder = cinder, configMap = configMap, downwardAPI = downwardAPI, emptyDir = emptyDir, fc = fc, flexVolume = flexVolume, flocker = flocker, gcePersistentDisk = gcePersistentDisk, gitRepo = gitRepo, glusterfs = glusterfs, hostPath = hostPath, iscsi = iscsi, name = name, nfs = nfs, persistentVolumeClaim = persistentVolumeClaim, photonPersistentDisk = photonPersistentDisk, portworxVolume = portworxVolume, projected = projected, quobyte = quobyte, rbd = rbd, scaleIO = scaleIO, secret = secret, storageos = storageos, vsphereVolume = vsphereVolume)
+  
+    __obj.asInstanceOf[Volume]
+  }
+}
+

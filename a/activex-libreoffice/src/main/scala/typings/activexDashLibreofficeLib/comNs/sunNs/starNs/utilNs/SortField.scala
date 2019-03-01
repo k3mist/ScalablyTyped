@@ -18,3 +18,12 @@ trait SortField extends js.Object {
   var SortAscending: scala.Boolean
 }
 
+object SortField {
+  @scala.inline
+  def apply(Field: scala.Double, FieldType: SortFieldType, SortAscending: scala.Boolean): SortField = {
+    val __obj = js.Dynamic.literal(Field = Field, FieldType = FieldType, SortAscending = SortAscending)
+  
+    __obj.asInstanceOf[SortField]
+  }
+}
+

@@ -27,3 +27,16 @@ trait XContainerApproveListener extends js.Object {
   def approveReplaceElement(Event: ContainerEvent): activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto
 }
 
+object XContainerApproveListener {
+  @scala.inline
+  def apply(
+    approveInsertElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto],
+    approveRemoveElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto],
+    approveReplaceElement: js.Function1[ContainerEvent, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XVeto]
+  ): XContainerApproveListener = {
+    val __obj = js.Dynamic.literal(approveInsertElement = approveInsertElement, approveRemoveElement = approveRemoveElement, approveReplaceElement = approveReplaceElement)
+  
+    __obj.asInstanceOf[XContainerApproveListener]
+  }
+}
+

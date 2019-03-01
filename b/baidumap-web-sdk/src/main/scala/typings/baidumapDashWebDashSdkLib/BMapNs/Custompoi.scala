@@ -24,3 +24,29 @@ trait Custompoi extends js.Object {
   var typeId: scala.Double
 }
 
+object Custompoi {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    city: java.lang.String,
+    cityCode: scala.Double,
+    databoxId: java.lang.String,
+    district: java.lang.String,
+    districtCode: scala.Double,
+    extendedData: js.Any,
+    phoneNumber: java.lang.String,
+    poiId: java.lang.String,
+    point: Point,
+    postcode: java.lang.String,
+    province: java.lang.String,
+    provinceCode: scala.Double,
+    tags: js.Array[java.lang.String],
+    title: java.lang.String,
+    typeId: scala.Double
+  ): Custompoi = {
+    val __obj = js.Dynamic.literal(address = address, city = city, cityCode = cityCode, databoxId = databoxId, district = district, districtCode = districtCode, extendedData = extendedData, phoneNumber = phoneNumber, poiId = poiId, point = point, postcode = postcode, province = province, provinceCode = provinceCode, tags = tags, title = title, typeId = typeId)
+  
+    __obj.asInstanceOf[Custompoi]
+  }
+}
+

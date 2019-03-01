@@ -55,3 +55,43 @@ trait IUtilArc extends js.Object {
   ): js.Array[Point]
 }
 
+object IUtilArc {
+  @scala.inline
+  def apply(
+    drawArc: js.Function4[
+      stdLib.CanvasRenderingContext2D, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      scala.Unit
+    ],
+    getBoundsOfArc: js.Function9[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[Point]
+    ],
+    getBoundsOfCurve: js.Function8[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[Point]
+    ]
+  ): IUtilArc = {
+    val __obj = js.Dynamic.literal(drawArc = drawArc, getBoundsOfArc = getBoundsOfArc, getBoundsOfCurve = getBoundsOfCurve)
+  
+    __obj.asInstanceOf[IUtilArc]
+  }
+}
+

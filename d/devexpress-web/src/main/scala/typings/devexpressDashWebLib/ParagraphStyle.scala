@@ -36,3 +36,20 @@ trait ParagraphStyle extends StyleBase {
   var parent: ParagraphStyle
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    isDeleted: scala.Boolean,
+    linkedStyle: CharacterStyle,
+    listIndex: scala.Double,
+    listLevelIndex: scala.Double,
+    name: java.lang.String,
+    nextStyle: ParagraphStyle,
+    parent: ParagraphStyle
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal(isDeleted = isDeleted, linkedStyle = linkedStyle, listIndex = listIndex, listLevelIndex = listLevelIndex, name = name, nextStyle = nextStyle, parent = parent)
+  
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

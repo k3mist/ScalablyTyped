@@ -23,3 +23,15 @@ trait ITheme extends js.Object {
   def getNoisePresentation(noisePoint: INoisePoint): heremapsLib.HNs.mapNs.Object
 }
 
+object ITheme {
+  @scala.inline
+  def apply(
+    getClusterPresentation: js.Function1[ICluster, heremapsLib.HNs.mapNs.Object],
+    getNoisePresentation: js.Function1[INoisePoint, heremapsLib.HNs.mapNs.Object]
+  ): ITheme = {
+    val __obj = js.Dynamic.literal(getClusterPresentation = getClusterPresentation, getNoisePresentation = getNoisePresentation)
+  
+    __obj.asInstanceOf[ITheme]
+  }
+}
+

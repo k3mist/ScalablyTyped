@@ -27,3 +27,30 @@ trait TrackObjectSimplified extends js.Object {
   var uri: java.lang.String
 }
 
+object TrackObjectSimplified {
+  @scala.inline
+  def apply(
+    artists: js.Array[ArtistObjectSimplified],
+    disc_number: scala.Double,
+    duration_ms: scala.Double,
+    explicit: scala.Boolean,
+    external_urls: ExternalUrlObject,
+    href: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    preview_url: java.lang.String,
+    track_number: scala.Double,
+    `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track,
+    uri: java.lang.String,
+    available_markets: js.Array[java.lang.String] = null,
+    is_playable: js.UndefOr[scala.Boolean] = js.undefined,
+    linked_from: TrackLinkObject = null
+  ): TrackObjectSimplified = {
+    val __obj = js.Dynamic.literal(artists = artists, disc_number = disc_number, duration_ms = duration_ms, explicit = explicit, external_urls = external_urls, href = href, id = id, name = name, preview_url = preview_url, track_number = track_number, `type` = `type`, uri = uri)
+    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets)
+    if (!js.isUndefined(is_playable)) __obj.updateDynamic("is_playable")(is_playable)
+    if (linked_from != null) __obj.updateDynamic("linked_from")(linked_from)
+    __obj.asInstanceOf[TrackObjectSimplified]
+  }
+}
+

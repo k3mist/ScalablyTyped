@@ -16,3 +16,18 @@ trait ISearchContent extends js.Object {
   var subTitle: java.lang.String
 }
 
+object ISearchContent {
+  @scala.inline
+  def apply(
+    editorPath: java.lang.String,
+    id: scala.Double,
+    menuUrl: java.lang.String,
+    metaData: umbracoLib.Anon_Url,
+    subTitle: java.lang.String
+  ): ISearchContent = {
+    val __obj = js.Dynamic.literal(editorPath = editorPath, id = id, menuUrl = menuUrl, metaData = metaData, subTitle = subTitle)
+  
+    __obj.asInstanceOf[ISearchContent]
+  }
+}
+

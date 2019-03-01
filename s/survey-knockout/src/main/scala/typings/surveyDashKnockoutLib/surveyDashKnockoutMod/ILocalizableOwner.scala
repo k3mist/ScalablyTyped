@@ -11,3 +11,16 @@ trait ILocalizableOwner extends js.Object {
   def getProcessedText(text: java.lang.String): java.lang.String
 }
 
+object ILocalizableOwner {
+  @scala.inline
+  def apply(
+    getLocale: js.Function0[java.lang.String],
+    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
+    getProcessedText: js.Function1[java.lang.String, java.lang.String]
+  ): ILocalizableOwner = {
+    val __obj = js.Dynamic.literal(getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText)
+  
+    __obj.asInstanceOf[ILocalizableOwner]
+  }
+}
+

@@ -25,3 +25,21 @@ trait ViewportDescriptor extends js.Object {
   var width: SizeDescriptor
 }
 
+object ViewportDescriptor {
+  @scala.inline
+  def apply(
+    bottom: PositionDescriptor,
+    center: PositionDescriptor,
+    height: SizeDescriptor,
+    left: PositionDescriptor,
+    middle: PositionDescriptor,
+    right: PositionDescriptor,
+    top: PositionDescriptor,
+    width: SizeDescriptor
+  ): ViewportDescriptor = {
+    val __obj = js.Dynamic.literal(bottom = bottom, center = center, height = height, left = left, middle = middle, right = right, top = top, width = width)
+  
+    __obj.asInstanceOf[ViewportDescriptor]
+  }
+}
+

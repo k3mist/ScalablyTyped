@@ -13,3 +13,18 @@ trait IArraySplice[T] extends js.Object {
   var `type`: java.lang.String
 }
 
+object IArraySplice {
+  @scala.inline
+  def apply[T](
+    addedCount: scala.Double,
+    index: scala.Double,
+    `object`: IObservableArray[T],
+    removed: js.Array[T],
+    `type`: java.lang.String
+  ): IArraySplice[T] = {
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, `object` = `object`, removed = removed, `type` = `type`)
+  
+    __obj.asInstanceOf[IArraySplice[T]]
+  }
+}
+

@@ -20,3 +20,12 @@ trait File extends js.Object {
   var size: scala.Double
 }
 
+object File {
+  @scala.inline
+  def apply(createTime: scala.Double, filePath: java.lang.String, size: scala.Double): File = {
+    val __obj = js.Dynamic.literal(createTime = createTime, filePath = filePath, size = size)
+  
+    __obj.asInstanceOf[File]
+  }
+}
+

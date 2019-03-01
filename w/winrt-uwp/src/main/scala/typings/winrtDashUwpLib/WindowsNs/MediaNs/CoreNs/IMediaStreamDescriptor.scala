@@ -15,3 +15,12 @@ trait IMediaStreamDescriptor extends js.Object {
   var name: java.lang.String
 }
 
+object IMediaStreamDescriptor {
+  @scala.inline
+  def apply(isSelected: scala.Boolean, language: java.lang.String, name: java.lang.String): IMediaStreamDescriptor = {
+    val __obj = js.Dynamic.literal(isSelected = isSelected, language = language, name = name)
+  
+    __obj.asInstanceOf[IMediaStreamDescriptor]
+  }
+}
+

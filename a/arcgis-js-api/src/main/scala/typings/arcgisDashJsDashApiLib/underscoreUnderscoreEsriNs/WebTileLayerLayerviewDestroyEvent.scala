@@ -10,3 +10,12 @@ trait WebTileLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object WebTileLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): WebTileLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[WebTileLayerLayerviewDestroyEvent]
+  }
+}
+

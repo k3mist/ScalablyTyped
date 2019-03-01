@@ -183,3 +183,42 @@ trait Document extends js.Object {
   def setValue(text: java.lang.String): scala.Unit
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    applyDeltas: js.Function1[js.Array[Delta], scala.Unit],
+    createAnchor: js.Function2[scala.Double, scala.Double, scala.Unit],
+    getAllLines: js.Function0[js.Array[java.lang.String]],
+    getLength: js.Function0[scala.Double],
+    getLine: js.Function1[scala.Double, java.lang.String],
+    getLines: js.Function2[scala.Double, scala.Double, js.Array[java.lang.String]],
+    getNewLineCharacter: js.Function0[java.lang.String],
+    getNewLineMode: js.Function0[java.lang.String],
+    getTextRange: js.Function1[Range, java.lang.String],
+    getValue: js.Function0[java.lang.String],
+    indexToPosition: js.Function2[scala.Double, scala.Double, Position],
+    insert: js.Function2[Position, java.lang.String, js.Any],
+    insertFullLines: js.Function2[scala.Double, js.Array[java.lang.String], js.Any],
+    insertInLine: js.Function2[js.Any, java.lang.String, js.Any],
+    insertLines: js.Function2[scala.Double, js.Array[java.lang.String], js.Any],
+    insertMergedLines: js.Function2[scala.Double, js.Array[java.lang.String], js.Any],
+    insertNewLine: js.Function1[Position, js.Any],
+    isNewLine: js.Function1[java.lang.String, scala.Boolean],
+    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
+    positionToIndex: js.Function2[Position, scala.Double, scala.Double],
+    remove: js.Function1[Range, js.Any],
+    removeFullLines: js.Function2[scala.Double, scala.Double, js.Array[java.lang.String]],
+    removeInLine: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
+    removeLines: js.Function2[scala.Double, scala.Double, js.Array[java.lang.String]],
+    removeNewLine: js.Function1[scala.Double, scala.Unit],
+    replace: js.Function2[Range, java.lang.String, js.Any],
+    revertDeltas: js.Function1[js.Array[Delta], scala.Unit],
+    setNewLineMode: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function1[java.lang.String, scala.Unit]
+  ): Document = {
+    val __obj = js.Dynamic.literal(applyDeltas = applyDeltas, createAnchor = createAnchor, getAllLines = getAllLines, getLength = getLength, getLine = getLine, getLines = getLines, getNewLineCharacter = getNewLineCharacter, getNewLineMode = getNewLineMode, getTextRange = getTextRange, getValue = getValue, indexToPosition = indexToPosition, insert = insert, insertFullLines = insertFullLines, insertInLine = insertInLine, insertLines = insertLines, insertMergedLines = insertMergedLines, insertNewLine = insertNewLine, isNewLine = isNewLine, on = on, positionToIndex = positionToIndex, remove = remove, removeFullLines = removeFullLines, removeInLine = removeInLine, removeLines = removeLines, removeNewLine = removeNewLine, replace = replace, revertDeltas = revertDeltas, setNewLineMode = setNewLineMode, setValue = setValue)
+  
+    __obj.asInstanceOf[Document]
+  }
+}
+

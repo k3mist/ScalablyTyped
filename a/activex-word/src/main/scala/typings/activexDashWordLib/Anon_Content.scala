@@ -10,3 +10,12 @@ trait Anon_Content extends js.Object {
   val ContentControl: activexDashWordLib.WordNs.ContentControl
 }
 
+object Anon_Content {
+  @scala.inline
+  def apply(Content: java.lang.String, ContentControl: activexDashWordLib.WordNs.ContentControl): Anon_Content = {
+    val __obj = js.Dynamic.literal(Content = Content, ContentControl = ContentControl)
+  
+    __obj.asInstanceOf[Anon_Content]
+  }
+}
+

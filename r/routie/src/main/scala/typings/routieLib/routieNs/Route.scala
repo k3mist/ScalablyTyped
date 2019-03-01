@@ -13,3 +13,18 @@ trait Route extends js.Object {
   def toURL(params: js.Any): java.lang.String
 }
 
+object Route {
+  @scala.inline
+  def apply(
+    addHandler: js.Function1[js.Function, scala.Unit],
+    `match`: js.Function2[java.lang.String, js.Any, scala.Boolean],
+    removeHandler: js.Function1[js.Function, scala.Unit],
+    run: js.Function1[js.Any, scala.Unit],
+    toURL: js.Function1[js.Any, java.lang.String]
+  ): Route = {
+    val __obj = js.Dynamic.literal(addHandler = addHandler, `match` = `match`, removeHandler = removeHandler, run = run, toURL = toURL)
+  
+    __obj.asInstanceOf[Route]
+  }
+}
+

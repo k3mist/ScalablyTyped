@@ -12,3 +12,12 @@ trait X11Details extends js.Object {
   var srcPort: scala.Double
 }
 
+object X11Details {
+  @scala.inline
+  def apply(srcIP: java.lang.String, srcPort: scala.Double): X11Details = {
+    val __obj = js.Dynamic.literal(srcIP = srcIP, srcPort = srcPort)
+  
+    __obj.asInstanceOf[X11Details]
+  }
+}
+

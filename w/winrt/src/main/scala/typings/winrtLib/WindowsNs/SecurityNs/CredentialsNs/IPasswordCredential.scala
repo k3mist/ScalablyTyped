@@ -13,3 +13,18 @@ trait IPasswordCredential extends js.Object {
   def retrievePassword(): scala.Unit
 }
 
+object IPasswordCredential {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet,
+    resource: java.lang.String,
+    retrievePassword: js.Function0[scala.Unit],
+    userName: java.lang.String
+  ): IPasswordCredential = {
+    val __obj = js.Dynamic.literal(password = password, properties = properties, resource = resource, retrievePassword = retrievePassword, userName = userName)
+  
+    __obj.asInstanceOf[IPasswordCredential]
+  }
+}
+

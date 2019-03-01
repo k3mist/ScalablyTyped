@@ -24,3 +24,18 @@ trait NotificationTracing extends NotificationTracingSetParameters {
   var tracedEntries: scala.Double
 }
 
+object NotificationTracing {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    endDate: stdLib.Date,
+    maxTracedEntries: scala.Double,
+    startDate: stdLib.Date,
+    tracedEntries: scala.Double
+  ): NotificationTracing = {
+    val __obj = js.Dynamic.literal(enabled = enabled, endDate = endDate, maxTracedEntries = maxTracedEntries, startDate = startDate, tracedEntries = tracedEntries)
+  
+    __obj.asInstanceOf[NotificationTracing]
+  }
+}
+

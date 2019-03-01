@@ -70,3 +70,42 @@ trait QueueState extends js.Object {
   val visibilityTimeoutSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object QueueState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    contentBasedDeduplication: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    delaySeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    fifoQueue: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    kmsDataKeyReusePeriodSeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    kmsMasterKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    maxMessageSize: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    messageRetentionSeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    receiveWaitTimeSeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    redrivePolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    visibilityTimeoutSeconds: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): QueueState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (contentBasedDeduplication != null) __obj.updateDynamic("contentBasedDeduplication")(contentBasedDeduplication.asInstanceOf[js.Any])
+    if (delaySeconds != null) __obj.updateDynamic("delaySeconds")(delaySeconds.asInstanceOf[js.Any])
+    if (fifoQueue != null) __obj.updateDynamic("fifoQueue")(fifoQueue.asInstanceOf[js.Any])
+    if (kmsDataKeyReusePeriodSeconds != null) __obj.updateDynamic("kmsDataKeyReusePeriodSeconds")(kmsDataKeyReusePeriodSeconds.asInstanceOf[js.Any])
+    if (kmsMasterKeyId != null) __obj.updateDynamic("kmsMasterKeyId")(kmsMasterKeyId.asInstanceOf[js.Any])
+    if (maxMessageSize != null) __obj.updateDynamic("maxMessageSize")(maxMessageSize.asInstanceOf[js.Any])
+    if (messageRetentionSeconds != null) __obj.updateDynamic("messageRetentionSeconds")(messageRetentionSeconds.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (receiveWaitTimeSeconds != null) __obj.updateDynamic("receiveWaitTimeSeconds")(receiveWaitTimeSeconds.asInstanceOf[js.Any])
+    if (redrivePolicy != null) __obj.updateDynamic("redrivePolicy")(redrivePolicy.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (visibilityTimeoutSeconds != null) __obj.updateDynamic("visibilityTimeoutSeconds")(visibilityTimeoutSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueueState]
+  }
+}
+

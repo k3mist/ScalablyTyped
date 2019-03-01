@@ -13,3 +13,18 @@ trait TaskGroupDefinition extends js.Object {
   var visibleRule: java.lang.String
 }
 
+object TaskGroupDefinition {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    isExpanded: scala.Boolean,
+    name: java.lang.String,
+    tags: js.Array[java.lang.String],
+    visibleRule: java.lang.String
+  ): TaskGroupDefinition = {
+    val __obj = js.Dynamic.literal(displayName = displayName, isExpanded = isExpanded, name = name, tags = tags, visibleRule = visibleRule)
+  
+    __obj.asInstanceOf[TaskGroupDefinition]
+  }
+}
+

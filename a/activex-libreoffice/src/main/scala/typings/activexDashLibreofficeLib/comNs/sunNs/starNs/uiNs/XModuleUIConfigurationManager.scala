@@ -31,3 +31,21 @@ trait XModuleUIConfigurationManager
   def isDefaultSettings(ResourceURL: java.lang.String): scala.Boolean
 }
 
+object XModuleUIConfigurationManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDefaultSettings: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    isDefaultSettings: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XModuleUIConfigurationManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultSettings = getDefaultSettings, isDefaultSettings = isDefaultSettings, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XModuleUIConfigurationManager]
+  }
+}
+

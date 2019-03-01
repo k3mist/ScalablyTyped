@@ -9,3 +9,12 @@ trait Command extends js.Object {
   var id: java.lang.String
 }
 
+object Command {
+  @scala.inline
+  def apply(id: java.lang.String): Command = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[Command]
+  }
+}
+

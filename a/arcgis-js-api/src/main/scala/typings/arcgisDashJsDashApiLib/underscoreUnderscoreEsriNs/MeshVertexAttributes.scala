@@ -32,3 +32,33 @@ trait MeshVertexAttributes extends AnonymousAccessor {
   var uv: js.UndefOr[stdLib.Float32Array] = js.undefined
 }
 
+object MeshVertexAttributes {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    position: stdLib.Float64Array,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    color: stdLib.Uint8Array = null,
+    get: js.Function1[/* propertyName */ java.lang.String, _] = null,
+    normal: stdLib.Float32Array = null,
+    set: (js.Function2[/* propertyName */ java.lang.String, /* value */ js.Any, MeshVertexAttributes]) with (js.Function1[/* props */ arcgisDashJsDashApiLib.HashMap[_], MeshVertexAttributes]) = null,
+    uv: stdLib.Float32Array = null,
+    watch: js.Function3[
+      /* path */ java.lang.String | js.Array[java.lang.String], 
+      /* callback */ WatchCallback, 
+      /* sync */ js.UndefOr[scala.Boolean], 
+      WatchHandle
+    ] = null
+  ): MeshVertexAttributes = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, position = position, propertyIsEnumerable = propertyIsEnumerable)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (normal != null) __obj.updateDynamic("normal")(normal)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (uv != null) __obj.updateDynamic("uv")(uv)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[MeshVertexAttributes]
+  }
+}
+

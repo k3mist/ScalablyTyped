@@ -20,3 +20,25 @@ trait BlockDevicesData extends js.Object {
   var uuid: java.lang.String
 }
 
+object BlockDevicesData {
+  @scala.inline
+  def apply(
+    fstype: java.lang.String,
+    label: java.lang.String,
+    model: java.lang.String,
+    mount: java.lang.String,
+    name: java.lang.String,
+    physical: java.lang.String,
+    protocol: java.lang.String,
+    removable: scala.Boolean,
+    serial: java.lang.String,
+    size: scala.Double,
+    `type`: java.lang.String,
+    uuid: java.lang.String
+  ): BlockDevicesData = {
+    val __obj = js.Dynamic.literal(fstype = fstype, label = label, model = model, mount = mount, name = name, physical = physical, protocol = protocol, removable = removable, serial = serial, size = size, `type` = `type`, uuid = uuid)
+  
+    __obj.asInstanceOf[BlockDevicesData]
+  }
+}
+

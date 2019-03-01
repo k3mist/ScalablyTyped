@@ -18,3 +18,19 @@ import scala.scalajs.js.annotation._
   var value: astDashTypesLib.genKindsMod.FlowTypeKind
 }
 
+object ObjectTypeInternalSlot {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    method: scala.Boolean,
+    optional: scala.Boolean,
+    static: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeInternalSlot,
+    value: astDashTypesLib.genKindsMod.FlowTypeKind
+  ): ObjectTypeInternalSlot = {
+    val __obj = js.Dynamic.literal(id = id, method = method, optional = optional, static = static, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[ObjectTypeInternalSlot]
+  }
+}
+

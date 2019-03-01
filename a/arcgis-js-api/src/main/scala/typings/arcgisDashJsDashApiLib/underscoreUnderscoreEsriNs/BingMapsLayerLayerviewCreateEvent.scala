@@ -10,3 +10,12 @@ trait BingMapsLayerLayerviewCreateEvent extends js.Object {
   var view: View
 }
 
+object BingMapsLayerLayerviewCreateEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): BingMapsLayerLayerviewCreateEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[BingMapsLayerLayerviewCreateEvent]
+  }
+}
+

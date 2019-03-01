@@ -18,3 +18,18 @@ trait Anon_MINEONLY extends js.Object {
   var SUPPORT_TEAM_DRIVES: java.lang.String
 }
 
+object Anon_MINEONLY {
+  @scala.inline
+  def apply(
+    MINE_ONLY: java.lang.String,
+    MULTISELECT_ENABLED: java.lang.String,
+    NAV_HIDDEN: java.lang.String,
+    SIMPLE_UPLOAD_ENABLED: java.lang.String,
+    SUPPORT_TEAM_DRIVES: java.lang.String
+  ): Anon_MINEONLY = {
+    val __obj = js.Dynamic.literal(MINE_ONLY = MINE_ONLY, MULTISELECT_ENABLED = MULTISELECT_ENABLED, NAV_HIDDEN = NAV_HIDDEN, SIMPLE_UPLOAD_ENABLED = SIMPLE_UPLOAD_ENABLED, SUPPORT_TEAM_DRIVES = SUPPORT_TEAM_DRIVES)
+  
+    __obj.asInstanceOf[Anon_MINEONLY]
+  }
+}
+

@@ -68,3 +68,28 @@ trait Anon_AcbRating extends js.Object {
   var tvpgRating: java.lang.String
 }
 
+object Anon_AcbRating {
+  @scala.inline
+  def apply(
+    acbRating: java.lang.String,
+    bbfcRating: java.lang.String,
+    cbfcRating: java.lang.String,
+    chvrsRating: java.lang.String,
+    djctqRating: java.lang.String,
+    eirinRating: java.lang.String,
+    fmocRating: java.lang.String,
+    fskRating: java.lang.String,
+    icaaRating: java.lang.String,
+    kmrbRating: java.lang.String,
+    mpaaRating: java.lang.String,
+    oflcRating: java.lang.String,
+    rtcRating: java.lang.String,
+    russiaRating: java.lang.String,
+    tvpgRating: java.lang.String
+  ): Anon_AcbRating = {
+    val __obj = js.Dynamic.literal(acbRating = acbRating, bbfcRating = bbfcRating, cbfcRating = cbfcRating, chvrsRating = chvrsRating, djctqRating = djctqRating, eirinRating = eirinRating, fmocRating = fmocRating, fskRating = fskRating, icaaRating = icaaRating, kmrbRating = kmrbRating, mpaaRating = mpaaRating, oflcRating = oflcRating, rtcRating = rtcRating, russiaRating = russiaRating, tvpgRating = tvpgRating)
+  
+    __obj.asInstanceOf[Anon_AcbRating]
+  }
+}
+

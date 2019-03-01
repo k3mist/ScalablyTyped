@@ -16,3 +16,20 @@ trait subscribersChangeArgs extends baseResponseArgs {
   var channel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object subscribersChangeArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    meta: js.Any,
+    timestamp: stdLib.Date,
+    change: subscribersChange = null,
+    channel: java.lang.String = null
+  ): subscribersChangeArgs = {
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, meta = meta, timestamp = timestamp)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    __obj.asInstanceOf[subscribersChangeArgs]
+  }
+}
+

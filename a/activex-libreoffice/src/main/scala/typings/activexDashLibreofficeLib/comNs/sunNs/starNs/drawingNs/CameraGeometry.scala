@@ -15,3 +15,12 @@ trait CameraGeometry extends js.Object {
   var vup: Direction3D
 }
 
+object CameraGeometry {
+  @scala.inline
+  def apply(vpn: Direction3D, vrp: Position3D, vup: Direction3D): CameraGeometry = {
+    val __obj = js.Dynamic.literal(vpn = vpn, vrp = vrp, vup = vup)
+  
+    __obj.asInstanceOf[CameraGeometry]
+  }
+}
+

@@ -13,3 +13,16 @@ trait MediaQueryList
   var type_MediaQueryList: cssDashTreeLib.cssDashTreeLibStrings.MediaQueryList
 }
 
+object MediaQueryList {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.MediaQueryList,
+    loc: CssLocation = null
+  ): MediaQueryList = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[MediaQueryList]
+  }
+}
+

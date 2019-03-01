@@ -13,3 +13,21 @@ trait IVideoEncodingProperties extends IMediaEncodingProperties {
   var width: scala.Double
 }
 
+object IVideoEncodingProperties {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    frameRate: MediaRatio,
+    height: scala.Double,
+    pixelAspectRatio: MediaRatio,
+    properties: MediaPropertySet,
+    subtype: java.lang.String,
+    `type`: java.lang.String,
+    width: scala.Double
+  ): IVideoEncodingProperties = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate, frameRate = frameRate, height = height, pixelAspectRatio = pixelAspectRatio, properties = properties, subtype = subtype, `type` = `type`, width = width)
+  
+    __obj.asInstanceOf[IVideoEncodingProperties]
+  }
+}
+

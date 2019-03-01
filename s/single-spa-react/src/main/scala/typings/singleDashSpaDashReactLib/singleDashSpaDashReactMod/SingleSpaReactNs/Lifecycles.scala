@@ -11,3 +11,16 @@ trait Lifecycles extends js.Object {
   def unmount(props: js.Any): js.Promise[scala.Unit]
 }
 
+object Lifecycles {
+  @scala.inline
+  def apply(
+    bootstrap: js.Function1[js.Any, js.Promise[scala.Unit]],
+    mount: js.Function1[js.Any, js.Promise[scala.Unit]],
+    unmount: js.Function1[js.Any, js.Promise[scala.Unit]]
+  ): Lifecycles = {
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap, mount = mount, unmount = unmount)
+  
+    __obj.asInstanceOf[Lifecycles]
+  }
+}
+

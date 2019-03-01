@@ -27,3 +27,18 @@ trait RuleTerm extends js.Object {
   var RegularExpression: scala.Boolean
 }
 
+object RuleTerm {
+  @scala.inline
+  def apply(
+    CaseSensitive: scala.Boolean,
+    Operand: js.Any,
+    Operator: scala.Double,
+    Property: java.lang.String,
+    RegularExpression: scala.Boolean
+  ): RuleTerm = {
+    val __obj = js.Dynamic.literal(CaseSensitive = CaseSensitive, Operand = Operand, Operator = Operator, Property = Property, RegularExpression = RegularExpression)
+  
+    __obj.asInstanceOf[RuleTerm]
+  }
+}
+

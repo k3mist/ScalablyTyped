@@ -25,3 +25,18 @@ trait XRef
   def getBaseTypeName(): java.lang.String
 }
 
+object XRef {
+  @scala.inline
+  def apply(
+    BaseTypeName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getBaseTypeName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRef = {
+    val __obj = js.Dynamic.literal(BaseTypeName = BaseTypeName, acquire = acquire, getBaseTypeName = getBaseTypeName, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XRef]
+  }
+}
+

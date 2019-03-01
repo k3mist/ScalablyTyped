@@ -35,3 +35,19 @@ trait XWarningsSupplier
   def getWarnings(): js.Any
 }
 
+object XWarningsSupplier {
+  @scala.inline
+  def apply(
+    Warnings: js.Any,
+    acquire: js.Function0[scala.Unit],
+    clearWarnings: js.Function0[scala.Unit],
+    getWarnings: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XWarningsSupplier = {
+    val __obj = js.Dynamic.literal(Warnings = Warnings, acquire = acquire, clearWarnings = clearWarnings, getWarnings = getWarnings, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XWarningsSupplier]
+  }
+}
+

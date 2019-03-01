@@ -10,3 +10,15 @@ trait QueryInfo extends js.Object {
   val moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults
 }
 
+object QueryInfo {
+  @scala.inline
+  def apply(
+    moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults,
+    endCursor: java.lang.String = null
+  ): QueryInfo = {
+    val __obj = js.Dynamic.literal(moreResults = moreResults.asInstanceOf[js.Any])
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
+    __obj.asInstanceOf[QueryInfo]
+  }
+}
+

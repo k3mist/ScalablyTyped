@@ -16,3 +16,12 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.DeclareInterface
 }
 
+object DeclareInterface {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.DeclareInterface): DeclareInterface = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[DeclareInterface]
+  }
+}
+

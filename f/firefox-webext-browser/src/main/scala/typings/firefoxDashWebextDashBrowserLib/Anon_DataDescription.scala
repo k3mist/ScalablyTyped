@@ -13,3 +13,17 @@ trait Anon_DataDescription
   var `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
 }
 
+object Anon_DataDescription {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    description: java.lang.String,
+    name: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID,
+    `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
+  ): Anon_DataDescription = {
+    val __obj = js.Dynamic.literal(data = data, description = description, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_DataDescription]
+  }
+}
+

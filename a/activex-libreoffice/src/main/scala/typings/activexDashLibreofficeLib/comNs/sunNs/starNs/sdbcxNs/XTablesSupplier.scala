@@ -20,3 +20,18 @@ trait XTablesSupplier
   def getTables(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XTablesSupplier {
+  @scala.inline
+  def apply(
+    Tables: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getTables: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTablesSupplier = {
+    val __obj = js.Dynamic.literal(Tables = Tables, acquire = acquire, getTables = getTables, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTablesSupplier]
+  }
+}
+

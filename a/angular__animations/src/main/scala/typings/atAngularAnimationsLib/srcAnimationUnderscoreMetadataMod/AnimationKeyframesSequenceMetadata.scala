@@ -12,3 +12,12 @@ trait AnimationKeyframesSequenceMetadata extends AnimationMetadata {
   var steps: js.Array[AnimationStyleMetadata]
 }
 
+object AnimationKeyframesSequenceMetadata {
+  @scala.inline
+  def apply(steps: js.Array[AnimationStyleMetadata], `type`: AnimationMetadataType): AnimationKeyframesSequenceMetadata = {
+    val __obj = js.Dynamic.literal(steps = steps, `type` = `type`)
+  
+    __obj.asInstanceOf[AnimationKeyframesSequenceMetadata]
+  }
+}
+

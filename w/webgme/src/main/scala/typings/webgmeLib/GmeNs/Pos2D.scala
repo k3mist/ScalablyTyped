@@ -10,3 +10,12 @@ trait Pos2D extends js.Object {
   var y: scala.Double
 }
 
+object Pos2D {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Pos2D = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[Pos2D]
+  }
+}
+

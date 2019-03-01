@@ -32,3 +32,21 @@ trait XActionLockable
   def setActionLocks(nLock: scala.Double): scala.Unit
 }
 
+object XActionLockable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addActionLock: js.Function0[scala.Unit],
+    isActionLocked: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActionLock: js.Function0[scala.Unit],
+    resetActionLocks: js.Function0[scala.Double],
+    setActionLocks: js.Function1[scala.Double, scala.Unit]
+  ): XActionLockable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addActionLock = addActionLock, isActionLocked = isActionLocked, queryInterface = queryInterface, release = release, removeActionLock = removeActionLock, resetActionLocks = resetActionLocks, setActionLocks = setActionLocks)
+  
+    __obj.asInstanceOf[XActionLockable]
+  }
+}
+

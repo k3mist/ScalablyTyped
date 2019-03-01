@@ -15,3 +15,20 @@ trait Computation extends js.Object {
   def stop(): scala.Unit
 }
 
+object Computation {
+  @scala.inline
+  def apply(
+    firstRun: scala.Boolean,
+    invalidate: js.Function0[scala.Unit],
+    invalidated: scala.Boolean,
+    onInvalidate: js.Function1[js.Function, scala.Unit],
+    onStop: js.Function1[js.Function, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    stopped: scala.Boolean
+  ): Computation = {
+    val __obj = js.Dynamic.literal(firstRun = firstRun, invalidate = invalidate, invalidated = invalidated, onInvalidate = onInvalidate, onStop = onStop, stop = stop, stopped = stopped)
+  
+    __obj.asInstanceOf[Computation]
+  }
+}
+

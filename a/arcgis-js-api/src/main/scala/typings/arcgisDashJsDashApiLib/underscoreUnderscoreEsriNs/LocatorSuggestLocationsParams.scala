@@ -33,3 +33,20 @@ trait LocatorSuggestLocationsParams
   var text: java.lang.String
 }
 
+object LocatorSuggestLocationsParams {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    constructor: js.Function,
+    distance: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    location: Point,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    text: java.lang.String
+  ): LocatorSuggestLocationsParams = {
+    val __obj = js.Dynamic.literal(categories = categories, constructor = constructor, distance = distance, hasOwnProperty = hasOwnProperty, location = location, propertyIsEnumerable = propertyIsEnumerable, text = text)
+  
+    __obj.asInstanceOf[LocatorSuggestLocationsParams]
+  }
+}
+

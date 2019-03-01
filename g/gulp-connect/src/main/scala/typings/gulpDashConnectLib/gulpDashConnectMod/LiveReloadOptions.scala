@@ -12,3 +12,12 @@ trait LiveReloadOptions extends js.Object {
   var port: scala.Double
 }
 
+object LiveReloadOptions {
+  @scala.inline
+  def apply(port: scala.Double, hostname: java.lang.String = null): LiveReloadOptions = {
+    val __obj = js.Dynamic.literal(port = port)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    __obj.asInstanceOf[LiveReloadOptions]
+  }
+}
+

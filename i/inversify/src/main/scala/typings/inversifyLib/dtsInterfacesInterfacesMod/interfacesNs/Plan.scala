@@ -10,3 +10,12 @@ trait Plan extends js.Object {
   var rootRequest: Request
 }
 
+object Plan {
+  @scala.inline
+  def apply(parentContext: Context, rootRequest: Request): Plan = {
+    val __obj = js.Dynamic.literal(parentContext = parentContext, rootRequest = rootRequest)
+  
+    __obj.asInstanceOf[Plan]
+  }
+}
+

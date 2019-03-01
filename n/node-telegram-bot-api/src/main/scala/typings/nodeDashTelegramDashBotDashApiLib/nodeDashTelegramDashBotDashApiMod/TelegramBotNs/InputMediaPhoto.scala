@@ -11,3 +11,18 @@ trait InputMediaPhoto
   var `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.photo
 }
 
+object InputMediaPhoto {
+  @scala.inline
+  def apply(
+    media: java.lang.String,
+    `type`: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.photo,
+    caption: java.lang.String = null,
+    parse_mode: ParseMode = null
+  ): InputMediaPhoto = {
+    val __obj = js.Dynamic.literal(media = media, `type` = `type`)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode)
+    __obj.asInstanceOf[InputMediaPhoto]
+  }
+}
+

@@ -36,3 +36,37 @@ trait FilterSetsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListFilterSetsResponse]
 }
 
+object FilterSetsResource {
+  @scala.inline
+  def apply(
+    bidMetrics: BidMetricsResource,
+    bidResponseErrors: BidResponseErrorsResource,
+    bidResponsesWithoutBids: BidResponsesWithoutBidsResource,
+    create: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsIsTransient, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    filteredBidRequests: FilteredBidRequestsResource,
+    filteredBids: FilteredBidsResource,
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]
+    ],
+    impressionMetrics: ImpressionMetricsResource,
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListFilterSetsResponse]
+    ],
+    losingBids: LosingBidsResource,
+    nonBillableWinningBids: NonBillableWinningBidsResource
+  ): FilterSetsResource = {
+    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics, bidResponseErrors = bidResponseErrors, bidResponsesWithoutBids = bidResponsesWithoutBids, create = create, delete = delete, filteredBidRequests = filteredBidRequests, filteredBids = filteredBids, get = get, impressionMetrics = impressionMetrics, list = list, losingBids = losingBids, nonBillableWinningBids = nonBillableWinningBids)
+  
+    __obj.asInstanceOf[FilterSetsResource]
+  }
+}
+

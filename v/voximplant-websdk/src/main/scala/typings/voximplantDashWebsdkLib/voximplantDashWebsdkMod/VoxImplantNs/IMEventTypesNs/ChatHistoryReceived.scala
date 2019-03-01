@@ -24,3 +24,16 @@ trait ChatHistoryReceived
   var messages: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMHistoryMessage]
 }
 
+object ChatHistoryReceived {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    message_id: java.lang.String,
+    messages: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMHistoryMessage]
+  ): ChatHistoryReceived = {
+    val __obj = js.Dynamic.literal(id = id, message_id = message_id, messages = messages)
+  
+    __obj.asInstanceOf[ChatHistoryReceived]
+  }
+}
+

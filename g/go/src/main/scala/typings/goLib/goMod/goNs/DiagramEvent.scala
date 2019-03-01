@@ -31,3 +31,18 @@ trait DiagramEvent extends js.Object {
   var subject: js.Any
 }
 
+object DiagramEvent {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    diagram: Diagram,
+    name: java.lang.String,
+    parameter: js.Any,
+    subject: js.Any
+  ): DiagramEvent = {
+    val __obj = js.Dynamic.literal(cancel = cancel, diagram = diagram, name = name, parameter = parameter, subject = subject)
+  
+    __obj.asInstanceOf[DiagramEvent]
+  }
+}
+

@@ -57,3 +57,26 @@ trait Control extends js.Object {
   var watermark: java.lang.String
 }
 
+object Control {
+  @scala.inline
+  def apply(
+    contribution: WitContribution,
+    controlType: java.lang.String,
+    height: scala.Double,
+    id: java.lang.String,
+    inherited: scala.Boolean,
+    isContribution: scala.Boolean,
+    label: java.lang.String,
+    metadata: java.lang.String,
+    order: scala.Double,
+    overridden: scala.Boolean,
+    readOnly: scala.Boolean,
+    visible: scala.Boolean,
+    watermark: java.lang.String
+  ): Control = {
+    val __obj = js.Dynamic.literal(contribution = contribution, controlType = controlType, height = height, id = id, inherited = inherited, isContribution = isContribution, label = label, metadata = metadata, order = order, overridden = overridden, readOnly = readOnly, visible = visible, watermark = watermark)
+  
+    __obj.asInstanceOf[Control]
+  }
+}
+

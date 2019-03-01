@@ -81,3 +81,27 @@ trait ParagraphFormattingSettings extends js.Object {
   var spacingBefore: scala.Double
 }
 
+object ParagraphFormattingSettings {
+  @scala.inline
+  def apply(
+    alignment: js.Any,
+    backColor: java.lang.String,
+    contextualSpacing: scala.Boolean,
+    firstLineIndent: scala.Double,
+    firstLineIndentType: js.Any,
+    keepLinesTogether: scala.Boolean,
+    leftIndent: scala.Double,
+    lineSpacing: scala.Double,
+    lineSpacingType: js.Any,
+    outlineLevel: scala.Double,
+    pageBreakBefore: scala.Boolean,
+    rightIndent: scala.Double,
+    spacingAfter: scala.Double,
+    spacingBefore: scala.Double
+  ): ParagraphFormattingSettings = {
+    val __obj = js.Dynamic.literal(alignment = alignment, backColor = backColor, contextualSpacing = contextualSpacing, firstLineIndent = firstLineIndent, firstLineIndentType = firstLineIndentType, keepLinesTogether = keepLinesTogether, leftIndent = leftIndent, lineSpacing = lineSpacing, lineSpacingType = lineSpacingType, outlineLevel = outlineLevel, pageBreakBefore = pageBreakBefore, rightIndent = rightIndent, spacingAfter = spacingAfter, spacingBefore = spacingBefore)
+  
+    __obj.asInstanceOf[ParagraphFormattingSettings]
+  }
+}
+

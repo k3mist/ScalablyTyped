@@ -25,3 +25,18 @@ trait XReportDocumentsSupplier
   def getReportDocuments(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XReportDocumentsSupplier {
+  @scala.inline
+  def apply(
+    ReportDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getReportDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XReportDocumentsSupplier = {
+    val __obj = js.Dynamic.literal(ReportDocuments = ReportDocuments, acquire = acquire, getReportDocuments = getReportDocuments, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XReportDocumentsSupplier]
+  }
+}
+

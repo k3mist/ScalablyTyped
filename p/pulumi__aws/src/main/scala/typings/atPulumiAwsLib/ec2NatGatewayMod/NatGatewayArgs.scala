@@ -22,3 +22,16 @@ trait NatGatewayArgs extends js.Object {
   ] = js.undefined
 }
 
+object NatGatewayArgs {
+  @scala.inline
+  def apply(
+    allocationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): NatGatewayArgs = {
+    val __obj = js.Dynamic.literal(allocationId = allocationId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NatGatewayArgs]
+  }
+}
+

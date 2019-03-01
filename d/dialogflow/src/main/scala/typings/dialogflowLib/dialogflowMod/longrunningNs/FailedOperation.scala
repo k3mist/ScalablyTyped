@@ -13,3 +13,17 @@ trait FailedOperation
   var error: Status
 }
 
+object FailedOperation {
+  @scala.inline
+  def apply(
+    done: dialogflowLib.dialogflowLibNumbers.`true`,
+    error: Status,
+    metadata: js.Any,
+    name: java.lang.String
+  ): FailedOperation = {
+    val __obj = js.Dynamic.literal(done = done, error = error, metadata = metadata, name = name)
+  
+    __obj.asInstanceOf[FailedOperation]
+  }
+}
+

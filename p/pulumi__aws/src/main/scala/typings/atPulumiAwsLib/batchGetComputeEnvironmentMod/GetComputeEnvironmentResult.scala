@@ -40,3 +40,21 @@ trait GetComputeEnvironmentResult extends js.Object {
   val `type`: java.lang.String
 }
 
+object GetComputeEnvironmentResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    ecsClusterArn: java.lang.String,
+    id: java.lang.String,
+    serviceRole: java.lang.String,
+    state: java.lang.String,
+    status: java.lang.String,
+    statusReason: java.lang.String,
+    `type`: java.lang.String
+  ): GetComputeEnvironmentResult = {
+    val __obj = js.Dynamic.literal(arn = arn, ecsClusterArn = ecsClusterArn, id = id, serviceRole = serviceRole, state = state, status = status, statusReason = statusReason, `type` = `type`)
+  
+    __obj.asInstanceOf[GetComputeEnvironmentResult]
+  }
+}
+

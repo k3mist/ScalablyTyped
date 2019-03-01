@@ -29,3 +29,18 @@ trait SpanTermQuery extends Query {
   def toJSON(): js.Any
 }
 
+object SpanTermQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, SpanTermQuery],
+    field: js.Function1[java.lang.String, SpanTermQuery],
+    term: js.Function1[java.lang.String, SpanTermQuery],
+    toJSON: js.Function0[js.Any]
+  ): SpanTermQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, term = term, toJSON = toJSON)
+  
+    __obj.asInstanceOf[SpanTermQuery]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DayPeriod extends js.Object {
   var pm: java.lang.String
 }
 
+object DayPeriod {
+  @scala.inline
+  def apply(am: java.lang.String, midnight: java.lang.String, noon: java.lang.String, pm: java.lang.String): DayPeriod = {
+    val __obj = js.Dynamic.literal(am = am, midnight = midnight, noon = noon, pm = pm)
+  
+    __obj.asInstanceOf[DayPeriod]
+  }
+}
+

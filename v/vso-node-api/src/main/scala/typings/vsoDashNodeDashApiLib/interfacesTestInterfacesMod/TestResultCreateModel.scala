@@ -34,3 +34,39 @@ trait TestResultCreateModel extends js.Object {
   var testPoint: ShallowReference
 }
 
+object TestResultCreateModel {
+  @scala.inline
+  def apply(
+    area: ShallowReference,
+    associatedWorkItems: js.Array[scala.Double],
+    automatedTestId: java.lang.String,
+    automatedTestName: java.lang.String,
+    automatedTestStorage: java.lang.String,
+    automatedTestType: java.lang.String,
+    automatedTestTypeId: java.lang.String,
+    comment: java.lang.String,
+    completedDate: java.lang.String,
+    computerName: java.lang.String,
+    configuration: ShallowReference,
+    customFields: js.Array[CustomTestField],
+    durationInMs: java.lang.String,
+    errorMessage: java.lang.String,
+    failureType: java.lang.String,
+    outcome: java.lang.String,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    resolutionState: java.lang.String,
+    runBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    stackTrace: java.lang.String,
+    startedDate: java.lang.String,
+    state: java.lang.String,
+    testCase: ShallowReference,
+    testCasePriority: java.lang.String,
+    testCaseTitle: java.lang.String,
+    testPoint: ShallowReference
+  ): TestResultCreateModel = {
+    val __obj = js.Dynamic.literal(area = area, associatedWorkItems = associatedWorkItems, automatedTestId = automatedTestId, automatedTestName = automatedTestName, automatedTestStorage = automatedTestStorage, automatedTestType = automatedTestType, automatedTestTypeId = automatedTestTypeId, comment = comment, completedDate = completedDate, computerName = computerName, configuration = configuration, customFields = customFields, durationInMs = durationInMs, errorMessage = errorMessage, failureType = failureType, outcome = outcome, owner = owner, resolutionState = resolutionState, runBy = runBy, stackTrace = stackTrace, startedDate = startedDate, state = state, testCase = testCase, testCasePriority = testCasePriority, testCaseTitle = testCaseTitle, testPoint = testPoint)
+  
+    __obj.asInstanceOf[TestResultCreateModel]
+  }
+}
+

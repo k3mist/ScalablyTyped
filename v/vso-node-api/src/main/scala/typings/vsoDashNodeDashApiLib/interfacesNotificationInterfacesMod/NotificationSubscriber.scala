@@ -21,3 +21,17 @@ trait NotificationSubscriber extends js.Object {
   var preferredEmailAddress: java.lang.String
 }
 
+object NotificationSubscriber {
+  @scala.inline
+  def apply(
+    deliveryPreference: NotificationSubscriberDeliveryPreference,
+    flags: SubscriberFlags,
+    id: java.lang.String,
+    preferredEmailAddress: java.lang.String
+  ): NotificationSubscriber = {
+    val __obj = js.Dynamic.literal(deliveryPreference = deliveryPreference, flags = flags, id = id, preferredEmailAddress = preferredEmailAddress)
+  
+    __obj.asInstanceOf[NotificationSubscriber]
+  }
+}
+

@@ -27,3 +27,19 @@ trait UniqueValueRendererUniqueValueInfos
   var value: java.lang.String | scala.Double
 }
 
+object UniqueValueRendererUniqueValueInfos {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    symbol: Symbol,
+    value: java.lang.String | scala.Double,
+    label: java.lang.String = null
+  ): UniqueValueRendererUniqueValueInfos = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[UniqueValueRendererUniqueValueInfos]
+  }
+}
+

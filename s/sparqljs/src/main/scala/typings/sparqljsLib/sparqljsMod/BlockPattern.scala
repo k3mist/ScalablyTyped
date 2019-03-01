@@ -10,3 +10,15 @@ trait BlockPattern extends Pattern {
   var `type`: sparqljsLib.sparqljsLibStrings.optional | sparqljsLib.sparqljsLibStrings.union | sparqljsLib.sparqljsLibStrings.group | sparqljsLib.sparqljsLibStrings.minus | sparqljsLib.sparqljsLibStrings.graph | sparqljsLib.sparqljsLibStrings.service
 }
 
+object BlockPattern {
+  @scala.inline
+  def apply(
+    patterns: js.Array[Pattern],
+    `type`: sparqljsLib.sparqljsLibStrings.optional | sparqljsLib.sparqljsLibStrings.union | sparqljsLib.sparqljsLibStrings.group | sparqljsLib.sparqljsLibStrings.minus | sparqljsLib.sparqljsLibStrings.graph | sparqljsLib.sparqljsLibStrings.service
+  ): BlockPattern = {
+    val __obj = js.Dynamic.literal(patterns = patterns, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BlockPattern]
+  }
+}
+

@@ -32,3 +32,19 @@ trait Wallop extends js.Object {
   def reset(): Wallop
 }
 
+object Wallop {
+  @scala.inline
+  def apply(
+    goTo: js.Function1[scala.Double, Wallop],
+    next: js.Function0[Wallop],
+    off: js.Function2[java.lang.String, js.Function0[scala.Unit], Wallop],
+    on: js.Function2[java.lang.String, js.Function0[scala.Unit], Wallop],
+    previous: js.Function0[Wallop],
+    reset: js.Function0[Wallop]
+  ): Wallop = {
+    val __obj = js.Dynamic.literal(goTo = goTo, next = next, off = off, on = on, previous = previous, reset = reset)
+  
+    __obj.asInstanceOf[Wallop]
+  }
+}
+

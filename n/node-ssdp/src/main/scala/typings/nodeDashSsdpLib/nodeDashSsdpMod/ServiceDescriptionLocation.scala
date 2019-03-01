@@ -21,3 +21,12 @@ trait ServiceDescriptionLocation extends js.Object {
   var protocol: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceDescriptionLocation {
+  @scala.inline
+  def apply(path: java.lang.String, port: scala.Double, protocol: java.lang.String = null): ServiceDescriptionLocation = {
+    val __obj = js.Dynamic.literal(path = path, port = port)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    __obj.asInstanceOf[ServiceDescriptionLocation]
+  }
+}
+

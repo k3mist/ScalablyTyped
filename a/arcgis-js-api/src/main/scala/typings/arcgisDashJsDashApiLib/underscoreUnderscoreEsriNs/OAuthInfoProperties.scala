@@ -78,3 +78,30 @@ trait OAuthInfoProperties extends js.Object {
   var portalUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuthInfoProperties {
+  @scala.inline
+  def apply(
+    appId: java.lang.String = null,
+    authNamespace: java.lang.String = null,
+    expiration: scala.Int | scala.Double = null,
+    locale: java.lang.String = null,
+    minTimeUntilExpiration: scala.Int | scala.Double = null,
+    popup: js.UndefOr[scala.Boolean] = js.undefined,
+    popupCallbackUrl: java.lang.String = null,
+    popupWindowFeatures: java.lang.String = null,
+    portalUrl: java.lang.String = null
+  ): OAuthInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (authNamespace != null) __obj.updateDynamic("authNamespace")(authNamespace)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (minTimeUntilExpiration != null) __obj.updateDynamic("minTimeUntilExpiration")(minTimeUntilExpiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
+    if (popupCallbackUrl != null) __obj.updateDynamic("popupCallbackUrl")(popupCallbackUrl)
+    if (popupWindowFeatures != null) __obj.updateDynamic("popupWindowFeatures")(popupWindowFeatures)
+    if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl)
+    __obj.asInstanceOf[OAuthInfoProperties]
+  }
+}
+

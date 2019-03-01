@@ -17,3 +17,22 @@ trait extentChangeStatsObj extends js.Object {
   var zoomLevel: scala.Double
 }
 
+object extentChangeStatsObj {
+  @scala.inline
+  def apply(
+    centerLat: scala.Double,
+    centerLon: scala.Double,
+    centerX: scala.Double,
+    centerY: scala.Double,
+    extents: envelope,
+    mapScale: scala.Double,
+    mapScaleProjected: scala.Double,
+    mapUnitsPerPixel: scala.Double,
+    zoomLevel: scala.Double
+  ): extentChangeStatsObj = {
+    val __obj = js.Dynamic.literal(centerLat = centerLat, centerLon = centerLon, centerX = centerX, centerY = centerY, extents = extents, mapScale = mapScale, mapScaleProjected = mapScaleProjected, mapUnitsPerPixel = mapUnitsPerPixel, zoomLevel = zoomLevel)
+  
+    __obj.asInstanceOf[extentChangeStatsObj]
+  }
+}
+

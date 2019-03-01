@@ -47,3 +47,17 @@ trait TableAddedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object TableAddedEventArgs {
+  @scala.inline
+  def apply(
+    source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
+    tableId: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableAdded,
+    worksheetId: java.lang.String
+  ): TableAddedEventArgs = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId, `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[TableAddedEventArgs]
+  }
+}
+

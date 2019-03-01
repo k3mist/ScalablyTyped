@@ -22,3 +22,18 @@ trait ActivityState extends js.Object {
   ] = js.undefined
 }
 
+object ActivityState {
+  @scala.inline
+  def apply(
+    creationDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ActivityState = {
+    val __obj = js.Dynamic.literal()
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivityState]
+  }
+}
+

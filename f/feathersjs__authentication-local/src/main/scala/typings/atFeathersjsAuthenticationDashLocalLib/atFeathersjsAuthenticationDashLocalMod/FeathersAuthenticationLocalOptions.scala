@@ -48,3 +48,23 @@ trait FeathersAuthenticationLocalOptions extends js.Object {
   var usernameField: java.lang.String
 }
 
+object FeathersAuthenticationLocalOptions {
+  @scala.inline
+  def apply(
+    Verifier: LocalVerifier,
+    entity: java.lang.String,
+    entityPasswordField: java.lang.String,
+    entityUsernameField: java.lang.String,
+    name: java.lang.String,
+    passReqToCallback: scala.Boolean,
+    passwordField: java.lang.String,
+    service: java.lang.String,
+    session: scala.Boolean,
+    usernameField: java.lang.String
+  ): FeathersAuthenticationLocalOptions = {
+    val __obj = js.Dynamic.literal(Verifier = Verifier, entity = entity, entityPasswordField = entityPasswordField, entityUsernameField = entityUsernameField, name = name, passReqToCallback = passReqToCallback, passwordField = passwordField, service = service, session = session, usernameField = usernameField)
+  
+    __obj.asInstanceOf[FeathersAuthenticationLocalOptions]
+  }
+}
+

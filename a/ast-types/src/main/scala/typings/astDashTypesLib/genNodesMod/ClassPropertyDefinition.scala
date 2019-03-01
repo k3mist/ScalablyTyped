@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ClassPropertyDefinition
 }
 
+object ClassPropertyDefinition {
+  @scala.inline
+  def apply(
+    definition: astDashTypesLib.genKindsMod.MethodDefinitionKind | astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.ClassPropertyDefinitionKind | astDashTypesLib.genKindsMod.ClassPropertyKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ClassPropertyDefinition
+  ): ClassPropertyDefinition = {
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], `type` = `type`)
+  
+    __obj.asInstanceOf[ClassPropertyDefinition]
+  }
+}
+

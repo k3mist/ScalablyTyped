@@ -60,3 +60,17 @@ trait BreakpointsOwner extends js.Object {
   var widthBreakpoint: java.lang.String
 }
 
+object BreakpointsOwner {
+  @scala.inline
+  def apply(
+    breakpoints: BreakpointsOwnerBreakpoints,
+    heightBreakpoint: java.lang.String,
+    orientation: java.lang.String,
+    widthBreakpoint: java.lang.String
+  ): BreakpointsOwner = {
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints, heightBreakpoint = heightBreakpoint, orientation = orientation, widthBreakpoint = widthBreakpoint)
+  
+    __obj.asInstanceOf[BreakpointsOwner]
+  }
+}
+

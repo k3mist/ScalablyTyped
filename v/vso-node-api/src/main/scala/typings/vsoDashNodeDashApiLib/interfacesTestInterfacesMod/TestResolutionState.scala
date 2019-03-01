@@ -11,3 +11,12 @@ trait TestResolutionState extends js.Object {
   var project: ShallowReference
 }
 
+object TestResolutionState {
+  @scala.inline
+  def apply(id: scala.Double, name: java.lang.String, project: ShallowReference): TestResolutionState = {
+    val __obj = js.Dynamic.literal(id = id, name = name, project = project)
+  
+    __obj.asInstanceOf[TestResolutionState]
+  }
+}
+

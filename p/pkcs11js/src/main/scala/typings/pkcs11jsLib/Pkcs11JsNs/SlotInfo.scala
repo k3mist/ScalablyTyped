@@ -13,3 +13,18 @@ trait SlotInfo extends js.Object {
   var slotDescription: java.lang.String
 }
 
+object SlotInfo {
+  @scala.inline
+  def apply(
+    firmwareVersion: Version,
+    flags: scala.Double,
+    hardwareVersion: Version,
+    manufacturerID: java.lang.String,
+    slotDescription: java.lang.String
+  ): SlotInfo = {
+    val __obj = js.Dynamic.literal(firmwareVersion = firmwareVersion, flags = flags, hardwareVersion = hardwareVersion, manufacturerID = manufacturerID, slotDescription = slotDescription)
+  
+    __obj.asInstanceOf[SlotInfo]
+  }
+}
+

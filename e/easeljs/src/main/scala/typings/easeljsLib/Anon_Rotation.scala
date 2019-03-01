@@ -15,3 +15,20 @@ trait Anon_Rotation extends js.Object {
   var y: scala.Double
 }
 
+object Anon_Rotation {
+  @scala.inline
+  def apply(
+    rotation: scala.Double,
+    scaleX: scala.Double,
+    scaleY: scala.Double,
+    skewX: scala.Double,
+    skewY: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): Anon_Rotation = {
+    val __obj = js.Dynamic.literal(rotation = rotation, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, x = x, y = y)
+  
+    __obj.asInstanceOf[Anon_Rotation]
+  }
+}
+

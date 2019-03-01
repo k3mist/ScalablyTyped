@@ -11,3 +11,16 @@ trait Anon_Errorlist extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.errorDOTlist
 }
 
+object Anon_Errorlist {
+  @scala.inline
+  def apply(
+    errors: js.Array[Anon_Code],
+    request_id: java.lang.String,
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.errorDOTlist
+  ): Anon_Errorlist = {
+    val __obj = js.Dynamic.literal(errors = errors, request_id = request_id, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Errorlist]
+  }
+}
+

@@ -10,3 +10,12 @@ trait OnMouseEnterData extends js.Object {
   var node: InternalTreeNode
 }
 
+object OnMouseEnterData {
+  @scala.inline
+  def apply(event: reactLib.Event, node: InternalTreeNode): OnMouseEnterData = {
+    val __obj = js.Dynamic.literal(event = event, node = node)
+  
+    __obj.asInstanceOf[OnMouseEnterData]
+  }
+}
+

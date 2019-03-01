@@ -10,3 +10,12 @@ trait Anon_Text extends js.Object {
   var value: scala.Double
 }
 
+object Anon_Text {
+  @scala.inline
+  def apply(text: java.lang.String, value: scala.Double): Anon_Text = {
+    val __obj = js.Dynamic.literal(text = text, value = value)
+  
+    __obj.asInstanceOf[Anon_Text]
+  }
+}
+

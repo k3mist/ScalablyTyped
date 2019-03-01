@@ -12,3 +12,17 @@ trait Ocr extends js.Object {
   var textAngle: scala.Double
 }
 
+object Ocr {
+  @scala.inline
+  def apply(
+    language: java.lang.String,
+    orientation: java.lang.String,
+    regions: js.Array[projectDashOxfordLib.Anon_BoundingBoxLines],
+    textAngle: scala.Double
+  ): Ocr = {
+    val __obj = js.Dynamic.literal(language = language, orientation = orientation, regions = regions, textAngle = textAngle)
+  
+    __obj.asInstanceOf[Ocr]
+  }
+}
+

@@ -33,3 +33,20 @@ trait JobTaskAssignJobsParams
   var user: java.lang.String
 }
 
+object JobTaskAssignJobsParams {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    assignedType: java.lang.String,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobIds: js.Array[scala.Double],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskAssignJobsParams = {
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, hasOwnProperty = hasOwnProperty, jobIds = jobIds, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskAssignJobsParams]
+  }
+}
+

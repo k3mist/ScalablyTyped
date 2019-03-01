@@ -24,3 +24,17 @@ trait FileDetails extends js.Object {
   var mimeType: java.lang.String
 }
 
+object FileDetails {
+  @scala.inline
+  def apply(
+    fileContent: java.lang.String,
+    fileName: java.lang.String,
+    fileSize: scala.Double,
+    mimeType: java.lang.String
+  ): FileDetails = {
+    val __obj = js.Dynamic.literal(fileContent = fileContent, fileName = fileName, fileSize = fileSize, mimeType = mimeType)
+  
+    __obj.asInstanceOf[FileDetails]
+  }
+}
+

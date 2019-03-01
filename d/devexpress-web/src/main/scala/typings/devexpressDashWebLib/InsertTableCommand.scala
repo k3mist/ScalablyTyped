@@ -17,3 +17,15 @@ trait InsertTableCommand extends CommandWithSimpleStateBase {
   def execute(columnCount: scala.Double, rowCount: scala.Double): scala.Boolean
 }
 
+object InsertTableCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): InsertTableCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[InsertTableCommand]
+  }
+}
+

@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
 }
 
+object TupleTypeAnnotation {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TupleTypeAnnotation,
+    types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
+  ): TupleTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`, types = types)
+  
+    __obj.asInstanceOf[TupleTypeAnnotation]
+  }
+}
+

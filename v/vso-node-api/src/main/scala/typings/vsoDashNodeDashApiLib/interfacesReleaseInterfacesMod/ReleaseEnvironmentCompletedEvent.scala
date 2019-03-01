@@ -21,3 +21,26 @@ trait ReleaseEnvironmentCompletedEvent extends js.Object {
   var webAccessUri: java.lang.String
 }
 
+object ReleaseEnvironmentCompletedEvent {
+  @scala.inline
+  def apply(
+    createdByName: java.lang.String,
+    definitionId: scala.Double,
+    definitionName: java.lang.String,
+    environment: ReleaseEnvironment,
+    environmentId: scala.Double,
+    projectName: java.lang.String,
+    reason: DeploymentReason,
+    releaseCreatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    releaseLogsUri: java.lang.String,
+    releaseName: java.lang.String,
+    status: java.lang.String,
+    title: java.lang.String,
+    webAccessUri: java.lang.String
+  ): ReleaseEnvironmentCompletedEvent = {
+    val __obj = js.Dynamic.literal(createdByName = createdByName, definitionId = definitionId, definitionName = definitionName, environment = environment, environmentId = environmentId, projectName = projectName, reason = reason, releaseCreatedBy = releaseCreatedBy, releaseLogsUri = releaseLogsUri, releaseName = releaseName, status = status, title = title, webAccessUri = webAccessUri)
+  
+    __obj.asInstanceOf[ReleaseEnvironmentCompletedEvent]
+  }
+}
+

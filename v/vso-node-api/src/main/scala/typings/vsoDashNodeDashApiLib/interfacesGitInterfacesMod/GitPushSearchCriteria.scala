@@ -17,3 +17,19 @@ trait GitPushSearchCriteria extends js.Object {
   var toDate: stdLib.Date
 }
 
+object GitPushSearchCriteria {
+  @scala.inline
+  def apply(
+    fromDate: stdLib.Date,
+    includeLinks: scala.Boolean,
+    includeRefUpdates: scala.Boolean,
+    pusherId: java.lang.String,
+    refName: java.lang.String,
+    toDate: stdLib.Date
+  ): GitPushSearchCriteria = {
+    val __obj = js.Dynamic.literal(fromDate = fromDate, includeLinks = includeLinks, includeRefUpdates = includeRefUpdates, pusherId = pusherId, refName = refName, toDate = toDate)
+  
+    __obj.asInstanceOf[GitPushSearchCriteria]
+  }
+}
+

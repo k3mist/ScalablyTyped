@@ -9,3 +9,12 @@ trait ImageLoadEventData extends ImageLoadEventDataAndroid {
   var source: reactDashNativeLib.Anon_HeightUrl
 }
 
+object ImageLoadEventData {
+  @scala.inline
+  def apply(source: reactDashNativeLib.Anon_HeightUrl, uri: java.lang.String = null): ImageLoadEventData = {
+    val __obj = js.Dynamic.literal(source = source)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[ImageLoadEventData]
+  }
+}
+

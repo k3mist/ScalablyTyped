@@ -109,3 +109,45 @@ trait sizeCreateVisualVariablesParams
   var worldScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object sizeCreateVisualVariablesParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    field: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layer: FeatureLayer | SceneLayer | CSVLayer,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    axis: java.lang.String = null,
+    basemap: java.lang.String | Basemap = null,
+    legendOptions: sizeCreateVisualVariablesParamsLegendOptions = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    normalizationField: java.lang.String = null,
+    sizeScheme: SizeScheme = null,
+    sqlExpression: java.lang.String = null,
+    sqlWhere: java.lang.String = null,
+    statistics: SummaryStatisticsResult = null,
+    valueExpression: java.lang.String = null,
+    valueExpressionTitle: java.lang.String = null,
+    view: View = null,
+    worldScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): sizeCreateVisualVariablesParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)
+    __obj.asInstanceOf[sizeCreateVisualVariablesParams]
+  }
+}
+

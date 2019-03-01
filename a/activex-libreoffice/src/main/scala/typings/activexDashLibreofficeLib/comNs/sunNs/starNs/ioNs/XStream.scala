@@ -18,3 +18,20 @@ trait XStream
   def getOutputStream(): XOutputStream
 }
 
+object XStream {
+  @scala.inline
+  def apply(
+    InputStream: XInputStream,
+    OutputStream: XOutputStream,
+    acquire: js.Function0[scala.Unit],
+    getInputStream: js.Function0[XInputStream],
+    getOutputStream: js.Function0[XOutputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStream = {
+    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = acquire, getInputStream = getInputStream, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStream]
+  }
+}
+

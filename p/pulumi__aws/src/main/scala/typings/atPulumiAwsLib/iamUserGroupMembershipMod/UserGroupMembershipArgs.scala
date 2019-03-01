@@ -16,3 +16,15 @@ trait UserGroupMembershipArgs extends js.Object {
   val user: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object UserGroupMembershipArgs {
+  @scala.inline
+  def apply(
+    groups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]],
+    user: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): UserGroupMembershipArgs = {
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[UserGroupMembershipArgs]
+  }
+}
+

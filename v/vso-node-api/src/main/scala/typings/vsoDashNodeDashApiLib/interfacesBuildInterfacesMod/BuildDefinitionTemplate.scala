@@ -37,3 +37,21 @@ trait BuildDefinitionTemplate extends js.Object {
   var template: BuildDefinition
 }
 
+object BuildDefinitionTemplate {
+  @scala.inline
+  def apply(
+    canDelete: scala.Boolean,
+    category: java.lang.String,
+    description: java.lang.String,
+    iconTaskId: java.lang.String,
+    icons: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    id: java.lang.String,
+    name: java.lang.String,
+    template: BuildDefinition
+  ): BuildDefinitionTemplate = {
+    val __obj = js.Dynamic.literal(canDelete = canDelete, category = category, description = description, iconTaskId = iconTaskId, icons = icons, id = id, name = name, template = template)
+  
+    __obj.asInstanceOf[BuildDefinitionTemplate]
+  }
+}
+

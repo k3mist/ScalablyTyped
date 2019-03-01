@@ -41,3 +41,41 @@ trait ReposResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object ReposResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Repo]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Repo]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListReposResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotSourcerepoLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): ReposResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
+    __obj.asInstanceOf[ReposResource]
+  }
+}
+

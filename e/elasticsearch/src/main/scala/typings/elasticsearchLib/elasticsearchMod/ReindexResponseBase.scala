@@ -18,3 +18,23 @@ trait ReindexResponseBase extends js.Object {
   var version_conflicts: scala.Double
 }
 
+object ReindexResponseBase {
+  @scala.inline
+  def apply(
+    batches: scala.Double,
+    deleted: scala.Double,
+    noops: scala.Double,
+    requests_per_second: scala.Double,
+    retries: elasticsearchLib.Anon_Bulk,
+    throttled_millis: scala.Double,
+    throttled_until_millis: scala.Double,
+    total: scala.Double,
+    updated: scala.Double,
+    version_conflicts: scala.Double
+  ): ReindexResponseBase = {
+    val __obj = js.Dynamic.literal(batches = batches, deleted = deleted, noops = noops, requests_per_second = requests_per_second, retries = retries, throttled_millis = throttled_millis, throttled_until_millis = throttled_until_millis, total = total, updated = updated, version_conflicts = version_conflicts)
+  
+    __obj.asInstanceOf[ReindexResponseBase]
+  }
+}
+

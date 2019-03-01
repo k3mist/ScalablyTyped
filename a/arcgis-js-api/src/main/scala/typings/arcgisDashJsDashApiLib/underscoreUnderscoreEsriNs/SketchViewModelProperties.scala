@@ -73,3 +73,24 @@ trait SketchViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 
+object SketchViewModelProperties {
+  @scala.inline
+  def apply(
+    layer: GraphicsLayerProperties = null,
+    pointSymbol: SimpleMarkerSymbolProperties = null,
+    polygonSymbol: SimpleFillSymbolProperties = null,
+    polylineSymbol: SimpleLineSymbolProperties = null,
+    updateOnGraphicClick: js.UndefOr[scala.Boolean] = js.undefined,
+    view: MapViewProperties = null
+  ): SketchViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol)
+    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol)
+    if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol)
+    if (!js.isUndefined(updateOnGraphicClick)) __obj.updateDynamic("updateOnGraphicClick")(updateOnGraphicClick)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[SketchViewModelProperties]
+  }
+}
+

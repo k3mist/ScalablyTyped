@@ -12,3 +12,12 @@ trait DirectoryNode extends FileNode {
   var `type`: FileType
 }
 
+object DirectoryNode {
+  @scala.inline
+  def apply(children: js.Array[FileNode], path: java.lang.String, `type`: FileType, parent: FileNode = null): DirectoryNode = {
+    val __obj = js.Dynamic.literal(children = children, path = path, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[DirectoryNode]
+  }
+}
+

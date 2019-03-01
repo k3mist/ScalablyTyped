@@ -19,3 +19,18 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSModuleDeclaration
 }
 
+object TSModuleDeclaration {
+  @scala.inline
+  def apply(
+    declare: scala.Boolean,
+    global: scala.Boolean,
+    id: astDashTypesLib.genKindsMod.StringLiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSModuleDeclaration,
+    body: astDashTypesLib.genKindsMod.TSModuleBlockKind | astDashTypesLib.genKindsMod.TSModuleDeclarationKind = null
+  ): TSModuleDeclaration = {
+    val __obj = js.Dynamic.literal(declare = declare, global = global, id = id.asInstanceOf[js.Any], `type` = `type`)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TSModuleDeclaration]
+  }
+}
+

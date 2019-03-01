@@ -11,3 +11,16 @@ trait SuggestionInsertedEvent extends js.Object {
   var triggerPosition: atomLib.atomMod.Point
 }
 
+object SuggestionInsertedEvent {
+  @scala.inline
+  def apply(
+    editor: atomLib.atomMod.TextEditor,
+    suggestion: TextSuggestion | SnippetSuggestion,
+    triggerPosition: atomLib.atomMod.Point
+  ): SuggestionInsertedEvent = {
+    val __obj = js.Dynamic.literal(editor = editor, suggestion = suggestion.asInstanceOf[js.Any], triggerPosition = triggerPosition)
+  
+    __obj.asInstanceOf[SuggestionInsertedEvent]
+  }
+}
+

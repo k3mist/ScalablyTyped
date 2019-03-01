@@ -13,3 +13,18 @@ trait Road extends js.Object {
   var name: java.lang.String
 }
 
+object Road {
+  @scala.inline
+  def apply(
+    direction: java.lang.String,
+    distance: scala.Double,
+    id: java.lang.String,
+    location: LngLat,
+    name: java.lang.String
+  ): Road = {
+    val __obj = js.Dynamic.literal(direction = direction, distance = distance, id = id, location = location, name = name)
+  
+    __obj.asInstanceOf[Road]
+  }
+}
+

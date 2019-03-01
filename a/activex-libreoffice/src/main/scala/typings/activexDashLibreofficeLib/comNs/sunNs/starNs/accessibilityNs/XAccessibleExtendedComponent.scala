@@ -55,3 +55,37 @@ trait XAccessibleExtendedComponent extends XAccessibleComponent {
   def getToolTipText(): java.lang.String
 }
 
+object XAccessibleExtendedComponent {
+  @scala.inline
+  def apply(
+    Background: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Bounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    Font: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XFont,
+    Foreground: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Location: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    LocationOnScreen: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    TitledBorderText: java.lang.String,
+    ToolTipText: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    containsPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Boolean],
+    getAccessibleAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, XAccessible],
+    getBackground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getFont: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XFont],
+    getForeground: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    getLocation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getLocationOnScreen: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    getTitledBorderText: js.Function0[java.lang.String],
+    getToolTipText: js.Function0[java.lang.String],
+    grabFocus: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleExtendedComponent = {
+    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Font = Font, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, TitledBorderText = TitledBorderText, ToolTipText = ToolTipText, acquire = acquire, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getBackground = getBackground, getBounds = getBounds, getFont = getFont, getForeground = getForeground, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, getTitledBorderText = getTitledBorderText, getToolTipText = getToolTipText, grabFocus = grabFocus, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAccessibleExtendedComponent]
+  }
+}
+

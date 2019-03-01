@@ -12,3 +12,17 @@ trait Anon_Capture extends js.Object {
   var targets: js.Array[java.lang.String]
 }
 
+object Anon_Capture {
+  @scala.inline
+  def apply(
+    capture: java.lang.String,
+    captureConstraint: scala.Double,
+    key: java.lang.String,
+    targets: js.Array[java.lang.String]
+  ): Anon_Capture = {
+    val __obj = js.Dynamic.literal(capture = capture, captureConstraint = captureConstraint, key = key, targets = targets)
+  
+    __obj.asInstanceOf[Anon_Capture]
+  }
+}
+

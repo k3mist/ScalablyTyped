@@ -16,3 +16,15 @@ trait LevelMapping extends js.Object {
   var values: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
+object LevelMapping {
+  @scala.inline
+  def apply(
+    labels: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
+    values: org.scalablytyped.runtime.StringDictionary[scala.Double]
+  ): LevelMapping = {
+    val __obj = js.Dynamic.literal(labels = labels, values = values)
+  
+    __obj.asInstanceOf[LevelMapping]
+  }
+}
+

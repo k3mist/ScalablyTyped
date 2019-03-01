@@ -11,3 +11,12 @@ trait Anon_Disabled extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Disabled {
+  @scala.inline
+  def apply(disabled: scala.Boolean, size: java.lang.String, `type`: java.lang.String): Anon_Disabled = {
+    val __obj = js.Dynamic.literal(disabled = disabled, size = size, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Disabled]
+  }
+}
+

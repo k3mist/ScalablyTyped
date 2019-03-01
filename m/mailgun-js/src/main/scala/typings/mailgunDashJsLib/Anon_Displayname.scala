@@ -11,3 +11,12 @@ trait Anon_Displayname extends js.Object {
   var local_part: java.lang.String
 }
 
+object Anon_Displayname {
+  @scala.inline
+  def apply(domain: java.lang.String, local_part: java.lang.String, display_name: java.lang.String = null): Anon_Displayname = {
+    val __obj = js.Dynamic.literal(domain = domain, local_part = local_part)
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
+    __obj.asInstanceOf[Anon_Displayname]
+  }
+}
+

@@ -18,3 +18,23 @@ trait Anon_Browser extends js.Object {
   def scrollbar(): scala.Double
 }
 
+object Anon_Browser {
+  @scala.inline
+  def apply(
+    browser: Anon_Edge,
+    devicePixelRatio: scala.Double,
+    hasHW3D: scala.Boolean,
+    hasNativeScrolling: scala.Boolean,
+    mobileOS: Anon_AppMode,
+    placeholder: scala.Boolean,
+    pointers: scala.Boolean,
+    scrollbar: js.Function0[scala.Double],
+    touch: scala.Boolean,
+    zoomLevel: scala.Double
+  ): Anon_Browser = {
+    val __obj = js.Dynamic.literal(browser = browser, devicePixelRatio = devicePixelRatio, hasHW3D = hasHW3D, hasNativeScrolling = hasNativeScrolling, mobileOS = mobileOS, placeholder = placeholder, pointers = pointers, scrollbar = scrollbar, touch = touch, zoomLevel = zoomLevel)
+  
+    __obj.asInstanceOf[Anon_Browser]
+  }
+}
+

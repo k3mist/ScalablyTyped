@@ -12,3 +12,17 @@ trait IPlayToSourceRequest extends js.Object {
   def setSource(value: PlayToSource): scala.Unit
 }
 
+object IPlayToSourceRequest {
+  @scala.inline
+  def apply(
+    deadline: stdLib.Date,
+    displayErrorString: js.Function1[java.lang.String, scala.Unit],
+    getDeferral: js.Function0[PlayToSourceDeferral],
+    setSource: js.Function1[PlayToSource, scala.Unit]
+  ): IPlayToSourceRequest = {
+    val __obj = js.Dynamic.literal(deadline = deadline, displayErrorString = displayErrorString, getDeferral = getDeferral, setSource = setSource)
+  
+    __obj.asInstanceOf[IPlayToSourceRequest]
+  }
+}
+

@@ -32,3 +32,19 @@ trait ClusterEndpointArgs extends js.Object {
   ] = js.undefined
 }
 
+object ClusterEndpointArgs {
+  @scala.inline
+  def apply(
+    clusterEndpointIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    clusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    customEndpointType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    excludedMembers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    staticMembers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): ClusterEndpointArgs = {
+    val __obj = js.Dynamic.literal(clusterEndpointIdentifier = clusterEndpointIdentifier.asInstanceOf[js.Any], clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], customEndpointType = customEndpointType.asInstanceOf[js.Any])
+    if (excludedMembers != null) __obj.updateDynamic("excludedMembers")(excludedMembers.asInstanceOf[js.Any])
+    if (staticMembers != null) __obj.updateDynamic("staticMembers")(staticMembers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterEndpointArgs]
+  }
+}
+

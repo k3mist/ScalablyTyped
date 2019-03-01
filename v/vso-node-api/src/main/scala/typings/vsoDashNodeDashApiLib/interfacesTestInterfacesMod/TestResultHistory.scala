@@ -10,3 +10,12 @@ trait TestResultHistory extends js.Object {
   var resultsForGroup: js.Array[TestResultHistoryDetailsForGroup]
 }
 
+object TestResultHistory {
+  @scala.inline
+  def apply(groupByField: java.lang.String, resultsForGroup: js.Array[TestResultHistoryDetailsForGroup]): TestResultHistory = {
+    val __obj = js.Dynamic.literal(groupByField = groupByField, resultsForGroup = resultsForGroup)
+  
+    __obj.asInstanceOf[TestResultHistory]
+  }
+}
+

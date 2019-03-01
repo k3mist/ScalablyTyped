@@ -61,3 +61,23 @@ trait RouteLeg extends js.Object {
   var steps: js.Array[DirectionsStep]
 }
 
+object RouteLeg {
+  @scala.inline
+  def apply(
+    arrival_time: Time,
+    departure_time: Time,
+    distance: Distance,
+    duration: Duration,
+    duration_in_traffic: Duration,
+    end_address: java.lang.String,
+    end_location: LatLngLiteral,
+    start_address: java.lang.String,
+    start_location: LatLngLiteral,
+    steps: js.Array[DirectionsStep]
+  ): RouteLeg = {
+    val __obj = js.Dynamic.literal(arrival_time = arrival_time, departure_time = departure_time, distance = distance, duration = duration, duration_in_traffic = duration_in_traffic, end_address = end_address, end_location = end_location, start_address = start_address, start_location = start_location, steps = steps)
+  
+    __obj.asInstanceOf[RouteLeg]
+  }
+}
+

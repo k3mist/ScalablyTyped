@@ -16,3 +16,12 @@ trait MenuItem extends js.Object {
   def onclick(): scala.Unit
 }
 
+object MenuItem {
+  @scala.inline
+  def apply(onclick: js.Function0[scala.Unit], text: java.lang.String): MenuItem = {
+    val __obj = js.Dynamic.literal(onclick = onclick, text = text)
+  
+    __obj.asInstanceOf[MenuItem]
+  }
+}
+

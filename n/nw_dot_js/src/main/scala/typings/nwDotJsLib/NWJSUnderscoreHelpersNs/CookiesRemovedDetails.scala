@@ -23,3 +23,12 @@ trait CookiesRemovedDetails extends js.Object {
   var url: java.lang.String
 }
 
+object CookiesRemovedDetails {
+  @scala.inline
+  def apply(name: java.lang.String, storeId: java.lang.String, url: java.lang.String): CookiesRemovedDetails = {
+    val __obj = js.Dynamic.literal(name = name, storeId = storeId, url = url)
+  
+    __obj.asInstanceOf[CookiesRemovedDetails]
+  }
+}
+

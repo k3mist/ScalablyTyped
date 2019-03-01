@@ -37,3 +37,19 @@ trait CustomResourceDefinitionNames extends js.Object {
   val singular: java.lang.String
 }
 
+object CustomResourceDefinitionNames {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    kind: java.lang.String,
+    listKind: java.lang.String,
+    plural: java.lang.String,
+    shortNames: js.Array[java.lang.String],
+    singular: java.lang.String
+  ): CustomResourceDefinitionNames = {
+    val __obj = js.Dynamic.literal(categories = categories, kind = kind, listKind = listKind, plural = plural, shortNames = shortNames, singular = singular)
+  
+    __obj.asInstanceOf[CustomResourceDefinitionNames]
+  }
+}
+

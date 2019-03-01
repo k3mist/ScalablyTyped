@@ -41,3 +41,23 @@ trait SlideCreateFromOptionsScreenshot
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SlideCreateFromOptionsScreenshot {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    format: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    quality: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): SlideCreateFromOptionsScreenshot = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlideCreateFromOptionsScreenshot]
+  }
+}
+

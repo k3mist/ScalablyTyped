@@ -10,3 +10,12 @@ trait ImageDimensions extends js.Object {
   var width: scala.Double
 }
 
+object ImageDimensions {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): ImageDimensions = {
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
+    __obj.asInstanceOf[ImageDimensions]
+  }
+}
+

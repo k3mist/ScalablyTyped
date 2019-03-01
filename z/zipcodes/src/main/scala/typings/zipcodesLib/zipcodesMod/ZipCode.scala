@@ -14,3 +14,19 @@ trait ZipCode extends js.Object {
   var zip: java.lang.String
 }
 
+object ZipCode {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    country: java.lang.String,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    state: java.lang.String,
+    zip: java.lang.String
+  ): ZipCode = {
+    val __obj = js.Dynamic.literal(city = city, country = country, latitude = latitude, longitude = longitude, state = state, zip = zip)
+  
+    __obj.asInstanceOf[ZipCode]
+  }
+}
+

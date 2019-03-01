@@ -47,3 +47,53 @@ trait SimpleCheckBox extends js.Object {
   def setWidth(width: java.lang.String): SimpleCheckBox
 }
 
+object SimpleCheckBox {
+  @scala.inline
+  def apply(
+    addBlurHandler: js.Function1[Handler, SimpleCheckBox],
+    addClickHandler: js.Function1[Handler, SimpleCheckBox],
+    addFocusHandler: js.Function1[Handler, SimpleCheckBox],
+    addKeyDownHandler: js.Function1[Handler, SimpleCheckBox],
+    addKeyPressHandler: js.Function1[Handler, SimpleCheckBox],
+    addKeyUpHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseDownHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseMoveHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseOutHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseOverHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseUpHandler: js.Function1[Handler, SimpleCheckBox],
+    addMouseWheelHandler: js.Function1[Handler, SimpleCheckBox],
+    addStyleDependentName: js.Function1[java.lang.String, SimpleCheckBox],
+    addStyleName: js.Function1[java.lang.String, SimpleCheckBox],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, SimpleCheckBox],
+    setChecked: js.Function1[scala.Boolean, SimpleCheckBox],
+    setEnabled: js.Function1[scala.Boolean, SimpleCheckBox],
+    setFocus: js.Function1[scala.Boolean, SimpleCheckBox],
+    setHeight: js.Function1[java.lang.String, SimpleCheckBox],
+    setId: js.Function1[java.lang.String, SimpleCheckBox],
+    setLayoutData: js.Function1[js.Object, SimpleCheckBox],
+    setName: js.Function1[java.lang.String, SimpleCheckBox],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      SimpleCheckBox
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, SimpleCheckBox],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, SimpleCheckBox],
+    setStyleAttributes: js.Function1[js.Object, SimpleCheckBox],
+    setStyleName: js.Function1[java.lang.String, SimpleCheckBox],
+    setStylePrimaryName: js.Function1[java.lang.String, SimpleCheckBox],
+    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, SimpleCheckBox],
+    setTag: js.Function1[java.lang.String, SimpleCheckBox],
+    setTitle: js.Function1[java.lang.String, SimpleCheckBox],
+    setVisible: js.Function1[scala.Boolean, SimpleCheckBox],
+    setWidth: js.Function1[java.lang.String, SimpleCheckBox]
+  ): SimpleCheckBox = {
+    val __obj = js.Dynamic.literal(addBlurHandler = addBlurHandler, addClickHandler = addClickHandler, addFocusHandler = addFocusHandler, addKeyDownHandler = addKeyDownHandler, addKeyPressHandler = addKeyPressHandler, addKeyUpHandler = addKeyUpHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setAccessKey = setAccessKey, setChecked = setChecked, setEnabled = setEnabled, setFocus = setFocus, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTabIndex = setTabIndex, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
+    __obj.asInstanceOf[SimpleCheckBox]
+  }
+}
+

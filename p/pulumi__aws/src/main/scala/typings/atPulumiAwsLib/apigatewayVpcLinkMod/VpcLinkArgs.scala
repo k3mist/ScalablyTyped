@@ -20,3 +20,17 @@ trait VpcLinkArgs extends js.Object {
   val targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object VpcLinkArgs {
+  @scala.inline
+  def apply(
+    targetArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): VpcLinkArgs = {
+    val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcLinkArgs]
+  }
+}
+

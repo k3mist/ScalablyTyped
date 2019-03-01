@@ -53,3 +53,29 @@ trait DomainNameArgs extends js.Object {
   val regionalCertificateName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object DomainNameArgs {
+  @scala.inline
+  def apply(
+    domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateBody: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateChain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificatePrivateKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    endpointConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypesInput] = null,
+    regionalCertificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    regionalCertificateName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DomainNameArgs = {
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (certificateName != null) __obj.updateDynamic("certificateName")(certificateName.asInstanceOf[js.Any])
+    if (certificatePrivateKey != null) __obj.updateDynamic("certificatePrivateKey")(certificatePrivateKey.asInstanceOf[js.Any])
+    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
+    if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
+    if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainNameArgs]
+  }
+}
+

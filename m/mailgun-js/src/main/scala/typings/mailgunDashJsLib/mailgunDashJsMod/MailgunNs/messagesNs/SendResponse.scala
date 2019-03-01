@@ -10,3 +10,12 @@ trait SendResponse extends js.Object {
   var message: java.lang.String
 }
 
+object SendResponse {
+  @scala.inline
+  def apply(id: java.lang.String, message: java.lang.String): SendResponse = {
+    val __obj = js.Dynamic.literal(id = id, message = message)
+  
+    __obj.asInstanceOf[SendResponse]
+  }
+}
+

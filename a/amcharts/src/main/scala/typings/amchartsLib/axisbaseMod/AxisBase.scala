@@ -148,3 +148,43 @@ trait AxisBase extends js.Object {
   def removeGuide(guide: amchartsLib.guideMod.default): scala.Unit
 }
 
+object AxisBase {
+  @scala.inline
+  def apply(
+    addGuide: js.Function1[amchartsLib.guideMod.default, scala.Unit],
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    guides: js.Array[_],
+    ignoreAxisWidth: scala.Boolean,
+    inside: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelRotation: scala.Double,
+    labelsEnabled: scala.Boolean,
+    offset: scala.Double,
+    position: java.lang.String,
+    removeGuide: js.Function1[amchartsLib.guideMod.default, scala.Unit],
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    tickLength: scala.Double,
+    title: java.lang.String,
+    titleBold: scala.Boolean,
+    titleColor: java.lang.String,
+    titlefontSize: java.lang.String
+  ): AxisBase = {
+    val __obj = js.Dynamic.literal(addGuide = addGuide, autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisThickness = axisThickness, color = color, dashLength = dashLength, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, guides = guides, ignoreAxisWidth = ignoreAxisWidth, inside = inside, labelFrequency = labelFrequency, labelRotation = labelRotation, labelsEnabled = labelsEnabled, offset = offset, position = position, removeGuide = removeGuide, showFirstLabel = showFirstLabel, showLastLabel = showLastLabel, tickLength = tickLength, title = title, titleBold = titleBold, titleColor = titleColor, titlefontSize = titlefontSize)
+  
+    __obj.asInstanceOf[AxisBase]
+  }
+}
+

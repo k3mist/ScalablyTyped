@@ -30,3 +30,37 @@ trait TooltipContext extends js.Object {
   var z: scala.Double
 }
 
+object TooltipContext {
+  @scala.inline
+  def apply(
+    close: scala.Double,
+    color: java.lang.String,
+    componentElement: stdLib.Element,
+    group: java.lang.String | js.Array[java.lang.String],
+    high: scala.Double,
+    id: js.Any,
+    label: java.lang.String,
+    low: scala.Double,
+    open: scala.Double,
+    parentElement: stdLib.Element,
+    series: java.lang.String,
+    targetValue: scala.Double,
+    value: scala.Double,
+    volume: scala.Double,
+    x: scala.Double | java.lang.String,
+    y: scala.Double,
+    z: scala.Double,
+    data: js.Object = null,
+    groupData: js.Object = null,
+    itemData: js.Object = null,
+    seriesData: js.Object = null
+  ): TooltipContext = {
+    val __obj = js.Dynamic.literal(close = close, color = color, componentElement = componentElement, group = group.asInstanceOf[js.Any], high = high, id = id, label = label, low = low, open = open, parentElement = parentElement, series = series, targetValue = targetValue, value = value, volume = volume, x = x.asInstanceOf[js.Any], y = y, z = z)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (groupData != null) __obj.updateDynamic("groupData")(groupData)
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
+    if (seriesData != null) __obj.updateDynamic("seriesData")(seriesData)
+    __obj.asInstanceOf[TooltipContext]
+  }
+}
+

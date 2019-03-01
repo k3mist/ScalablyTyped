@@ -15,3 +15,17 @@ trait IntrospectionEnumType
   val name: java.lang.String
 }
 
+object IntrospectionEnumType {
+  @scala.inline
+  def apply(
+    enumValues: js.Array[IntrospectionEnumValue],
+    kind: graphqlLib.graphqlLibStrings.ENUM,
+    name: java.lang.String,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): IntrospectionEnumType = {
+    val __obj = js.Dynamic.literal(enumValues = enumValues, kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionEnumType]
+  }
+}
+

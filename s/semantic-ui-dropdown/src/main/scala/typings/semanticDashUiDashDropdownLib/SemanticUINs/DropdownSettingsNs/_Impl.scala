@@ -301,3 +301,108 @@ trait _Impl extends js.Object {
   def onShow(`this`: semanticDashUiDashDropdownLib.JQuery): semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    action: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.activate | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.select | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.combo | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.nothing | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.hide | (js.ThisFunction3[
+      /* this */ semanticDashUiDashDropdownLib.JQuery, 
+      /* text */ java.lang.String, 
+      /* value */ java.lang.String | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`, 
+      /* element */ semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ]),
+    allowAdditions: scala.Boolean,
+    allowCategorySelection: scala.Boolean,
+    allowReselection: scala.Boolean,
+    allowTab: scala.Boolean,
+    apiSettings: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | semanticDashUiDashApiLib.SemanticUINs.ApiSettings,
+    className: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.ClassNameSettings,
+    context: java.lang.String | semanticDashUiDashDropdownLib.JQuery,
+    debug: scala.Boolean,
+    delay: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.DelaySettings,
+    direction: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.upward | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.downward,
+    duration: scala.Double,
+    error: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.ErrorSettings,
+    fields: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.FieldsSettings,
+    filterRemoteData: scala.Boolean,
+    forceSelection: scala.Boolean,
+    fullTextSearch: scala.Boolean | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.exact,
+    glyphWidth: scala.Double,
+    hideAdditions: scala.Boolean,
+    keepOnScreen: scala.Boolean,
+    keys: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.KeySettings,
+    label: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.LabelSettings,
+    `match`: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.both | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.value | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.text,
+    maxSelections: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Double,
+    message: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.MessageSettings,
+    metadata: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.MetadataSettings,
+    minCharacters: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    on: java.lang.String,
+    onAdd: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onChange: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onHide: js.Function1[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    onLabelCreate: js.Function3[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery
+    ],
+    onLabelRemove: js.Function2[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    onLabelSelect: js.Function2[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onNoResults: js.Function2[semanticDashUiDashDropdownLib.JQuery, js.Any, scala.Unit],
+    onRemove: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onShow: js.Function1[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    performance: scala.Boolean,
+    placeholder: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.value | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`,
+    preserveHTML: scala.Boolean,
+    regExp: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.RegExpSettings,
+    saveRemoteData: scala.Boolean,
+    selectOnKeydown: scala.Boolean,
+    selector: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.SelectorSettings,
+    showOnFocus: scala.Boolean,
+    silent: scala.Boolean,
+    sortSelect: scala.Boolean,
+    transition: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | java.lang.String,
+    useLabels: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions, allowCategorySelection = allowCategorySelection, allowReselection = allowReselection, allowTab = allowTab, apiSettings = apiSettings.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, delay = delay.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], filterRemoteData = filterRemoteData, forceSelection = forceSelection, fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth, hideAdditions = hideAdditions, keepOnScreen = keepOnScreen, keys = keys.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], `match` = `match`.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters, name = name, namespace = namespace, on = on, onAdd = onAdd, onChange = onChange, onHide = onHide, onLabelCreate = onLabelCreate, onLabelRemove = onLabelRemove, onLabelSelect = onLabelSelect, onNoResults = onNoResults, onRemove = onRemove, onShow = onShow, performance = performance, placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML, regExp = regExp, saveRemoteData = saveRemoteData, selectOnKeydown = selectOnKeydown, selector = selector.asInstanceOf[js.Any], showOnFocus = showOnFocus, silent = silent, sortSelect = sortSelect, transition = transition.asInstanceOf[js.Any], useLabels = useLabels, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

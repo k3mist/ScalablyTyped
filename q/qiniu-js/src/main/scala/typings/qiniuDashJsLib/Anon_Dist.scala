@@ -13,3 +13,12 @@ trait Anon_Dist extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Dist {
+  @scala.inline
+  def apply(dist: stdLib.Blob, height: scala.Double, width: scala.Double): Anon_Dist = {
+    val __obj = js.Dynamic.literal(dist = dist, height = height, width = width)
+  
+    __obj.asInstanceOf[Anon_Dist]
+  }
+}
+

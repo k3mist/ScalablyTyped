@@ -42,3 +42,23 @@ trait Token extends js.Object {
   var used: scala.Boolean
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    client_ip: java.lang.String,
+    created: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: stripejsLib.stripejsLibStrings.token,
+    `type`: stripejsLib.stripejsLibStrings.account | stripejsLib.stripejsLibStrings.bank_account | stripejsLib.stripejsLibStrings.card | stripejsLib.stripejsLibStrings.pii,
+    used: scala.Boolean,
+    bank_account: stripejsLib.customerMod.BankAccount = null,
+    card: stripejsLib.customerMod.Card = null
+  ): Token = {
+    val __obj = js.Dynamic.literal(client_ip = client_ip, created = created, id = id, livemode = livemode, `object` = `object`, `type` = `type`.asInstanceOf[js.Any], used = used)
+    if (bank_account != null) __obj.updateDynamic("bank_account")(bank_account)
+    if (card != null) __obj.updateDynamic("card")(card)
+    __obj.asInstanceOf[Token]
+  }
+}
+

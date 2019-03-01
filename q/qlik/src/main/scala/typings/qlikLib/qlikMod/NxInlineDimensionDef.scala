@@ -14,3 +14,19 @@ trait NxInlineDimensionDef extends js.Object {
   var qSortCriteries: js.Array[SortCriteria]
 }
 
+object NxInlineDimensionDef {
+  @scala.inline
+  def apply(
+    qActiveField: scala.Double,
+    qFieldDefs: js.Array[java.lang.String],
+    qGrouping: qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.H | qlikLib.qlikLibStrings.C,
+    qNumberPresentations: js.Array[FieldAttributes],
+    qReverseSort: scala.Boolean,
+    qSortCriteries: js.Array[SortCriteria]
+  ): NxInlineDimensionDef = {
+    val __obj = js.Dynamic.literal(qActiveField = qActiveField, qFieldDefs = qFieldDefs, qGrouping = qGrouping.asInstanceOf[js.Any], qNumberPresentations = qNumberPresentations, qReverseSort = qReverseSort, qSortCriteries = qSortCriteries)
+  
+    __obj.asInstanceOf[NxInlineDimensionDef]
+  }
+}
+

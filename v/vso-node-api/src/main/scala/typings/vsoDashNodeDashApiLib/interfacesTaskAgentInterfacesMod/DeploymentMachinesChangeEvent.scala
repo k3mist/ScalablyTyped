@@ -10,3 +10,12 @@ trait DeploymentMachinesChangeEvent extends js.Object {
   var machines: js.Array[DeploymentMachine]
 }
 
+object DeploymentMachinesChangeEvent {
+  @scala.inline
+  def apply(machineGroupReference: DeploymentGroupReference, machines: js.Array[DeploymentMachine]): DeploymentMachinesChangeEvent = {
+    val __obj = js.Dynamic.literal(machineGroupReference = machineGroupReference, machines = machines)
+  
+    __obj.asInstanceOf[DeploymentMachinesChangeEvent]
+  }
+}
+

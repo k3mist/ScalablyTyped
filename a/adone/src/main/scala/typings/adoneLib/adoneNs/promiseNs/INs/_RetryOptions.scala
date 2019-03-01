@@ -15,3 +15,20 @@ trait _RetryOptions extends js.Object {
   def report(message: java.lang.String, options: _RetryOptions, err: js.Any): scala.Unit
 }
 
+object _RetryOptions {
+  @scala.inline
+  def apply(
+    backOffBase: scala.Double,
+    backOffExponent: scala.Double,
+    `match`: java.lang.String | stdLib.RegExp | nodeLib.Error | (js.Array[java.lang.String | stdLib.RegExp | nodeLib.Error]),
+    max: scala.Double,
+    name: java.lang.String,
+    report: js.Function3[java.lang.String, _RetryOptions, js.Any, scala.Unit],
+    timeout: scala.Double
+  ): _RetryOptions = {
+    val __obj = js.Dynamic.literal(backOffBase = backOffBase, backOffExponent = backOffExponent, `match` = `match`.asInstanceOf[js.Any], max = max, name = name, report = report, timeout = timeout)
+  
+    __obj.asInstanceOf[_RetryOptions]
+  }
+}
+

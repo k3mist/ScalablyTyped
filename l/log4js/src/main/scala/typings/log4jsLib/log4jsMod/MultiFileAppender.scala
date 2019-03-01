@@ -15,3 +15,17 @@ trait MultiFileAppender extends Appender {
   var `type`: log4jsLib.log4jsLibStrings.multiFile
 }
 
+object MultiFileAppender {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    extension: java.lang.String,
+    property: java.lang.String,
+    `type`: log4jsLib.log4jsLibStrings.multiFile
+  ): MultiFileAppender = {
+    val __obj = js.Dynamic.literal(base = base, extension = extension, property = property, `type` = `type`)
+  
+    __obj.asInstanceOf[MultiFileAppender]
+  }
+}
+

@@ -14,3 +14,20 @@ trait TransformationDescriptor extends js.Object {
   var string: java.lang.String
 }
 
+object TransformationDescriptor {
+  @scala.inline
+  def apply(
+    diffMatrix: Matrix,
+    global: java.lang.String,
+    globalMatrix: Matrix,
+    local: java.lang.String,
+    localMatrix: Matrix,
+    string: java.lang.String,
+    toString: js.Function0[java.lang.String]
+  ): TransformationDescriptor = {
+    val __obj = js.Dynamic.literal(diffMatrix = diffMatrix, global = global, globalMatrix = globalMatrix, local = local, localMatrix = localMatrix, string = string, toString = toString)
+  
+    __obj.asInstanceOf[TransformationDescriptor]
+  }
+}
+

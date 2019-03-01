@@ -32,3 +32,19 @@ trait CodeCoverageStatistics extends js.Object {
   var total: scala.Double
 }
 
+object CodeCoverageStatistics {
+  @scala.inline
+  def apply(
+    covered: scala.Double,
+    delta: scala.Double,
+    isDeltaAvailable: scala.Boolean,
+    label: java.lang.String,
+    position: scala.Double,
+    total: scala.Double
+  ): CodeCoverageStatistics = {
+    val __obj = js.Dynamic.literal(covered = covered, delta = delta, isDeltaAvailable = isDeltaAvailable, label = label, position = position, total = total)
+  
+    __obj.asInstanceOf[CodeCoverageStatistics]
+  }
+}
+

@@ -12,3 +12,17 @@ trait StripeApplePayShippingMethod extends js.Object {
   var label: java.lang.String
 }
 
+object StripeApplePayShippingMethod {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    detail: java.lang.String,
+    identifier: java.lang.String,
+    label: java.lang.String
+  ): StripeApplePayShippingMethod = {
+    val __obj = js.Dynamic.literal(amount = amount, detail = detail, identifier = identifier, label = label)
+  
+    __obj.asInstanceOf[StripeApplePayShippingMethod]
+  }
+}
+

@@ -27,3 +27,18 @@ trait XConsolidatable
   def createConsolidationDescriptor(bEmpty: scala.Boolean): XConsolidationDescriptor
 }
 
+object XConsolidatable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    consolidate: js.Function1[XConsolidationDescriptor, scala.Unit],
+    createConsolidationDescriptor: js.Function1[scala.Boolean, XConsolidationDescriptor],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XConsolidatable = {
+    val __obj = js.Dynamic.literal(acquire = acquire, consolidate = consolidate, createConsolidationDescriptor = createConsolidationDescriptor, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XConsolidatable]
+  }
+}
+

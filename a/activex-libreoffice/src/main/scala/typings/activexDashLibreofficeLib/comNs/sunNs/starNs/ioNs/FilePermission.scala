@@ -24,3 +24,12 @@ trait FilePermission extends js.Object {
   var URL: java.lang.String
 }
 
+object FilePermission {
+  @scala.inline
+  def apply(Actions: java.lang.String, URL: java.lang.String): FilePermission = {
+    val __obj = js.Dynamic.literal(Actions = Actions, URL = URL)
+  
+    __obj.asInstanceOf[FilePermission]
+  }
+}
+

@@ -45,3 +45,25 @@ trait AliasesResource extends js.Object {
   def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListCourseAliasesResponse]
 }
 
+object AliasesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CourseAlias]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAlias, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCourseAliasesResponse]
+    ]
+  ): AliasesResource = {
+    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+  
+    __obj.asInstanceOf[AliasesResource]
+  }
+}
+

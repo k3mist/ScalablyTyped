@@ -14,3 +14,19 @@ trait AnalyzerDescriptor extends js.Object {
   var patchVersion: scala.Double
 }
 
+object AnalyzerDescriptor {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    majorVersion: scala.Double,
+    minorVersion: scala.Double,
+    name: java.lang.String,
+    patchVersion: scala.Double
+  ): AnalyzerDescriptor = {
+    val __obj = js.Dynamic.literal(description = description, id = id, majorVersion = majorVersion, minorVersion = minorVersion, name = name, patchVersion = patchVersion)
+  
+    __obj.asInstanceOf[AnalyzerDescriptor]
+  }
+}
+

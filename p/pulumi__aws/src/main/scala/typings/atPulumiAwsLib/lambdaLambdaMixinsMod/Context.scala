@@ -78,3 +78,24 @@ trait Context extends js.Object {
   def getRemainingTimeInMillis(): java.lang.String
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    awsRequestId: java.lang.String,
+    callbackWaitsForEmptyEventLoop: scala.Boolean,
+    clientContext: js.Any,
+    functionName: java.lang.String,
+    functionVersion: java.lang.String,
+    getRemainingTimeInMillis: js.Function0[java.lang.String],
+    identity: js.Any,
+    invokedFunctionArn: java.lang.String,
+    logGroupName: java.lang.String,
+    logStreamName: java.lang.String,
+    memoryLimitInMB: java.lang.String
+  ): Context = {
+    val __obj = js.Dynamic.literal(awsRequestId = awsRequestId, callbackWaitsForEmptyEventLoop = callbackWaitsForEmptyEventLoop, clientContext = clientContext, functionName = functionName, functionVersion = functionVersion, getRemainingTimeInMillis = getRemainingTimeInMillis, identity = identity, invokedFunctionArn = invokedFunctionArn, logGroupName = logGroupName, logStreamName = logStreamName, memoryLimitInMB = memoryLimitInMB)
+  
+    __obj.asInstanceOf[Context]
+  }
+}
+

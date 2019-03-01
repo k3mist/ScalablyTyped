@@ -15,3 +15,20 @@ trait DrivingResult extends js.Object {
   var waypoints: Poi
 }
 
+object DrivingResult {
+  @scala.inline
+  def apply(
+    destination: LngLat | Poi,
+    info: java.lang.String,
+    origin: LngLat,
+    routes: js.Array[DriveRoute],
+    start: Poi,
+    taxi_cost: scala.Double,
+    waypoints: Poi
+  ): DrivingResult = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info, origin = origin, routes = routes, start = start, taxi_cost = taxi_cost, waypoints = waypoints)
+  
+    __obj.asInstanceOf[DrivingResult]
+  }
+}
+

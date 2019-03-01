@@ -113,3 +113,40 @@ trait XEventAttacherManager
   def revokeScriptEvents(nIndex: scala.Double): scala.Unit
 }
 
+object XEventAttacherManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addScriptListener: js.Function1[XScriptListener, scala.Unit],
+    attach: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      js.Any, 
+      scala.Unit
+    ],
+    detach: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    getScriptEvents: js.Function1[scala.Double, activexDashInteropLib.SafeArray[ScriptEventDescriptor]],
+    insertEntry: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerScriptEvent: js.Function2[scala.Double, ScriptEventDescriptor, scala.Unit],
+    registerScriptEvents: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ScriptEventDescriptor], 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    removeEntry: js.Function1[scala.Double, scala.Unit],
+    removeScriptListener: js.Function1[XScriptListener, scala.Unit],
+    revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    revokeScriptEvents: js.Function1[scala.Double, scala.Unit]
+  ): XEventAttacherManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addScriptListener = addScriptListener, attach = attach, detach = detach, getScriptEvents = getScriptEvents, insertEntry = insertEntry, queryInterface = queryInterface, registerScriptEvent = registerScriptEvent, registerScriptEvents = registerScriptEvents, release = release, removeEntry = removeEntry, removeScriptListener = removeScriptListener, revokeScriptEvent = revokeScriptEvent, revokeScriptEvents = revokeScriptEvents)
+  
+    __obj.asInstanceOf[XEventAttacherManager]
+  }
+}
+

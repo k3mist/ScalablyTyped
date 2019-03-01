@@ -21,3 +21,18 @@ trait FieldValue
   var value: js.Any
 }
 
+object FieldValue {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    description: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: js.Any
+  ): FieldValue = {
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
+    __obj.asInstanceOf[FieldValue]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_XMax extends js.Object {
   var yMin: scala.Double
 }
 
+object Anon_XMax {
+  @scala.inline
+  def apply(xMax: scala.Double, xMin: scala.Double, yMax: scala.Double, yMin: scala.Double): Anon_XMax = {
+    val __obj = js.Dynamic.literal(xMax = xMax, xMin = xMin, yMax = yMax, yMin = yMin)
+  
+    __obj.asInstanceOf[Anon_XMax]
+  }
+}
+

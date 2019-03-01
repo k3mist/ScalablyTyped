@@ -31,3 +31,18 @@ trait ASPxClientGridViewSelectionEventArgs extends ASPxClientProcessingModeEvent
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewSelectionEventArgs {
+  @scala.inline
+  def apply(
+    isAllRecordsOnPage: scala.Boolean,
+    isChangedOnServer: scala.Boolean,
+    isSelected: scala.Boolean,
+    processOnServer: scala.Boolean,
+    visibleIndex: scala.Double
+  ): ASPxClientGridViewSelectionEventArgs = {
+    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, visibleIndex = visibleIndex)
+  
+    __obj.asInstanceOf[ASPxClientGridViewSelectionEventArgs]
+  }
+}
+

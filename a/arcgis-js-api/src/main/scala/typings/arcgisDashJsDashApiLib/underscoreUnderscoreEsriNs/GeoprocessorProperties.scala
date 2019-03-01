@@ -28,3 +28,22 @@ trait GeoprocessorProperties extends TaskProperties {
   var updateDelay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GeoprocessorProperties {
+  @scala.inline
+  def apply(
+    outSpatialReference: SpatialReferenceProperties = null,
+    processSpatialReference: SpatialReferenceProperties = null,
+    requestOptions: js.Any = null,
+    updateDelay: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): GeoprocessorProperties = {
+    val __obj = js.Dynamic.literal()
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (processSpatialReference != null) __obj.updateDynamic("processSpatialReference")(processSpatialReference)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GeoprocessorProperties]
+  }
+}
+

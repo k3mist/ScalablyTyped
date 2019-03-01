@@ -17,3 +17,19 @@ trait ConfigurationEvent
   var aInfo: js.Any
 }
 
+object ConfigurationEvent {
+  @scala.inline
+  def apply(
+    Accessor: js.Any,
+    Element: js.Any,
+    ReplacedElement: js.Any,
+    ResourceURL: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    aInfo: js.Any
+  ): ConfigurationEvent = {
+    val __obj = js.Dynamic.literal(Accessor = Accessor, Element = Element, ReplacedElement = ReplacedElement, ResourceURL = ResourceURL, Source = Source, aInfo = aInfo)
+  
+    __obj.asInstanceOf[ConfigurationEvent]
+  }
+}
+

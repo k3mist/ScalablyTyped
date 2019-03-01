@@ -16,3 +16,22 @@ trait ObjectTypeExtensionNode
   val name: NameNode
 }
 
+object ObjectTypeExtensionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.ObjectTypeExtension,
+    name: NameNode,
+    directives: js.Array[DirectiveNode] = null,
+    fields: js.Array[FieldDefinitionNode] = null,
+    interfaces: js.Array[NamedTypeNode] = null,
+    loc: Location = null
+  ): ObjectTypeExtensionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ObjectTypeExtensionNode]
+  }
+}
+

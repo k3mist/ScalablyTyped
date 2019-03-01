@@ -51,3 +51,23 @@ trait JobDependency
   var jobID: java.lang.String
 }
 
+object JobDependency {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    depJobId: scala.Double,
+    depOnType: java.lang.String,
+    depOnValue: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    heldOnValue: scala.Double,
+    holdOnType: java.lang.String,
+    id: scala.Double,
+    jobID: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): JobDependency = {
+    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = hasOwnProperty, heldOnValue = heldOnValue, holdOnType = holdOnType, id = id, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[JobDependency]
+  }
+}
+

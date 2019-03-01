@@ -12,3 +12,12 @@ trait FontDetailsResult extends js.Object {
   var levelOfControl: java.lang.String
 }
 
+object FontDetailsResult {
+  @scala.inline
+  def apply(fontId: java.lang.String, levelOfControl: java.lang.String): FontDetailsResult = {
+    val __obj = js.Dynamic.literal(fontId = fontId, levelOfControl = levelOfControl)
+  
+    __obj.asInstanceOf[FontDetailsResult]
+  }
+}
+

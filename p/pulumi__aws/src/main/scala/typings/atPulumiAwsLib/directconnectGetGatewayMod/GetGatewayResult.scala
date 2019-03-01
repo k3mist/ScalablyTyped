@@ -16,3 +16,12 @@ trait GetGatewayResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetGatewayResult {
+  @scala.inline
+  def apply(amazonSideAsn: java.lang.String, id: java.lang.String): GetGatewayResult = {
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, id = id)
+  
+    __obj.asInstanceOf[GetGatewayResult]
+  }
+}
+

@@ -13,3 +13,17 @@ trait Reveal extends js.Object {
   def toggle(): scala.Unit
 }
 
+object Reveal {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    open: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit]
+  ): Reveal = {
+    val __obj = js.Dynamic.literal(close = close, destroy = destroy, open = open, toggle = toggle)
+  
+    __obj.asInstanceOf[Reveal]
+  }
+}
+

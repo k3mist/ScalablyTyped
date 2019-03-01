@@ -26,3 +26,18 @@ trait IShippingMethod extends js.Object {
   var id: java.lang.String
 }
 
+object IShippingMethod {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    delivery_estimate: stripeLib.Anon_DateEarliest,
+    description: java.lang.String,
+    id: java.lang.String
+  ): IShippingMethod = {
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, delivery_estimate = delivery_estimate, description = description, id = id)
+  
+    __obj.asInstanceOf[IShippingMethod]
+  }
+}
+

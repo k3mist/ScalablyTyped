@@ -58,3 +58,38 @@ trait FlashStroke extends js.Object {
   var waveLength: java.lang.String
 }
 
+object FlashStroke {
+  @scala.inline
+  def apply(
+    breakAtCorners: scala.Boolean,
+    capType: java.lang.String,
+    color: js.Any,
+    curve: java.lang.String,
+    dash1: scala.Double,
+    dash2: scala.Double,
+    density: java.lang.String,
+    dotSize: java.lang.String,
+    dotSpace: scala.Double,
+    hatchThickness: java.lang.String,
+    jiggle: java.lang.String,
+    joinType: java.lang.String,
+    length: java.lang.String,
+    miterLimit: scala.Double,
+    pattern: java.lang.String,
+    rotate: java.lang.String,
+    scaleType: java.lang.String,
+    shapeFill: FlashFill,
+    space: java.lang.String,
+    strokeHinting: scala.Boolean,
+    style: java.lang.String,
+    thickness: scala.Double,
+    variation: java.lang.String,
+    waveHeight: java.lang.String,
+    waveLength: java.lang.String
+  ): FlashStroke = {
+    val __obj = js.Dynamic.literal(breakAtCorners = breakAtCorners, capType = capType, color = color, curve = curve, dash1 = dash1, dash2 = dash2, density = density, dotSize = dotSize, dotSpace = dotSpace, hatchThickness = hatchThickness, jiggle = jiggle, joinType = joinType, length = length, miterLimit = miterLimit, pattern = pattern, rotate = rotate, scaleType = scaleType, shapeFill = shapeFill, space = space, strokeHinting = strokeHinting, style = style, thickness = thickness, variation = variation, waveHeight = waveHeight, waveLength = waveLength)
+  
+    __obj.asInstanceOf[FlashStroke]
+  }
+}
+

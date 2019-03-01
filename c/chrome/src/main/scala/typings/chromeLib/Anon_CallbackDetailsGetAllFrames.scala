@@ -31,3 +31,38 @@ trait Anon_CallbackDetailsGetAllFrames extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackDetailsGetAllFrames {
+  @scala.inline
+  def apply(
+    getAllFrames: js.Function2[
+      chromeLib.chromeNs.webNavigationNs.GetAllFrameDetails, 
+      js.Function1[
+        /* details */ js.Array[chromeLib.chromeNs.webNavigationNs.GetAllFrameResultDetails] | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getFrame: js.Function2[
+      chromeLib.chromeNs.webNavigationNs.GetFrameDetails, 
+      js.Function1[
+        /* details */ chromeLib.chromeNs.webNavigationNs.GetFrameResultDetails | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    onBeforeNavigate: chromeLib.chromeNs.webNavigationNs.WebNavigationParentedEvent,
+    onCommitted: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onCompleted: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedEvent,
+    onCreatedNavigationTarget: chromeLib.chromeNs.webNavigationNs.WebNavigationSourceEvent,
+    onDOMContentLoaded: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedEvent,
+    onErrorOccurred: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedErrorEvent,
+    onHistoryStateUpdated: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onReferenceFragmentUpdated: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onTabReplaced: chromeLib.chromeNs.webNavigationNs.WebNavigationReplacementEvent
+  ): Anon_CallbackDetailsGetAllFrames = {
+    val __obj = js.Dynamic.literal(getAllFrames = getAllFrames, getFrame = getFrame, onBeforeNavigate = onBeforeNavigate, onCommitted = onCommitted, onCompleted = onCompleted, onCreatedNavigationTarget = onCreatedNavigationTarget, onDOMContentLoaded = onDOMContentLoaded, onErrorOccurred = onErrorOccurred, onHistoryStateUpdated = onHistoryStateUpdated, onReferenceFragmentUpdated = onReferenceFragmentUpdated, onTabReplaced = onTabReplaced)
+  
+    __obj.asInstanceOf[Anon_CallbackDetailsGetAllFrames]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ImageBitmap extends js.Object {
   def close(): scala.Unit
 }
 
+object ImageBitmap {
+  @scala.inline
+  def apply(close: js.Function0[scala.Unit], height: scala.Double, width: scala.Double): ImageBitmap = {
+    val __obj = js.Dynamic.literal(close = close, height = height, width = width)
+  
+    __obj.asInstanceOf[ImageBitmap]
+  }
+}
+

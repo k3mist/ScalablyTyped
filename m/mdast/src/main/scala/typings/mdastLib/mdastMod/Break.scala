@@ -12,3 +12,17 @@ trait Break
   var type_Break: mdastLib.mdastLibStrings.break
 }
 
+object Break {
+  @scala.inline
+  def apply(
+    `type`: mdastLib.mdastLibStrings.break,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null
+  ): Break = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Break]
+  }
+}
+

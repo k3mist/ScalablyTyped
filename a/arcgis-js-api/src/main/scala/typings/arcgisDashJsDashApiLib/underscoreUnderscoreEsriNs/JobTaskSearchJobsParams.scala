@@ -21,3 +21,18 @@ trait JobTaskSearchJobsParams
   var user: java.lang.String
 }
 
+object JobTaskSearchJobsParams {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    text: java.lang.String,
+    user: java.lang.String
+  ): JobTaskSearchJobsParams = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, text = text, user = user)
+  
+    __obj.asInstanceOf[JobTaskSearchJobsParams]
+  }
+}
+

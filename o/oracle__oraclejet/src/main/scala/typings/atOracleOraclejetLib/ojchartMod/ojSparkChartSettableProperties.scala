@@ -37,3 +37,42 @@ trait ojSparkChartSettableProperties[K, D]
   var visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
 }
 
+object ojSparkChartSettableProperties {
+  @scala.inline
+  def apply[K, D](
+    animationOnDataChange: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    animationOnDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    areaColor: java.lang.String,
+    areaSvgClassName: java.lang.String,
+    areaSvgStyle: js.Object,
+    as: java.lang.String,
+    barGapRatio: scala.Double,
+    baselineScaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.zero | atOracleOraclejetLib.atOracleOraclejetLibStrings.min,
+    color: java.lang.String,
+    firstColor: java.lang.String,
+    highColor: java.lang.String,
+    lastColor: java.lang.String,
+    lineStyle: atOracleOraclejetLib.atOracleOraclejetLibStrings.dotted | atOracleOraclejetLib.atOracleOraclejetLibStrings.dashed | atOracleOraclejetLib.atOracleOraclejetLibStrings.solid,
+    lineType: atOracleOraclejetLib.atOracleOraclejetLibStrings.curved | atOracleOraclejetLib.atOracleOraclejetLibStrings.stepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredStepped | atOracleOraclejetLib.atOracleOraclejetLibStrings.segmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.centeredSegmented | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.straight,
+    lineWidth: scala.Double,
+    lowColor: java.lang.String,
+    markerShape: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String,
+    markerSize: scala.Double,
+    referenceObjects: js.Array[atOracleOraclejetLib.ojchartMod.ojSparkChartNs.ReferenceObject],
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    tooltip: atOracleOraclejetLib.Anon_ContextRenderer,
+    trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.area | atOracleOraclejetLib.atOracleOraclejetLibStrings.lineWithArea | atOracleOraclejetLib.atOracleOraclejetLibStrings.bar | atOracleOraclejetLib.atOracleOraclejetLibStrings.line,
+    visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    animationDuration: scala.Int | scala.Double = null,
+    data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
+  ): ojSparkChartSettableProperties[K, D] = {
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], areaColor = areaColor, areaSvgClassName = areaSvgClassName, areaSvgStyle = areaSvgStyle, as = as, barGapRatio = barGapRatio, baselineScaling = baselineScaling.asInstanceOf[js.Any], color = color, firstColor = firstColor, highColor = highColor, lastColor = lastColor, lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth, lowColor = lowColor, markerShape = markerShape.asInstanceOf[js.Any], markerSize = markerSize, referenceObjects = referenceObjects, svgClassName = svgClassName, svgStyle = svgStyle, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, `type` = `type`.asInstanceOf[js.Any], visualEffects = visualEffects.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[ojSparkChartSettableProperties[K, D]]
+  }
+}
+

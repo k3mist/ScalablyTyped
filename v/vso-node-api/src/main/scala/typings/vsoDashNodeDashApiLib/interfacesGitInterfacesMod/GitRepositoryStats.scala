@@ -12,3 +12,17 @@ trait GitRepositoryStats extends js.Object {
   var repositoryId: java.lang.String
 }
 
+object GitRepositoryStats {
+  @scala.inline
+  def apply(
+    activePullRequestsCount: scala.Double,
+    branchesCount: scala.Double,
+    commitsCount: scala.Double,
+    repositoryId: java.lang.String
+  ): GitRepositoryStats = {
+    val __obj = js.Dynamic.literal(activePullRequestsCount = activePullRequestsCount, branchesCount = branchesCount, commitsCount = commitsCount, repositoryId = repositoryId)
+  
+    __obj.asInstanceOf[GitRepositoryStats]
+  }
+}
+

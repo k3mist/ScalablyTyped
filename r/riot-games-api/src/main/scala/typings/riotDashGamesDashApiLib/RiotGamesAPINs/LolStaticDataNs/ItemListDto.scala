@@ -14,3 +14,19 @@ trait ItemListDto extends js.Object {
   var version: java.lang.String
 }
 
+object ItemListDto {
+  @scala.inline
+  def apply(
+    basic: BasicDataDto,
+    data: js.Array[org.scalablytyped.runtime.StringDictionary[ItemDto]],
+    groups: js.Array[GroupDto],
+    tree: js.Array[ItemTreeDto],
+    `type`: java.lang.String,
+    version: java.lang.String
+  ): ItemListDto = {
+    val __obj = js.Dynamic.literal(basic = basic, data = data, groups = groups, tree = tree, `type` = `type`, version = version)
+  
+    __obj.asInstanceOf[ItemListDto]
+  }
+}
+

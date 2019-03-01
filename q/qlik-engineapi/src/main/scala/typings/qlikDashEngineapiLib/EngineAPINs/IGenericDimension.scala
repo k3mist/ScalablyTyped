@@ -60,3 +60,22 @@ trait IGenericDimension extends js.Object {
   def unPublish(): js.Promise[scala.Unit]
 }
 
+object IGenericDimension {
+  @scala.inline
+  def apply(
+    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
+    getDimension: js.Function0[js.Promise[IGenericDimensionProperties]],
+    getInfo: js.Function0[js.Promise[INxInfo]],
+    getLayout: js.Function0[js.Promise[IGenericDimensionLayout]],
+    getLinkedObjects: js.Function0[js.Promise[js.Array[INxLinkedObjectInfo]]],
+    getProperties: js.Function0[js.Promise[IGenericDimensionProperties]],
+    publish: js.Function0[js.Promise[scala.Unit]],
+    setProperties: js.Function0[js.Promise[IGenericDimensionProperties]],
+    unPublish: js.Function0[js.Promise[scala.Unit]]
+  ): IGenericDimension = {
+    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getDimension = getDimension, getInfo = getInfo, getLayout = getLayout, getLinkedObjects = getLinkedObjects, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+  
+    __obj.asInstanceOf[IGenericDimension]
+  }
+}
+

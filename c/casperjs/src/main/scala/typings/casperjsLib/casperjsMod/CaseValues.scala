@@ -10,3 +10,12 @@ trait CaseValues extends js.Object {
   var subject: scala.Boolean
 }
 
+object CaseValues {
+  @scala.inline
+  def apply(expected: scala.Boolean, subject: scala.Boolean): CaseValues = {
+    val __obj = js.Dynamic.literal(expected = expected, subject = subject)
+  
+    __obj.asInstanceOf[CaseValues]
+  }
+}
+

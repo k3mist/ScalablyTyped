@@ -13,3 +13,15 @@ import scala.scalajs.js.annotation._
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/INIT`
 }
 
+object NavigationInitAction {
+  @scala.inline
+  def apply(
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/INIT`,
+    params: NavigationParams = null
+  ): NavigationInitAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationInitAction]
+  }
+}
+

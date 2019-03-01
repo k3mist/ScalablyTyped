@@ -26,3 +26,15 @@ trait IGridExporterApi extends js.Object {
   def pdfExport(rowTypes: java.lang.String, colTypes: java.lang.String): scala.Unit
 }
 
+object IGridExporterApi {
+  @scala.inline
+  def apply(
+    csvExport: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    pdfExport: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): IGridExporterApi = {
+    val __obj = js.Dynamic.literal(csvExport = csvExport, pdfExport = pdfExport)
+  
+    __obj.asInstanceOf[IGridExporterApi]
+  }
+}
+

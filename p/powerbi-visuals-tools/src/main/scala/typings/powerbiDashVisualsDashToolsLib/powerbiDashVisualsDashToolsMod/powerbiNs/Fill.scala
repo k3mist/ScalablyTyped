@@ -11,3 +11,18 @@ trait Fill extends _StructuralObjectValue {
   var solid: js.UndefOr[powerbiDashVisualsDashToolsLib.Anon_Color] = js.undefined
 }
 
+object Fill {
+  @scala.inline
+  def apply(
+    gradient: powerbiDashVisualsDashToolsLib.Anon_EndColor = null,
+    pattern: powerbiDashVisualsDashToolsLib.Anon_ColorPatternKind = null,
+    solid: powerbiDashVisualsDashToolsLib.Anon_Color = null
+  ): Fill = {
+    val __obj = js.Dynamic.literal()
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (solid != null) __obj.updateDynamic("solid")(solid)
+    __obj.asInstanceOf[Fill]
+  }
+}
+

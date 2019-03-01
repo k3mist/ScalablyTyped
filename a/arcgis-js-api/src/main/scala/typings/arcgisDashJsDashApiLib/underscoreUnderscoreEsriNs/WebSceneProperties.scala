@@ -58,3 +58,34 @@ trait WebSceneProperties extends MapProperties {
   var thumbnailUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebSceneProperties {
+  @scala.inline
+  def apply(
+    applicationProperties: ApplicationPropertiesProperties = null,
+    basemap: BasemapProperties | java.lang.String = null,
+    clippingArea: ExtentProperties = null,
+    clippingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ground: GroundProperties | java.lang.String = null,
+    heightModelInfo: HeightModelInfoProperties = null,
+    initialViewProperties: websceneInitialViewPropertiesProperties = null,
+    layers: CollectionProperties[LayerProperties] | js.Array[LayerProperties] = null,
+    portalItem: PortalItemProperties = null,
+    presentation: PresentationProperties = null,
+    thumbnailUrl: java.lang.String = null
+  ): WebSceneProperties = {
+    val __obj = js.Dynamic.literal()
+    if (applicationProperties != null) __obj.updateDynamic("applicationProperties")(applicationProperties)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (clippingArea != null) __obj.updateDynamic("clippingArea")(clippingArea)
+    if (!js.isUndefined(clippingEnabled)) __obj.updateDynamic("clippingEnabled")(clippingEnabled)
+    if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
+    if (heightModelInfo != null) __obj.updateDynamic("heightModelInfo")(heightModelInfo)
+    if (initialViewProperties != null) __obj.updateDynamic("initialViewProperties")(initialViewProperties)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (presentation != null) __obj.updateDynamic("presentation")(presentation)
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
+    __obj.asInstanceOf[WebSceneProperties]
+  }
+}
+

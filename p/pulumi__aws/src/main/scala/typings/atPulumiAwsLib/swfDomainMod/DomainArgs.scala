@@ -24,3 +24,19 @@ trait DomainArgs extends js.Object {
   val workflowExecutionRetentionPeriodInDays: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object DomainArgs {
+  @scala.inline
+  def apply(
+    workflowExecutionRetentionPeriodInDays: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): DomainArgs = {
+    val __obj = js.Dynamic.literal(workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainArgs]
+  }
+}
+

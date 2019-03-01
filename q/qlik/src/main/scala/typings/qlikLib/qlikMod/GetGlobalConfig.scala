@@ -13,3 +13,18 @@ trait GetGlobalConfig extends js.Object {
   var prefix: java.lang.String
 }
 
+object GetGlobalConfig {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    identity: java.lang.String,
+    isSecure: scala.Boolean,
+    port: java.lang.String,
+    prefix: java.lang.String
+  ): GetGlobalConfig = {
+    val __obj = js.Dynamic.literal(host = host, identity = identity, isSecure = isSecure, port = port, prefix = prefix)
+  
+    __obj.asInstanceOf[GetGlobalConfig]
+  }
+}
+

@@ -21,3 +21,17 @@ trait XActionsApproval
   def approveAction(nAction: scala.Double): scala.Boolean
 }
 
+object XActionsApproval {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveAction: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XActionsApproval = {
+    val __obj = js.Dynamic.literal(acquire = acquire, approveAction = approveAction, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XActionsApproval]
+  }
+}
+

@@ -15,3 +15,19 @@ trait AutocompleteResultPoi extends js.Object {
   var streetNumber: java.lang.String
 }
 
+object AutocompleteResultPoi {
+  @scala.inline
+  def apply(
+    City: java.lang.String,
+    business: java.lang.String,
+    district: java.lang.String,
+    province: java.lang.String,
+    street: java.lang.String,
+    streetNumber: java.lang.String
+  ): AutocompleteResultPoi = {
+    val __obj = js.Dynamic.literal(City = City, business = business, district = district, province = province, street = street, streetNumber = streetNumber)
+  
+    __obj.asInstanceOf[AutocompleteResultPoi]
+  }
+}
+

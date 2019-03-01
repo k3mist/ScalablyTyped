@@ -20,3 +20,17 @@ trait DBASEConnectionProperties extends FILEConnectionProperties {
   var ShowDeleted: scala.Boolean
 }
 
+object DBASEConnectionProperties {
+  @scala.inline
+  def apply(
+    CharSet: java.lang.String,
+    ShowDeleted: scala.Boolean,
+    password: java.lang.String,
+    user: java.lang.String
+  ): DBASEConnectionProperties = {
+    val __obj = js.Dynamic.literal(CharSet = CharSet, ShowDeleted = ShowDeleted, password = password, user = user)
+  
+    __obj.asInstanceOf[DBASEConnectionProperties]
+  }
+}
+

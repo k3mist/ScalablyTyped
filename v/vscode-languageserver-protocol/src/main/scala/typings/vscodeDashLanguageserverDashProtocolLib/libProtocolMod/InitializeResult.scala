@@ -16,3 +16,18 @@ trait InitializeResult
   var capabilities: ServerCapabilities
 }
 
+object InitializeResult {
+  @scala.inline
+  def apply(
+    capabilities: ServerCapabilities,
+    StringDictionary: /**
+    * Custom initialization results.
+    */
+  /* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): InitializeResult = {
+    val __obj = js.Dynamic.literal(capabilities = capabilities)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[InitializeResult]
+  }
+}
+

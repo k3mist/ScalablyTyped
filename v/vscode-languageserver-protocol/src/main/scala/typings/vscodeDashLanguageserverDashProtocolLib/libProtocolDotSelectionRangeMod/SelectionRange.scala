@@ -17,3 +17,15 @@ trait SelectionRange extends js.Object {
   var range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
 }
 
+object SelectionRange {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
+  ): SelectionRange = {
+    val __obj = js.Dynamic.literal(kind = kind, range = range)
+  
+    __obj.asInstanceOf[SelectionRange]
+  }
+}
+

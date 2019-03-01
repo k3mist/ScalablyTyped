@@ -10,3 +10,12 @@ trait Anon_OutPoint extends js.Object {
   /** True if inPoint was transformed successfully; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_OutPoint {
+  @scala.inline
+  def apply(outPoint: winrtDashUwpLib.WindowsNs.FoundationNs.Point, returnValue: scala.Boolean): Anon_OutPoint = {
+    val __obj = js.Dynamic.literal(outPoint = outPoint, returnValue = returnValue)
+  
+    __obj.asInstanceOf[Anon_OutPoint]
+  }
+}
+

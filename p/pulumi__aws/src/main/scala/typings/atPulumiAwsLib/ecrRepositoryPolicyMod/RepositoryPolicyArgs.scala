@@ -16,3 +16,15 @@ trait RepositoryPolicyArgs extends js.Object {
   val repository: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object RepositoryPolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    repository: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): RepositoryPolicyArgs = {
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RepositoryPolicyArgs]
+  }
+}
+

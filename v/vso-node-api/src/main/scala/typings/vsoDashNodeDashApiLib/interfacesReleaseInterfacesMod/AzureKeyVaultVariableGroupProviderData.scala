@@ -11,3 +11,12 @@ trait AzureKeyVaultVariableGroupProviderData extends VariableGroupProviderData {
   var vault: java.lang.String
 }
 
+object AzureKeyVaultVariableGroupProviderData {
+  @scala.inline
+  def apply(lastRefreshedOn: stdLib.Date, serviceEndpointId: java.lang.String, vault: java.lang.String): AzureKeyVaultVariableGroupProviderData = {
+    val __obj = js.Dynamic.literal(lastRefreshedOn = lastRefreshedOn, serviceEndpointId = serviceEndpointId, vault = vault)
+  
+    __obj.asInstanceOf[AzureKeyVaultVariableGroupProviderData]
+  }
+}
+

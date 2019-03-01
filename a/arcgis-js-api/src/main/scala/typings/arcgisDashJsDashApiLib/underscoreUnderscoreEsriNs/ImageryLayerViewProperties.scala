@@ -14,3 +14,13 @@ trait ImageryLayerViewProperties extends LayerViewProperties {
   var pixelData: js.UndefOr[ImageryLayerViewPixelData] = js.undefined
 }
 
+object ImageryLayerViewProperties {
+  @scala.inline
+  def apply(pixelData: ImageryLayerViewPixelData = null, visible: js.UndefOr[scala.Boolean] = js.undefined): ImageryLayerViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (pixelData != null) __obj.updateDynamic("pixelData")(pixelData)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ImageryLayerViewProperties]
+  }
+}
+

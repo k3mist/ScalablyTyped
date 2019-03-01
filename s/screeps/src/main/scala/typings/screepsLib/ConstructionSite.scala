@@ -40,3 +40,22 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject
   def remove(): scala.Double
 }
 
+object ConstructionSite {
+  @scala.inline
+  def apply[T /* <: BuildableStructureConstant */](
+    id: java.lang.String,
+    my: scala.Boolean,
+    owner: Owner,
+    pos: RoomPosition,
+    progress: scala.Double,
+    progressTotal: scala.Double,
+    remove: js.Function0[scala.Double],
+    structureType: T,
+    room: Room = null
+  ): ConstructionSite[T] = {
+    val __obj = js.Dynamic.literal(id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = remove, structureType = structureType.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[ConstructionSite[T]]
+  }
+}
+

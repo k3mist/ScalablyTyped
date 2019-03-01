@@ -15,3 +15,12 @@ trait ICETimeout extends js.Object {
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
 }
 
+object ICETimeout {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): ICETimeout = {
+    val __obj = js.Dynamic.literal(call = call)
+  
+    __obj.asInstanceOf[ICETimeout]
+  }
+}
+

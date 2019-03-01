@@ -44,3 +44,22 @@ trait GeolocationPositioningProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object GeolocationPositioningProperties {
+  @scala.inline
+  def apply(
+    geolocationOptions: js.Any = null,
+    goToLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    graphic: GraphicProperties = null,
+    scale: scala.Int | scala.Double = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): GeolocationPositioningProperties = {
+    val __obj = js.Dynamic.literal()
+    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions)
+    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled)
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeolocationPositioningProperties]
+  }
+}
+

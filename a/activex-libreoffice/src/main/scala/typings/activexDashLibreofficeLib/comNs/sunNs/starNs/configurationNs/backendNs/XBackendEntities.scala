@@ -59,3 +59,22 @@ trait XBackendEntities
   def supportsEntity(aEntity: java.lang.String): scala.Boolean
 }
 
+object XBackendEntities {
+  @scala.inline
+  def apply(
+    AdminEntity: java.lang.String,
+    OwnerEntity: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAdminEntity: js.Function0[java.lang.String],
+    getOwnerEntity: js.Function0[java.lang.String],
+    isEqualEntity: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    supportsEntity: js.Function1[java.lang.String, scala.Boolean]
+  ): XBackendEntities = {
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getOwnerEntity = getOwnerEntity, isEqualEntity = isEqualEntity, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+  
+    __obj.asInstanceOf[XBackendEntities]
+  }
+}
+

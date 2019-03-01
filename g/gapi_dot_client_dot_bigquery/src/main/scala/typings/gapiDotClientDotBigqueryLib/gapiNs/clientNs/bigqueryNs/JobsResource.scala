@@ -29,3 +29,37 @@ trait JobsResource extends js.Object {
   def query(request: gapiDotClientDotBigqueryLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[QueryResponse]
 }
 
+object JobsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[JobCancelResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    getQueryResults: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFieldsJobIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetQueryResultsResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AllUsers, 
+      gapiDotClientLib.gapiNs.clientNs.Request[JobList]
+    ],
+    query: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[QueryResponse]
+    ]
+  ): JobsResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, get = get, getQueryResults = getQueryResults, insert = insert, list = list, query = query)
+  
+    __obj.asInstanceOf[JobsResource]
+  }
+}
+

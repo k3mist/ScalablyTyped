@@ -37,3 +37,21 @@ trait BacklogConfiguration extends js.Object {
   var workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo]
 }
 
+object BacklogConfiguration {
+  @scala.inline
+  def apply(
+    backlogFields: BacklogFields,
+    bugsBehavior: BugsBehavior,
+    hiddenBacklogs: js.Array[java.lang.String],
+    portfolioBacklogs: js.Array[BacklogLevelConfiguration],
+    requirementBacklog: BacklogLevelConfiguration,
+    taskBacklog: BacklogLevelConfiguration,
+    url: java.lang.String,
+    workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo]
+  ): BacklogConfiguration = {
+    val __obj = js.Dynamic.literal(backlogFields = backlogFields, bugsBehavior = bugsBehavior, hiddenBacklogs = hiddenBacklogs, portfolioBacklogs = portfolioBacklogs, requirementBacklog = requirementBacklog, taskBacklog = taskBacklog, url = url, workItemTypeMappedStates = workItemTypeMappedStates)
+  
+    __obj.asInstanceOf[BacklogConfiguration]
+  }
+}
+

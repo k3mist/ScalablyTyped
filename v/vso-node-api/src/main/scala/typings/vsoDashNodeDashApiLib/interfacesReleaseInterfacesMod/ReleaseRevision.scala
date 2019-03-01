@@ -15,3 +15,20 @@ trait ReleaseRevision extends js.Object {
   var releaseId: scala.Double
 }
 
+object ReleaseRevision {
+  @scala.inline
+  def apply(
+    changeDetails: java.lang.String,
+    changeType: java.lang.String,
+    changedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changedDate: stdLib.Date,
+    comment: java.lang.String,
+    definitionSnapshotRevision: scala.Double,
+    releaseId: scala.Double
+  ): ReleaseRevision = {
+    val __obj = js.Dynamic.literal(changeDetails = changeDetails, changeType = changeType, changedBy = changedBy, changedDate = changedDate, comment = comment, definitionSnapshotRevision = definitionSnapshotRevision, releaseId = releaseId)
+  
+    __obj.asInstanceOf[ReleaseRevision]
+  }
+}
+

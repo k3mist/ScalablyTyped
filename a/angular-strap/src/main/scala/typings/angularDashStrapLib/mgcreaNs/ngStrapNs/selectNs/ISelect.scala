@@ -13,3 +13,18 @@ trait ISelect extends js.Object {
   def update(matches: js.Any): scala.Unit
 }
 
+object ISelect {
+  @scala.inline
+  def apply(
+    active: js.Function1[scala.Double, scala.Double],
+    hide: js.Function0[scala.Unit],
+    select: js.Function1[scala.Double, scala.Unit],
+    show: js.Function0[scala.Unit],
+    update: js.Function1[js.Any, scala.Unit]
+  ): ISelect = {
+    val __obj = js.Dynamic.literal(active = active, hide = hide, select = select, show = show, update = update)
+  
+    __obj.asInstanceOf[ISelect]
+  }
+}
+

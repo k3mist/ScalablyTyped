@@ -21,3 +21,12 @@ trait ASPxClientFileManagerItemsCopiedEventArgs extends ASPxClientEventArgs {
   var oldFolderFullName: java.lang.String
 }
 
+object ASPxClientFileManagerItemsCopiedEventArgs {
+  @scala.inline
+  def apply(items: js.Array[ASPxClientFileManagerItem], oldFolderFullName: java.lang.String): ASPxClientFileManagerItemsCopiedEventArgs = {
+    val __obj = js.Dynamic.literal(items = items, oldFolderFullName = oldFolderFullName)
+  
+    __obj.asInstanceOf[ASPxClientFileManagerItemsCopiedEventArgs]
+  }
+}
+

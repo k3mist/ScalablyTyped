@@ -18,3 +18,23 @@ trait TaskInputDefinitionBase extends js.Object {
   var visibleRule: java.lang.String
 }
 
+object TaskInputDefinitionBase {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String,
+    groupName: java.lang.String,
+    helpMarkDown: java.lang.String,
+    label: java.lang.String,
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    required: scala.Boolean,
+    `type`: java.lang.String,
+    visibleRule: java.lang.String
+  ): TaskInputDefinitionBase = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, groupName = groupName, helpMarkDown = helpMarkDown, label = label, name = name, options = options, properties = properties, required = required, `type` = `type`, visibleRule = visibleRule)
+  
+    __obj.asInstanceOf[TaskInputDefinitionBase]
+  }
+}
+

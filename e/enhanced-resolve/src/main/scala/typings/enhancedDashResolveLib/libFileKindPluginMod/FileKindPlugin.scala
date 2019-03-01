@@ -12,3 +12,16 @@ trait FileKindPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object FileKindPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    source: java.lang.String,
+    target: java.lang.String
+  ): FileKindPlugin = {
+    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
+  
+    __obj.asInstanceOf[FileKindPlugin]
+  }
+}
+

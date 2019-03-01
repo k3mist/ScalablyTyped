@@ -14,3 +14,17 @@ trait Token extends js.Object {
   ] = js.undefined
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: js.Array[
+      java.lang.String | scala.Null | streamDashJsonLib.streamDashJsonLibNumbers.`true` | streamDashJsonLib.streamDashJsonLibNumbers.`false`
+    ] = null
+  ): Token = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Token]
+  }
+}
+

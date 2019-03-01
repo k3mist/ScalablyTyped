@@ -70,3 +70,25 @@ trait ASPxClientDiagramCoordinates extends js.Object {
   def IsEmpty(): scala.Boolean
 }
 
+object ASPxClientDiagramCoordinates {
+  @scala.inline
+  def apply(
+    GetAxisValue: js.Function1[ASPxClientAxisBase, ASPxClientAxisValue],
+    IsEmpty: js.Function0[scala.Boolean],
+    argumentScaleType: java.lang.String,
+    axisX: ASPxClientAxisBase,
+    axisY: ASPxClientAxisBase,
+    dateTimeArgument: stdLib.Date,
+    dateTimeValue: stdLib.Date,
+    numericalArgument: scala.Double,
+    numericalValue: scala.Double,
+    pane: ASPxClientXYDiagramPane,
+    qualitativeArgument: java.lang.String,
+    valueScaleType: java.lang.String
+  ): ASPxClientDiagramCoordinates = {
+    val __obj = js.Dynamic.literal(GetAxisValue = GetAxisValue, IsEmpty = IsEmpty, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, dateTimeArgument = dateTimeArgument, dateTimeValue = dateTimeValue, numericalArgument = numericalArgument, numericalValue = numericalValue, pane = pane, qualitativeArgument = qualitativeArgument, valueScaleType = valueScaleType)
+  
+    __obj.asInstanceOf[ASPxClientDiagramCoordinates]
+  }
+}
+

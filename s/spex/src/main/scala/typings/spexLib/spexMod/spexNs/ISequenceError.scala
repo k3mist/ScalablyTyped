@@ -19,3 +19,23 @@ trait ISequenceError
   var stack_ISequenceError: java.lang.String
 }
 
+object ISequenceError {
+  @scala.inline
+  def apply(
+    dest: js.Any,
+    duration: scala.Double,
+    error: js.Any,
+    index: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    reason: java.lang.String,
+    source: js.Any,
+    stack: java.lang.String,
+    toString: js.Function0[java.lang.String]
+  ): ISequenceError = {
+    val __obj = js.Dynamic.literal(dest = dest, duration = duration, error = error, index = index, message = message, name = name, reason = reason, source = source, stack = stack, toString = toString)
+  
+    __obj.asInstanceOf[ISequenceError]
+  }
+}
+

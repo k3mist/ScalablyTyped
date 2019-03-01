@@ -17,3 +17,22 @@ trait upmConf extends js.Object {
   def getPath(ctx: js.Object): java.lang.String
 }
 
+object upmConf {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String,
+    clientSecret: java.lang.String,
+    domain: java.lang.String,
+    enableMock: scala.Boolean,
+    failHook: js.Function3[stdLib.Error, js.Object, sixDashRuntimeLib.SixNs.next, js.Any],
+    getPath: js.Function1[js.Object, java.lang.String],
+    path: java.lang.String,
+    skipOffline: scala.Boolean,
+    whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
+  ): upmConf = {
+    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, domain = domain, enableMock = enableMock, failHook = failHook, getPath = getPath, path = path, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[upmConf]
+  }
+}
+

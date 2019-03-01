@@ -9,3 +9,12 @@ trait Anon_Threshold extends js.Object {
   var threshold: scala.Double
 }
 
+object Anon_Threshold {
+  @scala.inline
+  def apply(threshold: scala.Double): Anon_Threshold = {
+    val __obj = js.Dynamic.literal(threshold = threshold)
+  
+    __obj.asInstanceOf[Anon_Threshold]
+  }
+}
+

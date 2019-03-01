@@ -62,3 +62,26 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBARBORDERED extends js.Object {
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_AddEventListenerApiNameApplyPropertiesBARBORDERED {
+  @scala.inline
+  def apply(
+    BAR: scala.Double,
+    BORDERED: scala.Double,
+    DONE: scala.Double,
+    PLAIN: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_AddEventListenerApiNameApplyPropertiesBARBORDERED = {
+    val __obj = js.Dynamic.literal(BAR = BAR, BORDERED = BORDERED, DONE = DONE, PLAIN = PLAIN, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+  
+    __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBARBORDERED]
+  }
+}
+

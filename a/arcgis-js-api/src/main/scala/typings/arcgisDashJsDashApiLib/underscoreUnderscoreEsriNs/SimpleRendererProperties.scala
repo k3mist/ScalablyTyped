@@ -22,3 +22,20 @@ trait SimpleRendererProperties
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
 
+object SimpleRendererProperties {
+  @scala.inline
+  def apply(
+    authoringInfo: AuthoringInfoProperties = null,
+    label: java.lang.String = null,
+    symbol: SymbolProperties = null,
+    visualVariables: js.Array[VisualVariableProperties] = null
+  ): SimpleRendererProperties = {
+    val __obj = js.Dynamic.literal()
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    __obj.asInstanceOf[SimpleRendererProperties]
+  }
+}
+

@@ -14,3 +14,19 @@ trait GlideEmailOutbound extends js.Object {
   def setSubject(subject: java.lang.String): scala.Unit
 }
 
+object GlideEmailOutbound {
+  @scala.inline
+  def apply(
+    addAddress: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    getSubject: js.Function0[java.lang.String],
+    setBody: js.Function1[java.lang.String, scala.Unit],
+    setFrom: js.Function1[java.lang.String, scala.Unit],
+    setReplyTo: js.Function1[java.lang.String, scala.Unit],
+    setSubject: js.Function1[java.lang.String, scala.Unit]
+  ): GlideEmailOutbound = {
+    val __obj = js.Dynamic.literal(addAddress = addAddress, getSubject = getSubject, setBody = setBody, setFrom = setFrom, setReplyTo = setReplyTo, setSubject = setSubject)
+  
+    __obj.asInstanceOf[GlideEmailOutbound]
+  }
+}
+

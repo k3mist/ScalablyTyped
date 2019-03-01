@@ -10,3 +10,18 @@ trait TabControlTabCancelEventArgs extends ProcessingModeCancelEventArgs {
   val tab: BootstrapTab
 }
 
+object TabControlTabCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    processOnServer: scala.Boolean,
+    reloadContentOnCallback: scala.Boolean,
+    sender: Control,
+    tab: BootstrapTab
+  ): TabControlTabCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, sender = sender, tab = tab)
+  
+    __obj.asInstanceOf[TabControlTabCancelEventArgs]
+  }
+}
+

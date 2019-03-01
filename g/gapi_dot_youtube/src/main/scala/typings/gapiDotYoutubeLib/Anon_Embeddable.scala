@@ -36,3 +36,20 @@ trait Anon_Embeddable extends js.Object {
   var uploadStatus: java.lang.String
 }
 
+object Anon_Embeddable {
+  @scala.inline
+  def apply(
+    embeddable: scala.Boolean,
+    failureReason: java.lang.String,
+    license: java.lang.String,
+    privacyStatus: java.lang.String,
+    publicStatsViewable: scala.Boolean,
+    rejectionReason: java.lang.String,
+    uploadStatus: java.lang.String
+  ): Anon_Embeddable = {
+    val __obj = js.Dynamic.literal(embeddable = embeddable, failureReason = failureReason, license = license, privacyStatus = privacyStatus, publicStatsViewable = publicStatsViewable, rejectionReason = rejectionReason, uploadStatus = uploadStatus)
+  
+    __obj.asInstanceOf[Anon_Embeddable]
+  }
+}
+

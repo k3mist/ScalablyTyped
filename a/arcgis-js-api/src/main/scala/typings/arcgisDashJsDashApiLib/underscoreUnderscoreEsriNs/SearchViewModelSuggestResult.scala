@@ -27,3 +27,19 @@ trait SearchViewModelSuggestResult
   var text: java.lang.String
 }
 
+object SearchViewModelSuggestResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    key: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    sourceIndex: scala.Double,
+    text: java.lang.String
+  ): SearchViewModelSuggestResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, key = key, propertyIsEnumerable = propertyIsEnumerable, sourceIndex = sourceIndex, text = text)
+  
+    __obj.asInstanceOf[SearchViewModelSuggestResult]
+  }
+}
+

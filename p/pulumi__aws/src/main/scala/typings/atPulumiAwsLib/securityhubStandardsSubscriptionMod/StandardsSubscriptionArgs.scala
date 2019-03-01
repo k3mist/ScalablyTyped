@@ -12,3 +12,12 @@ trait StandardsSubscriptionArgs extends js.Object {
   val standardsArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object StandardsSubscriptionArgs {
+  @scala.inline
+  def apply(standardsArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): StandardsSubscriptionArgs = {
+    val __obj = js.Dynamic.literal(standardsArn = standardsArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[StandardsSubscriptionArgs]
+  }
+}
+

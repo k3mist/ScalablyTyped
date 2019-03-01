@@ -10,3 +10,13 @@ trait RangeInput extends ConstraintInput {
   var start: js.UndefOr[MomentInput] = js.undefined
 }
 
+object RangeInput {
+  @scala.inline
+  def apply(end: MomentInput = null, start: MomentInput = null): RangeInput = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeInput]
+  }
+}
+

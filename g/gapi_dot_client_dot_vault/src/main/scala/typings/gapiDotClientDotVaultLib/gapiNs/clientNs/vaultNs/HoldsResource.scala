@@ -26,3 +26,34 @@ trait HoldsResource extends js.Object {
   def update(request: gapiDotClientDotVaultLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Hold]
 }
 
+object HoldsResource {
+  @scala.inline
+  def apply(
+    accounts: AccountsResource,
+    create: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Hold]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotVaultLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Hold]
+    ],
+    list: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListHoldsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotVaultLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Hold]
+    ]
+  ): HoldsResource = {
+    val __obj = js.Dynamic.literal(accounts = accounts, create = create, delete = delete, get = get, list = list, update = update)
+  
+    __obj.asInstanceOf[HoldsResource]
+  }
+}
+

@@ -84,3 +84,39 @@ trait EnvironmentArgs extends js.Object {
   val waitForReadyTimeout: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object EnvironmentArgs {
+  @scala.inline
+  def apply(
+    application: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application],
+    cnamePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    platformArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    pollInterval: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    settings: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
+    ] = null,
+    solutionStackName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    templateName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    version: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = null,
+    waitForReadyTimeout: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): EnvironmentArgs = {
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
+    if (cnamePrefix != null) __obj.updateDynamic("cnamePrefix")(cnamePrefix.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (platformArn != null) __obj.updateDynamic("platformArn")(platformArn.asInstanceOf[js.Any])
+    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (solutionStackName != null) __obj.updateDynamic("solutionStackName")(solutionStackName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (waitForReadyTimeout != null) __obj.updateDynamic("waitForReadyTimeout")(waitForReadyTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnvironmentArgs]
+  }
+}
+

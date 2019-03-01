@@ -30,3 +30,17 @@ trait HorizontalPodAutoscalerSpec extends js.Object {
   val targetCPUUtilizationPercentage: scala.Double
 }
 
+object HorizontalPodAutoscalerSpec {
+  @scala.inline
+  def apply(
+    maxReplicas: scala.Double,
+    minReplicas: scala.Double,
+    scaleTargetRef: CrossVersionObjectReference,
+    targetCPUUtilizationPercentage: scala.Double
+  ): HorizontalPodAutoscalerSpec = {
+    val __obj = js.Dynamic.literal(maxReplicas = maxReplicas, minReplicas = minReplicas, scaleTargetRef = scaleTargetRef, targetCPUUtilizationPercentage = targetCPUUtilizationPercentage)
+  
+    __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
+  }
+}
+

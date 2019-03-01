@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonFailedInProgressQueued extends js.Object {
   var enumValues: Anon_FailedInProgressQueued
 }
 
+object Anon_EnumValuesAnonFailedInProgressQueued {
+  @scala.inline
+  def apply(enumValues: Anon_FailedInProgressQueued): Anon_EnumValuesAnonFailedInProgressQueued = {
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
+    __obj.asInstanceOf[Anon_EnumValuesAnonFailedInProgressQueued]
+  }
+}
+

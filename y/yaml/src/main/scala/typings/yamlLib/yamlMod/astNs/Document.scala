@@ -73,3 +73,35 @@ trait Document extends js.Object {
   def toJSON(): js.Any
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    anchors: Anchors,
+    errors: js.Array[yamlLib.yamlMod.YAMLError],
+    listNonDefaultTags: js.Function0[js.Array[java.lang.String]],
+    parse: js.Function1[yamlLib.yamlMod.cstNs.Document, Document],
+    schema: Schema,
+    setTagPrefix: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    tagPrefixes: js.Array[Prefix],
+    toJSON: js.Function0[js.Any],
+    toString: js.Function0[java.lang.String],
+    `type`: yamlLib.yamlLibStrings.DOCUMENT,
+    warnings: js.Array[yamlLib.yamlMod.YAMLWarning],
+    comment: java.lang.String = null,
+    commentBefore: java.lang.String = null,
+    contents: AstNode = null,
+    cstNode: yamlLib.yamlMod.cstNs.Document = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null,
+    version: java.lang.String = null
+  ): Document = {
+    val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = listNonDefaultTags, parse = parse, schema = schema, setTagPrefix = setTagPrefix, tagPrefixes = tagPrefixes, toJSON = toJSON, toString = toString, `type` = `type`, warnings = warnings)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Document]
+  }
+}
+

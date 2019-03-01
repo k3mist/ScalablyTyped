@@ -16,3 +16,12 @@ trait GetHeapUsageReturnType extends js.Object {
   var usedSize: scala.Double
 }
 
+object GetHeapUsageReturnType {
+  @scala.inline
+  def apply(totalSize: scala.Double, usedSize: scala.Double): GetHeapUsageReturnType = {
+    val __obj = js.Dynamic.literal(totalSize = totalSize, usedSize = usedSize)
+  
+    __obj.asInstanceOf[GetHeapUsageReturnType]
+  }
+}
+

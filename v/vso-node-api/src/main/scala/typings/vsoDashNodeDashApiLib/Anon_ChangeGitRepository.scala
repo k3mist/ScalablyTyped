@@ -31,3 +31,36 @@ trait Anon_ChangeGitRepository extends js.Object {
   var VersionControlRecursionType: Anon_EnumValuesAnonFull
 }
 
+object Anon_ChangeGitRepository {
+  @scala.inline
+  def apply(
+    Change: js.Any,
+    GitRepository: js.Any,
+    GitRepositoryRef: js.Any,
+    ItemContent: js.Any,
+    ItemContentType: Anon_EnumValuesAnonBase64Encoded,
+    TfvcBranch: js.Any,
+    TfvcBranchRef: js.Any,
+    TfvcChange: js.Any,
+    TfvcChangeset: js.Any,
+    TfvcChangesetRef: js.Any,
+    TfvcItem: js.Any,
+    TfvcItemDescriptor: js.Any,
+    TfvcItemRequestData: js.Any,
+    TfvcLabel: js.Any,
+    TfvcLabelRef: js.Any,
+    TfvcShelveset: js.Any,
+    TfvcShelvesetRef: js.Any,
+    TfvcVersionDescriptor: js.Any,
+    TfvcVersionOption: Anon_EnumValuesAnonNonePrevious,
+    TfvcVersionType: Anon_EnumValuesAnonChange,
+    VersionControlChangeType: Anon_EnumValuesAnonAddAll,
+    VersionControlProjectInfo: js.Any,
+    VersionControlRecursionType: Anon_EnumValuesAnonFull
+  ): Anon_ChangeGitRepository = {
+    val __obj = js.Dynamic.literal(Change = Change, GitRepository = GitRepository, GitRepositoryRef = GitRepositoryRef, ItemContent = ItemContent, ItemContentType = ItemContentType, TfvcBranch = TfvcBranch, TfvcBranchRef = TfvcBranchRef, TfvcChange = TfvcChange, TfvcChangeset = TfvcChangeset, TfvcChangesetRef = TfvcChangesetRef, TfvcItem = TfvcItem, TfvcItemDescriptor = TfvcItemDescriptor, TfvcItemRequestData = TfvcItemRequestData, TfvcLabel = TfvcLabel, TfvcLabelRef = TfvcLabelRef, TfvcShelveset = TfvcShelveset, TfvcShelvesetRef = TfvcShelvesetRef, TfvcVersionDescriptor = TfvcVersionDescriptor, TfvcVersionOption = TfvcVersionOption, TfvcVersionType = TfvcVersionType, VersionControlChangeType = VersionControlChangeType, VersionControlProjectInfo = VersionControlProjectInfo, VersionControlRecursionType = VersionControlRecursionType)
+  
+    __obj.asInstanceOf[Anon_ChangeGitRepository]
+  }
+}
+

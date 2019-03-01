@@ -34,3 +34,32 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSDeclareMethod
 }
 
+object TSDeclareMethod {
+  @scala.inline
+  def apply(
+    `abstract`: scala.Boolean,
+    async: scala.Boolean,
+    computed: scala.Boolean,
+    generator: scala.Boolean,
+    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.StringLiteralKind | astDashTypesLib.genKindsMod.NumericLiteralKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    kind: astDashTypesLib.astDashTypesLibStrings.get | astDashTypesLib.astDashTypesLibStrings.set | astDashTypesLib.astDashTypesLibStrings.method | astDashTypesLib.astDashTypesLibStrings.constructor,
+    optional: scala.Boolean,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    static: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSDeclareMethod,
+    access: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null,
+    accessibility: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null,
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.NoopKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSDeclareMethod = {
+    val __obj = js.Dynamic.literal(`abstract` = `abstract`, async = async, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional, params = params, static = static, `type` = `type`)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSDeclareMethod]
+  }
+}
+

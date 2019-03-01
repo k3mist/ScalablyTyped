@@ -48,3 +48,31 @@ trait XSlideRenderer extends js.Object {
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
 }
 
+object XSlideRenderer {
+  @scala.inline
+  def apply(
+    calculatePreviewSize: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
+    ],
+    createPreview: js.Function3[
+      XDrawPage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap
+    ],
+    createPreviewForCanvas: js.Function4[
+      XDrawPage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
+    ]
+  ): XSlideRenderer = {
+    val __obj = js.Dynamic.literal(calculatePreviewSize = calculatePreviewSize, createPreview = createPreview, createPreviewForCanvas = createPreviewForCanvas)
+  
+    __obj.asInstanceOf[XSlideRenderer]
+  }
+}
+

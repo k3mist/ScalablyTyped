@@ -19,3 +19,24 @@ trait ILanguageFontGroup extends js.Object {
   var uITitleFont: LanguageFont
 }
 
+object ILanguageFontGroup {
+  @scala.inline
+  def apply(
+    documentAlternate1Font: LanguageFont,
+    documentAlternate2Font: LanguageFont,
+    documentHeadingFont: LanguageFont,
+    fixedWidthTextFont: LanguageFont,
+    modernDocumentFont: LanguageFont,
+    traditionalDocumentFont: LanguageFont,
+    uICaptionFont: LanguageFont,
+    uIHeadingFont: LanguageFont,
+    uINotificationHeadingFont: LanguageFont,
+    uITextFont: LanguageFont,
+    uITitleFont: LanguageFont
+  ): ILanguageFontGroup = {
+    val __obj = js.Dynamic.literal(documentAlternate1Font = documentAlternate1Font, documentAlternate2Font = documentAlternate2Font, documentHeadingFont = documentHeadingFont, fixedWidthTextFont = fixedWidthTextFont, modernDocumentFont = modernDocumentFont, traditionalDocumentFont = traditionalDocumentFont, uICaptionFont = uICaptionFont, uIHeadingFont = uIHeadingFont, uINotificationHeadingFont = uINotificationHeadingFont, uITextFont = uITextFont, uITitleFont = uITitleFont)
+  
+    __obj.asInstanceOf[ILanguageFontGroup]
+  }
+}
+

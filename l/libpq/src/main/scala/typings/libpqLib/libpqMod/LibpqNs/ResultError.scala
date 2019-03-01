@@ -24,3 +24,38 @@ trait ResultError extends js.Object {
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResultError {
+  @scala.inline
+  def apply(
+    messagePrimary: java.lang.String,
+    severity: java.lang.String,
+    sourceFile: java.lang.String,
+    sourceFunction: java.lang.String,
+    sourceLine: java.lang.String,
+    sqlState: java.lang.String,
+    constraintName: java.lang.String = null,
+    context: java.lang.String = null,
+    dataTypeName: java.lang.String = null,
+    internalPosition: java.lang.String = null,
+    internalQuery: java.lang.String = null,
+    messageDetail: java.lang.String = null,
+    messageHint: java.lang.String = null,
+    schemaName: java.lang.String = null,
+    statementPosition: java.lang.String = null,
+    tableName: java.lang.String = null
+  ): ResultError = {
+    val __obj = js.Dynamic.literal(messagePrimary = messagePrimary, severity = severity, sourceFile = sourceFile, sourceFunction = sourceFunction, sourceLine = sourceLine, sqlState = sqlState)
+    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
+    if (internalPosition != null) __obj.updateDynamic("internalPosition")(internalPosition)
+    if (internalQuery != null) __obj.updateDynamic("internalQuery")(internalQuery)
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
+    if (messageHint != null) __obj.updateDynamic("messageHint")(messageHint)
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (statementPosition != null) __obj.updateDynamic("statementPosition")(statementPosition)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    __obj.asInstanceOf[ResultError]
+  }
+}
+

@@ -41,3 +41,17 @@ trait ClientOptions extends js.Object {
   var log: webgmeLib.Anon_LevelString
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    appDir: java.lang.String,
+    defaultConnectionRouter: webgmeLib.webgmeLibStrings.basic | webgmeLib.webgmeLibStrings.basic2 | webgmeLib.webgmeLibStrings.basic3,
+    errorReporting: webgmeLib.Anon_DSN,
+    log: webgmeLib.Anon_LevelString
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal(appDir = appDir, defaultConnectionRouter = defaultConnectionRouter.asInstanceOf[js.Any], errorReporting = errorReporting, log = log)
+  
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

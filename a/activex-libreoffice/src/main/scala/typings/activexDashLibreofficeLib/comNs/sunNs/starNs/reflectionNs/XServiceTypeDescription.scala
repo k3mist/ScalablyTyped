@@ -67,3 +67,30 @@ trait XServiceTypeDescription extends XTypeDescription {
   def getProperties(): activexDashInteropLib.SafeArray[XPropertyTypeDescription]
 }
 
+object XServiceTypeDescription {
+  @scala.inline
+  def apply(
+    MandatoryInterfaces: activexDashInteropLib.SafeArray[XInterfaceTypeDescription],
+    MandatoryServices: activexDashInteropLib.SafeArray[XServiceTypeDescription],
+    Name: java.lang.String,
+    OptionalInterfaces: activexDashInteropLib.SafeArray[XInterfaceTypeDescription],
+    OptionalServices: activexDashInteropLib.SafeArray[XServiceTypeDescription],
+    Properties: activexDashInteropLib.SafeArray[XPropertyTypeDescription],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getMandatoryInterfaces: js.Function0[activexDashInteropLib.SafeArray[XInterfaceTypeDescription]],
+    getMandatoryServices: js.Function0[activexDashInteropLib.SafeArray[XServiceTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getOptionalInterfaces: js.Function0[activexDashInteropLib.SafeArray[XInterfaceTypeDescription]],
+    getOptionalServices: js.Function0[activexDashInteropLib.SafeArray[XServiceTypeDescription]],
+    getProperties: js.Function0[activexDashInteropLib.SafeArray[XPropertyTypeDescription]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XServiceTypeDescription = {
+    val __obj = js.Dynamic.literal(MandatoryInterfaces = MandatoryInterfaces, MandatoryServices = MandatoryServices, Name = Name, OptionalInterfaces = OptionalInterfaces, OptionalServices = OptionalServices, Properties = Properties, TypeClass = TypeClass, acquire = acquire, getMandatoryInterfaces = getMandatoryInterfaces, getMandatoryServices = getMandatoryServices, getName = getName, getOptionalInterfaces = getOptionalInterfaces, getOptionalServices = getOptionalServices, getProperties = getProperties, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XServiceTypeDescription]
+  }
+}
+

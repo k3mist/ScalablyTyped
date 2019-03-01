@@ -16,3 +16,21 @@ trait ParamName extends js.Object {
   var repeat: java.lang.String
 }
 
+object ParamName {
+  @scala.inline
+  def apply(
+    asterisk: scala.Boolean,
+    delimiter: java.lang.String,
+    name: java.lang.String,
+    optional: scala.Boolean,
+    partial: scala.Boolean,
+    pattern: java.lang.String,
+    prefix: java.lang.String,
+    repeat: java.lang.String
+  ): ParamName = {
+    val __obj = js.Dynamic.literal(asterisk = asterisk, delimiter = delimiter, name = name, optional = optional, partial = partial, pattern = pattern, prefix = prefix, repeat = repeat)
+  
+    __obj.asInstanceOf[ParamName]
+  }
+}
+

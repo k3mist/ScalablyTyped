@@ -34,3 +34,12 @@ trait PathFinderPath extends js.Object {
   var path: js.Array[RoomPosition]
 }
 
+object PathFinderPath {
+  @scala.inline
+  def apply(cost: scala.Double, incomplete: scala.Boolean, ops: scala.Double, path: js.Array[RoomPosition]): PathFinderPath = {
+    val __obj = js.Dynamic.literal(cost = cost, incomplete = incomplete, ops = ops, path = path)
+  
+    __obj.asInstanceOf[PathFinderPath]
+  }
+}
+

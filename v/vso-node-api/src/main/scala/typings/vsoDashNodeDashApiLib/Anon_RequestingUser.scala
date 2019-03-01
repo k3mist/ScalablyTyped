@@ -10,3 +10,12 @@ trait Anon_RequestingUser extends js.Object {
   var serviceAccount: scala.Double
 }
 
+object Anon_RequestingUser {
+  @scala.inline
+  def apply(requestingUser: scala.Double, serviceAccount: scala.Double): Anon_RequestingUser = {
+    val __obj = js.Dynamic.literal(requestingUser = requestingUser, serviceAccount = serviceAccount)
+  
+    __obj.asInstanceOf[Anon_RequestingUser]
+  }
+}
+

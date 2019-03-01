@@ -24,3 +24,17 @@ trait WebApiProjectCollectionRef extends js.Object {
   var url: java.lang.String
 }
 
+object WebApiProjectCollectionRef {
+  @scala.inline
+  def apply(
+    collectionUrl: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    url: java.lang.String
+  ): WebApiProjectCollectionRef = {
+    val __obj = js.Dynamic.literal(collectionUrl = collectionUrl, id = id, name = name, url = url)
+  
+    __obj.asInstanceOf[WebApiProjectCollectionRef]
+  }
+}
+

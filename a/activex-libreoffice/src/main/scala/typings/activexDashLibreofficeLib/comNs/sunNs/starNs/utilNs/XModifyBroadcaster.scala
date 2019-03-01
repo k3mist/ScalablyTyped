@@ -18,3 +18,18 @@ trait XModifyBroadcaster
   def removeModifyListener(aListener: XModifyListener): scala.Unit
 }
 
+object XModifyBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addModifyListener: js.Function1[XModifyListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeModifyListener: js.Function1[XModifyListener, scala.Unit]
+  ): XModifyBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener)
+  
+    __obj.asInstanceOf[XModifyBroadcaster]
+  }
+}
+

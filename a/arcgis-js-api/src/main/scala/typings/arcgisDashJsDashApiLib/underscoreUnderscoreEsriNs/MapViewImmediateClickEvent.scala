@@ -17,3 +17,22 @@ trait MapViewImmediateClickEvent extends js.Object {
   var y: scala.Double
 }
 
+object MapViewImmediateClickEvent {
+  @scala.inline
+  def apply(
+    button: scala.Double,
+    buttons: scala.Double,
+    mapPoint: Point,
+    native: js.Any,
+    stopPropagation: js.Function,
+    timestamp: scala.Double,
+    `type`: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): MapViewImmediateClickEvent = {
+    val __obj = js.Dynamic.literal(button = button, buttons = buttons, mapPoint = mapPoint, native = native, stopPropagation = stopPropagation, timestamp = timestamp, `type` = `type`, x = x, y = y)
+  
+    __obj.asInstanceOf[MapViewImmediateClickEvent]
+  }
+}
+

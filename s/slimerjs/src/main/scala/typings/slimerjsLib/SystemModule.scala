@@ -19,3 +19,24 @@ trait SystemModule extends js.Object {
   var stdout: Std
 }
 
+object SystemModule {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String],
+    env: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    os: Anon_Architecture,
+    pid: scala.Double,
+    platform: java.lang.String,
+    standarderr: Std,
+    standardin: Std,
+    standardout: Std,
+    stderr: Std,
+    stdin: Std,
+    stdout: Std
+  ): SystemModule = {
+    val __obj = js.Dynamic.literal(args = args, env = env, os = os, pid = pid, platform = platform, standarderr = standarderr, standardin = standardin, standardout = standardout, stderr = stderr, stdin = stdin, stdout = stdout)
+  
+    __obj.asInstanceOf[SystemModule]
+  }
+}
+

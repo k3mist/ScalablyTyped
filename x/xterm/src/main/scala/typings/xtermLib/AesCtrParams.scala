@@ -10,3 +10,16 @@ trait AesCtrParams extends Algorithm {
   var length: scala.Double
 }
 
+object AesCtrParams {
+  @scala.inline
+  def apply(
+    counter: stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer,
+    length: scala.Double,
+    name: java.lang.String
+  ): AesCtrParams = {
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], length = length, name = name)
+  
+    __obj.asInstanceOf[AesCtrParams]
+  }
+}
+

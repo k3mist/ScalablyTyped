@@ -14,3 +14,12 @@ trait Annotation extends js.Object {
   var tags: js.Array[Tag]
 }
 
+object Annotation {
+  @scala.inline
+  def apply(description: java.lang.String, tags: js.Array[Tag]): Annotation = {
+    val __obj = js.Dynamic.literal(description = description, tags = tags)
+  
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

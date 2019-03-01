@@ -17,3 +17,21 @@ trait XMSAAService
   def handleWindowOpened(i: scala.Double): scala.Unit
 }
 
+object XMSAAService {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAccObjectPtr: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    handleWindowOpened: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XMSAAService = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, getAccObjectPtr = getAccObjectPtr, handleWindowOpened = handleWindowOpened, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[XMSAAService]
+  }
+}
+

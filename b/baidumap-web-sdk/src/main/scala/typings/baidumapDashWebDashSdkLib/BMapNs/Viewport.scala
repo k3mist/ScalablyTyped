@@ -10,3 +10,12 @@ trait Viewport extends js.Object {
   var zoom: scala.Double
 }
 
+object Viewport {
+  @scala.inline
+  def apply(center: Point, zoom: scala.Double): Viewport = {
+    val __obj = js.Dynamic.literal(center = center, zoom = zoom)
+  
+    __obj.asInstanceOf[Viewport]
+  }
+}
+

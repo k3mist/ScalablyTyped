@@ -25,3 +25,21 @@ trait XLayerContentDescriber
   ): scala.Unit
 }
 
+object XLayerContentDescriber {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    describeLayer: js.Function2[
+      XLayerHandler, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyInfo], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLayerContentDescriber = {
+    val __obj = js.Dynamic.literal(acquire = acquire, describeLayer = describeLayer, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLayerContentDescriber]
+  }
+}
+

@@ -14,3 +14,12 @@ trait ValueProps[OptionType] extends js.Object {
   var innerProps: js.Any
 }
 
+object ValueProps {
+  @scala.inline
+  def apply[OptionType](children: java.lang.String, data: OptionType, innerProps: js.Any): ValueProps[OptionType] = {
+    val __obj = js.Dynamic.literal(children = children, data = data.asInstanceOf[js.Any], innerProps = innerProps)
+  
+    __obj.asInstanceOf[ValueProps[OptionType]]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ColumnNames extends js.Object {
   var session_id: java.lang.String
 }
 
+object ColumnNames {
+  @scala.inline
+  def apply(data: java.lang.String, expires: java.lang.String, session_id: java.lang.String): ColumnNames = {
+    val __obj = js.Dynamic.literal(data = data, expires = expires, session_id = session_id)
+  
+    __obj.asInstanceOf[ColumnNames]
+  }
+}
+

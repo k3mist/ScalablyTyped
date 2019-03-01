@@ -15,3 +15,12 @@ trait TreeExpansionEvent
   var Node: XTreeNode
 }
 
+object TreeExpansionEvent {
+  @scala.inline
+  def apply(Node: XTreeNode, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): TreeExpansionEvent = {
+    val __obj = js.Dynamic.literal(Node = Node, Source = Source)
+  
+    __obj.asInstanceOf[TreeExpansionEvent]
+  }
+}
+

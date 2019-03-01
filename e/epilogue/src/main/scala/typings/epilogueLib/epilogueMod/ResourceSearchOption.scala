@@ -11,3 +11,12 @@ trait ResourceSearchOption extends js.Object {
   var param: java.lang.String
 }
 
+object ResourceSearchOption {
+  @scala.inline
+  def apply(attributes: js.Array[java.lang.String], operator: java.lang.String, param: java.lang.String): ResourceSearchOption = {
+    val __obj = js.Dynamic.literal(attributes = attributes, operator = operator, param = param)
+  
+    __obj.asInstanceOf[ResourceSearchOption]
+  }
+}
+

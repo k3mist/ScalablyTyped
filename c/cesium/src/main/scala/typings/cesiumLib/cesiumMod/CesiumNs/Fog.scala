@@ -12,3 +12,17 @@ trait Fog extends js.Object {
   var screenSpaceErrorFactor: scala.Double
 }
 
+object Fog {
+  @scala.inline
+  def apply(
+    density: scala.Double,
+    enabled: scala.Boolean,
+    minimumBrightness: scala.Double,
+    screenSpaceErrorFactor: scala.Double
+  ): Fog = {
+    val __obj = js.Dynamic.literal(density = density, enabled = enabled, minimumBrightness = minimumBrightness, screenSpaceErrorFactor = screenSpaceErrorFactor)
+  
+    __obj.asInstanceOf[Fog]
+  }
+}
+

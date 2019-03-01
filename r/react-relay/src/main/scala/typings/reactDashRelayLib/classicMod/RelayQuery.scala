@@ -11,3 +11,12 @@ trait RelayQuery extends js.Object {
   var Root: js.Any
 }
 
+object RelayQuery {
+  @scala.inline
+  def apply(Fragment: js.Any, Node: js.Any, Root: js.Any): RelayQuery = {
+    val __obj = js.Dynamic.literal(Fragment = Fragment, Node = Node, Root = Root)
+  
+    __obj.asInstanceOf[RelayQuery]
+  }
+}
+

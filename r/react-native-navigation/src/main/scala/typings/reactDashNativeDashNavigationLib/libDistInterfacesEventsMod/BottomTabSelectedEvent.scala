@@ -10,3 +10,12 @@ trait BottomTabSelectedEvent extends js.Object {
   var unselectedTabIndex: scala.Double
 }
 
+object BottomTabSelectedEvent {
+  @scala.inline
+  def apply(selectedTabIndex: scala.Double, unselectedTabIndex: scala.Double): BottomTabSelectedEvent = {
+    val __obj = js.Dynamic.literal(selectedTabIndex = selectedTabIndex, unselectedTabIndex = unselectedTabIndex)
+  
+    __obj.asInstanceOf[BottomTabSelectedEvent]
+  }
+}
+

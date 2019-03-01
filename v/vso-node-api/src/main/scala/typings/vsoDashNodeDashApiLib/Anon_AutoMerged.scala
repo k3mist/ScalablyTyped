@@ -13,3 +13,18 @@ trait Anon_AutoMerged extends js.Object {
   var userMerged: scala.Double
 }
 
+object Anon_AutoMerged {
+  @scala.inline
+  def apply(
+    autoMerged: scala.Double,
+    takeSourceContent: scala.Double,
+    takeTargetContent: scala.Double,
+    undecided: scala.Double,
+    userMerged: scala.Double
+  ): Anon_AutoMerged = {
+    val __obj = js.Dynamic.literal(autoMerged = autoMerged, takeSourceContent = takeSourceContent, takeTargetContent = takeTargetContent, undecided = undecided, userMerged = userMerged)
+  
+    __obj.asInstanceOf[Anon_AutoMerged]
+  }
+}
+

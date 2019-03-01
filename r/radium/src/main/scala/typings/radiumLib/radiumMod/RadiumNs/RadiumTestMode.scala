@@ -24,3 +24,16 @@ trait RadiumTestMode extends js.Object {
   def enable(): scala.Unit
 }
 
+object RadiumTestMode {
+  @scala.inline
+  def apply(
+    clearState: js.Function0[scala.Unit],
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit]
+  ): RadiumTestMode = {
+    val __obj = js.Dynamic.literal(clearState = clearState, disable = disable, enable = enable)
+  
+    __obj.asInstanceOf[RadiumTestMode]
+  }
+}
+

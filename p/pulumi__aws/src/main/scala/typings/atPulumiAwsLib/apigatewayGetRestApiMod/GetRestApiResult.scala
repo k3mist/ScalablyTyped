@@ -16,3 +16,12 @@ trait GetRestApiResult extends js.Object {
   val rootResourceId: java.lang.String
 }
 
+object GetRestApiResult {
+  @scala.inline
+  def apply(id: java.lang.String, rootResourceId: java.lang.String): GetRestApiResult = {
+    val __obj = js.Dynamic.literal(id = id, rootResourceId = rootResourceId)
+  
+    __obj.asInstanceOf[GetRestApiResult]
+  }
+}
+

@@ -85,3 +85,31 @@ trait Resource extends js.Object {
   def validationIssues(): js.Any
 }
 
+object Resource {
+  @scala.inline
+  def apply(
+    allEmbeddedArrays: js.Function0[ResourceCollection],
+    allEmbeddedResourceArrays: js.Function0[ResourceCollection],
+    allEmbeddedResources: js.Function0[ResourceCollection],
+    allLinkArrays: js.Function0[LinkCollection],
+    allLinks: js.Function0[LinkCollection],
+    curie: js.Function1[java.lang.String, Link],
+    curieArray: js.Function0[js.Array[Link]],
+    embedded: js.Function1[java.lang.String, Resource],
+    embeddedArray: js.Function1[java.lang.String, js.Array[Resource]],
+    embeddedResource: js.Function1[java.lang.String, Resource],
+    embeddedResourceArray: js.Function1[java.lang.String, js.Array[Resource]],
+    hasCuries: js.Function0[scala.Boolean],
+    link: js.Function1[java.lang.String, Link],
+    linkArray: js.Function1[java.lang.String, js.Array[Link]],
+    original: js.Function0[js.Any],
+    reverseResolveCurie: js.Function1[java.lang.String, java.lang.String],
+    validation: js.Function0[js.Any],
+    validationIssues: js.Function0[js.Any]
+  ): Resource = {
+    val __obj = js.Dynamic.literal(allEmbeddedArrays = allEmbeddedArrays, allEmbeddedResourceArrays = allEmbeddedResourceArrays, allEmbeddedResources = allEmbeddedResources, allLinkArrays = allLinkArrays, allLinks = allLinks, curie = curie, curieArray = curieArray, embedded = embedded, embeddedArray = embeddedArray, embeddedResource = embeddedResource, embeddedResourceArray = embeddedResourceArray, hasCuries = hasCuries, link = link, linkArray = linkArray, original = original, reverseResolveCurie = reverseResolveCurie, validation = validation, validationIssues = validationIssues)
+  
+    __obj.asInstanceOf[Resource]
+  }
+}
+

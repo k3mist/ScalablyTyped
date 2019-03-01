@@ -17,3 +17,21 @@ trait RefreshToken
   var user: User
 }
 
+object RefreshToken {
+  @scala.inline
+  def apply(
+    client: Client,
+    refreshToken: java.lang.String,
+    user: User,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    refreshTokenExpiresAt: stdLib.Date = null,
+    scope: java.lang.String | js.Array[java.lang.String] = null
+  ): RefreshToken = {
+    val __obj = js.Dynamic.literal(client = client, refreshToken = refreshToken, user = user)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (refreshTokenExpiresAt != null) __obj.updateDynamic("refreshTokenExpiresAt")(refreshTokenExpiresAt)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefreshToken]
+  }
+}
+

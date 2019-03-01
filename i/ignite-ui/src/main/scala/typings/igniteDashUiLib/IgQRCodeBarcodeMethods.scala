@@ -39,3 +39,20 @@ trait IgQRCodeBarcodeMethods extends js.Object {
   def styleUpdated(): scala.Unit
 }
 
+object IgQRCodeBarcodeMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[js.Object],
+    flush: js.Function0[scala.Unit],
+    styleUpdated: js.Function0[scala.Unit]
+  ): IgQRCodeBarcodeMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, flush = flush, styleUpdated = styleUpdated)
+  
+    __obj.asInstanceOf[IgQRCodeBarcodeMethods]
+  }
+}
+

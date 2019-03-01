@@ -19,3 +19,18 @@ trait IPlayReadyDomain extends js.Object {
   var serviceId: java.lang.String
 }
 
+object IPlayReadyDomain {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    domainJoinUrl: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
+    friendlyName: java.lang.String,
+    revision: scala.Double,
+    serviceId: java.lang.String
+  ): IPlayReadyDomain = {
+    val __obj = js.Dynamic.literal(accountId = accountId, domainJoinUrl = domainJoinUrl, friendlyName = friendlyName, revision = revision, serviceId = serviceId)
+  
+    __obj.asInstanceOf[IPlayReadyDomain]
+  }
+}
+

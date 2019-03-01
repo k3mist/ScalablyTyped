@@ -33,3 +33,19 @@ trait NotificationEventResponse extends _EventResponse {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotificationEventResponse {
+  @scala.inline
+  def apply(
+    additionalData: NotificationEventAdditionalData,
+    count: java.lang.String,
+    image: java.lang.String,
+    message: java.lang.String,
+    sound: java.lang.String,
+    title: java.lang.String = null
+  ): NotificationEventResponse = {
+    val __obj = js.Dynamic.literal(additionalData = additionalData, count = count, image = image, message = message, sound = sound)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[NotificationEventResponse]
+  }
+}
+

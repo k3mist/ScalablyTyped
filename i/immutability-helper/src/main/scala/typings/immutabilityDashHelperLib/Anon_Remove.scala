@@ -11,3 +11,12 @@ trait Anon_Remove[K]
   var $remove: js.Array[K]
 }
 
+object Anon_Remove {
+  @scala.inline
+  def apply[K]($remove: js.Array[K]): Anon_Remove[K] = {
+    val __obj = js.Dynamic.literal($remove = $remove)
+  
+    __obj.asInstanceOf[Anon_Remove[K]]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Command extends js.Object {
   def exec(editor: js.Any): scala.Unit
 }
 
+object Command {
+  @scala.inline
+  def apply(bindKey: CommandBindKey, exec: js.Function1[js.Any, scala.Unit], name: java.lang.String): Command = {
+    val __obj = js.Dynamic.literal(bindKey = bindKey, exec = exec, name = name)
+  
+    __obj.asInstanceOf[Command]
+  }
+}
+

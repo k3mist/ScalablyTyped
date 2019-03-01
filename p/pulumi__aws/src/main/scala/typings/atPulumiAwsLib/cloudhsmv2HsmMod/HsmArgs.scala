@@ -24,3 +24,19 @@ trait HsmArgs extends js.Object {
   val subnetId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object HsmArgs {
+  @scala.inline
+  def apply(
+    clusterId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ipAddress: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): HsmArgs = {
+    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HsmArgs]
+  }
+}
+

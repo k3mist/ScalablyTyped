@@ -36,3 +36,21 @@ trait Token extends js.Object {
   var value: java.lang.String
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    col: scala.Double,
+    line: scala.Double,
+    lineBreaks: scala.Double,
+    offset: scala.Double,
+    text: java.lang.String,
+    toString: js.Function0[java.lang.String],
+    value: java.lang.String,
+    `type`: java.lang.String = null
+  ): Token = {
+    val __obj = js.Dynamic.literal(col = col, line = line, lineBreaks = lineBreaks, offset = offset, text = text, toString = toString, value = value)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Token]
+  }
+}
+

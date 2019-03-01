@@ -32,3 +32,19 @@ trait ShellConfig extends js.Object {
   def reset(): scala.Unit
 }
 
+object ShellConfig {
+  @scala.inline
+  def apply(
+    fatal: scala.Boolean,
+    globOptions: globLib.globMod.GNs.IOptions,
+    reset: js.Function0[scala.Unit],
+    silent: scala.Boolean,
+    verbose: scala.Boolean,
+    execPath: java.lang.String = null
+  ): ShellConfig = {
+    val __obj = js.Dynamic.literal(fatal = fatal, globOptions = globOptions, reset = reset, silent = silent, verbose = verbose)
+    if (execPath != null) __obj.updateDynamic("execPath")(execPath)
+    __obj.asInstanceOf[ShellConfig]
+  }
+}
+

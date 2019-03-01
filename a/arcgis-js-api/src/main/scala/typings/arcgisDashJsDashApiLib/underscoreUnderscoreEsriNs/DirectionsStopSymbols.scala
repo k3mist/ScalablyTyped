@@ -39,3 +39,25 @@ trait DirectionsStopSymbols
   var waypoint: js.UndefOr[Symbol] = js.undefined
 }
 
+object DirectionsStopSymbols {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    first: Symbol = null,
+    last: Symbol = null,
+    middle: Symbol = null,
+    unlocated: Symbol = null,
+    waypoint: Symbol = null
+  ): DirectionsStopSymbols = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (middle != null) __obj.updateDynamic("middle")(middle)
+    if (unlocated != null) __obj.updateDynamic("unlocated")(unlocated)
+    if (waypoint != null) __obj.updateDynamic("waypoint")(waypoint)
+    __obj.asInstanceOf[DirectionsStopSymbols]
+  }
+}
+

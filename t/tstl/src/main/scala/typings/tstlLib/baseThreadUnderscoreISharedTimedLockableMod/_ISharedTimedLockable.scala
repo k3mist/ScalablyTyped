@@ -23,3 +23,18 @@ trait _ISharedTimedLockable
   def try_lock_shared_until(at: stdLib.Date): js.Promise[scala.Boolean]
 }
 
+object _ISharedTimedLockable {
+  @scala.inline
+  def apply(
+    lock_shared: js.Function0[js.Promise[scala.Unit]],
+    try_lock_shared: js.Function0[js.Promise[scala.Boolean]],
+    try_lock_shared_for: js.Function1[scala.Double, js.Promise[scala.Boolean]],
+    try_lock_shared_until: js.Function1[stdLib.Date, js.Promise[scala.Boolean]],
+    unlock_shared: js.Function0[js.Promise[scala.Unit]]
+  ): _ISharedTimedLockable = {
+    val __obj = js.Dynamic.literal(lock_shared = lock_shared, try_lock_shared = try_lock_shared, try_lock_shared_for = try_lock_shared_for, try_lock_shared_until = try_lock_shared_until, unlock_shared = unlock_shared)
+  
+    __obj.asInstanceOf[_ISharedTimedLockable]
+  }
+}
+

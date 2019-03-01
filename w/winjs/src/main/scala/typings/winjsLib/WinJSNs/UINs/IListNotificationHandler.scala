@@ -64,3 +64,22 @@ trait IListNotificationHandler[T] extends js.Object {
   def removed(handle: java.lang.String, mirage: scala.Boolean): scala.Unit
 }
 
+object IListNotificationHandler {
+  @scala.inline
+  def apply[T](
+    beginNotifications: js.Function0[scala.Unit],
+    changed: js.Function2[IItem[T], IItem[T], scala.Unit],
+    countChanged: js.Function2[scala.Double, scala.Double, scala.Unit],
+    endNotifications: js.Function0[scala.Unit],
+    indexChanged: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    inserted: js.Function3[IItemPromise[T], java.lang.String, java.lang.String, scala.Unit],
+    itemAvailable: js.Function1[IItem[T], scala.Unit],
+    moved: js.Function3[IItemPromise[T], java.lang.String, java.lang.String, scala.Unit],
+    removed: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+  ): IListNotificationHandler[T] = {
+    val __obj = js.Dynamic.literal(beginNotifications = beginNotifications, changed = changed, countChanged = countChanged, endNotifications = endNotifications, indexChanged = indexChanged, inserted = inserted, itemAvailable = itemAvailable, moved = moved, removed = removed)
+  
+    __obj.asInstanceOf[IListNotificationHandler[T]]
+  }
+}
+

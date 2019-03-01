@@ -11,3 +11,12 @@ trait CoverageEntry extends js.Object {
   var url: java.lang.String
 }
 
+object CoverageEntry {
+  @scala.inline
+  def apply(ranges: js.Array[puppeteerLib.Anon_End], text: java.lang.String, url: java.lang.String): CoverageEntry = {
+    val __obj = js.Dynamic.literal(ranges = ranges, text = text, url = url)
+  
+    __obj.asInstanceOf[CoverageEntry]
+  }
+}
+

@@ -11,3 +11,12 @@ trait ListStart
   var `type`: markedLib.markedLibStrings.list_start
 }
 
+object ListStart {
+  @scala.inline
+  def apply(ordered: scala.Boolean, `type`: markedLib.markedLibStrings.list_start): ListStart = {
+    val __obj = js.Dynamic.literal(ordered = ordered, `type` = `type`)
+  
+    __obj.asInstanceOf[ListStart]
+  }
+}
+

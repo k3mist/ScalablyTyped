@@ -19,3 +19,25 @@ trait Transaction extends js.Object {
   var transactionId: java.lang.String
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    description: java.lang.String,
+    from: java.lang.String,
+    resourceType: MarketResourceConstant,
+    time: scala.Double,
+    to: java.lang.String,
+    transactionId: java.lang.String,
+    order: TransactionOrder = null,
+    recipient: Anon_Username = null,
+    sender: Anon_Username = null
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(amount = amount, description = description, from = from, resourceType = resourceType.asInstanceOf[js.Any], time = time, to = to, transactionId = transactionId)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
+    if (sender != null) __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

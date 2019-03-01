@@ -28,3 +28,18 @@ trait RestApiResponseStatusModel extends js.Object {
   var statusMessage: java.lang.String
 }
 
+object RestApiResponseStatusModel {
+  @scala.inline
+  def apply(
+    operationDetails: js.Any,
+    operationId: java.lang.String,
+    percentageCompleted: scala.Double,
+    status: RestApiResponseStatus,
+    statusMessage: java.lang.String
+  ): RestApiResponseStatusModel = {
+    val __obj = js.Dynamic.literal(operationDetails = operationDetails, operationId = operationId, percentageCompleted = percentageCompleted, status = status, statusMessage = statusMessage)
+  
+    __obj.asInstanceOf[RestApiResponseStatusModel]
+  }
+}
+

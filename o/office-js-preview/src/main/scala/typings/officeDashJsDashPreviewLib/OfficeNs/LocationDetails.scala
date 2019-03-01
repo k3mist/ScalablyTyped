@@ -20,3 +20,16 @@ trait LocationDetails extends js.Object {
   var locationIdentifier: LocationIdentifier
 }
 
+object LocationDetails {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    emailAddress: java.lang.String,
+    locationIdentifier: LocationIdentifier
+  ): LocationDetails = {
+    val __obj = js.Dynamic.literal(displayName = displayName, emailAddress = emailAddress, locationIdentifier = locationIdentifier)
+  
+    __obj.asInstanceOf[LocationDetails]
+  }
+}
+

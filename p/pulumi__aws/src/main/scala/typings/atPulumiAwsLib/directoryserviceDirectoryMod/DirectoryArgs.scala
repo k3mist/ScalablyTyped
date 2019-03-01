@@ -60,3 +60,35 @@ trait DirectoryArgs extends js.Object {
   val vpcSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetIdsVpcId]] = js.undefined
 }
 
+object DirectoryArgs {
+  @scala.inline
+  def apply(
+    password: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    alias: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    connectSettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomerDnsIpsCustomerUsername] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    edition: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enableSso: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    shortName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    size: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcSettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetIdsVpcId] = null
+  ): DirectoryArgs = {
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (connectSettings != null) __obj.updateDynamic("connectSettings")(connectSettings.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
+    if (enableSso != null) __obj.updateDynamic("enableSso")(enableSso.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vpcSettings != null) __obj.updateDynamic("vpcSettings")(vpcSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DirectoryArgs]
+  }
+}
+

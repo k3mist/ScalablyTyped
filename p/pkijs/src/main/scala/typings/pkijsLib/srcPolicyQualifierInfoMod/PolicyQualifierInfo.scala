@@ -13,3 +13,18 @@ trait PolicyQualifierInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object PolicyQualifierInfo {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    policyQualifierId: java.lang.String,
+    qualifier: js.Any,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): PolicyQualifierInfo = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, policyQualifierId = policyQualifierId, qualifier = qualifier, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[PolicyQualifierInfo]
+  }
+}
+

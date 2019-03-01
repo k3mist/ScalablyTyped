@@ -10,3 +10,12 @@ trait Anon_CityKeyword extends js.Object {
   var keyword: java.lang.String
 }
 
+object Anon_CityKeyword {
+  @scala.inline
+  def apply(city: java.lang.String, keyword: java.lang.String): Anon_CityKeyword = {
+    val __obj = js.Dynamic.literal(city = city, keyword = keyword)
+  
+    __obj.asInstanceOf[Anon_CityKeyword]
+  }
+}
+

@@ -12,3 +12,17 @@ trait LinuxOs extends Os {
   var release: java.lang.String
 }
 
+object LinuxOs {
+  @scala.inline
+  def apply(
+    dist: java.lang.String,
+    os: getosLib.getosLibStrings.linux,
+    release: java.lang.String,
+    codename: java.lang.String = null
+  ): LinuxOs = {
+    val __obj = js.Dynamic.literal(dist = dist, os = os, release = release)
+    if (codename != null) __obj.updateDynamic("codename")(codename)
+    __obj.asInstanceOf[LinuxOs]
+  }
+}
+

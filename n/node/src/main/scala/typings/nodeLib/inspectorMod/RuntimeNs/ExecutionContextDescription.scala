@@ -28,3 +28,17 @@ trait ExecutionContextDescription extends js.Object {
   var origin: java.lang.String
 }
 
+object ExecutionContextDescription {
+  @scala.inline
+  def apply(
+    id: ExecutionContextId,
+    name: java.lang.String,
+    origin: java.lang.String,
+    auxData: js.Object = null
+  ): ExecutionContextDescription = {
+    val __obj = js.Dynamic.literal(id = id, name = name, origin = origin)
+    if (auxData != null) __obj.updateDynamic("auxData")(auxData)
+    __obj.asInstanceOf[ExecutionContextDescription]
+  }
+}
+

@@ -47,3 +47,32 @@ trait Configuration extends js.Object {
   var version: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    background: java.lang.String,
+    dir: java.lang.String,
+    display: faviconsLib.faviconsLibStrings.fullscreen | faviconsLib.faviconsLibStrings.standalone | faviconsLib.faviconsLibStrings.`minimal-ui` | faviconsLib.faviconsLibStrings.browser,
+    icons: stdLib.Partial[faviconsLib.Anon_Android],
+    lang: java.lang.String,
+    logging: scala.Boolean,
+    orientation: faviconsLib.faviconsLibStrings.any | faviconsLib.faviconsLibStrings.natural | faviconsLib.faviconsLibStrings.portrait | faviconsLib.faviconsLibStrings.landscape,
+    path: java.lang.String,
+    pixel_art: scala.Boolean,
+    start_url: java.lang.String,
+    theme_color: java.lang.String,
+    version: java.lang.String,
+    appDescription: java.lang.String = null,
+    appName: java.lang.String = null,
+    developerName: java.lang.String = null,
+    developerURL: java.lang.String = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal(background = background, dir = dir, display = display.asInstanceOf[js.Any], icons = icons, lang = lang, logging = logging, orientation = orientation.asInstanceOf[js.Any], path = path, pixel_art = pixel_art, start_url = start_url, theme_color = theme_color, version = version)
+    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription)
+    if (appName != null) __obj.updateDynamic("appName")(appName)
+    if (developerName != null) __obj.updateDynamic("developerName")(developerName)
+    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

@@ -449,3 +449,83 @@ trait Config extends js.Object {
   ] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    abrBandWidthFactor: scala.Double,
+    abrBandWidthUpFactor: scala.Double,
+    abrController: AbrController,
+    abrEwmaDefaultEstimate: scala.Double,
+    abrEwmaFastLive: scala.Double,
+    abrEwmaFastVod: scala.Double,
+    abrEwmaSlowLive: scala.Double,
+    abrEwmaSlowVod: scala.Double,
+    abrMaxWithRealBitrate: scala.Boolean,
+    appendErrorMaxRetry: scala.Double,
+    autoStartLoad: scala.Boolean,
+    capLevelToPlayerSize: scala.Boolean,
+    captionsTextTrack1Label: java.lang.String,
+    captionsTextTrack1LanguagedCode: java.lang.String,
+    captionsTextTrack2Label: java.lang.String,
+    captionsTextTrack2LanguageCode: java.lang.String,
+    debug: scala.Boolean | CustomLoggerObject,
+    defaultAudioCodec: java.lang.String,
+    enableCEA708Captions: scala.Boolean,
+    enableSoftwareAES: scala.Boolean,
+    enableWorker: scala.Boolean,
+    forceKeyFrameOnDiscontinuity: scala.Boolean,
+    fragLoadingMaxRetry: scala.Double,
+    fragLoadingMaxRetryDelay: scala.Double,
+    fragLoadingRetryDelay: scala.Double,
+    fragLoadingTimeOut: scala.Double,
+    highBufferWatchdogPeriod: scala.Double,
+    initialLiveManifestSize: scala.Double,
+    levelLoadingMaxRetry: scala.Double,
+    levelLoadingMaxRetryTimeout: scala.Double,
+    levelLoadingRetryDelay: scala.Double,
+    levelLoadingTimeOut: scala.Double,
+    liveBackBufferLength: scala.Double,
+    liveDurationInfinity: scala.Boolean,
+    liveMaxLatencyDuration: scala.Double,
+    liveMaxLatencyDurationCount: scala.Double,
+    liveSyncDuration: scala.Double,
+    liveSyncDurationCount: scala.Double,
+    loader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader],
+    lowBufferWatchdogPeriod: scala.Double,
+    manifestLoadingMaxRetry: scala.Double,
+    manifestLoadingMaxRetryTimeout: scala.Double,
+    manifestLoadingRetryDelay: scala.Double,
+    manifestLoadingTimeOut: scala.Double,
+    maxAudioFramesDrift: scala.Double,
+    maxBufferHole: scala.Double,
+    maxBufferLength: scala.Double,
+    maxBufferSize: scala.Double,
+    maxFragLookUpTolerance: scala.Double,
+    maxLoadingDelay: scala.Double,
+    maxMaxBufferLength: scala.Double,
+    maxSeekHole: scala.Double,
+    maxStarvationDelay: scala.Double,
+    minAutoBitrate: scala.Double,
+    nudgeMaxRetry: scala.Double,
+    nudgeOffset: scala.Double,
+    startFragPrefetch: scala.Boolean,
+    startLevel: scala.Double,
+    startPosition: scala.Double,
+    stretchShortVideoTrack: scala.Boolean,
+    timelineController: TimelineController,
+    enableWebVTT: js.UndefOr[scala.Boolean] = js.undefined,
+    fLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
+    fetchSetup: js.Function2[/* context */ js.Any, /* initParams */ js.Any, stdLib.Request] = null,
+    pLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
+    xhrSetup: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* url */ java.lang.String, scala.Unit] = null
+  ): Config = {
+    val __obj = js.Dynamic.literal(abrBandWidthFactor = abrBandWidthFactor, abrBandWidthUpFactor = abrBandWidthUpFactor, abrController = abrController, abrEwmaDefaultEstimate = abrEwmaDefaultEstimate, abrEwmaFastLive = abrEwmaFastLive, abrEwmaFastVod = abrEwmaFastVod, abrEwmaSlowLive = abrEwmaSlowLive, abrEwmaSlowVod = abrEwmaSlowVod, abrMaxWithRealBitrate = abrMaxWithRealBitrate, appendErrorMaxRetry = appendErrorMaxRetry, autoStartLoad = autoStartLoad, capLevelToPlayerSize = capLevelToPlayerSize, captionsTextTrack1Label = captionsTextTrack1Label, captionsTextTrack1LanguagedCode = captionsTextTrack1LanguagedCode, captionsTextTrack2Label = captionsTextTrack2Label, captionsTextTrack2LanguageCode = captionsTextTrack2LanguageCode, debug = debug.asInstanceOf[js.Any], defaultAudioCodec = defaultAudioCodec, enableCEA708Captions = enableCEA708Captions, enableSoftwareAES = enableSoftwareAES, enableWorker = enableWorker, forceKeyFrameOnDiscontinuity = forceKeyFrameOnDiscontinuity, fragLoadingMaxRetry = fragLoadingMaxRetry, fragLoadingMaxRetryDelay = fragLoadingMaxRetryDelay, fragLoadingRetryDelay = fragLoadingRetryDelay, fragLoadingTimeOut = fragLoadingTimeOut, highBufferWatchdogPeriod = highBufferWatchdogPeriod, initialLiveManifestSize = initialLiveManifestSize, levelLoadingMaxRetry = levelLoadingMaxRetry, levelLoadingMaxRetryTimeout = levelLoadingMaxRetryTimeout, levelLoadingRetryDelay = levelLoadingRetryDelay, levelLoadingTimeOut = levelLoadingTimeOut, liveBackBufferLength = liveBackBufferLength, liveDurationInfinity = liveDurationInfinity, liveMaxLatencyDuration = liveMaxLatencyDuration, liveMaxLatencyDurationCount = liveMaxLatencyDurationCount, liveSyncDuration = liveSyncDuration, liveSyncDurationCount = liveSyncDurationCount, loader = loader, lowBufferWatchdogPeriod = lowBufferWatchdogPeriod, manifestLoadingMaxRetry = manifestLoadingMaxRetry, manifestLoadingMaxRetryTimeout = manifestLoadingMaxRetryTimeout, manifestLoadingRetryDelay = manifestLoadingRetryDelay, manifestLoadingTimeOut = manifestLoadingTimeOut, maxAudioFramesDrift = maxAudioFramesDrift, maxBufferHole = maxBufferHole, maxBufferLength = maxBufferLength, maxBufferSize = maxBufferSize, maxFragLookUpTolerance = maxFragLookUpTolerance, maxLoadingDelay = maxLoadingDelay, maxMaxBufferLength = maxMaxBufferLength, maxSeekHole = maxSeekHole, maxStarvationDelay = maxStarvationDelay, minAutoBitrate = minAutoBitrate, nudgeMaxRetry = nudgeMaxRetry, nudgeOffset = nudgeOffset, startFragPrefetch = startFragPrefetch, startLevel = startLevel, startPosition = startPosition, stretchShortVideoTrack = stretchShortVideoTrack, timelineController = timelineController)
+    if (!js.isUndefined(enableWebVTT)) __obj.updateDynamic("enableWebVTT")(enableWebVTT)
+    if (fLoader != null) __obj.updateDynamic("fLoader")(fLoader)
+    if (fetchSetup != null) __obj.updateDynamic("fetchSetup")(fetchSetup)
+    if (pLoader != null) __obj.updateDynamic("pLoader")(pLoader)
+    if (xhrSetup != null) __obj.updateDynamic("xhrSetup")(xhrSetup)
+    __obj.asInstanceOf[Config]
+  }
+}
+

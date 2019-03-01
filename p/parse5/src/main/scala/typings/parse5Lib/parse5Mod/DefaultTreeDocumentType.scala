@@ -25,3 +25,17 @@ trait DefaultTreeDocumentType extends DefaultTreeNode {
   var systemId: java.lang.String
 }
 
+object DefaultTreeDocumentType {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    nodeName: parse5Lib.parse5LibStrings.`#documentType`,
+    publicId: java.lang.String,
+    systemId: java.lang.String
+  ): DefaultTreeDocumentType = {
+    val __obj = js.Dynamic.literal(name = name, nodeName = nodeName, publicId = publicId, systemId = systemId)
+  
+    __obj.asInstanceOf[DefaultTreeDocumentType]
+  }
+}
+

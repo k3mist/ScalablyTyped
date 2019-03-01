@@ -11,3 +11,12 @@ trait Anon_Description extends js.Object {
   var title: java.lang.String
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(description: java.lang.String, root: java.lang.String, title: java.lang.String): Anon_Description = {
+    val __obj = js.Dynamic.literal(description = description, root = root, title = title)
+  
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

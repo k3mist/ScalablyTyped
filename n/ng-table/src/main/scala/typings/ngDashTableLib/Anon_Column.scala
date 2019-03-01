@@ -12,3 +12,15 @@ trait Anon_Column extends js.Object {
   var $columns: js.Array[ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef]
 }
 
+object Anon_Column {
+  @scala.inline
+  def apply(
+    $columns: js.Array[ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef],
+    $column: ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef = null
+  ): Anon_Column = {
+    val __obj = js.Dynamic.literal($columns = $columns)
+    if ($column != null) __obj.updateDynamic("$column")($column)
+    __obj.asInstanceOf[Anon_Column]
+  }
+}
+

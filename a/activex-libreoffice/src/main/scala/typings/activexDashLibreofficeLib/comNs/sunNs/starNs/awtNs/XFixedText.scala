@@ -26,3 +26,22 @@ trait XFixedText
   def setText(Text: java.lang.String): scala.Unit
 }
 
+object XFixedText {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    Text: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAlignment: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAlignment: js.Function1[scala.Double, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit]
+  ): XFixedText = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, acquire = acquire, getAlignment = getAlignment, getText = getText, queryInterface = queryInterface, release = release, setAlignment = setAlignment, setText = setText)
+  
+    __obj.asInstanceOf[XFixedText]
+  }
+}
+

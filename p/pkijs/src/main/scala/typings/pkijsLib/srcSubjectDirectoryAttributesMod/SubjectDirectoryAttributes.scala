@@ -12,3 +12,17 @@ trait SubjectDirectoryAttributes extends js.Object {
   def toSchema(): js.Any
 }
 
+object SubjectDirectoryAttributes {
+  @scala.inline
+  def apply(
+    attributes: js.Array[pkijsLib.srcAttributeMod.default],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): SubjectDirectoryAttributes = {
+    val __obj = js.Dynamic.literal(attributes = attributes, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[SubjectDirectoryAttributes]
+  }
+}
+

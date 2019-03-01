@@ -14,3 +14,19 @@ trait Property extends js.Object {
   val vendor: java.lang.String
 }
 
+object Property {
+  @scala.inline
+  def apply(
+    basename: java.lang.String,
+    custom: scala.Boolean,
+    hack: java.lang.String,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    vendor: java.lang.String
+  ): Property = {
+    val __obj = js.Dynamic.literal(basename = basename, custom = custom, hack = hack, name = name, prefix = prefix, vendor = vendor)
+  
+    __obj.asInstanceOf[Property]
+  }
+}
+

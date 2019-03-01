@@ -97,3 +97,42 @@ trait ExpandProperties extends WidgetProperties {
   var viewModel: js.UndefOr[ExpandViewModelProperties] = js.undefined
 }
 
+object ExpandProperties {
+  @scala.inline
+  def apply(
+    autoCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseIconClass: java.lang.String = null,
+    collapseTooltip: java.lang.String = null,
+    container: java.lang.String | stdLib.HTMLElement = null,
+    content: stdLib.Node | java.lang.String | WidgetProperties = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    expandIconClass: java.lang.String = null,
+    expandTooltip: java.lang.String = null,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    group: java.lang.String = null,
+    iconNumber: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    mode: java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: ExpandViewModelProperties = null
+  ): ExpandProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse)
+    if (collapseIconClass != null) __obj.updateDynamic("collapseIconClass")(collapseIconClass)
+    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (expandIconClass != null) __obj.updateDynamic("expandIconClass")(expandIconClass)
+    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (iconNumber != null) __obj.updateDynamic("iconNumber")(iconNumber.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[ExpandProperties]
+  }
+}
+

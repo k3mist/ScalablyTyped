@@ -84,3 +84,52 @@ trait SnapshotState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object SnapshotState {
+  @scala.inline
+  def apply(
+    allocatedStorage: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbInstanceIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbSnapshotArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    engine: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    iops: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    licenseModel: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    optionGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    snapshotType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceDbSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    storageType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): SnapshotState = {
+    val __obj = js.Dynamic.literal()
+    if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (dbInstanceIdentifier != null) __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier.asInstanceOf[js.Any])
+    if (dbSnapshotArn != null) __obj.updateDynamic("dbSnapshotArn")(dbSnapshotArn.asInstanceOf[js.Any])
+    if (dbSnapshotIdentifier != null) __obj.updateDynamic("dbSnapshotIdentifier")(dbSnapshotIdentifier.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (licenseModel != null) __obj.updateDynamic("licenseModel")(licenseModel.asInstanceOf[js.Any])
+    if (optionGroupName != null) __obj.updateDynamic("optionGroupName")(optionGroupName.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType.asInstanceOf[js.Any])
+    if (sourceDbSnapshotIdentifier != null) __obj.updateDynamic("sourceDbSnapshotIdentifier")(sourceDbSnapshotIdentifier.asInstanceOf[js.Any])
+    if (sourceRegion != null) __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (storageType != null) __obj.updateDynamic("storageType")(storageType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotState]
+  }
+}
+

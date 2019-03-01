@@ -21,3 +21,16 @@ trait ScoreFunctionMixin extends ScoreFunction {
   def toJSON(): js.Any
 }
 
+object ScoreFunctionMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    filter: js.Function1[Filter, ScoreFunctionMixin],
+    toJSON: js.Function0[js.Any]
+  ): ScoreFunctionMixin = {
+    val __obj = js.Dynamic.literal(_type = _type, filter = filter, toJSON = toJSON)
+  
+    __obj.asInstanceOf[ScoreFunctionMixin]
+  }
+}
+

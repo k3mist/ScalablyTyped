@@ -16,3 +16,21 @@ trait ValidationError extends js.Object {
   var specUrl: java.lang.String | scala.Null
 }
 
+object ValidationError {
+  @scala.inline
+  def apply(
+    category: ErrorCategoryCode,
+    code: ValidationErrorCode,
+    col: scala.Double,
+    line: scala.Double,
+    message: java.lang.String,
+    params: js.Array[java.lang.String],
+    severity: ValidationErrorSeverity,
+    specUrl: java.lang.String = null
+  ): ValidationError = {
+    val __obj = js.Dynamic.literal(category = category, code = code, col = col, line = line, message = message, params = params, severity = severity)
+    if (specUrl != null) __obj.updateDynamic("specUrl")(specUrl)
+    __obj.asInstanceOf[ValidationError]
+  }
+}
+

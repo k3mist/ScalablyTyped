@@ -15,3 +15,20 @@ trait Queue extends js.Object {
   def sort(compareFunction: cesiumLib.cesiumMod.CesiumNs.QueueNs.Comparator): scala.Unit
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    contains: js.Function1[js.Any, scala.Boolean],
+    dequeue: js.Function0[js.Any],
+    enqueue: js.Function1[js.Any, scala.Unit],
+    length: scala.Double,
+    peek: js.Function0[js.Any],
+    sort: js.Function1[cesiumLib.cesiumMod.CesiumNs.QueueNs.Comparator, scala.Unit]
+  ): Queue = {
+    val __obj = js.Dynamic.literal(clear = clear, contains = contains, dequeue = dequeue, enqueue = enqueue, length = length, peek = peek, sort = sort)
+  
+    __obj.asInstanceOf[Queue]
+  }
+}
+

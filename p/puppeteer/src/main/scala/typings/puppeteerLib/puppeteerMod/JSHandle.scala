@@ -35,3 +35,19 @@ trait JSHandle extends SerializableOrJSHandle {
   def jsonValue(): js.Promise[_]
 }
 
+object JSHandle {
+  @scala.inline
+  def apply(
+    asElement: js.Function0[ElementHandle[stdLib.Element] | scala.Null],
+    dispose: js.Function0[js.Promise[scala.Unit]],
+    executionContext: js.Function0[ExecutionContext],
+    getProperties: js.Function0[js.Promise[stdLib.Map[java.lang.String, JSHandle]]],
+    getProperty: js.Function1[java.lang.String, js.Promise[JSHandle]],
+    jsonValue: js.Function0[js.Promise[_]]
+  ): JSHandle = {
+    val __obj = js.Dynamic.literal(asElement = asElement, dispose = dispose, executionContext = executionContext, getProperties = getProperties, getProperty = getProperty, jsonValue = jsonValue)
+  
+    __obj.asInstanceOf[JSHandle]
+  }
+}
+

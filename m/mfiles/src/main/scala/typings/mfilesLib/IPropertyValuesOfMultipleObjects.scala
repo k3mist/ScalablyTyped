@@ -11,3 +11,16 @@ trait IPropertyValuesOfMultipleObjects extends js.Object {
   def Item(Index: scala.Double): IPropertyValues
 }
 
+object IPropertyValuesOfMultipleObjects {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IPropertyValuesOfMultipleObjects],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IPropertyValues]
+  ): IPropertyValuesOfMultipleObjects = {
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[IPropertyValuesOfMultipleObjects]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Capacity extends js.Object {
   var randomTextureSize: scala.Double
 }
 
+object Anon_Capacity {
+  @scala.inline
+  def apply(capacity: scala.Double, randomTextureSize: scala.Double): Anon_Capacity = {
+    val __obj = js.Dynamic.literal(capacity = capacity, randomTextureSize = randomTextureSize)
+  
+    __obj.asInstanceOf[Anon_Capacity]
+  }
+}
+

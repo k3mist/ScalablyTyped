@@ -16,3 +16,21 @@ trait ReleaseTaskAttachment extends js.Object {
   var `type`: java.lang.String
 }
 
+object ReleaseTaskAttachment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    createdOn: stdLib.Date,
+    modifiedBy: java.lang.String,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    recordId: java.lang.String,
+    timelineId: java.lang.String,
+    `type`: java.lang.String
+  ): ReleaseTaskAttachment = {
+    val __obj = js.Dynamic.literal(_links = _links, createdOn = createdOn, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, recordId = recordId, timelineId = timelineId, `type` = `type`)
+  
+    __obj.asInstanceOf[ReleaseTaskAttachment]
+  }
+}
+

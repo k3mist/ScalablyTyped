@@ -12,3 +12,17 @@ trait Result extends js.Object {
   var uri: java.lang.String
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    fileSize: scala.Double,
+    `type`: java.lang.String,
+    uri: java.lang.String
+  ): Result = {
+    val __obj = js.Dynamic.literal(fileName = fileName, fileSize = fileSize, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

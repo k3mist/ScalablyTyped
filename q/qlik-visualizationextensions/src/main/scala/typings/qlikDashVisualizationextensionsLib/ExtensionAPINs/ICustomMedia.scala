@@ -10,3 +10,18 @@ trait ICustomMedia extends ICustomControl {
   var layoutRef: java.lang.String
 }
 
+object ICustomMedia {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.media,
+    label: java.lang.String,
+    layoutRef: java.lang.String,
+    ref: java.lang.String,
+    `type`: java.lang.String
+  ): ICustomMedia = {
+    val __obj = js.Dynamic.literal(component = component, label = label, layoutRef = layoutRef, ref = ref, `type` = `type`)
+  
+    __obj.asInstanceOf[ICustomMedia]
+  }
+}
+

@@ -10,3 +10,12 @@ trait DialogDateResult extends js.Object {
   var timestamp: scala.Double
 }
 
+object DialogDateResult {
+  @scala.inline
+  def apply(buttonType: chaynsLib.chaynsNs.dialogNs.buttonType, timestamp: scala.Double): DialogDateResult = {
+    val __obj = js.Dynamic.literal(buttonType = buttonType, timestamp = timestamp)
+  
+    __obj.asInstanceOf[DialogDateResult]
+  }
+}
+

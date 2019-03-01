@@ -27,3 +27,19 @@ trait WorkflowDisplayDetails
   var steps: js.Array[WorkflowStepDisplayDetails]
 }
 
+object WorkflowDisplayDetails {
+  @scala.inline
+  def apply(
+    annotations: js.Array[WorkflowAnnotationDisplayDetails],
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    paths: js.Array[WorkflowPathDisplayDetails],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    steps: js.Array[WorkflowStepDisplayDetails]
+  ): WorkflowDisplayDetails = {
+    val __obj = js.Dynamic.literal(annotations = annotations, constructor = constructor, hasOwnProperty = hasOwnProperty, paths = paths, propertyIsEnumerable = propertyIsEnumerable, steps = steps)
+  
+    __obj.asInstanceOf[WorkflowDisplayDetails]
+  }
+}
+

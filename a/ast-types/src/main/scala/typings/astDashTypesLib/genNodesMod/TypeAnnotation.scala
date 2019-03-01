@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
 }
 
+object TypeAnnotation {
+  @scala.inline
+  def apply(
+    `type`: astDashTypesLib.astDashTypesLibStrings.TypeAnnotation,
+    typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
+  ): TypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`, typeAnnotation = typeAnnotation)
+  
+    __obj.asInstanceOf[TypeAnnotation]
+  }
+}
+

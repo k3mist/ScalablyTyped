@@ -14,3 +14,12 @@ trait Navigator extends js.Object {
   val product: java.lang.String
 }
 
+object Navigator {
+  @scala.inline
+  def apply(geolocation: reactDashNativeLib.reactDashNativeMod.Geolocation, product: java.lang.String): Navigator = {
+    val __obj = js.Dynamic.literal(geolocation = geolocation, product = product)
+  
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

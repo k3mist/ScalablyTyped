@@ -16,3 +16,21 @@ trait Delimiter extends js.Object {
   var token: scala.Double
 }
 
+object Delimiter {
+  @scala.inline
+  def apply(
+    close: scala.Boolean,
+    end: scala.Double,
+    jump: scala.Double,
+    length: scala.Double,
+    level: scala.Double,
+    marker: scala.Double,
+    open: scala.Boolean,
+    token: scala.Double
+  ): Delimiter = {
+    val __obj = js.Dynamic.literal(close = close, end = end, jump = jump, length = length, level = level, marker = marker, open = open, token = token)
+  
+    __obj.asInstanceOf[Delimiter]
+  }
+}
+

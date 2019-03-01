@@ -57,3 +57,25 @@ trait FluxStore[TPayload] extends js.Object {
   def hasChanged(): scala.Boolean
 }
 
+object FluxStore {
+  @scala.inline
+  def apply[TPayload](
+    __changeEvent: java.lang.String,
+    __changed: scala.Boolean,
+    __className: java.lang.String,
+    __dispatcher: fluxLib.libDispatcherMod.namespaced[TPayload],
+    __emitChange: js.Function0[scala.Unit],
+    __emitter: fbemitterLib.fbemitterMod.EventEmitter,
+    __invokeOnDispatch: js.Function1[TPayload, scala.Unit],
+    __onDispatch: js.Function1[TPayload, scala.Unit],
+    addListener: js.Function1[js.Function0[scala.Unit], fbemitterLib.fbemitterMod.EventSubscription],
+    getDispatchToken: js.Function0[java.lang.String],
+    getDispatcher: js.Function0[fluxLib.libDispatcherMod.namespaced[TPayload]],
+    hasChanged: js.Function0[scala.Boolean]
+  ): FluxStore[TPayload] = {
+    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = __emitChange, __emitter = __emitter, __invokeOnDispatch = __invokeOnDispatch, __onDispatch = __onDispatch, addListener = addListener, getDispatchToken = getDispatchToken, getDispatcher = getDispatcher, hasChanged = hasChanged)
+  
+    __obj.asInstanceOf[FluxStore[TPayload]]
+  }
+}
+

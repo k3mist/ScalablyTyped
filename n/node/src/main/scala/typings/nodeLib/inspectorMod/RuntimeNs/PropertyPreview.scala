@@ -31,3 +31,20 @@ trait PropertyPreview extends js.Object {
   var valuePreview: js.UndefOr[ObjectPreview] = js.undefined
 }
 
+object PropertyPreview {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: java.lang.String,
+    subtype: java.lang.String = null,
+    value: java.lang.String = null,
+    valuePreview: ObjectPreview = null
+  ): PropertyPreview = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valuePreview != null) __obj.updateDynamic("valuePreview")(valuePreview)
+    __obj.asInstanceOf[PropertyPreview]
+  }
+}
+

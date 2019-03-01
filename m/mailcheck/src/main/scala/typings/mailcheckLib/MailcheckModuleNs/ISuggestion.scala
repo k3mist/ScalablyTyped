@@ -11,3 +11,12 @@ trait ISuggestion extends js.Object {
   var full: java.lang.String
 }
 
+object ISuggestion {
+  @scala.inline
+  def apply(address: java.lang.String, domain: java.lang.String, full: java.lang.String): ISuggestion = {
+    val __obj = js.Dynamic.literal(address = address, domain = domain, full = full)
+  
+    __obj.asInstanceOf[ISuggestion]
+  }
+}
+

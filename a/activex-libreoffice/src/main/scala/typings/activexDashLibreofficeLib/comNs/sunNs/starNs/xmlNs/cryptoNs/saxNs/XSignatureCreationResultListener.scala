@@ -23,3 +23,21 @@ trait XSignatureCreationResultListener
   ): scala.Unit
 }
 
+object XSignatureCreationResultListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    signatureCreated: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityOperationStatus, 
+      scala.Unit
+    ]
+  ): XSignatureCreationResultListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, signatureCreated = signatureCreated)
+  
+    __obj.asInstanceOf[XSignatureCreationResultListener]
+  }
+}
+

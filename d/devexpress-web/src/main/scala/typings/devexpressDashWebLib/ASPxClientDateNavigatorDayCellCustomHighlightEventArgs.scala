@@ -11,3 +11,12 @@ trait ASPxClientDateNavigatorDayCellCustomHighlightEventArgs extends ASPxClientE
   var htmlElement: js.Object
 }
 
+object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
+  @scala.inline
+  def apply(appointments: js.Array[ASPxClientAppointment], date: stdLib.Date, htmlElement: js.Object): ASPxClientDateNavigatorDayCellCustomHighlightEventArgs = {
+    val __obj = js.Dynamic.literal(appointments = appointments, date = date, htmlElement = htmlElement)
+  
+    __obj.asInstanceOf[ASPxClientDateNavigatorDayCellCustomHighlightEventArgs]
+  }
+}
+

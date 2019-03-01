@@ -27,3 +27,12 @@ trait IContinuousDataOptions extends js.Object {
   var qStart: scala.Double
 }
 
+object IContinuousDataOptions {
+  @scala.inline
+  def apply(qEnd: scala.Double, qMaxNbrTicks: scala.Double, qNbrPoints: scala.Double, qStart: scala.Double): IContinuousDataOptions = {
+    val __obj = js.Dynamic.literal(qEnd = qEnd, qMaxNbrTicks = qMaxNbrTicks, qNbrPoints = qNbrPoints, qStart = qStart)
+  
+    __obj.asInstanceOf[IContinuousDataOptions]
+  }
+}
+

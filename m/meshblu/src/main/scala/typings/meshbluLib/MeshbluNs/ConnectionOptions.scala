@@ -13,3 +13,12 @@ trait ConnectionOptions extends js.Object {
   var uuid: java.lang.String
 }
 
+object ConnectionOptions {
+  @scala.inline
+  def apply(token: java.lang.String, uuid: java.lang.String): ConnectionOptions = {
+    val __obj = js.Dynamic.literal(token = token, uuid = uuid)
+  
+    __obj.asInstanceOf[ConnectionOptions]
+  }
+}
+

@@ -16,3 +16,21 @@ trait LogEntry extends js.Object {
   var time: java.lang.String
 }
 
+object LogEntry {
+  @scala.inline
+  def apply(
+    error: scala.Boolean,
+    exception: js.Any,
+    guid: java.lang.String,
+    multiInject: scala.Boolean,
+    results: js.Array[_],
+    rootRequest: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request,
+    serviceIdentifier: js.Any,
+    time: java.lang.String
+  ): LogEntry = {
+    val __obj = js.Dynamic.literal(error = error, exception = exception, guid = guid, multiInject = multiInject, results = results, rootRequest = rootRequest, serviceIdentifier = serviceIdentifier, time = time)
+  
+    __obj.asInstanceOf[LogEntry]
+  }
+}
+

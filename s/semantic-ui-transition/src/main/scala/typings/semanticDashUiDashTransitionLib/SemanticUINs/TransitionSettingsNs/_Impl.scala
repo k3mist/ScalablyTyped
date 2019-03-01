@@ -107,3 +107,33 @@ trait _Impl extends js.Object {
   def onStart(`this`: semanticDashUiDashTransitionLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    allowRepeats: scala.Boolean,
+    animation: java.lang.String,
+    className: semanticDashUiDashTransitionLib.SemanticUINs.TransitionNs.ClassNameSettings,
+    debug: scala.Boolean,
+    displayType: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibNumbers.`false` | java.lang.String,
+    duration: scala.Double,
+    error: semanticDashUiDashTransitionLib.SemanticUINs.TransitionNs.ErrorSettings,
+    interval: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onComplete: js.Function1[semanticDashUiDashTransitionLib.JQuery, scala.Unit],
+    onHide: js.Function1[semanticDashUiDashTransitionLib.JQuery, scala.Unit],
+    onShow: js.Function1[semanticDashUiDashTransitionLib.JQuery, scala.Unit],
+    onStart: js.Function1[semanticDashUiDashTransitionLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    queue: scala.Boolean,
+    reverse: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.auto | scala.Boolean,
+    silent: scala.Boolean,
+    useFailSafe: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(allowRepeats = allowRepeats, animation = animation, className = className.asInstanceOf[js.Any], debug = debug, displayType = displayType.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], interval = interval, name = name, namespace = namespace, onComplete = onComplete, onHide = onHide, onShow = onShow, onStart = onStart, performance = performance, queue = queue, reverse = reverse.asInstanceOf[js.Any], silent = silent, useFailSafe = useFailSafe, verbose = verbose)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

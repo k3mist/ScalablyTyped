@@ -18,3 +18,12 @@ trait DOMRectList extends js.Object {
   def item(index: scala.Double): DOMRect
 }
 
+object DOMRectList {
+  @scala.inline
+  def apply(item: js.Function1[scala.Double, DOMRect], length: scala.Double): DOMRectList = {
+    val __obj = js.Dynamic.literal(item = item, length = length)
+  
+    __obj.asInstanceOf[DOMRectList]
+  }
+}
+

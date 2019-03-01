@@ -19,3 +19,18 @@ trait ResourceLayoutInfo extends js.Object {
   var resourceSubtreeCount: scala.Double
 }
 
+object ResourceLayoutInfo {
+  @scala.inline
+  def apply(
+    checksum: scala.Double,
+    majorVersion: scala.Double,
+    minorVersion: scala.Double,
+    namedResourceCount: scala.Double,
+    resourceSubtreeCount: scala.Double
+  ): ResourceLayoutInfo = {
+    val __obj = js.Dynamic.literal(checksum = checksum, majorVersion = majorVersion, minorVersion = minorVersion, namedResourceCount = namedResourceCount, resourceSubtreeCount = resourceSubtreeCount)
+  
+    __obj.asInstanceOf[ResourceLayoutInfo]
+  }
+}
+

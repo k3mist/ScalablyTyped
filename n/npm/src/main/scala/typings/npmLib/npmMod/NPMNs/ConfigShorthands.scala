@@ -44,3 +44,51 @@ trait ConfigShorthands extends js.Object {
   var y: js.Array[_]
 }
 
+object ConfigShorthands {
+  @scala.inline
+  def apply(
+    `?`: js.Array[_],
+    B: js.Array[_],
+    C: js.Array[_],
+    D: js.Array[_],
+    E: js.Array[_],
+    H: js.Array[_],
+    N: js.Array[_],
+    O: js.Array[_],
+    S: js.Array[_],
+    d: js.Array[_],
+    dd: js.Array[_],
+    ddd: js.Array[_],
+    desc: js.Array[_],
+    f: js.Array[_],
+    g: js.Array[_],
+    gangsta: js.Array[_],
+    gangster: js.Array[_],
+    h: js.Array[_],
+    help: js.Array[_],
+    l: js.Array[_],
+    local: js.Array[_],
+    m: js.Array[_],
+    n: js.Array[_],
+    `no-desc`: js.Array[_],
+    `no-reg`: js.Array[_],
+    noreg: js.Array[_],
+    p: js.Array[_],
+    porcelain: js.Array[_],
+    q: js.Array[_],
+    quiet: js.Array[_],
+    reg: js.Array[_],
+    s: js.Array[_],
+    silent: js.Array[_],
+    v: js.Array[_],
+    verbose: js.Array[_],
+    y: js.Array[_]
+  ): ConfigShorthands = {
+    val __obj = js.Dynamic.literal(B = B, C = C, D = D, E = E, H = H, N = N, O = O, S = S, d = d, dd = dd, ddd = ddd, desc = desc, f = f, g = g, gangsta = gangsta, gangster = gangster, h = h, help = help, l = l, local = local, m = m, n = n, noreg = noreg, p = p, porcelain = porcelain, q = q, quiet = quiet, reg = reg, s = s, silent = silent, v = v, verbose = verbose, y = y)
+    __obj.updateDynamic("?")(`?`)
+    __obj.updateDynamic("no-desc")(`no-desc`)
+    __obj.updateDynamic("no-reg")(`no-reg`)
+    __obj.asInstanceOf[ConfigShorthands]
+  }
+}
+

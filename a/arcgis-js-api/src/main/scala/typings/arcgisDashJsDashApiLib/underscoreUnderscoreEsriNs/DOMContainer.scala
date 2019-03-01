@@ -70,3 +70,22 @@ trait DOMContainer extends js.Object {
   val width: scala.Double
 }
 
+object DOMContainer {
+  @scala.inline
+  def apply(
+    container: stdLib.HTMLDivElement,
+    focused: scala.Boolean,
+    height: scala.Double,
+    popup: Popup,
+    resizing: scala.Boolean,
+    size: js.Array[scala.Double],
+    suspended: scala.Boolean,
+    ui: DefaultUI,
+    width: scala.Double
+  ): DOMContainer = {
+    val __obj = js.Dynamic.literal(container = container, focused = focused, height = height, popup = popup, resizing = resizing, size = size, suspended = suspended, ui = ui, width = width)
+  
+    __obj.asInstanceOf[DOMContainer]
+  }
+}
+

@@ -13,3 +13,17 @@ trait AppendObjectResult extends js.Object {
   var url: java.lang.String
 }
 
+object AppendObjectResult {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    nextAppendPosition: java.lang.String,
+    res: NormalSuccessResponse,
+    url: java.lang.String
+  ): AppendObjectResult = {
+    val __obj = js.Dynamic.literal(name = name, nextAppendPosition = nextAppendPosition, res = res, url = url)
+  
+    __obj.asInstanceOf[AppendObjectResult]
+  }
+}
+

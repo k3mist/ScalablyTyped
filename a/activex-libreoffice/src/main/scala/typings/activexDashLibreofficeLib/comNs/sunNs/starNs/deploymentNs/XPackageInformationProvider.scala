@@ -26,3 +26,22 @@ trait XPackageInformationProvider extends js.Object {
   def isUpdateAvailable(extensionId: java.lang.String): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
 }
 
+object XPackageInformationProvider {
+  @scala.inline
+  def apply(
+    ExtensionList: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    getExtensionList: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ],
+    getPackageLocation: js.Function1[java.lang.String, java.lang.String],
+    isUpdateAvailable: js.Function1[
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ]
+  ): XPackageInformationProvider = {
+    val __obj = js.Dynamic.literal(ExtensionList = ExtensionList, getExtensionList = getExtensionList, getPackageLocation = getPackageLocation, isUpdateAvailable = isUpdateAvailable)
+  
+    __obj.asInstanceOf[XPackageInformationProvider]
+  }
+}
+

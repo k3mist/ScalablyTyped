@@ -9,3 +9,18 @@ trait CommentLine extends Comment {
   var `type`: babelDashTypesLib.babelDashTypesLibStrings.CommentLine
 }
 
+object CommentLine {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.CommentLine,
+    value: java.lang.String
+  ): CommentLine = {
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start, `type` = `type`, value = value)
+  
+    __obj.asInstanceOf[CommentLine]
+  }
+}
+

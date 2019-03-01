@@ -17,3 +17,12 @@ trait BorderWidths extends js.Object {
   var Top: scala.Double
 }
 
+object BorderWidths {
+  @scala.inline
+  def apply(Bottom: scala.Double, Left: scala.Double, Right: scala.Double, Top: scala.Double): BorderWidths = {
+    val __obj = js.Dynamic.literal(Bottom = Bottom, Left = Left, Right = Right, Top = Top)
+  
+    __obj.asInstanceOf[BorderWidths]
+  }
+}
+

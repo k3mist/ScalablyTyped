@@ -14,3 +14,19 @@ trait FlashVideoItem extends js.Object {
   def exportToFLV(fileURI: java.lang.String): scala.Boolean
 }
 
+object FlashVideoItem {
+  @scala.inline
+  def apply(
+    exportToFLV: js.Function1[java.lang.String, scala.Boolean],
+    fileLastModifiedDate: java.lang.String,
+    sourceFileExists: scala.Boolean,
+    sourceFileIsCurrent: scala.Boolean,
+    sourceFilePath: java.lang.String,
+    videoType: java.lang.String
+  ): FlashVideoItem = {
+    val __obj = js.Dynamic.literal(exportToFLV = exportToFLV, fileLastModifiedDate = fileLastModifiedDate, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, videoType = videoType)
+  
+    __obj.asInstanceOf[FlashVideoItem]
+  }
+}
+

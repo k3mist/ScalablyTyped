@@ -12,3 +12,12 @@ trait ITicks extends js.Object {
   var visible: scala.Boolean
 }
 
+object ITicks {
+  @scala.inline
+  def apply(chart: IChart, length: scala.Double, stroke: IStroke, visible: scala.Boolean): ITicks = {
+    val __obj = js.Dynamic.literal(chart = chart, length = length, stroke = stroke, visible = visible)
+  
+    __obj.asInstanceOf[ITicks]
+  }
+}
+

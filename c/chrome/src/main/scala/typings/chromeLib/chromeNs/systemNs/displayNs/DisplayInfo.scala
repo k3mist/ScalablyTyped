@@ -67,3 +67,31 @@ trait DisplayInfo extends js.Object {
   var workArea: Bounds
 }
 
+object DisplayInfo {
+  @scala.inline
+  def apply(
+    availableDisplayZoomFactors: js.Array[scala.Double],
+    bounds: Bounds,
+    displayZoomFactor: scala.Double,
+    dpiX: scala.Double,
+    dpiY: scala.Double,
+    hasTouchSupport: scala.Boolean,
+    id: java.lang.String,
+    isEnabled: scala.Boolean,
+    isInternal: scala.Boolean,
+    isPrimary: scala.Boolean,
+    mirroringDestinationIds: js.Array[java.lang.String],
+    mirroringSourceId: java.lang.String,
+    modes: js.Array[DisplayMode],
+    name: java.lang.String,
+    overscan: Insets,
+    rotation: scala.Double,
+    workArea: Bounds,
+    edid: chromeLib.Anon_ManufacturerId = null
+  ): DisplayInfo = {
+    val __obj = js.Dynamic.literal(availableDisplayZoomFactors = availableDisplayZoomFactors, bounds = bounds, displayZoomFactor = displayZoomFactor, dpiX = dpiX, dpiY = dpiY, hasTouchSupport = hasTouchSupport, id = id, isEnabled = isEnabled, isInternal = isInternal, isPrimary = isPrimary, mirroringDestinationIds = mirroringDestinationIds, mirroringSourceId = mirroringSourceId, modes = modes, name = name, overscan = overscan, rotation = rotation, workArea = workArea)
+    if (edid != null) __obj.updateDynamic("edid")(edid)
+    __obj.asInstanceOf[DisplayInfo]
+  }
+}
+

@@ -11,3 +11,18 @@ trait AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] ext
   def setTargetingSetting(criterionTypeGroup: CriterionTypeGroup, targetingSetting: TargetingSetting): scala.Unit
 }
 
+object AdGroupTargeting {
+  @scala.inline
+  def apply[SearchAdGroupAudience, SearchAdGroupExcludedAudience](
+    audiences: js.Function0[AdWordsSelector[SearchAdGroupAudience]],
+    exculdedAudiences: js.Function0[AdWordsSelector[SearchAdGroupExcludedAudience]],
+    getTargetingSetting: js.Function0[java.lang.String],
+    newUserListBuilder: js.Function0[SearchAdGroupAudienceBuilder[SearchAdGroupAudience]],
+    setTargetingSetting: js.Function2[CriterionTypeGroup, TargetingSetting, scala.Unit]
+  ): AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] = {
+    val __obj = js.Dynamic.literal(audiences = audiences, exculdedAudiences = exculdedAudiences, getTargetingSetting = getTargetingSetting, newUserListBuilder = newUserListBuilder, setTargetingSetting = setTargetingSetting)
+  
+    __obj.asInstanceOf[AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]]
+  }
+}
+

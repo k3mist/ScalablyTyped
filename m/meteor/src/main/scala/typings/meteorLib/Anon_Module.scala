@@ -10,3 +10,12 @@ trait Anon_Module extends js.Object {
   var version: java.lang.String
 }
 
+object Anon_Module {
+  @scala.inline
+  def apply(module: js.Any, version: java.lang.String): Anon_Module = {
+    val __obj = js.Dynamic.literal(module = module, version = version)
+  
+    __obj.asInstanceOf[Anon_Module]
+  }
+}
+

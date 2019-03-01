@@ -24,3 +24,31 @@ trait EventManager extends js.Object {
   ): scala.Unit
 }
 
+object EventManager {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function3[
+      stdLib.Element, 
+      java.lang.String, 
+      js.Function1[/* event */ stdLib.Event, scala.Unit], 
+      js.Function0[scala.Unit]
+    ],
+    clear: js.Function0[scala.Unit],
+    clearEvents: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    extendEvent: js.Function2[js.Object, stdLib.Event, js.Any],
+    fireEvent: js.Function2[stdLib.Element, java.lang.String, scala.Unit],
+    removeEventListener: js.Function3[
+      stdLib.Element, 
+      java.lang.String, 
+      js.Function1[/* event */ stdLib.Event, scala.Unit], 
+      scala.Unit
+    ],
+    context: js.Object = null
+  ): EventManager = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, clear = clear, clearEvents = clearEvents, destroy = destroy, extendEvent = extendEvent, fireEvent = fireEvent, removeEventListener = removeEventListener)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[EventManager]
+  }
+}
+

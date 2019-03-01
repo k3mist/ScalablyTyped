@@ -10,3 +10,15 @@ trait Anon_ReturnValueTargetCoordinates extends js.Object {
   /** The pixel coordinates, mapped to depth image space. */ var targetCoordinates: winrtDashUwpLib.WindowsNs.FoundationNs.Point
 }
 
+object Anon_ReturnValueTargetCoordinates {
+  @scala.inline
+  def apply(
+    returnValue: winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction,
+    targetCoordinates: winrtDashUwpLib.WindowsNs.FoundationNs.Point
+  ): Anon_ReturnValueTargetCoordinates = {
+    val __obj = js.Dynamic.literal(returnValue = returnValue, targetCoordinates = targetCoordinates)
+  
+    __obj.asInstanceOf[Anon_ReturnValueTargetCoordinates]
+  }
+}
+

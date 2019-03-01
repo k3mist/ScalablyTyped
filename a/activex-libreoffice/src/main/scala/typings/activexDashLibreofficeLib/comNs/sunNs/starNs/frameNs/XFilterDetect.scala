@@ -15,3 +15,18 @@ trait XFilterDetect
   def useExternBrowser(URL: java.lang.String): scala.Boolean
 }
 
+object XFilterDetect {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getContentType: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    useExternBrowser: js.Function1[java.lang.String, scala.Boolean]
+  ): XFilterDetect = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getContentType = getContentType, queryInterface = queryInterface, release = release, useExternBrowser = useExternBrowser)
+  
+    __obj.asInstanceOf[XFilterDetect]
+  }
+}
+

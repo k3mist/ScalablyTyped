@@ -10,3 +10,19 @@ trait PanelBarContentLoadEvent extends PanelBarEvent {
   var item: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object PanelBarContentLoadEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: PanelBar,
+    contentElement: stdLib.Element = null,
+    item: stdLib.Element = null
+  ): PanelBarContentLoadEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[PanelBarContentLoadEvent]
+  }
+}
+

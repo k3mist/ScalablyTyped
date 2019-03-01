@@ -12,3 +12,12 @@ trait ITitleFormats extends js.Object {
   var year: java.lang.String
 }
 
+object ITitleFormats {
+  @scala.inline
+  def apply(day: java.lang.String, month: java.lang.String, week: java.lang.String, year: java.lang.String): ITitleFormats = {
+    val __obj = js.Dynamic.literal(day = day, month = month, week = week, year = year)
+  
+    __obj.asInstanceOf[ITitleFormats]
+  }
+}
+

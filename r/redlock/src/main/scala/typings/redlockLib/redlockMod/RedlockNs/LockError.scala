@@ -10,3 +10,12 @@ trait LockError
   val name: redlockLib.redlockLibStrings.LockError
 }
 
+object LockError {
+  @scala.inline
+  def apply(name: redlockLib.redlockLibStrings.LockError, stack: java.lang.String = null): LockError = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[LockError]
+  }
+}
+

@@ -47,3 +47,28 @@ trait FeatureFormProperties extends WidgetProperties {
   var viewModel: js.UndefOr[FeatureFormViewModelProperties] = js.undefined
 }
 
+object FeatureFormProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    feature: GraphicProperties = null,
+    fieldConfig: js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties] = null,
+    groupDisplay: java.lang.String = null,
+    id: java.lang.String = null,
+    layer: FeatureLayerProperties = null,
+    viewModel: FeatureFormViewModelProperties = null
+  ): FeatureFormProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (feature != null) __obj.updateDynamic("feature")(feature)
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[FeatureFormProperties]
+  }
+}
+

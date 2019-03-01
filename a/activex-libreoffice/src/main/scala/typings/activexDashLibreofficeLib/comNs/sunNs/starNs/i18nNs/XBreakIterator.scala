@@ -261,3 +261,130 @@ trait XBreakIterator
   ): Boundary
 }
 
+object XBreakIterator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    beginOfCharBlock: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    beginOfScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    beginOfSentence: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    endOfCharBlock: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    endOfScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    endOfSentence: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getLineBreak: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      LineBreakHyphenationOptions, 
+      LineBreakUserOptions, 
+      LineBreakResults
+    ],
+    getScriptType: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getWordBoundary: js.Function5[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Boolean, 
+      Boundary
+    ],
+    getWordType: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    isBeginWord: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Boolean
+    ],
+    isEndWord: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Boolean
+    ],
+    nextCharBlock: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    nextCharacters: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      scala.Double
+    ],
+    nextScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    nextWord: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      Boundary
+    ],
+    previousCharBlock: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double
+    ],
+    previousCharacters: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      scala.Double
+    ],
+    previousScript: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
+    previousWord: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      Boundary
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBreakIterator = {
+    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCharBlock = beginOfCharBlock, beginOfScript = beginOfScript, beginOfSentence = beginOfSentence, endOfCharBlock = endOfCharBlock, endOfScript = endOfScript, endOfSentence = endOfSentence, getLineBreak = getLineBreak, getScriptType = getScriptType, getWordBoundary = getWordBoundary, getWordType = getWordType, isBeginWord = isBeginWord, isEndWord = isEndWord, nextCharBlock = nextCharBlock, nextCharacters = nextCharacters, nextScript = nextScript, nextWord = nextWord, previousCharBlock = previousCharBlock, previousCharacters = previousCharacters, previousScript = previousScript, previousWord = previousWord, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XBreakIterator]
+  }
+}
+

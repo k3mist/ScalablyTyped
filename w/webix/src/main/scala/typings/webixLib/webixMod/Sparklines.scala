@@ -12,3 +12,17 @@ trait Sparklines extends js.Object {
   def template(item: js.Any, common: java.lang.String, data: js.Array[_], column: js.Any, index: scala.Double): java.lang.String
 }
 
+object Sparklines {
+  @scala.inline
+  def apply(
+    paddingX: scala.Double,
+    paddingY: scala.Double,
+    radius: scala.Double,
+    template: js.Function5[js.Any, java.lang.String, js.Array[_], js.Any, scala.Double, java.lang.String]
+  ): Sparklines = {
+    val __obj = js.Dynamic.literal(paddingX = paddingX, paddingY = paddingY, radius = radius, template = template)
+  
+    __obj.asInstanceOf[Sparklines]
+  }
+}
+

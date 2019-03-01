@@ -71,3 +71,62 @@ trait XExtendedIndexEntrySupplier extends XIndexEntrySupplier {
   def usePhoneticEntry(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Boolean
 }
 
+object XExtendedIndexEntrySupplier {
+  @scala.inline
+  def apply(
+    LocaleList: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: js.Function0[scala.Unit],
+    compareIndexEntry: js.Function6[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    getAlgorithmList: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getIndexCharacter: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    getIndexFollowPageWord: js.Function2[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getIndexKey: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getLocaleList: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getPhoneticCandidate: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    loadAlgorithm: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    usePhoneticEntry: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean]
+  ): XExtendedIndexEntrySupplier = {
+    val __obj = js.Dynamic.literal(LocaleList = LocaleList, acquire = acquire, compareIndexEntry = compareIndexEntry, getAlgorithmList = getAlgorithmList, getIndexCharacter = getIndexCharacter, getIndexFollowPageWord = getIndexFollowPageWord, getIndexKey = getIndexKey, getLocaleList = getLocaleList, getPhoneticCandidate = getPhoneticCandidate, loadAlgorithm = loadAlgorithm, queryInterface = queryInterface, release = release, usePhoneticEntry = usePhoneticEntry)
+  
+    __obj.asInstanceOf[XExtendedIndexEntrySupplier]
+  }
+}
+

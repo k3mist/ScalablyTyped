@@ -16,3 +16,19 @@ trait IUsageRecord
   var timestamp: scala.Double
 }
 
+object IUsageRecord {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: stripeLib.stripeLibStrings.usage_record,
+    quantity: scala.Double,
+    subscription_item: java.lang.String,
+    timestamp: scala.Double
+  ): IUsageRecord = {
+    val __obj = js.Dynamic.literal(id = id, livemode = livemode, `object` = `object`, quantity = quantity, subscription_item = subscription_item, timestamp = timestamp)
+  
+    __obj.asInstanceOf[IUsageRecord]
+  }
+}
+

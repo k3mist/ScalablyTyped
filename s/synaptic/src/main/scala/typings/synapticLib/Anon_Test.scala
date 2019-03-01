@@ -10,3 +10,12 @@ trait Anon_Test extends js.Object {
   var train: js.Any
 }
 
+object Anon_Test {
+  @scala.inline
+  def apply(test: js.Any, train: js.Any): Anon_Test = {
+    val __obj = js.Dynamic.literal(test = test, train = train)
+  
+    __obj.asInstanceOf[Anon_Test]
+  }
+}
+

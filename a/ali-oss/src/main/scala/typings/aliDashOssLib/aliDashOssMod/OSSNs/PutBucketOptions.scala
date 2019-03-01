@@ -10,3 +10,12 @@ trait PutBucketOptions extends js.Object {
   var timeout: scala.Double
 }
 
+object PutBucketOptions {
+  @scala.inline
+  def apply(storageClass: StorageType, timeout: scala.Double): PutBucketOptions = {
+    val __obj = js.Dynamic.literal(storageClass = storageClass, timeout = timeout)
+  
+    __obj.asInstanceOf[PutBucketOptions]
+  }
+}
+

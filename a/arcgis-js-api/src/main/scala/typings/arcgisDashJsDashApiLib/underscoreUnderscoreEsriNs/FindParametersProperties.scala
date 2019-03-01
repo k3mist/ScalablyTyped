@@ -60,3 +60,28 @@ trait FindParametersProperties extends js.Object {
   var searchText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FindParametersProperties {
+  @scala.inline
+  def apply(
+    contains: js.UndefOr[scala.Boolean] = js.undefined,
+    geometryPrecision: scala.Int | scala.Double = null,
+    layerIds: js.Array[scala.Double] = null,
+    maxAllowableOffset: scala.Int | scala.Double = null,
+    outSpatialReference: SpatialReferenceProperties = null,
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    searchFields: js.Array[java.lang.String] = null,
+    searchText: java.lang.String = null
+  ): FindParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains)
+    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
+    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields)
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    __obj.asInstanceOf[FindParametersProperties]
+  }
+}
+

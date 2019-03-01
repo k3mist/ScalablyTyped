@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSArrayType
 }
 
+object TSArrayType {
+  @scala.inline
+  def apply(
+    elementType: astDashTypesLib.genKindsMod.TSTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSArrayType
+  ): TSArrayType = {
+    val __obj = js.Dynamic.literal(elementType = elementType, `type` = `type`)
+  
+    __obj.asInstanceOf[TSArrayType]
+  }
+}
+

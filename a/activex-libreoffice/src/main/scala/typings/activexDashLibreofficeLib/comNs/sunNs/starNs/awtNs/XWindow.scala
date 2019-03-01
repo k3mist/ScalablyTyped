@@ -61,3 +61,37 @@ trait XWindow
   def setVisible(Visible: scala.Boolean): scala.Unit
 }
 
+object XWindow {
+  @scala.inline
+  def apply(
+    PosSize: Rectangle,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addFocusListener: js.Function1[XFocusListener, scala.Unit],
+    addKeyListener: js.Function1[XKeyListener, scala.Unit],
+    addMouseListener: js.Function1[XMouseListener, scala.Unit],
+    addMouseMotionListener: js.Function1[XMouseMotionListener, scala.Unit],
+    addPaintListener: js.Function1[XPaintListener, scala.Unit],
+    addWindowListener: js.Function1[XWindowListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getPosSize: js.Function0[Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeFocusListener: js.Function1[XFocusListener, scala.Unit],
+    removeKeyListener: js.Function1[XKeyListener, scala.Unit],
+    removeMouseListener: js.Function1[XMouseListener, scala.Unit],
+    removeMouseMotionListener: js.Function1[XMouseMotionListener, scala.Unit],
+    removePaintListener: js.Function1[XPaintListener, scala.Unit],
+    removeWindowListener: js.Function1[XWindowListener, scala.Unit],
+    setEnable: js.Function1[scala.Boolean, scala.Unit],
+    setFocus: js.Function0[scala.Unit],
+    setPosSize: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    setVisible: js.Function1[scala.Boolean, scala.Unit]
+  ): XWindow = {
+    val __obj = js.Dynamic.literal(PosSize = PosSize, acquire = acquire, addEventListener = addEventListener, addFocusListener = addFocusListener, addKeyListener = addKeyListener, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addWindowListener = addWindowListener, dispose = dispose, getPosSize = getPosSize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFocusListener = removeFocusListener, removeKeyListener = removeKeyListener, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeWindowListener = removeWindowListener, setEnable = setEnable, setFocus = setFocus, setPosSize = setPosSize, setVisible = setVisible)
+  
+    __obj.asInstanceOf[XWindow]
+  }
+}
+

@@ -17,3 +17,12 @@ trait Quaternion extends js.Object {
   var z: scala.Double
 }
 
+object Quaternion {
+  @scala.inline
+  def apply(w: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): Quaternion = {
+    val __obj = js.Dynamic.literal(w = w, x = x, y = y, z = z)
+  
+    __obj.asInstanceOf[Quaternion]
+  }
+}
+

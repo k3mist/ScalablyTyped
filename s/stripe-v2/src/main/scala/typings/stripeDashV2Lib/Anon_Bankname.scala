@@ -13,3 +13,18 @@ trait Anon_Bankname extends js.Object {
   var validated: scala.Boolean
 }
 
+object Anon_Bankname {
+  @scala.inline
+  def apply(
+    bank_name: java.lang.String,
+    country: java.lang.String,
+    last4: scala.Double,
+    `object`: java.lang.String,
+    validated: scala.Boolean
+  ): Anon_Bankname = {
+    val __obj = js.Dynamic.literal(bank_name = bank_name, country = country, last4 = last4, `object` = `object`, validated = validated)
+  
+    __obj.asInstanceOf[Anon_Bankname]
+  }
+}
+

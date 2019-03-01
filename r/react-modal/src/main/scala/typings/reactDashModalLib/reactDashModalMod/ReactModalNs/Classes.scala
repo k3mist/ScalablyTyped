@@ -11,3 +11,12 @@ trait Classes extends js.Object {
   var beforeClose: java.lang.String
 }
 
+object Classes {
+  @scala.inline
+  def apply(afterOpen: java.lang.String, base: java.lang.String, beforeClose: java.lang.String): Classes = {
+    val __obj = js.Dynamic.literal(afterOpen = afterOpen, base = base, beforeClose = beforeClose)
+  
+    __obj.asInstanceOf[Classes]
+  }
+}
+

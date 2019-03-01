@@ -17,3 +17,22 @@ trait Anon_Day extends js.Object {
   var year: java.lang.String
 }
 
+object Anon_Day {
+  @scala.inline
+  def apply(
+    day: java.lang.String,
+    month: java.lang.String,
+    next: java.lang.String,
+    nextYear: java.lang.String,
+    prev: java.lang.String,
+    prevYear: java.lang.String,
+    today: java.lang.String,
+    week: java.lang.String,
+    year: java.lang.String
+  ): Anon_Day = {
+    val __obj = js.Dynamic.literal(day = day, month = month, next = next, nextYear = nextYear, prev = prev, prevYear = prevYear, today = today, week = week, year = year)
+  
+    __obj.asInstanceOf[Anon_Day]
+  }
+}
+

@@ -16,3 +16,12 @@ trait GetCipherTextResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetCipherTextResult {
+  @scala.inline
+  def apply(ciphertextBlob: java.lang.String, id: java.lang.String): GetCipherTextResult = {
+    val __obj = js.Dynamic.literal(ciphertextBlob = ciphertextBlob, id = id)
+  
+    __obj.asInstanceOf[GetCipherTextResult]
+  }
+}
+

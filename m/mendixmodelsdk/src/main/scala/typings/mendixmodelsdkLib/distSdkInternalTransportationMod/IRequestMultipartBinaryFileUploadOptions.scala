@@ -14,3 +14,20 @@ trait IRequestMultipartBinaryFileUploadOptions extends js.Object {
   var url: java.lang.String
 }
 
+object IRequestMultipartBinaryFileUploadOptions {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String | stdLib.Blob,
+    fileParameterName: java.lang.String,
+    method: RequestMethod,
+    url: java.lang.String,
+    body: js.Object = null,
+    headers: js.Object = null
+  ): IRequestMultipartBinaryFileUploadOptions = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], fileParameterName = fileParameterName, method = method, url = url)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[IRequestMultipartBinaryFileUploadOptions]
+  }
+}
+

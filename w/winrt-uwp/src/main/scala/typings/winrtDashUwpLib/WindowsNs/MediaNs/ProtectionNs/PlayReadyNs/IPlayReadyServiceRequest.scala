@@ -37,3 +37,22 @@ trait IPlayReadyServiceRequest
   def processManualEnablingResponse(responseBytes: js.Array[scala.Double]): winrtDashUwpLib.WindowsNs.WinRTError
 }
 
+object IPlayReadyServiceRequest {
+  @scala.inline
+  def apply(
+    beginServiceRequest: js.Function0[winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction],
+    challengeCustomData: java.lang.String,
+    generateManualEnablingChallenge: js.Function0[PlayReadySoapMessage],
+    nextServiceRequest: js.Function0[IPlayReadyServiceRequest],
+    processManualEnablingResponse: js.Function1[js.Array[scala.Double], winrtDashUwpLib.WindowsNs.WinRTError],
+    protectionSystem: java.lang.String,
+    responseCustomData: java.lang.String,
+    `type`: java.lang.String,
+    uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
+  ): IPlayReadyServiceRequest = {
+    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest, challengeCustomData = challengeCustomData, generateManualEnablingChallenge = generateManualEnablingChallenge, nextServiceRequest = nextServiceRequest, processManualEnablingResponse = processManualEnablingResponse, protectionSystem = protectionSystem, responseCustomData = responseCustomData, `type` = `type`, uri = uri)
+  
+    __obj.asInstanceOf[IPlayReadyServiceRequest]
+  }
+}
+

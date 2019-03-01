@@ -14,3 +14,19 @@ trait VertexFormat extends Packable {
   var tangent: scala.Boolean
 }
 
+object VertexFormat {
+  @scala.inline
+  def apply(
+    binormal: scala.Boolean,
+    color: scala.Boolean,
+    normal: scala.Boolean,
+    position: scala.Boolean,
+    st: scala.Boolean,
+    tangent: scala.Boolean
+  ): VertexFormat = {
+    val __obj = js.Dynamic.literal(binormal = binormal, color = color, normal = normal, position = position, st = st, tangent = tangent)
+  
+    __obj.asInstanceOf[VertexFormat]
+  }
+}
+

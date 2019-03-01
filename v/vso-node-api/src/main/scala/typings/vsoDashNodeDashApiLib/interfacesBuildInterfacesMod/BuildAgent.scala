@@ -23,3 +23,28 @@ trait BuildAgent extends js.Object {
   var url: java.lang.String
 }
 
+object BuildAgent {
+  @scala.inline
+  def apply(
+    buildDirectory: java.lang.String,
+    controller: XamlBuildControllerReference,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    id: scala.Double,
+    messageQueueUrl: java.lang.String,
+    name: java.lang.String,
+    reservedForBuild: java.lang.String,
+    server: XamlBuildServerReference,
+    status: AgentStatus,
+    statusMessage: java.lang.String,
+    updatedDate: stdLib.Date,
+    uri: java.lang.String,
+    url: java.lang.String
+  ): BuildAgent = {
+    val __obj = js.Dynamic.literal(buildDirectory = buildDirectory, controller = controller, createdDate = createdDate, description = description, enabled = enabled, id = id, messageQueueUrl = messageQueueUrl, name = name, reservedForBuild = reservedForBuild, server = server, status = status, statusMessage = statusMessage, updatedDate = updatedDate, uri = uri, url = url)
+  
+    __obj.asInstanceOf[BuildAgent]
+  }
+}
+

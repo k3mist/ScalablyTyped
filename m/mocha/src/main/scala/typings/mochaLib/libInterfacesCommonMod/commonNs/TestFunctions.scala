@@ -20,3 +20,16 @@ trait TestFunctions extends js.Object {
   def skip(title: java.lang.String): scala.Unit
 }
 
+object TestFunctions {
+  @scala.inline
+  def apply(
+    only: js.Function2[mochaLib.Mocha, mochaLib.MochaNs.Test, mochaLib.MochaNs.Test],
+    retries: js.Function1[scala.Double, scala.Unit],
+    skip: js.Function1[java.lang.String, scala.Unit]
+  ): TestFunctions = {
+    val __obj = js.Dynamic.literal(only = only, retries = retries, skip = skip)
+  
+    __obj.asInstanceOf[TestFunctions]
+  }
+}
+

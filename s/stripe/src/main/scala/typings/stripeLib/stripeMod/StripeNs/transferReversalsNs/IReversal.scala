@@ -32,3 +32,21 @@ trait IReversal
   var transfer: java.lang.String | stripeLib.stripeMod.StripeNs.transfersNs.ITransfer
 }
 
+object IReversal {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.transfer_reversal,
+    transfer: java.lang.String | stripeLib.stripeMod.StripeNs.transfersNs.ITransfer
+  ): IReversal = {
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, id = id, metadata = metadata, `object` = `object`, transfer = transfer.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IReversal]
+  }
+}
+

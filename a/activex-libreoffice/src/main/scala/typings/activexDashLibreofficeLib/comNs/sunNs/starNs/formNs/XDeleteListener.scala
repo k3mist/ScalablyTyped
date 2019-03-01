@@ -21,3 +21,19 @@ trait XDeleteListener
   def deleted(aEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XDeleteListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveDelete: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Boolean],
+    deleted: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDeleteListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, approveDelete = approveDelete, deleted = deleted, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDeleteListener]
+  }
+}
+

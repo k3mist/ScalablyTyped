@@ -74,3 +74,40 @@ trait StageState extends js.Object {
   val xrayTracingEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
 }
 
+object StageState {
+  @scala.inline
+  def apply(
+    accessLogSettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationArnFormat] = null,
+    cacheClusterEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    cacheClusterSize: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    clientCertificateId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deployment: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayDeploymentMod.Deployment] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    documentationVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    executionArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    invokeUrl: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    stageName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    variables: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    xrayTracingEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): StageState = {
+    val __obj = js.Dynamic.literal()
+    if (accessLogSettings != null) __obj.updateDynamic("accessLogSettings")(accessLogSettings.asInstanceOf[js.Any])
+    if (cacheClusterEnabled != null) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.asInstanceOf[js.Any])
+    if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
+    if (clientCertificateId != null) __obj.updateDynamic("clientCertificateId")(clientCertificateId.asInstanceOf[js.Any])
+    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (documentationVersion != null) __obj.updateDynamic("documentationVersion")(documentationVersion.asInstanceOf[js.Any])
+    if (executionArn != null) __obj.updateDynamic("executionArn")(executionArn.asInstanceOf[js.Any])
+    if (invokeUrl != null) __obj.updateDynamic("invokeUrl")(invokeUrl.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    if (xrayTracingEnabled != null) __obj.updateDynamic("xrayTracingEnabled")(xrayTracingEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StageState]
+  }
+}
+

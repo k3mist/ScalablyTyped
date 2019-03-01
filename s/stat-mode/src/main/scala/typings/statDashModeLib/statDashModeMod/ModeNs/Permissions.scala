@@ -11,3 +11,12 @@ trait Permissions extends js.Object {
   var write: scala.Boolean
 }
 
+object Permissions {
+  @scala.inline
+  def apply(execute: scala.Boolean, read: scala.Boolean, write: scala.Boolean): Permissions = {
+    val __obj = js.Dynamic.literal(execute = execute, read = read, write = write)
+  
+    __obj.asInstanceOf[Permissions]
+  }
+}
+

@@ -16,3 +16,17 @@ trait CalendarItem2 extends CalendarItem {
   var NarrowName: java.lang.String
 }
 
+object CalendarItem2 {
+  @scala.inline
+  def apply(
+    AbbrevName: java.lang.String,
+    FullName: java.lang.String,
+    ID: java.lang.String,
+    NarrowName: java.lang.String
+  ): CalendarItem2 = {
+    val __obj = js.Dynamic.literal(AbbrevName = AbbrevName, FullName = FullName, ID = ID, NarrowName = NarrowName)
+  
+    __obj.asInstanceOf[CalendarItem2]
+  }
+}
+

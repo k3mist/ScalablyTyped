@@ -11,3 +11,16 @@ trait IHandledState extends js.Object {
   var unhandled: scala.Boolean
 }
 
+object IHandledState {
+  @scala.inline
+  def apply(
+    severity: java.lang.String,
+    severityReason: bugsnagDashJsLib.Anon_KeyType,
+    unhandled: scala.Boolean
+  ): IHandledState = {
+    val __obj = js.Dynamic.literal(severity = severity, severityReason = severityReason, unhandled = unhandled)
+  
+    __obj.asInstanceOf[IHandledState]
+  }
+}
+

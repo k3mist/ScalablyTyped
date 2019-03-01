@@ -147,3 +147,34 @@ trait Container extends js.Object {
   val workingDir: java.lang.String
 }
 
+object Container {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String],
+    command: js.Array[java.lang.String],
+    env: js.Array[EnvVar],
+    envFrom: js.Array[EnvFromSource],
+    image: java.lang.String,
+    imagePullPolicy: java.lang.String,
+    lifecycle: Lifecycle,
+    livenessProbe: Probe,
+    name: java.lang.String,
+    ports: js.Array[ContainerPort],
+    readinessProbe: Probe,
+    resources: ResourceRequirements,
+    securityContext: SecurityContext,
+    stdin: scala.Boolean,
+    stdinOnce: scala.Boolean,
+    terminationMessagePath: java.lang.String,
+    terminationMessagePolicy: java.lang.String,
+    tty: scala.Boolean,
+    volumeDevices: js.Array[VolumeDevice],
+    volumeMounts: js.Array[VolumeMount],
+    workingDir: java.lang.String
+  ): Container = {
+    val __obj = js.Dynamic.literal(args = args, command = command, env = env, envFrom = envFrom, image = image, imagePullPolicy = imagePullPolicy, lifecycle = lifecycle, livenessProbe = livenessProbe, name = name, ports = ports, readinessProbe = readinessProbe, resources = resources, securityContext = securityContext, stdin = stdin, stdinOnce = stdinOnce, terminationMessagePath = terminationMessagePath, terminationMessagePolicy = terminationMessagePolicy, tty = tty, volumeDevices = volumeDevices, volumeMounts = volumeMounts, workingDir = workingDir)
+  
+    __obj.asInstanceOf[Container]
+  }
+}
+

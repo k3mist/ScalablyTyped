@@ -12,3 +12,12 @@ trait CandidateUsage extends js.Object {
   var title: java.lang.String
 }
 
+object CandidateUsage {
+  @scala.inline
+  def apply(body: java.lang.String, title: java.lang.String): CandidateUsage = {
+    val __obj = js.Dynamic.literal(body = body, title = title)
+  
+    __obj.asInstanceOf[CandidateUsage]
+  }
+}
+

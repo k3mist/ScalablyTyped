@@ -28,3 +28,18 @@ trait Anon_Author extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Author {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    imageUrl: java.lang.String,
+    referenceUrl: java.lang.String,
+    resourceId: Anon_ChannelIdKindPlaylistId,
+    `type`: java.lang.String
+  ): Anon_Author = {
+    val __obj = js.Dynamic.literal(author = author, imageUrl = imageUrl, referenceUrl = referenceUrl, resourceId = resourceId, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Author]
+  }
+}
+

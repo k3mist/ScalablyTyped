@@ -17,3 +17,16 @@ trait FrameActionEvent
   var Frame: XFrame
 }
 
+object FrameActionEvent {
+  @scala.inline
+  def apply(
+    Action: FrameAction,
+    Frame: XFrame,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): FrameActionEvent = {
+    val __obj = js.Dynamic.literal(Action = Action, Frame = Frame, Source = Source)
+  
+    __obj.asInstanceOf[FrameActionEvent]
+  }
+}
+

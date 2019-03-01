@@ -20,3 +20,12 @@ trait ChangeFloatingObjectOutlineWidthCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFloatingObjectOutlineWidthCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[js.Any]): ChangeFloatingObjectOutlineWidthCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ChangeFloatingObjectOutlineWidthCommand]
+  }
+}
+

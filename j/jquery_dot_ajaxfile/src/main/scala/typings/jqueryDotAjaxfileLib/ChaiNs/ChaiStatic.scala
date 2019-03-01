@@ -16,3 +16,18 @@ trait ChaiStatic extends js.Object {
   def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit]): js.Any
 }
 
+object ChaiStatic {
+  @scala.inline
+  def apply(
+    assert: AssertStatic,
+    config: Config,
+    expect: ExpectStatic,
+    should: js.Function0[Should],
+    use: js.Function1[js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit], js.Any]
+  ): ChaiStatic = {
+    val __obj = js.Dynamic.literal(assert = assert, config = config, expect = expect, should = should, use = use)
+  
+    __obj.asInstanceOf[ChaiStatic]
+  }
+}
+

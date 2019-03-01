@@ -11,3 +11,12 @@ trait Auth0 extends js.Object {
   def users(token: java.lang.String): Users
 }
 
+object Auth0 {
+  @scala.inline
+  def apply(auth: Auth, users: js.Function1[java.lang.String, Users], webAuth: WebAuth): Auth0 = {
+    val __obj = js.Dynamic.literal(auth = auth, users = users, webAuth = webAuth)
+  
+    __obj.asInstanceOf[Auth0]
+  }
+}
+

@@ -21,3 +21,19 @@ trait ASPxClientTabControlTabClickEventArgs extends ASPxClientTabControlTabCance
   var htmlEvent: js.Object
 }
 
+object ASPxClientTabControlTabClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    processOnServer: scala.Boolean,
+    reloadContentOnCallback: scala.Boolean,
+    tab: ASPxClientTab
+  ): ASPxClientTabControlTabClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, tab = tab)
+  
+    __obj.asInstanceOf[ASPxClientTabControlTabClickEventArgs]
+  }
+}
+

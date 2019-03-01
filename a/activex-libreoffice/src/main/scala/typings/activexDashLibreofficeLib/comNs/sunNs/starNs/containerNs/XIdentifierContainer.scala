@@ -27,3 +27,25 @@ trait XIdentifierContainer extends XIdentifierReplace {
   def removeByIdentifier(Identifier: scala.Double): scala.Unit
 }
 
+object XIdentifierContainer {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getByIdentifier: js.Function1[scala.Double, js.Any],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getIdentifiers: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    hasElements: js.Function0[scala.Boolean],
+    insert: js.Function1[js.Any, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByIdentifier: js.Function1[scala.Double, scala.Unit],
+    replaceByIdentifer: js.Function2[scala.Double, js.Any, scala.Unit]
+  ): XIdentifierContainer = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, removeByIdentifier = removeByIdentifier, replaceByIdentifer = replaceByIdentifer)
+  
+    __obj.asInstanceOf[XIdentifierContainer]
+  }
+}
+

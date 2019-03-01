@@ -20,3 +20,21 @@ trait XDialog
   def setTitle(Title: java.lang.String): scala.Unit
 }
 
+object XDialog {
+  @scala.inline
+  def apply(
+    Title: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    endExecute: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Double],
+    getTitle: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XDialog = {
+    val __obj = js.Dynamic.literal(Title = Title, acquire = acquire, endExecute = endExecute, execute = execute, getTitle = getTitle, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
+    __obj.asInstanceOf[XDialog]
+  }
+}
+

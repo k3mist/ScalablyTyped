@@ -9,3 +9,17 @@ trait DiagramPanEvent extends DiagramEvent {
   var pan: js.UndefOr[kendoDashUiLib.kendoNs.datavizNs.diagramNs.Point] = js.undefined
 }
 
+object DiagramPanEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Diagram,
+    pan: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Point = null
+  ): DiagramPanEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (pan != null) __obj.updateDynamic("pan")(pan)
+    __obj.asInstanceOf[DiagramPanEvent]
+  }
+}
+

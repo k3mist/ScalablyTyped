@@ -17,3 +17,12 @@ trait NormalSuccessResponse extends js.Object {
   var status: scala.Double
 }
 
+object NormalSuccessResponse {
+  @scala.inline
+  def apply(headers: js.Object, rt: scala.Double, size: scala.Double, status: scala.Double): NormalSuccessResponse = {
+    val __obj = js.Dynamic.literal(headers = headers, rt = rt, size = size, status = status)
+  
+    __obj.asInstanceOf[NormalSuccessResponse]
+  }
+}
+

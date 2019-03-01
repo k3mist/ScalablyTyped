@@ -33,3 +33,16 @@ trait XLoggerPool extends js.Object {
   def getNamedLogger(Name: java.lang.String): XLogger
 }
 
+object XLoggerPool {
+  @scala.inline
+  def apply(
+    DefaultLogger: XLogger,
+    getDefaultLogger: js.Function0[XLogger],
+    getNamedLogger: js.Function1[java.lang.String, XLogger]
+  ): XLoggerPool = {
+    val __obj = js.Dynamic.literal(DefaultLogger = DefaultLogger, getDefaultLogger = getDefaultLogger, getNamedLogger = getNamedLogger)
+  
+    __obj.asInstanceOf[XLoggerPool]
+  }
+}
+

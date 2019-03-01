@@ -104,3 +104,23 @@ trait IAppState extends js.Object {
   def setTreeState(key: java.lang.String, value: ITreeState): scala.Unit
 }
 
+object IAppState {
+  @scala.inline
+  def apply(
+    getGlobalState: js.Function1[java.lang.String, IGlobalState],
+    getMenuState: js.Function1[java.lang.String, IStateObject],
+    getSectionState: js.Function1[java.lang.String, ISectionState],
+    getState: js.Function3[IStateObject, java.lang.String, java.lang.String, IStateObject],
+    getTreeState: js.Function1[java.lang.String, ITreeState],
+    setGlobalState: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    setMenuState: js.Function2[java.lang.String, IMenuState, scala.Unit],
+    setSectionState: js.Function2[java.lang.String, ISectionState, scala.Unit],
+    setState: js.Function4[IStateObject, java.lang.String, js.Any, java.lang.String, scala.Unit],
+    setTreeState: js.Function2[java.lang.String, ITreeState, scala.Unit]
+  ): IAppState = {
+    val __obj = js.Dynamic.literal(getGlobalState = getGlobalState, getMenuState = getMenuState, getSectionState = getSectionState, getState = getState, getTreeState = getTreeState, setGlobalState = setGlobalState, setMenuState = setMenuState, setSectionState = setSectionState, setState = setState, setTreeState = setTreeState)
+  
+    __obj.asInstanceOf[IAppState]
+  }
+}
+

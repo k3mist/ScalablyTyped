@@ -10,3 +10,12 @@ trait Anon_Focused extends js.Object {
   var tintColor: java.lang.String | scala.Null
 }
 
+object Anon_Focused {
+  @scala.inline
+  def apply(focused: scala.Boolean, tintColor: java.lang.String = null): Anon_Focused = {
+    val __obj = js.Dynamic.literal(focused = focused)
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    __obj.asInstanceOf[Anon_Focused]
+  }
+}
+

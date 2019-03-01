@@ -41,3 +41,19 @@ trait ASPxClientWeekOfMonth extends js.Object {
   var Third: scala.Double
 }
 
+object ASPxClientWeekOfMonth {
+  @scala.inline
+  def apply(
+    First: scala.Double,
+    Fourth: scala.Double,
+    Last: scala.Double,
+    None: scala.Double,
+    Second: scala.Double,
+    Third: scala.Double
+  ): ASPxClientWeekOfMonth = {
+    val __obj = js.Dynamic.literal(First = First, Fourth = Fourth, Last = Last, None = None, Second = Second, Third = Third)
+  
+    __obj.asInstanceOf[ASPxClientWeekOfMonth]
+  }
+}
+

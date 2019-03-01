@@ -16,3 +16,12 @@ trait GetKeyResult extends js.Object {
   val value: java.lang.String
 }
 
+object GetKeyResult {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): GetKeyResult = {
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
+    __obj.asInstanceOf[GetKeyResult]
+  }
+}
+

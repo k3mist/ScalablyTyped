@@ -25,3 +25,17 @@ trait Acceptance extends js.Object {
   var user_agent: java.lang.String
 }
 
+object Acceptance {
+  @scala.inline
+  def apply(
+    date: scala.Double,
+    ip: java.lang.String,
+    status: stripejsLib.stripejsLibStrings.accepted | stripejsLib.stripejsLibStrings.refused,
+    user_agent: java.lang.String
+  ): Acceptance = {
+    val __obj = js.Dynamic.literal(date = date, ip = ip, status = status.asInstanceOf[js.Any], user_agent = user_agent)
+  
+    __obj.asInstanceOf[Acceptance]
+  }
+}
+

@@ -27,3 +27,19 @@ trait XPropertyAccess
   def setPropertyValues(aProps: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue]): scala.Unit
 }
 
+object XPropertyAccess {
+  @scala.inline
+  def apply(
+    PropertyValues: activexDashInteropLib.SafeArray[PropertyValue],
+    acquire: js.Function0[scala.Unit],
+    getPropertyValues: js.Function0[activexDashInteropLib.SafeArray[PropertyValue]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyValues: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue], scala.Unit]
+  ): XPropertyAccess = {
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues)
+  
+    __obj.asInstanceOf[XPropertyAccess]
+  }
+}
+

@@ -11,3 +11,22 @@ import scala.scalajs.js.annotation._
   */
 trait CopyImporter extends Importer
 
+object CopyImporter {
+  @scala.inline
+  def apply(
+    TargetBackend: XBackend,
+    acquire: js.Function0[scala.Unit],
+    getTargetBackend: js.Function0[XBackend],
+    importLayer: js.Function1[XLayer, scala.Unit],
+    importLayerForEntity: js.Function2[XLayer, java.lang.String, scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTargetBackend: js.Function1[XBackend, scala.Unit]
+  ): CopyImporter = {
+    val __obj = js.Dynamic.literal(TargetBackend = TargetBackend, acquire = acquire, getTargetBackend = getTargetBackend, importLayer = importLayer, importLayerForEntity = importLayerForEntity, initialize = initialize, queryInterface = queryInterface, release = release, setTargetBackend = setTargetBackend)
+  
+    __obj.asInstanceOf[CopyImporter]
+  }
+}
+

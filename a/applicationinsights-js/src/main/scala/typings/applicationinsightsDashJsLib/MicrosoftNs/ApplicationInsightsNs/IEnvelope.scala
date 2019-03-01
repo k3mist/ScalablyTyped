@@ -23,3 +23,29 @@ trait IEnvelope extends ISerializable {
   var ver: scala.Double
 }
 
+object IEnvelope {
+  @scala.inline
+  def apply(
+    aiDataContract: js.Any,
+    appId: java.lang.String,
+    appVer: java.lang.String,
+    data: js.Any,
+    deviceId: java.lang.String,
+    flags: scala.Double,
+    iKey: java.lang.String,
+    name: java.lang.String,
+    os: java.lang.String,
+    osVer: java.lang.String,
+    sampleRate: scala.Double,
+    seq: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    time: java.lang.String,
+    userId: java.lang.String,
+    ver: scala.Double
+  ): IEnvelope = {
+    val __obj = js.Dynamic.literal(aiDataContract = aiDataContract, appId = appId, appVer = appVer, data = data, deviceId = deviceId, flags = flags, iKey = iKey, name = name, os = os, osVer = osVer, sampleRate = sampleRate, seq = seq, tags = tags, time = time, userId = userId, ver = ver)
+  
+    __obj.asInstanceOf[IEnvelope]
+  }
+}
+

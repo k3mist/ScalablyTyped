@@ -34,3 +34,58 @@ trait MessagesResource extends js.Object {
   def untrash(request: gapiDotClientDotGmailLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Message]
 }
 
+object MessagesResource {
+  @scala.inline
+  def apply(
+    attachments: AttachmentsResource,
+    batchDelete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    batchModify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsFormatId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    `import`: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltDeleted, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltDeletedFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrashKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMessagesResponse]
+    ],
+    modify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    send: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    trash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    untrash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ]
+  ): MessagesResource = {
+    val __obj = js.Dynamic.literal(attachments = attachments, batchDelete = batchDelete, batchModify = batchModify, delete = delete, get = get, `import` = `import`, insert = insert, list = list, modify = modify, send = send, trash = trash, untrash = untrash)
+  
+    __obj.asInstanceOf[MessagesResource]
+  }
+}
+

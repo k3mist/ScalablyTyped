@@ -16,3 +16,18 @@ trait XClipboardListener
   def changedContents(event: ClipboardEvent): scala.Unit
 }
 
+object XClipboardListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    changedContents: js.Function1[ClipboardEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XClipboardListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, changedContents = changedContents, disposing = disposing, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XClipboardListener]
+  }
+}
+

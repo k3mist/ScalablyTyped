@@ -14,3 +14,19 @@ trait Conditional
   var type_Conditional: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.Conditional
 }
 
+object Conditional {
+  @scala.inline
+  def apply(
+    falseExpression: ASTNode,
+    trueExpression: ASTNode,
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.Conditional,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): Conditional = {
+    val __obj = js.Dynamic.literal(falseExpression = falseExpression, trueExpression = trueExpression, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[Conditional]
+  }
+}
+

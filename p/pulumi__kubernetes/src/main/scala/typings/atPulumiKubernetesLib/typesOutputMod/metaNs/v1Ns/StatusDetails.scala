@@ -45,3 +45,19 @@ trait StatusDetails extends js.Object {
   val uid: java.lang.String
 }
 
+object StatusDetails {
+  @scala.inline
+  def apply(
+    causes: js.Array[StatusCause],
+    group: java.lang.String,
+    kind: java.lang.String,
+    name: java.lang.String,
+    retryAfterSeconds: scala.Double,
+    uid: java.lang.String
+  ): StatusDetails = {
+    val __obj = js.Dynamic.literal(causes = causes, group = group, kind = kind, name = name, retryAfterSeconds = retryAfterSeconds, uid = uid)
+  
+    __obj.asInstanceOf[StatusDetails]
+  }
+}
+

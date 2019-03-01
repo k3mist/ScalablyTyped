@@ -10,3 +10,19 @@ trait MapClickEvent extends MapEvent {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object MapClickEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Map,
+    location: kendoDashUiLib.kendoNs.datavizNs.mapNs.Location = null,
+    originalEvent: js.Any = null
+  ): MapClickEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[MapClickEvent]
+  }
+}
+

@@ -11,3 +11,16 @@ trait FavIconResponse extends js.Object {
   var images: js.Array[faviconsLib.Anon_Contents]
 }
 
+object FavIconResponse {
+  @scala.inline
+  def apply(
+    files: js.Array[faviconsLib.Anon_Contents],
+    html: js.Array[java.lang.String],
+    images: js.Array[faviconsLib.Anon_Contents]
+  ): FavIconResponse = {
+    val __obj = js.Dynamic.literal(files = files, html = html, images = images)
+  
+    __obj.asInstanceOf[FavIconResponse]
+  }
+}
+

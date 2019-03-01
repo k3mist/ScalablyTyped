@@ -31,3 +31,17 @@ trait ZXCVBNAttackTime extends js.Object {
   var online_throttling_100_per_hour: java.lang.String | scala.Double
 }
 
+object ZXCVBNAttackTime {
+  @scala.inline
+  def apply(
+    offline_fast_hashing_1e10_per_second: java.lang.String | scala.Double,
+    offline_slow_hashing_1e4_per_second: java.lang.String | scala.Double,
+    online_no_throttling_10_per_second: java.lang.String | scala.Double,
+    online_throttling_100_per_hour: java.lang.String | scala.Double
+  ): ZXCVBNAttackTime = {
+    val __obj = js.Dynamic.literal(offline_fast_hashing_1e10_per_second = offline_fast_hashing_1e10_per_second.asInstanceOf[js.Any], offline_slow_hashing_1e4_per_second = offline_slow_hashing_1e4_per_second.asInstanceOf[js.Any], online_no_throttling_10_per_second = online_no_throttling_10_per_second.asInstanceOf[js.Any], online_throttling_100_per_hour = online_throttling_100_per_hour.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ZXCVBNAttackTime]
+  }
+}
+

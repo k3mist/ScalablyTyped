@@ -15,3 +15,22 @@ trait StructError
   var value: js.Any
 }
 
+object StructError {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    errors: js.Array[StructError],
+    message: java.lang.String,
+    name: java.lang.String,
+    path: js.Array[java.lang.String],
+    reason: js.Any,
+    `type`: java.lang.String,
+    value: js.Any,
+    stack: java.lang.String = null
+  ): StructError = {
+    val __obj = js.Dynamic.literal(data = data, errors = errors, message = message, name = name, path = path, reason = reason, `type` = `type`, value = value)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[StructError]
+  }
+}
+

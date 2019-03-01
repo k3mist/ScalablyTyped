@@ -10,3 +10,15 @@ trait Anon_Errors extends js.Object {
   var options: typescriptLib.typescriptMod.tsNs.CompilerOptions
 }
 
+object Anon_Errors {
+  @scala.inline
+  def apply(
+    errors: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
+    options: typescriptLib.typescriptMod.tsNs.CompilerOptions
+  ): Anon_Errors = {
+    val __obj = js.Dynamic.literal(errors = errors, options = options)
+  
+    __obj.asInstanceOf[Anon_Errors]
+  }
+}
+

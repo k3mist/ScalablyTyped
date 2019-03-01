@@ -21,3 +21,26 @@ trait ClockViewModel extends js.Object {
   def synchronize(): scala.Unit
 }
 
+object ClockViewModel {
+  @scala.inline
+  def apply(
+    canAnimate: scala.Boolean,
+    clock: Clock,
+    clockRange: ClockRange,
+    clockStep: ClockStep,
+    currentTime: JulianDate,
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    multiplier: scala.Double,
+    shouldAnimate: scala.Boolean,
+    startTime: JulianDate,
+    stopTime: JulianDate,
+    synchronize: js.Function0[scala.Unit],
+    systemTime: JulianDate
+  ): ClockViewModel = {
+    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clock = clock, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, destroy = destroy, isDestroyed = isDestroyed, multiplier = multiplier, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, synchronize = synchronize, systemTime = systemTime)
+  
+    __obj.asInstanceOf[ClockViewModel]
+  }
+}
+

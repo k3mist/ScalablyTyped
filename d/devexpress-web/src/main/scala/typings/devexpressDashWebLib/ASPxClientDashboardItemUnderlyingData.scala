@@ -33,3 +33,18 @@ trait ASPxClientDashboardItemUnderlyingData extends js.Object {
   def IsDataReceived(): scala.Boolean
 }
 
+object ASPxClientDashboardItemUnderlyingData {
+  @scala.inline
+  def apply(
+    GetDataMembers: js.Function0[js.Array[java.lang.String]],
+    GetRequestDataError: js.Function0[java.lang.String],
+    GetRowCount: js.Function0[scala.Double],
+    GetRowValue: js.Function2[scala.Double, java.lang.String, js.Object],
+    IsDataReceived: js.Function0[scala.Boolean]
+  ): ASPxClientDashboardItemUnderlyingData = {
+    val __obj = js.Dynamic.literal(GetDataMembers = GetDataMembers, GetRequestDataError = GetRequestDataError, GetRowCount = GetRowCount, GetRowValue = GetRowValue, IsDataReceived = IsDataReceived)
+  
+    __obj.asInstanceOf[ASPxClientDashboardItemUnderlyingData]
+  }
+}
+

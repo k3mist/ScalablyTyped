@@ -25,3 +25,21 @@ trait XFilterGroupManager
   ): scala.Unit
 }
 
+object XFilterGroupManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    appendFilterGroup: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFilterGroupManager = {
+    val __obj = js.Dynamic.literal(acquire = acquire, appendFilterGroup = appendFilterGroup, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XFilterGroupManager]
+  }
+}
+

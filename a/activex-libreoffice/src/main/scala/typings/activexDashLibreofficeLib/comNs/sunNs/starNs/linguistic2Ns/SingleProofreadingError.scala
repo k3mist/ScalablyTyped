@@ -20,3 +20,21 @@ trait SingleProofreadingError extends js.Object {
   var nErrorType: scala.Double
 }
 
+object SingleProofreadingError {
+  @scala.inline
+  def apply(
+    aFullComment: java.lang.String,
+    aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aRuleIdentifier: java.lang.String,
+    aShortComment: java.lang.String,
+    aSuggestions: activexDashInteropLib.SafeArray[java.lang.String],
+    nErrorLength: scala.Double,
+    nErrorStart: scala.Double,
+    nErrorType: scala.Double
+  ): SingleProofreadingError = {
+    val __obj = js.Dynamic.literal(aFullComment = aFullComment, aProperties = aProperties, aRuleIdentifier = aRuleIdentifier, aShortComment = aShortComment, aSuggestions = aSuggestions, nErrorLength = nErrorLength, nErrorStart = nErrorStart, nErrorType = nErrorType)
+  
+    __obj.asInstanceOf[SingleProofreadingError]
+  }
+}
+

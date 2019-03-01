@@ -11,3 +11,16 @@ trait Result extends js.Object {
   var params: Params
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    handler: routeDashRecognizerLib.distRouteDashRecognizerDslMod.Opaque,
+    isDynamic: scala.Boolean,
+    params: Params
+  ): Result = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], isDynamic = isDynamic, params = params)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

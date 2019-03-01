@@ -25,3 +25,30 @@ trait IUriRuntimeClass extends js.Object {
   def equals(pUri: Uri): scala.Boolean
 }
 
+object IUriRuntimeClass {
+  @scala.inline
+  def apply(
+    absoluteUri: java.lang.String,
+    combineUri: js.Function1[java.lang.String, Uri],
+    displayUri: java.lang.String,
+    domain: java.lang.String,
+    equals: js.Function1[Uri, scala.Boolean],
+    extension: java.lang.String,
+    fragment: java.lang.String,
+    host: java.lang.String,
+    password: java.lang.String,
+    path: java.lang.String,
+    port: scala.Double,
+    query: java.lang.String,
+    queryParsed: WwwFormUrlDecoder,
+    rawUri: java.lang.String,
+    schemeName: java.lang.String,
+    suspicious: scala.Boolean,
+    userName: java.lang.String
+  ): IUriRuntimeClass = {
+    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri, combineUri = combineUri, displayUri = displayUri, domain = domain, equals = equals, extension = extension, fragment = fragment, host = host, password = password, path = path, port = port, query = query, queryParsed = queryParsed, rawUri = rawUri, schemeName = schemeName, suspicious = suspicious, userName = userName)
+  
+    __obj.asInstanceOf[IUriRuntimeClass]
+  }
+}
+

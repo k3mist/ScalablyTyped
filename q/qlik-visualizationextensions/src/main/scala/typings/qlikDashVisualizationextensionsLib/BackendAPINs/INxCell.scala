@@ -82,3 +82,26 @@ trait INxCell extends js.Object {
   var qText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INxCell {
+  @scala.inline
+  def apply(
+    qAttrDims: INxAttributeDimValues,
+    qAttrExps: INxAttributeExpressionValues,
+    qElemNumber: scala.Double,
+    qFrequency: java.lang.String,
+    qHighlightRanges: INxHighlightRanges,
+    qIsEmpty: scala.Boolean,
+    qIsNull: scala.Boolean,
+    qIsOtherCell: scala.Boolean,
+    qIsTotalCell: scala.Boolean,
+    qState: StateType,
+    qNum: scala.Int | scala.Double = null,
+    qText: java.lang.String = null
+  ): INxCell = {
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qElemNumber = qElemNumber, qFrequency = qFrequency, qHighlightRanges = qHighlightRanges, qIsEmpty = qIsEmpty, qIsNull = qIsNull, qIsOtherCell = qIsOtherCell, qIsTotalCell = qIsTotalCell, qState = qState)
+    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+    if (qText != null) __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[INxCell]
+  }
+}
+

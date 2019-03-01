@@ -34,3 +34,32 @@ trait XDataTransferProviderAccess
   def getDropTarget(window: XWindow): activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDropTarget
 }
 
+object XDataTransferProviderAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getClipboard: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.clipboardNs.XClipboard
+    ],
+    getDragGestureRecognizer: js.Function1[
+      XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragGestureRecognizer
+    ],
+    getDragSource: js.Function1[
+      XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDragSource
+    ],
+    getDropTarget: js.Function1[
+      XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.dndNs.XDropTarget
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataTransferProviderAccess = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getClipboard = getClipboard, getDragGestureRecognizer = getDragGestureRecognizer, getDragSource = getDragSource, getDropTarget = getDropTarget, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDataTransferProviderAccess]
+  }
+}
+

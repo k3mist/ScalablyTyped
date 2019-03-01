@@ -45,3 +45,22 @@ trait DatasetConfiguration
   var whereConditions: js.Array[WhereCondition]
 }
 
+object DatasetConfiguration {
+  @scala.inline
+  def apply(
+    changeCondition: scala.Double,
+    changeFields: java.lang.String,
+    constructor: js.Function,
+    dataWorkspaceId: java.lang.String,
+    dataset: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    whereConditions: js.Array[WhereCondition]
+  ): DatasetConfiguration = {
+    val __obj = js.Dynamic.literal(changeCondition = changeCondition, changeFields = changeFields, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, whereConditions = whereConditions)
+  
+    __obj.asInstanceOf[DatasetConfiguration]
+  }
+}
+

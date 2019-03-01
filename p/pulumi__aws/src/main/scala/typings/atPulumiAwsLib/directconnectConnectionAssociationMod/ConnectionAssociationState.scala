@@ -16,3 +16,16 @@ trait ConnectionAssociationState extends js.Object {
   val lagId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ConnectionAssociationState {
+  @scala.inline
+  def apply(
+    connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    lagId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ConnectionAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectionAssociationState]
+  }
+}
+

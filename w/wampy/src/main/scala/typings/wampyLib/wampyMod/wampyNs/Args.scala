@@ -10,3 +10,12 @@ trait Args extends _Payload {
   var argsList: js.Array[_]
 }
 
+object Args {
+  @scala.inline
+  def apply(argsDict: Dict, argsList: js.Array[_]): Args = {
+    val __obj = js.Dynamic.literal(argsDict = argsDict, argsList = argsList)
+  
+    __obj.asInstanceOf[Args]
+  }
+}
+

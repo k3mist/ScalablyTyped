@@ -48,3 +48,23 @@ trait DefinitionReference extends js.Object {
   var url: java.lang.String
 }
 
+object DefinitionReference {
+  @scala.inline
+  def apply(
+    createdDate: stdLib.Date,
+    id: scala.Double,
+    name: java.lang.String,
+    path: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    queueStatus: DefinitionQueueStatus,
+    revision: scala.Double,
+    `type`: DefinitionType,
+    uri: java.lang.String,
+    url: java.lang.String
+  ): DefinitionReference = {
+    val __obj = js.Dynamic.literal(createdDate = createdDate, id = id, name = name, path = path, project = project, queueStatus = queueStatus, revision = revision, `type` = `type`, uri = uri, url = url)
+  
+    __obj.asInstanceOf[DefinitionReference]
+  }
+}
+

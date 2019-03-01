@@ -12,3 +12,18 @@ trait XGridSelectionListener
   def selectionChanged(gridSelectionEvent: GridSelectionEvent): scala.Unit
 }
 
+object XGridSelectionListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectionChanged: js.Function1[GridSelectionEvent, scala.Unit]
+  ): XGridSelectionListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, selectionChanged = selectionChanged)
+  
+    __obj.asInstanceOf[XGridSelectionListener]
+  }
+}
+

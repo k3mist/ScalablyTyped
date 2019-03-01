@@ -10,3 +10,15 @@ trait IEnumMember extends js.Object {
   var value: EnumMemberValue
 }
 
+object IEnumMember {
+  @scala.inline
+  def apply(
+    displayName: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.DisplayNameGetter,
+    value: EnumMemberValue
+  ): IEnumMember = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[IEnumMember]
+  }
+}
+

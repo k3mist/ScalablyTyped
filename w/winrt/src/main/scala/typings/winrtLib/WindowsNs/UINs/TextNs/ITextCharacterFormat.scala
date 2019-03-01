@@ -35,3 +35,40 @@ trait ITextCharacterFormat extends js.Object {
   def setClone(value: ITextCharacterFormat): scala.Unit
 }
 
+object ITextCharacterFormat {
+  @scala.inline
+  def apply(
+    allCaps: FormatEffect,
+    backgroundColor: winrtLib.WindowsNs.UINs.Color,
+    bold: FormatEffect,
+    fontStretch: FontStretch,
+    fontStyle: FontStyle,
+    foregroundColor: winrtLib.WindowsNs.UINs.Color,
+    getClone: js.Function0[ITextCharacterFormat],
+    hidden: FormatEffect,
+    isEqual: js.Function1[ITextCharacterFormat, scala.Boolean],
+    italic: FormatEffect,
+    kerning: scala.Double,
+    languageTag: java.lang.String,
+    linkType: LinkType,
+    name: java.lang.String,
+    outline: FormatEffect,
+    position: scala.Double,
+    protectedText: FormatEffect,
+    setClone: js.Function1[ITextCharacterFormat, scala.Unit],
+    size: scala.Double,
+    smallCaps: FormatEffect,
+    spacing: scala.Double,
+    strikethrough: FormatEffect,
+    subscript: FormatEffect,
+    superscript: FormatEffect,
+    textScript: TextScript,
+    underline: UnderlineType,
+    weight: scala.Double
+  ): ITextCharacterFormat = {
+    val __obj = js.Dynamic.literal(allCaps = allCaps, backgroundColor = backgroundColor, bold = bold, fontStretch = fontStretch, fontStyle = fontStyle, foregroundColor = foregroundColor, getClone = getClone, hidden = hidden, isEqual = isEqual, italic = italic, kerning = kerning, languageTag = languageTag, linkType = linkType, name = name, outline = outline, position = position, protectedText = protectedText, setClone = setClone, size = size, smallCaps = smallCaps, spacing = spacing, strikethrough = strikethrough, subscript = subscript, superscript = superscript, textScript = textScript, underline = underline, weight = weight)
+  
+    __obj.asInstanceOf[ITextCharacterFormat]
+  }
+}
+

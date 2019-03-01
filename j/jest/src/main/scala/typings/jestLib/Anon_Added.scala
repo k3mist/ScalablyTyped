@@ -14,3 +14,19 @@ trait Anon_Added extends js.Object {
   var updated: scala.Double
 }
 
+object Anon_Added {
+  @scala.inline
+  def apply(
+    added: scala.Double,
+    fileDeleted: scala.Boolean,
+    matched: scala.Double,
+    unchecked: scala.Double,
+    unmatched: scala.Double,
+    updated: scala.Double
+  ): Anon_Added = {
+    val __obj = js.Dynamic.literal(added = added, fileDeleted = fileDeleted, matched = matched, unchecked = unchecked, unmatched = unmatched, updated = updated)
+  
+    __obj.asInstanceOf[Anon_Added]
+  }
+}
+

@@ -11,3 +11,16 @@ trait FlattenTransform extends _Transform {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.flatten
 }
 
+object FlattenTransform {
+  @scala.inline
+  def apply(
+    fields: (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef,
+    `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.flatten,
+    as: js.Array[java.lang.String] = null
+  ): FlattenTransform = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], `type` = `type`)
+    if (as != null) __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[FlattenTransform]
+  }
+}
+

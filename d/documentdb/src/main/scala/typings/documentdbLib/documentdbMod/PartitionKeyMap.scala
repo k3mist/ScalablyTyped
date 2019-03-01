@@ -10,3 +10,12 @@ trait PartitionKeyMap extends js.Object {
   var range: Range
 }
 
+object PartitionKeyMap {
+  @scala.inline
+  def apply(link: java.lang.String, range: Range): PartitionKeyMap = {
+    val __obj = js.Dynamic.literal(link = link, range = range)
+  
+    __obj.asInstanceOf[PartitionKeyMap]
+  }
+}
+

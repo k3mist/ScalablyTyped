@@ -33,3 +33,20 @@ trait JobTaskAddLinkedAttachmentParams
   var user: java.lang.String
 }
 
+object JobTaskAddLinkedAttachmentParams {
+  @scala.inline
+  def apply(
+    attachmentType: scala.Double,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    jobId: scala.Double,
+    path: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    user: java.lang.String
+  ): JobTaskAddLinkedAttachmentParams = {
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, path = path, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
+    __obj.asInstanceOf[JobTaskAddLinkedAttachmentParams]
+  }
+}
+

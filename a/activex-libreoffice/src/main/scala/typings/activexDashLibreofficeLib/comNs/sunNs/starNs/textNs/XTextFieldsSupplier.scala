@@ -22,3 +22,20 @@ trait XTextFieldsSupplier
   def getTextFields(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess
 }
 
+object XTextFieldsSupplier {
+  @scala.inline
+  def apply(
+    TextFieldMasters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    TextFields: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    acquire: js.Function0[scala.Unit],
+    getTextFieldMasters: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getTextFields: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextFieldsSupplier = {
+    val __obj = js.Dynamic.literal(TextFieldMasters = TextFieldMasters, TextFields = TextFields, acquire = acquire, getTextFieldMasters = getTextFieldMasters, getTextFields = getTextFields, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XTextFieldsSupplier]
+  }
+}
+

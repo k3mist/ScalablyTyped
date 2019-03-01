@@ -13,3 +13,21 @@ trait FilterSettings extends ISettings {
   def loadFromJson(filterSettings: js.Any): scala.Unit
 }
 
+object FilterSettings {
+  @scala.inline
+  def apply(
+    CapturedFilter: js.Array[FilterClause],
+    DefaultFilters: js.Array[FilterClause],
+    Filters: js.Array[FilterClause],
+    fullReset: js.Function0[scala.Unit],
+    isSet: js.Function0[scala.Boolean],
+    loadFromJson: js.Function1[js.Any, scala.Unit],
+    reset: js.Function0[scala.Unit],
+    toString: js.Function0[java.lang.String]
+  ): FilterSettings = {
+    val __obj = js.Dynamic.literal(CapturedFilter = CapturedFilter, DefaultFilters = DefaultFilters, Filters = Filters, fullReset = fullReset, isSet = isSet, loadFromJson = loadFromJson, reset = reset, toString = toString)
+  
+    __obj.asInstanceOf[FilterSettings]
+  }
+}
+

@@ -18,3 +18,28 @@ trait ActivityLifecycleCallbacks extends js.Object {
   def onActivityStopped(activity: androiduixLib.androidNs.appNs.Activity): scala.Unit
 }
 
+object ActivityLifecycleCallbacks {
+  @scala.inline
+  def apply(
+    onActivityCreated: js.Function2[
+      androiduixLib.androidNs.appNs.Activity, 
+      androiduixLib.androidNs.osNs.Bundle, 
+      scala.Unit
+    ],
+    onActivityDestroyed: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
+    onActivityPaused: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
+    onActivityResumed: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
+    onActivitySaveInstanceState: js.Function2[
+      androiduixLib.androidNs.appNs.Activity, 
+      androiduixLib.androidNs.osNs.Bundle, 
+      scala.Unit
+    ],
+    onActivityStarted: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
+    onActivityStopped: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit]
+  ): ActivityLifecycleCallbacks = {
+    val __obj = js.Dynamic.literal(onActivityCreated = onActivityCreated, onActivityDestroyed = onActivityDestroyed, onActivityPaused = onActivityPaused, onActivityResumed = onActivityResumed, onActivitySaveInstanceState = onActivitySaveInstanceState, onActivityStarted = onActivityStarted, onActivityStopped = onActivityStopped)
+  
+    __obj.asInstanceOf[ActivityLifecycleCallbacks]
+  }
+}
+

@@ -35,3 +35,27 @@ trait IonRangeSliderEvent extends js.Object {
   var to_value: scala.Double
 }
 
+object IonRangeSliderEvent {
+  @scala.inline
+  def apply(
+    from: scala.Double,
+    from_percent: scala.Double,
+    from_pretty: java.lang.String,
+    from_value: scala.Double,
+    input: ionDashRangesliderLib.ionDashRangesliderMod.Global.JQuery,
+    max: scala.Double,
+    max_pretty: java.lang.String,
+    min: scala.Double,
+    min_pretty: java.lang.String,
+    slider: ionDashRangesliderLib.ionDashRangesliderMod.Global.JQuery,
+    to: scala.Double,
+    to_percent: scala.Double,
+    to_pretty: java.lang.String,
+    to_value: scala.Double
+  ): IonRangeSliderEvent = {
+    val __obj = js.Dynamic.literal(from = from, from_percent = from_percent, from_pretty = from_pretty, from_value = from_value, input = input, max = max, max_pretty = max_pretty, min = min, min_pretty = min_pretty, slider = slider, to = to, to_percent = to_percent, to_pretty = to_pretty, to_value = to_value)
+  
+    __obj.asInstanceOf[IonRangeSliderEvent]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_LoopVolume extends js.Object {
   var volume: scala.Double
 }
 
+object Anon_LoopVolume {
+  @scala.inline
+  def apply(loop: scala.Boolean, volume: scala.Double): Anon_LoopVolume = {
+    val __obj = js.Dynamic.literal(loop = loop, volume = volume)
+  
+    __obj.asInstanceOf[Anon_LoopVolume]
+  }
+}
+

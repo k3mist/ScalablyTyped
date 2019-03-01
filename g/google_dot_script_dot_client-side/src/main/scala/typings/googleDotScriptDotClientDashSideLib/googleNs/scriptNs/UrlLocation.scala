@@ -23,3 +23,16 @@ trait UrlLocation extends js.Object {
   var parameters: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 }
 
+object UrlLocation {
+  @scala.inline
+  def apply(
+    hash: java.lang.String,
+    parameter: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    parameters: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  ): UrlLocation = {
+    val __obj = js.Dynamic.literal(hash = hash, parameter = parameter, parameters = parameters)
+  
+    __obj.asInstanceOf[UrlLocation]
+  }
+}
+

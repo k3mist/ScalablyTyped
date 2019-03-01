@@ -11,3 +11,12 @@ trait WaypointsSplicedEvent extends js.Object {
   var nRemoved: scala.Double
 }
 
+object WaypointsSplicedEvent {
+  @scala.inline
+  def apply(added: js.Array[Waypoint], index: scala.Double, nRemoved: scala.Double): WaypointsSplicedEvent = {
+    val __obj = js.Dynamic.literal(added = added, index = index, nRemoved = nRemoved)
+  
+    __obj.asInstanceOf[WaypointsSplicedEvent]
+  }
+}
+

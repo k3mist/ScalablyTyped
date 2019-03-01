@@ -10,3 +10,12 @@ trait YPadding extends js.Object {
   var top: scala.Double
 }
 
+object YPadding {
+  @scala.inline
+  def apply(bottom: scala.Double, top: scala.Double): YPadding = {
+    val __obj = js.Dynamic.literal(bottom = bottom, top = top)
+  
+    __obj.asInstanceOf[YPadding]
+  }
+}
+

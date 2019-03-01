@@ -13,3 +13,18 @@ trait Minilog extends js.Object {
   def warn(msg: js.Any*): Minilog
 }
 
+object Minilog {
+  @scala.inline
+  def apply(
+    debug: js.Function1[/* repeated */ js.Any, Minilog],
+    error: js.Function1[/* repeated */ js.Any, Minilog],
+    info: js.Function1[/* repeated */ js.Any, Minilog],
+    log: js.Function1[/* repeated */ js.Any, Minilog],
+    warn: js.Function1[/* repeated */ js.Any, Minilog]
+  ): Minilog = {
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, log = log, warn = warn)
+  
+    __obj.asInstanceOf[Minilog]
+  }
+}
+

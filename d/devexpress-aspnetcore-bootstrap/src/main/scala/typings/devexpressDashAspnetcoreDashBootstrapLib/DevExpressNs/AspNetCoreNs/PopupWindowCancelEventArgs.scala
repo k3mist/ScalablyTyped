@@ -10,3 +10,17 @@ trait PopupWindowCancelEventArgs extends CancelEventArgs {
   val window: BootstrapPopupWindow
 }
 
+object PopupWindowCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    closeReason: BootstrapPopupControlCloseReason,
+    sender: Control,
+    window: BootstrapPopupWindow
+  ): PopupWindowCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, closeReason = closeReason, sender = sender, window = window)
+  
+    __obj.asInstanceOf[PopupWindowCancelEventArgs]
+  }
+}
+

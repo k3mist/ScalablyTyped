@@ -18,3 +18,18 @@ trait XLinguServiceEventListener
   def processLinguServiceEvent(aLngSvcEvent: LinguServiceEvent): scala.Unit
 }
 
+object XLinguServiceEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    processLinguServiceEvent: js.Function1[LinguServiceEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLinguServiceEventListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, processLinguServiceEvent = processLinguServiceEvent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLinguServiceEventListener]
+  }
+}
+

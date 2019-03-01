@@ -13,3 +13,12 @@ trait GeneralIdentifyResponse extends js.Object {
   var result_num: scala.Double
 }
 
+object GeneralIdentifyResponse {
+  @scala.inline
+  def apply(log_id: scala.Double, result: js.Array[baiduDashAppLib.Anon_Keyword], result_num: scala.Double): GeneralIdentifyResponse = {
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result, result_num = result_num)
+  
+    __obj.asInstanceOf[GeneralIdentifyResponse]
+  }
+}
+

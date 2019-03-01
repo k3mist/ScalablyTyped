@@ -10,3 +10,12 @@ trait FeatureLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object FeatureLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): FeatureLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[FeatureLayerLayerviewDestroyEvent]
+  }
+}
+

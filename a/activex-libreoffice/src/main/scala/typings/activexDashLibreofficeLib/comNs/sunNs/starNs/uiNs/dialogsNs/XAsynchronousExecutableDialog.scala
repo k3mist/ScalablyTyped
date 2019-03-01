@@ -20,3 +20,18 @@ trait XAsynchronousExecutableDialog
   def startExecuteModal(xListener: XDialogClosedListener): scala.Unit
 }
 
+object XAsynchronousExecutableDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDialogTitle: js.Function1[java.lang.String, scala.Unit],
+    startExecuteModal: js.Function1[XDialogClosedListener, scala.Unit]
+  ): XAsynchronousExecutableDialog = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setDialogTitle = setDialogTitle, startExecuteModal = startExecuteModal)
+  
+    __obj.asInstanceOf[XAsynchronousExecutableDialog]
+  }
+}
+

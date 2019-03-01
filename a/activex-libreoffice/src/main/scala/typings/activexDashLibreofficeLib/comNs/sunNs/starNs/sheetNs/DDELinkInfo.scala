@@ -25,3 +25,16 @@ trait DDELinkInfo extends js.Object {
   var Topic: java.lang.String
 }
 
+object DDELinkInfo {
+  @scala.inline
+  def apply(
+    Items: activexDashInteropLib.SafeArray[DDEItemInfo],
+    Service: java.lang.String,
+    Topic: java.lang.String
+  ): DDELinkInfo = {
+    val __obj = js.Dynamic.literal(Items = Items, Service = Service, Topic = Topic)
+  
+    __obj.asInstanceOf[DDELinkInfo]
+  }
+}
+

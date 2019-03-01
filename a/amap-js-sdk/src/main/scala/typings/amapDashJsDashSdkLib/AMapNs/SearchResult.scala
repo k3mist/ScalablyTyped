@@ -12,3 +12,17 @@ trait SearchResult extends js.Object {
   var poiList: PoiList
 }
 
+object SearchResult {
+  @scala.inline
+  def apply(
+    cityList: js.Array[CityInfo],
+    info: java.lang.String,
+    keywordList: js.Array[java.lang.String],
+    poiList: PoiList
+  ): SearchResult = {
+    val __obj = js.Dynamic.literal(cityList = cityList, info = info, keywordList = keywordList, poiList = poiList)
+  
+    __obj.asInstanceOf[SearchResult]
+  }
+}
+

@@ -136,3 +136,38 @@ trait XDictionary
   def setLocale(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Unit
 }
 
+object XDictionary {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    DictionaryType: DictionaryType,
+    Entries: activexDashInteropLib.SafeArray[XDictionaryEntry],
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    add: js.Function3[java.lang.String, scala.Boolean, java.lang.String, scala.Boolean],
+    addDictionaryEventListener: js.Function1[XDictionaryEventListener, scala.Boolean],
+    addEntry: js.Function1[XDictionaryEntry, scala.Boolean],
+    clear: js.Function0[scala.Unit],
+    getCount: js.Function0[scala.Double],
+    getDictionaryType: js.Function0[DictionaryType],
+    getEntries: js.Function0[activexDashInteropLib.SafeArray[XDictionaryEntry]],
+    getEntry: js.Function1[java.lang.String, XDictionaryEntry],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getName: js.Function0[java.lang.String],
+    isActive: js.Function0[scala.Boolean],
+    isFull: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[java.lang.String, scala.Boolean],
+    removeDictionaryEventListener: js.Function1[XDictionaryEventListener, scala.Boolean],
+    setActive: js.Function1[scala.Boolean, scala.Unit],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit]
+  ): XDictionary = {
+    val __obj = js.Dynamic.literal(Count = Count, DictionaryType = DictionaryType, Entries = Entries, Locale = Locale, Name = Name, acquire = acquire, add = add, addDictionaryEventListener = addDictionaryEventListener, addEntry = addEntry, clear = clear, getCount = getCount, getDictionaryType = getDictionaryType, getEntries = getEntries, getEntry = getEntry, getLocale = getLocale, getName = getName, isActive = isActive, isFull = isFull, queryInterface = queryInterface, release = release, remove = remove, removeDictionaryEventListener = removeDictionaryEventListener, setActive = setActive, setLocale = setLocale, setName = setName)
+  
+    __obj.asInstanceOf[XDictionary]
+  }
+}
+

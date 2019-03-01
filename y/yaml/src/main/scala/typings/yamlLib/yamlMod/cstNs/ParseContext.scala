@@ -22,3 +22,20 @@ trait ParseContext extends js.Object {
   var src: java.lang.String
 }
 
+object ParseContext {
+  @scala.inline
+  def apply(
+    atLineStart: scala.Boolean,
+    inCollection: scala.Boolean,
+    inFlow: scala.Boolean,
+    indent: scala.Double,
+    lineStart: scala.Double,
+    parent: Node,
+    src: java.lang.String
+  ): ParseContext = {
+    val __obj = js.Dynamic.literal(atLineStart = atLineStart, inCollection = inCollection, inFlow = inFlow, indent = indent, lineStart = lineStart, parent = parent, src = src)
+  
+    __obj.asInstanceOf[ParseContext]
+  }
+}
+

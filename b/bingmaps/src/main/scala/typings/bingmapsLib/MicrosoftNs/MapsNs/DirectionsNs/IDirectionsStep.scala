@@ -38,3 +38,28 @@ trait IDirectionsStep extends js.Object {
   var warnings: js.Array[IDirectionsStepWarning]
 }
 
+object IDirectionsStep {
+  @scala.inline
+  def apply(
+    childItineraryItems: js.Array[IDirectionsStep],
+    coordinate: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    distance: java.lang.String,
+    durationInSeconds: scala.Double,
+    formattedText: java.lang.String,
+    isImageRoadShield: scala.Boolean,
+    maneuver: java.lang.String,
+    postIntersectionHints: js.Array[java.lang.String],
+    preIntersectionHints: js.Array[java.lang.String],
+    startStopName: java.lang.String,
+    transitLine: ITransitLine,
+    transitStepIcon: java.lang.String,
+    transitStopId: java.lang.String,
+    transitTerminus: java.lang.String,
+    warnings: js.Array[IDirectionsStepWarning]
+  ): IDirectionsStep = {
+    val __obj = js.Dynamic.literal(childItineraryItems = childItineraryItems, coordinate = coordinate, distance = distance, durationInSeconds = durationInSeconds, formattedText = formattedText, isImageRoadShield = isImageRoadShield, maneuver = maneuver, postIntersectionHints = postIntersectionHints, preIntersectionHints = preIntersectionHints, startStopName = startStopName, transitLine = transitLine, transitStepIcon = transitStepIcon, transitStopId = transitStopId, transitTerminus = transitTerminus, warnings = warnings)
+  
+    __obj.asInstanceOf[IDirectionsStep]
+  }
+}
+

@@ -20,3 +20,12 @@ trait UserRoleAssignmentRef extends js.Object {
   var userId: java.lang.String
 }
 
+object UserRoleAssignmentRef {
+  @scala.inline
+  def apply(roleName: java.lang.String, uniqueName: java.lang.String, userId: java.lang.String): UserRoleAssignmentRef = {
+    val __obj = js.Dynamic.literal(roleName = roleName, uniqueName = uniqueName, userId = userId)
+  
+    __obj.asInstanceOf[UserRoleAssignmentRef]
+  }
+}
+

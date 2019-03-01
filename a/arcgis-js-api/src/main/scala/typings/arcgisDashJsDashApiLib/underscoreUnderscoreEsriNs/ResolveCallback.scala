@@ -15,3 +15,17 @@ trait ResolveCallback
   var value: js.UndefOr[js.Any | arcgisDashJsDashApiLib.IPromise[_]] = js.undefined
 }
 
+object ResolveCallback {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    value: js.Any | arcgisDashJsDashApiLib.IPromise[_] = null
+  ): ResolveCallback = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResolveCallback]
+  }
+}
+

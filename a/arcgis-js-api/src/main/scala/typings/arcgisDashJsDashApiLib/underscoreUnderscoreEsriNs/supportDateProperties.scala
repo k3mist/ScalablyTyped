@@ -22,3 +22,13 @@ trait supportDateProperties extends js.Object {
   var format: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object supportDateProperties {
+  @scala.inline
+  def apply(date: DateProperties = null, format: java.lang.String = null): supportDateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[supportDateProperties]
+  }
+}
+

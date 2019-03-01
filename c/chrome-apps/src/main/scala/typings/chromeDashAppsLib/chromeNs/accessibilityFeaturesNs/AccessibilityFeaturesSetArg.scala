@@ -21,3 +21,12 @@ trait AccessibilityFeaturesSetArg extends js.Object {
   var value: js.Any
 }
 
+object AccessibilityFeaturesSetArg {
+  @scala.inline
+  def apply(value: js.Any, scope: Scope = null): AccessibilityFeaturesSetArg = {
+    val __obj = js.Dynamic.literal(value = value)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[AccessibilityFeaturesSetArg]
+  }
+}
+

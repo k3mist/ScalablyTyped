@@ -13,3 +13,19 @@ trait RequestDetails extends js.Object {
   var proxy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestDetails {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    headers: Headers,
+    method: webDashPushLib.webDashPushLibStrings.POST,
+    body: nodeLib.Buffer = null,
+    proxy: java.lang.String = null
+  ): RequestDetails = {
+    val __obj = js.Dynamic.literal(endpoint = endpoint, headers = headers, method = method)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    __obj.asInstanceOf[RequestDetails]
+  }
+}
+

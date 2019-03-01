@@ -53,3 +53,26 @@ trait Anon_CLIENTERROR extends js.Object {
   var UNEXPECTED_ELEMENT: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
 }
 
+object Anon_CLIENTERROR {
+  @scala.inline
+  def apply(
+    CLIENT_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    CONCURRENT_CREATION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    FATAL_NETWORK_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    FORBIDDEN: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_COMPOUND_OPERATION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_ELEMENT_TYPE: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_JSON_SYNTAX: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    MISSING_PROPERTY: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    NOT_FOUND: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    NO_WRITE_PERMISSION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    SERVER_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    TOKEN_REFRESH_REQUIRED: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    UNEXPECTED_ELEMENT: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
+  ): Anon_CLIENTERROR = {
+    val __obj = js.Dynamic.literal(CLIENT_ERROR = CLIENT_ERROR, CONCURRENT_CREATION = CONCURRENT_CREATION, FATAL_NETWORK_ERROR = FATAL_NETWORK_ERROR, FORBIDDEN = FORBIDDEN, INVALID_COMPOUND_OPERATION = INVALID_COMPOUND_OPERATION, INVALID_ELEMENT_TYPE = INVALID_ELEMENT_TYPE, INVALID_JSON_SYNTAX = INVALID_JSON_SYNTAX, MISSING_PROPERTY = MISSING_PROPERTY, NOT_FOUND = NOT_FOUND, NO_WRITE_PERMISSION = NO_WRITE_PERMISSION, SERVER_ERROR = SERVER_ERROR, TOKEN_REFRESH_REQUIRED = TOKEN_REFRESH_REQUIRED, UNEXPECTED_ELEMENT = UNEXPECTED_ELEMENT)
+  
+    __obj.asInstanceOf[Anon_CLIENTERROR]
+  }
+}
+

@@ -37,3 +37,42 @@ trait Person extends js.Object {
   var verified: scala.Boolean
 }
 
+object Person {
+  @scala.inline
+  def apply(
+    aboutMe: java.lang.String,
+    ageRange: gapiDotPlusLib.Anon_Max,
+    birthday: java.lang.String,
+    braggingRights: java.lang.String,
+    circledByCount: scala.Double,
+    cover: gapiDotPlusLib.Anon_CoverInfo,
+    displayName: java.lang.String,
+    domain: java.lang.String,
+    emails: js.Array[gapiDotPlusLib.Anon_Type],
+    etag: java.lang.String,
+    gender: java.lang.String,
+    id: java.lang.String,
+    image: gapiDotPlusLib.Anon_Url,
+    isPlusUser: scala.Boolean,
+    kind: gapiDotPlusLib.gapiDotPlusLibStrings.`plus#person`,
+    language: java.lang.String,
+    name: gapiDotPlusLib.Anon_FamilyName,
+    nickname: java.lang.String,
+    objectType: java.lang.String,
+    occupation: java.lang.String,
+    organizations: js.Array[gapiDotPlusLib.Anon_Department],
+    placesLived: js.Array[gapiDotPlusLib.Anon_Primary],
+    plusOneCount: scala.Double,
+    relationshipStatus: java.lang.String,
+    skills: java.lang.String,
+    tagline: java.lang.String,
+    url: java.lang.String,
+    urls: js.Array[gapiDotPlusLib.Anon_Label],
+    verified: scala.Boolean
+  ): Person = {
+    val __obj = js.Dynamic.literal(aboutMe = aboutMe, ageRange = ageRange, birthday = birthday, braggingRights = braggingRights, circledByCount = circledByCount, cover = cover, displayName = displayName, domain = domain, emails = emails, etag = etag, gender = gender, id = id, image = image, isPlusUser = isPlusUser, kind = kind, language = language, name = name, nickname = nickname, objectType = objectType, occupation = occupation, organizations = organizations, placesLived = placesLived, plusOneCount = plusOneCount, relationshipStatus = relationshipStatus, skills = skills, tagline = tagline, url = url, urls = urls, verified = verified)
+  
+    __obj.asInstanceOf[Person]
+  }
+}
+

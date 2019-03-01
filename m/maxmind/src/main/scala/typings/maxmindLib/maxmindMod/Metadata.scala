@@ -20,3 +20,25 @@ trait Metadata extends js.Object {
   val treeDepth: scala.Double
 }
 
+object Metadata {
+  @scala.inline
+  def apply(
+    binaryFormatMajorVersion: scala.Double,
+    binaryFormatMinorVersion: scala.Double,
+    buildEpoch: stdLib.Date,
+    databaseType: java.lang.String,
+    description: js.Any,
+    ipVersion: scala.Double,
+    languages: js.Array[java.lang.String],
+    nodeByteSize: scala.Double,
+    nodeCount: scala.Double,
+    recordSize: scala.Double,
+    searchTreeSize: scala.Double,
+    treeDepth: scala.Double
+  ): Metadata = {
+    val __obj = js.Dynamic.literal(binaryFormatMajorVersion = binaryFormatMajorVersion, binaryFormatMinorVersion = binaryFormatMinorVersion, buildEpoch = buildEpoch, databaseType = databaseType, description = description, ipVersion = ipVersion, languages = languages, nodeByteSize = nodeByteSize, nodeCount = nodeCount, recordSize = recordSize, searchTreeSize = searchTreeSize, treeDepth = treeDepth)
+  
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

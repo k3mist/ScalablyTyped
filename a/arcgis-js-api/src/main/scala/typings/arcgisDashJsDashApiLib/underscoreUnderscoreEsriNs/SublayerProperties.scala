@@ -115,3 +115,44 @@ trait SublayerProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SublayerProperties {
+  @scala.inline
+  def apply(
+    definitionExpression: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    labelingInfo: js.Array[LabelClassProperties] = null,
+    labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    layer: MapImageLayerProperties | TileLayerProperties = null,
+    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxScale: scala.Int | scala.Double = null,
+    minScale: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplateProperties = null,
+    renderer: RendererProperties = null,
+    source: DynamicMapLayer | DynamicDataLayer = null,
+    sublayers: CollectionProperties[SublayerProperties] = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
+    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SublayerProperties]
+  }
+}
+

@@ -11,3 +11,16 @@ trait AttributeFilterOperator[D] extends js.Object {
   var value: js.Any
 }
 
+object AttributeFilterOperator {
+  @scala.inline
+  def apply[D](
+    attribute: java.lang.String,
+    op: atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator,
+    value: js.Any
+  ): AttributeFilterOperator[D] = {
+    val __obj = js.Dynamic.literal(attribute = attribute, op = op, value = value)
+  
+    __obj.asInstanceOf[AttributeFilterOperator[D]]
+  }
+}
+

@@ -64,3 +64,19 @@ trait Anon_Cpu extends js.Object {
   val storageNs: Anon_CallbackEjectDevice
 }
 
+object Anon_Cpu {
+  @scala.inline
+  def apply(
+    cpuNs: Anon_CallbackGetInfo,
+    displayNs: Anon_Bounds,
+    memoryNs: Anon_CallbackGetInfoInfo,
+    networkNs: Anon_CallbackGetNetworkInterfaces,
+    powerSourceNs: Anon_CallbackGetPowerSourceInfo,
+    storageNs: Anon_CallbackEjectDevice
+  ): Anon_Cpu = {
+    val __obj = js.Dynamic.literal(cpuNs = cpuNs, displayNs = displayNs, memoryNs = memoryNs, networkNs = networkNs, powerSourceNs = powerSourceNs, storageNs = storageNs)
+  
+    __obj.asInstanceOf[Anon_Cpu]
+  }
+}
+

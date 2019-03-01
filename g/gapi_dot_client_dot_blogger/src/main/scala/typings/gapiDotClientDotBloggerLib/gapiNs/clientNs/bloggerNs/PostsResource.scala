@@ -28,3 +28,53 @@ trait PostsResource extends js.Object {
   def update(request: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields): gapiDotClientLib.gapiNs.clientNs.Request[Post]
 }
 
+object PostsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBody, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    getByPath: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyMaxCommentsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImages, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFetchImages, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    publish: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    search: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodiesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ]
+  ): PostsResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, getByPath = getByPath, insert = insert, list = list, patch = patch, publish = publish, revert = revert, search = search, update = update)
+  
+    __obj.asInstanceOf[PostsResource]
+  }
+}
+

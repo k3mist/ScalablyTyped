@@ -16,3 +16,12 @@ trait MapExportSizeModeStatic extends js.Object {
   var Zoom: java.lang.String
 }
 
+object MapExportSizeModeStatic {
+  @scala.inline
+  def apply(None: java.lang.String, Zoom: java.lang.String): MapExportSizeModeStatic = {
+    val __obj = js.Dynamic.literal(None = None, Zoom = Zoom)
+  
+    __obj.asInstanceOf[MapExportSizeModeStatic]
+  }
+}
+

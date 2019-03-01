@@ -13,3 +13,18 @@ trait DetailedArguments extends js.Object {
   var newAliases: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 
+object DetailedArguments {
+  @scala.inline
+  def apply(
+    aliases: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
+    argv: Arguments,
+    configuration: Configuration,
+    newAliases: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    error: stdLib.Error = null
+  ): DetailedArguments = {
+    val __obj = js.Dynamic.literal(aliases = aliases, argv = argv, configuration = configuration, newAliases = newAliases)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[DetailedArguments]
+  }
+}
+

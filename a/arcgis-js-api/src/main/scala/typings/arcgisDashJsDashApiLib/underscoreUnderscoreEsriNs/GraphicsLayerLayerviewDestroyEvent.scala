@@ -10,3 +10,12 @@ trait GraphicsLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object GraphicsLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): GraphicsLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[GraphicsLayerLayerviewDestroyEvent]
+  }
+}
+

@@ -42,3 +42,47 @@ trait Anon_SIGABRT extends js.Object {
   var SIGXFSZ: scala.Double
 }
 
+object Anon_SIGABRT {
+  @scala.inline
+  def apply(
+    SIGABRT: scala.Double,
+    SIGALRM: scala.Double,
+    SIGBUS: scala.Double,
+    SIGCHLD: scala.Double,
+    SIGCONT: scala.Double,
+    SIGFPE: scala.Double,
+    SIGHUP: scala.Double,
+    SIGILL: scala.Double,
+    SIGINT: scala.Double,
+    SIGIO: scala.Double,
+    SIGIOT: scala.Double,
+    SIGKILL: scala.Double,
+    SIGPIPE: scala.Double,
+    SIGPOLL: scala.Double,
+    SIGPROF: scala.Double,
+    SIGPWR: scala.Double,
+    SIGQUIT: scala.Double,
+    SIGSEGV: scala.Double,
+    SIGSTKFLT: scala.Double,
+    SIGSTOP: scala.Double,
+    SIGSYS: scala.Double,
+    SIGTERM: scala.Double,
+    SIGTRAP: scala.Double,
+    SIGTSTP: scala.Double,
+    SIGTTIN: scala.Double,
+    SIGTTOU: scala.Double,
+    SIGUNUSED: scala.Double,
+    SIGURG: scala.Double,
+    SIGUSR1: scala.Double,
+    SIGUSR2: scala.Double,
+    SIGVTALRM: scala.Double,
+    SIGWINCH: scala.Double,
+    SIGXCPU: scala.Double,
+    SIGXFSZ: scala.Double
+  ): Anon_SIGABRT = {
+    val __obj = js.Dynamic.literal(SIGABRT = SIGABRT, SIGALRM = SIGALRM, SIGBUS = SIGBUS, SIGCHLD = SIGCHLD, SIGCONT = SIGCONT, SIGFPE = SIGFPE, SIGHUP = SIGHUP, SIGILL = SIGILL, SIGINT = SIGINT, SIGIO = SIGIO, SIGIOT = SIGIOT, SIGKILL = SIGKILL, SIGPIPE = SIGPIPE, SIGPOLL = SIGPOLL, SIGPROF = SIGPROF, SIGPWR = SIGPWR, SIGQUIT = SIGQUIT, SIGSEGV = SIGSEGV, SIGSTKFLT = SIGSTKFLT, SIGSTOP = SIGSTOP, SIGSYS = SIGSYS, SIGTERM = SIGTERM, SIGTRAP = SIGTRAP, SIGTSTP = SIGTSTP, SIGTTIN = SIGTTIN, SIGTTOU = SIGTTOU, SIGUNUSED = SIGUNUSED, SIGURG = SIGURG, SIGUSR1 = SIGUSR1, SIGUSR2 = SIGUSR2, SIGVTALRM = SIGVTALRM, SIGWINCH = SIGWINCH, SIGXCPU = SIGXCPU, SIGXFSZ = SIGXFSZ)
+  
+    __obj.asInstanceOf[Anon_SIGABRT]
+  }
+}
+

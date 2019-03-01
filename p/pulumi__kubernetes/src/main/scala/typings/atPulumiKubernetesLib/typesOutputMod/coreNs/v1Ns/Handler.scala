@@ -23,3 +23,12 @@ trait Handler extends js.Object {
   val tcpSocket: TCPSocketAction
 }
 
+object Handler {
+  @scala.inline
+  def apply(exec: ExecAction, httpGet: HTTPGetAction, tcpSocket: TCPSocketAction): Handler = {
+    val __obj = js.Dynamic.literal(exec = exec, httpGet = httpGet, tcpSocket = tcpSocket)
+  
+    __obj.asInstanceOf[Handler]
+  }
+}
+

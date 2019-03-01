@@ -45,3 +45,18 @@ trait FileWriterSync extends js.Object {
   def write(data: stdLib.Blob): scala.Unit
 }
 
+object FileWriterSync {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    position: scala.Double,
+    seek: js.Function1[scala.Double, scala.Unit],
+    truncate: js.Function1[scala.Double, scala.Unit],
+    write: js.Function1[stdLib.Blob, scala.Unit]
+  ): FileWriterSync = {
+    val __obj = js.Dynamic.literal(length = length, position = position, seek = seek, truncate = truncate, write = write)
+  
+    __obj.asInstanceOf[FileWriterSync]
+  }
+}
+

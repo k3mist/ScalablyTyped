@@ -10,3 +10,12 @@ trait IBUDDY_ERROR extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object IBUDDY_ERROR {
+  @scala.inline
+  def apply(errorCode: scala.Double, errorMessage: java.lang.String): IBUDDY_ERROR = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage)
+  
+    __obj.asInstanceOf[IBUDDY_ERROR]
+  }
+}
+

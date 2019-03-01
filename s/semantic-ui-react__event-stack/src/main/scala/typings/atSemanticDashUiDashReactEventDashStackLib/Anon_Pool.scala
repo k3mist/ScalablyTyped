@@ -10,3 +10,12 @@ trait Anon_Pool extends js.Object {
   var target: java.lang.String
 }
 
+object Anon_Pool {
+  @scala.inline
+  def apply(pool: java.lang.String, target: java.lang.String): Anon_Pool = {
+    val __obj = js.Dynamic.literal(pool = pool, target = target)
+  
+    __obj.asInstanceOf[Anon_Pool]
+  }
+}
+

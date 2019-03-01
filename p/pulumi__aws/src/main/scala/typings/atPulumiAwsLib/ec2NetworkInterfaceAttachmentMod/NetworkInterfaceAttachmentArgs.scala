@@ -20,3 +20,16 @@ trait NetworkInterfaceAttachmentArgs extends js.Object {
   val networkInterfaceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object NetworkInterfaceAttachmentArgs {
+  @scala.inline
+  def apply(
+    deviceIndex: atPulumiPulumiLib.resourceMod.Input[scala.Double],
+    instanceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    networkInterfaceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): NetworkInterfaceAttachmentArgs = {
+    val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[NetworkInterfaceAttachmentArgs]
+  }
+}
+

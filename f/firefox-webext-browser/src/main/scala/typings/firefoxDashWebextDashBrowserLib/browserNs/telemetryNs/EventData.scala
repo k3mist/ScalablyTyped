@@ -21,3 +21,19 @@ trait EventData extends js.Object {
   var record_on_release: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EventData {
+  @scala.inline
+  def apply(
+    extra_keys: js.Array[java.lang.String],
+    methods: js.Array[java.lang.String],
+    objects: js.Array[java.lang.String],
+    expired: js.UndefOr[scala.Boolean] = js.undefined,
+    record_on_release: js.UndefOr[scala.Boolean] = js.undefined
+  ): EventData = {
+    val __obj = js.Dynamic.literal(extra_keys = extra_keys, methods = methods, objects = objects)
+    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired)
+    if (!js.isUndefined(record_on_release)) __obj.updateDynamic("record_on_release")(record_on_release)
+    __obj.asInstanceOf[EventData]
+  }
+}
+

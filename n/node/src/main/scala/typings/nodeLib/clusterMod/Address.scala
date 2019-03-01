@@ -11,3 +11,16 @@ trait Address extends js.Object {
   var port: scala.Double
 }
 
+object Address {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    addressType: scala.Double | nodeLib.nodeLibStrings.udp4 | nodeLib.nodeLibStrings.udp6,
+    port: scala.Double
+  ): Address = {
+    val __obj = js.Dynamic.literal(address = address, addressType = addressType.asInstanceOf[js.Any], port = port)
+  
+    __obj.asInstanceOf[Address]
+  }
+}
+

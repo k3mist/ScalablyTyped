@@ -18,3 +18,15 @@ trait SplitTableCellsCommand extends CommandWithSimpleStateBase {
   def execute(rowCount: scala.Double, columnCount: scala.Double, mergeBeforeSplit: scala.Boolean): scala.Boolean
 }
 
+object SplitTableCellsCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): SplitTableCellsCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[SplitTableCellsCommand]
+  }
+}
+

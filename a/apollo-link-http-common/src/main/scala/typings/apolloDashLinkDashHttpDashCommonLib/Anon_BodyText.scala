@@ -11,3 +11,12 @@ trait Anon_BodyText extends js.Object {
   var statusCode: scala.Double
 }
 
+object Anon_BodyText {
+  @scala.inline
+  def apply(bodyText: java.lang.String, response: stdLib.Response, statusCode: scala.Double): Anon_BodyText = {
+    val __obj = js.Dynamic.literal(bodyText = bodyText, response = response, statusCode = statusCode)
+  
+    __obj.asInstanceOf[Anon_BodyText]
+  }
+}
+

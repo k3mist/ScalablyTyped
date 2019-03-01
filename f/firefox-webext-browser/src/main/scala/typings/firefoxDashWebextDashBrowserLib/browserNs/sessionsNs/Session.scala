@@ -16,3 +16,17 @@ trait Session extends js.Object {
   var window: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.windowsNs.Window] = js.undefined
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    lastModified: scala.Double,
+    tab: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab = null,
+    window: firefoxDashWebextDashBrowserLib.browserNs.windowsNs.Window = null
+  ): Session = {
+    val __obj = js.Dynamic.literal(lastModified = lastModified)
+    if (tab != null) __obj.updateDynamic("tab")(tab)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Session]
+  }
+}
+

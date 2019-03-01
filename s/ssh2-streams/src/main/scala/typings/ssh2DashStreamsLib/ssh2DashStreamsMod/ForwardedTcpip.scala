@@ -12,3 +12,17 @@ trait ForwardedTcpip extends js.Object {
   var remotePort: scala.Double
 }
 
+object ForwardedTcpip {
+  @scala.inline
+  def apply(
+    bindAddr: java.lang.String,
+    bindPort: scala.Double,
+    remoteAddr: java.lang.String,
+    remotePort: scala.Double
+  ): ForwardedTcpip = {
+    val __obj = js.Dynamic.literal(bindAddr = bindAddr, bindPort = bindPort, remoteAddr = remoteAddr, remotePort = remotePort)
+  
+    __obj.asInstanceOf[ForwardedTcpip]
+  }
+}
+

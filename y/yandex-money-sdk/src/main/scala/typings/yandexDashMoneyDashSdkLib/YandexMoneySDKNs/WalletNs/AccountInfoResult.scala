@@ -16,3 +16,23 @@ trait AccountInfoResult extends js.Object {
   var currency: java.lang.String
 }
 
+object AccountInfoResult {
+  @scala.inline
+  def apply(
+    account: java.lang.String,
+    account_status: java.lang.String,
+    account_type: java.lang.String,
+    balance: scala.Double,
+    currency: java.lang.String,
+    avatar: yandexDashMoneyDashSdkLib.Anon_Ts = null,
+    balance_details: yandexDashMoneyDashSdkLib.Anon_Available = null,
+    cards_linked: js.Array[yandexDashMoneyDashSdkLib.Anon_Panfragment] = null
+  ): AccountInfoResult = {
+    val __obj = js.Dynamic.literal(account = account, account_status = account_status, account_type = account_type, balance = balance, currency = currency)
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
+    if (balance_details != null) __obj.updateDynamic("balance_details")(balance_details)
+    if (cards_linked != null) __obj.updateDynamic("cards_linked")(cards_linked)
+    __obj.asInstanceOf[AccountInfoResult]
+  }
+}
+

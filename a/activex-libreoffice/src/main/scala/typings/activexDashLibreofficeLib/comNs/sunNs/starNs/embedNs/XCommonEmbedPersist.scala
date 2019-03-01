@@ -38,3 +38,23 @@ trait XCommonEmbedPersist
   def storeOwn(): scala.Unit
 }
 
+object XCommonEmbedPersist {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    isReadonly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeOwn: js.Function0[scala.Unit]
+  ): XCommonEmbedPersist = {
+    val __obj = js.Dynamic.literal(acquire = acquire, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, storeOwn = storeOwn)
+  
+    __obj.asInstanceOf[XCommonEmbedPersist]
+  }
+}
+

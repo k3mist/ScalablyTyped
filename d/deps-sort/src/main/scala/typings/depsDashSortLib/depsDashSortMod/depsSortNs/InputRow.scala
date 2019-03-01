@@ -23,3 +23,12 @@ trait InputRow extends js.Object {
   var source: java.lang.String
 }
 
+object InputRow {
+  @scala.inline
+  def apply(deps: js.Array[java.lang.String], id: java.lang.String, source: java.lang.String): InputRow = {
+    val __obj = js.Dynamic.literal(deps = deps, id = id, source = source)
+  
+    __obj.asInstanceOf[InputRow]
+  }
+}
+

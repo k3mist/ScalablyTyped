@@ -44,3 +44,37 @@ trait XSheetCellCursor extends XSheetCellRange {
   def expandToEntireRows(): scala.Unit
 }
 
+object XSheetCellCursor {
+  @scala.inline
+  def apply(
+    Spreadsheet: XSpreadsheet,
+    acquire: js.Function0[scala.Unit],
+    collapseToCurrentArray: js.Function0[scala.Unit],
+    collapseToCurrentRegion: js.Function0[scala.Unit],
+    collapseToMergedArea: js.Function0[scala.Unit],
+    collapseToSize: js.Function2[scala.Double, scala.Double, scala.Unit],
+    expandToEntireColumns: js.Function0[scala.Unit],
+    expandToEntireRows: js.Function0[scala.Unit],
+    getCellByPosition: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
+    ],
+    getCellRangeByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
+    getCellRangeByPosition: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
+    ],
+    getSpreadsheet: js.Function0[XSpreadsheet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetCellCursor = {
+    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = acquire, collapseToCurrentArray = collapseToCurrentArray, collapseToCurrentRegion = collapseToCurrentRegion, collapseToMergedArea = collapseToMergedArea, collapseToSize = collapseToSize, expandToEntireColumns = expandToEntireColumns, expandToEntireRows = expandToEntireRows, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getSpreadsheet = getSpreadsheet, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSheetCellCursor]
+  }
+}
+

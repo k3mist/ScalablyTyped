@@ -30,3 +30,36 @@ trait XXMLSignatureTemplate extends XXMLSecurityTemplate {
   def setBinding(aUriBinding: XUriBinding): scala.Unit
 }
 
+object XXMLSignatureTemplate {
+  @scala.inline
+  def apply(
+    Binding: XUriBinding,
+    Status: SecurityOperationStatus,
+    Targets: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    Template: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    acquire: js.Function0[scala.Unit],
+    getBinding: js.Function0[XUriBinding],
+    getStatus: js.Function0[SecurityOperationStatus],
+    getTargets: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper]
+    ],
+    getTemplate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setBinding: js.Function1[XUriBinding, scala.Unit],
+    setStatus: js.Function1[SecurityOperationStatus, scala.Unit],
+    setTarget: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
+      scala.Unit
+    ],
+    setTemplate: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
+      scala.Unit
+    ]
+  ): XXMLSignatureTemplate = {
+    val __obj = js.Dynamic.literal(Binding = Binding, Status = Status, Targets = Targets, Template = Template, acquire = acquire, getBinding = getBinding, getStatus = getStatus, getTargets = getTargets, getTemplate = getTemplate, queryInterface = queryInterface, release = release, setBinding = setBinding, setStatus = setStatus, setTarget = setTarget, setTemplate = setTemplate)
+  
+    __obj.asInstanceOf[XXMLSignatureTemplate]
+  }
+}
+

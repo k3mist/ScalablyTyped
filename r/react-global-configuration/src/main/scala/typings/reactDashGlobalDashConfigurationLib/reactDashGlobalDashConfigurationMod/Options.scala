@@ -10,3 +10,12 @@ trait Options extends js.Object {
   var freeze: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(assign: scala.Boolean, freeze: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal(assign = assign, freeze = freeze)
+  
+    __obj.asInstanceOf[Options]
+  }
+}
+

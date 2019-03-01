@@ -14,3 +14,19 @@ trait LexDialogActionConfirmIntent
   var type_LexDialogActionConfirmIntent: awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent
 }
 
+object LexDialogActionConfirmIntent {
+  @scala.inline
+  def apply(
+    intentName: java.lang.String,
+    slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent,
+    message: awsDashLambdaLib.Anon_Content = null,
+    responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
+  ): LexDialogActionConfirmIntent = {
+    val __obj = js.Dynamic.literal(intentName = intentName, slots = slots, `type` = `type`)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.asInstanceOf[LexDialogActionConfirmIntent]
+  }
+}
+

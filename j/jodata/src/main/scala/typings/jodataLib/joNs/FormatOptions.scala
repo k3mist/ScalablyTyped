@@ -12,3 +12,17 @@ trait FormatOptions extends js.Object {
   def xml(): jodataLib.jo
 }
 
+object FormatOptions {
+  @scala.inline
+  def apply(
+    atom: js.Function0[jodataLib.jo],
+    custom: js.Function1[java.lang.String, jodataLib.jo],
+    json: js.Function0[jodataLib.jo],
+    xml: js.Function0[jodataLib.jo]
+  ): FormatOptions = {
+    val __obj = js.Dynamic.literal(atom = atom, custom = custom, json = json, xml = xml)
+  
+    __obj.asInstanceOf[FormatOptions]
+  }
+}
+

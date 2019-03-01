@@ -17,3 +17,32 @@ trait SchemaParser
      with activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XActiveDataSink
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XInitialization
 
+object SchemaParser {
+  @scala.inline
+  def apply(
+    InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getInputStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readComponent: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.XSchemaHandler, 
+      scala.Unit
+    ],
+    readSchema: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.XSchemaHandler, 
+      scala.Unit
+    ],
+    readTemplates: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.XSchemaHandler, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    setInputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
+  ): SchemaParser = {
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, getInputStream = getInputStream, initialize = initialize, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release, setInputStream = setInputStream)
+  
+    __obj.asInstanceOf[SchemaParser]
+  }
+}
+

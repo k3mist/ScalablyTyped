@@ -38,3 +38,28 @@ trait BasemapGalleryProperties extends WidgetProperties {
   var viewModel: js.UndefOr[BasemapGalleryViewModelProperties] = js.undefined
 }
 
+object BasemapGalleryProperties {
+  @scala.inline
+  def apply(
+    activeBasemap: BasemapProperties = null,
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
+    id: java.lang.String = null,
+    source: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: BasemapGalleryViewModelProperties = null
+  ): BasemapGalleryProperties = {
+    val __obj = js.Dynamic.literal()
+    if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[BasemapGalleryProperties]
+  }
+}
+

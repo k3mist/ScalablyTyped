@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.BlockStatement
 }
 
+object BlockStatement {
+  @scala.inline
+  def apply(
+    body: js.Array[astDashTypesLib.genKindsMod.StatementKind],
+    directives: js.Array[astDashTypesLib.genKindsMod.DirectiveKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.BlockStatement
+  ): BlockStatement = {
+    val __obj = js.Dynamic.literal(body = body, directives = directives, `type` = `type`)
+  
+    __obj.asInstanceOf[BlockStatement]
+  }
+}
+

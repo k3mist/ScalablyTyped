@@ -18,3 +18,29 @@ trait ICursorTool extends ITool {
   def setRender(render: java.lang.String): scala.Unit
 }
 
+object ICursorTool {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    chart: IChart,
+    clicked: js.Function1[IPoint, scala.Boolean],
+    direction: java.lang.String,
+    dragging: scala.Double,
+    draw: js.Function0[scala.Unit],
+    followMouse: scala.Boolean,
+    format: IFormat,
+    horizAxis: IAxis,
+    mousedown: js.Function1[js.Any, scala.Boolean],
+    mousemove: js.Function1[js.Any, scala.Boolean],
+    over: js.Function1[IPoint, scala.Boolean],
+    render: java.lang.String,
+    setRender: js.Function1[java.lang.String, scala.Unit],
+    size: IPoint,
+    vertAxis: IAxis
+  ): ICursorTool = {
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, direction = direction, dragging = dragging, draw = draw, followMouse = followMouse, format = format, horizAxis = horizAxis, mousedown = mousedown, mousemove = mousemove, over = over, render = render, setRender = setRender, size = size, vertAxis = vertAxis)
+  
+    __obj.asInstanceOf[ICursorTool]
+  }
+}
+

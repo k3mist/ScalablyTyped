@@ -16,3 +16,21 @@ trait CSSNumericType extends js.Object {
   var time: scala.Double
 }
 
+object CSSNumericType {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    flex: scala.Double,
+    frequency: scala.Double,
+    length: scala.Double,
+    percent: scala.Double,
+    percentHint: CSSNumericBaseType,
+    resolution: scala.Double,
+    time: scala.Double
+  ): CSSNumericType = {
+    val __obj = js.Dynamic.literal(angle = angle, flex = flex, frequency = frequency, length = length, percent = percent, percentHint = percentHint, resolution = resolution, time = time)
+  
+    __obj.asInstanceOf[CSSNumericType]
+  }
+}
+

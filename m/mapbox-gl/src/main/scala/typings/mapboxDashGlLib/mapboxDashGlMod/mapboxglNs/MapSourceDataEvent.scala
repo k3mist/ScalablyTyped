@@ -17,3 +17,23 @@ trait MapSourceDataEvent
   var tile: js.Any
 }
 
+object MapSourceDataEvent {
+  @scala.inline
+  def apply(
+    coord: Coordinate,
+    dataType: mapboxDashGlLib.mapboxDashGlLibStrings.source,
+    isSourceLoaded: scala.Boolean,
+    source: Source,
+    sourceDataType: mapboxDashGlLib.mapboxDashGlLibStrings.metadata | mapboxDashGlLib.mapboxDashGlLibStrings.content,
+    sourceId: java.lang.String,
+    target: Map,
+    tile: js.Any,
+    `type`: java.lang.String,
+    originalEvent: js.UndefOr[scala.Nothing] = js.undefined
+  ): MapSourceDataEvent = {
+    val __obj = js.Dynamic.literal(coord = coord, dataType = dataType, isSourceLoaded = isSourceLoaded, source = source, sourceDataType = sourceDataType.asInstanceOf[js.Any], sourceId = sourceId, target = target, tile = tile, `type` = `type`)
+    if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[MapSourceDataEvent]
+  }
+}
+

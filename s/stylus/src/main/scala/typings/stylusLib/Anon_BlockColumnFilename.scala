@@ -15,3 +15,20 @@ trait Anon_BlockColumnFilename extends js.Object {
   var segments: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
 }
 
+object Anon_BlockColumnFilename {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    block: stylusLib.stylusMod.StylusNs.NodesNs.Block,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    prefix: java.lang.String,
+    segments: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
+  ): Anon_BlockColumnFilename = {
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno, prefix = prefix, segments = segments)
+  
+    __obj.asInstanceOf[Anon_BlockColumnFilename]
+  }
+}
+

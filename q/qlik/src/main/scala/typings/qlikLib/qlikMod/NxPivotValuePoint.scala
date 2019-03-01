@@ -13,3 +13,18 @@ trait NxPivotValuePoint extends js.Object {
   var qType: qlikLib.qlikLibStrings.V | qlikLib.qlikLibStrings.E | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.P | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.U
 }
 
+object NxPivotValuePoint {
+  @scala.inline
+  def apply(
+    qAttrExps: NxAttributeExpressionValues,
+    qNum: scala.Double,
+    qText: java.lang.String,
+    qType: qlikLib.qlikLibStrings.V | qlikLib.qlikLibStrings.E | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.P | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.U,
+    qLabel: java.lang.String = null
+  ): NxPivotValuePoint = {
+    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps, qNum = qNum, qText = qText, qType = qType.asInstanceOf[js.Any])
+    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
+    __obj.asInstanceOf[NxPivotValuePoint]
+  }
+}
+

@@ -59,3 +59,32 @@ trait PageEventObj extends js.Object {
   var workerdestroyed: Worker
 }
 
+object PageEventObj {
+  @scala.inline
+  def apply(
+    console: ConsoleMessage,
+    dialog: Dialog,
+    domcontentloaded: scala.Nothing,
+    error: nodeLib.Error,
+    frameattached: Frame,
+    framedetached: Frame,
+    framenavigated: Frame,
+    metrics: puppeteerLib.Anon_Metrics,
+    pageerror: nodeLib.Error,
+    popup: Page,
+    request: Request,
+    requestfailed: Request,
+    requestfinished: Request,
+    response: Response,
+    workercreated: Worker,
+    workerdestroyed: Worker,
+    close: js.UndefOr[scala.Nothing] = js.undefined,
+    load: js.UndefOr[scala.Nothing] = js.undefined
+  ): PageEventObj = {
+    val __obj = js.Dynamic.literal(console = console, dialog = dialog, domcontentloaded = domcontentloaded, error = error, frameattached = frameattached, framedetached = framedetached, framenavigated = framenavigated, metrics = metrics, pageerror = pageerror, popup = popup, request = request, requestfailed = requestfailed, requestfinished = requestfinished, response = response, workercreated = workercreated, workerdestroyed = workerdestroyed)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)
+    __obj.asInstanceOf[PageEventObj]
+  }
+}
+

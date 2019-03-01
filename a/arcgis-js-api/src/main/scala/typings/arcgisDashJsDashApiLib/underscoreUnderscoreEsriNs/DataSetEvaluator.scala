@@ -27,3 +27,19 @@ trait DataSetEvaluator
   var `type`: java.lang.String
 }
 
+object DataSetEvaluator {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dataSetConfigurations: js.Array[DatasetConfiguration],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): DataSetEvaluator = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSetConfigurations = dataSetConfigurations, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[DataSetEvaluator]
+  }
+}
+

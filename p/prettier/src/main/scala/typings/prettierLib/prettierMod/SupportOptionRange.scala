@@ -11,3 +11,12 @@ trait SupportOptionRange extends js.Object {
   var step: scala.Double
 }
 
+object SupportOptionRange {
+  @scala.inline
+  def apply(end: scala.Double, start: scala.Double, step: scala.Double): SupportOptionRange = {
+    val __obj = js.Dynamic.literal(end = end, start = start, step = step)
+  
+    __obj.asInstanceOf[SupportOptionRange]
+  }
+}
+

@@ -28,3 +28,18 @@ trait GetRepositoryResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetRepositoryResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    id: java.lang.String,
+    registryId: java.lang.String,
+    repositoryUrl: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetRepositoryResult = {
+    val __obj = js.Dynamic.literal(arn = arn, id = id, registryId = registryId, repositoryUrl = repositoryUrl, tags = tags)
+  
+    __obj.asInstanceOf[GetRepositoryResult]
+  }
+}
+

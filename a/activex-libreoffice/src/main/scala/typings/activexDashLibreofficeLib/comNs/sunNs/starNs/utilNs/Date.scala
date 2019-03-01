@@ -19,3 +19,12 @@ trait Date extends js.Object {
   var Year: scala.Double
 }
 
+object Date {
+  @scala.inline
+  def apply(Day: scala.Double, Month: scala.Double, Year: scala.Double): Date = {
+    val __obj = js.Dynamic.literal(Day = Day, Month = Month, Year = Year)
+  
+    __obj.asInstanceOf[Date]
+  }
+}
+

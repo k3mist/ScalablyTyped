@@ -19,3 +19,12 @@ trait IFileRequest extends js.Object {
   def abort(): scala.Unit
 }
 
+object IFileRequest {
+  @scala.inline
+  def apply(abort: js.Function0[scala.Unit], onCompleteObservable: Observable[IFileRequest]): IFileRequest = {
+    val __obj = js.Dynamic.literal(abort = abort, onCompleteObservable = onCompleteObservable)
+  
+    __obj.asInstanceOf[IFileRequest]
+  }
+}
+

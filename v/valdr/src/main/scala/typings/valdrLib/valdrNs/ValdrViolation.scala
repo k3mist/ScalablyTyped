@@ -13,3 +13,19 @@ trait ValdrViolation extends ValdrConstraintValidator {
   var value: java.lang.String
 }
 
+object ValdrViolation {
+  @scala.inline
+  def apply(
+    field: java.lang.String,
+    message: java.lang.String,
+    `type`: java.lang.String,
+    valid: scala.Boolean,
+    validator: java.lang.String,
+    value: java.lang.String
+  ): ValdrViolation = {
+    val __obj = js.Dynamic.literal(field = field, message = message, `type` = `type`, valid = valid, validator = validator, value = value)
+  
+    __obj.asInstanceOf[ValdrViolation]
+  }
+}
+

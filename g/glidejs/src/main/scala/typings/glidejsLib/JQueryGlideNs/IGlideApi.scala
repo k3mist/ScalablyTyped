@@ -48,3 +48,23 @@ trait IGlideApi extends js.Object {
   def reinit(): scala.Unit
 }
 
+object IGlideApi {
+  @scala.inline
+  def apply(
+    arrows: js.Function1[java.lang.String, scala.Unit],
+    current: js.Function0[scala.Double],
+    destroy: js.Function0[scala.Unit],
+    jump: js.Function2[scala.Double, js.Function, scala.Unit],
+    nav: js.Function1[java.lang.String, scala.Unit],
+    next: js.Function1[js.Function, scala.Unit],
+    pause: js.Function0[scala.Unit],
+    play: js.Function0[scala.Unit],
+    prev: js.Function1[js.Function, scala.Unit],
+    reinit: js.Function0[scala.Unit]
+  ): IGlideApi = {
+    val __obj = js.Dynamic.literal(arrows = arrows, current = current, destroy = destroy, jump = jump, nav = nav, next = next, pause = pause, play = play, prev = prev, reinit = reinit)
+  
+    __obj.asInstanceOf[IGlideApi]
+  }
+}
+

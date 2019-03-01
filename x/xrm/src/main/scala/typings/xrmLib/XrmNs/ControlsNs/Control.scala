@@ -53,3 +53,19 @@ trait Control
   def getParent(): Section
 }
 
+object Control {
+  @scala.inline
+  def apply(
+    getControlType: js.Function0[ControlType | java.lang.String],
+    getLabel: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getParent: js.Function0[Section],
+    getVisible: js.Function0[scala.Boolean],
+    setLabel: js.Function1[java.lang.String, scala.Unit]
+  ): Control = {
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, setLabel = setLabel)
+  
+    __obj.asInstanceOf[Control]
+  }
+}
+

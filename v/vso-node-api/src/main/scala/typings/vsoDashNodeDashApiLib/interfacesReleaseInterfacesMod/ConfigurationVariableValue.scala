@@ -16,3 +16,12 @@ trait ConfigurationVariableValue extends js.Object {
   var value: java.lang.String
 }
 
+object ConfigurationVariableValue {
+  @scala.inline
+  def apply(isSecret: scala.Boolean, value: java.lang.String): ConfigurationVariableValue = {
+    val __obj = js.Dynamic.literal(isSecret = isSecret, value = value)
+  
+    __obj.asInstanceOf[ConfigurationVariableValue]
+  }
+}
+

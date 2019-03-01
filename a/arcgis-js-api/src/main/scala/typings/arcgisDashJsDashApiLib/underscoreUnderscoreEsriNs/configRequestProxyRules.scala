@@ -21,3 +21,19 @@ trait configRequestProxyRules
   var urlPrefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object configRequestProxyRules {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    proxyUrl: java.lang.String = null,
+    urlPrefix: java.lang.String = null
+  ): configRequestProxyRules = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
+    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix)
+    __obj.asInstanceOf[configRequestProxyRules]
+  }
+}
+

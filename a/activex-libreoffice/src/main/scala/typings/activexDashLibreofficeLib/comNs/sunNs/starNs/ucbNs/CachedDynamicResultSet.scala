@@ -14,3 +14,26 @@ trait CachedDynamicResultSet
   extends XDynamicResultSet
      with XSourceInitialization
 
+object CachedDynamicResultSet {
+  @scala.inline
+  def apply(
+    Capabilities: scala.Double,
+    StaticResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    connectToCache: js.Function1[XDynamicResultSet, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getCapabilities: js.Function0[scala.Double],
+    getStaticResultSet: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setListener: js.Function1[XDynamicResultSetListener, scala.Unit],
+    setSource: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): CachedDynamicResultSet = {
+    val __obj = js.Dynamic.literal(Capabilities = Capabilities, StaticResultSet = StaticResultSet, acquire = acquire, addEventListener = addEventListener, connectToCache = connectToCache, dispose = dispose, getCapabilities = getCapabilities, getStaticResultSet = getStaticResultSet, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setListener = setListener, setSource = setSource)
+  
+    __obj.asInstanceOf[CachedDynamicResultSet]
+  }
+}
+

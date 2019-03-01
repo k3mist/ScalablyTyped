@@ -11,3 +11,16 @@ trait IndentInfo extends js.Object {
   var `type`: detectDashIndentLib.detectDashIndentLibStrings.tab | detectDashIndentLib.detectDashIndentLibStrings.space | scala.Null
 }
 
+object IndentInfo {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    indent: java.lang.String,
+    `type`: detectDashIndentLib.detectDashIndentLibStrings.tab | detectDashIndentLib.detectDashIndentLibStrings.space = null
+  ): IndentInfo = {
+    val __obj = js.Dynamic.literal(amount = amount, indent = indent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IndentInfo]
+  }
+}
+

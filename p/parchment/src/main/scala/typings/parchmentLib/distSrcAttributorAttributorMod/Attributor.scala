@@ -16,3 +16,21 @@ trait Attributor extends js.Object {
   def value(node: stdLib.HTMLElement): java.lang.String
 }
 
+object Attributor {
+  @scala.inline
+  def apply(
+    add: js.Function2[stdLib.HTMLElement, java.lang.String, scala.Boolean],
+    attrName: java.lang.String,
+    canAdd: js.Function2[stdLib.HTMLElement, js.Any, scala.Boolean],
+    keyName: java.lang.String,
+    remove: js.Function1[stdLib.HTMLElement, scala.Unit],
+    scope: parchmentLib.distSrcRegistryMod.Scope,
+    value: js.Function1[stdLib.HTMLElement, java.lang.String],
+    whitelist: js.Array[java.lang.String] = null
+  ): Attributor = {
+    val __obj = js.Dynamic.literal(add = add, attrName = attrName, canAdd = canAdd, keyName = keyName, remove = remove, scope = scope, value = value)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[Attributor]
+  }
+}
+

@@ -19,3 +19,19 @@ trait TemplateParametersAssets extends js.Object {
   var publicPath: java.lang.String
 }
 
+object TemplateParametersAssets {
+  @scala.inline
+  def apply(
+    css: js.Array[java.lang.String],
+    `js_`: js.Array[java.lang.String],
+    publicPath: java.lang.String,
+    favicon: java.lang.String = null,
+    manifest: java.lang.String = null
+  ): TemplateParametersAssets = {
+    val __obj = js.Dynamic.literal(css = css, `js_` = `js_`, publicPath = publicPath)
+    if (favicon != null) __obj.updateDynamic("favicon")(favicon)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    __obj.asInstanceOf[TemplateParametersAssets]
+  }
+}
+

@@ -29,3 +29,36 @@ trait DataLabelContext extends js.Object {
   var z: scala.Double
 }
 
+object DataLabelContext {
+  @scala.inline
+  def apply(
+    close: scala.Double,
+    componentElement: stdLib.Element,
+    group: java.lang.String | js.Array[java.lang.String],
+    high: scala.Double,
+    id: js.Any,
+    label: java.lang.String,
+    low: scala.Double,
+    open: scala.Double,
+    series: java.lang.String,
+    targetValue: scala.Double,
+    totalValue: scala.Double,
+    value: scala.Double,
+    volume: scala.Double,
+    x: scala.Double | java.lang.String,
+    y: scala.Double,
+    z: scala.Double,
+    data: js.Object = null,
+    groupData: js.Object = null,
+    itemData: js.Object = null,
+    seriesData: js.Object = null
+  ): DataLabelContext = {
+    val __obj = js.Dynamic.literal(close = close, componentElement = componentElement, group = group.asInstanceOf[js.Any], high = high, id = id, label = label, low = low, open = open, series = series, targetValue = targetValue, totalValue = totalValue, value = value, volume = volume, x = x.asInstanceOf[js.Any], y = y, z = z)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (groupData != null) __obj.updateDynamic("groupData")(groupData)
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
+    if (seriesData != null) __obj.updateDynamic("seriesData")(seriesData)
+    __obj.asInstanceOf[DataLabelContext]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Anon_Auth extends js.Object {
   var scheme: java.lang.String
 }
 
+object Anon_Auth {
+  @scala.inline
+  def apply(auth: java.lang.String, perms: scala.Double, scheme: java.lang.String): Anon_Auth = {
+    val __obj = js.Dynamic.literal(auth = auth, perms = perms, scheme = scheme)
+  
+    __obj.asInstanceOf[Anon_Auth]
+  }
+}
+

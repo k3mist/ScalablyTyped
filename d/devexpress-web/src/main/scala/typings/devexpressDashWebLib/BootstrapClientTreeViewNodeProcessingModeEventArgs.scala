@@ -16,3 +16,12 @@ trait BootstrapClientTreeViewNodeProcessingModeEventArgs extends ASPxClientProce
   var node: BootstrapClientTreeViewNode
 }
 
+object BootstrapClientTreeViewNodeProcessingModeEventArgs {
+  @scala.inline
+  def apply(node: BootstrapClientTreeViewNode, processOnServer: scala.Boolean): BootstrapClientTreeViewNodeProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal(node = node, processOnServer = processOnServer)
+  
+    __obj.asInstanceOf[BootstrapClientTreeViewNodeProcessingModeEventArgs]
+  }
+}
+

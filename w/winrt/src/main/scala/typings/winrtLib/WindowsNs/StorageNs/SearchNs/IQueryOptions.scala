@@ -28,3 +28,35 @@ trait IQueryOptions extends js.Object {
   ): scala.Unit
 }
 
+object IQueryOptions {
+  @scala.inline
+  def apply(
+    applicationSearchFilter: java.lang.String,
+    dateStackOption: DateStackOption,
+    fileTypeFilter: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String],
+    folderDepth: FolderDepth,
+    groupPropertyName: java.lang.String,
+    indexerOption: IndexerOption,
+    language: java.lang.String,
+    loadFromString: js.Function1[java.lang.String, scala.Unit],
+    saveToString: js.Function0[java.lang.String],
+    setPropertyPrefetch: js.Function2[
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.PropertyPrefetchOptions, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      scala.Unit
+    ],
+    setThumbnailPrefetch: js.Function3[
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
+      scala.Double, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, 
+      scala.Unit
+    ],
+    sortOrder: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SortEntry],
+    userSearchFilter: java.lang.String
+  ): IQueryOptions = {
+    val __obj = js.Dynamic.literal(applicationSearchFilter = applicationSearchFilter, dateStackOption = dateStackOption, fileTypeFilter = fileTypeFilter, folderDepth = folderDepth, groupPropertyName = groupPropertyName, indexerOption = indexerOption, language = language, loadFromString = loadFromString, saveToString = saveToString, setPropertyPrefetch = setPropertyPrefetch, setThumbnailPrefetch = setThumbnailPrefetch, sortOrder = sortOrder, userSearchFilter = userSearchFilter)
+  
+    __obj.asInstanceOf[IQueryOptions]
+  }
+}
+

@@ -18,3 +18,19 @@ trait RecommendationsSeedObject extends js.Object {
   var `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.genre
 }
 
+object RecommendationsSeedObject {
+  @scala.inline
+  def apply(
+    afterFilteringSize: scala.Double,
+    afterRelinkingSize: scala.Double,
+    href: java.lang.String,
+    id: java.lang.String,
+    initialPoolSize: scala.Double,
+    `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.genre
+  ): RecommendationsSeedObject = {
+    val __obj = js.Dynamic.literal(afterFilteringSize = afterFilteringSize, afterRelinkingSize = afterRelinkingSize, href = href, id = id, initialPoolSize = initialPoolSize, `type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[RecommendationsSeedObject]
+  }
+}
+

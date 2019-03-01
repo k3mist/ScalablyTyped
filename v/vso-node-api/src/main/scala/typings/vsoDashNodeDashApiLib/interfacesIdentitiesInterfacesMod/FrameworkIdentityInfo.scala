@@ -12,3 +12,17 @@ trait FrameworkIdentityInfo extends js.Object {
   var role: java.lang.String
 }
 
+object FrameworkIdentityInfo {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    identifier: java.lang.String,
+    identityType: FrameworkIdentityType,
+    role: java.lang.String
+  ): FrameworkIdentityInfo = {
+    val __obj = js.Dynamic.literal(displayName = displayName, identifier = identifier, identityType = identityType, role = role)
+  
+    __obj.asInstanceOf[FrameworkIdentityInfo]
+  }
+}
+

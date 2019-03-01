@@ -11,3 +11,16 @@ trait LockService extends js.Object {
   def getUserLock(): Lock
 }
 
+object LockService {
+  @scala.inline
+  def apply(
+    getDocumentLock: js.Function0[Lock],
+    getScriptLock: js.Function0[Lock],
+    getUserLock: js.Function0[Lock]
+  ): LockService = {
+    val __obj = js.Dynamic.literal(getDocumentLock = getDocumentLock, getScriptLock = getScriptLock, getUserLock = getUserLock)
+  
+    __obj.asInstanceOf[LockService]
+  }
+}
+

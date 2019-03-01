@@ -20,3 +20,24 @@ trait NSIException extends js.Object {
   var result: js.Any
 }
 
+object NSIException {
+  @scala.inline
+  def apply(
+    columnNumber: scala.Double,
+    data: js.Any,
+    filename: java.lang.String,
+    lineNumber: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    result: js.Any,
+    toString: js.Function0[java.lang.String],
+    inner: NSIException = null,
+    location: js.Any = null
+  ): NSIException = {
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, data = data, filename = filename, lineNumber = lineNumber, message = message, name = name, result = result, toString = toString)
+    if (inner != null) __obj.updateDynamic("inner")(inner)
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[NSIException]
+  }
+}
+

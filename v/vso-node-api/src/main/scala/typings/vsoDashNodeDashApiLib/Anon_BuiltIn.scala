@@ -10,3 +10,12 @@ trait Anon_BuiltIn extends js.Object {
   var trusted: scala.Double
 }
 
+object Anon_BuiltIn {
+  @scala.inline
+  def apply(builtIn: scala.Double, trusted: scala.Double): Anon_BuiltIn = {
+    val __obj = js.Dynamic.literal(builtIn = builtIn, trusted = trusted)
+  
+    __obj.asInstanceOf[Anon_BuiltIn]
+  }
+}
+

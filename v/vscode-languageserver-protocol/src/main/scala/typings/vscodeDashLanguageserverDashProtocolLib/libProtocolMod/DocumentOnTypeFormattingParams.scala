@@ -24,3 +24,17 @@ trait DocumentOnTypeFormattingParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object DocumentOnTypeFormattingParams {
+  @scala.inline
+  def apply(
+    ch: java.lang.String,
+    options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FormattingOptions,
+    position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): DocumentOnTypeFormattingParams = {
+    val __obj = js.Dynamic.literal(ch = ch, options = options, position = position, textDocument = textDocument)
+  
+    __obj.asInstanceOf[DocumentOnTypeFormattingParams]
+  }
+}
+

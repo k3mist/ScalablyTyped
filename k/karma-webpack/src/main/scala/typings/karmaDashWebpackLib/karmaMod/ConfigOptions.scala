@@ -10,3 +10,15 @@ trait ConfigOptions extends js.Object {
   var webpackMiddleware: KarmaWebpackMiddlewareOptions
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    webpack: webpackLib.webpackMod.webpackNs.Configuration,
+    webpackMiddleware: KarmaWebpackMiddlewareOptions
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal(webpack = webpack, webpackMiddleware = webpackMiddleware)
+  
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

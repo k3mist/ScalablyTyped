@@ -26,3 +26,18 @@ trait OpacityStopProperties extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OpacityStopProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    label: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): OpacityStopProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpacityStopProperties]
+  }
+}
+

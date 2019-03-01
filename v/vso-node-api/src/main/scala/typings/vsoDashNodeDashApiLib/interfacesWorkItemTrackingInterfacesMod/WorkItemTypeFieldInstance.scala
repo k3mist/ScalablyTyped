@@ -24,3 +24,20 @@ trait WorkItemTypeFieldInstance extends WorkItemFieldReference {
   var helpText: java.lang.String
 }
 
+object WorkItemTypeFieldInstance {
+  @scala.inline
+  def apply(
+    allowedValues: js.Array[java.lang.String],
+    alwaysRequired: scala.Boolean,
+    dependentFields: js.Array[WorkItemFieldReference],
+    helpText: java.lang.String,
+    name: java.lang.String,
+    referenceName: java.lang.String,
+    url: java.lang.String
+  ): WorkItemTypeFieldInstance = {
+    val __obj = js.Dynamic.literal(allowedValues = allowedValues, alwaysRequired = alwaysRequired, dependentFields = dependentFields, helpText = helpText, name = name, referenceName = referenceName, url = url)
+  
+    __obj.asInstanceOf[WorkItemTypeFieldInstance]
+  }
+}
+

@@ -44,3 +44,18 @@ trait TI18n extends js.Object {
   var vars: scala.Double
 }
 
+object TI18n {
+  @scala.inline
+  def apply(
+    create: I18nMutateOpCodes,
+    expandoStartIndex: scala.Double,
+    update: I18nUpdateOpCodes,
+    vars: scala.Double,
+    icus: js.Array[TIcu] = null
+  ): TI18n = {
+    val __obj = js.Dynamic.literal(create = create, expandoStartIndex = expandoStartIndex, update = update, vars = vars)
+    if (icus != null) __obj.updateDynamic("icus")(icus)
+    __obj.asInstanceOf[TI18n]
+  }
+}
+

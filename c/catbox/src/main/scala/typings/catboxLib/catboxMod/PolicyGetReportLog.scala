@@ -18,3 +18,18 @@ trait PolicyGetReportLog extends js.Object {
   var ttl: scala.Double
 }
 
+object PolicyGetReportLog {
+  @scala.inline
+  def apply(
+    isStale: scala.Boolean,
+    msec: scala.Double,
+    stored: scala.Double,
+    ttl: scala.Double,
+    error: stdLib.Error = null
+  ): PolicyGetReportLog = {
+    val __obj = js.Dynamic.literal(isStale = isStale, msec = msec, stored = stored, ttl = ttl)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[PolicyGetReportLog]
+  }
+}
+

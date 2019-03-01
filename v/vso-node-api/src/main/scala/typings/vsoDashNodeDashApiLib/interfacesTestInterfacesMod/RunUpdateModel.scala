@@ -32,3 +32,37 @@ trait RunUpdateModel extends js.Object {
   var testSettings: ShallowReference
 }
 
+object RunUpdateModel {
+  @scala.inline
+  def apply(
+    build: ShallowReference,
+    buildDropLocation: java.lang.String,
+    buildFlavor: java.lang.String,
+    buildPlatform: java.lang.String,
+    comment: java.lang.String,
+    completedDate: java.lang.String,
+    controller: java.lang.String,
+    deleteInProgressResults: scala.Boolean,
+    dtlAutEnvironment: ShallowReference,
+    dtlEnvironment: ShallowReference,
+    dtlEnvironmentDetails: DtlEnvironmentDetails,
+    dueDate: java.lang.String,
+    errorMessage: java.lang.String,
+    iteration: java.lang.String,
+    logEntries: js.Array[TestMessageLogDetails],
+    name: java.lang.String,
+    releaseEnvironmentUri: java.lang.String,
+    releaseUri: java.lang.String,
+    sourceWorkflow: java.lang.String,
+    startedDate: java.lang.String,
+    state: java.lang.String,
+    substate: TestRunSubstate,
+    testEnvironmentId: java.lang.String,
+    testSettings: ShallowReference
+  ): RunUpdateModel = {
+    val __obj = js.Dynamic.literal(build = build, buildDropLocation = buildDropLocation, buildFlavor = buildFlavor, buildPlatform = buildPlatform, comment = comment, completedDate = completedDate, controller = controller, deleteInProgressResults = deleteInProgressResults, dtlAutEnvironment = dtlAutEnvironment, dtlEnvironment = dtlEnvironment, dtlEnvironmentDetails = dtlEnvironmentDetails, dueDate = dueDate, errorMessage = errorMessage, iteration = iteration, logEntries = logEntries, name = name, releaseEnvironmentUri = releaseEnvironmentUri, releaseUri = releaseUri, sourceWorkflow = sourceWorkflow, startedDate = startedDate, state = state, substate = substate, testEnvironmentId = testEnvironmentId, testSettings = testSettings)
+  
+    __obj.asInstanceOf[RunUpdateModel]
+  }
+}
+

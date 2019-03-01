@@ -31,3 +31,29 @@ trait InstancesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
 }
 
+object InstancesResource {
+  @scala.inline
+  def apply(
+    debug: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsInstancesId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPageSize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
+    ]
+  ): InstancesResource = {
+    val __obj = js.Dynamic.literal(debug = debug, delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[InstancesResource]
+  }
+}
+

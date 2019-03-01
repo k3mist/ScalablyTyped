@@ -10,3 +10,12 @@ trait TwixIter extends js.Object {
   def next(): Twix
 }
 
+object TwixIter {
+  @scala.inline
+  def apply(hasNext: js.Function0[scala.Boolean], next: js.Function0[Twix]): TwixIter = {
+    val __obj = js.Dynamic.literal(hasNext = hasNext, next = next)
+  
+    __obj.asInstanceOf[TwixIter]
+  }
+}
+

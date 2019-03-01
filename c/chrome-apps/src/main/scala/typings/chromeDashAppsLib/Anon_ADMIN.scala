@@ -13,3 +13,18 @@ trait Anon_ADMIN extends js.Object {
   var SIDELOAD: chromeDashAppsLib.chromeDashAppsLibStrings.sideload
 }
 
+object Anon_ADMIN {
+  @scala.inline
+  def apply(
+    ADMIN: chromeDashAppsLib.chromeDashAppsLibStrings.admin,
+    DEVELOPMENT: chromeDashAppsLib.chromeDashAppsLibStrings.development,
+    NORMAL: chromeDashAppsLib.chromeDashAppsLibStrings.normal,
+    OTHER: chromeDashAppsLib.chromeDashAppsLibStrings.other,
+    SIDELOAD: chromeDashAppsLib.chromeDashAppsLibStrings.sideload
+  ): Anon_ADMIN = {
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN, DEVELOPMENT = DEVELOPMENT, NORMAL = NORMAL, OTHER = OTHER, SIDELOAD = SIDELOAD)
+  
+    __obj.asInstanceOf[Anon_ADMIN]
+  }
+}
+

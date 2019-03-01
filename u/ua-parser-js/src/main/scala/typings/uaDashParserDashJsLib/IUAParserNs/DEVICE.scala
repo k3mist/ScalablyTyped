@@ -17,3 +17,22 @@ trait DEVICE extends js.Object {
   var WEARABLE: java.lang.String
 }
 
+object DEVICE {
+  @scala.inline
+  def apply(
+    CONSOLE: java.lang.String,
+    EMBEDDED: java.lang.String,
+    MOBILE: java.lang.String,
+    MODEL: java.lang.String,
+    SMARTTV: java.lang.String,
+    TABLET: java.lang.String,
+    TYPE: java.lang.String,
+    VENDOR: java.lang.String,
+    WEARABLE: java.lang.String
+  ): DEVICE = {
+    val __obj = js.Dynamic.literal(CONSOLE = CONSOLE, EMBEDDED = EMBEDDED, MOBILE = MOBILE, MODEL = MODEL, SMARTTV = SMARTTV, TABLET = TABLET, TYPE = TYPE, VENDOR = VENDOR, WEARABLE = WEARABLE)
+  
+    __obj.asInstanceOf[DEVICE]
+  }
+}
+

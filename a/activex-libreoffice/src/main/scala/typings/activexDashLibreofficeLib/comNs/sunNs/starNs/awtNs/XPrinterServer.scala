@@ -26,3 +26,20 @@ trait XPrinterServer
   def getPrinterNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XPrinterServer {
+  @scala.inline
+  def apply(
+    PrinterNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    createInfoPrinter: js.Function1[java.lang.String, XInfoPrinter],
+    createPrinter: js.Function1[java.lang.String, XPrinter],
+    getPrinterNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPrinterServer = {
+    val __obj = js.Dynamic.literal(PrinterNames = PrinterNames, acquire = acquire, createInfoPrinter = createInfoPrinter, createPrinter = createPrinter, getPrinterNames = getPrinterNames, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XPrinterServer]
+  }
+}
+

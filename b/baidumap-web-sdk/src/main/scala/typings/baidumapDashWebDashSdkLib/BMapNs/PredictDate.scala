@@ -10,3 +10,12 @@ trait PredictDate extends js.Object {
   var weekday: scala.Double
 }
 
+object PredictDate {
+  @scala.inline
+  def apply(hour: scala.Double, weekday: scala.Double): PredictDate = {
+    val __obj = js.Dynamic.literal(hour = hour, weekday = weekday)
+  
+    __obj.asInstanceOf[PredictDate]
+  }
+}
+

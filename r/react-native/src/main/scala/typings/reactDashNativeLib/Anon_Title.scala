@@ -11,3 +11,12 @@ trait Anon_Title
   var url: java.lang.String
 }
 
+object Anon_Title {
+  @scala.inline
+  def apply(url: java.lang.String, title: java.lang.String = null): Anon_Title = {
+    val __obj = js.Dynamic.literal(url = url)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_Title]
+  }
+}
+

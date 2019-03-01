@@ -11,3 +11,12 @@ trait ReactElementLike extends js.Object {
   var `type`: ReactComponentLike
 }
 
+object ReactElementLike {
+  @scala.inline
+  def apply(props: js.Any, `type`: ReactComponentLike, key: java.lang.String | scala.Double = null): ReactElementLike = {
+    val __obj = js.Dynamic.literal(props = props, `type` = `type`.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReactElementLike]
+  }
+}
+

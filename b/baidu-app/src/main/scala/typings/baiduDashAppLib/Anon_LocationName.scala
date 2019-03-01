@@ -16,3 +16,12 @@ trait Anon_LocationName extends js.Object {
   var `type`: scala.Double
 }
 
+object Anon_LocationName {
+  @scala.inline
+  def apply(location: Anon_Height, name: scala.Double, probability: scala.Double, `type`: scala.Double): Anon_LocationName = {
+    val __obj = js.Dynamic.literal(location = location, name = name, probability = probability, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_LocationName]
+  }
+}
+

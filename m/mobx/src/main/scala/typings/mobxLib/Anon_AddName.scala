@@ -13,3 +13,12 @@ trait Anon_AddName
   var `type`: mobxLib.mobxLibStrings.add
 }
 
+object Anon_AddName {
+  @scala.inline
+  def apply(name: java.lang.String, newValue: js.Any, `object`: js.Any, `type`: mobxLib.mobxLibStrings.add): Anon_AddName = {
+    val __obj = js.Dynamic.literal(name = name, newValue = newValue, `object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_AddName]
+  }
+}
+

@@ -14,3 +14,12 @@ trait LocalBasemapsSourceProperties extends js.Object {
   var basemaps: js.UndefOr[CollectionProperties[BasemapProperties]] = js.undefined
 }
 
+object LocalBasemapsSourceProperties {
+  @scala.inline
+  def apply(basemaps: CollectionProperties[BasemapProperties] = null): LocalBasemapsSourceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (basemaps != null) __obj.updateDynamic("basemaps")(basemaps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocalBasemapsSourceProperties]
+  }
+}
+

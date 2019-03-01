@@ -12,3 +12,17 @@ trait TopicRecord extends js.Object {
   var Sns: SNSItem
 }
 
+object TopicRecord {
+  @scala.inline
+  def apply(
+    EventSource: java.lang.String,
+    EventSubscriptionArn: java.lang.String,
+    EventVersion: java.lang.String,
+    Sns: SNSItem
+  ): TopicRecord = {
+    val __obj = js.Dynamic.literal(EventSource = EventSource, EventSubscriptionArn = EventSubscriptionArn, EventVersion = EventVersion, Sns = Sns)
+  
+    __obj.asInstanceOf[TopicRecord]
+  }
+}
+

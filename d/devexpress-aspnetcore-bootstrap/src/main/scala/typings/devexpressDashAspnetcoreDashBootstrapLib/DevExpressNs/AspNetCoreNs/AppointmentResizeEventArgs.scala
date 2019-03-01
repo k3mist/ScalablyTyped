@@ -13,3 +13,19 @@ trait AppointmentResizeEventArgs extends EventArgs {
   val operation: BootstrapSchedulerAppointmentOperation
 }
 
+object AppointmentResizeEventArgs {
+  @scala.inline
+  def apply(
+    appointmentId: java.lang.String,
+    handled: scala.Boolean,
+    newInterval: BootstrapTimeInterval,
+    oldInterval: BootstrapTimeInterval,
+    operation: BootstrapSchedulerAppointmentOperation,
+    sender: Control
+  ): AppointmentResizeEventArgs = {
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId, handled = handled, newInterval = newInterval, oldInterval = oldInterval, operation = operation, sender = sender)
+  
+    __obj.asInstanceOf[AppointmentResizeEventArgs]
+  }
+}
+

@@ -38,3 +38,22 @@ trait GetFileSystemResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetFileSystemResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    creationToken: java.lang.String,
+    dnsName: java.lang.String,
+    encrypted: scala.Boolean,
+    fileSystemId: java.lang.String,
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    performanceMode: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetFileSystemResult = {
+    val __obj = js.Dynamic.literal(arn = arn, creationToken = creationToken, dnsName = dnsName, encrypted = encrypted, fileSystemId = fileSystemId, id = id, kmsKeyId = kmsKeyId, performanceMode = performanceMode, tags = tags)
+  
+    __obj.asInstanceOf[GetFileSystemResult]
+  }
+}
+

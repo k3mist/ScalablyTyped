@@ -92,3 +92,34 @@ trait Deployment extends js.Object {
   var startedOn: stdLib.Date
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    attempt: scala.Double,
+    completedOn: stdLib.Date,
+    conditions: js.Array[Condition],
+    definitionEnvironmentId: scala.Double,
+    deploymentStatus: DeploymentStatus,
+    id: scala.Double,
+    lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastModifiedOn: stdLib.Date,
+    operationStatus: DeploymentOperationStatus,
+    postDeployApprovals: js.Array[ReleaseApproval],
+    preDeployApprovals: js.Array[ReleaseApproval],
+    queuedOn: stdLib.Date,
+    reason: DeploymentReason,
+    release: ReleaseReference,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseEnvironment: ReleaseEnvironmentShallowReference,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    scheduledDeploymentTime: stdLib.Date,
+    startedOn: stdLib.Date
+  ): Deployment = {
+    val __obj = js.Dynamic.literal(_links = _links, attempt = attempt, completedOn = completedOn, conditions = conditions, definitionEnvironmentId = definitionEnvironmentId, deploymentStatus = deploymentStatus, id = id, lastModifiedBy = lastModifiedBy, lastModifiedOn = lastModifiedOn, operationStatus = operationStatus, postDeployApprovals = postDeployApprovals, preDeployApprovals = preDeployApprovals, queuedOn = queuedOn, reason = reason, release = release, releaseDefinition = releaseDefinition, releaseEnvironment = releaseEnvironment, requestedBy = requestedBy, requestedFor = requestedFor, scheduledDeploymentTime = scheduledDeploymentTime, startedOn = startedOn)
+  
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

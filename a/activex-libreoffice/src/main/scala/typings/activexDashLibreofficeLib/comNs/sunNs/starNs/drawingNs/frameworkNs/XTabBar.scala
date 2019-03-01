@@ -61,3 +61,19 @@ trait XTabBar extends js.Object {
   def removeTabBarButton(aButton: TabBarButton): scala.Unit
 }
 
+object XTabBar {
+  @scala.inline
+  def apply(
+    TabBarButtons: activexDashInteropLib.SafeArray[TabBarButton],
+    addTabBarButtonAfter: js.Function2[TabBarButton, TabBarButton, scala.Unit],
+    appendTabBarButton: js.Function1[TabBarButton, scala.Unit],
+    getTabBarButtons: js.Function0[activexDashInteropLib.SafeArray[TabBarButton]],
+    hasTabBarButton: js.Function1[TabBarButton, scala.Boolean],
+    removeTabBarButton: js.Function1[TabBarButton, scala.Unit]
+  ): XTabBar = {
+    val __obj = js.Dynamic.literal(TabBarButtons = TabBarButtons, addTabBarButtonAfter = addTabBarButtonAfter, appendTabBarButton = appendTabBarButton, getTabBarButtons = getTabBarButtons, hasTabBarButton = hasTabBarButton, removeTabBarButton = removeTabBarButton)
+  
+    __obj.asInstanceOf[XTabBar]
+  }
+}
+

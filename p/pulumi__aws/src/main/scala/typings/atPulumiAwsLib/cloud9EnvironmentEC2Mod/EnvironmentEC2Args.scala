@@ -32,3 +32,23 @@ trait EnvironmentEC2Args extends js.Object {
   val subnetId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object EnvironmentEC2Args {
+  @scala.inline
+  def apply(
+    instanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    automaticStopTimeMinutes: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    ownerArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): EnvironmentEC2Args = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any])
+    if (automaticStopTimeMinutes != null) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnvironmentEC2Args]
+  }
+}
+

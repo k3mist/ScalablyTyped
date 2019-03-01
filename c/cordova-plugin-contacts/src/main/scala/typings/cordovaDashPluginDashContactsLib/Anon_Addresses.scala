@@ -35,3 +35,40 @@ trait Anon_Addresses extends js.Object {
   var urls: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.urls
 }
 
+object Anon_Addresses {
+  @scala.inline
+  def apply(
+    addresses: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.addresses,
+    birthday: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.birthday,
+    categories: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.categories,
+    country: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.country,
+    department: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.department,
+    displayName: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.displayName,
+    emails: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.emails,
+    familyName: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.familyName,
+    formatted: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.formatted,
+    givenName: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.givenName,
+    honorificPrefix: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.honorificPrefix,
+    honorificSuffix: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.honorificSuffix,
+    id: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.id,
+    ims: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.ims,
+    locality: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.locality,
+    middleName: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.middleName,
+    name: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.name,
+    nickname: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.nickname,
+    note: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.note,
+    organizations: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.organizations,
+    phoneNumbers: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.phoneNumbers,
+    photos: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.photos,
+    postalCode: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.postalCode,
+    region: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.region,
+    streetAddress: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.streetAddress,
+    title: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.title,
+    urls: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.urls
+  ): Anon_Addresses = {
+    val __obj = js.Dynamic.literal(addresses = addresses, birthday = birthday, categories = categories, country = country, department = department, displayName = displayName, emails = emails, familyName = familyName, formatted = formatted, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, id = id, ims = ims, locality = locality, middleName = middleName, name = name, nickname = nickname, note = note, organizations = organizations, phoneNumbers = phoneNumbers, photos = photos, postalCode = postalCode, region = region, streetAddress = streetAddress, title = title, urls = urls)
+  
+    __obj.asInstanceOf[Anon_Addresses]
+  }
+}
+

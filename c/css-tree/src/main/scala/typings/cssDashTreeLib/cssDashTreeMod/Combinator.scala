@@ -14,3 +14,16 @@ trait Combinator
   var type_Combinator: cssDashTreeLib.cssDashTreeLibStrings.Combinator
 }
 
+object Combinator {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Combinator,
+    loc: CssLocation = null
+  ): Combinator = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Combinator]
+  }
+}
+

@@ -10,3 +10,30 @@ trait WebResponseErrorDetails extends WebResponseCacheDetails {
   var error: java.lang.String
 }
 
+object WebResponseErrorDetails {
+  @scala.inline
+  def apply(
+    error: java.lang.String,
+    frameId: scala.Double,
+    fromCache: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    statusCode: scala.Double,
+    statusLine: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null,
+    ip: java.lang.String = null,
+    responseHeaders: js.Array[HttpHeader] = null
+  ): WebResponseErrorDetails = {
+    val __obj = js.Dynamic.literal(error = error, frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, `type` = `type`, url = url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[WebResponseErrorDetails]
+  }
+}
+

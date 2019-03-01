@@ -11,3 +11,12 @@ trait FollowJoinData extends js.Object {
   var un: java.lang.String
 }
 
+object FollowJoinData {
+  @scala.inline
+  def apply(id: java.lang.String, r: scala.Double, un: java.lang.String): FollowJoinData = {
+    val __obj = js.Dynamic.literal(id = id, r = r, un = un)
+  
+    __obj.asInstanceOf[FollowJoinData]
+  }
+}
+

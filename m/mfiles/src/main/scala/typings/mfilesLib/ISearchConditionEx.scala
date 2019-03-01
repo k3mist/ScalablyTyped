@@ -19,3 +19,19 @@ trait ISearchConditionEx extends js.Object {
   ): scala.Unit
 }
 
+object ISearchConditionEx {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ISearchConditionEx],
+    Enabled: scala.Boolean,
+    Ignored: scala.Boolean,
+    SearchCondition: ISearchCondition,
+    Set: js.Function4[ISearchCondition, scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
+    SpecialNULL: scala.Boolean
+  ): ISearchConditionEx = {
+    val __obj = js.Dynamic.literal(Clone = Clone, Enabled = Enabled, Ignored = Ignored, SearchCondition = SearchCondition, Set = Set, SpecialNULL = SpecialNULL)
+  
+    __obj.asInstanceOf[ISearchConditionEx]
+  }
+}
+

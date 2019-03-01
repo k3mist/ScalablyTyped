@@ -16,3 +16,12 @@ trait ASPxClientCardViewColumnCancelEventArgs extends ASPxClientCancelEventArgs 
   var column: ASPxClientCardViewColumn
 }
 
+object ASPxClientCardViewColumnCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, column: ASPxClientCardViewColumn): ASPxClientCardViewColumnCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, column = column)
+  
+    __obj.asInstanceOf[ASPxClientCardViewColumnCancelEventArgs]
+  }
+}
+

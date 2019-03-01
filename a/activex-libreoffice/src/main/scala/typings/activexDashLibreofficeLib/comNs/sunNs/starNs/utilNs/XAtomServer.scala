@@ -55,3 +55,27 @@ trait XAtomServer
   def getRecentAtoms(atomClass: scala.Double, atom: scala.Double): activexDashInteropLib.SafeArray[AtomDescription]
 }
 
+object XAtomServer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getAtom: js.Function3[scala.Double, java.lang.String, scala.Boolean, scala.Double],
+    getAtomDescriptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[AtomClassRequest], 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getClass: js.Function1[scala.Double, activexDashInteropLib.SafeArray[AtomDescription]],
+    getClasses: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[AtomDescription]]
+    ],
+    getRecentAtoms: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[AtomDescription]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAtomServer = {
+    val __obj = js.Dynamic.literal(acquire = acquire, getAtom = getAtom, getAtomDescriptions = getAtomDescriptions, getClass = getClass, getClasses = getClasses, getRecentAtoms = getRecentAtoms, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XAtomServer]
+  }
+}
+

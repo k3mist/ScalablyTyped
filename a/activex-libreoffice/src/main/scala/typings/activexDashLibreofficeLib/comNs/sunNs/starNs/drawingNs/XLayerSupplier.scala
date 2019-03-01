@@ -17,3 +17,18 @@ trait XLayerSupplier
   def getLayerManager(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XLayerSupplier {
+  @scala.inline
+  def apply(
+    LayerManager: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getLayerManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLayerSupplier = {
+    val __obj = js.Dynamic.literal(LayerManager = LayerManager, acquire = acquire, getLayerManager = getLayerManager, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XLayerSupplier]
+  }
+}
+

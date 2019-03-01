@@ -12,3 +12,17 @@ trait Anon_MechanismPassword extends js.Object {
   def response(): nodeLib.Buffer
 }
 
+object Anon_MechanismPassword {
+  @scala.inline
+  def apply(
+    mechanism: java.lang.String,
+    password: java.lang.String,
+    response: js.Function0[nodeLib.Buffer],
+    username: java.lang.String
+  ): Anon_MechanismPassword = {
+    val __obj = js.Dynamic.literal(mechanism = mechanism, password = password, response = response, username = username)
+  
+    __obj.asInstanceOf[Anon_MechanismPassword]
+  }
+}
+

@@ -11,3 +11,12 @@ trait File extends js.Object {
   var settings: Settings
 }
 
+object File {
+  @scala.inline
+  def apply(document: Document, schemaVersion: SchemaVersion, settings: Settings): File = {
+    val __obj = js.Dynamic.literal(document = document, schemaVersion = schemaVersion, settings = settings)
+  
+    __obj.asInstanceOf[File]
+  }
+}
+

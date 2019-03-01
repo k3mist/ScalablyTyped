@@ -61,3 +61,23 @@ trait ASPxClientWeekDays extends js.Object {
   var WorkDays: scala.Double
 }
 
+object ASPxClientWeekDays {
+  @scala.inline
+  def apply(
+    EveryDay: scala.Double,
+    Friday: scala.Double,
+    Monday: scala.Double,
+    Saturday: scala.Double,
+    Sunday: scala.Double,
+    Thursday: scala.Double,
+    Tuesday: scala.Double,
+    Wednesday: scala.Double,
+    WeekendDays: scala.Double,
+    WorkDays: scala.Double
+  ): ASPxClientWeekDays = {
+    val __obj = js.Dynamic.literal(EveryDay = EveryDay, Friday = Friday, Monday = Monday, Saturday = Saturday, Sunday = Sunday, Thursday = Thursday, Tuesday = Tuesday, Wednesday = Wednesday, WeekendDays = WeekendDays, WorkDays = WorkDays)
+  
+    __obj.asInstanceOf[ASPxClientWeekDays]
+  }
+}
+

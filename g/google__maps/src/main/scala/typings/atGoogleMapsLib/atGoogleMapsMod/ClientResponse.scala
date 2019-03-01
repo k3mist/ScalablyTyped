@@ -14,3 +14,16 @@ trait ClientResponse[T] extends js.Object {
   var status: scala.Double
 }
 
+object ClientResponse {
+  @scala.inline
+  def apply[T](
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    json: T,
+    status: scala.Double
+  ): ClientResponse[T] = {
+    val __obj = js.Dynamic.literal(headers = headers, json = json.asInstanceOf[js.Any], status = status)
+  
+    __obj.asInstanceOf[ClientResponse[T]]
+  }
+}
+

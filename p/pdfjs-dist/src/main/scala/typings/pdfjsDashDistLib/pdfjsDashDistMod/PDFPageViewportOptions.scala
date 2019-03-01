@@ -14,3 +14,19 @@ trait PDFPageViewportOptions extends js.Object {
   var viewBox: js.Any
 }
 
+object PDFPageViewportOptions {
+  @scala.inline
+  def apply(
+    dontFlip: scala.Boolean,
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    rotation: scala.Double,
+    scale: scala.Double,
+    viewBox: js.Any
+  ): PDFPageViewportOptions = {
+    val __obj = js.Dynamic.literal(dontFlip = dontFlip, offsetX = offsetX, offsetY = offsetY, rotation = rotation, scale = scale, viewBox = viewBox)
+  
+    __obj.asInstanceOf[PDFPageViewportOptions]
+  }
+}
+

@@ -15,3 +15,12 @@ trait ToggleTableCellAlignTopLeftCommand extends CommandWithBooleanStateBase {
   def execute(): scala.Boolean
 }
 
+object ToggleTableCellAlignTopLeftCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleTableCellAlignTopLeftCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[ToggleTableCellAlignTopLeftCommand]
+  }
+}
+

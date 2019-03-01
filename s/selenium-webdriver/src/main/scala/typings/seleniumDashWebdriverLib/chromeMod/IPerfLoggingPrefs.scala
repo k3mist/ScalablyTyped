@@ -13,3 +13,18 @@ trait IPerfLoggingPrefs extends js.Object {
   var tracingCategories: java.lang.String
 }
 
+object IPerfLoggingPrefs {
+  @scala.inline
+  def apply(
+    bufferUsageReportingInterval: scala.Double,
+    enableNetwork: scala.Boolean,
+    enablePage: scala.Boolean,
+    enableTimeline: scala.Boolean,
+    tracingCategories: java.lang.String
+  ): IPerfLoggingPrefs = {
+    val __obj = js.Dynamic.literal(bufferUsageReportingInterval = bufferUsageReportingInterval, enableNetwork = enableNetwork, enablePage = enablePage, enableTimeline = enableTimeline, tracingCategories = tracingCategories)
+  
+    __obj.asInstanceOf[IPerfLoggingPrefs]
+  }
+}
+

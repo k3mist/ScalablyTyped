@@ -19,3 +19,19 @@ trait IPathDirectional extends IPath {
   var reversed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IPathDirectional {
+  @scala.inline
+  def apply(
+    endPoints: js.Array[IPoint],
+    origin: IPoint,
+    `type`: java.lang.String,
+    layer: java.lang.String = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined
+  ): IPathDirectional = {
+    val __obj = js.Dynamic.literal(endPoints = endPoints, origin = origin, `type` = `type`)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    __obj.asInstanceOf[IPathDirectional]
+  }
+}
+

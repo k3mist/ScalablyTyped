@@ -28,3 +28,20 @@ trait XUIConfigurationListener
   def elementReplaced(Event: ConfigurationEvent): scala.Unit
 }
 
+object XUIConfigurationListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    elementInserted: js.Function1[ConfigurationEvent, scala.Unit],
+    elementRemoved: js.Function1[ConfigurationEvent, scala.Unit],
+    elementReplaced: js.Function1[ConfigurationEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUIConfigurationListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, elementInserted = elementInserted, elementRemoved = elementRemoved, elementReplaced = elementReplaced, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUIConfigurationListener]
+  }
+}
+

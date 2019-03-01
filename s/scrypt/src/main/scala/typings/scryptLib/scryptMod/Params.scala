@@ -11,3 +11,12 @@ trait Params extends js.Object {
   var r: scala.Double
 }
 
+object Params {
+  @scala.inline
+  def apply(N: scala.Double, p: scala.Double, r: scala.Double): Params = {
+    val __obj = js.Dynamic.literal(N = N, p = p, r = r)
+  
+    __obj.asInstanceOf[Params]
+  }
+}
+

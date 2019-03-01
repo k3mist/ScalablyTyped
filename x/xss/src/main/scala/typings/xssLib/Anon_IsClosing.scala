@@ -10,3 +10,12 @@ trait Anon_IsClosing extends js.Object {
   var position: scala.Double
 }
 
+object Anon_IsClosing {
+  @scala.inline
+  def apply(isClosing: scala.Boolean, position: scala.Double): Anon_IsClosing = {
+    val __obj = js.Dynamic.literal(isClosing = isClosing, position = position)
+  
+    __obj.asInstanceOf[Anon_IsClosing]
+  }
+}
+

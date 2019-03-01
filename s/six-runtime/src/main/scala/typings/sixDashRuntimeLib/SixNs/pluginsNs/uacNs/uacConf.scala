@@ -15,3 +15,20 @@ trait uacConf extends js.Object {
   def getPath(ctx: js.Object): java.lang.String
 }
 
+object uacConf {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String,
+    client_secret: java.lang.String,
+    enableMock: scala.Boolean,
+    failHook: js.Function3[stdLib.Error, js.Object, sixDashRuntimeLib.SixNs.next, js.Any],
+    getPath: js.Function1[js.Object, java.lang.String],
+    skipOffline: scala.Boolean,
+    whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
+  ): uacConf = {
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, enableMock = enableMock, failHook = failHook, getPath = getPath, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[uacConf]
+  }
+}
+

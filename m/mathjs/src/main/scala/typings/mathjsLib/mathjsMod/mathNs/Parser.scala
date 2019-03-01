@@ -13,3 +13,18 @@ trait Parser extends js.Object {
   def set(variable: java.lang.String, value: js.Any): scala.Unit
 }
 
+object Parser {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    eval: js.Function1[java.lang.String, js.Any],
+    get: js.Function1[java.lang.String, js.Any],
+    getAll: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]],
+    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): Parser = {
+    val __obj = js.Dynamic.literal(clear = clear, eval = eval, get = get, getAll = getAll, set = set)
+  
+    __obj.asInstanceOf[Parser]
+  }
+}
+

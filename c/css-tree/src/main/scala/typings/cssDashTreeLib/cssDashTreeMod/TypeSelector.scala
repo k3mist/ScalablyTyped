@@ -14,3 +14,16 @@ trait TypeSelector
   var type_TypeSelector: cssDashTreeLib.cssDashTreeLibStrings.TypeSelector
 }
 
+object TypeSelector {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.TypeSelector,
+    loc: CssLocation = null
+  ): TypeSelector = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[TypeSelector]
+  }
+}
+

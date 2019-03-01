@@ -16,3 +16,12 @@ trait ShowMessageParams extends js.Object {
   var `type`: MessageType
 }
 
+object ShowMessageParams {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: MessageType): ShowMessageParams = {
+    val __obj = js.Dynamic.literal(message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[ShowMessageParams]
+  }
+}
+

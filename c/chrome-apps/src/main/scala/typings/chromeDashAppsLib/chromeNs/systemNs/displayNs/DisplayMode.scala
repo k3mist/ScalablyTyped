@@ -35,3 +35,22 @@ trait DisplayMode extends js.Object {
   var widthInNativePixels: chromeDashAppsLib.chromeNs.integer
 }
 
+object DisplayMode {
+  @scala.inline
+  def apply(
+    deviceScaleFactor: chromeDashAppsLib.chromeNs.integer,
+    height: chromeDashAppsLib.chromeNs.integer,
+    heightInNativePixels: chromeDashAppsLib.chromeNs.integer,
+    isNative: scala.Boolean,
+    isSelected: scala.Boolean,
+    refreshRate: chromeDashAppsLib.chromeNs.double,
+    uiScale: chromeDashAppsLib.chromeNs.integer,
+    width: chromeDashAppsLib.chromeNs.integer,
+    widthInNativePixels: chromeDashAppsLib.chromeNs.integer
+  ): DisplayMode = {
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, height = height, heightInNativePixels = heightInNativePixels, isNative = isNative, isSelected = isSelected, refreshRate = refreshRate, uiScale = uiScale, width = width, widthInNativePixels = widthInNativePixels)
+  
+    __obj.asInstanceOf[DisplayMode]
+  }
+}
+

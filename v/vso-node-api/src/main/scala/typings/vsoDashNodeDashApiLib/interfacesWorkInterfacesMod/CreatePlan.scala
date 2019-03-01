@@ -24,3 +24,12 @@ trait CreatePlan extends js.Object {
   var `type`: PlanType
 }
 
+object CreatePlan {
+  @scala.inline
+  def apply(description: java.lang.String, name: java.lang.String, properties: js.Any, `type`: PlanType): CreatePlan = {
+    val __obj = js.Dynamic.literal(description = description, name = name, properties = properties, `type` = `type`)
+  
+    __obj.asInstanceOf[CreatePlan]
+  }
+}
+

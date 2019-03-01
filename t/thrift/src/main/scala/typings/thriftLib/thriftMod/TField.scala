@@ -11,3 +11,12 @@ trait TField extends js.Object {
   var ftype: thriftLib.thriftMod.ThriftNs.Type
 }
 
+object TField {
+  @scala.inline
+  def apply(fid: scala.Double, fname: java.lang.String, ftype: thriftLib.thriftMod.ThriftNs.Type): TField = {
+    val __obj = js.Dynamic.literal(fid = fid, fname = fname, ftype = ftype)
+  
+    __obj.asInstanceOf[TField]
+  }
+}
+

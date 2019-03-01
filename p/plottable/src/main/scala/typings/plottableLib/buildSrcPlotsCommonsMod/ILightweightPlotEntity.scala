@@ -16,3 +16,21 @@ trait ILightweightPlotEntity extends js.Object {
   var validDatumIndex: scala.Double
 }
 
+object ILightweightPlotEntity {
+  @scala.inline
+  def apply(
+    component: plottableLib.buildSrcPlotsPlotMod.Plot,
+    dataset: plottableLib.buildSrcCoreDatasetMod.Dataset,
+    datasetIndex: scala.Double,
+    datum: js.Any,
+    drawer: plottableLib.buildSrcDrawersDrawerMod.IDrawer,
+    index: scala.Double,
+    position: plottableLib.buildSrcCoreInterfacesMod.Point,
+    validDatumIndex: scala.Double
+  ): ILightweightPlotEntity = {
+    val __obj = js.Dynamic.literal(component = component, dataset = dataset, datasetIndex = datasetIndex, datum = datum, drawer = drawer, index = index, position = position, validDatumIndex = validDatumIndex)
+  
+    __obj.asInstanceOf[ILightweightPlotEntity]
+  }
+}
+

@@ -16,3 +16,12 @@ trait ContributedFeatureValueRule extends js.Object {
   var properties: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object ContributedFeatureValueRule {
+  @scala.inline
+  def apply(name: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[js.Any]): ContributedFeatureValueRule = {
+    val __obj = js.Dynamic.literal(name = name, properties = properties)
+  
+    __obj.asInstanceOf[ContributedFeatureValueRule]
+  }
+}
+

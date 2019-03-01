@@ -11,3 +11,16 @@ trait IMODERATOR_MESSAGE extends js.Object {
   var sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
 }
 
+object IMODERATOR_MESSAGE {
+  @scala.inline
+  def apply(
+    data: js.Object,
+    message: java.lang.String,
+    sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
+  ): IMODERATOR_MESSAGE = {
+    val __obj = js.Dynamic.literal(data = data, message = message, sender = sender)
+  
+    __obj.asInstanceOf[IMODERATOR_MESSAGE]
+  }
+}
+

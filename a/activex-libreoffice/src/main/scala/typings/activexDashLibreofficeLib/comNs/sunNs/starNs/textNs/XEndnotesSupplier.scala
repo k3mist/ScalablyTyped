@@ -18,3 +18,20 @@ trait XEndnotesSupplier
   def getEndnotes(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XEndnotesSupplier {
+  @scala.inline
+  def apply(
+    EndnoteSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    Endnotes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getEndnoteSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getEndnotes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEndnotesSupplier = {
+    val __obj = js.Dynamic.literal(EndnoteSettings = EndnoteSettings, Endnotes = Endnotes, acquire = acquire, getEndnoteSettings = getEndnoteSettings, getEndnotes = getEndnotes, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XEndnotesSupplier]
+  }
+}
+

@@ -25,3 +25,17 @@ trait DataPilotFieldAutoShowInfo extends js.Object {
   var ShowItemsMode: scala.Double
 }
 
+object DataPilotFieldAutoShowInfo {
+  @scala.inline
+  def apply(
+    DataField: java.lang.String,
+    IsEnabled: scala.Boolean,
+    ItemCount: scala.Double,
+    ShowItemsMode: scala.Double
+  ): DataPilotFieldAutoShowInfo = {
+    val __obj = js.Dynamic.literal(DataField = DataField, IsEnabled = IsEnabled, ItemCount = ItemCount, ShowItemsMode = ShowItemsMode)
+  
+    __obj.asInstanceOf[DataPilotFieldAutoShowInfo]
+  }
+}
+

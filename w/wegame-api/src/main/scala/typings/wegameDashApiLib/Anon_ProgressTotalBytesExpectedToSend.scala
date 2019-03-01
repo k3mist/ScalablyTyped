@@ -11,3 +11,12 @@ trait Anon_ProgressTotalBytesExpectedToSend extends js.Object {
   var totalBytesSent: scala.Double
 }
 
+object Anon_ProgressTotalBytesExpectedToSend {
+  @scala.inline
+  def apply(progress: scala.Double, totalBytesExpectedToSend: scala.Double, totalBytesSent: scala.Double): Anon_ProgressTotalBytesExpectedToSend = {
+    val __obj = js.Dynamic.literal(progress = progress, totalBytesExpectedToSend = totalBytesExpectedToSend, totalBytesSent = totalBytesSent)
+  
+    __obj.asInstanceOf[Anon_ProgressTotalBytesExpectedToSend]
+  }
+}
+

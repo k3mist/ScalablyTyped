@@ -78,3 +78,32 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ObjectSymbol3DLayerProperties {
+  @scala.inline
+  def apply(
+    anchor: java.lang.String = null,
+    anchorPosition: ObjectSymbol3DLayerAnchorPosition = null,
+    depth: scala.Int | scala.Double = null,
+    heading: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    material: js.Any = null,
+    resource: ObjectSymbol3DLayerResource = null,
+    roll: scala.Int | scala.Double = null,
+    tilt: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ObjectSymbol3DLayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ObjectSymbol3DLayerProperties]
+  }
+}
+

@@ -52,3 +52,24 @@ trait Iterator[T] extends Iterable[T] {
   def reset(): scala.Unit
 }
 
+object Iterator {
+  @scala.inline
+  def apply[T](
+    all: js.Function1[js.Function1[/* x */ T, scala.Boolean], scala.Boolean],
+    any: js.Function1[js.Function1[/* x */ T, scala.Boolean], scala.Boolean],
+    count: scala.Double,
+    each: js.Function1[js.Function1[/* x */ T, scala.Unit], scala.Unit],
+    filter: js.Function1[js.Function1[/* x */ T, scala.Boolean], Iterator[T]],
+    first: js.Function0[T],
+    iterator: Iterator[T],
+    key: js.Any,
+    next: js.Function0[scala.Boolean],
+    reset: js.Function0[scala.Unit],
+    value: T
+  ): Iterator[T] = {
+    val __obj = js.Dynamic.literal(all = all, any = any, count = count, each = each, filter = filter, first = first, iterator = iterator, key = key, next = next, reset = reset, value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Iterator[T]]
+  }
+}
+

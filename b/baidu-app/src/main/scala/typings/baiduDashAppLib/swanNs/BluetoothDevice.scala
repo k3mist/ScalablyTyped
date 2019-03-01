@@ -27,3 +27,17 @@ trait BluetoothDevice extends js.Object {
   var name: java.lang.String
 }
 
+object BluetoothDevice {
+  @scala.inline
+  def apply(
+    RSSI: scala.Double,
+    advertisData: stdLib.ArrayBuffer,
+    deviceId: java.lang.String,
+    name: java.lang.String
+  ): BluetoothDevice = {
+    val __obj = js.Dynamic.literal(RSSI = RSSI, advertisData = advertisData, deviceId = deviceId, name = name)
+  
+    __obj.asInstanceOf[BluetoothDevice]
+  }
+}
+

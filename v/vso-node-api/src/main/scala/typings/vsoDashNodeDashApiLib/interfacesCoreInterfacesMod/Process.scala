@@ -13,3 +13,20 @@ trait Process extends ProcessReference {
   var `type`: ProcessType
 }
 
+object Process {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    description: java.lang.String,
+    id: java.lang.String,
+    isDefault: scala.Boolean,
+    name: java.lang.String,
+    `type`: ProcessType,
+    url: java.lang.String
+  ): Process = {
+    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, isDefault = isDefault, name = name, `type` = `type`, url = url)
+  
+    __obj.asInstanceOf[Process]
+  }
+}
+

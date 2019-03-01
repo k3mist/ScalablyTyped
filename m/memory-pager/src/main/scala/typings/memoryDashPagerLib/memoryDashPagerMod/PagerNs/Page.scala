@@ -10,3 +10,12 @@ trait Page extends js.Object {
   var offset: scala.Double
 }
 
+object Page {
+  @scala.inline
+  def apply(buffer: nodeLib.Buffer, offset: scala.Double): Page = {
+    val __obj = js.Dynamic.literal(buffer = buffer, offset = offset)
+  
+    __obj.asInstanceOf[Page]
+  }
+}
+

@@ -12,3 +12,18 @@ trait Anon_Host extends js.Object {
   var token: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Host {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    port: scala.Double,
+    sandbox: js.UndefOr[scala.Boolean] = js.undefined,
+    token: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Host = {
+    val __obj = js.Dynamic.literal(host = host, port = port)
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox)
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Anon_Host]
+  }
+}
+

@@ -28,3 +28,24 @@ trait XEnhancedMouseClickBroadcaster
   def removeEnhancedMouseClickHandler(aListener: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler): scala.Unit
 }
 
+object XEnhancedMouseClickBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEnhancedMouseClickHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEnhancedMouseClickHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XEnhancedMouseClickHandler, 
+      scala.Unit
+    ]
+  ): XEnhancedMouseClickBroadcaster = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addEnhancedMouseClickHandler = addEnhancedMouseClickHandler, queryInterface = queryInterface, release = release, removeEnhancedMouseClickHandler = removeEnhancedMouseClickHandler)
+  
+    __obj.asInstanceOf[XEnhancedMouseClickBroadcaster]
+  }
+}
+

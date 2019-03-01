@@ -13,3 +13,18 @@ trait Filter extends js.Object {
   var output: java.lang.String
 }
 
+object Filter {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    input: java.lang.String,
+    multipleInputs: scala.Boolean,
+    multipleOutputs: scala.Boolean,
+    output: java.lang.String
+  ): Filter = {
+    val __obj = js.Dynamic.literal(description = description, input = input, multipleInputs = multipleInputs, multipleOutputs = multipleOutputs, output = output)
+  
+    __obj.asInstanceOf[Filter]
+  }
+}
+

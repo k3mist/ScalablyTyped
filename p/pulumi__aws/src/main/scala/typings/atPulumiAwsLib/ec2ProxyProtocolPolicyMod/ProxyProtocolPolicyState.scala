@@ -20,3 +20,16 @@ trait ProxyProtocolPolicyState extends js.Object {
   val loadBalancer: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object ProxyProtocolPolicyState {
+  @scala.inline
+  def apply(
+    instancePorts: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    loadBalancer: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): ProxyProtocolPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (instancePorts != null) __obj.updateDynamic("instancePorts")(instancePorts.asInstanceOf[js.Any])
+    if (loadBalancer != null) __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProxyProtocolPolicyState]
+  }
+}
+

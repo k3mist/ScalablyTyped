@@ -11,3 +11,12 @@ trait VisualConstructorOptions
   var host: IVisualHost
 }
 
+object VisualConstructorOptions {
+  @scala.inline
+  def apply(element: stdLib.HTMLElement, host: IVisualHost, module: js.Any = null): VisualConstructorOptions = {
+    val __obj = js.Dynamic.literal(element = element, host = host)
+    if (module != null) __obj.updateDynamic("module")(module)
+    __obj.asInstanceOf[VisualConstructorOptions]
+  }
+}
+

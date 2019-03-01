@@ -29,3 +29,17 @@ trait ApplicableRefactorInfo extends js.Object {
   var name: java.lang.String
 }
 
+object ApplicableRefactorInfo {
+  @scala.inline
+  def apply(
+    actions: js.Array[RefactorActionInfo],
+    description: java.lang.String,
+    name: java.lang.String,
+    inlineable: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApplicableRefactorInfo = {
+    val __obj = js.Dynamic.literal(actions = actions, description = description, name = name)
+    if (!js.isUndefined(inlineable)) __obj.updateDynamic("inlineable")(inlineable)
+    __obj.asInstanceOf[ApplicableRefactorInfo]
+  }
+}
+

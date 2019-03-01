@@ -10,3 +10,15 @@ trait UpsertRetInsertRet extends js.Object {
   def update(updateOrReplaceExpr: js.Any): UpsertRetInsertRetUpdateRet
 }
 
+object UpsertRetInsertRet {
+  @scala.inline
+  def apply(
+    replace: js.Function1[/* updateOrReplaceExpr */ js.Any, UpsertRetInsertRetUpdateRet],
+    update: js.Function1[js.Any, UpsertRetInsertRetUpdateRet]
+  ): UpsertRetInsertRet = {
+    val __obj = js.Dynamic.literal(replace = replace, update = update)
+  
+    __obj.asInstanceOf[UpsertRetInsertRet]
+  }
+}
+

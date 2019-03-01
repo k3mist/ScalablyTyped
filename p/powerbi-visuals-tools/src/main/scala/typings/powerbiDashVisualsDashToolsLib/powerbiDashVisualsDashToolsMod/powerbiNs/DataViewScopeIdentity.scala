@@ -15,3 +15,16 @@ trait DataViewScopeIdentity
   var kind: DataRepetitionKind
 }
 
+object DataViewScopeIdentity {
+  @scala.inline
+  def apply(
+    expr: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr,
+    key: java.lang.String,
+    kind: DataRepetitionKind
+  ): DataViewScopeIdentity = {
+    val __obj = js.Dynamic.literal(expr = expr, key = key, kind = kind)
+  
+    __obj.asInstanceOf[DataViewScopeIdentity]
+  }
+}
+

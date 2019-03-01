@@ -21,3 +21,18 @@ trait urlUtilsAddProxyRuleRule
   var urlPrefix: java.lang.String
 }
 
+object urlUtilsAddProxyRuleRule {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    proxyUrl: java.lang.String,
+    urlPrefix: java.lang.String
+  ): urlUtilsAddProxyRuleRule = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, proxyUrl = proxyUrl, urlPrefix = urlPrefix)
+  
+    __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
+  }
+}
+

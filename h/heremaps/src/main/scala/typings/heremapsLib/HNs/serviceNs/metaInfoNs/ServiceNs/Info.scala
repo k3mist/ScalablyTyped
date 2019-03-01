@@ -22,3 +22,19 @@ trait Info extends js.Object {
   var tiletypes: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object Info {
+  @scala.inline
+  def apply(
+    formats: org.scalablytyped.runtime.StringDictionary[js.Any],
+    languages: org.scalablytyped.runtime.StringDictionary[js.Any],
+    maps: org.scalablytyped.runtime.StringDictionary[js.Any],
+    resolutions: org.scalablytyped.runtime.StringDictionary[js.Any],
+    schemes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    tiletypes: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): Info = {
+    val __obj = js.Dynamic.literal(formats = formats, languages = languages, maps = maps, resolutions = resolutions, schemes = schemes, tiletypes = tiletypes)
+  
+    __obj.asInstanceOf[Info]
+  }
+}
+

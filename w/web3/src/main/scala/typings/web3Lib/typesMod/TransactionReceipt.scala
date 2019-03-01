@@ -20,3 +20,26 @@ trait TransactionReceipt extends js.Object {
   var transactionIndex: scala.Double
 }
 
+object TransactionReceipt {
+  @scala.inline
+  def apply(
+    blockHash: java.lang.String,
+    blockNumber: scala.Double,
+    contractAddress: java.lang.String,
+    cumulativeGasUsed: scala.Double,
+    from: java.lang.String,
+    gasUsed: scala.Double,
+    status: scala.Boolean,
+    to: java.lang.String,
+    transactionHash: java.lang.String,
+    transactionIndex: scala.Double,
+    events: org.scalablytyped.runtime.StringDictionary[EventLog] = null,
+    logs: js.Array[Log] = null
+  ): TransactionReceipt = {
+    val __obj = js.Dynamic.literal(blockHash = blockHash, blockNumber = blockNumber, contractAddress = contractAddress, cumulativeGasUsed = cumulativeGasUsed, from = from, gasUsed = gasUsed, status = status, to = to, transactionHash = transactionHash, transactionIndex = transactionIndex)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (logs != null) __obj.updateDynamic("logs")(logs)
+    __obj.asInstanceOf[TransactionReceipt]
+  }
+}
+

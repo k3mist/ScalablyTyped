@@ -14,3 +14,21 @@ trait MountSettings extends js.Object {
   var Type: MountType
 }
 
+object MountSettings {
+  @scala.inline
+  def apply(
+    Source: java.lang.String,
+    Target: java.lang.String,
+    Type: MountType,
+    BindOptions: dockerodeLib.Anon_Propagation = null,
+    Consistency: MountConsistency = null,
+    ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): MountSettings = {
+    val __obj = js.Dynamic.literal(Source = Source, Target = Target, Type = Type)
+    if (BindOptions != null) __obj.updateDynamic("BindOptions")(BindOptions)
+    if (Consistency != null) __obj.updateDynamic("Consistency")(Consistency)
+    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.asInstanceOf[MountSettings]
+  }
+}
+

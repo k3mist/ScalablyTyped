@@ -24,3 +24,17 @@ trait BaiduChannelArgs extends js.Object {
   val secretKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object BaiduChannelArgs {
+  @scala.inline
+  def apply(
+    apiKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    applicationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    secretKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null
+  ): BaiduChannelArgs = {
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], applicationId = applicationId.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaiduChannelArgs]
+  }
+}
+

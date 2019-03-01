@@ -10,3 +10,15 @@ trait Anon_Effect
   var effect: atOracleOraclejetLib.ojanimationMod.AnimationMethods
 }
 
+object Anon_Effect {
+  @scala.inline
+  def apply(
+    effect: atOracleOraclejetLib.ojanimationMod.AnimationMethods,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Effect = {
+    val __obj = js.Dynamic.literal(effect = effect)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Effect]
+  }
+}
+

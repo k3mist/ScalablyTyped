@@ -12,3 +12,17 @@ trait IntrospectionEnumType extends IntrospectionType {
   var name: java.lang.String
 }
 
+object IntrospectionEnumType {
+  @scala.inline
+  def apply(
+    enumValues: js.Array[IntrospectionEnumValue],
+    kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.ENUM,
+    name: java.lang.String,
+    description: java.lang.String = null
+  ): IntrospectionEnumType = {
+    val __obj = js.Dynamic.literal(enumValues = enumValues, kind = kind, name = name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionEnumType]
+  }
+}
+

@@ -42,3 +42,18 @@ trait ServicePort extends js.Object {
   val targetPort: scala.Double | java.lang.String
 }
 
+object ServicePort {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    nodePort: scala.Double,
+    port: scala.Double,
+    protocol: java.lang.String,
+    targetPort: scala.Double | java.lang.String
+  ): ServicePort = {
+    val __obj = js.Dynamic.literal(name = name, nodePort = nodePort, port = port, protocol = protocol, targetPort = targetPort.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ServicePort]
+  }
+}
+

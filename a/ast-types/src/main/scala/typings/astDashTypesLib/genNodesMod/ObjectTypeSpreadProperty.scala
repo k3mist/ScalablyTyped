@@ -14,3 +14,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeSpreadProperty
 }
 
+object ObjectTypeSpreadProperty {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.FlowTypeKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeSpreadProperty
+  ): ObjectTypeSpreadProperty = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+  
+    __obj.asInstanceOf[ObjectTypeSpreadProperty]
+  }
+}
+

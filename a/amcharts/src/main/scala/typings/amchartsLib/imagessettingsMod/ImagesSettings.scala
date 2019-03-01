@@ -100,3 +100,31 @@ trait ImagesSettings extends js.Object {
   var selectedScale: scala.Double
 }
 
+object ImagesSettings {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    balloonText: java.lang.String,
+    centered: scala.Boolean,
+    color: java.lang.String,
+    descriptionWindowHeight: scala.Double,
+    descriptionWindowWidth: scala.Double,
+    descriptionWindowX: scala.Double,
+    descriptionWindowY: scala.Double,
+    labelColor: java.lang.String,
+    labelPosition: java.lang.String,
+    labelRollOverColor: java.lang.String,
+    labelfontSize: java.lang.String,
+    outlineAlpha: scala.Double,
+    outlineColor: java.lang.String,
+    outlineThickness: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverScale: scala.Double,
+    selectedScale: scala.Double
+  ): ImagesSettings = {
+    val __obj = js.Dynamic.literal(alpha = alpha, balloonText = balloonText, centered = centered, color = color, descriptionWindowHeight = descriptionWindowHeight, descriptionWindowWidth = descriptionWindowWidth, descriptionWindowX = descriptionWindowX, descriptionWindowY = descriptionWindowY, labelColor = labelColor, labelPosition = labelPosition, labelRollOverColor = labelRollOverColor, labelfontSize = labelfontSize, outlineAlpha = outlineAlpha, outlineColor = outlineColor, outlineThickness = outlineThickness, rollOverColor = rollOverColor, rollOverScale = rollOverScale, selectedScale = selectedScale)
+  
+    __obj.asInstanceOf[ImagesSettings]
+  }
+}
+

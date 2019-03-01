@@ -11,3 +11,12 @@ trait CustomScrollAction extends js.Object {
   var top: scala.Double
 }
 
+object CustomScrollAction {
+  @scala.inline
+  def apply(el: stdLib.Element, left: scala.Double, top: scala.Double): CustomScrollAction = {
+    val __obj = js.Dynamic.literal(el = el, left = left, top = top)
+  
+    __obj.asInstanceOf[CustomScrollAction]
+  }
+}
+

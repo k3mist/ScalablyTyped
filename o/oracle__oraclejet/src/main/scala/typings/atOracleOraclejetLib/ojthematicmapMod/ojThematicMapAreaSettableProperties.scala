@@ -19,3 +19,23 @@ trait ojThematicMapAreaSettableProperties
   var svgStyle: js.Object
 }
 
+object ojThematicMapAreaSettableProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    color: java.lang.String,
+    label: java.lang.String,
+    labelStyle: js.Object,
+    location: java.lang.String,
+    opacity: scala.Double,
+    selectable: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    shortDesc: java.lang.String,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object
+  ): ojThematicMapAreaSettableProperties = {
+    val __obj = js.Dynamic.literal(categories = categories, color = color, label = label, labelStyle = labelStyle, location = location, opacity = opacity, selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc, svgClassName = svgClassName, svgStyle = svgStyle)
+  
+    __obj.asInstanceOf[ojThematicMapAreaSettableProperties]
+  }
+}
+

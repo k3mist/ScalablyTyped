@@ -25,3 +25,12 @@ trait PortworxVolumeSource extends js.Object {
   val volumeID: java.lang.String
 }
 
+object PortworxVolumeSource {
+  @scala.inline
+  def apply(fsType: java.lang.String, readOnly: scala.Boolean, volumeID: java.lang.String): PortworxVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, readOnly = readOnly, volumeID = volumeID)
+  
+    __obj.asInstanceOf[PortworxVolumeSource]
+  }
+}
+

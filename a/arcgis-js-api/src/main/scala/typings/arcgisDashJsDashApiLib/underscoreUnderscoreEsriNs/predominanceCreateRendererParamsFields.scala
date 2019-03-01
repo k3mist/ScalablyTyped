@@ -21,3 +21,18 @@ trait predominanceCreateRendererParamsFields
   var name: java.lang.String
 }
 
+object predominanceCreateRendererParamsFields {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String = null
+  ): predominanceCreateRendererParamsFields = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[predominanceCreateRendererParamsFields]
+  }
+}
+

@@ -15,3 +15,20 @@ trait IKnownFoldersStatics extends js.Object {
   var videosLibrary: StorageFolder
 }
 
+object IKnownFoldersStatics {
+  @scala.inline
+  def apply(
+    documentsLibrary: StorageFolder,
+    homeGroup: StorageFolder,
+    mediaServerDevices: StorageFolder,
+    musicLibrary: StorageFolder,
+    picturesLibrary: StorageFolder,
+    removableDevices: StorageFolder,
+    videosLibrary: StorageFolder
+  ): IKnownFoldersStatics = {
+    val __obj = js.Dynamic.literal(documentsLibrary = documentsLibrary, homeGroup = homeGroup, mediaServerDevices = mediaServerDevices, musicLibrary = musicLibrary, picturesLibrary = picturesLibrary, removableDevices = removableDevices, videosLibrary = videosLibrary)
+  
+    __obj.asInstanceOf[IKnownFoldersStatics]
+  }
+}
+

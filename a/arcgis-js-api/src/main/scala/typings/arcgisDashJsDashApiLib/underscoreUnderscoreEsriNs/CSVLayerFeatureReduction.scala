@@ -15,3 +15,17 @@ trait CSVLayerFeatureReduction
   var `type`: java.lang.String
 }
 
+object CSVLayerFeatureReduction {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): CSVLayerFeatureReduction = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[CSVLayerFeatureReduction]
+  }
+}
+

@@ -12,3 +12,17 @@ trait ResourceError extends js.Object {
   var url: java.lang.String
 }
 
+object ResourceError {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String,
+    errorString: java.lang.String,
+    id: scala.Double,
+    url: java.lang.String
+  ): ResourceError = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorString = errorString, id = id, url = url)
+  
+    __obj.asInstanceOf[ResourceError]
+  }
+}
+

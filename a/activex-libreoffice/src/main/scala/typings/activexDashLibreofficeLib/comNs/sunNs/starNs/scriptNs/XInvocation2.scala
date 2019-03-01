@@ -31,3 +31,34 @@ trait XInvocation2 extends XInvocation {
   def getMemberNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XInvocation2 {
+  @scala.inline
+  def apply(
+    Info: activexDashInteropLib.SafeArray[InvocationInfo],
+    Introspection: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XIntrospectionAccess,
+    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getInfo: js.Function0[activexDashInteropLib.SafeArray[InvocationInfo]],
+    getInfoForName: js.Function2[java.lang.String, scala.Boolean, InvocationInfo],
+    getIntrospection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XIntrospectionAccess],
+    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getValue: js.Function1[java.lang.String, js.Any],
+    hasMethod: js.Function1[java.lang.String, scala.Boolean],
+    hasProperty: js.Function1[java.lang.String, scala.Boolean],
+    invoke: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      js.Any
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XInvocation2 = {
+    val __obj = js.Dynamic.literal(Info = Info, Introspection = Introspection, MemberNames = MemberNames, acquire = acquire, getInfo = getInfo, getInfoForName = getInfoForName, getIntrospection = getIntrospection, getMemberNames = getMemberNames, getValue = getValue, hasMethod = hasMethod, hasProperty = hasProperty, invoke = invoke, queryInterface = queryInterface, release = release, setValue = setValue)
+  
+    __obj.asInstanceOf[XInvocation2]
+  }
+}
+

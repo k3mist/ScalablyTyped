@@ -13,3 +13,12 @@ trait DockingData extends js.Object {
   var bFloating: scala.Boolean
 }
 
+object DockingData {
+  @scala.inline
+  def apply(TrackingRectangle: Rectangle, bFloating: scala.Boolean): DockingData = {
+    val __obj = js.Dynamic.literal(TrackingRectangle = TrackingRectangle, bFloating = bFloating)
+  
+    __obj.asInstanceOf[DockingData]
+  }
+}
+

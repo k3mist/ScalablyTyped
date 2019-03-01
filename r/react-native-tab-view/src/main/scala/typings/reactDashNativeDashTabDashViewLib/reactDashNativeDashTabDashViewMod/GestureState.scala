@@ -18,3 +18,23 @@ trait GestureState extends js.Object {
   var y0: scala.Double
 }
 
+object GestureState {
+  @scala.inline
+  def apply(
+    dx: scala.Double,
+    dy: scala.Double,
+    moveX: scala.Double,
+    moveY: scala.Double,
+    numberActiveTouches: scala.Double,
+    stateID: scala.Double,
+    vx: scala.Double,
+    vy: scala.Double,
+    x0: scala.Double,
+    y0: scala.Double
+  ): GestureState = {
+    val __obj = js.Dynamic.literal(dx = dx, dy = dy, moveX = moveX, moveY = moveY, numberActiveTouches = numberActiveTouches, stateID = stateID, vx = vx, vy = vy, x0 = x0, y0 = y0)
+  
+    __obj.asInstanceOf[GestureState]
+  }
+}
+

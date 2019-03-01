@@ -82,3 +82,26 @@ trait TextPortion
   var TextPortionType: java.lang.String
 }
 
+object TextPortion {
+  @scala.inline
+  def apply(
+    Bookmark: XTextContent,
+    ControlCharacter: scala.Double,
+    DocumentIndexMark: XTextContent,
+    Footnote: XFootnote,
+    InContentMetadata: XTextContent,
+    IsCollapsed: scala.Boolean,
+    IsStart: scala.Boolean,
+    ReferenceMark: XTextContent,
+    TextField: XTextField,
+    TextPortionType: java.lang.String,
+    XTolerantMultiPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XTolerantMultiPropertySet = null,
+    TextRange: TextRange = null
+  ): TextPortion = {
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, ControlCharacter = ControlCharacter, DocumentIndexMark = DocumentIndexMark, Footnote = Footnote, InContentMetadata = InContentMetadata, IsCollapsed = IsCollapsed, IsStart = IsStart, ReferenceMark = ReferenceMark, TextField = TextField, TextPortionType = TextPortionType)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTolerantMultiPropertySet)
+    js.Dynamic.global.Object.assign(__obj, TextRange)
+    __obj.asInstanceOf[TextPortion]
+  }
+}
+

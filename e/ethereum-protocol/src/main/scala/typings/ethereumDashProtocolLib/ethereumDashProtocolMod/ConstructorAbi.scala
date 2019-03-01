@@ -12,3 +12,17 @@ trait ConstructorAbi extends FunctionAbi {
   var `type`: AbiType
 }
 
+object ConstructorAbi {
+  @scala.inline
+  def apply(
+    inputs: js.Array[DataItem],
+    payable: scala.Boolean,
+    stateMutability: ConstructorStateMutability,
+    `type`: AbiType
+  ): ConstructorAbi = {
+    val __obj = js.Dynamic.literal(inputs = inputs, payable = payable, stateMutability = stateMutability, `type` = `type`)
+  
+    __obj.asInstanceOf[ConstructorAbi]
+  }
+}
+

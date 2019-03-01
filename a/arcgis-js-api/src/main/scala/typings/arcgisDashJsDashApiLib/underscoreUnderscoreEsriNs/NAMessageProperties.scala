@@ -20,3 +20,13 @@ trait NAMessageProperties extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object NAMessageProperties {
+  @scala.inline
+  def apply(description: java.lang.String = null, `type`: js.Any = null): NAMessageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NAMessageProperties]
+  }
+}
+

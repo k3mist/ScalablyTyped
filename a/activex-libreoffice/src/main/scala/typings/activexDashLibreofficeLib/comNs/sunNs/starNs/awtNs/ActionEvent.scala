@@ -20,3 +20,15 @@ trait ActionEvent
   var ActionCommand: java.lang.String
 }
 
+object ActionEvent {
+  @scala.inline
+  def apply(
+    ActionCommand: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ActionEvent = {
+    val __obj = js.Dynamic.literal(ActionCommand = ActionCommand, Source = Source)
+  
+    __obj.asInstanceOf[ActionEvent]
+  }
+}
+

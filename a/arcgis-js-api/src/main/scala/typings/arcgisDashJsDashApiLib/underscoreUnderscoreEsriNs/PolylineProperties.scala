@@ -22,3 +22,20 @@ trait PolylineProperties extends GeometryProperties {
   var paths: js.UndefOr[js.Array[js.Array[js.Array[scala.Double]]]] = js.undefined
 }
 
+object PolylineProperties {
+  @scala.inline
+  def apply(
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    paths: js.Array[js.Array[js.Array[scala.Double]]] = null,
+    spatialReference: SpatialReferenceProperties = null
+  ): PolylineProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[PolylineProperties]
+  }
+}
+

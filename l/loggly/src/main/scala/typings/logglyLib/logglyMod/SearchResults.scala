@@ -11,3 +11,12 @@ trait SearchResults extends js.Object {
   var total_events: scala.Double
 }
 
+object SearchResults {
+  @scala.inline
+  def apply(events: js.Array[SearchResultsEvent], page: scala.Double, total_events: scala.Double): SearchResults = {
+    val __obj = js.Dynamic.literal(events = events, page = page, total_events = total_events)
+  
+    __obj.asInstanceOf[SearchResults]
+  }
+}
+

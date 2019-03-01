@@ -99,3 +99,31 @@ trait FeatureLayerCapabilitiesQuery
   var supportsStatistics: scala.Boolean
 }
 
+object FeatureLayerCapabilitiesQuery {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    supportsCentroid: scala.Boolean,
+    supportsDistance: scala.Boolean,
+    supportsDistinct: scala.Boolean,
+    supportsExtent: scala.Boolean,
+    supportsGeometryProperties: scala.Boolean,
+    supportsHavingClause: scala.Boolean,
+    supportsHistoricMoment: scala.Boolean,
+    supportsOrderBy: scala.Boolean,
+    supportsPagination: scala.Boolean,
+    supportsQuantization: scala.Boolean,
+    supportsQuantizationEditMode: scala.Boolean,
+    supportsResultType: scala.Boolean,
+    supportsSqlExpression: scala.Boolean,
+    supportsStandardizedQueriesOnly: scala.Boolean,
+    supportsStatistics: scala.Boolean
+  ): FeatureLayerCapabilitiesQuery = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsCentroid = supportsCentroid, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
+  
+    __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
+  }
+}
+

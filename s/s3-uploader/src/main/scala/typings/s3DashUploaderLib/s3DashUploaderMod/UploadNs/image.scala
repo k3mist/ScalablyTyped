@@ -17,3 +17,22 @@ trait image extends js.Object {
   var width: scala.Double
 }
 
+object image {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    format: java.lang.String,
+    height: scala.Double,
+    original: scala.Boolean,
+    path: java.lang.String,
+    size: java.lang.String,
+    src: java.lang.String,
+    url: java.lang.String,
+    width: scala.Double
+  ): image = {
+    val __obj = js.Dynamic.literal(etag = etag, format = format, height = height, original = original, path = path, size = size, src = src, url = url, width = width)
+  
+    __obj.asInstanceOf[image]
+  }
+}
+

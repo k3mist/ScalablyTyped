@@ -17,3 +17,22 @@ trait ReGeocodePoi extends js.Object {
   var `type`: java.lang.String
 }
 
+object ReGeocodePoi {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    businessArea: java.lang.String,
+    direction: java.lang.String,
+    distance: scala.Double,
+    id: java.lang.String,
+    location: LngLat,
+    name: java.lang.String,
+    tel: java.lang.String,
+    `type`: java.lang.String
+  ): ReGeocodePoi = {
+    val __obj = js.Dynamic.literal(address = address, businessArea = businessArea, direction = direction, distance = distance, id = id, location = location, name = name, tel = tel, `type` = `type`)
+  
+    __obj.asInstanceOf[ReGeocodePoi]
+  }
+}
+

@@ -14,3 +14,21 @@ trait PaginateResult[T] extends js.Object {
   var total: scala.Double
 }
 
+object PaginateResult {
+  @scala.inline
+  def apply[T](
+    docs: js.Array[T],
+    limit: scala.Double,
+    total: scala.Double,
+    offset: scala.Int | scala.Double = null,
+    page: scala.Int | scala.Double = null,
+    pages: scala.Int | scala.Double = null
+  ): PaginateResult[T] = {
+    val __obj = js.Dynamic.literal(docs = docs, limit = limit, total = total)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PaginateResult[T]]
+  }
+}
+

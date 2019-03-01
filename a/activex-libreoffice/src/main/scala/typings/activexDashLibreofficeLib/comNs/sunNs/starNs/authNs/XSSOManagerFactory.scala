@@ -23,3 +23,18 @@ trait XSSOManagerFactory
   def getSSOManager(): XSSOManager
 }
 
+object XSSOManagerFactory {
+  @scala.inline
+  def apply(
+    SSOManager: XSSOManager,
+    acquire: js.Function0[scala.Unit],
+    getSSOManager: js.Function0[XSSOManager],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSSOManagerFactory = {
+    val __obj = js.Dynamic.literal(SSOManager = SSOManager, acquire = acquire, getSSOManager = getSSOManager, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSSOManagerFactory]
+  }
+}
+

@@ -12,3 +12,12 @@ trait GroupPattern
   var type_GroupPattern: sparqljsLib.sparqljsLibStrings.group
 }
 
+object GroupPattern {
+  @scala.inline
+  def apply(patterns: js.Array[Pattern], `type`: sparqljsLib.sparqljsLibStrings.group): GroupPattern = {
+    val __obj = js.Dynamic.literal(patterns = patterns, `type` = `type`)
+  
+    __obj.asInstanceOf[GroupPattern]
+  }
+}
+

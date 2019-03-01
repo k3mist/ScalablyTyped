@@ -14,3 +14,21 @@ trait XRegressionCurve
   def setEquationProperties(xEquationProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet): scala.Unit
 }
 
+object XRegressionCurve {
+  @scala.inline
+  def apply(
+    Calculator: XRegressionCurveCalculator,
+    EquationProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getCalculator: js.Function0[XRegressionCurveCalculator],
+    getEquationProperties: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEquationProperties: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit]
+  ): XRegressionCurve = {
+    val __obj = js.Dynamic.literal(Calculator = Calculator, EquationProperties = EquationProperties, acquire = acquire, getCalculator = getCalculator, getEquationProperties = getEquationProperties, queryInterface = queryInterface, release = release, setEquationProperties = setEquationProperties)
+  
+    __obj.asInstanceOf[XRegressionCurve]
+  }
+}
+

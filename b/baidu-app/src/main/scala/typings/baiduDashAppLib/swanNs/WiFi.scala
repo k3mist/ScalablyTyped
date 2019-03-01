@@ -16,3 +16,17 @@ trait WiFi extends js.Object {
   var signalStrength: scala.Double
 }
 
+object WiFi {
+  @scala.inline
+  def apply(
+    BSSID: java.lang.String,
+    SSID: java.lang.String,
+    secure: scala.Boolean,
+    signalStrength: scala.Double
+  ): WiFi = {
+    val __obj = js.Dynamic.literal(BSSID = BSSID, SSID = SSID, secure = secure, signalStrength = signalStrength)
+  
+    __obj.asInstanceOf[WiFi]
+  }
+}
+

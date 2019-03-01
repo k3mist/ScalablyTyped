@@ -28,3 +28,15 @@ trait AccessibleRelation extends js.Object {
   var TargetSet: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
 }
 
+object AccessibleRelation {
+  @scala.inline
+  def apply(
+    RelationType: scala.Double,
+    TargetSet: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
+  ): AccessibleRelation = {
+    val __obj = js.Dynamic.literal(RelationType = RelationType, TargetSet = TargetSet)
+  
+    __obj.asInstanceOf[AccessibleRelation]
+  }
+}
+

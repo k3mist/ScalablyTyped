@@ -25,3 +25,21 @@ trait XCommandPreparation
   def prepareCommand(command: java.lang.String, commandType: scala.Double): activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XPreparedStatement
 }
 
+object XCommandPreparation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    prepareCommand: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XPreparedStatement
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCommandPreparation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, prepareCommand = prepareCommand, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCommandPreparation]
+  }
+}
+

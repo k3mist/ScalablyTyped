@@ -11,3 +11,12 @@ trait DeveloperError extends js.Object {
   var stack: java.lang.String
 }
 
+object DeveloperError {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String): DeveloperError = {
+    val __obj = js.Dynamic.literal(message = message, name = name, stack = stack)
+  
+    __obj.asInstanceOf[DeveloperError]
+  }
+}
+

@@ -9,3 +9,12 @@ trait DatabasePragma extends js.Object {
   var enableBundledMode: scala.Boolean
 }
 
+object DatabasePragma {
+  @scala.inline
+  def apply(enableBundledMode: scala.Boolean): DatabasePragma = {
+    val __obj = js.Dynamic.literal(enableBundledMode = enableBundledMode)
+  
+    __obj.asInstanceOf[DatabasePragma]
+  }
+}
+

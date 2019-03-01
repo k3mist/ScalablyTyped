@@ -13,3 +13,12 @@ trait IgTreeGridTooltipsMethods extends js.Object {
   def id(): java.lang.String
 }
 
+object IgTreeGridTooltipsMethods {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit], id: js.Function0[java.lang.String]): IgTreeGridTooltipsMethods = {
+    val __obj = js.Dynamic.literal(destroy = destroy, id = id)
+  
+    __obj.asInstanceOf[IgTreeGridTooltipsMethods]
+  }
+}
+

@@ -12,3 +12,18 @@ trait Anon_Handler extends js.Object {
   var urlPattern: stdLib.RegExp | java.lang.String
 }
 
+object Anon_Handler {
+  @scala.inline
+  def apply(
+    handler: swDashPrecacheLib.swDashPrecacheMod.Handler,
+    urlPattern: stdLib.RegExp | java.lang.String,
+    method: swDashPrecacheLib.swDashPrecacheMod.Method = null,
+    options: swDashToolboxLib.swDashToolboxMod.Options = null
+  ): Anon_Handler = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Anon_Handler]
+  }
+}
+

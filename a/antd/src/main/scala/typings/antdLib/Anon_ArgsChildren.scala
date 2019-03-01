@@ -15,3 +15,20 @@ trait Anon_ArgsChildren extends js.Object {
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
+object Anon_ArgsChildren {
+  @scala.inline
+  def apply(
+    children: propDashTypesLib.propDashTypesMod.Requireable[_],
+    hideRequiredMark: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    layout: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical
+    ],
+    onSubmit: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ArgsChildren = {
+    val __obj = js.Dynamic.literal(children = children, hideRequiredMark = hideRequiredMark, layout = layout, onSubmit = onSubmit, prefixCls = prefixCls)
+  
+    __obj.asInstanceOf[Anon_ArgsChildren]
+  }
+}
+

@@ -33,3 +33,18 @@ trait ISearchAssociationResult extends js.Object {
   var qTotalSearchResults: scala.Double
 }
 
+object ISearchAssociationResult {
+  @scala.inline
+  def apply(
+    qFieldDictionaries: js.Array[ISearchFieldDictionary],
+    qFieldNames: js.Array[java.lang.String],
+    qSearchTerms: js.Array[java.lang.String],
+    qSearchTermsMatched: js.Array[ISearchMatchCombinations],
+    qTotalSearchResults: scala.Double
+  ): ISearchAssociationResult = {
+    val __obj = js.Dynamic.literal(qFieldDictionaries = qFieldDictionaries, qFieldNames = qFieldNames, qSearchTerms = qSearchTerms, qSearchTermsMatched = qSearchTermsMatched, qTotalSearchResults = qTotalSearchResults)
+  
+    __obj.asInstanceOf[ISearchAssociationResult]
+  }
+}
+

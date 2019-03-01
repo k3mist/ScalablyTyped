@@ -16,3 +16,12 @@ trait Chord extends js.Object {
   var target: ChordSubgroup
 }
 
+object Chord {
+  @scala.inline
+  def apply(source: ChordSubgroup, target: ChordSubgroup): Chord = {
+    val __obj = js.Dynamic.literal(source = source, target = target)
+  
+    __obj.asInstanceOf[Chord]
+  }
+}
+

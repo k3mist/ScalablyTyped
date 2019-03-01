@@ -32,3 +32,20 @@ trait BasemapGalleryViewModelProperties extends js.Object {
   var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
+object BasemapGalleryViewModelProperties {
+  @scala.inline
+  def apply(
+    activeBasemap: BasemapProperties = null,
+    items: CollectionProperties[BasemapGalleryItemProperties] = null,
+    source: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): BasemapGalleryViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BasemapGalleryViewModelProperties]
+  }
+}
+

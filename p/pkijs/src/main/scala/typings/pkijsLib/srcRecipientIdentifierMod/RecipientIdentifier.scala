@@ -13,3 +13,18 @@ trait RecipientIdentifier extends js.Object {
   def toSchema(): js.Any
 }
 
+object RecipientIdentifier {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    value: js.Any,
+    variant: scala.Double
+  ): RecipientIdentifier = {
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, value = value, variant = variant)
+  
+    __obj.asInstanceOf[RecipientIdentifier]
+  }
+}
+

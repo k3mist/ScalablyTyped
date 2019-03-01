@@ -22,3 +22,17 @@ trait AnimationStateMetadata extends AnimationMetadata {
   var styles: AnimationStyleMetadata
 }
 
+object AnimationStateMetadata {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    styles: AnimationStyleMetadata,
+    `type`: AnimationMetadataType,
+    options: atAngularAnimationsLib.Anon_Name = null
+  ): AnimationStateMetadata = {
+    val __obj = js.Dynamic.literal(name = name, styles = styles, `type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationStateMetadata]
+  }
+}
+

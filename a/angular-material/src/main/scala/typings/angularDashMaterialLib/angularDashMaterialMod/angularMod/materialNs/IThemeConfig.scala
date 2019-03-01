@@ -14,3 +14,19 @@ trait IThemeConfig extends js.Object {
   var registeredStyles: js.Array[java.lang.String]
 }
 
+object IThemeConfig {
+  @scala.inline
+  def apply(
+    alwaysWatchTheme: scala.Boolean,
+    defaultTheme: java.lang.String,
+    disableTheming: scala.Boolean,
+    generateOnDemand: scala.Boolean,
+    nonce: java.lang.String,
+    registeredStyles: js.Array[java.lang.String]
+  ): IThemeConfig = {
+    val __obj = js.Dynamic.literal(alwaysWatchTheme = alwaysWatchTheme, defaultTheme = defaultTheme, disableTheming = disableTheming, generateOnDemand = generateOnDemand, nonce = nonce, registeredStyles = registeredStyles)
+  
+    __obj.asInstanceOf[IThemeConfig]
+  }
+}
+

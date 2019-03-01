@@ -20,3 +20,37 @@ trait CreativeFieldValuesResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldIdFields): gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValue]
 }
 
+object CreativeFieldValuesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValue]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValue]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldIdFieldsIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValuesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValue]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCreativeFieldIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeFieldValue]
+    ]
+  ): CreativeFieldValuesResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[CreativeFieldValuesResource]
+  }
+}
+

@@ -21,3 +21,16 @@ trait ASPxClientPopupWindowCancelEventArgs extends ASPxClientCancelEventArgs {
   var window: ASPxClientPopupWindow
 }
 
+object ASPxClientPopupWindowCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    closeReason: ASPxClientPopupControlCloseReason,
+    window: ASPxClientPopupWindow
+  ): ASPxClientPopupWindowCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, closeReason = closeReason, window = window)
+  
+    __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
+  }
+}
+

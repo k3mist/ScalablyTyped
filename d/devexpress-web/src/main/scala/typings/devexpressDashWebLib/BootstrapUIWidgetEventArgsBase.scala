@@ -21,3 +21,12 @@ trait BootstrapUIWidgetEventArgsBase extends ASPxClientEventArgs {
   var element: js.Object
 }
 
+object BootstrapUIWidgetEventArgsBase {
+  @scala.inline
+  def apply(component: js.Object, element: js.Object): BootstrapUIWidgetEventArgsBase = {
+    val __obj = js.Dynamic.literal(component = component, element = element)
+  
+    __obj.asInstanceOf[BootstrapUIWidgetEventArgsBase]
+  }
+}
+

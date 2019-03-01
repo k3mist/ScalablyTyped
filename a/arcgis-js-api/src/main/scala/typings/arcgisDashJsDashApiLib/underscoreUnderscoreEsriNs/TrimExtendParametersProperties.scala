@@ -38,3 +38,18 @@ trait TrimExtendParametersProperties extends js.Object {
   var trimExtendTo: js.UndefOr[PolylineProperties] = js.undefined
 }
 
+object TrimExtendParametersProperties {
+  @scala.inline
+  def apply(
+    extendHow: java.lang.String = null,
+    polylines: js.Array[PolylineProperties] = null,
+    trimExtendTo: PolylineProperties = null
+  ): TrimExtendParametersProperties = {
+    val __obj = js.Dynamic.literal()
+    if (extendHow != null) __obj.updateDynamic("extendHow")(extendHow)
+    if (polylines != null) __obj.updateDynamic("polylines")(polylines)
+    if (trimExtendTo != null) __obj.updateDynamic("trimExtendTo")(trimExtendTo)
+    __obj.asInstanceOf[TrimExtendParametersProperties]
+  }
+}
+

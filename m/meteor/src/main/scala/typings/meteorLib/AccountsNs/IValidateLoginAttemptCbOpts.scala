@@ -15,3 +15,20 @@ trait IValidateLoginAttemptCbOpts extends js.Object {
   var user: meteorLib.MeteorNs.User
 }
 
+object IValidateLoginAttemptCbOpts {
+  @scala.inline
+  def apply(
+    allowed: scala.Boolean,
+    connection: meteorLib.MeteorNs.Connection,
+    error: meteorLib.MeteorNs.Error,
+    methodArguments: js.Array[_],
+    methodName: java.lang.String,
+    `type`: java.lang.String,
+    user: meteorLib.MeteorNs.User
+  ): IValidateLoginAttemptCbOpts = {
+    val __obj = js.Dynamic.literal(allowed = allowed, connection = connection, error = error, methodArguments = methodArguments, methodName = methodName, `type` = `type`, user = user)
+  
+    __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
+  }
+}
+

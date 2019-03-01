@@ -19,3 +19,18 @@ trait XProperty
   def getAsProperty(): Property
 }
 
+object XProperty {
+  @scala.inline
+  def apply(
+    AsProperty: Property,
+    acquire: js.Function0[scala.Unit],
+    getAsProperty: js.Function0[Property],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XProperty = {
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, acquire = acquire, getAsProperty = getAsProperty, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XProperty]
+  }
+}
+

@@ -19,3 +19,17 @@ trait TouchCalibrationPairs extends js.Object {
   var pair4: TouchCalibrationPair
 }
 
+object TouchCalibrationPairs {
+  @scala.inline
+  def apply(
+    pair1: TouchCalibrationPair,
+    pair2: TouchCalibrationPair,
+    pair3: TouchCalibrationPair,
+    pair4: TouchCalibrationPair
+  ): TouchCalibrationPairs = {
+    val __obj = js.Dynamic.literal(pair1 = pair1, pair2 = pair2, pair3 = pair3, pair4 = pair4)
+  
+    __obj.asInstanceOf[TouchCalibrationPairs]
+  }
+}
+

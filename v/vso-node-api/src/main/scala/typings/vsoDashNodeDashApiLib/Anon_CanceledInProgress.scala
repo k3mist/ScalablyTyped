@@ -17,3 +17,22 @@ trait Anon_CanceledInProgress extends js.Object {
   var undefined: scala.Double
 }
 
+object Anon_CanceledInProgress {
+  @scala.inline
+  def apply(
+    canceled: scala.Double,
+    inProgress: scala.Double,
+    notStarted: scala.Double,
+    partiallySucceeded: scala.Double,
+    queued: scala.Double,
+    rejected: scala.Double,
+    scheduled: scala.Double,
+    succeeded: scala.Double,
+    undefined: scala.Double
+  ): Anon_CanceledInProgress = {
+    val __obj = js.Dynamic.literal(canceled = canceled, inProgress = inProgress, notStarted = notStarted, partiallySucceeded = partiallySucceeded, queued = queued, rejected = rejected, scheduled = scheduled, succeeded = succeeded, undefined = undefined)
+  
+    __obj.asInstanceOf[Anon_CanceledInProgress]
+  }
+}
+

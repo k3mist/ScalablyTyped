@@ -10,3 +10,12 @@ trait Anon_Name extends js.Object {
   var order: scala.Double
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(name: java.lang.String, order: scala.Double): Anon_Name = {
+    val __obj = js.Dynamic.literal(name = name, order = order)
+  
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

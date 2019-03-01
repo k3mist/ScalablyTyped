@@ -26,3 +26,20 @@ trait ASPxClientMovingAverage extends ASPxClientSingleLevelIndicator {
   var pointsCount: scala.Double
 }
 
+object ASPxClientMovingAverage {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    envelopePercent: scala.Double,
+    kind: java.lang.String,
+    name: java.lang.String,
+    pointsCount: scala.Double,
+    series: ASPxClientSeries,
+    valueLevel: java.lang.String
+  ): ASPxClientMovingAverage = {
+    val __obj = js.Dynamic.literal(chart = chart, envelopePercent = envelopePercent, kind = kind, name = name, pointsCount = pointsCount, series = series, valueLevel = valueLevel)
+  
+    __obj.asInstanceOf[ASPxClientMovingAverage]
+  }
+}
+

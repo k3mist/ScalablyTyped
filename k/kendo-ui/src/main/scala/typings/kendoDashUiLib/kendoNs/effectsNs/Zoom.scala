@@ -11,3 +11,21 @@ trait Zoom extends Effect {
   def startValue(value: scala.Double): Zoom
 }
 
+object Zoom {
+  @scala.inline
+  def apply(
+    add: js.Function1[Effect, Zoom],
+    direction: js.Function1[java.lang.String, Zoom],
+    duration: js.Function1[scala.Double, Zoom],
+    endValue: js.Function1[scala.Double, Zoom],
+    play: js.Function0[kendoDashUiLib.JQueryPromise[_]],
+    reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
+    startValue: js.Function1[scala.Double, Zoom],
+    stop: js.Function0[Zoom]
+  ): Zoom = {
+    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, endValue = endValue, play = play, reverse = reverse, startValue = startValue, stop = stop)
+  
+    __obj.asInstanceOf[Zoom]
+  }
+}
+

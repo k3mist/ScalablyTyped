@@ -17,3 +17,22 @@ trait Anon_Label extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Label {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    linkId: java.lang.String,
+    mappedPosition: Anon_Latitude,
+    mappedRoadName: java.lang.String,
+    originalPosition: Anon_Latitude,
+    shapeIndex: scala.Double,
+    sideOfStreet: java.lang.String,
+    spot: scala.Double,
+    `type`: java.lang.String
+  ): Anon_Label = {
+    val __obj = js.Dynamic.literal(label = label, linkId = linkId, mappedPosition = mappedPosition, mappedRoadName = mappedRoadName, originalPosition = originalPosition, shapeIndex = shapeIndex, sideOfStreet = sideOfStreet, spot = spot, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Label]
+  }
+}
+

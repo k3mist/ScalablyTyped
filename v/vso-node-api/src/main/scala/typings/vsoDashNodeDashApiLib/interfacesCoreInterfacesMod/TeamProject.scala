@@ -20,3 +20,24 @@ trait TeamProject extends TeamProjectReference {
   var defaultTeam: WebApiTeamRef
 }
 
+object TeamProject {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    abbreviation: java.lang.String,
+    capabilities: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
+    defaultTeam: WebApiTeamRef,
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    revision: scala.Double,
+    state: js.Any,
+    url: java.lang.String,
+    visibility: ProjectVisibility
+  ): TeamProject = {
+    val __obj = js.Dynamic.literal(_links = _links, abbreviation = abbreviation, capabilities = capabilities, defaultTeam = defaultTeam, description = description, id = id, name = name, revision = revision, state = state, url = url, visibility = visibility)
+  
+    __obj.asInstanceOf[TeamProject]
+  }
+}
+

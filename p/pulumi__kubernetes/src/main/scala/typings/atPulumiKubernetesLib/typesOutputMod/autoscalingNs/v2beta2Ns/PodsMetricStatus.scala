@@ -20,3 +20,12 @@ trait PodsMetricStatus extends js.Object {
   val metric: MetricIdentifier
 }
 
+object PodsMetricStatus {
+  @scala.inline
+  def apply(current: MetricValueStatus, metric: MetricIdentifier): PodsMetricStatus = {
+    val __obj = js.Dynamic.literal(current = current, metric = metric)
+  
+    __obj.asInstanceOf[PodsMetricStatus]
+  }
+}
+

@@ -28,3 +28,18 @@ trait _Impl extends js.Object {
   var pusher: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    movedSidebar: java.lang.String,
+    notFound: java.lang.String,
+    overlay: java.lang.String,
+    pusher: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(method = method, movedSidebar = movedSidebar, notFound = notFound, overlay = overlay, pusher = pusher)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

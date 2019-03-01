@@ -64,3 +64,32 @@ trait Form extends js.Object {
   def updateModel(dir: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, value: js.Any): scala.Unit
 }
 
+object Form {
+  @scala.inline
+  def apply(
+    addControl: js.Function1[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, scala.Unit],
+    addFormGroup: js.Function1[
+      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
+      scala.Unit
+    ],
+    getControl: js.Function1[
+      atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, 
+      atAngularFormsLib.srcModelMod.FormControl
+    ],
+    getFormGroup: js.Function1[
+      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
+      atAngularFormsLib.srcModelMod.FormGroup
+    ],
+    removeControl: js.Function1[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, scala.Unit],
+    removeFormGroup: js.Function1[
+      atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective, 
+      scala.Unit
+    ],
+    updateModel: js.Function2[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, js.Any, scala.Unit]
+  ): Form = {
+    val __obj = js.Dynamic.literal(addControl = addControl, addFormGroup = addFormGroup, getControl = getControl, getFormGroup = getFormGroup, removeControl = removeControl, removeFormGroup = removeFormGroup, updateModel = updateModel)
+  
+    __obj.asInstanceOf[Form]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ConfigurationAggregatorState extends js.Object {
   val organizationAggregationSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllRegionsRegions]] = js.undefined
 }
 
+object ConfigurationAggregatorState {
+  @scala.inline
+  def apply(
+    accountAggregationSource: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AccountIdsAllRegions] = null,
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    organizationAggregationSource: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllRegionsRegions] = null
+  ): ConfigurationAggregatorState = {
+    val __obj = js.Dynamic.literal()
+    if (accountAggregationSource != null) __obj.updateDynamic("accountAggregationSource")(accountAggregationSource.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (organizationAggregationSource != null) __obj.updateDynamic("organizationAggregationSource")(organizationAggregationSource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigurationAggregatorState]
+  }
+}
+

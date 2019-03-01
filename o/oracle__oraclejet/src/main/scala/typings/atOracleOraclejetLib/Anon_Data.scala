@@ -16,3 +16,21 @@ trait Anon_Data
   var seriesData: js.Object
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(
+    data: js.Object,
+    group: java.lang.String,
+    groupData: js.Array[_],
+    id: java.lang.String,
+    itemData: js.Object,
+    series: java.lang.String,
+    seriesData: js.Object,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, group = group, groupData = groupData, id = id, itemData = itemData, series = series, seriesData = seriesData)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

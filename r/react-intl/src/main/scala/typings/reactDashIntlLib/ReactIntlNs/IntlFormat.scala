@@ -15,3 +15,20 @@ trait IntlFormat extends js.Object {
   var formatTime: reactLib.reactMod.ReactNs.Requireable[_]
 }
 
+object IntlFormat {
+  @scala.inline
+  def apply(
+    formatDate: reactLib.reactMod.ReactNs.Requireable[_],
+    formatHTMLMessage: reactLib.reactMod.ReactNs.Requireable[_],
+    formatMessage: reactLib.reactMod.ReactNs.Requireable[_],
+    formatNumber: reactLib.reactMod.ReactNs.Requireable[_],
+    formatPlural: reactLib.reactMod.ReactNs.Requireable[_],
+    formatRelative: reactLib.reactMod.ReactNs.Requireable[_],
+    formatTime: reactLib.reactMod.ReactNs.Requireable[_]
+  ): IntlFormat = {
+    val __obj = js.Dynamic.literal(formatDate = formatDate, formatHTMLMessage = formatHTMLMessage, formatMessage = formatMessage, formatNumber = formatNumber, formatPlural = formatPlural, formatRelative = formatRelative, formatTime = formatTime)
+  
+    __obj.asInstanceOf[IntlFormat]
+  }
+}
+

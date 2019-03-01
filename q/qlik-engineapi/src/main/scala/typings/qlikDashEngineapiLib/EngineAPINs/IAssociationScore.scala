@@ -44,3 +44,17 @@ trait IAssociationScore extends js.Object {
   var qScoreSummary: scala.Double
 }
 
+object IAssociationScore {
+  @scala.inline
+  def apply(
+    qField1Scores: IFieldScores,
+    qField2Scores: IFieldScores,
+    qFieldPairName: java.lang.String,
+    qScoreSummary: scala.Double
+  ): IAssociationScore = {
+    val __obj = js.Dynamic.literal(qField1Scores = qField1Scores, qField2Scores = qField2Scores, qFieldPairName = qFieldPairName, qScoreSummary = qScoreSummary)
+  
+    __obj.asInstanceOf[IAssociationScore]
+  }
+}
+

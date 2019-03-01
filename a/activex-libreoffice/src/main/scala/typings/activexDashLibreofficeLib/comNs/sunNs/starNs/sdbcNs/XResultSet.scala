@@ -168,3 +168,36 @@ trait XResultSet
   def rowUpdated(): scala.Boolean
 }
 
+object XResultSet {
+  @scala.inline
+  def apply(
+    Row: scala.Double,
+    Statement: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    absolute: js.Function1[scala.Double, scala.Boolean],
+    acquire: js.Function0[scala.Unit],
+    afterLast: js.Function0[scala.Unit],
+    beforeFirst: js.Function0[scala.Unit],
+    first: js.Function0[scala.Boolean],
+    getRow: js.Function0[scala.Double],
+    getStatement: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    isAfterLast: js.Function0[scala.Boolean],
+    isBeforeFirst: js.Function0[scala.Boolean],
+    isFirst: js.Function0[scala.Boolean],
+    isLast: js.Function0[scala.Boolean],
+    last: js.Function0[scala.Boolean],
+    next: js.Function0[scala.Boolean],
+    previous: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refreshRow: js.Function0[scala.Unit],
+    relative: js.Function1[scala.Double, scala.Boolean],
+    release: js.Function0[scala.Unit],
+    rowDeleted: js.Function0[scala.Boolean],
+    rowInserted: js.Function0[scala.Boolean],
+    rowUpdated: js.Function0[scala.Boolean]
+  ): XResultSet = {
+    val __obj = js.Dynamic.literal(Row = Row, Statement = Statement, absolute = absolute, acquire = acquire, afterLast = afterLast, beforeFirst = beforeFirst, first = first, getRow = getRow, getStatement = getStatement, isAfterLast = isAfterLast, isBeforeFirst = isBeforeFirst, isFirst = isFirst, isLast = isLast, last = last, next = next, previous = previous, queryInterface = queryInterface, refreshRow = refreshRow, relative = relative, release = release, rowDeleted = rowDeleted, rowInserted = rowInserted, rowUpdated = rowUpdated)
+  
+    __obj.asInstanceOf[XResultSet]
+  }
+}
+

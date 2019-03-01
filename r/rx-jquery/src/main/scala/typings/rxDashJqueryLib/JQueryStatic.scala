@@ -13,3 +13,39 @@ trait JQueryStatic extends js.Object {
   def postAsObservable[T](url: java.lang.String, data: js.Any, dataType: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[T]]
 }
 
+object JQueryStatic {
+  @scala.inline
+  def apply(
+    ajaxAsObservable: js.Function1[
+      jqueryLib.JQueryAjaxSettings, 
+      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
+    ],
+    getAsObservable: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
+    ],
+    getJSONAsObservable: js.Function2[
+      java.lang.String, 
+      js.Any, 
+      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
+    ],
+    getScriptAsObservable: js.Function2[
+      java.lang.String, 
+      js.Any, 
+      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
+    ],
+    postAsObservable: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
+    ]
+  ): JQueryStatic = {
+    val __obj = js.Dynamic.literal(ajaxAsObservable = ajaxAsObservable, getAsObservable = getAsObservable, getJSONAsObservable = getJSONAsObservable, getScriptAsObservable = getScriptAsObservable, postAsObservable = postAsObservable)
+  
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

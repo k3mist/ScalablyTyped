@@ -11,3 +11,12 @@ trait FrameAnimationEvent extends js.Object {
   var name: java.lang.String
 }
 
+object FrameAnimationEvent {
+  @scala.inline
+  def apply(animation: plotlyDotJsLib.Anon_Frame, frame: Frame, name: java.lang.String): FrameAnimationEvent = {
+    val __obj = js.Dynamic.literal(animation = animation, frame = frame, name = name)
+  
+    __obj.asInstanceOf[FrameAnimationEvent]
+  }
+}
+

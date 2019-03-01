@@ -16,3 +16,12 @@ trait TokensOptions extends js.Object {
   var secretLength: scala.Double
 }
 
+object TokensOptions {
+  @scala.inline
+  def apply(saltLength: scala.Double, secretLength: scala.Double): TokensOptions = {
+    val __obj = js.Dynamic.literal(saltLength = saltLength, secretLength = secretLength)
+  
+    __obj.asInstanceOf[TokensOptions]
+  }
+}
+

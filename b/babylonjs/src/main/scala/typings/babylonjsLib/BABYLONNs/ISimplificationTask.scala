@@ -31,3 +31,18 @@ trait ISimplificationTask extends js.Object {
   var successCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object ISimplificationTask {
+  @scala.inline
+  def apply(
+    mesh: Mesh,
+    parallelProcessing: scala.Boolean,
+    settings: js.Array[ISimplificationSettings],
+    simplificationType: SimplificationType,
+    successCallback: js.Function0[scala.Unit] = null
+  ): ISimplificationTask = {
+    val __obj = js.Dynamic.literal(mesh = mesh, parallelProcessing = parallelProcessing, settings = settings, simplificationType = simplificationType)
+    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    __obj.asInstanceOf[ISimplificationTask]
+  }
+}
+

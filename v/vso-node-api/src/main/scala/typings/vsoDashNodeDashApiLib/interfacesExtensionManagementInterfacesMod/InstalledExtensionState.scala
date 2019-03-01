@@ -20,3 +20,16 @@ trait InstalledExtensionState extends js.Object {
   var lastUpdated: stdLib.Date
 }
 
+object InstalledExtensionState {
+  @scala.inline
+  def apply(
+    flags: ExtensionStateFlags,
+    installationIssues: js.Array[InstalledExtensionStateIssue],
+    lastUpdated: stdLib.Date
+  ): InstalledExtensionState = {
+    val __obj = js.Dynamic.literal(flags = flags, installationIssues = installationIssues, lastUpdated = lastUpdated)
+  
+    __obj.asInstanceOf[InstalledExtensionState]
+  }
+}
+

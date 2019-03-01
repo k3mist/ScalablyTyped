@@ -11,3 +11,16 @@ trait Anon_ArrowStart extends js.Object {
   var targetIntersection: webcolaLib.distSrcGeomMod.Point
 }
 
+object Anon_ArrowStart {
+  @scala.inline
+  def apply(
+    arrowStart: webcolaLib.distSrcGeomMod.Point,
+    sourceIntersection: webcolaLib.distSrcGeomMod.Point,
+    targetIntersection: webcolaLib.distSrcGeomMod.Point
+  ): Anon_ArrowStart = {
+    val __obj = js.Dynamic.literal(arrowStart = arrowStart, sourceIntersection = sourceIntersection, targetIntersection = targetIntersection)
+  
+    __obj.asInstanceOf[Anon_ArrowStart]
+  }
+}
+

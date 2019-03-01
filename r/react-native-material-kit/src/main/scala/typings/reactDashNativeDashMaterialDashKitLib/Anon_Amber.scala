@@ -33,3 +33,38 @@ trait Anon_Amber extends js.Object {
   var Yellow: java.lang.String
 }
 
+object Anon_Amber {
+  @scala.inline
+  def apply(
+    Amber: java.lang.String,
+    Blue: java.lang.String,
+    BlueGrey: java.lang.String,
+    Brown: java.lang.String,
+    Cyan: java.lang.String,
+    DeepOrange: java.lang.String,
+    DeepPurple: java.lang.String,
+    Green: java.lang.String,
+    Grey: java.lang.String,
+    Indigo: java.lang.String,
+    LightBlue: java.lang.String,
+    LightGreen: java.lang.String,
+    Lime: java.lang.String,
+    Orange: java.lang.String,
+    Pink: java.lang.String,
+    Purple: java.lang.String,
+    RGBIndigo: java.lang.String,
+    RGBPink: java.lang.String,
+    RGBPurple: java.lang.String,
+    RGBTeal: java.lang.String,
+    Red: java.lang.String,
+    Silver: java.lang.String,
+    Teal: java.lang.String,
+    Transparent: java.lang.String,
+    Yellow: java.lang.String
+  ): Anon_Amber = {
+    val __obj = js.Dynamic.literal(Amber = Amber, Blue = Blue, BlueGrey = BlueGrey, Brown = Brown, Cyan = Cyan, DeepOrange = DeepOrange, DeepPurple = DeepPurple, Green = Green, Grey = Grey, Indigo = Indigo, LightBlue = LightBlue, LightGreen = LightGreen, Lime = Lime, Orange = Orange, Pink = Pink, Purple = Purple, RGBIndigo = RGBIndigo, RGBPink = RGBPink, RGBPurple = RGBPurple, RGBTeal = RGBTeal, Red = Red, Silver = Silver, Teal = Teal, Transparent = Transparent, Yellow = Yellow)
+  
+    __obj.asInstanceOf[Anon_Amber]
+  }
+}
+

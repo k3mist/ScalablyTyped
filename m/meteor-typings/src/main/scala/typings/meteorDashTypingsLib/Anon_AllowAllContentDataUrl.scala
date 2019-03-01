@@ -31,3 +31,36 @@ trait Anon_AllowAllContentDataUrl extends js.Object {
   def disallowObject(): scala.Unit
 }
 
+object Anon_AllowAllContentDataUrl {
+  @scala.inline
+  def apply(
+    allowAllContentDataUrl: js.Function0[scala.Unit],
+    allowAllContentOrigin: js.Function0[scala.Unit],
+    allowAllContentSameOrigin: js.Function0[scala.Unit],
+    allowContentTypeSniffing: js.Function0[scala.Unit],
+    allowDataUrlForAll: js.Function0[scala.Unit],
+    allowEval: js.Function0[scala.Unit],
+    allowFontOrigin: js.Function1[java.lang.String, scala.Unit],
+    allowFrameOrigin: js.Function1[java.lang.String, scala.Unit],
+    allowImageOrigin: js.Function1[java.lang.String, scala.Unit],
+    allowInlineScripts: js.Function0[scala.Unit],
+    allowInlineStyles: js.Function0[scala.Unit],
+    allowMediaOrigin: js.Function1[java.lang.String, scala.Unit],
+    allowOriginForAll: js.Function1[java.lang.String, scala.Unit],
+    allowSameOriginForAll: js.Function0[scala.Unit],
+    allowScriptOrigin: js.Function1[java.lang.String, scala.Unit],
+    allowStyleOrigin: js.Function1[java.lang.String, scala.Unit],
+    disallowAll: js.Function0[scala.Unit],
+    disallowAllContent: js.Function0[scala.Unit],
+    disallowEval: js.Function0[scala.Unit],
+    disallowFont: js.Function0[scala.Unit],
+    disallowInlineScripts: js.Function0[scala.Unit],
+    disallowInlineStyles: js.Function0[scala.Unit],
+    disallowObject: js.Function0[scala.Unit]
+  ): Anon_AllowAllContentDataUrl = {
+    val __obj = js.Dynamic.literal(allowAllContentDataUrl = allowAllContentDataUrl, allowAllContentOrigin = allowAllContentOrigin, allowAllContentSameOrigin = allowAllContentSameOrigin, allowContentTypeSniffing = allowContentTypeSniffing, allowDataUrlForAll = allowDataUrlForAll, allowEval = allowEval, allowFontOrigin = allowFontOrigin, allowFrameOrigin = allowFrameOrigin, allowImageOrigin = allowImageOrigin, allowInlineScripts = allowInlineScripts, allowInlineStyles = allowInlineStyles, allowMediaOrigin = allowMediaOrigin, allowOriginForAll = allowOriginForAll, allowSameOriginForAll = allowSameOriginForAll, allowScriptOrigin = allowScriptOrigin, allowStyleOrigin = allowStyleOrigin, disallowAll = disallowAll, disallowAllContent = disallowAllContent, disallowEval = disallowEval, disallowFont = disallowFont, disallowInlineScripts = disallowInlineScripts, disallowInlineStyles = disallowInlineStyles, disallowObject = disallowObject)
+  
+    __obj.asInstanceOf[Anon_AllowAllContentDataUrl]
+  }
+}
+

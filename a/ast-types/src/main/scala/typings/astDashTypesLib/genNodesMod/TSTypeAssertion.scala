@@ -18,3 +18,17 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object TSTypeAssertion {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeAssertion,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
+    extra: astDashTypesLib.Anon_Parenthesized = null
+  ): TSTypeAssertion = {
+    val __obj = js.Dynamic.literal(expression = expression, `type` = `type`, typeAnnotation = typeAnnotation)
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    __obj.asInstanceOf[TSTypeAssertion]
+  }
+}
+

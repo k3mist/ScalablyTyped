@@ -11,3 +11,12 @@ trait CssLocation extends js.Object {
   var start: cssDashTreeLib.Anon_Column
 }
 
+object CssLocation {
+  @scala.inline
+  def apply(end: cssDashTreeLib.Anon_Column, source: java.lang.String, start: cssDashTreeLib.Anon_Column): CssLocation = {
+    val __obj = js.Dynamic.literal(end = end, source = source, start = start)
+  
+    __obj.asInstanceOf[CssLocation]
+  }
+}
+

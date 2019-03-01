@@ -11,3 +11,12 @@ trait WelcomeMessageMode extends js.Object {
   var live: java.lang.String
 }
 
+object WelcomeMessageMode {
+  @scala.inline
+  def apply(beta: java.lang.String, disabled: java.lang.String, live: java.lang.String): WelcomeMessageMode = {
+    val __obj = js.Dynamic.literal(beta = beta, disabled = disabled, live = live)
+  
+    __obj.asInstanceOf[WelcomeMessageMode]
+  }
+}
+

@@ -16,3 +16,12 @@ trait Spend extends js.Object {
   var Unit: UnitValue
 }
 
+object Spend {
+  @scala.inline
+  def apply(Amount: NumericValue, Unit: UnitValue): Spend = {
+    val __obj = js.Dynamic.literal(Amount = Amount, Unit = Unit)
+  
+    __obj.asInstanceOf[Spend]
+  }
+}
+

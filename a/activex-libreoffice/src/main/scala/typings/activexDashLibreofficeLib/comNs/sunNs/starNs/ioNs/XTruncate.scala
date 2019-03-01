@@ -12,3 +12,17 @@ trait XTruncate
   def truncate(): scala.Unit
 }
 
+object XTruncate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    truncate: js.Function0[scala.Unit]
+  ): XTruncate = {
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, truncate = truncate)
+  
+    __obj.asInstanceOf[XTruncate]
+  }
+}
+

@@ -47,3 +47,22 @@ trait IgGridFeatureChooserMethods extends js.Object {
   def toggleDropDown(columnKey: java.lang.String): scala.Unit
 }
 
+object IgGridFeatureChooserMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    destroy: js.Function2[js.Object, js.Object, scala.Unit],
+    getDropDownByColumnKey: js.Function1[java.lang.String, scala.Unit],
+    hideDropDown: js.Function1[java.lang.String, scala.Unit],
+    shouldShowFeatureIcon: js.Function1[js.Object, scala.Unit],
+    showDropDown: js.Function1[java.lang.String, scala.Unit],
+    toggleDropDown: js.Function1[java.lang.String, scala.Unit]
+  ): IgGridFeatureChooserMethods = {
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, getDropDownByColumnKey = getDropDownByColumnKey, hideDropDown = hideDropDown, shouldShowFeatureIcon = shouldShowFeatureIcon, showDropDown = showDropDown, toggleDropDown = toggleDropDown)
+  
+    __obj.asInstanceOf[IgGridFeatureChooserMethods]
+  }
+}
+

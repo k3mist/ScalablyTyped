@@ -16,3 +16,21 @@ trait Anon_Bri extends js.Object {
   var xy: js.Tuple2[scala.Double, scala.Double]
 }
 
+object Anon_Bri {
+  @scala.inline
+  def apply(
+    bri: scala.Double,
+    colormode: nodeDashHueDashApiLib.nodeDashHueDashApiMod.ColorMode,
+    ct: scala.Double,
+    effect: nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightEffect,
+    hue: scala.Double,
+    on: scala.Boolean,
+    sat: scala.Double,
+    xy: js.Tuple2[scala.Double, scala.Double]
+  ): Anon_Bri = {
+    val __obj = js.Dynamic.literal(bri = bri, colormode = colormode, ct = ct, effect = effect, hue = hue, on = on, sat = sat, xy = xy)
+  
+    __obj.asInstanceOf[Anon_Bri]
+  }
+}
+

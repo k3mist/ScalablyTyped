@@ -31,3 +31,36 @@ trait ReleaseDefinitionEnvironment extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
 }
 
+object ReleaseDefinitionEnvironment {
+  @scala.inline
+  def apply(
+    badgeUrl: java.lang.String,
+    conditions: js.Array[Condition],
+    demands: js.Array[_],
+    deployPhases: js.Array[DeployPhase],
+    deployStep: ReleaseDefinitionDeployStep,
+    environmentOptions: EnvironmentOptions,
+    executionPolicy: EnvironmentExecutionPolicy,
+    id: scala.Double,
+    name: java.lang.String,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    postDeployApprovals: ReleaseDefinitionApprovals,
+    postDeploymentGates: ReleaseDefinitionGatesStep,
+    preDeployApprovals: ReleaseDefinitionApprovals,
+    preDeploymentGates: ReleaseDefinitionGatesStep,
+    processParameters: vsoDashNodeDashApiLib.interfacesDistributedTaskCommonInterfacesMod.ProcessParameters,
+    properties: js.Any,
+    queueId: scala.Double,
+    rank: scala.Double,
+    retentionPolicy: EnvironmentRetentionPolicy,
+    runOptions: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    schedules: js.Array[ReleaseSchedule],
+    variableGroups: js.Array[scala.Double],
+    variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
+  ): ReleaseDefinitionEnvironment = {
+    val __obj = js.Dynamic.literal(badgeUrl = badgeUrl, conditions = conditions, demands = demands, deployPhases = deployPhases, deployStep = deployStep, environmentOptions = environmentOptions, executionPolicy = executionPolicy, id = id, name = name, owner = owner, postDeployApprovals = postDeployApprovals, postDeploymentGates = postDeploymentGates, preDeployApprovals = preDeployApprovals, preDeploymentGates = preDeploymentGates, processParameters = processParameters, properties = properties, queueId = queueId, rank = rank, retentionPolicy = retentionPolicy, runOptions = runOptions, schedules = schedules, variableGroups = variableGroups, variables = variables)
+  
+    __obj.asInstanceOf[ReleaseDefinitionEnvironment]
+  }
+}
+

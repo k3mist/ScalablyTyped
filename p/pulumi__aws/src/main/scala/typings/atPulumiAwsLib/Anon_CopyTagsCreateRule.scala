@@ -15,3 +15,19 @@ trait Anon_CopyTagsCreateRule extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CopyTagsCreateRule {
+  @scala.inline
+  def apply(
+    createRule: atPulumiPulumiLib.resourceMod.Input[Anon_IntervalIntervalUnitTimes],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    retainRule: atPulumiPulumiLib.resourceMod.Input[Anon_CountInput],
+    copyTags: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tagsToAdd: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): Anon_CopyTagsCreateRule = {
+    val __obj = js.Dynamic.literal(createRule = createRule.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], retainRule = retainRule.asInstanceOf[js.Any])
+    if (copyTags != null) __obj.updateDynamic("copyTags")(copyTags.asInstanceOf[js.Any])
+    if (tagsToAdd != null) __obj.updateDynamic("tagsToAdd")(tagsToAdd.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CopyTagsCreateRule]
+  }
+}
+

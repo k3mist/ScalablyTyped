@@ -9,3 +9,12 @@ trait GraphEntity extends js.Object {
   var id: java.lang.String
 }
 
+object GraphEntity {
+  @scala.inline
+  def apply(id: java.lang.String): GraphEntity = {
+    val __obj = js.Dynamic.literal(id = id)
+  
+    __obj.asInstanceOf[GraphEntity]
+  }
+}
+

@@ -21,3 +21,20 @@ trait IUiGridExporterConstants extends js.Object {
   var featureName: java.lang.String
 }
 
+object IUiGridExporterConstants {
+  @scala.inline
+  def apply(
+    ALL: java.lang.String,
+    BUTTON_LABEL: java.lang.String,
+    CSV_CONTENT: java.lang.String,
+    FILE_NAME: java.lang.String,
+    SELECTED: java.lang.String,
+    VISIBLE: java.lang.String,
+    featureName: java.lang.String
+  ): IUiGridExporterConstants = {
+    val __obj = js.Dynamic.literal(ALL = ALL, BUTTON_LABEL = BUTTON_LABEL, CSV_CONTENT = CSV_CONTENT, FILE_NAME = FILE_NAME, SELECTED = SELECTED, VISIBLE = VISIBLE, featureName = featureName)
+  
+    __obj.asInstanceOf[IUiGridExporterConstants]
+  }
+}
+

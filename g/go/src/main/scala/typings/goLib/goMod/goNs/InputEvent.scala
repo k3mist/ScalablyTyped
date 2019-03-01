@@ -76,3 +76,41 @@ trait InputEvent extends js.Object {
   def copy(): InputEvent
 }
 
+object InputEvent {
+  @scala.inline
+  def apply(
+    alt: scala.Boolean,
+    bubbles: scala.Boolean,
+    button: scala.Double,
+    buttons: scala.Double,
+    clickCount: scala.Double,
+    control: scala.Boolean,
+    copy: js.Function0[InputEvent],
+    delta: scala.Double,
+    diagram: Diagram,
+    documentPoint: Point,
+    down: scala.Boolean,
+    event: stdLib.Event,
+    handled: scala.Boolean,
+    isMac: scala.Boolean,
+    isMultiTouch: scala.Boolean,
+    isTouchEvent: scala.Boolean,
+    key: java.lang.String,
+    left: scala.Boolean,
+    meta: scala.Boolean,
+    middle: scala.Boolean,
+    modifiers: scala.Double,
+    right: scala.Boolean,
+    shift: scala.Boolean,
+    targetDiagram: Diagram,
+    targetObject: GraphObject,
+    timestamp: scala.Double,
+    up: scala.Boolean,
+    viewPoint: Point
+  ): InputEvent = {
+    val __obj = js.Dynamic.literal(alt = alt, bubbles = bubbles, button = button, buttons = buttons, clickCount = clickCount, control = control, copy = copy, delta = delta, diagram = diagram, documentPoint = documentPoint, down = down, event = event, handled = handled, isMac = isMac, isMultiTouch = isMultiTouch, isTouchEvent = isTouchEvent, key = key, left = left, meta = meta, middle = middle, modifiers = modifiers, right = right, shift = shift, targetDiagram = targetDiagram, targetObject = targetObject, timestamp = timestamp, up = up, viewPoint = viewPoint)
+  
+    __obj.asInstanceOf[InputEvent]
+  }
+}
+

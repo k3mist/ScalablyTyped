@@ -75,3 +75,68 @@ trait XStyleSettings extends js.Object {
   def removeStyleChangeListener(Listener: XStyleChangeListener): scala.Unit
 }
 
+object XStyleSettings {
+  @scala.inline
+  def apply(
+    ActiveBorderColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ActiveColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ActiveTabColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ActiveTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ApplicationFont: FontDescriptor,
+    ButtonRolloverTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ButtonTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CheckedColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DarkShadowColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DeactiveBorderColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DeactiveColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DeactiveTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DialogColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DialogTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    DisableColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FaceColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FaceGradientColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FieldColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FieldFont: FontDescriptor,
+    FieldRolloverTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FieldTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FloatTitleFont: FontDescriptor,
+    GroupFont: FontDescriptor,
+    GroupTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HelpColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HelpFont: FontDescriptor,
+    HelpTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HighContrastMode: scala.Boolean,
+    HighlightColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HighlightTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    InactiveTabColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    LabelFont: FontDescriptor,
+    LabelTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    LightColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuBarColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuBarTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuBorderColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuFont: FontDescriptor,
+    MenuHighlightColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuHighlightTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MenuTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    MonoColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    PushButtonFont: FontDescriptor,
+    RadioCheckFont: FontDescriptor,
+    RadioCheckTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    SeparatorColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ShadowColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TitleFont: FontDescriptor,
+    ToolFont: FontDescriptor,
+    WindowColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    WindowTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    WorkspaceColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    addStyleChangeListener: js.Function1[XStyleChangeListener, scala.Unit],
+    removeStyleChangeListener: js.Function1[XStyleChangeListener, scala.Unit]
+  ): XStyleSettings = {
+    val __obj = js.Dynamic.literal(ActiveBorderColor = ActiveBorderColor, ActiveColor = ActiveColor, ActiveTabColor = ActiveTabColor, ActiveTextColor = ActiveTextColor, ApplicationFont = ApplicationFont, ButtonRolloverTextColor = ButtonRolloverTextColor, ButtonTextColor = ButtonTextColor, CheckedColor = CheckedColor, DarkShadowColor = DarkShadowColor, DeactiveBorderColor = DeactiveBorderColor, DeactiveColor = DeactiveColor, DeactiveTextColor = DeactiveTextColor, DialogColor = DialogColor, DialogTextColor = DialogTextColor, DisableColor = DisableColor, FaceColor = FaceColor, FaceGradientColor = FaceGradientColor, FieldColor = FieldColor, FieldFont = FieldFont, FieldRolloverTextColor = FieldRolloverTextColor, FieldTextColor = FieldTextColor, FloatTitleFont = FloatTitleFont, GroupFont = GroupFont, GroupTextColor = GroupTextColor, HelpColor = HelpColor, HelpFont = HelpFont, HelpTextColor = HelpTextColor, HighContrastMode = HighContrastMode, HighlightColor = HighlightColor, HighlightTextColor = HighlightTextColor, InactiveTabColor = InactiveTabColor, LabelFont = LabelFont, LabelTextColor = LabelTextColor, LightColor = LightColor, MenuBarColor = MenuBarColor, MenuBarTextColor = MenuBarTextColor, MenuBorderColor = MenuBorderColor, MenuColor = MenuColor, MenuFont = MenuFont, MenuHighlightColor = MenuHighlightColor, MenuHighlightTextColor = MenuHighlightTextColor, MenuTextColor = MenuTextColor, MonoColor = MonoColor, PushButtonFont = PushButtonFont, RadioCheckFont = RadioCheckFont, RadioCheckTextColor = RadioCheckTextColor, SeparatorColor = SeparatorColor, ShadowColor = ShadowColor, TitleFont = TitleFont, ToolFont = ToolFont, WindowColor = WindowColor, WindowTextColor = WindowTextColor, WorkspaceColor = WorkspaceColor, addStyleChangeListener = addStyleChangeListener, removeStyleChangeListener = removeStyleChangeListener)
+  
+    __obj.asInstanceOf[XStyleSettings]
+  }
+}
+

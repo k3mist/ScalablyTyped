@@ -19,3 +19,24 @@ trait SNSItem extends js.Object {
   var UnsubscribeUrl: java.lang.String
 }
 
+object SNSItem {
+  @scala.inline
+  def apply(
+    Message: java.lang.String,
+    MessageAttributes: org.scalablytyped.runtime.StringDictionary[SNSMessageAttribute],
+    MessageId: java.lang.String,
+    Signature: java.lang.String,
+    SignatureVersion: java.lang.String,
+    SigningCertUrl: java.lang.String,
+    Subject: java.lang.String,
+    Timestamp: java.lang.String,
+    TopicArn: java.lang.String,
+    Type: java.lang.String,
+    UnsubscribeUrl: java.lang.String
+  ): SNSItem = {
+    val __obj = js.Dynamic.literal(Message = Message, MessageAttributes = MessageAttributes, MessageId = MessageId, Signature = Signature, SignatureVersion = SignatureVersion, SigningCertUrl = SigningCertUrl, Subject = Subject, Timestamp = Timestamp, TopicArn = TopicArn, Type = Type, UnsubscribeUrl = UnsubscribeUrl)
+  
+    __obj.asInstanceOf[SNSItem]
+  }
+}
+

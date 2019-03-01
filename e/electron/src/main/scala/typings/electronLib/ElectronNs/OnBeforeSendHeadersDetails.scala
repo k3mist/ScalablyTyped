@@ -15,3 +15,20 @@ trait OnBeforeSendHeadersDetails extends js.Object {
   var webContentsId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OnBeforeSendHeadersDetails {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    method: java.lang.String,
+    requestHeaders: RequestHeaders,
+    resourceType: java.lang.String,
+    timestamp: scala.Double,
+    url: java.lang.String,
+    webContentsId: scala.Int | scala.Double = null
+  ): OnBeforeSendHeadersDetails = {
+    val __obj = js.Dynamic.literal(id = id, method = method, requestHeaders = requestHeaders, resourceType = resourceType, timestamp = timestamp, url = url)
+    if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnBeforeSendHeadersDetails]
+  }
+}
+

@@ -28,3 +28,12 @@ trait SocketPermission extends js.Object {
   var Host: java.lang.String
 }
 
+object SocketPermission {
+  @scala.inline
+  def apply(Actions: java.lang.String, Host: java.lang.String): SocketPermission = {
+    val __obj = js.Dynamic.literal(Actions = Actions, Host = Host)
+  
+    __obj.asInstanceOf[SocketPermission]
+  }
+}
+

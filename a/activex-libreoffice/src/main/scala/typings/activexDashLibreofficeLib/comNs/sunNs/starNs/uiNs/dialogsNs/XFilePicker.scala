@@ -69,3 +69,25 @@ trait XFilePicker extends XExecutableDialog {
   def setMultiSelectionMode(bMode: scala.Boolean): scala.Unit
 }
 
+object XFilePicker {
+  @scala.inline
+  def apply(
+    DisplayDirectory: java.lang.String,
+    Files: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Double],
+    getDisplayDirectory: js.Function0[java.lang.String],
+    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultName: js.Function1[java.lang.String, scala.Unit],
+    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
+    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XFilePicker = {
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, acquire = acquire, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle)
+  
+    __obj.asInstanceOf[XFilePicker]
+  }
+}
+

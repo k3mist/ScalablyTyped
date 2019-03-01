@@ -56,3 +56,30 @@ trait IntegrationResponseArgs extends js.Object {
   val statusCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object IntegrationResponseArgs {
+  @scala.inline
+  def apply(
+    httpMethod: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    resourceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    statusCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    contentHandling: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    responseParameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    responseParametersInJson: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    responseTemplates: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    selectionPattern: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): IntegrationResponseArgs = {
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
+    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
+    if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])
+    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
+    if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntegrationResponseArgs]
+  }
+}
+

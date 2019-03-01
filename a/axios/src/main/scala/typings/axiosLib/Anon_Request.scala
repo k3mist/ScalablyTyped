@@ -10,3 +10,15 @@ trait Anon_Request extends js.Object {
   var response: axiosLib.axiosMod.AxiosInterceptorManager[axiosLib.axiosMod.AxiosResponse[_]]
 }
 
+object Anon_Request {
+  @scala.inline
+  def apply(
+    request: axiosLib.axiosMod.AxiosInterceptorManager[axiosLib.axiosMod.AxiosRequestConfig],
+    response: axiosLib.axiosMod.AxiosInterceptorManager[axiosLib.axiosMod.AxiosResponse[_]]
+  ): Anon_Request = {
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
+    __obj.asInstanceOf[Anon_Request]
+  }
+}
+

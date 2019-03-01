@@ -29,3 +29,19 @@ trait XDOMImplementation
   def hasFeature(feature: java.lang.String, ver: java.lang.String): scala.Boolean
 }
 
+object XDOMImplementation {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDocument: js.Function3[java.lang.String, java.lang.String, XDocumentType, XDocument],
+    createDocumentType: js.Function3[java.lang.String, java.lang.String, java.lang.String, XDocumentType],
+    hasFeature: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDOMImplementation = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createDocument = createDocument, createDocumentType = createDocumentType, hasFeature = hasFeature, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDOMImplementation]
+  }
+}
+

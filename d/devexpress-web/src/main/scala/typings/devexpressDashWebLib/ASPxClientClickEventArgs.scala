@@ -66,3 +66,24 @@ trait ASPxClientClickEventArgs extends ASPxClientEventArgs {
   var Value: js.Object
 }
 
+object ASPxClientClickEventArgs {
+  @scala.inline
+  def apply(
+    ColumnFieldName: java.lang.String,
+    ColumnIndex: scala.Double,
+    ColumnValue: js.Object,
+    ColumnValueType: java.lang.String,
+    DataIndex: scala.Double,
+    HtmlEvent: js.Object,
+    RowFieldName: java.lang.String,
+    RowIndex: scala.Double,
+    RowValue: js.Object,
+    RowValueType: java.lang.String,
+    Value: js.Object
+  ): ASPxClientClickEventArgs = {
+    val __obj = js.Dynamic.literal(ColumnFieldName = ColumnFieldName, ColumnIndex = ColumnIndex, ColumnValue = ColumnValue, ColumnValueType = ColumnValueType, DataIndex = DataIndex, HtmlEvent = HtmlEvent, RowFieldName = RowFieldName, RowIndex = RowIndex, RowValue = RowValue, RowValueType = RowValueType, Value = Value)
+  
+    __obj.asInstanceOf[ASPxClientClickEventArgs]
+  }
+}
+

@@ -43,3 +43,20 @@ trait XViewCursor
   def goUp(nCount: scala.Double, bExpand: scala.Boolean): scala.Boolean
 }
 
+object XViewCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    goDown: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goUp: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XViewCursor = {
+    val __obj = js.Dynamic.literal(acquire = acquire, goDown = goDown, goLeft = goLeft, goRight = goRight, goUp = goUp, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XViewCursor]
+  }
+}
+

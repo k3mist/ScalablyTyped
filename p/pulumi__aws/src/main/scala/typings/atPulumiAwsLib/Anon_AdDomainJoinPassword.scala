@@ -13,3 +13,20 @@ trait Anon_AdDomainJoinPassword extends js.Object {
   var realm: java.lang.String
 }
 
+object Anon_AdDomainJoinPassword {
+  @scala.inline
+  def apply(
+    kdcAdminPassword: java.lang.String,
+    realm: java.lang.String,
+    adDomainJoinPassword: java.lang.String = null,
+    adDomainJoinUser: java.lang.String = null,
+    crossRealmTrustPrincipalPassword: java.lang.String = null
+  ): Anon_AdDomainJoinPassword = {
+    val __obj = js.Dynamic.literal(kdcAdminPassword = kdcAdminPassword, realm = realm)
+    if (adDomainJoinPassword != null) __obj.updateDynamic("adDomainJoinPassword")(adDomainJoinPassword)
+    if (adDomainJoinUser != null) __obj.updateDynamic("adDomainJoinUser")(adDomainJoinUser)
+    if (crossRealmTrustPrincipalPassword != null) __obj.updateDynamic("crossRealmTrustPrincipalPassword")(crossRealmTrustPrincipalPassword)
+    __obj.asInstanceOf[Anon_AdDomainJoinPassword]
+  }
+}
+

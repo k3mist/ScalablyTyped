@@ -45,3 +45,22 @@ trait AOIEvaluator
   var useJobAOI: scala.Boolean
 }
 
+object AOIEvaluator {
+  @scala.inline
+  def apply(
+    aoi: Polygon,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    inverse: scala.Boolean,
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    relation: java.lang.String,
+    `type`: java.lang.String,
+    useJobAOI: scala.Boolean
+  ): AOIEvaluator = {
+    val __obj = js.Dynamic.literal(aoi = aoi, constructor = constructor, hasOwnProperty = hasOwnProperty, inverse = inverse, name = name, propertyIsEnumerable = propertyIsEnumerable, relation = relation, `type` = `type`, useJobAOI = useJobAOI)
+  
+    __obj.asInstanceOf[AOIEvaluator]
+  }
+}
+

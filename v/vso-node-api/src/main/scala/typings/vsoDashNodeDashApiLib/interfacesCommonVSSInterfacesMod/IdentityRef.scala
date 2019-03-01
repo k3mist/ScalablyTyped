@@ -18,3 +18,23 @@ trait IdentityRef extends js.Object {
   var url: java.lang.String
 }
 
+object IdentityRef {
+  @scala.inline
+  def apply(
+    directoryAlias: java.lang.String,
+    displayName: java.lang.String,
+    id: java.lang.String,
+    imageUrl: java.lang.String,
+    inactive: scala.Boolean,
+    isAadIdentity: scala.Boolean,
+    isContainer: scala.Boolean,
+    profileUrl: java.lang.String,
+    uniqueName: java.lang.String,
+    url: java.lang.String
+  ): IdentityRef = {
+    val __obj = js.Dynamic.literal(directoryAlias = directoryAlias, displayName = displayName, id = id, imageUrl = imageUrl, inactive = inactive, isAadIdentity = isAadIdentity, isContainer = isContainer, profileUrl = profileUrl, uniqueName = uniqueName, url = url)
+  
+    __obj.asInstanceOf[IdentityRef]
+  }
+}
+

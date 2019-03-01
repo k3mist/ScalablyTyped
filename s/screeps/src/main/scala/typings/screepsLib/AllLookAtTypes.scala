@@ -21,3 +21,25 @@ trait AllLookAtTypes extends js.Object {
   var tombstone: Tombstone
 }
 
+object AllLookAtTypes {
+  @scala.inline
+  def apply(
+    constructionSite: ConstructionSite[BuildableStructureConstant],
+    creep: Creep,
+    energy: Resource[RESOURCE_ENERGY],
+    exit: js.Any,
+    flag: Flag,
+    mineral: Mineral[MineralConstant],
+    nuke: Nuke,
+    resource: Resource[ResourceConstant],
+    source: Source,
+    structure: Structure[StructureConstant],
+    terrain: Terrain,
+    tombstone: Tombstone
+  ): AllLookAtTypes = {
+    val __obj = js.Dynamic.literal(constructionSite = constructionSite, creep = creep, energy = energy, exit = exit, flag = flag, mineral = mineral, nuke = nuke, resource = resource, source = source, structure = structure, terrain = terrain, tombstone = tombstone)
+  
+    __obj.asInstanceOf[AllLookAtTypes]
+  }
+}
+

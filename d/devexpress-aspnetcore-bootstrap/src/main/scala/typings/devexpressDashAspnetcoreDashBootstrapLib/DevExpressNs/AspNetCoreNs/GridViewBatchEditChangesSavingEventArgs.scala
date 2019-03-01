@@ -11,3 +11,18 @@ trait GridViewBatchEditChangesSavingEventArgs extends CancelEventArgs {
   val updatedValues: js.Any
 }
 
+object GridViewBatchEditChangesSavingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    deletedValues: js.Any,
+    insertedValues: js.Any,
+    sender: Control,
+    updatedValues: js.Any
+  ): GridViewBatchEditChangesSavingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, sender = sender, updatedValues = updatedValues)
+  
+    __obj.asInstanceOf[GridViewBatchEditChangesSavingEventArgs]
+  }
+}
+

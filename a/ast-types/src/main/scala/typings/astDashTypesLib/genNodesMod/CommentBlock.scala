@@ -13,3 +13,18 @@ trait CommentBlock
   var `type`: astDashTypesLib.astDashTypesLibStrings.CommentBlock
 }
 
+object CommentBlock {
+  @scala.inline
+  def apply(
+    leading: scala.Boolean,
+    trailing: scala.Boolean,
+    `type`: astDashTypesLib.astDashTypesLibStrings.CommentBlock,
+    value: java.lang.String,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): CommentBlock = {
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, `type` = `type`, value = value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[CommentBlock]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_Actual extends js.Object {
   var result: scala.Boolean
 }
 
+object Anon_Actual {
+  @scala.inline
+  def apply(actual: js.Any, expected: js.Any, message: java.lang.String, result: scala.Boolean): Anon_Actual = {
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, message = message, result = result)
+  
+    __obj.asInstanceOf[Anon_Actual]
+  }
+}
+

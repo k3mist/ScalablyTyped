@@ -32,3 +32,17 @@ trait IJobInfo extends js.Object {
   def setWork(work: js.Function): scala.Unit
 }
 
+object IJobInfo {
+  @scala.inline
+  def apply(
+    job: IJob,
+    setPromise: js.Function1[winjsLib.WinJSNs.Promise[_], scala.Unit],
+    setWork: js.Function1[js.Function, scala.Unit],
+    shouldYield: scala.Boolean
+  ): IJobInfo = {
+    val __obj = js.Dynamic.literal(job = job, setPromise = setPromise, setWork = setWork, shouldYield = shouldYield)
+  
+    __obj.asInstanceOf[IJobInfo]
+  }
+}
+

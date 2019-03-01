@@ -16,3 +16,22 @@ trait ChannelPool extends js.Object {
   def close(): scala.Unit
 }
 
+object ChannelPool {
+  @scala.inline
+  def apply(
+    channel: js.Function1[
+      js.Function2[
+        /* err */ nodeLib.Error | scala.Null, 
+        /* channel */ stompitLib.libChannelMod.namespaced, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    close: js.Function0[scala.Unit]
+  ): ChannelPool = {
+    val __obj = js.Dynamic.literal(channel = channel, close = close)
+  
+    __obj.asInstanceOf[ChannelPool]
+  }
+}
+

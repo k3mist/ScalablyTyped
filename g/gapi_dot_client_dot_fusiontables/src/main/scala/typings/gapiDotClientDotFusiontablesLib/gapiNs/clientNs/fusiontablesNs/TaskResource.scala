@@ -14,3 +14,25 @@ trait TaskResource extends js.Object {
   def list(request: gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyMaxResultsOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
 }
 
+object TaskResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserTableId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFusiontablesLib.Anon_AltFieldsKeyMaxResultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
+    ]
+  ): TaskResource = {
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+  
+    __obj.asInstanceOf[TaskResource]
+  }
+}
+

@@ -23,3 +23,17 @@ trait DataPointLabel extends js.Object {
   var ShowNumberInPercent: scala.Boolean
 }
 
+object DataPointLabel {
+  @scala.inline
+  def apply(
+    ShowCategoryName: scala.Boolean,
+    ShowLegendSymbol: scala.Boolean,
+    ShowNumber: scala.Boolean,
+    ShowNumberInPercent: scala.Boolean
+  ): DataPointLabel = {
+    val __obj = js.Dynamic.literal(ShowCategoryName = ShowCategoryName, ShowLegendSymbol = ShowLegendSymbol, ShowNumber = ShowNumber, ShowNumberInPercent = ShowNumberInPercent)
+  
+    __obj.asInstanceOf[DataPointLabel]
+  }
+}
+

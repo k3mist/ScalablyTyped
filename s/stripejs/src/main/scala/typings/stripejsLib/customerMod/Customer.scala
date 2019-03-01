@@ -41,3 +41,21 @@ trait Customer extends js.Object {
   val verified_phone: java.lang.String
 }
 
+object Customer {
+  @scala.inline
+  def apply(
+    address: Address,
+    email: java.lang.String,
+    name: java.lang.String,
+    phone: java.lang.String,
+    verified_address: Address,
+    verified_email: java.lang.String,
+    verified_name: java.lang.String,
+    verified_phone: java.lang.String
+  ): Customer = {
+    val __obj = js.Dynamic.literal(address = address, email = email, name = name, phone = phone, verified_address = verified_address, verified_email = verified_email, verified_name = verified_name, verified_phone = verified_phone)
+  
+    __obj.asInstanceOf[Customer]
+  }
+}
+

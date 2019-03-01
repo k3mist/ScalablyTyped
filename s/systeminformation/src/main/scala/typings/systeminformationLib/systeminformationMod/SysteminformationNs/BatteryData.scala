@@ -14,3 +14,19 @@ trait BatteryData extends js.Object {
   var percent: scala.Double
 }
 
+object BatteryData {
+  @scala.inline
+  def apply(
+    currentcapacity: scala.Double,
+    cyclecount: scala.Double,
+    hasbatter: scala.Boolean,
+    ischarging: scala.Boolean,
+    maxcapacity: scala.Double,
+    percent: scala.Double
+  ): BatteryData = {
+    val __obj = js.Dynamic.literal(currentcapacity = currentcapacity, cyclecount = cyclecount, hasbatter = hasbatter, ischarging = ischarging, maxcapacity = maxcapacity, percent = percent)
+  
+    __obj.asInstanceOf[BatteryData]
+  }
+}
+

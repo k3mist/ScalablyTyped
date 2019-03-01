@@ -19,3 +19,12 @@ trait ThreeDSecureAccountDetails extends js.Object {
   var lastTwo: java.lang.String
 }
 
+object ThreeDSecureAccountDetails {
+  @scala.inline
+  def apply(cardType: java.lang.String, lastTwo: java.lang.String): ThreeDSecureAccountDetails = {
+    val __obj = js.Dynamic.literal(cardType = cardType, lastTwo = lastTwo)
+  
+    __obj.asInstanceOf[ThreeDSecureAccountDetails]
+  }
+}
+

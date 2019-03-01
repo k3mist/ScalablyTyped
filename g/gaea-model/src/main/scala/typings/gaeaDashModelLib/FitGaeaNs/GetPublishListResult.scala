@@ -12,3 +12,12 @@ trait GetPublishListResult extends js.Object {
   var version: java.lang.String
 }
 
+object GetPublishListResult {
+  @scala.inline
+  def apply(description: java.lang.String, version: java.lang.String): GetPublishListResult = {
+    val __obj = js.Dynamic.literal(description = description, version = version)
+  
+    __obj.asInstanceOf[GetPublishListResult]
+  }
+}
+

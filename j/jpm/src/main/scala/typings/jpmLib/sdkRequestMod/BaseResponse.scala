@@ -14,3 +14,19 @@ trait BaseResponse extends js.Object {
   var url: java.lang.String
 }
 
+object BaseResponse {
+  @scala.inline
+  def apply(
+    anonymous: scala.Boolean,
+    headers: js.Object,
+    status: scala.Double,
+    statusText: java.lang.String,
+    text: java.lang.String,
+    url: java.lang.String
+  ): BaseResponse = {
+    val __obj = js.Dynamic.literal(anonymous = anonymous, headers = headers, status = status, statusText = statusText, text = text, url = url)
+  
+    __obj.asInstanceOf[BaseResponse]
+  }
+}
+

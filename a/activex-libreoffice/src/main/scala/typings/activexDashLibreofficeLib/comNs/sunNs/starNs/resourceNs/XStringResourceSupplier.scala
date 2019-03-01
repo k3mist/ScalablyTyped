@@ -24,3 +24,18 @@ trait XStringResourceSupplier
   def getStringResource(): XStringResourceResolver
 }
 
+object XStringResourceSupplier {
+  @scala.inline
+  def apply(
+    StringResource: XStringResourceResolver,
+    acquire: js.Function0[scala.Unit],
+    getStringResource: js.Function0[XStringResourceResolver],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStringResourceSupplier = {
+    val __obj = js.Dynamic.literal(StringResource = StringResource, acquire = acquire, getStringResource = getStringResource, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStringResourceSupplier]
+  }
+}
+

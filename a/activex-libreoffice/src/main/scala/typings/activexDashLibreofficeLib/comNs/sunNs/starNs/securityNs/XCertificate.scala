@@ -58,3 +58,37 @@ trait XCertificate
   def getCertificateUsage(): scala.Double
 }
 
+object XCertificate {
+  @scala.inline
+  def apply(
+    CertificateUsage: scala.Double,
+    Encoded: activexDashInteropLib.SafeArray[scala.Double],
+    Extensions: activexDashInteropLib.SafeArray[XCertificateExtension],
+    IssuerName: java.lang.String,
+    IssuerUniqueID: activexDashInteropLib.SafeArray[scala.Double],
+    MD5Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
+    NotValidAfter: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    NotValidBefore: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    SHA1Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
+    SerialNumber: activexDashInteropLib.SafeArray[scala.Double],
+    SignatureAlgorithm: java.lang.String,
+    SubjectName: java.lang.String,
+    SubjectPublicKeyAlgorithm: java.lang.String,
+    SubjectPublicKeyValue: activexDashInteropLib.SafeArray[scala.Double],
+    SubjectUniqueID: activexDashInteropLib.SafeArray[scala.Double],
+    Version: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    findCertificateExtension: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XCertificateExtension
+    ],
+    getCertificateUsage: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCertificate = {
+    val __obj = js.Dynamic.literal(CertificateUsage = CertificateUsage, Encoded = Encoded, Extensions = Extensions, IssuerName = IssuerName, IssuerUniqueID = IssuerUniqueID, MD5Thumbprint = MD5Thumbprint, NotValidAfter = NotValidAfter, NotValidBefore = NotValidBefore, SHA1Thumbprint = SHA1Thumbprint, SerialNumber = SerialNumber, SignatureAlgorithm = SignatureAlgorithm, SubjectName = SubjectName, SubjectPublicKeyAlgorithm = SubjectPublicKeyAlgorithm, SubjectPublicKeyValue = SubjectPublicKeyValue, SubjectUniqueID = SubjectUniqueID, Version = Version, acquire = acquire, findCertificateExtension = findCertificateExtension, getCertificateUsage = getCertificateUsage, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCertificate]
+  }
+}
+

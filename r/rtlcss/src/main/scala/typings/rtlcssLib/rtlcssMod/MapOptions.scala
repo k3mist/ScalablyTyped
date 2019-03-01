@@ -11,3 +11,16 @@ trait MapOptions extends js.Object {
   var scope: java.lang.String
 }
 
+object MapOptions {
+  @scala.inline
+  def apply(
+    ignoreCase: scala.Boolean,
+    scope: java.lang.String,
+    greedy: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapOptions = {
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase, scope = scope)
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy)
+    __obj.asInstanceOf[MapOptions]
+  }
+}
+

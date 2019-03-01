@@ -21,3 +21,12 @@ trait ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs extends ASPxClient
   var handled: scala.Boolean
 }
 
+object ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs {
+  @scala.inline
+  def apply(column: ASPxClientGridViewColumn, handled: scala.Boolean): ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs = {
+    val __obj = js.Dynamic.literal(column = column, handled = handled)
+  
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs]
+  }
+}
+

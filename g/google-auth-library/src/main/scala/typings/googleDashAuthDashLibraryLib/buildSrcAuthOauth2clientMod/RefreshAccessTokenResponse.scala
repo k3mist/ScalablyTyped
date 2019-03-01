@@ -10,3 +10,15 @@ trait RefreshAccessTokenResponse extends js.Object {
   var res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[_] | scala.Null
 }
 
+object RefreshAccessTokenResponse {
+  @scala.inline
+  def apply(
+    credentials: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials,
+    res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[_] = null
+  ): RefreshAccessTokenResponse = {
+    val __obj = js.Dynamic.literal(credentials = credentials)
+    if (res != null) __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[RefreshAccessTokenResponse]
+  }
+}
+

@@ -24,3 +24,20 @@ trait NamedQueryState extends js.Object {
   val query: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object NamedQueryState {
+  @scala.inline
+  def apply(
+    database: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    query: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): NamedQueryState = {
+    val __obj = js.Dynamic.literal()
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NamedQueryState]
+  }
+}
+

@@ -13,3 +13,18 @@ trait ErrorListProps extends js.Object {
   var uiSchema: UiSchema
 }
 
+object ErrorListProps {
+  @scala.inline
+  def apply(
+    errorSchema: FormValidation,
+    errors: js.Array[AjvError],
+    formContext: js.Any,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    uiSchema: UiSchema
+  ): ErrorListProps = {
+    val __obj = js.Dynamic.literal(errorSchema = errorSchema, errors = errors, formContext = formContext, schema = schema, uiSchema = uiSchema)
+  
+    __obj.asInstanceOf[ErrorListProps]
+  }
+}
+

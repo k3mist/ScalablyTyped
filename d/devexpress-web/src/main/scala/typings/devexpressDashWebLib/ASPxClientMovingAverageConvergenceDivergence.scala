@@ -26,3 +26,21 @@ trait ASPxClientMovingAverageConvergenceDivergence extends ASPxSeparatePaneIndic
   var signalSmoothingPeriod: scala.Double
 }
 
+object ASPxClientMovingAverageConvergenceDivergence {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    longPeriod: scala.Double,
+    name: java.lang.String,
+    pane: java.lang.String,
+    series: ASPxClientSeries,
+    shortPeriod: scala.Double,
+    signalSmoothingPeriod: scala.Double
+  ): ASPxClientMovingAverageConvergenceDivergence = {
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, longPeriod = longPeriod, name = name, pane = pane, series = series, shortPeriod = shortPeriod, signalSmoothingPeriod = signalSmoothingPeriod)
+  
+    __obj.asInstanceOf[ASPxClientMovingAverageConvergenceDivergence]
+  }
+}
+

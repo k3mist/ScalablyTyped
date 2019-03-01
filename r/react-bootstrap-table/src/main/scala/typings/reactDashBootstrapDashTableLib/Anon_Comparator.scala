@@ -16,3 +16,15 @@ trait Anon_Comparator extends js.Object {
   var number: scala.Double
 }
 
+object Anon_Comparator {
+  @scala.inline
+  def apply(
+    comparator: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator,
+    number: scala.Double
+  ): Anon_Comparator = {
+    val __obj = js.Dynamic.literal(comparator = comparator, number = number)
+  
+    __obj.asInstanceOf[Anon_Comparator]
+  }
+}
+

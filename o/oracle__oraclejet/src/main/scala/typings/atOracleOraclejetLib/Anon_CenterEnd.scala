@@ -13,3 +13,18 @@ trait Anon_CenterEnd extends js.Object {
   var titleStyle: js.Object
 }
 
+object Anon_CenterEnd {
+  @scala.inline
+  def apply(
+    items: js.Array[Anon_BorderColor],
+    sections: js.Array[js.Object],
+    title: java.lang.String,
+    titleHalign: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
+    titleStyle: js.Object
+  ): Anon_CenterEnd = {
+    val __obj = js.Dynamic.literal(items = items, sections = sections, title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+  
+    __obj.asInstanceOf[Anon_CenterEnd]
+  }
+}
+

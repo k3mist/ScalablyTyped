@@ -25,3 +25,17 @@ trait RangeSelectionArguments extends js.Object {
   var Title: java.lang.String
 }
 
+object RangeSelectionArguments {
+  @scala.inline
+  def apply(
+    CloseOnMouseRelease: scala.Boolean,
+    InitialValue: java.lang.String,
+    SingleCellMode: scala.Boolean,
+    Title: java.lang.String
+  ): RangeSelectionArguments = {
+    val __obj = js.Dynamic.literal(CloseOnMouseRelease = CloseOnMouseRelease, InitialValue = InitialValue, SingleCellMode = SingleCellMode, Title = Title)
+  
+    __obj.asInstanceOf[RangeSelectionArguments]
+  }
+}
+

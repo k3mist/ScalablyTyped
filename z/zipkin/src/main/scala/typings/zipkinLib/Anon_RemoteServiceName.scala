@@ -11,3 +11,16 @@ trait Anon_RemoteServiceName extends js.Object {
   var tracer: zipkinLib.zipkinMod.zipkinNs.Tracer
 }
 
+object Anon_RemoteServiceName {
+  @scala.inline
+  def apply(
+    serviceName: java.lang.String,
+    tracer: zipkinLib.zipkinMod.zipkinNs.Tracer,
+    remoteServiceName: java.lang.String = null
+  ): Anon_RemoteServiceName = {
+    val __obj = js.Dynamic.literal(serviceName = serviceName, tracer = tracer)
+    if (remoteServiceName != null) __obj.updateDynamic("remoteServiceName")(remoteServiceName)
+    __obj.asInstanceOf[Anon_RemoteServiceName]
+  }
+}
+

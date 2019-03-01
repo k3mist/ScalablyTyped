@@ -9,3 +9,12 @@ trait RequiredParams extends ErrorParameters {
   var missingProperty: java.lang.String
 }
 
+object RequiredParams {
+  @scala.inline
+  def apply(missingProperty: java.lang.String): RequiredParams = {
+    val __obj = js.Dynamic.literal(missingProperty = missingProperty)
+  
+    __obj.asInstanceOf[RequiredParams]
+  }
+}
+

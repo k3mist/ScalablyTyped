@@ -22,3 +22,27 @@ trait DiskLayoutData extends js.Object {
   var vendor: java.lang.String
 }
 
+object DiskLayoutData {
+  @scala.inline
+  def apply(
+    bytesPerSector: scala.Double,
+    firmwareRevision: java.lang.String,
+    interfaceType: java.lang.String,
+    name: java.lang.String,
+    sectorsPerTrack: scala.Double,
+    serialNum: java.lang.String,
+    size: scala.Double,
+    totalCylinders: scala.Double,
+    totalHeads: scala.Double,
+    totalSectors: scala.Double,
+    totalTracks: scala.Double,
+    tracksPerCylinder: scala.Double,
+    `type`: java.lang.String,
+    vendor: java.lang.String
+  ): DiskLayoutData = {
+    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector, firmwareRevision = firmwareRevision, interfaceType = interfaceType, name = name, sectorsPerTrack = sectorsPerTrack, serialNum = serialNum, size = size, totalCylinders = totalCylinders, totalHeads = totalHeads, totalSectors = totalSectors, totalTracks = totalTracks, tracksPerCylinder = tracksPerCylinder, `type` = `type`, vendor = vendor)
+  
+    __obj.asInstanceOf[DiskLayoutData]
+  }
+}
+

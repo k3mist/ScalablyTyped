@@ -19,3 +19,34 @@ trait TypeDescriptionManager
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
      with XTypeDescriptionEnumerationAccess
 
+object TypeDescriptionManager {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    createTypeDescriptionEnumeration: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass], 
+      TypeDescriptionSearchDepth, 
+      XTypeDescriptionEnumeration
+    ],
+    dispose: js.Function0[scala.Unit],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    has: js.Function1[js.Any, scala.Boolean],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    insert: js.Function1[js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[js.Any, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): TypeDescriptionManager = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, createEnumeration = createEnumeration, createTypeDescriptionEnumeration = createTypeDescriptionEnumeration, dispose = dispose, getByHierarchicalName = getByHierarchicalName, getElementType = getElementType, has = has, hasByHierarchicalName = hasByHierarchicalName, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, remove = remove, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[TypeDescriptionManager]
+  }
+}
+

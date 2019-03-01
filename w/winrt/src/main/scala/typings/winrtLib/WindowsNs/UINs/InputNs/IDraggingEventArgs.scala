@@ -11,3 +11,16 @@ trait IDraggingEventArgs extends js.Object {
   var position: winrtLib.WindowsNs.FoundationNs.Point
 }
 
+object IDraggingEventArgs {
+  @scala.inline
+  def apply(
+    draggingState: DraggingState,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point
+  ): IDraggingEventArgs = {
+    val __obj = js.Dynamic.literal(draggingState = draggingState, pointerDeviceType = pointerDeviceType, position = position)
+  
+    __obj.asInstanceOf[IDraggingEventArgs]
+  }
+}
+

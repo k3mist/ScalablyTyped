@@ -28,3 +28,18 @@ trait Config extends js.Object {
   var useProxy: scala.Boolean
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    includeStack: scala.Boolean,
+    proxyExcludedKeys: js.Array[java.lang.String],
+    showDiff: scala.Boolean,
+    truncateThreshold: scala.Double,
+    useProxy: scala.Boolean
+  ): Config = {
+    val __obj = js.Dynamic.literal(includeStack = includeStack, proxyExcludedKeys = proxyExcludedKeys, showDiff = showDiff, truncateThreshold = truncateThreshold, useProxy = useProxy)
+  
+    __obj.asInstanceOf[Config]
+  }
+}
+

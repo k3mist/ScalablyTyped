@@ -13,3 +13,12 @@ trait ChromeSettingSetDetails extends ChromeSettingClearDetails {
   var value: js.Any
 }
 
+object ChromeSettingSetDetails {
+  @scala.inline
+  def apply(value: js.Any, scope: java.lang.String = null): ChromeSettingSetDetails = {
+    val __obj = js.Dynamic.literal(value = value)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ChromeSettingSetDetails]
+  }
+}
+

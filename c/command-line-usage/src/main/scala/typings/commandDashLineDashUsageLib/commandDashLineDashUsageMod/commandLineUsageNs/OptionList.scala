@@ -20,3 +20,24 @@ trait OptionList extends Section {
   var tableOptions: js.UndefOr[js.Any] = js.undefined
 }
 
+object OptionList {
+  @scala.inline
+  def apply(
+    group: java.lang.String | js.Array[java.lang.String] = null,
+    header: java.lang.String = null,
+    hide: java.lang.String | js.Array[java.lang.String] = null,
+    optionList: js.Array[OptionDefinition] = null,
+    reverseNameOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    tableOptions: js.Any = null
+  ): OptionList = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (optionList != null) __obj.updateDynamic("optionList")(optionList)
+    if (!js.isUndefined(reverseNameOrder)) __obj.updateDynamic("reverseNameOrder")(reverseNameOrder)
+    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions)
+    __obj.asInstanceOf[OptionList]
+  }
+}
+

@@ -34,3 +34,18 @@ trait DirectiveMeta extends js.Object {
   var outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object DirectiveMeta {
+  @scala.inline
+  def apply(
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])],
+    isComponent: scala.Boolean,
+    name: java.lang.String,
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    exportAs: java.lang.String = null
+  ): DirectiveMeta = {
+    val __obj = js.Dynamic.literal(inputs = inputs, isComponent = isComponent, name = name, outputs = outputs)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    __obj.asInstanceOf[DirectiveMeta]
+  }
+}
+

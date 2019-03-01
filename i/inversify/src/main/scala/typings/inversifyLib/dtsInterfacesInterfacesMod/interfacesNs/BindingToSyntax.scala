@@ -18,3 +18,23 @@ trait BindingToSyntax[T] extends js.Object {
   def toService(service: ServiceIdentifier[T]): scala.Unit
 }
 
+object BindingToSyntax {
+  @scala.inline
+  def apply[T](
+    to: js.Function1[inversifyLib.Anon_Args[T], BindingInWhenOnSyntax[T]],
+    toAutoFactory: js.Function1[ServiceIdentifier[js.Any], BindingWhenOnSyntax[T]],
+    toConstantValue: js.Function1[T, BindingWhenOnSyntax[T]],
+    toConstructor: js.Function1[Newable[js.Any], BindingWhenOnSyntax[T]],
+    toDynamicValue: js.Function1[js.Function1[/* context */ Context, T], BindingInWhenOnSyntax[T]],
+    toFactory: js.Function1[FactoryCreator[js.Any], BindingWhenOnSyntax[T]],
+    toFunction: js.Function1[T, BindingWhenOnSyntax[T]],
+    toProvider: js.Function1[ProviderCreator[js.Any], BindingWhenOnSyntax[T]],
+    toSelf: js.Function0[BindingInWhenOnSyntax[T]],
+    toService: js.Function1[ServiceIdentifier[T], scala.Unit]
+  ): BindingToSyntax[T] = {
+    val __obj = js.Dynamic.literal(to = to, toAutoFactory = toAutoFactory, toConstantValue = toConstantValue, toConstructor = toConstructor, toDynamicValue = toDynamicValue, toFactory = toFactory, toFunction = toFunction, toProvider = toProvider, toSelf = toSelf, toService = toService)
+  
+    __obj.asInstanceOf[BindingToSyntax[T]]
+  }
+}
+

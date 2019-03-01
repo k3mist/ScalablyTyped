@@ -20,3 +20,18 @@ trait XStyleFamiliesSupplier
   def getStyleFamilies(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XStyleFamiliesSupplier {
+  @scala.inline
+  def apply(
+    StyleFamilies: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getStyleFamilies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStyleFamiliesSupplier = {
+    val __obj = js.Dynamic.literal(StyleFamilies = StyleFamilies, acquire = acquire, getStyleFamilies = getStyleFamilies, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XStyleFamiliesSupplier]
+  }
+}
+

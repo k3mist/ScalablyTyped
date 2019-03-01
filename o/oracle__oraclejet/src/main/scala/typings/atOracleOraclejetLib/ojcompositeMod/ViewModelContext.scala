@@ -13,3 +13,18 @@ trait ViewModelContext extends js.Object {
   var uniqueId: java.lang.String
 }
 
+object ViewModelContext {
+  @scala.inline
+  def apply(
+    element: stdLib.Element,
+    properties: js.Object,
+    slotCounts: js.Object,
+    unique: java.lang.String,
+    uniqueId: java.lang.String
+  ): ViewModelContext = {
+    val __obj = js.Dynamic.literal(element = element, properties = properties, slotCounts = slotCounts, unique = unique, uniqueId = uniqueId)
+  
+    __obj.asInstanceOf[ViewModelContext]
+  }
+}
+

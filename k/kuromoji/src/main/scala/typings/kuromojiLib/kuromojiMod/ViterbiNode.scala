@@ -18,3 +18,23 @@ trait ViterbiNode extends js.Object {
   var `type`: java.lang.String
 }
 
+object ViterbiNode {
+  @scala.inline
+  def apply(
+    cost: scala.Double,
+    left_id: scala.Double,
+    length: scala.Double,
+    name: java.lang.String,
+    prev: ViterbiNode,
+    right_id: scala.Double,
+    shortest_cost: scala.Double,
+    start_pos: scala.Double,
+    surface_form: java.lang.String,
+    `type`: java.lang.String
+  ): ViterbiNode = {
+    val __obj = js.Dynamic.literal(cost = cost, left_id = left_id, length = length, name = name, prev = prev, right_id = right_id, shortest_cost = shortest_cost, start_pos = start_pos, surface_form = surface_form, `type` = `type`)
+  
+    __obj.asInstanceOf[ViterbiNode]
+  }
+}
+

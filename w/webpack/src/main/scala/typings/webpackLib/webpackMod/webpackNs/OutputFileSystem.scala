@@ -30,3 +30,40 @@ trait OutputFileSystem extends js.Object {
   ): scala.Unit
 }
 
+object OutputFileSystem {
+  @scala.inline
+  def apply(
+    join: js.Function1[/* repeated */ java.lang.String, java.lang.String],
+    mkdir: js.Function2[
+      java.lang.String, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ],
+    mkdirp: js.Function2[
+      java.lang.String, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ],
+    rmdir: js.Function2[
+      java.lang.String, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ],
+    unlink: js.Function2[
+      java.lang.String, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ],
+    writeFile: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ]
+  ): OutputFileSystem = {
+    val __obj = js.Dynamic.literal(join = join, mkdir = mkdir, mkdirp = mkdirp, rmdir = rmdir, unlink = unlink, writeFile = writeFile)
+  
+    __obj.asInstanceOf[OutputFileSystem]
+  }
+}
+

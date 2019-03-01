@@ -16,3 +16,15 @@ trait WebAclAssociationArgs extends js.Object {
   val webAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object WebAclAssociationArgs {
+  @scala.inline
+  def apply(
+    resourceArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    webAclId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): WebAclAssociationArgs = {
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], webAclId = webAclId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[WebAclAssociationArgs]
+  }
+}
+

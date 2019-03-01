@@ -32,3 +32,26 @@ trait PrintProperties extends WidgetProperties {
   var viewModel: js.UndefOr[PrintViewModelProperties] = js.undefined
 }
 
+object PrintProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    printServiceUrl: java.lang.String = null,
+    templateOptions: TemplateOptionsProperties = null,
+    view: MapViewProperties = null,
+    viewModel: PrintViewModelProperties = null
+  ): PrintProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl)
+    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[PrintProperties]
+  }
+}
+

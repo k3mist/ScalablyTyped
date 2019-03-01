@@ -145,3 +145,56 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: java.lang.String, extraData: js.Any): scala.Double
 }
 
+object ColumnDescription {
+  @scala.inline
+  def apply[TRow /* <: js.Object */](
+    align: DataAlignType,
+    attrs: CustomAttrs,
+    className: java.lang.String | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ TRow, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      java.lang.String
+    ]),
+    columnTitle: scala.Boolean,
+    customEditor: CustomEditor[TRow, _],
+    editAttrs: CustomAttrs,
+    editClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ TRow, java.lang.String]),
+    editable: scala.Boolean | (Editable[TRow, _]) | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ TRow, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      scala.Boolean | java.lang.String | EditValidatorObject
+    ]),
+    expandable: scala.Boolean,
+    export: scala.Boolean,
+    filterFormatted: scala.Boolean,
+    filterValue: js.Function2[js.Any, TRow, js.Any],
+    format: js.Function4[
+      js.Any, 
+      TRow, 
+      js.Any, 
+      scala.Double, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ],
+    formatExtraData: js.Any,
+    hidden: scala.Boolean,
+    hiddenOnInsert: scala.Boolean,
+    invalidEditColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ TRow, java.lang.String]),
+    name: java.lang.String,
+    searchable: scala.Boolean,
+    sort: scala.Boolean,
+    sortFunc: js.Function5[TRow, TRow, SortOrder, java.lang.String, js.Any, scala.Double],
+    sortFuncExtraData: js.Any,
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_],
+    width: java.lang.String
+  ): ColumnDescription[TRow] = {
+    val __obj = js.Dynamic.literal(align = align, attrs = attrs, className = className.asInstanceOf[js.Any], columnTitle = columnTitle, customEditor = customEditor, editAttrs = editAttrs, editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable, export = export, filterFormatted = filterFormatted, filterValue = filterValue, format = format, formatExtraData = formatExtraData, hidden = hidden, hiddenOnInsert = hiddenOnInsert, invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name, searchable = searchable, sort = sort, sortFunc = sortFunc, sortFuncExtraData = sortFuncExtraData, style = style, text = text.asInstanceOf[js.Any], width = width)
+  
+    __obj.asInstanceOf[ColumnDescription[TRow]]
+  }
+}
+

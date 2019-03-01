@@ -19,3 +19,15 @@ trait ControlCommand extends js.Object {
   var Command: java.lang.String
 }
 
+object ControlCommand {
+  @scala.inline
+  def apply(
+    Arguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    Command: java.lang.String
+  ): ControlCommand = {
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Command = Command)
+  
+    __obj.asInstanceOf[ControlCommand]
+  }
+}
+

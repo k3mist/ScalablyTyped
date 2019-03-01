@@ -24,3 +24,41 @@ trait DatafeedsResource extends js.Object {
   def update(request: gapiDotClientDotContentLib.Anon_AltDatafeedId): gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
 }
 
+object DatafeedsResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsCustomBatchResponse]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDatafeedIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRunFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDatafeedId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
+    ]
+  ): DatafeedsResource = {
+    val __obj = js.Dynamic.literal(custombatch = custombatch, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
+    __obj.asInstanceOf[DatafeedsResource]
+  }
+}
+

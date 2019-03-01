@@ -161,3 +161,80 @@ trait ClusterArgs extends js.Object {
   ] = js.undefined
 }
 
+object ClusterArgs {
+  @scala.inline
+  def apply(
+    applyImmediately: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    availabilityZones: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    backtrackWindow: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    backupRetentionPeriod: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    clusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    clusterIdentifierPrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    clusterMembers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    databaseName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbClusterParameterGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    dbSubnetGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deletionProtection: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    enabledCloudwatchLogsExports: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    engine: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineMode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    finalSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    globalClusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    iamDatabaseAuthenticationEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    iamRoles: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null,
+    kmsKeyId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    masterPassword: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    masterUsername: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    preferredBackupWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    replicationSourceIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    s3Import: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameBucketPrefixIngestionRole] = null,
+    scalingConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AutoPauseMaxCapacity] = null,
+    skipFinalSnapshot: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    snapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    sourceRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    storageEncrypted: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]] = null
+  ): ClusterArgs = {
+    val __obj = js.Dynamic.literal()
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (backtrackWindow != null) __obj.updateDynamic("backtrackWindow")(backtrackWindow.asInstanceOf[js.Any])
+    if (backupRetentionPeriod != null) __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod.asInstanceOf[js.Any])
+    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
+    if (clusterMembers != null) __obj.updateDynamic("clusterMembers")(clusterMembers.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
+    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
+    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineMode != null) __obj.updateDynamic("engineMode")(engineMode.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
+    if (globalClusterIdentifier != null) __obj.updateDynamic("globalClusterIdentifier")(globalClusterIdentifier.asInstanceOf[js.Any])
+    if (iamDatabaseAuthenticationEnabled != null) __obj.updateDynamic("iamDatabaseAuthenticationEnabled")(iamDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
+    if (iamRoles != null) __obj.updateDynamic("iamRoles")(iamRoles.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (masterPassword != null) __obj.updateDynamic("masterPassword")(masterPassword.asInstanceOf[js.Any])
+    if (masterUsername != null) __obj.updateDynamic("masterUsername")(masterUsername.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (replicationSourceIdentifier != null) __obj.updateDynamic("replicationSourceIdentifier")(replicationSourceIdentifier.asInstanceOf[js.Any])
+    if (s3Import != null) __obj.updateDynamic("s3Import")(s3Import.asInstanceOf[js.Any])
+    if (scalingConfiguration != null) __obj.updateDynamic("scalingConfiguration")(scalingConfiguration.asInstanceOf[js.Any])
+    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
+    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
+    if (sourceRegion != null) __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
+    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterArgs]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ActionCodeInfo extends js.Object {
   var operation: java.lang.String
 }
 
+object ActionCodeInfo {
+  @scala.inline
+  def apply(data: firebaseLib.Anon_Email, operation: java.lang.String): ActionCodeInfo = {
+    val __obj = js.Dynamic.literal(data = data, operation = operation)
+  
+    __obj.asInstanceOf[ActionCodeInfo]
+  }
+}
+

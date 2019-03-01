@@ -15,3 +15,17 @@ trait PCTrueColorRendererResult
   var renderer: PointCloudRGBRenderer
 }
 
+object PCTrueColorRendererResult {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    renderer: PointCloudRGBRenderer
+  ): PCTrueColorRendererResult = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+  
+    __obj.asInstanceOf[PCTrueColorRendererResult]
+  }
+}
+

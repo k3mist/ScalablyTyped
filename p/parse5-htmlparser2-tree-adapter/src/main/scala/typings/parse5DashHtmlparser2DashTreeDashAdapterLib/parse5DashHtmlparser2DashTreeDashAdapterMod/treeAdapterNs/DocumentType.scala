@@ -36,3 +36,28 @@ trait DocumentType extends Node {
   var `x-systemId`: java.lang.String
 }
 
+object DocumentType {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    name: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.`!doctype`,
+    next: Node,
+    nextSibling: Node,
+    nodeType: scala.Double,
+    parent: ParentNode,
+    parentNode: ParentNode,
+    prev: Node,
+    previousSibling: Node,
+    `type`: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.directive,
+    `x-name`: java.lang.String,
+    `x-publicId`: java.lang.String,
+    `x-systemId`: java.lang.String
+  ): DocumentType = {
+    val __obj = js.Dynamic.literal(data = data, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling, `type` = `type`)
+    __obj.updateDynamic("x-name")(`x-name`)
+    __obj.updateDynamic("x-publicId")(`x-publicId`)
+    __obj.updateDynamic("x-systemId")(`x-systemId`)
+    __obj.asInstanceOf[DocumentType]
+  }
+}
+

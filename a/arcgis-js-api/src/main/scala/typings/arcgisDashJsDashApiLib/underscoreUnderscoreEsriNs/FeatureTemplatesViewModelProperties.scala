@@ -37,3 +37,18 @@ trait FeatureTemplatesViewModelProperties extends js.Object {
   var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.undefined
 }
 
+object FeatureTemplatesViewModelProperties {
+  @scala.inline
+  def apply(
+    filterFunction: FilterFunction = null,
+    groupBy: java.lang.String | GroupByFunction = null,
+    layers: js.Array[FeatureLayerProperties] = null
+  ): FeatureTemplatesViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction)
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    __obj.asInstanceOf[FeatureTemplatesViewModelProperties]
+  }
+}
+

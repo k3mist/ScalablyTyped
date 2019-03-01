@@ -26,3 +26,17 @@ trait LogMetricFilterArgs extends js.Object {
   val pattern: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object LogMetricFilterArgs {
+  @scala.inline
+  def apply(
+    logGroupName: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    metricTransformation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueName],
+    pattern: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): LogMetricFilterArgs = {
+    val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], metricTransformation = metricTransformation.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogMetricFilterArgs]
+  }
+}
+

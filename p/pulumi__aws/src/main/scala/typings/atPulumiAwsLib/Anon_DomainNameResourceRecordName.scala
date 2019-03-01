@@ -12,3 +12,20 @@ trait Anon_DomainNameResourceRecordName extends js.Object {
   var resourceRecordValue: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_DomainNameResourceRecordName {
+  @scala.inline
+  def apply(
+    domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceRecordName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceRecordType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    resourceRecordValue: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): Anon_DomainNameResourceRecordName = {
+    val __obj = js.Dynamic.literal()
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (resourceRecordName != null) __obj.updateDynamic("resourceRecordName")(resourceRecordName.asInstanceOf[js.Any])
+    if (resourceRecordType != null) __obj.updateDynamic("resourceRecordType")(resourceRecordType.asInstanceOf[js.Any])
+    if (resourceRecordValue != null) __obj.updateDynamic("resourceRecordValue")(resourceRecordValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DomainNameResourceRecordName]
+  }
+}
+

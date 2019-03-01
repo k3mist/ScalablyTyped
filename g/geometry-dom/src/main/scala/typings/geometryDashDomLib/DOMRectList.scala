@@ -18,3 +18,12 @@ trait DOMRectList extends js.Object {
   def item(index: scala.Double): geometryDashDomLib.GeometryDomNs.DOMRect
 }
 
+object DOMRectList {
+  @scala.inline
+  def apply(item: js.Function1[scala.Double, geometryDashDomLib.GeometryDomNs.DOMRect], length: scala.Double): DOMRectList = {
+    val __obj = js.Dynamic.literal(item = item, length = length)
+  
+    __obj.asInstanceOf[DOMRectList]
+  }
+}
+

@@ -17,3 +17,22 @@ trait ScrollInfo extends js.Object {
   var trackLength: overlayscrollbarsLib.Anon_XYNumber
 }
 
+object ScrollInfo {
+  @scala.inline
+  def apply(
+    handleLength: overlayscrollbarsLib.Anon_XYNumber,
+    handleLengthRatio: overlayscrollbarsLib.Anon_XYNumber,
+    handleOffset: overlayscrollbarsLib.Anon_XYNumber,
+    isRTL: scala.Boolean,
+    isRTLNormalized: scala.Boolean,
+    max: overlayscrollbarsLib.Anon_XYNumber,
+    position: overlayscrollbarsLib.Anon_XYNumber,
+    ratio: overlayscrollbarsLib.Anon_XYNumber,
+    trackLength: overlayscrollbarsLib.Anon_XYNumber
+  ): ScrollInfo = {
+    val __obj = js.Dynamic.literal(handleLength = handleLength, handleLengthRatio = handleLengthRatio, handleOffset = handleOffset, isRTL = isRTL, isRTLNormalized = isRTLNormalized, max = max, position = position, ratio = ratio, trackLength = trackLength)
+  
+    __obj.asInstanceOf[ScrollInfo]
+  }
+}
+

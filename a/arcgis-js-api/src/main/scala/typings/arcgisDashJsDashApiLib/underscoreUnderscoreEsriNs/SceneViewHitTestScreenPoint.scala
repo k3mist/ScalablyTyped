@@ -21,3 +21,18 @@ trait SceneViewHitTestScreenPoint
   var y: scala.Double
 }
 
+object SceneViewHitTestScreenPoint {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    x: scala.Double,
+    y: scala.Double
+  ): SceneViewHitTestScreenPoint = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, x = x, y = y)
+  
+    __obj.asInstanceOf[SceneViewHitTestScreenPoint]
+  }
+}
+

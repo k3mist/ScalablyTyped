@@ -101,3 +101,30 @@ trait Math extends js.Object {
   def trunc(x: scala.Double): scala.Double
 }
 
+object Math {
+  @scala.inline
+  def apply(
+    acosh: js.Function1[scala.Double, scala.Double],
+    asinh: js.Function1[scala.Double, scala.Double],
+    atanh: js.Function1[scala.Double, scala.Double],
+    cbrt: js.Function1[scala.Double, scala.Double],
+    clz32: js.Function1[scala.Double, scala.Double],
+    cosh: js.Function1[scala.Double, scala.Double],
+    expm1: js.Function1[scala.Double, scala.Double],
+    fround: js.Function1[scala.Double, scala.Double],
+    hypot: js.Function1[/* repeated */ scala.Double, scala.Double],
+    imul: js.Function2[scala.Double, scala.Double, scala.Double],
+    log10: js.Function1[scala.Double, scala.Double],
+    log1p: js.Function1[scala.Double, scala.Double],
+    log2: js.Function1[scala.Double, scala.Double],
+    sign: js.Function1[scala.Double, scala.Double],
+    sinh: js.Function1[scala.Double, scala.Double],
+    tanh: js.Function1[scala.Double, scala.Double],
+    trunc: js.Function1[scala.Double, scala.Double]
+  ): Math = {
+    val __obj = js.Dynamic.literal(acosh = acosh, asinh = asinh, atanh = atanh, cbrt = cbrt, clz32 = clz32, cosh = cosh, expm1 = expm1, fround = fround, hypot = hypot, imul = imul, log10 = log10, log1p = log1p, log2 = log2, sign = sign, sinh = sinh, tanh = tanh, trunc = trunc)
+  
+    __obj.asInstanceOf[Math]
+  }
+}
+

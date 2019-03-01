@@ -10,3 +10,12 @@ trait Bag extends js.Object {
   var extra: js.Any
 }
 
+object Bag {
+  @scala.inline
+  def apply(action: ReceivedAction | Action, extra: js.Any): Bag = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], extra = extra)
+  
+    __obj.asInstanceOf[Bag]
+  }
+}
+

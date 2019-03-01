@@ -32,3 +32,22 @@ trait SilverlightControl extends Control {
   def setData(data: java.lang.String): scala.Unit
 }
 
+object SilverlightControl {
+  @scala.inline
+  def apply(
+    getControlType: js.Function0[ControlType | java.lang.String],
+    getData: js.Function0[java.lang.String],
+    getLabel: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getObject: js.Function0[stdLib.HTMLObjectElement],
+    getParent: js.Function0[Section],
+    getVisible: js.Function0[scala.Boolean],
+    setData: js.Function1[java.lang.String, scala.Unit],
+    setLabel: js.Function1[java.lang.String, scala.Unit]
+  ): SilverlightControl = {
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getData = getData, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getVisible = getVisible, setData = setData, setLabel = setLabel)
+  
+    __obj.asInstanceOf[SilverlightControl]
+  }
+}
+

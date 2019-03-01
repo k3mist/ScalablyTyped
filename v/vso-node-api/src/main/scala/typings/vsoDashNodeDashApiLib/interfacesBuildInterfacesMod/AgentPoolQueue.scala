@@ -25,3 +25,18 @@ trait AgentPoolQueue extends js.Object {
   var url: java.lang.String
 }
 
+object AgentPoolQueue {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    id: scala.Double,
+    name: java.lang.String,
+    pool: TaskAgentPoolReference,
+    url: java.lang.String
+  ): AgentPoolQueue = {
+    val __obj = js.Dynamic.literal(_links = _links, id = id, name = name, pool = pool, url = url)
+  
+    __obj.asInstanceOf[AgentPoolQueue]
+  }
+}
+

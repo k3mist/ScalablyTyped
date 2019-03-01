@@ -33,3 +33,19 @@ trait Page extends js.Object {
   var revision_id: java.lang.String
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    object_id: java.lang.String,
+    page_elements: js.Array[PageElement],
+    page_properties: PageProperties,
+    page_type: PagePageType,
+    properties: googleDashAppsDashScriptLib.Anon_Layoutproperties,
+    revision_id: java.lang.String
+  ): Page = {
+    val __obj = js.Dynamic.literal(object_id = object_id, page_elements = page_elements, page_properties = page_properties, page_type = page_type, properties = properties, revision_id = revision_id)
+  
+    __obj.asInstanceOf[Page]
+  }
+}
+

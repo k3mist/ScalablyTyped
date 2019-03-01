@@ -12,3 +12,17 @@ trait RollOutput extends js.Object {
   var rolled: js.Array[scala.Double]
 }
 
+object RollOutput {
+  @scala.inline
+  def apply(
+    calculations: js.Array[scala.Double],
+    input: RollObject,
+    result: scala.Double,
+    rolled: js.Array[scala.Double]
+  ): RollOutput = {
+    val __obj = js.Dynamic.literal(calculations = calculations, input = input, result = result, rolled = rolled)
+  
+    __obj.asInstanceOf[RollOutput]
+  }
+}
+

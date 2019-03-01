@@ -16,3 +16,21 @@ trait LogDetails extends js.Object {
   var source: java.lang.String
 }
 
+object LogDetails {
+  @scala.inline
+  def apply(
+    actual: js.Any,
+    expected: js.Any,
+    message: java.lang.String,
+    module: java.lang.String,
+    name: java.lang.String,
+    result: scala.Boolean,
+    runtime: scala.Double,
+    source: java.lang.String
+  ): LogDetails = {
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, message = message, module = module, name = name, result = result, runtime = runtime, source = source)
+  
+    __obj.asInstanceOf[LogDetails]
+  }
+}
+

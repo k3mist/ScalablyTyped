@@ -20,3 +20,18 @@ trait Symbol3DProperties extends SymbolProperties {
   var symbolLayers: js.UndefOr[CollectionProperties[Symbol3DLayerProperties]] = js.undefined
 }
 
+object Symbol3DProperties {
+  @scala.inline
+  def apply(
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    styleOrigin: Symbol3DStyleOrigin = null,
+    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null
+  ): Symbol3DProperties = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin)
+    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Symbol3DProperties]
+  }
+}
+

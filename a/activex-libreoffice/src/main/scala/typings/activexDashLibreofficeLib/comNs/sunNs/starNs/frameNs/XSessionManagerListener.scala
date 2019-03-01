@@ -37,3 +37,21 @@ trait XSessionManagerListener
   def shutdownCanceled(): scala.Unit
 }
 
+object XSessionManagerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveInteraction: js.Function1[scala.Boolean, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    doRestore: js.Function0[scala.Boolean],
+    doSave: js.Function2[scala.Boolean, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    shutdownCanceled: js.Function0[scala.Unit]
+  ): XSessionManagerListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, approveInteraction = approveInteraction, disposing = disposing, doRestore = doRestore, doSave = doSave, queryInterface = queryInterface, release = release, shutdownCanceled = shutdownCanceled)
+  
+    __obj.asInstanceOf[XSessionManagerListener]
+  }
+}
+

@@ -48,3 +48,31 @@ trait MeasureProperties extends js.Object {
   var MeasureTextVerticalPosition: MeasureTextVertPos
 }
 
+object MeasureProperties {
+  @scala.inline
+  def apply(
+    MeasureBelowReferenceEdge: scala.Boolean,
+    MeasureDecimalPlaces: scala.Double,
+    MeasureHelpLine1Length: scala.Double,
+    MeasureHelpLine2Length: scala.Double,
+    MeasureHelpLineDistance: scala.Double,
+    MeasureHelpLineOverhang: scala.Double,
+    MeasureKind: MeasureKind,
+    MeasureLineDistance: scala.Double,
+    MeasureOverhang: scala.Double,
+    MeasureShowUnit: scala.Boolean,
+    MeasureTextAutoAngle: scala.Boolean,
+    MeasureTextAutoAngleView: scala.Double,
+    MeasureTextFixedAngle: scala.Double,
+    MeasureTextHorizontalPosition: MeasureTextHorzPos,
+    MeasureTextIsFixedAngle: scala.Boolean,
+    MeasureTextRotate90: scala.Boolean,
+    MeasureTextUpsideDown: scala.Boolean,
+    MeasureTextVerticalPosition: MeasureTextVertPos
+  ): MeasureProperties = {
+    val __obj = js.Dynamic.literal(MeasureBelowReferenceEdge = MeasureBelowReferenceEdge, MeasureDecimalPlaces = MeasureDecimalPlaces, MeasureHelpLine1Length = MeasureHelpLine1Length, MeasureHelpLine2Length = MeasureHelpLine2Length, MeasureHelpLineDistance = MeasureHelpLineDistance, MeasureHelpLineOverhang = MeasureHelpLineOverhang, MeasureKind = MeasureKind, MeasureLineDistance = MeasureLineDistance, MeasureOverhang = MeasureOverhang, MeasureShowUnit = MeasureShowUnit, MeasureTextAutoAngle = MeasureTextAutoAngle, MeasureTextAutoAngleView = MeasureTextAutoAngleView, MeasureTextFixedAngle = MeasureTextFixedAngle, MeasureTextHorizontalPosition = MeasureTextHorizontalPosition, MeasureTextIsFixedAngle = MeasureTextIsFixedAngle, MeasureTextRotate90 = MeasureTextRotate90, MeasureTextUpsideDown = MeasureTextUpsideDown, MeasureTextVerticalPosition = MeasureTextVerticalPosition)
+  
+    __obj.asInstanceOf[MeasureProperties]
+  }
+}
+

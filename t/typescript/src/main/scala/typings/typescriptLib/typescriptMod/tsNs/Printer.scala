@@ -34,3 +34,17 @@ trait Printer extends js.Object {
   def printNode(hint: EmitHint, node: Node, sourceFile: SourceFile): java.lang.String
 }
 
+object Printer {
+  @scala.inline
+  def apply(
+    printBundle: js.Function1[Bundle, java.lang.String],
+    printFile: js.Function1[SourceFile, java.lang.String],
+    printList: js.Function3[ListFormat, NodeArray[js.Any], SourceFile, java.lang.String],
+    printNode: js.Function3[EmitHint, Node, SourceFile, java.lang.String]
+  ): Printer = {
+    val __obj = js.Dynamic.literal(printBundle = printBundle, printFile = printFile, printList = printList, printNode = printNode)
+  
+    __obj.asInstanceOf[Printer]
+  }
+}
+

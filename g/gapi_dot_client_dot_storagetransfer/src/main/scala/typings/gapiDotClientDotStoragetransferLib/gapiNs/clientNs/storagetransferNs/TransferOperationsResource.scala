@@ -35,3 +35,37 @@ trait TransferOperationsResource extends js.Object {
   def resume(request: gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object TransferOperationsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+    ],
+    pause: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    resume: js.Function1[
+      gapiDotClientDotStoragetransferLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): TransferOperationsResource = {
+    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list, pause = pause, resume = resume)
+  
+    __obj.asInstanceOf[TransferOperationsResource]
+  }
+}
+

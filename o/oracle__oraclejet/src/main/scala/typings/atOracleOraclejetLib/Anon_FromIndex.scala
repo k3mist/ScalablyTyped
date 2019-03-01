@@ -11,3 +11,16 @@ trait Anon_FromIndex
   var tile: stdLib.Element
 }
 
+object Anon_FromIndex {
+  @scala.inline
+  def apply(
+    fromIndex: scala.Double,
+    tile: stdLib.Element,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_FromIndex = {
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex, tile = tile)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_FromIndex]
+  }
+}
+

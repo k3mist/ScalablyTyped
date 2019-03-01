@@ -20,3 +20,17 @@ trait StaticClassProvider
   var provide: js.Any
 }
 
+object StaticClassProvider {
+  @scala.inline
+  def apply(
+    deps: js.Array[_],
+    provide: js.Any,
+    useClass: atAngularCoreLib.srcTypeMod.Type[_],
+    multi: js.UndefOr[scala.Boolean] = js.undefined
+  ): StaticClassProvider = {
+    val __obj = js.Dynamic.literal(deps = deps, provide = provide, useClass = useClass)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    __obj.asInstanceOf[StaticClassProvider]
+  }
+}
+

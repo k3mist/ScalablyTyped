@@ -64,3 +64,27 @@ trait OffsetEvent extends js.Object {
   var years: scala.Double
 }
 
+object OffsetEvent {
+  @scala.inline
+  def apply(
+    days: scala.Double,
+    daysToMonth: scala.Double,
+    daysToWeek: scala.Double,
+    hours: scala.Double,
+    minutes: scala.Double,
+    months: scala.Double,
+    seconds: scala.Double,
+    totalDays: scala.Double,
+    totalHours: scala.Double,
+    totalMinutes: scala.Double,
+    totalSeconds: scala.Double,
+    weeks: scala.Double,
+    weeksToMonth: scala.Double,
+    years: scala.Double
+  ): OffsetEvent = {
+    val __obj = js.Dynamic.literal(days = days, daysToMonth = daysToMonth, daysToWeek = daysToWeek, hours = hours, minutes = minutes, months = months, seconds = seconds, totalDays = totalDays, totalHours = totalHours, totalMinutes = totalMinutes, totalSeconds = totalSeconds, weeks = weeks, weeksToMonth = weeksToMonth, years = years)
+  
+    __obj.asInstanceOf[OffsetEvent]
+  }
+}
+

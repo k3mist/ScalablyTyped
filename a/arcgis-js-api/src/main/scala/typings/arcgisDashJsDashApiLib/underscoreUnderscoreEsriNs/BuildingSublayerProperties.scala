@@ -30,3 +30,18 @@ trait BuildingSublayerProperties extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BuildingSublayerProperties {
+  @scala.inline
+  def apply(
+    opacity: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): BuildingSublayerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[BuildingSublayerProperties]
+  }
+}
+

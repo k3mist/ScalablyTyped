@@ -13,3 +13,18 @@ trait IAssociatedPropertyDefs extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IAssociatedPropertyDefs {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IAssociatedPropertyDef, scala.Unit],
+    Clone: js.Function0[IAssociatedPropertyDefs],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IAssociatedPropertyDef],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IAssociatedPropertyDefs = {
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+  
+    __obj.asInstanceOf[IAssociatedPropertyDefs]
+  }
+}
+

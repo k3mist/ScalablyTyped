@@ -14,3 +14,12 @@ trait EnumTypeDefinition
   var values: js.Array[EnumValueDefinition]
 }
 
+object EnumTypeDefinition {
+  @scala.inline
+  def apply(kind: java.lang.String, name: Name, values: js.Array[EnumValueDefinition], loc: Location = null): EnumTypeDefinition = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, values = values)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[EnumTypeDefinition]
+  }
+}
+

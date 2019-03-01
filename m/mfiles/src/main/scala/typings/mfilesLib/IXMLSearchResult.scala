@@ -10,3 +10,12 @@ trait IXMLSearchResult extends js.Object {
   val SearchResult: java.lang.String
 }
 
+object IXMLSearchResult {
+  @scala.inline
+  def apply(MoreResults: scala.Boolean, SearchResult: java.lang.String): IXMLSearchResult = {
+    val __obj = js.Dynamic.literal(MoreResults = MoreResults, SearchResult = SearchResult)
+  
+    __obj.asInstanceOf[IXMLSearchResult]
+  }
+}
+

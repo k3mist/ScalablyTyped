@@ -12,3 +12,12 @@ trait Anon_Arr extends js.Object {
   var `val`: java.lang.String
 }
 
+object Anon_Arr {
+  @scala.inline
+  def apply(arr: js.Array[java.lang.String], idx: scala.Double, str: java.lang.String, `val`: java.lang.String): Anon_Arr = {
+    val __obj = js.Dynamic.literal(arr = arr, idx = idx, str = str, `val` = `val`)
+  
+    __obj.asInstanceOf[Anon_Arr]
+  }
+}
+

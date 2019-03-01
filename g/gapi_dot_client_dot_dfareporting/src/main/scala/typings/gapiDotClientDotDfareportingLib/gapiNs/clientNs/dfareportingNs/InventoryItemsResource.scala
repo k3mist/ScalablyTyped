@@ -12,3 +12,21 @@ trait InventoryItemsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsInPlan): gapiDotClientLib.gapiNs.clientNs.Request[InventoryItemsListResponse]
 }
 
+object InventoryItemsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InventoryItem]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsIdsInPlan, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InventoryItemsListResponse]
+    ]
+  ): InventoryItemsResource = {
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
+    __obj.asInstanceOf[InventoryItemsResource]
+  }
+}
+

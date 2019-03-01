@@ -55,3 +55,21 @@ trait RBDPersistentVolumeSource extends js.Object {
   val user: java.lang.String
 }
 
+object RBDPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    image: java.lang.String,
+    keyring: java.lang.String,
+    monitors: js.Array[java.lang.String],
+    pool: java.lang.String,
+    readOnly: scala.Boolean,
+    secretRef: SecretReference,
+    user: java.lang.String
+  ): RBDPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal(fsType = fsType, image = image, keyring = keyring, monitors = monitors, pool = pool, readOnly = readOnly, secretRef = secretRef, user = user)
+  
+    __obj.asInstanceOf[RBDPersistentVolumeSource]
+  }
+}
+

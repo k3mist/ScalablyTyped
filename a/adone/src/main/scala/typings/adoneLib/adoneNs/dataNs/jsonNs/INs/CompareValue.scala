@@ -10,3 +10,12 @@ trait CompareValue extends js.Object {
   var value: js.Any
 }
 
+object CompareValue {
+  @scala.inline
+  def apply(key: java.lang.String, value: js.Any): CompareValue = {
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
+    __obj.asInstanceOf[CompareValue]
+  }
+}
+

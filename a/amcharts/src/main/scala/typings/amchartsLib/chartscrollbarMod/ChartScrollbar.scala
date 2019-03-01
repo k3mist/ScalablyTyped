@@ -117,3 +117,38 @@ trait ChartScrollbar extends js.Object {
   var updateOnReleaseOnly: scala.Boolean
 }
 
+object ChartScrollbar {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    categoryAxis: amchartsLib.categoryaxisMod.default,
+    color: java.lang.String,
+    graph: amchartsLib.amgraphMod.default,
+    graphFillAlpha: scala.Double,
+    graphFillColor: java.lang.String,
+    graphLineAlpha: scala.Double,
+    graphLineColor: java.lang.String,
+    graphType: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    hideResizeGrips: scala.Boolean,
+    resizeEnabled: scala.Boolean,
+    scrollDuration: scala.Double,
+    scrollbarHeight: scala.Double,
+    selectedBackgroundAlpha: scala.Double,
+    selectedBackgroundColor: java.lang.String,
+    selectedGraphFillAlpha: scala.Double,
+    selectedGraphFillColor: java.lang.String,
+    selectedGraphLineAlpha: scala.Double,
+    selectedGraphLineColor: java.lang.String,
+    updateOnReleaseOnly: scala.Boolean
+  ): ChartScrollbar = {
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, categoryAxis = categoryAxis, color = color, graph = graph, graphFillAlpha = graphFillAlpha, graphFillColor = graphFillColor, graphLineAlpha = graphLineAlpha, graphLineColor = graphLineColor, graphType = graphType, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, hideResizeGrips = hideResizeGrips, resizeEnabled = resizeEnabled, scrollDuration = scrollDuration, scrollbarHeight = scrollbarHeight, selectedBackgroundAlpha = selectedBackgroundAlpha, selectedBackgroundColor = selectedBackgroundColor, selectedGraphFillAlpha = selectedGraphFillAlpha, selectedGraphFillColor = selectedGraphFillColor, selectedGraphLineAlpha = selectedGraphLineAlpha, selectedGraphLineColor = selectedGraphLineColor, updateOnReleaseOnly = updateOnReleaseOnly)
+  
+    __obj.asInstanceOf[ChartScrollbar]
+  }
+}
+

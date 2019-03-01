@@ -12,3 +12,17 @@ trait FirehoseTransformationEvent extends js.Object {
   var region: java.lang.String
 }
 
+object FirehoseTransformationEvent {
+  @scala.inline
+  def apply(
+    deliveryStreamArn: java.lang.String,
+    invocationId: java.lang.String,
+    records: js.Array[FirehoseTransformationEventRecord],
+    region: java.lang.String
+  ): FirehoseTransformationEvent = {
+    val __obj = js.Dynamic.literal(deliveryStreamArn = deliveryStreamArn, invocationId = invocationId, records = records, region = region)
+  
+    __obj.asInstanceOf[FirehoseTransformationEvent]
+  }
+}
+

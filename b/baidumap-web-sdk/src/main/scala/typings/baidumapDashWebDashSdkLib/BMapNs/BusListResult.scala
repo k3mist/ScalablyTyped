@@ -13,3 +13,18 @@ trait BusListResult extends js.Object {
   def getNumBusList(): scala.Double
 }
 
+object BusListResult {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    getBusListItem: js.Function1[scala.Double, BusListItem],
+    getNumBusList: js.Function0[scala.Double],
+    keyword: java.lang.String,
+    moreResultsUrl: java.lang.String
+  ): BusListResult = {
+    val __obj = js.Dynamic.literal(city = city, getBusListItem = getBusListItem, getNumBusList = getNumBusList, keyword = keyword, moreResultsUrl = moreResultsUrl)
+  
+    __obj.asInstanceOf[BusListResult]
+  }
+}
+

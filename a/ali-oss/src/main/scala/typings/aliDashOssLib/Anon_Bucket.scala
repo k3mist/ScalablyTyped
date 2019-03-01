@@ -10,3 +10,12 @@ trait Anon_Bucket extends js.Object {
   var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
 }
 
+object Anon_Bucket {
+  @scala.inline
+  def apply(bucket: java.lang.String, res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse): Anon_Bucket = {
+    val __obj = js.Dynamic.literal(bucket = bucket, res = res)
+  
+    __obj.asInstanceOf[Anon_Bucket]
+  }
+}
+

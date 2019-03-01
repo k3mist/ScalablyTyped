@@ -32,3 +32,19 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   var subscriberSnippet: Anon_ChannelIdDescription
 }
 
+object GoogleApiYouTubeSubscriptionResource {
+  @scala.inline
+  def apply(
+    contentDetails: Anon_NewItemCount,
+    etag: java.lang.String,
+    id: java.lang.String,
+    kind: java.lang.String,
+    snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId,
+    subscriberSnippet: Anon_ChannelIdDescription
+  ): GoogleApiYouTubeSubscriptionResource = {
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, id = id, kind = kind, snippet = snippet, subscriberSnippet = subscriberSnippet)
+  
+    __obj.asInstanceOf[GoogleApiYouTubeSubscriptionResource]
+  }
+}
+

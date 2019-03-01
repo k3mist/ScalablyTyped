@@ -151,3 +151,69 @@ trait FormulaProperties extends js.Object {
   var TopMargin: scala.Double
 }
 
+object FormulaProperties {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    BaseFontHeight: scala.Double,
+    BaseLine: scala.Double,
+    BottomMargin: scala.Double,
+    CustomFontNameFixed: java.lang.String,
+    CustomFontNameSans: java.lang.String,
+    CustomFontNameSerif: java.lang.String,
+    FontFixedIsBold: scala.Boolean,
+    FontFixedIsItalic: scala.Boolean,
+    FontFunctionsIsBold: scala.Boolean,
+    FontFunctionsIsItalic: scala.Boolean,
+    FontNameFunctions: java.lang.String,
+    FontNameNumbers: java.lang.String,
+    FontNameText: java.lang.String,
+    FontNameVariables: java.lang.String,
+    FontNumbersIsBold: scala.Boolean,
+    FontNumbersIsItalic: scala.Boolean,
+    FontSansIsBold: scala.Boolean,
+    FontSansIsItalic: scala.Boolean,
+    FontSerifIsBold: scala.Boolean,
+    FontSerifIsItalic: scala.Boolean,
+    FontTextIsBold: scala.Boolean,
+    FontTextIsItalic: scala.Boolean,
+    FontVariablesIsBold: scala.Boolean,
+    FontVariablesIsItalic: scala.Boolean,
+    Formula: java.lang.String,
+    IsScaleAllBrackets: scala.Boolean,
+    IsTextMode: scala.Boolean,
+    LeftMargin: scala.Double,
+    RelativeBracketDistance: scala.Double,
+    RelativeBracketExcessSize: scala.Double,
+    RelativeFontHeightFunctions: scala.Double,
+    RelativeFontHeightIndices: scala.Double,
+    RelativeFontHeightLimits: scala.Double,
+    RelativeFontHeightOperators: scala.Double,
+    RelativeFontHeightText: scala.Double,
+    RelativeFractionBarExcessLength: scala.Double,
+    RelativeFractionBarLineWeight: scala.Double,
+    RelativeFractionDenominatorDepth: scala.Double,
+    RelativeFractionNumeratorHeight: scala.Double,
+    RelativeIndexSubscript: scala.Double,
+    RelativeIndexSuperscript: scala.Double,
+    RelativeLineSpacing: scala.Double,
+    RelativeLowerLimitDistance: scala.Double,
+    RelativeMatrixColumnSpacing: scala.Double,
+    RelativeMatrixLineSpacing: scala.Double,
+    RelativeOperatorExcessSize: scala.Double,
+    RelativeOperatorSpacing: scala.Double,
+    RelativeRootSpacing: scala.Double,
+    RelativeScaleBracketExcessSize: scala.Double,
+    RelativeSpacing: scala.Double,
+    RelativeSymbolMinimumHeight: scala.Double,
+    RelativeSymbolPrimaryHeight: scala.Double,
+    RelativeUpperLimitDistance: scala.Double,
+    RightMargin: scala.Double,
+    TopMargin: scala.Double
+  ): FormulaProperties = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment, BaseFontHeight = BaseFontHeight, BaseLine = BaseLine, BottomMargin = BottomMargin, CustomFontNameFixed = CustomFontNameFixed, CustomFontNameSans = CustomFontNameSans, CustomFontNameSerif = CustomFontNameSerif, FontFixedIsBold = FontFixedIsBold, FontFixedIsItalic = FontFixedIsItalic, FontFunctionsIsBold = FontFunctionsIsBold, FontFunctionsIsItalic = FontFunctionsIsItalic, FontNameFunctions = FontNameFunctions, FontNameNumbers = FontNameNumbers, FontNameText = FontNameText, FontNameVariables = FontNameVariables, FontNumbersIsBold = FontNumbersIsBold, FontNumbersIsItalic = FontNumbersIsItalic, FontSansIsBold = FontSansIsBold, FontSansIsItalic = FontSansIsItalic, FontSerifIsBold = FontSerifIsBold, FontSerifIsItalic = FontSerifIsItalic, FontTextIsBold = FontTextIsBold, FontTextIsItalic = FontTextIsItalic, FontVariablesIsBold = FontVariablesIsBold, FontVariablesIsItalic = FontVariablesIsItalic, Formula = Formula, IsScaleAllBrackets = IsScaleAllBrackets, IsTextMode = IsTextMode, LeftMargin = LeftMargin, RelativeBracketDistance = RelativeBracketDistance, RelativeBracketExcessSize = RelativeBracketExcessSize, RelativeFontHeightFunctions = RelativeFontHeightFunctions, RelativeFontHeightIndices = RelativeFontHeightIndices, RelativeFontHeightLimits = RelativeFontHeightLimits, RelativeFontHeightOperators = RelativeFontHeightOperators, RelativeFontHeightText = RelativeFontHeightText, RelativeFractionBarExcessLength = RelativeFractionBarExcessLength, RelativeFractionBarLineWeight = RelativeFractionBarLineWeight, RelativeFractionDenominatorDepth = RelativeFractionDenominatorDepth, RelativeFractionNumeratorHeight = RelativeFractionNumeratorHeight, RelativeIndexSubscript = RelativeIndexSubscript, RelativeIndexSuperscript = RelativeIndexSuperscript, RelativeLineSpacing = RelativeLineSpacing, RelativeLowerLimitDistance = RelativeLowerLimitDistance, RelativeMatrixColumnSpacing = RelativeMatrixColumnSpacing, RelativeMatrixLineSpacing = RelativeMatrixLineSpacing, RelativeOperatorExcessSize = RelativeOperatorExcessSize, RelativeOperatorSpacing = RelativeOperatorSpacing, RelativeRootSpacing = RelativeRootSpacing, RelativeScaleBracketExcessSize = RelativeScaleBracketExcessSize, RelativeSpacing = RelativeSpacing, RelativeSymbolMinimumHeight = RelativeSymbolMinimumHeight, RelativeSymbolPrimaryHeight = RelativeSymbolPrimaryHeight, RelativeUpperLimitDistance = RelativeUpperLimitDistance, RightMargin = RightMargin, TopMargin = TopMargin)
+  
+    __obj.asInstanceOf[FormulaProperties]
+  }
+}
+

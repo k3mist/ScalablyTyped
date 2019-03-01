@@ -30,3 +30,18 @@ trait XContentProvider
   def queryContent(Identifier: XContentIdentifier): XContent
 }
 
+object XContentProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
+    queryContent: js.Function1[XContentIdentifier, XContent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentProvider = {
+    val __obj = js.Dynamic.literal(acquire = acquire, compareContentIds = compareContentIds, queryContent = queryContent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XContentProvider]
+  }
+}
+

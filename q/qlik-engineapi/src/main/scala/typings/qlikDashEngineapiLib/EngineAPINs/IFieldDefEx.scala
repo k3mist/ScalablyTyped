@@ -24,3 +24,12 @@ trait IFieldDefEx extends js.Object {
   var qType: FieldDefExType
 }
 
+object IFieldDefEx {
+  @scala.inline
+  def apply(qName: java.lang.String, qType: FieldDefExType): IFieldDefEx = {
+    val __obj = js.Dynamic.literal(qName = qName, qType = qType)
+  
+    __obj.asInstanceOf[IFieldDefEx]
+  }
+}
+

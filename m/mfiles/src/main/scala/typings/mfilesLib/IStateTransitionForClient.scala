@@ -17,3 +17,22 @@ trait IStateTransitionForClient extends js.Object {
   def GetAsTypedValue(): ITypedValue
 }
 
+object IStateTransitionForClient {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IStateTransitionForClient],
+    FromState: scala.Double,
+    GetAsLookup: js.Function0[ILookup],
+    GetAsTypedValue: js.Function0[ITypedValue],
+    ID: scala.Double,
+    Name: java.lang.String,
+    Selectable: scala.Boolean,
+    SelectableFlagAffectedByPseudoUsers: scala.Boolean,
+    ToState: scala.Double
+  ): IStateTransitionForClient = {
+    val __obj = js.Dynamic.literal(Clone = Clone, FromState = FromState, GetAsLookup = GetAsLookup, GetAsTypedValue = GetAsTypedValue, ID = ID, Name = Name, Selectable = Selectable, SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers, ToState = ToState)
+  
+    __obj.asInstanceOf[IStateTransitionForClient]
+  }
+}
+

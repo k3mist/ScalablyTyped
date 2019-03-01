@@ -19,3 +19,24 @@ trait Levels extends js.Object {
   def getLevel(level: java.lang.String): Level
 }
 
+object Levels {
+  @scala.inline
+  def apply(
+    ALL: Level,
+    DEBUG: Level,
+    ERROR: Level,
+    FATAL: Level,
+    INFO: Level,
+    MARK: Level,
+    OFF: Level,
+    TRACE: Level,
+    WARN: Level,
+    getLevel: js.Function1[java.lang.String, Level],
+    levels: js.Array[Level]
+  ): Levels = {
+    val __obj = js.Dynamic.literal(ALL = ALL, DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, MARK = MARK, OFF = OFF, TRACE = TRACE, WARN = WARN, getLevel = getLevel, levels = levels)
+  
+    __obj.asInstanceOf[Levels]
+  }
+}
+

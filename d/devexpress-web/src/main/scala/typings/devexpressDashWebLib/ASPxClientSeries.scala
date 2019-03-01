@@ -131,3 +131,39 @@ trait ASPxClientSeries extends ASPxClientWebChartElementNamed {
   var visible: scala.Boolean
 }
 
+object ASPxClientSeries {
+  @scala.inline
+  def apply(
+    actualCrosshairEnabled: scala.Boolean,
+    actualCrosshairLabelVisibility: scala.Boolean,
+    argumentScaleType: java.lang.String,
+    axisX: java.lang.String,
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    color: java.lang.String,
+    crosshairLabelPattern: java.lang.String,
+    crosshairValueItems: js.Array[ASPxClientCrosshairValueItem],
+    fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator],
+    groupedElementsPattern: java.lang.String,
+    indicators: js.Array[ASPxClientIndicator],
+    label: ASPxClientSeriesLabel,
+    name: java.lang.String,
+    pane: java.lang.String,
+    points: js.Array[ASPxClientSeriesPoint],
+    regressionLines: js.Array[ASPxClientRegressionLine],
+    stackedGroup: java.lang.String,
+    titles: js.Array[ASPxClientSeriesTitle],
+    toolTipEnabled: scala.Boolean,
+    toolTipImage: java.lang.String,
+    toolTipText: java.lang.String,
+    trendLines: js.Array[ASPxClientTrendLine],
+    valueScaleType: java.lang.String,
+    viewType: java.lang.String,
+    visible: scala.Boolean
+  ): ASPxClientSeries = {
+    val __obj = js.Dynamic.literal(actualCrosshairEnabled = actualCrosshairEnabled, actualCrosshairLabelVisibility = actualCrosshairLabelVisibility, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, chart = chart, color = color, crosshairLabelPattern = crosshairLabelPattern, crosshairValueItems = crosshairValueItems, fibonacciIndicators = fibonacciIndicators, groupedElementsPattern = groupedElementsPattern, indicators = indicators, label = label, name = name, pane = pane, points = points, regressionLines = regressionLines, stackedGroup = stackedGroup, titles = titles, toolTipEnabled = toolTipEnabled, toolTipImage = toolTipImage, toolTipText = toolTipText, trendLines = trendLines, valueScaleType = valueScaleType, viewType = viewType, visible = visible)
+  
+    __obj.asInstanceOf[ASPxClientSeries]
+  }
+}
+

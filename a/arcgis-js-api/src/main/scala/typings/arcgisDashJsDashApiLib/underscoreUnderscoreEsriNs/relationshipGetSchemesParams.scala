@@ -41,3 +41,23 @@ trait relationshipGetSchemesParams
   var worldScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object relationshipGetSchemesParams {
+  @scala.inline
+  def apply(
+    basemap: java.lang.String | Basemap,
+    constructor: js.Function,
+    geometryType: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    theme: java.lang.String = null,
+    view: SceneView = null,
+    worldScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): relationshipGetSchemesParams = {
+    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)
+    __obj.asInstanceOf[relationshipGetSchemesParams]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ITraditionalFolders extends js.Object {
   def Item(Index: scala.Double): ITraditionalFolder
 }
 
+object ITraditionalFolders {
+  @scala.inline
+  def apply(Count: scala.Double, Item: js.Function1[scala.Double, ITraditionalFolder]): ITraditionalFolders = {
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  
+    __obj.asInstanceOf[ITraditionalFolders]
+  }
+}
+

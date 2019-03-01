@@ -10,3 +10,12 @@ trait UncheckedSnapshot extends js.Object {
   var keys: js.Array[java.lang.String]
 }
 
+object UncheckedSnapshot {
+  @scala.inline
+  def apply(filePath: java.lang.String, keys: js.Array[java.lang.String]): UncheckedSnapshot = {
+    val __obj = js.Dynamic.literal(filePath = filePath, keys = keys)
+  
+    __obj.asInstanceOf[UncheckedSnapshot]
+  }
+}
+

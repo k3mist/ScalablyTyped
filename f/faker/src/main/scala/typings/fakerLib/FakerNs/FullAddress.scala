@@ -17,3 +17,22 @@ trait FullAddress extends js.Object {
   var zipcode: java.lang.String
 }
 
+object FullAddress {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    county: java.lang.String,
+    geo: Geo,
+    state: java.lang.String,
+    streetA: java.lang.String,
+    streetB: java.lang.String,
+    streetC: java.lang.String,
+    streetD: java.lang.String,
+    zipcode: java.lang.String
+  ): FullAddress = {
+    val __obj = js.Dynamic.literal(city = city, county = county, geo = geo, state = state, streetA = streetA, streetB = streetB, streetC = streetC, streetD = streetD, zipcode = zipcode)
+  
+    __obj.asInstanceOf[FullAddress]
+  }
+}
+

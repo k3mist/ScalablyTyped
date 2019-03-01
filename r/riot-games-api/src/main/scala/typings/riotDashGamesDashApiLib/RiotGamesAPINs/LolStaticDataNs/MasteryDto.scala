@@ -16,3 +16,21 @@ trait MasteryDto extends js.Object {
   var sanitizedDescription: js.Array[java.lang.String]
 }
 
+object MasteryDto {
+  @scala.inline
+  def apply(
+    description: js.Array[java.lang.String],
+    id: scala.Double,
+    image: ImageDto,
+    masteryTree: java.lang.String,
+    name: java.lang.String,
+    prereq: java.lang.String,
+    ranks: scala.Double,
+    sanitizedDescription: js.Array[java.lang.String]
+  ): MasteryDto = {
+    val __obj = js.Dynamic.literal(description = description, id = id, image = image, masteryTree = masteryTree, name = name, prereq = prereq, ranks = ranks, sanitizedDescription = sanitizedDescription)
+  
+    __obj.asInstanceOf[MasteryDto]
+  }
+}
+

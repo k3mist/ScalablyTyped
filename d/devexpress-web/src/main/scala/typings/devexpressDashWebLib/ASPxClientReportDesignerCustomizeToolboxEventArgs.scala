@@ -16,3 +16,12 @@ trait ASPxClientReportDesignerCustomizeToolboxEventArgs extends ASPxClientEventA
   var ControlsFactory: ASPxDesignerControlsFactory
 }
 
+object ASPxClientReportDesignerCustomizeToolboxEventArgs {
+  @scala.inline
+  def apply(ControlsFactory: ASPxDesignerControlsFactory): ASPxClientReportDesignerCustomizeToolboxEventArgs = {
+    val __obj = js.Dynamic.literal(ControlsFactory = ControlsFactory)
+  
+    __obj.asInstanceOf[ASPxClientReportDesignerCustomizeToolboxEventArgs]
+  }
+}
+

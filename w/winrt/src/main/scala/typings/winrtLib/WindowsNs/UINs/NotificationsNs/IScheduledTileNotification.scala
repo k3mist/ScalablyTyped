@@ -13,3 +13,18 @@ trait IScheduledTileNotification extends js.Object {
   var tag: java.lang.String
 }
 
+object IScheduledTileNotification {
+  @scala.inline
+  def apply(
+    content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
+    deliveryTime: stdLib.Date,
+    expirationTime: stdLib.Date,
+    id: java.lang.String,
+    tag: java.lang.String
+  ): IScheduledTileNotification = {
+    val __obj = js.Dynamic.literal(content = content, deliveryTime = deliveryTime, expirationTime = expirationTime, id = id, tag = tag)
+  
+    __obj.asInstanceOf[IScheduledTileNotification]
+  }
+}
+

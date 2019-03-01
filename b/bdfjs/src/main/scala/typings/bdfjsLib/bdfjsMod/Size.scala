@@ -11,3 +11,12 @@ trait Size extends js.Object {
   var resolutionY: scala.Double
 }
 
+object Size {
+  @scala.inline
+  def apply(points: scala.Double, resolutionX: scala.Double, resolutionY: scala.Double): Size = {
+    val __obj = js.Dynamic.literal(points = points, resolutionX = resolutionX, resolutionY = resolutionY)
+  
+    __obj.asInstanceOf[Size]
+  }
+}
+

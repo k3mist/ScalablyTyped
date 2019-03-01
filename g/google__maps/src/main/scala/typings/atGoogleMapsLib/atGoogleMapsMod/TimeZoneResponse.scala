@@ -33,3 +33,19 @@ trait TimeZoneResponse extends js.Object {
   var timeZoneName: java.lang.String
 }
 
+object TimeZoneResponse {
+  @scala.inline
+  def apply(
+    dstOffset: scala.Double,
+    errorMessage: java.lang.String,
+    rawOffset: scala.Double,
+    status: TimeZoneResponseStatus,
+    timeZoneId: java.lang.String,
+    timeZoneName: java.lang.String
+  ): TimeZoneResponse = {
+    val __obj = js.Dynamic.literal(dstOffset = dstOffset, errorMessage = errorMessage, rawOffset = rawOffset, status = status, timeZoneId = timeZoneId, timeZoneName = timeZoneName)
+  
+    __obj.asInstanceOf[TimeZoneResponse]
+  }
+}
+

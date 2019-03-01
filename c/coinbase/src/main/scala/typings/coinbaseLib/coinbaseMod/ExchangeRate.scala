@@ -16,3 +16,12 @@ trait ExchangeRate extends js.Object {
   var rates: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object ExchangeRate {
+  @scala.inline
+  def apply(currency: java.lang.String, rates: org.scalablytyped.runtime.StringDictionary[java.lang.String]): ExchangeRate = {
+    val __obj = js.Dynamic.literal(currency = currency, rates = rates)
+  
+    __obj.asInstanceOf[ExchangeRate]
+  }
+}
+

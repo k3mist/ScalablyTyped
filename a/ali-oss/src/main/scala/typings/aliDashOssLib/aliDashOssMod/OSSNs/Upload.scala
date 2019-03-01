@@ -11,3 +11,12 @@ trait Upload extends js.Object {
   var uploadId: java.lang.String
 }
 
+object Upload {
+  @scala.inline
+  def apply(initiated: js.Any, name: java.lang.String, uploadId: java.lang.String): Upload = {
+    val __obj = js.Dynamic.literal(initiated = initiated, name = name, uploadId = uploadId)
+  
+    __obj.asInstanceOf[Upload]
+  }
+}
+

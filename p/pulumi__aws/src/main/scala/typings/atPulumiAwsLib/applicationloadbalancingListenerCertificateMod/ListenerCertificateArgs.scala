@@ -16,3 +16,15 @@ trait ListenerCertificateArgs extends js.Object {
   val listenerArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object ListenerCertificateArgs {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    listenerArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): ListenerCertificateArgs = {
+    val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any], listenerArn = listenerArn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ListenerCertificateArgs]
+  }
+}
+

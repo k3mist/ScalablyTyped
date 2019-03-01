@@ -24,3 +24,28 @@ trait XSSOInitiatorContext extends XSSOContext {
   def init(Token: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XSSOInitiatorContext {
+  @scala.inline
+  def apply(
+    Mechanism: java.lang.String,
+    Mutual: scala.Boolean,
+    Source: java.lang.String,
+    Target: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getMechanism: js.Function0[java.lang.String],
+    getMutual: js.Function0[scala.Boolean],
+    getSource: js.Function0[java.lang.String],
+    getTarget: js.Function0[java.lang.String],
+    init: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSSOInitiatorContext = {
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, acquire = acquire, getMechanism = getMechanism, getMutual = getMutual, getSource = getSource, getTarget = getTarget, init = init, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XSSOInitiatorContext]
+  }
+}
+

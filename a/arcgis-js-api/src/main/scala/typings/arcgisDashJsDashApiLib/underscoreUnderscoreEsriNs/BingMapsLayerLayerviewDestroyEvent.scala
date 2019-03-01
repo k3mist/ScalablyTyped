@@ -10,3 +10,12 @@ trait BingMapsLayerLayerviewDestroyEvent extends js.Object {
   var view: View
 }
 
+object BingMapsLayerLayerviewDestroyEvent {
+  @scala.inline
+  def apply(layerView: LayerView, view: View): BingMapsLayerLayerviewDestroyEvent = {
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
+    __obj.asInstanceOf[BingMapsLayerLayerviewDestroyEvent]
+  }
+}
+

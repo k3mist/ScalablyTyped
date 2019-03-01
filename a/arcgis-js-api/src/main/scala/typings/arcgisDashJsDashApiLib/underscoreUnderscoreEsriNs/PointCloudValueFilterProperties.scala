@@ -22,3 +22,18 @@ trait PointCloudValueFilterProperties extends PointCloudFilterProperties {
   var values: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object PointCloudValueFilterProperties {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    mode: java.lang.String = null,
+    values: js.Array[scala.Double] = null
+  ): PointCloudValueFilterProperties = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[PointCloudValueFilterProperties]
+  }
+}
+

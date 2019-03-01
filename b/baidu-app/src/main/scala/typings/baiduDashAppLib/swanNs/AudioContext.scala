@@ -28,3 +28,17 @@ trait AudioContext extends js.Object {
   def setSrc(src: java.lang.String): scala.Unit
 }
 
+object AudioContext {
+  @scala.inline
+  def apply(
+    pause: js.Function0[scala.Unit],
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    setSrc: js.Function1[java.lang.String, scala.Unit]
+  ): AudioContext = {
+    val __obj = js.Dynamic.literal(pause = pause, play = play, seek = seek, setSrc = setSrc)
+  
+    __obj.asInstanceOf[AudioContext]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Anon_AntdMenuThemeInlineCollapsed extends js.Object {
   var inlineCollapsed: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
 }
 
+object Anon_AntdMenuThemeInlineCollapsed {
+  @scala.inline
+  def apply(
+    antdMenuTheme: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    inlineCollapsed: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  ): Anon_AntdMenuThemeInlineCollapsed = {
+    val __obj = js.Dynamic.literal(antdMenuTheme = antdMenuTheme, inlineCollapsed = inlineCollapsed)
+  
+    __obj.asInstanceOf[Anon_AntdMenuThemeInlineCollapsed]
+  }
+}
+

@@ -63,3 +63,20 @@ trait WorksheetChangedEventArgs extends js.Object {
   def getRangeOrNullObject(ctx: RequestContext): Range
 }
 
+object WorksheetChangedEventArgs {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    changeType: DataChangeType | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.RangeEdited | officeDashJsLib.officeDashJsLibStrings.RowInserted | officeDashJsLib.officeDashJsLibStrings.RowDeleted | officeDashJsLib.officeDashJsLibStrings.ColumnInserted | officeDashJsLib.officeDashJsLibStrings.ColumnDeleted | officeDashJsLib.officeDashJsLibStrings.CellInserted | officeDashJsLib.officeDashJsLibStrings.CellDeleted,
+    getRange: js.Function1[RequestContext, Range],
+    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    source: EventSource | officeDashJsLib.officeDashJsLibStrings.Local | officeDashJsLib.officeDashJsLibStrings.Remote,
+    `type`: officeDashJsLib.officeDashJsLibStrings.WorksheetChanged,
+    worksheetId: java.lang.String
+  ): WorksheetChangedEventArgs = {
+    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], `type` = `type`, worksheetId = worksheetId)
+  
+    __obj.asInstanceOf[WorksheetChangedEventArgs]
+  }
+}
+

@@ -13,3 +13,12 @@ trait LineWidget extends js.Object {
   def clear(): scala.Unit
 }
 
+object LineWidget {
+  @scala.inline
+  def apply(changed: js.Function0[scala.Unit], clear: js.Function0[scala.Unit]): LineWidget = {
+    val __obj = js.Dynamic.literal(changed = changed, clear = clear)
+  
+    __obj.asInstanceOf[LineWidget]
+  }
+}
+

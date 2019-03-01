@@ -20,3 +20,22 @@ trait FragmentDefinitionNode
   val variableDefinitions: js.UndefOr[js.Array[VariableDefinitionNode]] = js.undefined
 }
 
+object FragmentDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.FragmentDefinition,
+    name: NameNode,
+    selectionSet: SelectionSetNode,
+    typeCondition: NamedTypeNode,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null,
+    variableDefinitions: js.Array[VariableDefinitionNode] = null
+  ): FragmentDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, selectionSet = selectionSet, typeCondition = typeCondition)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    __obj.asInstanceOf[FragmentDefinitionNode]
+  }
+}
+

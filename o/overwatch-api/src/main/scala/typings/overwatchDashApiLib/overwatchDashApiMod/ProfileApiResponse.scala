@@ -13,3 +13,22 @@ trait ProfileApiResponse extends OverwatchApiResponse {
   var star: java.lang.String
 }
 
+object ProfileApiResponse {
+  @scala.inline
+  def apply(
+    competitive: CompetitiveRankInfo,
+    games: GameTypes,
+    level: scala.Double,
+    levelFrame: java.lang.String,
+    playtime: Playtime,
+    portrait: java.lang.String,
+    `private`: scala.Boolean,
+    star: java.lang.String,
+    username: java.lang.String
+  ): ProfileApiResponse = {
+    val __obj = js.Dynamic.literal(competitive = competitive, games = games, level = level, levelFrame = levelFrame, playtime = playtime, portrait = portrait, `private` = `private`, star = star, username = username)
+  
+    __obj.asInstanceOf[ProfileApiResponse]
+  }
+}
+

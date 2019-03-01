@@ -27,3 +27,21 @@ trait ExternalRenderer
   var setup: js.UndefOr[RenderContextCallback] = js.undefined
 }
 
+object ExternalRenderer {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    dispose: RenderContextCallback = null,
+    render: RenderContextCallback = null,
+    setup: RenderContextCallback = null
+  ): ExternalRenderer = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    __obj.asInstanceOf[ExternalRenderer]
+  }
+}
+

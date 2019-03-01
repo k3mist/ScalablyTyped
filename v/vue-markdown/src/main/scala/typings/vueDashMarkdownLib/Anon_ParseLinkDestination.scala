@@ -11,3 +11,12 @@ trait Anon_ParseLinkDestination extends js.Object {
   var parseLinkTitle: js.Any
 }
 
+object Anon_ParseLinkDestination {
+  @scala.inline
+  def apply(parseLinkDestination: js.Any, parseLinkLabel: js.Any, parseLinkTitle: js.Any): Anon_ParseLinkDestination = {
+    val __obj = js.Dynamic.literal(parseLinkDestination = parseLinkDestination, parseLinkLabel = parseLinkLabel, parseLinkTitle = parseLinkTitle)
+  
+    __obj.asInstanceOf[Anon_ParseLinkDestination]
+  }
+}
+

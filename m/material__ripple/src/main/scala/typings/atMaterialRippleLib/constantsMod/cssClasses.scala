@@ -17,3 +17,18 @@ trait cssClasses
   var UNBOUNDED: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--unbounded`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    BG_FOCUSED: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--background-focused`,
+    FG_ACTIVATION: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--foreground-activation`,
+    FG_DEACTIVATION: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--foreground-deactivation`,
+    ROOT: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded`,
+    UNBOUNDED: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--unbounded`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal(BG_FOCUSED = BG_FOCUSED, FG_ACTIVATION = FG_ACTIVATION, FG_DEACTIVATION = FG_DEACTIVATION, ROOT = ROOT, UNBOUNDED = UNBOUNDED)
+  
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

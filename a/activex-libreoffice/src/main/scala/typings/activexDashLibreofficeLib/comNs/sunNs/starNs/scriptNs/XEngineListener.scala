@@ -24,3 +24,20 @@ trait XEngineListener
   def running(Evt: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XEngineListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    finished: js.Function1[FinishEngineEvent, scala.Unit],
+    interrupt: js.Function1[InterruptEngineEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    running: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
+  ): XEngineListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, finished = finished, interrupt = interrupt, queryInterface = queryInterface, release = release, running = running)
+  
+    __obj.asInstanceOf[XEngineListener]
+  }
+}
+

@@ -25,3 +25,17 @@ trait DefaultTreeTextNode extends DefaultTreeNode {
   var value: java.lang.String
 }
 
+object DefaultTreeTextNode {
+  @scala.inline
+  def apply(
+    nodeName: parse5Lib.parse5LibStrings.`#text`,
+    parentNode: DefaultTreeParentNode,
+    value: java.lang.String,
+    sourceCodeLocation: Location = null
+  ): DefaultTreeTextNode = {
+    val __obj = js.Dynamic.literal(nodeName = nodeName, parentNode = parentNode, value = value)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[DefaultTreeTextNode]
+  }
+}
+

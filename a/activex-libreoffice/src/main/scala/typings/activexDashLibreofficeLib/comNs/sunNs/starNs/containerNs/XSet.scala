@@ -18,3 +18,23 @@ trait XSet extends XEnumerationAccess {
   def remove(aElement: js.Any): scala.Unit
 }
 
+object XSet {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[XEnumeration],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    has: js.Function1[js.Any, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    insert: js.Function1[js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[js.Any, scala.Unit]
+  ): XSet = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, createEnumeration = createEnumeration, getElementType = getElementType, has = has, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, remove = remove)
+  
+    __obj.asInstanceOf[XSet]
+  }
+}
+

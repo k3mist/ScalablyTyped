@@ -40,3 +40,26 @@ trait ModalDialogOptions extends ComponentOptions {
   var uncloseable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalDialogOptions {
+  @scala.inline
+  def apply(
+    children: js.Array[Child] = null,
+    content: js.Any = null,
+    description: java.lang.String = null,
+    fillAlways: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    temporary: js.UndefOr[scala.Boolean] = js.undefined,
+    uncloseable: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModalDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable)
+    __obj.asInstanceOf[ModalDialogOptions]
+  }
+}
+

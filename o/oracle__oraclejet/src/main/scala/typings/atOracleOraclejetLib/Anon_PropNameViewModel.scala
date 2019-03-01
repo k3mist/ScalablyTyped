@@ -10,3 +10,15 @@ trait Anon_PropNameViewModel
   var viewModel: js.Object
 }
 
+object Anon_PropNameViewModel {
+  @scala.inline
+  def apply(
+    viewModel: js.Object,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_PropNameViewModel = {
+    val __obj = js.Dynamic.literal(viewModel = viewModel)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_PropNameViewModel]
+  }
+}
+

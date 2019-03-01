@@ -14,3 +14,19 @@ trait Anon_Button extends js.Object {
   var root: java.lang.String
 }
 
+object Anon_Button {
+  @scala.inline
+  def apply(
+    button: java.lang.String,
+    buttonAdd: java.lang.String,
+    buttonRemove: java.lang.String,
+    iconAdd: java.lang.String,
+    iconRemove: java.lang.String,
+    root: java.lang.String
+  ): Anon_Button = {
+    val __obj = js.Dynamic.literal(button = button, buttonAdd = buttonAdd, buttonRemove = buttonRemove, iconAdd = iconAdd, iconRemove = iconRemove, root = root)
+  
+    __obj.asInstanceOf[Anon_Button]
+  }
+}
+

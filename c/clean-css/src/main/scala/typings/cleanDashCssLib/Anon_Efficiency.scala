@@ -24,3 +24,17 @@ trait Anon_Efficiency extends js.Object {
   var timeSpent: scala.Double
 }
 
+object Anon_Efficiency {
+  @scala.inline
+  def apply(
+    efficiency: scala.Double,
+    minifiedSize: scala.Double,
+    originalSize: scala.Double,
+    timeSpent: scala.Double
+  ): Anon_Efficiency = {
+    val __obj = js.Dynamic.literal(efficiency = efficiency, minifiedSize = minifiedSize, originalSize = originalSize, timeSpent = timeSpent)
+  
+    __obj.asInstanceOf[Anon_Efficiency]
+  }
+}
+

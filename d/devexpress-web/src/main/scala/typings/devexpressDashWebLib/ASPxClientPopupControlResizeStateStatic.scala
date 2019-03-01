@@ -28,3 +28,18 @@ trait ASPxClientPopupControlResizeStateStatic extends js.Object {
   var RestoredAfterMaximized: scala.Double
 }
 
+object ASPxClientPopupControlResizeStateStatic {
+  @scala.inline
+  def apply(
+    Collapsed: scala.Double,
+    Expanded: scala.Double,
+    Maximized: scala.Double,
+    Resized: scala.Double,
+    RestoredAfterMaximized: scala.Double
+  ): ASPxClientPopupControlResizeStateStatic = {
+    val __obj = js.Dynamic.literal(Collapsed = Collapsed, Expanded = Expanded, Maximized = Maximized, Resized = Resized, RestoredAfterMaximized = RestoredAfterMaximized)
+  
+    __obj.asInstanceOf[ASPxClientPopupControlResizeStateStatic]
+  }
+}
+

@@ -9,3 +9,12 @@ trait SpinnerUIParam extends js.Object {
   var value: scala.Double
 }
 
+object SpinnerUIParam {
+  @scala.inline
+  def apply(value: scala.Double): SpinnerUIParam = {
+    val __obj = js.Dynamic.literal(value = value)
+  
+    __obj.asInstanceOf[SpinnerUIParam]
+  }
+}
+

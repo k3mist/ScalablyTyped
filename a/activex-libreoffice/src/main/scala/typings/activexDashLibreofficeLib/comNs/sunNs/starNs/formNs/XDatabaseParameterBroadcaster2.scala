@@ -29,3 +29,20 @@ trait XDatabaseParameterBroadcaster2 extends XDatabaseParameterBroadcaster {
   def removeDatabaseParameterListener(aListener: XDatabaseParameterListener): scala.Unit
 }
 
+object XDatabaseParameterBroadcaster2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addDatabaseParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
+    addParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDatabaseParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
+    removeParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit]
+  ): XDatabaseParameterBroadcaster2 = {
+    val __obj = js.Dynamic.literal(acquire = acquire, addDatabaseParameterListener = addDatabaseParameterListener, addParameterListener = addParameterListener, queryInterface = queryInterface, release = release, removeDatabaseParameterListener = removeDatabaseParameterListener, removeParameterListener = removeParameterListener)
+  
+    __obj.asInstanceOf[XDatabaseParameterBroadcaster2]
+  }
+}
+

@@ -9,3 +9,17 @@ trait GridColumnLockEvent extends GridEvent {
   var column: js.UndefOr[js.Any] = js.undefined
 }
 
+object GridColumnLockEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    column: js.Any = null
+  ): GridColumnLockEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (column != null) __obj.updateDynamic("column")(column)
+    __obj.asInstanceOf[GridColumnLockEvent]
+  }
+}
+

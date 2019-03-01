@@ -10,3 +10,12 @@ trait CustomError
   var code: errors
 }
 
+object CustomError {
+  @scala.inline
+  def apply(code: errors, stack: java.lang.String = null): CustomError = {
+    val __obj = js.Dynamic.literal(code = code)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[CustomError]
+  }
+}
+

@@ -16,3 +16,12 @@ trait HookOptions extends js.Object {
   def pre(): scala.Unit
 }
 
+object HookOptions {
+  @scala.inline
+  def apply(post: js.Function0[scala.Unit], pre: js.Function0[scala.Unit]): HookOptions = {
+    val __obj = js.Dynamic.literal(post = post, pre = pre)
+  
+    __obj.asInstanceOf[HookOptions]
+  }
+}
+

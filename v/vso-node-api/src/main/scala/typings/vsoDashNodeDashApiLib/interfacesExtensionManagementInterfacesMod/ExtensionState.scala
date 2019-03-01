@@ -15,3 +15,20 @@ trait ExtensionState extends InstalledExtensionState {
   var version: java.lang.String
 }
 
+object ExtensionState {
+  @scala.inline
+  def apply(
+    extensionName: java.lang.String,
+    flags: ExtensionStateFlags,
+    installationIssues: js.Array[InstalledExtensionStateIssue],
+    lastUpdated: stdLib.Date,
+    lastVersionCheck: stdLib.Date,
+    publisherName: java.lang.String,
+    version: java.lang.String
+  ): ExtensionState = {
+    val __obj = js.Dynamic.literal(extensionName = extensionName, flags = flags, installationIssues = installationIssues, lastUpdated = lastUpdated, lastVersionCheck = lastVersionCheck, publisherName = publisherName, version = version)
+  
+    __obj.asInstanceOf[ExtensionState]
+  }
+}
+

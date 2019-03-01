@@ -10,3 +10,15 @@ trait Anon_BaseData extends js.Object {
   var baseType: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
 }
 
+object Anon_BaseData {
+  @scala.inline
+  def apply(
+    baseData: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
+    baseType: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
+  ): Anon_BaseData = {
+    val __obj = js.Dynamic.literal(baseData = baseData, baseType = baseType)
+  
+    __obj.asInstanceOf[Anon_BaseData]
+  }
+}
+

@@ -51,3 +51,25 @@ trait XUriReferenceFactory
   def parse(uriReference: java.lang.String): XUriReference
 }
 
+object XUriReferenceFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    makeAbsolute: js.Function4[
+      XUriReference, 
+      XUriReference, 
+      scala.Boolean, 
+      RelativeUriExcessParentSegments, 
+      XUriReference
+    ],
+    makeRelative: js.Function5[XUriReference, XUriReference, scala.Boolean, scala.Boolean, scala.Boolean, XUriReference],
+    parse: js.Function1[java.lang.String, XUriReference],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUriReferenceFactory = {
+    val __obj = js.Dynamic.literal(acquire = acquire, makeAbsolute = makeAbsolute, makeRelative = makeRelative, parse = parse, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XUriReferenceFactory]
+  }
+}
+

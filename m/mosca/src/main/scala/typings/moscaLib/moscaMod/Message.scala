@@ -12,3 +12,12 @@ trait Message extends js.Object {
   var topic: java.lang.String
 }
 
+object Message {
+  @scala.inline
+  def apply(payload: js.Any, qos: scala.Double, retain: scala.Boolean, topic: java.lang.String): Message = {
+    val __obj = js.Dynamic.literal(payload = payload, qos = qos, retain = retain, topic = topic)
+  
+    __obj.asInstanceOf[Message]
+  }
+}
+

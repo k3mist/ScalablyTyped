@@ -15,3 +15,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.SpreadElementPattern
 }
 
+object SpreadElementPattern {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.PatternKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.SpreadElementPattern
+  ): SpreadElementPattern = {
+    val __obj = js.Dynamic.literal(argument = argument, `type` = `type`)
+  
+    __obj.asInstanceOf[SpreadElementPattern]
+  }
+}
+

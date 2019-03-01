@@ -10,3 +10,12 @@ trait Anon_Aria extends js.Object {
   var display: js.Array[java.lang.String]
 }
 
+object Anon_Aria {
+  @scala.inline
+  def apply(aria: js.Array[java.lang.String], display: js.Array[java.lang.String]): Anon_Aria = {
+    val __obj = js.Dynamic.literal(aria = aria, display = display)
+  
+    __obj.asInstanceOf[Anon_Aria]
+  }
+}
+

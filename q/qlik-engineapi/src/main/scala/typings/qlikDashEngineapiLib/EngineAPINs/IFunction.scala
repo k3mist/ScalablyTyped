@@ -24,3 +24,12 @@ trait IFunction extends js.Object {
   var qSignature: java.lang.String
 }
 
+object IFunction {
+  @scala.inline
+  def apply(qGroup: FunctionGroupType, qName: java.lang.String, qSignature: java.lang.String): IFunction = {
+    val __obj = js.Dynamic.literal(qGroup = qGroup, qName = qName, qSignature = qSignature)
+  
+    __obj.asInstanceOf[IFunction]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Anon_Boolean extends js.Object {
   var text: Anon_CellQuestion
 }
 
+object Anon_Boolean {
+  @scala.inline
+  def apply(
+    boolean: Anon_CellQuestion,
+    checkbox: Anon_CellQuestion,
+    comment: Anon_CellQuestion,
+    dropdown: Anon_CellQuestion,
+    expression: Anon_CellQuestion,
+    radiogroup: Anon_CellQuestion,
+    text: Anon_CellQuestion
+  ): Anon_Boolean = {
+    val __obj = js.Dynamic.literal(boolean = boolean, checkbox = checkbox, comment = comment, dropdown = dropdown, expression = expression, radiogroup = radiogroup, text = text)
+  
+    __obj.asInstanceOf[Anon_Boolean]
+  }
+}
+

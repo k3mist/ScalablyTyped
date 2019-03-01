@@ -11,3 +11,12 @@ trait InvalidAlgorithmError
   var name: java.lang.String
 }
 
+object InvalidAlgorithmError {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): InvalidAlgorithmError = {
+    val __obj = js.Dynamic.literal(message = message, name = name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InvalidAlgorithmError]
+  }
+}
+

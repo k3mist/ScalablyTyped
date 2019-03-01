@@ -14,3 +14,12 @@ trait DownloadResult extends js.Object {
   var statusCode: scala.Double
 }
 
+object DownloadResult {
+  @scala.inline
+  def apply(bytesWritten: scala.Double, jobId: scala.Double, statusCode: scala.Double): DownloadResult = {
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten, jobId = jobId, statusCode = statusCode)
+  
+    __obj.asInstanceOf[DownloadResult]
+  }
+}
+

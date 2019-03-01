@@ -12,3 +12,16 @@ trait Anon_Css extends js.Object {
   var publicPath: java.lang.String
 }
 
+object Anon_Css {
+  @scala.inline
+  def apply(
+    css: js.Array[htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginMod.EntryObject],
+    `js_`: js.Array[htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginMod.EntryObject],
+    publicPath: java.lang.String
+  ): Anon_Css = {
+    val __obj = js.Dynamic.literal(css = css, `js_` = `js_`, publicPath = publicPath)
+  
+    __obj.asInstanceOf[Anon_Css]
+  }
+}
+

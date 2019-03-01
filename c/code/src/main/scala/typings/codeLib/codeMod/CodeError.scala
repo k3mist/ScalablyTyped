@@ -11,3 +11,12 @@ trait CodeError extends js.Object {
   var line: java.lang.String
 }
 
+object CodeError {
+  @scala.inline
+  def apply(column: java.lang.String, filename: java.lang.String, line: java.lang.String): CodeError = {
+    val __obj = js.Dynamic.literal(column = column, filename = filename, line = line)
+  
+    __obj.asInstanceOf[CodeError]
+  }
+}
+

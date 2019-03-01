@@ -10,3 +10,12 @@ trait PruneContainersInfo extends js.Object {
   var SpaceReclaimed: scala.Double
 }
 
+object PruneContainersInfo {
+  @scala.inline
+  def apply(ContainersDeleted: js.Array[java.lang.String], SpaceReclaimed: scala.Double): PruneContainersInfo = {
+    val __obj = js.Dynamic.literal(ContainersDeleted = ContainersDeleted, SpaceReclaimed = SpaceReclaimed)
+  
+    __obj.asInstanceOf[PruneContainersInfo]
+  }
+}
+

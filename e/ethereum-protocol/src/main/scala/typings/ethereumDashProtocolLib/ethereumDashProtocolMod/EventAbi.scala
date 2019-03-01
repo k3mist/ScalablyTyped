@@ -12,3 +12,17 @@ trait EventAbi extends AbiDefinition {
   var `type`: AbiType
 }
 
+object EventAbi {
+  @scala.inline
+  def apply(
+    anonymous: scala.Boolean,
+    inputs: js.Array[EventParameter],
+    name: java.lang.String,
+    `type`: AbiType
+  ): EventAbi = {
+    val __obj = js.Dynamic.literal(anonymous = anonymous, inputs = inputs, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[EventAbi]
+  }
+}
+

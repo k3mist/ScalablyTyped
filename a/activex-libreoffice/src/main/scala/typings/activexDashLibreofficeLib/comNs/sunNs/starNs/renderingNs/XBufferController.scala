@@ -53,3 +53,20 @@ trait XBufferController
   def switchBuffer(bUpdateAll: scala.Boolean): scala.Boolean
 }
 
+object XBufferController {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createBuffers: js.Function1[scala.Double, scala.Double],
+    destroyBuffers: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    showBuffer: js.Function1[scala.Boolean, scala.Boolean],
+    switchBuffer: js.Function1[scala.Boolean, scala.Boolean]
+  ): XBufferController = {
+    val __obj = js.Dynamic.literal(acquire = acquire, createBuffers = createBuffers, destroyBuffers = destroyBuffers, queryInterface = queryInterface, release = release, showBuffer = showBuffer, switchBuffer = switchBuffer)
+  
+    __obj.asInstanceOf[XBufferController]
+  }
+}
+

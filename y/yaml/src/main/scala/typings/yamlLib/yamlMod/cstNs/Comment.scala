@@ -18,3 +18,32 @@ trait Comment extends Node {
   var type_Comment: yamlLib.yamlLibStrings.COMMENT
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    anchor: scala.Null,
+    comment: java.lang.String,
+    hasComment: scala.Boolean,
+    hasProps: scala.Boolean,
+    jsonLike: scala.Boolean,
+    props: js.Array[Range],
+    rawValue: scala.Null,
+    tag: scala.Null,
+    `type`: yamlLib.yamlLibStrings.COMMENT,
+    valueRangeContainsNewline: scala.Boolean,
+    context: ParseContext = null,
+    error: yamlLib.yamlMod.YAMLSyntaxError = null,
+    range: Range = null,
+    value: java.lang.String = null,
+    valueRange: Range = null
+  ): Comment = {
+    val __obj = js.Dynamic.literal(anchor = anchor, comment = comment, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, rawValue = rawValue, tag = tag, `type` = `type`, valueRangeContainsNewline = valueRangeContainsNewline)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

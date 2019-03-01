@@ -12,3 +12,16 @@ trait NotifyReturn extends js.Object {
   def update(command: java.lang.String, update: js.Any): scala.Unit
 }
 
+object NotifyReturn {
+  @scala.inline
+  def apply(
+    $ele: JQueryStatic,
+    close: js.Function0[scala.Unit],
+    update: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): NotifyReturn = {
+    val __obj = js.Dynamic.literal($ele = $ele, close = close, update = update)
+  
+    __obj.asInstanceOf[NotifyReturn]
+  }
+}
+

@@ -13,3 +13,18 @@ trait IManipulationInertiaStartingEventArgs extends js.Object {
   var velocities: ManipulationVelocities
 }
 
+object IManipulationInertiaStartingEventArgs {
+  @scala.inline
+  def apply(
+    cumulative: ManipulationDelta,
+    delta: ManipulationDelta,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point,
+    velocities: ManipulationVelocities
+  ): IManipulationInertiaStartingEventArgs = {
+    val __obj = js.Dynamic.literal(cumulative = cumulative, delta = delta, pointerDeviceType = pointerDeviceType, position = position, velocities = velocities)
+  
+    __obj.asInstanceOf[IManipulationInertiaStartingEventArgs]
+  }
+}
+

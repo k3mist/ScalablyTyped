@@ -19,3 +19,20 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.TryStatement
 }
 
+object TryStatement {
+  @scala.inline
+  def apply(
+    block: astDashTypesLib.genKindsMod.BlockStatementKind,
+    guardedHandlers: js.Array[astDashTypesLib.genKindsMod.CatchClauseKind],
+    handlers: js.Array[astDashTypesLib.genKindsMod.CatchClauseKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.TryStatement,
+    finalizer: astDashTypesLib.genKindsMod.BlockStatementKind = null,
+    handler: astDashTypesLib.genKindsMod.CatchClauseKind = null
+  ): TryStatement = {
+    val __obj = js.Dynamic.literal(block = block, guardedHandlers = guardedHandlers, handlers = handlers, `type` = `type`)
+    if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    __obj.asInstanceOf[TryStatement]
+  }
+}
+

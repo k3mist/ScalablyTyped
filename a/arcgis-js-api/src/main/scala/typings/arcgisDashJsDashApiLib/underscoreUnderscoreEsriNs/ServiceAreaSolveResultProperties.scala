@@ -50,3 +50,26 @@ trait ServiceAreaSolveResultProperties extends js.Object {
   var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
 
+object ServiceAreaSolveResultProperties {
+  @scala.inline
+  def apply(
+    facilities: js.Array[PointProperties] = null,
+    messages: js.Array[NAMessageProperties] = null,
+    pointBarriers: js.Array[PointProperties] = null,
+    polygonBarriers: js.Array[PolygonProperties] = null,
+    polylineBarriers: js.Array[PolylineProperties] = null,
+    serviceAreaPolygons: js.Array[GraphicProperties] = null,
+    serviceAreaPolylines: js.Array[GraphicProperties] = null
+  ): ServiceAreaSolveResultProperties = {
+    val __obj = js.Dynamic.literal()
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers)
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers)
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers)
+    if (serviceAreaPolygons != null) __obj.updateDynamic("serviceAreaPolygons")(serviceAreaPolygons)
+    if (serviceAreaPolylines != null) __obj.updateDynamic("serviceAreaPolylines")(serviceAreaPolylines)
+    __obj.asInstanceOf[ServiceAreaSolveResultProperties]
+  }
+}
+

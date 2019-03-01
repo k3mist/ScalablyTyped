@@ -62,3 +62,38 @@ trait CatalogTableState extends js.Object {
   val viewOriginalText: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object CatalogTableState {
+  @scala.inline
+  def apply(
+    catalogId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    databaseName: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    owner: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    parameters: atPulumiPulumiLib.resourceMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    ] = null,
+    partitionKeys: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CommentName]]] = null,
+    retention: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    storageDescriptor: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketColumnsColumns] = null,
+    tableType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    viewExpandedText: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    viewOriginalText: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): CatalogTableState = {
+    val __obj = js.Dynamic.literal()
+    if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (partitionKeys != null) __obj.updateDynamic("partitionKeys")(partitionKeys.asInstanceOf[js.Any])
+    if (retention != null) __obj.updateDynamic("retention")(retention.asInstanceOf[js.Any])
+    if (storageDescriptor != null) __obj.updateDynamic("storageDescriptor")(storageDescriptor.asInstanceOf[js.Any])
+    if (tableType != null) __obj.updateDynamic("tableType")(tableType.asInstanceOf[js.Any])
+    if (viewExpandedText != null) __obj.updateDynamic("viewExpandedText")(viewExpandedText.asInstanceOf[js.Any])
+    if (viewOriginalText != null) __obj.updateDynamic("viewOriginalText")(viewOriginalText.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CatalogTableState]
+  }
+}
+

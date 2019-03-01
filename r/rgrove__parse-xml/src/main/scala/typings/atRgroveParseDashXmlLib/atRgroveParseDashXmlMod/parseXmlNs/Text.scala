@@ -13,3 +13,16 @@ trait Text
   var type_Text: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.text
 }
 
+object Text {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.text,
+    parent: NodeBase = null
+  ): Text = {
+    val __obj = js.Dynamic.literal(text = text, `type` = `type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Text]
+  }
+}
+

@@ -25,3 +25,18 @@ trait ConversionInfo
   def reverseConvert(): scala.Unit
 }
 
+object ConversionInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    convert: js.Function0[scala.Unit],
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    reverseConvert: js.Function0[scala.Unit]
+  ): ConversionInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, convert = convert, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, reverseConvert = reverseConvert)
+  
+    __obj.asInstanceOf[ConversionInfo]
+  }
+}
+

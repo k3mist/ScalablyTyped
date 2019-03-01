@@ -12,3 +12,17 @@ trait ASTNode extends js.Object {
   var tokens: java.lang.String
 }
 
+object ASTNode {
+  @scala.inline
+  def apply(
+    children: js.Array[ASTNode],
+    name: java.lang.String,
+    semantic: java.lang.String,
+    tokens: java.lang.String
+  ): ASTNode = {
+    val __obj = js.Dynamic.literal(children = children, name = name, semantic = semantic, tokens = tokens)
+  
+    __obj.asInstanceOf[ASTNode]
+  }
+}
+

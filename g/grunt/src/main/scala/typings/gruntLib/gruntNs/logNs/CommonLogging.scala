@@ -50,3 +50,22 @@ trait CommonLogging[T] extends js.Object {
   def writeln(msg: java.lang.String): T
 }
 
+object CommonLogging {
+  @scala.inline
+  def apply[T](
+    error: js.Function1[java.lang.String, T],
+    errorlns: js.Function1[java.lang.String, T],
+    ok: js.Function1[java.lang.String, T],
+    oklns: js.Function1[java.lang.String, T],
+    subhead: js.Function1[java.lang.String, T],
+    warn: js.Function1[java.lang.String, T],
+    write: js.Function1[java.lang.String, T],
+    writeflags: js.Function1[js.Any, T],
+    writeln: js.Function1[java.lang.String, T]
+  ): CommonLogging[T] = {
+    val __obj = js.Dynamic.literal(error = error, errorlns = errorlns, ok = ok, oklns = oklns, subhead = subhead, warn = warn, write = write, writeflags = writeflags, writeln = writeln)
+  
+    __obj.asInstanceOf[CommonLogging[T]]
+  }
+}
+

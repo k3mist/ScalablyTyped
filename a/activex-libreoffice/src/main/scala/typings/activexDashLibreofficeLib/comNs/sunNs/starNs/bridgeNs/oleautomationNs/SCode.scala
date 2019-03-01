@@ -19,3 +19,12 @@ trait SCode extends js.Object {
   var Value: scala.Double
 }
 
+object SCode {
+  @scala.inline
+  def apply(Value: scala.Double): SCode = {
+    val __obj = js.Dynamic.literal(Value = Value)
+  
+    __obj.asInstanceOf[SCode]
+  }
+}
+

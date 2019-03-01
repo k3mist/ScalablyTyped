@@ -70,3 +70,21 @@ trait JSTreeStaticDefaultsSearch extends js.Object {
   var show_only_matches_children: scala.Boolean
 }
 
+object JSTreeStaticDefaultsSearch {
+  @scala.inline
+  def apply(
+    ajax: js.Any,
+    case_sensitive: scala.Boolean,
+    close_opened_onclear: scala.Boolean,
+    fuzzy: scala.Boolean,
+    search_callback: js.Any,
+    search_leaves_only: scala.Boolean,
+    show_only_matches: scala.Boolean,
+    show_only_matches_children: scala.Boolean
+  ): JSTreeStaticDefaultsSearch = {
+    val __obj = js.Dynamic.literal(ajax = ajax, case_sensitive = case_sensitive, close_opened_onclear = close_opened_onclear, fuzzy = fuzzy, search_callback = search_callback, search_leaves_only = search_leaves_only, show_only_matches = show_only_matches, show_only_matches_children = show_only_matches_children)
+  
+    __obj.asInstanceOf[JSTreeStaticDefaultsSearch]
+  }
+}
+

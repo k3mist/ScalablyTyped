@@ -13,3 +13,18 @@ trait TestPlanHubData extends js.Object {
   var totalTestPoints: scala.Double
 }
 
+object TestPlanHubData {
+  @scala.inline
+  def apply(
+    selectedSuiteId: scala.Double,
+    testPlan: TestPlan,
+    testPoints: js.Array[TestPoint],
+    testSuites: js.Array[TestSuite],
+    totalTestPoints: scala.Double
+  ): TestPlanHubData = {
+    val __obj = js.Dynamic.literal(selectedSuiteId = selectedSuiteId, testPlan = testPlan, testPoints = testPoints, testSuites = testSuites, totalTestPoints = totalTestPoints)
+  
+    __obj.asInstanceOf[TestPlanHubData]
+  }
+}
+

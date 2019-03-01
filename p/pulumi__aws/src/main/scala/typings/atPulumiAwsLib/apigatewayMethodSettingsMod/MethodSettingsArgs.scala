@@ -24,3 +24,17 @@ trait MethodSettingsArgs extends js.Object {
   val stageName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object MethodSettingsArgs {
+  @scala.inline
+  def apply(
+    methodPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    restApi: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
+    settings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CacheDataEncryptedCacheTtlInSeconds],
+    stageName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  ): MethodSettingsArgs = {
+    val __obj = js.Dynamic.literal(methodPath = methodPath.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[MethodSettingsArgs]
+  }
+}
+

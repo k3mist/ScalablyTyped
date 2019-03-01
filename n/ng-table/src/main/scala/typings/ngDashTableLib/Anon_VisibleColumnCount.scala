@@ -9,3 +9,12 @@ trait Anon_VisibleColumnCount extends js.Object {
   var visibleColumnCount: scala.Double
 }
 
+object Anon_VisibleColumnCount {
+  @scala.inline
+  def apply(visibleColumnCount: scala.Double): Anon_VisibleColumnCount = {
+    val __obj = js.Dynamic.literal(visibleColumnCount = visibleColumnCount)
+  
+    __obj.asInstanceOf[Anon_VisibleColumnCount]
+  }
+}
+

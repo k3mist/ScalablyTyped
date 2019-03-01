@@ -28,3 +28,18 @@ trait FieldInfoFormatProperties extends js.Object {
   var places: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FieldInfoFormatProperties {
+  @scala.inline
+  def apply(
+    dateFormat: java.lang.String = null,
+    digitSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    places: scala.Int | scala.Double = null
+  ): FieldInfoFormatProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator)
+    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldInfoFormatProperties]
+  }
+}
+

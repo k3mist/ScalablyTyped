@@ -32,3 +32,19 @@ trait ISessionAppConfig extends js.Object {
   var prefix: java.lang.String
 }
 
+object ISessionAppConfig {
+  @scala.inline
+  def apply(
+    identity: java.lang.String,
+    isSecure: scala.Boolean,
+    openWithoutData: scala.Boolean,
+    port: java.lang.String | scala.Double,
+    prefix: java.lang.String,
+    host: java.lang.String = null
+  ): ISessionAppConfig = {
+    val __obj = js.Dynamic.literal(identity = identity, isSecure = isSecure, openWithoutData = openWithoutData, port = port.asInstanceOf[js.Any], prefix = prefix)
+    if (host != null) __obj.updateDynamic("host")(host)
+    __obj.asInstanceOf[ISessionAppConfig]
+  }
+}
+

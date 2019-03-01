@@ -16,3 +16,15 @@ trait StyleSheetStatic extends js.Object {
   def rehydrate(renderedClassNames: js.Array[java.lang.String]): scala.Unit
 }
 
+object StyleSheetStatic {
+  @scala.inline
+  def apply(
+    create: js.Function1[js.Any, js.Any],
+    rehydrate: js.Function1[js.Array[java.lang.String], scala.Unit]
+  ): StyleSheetStatic = {
+    val __obj = js.Dynamic.literal(create = create, rehydrate = rehydrate)
+  
+    __obj.asInstanceOf[StyleSheetStatic]
+  }
+}
+

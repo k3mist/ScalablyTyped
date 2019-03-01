@@ -20,3 +20,12 @@ trait GitPullRequestIterationChanges extends js.Object {
   var nextTop: scala.Double
 }
 
+object GitPullRequestIterationChanges {
+  @scala.inline
+  def apply(changeEntries: js.Array[GitPullRequestChange], nextSkip: scala.Double, nextTop: scala.Double): GitPullRequestIterationChanges = {
+    val __obj = js.Dynamic.literal(changeEntries = changeEntries, nextSkip = nextSkip, nextTop = nextTop)
+  
+    __obj.asInstanceOf[GitPullRequestIterationChanges]
+  }
+}
+

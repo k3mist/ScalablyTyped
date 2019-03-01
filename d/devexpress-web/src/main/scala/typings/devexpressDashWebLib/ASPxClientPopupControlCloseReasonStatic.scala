@@ -28,3 +28,18 @@ trait ASPxClientPopupControlCloseReasonStatic extends js.Object {
   var OuterMouseClick: java.lang.String
 }
 
+object ASPxClientPopupControlCloseReasonStatic {
+  @scala.inline
+  def apply(
+    API: java.lang.String,
+    CloseButton: java.lang.String,
+    Escape: java.lang.String,
+    MouseOut: java.lang.String,
+    OuterMouseClick: java.lang.String
+  ): ASPxClientPopupControlCloseReasonStatic = {
+    val __obj = js.Dynamic.literal(API = API, CloseButton = CloseButton, Escape = Escape, MouseOut = MouseOut, OuterMouseClick = OuterMouseClick)
+  
+    __obj.asInstanceOf[ASPxClientPopupControlCloseReasonStatic]
+  }
+}
+

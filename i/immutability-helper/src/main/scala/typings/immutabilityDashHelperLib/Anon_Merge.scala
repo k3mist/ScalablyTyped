@@ -11,3 +11,12 @@ trait Anon_Merge[T]
   var $merge: stdLib.Partial[T]
 }
 
+object Anon_Merge {
+  @scala.inline
+  def apply[T]($merge: stdLib.Partial[T]): Anon_Merge[T] = {
+    val __obj = js.Dynamic.literal($merge = $merge)
+  
+    __obj.asInstanceOf[Anon_Merge[T]]
+  }
+}
+

@@ -26,3 +26,18 @@ trait AreaMeasurement3DViewModelProperties extends js.Object {
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 
+object AreaMeasurement3DViewModelProperties {
+  @scala.inline
+  def apply(
+    unit: java.lang.String = null,
+    unitOptions: js.Array[java.lang.String] = null,
+    view: SceneViewProperties = null
+  ): AreaMeasurement3DViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[AreaMeasurement3DViewModelProperties]
+  }
+}
+

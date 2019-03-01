@@ -19,3 +19,32 @@ trait DistanceConstraint extends Constraint {
   def setMaxForce(maxForce: scala.Double): scala.Unit
 }
 
+object DistanceConstraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    collideConnected: scala.Boolean,
+    distance: scala.Double,
+    equeations: js.Array[Equation],
+    getMaxForce: js.Function0[scala.Double],
+    localAnchorA: js.Tuple2[scala.Double, scala.Double],
+    localAnchorB: js.Tuple2[scala.Double, scala.Double],
+    lowerLimit: scala.Double,
+    lowerLimitEnabled: scala.Boolean,
+    maxForce: scala.Double,
+    position: scala.Double,
+    setMaxForce: js.Function1[scala.Double, scala.Unit],
+    setRelaxation: js.Function1[scala.Double, scala.Unit],
+    setStiffness: js.Function1[scala.Double, scala.Unit],
+    `type`: scala.Double,
+    update: js.Function0[scala.Unit],
+    upperLimit: scala.Double,
+    upperLimitEnabled: scala.Boolean
+  ): DistanceConstraint = {
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, distance = distance, equeations = equeations, getMaxForce = getMaxForce, localAnchorA = localAnchorA, localAnchorB = localAnchorB, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, maxForce = maxForce, position = position, setMaxForce = setMaxForce, setRelaxation = setRelaxation, setStiffness = setStiffness, `type` = `type`, update = update, upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled)
+  
+    __obj.asInstanceOf[DistanceConstraint]
+  }
+}
+

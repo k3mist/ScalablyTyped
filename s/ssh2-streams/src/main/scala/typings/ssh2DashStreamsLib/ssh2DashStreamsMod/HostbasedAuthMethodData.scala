@@ -14,3 +14,20 @@ trait HostbasedAuthMethodData extends _AuthMethodData {
   var signature: js.UndefOr[nodeLib.Buffer] = js.undefined
 }
 
+object HostbasedAuthMethodData {
+  @scala.inline
+  def apply(
+    key: nodeLib.Buffer,
+    keyAlgo: java.lang.String,
+    localHostname: java.lang.String,
+    localUsername: java.lang.String,
+    blob: nodeLib.Buffer = null,
+    signature: nodeLib.Buffer = null
+  ): HostbasedAuthMethodData = {
+    val __obj = js.Dynamic.literal(key = key, keyAlgo = keyAlgo, localHostname = localHostname, localUsername = localUsername)
+    if (blob != null) __obj.updateDynamic("blob")(blob)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    __obj.asInstanceOf[HostbasedAuthMethodData]
+  }
+}
+

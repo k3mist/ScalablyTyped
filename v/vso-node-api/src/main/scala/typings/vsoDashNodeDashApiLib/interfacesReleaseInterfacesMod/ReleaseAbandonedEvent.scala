@@ -10,3 +10,12 @@ trait ReleaseAbandonedEvent extends js.Object {
   var release: Release
 }
 
+object ReleaseAbandonedEvent {
+  @scala.inline
+  def apply(project: ProjectReference, release: Release): ReleaseAbandonedEvent = {
+    val __obj = js.Dynamic.literal(project = project, release = release)
+  
+    __obj.asInstanceOf[ReleaseAbandonedEvent]
+  }
+}
+

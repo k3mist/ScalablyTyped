@@ -36,3 +36,19 @@ trait IFetchResult[T] extends js.Object {
   var totalCount: scala.Double
 }
 
+object IFetchResult {
+  @scala.inline
+  def apply[T](
+    absoluteIndex: scala.Double,
+    atEnd: scala.Boolean,
+    atStart: scala.Boolean,
+    items: js.Array[T],
+    offset: scala.Double,
+    totalCount: scala.Double
+  ): IFetchResult[T] = {
+    val __obj = js.Dynamic.literal(absoluteIndex = absoluteIndex, atEnd = atEnd, atStart = atStart, items = items, offset = offset, totalCount = totalCount)
+  
+    __obj.asInstanceOf[IFetchResult[T]]
+  }
+}
+

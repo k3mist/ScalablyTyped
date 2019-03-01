@@ -24,3 +24,29 @@ trait FastClickObject extends js.Object {
   def needsFocus(target: js.Any): scala.Boolean
 }
 
+object FastClickObject {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    determineEventType: js.Function1[js.Any, java.lang.String],
+    findControl: js.Function1[js.Any, js.Any],
+    focus: js.Function1[js.Any, scala.Unit],
+    getTargetElementFromEventTarget: js.Function1[stdLib.EventTarget, js.Any],
+    lastTouchIdentifier: scala.Double,
+    layer: stdLib.Element,
+    needsClick: js.Function1[js.Any, scala.Boolean],
+    needsFocus: js.Function1[js.Any, scala.Boolean],
+    tapDelay: scala.Double,
+    targetElement: js.Any,
+    touchBoundary: scala.Double,
+    touchStartX: scala.Double,
+    touchStartY: scala.Double,
+    trackingClick: scala.Boolean,
+    trackingClickStart: scala.Double
+  ): FastClickObject = {
+    val __obj = js.Dynamic.literal(destroy = destroy, determineEventType = determineEventType, findControl = findControl, focus = focus, getTargetElementFromEventTarget = getTargetElementFromEventTarget, lastTouchIdentifier = lastTouchIdentifier, layer = layer, needsClick = needsClick, needsFocus = needsFocus, tapDelay = tapDelay, targetElement = targetElement, touchBoundary = touchBoundary, touchStartX = touchStartX, touchStartY = touchStartY, trackingClick = trackingClick, trackingClickStart = trackingClickStart)
+  
+    __obj.asInstanceOf[FastClickObject]
+  }
+}
+

@@ -22,3 +22,17 @@ trait SnapshotArgs extends js.Object {
   val volumeId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 
+object SnapshotArgs {
+  @scala.inline
+  def apply(
+    volumeId: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotArgs = {
+    val __obj = js.Dynamic.literal(volumeId = volumeId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotArgs]
+  }
+}
+

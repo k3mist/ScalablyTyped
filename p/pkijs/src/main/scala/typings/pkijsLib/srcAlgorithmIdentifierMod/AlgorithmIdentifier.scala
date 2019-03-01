@@ -19,3 +19,19 @@ trait AlgorithmIdentifier extends js.Object {
   def toSchema(): js.Any
 }
 
+object AlgorithmIdentifier {
+  @scala.inline
+  def apply(
+    algorithmId: java.lang.String,
+    algorithmParams: js.Any,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    isEqual: js.Function1[AlgorithmIdentifier, scala.Boolean],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): AlgorithmIdentifier = {
+    val __obj = js.Dynamic.literal(algorithmId = algorithmId, algorithmParams = algorithmParams, fromSchema = fromSchema, isEqual = isEqual, toJSON = toJSON, toSchema = toSchema)
+  
+    __obj.asInstanceOf[AlgorithmIdentifier]
+  }
+}
+

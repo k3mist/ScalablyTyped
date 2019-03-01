@@ -11,3 +11,12 @@ trait Bitmap extends js.Object {
   var width: scala.Double
 }
 
+object Bitmap {
+  @scala.inline
+  def apply(data: nodeLib.Buffer, height: scala.Double, width: scala.Double): Bitmap = {
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
+  
+    __obj.asInstanceOf[Bitmap]
+  }
+}
+

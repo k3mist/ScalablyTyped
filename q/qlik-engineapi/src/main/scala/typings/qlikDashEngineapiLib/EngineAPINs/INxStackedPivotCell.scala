@@ -81,3 +81,27 @@ trait INxStackedPivotCell extends js.Object {
   var qValue: scala.Double
 }
 
+object INxStackedPivotCell {
+  @scala.inline
+  def apply(
+    qAttrDims: INxAttributeDimValues,
+    qAttrExps: INxAttributeExpressionValues,
+    qCanCollapse: scala.Boolean,
+    qCanExpand: scala.Boolean,
+    qDown: scala.Double,
+    qElemNo: scala.Double,
+    qMaxPos: scala.Double,
+    qMinNeg: scala.Double,
+    qRow: scala.Double,
+    qSubNodes: js.Array[INxStackedPivotCell],
+    qText: java.lang.String,
+    qType: NxCellType,
+    qUp: scala.Double,
+    qValue: scala.Double
+  ): INxStackedPivotCell = {
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qCanCollapse = qCanCollapse, qCanExpand = qCanExpand, qDown = qDown, qElemNo = qElemNo, qMaxPos = qMaxPos, qMinNeg = qMinNeg, qRow = qRow, qSubNodes = qSubNodes, qText = qText, qType = qType, qUp = qUp, qValue = qValue)
+  
+    __obj.asInstanceOf[INxStackedPivotCell]
+  }
+}
+

@@ -14,3 +14,19 @@ trait AggregatedResultsByOutcome extends js.Object {
   var rerunResultCount: scala.Double
 }
 
+object AggregatedResultsByOutcome {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    duration: js.Any,
+    groupByField: java.lang.String,
+    groupByValue: js.Any,
+    outcome: TestOutcome,
+    rerunResultCount: scala.Double
+  ): AggregatedResultsByOutcome = {
+    val __obj = js.Dynamic.literal(count = count, duration = duration, groupByField = groupByField, groupByValue = groupByValue, outcome = outcome, rerunResultCount = rerunResultCount)
+  
+    __obj.asInstanceOf[AggregatedResultsByOutcome]
+  }
+}
+

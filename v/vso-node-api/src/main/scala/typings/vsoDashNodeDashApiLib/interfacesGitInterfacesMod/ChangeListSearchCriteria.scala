@@ -60,3 +60,26 @@ trait ChangeListSearchCriteria extends js.Object {
   var user: java.lang.String
 }
 
+object ChangeListSearchCriteria {
+  @scala.inline
+  def apply(
+    compareVersion: java.lang.String,
+    excludeDeletes: scala.Boolean,
+    followRenames: scala.Boolean,
+    fromDate: java.lang.String,
+    fromVersion: java.lang.String,
+    itemPath: java.lang.String,
+    itemPaths: js.Array[java.lang.String],
+    itemVersion: java.lang.String,
+    skip: scala.Double,
+    toDate: java.lang.String,
+    toVersion: java.lang.String,
+    top: scala.Double,
+    user: java.lang.String
+  ): ChangeListSearchCriteria = {
+    val __obj = js.Dynamic.literal(compareVersion = compareVersion, excludeDeletes = excludeDeletes, followRenames = followRenames, fromDate = fromDate, fromVersion = fromVersion, itemPath = itemPath, itemPaths = itemPaths, itemVersion = itemVersion, skip = skip, toDate = toDate, toVersion = toVersion, top = top, user = user)
+  
+    __obj.asInstanceOf[ChangeListSearchCriteria]
+  }
+}
+

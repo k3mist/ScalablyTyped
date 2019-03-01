@@ -17,3 +17,16 @@ trait BuildOption extends js.Object {
   var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object BuildOption {
+  @scala.inline
+  def apply(
+    definition: BuildOptionDefinitionReference,
+    enabled: scala.Boolean,
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): BuildOption = {
+    val __obj = js.Dynamic.literal(definition = definition, enabled = enabled, inputs = inputs)
+  
+    __obj.asInstanceOf[BuildOption]
+  }
+}
+

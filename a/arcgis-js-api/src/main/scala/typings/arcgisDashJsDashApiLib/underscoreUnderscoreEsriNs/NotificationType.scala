@@ -57,3 +57,24 @@ trait NotificationType
   var `type`: java.lang.String
 }
 
+object NotificationType {
+  @scala.inline
+  def apply(
+    attachJobAttachments: scala.Boolean,
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    id: scala.Double,
+    message: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    senderEmail: java.lang.String,
+    senderName: java.lang.String,
+    subject: java.lang.String,
+    subscribers: js.Array[java.lang.String],
+    `type`: java.lang.String
+  ): NotificationType = {
+    val __obj = js.Dynamic.literal(attachJobAttachments = attachJobAttachments, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, message = message, propertyIsEnumerable = propertyIsEnumerable, senderEmail = senderEmail, senderName = senderName, subject = subject, subscribers = subscribers, `type` = `type`)
+  
+    __obj.asInstanceOf[NotificationType]
+  }
+}
+

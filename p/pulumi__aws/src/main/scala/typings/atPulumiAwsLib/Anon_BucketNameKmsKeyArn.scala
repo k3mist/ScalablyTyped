@@ -13,3 +13,20 @@ trait Anon_BucketNameKmsKeyArn extends js.Object {
   var topicArn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BucketNameKmsKeyArn {
+  @scala.inline
+  def apply(
+    bucketName: java.lang.String,
+    position: scala.Double,
+    kmsKeyArn: java.lang.String = null,
+    objectKeyPrefix: java.lang.String = null,
+    topicArn: java.lang.String = null
+  ): Anon_BucketNameKmsKeyArn = {
+    val __obj = js.Dynamic.literal(bucketName = bucketName, position = position)
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
+    if (objectKeyPrefix != null) __obj.updateDynamic("objectKeyPrefix")(objectKeyPrefix)
+    if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)
+    __obj.asInstanceOf[Anon_BucketNameKmsKeyArn]
+  }
+}
+

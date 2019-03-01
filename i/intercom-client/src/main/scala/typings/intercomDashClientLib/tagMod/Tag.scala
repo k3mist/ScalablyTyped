@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
   val `type`: intercomDashClientLib.intercomDashClientLibStrings.tag
 }
 
+object Tag {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.tag
+  ): Tag = {
+    val __obj = js.Dynamic.literal(id = id, name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[Tag]
+  }
+}
+

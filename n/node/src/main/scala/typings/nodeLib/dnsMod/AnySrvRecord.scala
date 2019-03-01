@@ -11,3 +11,18 @@ trait AnySrvRecord
   var `type`: nodeLib.nodeLibStrings.SRV
 }
 
+object AnySrvRecord {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    port: scala.Double,
+    priority: scala.Double,
+    `type`: nodeLib.nodeLibStrings.SRV,
+    weight: scala.Double
+  ): AnySrvRecord = {
+    val __obj = js.Dynamic.literal(name = name, port = port, priority = priority, `type` = `type`, weight = weight)
+  
+    __obj.asInstanceOf[AnySrvRecord]
+  }
+}
+

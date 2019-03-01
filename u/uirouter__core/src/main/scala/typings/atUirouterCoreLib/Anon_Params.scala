@@ -11,3 +11,13 @@ trait Anon_Params
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Params {
+  @scala.inline
+  def apply(params: atUirouterCoreLib.libParamsInterfaceMod.RawParams = null, state: java.lang.String = null): Anon_Params = {
+    val __obj = js.Dynamic.literal()
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_Params]
+  }
+}
+

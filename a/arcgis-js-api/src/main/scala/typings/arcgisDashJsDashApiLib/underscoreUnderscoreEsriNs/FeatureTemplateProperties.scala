@@ -32,3 +32,20 @@ trait FeatureTemplateProperties extends js.Object {
   var thumbnail: js.UndefOr[FeatureTemplateThumbnail] = js.undefined
 }
 
+object FeatureTemplateProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    drawingTool: java.lang.String = null,
+    name: java.lang.String = null,
+    thumbnail: FeatureTemplateThumbnail = null
+  ): FeatureTemplateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (drawingTool != null) __obj.updateDynamic("drawingTool")(drawingTool)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[FeatureTemplateProperties]
+  }
+}
+

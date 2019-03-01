@@ -10,3 +10,15 @@ trait CryptoSigner extends js.Object {
   def update(data: java.lang.String): scala.Unit
 }
 
+object CryptoSigner {
+  @scala.inline
+  def apply(
+    sign: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    update: js.Function1[java.lang.String, scala.Unit]
+  ): CryptoSigner = {
+    val __obj = js.Dynamic.literal(sign = sign, update = update)
+  
+    __obj.asInstanceOf[CryptoSigner]
+  }
+}
+

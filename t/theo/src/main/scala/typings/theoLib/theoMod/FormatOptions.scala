@@ -16,3 +16,19 @@ trait FormatOptions extends js.Object {
   var `type`: Format
 }
 
+object FormatOptions {
+  @scala.inline
+  def apply(
+    `type`: Format,
+    options: js.Function2[
+      /* options */ js.Object, 
+      /* transformPropName */ js.UndefOr[js.Function1[/* name */ java.lang.String, java.lang.String]], 
+      scala.Unit
+    ] = null
+  ): FormatOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[FormatOptions]
+  }
+}
+

@@ -24,3 +24,12 @@ trait XUndoAction extends js.Object {
   def undo(): scala.Unit
 }
 
+object XUndoAction {
+  @scala.inline
+  def apply(Title: java.lang.String, redo: js.Function0[scala.Unit], undo: js.Function0[scala.Unit]): XUndoAction = {
+    val __obj = js.Dynamic.literal(Title = Title, redo = redo, undo = undo)
+  
+    __obj.asInstanceOf[XUndoAction]
+  }
+}
+

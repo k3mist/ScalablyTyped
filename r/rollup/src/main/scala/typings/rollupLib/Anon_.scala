@@ -10,3 +10,12 @@ trait `Anon_`
   var mappings: rollupLib.rollupLibStrings.Empty
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(mappings: rollupLib.rollupLibStrings.Empty): `Anon_` = {
+    val __obj = js.Dynamic.literal(mappings = mappings)
+  
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

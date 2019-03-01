@@ -44,3 +44,22 @@ trait NativeTouchEvent extends js.Object {
   var touches: js.Array[NativeTouchEvent]
 }
 
+object NativeTouchEvent {
+  @scala.inline
+  def apply(
+    changedTouches: js.Array[NativeTouchEvent],
+    identifier: java.lang.String,
+    locationX: scala.Double,
+    locationY: scala.Double,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    target: java.lang.String,
+    timestamp: scala.Double,
+    touches: js.Array[NativeTouchEvent]
+  ): NativeTouchEvent = {
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches, identifier = identifier, locationX = locationX, locationY = locationY, pageX = pageX, pageY = pageY, target = target, timestamp = timestamp, touches = touches)
+  
+    __obj.asInstanceOf[NativeTouchEvent]
+  }
+}
+

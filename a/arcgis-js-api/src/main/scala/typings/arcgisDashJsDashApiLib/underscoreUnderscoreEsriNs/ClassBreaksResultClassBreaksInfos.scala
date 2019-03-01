@@ -27,3 +27,19 @@ trait ClassBreaksResultClassBreaksInfos
   var minValue: scala.Double
 }
 
+object ClassBreaksResultClassBreaksInfos {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    label: java.lang.String,
+    maxValue: scala.Double,
+    minValue: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ClassBreaksResultClassBreaksInfos = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, label = label, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[ClassBreaksResultClassBreaksInfos]
+  }
+}
+

@@ -11,3 +11,12 @@ trait AppointmentClickEventArgs extends EventArgs {
   val htmlElement: js.Object
 }
 
+object AppointmentClickEventArgs {
+  @scala.inline
+  def apply(appointmentId: java.lang.String, handled: scala.Boolean, htmlElement: js.Object, sender: Control): AppointmentClickEventArgs = {
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId, handled = handled, htmlElement = htmlElement, sender = sender)
+  
+    __obj.asInstanceOf[AppointmentClickEventArgs]
+  }
+}
+

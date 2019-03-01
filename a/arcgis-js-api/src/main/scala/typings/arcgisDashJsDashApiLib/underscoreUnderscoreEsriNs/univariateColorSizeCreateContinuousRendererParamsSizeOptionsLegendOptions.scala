@@ -15,3 +15,17 @@ trait univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions
   var title: java.lang.String
 }
 
+object univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    title: java.lang.String
+  ): univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
+    __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions]
+  }
+}
+

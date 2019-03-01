@@ -29,3 +29,21 @@ trait XTextOutputStream extends XOutputStream {
   def writeString(aString: java.lang.String): scala.Unit
 }
 
+object XTextOutputStream {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    closeOutput: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEncoding: js.Function1[java.lang.String, scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit]
+  ): XTextOutputStream = {
+    val __obj = js.Dynamic.literal(acquire = acquire, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, release = release, setEncoding = setEncoding, writeBytes = writeBytes, writeString = writeString)
+  
+    __obj.asInstanceOf[XTextOutputStream]
+  }
+}
+

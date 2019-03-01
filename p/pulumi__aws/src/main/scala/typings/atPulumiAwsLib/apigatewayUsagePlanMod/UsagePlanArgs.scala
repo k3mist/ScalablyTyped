@@ -34,3 +34,24 @@ trait UsagePlanArgs extends js.Object {
   val throttleSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BurstLimitRateLimit]] = js.undefined
 }
 
+object UsagePlanArgs {
+  @scala.inline
+  def apply(
+    apiStages: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ApiIdStage]]] = null,
+    description: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    productCode: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    quotaSettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LimitOffset] = null,
+    throttleSettings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BurstLimitRateLimit] = null
+  ): UsagePlanArgs = {
+    val __obj = js.Dynamic.literal()
+    if (apiStages != null) __obj.updateDynamic("apiStages")(apiStages.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (productCode != null) __obj.updateDynamic("productCode")(productCode.asInstanceOf[js.Any])
+    if (quotaSettings != null) __obj.updateDynamic("quotaSettings")(quotaSettings.asInstanceOf[js.Any])
+    if (throttleSettings != null) __obj.updateDynamic("throttleSettings")(throttleSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsagePlanArgs]
+  }
+}
+

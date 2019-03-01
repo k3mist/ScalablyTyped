@@ -14,3 +14,19 @@ trait ICommitToTeamServerOptions extends js.Object {
   var teamServerUsername: java.lang.String
 }
 
+object ICommitToTeamServerOptions {
+  @scala.inline
+  def apply(
+    commitMessage: java.lang.String,
+    targetBranch: java.lang.String,
+    targetRevision: scala.Double,
+    teamServerPassword: java.lang.String,
+    teamServerUsername: java.lang.String,
+    isWebModelerCommit: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICommitToTeamServerOptions = {
+    val __obj = js.Dynamic.literal(commitMessage = commitMessage, targetBranch = targetBranch, targetRevision = targetRevision, teamServerPassword = teamServerPassword, teamServerUsername = teamServerUsername)
+    if (!js.isUndefined(isWebModelerCommit)) __obj.updateDynamic("isWebModelerCommit")(isWebModelerCommit)
+    __obj.asInstanceOf[ICommitToTeamServerOptions]
+  }
+}
+

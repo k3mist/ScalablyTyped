@@ -10,3 +10,12 @@ trait Partial extends js.Object {
   var `type`: java.lang.String
 }
 
+object Partial {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String): Partial = {
+    val __obj = js.Dynamic.literal(name = name, `type` = `type`)
+  
+    __obj.asInstanceOf[Partial]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_LaunchTemplateId extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_LaunchTemplateId {
+  @scala.inline
+  def apply(
+    launchTemplateId: java.lang.String,
+    launchTemplateName: java.lang.String,
+    version: java.lang.String = null
+  ): Anon_LaunchTemplateId = {
+    val __obj = js.Dynamic.literal(launchTemplateId = launchTemplateId, launchTemplateName = launchTemplateName)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_LaunchTemplateId]
+  }
+}
+

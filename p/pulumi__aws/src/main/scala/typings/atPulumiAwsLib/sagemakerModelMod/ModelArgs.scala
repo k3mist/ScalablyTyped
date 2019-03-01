@@ -48,3 +48,29 @@ trait ModelArgs extends js.Object {
   ] = js.undefined
 }
 
+object ModelArgs {
+  @scala.inline
+  def apply(
+    executionRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String],
+    containers: atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerHostnameEnvironment]
+      ]
+    ] = null,
+    enableNetworkIsolation: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    primaryContainer: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerHostnameEnvironment] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetsArrayInput] = null
+  ): ModelArgs = {
+    val __obj = js.Dynamic.literal(executionRoleArn = executionRoleArn.asInstanceOf[js.Any])
+    if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
+    if (enableNetworkIsolation != null) __obj.updateDynamic("enableNetworkIsolation")(enableNetworkIsolation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (primaryContainer != null) __obj.updateDynamic("primaryContainer")(primaryContainer.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModelArgs]
+  }
+}
+

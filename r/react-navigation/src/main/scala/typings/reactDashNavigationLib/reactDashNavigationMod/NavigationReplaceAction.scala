@@ -13,3 +13,19 @@ trait NavigationReplaceAction extends NavigationStackAction {
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/REPLACE`
 }
 
+object NavigationReplaceAction {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    routeName: java.lang.String,
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/REPLACE`,
+    action: NavigationNavigateAction = null,
+    params: NavigationParams = null
+  ): NavigationReplaceAction = {
+    val __obj = js.Dynamic.literal(key = key, routeName = routeName, `type` = `type`)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationReplaceAction]
+  }
+}
+

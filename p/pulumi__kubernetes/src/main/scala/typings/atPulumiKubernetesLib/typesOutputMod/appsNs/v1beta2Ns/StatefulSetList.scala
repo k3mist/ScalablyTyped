@@ -27,3 +27,17 @@ trait StatefulSetList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object StatefulSetList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`,
+    items: js.Array[StatefulSet],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): StatefulSetList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[StatefulSetList]
+  }
+}
+

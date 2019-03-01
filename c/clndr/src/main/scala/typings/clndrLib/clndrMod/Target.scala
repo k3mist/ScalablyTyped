@@ -11,3 +11,12 @@ trait Target extends js.Object {
   var events: js.Array[_]
 }
 
+object Target {
+  @scala.inline
+  def apply(date: momentLib.momentMod.momentNs.Moment, element: stdLib.Element, events: js.Array[_]): Target = {
+    val __obj = js.Dynamic.literal(date = date, element = element, events = events)
+  
+    __obj.asInstanceOf[Target]
+  }
+}
+

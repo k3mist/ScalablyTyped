@@ -126,3 +126,40 @@ trait XSlideShowView
   def setMouseCursor(nPointerShape: scala.Double): scala.Unit
 }
 
+object XSlideShowView {
+  @scala.inline
+  def apply(
+    Canvas: activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XSpriteCanvas,
+    CanvasArea: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    Transformation: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
+    TranslationOffset: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    acquire: js.Function0[scala.Unit],
+    addMouseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseListener, scala.Unit],
+    addMouseMotionListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseMotionListener, 
+      scala.Unit
+    ],
+    addPaintListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XPaintListener, scala.Unit],
+    addTransformationChangedListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    getCanvas: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XSpriteCanvas],
+    getCanvasArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getTransformation: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D],
+    getTranslationOffset: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeMouseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseListener, scala.Unit],
+    removeMouseMotionListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMouseMotionListener, 
+      scala.Unit
+    ],
+    removePaintListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XPaintListener, scala.Unit],
+    removeTransformationChangedListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    setMouseCursor: js.Function1[scala.Double, scala.Unit]
+  ): XSlideShowView = {
+    val __obj = js.Dynamic.literal(Canvas = Canvas, CanvasArea = CanvasArea, Transformation = Transformation, TranslationOffset = TranslationOffset, acquire = acquire, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addTransformationChangedListener = addTransformationChangedListener, clear = clear, getCanvas = getCanvas, getCanvasArea = getCanvasArea, getTransformation = getTransformation, getTranslationOffset = getTranslationOffset, queryInterface = queryInterface, release = release, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeTransformationChangedListener = removeTransformationChangedListener, setMouseCursor = setMouseCursor)
+  
+    __obj.asInstanceOf[XSlideShowView]
+  }
+}
+

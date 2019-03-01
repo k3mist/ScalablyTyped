@@ -25,3 +25,18 @@ trait AddControlNotificationOptions extends js.Object {
   var uniqueId: java.lang.String
 }
 
+object AddControlNotificationOptions {
+  @scala.inline
+  def apply(
+    messages: js.Array[java.lang.String],
+    uniqueId: java.lang.String,
+    actions: js.Array[ControlNotificationAction] = null,
+    notificationLevel: NotificationLevel = null
+  ): AddControlNotificationOptions = {
+    val __obj = js.Dynamic.literal(messages = messages, uniqueId = uniqueId)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (notificationLevel != null) __obj.updateDynamic("notificationLevel")(notificationLevel)
+    __obj.asInstanceOf[AddControlNotificationOptions]
+  }
+}
+

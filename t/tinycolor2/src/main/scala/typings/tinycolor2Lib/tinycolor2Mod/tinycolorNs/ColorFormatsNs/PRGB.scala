@@ -12,3 +12,12 @@ trait PRGB
   var r: java.lang.String
 }
 
+object PRGB {
+  @scala.inline
+  def apply(b: java.lang.String, g: java.lang.String, r: java.lang.String): PRGB = {
+    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+  
+    __obj.asInstanceOf[PRGB]
+  }
+}
+

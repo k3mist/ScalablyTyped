@@ -13,3 +13,12 @@ trait TextContent extends js.Object {
   var text_elements: js.Array[TextElement]
 }
 
+object TextContent {
+  @scala.inline
+  def apply(lists: js.Array[java.lang.String], text_elements: js.Array[TextElement]): TextContent = {
+    val __obj = js.Dynamic.literal(lists = lists, text_elements = text_elements)
+  
+    __obj.asInstanceOf[TextContent]
+  }
+}
+

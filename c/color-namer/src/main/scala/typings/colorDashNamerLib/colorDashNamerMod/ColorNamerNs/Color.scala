@@ -11,3 +11,12 @@ trait Color extends js.Object {
   var name: java.lang.String
 }
 
+object Color {
+  @scala.inline
+  def apply(distance: scala.Double, hex: java.lang.String, name: java.lang.String): Color = {
+    val __obj = js.Dynamic.literal(distance = distance, hex = hex, name = name)
+  
+    __obj.asInstanceOf[Color]
+  }
+}
+

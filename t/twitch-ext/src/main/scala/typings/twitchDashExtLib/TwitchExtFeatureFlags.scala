@@ -13,3 +13,12 @@ trait TwitchExtFeatureFlags extends js.Object {
   var isChatEnabled: scala.Boolean
 }
 
+object TwitchExtFeatureFlags {
+  @scala.inline
+  def apply(isChatEnabled: scala.Boolean): TwitchExtFeatureFlags = {
+    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled)
+  
+    __obj.asInstanceOf[TwitchExtFeatureFlags]
+  }
+}
+

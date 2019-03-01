@@ -12,3 +12,12 @@ trait Anon_IsWindowClosing extends js.Object {
   var windowId: scala.Double
 }
 
+object Anon_IsWindowClosing {
+  @scala.inline
+  def apply(isWindowClosing: scala.Boolean, windowId: scala.Double): Anon_IsWindowClosing = {
+    val __obj = js.Dynamic.literal(isWindowClosing = isWindowClosing, windowId = windowId)
+  
+    __obj.asInstanceOf[Anon_IsWindowClosing]
+  }
+}
+

@@ -21,3 +21,26 @@ trait URI2HKT2[L, A] extends js.Object {
   var Writer: fpDashTsLib.libWriterMod.Writer[L, A]
 }
 
+object URI2HKT2 {
+  @scala.inline
+  def apply[L, A](
+    Const: fpDashTsLib.libConstMod.Const[L, A],
+    Either: fpDashTsLib.libEitherMod.Either[L, A],
+    Free: fpDashTsLib.libFreeMod.Free[L, A],
+    IOEither: fpDashTsLib.libIOEitherMod.IOEither[L, A],
+    Map: stdLib.Map[L, A],
+    Reader: fpDashTsLib.libReaderMod.Reader[L, A],
+    State: fpDashTsLib.libStateMod.State[L, A],
+    Store: fpDashTsLib.libStoreMod.Store[L, A],
+    TaskEither: fpDashTsLib.libTaskEitherMod.TaskEither[L, A],
+    These: fpDashTsLib.libTheseMod.These[L, A],
+    Tuple: fpDashTsLib.libTupleMod.Tuple[L, A],
+    Validation: fpDashTsLib.libValidationMod.Validation[L, A],
+    Writer: fpDashTsLib.libWriterMod.Writer[L, A]
+  ): URI2HKT2[L, A] = {
+    val __obj = js.Dynamic.literal(Const = Const, Either = Either, Free = Free.asInstanceOf[js.Any], IOEither = IOEither, Map = Map, Reader = Reader, State = State, Store = Store, TaskEither = TaskEither, These = These, Tuple = Tuple, Validation = Validation, Writer = Writer)
+  
+    __obj.asInstanceOf[URI2HKT2[L, A]]
+  }
+}
+

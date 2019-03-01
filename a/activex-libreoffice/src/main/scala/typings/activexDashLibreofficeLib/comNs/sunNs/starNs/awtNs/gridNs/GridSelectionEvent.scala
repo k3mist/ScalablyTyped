@@ -18,3 +18,16 @@ trait GridSelectionEvent
   var SelectedRowIndexes: activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object GridSelectionEvent {
+  @scala.inline
+  def apply(
+    SelectedColumnIndexes: activexDashInteropLib.SafeArray[scala.Double],
+    SelectedRowIndexes: activexDashInteropLib.SafeArray[scala.Double],
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): GridSelectionEvent = {
+    val __obj = js.Dynamic.literal(SelectedColumnIndexes = SelectedColumnIndexes, SelectedRowIndexes = SelectedRowIndexes, Source = Source)
+  
+    __obj.asInstanceOf[GridSelectionEvent]
+  }
+}
+

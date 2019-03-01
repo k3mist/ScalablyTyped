@@ -90,3 +90,26 @@ trait LocatorAddressToLocationsParams
   var searchExtent: Extent
 }
 
+object LocatorAddressToLocationsParams {
+  @scala.inline
+  def apply(
+    address: js.Any,
+    categories: js.Array[java.lang.String],
+    constructor: js.Function,
+    countryCode: java.lang.String,
+    distance: scala.Double,
+    forStorage: scala.Boolean,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    location: Point,
+    magicKey: java.lang.String,
+    maxLocations: scala.Double,
+    outFields: js.Array[java.lang.String],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    searchExtent: Extent
+  ): LocatorAddressToLocationsParams = {
+    val __obj = js.Dynamic.literal(address = address, categories = categories, constructor = constructor, countryCode = countryCode, distance = distance, forStorage = forStorage, hasOwnProperty = hasOwnProperty, location = location, magicKey = magicKey, maxLocations = maxLocations, outFields = outFields, propertyIsEnumerable = propertyIsEnumerable, searchExtent = searchExtent)
+  
+    __obj.asInstanceOf[LocatorAddressToLocationsParams]
+  }
+}
+

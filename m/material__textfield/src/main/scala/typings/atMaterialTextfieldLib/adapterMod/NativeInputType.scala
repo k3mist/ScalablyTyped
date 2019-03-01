@@ -12,3 +12,17 @@ trait NativeInputType extends js.Object {
   var value: java.lang.String
 }
 
+object NativeInputType {
+  @scala.inline
+  def apply(
+    badInput: scala.Boolean,
+    disabled: scala.Boolean,
+    validity: atMaterialTextfieldLib.Anon_BadInput,
+    value: java.lang.String
+  ): NativeInputType = {
+    val __obj = js.Dynamic.literal(badInput = badInput, disabled = disabled, validity = validity, value = value)
+  
+    __obj.asInstanceOf[NativeInputType]
+  }
+}
+

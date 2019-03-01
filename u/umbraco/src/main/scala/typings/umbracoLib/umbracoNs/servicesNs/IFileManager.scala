@@ -49,3 +49,16 @@ trait IFileManager extends js.Object {
   def setFiles(propertyAlias: java.lang.String, files: js.Array[IFile]): scala.Unit
 }
 
+object IFileManager {
+  @scala.inline
+  def apply(
+    clearFiles: js.Function0[scala.Unit],
+    getFiles: js.Function0[js.Array[IFile]],
+    setFiles: js.Function2[java.lang.String, js.Array[IFile], scala.Unit]
+  ): IFileManager = {
+    val __obj = js.Dynamic.literal(clearFiles = clearFiles, getFiles = getFiles, setFiles = setFiles)
+  
+    __obj.asInstanceOf[IFileManager]
+  }
+}
+

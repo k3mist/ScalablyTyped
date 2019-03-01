@@ -12,3 +12,17 @@ trait ViewState extends js.Object {
   var rotation: scala.Double
 }
 
+object ViewState {
+  @scala.inline
+  def apply(
+    center: openlayersLib.openlayersMod.Coordinate,
+    projection: openlayersLib.openlayersMod.projNs.Projection,
+    resolution: scala.Double,
+    rotation: scala.Double
+  ): ViewState = {
+    val __obj = js.Dynamic.literal(center = center, projection = projection, resolution = resolution, rotation = rotation)
+  
+    __obj.asInstanceOf[ViewState]
+  }
+}
+

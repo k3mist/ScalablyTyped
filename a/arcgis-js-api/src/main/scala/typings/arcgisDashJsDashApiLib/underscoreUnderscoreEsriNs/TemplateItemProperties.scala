@@ -32,3 +32,20 @@ trait TemplateItemProperties extends js.Object {
   var template: js.UndefOr[FeatureTemplateProperties] = js.undefined
 }
 
+object TemplateItemProperties {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    label: java.lang.String = null,
+    layer: FeatureLayerProperties = null,
+    template: FeatureTemplateProperties = null
+  ): TemplateItemProperties = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[TemplateItemProperties]
+  }
+}
+

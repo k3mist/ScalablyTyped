@@ -10,3 +10,12 @@ trait IdentifierTransform extends _Transform {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.identifier
 }
 
+object IdentifierTransform {
+  @scala.inline
+  def apply(as: java.lang.String, `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.identifier): IdentifierTransform = {
+    val __obj = js.Dynamic.literal(as = as, `type` = `type`)
+  
+    __obj.asInstanceOf[IdentifierTransform]
+  }
+}
+

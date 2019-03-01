@@ -29,3 +29,18 @@ trait TermQuery extends Query {
   def toJSON(): js.Any
 }
 
+object TermQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[stdLib.Number, TermQuery],
+    field: js.Function1[java.lang.String, TermQuery],
+    term: js.Function1[java.lang.String, TermQuery],
+    toJSON: js.Function0[js.Any]
+  ): TermQuery = {
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, term = term, toJSON = toJSON)
+  
+    __obj.asInstanceOf[TermQuery]
+  }
+}
+

@@ -19,3 +19,12 @@ trait PluginNameVersion extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PluginNameVersion {
+  @scala.inline
+  def apply(name: java.lang.String, version: java.lang.String = null): PluginNameVersion = {
+    val __obj = js.Dynamic.literal(name = name)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PluginNameVersion]
+  }
+}
+

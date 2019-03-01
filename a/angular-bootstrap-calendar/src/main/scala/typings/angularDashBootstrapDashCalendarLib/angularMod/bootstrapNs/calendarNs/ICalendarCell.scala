@@ -17,3 +17,22 @@ trait ICalendarCell extends js.Object {
   var label: scala.Double
 }
 
+object ICalendarCell {
+  @scala.inline
+  def apply(
+    badgeTotal: scala.Double,
+    date: momentLib.momentMod.momentNs.Moment,
+    events: js.Array[IEvent],
+    inMonth: scala.Boolean,
+    isFuture: scala.Boolean,
+    isPast: scala.Boolean,
+    isToday: scala.Boolean,
+    isWeekend: scala.Boolean,
+    label: scala.Double
+  ): ICalendarCell = {
+    val __obj = js.Dynamic.literal(badgeTotal = badgeTotal, date = date, events = events, inMonth = inMonth, isFuture = isFuture, isPast = isPast, isToday = isToday, isWeekend = isWeekend, label = label)
+  
+    __obj.asInstanceOf[ICalendarCell]
+  }
+}
+

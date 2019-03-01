@@ -20,3 +20,12 @@ trait GetResourceResult extends js.Object {
   val pathPart: java.lang.String
 }
 
+object GetResourceResult {
+  @scala.inline
+  def apply(id: java.lang.String, parentId: java.lang.String, pathPart: java.lang.String): GetResourceResult = {
+    val __obj = js.Dynamic.literal(id = id, parentId = parentId, pathPart = pathPart)
+  
+    __obj.asInstanceOf[GetResourceResult]
+  }
+}
+

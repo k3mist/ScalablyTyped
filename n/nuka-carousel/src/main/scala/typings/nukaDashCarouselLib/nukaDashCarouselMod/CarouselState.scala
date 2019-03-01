@@ -51,3 +51,26 @@ trait CarouselState extends js.Object {
   var wrapToIndex: scala.Boolean
 }
 
+object CarouselState {
+  @scala.inline
+  def apply(
+    currentSlide: scala.Double,
+    dragging: scala.Boolean,
+    easing: java.lang.String,
+    frameWidth: scala.Double,
+    isWrappingAround: scala.Boolean,
+    left: scala.Double,
+    pauseOnHover: scala.Boolean,
+    resetWrapAroundPosition: scala.Boolean,
+    slideCount: scala.Double,
+    slideWidth: CarouselSlideWidthProp,
+    slidesToScroll: scala.Double,
+    top: scala.Double,
+    wrapToIndex: scala.Boolean
+  ): CarouselState = {
+    val __obj = js.Dynamic.literal(currentSlide = currentSlide, dragging = dragging, easing = easing, frameWidth = frameWidth, isWrappingAround = isWrappingAround, left = left, pauseOnHover = pauseOnHover, resetWrapAroundPosition = resetWrapAroundPosition, slideCount = slideCount, slideWidth = slideWidth.asInstanceOf[js.Any], slidesToScroll = slidesToScroll, top = top, wrapToIndex = wrapToIndex)
+  
+    __obj.asInstanceOf[CarouselState]
+  }
+}
+

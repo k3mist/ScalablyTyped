@@ -12,3 +12,12 @@ trait BranchUpdatedEvent extends RealTimePullRequestEvent {
   var isSourceUpdate: scala.Boolean
 }
 
+object BranchUpdatedEvent {
+  @scala.inline
+  def apply(eventId: java.lang.String, isSourceUpdate: scala.Boolean, pullRequestId: scala.Double): BranchUpdatedEvent = {
+    val __obj = js.Dynamic.literal(eventId = eventId, isSourceUpdate = isSourceUpdate, pullRequestId = pullRequestId)
+  
+    __obj.asInstanceOf[BranchUpdatedEvent]
+  }
+}
+

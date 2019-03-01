@@ -11,3 +11,12 @@ trait RegisteredUserScript extends js.Object {
   def unregister(): js.Promise[_]
 }
 
+object RegisteredUserScript {
+  @scala.inline
+  def apply(unregister: js.Function0[js.Promise[_]]): RegisteredUserScript = {
+    val __obj = js.Dynamic.literal(unregister = unregister)
+  
+    __obj.asInstanceOf[RegisteredUserScript]
+  }
+}
+

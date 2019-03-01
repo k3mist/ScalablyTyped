@@ -27,3 +27,12 @@ trait TimeIncrement extends js.Object {
   var TimeResolution: js.Any
 }
 
+object TimeIncrement {
+  @scala.inline
+  def apply(MajorTimeInterval: js.Any, MinorTimeInterval: js.Any, TimeResolution: js.Any): TimeIncrement = {
+    val __obj = js.Dynamic.literal(MajorTimeInterval = MajorTimeInterval, MinorTimeInterval = MinorTimeInterval, TimeResolution = TimeResolution)
+  
+    __obj.asInstanceOf[TimeIncrement]
+  }
+}
+

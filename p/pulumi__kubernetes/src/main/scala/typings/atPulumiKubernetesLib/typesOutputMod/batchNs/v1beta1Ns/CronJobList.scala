@@ -34,3 +34,17 @@ trait CronJobList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object CronJobList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`,
+    items: js.Array[CronJob],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJobList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): CronJobList = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
+    __obj.asInstanceOf[CronJobList]
+  }
+}
+

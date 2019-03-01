@@ -42,3 +42,22 @@ trait IEvent
   var `type`: java.lang.String
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    api_version: java.lang.String,
+    created: scala.Double,
+    data: stripeLib.Anon_Object,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: stripeLib.stripeLibStrings.event,
+    pending_webhooks: scala.Double,
+    `type`: java.lang.String,
+    request: java.lang.String = null
+  ): IEvent = {
+    val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, `object` = `object`, pending_webhooks = pending_webhooks, `type` = `type`)
+    if (request != null) __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

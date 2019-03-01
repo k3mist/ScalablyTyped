@@ -22,3 +22,18 @@ trait XDictionaryEventListener
   def processDictionaryEvent(aDicEvent: DictionaryEvent): scala.Unit
 }
 
+object XDictionaryEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    processDictionaryEvent: js.Function1[DictionaryEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDictionaryEventListener = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, processDictionaryEvent = processDictionaryEvent, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XDictionaryEventListener]
+  }
+}
+

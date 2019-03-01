@@ -12,3 +12,12 @@ trait Anon_GRID extends js.Object {
   var LIST: java.lang.String
 }
 
+object Anon_GRID {
+  @scala.inline
+  def apply(GRID: java.lang.String, LIST: java.lang.String): Anon_GRID = {
+    val __obj = js.Dynamic.literal(GRID = GRID, LIST = LIST)
+  
+    __obj.asInstanceOf[Anon_GRID]
+  }
+}
+

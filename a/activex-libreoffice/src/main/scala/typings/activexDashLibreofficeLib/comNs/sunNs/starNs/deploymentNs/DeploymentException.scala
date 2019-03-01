@@ -15,3 +15,16 @@ trait DeploymentException
   var Cause: js.Any
 }
 
+object DeploymentException {
+  @scala.inline
+  def apply(
+    Cause: js.Any,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): DeploymentException = {
+    val __obj = js.Dynamic.literal(Cause = Cause, Context = Context, Message = Message)
+  
+    __obj.asInstanceOf[DeploymentException]
+  }
+}
+

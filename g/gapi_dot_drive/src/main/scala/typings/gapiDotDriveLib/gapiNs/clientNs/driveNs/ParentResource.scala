@@ -13,3 +13,18 @@ trait ParentResource extends js.Object {
   var selfLink: java.lang.String
 }
 
+object ParentResource {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    isRoot: scala.Boolean,
+    kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#parentReference`,
+    parentLink: java.lang.String,
+    selfLink: java.lang.String
+  ): ParentResource = {
+    val __obj = js.Dynamic.literal(id = id, isRoot = isRoot, kind = kind, parentLink = parentLink, selfLink = selfLink)
+  
+    __obj.asInstanceOf[ParentResource]
+  }
+}
+

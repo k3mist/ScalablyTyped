@@ -13,3 +13,18 @@ trait NumeralJSOptions extends js.Object {
   var zeroFormat: java.lang.String
 }
 
+object NumeralJSOptions {
+  @scala.inline
+  def apply(
+    currentLocale: java.lang.String,
+    defaultFormat: java.lang.String,
+    nullFormat: java.lang.String,
+    scalePercentBy100: scala.Boolean,
+    zeroFormat: java.lang.String
+  ): NumeralJSOptions = {
+    val __obj = js.Dynamic.literal(currentLocale = currentLocale, defaultFormat = defaultFormat, nullFormat = nullFormat, scalePercentBy100 = scalePercentBy100, zeroFormat = zeroFormat)
+  
+    __obj.asInstanceOf[NumeralJSOptions]
+  }
+}
+

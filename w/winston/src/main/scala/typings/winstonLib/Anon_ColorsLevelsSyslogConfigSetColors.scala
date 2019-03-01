@@ -10,3 +10,15 @@ trait Anon_ColorsLevelsSyslogConfigSetColors extends js.Object {
   var levels: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetLevels
 }
 
+object Anon_ColorsLevelsSyslogConfigSetColors {
+  @scala.inline
+  def apply(
+    colors: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetColors,
+    levels: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetLevels
+  ): Anon_ColorsLevelsSyslogConfigSetColors = {
+    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+  
+    __obj.asInstanceOf[Anon_ColorsLevelsSyslogConfigSetColors]
+  }
+}
+

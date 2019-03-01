@@ -41,3 +41,29 @@ trait XImplementationLoader
   ): scala.Boolean
 }
 
+object XImplementationLoader {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    activate: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeRegistryInfo: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.registryNs.XRegistryKey, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Boolean
+    ]
+  ): XImplementationLoader = {
+    val __obj = js.Dynamic.literal(acquire = acquire, activate = activate, queryInterface = queryInterface, release = release, writeRegistryInfo = writeRegistryInfo)
+  
+    __obj.asInstanceOf[XImplementationLoader]
+  }
+}
+

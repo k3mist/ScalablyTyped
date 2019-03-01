@@ -12,3 +12,12 @@ trait AudioBoolean extends js.Object {
   var wav: java.lang.String
 }
 
+object AudioBoolean {
+  @scala.inline
+  def apply(m4a: java.lang.String, mp3: java.lang.String, ogg: java.lang.String, wav: java.lang.String): AudioBoolean = {
+    val __obj = js.Dynamic.literal(m4a = m4a, mp3 = mp3, ogg = ogg, wav = wav)
+  
+    __obj.asInstanceOf[AudioBoolean]
+  }
+}
+

@@ -20,3 +20,19 @@ trait XNamed
   def setName(aName: java.lang.String): scala.Unit
 }
 
+object XNamed {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit]
+  ): XNamed = {
+    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, getName = getName, queryInterface = queryInterface, release = release, setName = setName)
+  
+    __obj.asInstanceOf[XNamed]
+  }
+}
+

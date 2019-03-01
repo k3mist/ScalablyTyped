@@ -33,3 +33,19 @@ trait CertificatePrincipal extends js.Object {
   var state: java.lang.String
 }
 
+object CertificatePrincipal {
+  @scala.inline
+  def apply(
+    commonName: java.lang.String,
+    country: java.lang.String,
+    locality: java.lang.String,
+    organizationUnits: js.Array[java.lang.String],
+    organizations: js.Array[java.lang.String],
+    state: java.lang.String
+  ): CertificatePrincipal = {
+    val __obj = js.Dynamic.literal(commonName = commonName, country = country, locality = locality, organizationUnits = organizationUnits, organizations = organizations, state = state)
+  
+    __obj.asInstanceOf[CertificatePrincipal]
+  }
+}
+

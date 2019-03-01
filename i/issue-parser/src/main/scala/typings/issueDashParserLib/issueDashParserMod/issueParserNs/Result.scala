@@ -12,3 +12,17 @@ trait Result extends js.Object {
   var refs: js.Array[Reference]
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    actions: Actions,
+    allRefs: js.Array[Reference | Action],
+    mentions: js.Array[Mention],
+    refs: js.Array[Reference]
+  ): Result = {
+    val __obj = js.Dynamic.literal(actions = actions, allRefs = allRefs, mentions = mentions, refs = refs)
+  
+    __obj.asInstanceOf[Result]
+  }
+}
+

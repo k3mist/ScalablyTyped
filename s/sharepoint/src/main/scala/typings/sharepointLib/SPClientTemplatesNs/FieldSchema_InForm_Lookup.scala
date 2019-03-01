@@ -26,3 +26,35 @@ trait FieldSchema_InForm_Lookup extends FieldSchema_InForm {
   var Throttled: scala.Boolean
 }
 
+object FieldSchema_InForm_Lookup {
+  @scala.inline
+  def apply(
+    AllowGridEditing: scala.Boolean,
+    AllowMultipleValues: scala.Boolean,
+    BaseDisplayFormUrl: java.lang.String,
+    ChoiceCount: scala.Double,
+    Choices: js.Array[sharepointLib.Anon_LookupId],
+    DependentLookup: scala.Boolean,
+    Description: java.lang.String,
+    Direction: java.lang.String,
+    FieldType: java.lang.String,
+    Hidden: scala.Boolean,
+    IMEMode: js.Any,
+    Id: java.lang.String,
+    LookupListId: java.lang.String,
+    MaxQueryResult: java.lang.String,
+    Name: java.lang.String,
+    ReadOnlyField: scala.Boolean,
+    Required: scala.Boolean,
+    RestrictedMode: scala.Boolean,
+    Throttled: scala.Boolean,
+    Title: java.lang.String,
+    Type: java.lang.String,
+    UseMinWidth: scala.Boolean
+  ): FieldSchema_InForm_Lookup = {
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, AllowMultipleValues = AllowMultipleValues, BaseDisplayFormUrl = BaseDisplayFormUrl, ChoiceCount = ChoiceCount, Choices = Choices, DependentLookup = DependentLookup, Description = Description, Direction = Direction, FieldType = FieldType, Hidden = Hidden, IMEMode = IMEMode, Id = Id, LookupListId = LookupListId, MaxQueryResult = MaxQueryResult, Name = Name, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, Throttled = Throttled, Title = Title, Type = Type, UseMinWidth = UseMinWidth)
+  
+    __obj.asInstanceOf[FieldSchema_InForm_Lookup]
+  }
+}
+

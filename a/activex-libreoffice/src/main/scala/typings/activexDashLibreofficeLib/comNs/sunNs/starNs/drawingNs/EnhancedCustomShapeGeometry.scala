@@ -50,3 +50,24 @@ trait EnhancedCustomShapeGeometry extends js.Object {
   var ViewBox: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
 }
 
+object EnhancedCustomShapeGeometry {
+  @scala.inline
+  def apply(
+    AdjustmentValues: activexDashInteropLib.SafeArray[EnhancedCustomShapeAdjustmentValue],
+    Equations: activexDashInteropLib.SafeArray[java.lang.String],
+    Extrusion: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Handles: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
+    MirroredX: scala.Boolean,
+    MirroredY: scala.Boolean,
+    Path: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TextPath: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TextRotateAngle: scala.Double,
+    Type: java.lang.String,
+    ViewBox: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
+  ): EnhancedCustomShapeGeometry = {
+    val __obj = js.Dynamic.literal(AdjustmentValues = AdjustmentValues, Equations = Equations, Extrusion = Extrusion, Handles = Handles, MirroredX = MirroredX, MirroredY = MirroredY, Path = Path, TextPath = TextPath, TextRotateAngle = TextRotateAngle, Type = Type, ViewBox = ViewBox)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeGeometry]
+  }
+}
+

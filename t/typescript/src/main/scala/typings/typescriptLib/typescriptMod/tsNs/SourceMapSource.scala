@@ -12,3 +12,17 @@ trait SourceMapSource extends js.Object {
   def getLineAndCharacterOfPosition(pos: scala.Double): LineAndCharacter
 }
 
+object SourceMapSource {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    getLineAndCharacterOfPosition: js.Function1[scala.Double, LineAndCharacter],
+    text: java.lang.String,
+    skipTrivia: js.Function1[/* pos */ scala.Double, scala.Double] = null
+  ): SourceMapSource = {
+    val __obj = js.Dynamic.literal(fileName = fileName, getLineAndCharacterOfPosition = getLineAndCharacterOfPosition, text = text)
+    if (skipTrivia != null) __obj.updateDynamic("skipTrivia")(skipTrivia)
+    __obj.asInstanceOf[SourceMapSource]
+  }
+}
+

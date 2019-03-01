@@ -11,3 +11,12 @@ trait Bounds extends js.Object {
   var sw: Point
 }
 
+object Bounds {
+  @scala.inline
+  def apply(ne: Point, sw: Point): Bounds = {
+    val __obj = js.Dynamic.literal(ne = ne, sw = sw)
+  
+    __obj.asInstanceOf[Bounds]
+  }
+}
+

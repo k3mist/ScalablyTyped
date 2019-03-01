@@ -17,3 +17,12 @@ trait Separator
   var `type`: java.lang.String
 }
 
+object Separator {
+  @scala.inline
+  def apply(line: java.lang.String, toString: js.Function0[java.lang.String], `type`: java.lang.String): Separator = {
+    val __obj = js.Dynamic.literal(line = line, toString = toString, `type` = `type`)
+  
+    __obj.asInstanceOf[Separator]
+  }
+}
+

@@ -16,3 +16,19 @@ trait ASPxClientWilliamsR extends ASPxSeparatePaneIndicator {
   var pointsCount: scala.Double
 }
 
+object ASPxClientWilliamsR {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    pane: java.lang.String,
+    pointsCount: scala.Double,
+    series: ASPxClientSeries
+  ): ASPxClientWilliamsR = {
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, name = name, pane = pane, pointsCount = pointsCount, series = series)
+  
+    __obj.asInstanceOf[ASPxClientWilliamsR]
+  }
+}
+

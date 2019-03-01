@@ -10,3 +10,15 @@ trait Anon_Orientationchange extends js.Object {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.orientationchange
 }
 
+object Anon_Orientationchange {
+  @scala.inline
+  def apply(
+    source: vegaDashTypingsLib.vegaDashTypingsLibStrings.window,
+    `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.orientationchange
+  ): Anon_Orientationchange = {
+    val __obj = js.Dynamic.literal(source = source, `type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Orientationchange]
+  }
+}
+

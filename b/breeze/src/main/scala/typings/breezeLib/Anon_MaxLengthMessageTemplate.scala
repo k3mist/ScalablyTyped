@@ -11,3 +11,12 @@ trait Anon_MaxLengthMessageTemplate extends js.Object {
   var minLength: scala.Double
 }
 
+object Anon_MaxLengthMessageTemplate {
+  @scala.inline
+  def apply(maxLength: scala.Double, minLength: scala.Double, messageTemplate: java.lang.String = null): Anon_MaxLengthMessageTemplate = {
+    val __obj = js.Dynamic.literal(maxLength = maxLength, minLength = minLength)
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
+    __obj.asInstanceOf[Anon_MaxLengthMessageTemplate]
+  }
+}
+

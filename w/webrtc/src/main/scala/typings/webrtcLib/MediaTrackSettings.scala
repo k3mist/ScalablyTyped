@@ -18,3 +18,12 @@ trait MediaTrackSettings extends js.Object {
   var latency: scala.Double
 }
 
+object MediaTrackSettings {
+  @scala.inline
+  def apply(latency: scala.Double): MediaTrackSettings = {
+    val __obj = js.Dynamic.literal(latency = latency)
+  
+    __obj.asInstanceOf[MediaTrackSettings]
+  }
+}
+

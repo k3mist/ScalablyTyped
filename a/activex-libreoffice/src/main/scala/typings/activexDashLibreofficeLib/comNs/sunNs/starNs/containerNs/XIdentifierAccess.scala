@@ -20,3 +20,22 @@ trait XIdentifierAccess extends XElementAccess {
   def getIdentifiers(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XIdentifierAccess {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getByIdentifier: js.Function1[scala.Double, js.Any],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getIdentifiers: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdentifierAccess = {
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XIdentifierAccess]
+  }
+}
+

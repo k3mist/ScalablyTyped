@@ -28,3 +28,21 @@ trait GetRouteTableResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetRouteTableResult {
+  @scala.inline
+  def apply(
+    associations: js.Array[atPulumiAwsLib.Anon_Main],
+    id: java.lang.String,
+    ownerId: java.lang.String,
+    routeTableId: java.lang.String,
+    routes: js.Array[atPulumiAwsLib.Anon_CidrBlockEgressOnlyGatewayIdGatewayId],
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetRouteTableResult = {
+    val __obj = js.Dynamic.literal(associations = associations, id = id, ownerId = ownerId, routeTableId = routeTableId, routes = routes, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
+    __obj.asInstanceOf[GetRouteTableResult]
+  }
+}
+

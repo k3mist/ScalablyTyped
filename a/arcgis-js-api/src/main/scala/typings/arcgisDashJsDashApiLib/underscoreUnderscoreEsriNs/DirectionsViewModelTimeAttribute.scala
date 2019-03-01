@@ -21,3 +21,18 @@ trait DirectionsViewModelTimeAttribute
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DirectionsViewModelTimeAttribute {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    name: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    units: java.lang.String = null
+  ): DirectionsViewModelTimeAttribute = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[DirectionsViewModelTimeAttribute]
+  }
+}
+

@@ -10,3 +10,12 @@ trait IncompleteType extends FlowType {
   var `type`: Type
 }
 
+object IncompleteType {
+  @scala.inline
+  def apply(flags: TypeFlags, `type`: Type): IncompleteType = {
+    val __obj = js.Dynamic.literal(flags = flags, `type` = `type`)
+  
+    __obj.asInstanceOf[IncompleteType]
+  }
+}
+

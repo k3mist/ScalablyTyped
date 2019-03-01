@@ -70,3 +70,41 @@ trait XAnimatedImages
   ): scala.Unit
 }
 
+object XAnimatedImages {
+  @scala.inline
+  def apply(
+    AutoRepeat: scala.Boolean,
+    ImageSetCount: scala.Double,
+    ScaleMode: scala.Double,
+    StepTime: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    getImageSet: js.Function1[scala.Double, activexDashInteropLib.SafeArray[java.lang.String]],
+    getImageSetCount: js.Function0[scala.Double],
+    insertImageSet: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeImageSet: js.Function1[scala.Double, scala.Unit],
+    replaceImageSet: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ]
+  ): XAnimatedImages = {
+    val __obj = js.Dynamic.literal(AutoRepeat = AutoRepeat, ImageSetCount = ImageSetCount, ScaleMode = ScaleMode, StepTime = StepTime, acquire = acquire, addContainerListener = addContainerListener, getImageSet = getImageSet, getImageSetCount = getImageSetCount, insertImageSet = insertImageSet, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener, removeImageSet = removeImageSet, replaceImageSet = replaceImageSet)
+  
+    __obj.asInstanceOf[XAnimatedImages]
+  }
+}
+

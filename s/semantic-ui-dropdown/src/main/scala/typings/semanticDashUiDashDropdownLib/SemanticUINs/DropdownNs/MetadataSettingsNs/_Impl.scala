@@ -28,3 +28,18 @@ trait _Impl extends js.Object {
   var value: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    defaultText: java.lang.String,
+    defaultValue: java.lang.String,
+    placeholderText: java.lang.String,
+    text: java.lang.String,
+    value: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(defaultText = defaultText, defaultValue = defaultValue, placeholderText = placeholderText, text = text, value = value)
+  
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

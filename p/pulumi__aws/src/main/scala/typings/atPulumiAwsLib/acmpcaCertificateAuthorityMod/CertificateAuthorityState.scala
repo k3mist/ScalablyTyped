@@ -66,3 +66,38 @@ trait CertificateAuthorityState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object CertificateAuthorityState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificate: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateAuthorityConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyAlgorithmSigningAlgorithm] = null,
+    certificateChain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    certificateSigningRequest: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    notAfter: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    notBefore: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    revocationConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CrlConfigurationAnonCustomCnameEnabled] = null,
+    serial: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): CertificateAuthorityState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (certificateAuthorityConfiguration != null) __obj.updateDynamic("certificateAuthorityConfiguration")(certificateAuthorityConfiguration.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (certificateSigningRequest != null) __obj.updateDynamic("certificateSigningRequest")(certificateSigningRequest.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter.asInstanceOf[js.Any])
+    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
+    if (revocationConfiguration != null) __obj.updateDynamic("revocationConfiguration")(revocationConfiguration.asInstanceOf[js.Any])
+    if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateAuthorityState]
+  }
+}
+

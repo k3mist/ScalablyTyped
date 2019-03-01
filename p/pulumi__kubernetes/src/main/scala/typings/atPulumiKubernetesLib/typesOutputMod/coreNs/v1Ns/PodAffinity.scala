@@ -31,3 +31,15 @@ trait PodAffinity extends js.Object {
   val requiredDuringSchedulingIgnoredDuringExecution: js.Array[PodAffinityTerm]
 }
 
+object PodAffinity {
+  @scala.inline
+  def apply(
+    preferredDuringSchedulingIgnoredDuringExecution: js.Array[WeightedPodAffinityTerm],
+    requiredDuringSchedulingIgnoredDuringExecution: js.Array[PodAffinityTerm]
+  ): PodAffinity = {
+    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution, requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution)
+  
+    __obj.asInstanceOf[PodAffinity]
+  }
+}
+

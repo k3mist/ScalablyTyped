@@ -44,3 +44,23 @@ trait XView
   def setZoom(fZoomX: scala.Double, fZoomY: scala.Double): scala.Unit
 }
 
+object XView {
+  @scala.inline
+  def apply(
+    Graphics: XGraphics,
+    Size: Size,
+    acquire: js.Function0[scala.Unit],
+    draw: js.Function2[scala.Double, scala.Double, scala.Unit],
+    getGraphics: js.Function0[XGraphics],
+    getSize: js.Function0[Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setGraphics: js.Function1[XGraphics, scala.Boolean],
+    setZoom: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XView = {
+    val __obj = js.Dynamic.literal(Graphics = Graphics, Size = Size, acquire = acquire, draw = draw, getGraphics = getGraphics, getSize = getSize, queryInterface = queryInterface, release = release, setGraphics = setGraphics, setZoom = setZoom)
+  
+    __obj.asInstanceOf[XView]
+  }
+}
+

@@ -31,3 +31,21 @@ trait TableBorderDistances extends js.Object {
   var TopDistance: scala.Double
 }
 
+object TableBorderDistances {
+  @scala.inline
+  def apply(
+    BottomDistance: scala.Double,
+    IsBottomDistanceValid: scala.Boolean,
+    IsLeftDistanceValid: scala.Boolean,
+    IsRightDistanceValid: scala.Boolean,
+    IsTopDistanceValid: scala.Boolean,
+    LeftDistance: scala.Double,
+    RightDistance: scala.Double,
+    TopDistance: scala.Double
+  ): TableBorderDistances = {
+    val __obj = js.Dynamic.literal(BottomDistance = BottomDistance, IsBottomDistanceValid = IsBottomDistanceValid, IsLeftDistanceValid = IsLeftDistanceValid, IsRightDistanceValid = IsRightDistanceValid, IsTopDistanceValid = IsTopDistanceValid, LeftDistance = LeftDistance, RightDistance = RightDistance, TopDistance = TopDistance)
+  
+    __obj.asInstanceOf[TableBorderDistances]
+  }
+}
+

@@ -88,3 +88,75 @@ import scala.scalajs.js.annotation._
   var variant: js.UndefOr[js.Array[SequenceVariant]] = js.undefined
 }
 
+object Sequence {
+  @scala.inline
+  def apply(
+    coordinateSystem: integer,
+    _coordinateSystem: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _observedSeq: Element = null,
+    _readCoverage: Element = null,
+    _resourceType: Element = null,
+    _type: Element = null,
+    contained: js.Array[Resource] = null,
+    device: Reference = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    observedSeq: java.lang.String = null,
+    patient: Reference = null,
+    performer: Reference = null,
+    pointer: js.Array[Reference] = null,
+    quality: js.Array[SequenceQuality] = null,
+    quantity: Quantity = null,
+    readCoverage: js.UndefOr[integer] = js.undefined,
+    referenceSeq: SequenceReferenceSeq = null,
+    repository: js.Array[SequenceRepository] = null,
+    resourceType: code = null,
+    specimen: Reference = null,
+    text: Narrative = null,
+    `type`: code = null,
+    variant: js.Array[SequenceVariant] = null
+  ): Sequence = {
+    val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem)
+    if (_coordinateSystem != null) __obj.updateDynamic("_coordinateSystem")(_coordinateSystem)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_observedSeq != null) __obj.updateDynamic("_observedSeq")(_observedSeq)
+    if (_readCoverage != null) __obj.updateDynamic("_readCoverage")(_readCoverage)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (observedSeq != null) __obj.updateDynamic("observedSeq")(observedSeq)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (!js.isUndefined(readCoverage)) __obj.updateDynamic("readCoverage")(readCoverage)
+    if (referenceSeq != null) __obj.updateDynamic("referenceSeq")(referenceSeq)
+    if (repository != null) __obj.updateDynamic("repository")(repository)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (specimen != null) __obj.updateDynamic("specimen")(specimen)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[Sequence]
+  }
+}
+

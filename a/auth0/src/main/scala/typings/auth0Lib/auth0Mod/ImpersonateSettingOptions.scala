@@ -12,3 +12,17 @@ trait ImpersonateSettingOptions extends js.Object {
   var token: java.lang.String
 }
 
+object ImpersonateSettingOptions {
+  @scala.inline
+  def apply(
+    impersonator_id: java.lang.String,
+    protocol: java.lang.String,
+    token: java.lang.String,
+    clientId: java.lang.String = null
+  ): ImpersonateSettingOptions = {
+    val __obj = js.Dynamic.literal(impersonator_id = impersonator_id, protocol = protocol, token = token)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    __obj.asInstanceOf[ImpersonateSettingOptions]
+  }
+}
+

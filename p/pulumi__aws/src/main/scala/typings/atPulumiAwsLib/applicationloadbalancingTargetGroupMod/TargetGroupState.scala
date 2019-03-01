@@ -75,3 +75,40 @@ trait TargetGroupState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object TargetGroupState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    arnSuffix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    deregistrationDelay: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    healthCheck: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher] = null,
+    name: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    protocol: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    proxyProtocolV2: atPulumiPulumiLib.resourceMod.Input[scala.Boolean] = null,
+    slowStart: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null,
+    stickiness: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CookieDurationEnabledType] = null,
+    tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    targetType: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): TargetGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (arnSuffix != null) __obj.updateDynamic("arnSuffix")(arnSuffix.asInstanceOf[js.Any])
+    if (deregistrationDelay != null) __obj.updateDynamic("deregistrationDelay")(deregistrationDelay.asInstanceOf[js.Any])
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (proxyProtocolV2 != null) __obj.updateDynamic("proxyProtocolV2")(proxyProtocolV2.asInstanceOf[js.Any])
+    if (slowStart != null) __obj.updateDynamic("slowStart")(slowStart.asInstanceOf[js.Any])
+    if (stickiness != null) __obj.updateDynamic("stickiness")(stickiness.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetGroupState]
+  }
+}
+

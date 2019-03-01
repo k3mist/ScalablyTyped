@@ -15,3 +15,20 @@ trait FullscreenButtonViewModel extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object FullscreenButtonViewModel {
+  @scala.inline
+  def apply(
+    command: Command,
+    destroy: js.Function0[scala.Unit],
+    fullscreenElement: stdLib.Element,
+    isDestroyed: js.Function0[scala.Boolean],
+    isFullscreen: scala.Boolean,
+    isFullscreenEnabled: scala.Boolean,
+    tooltip: java.lang.String
+  ): FullscreenButtonViewModel = {
+    val __obj = js.Dynamic.literal(command = command, destroy = destroy, fullscreenElement = fullscreenElement, isDestroyed = isDestroyed, isFullscreen = isFullscreen, isFullscreenEnabled = isFullscreenEnabled, tooltip = tooltip)
+  
+    __obj.asInstanceOf[FullscreenButtonViewModel]
+  }
+}
+

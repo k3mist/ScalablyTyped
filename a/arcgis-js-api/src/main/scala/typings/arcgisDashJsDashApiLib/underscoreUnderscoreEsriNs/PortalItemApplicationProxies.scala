@@ -27,3 +27,19 @@ trait PortalItemApplicationProxies
   var sourceUrl: java.lang.String
 }
 
+object PortalItemApplicationProxies {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    proxyId: java.lang.String,
+    proxyUrl: java.lang.String,
+    sourceUrl: java.lang.String
+  ): PortalItemApplicationProxies = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, proxyId = proxyId, proxyUrl = proxyUrl, sourceUrl = sourceUrl)
+  
+    __obj.asInstanceOf[PortalItemApplicationProxies]
+  }
+}
+

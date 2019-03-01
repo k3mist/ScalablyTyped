@@ -15,3 +15,20 @@ trait Anon_All extends js.Object {
   var warn: java.lang.String
 }
 
+object Anon_All {
+  @scala.inline
+  def apply(
+    DEFAULT: java.lang.String,
+    all: java.lang.String,
+    debug: java.lang.String,
+    error: java.lang.String,
+    info: java.lang.String,
+    off: java.lang.String,
+    warn: java.lang.String
+  ): Anon_All = {
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, all = all, debug = debug, error = error, info = info, off = off, warn = warn)
+  
+    __obj.asInstanceOf[Anon_All]
+  }
+}
+

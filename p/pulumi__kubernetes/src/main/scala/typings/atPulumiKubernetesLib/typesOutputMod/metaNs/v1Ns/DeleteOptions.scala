@@ -59,3 +59,20 @@ trait DeleteOptions extends js.Object {
   val propagationPolicy: java.lang.String
 }
 
+object DeleteOptions {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    dryRun: js.Array[java.lang.String],
+    gracePeriodSeconds: scala.Double,
+    kind: java.lang.String,
+    orphanDependents: scala.Boolean,
+    preconditions: Preconditions,
+    propagationPolicy: java.lang.String
+  ): DeleteOptions = {
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, dryRun = dryRun, gracePeriodSeconds = gracePeriodSeconds, kind = kind, orphanDependents = orphanDependents, preconditions = preconditions, propagationPolicy = propagationPolicy)
+  
+    __obj.asInstanceOf[DeleteOptions]
+  }
+}
+

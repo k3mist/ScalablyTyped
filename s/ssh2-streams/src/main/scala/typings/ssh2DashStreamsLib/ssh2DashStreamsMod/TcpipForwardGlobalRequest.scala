@@ -16,3 +16,12 @@ trait TcpipForwardGlobalRequest extends _GlobalRequest {
   var bindPort: scala.Double
 }
 
+object TcpipForwardGlobalRequest {
+  @scala.inline
+  def apply(bindAddr: java.lang.String, bindPort: scala.Double): TcpipForwardGlobalRequest = {
+    val __obj = js.Dynamic.literal(bindAddr = bindAddr, bindPort = bindPort)
+  
+    __obj.asInstanceOf[TcpipForwardGlobalRequest]
+  }
+}
+

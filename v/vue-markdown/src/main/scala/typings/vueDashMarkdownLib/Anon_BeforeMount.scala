@@ -15,3 +15,20 @@ trait Anon_BeforeMount extends js.Object {
   var template: java.lang.String
 }
 
+object Anon_BeforeMount {
+  @scala.inline
+  def apply(
+    beforeMount: js.Any,
+    computed: Anon_TocLastLevelComputed,
+    data: js.Any,
+    md: Anon_Block,
+    props: Anon_AnchorAttributes,
+    render: js.Any,
+    template: java.lang.String
+  ): Anon_BeforeMount = {
+    val __obj = js.Dynamic.literal(beforeMount = beforeMount, computed = computed, data = data, md = md, props = props, render = render, template = template)
+  
+    __obj.asInstanceOf[Anon_BeforeMount]
+  }
+}
+

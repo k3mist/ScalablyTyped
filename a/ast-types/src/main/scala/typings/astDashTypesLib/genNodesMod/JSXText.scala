@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
   var value: java.lang.String
 }
 
+object JSXText {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.JSXText, value: java.lang.String): JSXText = {
+    val __obj = js.Dynamic.literal(`type` = `type`, value = value)
+  
+    __obj.asInstanceOf[JSXText]
+  }
+}
+

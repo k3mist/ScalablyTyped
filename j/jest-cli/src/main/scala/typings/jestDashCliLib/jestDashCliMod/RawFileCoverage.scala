@@ -17,3 +17,22 @@ trait RawFileCoverage extends js.Object {
   var statementMap: org.scalablytyped.runtime.NumberDictionary[js.Any]
 }
 
+object RawFileCoverage {
+  @scala.inline
+  def apply(
+    b: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    branchMap: org.scalablytyped.runtime.NumberDictionary[js.Any],
+    f: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    fnMap: org.scalablytyped.runtime.NumberDictionary[js.Any],
+    l: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    path: java.lang.String,
+    s: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    statementMap: org.scalablytyped.runtime.NumberDictionary[js.Any],
+    inputSourceMap: js.Object = null
+  ): RawFileCoverage = {
+    val __obj = js.Dynamic.literal(b = b, branchMap = branchMap, f = f, fnMap = fnMap, l = l, path = path, s = s, statementMap = statementMap)
+    if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap)
+    __obj.asInstanceOf[RawFileCoverage]
+  }
+}
+

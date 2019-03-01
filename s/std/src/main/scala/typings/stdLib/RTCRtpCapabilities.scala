@@ -10,3 +10,15 @@ trait RTCRtpCapabilities extends js.Object {
   var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
 }
 
+object RTCRtpCapabilities {
+  @scala.inline
+  def apply(
+    codecs: js.Array[RTCRtpCodecCapability],
+    headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
+  ): RTCRtpCapabilities = {
+    val __obj = js.Dynamic.literal(codecs = codecs, headerExtensions = headerExtensions)
+  
+    __obj.asInstanceOf[RTCRtpCapabilities]
+  }
+}
+

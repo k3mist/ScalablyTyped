@@ -20,3 +20,18 @@ import scala.scalajs.js.annotation._
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object TSTypeAliasDeclaration {
+  @scala.inline
+  def apply(
+    declare: scala.Boolean,
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeAliasDeclaration,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): TSTypeAliasDeclaration = {
+    val __obj = js.Dynamic.literal(declare = declare, id = id, `type` = `type`, typeAnnotation = typeAnnotation)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[TSTypeAliasDeclaration]
+  }
+}
+

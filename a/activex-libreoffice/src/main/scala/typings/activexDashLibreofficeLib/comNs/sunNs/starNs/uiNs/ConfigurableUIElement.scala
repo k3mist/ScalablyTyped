@@ -26,3 +26,34 @@ trait ConfigurableUIElement
   var Persistent: scala.Boolean
 }
 
+object ConfigurableUIElement {
+  @scala.inline
+  def apply(
+    ConfigurationSource: XUIConfigurationManager,
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    Persistent: scala.Boolean,
+    RealInterface: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ResourceURL: java.lang.String,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getRealInterface: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getSettings: js.Function1[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
+    update: js.Function0[scala.Unit],
+    updateSettings: js.Function0[scala.Unit]
+  ): ConfigurableUIElement = {
+    val __obj = js.Dynamic.literal(ConfigurationSource = ConfigurationSource, Frame = Frame, Persistent = Persistent, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getRealInterface = getRealInterface, getSettings = getSettings, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setSettings = setSettings, update = update, updateSettings = updateSettings)
+  
+    __obj.asInstanceOf[ConfigurableUIElement]
+  }
+}
+

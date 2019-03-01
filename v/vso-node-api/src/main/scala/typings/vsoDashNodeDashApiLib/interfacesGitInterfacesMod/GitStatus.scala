@@ -44,3 +44,22 @@ trait GitStatus extends js.Object {
   var updatedDate: stdLib.Date
 }
 
+object GitStatus {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    context: GitStatusContext,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    creationDate: stdLib.Date,
+    description: java.lang.String,
+    id: scala.Double,
+    state: GitStatusState,
+    targetUrl: java.lang.String,
+    updatedDate: stdLib.Date
+  ): GitStatus = {
+    val __obj = js.Dynamic.literal(_links = _links, context = context, createdBy = createdBy, creationDate = creationDate, description = description, id = id, state = state, targetUrl = targetUrl, updatedDate = updatedDate)
+  
+    __obj.asInstanceOf[GitStatus]
+  }
+}
+

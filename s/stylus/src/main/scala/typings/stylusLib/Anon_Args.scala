@@ -14,3 +14,19 @@ trait Anon_Args extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    args: stylusLib.stylusMod.StylusNs.NodesNs.Expression,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    name: java.lang.String
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal(__type = __type, args = args, column = column, filename = filename, lineno = lineno, name = name)
+  
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

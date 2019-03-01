@@ -19,3 +19,18 @@ trait XCellRangeReferrer
   def getReferredCells(): activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
 }
 
+object XCellRangeReferrer {
+  @scala.inline
+  def apply(
+    ReferredCells: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    acquire: js.Function0[scala.Unit],
+    getReferredCells: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellRangeReferrer = {
+    val __obj = js.Dynamic.literal(ReferredCells = ReferredCells, acquire = acquire, getReferredCells = getReferredCells, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XCellRangeReferrer]
+  }
+}
+

@@ -38,3 +38,38 @@ trait KnockoutBindingHandlers
   var `with`: KnockoutBindingHandler
 }
 
+object KnockoutBindingHandlers {
+  @scala.inline
+  def apply(
+    attr: KnockoutBindingHandler,
+    checked: KnockoutBindingHandler,
+    click: KnockoutBindingHandler,
+    component: KnockoutBindingHandler,
+    css: KnockoutBindingHandler,
+    disable: KnockoutBindingHandler,
+    enable: KnockoutBindingHandler,
+    event: KnockoutBindingHandler,
+    foreach: KnockoutBindingHandler,
+    hasfocus: KnockoutBindingHandler,
+    html: KnockoutBindingHandler,
+    `if`: KnockoutBindingHandler,
+    ifnot: KnockoutBindingHandler,
+    options: KnockoutBindingHandler,
+    selectedOptions: KnockoutBindingHandler,
+    style: KnockoutBindingHandler,
+    submit: KnockoutBindingHandler,
+    template: KnockoutBindingHandler,
+    text: KnockoutBindingHandler,
+    textInput: KnockoutBindingHandler,
+    uniqueName: KnockoutBindingHandler,
+    value: KnockoutBindingHandler,
+    visible: KnockoutBindingHandler,
+    `with`: KnockoutBindingHandler,
+    StringDictionary: /* bindingHandler */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] = null
+  ): KnockoutBindingHandlers = {
+    val __obj = js.Dynamic.literal(attr = attr, checked = checked, click = click, component = component, css = css, disable = disable, enable = enable, event = event, foreach = foreach, hasfocus = hasfocus, html = html, `if` = `if`, ifnot = ifnot, options = options, selectedOptions = selectedOptions, style = style, submit = submit, template = template, text = text, textInput = textInput, uniqueName = uniqueName, value = value, visible = visible, `with` = `with`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[KnockoutBindingHandlers]
+  }
+}
+

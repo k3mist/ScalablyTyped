@@ -26,3 +26,18 @@ trait JobInfoProperties extends js.Object {
   var messages: js.UndefOr[js.Array[GPMessageProperties]] = js.undefined
 }
 
+object JobInfoProperties {
+  @scala.inline
+  def apply(
+    jobId: java.lang.String = null,
+    jobStatus: java.lang.String = null,
+    messages: js.Array[GPMessageProperties] = null
+  ): JobInfoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (jobStatus != null) __obj.updateDynamic("jobStatus")(jobStatus)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    __obj.asInstanceOf[JobInfoProperties]
+  }
+}
+

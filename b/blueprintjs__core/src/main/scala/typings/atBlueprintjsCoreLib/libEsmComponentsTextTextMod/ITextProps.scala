@@ -22,3 +22,18 @@ trait ITextProps
   ] = js.undefined
 }
 
+object ITextProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    ellipsize: js.UndefOr[scala.Boolean] = js.undefined,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
+  ): ITextProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(ellipsize)) __obj.updateDynamic("ellipsize")(ellipsize)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[ITextProps]
+  }
+}
+

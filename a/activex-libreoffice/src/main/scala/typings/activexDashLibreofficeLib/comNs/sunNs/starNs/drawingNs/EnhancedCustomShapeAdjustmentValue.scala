@@ -14,3 +14,16 @@ trait EnhancedCustomShapeAdjustmentValue extends js.Object {
   var Value: js.Any
 }
 
+object EnhancedCustomShapeAdjustmentValue {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    State: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    Value: js.Any
+  ): EnhancedCustomShapeAdjustmentValue = {
+    val __obj = js.Dynamic.literal(Name = Name, State = State, Value = Value)
+  
+    __obj.asInstanceOf[EnhancedCustomShapeAdjustmentValue]
+  }
+}
+

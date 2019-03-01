@@ -82,3 +82,33 @@ trait RequiredOptions
   var trailingComma: prettierLib.prettierLibStrings.none | prettierLib.prettierLibStrings.es5 | prettierLib.prettierLibStrings.all
 }
 
+object RequiredOptions {
+  @scala.inline
+  def apply(
+    arrowParens: prettierLib.prettierLibStrings.avoid | prettierLib.prettierLibStrings.always,
+    bracketSpacing: scala.Boolean,
+    endOfLine: prettierLib.prettierLibStrings.auto | prettierLib.prettierLibStrings.lf | prettierLib.prettierLibStrings.crlf | prettierLib.prettierLibStrings.cr,
+    filepath: java.lang.String,
+    htmlWhitespaceSensitivity: prettierLib.prettierLibStrings.css | prettierLib.prettierLibStrings.strict | prettierLib.prettierLibStrings.ignore,
+    insertPragma: scala.Boolean,
+    jsxBracketSameLine: scala.Boolean,
+    jsxSingleQuote: scala.Boolean,
+    parser: BuiltInParserName | CustomParser,
+    plugins: js.Array[java.lang.String | Plugin],
+    printWidth: scala.Double,
+    proseWrap: scala.Boolean | prettierLib.prettierLibStrings.always | prettierLib.prettierLibStrings.never | prettierLib.prettierLibStrings.preserve,
+    rangeEnd: scala.Double,
+    rangeStart: scala.Double,
+    requirePragma: scala.Boolean,
+    semi: scala.Boolean,
+    singleQuote: scala.Boolean,
+    tabWidth: scala.Double,
+    trailingComma: prettierLib.prettierLibStrings.none | prettierLib.prettierLibStrings.es5 | prettierLib.prettierLibStrings.all,
+    useTabs: scala.Boolean
+  ): RequiredOptions = {
+    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing, endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath, htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma, jsxBracketSameLine = jsxBracketSameLine, jsxSingleQuote = jsxSingleQuote, parser = parser.asInstanceOf[js.Any], plugins = plugins, printWidth = printWidth, proseWrap = proseWrap.asInstanceOf[js.Any], rangeEnd = rangeEnd, rangeStart = rangeStart, requirePragma = requirePragma, semi = semi, singleQuote = singleQuote, tabWidth = tabWidth, trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs)
+  
+    __obj.asInstanceOf[RequiredOptions]
+  }
+}
+

@@ -21,3 +21,12 @@ trait ASPxClientHtmlEditorCommandExecutingEventArgs extends ASPxClientCancelEven
   var parameter: js.Object
 }
 
+object ASPxClientHtmlEditorCommandExecutingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, commandName: java.lang.String, parameter: js.Object): ASPxClientHtmlEditorCommandExecutingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel, commandName = commandName, parameter = parameter)
+  
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandExecutingEventArgs]
+  }
+}
+

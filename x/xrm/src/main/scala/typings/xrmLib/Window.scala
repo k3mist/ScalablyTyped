@@ -10,3 +10,12 @@ trait Window extends js.Object {
   def GetGlobalContext(): xrmLib.XrmNs.GlobalContext
 }
 
+object Window {
+  @scala.inline
+  def apply(GetGlobalContext: js.Function0[xrmLib.XrmNs.GlobalContext], Xrm: xrmLib.XrmNs.XrmStatic): Window = {
+    val __obj = js.Dynamic.literal(GetGlobalContext = GetGlobalContext, Xrm = Xrm)
+  
+    __obj.asInstanceOf[Window]
+  }
+}
+

@@ -28,3 +28,18 @@ trait TransferMoneyOpts extends js.Object {
   var `type`: coinbaseLib.coinbaseLibStrings.transfer
 }
 
+object TransferMoneyOpts {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    currency: java.lang.String,
+    to: java.lang.String,
+    `type`: coinbaseLib.coinbaseLibStrings.transfer,
+    description: java.lang.String = null
+  ): TransferMoneyOpts = {
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to, `type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[TransferMoneyOpts]
+  }
+}
+

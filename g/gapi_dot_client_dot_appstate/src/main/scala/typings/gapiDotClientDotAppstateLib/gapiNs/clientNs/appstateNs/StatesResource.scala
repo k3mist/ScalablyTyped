@@ -28,3 +28,33 @@ trait StatesResource extends js.Object {
   def update(request: gapiDotClientDotAppstateLib.Anon_AltCurrentStateVersion): gapiDotClientLib.gapiNs.clientNs.Request[WriteResult]
 }
 
+object StatesResource {
+  @scala.inline
+  def apply(
+    clear: js.Function1[
+      gapiDotClientDotAppstateLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WriteResult]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAppstateLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAppstateLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAppstateLib.Anon_AltFieldsIncludeData, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAppstateLib.Anon_AltCurrentStateVersion, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WriteResult]
+    ]
+  ): StatesResource = {
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, list = list, update = update)
+  
+    __obj.asInstanceOf[StatesResource]
+  }
+}
+

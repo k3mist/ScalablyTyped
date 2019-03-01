@@ -50,3 +50,20 @@ trait Anon_Algorithm extends js.Object {
   var tokenGenerator: java.lang.String
 }
 
+object Anon_Algorithm {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String,
+    cookieId: java.lang.String,
+    expiresIn: scala.Double,
+    privateKey: java.lang.String,
+    publicKey: java.lang.String,
+    renewBeforeExpires: scala.Double,
+    tokenGenerator: java.lang.String
+  ): Anon_Algorithm = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm, cookieId = cookieId, expiresIn = expiresIn, privateKey = privateKey, publicKey = publicKey, renewBeforeExpires = renewBeforeExpires, tokenGenerator = tokenGenerator)
+  
+    __obj.asInstanceOf[Anon_Algorithm]
+  }
+}
+

@@ -36,3 +36,18 @@ trait ASPxClientRecurrenceType extends js.Object {
   var Yearly: java.lang.String
 }
 
+object ASPxClientRecurrenceType {
+  @scala.inline
+  def apply(
+    Daily: java.lang.String,
+    Hourly: java.lang.String,
+    Monthly: java.lang.String,
+    Weekly: java.lang.String,
+    Yearly: java.lang.String
+  ): ASPxClientRecurrenceType = {
+    val __obj = js.Dynamic.literal(Daily = Daily, Hourly = Hourly, Monthly = Monthly, Weekly = Weekly, Yearly = Yearly)
+  
+    __obj.asInstanceOf[ASPxClientRecurrenceType]
+  }
+}
+

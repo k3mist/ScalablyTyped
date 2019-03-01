@@ -15,3 +15,23 @@ trait FieldDefinitionNode extends ASTNode {
   val `type`: TypeNode
 }
 
+object FieldDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.FieldDefinition,
+    name: NameNode,
+    `type`: TypeNode,
+    arguments: js.Array[InputValueDefinitionNode] = null,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): FieldDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind, name = name, `type` = `type`)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[FieldDefinitionNode]
+  }
+}
+

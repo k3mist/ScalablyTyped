@@ -56,3 +56,26 @@ trait XConnection
   def write(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XConnection {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    close: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    getDescription: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function2[
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      scala.Double, 
+      scala.Double
+    ],
+    release: js.Function0[scala.Unit],
+    write: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XConnection = {
+    val __obj = js.Dynamic.literal(Description = Description, acquire = acquire, close = close, flush = flush, getDescription = getDescription, queryInterface = queryInterface, read = read, release = release, write = write)
+  
+    __obj.asInstanceOf[XConnection]
+  }
+}
+

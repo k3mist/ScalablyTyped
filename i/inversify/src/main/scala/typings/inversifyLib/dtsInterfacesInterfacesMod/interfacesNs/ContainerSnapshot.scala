@@ -10,3 +10,12 @@ trait ContainerSnapshot extends js.Object {
   var middleware: Next | scala.Null
 }
 
+object ContainerSnapshot {
+  @scala.inline
+  def apply(bindings: Lookup[Binding[_]], middleware: Next = null): ContainerSnapshot = {
+    val __obj = js.Dynamic.literal(bindings = bindings)
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
+    __obj.asInstanceOf[ContainerSnapshot]
+  }
+}
+

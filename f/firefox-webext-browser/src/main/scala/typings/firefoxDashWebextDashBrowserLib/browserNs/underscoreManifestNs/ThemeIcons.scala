@@ -14,3 +14,12 @@ trait ThemeIcons extends js.Object {
   var size: scala.Double
 }
 
+object ThemeIcons {
+  @scala.inline
+  def apply(dark: ExtensionURL, light: ExtensionURL, size: scala.Double): ThemeIcons = {
+    val __obj = js.Dynamic.literal(dark = dark, light = light, size = size)
+  
+    __obj.asInstanceOf[ThemeIcons]
+  }
+}
+

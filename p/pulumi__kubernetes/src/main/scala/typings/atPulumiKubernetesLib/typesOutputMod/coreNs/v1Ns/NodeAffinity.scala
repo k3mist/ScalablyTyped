@@ -28,3 +28,15 @@ trait NodeAffinity extends js.Object {
   val requiredDuringSchedulingIgnoredDuringExecution: NodeSelector
 }
 
+object NodeAffinity {
+  @scala.inline
+  def apply(
+    preferredDuringSchedulingIgnoredDuringExecution: js.Array[PreferredSchedulingTerm],
+    requiredDuringSchedulingIgnoredDuringExecution: NodeSelector
+  ): NodeAffinity = {
+    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution, requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution)
+  
+    __obj.asInstanceOf[NodeAffinity]
+  }
+}
+

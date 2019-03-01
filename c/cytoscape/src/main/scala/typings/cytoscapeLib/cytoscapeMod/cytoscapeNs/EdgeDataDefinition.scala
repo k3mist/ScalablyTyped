@@ -18,3 +18,20 @@ trait EdgeDataDefinition
   var target: java.lang.String
 }
 
+object EdgeDataDefinition {
+  @scala.inline
+  def apply(
+    source: java.lang.String,
+    target: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    id: java.lang.String = null,
+    position: Position = null
+  ): EdgeDataDefinition = {
+    val __obj = js.Dynamic.literal(source = source, target = target)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[EdgeDataDefinition]
+  }
+}
+

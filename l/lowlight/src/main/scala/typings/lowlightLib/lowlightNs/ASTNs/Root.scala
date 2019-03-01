@@ -12,3 +12,18 @@ trait Root
   var type_Root: lowlightLib.lowlightLibStrings.root
 }
 
+object Root {
+  @scala.inline
+  def apply(
+    children: js.Array[lowlightLib.lowlightNs.ASTNs.UnistNs.Node],
+    `type`: lowlightLib.lowlightLibStrings.root,
+    data: lowlightLib.lowlightNs.ASTNs.UnistNs.Data = null,
+    position: lowlightLib.lowlightNs.ASTNs.UnistNs.Location = null
+  ): Root = {
+    val __obj = js.Dynamic.literal(children = children, `type` = `type`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Root]
+  }
+}
+

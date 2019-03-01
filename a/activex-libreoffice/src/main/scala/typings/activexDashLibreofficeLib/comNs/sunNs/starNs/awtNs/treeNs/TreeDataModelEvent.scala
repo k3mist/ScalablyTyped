@@ -28,3 +28,16 @@ trait TreeDataModelEvent
   var ParentNode: XTreeNode
 }
 
+object TreeDataModelEvent {
+  @scala.inline
+  def apply(
+    Nodes: activexDashInteropLib.SafeArray[XTreeNode],
+    ParentNode: XTreeNode,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): TreeDataModelEvent = {
+    val __obj = js.Dynamic.literal(Nodes = Nodes, ParentNode = ParentNode, Source = Source)
+  
+    __obj.asInstanceOf[TreeDataModelEvent]
+  }
+}
+

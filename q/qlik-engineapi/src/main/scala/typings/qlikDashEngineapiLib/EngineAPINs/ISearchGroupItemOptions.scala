@@ -31,3 +31,12 @@ trait ISearchGroupItemOptions extends js.Object {
   var qOffset: scala.Double
 }
 
+object ISearchGroupItemOptions {
+  @scala.inline
+  def apply(qCount: scala.Double, qGroupItemType: IGenericObject, qOffset: scala.Double): ISearchGroupItemOptions = {
+    val __obj = js.Dynamic.literal(qCount = qCount, qGroupItemType = qGroupItemType, qOffset = qOffset)
+  
+    __obj.asInstanceOf[ISearchGroupItemOptions]
+  }
+}
+

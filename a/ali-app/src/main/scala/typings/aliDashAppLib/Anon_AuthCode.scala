@@ -13,3 +13,16 @@ trait Anon_AuthCode extends js.Object {
   var authSucessScope: js.Array[java.lang.String]
 }
 
+object Anon_AuthCode {
+  @scala.inline
+  def apply(
+    authCode: java.lang.String,
+    authErrorScope: org.scalablytyped.runtime.StringDictionary[scala.Double],
+    authSucessScope: js.Array[java.lang.String]
+  ): Anon_AuthCode = {
+    val __obj = js.Dynamic.literal(authCode = authCode, authErrorScope = authErrorScope, authSucessScope = authSucessScope)
+  
+    __obj.asInstanceOf[Anon_AuthCode]
+  }
+}
+

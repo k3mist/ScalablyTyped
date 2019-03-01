@@ -55,3 +55,29 @@ trait PopupViewModelOpenOptions
   var updateLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PopupViewModelOpenOptions {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String = null,
+    features: js.Array[Graphic] = null,
+    location: Geometry = null,
+    promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
+    title: java.lang.String = null,
+    updateLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): PopupViewModelOpenOptions = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (promises != null) __obj.updateDynamic("promises")(promises)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(updateLocationEnabled)) __obj.updateDynamic("updateLocationEnabled")(updateLocationEnabled)
+    __obj.asInstanceOf[PopupViewModelOpenOptions]
+  }
+}
+

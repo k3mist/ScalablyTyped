@@ -55,3 +55,62 @@ trait TableValidation
   var Type: ValidationType
 }
 
+object TableValidation {
+  @scala.inline
+  def apply(
+    ErrorAlertStyle: ValidationAlertStyle,
+    ErrorMessage: java.lang.String,
+    ErrorTitle: java.lang.String,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String,
+    IgnoreBlankCells: scala.Boolean,
+    InputMessage: java.lang.String,
+    InputTitle: java.lang.String,
+    Operator: ConditionOperator,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ShowErrorMessage: scala.Boolean,
+    ShowInputMessage: scala.Boolean,
+    ShowList: scala.Double,
+    SourcePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    Type: ValidationType,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getFormula1: js.Function0[java.lang.String],
+    getFormula2: js.Function0[java.lang.String],
+    getOperator: js.Function0[ConditionOperator],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getSourcePosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setFormula1: js.Function1[java.lang.String, scala.Unit],
+    setFormula2: js.Function1[java.lang.String, scala.Unit],
+    setOperator: js.Function1[ConditionOperator, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setSourcePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit]
+  ): TableValidation = {
+    val __obj = js.Dynamic.literal(ErrorAlertStyle = ErrorAlertStyle, ErrorMessage = ErrorMessage, ErrorTitle = ErrorTitle, Formula1 = Formula1, Formula2 = Formula2, IgnoreBlankCells = IgnoreBlankCells, InputMessage = InputMessage, InputTitle = InputTitle, Operator = Operator, PropertySetInfo = PropertySetInfo, ShowErrorMessage = ShowErrorMessage, ShowInputMessage = ShowInputMessage, ShowList = ShowList, SourcePosition = SourcePosition, Type = Type, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getFormula1 = getFormula1, getFormula2 = getFormula2, getOperator = getOperator, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSourcePosition = getSourcePosition, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFormula1 = setFormula1, setFormula2 = setFormula2, setOperator = setOperator, setPropertyValue = setPropertyValue, setSourcePosition = setSourcePosition)
+  
+    __obj.asInstanceOf[TableValidation]
+  }
+}
+

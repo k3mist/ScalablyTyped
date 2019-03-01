@@ -16,3 +16,12 @@ trait UpdateTimeToLiveInput extends js.Object {
   var TimeToLiveSpecification: TimeToLiveSpecification
 }
 
+object UpdateTimeToLiveInput {
+  @scala.inline
+  def apply(TableName: TableName, TimeToLiveSpecification: TimeToLiveSpecification): UpdateTimeToLiveInput = {
+    val __obj = js.Dynamic.literal(TableName = TableName, TimeToLiveSpecification = TimeToLiveSpecification)
+  
+    __obj.asInstanceOf[UpdateTimeToLiveInput]
+  }
+}
+

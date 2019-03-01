@@ -11,3 +11,16 @@ trait Anon_InitialI18nStoreInitialLanguage
   var initialLanguage: js.Any
 }
 
+object Anon_InitialI18nStoreInitialLanguage {
+  @scala.inline
+  def apply(
+    initialI18nStore: js.Any,
+    initialLanguage: js.Any,
+    StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_InitialI18nStoreInitialLanguage = {
+    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore, initialLanguage = initialLanguage)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_InitialI18nStoreInitialLanguage]
+  }
+}
+

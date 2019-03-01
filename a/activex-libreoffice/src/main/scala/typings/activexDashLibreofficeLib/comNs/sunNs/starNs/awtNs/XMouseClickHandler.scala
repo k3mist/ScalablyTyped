@@ -23,3 +23,19 @@ trait XMouseClickHandler
   def mouseReleased(e: MouseEvent): scala.Boolean
 }
 
+object XMouseClickHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    mousePressed: js.Function1[MouseEvent, scala.Boolean],
+    mouseReleased: js.Function1[MouseEvent, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMouseClickHandler = {
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, mousePressed = mousePressed, mouseReleased = mouseReleased, queryInterface = queryInterface, release = release)
+  
+    __obj.asInstanceOf[XMouseClickHandler]
+  }
+}
+

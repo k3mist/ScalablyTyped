@@ -16,3 +16,15 @@ import scala.scalajs.js.annotation._
   var `type`: astDashTypesLib.astDashTypesLibStrings.SequenceExpression
 }
 
+object SequenceExpression {
+  @scala.inline
+  def apply(
+    expressions: js.Array[astDashTypesLib.genKindsMod.ExpressionKind],
+    `type`: astDashTypesLib.astDashTypesLibStrings.SequenceExpression
+  ): SequenceExpression = {
+    val __obj = js.Dynamic.literal(expressions = expressions, `type` = `type`)
+  
+    __obj.asInstanceOf[SequenceExpression]
+  }
+}
+

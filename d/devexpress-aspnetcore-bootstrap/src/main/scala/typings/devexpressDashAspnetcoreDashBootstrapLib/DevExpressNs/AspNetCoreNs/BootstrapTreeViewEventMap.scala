@@ -15,3 +15,21 @@ trait BootstrapTreeViewEventMap extends ControlEventMap {
   var nodeClick: TreeViewNodeClickEventArgs
 }
 
+object BootstrapTreeViewEventMap {
+  @scala.inline
+  def apply(
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    checkedChanged: TreeViewNodeProcessingModeEventArgs,
+    endCallback: EndCallbackEventArgs,
+    expandedChanged: TreeViewNodeEventArgs,
+    expandedChanging: TreeViewNodeCancelEventArgs,
+    init: EventArgs,
+    nodeClick: TreeViewNodeClickEventArgs
+  ): BootstrapTreeViewEventMap = {
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, callbackError = callbackError, checkedChanged = checkedChanged, endCallback = endCallback, expandedChanged = expandedChanged, expandedChanging = expandedChanging, init = init, nodeClick = nodeClick)
+  
+    __obj.asInstanceOf[BootstrapTreeViewEventMap]
+  }
+}
+

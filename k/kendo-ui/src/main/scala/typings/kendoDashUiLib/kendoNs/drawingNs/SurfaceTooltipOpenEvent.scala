@@ -10,3 +10,19 @@ trait SurfaceTooltipOpenEvent extends SurfaceEvent {
   var target: js.UndefOr[Element] = js.undefined
 }
 
+object SurfaceTooltipOpenEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Surface,
+    element: Element = null,
+    target: Element = null
+  ): SurfaceTooltipOpenEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[SurfaceTooltipOpenEvent]
+  }
+}
+

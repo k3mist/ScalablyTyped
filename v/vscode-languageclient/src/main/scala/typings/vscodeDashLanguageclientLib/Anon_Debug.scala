@@ -11,3 +11,15 @@ trait Anon_Debug
   var run: vscodeDashLanguageclientLib.vscodeDashLanguageclientMod.Executable
 }
 
+object Anon_Debug {
+  @scala.inline
+  def apply(
+    debug: vscodeDashLanguageclientLib.vscodeDashLanguageclientMod.Executable,
+    run: vscodeDashLanguageclientLib.vscodeDashLanguageclientMod.Executable
+  ): Anon_Debug = {
+    val __obj = js.Dynamic.literal(debug = debug, run = run)
+  
+    __obj.asInstanceOf[Anon_Debug]
+  }
+}
+

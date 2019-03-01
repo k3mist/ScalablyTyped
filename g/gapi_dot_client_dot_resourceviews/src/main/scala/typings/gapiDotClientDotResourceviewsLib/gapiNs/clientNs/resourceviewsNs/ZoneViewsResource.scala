@@ -26,3 +26,49 @@ trait ZoneViewsResource extends js.Object {
   def setService(request: gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ZoneViewsResource {
+  @scala.inline
+  def apply(
+    addResources: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResourceView]
+    ],
+    getService: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsGetServiceResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsList]
+    ],
+    listResources: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsFormat, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ZoneViewsListResourcesResponse]
+    ],
+    removeResources: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setService: js.Function1[
+      gapiDotClientDotResourceviewsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ZoneViewsResource = {
+    val __obj = js.Dynamic.literal(addResources = addResources, delete = delete, get = get, getService = getService, insert = insert, list = list, listResources = listResources, removeResources = removeResources, setService = setService)
+  
+    __obj.asInstanceOf[ZoneViewsResource]
+  }
+}
+

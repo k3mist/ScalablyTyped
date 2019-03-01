@@ -10,3 +10,12 @@ trait Middleware extends js.Object {
   var runner: Runner
 }
 
+object Middleware {
+  @scala.inline
+  def apply(runner: Runner): Middleware = {
+    val __obj = js.Dynamic.literal(runner = runner)
+  
+    __obj.asInstanceOf[Middleware]
+  }
+}
+

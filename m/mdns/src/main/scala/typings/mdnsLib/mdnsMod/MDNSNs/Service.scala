@@ -21,3 +21,27 @@ trait Service extends js.Object {
   var `type`: ServiceType
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    addresses: js.Array[java.lang.String],
+    flags: scala.Double,
+    fullname: java.lang.String,
+    host: java.lang.String,
+    interfaceIndex: scala.Double,
+    networkInterface: java.lang.String,
+    port: scala.Double,
+    replyDomain: java.lang.String,
+    `type`: ServiceType,
+    name: java.lang.String = null,
+    rawTxtRecord: nodeLib.Buffer = null,
+    txtRecord: js.Any = null
+  ): Service = {
+    val __obj = js.Dynamic.literal(addresses = addresses, flags = flags, fullname = fullname, host = host, interfaceIndex = interfaceIndex, networkInterface = networkInterface, port = port, replyDomain = replyDomain, `type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rawTxtRecord != null) __obj.updateDynamic("rawTxtRecord")(rawTxtRecord)
+    if (txtRecord != null) __obj.updateDynamic("txtRecord")(txtRecord)
+    __obj.asInstanceOf[Service]
+  }
+}
+

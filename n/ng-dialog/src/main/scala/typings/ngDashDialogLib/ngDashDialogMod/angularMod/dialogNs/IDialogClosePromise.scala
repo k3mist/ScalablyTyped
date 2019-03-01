@@ -10,3 +10,12 @@ trait IDialogClosePromise extends js.Object {
   var value: js.Any
 }
 
+object IDialogClosePromise {
+  @scala.inline
+  def apply(id: java.lang.String, value: js.Any): IDialogClosePromise = {
+    val __obj = js.Dynamic.literal(id = id, value = value)
+  
+    __obj.asInstanceOf[IDialogClosePromise]
+  }
+}
+

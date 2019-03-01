@@ -16,3 +16,21 @@ trait Touch extends js.Object {
   var target: reactLib.EventTarget
 }
 
+object Touch {
+  @scala.inline
+  def apply(
+    clientX: scala.Double,
+    clientY: scala.Double,
+    identifier: scala.Double,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    screenX: scala.Double,
+    screenY: scala.Double,
+    target: reactLib.EventTarget
+  ): Touch = {
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, identifier = identifier, pageX = pageX, pageY = pageY, screenX = screenX, screenY = screenY, target = target)
+  
+    __obj.asInstanceOf[Touch]
+  }
+}
+

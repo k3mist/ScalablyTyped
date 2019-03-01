@@ -10,3 +10,12 @@ trait ITestGroupDescriptor extends js.Object {
   var items: js.Array[_]
 }
 
+object ITestGroupDescriptor {
+  @scala.inline
+  def apply(group: java.lang.String, items: js.Array[_]): ITestGroupDescriptor = {
+    val __obj = js.Dynamic.literal(group = group, items = items)
+  
+    __obj.asInstanceOf[ITestGroupDescriptor]
+  }
+}
+

@@ -19,3 +19,24 @@ trait IKeyboardEvent extends js.Object {
   def stopPropagation(): scala.Unit
 }
 
+object IKeyboardEvent {
+  @scala.inline
+  def apply(
+    altKey: scala.Boolean,
+    browserEvent: stdLib.KeyboardEvent,
+    code: java.lang.String,
+    ctrlKey: scala.Boolean,
+    equals: js.Function1[scala.Double, scala.Boolean],
+    keyCode: KeyCode,
+    metaKey: scala.Boolean,
+    preventDefault: js.Function0[scala.Unit],
+    shiftKey: scala.Boolean,
+    stopPropagation: js.Function0[scala.Unit],
+    target: stdLib.HTMLElement
+  ): IKeyboardEvent = {
+    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = equals, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target)
+  
+    __obj.asInstanceOf[IKeyboardEvent]
+  }
+}
+

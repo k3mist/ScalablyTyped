@@ -41,3 +41,20 @@ trait MoveEventInfo
   var `type`: java.lang.String
 }
 
+object MoveEventInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    dx: scala.Double,
+    dy: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    mover: Graphic,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    `type`: java.lang.String
+  ): MoveEventInfo = {
+    val __obj = js.Dynamic.literal(constructor = constructor, dx = dx, dy = dy, hasOwnProperty = hasOwnProperty, mover = mover, propertyIsEnumerable = propertyIsEnumerable, `type` = `type`)
+  
+    __obj.asInstanceOf[MoveEventInfo]
+  }
+}
+

@@ -20,3 +20,18 @@ trait MailFromState extends js.Object {
   val mailFromDomain: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 
+object MailFromState {
+  @scala.inline
+  def apply(
+    behaviorOnMxFailure: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    domain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    mailFromDomain: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null
+  ): MailFromState = {
+    val __obj = js.Dynamic.literal()
+    if (behaviorOnMxFailure != null) __obj.updateDynamic("behaviorOnMxFailure")(behaviorOnMxFailure.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (mailFromDomain != null) __obj.updateDynamic("mailFromDomain")(mailFromDomain.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MailFromState]
+  }
+}
+

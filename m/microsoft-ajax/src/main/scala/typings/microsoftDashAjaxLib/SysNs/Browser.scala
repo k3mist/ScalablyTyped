@@ -42,3 +42,18 @@ trait Browser extends js.Object {
   var version: scala.Double
 }
 
+object Browser {
+  @scala.inline
+  def apply(
+    agent: js.Any,
+    documentMode: scala.Double,
+    hasDebuggerStatement: scala.Boolean,
+    name: java.lang.String,
+    version: scala.Double
+  ): Browser = {
+    val __obj = js.Dynamic.literal(agent = agent, documentMode = documentMode, hasDebuggerStatement = hasDebuggerStatement, name = name, version = version)
+  
+    __obj.asInstanceOf[Browser]
+  }
+}
+

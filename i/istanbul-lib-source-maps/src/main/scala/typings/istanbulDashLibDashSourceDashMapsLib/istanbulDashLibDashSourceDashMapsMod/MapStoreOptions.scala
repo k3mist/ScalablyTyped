@@ -12,3 +12,17 @@ trait MapStoreOptions extends js.Object {
   var verbose: scala.Boolean
 }
 
+object MapStoreOptions {
+  @scala.inline
+  def apply(
+    baseDir: java.lang.String,
+    sourceStore: istanbulDashLibDashSourceDashMapsLib.istanbulDashLibDashSourceDashMapsLibStrings.memory | istanbulDashLibDashSourceDashMapsLib.istanbulDashLibDashSourceDashMapsLibStrings.file,
+    tmpdir: java.lang.String,
+    verbose: scala.Boolean
+  ): MapStoreOptions = {
+    val __obj = js.Dynamic.literal(baseDir = baseDir, sourceStore = sourceStore.asInstanceOf[js.Any], tmpdir = tmpdir, verbose = verbose)
+  
+    __obj.asInstanceOf[MapStoreOptions]
+  }
+}
+

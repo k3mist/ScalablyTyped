@@ -27,3 +27,32 @@ trait ISymmetricAlgorithmNamesStatics extends js.Object {
   var tripleDesEcbPkcs7: java.lang.String
 }
 
+object ISymmetricAlgorithmNamesStatics {
+  @scala.inline
+  def apply(
+    aesCbc: java.lang.String,
+    aesCbcPkcs7: java.lang.String,
+    aesCcm: java.lang.String,
+    aesEcb: java.lang.String,
+    aesEcbPkcs7: java.lang.String,
+    aesGcm: java.lang.String,
+    desCbc: java.lang.String,
+    desCbcPkcs7: java.lang.String,
+    desEcb: java.lang.String,
+    desEcbPkcs7: java.lang.String,
+    rc2Cbc: java.lang.String,
+    rc2CbcPkcs7: java.lang.String,
+    rc2Ecb: java.lang.String,
+    rc2EcbPkcs7: java.lang.String,
+    rc4: java.lang.String,
+    tripleDesCbc: java.lang.String,
+    tripleDesCbcPkcs7: java.lang.String,
+    tripleDesEcb: java.lang.String,
+    tripleDesEcbPkcs7: java.lang.String
+  ): ISymmetricAlgorithmNamesStatics = {
+    val __obj = js.Dynamic.literal(aesCbc = aesCbc, aesCbcPkcs7 = aesCbcPkcs7, aesCcm = aesCcm, aesEcb = aesEcb, aesEcbPkcs7 = aesEcbPkcs7, aesGcm = aesGcm, desCbc = desCbc, desCbcPkcs7 = desCbcPkcs7, desEcb = desEcb, desEcbPkcs7 = desEcbPkcs7, rc2Cbc = rc2Cbc, rc2CbcPkcs7 = rc2CbcPkcs7, rc2Ecb = rc2Ecb, rc2EcbPkcs7 = rc2EcbPkcs7, rc4 = rc4, tripleDesCbc = tripleDesCbc, tripleDesCbcPkcs7 = tripleDesCbcPkcs7, tripleDesEcb = tripleDesEcb, tripleDesEcbPkcs7 = tripleDesEcbPkcs7)
+  
+    __obj.asInstanceOf[ISymmetricAlgorithmNamesStatics]
+  }
+}
+

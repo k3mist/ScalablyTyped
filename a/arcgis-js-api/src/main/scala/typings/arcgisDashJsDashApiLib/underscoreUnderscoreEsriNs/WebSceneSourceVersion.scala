@@ -21,3 +21,18 @@ trait WebSceneSourceVersion
   var minor: scala.Double
 }
 
+object WebSceneSourceVersion {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    major: scala.Double,
+    minor: scala.Double,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): WebSceneSourceVersion = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, major = major, minor = minor, propertyIsEnumerable = propertyIsEnumerable)
+  
+    __obj.asInstanceOf[WebSceneSourceVersion]
+  }
+}
+

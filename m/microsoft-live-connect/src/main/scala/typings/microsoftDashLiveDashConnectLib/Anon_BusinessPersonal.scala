@@ -16,3 +16,15 @@ trait Anon_BusinessPersonal extends js.Object {
   var personal: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress
 }
 
+object Anon_BusinessPersonal {
+  @scala.inline
+  def apply(
+    business: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress,
+    personal: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress
+  ): Anon_BusinessPersonal = {
+    val __obj = js.Dynamic.literal(business = business, personal = personal)
+  
+    __obj.asInstanceOf[Anon_BusinessPersonal]
+  }
+}
+

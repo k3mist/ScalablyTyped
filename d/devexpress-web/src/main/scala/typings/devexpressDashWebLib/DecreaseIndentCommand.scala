@@ -15,3 +15,12 @@ trait DecreaseIndentCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object DecreaseIndentCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): DecreaseIndentCommand = {
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
+    __obj.asInstanceOf[DecreaseIndentCommand]
+  }
+}
+

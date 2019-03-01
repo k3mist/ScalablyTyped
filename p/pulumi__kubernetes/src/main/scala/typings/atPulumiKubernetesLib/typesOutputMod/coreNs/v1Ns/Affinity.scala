@@ -25,3 +25,12 @@ trait Affinity extends js.Object {
   val podAntiAffinity: PodAntiAffinity
 }
 
+object Affinity {
+  @scala.inline
+  def apply(nodeAffinity: NodeAffinity, podAffinity: PodAffinity, podAntiAffinity: PodAntiAffinity): Affinity = {
+    val __obj = js.Dynamic.literal(nodeAffinity = nodeAffinity, podAffinity = podAffinity, podAntiAffinity = podAntiAffinity)
+  
+    __obj.asInstanceOf[Affinity]
+  }
+}
+

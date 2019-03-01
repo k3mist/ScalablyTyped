@@ -16,3 +16,12 @@ trait ListOfFeaturedPlaylistsResponse extends js.Object {
   var playlists: PagingObject[PlaylistObjectSimplified]
 }
 
+object ListOfFeaturedPlaylistsResponse {
+  @scala.inline
+  def apply(playlists: PagingObject[PlaylistObjectSimplified], message: java.lang.String = null): ListOfFeaturedPlaylistsResponse = {
+    val __obj = js.Dynamic.literal(playlists = playlists)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ListOfFeaturedPlaylistsResponse]
+  }
+}
+

@@ -11,3 +11,16 @@ trait FlowControlChannelRequest extends ChannelRequest {
   var request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`xon-xoff`
 }
 
+object FlowControlChannelRequest {
+  @scala.inline
+  def apply(
+    clientControl: scala.Boolean,
+    recipient: scala.Double,
+    request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`xon-xoff`
+  ): FlowControlChannelRequest = {
+    val __obj = js.Dynamic.literal(clientControl = clientControl, recipient = recipient, request = request)
+  
+    __obj.asInstanceOf[FlowControlChannelRequest]
+  }
+}
+

@@ -15,3 +15,20 @@ trait RenderError extends js.Object {
   var `type`: java.lang.String
 }
 
+object RenderError {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    extract: js.Array[java.lang.String],
+    filename: java.lang.String,
+    index: scala.Double,
+    line: scala.Double,
+    message: java.lang.String,
+    `type`: java.lang.String
+  ): RenderError = {
+    val __obj = js.Dynamic.literal(column = column, extract = extract, filename = filename, index = index, line = line, message = message, `type` = `type`)
+  
+    __obj.asInstanceOf[RenderError]
+  }
+}
+

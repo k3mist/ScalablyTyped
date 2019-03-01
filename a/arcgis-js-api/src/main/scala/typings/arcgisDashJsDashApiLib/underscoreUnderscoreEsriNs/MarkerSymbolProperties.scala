@@ -35,3 +35,20 @@ trait MarkerSymbolProperties extends SymbolProperties {
   var yoffset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object MarkerSymbolProperties {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    color: Color | js.Array[scala.Double] | java.lang.String = null,
+    xoffset: scala.Double | java.lang.String = null,
+    yoffset: scala.Double | java.lang.String = null
+  ): MarkerSymbolProperties = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
+    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MarkerSymbolProperties]
+  }
+}
+

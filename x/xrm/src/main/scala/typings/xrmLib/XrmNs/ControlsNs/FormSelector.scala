@@ -22,3 +22,12 @@ trait FormSelector extends js.Object {
   def getCurrentItem(): FormItem
 }
 
+object FormSelector {
+  @scala.inline
+  def apply(getCurrentItem: js.Function0[FormItem], items: xrmLib.XrmNs.CollectionNs.ItemCollection[FormItem]): FormSelector = {
+    val __obj = js.Dynamic.literal(getCurrentItem = getCurrentItem, items = items)
+  
+    __obj.asInstanceOf[FormSelector]
+  }
+}
+

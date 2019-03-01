@@ -28,3 +28,17 @@ trait MessageStatus
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.MessageEventType
 }
 
+object MessageStatus {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    message_id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.MessageEventType,
+    resource: java.lang.String = null
+  ): MessageStatus = {
+    val __obj = js.Dynamic.literal(id = id, message_id = message_id, `type` = `type`)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[MessageStatus]
+  }
+}
+

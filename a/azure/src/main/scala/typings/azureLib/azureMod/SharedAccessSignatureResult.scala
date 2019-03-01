@@ -12,3 +12,17 @@ trait SharedAccessSignatureResult extends js.Object {
   def url(): java.lang.String
 }
 
+object SharedAccessSignatureResult {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String,
+    path: java.lang.String,
+    queryString: azureLib.Anon_Se,
+    url: js.Function0[java.lang.String]
+  ): SharedAccessSignatureResult = {
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, queryString = queryString, url = url)
+  
+    __obj.asInstanceOf[SharedAccessSignatureResult]
+  }
+}
+

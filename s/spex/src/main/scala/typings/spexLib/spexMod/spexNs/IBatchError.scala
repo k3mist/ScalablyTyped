@@ -18,3 +18,21 @@ trait IBatchError
   def getErrors(): js.Array[_]
 }
 
+object IBatchError {
+  @scala.inline
+  def apply(
+    data: js.Array[TBatchData],
+    first: js.Any,
+    getErrors: js.Function0[js.Array[_]],
+    message: java.lang.String,
+    name: java.lang.String,
+    stack: java.lang.String,
+    stat: IBatchStat,
+    toString: js.Function0[java.lang.String]
+  ): IBatchError = {
+    val __obj = js.Dynamic.literal(data = data, first = first, getErrors = getErrors, message = message, name = name, stack = stack, stat = stat, toString = toString)
+  
+    __obj.asInstanceOf[IBatchError]
+  }
+}
+

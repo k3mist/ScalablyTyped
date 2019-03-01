@@ -58,3 +58,23 @@ trait XGridRowSelection extends js.Object {
   def selectRow(RowIndex: scala.Double): scala.Unit
 }
 
+object XGridRowSelection {
+  @scala.inline
+  def apply(
+    SelectedRows: activexDashInteropLib.SafeArray[scala.Double],
+    addSelectionListener: js.Function1[XGridSelectionListener, scala.Unit],
+    deselectAllRows: js.Function0[scala.Unit],
+    deselectRow: js.Function1[scala.Double, scala.Unit],
+    getSelectedRows: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    hasSelectedRows: js.Function0[scala.Boolean],
+    isRowSelected: js.Function1[scala.Double, scala.Boolean],
+    removeSelectionListener: js.Function1[XGridSelectionListener, scala.Unit],
+    selectAllRows: js.Function0[scala.Unit],
+    selectRow: js.Function1[scala.Double, scala.Unit]
+  ): XGridRowSelection = {
+    val __obj = js.Dynamic.literal(SelectedRows = SelectedRows, addSelectionListener = addSelectionListener, deselectAllRows = deselectAllRows, deselectRow = deselectRow, getSelectedRows = getSelectedRows, hasSelectedRows = hasSelectedRows, isRowSelected = isRowSelected, removeSelectionListener = removeSelectionListener, selectAllRows = selectAllRows, selectRow = selectRow)
+  
+    __obj.asInstanceOf[XGridRowSelection]
+  }
+}
+

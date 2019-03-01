@@ -22,3 +22,28 @@ trait HeightmapTerrainData extends js.Object {
   def wasCreatedByUpsampling(): scala.Boolean
 }
 
+object HeightmapTerrainData {
+  @scala.inline
+  def apply(
+    createMesh: js.Function4[TilingScheme, scala.Double, scala.Double, scala.Double, js.Promise[TerrainMesh]],
+    interpolateHeight: js.Function3[Rectangle, scala.Double, scala.Double, scala.Double],
+    isChildAvailable: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
+    upsample: js.Function7[
+      TilingScheme, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Promise[HeightmapTerrainData]
+    ],
+    wasCreatedByUpsampling: js.Function0[scala.Boolean],
+    waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement
+  ): HeightmapTerrainData = {
+    val __obj = js.Dynamic.literal(createMesh = createMesh, interpolateHeight = interpolateHeight, isChildAvailable = isChildAvailable, upsample = upsample, wasCreatedByUpsampling = wasCreatedByUpsampling, waterMask = waterMask.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[HeightmapTerrainData]
+  }
+}
+

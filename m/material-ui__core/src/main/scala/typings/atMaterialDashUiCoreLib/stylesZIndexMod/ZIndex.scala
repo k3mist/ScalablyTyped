@@ -14,3 +14,19 @@ trait ZIndex extends js.Object {
   var tooltip: scala.Double
 }
 
+object ZIndex {
+  @scala.inline
+  def apply(
+    appBar: scala.Double,
+    drawer: scala.Double,
+    mobileStepper: scala.Double,
+    modal: scala.Double,
+    snackbar: scala.Double,
+    tooltip: scala.Double
+  ): ZIndex = {
+    val __obj = js.Dynamic.literal(appBar = appBar, drawer = drawer, mobileStepper = mobileStepper, modal = modal, snackbar = snackbar, tooltip = tooltip)
+  
+    __obj.asInstanceOf[ZIndex]
+  }
+}
+

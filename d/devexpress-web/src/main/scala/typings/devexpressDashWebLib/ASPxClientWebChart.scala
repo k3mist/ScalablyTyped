@@ -96,3 +96,31 @@ trait ASPxClientWebChart extends ASPxClientWebChartElement {
   var toolTipPosition: ASPxClientToolTipPosition
 }
 
+object ASPxClientWebChart {
+  @scala.inline
+  def apply(
+    annotations: js.Array[ASPxClientAnnotation],
+    appearanceName: java.lang.String,
+    chart: ASPxClientWebChart,
+    chartControl: ASPxClientWebChartControl,
+    crosshairOptions: ASPxClientCrosshairOptions,
+    cssPostfix: java.lang.String,
+    diagram: ASPxClientWebChartElement,
+    legend: ASPxClientLegend,
+    legends: js.Array[ASPxClientLegend],
+    paletteName: java.lang.String,
+    selectionMode: java.lang.String,
+    series: js.Array[ASPxClientSeries],
+    showCrosshair: scala.Boolean,
+    showPointToolTip: scala.Boolean,
+    showSeriesToolTip: scala.Boolean,
+    titles: js.Array[ASPxClientChartTitle],
+    toolTipController: ASPxClientToolTipController,
+    toolTipPosition: ASPxClientToolTipPosition
+  ): ASPxClientWebChart = {
+    val __obj = js.Dynamic.literal(annotations = annotations, appearanceName = appearanceName, chart = chart, chartControl = chartControl, crosshairOptions = crosshairOptions, cssPostfix = cssPostfix, diagram = diagram, legend = legend, legends = legends, paletteName = paletteName, selectionMode = selectionMode, series = series, showCrosshair = showCrosshair, showPointToolTip = showPointToolTip, showSeriesToolTip = showSeriesToolTip, titles = titles, toolTipController = toolTipController, toolTipPosition = toolTipPosition)
+  
+    __obj.asInstanceOf[ASPxClientWebChart]
+  }
+}
+

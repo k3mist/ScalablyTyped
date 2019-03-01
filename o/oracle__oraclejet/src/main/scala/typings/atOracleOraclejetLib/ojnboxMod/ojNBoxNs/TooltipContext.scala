@@ -18,3 +18,22 @@ trait TooltipContext[K] extends js.Object {
   var secondaryLabel: java.lang.String
 }
 
+object TooltipContext {
+  @scala.inline
+  def apply[K](
+    color: java.lang.String,
+    column: java.lang.String,
+    componentElement: stdLib.Element,
+    id: K,
+    indicatorColor: java.lang.String,
+    label: java.lang.String,
+    parentElement: stdLib.Element,
+    row: java.lang.String,
+    secondaryLabel: java.lang.String
+  ): TooltipContext[K] = {
+    val __obj = js.Dynamic.literal(color = color, column = column, componentElement = componentElement, id = id.asInstanceOf[js.Any], indicatorColor = indicatorColor, label = label, parentElement = parentElement, row = row, secondaryLabel = secondaryLabel)
+  
+    __obj.asInstanceOf[TooltipContext[K]]
+  }
+}
+

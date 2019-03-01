@@ -22,3 +22,24 @@ trait CompassProperties
   var viewModel: js.UndefOr[CompassViewModelProperties] = js.undefined
 }
 
+object CompassProperties {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.HTMLElement = null,
+    destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    goToOverride: GoToOverride = null,
+    id: java.lang.String = null,
+    view: MapViewProperties | SceneViewProperties = null,
+    viewModel: CompassViewModelProperties = null
+  ): CompassProperties = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    __obj.asInstanceOf[CompassProperties]
+  }
+}
+

@@ -17,3 +17,22 @@ trait DevtoolModuleFilenameTemplateInfo extends js.Object {
   var shortIdentifier: java.lang.String
 }
 
+object DevtoolModuleFilenameTemplateInfo {
+  @scala.inline
+  def apply(
+    absoluteResourcePath: java.lang.String,
+    allLoaders: js.Array[_],
+    hash: java.lang.String,
+    identifier: java.lang.String,
+    moduleId: java.lang.String,
+    query: java.lang.String,
+    resource: js.Any,
+    resourcePath: java.lang.String,
+    shortIdentifier: java.lang.String
+  ): DevtoolModuleFilenameTemplateInfo = {
+    val __obj = js.Dynamic.literal(absoluteResourcePath = absoluteResourcePath, allLoaders = allLoaders, hash = hash, identifier = identifier, moduleId = moduleId, query = query, resource = resource, resourcePath = resourcePath, shortIdentifier = shortIdentifier)
+  
+    __obj.asInstanceOf[DevtoolModuleFilenameTemplateInfo]
+  }
+}
+

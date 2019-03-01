@@ -10,3 +10,16 @@ trait Anon_TypeValueInput extends js.Object {
   var value: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
 }
 
+object Anon_TypeValueInput {
+  @scala.inline
+  def apply(
+    `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String] = null,
+    value: atPulumiPulumiLib.resourceMod.Input[scala.Double] = null
+  ): Anon_TypeValueInput = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TypeValueInput]
+  }
+}
+

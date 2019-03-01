@@ -32,3 +32,30 @@ trait InstanceLocker
   ): scala.Unit
 }
 
+object InstanceLocker {
+  @scala.inline
+  def apply(
+    InstanceLockerCtor1: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Double, 
+      scala.Unit
+    ],
+    InstanceLockerCtor2: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Double, 
+      XActionsApproval, 
+      scala.Unit
+    ],
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): InstanceLocker = {
+    val __obj = js.Dynamic.literal(InstanceLockerCtor1 = InstanceLockerCtor1, InstanceLockerCtor2 = InstanceLockerCtor2, acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
+    __obj.asInstanceOf[InstanceLocker]
+  }
+}
+

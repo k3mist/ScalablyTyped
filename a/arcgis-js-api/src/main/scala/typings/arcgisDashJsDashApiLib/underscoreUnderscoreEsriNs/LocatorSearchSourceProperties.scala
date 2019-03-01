@@ -58,3 +58,60 @@ trait LocatorSearchSourceProperties extends SearchSourceProperties {
   var singleLineFieldName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocatorSearchSourceProperties {
+  @scala.inline
+  def apply(
+    autoNavigate: js.UndefOr[scala.Boolean] = js.undefined,
+    categories: js.Array[java.lang.String] = null,
+    countryCode: java.lang.String = null,
+    filter: SearchSourceFilter = null,
+    localSearchOptions: LocatorSearchSourceLocalSearchOptions = null,
+    locationToAddressDistance: scala.Int | scala.Double = null,
+    locator: LocatorProperties = null,
+    maxResults: scala.Int | scala.Double = null,
+    maxSuggestions: scala.Int | scala.Double = null,
+    minSuggestCharacters: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    outFields: js.Array[java.lang.String] = null,
+    placeholder: java.lang.String = null,
+    popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    popupTemplate: PopupTemplateProperties = null,
+    prefix: java.lang.String = null,
+    resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    resultSymbol: SymbolProperties = null,
+    searchTemplate: java.lang.String = null,
+    singleLineFieldName: java.lang.String = null,
+    suffix: java.lang.String = null,
+    suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    withinViewEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomScale: scala.Int | scala.Double = null
+  ): LocatorSearchSourceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (localSearchOptions != null) __obj.updateDynamic("localSearchOptions")(localSearchOptions)
+    if (locationToAddressDistance != null) __obj.updateDynamic("locationToAddressDistance")(locationToAddressDistance.asInstanceOf[js.Any])
+    if (locator != null) __obj.updateDynamic("locator")(locator)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
+    if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled)
+    if (resultSymbol != null) __obj.updateDynamic("resultSymbol")(resultSymbol)
+    if (searchTemplate != null) __obj.updateDynamic("searchTemplate")(searchTemplate)
+    if (singleLineFieldName != null) __obj.updateDynamic("singleLineFieldName")(singleLineFieldName)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled)
+    if (!js.isUndefined(withinViewEnabled)) __obj.updateDynamic("withinViewEnabled")(withinViewEnabled)
+    if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocatorSearchSourceProperties]
+  }
+}
+

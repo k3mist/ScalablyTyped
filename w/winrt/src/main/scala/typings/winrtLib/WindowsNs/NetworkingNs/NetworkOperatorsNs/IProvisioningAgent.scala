@@ -10,3 +10,18 @@ trait IProvisioningAgent extends js.Object {
   def provisionFromXmlDocumentAsync(provisioningXmlDocument: java.lang.String): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProvisionFromXmlDocumentResults]
 }
 
+object IProvisioningAgent {
+  @scala.inline
+  def apply(
+    getProvisionedProfile: js.Function2[ProfileMediaType, java.lang.String, ProvisionedProfile],
+    provisionFromXmlDocumentAsync: js.Function1[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProvisionFromXmlDocumentResults]
+    ]
+  ): IProvisioningAgent = {
+    val __obj = js.Dynamic.literal(getProvisionedProfile = getProvisionedProfile, provisionFromXmlDocumentAsync = provisionFromXmlDocumentAsync)
+  
+    __obj.asInstanceOf[IProvisioningAgent]
+  }
+}
+

@@ -32,3 +32,19 @@ trait ExpressMinifyResponse extends js.Object {
   var _uglifyOutput: js.Object
 }
 
+object ExpressMinifyResponse {
+  @scala.inline
+  def apply(
+    _no_cache: scala.Boolean,
+    _no_minify: scala.Boolean,
+    _skip: scala.Boolean,
+    _uglifyCompress: js.Object | scala.Boolean,
+    _uglifyMangle: scala.Boolean,
+    _uglifyOutput: js.Object
+  ): ExpressMinifyResponse = {
+    val __obj = js.Dynamic.literal(_no_cache = _no_cache, _no_minify = _no_minify, _skip = _skip, _uglifyCompress = _uglifyCompress.asInstanceOf[js.Any], _uglifyMangle = _uglifyMangle, _uglifyOutput = _uglifyOutput)
+  
+    __obj.asInstanceOf[ExpressMinifyResponse]
+  }
+}
+

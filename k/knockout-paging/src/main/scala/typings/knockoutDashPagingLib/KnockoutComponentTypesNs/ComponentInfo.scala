@@ -10,3 +10,12 @@ trait ComponentInfo extends js.Object {
   var templateNodes: js.Array[stdLib.Node]
 }
 
+object ComponentInfo {
+  @scala.inline
+  def apply(element: stdLib.Node, templateNodes: js.Array[stdLib.Node]): ComponentInfo = {
+    val __obj = js.Dynamic.literal(element = element, templateNodes = templateNodes)
+  
+    __obj.asInstanceOf[ComponentInfo]
+  }
+}
+

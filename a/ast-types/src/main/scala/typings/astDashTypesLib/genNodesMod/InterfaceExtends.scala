@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | scala.Null
 }
 
+object InterfaceExtends {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceExtends,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
+  ): InterfaceExtends = {
+    val __obj = js.Dynamic.literal(id = id, `type` = `type`)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[InterfaceExtends]
+  }
+}
+

@@ -16,3 +16,20 @@ trait AjaxDataRequest extends js.Object {
   var start: scala.Double
 }
 
+object AjaxDataRequest {
+  @scala.inline
+  def apply(
+    columns: js.Array[AjaxDataRequestColumn],
+    data: js.Any,
+    draw: scala.Double,
+    length: scala.Double,
+    order: js.Array[AjaxDataRequestOrder],
+    search: AjaxDataRequestSearch,
+    start: scala.Double
+  ): AjaxDataRequest = {
+    val __obj = js.Dynamic.literal(columns = columns, data = data, draw = draw, length = length, order = order, search = search, start = start)
+  
+    __obj.asInstanceOf[AjaxDataRequest]
+  }
+}
+

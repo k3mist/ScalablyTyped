@@ -12,3 +12,17 @@ trait RelayMutationRequest extends js.Object {
   def resolve(result: RelayQueryRequestResolve): js.Any
 }
 
+object RelayMutationRequest {
+  @scala.inline
+  def apply(
+    getQueryString: js.Function0[java.lang.String],
+    getVariables: js.Function0[RelayVariables],
+    reject: js.Function1[js.Any, js.Any],
+    resolve: js.Function1[RelayQueryRequestResolve, js.Any]
+  ): RelayMutationRequest = {
+    val __obj = js.Dynamic.literal(getQueryString = getQueryString, getVariables = getVariables, reject = reject, resolve = resolve)
+  
+    __obj.asInstanceOf[RelayMutationRequest]
+  }
+}
+

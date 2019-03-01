@@ -24,3 +24,17 @@ trait FieldInfo extends js.Object {
   var referenceName: java.lang.String
 }
 
+object FieldInfo {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    fieldType: FieldType,
+    isIdentity: scala.Boolean,
+    referenceName: java.lang.String
+  ): FieldInfo = {
+    val __obj = js.Dynamic.literal(displayName = displayName, fieldType = fieldType, isIdentity = isIdentity, referenceName = referenceName)
+  
+    __obj.asInstanceOf[FieldInfo]
+  }
+}
+

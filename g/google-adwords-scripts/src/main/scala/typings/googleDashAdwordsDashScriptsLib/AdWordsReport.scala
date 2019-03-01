@@ -12,3 +12,16 @@ trait AdWordsReport extends js.Object {
   def rows(): AdWordsReportRowIterator
 }
 
+object AdWordsReport {
+  @scala.inline
+  def apply(
+    exportToSheet: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.Sheet, scala.Unit],
+    getColumnHeader: js.Function1[java.lang.String, AdWordsReportColumnHeader],
+    rows: js.Function0[AdWordsReportRowIterator]
+  ): AdWordsReport = {
+    val __obj = js.Dynamic.literal(exportToSheet = exportToSheet, getColumnHeader = getColumnHeader, rows = rows)
+  
+    __obj.asInstanceOf[AdWordsReport]
+  }
+}
+

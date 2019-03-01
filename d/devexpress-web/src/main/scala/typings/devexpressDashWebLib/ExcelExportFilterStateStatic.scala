@@ -20,3 +20,12 @@ trait ExcelExportFilterStateStatic extends js.Object {
   var separatePage: java.lang.String
 }
 
+object ExcelExportFilterStateStatic {
+  @scala.inline
+  def apply(below: java.lang.String, none: java.lang.String, separatePage: java.lang.String): ExcelExportFilterStateStatic = {
+    val __obj = js.Dynamic.literal(below = below, none = none, separatePage = separatePage)
+  
+    __obj.asInstanceOf[ExcelExportFilterStateStatic]
+  }
+}
+

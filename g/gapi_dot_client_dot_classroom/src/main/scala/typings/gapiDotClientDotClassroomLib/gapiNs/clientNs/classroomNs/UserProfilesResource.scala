@@ -20,3 +20,19 @@ trait UserProfilesResource extends js.Object {
   def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
 }
 
+object UserProfilesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
+    ],
+    guardianInvitations: GuardianInvitationsResource,
+    guardians: GuardiansResource
+  ): UserProfilesResource = {
+    val __obj = js.Dynamic.literal(get = get, guardianInvitations = guardianInvitations, guardians = guardians)
+  
+    __obj.asInstanceOf[UserProfilesResource]
+  }
+}
+

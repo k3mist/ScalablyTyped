@@ -14,3 +14,12 @@ trait UserName extends js.Object {
   var givenName: java.lang.String
 }
 
+object UserName {
+  @scala.inline
+  def apply(displayName: java.lang.String, familyName: java.lang.String, givenName: java.lang.String): UserName = {
+    val __obj = js.Dynamic.literal(displayName = displayName, familyName = familyName, givenName = givenName)
+  
+    __obj.asInstanceOf[UserName]
+  }
+}
+

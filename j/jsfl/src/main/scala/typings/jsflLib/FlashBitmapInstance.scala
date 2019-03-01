@@ -13,3 +13,17 @@ trait FlashBitmapInstance extends js.Object {
   def setBits(bitmap: _FlashBitmap): scala.Unit
 }
 
+object FlashBitmapInstance {
+  @scala.inline
+  def apply(
+    getBits: js.Function0[_FlashBitmap],
+    hPixels: scala.Double,
+    setBits: js.Function1[_FlashBitmap, scala.Unit],
+    vPixels: scala.Double
+  ): FlashBitmapInstance = {
+    val __obj = js.Dynamic.literal(getBits = getBits, hPixels = hPixels, setBits = setBits, vPixels = vPixels)
+  
+    __obj.asInstanceOf[FlashBitmapInstance]
+  }
+}
+

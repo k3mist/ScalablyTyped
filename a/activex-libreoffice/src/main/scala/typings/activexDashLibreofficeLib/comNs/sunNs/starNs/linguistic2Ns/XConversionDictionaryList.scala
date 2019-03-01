@@ -78,3 +78,40 @@ trait XConversionDictionaryList
   ): scala.Double
 }
 
+object XConversionDictionaryList {
+  @scala.inline
+  def apply(
+    DictionaryContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    addNewDictionary: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      XConversionDictionary
+    ],
+    getDictionaryContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    queryConversions: js.Function7[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      ConversionDirection, 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryMaxCharCount: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      ConversionDirection, 
+      scala.Double
+    ],
+    release: js.Function0[scala.Unit]
+  ): XConversionDictionaryList = {
+    val __obj = js.Dynamic.literal(DictionaryContainer = DictionaryContainer, acquire = acquire, addNewDictionary = addNewDictionary, getDictionaryContainer = getDictionaryContainer, queryConversions = queryConversions, queryInterface = queryInterface, queryMaxCharCount = queryMaxCharCount, release = release)
+  
+    __obj.asInstanceOf[XConversionDictionaryList]
+  }
+}
+

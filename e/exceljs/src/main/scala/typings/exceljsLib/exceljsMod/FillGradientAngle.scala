@@ -21,3 +21,17 @@ trait FillGradientAngle extends Fill {
   var `type`: exceljsLib.exceljsLibStrings.gradient
 }
 
+object FillGradientAngle {
+  @scala.inline
+  def apply(
+    degree: scala.Double,
+    gradient: exceljsLib.exceljsLibStrings.angle,
+    stops: js.Array[GradientStop],
+    `type`: exceljsLib.exceljsLibStrings.gradient
+  ): FillGradientAngle = {
+    val __obj = js.Dynamic.literal(degree = degree, gradient = gradient, stops = stops, `type` = `type`)
+  
+    __obj.asInstanceOf[FillGradientAngle]
+  }
+}
+

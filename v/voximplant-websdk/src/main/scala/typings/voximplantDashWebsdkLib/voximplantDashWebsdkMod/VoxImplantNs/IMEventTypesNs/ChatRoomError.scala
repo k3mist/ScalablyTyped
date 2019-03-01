@@ -28,3 +28,17 @@ trait ChatRoomError
   var text: java.lang.String
 }
 
+object ChatRoomError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    operation: java.lang.String,
+    room: java.lang.String,
+    text: java.lang.String
+  ): ChatRoomError = {
+    val __obj = js.Dynamic.literal(code = code, operation = operation, room = room, text = text)
+  
+    __obj.asInstanceOf[ChatRoomError]
+  }
+}
+
