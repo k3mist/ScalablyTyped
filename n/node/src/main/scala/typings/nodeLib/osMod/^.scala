@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val EOL: java.lang.String = js.native
   val constants: nodeLib.Anon_Errno = js.native
   def arch(): java.lang.String = js.native
-  def cpus(): js.Array[nodeLib.osMod.CpuInfo] = js.native
+  def cpus(): js.Array[CpuInfo] = js.native
   def endianness(): nodeLib.nodeLibStrings.BE | nodeLib.nodeLibStrings.LE = js.native
   def freemem(): scala.Double = js.native
   /**
@@ -23,7 +23,7 @@ object ^ extends js.Object {
   def homedir(): java.lang.String = js.native
   def hostname(): java.lang.String = js.native
   def loadavg(): js.Array[scala.Double] = js.native
-  def networkInterfaces(): org.scalablytyped.runtime.StringDictionary[js.Array[nodeLib.osMod.NetworkInterfaceInfo]] = js.native
+  def networkInterfaces(): org.scalablytyped.runtime.StringDictionary[js.Array[NetworkInterfaceInfo]] = js.native
   def platform(): nodeLib.NodeJSNs.Platform = js.native
   def release(): java.lang.String = js.native
   /**

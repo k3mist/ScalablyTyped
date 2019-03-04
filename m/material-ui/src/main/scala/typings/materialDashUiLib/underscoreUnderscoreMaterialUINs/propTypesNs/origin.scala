@@ -6,13 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait origin extends js.Object {
-  var horizontal: horizontal
-  var vertical: vertical
+  var horizontal: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+  var vertical: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
 }
 
 object origin {
   @scala.inline
-  def apply(horizontal: horizontal, vertical: vertical): origin = {
+  def apply(
+    horizontal: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal,
+    vertical: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
+  ): origin = {
     val __obj = js.Dynamic.literal(horizontal = horizontal, vertical = vertical)
   
     __obj.asInstanceOf[origin]

@@ -29,7 +29,7 @@ object FormatCodeOptions {
   def apply(
     ConvertTabsToSpaces: scala.Boolean,
     IndentSize: scala.Double,
-    IndentStyle: IndentStyle,
+    IndentStyle: typescriptLib.typescriptMod.tsNs.IndentStyle,
     InsertSpaceAfterCommaDelimiter: scala.Boolean,
     InsertSpaceAfterFunctionKeywordForAnonymousFunctions: scala.Boolean,
     InsertSpaceAfterKeywordsInControlFlowStatements: scala.Boolean,

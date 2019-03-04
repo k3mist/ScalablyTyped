@@ -9,7 +9,7 @@ trait EditorOptions extends js.Object {
   var BaseIndentSize: js.UndefOr[scala.Double] = js.undefined
   var ConvertTabsToSpaces: scala.Boolean
   var IndentSize: scala.Double
-  var IndentStyle: IndentStyle
+  var IndentStyle: typescriptLib.typescriptMod.tsNs.IndentStyle
   var NewLineCharacter: java.lang.String
   var TabSize: scala.Double
 }
@@ -19,7 +19,7 @@ object EditorOptions {
   def apply(
     ConvertTabsToSpaces: scala.Boolean,
     IndentSize: scala.Double,
-    IndentStyle: IndentStyle,
+    IndentStyle: typescriptLib.typescriptMod.tsNs.IndentStyle,
     NewLineCharacter: java.lang.String,
     TabSize: scala.Double,
     BaseIndentSize: scala.Int | scala.Double = null

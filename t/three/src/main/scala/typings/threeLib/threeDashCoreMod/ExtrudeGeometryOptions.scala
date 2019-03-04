@@ -20,7 +20,7 @@ trait ExtrudeGeometryOptions extends js.Object {
 object ExtrudeGeometryOptions {
   @scala.inline
   def apply(
-    UVGenerator: UVGenerator = null,
+    UVGenerator: threeLib.threeDashCoreMod.UVGenerator = null,
     bevelEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     bevelSegments: scala.Int | scala.Double = null,
     bevelSize: scala.Int | scala.Double = null,

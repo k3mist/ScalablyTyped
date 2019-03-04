@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Cluster
   extends nodeLib.eventsMod.EventEmitter {
-  var Worker: Worker = js.native
+  var Worker: nodeLib.clusterMod.Worker = js.native
   var isMaster: scala.Boolean = js.native
   var isWorker: scala.Boolean = js.native
   // TODO: cluster.schedulingPolicy

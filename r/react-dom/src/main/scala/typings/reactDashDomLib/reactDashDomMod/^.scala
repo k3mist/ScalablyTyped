@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dom", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val hydrate: reactDashDomLib.reactDashDomMod.Renderer = js.native
-  val render: reactDashDomLib.reactDashDomMod.Renderer = js.native
+  val hydrate: Renderer = js.native
+  val render: Renderer = js.native
   val version: java.lang.String = js.native
   def createPortal(children: reactLib.reactMod.ReactNs.ReactNode, container: reactLib.Element): reactLib.reactMod.ReactNs.ReactPortal = js.native
   def createPortal(children: reactLib.reactMod.ReactNs.ReactNode, container: reactLib.Element, key: java.lang.String): reactLib.reactMod.ReactNs.ReactPortal = js.native

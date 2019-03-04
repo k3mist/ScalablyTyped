@@ -118,7 +118,7 @@ object MuiTheme {
     toolbar: materialDashUiLib.Anon_BackgroundColorColorHeight = null,
     tooltip: materialDashUiLib.Anon_ColorRippleBackgroundColor = null,
     userAgent: java.lang.String | scala.Boolean = null,
-    zIndex: zIndex = null
+    zIndex: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.zIndex = null
   ): MuiTheme = {
     val __obj = js.Dynamic.literal()
     if (appBar != null) __obj.updateDynamic("appBar")(appBar)

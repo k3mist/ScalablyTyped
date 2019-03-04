@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val PRIMARY_OUTLET: /* primary */ java.lang.String = js.native
-  def convertToParamMap(params: atAngularRouterLib.srcSharedMod.Params): atAngularRouterLib.srcSharedMod.ParamMap = js.native
+  def convertToParamMap(params: Params): ParamMap = js.native
   def defaultUrlMatcher(
     segments: js.Array[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment],
     segmentGroup: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegmentGroup,

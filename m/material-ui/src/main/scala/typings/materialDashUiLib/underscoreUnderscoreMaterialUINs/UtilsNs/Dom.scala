@@ -20,17 +20,17 @@ trait Dom extends js.Object {
 object Dom {
   @scala.inline
   def apply(
-    addClass: js.Function2[reactLib.Element, java.lang.String, scala.Unit],
-    forceRedraw: js.Function1[reactLib.HTMLElement, scala.Unit],
-    getStyleAttributeAsNumber: js.Function2[reactLib.HTMLElement, java.lang.String, scala.Double],
-    hasClass: js.Function2[reactLib.Element, java.lang.String, scala.Boolean],
-    isDescendant: js.Function2[stdLib.Node, stdLib.Node, scala.Boolean],
-    offset: js.Function1[reactLib.Element, materialDashUiLib.Anon_Left],
-    removeClass: js.Function2[reactLib.Element, java.lang.String, scala.Unit],
-    toggleClass: js.Function2[reactLib.Element, java.lang.String, scala.Unit],
-    withoutTransition: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], scala.Unit]
+    addClass: (reactLib.Element, java.lang.String) => scala.Unit,
+    forceRedraw: reactLib.HTMLElement => scala.Unit,
+    getStyleAttributeAsNumber: (reactLib.HTMLElement, java.lang.String) => scala.Double,
+    hasClass: (reactLib.Element, java.lang.String) => scala.Boolean,
+    isDescendant: (stdLib.Node, stdLib.Node) => scala.Boolean,
+    offset: reactLib.Element => materialDashUiLib.Anon_Left,
+    removeClass: (reactLib.Element, java.lang.String) => scala.Unit,
+    toggleClass: (reactLib.Element, java.lang.String) => scala.Unit,
+    withoutTransition: (reactLib.HTMLElement, js.Function0[scala.Unit]) => scala.Unit
   ): Dom = {
-    val __obj = js.Dynamic.literal(addClass = addClass, forceRedraw = forceRedraw, getStyleAttributeAsNumber = getStyleAttributeAsNumber, hasClass = hasClass, isDescendant = isDescendant, offset = offset, removeClass = removeClass, toggleClass = toggleClass, withoutTransition = withoutTransition)
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction2(addClass), forceRedraw = js.Any.fromFunction1(forceRedraw), getStyleAttributeAsNumber = js.Any.fromFunction2(getStyleAttributeAsNumber), hasClass = js.Any.fromFunction2(hasClass), isDescendant = js.Any.fromFunction2(isDescendant), offset = js.Any.fromFunction1(offset), removeClass = js.Any.fromFunction2(removeClass), toggleClass = js.Any.fromFunction2(toggleClass), withoutTransition = js.Any.fromFunction2(withoutTransition))
   
     __obj.asInstanceOf[Dom]
   }

@@ -30,8 +30,8 @@ object OptionalEventProperties {
     eventPhase: scala.Int | scala.Double = null,
     isTrusted: js.UndefOr[scala.Boolean] = js.undefined,
     nativeEvent: reactLib.Event = null,
-    preventDefault: js.Function0[scala.Unit] = null,
-    stopPropagation: js.Function0[scala.Unit] = null,
+    preventDefault: () => scala.Unit = null,
+    stopPropagation: () => scala.Unit = null,
     target: reactLib.EventTarget = null,
     timeStamp: stdLib.Date = null,
     `type`: java.lang.String = null
@@ -44,8 +44,8 @@ object OptionalEventProperties {
     if (eventPhase != null) __obj.updateDynamic("eventPhase")(eventPhase.asInstanceOf[js.Any])
     if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted)
     if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)
-    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault)
-    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
+    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))
     if (target != null) __obj.updateDynamic("target")(target)
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
